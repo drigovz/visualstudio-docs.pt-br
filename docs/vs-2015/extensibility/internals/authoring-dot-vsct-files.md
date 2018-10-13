@@ -1,7 +1,7 @@
 ---
 title: Criação de páginas. Arquivos de VSCT | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c2efb41474f9eeef29cc389529541ad460d9b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85a30c8987311ea8d6216312533dc70072c96f2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466303"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283653"
 ---
 # <a name="authoring-vsct-files"></a>Criação de páginas. Arquivos do VSCT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criação. Arquivos de VSCT](https://docs.microsoft.com/visualstudio/extensibility/internals/authoring-dot-vsct-files).  
-  
 Este documento mostra como criar um arquivo. VSCT para adicionar itens de menu, barras de ferramentas e outros elementos de (UI) de interface do usuário para o ambiente de desenvolvimento integrado (IDE) do Visual Studio. Use estas etapas quando você adiciona elementos de interface do usuário para um pacote do Visual Studio (VSPackage) que ainda não tiver um arquivo. VSCT.  
   
  Para novos projetos, é recomendável que você use o modelo de pacote do Visual Studio porque ele gera um arquivo. VSCT que, dependendo de suas seleções, já tem os elementos necessários para um comando de menu, uma janela de ferramentas ou um editor personalizado. Você pode modificar esse arquivo. VSCT para cumprir os requisitos de seu VSPackage. Para obter mais informações sobre como modificar um arquivo. VSCT, consulte os exemplos na [estendendo Menus e comandos](../../extensibility/extending-menus-and-commands.md).  

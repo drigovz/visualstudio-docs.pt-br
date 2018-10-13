@@ -1,7 +1,7 @@
 ---
 title: Visão geral das opções de configuração | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85fa1b9d19beca6bd879d98bc7a24af0fd5756c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4778fd01dde3f08bcc76cd6fc5dd5814f2bc913b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461845"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294288"
 ---
 # <a name="configuration-options-overview"></a>Visão geral das opções de configuração
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [visão geral das opções de configuração](https://docs.microsoft.com/visualstudio/extensibility/internals/configuration-options-overview).  
-  
 Projetos em [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pode dar suporte a várias configurações que podem ser criadas, depurado, execução e/ou implantado. Uma configuração é um tipo de build descrito com um conjunto de propriedades, normalmente os comutadores de compilador e locais de arquivos nomeado. Por padrão, novas soluções contêm duas configurações, depuração e versão. Essas configurações podem ser aplicadas usando suas configurações padrão, ou modificado para atender às suas necessidades específicas de solução e/ou projeto. Alguns pacotes podem ser criados de duas maneiras: como um editor de ActiveX ou como um componente no local. Projetos não é necessário dar suporte a várias configurações, no entanto. Se houver apenas uma configuração disponível, essa configuração é mapeada em todas as configurações da solução.  
   
  As configurações normalmente consistem em duas partes — o nome da configuração (como Debug ou Release) e as configurações de plataforma. Nome da plataforma de uma configuração identifica o ambiente que definir os destinos de configuração, como uma API ou a plataforma do sistema operacional. Os usuários do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] não é possível criar uma plataforma; eles devem escolher dentre as opções um projeto de VSPackage permite. Quando um usuário instala um VSPackage, a plataforma de distribuição criada durante o desenvolvimento do pacote pode surgir em qualquer nome desejado da plataforma com base em quaisquer critérios definidos pelo criador do pacote. O usuário pode selecionar na lista de plataformas disponibilizados por meio de VSPackage quando as páginas de propriedades são instanciadas.  

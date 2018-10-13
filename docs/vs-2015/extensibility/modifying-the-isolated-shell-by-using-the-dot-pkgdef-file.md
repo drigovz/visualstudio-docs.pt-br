@@ -1,7 +1,7 @@
 ---
 title: Modificar o Shell isolado usando o. Arquivo Pkgdef | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f70036f91eb52d85054465e6eea9f82672d851f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3a9b56d946e5a337c5afeb6cdd399c3c7ba24bd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467242"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291454"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Modificar o Shell isolado usando o. Arquivo Pkgdef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [modificando o isolado Shell, usando o. Arquivo Pkgdef](https://docs.microsoft.com/visualstudio/extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file).  
-  
 O arquivo. pkgdef dá suporte a configurações que você pode usar para personalizar um aplicativo de shell isolado. Ele especifica valores que são criados quando um aplicativo é instalado em um computador e que são referenciados pelo shell do Visual Studio quando ele inicia o aplicativo. As configurações são organizadas no arquivo com base nas chaves de registro aplicável.  
   
 > [!WARNING]
@@ -73,10 +71,10 @@ O arquivo. pkgdef dá suporte a configurações que você pode usar para persona
 |AppLocalizationPackage|cadeia de caracteres|O GUID do VSPackage que contém o assembly de satélite de interface do usuário para o aplicativo. Este VSPackage inclui uma versão compilada do arquivo. VSCT e pode incluir outras cadeias de caracteres localizadas. Conjuntos de recursos e grupos de comando de menu podem ser habilitados ou desabilitados, alterando as configurações no arquivo. VSCT de projeto da interface do usuário.<br /><br /> O valor padrão é "{*vsUiPackageGuid*}", onde *vsUiPackageGuid* é o GUID atribuído ao pacote de interface do usuário do aplicativo.|  
 |AppName|cadeia de caracteres|O nome do aplicativo. O nome aparece na barra de título da janela do aplicativo.<br /><br /> O valor padrão é o nome do arquivo de solução do aplicativo.|  
 |CommandLineLogo|cadeia de caracteres|O texto da faixa quando o aplicativo é executado em uma janela do console. Essa configuração afeta somente os aplicativos que dão suporte a operações de compilação de linha de comando.<br /><br /> O valor padrão é "*companyName * * solutionName* versão 1.0.", onde *companyName* é o nome da empresa fornecido quando o Windows foi instalado, e *solutionName*é o nome do arquivo de solução do aplicativo.|  
-|DefaultDebugEngine|cadeia de caracteres|O GUID padrão do mecanismo a ser usado para o aplicativo de depuração.<br /><br /> Observação: Um GUID vazio (todos os zeros à esquerda) indica que o aplicativo não especifica um mecanismo de depuração padrão. Isso permite que o depurador selecionar o mecanismo de depuração para usar.<br /><br /> O valor padrão é "{00000000-0000-0000-0000-000000000000}".|  
+|DefaultDebugEngine|cadeia de caracteres|O GUID padrão do mecanismo a ser usado para o aplicativo de depuração.<br /><br /> Observação: Um GUID vazio (todos os zeros à esquerda) indica que o aplicativo não especifica um mecanismo de depuração padrão. Isso permite que o depurador selecionar o mecanismo de depuração para usar.<br /><br /> O valor padrão é " {00000000-0000-0000-0000-000000000000} ".|  
 |DefaultHomePage|cadeia de caracteres|A URL da home page padrão para a janela do navegador da Web interna.<br /><br /> Se o **Home page** opção está disponível no aplicativo e, em seguida, essa configuração também afeta o estado padrão da opção. Para obter mais informações, consulte [caixa de diálogo do navegador da Web, ambiente, opções](../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> O valor padrão é a URL da empresa fornecida quando o Windows foi instalado.|  
 |DefaultProjectsLocation|cadeia de caracteres|O caminho completo da pasta de projetos padrão. Por exemplo,<br /><br /> `"DefaultProjectsLocation"="$MyDocuments$\MyVSShellStub\Projects"`<br /><br /> Se o **projetos do Visual Studio local** opção está disponível no aplicativo e, em seguida, essa configuração também afeta o estado padrão da opção. Para obter mais informações, consulte [NIB: caixa de diálogo Geral, Projetos e Soluções, Opções](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).<br /><br /> O valor padrão é "$ $MyDocuments\\*solutionName*", onde *solutionName* é o nome do arquivo de solução do aplicativo.|  
-|DefaultSearchPage|cadeia de caracteres|A URL de página de pesquisa padrão para a janela do navegador da Web interna.<br /><br /> Se o **página de pesquisa** opção está disponível no aplicativo e, em seguida, essa configuração também afeta o estado padrão da opção. Para obter mais informações, consulte [caixa de diálogo do navegador da Web, ambiente, opções](../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> O valor padrão é "http://search.live.com".|  
+|DefaultSearchPage|cadeia de caracteres|A URL de página de pesquisa padrão para a janela do navegador da Web interna.<br /><br /> Se o **página de pesquisa** opção está disponível no aplicativo e, em seguida, essa configuração também afeta o estado padrão da opção. Para obter mais informações, consulte [caixa de diálogo do navegador da Web, ambiente, opções](../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> O valor padrão é " http://search.live.com ".|  
 |DefaultUserFilesFolderRoot|cadeia de caracteres|O nome da pasta do usuário, o usuário atual em relação a pasta Meus documentos do.<br /><br /> O valor padrão é o nome do arquivo de solução do aplicativo.|  
 |DisableOutputWindow|DWORD|Indica se o shell isolado deve tratar a janela de saída como desabilitado.<br /><br /> Se esse valor é definido como true, o Visual Studio não exibe a saída de Gerenciador de build de solução na **saída** janela e oculta a **Mostrar janela de saída quando o build é iniciado** caixa de seleção o  **Projetos e soluções** categoria de **opções** caixa de diálogo.<br /><br /> O valor padrão é false.|  
 |HideMiscellaneousFilesByDefault|DWORD|True para ocultar a **arquivos diversos** pasta por padrão no **Gerenciador de soluções**; caso contrário, false.<br /><br /> Se o **Mostrar arquivos diversos no Gerenciador de soluções** opção está disponível no aplicativo e, em seguida, essa configuração também afeta o estado padrão da opção. Para obter mais informações, consulte [documentos, ambiente, caixa de diálogo de opções](../ide/reference/documents-environment-options-dialog-box.md).<br /><br /> O valor padrão é false.|  

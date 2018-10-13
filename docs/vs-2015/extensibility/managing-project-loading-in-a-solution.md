@@ -1,7 +1,7 @@
 ---
 title: O carregamento do projeto em uma solução de gerenciamento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dab040cc22375244d0a091eeb63d8ad011c3b12f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 465adc1c7804582767415c3e9e5311c2379c7b8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462422"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281379"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Gerenciando o carregamento de projeto em uma solução
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Gerenciando o carregamento de projeto em uma solução](https://docs.microsoft.com/visualstudio/extensibility/managing-project-loading-in-a-solution).  
-  
 Soluções do Visual Studio podem conter um grande número de projetos. O comportamento do Visual Studio padrão é carregar todos os projetos em uma solução no momento em que a solução for aberta e para não permitir que o usuário acesse qualquer um dos projetos até que todos eles concluiu o carregamento. Quando o processo de carregamento de projeto vai durar mais de dois minutos, uma barra de progresso é exibida mostrando o número de projetos carregados e o número total de projetos. O usuário pode descarregar projetos enquanto estiver trabalhando em uma solução com vários projetos, mas esse procedimento tem algumas desvantagens: os projetos descarregados não são compilados como parte de um comando recompilar solução e IntelliSense descrições dos tipos e membros de fechado projetos não são exibidos.  
   
  Os desenvolvedores podem reduzir tempos de carregamento de solução e gerenciar o comportamento de carregamento, criando uma carga de solução Gerenciador de projeto. O Gerenciador de carga de solução pode definir prioridades para projetos específicos ou tipos de projeto de carregamento de projeto diferente, certifique-se de que os projetos sejam carregados antes de iniciar uma compilação em segundo plano, atrasar o carregamento de plano de fundo até que outras tarefas em segundo plano sejam concluídas e executar outras tarefas de gerenciamento de carga de projeto.  

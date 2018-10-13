@@ -1,7 +1,7 @@
 ---
 title: Escrevendo código para personalizar uma linguagem específica do domínio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d22bc992da094ea592f508f3d9e0662977e7e534
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9debc18c9d99c9b44b66116ff2f956296fdc19f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473240"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293339"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>Escrevendo código para personalizar uma linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [escrevendo código para personalizar uma linguagem específica do domínio](https://docs.microsoft.com/visualstudio/modeling/writing-code-to-customise-a-domain-specific-language).  
-  
 Esta seção mostra como usar código personalizado para acessar, modificar ou criar um modelo em uma linguagem específica de domínio.  
   
  Há vários contextos em que você pode escrever código que funciona com uma DSL:  

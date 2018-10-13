@@ -1,7 +1,7 @@
 ---
 title: Interfaces herdadas no Editor | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 741d45f5-0ea3-4614-972a-8728fe054e07
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ae8f087a9f52ca2eff130b7972c2cd9d68a139f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48e468a8b0378e33f8c3f371b5da8dc5fd7b8758
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467337"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271564"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Interfaces herdadas no Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Interfaces herdadas no Editor de](https://docs.microsoft.com/visualstudio/extensibility/legacy-interfaces-in-the-editor).  
-  
 Você pode acessar o editor do Visual Studio de interfaces herdadas. O SDK do Visual Studio inclui adaptadores conhecidos como *shims*, que permitem que essas interfaces interagir com o novo editor. No entanto, é recomendável que você atualize seu código herdado para usar o novo editor de API. Seu código terá um desempenho melhor e você pode usar as novas tecnologias, como o Windows Presentation Foundation (WPF) e o MEF Managed Extensibility Framework ().  
   
 ## <a name="related-topics"></a>Tópicos relacionados  
