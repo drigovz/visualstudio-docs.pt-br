@@ -1,7 +1,7 @@
 ---
 title: Designer de manifesto do VSIX | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9eeefb94d066eeef7a58e0b11658d9d6110f935d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20b46ee920ed4ed7e32ed7e0ebbf326e5bc80f1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465742"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271409"
 ---
 # <a name="vsix-manifest-designer"></a>Designer de manifesto do VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Designer de manifesto do VSIX](https://docs.microsoft.com/visualstudio/extensibility/vsix-manifest-designer).  
-  
 Modifica um pacote manifesto arquivo VSIX, que define o comportamento de instalação para uma extensão do Visual Studio.  
   
  O **Designer de manifesto do VSIX** mapeia para o esquema subjacente do VSIX. Cada elemento no esquema pode ser definido usando um controle correspondente no designer. Para obter mais informações sobre o esquema, consulte [2.0 referência do esquema de extensão do VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  

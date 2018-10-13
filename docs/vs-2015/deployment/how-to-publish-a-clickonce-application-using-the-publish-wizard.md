@@ -1,7 +1,7 @@
 ---
 title: 'Como: publicar um aplicativo ClickOnce usando o Assistente de publicação | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 46b969a20859ed537549aaede8818e10c0d13fde
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82600212626ea5c5f0543579b82d95903f1fcc8e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465911"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293898"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Como publicar um aplicativo ClickOnce usando o Assistente de Publicação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: publicar um aplicativo ClickOnce usando o Assistente de publicação](https://docs.microsoft.com/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard).  
-  
 Para disponibilizar um aplicativo ClickOnce para os usuários, você deve publicá-lo para um compartilhamento de arquivo ou caminho, servidor FTP ou mídia removível. Você pode publicar o aplicativo usando o Assistente de publicação; propriedades adicionais relacionadas à publicação estão disponíveis na **Publish** página do **Designer de projeto**. Para obter mais informações, consulte [publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md).  
   
  Antes de executar o Assistente de Publicação, configure as propriedades de publicação corretamente. Por exemplo, se você quiser designar uma chave para assinar o aplicativo ClickOnce, você pode fazer assim por diante a **Signing** página do **Designer de projeto**. Para obter mais informações, consulte [Securing ClickOnce Applications](../deployment/securing-clickonce-applications.md) (Protegendo aplicativos ClickOnce).  

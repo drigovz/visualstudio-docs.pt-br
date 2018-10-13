@@ -1,7 +1,7 @@
 ---
 title: Separar conjuntos de dados e TableAdapters em diferentes projetos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5041814910c3d893b1a6161a72fbb675751a9ccf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cca40c194db476558ff14b5c92a6919c15d204a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460929"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272396"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Conjuntos de dados e TableAdapters separados m diferentes projetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [separar conjuntos de dados e TableAdapters em diferentes projetos](https://docs.microsoft.com/visualstudio/data-tools/separate-datasets-and-tableadapters-into-different-projects).  
-  
   
 Conjuntos de dados tipados foram aprimorados para que o [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e classes de conjunto de dados podem ser geradas em projetos separados. Isso permite que você separe as camadas de aplicativos rapidamente e gerar aplicativos de dados de n camadas.  
   

@@ -1,7 +1,7 @@
 ---
 title: Testar aplicativos Windows UWP e 8.1 do Windows Phone com testes de UI codificados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c9472346212d68b3ee682450995d55eb0a5ddd9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 604ac82fbcda190c63a15e5ba0a1800022853b07
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465301"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285929"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testar aplicativos Windows UWP e 8.1 do Windows Phone com testes de UI codificados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [teste Windows UWP e aplicativos do Phone 8.1 com testes de IU codificados](https://docs.microsoft.com/visualstudio/test/test-windows-phone-8-1-apps-with-coded-ui-tests).  
-  
 Use este passo a passo para criar testes de interface do usuário para aplicativos UWP que são executados em dispositivos móveis ou emuladores e aplicativos do Windows Phone 8.1 com base em XAML.   
   
 ## <a name="create-a-simple-windows-phone-app"></a>Criar um aplicativo simples do Windows Phone  

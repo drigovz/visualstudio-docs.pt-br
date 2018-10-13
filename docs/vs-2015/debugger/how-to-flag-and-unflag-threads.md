@@ -1,7 +1,7 @@
 ---
 title: 'Como: sinalizar e remover sinalização de Threads | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81de0353311d11cf744487d581296500d62ecb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb6c6c3f9c333ef1613f2733a476e7843f7249b4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464614"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289127"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>Como sinalizar não sinalizar threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: sinalizador e remover sinalização de Threads](https://docs.microsoft.com/visualstudio/debugger/how-to-flag-and-unflag-threads).  
-  
 Você pode sinalizar um thread que você deseja dar atenção especial marcando-o com um ícone na **Threads**, **pilhas paralelas**, **inspeção paralela**, e **GPU Threads** windows. Esse ícone pode ajudá-lo e a outros a distinguir threads sinalizados de outros threads.  
   
  Threads sinalizados também recebem tratamento especial na **Thread** lista os **local de depuração** barra de ferramentas. Esta lista pode mostrar todos os threads ou apenas os sinalizados. Quando você sinaliza um thread, o **Thread** lista alterna automaticamente para mostrar somente threads sinalizados, mas você pode alternar para mostrar todos os threads conforme apropriado.  

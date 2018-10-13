@@ -1,7 +1,7 @@
 ---
 title: Ícones de Modo de Exibição de Classe e Pesquisador de Objetos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 853ec238cefd5588096b5bd0318acfba30734e52
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af7ce3ee9b97996f92ac9ca8537c583b063a3445
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474924"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279728"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Exibição de classe ícones do Pesquisador de Objetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [modo de exibição de classe e ícones do Pesquisador de objeto](https://docs.microsoft.com/visualstudio/ide/class-view-and-object-browser-icons).  
-  
 Classe exibição * * e o **Pesquisador de objetos** exibem ícones que representam entidades de código, por exemplo, namespaces, classes, funções e variáveis. A tabela a seguir ilustra e descreve os ícones.  
   
 |Ícone|Descrição|Ícone|Descrição|  

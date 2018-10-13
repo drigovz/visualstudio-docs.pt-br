@@ -1,7 +1,7 @@
 ---
 title: Como posso usar janelas do depurador durante a depuração de um programa em primeiro plano? | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ee4f9f7635fbd588d9bb6553e89a4b61b48491d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 296cb0da8615e07c4f7cb22e76b81d6819a8f816
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468122"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286501"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Como posso usar janelas do depurador durante a depuração de um programa em primeiro plano?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como é possível usar depurador do Windows enquanto depuração um programa em primeiro plano?](https://docs.microsoft.com/visualstudio/debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q).  
-  
 Descrição do problema  
  Estou tentando depurar um problema de pintura em tela. Para observar esse problema, tenho que manter o programa no primeiro plano, o que significa que não tenho acesso às janelas de depuração. O que posso fazer?  
   

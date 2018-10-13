@@ -1,7 +1,7 @@
 ---
 title: Criando pastas de contêiner pai para soluções | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a172598ebe54007c6b0a7b2c6843d04b49a2b72a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f731c9f441aecf5277dafffc5cc8b10d1a703a4b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473045"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307710"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Criando pastas de contêiner pai para soluções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando pastas de contêiner pai para soluções](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-parent-container-folders-for-solutions).  
-  
 Na fonte de controle de plug-in API versão 1.2, um usuário pode especificar um destino de controle de origem de raiz única para todos os projetos da Web dentro da solução. Essa única raiz é chamado de uma raiz de Unificação de Super (SUR).  
   
  A fonte de plug-in de API de controle de versão 1.1, se o usuário tiver adicionado uma solução multiprojeto ao controle do código-fonte, o usuário foi solicitado para especificar um destino de controle de origem para cada projeto da Web.  

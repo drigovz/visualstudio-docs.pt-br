@@ -1,7 +1,7 @@
 ---
 title: Designers de atividade de coleção | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 6188660725967c301f0d2a6ad838769b30f2f1eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9324c49cd05d82feab670ee3b0f9d4e261ca24f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467851"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291987"
 ---
 # <a name="collection-activity-designers"></a>Designer de atividade de coleção
 Os designers de atividade de coleção são usados para criar e configurar as atividades usadas para gerenciar coleções os tópicos contidos nesta seção e listados na tabela a seguir fornecem orientação sobre como usar o designer de atividade e modelo de [!INCLUDE[wfd2](../includes/wfd2-md.md)].  

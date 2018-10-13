@@ -1,7 +1,7 @@
 ---
 title: Noções básicas sobre modelos, Classes e relações | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8b954177573c70ccd30da422f2155d675a430e1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b86e9bd2aa11f098b26edf90f3ed415c66b874a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463327"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271785"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Noções básicas sobre modelos, classes e relações
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Noções básicas sobre modelos, Classes e relacionamentos](https://docs.microsoft.com/visualstudio/modeling/understanding-models-classes-and-relationships).  
-  
 Uma linguagem específica de domínio (DSL) é definida por seu arquivo de definição de DSL, junto com qualquer código de programa personalizado você pode escrever. A maioria do código do programa na solução DSL é gerada a partir desse arquivo.  
   
  Este tópico explica os recursos centrais da definição de DSL.  

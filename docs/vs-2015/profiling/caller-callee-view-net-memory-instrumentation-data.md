@@ -1,7 +1,7 @@
 ---
 title: Exibição de chamado-computador chamado – Dados de instrumentação da memória do .NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2cd30b9dcc72ba2afd97577f69ac059a2e8a1d32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a8cb22cb8274ea9af8fbea045eeeb779835c84a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474254"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273826"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Exibição Chamador/Receptor da Chamada – dados de instrumentação da memória do .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de chamador / computador chamado – dados de instrumentação da memória NET](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-net-memory-instrumentation-data).  
-  
 O modo de exibição de Chamador/Computador Chamado dos dados de criação de perfil de memória do .NET coletados usando o método de instrumentação exibe dados de alocação e de tempo para uma função selecionada e as funções pai e filho da função selecionada. A exibição de Chamador/Computador Chamado contém três grades.  
   
  A **Função atual** é exibida na grade do meio exibe informações de criação de perfil de memória sobre a função selecionada. Os valores incluem todas as chamadas amostradas para a função.  

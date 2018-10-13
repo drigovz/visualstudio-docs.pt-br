@@ -1,7 +1,7 @@
 ---
 title: IDE do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,15 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98d0da464c5c156d959a05410326cebd4cd870f4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 760dc4f859de68040676439d84fea60d23602aeb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467550"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292780"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [documentação do Visual Studio IDE](https://docs.microsoft.com/visualstudio/ide/index).
-
 Microsoft Visual Studio 2015 é um conjunto de ferramentas de criação de software, desde a fase de planejamento até o design de interface do usuário, codificação, teste, depuração, analisando a qualidade do código e o desempenho, a implantação para clientes e coleta de telemetria em uso. Essas ferramentas foram projetadas para funcionar em conjunto da maneira mais perfeita possível e são todas expostas por meio do Ambiente de Desenvolvimento Integrado (IDE) do Visual Studio.
 
 Você pode usar o Visual Studio para criar vários tipos de aplicativos, desde aplicativos simples de armazenamento e jogos para clientes móveis, até sistemas grandes e complexos que movimentam empresas e data centers. Você pode criar:

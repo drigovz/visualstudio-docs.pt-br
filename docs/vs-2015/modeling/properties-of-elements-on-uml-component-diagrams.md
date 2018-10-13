@@ -1,7 +1,7 @@
 ---
 title: Propriedades de elementos em diagramas de componente UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 832f293e09f14831dc9c0f44833631874d6741bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c77c9e6be69604176c470fa8de9e33a74c05532
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466106"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291415"
 ---
 # <a name="properties-of-elements-on-uml-component-diagrams"></a>Propriedades de elementos em diagramas de componente UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [propriedades de elementos em diagramas de componente UML](https://docs.microsoft.com/visualstudio/modeling/properties-of-elements-on-uml-component-diagrams).  
-  
 Em um diagrama de componente UML, cada elemento no diagrama tem propriedades. Para ver as propriedades de um elemento, clique com botão direito do elemento no diagrama ou no **Gerenciador de modelos UML** e, em seguida, clique em **propriedades**. As propriedades aparecem na **propriedades** janela.  
   
 > [!NOTE]

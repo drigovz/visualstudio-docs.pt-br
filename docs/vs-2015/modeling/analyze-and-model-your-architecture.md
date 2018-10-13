@@ -1,14 +1,14 @@
 ---
 title: Analisar e modelar sua arquitetura | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, exploring code
 - Visual Studio Ultimate, visualizing code
@@ -37,18 +37,16 @@ caps.latest.revision: 129
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d2accb12f172cc5a6e4b69026a58a1cc04937ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 070ee6a2f948bc808961e35735fea88882d68880
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461486"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278350"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analisar e modelar a sua arquitetura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [analisar e modelar a sua arquitetura](https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-architecture).  
-  
 Verifique se que o aplicativo atende aos requisitos de usuário usando a arquitetura do Visual Studio e ferramentas para projetar e modelar seu aplicativo de modelagem. Entenda o código existente do programa com mais facilidade usando o Visual Studio para visualizar a estrutura do código, o comportamento e relações.  
   
  Crie modelos em diferentes níveis de detalhe em todo o ciclo de vida do aplicativo como parte de seu processo de desenvolvimento. Acompanhe requisitos, tarefas, casos de teste, bugs e outros trabalhos associados com seus modelos vinculando os elementos de modelo a itens de trabalho do Team Foundation Server e ao plano de desenvolvimento. Ver [cenário: alterar o design usando visualização e modelagem](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).  

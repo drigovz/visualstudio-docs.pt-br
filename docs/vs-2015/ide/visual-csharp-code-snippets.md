@@ -1,7 +1,7 @@
 ---
 title: Snippets de código do Visual C# | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2afbadccfc894dd5ba5baba9c58ab43417f44ed5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587859"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297408"
 ---
 # <a name="visual-c-code-snippets"></a>Snippets de código do Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [trechos de código do Visual c#](https://docs.microsoft.com/visualstudio/ide/visual-csharp-code-snippets).  
-  
 Os snippets de código são snippets de código prontos que você pode inserir rapidamente em seu código. Por exemplo, o snippet de código `for` cria um loop `for` vazio. Alguns snippets de código são snippets de código envolvidos, que permite que você selecione linhas de código e, em seguida, escolha um snippet de código que incorpora as linhas de código selecionadas. Por exemplo, quando você seleciona linhas de código e, em seguida, ativa o snippet de código `for`, ele cria um loop `for` com as linhas de código selecionadas dentro do bloco de loop. Os snippets de código podem fazer com que escrever código de programa seja mais rápido, mais fácil e mais confiável.  
   
  Você pode inserir um snippet de código no local do cursor ou inserir um snippet de código envolvido com o código atualmente selecionado. A Unidade de Inserção de Snippet de Código é invocada por meio dos comandos **Inserir Snippet de Código** ou **Envolver com** no menu do **IntelliSense** ou usando os atalhos de teclado CTRL + K e, em seguida, X ou CTRL + K e, em seguida, S, respectivamente.  
