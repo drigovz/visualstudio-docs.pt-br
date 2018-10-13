@@ -1,7 +1,7 @@
 ---
 title: Locais de símbolo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dffab87abed5bb8187a5340955dea84f77ccab8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88d8fd37babea18aa385598cad12436b414f5ff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476016"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284629"
 ---
 # <a name="symbol-locations"></a>Locais de símbolos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [locais de símbolos](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/symbol-locations).  
-  
 A maioria dos símbolos tem um local definido dentro do arquivo de imagem. Local de um símbolo é especificado com um valor da [enumeração LocationType](../../debugger/debug-interface-access/locationtype.md) enumeração. O símbolo pode dar suporte a propriedades adicionais, dependendo de seu local.  
   
  A tabela a seguir mostra os mais usados tipos de local e suas propriedades adicionais.  

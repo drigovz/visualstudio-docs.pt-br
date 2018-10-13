@@ -1,7 +1,7 @@
 ---
 title: Como especificar eventos de build (C#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5bda99acace01e068c58bae78e20b44b28313722
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4f0a5198f1f8c402fda54f448f3c9b520baabfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473550"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297280"
 ---
 # <a name="how-to-specify-build-events-c"></a>Como especificar eventos de build (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: especificar eventos de Build (c#)](https://docs.microsoft.com/visualstudio/ide/how-to-specify-build-events-csharp).  
-  
 Use eventos de build para especificar comandos que são executados antes do início do build ou após sua conclusão. Eventos de build são executados somente se o build atingir com êxito esses pontos no processo de build.  
   
  Quando um projeto é compilado, eventos de pré-build são adicionados a um arquivo chamado PreBuildEvent.bat e eventos de pós-build são adicionados a um arquivo chamado PostBuildEvent.bat. Se quiser garantir a verificação de erros, adicione seus próprios comandos de verificação de erros às etapas de build.  

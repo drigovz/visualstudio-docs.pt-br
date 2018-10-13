@@ -1,7 +1,7 @@
 ---
 title: Solucionando problemas de referências desfeitas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6cee6fcd845630b7f980fab602193f845aab458c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08cf57bb90ba85df8a818da92cfd5615c62c3468
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465680"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292936"
 ---
 # <a name="troubleshooting-broken-references"></a>Solucionando Problemas de Referências Quebradas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [solucionar problemas de referências desfeitas](https://docs.microsoft.com/visualstudio/ide/troubleshooting-broken-references).  
-  
 Se o aplicativo tentar usar uma referência desfeita, um erro de exceção será gerado. A incapacidade de localizar o componente referenciado é o gatilho primário do erro, mas existem várias situações em que uma referência pode ser considerada desfeita. Essas instâncias são mostradas na seguinte lista:  
   
 -   O caminho de referência do projeto está incorreto ou incompleto.  

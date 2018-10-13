@@ -1,7 +1,7 @@
 ---
 title: Noções básicas sobre métodos de coleta de desempenho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57be2cf704521f25b48495e6537d384633cfd85f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77ccabd5a75e2290f57d97af70d23d6e4e136fbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464277"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295718"
 ---
 # <a name="understanding-performance-collection-methods"></a>Noções básicas sobre métodos de coleta de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Noções básicas sobre métodos de coleta de desempenho](https://docs.microsoft.com/visualstudio/profiling/understanding-performance-collection-methods).  
-  
 As ferramentas de Perfil do Visual Studio fornecem cinco métodos que você pode usar para coletar dados de desempenho. Este tópico descreve os diferentes métodos e sugere alguns cenários nos quais a coleta de dados com um método específico pode ser apropriada.  
   
 > [!NOTE]

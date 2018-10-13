@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Meu primeiro aplicativo2 da área de trabalho do WPF| Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5994c17ff4e7e6071a22d235ab6888727b9ed026
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 1b1ec46cf032928a090991577b83782e1fcfb513
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47587957"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289907"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Passo a passo: Meu primeiro aplicativo da área de trabalho do WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: meu primeiro Application2 de área de trabalho WPF](https://docs.microsoft.com/visualstudio/designers/walkthrough-my-first-wpf-desktop-application2).  
-  
 um name = "Introdução" ></a> neste passo a passo fornece uma introdução ao desenvolvimento do Windows Presentation Foundation (WPF). Você vai criar um aplicativo básico que inclui elementos comuns à maioria dos aplicativos de área de trabalho do WPF: marcação de XAML, code-behind, definições de aplicativo, controles, layout, vinculação de dados e estilos.  
   
 ##  <a name="Create_The_Application_Code_Files"></a> Criando o projeto de aplicativo  

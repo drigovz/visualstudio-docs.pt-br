@@ -1,7 +1,7 @@
 ---
 title: 'Depuração do ASP.NET: Requisitos do sistema | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5386390261028fd635f93bc06d3a3fc8805ebdd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f57cdfc52079a11bfb3bd83baa2e3ff2484d368f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460972"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286475"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Depuração do ASP.NET: requisitos do sistema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depuração ASP.NET: requisitos do sistema](https://docs.microsoft.com/visualstudio/debugger/aspnet-debugging-system-requirements).  
-  
 Este tópico descreve os requisitos de software e segurança para [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] cenários de depuração:  
   
 -   Depuração local, na qual o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e o aplicativo Web são executados no mesmo computador. Há duas versões do controle desse cenário:  

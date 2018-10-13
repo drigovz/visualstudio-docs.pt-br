@@ -1,7 +1,7 @@
 ---
 title: Edições sem suporte no Visual Basic, editar e continuar | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 44dea7dd67653a5dbde95f10a331932a9c8c14c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ffe536b21b5569ad3427dfe4e3b281887cc00b13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461605"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296316"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Edições não suportadas em Editar e Continuar do Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [edições sem suporte no Visual Basic Edit and Continue](https://docs.microsoft.com/visualstudio/debugger/unsupported-edits-in-visual-basic-edit-and-continue).  
-  
 Editar e Continuar permite parar a execução do programa no modo de interrupção, fazer alterações no código de execução e retomar a execução do programa com as alterações recém-inseridas. As edições declarativas de código que afetam a estrutura pública de uma classe são proibidas em geral, mas muitas edições que você pode fazer em um método, corpo da propriedade ou declarações privadas dentro de uma classe são permitidas.  
   
  Se você precisar fazer uma alteração que não tem suporte, deverá parar a depuração, fazer as alterações e iniciar uma nova sessão de depuração.  

@@ -1,7 +1,7 @@
 ---
 title: Segurança do depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f40dfc655148530045b6566ac56d77553951b93
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9d446cfa4eca86ff4657fc9a8741aa965fd43de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474129"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290492"
 ---
 # <a name="debugger-security"></a>Segurança do depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Debugger Security](https://docs.microsoft.com/visualstudio/debugger/debugger-security).  
-  
 A capacidade de depurar outro processo oferece poderes extremamente amplos que você não teria de outra forma, especialmente ao depurar remotamente. Um depurador mal-intencionado pode impor danos extensivos no computador que está sendo depurado.  
   
  Porém, muitos desenvolvedores não percebem que a ameaça à segurança também pode fluir na direção oposta. É possível que o código mal-intencionado no processo a ser depurado possa comprometer a segurança do computador de depuração: há várias explorações de segurança das quais você deve se proteger.  

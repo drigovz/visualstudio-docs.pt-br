@@ -1,7 +1,7 @@
 ---
 title: 'Como: Page Up ou para baixo na memória | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d443955af62f2375357828c0513bbdee289a781
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f49664edc622c9944015c4cea9814a7deb2cfe7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466474"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292676"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Como subir ou descer a página na memória
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: Page Up ou para baixo na memória](https://docs.microsoft.com/visualstudio/debugger/how-to-page-up-or-down-in-memory).  
-  
 Quando você exibe o conteúdo da memória em um **memória** janela ou o **desmontagem** janela, você pode usar a barra de rolagem vertical para mover para cima ou para baixo no espaço de memória.  
   
 ### <a name="to-page-up-or-down-in-memory"></a>Para mover para cima ou para baixo na memória  

@@ -1,7 +1,7 @@
 ---
 title: Capturando informações de gráficos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 44
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c3adcfb4da1ddfba51c162fd541bda302bd2d86
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aef056176df4f760941cc6775faab7b232892520
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463395"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289374"
 ---
 # <a name="capturing-graphics-information"></a>Capturando informações de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [capturando informações de gráficos](https://docs.microsoft.com/visualstudio/debugger/graphics/capturing-graphics-information).  
-  
 Capture informações gráficas de seu aplicativo Direct3D para que você possa usar o analisador de gráficos do Visual Studio para diagnosticar problemas de desempenho e problemas de renderização.  
   
 ## <a name="capturing-graphics-information"></a>Capturando informações de gráficos  
