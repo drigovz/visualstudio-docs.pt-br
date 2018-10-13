@@ -13,7 +13,7 @@ ms.workload:
 - vssdk
 ms.openlocfilehash: 4b68e103edcd3162b72bc5fddd4d1401b2430df3
 ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/08/2018
 ms.locfileid: "48863992"
@@ -83,7 +83,7 @@ window.ShowModal()
   
  `ShowModal` Retorna um bool? (booliano anulável) com o `DialogResult`, que pode ser usado se necessário. O valor retornado será true se a caixa de diálogo foi fechada com **Okey**.  
   
- Se você precisar exibir algumas UI WPF que não é uma caixa de diálogo e é hospedado em seu próprio `HwndSource`, como uma janela pop-up ou uma janela do WPF filho de uma janela de janela Win32/WinForms pai, você precisará definir o `FontFamily` e `FontSize` no elemento raiz do WPF e lementar. (O shell define as propriedades na janela principal, mas eles não serão herdados após um `HWND`). O shell fornece recursos para o qual as propriedades podem ser associadas, como este:  
+ Se você precisar exibir algumas UI WPF que não é uma caixa de diálogo e é hospedado em seu próprio `HwndSource`, como uma janela pop-up ou uma janela do WPF filho de uma janela Win32/WinForms pai, você precisará definir o `FontFamily` e `FontSize` no elemento raiz do WPF e lementar. (O shell define as propriedades na janela principal, mas eles não serão herdados após um `HWND`). O shell fornece recursos para o qual as propriedades podem ser associadas, como este:  
   
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  
