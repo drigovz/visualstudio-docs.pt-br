@@ -1,7 +1,7 @@
 ---
 title: Comandos, Menus e barras de ferramentas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e99669e5790d30cf9d290e7d0411b6caff047265
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d5105686e4b29568cb551cf617a851a595fb197
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461738"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173791"
 ---
 # <a name="commands-menus-and-toolbars"></a>Comandos, menus e barras de ferramentas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [comandos, Menus e barras de ferramentas](https://docs.microsoft.com/visualstudio/extensibility/internals/commands-menus-and-toolbars).  
-  
 Menus e barras de ferramentas são que os maneira como os usuários acessam comandos no VSPackage. Comandos são funções que realizam tarefas, como imprimir um documento, a atualização de uma exibição ou criando um novo arquivo. Menus e barras de ferramentas são maneiras gráficas convenientes para apresentar seus comandos aos usuários. Normalmente, comandos relacionados são agrupados juntos no mesmo menu ou barra de ferramentas.  
   
 -   Menus normalmente são exibidos como cadeias de caracteres de uma palavra em cluster em uma linha na parte superior do ambiente de desenvolvimento integrado (IDE) ou uma janela de ferramentas. Menus também podem ser exibidos como o resultado de um evento de mouse e são conhecidos como menus de atalho nesse contexto. Quando clicado, menus expanda para exibir um ou mais comandos. Comandos, quando clicado, podem realizar tarefas ou iniciar submenus que contêm comandos adicionais. Alguns nomes de menu bem conhecidos são arquivo, editar, exibir e janela. Para obter mais informações, consulte [estendendo Menus e comandos](../../extensibility/extending-menus-and-commands.md).  

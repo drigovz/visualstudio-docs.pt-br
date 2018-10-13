@@ -1,7 +1,7 @@
 ---
 title: Personalizando transformação de texto T4 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e304b38979b80c1d67d3f88accdbfa584406c9cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc44c1de2e0a590b73916a8496a7fe5cae7cb07e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475029"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200233"
 ---
 # <a name="customizing-t4-text-transformation"></a>Personalizando transformação de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [personalizando transformação de texto T4](https://docs.microsoft.com/visualstudio/modeling/customizing-t4-text-transformation).  
-  
 Modelos de texto são um recurso do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que permitem que você gerar o código do programa ou outros arquivos de texto por meio de um processo de transformação. Usando [!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)], você pode estender o processo de transformação de modelo padrão, personalizando o processador de diretriz de modelo de texto ou o host de modelo de texto.  
   
 ## <a name="in-this-section"></a>Nesta seção  

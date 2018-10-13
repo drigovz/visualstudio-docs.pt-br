@@ -1,7 +1,7 @@
 ---
 title: Escolhendo uma estratégia de atualização do ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: a4db43fd289aab969ec2d4c4031cdfbe1a3a18ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ed97cecb01a8e42a01a3e358ecc953857ca55b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462591"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191341"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Escolhendo uma estratégia de atualização do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [escolhendo uma estratégia de atualização do ClickOnce](https://docs.microsoft.com/visualstudio/deployment/choosing-a-clickonce-update-strategy).  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pode fornecer atualizações automáticas para o aplicativo. Um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo lê periodicamente o seu arquivo de manifesto de implantação para ver se há atualizações do aplicativo estão disponíveis. Se disponível, a nova versão do aplicativo será baixada e executada. Para proporcionar eficiência, somente os arquivos que foram alterados serão baixados.  
   
  Ao criar um aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], será necessário determinar qual estratégia o aplicativo usará para verificar se há atualizações disponíveis. Há três estratégias básicas que você pode usar: verificar se há atualizações na inicialização do aplicativo, verificar se há atualizações após a inicialização do aplicativo (executada em um thread em segundo plano) ou fornecer uma interface do usuário para atualizações.  

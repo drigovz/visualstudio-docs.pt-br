@@ -1,7 +1,7 @@
 ---
 title: Avisos de design | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6f7ba768d27334052c16f13b114d990156bb4a59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d903b1ae2f708cb2866c2831debd4bd6b2abd55
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476139"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201546"
 ---
 # <a name="design-warnings"></a>Avisos de design
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [avisos de Design](https://docs.microsoft.com/visualstudio/code-quality/design-warnings).  
-  
 Design de avisos de dar suporte a aderência às diretrizes de Design do .NET Framework.  
   
 ## <a name="in-this-section"></a>Nesta seção  

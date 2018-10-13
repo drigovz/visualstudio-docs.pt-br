@@ -1,7 +1,7 @@
 ---
 title: Trabalhando com classes e outros tipos (Designer de Classe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7690c24e8691858dbc0c027ea765b92f54144b85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5282b37fca3e35e23e6ca343538aad12854b7bba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474000"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198296"
 ---
 # <a name="working-with-classes-and-other-types-class-designer"></a>Trabalhando com classes e outros tipos (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [trabalhando com Classes e outros tipos (Designer de classe)](https://docs.microsoft.com/visualstudio/ide/working-with-classes-and-other-types-class-designer).  
-  
 Concentre-se com mais facilidade nas classes e tipos mais importantes quando você cria e editá-los com o Designer de Classe no Visual Studio. Use diagramas de classe para trabalhar de maneira mais visual com o código do Visual C# .NET, Visual Basic .NET ou C++.  
   
 ## <a name="in-this-section"></a>Nesta seção  

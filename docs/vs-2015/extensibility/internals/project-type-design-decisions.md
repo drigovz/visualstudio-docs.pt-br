@@ -1,7 +1,7 @@
 ---
 title: Decisões de Design de tipo de projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 49f4b198da38a53360efffcdff82daa6fcdb350c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9b5738f3119a8e5f1f6c1d8cb3ee47d64df1541d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474636"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195475"
 ---
 # <a name="project-type-design-decisions"></a>Decisões de design do tipo de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [decisões de Design de tipo de projeto](https://docs.microsoft.com/visualstudio/extensibility/internals/project-type-design-decisions).  
-  
 Antes de criar um novo tipo de projeto, você deve tomar várias decisões de design sobre o tipo de projeto. Você deve decidir quais tipos de itens que conterá seus projetos, como arquivos de projeto serão mantidos e qual modelo de compromisso que você usará.  
   
 ## <a name="project-items"></a>Itens de projeto  

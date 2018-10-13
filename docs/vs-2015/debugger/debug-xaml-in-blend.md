@@ -1,7 +1,7 @@
 ---
 title: Depurar XAML no Blend | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1fe1c312c747e25fc1b1e93a51e26d6e67c4a9b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0c2e135c788ce4fc632efa617323e7ac6fc1f3e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474488"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179875"
 ---
 # <a name="debug-xaml-in-blend"></a>Depurar XAML no Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depurar XAML no Blend](https://docs.microsoft.com/visualstudio/debugger/debug-xaml-in-blend).  
-  
 Você pode usar as ferramentas no [!INCLUDE[blend_first](../includes/blend-first-md.md)] para depurar o XAML em seu aplicativo. Quando você compila um projeto, todos os erros são exibidos na **resultados** painel. Clique duas vezes em um erro para localizar a marcação relacionada ao erro. Se você precisar de mais espaço de trabalho, você pode ocultar a **resultados** painel pressionando F12.  
   
 ## <a name="syntax-errors"></a>Erros de sintaxe  
@@ -117,7 +115,7 @@ Você pode usar as ferramentas no [!INCLUDE[blend_first](../includes/blend-first
   
 2.  Clique duas vezes a descrição "'0' não é válido no início de um nome." `Margin="0,149,0,0"` parece estar bem formada. No entanto, observe que a codificação de cor da `Margin` não corresponde a outras instâncias de `Margin` no código. Como as marcas de cotação de fechamento estão faltando do par de nome/valor precedente (`VerticalAlignment="Top`), `Margin="` que é lido como parte do valor do atributo precedente, e 0 é lido como o início de um par de nome/valor. Digite as marcas de aspas de fechamento para `Top`. A lista de erros na **resultados** painel será atualizado para refletir as alterações.  
   
-3.  Clique duas vezes no erro restante, "A marcação XML de fechamento 'Button' é discrepante." O ponteiro está localizado em fechamento **grade** marca (`</Grid>`), sugerindo que o erro está dentro do `Grid` objeto. Observe que o segundo objeto `Button` está sem a marca de fechamento. Depois de adicionar o fechamento `/`, o **resultados** painel lista é atualizada. Agora que esses erros iniciais foram resolvidos, dois erros adicionais foram identificados.  
+3.  Clique duas vezes no erro restante, "A marcação XML de fechamento 'Button' é discrepante." O ponteiro está localizado em fechamento **grade** marca (`</Grid>`), sugerindo que o erro está dentro do `Grid` objeto. Observe que o segundo objeto `Button` está sem a marcação de fechamento. Depois de adicionar o fechamento `/`, o **resultados** painel lista é atualizada. Agora que esses erros iniciais foram resolvidos, dois erros adicionais foram identificados.  
   
 4.  Clique duas vezes em "O membro 'content' não é reconhecido nem acessível." O `c` em `content` deve estar em maiúsculas. Substitua o "c" minúsculo pelo "c" maiúsculo.  
   

@@ -1,7 +1,7 @@
 ---
 title: 'Área de teste 1: Adicionar ao / abrir do controle de origem | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 06cf33af8d642e9bee5e72306620449458258d43
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4a79bc38227728a5881c973ed26baa375d082ba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467547"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178913"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Área de teste 1: Adicionar ao / abrir do controle de origem
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [área de teste 1: adicionar ao / abrir do controle de origem](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-1-add-to-open-from-source-control).  
-  
 Esse controle de origem plug-in de teste área abrange colocando soluções ou projetos sob controle do código-fonte e recuperá-los do controle de origem.  
   
 ## <a name="command-menu-access"></a>Acesso ao Menu de comando  

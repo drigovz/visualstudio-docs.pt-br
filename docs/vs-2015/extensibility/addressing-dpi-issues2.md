@@ -1,7 +1,7 @@
 ---
 title: Endereçamento DPI Problemas2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3cb14cf601633efa6bbb022d8d1a56e62cc0f9b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9d86204eb79eb0dd20db45d4ffe5c1f80c2e9dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464504"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194047"
 ---
 # <a name="addressing-dpi-issues"></a>Resolvendo problemas e DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [endereçamento DPI Problemas2](https://docs.microsoft.com/visualstudio/extensibility/addressing-dpi-issues2).  
-  
 Um número crescente de dispositivos é fornecidos com telas de "alta resolução". Normalmente, essas telas têm mais de 200 pixels por polegada (ppi). Trabalhar com um aplicativo nesses computadores necessitará de conteúdo a ser escalado verticalmente para atender às necessidades de exibir o conteúdo em uma distância de exibição normal para o dispositivo. A partir de 2014, o principal alvo para monitores de alta densidade é móvel (tablets, laptops clamshell e telefones) de dispositivos de computação.  
   
  Windows 8.1 e posterior contém vários recursos para habilitar esses computadores trabalhar com exibições e ambientes em que a máquina está conectada a ambos alta densidade e densidade standard exibe ao mesmo tempo.  

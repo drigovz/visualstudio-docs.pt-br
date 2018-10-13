@@ -1,7 +1,7 @@
 ---
 title: Depurar um controle WebView | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a6b75f9dadbe1223c41989ff148028a355157bff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb004576546fd028b97fa3ebb2b68ad8f4ee2f3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466135"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189833"
 ---
 # <a name="debug-a-webview-control"></a>Depurar um controle do WebView
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depurar um controle WebView](https://docs.microsoft.com/visualstudio/debugger/debug-a-webview-control).  
-  
 Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Para inspecionar e depurar os controles do `WebView` em um aplicativo do Tempo de Execução do Windows, você pode configurar o Visual Studio para anexar o Depurador de Scripts quando iniciar seu aplicativo. No Visual Studio 2013 Update 2, você tem duas formas de interagir com os controles do `WebView` usando o depurador:  
+ Para inspecionar e depurar os controles do `WebView` em um aplicativo do Windows Runtime , você pode configurar o Visual Studio para anexar o Depurador de Scripts quando iniciar seu aplicativo. No Visual Studio 2013 Update 2, você tem duas formas de interagir com os controles do `WebView` usando o depurador:  
   
 -   Abra o [Explorador do DOM](../debugger/quickstart-debug-html-and-css.md) para um `WebView` , instância e inspecionar elementos DOM, investigar os problemas de estilo CSS e renderizadas dinamicamente as alterações nos estilos de teste.  
   
@@ -41,7 +39,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 ### <a name="attach-the-debugger-c-visual-basic-c"></a>Anexar o depurador (C#, Visual Basic, C++)  
   
-1.  No Visual Studio, adicione um controle `WebView` ao seu aplicativo de Tempo de Execução do Windows.  
+1.  No Visual Studio, adicione um controle `WebView` ao seu aplicativo de Windows Runtime .  
   
 2.  No Gerenciador de soluções, abra as propriedades para o projeto, escolhendo **propriedades** no menu de atalho para o projeto.  
   

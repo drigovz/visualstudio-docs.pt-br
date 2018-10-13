@@ -1,7 +1,7 @@
 ---
 title: Navegando e atualizando um modelo no código de programa | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4ee04ef978714f2d4925ed14604bf700fd623ef7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4630c6a277c6d9698c7fd1d65b5a292862dc3438
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466560"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190665"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Navegando e atualizando um modelo no código do programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Navegando e atualizando um modelo no código do programa](https://docs.microsoft.com/visualstudio/modeling/navigating-and-updating-a-model-in-program-code).  
-  
 Você pode escrever código para criar e excluir elementos de modelo, defina suas propriedades e criar e excluir links entre elementos. Todas as alterações devem ser feitas em uma transação. Se os elementos são exibidos em um diagrama, o diagrama será "corrigido para cima" automaticamente no final da transação.  
   
 ## <a name="in-this-topic"></a>Neste tópico  

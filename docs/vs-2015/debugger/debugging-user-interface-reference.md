@@ -1,7 +1,7 @@
 ---
 title: Referência de Interface do usuário de depuração | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8059274914093f0beaa22b3e4841c7b2cf44e6a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d872d338bd44a561b71266243a07faa607bdcdaf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475951"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206300"
 ---
 # <a name="debugging-user-interface-reference"></a>Referência de interface do usuário de depuração
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [referência de Interface de usuário de depuração](https://docs.microsoft.com/visualstudio/debugger/debugging-user-interface-reference).  
-  
 Você pode encontrar as seguintes caixas de diálogo ao depurar seu aplicativo.  
   
  Você pode automatizar muitos recursos do depurador usando o modelo de extensibilidade do Visual Studio. Para obter mais informações, consulte o SDK de depuração do Visual Studio.  

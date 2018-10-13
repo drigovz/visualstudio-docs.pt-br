@@ -1,7 +1,7 @@
 ---
 title: Arquitetura de VSPackage do controle de origem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d2a76a877581085b6bdffd8522bfcea24ea9e24
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69cbcd1f8ab1f04f02d89839eed1e0cd67aa2fd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462386"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190457"
 ---
 # <a name="source-control-vspackage-architecture"></a>Arquitetura do VSPackage de controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [arquitetura de VSPackage de controle do código-fonte](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-vspackage-architecture).  
-  
 Um pacote de controle de origem é um VSPackage que usa os serviços que o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE fornece. Em troca, um pacote de controle do código-fonte fornece sua funcionalidade como um serviço de controle do código-fonte. Além disso, um pacote de controle de origem é uma alternativa mais versáteis que o plug-in para a integração de controle de origem em um controle de fonte [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
  Um controle de fonte plug-in para que implementa a API de plug-in de controle do código-fonte segue um contrato rígida. Por exemplo, um plug-in não pode substituir o padrão [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interface do usuário (IU). Além disso, a API de plug-in de controle do código-fonte não permite um plug-in implementar seu próprio modelo de controle do código-fonte. No entanto, um pacote de controle de origem, supera essas limitações. Um pacote de controle de origem tem controle completo sobre a experiência de controle de origem de um [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usuário. Além disso, um pacote de controle de origem pode usar seu próprio modelo de controle de origem e a lógica, e ele pode definir todas as interfaces de usuário relacionados ao controle de origem.  

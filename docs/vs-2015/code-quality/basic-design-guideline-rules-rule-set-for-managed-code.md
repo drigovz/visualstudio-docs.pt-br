@@ -1,7 +1,7 @@
 ---
 title: Conjunto de regras básicas de regras de diretrizes de Design para código gerenciado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aad4bb755889ca4d2aa9766836f156495d281bca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed0728eb0daa5c1ff0f322db42f66373181f3e23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463300"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184711"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Conjunto de regras de diretriz do design básico para código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [conjunto de regras de regras básicas de diretrizes de Design para código gerenciado](https://docs.microsoft.com/visualstudio/code-quality/basic-design-guideline-rules-rule-set-for-managed-code).  
-  
 Você pode usar as regras de diretrizes de Design básico do Microsoft conjunto de regras para se concentrar em como tornar seu código mais fácil de entender e usar. Você deve incluir essa regra definida se seu projeto incluir código de biblioteca ou se você quiser impor práticas recomendadas para o código que é fácil de manter.  
   
  As regras básicas de diretrizes de Design incluem todas as regras no conjunto de regras de regras de recomendável mínimo da Microsoft. Para obter uma lista das regras de mínima, consulte [gerenciados recomendado conjunto de regras para código gerenciado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).  

@@ -1,7 +1,7 @@
 ---
 title: 'Início rápido: Depurar JavaScript usando o console | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58aee96aead76444ea2363c79db6e4d8060b1346
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463297"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205511"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Guia de início rápido: depurar o JavaScript usando o console
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [guia de início rápido: depurar JavaScript usando o console](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-javascript-using-the-console).  
-  
 Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Você pode usar a janela Console do JavaScript para interagir e depurar aplicativos da Windows Store criados com JavaScript. Esses recursos têm suporte para [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativos, Windows Phone Store de aplicativos e aplicativos criados usando ferramentas do Visual Studio para Apache Cordova. Para a referência de comandos do console, consulte [comandos do JavaScript Console](../debugger/javascript-console-commands.md).  

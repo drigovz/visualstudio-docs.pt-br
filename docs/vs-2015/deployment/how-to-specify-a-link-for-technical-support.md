@@ -1,7 +1,7 @@
 ---
 title: 'Como: especificar um Link para obter suporte técnico | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 333e9729012c24f93c6b3cefef3903e47af45ae6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a2a772122851bb48e5cb5f0cf388110df8e5b371
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473714"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196138"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Como especificar um link para suporte técnico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: especificar um Link para obter suporte técnico](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-a-link-for-technical-support).  
-  
 Ao publicar uma [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo, o **URL de suporte** propriedade identifica uma página da Web ou compartilhamento de arquivos em que os usuários podem ir para obter informações sobre o aplicativo. Essa propriedade é opcional. Se fornecido, a URL será exibida na entrada do aplicativo **adicionar ou remover programas** caixa de diálogo.  
   
  O **URL de suporte** propriedade pode ser definida na **publicar** página da **Project Designer**.  

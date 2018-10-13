@@ -1,7 +1,7 @@
 ---
 title: Designer de Sombreador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a8a6e0bb39ee501f72c96b55575859af0ce1e26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475597"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182787"
 ---
 # <a name="shader-designer"></a>Designer de Sombreador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Designer de sombreador](https://docs.microsoft.com/visualstudio/designers/shader-designer).  
-  
 Este documento descreve como trabalhar com o Designer de Sombreador [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para criar, modificar e exportar efeitos visuais personalizados que são conhecidos como *sombreadores*.  
   
  Você poderá usar o Designer de Sombreador para criar efeitos visuais personalizados para seu jogo ou aplicativo, mesmo se você não souber programação HLSL. Para criar um sombreador no Designer de Sombreador, você simplesmente organiza o layout como um gráfico, ou seja, você adiciona *nós* que representam dados e operações à superfície de design e, em seguida, faz conexões entre eles para definir como as operações processam os dados. Em cada nó de operação, uma visualização do efeito até esse ponto é fornecida para que você possa visualizar seu resultado. Os dados fluem através de nós para um nó final que representa a saída do sombreador.  

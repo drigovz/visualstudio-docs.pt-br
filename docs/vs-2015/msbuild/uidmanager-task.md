@@ -1,7 +1,7 @@
 ---
 title: Tarefa UidManager | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f64a91ddf1eea2bdd74bd64e2d33acfd4d60827
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fa51ddb8f2cf6e200b7313069fca3ee6db3ebcf3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208059"
 ---
 # <a name="uidmanager-task"></a>Tarefa UidManager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tarefa UidManager](https://docs.microsoft.com/visualstudio/msbuild/uidmanager-task).  
-  
   
 A tarefa <xref:Microsoft.Build.Tasks.Windows.UidManager> verifica, atualiza ou remove UIDs (identificadores exclusivos), para localizar todos os elementos [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] que são incluídos nos arquivos [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] de origem.  
   

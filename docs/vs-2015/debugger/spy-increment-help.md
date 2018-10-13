@@ -1,7 +1,7 @@
 ---
 title: Ajuda do Spy + + | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 383322fb5b79820cdd05208b807071e5fd125377
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a61446ef9f0cff37a2d07fc2e6111321dbef32d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474913"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196933"
 ---
 # <a name="spy-help"></a>Ajuda do Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Ajuda do Spy + +](https://docs.microsoft.com/visualstudio/debugger/spy-increment-help).  
-  
 A documentação para o utilitário Spy + + inclui dois grupos de tópicos gerais em usando Spy + + e sobre as exibições do Spy + +. Elas são seguidas por Spy + + referência, que fornece mais detalhes sobre cada caixa de caixa de diálogo e o comando de menu disponíveis.  
   
 ## <a name="using-spy"></a>Usando Spy++  

@@ -1,7 +1,7 @@
 ---
 title: Recursos para projetar aplicativos acessíveis | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4576508ba8864e6fc85d4151f3ae696e39a18c34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ea004e0b0bf106bf4e7b795cd684357733a2589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465315"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178276"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para projetar aplicativos acessíveis
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [recursos para projetar aplicativos acessíveis](https://docs.microsoft.com/visualstudio/ide/reference/resources-for-designing-accessible-applications).  
-  
   
 Use os links a seguir para localizar informações sobre as tecnologias que dão suporte a design acessível, bem como dicas e exemplos para desenvolver aplicativos do Windows e sites da Web acessíveis. Informações gerais sobre acessibilidade podem ser encontradas online em [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).  
   

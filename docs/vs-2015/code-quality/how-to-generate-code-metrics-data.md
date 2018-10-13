@@ -1,7 +1,7 @@
 ---
 title: 'Como: gerar dados de métricas de código | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b380fadc7fba4123297506a4f068199710014c7e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4dbd9b4e0b62d1c6542231418aa99bd6d6ab0438
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464425"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189794"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Como gerar dados de métricas do código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: gerar dados de métricas de código](https://docs.microsoft.com/visualstudio/code-quality/how-to-generate-code-metrics-data).  
-  
 Você pode optar por gerar os resultados de métricas de código de uma solução inteira ou um projeto selecionado.  
   
  **Requisitos**  

@@ -1,7 +1,7 @@
 ---
 title: Connecting to Data in Windows Forms de aplicativos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,12 +42,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: d1132ee07e892886e49fbaa4670b309afc448da6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8da35b32f3dd25bd7ed47b25f722c6b0aa21ac7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474459"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208943"
 ---
 # <a name="connecting-to-data-in-windows-forms-applications"></a>Conectando a dados em aplicativos dos Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

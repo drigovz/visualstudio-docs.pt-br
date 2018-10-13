@@ -1,7 +1,7 @@
 ---
 title: Como coletar dados de amostragem no nível de linha | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5bd57893476ba7654a37fc44d1681adc3264f92b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b33679efb9fc3523d0ee10dc6bded0c1932a2175
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466431"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198582"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Como coletar dados de amostragem no nível da linha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: coletar dados de amostragem de nível de linha](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-line-level-sampling-data).  
-  
 A amostragem de nível de linha é a capacidade do criador de perfil para determinar o local no código de uma função de processamento intensivo em que o processador tem que gastar a maior parte de seu tempo, como uma função que tem amostras altamente exclusivas.  
   
 ## <a name="overview"></a>Visão geral  

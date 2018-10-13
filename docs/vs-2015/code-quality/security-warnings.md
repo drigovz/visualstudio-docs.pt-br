@@ -1,7 +1,7 @@
 ---
 title: Avisos de segurança | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e906143b384a36dd34a5f487f6785705bdc2ab33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3015e1d01407120aef30b25aea4dbc8e0c6c7fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475034"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187590"
 ---
 # <a name="security-warnings"></a>Avisos de segurança
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [avisos de segurança](https://docs.microsoft.com/visualstudio/code-quality/security-warnings).  
-  
 Os avisos de segurança oferecem suporte a bibliotecas e aplicativos mais seguros. Esses avisos ajudam a evitar falhas de segurança em seu programa. Se você desabilitar um desses avisos, você deve marcar claramente a razão no código e também informar o agente de segurança designado para seu projeto de desenvolvimento.  
   
 ## <a name="in-this-section"></a>Nesta seção  

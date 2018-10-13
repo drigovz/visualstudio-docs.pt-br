@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_consttype | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36c7890df8d5d28518e989b11f3221776d48a0d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5c715758f49c644ccce20bb11055bb1cacc1ca8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474660"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197672"
 ---
 # <a name="idiasymbolgetconsttype"></a>IDiaSymbol::get_constType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_consttype](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-consttype).  
-  
 Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário é constante.  
   
 ## <a name="syntax"></a>Sintaxe  

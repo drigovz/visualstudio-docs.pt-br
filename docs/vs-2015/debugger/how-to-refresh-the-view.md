@@ -1,7 +1,7 @@
 ---
 title: 'Como: atualizar a exibição | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 85307dba069a8805e8317a632f7147a021bd54de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d07edbd6e69b8afc90f1e4a9758df904a39c9f40
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473866"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195358"
 ---
 # <a name="how-to-refresh-the-view"></a>Como atualizar a exibição
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: atualizar a exibição](https://docs.microsoft.com/visualstudio/debugger/how-to-refresh-the-view).  
-  
 Spy + + tira um "instantâneo" das tabelas do sistema e atualiza uma exibição com base nessas informações. É importante que você atualize periodicamente seus modos de exibição do sistema. Se você tiver um modo de exibição Spy + + abra e não tiver atualizado para o modo de exibição, você não verá esses processos, threads e windows que são criados posteriormente. Além disso, você poderá ver os itens que não existem mais. O **Refresh** comando está disponível para todos os modos de exibição, exceto o modo de exibição de mensagens.  
   
 ### <a name="to-refresh-the-currently-active-view"></a>Para atualizar a exibição ativa no momento  

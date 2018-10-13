@@ -1,7 +1,7 @@
 ---
 title: Informações adicionais sobre erros do Designer de Classe | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4e343ed5453a5751bcbd491bc7e94a8491c1f88c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a957630de193d805b1a516d45c72bd1483f0278
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462802"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188520"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Informações adicionais sobre erros do Designer de Classe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [informações adicionais sobre a classe Designer erros](https://docs.microsoft.com/visualstudio/ide/additional-information-about-class-designer-errors).  
-  
 O Designer de Classe não controla o local dos arquivos de origem, de forma que modificar a estrutura do projeto ou mover os arquivos de origem no projeto pode fazer com que o Designer de Classe perca o controle do tipo (especialmente o tipo de origem de um typedef, classes base ou tipos de associação). É possível receber um erro como **O Designer de Classe não pode exibir este tipo**. Se você fizer isso, arraste o código-fonte realocado ou modificado para o diagrama de classe, para exibi-lo novamente.  
   
  Você pode obter ajuda com outros erros e avisos nos seguintes recursos:  
