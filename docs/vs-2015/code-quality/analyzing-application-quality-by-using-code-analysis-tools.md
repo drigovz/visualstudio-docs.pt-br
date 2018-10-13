@@ -1,7 +1,7 @@
 ---
 title: Analisando a qualidade do aplicativo usando as ferramentas de análise de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1b62ac482d18bc8844045d90d32f4d48416daeca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2dd66668efcba5264cc3a3646b627ec9be99e63
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466366"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216664"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analisando a qualidade do aplicativo usando as ferramentas de análise de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [analisando a qualidade do aplicativo usando ferramentas de análise de código](https://docs.microsoft.com/visualstudio/code-quality/analyzing-application-quality-by-using-code-analysis-tools).  
-  
 Nesta seção  
  [Analisando a qualidade do código gerenciado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)  
  Análise de código do Visual Studio para código gerenciado fornece informações sobre assemblies gerenciados, como violações de programação e design de regras definidas nas diretrizes de Design do Framework do Microsoft .NET. Mensagens de aviso identificam quaisquer problemas de programação e design relevantes e, quando é possíveis, forneça informações sobre como corrigir o problema.  

@@ -1,7 +1,7 @@
 ---
 title: Suporte para alterações de código (C++) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49e56918753d93cfd70a3d9a7458f36a72bbabaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd4e1af62032920196dbd8171769f1dc079324e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475587"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225349"
 ---
 # <a name="supported-code-changes-c"></a>Alterações de código suportadas (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [alterações de código com suporte (C++)](https://docs.microsoft.com/visualstudio/debugger/supported-code-changes-cpp).  
-  
 Editar e continuar do Visual C++ trata a maioria dos tipos de alterações de código. Porém, algumas alterações não podem ser aplicadas durante a execução do programa. Para aplicar essas alterações sem suporte, você deverá parar a execução e criar uma versão atualizada do código.  
   
  Ver [editar e continuar (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) para obter informações sobre como trabalhar com editar e continuar do C++ no Visual Studio.  

@@ -1,7 +1,7 @@
 ---
 title: SDK de modelagem para Visual Studio - linguagens específicas do domínio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4f41594e1a39046e82cd7280c5569edbbeb65eb7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 384592f89df9537300c11cdf3e8cea622d8c9c63
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460977"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224725"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK de Modelagem para Visual Studio - linguagens específicas ao domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [SDK de modelagem para Visual Studio - linguagens específicas de domínio](https://docs.microsoft.com/visualstudio/modeling/modeling-sdk-for-visual-studio-domain-specific-languages).  
-  
 Usando o SDK de modelagem para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK), você pode criar ferramentas de desenvolvimento baseado em modelo avançadas que você pode integrar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Como exemplo, as ferramentas UML são criadas usando MSDK. Da mesma forma, você pode criar uma ou mais definições de modelo e integrá-las em um conjunto de ferramentas.  
   
  No centro do MSDK está a definição de um modelo que você cria para representar conceitos em sua área de negócios. Você pode cercar o modelo com várias ferramentas, como uma exibição diagramática, a capacidade de gerar código e outros artefatos, comandos para transformar o modelo, e a capacidade de interagir com código e os outros objetos em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. À medida que o modelo é desenvolvido, você pode combiná-lo com outros modelos e ferramentas para formar um conjunto de ferramentas avançadas centradas em seu desenvolvimento.  

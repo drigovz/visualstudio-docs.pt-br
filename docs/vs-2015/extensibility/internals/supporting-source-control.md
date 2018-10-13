@@ -1,7 +1,7 @@
 ---
 title: Suporte a controle de origem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 01941fdd4899142ae8abb96f57f93e3ebd0b6256
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 12a7cb2de6f3710f7b9e608f008d72d3b0b0e777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475839"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279572"
 ---
 # <a name="supporting-source-control"></a>Suporte para controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [que dão suporte a controle de origem](https://docs.microsoft.com/visualstudio/extensibility/internals/supporting-source-control).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dá suporte a check-outs de arquivo, check-ins e outras operações de controle do código-fonte para seu projeto ou um editor. Como um cliente de controle do código-fonte [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] foi projetado para interagir com um pacote de controle do código-fonte, como [!INCLUDE[vsvss](../../includes/vsvss-md.md)], que fornece o arquivamento, controle de versão e recursos de controle para um conjunto de arquivos definido dinamicamente.  
   
 ## <a name="in-this-section"></a>Nesta seção  

@@ -1,7 +1,7 @@
 ---
 title: Exibição de resumo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b253767977a59ba782dbaae9eb3384bba5f313d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 242250476a55ce33344863003a90d9c829eaea1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466479"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301529"
 ---
 # <a name="summary-view"></a>Exibição do Resumo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [modo de exibição resumo](https://docs.microsoft.com/visualstudio/profiling/summary-view).  
-  
 A exibição de resumo exibe informações sobre as funções ou os objetos de desempenho mais caro em uma execução de criação de perfil. Essa exibição fornece um gráfico de linha do tempo e listas de duas ou mais das funções mais caras ou objetos com base nas métricas de desempenho do método de criação de perfil. Os dados nessa exibição dependem do método de criação de perfil que foi usado (amostragem, instrumentação ou simultaneidade) e se a alocação de memória .NET foi coletada.  
   
  Para todas as exibições de resumo exceto a exibição de Resumo dos dados de simultaneidade, o gráfico de linha do tempo na exibição de resumo mostra a utilização do processador (CPU) do aplicativo com perfil ao longo do tempo em que ocorreu a criação de perfil.  

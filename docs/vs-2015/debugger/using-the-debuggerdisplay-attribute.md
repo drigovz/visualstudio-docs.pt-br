@@ -1,7 +1,7 @@
 ---
 title: Usando o atributo DebuggerDisplay | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb5e47cbaea7c7a39201f25adf6955a2e22c9b9b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e2dd3a45092c4a1a638fe6316df0dde36eb0ceb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474185"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299410"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Usando o atributo DebuggerDisplay
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando o atributo DebuggerDisplay](https://docs.microsoft.com/visualstudio/debugger/using-the-debuggerdisplay-attribute).  
-  
 O <xref:System.Diagnostics.DebuggerDisplayAttribute> controla como um objeto, propriedade ou campo é exibido nas janelas de variáveis do depurador. Esse atributo pode ser aplicado a assemblies, delegados, propriedades, campos e tipos.  
   
  O atributo `DebuggerDisplay` tem um único argumento, que é uma cadeia de caracteres a ser exibida na coluna de valor para instâncias do tipo. Essa cadeia de caracteres pode conter chaves (`{` e `}`). Texto dentro de um par de chaves é avaliado como um campo, propriedade ou método.  
@@ -105,7 +103,7 @@ public sealed class MyClass
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir mostra como usar `DebuggerDisplay` junto com `DebuggerBrowseable` e `DebuggerTypeProxy`. Quando exibidos em uma janela de variáveis do depurador, como o **inspeção** janela, ela produz uma expansão tem esta aparência:  
   
-|**Nome**|**Value**|**Tipo**|  
+|**Nome**|**Valor**|**Tipo**|  
 |--------------|---------------|--------------|  
 |Chave|"three"|object {string}|  
 |Valor|3|object {int}|  

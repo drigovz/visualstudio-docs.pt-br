@@ -1,7 +1,7 @@
 ---
 title: Teclas modificadoras de prancheta no Blend | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cc6939a0c9630dfde3fa482606afc72f7d6bba12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a730ec3c50880087d9200d5c7003e7b3cb631bca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474486"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278181"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Teclas modificadoras de prancheta no Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [teclas modificadoras de prancheta no Blend](https://docs.microsoft.com/visualstudio/designers/artboard-modifier-keys-in-blend).  
-  
 Alguns atalhos de teclado não têm itens de menu associados, o que significa que você não pode usar a interface do usuário do [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] para descobri-los. A tabela a seguir lista atalhos que modificam uma ação, como redimensionar um objeto.  
   
 |Para realizar esta ação|Faça isto|  

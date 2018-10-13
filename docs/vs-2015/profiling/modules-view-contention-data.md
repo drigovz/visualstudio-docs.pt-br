@@ -1,7 +1,7 @@
 ---
 title: Modo de Exibição de Módulos – Dados de Contenção | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ccd57d1bbc81c44ce1b6130613e9752f2fc55b35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4461795294df4824d2af2c8ada02e2f5929e0c47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460998"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305988"
 ---
 # <a name="modules-view---contention-data"></a>Modo de Exibição de Módulos – Dados de Contenção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição módulos – dados de contenção](https://docs.microsoft.com/visualstudio/profiling/modules-view-contention-data).  
-  
 O modo de exibição de módulos de dados de contenção exibe dados de simultaneidade agrupados pelos módulos que foram utilizados nos dados de criação de perfil. Cada módulo é a raiz de uma árvore hierárquica. As funções do módulo no qual os eventos de contenção ocorreram são listadas sob o nó do módulo.  
   
  Se a função estava executando seu próprio código quando ocorreu um evento de contenção, ou seja, a função estava na parte superior da pilha de chamadas, as linhas de origem e os endereços de instrução que estavam em execução são listados sob o nó de função. Como os dados são coletados para uma linha de origem ou um ponteiro de instrução quando a linha ou a instrução está em execução, os valores exclusivos e inclusivos são sempre os mesmos dados de linha e dados de instrução.  

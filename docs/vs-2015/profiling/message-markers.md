@@ -1,7 +1,7 @@
 ---
 title: Marcadores de mensagem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd2487466518622ebd1b2a52c4e4697be23a40d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9bc998a697dcf387df21b7e5576a8548d51d0e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464057"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269939"
 ---
 # <a name="message-markers"></a>Marcadores de mensagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [marcadores de mensagem](https://docs.microsoft.com/visualstudio/profiling/message-markers).  
-  
 Um marcador de mensagem representa a saída de log. Uma mensagem é uma cadeia de caracteres emitida por um thread específico em um momento específico. Você pode exportar as mensagens para um arquivo de texto para usar com outras ferramentas. Você pode deixar o ponteiro em uma mensagem na Visualização Simultânea para exibir a cadeia de caracteres de mensagem. E você pode exibir todos os marcadores de mensagem no [Relatório de Marcadores](../profiling/markers-report.md).  A ilustração a seguir mostra um marcador de mensagem.  
   
 ## <a name="message-aggregation-markers"></a>Marcadores de agregação de mensagem  

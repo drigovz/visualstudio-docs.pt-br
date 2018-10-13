@@ -1,7 +1,7 @@
 ---
 title: Criar modelos para seu aplicativo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,18 +42,16 @@ caps.latest.revision: 60
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 769542e2f2864864146cb0f94c4dbf5bf1920b5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb7c2e0095d83ecbe21e6002f86c44682745341a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466146"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301893"
 ---
 # <a name="create-models-for-your-app"></a>Criar modelos para o aplicativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar modelos para o aplicativo](https://docs.microsoft.com/visualstudio/modeling/create-models-for-your-app).  
-  
 Diagramas de modelagem ajudarão-lo a entender, esclarecer e comunicar ideias sobre seu código e os requisitos de usuário que deve oferecer suporte a seu sistema de software. Por exemplo, para descrever e comunicar requisitos do usuário, você pode usar o caso de uso (UML Unified Modeling Language), atividade, classe e diagramas de sequência. Para descrever e comunicar a funcionalidade de seu sistema, você pode usar o componente, classe, atividade e diagramas de sequência UML.  
   
  Ver [vídeo do Channel 9: melhorar a arquitetura com modelagem](http://go.microsoft.com/fwlink/?LinkID=252078).  

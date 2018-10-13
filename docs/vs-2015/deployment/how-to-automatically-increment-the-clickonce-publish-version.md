@@ -1,7 +1,7 @@
 ---
 title: 'Como: automaticamente incrementar a publicação do ClickOnce versão | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: bf59ba569b7530accf4293954606923ee614d305
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ac5b4e67c0bbebba7586715e4ba491bf11bacc4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461044"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300216"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Como incrementar a versão da publicação do ClickOnce automaticamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: incrementar automaticamente a versão de publicação do ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-automatically-increment-the-clickonce-publish-version).  
-  
 Ao publicar uma [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo, alterando o `Publish Version` propriedade faz com que o aplicativo a ser publicado como uma atualização. Por padrão, o Visual Studio incrementa automaticamente o `Revision` número das `Publish Version` cada vez que você publica o aplicativo.  
   
  Você pode desativar esse comportamento na **Publish** página do **Designer de projeto**.  

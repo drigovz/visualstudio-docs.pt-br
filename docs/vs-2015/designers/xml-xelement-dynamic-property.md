@@ -1,7 +1,7 @@
 ---
 title: XML (propriedade dinâmica de XElement)| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74fdfa59e791fb8e0262df04b1e45f3b867fbd02
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6daf831030fd02f3aa1e3a4844a42ba60bf0574c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464711"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175806"
 ---
 # <a name="xml-xelement-dynamic-property"></a>XML (propriedade dinâmica de XElement)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Xml (propriedade dinâmica de XElement)](https://docs.microsoft.com/visualstudio/designers/xml-xelement-dynamic-property).  
-  
 Obtém o conteúdo sem formatação XML do elemento.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -44,7 +42,7 @@ elem.Xml
   
 ## <a name="see-also"></a>Consulte também  
  [Propriedades Dinâmicas da Classe XElement](../designers/xelement-class-dynamic-properties.md)   
- [Value](../designers/value-xelement-dynamic-property.md)
+ [Valor](../designers/value-xelement-dynamic-property.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Obtendo descrições dos campos na janela Propriedades | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
 manager: douge
-ms.openlocfilehash: 5c7ae9cd659fb317ff74639fa20659296e126d04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f152572198116a200f91672691b6a4787538063e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464471"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301503"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>Obtendo descrições dos campos na janela Propriedades
 Na parte inferior a **propriedades** janela, uma área de descrição exibe informações relacionadas ao campo de propriedade selecionada. Esse recurso é ativado por padrão. Se você quiser ocultar o campo de descrição, clique com botão direito do **propriedades** janela e clique em **descrição**. Isso também remove a marca de seleção ao lado de **descrição** título na janela de menu. Você pode exibir o campo novamente, seguindo as mesmas etapas para ativar/desativar **descrição** novamente.  

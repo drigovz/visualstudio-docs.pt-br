@@ -1,7 +1,7 @@
 ---
 title: Localizando aplicativos ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 285c1273114fe7f59b2ee0bb6bc612d18cbaf32e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7c3b8527bf96ee783de6ac975117bd4c797d426
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463872"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261463"
 ---
 # <a name="localizing-clickonce-applications"></a>Localização de aplicativos ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Localizando os aplicativos ClickOnce](https://docs.microsoft.com/visualstudio/deployment/localizing-clickonce-applications).  
-  
 Localização é o processo de tornar seu aplicativo apropriado para uma cultura específica. Esse processo envolve a tradução de texto de (UI) de interface do usuário para uma linguagem específica de região, usando a data correta e a formatação de moeda, ajustando o tamanho dos controles em um formulário, e controles de espelhamento da direita para a esquerda, se necessário.  
   
  Localizando seus resultados de aplicativo na criação de um ou mais assemblies de satélite. Cada assembly contém cadeias de caracteres, imagens e outros recursos específicos de uma determinada cultura de interface do usuário. (O arquivo executável principal do seu aplicativo contém as cadeias de caracteres para a cultura padrão para seu aplicativo.)  

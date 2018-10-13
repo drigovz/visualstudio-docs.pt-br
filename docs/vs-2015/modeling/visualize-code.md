@@ -1,7 +1,7 @@
 ---
 title: Visualizar código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b0913f88db43743abdc410f75cbfc0d56dc7b46b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7caa6af725fc1af5551e9b705e609e25f74121b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466122"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303440"
 ---
 # <a name="visualize-code"></a>Visualizar código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Visualizar código](https://docs.microsoft.com/visualstudio/modeling/visualize-code).  
-  
 Você pode usar a visualização e modelagem de ferramentas no Visual Studio para ajudá-lo a entender o código existente e descrever seu aplicativo. Isso permite aprender visualmente como suas alterações poderão afetar o código e ajudam a que avaliar o trabalho e os riscos resultam dessas mudanças. Por exemplo:  
   
 -   Para entender as relações em seu código, mapear essas relações visualmente.  

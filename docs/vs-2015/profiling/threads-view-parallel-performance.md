@@ -1,7 +1,7 @@
 ---
 title: Exibição Threads (desempenho paralelo) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 644308065518afa9caf6fb0db088c2ffc556a8e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c49b68e0ee595041ec6b14c9f105937bf723afa6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474497"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300242"
 ---
 # <a name="threads-view-parallel-performance"></a>Exibição de threads (desempenho em paralelo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de Threads (desempenho paralelo)](https://docs.microsoft.com/visualstudio/profiling/threads-view-parallel-performance).  
-  
 A Exibição Threads é a exibição mais detalhada e com uma grande variedade de recursos da Visualização Simultânea. Ao usar essa exibição, é possível identificar se os threads estão sendo executados ou bloqueados devido à sincronização, E/S ou a algum outro motivo.  
   
  Durante a análise do perfil, a Visualização Simultânea examina todos os eventos de alternância de contexto do sistema operacional em cada thread do aplicativo. Alternâncias de contexto podem ocorrer por vários motivos, como estes:  

@@ -1,7 +1,7 @@
 ---
 title: Usando emuladores para isolar testes de unidade para aplicativos do Sharepoint 2010 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 85e3236e83d29e16c4501091cebf644605bfa82c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d45ea88fea9f30bf02c24e927694c81d8639559
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467228"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178302"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Usando emuladores para isolar testes de unidade para aplicativos do Sharepoint 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando emuladores para isolar testes de unidade para aplicativos do Sharepoint 2010](https://docs.microsoft.com/visualstudio/test/using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications).  
-  
 O pacote Microsoft.SharePoint.Emulators fornece um conjunto de bibliotecas que ajudam você a criar testes de unidade isolados para aplicativos do Microsoft SharePoint 2010. Os emuladores usam [shims](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) da estrutura de isolamento do [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) para criar objetos na memória leves que imitam os objetos e métodos da API do SharePoint mais comuns. Quando um método do SharePoint não é emulado, ou quando há a necessidade de alterar o comportamento padrão de um emulador, você pode criar shims do Fakes para obter os resultados desejados.  
   
  As classes e os métodos de teste existentes podem ser convertidos facilmente para execução no contexto do Emulador. Esse recurso permite criar testes de uso duplo. Um teste de uso duplo pode alternar entre os testes de integração com a API do SharePoint real e os testes de unidade isolados que usam os emuladores.  

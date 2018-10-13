@@ -1,7 +1,7 @@
 ---
 title: Adicionando uma barra de ferramentas para uma janela de ferramentas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
 caps.latest.revision: 49
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f35ed0f74f8d3fad711f7c1dd4158072b786eb7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e55508759d1395b1b3218d7e32af9121922da28
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465786"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306404"
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>Adicionando uma barra de ferramentas a uma janela de ferramentas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionando uma barra de ferramentas para uma janela de ferramenta](https://docs.microsoft.com/visualstudio/extensibility/adding-a-toolbar-to-a-tool-window).  
-  
 Este passo a passo mostra como adicionar uma barra de ferramentas para uma janela de ferramentas.  
   
  Uma barra de ferramentas é uma faixa horizontal ou vertical que contém os botões associados a comandos. O comprimento de uma barra de ferramentas em uma janela de ferramenta é sempre o mesmo que a largura ou altura da janela de ferramenta, dependendo de onde a barra de ferramentas é encaixada.  

@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Usando um comando de Shell com uma extensão do Editor | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0965a44350d431dcc60058956f0b42f5393025e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea320b18dc9164c0cbf87cbccf1c33ea7fab2230
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460481"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185582"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Passo a passo: usando um comando do shell com uma extensão do editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: usando um comando de Shell com uma extensão do Editor](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-using-a-shell-command-with-an-editor-extension).  
-  
 De um VSPackage, você pode adicionar recursos, como comandos de menu para o editor. Este passo a passo mostra como adicionar um adorno a um modo de exibição de texto no editor, invocando um comando de menu.  
   
  Este passo a passo demonstra o uso de um VSPackage junto com uma parte do componente de Managed Extensibility Framework (MEF). Você deve usar um VSPackage para registrar o comando de menu com o shell do Visual Studio, e você pode usar o comando para acessar a parte do componente MEF.  

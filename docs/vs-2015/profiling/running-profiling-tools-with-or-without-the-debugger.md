@@ -1,7 +1,7 @@
 ---
 title: Executando ferramentas de criação de perfil com ou sem o depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 938d1dc3e257ad4737e5fd33d831feb0c16a81d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfc32400f926bd62c77431bcc448e4b78dedd026
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464985"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301477"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Executando ferramentas de criação de perfil com ou sem o depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [executando as ferramentas de criação de perfil com ou sem o depurador](https://docs.microsoft.com/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger).  
-  
 O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas das quais (por exemplo, **Utilização de CPU** e **Uso de Memória**) podem ser executadas com ou sem o depurador. Ferramentas de desempenho de não depurador não devem ser executadas em configurações de versão, enquanto ferramentas integradas ao depurador destinam-se a ser executadas em configurações de depuração.  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Devo executar a ferramenta com ou sem o depurador?  

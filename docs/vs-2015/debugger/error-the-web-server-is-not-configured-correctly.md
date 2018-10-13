@@ -1,7 +1,7 @@
 ---
 title: 'Erro: O servidor web não é configurado corretamente | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82d827e0f821712306cf1ec6049129fbf4437d67
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec803ea53dfa86c713b2287eb863efabc2351918
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474938"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171205"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Erro: o servidor Web não foi configurado corretamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [erro: O servidor web não está configurado corretamente](https://docs.microsoft.com/visualstudio/debugger/error-the-web-server-is-not-configured-correctly).  
-  
 Possíveis causas do erro incluem:  
   
 -   Tentando depurar um aplicativo Web do .NET que foi copiado para um computador diferente, renomeado manualmente ou movido.  

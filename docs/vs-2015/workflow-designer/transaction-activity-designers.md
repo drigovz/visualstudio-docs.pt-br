@@ -1,7 +1,7 @@
 ---
 title: Designers de atividade da transação | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 3bd211dbc2f9bf10eb00092dcd7501a20c724afc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85afc69eae7e2478be9d98ec714048509bac3236
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462063"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266143"
 ---
 # <a name="transaction-activity-designers"></a>Designer de atividade de transação
 Os designers de atividade de transação são usados para criar e configurar atividades transacionais como compense e confirme. Os tópicos contidos nesta seção e listados na tabela a seguir fornecem orientação sobre como usar o designer de atividade e modelo de [!INCLUDE[wfd2](../includes/wfd2-md.md)] .  

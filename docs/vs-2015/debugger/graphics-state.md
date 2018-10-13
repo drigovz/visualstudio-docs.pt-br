@@ -1,7 +1,7 @@
 ---
 title: Estado gráfico | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00b53745cc7a166d32633897c65888f4018f6068
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f422c60d568834c585b0ea9a74332b838ee556c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465238"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307608"
 ---
 # <a name="graphics-state"></a>Estado gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [estado gráfico](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-state).  
-  
 A janela de estado no diagnóstico de gráficos do Visual Studio ajuda a entender o estado dos gráficos que está ativo no momento do evento atual, como uma chamada de desenho.  
   
 ## <a name="understanding-the-state-window"></a>Noções básicas sobre a janela de estado  

@@ -1,7 +1,7 @@
 ---
 title: Informações de parâmetro em uma função de linguagem herdado2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bee48d3688a43a3dbfb32848818c318f1cf7b2d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475115"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200025"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informações de parâmetro em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [informações de parâmetro em uma função de linguagem herdado2](https://docs.microsoft.com/visualstudio/extensibility/internals/parameter-info-in-a-legacy-language-service2).  
-  
 Informações de parâmetro do IntelliSense é uma dica de ferramenta que exibe a assinatura de um método quando o usuário digita a lista de parâmetros iniciar caractere (normalmente um parêntese de abertura) para a lista de parâmetros de método. Como cada parâmetro for inserido e o separador de parâmetro (geralmente uma vírgula) é digitado, a dica de ferramenta é atualizada para mostrar o próximo parâmetro em negrito.  
   
  As classes do framework (MPF) de pacote gerenciado dão suporte para gerenciar a dica de ferramenta de informações do parâmetro. O analisador deve detectar parâmetro inicia parâmetro em seguida, e os caracteres de final do parâmetro e ele devem fornecer uma lista de assinaturas de método e seus parâmetros associados.  
