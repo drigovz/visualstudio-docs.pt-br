@@ -1,7 +1,7 @@
 ---
 title: Visão Geral da Sessão de Desempenho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da90a5ae4e35f36306e8537ca2cd743e98ffd33f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23de3ebb79acb342f711593200795246ded97c49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466754"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242805"
 ---
 # <a name="performance-session-overview"></a>Visão geral da sessão de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [visão geral da sessão de desempenho](https://docs.microsoft.com/visualstudio/profiling/performance-session-overview).  
-  
 Esta visão geral explica as noções básicas de criação de perfil. Desenvolvedores pouco familiarizados com o trabalho de desempenho verão como as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podem ajudá-los a se tornarem rapidamente produtivos e a aumentar o desempenho do seu código. Desenvolvedores experientes na criação de perfis podem obter uma visão geral dos processos e recursos específicos das Ferramentas de Criação de Perfil.  
   
  As Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ajudam a identificar problemas de desempenho no código-fonte e a comparar o desempenho das soluções possíveis. Os assistentes e as e configurações padrão das Ferramentas de Criação de Perfil podem fornecer insight imediato sobre muitos problemas de desempenho. Os recursos e as opções das Ferramentas de Criação de Perfil fornecem controle preciso sobre o processo de criação de perfil. Esse controle inclui o direcionamento preciso de seções de código, a coleção de informações de tempo de nível de bloco e a inclusão de dados adicionais de desempenho do processador e do sistema em seus dados.  

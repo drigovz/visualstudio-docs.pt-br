@@ -1,7 +1,7 @@
 ---
 title: 'CA1306: Definir localidade para tipos de dados | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6e0ef53aa81d4e58463b4dd16e146fcbf65f47fe
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 8384f20868a731cb7a37ca547fef40b5c3b16da6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587131"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244212"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306: definir localidade para tipos de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1306: Definir localidade para tipos de dados](https://docs.microsoft.com/visualstudio/code-quality/ca1306-set-locale-for-data-types).
-
 |||
 |-|-|
 |NomeDoTipo|SetLocaleForDataTypes|

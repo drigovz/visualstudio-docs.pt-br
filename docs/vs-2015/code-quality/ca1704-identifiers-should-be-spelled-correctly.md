@@ -1,7 +1,7 @@
 ---
 title: 'CA1704: Os identificadores devem ter grafia correta | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 90b5085e92be22099fbf6bd8729a62223b1c93aa
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a39b0a05efd70dcbfb611fba19c5e17250be5e78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587003"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263738"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: os identificadores do recurso devem ter a ortografia correta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1704: os identificadores devem ter grafia correta](https://docs.microsoft.com/visualstudio/code-quality/ca1704-identifiers-should-be-spelled-correctly).
-
 |||
 |-|-|
 |NomeDoTipo|IdentifiersShouldBeSpelledCorrectly|

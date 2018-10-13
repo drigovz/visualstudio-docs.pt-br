@@ -1,7 +1,7 @@
 ---
 title: Fornecendo suporte aos Designers de desfazer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dbd83149ad638eed7a1dc714c782f3958d3ea448
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ca68d0046e7dc46087fa6de3835bd6246bc58e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464501"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267352"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Fornecendo suporte à função desfazer para designers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [fornecendo o suporte de desfazer para Designers](https://docs.microsoft.com/visualstudio/extensibility/supplying-undo-support-to-designers).  
-  
 Designers, editores, como o geralmente necessário dar suporte a operações de desfazer, para que os usuários podem reverter suas alterações recentes ao modificar um elemento de código.  
   
  A maioria dos designers implementados no Visual Studio têm suporte de desfazer automaticamente fornecido pelo ambiente.  

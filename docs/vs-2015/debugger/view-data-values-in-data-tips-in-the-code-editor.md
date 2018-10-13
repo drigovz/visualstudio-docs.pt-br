@@ -1,7 +1,7 @@
 ---
 title: Exibir valores de dados em dicas de dados no editor de códigos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1a7e755fd81bb66d822f7232e903fea9c53087c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2da6004598d04ca91cea6e29e07ae9fcc1fb28e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273917"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Exibir valores de dados em Dicas de Dados no editor de códigos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibir valores de dados em dicas de dados no editor de códigos](https://docs.microsoft.com/visualstudio/debugger/view-data-values-in-data-tips-in-the-code-editor).  
-  
 Os DataTips fornecem um modo conveniente de exibir informações sobre variáveis em seu programa durante a depuração. Os DataTips funcionam apenas no modo de interrupção e apenas com variáveis que estejam no escopo de execução atual.  
   
  Na [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], os DataTips podem ser fixados em um local específico em um arquivo de origem ou podem Flutuar sobre todas as [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows.  

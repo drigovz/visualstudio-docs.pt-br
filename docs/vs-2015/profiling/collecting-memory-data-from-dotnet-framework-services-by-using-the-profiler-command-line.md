@@ -1,7 +1,7 @@
 ---
 title: Coletando dados de memória com base em serviços do .NET Framework usando a linha de comando do criador de perfil | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ee88087c96b05854359a7e6bcfd95b6c09925ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 303e740aa753536a9c15543a03712e7480f41e0d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460986"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269607"
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Coletando dados de memória a partir de serviços do .NET Framework usando a linha de comando do criador de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [coletando dados de memória de serviços do .NET Framework usando a linha de comando do Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line).  
-  
 Esta seção descreve os procedimentos e as opções para coletar alocação de memória e dados de tempo de vida do objeto para um serviço [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] usando o método de amostragem na linha de comando.  
   
 ## <a name="common-tasks"></a>Tarefas comuns  

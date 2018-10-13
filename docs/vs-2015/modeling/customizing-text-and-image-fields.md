@@ -1,7 +1,7 @@
 ---
 title: Personalizando campos de texto e imagem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 125830eed33bd86be983fdc4b48a7c79cf84fa5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73f14e2b581ea5a9c0bd22f50c11ed205c0f804
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474610"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271122"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizando campos de texto e imagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [personalizando campos de texto e imagem](https://docs.microsoft.com/visualstudio/modeling/customizing-text-and-image-fields).  
-  
 Quando você define um decorador de texto em uma forma, ele é representado por um campo de texto. Para obter exemplos da inicialização de campos de texto e outros ShapeFields, inspecione Dsl\GeneratedCode\Shapes.cs em sua solução DSL.  
   
  Um campo de texto é um objeto que gerencia uma área dentro de uma forma, como o espaço atribuído a um rótulo. Uma instância do campo de texto é compartilhada entre várias formas da mesma classe. A instância do campo de texto não armazena o texto do rótulo separadamente para cada instância: em vez disso, o `GetDisplayText(ShapeElement)` assume a forma como um parâmetro de método e pode procurar o texto dependente do estado atual da forma e seu elemento de modelo.  

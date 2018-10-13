@@ -1,7 +1,7 @@
 ---
 title: O comando DslTextTransform | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8a565fa6226348a1fe1b6dcfcbb67f704e74abc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1dbbf44a4adfe20f1940da32540eaad81c97251b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467419"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269367"
 ---
 # <a name="the-dsltexttransform-command"></a>O comando DslTextTransform
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [o comando de DslTextTransform](https://docs.microsoft.com/visualstudio/modeling/the-dsltexttransform-command).  
-  
 DslTextTransform.cmd é um script que chama TextTransform.exe e executa-o com opções comuns. Você pode usar DslTextTransformation.cmd para automatizar uma compilação noturna de seu [!INCLUDE[dsl](../includes/dsl-md.md)] projetos. Para obter mais informações, consulte [gerando arquivos com o utilitário TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).  
   
  DslTextTransform.cmd está localizado no seguinte diretório:  

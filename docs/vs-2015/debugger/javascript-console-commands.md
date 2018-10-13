@@ -1,7 +1,7 @@
 ---
 title: Comandos do Console do JavaScript | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0bc4597c5be26e25f79edc0784bb1fddd9baa76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d9090732e44a3c94874b6effb130e4fc0c29580
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473489"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263413"
 ---
 # <a name="javascript-console-commands"></a>Comandos do Console JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [comandos do JavaScript Console](https://docs.microsoft.com/visualstudio/debugger/javascript-console-commands).  
-  
 Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Você pode usar comandos para enviar mensagens e executar outras tarefas na janela Console do JavaScript do Visual Studio. Para obter exemplos que mostram como usar essa janela, consulte [guia de início rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). As informações neste tópico se aplica a aplicativos Windows Store, Windows Phone Store de aplicativos e aplicativos criados usando ferramentas do Visual Studio para Apache Cordova. Para obter informações sobre os comandos de console com suporte em aplicativos Cordova, consulte [depuração do seu aplicativo](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Para obter informações sobre como usar o console nas ferramentas F12 do Internet Explorer, consulte [neste tópico](http://msdn.microsoft.com/library/ie/dn255006.aspx).  

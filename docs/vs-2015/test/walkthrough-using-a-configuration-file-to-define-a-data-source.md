@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: usando um arquivo de configuração para definir uma fonte de dados | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 48bd09cdd068adba49147222cc7458afe77c61e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ea3d2f52df217b8df6d3d12909671f4e493ae18
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466672"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253000"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Instruções passo a passo: usando um arquivo de configuração para definir uma fonte de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: usando um arquivo de configuração para definir uma fonte de dados](https://docs.microsoft.com/visualstudio/test/walkthrough-using-a-configuration-file-to-define-a-data-source).  
-  
 Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo app.config para testes de unidade. Você aprenderá como criar um arquivo app.config que defina uma fonte de dados que possa ser usada pela classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. As tarefas ilustradas nesta explicação passo a passo incluem o seguinte:  
   
 -   Criando um arquivo app.config.  

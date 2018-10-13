@@ -1,7 +1,7 @@
 ---
 title: REFERENCE_COMPARE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e31cdc78-f621-498b-9ca4-aefa790b9f6f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8171c0ee1273f82bcb5c49943ee0de2b5d895ee2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a79a44fea6d8e44a1978f17b933d9f51ebe069f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468249"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266832"
 ---
 # <a name="referencecompare"></a>REFERENCE_COMPARE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [REFERENCE_COMPARE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/reference-compare).  
-  
 Especifica o tipo de comparação para referências.  
   
 ## <a name="syntax"></a>Sintaxe  

@@ -1,7 +1,7 @@
 ---
 title: Capacidade de resposta da interface do usuário HTML| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 52
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2c40052484cb8ee25cbb7d3ddbc353fd1dacc2c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cfff3a7267d23e424214f49fed5b0577860c0a4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461972"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269094"
 ---
 # <a name="html-ui-responsiveness"></a>Capacidade de Resposta de interface do usuário HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [capacidade de resposta de interface do usuário HTML analisar em aplicativos UWP](https://docs.microsoft.com/visualstudio/profiling/html-ui-responsiveness).  
-  
 Este tópico descreve como isolar problemas de desempenho em seus aplicativos usando o Criador de Perfil de Capacidade de Resposta da Interface do Usuário, uma ferramenta de desempenho disponível para aplicativos universais do Windows.  
   
  O Criador de Perfil de Capacidade de Resposta da Interface de Usuário pode ajudá-lo a isolar problemas com a capacidade de resposta da Interface de Usuário ou com efeitos colaterais da plataforma, que normalmente ocorrem com estes sintomas:  

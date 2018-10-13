@@ -1,7 +1,7 @@
 ---
 title: '&lt;valor&gt; (JavaScript) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a19732336cbbba16c0cebda75735a2a807240d6
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 1ad9f3834efd56ffbddb4686e741b7d85d3363c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880754"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264167"
 ---
 # <a name="ltvaluegt-javascript"></a>&lt;valor&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [documentação do Visual Studio 2017](/visualstudio/).  
-  
 Especifica informações sobre a documentação para `get` e `set` funções para as propriedades do ECMAScript 3.  
   
 ## <a name="syntax"></a>Sintaxe  

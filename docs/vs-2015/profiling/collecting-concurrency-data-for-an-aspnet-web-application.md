@@ -1,7 +1,7 @@
 ---
 title: Coletando estatísticas do aplicativo para aplicativos Web ASP.NET usando o método de amostragem do criador de perfil na linha de comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4353308ce42ad61fdc53732d1a077f510ed2c1c
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 004f09db73c1eaa977d64b8bafb376a60a45a7a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881544"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277882"
 ---
 # <a name="collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line"></a>Coletando estatísticas do aplicativo para aplicativos Web do ASP.NET usando o método de amostragem do criador de perfil a partir da linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Coletando estatísticas do aplicativo para aplicativos Web ASP.NET usando o método de amostragem da linha de comando Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line).  
-  
 Esta seção descreve os procedimentos e as opções para coletar estatísticas de desempenho de um aplicativo Web ASP .NET usando a ferramenta de linha de comando **VSPerfASPNETCmd** e **VSPerfCmd** e o método de criação de perfil de amostragem.  
   
 > [!NOTE]

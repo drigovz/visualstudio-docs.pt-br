@@ -1,7 +1,7 @@
 ---
 title: Incorporação simplificada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: de1ef1b6538c010a1428dfa54ea4296a870d7ad5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3919e64e9ce8a3e343a9ebba997a178f4f4230e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473626"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257498"
 ---
 # <a name="simplified-embedding"></a>Incorporação simplificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [simplificado incorporação](https://docs.microsoft.com/visualstudio/extensibility/simplified-embedding).  
-  
 Incorporação simplificada é habilitado em um editor, quando seu objeto de exibição de documento tiver um pai (ou seja, feitas de um filho) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]e o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interface é implementada para lidar com seus comandos de janela. Editores de incorporação simplificadas não é possível hospedar controles Active Directory. Os objetos usados para criar um editor com a incorporação simplificada são mostrados na ilustração a seguir.  
   
  ![Gráfico de Editor de incorporação simplificado](../extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  

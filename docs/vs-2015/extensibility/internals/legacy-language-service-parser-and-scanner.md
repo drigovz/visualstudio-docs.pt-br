@@ -1,7 +1,7 @@
 ---
 title: Analisador de serviço de linguagem herdada e Scanner | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5bd5fa0fd23f2608e7cfd00896b0632cfb13fa38
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f3d704be00294f1b7b52e5a9bd4a01d0692bc5ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880223"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255276"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analisador e scanner do serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [analisador de serviço de linguagem herdado e o Scanner](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-parser-and-scanner).  
-  
 O analisador é o coração do serviço de linguagem. As classes de linguagem da estrutura de pacote gerenciado (MPF) exigem um analisador de linguagem para selecionar as informações sobre o código que está sendo exibido. Um analisador separa o texto em tokens léxicos e, em seguida, identifica esses tokens por tipo e funcionalidade.  
   
 ## <a name="discussion"></a>Discussão  

@@ -1,7 +1,7 @@
 ---
 title: Trabalhando com elementos no Designer XAML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 917d0b66f479789b3cb727aeb822c3f2aa164cff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: affdd3283d328fbc72b186904fdfb025bbe824e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462206"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266015"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabalhando com elementos no Designer XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [trabalhando com elementos no Designer XAML](https://docs.microsoft.com/visualstudio/designers/working-with-elements-in-xaml-designer).  
-  
 Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo no XAML, no código ou usando o XAML Designer. Este tópico descreve como trabalhar com elementos no Designer XAML no Visual Studio ou Blend for Visual Studio.  
   
 ## <a name="adding-an-element-to-a-layout"></a>Adicionando um elemento a um layout  

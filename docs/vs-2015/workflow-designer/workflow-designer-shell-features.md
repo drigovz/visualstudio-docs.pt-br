@@ -1,7 +1,7 @@
 ---
 title: Recursos do Shell de Designer de fluxo de trabalho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: e0ac119908003efdbdbda4c01bce18de4a5f0faa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f75d545055a4657ed4cefdbafe211ea2f34680f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465408"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275295"
 ---
 # <a name="workflow-designer-shell-features"></a>funcionalidades de Designer de Fluxo de Trabalho Shell
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] é composta de três áreas principais de interface de usuário: a superfície de designer, a barra de mesmo nível acima e o shell abaixo deles. A barra de rastreamento, posicionado na parte superior da tela, é usada para exibir a lista de ancestrais de atividade da raiz atual. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Como: usar a navegação estrutural](../workflow-designer/how-to-use-breadcrumb-navigation.md). A superfície de designer, posicionado no centro da tela, é usada para compondo fluxos de trabalho. O shell, localizado na parte inferior da tela, contém um número de botões para gerenciar o modo de exibição atual.  

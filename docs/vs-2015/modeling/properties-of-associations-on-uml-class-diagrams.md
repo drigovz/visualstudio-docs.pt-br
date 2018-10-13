@@ -1,7 +1,7 @@
 ---
 title: Diagramas de classe de propriedades de associações em UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 96dc1d942a06e4030992889970fd3946d2e4d9d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8274cd45142886dd71e0c8ce8e1950c0fee9609
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460713"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252053"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>Propriedades de associações em diagramas de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [diagramas de classe de propriedades de associações em UML](https://docs.microsoft.com/visualstudio/modeling/properties-of-associations-on-uml-class-diagrams).  
-  
 Em um diagrama de classe UML, você pode desenhar *associações* entre qualquer par de tipos. Um tipo é uma classe, interface ou enumeração.  
   
  Uma associação indica que o sistema que você está desenvolvendo armazena links de algum tipo entre as instâncias dos tipos associados. Em geral, isso não significa nada sobre a implementação dos links. Por exemplo, eles podem ser ponteiros, linhas em uma tabela, a referência cruzada nomes em XML e assim por diante.  

@@ -1,7 +1,7 @@
 ---
 title: Exibição Funções – Dados de instrumentação da memória do .NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b020f0101332b7fc192aed7b58befdde64012d12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7c47b5246a8a0be75c4108c3526475d30922995c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460951"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270915"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Exibição Funções – Dados de instrumentação de memória do .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de funções – dados de instrumentação de memória do .NET](https://docs.microsoft.com/visualstudio/profiling/functions-view-dotnet-memory-instrumentation-data).  
-  
 A exibição Funções dos dados de criação de perfil de alocação de memória do .NET que foram coletados usando o método de instrumentação lista as funções que alocaram memória durante a execução da criação de perfil. Uma linha de função informa o tamanho e o número de alocações e dados de temporização para a função.  
   
 ## <a name="general"></a>Geral  

@@ -1,7 +1,7 @@
 ---
 title: Definindo formas e conectores | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ee16ff9dcca787fdf35101aff69348ccea42cfcf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ee3bfaac9cfcdf887a22c84e0b98a13f8add7ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463790"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244602"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definindo formas e conectores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definindo formas e conectores](https://docs.microsoft.com/visualstudio/modeling/defining-shapes-and-connectors).  
-  
 Há diversos tipos básicos de formas possíveis de serem usados para exibir informações em um diagrama em uma linguagem específica do domínio (DSL).  
   
 ##  <a name="shapeTypes"></a> Tipos básicos de formas e conectores  

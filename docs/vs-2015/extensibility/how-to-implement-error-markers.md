@@ -1,7 +1,7 @@
 ---
 title: 'Como: implementar marcadores de erro | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b09696cb8419fe763e62047ff179cb6f6338f49
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ff4df9e76494e6409ce9d988781926e1a10602a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475975"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242951"
 ---
 # <a name="how-to-implement-error-markers"></a>Como: implementar o marcador de erros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: implementar erro marcadores](https://docs.microsoft.com/visualstudio/extensibility/how-to-implement-error-markers).  
-  
 Marcadores de erro (ou ondulados vermelhos) são as personalizações do editor de texto para implementar mais difícil. No entanto, os benefícios que eles oferecem aos usuários de seu VSPackage podem compensam o custo para fornecê-las. Marcadores de erro sutilmente marcam o texto que o analisador de linguagem considera incorreta com uma linha vermelha ondulada ou ondulada. Este indicador ajuda a programadores visualmente, exibindo um código incorreto.  
   
  Use marcadores de texto para implementar os sublinhados ondulados vermelhos. Como regra, serviços de linguagem adicionar ondulados vermelhos para o buffer de texto como uma passagem de plano de fundo, no tempo ocioso ou em um thread em segundo plano.  

@@ -1,7 +1,7 @@
 ---
 title: Controle de fonte | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 13d5728c-4e28-42e4-944a-a565b1765ef8
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93b00df779d5b650de59c91196b8fc004efa6994
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 875ee92c91081b2df097e96bf833ea2fcf775f6d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475194"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247501"
 ---
 # <a name="source-control"></a>Controle do código-Fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [controle de origem](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control).  
-  
 Esta seção discute as opções para implementar o controle de origem como um recurso integrado do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], por meio de um plug-in de controle do código-fonte ou um VSPackage de controle do código-fonte.  
   
 ## <a name="in-this-section"></a>Nesta seção  

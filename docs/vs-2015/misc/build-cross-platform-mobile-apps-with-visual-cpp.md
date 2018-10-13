@@ -1,7 +1,7 @@
 ---
 title: Crie aplicativos móveis de plataforma cruzada com o Visual C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: douge
-ms.openlocfilehash: dfb8924c40a33abe817f9546ae5ec87192b84836
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b7f30378f863e119c121b1805aa5f805fa60ed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463535"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260157"
 ---
 # <a name="build-cross-platform-mobile-apps-with-visual-c"></a>Crie aplicativos móveis de plataforma cruzada com o Visual C++
 Você pode criar código de plataforma cruzada para dispositivos Windows, iOS e Android usando o Visual C++ para desenvolvimento móvel de plataforma cruzada. Esse é um recurso opcional disponível no Visual Studio 2015 que permite o desenvolvimento de plataforma cruzada do código para iOS, Android e Windows usando o Visual C++.  

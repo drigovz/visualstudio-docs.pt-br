@@ -1,7 +1,7 @@
 ---
 title: Enumerador de código de Status do arquivo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e41a0181c22f8b760156ec41e1e450aa0f3cf740
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 18e8b61c16b3a49d19b7571d529af633f6074d48
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463315"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268379"
 ---
 # <a name="file-status-code-enumerator"></a>Enumerador de código de status do arquivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [enumerador de código de Status do arquivo](https://docs.microsoft.com/visualstudio/extensibility/file-status-code-enumerator).  
-  
 O `SccStatus` enumerador contém valores constantes nomeados que especificam o estado de um arquivo no sistema de controle de origem. Essa enumeração é usada pelo [SccQueryInfo](../extensibility/sccqueryinfo-function.md) e o `POPLISTFUNC` função de retorno de chamada (consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obter detalhes).  
   
 ## <a name="syntax"></a>Sintaxe  

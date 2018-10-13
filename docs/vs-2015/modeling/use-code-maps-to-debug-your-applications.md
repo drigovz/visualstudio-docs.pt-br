@@ -1,12 +1,12 @@
 ---
 title: Usar mapas de código para depurar seus aplicativos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, visualizing code
 - Visual Studio Ultimate, navigating code visually
@@ -21,18 +21,16 @@ caps.latest.revision: 51
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f3dd19804a8e7749a976b5334ea691918eeae906
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 354c99a9e11f7dbf86f93dab48f669c206323ce5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466451"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263965"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Usar mapas de códigos para depurar aplicativos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [mapas de código de uso para depurar seus aplicativos](https://docs.microsoft.com/visualstudio/modeling/use-code-maps-to-debug-your-applications).  
-  
 Mapas de código podem ajudar você a evitar se perca em grandes bases de código, código não familiar ou código herdado. Por exemplo, no momento da depuração, você talvez precise observar o código em vários arquivos e projetos. Usar mapas de códigos para navegar em torno de trechos de código e entender as relações entre eles. Dessa forma, você não precisa manter o controle desse código na sua cabeça ou desenhar um diagrama separado. Dessa forma, quando o trabalho for interrompido, os mapas de código ajudarão a atualizar sua memória sobre o código que você está trabalhando.  
   
  ![Mapa de código &#45; mapear relacionamentos no código](../modeling/media/codemapstoryboardpaint.png "CodeMapStoryboardPaint")  

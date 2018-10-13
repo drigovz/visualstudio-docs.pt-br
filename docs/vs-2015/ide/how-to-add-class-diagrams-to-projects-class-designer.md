@@ -1,7 +1,7 @@
 ---
 title: Como adicionar diagramas de classes a projetos (Designer de Classe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c0264aa4a514b8e508ef9d06ba75f212b629b99c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0246975fbe5d0537c8a2f0a792e6d1acb9852e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467015"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271382"
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Como adicionar diagramas de classe a projetos (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: Adicionar diagramas de classe a projetos (Designer de classe)](https://docs.microsoft.com/visualstudio/ide/how-to-add-class-diagrams-to-projects-class-designer).  
-  
 Para projetar, editar e refatorar classes e outros tipos, adicione um diagrama de classe ao seu projeto Visual C# .NET, Visual Basic .NET ou C++. Para visualizar diferentes partes do código em um projeto, adicione vários diagramas de classes ao projeto.  
   
  Não é possível criar diagramas de classes a partir de projetos que compartilham o código por meio de diversos aplicativos. Para criar diagramas de classe UML, consulte [Criar diagramas e projetos de modelagem UML](../modeling/create-uml-modeling-projects-and-diagrams.md).  

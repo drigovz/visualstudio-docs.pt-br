@@ -1,7 +1,7 @@
 ---
 title: Conceitos básicos do VSPackage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6c72a73c-5d2a-4052-a62f-89b5847c937c
 caps.latest.revision: 12
 manager: douge
-ms.openlocfilehash: 0d5f795713a447f12c54efc0dab207eda875c2f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc9bc58209fb176c20d7ad2a8a6fca565de6380e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462194"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260839"
 ---
 # <a name="vspackage-essentials"></a>Conceitos básicos do VSPackage
 Os VSPackages são módulos de software que formam e estendem o Visual Studio com elementos da interface do usuário, serviços, projetos, editores e designers. Os VSPackages são a unidade de arquitetura central do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] em si é escrita principalmente como uma coleção de VSPackages.  

@@ -1,7 +1,7 @@
 ---
 title: Definir um manipulador de gesto em um diagrama de modelagem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8afc13a03fcff51eaad0507af753f3a434eac093
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587428"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248068"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definir um manipulador de gestos em um diagrama de modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definir um manipulador de gesto em um diagrama de modelagem](https://docs.microsoft.com/visualstudio/modeling/define-a-gesture-handler-on-a-modeling-diagram).  
-  
 No Visual Studio, você pode definir comandos que são executados quando o usuário clica duas vezes ou arrasta itens em um diagrama UML. Você pode empacotar essas extensões em uma extensão de integração do Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) e distribuí-lo para outros usuários do Visual Studio.  
   
  Se já houver um comportamento interno para o tipo de diagrama e o tipo de elemento que você deseja arrastar, pode não ser capaz de adicionar ou substituir esse comportamento.  

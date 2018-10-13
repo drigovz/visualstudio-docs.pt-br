@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Criando e executando testes de unidade para código gerenciado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8a0bc6ab5854d0db9fc5bae7c642b804bc5af27a
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e50cfc446bf13e93258e28877f9706a3ccd86ae7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881105"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270628"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Instruções passo a passo: criando e executando testes de unidade para código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Criando e executando testes de unidade para código gerenciado](https://docs.microsoft.com/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code).  
-  
 Este passo a passo guiará você pela criação, execução e personalização de uma série de testes de unidade usando a estrutura de teste de unidade do Microsoft para código gerenciado e o Gerenciador de Testes do Visual Studio. Inicie com um projeto C# que está em desenvolvimento, crie testes que exercitem seu código, execute os testes e examine os resultados. Você pode alterar o código do seu projeto e executar novamente os testes.  
   
  Esse tópico contém as seguintes seções:  
