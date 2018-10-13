@@ -1,7 +1,7 @@
 ---
 title: 'Área de teste 7: Compartilhamento | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 31ef127e53a43cf018da5b78ed79a6b2145815da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54bfa75703e88b08d87daff5d460b868afca3c9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475266"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228118"
 ---
 # <a name="test-area-7-share"></a>Testar área 7: compartilhar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [7 da área de teste: compartilhamento](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-7-share).  
-  
 Essa área de teste aborda itens de compartilhamento entre locais por meio de **compartilhamento** comando.  
   
  Uma operação de hhare é a eliminação de duplicação aparente de arquivos e itens de pasta entre dois ou mais locais dentro de uma hierarquia de arquivo de controle do código-fonte. Eliminação de duplicação não realmente ocorre no servidor, mas o usuário verá o mesmo arquivo em dois ou mais locais especificados. Sempre que forem feitas alterações para qualquer um dos itens compartilhados, essas alterações aparecem em todos os outros locais compartilhados.  

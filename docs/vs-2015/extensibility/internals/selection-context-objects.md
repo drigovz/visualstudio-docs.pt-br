@@ -1,7 +1,7 @@
 ---
 title: Objetos de contexto de seleção | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a74e86cb050dcbc1262bd3bf060f76b8bbc38f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c1a0c138cbfcf3892508fb9ae42685ffe895411
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468131"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228651"
 ---
 # <a name="selection-context-objects"></a>Objetos de contexto da seleção
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [seleção de objetos de contexto](https://docs.microsoft.com/visualstudio/extensibility/internals/selection-context-objects).  
-  
 O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE) usa um objeto de contexto de seleção global para determinar o que deve ser exibido no IDE. Cada janela no IDE pode ter seu próprio objeto de contexto de seleção enviados por push para o contexto da seleção global. O IDE atualiza o contexto da seleção global com valores de uma janela quando essa janela tem o foco. Para obter mais informações, consulte [comentários ao usuário](../../extensibility/internals/feedback-to-the-user.md).  
   
  Cada site no IDE ou o quadro de janela tem um serviço chamado <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>. O objeto criado pelo VSPackage que é localizado no quadro de janela deve chamar o `QueryService` método para obter um ponteiro para o <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interface.  

@@ -1,7 +1,7 @@
 ---
 title: Personalizando o armazenamento de arquivos e a serialização de XML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ee8a3b5a5510ef5b8a104e3a55ace3af9ce7d318
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587864"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183002"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personalizando o armazenamento de arquivos e a serialização XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Personalizando o armazenamento de arquivos e a serialização XML](https://docs.microsoft.com/visualstudio/modeling/customizing-file-storage-and-xml-serialization).  
-  
 Quando o usuário salva uma instância, ou *modelo*, de uma linguagem específica de domínio (DSL) em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], um arquivo XML é criado ou atualizado. O arquivo pode ser recarregado para recriar o modelo na Store.  
   
  Você pode personalizar o esquema de serialização ajustando as configurações sob **comportamento da serialização Xml** no Gerenciador de DSL. Há um nó sob **comportamento da serialização Xml** para cada classe de domínio, a propriedade e a relação. As relações estão localizadas em suas classes de origem. Também há nós correspondentes para a forma, conector e classes de diagrama.  

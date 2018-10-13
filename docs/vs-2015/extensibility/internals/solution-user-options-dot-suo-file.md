@@ -1,7 +1,7 @@
 ---
 title: Opções de usuário da solução (. Arquivo suo) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 408acad4031417f4c3dd70b49758f8bee8e2819d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e6e9ccc973c4187cce5f44f6f13262fbee0ea53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462806"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186780"
 ---
 # <a name="solution-user-options-suo-file"></a>Arquivo .Suo (Solution User Options)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [opções de usuário da solução (. Arquivo suo)](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-user-options-dot-suo-file).  
-  
 O arquivo de opções (. suo) do usuário de solução contém opções de solução por usuário. Esse arquivo não deve ser verificado controle do código fonte.  
   
  O arquivo de opções (. suo) do usuário de solução é um armazenamento estruturado ou composto, um arquivo armazenado em um formato binário. Você pode salvar informações do usuário em fluxos com o nome do fluxo que está sendo a chave que será usada para identificar as informações no arquivo. suo. O arquivo de opções de usuário da solução é usado para armazenar as configurações de preferência do usuário e é criado automaticamente quando o Visual Studio salva uma solução.  

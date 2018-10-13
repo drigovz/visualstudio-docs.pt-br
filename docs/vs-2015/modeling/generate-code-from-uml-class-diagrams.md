@@ -1,7 +1,7 @@
 ---
 title: Gerar código em diagramas de classe UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 53
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8874e5aa1c2dcf440c7cfed1cc2ce42c4187bdc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e13ad8f658fafa2a20556e95123c5cd5965934e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460643"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222827"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Gerar código por meio de diagramas de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [gerar código em diagramas de classe UML](https://docs.microsoft.com/visualstudio/modeling/generate-code-from-uml-class-diagrams).  
-  
 Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual Studio, use o **gerar código** comando. Por padrão, o comando gera um tipo do C# para cada tipo UML selecionado. É possível modificar e estender esse comportamento modificando ou copiando-se os modelos de texto que geram o código. É possível especificar o comportamento diferente para os tipos contidos em pacotes diferentes do modelo.  
   
  O **gerar código** comando é especialmente adequado à geração de código da seleção do usuário de elementos e à geração de um arquivo para cada classe UML ou outro elemento. Por exemplo, a captura de tela mostra dois arquivos do C# que foram gerados com base em duas classes UML.  
@@ -173,9 +171,9 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
     |------------------|---------------------|  
     |Nome|Um nome da associação. Para substituir uma associação herdada de um pacote ou de um modelo de conteúdo, use o mesmo nome da associação que você deseja substituir.|  
     |Substituir|Se for verdadeiro, todo o código existente será substituído.|  
-    |Nome de Destino|O nome do arquivo gerado.<br /><br /> Você pode inserir expressões nessa cadeia de caracteres, como `{Name}` ou `{Owner.Name}`. Por exemplo, você poderia escrever: `{Owner.Name}_{Name}`. A expressão é avaliada no elemento de modelo. Ela pode usar propriedades de elementos, mas não métodos. Para localizar quais propriedades podem ser usadas, examine as propriedades de tipos no **Microsoft.VisualStudio.Uml.\*** . **Importante:** `{Name}` ou `{Owner.Name}` pode ser usado somente no **nome do destino** propriedade.   Para alterar o nome da classe gerado, você precisa modificar o modelo. Para obter mais informações, consulte [gravando um modelo de texto](#writing).|  
+    |Nome de Destino|O nome do arquivo gerado.<br /><br /> Você pode inserir expressões nessa cadeia de caracteres, como `{Name}` ou `{Owner.Name}`. Por exemplo, você poderia escrever: `{Owner.Name}_{Name}`. A expressão é avaliada no elemento de modelo. Ela pode usar propriedades de elementos, mas não métodos. Para localizar quais propriedades podem ser usadas, examine as propriedades de tipos no **Microsoft.VisualStudio.Uml.\*** . **Importante:** `{Name}` ou `{Owner.Name}` pode ser usado somente no **nome do destino** propriedade. Para alterar o nome da classe gerado, você precisa modificar o modelo. Para obter mais informações, consulte [gravando um modelo de texto](#writing).|  
     |Caminho do Projeto|Especifica o caminho para o projeto do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que conterá os arquivos de saída da transformação. Use valores digitados para criar um novo projeto. Escolha o botão de reticências (**[...]** ) para selecionar um projeto existente.<br /><br /> Se não existir, um novo projeto será criado. Ele será um projeto de biblioteca de classes do C#.<br /><br /> Para isso, você deve digitar o projeto diretamente. É possível incluir macros da variável de ambiente como %ProgramFiles% ou %LocalAppData%.|  
-    |Diretório de Destino|A pasta na qual o arquivo de destino é gerado. O caminho se refere à pasta do projeto.<br /><br /> É possível usar a expressão `{PackageStructure}` para inserir um caminho correspondente aos nomes dos pacotes de contenção. O valor padrão é `\GeneratedCode\{PackageStructure}`. Também é possível incluir variáveis de ambiente como %TEMP% ou %HomePath%. **Importante:** `{PackageStructure}` pode ser usado somente na **diretório de destino** propriedade.  |  
+    |Diretório de Destino|A pasta na qual o arquivo de destino é gerado. O caminho se refere à pasta do projeto.<br /><br /> É possível usar a expressão `{PackageStructure}` para inserir um caminho correspondente aos nomes dos pacotes de contenção. O valor padrão é `\GeneratedCode\{PackageStructure}`. Também é possível incluir variáveis de ambiente como %TEMP% ou %HomePath%. **Importante:** `{PackageStructure}` pode ser usado somente na **diretório de destino** propriedade.|  
     |Caminho do Arquivo de Modelo|O modelo que realizará a transformação.<br /><br /> É possível usar os modelos fornecidos ou criar os próprios. É possível encontrar os modelos fornecidos no seguinte local:<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\|  
   
 5.  É possível anexar quantas associações a um elemento você quiser.  

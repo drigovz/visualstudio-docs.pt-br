@@ -1,7 +1,7 @@
 ---
 title: Registrar verbos para extensões de nome de arquivo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6c42b1682c7f599513b9894646b30dee029740e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 73555abcc1a3c6afebf6528cc493e62a403ad00a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475015"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196309"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrando verbos para extensões de nome de arquivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [registrar verbos para extensões de nome de arquivo](https://docs.microsoft.com/visualstudio/extensibility/registering-verbs-for-file-name-extensions).  
-  
 Em geral, a associação de uma extensão de nome de arquivo com um aplicativo tem uma ação preferencial que ocorre quando um usuário clica duas vezes em um arquivo. Isso preferencial a ação é vinculada a um verbo, por exemplo aberto, que corresponde à ação.  
   
  Você pode registrar verbos que estão associados com um identificador programático (ProgID) para uma extensão usando a chave de Shell localizada em HKEY_CLASSES_ROOT\\*progid*\shell. Para obter mais informações, consulte [tipos de arquivo](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  

@@ -1,7 +1,7 @@
 ---
 title: Instalar VSPackages com o Windows Installer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9776c4c9ec58bc84bd1e60bc5eb98d7bda1c0130
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae0e99b278924a123410f5590cea9f8239acd9ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472684"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227962"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Instalando VSPackages com o Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instalando VSPackages com o Windows Installer](https://docs.microsoft.com/visualstudio/extensibility/internals/installing-vspackages-with-windows-installer).  
-  
 Integrando o VSPackage em [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] requer mais do que apenas copiar arquivos para um computador do usuário. Instalador do VSPackage deve instalar o VSPackage e seus arquivos dependentes e registre-se e integrá-los em [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. O VSPackage pode tirar proveito dos recursos de integração como exibir um ícone no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] inicial da tela e a caixa de diálogo sobre.  
   
  Arquivos do Microsoft Windows Installer são a maneira recomendada para distribuir seu VSPackages. Pacotes do Windows Installer de fácil de usar podem ser executados em qualquer sistema operacional do Windows com suporte pelo [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para obter mais informações, consulte [Windows Installer](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0).  

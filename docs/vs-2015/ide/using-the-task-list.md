@@ -1,7 +1,7 @@
 ---
 title: Usando a lista de tarefas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f58dd84be73541a3a830c16ff629424830dce488
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5662aebeb0e7b8da36c52c0c9fd727c860a4221
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460600"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172023"
 ---
 # <a name="using-the-task-list"></a>Usando a lista de tarefas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando a lista de tarefas](https://docs.microsoft.com/visualstudio/ide/using-the-task-list).  
-  
 Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens, como `TODO` e `HACK`, ou tokens personalizados, e para gerenciar atalhos que levarão você diretamente a um local predefinido no código. Clique no item na lista para ir até seu local no código-fonte.  
   
  Neste tópico:  

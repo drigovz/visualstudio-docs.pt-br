@@ -1,7 +1,7 @@
 ---
 title: 'Como: depurar um aplicativo ClickOnce com permissões restritas | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7733eeefc758f5e5cd6940108ef6ade645893407
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d01cf2be1bef794f5aeb74b86d041408fa40ce4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464995"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209528"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Como depurar um aplicativo ClickOnce com permissões restritas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: depurar um aplicativo ClickOnce com permissões restritas](https://docs.microsoft.com/visualstudio/deployment/how-to-debug-a-clickonce-application-with-restricted-permissions).  
-  
 Como desenvolvedor, você provavelmente está executando seu computador de desenvolvimento com permissões de confiança total, portanto, você não verá as exceções de segurança mesmo quando estiver depurando um aplicativo ClickOnce que o usuário final poderá ver ao executá-lo com permissões restritas.  
   
  Para capturar essas exceções, você precisa depurar o aplicativo com as mesmas permissões que o usuário final. Depuração com permissões restritas pode ser habilitada no **segurança** página do **Designer de projeto**.  

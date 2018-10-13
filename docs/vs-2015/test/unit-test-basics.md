@@ -1,7 +1,7 @@
 ---
 title: Noções básicas de teste de unidade | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa9a7bf84dbb50d54e065b56837f675c64112aab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f98990cfe1a3451b9932eb5614de614c05434edb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465026"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221554"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Noções básicas de teste de unidade](https://docs.microsoft.com/visualstudio/test/unit-test-basics).  
-  
 Verifique se seu código está funcionando conforme o esperado criando e executando testes de unidade. Ele se chama teste de unidade porque a funcionalidade de seu programa é dividida em comportamentos distintos que podem ser testados individualmente como *unidades*. O Gerenciador de Testes do Visual Studio oferece uma maneira flexível e eficiente de executar seus testes de unidade e exibir seus resultados no Visual Studio. O Visual Studio instala as estruturas de teste de unidade da Microsoft para código gerenciado e nativo. Use uma *estrutura de teste de unidade* para criar testes de unidade, executá-los e relatar os resultados desses testes. Execute os testes de unidade novamente quando realizar alterações para testar se o código ainda está funcionando corretamente. Quando você usa o Visual Studio Enterprise, pode executar testes automaticamente após cada compilação.  
   
  O teste de unidade tem o maior efeito sobre a qualidade do código quando ele é parte integrante do fluxo de trabalho de desenvolvimento de software. Assim que você escrever uma função ou outro bloco de código do aplicativo, crie testes de unidade que verifique o comportamento do código em resposta a casos padrão, limite e incorretos de dados de entrada e verifique se não houve nenhuma suposição explícita ou implícita feita pelo código. Com o *desenvolvimento orientado por testes*, você cria os testes de unidade antes de escrever o código e, portanto, os testes de unidade são usados tanto como documentação de design quando especificações funcionais.  

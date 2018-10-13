@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalkHelper | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8af7a0f463fc5d2089b374ac881cd0089dce0c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 308f16164b8267088fc929cbfd5f1753f16aa9a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475977"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188221"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaStackWalkHelper](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackwalkhelper).  
-  
 Facilita a movimentar a pilha usando o arquivo de banco de dados (. PDB) de depuração do programa.  
   
 ## <a name="syntax"></a>Sintaxe  

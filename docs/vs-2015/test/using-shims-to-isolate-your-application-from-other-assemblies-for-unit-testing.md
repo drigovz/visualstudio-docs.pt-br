@@ -1,7 +1,7 @@
 ---
 title: Usando shims a fim de isolar seu aplicativo de outros assemblies para teste de unidade | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9a1047f9399efd86b004eb22ce7064f2c7081910
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54702db4a89bdabb58805560ed8b9909652c649e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472609"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173687"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usando shims para isolar seu aplicativo de outros assemblies para teste de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando shims para isolar seu aplicativo de outros assemblies para teste de unidade](https://docs.microsoft.com/visualstudio/test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing).  
-  
 Tipos de shim * * são uma das duas tecnologias que o Microsoft Fakes Framework usa para permitir que você isole facilmente os componentes em teste do ambiente. Shims desviam chamadas a métodos específicos para o código que você está escrevendo como parte de seu teste. Muitos métodos retornam resultados diferentes dependendo das condições externas, mas um shim está sob controle do seu teste e pode retornar resultados consistentes em cada chamada. Isso facilita a escrita dos testes.  
   
  Use shims para isolar o código de assemblies que não fazem parte de sua solução. Para isolar os componentes da solução uns dos outros, recomendamos que você use stubs.  

@@ -1,7 +1,7 @@
 ---
 title: Designer de atividade DoWhile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 911e6d6d94090ddcdd43fcd9511624e209f7c03c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec9bc21095905f373cf302deedd73bbce678a6de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464642"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227650"
 ---
 # <a name="dowhile-activity-designer"></a>Designer de atividade DoWhile
 O <xref:System.Activities.Statements.DoWhile> atividade executa a atividade contida em seu <xref:System.Activities.Statements.DoWhile.Body%2A> pelo menos uma vez, até que uma condição especificada for avaliada como **falso**. Se você precisar a atividade contida em um corpo de loop para ser executado zero ou mais vezes, use a atividade de <xref:System.Activities.Statements.While> em vez disso.  

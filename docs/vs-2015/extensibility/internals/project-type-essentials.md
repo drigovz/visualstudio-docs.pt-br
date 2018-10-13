@@ -1,7 +1,7 @@
 ---
 title: Fundamentos do tipo de projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd2c0db72cce80f5345475dfd7e82b019b0ec22a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f4f2163526e1bd324e87b6ffd78bafa98965490
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468326"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222476"
 ---
 # <a name="project-type-essentials"></a>Conceitos básicos do tipo de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [fundamentos do tipo de projeto](https://docs.microsoft.com/visualstudio/extensibility/internals/project-type-essentials).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] inclui vários tipos de projeto para linguagens, como [!INCLUDE[csprcs](../../includes/csprcs-md.md)] ou [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] também permite que você crie seus próprios tipos de projeto.  
   
  Se você quiser apenas adicionar comandos personalizados, editores ou janelas de ferramentas para [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], você pode fazer isso sem criar um novo tipo de projeto. Para mais informações, consulte os seguintes tópicos:  
