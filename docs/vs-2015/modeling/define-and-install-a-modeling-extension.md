@@ -1,7 +1,7 @@
 ---
 title: Definir e instalar uma extensão de modelagem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3d6ea563d7b7d4e2cac0e4f69ea5fddcd192418
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587424"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234397"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definir e instalar uma extensão de modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definir e instalar uma extensão de modelagem](https://docs.microsoft.com/visualstudio/modeling/define-and-install-a-modeling-extension).  
-  
 No Visual Studio, você pode definir as extensões para diagramas de modelagem. Dessa maneira, você pode adaptar os modelos e diagramas de acordo com suas necessidades. Por exemplo, você pode definir comandos de menu, perfis UML, restrições de validação e itens de caixa de ferramentas. Você pode definir vários componentes em uma única extensão. Você também pode distribuir essas extensões para outros usuários do Visual Studio na forma de um [extensão de integração do Visual Studio (VSIX)](http://go.microsoft.com/fwlink/?LinkId=160780). Você pode criar um VSIX usando um projeto VSIX no Visual Studio.  
   
 ## <a name="requirements"></a>Requisitos  

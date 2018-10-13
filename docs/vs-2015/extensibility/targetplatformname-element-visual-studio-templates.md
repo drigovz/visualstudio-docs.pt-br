@@ -1,7 +1,7 @@
 ---
 title: Elemento TargetPlatformName (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 3a6b1f45-b5d6-418e-add1-87ee8f15033d
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a82a30c8df696e5666d81b18a8f60641debf828
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dea9ff1c1c27c88592a4a13c55ae06b07328d811
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467075"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211712"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>Elemento TargetPlatformName (Modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento TargetPlatformName (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/targetplatformname-element-visual-studio-templates).  
-  
 Especifica a plataforma de que os destinos de modelo de projeto. Esse elemento é usado para especificar que um modelo de projeto é usado para criar [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativos.  
   
 ## <a name="syntax"></a>Sintaxe  

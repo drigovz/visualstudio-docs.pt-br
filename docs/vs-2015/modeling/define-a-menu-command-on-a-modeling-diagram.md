@@ -1,7 +1,7 @@
 ---
 title: Definir um comando de menu em um diagrama de modelagem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 00cb466fc9859bc36734ee3c42a23190632f39a2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c1a93ab331771db3303ffcbcb7c067c4c325e6a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587834"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193148"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definir um comando de menu em um diagrama de modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definir um comando de menu em um diagrama de modelagem](https://docs.microsoft.com/visualstudio/modeling/define-a-menu-command-on-a-modeling-diagram).  
-  
 No Visual Studio, você pode definir itens de menu adicionais nos menus de atalho de um diagrama UML. Você pode controlar se o comando de menu aparece e é habilitado no menu de atalho de qualquer elemento no diagrama, e você pode escrever código que é executado quando o usuário escolhe o item de menu. Você pode empacotar essas extensões em uma extensão de integração do Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) e distribuí-lo para outros usuários do Visual Studio.  
   
 ## <a name="requirements"></a>Requisitos  

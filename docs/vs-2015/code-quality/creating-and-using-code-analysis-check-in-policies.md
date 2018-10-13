@@ -1,7 +1,7 @@
 ---
 title: Criando e usando políticas do Check-In de análise de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2719e9ec021a1fa2c40d7afb56a4ac459542a7b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b2eb5059d5ec027654b1e4de7098c732e897088
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462282"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238349"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Criando e usando políticas de check-in de análise do código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando e usando análise de código de Check-In políticas](https://docs.microsoft.com/visualstudio/code-quality/creating-and-using-code-analysis-check-in-policies).  
-  
 Quando você usa o controle de versão do Team Foundation (TFVC), você pode criar uma política de check-in do análise código para o .NET Framework e projetos de código nativos (C/C++) em um projeto de equipe. Você pode usar a política de check-in do análise código para controlar e melhorar a qualidade do código que é verificado na base de código.  
   
  A política é aprovada quando a compilação local está atualizada e análise de código foi executada nos arquivos de origem mais recentes. No mínimo, as regras de análise de código que estão habilitadas no código do projeto devem conter as mesmas regras que aquelas que são definidos na política de check-in do projeto team. As regras que foram especificadas como erros nas configurações do projeto de equipe também devem ser especificadas como erros no código do projeto  

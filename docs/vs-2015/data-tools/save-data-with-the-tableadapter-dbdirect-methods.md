@@ -1,7 +1,7 @@
 ---
 title: Salvar dados com o TableAdapter DBDirect métodos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 69839a8f54b35bd932296b0dbd0126af3ac58ba2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6bb326f1cad6ea019c5d057ca24d198c28dca2a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467656"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220800"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvar os dados com os métodos TableAdapter DBDirect
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [salvar dados com o TableAdapter DBDirect métodos](https://docs.microsoft.com/visualstudio/data-tools/save-data-with-the-tableadapter-dbdirect-methods).  
-  
   
 Este passo a passo fornece instruções detalhadas para executar instruções SQL diretamente em um banco de dados usando os métodos DBDirect de um TableAdapter. Os métodos DBDirect de um TableAdapter fornecem um bom nível de controle sobre as atualizações de banco de dados. Você pode usá-los para executar instruções SQL específicas e procedimentos armazenados, chamando o indivíduo `Insert`, `Update`, e `Delete` métodos conforme exigido pelo seu aplicativo (em vez de sobrecarregado `Update` método que executa a atualização INSERT e DELETE instruções todas em uma chamada).  
   

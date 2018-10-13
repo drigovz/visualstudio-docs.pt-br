@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: criando uma tarefa embutida | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 727c8cec7309952189558d2f4b7aebc8ec99738d
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 265a83444ce495452767b217a84072bfc17377d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880988"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250192"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Instruções passo a passo: criando uma tarefa embutida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Criando uma tarefa embutida](https://docs.microsoft.com/visualstudio/msbuild/walkthrough-creating-an-inline-task).  
-  
   
 As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implementa a interface <xref:Microsoft.Build.Framework.ITask>. A partir do .NET Framework versão 4, você pode criar tarefas embutidas no arquivo de projeto. Você não precisa criar um assembly separado para hospedar a tarefa. Para obter mais informações, consulte [Tarefas Embutidas](../msbuild/msbuild-inline-tasks.md).  
   

@@ -1,7 +1,7 @@
 ---
 title: Designers de atividade de máquina de estado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 5b9da275c3c4c679fcc6de08f5611b2a594bd8bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fff12b5d3ba67f01a210d708081a010c4c20eea1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468179"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245512"
 ---
 # <a name="state-machine-activity-designers"></a>Designer de atividade do computador de estado
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] inclui um número de designer de atividade que você pode usar para construir os fluxos de trabalho. Esta seção contém sistema forneceu os designers de atividade usados para criar e gerenciar fluxos de trabalho do computador de estado. Os tópicos a seguir descrevem esses designers e fornecem orientação sobre como usá-los.  

@@ -1,7 +1,7 @@
 ---
 title: Implementando um fornecedor de porta | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d14c2642d30ee46df0cd1b766540ae0b135e4d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33ca3287b6408541f64152609a6f33b4eac03632
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474771"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180746"
 ---
 # <a name="implementing-a-port-supplier"></a>Implementando um fornecedor de porta
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [implementação de um fornecedor de porta](https://docs.microsoft.com/visualstudio/extensibility/debugger/implementing-a-port-supplier).  
-  
 Um fornecedor de porta fornece portas de solicitação para o Gerenciador de sessão de depuração (SDM). Um fornecedor de porta precisa ser implementado ao depurar para uma máquina não-DCOM ou quando um novo dispositivo precisa de suporte. Por exemplo, para fornecer um telefone celular de depuração, você pode implementar um fornecedor de porta que fornece as portas que se conectam para o telefone celular (talvez por meio do IR ou uma conexão de célula) e enumera os processos e programas em execução no telefone.  
   
  Para depuração de programas em computadores baseados em Windows (incluindo a depuração remota), o Visual Studio fornece os fornecedores de porta para nativo e processos de tempo de execução de linguagem comum (CLR), portanto, não há nenhuma necessidade de implementar seu próprio fornecedor de porta nesses casos.  

@@ -1,7 +1,7 @@
 ---
 title: Implantando componentes do COM o ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2ddf7e14d3a9e1ceb2e1432e70942dd455621058
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8a544f954ed80e9adb41e0730960c4947f6357a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463272"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246825"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Implantando componentes do COM com o ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [implantação de componentes COM ClickOnce](https://docs.microsoft.com/visualstudio/deployment/deploying-com-components-with-clickonce).  
-  
 Implantação de componentes legados COM tradicionalmente tem sido uma tarefa difícil. Componentes precisam ser registrados globalmente e, portanto, podem causar efeitos colaterais indesejáveis entre aplicativos sobrepostos. Essa situação geralmente não é um problema em aplicativos .NET Framework porque componentes são completamente isolados para um aplicativo ou são compatíveis com o lado a lado. Visual Studio permite que você implante os componentes isolados no Windows XP ou o sistema de operacional superior.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Fornece um mecanismo fácil e seguro para implantar seus aplicativos .NET. No entanto, se seus aplicativos usam componentes herdados, você precisará executar etapas adicionais para implantá-los. Este tópico descreve como implantar componentes isolados e fazer referência a componentes nativos (por exemplo, do Visual Basic 6.0 ou Visual C++).  

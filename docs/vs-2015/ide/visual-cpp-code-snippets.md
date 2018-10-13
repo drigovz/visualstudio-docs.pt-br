@@ -1,7 +1,7 @@
 ---
 title: Snippets de código do Visual C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f4286d7797f6c9a23d84f49a74d67113f9554da0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a125223521bf73012944841c6fcf531df3a9ae8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464708"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242756"
 ---
 # <a name="visual-c-code-snippets"></a>Snippets de código do Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [trechos de código do Visual C++](https://docs.microsoft.com/visualstudio/ide/visual-cpp-code-snippets).  
-  
 No Visual Studio, você pode usar snippets de código para adicionar código comumente usado nos seus arquivos de código do C++. Em geral, você pode usar os snippets de código de forma bem parecida com o C#, mas o conjunto de snippets de código padrão é diferente.  
   
  Você pode adicionar um snippet de código em um local específico no seu código (inserção) ou envolver algum código selecionado com um snippet de código.  

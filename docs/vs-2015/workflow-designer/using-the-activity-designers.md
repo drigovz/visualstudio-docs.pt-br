@@ -1,7 +1,7 @@
 ---
 title: Usando os Designers de atividade | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: c370b48d0534303947ca2e940adf95e178422c56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7601f4e42c7dbc2bee63719986760bedd1c8589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465663"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224231"
 ---
 # <a name="using-the-activity-designers"></a>Usando os designers de atividades
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] inclui um número o sistema forneceu as atividades que você pode usar ao criar seus atividades e fluxos de trabalho. Esta seção descreve as categorias de sistema forneceu as atividades e seus designers que estão disponíveis. Os tópicos nas atividades individuais e seus respectivos designer em cada uma dessas categorias descrevem o que essas atividades tornam e fornecem orientação sobre como usá-los.  

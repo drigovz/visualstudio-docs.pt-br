@@ -1,7 +1,7 @@
 ---
 title: 'CA1006: Não aninhar tipos genéricos em assinaturas de membro | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 57f892510246d65a80b85aad256a7f64113e208c
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: b4a34ed72a98e7ef4101b4c754634a1988e2a33f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587246"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210984"
 ---
 # <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006: não aninhar tipos genéricos em assinaturas de membro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1006: não aninhar tipos genéricos em assinaturas de membro](https://docs.microsoft.com/visualstudio/code-quality/ca1006-do-not-nest-generic-types-in-member-signatures).
-
 |||
 |-|-|
 |NomeDoTipo|DoNotNestGenericTypesInMemberSignatures|

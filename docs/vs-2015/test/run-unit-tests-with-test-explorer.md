@@ -1,7 +1,7 @@
 ---
 title: Executar testes de unidade com o Gerenciador de Testes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a93bdbac30421d17c203d202f0ef01b05686903e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 837e004dfffbaba5eac154b195ff4ed8c382430d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879716"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218342"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [executar testes de unidade com Gerenciador de testes](https://docs.microsoft.com/visualstudio/test/run-unit-tests-with-test-explorer).  
-  
 Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou projetos de teste de unidade de terceiros, agrupar testes em categorias, filtre a lista de testes, criar, salvar e executar as listas de reprodução de testes. Você também pode depurar testes e analisar um teste de desempenho e cobertura de código.  
   
 ##  <a name="BKMK_Contents"></a> Conteúdo  

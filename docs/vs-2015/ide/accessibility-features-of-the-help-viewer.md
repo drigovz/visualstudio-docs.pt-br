@@ -1,7 +1,7 @@
 ---
 title: Recursos de acessibilidade do Help Viewer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 623e2c6514f8eddfd587848aff5fc68c29640885
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d6dee81d823c52986922d59a4e41f402db4fbd5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468456"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242120"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Funcionalidades de Acessibilidade do Visualizador da Ajuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [recursos de acessibilidade do Help Viewer](https://docs.microsoft.com/visualstudio/ide/accessibility-features-of-the-help-viewer).  
-  
 A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços para todas as pessoas. Este tópico inclui informações sobre recursos, produtos e serviços que ajudam a tornar o Microsoft Help Viewer 2.2 acessível a pessoas com uma ampla variedade de capacidades.  
   
 ## <a name="keyboard-access"></a>Acesso pelo teclado  

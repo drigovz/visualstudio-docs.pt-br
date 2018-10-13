@@ -1,7 +1,7 @@
 ---
 title: Shell do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d96d4204e105324a9c209f74f9aee160c3eddde
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f0ef1e207fffc4d44963b968caad392b9d976c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462943"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222398"
 ---
 # <a name="visual-studio-shell"></a>Shell do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Shell do Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/internals/visual-studio-shell).  
-  
 O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] shell é o principal agente de integração no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. O shell fornece a funcionalidade necessária para habilitar os VSPackages compartilhar serviços comuns. Porque o objetivo de arquitetura de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] é casaco principal funcionalidade em VSPackages, o shell é uma estrutura para fornecer a funcionalidade básica e dar suporte a comunicação cruzada entre seu componente VSPackages.  
   
 ## <a name="shell-responsibilities"></a>Responsabilidades do shell  

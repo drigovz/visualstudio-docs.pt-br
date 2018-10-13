@@ -1,7 +1,7 @@
 ---
 title: Função SccQueryInfo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b134310ecadd569a35d10c0f064ff785ad01f90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9b6de2b3c3894b6c6807995150707338e0d7162
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461059"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183151"
 ---
 # <a name="sccqueryinfo-function"></a>Função SccQueryInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [função SccQueryInfo](https://docs.microsoft.com/visualstudio/extensibility/sccqueryinfo-function).  
-  
 Essa função obtém as informações de status para um conjunto de arquivos selecionados no controle de origem.  
   
 ## <a name="syntax"></a>Sintaxe  

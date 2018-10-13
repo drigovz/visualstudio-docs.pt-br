@@ -1,7 +1,7 @@
 ---
 title: Adicionar estereótipos a elementos de modelo UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b570889c117f2fac037ddf40efe32abbd0b309c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48bc410c2f9f6a3dfb0e18b713a9b50dda499ea8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473154"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259708"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Adicionar estereótipos a elementos de modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elementos de modelo de adicionar Estereótipos UML](https://docs.microsoft.com/visualstudio/modeling/add-stereotypes-to-uml-model-elements).  
-  
 Você pode adicionar um estereótipo para um elemento de modelo UML anotá-lo e fornecê-los com propriedades especializadas. Para adicionar um estereótipo para um elemento de modelo, o estereótipo deve ser definido em um perfil, e você deve vincular o perfil a um pacote ou para o modelo que contém o elemento de modelo. Cada estereótipo pode ser adicionado somente a determinados tipos de elemento de modelo, como classes UML, casos de uso ou componentes.  
   
  Por exemplo, se você quiser definir uma classe UML com o estereótipo «especificação», você deve criá-lo dentro de um pacote ou um modelo que esteja vinculado à L2 de perfil padrão.  

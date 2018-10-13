@@ -1,7 +1,7 @@
 ---
 title: Modo de exibição de árvore de chamadas – Dados de instrumentação da memória do .NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7192ebc341c471cf164ca3f54bcbbd15c9224d11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af70592ef3d0c9365732c9964872b03fa4328a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474850"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205147"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Modo de exibição de árvore de chamadas – Dados de instrumentação de memória do .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [chamar de exibição de árvore – dados de instrumentação de memória do .NET](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-dotnet-memory-instrumentation-data).  
-  
 O modo de exibição de árvore de chamada dos dados de criação de perfil de alocação de memória .NET que foram coletados usando o método de instrumentação exibe os caminhos de execução de função que foram percorridos no aplicativo com perfil. A raiz da árvore é o ponto de entrada do aplicativo ou componente. Cada nó de função lista todas as funções que ele chamou e os dados de memória e timing do .NET da função.  
   
  Os valores no modo de exibição de Árvore de Chamadas são para as instâncias de função que foram chamadas pela função pai na árvore de chamadas. Os valores de porcentagem são calculados comparando o valor de instância de função para o número total ou tamanho de alocações na execução da criação de perfil.  

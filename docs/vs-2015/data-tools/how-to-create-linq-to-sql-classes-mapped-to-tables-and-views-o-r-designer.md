@@ -1,7 +1,7 @@
 ---
 title: 'Como: criar LINQ to SQL classes mapeadas para tabelas e exibições (Object Relational Designer) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,15 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1d9cebc980b62a5676ee4e65e5554086a273fa73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 550fc362cf1652df48e029461a4d5fbdc6f04006
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463042"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269523"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Como: criar LINQ to SQL classes mapeadas para tabelas e exibições (Designer relacional de objetos)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [como: criar classes LINQ to SQL mapeadas para tabelas e exibições (Object Relational Designer)](https://docs.microsoft.com/visualstudio/data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer).
-
 Classes LINQ to SQL mapeadas para tabelas de banco de dados e modos de exibição são chamados *classes de entidade*. A classe de entidade é mapeado para um registro, enquanto as propriedades individuais de uma classe de entidade mapeiam para as colunas individuais que compõem um registro. Criar classes de entidade que se baseiam no banco de dados tabelas ou exibições arrastando tabelas ou exibições do **Gerenciador de servidores**/**Database Explorer** até a [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). O [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] gera as classes e aplica o específico [! LINQ para atributos de SQL para habilitar o [! LINQ para funcionalidade de SQL (a comunicação de dados e recursos de edição a <xref:System.Data.Linq.DataContext>). Para obter informações detalhadas sobre o [! Classes LINQ to SQL, consulte [o LINQ no modelo de objeto do SQL](http://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810).
 
 > [!NOTE]

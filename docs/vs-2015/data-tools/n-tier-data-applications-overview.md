@@ -1,7 +1,7 @@
 ---
 title: Visão geral dos aplicativos de dados de N camadas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 761002eb9e46ec0e344c653affbebb10b3922466
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 912752c39d8180f7f3cd5dc0cca719e39e39a0e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464886"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171958"
 ---
 # <a name="n-tier-data-applications-overview"></a>Visão geral de aplicativos de dados de N camadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [visão geral dos aplicativos de dados de N camadas](https://docs.microsoft.com/visualstudio/data-tools/n-tier-data-applications-overview).  
-  
   
 N-camadas * aplicativos de dados são aplicativos de dados que são separados em várias *camadas*. Aplicativos de n camadas também chamados de "aplicativos distribuídos" e "aplicativos multicamados", separam o processamento em camadas discretas que são distribuídas entre o cliente e o servidor. Quando você desenvolve aplicativos que acessam dados, você deve ter uma separação clara entre as várias camadas que compõem o aplicativo.  
   

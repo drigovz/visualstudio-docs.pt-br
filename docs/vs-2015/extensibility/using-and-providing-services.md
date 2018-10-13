@@ -1,7 +1,7 @@
 ---
 title: Usar e fornecer serviços | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c0b415ba-b825-4da0-9faf-8a60a663e302
 caps.latest.revision: 42
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: facf0bb9968e3ffbc9a68eb8eee906f300eb1859
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a2aca4c0d9ce518410250b8274d70e17d27ab859
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476118"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247593"
 ---
 # <a name="using-and-providing-services"></a>Usando e fornecendo serviços
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Using e fornecendo serviços](https://docs.microsoft.com/visualstudio/extensibility/using-and-providing-services).  
-  
 Um serviço é um contrato entre dois VSPackages. Um VSPackage oferece um conjunto específico de interfaces para outro VSPackage consumir. Por exemplo, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oferece o <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> de serviço a qualquer VSPackage ele carrega. Esse serviço fornece o <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, que pode ser usado para gravar no log de atividade. Para obter mais informações, consulte [como: usar o Log de atividades](../extensibility/how-to-use-the-activity-log.md).  
   
  VSPackages podem oferecer serviços de suas próprias por usar o <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interface...  

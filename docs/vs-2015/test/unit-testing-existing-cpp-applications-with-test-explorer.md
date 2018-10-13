@@ -1,7 +1,7 @@
 ---
 title: Teste de unidade de aplicativos do C++ existentes com Gerenciador de Testes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 040e3f0a236067a96d107f64f4c9aca06d0706e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63761dc543b327c1c8639203c80afb92d4700c8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461158"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172452"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Teste de unidade de aplicativos do C++ existentes com Gerenciador de Testes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [teste aplicativos do C++ existentes com Gerenciador de testes de unidade](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer).  
-  
 Recomendamos que, antes de alterar um aplicativo existente, você verifique se ele tem uma boa cobertura com testes de unidade. Isso dá a garantia de que as alterações não introduziram bugs. Se o aplicativo ainda não tem testes de unidade, você pode adicioná-los usando as técnicas demonstradas neste tópico. Este tópico descreve como adicionar testes de unidade para código existente do Visual C++, iniciando com a decisão de como testar seu código e, em seguida, criando, escrevendo e executando os testes.  
   
 ## <a name="deciding-how-to-test-your-code"></a>Decidindo como testar seu código  

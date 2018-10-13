@@ -1,7 +1,7 @@
 ---
 title: Parâmetro de Assembly de interoperabilidade do Visual Studio Marshaling | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: douge
-ms.openlocfilehash: 77b94eeb4195654edabdd566eae762593b785496
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465679"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195007"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Parâmetro de Assembly de interoperabilidade do Visual Studio de Marshaling
 Os VSPackages são escritos em código gerenciado pode ter que chamar ou ser chamado pelo código COM não gerenciado. Normalmente, os argumentos de método são transformados ou marshaling, automaticamente pelo marshaler de interoperabilidade. No entanto, às vezes, argumentos não podem ser transformados de uma maneira simples. Nesses casos, os parâmetros de protótipo do método de assembly de interoperabilidade são usados para corresponder ao máximo os parâmetros da função COM. Para obter mais informações, consulte [Marshaling de interoperabilidade](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  

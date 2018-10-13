@@ -1,7 +1,7 @@
 ---
 title: Opções, Editor de Texto, JavaScript, formatação | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4a5a69d556beb8ebf3d3f75720614f7258b1780
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ea54b743853bba445618ad3b6e08fd9a9a54027
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464008"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271044"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Opções, Editor de Texto, JavaScript, Formatação
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [opções, Editor de texto, JavaScript, formatação](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-javascript-formatting).  
-  
   
 Use a página **Formatação** da caixa de diálogo **Opções** para definir opções para formatar código no Editor de Código. Para acessar essa página, na barra de menus, escolha **Ferramentas**, **Opções** e, em seguida, expanda **Editor de Texto**, **JavaScript**, e **Formatação**.  
   

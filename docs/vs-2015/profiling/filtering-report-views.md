@@ -1,7 +1,7 @@
 ---
 title: Filtrando Exibições de Relatório | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5fe6ce49a9ffee4230cfd4c0528b53761bc1caf1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 79df08496cfa0e15f2caa648afcb1ee78c636d56
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466582"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238284"
 ---
 # <a name="filtering-report-views"></a>Filtrando exibições de relatório
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Filtrando exibições de relatório](https://docs.microsoft.com/visualstudio/profiling/filtering-report-views).  
-  
 Você pode aplicar filtros para arquivos de dados de criação de perfil para limitar os dados de criação de perfil que são exibidos nas exibições de Relatório de Desempenho e exportados para arquivos de relatório. Você pode limitar um relatório aos dados entre os valores de carimbo de data/hora e limitar os dados a processos e threads específicos. Você pode salvar filtros em um arquivo e, em seguida, criar um filtro em um arquivo de dados de criação de perfil diferente importando o filtro salvo.  
   
  Você também pode limitar um relatório a um segmento de tempo usando a linha de tempo gráfica na Exibição de Resumo. Consulte [Como filtrar exibições de relatório por meio da linha do tempo de resumo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
@@ -49,7 +47,7 @@ Você pode aplicar filtros para arquivos de dados de criação de perfil para li
     |**And/Or**|Escolha **And** se essa cláusula e a próxima devem ambas ser verdadeiras para corresponder a um resultado. Escolha **Or** se essa cláusula ou a próxima podem ser verdadeiras para corresponder a um resultado.|  
     |**Campo**|Selecione o campo de relatório para usar na cláusula de filtro da lista de campos de dados exibida.|  
     |**Operador**|Selecione o operador que especifica o relacionamento que deseja na cláusula entre o campo e o valor.<br /><br /> =    É igual a<br /><br /> <>  Não é igual a<br /><br /> <    Menor que<br /><br /> >    Maior que<br /><br /> <=  Menor ou igual a<br /><br /> >= Maior ou igual a|  
-    |**Value**|Selecione ou insira o valor a ser procurado. Alguns campos listam os valores disponíveis para o campo.|  
+    |**Valor**|Selecione ou insira o valor a ser procurado. Alguns campos listam os valores disponíveis para o campo.|  
   
 3.  
   

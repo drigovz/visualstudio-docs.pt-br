@@ -1,7 +1,7 @@
 ---
 title: Dicas de pesquisa de índice | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 592a823da1efacd2aa452d5cb470f8d4f0e52bdc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6183fbf2a7ec7c32282f4dbe6c4a497e5ba3bff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463060"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236282"
 ---
 # <a name="index-search-tips"></a>Dicas de pesquisa do Índice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [dicas de pesquisa de índice](https://docs.microsoft.com/visualstudio/ide/index-search-tips).  
-  
 É possível localizar informações no Índice digitando palavras-chave. Este tópico sugere maneiras úteis para pesquisar a Ajuda usando o Índice.  
   
 ## <a name="index-search-tips"></a>Dicas de pesquisa do Índice  

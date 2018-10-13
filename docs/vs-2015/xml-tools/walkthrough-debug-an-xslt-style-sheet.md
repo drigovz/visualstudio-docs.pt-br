@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Depurar uma folha de estilos XSLT | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 969bccce307683252c695ebe1d337aa08b04d022
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1be04d9cc723b2a741ba43676977854306cd03e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460333"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198790"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Passo a passo: Depurar uma folha de estilos XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Migrando um serviço de linguagem herdado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a9cd6edb18f33a87f81d36feea55a26c0ed1e78
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 39f2cc0932e875a33621241d6cba0cb0b692ff6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464480"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247293"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migrando um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [migrando um serviço de linguagem herdado](https://docs.microsoft.com/visualstudio/extensibility/internals/migrating-a-legacy-language-service).  
-  
 Você pode migrar um serviço de linguagem herdado para uma versão posterior do Visual Studio atualizando o projeto e adicionando um arquivo vsixmanifest ao projeto. O serviço de linguagem continuará a funcionar como antes, porque o editor do Visual Studio se adapta a ele.  
   
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar um serviço de linguagem, consulte [Editor e extensões do serviço de linguagem](../../extensibility/editor-and-language-service-extensions.md).  

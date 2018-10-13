@@ -1,7 +1,7 @@
 ---
 title: Usar o paralelo janela pilhas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01dd627143c072fea6dec99ea47ee4d6919dd62e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 353d9a39a299c0803bb4f27843fcae43375105cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462968"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182163"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Usando a janela Pilhas Paralelas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando a janela Parallel Stacks](https://docs.microsoft.com/visualstudio/debugger/using-the-parallel-stacks-window).  
-  
 O **pilhas paralelas** janela é útil quando você estiver depurando aplicativos multithread. Sua **exibição de Threads** mostra informações da pilha de chamada para todos os threads em seu aplicativo. Permite navegar entre os threads e os quadros da pilha nesses threads. No código gerenciado, o **modo de exibição de tarefas** mostra pilhas de <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos. No código nativo, o **modo de exibição de tarefas** mostra pilhas de [grupos de tarefas](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [algoritmos em paralelo](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [agentes assíncronos](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)e [tarefas leves](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
   
 ## <a name="threads-view"></a>Modo de Exibição de Threads  

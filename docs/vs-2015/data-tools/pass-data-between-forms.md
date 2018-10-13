@@ -1,7 +1,7 @@
 ---
 title: Passar dados entre formulários | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e046bdf38af09b5f7ea0e8beb296a2b3d32cff6d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9f28902673018a4ae90fbb2ed83e741be99fbfc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467208"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204822"
 ---
 # <a name="pass-data-between-forms"></a>Passar dados entre formulários
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [passar dados entre formulários](https://docs.microsoft.com/visualstudio/data-tools/pass-data-between-forms).  
-  
   
 Este passo a passo fornece instruções detalhadas de como passar os dados de um formulário para outro. Usando as tabelas customers e orders do Northwind, um formulário que os usuários selecionem um cliente e um segundo formulário exibe os pedidos do cliente selecionado. Este passo a passo mostra como criar um método no segundo formulário que recebe dados do primeiro formulário.  
   

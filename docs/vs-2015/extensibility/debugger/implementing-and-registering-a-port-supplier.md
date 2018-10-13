@@ -1,7 +1,7 @@
 ---
 title: Implementar e registrar um fornecedor de porta | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe8e5cac0b1737d7c3dbd7e9301e0ca25d778db4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86490e3d7df07008f23b9a12f1167b2004972a1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473600"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205212"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Implementando e registrando um fornecedor de porta
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [implementar e registrar um fornecedor de porta](https://docs.microsoft.com/visualstudio/extensibility/debugger/implementing-and-registering-a-port-supplier).  
-  
 A função de um fornecedor de porta é acompanhar e fornecer portas, que por sua vez, gerenciar processos. No momento em que uma porta precisa ser criado, o fornecedor de porta é instanciado usando CoCreate com o GUID do fornecedor de porta (o Gerenciador de sessão de depuração [SDM] usará o fornecedor de porta, o usuário selecionado ou o fornecedor de porta especificada pelo sistema do projeto). Em seguida, chamará o SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) para ver se todas as portas podem ser adicionadas. Se uma porta pode ser adicionada, uma nova porta é solicitada, chamando [adicionar porta](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) e passando-o um [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) que descreve a porta. `AddPort` Retorna uma nova porta representada por uma [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface.  
   
 ## <a name="discussion"></a>Discussão  

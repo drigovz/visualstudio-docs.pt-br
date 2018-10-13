@@ -1,7 +1,7 @@
 ---
 title: 'Lista de verificação: Criar um serviço de linguagem herdado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d04e163e45c9a5932375ffec0f0e75ef8254cfc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1eaf68ccc9a40e0ead91ab6d46cde0ec2cf5cbce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467685"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242782"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Lista de verificação: criando um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [lista de verificação: criar um serviço de linguagem herdado](https://docs.microsoft.com/visualstudio/extensibility/internals/checklist-creating-a-legacy-language-service).  
-  
 A lista de verificação a seguir resume as etapas básicas que você deve executar para criar um serviço de linguagem para o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editor de núcleo. Integre seu serviço de linguagem em [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], você deve criar um avaliador de expressão de depuração. Para obter mais informações, consulte [escrever um avaliador de expressão de CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) na [extensibilidade do depurador do Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
   
 ## <a name="steps-for-creating-a-language-service"></a>Etapas para criar um serviço de linguagem  

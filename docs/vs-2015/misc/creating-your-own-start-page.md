@@ -1,7 +1,7 @@
 ---
 title: Criar a sua própria página inicial | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: douge
-ms.openlocfilehash: 87195c318f6bdc04dc0cfde54c35577142661224
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc3c19d7a2756e3716e76846ac468433d00cc1d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460741"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232070"
 ---
 # <a name="creating-your-own-start-page"></a>Criando sua própria página inicial
 Você pode criar uma página inicial personalizada usando o modelo de projeto de página Iniciar ou criando uma página em branco do início.  

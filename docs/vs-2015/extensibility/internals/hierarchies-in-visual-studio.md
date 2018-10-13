@@ -1,7 +1,7 @@
 ---
 title: Hierarquias no Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba640fab1c1564a8fa957d9f7b183e02db86a858
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a7ec254b80234b2eec4955cd2b57a641a233b1a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466310"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250647"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Hierarquias no Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [hierarquias no Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/internals/hierarchies-in-visual-studio).  
-  
 O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente de desenvolvimento integrado (IDE) exibe um projeto como um *hierarquia*. No IDE, uma hierarquia é uma árvore de nós, onde cada nó tem um conjunto de propriedades associadas. Um *hierarquia de projeto* é um contêiner que mantém os itens do projeto, as relações dos itens e propriedades associadas dos itens e comandos.  
   
  Na [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], você gerencia hierarquias de projeto usando a interface de hierarquia, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface redireciona você invocar de itens de projeto para a janela de hierarquia apropriada, em vez do manipulador de comandos padrão de comandos.  

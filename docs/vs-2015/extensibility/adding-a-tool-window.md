@@ -1,7 +1,7 @@
 ---
 title: Adição de uma janela de ferramentas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 caps.latest.revision: 53
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d484dc6c7d66284034d29162b19ab45a16fd23f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd8c6efd96d8b70f2f23f526041f2f83867bbd2f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466847"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245421"
 ---
 # <a name="adding-a-tool-window"></a>Adicionando uma janela de ferramentas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionando uma janela de ferramentas](https://docs.microsoft.com/visualstudio/extensibility/adding-a-tool-window).  
-  
 Neste passo a passo, você aprenderá como criar uma janela de ferramenta e integrá-la no Visual Studio das seguintes maneiras:  
   
 -   Adicione um controle para a janela da ferramenta.  

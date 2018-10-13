@@ -1,7 +1,7 @@
 ---
 title: Opções e páginas de opções | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97bf59649d0f2099261bef7a3e425f2fe7fc553e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d61d2c89a163cf111a2d33701a463e018f8f1488
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465382"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261034"
 ---
 # <a name="options-and-options-pages"></a>Opções e páginas de opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [opções e páginas de opções](https://docs.microsoft.com/visualstudio/extensibility/internals/options-and-options-pages).  
-  
 Clicando em **opções** sobre o **ferramentas** menu é aberto o **opções** caixa de diálogo. As opções na caixa de diálogo são coletivamente chamadas de páginas de opções. O controle de árvore no painel de navegação inclui as categorias de opções, e cada categoria tem páginas de opções. Quando você seleciona uma página, suas opções aparecem no painel direito. Essas páginas permitem que você altere os valores das opções que determinam o estado de um VSPackage.  
   
 ## <a name="support-for-options-pages"></a>Suporte para páginas de opções  

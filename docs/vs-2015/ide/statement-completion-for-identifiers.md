@@ -1,7 +1,7 @@
 ---
 title: Preenchimento de declaração para identificadores | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 630d0f55792b06cd1c99f9c1947a5ae73bce2683
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f0f990526bc142b9951ab095e4bbf26636c94e30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881027"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241250"
 ---
 # <a name="statement-completion-for-identifiers"></a>Conclusão de instrução para identificadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [documentação do Visual Studio 2017](/visualstudio/).  
-  
 JavaScript não permite explícita de digitação para declarações de variável. Como resultado, o IntelliSense sempre não pode fornecer listas de conclusão para objetos. Isso pode ocorrer em várias situações. A seguir estão alguns problemas comuns.  
   
 -   Um parâmetro é declarado, mas ele não foi chamado em outro lugar no documento ativo, conforme mostrado no exemplo a seguir.  

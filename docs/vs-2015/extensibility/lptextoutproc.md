@@ -1,7 +1,7 @@
 ---
 title: LPTEXTOUTPROC | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e8fc709353e4a2e39059cade96aa49c30fedac4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5ef5d1c5e92282de6454ca3da8c2adbb8914248
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472854"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266929"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [LPTEXTOUTPROC](https://docs.microsoft.com/visualstudio/extensibility/lptextoutproc).  
-  
 Quando o usuário executa uma operação de controle do código-fonte dentro do ambiente de desenvolvimento integrado (IDE), o plug-in de controle do código-fonte talvez queira transmitir mensagens de status ou erro relacionadas à operação. O plug-in pode exibir suas próprias caixas de mensagem para essa finalidade. No entanto, para obter mais integração perfeita, o plug-in pode passar cadeias de caracteres para o IDE, o que, em seguida, exibe-os em sua maneira nativa de exibir informações de status. O mecanismo para isso é o `LPTEXTOUTPROC` ponteiro de função. O IDE implementa essa função (descrita mais detalhadamente abaixo) para exibir o status e erros.  
   
  O IDE passa para o controle de fonte plug-in um ponteiro de função para essa função, como o `lpTextOutProc` parâmetro, ao chamar o [SccOpenProject](../extensibility/sccopenproject-function.md). Durante uma operação de SCC, por exemplo, no meio de uma chamada para o [SccGet](../extensibility/sccget-function.md) envolvendo muitos arquivos, o plug-in pode chamar o `LPTEXTOUTPROC` função, periodicamente passar cadeias de caracteres para exibir. O IDE pode exibir essas cadeias de caracteres em uma barra de status em uma janela de saída, ou em uma caixa de mensagem separada, conforme apropriado. Opcionalmente, o IDE pode ser capaz de exibir determinadas mensagens com um **Cancelar** botão. Isso permite que o usuário cancelar a operação, e ele permite que o IDE para transmitir essas informações para o plug-in.  

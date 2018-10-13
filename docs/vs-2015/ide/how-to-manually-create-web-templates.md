@@ -1,7 +1,7 @@
 ---
 title: Como criar modelos da Web manualmente | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4d84a71d54f178574e7aba719f4189b35312ec03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4496c42bfcc0baecd69770ff529c189d85da026
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468119"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220864"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Como criar manualmente modelos da Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: criar manualmente modelos da Web](https://docs.microsoft.com/visualstudio/ide/how-to-manually-create-web-templates).  
-  
 Criar um modelo de Web é diferente de criar outros tipos de modelos. Como modelos de projeto Web aparecem na caixa de diálogo **Adicionar Novo Site** e itens de projetos da Web são categorizados por linguagem de programação, o arquivo .vstemplate deve especificar o modelo como um modelo de Web e identificar a linguagem de programação.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Coletando estatísticas de desempenho usando amostragem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce6a9fed51e4c5dc93fca406dbb43787700d83d2
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: eaa8ae8c5e073d4c83ae6489cd32953b0959072f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880403"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223686"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>Coletando estatísticas de desempenho usando amostragem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Coletando estatísticas de desempenho usando amostragem](https://docs.microsoft.com/visualstudio/profiling/collecting-performance-statistics-by-using-sampling).  
-  
 Por padrão, o método de amostragem das Ferramentas de Criação de Perfil [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] coleta informações de criação de perfil cada 10.000.000 de ciclos do processador (aproximadamente a cada um centésimo de segundo em um computador de 1 GHz). O método de amostragem é útil para localizar problemas de utilização do processador e é o método sugerido para iniciar a maioria das investigações de desempenho.  
   
  **Requisitos**  

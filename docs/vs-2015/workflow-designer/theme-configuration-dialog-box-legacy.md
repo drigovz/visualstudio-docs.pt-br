@@ -1,7 +1,7 @@
 ---
 title: Caixa de diálogo de configuração tema (herdado) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 04b27b7473e55ecd0ff5dab58bbff81b132c1878
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8cd8427bf239b1f99d339f822800c8e9c3f5003
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463372"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223945"
 ---
 # <a name="theme-configuration-dialog-box-legacy"></a>Caixa de diálogo de configuração tema (legados)
 Este tópico descreve como usar o **configuração de tema** caixa de diálogo em novas [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

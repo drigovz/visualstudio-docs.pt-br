@@ -1,7 +1,7 @@
 ---
 title: Tarefa MarkupCompilePass2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb45d1b562cb98dd9b11806f6f98ed5ad09b3444
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea61e827bfae47c3bea961cb15c208f585aa6ed9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473245"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179206"
 ---
 # <a name="markupcompilepass2-task"></a>Tarefa MarkupCompilePass2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tarefa MarkupCompilePass2](https://docs.microsoft.com/visualstudio/msbuild/markupcompilepass2-task).  
-  
   
 A tarefa <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> executa a compilação de marcação de segunda passagem em arquivos [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] que fazem referência a tipos no mesmo projeto.  
   

@@ -1,7 +1,7 @@
 ---
 title: Estereótipos padrão para modelos UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3e5cabed5b2b75d9a97c74dd58d87ea387df8f8e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c38ad14fa44d2f537f9622d7746e534f8dd41ea0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466067"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212154"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Estereótipos padrão para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [estereótipos padrão para modelos UML](https://docs.microsoft.com/visualstudio/modeling/standard-stereotypes-for-uml-models).  
-  
 Você pode adicionar estereótipos a elementos de modelo UML para fornecer informações adicionais para o leitor, ou para processamento de máquina. Estereótipos são definidos nos perfis e cada perfil fornece o conjunto de estereótipos. Vários perfis são fornecidos com o Visual Studio. Você também pode definir seus próprios perfis que podem conter seus próprios estereótipos. Para obter mais informações, consulte [definir um perfil para estender UML](../modeling/define-a-profile-to-extend-uml.md).  
   
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

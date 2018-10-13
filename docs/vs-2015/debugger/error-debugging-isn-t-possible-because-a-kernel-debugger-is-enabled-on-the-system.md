@@ -1,7 +1,7 @@
 ---
 title: 'Erro: A depuração não é&#39;t possível porque um depurador de Kernel está habilitado no sistema | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95ee7bddb45fdcdadfdf9cce077b550509ab4c5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: acae508dee0e5ed0897af4914a935cc62fabff66
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476371"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231797"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Erro: A depuração não é&#39;t possível porque um depurador de Kernel está habilitado no sistema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [erro: não é de depuração&#39;t possível porque um depurador de Kernel está habilitado no sistema](https://docs.microsoft.com/visualstudio/debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system).  
-  
 Quando você depura o código gerenciado, talvez receba a seguinte mensagem de erro:  
   
 ```  

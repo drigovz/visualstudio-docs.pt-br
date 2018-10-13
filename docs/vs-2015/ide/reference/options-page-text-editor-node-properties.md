@@ -1,7 +1,7 @@
 ---
 title: Página Opções, Propriedades do Nó de Editor de Texto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 945b1b41abf44c8525677bfb332afdf9f6f7788f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88ba9765e292d4f07a7e1392a64270ddf27e8f60
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467091"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241898"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Página de Propriedades, Editor de Texto, Propriedades do Nó
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [página de opções, propriedades de nó do Editor de texto](https://docs.microsoft.com/visualstudio/ide/reference/options-page-text-editor-node-properties).  
-  
   
 Este documento descreve algumas páginas (ou coleções de propriedades) associadas à categoria **Editor de Texto**, `DTE.Properties("TextEditor", <Property Page>)`, da caixa de diálogo **Opções**. O título de cada subseção é a chamada que é usada para acessar a coleção `Properties` e a tabela em cada subseção lista as propriedades na coleção.  
   

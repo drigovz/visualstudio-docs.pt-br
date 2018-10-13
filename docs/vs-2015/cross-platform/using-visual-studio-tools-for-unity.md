@@ -1,7 +1,7 @@
 ---
 title: Usando ferramentas do Visual Studio para Unity | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 036a3a8b3e3c055325f1062a39ad439160378684
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67c1661543370dc589bf5a20ad8837913e9d19e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587862"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199206"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Usando o Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando o Visual Studio Tools for Unity](https://docs.microsoft.com/visualstudio/cross-platform/using-visual-studio-tools-for-unity).  
-  
   
 Nesta seção, você aprenderá como usar os recursos de integração e produtividade das Ferramentas do Visual Studio para Unity e como usar o depurador do Visual Studio para desenvolvimento no Unity.  
   

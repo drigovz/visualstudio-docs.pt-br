@@ -1,7 +1,7 @@
 ---
 title: Asserções C / C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce168764f18d85cce1d373bf509f63bfb1e6923d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e19ffb9a63e0e2168dfb7acf9c5cf3661111a1d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462365"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267677"
 ---
 # <a name="cc-assertions"></a>Asserções C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [asserções C/C++](https://docs.microsoft.com/visualstudio/debugger/c-cpp-assertions).  
-  
 Uma instrução de declaração especifica uma condição que você espera ser verdadeira em um ponto específico em seu programa. Se essa condição não for true, a asserção falhará, a execução do programa é interrompida e o [caixa de diálogo Falha na asserção](../debugger/assertion-failed-dialog-box.md) é exibida.  
   
  O Visual C++ dá suporte a instruções de declaração baseadas nestes constructos:  

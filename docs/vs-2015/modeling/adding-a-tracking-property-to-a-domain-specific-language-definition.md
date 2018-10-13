@@ -1,7 +1,7 @@
 ---
 title: Adicionar uma propriedade de acompanhamento a uma definição de linguagem específica do domínio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7f17058f2300e607707a5f2208eebe9bb2570095
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 183c459871f991aedb3cec19c7a83105091d2706
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465406"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182995"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Adicionando uma propriedade de acompanhamento a uma definição de linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionando uma propriedade de controle a uma definição de linguagem específica do domínio](https://docs.microsoft.com/visualstudio/modeling/adding-a-tracking-property-to-a-domain-specific-language-definition).  
-  
 Este passo a passo mostra como adicionar uma propriedade de controle a um modelo de domínio.  
   
  Um *acompanhamento domínio* é uma propriedade que pode ser atualizada pelo usuário, mas que tem um valor padrão que é calculado usando os valores de outras propriedades de domínio ou elementos.  
