@@ -1,7 +1,7 @@
 ---
 title: Features1 do serviço de linguagem herdado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ed5b66c8148df36b89cfb6e6ae048a05f393551
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e864f9899c274fe58da16cdb5581058dd20f725
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464166"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185375"
 ---
 # <a name="legacy-language-service-features"></a>Recursos do serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Features1 de serviço de linguagem herdado](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-features1).  
-  
 Um serviço de linguagem do framework (MPF) de pacote gerenciado pode dar suporte a um ou mais [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] recursos, como realce de sintaxe, IntelliSense e validação de ponto de interrupção. Cada recurso pode ser implementado independente dos outros, mas todos exigem um analisador e um scanner, exceto para o realce de sintaxe, que exige apenas um scanner.  
   
 ## <a name="in-this-section"></a>Nesta seção  
