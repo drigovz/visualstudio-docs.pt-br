@@ -1,7 +1,7 @@
 ---
 title: Descrever o fluxo de controle com fragmentos em diagramas de sequência UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 05cb3be018db16a2377132896a98f0d2b13bfa07
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c90270876721f2a43c78375108608064d325b39a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468040"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260208"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Descrever o fluxo de controle com fragmentos em diagramas de sequência UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [descrever o fluxo de controle com fragmentos em diagramas de sequência UML](https://docs.microsoft.com/visualstudio/modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams).  
-  
 Em um diagrama de sequência UML *fragmentos combinados* permitem que você mostre outras alternativas, ramificações e loops.  
   
  Um fragmento combinado consiste em um ou mais *operandos de interação*, e cada um deles inclui um ou mais mensagens, usos de interação ou fragmentos combinados.  

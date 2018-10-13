@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Vinculação de um tipo de conteúdo para uma extensão de nome de arquivo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1742da19e2d99cbb22d930b7146b1f9859e19cef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45534f4a85cd289360c098083228ac5f28025a90
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261723"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Passo a passo: vinculando um tipo de conteúdo a uma extensão de nome de arquivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: vinculação de um tipo de conteúdo para uma extensão de nome de arquivo](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension).  
-  
 Você pode definir seu próprio tipo de conteúdo e vincular a uma extensão de nome de arquivo a ela usando as extensões do editor Managed Extensibility Framework (MEF). Em alguns casos, a extensão de nome de arquivo já foi definida por um serviço de linguagem; No entanto, para usá-lo com o MEF você ainda deverá vinculá-lo para um tipo de conteúdo.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  

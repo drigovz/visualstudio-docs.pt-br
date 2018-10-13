@@ -1,7 +1,7 @@
 ---
 title: Noções básicas sobre o SAL | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae6b16cc7f69aaf365188c488416d35402de9ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7551b507a90ffb5bba6a969029e4c53092f3db1c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460960"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253247"
 ---
 # <a name="understanding-sal"></a>Noções básicas de SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Noções básicas sobre SAL](https://docs.microsoft.com/visualstudio/code-quality/understanding-sal).  
-  
 A linguagem de anotação de código-fonte do Microsoft (SAL) fornece um conjunto de anotações que você pode usar para descrever como uma função usa seus parâmetros, as suposições que faz sobre eles e as garantias de que ele faz quando ele for concluído. As anotações são definidas no arquivo de cabeçalho `<sal.h>`. Análise de código do Visual Studio para C++ usa anotações de SAL para modificar sua análise de funções. Para obter mais informações sobre o SAL 2.0 para o desenvolvimento de driver do Windows, consulte [SAL 2.0 anotações para o Windows Drivers](http://go.microsoft.com/fwlink/?LinkId=250979).  
   
  Modo nativo, C e C++ fornecem somente de maneiras limitadas para os desenvolvedores expressem consistentemente a intenção e invariância. Usando anotações de SAL, você pode descrever suas funções mais detalhadamente, para que os desenvolvedores que estão consumindo eles podem entender melhor como usá-los.  

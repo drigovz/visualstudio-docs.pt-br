@@ -1,7 +1,7 @@
 ---
 title: Vincular atualizações de modelo UML usando transações | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b05f0f1d178099337122cba2213b4bba22d2eead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f63b7df949f87407735c994ffe5ca7aa65fcd29a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466511"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274255"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Vincular atualizações de modelo UML usando transações
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [atualizações de modelo UML de Link usando transações](https://docs.microsoft.com/visualstudio/modeling/link-uml-model-updates-by-using-transactions).  
-  
 Quando você define uma extensão para os designers UML no Visual Studio, você pode agrupar várias alterações em uma única transação chamada um *contexto de desfazer vinculado*. Para ver quais versões do Visual Studio dão suporte a modelos UML, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Por padrão, cada modificação que seu código faz em um modelo pode ser desfeita separadamente pelo usuário. Por exemplo, se você definir um comando de menu que alterna os nomes de duas classes UML, um usuário pode invocar o comando e, em seguida, execute um Desfazer. Isso desfaria a alteração para um nome, mas não em outro, deixando seu modelo em um estado não intencional.  

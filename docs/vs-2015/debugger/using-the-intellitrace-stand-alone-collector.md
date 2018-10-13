@@ -1,7 +1,7 @@
 ---
 title: Usando o coletor autônomo IntelliTrace | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 111
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74c17850ebbbd8a7031bc1380bc4e651d0f9dda0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b35b6b42126bb0a1b159e3bf90e67aee15dd540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466138"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267469"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Usar o coletor autônomo do IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando o coletor autônomo IntelliTrace](https://docs.microsoft.com/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).  
-  
 O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico do IntelliTrace para seus aplicativos em servidores de produção ou em outros ambientes sem instalar o Visual Studio no computador de destino e sem alterar o ambiente do sistema de destino. O coletor autônomo IntelliTrace funciona em aplicativos web, SharePoint, do WPF e Windows Forms. Quando você terminar a coleta de dados, basta excluir o coletor para desinstalá-lo.  
   
  Veja o IntelliTrace em ação: [coletando e analisando dados IntelliTrace em produção para depuração (vídeo do Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)  

@@ -1,7 +1,7 @@
 ---
 title: Listas de conclusão filtradas no Visual Basic | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 305d7c97de6cb8ccd0a88bc420c86a5f5e98a593
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7fa045e85df45772ffc03a1a255f9c5e6ac6ba8c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463775"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255626"
 ---
 # <a name="filtered-completion-lists-in-visual-basic"></a>Listas de conclusão filtradas em Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [listas de preenchimento filtradas no Visual Basic](https://docs.microsoft.com/visualstudio/ide/filtered-completion-lists-in-visual-basic).  
-  
 No Visual Basic, as listas de conclusão do IntelliSense têm dois controles de guia localizados na parte inferior das listas. A guia **Comum**, que é selecionada por padrão, exibe itens que são usados com maior frequência para completar a instrução que você está escrevendo. A guia **Todos** exibe todos os itens disponíveis para preenchimento automático, incluindo aqueles que também estão na guia **Comum**.  
   
 ## <a name="see-also"></a>Consulte também  

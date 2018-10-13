@@ -1,7 +1,7 @@
 ---
 title: Visão geral do Visual Studio Multi-Targeting | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fcc7f1a1fb7b9f348ace817c800a5e353694e96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473549"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277063"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visão geral de multissegmentação do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [visão geral do Visual Studio Multi-Targeting](https://docs.microsoft.com/visualstudio/ide/visual-studio-multi-targeting-overview).  
-  
 Nesta versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], é possível especificar a versão do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] necessária para seu aplicativo. Portanto, se você desejar usar essa versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para continuar desenvolvendo um projeto iniciado em uma versão anterior, não será necessário alterar o destino da estrutura. Também é possível criar uma solução que contém projetos que têm como destino versões diferentes da estrutura. A definição de destino da estrutura também ajuda a assegurar que o aplicativo use apenas a funcionalidade disponível na versão especificada da estrutura.  
   
 > [!TIP]

@@ -1,7 +1,7 @@
 ---
 title: Tarefa GenerateApplicationManifest | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b0533e5ca79bf9d2cb49149ecc80ac58c911d22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da5c9cb78ff4d3d9542c956a377f6342945d11a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461774"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245557"
 ---
 # <a name="generateapplicationmanifest-task"></a>Tarefa GenerateApplicationManifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tarefa GenerateApplicationManifest](https://docs.microsoft.com/visualstudio/msbuild/generateapplicationmanifest-task).  
-  
   
 Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Um manifesto nativo descreve um componente definindo uma identidade exclusiva para ele e identificando todos os assemblies e arquivos que compõem o componente. Um manifesto do aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] estende um manifesto nativo indicando o ponto de entrada do aplicativo e especificando o nível de segurança do aplicativo.  
   

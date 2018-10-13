@@ -1,7 +1,7 @@
 ---
 title: Método marker_series::write_message | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98a91ca0a3484e35b8703da1efbd554fa70c84ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 07fb86bceedc0c48679c0e6183943c4993ecab65
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460795"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256432"
 ---
 # <a name="markerserieswritemessage-method"></a>Método marker_series::write_message
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [marker_series:: write_message método](https://docs.microsoft.com/visualstudio/profiling/marker-series-write-message-method).  
-  
 Grava uma mensagem para o arquivo de rastreamento da Visualização Simultânea.  
   
 ## <a name="syntax"></a>Sintaxe  

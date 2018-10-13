@@ -1,7 +1,7 @@
 ---
 title: Controlar a execução de um aplicativo da Store em uma sessão de depuração do Visual Studio para aplicativos da Windows Store (JavaScript) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881131"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275516"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Controlar a execução de um aplicativo da Store em uma sessão de depuração do Visual Studio para Aplicativos da Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [controlar a execução de um aplicativo da Store em uma sessão de depuração do Visual Studio para aplicativos da Windows Store (JavaScript)](https://docs.microsoft.com/visualstudio/debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript).  
-  
 Este início rápido demonstra como navegar no depurador do Visual Studio e como exibir o estado do programa em uma sessão.  
   
  Este guia de início rápido é para desenvolvedores que são novos na depuração com o Visual Studio e a sessão de depuração para desenvolvedores que desejam saber mais sobre como navegar em um Visual Studio. Ele não ensina a arte de depurar a si próprio. As funções no código de exemplo destinam-se somente a demonstrar os procedimentos de depuração descritos neste tópico. As funções não utilizam as práticas recomendadas de design de aplicativo ou função. Na verdade, você rapidamente descobrirá que as funções e o aplicativo em si, não fazem muita coisa alguma.  

@@ -1,7 +1,7 @@
 ---
 title: 'Ca2225 as: Sobrecargas de operador possuem alternativas nomeadas | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8b8ebf513b54667e48309fd495b7cd511b98c7c3
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 1ac59ba7650a7eca1a43b24b85adb1b3a34bdaf3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587143"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278077"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: as sobrecargas do operador têm alternativas nomeadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [ca2225 as: sobrecargas de operador possuem alternativas nomeadas](https://docs.microsoft.com/visualstudio/code-quality/ca2225-operator-overloads-have-named-alternates).
-
 |||
 |-|-|
 |NomeDoTipo|OperatorOverloadsHaveNamedAlternates|

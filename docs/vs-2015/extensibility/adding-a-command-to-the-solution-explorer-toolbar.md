@@ -1,7 +1,7 @@
 ---
 title: Adicionando um comando na barra de ferramentas do Gerenciador de soluções | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0dfc2aeb0b0e73e48fd0dcf64b5b7c09fcbea9f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474482"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254358"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Adicionando um comando à barra de ferramentas do Gerenciador de Soluções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionando um comando à barra de ferramentas do Gerenciador de soluções](https://docs.microsoft.com/visualstudio/extensibility/adding-a-command-to-the-solution-explorer-toolbar).  
-  
 Este passo a passo mostra como adicionar um botão para o **Gerenciador de soluções** barra de ferramentas.  
   
  Qualquer comando em um menu ou barra de ferramentas é chamado um botão no Visual Studio. Quando o botão é clicado, o código no manipulador de comando é executado. Normalmente, os comandos relacionados são agrupados para formar um grupo. Menus ou barras de ferramentas atuam como contêineres para grupos. Prioridade determina a ordem na qual os comandos individuais em um grupo aparecem no menu ou na barra de ferramentas. Você pode impedir que um botão que está sendo exibido na barra de ferramentas ou menu controlando sua visibilidade. Um comando que está listado em um `<VisibilityConstraints>` seção do arquivo. VSCT aparece somente no contexto associado. A visibilidade não pode ser aplicada a grupos.  

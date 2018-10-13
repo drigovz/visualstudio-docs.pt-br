@@ -1,7 +1,7 @@
 ---
 title: Windows de fluxo de trabalho do Visual Studio (herdado) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: bd54e54965a6a6b936b24e1ca13151e3754d9390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 32e8b4cf8fcfbaddfa891ab881f25f89ca0285d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462272"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273163"
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Fluxo de trabalho do Windows legacy (Visual Studio)
 [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado fornecido por [!INCLUDE[vs2010](../includes/vs2010-md.md)] pode ser usado para direcionar [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. O designer herdado é um designer visual que você pode usar para criar um fluxo de trabalho. Você pode arrastar atividades do **caixa de ferramentas** ao design de superfície e, em seguida, configurá-los lá. Como uma janela editor de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ocupa a área de janela principal usada por outras janelas do editor de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . O nome de fluxo de trabalho é exibido na barra de título da janela de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  

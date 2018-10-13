@@ -1,7 +1,7 @@
 ---
 title: Padrões comuns para aplicativos multithread de mau comportamento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91a8ba5e4cecddd4acc047d891b491dac963044b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 846c756511bc10a3d019294a16ba2d2e98fb37a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473546"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244108"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Padrões comuns para aplicativos multithread de mau comportamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [padrões comuns para aplicativos multithread de Poorly-Behaved](https://docs.microsoft.com/visualstudio/profiling/common-patterns-for-poorly-behaved-multithreaded-applications).  
-  
 A Visualização Simultânea ajuda os desenvolvedores a visualizarem o comportamento de um aplicativo multithread. Essa ferramenta inclui uma galeria de padrões comuns para aplicativos multithread com mau comportamento. A galeria inclui padrões visual comuns e reconhecíveis expostos por meio da ferramenta, juntamente com uma explicação do comportamento representado por cada padrão, o resultado provável desse comportamento e a abordagem mais comum para resolvê-lo.  
   
 ## <a name="lock-contention-and-serialized-execution"></a>Contenção de bloqueio e execução serializada  

@@ -1,7 +1,7 @@
 ---
 title: Não foi possível recuperar informações de esquema para o objeto de banco de dados &lt;nome do objeto&gt; | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 293b9b86f4da5f5fe91b93362322bccf17629b03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a9acf56e852d800de6201fa343e9c2e145f0c0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472658"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248067"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>Não foi possível recuperar informações de esquema para o objeto de banco de dados &lt;nome do objeto&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [não foi possível recuperar informações de esquema para o objeto de banco de dados &lt;nome do objeto&gt;](https://docs.microsoft.com/visualstudio/data-tools/could-not-retrieve-schema-information-for-database-object-object-name).  
-  
   
 Esta mensagem aparece normalmente quando um objeto em **Server Explorer/Database Explorer** é copiado para a área de transferência, excluído do banco de dados e, em seguida, colar no designer. Porque o objeto de base de dados não existir, esta mensagem aparece.  
   

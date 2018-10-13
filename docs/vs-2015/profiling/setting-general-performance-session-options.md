@@ -1,7 +1,7 @@
 ---
 title: Configurando opções de sessão de desempenho geral | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abf40be314191096447e389ef145385d2e0f616b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b33848b2985cdc4303b75bdc493bfaf33af36b1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464992"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256770"
 ---
 # <a name="setting-general-performance-session-options"></a>Definindo opções de sessão de desempenho geral
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definindo opções de sessão de desempenho geral](https://docs.microsoft.com/visualstudio/profiling/setting-general-performance-session-options).  
-  
 Você pode definir o método de coleção e convenções de nomenclatura de dados de criação de perfil para uma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sessão de desempenho de ferramentas de criação de perfil na página **Geral** da caixa de diálogo Propriedades da sessão de desempenho. Para abrir a caixa de diálogo **Gerenciador de Desempenho**, clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Propriedades**.  
   
  **Requisitos**  

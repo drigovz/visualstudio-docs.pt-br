@@ -1,7 +1,7 @@
 ---
 title: MSSCCPRJ. Arquivos SCC | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a3387d5563cee60149c8d59a0d7f7179c211a10
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a220dbbf80320603b997f03ca16db58dd2865be0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467699"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246019"
 ---
 # <a name="mssccprjscc-file"></a>Arquivo MSSCCPRJ.SCC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [MSSCCPRJ. Arquivos SCC](https://docs.microsoft.com/visualstudio/extensibility/mssccprj-scc-file).  
-  
 Quando uma solução do Visual Studio ou o projeto é colocado sob controle do código-fonte usando o IDE, o IDE recebe duas partes principais de informações do controle de fonte de plug-in na forma de cadeias de caracteres. Essas cadeias de caracteres "AuxPath" e "Nomedoprojeto" são opacas para o IDE, mas eles são usados pelo plug-in para localizar a solução ou projeto no controle de versão. O IDE normalmente obtém essas cadeias de caracteres na primeira vez chamando o [SccGetProjPath](../extensibility/sccgetprojpath-function.md), e ele, em seguida, salva-os no arquivo de projeto ou solução para futuras chamadas para o [SccOpenProject](../extensibility/sccopenproject-function.md). Quando inseridos nos arquivos de solução e projeto, as cadeias de caracteres "AuxPath" e "Nomedoprojeto" não são atualizadas automaticamente quando um usuário de branches, bifurcações, ou copia os arquivos de solução e projeto que estão no controle de versão. Para certificar-se de que os arquivos de solução e projeto apontam para sua localização correta no controle de versão, os usuários devem atualizar manualmente as cadeias de caracteres. Porque as cadeias de caracteres devem ser opaco, pode não sempre ser claro como eles devem ser atualizados.  
   
  O plug-in de controle do código-fonte pode evitar esse problema ao armazenar as cadeias de caracteres "AuxPath" e "Nomedoprojeto" em um arquivo especial chamado de MSSCCPRJ. Arquivos SCC. É um arquivo local e o lado do cliente que é de propriedade e mantido pelo plug-in. Esse arquivo nunca é colocado sob controle do código-fonte, mas é gerado pelo plug-in para cada diretório que contém arquivos de controle do código-fonte. Para determinar quais arquivos são arquivos de solução e projeto do Visual Studio, um plug-in de controle do código-fonte pode comparar as extensões de arquivo em relação a uma lista padrão ou fornecido pelo usuário. Depois que o IDE detecta que um plug-in oferece suporte a MSSCCPRJ. Arquivos SCC, ele deixa de inserir "AuxPath" e "Nomedoprojeto" cadeias de caracteres em soluções e arquivos de projeto e ele lê essas cadeias de caracteres da MSSCCPRJ. SCC de arquivo em vez disso.  
