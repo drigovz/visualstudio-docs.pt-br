@@ -1,7 +1,7 @@
 ---
 title: Salvando e Exportando Dados de Ferramentas de Desempenho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62c3d4bf115e7044ae05131a5c03eca9ebded150
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2eec24927f7e5b8897df988a51fb87f469088e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460298"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236035"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Salvando e Exportando Dados de Ferramentas de Desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [salvando e exportando dados de ferramentas de desempenho](https://docs.microsoft.com/visualstudio/profiling/saving-and-exporting-performance-tools-data).  
-  
 Este tópico descreve como salvar e exportar arquivos de dados de desempenho.  
   
 ##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Como Salvar Arquivos de Dados de Desempenho como Arquivos de Relatório Analisados  

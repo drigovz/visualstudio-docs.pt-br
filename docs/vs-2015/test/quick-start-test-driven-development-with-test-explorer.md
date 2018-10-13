@@ -1,7 +1,7 @@
 ---
 title: 'Início Rápido: desenvolvimento orientado por testes com Gerenciador de Testes | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c2d55dde85bd5a1b18d4424515ef58e7c4c3273f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 335219920a10816535f19e7fc21d856b1eb1cd06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464982"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212336"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Início rápido: desenvolvimento orientado por testes com o Gerenciador de Testes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [início rápido: desenvolvimento orientado por testes com Gerenciador de testes](https://docs.microsoft.com/visualstudio/test/quick-start-test-driven-development-with-test-explorer).  
-  
 É recomendável que você crie testes de unidade para ajudar a manter seu código funcionando corretamente muitas etapas incrementais de desenvolvimento. Há várias estruturas que você pode usar para escrever testes de unidade, incluindo alguns desenvolvidos por terceiros. Algumas estruturas de teste são especializadas para testes em diferentes idiomas ou plataformas. O Gerenciador de Testes fornece uma interface única para testes de unidade em qualquer uma dessas estruturas. Adaptadores estão disponíveis para as estruturas comumente usadas e você pode escrever seus próprios adaptadores para outras estruturas.  
   
  O Gerenciador de Testes substitui as janelas de teste de unidade encontradas em edições anteriores do Visual Studio. Suas vantagens incluem:  

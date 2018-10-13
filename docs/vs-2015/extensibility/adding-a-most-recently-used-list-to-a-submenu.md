@@ -1,7 +1,7 @@
 ---
 title: Adicionando a lista a um Submenu um mais usados recentemente | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa2a5f0177243c178890673986b0c04b4627505e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89526f799c0b4e260bba140c413f2c89e573a701
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464741"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223718"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Adicionando uma lista dos mais usados recentemente a um submenu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionando uma mais recentemente usada lista a um Submenu](https://docs.microsoft.com/visualstudio/extensibility/adding-a-most-recently-used-list-to-a-submenu).  
-  
 Este passo a passo se baseia no demonstrações [adicionando um Submenu a um Menu](../extensibility/adding-a-submenu-to-a-menu.md)e mostra como adicionar uma lista dinâmica a um submenu. A lista dinâmica constitui a base para a criação de uma lista de usados mais recentemente (MRU).  
   
  Inicia uma lista de menu dinâmico com um espaço reservado em um menu. Sempre que o menu é exibido, o ambiente de desenvolvimento integrado (IDE) do Visual Studio solicita o VSPackage todos os comandos que devem ser mostrados no espaço reservado. Uma lista dinâmica pode ocorrer em qualquer lugar em um menu. No entanto, as listas dinâmicas normalmente serão armazenadas e exibidas por si só, nos submenus ou da parte inferior dos menus. Ao usar esses padrões de design, você deve habilitar a lista dinâmica de comandos para expandir e contrair sem afetar a posição dos outros comandos no menu. Neste passo a passo, a lista MRU dinâmica é exibida na parte inferior de um submenu existente, separado do restante do submenu por uma linha.  

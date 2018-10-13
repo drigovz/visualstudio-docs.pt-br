@@ -1,7 +1,7 @@
 ---
 title: Implementação de categorias personalizadas e itens de exibição | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c47bc8bc4cae609ad378dabaf64f239b7aa47c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4a9f18330060888527466c29f911a37ce29ce46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462378"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218667"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementação de categorias personalizadas e itens de exibição
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [implementando personalizado categorias e itens de exibição](https://docs.microsoft.com/visualstudio/extensibility/implementing-custom-categories-and-display-items).  
-  
 Um VSPackage pode fornecer controle de fontes e cores do texto para o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE) por meio de categorias personalizadas e itens de exibição.  
   
  Categorias personalizadas e itens de exibição são sobre o **fontes e cores** página de propriedades. Para abrir o **fontes e cores** página de propriedades na **ferramentas** menu, clique em **opções**. Expandir **ambiente** e, em seguida, clique em **fontes e cores**.  

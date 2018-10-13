@@ -1,7 +1,7 @@
 ---
 title: Registrando uma função de linguagem herdado1 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d33b08af-09e0-4c79-87b2-5536b27fbacf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0aebd8142d5ceed2acb113dbfaec5904271d4468
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4177507e8633fa5596da07f5df349df28a66f2a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472807"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230575"
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrar um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [registrando uma função de linguagem herdado1](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-legacy-language-service1).  
-  
 Na estrutura de pacote gerenciado (MPF), o serviço de linguagem é dedicaram por um VSPackage (consulte [VSPackages](../../extensibility/internals/vspackages.md)) e é registrado no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] adicionando chaves do registro e entradas. Esse processo de registro é feito no parcialmente durante a instalação e parcialmente em tempo de execução.  
   
 ## <a name="register-the-language-service-by-using-attributes"></a>Registrar o serviço de linguagem por meio de atributos  

@@ -1,7 +1,7 @@
 ---
 title: Realizar pré-busca de conteúdo para aplicativos da Windows Store | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc1b01e0cd841c6239a7f2ef76f964482348ee16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9329cad2f0125288aeea146070188d023d1a126
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464628"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211439"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>Executar pré-busca de conteúdo para aplicativos da Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [executar a pré-busca de conteúdo para aplicativos da Windows Store](https://docs.microsoft.com/visualstudio/debugger/prefetch-content-for-windows-store-apps).  
-  
 Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_content")  
   
  Para tornar seu aplicativo da Windows Store mais responsivo, você pode solicitar o Windows para pré-carregar algum conteúdo da web, como imagens, ou páginas da web para o aplicativo [WinINet](http://msdn.microsoft.com/en-us/0a06f2af-957a-4dff-a8cc-187370181b5c)[WinINet](http://msdn.microsoft.com/library/aa383630.aspx)cache. Essa funcionalidade chama-se pré-busca. É especialmente eficiente para o conteúdo que é usado na inicialização, mas você também pode executar a pré-busca de outro conteúdo usado frequentemente. Os métodos do [Windows.Networking.BackgroundTransfer.ContentPrefetcher](http://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx) classe permitem que você especifique os URIs do conteúdo que você deseja pré-carregar. Consulte o SDK do Windows [amostra de pré-busca de conteúdo](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) para obter exemplos de como adicionar a funcionalidade ContentPrefetcher ao seu aplicativo.  

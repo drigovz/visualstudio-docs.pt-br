@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Profiler XSLT | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a52682dbbec3f4e1cdc50027ca365cd9a1ca44b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4f401d253c81385dc197e912a7f9cc7d6156e393
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460696"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229444"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Passo a passo: Profiler XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Profiler XSLT](https://docs.microsoft.com/visualstudio/xml-tools/walkthrough-xslt-profiler).  
-  
   
 O profiler XSLT criar relatórios de desempenho detalhados XSLT que a medida da ajuda, avalia, e problemas de desempenho relacionados de destino no código XSLT. O profiler XSLT inclui dicas úteis para XSL e otimizações de folha de estilos XSLT. Para aplicativos que requerem XSLT máximo desempenho, essa ferramenta pode ser essencial.  
   

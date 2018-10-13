@@ -1,7 +1,7 @@
 ---
 title: Personalizando a página inicial para o Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bc8c27c98127bbbdfd7a1dddbab7124b8dc1d32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ece49968c4a887e89f91feb83fae3de23aa2c282
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461467"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211464"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Personalizando a página inicial do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [personalizar a página inicial do Visual Studio](https://docs.microsoft.com/visualstudio/ide/customizing-the-start-page-for-visual-studio).  
-  
 É possível personalizar a página inicial do Visual Studio de várias maneiras padrão, mostrando, por exemplo, a caixa de diálogo **Abrir Projeto** ou abrindo a solução que foi carregada mais recentemente. Também é possível mostrar uma página inicial personalizada, que é uma página XAML do Windows Presentation Foundation (WPF) executada em uma janela de ferramenta e pode executar comandos que são internos do Visual Studio.  
   
 ## <a name="customizing-the-default-start-page"></a>Personalizando a página inicial padrão  

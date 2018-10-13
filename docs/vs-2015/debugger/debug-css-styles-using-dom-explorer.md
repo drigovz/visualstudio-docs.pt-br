@@ -1,7 +1,7 @@
 ---
 title: Depurar estilos CSS usando o Explorador do DOM | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 889626b5d80afebfd701a7bc347466da97ba707b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a30ac9669c7093c7eb3b656076c606cbf5a9fdc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473876"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220700"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Depurar estilos CSS com o Explorador do DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [estilos de CSS depurar usando o Explorador do DOM](https://docs.microsoft.com/visualstudio/debugger/debug-css-styles-using-dom-explorer).  
-  
 Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Quando você estiver depurando aplicativos Windows Store, Windows Phone Store de aplicativos e aplicativos criados usando ferramentas do Visual Studio para Apache Cordova, você pode exibir e alterar regras de CSS para elementos DOM selecionados e seus elementos filho.  

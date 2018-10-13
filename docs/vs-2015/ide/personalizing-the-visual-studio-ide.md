@@ -1,7 +1,7 @@
 ---
 title: Personalizando o IDE do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24def685632c995f173ad1c0b50910ef36d484e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8729b9d2e532909a89e6293d48aefb21922fb4d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463456"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219981"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Personalizando o IDE do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [personalizar o IDE do Visual Studio](https://docs.microsoft.com/visualstudio/ide/personalizing-the-visual-studio-ide).  
-  
 Esta seção descreve como personalizar o Visual Studio de várias maneiras para dar o melhor suporte ao seu próprio estilo e requisitos de desenvolvimento. Você pode definir e salvar vários layouts de janela e mudar entre eles. Por exemplo, você pode definir um layout para codificação e outra para depuração. Você pode personalizar as cores, fontes e formatação no editor de códigos para cada linguagem. Você pode escolher entre os temas de cores de ambiente azul, claro ou escuro ou pode criar temas personalizados baixando e instalando o editor de temas do Visual Studio da Galeria do Visual Studio Code. Muitas outras opções também são expostas por meio da [Environment Options Dialog Box](../ide/reference/environment-options-dialog-box.md) (Caixa de diálogo Opções de Ambiente).  
   
  Muitas das configurações acompanham você entre as instâncias do Visual Studio. Consulte [Synchronized Settings](../ide/synchronized-settings-in-visual-studio.md) (Configurações sincronizadas) para obter mais informações.  

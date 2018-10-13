@@ -1,7 +1,7 @@
 ---
 title: Efetuar teste de unidade em seu código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a1c6c521e09795619af503e0a121e51f6edc33b9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59d0de3dd53d7d9ab3a54fc11eb50666d39dfdc7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467513"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231212"
 ---
 # <a name="unit-test-your-code"></a>Teste de unidade de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [teste de unidade em seu código](https://docs.microsoft.com/visualstudio/test/unit-test-your-code).  
-  
 Os testes de unidade fornecem aos desenvolvedores e testadores uma maneira rápida de procurar por erros lógicos nos métodos de classes em projetos do [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], do [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)] e do [!INCLUDE[cpp_current_short](../includes/cpp-current-short-md.md)].  
   
  As ferramentas de testes de unidade incluem:  

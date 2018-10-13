@@ -1,7 +1,7 @@
 ---
 title: Interfaces (SDK de acesso à Interface de depuração) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 430d310b4a42440d827dcefd209579b36eda9807
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40934ff90ea794c0bc86c7d3a9d8fbe4fe1d3703
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476260"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233307"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Interfaces (SDK de Acesso à Interface de Depuração)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Interfaces (depuração SDK de acesso à Interface)](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/interfaces-debug-interface-access-sdk).  
-  
 Métodos estão listados em ordem alfabética em cada interface na tabela de conteúdo e na página de interface na ordem de Vtable.  
   
 ## <a name="in-this-section"></a>Nesta seção  

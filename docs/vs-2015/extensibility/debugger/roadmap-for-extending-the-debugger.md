@@ -1,7 +1,7 @@
 ---
 title: Roteiro para estender o depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 753f63b1a3deae2b1eab7bd46d1302bebaa16b85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fce5c11b5393bb8e3887b1369866a5f0906195d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465108"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242093"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Roteiro para estender o depurador
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [roteiro para estender o depurador](https://docs.microsoft.com/visualstudio/extensibility/debugger/roadmap-for-extending-the-debugger).  
-  
 Esta documentação fornece informações de referência e a guia para estender a [!INCLUDE[vs_current_short](../../includes/vs-current-short-md.md)] do depurador com o [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] depuração da documentação inclui exemplos, uma referência abrangente e representativos vários cenários que demonstram maneiras comuns de personalizar o depurador.  

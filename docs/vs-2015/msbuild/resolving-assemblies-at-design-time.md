@@ -1,7 +1,7 @@
 ---
 title: Resolvendo assemblies em tempo de design| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b54d2c3dc69e33ba732f8b31b36d896c90e8b774
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc10169ac07efdeded41a9bb2990bdc206a17435
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461482"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224647"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Resolvendo assemblies em tempo de design
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Resolvendo Assemblies em tempo de Design](https://docs.microsoft.com/visualstudio/msbuild/resolving-assemblies-at-design-time).  
-  
   
 Quando você adiciona uma referência a um assembly por meio da guia .NET da caixa de diálogo Adicionar Referência, a referência aponta para um assembly de referência intermediário ou seja, um assembly que contém todas as informações de tipo e a assinatura, mas que não necessariamente contém qualquer código. A guia .NET lista assemblies de referência que correspondem aos assemblies de tempo de execução do .NET Framework. Além disso, ela lista os assemblies de referência que correspondem aos assemblies de tempo de execução nas pastas AssemblyFoldersEx registradas usados por terceiros.  
   

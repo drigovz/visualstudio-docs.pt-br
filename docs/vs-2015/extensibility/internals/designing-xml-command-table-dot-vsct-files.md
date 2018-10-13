@@ -1,7 +1,7 @@
 ---
 title: Criando tabela de comando XML (. Arquivos VSCT) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b72438998b75fcebc7cccae082e3e9db4ac13b69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb75a161feffa049ebf7152d6a76d70f364a98ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464996"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229379"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Criando tabela de comando XML (. Arquivos de VSCT)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar tabela de comando de XML (. VSCT) arquivos](https://docs.microsoft.com/visualstudio/extensibility/internals/designing-xml-command-table-dot-vsct-files).  
-  
 Um arquivo de tabela (. VSCT) do comando XML descreve o layout e aparência de itens de comando para um VSPackage. Itens de comando incluem caixas de combinação, botões, menus, barras de ferramentas e grupos de itens de comando. Este tópico descreve arquivos de tabela de comandos XML, como eles afetam os menus e itens de comando e como criá-los.  
   
 ## <a name="commands-menus-groups-and-the-vsct-file"></a>Comandos, Menus, grupos e o arquivo. VSCT  

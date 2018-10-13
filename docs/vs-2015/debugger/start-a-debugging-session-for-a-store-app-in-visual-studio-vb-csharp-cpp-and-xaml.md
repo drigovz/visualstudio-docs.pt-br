@@ -1,7 +1,7 @@
 ---
 title: Iniciar uma sessão de depuração para um aplicativo da Store no Visual Studio (VB, c#, C++ e XAML) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -39,18 +39,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 80394d5a778ec4202a41e30d895280f75aaa61a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b87c4ab58c103d1ccbcf20b8b49b64d9f1aec85e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474990"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241287"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Iniciar uma sessão de depuração de um aplicativo da Store no Visual Studio (VB, C#, C++ e XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [iniciar uma sessão de depuração para um aplicativo da Store no Visual Studio (VB, c#, C++ e XAML)](https://docs.microsoft.com/visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml).  
-  
 Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Este tópico descreve como iniciar uma sessão de depuração para aplicativos da Windows Store escritos em XAML e Visual C++, Visual C# ou Visual Basic. Depurar um aplicativo envolve configurar a sessão de depuração e escolher a maneira de iniciar o aplicativo.  

@@ -1,7 +1,7 @@
 ---
 title: Comentários da documentação XML (JavaScript) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a5accfb63d33a028048c9715cfe9cdf728a5db2d
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 26d690948378998f83d4fe6c8f909ffca1d3df8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48878831"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225622"
 ---
 # <a name="xml-documentation-comments-javascript"></a>Comentários de documentação XML (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [documentação do Visual Studio 2017](/visualstudio/).  
-  
 Em JavaScript, você pode criar documentação para seu código incluindo marcas XML em campos de comentário especiais no código-fonte. Essas marcas XML são usadas pelo IntelliSense para fornecer informações sobre objetos JavaScript.  
   
  O local dos comentários do código varia dependendo da marca específica.  

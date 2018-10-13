@@ -1,7 +1,7 @@
 ---
 title: 'Como: configurar a herança usando o Object Relational Designer | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ccfbd40fd9fd62921ff6f0661f87dca2995ae8fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a6c8e4b2da87185c41157b8d03bd59b37188a43
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468183"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222684"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Como: configurar a herança usando o Designer relacional de objetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: configurar a herança usando o Object Relational Designer](https://docs.microsoft.com/visualstudio/data-tools/how-to-configure-inheritance-by-using-the-o-r-designer).  
-  
   
 [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) suporta o conceito de herança de tabela única como geralmente é implementado em sistemas relacionais. Herança de tabela única, há uma tabela de banco de dados individual que contém campos para informações pai e informações de filho. Com dados relacionais, uma coluna de discriminador contém o valor que determina qual classe qualquer registro pertence.  
   

@@ -1,7 +1,7 @@
 ---
 title: Suporte de automação para páginas de opções | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0b25b82c-7432-4e0a-9e84-350269ba8260
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9f7a9a9cf13a50cf13817b4c3b12bd1da1e8370b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd74c98b3ad2951437e8d0acdfb98c02e5dfa5e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463528"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220851"
 ---
 # <a name="automation-support-for-options-pages"></a>Suporte à automação para páginas de opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [suporte de automação para páginas de opções](https://docs.microsoft.com/visualstudio/extensibility/internals/automation-support-for-options-pages).  
-  
 Os VSPackages pode fornecer personalizado **opções** caixas de diálogo para o **ferramentas** menu (páginas de opções de ferramentas) no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e podem disponibilizá-las para o modelo de automação.  
   
 ## <a name="tools-options-pages"></a>Páginas de opções de ferramentas  

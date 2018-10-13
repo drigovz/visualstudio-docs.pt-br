@@ -1,7 +1,7 @@
 ---
 title: Regras propagam alterações dentro do modelo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c2e0b710d96d5da7b31ac2fce7542b0c981fe1b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab05923a02176f4c0d8aa30ac9d26b0e41868396
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461646"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222710"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regras propagam alterações dentro do modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [propagam alterações dentro do modelo de regras](https://docs.microsoft.com/visualstudio/modeling/rules-propagate-changes-within-the-model).  
-  
 Você pode criar uma regra do repositório para propagar uma alteração de um elemento para outro na visualização e o SDK de modelagem (VMSDK). Quando ocorre uma alteração a qualquer elemento na Store, as regras estão agendadas para ser executado, normalmente, quando a transação externa é confirmada. Há diferentes tipos de regras para diferentes tipos de eventos, como adicionar um elemento ou excluí-lo. Você pode anexar as regras para tipos específicos de elementos, formas ou diagramas. Muitos recursos internos são definidos por regras: por exemplo, as regras de garantem que um diagrama é atualizado quando o modelo é alterado. Você pode personalizar sua linguagem específica do domínio, adicionando suas próprias regras.  
   
  Regras de Store são particularmente úteis para propagar alterações dentro do armazenamento – ou seja, alterações para elementos de modelo, relações, formas ou conectores e seu domínio de propriedades. As regras não são executados quando o usuário invoca os comandos de desfazer ou refazer. Em vez disso, o Gerenciador de transações certifica-se de que o repositório de conteúdo é restaurado para o estado correto. Se você deseja propagar alterações aos recursos fora do repositório, use eventos de Store. Para obter mais informações, consulte [manipuladores de propagar alterações fora o modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).  

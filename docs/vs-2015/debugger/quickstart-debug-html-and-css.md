@@ -1,7 +1,7 @@
 ---
 title: 'Guia de início rápido: Depurar HTML e CSS | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 104
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b331ccf0cf180364738f5ac9084b0bd2ff6b716b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2896d88ee5730482aeca737f89e5b5340070be7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475742"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225472"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Guia de início rápido: depurar HTML e CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [guia de início rápido: depurar HTML e CSS](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-html-and-css).  
-  
 Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Para aplicativos JavaScript, o Visual Studio fornece uma experiência de depuração abrangente que inclui recursos que são familiares para desenvolvedores do Internet Explorer e o Visual Studio. Esses recursos têm suporte para [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], aplicativos do Windows Phone Store e para os aplicativos criados usando ferramentas do Visual Studio para Apache Cordova  

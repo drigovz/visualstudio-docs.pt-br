@@ -1,7 +1,7 @@
 ---
 title: Atualizar dados usando um TableAdapter | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2dfeced126cfa80d28ad1e3245486c63101e6e1f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19e694e617b15b42029ff641516c59fcecdfbd69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473213"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237270"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Atualizar dados usando um TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [atualizar dados usando um TableAdapter](https://docs.microsoft.com/visualstudio/data-tools/update-data-by-using-a-tableadapter).  
-  
   
 Depois que os dados no conjunto de dados foi modificados e validados, você pode enviar os dados atualizados para uma chamada de databaseby a `Update` método de um [TableAdapter](../data-tools/tableadapter-overview.md). O `Update` método atualiza uma única tabela de dados e executa o comando correto (INSERT, UPDATE ou DELETE) com base no <xref:System.Data.DataRow.RowState%2A> de cada linha de dados na tabela. Quando um conjunto de dados tiver tabelas relacionadas, o Visual Studio gera uma classe de TableAdapterManager que você usa para fazer as atualizações. A classe TableAdapterManager garante que as atualizações são feitas na ordem correta com base nas restrições de chave estrangeira são definidas no banco de dados. Quando você usa controles ligados a dados, a arquitetura de vinculação de dados cria uma variável de membro da classe TableAdapterManager chamada tableAdapterManager. Para obter mais informações, consulte [visão geral de atualização hierárquica](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
   

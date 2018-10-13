@@ -1,7 +1,7 @@
 ---
 title: 'Como: habilitar a depuração para aplicativos ASP.NET | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9f96a53a6ccdd505735a09d3e9c39acaa3517c2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9d0e7a4b6f6daf4fb93884e6d5673ce550259ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475747"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235931"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Instruções: habilitar a depuração para aplicativos ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: habilitar a depuração para aplicativos ASP.NET](https://docs.microsoft.com/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications).  
-  
 Para habilitar a depuração, você deve habilitá-lo em ambos os **propriedades do projeto** página e no arquivo de Web. config do aplicativo.  
   
 > [!NOTE]  

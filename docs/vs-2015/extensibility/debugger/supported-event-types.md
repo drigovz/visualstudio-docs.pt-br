@@ -1,7 +1,7 @@
 ---
 title: Suporte para tipos de evento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 33e6d8a8cdd0c5ee490ffb43fff69754a93549ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 846a889a22188249a1a42e8d66f0b3730a19dfc2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464705"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228755"
 ---
 # <a name="supported-event-types"></a>Tipos de eventos com suporte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [suporte para tipos de evento](https://docs.microsoft.com/visualstudio/extensibility/debugger/supported-event-types).  
-  
 Depuração do Visual Studio atualmente dá suporte aos seguintes tipos de evento:  
   
 -   Eventos assíncronos  

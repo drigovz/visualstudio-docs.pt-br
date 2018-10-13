@@ -1,7 +1,7 @@
 ---
 title: Definir uma propriedade de automação exclusiva para controles da Windows Store para teste | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3dd593efa23d40278a314f6b1c1d90e7f7905922
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e20186a7615f774f3cef0b57c56a61a3b076b8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472916"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238869"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Definir uma propriedade de automação exclusiva para controles da Windows Store para teste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definir uma automação de propriedade para Windows Store controles exclusivos para testes](https://docs.microsoft.com/visualstudio/test/set-a-unique-automation-property-for-windows-store-controls-for-testing).  
-  
 Se desejar executar testes de IU codificados no aplicativo da Windows Store baseado em XAML, será necessário ter uma propriedade de automação exclusiva que identifica cada controle.  
   
  Você pode atribuir uma propriedade de automação exclusiva com base no tipo de controle XAML em seu aplicativo. Aqui está como atribuir essa propriedade de automação exclusiva nas seguintes situações:  

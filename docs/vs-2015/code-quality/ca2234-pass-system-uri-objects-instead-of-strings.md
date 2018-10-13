@@ -1,7 +1,7 @@
 ---
 title: 'CA2234: System. URI de passagem de objetos, em vez de cadeias de caracteres | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cba04480cafc5aaed0ee31523d1a5f159cb6fe26
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 902d91f2ffd257c081615b935e50a377304653a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587322"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226987"
 ---
 # <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234: passar objetos System.Uri em vez de cadeias de caracteres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA2234: System. URI passar objetos em vez de cadeias de caracteres](https://docs.microsoft.com/visualstudio/code-quality/ca2234-pass-system-uri-objects-instead-of-strings).
-
 |||
 |-|-|
 |NomeDoTipo|PassSystemUriObjectsInsteadOfStrings|

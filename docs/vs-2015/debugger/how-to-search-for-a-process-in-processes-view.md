@@ -1,7 +1,7 @@
 ---
 title: 'Como: pesquisar por um processo na exibição de processos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ebb0c6a13db0fdc1a586a78038f759c59f8b110
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e924acf48af293fedae2e9c47347e336ed6450f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474271"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222892"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Como procurar um processo na exibição de processos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: pesquisar por um processo na exibição de processos](https://docs.microsoft.com/visualstudio/debugger/how-to-search-for-a-process-in-processes-view).  
-  
 Você pode procurar um processo específico na exibição de processos por meio de sua cadeia de caracteres de ID ou o módulo de processo como critérios de pesquisa. Você também pode especificar a direção inicial da pesquisa. Os campos na caixa de diálogo mostrará os atributos do processo selecionado na árvore de processo.  
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>Para pesquisar por um processo na exibição de processos  

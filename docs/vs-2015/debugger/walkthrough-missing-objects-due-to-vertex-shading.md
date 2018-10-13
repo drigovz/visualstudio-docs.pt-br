@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Objetos ausentes devido ao sombreamento de vértice | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b180eed67b617cd7e46610b78865fe0ae088d85e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 16856796cf6b31b8273fa4d2d3c35b7dd100e0cc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879804"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241963"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Instruções passo a passo: objetos ausentes devido ao sombreamento de vértice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: faltando objetos devido ao sombreamento de vértice](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-vertex-shading).  
-  
 Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ferramentas de diagnóstico de gráficos para investigar um objeto que está faltando devido a um erro que ocorre durante o estágio de sombreador de vértice.  
   
  Este passo a passo ilustra essas tarefas:  

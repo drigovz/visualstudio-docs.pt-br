@@ -1,7 +1,7 @@
 ---
 title: Espaço de trabalho Designer do esquema XML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22515ffe0e195006f1080738fc5b0686e647d5ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae20cd6a2eb8a4e3d8c1869cc4a0c707ccdf6de2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461973"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240949"
 ---
 # <a name="xml-schema-designer-workspace"></a>O espaço de trabalho do designer de esquema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [espaço de trabalho de Designer de esquema XML](https://docs.microsoft.com/visualstudio/xml-tools/xml-schema-designer-workspace).  
-  
   
 O designer de esquema XML (XSD) designer é uma ferramenta gráfico que ajuda você explora seus esquemas XML. Além de [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), que permite procurar e navegar na árvore de esquema XML e realizar pesquisas, o Designer XSD fornece três modos de exibição que permitem que você explore o esquema XSD em mais detalhes. A Exibição inicial é o ponto de partida para o Designer XSD; A partir da exibição inicial, é possível navegar até outras exibições do Designer XSD e ver os detalhes de seu conjunto de esquema. A Exibição de Gráfico permite que você tenha uma visão geral do conjunto de esquema e veja a relação entre os nós do esquema. A Exibição de Modelo de Conteúdo oferece uma representação gráfica dos detalhes de nós de esquema local e global, incluindo tipos complexos e simples, elementos, grupos, atributos e grupos de atributos.  
   

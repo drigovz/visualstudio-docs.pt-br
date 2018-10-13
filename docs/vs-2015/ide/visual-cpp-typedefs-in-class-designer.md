@@ -1,7 +1,7 @@
 ---
 title: Typedefs do Visual C++ no Designer de Classe | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba8987abf608d7f8d83a77c2e946f34941c1bec6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ba65af46589e01aa5473b5757124ed184da2197
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475963"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230224"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Typedefs do Visual C++ no Designer de Classe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Typedefs do Visual C++ no Designer de classe](https://docs.microsoft.com/visualstudio/ide/visual-cpp-typedefs-in-class-designer).  
-  
 As instruções typedef criam uma ou mais camadas de indireção entre um nome e seu tipo subjacente. O Designer de Classe oferece suporte a tipos de typedef do C++ que são declarados com a palavra-chave `typedef`, por exemplo:  
   
 ```  

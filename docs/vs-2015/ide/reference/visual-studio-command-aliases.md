@@ -1,7 +1,7 @@
 ---
 title: Aliases de comando do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 62811b3ac422efe91778695ba20e3fad01f6eb37
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c2daf9aa4e92ef4a017f36cbcc806abc50d6bde
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462199"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240429"
 ---
 # <a name="visual-studio-command-aliases"></a>Aliases de comando do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Aliases de comando do Visual Studio](https://docs.microsoft.com/visualstudio/ide/reference/visual-studio-command-aliases).  
-  
   
 Aliases fornecem um meio de inserir um comando na caixa **Localizar/Comando** ou na janela **Comando** reduzindo o texto necessário para executar o comando. Por exemplo, em vez de inserir `>File.OpenFile` para exibir a caixa de diálogo **Abrir Arquivo**, você pode usar o alias predefinido `>of`.  
   

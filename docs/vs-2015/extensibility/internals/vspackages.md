@@ -1,7 +1,7 @@
 ---
 title: Os VSPackages | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cad0893a-9c5f-45b7-952a-e2294f83e324
 caps.latest.revision: 46
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e12639e20f4bc4534eb3b503855241e9b8207a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 512c14b27d829ca9532de63f32a1bcabb81f7597
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476005"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215287"
 ---
 # <a name="vspackages"></a>VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [VSPackages](https://docs.microsoft.com/visualstudio/extensibility/internals/vspackages).  
-  
 Os VSPackages são módulos de software que estendem o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE), fornecendo elementos da interface do usuário, serviços, projetos, editores e designers.  
   
 ## <a name="in-this-section"></a>Nesta seção  

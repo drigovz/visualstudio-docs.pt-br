@@ -1,7 +1,7 @@
 ---
 title: Componentes do depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b1b8f12a8bfa15a352f38d021a64a6f9f8b9244
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f1f13f3a9008d86812b0e1e11886cdc66457271e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464024"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232590"
 ---
 # <a name="debugger-components"></a>Componentes do depurador
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [componentes do depurador](https://docs.microsoft.com/visualstudio/extensibility/debugger/debugger-components).  
-  
 O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] depurador é implementado como um VSPackage e gerencia a sessão de depuração inteira. A sessão de depuração inclui os seguintes elementos:  
   
 -   **Pacote de depuração:** o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] depurador fornece a mesma interface de usuário, não importa o que está sendo depurado.  

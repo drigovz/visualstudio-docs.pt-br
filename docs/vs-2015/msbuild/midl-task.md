@@ -1,7 +1,7 @@
 ---
 title: Tarefa MIDL | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d496bba38b9b0dbf1c5346bda928f491ce697edf
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 345cd480cd5e34a6fe4650c9321d3ad9f90db01e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587866"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215781"
 ---
 # <a name="midl-task"></a>Tarefa MIDL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tarefa MIDL](https://docs.microsoft.com/visualstudio/msbuild/midl-task).  
-  
   
 Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe. Para obter mais informações, consulte “MIDL Command-Line Reference” (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   

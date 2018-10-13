@@ -1,7 +1,7 @@
 ---
 title: Referência de esquema do manifesto de modelo do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b079e6b7356cdd84a98314beef95f4b1a8fbc5ee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28301729091333191bcb0c381e37e20d3d9c53aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463022"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217082"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Referência de esquema do manifesto de modelo do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [modelo de manifesto do esquema de referência do Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-template-manifest-schema-reference).  
-  
 Esse esquema descreve o formato dos arquivos de manifesto (vstman) do modelo de Visual Studio gerado para os modelos de projeto ou item do Visual Studio e descreve o local e outras informações relevantes sobre o modelo.  
   
  : Porque há item separado e diretórios do modelo de projeto, um manifesto nunca deve ter uma mistura de modelos de item e projeto.  

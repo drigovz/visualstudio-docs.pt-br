@@ -1,7 +1,7 @@
 ---
 title: Caixa de diálogo Fontes e Cores, Ambiente, Opções | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8831cfdbf22d80cce39fbae81fffa46b8944e92
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d080945edc13d0f4542fdd9c981037af108325c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465753"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220695"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [fontes e cores, ambiente, caixa de diálogo Opções](https://docs.microsoft.com/visualstudio/ide/reference/fonts-and-colors-environment-options-dialog-box).  
-  
   
 A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). É possível acessar essa caixa de diálogo clicando em **Ferramentas / Opções** e, em seguida, selecionando **Ambiente / Fontes e Cores**. Se essa página não aparecer na lista, selecione **Mostrar todas as configurações** na caixa de diálogo **Opções**.  
   

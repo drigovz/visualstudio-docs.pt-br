@@ -1,7 +1,7 @@
 ---
 title: Depurando código gerenciado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efa999fabc0d27900900c6d1512cca3fde76043d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ba07591cf4682ef40579f58b290f6b26bb4c111
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475385"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211582"
 ---
 # <a name="debugging-managed-code"></a>Depurando código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Debugging Managed Code](https://docs.microsoft.com/visualstudio/debugger/debugging-managed-code).  
-  
 Esta seção aborda problemas e técnicas de depuração comuns para aplicativos gerenciados, ou aplicativos escritos em linguagens destinadas ao Common Language Runtime, como Visual Basic, C# e C++. As técnicas descritas aqui são técnicas de alto nível. Para obter mais informações, consulte [usando o depurador](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>Nesta seção  

@@ -1,7 +1,7 @@
 ---
 title: Personalizando a apresentação no diagrama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 98d6dca27976d2400e3eb2676478324a1bcf4c8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63cfb09bfdc08cdc709bcdaf9ca9803bc95610f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468343"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229263"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Personalizando a apresentação no diagrama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Personalizando a apresentação no diagrama](https://docs.microsoft.com/visualstudio/modeling/customizing-presentation-on-the-diagram).  
-  
 O diagrama é a principal área de apresentação de um designer de linguagem específica do domínio. Geralmente, os usuários usam o diagrama para construir seus modelos. Você pode personalizar o diagrama, conforme descrito nos tópicos a seguir.  
   
 -   [Definindo formas e conectores](../modeling/defining-shapes-and-connectors.md)  
