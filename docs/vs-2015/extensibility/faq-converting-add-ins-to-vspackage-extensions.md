@@ -1,7 +1,7 @@
 ---
 title: 'Perguntas Frequentes: Convertendo suplementos em extensões VSPackage | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fed5dd06b5413cc734edfdf02dbee3143cfd4516
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b391c11fe47914df9c7b3ab1af12d8cbb5a55d9c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461664"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221267"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Perguntas frequentes: convertendo suplementos em extensões VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [perguntas Frequentes: Convertendo suplementos em extensões VSPackage](https://docs.microsoft.com/visualstudio/extensibility/faq-converting-add-ins-to-vspackage-extensions).  
-  
 Suplementos agora são preteridos. Para fazer uma nova extensão do Visual Studio, você precisará criar uma extensão do VSIX. Aqui estão as respostas a algumas perguntas frequentes sobre como converter um suplemento do Visual Studio em uma extensão do VSIX.  
   
 > [!WARNING]

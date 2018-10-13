@@ -1,7 +1,7 @@
 ---
 title: 'Como: expandir e recolher árvores do Spy + + | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15cc746a31eb3ca0c0de8f7e9ef2dafdc40082d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1c4611d756e9a233e0f33543afc4fd32bbea6ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467225"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216132"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Como expandir e recolher árvores de Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: expandir e recolher árvores do Spy + +](https://docs.microsoft.com/visualstudio/debugger/how-to-expand-and-collapse-spy-increment-trees).  
-  
 Você pode expandir e recolher os modos de exibição do Windows, processos e Threads usando dois métodos: clicando nos ícones na janela ou usando o **árvore** menu. O + e – ícones na árvore de agir como fazem na janela projeto do Visual C++.  
   
  O **árvore** menu contém quatro comandos:  

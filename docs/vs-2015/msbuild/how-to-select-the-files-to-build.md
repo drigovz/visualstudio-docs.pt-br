@@ -1,7 +1,7 @@
 ---
 title: Como selecionar os arquivos para compilar | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 284ad92c170e0b34b73ca15a7eb2f35b744f44a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b8eeb62b8a5091743345c1a5c136bc2fa87269c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475863"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223802"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Como selecionar os arquivos a serem compilados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: selecione os arquivos a compilar](https://docs.microsoft.com/visualstudio/msbuild/how-to-select-the-files-to-build).  
-  
   
 Quando você compila um projeto que contém vários arquivos, é possível listar cada arquivo separadamente no arquivo de projeto ou usar caracteres curinga para incluir todos os arquivos em um diretório ou um conjunto aninhado de diretórios.  
   

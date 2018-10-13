@@ -1,7 +1,7 @@
 ---
 title: Usando conjuntos de regras para agrupar regras de análise de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ae7374ae6b713fe7fa1911cdcce3effa600482b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8af8cbc27a61369640a80dbccb4d99dd2466f3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475134"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220578"
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>Usando conjuntos de regras para agrupar regras de análise de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando os conjuntos de regras para agrupar regras de análise de código](https://docs.microsoft.com/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules).  
-  
 Quando você configura a análise de código no [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], ou [!INCLUDE[vsPro](../includes/vspro-md.md)], você pode escolher entre uma lista dos internas da Microsoft *conjuntos de regra*. Um conjunto de regras é um agrupamento lógico de regras de análise de código que identificam problemas direcionados e condições específicas. Por exemplo, você pode aplicar um conjunto de regras que foi criado para examinar o código para as APIs disponíveis publicamente, ou você pode aplicar um conjunto de regras que inclui apenas o mínimo de regras recomendado. Você também pode aplicar um conjunto de regras que inclui todas as regras.  
   
  Você pode personalizar uma regra definida, adicionando ou excluindo regras ou alterando as regras na **Error List** janela como avisos ou erros. Conjuntos de regras personalizado podem atender uma necessidade para seu ambiente de desenvolvimento específico. Quando você personaliza um conjunto de regras, a página de conjunto de regra fornece pesquisa e ferramentas para ajudá-lo no processo de filtragem.  

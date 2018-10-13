@@ -1,7 +1,7 @@
 ---
 title: Como localizar e organizar modelos de projeto e de item | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08817b551d015481000d3151fb054ee5803ee6f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e497800f209c7653c1f47904df03baf604b3b134
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462724"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229392"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Como localizar e organizar projeto e modelos de item
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: localizar e organizar modelos de projeto e Item](https://docs.microsoft.com/visualstudio/ide/how-to-locate-and-organize-project-and-item-templates).  
-  
 Arquivos de modelo devem ser colocados em um local reconhecido pelo Visual Studio, de modo que os modelos apareçam nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item**. É possível criar subcategorias personalizadas para os modelos, para que as subcategorias também apareçam na interface do usuário.  
   
 ## <a name="locating-templates"></a>Localizando modelos  

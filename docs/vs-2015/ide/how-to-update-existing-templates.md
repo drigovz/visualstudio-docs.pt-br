@@ -1,7 +1,7 @@
 ---
 title: Como atualizar modelos existentes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9c5d091e58904cae058c5a2a5ade1b8ceec4c738
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa7c6f534756298006e07d287b118edfd4944717
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463874"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242261"
 ---
 # <a name="how-to-update-existing-templates"></a>Como atualizar modelos existentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: atualizar modelos existentes](https://docs.microsoft.com/visualstudio/ide/how-to-update-existing-templates).  
-  
 Depois de criar um modelo e compactar os arquivos em um arquivo .zip, modifique o modelo. É possível fazer isso alterando manualmente os arquivos no modelo ou exportando um novo modelo de um projeto com base no modelo.  
   
 ## <a name="using-the-export-template-wizard-to-update-an-existing-template"></a>Usando o Assistente de Exportação de Modelo para atualizar um modelo existente  

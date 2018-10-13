@@ -1,7 +1,7 @@
 ---
 title: 'Como: criar um projeto de fluxo de trabalho vazio (herdado) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 2907417ff019c4f4b12d8472cf46683e27b1bda9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a64506fd5d634b140c6e27916ea873afbef1c08
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462528"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235580"
 ---
 # <a name="how-to-create-an-empty-workflow-project-legacy"></a>Como: Crie um fluxo de trabalho vazio Project (o legados)
 Siga estas etapas para criar um fluxo de trabalho vazio Projeto usando [!INCLUDE[wfd1](../includes/wfd1-md.md)] herdado fornecido por [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

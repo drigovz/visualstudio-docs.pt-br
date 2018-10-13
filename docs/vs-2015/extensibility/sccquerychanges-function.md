@@ -1,7 +1,7 @@
 ---
 title: Função SccQueryChanges | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 95f1e5a21ba74779080c601acd42d5deedb75d7c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b18ca895c991e94e8525593e6651824aa61a37ba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465740"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227988"
 ---
 # <a name="sccquerychanges-function"></a>Função SccQueryChanges
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [função SccQueryChanges](https://docs.microsoft.com/visualstudio/extensibility/sccquerychanges-function).  
-  
 Essa função enumera uma determinada lista de arquivos, fornecendo informações sobre as alterações de nome para cada arquivo por meio de uma função de retorno de chamada.  
   
 ## <a name="syntax"></a>Sintaxe  

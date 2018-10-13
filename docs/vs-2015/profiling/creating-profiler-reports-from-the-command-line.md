@@ -1,7 +1,7 @@
 ---
 title: Criação de relatórios do criador de perfil com a linha de comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d94a2c6c025ada73e1d43e041c2bf6e30f8b66c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb90505dacbb22268087d3eb15a8df39fdcc932
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463996"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238765"
 ---
 # <a name="creating-profiler-reports-from-the-command-line"></a>Criando relatórios do criador de perfil a partir da linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando relatórios do Profiler na linha de comando](https://docs.microsoft.com/visualstudio/profiling/creating-profiler-reports-from-the-command-line).  
-  
 A ferramenta da linha de comando **VSPerfReport** permite que você crie relatórios .xml ou valores separados por vírgulas (.csv) de arquivos de dados de criação de perfil (.vsp). Tipos de relatório VSPerfReport correspondem aproximadamente às exibições baseadas em tabela da interface para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Você pode filtrar o relatório para mostrar somente o seu código e mostrar apenas um segmento do arquivo de dados de criação de perfil. Para obter mais informações, confira [VSPerfReport](../profiling/vsperfreport.md).  
   
  Você também pode facilitar o compartilhamento dos arquivos de dados de criação de perfil vinculando símbolos nos arquivos .vsp e criando arquivos de relatórios previamente analisados (.vsps) que são menores e mais rápidos para abrir.  

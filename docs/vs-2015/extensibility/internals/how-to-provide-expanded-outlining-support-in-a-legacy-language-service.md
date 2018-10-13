@@ -1,7 +1,7 @@
 ---
 title: 'Como: fornecer suporte expandido de estrutura de tópicos em um serviço de linguagem herdado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: df759e89-8193-418c-8038-6626304d387b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ab97a9b26c1dd76949a4bae6dd9640319398bd7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6371339da12d88832e84d5086ed2d8a83226a94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474609"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239514"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Como: fornecer suporte expandido de estrutura de tópicos em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [fornecem suporte de estrutura de tópicos em um serviço de linguagem](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service).  
-  
 Há duas opções para estender a estrutura de tópicos de suporte para seu idioma além do suporte a **recolher para definições de** comando. Você pode adicionar regiões controlado pelo editor de estrutura de tópicos e adicionar regiões de estrutura de tópicos controlado pelo cliente.  
   
 ## <a name="adding-editor-controlled-outline-regions"></a>Adicionar regiões controlado pelo Editor de estrutura de tópicos  

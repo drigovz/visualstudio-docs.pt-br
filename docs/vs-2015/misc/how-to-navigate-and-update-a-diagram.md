@@ -1,7 +1,7 @@
 ---
 title: 'Como: navegar e atualizar um diagrama | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: alancameronwills
 ms.author: awills
 manager: kamrani
-ms.openlocfilehash: b691be5c6ae21ceaf1f2764257eccfa293e94504
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c61936ccf35ef2d4a9a6e4e5d62bf654c8be61d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467728"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221436"
 ---
 # <a name="how-to-navigate-and-update-a-diagram"></a>Como: navegar e atualizar um diagrama
 Este tópico foi consolidado com outro conteúdo. Vá para [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).

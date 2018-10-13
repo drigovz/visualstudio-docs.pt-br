@@ -1,7 +1,7 @@
 ---
 title: Geração de texto de tempo de execução com modelos de texto T4 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c56b0b91301defaf08fb81c87e9eb070a9e5458
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475868"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214741"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Geração de texto de tempo de execução com modelos de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [geração de texto de tempo de execução com modelos de texto T4](https://docs.microsoft.com/visualstudio/modeling/run-time-text-generation-with-t4-text-templates).  
-  
 Você pode gerar cadeias de caracteres de texto em seu aplicativo em tempo de execução usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modelos de texto de tempo de execução. O computador em que o aplicativo é executado não precisa ter [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Modelos de tempo de execução são chamados de "pré-processado modelos de texto" porque o tempo de compilação, o modelo gera um código que é executado no tempo de execução.  
   
  Cada modelo é uma mistura do texto como ele aparecerá na cadeia de caracteres gerada e fragmentos de código do programa. Os fragmentos de programa fornecem valores para as partes variáveis da cadeia de caracteres e também controlam partes Condicionadas e repetidas.  

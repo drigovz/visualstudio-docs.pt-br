@@ -1,7 +1,7 @@
 ---
 title: 'CA1041: Fornecer mensagem ObsoleteAttribute | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 298f6d3cbfc8b71443fe9e8e9733e5729963cea8
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: cceaa562130d288ab4e59549c8ca8cdae3bdbec7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587343"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233579"
 ---
 # <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041: fornecer mensagem ObsoleteAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1041: fornecer ObsoleteAttribute mensagem](https://docs.microsoft.com/visualstudio/code-quality/ca1041-provide-obsoleteattribute-message).
-
 |||
 |-|-|
 |NomeDoTipo|ProvideObsoleteAttributeMessage|

@@ -1,7 +1,7 @@
 ---
 title: Como usar o teclado de forma exclusiva | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0f1ca0ccf38911c8614bf1429c6f658bb9c957c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 588f93a89713d42efaba61a34b0dabe5eb2af523
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462714"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238508"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Como usar o teclado de forma exclusiva
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: usar exclusivamente o teclado](https://docs.microsoft.com/visualstudio/ide/reference/how-to-use-the-keyboard-exclusively).  
-  
   
 O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece muitas combinações padrão de teclas de atalho para facilitar a navegação e a criação de código dentro do IDE (ambiente de desenvolvimento integrado). Para obter uma lista completa das teclas de atalho usadas no Visual Studio, consulte [Atalhos de teclado padrão](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obter informações sobre os atalhos de teclado disponíveis para outros produtos da Microsoft, consulte [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
   

@@ -1,7 +1,7 @@
 ---
 title: Element Visibilityconstraints | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9fd6d6968984f0640dd73067c286a4259ade6745
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5b290884a2377cdaba573788f0881ec82a19cdf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474295"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222372"
 ---
 # <a name="visibilityconstraints-element"></a>Elemento VisibilityConstraints
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Element Visibilityconstraints](https://docs.microsoft.com/visualstudio/extensibility/visibilityconstraints-element).  
-  
 O Element visibilityconstraints determina a visibilidade estática dos grupos de comandos e barras de ferramentas. A visibilidade é controlada pela primeira vez pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE) sem carregar o VSPackage.  
   
 ## <a name="syntax"></a>Sintaxe  

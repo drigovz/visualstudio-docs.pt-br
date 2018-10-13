@@ -1,7 +1,7 @@
 ---
 title: Recursos de depuração mais | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8eb47e75ea0b2e523af99bbc4f3d45e75d578f05
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bab0d6d7f0e57186d21d620589a86dc89fa9010
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473537"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216613"
 ---
 # <a name="more-debugging-features"></a>Mais funcionalidades de depuração
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [mais recursos de depuração](https://docs.microsoft.com/visualstudio/debugger/more-debugging-features).  
-  
 Esta seção contém os recursos adicionais que você pode usar com o depurador do Visual Studio.  
   
  Para obter uma lista de dicas e truques para tornar a depuração mais rápida e facilmente, consulte [depuração dicas e truques](http://blogs.msdn.com/b/visualstudio/archive/2015/05/22/debugging-tips-and-tricks.aspx).  

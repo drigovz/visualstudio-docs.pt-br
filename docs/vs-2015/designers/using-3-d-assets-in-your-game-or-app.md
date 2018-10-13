@@ -1,7 +1,7 @@
 ---
 title: Usando ativos 3D no jogo ou no aplicativo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ab73f8ecdb9507459c7214de37b2349c01062f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460378"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226298"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Usando ativos 3D no jogo ou no aplicativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando ativos 3D em seu jogo ou aplicativo](https://docs.microsoft.com/visualstudio/designers/using-3-d-assets-in-your-game-or-app).  
-  
 Este artigo descreve como é possível usar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para processar ativos 3D e incluí-los nas compilações.  
   
  Depois de usar as ferramentas no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para criar ativos 3D, a próxima etapa é usá-las no aplicativo. Mas antes de usá-las, seus ativos precisam ser transformados em um formato que o DirectX pode entender. Para ajudá-lo a transformar seus ativos, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornece personalizações de compilação para cada tipo de ativo que pode ser produzido. Para incluir os ativos na sua compilação, tudo o que você precisa fazer é configurar o projeto para usar as personalizações de compilação, adicionar os ativos ao seu projeto e configurar os ativos para usar a personalização de compilação correta. Depois disso, você pode carregar os ativos no aplicativo e usá-los criando e preenchendo recursos do DirectX, assim como faria em qualquer outro aplicativo DirectX.  

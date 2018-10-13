@@ -1,7 +1,7 @@
 ---
 title: 'Etapa 6: adicionar um problema de subtração | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 38b4d8f373d6a3c5069cc2b8f8fe4591ccfa0bcc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 793204bf4a08d09d7ce6e48e37254dd311ac6a08
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472971"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229236"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Etapa 6: Adicionar um problema de subtração
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [etapa 6: adicionar um problema de subtração](https://docs.microsoft.com/visualstudio/ide/step-6-add-a-subtraction-problem).  
-  
 Na sexta parte deste tutorial, você adicionará um problema de subtração e aprenderá a executar as seguintes tarefas:  
   
 -   Armazenar os valores de subtração.  

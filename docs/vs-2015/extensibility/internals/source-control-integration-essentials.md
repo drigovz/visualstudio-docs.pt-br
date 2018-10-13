@@ -1,7 +1,7 @@
 ---
 title: Fundamentos da integração do controle de origem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 37508599b01f2639df416c56181f1c9b8672cd5a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ecd87dfc4c2993023d0c882ce581280204f99d6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466102"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232344"
 ---
 # <a name="source-control-integration-essentials"></a>Conceitos básicos da integração do controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Essentials de integração de controle de origem](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-integration-essentials).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dá suporte a dois tipos de integração de controle do código-fonte: um plug-in de controle de origem que fornece a funcionalidade básica e é criado usando a API de plug-in de controle do código-fonte (anteriormente conhecido como a API de MSSCCI) e uma solução de integração de controle do código-fonte com base em VSPackage que fornece a funcionalidade mais robusta.  
   
 ## <a name="source-control-plug-in"></a>Plug-in de controle do código-fonte  

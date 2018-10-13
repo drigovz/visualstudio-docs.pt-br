@@ -1,7 +1,7 @@
 ---
 title: Mantendo a segurança | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c2093e33b2a6b3424b39c8377f8168afd1e90939
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 793ec2b6f5ccfad1ded9f8a4cc2d4e6c4b994f0f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476146"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230785"
 ---
 # <a name="maintaining-security"></a>Mantendo segurança
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [mantendo segurança](https://docs.microsoft.com/visualstudio/ide/maintaining-security).  
-  
 Costuma-se dizer que o preço da segurança é a vigilância constante. Apesar da sua dedicação à segurança durante o design e desenvolvimento de seu aplicativo, você deve supor que as falhas na segurança surgirão após a implantação. Ao auditar seu aplicativo e analisar os logs de evento, você pode descobrir algumas falhas anteriormente ocultas.  
   
  Além de ser vigilante com seu próprio aplicativo, você também deve se manter atualizado sobre as ameaças e falhas de segurança da plataforma na qual seu aplicativo é executado e de outros produtos dos quais seu aplicativo depende.  

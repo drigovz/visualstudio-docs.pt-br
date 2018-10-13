@@ -1,7 +1,7 @@
 ---
 title: Fornecedores de porta | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a8f3db96-1a13-4e93-9ef6-0861880369e0
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3be95dfdb84f373730d087e9d6da1096891770af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc9258d8eb3e7b819e068cd246a6dc3d358234d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467193"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217614"
 ---
 # <a name="port-suppliers"></a>Fornecedores de porta
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [fornecedores de porta](https://docs.microsoft.com/visualstudio/extensibility/debugger/port-suppliers).  
-  
 Em termos de arquitetura do depurador, uma **fornecedor de porta**:  
   
 -   Está contido por um servidor e fornece as portas na solicitação para esse servidor.  

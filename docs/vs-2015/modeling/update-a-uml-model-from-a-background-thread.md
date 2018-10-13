@@ -1,7 +1,7 @@
 ---
 title: Atualizar um modelo UML de um thread em segundo plano | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 448a24d2bfe7a466a239c025046bd0e6f13ea64e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ed72cc65535849516de35c861942913ca750fba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476191"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216847"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Atualizar um modelo UML por meio de um thread em segundo plano
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [atualizar um modelo UML de um thread em segundo plano](https://docs.microsoft.com/visualstudio/modeling/update-a-uml-model-from-a-background-thread).  
-  
 Às vezes, pode ser útil fazer alterações a um modelo em um thread em segundo plano. Por exemplo, se você estiver carregando informações de um recurso externo lento, você poderia usar um thread em segundo plano para supervisionar as atualizações. Isso permite que o usuário veja cada atualização assim que ele ocorre.  
   
  No entanto, você deve estar ciente de que o armazenamento de UML não é thread-safe. As seguintes precauções são importantes:  
