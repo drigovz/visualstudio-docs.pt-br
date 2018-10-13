@@ -1,7 +1,7 @@
 ---
 title: Ferramentas LINQ to SQL no Visual Studio2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19d9bccad36a186c93aeb8aef8e93b63320a00d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0ff09fea0f534343fcc5e896e082f550e6bcdcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461891"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195371"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Ferramentas LINQ to SQL no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ferramentas LINQ to SQL no Visual Studio2](https://docs.microsoft.com/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
-  
   
 O LINQ to SQL foi a primeira tecnologia de mapeamento relacional de objeto lançada pela Microsoft. Ele funciona bem em cenários básicos e continua a ter suporte no Visual Studio, mas ele não está mais sob desenvolvimento ativo. Use o LINQ to SQL durante a manutenção de um aplicativo herdado que já está usando, ou em aplicativos simples que usam o SQL Server e não exigem mapeamento de várias tabela. Em geral, os novos aplicativos devem usar o Entity Framework quando uma camada de mapeador relacional de objeto é necessária.  
   

@@ -1,7 +1,7 @@
 ---
 title: Associar objetos no Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b01d2b539de19a8b04075bb83c7ee71ca17a644d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da31c33288489c3dbaef8a51b5c3fe2fe96d818b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467403"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241495"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Associar objetos no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [associar objetos no Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/bind-objects-in-visual-studio).  
-  
   
 Visual Studio fornece ferramentas de tempo de design para trabalhar com objetos personalizados, como a fonte de dados em seu aplicativo. Quando você deseja armazenar os dados de um banco de dados em um objeto que você associa a controles de interface do usuário, a abordagem recomendada é usar o Entity Framework para gerar a classe ou classes. Entidade Frameworkautogenerates todo o código de controle de alterações de texto clichê, o que significa que todas as alterações aos objetos locais são persistidas no banco de dados quando você chamar AcceptChanges no objeto DbSet.    Para obter mais informações, consulte [documentação do Entity Framework](https://ef.readthedocs.org/en/latest/).  
   

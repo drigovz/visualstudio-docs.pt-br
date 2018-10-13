@@ -1,7 +1,7 @@
 ---
 title: Implementando uma função de linguagem herdado2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0b812fd0cc54f117e89d09f151293eec1cf6fe8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 35dc4c6b80975ccddc42e54d0d7f39cf9024d62d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461728"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253117"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementando um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [implementando uma função de linguagem herdado2](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-a-legacy-language-service2).  
-  
 Para implementar um serviço de linguagem usando a estrutura de pacote gerenciado (MPF), você deve derivar uma classe a partir de <xref:Microsoft.VisualStudio.Package.LanguageService> classe e implementar os seguintes métodos abstratos e as propriedades:  
   
 -   O método <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>  

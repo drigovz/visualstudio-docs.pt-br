@@ -1,7 +1,7 @@
 ---
 title: Não é possível anexar ao processo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41eed3132039f2622c5d46b9937893ddaafa2dbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b8ba032d30999ec1dcf9f135aab0e2b03364aa2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462937"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246942"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Não é possível anexar ao processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [não é possível anexar ao processo](https://docs.microsoft.com/visualstudio/debugger/unable-to-attach-to-the-process).  
-  
 Não é possível anexar ao processo. O componente do depurador no servidor recebeu acesso negado ao se conectar a esse computador.  
   
  Há dois cenários comuns que causam esse erro:  

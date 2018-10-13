@@ -1,7 +1,7 @@
 ---
 title: Substituindo e estendendo as Classes geradas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 31db7980738c8976fdcd318e87d8350a833f6252
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465317"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268158"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Substituindo e estendendo as classes geradas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [substituindo e estendendo as Classes geradas](https://docs.microsoft.com/visualstudio/modeling/overriding-and-extending-the-generated-classes).  
-  
 Sua definição de DSL é uma plataforma na qual você pode criar um conjunto poderoso de ferramentas com base em uma linguagem específica de domínio. Muitas extensões e adaptações podem ser feitas substituindo e estendendo as classes que são geradas a partir da definição de DSL. Essas classes incluem não apenas as classes de domínio que você definiu explicitamente no diagrama de definição de DSL, mas também outras classes que definem a caixa de ferramentas, explorer, serialização e assim por diante.  
   
 ## <a name="extensibility-mechanisms"></a>Mecanismos de extensibilidade  

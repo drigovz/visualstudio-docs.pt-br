@@ -1,7 +1,7 @@
 ---
 title: Funções de snippet de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e5009a2fcdcc9c3b94417a296bae5e0f88acf83
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3874b162719deb02813ceb7eae09b373e208f458
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464002"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270875"
 ---
 # <a name="code-snippet-functions"></a>Funções de snippet de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [funções de trecho de código](https://docs.microsoft.com/visualstudio/ide/code-snippet-functions).  
-  
 Há três funções disponíveis para uso com os snippets de código de [!INCLUDE[csprcs](../includes/csprcs-md.md)]. As funções são especificadas no elemento [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) do snippet de código. Para obter informações sobre como criar snippets de código, consulte [Snippets de Código](../ide/code-snippets.md).  
   
 ## <a name="functions"></a>Funções  

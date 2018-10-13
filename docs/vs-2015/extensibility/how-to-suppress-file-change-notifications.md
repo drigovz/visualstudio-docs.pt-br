@@ -1,7 +1,7 @@
 ---
 title: 'Como: suprimir notificações de alteração de arquivo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 312c34b143608cb6d829e2d79b6be2eae724a238
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed4995cabc71af9c7e2227495e93a21d423d0187
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465001"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257511"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Como: suprimir notificações de alteração de arquivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: suprimir notificações de alteração de arquivo](https://docs.microsoft.com/visualstudio/extensibility/how-to-suppress-file-change-notifications).  
-  
 Quando o arquivo físico que representa o buffer de texto tiver sido alterado, uma caixa de diálogo exibe a mensagem **você deseja salvar as alterações aos seguintes itens?** Isso é conhecido como a notificação de alteração de arquivo. Se muitas alterações serão para o arquivo, no entanto, essa caixa de diálogo exibindo repetidamente pode rapidamente se tornar irritante.  
   
  Programaticamente, você pode suprimir esta caixa de diálogo usando o procedimento a seguir. Ao fazer isso, você pode recarregar um arquivo imediatamente sem a necessidade de solicitar ao usuário para salvar as alterações de cada vez.  

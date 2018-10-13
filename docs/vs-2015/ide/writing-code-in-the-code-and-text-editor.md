@@ -1,7 +1,7 @@
 ---
 title: Escrevendo código no Code e no Editor de Texto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -65,18 +65,15 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb879efdc3370578d57b529194a9a8790c9136dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462969"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220526"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Escrevendo código no editor de códigos e de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [escrevendo código no Editor de código e texto](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
-
 O editor do Visual Studio fornece muitos recursos que tornam mais fácil para você escrever e gerenciar seu código. Você pode expandir e recolher blocos de código diferentes usando a estrutura de tópicos. Você pode aprender mais sobre o código que você está usando através do IntelliSense, do **Pesquisador de Objetos** e da Hierarquia de Chamada. Você pode navegar dentro de seu código usando recursos como **Navegar Para**, **Ir para Definição** e **Localizar Todas as Referências**. Você pode inserir blocos de código com snippets de código e pode gerar código usando recursos como o **Gerar do uso**. Se você nunca usou o editor do Visual Studio 2015, consulte [Editando seu código](https://www.visualstudio.com/features/ide-vs) para uma visão geral rápida.  
 
  Você pode exibir seu código de várias maneiras diferentes. Para ver um modo de exibição de classe de sua solução, você pode abrir a janela **Modo de Exibição de Classe** ou expandir os nós no **Gerenciador de Soluções** em seus arquivos de classe.  

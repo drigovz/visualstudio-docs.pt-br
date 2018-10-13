@@ -1,7 +1,7 @@
 ---
 title: Atualizando projetos personalizados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 262ada44-7689-44d8-bacb-9c6d33834d4e
 caps.latest.revision: 11
 manager: douge
-ms.openlocfilehash: 5c3fd31cfc7cfbf3f7dd687d38483f5bb62703ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1eceaee51778e9eafa6d81f819a17a25377b2841
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467034"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173583"
 ---
 # <a name="upgrading-custom-projects"></a>Atualizando projetos personalizados
 Se você alterar as informações mantidas no arquivo de projeto entre diferentes versões do Visual Studio do seu produto, em seguida, você precisa dar suporte à atualização de seu arquivo de projeto do ambiente antigo para a nova versão. Para dar suporte à atualização que permite que você participe de **Assistente de conversão do Visual Studio**, implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interface. Essa interface contém o único mecanismo disponível para a atualização da cópia. A atualização do projeto ocorre como parte da solução é aberta. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interface é implementada pela fábrica de projeto ou pelo menos deve ser obtido da fábrica de projeto.  

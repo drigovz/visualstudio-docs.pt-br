@@ -1,7 +1,7 @@
 ---
 title: Noções Básicas sobre valores de dados de contenção de recurso | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10c06805db7ef817421f7c9f85e316af8d4b5b35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54f8c7a545e0517c9d27dc32b68428e078cdfd40
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465383"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263231"
 ---
 # <a name="understanding-resource-contention-data-values"></a>Noções básicas sobre valores de dados de contenção de recurso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Noções básicas sobre valores de dados de contenção de recurso](https://docs.microsoft.com/visualstudio/profiling/understanding-resource-contention-data-values).  
-  
 Perfis de contenção de recursos coletam informações de pilha de chamadas detalhadas sempre que segmentos concorrentes em um aplicativo são forçados a aguardar o acesso a um recurso compartilhado.  
   
  **Requisitos**  

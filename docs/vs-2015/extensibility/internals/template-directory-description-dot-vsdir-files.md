@@ -1,7 +1,7 @@
 ---
 title: Descrição do diretório de modelo (. Os arquivos de Vsdir) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0d4281201c0aa7d699deb5c1d2d9ae1b183fd76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 733f59b4498ccec80b1223c87e32de0fab2ded69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475425"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201958"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Arquivos de descrição do diretório de modelo (.Vsdir)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [descrição do diretório de modelo (. Os arquivos de Vsdir)](https://docs.microsoft.com/visualstudio/extensibility/internals/template-directory-description-dot-vsdir-files).  
-  
 Um arquivo de descrição de diretório do modelo (. vsdir) é um arquivo de texto que permite que o ambiente de desenvolvimento integrado (IDE) para exibir pastas, arquivos. vsz do assistente e arquivos de modelo que estão associados ao seu projeto em caixas de diálogo. O conteúdo inclui um registro por arquivo ou pasta. Todos os arquivos. vsdir em um local referenciado são mesclados, embora. vsdir apenas um arquivo geralmente é fornecido para descrever várias pastas, assistentes ou arquivos de modelo.  
   
  Pastas (subdiretórios), arquivos que são referenciados no arquivo. vsdir e o próprio arquivo. vsdir estão localizadas no mesmo diretório. Quando o IDE executa um assistente ou exibe uma pasta ou arquivo a **novo projeto** ou **Adicionar Novo Item** caixas de diálogo, o IDE examina o diretório que contém os arquivos executados para determinar se um arquivo. vsdir é presente. Se um arquivo. vsdir for encontrado, o IDE lê-lo para determinar se ele contém uma entrada para o arquivo ou pasta executada ou exibida. Se uma entrada for encontrada, o IDE usa as informações na exibição do conteúdo ou da execução do assistente.  

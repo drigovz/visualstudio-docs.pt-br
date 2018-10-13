@@ -1,7 +1,7 @@
 ---
 title: Definir o elemento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 76e44ccc221b0f11f30ed63de63f82634f726b79
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a573413c20c305f3645b1d2795901f344ffb235
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464739"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229173"
 ---
 # <a name="define-element"></a>Elemento Define
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definem o elemento](https://docs.microsoft.com/visualstudio/extensibility/define-element).  
-  
 Define um par de nome e o valor do símbolo. Este símbolo pode ser avaliado por atributos condicionais. Para obter mais informações, consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md). Consulte também o [símbolos elemento](../extensibility/symbols-element.md).  
   
 ## <a name="syntax"></a>Sintaxe  

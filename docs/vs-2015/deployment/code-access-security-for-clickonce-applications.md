@@ -1,7 +1,7 @@
 ---
 title: Segurança de acesso do código para aplicativos ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 71b9344e552cb03d65b0093b1d5e0707689ec6af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5cfc8ad2be56965f691b2c114d3908172f0edfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461757"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197964"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Segurança de acesso do código para aplicativos ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Code Access Security para aplicativos ClickOnce](https://docs.microsoft.com/visualstudio/deployment/code-access-security-for-clickonce-applications).  
-  
 Os aplicativos ClickOnce são baseados no .NET Framework e estão sujeitos a restrições de segurança de acesso do código. Por esse motivo, é importante que você entenda as implicações do código de segurança de acesso e escrever aplicativos ClickOnce adequadamente.  
   
  Segurança de acesso do código é um mecanismo no .NET Framework que ajuda a limitar o acesso de código tem a recursos e operações protegidos. Você deve configurar as permissões de segurança de acesso do código para seu aplicativo usar a zona apropriada para o local do instalador do aplicativo ClickOnce. Na maioria dos casos, você pode escolher o **Internet** zona para um conjunto limitado de permissões ou a **Intranet Local** zona para um maior conjunto de permissões.  

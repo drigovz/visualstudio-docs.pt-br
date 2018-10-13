@@ -1,7 +1,7 @@
 ---
 title: Preparando para depurar ASP.NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d9f19e062f60f1f72ca1f7e3ee54aeb211e4b75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57031fa7529a7ef12c7ad8c2c61b41194bd18f74
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462200"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171491"
 ---
 # <a name="preparing-to-debug-aspnet"></a>Preparando-se para depurar ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Preparando-se para depurar ASP.NET](https://docs.microsoft.com/visualstudio/debugger/preparing-to-debug-aspnet).  
-  
 Esta seção descreve como configurar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para depurar um [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ou aplicativo WCF.  
   
 ## <a name="in-this-section"></a>Nesta seção  

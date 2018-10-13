@@ -1,7 +1,7 @@
 ---
 title: Padrões de interação para Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf21a8aa3c2a2813c71907d1d79bdcd4f7cde323
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ac6dde1b09e0488f3ae07b3a6ea02409d69892e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465478"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192056"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Padrões de interação para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [padrões de interação para Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/interaction-patterns-for-visual-studio).  
-  
 ## <a name="overview"></a>Visão geral  
  Um padrão de design, em geral, é o núcleo de um design que pode ser aplicado em situações específicas para resolver problemas com conjuntos semelhantes de restrições. Designers de recurso e o sistema usam esses padrões de design como partida pontos, que, em seguida, podem ser adaptados à sua situação específica.  
   

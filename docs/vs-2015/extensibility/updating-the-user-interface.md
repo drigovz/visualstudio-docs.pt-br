@@ -1,7 +1,7 @@
 ---
 title: Atualizando a Interface do usuário | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 caps.latest.revision: 42
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c77fa7407c6c271b66104ed6d835bc516a40c288
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52559a48b842d61dd64616af6f48c946147aa1e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475594"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181033"
 ---
 # <a name="updating-the-user-interface"></a>Atualizando a interface do usuário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [atualizando a Interface do usuário](https://docs.microsoft.com/visualstudio/extensibility/updating-the-user-interface).  
-  
 Depois de implementar um comando, você pode adicionar código para atualizar a interface do usuário com o estado de seus novos comandos.  
   
  Em um aplicativo típico do Win32, o conjunto de comandos pode ser sondado continuamente e o estado de comandos individuais pode ser ajustado conforme o usuário vê-los. No entanto, porque o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] shell pode hospedar um número ilimitado de VSPackages, sondagem extenso pode diminuir a capacidade de resposta, especialmente de sondagem em assemblies de interoperabilidade entre código gerenciado e COM.  

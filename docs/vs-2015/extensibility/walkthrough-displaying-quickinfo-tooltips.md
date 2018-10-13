@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Exibindo dicas de ferramenta de QuickInfo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b13dce0ea4f2bb54c802b63fd19f74b8173e94d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c8fe37de7db5a09e9c0e81f25b09e9b4ff345c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467670"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237647"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Passo a passo: exibindo dicas de ferramenta de InformaçãoRápida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: exibindo dicas de ferramenta de QuickInfo](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-quickinfo-tooltips).  
-  
 QuickInfo é um recurso IntelliSense, que exibe as assinaturas de método e descrições de quando um usuário move o ponteiro sobre um nome de método. Você pode implementar recursos de baseada na linguagem, como QuickInfo definindo os identificadores para o qual você deseja fornecer descrições de QuickInfo e, em seguida, criando uma dica de ferramenta para exibir o conteúdo. Você pode definir QuickInfo no contexto de um serviço de linguagem, ou você pode definir seu próprio tipo de conteúdo e a extensão de nome do arquivo e exibir o QuickInfo para apenas esse tipo, ou você pode exibir QuickInfo para um tipo de conteúdo existente (como "texto"). Este passo a passo mostra como exibir QuickInfo para o tipo de conteúdo "text".  
   
  O exemplo de QuickInfo neste passo a passo exibe as dicas de ferramenta quando um usuário move o ponteiro sobre um nome de método. Esse design requer que você implementar esses quatro interfaces:  

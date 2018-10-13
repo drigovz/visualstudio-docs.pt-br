@@ -1,7 +1,7 @@
 ---
 title: Usar marcadores de texto com a API herdada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b276a678d4b5e97e3ef949bdf1fd74b37070f9d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f863571672c42f63912629844fd72d8c92ca8400
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461509"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263657"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Usar marcadores de texto com a API herdada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando os marcadores de texto com a API herdada](https://docs.microsoft.com/visualstudio/extensibility/using-text-markers-with-the-legacy-api).  
-  
 Um marcador de texto é um intervalo de texto em um buffer que pode afetar a exibição de flutuante e o comportamento de uma região de texto. Marcadores incluem pontos de interrupção, indicadores, sublinhados ondulados e regiões de somente leitura. Marcadores de texto são basicamente diferentes das cores de sintaxe. Coloração de sintaxe é uma maneira rápida de se comunicar a sintaxe de linguagem que está associada uma região de texto. Coloração de sintaxe geralmente é solicitada ao Windows redesenha a tela, quando a velocidade é importante. Coloração de sintaxe altera apenas a cor do texto. Marcadores de texto podem alterar muitas outras propriedades de texto. Marcadores de texto podem "flutuar" e aplicar um comportamento especial e colorir.  
   
  Devido à sobrecarga de desempenho associada com marcadores de texto, não crie muitos marcadores para seus buffers de texto. Cada marcador é atualizado toda vez que um usuário edita o conteúdo do buffer.  

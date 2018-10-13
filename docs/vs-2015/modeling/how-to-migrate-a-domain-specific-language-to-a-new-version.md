@@ -1,7 +1,7 @@
 ---
 title: 'Como: migrar uma linguagem específica de domínio para uma nova versão | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d97e0204122e6dfcae89da7b04a0a303a0bd9a4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ad5204b4a90018d935028dc517c09ac608043c9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587431"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269419"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Como migrar uma linguagem específica do domínio para uma nova versão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: migrar uma linguagem específica de domínio para uma nova versão](https://docs.microsoft.com/visualstudio/modeling/how-to-migrate-a-domain-specific-language-to-a-new-version).  
-  
 Você pode migrar os projetos que definem e usam a linguagem específica de domínio para [!INCLUDE[vs2010](../includes/vs2010-md.md)] da versão do [!INCLUDE[dsl](../includes/dsl-md.md)] que foi distribuído com [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)].  
   
  Uma ferramenta de migração é fornecida como parte do [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)]. A ferramenta converte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projetos e soluções que usam ou definem as ferramentas DSL.  

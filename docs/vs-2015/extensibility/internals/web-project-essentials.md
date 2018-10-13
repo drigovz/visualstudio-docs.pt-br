@@ -1,7 +1,7 @@
 ---
 title: Web Essentials do projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c3ec8de19f1546941d3e96c8c2cebebad408c9f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b30dd0616fcf2f59044a782bf8611ef2fa946f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467357"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188719"
 ---
 # <a name="web-project-essentials"></a>Conceitos básicos do projeto Web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [fundamentos do projeto Web](https://docs.microsoft.com/visualstudio/extensibility/internals/web-project-essentials).  
-  
 Projetos da Web criam aplicativos Web. Você pode usar um projeto da Web para criar um aplicativo Web que tem inteligentes páginas da Web. Uma página da Web inteligente tem o código do lado do servidor que processa a página da Web sob demanda.  
   
  Usando linguagens de programação tradicionais, como [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] ou [!INCLUDE[csprcs](../../includes/csprcs-md.md)], você pode criar páginas de Web inteligentes para coletar e processar informações de um usuário, armazená-lo em um banco de dados e assim por diante.  

@@ -1,7 +1,7 @@
 ---
 title: Função SccBackgroundGet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 162bbc427b48ee10ea3a0b88837cf012f1c3fd07
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2131eabd0c5933e949ab3119a89c79681f2faab1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460709"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256640"
 ---
 # <a name="sccbackgroundget-function"></a>Função SccBackgroundGet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [função SccBackgroundGet](https://docs.microsoft.com/visualstudio/extensibility/sccbackgroundget-function).  
-  
 Essa função recupera do controle de origem cada dos arquivos especificados sem interação do usuário.  
   
 ## <a name="syntax"></a>Sintaxe  

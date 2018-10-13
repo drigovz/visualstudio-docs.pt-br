@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Exibindo chaves correspondentes | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11021dc98acfd80f1e91443cc834eb4ae0126455
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0568060ec19fc24731850b20dc70dfa7a48231d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461028"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247826"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Passo a passo: exibindo chaves correspondentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: exibindo chaves correspondentes](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-matching-braces).  
-  
 Você pode implementar recursos de baseada na linguagem, como correspondência definindo as chaves que você deseja corresponder e, em seguida, adicionar uma marca de marcador de texto as chaves correspondentes quando o cursor está em uma das chaves de chaves. Você pode definir chaves no contexto de um idioma, ou você pode definir seu próprio tipo de conteúdo e a extensão de nome do arquivo e aplicar as marcas a apenas esse tipo, ou você pode aplicar marcas a um tipo de conteúdo existente (como "texto"). A instrução a seguir mostra como aplicar marcas para o tipo de conteúdo "texto" a correspondência de chaves.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  

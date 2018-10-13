@@ -1,7 +1,7 @@
 ---
 title: Definir um personalizado item de caixa de ferramentas de modelagem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd2d7ff2b31e8975574cb6b2780a352faa1cd663
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 994bb8dfd047320ac0ea4a0d63260f19a2c3d45c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464072"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252363"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definir um item de caixa de ferramentas de modelagem personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definir um personalizado item de caixa de ferramentas de modelagem](https://docs.microsoft.com/visualstudio/modeling/define-a-custom-modeling-toolbox-item).  
-  
 Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com um padrão que você normalmente usa, você pode adicionar novas ferramentas para a caixa de ferramentas de diagramas de modelagem no Visual Studio. Você pode distribuir esses itens de caixa de ferramentas para outros usuários do Visual Studio.  
   
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

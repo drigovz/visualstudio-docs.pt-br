@@ -1,7 +1,7 @@
 ---
 title: Compilando e criando no Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec3a74d911a32d7e7f869ee099c70914cafe9a08
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65fbe40a3609b0729bdc376196940f2adb670a2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476289"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229223"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilando e criando no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [compilando e criando no Visual Studio](https://docs.microsoft.com/visualstudio/ide/compiling-and-building-in-visual-studio).  
-  
 É possível usar o Visual Studio para compilar aplicativos e criar assemblies e programas executáveis em intervalos frequentes durante um ciclo de desenvolvimento. Compilando seu código com frequência, é possível identificar erros em tempo de build, como sintaxe incorreta, palavras-chave com erros de ortografia e erros de digitação mais precocemente. Também é possível detectar e corrigir erros em tempo de execução, como erros lógicos e semânticos ao compilar e executar frequentemente versões de depuração do código.  
   
  Quando você tiver desenvolvido completamente e depurado suficientemente um projeto ou solução, será possível compilar seus componentes em um build de versão. Por padrão, um build de versão é otimizada e projetada para ser menor e para ser executada mais rapidamente do que uma versão de depuração. Para obter mais informações, consulte [Instruções passo a passo: criando um aplicativo](../ide/walkthrough-building-an-application.md).  

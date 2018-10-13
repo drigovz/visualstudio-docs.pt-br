@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cfb5a4fbd1c1e3b164b3e690da07136099711607
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5d1fcdb6df958a62ed23b3bc7e812e1f4a7e15f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468369"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218771"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProcess2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess2).  
-  
 Essa interface representa um processo em execução em uma porta. Se a porta é a porta local, em seguida, `IDebugProcess2` normalmente representa um processo físico no computador local.  
   
 ## <a name="syntax"></a>Sintaxe  

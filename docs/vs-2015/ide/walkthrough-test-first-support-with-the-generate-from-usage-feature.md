@@ -1,7 +1,7 @@
 ---
 title: 'Instruções passo a passo: suporte Test-First com o Recurso Gerar do uso | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a290eebec2c3847d41f36568196ec35935e332a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2b45b75b689279a19dc1423a0cbf2b62d14a5c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468397"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232837"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Instruções passo a passo: suporte Test-First com a Funcionalidade Gerar a partir do Uso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: suporte Test-First com o recurso de gerar do uso](https://docs.microsoft.com/visualstudio/ide/walkthrough-test-first-support-with-the-generate-from-usage-feature).  
-  
 Este tópico demonstra como usar o recurso [Gerar do Uso](../misc/generate-from-usage.md), que oferece suporte ao desenvolvimento de test-first.  
   
  O *desenvolvimento test-first* é uma abordagem para design de software em que você primeiro escreve testes de unidade baseados nas especificações do produto e, em seguida, escreve o código-fonte que é necessário para tornar os testes bem-sucedidos. O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oferece suporte ao desenvolvimento de test-first gerando novos tipos e membros no código-fonte ao referenciá-los pela primeira vez em seus casos de teste antes de serem definidos.  

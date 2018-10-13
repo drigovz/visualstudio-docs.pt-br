@@ -1,7 +1,7 @@
 ---
 title: Coleta de dados de desempenho adicionais | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c4ce6ca9619d60851d03bf5827741f30f3c0f6a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a72898b7880900a9c767ba765dc7fe7da74904fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462014"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198712"
 ---
 # <a name="collecting-additional-performance-data"></a>Coletando dados de desempenho adicionais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [coletando dados de desempenho adicionais](https://docs.microsoft.com/visualstudio/profiling/collecting-additional-performance-data).  
-  
 Além dos dados coletados por um método de criação de perfil, as ferramentas de criação de perfil [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] permitem que você registre e visualize dados adicionais.  
   
 ## <a name="common-tasks"></a>Tarefas comuns  

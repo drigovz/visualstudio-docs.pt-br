@@ -1,7 +1,7 @@
 ---
 title: Tarefa Link | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -36,18 +36,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0aaf4d5f6862e2b5ef40b88e8041aa9ccc5a317
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ddce9f4ec87be5e21b38e20c24069b4cbd9b2e77
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587875"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256698"
 ---
 # <a name="link-task"></a>Tarefa Link
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tarefa Link](https://docs.microsoft.com/visualstudio/msbuild/link-task).  
-  
   
 Encapsula a ferramenta de vinculador do Visual C++, link.exe. A ferramenta de vinculador vincula arquivos de objeto e bibliotecas de formato COFF (Common Object File Format) para criar um arquivo executável (.exe) ou uma DLL (biblioteca de vínculo dinâmico). Para obter mais informações, consulte [Opções de Vinculador](http://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   

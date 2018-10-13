@@ -1,7 +1,7 @@
 ---
 title: Especifique o símbolo (. PDB) e arquivos de origem na depurador do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8674ee9c4141b9bfe8511e67c4cd6113f8f0fed5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6b988a2e3defa1a434cc825ad78e7c92dd30c382
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587858"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226974"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Especificar arquivos de símbolo (.pdb) e de origem no Depurador do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [especificam o símbolo (. PDB) e arquivos de origem no depurador](https://docs.microsoft.com/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).  
-  
 Um arquivo de banco de dados do programa (.pdb), também chamado de arquivo de símbolo, mapeia os identificadores que você cria em arquivos de origem para classes, métodos e outro código para os identificadores que são usados em executáveis compilados do seu projeto. O arquivo .pdb também mapeia as instruções no código-fonte para instruções de execução nos arquivos executáveis. O depurador usa essas informações para determinar duas informações principais: o arquivo de origem e o número da linhas que são exibidos no IDE do Visual Studio e o local no executável onde deve ocorrer a interrupção quando você definir um ponto de interrupção. Um arquivo de símbolo também contém o local original dos arquivos de origem e, opcionalmente, o local de um servidor de origem de onde os arquivos de origem podem ser recuperados.  
   
  Quando você depura um projeto no IDE do Visual Studio, o depurador saberá que o local padrão para os arquivos. PDB e código-fonte para seu código. Se desejar depurar o código fora do código-fonte do projeto, como o código do Windows ou de terceiros chamado por seu projeto, você terá que especificar o local do .pdb (e, opcionalmente, os arquivos de origem do código externo) e esses arquivos precisam corresponder exatamente à compilação dos executáveis.  

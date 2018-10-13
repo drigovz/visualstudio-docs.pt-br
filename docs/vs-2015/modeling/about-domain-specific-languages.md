@@ -1,7 +1,7 @@
 ---
 title: Sobre linguagens específicas do domínio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 971c63d25aee9c8676921b5ee7e112ae41a8a251
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0a9d3b89e91e0540766621f0889a12482291740a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467599"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175260"
 ---
 # <a name="about-domain-specific-languages"></a>Sobre linguagens específicas do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [sobre linguagens específicas de domínio](https://docs.microsoft.com/visualstudio/modeling/about-domain-specific-languages).  
-  
 Ao contrário de uma linguagem de finalidade geral, como c# ou UML, uma linguagem específica de domínio (DSL) foi projetada para expressar declarações em um determinado problema de espaço ou domínio.  
   
  DSLs Well-Known incluem expressões regulares e SQL. Cada DSL é muito melhor do que uma linguagem de finalidade geral para descrever as operações em cadeias de caracteres de texto ou um banco de dados, mas um desempenho pior para descrever as ideias que estão fora do seu próprio escopo. Setores individuais também têm seus próprios DSLs. Por exemplo, na indústria de telecomunicações, chame descrição idiomas são amplamente usados para especificar a sequência dos estados em uma chamada telefônica e a indústria de viagem no ar um padrão de que DSL é usada para descrever as reservas de voo.  

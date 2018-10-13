@@ -1,7 +1,7 @@
 ---
 title: Adicionando o controle de usuário para a página inicial | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3c2ccd76343cd340725751bf1ce2c332fe96c37
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b174145561f6005e9498384190800945e36af078
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587425"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259981"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Adicionando um controle de usuário à página inicial
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionando o controle de usuário para a página início](https://docs.microsoft.com/visualstudio/extensibility/adding-user-control-to-the-start-page).  
-  
 Este passo a passo mostra como adicionar uma referência DLL para uma página inicial personalizada. O exemplo adiciona um controle de usuário para a solução, compila o controle de usuário e, em seguida, faz referência ao assembly compilado do arquivo Start Page. XAML. Uma nova guia hospeda o controle de usuário, que funciona como um navegador da Web básico.  
   
  Você pode usar o mesmo processo para adicionar qualquer assembly que pode ser chamado de um arquivo. XAML.  

@@ -1,7 +1,7 @@
 ---
 title: Enumerações (depuração do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 557065bf-081f-4d57-8744-bae02b8a5a6e
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e6c431624c176142007b383470d67dc4f73e50f
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 9340030c9dd2a1a69b50162dd4c5b29f9eb6a50d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881040"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247246"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>Enumerações (depuração no Visual Studio)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [enumerações (Visual Studio de depuração)](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/enumerations-visual-studio-debugging).  
-  
 A seguir estão as enumerações para o [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] SDK de depuração.  
   
  [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)  

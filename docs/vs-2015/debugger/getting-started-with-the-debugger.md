@@ -1,14 +1,14 @@
 ---
 title: Introdução ao depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -19,18 +19,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2269ceae72f620677f51af960f7fe164f7982412
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4642fa76a9891d07e927fa37650976180568f7a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467680"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249945"
 ---
 # <a name="getting-started-with-the-debugger"></a>Introdução ao depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tour pelos recursos do depurador](https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour).  
-  
 O depurador do Visual Studio é fácil de usar em qualquer idioma. Aqui, mostraremos como depurar um programa c# simples, mas você pode aplicar as mesmas etapas para o código em outras linguagens como C++ e JavaScript.  
   
 ##  <a name="BKMK_Start_debugging_a_VS_project"></a> Depurar um projeto c# básico  

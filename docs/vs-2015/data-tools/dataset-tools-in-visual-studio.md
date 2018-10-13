@@ -1,7 +1,7 @@
 ---
 title: Ferramentas de conjunto de dados no Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -56,18 +56,16 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d01dd2de60285d669f5a36a2f6ddf7a08449dad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5881542c78c5c055d1cbc26d54eb5e478a13124
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460760"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254339"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Ferramentas de conjunto de dados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ferramentas de conjunto de dados no Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/dataset-tools-in-visual-studio).  
-  
   
 OBSERVAÇÃO]
 >  Conjuntos de dados e classes relacionadas são herdadas tecnologias do .NET do início dos anos 2000 que habilitam aplicativos para trabalhar com dados na memória enquanto os aplicativos estão desconectados do banco de dados. Eles são especialmente úteis para aplicativos que permitem aos usuários modificar os dados e manter as alterações no banco de dados. Embora os conjuntos de dados provaram para ser uma tecnologia muito bem-sucedida, é recomendável que novos aplicativos .NET usam Entity Framework. Entity Framework fornece uma maneira mais natural para trabalhar com dados tabulares como modelos de objeto, e ele tem uma interface de programação mais simples.  
