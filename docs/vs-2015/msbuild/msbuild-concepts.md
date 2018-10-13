@@ -1,7 +1,7 @@
 ---
 title: Conceitos do MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bfaa3da19a9c6eda46d09fbb4c9d30c96e04b18
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54c8fcd52a6d3650726281f55c3d6192c089ce78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475178"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174116"
 ---
 # <a name="msbuild-concepts"></a>Conceitos do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [conceitos do MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-concepts).  
-  
   
 O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fornece um esquema XML básico que você pode usar para controlar como a plataforma de build compila o software. Para especificar os componentes no build e como eles devem ser compilados, use essas quatro partes do MSBuild: propriedades, itens, tarefas e destinos.  
   

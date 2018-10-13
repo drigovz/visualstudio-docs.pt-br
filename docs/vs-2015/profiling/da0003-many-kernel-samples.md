@@ -1,7 +1,7 @@
 ---
 title: 'DA0003: muitas amostras de kernel | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd4412fc120eb0a0fa039ac91bec4da4ba4a6f44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba55e787c3ee07bb94fde325832a2c6b09d8d984
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473928"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200663"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: muitas amostras de kernel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DA0003: muitas amostras de kernel](https://docs.microsoft.com/visualstudio/profiling/da0003-many-kernel-samples).  
-  
 Id da regra | DA0003 |  
 | Categoria | Uso das ferramentas de criação de perfil |  
 | Métodos de criação de perfil | Amostragem |  

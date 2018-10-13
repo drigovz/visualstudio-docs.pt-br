@@ -1,7 +1,7 @@
 ---
 title: Como criar um sombreador de cor básico | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 23a7082c305bdabf139e284d448fafdf375762e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f37e725c0666da39bf75b8c04b7c2a73d8622ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464018"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209554"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Como criar um sombreador de cor básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: criar um sombreador de cor básico](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-basic-color-shader).  
-  
 Este documento demonstra como usar o Designer de Sombreador e a DGSL (Directed Graph Shader Language) para criar um sombreador de cor simples. Esse sombreador define a cor final em um valor de cor RGB constante.  
   
  Este documento demonstra essas atividades:  

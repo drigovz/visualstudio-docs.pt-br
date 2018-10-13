@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findInlineeLinesByAddr | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 642df9de22cd0537b9ec0e8622215e06146fb721
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 594129d534de78350a65ed373bf3bd50933f8f7e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461455"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197932"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSession::findInlineeLinesByAddr](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findinlineelinesbyaddr).  
-  
 Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, pelo símbolo pai especificado e está contida dentro do intervalo de endereço especificado.  
   
 ## <a name="syntax"></a>Sintaxe  

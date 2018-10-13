@@ -1,7 +1,7 @@
 ---
 title: Implantar aplicativos da Windows Store pelo Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1212665b8e7e1c28fa30f50c1cd64a0dc5c217bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 540a335365102f279f62f0707ee3cf7cc4fe1b53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464993"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196099"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Implantar aplicativos da Windows Store pelo Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Store do Windows de implantar aplicativos do Visual Studio](https://docs.microsoft.com/visualstudio/debugger/deploy-windows-store-apps-from-visual-studio).  
-  
 Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_content")  
   
  A funcionalidade de implantação do Visual Studio compila e registra aplicativos na Windows Store que são criados com o Visual Studio em um dispositivo de destino. Exatamente como o aplicativo é registrado depende de o dispositivo de destino ser local ou remoto:  

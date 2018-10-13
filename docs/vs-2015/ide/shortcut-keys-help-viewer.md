@@ -1,7 +1,7 @@
 ---
 title: Teclas de atalho (Help Viewer) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0597637e0611a9a444a9fc763e7479daa787dd85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bbeac2d261e24fe8ed7df406045ce7d3d6d0fe3b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472921"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195620"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Teclas de atalho (Visualizador da Ajuda)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [teclas de atalho (Help Viewer)](https://docs.microsoft.com/visualstudio/ide/shortcut-keys-help-viewer).  
-  
 É possível navegar no Microsoft Help Viewer usando as teclas de atalho na tabela a seguir:  
   
 |Área|Pressionamento de tecla|Ação|  

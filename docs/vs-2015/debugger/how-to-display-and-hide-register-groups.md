@@ -1,7 +1,7 @@
 ---
 title: 'Como: exibir e ocultar grupos de registro | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3060a21d9ffbaf079696eef83f01b7f0787ed59a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ff44cb0977103d7169ac0b3f14a8bf0fb8f6c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465822"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206486"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>Como exibir e ocultar grupos de registros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: exibir e ocultar grupos de registros](https://docs.microsoft.com/visualstudio/debugger/how-to-display-and-hide-register-groups).  
-  
 O **registra** janela está disponível somente se a depuração do nível de endereços estiver habilitada na **opções** caixa de diálogo **depuração** nó, **geral**categoria.  
   
  Para reduzir a desordem, o **registra** janela organiza registros em grupos. Se o botão direito do mouse a **registra** janela, você verá um menu de atalho contendo esses grupos, que você pode exibir ou ocultar como achar melhor seguindo o procedimento a seguir.  

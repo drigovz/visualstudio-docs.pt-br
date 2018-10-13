@@ -1,7 +1,7 @@
 ---
 title: Criar uma categoria de configurações | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 91c46e5a222526dd68d98be0c855067cd96b10f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1a59e2c185460ffd9b9326c8458681f5953de76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462965"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186141"
 ---
 # <a name="creating-a-settings-category"></a>Criar uma categoria de configurações
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar uma categoria de configurações](https://docs.microsoft.com/visualstudio/extensibility/creating-a-settings-category).  
-  
 Neste passo a passo, você cria uma categoria de configurações do Visual Studio e usá-lo para salvar os valores e restaurar os valores de um arquivo de configurações. Uma categoria de configurações é um grupo de propriedades relacionadas que são exibidos como um "ponto de configurações personalizadas"; ou seja, como uma caixa de seleção na **importação e exportação de configurações** assistente. (Você pode encontrá-lo sobre a **ferramentas** menu.) Configurações salvos ou restauradas como uma categoria e as configurações individuais não são exibidas no assistente. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Criar uma categoria de configurações derivando-lo do <xref:Microsoft.VisualStudio.Shell.DialogPage> classe.  

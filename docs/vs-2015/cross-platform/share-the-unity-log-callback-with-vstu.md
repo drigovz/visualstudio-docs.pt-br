@@ -1,7 +1,7 @@
 ---
 title: Compartilhar o retorno de log do Unity com o VSTU | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 8e1e0f2062195830443a169c67d9b75d2b1915ec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e309f7d7340eb73de587c7a5f569377354dbab9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473506"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186856"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>Compartilhar o retorno de chamada de log do Unity com o VSTU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [compartilhar o retorno de chamada de Log do Unity com VSTU](https://docs.microsoft.com/visualstudio/cross-platform/share-the-unity-log-callback-with-vstu).  
-  
   
 As Ferramentas do Visual Studio para Unity registram um retorno de chamada de log do Unity para transmitir seu console para o Visual Studio. Se os scripts do seu editor também registram um retorno de chamada de log do Unity, o retorno de chamada VSTU pode interferir em seu retorno de chamada. Para evitar essa possibilidade, use o evento `VisualStudioIntegration.LogCallback` para cooperar com VSTU.  
   

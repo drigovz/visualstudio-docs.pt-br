@@ -1,7 +1,7 @@
 ---
 title: 'Diagramas de atividade UML: Diretrizes | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 23665bb9e3241f9fe32913bbd5816a39404d0842
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: de4ea9890f6a39fa263129f3a0df9559ae9ab479
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472717"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176638"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramas de atividade UML: diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [diagramas de atividade UML: diretrizes](https://docs.microsoft.com/visualstudio/modeling/uml-activity-diagrams-guidelines).  
-  
 No Visual Studio, você pode desenhar um diagrama de atividade para descrever um processo de negócios ou um algoritmo de software como um fluxo de trabalho por meio de uma série de ações. As pessoas, os componentes de software ou dispositivos podem executar essas ações. Para uma demonstração em vídeo, consulte: [captura de fluxos de trabalho comerciais por meio de diagramas de atividade](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/).  
   
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

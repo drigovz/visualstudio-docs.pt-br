@@ -1,7 +1,7 @@
 ---
 title: Uso de vários processadores para criar projetos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67ba27b59fe134e226d5cc2b752d8d0ae26f7aa2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67b873b8ab1668ea2fea3b3bf0487339a86c9ffe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465726"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199908"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>Usando vários processadores para compilar projetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando vários processadores para compilar projetos](https://docs.microsoft.com/visualstudio/msbuild/using-multiple-processors-to-build-projects).  
-  
   
 MSBuild pode tirar proveito dos sistemas com vários processadores ou vários núcleos processadores. Um processo de compilação separado é criado para cada processador disponível. Por exemplo, se o sistema possui quatro processadores, então quatro processos de compilação são criados. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pode processar essas compilações simultaneamente e, portanto, em geral o tempo de compilação é reduzido. No entanto, a construção em paralelo apresenta algumas alterações em como os processos de compilação ocorrem. Este tópico aborda essas alterações.  
   

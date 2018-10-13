@@ -1,7 +1,7 @@
 ---
 title: Adicionar controles personalizados à janela fontes de dados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: acdab62754a8cbbe7b97ea9723fba202d5078ac0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e84224d4ebd066891d4fdf90b4ad488a79cc0b1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467523"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183632"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Adicionar controles personalizados à janela Fontes de Dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionar controles personalizados à janela fontes de dados](https://docs.microsoft.com/visualstudio/data-tools/add-custom-controls-to-the-data-sources-window).  
-  
   
 Quando você arrasta um item a partir de **fontes de dados** janela para uma superfície de design para criar um controle associado a dados, você pode selecionar o tipo de controle que você criar. Cada item na janela tem uma lista suspensa que exibe os controles que podem ser escolhidos. O conjunto de controles associados a cada item é determinado pelo tipo de dados do item. Se o controle que você deseja criar não aparecer na lista, você pode seguir as instruções neste tópico para adicionar o controle à lista.  
   

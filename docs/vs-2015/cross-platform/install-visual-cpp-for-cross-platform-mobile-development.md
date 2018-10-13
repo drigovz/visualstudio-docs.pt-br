@@ -1,7 +1,7 @@
 ---
 title: Instalar o Visual C++ para Desenvolvimento Móvel de Multiplataforma | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 6f341ad8c750286f8f15297c15dcdc8340ee7596
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0732cc08c679bd3eab973632164d366efe87b3b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463177"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203849"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalar o Visual C++ para Desenvolvimento Móvel Multiplataforma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instalar o Visual C++ para desenvolvimento móvel de plataforma cruzada](https://docs.microsoft.com/visualstudio/cross-platform/install-visual-cpp-for-cross-platform-mobile-development).  
-  
   
 Visual C++ para desenvolvimento móvel de plataforma cruzada] (http://go.microsoft.com/fwlink/p/?LinkId=536383) é um componente instalável do Visual Studio 2015. Ele inclui modelos de plataforma cruzada do Visual Studio e instala as ferramentas e SDKs de plataforma cruzada para começar rapidamente, sem a necessidade de localizar, baixar e configurá-los. É possível usar essas ferramentas no Visual Studio para criar, editar, depurar e testar projetos de plataforma cruzada com facilidade. Este tópico descreve como instalar as ferramentas e softwares de terceiros necessários para desenvolver aplicativos de plataforma cruzada usando o Visual Studio. Para obter uma visão geral do componente, consulte [Visual C++ Móvel de Multiplataforma](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
   

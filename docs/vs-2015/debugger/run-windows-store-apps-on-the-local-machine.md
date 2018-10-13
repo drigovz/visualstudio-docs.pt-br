@@ -1,7 +1,7 @@
 ---
 title: Aplicativos de execução Windows Store no computador local | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d69e4224627d78d4fdd9482097ef248e69f6571f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b460d1eecfe96cddce27926ee8e31aae258d8dcf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467188"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188377"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>Executar aplicativos da Windows Store na máquina local
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [aplicativos de execução Windows Store na máquina local](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-the-local-machine).  
-  
 Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_content")  
   
  Para depurar, testar ou executar análise de desempenho em um aplicativo da Windows Store, você pode executar o aplicativo no mesmo computador host do Visual Studio. Se a tela do dispositivo for habilitada para toque, você poderá ativar a funcionalidade completa do aplicativo; do contrário, você estará limitado aos gestos do mouse e do teclado.  

@@ -1,7 +1,7 @@
 ---
 title: 'Aviso: a dependência &#39;arquivo&#39; no projeto &#39;projeto&#39; não pode ser copiado para o diretório de execução porque ela substituiria a referência de &#39;arquivo. &#39; | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 7ea168095d67bb71d7aea9a1139a6df1956d14fb
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 95b566c719c7d6adc27039a691315e93eb43eb05
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "47587377"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185595"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Aviso: a dependência &#39;arquivo&#39; no projeto &#39;projeto&#39; não pode ser copiado para o diretório de execução porque ela substituiria a referência de &#39;arquivo.&#39;
 Há um conflito entre as dependências; mais de um arquivo de assembly distintos com o mesmo nome deve ser copiados para o diretório bin para a execução do aplicativo. O diretório de execução é capaz de resolver o conflito, pois uma das dependências é uma referência primária.  

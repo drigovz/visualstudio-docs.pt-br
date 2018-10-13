@@ -1,7 +1,7 @@
 ---
 title: Exibição Módulos – Dados de amostragem de memória do .NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1596d85e2668090533df9021c964d6767d36b38
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3334edce4d29792e44f4cab0840a9f46763d74aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464290"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185374"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Exibição Módulos – Dados de amostragem de memória do .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de módulos – dados de amostragem de memória do .NET](https://docs.microsoft.com/visualstudio/profiling/modules-view-dotnet-memory-sampling-data).  
-  
 A exibição Módulos de dados de alocação de memória do .NET coletados usando o método de amostragem agrupa os dados de memória pelos módulos que foram executados na execução de criação de perfil. Cada módulo é a raiz de uma árvore hierárquica. As funções do módulo são listadas abaixo do nó do módulo.  
   
  Os números de linha de arquivo de origem de instruções que alocam memória são listados sob o nó de função e os endereços das instruções que fazem a alocação são listados sob o nó de linha. Os valores exclusivos e inclusivos são sempre os mesmos para dados de linha e dados de instrução.  

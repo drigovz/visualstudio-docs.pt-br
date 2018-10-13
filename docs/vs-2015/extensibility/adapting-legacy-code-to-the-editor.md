@@ -1,7 +1,7 @@
 ---
 title: Adaptando um código herdado para o Editor | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b477436826b69e7e0123e6003c23ed719b1a7466
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c828632e2c6de2666edecbedf04479598085890c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473229"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197734"
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>Adaptando um código herdado para o Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adaptando a código herdado para o Editor](https://docs.microsoft.com/visualstudio/extensibility/adapting-legacy-code-to-the-editor).  
-  
 Editor do Visual Studio tem muitos recursos que você pode acessar de componentes de código existentes. As instruções a seguir mostram como adaptar um componente não MEF, por exemplo, um VSPackage, para consumir a funcionalidade do editor. As instruções também mostram como usar adaptadores para obter os serviços do editor no código gerenciado e não gerenciado.  
   
 ## <a name="editor-adapters"></a>Adaptadores do Editor  

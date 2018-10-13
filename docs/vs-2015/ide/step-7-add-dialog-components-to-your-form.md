@@ -1,7 +1,7 @@
 ---
 title: 'Etapa 7: adicionar componentes de diálogo ao formulário | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b6f819495cd6787398fadf414bcfebb2c3eefec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca17a6958a3c66054b89fc65c30bf397c4e6b821
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468237"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192940"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Etapa 7: Adicionar componentes de diálogo ao formulário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [etapa 7: adicionar componentes de caixa de diálogo ao formulário](https://docs.microsoft.com/visualstudio/ide/step-7-add-dialog-components-to-your-form).  
-  
 Para habilitar seu programa a abrir arquivos de imagem e escolher uma cor da tela de fundo, nesta etapa, você adiciona um componente **OpenFileDialog** e um componente **ColorDialog** ao seu formulário.  
   
  Um componente é como um controle de certas maneiras. Use a Caixa de Ferramentas para adicionar um componente ao seu formulário e ajuste suas propriedades usando a janela **Propriedades**. Mas, diferentemente de um controle, adicionar um componente ao seu formulário não adiciona um item visível que o usuário possa ver no formulário. Em vez disso, fornece determinados comportamentos que você pode disparar com código. É um componente que abre uma caixa de diálogo **Abrir Arquivo**.  

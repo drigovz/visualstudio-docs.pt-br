@@ -1,7 +1,7 @@
 ---
 title: Conceitos básicos do serviço | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 497f894f1ae8eef6c58ffeea542128105a51336b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec9ccc92a8650c71336fc4a6916b797bd449dc7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473625"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178120"
 ---
 # <a name="service-essentials"></a>Conceitos básicos do serviço
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [fundamentos do serviço](https://docs.microsoft.com/visualstudio/extensibility/internals/service-essentials).  
-  
 Um serviço é um contrato entre dois VSPackages. Um VSPackage fornece um conjunto específico de interfaces para outro VSPackage consumir. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] é uma coleção de VSPackages que fornece serviços a outros VSPackages.  
   
  Por exemplo, você pode usar o serviço de SVsActivityLog para obter uma interface IVsActivityLog, que pode ser usado para gravar no log de atividades. Para obter mais informações, consulte [como: usar o Log de atividades](../../extensibility/how-to-use-the-activity-log.md).  

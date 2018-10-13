@@ -1,7 +1,7 @@
 ---
 title: 'CA2140: Código transparente não deve fazer referência itens críticos de segurança | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 039a6a4abcd914bd6100b73dca3fe9c0d1d964cf
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 16d7ba9c5bac34d92e0141d9ef0fda9b41368876
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47586976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201227"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: o código transparente não deve fazer referência a itens críticos de segurança
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA2140: código transparente não deve fazer referência a itens críticos de segurança](https://docs.microsoft.com/visualstudio/code-quality/ca2140-transparent-code-must-not-reference-security-critical-items).
-
 |||
 |-|-|
 |NomeDoTipo|TransparentMethodsMustNotReferenceCriticalCode|

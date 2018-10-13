@@ -1,7 +1,7 @@
 ---
 title: Criando processadores de diretiva do modelo de texto de T4 personalizados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d97b87289be6f6fb685fe9f1b4e5ee4309bd0431
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4e0b6b325f2418c031f00defc0f28bd2fc6b3f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176924"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Criando processadores de diretiva de modelo de texto T4 personalizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando processadores diretiva de modelo de texto do personalizado T4](https://docs.microsoft.com/visualstudio/modeling/creating-custom-t4-text-template-directive-processors).  
-  
 O *processo de transformação de modelo de texto* leva um *modelo de texto* arquivo como entrada e gera um arquivo de texto como saída. O *mecanismo de transformação do modelo de texto* controles que o processo e o mecanismo interage com um host de transformação de modelo de texto e o modelo de texto de um ou mais *processadores de diretriz* para concluir o processo. Para obter mais informações, consulte [o processo de transformação de modelo de texto](../modeling/the-text-template-transformation-process.md).  
   
  Para criar um processador de diretriz personalizado, é preciso criar uma classe herdada de <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> ou de <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  

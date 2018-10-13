@@ -1,7 +1,7 @@
 ---
 title: Tratando da implantação especializada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f72b6daa075bb1b9127e357d072efb89b007373a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 07a6ae87919f0390e65dc9b2892932d794593b00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467878"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191564"
 ---
 # <a name="handling-specialized-deployment"></a>Manipulação de implantação especializada
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tratamento implantação especializada](https://docs.microsoft.com/visualstudio/extensibility/internals/handling-specialized-deployment).  
-  
 Uma implantação é uma operação opcional para projetos. Um projeto Web, por exemplo, dá suporte a uma implantação para permitir que um projeto de atualizar um servidor Web. Da mesma forma, uma **Smart Device** projeto dá suporte a uma implantação para copiar um aplicativo criado para o dispositivo de destino. Subtipos de projeto podem fornecer o comportamento de implantação especializada, Implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface. Essa interface define um conjunto completo de operações de implantação:  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  

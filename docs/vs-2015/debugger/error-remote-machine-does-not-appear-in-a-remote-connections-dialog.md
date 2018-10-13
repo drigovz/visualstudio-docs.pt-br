@@ -1,7 +1,7 @@
 ---
 title: 'Erro: O computador remoto não aparece em uma caixa de diálogo conexões remotas | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 552be1e38cdb7401af36b287b23091d754c35980
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a7b849ea60c48bc5127ddd50167415629daec4e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474829"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185153"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Erro: O computador remoto não aparece em uma caixa de diálogo conexões remotas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [erro: computador remoto não aparece em uma caixa de diálogo conexões remotas](https://docs.microsoft.com/visualstudio/debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog).  
-  
 Se o computador remoto não aparecer na caixa de diálogo conexões remotas, verifique as seguintes causas comuns.  
   
  Se você estiver usando o modo de compatibilidade gerenciado, verifique a documentação do Visual Studio 2010: [solução de problemas de depuração remota - Visual Studio 2010](https://msdn.microsoft.com/library/2ys11ead\(v=vs.100\).aspx) .  

@@ -1,7 +1,7 @@
 ---
 title: Definir restrições de validação para modelos UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1caf688f6ecc84413d3bdb86c1c1825241aa5ba3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176534"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definir restrições de validação para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definir restrições de validação para modelos UML](https://docs.microsoft.com/visualstudio/modeling/define-validation-constraints-for-uml-models).  
-  
 Você pode definir restrições de validação que testam se o modelo de atende a uma condição que você especificar. Por exemplo, você pode definir uma restrição para certificar-se de que um usuário não cria um loop de relações de herança. A restrição é invocada quando o usuário tenta abrir ou salvar o modelo e também pode ser invocado manualmente. Se a restrição falhar, uma mensagem de erro que você define é adicionada à janela de erro. Você pode empacotar essas restrições em uma extensão de integração do Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) e distribuí-lo para outros usuários do Visual Studio.  
   
  Você também pode definir restrições que validam o modelo em relação aos recursos externos, como bancos de dados. Se você quiser validar o código de programa em um diagrama de camada, consulte [adicionar validação de arquitetura personalizada a diagramas de camada](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  

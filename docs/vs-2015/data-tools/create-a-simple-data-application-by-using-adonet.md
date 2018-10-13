@@ -1,7 +1,7 @@
 ---
 title: Criar um aplicativo de dados simples usando o ADO.NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e9ba21aa4cf5d2f11ba7aa24f095acaaea13924
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466561"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204302"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo de dados simples usando o ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar um aplicativo de dados simples usando o ADO.NET](https://docs.microsoft.com/visualstudio/data-tools/create-a-simple-data-application-by-using-adonet).  
-  
   
 Quando você cria um aplicativo que manipule dados em um banco de dados, executar tarefas básicas, tais definindo cadeias de conexão, inserção de dados e executar procedimentos armazenados. Ao seguir este tópico, você pode descobrir como interagir com um banco de dados de dentro de um aplicativo simples de "formulários sobre dados" do Windows Forms usando o Visual c# ou Visual Basic e ADO.NET.  Todas as tecnologias de dados do .NET — inclusive conjuntos de dados, o LINQ to SQL e Entity Framework —, por fim, execute as etapas que são muito semelhantes às mostradas neste artigo.  
   

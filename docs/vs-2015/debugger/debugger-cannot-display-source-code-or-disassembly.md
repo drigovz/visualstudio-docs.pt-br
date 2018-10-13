@@ -1,7 +1,7 @@
 ---
 title: Depurador não pode exibir código-fonte ou desmontagem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd21a38123894e7254bf4af6629528f8af4bf52d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2236a585c063194940cf505a0b1d225ae766e2a9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467843"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197880"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>O depurador não pode exibir o código-fonte ou a desmontagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depurador não é possível exibir código-fonte código ou a desmontagem](https://docs.microsoft.com/visualstudio/debugger/debugger-cannot-display-source-code-or-disassembly).  
-  
 Este erro é:  
   
  O depurador não pode exibir o código-fonte ou a desmontagem do local atual no qual a execução foi interrompida.  

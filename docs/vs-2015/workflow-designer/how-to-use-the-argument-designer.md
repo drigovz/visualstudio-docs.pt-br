@@ -1,7 +1,7 @@
 ---
 title: 'Como: usar o Designer de argumento | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: eaff53dc04c0ad2367147ae91c7de756e5ca4366
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 81b24b8c0344cc6a8cf1559126a4faf0bc2b6f4e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464717"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206616"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Como: Use o designer do argumento
 Em comparação com versões anteriores de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], o designer do argumento facilita permitir que os dados e fluam fora de uma atividade. O designer é acessado clicando o **argumentos** botão no canto inferior esquerdo da tela de design. O designer contém uma lista de argumentos que aparecem em um formulário tabular e podem ser classificados por cada um dos cabeçalhos de coluna, exceto para o **valor padrão** coluna. Cada argumento contiver um nome, a direção de in/out/in-out/property, o tipo, e o valor padrão de expressão (se houver). O nome e o valor padrão de expressão são campos editáveis de texto, e o tipo e direção são gota- suspensa. [!INCLUDE[crabout](../includes/crabout-md.md)] argumentos, consulte [variáveis e argumentos](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8).  

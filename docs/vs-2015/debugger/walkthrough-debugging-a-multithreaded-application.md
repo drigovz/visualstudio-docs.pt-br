@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Depurando um aplicativo multithread | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a13fa717cc7f3952e44fe0dffecf735e7b53345a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468327"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186193"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Instruções passo a passo: depurando um aplicativo multithread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depurando um aplicativo multithread usando a janela Threads](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-threads-window).  
-  
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] Fornece um melhor **Threads** janela e outro usuário aperfeiçoamentos de interface para tornar mais fácil de depurar aplicativos multi-threaded. Este passo a passo só levará alguns minutos e o ajudará a se familiarizar com os recursos da nova interface para depurar aplicativos de vários threads.  
   
  Para iniciar este passo a passo, você precisará de um projeto de aplicativo de vários threads. Siga as etapas listadas aqui para criar o projeto.  

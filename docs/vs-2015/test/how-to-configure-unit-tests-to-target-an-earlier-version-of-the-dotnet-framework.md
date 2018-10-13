@@ -1,7 +1,7 @@
 ---
 title: Como configurar testes de unidade para direcionar a uma versão anterior do .NET Framework | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 051c6e9284ecfaa84957aa21b5966fd503a5f0a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e0e608f58f19acf0d2ae01b288943f71f9983c6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462720"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173102"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Como configurar testes de unidade para direcionar uma versão anterior do .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: configurar testes de unidade para uma versão anterior destino do .NET Framework](https://docs.microsoft.com/visualstudio/test/how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework).  
-  
 Quando você cria um projeto de teste no Microsoft Visual Studio, a versão mais recente do .NET Framework é definida como destino, por padrão. Além disso, se você atualizar projetos de teste de versões anteriores do Visual Studio, eles são atualizados para destinar-se à versão mais recente do .NET Framework. Ao editar as propriedades do projeto, é possível redirecionar explicitamente o projeto para versões anteriores do .NET Framework.  
   
  Você pode criar projetos de teste de unidade que se destinam a versões específicas do .NET Framework. A versão de destino deve ser 3.5 ou posterior e não pode ser uma versão de cliente. O Visual Studio permite o seguinte suporte básico para testes de unidade que se direcionam a versões específicas:  

@@ -1,7 +1,7 @@
 ---
 title: Arquivo morto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: eb92f40d-c0f0-42a9-8388-97ba0476efdf
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e54133d110eeb042aebd15c3317c241d7d5d8646
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f990854b23bae9d193173fceb37b0e3f2a13a9b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474435"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191029"
 ---
 # <a name="archive"></a>Arquivo morto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [arquivamento](https://docs.microsoft.com/visualstudio/extensibility/archive).  
-  
 Esta seção contém discussões de tecnologias de extensibilidade do Visual Studio que ainda têm suporte, mas que têm tecnologias de substituição que são mais recentes.  
   
 ## <a name="legacy-interfaces-in-the-editor"></a>Interfaces herdadas no Editor  

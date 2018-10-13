@@ -1,7 +1,7 @@
 ---
 title: SDK de acesso à Interface de depuração | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 319c509ac293b4f55ab574a5f29cdbd23709ebaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7784cdbc265d487dd35f11a8bf50d38594e0cea6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460353"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177032"
 ---
 # <a name="debug-interface-access-sdk"></a>SDK de Acesso à Interface de Depuração
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [SDK de acesso da Interface de depuração](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/debug-interface-access-sdk).  
-  
 A Microsoft depurar Interface acesso Software Development Kit (DIA SDK) fornece acesso a informações de depuração armazenadas em arquivos de banco de dados (. PDB) do programa gerados por ferramentas de pós-compilador da Microsoft. Porque o formato do arquivo. PDB gerado pelas ferramentas de pós-compilador da passar por uma revisão de constante, expondo o formato é impraticável. Usando a API do DIA, você pode desenvolver aplicativos que pesquisarem e procurar informações de depuração armazenadas em um arquivo. PDB. Esses aplicativos poderia, por exemplo, relatar informações de pilha de retorno de rastreamento e analisar dados de desempenho.  
   
 ## <a name="in-this-section"></a>Nesta seção  

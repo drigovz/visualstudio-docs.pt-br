@@ -1,7 +1,7 @@
 ---
 title: Criando perfil em clusters HPC (computação de alto desempenho) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c67732552239f995b5edd6a328ae1de4fa379e3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bea3ca5adf462ec6c403099c8276bbdb87e4b57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466436"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178939"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Criando perfil em clusters HPC (computação de alto desempenho)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criação de perfil em Clusters HPC (computação de alto desempenho)](https://docs.microsoft.com/visualstudio/profiling/profiling-on-hpc-high-performance-computing-clusters).  
-  
 Você pode criar um perfil em nós de computação de clusters do Microsoft Windows HPC usando o método de amostragem de Ferramentas de Criação de Perfil do [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] ou [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Para obter mais informações sobre HPC, consulte [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) no site da Microsoft.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  

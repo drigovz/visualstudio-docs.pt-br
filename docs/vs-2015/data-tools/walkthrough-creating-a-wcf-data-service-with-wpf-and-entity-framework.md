@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Criando um serviço de dados do WCF com WPF e Entity Framework | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 43acbe17b826947dacd2d8c60b4cb28e5550ed40
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6aeb16bb805bc6dda1328b424acbe48b6371437e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467687"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197945"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Passo a passo: Criando um serviço de dados do WCF com WPF e Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Criando um serviço de dados do WCF com WPF e Entity Framework](https://docs.microsoft.com/visualstudio/data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework).  
-  
   
 Este passo a passo demonstra como criar um simples [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] que é hospedado em um [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplicativo Web e, em seguida, acessá-lo de um aplicativo Windows Forms.  
   

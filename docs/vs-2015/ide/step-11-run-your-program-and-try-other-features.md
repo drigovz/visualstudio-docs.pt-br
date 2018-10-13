@@ -1,7 +1,7 @@
 ---
 title: 'Etapa 11: executar o programa e experimentar outros recursos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 38d83c46ecf910a4df5050c6e73de58a1a0963b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a80a962017cc54e6ce7aae6201079f976dee9ab1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467821"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172270"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Etapa 11: executar o programa e experimentar outros recursos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [etapa 11: executar o programa e experimentar outros recursos](https://docs.microsoft.com/visualstudio/ide/step-11-run-your-program-and-try-other-features).  
-  
 O programa é concluído e pronto para ser executado. Você pode executar o programa e definir a cor do plano de fundo de PictureBox. Para saber mais, tente melhorar o programa alterando a cor do formulário, personalizando os botões e a caixa de seleção, e modificando as propriedades do formulário.  
   
  Para baixar uma versão concluída do exemplo, consulte [Exemplo de tutorial completo do Visualizador de Imagens](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  

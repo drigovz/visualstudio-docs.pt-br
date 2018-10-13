@@ -1,7 +1,7 @@
 ---
 title: Salvar dados de um objeto em um banco de dados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b122285b653b75691a78367d12344c4720792f97
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: acbbf9f309573f110da3b7dd0a53ede36150a319
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463992"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207448"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Salvar dados de um objeto em um banco de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [salvar dados de um objeto em um banco de dados](https://docs.microsoft.com/visualstudio/data-tools/save-data-from-an-object-to-a-database).  
-  
   
 Você pode salvar dados em objetos de um banco de dados, passando os valores de seu objeto para um dos métodos DBDirect do TableAdapter (por exemplo, `TableAdapter.Insert`). Para obter mais informações, consulte [visão geral de TableAdapter](../data-tools/tableadapter-overview.md).  
   

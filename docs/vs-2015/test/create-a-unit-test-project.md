@@ -1,7 +1,7 @@
 ---
 title: Criar um projeto de teste de unidade | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eb9c64fca2bcd4086073fc349d2c81fa2a62be31
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c592b634b6005033b5b43dcdccf2fdef83025a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475163"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179043"
 ---
 # <a name="create-a-unit-test-project"></a>Crie um projeto de teste de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar um projeto de teste de unidade](https://docs.microsoft.com/visualstudio/test/create-a-unit-test-project).  
-  
 Geralmente, os testes de unidade refletem a estrutura do código que está sendo testado. Por exemplo, um projeto de teste de unidade será criado para cada projeto de código do produto. O projeto de teste pode estar na mesma solução que o código de produção ou em uma solução separada. É possível ter vários projetos de teste de unidade em uma solução.  
   
 > [!NOTE]

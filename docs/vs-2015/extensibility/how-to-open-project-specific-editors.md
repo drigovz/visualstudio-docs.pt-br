@@ -1,7 +1,7 @@
 ---
 title: 'Como: abrir editores específicos do projeto | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a529237b8aa77fbb909278d5a7accd2e9a45265
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 255d95d92aae3f73e4c5f77a6f7a5a4219d73d19
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475694"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198140"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Como: abrir editores específicos do projeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: os editores abertos específicos do projeto](https://docs.microsoft.com/visualstudio/extensibility/how-to-open-project-specific-editors).  
-  
 Se um arquivo de item que está sendo aberto por um projeto é intrinsecamente associado ao editor específico para o projeto, o projeto deve abrir o arquivo usando um editor específico do projeto. O arquivo não pode ser delegado para baixo para o mecanismo do IDE para a seleção de um editor. Por exemplo, em vez de usar um editor de bitmap padrão, você pode usar essa opção do editor específicas a um projeto para especificar um editor de bitmap específico que reconhece as informações no arquivo que é exclusivo ao seu projeto.  
   
  As chamadas IDE a <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> método quando ele determina se um arquivo deve ser aberto por um projeto específico. Para obter mais informações, consulte [exibindo arquivos usando o comando Abrir do arquivo](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Use as seguintes diretrizes para implementar o `OpenItem` método para que seu projeto a abrir um arquivo usando um editor específico do projeto.  

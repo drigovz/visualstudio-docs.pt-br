@@ -1,7 +1,7 @@
 ---
 title: Visualizador da biblioteca de imagem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1af471eeada5f6da04f4fdf6b4ee69cc0741110b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 884f97acb6ff0e54c641c3a5df9c5edba9868e50
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476172"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184100"
 ---
 # <a name="image-library-viewer"></a>Visualizador da biblioteca de imagens
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Visualizador da biblioteca de imagens](https://docs.microsoft.com/visualstudio/extensibility/internals/image-library-viewer).  
-  
 A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carregar e pesquisar os manifestos de imagem, permitindo que o usuário para manipulá-los da mesma maneira que faria do Visual Studio. O usuário pode alterar o plano de fundo, tamanhos, DPI, alto contraste e outras configurações. A ferramenta também exibe informações de carregamento para cada manifesto de imagem e exibe informações de origem para cada imagem no manifesto de imagem. Essa ferramenta é útil para:  
   
 1.  Diagnosticando erros  

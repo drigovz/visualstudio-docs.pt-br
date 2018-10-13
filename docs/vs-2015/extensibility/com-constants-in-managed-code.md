@@ -1,7 +1,7 @@
 ---
 title: Constantes de COM em código gerenciado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b2be5a360dd661438ac68c02e3294e025494af4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 403ec1a62f2d0a161ac08b78ddd4cbd4ff7da827
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475727"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206707"
 ---
 # <a name="com-constants-in-managed-code"></a>Constantes COM no código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [constantes de COM em código gerenciado](https://docs.microsoft.com/visualstudio/extensibility/com-constants-in-managed-code).  
-  
 O Framework de pacote gerenciado (MPF) faz com que algumas constantes COM padrão disponível para código gerenciado. Essas constantes são listadas abaixo para referência.  
   
 ## <a name="boolean-hresult-values"></a>Valores HRESULT booliano  

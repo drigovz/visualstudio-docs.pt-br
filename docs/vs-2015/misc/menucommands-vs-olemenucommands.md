@@ -1,7 +1,7 @@
 ---
 title: MenuCommands Vs. OleMenuCommands | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: douge
-ms.openlocfilehash: b60f56c0622750751848e0d6492c4235c9458e9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c555b306c38d852f8fbd02c6f2b9347f4a359559
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462358"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193577"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
 Você pode criar comandos de menu, derivando de <xref:System.ComponentModel.Design.MenuCommand> ou de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objeto e impementling os manipuladores de eventos apropriado. Na maioria dos casos, você pode usar <xref:System.ComponentModel.Design.MenuCommand>, como o modelo de projeto de VSPackage faz, mas, ocasionalmente, talvez você precise usar <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  

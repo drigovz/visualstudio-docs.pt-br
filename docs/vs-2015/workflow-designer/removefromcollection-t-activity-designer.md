@@ -1,7 +1,7 @@
 ---
 title: RemoveFromCollection&lt;T&gt; Designer de atividade | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9cb791c64909cf8c494b5c5b3dc481f106dc8cf1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 341ed640666cc4501ac8917b568bf3f41b89b823
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467862"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170919"
 ---
 # <a name="removefromcollectionlttgt-activity-designer"></a>RemoveFromCollection&lt;T&gt; Designer de atividade
 O **RemoveFromCollection\<T >** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.RemoveFromCollection%601> atividade.  

@@ -1,7 +1,7 @@
 ---
 title: Caixa de Diálogo Opções (Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa6d78348eab0ddb0e304910d658932e4fa89aee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 801f6175b30c521552eb22163abbe451e8aa124c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472914"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174654"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Caixa de diálogo Opções (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [caixa de diálogo de opções (Visual Studio)](https://docs.microsoft.com/visualstudio/ide/reference/options-dialog-box-visual-studio).  
-  
   
 A caixa de diálogo **Opções** permite que você configure o IDE (ambiente de desenvolvimento integrado) para as suas necessidades. Por exemplo, estabelecer um local de salvamento padrão para seus projetos, alterar a aparência e o comportamento padrão das janelas e criar atalhos para os comandos mais usados. Também há opções específicas para a sua plataforma e linguagem de desenvolvimento. Você pode acessar **Opções** do menu **Ferramentas**.  
   
