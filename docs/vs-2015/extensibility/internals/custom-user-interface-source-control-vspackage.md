@@ -1,7 +1,7 @@
 ---
 title: Interface do usuário personalizada (VSPackage de controle do código-fonte) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e544408f4cea3e9ec4e388ab76f4224abd7aa69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 551154d1990eee1d7164f3dcbf5ba9cbf4984c11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462433"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303928"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interface do usuário personalizada (VSPackage de controle do código-fonte)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Interface do usuário personalizada (VSPackage de controle do código-fonte)](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-user-interface-source-control-vspackage).  
-  
 Um VSPackage declara seus itens de menu e seus estados padrão por meio do arquivo de tabela de comando do Visual Studio (. VSCT). O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE) exibe os itens de menu em seus estados padrão até que o VSPackage seja carregado. Subsequentemente, o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método é chamado para habilitar ou desabilitar itens de menu.  
   
  Um VSPackage pode definir uma chave do registro para que o VSPackage possa ser carregado automaticamente, dependendo do contexto de (UI) de interface de usuário um comando, embora geralmente controlam a uma fonte de VSPackage deve ser carregado sob demanda em vez de simplesmente alternar para um determinado contexto de interface do usuário. Para obter mais informações sobre a chave do registro AutoLoadPackages, consulte [gerenciar VSPackages](../../extensibility/managing-vspackages.md).  

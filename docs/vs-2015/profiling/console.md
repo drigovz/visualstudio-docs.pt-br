@@ -1,7 +1,7 @@
 ---
 title: Console | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1117bf7113743bfd8db63353a5b032c869a97c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed90d282841cf8c066f1b8496e1778939ef9ad6c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461480"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305302"
 ---
 # <a name="console"></a>Console
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Console](https://docs.microsoft.com/visualstudio/profiling/console).  
-  
 A opção **Console** VSPerfCmd.exe inicia o aplicativo especificado em uma nova janela de prompt de comando. O **Console** só pode ser usado com a opção **Iniciar** VSPerfCmd. Se o aplicativo não é um aplicativo de linha de comando, o **Console** não tem nenhum efeito.  
   
 ## <a name="syntax"></a>Sintaxe  

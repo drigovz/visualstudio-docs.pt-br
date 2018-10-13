@@ -1,7 +1,7 @@
 ---
 title: Como iniciar um aplicativo do .NET Framework autônomo com o criador de perfil para coletar dados de simultaneidade usando a linha de comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b79933d9d59d21b5f41926dd4b8ef5afa64950ba
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: d200425ea8b948c4353574c1d6d6d4ee8c48b1ba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47587391"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304376"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Como iniciar um aplicativo do .NET Framework autônomo com o criador de perfil para coletar dados de simultaneidade usando a linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: iniciar um aplicativo stand-alone .NET Framework com o Profiler para coletar dados de simultaneidade usando a linha de comando](https://docs.microsoft.com/visualstudio/profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line).  
-  
 Este tópico descreve como usar ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para iniciar um aplicativo autônomo (cliente) do .NET Framework e coletar dados de simultaneidade de thread e processo  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Exibição de Funções – Dados de Amostragem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3813c306c2240e7b9db0e8e3d5cbf5929cf0cf91
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d478c00ef95644cd484c418dec92318dd1f5611
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461006"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304155"
 ---
 # <a name="functions-view---sampling-data"></a>Exibição de Funções – Dados de Amostragem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de funções – dados de amostragem](https://docs.microsoft.com/visualstudio/profiling/functions-view-sampling-data).  
-  
 O modo de exibição de relatório de Funções do método de perfil de amostragem lista as funções que foram amostradas durante a criação de perfil.  
   
 > [!NOTE]

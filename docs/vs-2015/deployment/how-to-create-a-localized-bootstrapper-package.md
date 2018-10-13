@@ -1,7 +1,7 @@
 ---
 title: 'Como: criar um pacote de Bootstrapper localizado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: cf92009cc7eadde4594bc8edb70f553b09b48010
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1408189539cf5d2be9cc9c0eb0f758a211efcfca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465676"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304753"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Como criar um pacote de bootstrapper localizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: criar um pacote de Bootstrapper localizado](https://docs.microsoft.com/visualstudio/deployment/how-to-create-a-localized-bootstrapper-package).  
-  
 Depois de criar um pacote de bootstrapper, você pode criar versões localizadas desse pacote criando mais dois arquivos para cada localidade: um arquivo de termos de licença de software (como um eula.rtf) e um manifesto do pacote (package.xml).  
   
  Por padrão, o Visual Studio 2010 inclui pacotes de bootstrapper localizados apenas para os .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 e F# Runtime 4.0. Você pode criar pacotes localizados para outros bootstrappers concluindo três etapas.  

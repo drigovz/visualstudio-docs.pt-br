@@ -1,7 +1,7 @@
 ---
 title: Implantando soluções de linguagem específica do domínio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d5367b69f98ccb174e133d7fc4e10ce811b44ee7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: de4581ab41e54eeb400293a47ec79e9a782e2dd6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475563"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303924"
 ---
 # <a name="deploying-domain-specific-language-solutions"></a>Implantando soluções de linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [implantar soluções de linguagem específica do domínio](https://docs.microsoft.com/visualstudio/modeling/deploying-domain-specific-language-solutions).  
-  
 Você pode instalar uma linguagem específica de domínio em seu próprio computador ou em outros computadores. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] já deve estar instalado no computador de destino.  
   
 -   [Implantação de uma DSL por MSI e VSIX](../modeling/msi-and-vsix-deployment-of-a-dsl.md)  
