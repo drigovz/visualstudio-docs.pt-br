@@ -1,7 +1,7 @@
 ---
 title: Depurador (XSLT) de Interface do usuário | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ac2a1afdd9ccd36843ecce6c2536e2b477cdf5a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0117053e47ee9238ee225b9265865b34c6f2140
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474274"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300177"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface de usuário do depurador (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Este tópico descreve as janelas e caixas de diálogo do depurador. Discute some
  **Nome**  
  Esta coluna contém os nomes de todos as variáveis locais no escopo atual. Conjuntos de nó têm um controle de árvore que você possa fazer pesquisa detalhadas para consultar suas subpastas.  
   
- **Value**  
+ **Valor**  
  Esta coluna mostra o valor contido por cada variável. O atributo, a instrução de processamento, o comentário, texto, e os nós CDATA exibem o valor de texto do nó. Os nós de namespace exibem URI de namespace.  
   
  **Tipo**  

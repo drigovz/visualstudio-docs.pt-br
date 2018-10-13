@@ -1,7 +1,7 @@
 ---
 title: 'Como: criar um. Arquivo VSCT de um existente. Arquivos CTC | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: douge
-ms.openlocfilehash: 0d267e6046539001cbe454ab69867c02f0a606ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e159fea34dc395ce2d7bded813f2d8feaa453006
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472680"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303479"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Como: criar um. Arquivo VSCT de um existente. Arquivos CTC
 Você pode criar um arquivo. VSCT de baseado em XML de um arquivo de código-fonte do comando tabela. ctc existente. Ao fazer isso, você pode tirar proveito do novo com base em XML [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] formato de compilador de tabela (VSCT) do comando.  

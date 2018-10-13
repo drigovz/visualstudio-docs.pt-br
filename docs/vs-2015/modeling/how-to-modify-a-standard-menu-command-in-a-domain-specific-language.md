@@ -1,7 +1,7 @@
 ---
 title: 'Como: modificar um comando de Menu padrão em uma linguagem específica do domínio | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 740e26434190857907af61170222922180abc9b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d1f16efc07f45fc3b2b80a58b50e4f28b1d57de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464472"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302140"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Como modificar um comando de menu padrão em uma linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: modificar um comando de Menu padrão em uma linguagem específica de domínio](https://docs.microsoft.com/visualstudio/modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language).  
-  
 É possível modificar o comportamento de alguns dos comandos padrão que são definidos automaticamente na DSL. Por exemplo, você poderia modificar **Recortar** , de modo que ela exclui as informações confidenciais. Para isso, substitua métodos em uma classe de conjunto de comandos. Essas classes são definidas no arquivo CommandSet.cs, no projeto DslPackage e são derivadas de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
   
  Em resumo, para modificar um comando:  

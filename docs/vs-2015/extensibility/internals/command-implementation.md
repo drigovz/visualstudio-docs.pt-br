@@ -1,7 +1,7 @@
 ---
 title: Implementação de comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40f53683f33e712a75368ea99aad401345dd76c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 46c2a944227218db2294258081fbd1af2d5f084b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474317"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305364"
 ---
 # <a name="command-implementation"></a>Implementação de comando
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [implementação do comando](https://docs.microsoft.com/visualstudio/extensibility/internals/command-implementation).  
-  
 Para implementar um comando em um VSPackage, você deve executar as seguintes tarefas:  
   
 1.  No arquivo. VSCT, configure um grupo de comandos e, em seguida, adicione o comando a ele. Para obter mais informações, consulte [tabela de comando do Visual Studio (. Arquivos VSCT)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)'  

@@ -1,7 +1,7 @@
 ---
 title: Designers de atividade de fluxo de controle | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 58ddd15d37e36494fef9488638727c7bc2142aa3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e852bfa5b392c6ffa758678fa83dabd8a8c97f54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474204"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303609"
 ---
 # <a name="control-flow-activity-designers"></a>Designer de atividade de fluxo de controle
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] inclui um número o sistema forneceu as atividades que você pode usar para construir os fluxos de trabalho. Esta seção contém sistema forneceu as atividades usadas para controlar o fluxo em um fluxo de trabalho. Os tópicos a seguir descrevem essas atividades e fornecem orientação sobre como usá-los.  

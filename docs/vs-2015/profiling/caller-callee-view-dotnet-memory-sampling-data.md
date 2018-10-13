@@ -1,7 +1,7 @@
 ---
 title: Exibição de chamador/computador chamado – Dados de amostragem de memória do .NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04ba2a522c6accb9dcb5e316ea8c63beb260e739
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85aaa285a190ae1167a86b32583d4349f3a78d56
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464879"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243042"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Exibição Chamador/Receptor da Chamada – dados de amostragem da memória do .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de chamador / computador chamado – dados de amostragem de memória do .NET](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-dotnet-memory-sampling-data).  
-  
 A exibição de Chamador/Computador Chamado exibe dados de criação de perfil de memória do .NET para uma função selecionada e suas funções pai e filho. A exibição de Chamador/Computador Chamado contém três grades.  
   
  A **Função atual** é exibida na grade do meio exibe informações de criação de perfil de memória sobre a função selecionada. Os valores incluem todas as chamadas amostradas para a função.  

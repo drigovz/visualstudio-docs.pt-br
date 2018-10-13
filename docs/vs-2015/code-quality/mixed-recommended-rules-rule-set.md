@@ -1,7 +1,7 @@
 ---
 title: Conjunto de regras misto de regras recomendadas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ccf58c04c266741350e834cedbfdeebf237c9f71
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf0fa74c80a570271e6fb5e92dbb2d3fc46f1551
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461500"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299397"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Conjunto de regras recomendadas misto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [conjunto de regras misto de regras recomendadas](https://docs.microsoft.com/visualstudio/code-quality/mixed-recommended-rules-rule-set).  
-  
 A regras recomendadas misto do Microsoft enfocam os problemas mais críticos e comuns em seus projetos do C++ que dão suporte a Common Language Runtime, inclusive falhas potenciais de segurança, falhas do aplicativo e outros erros importantes de lógica e design. Você deve incluir essa regra definida em qualquer conjunto personalizado que você criar para seus projetos em C++ que dão suporte a Common Language Runtime. Esse conjunto de regras foi projetado para ser configurado com a edição do Visual Studio Professional e superior.  
   
 |Regra|Descrição|  

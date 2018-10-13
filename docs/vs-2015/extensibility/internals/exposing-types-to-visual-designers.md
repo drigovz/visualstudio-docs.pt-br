@@ -1,7 +1,7 @@
 ---
 title: Expor tipos aos Designers visuais | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e09161d7ea2e27fbc1f4c7bd68cc7da952d3f1d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 401ba1744ad03260140ca29d706f24d699863246
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464361"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242002"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Expondo tipos para designers visuais
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [expor tipos aos Designers visuais](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-types-to-visual-designers).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] deve ter acesso a definições de classe e tipo em tempo de design para exibir um designer visual. As classes são carregadas de um conjunto predefinido de assemblies que incluem o conjunto completo de dependência do projeto atual (referências além de suas dependências). Ele também pode ser necessário para designers visuais classes de acesso e tipos que são definidos nos arquivos gerados por ferramentas personalizadas.  
   
  O [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] e [!INCLUDE[csprcs](../../includes/csprcs-md.md)] sistemas de projeto fornecem suporte para acessar tipos e classes geradas por meio de portáteis temporários arquivos executáveis (PEs temporária). Qualquer arquivo gerado por uma ferramenta personalizada pode ser compilado em um assembly temporário para que os tipos podem ser carregados a partir desses assemblies e expostos aos designers. A saída de cada ferramenta personalizada é compilada em um PE temporário separado, e o sucesso ou fracasso desta compilação temporário depende somente ou não o arquivo gerado pode ser compilado. Mesmo que um projeto pode não ser compilado como um todo, individuais PEs temporário ainda podem estar disponíveis para designers.  

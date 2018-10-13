@@ -1,7 +1,7 @@
 ---
 title: Estendendo a barra de Status | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc9a691b3ee8955f7fad33c84d7d0d40652e6a8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8ea7854bb90564f68a7f178ceda7b561b123dce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467682"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244732"
 ---
 # <a name="extending-the-status-bar"></a>Estendendo a barra de status
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [estendendo a barra de Status](https://docs.microsoft.com/visualstudio/extensibility/extending-the-status-bar).  
-  
 Você pode usar a barra de status do Visual Studio na parte inferior do IDE para exibir informações.  
   
  Quando você estende a barra de status, você pode exibir informações e a interface do usuário em quatro regiões: a região de comentários, a barra de progresso, a região de animação e a região de designer. A região de comentários permite exibir texto e realce o texto exibido. A barra de progresso mostra o progresso incremental para operações de curta execução como salvar um arquivo. A região de animação exibe uma animação em loop continuamente para operações de longa execução ou operação de tamanho indeterminado, tais como a criação de vários projetos em uma solução. E a região de designer mostra o número de linha e coluna do local do cursor.  

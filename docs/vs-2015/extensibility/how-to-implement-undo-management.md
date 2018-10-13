@@ -1,7 +1,7 @@
 ---
 title: 'Como: implementar o gerenciamento de desfazer | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 47b71b7e2760af18605d3ded52b68cfc38742e65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72355b396dc88fc02c1ccdfb4f3a2ed4afe66467
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460740"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246279"
 ---
 # <a name="how-to-implement-undo-management"></a>Como: implementar o gerenciamento de desfazer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: implementar o gerenciamento de desfazer](https://docs.microsoft.com/visualstudio/extensibility/how-to-implement-undo-management).  
-  
 A principal interface usada para o gerenciamento de desfazer é <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, que é implementado pelo ambiente. Para dar suporte ao gerenciamento de desfazer, implemente a unidades de desfazer separado (ou seja, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, que pode conter várias etapas individuais.  
   
  Como implementar o gerenciamento de desfazer varia dependendo se o editor oferece suporte a vários modos de exibição ou não. Os procedimentos para cada implementação são detalhados nas seções a seguir.  

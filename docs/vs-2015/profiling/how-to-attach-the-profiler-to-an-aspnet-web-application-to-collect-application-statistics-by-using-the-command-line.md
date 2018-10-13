@@ -1,7 +1,7 @@
 ---
 title: Como anexar o Criador de perfil a um aplicativo Web ASP .NET para coletar estatísticas de aplicativo usando a linha de comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a54ba9e03443b2bf1d17c2b92292129ec657dca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a61872f9f2aa207920bca6e52b44f64944613076
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464485"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303687"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo Web ASP.NET para coletar estatísticas de aplicativo usando a linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: anexar o Profiler para um aplicativo de Web do ASP.NET para coletar estatísticas do aplicativo usando a linha de comando](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line).  
-  
 Este tópico descreve como usar as Ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para anexar o criador de perfil a um aplicativo Web ASP .NET e coletar estatísticas de desempenho usando o método de amostragem.  
   
 > [!NOTE]

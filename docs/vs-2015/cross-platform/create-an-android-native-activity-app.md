@@ -1,7 +1,7 @@
 ---
 title: Criar um aplicativo de Atividade Nativa do Android | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: d3317251b124c42f67edfcfae922bd2744dbe375
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10ea620f357c40e3e549d58f1d9df4fd0809cac9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461887"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173999"
 ---
 # <a name="create-an-android-native-activity-app"></a>Criar um aplicativo de Atividade Nativa do Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar um aplicativo de atividade nativa Android](https://docs.microsoft.com/visualstudio/cross-platform/create-an-android-native-activity-app).  
-  
   
 Ao instalar o Visual C++ para a opção de Desenvolvimento Móvel Multiplataforma, o Visual Studio 2015 pode ser usado para criar aplicativos de Atividade Nativa do Android totalmente funcionais. O NDK (Kit de Desenvolvimento Nativo) do Android é um conjunto de ferramentas que permite implementar a maior parte de seu aplicativo Android usando um código C/C++ puro. Algum código JNI do Java atua como uma cola para permitir que o código C/C++ interaja com o Android. O NDK do Android introduziu a capacidade de criar aplicativos de Atividade Nativa com a API do Android Nível 9. O código de Atividade Nativa é popular para a criação de aplicativos de jogos e de uso intensivo de elementos gráficos que usam o Unreal Engine ou o OpenGL. Este tópico descreverá a criação de um aplicativo de Atividade Nativa simples que usa o OpenGL. Os tópicos adicionais descrevem o ciclo de vida do desenvolvedor referente à edição, build, depuração e implantação do código de Atividade Nativa.  
   

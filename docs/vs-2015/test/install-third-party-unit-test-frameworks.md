@@ -1,7 +1,7 @@
 ---
 title: Instalar estruturas de teste de unidade de terceiros | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8a0f17f4c49c88b341c6ccc7583f7069c8b5142a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4e10d7545973e1c202f29c17e9e3ba06f024501
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475647"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301113"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalar estruturas de teste de unidade de terceiros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instalar estruturas de teste de unidade de terceiros](https://docs.microsoft.com/visualstudio/test/install-third-party-unit-test-frameworks).  
-  
 O Gerenciador de Testes do Visual Studio pode executar qualquer estrutura de teste de unidade que desenvolveu uma interface de adaptador para o Gerenciador. O programa de instalação da estrutura instala os binários e adiciona modelos de projeto do Visual Studio para os idiomas que ele dá suporte. Quando você cria um projeto com o modelo, a estrutura é registrada com o Gerenciador de Testes. Uma solução do Visual Studio pode conter projetos de teste de unidade que usam diferentes estruturas e que são direcionados em diferentes idiomas. O Gerenciador de Testes executa todos eles.  
   
  **Requisitos**  

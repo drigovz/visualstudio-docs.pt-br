@@ -1,7 +1,7 @@
 ---
 title: Adição dinâmica de itens de Menu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: edd3a97eea69843bcd09a9483a7cea196d3a4c5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb0cd49d8ce9f1851bd54bb3362932de775eb2c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463517"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300190"
 ---
 # <a name="dynamically-adding-menu-items"></a>Adicionando itens de menu dinamicamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionando itens de Menu dinamicamente](https://docs.microsoft.com/visualstudio/extensibility/dynamically-adding-menu-items).  
-  
 Você pode adicionar itens de menu no tempo de execução, especificando o `DynamicItemStart` comando sinalizador em uma definição de botão do espaço reservado no arquivo de comando-table (. VSCT) do Visual Studio, em seguida, definir (no código), o número do menu de itens a exibir e manipular o comando (s). Quando o VSPackage é carregado, o espaço reservado é substituído com os itens de menu dinâmico.  
   
  O Visual Studio usa as listas dinâmicas a **usados recentemente** lista (MRU), que exibe os nomes dos documentos que foram abertos recentemente, e o **Windows** lista, que exibe os nomes do windows que estão abertos no momento.   O `DynamicItemStart` sinalizador em uma definição de comando Especifica que o comando é um espaço reservado até o VSPackage é aberto. Quando o VSPackage é aberto, o espaço reservado é substituído por 0 ou mais comandos que são criados em tempo de execução e adicionados à lista dinâmica. Você não poderá ver a posição no menu de onde a lista dinâmica aparece até que o VSPackage é aberto.  Para popular a lista dinâmica, o Visual Studio solicita o VSPackage para procurar um comando com uma ID cujos primeiros caracteres são o mesmo que a ID do espaço reservado. Quando o Visual Studio encontra um comando, ele adiciona o nome do comando para a lista dinâmica. Em seguida, ele incrementa a identificação e procura por outro comando correspondente para adicionar à lista dinâmica até que não existam comandos sem mais dinâmicos.  

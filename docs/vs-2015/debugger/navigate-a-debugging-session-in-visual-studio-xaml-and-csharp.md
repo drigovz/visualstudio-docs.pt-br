@@ -1,7 +1,7 @@
 ---
 title: Navegar por uma sessão de depuração no Visual Studio (Xaml e c#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c9aed98b7f2649aa5c62e930e1833b80d58b7ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467868"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306300"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Navegar por uma sessão de depuração no Visual Studio (XAML e C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [navegue de uma sessão de depuração no Visual Studio (Xaml e c#)](https://docs.microsoft.com/visualstudio/debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp).  
-  
 Este início rápido demonstra como navegar de sessões de depuração do Visual Studio e como exibir e alterar o estado do programa em uma sessão.  
   
  Este guia de início rápido é para desenvolvedores que são novos na depuração com o Visual Studio e a sessão de depuração para desenvolvedores que desejam saber mais sobre como navegar em um Visual Studio. Ele não ensina a arte de depurar a si próprio. Os métodos no código de exemplo destinam-se somente para demonstrar os procedimentos de depuração descritos neste tópico. Os métodos não utilizam as práticas recomendadas de design de aplicativo ou função. Na verdade, você rapidamente descobrirá que os métodos e o aplicativo em si, não fazem muita coisa alguma.  

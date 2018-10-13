@@ -1,7 +1,7 @@
 ---
 title: O que&#39;versão 1.2 da API plug-in de controle de novo na fonte de | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 7c5fa471-456e-4f95-8309-5750ec4e5e85
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 439e91730ffa0c8ab3d73454198c09803df59f3d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9df28160f321cdd585cd9adba8d80c43cfcb18d6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466099"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300151"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>O que&#39;s novos na fonte de controlar a versão 1.2 plug-in da API
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [o que&#39;Novidades de fonte de controle de plug-in API versão 1.2](https://docs.microsoft.com/visualstudio/extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2).  
-  
 Esta seção destaca a funcionalidade de controle do código fonte avançados na API de plug-in de controle do código-fonte versão 1.2. O exemplo a seguir lista os novos recursos na versão 1.2:  
   
 ## <a name="changes"></a>Alterações  

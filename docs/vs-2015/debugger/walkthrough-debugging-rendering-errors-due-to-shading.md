@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Depurando erros devido ao sombreamento de renderização | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bd3416e9a3902a77489b4d3a5547e3614376c59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73553e73dc2010afb03deba9a1421e76f962308
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473285"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210165"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Instruções passo a passo: depurando erros de renderização devido ao sombreamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: depuração de renderização erros devido ao sombreamento](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-debugging-rendering-errors-due-to-shading).  
-  
 Este passo a passo demonstra como usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnóstico de gráficos para investigar um objeto que é colorido incorretamente devido a um bug de sombreador.  
   
  Este passo a passo demonstra como:  

@@ -1,7 +1,7 @@
 ---
 title: Caixa de diálogo Editor de coleção de tipo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 34b8129b5a0b1fe27a7e4e6c178ddace638e5ffc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c33049c264041495041798ab98c4223ebe0ed6f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463441"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298554"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Digite a caixa de diálogo Editor de Coleção
 O **Editor de coleção do tipo** caixa de diálogo é usada para adicionar tipos conhecidos para o **enviar** e **Receive** atividades. Essa caixa de diálogo também é usada para adicionar argumentos de tipo genérico para o **InvokeMethod** atividade. Quando usado para o **envie** e **Receive** atividades para adicionar tipos conhecidos, o **Editor de coleção do tipo** caixa de diálogo requer as adições do tipo ser exclusivos. Se um tipo duplicado é adicionado e a alteração é confirmada clicando **Okey**, uma mensagem de erro é retornada. Quando usado para o **InvokeMethod** atividade para adicionar argumentos de tipo genérico, o **Editor de coleção do tipo** caixa de diálogo permite a adição de tipos duplicados.  

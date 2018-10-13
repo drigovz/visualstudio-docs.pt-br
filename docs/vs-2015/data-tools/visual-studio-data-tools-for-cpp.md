@@ -1,7 +1,7 @@
 ---
 title: Ferramentas de dados do Visual Studio para C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,18 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: cecad69f6df283ed005afd00a6b9bedbd51c6cd5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a059cb5c0f295bc7f14ff8a0ce30ed21e4e70145
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473961"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306183"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Ferramentas de dados do Visual Studio para C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ferramentas de dados do Visual Studio para C++](https://docs.microsoft.com/visualstudio/data-tools/visual-studio-data-tools-for-cpp).  
-  
   
 C++ nativo geralmente fornecem o melhor desempenho quando você está acessando fontes de dados. No entanto, os dados de ferramentas para aplicativos do C++ no Visual Studio não são tão rico quanto vale para aplicativos .NET. Por exemplo, as janelas de fontes de dados não podem ser usadas para arrastar e soltar fontes de dados em uma superfície de design de C++. Se você precisar de uma camada relacional de objeto, você precisará escrever sua própria ou usar um produto de terceiros.  O mesmo é verdadeiro para a funcionalidade de associação de dados, embora os aplicativos que usam a biblioteca Microsoft Foundation Class podem usar algumas classes de banco de dados, junto com os documentos e exibições, para armazenar dados na memória e exibi-lo ao usuário. Para obter mais informações, consulte [acesso a dados no Visual C++](https://msdn.microsoft.com/library/7wtdsdkh.aspx) .  
   

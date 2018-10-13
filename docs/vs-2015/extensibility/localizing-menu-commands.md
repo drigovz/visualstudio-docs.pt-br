@@ -1,7 +1,7 @@
 ---
 title: Localizando os comandos de Menu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce3cbbf101e357f761ffaf256d0b130a0c005fdb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9b2486df22db8ebcbf8a9dd40a0bd374b6d8abfe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464519"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197698"
 ---
 # <a name="localizing-menu-commands"></a>Localizando comandos de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [comandos de Menu Localizando](https://docs.microsoft.com/visualstudio/extensibility/localizing-menu-commands).  
-  
 Você pode fornecer o texto localizado para o menu e barra de ferramentas de comandos com a criação de arquivos. VSCT localizada e localizados os arquivos. resx para o VSPackage e, em seguida, atualizar os arquivos de projeto incorporar as alterações.  
   
  Para obter informações sobre como localizar a experiência de instalação, consulte [Localizando os pacotes VSIX](../extensibility/localizing-vsix-packages.md).  

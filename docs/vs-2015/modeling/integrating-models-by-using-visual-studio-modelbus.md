@@ -1,7 +1,7 @@
 ---
 title: Integrando modelos por meio do Visual Studio Modelbus | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2cbc89ae03e96a574e3d63a8448628d29ecf163f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1aa105ea43eaee0c82ee4572c21beb2e7b74315a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476131"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256250"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrando modelos por meio do Visual Studio Modelbus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [integrando modelos por meio do Visual Studio Modelbus](https://docs.microsoft.com/visualstudio/modeling/integrating-models-by-using-visual-studio-modelbus).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus fornece um método para criar vínculos entre modelos e de outras ferramentas em modelos. Por exemplo, você pode vincular modelos de linguagem específica do domínio (DSL) e modelos UML. É possível criar um conjunto integrado de DSLs.  
   
  O ModelBus permite criar uma referência exclusiva para um modelo ou um elemento específico dentro de um modelo. Essa referência pode ser armazenada fora do modelo, por exemplo, em um elemento em outro modelo. Quando, em uma ocasião posterior, uma ferramenta desejar obter acesso ao elemento, a infraestrutura do Model Bus carregará o modelo adequado e retornará o elemento. Se desejar, é possível exibir o modelo ao usuário. Se o arquivo não puder ser acessado em seu local anterior, o ModelBus solicitará ao usuário para encontrá-lo. Se o usuário encontrar o arquivo, o ModelBus fixará todas as referências àquele arquivo.  

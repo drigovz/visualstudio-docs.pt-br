@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Baixando Assemblies satélite por demanda com a implantação do ClickOnce usando o Designer de API | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8ed393a17c3489e0133a4a6534deb8f2dab1e428
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ca86e2ed1a05c8e325a99686281db3a7cf8f56e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475949"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306222"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Instruções passo a passo: baixando assemblies satélite por demanda com a API de implantação do ClickOnce usando o designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: baixando Assemblies de satélite sob demanda com o ClickOnce Deployment API usando o Designer](https://docs.microsoft.com/visualstudio/deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer).  
-  
 Aplicativos do Windows Forms podem ser configurados para várias culturas com o uso de assemblies satélite. Um *assembly satélite* é um assembly que contém os recursos de aplicativo para uma cultura que não seja a cultura padrão do aplicativo.  
   
  Conforme discutido em [localizando aplicativos do ClickOnce](../deployment/localizing-clickonce-applications.md), você pode incluir vários assemblies de satélite para várias culturas dentro do mesmo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação. Por padrão, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] baixará todos os assemblies de satélite em sua implantação para o computador cliente, embora um único cliente provavelmente exigirá apenas um assembly satélite.  

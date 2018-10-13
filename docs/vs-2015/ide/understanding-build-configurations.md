@@ -1,7 +1,7 @@
 ---
 title: Noções básicas sobre configurações de build | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d847b560b2dcedcd7b6841eccff17f40016c73fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c7a6304683095b0a3db5c175535d7d28e38eecb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464482"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304129"
 ---
 # <a name="understanding-build-configurations"></a>Noções sobre configurações de build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Noções básicas sobre configurações de Build](https://docs.microsoft.com/visualstudio/ide/understanding-build-configurations).  
-  
 É possível armazenar diferentes configurações de propriedades de solução e de projeto para usar em diferentes tipos de builds. Para criar, selecionar, modificar ou excluir uma configuração, é possível usar o **Configuration Manager**. Para abri-lo, na barra de menus, escolha **Build**, **Configuration Manager**, ou simplesmente digite **Configuração** na caixa **Início Rápido**. Também é possível usar a lista **Configurações de Solução** na barra de ferramentas **Padrão** para selecionar uma configuração ou para abrir o **Configuration Manager**.  
   
 > [!NOTE]

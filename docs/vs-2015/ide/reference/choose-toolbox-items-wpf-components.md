@@ -1,7 +1,7 @@
 ---
 title: Escolher itens da caixa de ferramentas, componentes do WPF | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 057f354b06002c9b1708478f3e3a9592a47a7065
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c36c34f637993354b131430394e5980c9266d03
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466554"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299683"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Escolher Itens da Caixa de Ferramentas, Componentes WPF
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [escolher itens da caixa de ferramentas, componentes WPF](https://docs.microsoft.com/visualstudio/ide/reference/choose-toolbox-items-wpf-components).  
-  
   
 Essa guia da caixa de diálogo **Escolher Itens da Caixa de Ferramentas** exibe uma lista de controles do WPF (Windows Presentation Foundation) disponíveis no computador local. Para exibir essa lista, selecione **Escolher Itens da Caixa de Ferramentas** no menu **Ferramentas** para exibir a caixa de diálogo **Escolher Itens da Caixa de Ferramentas** e, em seguida, selecione a guia **Componentes do WPF**. Para classificar os componentes listados, selecione todo o título de coluna.  
   

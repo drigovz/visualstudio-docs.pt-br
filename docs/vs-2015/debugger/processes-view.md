@@ -1,7 +1,7 @@
 ---
 title: Exibição de processos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c83b57ade3a78a4dcc926e34547ee566326e129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4af26930fc8c9f362d91656cec758c9d4a9c437
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465440"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288984"
 ---
 # <a name="processes-view"></a>Exibição de processos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de processos](https://docs.microsoft.com/visualstudio/debugger/processes-view).  
-  
 A tela processos exibe uma árvore de todos os processos ativos no sistema. O nome do módulo e a ID de processo são mostrados. Se você quiser examinar um processo de determinado sistema, que normalmente corresponde a um programa em execução, use o modo de exibição de processos. Processos são identificados por nomes de módulo, ou eles são designados "processos do sistema".  
   
  Microsoft Windows dá suporte a vários processos. Cada processo pode ter um ou mais threads e cada thread pode ter um ou mais associadas janelas de nível superior. Cada janela de nível superior pode possuir uma série de janelas. Um + símbolo indica que um nível é recolhido. Modo de exibição recolhido consiste em uma linha por processo. Clique o símbolo para expandir o nível +.  

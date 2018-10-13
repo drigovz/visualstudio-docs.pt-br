@@ -1,7 +1,7 @@
 ---
 title: Adicionando dados de interação de camadas da linha de comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce7713b39acb7736e34f6ab6017b0cd32b1e1cfa
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6b22de4b3dd94ba39015605353a71412836a9ff4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587903"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228404"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Adicionando dados de interação entre camadas da linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionando dados de interação de camada da linha de comando](https://docs.microsoft.com/visualstudio/profiling/adding-tier-interaction-data-from-the-command-line).  
-  
 A criação de perfil de interação de camadas fornece informações adicionais sobre os tempos de execução síncronos que o [!INCLUDE[vstecado](../includes/vstecado-md.md)] chama em funções de aplicativos de várias camadas que se comunicam com um ou mais bancos de dados.  
   
  **Windows 8 e Windows Server 2012**  

@@ -1,7 +1,7 @@
 ---
 title: 'Como: criar ou atualizar as políticas do Check-in de análise de código padrão | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9f4e834eb02c30bee0fedfa90ddb17d3fa766fb1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63c1b27d762f79a8933a31bb33850ad4604a9c37
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467521"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301555"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Como criar ou atualizar políticas de check-in de análise do código padrão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: criar ou diretivas de Check-in da análise de código padrão de atualização](https://docs.microsoft.com/visualstudio/code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies).  
-  
 Você pode exigir que a análise de código ser executado em todos os projetos de código em um projeto de equipe usando a análise de código check-in de política. Exigir que a análise de código pode melhorar a qualidade do código que é verificado na base de código.  
   
 > [!NOTE]

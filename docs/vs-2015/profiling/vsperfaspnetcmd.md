@@ -1,7 +1,7 @@
 ---
 title: VSPerfASPNetCmd | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a074edba64f9742f9761754279be35f5c621be2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8eb58532e6198198b43bbcf6c24d6afefa95b935
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462452"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306547"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [VSPerfASPNetCmd](https://docs.microsoft.com/visualstudio/profiling/vsperfaspnetcmd).  
-  
 A ferramenta de linha de comando **VSPerfASPNetCmd.exe** permite que você crie o perfil de sites do ASP.Net sem exigir que você defina variáveis de ambiente ou reinicie o computador. Use **VSPerfASPNetCmd.exe** em vez de [VSPerfCmd](../profiling/vsperfcmd.md) quando estiver criando o perfil de sites do ASP.NET e não precisar da funcionalidade adicional fornecida pelo **VSPerCmd**. Para obter mais informações sobre o **VSPerfASPNetCmd**, consulte [Criação de perfil do site rápida com VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **VSPerfASPNetCmd** é a ferramenta de linha de comando de preferência para usar quando estiver usando o criador de perfil autônomo para criar o perfil de sites Web ASP.NET.  
   
 ## <a name="syntax"></a>Sintaxe  

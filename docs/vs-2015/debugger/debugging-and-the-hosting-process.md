@@ -1,7 +1,7 @@
 ---
 title: Depuração e o processo de hospedagem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5cc008f12f4312df2d63f019a0d33a7b727e5ae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3643e8a6c7bcb97d032771b4f98cbd926d9fd5a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462851"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249479"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Depuração e o processo de hospedagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depuração e o processo de hospedagem](https://docs.microsoft.com/visualstudio/debugger/debugging-and-the-hosting-process).  
-  
 O processo de hospedagem do Visual Studio melhora o desempenho do depurador e habilita novos recursos do depurador, como a depuração de confiança parcial e a avaliação de expressão de tempo de design. Você pode desabilitar o processo de hospedagem se isso for necessário. Para obter mais informações, consulte [como: desabilitar o processo de hospedagem](../ide/how-to-disable-the-hosting-process.md). As seções a seguir descrevem algumas diferenças entre a depuração com e sem o processo de hospedagem.  
   
 ## <a name="partial-trust-debugging-and-click-once-security"></a>Depuração de confiança parcial e segurança de Click-Once  

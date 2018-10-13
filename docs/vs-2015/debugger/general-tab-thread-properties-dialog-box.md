@@ -1,7 +1,7 @@
 ---
 title: Guia geral, caixa de diálogo Propriedades do Thread | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2610e76710d2c3138d981e3a2df83345cac418bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26eed1eb9d40fe78de34512f9e560ca59c19df12
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460691"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307697"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Guia Geral, Caixa de diálogo Propriedades do Thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [guia geral, caixa de diálogo de propriedades do Thread](https://docs.microsoft.com/visualstudio/debugger/general-tab-thread-properties-dialog-box).  
-  
 Use essa caixa de diálogo para obter mais informações sobre um segmento específico. Para exibir essa caixa de diálogo, mova o foco para um [exibição de Threads](../debugger/threads-view.md) janela ou abra [exibição de mensagens](../debugger/messages-view.md) e expandir uma mensagem. Selecione qualquer nó de segmento na árvore e escolha **propriedades** da **exibição** menu.  
   
  O **propriedades do Thread** caixa de diálogo contém um painel, o **geral** guia. As configurações a seguir estão disponíveis:  

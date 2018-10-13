@@ -1,7 +1,7 @@
 ---
 title: Modo misto de depuração para x64 processos tem suporte apenas ao usar o Microsoft.NET Framework 4 ou maior | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0297d9bcfb380261d2ad2e73853ded70285f1b35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7735e1199e7871324fe22b0af33d2ff3230ca51
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463492"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175767"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>A depuração do modo misto para processos x64 só é suportada durante o uso do Microsoft.NET Framework 4 ou superior
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [modo misto de depuração para x64 processos tem suporte apenas ao usar o Microsoft.NET Framework 4 ou maior](https://docs.microsoft.com/visualstudio/debugger/mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoft-dotnet-framework-4-or-greater).  
-  
 Processa o NET Framework versões anteriores à 4 não oferecem suporte para depuração de modo misto de x64. Isso significa que você não pode depurar de código gerenciado para código nativo, ou do código nativo para o código gerenciado.  
   
 ### <a name="workarounds"></a>Soluções alternativas  

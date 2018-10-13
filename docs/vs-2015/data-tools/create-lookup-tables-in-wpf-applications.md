@@ -1,7 +1,7 @@
 ---
 title: Criar tabelas de pesquisa em aplicativos WPF | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 12940c7be5e09975c6a6cf71fad94c47f3f6db32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ce3b1cb07256c35949591b4d6ea012f56e432c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463854"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303336"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Criar tabelas de pesquisa em aplicativos WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar tabelas de pesquisa em aplicativos WPF](https://docs.microsoft.com/visualstudio/data-tools/create-lookup-tables-in-wpf-applications).  
-  
   
 O termo *tabela de pesquisa* (às vezes chamado de um *vinculação de pesquisa*) descreve um controle que exibe informações de uma tabela de dados com base no valor de um campo de chave estrangeira em outra tabela. Você pode criar uma tabela de pesquisa, arrastando o nó principal de uma tabela pai ou objeto de **fontes de dados** window para um controle que já está associado a uma coluna ou propriedade em uma tabela filho relacionada.  
   

@@ -1,7 +1,7 @@
 ---
 title: Suplemento de exemplo do Excel para testes de IU codificados| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0f0b4211b51940564041fab5777d6594168e1329
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 564669d5af3ea526ad8822d3aea7310095151c6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467929"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290674"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>Complemento do Excel de amostra para testes de IU codificado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Add-In Excel de amostra para testes de UI codificados](https://docs.microsoft.com/visualstudio/test/sample-excel-add-in-for-coded-ui-testing).  
-  
 Este suplemento de exemplo para [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] foi projetado especificamente para dar suporte a testes de IU codificados de planilhas do Excel que são registrados e executados no Visual Studio Enterprise. O suplemento é criado usando o Visual Studio Tools para Office.  
   
  Para obter mais informações sobre como criar um suplemento do Excel, consulte [Passo a passo: criando o primeiro suplemento do VSTO para Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) ou pesquise o MSDN em busca de "Suplemento do Excel".  

@@ -1,7 +1,7 @@
 ---
 title: Parâmetros de modelo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8eb91c5137ff405562115cbe318d6a723d369d95
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef4e1a6e3c56df744ce5375a1cb3a1dbd53a6fad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474981"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238895"
 ---
 # <a name="template-parameters"></a>Parâmetros de modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [parâmetros de modelo](https://docs.microsoft.com/visualstudio/ide/template-parameters).  
-  
 Usando parâmetros em seus modelos, você pode substituir os valores das principais partes do modelo, como nomes de classe e namespaces, quando o modelo é instanciado. Esses parâmetros são substituídos pelo assistente de modelo que é executado em segundo plano quando um usuário clica em **OK** nas caixas de diálogo **Novo Projeto** ou **Adicionar Novo Item**.  
   
 ## <a name="declaring-and-enabling-template-parameters"></a>Declarando e habilitando parâmetros de modelo  

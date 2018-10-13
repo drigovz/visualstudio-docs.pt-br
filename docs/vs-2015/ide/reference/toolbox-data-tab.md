@@ -1,7 +1,7 @@
 ---
 title: Guia Caixa de ferramentas, Dados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b844e3c9caf20cf0fff873c6485b8324a8dbe26b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4359cb1c4623442639552e71d1b1dc902e09963e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466091"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307645"
 ---
 # <a name="toolbox-data-tab"></a>Caixa de Ferramentas, Guia Dados
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [caixa de ferramentas, guia dados](https://docs.microsoft.com/visualstudio/ide/reference/toolbox-data-tab).  
-  
   
 Exibe objetos de dados que é possível adicionar a formulários e componentes. A guia **Dados** da **Caixa de Ferramentas** é exibida ao criar um projeto que tem um designer associado. A **Caixa de Ferramentas** é exibida por padrão no ambiente de desenvolvimento integrado do Visual Studio; se for preciso exibir a **Caixa de Ferramentas**, selecione **Caixa de Ferramentas** no menu **Exibir**.  
   

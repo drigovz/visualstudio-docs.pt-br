@@ -1,7 +1,7 @@
 ---
 title: Estender diagramas de camada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 41
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: af5058ba0d88c91ea89a33523002294339dd32f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5551a982b7f7135235c116cde28c71a0695874db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466471"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301828"
 ---
 # <a name="extend-layer-diagrams"></a>Estender diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [estender diagramas de dependência](https://docs.microsoft.com/visualstudio/modeling/extend-layer-diagrams).  
-  
 Você pode escrever código para criar e atualizar diagramas de camada e também para validar a estrutura do código do programa em relação a diagramas de camada no Visual Studio. Você pode adicionar comandos que aparecem no menu de atalho (contexto) dos diagramas, personalizar gestos de arrastar e soltar e acessar o modelo de camada de modelos de texto. Você pode empacotar essas extensões em um Visual Studio Integration VSIX (extensão) e distribuí-los a outros usuários do Visual Studio.  
   
  Para obter mais informações sobre diagramas de camada, consulte:  

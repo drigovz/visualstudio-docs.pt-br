@@ -1,7 +1,7 @@
 ---
 title: 'CA2235: Marcar todos os campos não serializáveis | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 025ee336052bdad010b55e1ba804b2bd37c7e0d7
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 128b70c2fc05634c9da49dfe4ae449344e9c20be
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587179"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305260"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: marcar todos os campos não serializáveis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA2235: marcar todos os campos não serializáveis](https://docs.microsoft.com/visualstudio/code-quality/ca2235-mark-all-non-serializable-fields).
-
 |||
 |-|-|
 |NomeDoTipo|MarkAllNonSerializableFields|

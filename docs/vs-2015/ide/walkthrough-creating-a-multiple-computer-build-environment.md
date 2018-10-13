@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: criando um ambiente de build de vários computadores | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: da285fd1b769aa22127a81753c6bb49ca16954cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93d5e45bc4e8efd146391c5dff78bcb11fcf067f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468213"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292067"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Instruções passo a passo: criando um ambiente de build de vários computadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Criando um ambiente de criação de vários computadores](https://docs.microsoft.com/visualstudio/ide/walkthrough-creating-a-multiple-computer-build-environment).  
-  
 Você pode criar um ambiente de build na sua organização instalando o Visual Studio em um computador host e, em seguida, copiando vários arquivos e configurações para outro computador de modo que ele possa participar de compilações. Você não precisa instalar o Visual Studio no outro computador.  
   
  Este documento não confere direitos para redistribuir o software externamente nem para fornecer ambientes de build a terceiros.  

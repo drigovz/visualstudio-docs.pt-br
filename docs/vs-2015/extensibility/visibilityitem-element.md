@@ -1,7 +1,7 @@
 ---
 title: Elemento VisibilityItem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f7ceeecbd8d68053d4759a3da3cd552545a4285
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 46f8d4557c5abcc14963a87cd8c90217abd3ab1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472821"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209444"
 ---
 # <a name="visibilityitem-element"></a>Elemento VisibilityItem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento VisibilityItem](https://docs.microsoft.com/visualstudio/extensibility/visibilityitem-element).  
-  
 O `VisibilityItem` elemento determina a visibilidade estática de comandos e barras de ferramentas. Cada entrada identifica um comando ou menu e um contexto de interface do usuário do comando associado. Visual Studio detecta os comandos, menus e as barras de ferramentas e sua visibilidade, sem carregar os VSPackages que defini-los. O IDE usa o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> método para determinar se um contexto de interface do usuário do comando está ativo.  
   
  Depois que o VSPackage é carregado, o Visual Studio espera visibilidade do comando seja determinado pelo VSPackage, em vez do `VisibilityItem`. Para determinar a visibilidade do seu comando, você pode implementar o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> manipulador de eventos ou o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método, dependendo de como você implementou seu comando.  

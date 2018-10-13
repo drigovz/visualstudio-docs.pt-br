@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Configurar e usar um personalizado conjunto de regras | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b17767f6bb0f8b72b9c06e2870146f6b037a7ca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5410127cd94bc8e43de4fec82597686d4c11805
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461918"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221631"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Instruções passo a passo: configurando e usando um conjunto de regras personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Configurando e usando uma regra personalizada definida](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-configuring-and-using-a-custom-rule-set).  
-  
 Este passo a passo mostra como usar as ferramentas de análise de código que foram configuradas para usar um personalizado *conjunto de regras* em uma biblioteca de classes. Você pode selecionar um conjunto de regras que se relaciona ao tipo de projeto que você especificou para sua solução, ou você pode selecionar conjuntos de regras alternativa para atender a uma necessidade específica, como verificação de código herdado para problemas que podem ser corrigidos de forma incondicional. Em ambos os casos, os conjuntos de regras também podem ser personalizados para ajustá-las aos seus requisitos de projeto.  
   
  Neste passo a passo, você irá percorrer esses processos:  

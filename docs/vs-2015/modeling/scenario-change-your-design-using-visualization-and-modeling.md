@@ -1,14 +1,14 @@
 ---
 title: 'Cenário: Alterar o design usando visualização e modelagem | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - code visualization [Visual Studio ALM]
 - modeling software [Visual Studio ALM]
@@ -22,18 +22,16 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 67fd284bca4e81c36cd6e7e185b9c4712f07e6b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 220666e6fe12e6a5ab3bbaf1238c19d761427cea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468071"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303037"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: alterar o design usando visualização e modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [cenário: alterar o design usando visualização e modelagem](https://docs.microsoft.com/visualstudio/modeling/scenario-change-your-design-using-visualization-and-modeling).  
-  
 Certifique-se de que seu sistema de software atende às necessidades dos usuários usando a visualização e modelagem de ferramentas no Visual Studio. Use ferramentas como diagramas de modelagem UML (Unified Language), mapas de código, diagramas de camada e diagramas de classe para:  
   
  Para ver quais versões do Visual Studio oferecem suporte a cada ferramenta, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

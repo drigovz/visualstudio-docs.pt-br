@@ -1,7 +1,7 @@
 ---
 title: Melhorando a qualidade do código com políticas de Check-in do projeto de equipe | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b76793a2be80e194f9056280614a9e9646c462d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c48a4e9cb68997903eed017637c9f00db88261a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461058"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299020"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Melhorando a qualidade do código com políticas de check-in do projeto de equipe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [aprimorando a qualidade do código com políticas de Check-in do projeto de equipe](https://docs.microsoft.com/visualstudio/code-quality/enhancing-code-quality-with-team-project-check-in-policies).  
-  
 Quando você usa o controle de versão do Team Foundation (TFVC), você pode criar políticas de check-in para seus projetos de equipe. para impor práticas que levam a um código melhor e mais eficiente do desenvolvimento de grupo. Políticas de check-in são regras que são definidas no nível de projeto de equipe e aplicadas em computadores de desenvolvedor, antes que o código tem permissão para fazer check-in.  
   
  Você pode especificar essas políticas de check-in do projeto equipe:  

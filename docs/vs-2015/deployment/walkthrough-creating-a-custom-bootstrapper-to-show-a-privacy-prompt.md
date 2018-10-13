@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Criando um Bootstrapper personalizado para mostrar uma privacidade Prompt | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 790aa1c67ef8c76e404876bd61a42d4b286892da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4184e8400c50c518b461a0877f06c54db5f84927
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460982"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217947"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Instruções passo a passo: criando um bootstrapper personalizado para mostrar um prompt de privacidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Criando um Bootstrapper personalizado para mostrar um Prompt de privacidade](https://docs.microsoft.com/visualstudio/deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt).  
-  
 Você pode configurar os aplicativos ClickOnce para atualizar automaticamente quando assemblies com versões do assembly e versões mais recentes do arquivo se tornam disponíveis. Para certificar-se de que seus clientes de consentimento para esse comportamento, você pode exibir um prompt de privacidade para eles. Então, eles podem escolher se deseja conceder permissão ao aplicativo para atualizar automaticamente. Se o aplicativo não tem permissão para atualizar automaticamente, ele não é instalado.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  

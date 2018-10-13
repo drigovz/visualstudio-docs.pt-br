@@ -1,7 +1,7 @@
 ---
 title: Como configurar projetos para terem plataformas como destino | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a79b32583b130b62dc9946acd71776ac67159817
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e945a3a55f1ea4f9e68b96209e350c843324c30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460689"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294509"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Como configurar projetos para destinar plataformas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: configurar projetos para plataformas de destino](https://docs.microsoft.com/visualstudio/ide/how-to-configure-projects-to-target-platforms).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite que você configure seus aplicativos para direcionar as plataformas diferentes, incluindo plataformas de 64 bits. Para obter mais informações sobre o suporte à plataforma de 64 bits no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consulte [Aplicativos de 64 bits](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
   
 ## <a name="targeting-platforms-with-the-configuration-manager"></a>Definindo plataformas como destino com o Configuration Manager  

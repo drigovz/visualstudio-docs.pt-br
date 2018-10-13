@@ -1,7 +1,7 @@
 ---
 title: Dentro do Editor de núcleo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a2d9ec83c700f9166dc6b73860547bcacd265a15
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc91a228fd788074a543678b281288e043f9385c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464541"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227716"
 ---
 # <a name="inside-the-core-editor"></a>Dentro do Editor de núcleo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [dentro do Editor principal](https://docs.microsoft.com/visualstudio/extensibility/inside-the-core-editor).  
-  
 O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principal é um conjunto de vários componentes que permitem que você modifique e consultar informações textuais. Se você tiver personalizado o editor principal usando a API herdada, você pode continuar a usar essas personalizações, que serão roteadas por meio de adaptadores do editor. No entanto, ele é recomendável que você adapte suas personalizações para o novo editor de API.  
   
  As áreas a seguir estão alguns aspectos importantes do que o editor principal:  

@@ -1,7 +1,7 @@
 ---
 title: Noções básicas de compilação de aplicativos com o Xamarin.Forms no Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 56e76bc74470ccc5efda4482435f73344f85224a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03b8892eb78184aab237f926e20bfef59418e532
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468153"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213610"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Aprender as noções básicas de criação de aplicativos com o Xamarin.Forms no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Aprenda noções básicas de criação de aplicativos com o xamarin. Forms no Visual Studio](https://docs.microsoft.com/visualstudio/cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio).  
-  
   
 Após você concluir as etapas em [Configuração e instalação](../cross-platform/setup-and-install.md) e em [Verificar seu ambiente Xamarin](../cross-platform/verify-your-xamarin-environment.md), este passo a passo mostra como criar um aplicativo básico (mostrado abaixo) com Xamarin.Forms. Com o Xamarin.Forms, você escreverá todo o código da interface do usuário uma vez em uma PCL (biblioteca de classes portátil). O Xamarin, então, renderizará automaticamente os controles de interface do usuário nativos para as plataformas iOS, Android e Windows. Recomendamos essa abordagem porque a opção da PCL dá melhor suporte ao uso apenas das APIs do .NET que têm suporte em todas as plataformas de destino, e porque o Xamarin.Forms permite compartilhar o código da interface do usuário entre plataformas.  
   
