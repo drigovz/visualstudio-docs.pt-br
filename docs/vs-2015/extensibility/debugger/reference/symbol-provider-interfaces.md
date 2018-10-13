@@ -1,7 +1,7 @@
 ---
 title: Interfaces de provedor de símbolo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30f8d8d758c9165fdb65064de394cd67349ce57c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e34b0240c7f700aed245081a5be4586c1b9b0d52
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465763"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283212"
 ---
 # <a name="symbol-provider-interfaces"></a>Interfaces de provedor de símbolos
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Interfaces de provedor de símbolos](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/symbol-provider-interfaces).  
-  
 A seguir estão as Interfaces de tratamento de símbolo para o [!INCLUDE[vsipsdk](../../../includes/vsipsdk-md.md)].  
   
 ## <a name="discussion"></a>Discussão  

@@ -1,7 +1,7 @@
 ---
 title: Dicas de produtividade para o Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 05bac3fe7d5272674b141b15459d2d21c521cc0f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ced1b47c0e5b9d50fb8752dc79ab516ca682bd0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462773"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173323"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Dicas de produtividade para o Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [dicas de produtividade para o Visual Studio](https://docs.microsoft.com/visualstudio/ide/productivity-tips-for-visual-studio).  
-  
 Seguindo estas dicas, você pode gravar, navegar e depurar seu código no Visual Studio com mais rapidez e eficiência. Para obter mais informações sobre atalhos de teclado comuns, veja [Dicas e Truques](../ide/tips-and-tricks-for-visual-studio.md). Para obter uma lista mais completa, consulte [Identificando e personalizando atalhos de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) e [Atalhos de teclado padrão](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
   
  Este tópico inclui as seções a seguir:  

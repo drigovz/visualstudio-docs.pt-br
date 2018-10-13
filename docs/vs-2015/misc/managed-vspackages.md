@@ -1,7 +1,7 @@
 ---
 title: Gerenciado VSPackages | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a4f17068-c563-45a8-bbbf-4203ea99e9d2
 caps.latest.revision: 34
 manager: douge
-ms.openlocfilehash: f221cf99234a2e3128e29636368e5fa78169425d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 44507112ceb3e7bed452ef4ced7633001224ad82
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468348"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227065"
 ---
 # <a name="managed-vspackages"></a>VSPackages gerenciados
 Os tópicos a seguir explicam como criar um VSPackage. Um VSPackage é um módulo de software que estende o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE), fornecendo elementos de (UI) interface do usuário, serviços, projetos, editores e designers. Para obter mais informações, consulte [VSPackages](../extensibility/internals/vspackages.md).  

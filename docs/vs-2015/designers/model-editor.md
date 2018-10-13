@@ -1,7 +1,7 @@
 ---
 title: Editor de Modelo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d53d22baf0ff1e458a2dd1ee601f59cdfe081ffa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3fb0b83e266fbe865023d6a31f926ac31b61a10a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475407"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263996"
 ---
 # <a name="model-editor"></a>Editor de modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Editor de modelos](https://docs.microsoft.com/visualstudio/designers/model-editor).  
-  
 Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para exibir, criar e modificar modelos 3D.  
   
  Você pode usar o Editor de Modelos para criar modelos 3D do zero ou exibir e modificar modelos 3D mais complexos que foram criados usando as ferramentas de modelagem 3D com recursos completos. O Editor de Modelos oferece suporte a vários formatos de modelo 3D que são usados no desenvolvimento de aplicativos DirectX.  

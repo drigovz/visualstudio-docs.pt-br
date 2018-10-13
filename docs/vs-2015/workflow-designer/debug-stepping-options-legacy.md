@@ -1,7 +1,7 @@
 ---
 title: Depurar passo a passo de opções (herdado) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: b87496e3aa7ea25e4b7cd8decf53cb425448dbf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f8840ba13d9b0caed2631d328593a0c23a110cd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466448"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173259"
 ---
 # <a name="debug-stepping-options-legacy"></a>Opções de avançar de depuração (legados)
 Este tópico descreve como depurar aplicativos de [!INCLUDE[wf](../includes/wf-md.md)] que têm atividades simultâneas em [!INCLUDE[wfd1](../includes/wfd1-md.md)]herdado. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

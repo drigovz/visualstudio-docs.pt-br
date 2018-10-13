@@ -1,7 +1,7 @@
 ---
 title: O que&#39;novo no controle do código-fonte | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f098c9f46d649a8b93c29eff57c5606438d3e399
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fac4b901c7e9b3c5a59e125a9480b21703b19a8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466985"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217018"
 ---
 # <a name="what39s-new-in-source-control"></a>O que&#39;novo no controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [o que&#39;Novidades no controle de origem](https://docs.microsoft.com/visualstudio/extensibility/internals/what-s-new-in-source-control).  
-  
 No [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] você pode fornecer uma solução de controle do código-fonte profundamente integrado com a implementação de um VSPackage de controle do código-fonte. Esta seção descreve os recursos de controle do código-fonte VSPackages e fornece uma visão geral das etapas de implementação.  
   
 ## <a name="the-source-control-vspackage"></a>O VSPackage de controle do código-fonte  

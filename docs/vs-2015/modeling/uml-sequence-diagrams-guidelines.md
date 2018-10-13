@@ -1,7 +1,7 @@
 ---
 title: 'Diagramas de sequência UML: Diretrizes | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 55
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 388bb32aa871b220768e856e96cced2d5bced694
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d8578d81dd955cc9e7223692be1fe9f63d2bf00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461513"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278666"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagramas de sequência UML: diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [diagramas de sequência UML: diretrizes](https://docs.microsoft.com/visualstudio/modeling/uml-sequence-diagrams-guidelines).  
-  
 No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar uma interação. Uma interação é uma sequência de mensagens entre as instâncias de classes, componentes, subsistemas ou atores típicas.  
   
  Diagramas de sequência UML fazem parte de um modelo UML e existem somente dentro de projetos de modelagem UML. Para criar um diagrama de sequência UML, nos **arquitetura** menu, clique em **UML novo ou diagrama de camada**. Saiba mais sobre [elementos de diagrama de sequência UML](../modeling/uml-sequence-diagrams-reference.md) ou [diagramas de modelagem UML](../modeling/edit-uml-models-and-diagrams.md) em geral. Para uma demonstração em vídeo, consulte [fazer um rascunho de interações com o uso de diagramas de sequência (2010)](http://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams).  

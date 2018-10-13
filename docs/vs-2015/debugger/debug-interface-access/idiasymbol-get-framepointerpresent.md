@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_framepointerpresent | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41989d8432085bb4f779b602f1939a9c9fc58cb3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b324de0cc00b4111144e369e98e9857846ce597
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466840"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206590"
 ---
 # <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_framepointerpresent](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-framepointerpresent).  
-  
 Recupera um sinalizador que especifica se o ponteiro de quadro está presente. Usado quando o [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) é definido como `SymTagFunction`.  
   
 ## <a name="syntax"></a>Sintaxe  

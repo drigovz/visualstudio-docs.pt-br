@@ -1,7 +1,7 @@
 ---
 title: Aplicativos de servidor SDI | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c6ee3ee3a1273c02dd094f89c099230024eabfc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba975d21e1fbef2d32b45dd4ebdc758e8b6cf575
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475221"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199056"
 ---
 # <a name="sdi-server-applications"></a>Aplicativos de servidor SDI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [aplicativos de servidor SDI](https://docs.microsoft.com/visualstudio/debugger/sdi-server-applications).  
-  
 Se você estiver depurando um aplicativo de servidor SDI, você deve especificar `/Embedding` ou `/Automation` na **argumentos de linha de comando** propriedade no *projeto* caixa de diálogo páginas de propriedades para C/C++, c#, ou Projetos do Visual Basic.  
   
  Com esses argumentos de linha de comando, o depurador pode iniciar o aplicativo de servidor como se tivesse sido iniciado de um contêiner. Iniciar o contêiner do Gerenciador de Programas ou do Gerenciador de Arquivos fará com que o contêiner use a instância do servidor iniciada no depurador.  

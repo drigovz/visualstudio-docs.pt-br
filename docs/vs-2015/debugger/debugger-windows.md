@@ -1,31 +1,29 @@
 ---
 title: Depurador do Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ae2d5c50cd6061b4ea0939e6ec088cf691b4640
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43b4c95a81d41b6764a301904782998334127ef8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465251"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213235"
 ---
 # <a name="debugger-windows"></a>Depurador do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depurador do Windows no Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debugger-windows).  
-  
 Você pode abrir a maioria das janelas do depurador enquanto você estiver depurando seu programa. Para ver uma lista de janelas do depurador, defina um ponto de interrupção e iniciar a depuração. Quando você atinge o ponto de interrupção e a execução para, clique em **depurar / Windows**.  
   
 ||||  

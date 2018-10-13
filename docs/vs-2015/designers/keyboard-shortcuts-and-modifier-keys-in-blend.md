@@ -1,7 +1,7 @@
 ---
 title: Atalhos de teclado e teclas modificadoras no Blend | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba02644e3be4aeb5b9d6d1dced8e990065552eee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40970dbbffcb6f20fe605ac07a10ae359e300578
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473507"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283888"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Atalhos de teclado e teclas modificadoras no Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [atalhos de teclado e teclas modificadoras no Blend](https://docs.microsoft.com/visualstudio/designers/keyboard-shortcuts-and-modifier-keys-in-blend).  
-  
 Atalhos de teclado podem acelerar seu trabalho reduzindo em um único atalho de teclado uma ação que normalmente exigiria vários cliques com o botão do mouse. Os atalhos de teclado no [!INCLUDE[blend_first](../includes/blend-first-md.md)] estão divididos em duas categorias:  
   
 -   **Teclas de acesso** Você pode usar teclas de acesso para acessar um comando de menu ou uma área em uma caixa de diálogo pressionando uma tecla específica no teclado. Teclas de acesso são identificadas por sublinhados que aparecem no comando ou na caixa de diálogo atualmente selecionada.  

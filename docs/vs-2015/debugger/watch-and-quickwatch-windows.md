@@ -1,7 +1,7 @@
 ---
 title: Inspeção e QuickWatch Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e15167169b8940d65eeca66aaf3871997300cd04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464712"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173622"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Inspeção e QuickWatch Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definir uma inspeção nas variáveis no Visual Studio](https://docs.microsoft.com/visualstudio/debugger/watch-and-quickwatch-windows).  
-  
 Você pode usar o **Watch** (**depurar / Windows / Assista / assistir (1, 2, 3 e 4)**) e **QuickWatch** (com o botão direito na variável / **depurar / QuickWatch**) windows para inspecionar variáveis e expressões durante uma sessão de depuração.  A diferença é que o **Watch** janela pode exibir diversas variáveis, enquanto o **QuickWatch** janela exibe uma única variável por vez.  
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Observar uma única variável com QuickWatch  

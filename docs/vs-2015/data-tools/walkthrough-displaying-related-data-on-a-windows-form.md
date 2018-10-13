@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Exibindo dados relacionados em um formulário do Windows | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,12 +27,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: be86fa89cd35ff55ed9e454c9453b4d2684f311d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 882c8229c105920efe247a54e9525a262e6a3246
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474728"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282666"
 ---
 # <a name="walkthrough-displaying-related-data-on-a-windows-form"></a>Instruções passo a passo: exibindo dados relacionados em um Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

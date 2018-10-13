@@ -1,7 +1,7 @@
 ---
 title: Analisando o dados de ferramentas de desempenho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 46
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb70fa86ac54c14d8105a0481b3a09b5aa777f39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ca00f13a6b15d934e6be9eb1a379de04ea5fc0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464268"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229132"
 ---
 # <a name="analyzing-performance-tools-data"></a>Analisando dados de ferramentas de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [analisando dados de ferramentas de desempenho](https://docs.microsoft.com/visualstudio/profiling/analyzing-performance-tools-data).  
-  
 Os relatórios de desempenho de Ferramentas de Criação de Perfil [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permitem exibir e analisar problemas de desempenho do aplicativo. Esta seção apresenta uma visão geral dos relatórios de desempenho e das exibições que podem ser usados para examinar dados de desempenho.  
   
 ## <a name="common-tasks"></a>Tarefas comuns  

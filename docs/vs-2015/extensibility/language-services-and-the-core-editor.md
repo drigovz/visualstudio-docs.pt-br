@@ -1,7 +1,7 @@
 ---
 title: Serviços de linguagem e o Editor de núcleo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e03199a6-ad5f-4075-bfba-8d36865112b7
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c6de7975c085073bf9082f77499a6456b44a55b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a1ccca0b20a681505ef197c4eefad1b3a813af6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466858"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218316"
 ---
 # <a name="language-services-and-the-core-editor"></a>Serviços de linguagem e o Editor de núcleo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [serviços de linguagem e o Editor de núcleo](https://docs.microsoft.com/visualstudio/extensibility/language-services-and-the-core-editor).  
-  
 Editores do Visual Studio são frequentemente associados um serviço de linguagem. Entre outras coisas, um serviço de linguagem fornece coloração de sintaxe, preenchimento de declaração, IntelliSense e formatação de texto.  
   
 ## <a name="core-editors-and-document-data-objects"></a>Editores de núcleo e objetos de dados de documento  

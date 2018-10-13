@@ -1,7 +1,7 @@
 ---
 title: Criar um VSPackage de controle do código-fonte | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e67d21fe906dd6bc2a1da0a7a483ee78aa0fe2db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7d897e8aeaf140048695a14d552ae5c5ab200a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464873"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220009"
 ---
 # <a name="creating-a-source-control-vspackage"></a>Criar um VSPackage de controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando um VSPackage de controle do código-fonte](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-a-source-control-vspackage).  
-  
 Esta documentação inclui links para a visão geral da arquitetura de um pacote de controle do código-fonte integrado com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], a API que é definida por as interfaces a serem implementados e os serviços a serem consumidos e um exemplo que ilustra uma simple fonte controle a implementação do pacote.  
   
  Com um controle do código-fonte VSPackage, você pode criar um caminho de integração profunda para controle de origem integrar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Ele permite que o pacote ignorar o controle de fonte padrão da interface do usuário hospedada por [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]responder a solicitações de controle do código-fonte do sistema de projeto e interagir com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] componentes, tais como **Gerenciador de soluções**. O [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] capacita [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] com um mecanismo para criar um VSPackage que pode se integrar a parceiros [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usando um modelo de serviço.  
