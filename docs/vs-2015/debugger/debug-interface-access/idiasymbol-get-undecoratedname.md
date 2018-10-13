@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_undecoratedname | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 824fa243dc99e6e05f99e16664029649cbaa90a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bb086b101155b75b64e4d0acb8be49ef9e7d73d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463253"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297005"
 ---
 # <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_undecoratedname](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-undecoratedname).  
-  
 Recupera o nome não decorado de um decorado, C++ ou ligação, um nome.  
   
 ## <a name="syntax"></a>Sintaxe  

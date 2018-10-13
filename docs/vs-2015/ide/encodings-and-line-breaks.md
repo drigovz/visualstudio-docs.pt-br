@@ -1,7 +1,7 @@
 ---
 title: Codificações e quebras de linha | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8fd03dba0dfb13723fcb44d489a7b850aebeb1e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d11bc0743faa9e512fcd144bfef09a84a316531d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466602"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284980"
 ---
 # <a name="encodings-and-line-breaks"></a>Codificações e quebras de linha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [codificações e quebras de linha](https://docs.microsoft.com/visualstudio/ide/encodings-and-line-breaks).  
-  
 No Visual Studio, é possível usar os configurações **Arquivo/Opções avançadas de salvamento** configurações para determinar o tipo de quebra de linha caracteres que você deseja. Também é possível alterar a codificação de um arquivo com as mesmas configurações.  
   
 > [!NOTE]

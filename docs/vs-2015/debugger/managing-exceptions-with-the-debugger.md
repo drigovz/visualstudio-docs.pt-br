@@ -1,7 +1,7 @@
 ---
 title: Gerenciando exceções com o depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8837a633c12277a1caac2f88af3eb85a4db2dafc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05fda0b130d765d5028e9c257102100708908dca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466129"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285916"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gerenciando exceções com o depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [gerenciar exceções com o depurador do Visual Studio](https://docs.microsoft.com/visualstudio/debugger/managing-exceptions-with-the-debugger).  
-  
 Uma exceção é uma indicação de um estado de erro que ocorre enquanto um programa está sendo executado. Você pode e deve fornecer manipuladores que respondem às exceções mais importantes, mas é importante saber como configurar o depurador para interromper para as exceções que você deseja ver.  
   
  Quando uma exceção ocorre, o depurador grava uma mensagem de exceção para a janela de saída. Ele pode interromper a execução nos seguintes casos:  

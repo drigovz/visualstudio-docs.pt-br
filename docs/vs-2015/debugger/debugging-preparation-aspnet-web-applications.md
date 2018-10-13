@@ -1,7 +1,7 @@
 ---
 title: 'Preparação de depuração: Aplicativos Web ASP.NET | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,19 +24,17 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20731f5036a89c3c19fbea0d825d67fc02c13cf9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9268cca555486e0c432e60947350bd69202c4fb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467164"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292884"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Preparação de depuração: aplicativos Web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [preparação de depuração: aplicativos Web ASP.NET](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-aspnet-web-applications).  
-  
-O [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]modelo de site da Web cria um aplicativo de formulário da Web. Quando você cria um site usando esse modelo, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cria as configurações padrão para depuração. No **propriedades do projeto** caixa de diálogo, você pode especificar se deseja que a página da Web seja uma página de inicialização. Quando você inicia a depuração de um [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Site da Web com essas configurações padrão, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] inicia o Internet Explorer e anexa o depurador para o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] processo de trabalho (aspnet_wp.exe ou w3wp.exe). Para obter mais informações, consulte [requisitos de sistema](../debugger/aspnet-debugging-system-requirements.md).  
+O [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]modelo de site da Web cria um aplicativo de formulário da Web. Quando você cria um site usando esse modelo, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cria as configurações padrão para depuração. No **propriedades do projeto** caixa de diálogo, você pode especificar se deseja que a página da Web seja uma página de inicialização. Quando você inicia a depuração de um [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Site da Web com essas configurações padrão, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] inicia o Internet Explorer e anexa o depurador para o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] processo de trabalho (aspnet_wp.exe ou w3wp.exe). Para obter mais informações, consulte [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
 ### <a name="to-create-a-web-forms-application"></a>Para criar um aplicativo de Web Forms  
   

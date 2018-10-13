@@ -1,7 +1,7 @@
 ---
 title: Ferramenta de Zoom de Exibição de Núcleos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 204817e24df6eadd18dcffc7829ababfa94530c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b72ad17581ec461c9b4309b4fd049ccb324542e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460932"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291285"
 ---
 # <a name="cores-view-zoom-tool"></a>Ferramenta de zoom da exibição de núcleos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ferramenta de Zoom de exibição de núcleos](https://docs.microsoft.com/visualstudio/profiling/cores-view-zoom-tool).  
-  
 O controle de zoom é um controle deslizante que permite ampliar e reduzir a linha do tempo para que seja possível focar em áreas de interesse específico. Esse controle amplia o centro da exibição atual, então, ajuste a exibição antes de aplicar o zoom.  
   
 ## <a name="other-ways-to-zoom"></a>Outras formas de aplicar zoom  

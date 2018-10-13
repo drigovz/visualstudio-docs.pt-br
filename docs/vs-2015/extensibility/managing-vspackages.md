@@ -1,7 +1,7 @@
 ---
 title: Gerenciar VSPackages | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 349dc380e23e5f76ad32631384bc4db8fceeff00
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b68ad8fb8ce32c2a4a1210d38fb458518d28435
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467512"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296342"
 ---
 # <a name="managing-vspackages"></a>Gerenciando VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [gerenciar VSPackages](https://docs.microsoft.com/visualstudio/extensibility/managing-vspackages).  
-  
 Na maioria dos casos, você não precisa se preocupar sobre como gerenciar VSPackages, já que os modelos de projeto e item registrarem e carregar o pacote automaticamente. No entanto, em algumas circunstâncias você talvez precise saber um pouco mais para gerenciar seu pacote.  
   
 ## <a name="using-the-experimental-instance"></a>Usando a instância experimental  

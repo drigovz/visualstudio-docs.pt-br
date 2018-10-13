@@ -1,7 +1,7 @@
 ---
 title: Depurando um modelo de texto T4 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d04fe451a752c5132a376fd63091aeb6b1ee1f49
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f299b89f7f59cbfc043bb77e6e56c3e5fac22d16
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460715"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298903"
 ---
 # <a name="debugging-a-t4-text-template"></a>Depurando um modelo de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depurando um modelo de texto T4](https://docs.microsoft.com/visualstudio/modeling/debugging-a-t4-text-template).  
-  
 Você pode definir pontos de interrupção em modelos de texto. Para depurar um modelo de texto de tempo de design, salve o arquivo de modelo de texto e, em seguida, escolha **depurar modelo T4** no menu de atalho do arquivo no Gerenciador de soluções. Para depurar um modelo de texto de tempo de execução, simplesmente depure o aplicativo ao qual ele pertence.  
   
  Para depurar um modelo de texto, você deve compreender as etapas do processo de transformação de modelo. Diferentes tipos de erro podem ocorrer dentro de cada etapa. As etapas são da seguinte maneira.  

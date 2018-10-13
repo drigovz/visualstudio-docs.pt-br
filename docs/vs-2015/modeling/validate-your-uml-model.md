@@ -1,7 +1,7 @@
 ---
 title: Validar o modelo UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 42e0733668a1f96dc1881d4d4d58a575eeb9eb64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463883"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292689"
 ---
 # <a name="validate-your-uml-model"></a>Validar o modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [validar o modelo UML](https://docs.microsoft.com/visualstudio/modeling/validate-your-uml-model).  
-  
 Alguns dos modelos de UML que você pode desenhar no Visual Studio podem ser considerado inválido em seu projeto. Por exemplo, você pode exigir que um caso de uso sempre deve estar vinculado a um diagrama de sequência que tem linhas de vida que representam os atores do caso de uso. Você pode instalar ou definir *restrições* que ajudam sua equipe para atender aos requisitos como esse. As restrições podem ser aplicadas quando o usuário salva ou abre um modelo e pode ser invocado pelo comando de menu.  
   
  Não há restrições são fornecidas com [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], pois elas dependem de como sua equipe interpreta e usa modelos UML. Mas você pode definir suas próprias restrições e instalar as restrições que são definidas por outros usuários. Para saber como definir as restrições e empacotá-las para distribuição, consulte [definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md).  

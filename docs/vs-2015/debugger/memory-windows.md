@@ -1,7 +1,7 @@
 ---
 title: Memória Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 180abd9aed356613456790a328fb45d1c3ffcf69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463490"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297187"
 ---
 # <a name="memory-windows"></a>Janelas de memória
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibir memória para variáveis no depurador](https://docs.microsoft.com/visualstudio/debugger/memory-windows).  
-  
 O **memória** janela fornece uma exibição no espaço de memória que é usado pelo seu aplicativo. O **Watch** janela, **QuickWatch** caixa de diálogo **Autos** janela, e **Locals** janela Mostrar o conteúdo de variáveis, que são armazenados em locais específicos na memória. Mas o **memória** janela mostra a imagem em grande escala. Esta exibição pode ser conveniente para examinar grandes partes de dados (buffers ou grandes cadeias de caracteres, por exemplo) que não são exibidas corretamente nas outras janelas. No entanto, o **memória** janela não é limitada a exibir dados. Ela exibirá tudo no espaço de memória, não importa se o conteúdo for dados, código ou bits aleatórios de lixo na memória não atribuída.  
   
  O **memória** janela está disponível somente se a depuração do nível de endereços estiver habilitada na **opções**caixa de diálogo**depuração** nó. O **memória** janela não está disponível para o Script ou SQL, que são linguagens que não reconhecem o conceito de memória.  

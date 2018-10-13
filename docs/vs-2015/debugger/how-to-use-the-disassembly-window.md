@@ -1,7 +1,7 @@
 ---
 title: 'Como: usar a janela de desmontagem | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17747cdab2987a053ef5fff2bc7b8a11867d94fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa414aacc8b7ffc39132157686abee860cac994c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473766"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287749"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Como usar a Janela de Desmontagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibir o código de desmontagem no depurador no Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-disassembly-window).  
-  
 Esse recurso está disponível somente se a depuração do nível de endereços estiver habilitada a **opções** caixa de diálogo **depuração** nó. Não está disponível para depuração de Script ou SQL.  
   
  O **desmontagem** janela mostra o código assembly correspondente às instruções criadas pelo compilador. Se você estiver depurando código gerenciado, essas instruções de assembly correspondem ao código nativo criado pelo compilador JIT (Just-in-Time), não a linguagem intermediária da Microsoft (MSIL) gerada pelo compilador do Visual Studio.  

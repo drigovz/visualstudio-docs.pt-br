@@ -1,7 +1,7 @@
 ---
 title: Como posso depurar uma violação de acesso? | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c06121d84c6b573b5f1895fa447535826dad540
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1afc4902e818024e85f0f860173cece20ae9c73e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467335"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290577"
 ---
 # <a name="how-can-i-debug-an-access-violation"></a>Como posso depurar uma violação de acesso?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como depurar uma violação de acesso?](https://docs.microsoft.com/visualstudio/debugger/how-can-i-debug-an-access-violation-q).  
-  
 Descrição do problema  
  Meu programa produz uma violação de acesso. Como posso depurar isso?  
   
