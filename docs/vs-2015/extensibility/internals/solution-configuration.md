@@ -1,7 +1,7 @@
 ---
 title: Configuração da solução | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f8735f841f7b26f03c30bc7f42b06b3ca5e260d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2efd5a626e92d180f7c842172f764fa7f8011e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467086"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245785"
 ---
 # <a name="solution-configuration"></a>Configuração da solução
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [configuração da solução](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-configuration).  
-  
 Configurações da solução armazenam propriedades de nível de solução. Eles direcionam o comportamento do **inicie** chave (F5) e **Build** comandos. Por padrão, esses comandos criaram e iniciar a configuração de depuração. Ambos os comandos são executados no contexto de uma configuração de solução. Isso significa que o usuário pode esperar F5 para iniciar e seja qual for a solução ativa é configurada por meio das configurações de compilação. O ambiente foi projetado para otimizar para soluções em vez de projetos, quando se trata de criação e execução.  
   
  A barra de ferramentas padrão do Visual Studio contém um botão de início e uma lista suspensa à direita do botão Iniciar configuração da solução. Essa lista permite aos usuários escolher a configuração a ser iniciado quando F5 é pressionado, criar suas próprias configurações de solução ou editar uma configuração existente.  

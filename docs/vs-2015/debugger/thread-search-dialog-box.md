@@ -1,7 +1,7 @@
 ---
 title: Caixa de diálogo de pesquisa de threads | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 255614c31c2d1887f6e088d3620ac8adb7a94a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e85d1504fcd34982c7316e51e4858e894e232eb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467724"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280989"
 ---
 # <a name="thread-search-dialog-box"></a>Caixa de diálogo Pesquisa de Thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [caixa de diálogo de pesquisa de Thread](https://docs.microsoft.com/visualstudio/debugger/thread-search-dialog-box).  
-  
 Use essa caixa de diálogo para localizar e selecionar o nó para um segmento específico na [exibição de Threads](../debugger/threads-view.md). Para exibir essa caixa de diálogo, mova o foco para um **Threads** janela modo de exibição. Em seguida, escolha **encontrar Thread** da **pesquisa** menu.  
   
  As configurações a seguir estão disponíveis:  

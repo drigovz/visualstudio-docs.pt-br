@@ -1,7 +1,7 @@
 ---
 title: 'Como: solucionar problemas de serviços | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f0cbad73fe5be46c7371356a0a3746b7e58315ef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 97084a1fe66bb84c56e1f6452397df9128f4d08f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462863"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279026"
 ---
 # <a name="how-to-troubleshoot-services"></a>Como: solucionar problemas de serviços
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: solucionar problemas de serviços](https://docs.microsoft.com/visualstudio/extensibility/how-to-troubleshoot-services).  
-  
 Há vários problemas comuns que podem ocorrer ao tentar obter um serviço:  
   
 -   O serviço não está registrado com [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

@@ -1,7 +1,7 @@
 ---
 title: Suporte a vários modos de exibição de documento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c1dc6614e90b0f4830991116440e94048145bae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c82100a544a9f59fbb64af8b78d51314b39690f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462598"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282692"
 ---
 # <a name="supporting-multiple-document-views"></a>Dando suporte a várias exibições de documento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [que dão suporte a várias exibições de documento](https://docs.microsoft.com/visualstudio/extensibility/supporting-multiple-document-views).  
-  
 Você pode fornecer mais de uma exibição de um documento com a criação de dados de documento separado e objetos de exibição de documento para que o editor. Alguns casos em que uma exibição de documento adicional seria útil são:  
   
 -   Novo suporte de janela: você deseja que seu editor para fornecer dois ou mais exibições do mesmo tipo, para que um usuário que já tem uma janela Abrir no editor pode abrir uma nova janela, selecionando o **nova janela** comando do **janela** menu.  

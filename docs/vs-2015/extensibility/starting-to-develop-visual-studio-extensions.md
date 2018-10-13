@@ -1,7 +1,7 @@
 ---
 title: Começando a desenvolver extensões do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 441abc9254fac5b70270fc622740d03ecc43d512
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96f98fe27812235d742d5a116f930ab8e70b2cd0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462857"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224153"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Começando a desenvolver extensões do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [começando a desenvolver extensões do Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/starting-to-develop-visual-studio-extensions).  
-  
 Se você nunca escreveu uma extensão do Visual Studio antes, você provavelmente terá algumas perguntas. Apresentaremos alguns dos mais comuns aqui. Se você não vir as informações que você está procurando, use os botões de comentários (**esta página foi útil?** na parte inferior da tela) para fazer o que você deseja.  
   
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Qual software precisa desenvolver extensões do Visual Studio?  

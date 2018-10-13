@@ -1,7 +1,7 @@
 ---
 title: Gerenciamento de projetos do Windows Universal | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aedd9a3d85af50924a0371d3d1d4c26da3d4daac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40d9a160d839b965c4b5f6db2413237af0af30ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466843"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252805"
 ---
 # <a name="managing-universal-windows-projects"></a>Gerenciando projetos universais do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Gerenciando projetos universais do Windows](https://docs.microsoft.com/visualstudio/extensibility/managing-universal-windows-projects).  
-  
 Aplicativos universais do Windows são aplicativos que direcionam o Windows 8.1 e Windows Phone 8.1, permitindo que os desenvolvedores usem o código e outros ativos nas duas plataformas. O código compartilhado e os recursos são mantidos em um projeto compartilhado, enquanto o código específico da plataforma e recursos são mantidos em projetos separados, um para Windows e outro para Windows Phone. Para obter mais informações sobre aplicativos universais do Windows, consulte [aplicativos universais do Windows](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Extensões do Visual Studio que gerenciam projetos devem estar cientes de que os projetos de aplicativo universal do Windows tem uma estrutura que é diferente de aplicativos de plataforma única. Este passo a passo mostra como navegar de projeto compartilhado e gerenciar os itens compartilhados.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  

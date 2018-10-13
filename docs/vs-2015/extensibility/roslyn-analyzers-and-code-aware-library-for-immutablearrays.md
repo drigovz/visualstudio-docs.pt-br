@@ -1,7 +1,7 @@
 ---
 title: Analisadores de Roslyn e biblioteca de reconhecimento de código para ImmutableArrays | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3353596474525a381a495288f5f5b951b7e5efac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94dbfbc39260e0cfcab374c2db12ab103f310b28
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466304"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173349"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analisadores Roslyn e biblioteca com reconhecimento de código para ImmutableArrays
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [analisadores de Roslyn e biblioteca de reconhecimento de código para ImmutableArrays](https://docs.microsoft.com/visualstudio/extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays).  
-  
 O [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") ajuda você a criar bibliotecas de código.  Uma biblioteca de reconhecimento de código fornece funcionalidade que você pode usar e ferramentas (analisadores de Roslyn) para ajudá-lo a usar a biblioteca da melhor maneira ou para evitar erros.  Este tópico mostra como criar um analisador Roslyn de mundo real para capturar erros comuns ao usar o [NIB: coleções imutáveis](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) pacote do NuGet.  O exemplo também demonstra como fornecer uma correção de código para um problema de código encontrado pelo analisador.  Usuários veem correções de código em que a lâmpada do Visual Studio da interface do usuário e podem aplicar uma correção para o código automaticamente.  
   
 ## <a name="getting-started"></a>Guia de Introdução  

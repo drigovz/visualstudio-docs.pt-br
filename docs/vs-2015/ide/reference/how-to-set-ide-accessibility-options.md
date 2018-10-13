@@ -1,7 +1,7 @@
 ---
 title: Como definir opções de acessibilidade do IDE| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c51e525b097d1282add6d4404173473f43eba815
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5701efe5da55ebd85d683da55f90f41223220c91
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475430"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205888"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Como definir opções de acessibilidade IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: definir opções de acessibilidade do IDE](https://docs.microsoft.com/visualstudio/ide/reference/how-to-set-ide-accessibility-options).  
-  
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] contém recursos que facilitam a leitura para pessoas com deficiência visual e a escrita para pessoas com destreza limitada. Esses recursos incluem alterar o tamanho e a cor do texto em editores, alterar o tamanho do texto e de botões em barras de ferramentas e o preenchimento automático para métodos e parâmetros, entre outros.  
   

@@ -1,7 +1,7 @@
 ---
 title: Propriedades de funções de domínio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6dc3f92bf1f9788f501b96540b35006ff112267b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 51149979544c19b0a887ad77e80a26284051778b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473163"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244082"
 ---
 # <a name="properties-of-domain-roles"></a>Propriedades de funções de domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [propriedades de funções de domínio](https://docs.microsoft.com/visualstudio/modeling/properties-of-domain-roles).  
-  
 As propriedades na tabela a seguir estão associadas com uma função de domínio. Para obter informações sobre as funções de domínio, consulte [Noções básicas sobre modelos, Classes e relacionamentos](../modeling/understanding-models-classes-and-relationships.md). Para obter mais informações sobre como usar essas propriedades, consulte [personalizando e estendendo uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
 |Propriedade|Descrição|Padrão|  

@@ -1,7 +1,7 @@
 ---
 title: Como criar e aplicar um recurso | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 75041cb9db00b48ea81dfe9a8639c41e4267262c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f89540c7ca084c6ef60d83b7678bb8cd4f56990
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475152"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236503"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Como criar e aplicar um recurso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como criar e aplicar um recurso](https://docs.microsoft.com/visualstudio/designers/how-to-create-and-apply-a-resource).  
-  
 Os estilos e modelos de elementos no Designer XAML são armazenados em entidades reutilizáveis chamadas recursos. Os estilos permitem que você defina propriedades de elemento e reutilize essas configurações para obter uma aparência consistente entre vários elementos. Um [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) define a aparência de um controle e também pode ser aplicado como um recurso. Para obter mais informações, consulte [Guia de início rápido: definindo o estilo dos controles](http://go.microsoft.com/fwlink/?LinkID=248239) e [Guia de início rápido: modelos de controle](http://go.microsoft.com/fwlink/?LinkID=247982).  
   
  Sempre que você cria um novo recurso de uma propriedade existente, [Estilo](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx), `ControlTemplate` ou caixa de diálogo **Criar Recurso** permite definir o recurso no nível do aplicativo, no nível do documento ou no nível do elemento. Esses níveis determinam onde você pode usar o recurso. Por exemplo, se você definir o recurso no nível de elemento, o recurso só poderá ser aplicado ao elemento no qual ele foi criado. Você também pode optar por armazenar o recurso em um dicionário de recursos, que é um arquivo separado que você pode usar novamente em outro projeto.  

@@ -1,7 +1,7 @@
 ---
 title: Exibir ouvintes de eventos DOM | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7eeca4964df8e89511b1a077cace83484c35f44d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9d6f5c913cb2868df1af25470eb69f84575ffab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461770"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223295"
 ---
 # <a name="view-dom-event-listeners"></a>Exibir ouvintes de eventos DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ouvintes de eventos DOM do modo de exibição](https://docs.microsoft.com/visualstudio/debugger/view-dom-event-listeners).  
-  
 Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  O **eventos** guia do Explorador do DOM mostra os eventos que estão associados um elemento DOM. Cada nó superior a **eventos** guia representa um evento que tem assinantes ativos. O nó superior contém subnós que representam os ouvintes registrados do evento específico. Além de exibir os ouvintes de eventos, você pode usar essa guia para navegar até o local do ouvinte de eventos no código JavaScript. As informações contidas neste tópico se aplicam a aplicativos da Windows Store que usam HTML e JavaScript.  
@@ -62,7 +60,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 6.  No Explorador do DOM, escolha `Find` no canto superior direito.  
   
-7.  Tipo `ListView`, e pressione Enter.  
+7.  Digite `ListView`e pressione Enter.  
   
 8.  Se necessário, escolha o **próxima** botão para localizar o `DIV` elemento que representa o `ListView` controle (esse elemento tem um `data-win-control` valor de `WinJS.UI.ListView`).  
   

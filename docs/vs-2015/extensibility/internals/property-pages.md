@@ -1,7 +1,7 @@
 ---
 title: Páginas de propriedades | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 544f69a8cfa90c7977a2861452fa47a570eb0bbb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f68dc7cc470e4244616c6e9a3cb41bdeb8f9103
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466702"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181059"
 ---
 # <a name="property-pages"></a>Páginas de propriedade
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [páginas de propriedade](https://docs.microsoft.com/visualstudio/extensibility/internals/property-pages).  
-  
 Os usuários podem exibir e alterar propriedades de configuração dependente de e - independentes de projeto usando páginas de propriedade. Um **páginas de propriedades** botão está habilitado na **propriedades** janela ou na barra de ferramentas do Gerenciador de soluções para objetos que fornecem um modo de exibição de página de propriedade do objeto selecionado. Páginas de propriedades são criadas pelo ambiente e estão disponíveis para soluções e projetos. Eles podem, no entanto, também ser disponibilizados para itens de projeto que fazem usam de propriedades de configuração dependente. Esse recurso pode ser usado quando os arquivos dentro de um projeto exigem as configurações do comutador de compilador diferente ser compilado corretamente.  
   
 ## <a name="using-property-pages"></a>Usando páginas de propriedade  

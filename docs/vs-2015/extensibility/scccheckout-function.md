@@ -1,7 +1,7 @@
 ---
 title: Função SccCheckout | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4cf1d8196c855612aab93404ca24072c8262e122
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad6621b2a7e4493883bf3639f388a76fa4e552fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476133"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210529"
 ---
 # <a name="scccheckout-function"></a>Função SccCheckout
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [função SccCheckout](https://docs.microsoft.com/visualstudio/extensibility/scccheckout-function).  
-  
 Dada uma lista de nomes de arquivo totalmente qualificado, essa função verifica-los para a unidade local. O comentário se aplica a todos os arquivos que está sendo extraídos. O argumento de comentário pode ser um `null` cadeia de caracteres.  
   
 ## <a name="syntax"></a>Sintaxe  

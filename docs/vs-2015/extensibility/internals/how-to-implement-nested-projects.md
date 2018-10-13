@@ -1,7 +1,7 @@
 ---
 title: 'Como: implementar projetos aninhados | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 860f231771db2385afa830a97749286f128e77f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3892d02e39eb29039f815df5ff9174ce39415a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460925"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173570"
 ---
 # <a name="how-to-implement-nested-projects"></a>Como: implementar projetos aninhados
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: implementar aninhados projetos](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-implement-nested-projects).  
-  
 Quando você cria um tipo de projeto aninhado existe são uma várias etapas adicionais que devem ser implementadas. Um projeto pai leva em algumas das mesmas responsabilidades que a solução tem para seus projetos aninhados (filho). O projeto pai é um contêiner de projetos semelhantes a uma solução. Em particular, há vários eventos que devem ser gerados pela solução e pelos projetos pai para criar a hierarquia de projetos aninhados. Esses eventos são descritos no seguinte processo para a criação de projetos aninhados.  
   
 ### <a name="to-create-nested-projects"></a>Para criar projetos aninhados  

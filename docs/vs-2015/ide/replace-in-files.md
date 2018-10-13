@@ -1,7 +1,7 @@
 ---
 title: Localizar em Arquivos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e693e1166a1612ae8ca82f5d1e8c0e742539da0a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 92029377d5e7d4faf4c6b7f38deda1eecdeaa395
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473715"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228820"
 ---
 # <a name="replace-in-files"></a>Substituir nos Arquivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [substituir nos arquivos](https://docs.microsoft.com/visualstudio/ide/replace-in-files).  
-  
 Substituir nos arquivos * * permite pesquisar o código de um conjunto especificado de arquivos para uma cadeia de caracteres ou expressão e alterar algumas ou todas as correspondências encontradas. As correspondências encontradas e as ações executadas são listadas na janela **Localizar Resultados** selecionada em **Opções de resultado**.  
   
 > [!NOTE]

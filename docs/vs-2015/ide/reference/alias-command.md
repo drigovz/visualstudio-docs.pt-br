@@ -1,7 +1,7 @@
 ---
 title: Comando Alias | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 17c5d979acf41693ddf8e7d0fccbbce10b581d9b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9fb6a4da0b18cf022ee388ff4a6fa5f399dc650
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475030"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258512"
 ---
 # <a name="alias-command"></a>Comando Alias
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [comando Alias](https://docs.microsoft.com/visualstudio/ide/reference/alias-command).  
-  
   
 Cria um novo alias para um comando completo, comando e argumentos completos ou outro alias.  
   

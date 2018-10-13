@@ -1,7 +1,7 @@
 ---
 title: 'Como: usar trechos de código XML | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0025ef0033aba0b04c43b2e1a44c3790322dfd5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4da9c5cd5d4aaf3a99fd891a814b1f8ccef04ac
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462817"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245850"
 ---
 # <a name="how-to-use-xml-snippets"></a>Como: Use snippets XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: usar trechos de XML](https://docs.microsoft.com/visualstudio/xml-tools/how-to-use-xml-snippets).  
-  
   
 Você pode chamar snippets XML usando os dois seguintes comandos no menu de atalho do editor XML. O **Inserir trecho** comando insere o trecho XML a posição do cursor. O **envolver com** comando encapsula o trecho XML ao redor do texto selecionado. Cada snippets XML designou tipos de snippets. Os tipos de trecho determinam se o trecho de código está disponível com o **Inserir trecho** comando, o **envolver com** , ou ambos.  
   

@@ -1,7 +1,7 @@
 ---
 title: Diagnosticar problemas após a implantação | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 66
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7979cdde9ec6411db83753b0006a2f55c4afb4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26a852bdf955a17dd59ffe79d29e2601362e47d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462423"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270589"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnosticar problemas após a implantação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [diagnosticar problemas após a implantação](https://docs.microsoft.com/visualstudio/debugger/diagnose-problems-after-deployment).  
-  
 Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantação usando o IntelliTrace, inclua informações de compilação com a versão para permitir que o Visual Studio localize automaticamente os arquivos de origem e símbolos corretos que são necessárias para depurar o log do IntelliTrace.  
   
  Se você estiver usando o Microsoft Monitoring Agent para controlar o IntelliTrace, também precisará configurar o monitoramento de desempenho do aplicativo no servidor da web. Ele registra eventos de diagnóstico enquanto seu aplicativo é executado e salva os eventos em um arquivo de log do IntelliTrace. Você pode, em seguida, examinar os eventos no Visual Studio Enterprise (mas não Professional ou Community edições), ir para o código onde ocorreu o evento, examinar os valores registrados no momento e avance ou retorne através do código que foi executado. Depois de encontrar e resolver o problema, repita o ciclo apenas para compilar, liberar e monitorar seu aplicativo para que você possa corrigir problemas potenciais futuros o quanto antes e com mais rapidez.  

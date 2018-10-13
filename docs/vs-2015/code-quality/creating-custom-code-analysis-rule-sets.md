@@ -1,7 +1,7 @@
 ---
 title: Criando conjuntos de regras de análise de código personalizado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 67df017724f31a14504bbd7e2b66657b1db918b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0dabe89c47e42eee57803475abf5274a74ec651
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464588"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273579"
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Criando conjuntos de regras de análise de código personalizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criação de conjuntos de regra de análise de código de personalizado](https://docs.microsoft.com/visualstudio/code-quality/creating-custom-code-analysis-rule-sets).  
-  
 Você pode aplicar regras de análise de código a um projeto de código gerenciado, especificando um conjunto de regras que contém uma ou mais regras. Os conjuntos de regra padrão da Microsoft fornecem a grupos de regras são organizadas por função e a profundidade. Por exemplo, as regras de diretrizes de Design básica da Microsoft e as regras de diretrizes de Design estendido Microsoft contêm regras que se concentram na usabilidade e questões de facilidade de manutenção, com ênfase adicionada em regras de nomenclatura no conjunto de regras estendido.  
   
  Você também pode criar um conjunto de regras personalizadas que combina dois ou mais padrão conjuntos de regras ou que especifica as regras em um ou mais conjuntos de regra padrão. Você salvar a regra personalizada define como um arquivo. RuleSet, e você pode especificá-los em vários projetos de código.  

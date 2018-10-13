@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Objetos ausentes devido ao estado do dispositivo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 665075ce6656d2cebb246b7591821491b1cf2f58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95d962ec83b5d0c3a89d41ab8f8cc40ee76ffbb4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473218"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280833"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Instruções passo a passo: objetos ausentes devido ao estado do dispositivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: faltando objetos devido ao estado do dispositivo](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-device-state).  
-  
 Este passo a passo demonstra como usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnóstico de gráficos para investigar um objeto que está faltando devido a configurado incorretamente o estado do dispositivo.  
   
  Este passo a passo demonstra como:  

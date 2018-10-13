@@ -1,7 +1,7 @@
 ---
 title: Referência de esquema do pacote e de produto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7812354ee1de5341838029e2198912840da6f0b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474856"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271019"
 ---
 # <a name="product-and-package-schema-reference"></a>Referência de esquema de produto e pacote
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [referência de esquema de pacote e produto](https://docs.microsoft.com/visualstudio/deployment/product-and-package-schema-reference).  
-  
 Um *arquivo de produto* é um manifesto XML que descreve todas as dependências externas necessárias por um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo. Exemplos de dependências externas incluem o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] e o Microsoft Data Access Components (MDAC). Um arquivo de pacote é semelhante a um arquivo de produto, mas é usado para instalar os componentes dependentes de cultura de uma dependência, como assemblies localizados, contratos de licença e documentação.  
   
  O arquivo de produto e de pacotes consiste em um nível superior `Product` ou `Package` elemento, cada uma delas contém os elementos a seguir.  

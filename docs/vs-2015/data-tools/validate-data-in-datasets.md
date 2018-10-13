@@ -1,7 +1,7 @@
 ---
 title: Validar dados em conjuntos de dados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 728c496548a195acb98e0b5082d862d6dc8db241
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5dd01b20e84bbe39e0c082a0b598fb6742f33d9f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474492"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279013"
 ---
 # <a name="validate-data-in-datasets"></a>Validar dados em conjuntos de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [validar dados em conjuntos de dados](https://docs.microsoft.com/visualstudio/data-tools/validate-data-in-datasets).  
-  
   
 Validação de dados é o processo de confirmar que os valores que estão sendo inseridos em objetos de dados estão em conformidade com as restrições no esquema do conjunto de dados. O processo de validação também confirma que esses valores são seguindo as regras que foram estabelecidas para seu aplicativo. É uma boa prática para validar dados antes de enviar atualizações para o banco de dados subjacente. Isso reduz os erros, bem como o número potencial de processamentos entre um aplicativo e o banco de dados.  
   

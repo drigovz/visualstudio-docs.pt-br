@@ -1,7 +1,7 @@
 ---
 title: Mensagens de diagnóstico na janela de saída | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0a9e0bb4fa34133937e39b310cb05360e66a443
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72d9da2ea3ab6cb9807fc7e0a668155d37110c3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474474"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246758"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>Mensagens de diagnóstico na janela Saída
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [mensagens de diagnóstico na janela de saída](https://docs.microsoft.com/visualstudio/debugger/diagnostic-messages-in-the-output-window).  
-  
 Você pode gravar as mensagens de tempo de execução na janela Saída usando a classe de Depuração ou a classe de Rastreamento, que fazem parte da biblioteca de classes <xref:System.Diagnostics>. Use a classe de Depuração se você emitir uma saída apenas na versão de Depuração do programa. Use a classe de Rastreamento se você quiser uma saída nas versões de Depuração e de Inicialização.  
   
 ## <a name="output-methods"></a>Métodos de saída  

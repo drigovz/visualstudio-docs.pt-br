@@ -1,7 +1,7 @@
 ---
 title: Portando, migrando e Atualizando projetos do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,12 +24,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 324b24913edbe14152b3efa56bd2a594115798cf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec590e3c643f731a9c85bc59c0c36394988f6c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474503"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204250"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Portando, migrando e atualizando projetos do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Quando você estiver considerando se deve ir para uma versão mais recente do Vi
 |Tipo de projeto|Compatibilidade|  
 |---------------------|-------------------|  
 |Windows universal aplicativos de plataforma|Para instalar as ferramentas de aplicativos do Windows Universal, na instalação do Visual Studio, selecione **personalizado** ou **modificar**e, em seguida, selecione **ferramentas de desenvolvimento de aplicativo Universal do Windows**.<br /><br /> Desenvolvimento de aplicativos universal Windows Platform (UWP) para Windows 10 tem suporte apenas no [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] no Windows 10 ou [!INCLUDE[win81](../includes/win81-md.md)].|  
-|Aplicativos da Windows Store|Há suporte para o desenvolvimento de aplicativos da Windows Store, incluindo aplicativos universais destinados a Windows 8.1 e Windows Phone 8.1 no [!INCLUDE[win81](../includes/win81-md.md)] e Windows 10. Existente [!INCLUDE[win8](../includes/win8-md.md)] podem continuar funcionando, mas novos projetos [!INCLUDE[win8](../includes/win8-md.md)] projetos não podem ser criados. Os projetos do [!INCLUDE[win81](../includes/win81-md.md)] podem depender apenas de determinados tipos de referência. Para obter mais informações, consulte [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md). **Observação:** [!INCLUDE[win81](../includes/win81-md.md)] projetos que você cria usando [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] ou [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] não podem ser abertos no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].   Isso ocorre porque [!INCLUDE[win81](../includes/win81-md.md)] projetos criados usando [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] e [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] visar essas versões, e [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] dá suporte apenas [!INCLUDE[win8](../includes/win8-md.md)] projetos destinados [!INCLUDE[win8](../includes/win8-md.md)].|  
+|Aplicativos da Windows Store|Há suporte para o desenvolvimento de aplicativos da Windows Store, incluindo aplicativos universais destinados a Windows 8.1 e Windows Phone 8.1 no [!INCLUDE[win81](../includes/win81-md.md)] e Windows 10. Existente [!INCLUDE[win8](../includes/win8-md.md)] podem continuar funcionando, mas novos projetos [!INCLUDE[win8](../includes/win8-md.md)] projetos não podem ser criados. Os projetos do [!INCLUDE[win81](../includes/win81-md.md)] podem depender apenas de determinados tipos de referência. Para obter mais informações, consulte [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md). **Observação:** [!INCLUDE[win81](../includes/win81-md.md)] projetos que você cria usando [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] ou [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] não podem ser abertos no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Isso ocorre porque [!INCLUDE[win81](../includes/win81-md.md)] projetos criados usando [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] e [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] visar essas versões, e [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] dá suporte apenas [!INCLUDE[win8](../includes/win8-md.md)] projetos destinados [!INCLUDE[win8](../includes/win8-md.md)].|  
 |[!INCLUDE[net_v451](../includes/net-v451-md.md)]|Você pode criar e usar esses projetos no [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] e [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] depois de instalar o pacote de multiplataforma apropriado. Esses projetos não têm suporte no Visual Studio 2010 SP1.|  
 |[!INCLUDE[net_v45](../includes/net-v45-md.md)]|Você pode criar e abrir esses projetos no [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] e [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], mas não no Visual Studio 2010 SP1.|  
 |BizTalk|Projetos do BizTalk server não são compatíveis com [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] ou [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|  

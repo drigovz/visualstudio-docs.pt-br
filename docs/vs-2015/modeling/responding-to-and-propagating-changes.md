@@ -1,7 +1,7 @@
 ---
 title: Respondendo a alterações e propagando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 157908b1d612f840f4d1c3e48c5ecd0350491b39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 32deaa75ed09ad1a1320ec72d95d75adc92c12b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468322"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280378"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Respondendo a alterações e propagando-as
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [respondendo a e propagando alterações](https://docs.microsoft.com/visualstudio/modeling/responding-to-and-propagating-changes).  
-  
 Quando um elemento é criado, excluído ou atualizado, você pode escrever código que propaga a alteração para outras partes do modelo ou a recursos externos como arquivos, bancos de dados ou outros componentes.  
   
 ## <a name="in-this-section"></a>Nesta seção  

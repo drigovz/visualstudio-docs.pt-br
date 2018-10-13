@@ -1,7 +1,7 @@
 ---
 title: Trabalhar com ativos 3D para jogos e aplicativos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 48082153e92a280745d649a23454f6c3870302dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdf19958ec7b3cfe72ee00ea84e0e23724a51458
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475244"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265221"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Trabalhando com ativos 3D para jogos e aplicativos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [trabalhando com ativos 3D para jogos e aplicativos](https://docs.microsoft.com/visualstudio/designers/working-with-3-d-assets-for-games-and-apps).  
-  
 Este documento descreve as ferramentas [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que você pode usar para criar ou modificar modelos 3D, texturas e sombreadores para aplicativos e jogos do DirectX.  
   
 ## <a name="directx-app-development-in-visual-studio"></a>Desenvolvimento de aplicativos em DirectX no Visual Studio  

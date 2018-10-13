@@ -1,7 +1,7 @@
 ---
 title: Cursor da linha do tempo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8a11cd7c6c4e6e32b5decdaf3027a6981420229
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3e6c450be0054cf5087c4fb6f74d8b578207ddad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475371"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277310"
 ---
 # <a name="timeline-caret"></a>Circunflexo da linha do tempo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [acento circunflexo da linha do tempo](https://docs.microsoft.com/visualstudio/profiling/timeline-caret).  
-  
 Ao selecionar um ponto na linha do tempo de um segmento de thread em execução, um cursor da Linha do tempo é exibido acima dele. A pilha de chamadas exibida na guia da pilha atual é a mais próxima em tempo ao local em que você clicou no segmento. O cursor é usado para associar a pilha de chamadas, que é exibida sob a guia **Atual**, com o instante em que uma amostra dela foi coletada. O cursor mostra o local exato da pilha de chamadas, que é a pilha de chamadas mais próxima ao local que o usuário selecionou.  
   
 ## <a name="see-also"></a>Consulte também  

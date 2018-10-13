@@ -1,7 +1,7 @@
 ---
 title: Modelo para pacotes de controle do código-fonte | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 220d8596827c637b578e4ccb52796607b9bfd413
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b67274702906b4e1c778dd66e2cac2b96a84b6e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464530"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237153"
 ---
 # <a name="model-for-source-control-packages"></a>Modelo de pacotes de controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [modelo para pacotes de controle do código-fonte](https://docs.microsoft.com/visualstudio/extensibility/internals/model-for-source-control-packages).  
-  
 O modelo a seguir representa um exemplo de uma implementação de controle do código-fonte. No modelo, você pode ver as que você deve implementar interfaces e os serviços de ambiente que você deve chamar. Assim como todos os serviços, você realmente chama os métodos de uma interface específica que você obtém por meio do serviço. Os nomes das classes são identificados para torná-lo mais fácil de ver como o controle de origem é realizado.  
   
  ![SCC&#95;exemplos de SCRIP](../../extensibility/internals/media/scc-tup.gif "SCC_TUP")  

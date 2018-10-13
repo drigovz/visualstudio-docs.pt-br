@@ -1,12 +1,12 @@
 ---
 title: Mapear dependências nas soluções | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
 - vs.progression.standardgraphsdialog
@@ -32,18 +32,16 @@ caps.latest.revision: 245
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 06dc2d18ab6641847e2f0edb0d34cb671bca28a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae5e9491b8a02293a48a3ccc3e5e21a87fa5e878
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462447"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200766"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapear as dependências nas soluções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [mapear as dependências nas soluções](https://docs.microsoft.com/visualstudio/modeling/map-dependencies-across-your-solutions).  
-  
 Quando você quer entender dependências em seu código, exiba-os Criando mapas de código. Isso ajuda você a ver como o código se ajusta sem ler nos arquivos e linhas de código.  
   
  ![Exibir as dependências nas soluções](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  

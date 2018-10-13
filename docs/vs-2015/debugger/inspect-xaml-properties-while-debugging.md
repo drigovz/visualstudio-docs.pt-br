@@ -1,7 +1,7 @@
 ---
 title: Inspecione as propriedades XAML durante a depuração | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb10290e14290f59950e6b291d479de2099ac7f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 282b93ac9f04f5e547567e8380e65826f433ba2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476338"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282250"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspecione as propriedades XAML durante a depuração
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [propriedades de XAML de inspecionar durante a depuração](https://docs.microsoft.com/visualstudio/debugger/inspect-xaml-properties-while-debugging).  
-  
 Você pode obter uma exibição em tempo real de seu código XAML em execução com o **Live Visual Tree** e o **Live Property Explorer**. Essas ferramentas oferecem um modo de exibição de árvore dos elementos da interface do usuário do seu aplicativo em execução do XAML e mostram as propriedades de tempo de execução de qualquer elemento de interface do usuário selecionado.  
   
  Você pode usar essas ferramentas nas seguintes configurações:  

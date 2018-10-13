@@ -1,7 +1,7 @@
 ---
 title: Pré-requisitos de implantação de aplicativo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3a866105a2b9d4549fd3684dc4726f165d43a7af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462018"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217926"
 ---
 # <a name="application-deployment-prerequisites"></a>Pré-requisitos de implantação de aplicativos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [pré-requisitos de implantação do aplicativo](https://docs.microsoft.com/visualstudio/deployment/application-deployment-prerequisites).  
-  
 Para garantir que seu aplicativo será instalado e executará com êxito, você deve primeiro garantir que todos os componentes dos quais o aplicativo depende já estejam instalados no computador de destino. Por exemplo, a maioria dos aplicativos criados usando o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tem uma dependência sobre o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]; a versão correta do tempo de execução de linguagem comum deve estar presente no computador de destino antes a instalação do aplicativo.  
   
  Você pode selecionar esses pré-requisitos a **caixa de diálogo de pré-requisitos** e instalar o .NET Framework e outros redistribuíveis como parte de sua instalação. Essa prática é conhecida como *inicialização*. Em seguida, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera um programa executável do Windows chamado Setup.exe, também conhecido como um *bootstrapper*. O bootstrapper é responsável pela instalação desses pré-requisitos antes de executar o aplicativo. Para obter mais informações sobre como selecionar esses pré-requisitos, consulte [caixa de diálogo de pré-requisitos](../ide/reference/prerequisites-dialog-box.md).  

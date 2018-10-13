@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Getsymbolsbyaddr | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec9d680e9e092cade188633edf7e2c605c8d5f47
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82741ef603cc82abbde442f2b86be0dc0d082251
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464748"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206005"
 ---
 # <a name="idiasessiongetsymbolsbyaddr"></a>IDiaSession::getSymbolsByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasession:: Getsymbolsbyaddr](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-getsymbolsbyaddr).  
-  
 Recupera um enumerador que localiza os símbolos na ordem de seus endereços.  
   
 ## <a name="syntax"></a>Sintaxe  

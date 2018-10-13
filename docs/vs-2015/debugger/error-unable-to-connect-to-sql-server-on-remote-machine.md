@@ -1,7 +1,7 @@
 ---
 title: 'Erro: Não é possível conectar ao SQL Server na máquina remota | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a30d9747d954ef70b0400af4a412d6e8d58ee77a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64f10867668b44c91268a6a27d61ddb1edfb3145
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467563"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221761"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Erro: não foi possível se conectar ao SQL Server na máquina remota
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [erro: não é possível conectar ao SQL Server no computador remoto](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-connect-to-sql-server-on-remote-machine).  
-  
 Não é possível conectar ao SQL Server no computador remoto *nome*. Acesso negado. Verifique se você instalou o depurador remoto no computador remoto. Se o computador remoto não estiver em um domínio ou se o Visual Studio for executado em uma conta local, o computador remoto deverá ter uma conta com o mesmo nome de usuário e senha que a conta local.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  

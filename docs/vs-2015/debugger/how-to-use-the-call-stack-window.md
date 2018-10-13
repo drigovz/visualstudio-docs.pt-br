@@ -1,7 +1,7 @@
 ---
 title: 'Como: usar a janela de pilha de chamadas | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75b617e9de62c20cc1e8a32cf993f5f03201f4fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0e79c491eeec373bd3753a5ea55777a079cc51ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587435"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271655"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Como usar a janela Pilha de Chamadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibir a pilha de chamadas no depurador no Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-call-stack-window).  
-  
 Usando o **pilha de chamadas** janela, você pode exibir as chamadas de função ou procedimento que estão atualmente na pilha.  
   
  O **pilha de chamadas** janela exibe o nome de cada função e que ele está escrito na linguagem de programação. O nome da função ou do procedimento pode ser acompanhado de informações opcionais, como o nome do módulo, o número da linha e os nomes de parâmetro, tipos e valores. A exibição dessas informações opcionais pode ser ativada ou desativada.  

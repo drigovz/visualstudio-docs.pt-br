@@ -1,7 +1,7 @@
 ---
 title: Opções de linha de comando do Devenv | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 459ab16b30882feb3d167d7668ffd660e6490cf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ee1596cf59fb4ba9b21772cdabc0c875ef8779a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474602"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215028"
 ---
 # <a name="devenv-command-line-switches"></a>Opções de linha de comando do desenvolvedor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [opções de linha de comando Devenv](https://docs.microsoft.com/visualstudio/ide/reference/devenv-command-line-switches).  
-  
   
 O Devenv permite definir várias opções para o IDE (ambiente de desenvolvimento integrado) e também criar, depurar e implantar projetos com base na linha de comando. Use essas opções para executar o IDE com base em um script ou um arquivo .bat, por exemplo, um script de build noturno ou para iniciar o IDE em uma configuração específica.  
   

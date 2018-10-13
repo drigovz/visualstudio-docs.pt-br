@@ -1,7 +1,7 @@
 ---
 title: Coloração de sintaxe em um serviço de linguagem herdado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57d8115be296beba910da7a1bdb1019645c0ee5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c938f6d4a08e164638e70be969fe310fe2a324c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461498"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223490"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Coloração de sintaxe em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [coloração de sintaxe em um serviço de linguagem herdado](https://docs.microsoft.com/visualstudio/extensibility/internals/syntax-colorizing-in-a-legacy-language-service).  
-  
 Colorização de sintaxe é um recurso que faz com que os diferentes elementos de uma linguagem de programação a ser exibido em um arquivo de origem em diferentes cores e estilos. Para dar suporte a esse recurso, você precisa fornecer um analisador ou um scanner que pode identificar os tipos de elementos léxicos ou tokens no arquivo. Muitas linguagens de distinguir as palavras-chave, delimitadores (por exemplo, parênteses ou chaves) e comentários por colori-los de maneiras diferentes.  
   
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações, consulte [estender o Editor e os serviços de linguagem](../../extensibility/extending-the-editor-and-language-services.md).  

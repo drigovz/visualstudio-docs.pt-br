@@ -1,7 +1,7 @@
 ---
 title: Recursos do IntelliTrace | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 73
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15b58b80a3ab3c9ae1a515eda82a946d56c0554d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4443c18b6972d87d49272d33e7d2f33c25277c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465955"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278545"
 ---
 # <a name="intellitrace-features"></a>funcionalidades do IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [recursos do IntelliTrace](https://docs.microsoft.com/visualstudio/debugger/intellitrace-features).  
-  
 Você pode usar o IntelliTrace para registrar eventos e chamadas de método do aplicativo, que permite que você examine seu estado (pilha de chamadas e valores de variáveis locais) em pontos diferentes na execução. Basta iniciar a depuração como de costume - IntelliTrace é ativado por padrão e você pode ver as informações do IntelliTrace está gravando no novo **ferramentas de diagnóstico** janela sob o **eventos** guia. Selecione um evento e clique em **Ativar depuração histórica** para ver a pilha de chamadas e variáveis locais registradas para este evento.  
   
  Para obter uma descrição passo a passo, consulte [instruções passo a passo: usando o IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  

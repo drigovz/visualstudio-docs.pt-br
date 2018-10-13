@@ -1,7 +1,7 @@
 ---
 title: Trabalhando com soluções de linguagem específica do domínio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bab89088ec189e99b1856977f8ea4915cae999e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f511ee44b983c388fb3a51c01d5e9424127036b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475332"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190288"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Trabalhando com soluções de linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [trabalhando com soluções de linguagem específica do domínio](https://docs.microsoft.com/visualstudio/modeling/working-with-domain-specific-language-solutions).  
-  
 Uma linguagem específica de domínio (DSL) é criada usando um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução. Esta seção é sobre como configurar e personalizar a solução.  
   
 ## <a name="in-this-section"></a>Nesta seção  

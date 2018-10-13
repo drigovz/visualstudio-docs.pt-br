@@ -1,7 +1,7 @@
 ---
 title: Exibição de detalhes de recurso – Dados de contenção | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 760240544971062da3a5161eab7d203ba6d097c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a99cce1d78c91ce2300e30127d0e5375d2cc1b1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461740"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203717"
 ---
 # <a name="resource-details-view---contention-data"></a>Exibição de detalhes do recurso – Dados de contenção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de detalhes do recurso – dados de contenção](https://docs.microsoft.com/visualstudio/profiling/resource-details-view-contention-data).  
-  
 A exibição de Detalhes do Recurso apresenta um gráfico de linha do tempo dos eventos de bloqueio que foram causados por contenções em um recurso selecionado. Um evento de bloqueio ocorre quando um thread é forçado a suspender a execução porque outro thread bloqueou o acesso ao recurso.  
   
  Este modo de exibição representa a linha do tempo de execução de cada thread como uma barra horizontal e cada evento de bloqueio como uma barra vertical na linha do tempo do thread. Quando necessário, você pode ampliar uma seção da linha do tempo para exibir eventos individuais. Para exibir o caminho de execução (pilha de chamadas) das funções que levou ao evento, clique na barra de evento. As funções aparecem na janela **Pilha de Chamadas**. Quando o código-fonte para uma função estiver disponível, você pode clicar no nome de função para editar o arquivo de origem na interface para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

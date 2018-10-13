@@ -1,7 +1,7 @@
 ---
 title: As pseudovariáveis | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc6c4f7240e32cd70a31ef90a2c890420bf1b336
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 028ca4630ca2e07b8f522d3cb630305d0e3ae5d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466265"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281782"
 ---
 # <a name="pseudovariables"></a>Pseudovariáveis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [pseudovariáveis](https://docs.microsoft.com/visualstudio/debugger/pseudovariables).  
-  
 As pseudovariáveis são termos usados para exibir determinadas informações em uma janela variável ou o **QuickWatch** caixa de diálogo. Você pode inserir um pseudovariável da mesma maneira que incorporaria uma variável normal. As pseudovariáveis não são variáveis, no entanto, e não correspondem aos nomes de variáveis em seu programa.  
   
 ## <a name="example"></a>Exemplo  

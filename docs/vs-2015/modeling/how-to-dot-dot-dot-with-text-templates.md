@@ -1,7 +1,7 @@
 ---
 title: Como... com modelos de texto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 04cba7688e358f3267bd4f3fb45b2ac10e83b286
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2dc895d6922197c3bba43b84f874d591ac75d54f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460343"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231498"
 ---
 # <a name="how-to--with-text-templates"></a>Como ... com modelos de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como... com modelos de texto](https://docs.microsoft.com/visualstudio/modeling/how-to-dot-dot-dot-with-text-templates).  
-  
 Modelos de texto em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornecem uma maneira útil de geração de texto de qualquer tipo. Você pode usar modelos de texto para gerar o texto em tempo de execução como parte do seu aplicativo e em tempo de design para gerar alguns dos seus códigos de projeto. Este tópico resume com mais frequência solicitado "Como faço...?" perguntas.  
   
  Neste tópico, várias respostas que são precedidas por marcadores são sugestões alternativas.  

@@ -1,7 +1,7 @@
 ---
 title: Visualizando eventos EventSource como marcadores | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9e3c86c40d35ae92cee8594979e298abfc8652b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4167ed020b0ec071e9fbe212dbb74ce0d54c03c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462492"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251882"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualizando eventos EventSource como marcadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [visualizando eventos EventSource como marcadores](https://docs.microsoft.com/visualstudio/profiling/visualizing-eventsource-events-as-markers).  
-  
 A Visualização Simultânea pode exibir eventos do EventSource como marcadores e você pode controlar como os marcadores são exibidos. Para exibir os marcadores do EventSource, registre o GUID do provedor ETW usando a caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). A Visualização Simultânea tem convenções padrão para representar eventos do EventSource como [Marcadores de Sinalizador](../profiling/flag-markers.md), [Marcadores de Período](../profiling/span-markers.md) e [Marcadores de Mensagem](../profiling/message-markers.md). Você pode personalizar como os eventos EventSource são exibidos, adicionando campos personalizados aos eventos. Para obter mais informações sobre marcadores, consulte [Marcadores da Visualização Simultânea](../profiling/concurrency-visualizer-markers.md). Para obter mais informações sobre eventos do EventSource, consulte <xref:System.Diagnostics.Tracing>.  
   
 ## <a name="default-visualization-of-eventsource-events"></a>Visualização Padrão de Eventos do EventSource  

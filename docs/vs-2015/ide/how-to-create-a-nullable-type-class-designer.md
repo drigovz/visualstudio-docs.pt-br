@@ -1,7 +1,7 @@
 ---
 title: Como criar um tipo que permite valor nulo (Designer de Classe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f93d5a18b71a054a147b396afd293c6bdce36c64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475698"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179420"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Como criar um tipo anulável (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: criar um tipo anulável (Designer de classe)](https://docs.microsoft.com/visualstudio/ide/how-to-create-a-nullable-type-class-designer).  
-  
 Alguns tipos de valor nem sempre têm (ou precisam de) um valor definido. Essa é uma prática comum em bancos de dados, em que alguns campos podem não receber nenhum valor. Por exemplo, é possível atribuir um valor nulo a um campo de banco de dados para indicar que ele ainda não recebeu um valor.  
   
  Um *tipo que permite valor nulo* é um tipo de valor que é estendido, para que ele use o intervalo de valores típico para esse tipo e também um valor nulo. Por exemplo, um tipo que permite valor nulo igual a `Int32`, também indicado como Nullable\<Int32>, pode receber qualquer valor de -2147483648 a 2147483647 ou receber um valor nulo. Um Nullable\<bool> pode receber os valores `True`, `False` ou nulo (nenhum valor).  

@@ -1,7 +1,7 @@
 ---
 title: Como compilar os mesmos arquivos de origem com opções diferentes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55133fcd8126a5f77a670742b84ff83d9662520c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c506d0e82bd1c71431ae766be636db35d96debd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462445"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243913"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Como compilar os mesmos arquivos de origem com opções diferentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: compilar os mesmos arquivos de origem com opções diferentes](https://docs.microsoft.com/visualstudio/msbuild/how-to-build-the-same-source-files-with-different-options).  
-  
   
 Quando compila projetos, frequentemente você compila os mesmos componentes com opções de build diferente. Por exemplo, é possível criar um build de depuração com informações de símbolo ou um build de versão sem nenhuma informação de símbolo, mas com otimizações habilitadas. Ou você pode compilar um projeto para ser executado em uma plataforma específica, como x86 ou [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]. Em todos esses casos, a maioria das opções de build permanecem as mesmas, apenas algumas opções são alteradas para controlar a configuração de build. Com [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], você usa propriedades e condições para criar as diferentes configurações de build.  
   

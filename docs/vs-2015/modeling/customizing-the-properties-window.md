@@ -1,7 +1,7 @@
 ---
 title: Personalizando a janela Propriedades | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a5ae14866780be08633f5a7cf07f70c5b94bcca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa690b88b5ab2d7aac3f8aea9967419dcbd43df1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468283"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241729"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizando a janela de propriedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Personalizando a janela propriedades](https://docs.microsoft.com/visualstudio/modeling/customizing-the-properties-window).  
-  
 Você pode personalizar a aparência e comportamento da janela Propriedades em sua linguagem específica de domínio (DSL) em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Em sua definição de DSL, você pode definir propriedades de domínio em cada classe de domínio. Por padrão, quando você seleciona uma instância da classe, em um diagrama ou no Gerenciador de modelos, todas as propriedades de domínio é listada na janela Propriedades. Isso permite que você consulte e edite os valores das propriedades de domínio, mesmo se você não tiver mapeado-los para os campos de forma no diagrama.  
   
 ## <a name="names-descriptions-and-categories"></a>Nomes, descrições e categorias  

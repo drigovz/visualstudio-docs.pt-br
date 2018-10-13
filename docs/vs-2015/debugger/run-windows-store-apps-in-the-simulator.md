@@ -1,7 +1,7 @@
 ---
 title: Aplicativos de execução Windows Store no simulador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3007d0e6ea7a835cd9147f5f5ff94c91f9f7bda4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467571"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190717"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Executar aplicativos da Windows Store no simulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [aplicativos de execução Windows Store no simulador](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-in-the-simulator).  
-  
 O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo da área de trabalho que simula um aplicativo da Windows Store. Você pode executar aplicativos e simule eventos comuns de toque e rotação em seu computador de desenvolvimento. Você também pode escolher o tamanho da tela física e a resolução que você deseja emular e simular propriedades de conexão de rede.  
   
  O simulador fornece um ambiente no qual você pode criar, desenvolver, depurar e testar aplicativos da Windows Store. No entanto, antes de publicar um aplicativo na Windows Store, convém testá-lo em um dispositivo real.  

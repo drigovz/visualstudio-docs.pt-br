@@ -1,7 +1,7 @@
 ---
 title: 'Diagramas de camada: Referência | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 85024000e0cb4be7f9828052c6bc9194d498ab30
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c44ad4b225b3fd52f0e25369777b1a4f6df8c95e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463547"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248307"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramas de camada: referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [diagramas de dependência: referência](https://docs.microsoft.com/visualstudio/modeling/layer-diagrams-reference).  
-  
 No Visual Studio, você pode usar um *diagrama de camada* para visualizar a arquitetura lógica de alto nível do sistema. Um diagrama de camada organiza os artefatos físicos no seu sistema em grupos abstratos, lógicos, chamados *camadas*. Essas camadas descrevem tarefas principais realizadas pelos artefatos ou os principais componentes do seu sistema. Cada camada também pode conter camadas aninhadas que descrevem tarefas mais detalhadas.  
   
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

@@ -1,7 +1,7 @@
 ---
 title: Introdução ao WPF | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4fc3d97c98356ce4978093fae0afd62eb0bcbac0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f408042c5c8a07e00b37adffacc9c3e6b13207d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475973"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172286"
 ---
 # <a name="getting-started-with-wpf"></a>Introdução ao WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Introdução ao WPF](https://docs.microsoft.com/visualstudio/designers/getting-started-with-wpf).  
-  
 O Windows Presentation Foundation (WPF) é uma estrutura de interface do usuário que cria aplicativos cliente da área de trabalho. A plataforma de desenvolvimento WPF dá suporte a um amplo conjunto de funcionalidades de desenvolvimento de aplicativos, incluindo um modelo de aplicativo, funcionalidades, controles, elementos gráficos, layout, vinculação de dados, documentos e segurança. Ele é um subconjunto do .NET Framework, portanto, se você tiver criado anteriormente aplicativos com o .NET Framework usando ASP.NET ou Windows Forms, a experiência de programação deverá ser familiar. O WPF usa a linguagem XAML para fornecer um modelo declarativo para programação de aplicativos. Esta seção apresenta tópicos que servem como introdução e lhe ajudarão a começar a usar o WPF.  
   
 ## <a name="where-should-i-start"></a>Onde devo começar?  

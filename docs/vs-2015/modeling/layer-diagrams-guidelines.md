@@ -1,7 +1,7 @@
 ---
 title: 'Diagramas de camada: Diretrizes | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd0115021ba00d8e727f67260f5bcdb00464dd2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461477"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202573"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramas de camada: diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [diagramas de dependência: diretrizes](https://docs.microsoft.com/visualstudio/modeling/layer-diagrams-guidelines).  
-  
 Descrever a arquitetura do aplicativo em um alto nível, criando *diagramas de camada* no Visual Studio. Certifique-se de que o código permaneça consistente com esse design, validando seu código com um diagrama de camada. Você também pode incluir validação de camada no processo de compilação. Ver [vídeo do Channel 9: Design e validar sua arquitetura usando diagramas de camada](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

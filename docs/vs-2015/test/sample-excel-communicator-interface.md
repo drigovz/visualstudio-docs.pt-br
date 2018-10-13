@@ -1,7 +1,7 @@
 ---
 title: Interface de comunicador do Excel de amostra | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 1dbf1090-762c-4824-82dd-2d7c2c6f00b6
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a1f544734cd00361162c461cd2b1682204075e10
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ffbfe7c8d69ecca2ff90dc1d01af2eb15d7d277
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464526"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194435"
 ---
 # <a name="sample-excel-communicator-interface"></a>Interface de comunicador do Excel de amostra
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Interface de comunicador do Excel de amostra](https://docs.microsoft.com/visualstudio/test/sample-excel-communicator-interface).  
-  
 A interface `IExcelUICommunication` de amostra é usada no objeto `ExcelUICommunicator` no projeto `ExcelAddIn`.  
   
 ## <a name="iexceluicommunication-interface"></a>Interface IExcelUICommunication  

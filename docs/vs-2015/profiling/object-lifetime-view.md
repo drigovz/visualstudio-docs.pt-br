@@ -1,7 +1,7 @@
 ---
 title: Exibição tempo de vida do objeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3aaff07ecc6732403ef1d611cb23129207a27351
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a503a0de6a8b9935fbfb6b7e415d79cb0520f67d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462354"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202846"
 ---
 # <a name="object-lifetime-view"></a>Exibição do tempo de vida do objeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de tempo de vida do objeto](https://docs.microsoft.com/visualstudio/profiling/object-lifetime-view).  
-  
 A exibição de Tempo de vida do objeto está disponível quando **Também coletar dados de tempo de vida do objeto .NET** estiver marcada nas páginas de propriedade de Sessão de desempenho.  
   
  O coletor de lixo do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] gerencia a alocação e liberação de memória para seu aplicativo. Para otimizar o desempenho do coletor de lixo, o heap gerenciado é dividido em três gerações: 0, 1 e 2. O coletor de lixo do tempo de execução armazena novos objetos na geração 0. Os objetos que sobrevivem as coletas são promovidos e armazenados para as gerações 1 e 2.  
