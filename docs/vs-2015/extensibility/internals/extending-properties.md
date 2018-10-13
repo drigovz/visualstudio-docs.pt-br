@@ -1,7 +1,7 @@
 ---
 title: Estendendo propriedades | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9db64799426eea6aeaecdd0890da683a7597a129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be53c59cc0a1baf5331502c3079ee741751c53eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460566"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303700"
 ---
 # <a name="extending-properties"></a>Estendendo propriedades
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [estendendo propriedades](https://docs.microsoft.com/visualstudio/extensibility/internals/extending-properties).  
-  
 O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Properties** janela é um navegador de propriedade universal para componentes COM e COM+ e dá suporte a todas [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] produtos. O **propriedades** janela funciona com `ITypeInfo` COM+ metadados para listar as propriedades de tempo de design para o objeto atualmente selecionado em outra janela no ambiente de desenvolvimento integrado (IDE) e informações de tipo.  
   
  O **propriedades** janela, que pode ser aberta pressionando F4 no teclado, ou selecionando **janela propriedades** sobre o **exibição** menu, é usado para exibir e editar Propriedades de configuração independente, o tempo de design e eventos dos objetos selecionados. Propriedades dependentes de configuração, associadas com soluções e projetos, são exibidas na [páginas de propriedade](../../extensibility/internals/property-pages.md). Para obter mais informações, consulte [propriedades do projeto: NIB](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [gerenciar opções de configuração](../../extensibility/internals/managing-configuration-options.md), e [gerenciamento NIB: Item em projetos](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
