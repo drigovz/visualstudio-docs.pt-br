@@ -25,6 +25,7 @@
 #### [Enterprise Mobility & Security](vs-ems.md)
 #### [Conta de Desenvolvedor do Windows](vs-windows-dev.md)
 #### [Assinatura de Desenvolvedor do Office 365](vs-office-dev.md)
+#### [Assinatura do Office 365](vs-office365.md)
 #### [Power BI Pro](vs-pbi.md)
 #### [Modern Requirements4TFS](vs-modernreq.md)
 #### [Azure Pay-As-You-Go](vs-azure-payg.md)
