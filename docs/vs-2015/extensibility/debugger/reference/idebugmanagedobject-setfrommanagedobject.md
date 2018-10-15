@@ -1,7 +1,7 @@
 ---
 title: IDebugManagedObject::SetFromManagedObject | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c452225290136cd168b655f2ed3196ca91961168
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f1e4b0aa60cdf20a154305238de74ccdd72cd26
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463268"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280742"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugManagedObject::SetFromManagedObject](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject).  
-  
 Define o valor da instância do objeto de classe de valor da instância da classe de valor fornecida como um parâmetro.  
   
 ## <a name="syntax"></a>Sintaxe  

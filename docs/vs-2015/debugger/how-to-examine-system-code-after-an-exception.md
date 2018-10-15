@@ -1,7 +1,7 @@
 ---
 title: 'Como: examinar o código do sistema após uma exceção | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c66e77a2e5cc7596bb8473678b84f962453df41
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 91b0f0ba806868420b56f59d1b3f6de99a87886b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460806"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255769"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Como examinar um código de sistema após uma exceção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: Examinar código após uma exceção do sistema](https://docs.microsoft.com/visualstudio/debugger/how-to-examine-system-code-after-an-exception).  
-  
 Quando uma exceção ocorre, você poderá precisar examinar o código dentro de uma chamada do sistema para determinar a causa da exceção. O procedimento a seguir explica como fazer isso se você não tiver os símbolos carregados para o código do sistema ou se Just My Code estiver habilitado.  
   
 ### <a name="to-examine-system-code-following-an-exception"></a>Para examinar o código do sistema após uma exceção  
