@@ -1,7 +1,7 @@
 ---
 title: Definindo uma imagem de plano de fundo em um diagrama | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ea74561974db32a831b4123578bffb755a24cbc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464503"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240546"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Definindo uma imagem de plano de fundo em um diagrama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definindo uma imagem de plano de fundo em um diagrama de](https://docs.microsoft.com/visualstudio/modeling/setting-a-background-image-on-a-diagram).  
-  
 No SDK de Visualização e Modelagem do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], você pode configurar a imagem de plano de fundo para um designer gerado usando código personalizado.  
   
 ## <a name="setting-the-background-image"></a>Configurando a imagem de plano de fundo  

@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas de extensões para diagramas de camada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 44d06774d5eec41885bf9efbcf74a76373d22b2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8ea8f4e6b102dd9bb4a84154096d5cef906eeab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473752"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250062"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Solucionar problemas de extensões para diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [solucionar problemas de extensões para diagramas de dependência](https://docs.microsoft.com/visualstudio/modeling/troubleshoot-extensions-for-layer-diagrams).  
-  
 Este tópico aborda alguns problemas que você pode encontrar ao criar extensões do modelo de camada.  
   
 #### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>Quando eu pressiono F5 para depurar minha extensão, Meus comandos, manipuladores de gestos, extensões de validação ou propriedades personalizadas não aparecem em diagramas de camada na instância Experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
