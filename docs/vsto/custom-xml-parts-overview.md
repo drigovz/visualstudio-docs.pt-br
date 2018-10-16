@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4c32f3a9b0f0c09b7e7b58aa4c424630326d122
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b31ce44c458f7f376d98fac83670595b8a163d65
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669783"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324997"
 ---
 # <a name="custom-xml-parts-overview"></a>Visão geral de partes XML personalizado
   Você pode inserir dados XML em documentos para alguns aplicativos do Microsoft Office. Quando você insere dados XML em um documento, os dados são denominados um *parte XML personalizada*.  
@@ -76,7 +76,7 @@ ms.locfileid: "35669783"
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Modificar partes XML sem iniciar o aplicativo do Office  
  Você pode adicionar ou modificar uma parte XML personalizada sem iniciar o Excel, PowerPoint ou Word. Isso é útil se você quiser trabalhar com dados XML em um documento em um computador que não tenha instalados, como um servidor de aplicativos do Microsoft Office.  
   
- Para adicionar uma parte XML personalizada sem iniciar o Microsoft Office, use classes no SDK do XML aberto. Essas classes são projetadas para fornecer acesso ao conteúdo XML aberto que é específico para documentos do Office. Por exemplo, para adicionar uma parte XML personalizada para uma pasta de trabalho do Excel, use o [AddNewPart\<T >](http://msdn.microsoft.com/47c348c0-77ab-a504-5097-bcd6a213921a) método de um [WorkbookPart](http://msdn.microsoft.com/d011e6f4-77dd-d02d-66ef-dc4a9e7b26f2) objeto. Para obter mais informações, consulte [Open XML SDK 2.0](http://msdn.microsoft.com/f6a9ae68-7989-4208-97f5-3c945137a0ab).  
+ Para adicionar uma parte XML personalizada sem iniciar o Microsoft Office, use classes no SDK do XML aberto. Essas classes são projetadas para fornecer acesso ao conteúdo XML aberto que é específico para documentos do Office. Por exemplo, para adicionar uma parte XML personalizada para uma pasta de trabalho do Excel, use o [AddNewPart\<T >](https://msdn.microsoft.com/library/office/cc562657.aspx) método de um [WorkbookPart](https://msdn.microsoft.com/library/office/documentformat.openxml.packaging.workbookpart.aspx) objeto. Para obter mais informações, consulte [SDK do Open XML](/office/open-xml/open-xml-sdk).  
   
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Associar partes XML personalizadas aos controles de conteúdo do Word  
  Você pode associar controles de conteúdo em uma solução do Word a elementos em uma parte XML personalizada. Quando um controle de conteúdo é associado a uma parte XML personalizada, os dados na parte XML personalizada são exibidos na interface do usuário (IU) do controle de conteúdo. Se um usuário edita o texto do controle, o elemento XML correspondente é atualizado automaticamente. Da mesma forma, se os valores de elemento em que as partes XML personalizadas são alterados, os controles de conteúdo que são associados aos elementos XML exibem os novos dados. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md).  
