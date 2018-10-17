@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0d5ab3c86c454a547ea80307c5440441424b1c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499559"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356750"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Criar sua primeira extensão: Olá, mundo
 
@@ -35,11 +35,12 @@ Neste exemplo, você usará o Visual c# para adicionar que um botão de menu per
 
 Antes de começar, verifique se você instalou o **desenvolvimento de extensões do Visual Studio** carga de trabalho que inclui o modelo VSIX, você precisará e código de exemplo.
 
-Observação: Você pode usar qualquer versão do Visual Studio (Community, Professional ou Enterprise) para criar um projeto de extensibilidade do Visual Studio.
+> [!NOTE]
+> Você pode usar qualquer edição do Visual Studio (Community, Professional ou Enterprise) para criar um projeto de extensibilidade do Visual Studio.
 
 ## <a name="create-an-extensibility-project"></a>Criar um projeto de extensibilidade
 
-Etapa 1. Dos **arquivo** menu, clique em **novo projeto**. Na parte inferior da tela, você pode inserir o nome do seu projeto.
+Etapa 1. Dos **arquivo** menu, clique em **novo projeto**. Na parte inferior da tela, insira o nome do seu projeto.
 
 Etapa 2. Dos **modelos** menu, clique em **Visual c#**, clique em **extensibilidade**e, em seguida, clique em **projeto VSIX**.
 
@@ -53,15 +54,15 @@ Se você precisar deixar este tutorial e volte a ela, você pode encontrar seu n
 
 Etapa 1. Se você selecionar o manifesto, você pode ver quais opções estão mutáveis, para a instância, metadados, descrição e versão.
 
-Etapa 2. Clique com botão direito no projeto (não na solução). No menu de contexto, clique em **Add**e, em seguida, clique em **controle de usuário**.
+Etapa 2. Clique com botão direito no projeto (não na solução). No menu de contexto, clique em **Add**e, em seguida, clique em **Novo Item**.
 
-Etapa 3. Volte para o **extensibilidade** seção e, em seguida, clique em **comando personalizado**.
+Etapa 3. Selecione o **extensibilidade** seção e, em seguida, clique em **comando personalizado**.
 
 Etapa 4. No **nome** campo na parte inferior, dê a ele um nome, por exemplo *Command.cs*.
 
 ![comando personalizado](media/hello-world-custom-command.png)
 
-Novo comando será listado na **Gerenciador de soluções** sob o **recursos** branch. Isso também é onde você encontrará outros arquivos relacionados ao seu comando, como os arquivos PNG e ICO, se você quiser modificar a imagem.
+Novo comando está listado na **Gerenciador de soluções** sob o **recursos** branch. Isso também é onde você encontrará outros arquivos relacionados ao seu comando, como os arquivos PNG e ICO, se você quiser modificar a imagem.
 
 ## <a name="modify-the-source-code"></a>Modificar o código-fonte
 
@@ -116,7 +117,7 @@ Certifique-se de salvar suas alterações para cada arquivo.
 
 Agora você pode executar o código-fonte em que a instância Experimental do Visual Studio.
 
-Etapa 1. Clique em **iniciar** na barra de ferramentas. Isso compila seu projeto e iniciar o depurador, iniciando uma nova instância do Visual Studio chamada a **instância Experimental**.
+Etapa 1. Clique em **iniciar** na barra de ferramentas. Isso compila seu projeto e inicia o depurador, iniciando uma nova instância do Visual Studio chamada a **instância Experimental**.
 
 Você verá as palavras **instância Experimental** na barra de título do Visual Studio.
 
