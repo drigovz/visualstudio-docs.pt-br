@@ -52,7 +52,7 @@ Para executar projetos do .NET Core, o SDK do .NET Core deve ser baixado e insta
 
 O suporte do .NET Core inclui:
 
-* IntelliSense de C# e F #.
+* IntelliSense de C# e F#.
 * Modelos de projeto do .NET Core para aplicativos da Web, de biblioteca e de console.
 * Suporte total à depuração, incluindo pontos de interrupção, pilha de chamadas, janela de inspeção, etc.
 * Restauração com base em MSBuild e NuGet PackageReferences.
