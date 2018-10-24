@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f39ff75eaa6efe0d71d884fd5d6d76f65e5dad50
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3a5d07e4267291e30f85b1b16b49213ab119cd1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380195"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932345"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Como ampliar uma região do grafo nos resultados do teste de carga
 
@@ -57,7 +57,7 @@ Após a conclusão de um teste de carga, você poderá usar as barras de zoom pa
 
      \- ou -
 
-     Exiba os detalhes de um teste de carga executado anteriormente. Para obter mais informações, confira [Como acessar resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md).
+     Exiba os detalhes de um teste de carga executado anteriormente. Para saber mais, confira [Como acessar resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md).
 
 3.  Escolha **Gráficos** se os gráficos não forem exibidos.
 
@@ -94,15 +94,15 @@ Após a conclusão de um teste de carga, você poderá usar as barras de zoom pa
 
 ### <a name="to-zoom-to-a-region-of-the-graph-by-choosing-and-dragging"></a>Para ampliar uma região do gráfico escolhendo e arrastando
 
-1.  Escolha um gráfico em uma extremidade da área de zoom.
+1. Escolha um gráfico em uma extremidade da área de zoom.
 
-2.  Arraste o ponteiro do mouse para a outra extremidade da área de zoom.
+2. Arraste o ponteiro do mouse para a outra extremidade da área de zoom.
 
-3.  Solte o botão do mouse.
+3. Solte o botão do mouse.
 
-     Isso aumenta a área que você definiu escolhendo e arrastando.
+    Isso aumenta a área que você definiu escolhendo e arrastando.
 
- O procedimento a seguir descreve como reduzir rapidamente sem precisar ajustar as extremidades da barra de zoom.
+   O procedimento a seguir descreve como reduzir rapidamente sem precisar ajustar as extremidades da barra de zoom.
 
 ### <a name="to-zoom-out"></a>Para reduzir
 
