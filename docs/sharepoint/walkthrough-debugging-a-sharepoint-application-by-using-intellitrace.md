@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e278eeb486d2a2d0150fb3ffd44176d17edbdc33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c617bb84a3d7aad10769ef5dbceec657e49aa21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42624442"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927340"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Passo a passo: Depurar um aplicativo do SharePoint usando o IntelliTrace
 
@@ -46,7 +46,7 @@ Usando o IntelliTrace, você pode depurar mais facilmente soluções do SharePoi
 
 - [Depurar e corrigir a solução do SharePoint](#BKMK_DebugSolution)
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -265,15 +265,15 @@ Agora que o código é adicionado ao receptor do recurso e o coletor de dados es
 
 3. Desative o recurso, executando as seguintes etapas:
 
-    1. Sobre o **ações do Site** menu no SharePoint, escolha **configurações de Site**.
+   1. Sobre o **ações do Site** menu no SharePoint, escolha **configurações de Site**.
 
-    2. Sob **ações do Site**, escolha o **gerenciar recursos do site** link.
+   2. Sob **ações do Site**, escolha o **gerenciar recursos do site** link.
 
-    3. Lado **IntelliTraceTest Feature1**, escolha o **desativar** botão.
+   3. Lado **IntelliTraceTest Feature1**, escolha o **desativar** botão.
 
-    4. Na página de aviso, escolha o **desativar esse recurso** link.
+   4. Na página de aviso, escolha o **desativar esse recurso** link.
 
-     O manipulador de eventos FeatureDeactivating() gera um erro.
+      O manipulador de eventos FeatureDeactivating() gera um erro.
 
 ## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>Coletar dados do IntelliTrace usando o Microsoft Monitoring Agent
 
@@ -286,15 +286,15 @@ Se você instalar o Microsoft Monitoring Agent no sistema que está executando o
 
 2. Desative o recurso:
 
-    1. Sobre o **ações do Site** menu no SharePoint, escolha **configurações de Site**.
+   1. Sobre o **ações do Site** menu no SharePoint, escolha **configurações de Site**.
 
-    2. Sob **ações do Site**, escolha o **gerenciar recursos do site** link.
+   2. Sob **ações do Site**, escolha o **gerenciar recursos do site** link.
 
-    3. Lado **IntelliTraceTest Feature1**, escolha o **desativar** botão.
+   3. Lado **IntelliTraceTest Feature1**, escolha o **desativar** botão.
 
-    4. Na página de aviso, escolha o **desativar esse recurso** link.
+   4. Na página de aviso, escolha o **desativar esse recurso** link.
 
-     Ocorrerá um erro (nesse caso, devido ao erro lançado no manipulador de eventos FeatureDeactivating()).
+      Ocorrerá um erro (nesse caso, devido ao erro lançado no manipulador de eventos FeatureDeactivating()).
 
 3. Na janela do PowerShell, execute as [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) comando para criar o arquivo. itrace, parar de monitorar e reiniciar sua solução do SharePoint.
 

@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9cb57f2609fcd9a80e2a9e0dfd63637e6f700047
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 07ad47ee8d0232df5f528db659def421475e7b33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727536"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924226"
 ---
 # <a name="idebugpropertyenummembers"></a>IDebugProperty::EnumMembers
 Enumera os membros de uma propriedade.  
@@ -41,13 +41,13 @@ HRESULT EnumMembers (
   
 #### <a name="parameters"></a>Parâmetros  
  `dwFieldSpec`  
- [in] Especifica o `DBGPROP_INFO_FLAGS` constantes que determinam quais campos nas estruturas de propriedade de depuração enumerados são devem ser preenchidos.  
+ [in] Especifica o `DBGPROP_INFO_FLAGS` constantes que determinam quais campos nas estruturas de propriedade de depuração enumerados são a serem preenchidos.  
   
  `nRadix`  
- [in] Base a ser usada na interpretação todas as informações numéricas.  
+ [in] Base a ser usado na interpretação de todas as informações numéricas.  
   
  `refiid`  
- [in] Este IID é passado para o enumerador de filtragem. O IID é uma da `IDebugPropertyEnumType` as interfaces que herdam `IDebugPropertyEnumType_All`.  
+ [in] Este IID é passado para o enumerador de filtragem. O IID é um dos `IDebugPropertyEnumType` interfaces que herdam de `IDebugPropertyEnumType_All`.  
   
  `ppEnum`  
  [out] Retorna o `IEnumDebugPropertyInfo` interface que enumera as propriedades do membro.  

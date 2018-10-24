@@ -32,12 +32,12 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925494"
 ---
 # <a name="memory-windows"></a>Janelas de memória
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,21 +91,21 @@ O **memória** janela fornece uma exibição no espaço de memória que é usado
   
 #### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>Para alterar o número de colunas na janela de memória  
   
-1.  Na barra de ferramentas na parte superior a **memória** janela, localize a **colunas** lista.  
+1. Na barra de ferramentas na parte superior a **memória** janela, localize a **colunas** lista.  
   
-2.  No **colunas** , selecione o número de colunas que você deseja exibir ou selecione **automático** para ajuste automático para se ajustar à largura da janela.  
+2. No **colunas** , selecione o número de colunas que você deseja exibir ou selecione **automático** para ajuste automático para se ajustar à largura da janela.  
   
- Se você não quiser que o conteúdo do **memória** janela alterar como o seu programa é executado, você pode desativar a avaliação da expressão dinâmica.  
+   Se você não quiser que o conteúdo do **memória** janela alterar como o seu programa é executado, você pode desativar a avaliação da expressão dinâmica.  
   
 #### <a name="to-toggle-live-evaluation"></a>Para ativar/desativar a avaliação dinâmica  
   
-1.  Clique com botão direito do **memória** janela.  
+1. Clique com botão direito do **memória** janela.  
   
-2.  No menu de atalho, clique em **reavaliar automaticamente**.  
+2. No menu de atalho, clique em **reavaliar automaticamente**.  
   
-     Se a avaliação dinâmica estiver ativa, a opção será selecionada e clicar nela a desativará. Se a avaliação dinâmica estiver inativa, a opção não será selecionada e clicar nela a ativará.  
+    Se a avaliação dinâmica estiver ativa, a opção será selecionada e clicar nela a desativará. Se a avaliação dinâmica estiver inativa, a opção não será selecionada e clicar nela a ativará.  
   
- Você pode ocultar ou exibir a barra de ferramentas na parte superior do **memória** janela. Você não terá acesso à caixa de endereço ou outras ferramentas enquanto a barra de ferramentas estiver oculta.  
+   Você pode ocultar ou exibir a barra de ferramentas na parte superior do **memória** janela. Você não terá acesso à caixa de endereço ou outras ferramentas enquanto a barra de ferramentas estiver oculta.  
   
 #### <a name="to-toggle-the-toolbar"></a>Para ativar/desativar a barra de ferramentas  
   
