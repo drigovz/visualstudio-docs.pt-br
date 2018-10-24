@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846857"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Inspecionar estados anteriores do aplicativo usando o retrocesso do IntelliTrace no Visual Studio
 
@@ -106,17 +106,17 @@ O impacto no desempenho geral do passo a passo depende de seu aplicativo. A sobr
 * Se você estiver usando o modo de eventos e instantâneos do IntelliTrace em versões do Windows anteriores ao Windows 10 Fall Creators Update (RS3) e se o destino da plataforma de depuração do aplicativo for definido como x86, o IntelliTrace não tirar instantâneos.
 
     Soluções alternativas:
-    * Se você estiver em atualização de aniversário do Windows 10 (RS1) e abaixo da versão 10.0.14393.2273, [instalar KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
-    * Se você estiver no Windows 10 Creators Update (RS2) e abaixo da versão 10.0.15063.1112, [instalar KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
-    * Instalar ou atualizar para o Windows 10 Fall Creators Update (RS3). 
-    * Como alternativa: 
-        1. Instale o conjunto de ferramentas do VC++ 2015.3 v140 para o componente de área de trabalho (x86, x64) do Instalador do Visual Studio.
-        2. Compile o aplicativo de destino.
-        3. Na linha de comando, use a ferramenta editbin para definir o `Largeaddressaware` sinalizador para o executável de destino. Por exemplo, você pode usar esse comando (depois de atualizar o caminho): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
-        4. Para iniciar a depuração, pressione **F5**. Agora, os instantâneos são executados com os pontos de interrupção e etapas do depurador.
+  * Se você estiver em atualização de aniversário do Windows 10 (RS1) e abaixo da versão 10.0.14393.2273, [instalar KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
+  * Se você estiver no Windows 10 Creators Update (RS2) e abaixo da versão 10.0.15063.1112, [instalar KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
+  * Instalar ou atualizar para o Windows 10 Fall Creators Update (RS3). 
+  * Como alternativa: 
+    1. Instale o conjunto de ferramentas do VC++ 2015.3 v140 para o componente de área de trabalho (x86, x64) do Instalador do Visual Studio.
+    2. Compile o aplicativo de destino.
+    3. Na linha de comando, use a ferramenta editbin para definir o `Largeaddressaware` sinalizador para o executável de destino. Por exemplo, você pode usar esse comando (depois de atualizar o caminho): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
+    4. Para iniciar a depuração, pressione **F5**. Agora, os instantâneos são executados com os pontos de interrupção e etapas do depurador.
 
-        > [!Note]
-        > O `Largeaddressaware` sinalizador deve ser definido sempre que o executável é recompilado com as alterações.
+       > [!Note]
+       > O `Largeaddressaware` sinalizador deve ser definido sempre que o executável é recompilado com as alterações.
 
 * Quando um instantâneo do processo do aplicativo for criado em um aplicativo que usa um arquivo persistente mapeado na memória, o processo com o instantâneo mantém um bloqueio exclusivo no arquivo mapeado em memória (até mesmo depois que o processo pai lançou seu bloqueio). Outros processos ainda são capazes de ler, mas não gravar no arquivo mapeado em memória.
 

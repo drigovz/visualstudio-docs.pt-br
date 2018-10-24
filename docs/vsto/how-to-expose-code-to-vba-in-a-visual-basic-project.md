@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a979d62c8320d57c3243e4d60ef93ee56eb06cf
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7e4bc9f4227c11f8e34838a2785b27da62a0a6b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256091"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839642"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Como: expor o código para VBA em um projeto do Visual Basic
   Você pode expor o código em um [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projeto ao Visual Basic para código Applications (VBA), se você quiser que os dois tipos de código para interagir entre si.  
@@ -35,11 +35,11 @@ ms.locfileid: "35256091"
   
  O processo é diferente para o código em uma classe de item de host para o código em outras classes:  
   
--   [Expor o código em uma classe de item de host](#HostItemCode)  
+- [Expor o código em uma classe de item de host](#HostItemCode)  
   
--   [Expor o código que não está em uma classe de item de host](#NonHostItem)  
+- [Expor o código que não está em uma classe de item de host](#NonHostItem)  
   
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como o VSTO chame i: código do VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
+  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como o VSTO chame i: código do VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
   
 ##  <a name="HostItemCode"></a> Expor o código em uma classe de item de host  
  Para habilitar o código do VBA chamar o código do Visual Basic em uma classe de item de host, defina as **EnableVbaCallers** propriedade do item de host para **verdadeiro**.  

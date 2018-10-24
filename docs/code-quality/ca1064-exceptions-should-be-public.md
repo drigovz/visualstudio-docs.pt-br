@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a47334da2879760142dd925917339a011890554
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 904aa1fe83677e2d53d2e93964619a5c2aa82625
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816787"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: as exceções devem ser públicas
+
 |||
 |-|-|
 |NomeDoTipo|ExceptionsShouldBePublic|

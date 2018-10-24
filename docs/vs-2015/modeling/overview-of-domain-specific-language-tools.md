@@ -14,12 +14,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0c8730d2a73b5e6dd2c48138c1633e24234db29
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c01116ee4a4b0edc43a6277db7725e8d962bd607
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273254"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839317"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Visão geral das Ferramentas de Linguagem Específica do Domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,31 +39,31 @@ Ferramentas de linguagem específica do domínio (ferramentas DSL), que são hos
 ## <a name="the-dsl-tools-solution"></a>A solução de ferramentas DSL  
  O Assistente de Designer específica de domínio fornece os seguintes modelos de solução:  
   
--   Fluxo de tarefas  
+- Fluxo de tarefas  
   
--   Diagramas de classe  
+- Diagramas de classe  
   
--   Linguagem mínima  
+- Linguagem mínima  
   
--   Modelos do componente  
+- Modelos do componente  
   
--   WPF mínima  
+- WPF mínima  
   
--   Windows. Forms mínima  
+- Windows. Forms mínima  
   
--   Biblioteca de DSL  
+- Biblioteca de DSL  
   
- Para obter mais informações, consulte [escolhendo um modelo de solução de linguagem específica do domínio](../modeling/choosing-a-domain-specific-language-solution-template.md).  
+  Para obter mais informações, consulte [escolhendo um modelo de solução de linguagem específica do domínio](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
- O assistente cria um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução que tem os seguintes projetos:  
+  O assistente cria um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução que tem os seguintes projetos:  
   
--   DSL  
+- DSL  
   
-     O projeto de Dsl define a linguagem específica de domínio e suas ferramentas de edição e de processamento.  
+   O projeto de Dsl define a linguagem específica de domínio e suas ferramentas de edição e de processamento.  
   
--   **DslPackage**  
+- **DslPackage**  
   
-     Projeto DslPackage determina como as ferramentas de linguagem integram [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+   Projeto DslPackage determina como as ferramentas de linguagem integram [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="the-dsl-tools-graphical-interface"></a>A Interface gráfica de ferramentas DSL  
  Você pode usar a interface gráfica de ferramentas DSL para adicionar elementos e relações para sua linguagem específica do domínio. Depois que você adicionou os elementos, você pode definir sua aparência, mapeando-os para as formas, personalizar cores e adicionar os decoradores. Você também pode adicionar elementos à caixa de ferramentas.  

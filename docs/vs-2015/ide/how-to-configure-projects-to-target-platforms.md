@@ -23,12 +23,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e945a3a55f1ea4f9e68b96209e350c843324c30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e2b39aa13316b1b9ca47c5587ffabf6f6a14e68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843048"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Como configurar projetos para destinar plataformas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,22 +40,22 @@ ms.locfileid: "49294509"
   
 #### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Para configurar um projeto para ter uma plataforma de 64 bits como destino  
   
-1.  Na barra de menus, escolha **Build**, **Configuration Manager**.  
+1. Na barra de menus, escolha **Build**, **Configuration Manager**.  
   
-2.  Na lista **Plataforma da solução ativa**, escolha uma plataforma de 64 bits para a solução a ter como destino e, em seguida, escolha o botão **Fechar**.  
+2. Na lista **Plataforma da solução ativa**, escolha uma plataforma de 64 bits para a solução a ter como destino e, em seguida, escolha o botão **Fechar**.  
   
-    1.  Se a plataforma que você deseja não aparecer na lista **Plataforma da Solução Ativa**, escolha **Nova**.  
+   1.  Se a plataforma que você deseja não aparecer na lista **Plataforma da Solução Ativa**, escolha **Nova**.  
   
-         A caixa de diálogo **Nova Plataforma da Solução** será exibida.  
+        A caixa de diálogo **Nova Plataforma da Solução** será exibida.  
   
-    2.  Na lista **Digitar ou selecionar a nova plataforma**, escolha **x64**.  
+   2.  Na lista **Digitar ou selecionar a nova plataforma**, escolha **x64**.  
   
-        > [!NOTE]
-        >  Se você der um novo nome à sua configuração, precisará modificar as configurações no **Designer de Projeto** para ter a plataforma correta como destino.  
+       > [!NOTE]
+       >  Se você der um novo nome à sua configuração, precisará modificar as configurações no **Designer de Projeto** para ter a plataforma correta como destino.  
   
-    3.  Se você quiser copiar as configurações de uma configuração de plataforma atual, escolha-a e selecione o botão **OK**.  
+   3.  Se você quiser copiar as configurações de uma configuração de plataforma atual, escolha-a e selecione o botão **OK**.  
   
- As propriedades de todos os projetos que têm a plataforma de 64 bits como destino são atualizadas e o próximo build do projeto será otimizado para plataformas de 64 bits.  
+   As propriedades de todos os projetos que têm a plataforma de 64 bits como destino são atualizadas e o próximo build do projeto será otimizado para plataformas de 64 bits.  
   
 ## <a name="targeting-platforms-in-the-project-designer"></a>Definindo plataformas como destino no Designer de Projeto  
  O Designer de Projeto também fornece uma maneira de definir diferentes plataformas como destino para seu projeto. Se selecionar uma das plataformas incluídas na lista na caixa de diálogo **Nova Plataforma de Solução** não funcionar para sua solução, você poderá criar um nome de configuração personalizado e modificar as configurações no **Designer de Projeto** para ter a plataforma correta como destino.  

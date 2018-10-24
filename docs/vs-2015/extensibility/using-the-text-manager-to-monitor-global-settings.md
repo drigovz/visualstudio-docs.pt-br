@@ -16,12 +16,12 @@ ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc981ffd7f2e4c9ece1e559dd6b588d29edb59dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 25ba131512c8c57e9ddda21526ef76177d4ca4a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303298"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839681"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Usando o Gerenciador de texto para monitorar as configurações globais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,19 +31,19 @@ Se você implementar um editor de núcleo, você deve monitorar as alterações 
 ## <a name="text-manager-functions"></a>Funções do Gerenciador de texto  
  O Gerenciador de texto aciona eventos para um número de configurações, incluindo o seguinte:  
   
--   Se um buffer está sob controle do código-fonte  
+- Se um buffer está sob controle do código-fonte  
   
--   Como se registrar para notificações de alteração de arquivo  
+- Como se registrar para notificações de alteração de arquivo  
   
--   Como manter o controle de quais modos de exibição estão associados com determinados buffers  
+- Como manter o controle de quais modos de exibição estão associados com determinados buffers  
   
--   Preferências de colorização do texto  
+- Preferências de colorização do texto  
   
--   Guia versus preferências de espaço  
+- Guia versus preferências de espaço  
   
- As preferências que são exclusivas para um determinado idioma não são gerenciadas pelo Gerenciador de texto. Essas configurações devem ser gerenciadas por cada serviço de linguagem.  
+  As preferências que são exclusivas para um determinado idioma não são gerenciadas pelo Gerenciador de texto. Essas configurações devem ser gerenciadas por cada serviço de linguagem.  
   
- Notificação de eventos para o Gerenciador de texto é fornecida pelo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interface. Implementar essa interface em seu cliente de objeto para manipular eventos gerou o Gerenciador de texto. Você pode registrar esses eventos usando o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interface no Gerenciador de texto.  
+  Notificação de eventos para o Gerenciador de texto é fornecida pelo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interface. Implementar essa interface em seu cliente de objeto para manipular eventos gerou o Gerenciador de texto. Você pode registrar esses eventos usando o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interface no Gerenciador de texto.  
   
 ## <a name="see-also"></a>Consulte também  
  [Dentro do Editor de núcleo](../extensibility/inside-the-core-editor.md)   

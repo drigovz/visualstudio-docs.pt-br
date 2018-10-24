@@ -11,31 +11,31 @@ caps.latest.revision: 7
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 33dd9ece0e7c2574aceec9fc2f6fe0c8ebf29d7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 77613d3e8303a02031da713ec149602a40ef9acb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236100"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846019"
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Ferramentas do Visual Studio para Apache Cordova
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Compile aplicativos executados em dispositivos iOS, Android e Windows e compartilhe quase 100% de seu código. Compile-os com suas tecnologias da web favoritas. O Apache Cordova fornece acesso nativo aos recursos do dispositivo, como a câmera em um telefone e o melhor de tudo é que é gratuito. O Visual Studio adiciona esses extras para tornar ainda mais fácil o build de seu aplicativo:  
   
--   Instalação e configuração fáceis.  
+- Instalação e configuração fáceis.  
   
--   Depurador avançado para ajudá-lo a encontrar e corrigir problemas.  
+- Depurador avançado para ajudá-lo a encontrar e corrigir problemas.  
   
--   Acesso fácil a emuladores de dispositivo.  
+- Acesso fácil a emuladores de dispositivo.  
   
--   Um designer para gerenciar os plug-ins do dispositivo.  
+- Um designer para gerenciar os plug-ins do dispositivo.  
   
--   Um projeto que é totalmente compatível com a interface de linha de comando.  
+- Um projeto que é totalmente compatível com a interface de linha de comando.  
   
- Se estiver considerando essas ferramentas, mas ainda não estiver pronto para testar, acesse nossa página de [recursos](https://www.visualstudio.com/explore/cordova-vs) para mais detalhes.  
+  Se estiver considerando essas ferramentas, mas ainda não estiver pronto para testar, acesse nossa página de [recursos](https://www.visualstudio.com/explore/cordova-vs) para mais detalhes.  
   
- Se você estiver pronto para começar, acesse nosso [site](http://taco.visualstudio.com/en-us/docs/get-started-vs-tools-apache-cordova/).
+  Se você estiver pronto para começar, acesse nosso [site](http://taco.visualstudio.com/en-us/docs/get-started-vs-tools-apache-cordova/).
 
 
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 334a0b964033282458c211d69af30aad20dbd6bc
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4677380081aaa0ac79f589ea7594f19f78750613
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844101"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Um projeto do Visual C++ no Visual Studio de depuração remota
 Para depurar um aplicativo do Visual Studio em um computador diferente, instalar e executar as ferramentas remotas no computador onde você implantará seu aplicativo, configure seu projeto para se conectar ao computador remoto do Visual Studio e, em seguida, implantar e executar seu aplicativo.
@@ -56,50 +56,50 @@ O depurador remoto tem suporte no Windows 7 e mais recente (não de telefone) e 
 ## <a name="remote_cplusplus"></a> Depuração remota de um projeto do Visual C++  
  No procedimento a seguir, o nome e caminho do projeto é C:\remotetemp\MyMfc e é o nome do computador remoto **MJO DL**.  
   
-1.  Criar um aplicativo MFC chamado **mymfc.**  
+1. Criar um aplicativo MFC chamado **mymfc.**  
   
-2.  Defina um ponto de interrupção em algum lugar no aplicativo que é atingido com facilidade, por exemplo, no **MainFrm.cpp**, no início de `CMainFrame::OnCreate`.  
+2. Defina um ponto de interrupção em algum lugar no aplicativo que é atingido com facilidade, por exemplo, no **MainFrm.cpp**, no início de `CMainFrame::OnCreate`.  
   
-3.  No Gerenciador de soluções, clique com botão direito no projeto e selecione **propriedades**. Abra o **depuração** guia.  
+3. No Gerenciador de soluções, clique com botão direito no projeto e selecione **propriedades**. Abra o **depuração** guia.  
   
-4.  Defina as **depurador a iniciar** à **depurador remoto do Windows**.  
+4. Defina as **depurador a iniciar** à **depurador remoto do Windows**.  
   
-     ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
+    ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
   
-5.  Faça as seguintes alterações nas propriedades:  
+5. Faça as seguintes alterações nas propriedades:  
   
-    |Configuração|Valor|
-    |-|-|  
-    |Comando remoto|C:\remotetemp\mymfc.exe|  
-    |Diretório de trabalho|C:\remotetemp|  
-    |Nome do servidor remoto|MJO-DL:*portnumber*|  
-    |Conexão|Remoto sem Autenticação do Windows|  
-    |Tipo de Depurador|Somente Nativo|  
-    |Diretório de implantação|C:\remotetemp.|  
-    |Arquivos adicionais a implantar|C:\data\mymfcdata.txt.|  
+   |Configuração|Valor|
+   |-|-|  
+   |Comando remoto|C:\remotetemp\mymfc.exe|  
+   |Diretório de trabalho|C:\remotetemp|  
+   |Nome do servidor remoto|MJO-DL:*portnumber*|  
+   |Conexão|Remoto sem Autenticação do Windows|  
+   |Tipo de Depurador|Somente Nativo|  
+   |Diretório de implantação|C:\remotetemp.|  
+   |Arquivos adicionais a implantar|C:\data\mymfcdata.txt.|  
   
-     Se você implantar arquivos adicionais (opcionais), a pasta deve existir nos dois computadores.  
+    Se você implantar arquivos adicionais (opcionais), a pasta deve existir nos dois computadores.  
   
-6.  No Gerenciador de soluções, clique com botão direito a solução e escolha **Configuration Manager**.  
+6. No Gerenciador de soluções, clique com botão direito a solução e escolha **Configuration Manager**.  
   
-7.  Para o **Debug** configuração, selecione o **implantar** caixa de seleção.  
+7. Para o **Debug** configuração, selecione o **implantar** caixa de seleção.  
   
-     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
+    ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
-8.  Iniciar a depuração (**Depurar > Iniciar depuração**, ou **F5**).  
+8. Iniciar a depuração (**Depurar > Iniciar depuração**, ou **F5**).  
   
 9. O executável é implantado automaticamente para o computador remoto.  
   
 10. Se solicitado, insira as credenciais de rede para se conectar ao computador remoto.  
   
-     As credenciais necessárias são específicas para a configuração de segurança da sua rede. Por exemplo, em um computador de domínio, você pode escolher um certificado de segurança ou insira seu nome de domínio e senha. Em um computador fora do domínio, você pode inserir o nome do computador e um nome de conta de usuário válido, como **MJO-DL\name@something.com**, junto com a senha correta.  
+     As credenciais necessárias são específicas para a configuração de segurança da sua rede. Por exemplo, em um computador de domínio, você pode escolher um certificado de segurança ou insira seu nome de domínio e senha. Em um computador fora do domínio, você pode inserir o nome do computador e um nome de conta de usuário válido, como <strong>MJO-DL\name@something.com</strong>, junto com a senha correta.  
   
 11. No computador do Visual Studio, você deve ver que a execução é interrompida no ponto de interrupção.  
   
     > [!TIP]
     >  Como alternativa, você pode implantar os arquivos como uma etapa separada. No **Gerenciador de soluções,** com o botão direito do **mymfc** nó e, em seguida, escolha **implantar**.  
   
- Se você tiver arquivos sem código que precisam ser usados pelo aplicativo, você precisará incluí-los no projeto do Visual Studio. Crie uma pasta de projeto para os arquivos adicionais (na **Gerenciador de soluções**, clique em **Adicionar > nova pasta**.) Em seguida, adicione os arquivos na pasta (na **Gerenciador de soluções**, clique em **Adicionar > Item existente**, em seguida, selecione os arquivos). Sobre o **propriedades** para cada arquivo, defina **Copy to Output Directory** para **copiar sempre**.
+    Se você tiver arquivos sem código que precisam ser usados pelo aplicativo, você precisará incluí-los no projeto do Visual Studio. Crie uma pasta de projeto para os arquivos adicionais (na **Gerenciador de soluções**, clique em **Adicionar > nova pasta**.) Em seguida, adicione os arquivos na pasta (na **Gerenciador de soluções**, clique em **Adicionar > Item existente**, em seguida, selecione os arquivos). Sobre o **propriedades** para cada arquivo, defina **Copy to Output Directory** para **copiar sempre**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurar a depuração com símbolos remotos 
 
