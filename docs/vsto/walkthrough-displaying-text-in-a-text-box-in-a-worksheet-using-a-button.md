@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8e9f9679f235837521b06943b1335eb6577c9408
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 25294e9cb8f57036603ec4817fcbd59976a358a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258435"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840279"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Passo a passo: Exibir texto em uma caixa de texto em uma planilha usando um botão
   Este passo a passo mostra as Noções básicas de como usar os botões e caixas de texto em planilhas do Microsoft Office Excel e como criar projetos do Excel usando ferramentas de desenvolvimento do Office no Visual Studio. Para ver o resultado como um exemplo completo, consulte o exemplo de controles do Excel em [exemplos de desenvolvimento do Office e instruções passo a passo](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -62,22 +62,22 @@ ms.locfileid: "35258435"
   
 ### <a name="to-add-a-button-and-a-text-box"></a>Para adicionar um botão e uma caixa de texto  
   
-1.  Verificar se o **Button.xlsx de Excel Meus** pasta de trabalho é aberta no designer do Visual Studio, com `Sheet1` exibido.  
+1. Verificar se o **Button.xlsx de Excel Meus** pasta de trabalho é aberta no designer do Visual Studio, com `Sheet1` exibido.  
   
-2.  Dos **controles comuns** guia de ferramentas, arraste um <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> para `Sheet1`.  
+2. Dos **controles comuns** guia de ferramentas, arraste um <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> para `Sheet1`.  
   
-3.  Dos **modo de exibição** menu, selecione **janela propriedades**.  
+3. Dos **modo de exibição** menu, selecione **janela propriedades**.  
   
-4.  Certifique-se de que **TextBox1** está visível na **propriedades** caixa de lista suspensa da janela e altere a **nome** propriedade da caixa de texto para **displayText**.  
+4. Certifique-se de que **TextBox1** está visível na **propriedades** caixa de lista suspensa da janela e altere a **nome** propriedade da caixa de texto para **displayText**.  
   
-5.  Arraste uma **botão** controle para `Sheet1` e altere as propriedades a seguir:  
+5. Arraste uma **botão** controle para `Sheet1` e altere as propriedades a seguir:  
   
-    |Propriedade|Valor|  
-    |--------------|-----------|  
-    |**Nome**|**insertText**|  
-    |**Texto**|**Inserir texto**|  
+   |Propriedade|Valor|  
+   |--------------|-----------|  
+   |**Nome**|**insertText**|  
+   |**Texto**|**Inserir texto**|  
   
- Agora escreva o código para ser executado quando o botão é clicado.  
+   Agora escreva o código para ser executado quando o botão é clicado.  
   
 ## <a name="populate-the-text-box-when-the-button-is-clicked"></a>Preencha a caixa de texto quando o botão é clicado  
  Cada vez que o usuário clica no botão, **Olá, mundo!** é acrescentado à caixa de texto.  

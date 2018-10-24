@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c13a5e8ed5ae7fe778908af87958d4ed25951c1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292689"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812498"
 ---
 # <a name="validate-your-uml-model"></a>Validar o modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ Alguns dos modelos de UML que você pode desenhar no Visual Studio podem ser con
 ## <a name="invoking-validation"></a>Invocando a validação  
  Quando você tiver instalado uma extensão de validação, as restrições que ele fornece podem ser aplicadas nos seguintes casos. Algumas restrições são definidas para aplicar em apenas alguns desses casos.  
   
--   **Comando de validação.** Para invocar a validação a qualquer momento, clique em **validar modelo UML** sobre o **arquitetura** menu.  
+- **Comando de validação.** Para invocar a validação a qualquer momento, clique em **validar modelo UML** sobre o **arquitetura** menu.  
   
-    > [!NOTE]
-    >  O comando será exibida apenas se as restrições de validação são instaladas.  
+  > [!NOTE]
+  >  O comando será exibida apenas se as restrições de validação são instaladas.  
   
--   **Sobre como salvar um modelo.** Restrições de validação podem ser aplicadas quando você salvar o modelo. A finalidade dessas restrições é certificar-se de que você não salvar um modelo que é inválido de acordo com a interpretação do seu projeto.  
+- **Sobre como salvar um modelo.** Restrições de validação podem ser aplicadas quando você salvar o modelo. A finalidade dessas restrições é certificar-se de que você não salvar um modelo que é inválido de acordo com a interpretação do seu projeto.  
   
-     Se houver erros, você será solicitado se você ainda deseja salvar o modelo. Você pode escolher para corrigir os erros ou para salvar o modelo de qualquer forma.  
+   Se houver erros, você será solicitado se você ainda deseja salvar o modelo. Você pode escolher para corrigir os erros ou para salvar o modelo de qualquer forma.  
   
--   **Como abrir um modelo.** Quando você abre um modelo, os métodos de validação podem ser aplicados para restaurar as mensagens de erro que existia quando você salva o modelo. Erros também podem ser introduzidos por inconsistências entre as alterações feitas por usuários que trabalham em diferentes partes de um modelo. Para obter mais informações, consulte [compartilhar modelos e diagramas de exportação](../modeling/share-models-and-exporting-diagrams.md).  
+- **Como abrir um modelo.** Quando você abre um modelo, os métodos de validação podem ser aplicados para restaurar as mensagens de erro que existia quando você salva o modelo. Erros também podem ser introduzidos por inconsistências entre as alterações feitas por usuários que trabalham em diferentes partes de um modelo. Para obter mais informações, consulte [compartilhar modelos e diagramas de exportação](../modeling/share-models-and-exporting-diagrams.md).  
   
- Erros de validação são relatados no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] janela de erros.  
+  Erros de validação são relatados no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] janela de erros.  
   
- Para selecionar os elementos que estão incorretos em um diagrama, clique duas vezes no erro. Isso só funcionará se os elementos incorretos são visíveis em um diagrama aberto.  
+  Para selecionar os elementos que estão incorretos em um diagrama, clique duas vezes no erro. Isso só funcionará se os elementos incorretos são visíveis em um diagrama aberto.  
   
 ## <a name="installing-validation-constraints"></a>Instalando as restrições de validação  
  Restrições são empacotadas em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] arquivos VSIX (extensão). Normalmente, um conjunto de restrições fará parte de uma extensão que também contém outras definições, como comandos de menu, perfis e itens de caixa de ferramentas.  
