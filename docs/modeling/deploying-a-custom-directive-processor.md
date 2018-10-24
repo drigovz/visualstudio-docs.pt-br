@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3f4af12b7c73aa2da7f580b11b1984aa2c8238b7
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 16ee7eae30d947e6a83444c8e744cbaca398bf94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566821"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894812"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implantando um processador de diretiva personalizada
 
@@ -164,30 +164,30 @@ Há várias maneiras de criar um arquivo .vsix. O procedimento a seguir descreve
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Para registrar um processador de diretriz definindo uma chave do Registro
 
-1.  Execute `regedit`.
+1. Execute `regedit`.
 
-2.  Em regedit, navegue até
+2. Em regedit, navegue até
 
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
 
-     Se você quiser instalar o processador de diretriz na versão de avaliação do Visual Studio, insira "Exp" após "11.0".
+    Se você quiser instalar o processador de diretriz na versão de avaliação do Visual Studio, insira "Exp" após "11.0".
 
-3.  Adicione uma chave do Registro que tenha o mesmo nome da classe do processador de diretriz.
+3. Adicione uma chave do Registro que tenha o mesmo nome da classe do processador de diretriz.
 
-    -   Na árvore do registro, clique com botão direito do **DirectiveProcessors** nó, aponte para **New**e, em seguida, clique em **chave**.
+   -   Na árvore do registro, clique com botão direito do **DirectiveProcessors** nó, aponte para **New**e, em seguida, clique em **chave**.
 
-4.  No novo nó, adicione valores de cadeia de caracteres para Class e CodeBase ou Assembly, de acordo com as tabelas a seguir.
+4. No novo nó, adicione valores de cadeia de caracteres para Class e CodeBase ou Assembly, de acordo com as tabelas a seguir.
 
-    1.  Clique com botão direito no nó que você criou, aponte para **New**e, em seguida, clique em **valor de cadeia de caracteres**.
+   1.  Clique com botão direito no nó que você criou, aponte para **New**e, em seguida, clique em **valor de cadeia de caracteres**.
 
-    2.  Edite o nome do valor.
+   2.  Edite o nome do valor.
 
-    3.  Clique duas vezes no nome e edite os dados.
+   3.  Clique duas vezes no nome e edite os dados.
 
- Se o processador de diretriz personalizado não estiver no GAC, as subchaves do Registro deverão se parecer como na tabela a seguir:
+   Se o processador de diretriz personalizado não estiver no GAC, as subchaves do Registro deverão se parecer como na tabela a seguir:
 
 |Nome|Tipo|Dados|
-|----------|----------|----------|
+|-|-|-|
 |(Padrão)|REG_SZ|(valor não definido)|
 |Classe|REG_SZ|**\<Nome do Namespace >. \<Nome da classe >**|
 |CodeBase|REG_SZ|**\<Seu caminho >\\< seu nome de Assembly\>**|
@@ -195,7 +195,7 @@ Há várias maneiras de criar um arquivo .vsix. O procedimento a seguir descreve
  Se o assembly estiver no GAC, as subchaves do Registro deverão se parecer como na tabela a seguir:
 
 |Nome|Tipo|Dados|
-|----------|----------|----------|
+|-|-|-|
 |(Padrão)|REG_SZ|(valor não definido)|
 |Classe|REG_SZ|\<**Seu nome de classe totalmente qualificado**>|
 |Assembly|REG_SZ|\<**Nome do Assembly no GAC**>|

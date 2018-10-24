@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 815186959d4a8cd1daea46c69bda976eb4483c1f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0389665349ae9c39a0f820bc047af6cc4db2b683
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282580"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867527"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Implantação do ClickOnce no Windows Vista
 
@@ -32,25 +32,25 @@ Criando aplicativos no Visual Studio para controle de conta de usuário (UAC) no
 
 Visual Studio fornece as seguintes opções para geração de manifesto:  
   
--   Use um manifesto inserido. Inserir dados UAC no arquivo executável do aplicativo e executar como usuário normal.  
+- Use um manifesto inserido. Inserir dados UAC no arquivo executável do aplicativo e executar como usuário normal.  
   
-     Isso é a configuração padrão (a menos que você usa o ClickOnce). Essa configuração oferece suporte a da maneira normal em que o Visual Studio funciona no Windows Vista, com a geração de interno e externo de manifesto usando `AsInvoker`.  
+   Isso é a configuração padrão (a menos que você usa o ClickOnce). Essa configuração oferece suporte a da maneira normal em que o Visual Studio funciona no Windows Vista, com a geração de interno e externo de manifesto usando `AsInvoker`.  
   
--   Use um manifesto externo. Gerar um manifesto externo usando *manifest*.  
+- Use um manifesto externo. Gerar um manifesto externo usando *manifest*.  
   
-     Isso gera apenas o manifesto externo usando as informações em *manifest*. Quando você publica um aplicativo usando o ClickOnce ou COM sem registro, o Visual Studio adiciona *manifest* ao projeto e, em seguida, adiciona essa opção.  
+   Isso gera apenas o manifesto externo usando as informações em *manifest*. Quando você publica um aplicativo usando o ClickOnce ou COM sem registro, o Visual Studio adiciona *manifest* ao projeto e, em seguida, adiciona essa opção.  
   
--   Não use nenhum manifesto. Crie o aplicativo sem um manifesto.  
+- Não use nenhum manifesto. Crie o aplicativo sem um manifesto.  
   
-     Essa abordagem também é conhecido como *virtualização*. Use esta opção para compatibilidade com aplicativos existentes de versões anteriores do Visual Studio.  
+   Essa abordagem também é conhecido como *virtualização*. Use esta opção para compatibilidade com aplicativos existentes de versões anteriores do Visual Studio.  
   
- As novas propriedades estão disponíveis na **aplicativo** página do Designer de projeto (Visual c# somente para projetos) e no formato de arquivo de projeto MSBuild.  
+  As novas propriedades estão disponíveis na **aplicativo** página do Designer de projeto (Visual c# somente para projetos) e no formato de arquivo de projeto MSBuild.  
   
- O método para configurar a geração de manifesto de UAC no IDE do Visual Studio difere dependendo do tipo de projeto (Visual c# ou Visual Basic).  
+  O método para configurar a geração de manifesto de UAC no IDE do Visual Studio difere dependendo do tipo de projeto (Visual c# ou Visual Basic).  
   
-   * Para obter informações sobre como configurar projetos do Visual c# para geração de manifesto, consulte [página de aplicativo, Designer de projeto (c#)](../ide/reference/application-page-project-designer-csharp.md).  
+  * Para obter informações sobre como configurar projetos do Visual c# para geração de manifesto, consulte [página de aplicativo, Designer de projeto (c#)](../ide/reference/application-page-project-designer-csharp.md).  
   
-   * Para obter informações sobre como configurar projetos do Visual Basic para geração de manifesto, consulte [página de aplicativo, Designer de projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+  * Para obter informações sobre como configurar projetos do Visual Basic para geração de manifesto, consulte [página de aplicativo, Designer de projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Implantação e segurança do ClickOnce](../deployment/clickonce-security-and-deployment.md)   

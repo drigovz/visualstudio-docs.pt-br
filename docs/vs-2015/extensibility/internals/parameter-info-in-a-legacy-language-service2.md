@@ -17,12 +17,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fabc1f5e199b9b1456db704552a288a6c9beb76f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200025"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887560"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informações de parâmetro em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,11 +101,11 @@ namespace TestLanguagePackage
 ## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>A dica de ferramenta de informações do parâmetro de suporte no analisador  
  O <xref:Microsoft.VisualStudio.Package.Source> classe faz algumas suposições sobre o conteúdo do <xref:Microsoft.VisualStudio.Package.AuthoringScope> e <xref:Microsoft.VisualStudio.Package.AuthoringSink> classes quando a dica de ferramenta de informações do parâmetro é exibida e atualizada.  
   
--   O analisador é dada <xref:Microsoft.VisualStudio.Package.ParseReason> quando o caractere de início da lista de parâmetro é digitado.  
+- O analisador é dada <xref:Microsoft.VisualStudio.Package.ParseReason> quando o caractere de início da lista de parâmetro é digitado.  
   
--   O local fornecido <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto é imediatamente após o caractere inicial de lista de parâmetros. O analisador deve coletar as assinaturas de todas as declarações de método disponíveis em posicionar e armazená-los em uma lista em sua versão do <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto. Essa lista inclui o nome do método, método tipo (ou no tipo de retorno) e uma lista de parâmetros possíveis. Essa lista é pesquisada posteriormente para a assinatura do método ou assinaturas para exibir na dica de ferramenta informações do parâmetro.  
+- O local fornecido <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto é imediatamente após o caractere inicial de lista de parâmetros. O analisador deve coletar as assinaturas de todas as declarações de método disponíveis em posicionar e armazená-los em uma lista em sua versão do <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto. Essa lista inclui o nome do método, método tipo (ou no tipo de retorno) e uma lista de parâmetros possíveis. Essa lista é pesquisada posteriormente para a assinatura do método ou assinaturas para exibir na dica de ferramenta informações do parâmetro.  
   
- O analisador, em seguida, deve analisar a linha especificada pelo <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto para coletar o nome do método que está sendo inserido, bem como a distância ao longo do usuário é digitar os parâmetros. Isso é feito ao passar o nome do método a ser o <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> método na <xref:Microsoft.VisualStudio.Package.AuthoringSink> objeto e, em seguida, chamar o <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> método quando o caractere inicial de lista de parâmetros é analisado, chamar o <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> método quando a lista de parâmetros próximo caractere é analisado e, finalmente, a chamada a <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> método quando o caractere de final de lista de parâmetro é analisado. Os resultados dessas chamadas de método são usados pelo <xref:Microsoft.VisualStudio.Package.Source> classe para atualizar a dica de ferramenta de informações do parâmetro adequadamente.  
+  O analisador, em seguida, deve analisar a linha especificada pelo <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto para coletar o nome do método que está sendo inserido, bem como a distância ao longo do usuário é digitar os parâmetros. Isso é feito ao passar o nome do método a ser o <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> método na <xref:Microsoft.VisualStudio.Package.AuthoringSink> objeto e, em seguida, chamar o <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> método quando o caractere inicial de lista de parâmetros é analisado, chamar o <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> método quando a lista de parâmetros próximo caractere é analisado e, finalmente, a chamada a <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> método quando o caractere de final de lista de parâmetro é analisado. Os resultados dessas chamadas de método são usados pelo <xref:Microsoft.VisualStudio.Package.Source> classe para atualizar a dica de ferramenta de informações do parâmetro adequadamente.  
   
 ### <a name="example"></a>Exemplo  
  Aqui está uma linha de texto que o usuário pode inserir. Os números abaixo da linha indicam qual etapa é obtida pelo analisador nessa posição na linha (supondo que a análise se move da esquerda para a direita). A suposição aqui é que tudo antes da linha já foi analisado para assinaturas de método, incluindo a assinatura do método "testfunc".  

@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 50e75f4855079666130e063d3c2b516f317e90f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 766de62f4781dc7ce164155a2090ffabac913a22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217887"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819544"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: os métodos APTCA só devem chamar métodos APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |NomeDoTipo|AptcaMethodsShouldOnlyCallAptcaMethods|
@@ -44,13 +45,13 @@ ms.locfileid: "49217887"
 
  Quando o atributo APTCA estiver presente em um assembly totalmente confiável e o assembly executar código em outro assembly que não permita chamadores parcialmente confiáveis, será possível uma exploração de segurança. Se dois métodos `M1` e `M2` atendem às condições a seguir, chamadores mal-intencionados podem usar o método `M1` para ignorar a demanda de link de confiança total implícito que protege `M2`:
 
--   `M1` um método público é declarado em um assembly totalmente confiável que tem o atributo APTCA.
+- `M1` um método público é declarado em um assembly totalmente confiável que tem o atributo APTCA.
 
--   `M1` chama um método `M2` fora `M1`do assembly.
+- `M1` chama um método `M2` fora `M1`do assembly.
 
--   `M2`do assembly não tem o atributo APTCA e, portanto, não devem ser executado por, ou em nome dos chamadores parcialmente confiáveis.
+- `M2`do assembly não tem o atributo APTCA e, portanto, não devem ser executado por, ou em nome dos chamadores parcialmente confiáveis.
 
- Um chamador parcialmente confiável `X` pode chamar o método `M1`, causando `M1` chamar `M2`. Porque `M2` não tem o atributo APTCA, seu chamador imediato (`M1`) deve atender uma demanda de link para confiança total; `M1` tem confiança total e, portanto, satisfaz essa verificação. O risco de segurança é porque `X` não participa de satisfazer a demanda de link que protege `M2` de chamadores não confiáveis. Portanto, os métodos com o atributo APTCA não devem chamar métodos que não têm o atributo.
+  Um chamador parcialmente confiável `X` pode chamar o método `M1`, causando `M1` chamar `M2`. Porque `M2` não tem o atributo APTCA, seu chamador imediato (`M1`) deve atender uma demanda de link para confiança total; `M1` tem confiança total e, portanto, satisfaz essa verificação. O risco de segurança é porque `X` não participa de satisfazer a demanda de link que protege `M2` de chamadores não confiáveis. Portanto, os métodos com o atributo APTCA não devem chamar métodos que não têm o atributo.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Se o atributo APCTA for necessário, use uma demanda para proteger o método que chama o assembly de confiança total. As permissões exatas que você demanda dependerá a funcionalidade exposta pelo seu método. Se for possível, proteja o método com uma demanda de confiança total garantir que a funcionalidade subjacente não é exposta a chamadores parcialmente confiáveis. Se isso não for possível, selecione um conjunto de permissões que efetivamente protege a funcionalidade exposta. Para obter mais informações sobre as demandas, consulte [demandas](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).

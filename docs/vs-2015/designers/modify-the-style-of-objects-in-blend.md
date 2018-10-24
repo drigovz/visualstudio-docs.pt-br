@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bf451a828e3884a6004f6304b91351e866ee52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843619"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modificar o estilo de objetos no Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,15 +80,15 @@ A maneira mais fácil de personalizar um objeto é definir as propriedades no pa
   
  Para criar um estilo, selecione o objeto e, no menu **Objeto**, escolha **Editar Estilo**e escolha **Editar uma Cópia** ou **Criar Vazio**.  
   
--   Escolha **Editar uma Cópia** para iniciar com o estilo ou modelo padrão do controle.  
+- Escolha **Editar uma Cópia** para iniciar com o estilo ou modelo padrão do controle.  
   
--   Escolha **Criar Vazio** para começar do zero.  
+- Escolha **Criar Vazio** para começar do zero.  
   
- A opção **Editar Atual** só aparecerá se você editar um estilo ou modelo já criado. Ela não aparecerá para um controle que ainda está usando um modelo de sistema padrão.  
+  A opção **Editar Atual** só aparecerá se você editar um estilo ou modelo já criado. Ela não aparecerá para um controle que ainda está usando um modelo de sistema padrão.  
   
- Na caixa de diálogo **Criar Recurso de Estilo**, você pode nomear o estilo ou modelo para que possa usá-lo posteriormente, ou pode aplicar o estilo ou modelo a todos os controles desse tipo.  
+  Na caixa de diálogo **Criar Recurso de Estilo**, você pode nomear o estilo ou modelo para que possa usá-lo posteriormente, ou pode aplicar o estilo ou modelo a todos os controles desse tipo.  
   
- ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
+  ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
   
 > [!NOTE]
 >  Você não pode criar estilos ou modelos para cada tipo de controle. Se um controle não oferecer suporte a eles, o botão de navegação estrutural não aparecerá acima da prancheta.  

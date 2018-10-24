@@ -15,12 +15,12 @@ ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd784b718fb370ec8ce04937119a9d64995cdd8d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f19b6c46615a41f25c5a9f3b979f1a1eed36b25f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948480"
 ---
 # <a name="how-to-update-the-status-bar"></a>Como: atualizar a barra de Status
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +39,19 @@ O **barra de Status** uma barra de controle que está localizada na parte inferi
 ## <a name="robust-programming"></a>Programação robusta  
  Um **barra de Status** contém quatro campos separados:  
   
--   Texto de status  
+- Texto de status  
   
--   Barra de progresso  
+- Barra de progresso  
   
--   Ícone animado  
+- Ícone animado  
   
--   Informações do Editor  
+- Informações do Editor  
   
- Para obter mais informações, consulte [barras de Status](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e).  
+  Para obter mais informações, consulte [barras de Status](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e).  
   
- O IDE chama automaticamente o <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> método de sua <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> implementação quando a janela de documento é ativada.  
+  O IDE chama automaticamente o <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> método de sua <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> implementação quando a janela de documento é ativada.  
   
- O implementador de VSPackage é responsável por atualizar o texto de status na barra de status. O IDE redefine essa cadeia de caracteres para "Pronto" se o campo de texto de status é definido como texto vazio ("") no tempo ocioso.  
+  O implementador de VSPackage é responsável por atualizar o texto de status na barra de status. O IDE redefine essa cadeia de caracteres para "Pronto" se o campo de texto de status é definido como texto vazio ("") no tempo ocioso.  
   
 ## <a name="see-also"></a>Consulte também  
  [Barras de status](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)

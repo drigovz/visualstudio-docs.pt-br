@@ -24,39 +24,39 @@ caps.latest.revision: 84
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4aea0373c57f046b257ad51b102e5b2f1190bfbf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 724ddcc00b1f49eb1f96e67d6b6e269933cb9d66
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173713"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950479"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Validar o código com diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para certificar-se de que o código não causa conflito com seu design, valide o código com diagramas de camada no Visual Studio. Isso pode ajudar a:  
   
--   Encontrar conflitos entre dependências no código e nas dependências do diagrama de camada.  
+- Encontrar conflitos entre dependências no código e nas dependências do diagrama de camada.  
   
--   Encontre dependências que talvez sejam afetadas por alterações propostas.  
+- Encontre dependências que talvez sejam afetadas por alterações propostas.  
   
-     Por exemplo, é possível editar o diagrama de camada para mostrar alterações na arquitetura em potencial e, em seguida, validar o código para ver as dependências afetadas.  
+   Por exemplo, é possível editar o diagrama de camada para mostrar alterações na arquitetura em potencial e, em seguida, validar o código para ver as dependências afetadas.  
   
--   Refatore ou migre o código para um design diferente.  
+- Refatore ou migre o código para um design diferente.  
   
-     Encontre o código ou as dependências que exijam trabalho quando você move o código para uma arquitetura diferente.  
+   Encontre o código ou as dependências que exijam trabalho quando você move o código para uma arquitetura diferente.  
   
- **Requisitos**  
+  **Requisitos**  
   
--   Visual Studio  
+- Visual Studio  
   
--   Visual Studio em seu servidor do Team Foundation Build para validar o código automaticamente com o Team Foundation Build  
+- Visual Studio em seu servidor do Team Foundation Build para validar o código automaticamente com o Team Foundation Build  
   
--   Uma solução com um projeto de modelagem com um diagrama de camada. Esse diagrama de camada deve ser vinculado aos artefatos e projetos do Visual C# .NET ou do Visual Basic .NET que você deseja validar. Ver [criar diagramas de camada do seu código](../modeling/create-layer-diagrams-from-your-code.md).  
+- Uma solução com um projeto de modelagem com um diagrama de camada. Esse diagrama de camada deve ser vinculado aos artefatos e projetos do Visual C# .NET ou do Visual Basic .NET que você deseja validar. Ver [criar diagramas de camada do seu código](../modeling/create-layer-diagrams-from-your-code.md).  
   
- Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
- É possível validar manualmente o código com base em um diagrama de camada aberto no Visual Studio ou em um prompt de comando. Também é possível validar o código automaticamente durante a execução de compilações locais ou do Team Foundation Build. Ver [vídeo do Channel 9: Design e validar sua arquitetura usando diagramas de camada](http://go.microsoft.com/fwlink/?LinkID=252073).  
+  É possível validar manualmente o código com base em um diagrama de camada aberto no Visual Studio ou em um prompt de comando. Também é possível validar o código automaticamente durante a execução de compilações locais ou do Team Foundation Build. Ver [vídeo do Channel 9: Design e validar sua arquitetura usando diagramas de camada](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
 > [!IMPORTANT]
 >  Se você quiser executar a validação de camada com o Team Foundation Build, você deve instalar também a mesma versão do Visual Studio no seu servidor de compilação.  
@@ -108,41 +108,41 @@ Para certificar-se de que o código não causa conflito com seu design, valide o
   
 #### <a name="to-validate-code-at-the-command-prompt"></a>Para validar o código no prompt de comando  
   
-1.  Abra o prompt de comando do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Abra o prompt de comando do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-2.  Escolha uma das seguintes opções:  
+2. Escolha uma das seguintes opções:  
   
-    -   Para validar o código em um projeto de modelagem específico na solução, execute [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] com a propriedade personalizada a seguir.  
+   - Para validar o código em um projeto de modelagem específico na solução, execute [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] com a propriedade personalizada a seguir.  
   
-        ```  
-        msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true  
-        ```  
+     ```  
+     msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true  
+     ```  
   
-         - ou –  
+     - ou –  
   
-         Navegue até a pasta que contém o arquivo de modelagem do projeto (.modelproj) e o diagrama de camada e, em seguida, execute [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] com a seguinte propriedade personalizada:  
+       Navegue até a pasta que contém o arquivo de modelagem do projeto (.modelproj) e o diagrama de camada e, em seguida, execute [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] com a seguinte propriedade personalizada:  
   
-        ```  
-        msbuild /p:ValidateArchitecture=true   
-        ```  
+     ```  
+     msbuild /p:ValidateArchitecture=true   
+     ```  
   
-    -   Para validar o código em todos os projeto de modelagem na solução, execute [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] com a propriedade personalizada a seguir:  
+   - Para validar o código em todos os projeto de modelagem na solução, execute [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] com a propriedade personalizada a seguir:  
   
-        ```  
-        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true   
-        ```  
+     ```  
+     msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true   
+     ```  
   
-         - ou –  
+     - ou –  
   
-         Navegue até a pasta da solução, que deve conter um projeto de modelagem com um diagrama de camada e, em seguida, execute [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] com a seguinte propriedade personalizada:  
+       Navegue até a pasta da solução, que deve conter um projeto de modelagem com um diagrama de camada e, em seguida, execute [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] com a seguinte propriedade personalizada:  
   
-        ```  
-        msbuild /p:ValidateArchitecture=true  
-        ```  
+     ```  
+     msbuild /p:ValidateArchitecture=true  
+     ```  
   
      Todos os erros ocorridos serão listados. Para obter mais informações sobre [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], consulte [MSBuild](../msbuild/msbuild.md) e [tarefa MSBuild](../msbuild/msbuild-task.md).  
   
- Para obter mais informações sobre erros de validação, consulte [compreender e resolver erros de validação de camada](#UnderstandingValidationErrors).  
+   Para obter mais informações sobre erros de validação, consulte [compreender e resolver erros de validação de camada](#UnderstandingValidationErrors).  
   
 ###  <a name="ManageErrors"></a> Gerenciar erros de validação  
  Durante o processo de desenvolvimento, você talvez queira suprimir alguns dos conflitos reportados durante a validação. Por exemplo, você talvez queira suprimir erros que já esteja resolvendo ou que não sejam relevantes para seu cenário específico. Quando você suprime um erro, é uma prática recomendada registrar em log um item de trabalho em [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
@@ -152,9 +152,9 @@ Para certificar-se de que o código não causa conflito com seu design, valide o
   
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>Para criar um item de trabalho para um erro de validação  
   
--   No **lista de erros** janela, o erro com o botão direito, aponte para **Criar Item de trabalho**e, em seguida, clique no tipo de item de trabalho que você deseja criar.  
+- No **lista de erros** janela, o erro com o botão direito, aponte para **Criar Item de trabalho**e, em seguida, clique no tipo de item de trabalho que você deseja criar.  
   
- Use essas tarefas para gerenciar erros de validação na **Error List** janela:  
+  Use essas tarefas para gerenciar erros de validação na **Error List** janela:  
   
 |**To**|**Siga estas etapas**|  
 |------------|----------------------------|  
@@ -176,29 +176,29 @@ Para certificar-se de que o código não causa conflito com seu design, valide o
   
  \- ou -  
   
-1.  Na **Gerenciador de soluções**, o projeto de modelagem que contém o diagrama de camada ou diagramas com o botão direito e, em seguida, clique em **propriedades**.  
+1. Na **Gerenciador de soluções**, o projeto de modelagem que contém o diagrama de camada ou diagramas com o botão direito e, em seguida, clique em **propriedades**.  
   
-2.  No **propriedades** janela, defina o projeto de modelagem **validar arquitetura** propriedade a ser **verdadeiro**.  
+2. No **propriedades** janela, defina o projeto de modelagem **validar arquitetura** propriedade a ser **verdadeiro**.  
   
-     Isso inclui o projeto de modelagem no processo de validação.  
+    Isso inclui o projeto de modelagem no processo de validação.  
   
-3.  Na **Gerenciador de soluções**, clique no arquivo de diagrama (. layerdiagram) de camada que você deseja usar para validação.  
+3. Na **Gerenciador de soluções**, clique no arquivo de diagrama (. layerdiagram) de camada que você deseja usar para validação.  
   
-4.  No **propriedades** janela, certifique-se de que o diagrama **Build Action** estiver definida como **validar**.  
+4. No **propriedades** janela, certifique-se de que o diagrama **Build Action** estiver definida como **validar**.  
   
-     Isso inclui o diagrama de camada no processo de validação.  
+    Isso inclui o diagrama de camada no processo de validação.  
   
- Para gerenciar erros na janela lista de erros, consulte [gerenciar erros de validação](#ManageErrors).  
+   Para gerenciar erros na janela lista de erros, consulte [gerenciar erros de validação](#ManageErrors).  
   
 #### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Para validar automaticamente o código durante um Team Foundation Build  
   
-1.  Na **Team Explorer**, clique duas vezes a definição de compilação e, em seguida, clique em **processo**.  
+1. Na **Team Explorer**, clique duas vezes a definição de compilação e, em seguida, clique em **processo**.  
   
-2.  Sob **parâmetros do processo de compilação**, expanda **compilação**e digite o seguinte no **argumentos de MSBuild** parâmetro:  
+2. Sob **parâmetros do processo de compilação**, expanda **compilação**e digite o seguinte no **argumentos de MSBuild** parâmetro:  
   
-     `/p:ValidateArchitecture=true`  
+    `/p:ValidateArchitecture=true`  
   
- Para obter mais informações sobre erros de validação, consulte [compreender e resolver erros de validação de camada](#UnderstandingValidationErrors). Para obter mais informações sobre [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], consulte:  
+   Para obter mais informações sobre erros de validação, consulte [compreender e resolver erros de validação de camada](#UnderstandingValidationErrors). Para obter mais informações sobre [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], consulte:  
   
 -   [Compilar o aplicativo](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
@@ -220,13 +220,13 @@ Para certificar-se de que o código não causa conflito com seu design, valide o
 ##  <a name="UnderstandingValidationErrors"></a> Entender e resolver erros de validação de camada  
  Quando você valida o código em um diagrama de camada, os erros de validação ocorrem quando o código entra em conflito com o design. Por exemplo, as seguintes condições podem fazer os erros de validação ocorrerem:  
   
--   Um artefato é atribuído à camada errada. Nesse caso, mova o artefato.  
+- Um artefato é atribuído à camada errada. Nesse caso, mova o artefato.  
   
--   Um artefato como, por exemplo, uma classe usa outra classe de maneira a entrar em conflito com a arquitetura. Nesse caso, refatore o código para remover a dependência.  
+- Um artefato como, por exemplo, uma classe usa outra classe de maneira a entrar em conflito com a arquitetura. Nesse caso, refatore o código para remover a dependência.  
   
- Para resolver esses erros, atualize o código até que mais nenhum erro seja exibido durante a validação. É possível realizar essa tarefa de maneira iterativa.  
+  Para resolver esses erros, atualize o código até que mais nenhum erro seja exibido durante a validação. É possível realizar essa tarefa de maneira iterativa.  
   
- A seção a seguir descreve a sintaxe usada nesses erros, explica o significado desses erros e sugere o que é possível fazer para o resolver ou gerenciá-los.  
+  A seção a seguir descreve a sintaxe usada nesses erros, explica o significado desses erros e sugere o que é possível fazer para o resolver ou gerenciá-los.  
   
 |**Sintaxe**|**Descrição**|  
 |----------------|---------------------|  

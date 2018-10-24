@@ -16,33 +16,33 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: a604ce47b6a96182d7e362d5d1dbcb00f052cf85
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0503f6ca9a209c62f842c9428cf1af9fe2a07ccc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231082"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838537"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Regra a caixa de diálogo editor de condição (o legados)
 Este tópico descreve como usar o **Rule Condition Editor** caixa de diálogo em novas [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Criar e modificar condições declarativas de regra usando o **Rule Condition Editor** caixa de diálogo. Essas condições de regras são expostas como propriedades nas seguintes atividades de para fora da caixa do Windows Workflow Foundation:  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
--   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
--   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
- Você acessa o **Rule Condition Editor** caixa de diálogo usando o [selecione a caixa de diálogo condição (herdado)](../workflow-designer/select-condition-dialog-box-legacy.md).  
+  Você acessa o **Rule Condition Editor** caixa de diálogo usando o [selecione a caixa de diálogo condição (herdado)](../workflow-designer/select-condition-dialog-box-legacy.md).  
   
- A tabela a seguir descreve os elementos de (UI) de interface do usuário para o **Rule Condition Editor** caixa de diálogo.  
+  A tabela a seguir descreve os elementos de (UI) de interface do usuário para o **Rule Condition Editor** caixa de diálogo.  
   
 |Elemento da Interface do Usuário|Descrição|  
 |----------------|-----------------|  
@@ -56,33 +56,33 @@ Este tópico descreve como usar o **Rule Condition Editor** caixa de diálogo em
   
  O editor de condição de regra oferece suporte aos seguintes operadores:  
   
--   Operadores relacionais: ==, =! =  
+- Operadores relacionais: ==, =! =  
   
--   Operadores de comparação: <, \<=, >, > =  
+- Operadores de comparação: <, \<=, >, > =  
   
--   Operadores aritméticos: +, -, *,/, MODIFICAÇÃO  
+- Operadores aritméticos: +, -, *,/, MODIFICAÇÃO  
   
--   Operadores lógicos: E, & &, OR, &#124; &#124;, não!  
+- Operadores lógicos: E, & &, OR, &#124; &#124;, não!  
   
--   Operadores bit a bit: &,&#124;  
+- Operadores bit a bit: &,&#124;  
   
- Precedência de operadores de expressão segue regras de precedência de operador C#.  
+  Precedência de operadores de expressão segue regras de precedência de operador C#.  
   
- O editor de condição de regra suporta as seguintes expressões numéricas:  
+  O editor de condição de regra suporta as seguintes expressões numéricas:  
   
- == 1D de this.i (resoluções a 1,0)  
+  == 1D de this.i (resoluções a 1,0)  
   
- == 1E1 de this.i (resoluções a 10,0)  
+  == 1E1 de this.i (resoluções a 10,0)  
   
- == 1L de this.i (resoluções como um longo)  
+  == 1L de this.i (resoluções como um longo)  
   
- == 1M de this.i (resoluções como um decimal)  
+  == 1M de this.i (resoluções como um decimal)  
   
- == 1F de this.i (resoluções como um único)  
+  == 1F de this.i (resoluções como um único)  
   
- == 1U de this.i (resoluções como um unsigned int)  
+  == 1U de this.i (resoluções como um unsigned int)  
   
- Para obter mais informações sobre as condições, consulte [usando condições em fluxos de trabalho](http://go.microsoft.com/fwlink?LinkID=65009).  
+  Para obter mais informações sobre as condições, consulte [usando condições em fluxos de trabalho](http://go.microsoft.com/fwlink?LinkID=65009).  
   
 ## <a name="see-also"></a>Consulte também  
  [IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033)   

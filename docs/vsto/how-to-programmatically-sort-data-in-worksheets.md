@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1029ff61c7833ae03ab513ef486ecbd1edb1f295
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 179cf5fab5a1b2690cb4b46160f7a5c3342fe7bc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669910"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914200"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Como: classificar dados em planilhas de forma programática
   Você pode classificar os dados contidos nas listas e intervalos de planilhas em tempo de execução. O código a seguir classifica um intervalo de várias coluna chamado `Fruits` os dados na primeira coluna e, em seguida, pelos dados na segunda coluna.  
@@ -34,12 +34,12 @@ ms.locfileid: "35669910"
   
 ### <a name="to-sort-data-in-a-namedrange-control"></a>Para classificar dados em um controle NamedRange  
   
-1.  Chame o <xref:Microsoft.Office.Tools.Excel.NamedRange.Sort%2A> método da <xref:Microsoft.Office.Tools.Excel.NamedRange> controle. O exemplo a seguir exige um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle chamado `Fruits` em uma planilha. Esse código deve ser colocado em uma classe de folha, não no `ThisWorkbook` classe.  
+1. Chame o <xref:Microsoft.Office.Tools.Excel.NamedRange.Sort%2A> método da <xref:Microsoft.Office.Tools.Excel.NamedRange> controle. O exemplo a seguir exige um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle chamado `Fruits` em uma planilha. Esse código deve ser colocado em uma classe de folha, não no `ThisWorkbook` classe.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#78)]
-     [!code-vb[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#78)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#78)]
+    [!code-vb[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#78)]  
   
- Coloque o seguinte código no *Sheet1.vb* ou *Sheet1.cs* para classificar dados em um <xref:Microsoft.Office.Tools.Excel.ListObject> controle. O código pressupõe que você tenha um <xref:Microsoft.Office.Tools.Excel.ListObject> controle chamado `fruitList` em uma planilha denominada `Sheet1`.  
+   Coloque o seguinte código no *Sheet1.vb* ou *Sheet1.cs* para classificar dados em um <xref:Microsoft.Office.Tools.Excel.ListObject> controle. O código pressupõe que você tenha um <xref:Microsoft.Office.Tools.Excel.ListObject> controle chamado `fruitList` em uma planilha denominada `Sheet1`.  
   
 ### <a name="to-sort-data-in-a-listobject-control"></a>Para classificar dados em um controle ListObject  
   

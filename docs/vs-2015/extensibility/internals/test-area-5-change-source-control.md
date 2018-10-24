@@ -16,12 +16,12 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 808ed1ce13af06fa263a339bc9c6788595a261a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a903d1cfdb503650f044a17961542c9d011b55bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229249"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856658"
 ---
 # <a name="test-area-5-change-source-control"></a>Área de teste 5: alterar o controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Essa área de plug-in de teste de controle de origem aborda alterando o controle
   
  **Alterar controle do código-fonte** comando fornece quatro funções básicas para o usuário:  
   
--   **Associe:**  
+- **Associe:**  
   
-     Permite que um usuário estabelecer ou restabelecer um link de controle do código-fonte entre uma solução/projeto e o armazenamento de versão.  
+   Permite que um usuário estabelecer ou restabelecer um link de controle do código-fonte entre uma solução/projeto e o armazenamento de versão.  
   
--   **Desassocie:**  
+- **Desassocie:**  
   
-     Remove uma projeto/solução de controle de origem em uma base por conexão.  
+   Remove uma projeto/solução de controle de origem em uma base por conexão.  
   
--   **Conectar/Desconecte:**  
+- **Conectar/Desconecte:**  
   
- Alterna o estado conectado ou offline da solução controlada, que é abordado na área de 3. Para obter mais informações, consulte [área de teste 3: Fazer Check-Out / desfazer check-out](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Alterna o estado conectado ou offline da solução controlada, que é abordado na área de 3. Para obter mais informações, consulte [área de teste 3: Fazer Check-Out / desfazer check-out](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
   
 ## <a name="command-menu-access"></a>Acesso ao Menu de comando  
  O seguinte [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] caminho de menu de ambiente de desenvolvimento integrado é usado nos casos de teste.  

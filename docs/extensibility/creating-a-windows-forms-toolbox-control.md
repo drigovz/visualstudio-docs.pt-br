@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4f23cae01c9356da26c42ca299a6ac6bb7c190f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936025"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Criar um controle de caixa de ferramentas do Windows Forms
 O modelo de item de controle de caixa de ferramentas do Windows Forms que está incluído no Visual Studio Extensibility Tools (SDK do VS) permite que você crie um controle que é adicionado automaticamente para o **caixa de ferramentas** quando a extensão está instalada. Este tópico mostra como usar o modelo para criar um controle de um contador simples que você pode distribuir a outros usuários.  
@@ -209,7 +209,7 @@ O modelo de item de controle de caixa de ferramentas do Windows Forms que está 
      O contador é redefinido como **0**.  
   
 ## <a name="next-steps"></a>Próximas etapas  
- Quando você cria um **caixa de ferramentas** controle, o Visual Studio cria um arquivo chamado *ProjectName.vsix* no * \bin\debug\* pasta do seu projeto. Você pode implantar o controle ao carregar o *VSIX* arquivo a uma rede ou para um site da Web. Quando um usuário abre o *. VSIX* arquivo, o controle está instalado e adicionado ao Visual Studio **caixa de ferramentas** no computador do usuário. Como alternativa, você pode carregar os *. VSIX* do arquivo para o [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) Web site para que os usuários podem encontrá-lo, navegando no **ferramentas**  >  **Extensões e atualizações** caixa de diálogo.  
+ Quando você cria um **caixa de ferramentas** controle, o Visual Studio cria um arquivo chamado *ProjectName.vsix* no <em>\bin\debug\* pasta do seu projeto. Você pode implantar o controle, carregando o VSIX</em> arquivo a uma rede ou para um site da Web. Quando um usuário abre o *. VSIX* arquivo, o controle está instalado e adicionado ao Visual Studio **caixa de ferramentas** no computador do usuário. Como alternativa, você pode carregar os *. VSIX* do arquivo para o [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) Web site para que os usuários podem encontrá-lo, navegando no **ferramentas**  >  **Extensões e atualizações** caixa de diálogo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Estender outras partes do Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   

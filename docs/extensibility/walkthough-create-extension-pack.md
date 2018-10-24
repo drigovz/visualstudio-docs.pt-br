@@ -13,14 +13,14 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: f87f359d9c143adc9093b08ef58ebca89dca524e
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: 2e0215b22c66d6b555650e05985a674f2ad9aed4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409909"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943096"
 ---
-# <a name="walkthrough-create-an-extension-pack"></a>Passo a passo: Criar um pacote de extensão
+# <a name="walkthrough-create-an-extension-pack"></a>Passo a passo: criar um pacote de extensão
 
 Um pacote de extensão é um conjunto de extensões que podem ser instalados juntos. Pacotes de extensão permitem que você facilmente compartilhar suas extensões favoritas com outros usuários ou agrupar um conjunto de extensões em conjunto para um cenário específico.
   
@@ -40,8 +40,8 @@ O modelo de item do pacote de extensão cria um pacote de extensão com o conjun
   
 3. Arquivo ExtensionPack1.vsext é adicionado, que contém o código a seguir
 
-  ```json
-  {
+   ```json
+   {
     "id": "ExtensionPack1",
     "name": "ExtensionPack1",
     "description": "Read about creating extension packs at https://aka.ms/vsextpack",
@@ -56,8 +56,8 @@ O modelo de item do pacote de extensão cria um pacote de extensão com o conjun
         "name": "CopyAsHtml"
       }
     ]
-  }  
-  ```
+   }  
+   ```
 
 4. O vsixid da extensão para incluir no pacote de extensão pode ser encontrado na [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Localize a extensão que você deseja incluir e clique em **ID da cópia**. Você pode atualizar existente **vsixId** no arquivo ou adicione outra extensão à lista.
 

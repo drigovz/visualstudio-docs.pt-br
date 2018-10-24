@@ -16,12 +16,12 @@ ms.assetid: 79dcbb9b-c7f8-40fc-8a00-f37fe1934f51
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6915d54dca921f9600a51c3501ed9a4808bca199
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4c2aee9c3dbd6f52f36b056a0aae100cf6d4dba0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828105"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Anexando e desanexando em um programa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,31 +30,31 @@ Anexar o depurador requer o envio de sequência correta de métodos e eventos co
   
 ## <a name="sequence-of-methods-and-events"></a>Sequência de métodos e eventos  
   
-1.  O Gerenciador de sessão de depuração (SDM) chama o [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) método.  
+1. O Gerenciador de sessão de depuração (SDM) chama o [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) método.  
   
-     Com base no modelo de processo (DES) do mecanismo de depuração, o `IDebugProgramNodeAttach2::OnAttach` método retorna um dos métodos a seguir, que determina o que acontece em seguida.  
+    Com base no modelo de processo (DES) do mecanismo de depuração, o `IDebugProgramNodeAttach2::OnAttach` método retorna um dos métodos a seguir, que determina o que acontece em seguida.  
   
-     Se `S_FALSE` for retornado, o mecanismo de depuração tiver sido anexado com êxito para o programa. Caso contrário, o [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) método é chamado para concluir o processo de anexação.  
+    Se `S_FALSE` for retornado, o mecanismo de depuração tiver sido anexado com êxito para o programa. Caso contrário, o [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) método é chamado para concluir o processo de anexação.  
   
-     Se `S_OK` for retornado, o DE deve ser carregado no mesmo processo que o SDM. O SDM executa as seguintes tarefas:  
+    Se `S_OK` for retornado, o DE deve ser carregado no mesmo processo que o SDM. O SDM executa as seguintes tarefas:  
   
-    1.  Chamadas [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) para obter as informações de mecanismo de.  
+   1.  Chamadas [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) para obter as informações de mecanismo de.  
   
-    2.  Cria conjunta DE.  
+   2.  Cria conjunta DE.  
   
-    3.  Chamadas [anexar](../../extensibility/debugger/reference/idebugengine2-attach.md).  
+   3.  Chamadas [anexar](../../extensibility/debugger/reference/idebugengine2-attach.md).  
   
-2.  O envia DE um [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) para o SDM com um `EVENT_SYNC` atributo.  
+2. O envia DE um [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) para o SDM com um `EVENT_SYNC` atributo.  
   
-3.  O envia DE um [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) para o SDM com um `EVENT_SYNC` atributo.  
+3. O envia DE um [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) para o SDM com um `EVENT_SYNC` atributo.  
   
-4.  O envia DE um [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) para o SDM com um `EVENT_SYNC_STOP` atributo.  
+4. O envia DE um [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) para o SDM com um `EVENT_SYNC_STOP` atributo.  
   
- Desanexação de um programa é um simples, o processo de duas etapas, da seguinte maneira:  
+   Desanexação de um programa é um simples, o processo de duas etapas, da seguinte maneira:  
   
-1.  As chamadas SDM [desanexar](../../extensibility/debugger/reference/idebugprogram2-detach.md).  
+5. As chamadas SDM [desanexar](../../extensibility/debugger/reference/idebugprogram2-detach.md).  
   
-2.  O envia DE um [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).  
+6. O envia DE um [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Chamar eventos do depurador](../../extensibility/debugger/calling-debugger-events.md)

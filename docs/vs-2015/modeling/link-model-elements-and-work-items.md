@@ -22,12 +22,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e3c2a7558adb9036cec474429da9778394e8c1f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 71500fca3318bf6f18e1c841c1ff90bd303bfaa6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263905"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891746"
 ---
 # <a name="link-model-elements-and-work-items"></a>Vincular elementos de modelo e itens de trabalho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ Acompanhe tarefas, casos de teste, bugs, requisitos, problemas e outros trabalho
   
  Por exemplo, é possível vincular:  
   
--   Um item de trabalho de histórico do usuário e um diagrama de atividade para mostrar como realizar o histórico como uma sequência de operações  
+- Um item de trabalho de histórico do usuário e um diagrama de atividade para mostrar como realizar o histórico como uma sequência de operações  
   
--   Um caso de uso em um diagrama de caso de uso e em itens de trabalho de caso de teste para verificar se o caso uso está implementado corretamente  
+- Um caso de uso em um diagrama de caso de uso e em itens de trabalho de caso de teste para verificar se o caso uso está implementado corretamente  
   
--   Um atributo em uma classe em um diagrama de classes UML e em um item de trabalho de bug para mostrar um erro na implementação do atributo  
+- Um atributo em uma classe em um diagrama de classes UML e em um item de trabalho de bug para mostrar um erro na implementação do atributo  
   
--   Um componente em um diagrama de componente e em um item de trabalho de tarefa para acompanhar o desenvolvimento do componente. Essa tarefa costuma ser dividida em tarefas menores  
+- Um componente em um diagrama de componente e em um item de trabalho de tarefa para acompanhar o desenvolvimento do componente. Essa tarefa costuma ser dividida em tarefas menores  
   
- É possível vincular itens de trabalho a qualquer elemento selecionado em diagramas de modelagem ou no Gerenciador de Modelos UML, como estes itens:  
+  É possível vincular itens de trabalho a qualquer elemento selecionado em diagramas de modelagem ou no Gerenciador de Modelos UML, como estes itens:  
   
--   Todos os elementos em modelo UML como, por exemplo, classes UML, linhas da vida, casos de uso, subsistemas, atividades, nós de objeto, componentes, interfaces  
+- Todos os elementos em modelo UML como, por exemplo, classes UML, linhas da vida, casos de uso, subsistemas, atividades, nós de objeto, componentes, interfaces  
   
--   Todas as relações em modelos UML como, por exemplo, associações, generalizações, dependências, fluxos, mensagens  
+- Todas as relações em modelos UML como, por exemplo, associações, generalizações, dependências, fluxos, mensagens  
   
--   Partes de elementos como, por exemplo, os atributos e as operações de classes, as ocorrências de execução das linhas de vida, os PINs de entrada e saída das atividades, além das partes e das portas de componentes  
+- Partes de elementos como, por exemplo, os atributos e as operações de classes, as ocorrências de execução das linhas de vida, os PINs de entrada e saída das atividades, além das partes e das portas de componentes  
   
--   Camadas e dependências de camada  
+- Camadas e dependências de camada  
   
--   Comentários e links de comentário  
+- Comentários e links de comentário  
   
--   Diagramas. Para selecionar um diagrama, escolha uma parte em branco do diagrama.  
+- Diagramas. Para selecionar um diagrama, escolha uma parte em branco do diagrama.  
   
 > [!WARNING]
 >  Você já deve estar conectado ao TFS fonte de código de controle (SCC) para criar ou vincular a um item de trabalho. Se você tentar abrir uma conexão em um SCC diferentes do TFS, o Visual Studio fecha automaticamente a solução atual. Certifique-se de que você já estiver conectado ao SCC apropriado antes de tentar criar ou vincular a um item de trabalho. Em versões posteriores do Visual Studio, os comandos de menu não estão disponíveis se você não estiver conectado a um SCC.  
@@ -143,7 +143,7 @@ Acompanhe tarefas, casos de teste, bugs, requisitos, problemas e outros trabalho
 1.  Na **Team Explorer**, verifique se você está conectado ao projeto de equipe onde os elementos de modelo estão vinculados ao item de trabalho.  
   
     > [!NOTE]
-    >  Só é possível usar o Team Explorer, e não o Team Web Access, para exibir elementos de modelo vinculados. Verifique se o espaço de trabalho está mapeado para o projeto de modelagem que contém os diagramas ou os elementos de modelagem. Se não tiver um espaço de trabalho, você deverá criá-lo. Ver [solução de problemas](#Troubleshooting) e [criar e trabalhar com espaços de trabalho](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
+    >  Só é possível usar o Team Explorer, e não o Team Web Access, para exibir elementos de modelo vinculados. Verifique se o workspace está mapeado para o projeto de modelagem que contém os diagramas ou os elementos de modelagem. Se não tiver um workspace, você deverá criá-lo. Ver [solução de problemas](#Troubleshooting) e [criar e trabalhar com espaços de trabalho](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
 2.  Abra o item de trabalho, escolha **Links**. Sob **Link de modelo**, abra o menu de atalho para o elemento de modelo vinculado. Escolher **Abrir Item vinculado**.  
   
@@ -171,7 +171,7 @@ Acompanhe tarefas, casos de teste, bugs, requisitos, problemas e outros trabalho
   
 |**Problema**|**Possível causa**|**Resolução**|  
 |---------------|------------------------|--------------------|  
-|Não é possível encontrar o elemento de modelo que você deseja vincular.|O elemento talvez esteja em um diagrama em um projeto de modelagem que esteja em [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Você talvez não tenha um espaço de trabalho que seja mapeado para o diagrama.|Mapeie o espaço de trabalho para o projeto e o diagrama de modelagem. Se não tiver um espaço de trabalho, você deverá criá-lo.<br /><br /> A mensagem de erro exibida para esse problema contém o caminho que é possível usar para mapear o espaço de trabalho.<br /><br /> Ver [criar e trabalhar com espaços de trabalho](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
+|Não é possível encontrar o elemento de modelo que você deseja vincular.|O elemento talvez esteja em um diagrama em um projeto de modelagem que esteja em [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Você talvez não tenha um workspace que seja mapeado para o diagrama.|Mapeie o workspace para o projeto e o diagrama de modelagem. Se não tiver um workspace, você deverá criá-lo.<br /><br /> A mensagem de erro exibida para esse problema contém o caminho que é possível usar para mapear o workspace.<br /><br /> Ver [criar e trabalhar com espaços de trabalho](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
 |Não é possível encontrar o elemento de modelo vinculado.|O elemento vinculado talvez esteja em um diagrama que foi movido, renomeado ou excluído.|1.  No item de trabalho, exclua o link para o elemento de modelo.<br />2.  Crie um novo link com base no item de trabalho para o elemento de modelo.|  
 |O item de trabalho não tem elementos de modelo vinculados esperados.|Um item de trabalho mostra apenas um elemento de camada vinculado caso o vínculo tenha sido criado com base no item de trabalho. A equipe não usa [!INCLUDE[esprscc](../includes/esprscc-md.md)], o caminho local dos diagramas será usado para criar os links. Se o projeto de modelagem e seus diagramas estiverem em [!INCLUDE[esprscc](../includes/esprscc-md.md)], todos os membros da equipe que podem acessar o projeto poderão exibir os elementos vinculados em itens de trabalho.|Tente atualizar o item de trabalho.|  
 |A exclusão de um link para um elemento de modelo de um item de trabalho não exclui o link do elemento de modelo para o item de trabalho.||Exclua o link para o item de trabalho começando pelo elemento de modelo.|  

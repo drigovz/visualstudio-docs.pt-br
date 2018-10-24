@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1669a13b047236044e5f7c65c2d27e187096b62b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 140dea9d65260a4ea5140e09df5876a59e64b2de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267456"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938598"
 ---
 # <a name="graphics-pipeline-stages"></a>Estágios de Pipeline Gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ A janela estágios de Pipeline gráficos ajuda a entender como uma chamada de de
 ### <a name="links-to-related-graphics-objects"></a>Links para os objetos gráficos relacionados  
  Contexto adicional, às vezes, é necessário para determinar por que uma chamada de desenho interage de uma maneira específica com o pipeline de gráficos. Para facilitar a localização deste contexto adicional, os links de janela estágios de Pipeline gráficos a um ou mais objetos que fornecem contexto adicional relacionado ao que está acontecendo no pipeline gráfica.  
   
--   No Direct3D 12 esse objeto é geralmente uma lista de comandos.  
+- No Direct3D 12 esse objeto é geralmente uma lista de comandos.  
   
--   No Direct3D 11 esse objeto é geralmente um contexto de dispositivo de gráficos.  
+- No Direct3D 11 esse objeto é geralmente um contexto de dispositivo de gráficos.  
   
- Esses links são parte da assinatura do evento atual do elementos gráficos que está localizada no canto superior esquerdo da janela estágios de Pipeline gráficos. Depois de qualquer um desses links para examinar os detalhes adicionais sobre o objeto.  
+  Esses links são parte da assinatura do evento atual do elementos gráficos que está localizada no canto superior esquerdo da janela estágios de Pipeline gráficos. Depois de qualquer um desses links para examinar os detalhes adicionais sobre o objeto.  
   
 ### <a name="viewing-and-debugging-shader-code"></a>Exibição e depuração do código do sombreador  
  Você pode examinar e depurar o código para o vértice, hull, domínio, geometria e pixel shaders usando os controles na parte inferior de seus respectivos estágios na janela estágios de Pipeline.  
