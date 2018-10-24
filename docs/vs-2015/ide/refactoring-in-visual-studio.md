@@ -14,27 +14,27 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e621d8bccdb8dceb1a6516ff0c070393962cea11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce995687f304579c7a4f3a95b971dcc86e28f050
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303791"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878024"
 ---
 # <a name="refactoring-in-visual-studio"></a>Refatoração no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Refatoração é o processo de modificar o código para torná-lo mais fácil de manter, entender e estender, mas sem alterar seu comportamento. Algumas *refatorações* comuns incluem:  
   
-1.  dividindo funções longas em funções menores  
+1. dividindo funções longas em funções menores  
   
-2.  renomeando variáveis, tipos, funções ou parâmetros  
+2. renomeando variáveis, tipos, funções ou parâmetros  
   
-3.  reordenação de parâmetros  
+3. reordenação de parâmetros  
   
-4.  removendo ou reordenando usando diretivas  
+4. removendo ou reordenando usando diretivas  
   
- Como a lógica da refatoração está intimamente associada à sintaxe de linguagem, cada serviço de linguagem no Visual Studio fornece suas próprias funcionalidades de refatoração. Para obter mais informações, consulte as seguintes páginas:  
+   Como a lógica da refatoração está intimamente associada à sintaxe de linguagem, cada serviço de linguagem no Visual Studio fornece suas próprias funcionalidades de refatoração. Para obter mais informações, consulte as seguintes páginas:  
   
 ### <a name="refactoring-in-c"></a>Refatoração no C#  
  [Refatoração (C#)](../csharp-ide/refactoring-csharp.md)  

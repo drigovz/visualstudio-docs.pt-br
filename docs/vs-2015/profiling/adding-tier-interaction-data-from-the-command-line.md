@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b22de4b3dd94ba39015605353a71412836a9ff4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7ac10e62c1c982f1b2357fcaea17b6b54865dec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228404"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872064"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Adicionando dados de interação entre camadas da linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,36 +55,36 @@ A criação de perfil de interação de camadas fornece informações adicionais
   
 ##### <a name="profiling-a-windows-desktop-application-example"></a>Um exemplo de criação de perfil de um aplicativo da área de trabalho do Windows  
   
-1.  Abra uma janela de prompt de comando com privilégios de administrador. Clique em **Iniciar**, aponte para **Todos os Programas** e, em seguida, aponte para **Acessórios**. Clique com o botão direito do mouse em **Prompt de Comando** e, em seguida, clique em **Executar Como Administrador**.  
+1. Abra uma janela de prompt de comando com privilégios de administrador. Clique em **Iniciar**, aponte para **Todos os Programas** e, em seguida, aponte para **Acessórios**. Clique com o botão direito do mouse em **Prompt de Comando** e, em seguida, clique em **Executar Como Administrador**.  
   
-2.  Inicialize a criação de perfil do .NET e as variáveis de ambiente TIP. Digite os seguintes comandos:  
+2. Inicialize a criação de perfil do .NET e as variáveis de ambiente TIP. Digite os seguintes comandos:  
   
-    ```  
-    vsperfclrenv /traceon  
-    vsperfclrenv /interactionon  
-    ```  
+   ```  
+   vsperfclrenv /traceon  
+   vsperfclrenv /interactionon  
+   ```  
   
-3.  Inicie o criador de perfil. Digite o seguinte comando:  
+3. Inicie o criador de perfil. Digite o seguinte comando:  
   
-    ```  
-    vsperfcmd /start:trace /output:Desktop_tip.vsp   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:Desktop_tip.vsp   
+   ```  
   
-4.  Inicie o aplicativo com VSPerfCmd. Digite o seguinte comando:  
+4. Inicie o aplicativo com VSPerfCmd. Digite o seguinte comando:  
   
-    ```  
-    vsperfcmd /launch:DesktopApp.exe  
-    ```  
+   ```  
+   vsperfcmd /launch:DesktopApp.exe  
+   ```  
   
-5.  Utilize o aplicativo para coletar dados de criação de perfil e, em seguida, feche o aplicativo da maneira normal.  
+5. Utilize o aplicativo para coletar dados de criação de perfil e, em seguida, feche o aplicativo da maneira normal.  
   
-6.  Limpe as variáveis de ambiente TIP. Digite o seguinte comando:  
+6. Limpe as variáveis de ambiente TIP. Digite o seguinte comando:  
   
-    ```  
-    vsperfclrenv /off  
-    ```  
+   ```  
+   vsperfclrenv /off  
+   ```  
   
- Para obter mais informações, consulte [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md).  
+   Para obter mais informações, consulte [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md).  
   
 ### <a name="profiling-services"></a>Serviços de criação de perfil  
  Para criar perfil de serviços, incluindo aplicativos [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], use a opção **VSPerfClrEnv /GlobalInteractionOn** para definir as variáveis de ambiente e a opção **VSPerfClrEnv /GlobalInteractionOff** para removê-las.  
@@ -95,33 +95,33 @@ A criação de perfil de interação de camadas fornece informações adicionais
   
 ##### <a name="profiling-a-windows-service-example"></a>Exemplo de criação de perfil de um serviço Windows  
   
-1.  Se necessário, instale o serviço.  
+1. Se necessário, instale o serviço.  
   
-2.  Abra uma janela de prompt de comando com privilégios de administrador. Clique em **Iniciar**, aponte para **Todos os Programas** e, em seguida, aponte para **Acessórios**. Clique com o botão direito do mouse em **Prompt de Comando** e, em seguida, clique em **Executar Como Administrador**.  
+2. Abra uma janela de prompt de comando com privilégios de administrador. Clique em **Iniciar**, aponte para **Todos os Programas** e, em seguida, aponte para **Acessórios**. Clique com o botão direito do mouse em **Prompt de Comando** e, em seguida, clique em **Executar Como Administrador**.  
   
-3.  Inicialize as variáveis de ambiente de criação de perfil do .NET. Digite o seguinte comando:  
+3. Inicialize as variáveis de ambiente de criação de perfil do .NET. Digite o seguinte comando:  
   
-    ```  
-    vsperfclrenv /globaltraceon  
-    ```  
+   ```  
+   vsperfclrenv /globaltraceon  
+   ```  
   
-4.  Inicialize as variáveis de ambiente TIP. Digite o seguinte comando  
+4. Inicialize as variáveis de ambiente TIP. Digite o seguinte comando  
   
-    ```  
-    vsperfclrenv /globalinteractionon  
-    ```  
+   ```  
+   vsperfclrenv /globalinteractionon  
+   ```  
   
-5.  Reinicie o computador para registrar as variáveis de ambiente.  
+5. Reinicie o computador para registrar as variáveis de ambiente.  
   
-6.  Abra uma janela de prompt de comando com privilégios de administrador.  
+6. Abra uma janela de prompt de comando com privilégios de administrador.  
   
-7.  Inicie o criador de perfil. Digite o seguinte comando:  
+7. Inicie o criador de perfil. Digite o seguinte comando:  
   
-    ```  
-    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
+   ```  
   
-8.  Se necessário, inicie o serviço.  
+8. Se necessário, inicie o serviço.  
   
 9. Anexe o criador de perfil ao serviço. Digite o seguinte comando:  
   
@@ -143,11 +143,11 @@ A criação de perfil de interação de camadas fornece informações adicionais
   
 13. Reinicie o computador para registrar as variáveis de ambiente limpas.  
   
- Para obter mais informações, consulte um dos seguintes tópicos:  
+    Para obter mais informações, consulte um dos seguintes tópicos:  
   
- [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
+    [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
- [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)  
+    [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)  
   
 ## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Adicionando dados de interação de camadas com VSPerfASPNETCmd  
  A ferramenta de linha de comando VSPerfASPNETCmd permite criar facilmente o perfil de aplicativos Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Em comparação com a ferramenta de linha de comando **VSPerfCmd**, as opções são reduzidas, nenhuma variável de ambiente precisa ser definida e não é necessário reinicializar o computador. Esses recursos do VSPerfASPNETCmd deixam extremamente fácil a coleta de dados de interação de camadas.  

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85b17ae36702ec1e0af677ad516d29c6139c6acd
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c1e473baccd6e4bb4de1c36d8888082baf40034b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876629"
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>Como: Imprimir planilhas programaticamente
   Você pode imprimir qualquer planilha em uma pasta de trabalho.  
@@ -33,12 +33,12 @@ ms.locfileid: "35669800"
   
 ### <a name="to-print-a-worksheet"></a>Para imprimir uma planilha  
   
-1.  Chame o <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintOut%2A> método de `Sheet1`, duas cópias de solicitação e visualizar o documento antes de imprimir.  
+1. Chame o <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintOut%2A> método de `Sheet1`, duas cópias de solicitação e visualizar o documento antes de imprimir.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#22)]
-     [!code-vb[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#22)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#22)]
+    [!code-vb[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#22)]  
   
- O <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> método permite que você exiba o objeto especificado em de **Visualizar impressão** janela. O código a seguir pressupõe que você tenha um <xref:Microsoft.Office.Tools.Excel.Worksheet> item de host chamado `Sheet1`.  
+   O <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> método permite que você exiba o objeto especificado em de **Visualizar impressão** janela. O código a seguir pressupõe que você tenha um <xref:Microsoft.Office.Tools.Excel.Worksheet> item de host chamado `Sheet1`.  
   
 ### <a name="to-preview-a-page-before-printing"></a>Para visualizar uma página antes de imprimir  
   
@@ -51,12 +51,12 @@ ms.locfileid: "35669800"
   
 ### <a name="to-print-a-worksheet"></a>Para imprimir uma planilha  
   
-1.  Chamar o <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintOut%2A> método da planilha ativa, duas cópias de solicitação e visualizar o documento antes de imprimir.  
+1. Chamar o <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintOut%2A> método da planilha ativa, duas cópias de solicitação e visualizar o documento antes de imprimir.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#14)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#14)]  
+    [!code-csharp[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#14)]
+    [!code-vb[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#14)]  
   
- O <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> método permite que você exiba o objeto especificado em de **Visualizar impressão** janela.  
+   O <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> método permite que você exiba o objeto especificado em de **Visualizar impressão** janela.  
   
 ### <a name="to-preview-a-page-before-printing"></a>Para visualizar uma página antes de imprimir  
   
