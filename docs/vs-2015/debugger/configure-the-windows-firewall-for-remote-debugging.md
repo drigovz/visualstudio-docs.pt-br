@@ -14,37 +14,37 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb3473e8c34f36e1cde0450563711824ce22a37d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96b4e4cc929dc7941fac5e8a7f090e701fe2810f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935387"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configurar o Firewall do Windows para depuração remota
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tópico descreve como configurar o firewall para habilitar a depuração remota em computadores que executam sistemas operacionais a seguir:  
   
--   Windows 7  
+- Windows 7  
   
--   Windows 8/8.1  
+- Windows 8/8.1  
   
--   Windows 10  
+- Windows 10  
   
--   Windows Server 2008 (R2)  
+- Windows Server 2008 (R2)  
   
--   Windows Server 2012  
+- Windows Server 2012  
   
--   Windows Server 2012 R2  
+- Windows Server 2012 R2  
   
- Se a rede na qual você está depurando não estiver protegida por um firewall, essa configuração é desnecessária. Caso contrário, o computador que hospeda o Visual Studio e o computador remoto a ser depurado exigem alterações à configuração do firewall.  
+  Se a rede na qual você está depurando não estiver protegida por um firewall, essa configuração é desnecessária. Caso contrário, o computador que hospeda o Visual Studio e o computador remoto a ser depurado exigem alterações à configuração do firewall.  
   
- **IPSec** se sua rede exigir que a comunicação ser realizadas usando o IPSec, você deve abrir portas adicionais no computador host do Visual Studio e o computador remoto.  
+  **IPSec** se sua rede exigir que a comunicação ser realizadas usando o IPSec, você deve abrir portas adicionais no computador host do Visual Studio e o computador remoto.  
   
- **Servidor Web** se você estiver depurando um servidor Web remoto, você deve abrir uma porta adicional no computador remoto.  
+  **Servidor Web** se você estiver depurando um servidor Web remoto, você deve abrir uma porta adicional no computador remoto.  
   
- Observe que ambos os computadores não é preciso executar o mesmo sistema operacional. Por exemplo, o computador do Visual Studio pode executar o Windows 10 e o computador remoto pode executar o Windows Server 2012 R2.  
+  Observe que ambos os computadores não é preciso executar o mesmo sistema operacional. Por exemplo, o computador do Visual Studio pode executar o Windows 10 e o computador remoto pode executar o Windows Server 2012 R2.  
   
 ## <a name="to-configure-windows-firewall-on-the-visual-studio-computer"></a>Para configurar o Firewall do Windows no computador do Visual Studio  
  As instruções para configurar o firewall do Windows é um pouco diferem em diferentes sistemas operacionais. No Windows 7 ou Windows Server 2008, a palavra **programa** é usado; no Windows 8/8.1, Windows 10 e Windows Server 2012, a palavra **aplicativo** é usado.  Nas etapas a seguir, usaremos a palavra **aplicativo**.  

@@ -13,46 +13,46 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 54174dcb70440809eda9712d451c2b60fe8bb064
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f9e1febd80c060d97ec9b533a3ec1b67d0427eab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942173"
 ---
 # <a name="properties-of-geometry-shapes"></a>Propriedades de formas geométricas
-Você pode usar formas de geometria para especificar como as instâncias de classes de domínio são exibidas em uma linguagem específica de domínio. Para obter mais informações, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [personalizar e estender uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Você pode usar formas geométricas para especificar como as instâncias de classes de domínio são exibidas em uma linguagem específica de domínio. Para obter mais informações, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [personalizando e estendendo uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
- Formas de geometria têm as propriedades que são listadas na tabela a seguir.
+ Formas geométricas têm as propriedades que são listadas na tabela a seguir.
 
 |Propriedade|Descrição|Padrão|
-|--------------|-----------------|-------------|
-|Cor de preenchimento|A cor de preenchimento dessa forma.|Branco|
-|Preencher o modo de gradiente|O modo de preenchimento a gradação dessa forma (Horizontal, Vertical, Diagonal para frente, Diagonal para trás ou nenhum).|Horizontal|
-|Geometry|A geometria dessa forma (retângulo, retângulo arredondado, elipse ou círculo).|Retângulo|
-|Tem pontos de Conexão padrão|Se `True`, a forma usará superior, inferior, esquerda e pontos de conexão à direita no designer de gerado.|False|
-|Cor do contorno|A cor do contorno dessa forma.|Preto|
-|Estilo do tracejado da estrutura de tópicos|O estilo de traço da estrutura de tópicos desta forma (sólido, tracejado, ponto, Traçoponto, Traçopontoponto ou personalizado).|Sólido|
-|Espessura da estrutura de tópicos|A espessura da estrutura de tópicos dessa forma.|0.03125|
-|Cor do texto|A cor que é usada para decoradores de texto que estão associados esta forma.|Preto|
+|-|-|-|
+|Cor de preenchimento|A cor de preenchimento desta forma.|Branco|
+|Modo de gradiente de preenchimento|O modo gradiente de preenchimento desta forma (Horizontal, Vertical, Diagonal para frente, Diagonal para trás ou nenhum).|Horizontal|
+|geometria|A geometria desta forma (retângulo, retângulo arredondado, elipse ou um círculo).|Retângulo|
+|Tem pontos de Conexão padrão|Se `True`, a forma usará superior, inferior, esquerda e pontos de conexão certa no designer gerado.|False|
+|Cor do contorno|A cor do contorno desta forma.|Preto|
+|Estilo de contorno tracejado|O estilo de contorno tracejado desta forma (sólido, traço, Dot, Traçoponto, Traçopontoponto ou personalizado).|Sólido|
+|Espessura do contorno|A espessura do contorno desta forma.|0.03125|
+|Cor do texto|A cor que é usada para os decoradores de texto que estão associados esta forma.|Preto|
 |Modificador de acesso|O modificador de acesso da classe (público ou interno).|Público|
-|Atributos personalizados|Usado para adicionar atributos para a classe do código fonte que é gerada para esta forma.|\<Nenhum >|
-|Gera dois derivado|Se `True`, uma classe base e uma classe parcial (para dar suporte a personalização por meio de substituições) será gerada. Para obter mais informações, consulte [substituir e estender as Classes geradas pelo](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Tem um construtor personalizado|Se `True`, será fornecido um construtor personalizado no código-fonte. Para obter mais informações, consulte [substituir e estender as Classes geradas pelo](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Modificador de herança|Descreve o tipo de herança da classe de código fonte que é gerado de forma (`none`, `abstract` ou `sealed`).|nenhum|
-|Forma de geometria de base|A classe base dessa forma.|(nenhum)|
-|Nome|O nome dessa forma.|Nome atual|
-|Namespace|O namespace que é associado a esta forma.|Namespace atual|
-|Tipo de dica de ferramenta|Como a dica de ferramenta é definida (fixo, variável ou nenhum). Se for resolvido, em seguida, o valor da `Fixed Tooltip Text` propriedade é usada como a dica de ferramenta; se a variável, em seguida, a dica de ferramenta é definida no código personalizado.|Nenhum|
-|Observações|Anotações informais que estão associadas esse elemento.|\<Nenhum >|
-|Altura inicial|Altura inicial dessa forma, em polegadas.|1|
-|Largura inicial|Largura inicial dessa forma, em polegadas.|1.5|
-|Cor de preenchimento exposto como propriedade<br /><br /> Modo de gradação de preenchimento exposto<br /><br /> Exposto a cor do contorno como propriedade<br /><br /> Exposto estilo do tracejado da estrutura de tópicos como propriedade<br /><br /> Exposto a espessura da estrutura de tópicos como propriedade<br /><br /> Expõe a cor do texto|Se `True`, o usuário pode definir a propriedade declarada de uma forma. Para definir isso, a definição de forma de mouse e clique em **adicionar expostos**.|False|
+|Atributos personalizados|Usado para adicionar atributos para a classe de código de origem que é gerada para esta forma.|\<Nenhum >|
+|Gera dupla derivado|Se `True`, serão geradas uma classe base e uma classe parcial (para dar suporte à personalização por meio de substituições). Para obter mais informações, consulte [substituindo e estendendo as Classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Tem um construtor personalizado|Se `True`, um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as Classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Modificador de herança|Descreve o tipo de herança da classe de código fonte que é gerado a partir da forma (`none`, `abstract` ou `sealed`).|nenhum|
+|Forma geométrica base|A classe base dessa forma.|(nenhum)|
+|Nome|O nome desta forma.|Nome atual|
+|Namespace|O namespace que é afiliado desta forma.|Namespace atual|
+|Tipo de dica de ferramenta|Como a dica de ferramenta é definida (fixo, variável ou nenhum). Se fixo, em seguida, o valor da `Fixed Tooltip Text` propriedade é usada como a dica de ferramenta; se a variável, em seguida, a dica de ferramenta é definida no código personalizado.|Nenhum|
+|Observações|Observações informais associadas esse elemento.|\<Nenhum >|
+|Altura inicial|Altura inicial desta forma em polegadas.|1|
+|Largura inicial|Largura inicial desta forma em polegadas.|1.5|
+|Cor de preenchimento expostos como propriedade<br /><br /> Modo de gradiente de preenchimento exposto<br /><br /> Exposto a cor do contorno como propriedade<br /><br /> Exposto o estilo de contorno tracejado como propriedade<br /><br /> Exposto como propriedade de espessura do contorno<br /><br /> Expõe a cor do texto|Se `True`, o usuário pode definir a propriedade indicada de uma forma. Para configurar isso, a definição de forma com o botão direito e clique em **adicionar exposto**.|False|
 |Descrição|A descrição é usada para documentar o designer gerado.|\<Nenhum >|
 |Nome de Exibição|O nome que será exibido no designer gerado para esta forma.|\<Nenhum >|
-|Texto de dica de ferramenta fixo|O texto que é usado para uma dica de ferramenta fixa.|\<Nenhum >|
+|Texto de dica de ferramenta fixa|O texto que é usado para uma dica de ferramenta fixa.|\<Nenhum >|
 |Palavra-chave de ajuda|A palavra-chave que é usada para indexar a Ajuda de F1 para esta forma.|\<Nenhum >|
 
 ## <a name="see-also"></a>Consulte também
 
-- [Glossário de ferramentas de linguagem específica de domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário de ferramentas de linguagem específica do domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

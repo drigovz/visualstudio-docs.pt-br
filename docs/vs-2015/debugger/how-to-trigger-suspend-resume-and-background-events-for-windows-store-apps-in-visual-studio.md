@@ -21,12 +21,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5496e9b5122d2f2206118445a4e7316c2717bc37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 12c22b8ef7aa545e4256c8b122395a72508b94ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938377"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Como disparar eventos de suspensão, retomada e segundo plano para aplicativos da Windows Store no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ Quando você não está depurando, Windows **gerenciamento de tempo de vida do p
   
  [Tarefas em segundo plano de gatilho](#BKMK_Trigger_background_tasks)  
   
--   [Disparar um evento de tarefa do plano de fundo de uma sessão de depuração padrão](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
+- [Disparar um evento de tarefa do plano de fundo de uma sessão de depuração padrão](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
   
--   [Disparar uma tarefa em segundo plano quando o aplicativo não está em execução](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
+- [Disparar uma tarefa em segundo plano quando o aplicativo não está em execução](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
   
- [Disparar eventos de gerenciamento de tempo de vida de processos e tarefas de um aplicativo instalado em segundo plano](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
+  [Disparar eventos de gerenciamento de tempo de vida de processos e tarefas de um aplicativo instalado em segundo plano](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
   
- [Diagnosticando erros de ativação de tarefa em segundo plano](#BKMK_Diagnosing_background_task_activation_errors)  
+  [Diagnosticando erros de ativação de tarefa em segundo plano](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Eventos de gerenciamento de tempo de vida do processo de gatilho  
  O Windows pode suspender o aplicativo quando o usuário sai dele ou quando o Windows entra em um estado de baixo consumo de energia. Você pode responder ao evento `Suspending` para salvar dados relevantes do aplicativo e do usuário em um armazenamento persistente e para liberar recursos. Quando um aplicativo é retomado do **Suspended** de estado, ele entra a **executando** de estado e continua de onde estava quando foi suspenso. Você pode responder ao evento `Resuming` para restaurar ou atualizar o estado do aplicativo e recuperar recursos.  
