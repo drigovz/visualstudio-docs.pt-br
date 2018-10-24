@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0556dd29e37f45b460e3dde271384e94b1c09ed
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 261eef97d6b76d5cc793ecb34d2697abc717e0ca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920892"
 ---
 # <a name="options-page-debugging-node-properties"></a>Página de Opções, Depuração, Propriedades do Nó
 As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) associadas à categoria **Depuração**, `DTE.Properties("Debugging", <Property Page>)` da caixa de diálogo **Opções**.
@@ -24,7 +24,7 @@ As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) ass
  `DTE.Properties("Debugging", "General")`
 
 |Nome do item de propriedade|Valor|Descrição|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (Booliano)|Determina se o depurador solicitará permissão antes de excluir todos os pontos de interrupção de um projeto.|
 |BreakAllProcesses|Get/Set (Booliano)|Determina se o depurador interromperá todos os processos sempre que um único processo for interrompido.|
 |BreakAtBoundaries|Get/Set (Booliano)|Determina se o depurador interromperá a execução quando uma exceção exceder um limite entre AppDomains ou entre o código nativo e gerenciado.|
@@ -54,7 +54,7 @@ As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) ass
  `DTE.Properties("Debugging", "EditAndContinue")`
 
 |Nome do item de propriedade|Valor|Descrição|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |EnableEditAndContinue|Get/Set (Booliano)|Determina se a opção Editar e Continuar está habilitada. Essa opção se aplica a todas as linguagens que dão suporte à opção Editar e Continuar.|
 |InvokedByCommands|Get/Set (Booliano)|Determina se a opção Editar e Continuar aplica as alterações de código automaticamente quando o usuário seleciona um comando de depuração como **Executar em Etapas** ou **Continuar**. Essa opção se aplica apenas ao código nativo.|
 |InvokedByCommandsAskFirst|Get/Set (Booliano)|Determina se a opção Editar e Continuar solicita ao usuário permissão para aplicar alterações de código quando o usuário seleciona um comando de depuração como **Executar em Etapas** ou **Continuar**. Essa opção se aplica apenas ao código nativo.|
@@ -66,7 +66,7 @@ As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) ass
  `DTE.Properties("Debugging", "JustInTime")`
 
 |Nome do item de propriedade|Valor|Descrição|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |JitManaged|Get/Set (Booliano)|Determina se a depuração Just-In-Time está habilitada para o código gerenciado.|
 |JitNative|Get/Set (Booliano)|Determina se a depuração Just-In-Time está habilitada para o código nativo.|
 |JitScript|Get/Set (Booliano)|Determina se a depuração Just-In-Time está habilitada para o código de script.|
@@ -75,7 +75,7 @@ As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) ass
  `DTE.Properties("Debugging", "Native")`
 
 |Nome do item de propriedade|Valor|Descrição|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |LoadDllExports|Get/Set (Booliano)|Determina se o depurador carrega as tabelas de exportação de DLL.|
 |EnableRPC|Get/Set (Booliano)|Determina se o depurador pode intervir em chamadas COM de procedimento remoto.|
 
