@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a2f919e1dce6864fa25348acd9c9858f9e4022f8
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 990b55f4ba78f32acba40c325ade596f5628c54f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857697"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893930"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Propriedades de uma definição de DSL
 Definem propriedades de DslDefinition *linguagem específica do domínio* propriedades de definição, como numeração de versão. As propriedades de DslDefinition aparecem na **propriedades** janela quando você clica em uma área aberta do diagrama na *Designer de linguagem específica do domínio*.
@@ -26,7 +26,7 @@ Definem propriedades de DslDefinition *linguagem específica do domínio* propri
  DslDefinition tem as propriedades na tabela a seguir:
 
 |Propriedade|Descrição|Padrão|
-|--------------|-----------------|-------------|
+|-|-|-|
 |Modificador de acesso|Determina se o modificador de acesso para a classe de domínio é público ou interno.|públicos|
 |Atributos personalizados|Personalizadas definidas atributos para a classe de domínio.<br /><br /> **Observação** Use o botão Procurar para adicionar um atributo.|\<Nenhum >|
 |Nome da empresa|O nome do nome da empresa no registro do sistema.|Nome da empresa atual|

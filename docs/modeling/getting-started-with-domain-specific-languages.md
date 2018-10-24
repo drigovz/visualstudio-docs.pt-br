@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 36cc776f18990e7cc97b1583267c9f9f9b9c95eb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 276ec679525682486db5a579ac34f52cec5081f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381140"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885649"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introdução à Linguagem Específica de Domínio
 
@@ -43,11 +43,12 @@ O restante desta visão geral é um passo a passo que apresenta as operações b
 
 Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|SDK de modelagem para Visual Studio||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| SDK de modelagem para Visual Studio | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -143,7 +144,7 @@ O Visual Studio experimental será parecida com o exemplo a seguir:
 
 ### <a name="the-content-of-a-model"></a>O conteúdo de um modelo
 
-O conteúdo de um arquivo que é uma instância de uma DSL é chamado uma *modelo*. O modelo contiver *modelo * * elementos* e *links* entre os elementos. A definição de DSL Especifica quais tipos de elementos de modelo e links podem existir no modelo. Por exemplo, em uma DSL criada usando o modelo de linguagem mínima, há um tipo de elemento de modelo e um tipo de link.
+O conteúdo de um arquivo que é uma instância de uma DSL é chamado uma *modelo*. O modelo contiver *modelo*<em>elementos</em> e *links* entre os elementos. A definição de DSL Especifica quais tipos de elementos de modelo e links podem existir no modelo. Por exemplo, em uma DSL criada usando o modelo de linguagem mínima, há um tipo de elemento de modelo e um tipo de link.
 
 A definição de DSL pode especificar como o modelo é exibido em um diagrama. Você pode escolher entre uma variedade de estilos de formas e conectores. Você pode especificar que algumas formas aparecem dentro de outras formas.
 
@@ -246,39 +247,39 @@ Renomeie as classes de domínio existentes e as relações. Por exemplo, a parti
 
 ##### <a name="to-add-properties-and-display-them"></a>Para adicionar propriedades e exibi-los
 
-1.  Adicione as propriedades.
+1. Adicione as propriedades.
 
-    1.  No diagrama de definição de DSL, clique com botão direito do **pessoa** classe de domínio, aponte para **Add**e, em seguida, clique em **propriedade de domínio**.
+   1.  No diagrama de definição de DSL, clique com botão direito do **pessoa** classe de domínio, aponte para **Add**e, em seguida, clique em **propriedade de domínio**.
 
-    2.  Digite uma lista de novos nomes de propriedade, como **nascimento** e **morte**. Pressione **Enter** após cada uma delas.
+   2.  Digite uma lista de novos nomes de propriedade, como **nascimento** e **morte**. Pressione **Enter** após cada uma delas.
 
-2.  Adicione decoradores que exibirão as propriedades da forma.
+2. Adicione decoradores que exibirão as propriedades da forma.
 
-    1.  Siga a linha cinza que estende a classe de domínio da pessoa para o outro lado do diagrama. Isso é um mapa de elemento do diagrama. Ele vincula a classe de domínio a uma classe shape.
+   1.  Siga a linha cinza que estende a classe de domínio da pessoa para o outro lado do diagrama. Isso é um mapa de elemento do diagrama. Ele vincula a classe de domínio a uma classe shape.
 
-    2.  Essa classe de forma com o botão direito, aponte para **Add**e, em seguida, clique em **decorador de texto**.
+   2.  Essa classe de forma com o botão direito, aponte para **Add**e, em seguida, clique em **decorador de texto**.
 
-    3.  Adicione dois decoradores com nomes como **BirthDecorator** e **DeathDecorator**.
+   3.  Adicione dois decoradores com nomes como **BirthDecorator** e **DeathDecorator**.
 
-    4.  Selecione cada decorador novo e na janela Propriedades, defina as **posição** campo. Isso determina qual o valor da propriedade de domínio será exibido na forma. Por exemplo, defina **InnerBottomLeft** e **InnerBottomRight**.
+   4.  Selecione cada decorador novo e na janela Propriedades, defina as **posição** campo. Isso determina qual o valor da propriedade de domínio será exibido na forma. Por exemplo, defina **InnerBottomLeft** e **InnerBottomRight**.
 
-         ![Definição de forma do compartimento](../modeling/media/familyt_compartment.png)
+        ![Definição de forma do compartimento](../modeling/media/familyt_compartment.png)
 
-3.  Mapear os decoradores para as propriedades.
+3. Mapear os decoradores para as propriedades.
 
-    1.  Abra a janela de detalhes de DSL. Geralmente, é uma guia ao lado da janela de saída. Se você não pode vê-lo, nos **modo de exibição** , aponte para **Other Windows**e, em seguida, clique em **detalhes de DSL**.
+   1.  Abra a janela de detalhes de DSL. Geralmente, é uma guia ao lado da janela de saída. Se você não pode vê-lo, nos **modo de exibição** , aponte para **Other Windows**e, em seguida, clique em **detalhes de DSL**.
 
-    2.  No diagrama de definição de DSL, clique na linha que conecta-se a **pessoa** classe de domínio para a classe shape.
+   2.  No diagrama de definição de DSL, clique na linha que conecta-se a **pessoa** classe de domínio para a classe shape.
 
-    3.  No **detalhes de DSL**diante de **mapas do decorador** guia, clique na caixa de seleção em um decorador não mapeado. Na **Exibir propriedade**, selecione a propriedade de domínio ao qual você deseja que ela está mapeada. Por exemplo, mapeie **BirthDecorator** à **nascimento**.
+   3.  No **detalhes de DSL**diante de **mapas do decorador** guia, clique na caixa de seleção em um decorador não mapeado. Na **Exibir propriedade**, selecione a propriedade de domínio ao qual você deseja que ela está mapeada. Por exemplo, mapeie **BirthDecorator** à **nascimento**.
 
-4.  Salvar a DSL, clique em transformar todos os modelos e pressione F5.
+4. Salvar a DSL, clique em transformar todos os modelos e pressione F5.
 
-5.  Em um diagrama de modelo de exemplo, verifique se que você pode agora clique as posições que você escolheu e digite valores para eles. Além disso, quando você seleciona uma **pessoa** forma, a janela Propriedades exibe as novas propriedades de nascimento e morte.
+5. Em um diagrama de modelo de exemplo, verifique se que você pode agora clique as posições que você escolheu e digite valores para eles. Além disso, quando você seleciona uma **pessoa** forma, a janela Propriedades exibe as novas propriedades de nascimento e morte.
 
-6.  Em um arquivo. TT, você pode adicionar código que obtém as propriedades de cada pessoa.
+6. Em um arquivo. TT, você pode adicionar código que obtém as propriedades de cada pessoa.
 
- ![Explorer, a caixa de ferramentas e diagrama de árvore genealógica](../modeling/media/familyt_instance.png)
+   ![Explorer, a caixa de ferramentas e diagrama de árvore genealógica](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Definirá novas Classes
  Você pode adicionar classes de domínio e relações em um modelo. Por exemplo, você poderia criar uma nova classe para representar uma nova relação para representar que uma pessoa viver em uma cidade e cidades.

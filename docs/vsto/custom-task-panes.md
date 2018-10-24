@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2958001bfd2f9c00689e1c44bd64a5fa3c5b4d00
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4e8384bc86bf59216c353b0f4610d3863445781
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635551"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889757"
 ---
 # <a name="custom-task-panes"></a>Painéis de tarefas personalizados
   Painéis de tarefas estão os painéis de interface do usuário que normalmente são encaixados em um dos lados de uma janela em um aplicativo do Microsoft Office. Painéis de tarefas personalizados oferecem uma maneira de criar seu próprio painel de tarefas e fornecer aos usuários uma interface familiar para acessar recursos da sua solução. Por exemplo, a interface pode conter controles que executar o código para modificar documentos ou exibir dados de uma fonte de dados.  
@@ -55,11 +55,11 @@ ms.locfileid: "42635551"
 ## <a name="create-a-custom-task-pane"></a>Criar um painel de tarefas personalizado  
  Você pode criar um painel de tarefas personalizado básico em duas etapas:  
   
-1.  Criar uma interface do usuário para seu painel de tarefas personalizados, adicionando controles Windows Forms para um <xref:System.Windows.Forms.UserControl> objeto.  
+1. Criar uma interface do usuário para seu painel de tarefas personalizados, adicionando controles Windows Forms para um <xref:System.Windows.Forms.UserControl> objeto.  
   
-2.  Criar uma instância de painel de tarefas personalizado, passando o controle de usuário para o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> objeto no seu suplemento do VSTO. Esta coleção retorna um novo <xref:Microsoft.Office.Tools.CustomTaskPane> objeto que você pode usar para modificar a aparência do painel de tarefas e responder aos eventos de usuário.  
+2. Criar uma instância de painel de tarefas personalizado, passando o controle de usuário para o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> objeto no seu suplemento do VSTO. Esta coleção retorna um novo <xref:Microsoft.Office.Tools.CustomTaskPane> objeto que você pode usar para modificar a aparência do painel de tarefas e responder aos eventos de usuário.  
   
- Para obter mais informações, consulte [como: adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
+   Para obter mais informações, consulte [como: adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
 ### <a name="create-the-user-interface"></a>Criar a interface do usuário  
  Todos os painéis de tarefas personalizados que são criados usando as ferramentas de desenvolvimento do Office no Visual Studio contêm uma <xref:System.Windows.Forms.UserControl> objeto. Esse controle de usuário fornece a interface do usuário do seu painel de tarefas personalizado. Você pode criar o controle de usuário em tempo de design ou em tempo de execução. Se você criar o controle de usuário em tempo de design, você pode usar o Designer de formulários do Windows para construir a interface do usuário do seu painel de tarefas.  
@@ -77,11 +77,11 @@ ms.locfileid: "42635551"
   
  Para determinar qual janela exibe o painel de tarefas personalizado, use o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> sobrecarga do método quando você cria o painel de tarefas:  
   
--   Para associar o painel de tarefas com a janela ativa, use o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> método.  
+- Para associar o painel de tarefas com a janela ativa, use o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> método.  
   
--   Para associar o painel de tarefas com um documento que é hospedado por uma janela especificada, use o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> método.  
+- Para associar o painel de tarefas com um documento que é hospedado por uma janela especificada, use o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> método.  
   
- Alguns aplicativos do Office exigem instruções explícitas para quando criar ou exibir seu painel de tarefas quando mais de uma janela é aberta. Assim, é importante considerar onde instanciar o painel de tarefas personalizado em seu código para garantir que o painel de tarefas é exibida com os documentos apropriados ou a itens no aplicativo. Para obter mais informações, consulte [gerenciar painéis de tarefas personalizados no aplicativo windows](#Managing).  
+  Alguns aplicativos do Office exigem instruções explícitas para quando criar ou exibir seu painel de tarefas quando mais de uma janela é aberta. Assim, é importante considerar onde instanciar o painel de tarefas personalizado em seu código para garantir que o painel de tarefas é exibida com os documentos apropriados ou a itens no aplicativo. Para obter mais informações, consulte [gerenciar painéis de tarefas personalizados no aplicativo windows](#Managing).  
   
 ## <a name="access-the-application-from-the-task-pane"></a>Acessar o aplicativo de painel de tarefas  
  Se você quiser automatizar a aplicação do controle do usuário, você pode acessar diretamente o modelo de objeto usando `Globals.ThisAddIn.Application` em seu código. Estático `Globals` classe fornece acesso para o `ThisAddIn` objeto. O `Application` campo desse objeto é o ponto de entrada no modelo de objeto do aplicativo.  
@@ -136,11 +136,11 @@ ms.locfileid: "42635551"
   
  Os seguintes grupos de aplicativo têm requisitos de desenvolvimento diferentes:  
   
--   [Outlook](#Outlook)  
+- [Outlook](#Outlook)  
   
--   [Word, InfoPath e PowerPoint](#WordAndInfoPath)  
+- [Word, InfoPath e PowerPoint](#WordAndInfoPath)  
   
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [How do i: gerenciar os painéis de tarefas nos suplementos do VSTO do Word?](http://go.microsoft.com/fwlink/?LinkId=136781).  
+  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [How do i: gerenciar os painéis de tarefas nos suplementos do VSTO do Word?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
 ##  <a name="Outlook"></a> Outlook  
  Quando você cria um painel de tarefas personalizado para o Outlook, o painel de tarefas personalizado está associado uma janela de navegador ou Inspetor específica. Explorers são janelas que exibem o conteúdo de uma pasta e inspetores são janelas que exibem um item como uma mensagem de email ou uma tarefa.  
@@ -149,23 +149,23 @@ ms.locfileid: "42635551"
   
  Para associar o painel de tarefas um Gerenciador ou Inspetor específico, use o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> método para criar o painel de tarefas e, em seguida, passe o <xref:Microsoft.Office.Interop.Outlook.Explorer> ou <xref:Microsoft.Office.Interop.Outlook.Inspector> do objeto para o *janela* parâmetro. Para obter mais informações sobre a criação de painéis de tarefas personalizados, consulte [visão geral de painéis de tarefas personalizado](../vsto/custom-task-panes.md).  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Activate>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Activate>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate>  
   
- Para monitorar o estado das janelas de inspeção, você pode manipular os seguintes eventos de Inspetor:  
+  Para monitorar o estado das janelas de inspeção, você pode manipular os seguintes eventos de Inspetor:  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Activate>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Activate>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
   
 ### <a name="prevent-multiple-instances-of-a-custom-task-pane-in-outlook"></a>Impedir que várias instâncias de um painel de tarefas personalizado no Outlook  
  Para impedir que o Outlook windows exiba várias instâncias de um painel de tarefas personalizado, remover explicitamente o painel de tarefas personalizado a partir de `CustomTaskPanes` coleção do `ThisAddIn` classe quando cada janela é fechada. Chame o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> método em um evento que é gerado quando uma janela é fechada, como <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> ou <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>.  
