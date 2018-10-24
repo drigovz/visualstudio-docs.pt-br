@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 760dc4f859de68040676439d84fea60d23602aeb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 327de2e75b089e7ba836837c3c29c0d92d9ad864
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292780"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852707"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Se você quiser saber sobre os novos recursos no Visual Studio 2015, consulte [o
 ## <a name="connecting-to-visual-studio-team-services-and-team-foundation-server"></a>Conectar-se ao Visual Studio Team Services e o Team Foundation Server
  O VSTS (Visual Studio Team Services) é um serviço baseado em nuvem para hospedagem de projetos de software e para habilitar a colaboração nas equipes. O VSTS oferece suporte a sistemas Git e Team Foundation Source Control, bem como as metodologias de desenvolvimento Agile, CMMI e Scrum. O TFVC (Controle de Versão do Team Foundation) usa um repositório de servidor único e centralizado para arquivos de versão e de controle. É sempre feito check-in das alterações locais no servidor central em que outros desenvolvedores podem obter as alterações mais recentes. O TFS (Team Foundation Server) 2015 é o hub de gerenciamento do ciclo de vida do aplicativo para o Visual Studio. Ele habilita a participação de todos os envolvidos com o processo de desenvolvimento usando uma única solução. O TFS também é útil para gerenciar equipes e projetos heterogêneos.
 
- Se você tiver uma conta do Visual Studio Team Services ou um Team Foundation Server em sua rede, será possível conectar-se a eles através da janela do Team Explorer. Nessa janela você pode fazer check-in ou check-out de código no controle do código-fonte, gerenciar itens de trabalho, iniciar compilações e acessar salas da equipe e espaços de trabalho. Você pode abrir o Team Explorer na **início rápido** ou no menu principal, em **exibir &#124; Team Explorer** ou do **equipe &#124; gerenciar conexões**.  Para obter mais informações sobre o Visual Studio Team Services, consulte [www.visualstudio.com](https://www.visualstudio.com/). Para obter mais informações sobre o Team Foundation Server, consulte [Team Foundation Server](https://www.visualstudio.com/products/tfs-overview-vs).
+ Se você tiver uma conta do Visual Studio Team Services ou um Team Foundation Server em sua rede, será possível conectar-se a eles através da janela do Team Explorer. Nessa janela você pode fazer check-in ou check-out de código no controle do código-fonte, gerenciar itens de trabalho, iniciar compilações e acessar salas da equipe e workspaces. Você pode abrir o Team Explorer na **início rápido** ou no menu principal, em **exibir &#124; Team Explorer** ou do **equipe &#124; gerenciar conexões**.  Para obter mais informações sobre o Visual Studio Team Services, consulte [www.visualstudio.com](https://www.visualstudio.com/). Para obter mais informações sobre o Team Foundation Server, consulte [Team Foundation Server](https://www.visualstudio.com/products/tfs-overview-vs).
 
  A imagem a seguir mostra o painel do Team Explorer para uma solução que é hospedada no VSTS:
 
@@ -116,31 +116,31 @@ Se você quiser saber sobre os novos recursos no Visual Studio 2015, consulte [o
 
  O editor de texto é altamente interativo (se desejar que ele seja assim), com muitos recursos de produtividade que ajudarão a escrever códigos mais rapidamente. Os recursos variam por linguagem e você não precisa usar nenhum deles. Digite "Editor" no Início Rápido para ativar ou desativar recursos. Alguns dos recursos de produtividade comuns são:
 
-1.  [Refatoração](../ide/refactoring-in-visual-studio.md) inclui operações como renomeação inteligente de variáveis, mover linhas de código selecionadas de uma função distinta, mover o código para outros locais, parâmetros de função redordering e muito mais.
+1. [Refatoração](../ide/refactoring-in-visual-studio.md) inclui operações como renomeação inteligente de variáveis, mover linhas de código selecionadas de uma função distinta, mover o código para outros locais, parâmetros de função redordering e muito mais.
 
-2.  *IntelliSense* é um termo abrangente para um conjunto de recursos populares que exibe informações de tipo sobre seu código diretamente no editor e, em alguns casos, escreve pequenos pedaços de código pra você. É como ter a documentação básica embutida no editor, o que evita que você tenha que consultar informações de tipo em uma janela de ajuda separada. Os recursos do IntelliSense variam de acordo com a linguagem. Para obter mais informações, consulte [IntelliSense do Visual C#](../ide/visual-csharp-intellisense.md), [IntelliSense do Visual C++](../ide/visual-cpp-intellisense.md), [IntelliSense do JavaScript](../ide/javascript-intellisense.md), [IntelliSense específico do Visual Basic](../ide/visual-basic-specific-intellisense.md). A ilustração a seguir mostra alguns recursos do IntelliSense em funcionamento:
+2. *IntelliSense* é um termo abrangente para um conjunto de recursos populares que exibe informações de tipo sobre seu código diretamente no editor e, em alguns casos, escreve pequenos pedaços de código pra você. É como ter a documentação básica embutida no editor, o que evita que você tenha que consultar informações de tipo em uma janela de ajuda separada. Os recursos do IntelliSense variam de acordo com a linguagem. Para obter mais informações, consulte [IntelliSense do Visual C#](../ide/visual-csharp-intellisense.md), [IntelliSense do Visual C++](../ide/visual-cpp-intellisense.md), [IntelliSense do JavaScript](../ide/javascript-intellisense.md), [IntelliSense específico do Visual Basic](../ide/visual-basic-specific-intellisense.md). A ilustração a seguir mostra alguns recursos do IntelliSense em funcionamento:
 
-     ![Lista de membros do Visual Studio](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
+    ![Lista de membros do Visual Studio](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
 
-3.  **Rabiscos** alerta sobre erros ou problemas potenciais em seu código em tempo real, enquanto você digita, permitindo que você corrija imediatamente sem esperar que o erro seja descoberto durante o momento da compilação ou da execução. Se você passar o mouse sobre o rabisco, verá informações adicionais sobre o erro. Uma lâmpada também podem aparecer na margem esquerda com sugestões de como corrigir o erro. Para obter mais informações, consulte [Realizar ações rápidas com lâmpadas](../ide/perform-quick-actions-with-light-bulbs.md).
+3. **Rabiscos** alerta sobre erros ou problemas potenciais em seu código em tempo real, enquanto você digita, permitindo que você corrija imediatamente sem esperar que o erro seja descoberto durante o momento da compilação ou da execução. Se você passar o mouse sobre o rabisco, verá informações adicionais sobre o erro. Uma lâmpada também podem aparecer na margem esquerda com sugestões de como corrigir o erro. Para obter mais informações, consulte [Realizar ações rápidas com lâmpadas](../ide/perform-quick-actions-with-light-bulbs.md).
 
-     ![Lâmpada com o mouse focalizando](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+    ![Lâmpada com o mouse focalizando](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
 
-4.  [Indicadores](../ide/setting-bookmarks-in-code.md) permitem que você navegue rapidamente até linhas específicas nos arquivos em que você está trabalhando ativamente.
+4. [Indicadores](../ide/setting-bookmarks-in-code.md) permitem que você navegue rapidamente até linhas específicas nos arquivos em que você está trabalhando ativamente.
 
-5.  A janela [Hierarquia de Chamada](../ide/reference/call-hierarchy.md) pode ser invocada no menu de contexto do editor de texto para mostrar os métodos que chamam e são chamados pelo método sob o cursor.
+5. A janela [Hierarquia de Chamada](../ide/reference/call-hierarchy.md) pode ser invocada no menu de contexto do editor de texto para mostrar os métodos que chamam e são chamados pelo método sob o cursor.
 
-6.  **Code Lens** permite que você encontre referências e alterações ao seu código, bugs vinculados, itens de trabalho, revisões de código e testes de unidade, tudo sem sair do editor. Para obter mais informações, consulte [Localizar alterações de código e outros históricos](../ide/find-code-changes-and-other-history-with-codelens.md).
+6. **Code Lens** permite que você encontre referências e alterações ao seu código, bugs vinculados, itens de trabalho, revisões de código e testes de unidade, tudo sem sair do editor. Para obter mais informações, consulte [Localizar alterações de código e outros históricos](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-7.  A janela **Espiar Definição** mostra uma definição de método ou de tipo embutida, sem navegar para fora de seu contexto atual. Agora esta janela funciona também para XAML.
+7. A janela **Espiar Definição** mostra uma definição de método ou de tipo embutida, sem navegar para fora de seu contexto atual. Agora esta janela funciona também para XAML.
 
-8.  A opção de menu de contexto **Ir para Definição** leva você diretamente para o local em que a função ou o objeto estão definidos. Outros comandos de navegação também estão disponíveis clicando com o botão direito do mouse no editor.
+8. A opção de menu de contexto **Ir para Definição** leva você diretamente para o local em que a função ou o objeto estão definidos. Outros comandos de navegação também estão disponíveis clicando com o botão direito do mouse no editor.
 
 9. Uma ferramenta relacionada, o [Pesquisador de Objetos](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470), habilita a inspeção de assemblies de .NET ou de Windows Runtime em seu sistema para ver que tipos eles contêm e quais métodos e propriedades esses tipos contêm.
 
      ![Pesquisador de Objetos mostrando System.Timer](../ide/media/objectbrowser.png "ObjectBrowser")
 
- A maioria dos itens no menu Editar e no menu Exibir está relacionada ao editor de códigos de alguma forma. Para obter mais informações sobre o editor, consulte [Escrevendo código](../ide/writing-code-in-the-code-and-text-editor.md) e [Editando seu código](https://www.visualstudio.com/features/ide-vs).
+   A maioria dos itens no menu Editar e no menu Exibir está relacionada ao editor de códigos de alguma forma. Para obter mais informações sobre o editor, consulte [Escrevendo código](../ide/writing-code-in-the-code-and-text-editor.md) e [Editando seu código](https://www.visualstudio.com/features/ide-vs).
 
 ## <a name="compiling-and-building-your-code"></a>Compilando e criando seu código
 

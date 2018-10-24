@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b152b381aaca2b9e43729616979cd7765d3a8c53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 34ebe35ba7cad601a0ba5d43cd5c424743cb2684
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305455"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848377"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Como especificar comandos pré e pós-instrumento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,25 +36,25 @@ Você pode especificar comandos que são executados antes ou depois que os biná
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- O diretório de trabalho no qual os comandos são executados depende do sistema operacional em que você está executando o [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] e da plataforma de destino do aplicativo analisado.  
+  O diretório de trabalho no qual os comandos são executados depende do sistema operacional em que você está executando o [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] e da plataforma de destino do aplicativo analisado.  
   
- **Computadores de 32 bits**  
+  **Computadores de 32 bits**  
   
- Em computadores de 32 bits, o diretório das ferramentas de criação de perfil padrão é Drive\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.  
+  Em computadores de 32 bits, o diretório das ferramentas de criação de perfil padrão é Drive\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.  
   
- **Computadores de 64 bits**  
+  **Computadores de 64 bits**  
   
- Em computadores de 64 bits, especifique o caminho de acordo com a plataforma de destino do aplicativo analisado:  
+  Em computadores de 64 bits, especifique o caminho de acordo com a plataforma de destino do aplicativo analisado:  
   
--   No caso de aplicativos de 32 bits, o diretório padrão das ferramentas de criação de perfil é:  
+- No caso de aplicativos de 32 bits, o diretório padrão das ferramentas de criação de perfil é:  
   
-     *Unidade*\Arquivos de Programas (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
+   *Unidade*\Arquivos de Programas (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   
--   No caso de aplicativos de 64 bits, o diretório padrão das ferramentas de criação de perfil é:  
+- No caso de aplicativos de 64 bits, o diretório padrão das ferramentas de criação de perfil é:  
   
-     *Unidade*\Arquivos de Programas (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
+   *Unidade*\Arquivos de Programas (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
   
 ### <a name="to-specify-pre-instrument-commands"></a>Para especificar comandos pré-instrumentos  
   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df50443a4a86e1524f20fa61275364b7c6603fdf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847377"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface de usuário do depurador (XSLT)
 
@@ -30,7 +30,7 @@ Para obter mais informações, consulte o [referência de interface do usuário 
 
  Esta coluna contém os nomes de todos as variáveis locais no escopo atual. Conjuntos de nó têm um controle de árvore que você possa fazer pesquisa detalhadas para consultar suas subpastas.
 
- **Value**
+ **Valor**
 
  Esta coluna mostra o valor contido por cada variável. O atributo, a instrução de processamento, o comentário, texto, e os nós CDATA exibem o valor de texto do nó. Os nós de namespace exibem URI de namespace.
 
@@ -41,7 +41,7 @@ Para obter mais informações, consulte o [referência de interface do usuário 
  A janela locais também exibe as variáveis predefinidos de contexto que acompanham o contexto de transformação XSLT. A tabela a seguir descreve as variáveis predefinidos de contexto usados pelo depurador XSLT.
 
 |Nome|Descrição|
-|----------|-----------------|
+|-|-----------------|
 |`last()`|O tamanho do contexto.|
 |`position()`|A posição, ou número de índice, o nó de contexto, relativo ao tamanho do contexto.|
 |`self::node()`|O valor do nó de contexto.|

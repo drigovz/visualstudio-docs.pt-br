@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 855160fa1e1f02bbebecaa8ddc522bb92f3f5bd9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbf27388013b71945879537dffff1e53a7314e7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226428"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853219"
 ---
 # <a name="build-loggers"></a>Agentes de log de build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ Agentes fornecem uma maneira de personalizar a saída do build e exibir mensagen
   
  Há duas abordagens que você pode usar ao implementar um agente:  
   
--   Implemente a interface <xref:Microsoft.Build.Framework.ILogger> diretamente.  
+- Implemente a interface <xref:Microsoft.Build.Framework.ILogger> diretamente.  
   
--   Derive sua classe da classe do auxiliar, <xref:Microsoft.Build.Utilities.Logger>, que é definida no assembly Microsoft.Build.Utilities.dll. O <xref:Microsoft.Build.Utilities.Logger> implementa o <xref:Microsoft.Build.Framework.ILogger> e fornece implementações padrão de alguns membros do <xref:Microsoft.Build.Framework.ILogger>.  
+- Derive sua classe da classe do auxiliar, <xref:Microsoft.Build.Utilities.Logger>, que é definida no assembly Microsoft.Build.Utilities.dll. O <xref:Microsoft.Build.Utilities.Logger> implementa o <xref:Microsoft.Build.Framework.ILogger> e fornece implementações padrão de alguns membros do <xref:Microsoft.Build.Framework.ILogger>.  
   
- Este tópico explicará como escrever um agente simples que deriva de <xref:Microsoft.Build.Utilities.Logger> e exibe mensagens no console em resposta a determinados eventos de build.  
+  Este tópico explicará como escrever um agente simples que deriva de <xref:Microsoft.Build.Utilities.Logger> e exibe mensagens no console em resposta a determinados eventos de build.  
   
 ## <a name="registering-for-events"></a>Registrar-se em eventos  
  A finalidade de um agente é reunir informações sobre o andamento do build quando ele for relatado pelo mecanismo de build e, em seguida, relatar informações de maneira útil. Todos os agentes devem substituir o método <xref:Microsoft.Build.Utilities.Logger.Initialize%2A>, que é onde o agente se registra para eventos. Neste exemplo, o agente registra-se nos eventos <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> e <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished>.  

@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b02afb7008233c720feae179b4726f9958a44af
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 831be19e4be8c746e668b946fd170fc4c86def49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255280"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855840"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Como: permitir que o código execute documentos code-behind com permissões restritas
   Você pode usar o recurso de gerenciamento de direitos de informação (IRM) do Microsoft Office para restringir as permissões para um documento ou pasta de trabalho. Por padrão, o código por trás de um documento do Microsoft Office Word restrito ou a pasta de trabalho do Microsoft Office Excel não é permitido para execução. Você pode alterar o padrão para que suas extensões de código gerenciado podem acessar o modelo de objeto e sua solução funcionará.  
@@ -36,18 +36,18 @@ ms.locfileid: "35255280"
   
 ## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Para permitir que o código execute documentos code-behind com permissões restritas  
   
-1.  Abra a pasta de trabalho ou documento no Word ou Excel.  
+1. Abra a pasta de trabalho ou documento no Word ou Excel.  
   
-2.  Clique o **arquivo** guia, aponte para **preparar**, aponte para **Restringir permissão**e, em seguida, clique em **acesso restrito**.  
+2. Clique o **arquivo** guia, aponte para **preparar**, aponte para **Restringir permissão**e, em seguida, clique em **acesso restrito**.  
   
-    > [!NOTE]  
-    >  No primeiro uso, você precisará instalar o cliente Windows Rights Management. Depois de instalar o cliente, talvez seja necessário repetir as etapas.  
+   > [!NOTE]  
+   >  No primeiro uso, você precisará instalar o cliente Windows Rights Management. Depois de instalar o cliente, talvez seja necessário repetir as etapas.  
   
-3.  No **permissão** caixa de diálogo, selecione **Restringir permissão neste documento**e, em seguida, clique em **mais opções**.  
+3. No **permissão** caixa de diálogo, selecione **Restringir permissão neste documento**e, em seguida, clique em **mais opções**.  
   
-4.  Sob **permissões adicionais para usuários**, selecione **acessar programaticamente o conteúdo**.  
+4. Sob **permissões adicionais para usuários**, selecione **acessar programaticamente o conteúdo**.  
   
- Word ou Excel permitirá acesso programático ao modelo de objeto.  
+   Word ou Excel permitirá acesso programático ao modelo de objeto.  
   
 ## <a name="see-also"></a>Consulte também  
  [Gerenciamento de direitos de informação e visão geral das extensões de código gerenciado](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   

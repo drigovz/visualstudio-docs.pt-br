@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87f8cd822dcd67ff7837dcaa31e47c23e0a0550b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be77104c4570068cbebf6c25801f600757a6ee0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203665"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850419"
 ---
 # <a name="immediate-window"></a>Janela imediata
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,31 +58,31 @@ A janela **Imediato** é usada para depurar e avaliar expressões, executar inst
   
 #### <a name="to-execute-a-function-at-design-time"></a>Para executar uma função em tempo de design  
   
-1.  Copie o código a seguir em um aplicativo de console do [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]:  
+1. Copie o código a seguir em um aplicativo de console do [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]:  
   
-    ```  
-    Module Module1  
+   ```  
+   Module Module1  
   
-        Sub Main()  
-            MyFunction(5)  
-        End Sub  
+       Sub Main()  
+           MyFunction(5)  
+       End Sub  
   
-        Function MyFunction(ByVal input as Integer) As Integer  
-            Return input * 2  
-        End Function  
+       Function MyFunction(ByVal input as Integer) As Integer  
+           Return input * 2  
+       End Function  
   
-    End Module  
-    ```  
+   End Module  
+   ```  
   
-2.  No menu **Depurar**, clique em **Janelas** e clique em **Imediato**.  
+2. No menu **Depurar**, clique em **Janelas** e clique em **Imediato**.  
   
-3.  Digite `?MyFunction(2)` na janela **Imediato** e pressione Enter.  
+3. Digite `?MyFunction(2)` na janela **Imediato** e pressione Enter.  
   
-     A janela **Imediato** executará `MyFunction` e exibirá `4`.  
+    A janela **Imediato** executará `MyFunction` e exibirá `4`.  
   
- Se a função ou a sub-rotina contiver um ponto de interrupção, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Para obter mais informações, consulte [Passo a passo: depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md).  
+   Se a função ou a sub-rotina contiver um ponto de interrupção, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Para obter mais informações, consulte [Passo a passo: depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md).  
   
- Não é possível usar a avaliação de expressão em tempo de design em tipos de projetos que exigem a inicialização de um ambiente de execução, incluindo projetos [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)], projetos Web, projetos de dispositivo inteligente e projetos SQL.  
+   Não é possível usar a avaliação de expressão em tempo de design em tipos de projetos que exigem a inicialização de um ambiente de execução, incluindo projetos [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)], projetos Web, projetos de dispositivo inteligente e projetos SQL.  
   
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Avaliação de expressão em tempo de design em soluções multiprojeto  
  Ao estabelecer o contexto para a avaliação de expressão em tempo de design, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] faz referência ao projeto selecionado atualmente no Gerenciador de Soluções. Se nenhum projeto estiver selecionado no Gerenciador de Soluções, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tenta avaliar a função com relação ao projeto de inicialização. Se a função não puder ser avaliada no contexto atual, você receberá uma mensagem de erro. Se você estiver tentando avaliar uma função em um projeto que não é o projeto de inicialização da solução e receber um erro, tente selecionar o projeto no Gerenciador de Soluções e tente avaliar novamente.  

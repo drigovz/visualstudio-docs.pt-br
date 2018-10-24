@@ -24,12 +24,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3c58bed9dd25cc9d25ad122b4c4c42f72ddf60f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0bf63fb2eedc03b62af46f3ecdf746aaee6dde09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236802"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848664"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Como usar a janela Threads de GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,25 +38,25 @@ Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão
   
  A janela de Threads da GPU contém uma tabela na qual cada linha representa um conjunto de threads de GPU que têm os mesmos valores em todas as colunas. Você pode classificar, reorganizar, remover e agrupar os itens que estão nas colunas. Você pode sinalizar, remover sinalização, congelar (suspender) e descongelar (retomar) threads da janela de Threads da GPU. As colunas a seguir são exibidas na janela Threads da GPU:  
   
--   A coluna do sinalizador, na qual você pode marcar um thread ao qual deseja prestar atenção especial.  
+- A coluna do sinalizador, na qual você pode marcar um thread ao qual deseja prestar atenção especial.  
   
--   A coluna thread ativo, em que uma seta amarela indica um thread ativo. Uma seta indica um thread onde a execução interrompe no depurador.  
+- A coluna thread ativo, em que uma seta amarela indica um thread ativo. Uma seta indica um thread onde a execução interrompe no depurador.  
   
--   O **contagem de threads** coluna, que exibe o número de threads no mesmo local.  
+- O **contagem de threads** coluna, que exibe o número de threads no mesmo local.  
   
--   O **linha** coluna, que exibe a linha de código em que cada grupo de threads está localizado.  
+- O **linha** coluna, que exibe a linha de código em que cada grupo de threads está localizado.  
   
--   O **endereço** coluna, que exibe o endereço da instrução onde cada grupo de threads está localizado. Por padrão, essa coluna está ocultada.  
+- O **endereço** coluna, que exibe o endereço da instrução onde cada grupo de threads está localizado. Por padrão, essa coluna está ocultada.  
   
--   O **local** coluna, que é o local no código-fonte.  
+- O **local** coluna, que é o local no código-fonte.  
   
--   O **Status** coluna, que mostra se o thread está ativo, bloqueado, não iniciado ou concluído.  
+- O **Status** coluna, que mostra se o thread está ativo, bloqueado, não iniciado ou concluído.  
   
--   O **bloco** coluna, que mostra o índice do bloco para os segmentos na linha.  
+- O **bloco** coluna, que mostra o índice do bloco para os segmentos na linha.  
   
- O cabeçalho da tabela mostra que o quadro e o thread estão sendo exibidos.  
+  O cabeçalho da tabela mostra que o quadro e o thread estão sendo exibidos.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-gpu-threads-window"></a>Para exibir a janela Threads da GPU  
   
