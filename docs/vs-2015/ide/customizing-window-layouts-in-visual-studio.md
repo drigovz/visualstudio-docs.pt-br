@@ -29,12 +29,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d1fb044d2529e2349e7c98e810adbfe62c7c654
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1702a2b25bd0489814473f3ae2fc0073dab8497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911625"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalização de layouts de janela no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
  Na guia Visualização, é possível exibir arquivos no editor sem abri-los. É possível visualizar arquivos escolhendo-os no **Gerenciador de Soluções**, durante a depuração quando você intervém nos arquivos, com Ir para Definição e quando você navega pelos resultados de uma pesquisa. Os arquivos de visualização são exibidos em uma guia à direita da caixa de guias de documentos. O arquivo será aberto para edição se você modificá-lo ou escolher **Abrir**.  
   
 ### <a name="tab-groups"></a>Grupos de guias  
- Os grupos de guias ampliam sua capacidade de gerenciar o espaço de trabalho limitado ao trabalhar com dois ou mais documentos abertos no IDE. É possível organizar várias janelas do documento e de ferramentas em grupos de guias verticais ou horizontais e embaralhar os documentos de um grupo de guias em outro.  
+ Os grupos de guias ampliam sua capacidade de gerenciar o workspace limitado ao trabalhar com dois ou mais documentos abertos no IDE. É possível organizar várias janelas do documento e de ferramentas em grupos de guias verticais ou horizontais e embaralhar os documentos de um grupo de guias em outro.  
   
 ### <a name="split-windows"></a>Divisão do Windows  
  Quando é necessário exibir ou editar dois locais ao mesmo tempo em um documento, é possível dividir as janelas. Para dividir seu documento em duas seções de rolagem independente, clique em **Dividir** no menu **Janela**. Clique em **Remover Divisão** no menu **Janela** para restaurar o modo de exibição único.  
@@ -65,21 +65,21 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
   
  É possível organizar janelas das seguintes maneiras:  
   
--   Fixe as janelas do documento à esquerda da caixa de guias.  
+- Fixe as janelas do documento à esquerda da caixa de guias.  
   
--   Encaixe janelas de guias no quadro de edição.  
+- Encaixe janelas de guias no quadro de edição.  
   
--   Encaixe janelas de ferramentas na borda de um quadro no IDE.  
+- Encaixe janelas de ferramentas na borda de um quadro no IDE.  
   
--   Faça janelas do documento ou de ferramentas flutuar no IDE ou fora dele.  
+- Faça janelas do documento ou de ferramentas flutuar no IDE ou fora dele.  
   
--   Oculte as janelas de ferramentas ao longo da borda do IDE.  
+- Oculte as janelas de ferramentas ao longo da borda do IDE.  
   
--   Exiba janelas em monitores diferentes.  
+- Exiba janelas em monitores diferentes.  
   
--   Redefina o posicionamento da janela para o layout padrão ou para um layout personalizado salvo.  
+- Redefina o posicionamento da janela para o layout padrão ou para um layout personalizado salvo.  
   
- As janelas de ferramentas e do documento podem ser organizadas arrastando-as, usando comandos no menu **Janela** e clicando com o botão direito do mouse na barra de título da janela a ser organizada.  
+  As janelas de ferramentas e do documento podem ser organizadas arrastando-as, usando comandos no menu **Janela** e clicando com o botão direito do mouse na barra de título da janela a ser organizada.  
   
 > [!NOTE]
 >  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
