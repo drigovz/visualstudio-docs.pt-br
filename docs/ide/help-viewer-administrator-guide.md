@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bccbd4f1365ea42b3e0331283a5659502038e133
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 897de3b54781cf5738e80ffcc878fd8d34f6168f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951087"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guia do administrador do Help Viewer
 
@@ -50,7 +50,6 @@ Requisitos:
 -   Os computadores cliente devem ter acesso à Internet.
 
 -   Os usuários devem ter direitos de administrador para atualizar, adicionar, ou remover o conteúdo da ajuda local depois que foi instalado.
-
 
 Restrições:
 
@@ -93,17 +92,17 @@ Antes de criar o conjunto de conteúdo básico, primeiro você deve desinstalar 
 
 #### <a name="to-uninstall-local-help"></a>Para desinstalar a ajuda local
 
-1.  No Help Viewer, escolha a guia **Gerenciar Conteúdo**.
+1. No Help Viewer, escolha a guia **Gerenciar Conteúdo**.
 
-2.  Navegue até o conjunto de documentos do Visual Studio.
+2. Navegue até o conjunto de documentos do Visual Studio.
 
-3.  Escolha **Remover** ao lado de cada subitem.
+3. Escolha **Remover** ao lado de cada subitem.
 
-4.  Escolha **Atualizar** para desinstalar.
+4. Escolha **Atualizar** para desinstalar.
 
-5.  Navegue até *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* e verifique se a pasta contém somente o arquivo *catalogType.xml*.
+5. Navegue até *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* e verifique se a pasta contém somente o arquivo *catalogType.xml*.
 
- Depois que remover todo conteúdo da Ajuda do Visual Studio local, você estará pronto para fazer download da ajuda do Visual Studio local, você está pronto para baixar o conjunto de conteúdo básico.
+   Depois que remover todo conteúdo da Ajuda do Visual Studio local, você estará pronto para fazer download da ajuda do Visual Studio local, você está pronto para baixar o conjunto de conteúdo básico.
 
 #### <a name="to-download-the-content"></a>Para baixar o conteúdo
 
@@ -112,7 +111,6 @@ Antes de criar o conjunto de conteúdo básico, primeiro você deve desinstalar 
 2.  Em **Documentação Recomendada** ou **Documentação Disponível**, navegue até os conjuntos de documentação que você deseja baixar e, em seguida, escolha **Adicionar**.
 
 3.  Escolha **Atualizar**.
-
 
 Em seguida, você precisará empacotar o conteúdo para que ele seja implantado em computadores clientes.
 

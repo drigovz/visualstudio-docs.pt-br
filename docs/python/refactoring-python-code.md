@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29a7bec902f28c67e5e6d6e9d63d9a85239c32c1
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: fb497953775bc283dcc908e9617fd7692fc76afe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586359"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861573"
 ---
 # <a name="refactor-python-code"></a>Refatorar o código do Python
 
@@ -30,27 +30,27 @@ O Visual Studio fornece vários comandos para transformar e limpar o código-fon
 ## <a name="rename"></a>Renomear
 
 1. Clique com o botão direito do mouse no identificador que você deseja renomear e escolha **Renomear** ou coloque o cursor no identificador e escolha o comando de menu **Editar** > **Refatorar** > **Renomear** (**F2**).
-1. Na caixa de diálogo **Renomear** exibida, insira o novo nome do identificador e selecione **OK**:
+2. Na caixa de diálogo **Renomear** exibida, insira o novo nome do identificador e selecione **OK**:
 
-  ![Renomear o prompt com o novo nome do identificador](media/code-refactor-rename-1.png)
+   ![Renomear o prompt com o novo nome do identificador](media/code-refactor-rename-1.png)
 
-1. Na próxima caixa de diálogo, selecione os arquivos e as instâncias no código aos quais a renomeação será aplicada; selecione uma instância individual para visualizar a alteração específica:
+3. Na próxima caixa de diálogo, selecione os arquivos e as instâncias no código aos quais a renomeação será aplicada; selecione uma instância individual para visualizar a alteração específica:
 
-  ![Renomear a caixa de diálogo para selecionar o local em que as alterações serão aplicadas](media/code-refactor-rename-2.png)
+   ![Renomear a caixa de diálogo para selecionar o local em que as alterações serão aplicadas](media/code-refactor-rename-2.png)
 
-1. Selecione **Aplicar** para fazer as alterações nos arquivos de código-fonte. (Não é possível desfazer esta ação.)
+4. Selecione **Aplicar** para fazer as alterações nos arquivos de código-fonte. (Não é possível desfazer esta ação.)
 
 ## <a name="extract-method"></a>Extrair método
 
 1. Selecione as linhas de código ou a expressão a ser extraída para um método separado.
-1. Escolha o comando de menu **Editar** > **Refatorar** > **Extrair método** ou digite **Ctrl**+**R** > **M**.
-1. Na caixa de diálogo exibida, insira um novo nome de método, indique o local em que ele deverá ser extraído e selecione as variáveis de fechamento. As variáveis não selecionadas para fechamento são transformadas em argumentos de método:
+2. Escolha o comando de menu **Editar** > **Refatorar** > **Extrair método** ou digite **Ctrl**+**R** > **M**.
+3. Na caixa de diálogo exibida, insira um novo nome de método, indique o local em que ele deverá ser extraído e selecione as variáveis de fechamento. As variáveis não selecionadas para fechamento são transformadas em argumentos de método:
 
-  ![Extrair a caixa de diálogo do método](media/code-refactor-extract-method-1.png)
+   ![Extrair a caixa de diálogo do método](media/code-refactor-extract-method-1.png)
 
-1. Selecione **OK** e o código será modificado de acordo:
+4. Selecione **OK** e o código será modificado de acordo:
 
-  ![Efeito da extração de um método](media/code-refactor-extract-method-2.png)
+   ![Efeito da extração de um método](media/code-refactor-extract-method-2.png)
 
 ## <a name="add-import"></a>Adicionar importação
 

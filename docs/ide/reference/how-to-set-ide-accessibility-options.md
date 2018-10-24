@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f977c30f1f4d6db7ce165de8483c8fd1977922d8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c5d0149be4996f762373aae77d7535dbf8e02809
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952097"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909776"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Como definir opções de acessibilidade do IDE
 
@@ -46,7 +46,7 @@ ms.locfileid: "31952097"
 
  É possível alterar as configurações de janelas de ferramentas baseadas em texto, como as janelas **Comando**, **Imediato** e de **Saída**, no painel **Fontes e Cores** das opções **Ambiente** na caixa de diálogo **Ferramentas**. Quando **[Todas as janelas de ferramentas de texto]** é selecionado na lista suspensa **Mostrar configurações de**, a configuração padrão é listada como **Padrão** nas listas suspensas **Primeiro plano do item** e **Tela de fundo do item**. Também é possível alterar as configurações de como o texto é exibido no editor.
 
-##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Para alterar o tamanho do texto em editores e janelas de ferramentas baseadas em texto
+#### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Para alterar o tamanho do texto em editores e janelas de ferramentas baseadas em texto
 
 1.  No menu **Ferramentas**, escolha **Opções**.
 
@@ -69,7 +69,7 @@ ms.locfileid: "31952097"
 6.  Em **Tamanho**, selecione um novo tamanho da fonte.
 
     > [!NOTE]
-    >  Para redefinir o tamanho do texto em editores e janelas de ferramentas baseadas em texto, escolha **Usar Padrões**.
+    > Para redefinir o tamanho do texto em editores e janelas de ferramentas baseadas em texto, escolha **Usar Padrões**.
 
 7.  Escolha **OK**.
 
@@ -78,10 +78,9 @@ ms.locfileid: "31952097"
  Você também pode optar por alterar as cores padrão de texto, indicadores de margem, espaços em branco e elementos de código no editor.
 
 > [!NOTE]
-> Para usar cores de alto contraste para todas as janelas de aplicativo no sistema operacional, pressione Esquerda **ALT +** Esquerda **SHIFT + PRINT SCREEN**. Se [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] estiver aberto, feche e reabra [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para implementar completamente as cores de alto contraste.
+> Para usar cores de alto contraste para todas as janelas de aplicativo no sistema operacional, pressione Esquerda <strong>ALT +</strong> Esquerda **SHIFT + PRINT SCREEN**. Se [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] estiver aberto, feche e reabra [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para implementar completamente as cores de alto contraste.
 
-
-##### <a name="to-change-the-color-of-items-in-the-editor"></a>Para alterar a cor de itens no editor
+#### <a name="to-change-the-color-of-items-in-the-editor"></a>Para alterar a cor de itens no editor
 
 1.  No menu **Ferramentas**, escolha **Opções**.
 
@@ -99,7 +98,7 @@ ms.locfileid: "31952097"
 
  Para melhorar a acessibilidade e a usabilidade da barra de ferramentas, você pode adicionar texto a botões da barra de ferramentas.
 
-#### <a name="to-assign-text-to-toolbar-buttons"></a>Para atribuir texto a botões da barra de ferramentas
+### <a name="to-assign-text-to-toolbar-buttons"></a>Para atribuir texto a botões da barra de ferramentas
 
 1.  No menu **Ferramentas**, escolha **Personalizar**.
 
@@ -113,7 +112,7 @@ ms.locfileid: "31952097"
 
 6.  Escolha **Imagem e Texto**.
 
-#### <a name="to-modify-the-displayed-text-in-a-button"></a>Para modificar o texto exibido em um botão
+### <a name="to-modify-the-displayed-text-in-a-button"></a>Para modificar o texto exibido em um botão
 
 1.  Selecione **Modificar seleção** novamente.
 
