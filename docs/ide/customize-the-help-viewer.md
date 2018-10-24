@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fa41165041c4be1b4d527f2df20dacfcf0600af
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0de2f17933977d13fb524d34887a9e9af9c88114
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923833"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951100"
 ---
 # <a name="customize-the-help-viewer"></a>Personalizar o Help Viewer
 Você pode personalizar o layout das janelas do Help Viewer, bem como outras opções, como tamanho da fonte, número máximo de resultados e se deseja incluir conteúdo em inglês.
@@ -41,7 +41,7 @@ Crie mais espaço para exibir tópicos, escolhendo o ícone de alfinete para as 
 Abra a caixa de diálogo **Opções do Visualizador** escolhendo o botão **Opções do Visualizador** na barra de ferramentas.
 
 |Para executar essa tarefa:|Realize esta etapa:|
-|---------------------------|---------------------|
+| - | - |
 |Alterar o tamanho da fonte em que o texto é exibido|Escolha um tamanho na lista **Tamanho do Texto**.|
 |Alterar o número máximo de resultados da pesquisa exibidos na guia **Pesquisar**|Escolha um valor na lista **Máximo de Resultados da Pesquisa**.|
 |Alterar o número máximo de entradas de histórico que aparecem na janela **Favoritos**|Escolha um valor na lista **Máximo de entradas do Histórico salvas**.|

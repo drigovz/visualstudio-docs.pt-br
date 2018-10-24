@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 63c1b27d762f79a8933a31bb33850ad4604a9c37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6821d218c22f2d83108205d8753fc2d5beac4f28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301555"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939430"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Como criar ou atualizar políticas de check-in de análise do código padrão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Você pode exigir que a análise de código ser executado em todos os projetos d
   
  Políticas do check-in de análise de código são definidas nas configurações do projeto de equipe e se aplicam a cada projeto de código no projeto de equipe. Execuções de análise de código são configuradas para projetos de código no arquivo de projeto (xxproj) para o projeto de código. Execuções de análise de código são executadas no computador local. Quando você habilitar uma política de check-in do análise código, arquivos em um projeto de código são check-in devem ser compilados após sua última edição e uma análise de código que contém, no mínimo, as regras nas configurações do projeto de equipe devem ser executadas no computador em que o c foram feitas alterações pendentes.  
   
--   Para código gerenciado, você deve definir a política de check-in, especificando um *conjunto de regras* que contém um subconjunto de regras de análise de código.  
+- Para código gerenciado, você deve definir a política de check-in, especificando um *conjunto de regras* que contém um subconjunto de regras de análise de código.  
   
--   Para código C/C++, a política de check-in requer que todas as regras de análise de código sejam executadas. Você pode adicionar diretivas de pré-processador para desabilitar regras específicas para os projetos de código individuais no seu projeto de equipe.  
+- Para código C/C++, a política de check-in requer que todas as regras de análise de código sejam executadas. Você pode adicionar diretivas de pré-processador para desabilitar regras específicas para os projetos de código individuais no seu projeto de equipe.  
   
- Depois de especificar uma política de check-in para código gerenciado, os membros da equipe podem sincronizar suas configurações de análise de código para projetos de código para as configurações de política de projeto de equipe.  
+  Depois de especificar uma política de check-in para código gerenciado, os membros da equipe podem sincronizar suas configurações de análise de código para projetos de código para as configurações de política de projeto de equipe.  
   
 ### <a name="to-open-the-check-in-policy-editor"></a>Para abrir o editor de política de check-in  
   

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad37856e8692d5182ddba4f80ec1c07aa095f674
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4149a6cc7974f1c38c146620c0f3a6e95f760ad3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946774"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936647"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Caixa de diálogo de início rápido, ambiente, opções
 Você pode usar o **Início Rápido** para pesquisar e executar rapidamente ações para ativos do IDE, como opções, modelos e menus. Não é possível usar o **Início Rápido** para pesquisar código e símbolos. A caixa de pesquisa **Início Rápido** fica localizada no canto superior direito da barra de menus e pode ser acessada usando as teclas Ctrl + Q. Basta digitar a cadeia de caracteres de pesquisa na caixa. Para pesquisar cadeias de caracteres que contêm @, use “@@”.
@@ -34,7 +34,7 @@ Você pode usar o **Início Rápido** para pesquisar e executar rapidamente aç�
  É possível usar os seguintes atalhos para limitar a pesquisa a categorias específicas.
 
 |Categoria|Atalho|Descrição do atalho|
-|--------------|--------------|--------------------------|
+|--------------|--------------| - |
 |Usados Recentemente|@mru<br /><br /> Por exemplo, `@mru font`|Exibe até cinco dos itens que foram **Usados Recentemente**.|
 |Menus|@menu<br /><br /> Por exemplo, `@menu font`|Limita a pesquisa a itens de menu.|
 |Opções|@opt<br /><br /> Por exemplo, `@opt font`|Limita a pesquisa a configurações na caixa de diálogo **Opções**.|

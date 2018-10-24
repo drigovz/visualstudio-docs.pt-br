@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 882a355742a100f7a105abab541832f86740afe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942712"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutorial: Introdução à estrutura da Web do Django no Visual Studio
 
@@ -163,16 +163,16 @@ Após concluir a criação do projeto, analise o código do projeto do Django de
 
     ![Comandos do Django em um menu de contexto do projeto do Python](media/django/step01-django-commands-menu.png)
 
-1. Em seu projeto, é uma pasta com o mesmo nome do projeto. Ela contém os arquivos do projeto básico do Django:
+2. Em seu projeto, é uma pasta com o mesmo nome do projeto. Ela contém os arquivos do projeto básico do Django:
 
-    - *__init.py*: um arquivo vazio que informa o Python se essa pasta é um pacote do Python.
-    - *wsgi.py*: um ponto de entrada para os servidores Web compatíveis com WSGI para atender ao projeto. Este arquivo normalmente fica como está, pois ele fornece os ganchos para os servidores Web de produção.
-    - *settings.py*: contém as configurações do projeto do Django, que você modifica no decorrer do desenvolvimento de um aplicativo Web.
-    - *urls.py*: contém um sumário do projeto do Django, que você também modifica no decorrer do desenvolvimento.
+   - *__init.py*: um arquivo vazio que informa o Python se essa pasta é um pacote do Python.
+   - *wsgi.py*: um ponto de entrada para os servidores Web compatíveis com WSGI para atender ao projeto. Este arquivo normalmente fica como está, pois ele fornece os ganchos para os servidores Web de produção.
+   - *settings.py*: contém as configurações do projeto do Django, que você modifica no decorrer do desenvolvimento de um aplicativo Web.
+   - *urls.py*: contém um sumário do projeto do Django, que você também modifica no decorrer do desenvolvimento.
 
-    ![Arquivos do projeto do Django no Gerenciador de Soluções](media/django/step01-django-project-in-solution-explorer.png)
+     ![Arquivos do projeto do Django no Gerenciador de Soluções](media/django/step01-django-project-in-solution-explorer.png)
 
-1. Conforme observado anteriormente, o modelo do Visual Studio também adiciona um arquivo *requirements.txt* ao projeto especificando a dependência de pacote do Django. A presença desse arquivo é que faz com que você seja convidado a criar um ambiente virtual ao desenvolver o projeto pela primeira vez.
+3. Conforme observado anteriormente, o modelo do Visual Studio também adiciona um arquivo *requirements.txt* ao projeto especificando a dependência de pacote do Django. A presença desse arquivo é que faz com que você seja convidado a criar um ambiente virtual ao desenvolver o projeto pela primeira vez.
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Pergunta: O Visual Studio pode gerar um arquivo requirements.txt a partir de um ambiente virtual depois de instalar outros pacotes?
 

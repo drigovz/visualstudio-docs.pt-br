@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 442e37dfac8e7eb022ee12bfaadacae548625793
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: ce47b5e9db018a8c3c525d5202a01f0860def2a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940444"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Criar um teste de interface do usuário codificado controlado por dados
 
@@ -33,64 +33,64 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
 
 ### <a name="step-1---create-a-coded-ui-test"></a>Etapa 1 - Criar um teste de interface do usuário codificado
 
-1.  Criar um projeto.
+1. Criar um projeto.
 
-     ![Criar um projeto de teste de IU codificado](../test/media/cuit_datadriven_.png)
+    ![Criar um projeto de teste de IU codificado](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
    > Se o modelo **Projeto de Teste de IU Codificado** não for exibido, será necessário [instalar o componente Teste de IU Codificado](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-2.  Escolha **registrar as ações**.
+2. Escolha **registrar as ações**.
 
-     ![Escolher registrar as ações](../test/media/cuit_datadriven_generatecodedialog.png)
+    ![Escolher registrar as ações](../test/media/cuit_datadriven_generatecodedialog.png)
 
-3.  Abra o aplicativo Calculadora e inicie a gravação do teste.
+3. Abra o aplicativo Calculadora e inicie a gravação do teste.
 
-     ![Registrar ações](../test/media/cuit_datadriven_cuitbuilder.png)
+    ![Registrar ações](../test/media/cuit_datadriven_cuitbuilder.png)
 
-4.  Adicione 1 mais 2, pause o gravador e gere o método de teste. Posteriormente, vamos substituir os valores dessa entrada do usuário por valores de um arquivo de dados.
+4. Adicione 1 mais 2, pause o gravador e gere o método de teste. Posteriormente, vamos substituir os valores dessa entrada do usuário por valores de um arquivo de dados.
 
-     ![Gerar o método de teste](../test/media/cuit_datadriven_cuitbuildergencode.png)
+    ![Gerar o método de teste](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
-     Feche o construtor de teste. O método é adicionado ao teste:
+    Feche o construtor de teste. O método é adicionado ao teste:
 
-    ```csharp
-    [TestMethod]
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.AddNumbers();
-    }
-    ```
+   ```csharp
+   [TestMethod]
+   public void CodedUITestMethod1()
+   {
+       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       this.UIMap.AddNumbers();
+   }
+   ```
 
-5.  Use o método `AddNumbers()` para verificar se o teste é executado. Coloque o cursor no método de teste mostrado acima, abra o menu de contexto e escolha **Executar Testes**. (Atalho de teclado: **Ctrl**+**R**,**T**).
+5. Use o método `AddNumbers()` para verificar se o teste é executado. Coloque o cursor no método de teste mostrado acima, abra o menu de contexto e escolha **Executar Testes**. (Atalho de teclado: **Ctrl**+**R**,**T**).
 
-     O resultado do teste que mostra se o teste passou ou falhou é exibido na janela **Gerenciador de Testes**. Para abrir a janela do Gerenciador de Testes, no menu **Teste**, escolha **Windows** e, em seguida, escolha **Gerenciador de Testes**.
+    O resultado do teste que mostra se o teste passou ou falhou é exibido na janela **Gerenciador de Testes**. Para abrir a janela do Gerenciador de Testes, no menu **Teste**, escolha **Windows** e, em seguida, escolha **Gerenciador de Testes**.
 
-6.  Como uma fonte de dados também pode ser usada para valores de parâmetro de declaração, que são usados pelo teste para verificar os valores esperados, vamos adicionar uma declaração para validar se a soma de dois números está correta. Coloque o cursor no método de teste mostrado acima, abra o menu de contexto e escolha **Gerar Código para Teste de IU Codificado** e, em seguida, **Usar Construtor de Teste de IU Codificado**.
+6. Como uma fonte de dados também pode ser usada para valores de parâmetro de declaração, que são usados pelo teste para verificar os valores esperados, vamos adicionar uma declaração para validar se a soma de dois números está correta. Coloque o cursor no método de teste mostrado acima, abra o menu de contexto e escolha **Gerar Código para Teste de IU Codificado** e, em seguida, **Usar Construtor de Teste de IU Codificado**.
 
-     Mapeie o controle de texto na Calculadora que exibe a soma.
+    Mapeie o controle de texto na Calculadora que exibe a soma.
 
-     ![Mapear o controle de texto da interface do usuário](../test/media/cuit_datadriven_addassertion.png)
+    ![Mapear o controle de texto da interface do usuário](../test/media/cuit_datadriven_addassertion.png)
 
-7.  Adicione uma declaração que valida que o valor da soma está correto. Escolha a propriedade **DisplayText** que tem o valor **3** e, em seguida, escolha **Adicionar Declaração**. Use o comparador **AreEqual** e verifique se o valor de comparação é **3**.
+7. Adicione uma declaração que valida que o valor da soma está correto. Escolha a propriedade **DisplayText** que tem o valor **3** e, em seguida, escolha **Adicionar Declaração**. Use o comparador **AreEqual** e verifique se o valor de comparação é **3**.
 
-     ![Configurar a declaração](../test/media/cuit_datadriven_builderaddassertion2.png)
+    ![Configurar a declaração](../test/media/cuit_datadriven_builderaddassertion2.png)
 
-8.  Após configurar a declaração, gere o código do construtor de novamente. Isso cria um novo método para a validação.
+8. Após configurar a declaração, gere o código do construtor de novamente. Isso cria um novo método para a validação.
 
-     ![Gerar o método de declaração](../test/media/cuit_datadriven_assertiongencode.png)
+    ![Gerar o método de declaração](../test/media/cuit_datadriven_assertiongencode.png)
 
-     Como o método `ValidateSum` valida os resultados do método `AddNumbers`, mova-o para a parte inferior do bloco de códigos.
+    Como o método `ValidateSum` valida os resultados do método `AddNumbers`, mova-o para a parte inferior do bloco de códigos.
 
-    ```csharp
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.AddNumbers();
-        this.UIMap.ValidateSum();
-    }
-    ```
+   ```csharp
+   public void CodedUITestMethod1()
+   {
+       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       this.UIMap.AddNumbers();
+       this.UIMap.ValidateSum();
+   }
+   ```
 
 9. Verifique se o teste é executado usando o método `ValidateSum()`. Coloque o cursor no método de teste mostrado acima, abra o menu de contexto e escolha **Executar Testes**. (Atalho de teclado: **Ctrl**+**R**,**T**).
 

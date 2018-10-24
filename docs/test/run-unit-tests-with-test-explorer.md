@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a0feb539be589a4eab51544f1a04154c11f6f9c7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: dc918adb6a66f64cdcda46ea535cd0ab017c0676
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939494"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -100,7 +100,7 @@ O Gerenciador de Testes permite agrupar os testes em categorias predefinidas. A 
 ### <a name="test-explorer-groups"></a>Grupos de Gerenciador de Testes
 
 |Grupo|Descrição|
-|-----------|-----------------|
+|-|-----------------|
 |**Duração**|Agrupa teste pelo tempo de execução: **rápido**, **médio** e **lento**.|
 |**Resultado**|Agrupa testes por resultados da execução: **testes com falha**, **testes ignorados**, **testes aprovados**.|
 |**Características**|Agrupa teste por pares de categoria/valor que você define. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
@@ -115,7 +115,7 @@ O Gerenciador de Testes permite agrupar os testes em categorias predefinidas. A 
  Na estrutura de teste de unidade da Microsoft para aplicativos gerenciados, você define um par nome/valor de característica no atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>. A estrutura de teste também contém essas características predefinidas:
 
 |Característica|Descrição|
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|A categoria do proprietário é definida pela estrutura de teste de unidade e exige que você forneça um valor de cadeia de caracteres do proprietário.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|A categoria Prioridade é definida pela estrutura de teste de unidade e exige que você forneça um valor inteiro da prioridade.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|O atributo TestCategory permite que você forneça uma categoria sem um valor. Uma categoria definida pelo atributo TestCategory também pode ser a categoria de um atributo TestProperty.|
@@ -143,7 +143,7 @@ Para filtrar por um critério diferente:
 > As pesquisas não diferenciam maiúsculas de minúsculas e correspondem a cadeia especificada para qualquer parte do valor de critérios.
 
 |Qualificador|Descrição|
-|---------------|-----------------|
+|-|-----------------|
 |**Característica**|Procura categoria de característica e valor para correspondência. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
 |**Projeto**|Procura os nomes de projeto de teste para correspondências.|
 |**Mensagem de erro**|Procura nas mensagens de erro definidas pelo usuário retornadas por falhas para encontrar correspondências.|
@@ -187,7 +187,7 @@ Você pode usar o Gerenciador de Testes para iniciar uma sessão de depuração 
 
 2. No Gerenciador de Testes, selecione os métodos de teste e escolha **Depurar Testes Selecionados** no menu de contexto.
 
- Para obter mais informações sobre o depurador, confira [Depuração no Visual Studio](../debugger/debugging-in-visual-studio.md).
+   Para obter mais informações sobre o depurador, confira [Depuração no Visual Studio](../debugger/debugging-in-visual-studio.md).
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnosticar problemas de desempenho do método de teste
 
@@ -216,7 +216,7 @@ Para obter mais informações, confira [Usar a cobertura de código para determi
 Testes podem ser executados do **Gerenciador de Testes** clicando com o botão direito do mouse no editor de código em um teste e selecionando **Executar teste** ou usando os [Atalhos padrão do Gerenciador de Testes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) no Visual Studio. Alguns dos atalhos são baseados em contexto. Isso significa que eles executam ou depuram testes com base em onde o cursor está no editor de código. Se o cursor estiver dentro de um método de teste, esse método de teste será executado. Se o cursor estiver no nível de classe, todos os testes na classe serão executados. O mesmo vale para o nível do namespace.
 
 |Comandos frequentes| Atalhos de teclado|
-|--------------|------------------------|
+|-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **Ctrl**+**T**|
 |TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **T**|
 

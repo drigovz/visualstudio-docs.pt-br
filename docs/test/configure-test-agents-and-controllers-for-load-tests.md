@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0da0ca3fb5c36a0c878e641121312b2773b8215
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: abc993d13752cdae00ea75c1eba8e39901f562c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942979"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurar controladores e agentes de teste para executar testes de carga
 
@@ -35,25 +35,25 @@ A arquitetura de simulação da carga consiste em um cliente do Visual Studio, u
 
 Essa arquitetura oferece os seguintes benefícios:
 
--   A capacidade de expandir a geração de carga incluindo agentes de teste adicionais em um controlador de teste.
+- A capacidade de expandir a geração de carga incluindo agentes de teste adicionais em um controlador de teste.
 
--   Flexibilidade para instalar o cliente, o controlador de teste e o software do agente de teste no mesmo computador ou em computadores diferentes. Por exemplo:
+- Flexibilidade para instalar o cliente, o controlador de teste e o software do agente de teste no mesmo computador ou em computadores diferentes. Por exemplo:
 
-     **Configuração local:**
+   **Configuração local:**
 
-    -   Machine1: Visual Studio, controlador, agente.
+  - Machine1: Visual Studio, controlador, agente.
 
-     ![Computador local usando controlador e agente](./media/load-test-configa.png)
+    ![Computador local usando controlador e agente](./media/load-test-configa.png)
 
-     **Configuração remota típica:**
+    **Configuração remota típica:**
 
-    -   Machine1 e 2: Visual Studio (vários testadores podem usar o mesmo controlador).
+  - Machine1 e 2: Visual Studio (vários testadores podem usar o mesmo controlador).
 
-    -   Machine3: controlador (pode ter agentes instalados também).
+  - Machine3: controlador (pode ter agentes instalados também).
 
-    -   Machine4-n: Agente ou agentes, todos associados ao controlador no Machine3.
+  - Machine4-n: Agente ou agentes, todos associados ao controlador no Machine3.
 
-     ![Computadores remotos usando controlador e agentes](./media/load-test-configb.png)
+    ![Computadores remotos usando controlador e agentes](./media/load-test-configb.png)
 
 Mesmo que um controlador de teste normalmente gerencie diversos agentes de teste, um agente só pode ser associado a um único controlador. Cada agente de teste pode ser compartilhado por uma equipe de desenvolvedores. Essa arquitetura facilita aumentar o número de agentes de teste, gerando, assim, cargas maiores.
 

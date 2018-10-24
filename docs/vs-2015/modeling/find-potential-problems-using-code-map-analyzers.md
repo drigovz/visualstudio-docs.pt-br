@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ccac7f869c0395839e2c63354558df0389ced36b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8afcbecf8d8cdf561258866d93c6dd8ca999553
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204796"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949585"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Encontrar possíveis problemas usando analisadores de mapa de códigos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Executar analisadores em mapas de código para ajudá-lo a identificar o código
   
 ## <a name="analyze-code-maps"></a>Analisar os mapas de código  
   
-1.  Na barra de ferramentas do mapa, escolha **Layout**, **analisadores**e, em seguida, o analisador que você deseja executar:  
+1. Na barra de ferramentas do mapa, escolha **Layout**, **analisadores**e, em seguida, o analisador que você deseja executar:  
   
-    |**Analisador**|**Para identificar nós que**|  
-    |------------------|--------------------------------|  
-    |**Analisador de referências circulares**|Possuem dependências circulares entre si. **Observação:** dependências circulares que estão em de **genéricos** grupo não são mostrados no mapa, ao expandir o grupo.|  
-    |**Localizar Hubs Analyzer**|Estão na 25% principais de nós altamente conectado<br /><br /> **Para ocultar todos os outros nós no mapa**<br /><br /> -Abra o menu de atalho para o mapa, escolha **Advanced**, **selecionar**, **ocultar não selecionados**.<br />     O mapa oculta os nós não selecionados e o Analisador identifica novos nós, como hubs.|  
-    |**Analisador de nós não referenciados**|Não tem referências de outros nós. **Cuidado:** Verifique se cada um desses casos antes, supondo que o código não é usado. Determinadas dependências como dependências XAML e dependências de tempo de execução não podem ser encontradas estaticamente no código.|  
+   |**Analisador**|**Para identificar nós que**|  
+   |------------------|--------------------------------|  
+   |**Analisador de referências circulares**|Possuem dependências circulares entre si. **Observação:** dependências circulares que estão em de **genéricos** grupo não são mostrados no mapa, ao expandir o grupo.|  
+   |**Localizar Hubs Analyzer**|Estão na 25% principais de nós altamente conectado<br /><br /> **Para ocultar todos os outros nós no mapa**<br /><br /> -Abra o menu de atalho para o mapa, escolha **Advanced**, **selecionar**, **ocultar não selecionados**.<br />     O mapa oculta os nós não selecionados e o Analisador identifica novos nós, como hubs.|  
+   |**Analisador de nós não referenciados**|Não tem referências de outros nós. **Cuidado:** Verifique se cada um desses casos antes, supondo que o código não é usado. Determinadas dependências como dependências XAML e dependências de tempo de execução não podem ser encontradas estaticamente no código.|  
   
- Analisadores de mapa de código continuará a ser executado após você aplicá-las. Se você alterar o mapa, quaisquer analisadores aplicados serão automaticamente reprocessar o mapa atualizado. Para interromper a execução de um analisador, na barra de ferramentas do mapa, escolha **Layout**, **analisadores**. Desative o analisador selecionado.  
+   Analisadores de mapa de código continuará a ser executado após você aplicá-las. Se você alterar o mapa, quaisquer analisadores aplicados serão automaticamente reprocessar o mapa atualizado. Para interromper a execução de um analisador, na barra de ferramentas do mapa, escolha **Layout**, **analisadores**. Desative o analisador selecionado.  
   
 > [!TIP]
 >  Se você tiver um mapa muito grande, executar um analisador pode causar uma exceção de falta de memória. Se isso ocorrer, edite o mapa para reduzir seu escopo ou gerar uma menor e, em seguida, executar o analisador.  

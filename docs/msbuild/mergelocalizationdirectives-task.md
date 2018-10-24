@@ -20,22 +20,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78cf1405cf3a09d43aab21c53e64644db29af0de
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2d0245765c1b6aa01d6762848463997ad2f13ba3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077695"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936661"
 ---
 # <a name="mergelocalizationdirectives-task"></a>Tarefa MergeLocalizationDirectives
 A tarefa <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> mescla os atributos de localização e comentários de um ou mais [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] arquivos de formato binário em um único arquivo para todo o assembly.  
   
 ## <a name="task-parameters"></a>Parâmetros de tarefa  
   
-|Parâmetro|Descrição|  
-|---------------|-----------------|  
-|`GeneratedLocalizationFiles`|Parâmetro obrigatório **ITaskItem[]**.<br /><br /> Especifica a lista de arquivos de diretivas de localização de arquivos individuais no formato binário [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)].|  
-|`OutputFile`|Parâmetro de saída da **cadeia de caracteres** necessário.<br /><br /> Especifica o caminho de saída do assembly de diretivas de localização compilado.|  
+| Parâmetro | Descrição |
+|------------------------------| - |
+| `GeneratedLocalizationFiles` | Parâmetro obrigatório **ITaskItem[]**.<br /><br /> Especifica a lista de arquivos de diretivas de localização de arquivos individuais no formato binário [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. |
+| `OutputFile` | Parâmetro de saída da **cadeia de caracteres** necessário.<br /><br /> Especifica o caminho de saída do assembly de diretivas de localização compilado. |
   
 ## <a name="remarks"></a>Comentários  
  Você pode adicionar atributos de localização e comentários no conteúdo [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]. Com o suporte à localização do [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)], você pode retirar os atributos de localização e os comentários colocá-los em um arquivo *.loc* separado do assembly gerado. Você pode fazer isso usando o atributo **LocalizationPropertyStorage**. Para obter mais informações sobre atributos de localização e comentários, bem como sobre **LocalizationPropertyStorage**, confira [Atributos de localização e comentários](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ea9df0bac68f9c16f5442d04fa4229f21bb29b2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c3f85c2568e9066384d65027ff69e8cd4c16c13e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638486"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942095"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Como: criar um feed Atom para uma galeria privada
 Você pode criar um Atom (RSS) para um local de intranet que contém as extensões e adicione o feed para **extensões e atualizações** como uma galeria privada. Para obter mais informações, consulte [galerias privadas](../extensibility/private-galleries.md).  
@@ -27,17 +27,17 @@ Você pode criar um Atom (RSS) para um local de intranet que contém as extensõ
 ## <a name="create-an-atom-feed"></a>Criar um feed Atom  
  Para criar um Atom feed como uma galeria privada, primeiro, reúna suas extensões (*VSIX* arquivos) em uma pasta. Você pode organizá-los em subpastas, se você quiser. Você precisará também os seguintes recursos:  
   
--   Uma *atom.xml* arquivo que faz com que as extensões disponíveis como uma galeria privada. Para obter informações sobre como conectar-se a *atom.xml* arquivo **extensões e atualizações**, consulte [galerias privadas](../extensibility/private-galleries.md).  
+- Uma *atom.xml* arquivo que faz com que as extensões disponíveis como uma galeria privada. Para obter informações sobre como conectar-se a *atom.xml* arquivo **extensões e atualizações**, consulte [galerias privadas](../extensibility/private-galleries.md).  
   
--   Uma pasta que contém os arquivos de imagem que foram extraídos de extensões (por exemplo, capturas de tela). O *atom.xml* arquivo contém links relativos para essas imagens para que eles estão disponíveis no **extensões e atualizações**.  
+- Uma pasta que contém os arquivos de imagem que foram extraídos de extensões (por exemplo, capturas de tela). O *atom.xml* arquivo contém links relativos para essas imagens para que eles estão disponíveis no **extensões e atualizações**.  
   
- Por exemplo, suponha que você coletou as duas extensões a seguir em uma pasta:  
+  Por exemplo, suponha que você coletou as duas extensões a seguir em uma pasta:  
   
--   *Template_Wizard_239.VSIX*, que é um modelo de projeto do VSIX vazio.  
+- *Template_Wizard_239.VSIX*, que é um modelo de projeto do VSIX vazio.  
   
--   *SelectionHighlight.vsix*, que é uma ferramenta para realçar todas as instâncias de uma palavra selecionada.  
+- *SelectionHighlight.vsix*, que é uma ferramenta para realçar todas as instâncias de uma palavra selecionada.  
   
- O conteúdo a *atom.xml* arquivo seria semelhante ao exemplo a seguir:  
+  O conteúdo a *atom.xml* arquivo seria semelhante ao exemplo a seguir:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>   
