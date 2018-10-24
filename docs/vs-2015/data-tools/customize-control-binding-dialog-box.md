@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8cc2e591c144afeb0720cdbf05280a499d10c70c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ca2da23040f3e7a57fe5da2ff8b87cc7fc38099
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247007"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889685"
 ---
 # <a name="customize-control-binding-dialog-box"></a>Caixa de diálogo Personalizar Associação de Controle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,22 +44,22 @@ Use o **personalizar associação de controle** caixa de diálogo para especific
  **Tipo de dados**  
  Exibe uma lista de tipos que você associar controles:  
   
--   Tabelas, entidades e objetos são representados como **[List]** tipos.  
+- Tabelas, entidades e objetos são representados como **[List]** tipos.  
   
--   Colunas ou propriedades públicas dos objetos e entidades são representadas como o tipo de dados da coluna ou propriedade no armazenamento de dados subjacente.  
+- Colunas ou propriedades públicas dos objetos e entidades são representadas como o tipo de dados da coluna ou propriedade no armazenamento de dados subjacente.  
   
--   Objetos com formas definidas pelo usuário são representados como **[Other]**. Por exemplo, se seu aplicativo tiver um controle personalizado que exibe dados de mais de uma propriedade de um objeto, selecione o **[Other]** tipo de dados para o seu controle.  
+- Objetos com formas definidas pelo usuário são representados como **[Other]**. Por exemplo, se seu aplicativo tiver um controle personalizado que exibe dados de mais de uma propriedade de um objeto, selecione o **[Other]** tipo de dados para o seu controle.  
   
- **Controles associados**  
- Exibe uma lista de controles que você pode associar um tipo de dados específico. Se você deseja associar um controle específico com o tipo de dados selecionado na **tipo de dados** , selecione a caixa de seleção correspondente. Desmarque a caixa de seleção para remover uma associação. Verificado controles aparecem no menu de atalho apresentado pelo **fontes de dados** janela para um item do tipo de dados associado.  
+  **Controles associados**  
+  Exibe uma lista de controles que você pode associar um tipo de dados específico. Se você deseja associar um controle específico com o tipo de dados selecionado na **tipo de dados** , selecione a caixa de seleção correspondente. Desmarque a caixa de seleção para remover uma associação. Verificado controles aparecem no menu de atalho apresentado pelo **fontes de dados** janela para um item do tipo de dados associado.  
   
- Você pode adicionar controles à lista adicionando controles que têm um dos vários atributos de associação de dados para o **caixa de ferramentas**. Para obter mais informações, consulte [adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+  Você pode adicionar controles à lista adicionando controles que têm um dos vários atributos de associação de dados para o **caixa de ferramentas**. Para obter mais informações, consulte [adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
- **Defina o valor padrão**  
- Atribui o tipo de controle selecionado para ser o padrão para itens do tipo de dados selecionado. O controle padrão aparece como a primeira seleção no menu de atalho apresentado pelo **fontes de dados** janela para um item. Tipo de apenas um controle pode ser atribuído como o padrão para um tipo de dados.  
+  **Defina o valor padrão**  
+  Atribui o tipo de controle selecionado para ser o padrão para itens do tipo de dados selecionado. O controle padrão aparece como a primeira seleção no menu de atalho apresentado pelo **fontes de dados** janela para um item. Tipo de apenas um controle pode ser atribuído como o padrão para um tipo de dados.  
   
- **Limpar padrão**  
- Remove a designação de um controle como o padrão para o tipo de dados selecionado. Se não houver nenhum padrão para o tipo de dados selecionada **[Nenhum]** aparece como a primeira seleção no menu de atalho apresentado pelo **fontes de dados** janela para um item do tipo associado.  
+  **Limpar padrão**  
+  Remove a designação de um controle como o padrão para o tipo de dados selecionado. Se não houver nenhum padrão para o tipo de dados selecionada **[Nenhum]** aparece como a primeira seleção no menu de atalho apresentado pelo **fontes de dados** janela para um item do tipo associado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Janela Fontes de Dados](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)   

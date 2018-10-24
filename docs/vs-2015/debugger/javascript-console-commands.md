@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d9090732e44a3c94874b6effb130e4fc0c29580
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6b5339c0d7db827338953d5bfe94c38ef29dc17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263413"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889744"
 ---
 # <a name="javascript-console-commands"></a>Comandos do Console JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,16 +116,16 @@ console.log(user.first, user.last);
   
  Há suporte para os seguintes padrões de substituição:  
   
--   %s - cadeia de caracteres  
-     %i - inteiro  
-     %d - inteiro  
-     %f - flutuação  
-     %o - objeto  
-     %b - binário  
-     %x - hexadecimal  
-     %e - expoente  
+- %s - cadeia de caracteres  
+   %i - inteiro  
+   %d - inteiro  
+   %f - flutuação  
+   %o - objeto  
+   %b - binário  
+   %x - hexadecimal  
+   %e - expoente  
   
- Estes são alguns exemplos de como usar padrões de substituição no `console.log`:  
+  Estes são alguns exemplos de como usar padrões de substituição no `console.log`:  
   
 ```javascript  
 var user = new Object();  

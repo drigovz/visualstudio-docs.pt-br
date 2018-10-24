@@ -16,12 +16,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cacd0c1cd2a1e36e7c160902c93c6bcc6bfc0cdd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c12ee9593bb7baadfbaf29ebade142f142e8f40a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181201"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893866"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referência do esquema de extensão do VSIX 2.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,31 +166,31 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
 ### <a name="assets-element"></a>Elemento de ativos  
  Esse elemento contém uma lista de `<Asset>` marcas para cada elemento de extensão ou o conteúdo exposto por este pacote.  
   
--   `<Asset>` -Esse elemento contém os seguintes atributos e elementos:  
+- `<Asset>` -Esse elemento contém os seguintes atributos e elementos:  
   
-    -   `Type` – Esse é o tipo de extensão ou conteúdo representado por este elemento. Cada `<Asset>` elemento deve ter uma única `Type`, mas vários `<Asset>` elementos podem ter o mesmo `Type`. Esse atributo deve ser representado como um nome totalmente qualificado, de acordo com as convenções de namespace. Os tipos conhecidos são:  
+  - `Type` – Esse é o tipo de extensão ou conteúdo representado por este elemento. Cada `<Asset>` elemento deve ter uma única `Type`, mas vários `<Asset>` elementos podem ter o mesmo `Type`. Esse atributo deve ser representado como um nome totalmente qualificado, de acordo com as convenções de namespace. Os tipos conhecidos são:  
   
-        1.  VSPackage  
+    1. VSPackage  
   
-        2.  Mefcomponent  
+    2. Mefcomponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         Você pode criar seus próprios tipos e dar-lhes nomes exclusivos. Em tempo de execução dentro do Visual Studio, seu código pode enumerar e acessar esses tipos personalizados por meio da API do Gerenciador de extensões.  
+       Você pode criar seus próprios tipos e dar-lhes nomes exclusivos. Em tempo de execução dentro do Visual Studio, seu código pode enumerar e acessar esses tipos personalizados por meio da API do Gerenciador de extensões.  
   
-    -   Caminho – o caminho relativo para o arquivo ou pasta dentro do pacote que contém o ativo.  
+  - Caminho – o caminho relativo para o arquivo ou pasta dentro do pacote que contém o ativo.  
   
-    -   `AnyAttribute*` – Um conjunto em aberto de atributos que serão expostos em tempo de execução como um dicionário de par nome-valor.  
+  - `AnyAttribute*` – Um conjunto em aberto de atributos que serão expostos em tempo de execução como um dicionário de par nome-valor.  
   
-         `<AnyElement>*` – Qualquer conteúdo estruturado é permitido entre um `<Asset>` começa e termina a marca. Todos os elementos são expostos como uma lista de objetos XmlElement. Extensões VSIX podem definir metadados estruturados de tipo específico no arquivo de manifesto e enumerá-los em tempo de execução.  
+     `<AnyElement>*` – Qualquer conteúdo estruturado é permitido entre um `<Asset>` começa e termina a marca. Todos os elementos são expostos como uma lista de objetos XmlElement. Extensões VSIX podem definir metadados estruturados de tipo específico no arquivo de manifesto e enumerá-los em tempo de execução.  
   
 ### <a name="sample-manifest"></a>Exemplo de manifesto  
   

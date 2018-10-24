@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9bdbdd951b5d67575e9bf9283dcc054dfa25b13
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 415d03ffda6bbd2e839354b4f7cb143337ab08c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860206"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891356"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T > Designer de atividade
 
@@ -29,14 +29,15 @@ A atividade de <xref:System.Activities.Statements.RemoveFromCollection%601> remo
 
 ### <a name="using-the-removefromcollectiont-activity-designer"></a>Usando o RemoveFromCollection\<T > Designer de atividade
 
-Acesso a **RemoveFromCollection\<T >** designer de atividade no **coleção** categoria do **caixa de ferramentas**. O **RemoveFromCollection\<T >** designer de atividade pode ser arrastado dos **caixa de ferramentas** e ignorados sobre a superfície do Designer de fluxo de trabalho onde quer que as atividades são colocadas em geral, como dentro de um <xref:System.Activities.Statements.Sequence>. Isso cria uma <xref:System.Activities.Statements.RemoveFromCollection%601> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> de RemoveFromCollection < Int32\>. O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do **RemoveFromCollection < T\>**  designer de atividade ou nos **DisplayName** caixa da grade de propriedade. Outras propriedades devem ser editadas na grade de propriedade.
+Acesso a **RemoveFromCollection\<T >** designer de atividade no **coleção** categoria do **caixa de ferramentas**.
+O **RemoveFromCollection\<T >** designer de atividade pode ser arrastado dos **caixa de ferramentas** e ignorados sobre a superfície do Designer de fluxo de trabalho onde quer que as atividades são colocadas em geral, como dentro de um <xref:System.Activities.Statements.Sequence>. Isso cria uma <xref:System.Activities.Statements.RemoveFromCollection%601> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> de RemoveFromCollection < Int32\>. O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do **RemoveFromCollection < T\>**  designer de atividade ou nos **DisplayName** caixa da grade de propriedade. Outras propriedades devem ser editadas na grade de propriedade.
 
 ### <a name="the-removefromcollectiont-properties"></a>O RemoveFromCollection < T\> propriedades
 
 A tabela a seguir mostra o <xref:System.Activities.Statements.RemoveFromCollection%601> propriedades e descreve como elas são usadas no designer:
 
 |Nome da Propriedade|Necessária|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|O nome amigável opcional de atividade de <xref:System.Activities.Statements.RemoveFromCollection%601> . O padrão é o RemoveFromCollection < Int32\>.<br /><br /> Embora não seja necessário <xref:System.Activities.Activity.DisplayName%2A> restrita, é uma prática recomendada usar um.|
 |<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|verdadeiro|O item a ser removido dos **coleta\<T >**. Este item é do tipo *T*, que é do tipo *TypeArgument*. Para especificar o item, digite uma expressão do Visual Basic na grade de propriedade.|
 |<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|verdadeiro|A coleção da qual o item deve ser removido. Essa coleção é do tipo **ICollection < TypeArgument\>.** Para especificar a coleção, digite uma expressão do Visual Basic na grade de propriedade.|

@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0555968f67d804060437df272927aa3ee89c730c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 43b17390f077238a6874784f186eb8add3819f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883285"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Como: Adicionar comentários a um fluxo de trabalho em Designer de Fluxo de Trabalho
 
@@ -49,13 +49,13 @@ Para facilitar a criação de fluxos de trabalho maiores, mais complicados, o .N
 
 ## <a name="displaying-an-annotation-in-an-activitys-designer"></a>Exibindo uma anotação no designer de uma atividade
 
-1.  Com um designer de atividade que tem uma anotação que exibe fora da atividade, clique o **Pin** ícone no adorno de anotação.
+1. Com um designer de atividade que tem uma anotação que exibe fora da atividade, clique o **Pin** ícone no adorno de anotação.
 
    A anotação é exibida no designer de atividade. Em captura de tela abaixo, a anotação “que inicia a atividade no fluxo de trabalho” é exibida no designer de atividade.
 
    ![Anotação mostrada no designer de atividade](../workflow-designer/media/annotationindesigner.png)
 
-1. Para exibir a anotação fora do designer de atividade, passe o mouse sobre a área de anotação no designer de atividade e clique no **Desafixar** ícone
+2. Para exibir a anotação fora do designer de atividade, passe o mouse sobre a área de anotação no designer de atividade e clique no **Desafixar** ícone
 
    ![Anotação exibida fora do designer de uma atividade](../workflow-designer/media/annotationoutsidedesigner.png)
 
