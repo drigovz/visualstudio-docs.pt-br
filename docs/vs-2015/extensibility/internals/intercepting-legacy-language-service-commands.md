@@ -16,12 +16,12 @@ ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96a641778811d88c0087a23822ab789e72b066f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 45f0084d060e9727f30ba39233ec5b92818d9205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829879"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Interceptando comandos do serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ Com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], você pode ter os comandos 
   
  Você tem as seguintes opções para manipulação de comando:  
   
--   Lidar com o comando e, em seguida, passe o comando para o próximo filtro de comando na cadeia.  
+- Lidar com o comando e, em seguida, passe o comando para o próximo filtro de comando na cadeia.  
   
--   Lidar com o comando e não passam o comando para o próximo filtro de comando.  
+- Lidar com o comando e não passam o comando para o próximo filtro de comando.  
   
--   Não lidam com o comando, mas transmitir o comando para o próximo filtro de comando.  
+- Não lidam com o comando, mas transmitir o comando para o próximo filtro de comando.  
   
--   Ignore o comando. Não tratá-la no filtro atual e não a passar para o próximo filtro.  
+- Ignore o comando. Não tratá-la no filtro atual e não a passar para o próximo filtro.  
   
- Para obter informações sobre quais comandos deve lidar com seu serviço de linguagem, consulte [comandos importantes para filtros do serviço de linguagem](../../extensibility/internals/important-commands-for-language-service-filters.md).
+  Para obter informações sobre quais comandos deve lidar com seu serviço de linguagem, consulte [comandos importantes para filtros do serviço de linguagem](../../extensibility/internals/important-commands-for-language-service-filters.md).
 

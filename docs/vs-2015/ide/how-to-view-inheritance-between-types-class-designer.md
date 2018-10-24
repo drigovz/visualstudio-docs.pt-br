@@ -20,12 +20,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 31d5c57408765b74ec736b8ec5c6dd8edc9d8a01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 59d07bd9b4f069773593359e396b63df6407b1ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201985"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823067"
 ---
 # <a name="how-to-view-inheritance-between-types-class-designer"></a>Como exibir herança entre tipos (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,23 +34,23 @@ Você pode localizar a relação de herança, se ela existir, entre um tipo base
   
 ### <a name="to-find-the-base-type"></a>Para localizar o tipo base  
   
-1.  No diagrama de classe, clique no tipo para o qual você deseja ver a classe ou a interface base.  
+1. No diagrama de classe, clique no tipo para o qual você deseja ver a classe ou a interface base.  
   
-2.  No menu **Diagrama de Classe**, escolha **Mostrar Classe Base** ou **Mostrar Interfaces Base**.  
+2. No menu **Diagrama de Classe**, escolha **Mostrar Classe Base** ou **Mostrar Interfaces Base**.  
   
-     A classe ou a interface base do tipo aparece selecionada no diagrama. Todas as linhas de herança ocultas aparecem agora entre as duas formas.  
+    A classe ou a interface base do tipo aparece selecionada no diagrama. Todas as linhas de herança ocultas aparecem agora entre as duas formas.  
   
- Você pode também clicar com o botão direito do mouse no tipo cujo tipo base deseja exibir e escolher **Mostrar Classe Base** ou **Mostrar Interfaces Base**.  
+   Você pode também clicar com o botão direito do mouse no tipo cujo tipo base deseja exibir e escolher **Mostrar Classe Base** ou **Mostrar Interfaces Base**.  
   
 ### <a name="to-find-the-derived-types"></a>Para localizar os tipos derivados  
   
-1.  No diagrama de classe, clique no tipo para o qual você deseja ver as classes ou interfaces derivadas.  
+1. No diagrama de classe, clique no tipo para o qual você deseja ver as classes ou interfaces derivadas.  
   
-2.  No menu **Diagrama de Classe**, escolha **Mostrar Classes Derivadas** ou **Mostrar Interfaces Derivadas**.  
+2. No menu **Diagrama de Classe**, escolha **Mostrar Classes Derivadas** ou **Mostrar Interfaces Derivadas**.  
   
-     As classes ou interfaces derivadas do tipo aparecem no diagrama. Todas as linhas de herança ocultas aparecem agora entre as formas.  
+    As classes ou interfaces derivadas do tipo aparecem no diagrama. Todas as linhas de herança ocultas aparecem agora entre as formas.  
   
- Você pode também clicar com o botão direito do mouse no tipo cujos tipos derivados deseja ver e escolher **Mostrar Classes Derivadas** ou **Mostrar Interfaces Derivadas**.  
+   Você pode também clicar com o botão direito do mouse no tipo cujos tipos derivados deseja ver e escolher **Mostrar Classes Derivadas** ou **Mostrar Interfaces Derivadas**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Como criar associações entre tipos (Designer de Classe)](../ide/how-to-create-associations-between-types-class-designer.md)   

@@ -16,12 +16,12 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35150331ed22960bb8556a7b1175e0ed629efca7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f8c442aec21042faa4aa992dcdefc4f9d2ad335
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292975"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812979"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Como: instalar um plug-in de controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,16 +98,16 @@ Criando um controle de fonte plug-in envolve três etapas:
 ## <a name="how-an-ide-locates-the-dll"></a>Como um IDE localiza a DLL  
  O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE tem duas maneiras de localizar a fonte de DLL de plug-in de controle:  
   
--   Localize o controle de fonte padrão plug-in e conectá-lo silenciosamente.  
+- Localize o controle de fonte padrão plug-in e conectá-lo silenciosamente.  
   
--   Localize fonte registrada de todos os plug-ins de controle, do qual o usuário escolhe um.  
+- Localize fonte registrada de todos os plug-ins de controle, do qual o usuário escolhe um.  
   
- Para localizar a DLL da primeira forma, o IDE se parece na subchave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider para a entrada ProviderRegKey. O valor desta entrada aponta para outra subchave. O IDE, em seguida, procura por uma entrada denominada SccServerPath nessa segunda subchave sob HKEY_LOCAL_MACHINE. O valor desta entrada aponta o IDE para a DLL.  
+  Para localizar a DLL da primeira forma, o IDE se parece na subchave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider para a entrada ProviderRegKey. O valor desta entrada aponta para outra subchave. O IDE, em seguida, procura por uma entrada denominada SccServerPath nessa segunda subchave sob HKEY_LOCAL_MACHINE. O valor desta entrada aponta o IDE para a DLL.  
   
 > [!NOTE]
 >  O IDE não carrega DLLs de caminhos relativos (por exemplo,.\NewProvider.DLL). Especifique um caminho completo para a DLL (por exemplo, c:\Providers\NewProvider.DLL). Isso reforça a segurança do IDE, impedindo que o carregamento de DLLs de plug-in não autorizados ou delegadas.  
   
- Para localizar a DLL da segunda forma, o IDE se parece em todas as entradas na subchave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders *.* Cada entrada tem um nome e um valor. O IDE exibirá uma lista desses nomes para o usuário *.* Quando o usuário escolhe um nome, o IDE localiza o valor para o nome selecionado que aponta para uma subchave. O IDE procurará uma entrada denominada SccServerPath nessa subchave sob HKEY_LOCAL_MACHINE. O valor desta entrada aponta o IDE para a DLL correta.  
+ Para localizar a DLL da segunda forma, o IDE se parece em todas as entradas na subchave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders<em>.</em> Cada entrada tem um nome e um valor. O IDE exibirá uma lista desses nomes para o usuário<em>.</em> Quando o usuário escolhe um nome, o IDE localiza o valor para o nome selecionado que aponta para uma subchave. O IDE procurará uma entrada denominada SccServerPath nessa subchave sob HKEY_LOCAL_MACHINE. O valor desta entrada aponta o IDE para a DLL correta.  
   
  Um plug-in de controle de origem precisa dar suporte a ambas as maneiras de localizar a DLL e, consequentemente, definir ProviderRegKey, substituindo qualquer definição anterior. Mais importante, ele deve se adicionar à lista de InstalledSccProviders para que o usuário possa ter uma opção do qual plug-in de controle do código-fonte para usar.  
   

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1cae2ba32be73972e6c716e9100120514a6346cf
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 25173e5c4d4aeb02045cf858ae1e093b7a04d2bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258133"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824365"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Passo a passo: Associação de dados simples em um projeto de nível de documento
   Este passo a passo demonstra as Noções básicas de vinculação de dados em um projeto de nível de documento. Um único campo de dados em um banco de dados do SQL Server está associado a um intervalo nomeado no Microsoft Office Excel. O passo a passo também mostra como adicionar controles que permitem que você percorra todos os registros na tabela.  
@@ -33,13 +33,13 @@ ms.locfileid: "35258133"
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Criando uma fonte de dados para um projeto do Excel.  
+- Criando uma fonte de dados para um projeto do Excel.  
   
--   Adicionando controles a uma planilha.  
+- Adicionando controles a uma planilha.  
   
--   Percorrer os registros do banco de dados.  
+- Percorrer os registros do banco de dados.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
@@ -57,34 +57,34 @@ ms.locfileid: "35258133"
   
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto  
   
-1.  Criar um projeto de pasta de trabalho do Excel com o nome **vinculação de dados simples de meu**, usando o Visual Basic ou c#. Certifique-se de que **criar um novo documento** está selecionado. Para obter mais informações, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Criar um projeto de pasta de trabalho do Excel com o nome **vinculação de dados simples de meu**, usando o Visual Basic ou c#. Certifique-se de que **criar um novo documento** está selecionado. Para obter mais informações, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Visual Studio abre a nova pasta de trabalho do Excel no designer e adiciona o **vinculação de dados simples de meu** projeto ao **Gerenciador de soluções**.  
+   Visual Studio abre a nova pasta de trabalho do Excel no designer e adiciona o **vinculação de dados simples de meu** projeto ao **Gerenciador de soluções**.  
   
 ## <a name="create-the-data-source"></a>Criar a fonte de dados  
  Use o **fontes de dados** janela para adicionar um conjunto de dados tipado ao seu projeto.  
   
 ### <a name="to-create-the-data-source"></a>Para criar a fonte de dados  
   
-1.  Se o **fontes de dados** janela não estiver visível, exibi-lo, na barra de menus, escolhendo **exibição** > **Other Windows**  >   **Fontes de dados**.  
+1. Se o **fontes de dados** janela não estiver visível, exibi-lo, na barra de menus, escolhendo **exibição** > **Other Windows**  >   **Fontes de dados**.  
   
-2.  Escolher **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.  
+2. Escolher **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.  
   
-3.  Selecione **banco de dados** e, em seguida, clique em **próxima**.  
+3. Selecione **banco de dados** e, em seguida, clique em **próxima**.  
   
-4.  Selecione uma conexão de dados para o banco de dados do SQL Server de exemplo Northwind, ou adicionar uma nova conexão usando o **nova Conexão** botão.  
+4. Selecione uma conexão de dados para o banco de dados do SQL Server de exemplo Northwind, ou adicionar uma nova conexão usando o **nova Conexão** botão.  
   
-5.  Depois que uma conexão foi selecionado ou criado, clique em **próxima**.  
+5. Depois que uma conexão foi selecionado ou criado, clique em **próxima**.  
   
-6.  Desmarque a opção para salvar a conexão se ela está selecionada e clique **próxima**.  
+6. Desmarque a opção para salvar a conexão se ela está selecionada e clique **próxima**.  
   
-7.  Expanda o **tabelas** nó na **objetos de banco de dados** janela.  
+7. Expanda o **tabelas** nó na **objetos de banco de dados** janela.  
   
-8.  Marque a caixa de seleção ao lado de **clientes** tabela.  
+8. Marque a caixa de seleção ao lado de **clientes** tabela.  
   
 9. Clique em **Finalizar**.  
   
- O assistente adiciona as **clientes** de tabela para o **fontes de dados** janela. Ele também adiciona um dataset tipado ao seu projeto que está visível no **Gerenciador de soluções**.  
+   O assistente adiciona as **clientes** de tabela para o **fontes de dados** janela. Ele também adiciona um dataset tipado ao seu projeto que está visível no **Gerenciador de soluções**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Adicionar controles à planilha  
  Para este passo a passo, você precisa de dois intervalos nomeados e quatro botões na primeira planilha. Primeiro, adicione os dois intervalos nomeados do **fontes de dados** janela, de modo que eles são vinculados automaticamente a fonte de dados. Em seguida, adicione os botões do **caixa de ferramentas**.  
@@ -109,37 +109,37 @@ ms.locfileid: "35258133"
   
 ### <a name="to-add-four-buttons"></a>Para adicionar os quatro botões  
   
-1.  Do **controles comuns** guia da **caixa de ferramentas**, adicione um <xref:System.Windows.Forms.Button> controle à célula **A3** da planilha.  
+1. Do **controles comuns** guia da **caixa de ferramentas**, adicione um <xref:System.Windows.Forms.Button> controle à célula **A3** da planilha.  
   
-     Esse botão é denominado `Button1`.  
+    Esse botão é denominado `Button1`.  
   
-2.  Adicione três botões de mais para as seguintes células nesta ordem, para que os nomes são conforme mostrado:  
+2. Adicione três botões de mais para as seguintes células nesta ordem, para que os nomes são conforme mostrado:  
   
-    |Célula|(Nome)|  
-    |----------|--------------|  
-    |B3|Button2|  
-    |C3|Button3|  
-    |D3|Button4|  
+   |célula|(Nome)|  
+   |----------|--------------|  
+   |B3|Button2|  
+   |C3|Button3|  
+   |D3|Button4|  
   
- A próxima etapa é adicionar texto a botões e no c#, adicione manipuladores de eventos.  
+   A próxima etapa é adicionar texto a botões e no c#, adicione manipuladores de eventos.  
   
 ## <a name="initialize-the-controls"></a>Inicializar os controles  
  Definir o texto do botão e adicionar manipuladores de eventos durante o <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> eventos.  
   
 ### <a name="to-initialize-the-controls"></a>Para inicializar os controles  
   
-1.  Na **Gerenciador de soluções**, clique com botão direito **Sheet1.vb** ou **Sheet1.cs**e, em seguida, clique em **Exibir código** no menu de atalho.  
+1. Na **Gerenciador de soluções**, clique com botão direito **Sheet1.vb** ou **Sheet1.cs**e, em seguida, clique em **Exibir código** no menu de atalho.  
   
-2.  Adicione o seguinte código para o `Sheet1_Startup` método para definir o texto para cada botão.  
+2. Adicione o seguinte código para o `Sheet1_Startup` método para definir o texto para cada botão.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#2)]
-     [!code-vb[Trin_VstcoreDataExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#2)]  
+    [!code-csharp[Trin_VstcoreDataExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#2)]
+    [!code-vb[Trin_VstcoreDataExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#2)]  
   
-3.  Apenas para c#, adicionar manipuladores de eventos para o botão, clique em eventos para o `Sheet1_Startup` método.  
+3. Apenas para c#, adicionar manipuladores de eventos para o botão, clique em eventos para o `Sheet1_Startup` método.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#3)]  
+    [!code-csharp[Trin_VstcoreDataExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#3)]  
   
- Agora adicione código para manipular o <xref:System.Windows.Forms.Control.Click> eventos dos botões para que o usuário pode navegar pelos registros.  
+   Agora adicione código para manipular o <xref:System.Windows.Forms.Control.Click> eventos dos botões para que o usuário pode navegar pelos registros.  
   
 ## <a name="add-code-to-enable-scrolling-through-the-records"></a>Adicione código para habilitar a rolagem por meio de registros  
  Adicione código para o <xref:System.Windows.Forms.Control.Click> manipulador de eventos de cada botão para percorrer os registros.  

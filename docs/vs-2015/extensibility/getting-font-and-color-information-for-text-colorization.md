@@ -16,12 +16,12 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7916e954079d627340a1ca41faeeadf7555acfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 49a787dd67691c581383713a7c98a80816762599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274242"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832713"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Obtendo informações de cores para colorização de texto e fonte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ O processo que processa ou exibe texto coloridos serão em elementos de (UI) int
   
  Para colorir, um VSPackage deverá obter o atual **fontes e cores** configurações. Um VSPackage pode fazer isso das seguintes maneiras, dependendo das suas necessidades:  
   
--   Use o mecanismo de persistência de fontes e cores para recuperar o estado atual ou armazenado. Para obter mais informações, consulte [acessar fonte armazenados e as configurações de cor](../extensibility/accessing-stored-font-and-color-settings.md).  
+- Use o mecanismo de persistência de fontes e cores para recuperar o estado atual ou armazenado. Para obter mais informações, consulte [acessar fonte armazenados e as configurações de cor](../extensibility/accessing-stored-font-and-color-settings.md).  
   
--   Use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interface de um serviço que fornece dados de fontes e cores para obter uma instância de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, se o VSPackage não é também o provedor de fonte e cor.  
+- Use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interface de um serviço que fornece dados de fontes e cores para obter uma instância de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, se o VSPackage não é também o provedor de fonte e cor.  
   
--   Implementar a interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>.  
+- Implementar a interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>.  
   
- Para garantir que os resultados obtidos por meio de sondagem são atualizadas, talvez seja útil usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interface para determinar se uma atualização é necessária antes de chamar os métodos de recuperação do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
+  Para garantir que os resultados obtidos por meio de sondagem são atualizadas, talvez seja útil usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interface para determinar se uma atualização é necessária antes de chamar os métodos de recuperação do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
   
- Depois que você obteve informações de fonte e cor, analisar o texto a ser exibido para identificar a necessidade de colorização de elementos e, em seguida, exibir o texto na janela usando as cores e fontes apropriadas.  
+  Depois que você obteve informações de fonte e cor, analisar o texto a ser exibido para identificar a necessidade de colorização de elementos e, em seguida, exibir o texto na janela usando as cores e fontes apropriadas.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
