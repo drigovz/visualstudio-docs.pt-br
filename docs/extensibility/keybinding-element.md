@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb8e0dca8293d5d5e853dde19e0c411cfd3e4e63
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 77fb94e702615d0d27ce2587c034000f6c4b3e3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495291"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905097"
 ---
 # <a name="keybinding-element"></a>Elemento KeyBinding
 O elemento de associação de teclas Especifica atalhos de teclado para os comandos.  
   
- Comandos podem ter associações de teclas única e duplos associadas a eles. É um exemplo de uma associação de chave única **Ctrl**+**S** para o **salvar** comando. Associações de teclas duplas exigem duas combinações de teclas sucessivas para acionar um comando. É um exemplo de uma associação de chave dupla *** Ctrl +** K **,** Ctrl**+** K * * para definir um indicador.  
+ Comandos podem ter associações de teclas única e duplos associadas a eles. É um exemplo de uma associação de chave única **Ctrl**+**S** para o **salvar** comando. Associações de teclas duplas exigem duas combinações de teclas sucessivas para acionar um comando. É um exemplo de uma associação de chave dupla <strong>Ctrl*+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K** para definir um indicador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -39,10 +39,10 @@ O elemento de associação de teclas Especifica atalhos de teclado para os coman
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|GUID|Obrigatório.|  
-|id|Obrigatório.|  
-|editor|Obrigatório. O GUID do editor indica o contexto de edição para o qual este atalho de teclado estará ativo. O valor de escopo de associação global é "guidVSStd97".|  
-|CHAVE1|Obrigatório. Os valores válidos incluem todos os typable alfanuméricos e valores hexadecimais de dois dígitos precedidos por 0x e [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
+|GUID|Necessário.|  
+|id|Necessário.|  
+|editor|Necessário. O GUID do editor indica o contexto de edição para o qual este atalho de teclado estará ativo. O valor de escopo de associação global é "guidVSStd97".|  
+|CHAVE1|Necessário. Os valores válidos incluem todos os typable alfanuméricos e valores hexadecimais de dois dígitos precedidos por 0x e [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
 |Mod1|Opcional. Qualquer combinação de **Ctrl**, **Alt**, e **Shift** separados por espaço.|  
 |Key2|Opcional. Os valores válidos incluem todos os typable alfanuméricos e valores hexadecimais de dois dígitos precedidos por 0x e [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
 |Mod2|Opcional. Qualquer combinação de **Ctrl**, **Alt**, e **Shift** separados por espaço.|  

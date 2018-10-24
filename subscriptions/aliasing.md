@@ -9,12 +9,12 @@ description: A entrada poderá falhar se forem usados aliases ou nomes amigávei
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 48faa1ce2e002b6a21c3e467db627d9c08bec2e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637676"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854462"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>A entrada nas assinaturas do Visual Studio poderá falhar ao usar aliases
 
@@ -116,10 +116,10 @@ Depois que uma assinatura for atribuída ao assinante, ele receberá um email so
 1. Navegue até https://my.visualstudio.com e clique em **Criar nova conta da Microsoft**.
 
 2. Preencha os campos:
-    - Insira o endereço de email que recebeu o Email de Boas-vindas na caixa Someone@example.com
-    - Criar a senha
-    - Escolher as configurações promocionais
-    - Clique em **Avançar**.
+   - Insira o endereço de email que recebeu o Email de Boas-vindas na caixa Someone@example.com
+   - Criar a senha
+   - Escolher as configurações promocionais
+   - Clique em **Avançar**.
 
 3. Conclua as etapas de validação e clique em **Avançar**.
 
@@ -141,10 +141,10 @@ Você atribuiu uma assinatura do Visual Studio e pode ter sido direcionado para 
 2. Clique em Criar nova Conta da Microsoft no lado direito
 
 3. Preencha o formulário:
-    - Use o endereço de email corporativo na caixa someone@example.com
-    - Insira uma senha
-    - Selecione a preferência promocional
-    - Clique em Avançar
+   - Use o endereço de email corporativo na caixa someone@example.com
+   - Insira uma senha
+   - Selecione a preferência promocional
+   - Clique em Avançar
 
 4. Conclua as etapas de validação de conta
 

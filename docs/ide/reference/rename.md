@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 696ec34bb0009b9b09b5902a102c71cf1331f320
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b85814be6df104a0d5859fbb339ce0dc665c09c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945448"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908725"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refatoração Renomear um símbolo de código
 
@@ -41,34 +41,34 @@ Esta refatoração aplica-se a:
 
    - C#:
 
-    ![Código realçado – C#](media/rename-highlight-cs.png)
+       ![Código realçado – C#](media/rename-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código realçado – Visual Basic](media/rename-highlight-vb.png)
+       ![Código realçado – Visual Basic](media/rename-highlight-vb.png)
 
-1. Depois, siga um destes procedimentos:
+2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl+R**, em seguida, **Ctrl+R**. (Observe que o atalho de teclado pode ser diferente com base no perfil selecionado.)
+      - Pressione **Ctrl+R**, em seguida, **Ctrl+R**. (Observe que o atalho de teclado pode ser diferente com base no perfil selecionado.)
    - **Mouse**
-     - Selecione **Editar > Refatorar > Renomear**.
-     - Clique com o botão direito do mouse no código e selecione **Renomear**.
+      - Selecione **Editar > Refatorar > Renomear**.
+      - Clique com o botão direito do mouse no código e selecione **Renomear**.
 
-1. Renomeie o item digitando o novo nome.
+3. Renomeie o item digitando o novo nome.
 
    - C#:
 
-    ![Renomear animação – C#](media/rename-animated-cs.gif)
+      ![Renomear animação – C#](media/rename-animated-cs.gif)
 
    - Visual Basic:
 
-    ![Renomear – VB](media/rename-rename-vb.png)
+      ![Renomear – VB](media/rename-rename-vb.png)
 
    > [!TIP]
    > Também é possível atualizar os comentários e outras cadeias de caracteres para usar esse novo nome, bem como [visualizar as alterações](../../ide/preview-changes.md) antes de salvar usando as caixas de seleção na caixa **Renomear** que aparece na parte superior direita do editor.
 
-1. Quando estiver satisfeito com a alteração, escolha **Aplicar** ou pressione **Enter** e as alterações serão confirmadas.
+4. Quando estiver satisfeito com a alteração, escolha **Aplicar** ou pressione **Enter** e as alterações serão confirmadas.
 
 > [!NOTE]
 > Se você escolher um nome que já exista, o que causaria um conflito, a caixa **Renomear** o avisará.

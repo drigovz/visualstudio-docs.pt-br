@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1410e6054432509d82cf6a19619d595bac845697
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 935c1ebfb2efd888de5b336eafab4059fa6cd443
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495629"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903550"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um *.runsettings*
 
@@ -137,7 +137,7 @@ O XML a seguir mostra o conteúdo de um arquivo *.runsettings* típico. Cada ele
     <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
     <DeploymentEnabled>False</DeploymentEnabled>
     <AssemblyResolution>
-      <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
+      <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
   </MSTest>
 
@@ -164,7 +164,7 @@ As seções a seguir detalham os elementos de um arquivo *.runsettings*.
 O elemento **RunConfiguration** pode incluir os seguintes elementos:
 
 |Nó|Padrão|Valores|
-|----------|-------------|------------|
+|-|-|-|
 |**ResultsDirectory**||O diretório no qual os resultados do teste são colocados.|
 |**TargetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Essa configuração especifica a versão da estrutura de teste de unidade usada para descobrir e executar os testes. Pode ser diferente da versão da plataforma .NET especificada nas propriedades de compilação do projeto de teste de unidade.|
 |**TargetPlatform**|x86|x86, x64|
@@ -241,7 +241,7 @@ Para usar parâmetros de execução de teste, adicione um campo <xref:Microsoft.
 Essas configurações são específicas para o adaptador de teste que executa os métodos de teste que têm o atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>.
 
 |Configuração|Padrão|Valores|
-|-------------------|-------------|------------|
+|-|-|-|
 |**ForcedLegacyMode**|false|No Visual Studio 2012, o adaptador MSTest foi otimizado para torná-lo mais rápido e mais escalonável. Alguns comportamentos, como a ordem em que os testes são executados, não podem ser exatamente iguais aos de edições anteriores do Visual Studio. Defina esse valor como **true** para usar o adaptador de teste mais antigo.<br /><br />Por exemplo, você poderá usar essa configuração se tiver um arquivo *app.config* especificado para um teste de unidade.<br /><br />Recomendamos que você considere refatorar seus testes para permitir o uso do adaptador mais recente.|
 |**IgnoreTestImpact**|false|O recurso de impacto de teste prioriza os testes que são afetados pelas alterações recentes, quando executados no MSTest ou no Microsoft Test Manager. Essa configuração desativa o recurso. Para obter mais informações, confira [Quais testes devem ser executados desde um build anterior](https://msdn.microsoft.com/library/dd286589).|
 |**SettingsFile**||Especifique um arquivo de configurações do teste para usar com o adaptador MSTest aqui. Especifiquetambém um arquivo de configurações do teste selecionando **Teste** > **Configurações do Teste** > **Selecionar Arquivo de Configurações do Teste**.<br /><br />Se você especificar esse valor, também será necessário definir o **ForcedlegacyMode** como **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|

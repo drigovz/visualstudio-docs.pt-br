@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0702d1f47b8924e97cd3a6df1bba2af2503d5b29
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: b7e3da13240eb172e29676b990d1c23be71e4542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029128"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855528"
 ---
 # <a name="model-editor"></a>Editor de modelos
 
@@ -31,7 +31,7 @@ Você pode usar o **Editor de Modelos** para criar modelos 3D do zero ou exibir 
 O **Editor de Modelos** é compatível com vários formatos de modelo 3D que são usados no desenvolvimento de aplicativos DirectX:
 
 |Nome do formato|Extensão do arquivo|Operações com suporte (Exibir, Editar, Criar)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |Arquivo de Intercâmbio AutoDesk FBX|*.fbx*|Exibir, Editar, Criar|
 |Arquivo Collada DAE|*.dae*|Exibir, Editar (Modificações em arquivos Collada DAE são salvas usando o formato FBX.)|
 |OBJ|*.obj*|Exibir, Editar (Modificações em arquivos OBJ são salvos usando o formato FBX.)|
@@ -254,7 +254,7 @@ Cada um desses materiais aplica uma textura na superfície de um objeto. Você p
 Para modificar como um objeto específico reage a diferentes fontes de luz na cena, você pode alterar as propriedades de iluminação do material independentemente dos outros objetos que usam o material. Esta tabela descreve as propriedades comuns de iluminação:
 
 |Propriedade de iluminação|Descrição|
-|-----------------------|-----------------|
+| - |-----------------|
 |**Ambiente**|Descreve como a superfície é afetada pela iluminação ambiente.|
 |**Difusa**|Descreve como a superfície é afetada por luzes direcionais e pontuais.|
 |**Emissiva**|Descreve como a superfície emite luz, independentemente de outra iluminação.|
@@ -294,7 +294,7 @@ Para remover a associação pai/filho entre dois objetos, selecione o objeto fil
 ## <a name="keyboard-shortcuts"></a>Atalhos de teclado
 
 |Comando|Atalhos de teclado|
-|-------------|------------------------|
+|-------------| - |
 |Mudar para o modo **Selecionar**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |Mudar para o modo **Zoom**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Mudar para o modo **Panorâmico**|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|

@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a60b76efc5c1c476f69a11804c74cd3341139c9c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d5c10cdf2221f329e8e0ff748c2b4fe77479b205
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080308"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863849"
 ---
 # <a name="midl-task"></a>tarefa MIDL
 Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl.exe*. Para obter mais informações, confira [Referência da linha de comando MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
@@ -245,7 +245,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
   
      Se ele for `true`, exigirá que o formato do arquivo de entrada seja compatível com o *mktyplib.exe* versão 2.03.  
   
-     Para obter mais informações, confira a opção **/mktyplib203** em [Referência da linha de comando MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). Além disso, confira [Sintaxe do arquivo ODL](https://msdn.microsoft.com/library/windows/desktop/ms221683(v=vs.85).aspx) no site do MSDN.  
+     Para obter mais informações, confira a opção **/mktyplib203** em [Referência da linha de comando MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). Além disso, confira [Sintaxe do arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax) no site do MSDN.  
   
 -   **OutputDirectory**  
   

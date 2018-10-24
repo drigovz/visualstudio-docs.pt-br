@@ -22,51 +22,51 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 353d834ccd32376b53c875be356865711a4f89fd
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a8aa49416a826e5100932b4741d3e536a9d2f37d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757213"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897336"
 ---
 # <a name="how-to-add-a-creator-method"></a>Como: adicionar um método Creator
   Um método Creator adiciona novos dados à fonte de dados de uma entidade. O serviço de conectividade de dados comerciais (BDC) chama esse método quando os usuários escolhem o **Novo Item** botão a **faixa de opções** de uma lista que é baseada no modelo. Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-add-a-creator-method"></a>Para adicionar um método Creator  
   
-1.  Sobre o **Designer de BDC**, escolha uma entidade.  
+1. Sobre o **Designer de BDC**, escolha uma entidade.  
   
-2.  Na barra de menus, escolha **modo de exibição** > **Other Windows** >**detalhes do método BDC**.  
+2. Na barra de menus, escolha **modo de exibição** > **Other Windows** >**detalhes do método BDC**.  
   
-     O **detalhes do método BDC** janela é aberta. Para obter mais informações sobre essa janela, consulte [visão geral das ferramentas de design de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md).  
+    O **detalhes do método BDC** janela é aberta. Para obter mais informações sobre essa janela, consulte [visão geral das ferramentas de design de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
-3.  No **adicionar um método** , escolha **criar método de criador**.  
+3. No **adicionar um método** , escolha **criar método de criador**.  
   
-     Visual Studio adiciona os seguintes elementos ao modelo, e esses elementos aparecem na **detalhes do método BDC** janela.  
+    Visual Studio adiciona os seguintes elementos ao modelo, e esses elementos aparecem na **detalhes do método BDC** janela.  
   
-    -   Um método chamado **criar**.  
+   - Um método chamado **criar**.  
   
-    -   Um parâmetro de entrada para o método.  
+   - Um parâmetro de entrada para o método.  
   
-    -   Um parâmetro de retorno do método.  
+   - Um parâmetro de retorno do método.  
   
-    -   Tipos de descritores para os parâmetros.  
+   - Tipos de descritores para os parâmetros.  
   
-    -   Uma instância de método para o método.  
+   - Uma instância de método para o método.  
   
      Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-4.  Na **Gerenciador de soluções**, abra o menu de atalho do serviço arquivo de código que foi gerado para a entidade e, em seguida, escolha **Exibir código**.  
+4. Na **Gerenciador de soluções**, abra o menu de atalho do serviço arquivo de código que foi gerado para a entidade e, em seguida, escolha **Exibir código**.  
   
-     O arquivo de código do serviço de entidade é aberto no Editor de códigos. Para obter mais informações sobre o arquivo de código do serviço de entidade, consulte [criar um modelo de conectividade de dados de negócios](../sharepoint/creating-a-business-data-connectivity-model.md).  
+    O arquivo de código do serviço de entidade é aberto no Editor de códigos. Para obter mais informações sobre o arquivo de código do serviço de entidade, consulte [criar um modelo de conectividade de dados de negócios](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
-5.  Adicione código ao método criador que adiciona dados à fonte de dados. O exemplo a seguir adiciona um contato para o banco de dados de exemplo AdventureWorks para SQL Server.  
+5. Adicione código ao método criador que adiciona dados à fonte de dados. O exemplo a seguir adiciona um contato para o banco de dados de exemplo AdventureWorks para SQL Server.  
   
-    > [!NOTE]  
-    >  Substitua o valor da `ServerName` campo com o nome do seu servidor.  
+   > [!NOTE]  
+   >  Substitua o valor da `ServerName` campo com o nome do seu servidor.  
   
-     [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
-     [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]  
+    [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
+    [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]  
   
 ## <a name="see-also"></a>Consulte também
  [Criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md)   

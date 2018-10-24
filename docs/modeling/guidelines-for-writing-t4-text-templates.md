@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 45bc88be425acf8532debc47a28ee3ea20c18c71
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 09ed896c85807da5a65084360fa62e24c3cca141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859621"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896205"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Diretrizes para escrever modelos de texto T4
 Estas diretrizes gerais podem ser úteis se você estiver gerando o código do programa ou outros recursos de aplicativo no Visual Studio. Eles não são fixos regras.
@@ -43,28 +43,28 @@ Use testes manuais ou automatizados para verificar se o código resultante funci
  Permitir código personalizado: gerar classes parciais.
 Permitir código que você escrever à mão além para o código gerado. É incomum para um esquema de geração de código para ser capaz de levar em conta todas as variações possíveis que podem surgir. Portanto, você deve esperar adicionar ou substituir algumas do código gerado. Em que o material gerado está em uma linguagem .NET, como [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ou [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], duas estratégias são especialmente úteis:
 
--   As classes geradas devem ser parciais. Isso permite que você adicione conteúdo para o código gerado.
+- As classes geradas devem ser parciais. Isso permite que você adicione conteúdo para o código gerado.
 
--   As classes devem ser geradas em pares, um herdar de outra. A classe base deve conter todas as propriedades e métodos gerados, e a classe derivada deve conter somente os construtores. Isso permite que seu código escrito manualmente substituir qualquer um dos métodos gerados.
+- As classes devem ser geradas em pares, um herdar de outra. A classe base deve conter todas as propriedades e métodos gerados, e a classe derivada deve conter somente os construtores. Isso permite que seu código escrito manualmente substituir qualquer um dos métodos gerados.
 
- Em outras linguagens geradas como XML, use o `<#@include#>` diretiva para tornar simples combinações de conteúdo escrito manualmente e gerado. Em casos mais complexos, você talvez precise escrever uma etapa de pós-processamento que combina o arquivo gerado com todos os arquivos gravados para à mão.
+  Em outras linguagens geradas como XML, use o `<#@include#>` diretiva para tornar simples combinações de conteúdo escrito manualmente e gerado. Em casos mais complexos, você talvez precise escrever uma etapa de pós-processamento que combina o arquivo gerado com todos os arquivos gravados para à mão.
 
- Mover o material comum em arquivos de inclusão ou modelos de tempo de execução para evitar a repetição semelhantes blocos de texto e código em vários modelos, usam o `<#@ include #>` diretiva. Para obter mais informações, consulte [diretiva Include do T4](../modeling/t4-include-directive.md).
+  Mover o material comum em arquivos de inclusão ou modelos de tempo de execução para evitar a repetição semelhantes blocos de texto e código em vários modelos, usam o `<#@ include #>` diretiva. Para obter mais informações, consulte [diretiva Include do T4](../modeling/t4-include-directive.md).
 
- Você pode também criar modelos de texto de tempo de execução em um projeto separado e, em seguida, chamá-los a partir do modelo de tempo de design. Para fazer isso, use o `<#@ assembly #>` diretiva para acessar o projeto separado. Para obter exemplos, consulte ["Herança em modelos de texto" no Blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
+  Você pode também criar modelos de texto de tempo de execução em um projeto separado e, em seguida, chamá-los a partir do modelo de tempo de design. Para fazer isso, use o `<#@ assembly #>` diretiva para acessar o projeto separado. Para obter exemplos, consulte ["Herança em modelos de texto" no Blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 
- Considere mover grandes blocos de código em um assembly separado.
- Se você tiver blocos de código grande e blocos de recurso de classe, pode ser útil mover alguns desse código em métodos que são compilados em um projeto separado. Você pode usar o `<#@ assembly #>` diretiva para acessar o código no modelo. Para obter mais informações, consulte [diretiva de Assembly T4](../modeling/t4-assembly-directive.md).
+  Considere mover grandes blocos de código em um assembly separado.
+  Se você tiver blocos de código grande e blocos de recurso de classe, pode ser útil mover alguns desse código em métodos que são compilados em um projeto separado. Você pode usar o `<#@ assembly #>` diretiva para acessar o código no modelo. Para obter mais informações, consulte [diretiva de Assembly T4](../modeling/t4-assembly-directive.md).
 
- Você pode colocar os métodos em uma classe abstrata que o modelo pode herdar. A classe abstrata deve herdar de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Para obter mais informações, consulte [diretiva de modelo T4](../modeling/t4-template-directive.md).
+  Você pode colocar os métodos em uma classe abstrata que o modelo pode herdar. A classe abstrata deve herdar de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Para obter mais informações, consulte [diretiva de modelo T4](../modeling/t4-template-directive.md).
 
- Gerar código, não arquivos um método de configuração de escrever um aplicativo de variável é escrever um código de programa genérico que aceita um arquivo de configuração. Um aplicativo escrito dessa maneira é muito flexível e pode ser reconfigurado quando os requisitos de negócios mudam, sem recompilar o aplicativo. No entanto, uma desvantagem dessa abordagem é que o aplicativo será um desempenho inferior que um aplicativo mais específico. Além disso, seu código do programa será mais difícil de ler e manter, em parte porque ele sempre tem de lidar com os tipos mais genéricos.
+  Gerar código, não arquivos um método de configuração de escrever um aplicativo de variável é escrever um código de programa genérico que aceita um arquivo de configuração. Um aplicativo escrito dessa maneira é muito flexível e pode ser reconfigurado quando os requisitos de negócios mudam, sem recompilar o aplicativo. No entanto, uma desvantagem dessa abordagem é que o aplicativo será um desempenho inferior que um aplicativo mais específico. Além disso, seu código do programa será mais difícil de ler e manter, em parte porque ele sempre tem de lidar com os tipos mais genéricos.
 
- Por outro lado, um aplicativo cujas partes variáveis são gerados antes da compilação pode ser fortemente tipado. Isso torna muito mais fácil e mais confiáveis para escrever código escrito manualmente e integrá-lo com o gerado partes do software.
+  Por outro lado, um aplicativo cujas partes variáveis são gerados antes da compilação pode ser fortemente tipado. Isso torna muito mais fácil e mais confiáveis para escrever código escrito manualmente e integrá-lo com o gerado partes do software.
 
- Para obter todos os benefícios de geração de código, tente gerar o código do programa, em vez de arquivos de configuração.
+  Para obter todos os benefícios de geração de código, tente gerar o código do programa, em vez de arquivos de configuração.
 
- Use uma pasta de código gerados coloque os modelos e os arquivos gerados em uma pasta de projeto chamada **código gerado pelo**, para torná-lo limpar que esses não são arquivos que devem ser editados diretamente. Se você criar código personalizado para substituir ou adicionar a classes geradas, coloque essas classes em uma pasta denominada **código personalizado**. A estrutura de um projeto típico tem esta aparência:
+  Use uma pasta de código gerados coloque os modelos e os arquivos gerados em uma pasta de projeto chamada **código gerado pelo**, para torná-lo limpar que esses não são arquivos que devem ser editados diretamente. Se você criar código personalizado para substituir ou adicionar a classes geradas, coloque essas classes em uma pasta denominada **código personalizado**. A estrutura de um projeto típico tem esta aparência:
 
 ```
 MyProject
@@ -77,7 +77,6 @@ MyProject
       Class2.tt
           Class2.cs
    AnotherClass.cs
-
 ```
 
 ## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Diretrizes para modelos T4 de tempo de execução (pré-processado)
@@ -116,7 +115,6 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 }
 ...
   string PageToDisplay = new FabrikamTemplate().TextTransform();
-
 ```
 
 ## <a name="guidelines-for-all-t4-templates"></a>Diretrizes para todos os modelos T4

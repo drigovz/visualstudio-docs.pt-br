@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f439a8bb1ae559e915769f8ea89ef7f4bf863
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29273ff1580d7fcb757a979309d38f599a9ff499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945916"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908724"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Especificar eventos de build personalizados no Visual Studio
 
@@ -37,24 +37,24 @@ Os eventos de build seguem a mesma sintaxe dos comandos do DOS, mas é possível
 
  Para obter melhores resultados, siga estas dicas de formatação:
 
--   Adicione uma instrução `call` antes de todos os eventos de build que executam arquivos *.bat*.
+- Adicione uma instrução `call` antes de todos os eventos de build que executam arquivos *.bat*.
 
-     Exemplo: `call C:\MyFile.bat`
+   Exemplo: `call C:\MyFile.bat`
 
-     Exemplo: `call C:\MyFile.bat call C:\MyFile2.bat`
+   Exemplo: `call C:\MyFile.bat call C:\MyFile2.bat`
 
--   Coloque os caminhos de arquivo entre aspas.
+- Coloque os caminhos de arquivo entre aspas.
 
-     Exemplo (para [!INCLUDE[win8](../debugger/includes/win8_md.md)]): “%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe” – se “$(TargetPath)”
+   Exemplo (para [!INCLUDE[win8](../debugger/includes/win8_md.md)]): “%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe” – se “$(TargetPath)”
 
--   Separe vários comandos usando quebras de linha.
+- Separe vários comandos usando quebras de linha.
 
--   Inclua curingas, conforme necessário.
+- Inclua curingas, conforme necessário.
 
-     Exemplo: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
+   Exemplo: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
 
-    > [!NOTE]
-    >  `%I` no código acima deve ser `%%I` em scripts em lote.
+  > [!NOTE]
+  >  `%I` no código acima deve ser `%%I` em scripts em lote.
 
 ## <a name="see-also"></a>Consulte também
 

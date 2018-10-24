@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee77d340eec13c42588511575c6047b5c8f28d16
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 8d5bb2d554ee67a4a2c83decba017e9a1f0fe1e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813896"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Como coletar dados do contador de CPU
 
@@ -31,9 +31,9 @@ Dois tipos de eventos do contador de CPU ocorrem:
 
 - Eventos de plataforma – eventos de CPU que estão acoplados a uma CPU específica.
 
- Os eventos portáteis incluem eventos gerais, como Instruções Desativadas e Ciclos Não Interrompidos, eventos de buffer de CPU, eventos de ramificação e eventos de cache L2. Os contadores de evento de plataforma disponíveis são determinados pelo fabricante do processador.
+  Os eventos portáteis incluem eventos gerais, como Instruções Desativadas e Ciclos Não Interrompidos, eventos de buffer de CPU, eventos de ramificação e eventos de cache L2. Os contadores de evento de plataforma disponíveis são determinados pelo fabricante do processador.
 
- Categorias de eventos podem ser compartilhadas entre contadores de plataforma e portáteis. Por exemplo, as seguintes categorias de dados são frequentemente comuns aos dois tipos:
+  Categorias de eventos podem ser compartilhadas entre contadores de plataforma e portáteis. Por exemplo, as seguintes categorias de dados são frequentemente comuns aos dois tipos:
 
 - Eventos de memória.
 
@@ -41,7 +41,7 @@ Dois tipos de eventos do contador de CPU ocorrem:
 
 - Eventos de ramificação.
 
- Colete dados do contador de desempenho de duas formas no criador de perfil:
+  Colete dados do contador de desempenho de duas formas no criador de perfil:
 
 - Colete dados de um ou mais contadores ao analisar por instrumentação.
 

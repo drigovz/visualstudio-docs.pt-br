@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae9d21808ba256612526e24b722717fed365a8b
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 119c896313adb94524417cde73624987dd96e279
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977988"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891824"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Atalhos de teclado no Blend
+
 ## <a name="project-shortcuts"></a>Atalhos de projeto
 
 |Para fazer isso|Faça isto|
@@ -107,14 +108,14 @@ ms.locfileid: "38977988"
 |Mostrar ou ocultar os limites do objeto|**Ctrl**+**Shift**+**H**|
 |Mudar entre os modos de exibição **Design**, **XAML** e **Dividir**|**F11**|
 
-## <a name="workspace-shortcuts"></a>Atalhos de espaço de trabalho
+## <a name="workspace-shortcuts"></a>Atalhos de workspace
 
 |Para fazer isso|Faça isto|
 |----------------|-------------|
-|Mudar entre os espaços de trabalho **Animação** e **Design**|**Ctrl**+**F11**|
+|Mudar entre os workspaces **Animação** e **Design**|**Ctrl**+**F11**|
 |Exibir ou ocultar o painel **Ativos**|**Ctrl**+**Ponto**|
 |Exibir ou ocultar o painel **Resultados**|**F12**|
 |Mostrar ou ocultar todos os painéis|**F4**|
-|Redefinir o layout do espaço de trabalho ativo|**Ctrl**+**Shift**+**R**|
-|Aplicar movimento panorâmico no espaço de trabalho|Mantenha a **Barra de espaços** pressionada|
+|Redefinir o layout do workspace ativo|**Ctrl**+**Shift**+**R**|
+|Aplicar movimento panorâmico no workspace|Mantenha a **Barra de espaços** pressionada|
 |Usar temporariamente a ferramenta **Seleção** (enquanto uma ferramenta diferente permanece selecionada)|Mantenha a tecla **Ctrl** pressionada|

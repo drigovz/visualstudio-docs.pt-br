@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea9c1739b0f1236deedcea98bcbc96e99abb404
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: ddedc1d46c82c20580575a85db92b2c8049c813e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977826"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908726"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Teclas modificadoras da ferramenta Caneta no Blend
 A tabela a seguir lista os atalhos que você pode usar para modificar um demarcador durante sua criação com a ferramenta **Caneta** ![Pen tool](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). Você também pode usar a ferramenta **Caneta** para adicionar ou remover pontos em um demarcador existente ou para unir dois demarcadores existentes.
 
 |Para realizar esta ação|Faça isto|Ponteiro|
-|-----------------------|-------------|-------------|
+| - |-------------|-------------|
 |Criar um ponto para iniciar um segmento em linha reta|Clique para criar o novo ponto|![Criar um ponto para iniciar um segmento em linha reta](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Ponteiro de caneta|
 |Criar um ponto para iniciar um segmento em linha curva|Clique para criar o novo ponto, e então, arraste para ajustar as alças de tangentes antes de soltar o botão do mouse|![Criar um ponto para iniciar um segmento em linha curva](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Ponteiro de caneta|
 |Ajustar a última tangente sem a restrição suave, permitindo que você faça uma curva fechada|Clique para criar o ponto e, em seguida, pressione **Alt** antes de liberar o botão do mouse|![Ajustar a última tangente sem a restrição suave](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Ponteiro de ajuste da caneta|

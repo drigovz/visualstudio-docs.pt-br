@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c06aa8820635c876c05c6ac73c7de4c3c6581aa2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: feabd8276f65bfe0576a052d0ab8172264a41e35
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944733"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872935"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Gerar um método no Visual Studio
 
@@ -36,24 +36,24 @@ Esta geração de código aplica-se a:
 
    - C#:
 
-    ![Código em C# realçado](media/method-highlight-cs.png)
+       ![Código em C# realçado](media/method-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código em VB realçado](media/method-highlight-vb.png)
+       ![Código em VB realçado](media/method-highlight-vb.png)
 
-1. Depois, siga um destes procedimentos:
+2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
-     - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
-     - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece.
-     - Clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece na margem esquerda se o cursor de texto já estiver na linha com o rabisco vermelho.
+      - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
+      - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece.
+      - Clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece na margem esquerda se o cursor de texto já estiver na linha com o rabisco vermelho.
 
-    ![Visualização de geração do método](media/method-preview-cs.png)
+      ![Visualização de geração do método](media/method-preview-cs.png)
 
-1. Selecione **Gerar método** no menu suspenso.
+3. Selecione **Gerar método** no menu suspenso.
 
    > [!TIP]
    > Use o link **Visualizar alterações** na parte inferior da janela de visualização [para ver todas as alterações](../../ide/preview-changes.md) que serão feitas antes de fazer sua seleção.
@@ -62,11 +62,11 @@ Esta geração de código aplica-se a:
 
    - C#:
 
-      ![Gerar o resultado do método C#](media/method-result-cs.png)
+       ![Gerar o resultado do método C#](media/method-result-cs.png)
 
    - Visual Basic:
 
-      ![Gerar o resultado do método VB](media/method-result-vb.png)
+       ![Gerar o resultado do método VB](media/method-result-vb.png)
 
 ## <a name="see-also"></a>Consulte também
 

@@ -30,12 +30,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8289b44359508d788b43fa155c6f91b58d304138
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d0a6947127fd564eace97c919a425d4a3a3360c4
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916993"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863563"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Classes específicas de cultura para Windows Forms e Web Forms globais
 
@@ -46,7 +46,7 @@ Cada cultura tem diferentes convenções para exibir datas, hora, números, moed
 
 ## <a name="using-the-culture-setting"></a>Usando a configuração de cultura
 
-Use a configuração de cultura armazenada no aplicativo ou no painel de controle **Opções Regionais** para determinar as convenções de cultura no tempo de execução e formatar as informações adequadamente. Para saber mais sobre como configurar a cultura, consulte [Como definir a cultura e a cultura da interface do usuário para globalização de página da Web do ASP.NET](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). As classes que formatam informações automaticamente de acordo com a configuração de cultura são chamadas classes *específicas de cultura*. Alguns métodos específicos de cultura são
+Use a configuração de cultura armazenada no aplicativo ou no painel de controle **Opções Regionais** para determinar as convenções de cultura no tempo de execução e formatar as informações adequadamente. Para saber mais sobre como configurar a cultura, consulte [Como definir a cultura e a cultura da interface do usuário para globalização de página da Web do ASP.NET](https://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). As classes que formatam informações automaticamente de acordo com a configuração de cultura são chamadas classes *específicas de cultura*. Alguns métodos específicos de cultura são
 - <xref:System.IFormattable.ToString%2A?displayProperty=fullName>
 - <xref:System.Console.WriteLine%2A?displayProperty=fullName>
 - <xref:System.String.Format%2A?displayProperty=fullName>

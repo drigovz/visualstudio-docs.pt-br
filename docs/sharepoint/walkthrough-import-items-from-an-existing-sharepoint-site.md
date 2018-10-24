@@ -18,25 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2d9542e14f41722a2f339bfac5c3353dc2e89263
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86256cdecd878c78c34d7128a05eb7b795067701
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635460"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909751"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Passo a passo: Importar itens de um site do SharePoint existente
   Este passo a passo demonstra como importar itens de um site do SharePoint existente para um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto do SharePoint.  
   
  Este passo a passo demonstra as seguintes tarefas:  
   
--   Personalizando um site do SharePoint, adicionando uma coluna de site personalizada (também conhecido como um *campo*.  
+- Personalizando um site do SharePoint, adicionando uma coluna de site personalizada (também conhecido como um *campo*.  
   
--   Exportando um site do SharePoint para um arquivo. wsp.  
+- Exportando um site do SharePoint para um arquivo. wsp.  
   
--   Importar o arquivo. wsp em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint usando o projeto de importação. wsp.  
+- Importar o arquivo. wsp em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint usando o projeto de importação. wsp.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
@@ -50,21 +50,21 @@ ms.locfileid: "42635460"
   
 #### <a name="to-create-and-customize-a-sharepoint-site"></a>Para criar e personalizar um site do SharePoint  
   
-1.  Abrir um site do SharePoint usando um navegador da Web, como http://*nome do sistema*/SitePages/Home.aspx.  
+1. Abrir um site do SharePoint usando um navegador da Web, como http://<em>nome do sistema</em>/SitePages/Home.aspx.  
   
-2.  Criar um subsite fora do site principal do SharePoint, abra o **ações do Site** menu e, em seguida, escolhendo **novo Site**.  
+2. Criar um subsite fora do site principal do SharePoint, abra o **ações do Site** menu e, em seguida, escolhendo **novo Site**.  
   
-3.  No site do **Create** diálogo caixa, escolha o **Site em branco** tipo.  
+3. No site do **Create** diálogo caixa, escolha o **Site em branco** tipo.  
   
-4.  No **Title** , digite **teste 1 da coluna de Site**; na **nome da URL** , digite **columntest1**; deixe as outras configurações no padrão valores; e, em seguida, escolha o **criar** botão.  
+4. No **Title** , digite **teste 1 da coluna de Site**; na **nome da URL** , digite **columntest1**; deixe as outras configurações no padrão valores; e, em seguida, escolha o **criar** botão.  
   
-5.  Depois que o site for criado, navegue no navegador para o site principal, http://*nome do sistema*/SitePages/Home.aspx.  
+5. Depois que o site for criado, navegue no navegador para o site principal, http://<em>nome do sistema</em>/SitePages/Home.aspx.  
   
-6.  Novamente, criar um subsite em branco fora do site principal do SharePoint, abra o **ações do Site** menu, escolhendo **novo Site**e, em seguida, escolhendo o **Site em branco** tipo.  
+6. Novamente, criar um subsite em branco fora do site principal do SharePoint, abra o **ações do Site** menu, escolhendo **novo Site**e, em seguida, escolhendo o **Site em branco** tipo.  
   
-7.  No **Title** , digite **teste 2 de coluna de Site**; na **nome da URL** , digite **columntest2**; deixe as outras configurações no padrão valores; e, em seguida, escolha o **criar** botão.  
+7. No **Title** , digite **teste 2 de coluna de Site**; na **nome da URL** , digite **columntest2**; deixe as outras configurações no padrão valores; e, em seguida, escolha o **criar** botão.  
   
-8.  Navegue de volta para o primeiro subsite, http://*SystemName*/columntest1/default.aspx.  
+8. Navegue de volta para o primeiro subsite, http://<em>SystemName</em>/columntest1/default.aspx.  
   
 9. Sobre o **ações do Site** menu, escolha **configurações de Site** para exibir a página de configurações do Site.  
   
@@ -107,28 +107,28 @@ ms.locfileid: "42635460"
   
 #### <a name="to-import-a-wsp-file"></a>Para importar um arquivo. wsp  
   
-1.  Na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], na barra de menus, escolha **arquivo** > **New** > **projeto** para exibir o **novo projeto**caixa de diálogo. Se o seu IDE for definido para usar configurações de desenvolvimento do Visual Basic, na barra de menus, escolha **arquivo** > **novo projeto**.  
+1. Na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], na barra de menus, escolha **arquivo** > **New** > **projeto** para exibir o **novo projeto**caixa de diálogo. Se o seu IDE for definido para usar configurações de desenvolvimento do Visual Basic, na barra de menus, escolha **arquivo** > **novo projeto**.  
   
-2.  Expanda o **SharePoint** nó em um **Visual c#** ou **Visual Basic**e, em seguida, escolha o **2010** nó.  
+2. Expanda o **SharePoint** nó em um **Visual c#** ou **Visual Basic**e, em seguida, escolha o **2010** nó.  
   
-3.  Escolha o **Importar pacote de solução do SharePoint 2010** modelo na **modelos** painel, deixe o nome do projeto como WspImportProject1 e, em seguida, escolha o **Okey** botão.  
+3. Escolha o **Importar pacote de solução do SharePoint 2010** modelo na **modelos** painel, deixe o nome do projeto como WspImportProject1 e, em seguida, escolha o **Okey** botão.  
   
-     O **Assistente para personalização do SharePoint** é exibida.  
+    O **Assistente para personalização do SharePoint** é exibida.  
   
-4.  Sobre o **especificar o nível de site e segurança para depuração** , insira o [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] para o segundo subsite do SharePoint que você criou anteriormente. Você adicionará o novo personalizado de campo do item, http://*nome do sistema*/columntest2 desse subsite.  
+4. Sobre o **especificar o nível de site e segurança para depuração** , insira o [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] para o segundo subsite do SharePoint que você criou anteriormente. Você adicionará o novo personalizado de campo do item, http://<em>nome do sistema</em>/columntest2 desse subsite.  
   
-5.  No **qual é o nível de confiança para essa solução do SharePoint?** seção, deixe a seleção como **implantar como solução em área restrita**.  
+5. No **qual é o nível de confiança para essa solução do SharePoint?** seção, deixe a seleção como **implantar como solução em área restrita**.  
   
-6.  No **especifique a nova origem do projeto** página, navegue até o local no sistema onde você salvou o *. wsp* arquivo anteriormente e, em seguida, selecione o **próxima** botão.  
+6. No **especifique a nova origem do projeto** página, navegue até o local no sistema onde você salvou o *. wsp* arquivo anteriormente e, em seguida, selecione o **próxima** botão.  
   
-    > [!NOTE]  
-    >  Se você escolher o **terminar** botão nessa página, todos os itens disponíveis na *. wsp* arquivo será importado.  
+   > [!NOTE]  
+   >  Se você escolher o **terminar** botão nessa página, todos os itens disponíveis na *. wsp* arquivo será importado.  
   
-7.  No **selecionar itens para importar** caixa, desmarque todas as caixas de seleção na lista, exceto **coluna teste**e, em seguida, escolha o **concluir** botão.  
+7. No **selecionar itens para importar** caixa, desmarque todas as caixas de seleção na lista, exceto **coluna teste**e, em seguida, escolha o **concluir** botão.  
   
-     Como a lista contiver muitos itens, você pode escolher o **Ctrl**+**um** chaves para escolher todos os itens na lista, escolha a tecla de barra de espaços para desmarcar todas as caixas de seleção e, em seguida, selecione apenas a verificação caixa ao lado de **coluna teste** item.  
+    Como a lista contiver muitos itens, você pode escolher o **Ctrl**+**um** chaves para escolher todos os itens na lista, escolha a tecla de barra de espaços para desmarcar todas as caixas de seleção e, em seguida, selecione apenas a verificação caixa ao lado de **coluna teste** item.  
   
-     Depois que a operação de importação for concluída, um novo projeto chamado **WspImportProject1** é criado que contém uma pasta chamada **campos**. Essa pasta é a coluna de site personalizado **coluna teste** e seu arquivo de definição *Elements. XML*.  
+    Depois que a operação de importação for concluída, um novo projeto chamado **WspImportProject1** é criado que contém uma pasta chamada **campos**. Essa pasta é a coluna de site personalizado **coluna teste** e seu arquivo de definição *Elements. XML*.  
   
 ## <a name="deploy-the-project"></a>Implantar o projeto
  Por fim, implante **WspImportProject1** subsite para a segunda do SharePoint que você criou anteriormente para exibir a coluna de site personalizadas.  

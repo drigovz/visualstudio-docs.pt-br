@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d1a59e3e07120e01fa7757b53b71833a7bc09c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b918ed26e6268adb71cbf500a8499f1eed02c54d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951915"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899325"
 ---
 # <a name="replace-in-files"></a>Substituir nos Arquivos
 
@@ -36,11 +36,11 @@ ms.locfileid: "31951915"
 
 1. No menu **Editar**, expanda **Localizar e Substituir**.
 
-1. Escolha **Substituir nos Arquivos**.
+2. Escolha **Substituir nos Arquivos**.
 
    – ou —
 
-  Se a janela **Localizar e Substituir** ainda estiver aberta, na barra de ferramentas, escolha **Substituir nos Arquivos**.
+   Se a janela **Localizar e Substituir** ainda estiver aberta, na barra de ferramentas, escolha **Substituir nos Arquivos**.
 
 ## <a name="find-what"></a>Localizar
 

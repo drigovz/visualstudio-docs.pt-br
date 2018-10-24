@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: f917486a6b4a539401c8652f70ca95b2e7bc7bc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370972"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843191"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Atalhos de teclado padrão para comandos usados com frequência no Visual Studio
 
@@ -26,7 +26,7 @@ Você pode acessar comandos usados frequentemente no Visual Studio escolhendo es
 ## <a name="build"></a>Build
 
 |Comandos|Atalhos de teclado [Contextos]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Build.BuildSolution|**Ctrl+Shift+B** [Global]|
 |Build.Cancel|**Ctrl+Break** [Global]|
 |Build.Compile|**Ctrl+F7** [Global]|
@@ -35,7 +35,7 @@ Você pode acessar comandos usados frequentemente no Visual Studio escolhendo es
 ## <a name="debug"></a>Depurar
 
 |Comandos|Atalhos de teclado [Contextos]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Debug.BreakatFunction|**Ctrl+B** [Global]|
 |Debug.BreakAll|**Ctrl+Alt+Break** [Global]|
 |Debug.DeleteAllBreakpoints|**Ctrl+Shift+F9** [Global]|
@@ -55,7 +55,7 @@ Você pode acessar comandos usados frequentemente no Visual Studio escolhendo es
 ## <a name="edit"></a>Editar
 
 |Comandos|Atalhos de teclado [Contextos]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Edit.BreakLine|**Enter** [Editor de Texto, Designer de Relatórios, Designer de Formulários do Windows]<br /><br /> ou **Shift+Enter** [Editor de Texto]|
 |Edit.CollapseToDefinitions|**Ctrl+M**, **Ctrl+O** [Editor de Texto]|
 |Edit.CommentSelection|**Ctrl+K**, **Ctrl+C** [Editor de Texto]|
@@ -106,7 +106,7 @@ Você pode acessar comandos usados frequentemente no Visual Studio escolhendo es
 ## <a name="file"></a>Arquivo
 
 |Comandos|Atalhos de teclado [Contextos]|
-|--------------|-------------------------------------|
+|--------------| - |
 |File.Exit|**Alt+F4** [Global]|
 |File.NewFile|**Ctrl+N** [Global]|
 |File.NewProject|**Ctrl+Shift+N** [Global]|
@@ -122,26 +122,26 @@ Você pode acessar comandos usados frequentemente no Visual Studio escolhendo es
 ## <a name="project"></a>Projeto
 
 |Comandos|Atalhos de teclado [Contextos]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Project.AddExistingItem|**Shift+Alt+A** [Global]|
 |Project.AddNewItem|**Ctrl+Shift+A** [Global]|
 
 ## <a name="refactor"></a>Refatoração
 
 |Comando|Atalho de teclado [Contexto]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Refactor.ExtractMethod|**Ctrl+R, Ctrl+M** [Global]|
 
 ## <a name="tools"></a>Ferramentas
 
 |Comando|Atalho de teclado [Contexto]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Tools.AttachtoProcess|**Ctrl+Alt+P** [Global]|
 
 ## <a name="view"></a>Exibir
 
 |Comandos|Atalhos de teclado [Contextos]|
-|--------------|-------------------------------------|
+|--------------| - |
 |View.ClassView|**Ctrl+Shift+C** [Global]|
 |View.EditLabel|**F2** [Global]|
 |View.ErrorList|**Ctrl+\\, Ctrl+E** [Global]<br /><br /> ou **Ctrl+\\, E** [Global]|
@@ -162,7 +162,7 @@ Você pode acessar comandos usados frequentemente no Visual Studio escolhendo es
 ## <a name="window"></a>Janela
 
 |Comandos|Atalhos de teclado [Contextos]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Window.ActivateDocumentWindow|**Esc** [Global]|
 |Window.CloseDocumentWindow|**Ctrl+F4** [Global]|
 |Window.NextDocumentWindow|**Ctrl+F6** [Global]|

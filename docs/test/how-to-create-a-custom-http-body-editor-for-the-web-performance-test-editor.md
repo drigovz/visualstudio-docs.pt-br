@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 338aade9ddef3c4ef571ea2a5bffc67064c81869
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380637"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862457"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Como criar um editor de corpo HTTP personalizado para o Editor de Testes de Desempenho Web
 
@@ -33,31 +33,31 @@ Essas interfaces estão contidas no namespace <xref:Microsoft.VisualStudio.TestT
 
 ### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>Crie um controle de usuário usando um projeto de Biblioteca de Controle do Windows
 
-1.  No Visual Studio, no menu **Arquivo**, escolha **Novo** e selecione **Projeto**.
+1. No Visual Studio, no menu **Arquivo**, escolha **Novo** e selecione **Projeto**.
 
-     A caixa de diálogo **Novo Projeto** é exibida.
+    A caixa de diálogo **Novo Projeto** é exibida.
 
-2.  Em **Modelos Instalados**, selecione **Visual Basic** ou **Visual C#** dependendo de sua preferência de programação e, em seguida, selecione **Windows**.
+2. Em **Modelos Instalados**, selecione **Visual Basic** ou **Visual C#** dependendo de sua preferência de programação e, em seguida, selecione **Windows**.
 
-    > [!NOTE]
-    > Este exemplo usa o Visual C#.
+   > [!NOTE]
+   > Este exemplo usa o Visual C#.
 
-3.  Na lista de modelos, selecione **Biblioteca de Controle do Windows Forms**.
+3. Na lista de modelos, selecione **Biblioteca de Controle do Windows Forms**.
 
-4.  Na caixa de texto **Nome**, digite um nome, por exemplo, `MessageEditors`, e escolha **OK**.
+4. Na caixa de texto **Nome**, digite um nome, por exemplo, `MessageEditors`, e escolha **OK**.
 
-    > [!NOTE]
-    > Este exemplo usa MessageEditors.
+   > [!NOTE]
+   > Este exemplo usa MessageEditors.
 
-     O projeto é adicionado à nova solução e um <xref:System.Windows.Forms.UserControl> chamado *UserControl1.cs* é apresentado no Designer.
+    O projeto é adicionado à nova solução e um <xref:System.Windows.Forms.UserControl> chamado *UserControl1.cs* é apresentado no Designer.
 
-5.  Da **Caixa de Ferramentas**, na categoria **Controles Comuns**, arraste uma <xref:System.Windows.Forms.RichTextBox> para a superfície de UserControl1.
+5. Da **Caixa de Ferramentas**, na categoria **Controles Comuns**, arraste uma <xref:System.Windows.Forms.RichTextBox> para a superfície de UserControl1.
 
-6.  Escolha o glifo de marcação de ação (![Glifo de Marcação Inteligente](../test/media/vs_winformsmttagglyph.gif)) no canto superior direito do controle <xref:System.Windows.Forms.RichTextBox> e, em seguida, selecione **Encaixar no Contêiner Pai**.
+6. Escolha o glifo de marcação de ação (![Glifo de Marcação Inteligente](../test/media/vs_winformsmttagglyph.gif)) no canto superior direito do controle <xref:System.Windows.Forms.RichTextBox> e, em seguida, selecione **Encaixar no Contêiner Pai**.
 
-7.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto da Biblioteca do Windows Forms e selecione **Propriedades**.
+7. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto da Biblioteca do Windows Forms e selecione **Propriedades**.
 
-8.  Em **Propriedades**, selecione a guia **Aplicativo**.
+8. Em **Propriedades**, selecione a guia **Aplicativo**.
 
 9. Na lista suspensa **Estrutura de destino**, selecione **.NET Framework 4**.
 
@@ -95,9 +95,9 @@ Essas interfaces estão contidas no namespace <xref:Microsoft.VisualStudio.TestT
 
 18. Adicione as seguintes propriedades para que seja possível obter e definir o texto em RichTextBox1. A interface de <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> usará EditString e <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> usará EditByteArray:
 
-   ```csharp
-   public String EditString
-   {
+    ```csharp
+    public String EditString
+    {
        get
        {
            return this.richTextBox1.Text;
@@ -106,10 +106,10 @@ Essas interfaces estão contidas no namespace <xref:Microsoft.VisualStudio.TestT
        {
            this.richTextBox1.Text = value;
        }
-   }
+    }
 
-   public byte[] EditByteArray
-   {
+    public byte[] EditByteArray
+    {
        get
        {
            return System.Convert.FromBase64String(richTextBox1.Text);
@@ -118,8 +118,8 @@ Essas interfaces estão contidas no namespace <xref:Microsoft.VisualStudio.TestT
        {
            richTextBox1.Text = System.Convert.ToBase64String(value, 0, value.Length);
        }
-   }
-   ```
+    }
+    ```
 
 ## <a name="add-a-class-to-the-windows-control-library-project"></a>Adicionar uma classe ao projeto da Biblioteca de Controles do Windows
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d2ee44fd277766cb206f3e1e71ed52be6d406a08
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b7d7592d1bdbce0a5a80b304a89c7eaa28875502
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381062"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816041"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Como criar uma configuração de teste para um teste de carga distribuída
 
@@ -124,7 +124,7 @@ Siga estas etapas para criar e remover configurações de teste em sua solução
      **Adaptadores de dados de diagnóstico para testes de carga**
 
     |Adaptador de dados de diagnóstico|Usado em testes de carga|Tópico associado|
-    |-----------------------------|-------------------------|----------------------|
+    |-|-------------------------|-|
     |**Proxy de Cliente do ASP.NET para IntelliTrace e Impacto de Teste:** esse proxy permite que você colete informações sobre as chamadas HTTP de um cliente para um servidor Web para os adaptadores de dados de diagnóstico do IntelliTrace e de Impacto de Teste.|![Ícone de informações](../test/media/vc364f4.gif)<br /><br /> A menos que você tenha uma necessidade específica de coletar informações do sistema para os computadores do agente de teste, não inclua este adaptador. **Cuidado:** não recomendamos o uso do adaptador IntelliTrace em testes de carga devido a problemas que ocorrem devido à grande quantidade de dados que são coletados. <br /><br /> Os dados do impacto de teste não são coletados usando testes de carga.||
     |**IntelliTrace:** você pode configurar informações de rastreamento de diagnóstico específicas armazenadas em um arquivo de log. Um arquivo de log tem uma extensão *.tdlog*. Ao executar o teste e uma etapa falhar, você pode criar um bug. O arquivo de log que contém o rastreamento de diagnóstico que é anexado automaticamente a este bug. Os dados coletados no arquivo do log aumentam a produtividade de depuração reduzindo o tempo necessário para reproduzir e diagnosticar um erro no código. Deste arquivo de log, a sessão local pode ser recriada em outro computador. Isso reduz o risco de um bug não poder ser reproduzido.<br /><br /> Para obter mais informações, consulte [Coletar dados do IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Ícone de importante](../test/media/vc364f3.gif)<br /><br /> Não recomendamos o uso do adaptador IntelliTrace em testes de carga devido a problemas que ocorrem devido à grande quantidade de dados que são coletados e registrados em log. Você deve tentar usar o adaptador de IntelliTrace somente em testes de carga que não são executados por muito tempo e não usam vários agentes de teste.|[Como coletar dados do IntelliTrace para ajudar a depurar problemas difíceis](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |**Criador de Perfil do ASP.NET:** você pode criar uma configuração de teste que inclui a criação de perfis do ASP.NET, que coleta dados de desempenho em aplicações Web ASP.NET.|O adaptador de dados de diagnóstico do criador de perfis do ASP.NET cria perfis do processo do IIS (Serviços de Informações da Internet), portanto ele não funcionará em um servidor Web de desenvolvimento. Para analisar o site no teste de carga, você precisa instalar um agente de teste no computador em que o IIS está sendo executado. O agente de teste não estará gerando carga, mas será um agente de coleção somente. Para obter mais informações, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).|[Como configurar o criador de perfil do ASP.NET para carregar testes usando as configurações de teste](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
