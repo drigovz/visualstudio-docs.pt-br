@@ -26,12 +26,12 @@ caps.latest.revision: 104
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2896d88ee5730482aeca737f89e5b5340070be7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9ba8f8be0d078856833b807f5d0f6ca29f346c22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225472"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873923"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Guia de início rápido: depurar HTML e CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,23 +44,23 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
  Neste tópico:  
   
--   [Inspecionando o DOM ativo](#InspectingDOM)  
+- [Inspecionando o DOM ativo](#InspectingDOM)  
   
--   [Selecionando elementos](#SelectingElements)  
+- [Selecionando elementos](#SelectingElements)  
   
- Para obter informações adicionais sobre o uso do Explorador do DOM, veja os tópicos a seguir:  
+  Para obter informações adicionais sobre o uso do Explorador do DOM, veja os tópicos a seguir:  
   
--   [Depurar estilos CSS com o Explorador do DOM](../debugger/debug-css-styles-using-dom-explorer.md)  
+- [Depurar estilos CSS com o Explorador do DOM](../debugger/debug-css-styles-using-dom-explorer.md)  
   
--   [Depurar o layout usando o Explorador do DOM](../debugger/debug-layout-using-dom-explorer.md)  
+- [Depurar o layout usando o Explorador do DOM](../debugger/debug-layout-using-dom-explorer.md)  
   
--   [Exibir ouvintes de eventos DOM](../debugger/view-dom-event-listeners.md)  
+- [Exibir ouvintes de eventos DOM](../debugger/view-dom-event-listeners.md)  
   
--   [Atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md)  
+- [Atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md)  
   
--   [Depurar um controle WebView](../debugger/debug-a-webview-control.md)  
+- [Depurar um controle WebView](../debugger/debug-a-webview-control.md)  
   
- Para obter informações sobre outro recursos, como usando a janela do Console do JavaScript e configuração de pontos de interrupção, de depuração de JavaScript, consulte [guia de início rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [depuração de aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+  Para obter informações sobre outro recursos, como usando a janela do Console do JavaScript e configuração de pontos de interrupção, de depuração de JavaScript, consulte [guia de início rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [depuração de aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InspectingDOM"></a> Inspecionando o DOM ativo  
  O Explorador de DOMs mostra a página renderizada, e você pode usá-lo para alterar valores e imediatamente ver os resultados. Isso permite que você teste as mudanças sem parar e reiniciar o depurador. O código-fonte em seu projeto não muda quando você interage com a página usando esse método; então, quando você encontra as correções de código desejadas, você faz as mudanças no seu código-fonte.  
@@ -70,13 +70,13 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
  Você pode usar o Explorador de DOMs para:  
   
--   Navegue pela subárvore de elementos do DOM e inspecione o código HTML, CSS e JavaScript renderizado.  
+- Navegue pela subárvore de elementos do DOM e inspecione o código HTML, CSS e JavaScript renderizado.  
   
--   Edite de forma dinâmica atributos e estilos CSS de elementos renderizados e veja os resultados imediatamente.  
+- Edite de forma dinâmica atributos e estilos CSS de elementos renderizados e veja os resultados imediatamente.  
   
--   Inspecione como os estilos CSS foram aplicados aos elementos da página e rastreie as regras que foram aplicadas.  
+- Inspecione como os estilos CSS foram aplicados aos elementos da página e rastreie as regras que foram aplicadas.  
   
- Ao depurar aplicativos, muitas vezes é preciso selecionar elementos no Explorador de DOMs. Quando você seleciona um elemento, os valores que aparecem nas guias à direita do Explorador do DOM são automaticamente atualizados para refletir o elemento selecionado no Explorador do DOM. Estas são as guias: **estilos**, **calculado**, **Layout**. Aplicativos da Windows Store também dão suporte a **eventos** e **alterações** guias. Para obter mais informações sobre como selecionar elementos, consulte [selecionar elementos](#SelectingElements).  
+  Ao depurar aplicativos, muitas vezes é preciso selecionar elementos no Explorador de DOMs. Quando você seleciona um elemento, os valores que aparecem nas guias à direita do Explorador do DOM são automaticamente atualizados para refletir o elemento selecionado no Explorador do DOM. Estas são as guias: **estilos**, **calculado**, **Layout**. Aplicativos da Windows Store também dão suporte a **eventos** e **alterações** guias. Para obter mais informações sobre como selecionar elementos, consulte [selecionar elementos](#SelectingElements).  
   
 > [!TIP]
 >  Se a janela Explorador do DOM estiver fechada, escolha **Debug**>**Windows** > **Explorador do DOM** para abri-la novamente. A janela só aparece durante uma sessão de depuração de script.  
@@ -88,100 +88,100 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Para depurar inspecionando o DOM ativo  
   
-1.  Crie uma nova solução no Visual Studio escolhendo **arquivo** > **novo projeto**.  
+1. Crie uma nova solução no Visual Studio escolhendo **arquivo** > **novo projeto**.  
   
-2.  Escolher **JavaScript** > **Store**, escolha **aplicativos Windows** ou **aplicativos do Windows Phone**e, em seguida, escolha  **Aplicativo em branco**.  
+2. Escolher **JavaScript** > **Store**, escolha **aplicativos Windows** ou **aplicativos do Windows Phone**e, em seguida, escolha  **Aplicativo em branco**.  
   
-3.  Digite um nome para o projeto, como `FlipViewApp`e escolha **Okey** para criar o aplicativo.  
+3. Digite um nome para o projeto, como `FlipViewApp`e escolha **Okey** para criar o aplicativo.  
   
-4.  No elemento BODY de default.html, adicione este código:  
+4. No elemento BODY de default.html, adicione este código:  
   
-    ```html  
-    <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
-             style="display:none">  
-        <div class="fixedItem" >  
-            <img src="#" data-win-bind="src: flipImg" />  
-        </div>  
-    </div>  
-    <div id="fView" style="width:100px;height:100px"  
-        data-win-control="WinJS.UI.FlipView" data-win-options="{  
-        itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
-    </div>  
-    ```  
+   ```html  
+   <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
+            style="display:none">  
+       <div class="fixedItem" >  
+           <img src="#" data-win-bind="src: flipImg" />  
+       </div>  
+   </div>  
+   <div id="fView" style="width:100px;height:100px"  
+       data-win-control="WinJS.UI.FlipView" data-win-options="{  
+       itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
+   </div>  
+   ```  
   
-5.  Abra os arquivos default.css e adicione o seguinte CSS:  
+5. Abra os arquivos default.css e adicione o seguinte CSS:  
   
-    ```css  
-    #fView {  
-        background-color:#0094ff;  
-        height: 100%;  
-        width: 100%;  
-        margin: 25%;  
-    }  
-    ```  
+   ```css  
+   #fView {  
+       background-color:#0094ff;  
+       height: 100%;  
+       width: 100%;  
+       margin: 25%;  
+   }  
+   ```  
   
-6.  Substitua o código em default.js por este código:  
+6. Substitua o código em default.js por este código:  
   
-    ```javascript  
-    (function () {  
-        "use strict";  
+   ```javascript  
+   (function () {  
+       "use strict";  
   
-        var app = WinJS.Application;  
-        var activation = Windows.ApplicationModel.Activation;  
+       var app = WinJS.Application;  
+       var activation = Windows.ApplicationModel.Activation;  
   
-        var myData = [];  
-        for (var x = 0; x < 4; x++) {  
-            myData[x] = { flipImg: "/images/logo.png" }  
-        };  
+       var myData = [];  
+       for (var x = 0; x < 4; x++) {  
+           myData[x] = { flipImg: "/images/logo.png" }  
+       };  
   
-        var pages = new WinJS.Binding.List(myData, { proxy: true });  
+       var pages = new WinJS.Binding.List(myData, { proxy: true });  
   
-        app.onactivated = function (args) {  
-            if (args.detail.kind === activation.ActivationKind.launch) {  
-                if (args.detail.previousExecutionState !==  
-                activation.ApplicationExecutionState.terminated) {  
-                    // TODO: . . .  
-                } else {  
-                    // TODO: . . .  
-                }  
-                args.setPromise(WinJS.UI.processAll());  
+       app.onactivated = function (args) {  
+           if (args.detail.kind === activation.ActivationKind.launch) {  
+               if (args.detail.previousExecutionState !==  
+               activation.ApplicationExecutionState.terminated) {  
+                   // TODO: . . .  
+               } else {  
+                   // TODO: . . .  
+               }  
+               args.setPromise(WinJS.UI.processAll());  
   
-                updateImages();  
-            }  
-        };  
+               updateImages();  
+           }  
+       };  
   
-        function updateImages() {  
+       function updateImages() {  
   
-            pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
-        };  
+           pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
+           pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
+           pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+       };  
   
-        app.oncheckpoint = function (args) {  
-        };  
+       app.oncheckpoint = function (args) {  
+       };  
   
-        app.start();  
+       app.start();  
   
-        var publicMembers = {  
-            items: pages  
-        };  
+       var publicMembers = {  
+           items: pages  
+       };  
   
-        WinJS.Namespace.define("Data", publicMembers);  
+       WinJS.Namespace.define("Data", publicMembers);  
   
-    })();  
-    ```  
+   })();  
+   ```  
   
-     A ilustração a seguir mostra o que queremos ver se executarmos esse aplicativo no Emulador do Windows Phone (é similar no simulador). No entanto, para colocar o aplicativo nesse estado, teremos de corrigir uma série de bugs primeiro.  
+    A ilustração a seguir mostra o que queremos ver se executarmos esse aplicativo no Emulador do Windows Phone (é similar no simulador). No entanto, para colocar o aplicativo nesse estado, teremos de corrigir uma série de bugs primeiro.  
   
-     ![Aplicativo FlipView mostrando os resultados esperados](../debugger/media/js-dom-appfixed.png "JS_DOM_AppFixed")  
+    ![Aplicativo FlipView mostrando os resultados esperados](../debugger/media/js-dom-appfixed.png "JS_DOM_AppFixed")  
   
-7.  Escolha **simulador** ou **Emulator 8.1 WVGA 4 inch 512MB** na lista suspensa lista ao lado de **iniciar depuração** botão o **depurar**barra de ferramentas:  
+7. Escolha **simulador** ou **Emulator 8.1 WVGA 4 inch 512MB** na lista suspensa lista ao lado de **iniciar depuração** botão o **depurar**barra de ferramentas:  
   
-     ![Lista de destino de depuração Select](../debugger/media/js-select-target.png "JS_Select_Target")  
+    ![Lista de destino de depuração Select](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-8.  Escolher **Debug** > **iniciar depuração**, ou pressione F5 para executar seu aplicativo no modo de depuração.  
+8. Escolher **Debug** > **iniciar depuração**, ou pressione F5 para executar seu aplicativo no modo de depuração.  
   
-     Isso executará o aplicativo no Simulador ou no Emulador do Windows Phone, mas você verá uma tela basicamente em branco porque o estilo contém alguns bugs. Uma primeira imagem `FlipView` aparecerá em um pequeno quadrado próximo ao meio da tela.  
+    Isso executará o aplicativo no Simulador ou no Emulador do Windows Phone, mas você verá uma tela basicamente em branco porque o estilo contém alguns bugs. Uma primeira imagem `FlipView` aparecerá em um pequeno quadrado próximo ao meio da tela.  
   
 9. Se você estiver executando o aplicativo no simulador, escolha o **alterar resolução** comando da barra de ferramentas à direita do simulador para configurar uma resolução de tela de 1280 x 800. Isso irá garantir que os valores mostrados nas tabelas a seguir correspondem ao que você vê no Simulador.  
   
@@ -234,15 +234,15 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
      No **Layout** guia, você verá os seguintes valores:  
   
-    -   No caso do Simulador: 320 px (Deslocamento) e 320 px (Margem).  
+    - No caso do Simulador: 320 px (Deslocamento) e 320 px (Margem).  
   
-    -   No caso do Emulador do Windows Phone: 100 px (Deslocamento) e 100 px (Margem).  
+    - No caso do Emulador do Windows Phone: 100 px (Deslocamento) e 100 px (Margem).  
   
-     A ilustração a seguir mostra como o **Layout** aparência da guia se você estiver usando o emulador de telefone (100 px deslocamento e margem).  
+      A ilustração a seguir mostra como o **Layout** aparência da guia se você estiver usando o emulador de telefone (100 px deslocamento e margem).  
   
-     ![Guia Layout do Gerenciador de DOM](../debugger/media/js-dom-explorer-layout.png "JS_DOM_Explorer_Layout")  
+      ![Guia Layout do Gerenciador de DOM](../debugger/media/js-dom-explorer-layout.png "JS_DOM_Explorer_Layout")  
   
-     Isso não parece estar correto. O **computado** guia também mostra os mesmos valores de margem.  
+      Isso não parece estar correto. O **computado** guia também mostra os mesmos valores de margem.  
   
 21. Escolha o **estilos** guia e localize o `#fView` seletor de CSS. Aqui, você verá um valor de 25% para o **margem** propriedade.  
   
@@ -267,23 +267,23 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 ##  <a name="SelectingElements"></a> Selecionando elementos  
  Você pode selecionar elementos DOM de três maneiras ao depurar um aplicativo:  
   
--   Clicando diretamente nos elementos na janela Explorador de DOMs (ou usando as teclas de direção).  
+- Clicando diretamente nos elementos na janela Explorador de DOMs (ou usando as teclas de direção).  
   
--   Usando o **selecionar elemento** botão (Ctrl + B).  
+- Usando o **selecionar elemento** botão (Ctrl + B).  
   
--   Usando o `select` comando, que é um da [comandos do JavaScript Console](../debugger/javascript-console-commands.md).  
+- Usando o `select` comando, que é um da [comandos do JavaScript Console](../debugger/javascript-console-commands.md).  
   
- Quando você usa a janela Explorador de DOMs para selecionar elementos e posiciona o ponteiro do mouse em um elemento, o elemento correspondente é realçado no aplicativo em execução. Você deve clicar no elemento, no Explorador do DOM para selecioná-lo, ou você pode usar as teclas de direção para realçar e selecionar elementos. Você também pode selecionar elementos no Explorador do DOM usando o **elemento Select** botão. A ilustração a seguir mostra a **selecionar elemento** botão.  
+  Quando você usa a janela Explorador de DOMs para selecionar elementos e posiciona o ponteiro do mouse em um elemento, o elemento correspondente é realçado no aplicativo em execução. Você deve clicar no elemento, no Explorador do DOM para selecioná-lo, ou você pode usar as teclas de direção para realçar e selecionar elementos. Você também pode selecionar elementos no Explorador do DOM usando o **elemento Select** botão. A ilustração a seguir mostra a **selecionar elemento** botão.  
   
- ![Selecione o botão de elemento no Explorador do DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
+  ![Selecione o botão de elemento no Explorador do DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
- Quando você clica em **elemento Select** (ou pressione Ctrl + B), isso altera o modo de seleção para que você pode selecionar um item no Explorador do DOM clicando no aplicativo em execução. O modo retorna à seleção normal após um único clique. Quando você clica em **elemento Select**, o aplicativo vem em primeiro plano e o cursor muda para refletir o novo modo de seleção. Quando você clica no elemento com o contorno, o Explorador de DOMs volta para o primeiro plano com o elemento especificado selecionado.  
+  Quando você clica em **elemento Select** (ou pressione Ctrl + B), isso altera o modo de seleção para que você pode selecionar um item no Explorador do DOM clicando no aplicativo em execução. O modo retorna à seleção normal após um único clique. Quando você clica em **elemento Select**, o aplicativo vem em primeiro plano e o cursor muda para refletir o novo modo de seleção. Quando você clica no elemento com o contorno, o Explorador de DOMs volta para o primeiro plano com o elemento especificado selecionado.  
   
- Antes de escolher **elemento Select**, você pode especificar se deseja realçar os elementos no aplicativo em execução ativando/desativando o **Exibir realces de página da web** botão. A ilustração a seguir mostra esse botão. Os realces são exibidos por padrão.  
+  Antes de escolher **elemento Select**, você pode especificar se deseja realçar os elementos no aplicativo em execução ativando/desativando o **Exibir realces de página da web** botão. A ilustração a seguir mostra esse botão. Os realces são exibidos por padrão.  
   
- ![Exibir página da web realça o botão](../debugger/media/js-dom-display-highlights-button.png "JS_DOM_Display_Highlights_Button")  
+  ![Exibir página da web realça o botão](../debugger/media/js-dom-display-highlights-button.png "JS_DOM_Display_Highlights_Button")  
   
- Quando você escolhe realçar os elementos, os elementos que você focalizar no Simulador são realçados. As cores dos elementos realçados correspondem ao modelo de caixa que aparece na **Layout** guia do Explorador do DOM.  
+  Quando você escolhe realçar os elementos, os elementos que você focalizar no Simulador são realçados. As cores dos elementos realçados correspondem ao modelo de caixa que aparece na **Layout** guia do Explorador do DOM.  
   
 > [!NOTE]
 >  Realçar elementos ao focalizá-los só tem suporte parcial no Emulador do Windows Phone.  
@@ -293,13 +293,13 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 ##  <a name="BrowserSupport"></a> Suporte de plataforma e navegador  
  As ferramentas do Visual Studio para JavaScript, o Explorador do DOM e a janela Console do JavaScript são suportadas nas seguintes plataformas:  
   
--   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] e aplicativos da Windows Phone Store que usam JavaScript e HTML  
+- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] e aplicativos da Windows Phone Store que usam JavaScript e HTML  
   
--   Internet Explorer 11 em execução no [!INCLUDE[win81](../includes/win81-md.md)]  
+- Internet Explorer 11 em execução no [!INCLUDE[win81](../includes/win81-md.md)]  
   
--   Internet Explorer 10 em execução no [!INCLUDE[win8](../includes/win8-md.md)]  
+- Internet Explorer 10 em execução no [!INCLUDE[win8](../includes/win8-md.md)]  
   
- Vá [aqui](http://go.microsoft.com/fwlink/?LinkID=232448) para baixar [!INCLUDE[win8](../includes/win8-md.md)] e o Visual Studio.  
+  Vá [aqui](http://go.microsoft.com/fwlink/?LinkID=232448) para baixar [!INCLUDE[win8](../includes/win8-md.md)] e o Visual Studio.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   

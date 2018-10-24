@@ -17,12 +17,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f97202daa4626f0060a53781f609382bf082c17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa1ffdc982fa3f9773770957a0dbb177ad3d4156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872441"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Como os VSPackages adicionam elementos da interface do usuário
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,15 +94,15 @@ Um VSPackage pode adicionar elementos interface do usuário (IU), por exemplo, m
 #### <a name="menus"></a>Menus  
  Cada menu é definida como uma [elemento Menu](../../extensibility/menu-element.md) no `Menus` seção. Menus devem ter `guid`, `id`, e `priority` atributos e um `Parent` elemento e também os seguintes atributos adicionais e filhos:  
   
--   Um `type` atributo que especifica se o menu deve aparecer no IDE, como um tipo de menu ou uma barra de ferramentas.  
+- Um `type` atributo que especifica se o menu deve aparecer no IDE, como um tipo de menu ou uma barra de ferramentas.  
   
--   Um [elemento Strings](../../extensibility/strings-element.md) que contém uma [elemento ButtonText](../../extensibility/buttontext-element.md), que especifica o título de menu no IDE e uma [elemento CommandName](../../extensibility/commandname-element.md), que especifica o nome que é usado na **comando** janela para acessar o menu.  
+- Um [elemento Strings](../../extensibility/strings-element.md) que contém uma [elemento ButtonText](../../extensibility/buttontext-element.md), que especifica o título de menu no IDE e uma [elemento CommandName](../../extensibility/commandname-element.md), que especifica o nome que é usado na **comando** janela para acessar o menu.  
   
--   Sinalizadores opcionais. Um [elemento Command Flag](../../extensibility/command-flag-element.md) pode aparecer em uma definição de menu para alterar sua aparência ou comportamento no IDE.  
+- Sinalizadores opcionais. Um [elemento Command Flag](../../extensibility/command-flag-element.md) pode aparecer em uma definição de menu para alterar sua aparência ou comportamento no IDE.  
   
- Cada `Menu` elemento deve ter um grupo como pai, a menos que ele seja um elemento encaixável como uma barra de ferramentas. Um menu encaixável é seu próprio pai. Para obter mais informações sobre menus e valores para o `type` atributo, consulte a [elemento Menu](../../extensibility/menu-element.md) documentação.  
+  Cada `Menu` elemento deve ter um grupo como pai, a menos que ele seja um elemento encaixável como uma barra de ferramentas. Um menu encaixável é seu próprio pai. Para obter mais informações sobre menus e valores para o `type` atributo, consulte a [elemento Menu](../../extensibility/menu-element.md) documentação.  
   
- O exemplo a seguir mostra um menu que aparece na barra de menus do Visual Studio, ao lado de **ferramentas** menu.  
+  O exemplo a seguir mostra um menu que aparece na barra de menus do Visual Studio, ao lado de **ferramentas** menu.  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -163,11 +163,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Combos  
  Combos são definidos na `Combos` seção. Cada `Combo` elemento representa uma caixa de lista suspensa no IDE. A caixa de listagem pode ou não ser gravável por usuários, dependendo do valor da `type` atributo da caixa de combinação. Combos têm os mesmos elementos e o comportamento que os botões e também pode ter os seguintes atributos adicionais:  
   
--   Um `defaultWidth` atributo que especifica a largura em pixels.  
+- Um `defaultWidth` atributo que especifica a largura em pixels.  
   
--   Um `idCommandList` atributo que especifica uma lista que contém os itens que são exibidos na caixa de listagem. A lista de comandos deve ser declarada no mesmo `GuidSymbol` nó que contém a caixa de combinação.  
+- Um `idCommandList` atributo que especifica uma lista que contém os itens que são exibidos na caixa de listagem. A lista de comandos deve ser declarada no mesmo `GuidSymbol` nó que contém a caixa de combinação.  
   
- O exemplo a seguir define um elemento de caixa de combinação.  
+  O exemplo a seguir define um elemento de caixa de combinação.  
   
 ```xml  
 <Combos>  

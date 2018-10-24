@@ -13,12 +13,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 304b01564f067206a8995662a4f3711cf041116b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 705604153a0f24eb7ae6b2ff5924a600ddbff54e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202885"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872974"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Estendendo testes de IU codificado e gravações da ação para dar suporte ao Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ A estrutura de teste para testes de IU codificados e gravações da ação não 
   
  **Requisitos**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
- Esta seção apresenta uma extensão de teste de IU codificado que pode gravar e reproduzir testes de planilhas do Excel. Cada parte da extensão é explicada nesta seção e nos comentários do código para desenvolvedores que desejam criar uma extensão desse tipo.  
+  Esta seção apresenta uma extensão de teste de IU codificado que pode gravar e reproduzir testes de planilhas do Excel. Cada parte da extensão é explicada nesta seção e nos comentários do código para desenvolvedores que desejam criar uma extensão desse tipo.  
   
- ![Arquitetura de teste de interface do usuário](../test/media/ui-testarch.png "UI_TestArch")  
-Visão geral da arquitetura  
+  ![Arquitetura de teste de interface do usuário](../test/media/ui-testarch.png "UI_TestArch")  
+  Visão geral da arquitetura  
   
 ## <a name="download-the-sample"></a>Baixar a amostra  
  A amostra consiste de quatro projetos na solução `CodedUIExtensibilitySample.sln`:  
   
--   CodedUIextensibilitySample  
+- CodedUIextensibilitySample  
   
--   ExcelCodedUIAddInHelper  
+- ExcelCodedUIAddInHelper  
   
--   ExcelUICommunicationHelper  
+- ExcelUICommunicationHelper  
   
--   SampleTestProject  
+- SampleTestProject  
   
- Obtenha a amostra desta [postagem de blog](http://go.microsoft.com/fwlink/?LinkID=185592).  
+  Obtenha a amostra desta [postagem de blog](http://go.microsoft.com/fwlink/?LinkID=185592).  
   
 > [!NOTE]
 >  A amostra é destinada para uso com o Microsoft Excel 2010. A amostra pode funcionar com outras versões do Microsoft Excel, mas isso não tem suporte atualmente.  
