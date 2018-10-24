@@ -16,33 +16,33 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5e420adb00bc8972aead555eb281826db689914
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60ad2462d5b5331401384f528c7baf93d91851df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844603"
 ---
 # <a name="introducing-spy"></a>Introdução a Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Spy + + permite que você execute as seguintes tarefas:  
   
--   Exiba um gráfico de árvore de relações entre os objetos do sistema. Eles incluem [processos](../debugger/processes-view.md), [threads](../debugger/threads-view.md), e [windows](../debugger/windows-view.md).  
+- Exiba um gráfico de árvore de relações entre os objetos do sistema. Eles incluem [processos](../debugger/processes-view.md), [threads](../debugger/threads-view.md), e [windows](../debugger/windows-view.md).  
   
--   Pesquisar para especificado [windows](../debugger/how-to-search-for-a-window-in-windows-view.md), [threads](../debugger/how-to-search-for-a-thread-in-threads-view.md), [processos](../debugger/how-to-search-for-a-process-in-processes-view.md), ou [mensagens](../debugger/how-to-search-for-a-message-in-messages-view.md).  
+- Pesquisar para especificado [windows](../debugger/how-to-search-for-a-window-in-windows-view.md), [threads](../debugger/how-to-search-for-a-thread-in-threads-view.md), [processos](../debugger/how-to-search-for-a-process-in-processes-view.md), ou [mensagens](../debugger/how-to-search-for-a-message-in-messages-view.md).  
   
--   Exibir as propriedades de selecionado [windows](../debugger/how-to-display-window-properties.md), [threads](../debugger/how-to-display-thread-properties.md), [processos](../debugger/how-to-display-process-properties.md), ou [mensagens](../debugger/how-to-display-message-properties.md).  
+- Exibir as propriedades de selecionado [windows](../debugger/how-to-display-window-properties.md), [threads](../debugger/how-to-display-thread-properties.md), [processos](../debugger/how-to-display-process-properties.md), ou [mensagens](../debugger/how-to-display-message-properties.md).  
   
--   Selecione uma janela, o thread, o processo ou a mensagem diretamente no modo de exibição.  
+- Selecione uma janela, o thread, o processo ou a mensagem diretamente no modo de exibição.  
   
--   Use o [ferramenta Descobridora](../debugger/how-to-use-the-finder-tool.md) para selecionar uma janela, o posicionamento do ponteiro do mouse.  
+- Use o [ferramenta Descobridora](../debugger/how-to-use-the-finder-tool.md) para selecionar uma janela, o posicionamento do ponteiro do mouse.  
   
--   Definir **opções de mensagem** usando parâmetros de seleção de log de mensagens complexos.  
+- Definir **opções de mensagem** usando parâmetros de seleção de log de mensagens complexos.  
   
- Spy + + tem uma barra de ferramentas e hiperlinks para ajudar você a trabalhar com mais rapidez. Também fornece um **Refresh** comando para atualizar a exibição ativa, um **ferramenta Descobridora de janelas** para tornar a espionagem e um **fonte** caixa de diálogo para personalizar o windows de modo de exibição. Além disso, Spy + + permite salvar e restaurar as preferências do usuário.  
+  Spy + + tem uma barra de ferramentas e hiperlinks para ajudar você a trabalhar com mais rapidez. Também fornece um **Refresh** comando para atualizar a exibição ativa, um **ferramenta Descobridora de janelas** para tornar a espionagem e um **fonte** caixa de diálogo para personalizar o windows de modo de exibição. Além disso, Spy + + permite salvar e restaurar as preferências do usuário.  
   
- Em várias janelas Spy + +, você pode clique com botão direito para exibir um menu de atalho de comandos usados com frequência. Quais comandos são exibidos depende de onde é o ponteiro. Por exemplo, se o botão direito do mouse uma entrada na exibição da janela e a janela selecionada estiver visível, clique em **realçar** no atalho do menu faz com que a borda da janela selecionada para flash para que possa ser localizado com mais facilidade.  
+  Em várias janelas Spy + +, você pode clique com botão direito para exibir um menu de atalho de comandos usados com frequência. Quais comandos são exibidos depende de onde é o ponteiro. Por exemplo, se o botão direito do mouse uma entrada na exibição da janela e a janela selecionada estiver visível, clique em **realçar** no atalho do menu faz com que a borda da janela selecionada para flash para que possa ser localizado com mais facilidade.  
   
 > [!NOTE]
 >  Há dois outros utilitários que se assemelhem a Spy + +: PView, que mostra detalhes sobre processos e threads e DDESPY. EXE, que permite que você monitore as mensagens de troca dinâmica de dados (DDE).  

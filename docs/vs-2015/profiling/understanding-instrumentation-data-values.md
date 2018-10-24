@@ -17,12 +17,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61e942a1c3cb43bcd2d3d7ef813ed4bd98267a1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75a1fddc6195805b786f4ad343c1c8917129dcdb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949222"
 ---
 # <a name="understanding-instrumentation-data-values"></a>Noções básicas sobre valores de dados de instrumentação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,37 +31,37 @@ O método de criação de perfil de *instrumentação* dos [!INCLUDE[vsprvs](../
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- O método de instrumentação injeta código no início e no final das funções de destino no binário com perfil e antes e depois de cada chamada por essas funções para outras funções. O código injetado registra o seguinte:  
+  O método de instrumentação injeta código no início e no final das funções de destino no binário com perfil e antes e depois de cada chamada por essas funções para outras funções. O código injetado registra o seguinte:  
   
--   O intervalo entre esse evento de coleta e a anterior.  
+- O intervalo entre esse evento de coleta e a anterior.  
   
--   Se o sistema operacional executou uma operação durante o intervalo. Por exemplo, o sistema operacional pode ler ou gravar em disco ou mudar entre o thread-alvo e outro thread em outro processo.  
+- Se o sistema operacional executou uma operação durante o intervalo. Por exemplo, o sistema operacional pode ler ou gravar em disco ou mudar entre o thread-alvo e outro thread em outro processo.  
   
- **Requisitos**  
+  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Para cada intervalo, a análise do criador de perfil reconstrói a pilha de chamadas que estava presente no final do intervalo. Uma pilha de chamadas é a lista de funções que estão ativas em um processador em um ponto no tempo. Apenas uma função (a função atual) está executando o código; as outras funções são a cadeia de chamadas de função que resultou na chamada para a função atual (a pilha de chamadas).  
+  Para cada intervalo, a análise do criador de perfil reconstrói a pilha de chamadas que estava presente no final do intervalo. Uma pilha de chamadas é a lista de funções que estão ativas em um processador em um ponto no tempo. Apenas uma função (a função atual) está executando o código; as outras funções são a cadeia de chamadas de função que resultou na chamada para a função atual (a pilha de chamadas).  
   
- Para cada função na pilha de chamadas quando o intervalo foi gravado, a análise do criador de perfil adiciona o intervalo para um ou mais dos valores de dados de quatro para a função. A análise adiciona o intervalo como um valor de dados para uma função com base em dois critérios:  
+  Para cada função na pilha de chamadas quando o intervalo foi gravado, a análise do criador de perfil adiciona o intervalo para um ou mais dos valores de dados de quatro para a função. A análise adiciona o intervalo como um valor de dados para uma função com base em dois critérios:  
   
--   Se o intervalo ocorreu no código da função ou em um *função filho* (uma função que foi chamada pela função).  
+- Se o intervalo ocorreu no código da função ou em um *função filho* (uma função que foi chamada pela função).  
   
--   Se ocorreu um evento de sistema operacional no intervalo.  
+- Se ocorreu um evento de sistema operacional no intervalo.  
   
- Os valores de dados para um intervalo de um intervalo de dados ou de uma função são nomeados *decorrido Inclusive*, *decorrido exclusivo*, *aplicativo Inclusive* e *aplicativo exclusivo*:  
+  Os valores de dados para um intervalo de um intervalo de dados ou de uma função são nomeados *decorrido Inclusive*, *decorrido exclusivo*, *aplicativo Inclusive* e *aplicativo exclusivo*:  
   
--   Todos os intervalos de uma função são adicionados ao valor dos dados inclusivos decorridos.  
+- Todos os intervalos de uma função são adicionados ao valor dos dados inclusivos decorridos.  
   
--   Se o intervalo ocorreu no código da função e não em uma função filho, o intervalo é adicionado ao valor dos dados exclusivos decorridos da função.  
+- Se o intervalo ocorreu no código da função e não em uma função filho, o intervalo é adicionado ao valor dos dados exclusivos decorridos da função.  
   
--   Se um evento de sistema operacional não ocorreu no intervalo, o intervalo é adicionado ao valor dos dados inclusivos do aplicativo.  
+- Se um evento de sistema operacional não ocorreu no intervalo, o intervalo é adicionado ao valor dos dados inclusivos do aplicativo.  
   
--   Se um evento de sistema operacional não ocorreu no intervalo e o intervalo ocorreu na execução direta do código de função (ou seja, ele não tenha ocorrido em uma função filho), o intervalo é adicionado ao valor de dados exclusivos do aplicativo.  
+- Se um evento de sistema operacional não ocorreu no intervalo e o intervalo ocorreu na execução direta do código de função (ou seja, ele não tenha ocorrido em uma função filho), o intervalo é adicionado ao valor de dados exclusivos do aplicativo.  
   
- Os relatórios das Ferramentas de criação de perfil agregam os valores totais das funções na sessão de criação de perfil em si e os processos, threads e binários da sessão.  
+  Os relatórios das Ferramentas de criação de perfil agregam os valores totais das funções na sessão de criação de perfil em si e os processos, threads e binários da sessão.  
   
 ## <a name="elapsed-inclusive-values"></a>Valores Inclusivos Decorridos  
  O tempo total gasto para executar uma função e suas funções filho.  

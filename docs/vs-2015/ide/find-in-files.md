@@ -26,12 +26,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af1eb1b42281e001bb56f9556c2b0eb21d859758
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4529b44014b209bdef1fc919ac413b61d77407c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902133"
 ---
 # <a name="find-in-files"></a>Localizar em Arquivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Localizar nos arquivos * * permite pesquisar um conjunto de arquivos especificad
   
 ### <a name="to-display-find-in-files"></a>Para exibir Localizar nos Arquivos  
   
-1.  Na barra de menus, escolha **Editar**, **Localizar e Substituir**.  
+1. Na barra de menus, escolha **Editar**, **Localizar e Substituir**.  
   
-2.  Escolha **Localizar nos Arquivos**.  
+2. Escolha **Localizar nos Arquivos**.  
   
- Para cancelar uma operação de localização, pressione CTRL + BREAK.  
+   Para cancelar uma operação de localização, pressione CTRL + BREAK.  
   
 > [!NOTE]
 >  A ferramenta Localizar e Substituir não pesquisa diretórios com o conjunto de atributos `Hidden` ou `System`.  
