@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35699d765a8d01e212fe02257da2aa83e245ecd4
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 88d7dd7f6fe09acd77ee37ca473fbd5290be6ee1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861105"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Teclas modificadoras de prancheta no Blend
 Alguns atalhos de teclado não têm itens de menu associados, o que significa que você não pode usar a interface do usuário do [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] para descobri-los. A tabela a seguir lista atalhos que modificam uma ação, como redimensionar um objeto.
 
 |Para realizar esta ação|Faça isto|
-|-----------------------|-------------|
+| - |-------------|
 |Selecione temporariamente a ferramenta **Seleção** enquanto uma ferramenta diferente permanece selecionada (isso reduz o número de vezes que você precisa clicar em algo no painel **Ferramentas**, alternando entre a ferramenta de **Seleção** e outras)|Mantenha a tecla **Ctrl** pressionada|
 |Deslocar objetos selecionados enquanto a ferramenta **Seleção** estiver selecionada|Pressionar as teclas de direção|
 |Aplicar movimento panorâmico no artboard|Mantenha a **Barra de espaços** pressionada e arraste a prancheta|

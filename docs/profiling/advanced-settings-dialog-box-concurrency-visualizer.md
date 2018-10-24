@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d697ee37cb8412e4fa0a51096858d9fa4b17877
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 60f4a038056d326cfb184cc3bb6876c411263ca1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690787"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883998"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Caixa de diálogo Configurações Avançadas (Visualizador de Simultaneidade)
 Usando a caixa de diálogo **Configurações Avançadas** da Visualização Simultânea, você pode controlar como os rastreamentos são coletados.  A caixa de diálogo tem guias para símbolos, Apenas Meu Código, buffer, filtragem, eventos CLR, marcadores, provedores e arquivos.  
@@ -75,15 +75,15 @@ Usando a caixa de diálogo **Configurações Avançadas** da Visualização Simu
 ## <a name="files"></a>Arquivos  
  Na guia **arquivos**, você pode especificar o diretório no qual os arquivos de rastreamento são armazenados sempre que um rastreamento é coletado.  A Visualização Simultânea gera quatro arquivos para cada rastreamento que coleta:  
   
--   Um arquivo de ETL (log de rastreamento de eventos) do modo kernel (*.* kernel.etl*)  
+- Um arquivo de ETL (log de rastreamento de eventos) do modo kernel (<em>.</em>kernel.etl*)  
   
--   Um arquivo de log de rastreamento de eventos do modo de usuário (*.* user.etl*)  
+- Um arquivo de log de rastreamento de eventos do modo de usuário (<em>.</em>user.etl*)  
   
--   Um arquivo de dados da Visualização Simultânea (*.* CVData*)  
+- Um arquivo de dados da Visualização Simultânea (<em>.</em>CVData*)  
   
--   Um arquivo de rastreamento da Visualização Simultânea (*.* CVTrace*)  
+- Um arquivo de rastreamento da Visualização Simultânea (<em>.</em>CVTrace*)  
   
- Os dois arquivos ETL armazenam os dados brutos de rastreamento e os dois arquivos da Visualização Simultânea armazenam os dados processados.  Os arquivos brutos de ETL normalmente não são usados após o processamento de um rastreamento.  Marcar a caixa de seleção **Excluir arquivos de ETL (Log de rastreamento de eventos) após a análise** reduz a quantidade de dados de rastreamento armazenados no disco.  
+  Os dois arquivos ETL armazenam os dados brutos de rastreamento e os dois arquivos da Visualização Simultânea armazenam os dados processados.  Os arquivos brutos de ETL normalmente não são usados após o processamento de um rastreamento.  Marcar a caixa de seleção **Excluir arquivos de ETL (Log de rastreamento de eventos) após a análise** reduz a quantidade de dados de rastreamento armazenados no disco.  
   
 ## <a name="see-also"></a>Consulte também  
  [Apenas Meu Código](../profiling/just-my-code-threads-view.md)   

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: da8ff01bed6446cc497c41ad21894c70df090efb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 53bddbda7ed89a0d826e135d7989c1b8a01ce594
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380825"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915237"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usar shims para isolar seu aplicativo de outros assemblies para teste de unidade
 
@@ -428,14 +428,13 @@ Cada tipo de shim gerado contém uma instância da interface `IShimBehavior` pel
 
 Se o comportamento não tiver sido definido explicitamente, ele usará a instância retornada pela propriedade estática `ShimsBehaviors.Current`. Por padrão, essa propriedade retorna um comportamento que gerou uma exceção `NotImplementedException`.
 
-Esse comportamento pode ser alterado a qualquer momento definindo a propriedade `InstanceBehavior` em qualquer instância do shim. Por exemplo, o seguinte trecho altera o shim de um comportamento que não faz nada ou retorna o valor padrão do tipo de retorno, ou seja, padrão(T):
+Esse comportamento pode ser alterado a qualquer momento definindo a propriedade `InstanceBehavior` em qualquer instância do shim. Por exemplo, o seguinte snippet altera o shim de um comportamento que não faz nada ou retorna o valor padrão do tipo de retorno, ou seja, padrão(T):
 
 ```csharp
 // unit test code
 var shim = new ShimMyClass();
 //return default(T) or do nothing
 shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
-
 ```
 
 O comportamento também pode ser alterado globalmente para todas as instâncias com shim para as quais a propriedade `InstanceBehavior` não foi definida explicitamente definindo a propriedade estática `ShimsBehaviors.Current`:

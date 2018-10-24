@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57a42846833024fefb4bf73660484123474d00a
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 6f2f53e801df70345e34c14c15d4456e39561623
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029047"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847624"
 ---
 # <a name="shader-designer"></a>Designer de Sombreador
 
@@ -31,7 +31,7 @@ Você poderá usar o **Designer de Sombreador** para criar efeitos visuais perso
 O **Designer de Sombreador** dá suporte a esses formatos de sombreador:
 
 |Nome do formato|Extensão do arquivo|Operações com suporte (Exibir, Editar, Exportar)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |Idioma do Sombreador de Gráfico Direcionado|*.dgsl*|Exibir, Editar|
 |Sombreador HLSL (código-fonte)|*.hlsl*|Exportar|
 |Sombreador HLSL (código de bytes)|*.cso*|Exportar|
@@ -177,7 +177,7 @@ Para obter mais informações sobre como exportar sombreadores, confira [Como ex
 ## <a name="keyboard-shortcuts"></a>Atalhos de teclado
 
 |Comando|Atalhos de teclado|
-|-------------|------------------------|
+|-------------| - |
 |Mudar para o modo **Selecionar**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |Mudar para o modo **Zoom**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Mudar para o modo **Panorâmico**|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
