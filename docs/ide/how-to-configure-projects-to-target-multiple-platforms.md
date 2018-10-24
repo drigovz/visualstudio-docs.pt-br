@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb194836f40ce599ee3509b11fc9849b6a7780ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 308858941d03f6341cf3d22af074be45d790e16b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942091"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930213"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Como configurar projetos para terem várias plataformas como destino
 
@@ -56,11 +56,11 @@ Uma vez que pode alterar as configurações com base na combinação de definiç
 
 ### <a name="to-build-multiple-solution-configurations-at-once"></a>Para criar várias configurações de solução de uma vez
 
-1.  Use o **Configuration Manager** para adicionar pelo menos duas plataformas de destino para a solução.
+1. Use o **Configuration Manager** para adicionar pelo menos duas plataformas de destino para a solução.
 
-2.  Use a janela **Build em Lotes** para criar várias configurações de solução de uma vez.
+2. Use a janela **Build em Lotes** para criar várias configurações de solução de uma vez.
 
- É possível ter uma plataforma de solução definida como, por exemplo, [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)], e não ter projetos na solução destinados à mesma plataforma. Também é possível ter vários projetos em sua solução, cada um destinado a plataformas diferentes. É recomendável que, se tiver uma dessas situações, você crie uma nova configuração com um nome descritivo para evitar confusão.
+   É possível ter uma plataforma de solução definida como, por exemplo, [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)], e não ter projetos na solução destinados à mesma plataforma. Também é possível ter vários projetos em sua solução, cada um destinado a plataformas diferentes. É recomendável que, se tiver uma dessas situações, você crie uma nova configuração com um nome descritivo para evitar confusão.
 
 ## <a name="see-also"></a>Consulte também
 
