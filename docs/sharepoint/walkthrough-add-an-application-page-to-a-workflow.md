@@ -18,25 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774582"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866890"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Passo a passo: Adicionar uma página de aplicativo a um fluxo de trabalho
   Este passo a passo demonstra como adicionar uma página de aplicativo que exibe dados derivados de um fluxo de trabalho a um projeto de fluxo de trabalho. Ele se baseia no projeto descrito no tópico [instruções passo a passo: criar um fluxo de trabalho com formulários de associação e iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  Este passo a passo demonstra as seguintes tarefas:
 
--   Adicionando uma página ASPX de aplicativo para um projeto de fluxo de trabalho do SharePoint.
+- Adicionando uma página ASPX de aplicativo para um projeto de fluxo de trabalho do SharePoint.
 
--   Obtendo dados do projeto de fluxo de trabalho e manipulá-los.
+- Obtendo dados do projeto de fluxo de trabalho e manipulá-los.
 
--   Exibindo dados em uma tabela na página do aplicativo.
+- Exibindo dados em uma tabela na página do aplicativo.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
@@ -305,23 +305,23 @@ ms.locfileid: "43774582"
 
 #### <a name="to-test-the-application-page"></a>Para testar a página do aplicativo
 
-1.  Escolha o **F5** tecla para executar e implantar o projeto do SharePoint.
+1. Escolha o **F5** tecla para executar e implantar o projeto do SharePoint.
 
-2.  Escolha o **página inicial** botão e, em seguida, escolha o **documentos compartilhados** link na barra QuickLaunch para exibir a lista de documentos compartilhados no site do SharePoint.
+2. Escolha o **página inicial** botão e, em seguida, escolha o **documentos compartilhados** link na barra QuickLaunch para exibir a lista de documentos compartilhados no site do SharePoint.
 
-3.  Para representar os relatórios de despesas para este exemplo, carregar alguns novos documentos em lista de documentos, escolhendo o **documentos** no link a **LibraryTools** guia na parte superior da página e, em seguida, escolhendo o  **Carregar documento** botão na faixa de opções da ferramenta.
+3. Para representar os relatórios de despesas para este exemplo, carregar alguns novos documentos em lista de documentos, escolhendo o **documentos** no link a **LibraryTools** guia na parte superior da página e, em seguida, escolhendo o  **Carregar documento** botão na faixa de opções da ferramenta.
 
-4.  Depois de carregar alguns documentos, criar uma instância de fluxo de trabalho escolhendo a **biblioteca** no link a **LibraryTools** guia na parte superior da página e, em seguida, escolhendo o **configurações da biblioteca**botão na faixa de opções da ferramenta.
+4. Depois de carregar alguns documentos, criar uma instância de fluxo de trabalho escolhendo a **biblioteca** no link a **LibraryTools** guia na parte superior da página e, em seguida, escolhendo o **configurações da biblioteca**botão na faixa de opções da ferramenta.
 
-5.  No **Document Library Settings** , escolha o **configurações de fluxo de trabalho** link no **permissões e gerenciamento** seção.
+5. No **Document Library Settings** , escolha o **configurações de fluxo de trabalho** link no **permissões e gerenciamento** seção.
 
-6.  No **configurações de fluxo de trabalho** , escolha o **adicionar um fluxo de trabalho** link.
+6. No **configurações de fluxo de trabalho** , escolha o **adicionar um fluxo de trabalho** link.
 
-7.  No **adicionar um fluxo de trabalho** , escolha o **ExpenseReport - Workflow1** fluxo de trabalho, insira um nome para o fluxo de trabalho, como **ExpenseTest**e, em seguida, escolha o **Próxima** botão.
+7. No **adicionar um fluxo de trabalho** , escolha o **ExpenseReport - Workflow1** fluxo de trabalho, insira um nome para o fluxo de trabalho, como **ExpenseTest**e, em seguida, escolha o **Próxima** botão.
 
-     O formulário de associação de fluxo de trabalho é exibida. Usá-lo para relatar o valor de limite de gastos.
+    O formulário de associação de fluxo de trabalho é exibida. Usá-lo para relatar o valor de limite de gastos.
 
-8.  No formulário de associação, insira **1000** para o **limite de aprovação automática** caixa e, em seguida, escolha o **associar o fluxo de trabalho** botão.
+8. No formulário de associação, insira **1000** para o **limite de aprovação automática** caixa e, em seguida, escolha o **associar o fluxo de trabalho** botão.
 
 9. Escolha o **doméstica** botão para retornar à home page do SharePoint.
 
@@ -337,7 +337,7 @@ ms.locfileid: "43774582"
 
 14. Repita as etapas 11 a 13 com outros documentos na lista de documentos compartilhados. (O número exato de documentos não é importante.)
 
-15. Exibir a página de resumo do aplicativo de relatório de despesas, abrindo a seguinte URL em um navegador da Web: **http://**_SystemName_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Exibir a página de resumo do aplicativo de relatório de despesas, abrindo a seguinte URL em um navegador da Web: **http://**<em>SystemName</em>**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      A página Resumo do relatório de despesas lista todos os relatórios de despesas que excedeu a quantidade alocada, a quantidade que foi excedido pelo e o valor total para todos os relatórios.
 

@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3169ba8aaa348a6db698b968e7bec4e8273dfada
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862197"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ O Visual C# IntelliSense fica disponível durante a codificação no editor e du
 ## <a name="completion-lists"></a>Listas de Conclusão  
  As listas de preenchimento do IntelliSense no Visual C# contêm tokens de Listar Membros, Completar Palavra e muito mais. Ele fornece acesso rápido a:  
   
--   Membros de um tipo ou namespace,  
+- Membros de um tipo ou namespace,  
   
--   Variáveis, comandos e nomes de funções,  
+- Variáveis, comandos e nomes de funções,  
   
--   [Snippets de código](#CodeSnippets),  
+- [Snippets de código](#CodeSnippets),  
   
--   [Palavras-chave de linguagem](#Keywords),  
+- [Palavras-chave de linguagem](#Keywords),  
   
--   [Métodos de Extensão](#ExtensionMethods)  
+- [Métodos de Extensão](#ExtensionMethods)  
   
- A Lista de Conclusão no C# também é inteligente o suficiente para filtrar tokens irrelevantes e pré-selecionar um token com base no contexto. Para obter mais informações, consulte [Listas de preenchimento filtradas no C#](../misc/filtered-completion-lists-in-csharp.md) e [Itens pré-selecionados da lista de preenchimento no C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
+  A Lista de Conclusão no C# também é inteligente o suficiente para filtrar tokens irrelevantes e pré-selecionar um token com base no contexto. Para obter mais informações, consulte [Listas de preenchimento filtradas no C#](../misc/filtered-completion-lists-in-csharp.md) e [Itens pré-selecionados da lista de preenchimento no C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ###  <a name="CodeSnippets"></a> Snippets de código em listas de preenchimento  
  No Visual C#, a lista de preenchimento inclui snippets de código para ajudá-lo a inserir com facilidade corpos de código predefinidos no programa. Os snippets de código são exibidos na lista de preenchimento como o [Elemento de atalho (snippets de código do IntelliSense)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa) do snippet.  Para obter mais informações sobre os snippets de código disponíveis no Visual C# por padrão, consulte [Snippets de código do Visual C#](../ide/visual-csharp-code-snippets.md).  
@@ -123,23 +123,23 @@ O Visual C# IntelliSense fica disponível durante a codificação no editor e du
   
  Para exibir as opções apropriadas, é possível usar um dos seguintes procedimentos:  
   
--   Clique no identificador indefinido. Um sublinhado curto é exibido abaixo do caractere mais à esquerda. Posicione o ponteiro do mouse sobre o sublinhado curto e uma marcação inteligente (um ícone) será exibida. Clique na marcação inteligente.  
+- Clique no identificador indefinido. Um sublinhado curto é exibido abaixo do caractere mais à esquerda. Posicione o ponteiro do mouse sobre o sublinhado curto e uma marcação inteligente (um ícone) será exibida. Clique na marcação inteligente.  
   
--   Clique no identificador indefinido e pressione CTRL+. (ponto).  
+- Clique no identificador indefinido e pressione CTRL+. (ponto).  
   
--   Clique com o botão direito do mouse no identificador indefinido e clique em **Gerar**.  
+- Clique com o botão direito do mouse no identificador indefinido e clique em **Gerar**.  
   
- As opções exibidas podem incluir as seguintes:  
+  As opções exibidas podem incluir as seguintes:  
   
--   **Gerar stub de propriedade**  
+- **Gerar stub de propriedade**  
   
--   **Gerar stub de campo**  
+- **Gerar stub de campo**  
   
--   **Gerar stub de método**  
+- **Gerar stub de método**  
   
--   **Gerar classe**  
+- **Gerar classe**  
   
--   **Gerar novo tipo** (para uma classe, um struct, uma interface ou enumeração)  
+- **Gerar novo tipo** (para uma classe, um struct, uma interface ou enumeração)  
   
 ## <a name="generate-event-handlers"></a>Gerar manipuladores de eventos  
  No Editor de Código, o IntelliSense pode ajudá-lo a vincular métodos (manipuladores de eventos) a campos de evento.  

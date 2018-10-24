@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2421a1f39f2969563bc10a43367936ae499fac30
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118383"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863263"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Empacotar e implantar soluções do SharePoint
   Normalmente, uma solução do SharePoint é implantada em um servidor do SharePoint usando um arquivo de pacote (. wsp) da solução. Você pode usar o Visual Studio para organizar os itens de projeto do SharePoint em recursos e criar um pacote para implantar seus recursos do SharePoint.  
@@ -67,23 +67,23 @@ ms.locfileid: "37118383"
 ### <a name="packaging-explorer"></a>Packaging Explorer  
  Para complementar o Designer de recursos e o Designer de pacote, você pode usar o Packaging Explorer para agrupar seus arquivos do SharePoint em recursos e pacotes. Além disso, você pode ver a exibição hierárquica de projeto do SharePoint de pacote, recursos, itens e os arquivos. O Packaging Explorer é uma janela de ferramentas que você pode usar para concluir as seguintes tarefas:  
   
--   Abrir itens de projeto do SharePoint e arquivos.  
+- Abrir itens de projeto do SharePoint e arquivos.  
   
--   Arraste e solte itens de projeto do SharePoint de um recurso para outro.  
+- Arraste e solte itens de projeto do SharePoint de um recurso para outro.  
   
--   Arraste e solte itens de projeto do SharePoint e recursos de um pacote para outro.  
+- Arraste e solte itens de projeto do SharePoint e recursos de um pacote para outro.  
   
--   Adicione um novo recurso a um pacote.  
+- Adicione um novo recurso a um pacote.  
   
--   Abra um designer de pacote ou recurso.  
+- Abra um designer de pacote ou recurso.  
   
--   Valide recursos e pacotes.  
+- Valide recursos e pacotes.  
   
- As ferramentas de desenvolvimento do SharePoint no Visual Studio tem regras de validação para ajudar a garantir que o pacote de solução está formado corretamente. Além disso, as regras de verificam se o *. wsp* arquivo da solução pode ser implantado e ativado em um servidor do SharePoint com êxito. Para obter mais informações sobre o esquema XML para os recursos, consulte [esquemas de recurso](http://go.microsoft.com/fwlink/?LinkID=169192).  
+  As ferramentas de desenvolvimento do SharePoint no Visual Studio tem regras de validação para ajudar a garantir que o pacote de solução está formado corretamente. Além disso, as regras de verificam se o *. wsp* arquivo da solução pode ser implantado e ativado em um servidor do SharePoint com êxito. Para obter mais informações sobre o esquema XML para os recursos, consulte [esquemas de recurso](http://go.microsoft.com/fwlink/?LinkID=169192).  
   
- Você pode adicionar o recurso personalizado e regras de validação de pacote para o sistema de projeto do SharePoint. Para obter mais informações, consulte [como: criar o recurso personalizado e o pacote de regras de validação para soluções do SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
+  Você pode adicionar o recurso personalizado e regras de validação de pacote para o sistema de projeto do SharePoint. Para obter mais informações, consulte [como: criar o recurso personalizado e o pacote de regras de validação para soluções do SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
   
- Para obter mais informações sobre o Gerenciador de pacotes, consulte [como: adicionar e remover funcionalidades e itens de um pacote usando o Packaging Explorer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+  Para obter mais informações sobre o Gerenciador de pacotes, consulte [como: adicionar e remover funcionalidades e itens de um pacote usando o Packaging Explorer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
 ### <a name="solution-explorer"></a>Gerenciador de Soluções
  Você pode usar o Gerenciador de soluções para navegar e abrir os arquivos de projeto do SharePoint. Use o menu de contexto no Gerenciador de soluções para adicionar recursos, receptores de evento e recursos de recursos. Além disso, você pode abrir os Designers de recurso e os Designers de pacote para configurar os recursos e pacotes para a implantação.  
@@ -100,11 +100,11 @@ ms.locfileid: "37118383"
   
  Por exemplo, para adicionar um *. XML* o arquivo para um projeto do SharePoint, execute uma destas ações:  
   
--   Adicione uma pasta mapeada do SharePoint "Layouts" ao seu projeto. Isso cria nos **Gerenciador de soluções** uma pasta chamada **Layouts** que possui uma subpasta do projeto. Adicione a *. XML* arquivo para a nova subpasta. Por padrão, o arquivo é implantado para o sistema de arquivos do SharePoint *... \Template\layouts.\\\<nome da pasta >*. Para obter informações sobre como adicionar pastas mapeadas, consulte [como: adicionar e remover pastas mapeadas](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
+- Adicione uma pasta mapeada do SharePoint "Layouts" ao seu projeto. Isso cria nos **Gerenciador de soluções** uma pasta chamada **Layouts** que possui uma subpasta do projeto. Adicione a *. XML* arquivo para a nova subpasta. Por padrão, o arquivo é implantado para o sistema de arquivos do SharePoint *... \Template\layouts.\\\<nome da pasta >*. Para obter informações sobre como adicionar pastas mapeadas, consulte [como: adicionar e remover pastas mapeadas](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
   
--   Adicionar o *. XML* arquivos para a pasta de um item de projeto do SharePoint e, em seguida, altere o **tipo de implantação** propriedade do *. XML* arquivo da **NoDeployment**  para definir outro como **RootFile** ou **ElementFile**. Apropriado **tipo de implantação** configuração depende do arquivo e o projeto. Para obter mais informações sobre o **tipo de implantação** configurações de propriedade, consulte [soluções do SharePoint desenvolver](../sharepoint/developing-sharepoint-solutions.md).  
+- Adicionar o *. XML* arquivos para a pasta de um item de projeto do SharePoint e, em seguida, altere o **tipo de implantação** propriedade do *. XML* arquivo da **NoDeployment**  para definir outro como **RootFile** ou **ElementFile**. Apropriado **tipo de implantação** configuração depende do arquivo e o projeto. Para obter mais informações sobre o **tipo de implantação** configurações de propriedade, consulte [soluções do SharePoint desenvolver](../sharepoint/developing-sharepoint-solutions.md).  
   
- Se um arquivo adicionado não se aplica a nenhum projeto específico na solução, você pode adicionar um projeto vazio do SharePoint à sua solução e, em seguida, adicionar os arquivos adicionais a ele. Outra alternativa para implantação de arquivos para o SharePoint, especialmente para o banco de dados de conteúdo, é adicionar um módulo ao projeto e, em seguida, adicione os arquivos para o módulo. Para obter mais informações, consulte [usar módulos para incluir arquivos na solução](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+  Se um arquivo adicionado não se aplica a nenhum projeto específico na solução, você pode adicionar um projeto vazio do SharePoint à sua solução e, em seguida, adicionar os arquivos adicionais a ele. Outra alternativa para implantação de arquivos para o SharePoint, especialmente para o banco de dados de conteúdo, é adicionar um módulo ao projeto e, em seguida, adicione os arquivos para o módulo. Para obter mais informações, consulte [usar módulos para incluir arquivos na solução](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
   
 ## <a name="see-also"></a>Consulte também
  [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)   

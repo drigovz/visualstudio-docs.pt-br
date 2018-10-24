@@ -15,12 +15,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b089794cc9135d8658a47d61d3d40c3feef7451a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1ab7e4e0cf46d90a437f4239798c0ec8a0a28e74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227000"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862756"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Introdução ao serviço de linguagem e às extensões do editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,17 +48,17 @@ Você pode usar as extensões do editor para adicionar recursos de serviço de l
   
  A seguir está alguns dos tipos básicos de extensões do editor:  
   
--   Margens e barras de rolagem  
+- Margens e barras de rolagem  
   
--   Marcas  
+- Marcas  
   
--   Adornos  
+- Adornos  
   
--   Opções  
+- Opções  
   
--   IntelliSense  
+- IntelliSense  
   
- Para obter mais informações sobre pontos de extensão de editor, consulte [serviço de linguagem e pontos de extensão de Editor](../extensibility/language-service-and-editor-extension-points.md).  
+  Para obter mais informações sobre pontos de extensão de editor, consulte [serviço de linguagem e pontos de extensão de Editor](../extensibility/language-service-and-editor-extension-points.md).  
   
 ## <a name="deploying-editor-extensions"></a>Implantando extensões de Editor  
  No Visual Studio, você pode implantar as extensões do editor, adicionando um arquivo de metadados chamado vsixmanifest à solução, compilar a solução e, em seguida, adicionando uma cópia dos arquivos binários e o manifesto em uma pasta que é conhecida para o Visual Studio. O arquivo de manifesto define as informações básicas sobre a extensão (por exemplo, nome, autor, versão e tipo de conteúdo). Para obter mais informações sobre o arquivo de manifesto do VSIX e como implantar extensões, consulte [envio extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md).  

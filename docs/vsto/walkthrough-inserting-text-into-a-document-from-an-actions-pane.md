@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 575f847758bd18c5e13298b1fddd3e34ddb98545
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ad60aa15b3924bd562ed95c30ed9aaf4adef0133
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669819"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862184"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Passo a passo: Inserir texto em um documento de um painel de ações
   Este passo a passo demonstra como criar um painel de ações em um documento do Microsoft Office Word. O painel de ações contém dois controles que coletar entrada e, em seguida, enviar o texto para o documento.  
@@ -60,17 +60,17 @@ ms.locfileid: "35669819"
   
 ### <a name="to-add-text-to-your-document"></a>Para adicionar texto ao documento  
   
-1.  Digite o seguinte texto no documento do Word:  
+1. Digite o seguinte texto no documento do Word:  
   
-     **21 de março de 2008**  
+    **21 de março de 2008**  
   
-     **Nome**  
+    **Nome**  
   
-     **Endereço**  
+    **Endereço**  
   
-     **Este é um exemplo de um painel de ações básicas no Word.**  
+    **Este é um exemplo de um painel de ações básicas no Word.**  
   
- Você pode adicionar um <xref:Microsoft.Office.Tools.Word.Bookmark> controle ao documento, arrastando-o do **caixa de ferramentas** no Visual Studio ou usando o **indicador** caixa de diálogo do Word.  
+   Você pode adicionar um <xref:Microsoft.Office.Tools.Word.Bookmark> controle ao documento, arrastando-o do **caixa de ferramentas** no Visual Studio ou usando o **indicador** caixa de diálogo do Word.  
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Para adicionar um controle de indicador para o seu documento  
   
