@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eaa8ae8c5e073d4c83ae6489cd32953b0959072f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c656a9e83e3ec50c24e6bb7006bbdc4d102e9f6e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223686"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919111"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>Coletando estatísticas de desempenho usando amostragem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +47,9 @@ Por padrão, o método de amostragem das Ferramentas de Criação de Perfil [!IN
 ## <a name="common-tasks"></a>Tarefas comuns  
  É possível especificar outras opções na caixa de diálogo _Sessão de Desempenho_**Páginas de Propriedades** da sessão de desempenho. Para abrir essa caixa de diálogo:  
   
--   No **Gerenciador de Desempenho**, clique com o botão direito do mouse no nome da sessão de desempenho e clique em **Propriedades**.  
+- No **Gerenciador de Desempenho**, clique com o botão direito do mouse no nome da sessão de desempenho e clique em **Propriedades**.  
   
- As tarefas na tabela a seguir descrevem as opções que podem ser especificadas na caixa de diálogo _Sessão de Desempenho_**Páginas de Propriedades** quando você cria o perfil usando o método de amostragem.  
+  As tarefas na tabela a seguir descrevem as opções que podem ser especificadas na caixa de diálogo _Sessão de Desempenho_**Páginas de Propriedades** quando você cria o perfil usando o método de amostragem.  
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  

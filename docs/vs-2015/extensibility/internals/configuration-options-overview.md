@@ -16,12 +16,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4778fd01dde3f08bcc76cd6fc5dd5814f2bc913b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e502f78698d830c916b09968e8fa2cfbcd74fbf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294288"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915770"
 ---
 # <a name="configuration-options-overview"></a>Visão geral das opções de configuração
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,21 +60,21 @@ Interfaces de configuração
   
  Algumas notas relacionadas ao diagrama anterior:  
   
--   `IDispatch` é marcado como opcionais no objeto de configuração. Especificamente, é opcional para ter interfaces de configuração no objeto de navegação.  
+- `IDispatch` é marcado como opcionais no objeto de configuração. Especificamente, é opcional para ter interfaces de configuração no objeto de navegação.  
   
--   `IVsDebuggableProjectCfg` é marcado como opcional no objeto de configuração, mas é necessário para suporte à depuração.  
+- `IVsDebuggableProjectCfg` é marcado como opcional no objeto de configuração, mas é necessário para suporte à depuração.  
   
--   `IVsProjectCfg2` é marcado como opcional no objeto de configuração, mas é necessário para suporte de agrupamento de saída.  
+- `IVsProjectCfg2` é marcado como opcional no objeto de configuração, mas é necessário para suporte de agrupamento de saída.  
   
--   O `Config Provider` objeto for marcado como um objeto opcional, mas a opção é onde implementá-lo. Você pode implementar o objeto no objeto de projeto ou em um objeto separado.  
+- O `Config Provider` objeto for marcado como um objeto opcional, mas a opção é onde implementá-lo. Você pode implementar o objeto no objeto de projeto ou em um objeto separado.  
   
--   `IVsCfgProvider2` é necessário para suporte de plataforma e a edição de configuração. `IVsCfgProvider` é suficiente se você não implementar essa funcionalidade.  
+- `IVsCfgProvider2` é necessário para suporte de plataforma e a edição de configuração. `IVsCfgProvider` é suficiente se você não implementar essa funcionalidade.  
   
--   Alguns desses objetos mostrados no diagrama como objetos separados podem ser combinados na mesma classe quando for prático com base em seus requisitos de design específico. Em outros tópicos desta seção, no entanto, os objetos e interfaces associadas a esses objetos serão discutidas acordo com o cenário apresentado no diagrama.  
+- Alguns desses objetos mostrados no diagrama como objetos separados podem ser combinados na mesma classe quando for prático com base em seus requisitos de design específico. Em outros tópicos desta seção, no entanto, os objetos e interfaces associadas a esses objetos serão discutidas acordo com o cenário apresentado no diagrama.  
   
--   Determinados objetos são implementados separadamente. Por exemplo, o projeto e a construção da solução ocorrerem em threads separados e o objeto para gerenciar as vidas de compilação separadamente do objeto que descreve a configuração da compilação.  
+- Determinados objetos são implementados separadamente. Por exemplo, o projeto e a construção da solução ocorrerem em threads separados e o objeto para gerenciar as vidas de compilação separadamente do objeto que descreve a configuração da compilação.  
   
- Para obter mais informações sobre as interfaces de objeto de provedor de configuração no diagrama anterior e interfaces de objeto de configuração, consulte [objeto de configuração do projeto](../../extensibility/internals/project-configuration-object.md). Além disso, [configuração do projeto para a construção](../../extensibility/internals/project-configuration-for-building.md) fornece mais informações sobre as interfaces de construtor de configuração e criar o objeto de dependência, e [configuração do projeto para gerenciar implantação](../../extensibility/internals/project-configuration-for-managing-deployment.md) ainda mais descreve as interfaces anexadas para o implantador de configuração e os objetos de dependência de implantação. Por fim, [configuração do projeto para saída](../../extensibility/internals/project-configuration-for-output.md) descreve as interfaces de objeto de saída e de grupo de saída e o uso das páginas de propriedades para exibir e definir propriedades dependentes de configuração.  
+  Para obter mais informações sobre as interfaces de objeto de provedor de configuração no diagrama anterior e interfaces de objeto de configuração, consulte [objeto de configuração do projeto](../../extensibility/internals/project-configuration-object.md). Além disso, [configuração do projeto para a construção](../../extensibility/internals/project-configuration-for-building.md) fornece mais informações sobre as interfaces de construtor de configuração e criar o objeto de dependência, e [configuração do projeto para gerenciar implantação](../../extensibility/internals/project-configuration-for-managing-deployment.md) ainda mais descreve as interfaces anexadas para o implantador de configuração e os objetos de dependência de implantação. Por fim, [configuração do projeto para saída](../../extensibility/internals/project-configuration-for-output.md) descreve as interfaces de objeto de saída e de grupo de saída e o uso das páginas de propriedades para exibir e definir propriedades dependentes de configuração.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   

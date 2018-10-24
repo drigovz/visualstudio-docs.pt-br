@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73267319733dd6e31b21a0a47796f9766250bb89
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 51be3e86f1f19cc3701dd456b3085d3e8993b7a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586828"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915549"
 ---
 # <a name="vsct-xml-schema-reference"></a>Referência de esquema XML do VSCT
 Fornece uma tabela de elementos de esquema do compilador de tabela de comando, com filho permitido elementos e atributos para cada um.  
@@ -36,11 +36,11 @@ Fornece uma tabela de elementos de esquema do compilador de tabela de comando, c
   
  Todos os valores GUID e ID devem ser definidos usando nomes simbólicos. Esses nomes podem ser definidos em arquivos de cabeçalho ou no VSCT \<símbolos > seções. Os nomes simbólicos devem ser locais, incluídos por meio \<Include > elementos, ou referenciada pela \<Extern > elementos. Um nome simbólico é importado de um arquivo de cabeçalho especificado em um \<Extern > elemento se ele segue o padrão simple de #define o valor de SÍMBOLO. O valor pode ser outro símbolo, desde que o símbolo foi definido anteriormente. Definições de GUID devem seguir o formato OLE ou C++. Valores de ID podem ser dígitos decimais ou dígitos hexadecimais que são precedidos por 0x, conforme mostrado nas linhas a seguir:  
   
--   {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
+- {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
--   {0x6d484634, 0xe53d, 0x4a2c, {0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
+- {0x6d484634, 0xe53d, 0x4a2c, {0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
   
- Comentários XML podem ser usados, mas as ferramentas de GUI (interface) de ida e volta gráfica do usuário podem descartá-las. O conteúdo de \<anotação > elementos têm garantia de ser mantida, independentemente do formato.  
+  Comentários XML podem ser usados, mas as ferramentas de GUI (interface) de ida e volta gráfica do usuário podem descartá-las. O conteúdo de \<anotação > elementos têm garantia de ser mantida, independentemente do formato.  
   
 ## <a name="schema-hierarchy"></a>Hierarquia de esquema  
  Um arquivo. VSCT tem os seguintes elementos principais.  

@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eae89672a6fcbf56dcd2426547e1fb528c270db2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 25143390085ec0b4d7ab56e0fef9920d7d5eceb8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290414"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914535"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definir um manipulador de link de item de trabalho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,11 +92,11 @@ Você pode criar uma extensão de integração do Visual Studio que responde qua
 ### <a name="import-the-work-item-namespace"></a>Importar o Namespace de Item de trabalho  
  No seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] project **referências**, adicione referências aos assemblies a seguir:  
   
--   Microsoft  
+- Microsoft  
   
--   WorkItemTracking  
+- WorkItemTracking  
   
- No código do programa, importe os seguintes namespaces:  
+  No código do programa, importe os seguintes namespaces:  
   
 ```  
 using System.ComponentModel.Composition;  
@@ -282,21 +282,21 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
   
  em que:  
   
--   O URI para o servidor deve ser:  
+- O URI para o servidor deve ser:  
   
-     `http://tfServer:8080/tfs/projectCollection`  
+   `http://tfServer:8080/tfs/projectCollection`  
   
-     Caso é importante em `projectCollection`.  
+   Caso é importante em `projectCollection`.  
   
--   `RepositoryGuid` pode ser obtido da sua conexão de TFS:  
+- `RepositoryGuid` pode ser obtido da sua conexão de TFS:  
   
-    ```csharp  
-    TfsTeamProjectCollection tpc = TfsTeamProjectCollectionFactory...;  
-    RepositoryGuid= tpc.InstanceId;  
+  ```csharp  
+  TfsTeamProjectCollection tpc = TfsTeamProjectCollectionFactory...;  
+  RepositoryGuid= tpc.InstanceId;  
   
-    ```  
+  ```  
   
- Para obter mais informações sobre referências, consulte [elementos de modelo de anexar cadeias de caracteres de referência para UML](../modeling/attach-reference-strings-to-uml-model-elements.md).  
+  Para obter mais informações sobre referências, consulte [elementos de modelo de anexar cadeias de caracteres de referência para UML](../modeling/attach-reference-strings-to-uml-model-elements.md).  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.TeamFoundation.WorkItemTracking.Client.WorkItemStore?displayProperty=fullName>   

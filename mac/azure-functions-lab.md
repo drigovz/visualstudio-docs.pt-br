@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 446ec0dbc13e3f1d0907933388830c6f7d02f091
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224079"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919735"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Introdução ao Azure Functions
 
@@ -34,17 +34,17 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
 1. Inicialize o **Visual Studio para Mac**.
 
-1. Selecione **Arquivo > Nova Solução**.
+2. Selecione **Arquivo > Nova Solução**.
 
-1. Na categoria **Nuvem > Geral**, selecione o modelo do **Azure Functions**. Você usará o C# para criar uma biblioteca de classes .NET que hospeda o Azure Functions. Clique em **Avançar**.
+3. Na categoria **Nuvem > Geral**, selecione o modelo do **Azure Functions**. Você usará o C# para criar uma biblioteca de classes .NET que hospeda o Azure Functions. Clique em **Avançar**.
 
     ![Seleção de modelo do Azure Functions](media/azure-functions-lab-image1.png)
 
-1. Definir o **Nome do Projeto** como **"AzureFunctionsLab"** e clique em **Criar**.
+4. Definir o **Nome do Projeto** como **"AzureFunctionsLab"** e clique em **Criar**.
 
     ![Nomeando e criando seu projeto de função do Azure](media/azure-functions-lab-image2.png)
 
-1. Expanda os nós no **Painel de Soluções**. O modelo de projeto padrão inclui referências de NuGet a uma variedade de pacotes do Azure WebJobs, bem como ao pacote Newtonsoft.Json. 
+5. Expanda os nós no **Painel de Soluções**. O modelo de projeto padrão inclui referências de NuGet a uma variedade de pacotes do Azure WebJobs, bem como ao pacote Newtonsoft.Json. 
 
      Também há três arquivos:  
         - **host.json** para descrever as opções de configuração global para o host  

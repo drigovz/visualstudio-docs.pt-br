@@ -32,12 +32,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d02d36e29f823db424c32cf40d036d498282da7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3254ea0197ee0b241735df9c1f437490a09da969
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289322"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914303"
 ---
 # <a name="expressions-in-the-debugger"></a>Expressões no depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,13 +104,13 @@ int main()
   
  Funções intrínsecas do depurador:  
   
--   São certamente seguras: executar uma função intrínseca do depurador não corromperá o processo que está sendo depurado.  
+- São certamente seguras: executar uma função intrínseca do depurador não corromperá o processo que está sendo depurado.  
   
--   São permitidas em todas as expressões, mesmo em cenários onde os efeitos colaterais e a avaliação de função não são permitidos.  
+- São permitidas em todas as expressões, mesmo em cenários onde os efeitos colaterais e a avaliação de função não são permitidos.  
   
--   Trabalham em cenários onde as chamadas de funções normais não são possíveis, por exemplo, depurar um minidespejo.  
+- Trabalham em cenários onde as chamadas de funções normais não são possíveis, por exemplo, depurar um minidespejo.  
   
- As funções intrínsecas do depurador também podem tornar mais convenientes as expressões de avaliação. Por exemplo, `strncmp(str, “asd”)` é muito mais fácil escrever em uma condição de ponto de interrupção que `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
+  As funções intrínsecas do depurador também podem tornar mais convenientes as expressões de avaliação. Por exemplo, `strncmp(str, “asd”)` é muito mais fácil escrever em uma condição de ponto de interrupção que `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
   
 |Área|Funções intrínsecas|  
 |----------|-------------------------|  

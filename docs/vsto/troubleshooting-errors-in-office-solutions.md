@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21e2b1a7a90df2baef48483647c692c8b986c59f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f8555d1edae8d22acd6a34a14c66f4e432b39e61
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669830"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917096"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Solucionar problemas de erros em soluções do Office
   Você pode encontrar problemas ao executar as seguintes tarefas durante o desenvolvimento de soluções do Office no Visual Studio:  
@@ -139,11 +139,11 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  Esse código resulta em erros de compilação a seguir:  
   
--   Visual Basic: "referência à classe 'DocumentClass' não é permitida quando seu assembly é vinculado usando o modo de não PIA."  
+- Visual Basic: "referência à classe 'DocumentClass' não é permitida quando seu assembly é vinculado usando o modo de não PIA."  
   
--   Visual c#: "tipo de interoperabilidade 'Microsoft.Office.Interop.Word.DocumentClass' não pode ser inserido. Use a interface aplicável."  
+- Visual c#: "tipo de interoperabilidade 'Microsoft.Office.Interop.Word.DocumentClass' não pode ser inserido. Use a interface aplicável."  
   
- Para resolver esse erro, modifique o código para fazer referência a interface correspondente em vez disso. Por exemplo, em vez de referência de um <xref:Microsoft.Office.Interop.Word.DocumentClass> de objeto, fazer referência a uma instância da <xref:Microsoft.Office.Interop.Word.Document> interface em vez disso.  
+  Para resolver esse erro, modifique o código para fazer referência a interface correspondente em vez disso. Por exemplo, em vez de referência de um <xref:Microsoft.Office.Interop.Word.DocumentClass> de objeto, fazer referência a uma instância da <xref:Microsoft.Office.Interop.Word.Document> interface em vez disso.  
   
 ```vb  
 Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument  

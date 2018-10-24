@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a111c1f7bc228a26ab320f82f19111eafaf2ee
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 6242b80c1dcefe0e1a3a35561337a75e6098d25d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924324"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913436"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Como criar um modelo 3D básico
 
@@ -42,37 +42,37 @@ Este artigo demonstra como usar o Editor de Modelo para criar um modelo 3D bási
 
 ### <a name="to-create-a-simplified-3d-model-of-a-house"></a>Para criar um modelo 3D simplificado de uma casa
 
-1.  Crie um modelo 3D com o qual trabalhar. Para obter informações sobre como adicionar um modelo ao seu projeto, consulte a seção de Introdução em [Editor de Modelo](../designers/model-editor.md).
+1. Crie um modelo 3D com o qual trabalhar. Para obter informações sobre como adicionar um modelo ao seu projeto, consulte a seção de Introdução em [Editor de Modelo](../designers/model-editor.md).
 
-2.  Adicione um cubo para a cena. Na janela **Caixa de Ferramentas**, em **Formas**, selecione **Cubo** e mova-o para a superfície de design.
+2. Adicione um cubo para a cena. Na janela **Caixa de Ferramentas**, em **Formas**, selecione **Cubo** e mova-o para a superfície de design.
 
-3.  Mude para seleção de face. Na barra de ferramentas do Editor de Modelo, escolha **Selecionar Face**.
+3. Mude para seleção de face. Na barra de ferramentas do Editor de Modelo, escolha **Selecionar Face**.
 
-4.  Subdivida a parte superior do cubo. No modo de seleção de face, escolha o cubo uma vez para ativá-lo para a seleção e, em seguida, escolha a parte superior do cubo para selecionar a face superior. Na barra de ferramentas do Editor de Modelo, escolha **Subdivide a face**. Isso adiciona novos vértices na parte superior do cubo que o dividem em quatro partições de tamanhos iguais.
+4. Subdivida a parte superior do cubo. No modo de seleção de face, escolha o cubo uma vez para ativá-lo para a seleção e, em seguida, escolha a parte superior do cubo para selecionar a face superior. Na barra de ferramentas do Editor de Modelo, escolha **Subdivide a face**. Isso adiciona novos vértices na parte superior do cubo que o dividem em quatro partições de tamanhos iguais.
 
-     ![A parte superior do cubo foi subdividida](../designers/media/gfx_model_demo_house_subdiv.png)
+    ![A parte superior do cubo foi subdividida](../designers/media/gfx_model_demo_house_subdiv.png)
 
-5.  Faça a extrusão de dois lados adjacentes do cubo, por exemplo, a frente e o lado direito do cubo. No modo de seleção de face, escolha uma vez o cubo para ativá-lo para a seleção e, em seguida, escolha um lado do cubo. Pressione e segure a tecla **Ctrl**, escolha outro lado do cubo que seja adjacente ao lado que foi selecionado primeiro e na barra de ferramentas do Editor de Modelo, clique em **Extrudar face**.
+5. Faça a extrusão de dois lados adjacentes do cubo, por exemplo, a frente e o lado direito do cubo. No modo de seleção de face, escolha uma vez o cubo para ativá-lo para a seleção e, em seguida, escolha um lado do cubo. Pressione e segure a tecla **Ctrl**, escolha outro lado do cubo que seja adjacente ao lado que foi selecionado primeiro e na barra de ferramentas do Editor de Modelo, clique em **Extrudar face**.
 
-     ![Os lados do cubo tiveram sido extrudados](../designers/media/gfx_model_demo_house_extrude.png)
+    ![Os lados do cubo tiveram sido extrudados](../designers/media/gfx_model_demo_house_extrude.png)
 
-6.  Estenda uma das extrusões. Escolha uma as faces que você acabou de extrudar e, na barra de ferramentas do Editor de Modelo, escolha a ferramenta **Mover** e mova o manipulador de movimento na mesma direção da extrusão.
+6. Estenda uma das extrusões. Escolha uma as faces que você acabou de extrudar e, na barra de ferramentas do Editor de Modelo, escolha a ferramenta **Mover** e mova o manipulador de movimento na mesma direção da extrusão.
 
-     ![Um lado do cubo foi extrudado mais ainda.](../designers/media/gfx_model_demo_house_extend.png)
+    ![Um lado do cubo foi extrudado mais ainda.](../designers/media/gfx_model_demo_house_extend.png)
 
-7.  Triangular o modelo. Na barra de ferramentas do Editor de Modelo, escolha **Avançado** > **Ferramentas** > **Triangular**.
+7. Triangular o modelo. Na barra de ferramentas do Editor de Modelo, escolha **Avançado** > **Ferramentas** > **Triangular**.
 
-8.  Crie o teto da casa. Mude para o modo de seleção de borda escolhendo **Selecionar Borda** na barra de ferramentas do Editor de Modelo e, em seguida, escolha o cubo para ativá-lo. Pressione e segure a tecla **Ctrl** enquanto você seleciona as bordas que são mostradas aqui:
+8. Crie o teto da casa. Mude para o modo de seleção de borda escolhendo **Selecionar Borda** na barra de ferramentas do Editor de Modelo e, em seguida, escolha o cubo para ativá-lo. Pressione e segure a tecla **Ctrl** enquanto você seleciona as bordas que são mostradas aqui:
 
-     ![As bordas que formarão o cume do telhado](../designers/media/gfx_model_demo_house_edges.png)
+    ![As bordas que formarão o cume do telhado](../designers/media/gfx_model_demo_house_edges.png)
 
-     Com as bordas selecionadas, na barra de ferramentas do Editor de Modelo, escolha a ferramenta **Mover** e, em seguida, mova o manipulador de movimento para cima a fim de criar o telhado da casa.
+    Com as bordas selecionadas, na barra de ferramentas do Editor de Modelo, escolha a ferramenta **Mover** e, em seguida, mova o manipulador de movimento para cima a fim de criar o telhado da casa.
 
- O modelo de casa simplificada está concluído. Aqui está o modelo final novamente, com sombreamento simples aplicado:
+   O modelo de casa simplificada está concluído. Aqui está o modelo final novamente, com sombreamento simples aplicado:
 
- ![O modelo concluído da casa simplificada](../designers/media/gfx_model_demo_house_final.png)
+   ![O modelo concluído da casa simplificada](../designers/media/gfx_model_demo_house_final.png)
 
- Como uma próxima etapa, você pode aplicar um sombreador a esse modelo 3D. Para obter informações, confira [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+   Como uma próxima etapa, você pode aplicar um sombreador a esse modelo 3D. Para obter informações, confira [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Consulte também
 
