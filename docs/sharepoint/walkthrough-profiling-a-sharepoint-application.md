@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d235508bb0b58ac17846d0b02db25f044c504deb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852734"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Passo a passo: Criar o perfil de um aplicativo do SharePoint
   Este passo a passo mostra como usar as ferramentas de criação de perfil no Visual Studio para otimizar o desempenho de um aplicativo do SharePoint. O aplicativo de exemplo é um receptor de evento de recurso do SharePoint que contém um loop ocioso que pode degradar o desempenho do receptor de evento do recurso. O criador de perfil do Visual Studio permite que você localize e eliminar a parte mais cara (desempenho mais lento) do projeto, também conhecido como o *afunilamento*.  
   
  Este passo a passo demonstra as seguintes tarefas:  
   
--   [Adicionando um recurso e o receptor de evento de recurso](#BKMK_AddFtrandFtrEvntReceiver).  
+- [Adicionando um recurso e o receptor de evento de recurso](#BKMK_AddFtrandFtrEvntReceiver).  
   
--   [Configurando e implantando o aplicativo do SharePoint](#BKMK_ConfigSharePointApp).  
+- [Configurando e implantando o aplicativo do SharePoint](#BKMK_ConfigSharePointApp).  
   
--   [Executando o aplicativo do SharePoint](#BKMK_RunSPApp).  
+- [Executando o aplicativo do SharePoint](#BKMK_RunSPApp).  
   
--   [Exibir e interpretar os resultados de criação de perfil](#BKMK_ViewResults).  
+- [Exibir e interpretar os resultados de criação de perfil](#BKMK_ViewResults).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
@@ -52,23 +52,23 @@ ms.locfileid: "42634700"
   
 #### <a name="to-create-a-sharepoint-project"></a>Para criar um projeto do SharePoint  
   
-1.  Na barra de menus, escolha **arquivo** > **New** > **projeto** para exibir o **novo projeto** caixa de diálogo.  
+1. Na barra de menus, escolha **arquivo** > **New** > **projeto** para exibir o **novo projeto** caixa de diálogo.  
   
-2.  Expanda o **SharePoint** nó em um **Visual c#** ou **Visual Basic**e, em seguida, escolha o **2010** nó.  
+2. Expanda o **SharePoint** nó em um **Visual c#** ou **Visual Basic**e, em seguida, escolha o **2010** nó.  
   
-3.  No painel modelos, escolha o **projeto do SharePoint 2010** modelo.  
+3. No painel modelos, escolha o **projeto do SharePoint 2010** modelo.  
   
-4.  No **nome** , digite **ProfileTest**e, em seguida, escolha o **Okey** botão.  
+4. No **nome** , digite **ProfileTest**e, em seguida, escolha o **Okey** botão.  
   
-     O **Assistente para personalização do SharePoint** é exibida.  
+    O **Assistente para personalização do SharePoint** é exibida.  
   
-5.  Sobre o **especificar o nível de site e segurança para depuração** página, insira a URL do servidor do site do SharePoint onde você deseja depurar a definição de site ou usar o local padrão (http://*nome do sistema*/) .  
+5. Sobre o **especificar o nível de site e segurança para depuração** página, insira a URL do servidor do site do SharePoint onde você deseja depurar a definição de site ou usar o local padrão (http://<em>nome do sistema</em>/) .  
   
-6.  No **qual é o nível de confiança para essa solução do SharePoint?** , escolha o **implantar como uma solução de farm** botão de opção.  
+6. No **qual é o nível de confiança para essa solução do SharePoint?** , escolha o **implantar como uma solução de farm** botão de opção.  
   
-     No momento, você pode apenas soluções de farm de perfil. Para obter mais informações sobre soluções em área restrita em comparação com soluções de farm, consulte [considerações sobre a solução em área restrita](../sharepoint/sandboxed-solution-considerations.md).  
+    No momento, você pode apenas soluções de farm de perfil. Para obter mais informações sobre soluções em área restrita em comparação com soluções de farm, consulte [considerações sobre a solução em área restrita](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Escolha o **concluir** botão. O projeto aparece na **Gerenciador de soluções**.  
+7. Escolha o **concluir** botão. O projeto aparece na **Gerenciador de soluções**.  
   
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Adicionar um recurso e o receptor de evento de recurso
  Em seguida, adicione um recurso para o projeto, juntamente com um receptor de eventos para o recurso. Esse receptor de evento conterá o código para criação de perfil.  

@@ -18,12 +18,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8eadbd73c82bc40d6b3b669968cb8808ab2991d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251908"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852525"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Explicação passo a passo: Criando e executando testes de unidade de aplicativos da Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
   
  O Visual Studio fornece a seguinte funcionalidade de teste de unidade:  
   
--   [Criar projetos de teste de unidade](#CreateAndRunUnitTestWin8Tailored_Create)  
+- [Criar projetos de teste de unidade](#CreateAndRunUnitTestWin8Tailored_Create)  
   
--   [Editar o manifesto para o projeto de teste de unidade](#CreateAndRunUnitTestWin8Tailored_Manifest)  
+- [Editar o manifesto para o projeto de teste de unidade](#CreateAndRunUnitTestWin8Tailored_Manifest)  
   
--   [Codificar o teste de unidade](#CreateAndRunUnitTestWin8Tailored_Code)  
+- [Codificar o teste de unidade](#CreateAndRunUnitTestWin8Tailored_Code)  
   
--   [Executar testes de unidade](#CreateAndRunUnitTestWin8Tailored_Run)  
+- [Executar testes de unidade](#CreateAndRunUnitTestWin8Tailored_Run)  
   
- Os procedimentos a seguir descrevem as etapas para criar, executar e depurar testes de unidade para aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Windows 8 gerenciado .  
+  Os procedimentos a seguir descrevem as etapas para criar, executar e depurar testes de unidade para aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Windows 8 gerenciado .  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Visual Studio  

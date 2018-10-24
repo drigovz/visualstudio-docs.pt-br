@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5de5eb0fd616e969b7a7eee628b4ef715d16b2a8
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 27a83dbb0e679c048f4cac433291524b3248eed9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468758"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847598"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Instruções passo a passo: escrevendo um visualizador no Visual Basic
 Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. O visualizador que você criará neste passo a passo exibe o conteúdo de uma cadeia de caracteres usando uma caixa de mensagem do Windows Forms. Esse visualizador simples de cadeia de caracteres é um exemplo básico para mostrar como você pode criar visualizadores para outros tipos de dados mais aplicáveis a seus projetos.  
@@ -37,70 +37,70 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
   
 #### <a name="to-create-a-class-library-project"></a>Para criar um projeto da biblioteca de classes  
   
-1.  Sobre o **arquivo** menu, escolha **New** e clique em **novo projeto**.  
+1. Sobre o **arquivo** menu, escolha **New** e clique em **novo projeto**.  
   
-2.  No **novo projeto** caixa de diálogo, selecione **Visual Basic**.  
+2. No **novo projeto** caixa de diálogo, selecione **Visual Basic**.  
   
-3.  Sob **.NET Standard**, clique em **biblioteca de classes**.  
+3. Sob **.NET Standard**, clique em **biblioteca de classes**.  
   
-4.  No **nome** , digite um nome apropriado para a biblioteca de classes, como **MyFirstVisualizer**.  
+4. No **nome** , digite um nome apropriado para a biblioteca de classes, como **MyFirstVisualizer**.  
   
-5.  Clique em **OK**.  
+5. Clique em **OK**.  
   
- Quando você criou a biblioteca de classes, você deverá adicionar uma referência a Microsoft.VisualStudio.DebuggerVisualizers.DLL de forma que possa usar as classes definidas nela. Primeiro, no entanto, dê ao seu projeto um nome significativo.  
+   Quando você criou a biblioteca de classes, você deverá adicionar uma referência a Microsoft.VisualStudio.DebuggerVisualizers.DLL de forma que possa usar as classes definidas nela. Primeiro, no entanto, dê ao seu projeto um nome significativo.  
   
 #### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>Para renomear Class1.vb e adicionar Microsoft.VisualStudio.DebuggerVisualizers  
   
-1.  Na **Gerenciador de soluções**, clique com botão direito **Class1.vb**e no menu de atalho, clique em **Renomear**.  
+1. Na **Gerenciador de soluções**, clique com botão direito **Class1.vb**e no menu de atalho, clique em **Renomear**.  
   
-2.  Altere o nome de Class1.vb para algo significativo, por exemplo, DebuggerSide.vb.  
+2. Altere o nome de Class1.vb para algo significativo, por exemplo, DebuggerSide.vb.  
   
-    > [!NOTE]
-    >  O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automaticamente altera a declaração de classes em DebuggerSide.vb para corresponder ao novo nome do arquivo.  
+   > [!NOTE]
+   >  O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automaticamente altera a declaração de classes em DebuggerSide.vb para corresponder ao novo nome do arquivo.  
   
-3.  Na **Gerenciador de soluções**, clique com botão direito **meu primeiro visualizador**e no menu de atalho, clique em **Add Reference**.  
+3. Na **Gerenciador de soluções**, clique com botão direito **meu primeiro visualizador**e no menu de atalho, clique em **Add Reference**.  
   
-4.  No **adicionar referência** caixa de diálogo do **.NET** , clique em DebuggerVisualizers.  
+4. No **adicionar referência** caixa de diálogo do **.NET** , clique em DebuggerVisualizers.  
   
-5.  Clique em **OK**.  
+5. Clique em **OK**.  
   
-6.  Em DebuggerSide.vb, adicione a seguinte instrução às instruções `Imports`:  
+6. Em DebuggerSide.vb, adicione a seguinte instrução às instruções `Imports`:  
   
-    ```vb
-    Imports Microsoft.VisualStudio.DebuggerVisualizers  
-    ```  
+   ```vb
+   Imports Microsoft.VisualStudio.DebuggerVisualizers  
+   ```  
   
 ## <a name="add-the-debugger-side-code"></a>Adicionar o código do lado do depurador  
  Agora você está pronto para criar o código do lado do depurador. Este é o código executado no depurador para exibir as informações que você deseja visualizar. Primeiro, você tem que alterar a declaração do objeto `DebuggerSide` de forma que ele herde da classe base `DialogDebuggerVisualizer`.  
   
 #### <a name="to-inherit-from-dialogdebuggervisualizer"></a>Para herdar de DialogDebuggerVisualizer  
   
-1.  Em DebuggerSide.vb, vá para a seguinte linha de código:  
+1. Em DebuggerSide.vb, vá para a seguinte linha de código:  
   
-    ```vb
-    Public Class DebuggerSide  
-    ```  
+   ```vb
+   Public Class DebuggerSide  
+   ```  
   
-2.  Edite o código de forma que tenha esta aparência:  
+2. Edite o código de forma que tenha esta aparência:  
   
-    ```vb
-    Public Class DebuggerSide  
-    Inherits DialogDebuggerVisualizer  
-    ```  
+   ```vb
+   Public Class DebuggerSide  
+   Inherits DialogDebuggerVisualizer  
+   ```  
   
- `DialogDebuggerVisualizer` tem um método abstrato `Show`, que você deve substituir.  
+   `DialogDebuggerVisualizer` tem um método abstrato `Show`, que você deve substituir.  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Para substituir o método DialogDebuggerVisualizer.Show  
   
--   Em `public class DebuggerSide`, adicione o seguinte método:  
+- Em `public class DebuggerSide`, adicione o seguinte método:  
   
-    ```vb
-    Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
+  ```vb
+  Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
   
-        End Sub  
-    ```  
+      End Sub  
+  ```  
   
- O método `Show` contém o código que realmente cria a caixa de diálogo DO visualizador ou outra interface de usuário e exibe as informações que foram passadas para o visualizador do depurador. Adicione o código que cria a caixa de diálogo e exibe as informações. Neste passo a passo, você fará isso usando uma caixa de mensagem do Windows Forms. Primeiro, você deve adicionar uma referência e uma instrução `Imports` para <xref:System.Windows.Forms>.  
+  O método `Show` contém o código que realmente cria a caixa de diálogo DO visualizador ou outra interface de usuário e exibe as informações que foram passadas para o visualizador do depurador. Adicione o código que cria a caixa de diálogo e exibe as informações. Neste passo a passo, você fará isso usando uma caixa de mensagem do Windows Forms. Primeiro, você deve adicionar uma referência e uma instrução `Imports` para <xref:System.Windows.Forms>.  
   
 #### <a name="to-add-systemwindowsforms"></a>Para adicionar System.Windows.Forms  
   
@@ -149,30 +149,30 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
   
 #### <a name="to-add-a-test-method-to-show-the-visualizer"></a>Para adicionar um método de teste para mostrar o visualizador  
   
-1.  Adicione o método a seguir à classe `public DebuggerSide`.  
+1. Adicione o método a seguir à classe `public DebuggerSide`.  
   
-    ```vb
-    Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
-        Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
-    visualizerHost.ShowVisualizer()  
-    End Sub  
-    ```  
+   ```vb
+   Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
+       Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
+   visualizerHost.ShowVisualizer()  
+   End Sub  
+   ```  
   
-2.  Sobre o **construir** menu, clique em **compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.  
+2. Sobre o **construir** menu, clique em **compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.  
   
- Em seguida, você deverá criar um projeto executável para chamar sua DLL do visualizador. Para simplificar, use um projeto de aplicativo de console.  
+   Em seguida, você deverá criar um projeto executável para chamar sua DLL do visualizador. Para simplificar, use um projeto de aplicativo de console.  
   
 #### <a name="to-add-a-console-application-project-to-the-solution"></a>Para adicionar um projeto de aplicativo de console à solução  
   
-1.  Sobre o **arquivo** menu, clique em **Add**e, em seguida, clique em **novo projeto**.  
+1. Sobre o **arquivo** menu, clique em **Add**e, em seguida, clique em **novo projeto**.  
   
-2.  No **adicionar novo projeto** caixa de diálogo, selecione **Visual Basic**e, em seguida, clique em **aplicativo de Console**.  
+2. No **adicionar novo projeto** caixa de diálogo, selecione **Visual Basic**e, em seguida, clique em **aplicativo de Console**.  
   
-3.  No **nome** , digite um nome significativo para o aplicativo de console, como **MyTestConsole**.  
+3. No **nome** , digite um nome significativo para o aplicativo de console, como **MyTestConsole**.  
   
-4.  Clique em **OK**.  
+4. Clique em **OK**.  
   
- Agora, você deve adicionar as referências necessárias para que MyTestConsole possa chamar MyFirstVisualizer.  
+   Agora, você deve adicionar as referências necessárias para que MyTestConsole possa chamar MyFirstVisualizer.  
   
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>Para adicionar as referências necessárias a MyTestConsole  
   
@@ -193,38 +193,38 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
   
 #### <a name="to-add-code-to-mytestconsole"></a>Para adicionar código a MyTestConsole  
   
-1.  Na **Gerenciador de soluções**, clique com botão direito **Program. vb**e no menu de atalho, clique em **Renomear**.  
+1. Na **Gerenciador de soluções**, clique com botão direito **Program. vb**e no menu de atalho, clique em **Renomear**.  
   
-2.  Editar o nome de Module1.vb para algo apropriado, como **TestConsole**.  
+2. Editar o nome de Module1.vb para algo apropriado, como **TestConsole**.  
   
-     Observe que o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automaticamente altera a declaração de classes em TestConsole.vb para corresponder ao novo nome do arquivo.  
+    Observe que o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automaticamente altera a declaração de classes em TestConsole.vb para corresponder ao novo nome do arquivo.  
   
-3.  No TestConsole. VB, adicione o seguinte `Imports` instrução:  
+3. No TestConsole. VB, adicione o seguinte `Imports` instrução:  
   
-    ```vb
-    Imports MyFirstVisualizer  
-    ```  
+   ```vb
+   Imports MyFirstVisualizer  
+   ```  
   
-4.  No método `Main`, adicione o seguinte código:  
+4. No método `Main`, adicione o seguinte código:  
   
-    ```vb
-    Dim myString As String = "Hello, World"  
-    DebuggerSide.TestShowVisualizer(myString)  
-    ```  
+   ```vb
+   Dim myString As String = "Hello, World"  
+   DebuggerSide.TestShowVisualizer(myString)  
+   ```  
   
- Agora, você está pronto para testar seu primeiro visualizador.  
+   Agora, você está pronto para testar seu primeiro visualizador.  
   
 #### <a name="to-test-the-visualizer"></a>Para testar o visualizador  
   
-1.  Na **Gerenciador de soluções**, clique com botão direito **MyTestConsole**e no menu de atalho, clique em **Set as Startup Project**.  
+1. Na **Gerenciador de soluções**, clique com botão direito **MyTestConsole**e no menu de atalho, clique em **Set as Startup Project**.  
   
-2.  Sobre o **Debug** menu, clique em **iniciar**.  
+2. Sobre o **Debug** menu, clique em **iniciar**.  
   
-     O aplicativo de console é iniciado. O visualizador aparece e exibe a cadeia de caracteres “Hello, World”.  
+    O aplicativo de console é iniciado. O visualizador aparece e exibe a cadeia de caracteres “Hello, World”.  
   
- Parabéns. Você acabou de criar e testar seu primeiro visualizador.  
+   Parabéns. Você acabou de criar e testar seu primeiro visualizador.  
   
- Se você quiser usar o visualizador no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] em vez de apenas chamá-lo do teste automatizado, será preciso instalá-lo. Para obter mais informações, consulte [como: instalar um visualizador](../debugger/how-to-install-a-visualizer.md).  
+   Se você quiser usar o visualizador no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] em vez de apenas chamá-lo do teste automatizado, será preciso instalá-lo. Para obter mais informações, consulte [como: instalar um visualizador](../debugger/how-to-install-a-visualizer.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Arquitetura do Visualizador](../debugger/visualizer-architecture.md)   
