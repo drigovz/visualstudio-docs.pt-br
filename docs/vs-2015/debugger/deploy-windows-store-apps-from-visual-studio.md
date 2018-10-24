@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 540a335365102f279f62f0707ee3cf7cc4fe1b53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 95b0b2dfd85f1184dc81c2c395d902d50626f7f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196099"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827266"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Implantar aplicativos da Windows Store pelo Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
   
  A funcionalidade de implantação do Visual Studio compila e registra aplicativos na Windows Store que são criados com o Visual Studio em um dispositivo de destino. Exatamente como o aplicativo é registrado depende de o dispositivo de destino ser local ou remoto:  
   
--   Quando o destino é o computador local com o Visual Studio, ele registra o aplicativo de sua pasta de build.  
+- Quando o destino é o computador local com o Visual Studio, ele registra o aplicativo de sua pasta de build.  
   
--   Quando o destino é um dispositivo remoto, o Visual Studio copia os arquivos necessários ao computador remoto e registra o aplicativo nesse dispositivo.  
+- Quando o destino é um dispositivo remoto, o Visual Studio copia os arquivos necessários ao computador remoto e registra o aplicativo nesse dispositivo.  
   
- Implantação é automática quando você depura seu aplicativo do Visual Studio usando o **iniciar depuração** opção (teclado: F5) ou o **Start Without Debugging** opção (teclado: CTRL + F5). Você também pode implantar seu aplicativo manualmente. A implantação manual é útil nos seguintes cenários:  
+  Implantação é automática quando você depura seu aplicativo do Visual Studio usando o **iniciar depuração** opção (teclado: F5) ou o **Start Without Debugging** opção (teclado: CTRL + F5). Você também pode implantar seu aplicativo manualmente. A implantação manual é útil nos seguintes cenários:  
   
--   Teste ad-hoc em um computador local ou remoto.  
+- Teste ad-hoc em um computador local ou remoto.  
   
--   Implantação de um aplicativo que iniciará outro aplicativo que você quer depurar.  
+- Implantação de um aplicativo que iniciará outro aplicativo que você quer depurar.  
   
--   Implantação de um aplicativo que será depurado quando é iniciado por outro aplicativo ou método.  
+- Implantação de um aplicativo que será depurado quando é iniciado por outro aplicativo ou método.  
   
 ##  <a name="BKMK_In_this_topic"></a> Neste tópico  
  Neste tópico, você pode aprender:  
@@ -78,33 +78,33 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
   
 #### <a name="to-specify-a-remote-device"></a>Para especificar um dispositivo remoto  
   
-1.  Na página de propriedade de depuração do projeto de inicialização, especifique o nome ou o endereço IP de um destino de implantação remoto.  
+1. Na página de propriedade de depuração do projeto de inicialização, especifique o nome ou o endereço IP de um destino de implantação remoto.  
   
-2.  Para abrir a página de propriedades de depuração, escolha o projeto no Gerenciador de soluções e, em seguida, escolha **propriedades** no menu de atalho.  
+2. Para abrir a página de propriedades de depuração, escolha o projeto no Gerenciador de soluções e, em seguida, escolha **propriedades** no menu de atalho.  
   
-3.  Em seguida, escolha o **depurar** nó na janela de páginas de propriedade.  
+3. Em seguida, escolha o **depurar** nó na janela de páginas de propriedade.  
   
-4.  Você pode digitar o nome ou endereço IP do dispositivo remoto, ou você pode escolher o dispositivo a partir de **Selecionar Conexão de depurador remoto** caixa de diálogo.  
+4. Você pode digitar o nome ou endereço IP do dispositivo remoto, ou você pode escolher o dispositivo a partir de **Selecionar Conexão de depurador remoto** caixa de diálogo.  
   
-     ![Marque a caixa de diálogo Conexão de depurador remoto](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
+    ![Marque a caixa de diálogo Conexão de depurador remoto](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
   
-     O **Selecionar Conexão de depurador remoto** caixa de diálogo exibe os dispositivos na sub-rede local e em qualquer dispositivo que está conectado diretamente ao computador do Visual Studio por um cabo Ethernet.  
+    O **Selecionar Conexão de depurador remoto** caixa de diálogo exibe os dispositivos na sub-rede local e em qualquer dispositivo que está conectado diretamente ao computador do Visual Studio por um cabo Ethernet.  
   
- **Especificar o dispositivo remoto em uma página de projeto do Visual C++ ou JavaScript**  
+   **Especificar o dispositivo remoto em uma página de projeto do Visual C++ ou JavaScript**  
   
- ![C&#43; &#43; propriedades para depuração remota do projeto](../debugger/media/vsrun-cpp-projprop-remote.png "VSRUN_CPP_ProjProp_Remote")  
+   ![C&#43; &#43; propriedades para depuração remota do projeto](../debugger/media/vsrun-cpp-projprop-remote.png "VSRUN_CPP_ProjProp_Remote")  
   
-1.  Escolher **depurador remoto** da **depurador a iniciar** lista.  
+5. Escolher **depurador remoto** da **depurador a iniciar** lista.  
   
-2.  Insira o nome de rede do dispositivo remoto na **nome da máquina** caixa. Ou então, você pode escolher a seta para baixo na caixa para selecionar o dispositivo da caixa de diálogo Selecionar Conexão de Depurador Remoto.  
+6. Insira o nome de rede do dispositivo remoto na **nome da máquina** caixa. Ou então, você pode escolher a seta para baixo na caixa para selecionar o dispositivo da caixa de diálogo Selecionar Conexão de Depurador Remoto.  
   
- **Especificar o dispositivo remoto em uma página de projeto do Visual c# e Visual Basic**  
+   **Especificar o dispositivo remoto em uma página de projeto do Visual c# e Visual Basic**  
   
- ![Gerenciado propriedades do projeto para depuração remota](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  
+   ![Gerenciado propriedades do projeto para depuração remota](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  
   
-1.  Escolher **computador remoto** da **dispositivo de destino** lista.  
+7. Escolher **computador remoto** da **dispositivo de destino** lista.  
   
-2.  Insira o nome de rede do dispositivo remoto na **computador remoto** caixa ou clique em **localizar** para escolher o dispositivo dos **Selecionar Conexão de depurador remoto** caixa de diálogo.  
+8. Insira o nome de rede do dispositivo remoto na **computador remoto** caixa ou clique em **localizar** para escolher o dispositivo dos **Selecionar Conexão de depurador remoto** caixa de diálogo.  
   
 ##  <a name="BKMK_Deployment_options"></a> Opções de implantação  
  Você pode definir as opções de implantação a seguir na página de propriedade de depuração do projeto de inicialização.  
@@ -114,16 +114,16 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
   
  Para remover a isenção de loopback de rede do aplicativo:  
   
--   Na página de propriedade de depuração c# e VB, desmarque a **permitir Loopback de rede** caixa de seleção.  
+- Na página de propriedade de depuração c# e VB, desmarque a **permitir Loopback de rede** caixa de seleção.  
   
--   Na página de propriedade de JavaScript e depuração, defina as **permitir Loopback de rede** valor para **não**.  
+- Na página de propriedade de JavaScript e depuração, defina as **permitir Loopback de rede** valor para **não**.  
   
- **Não iniciar, mas depurar meu código quando ele iniciar (c# e VB) / Iniciar aplicativo (JavaScript e C++)**  
- Para configurar a implantação para iniciar automaticamente uma sessão de depuração quando o aplicativo é iniciado:  
+  **Não iniciar, mas depurar meu código quando ele iniciar (c# e VB) / Iniciar aplicativo (JavaScript e C++)**  
+  Para configurar a implantação para iniciar automaticamente uma sessão de depuração quando o aplicativo é iniciado:  
   
--   Na página de propriedade de depuração c# e VB, marque a **não iniciar, mas depurar meu código quando iniciar** caixa de seleção.  
+- Na página de propriedade de depuração c# e VB, marque a **não iniciar, mas depurar meu código quando iniciar** caixa de seleção.  
   
--   Na página de propriedade de JavaScript e depuração, defina as **aplicativo&lt;3}.&lt;1** valor para **Sim**.  
+- Na página de propriedade de JavaScript e depuração, defina as **aplicativo&lt;3}.&lt;1** valor para **Sim**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Executar aplicativos usando o Visual Studio](../debugger/run-store-apps-from-visual-studio.md)

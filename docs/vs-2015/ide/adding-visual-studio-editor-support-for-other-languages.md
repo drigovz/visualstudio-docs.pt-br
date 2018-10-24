@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5fc84272c7041c2d761b4f4ec96add898659049
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0a978470a307c46805e902db85cd5a638c0d83f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300502"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823769"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Adicionando suporte para outras linguagens ao editor do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,23 +49,23 @@ Saiba mais sobre como o editor do Visual Studio dá suporte à leitura e à nave
   
  Além da colorização de sintaxe e do preenchimento de declaração, o Visual Studio também tem um recurso chamado [Navegar até](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Esse recurso permite pesquisar rapidamente arquivos de código, caminhos de arquivo e símbolos de código. O Visual Studio oferece suporte Navegar até para as seguintes linguagens.  
   
--   Ir  
+- Ir  
   
--   Java  
+- Java  
   
--   JavaScript  
+- JavaScript  
   
--   PHP  
+- PHP  
   
--   TypeScript  
+- TypeScript  
   
--   Visual Basic  
+- Visual Basic  
   
--   Visual C++  
+- Visual C++  
   
--   Visual C#  
+- Visual C#  
   
- Todos esses tipos de arquivo têm os recursos descritos anteriormente, mesmo se o suporte para uma linguagem determinada ainda não tenha sido instalado. Instalar suporte especializado para algumas linguagens pode oferecer suporte a outras linguagens, como IntelliSense ou outros recursos de linguagem avançados como Light Bulbs.  
+  Todos esses tipos de arquivo têm os recursos descritos anteriormente, mesmo se o suporte para uma linguagem determinada ainda não tenha sido instalado. Instalar suporte especializado para algumas linguagens pode oferecer suporte a outras linguagens, como IntelliSense ou outros recursos de linguagem avançados como Light Bulbs.  
   
 ## <a name="adding-support-for-non-supported-languages"></a>Adicionando suporte para linguagens sem suporte  
  A Atualização 1 do Visual Studio 2015 e versões posteriores oferecem suporte a linguagens no editor usando [Gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Se a sua linguagem de programação favorita não tiver suporte no editor do Visual Studio, em primeiro lugar, pesquise na Web – um pacote TextMate para a linguagem já pode existir. No entanto, se você não encontrar um, será possível adicionar suporte a ela sozinho na Atualização 1 do Visual Studio 2015 ou posteriormente, criando um modelo de pacote TextMate para snippets e gramáticas de linguagem.  

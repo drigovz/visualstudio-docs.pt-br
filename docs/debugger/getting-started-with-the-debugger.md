@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4534db0f4e85cda2cb3f0c45fdd57e768fa75ab1
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: d9cb4e6b69f88f0c3e61d17211ffe5ff464f1b17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101037"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827552"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Tutorial: Aprenda a depurar usando o Visual Studio
 
 Este artigo apresenta os recursos do depurador do Visual Studio no passo a passo. Se você quiser uma exibição de alto nível dos recursos do depurador, consulte [tour pelos recursos do depurador](../debugger/debugger-feature-tour.md). Quando você *depurar seu aplicativo*, isso normalmente significa que você está executando seu aplicativo com o depurador anexado. Quando você fizer isso, o depurador fornece várias maneiras de ver o que está fazendo o seu código enquanto ele é executado. Você pode percorrer seu código e examinar os valores armazenados em variáveis, você pode definir inspeções em variáveis para ver quando os valores são alterados, você pode examinar o caminho de execução do seu código, ver se uma ramificação de código está em execução, e assim por diante. Se essa for a primeira vez que você tentou depurar o código, você talvez queira ler [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes de prosseguir com este artigo.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo")  |    [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sobre depuração, que mostra etapas semelhantes. |
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sobre depuração, que mostra etapas semelhantes. |
 
 Embora o aplicativo de demonstração é c# e C++, os recursos são aplicáveis ao Visual Basic, JavaScript e outras linguagens com suporte pelo Visual Studio (exceto onde observado). As capturas de tela estão em c#.
 
@@ -329,8 +329,8 @@ Em grande parte, podemos usar os atalhos de teclado aqui, porque ele é uma boa 
 
      ![Usar o executar para clicar recurso](../debugger/media/get-started-run-to-click.png "executar com um clique")
 
-    >  [!NOTE]
-    > O **executar com um clique** há de novo no botão [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Se você não vir o botão de seta verde, use **F11** neste exemplo em vez disso, para avançar o depurador ao lugar certo.
+   > [!NOTE]
+   > O **executar com um clique** há de novo no botão [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Se você não vir o botão de seta verde, use **F11** neste exemplo em vez disso, para avançar o depurador ao lugar certo.
 
 6. Clique o **executar com um clique** botão ![executar com um clique](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
@@ -408,14 +408,14 @@ Recursos que permitem que você inspecione as variáveis são um dos recursos ma
 
 1. Enquanto está em pausa na `foreach` loop (`for` loop for em C++), clique no **pilha de chamadas** janela, por padrão, abrir no painel inferior direito.
 
-1. Clique em **F11** algumas vezes até ver o depurador pausa no `Circle.Draw` método no editor de códigos. Examine os **pilha de chamadas** janela.
+2. Clique em **F11** algumas vezes até ver o depurador pausa no `Circle.Draw` método no editor de códigos. Examine os **pilha de chamadas** janela.
 
     ![Examinar a pilha de chamadas](../debugger/media/get-started-call-stack.png "ExamineCallStack")
 
     O **pilha de chamadas** janela mostra a ordem em que métodos e funções estão sendo chamadas. A linha superior mostra a função atual (o `Circle.Draw` ou `Circle::Draw` método neste aplicativo). A segunda linha mostra que `Circle.Draw` foi chamado a partir de `Main` método (`main` em C++) e assim por diante.
 
-    >  [!NOTE]
-    > O **pilha de chamadas** janela é semelhante à perspectiva de depuração em alguns IDEs como o Eclipse.
+   > [!NOTE]
+   > O **pilha de chamadas** janela é semelhante à perspectiva de depuração em alguns IDEs como o Eclipse.
 
     A pilha de chamadas é uma boa maneira para examinar e entender o fluxo de execução de um aplicativo.
 

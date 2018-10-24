@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edd88755fbc3065cf6d9ff95b9859b7e70393300
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9b7d898f4be4a314a8f046399f9d82ca9a9a84f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669970"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811575"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Assistente de publicação (desenvolvimento do Office no Visual Studio)
   Use o **Assistente de publicação** para copiar arquivos de solução para um local especificado, criar os arquivos de manifesto e criar um programa de instalação.  
@@ -41,13 +41,13 @@ ms.locfileid: "35669970"
   
  Digite o local como um caminho de disco, compartilhamento de arquivos, site FTP ou URL do site da web ou clique a **procurar** botão para procurar o local. O caminho pode ser nos seguintes formatos:  
   
--   Um caminho relativo ou absoluto no padrão Windows Formatar, como *C:\Deploy\MyApplication* ou *\MyApplication*.  
+- Um caminho relativo ou absoluto no padrão Windows Formatar, como *C:\Deploy\MyApplication* ou *\MyApplication*.  
   
--   Um caminho de convenção de nomenclatura Universal (UNC), como  *\\\ServerName\MyApplication\\*.  
+- Um caminho de convenção de nomenclatura Universal (UNC), como  *\\\ServerName\MyApplication\\*.  
   
--   Uma URL de uma web site, como http://www.microsoft.com/MyApplication.  
+- Uma URL de uma web site, como http://www.microsoft.com/MyApplication.  
   
- Por padrão, é o local de publicação *http://localhost/projectname/* se tiver instalado o IIS ou o diretório de Publish se você fizer não tiver o IIS instalado.  
+  Por padrão, é o local de publicação *http://localhost/projectname/* se tiver instalado o IIS ou o diretório de Publish se você fizer não tiver o IIS instalado.  
   
 > [!NOTE]  
 >  Existem considerações mais se o computador de destino está executando o Windows Vista. Você deve ser um administrador no computador Windows Vista para usar a opção de publicação local. Além disso, o local padrão é sempre o *publique\\*  diretório, independentemente de você ter instalado o IIS.  

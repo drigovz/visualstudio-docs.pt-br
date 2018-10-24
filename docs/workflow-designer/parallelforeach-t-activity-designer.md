@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b8a8790cfa4f4e1f962fa5e6ce82b62781430f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c62918811ba91fe9c30f60e930ce77a640959d0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756900"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846337"
 ---
 # <a name="parallelforeach-activity-designer"></a>Designer de atividade de ParallelForEach
 
@@ -44,7 +44,7 @@ O **ParallelForEach\<T >** designer de atividade pode ser arrastado dos **caixa 
 A tabela a seguir mostra as propriedades mais úteis de atividade de <xref:System.Activities.Statements.ParallelForEach%601> e descreve como elas são usadas no designer.
 
 |Nome da Propriedade|Necessária|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica o nome amigável para exibição do designer de atividade no cabeçalho. O valor padrão é **ParallelForEach\<Int32 >**. O valor pode ser editado no, opcionalmente, o **propriedades** grade ou diretamente no cabeçalho do designer de atividade.|
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|A atividade a executar para cada item na coleção. Para adicionar o <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> atividade, soltar uma atividade na caixa de ferramentas para o **corpo** caixa no **ParallelForEach\<T >** designer de atividade com o texto de dica "Descartar atividade aqui".|
 |**TypeArgument**|verdadeiro|O tipo dos itens na <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> coleção especificada pelo parâmetro genérico *T*. Por padrão, **TypeArgument** é definido como **Int32**. Para alterar o tipo T na **ParallelForEach < T\>**  designer de atividade, altere o valor da **TypeArgument** caixa de combinação na grade de propriedade.|

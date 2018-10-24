@@ -15,12 +15,12 @@ ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf9285cb19bfeb2a9d3417d90e4c69ea9abc2ad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3ed255d5b8a876ff29e5230c4517ab0b5e04398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266962"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843399"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>Escolhendo o diretório de instalação de um VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,17 +54,17 @@ Um VSPackage e seus arquivos de suporte devem estar no sistema de arquivos do us
   
  [Gerenciar VSPackages](../../extensibility/managing-vspackages.md) indica que as entradas do registro controlam onde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , na verdade, o DLL de satélite procura um VSPackage. No entanto, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tenta carregar uma DLL satélite em um subdiretório nomeado para um valor LCID, na seguinte ordem:  
   
-1.  Padrão LCID (VS LCID por exemplo \1033 para inglês)  
+1. Padrão LCID (VS LCID por exemplo \1033 para inglês)  
   
-2.  LCID padrão com a subidioma padrão.  
+2. LCID padrão com a subidioma padrão.  
   
-3.  LCID padrão do sistema.  
+3. LCID padrão do sistema.  
   
-4.  Padrão do sistema LCID com subidioma o padrão.  
+4. Padrão do sistema LCID com subidioma o padrão.  
   
-5.  DOS EUA Inglês (. \1033 ou. \0x409).  
+5. DOS EUA Inglês (. \1033 ou. \0x409).  
   
- Se a sua DLL VSPackage inclui recursos e os pontos de entrada de registro SatelliteDll\DllName a ele, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tentará carregá-los na ordem acima.  
+   Se a sua DLL VSPackage inclui recursos e os pontos de entrada de registro SatelliteDll\DllName a ele, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tentará carregá-los na ordem acima.  
   
 ## <a name="see-also"></a>Consulte também  
  [Escolher entre VSPackages compartilhados e com controle de versão](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   

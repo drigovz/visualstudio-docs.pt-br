@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0b65e204f9af28eea59d45cdf8fd591bf7e2dabd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8bca7452b94aa8e65386c3d5ef77e9f36ab98df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306105"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828696"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analisar a qualidade do código do Visual Basic e C# em aplicativos da Store usando a análise de código estático do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,17 +49,17 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 ##  <a name="BKMK_Run"></a> Executando análise de código  
  Para executar a análise de código em sua solução do Visual Studio:  
   
--   No menu **Compilar**, escolha **Executar Análise de Código na Solução**.  
+- No menu **Compilar**, escolha **Executar Análise de Código na Solução**.  
   
- Para executar a análise de código automaticamente cada vez que você compilar um projeto:  
+  Para executar a análise de código automaticamente cada vez que você compilar um projeto:  
   
-1.  Clique com o botão direito do mouse no nome do projeto no Gerenciador de Soluções e escolha **Propriedades**.  
+1. Clique com o botão direito do mouse no nome do projeto no Gerenciador de Soluções e escolha **Propriedades**.  
   
-2.  Na página de propriedades do projeto, escolha **Análise de Código** e depois **Habilitar Análise de Código no Build (define a constante CODEANALYSIS)**.  
+2. Na página de propriedades do projeto, escolha **Análise de Código** e depois **Habilitar Análise de Código no Build (define a constante CODEANALYSIS)**.  
   
- A solução é compilada e a análise de código é executada. Os resultados aparecem na janela Análise de Código.  
+   A solução é compilada e a análise de código é executada. Os resultados aparecem na janela Análise de Código.  
   
- ![Janela Análise de Código](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
+   ![Janela Análise de Código](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
   
 ##  <a name="BKMK_Analyze"></a> Analisando e resolvendo avisos da análise de código  
  Para analisar um aviso específico, clique no respectivo título na janela Análise de Código. O aviso se expande para exibir informações detalhadas sobre o problema.  
@@ -80,15 +80,15 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
  Para suprimir um aviso:  
   
-1.  Se as informações detalhadas não estiverem exibidas, clique no título do aviso para expandi-lo.  
+1. Se as informações detalhadas não estiverem exibidas, clique no título do aviso para expandi-lo.  
   
-2.  Escolha o link **Ações** na parte inferior do aviso.  
+2. Escolha o link **Ações** na parte inferior do aviso.  
   
-3.  Aponte para **Suprimir Mensagem** e escolha **Na Origem** ou **No Arquivo de Supressão**.  
+3. Aponte para **Suprimir Mensagem** e escolha **Na Origem** ou **No Arquivo de Supressão**.  
   
-    -   **Na Origem** insere um atributo `SuppressMessage` no arquivo de origem acima do método que gerou o aviso. Isso facilita a descoberta da supressão.  
+   - **Na Origem** insere um atributo `SuppressMessage` no arquivo de origem acima do método que gerou o aviso. Isso facilita a descoberta da supressão.  
   
-    -   **No Arquivo de Supressão** adiciona um atributo `SuppressMessage` ao arquivo **GlobalSuppressions.cs** do projeto. Isso pode simplificar o gerenciamento das supressões. Observe que o atributo `SuppressMessage` adicionado a **GlobalSuppression.cs** também afeta o método que gerou o aviso. Ele não suprime o aviso globalmente.  
+   - **No Arquivo de Supressão** adiciona um atributo `SuppressMessage` ao arquivo **GlobalSuppressions.cs** do projeto. Isso pode simplificar o gerenciamento das supressões. Observe que o atributo `SuppressMessage` adicionado a **GlobalSuppression.cs** também afeta o método que gerou o aviso. Ele não suprime o aviso globalmente.  
   
      Sua decisão sobre suprimir o aviso no arquivo de origem ou no arquivo de supressão depende do seu estilo de codificação e das suas necessidades.  
   

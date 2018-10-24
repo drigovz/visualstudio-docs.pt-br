@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b110acd20659dcd1660e4ce92897b1c78171bb
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6d1ca080ea61fbaaba7992fd8f4f1f4fbeac843d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636136"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824314"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>Elemento ProjectSubType (modelos do Visual Studio)
 Classifica o modelo em uma subcategoria de valor especificado no `ProjectType` elemento.  
@@ -61,15 +61,15 @@ Classifica o modelo em uma subcategoria de valor especificado no `ProjectType` e
   
  O `ProjectSubType` elemento fornece uma subcategoria para a [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) elemento. Esse valor pode incluir:  
   
--   `SmartDevice-NETCFv1`: Especifica que os destinos de modelo a [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] versão 1.0.  
+- `SmartDevice-NETCFv1`: Especifica que os destinos de modelo a [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] versão 1.0.  
   
--   `SmartDevice-NETCFv2`: Especifica que os destinos de modelo a [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] versão 2.0.  
+- `SmartDevice-NETCFv2`: Especifica que os destinos de modelo a [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] versão 2.0.  
   
- Se um modelo contém um `ProjectType` elemento com um valor de `Web`, o `ProjectSubType` elemento Especifica a linguagem de programação do modelo. Esse elemento pode ter os seguintes valores:  
+  Se um modelo contém um `ProjectType` elemento com um valor de `Web`, o `ProjectSubType` elemento Especifica a linguagem de programação do modelo. Esse elemento pode ter os seguintes valores:  
   
--   `CSharp`: Especifica que o modelo cria um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projeto da Web ou um item.  
+- `CSharp`: Especifica que o modelo cria um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projeto da Web ou um item.  
   
--   `VisualBasic`: Especifica que o modelo cria um [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projeto da Web ou um item.  
+- `VisualBasic`: Especifica que o modelo cria um [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projeto da Web ou um item.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir mostra os metadados para um modelo de projeto para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] segmentação do aplicativo de dispositivo a [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] versão 2.0.  

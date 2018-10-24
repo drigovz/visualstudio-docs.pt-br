@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96012a8f498fdab6dfd508906e9abf13591b9dbb
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 58f103ae1dcf445c5bdfe322eeea7a88a7b25683
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370543"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843269"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Configuração de inicialização e os metadados de Designer
 Manipulação dos atributos de metadados e o filtro associado a um designer ou um componente do designer fornece um mecanismo para aplicativos definam quais ferramentas são usadas por um designer específico para lidar com diferentes <xref:System.Type> objetos (como estruturas de dados classes ou entidades gráficas), quando o designer está disponível e como o IDE do Visual Studio está configurado para suportar o designer (para instância que **caixa de ferramentas** categoria ou o guia está disponível).  
@@ -32,39 +32,39 @@ Manipulação dos atributos de metadados e o filtro associado a um designer ou u
 ### <a name="customize-initialization"></a>Personalizar a inicialização  
  Personalizar um designer, um componente ou uma superfície de design, envolve:  
   
-1.  Modificando metadados de designer e alterando efetivamente como um determinado <xref:System.Type> é acessado ou convertidos.  
+1. Modificando metadados de designer e alterando efetivamente como um determinado <xref:System.Type> é acessado ou convertidos.  
   
-     Isso normalmente é feito por meio de <xref:System.Drawing.Design.UITypeEditor> ou <xref:System.ComponentModel.TypeConverter> mecanismos.  
+    Isso normalmente é feito por meio de <xref:System.Drawing.Design.UITypeEditor> ou <xref:System.ComponentModel.TypeConverter> mecanismos.  
   
-     Por exemplo, quando <xref:System.Windows.Forms>-designers com base são inicializados, o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente modifica a <xref:System.Drawing.Design.UITypeEditor> para <xref:System.Web.UI.WebControls.Image> objetos usados com o designer para usar o Gerenciador de recursos para obter bitmaps em vez do sistema de arquivos.  
+    Por exemplo, quando <xref:System.Windows.Forms>-designers com base são inicializados, o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente modifica a <xref:System.Drawing.Design.UITypeEditor> para <xref:System.Web.UI.WebControls.Image> objetos usados com o designer para usar o Gerenciador de recursos para obter bitmaps em vez do sistema de arquivos.  
   
-2.  A integração com o ambiente, por exemplo, Assinando eventos ou a obtenção de informações de configuração do projeto. Você pode obter informações de configuração do projeto e assinar eventos, obtendo o <xref:System.ComponentModel.Design.ITypeResolutionService> interface.  
+2. A integração com o ambiente, por exemplo, Assinando eventos ou a obtenção de informações de configuração do projeto. Você pode obter informações de configuração do projeto e assinar eventos, obtendo o <xref:System.ComponentModel.Design.ITypeResolutionService> interface.  
   
-3.  Modificação do ambiente do usuário por meio da ativação apropriada **caixa de ferramentas** categorias ou restringindo a aplicabilidade do designer, aplicando uma instância da <xref:System.ComponentModel.ToolboxItemFilterAttribute> classe para o designer.  
+3. Modificação do ambiente do usuário por meio da ativação apropriada **caixa de ferramentas** categorias ou restringindo a aplicabilidade do designer, aplicando uma instância da <xref:System.ComponentModel.ToolboxItemFilterAttribute> classe para o designer.  
   
 ### <a name="designer-initialization-by-a-vspackage"></a>Inicialização do designer por um VSPackage  
  Um VSPackage deve lidar com a inicialização do designer por:  
   
-1.  Criação de um objeto que implementa o <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe.  
+1. Criação de um objeto que implementa o <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe.  
   
-    > [!NOTE]
-    >  O <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe nunca deve ser implementada no mesmo objeto como o <xref:Microsoft.VisualStudio.Shell.Package> classe.  
+   > [!NOTE]
+   >  O <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe nunca deve ser implementada no mesmo objeto como o <xref:Microsoft.VisualStudio.Shell.Package> classe.  
   
-2.  Registrar a classe que implementa <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> como fornecendo suporte para extensões do designer do VSPackage, aplicando as instâncias do <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> e <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> para a classe que fornece a implementação do VSPackage de <xref:Microsoft.VisualStudio.Shell.Package> .  
+2. Registrar a classe que implementa <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> como fornecendo suporte para extensões do designer do VSPackage, aplicando as instâncias do <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> e <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> para a classe que fornece a implementação do VSPackage de <xref:Microsoft.VisualStudio.Shell.Package> .  
   
- Sempre que qualquer designer ou o componente de designer é criado, o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente:  
+   Sempre que qualquer designer ou o componente de designer é criado, o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente:  
   
-1.  Acessa a cada provedor de extensão de superfície de design registrado.  
+3. Acessa a cada provedor de extensão de superfície de design registrado.  
   
-2.  Cria uma instância e inicializa uma instância de cada provedor de extensão de superfície de design <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> objeto  
+4. Cria uma instância e inicializa uma instância de cada provedor de extensão de superfície de design <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> objeto  
   
-3.  Chama cada provedor de extensão de superfície de design <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A> método ou <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A> método (conforme apropriado).  
+5. Chama cada provedor de extensão de superfície de design <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A> método ou <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A> método (conforme apropriado).  
   
- Ao implementar o <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> do objeto como um membro de um VSPackage, é importante entender que:  
+   Ao implementar o <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> do objeto como um membro de um VSPackage, é importante entender que:  
   
-1.  O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente não fornece nenhum controle sobre quais metadados ou outras definições de configuração um determinado `DesignSurfaceExtension` modifica do provedor. É possível que dois ou mais `DesignSurfaceExtension` provedores modificando o mesmo designer de recursos de maneiras conflitantes, com a modificação final que está sendo definitiva. Não é possível determinar qual modificação é aplicada pela última vez.  
+6. O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente não fornece nenhum controle sobre quais metadados ou outras definições de configuração um determinado `DesignSurfaceExtension` modifica do provedor. É possível que dois ou mais `DesignSurfaceExtension` provedores modificando o mesmo designer de recursos de maneiras conflitantes, com a modificação final que está sendo definitiva. Não é possível determinar qual modificação é aplicada pela última vez.  
   
-2.  É possível restringir explicitamente uma implementação do <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> designers específicos, por meio da aplicação de instâncias do objeto <xref:System.ComponentModel.ToolboxItemFilterAttribute> para que a implementação. Para obter mais informações sobre **caixa de ferramentas** filtragem de itens, consulte o <xref:System.ComponentModel.ToolboxItemFilterAttribute> e <xref:System.ComponentModel.ToolboxItemFilterType>.  
+7. É possível restringir explicitamente uma implementação do <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> designers específicos, por meio da aplicação de instâncias do objeto <xref:System.ComponentModel.ToolboxItemFilterAttribute> para que a implementação. Para obter mais informações sobre **caixa de ferramentas** filtragem de itens, consulte o <xref:System.ComponentModel.ToolboxItemFilterAttribute> e <xref:System.ComponentModel.ToolboxItemFilterType>.  
   
 ## <a name="additional-metadata-provisioning"></a>Provisionamento de metadados adicionais  
  Um VSPackage pode alterar a configuração de um designer ou um componente de designer diferente de em tempo de design.  
@@ -75,23 +75,23 @@ Manipulação dos atributos de metadados e o filtro associado a um designer ou u
   
  Modificações fornecidas por uma instância de <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> aplicado a implementação de um VSPackage <xref:Microsoft.VisualStudio.Shell.Package> pode ter um dos dois escopos:  
   
--   Global – para todas as novas instâncias de um determinado componente  
+- Global – para todas as novas instâncias de um determinado componente  
   
--   Local – referindo-se apenas à instância do componente criado em uma superfície de design fornecida pelo VSPackage atual.  
+- Local – referindo-se apenas à instância do componente criado em uma superfície de design fornecida pelo VSPackage atual.  
   
- O `IsGlobal` propriedade do <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> instância aplicada a implementação de um VSPackage <xref:Microsoft.VisualStudio.Shell.Package> determina esse escopo.  
+  O `IsGlobal` propriedade do <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> instância aplicada a implementação de um VSPackage <xref:Microsoft.VisualStudio.Shell.Package> determina esse escopo.  
   
- Aplicando o atributo para uma implementação de <xref:Microsoft.VisualStudio.Shell.Package> com o <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> propriedade da <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> objeto definido como `true`, conforme mostrado abaixo, altera o navegador para todo o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente:  
+  Aplicando o atributo para uma implementação de <xref:Microsoft.VisualStudio.Shell.Package> com o <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> propriedade da <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> objeto definido como `true`, conforme mostrado abaixo, altera o navegador para todo o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente:  
   
- `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=true`  `)]`  
+  `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=true`  `)]`  
   
- `internal class MyPackage : Package {}`  
+  `internal class MyPackage : Package {}`  
   
- Se o sinalizador global foi definido como `false`, em seguida, a alteração de metadados é local para o designer atual com suporte pelo VSPackage atual:  
+  Se o sinalizador global foi definido como `false`, em seguida, a alteração de metadados é local para o designer atual com suporte pelo VSPackage atual:  
   
- `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=false`  `)]`  
+  `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=false`  `)]`  
   
- `internal class MyPackage : Package {}`  
+  `internal class MyPackage : Package {}`  
   
 > [!NOTE]
 >  No momento, a superfície de design somente dá suporte à criação de componentes e, portanto, somente os componentes podem ter metadados locais. No exemplo acima, podemos estava tentando executar modificar uma propriedade, como o `Color` propriedade de um objeto. Se `false` foi passado para o sinalizador global, `CustomBrowser` nunca seria exibido porque o designer, na verdade, nunca cria uma instância de `Color`. Definir o sinalizador global para `false` é útil para componentes, como controles, temporizadores e caixas de diálogo.  
