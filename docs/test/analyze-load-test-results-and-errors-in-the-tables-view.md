@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b111aad6da99f54edfe8dc4fd4b63ff7a495f34
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179655"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928666"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analisar resultados do teste de carga e erros na exibição Tabelas do Analisador de Teste de Carga
 
@@ -51,9 +51,9 @@ A maioria dos valores numéricos exibidos em uma tabela para contadores de desem
  A tabela a seguir lista as tabelas que estão disponíveis para analisar execuções de teste de carga.
 
 |Nome da tabela|Descrição|
-|----------------|-----------------|
+|-|-|
 |Erros|Exibe uma lista de erros ocorridos durante a execução do teste de carga. Para obter mais informações, confira [A tabela de erros](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) neste tópico e [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
-|Páginas|Exibe uma lista de páginas acessadas durante a execução do teste de carga. Alguns dados nessa tabela só estarão disponíveis depois que um teste de carga for concluído. Para obter mais informações, confira [Como exibir a resposta da página da Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
+|Pages (Páginas)|Exibe uma lista de páginas acessadas durante a execução do teste de carga. Alguns dados nessa tabela só estarão disponíveis depois que um teste de carga for concluído. Para obter mais informações, confira [Como exibir a resposta da página da Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Solicitações|Exibe detalhes de solicitações individuais emitidas durante um teste de carga. Isso inclui todas as solicitações HTTP e as solicitações dependentes como imagens. Para obter mais informações, confira [A tabela Solicitações](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) neste tópico.|
 |Rastreamento SQL|Exibe os resultados do rastreamento do SQL. Essa tabela só estará disponível depois que um teste de carga for concluído, e apenas se o rastreamento do SQL tiver sido usado durante o teste. Para obter mais informações, confira [A tabela de dados Rastreamento do SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) neste tópico.|
 |Testes|Exibe detalhes de testes individuais durante um teste de carga. Para obter mais informações, confira [A tabela Testes](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) neste tópico.|
@@ -73,7 +73,7 @@ A maioria dos valores numéricos exibidos em uma tabela para contadores de desem
  A seguinte tabela lista as colunas na tabela **Solicitações**:
 
 |Column|Descrição|Visível por padrão|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**Solicitação**|A URL da solicitação. Por exemplo, *home.html* ou *orange-arrow.gif*.|Sim|
 |**Cenário**|O nome do cenário.|Sim|
 |**Teste**|O nome do teste.|Sim|
@@ -95,7 +95,7 @@ A maioria dos valores numéricos exibidos em uma tabela para contadores de desem
  A seguinte tabela lista as colunas na tabela **Testes**.
 
 |Column|Descrição|Visível por padrão|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**Teste**|O nome do teste.|Sim|
 |**Cenário**|O nome do cenário.|Sim|
 |**Total**|O número total de vezes em que o teste foi executado no cenário. Isso inclui o número de vezes em que o teste passou e falhou.|Sim|
@@ -119,7 +119,7 @@ A maioria dos valores numéricos exibidos em uma tabela para contadores de desem
 > Para exibir todas as colunas, você deve habilitar a propriedade Armazenamento de Detalhes de Medição de Tempo associada à configuração de execução ativa. Para saber mais, confira [Como especificar a propriedade de armazenamento de detalhes de tempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 |Column|Descrição|Visível sem detalhes de tempo|
-|------------|-----------------|------------------------------------|
+|-|-|-|
 |**Transação**|O nome da transação.|Sim|
 |**Cenário**|O nome do cenário.|Sim|
 |**Teste**|O nome do teste.|Sim|
@@ -145,7 +145,7 @@ A maioria dos valores numéricos exibidos em uma tabela para contadores de desem
  A tabela de erros contém as seguintes colunas:
 
 |Column|Descrição|Visível por padrão|
-|------------|-----------------|------------------------|
+|-|-|-|
 |Tipo|O tipo do erro. Por exemplo, HttpError.|Sim|
 |SubType|O subtipo do erro. Por exemplo, LoadTestException.|Sim|
 |Count|O número de erros desse tipo ocorridos durante o teste de carga. As entradas nessa coluna são exibidas como hiperlinks. É possível escolher qualquer hiperlink para exibir uma lista dos erros individuais.|Sim|
@@ -163,7 +163,7 @@ A tabela de erros agrupa os erros pelo tipo e pelo subtipo do erro. Para exibir 
 A tabela **Erros de Teste de Carga** contém as seguintes colunas:
 
 |Column|Descrição|
-|------------|-----------------|
+|-|-|
 |**Time**|O tempo durante o teste de carga em que o erro ocorreu.|
 |**Agente**|O nome do computador do agente em que o erro ocorreu. Isso é importante quando você executa testes de carga usando controladores de teste e agentes de teste. Para obter mais informações, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).|
 |**Teste**|O nome do teste de desempenho na Web no qual o erro ocorreu.|

@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee534ca3c8b2a1cef441005586bc58601fb15ed7
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0d5683f28150089335f04e9cf2e5274ad3ff413c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957427"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922517"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refatorar classes e tipos no Designer de Classe
 
@@ -38,7 +38,7 @@ Quando você refatora o código, ele fica mais fácil de entender, manter e mais
 ## <a name="common-tasks"></a>Tarefas comuns
 
 |Tarefa|Conteúdo de suporte|
-|----------|------------------------|
+|----------| - |
 |**Classes de refatoração:** você pode usar as operações de refatoração para dividir uma classe em classes parciais ou para implementar uma classe base abstrata.|-   [Como dividir uma classe em classes parciais](how-to-split-a-class-into-partial-classes.md)|
 |**Trabalho com interfaces:** no Designer de Classe, você pode implementar uma interface no diagrama de classe se ela for conectada a uma classe que fornece o código para os métodos de interface.|-   [Como implementar uma interface](how-to-implement-an-interface.md)|
 |**Refatoração de tipos, membros de tipo e parâmetros:** usando o Designer de Classe, você pode renomear tipos, substituir membros de tipo ou movê-los de um tipo para outro. Você também pode criar tipos que permitem valor nulo.|-   [Renomear tipos e membros de tipo](#rename-types-and-type-members)<br />-   [Mover membros de tipo de um tipo para outro](#move-type-members-from-one-type-to-another)<br />-   [Como criar um tipo que permite valor nulo](how-to-create-a-nullable-type.md)|
