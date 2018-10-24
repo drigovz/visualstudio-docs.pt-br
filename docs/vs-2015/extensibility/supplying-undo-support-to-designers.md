@@ -15,12 +15,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ca68d0046e7dc46087fa6de3835bd6246bc58e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 07fb73b5a469cca5afc39160feae96f18ee37d86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267352"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873429"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Fornecendo suporte à função desfazer para designers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Designers, editores, como o geralmente necessário dar suporte a operações de 
   
  Implementações de designer que precisam para fornecer suporte para o recurso de desfazer:  
   
--   Fornecer gerenciamento de desfazer, Implementando a classe base abstrata <xref:System.ComponentModel.Design.UndoEngine>  
+- Fornecer gerenciamento de desfazer, Implementando a classe base abstrata <xref:System.ComponentModel.Design.UndoEngine>  
   
--   CodeDOM e persistência forneça suportam com a implementação de <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> e o <xref:System.ComponentModel.Design.IComponentChangeService> classes.  
+- CodeDOM e persistência forneça suportam com a implementação de <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> e o <xref:System.ComponentModel.Design.IComponentChangeService> classes.  
   
- Para obter mais informações sobre como escrever designers usando [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], consulte [estendendo o suporte de tempo de Design](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+  Para obter mais informações sobre como escrever designers usando [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], consulte [estendendo o suporte de tempo de Design](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
- O [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fornece uma infraestrutura de desfazer padrão por:  
+  O [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fornece uma infraestrutura de desfazer padrão por:  
   
--   Fornecendo implementações de gerenciamento por meio de desfazer a <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> e <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> classes.  
+- Fornecendo implementações de gerenciamento por meio de desfazer a <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> e <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> classes.  
   
--   Fornecendo o suporte do CodeDOM através do padrão e persistência <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> e <xref:System.ComponentModel.Design.IComponentChangeService> implementações.  
+- Fornecendo o suporte do CodeDOM através do padrão e persistência <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> e <xref:System.ComponentModel.Design.IComponentChangeService> implementações.  
   
 ## <a name="obtaining-undo-support-automatically"></a>Como obter suporte à função desfazer automaticamente  
  Qualquer designer criado no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tem suporte à função desfazer automática e completa se, o designer:  
@@ -68,44 +68,44 @@ Designers, editores, como o geralmente necessário dar suporte a operações de 
   
  O Visual Studio fornece o recurso a seguir para desfazer designer:  
   
--   Funcionalidade de desfazer vinculado entre vários designers.  
+- Funcionalidade de desfazer vinculado entre vários designers.  
   
--   Unidades de filho dentro de um designer podem interagir com seus pais, implementando <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> em <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>.  
+- Unidades de filho dentro de um designer podem interagir com seus pais, implementando <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> em <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>.  
   
- O SDK do ambiente fornece suportam de CodeDOM e persistência, fornecendo:  
+  O SDK do ambiente fornece suportam de CodeDOM e persistência, fornecendo:  
   
--   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> como um implementações das <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+- <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> como um implementações das <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
- Um <xref:System.ComponentModel.Design.IComponentChangeService> fornecidos pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]' host de design.  
+  Um <xref:System.ComponentModel.Design.IComponentChangeService> fornecidos pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]' host de design.  
   
 ## <a name="using-the-environment-sdk-features-to-supply-undo-support"></a>Usando recursos do SDK de ambiente para fornecer suporte à função desfazer  
  Para obter suporte à função desfazer, um objeto que implementa um designer deve:  
   
--   Instanciar e inicializar uma instância das <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> classe com uma validade <xref:System.IServiceProvider> implementação.  
+- Instanciar e inicializar uma instância das <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> classe com uma validade <xref:System.IServiceProvider> implementação.  
   
--   Isso <xref:System.IServiceProvider> classe deve fornecer os seguintes serviços:  
+- Isso <xref:System.IServiceProvider> classe deve fornecer os seguintes serviços:  
   
-    -   <xref:System.ComponentModel.Design.IDesignerHost>.  
+  -   <xref:System.ComponentModel.Design.IDesignerHost>.  
   
-    -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+  -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
-         Designers usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] serialização de CodeDOM pode optar por usar <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> fornecidos com o [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] como sua implementação do <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.  
+       Designers usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] serialização de CodeDOM pode optar por usar <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> fornecidos com o [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] como sua implementação do <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.  
   
-         Nesse caso, o <xref:System.IServiceProvider> classe fornecida para o <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> construtor deve retornar esse objeto como uma implementação do <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> classe.  
+       Nesse caso, o <xref:System.IServiceProvider> classe fornecida para o <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> construtor deve retornar esse objeto como uma implementação do <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> classe.  
   
-    -   <xref:System.ComponentModel.Design.IComponentChangeService>  
+  -   <xref:System.ComponentModel.Design.IComponentChangeService>  
   
-         Usando o padrão de designers <xref:System.ComponentModel.Design.DesignSurface> fornecidos pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] host de design são garantidos para terem uma implementação padrão da <xref:System.ComponentModel.Design.IComponentChangeService> classe.  
+       Usando o padrão de designers <xref:System.ComponentModel.Design.DesignSurface> fornecidos pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] host de design são garantidos para terem uma implementação padrão da <xref:System.ComponentModel.Design.IComponentChangeService> classe.  
   
- Designers de implementar um <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> desfazer com base mecanismo controla automaticamente as alterações se:  
+  Designers de implementar um <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> desfazer com base mecanismo controla automaticamente as alterações se:  
   
--   As alterações de propriedade são feitas por meio de <xref:System.ComponentModel.TypeDescriptor> objeto.  
+- As alterações de propriedade são feitas por meio de <xref:System.ComponentModel.TypeDescriptor> objeto.  
   
--   <xref:System.ComponentModel.Design.IComponentChangeService> eventos são gerados manualmente quando uma alteração que pode ser desfeita é confirmada.  
+- <xref:System.ComponentModel.Design.IComponentChangeService> eventos são gerados manualmente quando uma alteração que pode ser desfeita é confirmada.  
   
--   Modificação no designer foi criada dentro do contexto de um <xref:System.ComponentModel.Design.DesignerTransaction>.  
+- Modificação no designer foi criada dentro do contexto de um <xref:System.ComponentModel.Design.DesignerTransaction>.  
   
--   O designer escolhe criar unidades de desfazer usando explicitamente a unidade de desfazer padrão fornecida por uma implementação do <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> ou a implementação específica do Visual Studio <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>, que é derivada de <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> e também fornece um implementação de ambos <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>.  
+- O designer escolhe criar unidades de desfazer usando explicitamente a unidade de desfazer padrão fornecida por uma implementação do <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> ou a implementação específica do Visual Studio <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>, que é derivada de <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> e também fornece um implementação de ambos <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:System.ComponentModel.Design.UndoEngine>   

@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 994bb8dfd047320ac0ea4a0d63260f19a2c3d45c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfdf517dc1871884d4a3893a976cfcd01b3e6333
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252363"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879520"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definir um item de caixa de ferramentas de modelagem personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,25 +66,25 @@ Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com
 ### <a name="what-the-custom-tool-will-replicate"></a>A ferramenta personalizada que replicará  
  Uma ferramenta personalizada replicará a maioria dos recursos do diagrama de origem:  
   
--   Nomes. Quando um item é criado na caixa de ferramentas, um número é adicionado ao final do nome, se necessário, para evitar nomes duplicados no mesmo namespace.  
+- Nomes. Quando um item é criado na caixa de ferramentas, um número é adicionado ao final do nome, se necessário, para evitar nomes duplicados no mesmo namespace.  
   
--   As cores, tamanhos e formas  
+- As cores, tamanhos e formas  
   
--   Estereótipos e perfis de pacote  
+- Estereótipos e perfis de pacote  
   
--   Valores de propriedade, como é abstrato  
+- Valores de propriedade, como é abstrato  
   
--   Itens de trabalho vinculados  
+- Itens de trabalho vinculados  
   
--   Multiplicidades e outras propriedades de relações  
+- Multiplicidades e outras propriedades de relações  
   
--   As posições relativas das formas.  
+- As posições relativas das formas.  
   
- Os recursos a seguir não serão preservados em uma ferramenta personalizada:  
+  Os recursos a seguir não serão preservados em uma ferramenta personalizada:  
   
--   Formas simples. Essas são formas que não estão relacionadas a elementos de modelo que você pode desenhar em alguns tipos de diagramas.  
+- Formas simples. Essas são formas que não estão relacionadas a elementos de modelo que você pode desenhar em alguns tipos de diagramas.  
   
--   Conector de roteamento. Se você rotear conectores manualmente, o roteamento não será preservado quando a ferramenta é usada. As posições de algumas formas aninhadas, por exemplo, portas, não são preservadas em relação a seus proprietários.  
+- Conector de roteamento. Se você rotear conectores manualmente, o roteamento não será preservado quando a ferramenta é usada. As posições de algumas formas aninhadas, por exemplo, portas, não são preservadas em relação a seus proprietários.  
   
 ##  <a name="tbxinfo"></a> Como definir as propriedades de ferramentas personalizadas  
  Informações de uma caixa de ferramentas (**.tbxinfo**) arquivo permite que você especifique um nome de caixa de ferramentas, o ícone, a dica de ferramenta, a guia e ajudar a palavra-chave para um ou mais ferramentas personalizadas. Dê a ele qualquer nome, como **MyTools.tbxinfo**.  
@@ -114,19 +114,19 @@ Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com
   
  O valor de cada item pode ser:  
   
--   Conforme mostrado no exemplo, `<bmp fileName="…"/>` para o ícone da caixa de ferramentas e `<value>string</value>` para os outros itens.  
+- Conforme mostrado no exemplo, `<bmp fileName="…"/>` para o ícone da caixa de ferramentas e `<value>string</value>` para os outros itens.  
   
- \- ou -  
+  \- ou -  
   
--   `<resource fileName="Resources.dll"`  
+- `<resource fileName="Resources.dll"`  
   
-     `baseName="Observer.resources" id="Observer.tabname" />`  
+   `baseName="Observer.resources" id="Observer.tabname" />`  
   
-     Nesse caso, você pode fornecer um assembly compilado na qual os valores de cadeia de caracteres tiverem sido compilados como recursos.  
+   Nesse caso, você pode fornecer um assembly compilado na qual os valores de cadeia de caracteres tiverem sido compilados como recursos.  
   
- Adicionar um `<customToolboxItem>` nó para cada item de caixa de ferramentas que você deseja definir.  
+  Adicionar um `<customToolboxItem>` nó para cada item de caixa de ferramentas que você deseja definir.  
   
- Os nós a **.tbxinfo** arquivo são da seguinte maneira. Há um valor padrão para cada nó.  
+  Os nós a **.tbxinfo** arquivo são da seguinte maneira. Há um valor padrão para cada nó.  
   
 |Nome do nó|Define|  
 |---------------|-------------|  
@@ -215,21 +215,21 @@ Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com
   
 #### <a name="to-provide-versions-of-the-tool-in-more-than-one-language"></a>Para fornecer versões da ferramenta em mais de um idioma  
   
-1.  Crie um projeto de extensão do Visual Studio que contém um ou mais ferramentas personalizadas.  
+1. Crie um projeto de extensão do Visual Studio que contém um ou mais ferramentas personalizadas.  
   
-     No **.tbxinfo** do arquivo, use o método de arquivo de recurso para definir a ferramenta `displayName`, caixa de ferramentas `tabName`e a dica de ferramenta. Criar um arquivo de recurso no qual essas cadeias de caracteres são definidas, compilá-lo em um assembly e fazer referência a ele partir do arquivo tbxinfo.  
+    No **.tbxinfo** do arquivo, use o método de arquivo de recurso para definir a ferramenta `displayName`, caixa de ferramentas `tabName`e a dica de ferramenta. Criar um arquivo de recurso no qual essas cadeias de caracteres são definidas, compilá-lo em um assembly e fazer referência a ele partir do arquivo tbxinfo.  
   
-2.  Crie assemblies adicionais que contêm arquivos de recurso com cadeias de caracteres em outros idiomas.  
+2. Crie assemblies adicionais que contêm arquivos de recurso com cadeias de caracteres em outros idiomas.  
   
-3.  Coloque cada assembly adicional em uma pasta cujo nome é o código de cultura para o idioma. Por exemplo, coloque uma versão em francês do assembly dentro de uma pasta denominada **fr**.  
+3. Coloque cada assembly adicional em uma pasta cujo nome é o código de cultura para o idioma. Por exemplo, coloque uma versão em francês do assembly dentro de uma pasta denominada **fr**.  
   
-4.  Você deve usar um código de cultura neutra, normalmente com duas letras, não uma cultura específica, como `fr-CA`. Para obter mais informações sobre códigos de cultura, consulte [método CultureInfo GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), que fornece uma lista completa dos códigos de cultura.  
+4. Você deve usar um código de cultura neutra, normalmente com duas letras, não uma cultura específica, como `fr-CA`. Para obter mais informações sobre códigos de cultura, consulte [método CultureInfo GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), que fornece uma lista completa dos códigos de cultura.  
   
-5.  Compile a extensão do Visual Studio e distribuí-lo.  
+5. Compile a extensão do Visual Studio e distribuí-lo.  
   
-6.  Quando a extensão está instalada em outro computador, a versão do arquivo de recurso para a cultura do usuário local será carregada automaticamente. Se você não tiver fornecido uma versão para a cultura do usuário, os recursos padrão serão usados.  
+6. Quando a extensão está instalada em outro computador, a versão do arquivo de recurso para a cultura do usuário local será carregada automaticamente. Se você não tiver fornecido uma versão para a cultura do usuário, os recursos padrão serão usados.  
   
- Você não pode usar esse método para instalar versões diferentes do diagrama de protótipo. Os nomes de elementos e conectores serão a mesma em todas as instalações.  
+   Você não pode usar esse método para instalar versões diferentes do diagrama de protótipo. Os nomes de elementos e conectores serão a mesma em todas as instalações.  
   
 ## <a name="other-toolbox-operations"></a>Outras operações de caixa de ferramentas  
  Normalmente, no [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], você pode personalizar a caixa de ferramentas por ferramentas de renomeação, movendo-os para as guias da caixa de ferramentas diferentes e excluí-los. Mas essas alterações não serão mantidas para ferramentas de modelagem personalizado criadas com os procedimentos descritos neste tópico. Quando você reinicia [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], reaparecerão ferramentas personalizadas com seus nomes definidos e os locais de caixa de ferramentas.  

@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79df08496cfa0e15f2caa648afcb1ee78c636d56
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2054181bfd34e9f9382391c879030e147ce2b8d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238284"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878447"
 ---
 # <a name="filtering-report-views"></a>Filtrando exibições de relatório
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,19 +53,19 @@ Você pode aplicar filtros para arquivos de dados de criação de perfil para li
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Para criar um filtro de relatório do criador de perfil na exibição de Relatório de Marcas  
   
-1.  Selecione **Marcas** na lista **Exibição Atual** na barra de ferramentas de Exibição de Relatório de Desempenho.  
+1. Selecione **Marcas** na lista **Exibição Atual** na barra de ferramentas de Exibição de Relatório de Desempenho.  
   
-     O relatório do criador de perfil de Marcas é exibido.  
+    O relatório do criador de perfil de Marcas é exibido.  
   
-2.  Selecione o ETW ou amostragem mesmo que deseje usar como o ponto inicial do relatório.  
+2. Selecione o ETW ou amostragem mesmo que deseje usar como o ponto inicial do relatório.  
   
-3.  Pressione e segure a tecla CTRL e clique no evento que deseja usar como o ponto final do relatório.  
+3. Pressione e segure a tecla CTRL e clique no evento que deseja usar como o ponto final do relatório.  
   
-4.  Clique com o botão direito do mouse e depois clique em uma das seguintes opções:  
+4. Clique com o botão direito do mouse e depois clique em uma das seguintes opções:  
   
-    -   **Adicionar filtro em Marcas** cria cláusulas de filtro que usam a coluna de Marca como campo de filtro.  
+   - **Adicionar filtro em Marcas** cria cláusulas de filtro que usam a coluna de Marca como campo de filtro.  
   
-    -   **Adicionar Filtro em Carimbos de Data/Hora** cria cláusulas de filtro que usam o carimbo de data/hora em milésimos de segundo como campo de filtro.  
+   - **Adicionar Filtro em Carimbos de Data/Hora** cria cláusulas de filtro que usam o carimbo de data/hora em milésimos de segundo como campo de filtro.  
   
      As duas opções filtram o arquivo de dados atual nos mesmo pontos inicial e final. Qualquer opção pode ser a melhor se exportar o filtro a ser usado em outros relatórios.  
   

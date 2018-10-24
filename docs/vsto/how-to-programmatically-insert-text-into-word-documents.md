@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 331fa8a91bb4fff51cb59b7a9f3cce23a38b3d2e
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a602f50e9d3c439fc450c286923341dafff1e116
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257206"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881658"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Como: programaticamente, inserir texto em documentos do Word
   Há três formas principais para inserir texto em documentos do Microsoft Office Word:  
@@ -94,39 +94,39 @@ ms.locfileid: "35257206"
   
 ### <a name="to-insert-text-using-the-typetext-method"></a>Para inserir texto usando o método TypeText  
   
-1.  Declarar um <xref:Microsoft.Office.Interop.Word.Selection> variável de objeto.  
+1. Declarar um <xref:Microsoft.Office.Interop.Word.Selection> variável de objeto.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]
-     [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]  
+    [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]
+    [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]  
   
-2.  Desativar o **sobrescrever** opção se ele está ligado.  
+2. Desativar o **sobrescrever** opção se ele está ligado.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#58)]
-     [!code-csharp[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#58)]  
+    [!code-vb[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#58)]
+    [!code-csharp[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#58)]  
   
-3.  Teste para ver se a seleção atual é um ponto de inserção.  
+3. Teste para ver se a seleção atual é um ponto de inserção.  
   
-     Se for, o código insere usando uma frase <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A>e, em seguida, um parágrafo marca usando o <xref:Microsoft.Office.Interop.Word.Selection.TypeParagraph%2A> método.  
+    Se for, o código insere usando uma frase <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A>e, em seguida, um parágrafo marca usando o <xref:Microsoft.Office.Interop.Word.Selection.TypeParagraph%2A> método.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#59)]
-     [!code-csharp[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#59)]  
+    [!code-vb[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#59)]
+    [!code-csharp[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#59)]  
   
-4.  O código a **ElseIf** bloquear testa para ver se a seleção é uma seleção normal. Se for, em seguida, outro **se** bloquear testa para ver se o **ReplaceSelection** opção está ativada. Se for, o código usa o <xref:Microsoft.Office.Interop.Word.Selection.Collapse%2A> método de seleção para recolher a seleção para um ponto de inserção no início do bloco de texto selecionado. Insira o texto e uma marca de parágrafo.  
+4. O código a **ElseIf** bloquear testa para ver se a seleção é uma seleção normal. Se for, em seguida, outro **se** bloquear testa para ver se o **ReplaceSelection** opção está ativada. Se for, o código usa o <xref:Microsoft.Office.Interop.Word.Selection.Collapse%2A> método de seleção para recolher a seleção para um ponto de inserção no início do bloco de texto selecionado. Insira o texto e uma marca de parágrafo.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#60)]
-     [!code-csharp[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#60)]  
+    [!code-vb[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#60)]
+    [!code-csharp[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#60)]  
   
-5.  Se a seleção não for um ponto de inserção ou de um bloco de texto selecionado e, em seguida, o código na **Else** bloco não faz nada.  
+5. Se a seleção não for um ponto de inserção ou de um bloco de texto selecionado e, em seguida, o código na **Else** bloco não faz nada.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
-     [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
+    [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
+    [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
   
- Você também pode usar o <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> método da <xref:Microsoft.Office.Interop.Word.Selection> objeto, que imita a funcionalidade dos **Backspace** em seu teclado. No entanto, quando se trata de inserção e manipulação de texto, o <xref:Microsoft.Office.Interop.Word.Range> objeto oferece mais controle.  
+   Você também pode usar o <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> método da <xref:Microsoft.Office.Interop.Word.Selection> objeto, que imita a funcionalidade dos **Backspace** em seu teclado. No entanto, quando se trata de inserção e manipulação de texto, o <xref:Microsoft.Office.Interop.Word.Range> objeto oferece mais controle.  
   
- O exemplo a seguir mostra todo o código. Para usar este exemplo, execute o código na `ThisDocument` ou `ThisAddIn` classe em seu projeto.  
+   O exemplo a seguir mostra todo o código. Para usar este exemplo, execute o código na `ThisDocument` ou `ThisAddIn` classe em seu projeto.  
   
- [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
- [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
+   [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
+   [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Formatar o texto em documentos programaticamente](../vsto/how-to-programmatically-format-text-in-documents.md)   

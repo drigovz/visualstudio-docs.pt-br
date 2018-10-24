@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dace2a3de8e61a92672442adbf77199232c76e12
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: feae82f3909be5816e025de21200acda20933d63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874612"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Implantar uma extensão de modelo de camada
 
@@ -29,13 +29,13 @@ Sua extensão é compilada em um arquivo VSIX, que pode ser instalado em outros 
 
 ### <a name="to-install-the-extension"></a>Para instalar a extensão
 
-1.  No projeto que contém **source.vsix.manifest**, abra **bin\\ \***  no Explorador de arquivos.
+1. No projeto que contém **source.vsix.manifest**, abra o *bin* diretório no Explorador de arquivos.
 
-2.  Cópia de  **\*VSIX** arquivo para o computador no qual você deseja instalar a extensão.
+2. Cópia de  **\*VSIX** arquivo para o computador no qual você deseja instalar a extensão.
 
-3.  No computador de destino, clique duas vezes o arquivo VSIX no Windows Explorer.
+3. No computador de destino, clique duas vezes o arquivo VSIX no Windows Explorer.
 
-     O instalador do VSIX é aberto.
+    O instalador do VSIX é aberto.
 
 ### <a name="to-uninstall-the-extension"></a>Para desinstalar a extensão
 
