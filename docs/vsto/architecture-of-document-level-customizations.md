@@ -22,25 +22,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3532f4e5b1fc38c25ebb462916bc7eefae9f9725
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912612"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Arquitetura de personalizações no nível do documento
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] inclui projetos para criar personalizações no nível de documento para o Microsoft Office Word e Microsoft Office Excel. Este tópico descreve os seguintes aspectos de personalizações no nível do documento:  
   
--   [Entender as personalizações](#UnderstandingCustomizations)  
+- [Entender as personalizações](#UnderstandingCustomizations)  
   
--   [Componentes de personalizações](#Components)  
+- [Componentes de personalizações](#Components)  
   
--   [Como as personalizações funcionam com aplicativos do Microsoft Office](#HowCustomizationsWork)  
+- [Como as personalizações funcionam com aplicativos do Microsoft Office](#HowCustomizationsWork)  
   
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
+  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Para obter informações gerais sobre como criar personalizações em nível de documento, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [começar a programar personalizações no nível de documento para Word](../vsto/getting-started-programming-document-level-customizations-for-word.md), e [começar a programar personalizações no nível de documento para Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
+  Para obter informações gerais sobre como criar personalizações em nível de documento, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [começar a programar personalizações no nível de documento para Word](../vsto/getting-started-programming-document-level-customizations-for-word.md), e [começar a programar personalizações no nível de documento para Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
   
 ##  <a name="UnderstandingCustomizations"></a> Entender as personalizações  
  Quando você usa o Office developer tools no Visual Studio para criar uma personalização no nível de documento, você criará um assembly de código gerenciado que está associado um documento específico. Um documento ou pasta de trabalho com um assembly vinculado deve ter extensões de código gerenciado. Para obter mais informações, consulte [Design e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md).  
@@ -94,11 +94,11 @@ ms.locfileid: "35670071"
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Suporte para documentos do Word que têm extensões de nome de arquivo. XML  
  Os modelos de projeto de nível de documento não permitem a criação de projetos com base nos seguintes formatos de arquivo:  
   
--   Documento XML do Word (*\*xml*).  
+- Documento XML do Word (*\*xml*).  
   
--   Documento XML do Word 2003 (*\*xml*).  
+- Documento XML do Word 2003 (*\*xml*).  
   
- Se você quiser que os usuários finais usar personalizações nesses formatos de arquivo, crie e implante uma personalização que usa um dos formatos de arquivo com suporte especificados na tabela acima. Depois de instalar a personalização, os usuários finais pode salvar o documento no documento de XML do Word (*\*xml*) formato ou o documento XML do Word 2003 (*\*xml*) formato e o personalização continuará a funcionar como esperado.  
+  Se você quiser que os usuários finais usar personalizações nesses formatos de arquivo, crie e implante uma personalização que usa um dos formatos de arquivo com suporte especificados na tabela acima. Depois de instalar a personalização, os usuários finais pode salvar o documento no documento de XML do Word (*\*xml*) formato ou o documento XML do Word 2003 (*\*xml*) formato e o personalização continuará a funcionar como esperado.  
   
 ##  <a name="Components"></a> Componentes de personalizações  
  Os principais componentes de uma personalização são o documento e o assembly. Além desses componentes, há várias outras partes que desempenham um papel importante na maneira como os aplicativos do Microsoft Office descobrirem e carregar as personalizações.  
