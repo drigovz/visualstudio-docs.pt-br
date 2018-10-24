@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c589e58fb1e5b6a63706889de666d4e622f0ceb5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180237"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837133"
 ---
 # <a name="edit-load-test-scenarios"></a>Editar cenários de teste de carga
 
@@ -46,7 +46,7 @@ Um cenário tem várias outras propriedades que você pode editar usando o **Edi
 ## <a name="tasks"></a>Tarefas
 
 |Tarefas|Tópicos associados|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Adicionar pausas artificiais de interação humana em seu cenário:** tempos de processamento são usados para simular o comportamento humano que faz com que as pessoas esperem entre interações com um site. Os tempos de processamento ocorrem entre as solicitações em um teste de desempenho na Web e entre as iterações de teste em um cenário de teste de carga. Usar tempos de processamento em um teste de carga pode ser útil ao criar simulações de carga mais precisas.|-   [Editar tempos de processamento para simular atrasos de interação humana no site](../test/edit-think-times-in-load-test-scenarios.md)|
 |**Especificar o número de usuários virtuais para seu cenário:** você pode configurar as propriedades do padrão de carga para especificar como a carga simulada do usuário é definida durante um teste de carga. Você obtém três padrões de carga internos: constante, etapa e baseado em metas. Escolha o padrão de carga e ajuste as propriedades até os níveis apropriados às metas do teste de carga.|-   [Editar padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
 |**Configurar a probabilidade de um usuário virtual que executa um teste no cenário:** é possível usar a combinação de testes, que especifica a probabilidade de um usuário virtual que executa um teste determinado em um cenário de teste de carga. Isso permite a você simular a carga de forma mais realista. Em vez de ter apenas um fluxo de trabalho com seus aplicativos, você pode ter vários fluxos de trabalho, que é uma aproximação de como os usuários finais interagem com seus aplicativos.|-   [Editar modelos de cominação de testes](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|

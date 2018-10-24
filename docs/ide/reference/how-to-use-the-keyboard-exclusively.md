@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e849e851bdb2cfed27ff58e90c4e7248b83ed09
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24a20abd4971f785261db4437a6e2f839717ab0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949913"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818257"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Como usar exclusivamente o teclado
 
@@ -42,15 +42,15 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece muitas co
 
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Para adicionar controles da Caixa de Ferramentas a um designer usando o teclado
 
-1.  Na barra de menus, escolha **Exibir**, **Caixa de Ferramentas**.
+1. Na barra de menus, escolha **Exibir**, **Caixa de Ferramentas**.
 
-2.  Use as teclas Ctrl + Seta para cima ou Ctrl + Seta para baixo para percorrer as seções na guia atual da Caixa de ferramentas.
+2. Use as teclas Ctrl + Seta para cima ou Ctrl + Seta para baixo para percorrer as seções na guia atual da Caixa de ferramentas.
 
-3.  Use as teclas Seta para cima ou **Seta para baixo** para percorrer os controles.
+3. Use as teclas Seta para cima ou **Seta para baixo** para percorrer os controles.
 
-4.  Depois que o controle for selecionado, use a tecla Enter.
+4. Depois que o controle for selecionado, use a tecla Enter.
 
- O controle é adicionado ao formulário ou designer.
+   O controle é adicionado ao formulário ou designer.
 
 ## <a name="dialog-box-options"></a>Opções de caixa de diálogo
 

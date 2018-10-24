@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c01bf88cc86f0b63c7dc63deb257f077f61541a0
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8b43cc3acbbff70124685229e33362cfd9b30561
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176678"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908790"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Como adicionar e excluir contadores em gráficos em resultados de teste de carga
 
@@ -33,7 +33,7 @@ Você pode usar o painel **Contadores** para adicionar contadores de desempenho 
  Veja algumas diretrizes para taxas de amostragem:
 
 |Duração do teste de carga|Taxa de amostragem recomendada|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 hora|5 segundos|
 |1 a 8 horas|15 segundos|
 |8 a 24 horas|30 segundos|
@@ -53,7 +53,7 @@ Para saber mais, confira [Como especificar a propriedade de armazenamento dos de
 
 1.  Depois que um teste de carga é concluído ou depois que você carregar um resultado do teste, na barra de ferramentas do Analisador de Teste de Carga, escolha **Gráficos**.
 
-     O painel **Contadores** é mostrado na exibição Grafos.
+     O painel **Contadores** é mostrado na exibição Gráficos.
 
     > [!NOTE]
     > Se o painel **Contadores** não estiver visível, escolha **Mostrar painel de contadores** na barra de ferramentas.

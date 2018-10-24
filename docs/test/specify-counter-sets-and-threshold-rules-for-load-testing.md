@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4277935750aa4d0ba081f5117806892bbf948556
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 95aa0b7545ab7f326779b24475c8f7593ede27a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382364"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879826"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Especificar conjuntos de contadores e regras de limite para computadores em um teste de carga
 
@@ -38,7 +38,7 @@ Por padrão, os contadores de desempenho são coletados no controlador e nos age
 ## <a name="tasks"></a>Tarefas
 
 |Tarefas|Tópicos associados|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Gerenciar conjuntos de contadores para o teste de carga:** depois de criar o teste de carga, você pode editar o conjunto de contadores definido no Editor de Teste de Carga. Gerenciar conjuntos de contadores envolve escolher o conjunto de computadores dos quais você deseja coletar dados de desempenho e atribuir um conjunto de contadores para coletar de cada computador individual. Você gerencia os contadores no Editor de testes de carga.|-   [Como gerenciar conjuntos de contadores](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Adicionar conjuntos de contadores ao teste de carga:** quando você cria um teste de carga com o **Novo Assistente de Teste de Carga**, um conjunto inicial de contadores é adicionado. Isso oferece um conjunto de contadores predefinidos para seu teste de carga. Depois de criar um teste de carga, você pode adicionar novos contadores aos conjuntos de contadores existentes usando o Editor de testes de carga.|-   [Como adicionar contadores a conjuntos de contadores](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Como adicionar conjuntos de contadores personalizados](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**Especificar uma regra de limite usando contadores para o teste de carga:** uma regra de limite é uma regra que é definida em um contador de desempenho individual para monitorar o uso de recursos do sistema durante um teste de carga. As definições de conjunto de contadores contêm regras de limite predefinidas para muitos contadores de desempenho importantes. As regras de limite nos testes de carga comparam um valor de contador de desempenho ou com um valor constante, ou outro valor de contador de desempenho.|-   [Como adicionar uma regra de limite](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
@@ -67,7 +67,7 @@ Selecione um valor para a propriedade **Taxa de Amostragem** nas configurações
 A seguir estão algumas diretrizes para taxas de amostragem.
 
 |Duração do teste de carga|Taxa de amostragem recomendada|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 hora|5 segundos|
 |1 a 8 horas|15 segundos|
 |8−24 horas|30 segundos|

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d75ce507b34337c6311fe66c95732c6f6cd044ba
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 0a7da7d09bf9bcb419ba174a4eb60fe370e83cda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131980"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877108"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Início rápido: crie seu primeiro aplicativo Web Python usando o Visual Studio
 
@@ -62,7 +62,7 @@ Aqui, use as etapas a seguir para instalar a biblioteca Flask no "ambiente globa
 
     ![Gerenciador de soluções mostrando o ambiente padrão](media/quickstart-python-02-default-environment.png)
 
-1. Clique com o botão direito do mouse no ambiente e selecione **Instalar pacote Python**. Esse comando abre a janela **Ambientes de Python** na guia **Pacotes**.
+1. Clique com o botão direito do mouse no ambiente e selecione **Instalar pacote Python**. Esse comando abre a janela **Ambientes de Python** na guia Pacotes.
 
 1. Insira “flask” no campo de pesquisa e selecione **pip install flask from PyPI**. Aceite os prompts de privilégios de administrador e observe o andamento na janela **Saída** janela no Visual Studio. (Um prompt para elevação é exibido quando a pasta de pacotes do ambiente global está localizada em uma área protegida como *C:\Arquivos de Programas*.)
 
@@ -124,19 +124,19 @@ Agora você está pronto para adicionar um pouco de código Python para implemen
 
     ![Definir o arquivo de inicialização para um projeto no Gerenciador de Soluções](media/quickstart-python-05-set-as-startup-file.png)
 
-1. Clique com o botão direito do mouse no projeto no **Gerenciador de Soluções** e selecione **Propriedades**. Selecione a guia **Depurar** e defina a propriedade **Número da porta** para `4449`. Essa etapa garante que o Visual Studio inicie um navegador com `localhost:4449` para corresponder aos argumentos `app.run` no código.
+2. Clique com o botão direito do mouse no projeto no **Gerenciador de Soluções** e selecione **Propriedades**. Selecione a guia **Depurar** e defina a propriedade **Número da porta** para `4449`. Essa etapa garante que o Visual Studio inicie um navegador com `localhost:4449` para corresponder aos argumentos `app.run` no código.
 
-1. Selecione **Depurar > Iniciar sem depuração** (**Ctrl**+**F5**) para salvar as alterações nos arquivos e executar o aplicativo.
+3. Selecione **Depurar > Iniciar sem depuração** (**Ctrl**+**F5**) para salvar as alterações nos arquivos e executar o aplicativo.
 
-1. É exibida uma janela de comando com a mensagem “* Em execução em https://localhost:4449/”, e uma janela do navegador deverá ser aberta para `localhost:4449`, exibindo a mensagem “Olá, Python!” A solicitação GET também aparece na janela de comando com um status 200.
+4. É exibida uma janela de comando com a mensagem “* Em execução em <https://localhost:4449/>”, e uma janela do navegador deverá ser aberta para `localhost:4449`, exibindo a mensagem “Olá, Python!” A solicitação GET também aparece na janela de comando com um status 200.
 
     Se um navegador não for aberto automaticamente, inicie o navegador de sua escolha e navegue até `localhost:4449`.
 
     Caso apareça somente o shell interativo do Python na janela de comando ou se essa janela piscar brevemente na tela, verifique se você definiu *app.py* como o arquivo de inicialização na etapa 1 acima.
 
-1. Navegue até `localhost:4449/hello` para testar se o decorador do recurso `/hello` também funciona. Novamente, a solicitação GET aparece na janela de comando com um status 200. Fique à vontade para experimentar algumas outras URLs para ver se elas exibem os códigos de status 404 na janela de comando.
+5. Navegue até `localhost:4449/hello` para testar se o decorador do recurso `/hello` também funciona. Novamente, a solicitação GET aparece na janela de comando com um status 200. Fique à vontade para experimentar algumas outras URLs para ver se elas exibem os códigos de status 404 na janela de comando.
 
-1. Feche a janela de comando para interromper o aplicativo e, em seguida, feche a janela do navegador.
+6. Feche a janela de comando para interromper o aplicativo e, em seguida, feche a janela do navegador.
 
 **Pergunta: Qual é a diferença entre o comando Iniciar Sem Depuração e Iniciar Depuração?**
 

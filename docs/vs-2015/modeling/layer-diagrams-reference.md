@@ -25,12 +25,12 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c44ad4b225b3fd52f0e25369777b1a4f6df8c95e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1136cc4e55ebbdf3a5ff1b38b5802b058e9c69c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248307"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895737"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramas de camada: referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +43,15 @@ No Visual Studio, você pode usar um *diagrama de camada* para visualizar a arqu
   
  Use um diagrama de camada para ajudá-lo a executar as seguintes tarefas:  
   
--   Comunicar-se a arquitetura lógica existente ou pretendida de seu sistema.  
+- Comunicar-se a arquitetura lógica existente ou pretendida de seu sistema.  
   
--   Descubra os conflitos entre o código existente e a arquitetura pretendida.  
+- Descubra os conflitos entre o código existente e a arquitetura pretendida.  
   
--   Visualize o impacto das alterações na arquitetura pretendida quando refatorar, atualizar ou evoluir seu sistema.  
+- Visualize o impacto das alterações na arquitetura pretendida quando refatorar, atualizar ou evoluir seu sistema.  
   
--   Reforce a arquitetura pretendida durante o desenvolvimento e manutenção do seu código, incluindo validação com seu check-in e operações de compilação.  
+- Reforce a arquitetura pretendida durante o desenvolvimento e manutenção do seu código, incluindo validação com seu check-in e operações de compilação.  
   
- Este tópico descreve os elementos que você pode usar em um diagrama de camada. Para obter mais informações sobre como criar e desenhar diagramas de camada, consulte [diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md). Para obter mais informações sobre padrões de disposição em camadas, visite o [site padrões & práticas](http://go.microsoft.com/fwlink/?LinkId=145794).  
+  Este tópico descreve os elementos que você pode usar em um diagrama de camada. Para obter mais informações sobre como criar e desenhar diagramas de camada, consulte [diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md). Para obter mais informações sobre padrões de disposição em camadas, visite o [site padrões & práticas](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 ## <a name="reading-layer-diagrams"></a>Diagramas de camada de leitura  
  ![Elementos em diagramas de camada](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")  
@@ -69,17 +69,17 @@ No Visual Studio, você pode usar um *diagrama de camada* para visualizar a arqu
 ##  <a name="Explorer"></a> Gerenciador de camadas  
  Você pode vincular cada camada para artefatos em sua solução, como projetos, classes, namespaces, arquivos de projeto e outras partes do seu software. O número em uma camada mostra o número de artefatos que estão associados à camada. No entanto, ao ler o número de artefatos em uma camada, lembre-se do seguinte:  
   
--   Se uma camada estiver vinculada a um artefato que contenha outros artefatos, mas não estiver vinculada diretamente a outros artefatos, o número incluirá apenas o artefato vinculado. No entanto, os outros artefatos estão incluídos para análise durante a validação da camada.  
+- Se uma camada estiver vinculada a um artefato que contenha outros artefatos, mas não estiver vinculada diretamente a outros artefatos, o número incluirá apenas o artefato vinculado. No entanto, os outros artefatos estão incluídos para análise durante a validação da camada.  
   
-     Por exemplo, se uma camada estiver vinculada a um único namespace, o número de artefatos vinculados será 1, mesmo se o namespace contiver classes. Se a camada também tiver links para cada classe no namespace, o número incluirá as classes vinculadas.  
+   Por exemplo, se uma camada estiver vinculada a um único namespace, o número de artefatos vinculados será 1, mesmo se o namespace contiver classes. Se a camada também tiver links para cada classe no namespace, o número incluirá as classes vinculadas.  
   
--   Se uma camada contiver outras camadas vinculadas a artefatos, a camada de contêiner também estará vinculada a esses artefatos, mesmo que o número na camada de contêiner não inclua esses artefatos.  
+- Se uma camada contiver outras camadas vinculadas a artefatos, a camada de contêiner também estará vinculada a esses artefatos, mesmo que o número na camada de contêiner não inclua esses artefatos.  
   
- Para obter mais informações sobre a vinculação de camadas e artefatos, consulte:  
+  Para obter mais informações sobre a vinculação de camadas e artefatos, consulte:  
   
--   [Diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md)  
+- [Diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md)  
   
--   [Criar diagramas de camada por meio de código](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Criar diagramas de camada por meio de código](../modeling/create-layer-diagrams-from-your-code.md)  
   
 #### <a name="to-examine-the-linked-artifacts"></a>Para examinar os artefatos vinculados  
   

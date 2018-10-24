@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a6dee20c35b290b50306d5484dc139e8a7600a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 447a01f96c9f642bca743247551bc2b3d38e4d23
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905942"
 ---
 # <a name="command-window"></a>Janela Comando
 A janela **Comando** é usada para executar comandos ou aliases diretamente no IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Você pode executar tanto comandos de menu quanto comandos que não aparecem em nenhum menu. Para exibir a janela **Comando**, escolha **Outras Janelas** no menu **Exibir** e selecione **Janela Comando**.
@@ -55,7 +55,7 @@ A janela **Comando** é usada para executar comandos ou aliases diretamente no I
  Os seguintes atalhos ajudarão a navegar no modo Comando.
 
 |Ação|Local do cursor|Keybinding|
-|------------|---------------------|----------------|
+|------------| - |----------------|
 |Percorra a lista de comandos inseridos anteriormente.|Linha de entrada|SETA PARA CIMA E SETA PARA BAIXO|
 |Role para cima na janela.|Conteúdo da janela Comando|CTRL+SETA PARA CIMA|
 |Role para baixo na janela.|Conteúdo da janela Comando|SETA PARA BAIXO ou CTRL+SETA PARA BAIXO|

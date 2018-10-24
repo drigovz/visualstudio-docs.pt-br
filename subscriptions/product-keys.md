@@ -9,12 +9,12 @@ description: Saiba como obter e gerenciar as chaves do produto (Product Keys) na
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7726470eaaec90ba5138a84901745bbde61201bd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637832"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900846"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Usando as chaves do produto (Product Keys) nas assinaturas do Visual Studio
 
@@ -79,11 +79,11 @@ Somente os assinantes com assinaturas ativas podem baixar produtos e solicitar c
 
 
 Para solicitar a chave do produto (Product Key):
-1.  Entre na sua assinatura do Visual Studio.  Você deve estar conectado para baixar produtos ou solicitar chaves do produto (Product Keys).
-2.  Clique na guia [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
-3.  As chaves do produto (Product Keys) são listadas em ordem alfabética pelo nome do produto.  Você pode rolar para baixo até o nome do produto desejado ou pesquisá-lo usando a barra de pesquisa na parte superior da página.
-    > [!div class="mx-imgBorder"]
-    > ![Procurar a chave do produto (Product Key)](_img\product-keys\visio-product-key-cropped.png)
+1. Entre na sua assinatura do Visual Studio.  Você deve estar conectado para baixar produtos ou solicitar chaves do produto (Product Keys).
+2. Clique na guia [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
+3. As chaves do produto (Product Keys) são listadas em ordem alfabética pelo nome do produto.  Você pode rolar para baixo até o nome do produto desejado ou pesquisá-lo usando a barra de pesquisa na parte superior da página.
+   > [!div class="mx-imgBorder"]
+   > ![Procurar a chave do produto (Product Key)](_img/product-keys/visio-product-key-cropped.png)
 
 Neste exemplo, utilizamos a barra de pesquisa para localizar uma chave do produto (Product Key) do Visio 2010.
 Como é possível ver, há várias versões listadas do Visio 2010.  Uma chave já foi solicitada para o Visio Standard 2010 e para o Visio Premium 2010, sendo que há quatro chaves restantes para cada um deles.  Ambas as chaves solicitadas são comerciais e estão exibidas na página.  Observe que é possível registrar uma breve observação sobre as chaves solicitadas na coluna **Observações**.  Você pode usar isso em conjunto com a data na coluna **Solicitada** para manter o controle das chaves já solicitadas.  Por exemplo, você pode fazer observações ao ativar uma instalação do produto usando a chave.

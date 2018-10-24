@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd92e4e4b5f4a0ae77cfae393d2d51446e17bcfe
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0cbc26a198cace58a957f3d3aaf25457cf457256
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327210"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906033"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Criar web parts para SharePoint
   Usando web parts, você pode modificar o conteúdo, aparência e comportamento de páginas de um site do SharePoint usando um navegador. Web parts são controles de servidor que são executados dentro de uma página de web part: são os blocos de construção de páginas que aparecem em um site do SharePoint. Ver [bloco de construção: Web Parts](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -84,25 +84,25 @@ ms.locfileid: "36327210"
 ## <a name="visual-web-part-limitations"></a>Limitações do Visual web part
  A partir do Visual Studio, você pode adicionar web parts visuais para soluções em área restrita do SharePoint e soluções de farm. No entanto, as web parts visuais têm as seguintes limitações:  
   
--   Web parts visuais não dão suporte a parâmetros substituíveis. Para obter mais informações, consulte [parâmetros substituíveis](../sharepoint/replaceable-parameters.md).  
+- Web parts visuais não dão suporte a parâmetros substituíveis. Para obter mais informações, consulte [parâmetros substituíveis](../sharepoint/replaceable-parameters.md).  
   
--   Controles de usuário ou partes visuais da web não podem ser arrastados e descartados ou copiados para a web part visual. Essa ação faz com que um erro de compilação.  
+- Controles de usuário ou partes visuais da web não podem ser arrastados e descartados ou copiados para a web part visual. Essa ação faz com que um erro de compilação.  
   
--   Web parts visuais diretamente não dão suporte a tokens de servidor do SharePoint como $SPUrl. Para obter mais informações, consulte "Token restrições em área restrita e Web Parts visuais" no tópico [soluções do SharePoint solucionar](../sharepoint/troubleshooting-sharepoint-solutions.md).  
+- Web parts visuais diretamente não dão suporte a tokens de servidor do SharePoint como $SPUrl. Para obter mais informações, consulte "Token restrições em área restrita e Web Parts visuais" no tópico [soluções do SharePoint solucionar](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
--   Web part Visual em uma solução em área restrita, ocasionalmente, obter o erro, "a solicitação de execução de código em modo seguro foi recusada porque o serviço de Host do código em área restrita estava muito ocupado para tratar a solicitação". Para obter mais informações sobre esse erro, consulte esta postagem na [blog da equipe do SharePoint Developer](http://go.microsoft.com/fwlink/?LinkId=225932).  
+- Web part Visual em uma solução em área restrita, ocasionalmente, obter o erro, "a solicitação de execução de código em modo seguro foi recusada porque o serviço de Host do código em área restrita estava muito ocupado para tratar a solicitação". Para obter mais informações sobre esse erro, consulte esta postagem na [blog da equipe do SharePoint Developer](http://go.microsoft.com/fwlink/?LinkId=225932).  
   
--   Depuração de JavaScript do lado do servidor não tem suporte no Visual Studio, mas há suporte para depuração de JavaScript do lado do cliente.  
+- Depuração de JavaScript do lado do servidor não tem suporte no Visual Studio, mas há suporte para depuração de JavaScript do lado do cliente.  
   
-     Embora você possa adicionar JavaScript embutido para um arquivo de marcação do lado do servidor, depuração não tem suporte para pontos de interrupção adicionados à marcação. Para depurar o JavaScript, fazer referência a um arquivo JavaScript externo no arquivo de marcação e, em seguida, defina os pontos de interrupção no arquivo JavaScript.  
+   Embora você possa adicionar JavaScript embutido para um arquivo de marcação do lado do servidor, depuração não tem suporte para pontos de interrupção adicionados à marcação. Para depurar o JavaScript, fazer referência a um arquivo JavaScript externo no arquivo de marcação e, em seguida, defina os pontos de interrupção no arquivo JavaScript.  
   
--   Depuração de embutido [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] código deve ser feito no arquivo de código gerado, em vez de no arquivo de marcação.  
+- Depuração de embutido [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] código deve ser feito no arquivo de código gerado, em vez de no arquivo de marcação.  
   
--   Web parts visuais não suportam o uso da `<@ Assembly Src=` diretiva.  
+- Web parts visuais não suportam o uso da `<@ Assembly Src=` diretiva.  
   
--   SharePoint controles da web e alguns [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] controles não têm suporte no ambiente de área restrita e do SharePoint. Se não há suporte para controles são usados em uma web part visual em uma solução em área restrita, o erro "O nome do namespace ou tipo 'Tema' não existe no namespace 'WebControls'" será exibida.  
+- SharePoint controles da web e alguns [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] controles não têm suporte no ambiente de área restrita e do SharePoint. Se não há suporte para controles são usados em uma web part visual em uma solução em área restrita, o erro "O nome do namespace ou tipo 'Tema' não existe no namespace 'WebControls'" será exibida.  
   
- Para obter mais informações sobre as soluções em área restrita, consulte [diferenças entre a área restrita e soluções em farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
+  Para obter mais informações sobre as soluções em área restrita, consulte [diferenças entre a área restrita e soluções em farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
   
 ## <a name="create-older-style-sharepoint-based-web-parts"></a>Criar estilo antigo baseado no SharePoint web parts
  Você pode usar os modelos no Visual Studio para criar um personalizado [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] as web parts para SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] partes da Web são criados sobre o [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infra-estrutura de web part e o tipo recomendado para novos projetos.  

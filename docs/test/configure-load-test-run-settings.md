@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283323"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813833"
 ---
 # <a name="configure-load-test-run-settings"></a>Definir configurações de execução de teste de carga
 
@@ -30,7 +30,7 @@ A configuração de execução inicial é criada quando você cria um teste de c
 ## <a name="tasks"></a>Tarefas
 
 |Tarefas|Tópicos associados|
-|-----------|-----------------------|
+|-|-|
 |**Adicionar mais configurações de execução ao teste de carga:** além da configuração de execução criada quando você executa o **Novo Assistente de Teste de Carga**, é possível adicionar mais configurações de execução ao teste de carga para que ele possa ser executado em diferentes condições.|-   [Como adicionar configurações de execução adicionais a um teste de carga](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**Especificar a configuração de execução ativa a ser usada com o teste de carga:** você pode selecionar a configuração de execução que deseja usar com o teste de carga usando o Editor de Teste de Carga. A configuração de execução ativa é identificada pelo sufixo "[Active]".|-   [Como selecionar a configuração de execução ativa para um teste de carga](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
 |**Editar propriedades da configuração da execução:** você pode editar suas propriedades de configuração de execução para coisas como registrar opções em log (veja mais abaixo), determinar a duração do teste, a duração de aquecimento, o número máximo de detalhes do erro relatados, a taxa de amostragem, o modelo de conexão (somente testes de desempenho Web), o tipo de armazenamento de resultados, o nível de validação e rastreamento SQL. As configurações de execução devem refletir as metas do teste de carga.|-   [Propriedades das configurações de execução de teste de carga](../test/load-test-run-settings-properties.md)<br />-   [Alterando as propriedades da configuração de execução](../test/load-test-run-settings-properties.md#change-run-setting-properties)|
