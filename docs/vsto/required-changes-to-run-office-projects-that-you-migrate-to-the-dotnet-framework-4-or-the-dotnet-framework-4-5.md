@@ -15,25 +15,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10c21ef1ced2e5237ac0cf940d7561d39e863d4f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 675831a8e094728a142bebf0432838030ae8791d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670196"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883467"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Alterações necessárias para executar projetos do Office migrados para o .NET Framework 4 ou o .NET Framework 4.5
   Se a estrutura de destino de um projeto do Office será alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior de uma versão anterior do .NET Framework, você deve executar as seguintes tarefas para garantir que a solução pode ser executado no computador de desenvolvimento e nos computadores dos usuários finais:  
   
--   Remover o <xref:System.Security.SecurityTransparentAttribute> do projeto se tiver atualizado do Visual Studio 2008.  
+- Remover o <xref:System.Security.SecurityTransparentAttribute> do projeto se tiver atualizado do Visual Studio 2008.  
   
--   Executar uma **Clean** comando no Visual Studio para poder executar ou depurar o projeto no computador de desenvolvimento.  
+- Executar uma **Clean** comando no Visual Studio para poder executar ou depurar o projeto no computador de desenvolvimento.  
   
--   Atualize o pré-requisito para o projeto do .NET Framework.  
+- Atualize o pré-requisito para o projeto do .NET Framework.  
   
--   Os usuários finais também deverá reinstalar a solução se tiver implantado usando o ClickOnce antes de alterar a estrutura de destino.  
+- Os usuários finais também deverá reinstalar a solução se tiver implantado usando o ClickOnce antes de alterar a estrutura de destino.  
   
- Para obter mais informações sobre cada uma dessas tarefas, consulte as seções correspondentes abaixo.  
+  Para obter mais informações sobre cada uma dessas tarefas, consulte as seções correspondentes abaixo.  
   
 ## <a name="remove-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Remova o atributo de SecurityTransparent dos projetos que você atualizar do Visual Studio 2008  
  Se você atualizar um projeto do Office do Visual Studio 2008 e a estrutura de destino do projeto muda posteriormente para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, você deve remover o <xref:System.Security.SecurityTransparentAttribute> do projeto. Visual Studio não remove automaticamente esse atributo para você. Se você não remover esse atributo, você receberá uma mensagem de erro quando você compila o projeto.  

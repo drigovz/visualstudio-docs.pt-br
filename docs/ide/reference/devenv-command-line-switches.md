@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b6cf3bf422c861d5a649e5cfa71cf2b4a4b5fea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a8987354af4a0b62438cea3aab3f18f4def7bfa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951109"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907034"
 ---
 # <a name="devenv-command-line-switches"></a>Opções de linha de comando do Devenv
 
@@ -61,7 +61,7 @@ As regras de sintaxe para opções `devenv` são semelhantes às de outros utili
 As seguintes opções de linha de comando exibem o IDE e realizam a tarefa descrita.
 
 |Opção de linha de comando|Descrição|
-|-------------------------|-----------------|
+| - |-----------------|
 |[/Command](../../ide/reference/command-devenv-exe.md)|Inicia o IDE e executa o comando especificado.|
 |[/DebugExe](../../ide/reference/debugexe-devenv-exe.md)|Carrega um executável C++ no controle do depurador. Essa opção não está disponível para os executáveis do Visual Basic ou do C++. Para obter mais informações, consulte [Automatically start a process in the debugger (Iniciar automaticamente um processo no depurador)](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|
 |[/LCID ou /l](../../ide/reference/lcid-devenv-exe.md)|Define o idioma padrão do IDE. Se a linguagem especificada não estiver incluída em sua instalação do Visual Studio, essa configuração será ignorada.|
@@ -77,7 +77,7 @@ As seguintes opções de linha de comando exibem o IDE e realizam a tarefa descr
 As opções de linha de comando a seguir não exibem o IDE.
 
 |Opção de linha de comando|Descrição|
-|-------------------------|-----------------|
+| - |-----------------|
 |[/?](../../ide/reference/q-devenv-exe.md)|Exibe ajuda para opções do devenv na **Janela do prompt de comando**.<br /><br /> **Devenv /?**|
 |[/Build](../../ide/reference/build-devenv-exe.md)|Cria a solução ou o projeto especificado de acordo com a configuração da solução especificada.<br /><br /> **Devenv myproj.csproj /build**|
 |[/Clean](../../ide/reference/clean-devenv-exe.md)|Exclui os arquivos criados pelo comando de build sem afetar os arquivos de origem.<br /><br /> **Devenv myproj.csproj /clean**|

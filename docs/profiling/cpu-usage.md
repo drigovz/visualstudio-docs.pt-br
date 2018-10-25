@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1409431b0cdaec775ecd420fb9b6ea1ded0868de
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 1f63e4f43db3f8c4b24b43bda02cf00b52befc94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627057"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842177"
 ---
 # <a name="analyze-cpu-usage"></a>Analisar o uso de CPU
 Quando você precisa investigar problemas de desempenho no aplicativo, um bom começo é entender como ele usa a CPU. A ferramenta **Uso da CPU** mostra a você os momentos em que a CPU está gastando tempo executando o código do Visual C++, Visual C#/Visual Basic e JavaScript. A partir do Visual Studio 2015 Atualização 1, é possível ver um detalhamento por função do uso da CPU sem sair do depurador. É possível ativar e desativar a criação de perfil da CPU durante a depuração e exibir os resultados quando a execução é interrompida, por exemplo, em um ponto de interrupção.  
@@ -28,33 +28,33 @@ O Windows 7 ou posterior é necessário para usar a ferramenta de criação de p
   
 ##  <a name="collect-cpu-usage-data"></a>Coletar dados de uso da CPU  
   
-1.  No Visual Studio, defina a configuração da solução como **Versão** e escolha o destino da implantação.  
+1. No Visual Studio, defina a configuração da solução como **Versão** e escolha o destino da implantação.  
   
-     ![Selecionar a versão e o computador local](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![Selecionar a versão e o computador local](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-    -   Executar o aplicativo no modo **Versão** fornece uma melhor exibição do desempenho real do aplicativo.  
+   -   Executar o aplicativo no modo **Versão** fornece uma melhor exibição do desempenho real do aplicativo.  
   
-    -   Executar o aplicativo no computador local replica melhor a execução do aplicativo instalado.  
+   -   Executar o aplicativo no computador local replica melhor a execução do aplicativo instalado.  
   
-    -   Se você estiver coletando dados de um dispositivo remoto, execute o aplicativo diretamente no dispositivo e não usando uma Conexão de Área de Trabalho Remota.  
+   -   Se você estiver coletando dados de um dispositivo remoto, execute o aplicativo diretamente no dispositivo e não usando uma Conexão de Área de Trabalho Remota.  
   
-    -   Para aplicativos Windows Phone, a coleta de dados diretamente do **Dispositivo** fornece os dados mais precisos.  
+   -   Para aplicativos Windows Phone, a coleta de dados diretamente do **Dispositivo** fornece os dados mais precisos.  
   
-2.  No menu **Depurar**, escolha **Criador de Perfil de Desempenho**.  
+2. No menu **Depurar**, escolha **Criador de Perfil de Desempenho**.  
   
-3.  Escolha **Uso da CPU** e, em seguida, **Iniciar**.  
+3. Escolha **Uso da CPU** e, em seguida, **Iniciar**.  
   
-     ![Escolher Uso da CPU](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![Escolher Uso da CPU](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4.  Quando o aplicativo for iniciado, clique em **Obter Número Máximo**. Aguarde cerca de um segundo após a exibição da saída e escolha **Obter Número Máximo Assíncrono**. Esperar entre cliques de botão torna mais fácil isolar as rotinas de clique do botão no relatório de diagnóstico.  
+4. Quando o aplicativo for iniciado, clique em **Obter Número Máximo**. Aguarde cerca de um segundo após a exibição da saída e escolha **Obter Número Máximo Assíncrono**. Esperar entre cliques de botão torna mais fácil isolar as rotinas de clique do botão no relatório de diagnóstico.  
   
-5.  Depois que a segunda linha de saída for exibida, escolha **Parar Coleção** no hub Desempenho e Diagnóstico.  
+5. Depois que a segunda linha de saída for exibida, escolha **Parar Coleção** no hub Desempenho e Diagnóstico.  
   
- ![Parar a coleta de dados de CpuUsage](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![Parar a coleta de dados de CpuUsage](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
   
- A ferramenta Uso da CPU analisa os dados e exibe o relatório.  
+   A ferramenta Uso da CPU analisa os dados e exibe o relatório.  
   
- ![Relatório de CpuUsage](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
+   ![Relatório de CpuUsage](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analisar o relatório de uso da CPU  
   

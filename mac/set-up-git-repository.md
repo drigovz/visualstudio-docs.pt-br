@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 6898fb890828a01f286f321f14de3999fdf1ca64
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: aafa410352be27084f2febecc734c68e4f316d6f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827955"
 ---
 # <a name="setting-up-a-git-repository"></a>Configurando um repositório Git
 
@@ -38,7 +38,7 @@ Para configurar um repositório Git, execute as seguintes etapas:
 
     ![exibir e copiar endereço](media/version-control-git3.png)
 
-  Você precisará do endereço HTTPS para apontar o Visual Studio para Mac para este repositório.
+   Você precisará do endereço HTTPS para apontar o Visual Studio para Mac para este repositório.
 
 
 ## <a name="publishing-an-existing-project"></a>Publicar um projeto existente
@@ -108,7 +108,7 @@ A caixa de diálogo Novo projeto pode ser usada para publicar um novo projeto us
 5. Insira o diretório no qual você deseja clonar o repositório e pressione **Check-out**.
 
 > [!NOTE]
-Você poderá enfrentar problemas se o repositório for superior a 4 GB de tamanho.
+> Você poderá enfrentar problemas se o repositório for superior a 4 GB de tamanho.
 
 ## <a name="troubleshooting"></a>Solução de problemas
 

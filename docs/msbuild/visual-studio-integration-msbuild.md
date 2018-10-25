@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65dd8415dc57c026d2a913b209340e381b07bc6a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 874642371f173b56a174dabdd17ee1cf50cc79fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179135"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875470"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integração com o Visual Studio (MSBuild)
 O Visual Studio hospeda o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para carregar e compilar projetos gerenciados. Como [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] é responsável pelo projeto, quase todo projeto que estiver no formato [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poderá ser utilizado com êxito no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mesmo se o projeto tiver sido criado por meio de uma ferramenta diferente e tenha um processo de build personalizado.  
@@ -68,9 +68,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>Compiladores em processo  
  Quando possível, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tentará usar a versão em processo do compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] para melhorar o desempenho. (não se aplica a [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]). Para que isso funcione corretamente, as condições a seguir devem ser cumpridas:  
   
--   Em um destino do projeto, deve haver uma tarefa nomeada como `Vbc` para projetos [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
+- Em um destino do projeto, deve haver uma tarefa nomeada como `Vbc` para projetos [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
   
--   O parâmetro `UseHostCompilerIfAvailable` da tarefa deve ser definido como true.  
+- O parâmetro `UseHostCompilerIfAvailable` da tarefa deve ser definido como true.  
   
 ## <a name="design-time-intellisense"></a>IntelliSense do Tempo de Design  
  Para obter o suporte do IntelliSense em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] antes que o build gere um assembly de saída, as condições a seguir devem ser cumpridas:  
@@ -157,23 +157,23 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>Resolução de referência  
  Resolução de referência é o processo de usar os itens de referência armazenados em um arquivo de projeto para localizar assemblies reais. É necessário que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dispare uma resolução de referência para mostrar propriedades detalhadas de cada referência na janela **Propriedades**. A lista a seguir descreve os três tipos de referências e como elas são resolvidas.  
   
--   Referências do assembly:  
+- Referências do assembly:  
   
-     O sistema de projeto chama um destino com o nome conhecido `ResolveAssemblyReferences`. Esse destino deve produzir itens com o nome de tipo de item `ReferencePath`. Cada um desses itens deve ter uma especificação de item (o valor do atributo `Include` de um item) que contém o caminho completo para a referência. Os itens devem ter todos os metadados dos itens de entrada aprovados, além dos novos metadados a seguir:  
+   O sistema de projeto chama um destino com o nome conhecido `ResolveAssemblyReferences`. Esse destino deve produzir itens com o nome de tipo de item `ReferencePath`. Cada um desses itens deve ter uma especificação de item (o valor do atributo `Include` de um item) que contém o caminho completo para a referência. Os itens devem ter todos os metadados dos itens de entrada aprovados, além dos novos metadados a seguir:  
   
-    -   `CopyLocal`, que indica se o assembly deve ser copiado para a pasta de saída, definido como true ou false.  
+  - `CopyLocal`, que indica se o assembly deve ser copiado para a pasta de saída, definido como true ou false.  
   
-    -   `OriginalItemSpec`, que contém a especificação de item original da referência.  
+  - `OriginalItemSpec`, que contém a especificação de item original da referência.  
   
-    -   `ResolvedFrom`, definido como “{TargetFrameworkDirectory}” se tiver sido resolvido do diretório [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+  - `ResolvedFrom`, definido como “{TargetFrameworkDirectory}” se tiver sido resolvido do diretório [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
--   Referências COM:  
+- Referências COM:  
   
-     O sistema de projeto chama um destino com o nome conhecido `ResolveCOMReferences`. Esse destino deve produzir itens com o nome de tipo de item `ComReferenceWrappers`. Cada um desses itens deve ter uma especificação de item que contém o caminho completo para o assembly de interoperabilidade da referência COM. Os itens devem ter todos os metadados dos itens de entrada aprovados, além dos novos metadados com o nome `CopyLocal`, que indicam se o assembly deve ser copiado para a pasta de saída, definido como true ou false.  
+   O sistema de projeto chama um destino com o nome conhecido `ResolveCOMReferences`. Esse destino deve produzir itens com o nome de tipo de item `ComReferenceWrappers`. Cada um desses itens deve ter uma especificação de item que contém o caminho completo para o assembly de interoperabilidade da referência COM. Os itens devem ter todos os metadados dos itens de entrada aprovados, além dos novos metadados com o nome `CopyLocal`, que indicam se o assembly deve ser copiado para a pasta de saída, definido como true ou false.  
   
--   Referências nativas  
+- Referências nativas  
   
-     O sistema de projeto chama um destino com o nome conhecido `ResolveNativeReferences`. Esse destino deve produzir itens com o nome de tipo de item `NativeReferenceFile`. Os itens devem ter todos os metadados dos itens de entrada aprovados, além de uma nova parte de metadados com o nome `OriginalItemSpec`, que contém a especificação de item original da referência.  
+   O sistema de projeto chama um destino com o nome conhecido `ResolveNativeReferences`. Esse destino deve produzir itens com o nome de tipo de item `NativeReferenceFile`. Os itens devem ter todos os metadados dos itens de entrada aprovados, além de uma nova parte de metadados com o nome `OriginalItemSpec`, que contém a especificação de item original da referência.  
   
 ## <a name="performance-shortcuts"></a>Atalhos de desempenho  
  Se a depuração for iniciada na interface do usuário do Visual Studio (pela tecla F5 ou pela escolha de **Depurar** > **Iniciar Depuração** na barra de menus), o processo de build usará uma rápida verificação de atualização para melhorar o desempenho. Em alguns casos nos quais builds personalizados criam arquivos que, por sua vez, são compilados, a verificação de atualização rápida não identificará os arquivos alterados corretamente. Projetos que precisam de verificações de atualização mais completas podem desligue a verificação rápida configurando a variável de ambiente `DISABLEFASTUPTODATECHECK=1`. Como alternativa, os projetos podem definir isso como uma propriedade de MSBuild no projeto ou em um arquivo importado pelo projeto.  

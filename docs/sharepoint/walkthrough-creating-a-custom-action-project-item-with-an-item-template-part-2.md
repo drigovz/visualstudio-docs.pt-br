@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3ca011f519c53924681d2c1a7042f25dcfaad208
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19792a9804072e7c6ade836b408951e2cfadd070
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635194"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910960"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 2
   Depois de definir um tipo personalizado de item de projeto do SharePoint e associá-lo a um modelo de item no Visual Studio, você também poderá fornecer um assistente do modelo. Você pode usar o Assistente para coletar informações dos usuários quando eles usam seu modelo para adicionar uma nova instância do item de projeto a um projeto. As informações que você coleta podem ser usadas para inicializar o item de projeto.  
@@ -44,15 +44,15 @@ ms.locfileid: "42635194"
   
  Você também precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:  
   
--   Edições com suporte do Windows, SharePoint e Visual Studio.
+- Edições com suporte do Windows, SharePoint e Visual Studio.
   
--   O SDK do Visual Studio. Este passo a passo usa o **VSIX Project** modelo no SDK para criar um pacote VSIX para implantar o item de projeto. Para obter mais informações, consulte [estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- O SDK do Visual Studio. Este passo a passo usa o **VSIX Project** modelo no SDK para criar um pacote VSIX para implantar o item de projeto. Para obter mais informações, consulte [estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir o passo a passo:  
+  Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir o passo a passo:  
   
--   Assistentes para modelos de projeto e item no Visual Studio. Para obter mais informações, consulte [como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md) e o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface.  
+- Assistentes para modelos de projeto e item no Visual Studio. Para obter mais informações, consulte [como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md) e o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface.  
   
--   Ações personalizadas no SharePoint. Para obter mais informações, consulte [ação personalizada](http://go.microsoft.com/fwlink/?LinkId=177800).  
+- Ações personalizadas no SharePoint. Para obter mais informações, consulte [ação personalizada](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
 ## <a name="create-the-wizard-project"></a>Criar o projeto de Assistente
  Para concluir este passo a passo, você deve adicionar um projeto à solução CustomActionProjectItem que você criou na [instruções passo a passo: criar um item de projeto de ação personalizado com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Você implementará o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> de interface e definir o Assistente de interface do usuário neste projeto.  

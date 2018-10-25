@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d54d31a1a4478f114e997df39bcbeeb95d5cda5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 80b4000a8fc8657c1b82490b1ddb6dec0dbdd3ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907229"
 ---
 # <a name="attach"></a>Attach
 A opção **Attach** do *VSPerfCmd.exe* inicia a criação de perfil de exemplo do processo em execução especificado pela PID (ID do processo).  
@@ -56,7 +56,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="interval-options"></a>Opções de intervalo  
  Uma das seguintes opções de intervalo de amostragem pode ser especificada na linha de comando Anexar. O intervalo de amostragem padrão é 10.000.000 ciclos de relógio do processador.  
   
- **Temporizador**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:** Eventos]**Contador**[**:**`Name`,`Reload`,`FriendlyName`]  
+ **Temporizador**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Eventos]**Contador**[**:**`Name`,`Reload`,`FriendlyName`]  
  Especifica o número e o tipo do intervalo de amostragem.  
   
 -   **Temporizador** – exemplifica cada `Cycles` ciclo de relógio do processador. Se `Cycles` não for especificado, os 10.000.000 ciclos serão usados.  

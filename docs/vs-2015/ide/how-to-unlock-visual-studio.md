@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6e51fdad7d4eaaec306de396c4693d00f0b434b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 453b8b8ef4667b7f049fbd4b62dbdc582c0a84ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198855"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942875"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Como desbloquear o Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ Você pode avaliar o Visual Studio gratuitamente por até 30 dias. Ao entrar no 
   
  Essa mensagem indica que embora sua assinatura ainda possa ser válida, o token de licença que o Visual Studio usa para manter sua assinatura atualizada ainda não foi atualizado e se tornou obsoleto devido a um dos motivos a seguir:  
   
-1.  Você não usou o Visual Studio ou não teve uma conexão com a Internet por um longo período.  
+1. Você não usou o Visual Studio ou não teve uma conexão com a Internet por um longo período.  
   
-2.  Você saiu do Visual Studio.  
+2. Você saiu do Visual Studio.  
   
- Antes de o token de licença se tornar obsoleto, o Visual Studio mostrará primeiro uma mensagem de aviso solicitando que você insira suas credenciais novamente.  
+   Antes de o token de licença se tornar obsoleto, o Visual Studio mostrará primeiro uma mensagem de aviso solicitando que você insira suas credenciais novamente.  
   
- Se você não inserir suas credenciais novamente, o token começará a se tornar obsoleto. Quando isso acontece, a caixa de diálogo Configurações de Conta informa os dias restantes antes de seu token expirar completamente. Depois que o token expirar, você precisará inserir novamente suas credenciais para esta conta ou licença com outro método acima para poder continuar usando o Visual Studio.  
+   Se você não inserir suas credenciais novamente, o token começará a se tornar obsoleto. Quando isso acontece, a caixa de diálogo Configurações de Conta informa os dias restantes antes de seu token expirar completamente. Depois que o token expirar, você precisará inserir novamente suas credenciais para esta conta ou licença com outro método acima para poder continuar usando o Visual Studio.  
   
 > [!IMPORTANT]
 >  Se estiver usando o Visual Studio por longos períodos em ambientes com acesso limitado ou sem acesso à Internet, você deverá usar uma chave do produto (Product Key) para desbloquear o Visual Studio para evitar a interrupção.  

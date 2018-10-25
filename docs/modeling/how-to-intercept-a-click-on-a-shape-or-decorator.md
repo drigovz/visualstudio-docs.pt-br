@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a8f959595ec40f70b736c163299d8593883ee5e5
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0a8af35d9edbb28c6b357149586fe7015858f4f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876523"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Como interceptar um clique em uma forma ou um decorador
 Os procedimentos a seguir demonstram como interceptar um clique em uma forma ou um decorador de ícone. Você pode interceptar cliques, cliques duplos, arrasta, e outros gestos e fazer com que o elemento de responder.
@@ -121,17 +121,17 @@ public partial class MyShape // change
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Interceptando clica e arrasta em listas de CompartmentShape
  O exemplo a seguir permite que os usuários reordenar os itens em uma forma de compartimento, arrastando-os. Para executar este código:
 
-1.  Criar uma nova solução DSL usando o **diagramas de classe** modelo de solução.
+1. Criar uma nova solução DSL usando o **diagramas de classe** modelo de solução.
 
-     Você também pode trabalhar com uma solução que contém as formas do compartimento de sua preferência. Esse código supõe que há uma relação de incorporação entre os elementos de modelo representados pela forma e os elementos representados em itens da lista de compartimento.
+    Você também pode trabalhar com uma solução que contém as formas do compartimento de sua preferência. Esse código supõe que há uma relação de incorporação entre os elementos de modelo representados pela forma e os elementos representados em itens da lista de compartimento.
 
-2.  Defina as **gera derivado duplo** propriedade da forma do compartimento.
+2. Defina as **gera derivado duplo** propriedade da forma do compartimento.
 
-3.  Adicione este código em um arquivo a **Dsl** projeto.
+3. Adicione este código em um arquivo a **Dsl** projeto.
 
-4.  Ajuste os nomes de classe e a forma de domínio nesse código para corresponder ao seu próprio DSL.
+4. Ajuste os nomes de classe e a forma de domínio nesse código para corresponder ao seu próprio DSL.
 
- Em resumo, o código funciona da seguinte maneira. Neste exemplo, `ClassShape` é o nome da forma do compartimento.
+   Em resumo, o código funciona da seguinte maneira. Neste exemplo, `ClassShape` é o nome da forma do compartimento.
 
 -   Um conjunto de manipuladores de eventos de mouse está anexado a cada instância de compartimento quando ele é criado.
 
@@ -393,7 +393,6 @@ namespace Company.CompartmentDrag
   }
  }
 }
-
 ```
 
 ## <a name="see-also"></a>Consulte também

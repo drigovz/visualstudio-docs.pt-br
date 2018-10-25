@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e3e87a2786e2eb5ffafda2924920eaad7640039
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ecec77428d32512ec1b5fcf3822933c1c619b7f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232278"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873678"
 ---
 # <a name="error-list-window"></a>Janela Lista de Erros
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,23 +37,23 @@ OBSERVAÇÃO]
   
  É possível desenvolver aplicativos mais rapidamente usando a janela **Lista de Erros**. Por exemplo, é possível executar as seguintes tarefas:  
   
--   Exibir os erros, os avisos e as mensagens produzidas durante a escrita do código.  
+- Exibir os erros, os avisos e as mensagens produzidas durante a escrita do código.  
   
--   Localizar erros de sintaxe observados pelo IntelliSense.  
+- Localizar erros de sintaxe observados pelo IntelliSense.  
   
--   Localizar erros de implantação, determinados erros da Análise Estática e erros detectados durante a aplicação de políticas de Modelo Empresarial.  
+- Localizar erros de implantação, determinados erros da Análise Estática e erros detectados durante a aplicação de políticas de Modelo Empresarial.  
   
--   Clicar duas vezes em uma entrada de mensagem de erro para abrir o arquivo em que ocorre o problema e ir até o local do erro.  
+- Clicar duas vezes em uma entrada de mensagem de erro para abrir o arquivo em que ocorre o problema e ir até o local do erro.  
   
--   Filtrar quais entradas são exibidas e quais colunas de informações são exibidas para cada entrada.  
+- Filtrar quais entradas são exibidas e quais colunas de informações são exibidas para cada entrada.  
   
--   Pesquisar termos específicos e definir o escopo da pesquisa para apenas o projeto ou o documento atual.  
+- Pesquisar termos específicos e definir o escopo da pesquisa para apenas o projeto ou o documento atual.  
   
- Para exibir a **Lista de Erros**, clique em **Exibir/Lista de Erros** ou **CTRL+\\+E**.  
+  Para exibir a **Lista de Erros**, clique em **Exibir/Lista de Erros** ou **CTRL+\\+E**.  
   
- É possível escolher as guias **Erros**, **Avisos** e **Mensagens** para ver níveis diferentes de informações.  
+  É possível escolher as guias **Erros**, **Avisos** e **Mensagens** para ver níveis diferentes de informações.  
   
- Para classificar a lista, clique em um cabeçalho de coluna. Para classificar novamente por uma coluna adicional, mantenha pressionada a tecla SHIFT e clique em outro cabeçalho de coluna. Para selecionar quais colunas são exibidas e ocultadas, escolha **Mostrar Colunas** no menu de atalho. Para alterar a ordem na qual as colunas são exibidas, arraste um cabeçalho de coluna para a esquerda ou direita.  
+  Para classificar a lista, clique em um cabeçalho de coluna. Para classificar novamente por uma coluna adicional, mantenha pressionada a tecla SHIFT e clique em outro cabeçalho de coluna. Para selecionar quais colunas são exibidas e ocultadas, escolha **Mostrar Colunas** no menu de atalho. Para alterar a ordem na qual as colunas são exibidas, arraste um cabeçalho de coluna para a esquerda ou direita.  
   
 > [!NOTE]
 >  As caixas de diálogo e os comandos de menu vistos podem ser diferentes daqueles descritos aqui, dependendo da edição ou das configurações ativas. Para alterar as configurações, clique em **Ferramentas / Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -63,18 +63,18 @@ OBSERVAÇÃO]
   
  É possível restringir o escopo da pesquisa para analisar e tomar decisões sobre grupos de erros. Por exemplo, talvez você deseje se concentrar em erros básicos que estão impedindo a compilação de um projeto. As opções de escopo incluem:  
   
-1.  **Documentos Abertos**: mostre erros, avisos e mensagens para os documentos abertos.  
+1. **Documentos Abertos**: mostre erros, avisos e mensagens para os documentos abertos.  
   
-2.  **Projeto Atual**: mostre erros, avisos e mensagens do projeto do documento atualmente selecionado no **Editor** ou o projeto selecionado no **Gerenciador de Soluções**.  
+2. **Projeto Atual**: mostre erros, avisos e mensagens do projeto do documento atualmente selecionado no **Editor** ou o projeto selecionado no **Gerenciador de Soluções**.  
   
-    > [!NOTE]
-    >  A lista filtrada de erros, avisos e mensagens será alterada se o projeto do documento selecionado atualmente for diferente do projeto selecionado no **Gerenciador de Soluções**.  
+   > [!NOTE]
+   >  A lista filtrada de erros, avisos e mensagens será alterada se o projeto do documento selecionado atualmente for diferente do projeto selecionado no **Gerenciador de Soluções**.  
   
-3.  **Documento Atual**: mostre erros, avisos e mensagens para o documento atualmente selecionado no **Editor** ou no **Gerenciador de Soluções**.  
+3. **Documento Atual**: mostre erros, avisos e mensagens para o documento atualmente selecionado no **Editor** ou no **Gerenciador de Soluções**.  
   
- Se um filtro estiver aplicado no momento para o resultado da pesquisa, o nome do filtro será exibido na barra de título **Lista de Erros**. Em seguida, os botões **Erros**, **Avisos** e **Mensagens** exibem o número de itens filtrados mostrados junto com o número total de itens; por exemplo, os botões mostram x de y Erros. Se nenhum filtro for aplicado, a barra de título indicará apenas “Lista de Erros	”.  
+   Se um filtro estiver aplicado no momento para o resultado da pesquisa, o nome do filtro será exibido na barra de título **Lista de Erros**. Em seguida, os botões **Erros**, **Avisos** e **Mensagens** exibem o número de itens filtrados mostrados junto com o número total de itens; por exemplo, os botões mostram x de y Erros. Se nenhum filtro for aplicado, a barra de título indicará apenas “Lista de Erros	”.  
   
- A lista no lado direito da barra de ferramentas especifica se serão mostrados os erros do build (os erros resultantes de uma operação de build), do IntelliSense (erros detectados antes da execução de um build) ou ambos.  
+   A lista no lado direito da barra de ferramentas especifica se serão mostrados os erros do build (os erros resultantes de uma operação de build), do IntelliSense (erros detectados antes da execução de um build) ou ambos.  
   
 ## <a name="search"></a>Pesquisar  
  Use a caixa de texto **Pesquisar Lista de Erros** no lado direito da barra de ferramentas **Lista de Erros** para encontrar erros específicos na lista de erros. É possível pesquisar em qualquer coluna visível na lista de erros e os resultados da pesquisa são sempre classificados de acordo com a coluna que tem a prioridade de classificação, em vez da consulta ou do filtro aplicado. Se você escolher a tecla **Esc** enquanto o foco estiver na **Lista de Erros**, será possível limpar o termo de pesquisa e os resultados da pesquisa filtrados. Você também pode clicar no **X** no lado direito da caixa de texto para desmarcá-la.  

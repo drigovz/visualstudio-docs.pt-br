@@ -4,17 +4,19 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b50ea1ae20f6d8a03609dfd37a080108ca2e58e
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384195"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853513"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Localizar alterações de código e outro histórico com o CodeLens
 
@@ -162,7 +164,7 @@ Compare uma alteração recebida com a versão local pressionando **Shift**+**F1
 O ícone na coluna **Branch** indica como o branch está relacionado ao branch no qual você está trabalhando.
 
 |**Ícone**|**A alteração foi proveniente de:**|
-|--------------|-----------------------------------------|
+|--------------| - |
 |![CodeLens: alteração de ícone do branch atual](../ide/media/codelensbranchcurrenticon.png)|A ramificação atual|
 |![CodeLens: alteração de ícone do branch pai](../ide/media/codelensbranchparenticon.png)|A ramificação pai|
 |![CodeLens: alteração de ícone do branch filho](../ide/media/codelensbranchchildicon.png)|Uma ramificação filha|

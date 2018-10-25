@@ -15,12 +15,12 @@ ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b1c0cdc94a3aa796c981dbfb83aef3dd3c2ec1a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9dfe3ee16f9e4adf4514ce85057974ef244016b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215989"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870153"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Como: abrir editores para documentos abertos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ Antes de um projeto é aberto em uma janela de documento, o projeto primeiro dev
   
 #### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>Abra um editor específico do projeto para um arquivo aberto  
   
-1.  Chame o método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>.  
+1. Chame o método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>.  
   
-     Essa chamada retorna ponteiros para a hierarquia do documento, item de hierarquia e quadro de janela, se apropriado.  
+    Essa chamada retorna ponteiros para a hierarquia do documento, item de hierarquia e quadro de janela, se apropriado.  
   
-2.  Se o documento for aberto, o projeto deve verificar para ver se existe apenas um objeto de dados de documento, ou se um objeto de exibição de documento também está presente.  
+2. Se o documento for aberto, o projeto deve verificar para ver se existe apenas um objeto de dados de documento, ou se um objeto de exibição de documento também está presente.  
   
-    -   Se existe um objeto de exibição de documento, e essa exibição é para uma hierarquia diferente ou um item de hierarquia, o projeto usa o ponteiro do quadro de janela do modo de exibição para repavimentar janela existente.  
+   - Se existe um objeto de exibição de documento, e essa exibição é para uma hierarquia diferente ou um item de hierarquia, o projeto usa o ponteiro do quadro de janela do modo de exibição para repavimentar janela existente.  
   
-    -   Se existe um objeto de exibição de documento e este modo de exibição é para a mesma hierarquia e o item de hierarquia, o projeto pode abrir uma segunda exibição se ela pode anexar ao objeto de dados subjacente do documento. Caso contrário, o projeto deve usar o ponteiro do quadro de janela do modo de exibição para repavimentar janela existente.  
+   - Se existe um objeto de exibição de documento e este modo de exibição é para a mesma hierarquia e o item de hierarquia, o projeto pode abrir uma segunda exibição se ela pode anexar ao objeto de dados subjacente do documento. Caso contrário, o projeto deve usar o ponteiro do quadro de janela do modo de exibição para repavimentar janela existente.  
   
-    -   Se o objeto de dados de documento existe, apenas o projeto deve determinar se ele pode usar o objeto de dados de documento para sua exibição. Se o objeto de dados de documento for compatível, concluído as etapas discutidas [abrir um Editor específico do projeto](../extensibility/how-to-open-project-specific-editors.md).  
+   - Se o objeto de dados de documento existe, apenas o projeto deve determinar se ele pode usar o objeto de dados de documento para sua exibição. Se o objeto de dados de documento for compatível, concluído as etapas discutidas [abrir um Editor específico do projeto](../extensibility/how-to-open-project-specific-editors.md).  
   
      Se o objeto de dados de documento não for compatível, um erro deve ser exibido para o usuário que indica que o arquivo está atualmente em uso. Esse erro só deve ser exibido em casos transitórios, como quando um arquivo está sendo compilado ao mesmo tempo o usuário está tentando abrir o arquivo usando um editor diferente do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principal do texto. O editor de texto principal pode compartilhar o objeto de dados de documento com o compilador.  
   
-3.  Se o documento não estiver aberto, porque não há nenhum objeto de dados de documento ou o objeto de exibição de documento, conclua as etapas em [abrir um Editor específico do projeto](../extensibility/how-to-open-project-specific-editors.md).  
+3. Se o documento não estiver aberto, porque não há nenhum objeto de dados de documento ou o objeto de exibição de documento, conclua as etapas em [abrir um Editor específico do projeto](../extensibility/how-to-open-project-specific-editors.md).  
   
 ## <a name="opening-a-standard-editor"></a>Abrir um Editor padrão  
  Use o procedimento a seguir para abrir um editor padrão para um arquivo que já está aberto.  

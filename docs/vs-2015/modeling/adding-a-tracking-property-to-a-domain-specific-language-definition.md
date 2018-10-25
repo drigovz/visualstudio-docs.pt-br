@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 183c459871f991aedb3cec19c7a83105091d2706
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6103f9601c55b9b29b83866d261d889c5555c86f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182995"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894372"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Adicionando uma propriedade de acompanhamento a uma definição de linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Este passo a passo mostra como adicionar uma propriedade de controle a um modelo
   
  Este passo a passo, você criará uma linguagem específica de domínio (DSL) que tem uma propriedade que tem um valor padrão com base na propriedade de Namespace padrão do modelo de controle de Namespace. Para obter mais informações sobre propriedades de acompanhamento, consulte [definindo propriedades de controle](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
--   O suporte de ferramentas DSL descritores de propriedade de controle. No entanto, o designer DSL não pode ser usado para adicionar uma propriedade de acompanhamento para um idioma. Portanto, você deve adicionar código personalizado para definir e implementar a propriedade de controle.  
+- O suporte de ferramentas DSL descritores de propriedade de controle. No entanto, o designer DSL não pode ser usado para adicionar uma propriedade de acompanhamento para um idioma. Portanto, você deve adicionar código personalizado para definir e implementar a propriedade de controle.  
   
- Uma propriedade de controle tem dois estados: acompanhar e atualizada pelo usuário. Propriedades de controle têm os seguintes recursos:  
+  Uma propriedade de controle tem dois estados: acompanhar e atualizada pelo usuário. Propriedades de controle têm os seguintes recursos:  
   
--   Quando estiver no estado de controle, o valor da propriedade de acompanhamento é calculado e o valor é atualizado como outras propriedades na alteração do modelo.  
+- Quando estiver no estado de controle, o valor da propriedade de acompanhamento é calculado e o valor é atualizado como outras propriedades na alteração do modelo.  
   
--   Quando estiver sendo atualizado pelo estado do usuário, o valor da propriedade de acompanhamento retém o valor para o qual o usuário definido pela última vez a propriedade.  
+- Quando estiver sendo atualizado pelo estado do usuário, o valor da propriedade de acompanhamento retém o valor para o qual o usuário definido pela última vez a propriedade.  
   
--   No **propriedades** janela, o **redefinir** de comando para a propriedade de controle é habilitada apenas quando a propriedade está no atualizada pelo estado do usuário. O **redefinir** comando define a propriedade de controle de estado do controle.  
+- No **propriedades** janela, o **redefinir** de comando para a propriedade de controle é habilitada apenas quando a propriedade está no atualizada pelo estado do usuário. O **redefinir** comando define a propriedade de controle de estado do controle.  
   
--   No **propriedades** janela, quando a propriedade de controle está no estado de controle, seu valor é exibida em uma fonte normal.  
+- No **propriedades** janela, quando a propriedade de controle está no estado de controle, seu valor é exibida em uma fonte normal.  
   
--   No **propriedades** janela, quando a propriedade de controle está no atualizada por estado de usuário, seu valor é exibido em uma fonte em negrito.  
+- No **propriedades** janela, quando a propriedade de controle está no atualizada por estado de usuário, seu valor é exibido em uma fonte em negrito.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Antes de começar este passo a passo, você deve primeiro instalar esses componentes:  

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 63c33b98244268a086e9db63e2b56e507471c4c3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 418c0aa6660b01896252d04a711d4069da389f00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382753"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914483"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usando controles HTML5 em testes de IU codificados
 
@@ -38,7 +38,7 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
  ![Controle do HTML5 áudio](../test/media/codedui_html5_audio.png)
 
 |Ação|Gravando|Código gerado|
-|------------|---------------|--------------------|
+|-|---------------|-|
 |**Reproduzir áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Play \<name> Audio from 00:00:00|HtmlAudio.Play(TimeSpan)|
 |**Busca em uma hora específica no áudio**|Seek \<name> Audio to 00:01:48|HtmlAudio.Seek(TimeSpan)|
 |**Pausar áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Pause \<name> Audio at 00:01:53|HtmlAudio.Pause(TimeSpan)|
@@ -62,7 +62,7 @@ Confira [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioE
  ![Controle do HTML5 vídeo](../test/media/codedui_html5_video.png)
 
 |Ação|Gravando|Código gerado|
-|------------|---------------|--------------------|
+|-|---------------|-|
 |**Reproduzir vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Play \<name> Video  from 00:00:00|HtmlVideo.Play(TimeSpan)|
 |**Busca em uma hora específica no vídeo**|Seek \<name> Video to 00:01:48|HtmlVideo.Seek(TimeSpan)|
 |**Pausar vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Pause \<name> Video at 00:01:53|HtmlVideo.Pause(TimeSpan)|

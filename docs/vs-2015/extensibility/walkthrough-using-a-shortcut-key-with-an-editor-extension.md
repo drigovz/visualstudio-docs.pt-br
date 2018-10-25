@@ -15,12 +15,12 @@ ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c239206f78c84eafcf96ed936231731f7f2d4aaa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd08e17349008760fd029887c0bc17554ef4c7d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232408"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848677"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Passo a passo: usando uma tecla de atalho com uma extensão do editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ Você pode responder a teclas de atalho em sua extensão de editor. A instruçã
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Criando um projeto do Managed Extensibility Framework (MEF)  
   
-1.  Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual c# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `KeyBindingTest`.  
+1. Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual c# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `KeyBindingTest`.  
   
-2.  Adicione um modelo de item de adornos de texto do Editor ao projeto e denomine- `KeyBindingTest`. Para obter mais informações, consulte [criar uma extensão com um modelo de Item Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Adicione um modelo de item de adornos de texto do Editor ao projeto e denomine- `KeyBindingTest`. Para obter mais informações, consulte [criar uma extensão com um modelo de Item Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Adicione as seguintes referências e defina **CopyLocal** para `false`:  
+3. Adicione as seguintes referências e defina **CopyLocal** para `false`:  
   
-     Microsoft.VisualStudio.Editor  
+    Microsoft.VisualStudio.Editor  
   
-     Microsoft.VisualStudio.OLE.Interop  
+    Microsoft.VisualStudio.OLE.Interop  
   
-     Microsoft.VisualStudio.Shell.14.0  
+    Microsoft.VisualStudio.Shell.14.0  
   
-     Microsoft.VisualStudio.TextManager.Interop  
+    Microsoft.VisualStudio.TextManager.Interop  
   
- No arquivo de classe KeyBindingTest, altere o nome de classe para PurpleCornerBox. Use a lâmpada que aparece na margem esquerda para fazer outras alterações apropriadas. Dentro do construtor, altere o nome da camada de adorno **KeyBindingTest** à **PurpleCornerBox**:  
+   No arquivo de classe KeyBindingTest, altere o nome de classe para PurpleCornerBox. Use a lâmpada que aparece na margem esquerda para fazer outras alterações apropriadas. Dentro do construtor, altere o nome da camada de adorno **KeyBindingTest** à **PurpleCornerBox**:  
   
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  

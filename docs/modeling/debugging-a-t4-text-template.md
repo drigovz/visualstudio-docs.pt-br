@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f9a150760636fd5717c427324688c564b80aca30
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: aa8f773ba6f9d0722eb4e07e9c795d0d43860ebb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859751"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869971"
 ---
 # <a name="debugging-a-t4-text-template"></a>Depurando um modelo de texto T4
 Você pode definir pontos de interrupção em modelos de texto. Para depurar um modelo de texto de tempo de design, salve o arquivo de modelo de texto e, em seguida, escolha **depurar modelo T4** no menu de atalho do arquivo no Gerenciador de soluções. Para depurar um modelo de texto de tempo de execução, simplesmente depure o aplicativo ao qual ele pertence.
@@ -25,7 +25,7 @@ Você pode definir pontos de interrupção em modelos de texto. Para depurar um 
  Para depurar um modelo de texto, você deve compreender as etapas do processo de transformação de modelo. Diferentes tipos de erro podem ocorrer dentro de cada etapa. As etapas são da seguinte maneira.
 
 |Etapa|Modelo de tempo de design: quando isso acontecer|Modelo de tempo de execução: quando isso acontecer|
-|----------|--------------------------------------------|-----------------------------------------|
+|-|-|-|
 |Código é gerado a partir do modelo de texto.<br /><br /> Erros nas diretivas, ou incompatíveis ou fora de ordem `<#...#>` marcas.|Quando você salva o modelo ou invocar a transformação de texto.|Quando você salva o modelo ou invocar a transformação de texto.|
 |Código gerado é compilado.<br /><br /> Erros de compilação em seu código de modelo.|Imediatamente após a etapa anterior.|Juntamente com o código do aplicativo.|
 |Código é executado.<br /><br /> Erros de tempo de execução em seu código de modelo.|Imediatamente após a etapa anterior.|Quando seu aplicativo for executado e invoca o código de modelo.|
@@ -38,7 +38,7 @@ Você pode definir pontos de interrupção em modelos de texto. Para depurar um 
  A tabela a seguir lista os erros mais comuns e suas correções.
 
 |Mensagem de erro|Descrição|Solução|
-|-------------------|-----------------|--------------|
+|-|-|-|
 |Falha ao carregar a classe base{0}' da qual transformação classe herdada.|Ocorre se você não encontrar a classe base especificada no `inherits` parâmetro em uma diretiva de modelo. A mensagem fornece o número de linha de diretiva do modelo.|Certifique-se de que a classe especificada existe e se o assembly que ele exista na está especificado em uma diretiva de assembly.|
 |Falha ao resolver a incluir o texto do arquivo:{0}|Ocorre quando você não conseguir encontrar um modelo incluído. A mensagem fornece o nome do arquivo de inclusão solicitada.|Certifique-se de que o caminho do arquivo é relativo ao caminho do modelo original, ou que o arquivo está em um local que está registrado com o host ou que há um caminho completo para o arquivo.|
 |Erros foram gerados ao inicializar o objeto de transformação. A transformação não será executada.|Ocorre quando o 'Initialize ()' da classe de transformação falhou ou retornou false.|O código na função Initialize () é proveniente da classe de transformação de base especificada na \<#@template#> diretiva e de processadores de diretriz. O erro que causou initialize falha provavelmente está na lista de erros. Investigue o motivo da falha. Você pode examinar o código gerado real para Initialize (), seguindo os procedimentos para depurar um modelo.|
@@ -52,7 +52,7 @@ Você pode definir pontos de interrupção em modelos de texto. Para depurar um 
  A tabela a seguir lista os avisos mais comuns, juntamente com correções, se disponível.
 
 |Mensagem de aviso|Descrição|Solução|
-|---------------------|-----------------|--------------|
+|-|-|-|
 |Carregando o arquivo de inclusão '{0}' retornou uma cadeia de caracteres nula ou vazia.|Ocorre se um arquivo de modelo de texto incluído está em branco. A mensagem fornece o nome do arquivo do arquivo incluído.|Remova a diretiva include ou certifique-se de que o arquivo tem algum conteúdo.|
 |Compilando transformação:|Precede a essa cadeia de caracteres para todos os erros ou avisos quando ele compila a transformação de origem do compilador. Essa cadeia de caracteres significa que o compilador gerou um erro ou aviso.|Se você tiver um problema ao tentar localizar a DLL, você precisa fornecer o caminho completo ou um nome forte totalmente qualificado, se a DLL está no GAC.|
 |O parâmetro '{0}' já existe na diretiva. O parâmetro duplicado será ignorado.|Ocorre quando um parâmetro é especificado mais de uma vez em uma diretiva. A mensagem fornece o nome do parâmetro e o número da linha da diretiva.|Remova a especificação de parâmetro duplicado.|

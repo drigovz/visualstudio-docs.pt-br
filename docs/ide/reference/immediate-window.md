@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37dfbb9fda19363aefa1600fe9b0186862963cc1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942992"
 ---
 # <a name="immediate-window"></a>Janela imediata
 A janela **Imediato** é usada para depurar e avaliar expressões, executar instruções, imprimir valores de variáveis e assim por diante. Ela permite inserir expressões a serem avaliadas ou executadas pela linguagem de desenvolvimento durante a depuração. Para exibir a janela **Imediato**, abra um projeto para edição, escolha **Windows** no menu **Depurar** e selecione **Imediato**, ou pressione CTRL + ALT + I.
@@ -54,27 +54,27 @@ A janela **Imediato** é usada para depurar e avaliar expressões, executar inst
 
 #### <a name="to-execute-a-function-at-design-time"></a>Para executar uma função em tempo de design
 
-1.  Copie o código a seguir em um aplicativo de console do [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]:
+1. Copie o código a seguir em um aplicativo de console do [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]:
 
-    ```vb
-    Module Module1
+   ```vb
+   Module Module1
 
-        Sub Main()
-            MyFunction(5)
-        End Sub
+       Sub Main()
+           MyFunction(5)
+       End Sub
 
-        Function MyFunction(ByVal input as Integer) As Integer
-            Return input * 2
-        End Function
+       Function MyFunction(ByVal input as Integer) As Integer
+           Return input * 2
+       End Function
 
-    End Module
-    ```
+   End Module
+   ```
 
-2.  No menu **Depurar**, clique em **Janelas** e clique em **Imediato**.
+2. No menu **Depurar**, clique em **Janelas** e clique em **Imediato**.
 
-3.  Digite `?MyFunction(2)` na janela **Imediato** e pressione Enter.
+3. Digite `?MyFunction(2)` na janela **Imediato** e pressione Enter.
 
-     A janela **Imediato** executará `MyFunction` e exibirá `4`.
+    A janela **Imediato** executará `MyFunction` e exibirá `4`.
 
 Se a função ou a sub-rotina contiver um ponto de interrupção, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Para obter mais informações, consulte [Passo a passo: depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md).
 

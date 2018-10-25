@@ -19,12 +19,12 @@ ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 091edab3b3fad6707058ff7d35918176854c02f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ab10152afbefbdc49f0934f3fd062a74a2a1f30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915588"
 ---
 # <a name="signing-vsix-packages"></a>Assinando pacotes VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ Assemblies de extensão não é necessário ser assinados antes que eles podem e
   
 #### <a name="to-use-the-vsixsigntool"></a>Para usar o VSIXSignTool  
   
-1.  Adicione seu VSIX a um projeto.  
+1. Adicione seu VSIX a um projeto.  
   
-2.  Clique com botão direito no nó do projeto no Gerenciador de soluções, selecionando **adicionar &#124; gerenciar pacotes NuGet**.  Para obter mais informações sobre a adição de NuGet e NuGet Consulte pacotes [visão geral do NuGet](http://docs.nuget.org/) e [gerenciar pacotes de NuGet usando a caixa de diálogo](http://docs.nuget.org/Consume/Package-Manager-Dialog).  
+2. Clique com botão direito no nó do projeto no Gerenciador de soluções, selecionando **adicionar &#124; gerenciar pacotes NuGet**.  Para obter mais informações sobre a adição de NuGet e NuGet Consulte pacotes [visão geral do NuGet](http://docs.nuget.org/) e [gerenciar pacotes de NuGet usando a caixa de diálogo](http://docs.nuget.org/Consume/Package-Manager-Dialog).  
   
-3.  Pesquisar VSIXSignTool de VisualStudioExtensibility e instalar o pacote do NuGet.  
+3. Pesquisar VSIXSignTool de VisualStudioExtensibility e instalar o pacote do NuGet.  
   
-4.  Agora você pode executar o VSIXSignTool de local de pacotes local do projeto. Consulte a Ajuda de linha de comando da ferramenta para seu cenário de autenticação (VSIXSignTool.exe /?).  
+4. Agora você pode executar o VSIXSignTool de local de pacotes local do projeto. Consulte a Ajuda de linha de comando da ferramenta para seu cenário de autenticação (VSIXSignTool.exe /?).  
   
- Por exemplo, para entrar com uma senha protegida no arquivo de certificado:  
+   Por exemplo, para entrar com uma senha protegida no arquivo de certificado:  
   
- VSIXSignTool.exe entrada /f \<certfile >/p \<senha > \<VSIXfile >  
+   VSIXSignTool.exe entrada /f \<certfile >/p \<senha > \<VSIXfile >  
   
 ## <a name="see-also"></a>Consulte também  
  [Enviar extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

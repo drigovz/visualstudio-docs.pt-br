@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a84c87ecc3c5ca0ab1d2fe52e1ff56265c9365d
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356802"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816673"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
 Pontos de interrupção são uma das técnicas de depuração mais importantes na caixa de ferramentas do seu desenvolvedor. Sempre que você deseja pausar a execução do depurador, você definir pontos de interrupção. Por exemplo, talvez você queira ver o estado das variáveis de código ou examinar a pilha de chamadas em um determinado ponto de interrupção.  
@@ -203,15 +203,15 @@ Você pode usar rótulos para classificar e filtrar a lista de pontos de interru
 
 **Para definir uma condição de ponto de interrupção:**
 
-1.  O símbolo de ponto de interrupção com o botão direito e selecione **condições**. Ou passe o mouse sobre o símbolo de ponto de interrupção, selecione o **as configurações** ícone e, em seguida, selecione **condições** no **configurações de ponto de interrupção** janela.  
+1. O símbolo de ponto de interrupção com o botão direito e selecione **condições**. Ou passe o mouse sobre o símbolo de ponto de interrupção, selecione o **as configurações** ícone e, em seguida, selecione **condições** no **configurações de ponto de interrupção** janela.  
 
-    Você também pode definir condições **pontos de interrupção** janela clicando duas vezes um ponto de interrupção e selecionando **configurações**e, em seguida, selecionando **condições**. 
+   Você também pode definir condições **pontos de interrupção** janela clicando duas vezes um ponto de interrupção e selecionando **configurações**e, em seguida, selecionando **condições**. 
   
-  ![Configurações de ponto de interrupção](../debugger/media/breakpointsettings.png "BreakpointSettings")  
+   ![Configurações de ponto de interrupção](../debugger/media/breakpointsettings.png "BreakpointSettings")  
   
-1. No menu suspenso, selecione **expressão condicional**, **contagem de ocorrências**, ou **filtro**e definir o valor correspondente. 
+2. No menu suspenso, selecione **expressão condicional**, **contagem de ocorrências**, ou **filtro**e definir o valor correspondente. 
   
-1. Selecione **feche** ou pressione **Ctrl**+**Enter** para fechar o **configurações de ponto de interrupção** janela. Ou, do **pontos de interrupção** janela, selecione **Okey** para fechar a caixa de diálogo. 
+3. Selecione **feche** ou pressione **Ctrl**+**Enter** para fechar o **configurações de ponto de interrupção** janela. Ou, do **pontos de interrupção** janela, selecione **Okey** para fechar a caixa de diálogo. 
 
 Pontos de interrupção com o conjunto de condições são exibidos com um **+** símbolo no código-fonte e **pontos de interrupção** windows. 
 

@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 10bfb61ae9e3750926dad39ad3c614d8daf8f867
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 83d5eac54560d9c0c1960808d39a909858db323d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43224956"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900664"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Estendendo o Visual Studio para Mac
 
@@ -88,7 +88,7 @@ O nó de extensão contém um atributo de caminho que especifica o ponto de exte
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
-Uma Extensão CommandItem que se conecta ao ponto de extensão `/MonoDevelop/Ide/MainMenu/Edit` é demonstrado no seguinte trecho de código:
+Uma Extensão CommandItem que se conecta ao ponto de extensão `/MonoDevelop/Ide/MainMenu/Edit` é demonstrado no seguinte snippet de código:
 
 ```xml
 <Extension path="/MonoDevelop/Ide/MainMenu/Edit">
@@ -146,12 +146,12 @@ Para ver informações sobre o escopo das áreas que estão disponíveis para o 
 *   Painéis de opções
 *   Protocolos do depurador
 *   Visualizadores do depurador
-*   Layouts de espaço de trabalho
+*   Layouts de workspace
 *   Nós de árvore do painel de soluções
 *   Margens do editor de código-fonte
 *   Mecanismos de teste de unidade
 *   Geradores de código
-*   Trechos de código
+*   Snippets de código
 *   Frameworks de destino
 *   Tempo de execução de destino
 *   Back-ends de VCS
@@ -162,4 +162,4 @@ Para ver informações sobre o escopo das áreas que estão disponíveis para o 
 ## <a name="additional-information"></a>Informações adicionais
 
 > [!NOTE]
-Estamos trabalhando para melhorar os cenários de extensibilidade do Visual Studio para Mac. Se você estiver criando extensões e precisa de ajuda ou informações adicionais, ou deseja fornecer comentários, preencha o formulário [Visual Studio for Mac Extension Authoring](https://aka.ms/vsmac-extensions-survey) (Criação de extensão do Visual Studio para Mac).
+> Estamos trabalhando para melhorar os cenários de extensibilidade do Visual Studio para Mac. Se você estiver criando extensões e precisa de ajuda ou informações adicionais, ou deseja fornecer comentários, preencha o formulário [Visual Studio for Mac Extension Authoring](https://aka.ms/vsmac-extensions-survey) (Criação de extensão do Visual Studio para Mac).

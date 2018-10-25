@@ -27,12 +27,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2364fa5ed202f9821ab276fb5cfbb9346a4b258c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4d841456ab95d06a7b586f7a8566f8530acbb021
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298136"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897492"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicativos multithread no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,16 +99,16 @@ Um thread é uma sequência de instruções para que o sistema operacional aloqu
  [Usando pontos de interrupção](../debugger/using-breakpoints.md)  
  -   Use filtros de ponto de interrupção quando você deseja colocar um ponto de interrupção em um segmento individual.  
   
--   Os pontos de controle permitem que você rastreie a execução do programa sem interrupções. Isso pode ser útil para estudar problemas, como deadlocks.  
+- Os pontos de controle permitem que você rastreie a execução do programa sem interrupções. Isso pode ser útil para estudar problemas, como deadlocks.  
   
- [Threading](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
- Conceitos de segmentação na programação de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], incluindo o código de exemplo.  
+  [Threading](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
+  Conceitos de segmentação na programação de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], incluindo o código de exemplo.  
   
- [Multithreading em componentes](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
- Como usar multithreading em componentes de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+  [Multithreading em componentes](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
+  Como usar multithreading em componentes de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   
- [Suporte de multithreading para código anterior (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
- Conceitos de segmentação e código de exemplo para programadores de C++ que usam o MFC.  
+  [Suporte de multithreading para código anterior (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
+  Conceitos de segmentação e código de exemplo para programadores de C++ que usam o MFC.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurar Threads e processos](../debugger/debug-threads-and-processes.md)   

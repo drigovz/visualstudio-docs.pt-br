@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa98e9b9b66f863915e120c2c31b0ab508c9929f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d8cb2cec8258813fa9c93c466afb607ce88acc7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918976"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865954"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Como configurar avisos no Visual Basic
 
@@ -39,7 +39,7 @@ O compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] inclui um
  A opção de linha de comando **/warnaserror** do compilador também pode ser usada para especificar se os avisos são tratados como erros. É possível adicionar uma lista delimitada por vírgula a essa opção para especificar quais avisos devem ser tratados como erros ou avisos, usando + ou -. A tabela a seguir fornece detalhes das possíveis opções.
 
 |Opção de linha de comando|Especifica|
-|--------------------------|---------------|
+| - |---------------|
 |`/warnaserror+`|Tratar todos os avisos como erros|
 |`/warnsaserror`-|Não trate avisos como erros. Esse é o padrão.|
 |`/warnaserror+:<warning list` `>`|Trate avisos específicos como erros, listados por seus números de ID de erro em uma lista delimitada por vírgula.|

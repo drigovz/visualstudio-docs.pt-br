@@ -30,12 +30,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 312dbee46f13bf1f8f5d0666dcba18adc1116cdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94b3f066a66a380875609b4f6485d56a19ebde3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210477"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885571"
 ---
 # <a name="local-data-overview"></a>Visão geral de dados local
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +48,19 @@ Ao desenvolver aplicativos de dados, é melhor usar uma cópia local de um banco
   
 2.  
   
--  
+- 
   
--  
+- 
   
--   Criar um projeto de banco de dados do SQL Server clicando no nó da solução no Gerenciador de soluções e escolhendo **adicionar &#124; novo projeto**.  No painel esquerdo, escolha **SQL Server &#124; banco de dados** do projeto e clique em Okey. No Gerenciador de soluções, clique com botão direito no nó do projeto de banco de dados para importar um arquivo de banco de dados local e, em seguida, desenvolver o aplicativo que se conecta ao banco de dados produzido pelo projeto. BOM quando você estiver desenvolvendo e modificar o esquema de banco de dados ao mesmo tempo que você está desenvolvendo o aplicativo.  
+- Criar um projeto de banco de dados do SQL Server clicando no nó da solução no Gerenciador de soluções e escolhendo **adicionar &#124; novo projeto**.  No painel esquerdo, escolha **SQL Server &#124; banco de dados** do projeto e clique em Okey. No Gerenciador de soluções, clique com botão direito no nó do projeto de banco de dados para importar um arquivo de banco de dados local e, em seguida, desenvolver o aplicativo que se conecta ao banco de dados produzido pelo projeto. BOM quando você estiver desenvolvendo e modificar o esquema de banco de dados ao mesmo tempo que você está desenvolvendo o aplicativo.  
   
-     ![Importar banco de dados para o projeto de banco de dados](../data-tools/media/raddata-import-database-into-database-project.png "raddata importar banco de dados no projeto de banco de dados")  
+   ![Importar banco de dados para o projeto de banco de dados](../data-tools/media/raddata-import-database-into-database-project.png "raddata importar banco de dados no projeto de banco de dados")  
   
--   Se você estiver criando um novo banco de dados, primeiro adicione uma **arquivo de banco de dados baseado em serviço** ao seu projeto (**projeto &#124; Adicionar Novo Item)**. Isso cria um novo arquivo. mdf que está anexado à instância padrão do SQL Server no computador local, que é \MSSQLocalDB (localdb) por padrão. O banco de dados deve aparecer no Gerenciador de servidores. Expanda o nó e o botão direito do mouse em nós para adicionar novos objetos de banco de dados como tabelas, exibições, funções e assim por diante.  
+- Se você estiver criando um novo banco de dados, primeiro adicione uma **arquivo de banco de dados baseado em serviço** ao seu projeto (**projeto &#124; Adicionar Novo Item)**. Isso cria um novo arquivo. mdf que está anexado à instância padrão do SQL Server no computador local, que é \MSSQLocalDB (localdb) por padrão. O banco de dados deve aparecer no Gerenciador de servidores. Expanda o nó e o botão direito do mouse em nós para adicionar novos objetos de banco de dados como tabelas, exibições, funções e assim por diante.  
   
- Para obter mais informações sobre o SQL Server Express LocalDB, consulte [Introdução ao LocalDB, um SQL Express aprimorado](http://go.microsoft.com/fwlink/?LinkId=234375) e [LocalDB: onde está meu banco de dados?](http://go.microsoft.com/fwlink/?LinkId=234376) no site da Microsoft.  
+  Para obter mais informações sobre o SQL Server Express LocalDB, consulte [Introdução ao LocalDB, um SQL Express aprimorado](http://go.microsoft.com/fwlink/?LinkId=234375) e [LocalDB: onde está meu banco de dados?](http://go.microsoft.com/fwlink/?LinkId=234376) no site da Microsoft.  
   
- A tabela a seguir fornece links para tópicos que descrevem como conectar seu aplicativo a dados locais:  
+  A tabela a seguir fornece links para tópicos que descrevem como conectar seu aplicativo a dados locais:  
   
 |Tópico|Descrição|  
 |-----------|-----------------|  

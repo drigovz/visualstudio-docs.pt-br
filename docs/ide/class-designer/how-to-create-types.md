@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c41f7c5a9fb9540661440a19462ee12b1aadd9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842255"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Como criar tipos usando o Designer de Classe
 
@@ -71,21 +71,21 @@ Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-l
 
 ##  <a name="CustAttributeType"></a> Aplicar um atributo personalizado a um tipo
 
-1.  Clique na forma do tipo em um diagrama de classes.
+1. Clique na forma do tipo em um diagrama de classes.
 
-2.  Na janela **Propriedades**, ao lado da propriedade **Atributos Personalizados** do tipo, clique no botão de reticências (…).
+2. Na janela **Propriedades**, ao lado da propriedade **Atributos Personalizados** do tipo, clique no botão de reticências (…).
 
-3.  Adicione um ou mais atributos personalizados, um por linha. Não os coloque entre colchetes.
+3. Adicione um ou mais atributos personalizados, um por linha. Não os coloque entre colchetes.
 
    Os atributos personalizados são aplicados ao tipo.
 
 ##  <a name="CustAttributeMember"></a> Aplicar um atributo personalizado a um membro de tipo
 
-1.  Clique no nome do membro na forma de seu tipo em um diagrama de classes ou em sua linha na janela Detalhes da Classe.
+1. Clique no nome do membro na forma de seu tipo em um diagrama de classes ou em sua linha na janela Detalhes da Classe.
 
-2.  Na janela **Propriedades**, localize a propriedade **Atributos Personalizados** do membro.
+2. Na janela **Propriedades**, localize a propriedade **Atributos Personalizados** do membro.
 
-3.  Adicione um ou mais atributos personalizados, um por linha. Não os coloque entre colchetes.
+3. Adicione um ou mais atributos personalizados, um por linha. Não os coloque entre colchetes.
 
    Os atributos personalizados são aplicados ao tipo.
 

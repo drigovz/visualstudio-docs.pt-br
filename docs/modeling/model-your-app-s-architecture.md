@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8a13d617ec523a3215e28668bca179aeace656f7
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7322738fe1bd17944bc5d1883bc9c16e56cc59e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859114"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855062"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelar seu aplicativo&#39;arquitetura s
 Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus usuários precisa, você pode criar modelos no Visual Studio como parte de sua descrição da estrutura geral e o comportamento do seu aplicativo ou sistema de software. Usando modelos, você também pode descrever padrões que são usados em todo o design. Esses modelos de ajudarão-lo a entender a arquitetura existente, discutir as mudanças e comunique suas intenções claramente.
@@ -54,30 +54,30 @@ Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus
 
  O modelo de requisitos fornece essas duas informações essenciais:
 
--   Interfaces fornecidas. Uma interface fornecida lista os serviços ou as operações do sistema ou componente deve fornecer a seus usuários, independentemente de estarem usuários humanos ou outros componentes de software.
+- Interfaces fornecidas. Uma interface fornecida lista os serviços ou as operações do sistema ou componente deve fornecer a seus usuários, independentemente de estarem usuários humanos ou outros componentes de software.
 
--   Interfaces necessárias. Uma interface necessária lista os serviços ou operações que pode usar o sistema ou componente. Em alguns casos, você será capaz de criar todos esses serviços como parte do seu próprio sistema. Em outros casos, especialmente se você estiver criando um componente que pode ser combinado com outros componentes em muitas configurações, a interface necessária será definida por considerações externas.
+- Interfaces necessárias. Uma interface necessária lista os serviços ou operações que pode usar o sistema ou componente. Em alguns casos, você será capaz de criar todos esses serviços como parte do seu próprio sistema. Em outros casos, especialmente se você estiver criando um componente que pode ser combinado com outros componentes em muitas configurações, a interface necessária será definida por considerações externas.
 
--   Qualidade de requisitos de serviço. O desempenho, segurança, robustez e outros objetivos e restrições que o sistema deve atender.
+- Qualidade de requisitos de serviço. O desempenho, segurança, robustez e outros objetivos e restrições que o sistema deve atender.
 
- O modelo de requisitos é escrito do ponto de vista dos usuários do seu sistema, independentemente de estarem pessoas ou outros componentes de software. Eles sabem nada sobre o funcionamento interno do sistema. Por outro lado, sua meta em um modelo de arquitetura é que descrevem o funcionamento interno e mostrar como eles atendem aos usuários necessidades.
+  O modelo de requisitos é escrito do ponto de vista dos usuários do seu sistema, independentemente de estarem pessoas ou outros componentes de software. Eles sabem nada sobre o funcionamento interno do sistema. Por outro lado, sua meta em um modelo de arquitetura é que descrevem o funcionamento interno e mostrar como eles atendem aos usuários necessidades.
 
- Manter os requisitos e modelos arquitetônicos separados é útil, pois ele torna mais fáceis de discutir os requisitos com os usuários. Ele também ajuda você refatorar o design e considere arquiteturas alternativas enquanto manter os requisitos inalterado.
+  Manter os requisitos e modelos arquitetônicos separados é útil, pois ele torna mais fáceis de discutir os requisitos com os usuários. Ele também ajuda você refatorar o design e considere arquiteturas alternativas enquanto manter os requisitos inalterado.
 
- A quantidade de detalhes que devem ser colocadas em um requisitos ou um modelo de arquitetura depende a escala do projeto e o tamanho e a distribuição da equipe. Uma pequena equipe em um projeto de curto pode ir não mais do que fazer um rascunho de um diagrama de classe de conceitos de negócios e alguns padrões de design; um projeto grande distribuído em mais de uma região precisariam significativamente mais detalhadamente.
+  A quantidade de detalhes que devem ser colocadas em um requisitos ou um modelo de arquitetura depende a escala do projeto e o tamanho e a distribuição da equipe. Uma pequena equipe em um projeto de curto pode ir não mais do que fazer um rascunho de um diagrama de classe de conceitos de negócios e alguns padrões de design; um projeto grande distribuído em mais de uma região precisariam significativamente mais detalhadamente.
 
 ## <a name="BigDecisions"></a> Padrões de arquitetura
  No início do desenvolvimento de um, você precisa escolher as principais tecnologias e os elementos do qual depende o design. As áreas em que essas opções devem ser feitas incluem o seguinte:
 
--   Opções de tecnologia, como a escolha entre um banco de dados e um sistema de arquivos e a escolha entre um aplicativo de rede e um cliente da web, de base e assim por diante.
+- Opções de tecnologia, como a escolha entre um banco de dados e um sistema de arquivos e a escolha entre um aplicativo de rede e um cliente da web, de base e assim por diante.
 
--   Opções de estruturas, como uma escolha entre o Windows Workflow Foundation ou o ADO.NET Entity Framework.
+- Opções de estruturas, como uma escolha entre o Windows Workflow Foundation ou o ADO.NET Entity Framework.
 
--   Opções de método de integração, por exemplo, entre um barramento de serviço corporativo ou de um canal de ponto a ponto.
+- Opções de método de integração, por exemplo, entre um barramento de serviço corporativo ou de um canal de ponto a ponto.
 
- Essas opções com frequência são determinadas pela qualidade de requisitos de serviço, como a flexibilidade e escala e podem ser feitas antes que os requisitos detalhados são conhecidos. Em um sistema grande, a configuração de hardware e software são altamente inter-relacionadas.
+  Essas opções com frequência são determinadas pela qualidade de requisitos de serviço, como a flexibilidade e escala e podem ser feitas antes que os requisitos detalhados são conhecidos. Em um sistema grande, a configuração de hardware e software são altamente inter-relacionadas.
 
- As seleções feitas afetam como usar e interpretar o modelo de arquitetura. Por exemplo, em um sistema que usa um banco de dados, associações em um diagrama de classe podem representar relações ou chaves estrangeiras no banco de dados, enquanto em um sistema baseado em arquivos XML, associações podem indicar referências cruzadas que usam XPath. Em um sistema distribuído, mensagens em um diagrama de sequência podem representar as mensagens durante uma transmissão; em um aplicativo autocontido, eles podem representar chamadas de função.
+  As seleções feitas afetam como usar e interpretar o modelo de arquitetura. Por exemplo, em um sistema que usa um banco de dados, associações em um diagrama de classe podem representar relações ou chaves estrangeiras no banco de dados, enquanto em um sistema baseado em arquivos XML, associações podem indicar referências cruzadas que usam XPath. Em um sistema distribuído, mensagens em um diagrama de sequência podem representar as mensagens durante uma transmissão; em um aplicativo autocontido, eles podem representar chamadas de função.
 
 ## <a name="Patterns"></a> Padrões de design
  Um padrão de design é uma estrutura de tópicos de como criar um aspecto específico do software, especialmente para um que se repete em diferentes partes do sistema. Ao adotar uma abordagem uniforme em todo o projeto, reduzir o custo de design, garantir a consistência na interface do usuário e reduzir o custo da compreensão e alterar o código.

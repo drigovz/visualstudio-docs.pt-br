@@ -18,12 +18,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4b15434c75fb4cd2a295789794f6c9f8eb882bb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8cc7968664f201482647861a031a27c850611c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254885"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914704"
 ---
 # <a name="task-writing"></a>Escrevendo tarefas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Tarefas fornecem o código que é executado durante o processo de build. Tarefas
   
  Há duas abordagens que você pode usar ao implementar uma tarefa:  
   
--   Implemente a interface <xref:Microsoft.Build.Framework.ITask> diretamente.  
+- Implemente a interface <xref:Microsoft.Build.Framework.ITask> diretamente.  
   
--   Derive sua classe da classe do auxiliar, <xref:Microsoft.Build.Utilities.Task>, que é definida no assembly Microsoft.Build.Utilities.dll. Tarefa implementa ITask e fornece implementações padrão de alguns membros do ITask. Além disso, o registro em log é mais fácil.  
+- Derive sua classe da classe do auxiliar, <xref:Microsoft.Build.Utilities.Task>, que é definida no assembly Microsoft.Build.Utilities.dll. Tarefa implementa ITask e fornece implementações padrão de alguns membros do ITask. Além disso, o registro em log é mais fácil.  
   
- Em ambos os casos, você deve adicionar à sua classe um método chamado `Execute`, que é o método que é chamado quando a tarefa é executada. Esse método não usa nenhum parâmetro e retorna um `Boolean` valor: `true` se a tarefa foi bem-sucedida ou `false` se falhou. O exemplo a seguir mostra uma tarefa que não executa nenhuma ação e retorna `true`.  
+  Em ambos os casos, você deve adicionar à sua classe um método chamado `Execute`, que é o método que é chamado quando a tarefa é executada. Esse método não usa nenhum parâmetro e retorna um `Boolean` valor: `true` se a tarefa foi bem-sucedida ou `false` se falhou. O exemplo a seguir mostra uma tarefa que não executa nenhuma ação e retorna `true`.  
   
 ```  
 using System;  

@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c17d5802e919108dfcb888f38acebe32c093bb76
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 1630432d6135ab4a6f6a221f54b89aa18e7e8cb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924086"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876224"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Teclas modificadoras da ferramenta Seleção Direta no Blend
 A tabela a seguir lista os atalhos que podem ser usados para modificar a forma de um demarcador existente com a ferramenta **Seleção Direta** ![ferramenta Seleção Direta](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Para adicionar ou remover pontos de um caminho existente ou para unir dois caminhos existentes, use a ferramenta **Caneta**.
 
 |Para realizar esta ação|Faça isto|Ponteiro|
-|-----------------------|-------------|-------------|
+| - |-------------|-------------|
 |Exibir as alças da tangente de um ponto em um caminho|Clique em um ponto em um demarcador|![Exibir as alças da tangente de um ponto em um caminho](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Mova o ponteiro de ponto|
 |Mover um ponto em um demarcador|Arraste um ponto em um demarcador|![Mover um ponto em um demarcador](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Mova o ponteiro de ponto|
 |Exibir as alças da tangente para um segmento entre dois pontos em um demarcador|Clique em um segmento de um caminho|![Exibir as alças da tangente para um segmento entre dois pontos em um demarcador](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png)<br /><br /> Mova o ponteiro de segmento|

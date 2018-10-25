@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94185303eeb1d9efef32adf814b23d8cb21360b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e731803e58ac641034699719a9fb0cbfe3cb6f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285994"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872273"
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos no processo de desenvolvimento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ No Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar 
 ## <a name="how-to-use-models"></a>Como usar modelos  
  Modelos podem ajudá-lo de várias maneiras:  
   
--   Desenho de diagramas de modelagem ajuda a esclarecer os conceitos envolvidos em requisitos, arquitetura e design de alto nível. Para obter mais informações, consulte [requisitos de usuário do modelo](../modeling/model-user-requirements.md).  
+- Desenho de diagramas de modelagem ajuda a esclarecer os conceitos envolvidos em requisitos, arquitetura e design de alto nível. Para obter mais informações, consulte [requisitos de usuário do modelo](../modeling/model-user-requirements.md).  
   
--   Trabalhar com modelos pode ajudar você a expor as inconsistências nos requisitos.  
+- Trabalhar com modelos pode ajudar você a expor as inconsistências nos requisitos.  
   
--   Comunicando-se com modelos ajuda você a se comunicar conceitos importantes menor ambíguo com idioma natural. Para obter mais informações, consulte [modelar a arquitetura do seu aplicativo](../modeling/model-your-app-s-architecture.md).  
+- Comunicando-se com modelos ajuda você a se comunicar conceitos importantes menor ambíguo com idioma natural. Para obter mais informações, consulte [modelar a arquitetura do seu aplicativo](../modeling/model-your-app-s-architecture.md).  
   
--   Às vezes, você pode usar modelos para gerar o código ou outros artefatos como esquemas de banco de dados ou documentos. Por exemplo, os componentes de modelagem de [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] gerados a partir de um modelo.  Para obter mais informações, consulte [gerar e configurar o aplicativo a partir de modelos de](../modeling/generate-and-configure-your-app-from-models.md).  
+- Às vezes, você pode usar modelos para gerar o código ou outros artefatos como esquemas de banco de dados ou documentos. Por exemplo, os componentes de modelagem de [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] gerados a partir de um modelo.  Para obter mais informações, consulte [gerar e configurar o aplicativo a partir de modelos de](../modeling/generate-and-configure-your-app-from-models.md).  
   
- Você pode usar os modelos em uma ampla variedade de processos, desde extreme cerimônia agile para alta.  
+  Você pode usar os modelos em uma ampla variedade de processos, desde extreme cerimônia agile para alta.  
   
 ### <a name="use-models-to-reduce-ambiguity"></a>Usar modelos para reduzir a ambiguidade  
  Linguagem de modelagem é menos ambígua de linguagem natural e ele é projetado para expressar as ideias necessárias normalmente durante o desenvolvimento de software.  

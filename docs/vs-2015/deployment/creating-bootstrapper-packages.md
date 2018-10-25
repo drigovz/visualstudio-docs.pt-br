@@ -26,12 +26,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 9224314dbcb5fcb424708c7dad4ca674af661604
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dcc331defab98303a805f75f75afb3e309c7d2dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208893"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910921"
 ---
 # <a name="creating-bootstrapper-packages"></a>Criando pacotes de bootstrapper
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,37 +45,37 @@ O programa de instalação é um instalador genérico que pode ser configurado p
   
  Para criar um pacote de bootstrapper, é necessário fornecer o redistribuível na forma de um arquivo EXE ou MSI ao Gerador de Manifesto do Bootstrapper. Em seguida, o Gerador de Manifesto do Bootstrapper cria os seguintes arquivos:  
   
--   O manifesto do produto, product.xml, que contém todos os metadados de linguagem neutra para o pacote. Esse manifesto contém metadados comuns a todas as versões localizadas do componente redistribuível.  
+- O manifesto do produto, product.xml, que contém todos os metadados de linguagem neutra para o pacote. Esse manifesto contém metadados comuns a todas as versões localizadas do componente redistribuível.  
   
--   O manifesto do pacote, package.xml, que contém metadados específicos da linguagem. Esse manifesto geralmente contém mensagens de erro localizadas. Um componente deve ter, pelo menos, um pacote de manifesto para cada versão localizada desse componente.  
+- O manifesto do pacote, package.xml, que contém metadados específicos da linguagem. Esse manifesto geralmente contém mensagens de erro localizadas. Um componente deve ter, pelo menos, um pacote de manifesto para cada versão localizada desse componente.  
   
- Depois que esses arquivos são criados, coloque o arquivo de manifesto do produto em uma pasta indicada para o bootstrapper personalizado. O arquivo de manifesto do pacote vai para uma pasta nomeada de acordo com a localidade. Por exemplo, se o arquivo de manifesto do pacote for para redistribuição em inglês, coloque o arquivo em uma pasta chamada en. Repita esse processo para cada localidade, como ja para japonês e de para alemão. O pacote final de bootstrapper personalizado pode ter estrutura de pastas a seguir.  
+  Depois que esses arquivos são criados, coloque o arquivo de manifesto do produto em uma pasta indicada para o bootstrapper personalizado. O arquivo de manifesto do pacote vai para uma pasta nomeada de acordo com a localidade. Por exemplo, se o arquivo de manifesto do pacote for para redistribuição em inglês, coloque o arquivo em uma pasta chamada en. Repita esse processo para cada localidade, como ja para japonês e de para alemão. O pacote final de bootstrapper personalizado pode ter estrutura de pastas a seguir.  
   
- `CustomBootstrapperPackage`  
+  `CustomBootstrapperPackage`  
   
- `product.xml`  
+  `product.xml`  
   
- `CustomBootstrapper.msi`  
+  `CustomBootstrapper.msi`  
   
- `de`  
+  `de`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- `en`  
+  `en`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- `ja`  
+  `ja`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- Por fim, copie os arquivos redistribuíveis para o local da pasta do bootstrapper. Para obter mais informações, consulte [como: criar um pacote de Bootstrapper localizado](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Por fim, copie os arquivos redistribuíveis para o local da pasta do bootstrapper. Para obter mais informações, consulte [como: criar um pacote de Bootstrapper localizado](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  

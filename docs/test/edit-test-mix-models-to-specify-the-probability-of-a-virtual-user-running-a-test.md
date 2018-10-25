@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 32fc3ef0684c89c422fac76550ba1fa123eb2f6b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ee123e474ad4b52b3debe6ad65bf6424388fe191
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180435"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816008"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Editar modelos de combinação de testes para especificar a probabilidade de um usuário virtual executar um teste
 
@@ -37,7 +37,7 @@ Você pode especificar uma das seguintes opções de modelo da combinação de t
 ## <a name="tasks"></a>Tarefas
 
 |Tarefas|Tópicos associados|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Especificando a combinação de testes para o teste de carga:** ao criar um teste de carga, você especifica as configurações do teste de carga no **Novo Assistente de Teste de Carga**. No **Novo Assistente de Teste de Carga**, você escolhe testes de unidade e da Web existentes para adicionar ao cenário inicial. Depois de adicionar testes ao cenário, você especifica a combinação de testes para o cenário.<br /><br /> Você usa opções de modelagem de carga para prever com maior precisão o uso real esperado de um site ou aplicativo que está passando por teste de carga. É importante fazer isso porque um teste de carga não baseado em um modelo de carga preciso pode gerar resultados enganadores.|-   [Emular o uso real esperado de um site ou aplicativo](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |**Editar o modelo de combinação de testes:** você pode alterar um cenário de teste de carga para usar um dos modelos de combinação de testes usando o **Editor de Teste de Carga**.||
 |**Configurar a definição de atrasos para um modelo de combinação de testes baseado no ritmo do usuário:** se seu cenário de teste de carga for configurado para usar o **modelo de combinação de testes baseado no ritmo do usuário**, você poderá especificar como quer que o atraso de distribuição seja configurado.|-   [Como aplicar distribuição à definição dos atrasos durante o uso de um modelo de combinação de testes](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|

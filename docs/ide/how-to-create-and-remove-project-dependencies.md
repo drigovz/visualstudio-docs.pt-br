@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0948dab860431d9693e67489d958f00743fa17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c7075f21f7927a87968dd573863402a71a40c3c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942016"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856009"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Como criar e remover dependências de projeto
 
@@ -32,20 +32,20 @@ Ao compilar uma solução que contém vários projetos, pode ser necessário com
 
 ## <a name="to-assign-dependencies-to-projects"></a>Para atribuir dependências a projetos
 
-1.  No **Gerenciador de Soluções**, selecione um projeto.
+1. No **Gerenciador de Soluções**, selecione um projeto.
 
-2.  No menu **Projeto**, escolha **Dependências do Projeto**.
+2. No menu **Projeto**, escolha **Dependências do Projeto**.
 
-     A caixa de diálogo **Dependências do Projeto** é aberta.
+    A caixa de diálogo **Dependências do Projeto** é aberta.
 
-    > [!NOTE]
-    > A opção **Dependências do Projeto** está disponível apenas em uma solução com mais de um projeto.
+   > [!NOTE]
+   > A opção **Dependências do Projeto** está disponível apenas em uma solução com mais de um projeto.
 
-3.  Na guia **Dependências**, selecione um projeto no menu suspenso **Projeto**.
+3. Na guia **Dependências**, selecione um projeto no menu suspenso **Projeto**.
 
-4.  No campo **Depende de**, marque a caixa de seleção de qualquer outro projeto que deve ser compilado antes desse projeto.
+4. No campo **Depende de**, marque a caixa de seleção de qualquer outro projeto que deve ser compilado antes desse projeto.
 
- A solução deve consistir em mais de um projeto antes que seja possível criar dependências de projeto.
+   A solução deve consistir em mais de um projeto antes que seja possível criar dependências de projeto.
 
 ## <a name="to-remove-dependencies-from-projects"></a>Para remover dependências de projetos
 
@@ -65,6 +65,6 @@ Ao compilar uma solução que contém vários projetos, pode ser necessário com
 ## <a name="see-also"></a>Consulte também
 
 - [Criar e limpar projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Compilar e criar](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)
 - [Compreender configurações de build](../ide/understanding-build-configurations.md)
-- [Gerenciar propriedades de solução e de projeto](managing-project-and-solution-properties.md)
+- [Gerenciar propriedades do projeto e da solução](managing-project-and-solution-properties.md)

@@ -17,12 +17,12 @@ ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8beb028ddf2d7a7921c753b39601ee297a75746
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c062ce943e2ee42cd90877827ab7b92ee33c871b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248554"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883647"
 ---
 # <a name="elements-of-a-project-model"></a>Elementos de um modelo de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,20 +33,20 @@ As interfaces e implementações de todos os projetos em [!INCLUDE[vsprvs](../..
   
  Outras considerações de implementação:  
   
--   Um modelo de projeto único pode conter mais de um tipo de projeto.  
+- Um modelo de projeto único pode conter mais de um tipo de projeto.  
   
--   Tipos de projeto e as fábricas do Assistente do projeto são registradas independentemente com GUIDs.  
+- Tipos de projeto e as fábricas do Assistente do projeto são registradas independentemente com GUIDs.  
   
--   Cada projeto deve ter um arquivo de modelo ou o Assistente para inicializar o novo arquivo de projeto quando um usuário cria um novo projeto por meio de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interface do usuário. Por exemplo, o [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] modelos inicializar o que eventualmente se tornarem arquivos. vcproj.  
+- Cada projeto deve ter um arquivo de modelo ou o Assistente para inicializar o novo arquivo de projeto quando um usuário cria um novo projeto por meio de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interface do usuário. Por exemplo, o [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] modelos inicializar o que eventualmente se tornarem arquivos. vcproj.  
   
- A ilustração a seguir mostra as interfaces principais, serviços e objetos que compõem uma implementação típica do projeto. Você pode usar o auxiliar de aplicativo, HierUtil7, para criar os objetos subjacentes e outro clichê de programação. Para obter mais informações sobre o auxiliar de aplicativo HierUtil7, consulte [não está em compilação: usando Classes do projeto HierUtil7 para implementar um tipo de projeto (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+  A ilustração a seguir mostra as interfaces principais, serviços e objetos que compõem uma implementação típica do projeto. Você pode usar o auxiliar de aplicativo, HierUtil7, para criar os objetos subjacentes e outro clichê de programação. Para obter mais informações sobre o auxiliar de aplicativo HierUtil7, consulte [não está em compilação: usando Classes do projeto HierUtil7 para implementar um tipo de projeto (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
- ![Gráfico de modelo de projeto do Studio Visual](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
-Modelo de projeto  
+  ![Gráfico de modelo de projeto do Studio Visual](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
+  Modelo de projeto  
   
- Para obter mais informações sobre as interfaces e serviços listados no diagrama anterior e outras interfaces opcionais não incluídos no diagrama, consulte [componentes principais do projeto modelo](../../extensibility/internals/project-model-core-components.md).  
+  Para obter mais informações sobre as interfaces e serviços listados no diagrama anterior e outras interfaces opcionais não incluídos no diagrama, consulte [componentes principais do projeto modelo](../../extensibility/internals/project-model-core-components.md).  
   
- Projetos pode dar suporte a comandos e, portanto, deve implementar o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface participem de roteamento de comando por meio do contexto do comando GUIDs.  
+  Projetos pode dar suporte a comandos e, portanto, deve implementar o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface participem de roteamento de comando por meio do contexto do comando GUIDs.  
   
 ## <a name="see-also"></a>Consulte também  
  [Lista de verificação: Criar novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)   

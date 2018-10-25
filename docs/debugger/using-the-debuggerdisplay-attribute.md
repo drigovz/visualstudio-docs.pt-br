@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dc83fc859e99a86b1057a02b7cfb9ff2e1232af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3adb481ba06c086db3a272c026543464018b542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635519"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926196"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Usando o atributo DebuggerDisplay
 O <xref:System.Diagnostics.DebuggerDisplayAttribute> controla como um objeto, propriedade ou campo é exibido nas janelas de variáveis do depurador. Esse atributo pode ser aplicado a assemblies, delegados, propriedades, campos e tipos.  
@@ -36,7 +36,7 @@ O <xref:System.Diagnostics.DebuggerDisplayAttribute> controla como um objeto, pr
  A tabela a seguir mostra alguns usos possíveis do atributo `DebuggerDisplay` e saídas de exemplo.  
   
 |Atributo|Que aparece na coluna de valor de saída|  
-|---------------|------------------------------------------------|  
+|---------------| - |  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Usado em um tipo com campos `x` e `y`.|`x = 5 y = 18`|  
 |A sintaxe do parâmetro `[DebuggerDisplay("String value is {getString()}")]`pode variar entre linguagens. Em virtude disso, use com cuidado.|`String value is [5, 6, 6]`|  
   
@@ -65,13 +65,13 @@ csc /t:library autoexp.cs
   
  Usar expressões em DebuggerDisplay pode resultar nos seguintes problemas:  
   
--   Avaliar expressões é a operação mais cara no depurador e a expressão é avaliada toda vez que é exibida. Isso pode causar problemas de desempenho ao depurar o código. Por exemplo, uma expressão complexa que é usada para exibir os valores em uma coleção ou lista poderá ser muito lenta quando o número de elementos for grande.  
+- Avaliar expressões é a operação mais cara no depurador e a expressão é avaliada toda vez que é exibida. Isso pode causar problemas de desempenho ao depurar o código. Por exemplo, uma expressão complexa que é usada para exibir os valores em uma coleção ou lista poderá ser muito lenta quando o número de elementos for grande.  
   
--   As expressões são avaliadas pelo avaliador de expressão da linguagem do quadro de pilhas atual e não pelo avaliador da linguagem na qual a expressão foi gravada. Isso pode causar resultados imprevisíveis quando as linguagens são diferentes.  
+- As expressões são avaliadas pelo avaliador de expressão da linguagem do quadro de pilhas atual e não pelo avaliador da linguagem na qual a expressão foi gravada. Isso pode causar resultados imprevisíveis quando as linguagens são diferentes.  
   
--   Avaliar uma expressão pode alterar o estado do aplicativo. Por exemplo, uma expressão que define o valor de uma propriedade transforma o valor da propriedade no código de execução.  
+- Avaliar uma expressão pode alterar o estado do aplicativo. Por exemplo, uma expressão que define o valor de uma propriedade transforma o valor da propriedade no código de execução.  
   
- Uma maneira de reduzir os possíveis problemas de avaliação da expressão é criando uma propriedade privada que executa a operação e retorna uma cadeia de caracteres. O atributo DebuggerDisplay pode em seguida exibir o valor dessa propriedade privada. O exemplo a seguir implementa esse padrão:  
+  Uma maneira de reduzir os possíveis problemas de avaliação da expressão é criando uma propriedade privada que executa a operação e retorna uma cadeia de caracteres. O atributo DebuggerDisplay pode em seguida exibir o valor dessa propriedade privada. O exemplo a seguir implementa esse padrão:  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  
@@ -93,7 +93,7 @@ O ", nq" sufixo informa o avaliador de expressão para remover as aspas ao exibi
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir mostra como usar `DebuggerDisplay` junto com `DebuggerBrowseable` e `DebuggerTypeProxy`. Quando exibidos em uma janela de variáveis do depurador, como o **inspeção** janela, ela produz uma expansão tem esta aparência:  
   
-|**Nome**|**Value**|**Tipo**|  
+|**Nome**|**Valor**|**Tipo**|  
 |--------------|---------------|--------------|  
 |Chave|"three"|object {string}|  
 |Valor|3|object {int}|  

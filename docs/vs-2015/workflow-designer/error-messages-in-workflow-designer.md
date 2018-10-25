@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 942cd4846b091e31bc74ab3d45860e2782767079
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: efd6bc680be42f1074da8d2313b1a4b8e9307580
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305052"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894840"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Mensagens de erro em Designer de Fluxo de Trabalho
 Este tópico descreve os tipos de mensagens de erro que podem ser encontrados ao trabalhar com [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
@@ -29,17 +29,17 @@ Este tópico descreve os tipos de mensagens de erro que podem ser encontrados ao
 ## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>Situações em que os erros no criador de Fluxo de Trabalho ocorrem  
  Erros em [!INCLUDE[wfd2](../includes/wfd2-md.md)] ocorrem nas seguintes situações:  
   
-1.  Há um erro em uma expressão.  
+1. Há um erro em uma expressão.  
   
-2.  As restrições de validação de uma atividade não foram satisfeitas.  
+2. As restrições de validação de uma atividade não foram satisfeitas.  
   
-3.  Há erros no arquivo XAML que fazem com que uma atividade a falha carregue.  
+3. Há erros no arquivo XAML que fazem com que uma atividade a falha carregue.  
   
-4.  Há erros no arquivo XAML que fazem com que o fluxo de trabalho a falha carregue.  
+4. Há erros no arquivo XAML que fazem com que o fluxo de trabalho a falha carregue.  
   
- As expressões inválidos e restrições insatisfeitas de validação não fazem com que o fluxo de trabalho a falha compile. Compilar seu fluxo de trabalho é bem-sucedido, mas <xref:System.Activities.InvalidWorkflowException> é lançada pelo tempo de execução. Se há erros no arquivo XAML, a compilação falhará.  
+   As expressões inválidos e restrições insatisfeitas de validação não fazem com que o fluxo de trabalho a falha compile. Compilar seu fluxo de trabalho é bem-sucedido, mas <xref:System.Activities.InvalidWorkflowException> é lançada pelo tempo de execução. Se há erros no arquivo XAML, a compilação falhará.  
   
- Dentro de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], quando um fluxo de trabalho é carregado, os erros são exibidos na **lista de erros**. Para navegar até a atividade que é a origem do erro, clique duas vezes no erro na **Error List**.  
+   Dentro de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], quando um fluxo de trabalho é carregado, os erros são exibidos na **lista de erros**. Para navegar até a atividade que é a origem do erro, clique duas vezes no erro na **Error List**.  
   
 ### <a name="expression-errors"></a>Erros de expressão  
  Uma expressão é inválido denotada por um círculo vermelho com um ponto de exclamação branco ao lado da expressão. Passa sobre este ícone exibe uma dica de ferramenta que descreve a fonte do erro. Dentro de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], clique na expressão para exibir a linha que enfatiza a fonte do erro. Passa sobre o texto alinhado exibe uma dica de ferramenta que descreve a fonte do erro.  

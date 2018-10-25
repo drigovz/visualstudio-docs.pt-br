@@ -15,12 +15,12 @@ ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ae6986862021313650551cb12a38b68eaea72e35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9460a1e314828ee827d617d34f35ce8a51aeebff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186597"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878631"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>Enviado eventos de inicialização após uma inicialização
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,26 +29,26 @@ Depois que o mecanismo de depuração (DES) é anexado ao programa, ele envia um
   
  Eventos de inicialização enviados de volta para a sessão de depuração incluem o seguinte:  
   
--   Um evento de criação de mecanismo.  
+- Um evento de criação de mecanismo.  
   
--   Um evento de criação do programa.  
+- Um evento de criação do programa.  
   
--   Thread de criação e eventos de carregamento de módulo.  
+- Thread de criação e eventos de carregamento de módulo.  
   
--   Um evento de conclusão de carga, enviado quando o código é carregado e pronto para ser executado, mas antes de qualquer código é executado  
+- Um evento de conclusão de carga, enviado quando o código é carregado e pronto para ser executado, mas antes de qualquer código é executado  
   
-    > [!NOTE]
-    >  Quando esse evento é continuado, variáveis globais são inicializadas e executar rotinas de inicialização.  
+  > [!NOTE]
+  >  Quando esse evento é continuado, variáveis globais são inicializadas e executar rotinas de inicialização.  
   
--   Possível que outros threads criação e eventos de carregamento de módulo.  
+- Possível que outros threads criação e eventos de carregamento de módulo.  
   
--   Um evento de ponto de entrada, que sinaliza que o programa atingiu seu ponto de entrada principal, como **principal** ou `WinMain`. Esse evento não é enviado normalmente se o DE anexar a um programa que já está em execução.  
+- Um evento de ponto de entrada, que sinaliza que o programa atingiu seu ponto de entrada principal, como **principal** ou `WinMain`. Esse evento não é enviado normalmente se o DE anexar a um programa que já está em execução.  
   
- O DE forma programática, primeiro o Gerenciador de sessão de depuração (SDM) envia uma [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) interface, que representa um evento de criação de mecanismo, seguido por um [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) , que representa um evento de criação do programa.  
+  O DE forma programática, primeiro o Gerenciador de sessão de depuração (SDM) envia uma [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) interface, que representa um evento de criação de mecanismo, seguido por um [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) , que representa um evento de criação do programa.  
   
- Isso é normalmente seguido por um ou mais [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) eventos de criação de thread e [IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md) eventos de carregamento de módulo.  
+  Isso é normalmente seguido por um ou mais [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) eventos de criação de thread e [IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md) eventos de carregamento de módulo.  
   
- Quando o código é carregado e pronto para ser executado, mas antes de qualquer código é executado, o DE envia o SDM uma [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) evento de conclusão de carga. Por fim, se o programa não estiver sendo executado, o DE envia um [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) evento de ponto de entrada, sinalizando que o programa tiver atingido seu ponto de entrada principal e está pronto para depuração.  
+  Quando o código é carregado e pronto para ser executado, mas antes de qualquer código é executado, o DE envia o SDM uma [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) evento de conclusão de carga. Por fim, se o programa não estiver sendo executado, o DE envia um [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) evento de ponto de entrada, sinalizando que o programa tiver atingido seu ponto de entrada principal e está pronto para depuração.  
   
 ## <a name="see-also"></a>Consulte também  
  [Controle de execução](../../extensibility/debugger/control-of-execution.md)   

@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7ac55e2ec1d07c32c154b69cd467dfc534da6ae3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bc0620c06b6fa5b4018b6e027e30a18216454b29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215820"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863952"
 ---
 # <a name="model-user-requirements"></a>Requisitos de usuário do modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
   
  Um modelo de requisitos ajuda você a:  
   
--   Focalizar o comportamento do sistema externo, separadamente do seu design interno.  
+- Focalizar o comportamento do sistema externo, separadamente do seu design interno.  
   
--   Descrever dos usuários e das partes interessadas precisa com muito menos ambiguidade que no idioma natural.  
+- Descrever dos usuários e das partes interessadas precisa com muito menos ambiguidade que no idioma natural.  
   
--   Defina um glossário consistente de termos que podem ser usados por usuários, desenvolvedores e testadores.  
+- Defina um glossário consistente de termos que podem ser usados por usuários, desenvolvedores e testadores.  
   
--   Reduza as lacunas e inconsistências nos requisitos.  
+- Reduza as lacunas e inconsistências nos requisitos.  
   
--   Reduza o trabalho necessário para responder a alterações de requisitos.  
+- Reduza o trabalho necessário para responder a alterações de requisitos.  
   
--   Planeje a ordem na qual os recursos serão desenvolvidos.  
+- Planeje a ordem na qual os recursos serão desenvolvidos.  
   
--   Use os modelos como base para testes de sistema, fazendo uma relação clara entre os testes e os requisitos. Quando os requisitos mudam, essa relação ajuda você a atualizar os testes corretamente. Isso garante que o sistema atende aos novos requisitos.  
+- Use os modelos como base para testes de sistema, fazendo uma relação clara entre os testes e os requisitos. Quando os requisitos mudam, essa relação ajuda você a atualizar os testes corretamente. Isso garante que o sistema atende aos novos requisitos.  
   
- Um modelo de requisitos fornece o maior benefício se você usá-lo para discussões de foco com os usuários ou seus representantes e visite-a no início de cada iteração. Não é necessário para concluí-lo detalhadamente antes de escrever código. Um aplicativo de trabalho parcialmente, mesmo se muito simplificado, geralmente constitui a base mais interessantes para discussão sobre os requisitos de usuários. O modelo é uma maneira eficaz de resumir os resultados dessas discussões. Para obter mais informações, consulte [usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md).  
+  Um modelo de requisitos fornece o maior benefício se você usá-lo para discussões de foco com os usuários ou seus representantes e visite-a no início de cada iteração. Não é necessário para concluí-lo detalhadamente antes de escrever código. Um aplicativo de trabalho parcialmente, mesmo se muito simplificado, geralmente constitui a base mais interessantes para discussão sobre os requisitos de usuários. O modelo é uma maneira eficaz de resumir os resultados dessas discussões. Para obter mais informações, consulte [usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md).  
   
 > [!NOTE]
 >  Ao longo desses tópicos, "system" significa que o sistema ou o aplicativo que você está desenvolvendo. Pode ser uma grande coleção de muitos componentes de hardware e software; ou um único aplicativo; ou um componente de software dentro de um sistema maior. Em todos os casos, o modelo de requisitos descreve o comportamento que é visível fora do seu sistema, seja por meio de uma interface do usuário ou a API.  
@@ -84,11 +84,11 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
   
  Desenhar um diagrama de caso de uso ajuda sua equipe:  
   
--   Se concentrar no que os usuários esperam fazer com o sistema, sem se distrair com detalhes da implementação.  
+- Se concentrar no que os usuários esperam fazer com o sistema, sem se distrair com detalhes da implementação.  
   
--   Discuta o escopo do sistema ou versões específicas do sistema.  
+- Discuta o escopo do sistema ou versões específicas do sistema.  
   
- Os tópicos a seguir fornecem mais informações:  
+  Os tópicos a seguir fornecem mais informações:  
   
 |Para saber mais sobre|Ler|  
 |--------------------|----------|  
@@ -99,41 +99,41 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
 ##  <a name="RequirementsClasses"></a> Definição de termos usados para descrever os requisitos  
  Você pode usar diagramas de classe UML para ajudar você a desenvolver um vocabulário consistentes com os conceitos de negócios usados para as seguintes finalidades:  
   
--   Pelos próprios usuários para discutir os negócios em que o sistema funciona.  
+- Pelos próprios usuários para discutir os negócios em que o sistema funciona.  
   
--   Descrever as necessidades de usuários, por exemplo, nas descrições de casos de uso, as regras de negócio e histórias de usuários.  
+- Descrever as necessidades de usuários, por exemplo, nas descrições de casos de uso, as regras de negócio e histórias de usuários.  
   
--   Os tipos de informações trocadas na API do sistema ou por meio da interface do usuário.  
+- Os tipos de informações trocadas na API do sistema ou por meio da interface do usuário.  
   
--   Descrições dos testes de aceitação ou de sistema.  
+- Descrições dos testes de aceitação ou de sistema.  
   
- Quando eles são usados para essa finalidade, o conteúdo de um diagrama de classe UML é chamado de um diagrama de classe conceitual. (Ele também é conhecido como um *modelo de domínio* ou *modelo de análise de classe*.)  
+  Quando eles são usados para essa finalidade, o conteúdo de um diagrama de classe UML é chamado de um diagrama de classe conceitual. (Ele também é conhecido como um *modelo de domínio* ou *modelo de análise de classe*.)  
   
- Em um diagrama de classe conceitual, é possível mostrar apenas essas classes necessárias nas descrições dos requisitos, sem mostrar qualquer um dos detalhes do design de interno do sistema. O diagrama não mostra os detalhes de design de interno do sistema. Você não geralmente mostraria operações ou interfaces nas classes conceituais.  
+  Em um diagrama de classe conceitual, é possível mostrar apenas essas classes necessárias nas descrições dos requisitos, sem mostrar qualquer um dos detalhes do design de interno do sistema. O diagrama não mostra os detalhes de design de interno do sistema. Você não geralmente mostraria operações ou interfaces nas classes conceituais.  
   
- Por exemplo, você pode desenhar essas classes conceituais para o sistema Dinner Now:  
+  Por exemplo, você pode desenhar essas classes conceituais para o sistema Dinner Now:  
   
- ![Menu de classes, a ordem de Item de Menu, Item do pedido. ](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")  
+  ![Menu de classes, a ordem de Item de Menu, Item do pedido. ](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")  
   
- Um diagrama de classe conceitual fornece o vocabulário de termos que você usa em todo o modelo de requisitos. Por exemplo, na descrição detalhada do uso caso ordenar uma refeição, você pode escrever:  
+  Um diagrama de classe conceitual fornece o vocabulário de termos que você usa em todo o modelo de requisitos. Por exemplo, na descrição detalhada do uso caso ordenar uma refeição, você pode escrever:  
   
- O cliente escolhe um *menus* do qual construir um *ordem*e, em seguida, cria *itens do pedido* no *ordem* selecionando  *Itens de menu* do *Menu*.  
+  O cliente escolhe um *menus* do qual construir um *ordem*e, em seguida, cria *itens do pedido* no *ordem* selecionando  *Itens de menu* do *Menu*.  
   
- Observe como os termos usados na descrição do que são os nomes das classes no modelo. O diagrama remove ambiguidades de relações entre essas classes. Por exemplo, mostra claramente que cada pedido está associado a apenas um Menu.  
+  Observe como os termos usados na descrição do que são os nomes das classes no modelo. O diagrama remove ambiguidades de relações entre essas classes. Por exemplo, mostra claramente que cada pedido está associado a apenas um Menu.  
   
- Com frequência podem ser rastreados mal-entendidos sobre os requisitos dos usuários mal-entendidos sobre os significados detalhados de palavras. Por exemplo, a maioria dos restaurantes terá uma compreensão geral dos termos de Menu e ordem, mas a diferença entre um item em uma ordem e um item em um Menu é menos clara. Quando os requisitos de estão sendo discutidos com participantes de negócios, é importante para expor essas diferenças. O diagrama de classe é uma ferramenta útil para ajudar a esclarecer os termos e suas relações.  
+  Com frequência podem ser rastreados mal-entendidos sobre os requisitos dos usuários mal-entendidos sobre os significados detalhados de palavras. Por exemplo, a maioria dos restaurantes terá uma compreensão geral dos termos de Menu e ordem, mas a diferença entre um item em uma ordem e um item em um Menu é menos clara. Quando os requisitos de estão sendo discutidos com participantes de negócios, é importante para expor essas diferenças. O diagrama de classe é uma ferramenta útil para ajudar a esclarecer os termos e suas relações.  
   
- O modelo de classe conceitual pode formar o vocabulário básico pelo qual a lógica de negócios do seu sistema pode ser descrita. Mas as classes no software geralmente será muito mais complexas do que o modelo conceitual, porque sua implementação deve considerar os problemas, como desempenho, distribuição, flexibilidade e outros fatores. Várias implementações diferentes de uma classe conceitual frequentemente são encontradas em um sistema.  
+  O modelo de classe conceitual pode formar o vocabulário básico pelo qual a lógica de negócios do seu sistema pode ser descrita. Mas as classes no software geralmente será muito mais complexas do que o modelo conceitual, porque sua implementação deve considerar os problemas, como desempenho, distribuição, flexibilidade e outros fatores. Várias implementações diferentes de uma classe conceitual frequentemente são encontradas em um sistema.  
   
- Por exemplo, pedidos poderia ser representados em XML, SQL, HTML e c# em diferentes partes do sistema e em interfaces diferentes entre as partes. A associação entre um pedido e um Menu poderia ser representada de várias maneiras diferentes, como referências no código do c#, as relações em um banco de dados, ou a referência cruzada IDs em XML. Mas, apesar dessas variações, o modelo conceitual fornece informações importantes que se aplica a todas as partes do software. O diagrama de classe no exemplo nos informa que cada implementação, haverá apenas um que menu associado com cada pedido.  
+  Por exemplo, pedidos poderia ser representados em XML, SQL, HTML e c# em diferentes partes do sistema e em interfaces diferentes entre as partes. A associação entre um pedido e um Menu poderia ser representada de várias maneiras diferentes, como referências no código do c#, as relações em um banco de dados, ou a referência cruzada IDs em XML. Mas, apesar dessas variações, o modelo conceitual fornece informações importantes que se aplica a todas as partes do software. O diagrama de classe no exemplo nos informa que cada implementação, haverá apenas um que menu associado com cada pedido.  
   
- Desenhando um diagrama de classe requisitos ajuda sua equipe:  
+  Desenhando um diagrama de classe requisitos ajuda sua equipe:  
   
--   Definir e padronizar os termos básicos usados em discussões de necessidades dos usuários.  
+- Definir e padronizar os termos básicos usados em discussões de necessidades dos usuários.  
   
--   Esclareça as relações entre esses termos.  
+- Esclareça as relações entre esses termos.  
   
- Os tópicos a seguir fornecem mais informações:  
+  Os tópicos a seguir fornecem mais informações:  
   
 |Para saber mais sobre|Ler|  
 |--------------------|----------|  
@@ -146,7 +146,7 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
 ##  <a name="BusinessRules"></a> Mostrando as regras de negócio  
  Uma regra de negócios é um requisito que não está associado um caso de uso específico e deve ser observado em todo o sistema.  
   
- Muitas regras de negócios são restrições nas relações entre as classes conceituais. Você pode escrever esses *estático * * as regras de negócio* como comentários associados com as classes relevantes em um diagrama de classe conceitual. Por exemplo:  
+ Muitas regras de negócios são restrições nas relações entre as classes conceituais. Você pode escrever esses *regras de negócio estático* como comentários associados com as classes relevantes em um diagrama de classe conceitual. Por exemplo:  
   
  ![Regra em comentário anexado à classe Order. ](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")  
   
@@ -167,21 +167,21 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
 ##  <a name="QoSRequirements"></a> Que descreve a qualidade dos requisitos de serviço  
  Há várias categorias de qualidade de requisito de serviço. Elas incluem o seguinte:  
   
--   Desempenho  
+- Desempenho  
   
--   Segurança  
+- Segurança  
   
--   Usabilidade  
+- Usabilidade  
   
--   Confiabilidade  
+- Confiabilidade  
   
--   Robustez  
+- Robustez  
   
- Você pode incluir alguns desses requisitos nas descrições de casos de uso específico. Outros requisitos não são específicos para casos de uso e com mais eficiência são gravados em um documento separado. Quando possível, é útil cumprir o vocabulário definido pelo modelo de requisitos. No exemplo a seguir, observe-se de que as palavras principais usadas requisitos de estão os títulos das classes nas ilustrações anteriores, casos de uso e atores:  
+  Você pode incluir alguns desses requisitos nas descrições de casos de uso específico. Outros requisitos não são específicos para casos de uso e com mais eficiência são gravados em um documento separado. Quando possível, é útil cumprir o vocabulário definido pelo modelo de requisitos. No exemplo a seguir, observe-se de que as palavras principais usadas requisitos de estão os títulos das classes nas ilustrações anteriores, casos de uso e atores:  
   
- Se um restaurante exclui um Item de Menu, enquanto que um cliente é ordenar uma refeição, qualquer Item do pedido que se refere a esse Item de Menu será exibido em vermelho.  
+  Se um restaurante exclui um Item de Menu, enquanto que um cliente é ordenar uma refeição, qualquer Item do pedido que se refere a esse Item de Menu será exibido em vermelho.  
   
- Os tópicos a seguir fornecem mais informações:  
+  Os tópicos a seguir fornecem mais informações:  
   
 |Para saber mais sobre|Ler|  
 |--------------------|----------|  
@@ -232,15 +232,15 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
   
  Você encontrará muitas perguntas sobre o domínio de negócios naturalmente surgem durante a criação de um modelo. Colocando essas perguntas para seus usuários, você reduzirá a necessidade de alterações em um estágio posterior no projeto. Aqui estão algumas perguntas específicas, você pode perguntar primeiro e, em seguida, solicitar as partes interessadas no negócio se a resposta não está clara:  
   
--   Para cada classe no modelo de requisitos, perguntar "o que usar caso cria as instâncias dessa classe?" Por exemplo, em um serviço online da ordenação de refeição, você poderia perguntar: "o que caso de uso cria instâncias da classe de Menu do restaurante?" Isso levaria a uma discussão sobre como um novo restaurante está inscrito no serviço e contribui com o menu. Você pode fazer perguntas semelhantes sobre o que cria ou altera os atributos e associações.  
+- Para cada classe no modelo de requisitos, perguntar "o que usar caso cria as instâncias dessa classe?" Por exemplo, em um serviço online da ordenação de refeição, você poderia perguntar: "o que caso de uso cria instâncias da classe de Menu do restaurante?" Isso levaria a uma discussão sobre como um novo restaurante está inscrito no serviço e contribui com o menu. Você pode fazer perguntas semelhantes sobre o que cria ou altera os atributos e associações.  
   
--   Para cada caso de uso no modelo de requisitos, experimente descrever o resultado ou pós-condição de cada caso de uso em palavras fornecida pelos diagramas de classe. Geralmente é útil mostrar o efeito de um caso de uso, esboçando instâncias das classes antes e após uma ocorrência do caso de uso. Por exemplo, se a pós-condição de casos de uso diz: "um item de menu é adicionado para o pedido do cliente" esboço instâncias das classes de ordem e o Item de Menu. Mostra os efeitos do caso de uso, como um novo link ou um novo objeto, em uma cor diferente ou em um novo desenho. Com frequência, isso resulta em discussões sobre quais informações são necessárias no modelo. Embora as classes de requisitos não estão diretamente relacionadas com a implementação, eles descrevem as informações que o sistema precisará armazenar e transmitir.  
+- Para cada caso de uso no modelo de requisitos, experimente descrever o resultado ou pós-condição de cada caso de uso em palavras fornecida pelos diagramas de classe. Geralmente é útil mostrar o efeito de um caso de uso, esboçando instâncias das classes antes e após uma ocorrência do caso de uso. Por exemplo, se a pós-condição de casos de uso diz: "um item de menu é adicionado para o pedido do cliente" esboço instâncias das classes de ordem e o Item de Menu. Mostra os efeitos do caso de uso, como um novo link ou um novo objeto, em uma cor diferente ou em um novo desenho. Com frequência, isso resulta em discussões sobre quais informações são necessárias no modelo. Embora as classes de requisitos não estão diretamente relacionadas com a implementação, eles descrevem as informações que o sistema precisará armazenar e transmitir.  
   
--   Pergunte sobre as restrições em atributos e associações, especialmente as restrições que envolvem mais de um atributo ou uma associação.  
+- Pergunte sobre as restrições em atributos e associações, especialmente as restrições que envolvem mais de um atributo ou uma associação.  
   
--   Pergunte sobre sequências válidas e inválidas de casos de uso, desenhar diagramas de sequência ou atividade para ilustrá-los.  
+- Pergunte sobre sequências válidas e inválidas de casos de uso, desenhar diagramas de sequência ou atividade para ilustrá-los.  
   
- Examinando as relações entre as exibições que fornecem diagramas diferentes, você pode rapidamente compreender os conceitos principais com os quais os usuários trabalham, e ajudá-lo a entender o que precisam do sistema. Você também pode acessar um melhor entendimento de quais requisitos os participantes são menos certos sobre. Você pode planejar desenvolver esses recursos, uma forma simplificada, pelo menos um estágio inicial do projeto, para permitir que os usuários a fazer experimentos com elas.  
+  Examinando as relações entre as exibições que fornecem diagramas diferentes, você pode rapidamente compreender os conceitos principais com os quais os usuários trabalham, e ajudá-lo a entender o que precisam do sistema. Você também pode acessar um melhor entendimento de quais requisitos os participantes são menos certos sobre. Você pode planejar desenvolver esses recursos, uma forma simplificada, pelo menos um estágio inicial do projeto, para permitir que os usuários a fazer experimentos com elas.  
   
 ## <a name="see-also"></a>Consulte também  
  [Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md)   

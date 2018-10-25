@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b210b5e0d3d0f3638e78331d9db093f7e86079e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7f72cb538018588ab11335be5a99fe86b5c474c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117167"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879877"
 ---
 # <a name="initializecorrelation-activity-designer"></a>Designer de atividade de InitializeCorrelation
 
@@ -42,7 +42,7 @@ Para exibir o **inicializar correlação** caixa de diálogo onde você pode esp
 A tabela a seguir mostra o <xref:System.ServiceModel.Activities.InitializeCorrelation> propriedades e descreve como eles são usados no designer. Essas propriedades podem ser editadas na **propriedades** janela ou na superfície do Designer de fluxo de trabalho.
 
 |Nome da Propriedade|Necessária|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|O nome amigável de atividade de <xref:System.ServiceModel.Activities.InitializeCorrelation> . O valor padrão é InitializeCorrelation.<br /><br /> Embora o uso de um valor não padrão para amigável <xref:System.Activities.Activity.DisplayName%2A> não é estritamente necessária, é recomendável.|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|<xref:System.ServiceModel.Activities.CorrelationHandle> usado para associar atividades de fluxo de trabalho em correlação.|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Um dicionário de dados de correlação que se relacionam mensagens ao fluxo de trabalho instância.<br /><br /> Use o **inicializar correlação** caixa de diálogo para configurar o <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>. Para obter mais informações sobre o uso esta caixa de diálogo, consulte a [caixa de diálogo do Editor de coleção de tipo](../workflow-designer/type-collection-editor-dialog-box.md) artigo.|

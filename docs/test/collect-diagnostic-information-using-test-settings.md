@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 370bb8d9194ff442a3e8674a95b67f4eec595d60
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370751"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865343"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Coletar informações de diagnóstico usando configurações de teste
 
@@ -42,7 +42,7 @@ Para executar a unidade, interface do usuário codificado, desempenho na Web ou 
 A tabela a seguir fornece uma visão geral das várias maneiras que os adaptadores de dados de diagnóstico podem ser configurados para usar com funções de computador local ou remoto.
 
 |Adaptador de dados de diagnóstico usado na configuração de teste|Teste manuais no computador local|Testes Automatizados|Teste manuais: coletando dados usando um conjunto de funções e um ambiente|Observações|
-|----------------------------------------------------------|-----------------------------------|---------------------|------------------------------------------------------------------------------|-----------|
+|-|-|-|-|-|
 |**Proxy de Cliente do ASP.NET para IntelliTrace e Impacto de Teste:** esse proxy permite que você colete informações sobre as chamadas HTTP de um cliente para um servidor Web para os adaptadores de dados de diagnóstico do IntelliTrace e de Impacto de Teste.|Sim|Sim|Sim|– Use isso somente enquanto adaptadores de dados de diagnóstico do impacto de teste ou IntelliTrace são selecionados para uma função de cliente.|
 |**Criador de Perfil do ASP.NET:** você pode criar uma configuração de teste que inclui a criação de perfis do ASP.NET, que coleta dados de desempenho em aplicações Web ASP.NET.|Não|Sim (veja observações)|Não|– Este adaptador de dados de diagnóstico tem suporte apenas quando você executa testes de carga do Visual Studio.|
 |**Cobertura de código:** você pode criar uma configuração de teste que inclui informações de cobertura de código usadas para investigar quanto de seu código é abordado por teste.|Não|Sim (veja observações)|Não|– Você pode usar a cobertura de código somente ao executar um teste automatizado do Visual Studio ou de *mstest.exe* e somente do computador que executa o teste. A coleção remota não tem suporte.<br />– A coleta de dados de cobertura de código não funcionará se você também tiver a configuração de teste definida para coletar informações do IntelliTrace. **Observação:** esse adaptador de dados de diagnóstico só se aplica às configurações de teste do Visual Studio. Ele não é usado para configurações de teste no Microsoft Test Manager. Além disso, este adaptador é para compatibilidade com projetos de teste do Visual Studio 2010. **Observação:** para compatibilidade, a cobertura de código se aplica quando testes automatizados são executados do Microsoft Test Manager ou em um agente de teste remoto do Visual Studio usando o MSTest Runner herdado.|

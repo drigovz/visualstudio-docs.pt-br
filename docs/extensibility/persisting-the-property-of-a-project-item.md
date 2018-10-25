@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94b5db74c6480c848f669983cea0febcd922cefe
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: da231c924e3167a50c885cf18ef878a02b28b166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915575"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Manter a propriedade de um item de projeto
 Você talvez queira manter uma propriedade que você adicionar a um item de projeto, como o autor de um arquivo de origem. Você pode fazer isso, armazenando a propriedade no arquivo de projeto.
@@ -117,22 +117,22 @@ Você talvez queira manter uma propriedade que você adicionar a um item de proj
 
 ## <a name="to-verify-that-the-property-is-persisted"></a>Para verificar que a propriedade é persistida
 
-1.  Iniciar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e, em seguida, abrir ou criar uma solução.
+1. Iniciar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e, em seguida, abrir ou criar uma solução.
 
-2.  Selecione o projeto item VsPkg.cs na **Gerenciador de soluções**.
+2. Selecione o projeto item VsPkg.cs na **Gerenciador de soluções**.
 
-3.  Use um ponto de interrupção ou caso contrário, determinar que o VSPackage é carregado e SetItemAttribute é executado.
+3. Use um ponto de interrupção ou caso contrário, determinar que o VSPackage é carregado e SetItemAttribute é executado.
 
-    > [!NOTE]
-    > Você pode carregar um VSPackage no contexto da interface do usuário automaticamente <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Para obter mais informações, consulte [carregar VSPackages](../extensibility/loading-vspackages.md).
+   > [!NOTE]
+   > Você pode carregar um VSPackage no contexto da interface do usuário automaticamente <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Para obter mais informações, consulte [carregar VSPackages](../extensibility/loading-vspackages.md).
 
-4.  Fechar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e, em seguida, abra o arquivo de projeto no bloco de notas. Você deve ver o \<Autor > marca com o valor de Tom, da seguinte maneira:
+4. Fechar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e, em seguida, abra o arquivo de projeto no bloco de notas. Você deve ver o \<Autor > marca com o valor de Tom, da seguinte maneira:
 
-    ```xml
-    <Compile Include="VsPkg.cs">
-        <Author>Tom</Author>
-    </Compile>
-    ```
+   ```xml
+   <Compile Include="VsPkg.cs">
+       <Author>Tom</Author>
+   </Compile>
+   ```
 
 ## <a name="see-also"></a>Consulte também
 

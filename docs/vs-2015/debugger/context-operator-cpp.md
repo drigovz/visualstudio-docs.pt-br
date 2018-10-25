@@ -28,12 +28,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 913ade98ef643e5e962fb87dc71afdf526c92cce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8e3bb3994792eef69fec52fe580904c0285f827e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183242"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874716"
 ---
 # <a name="context-operator-c"></a>Operador de contexto (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,17 +59,17 @@ Você pode usar o operador de contexto em C++ para qualificar um local de ponto 
     EXAMPLE.dll!SomeFunction  
     ```  
   
--   *módulo* é o nome de um módulo. Você pode usar um caminho completo para resolver a ambiguidade entre módulos com o mesmo nome.  
+- *módulo* é o nome de um módulo. Você pode usar um caminho completo para resolver a ambiguidade entre módulos com o mesmo nome.  
   
-     Se o *módulo* caminho inclui uma vírgula, um espaço inserido ou uma chave, você deve usar aspas em torno do caminho para que o analisador de contexto possa reconhecer corretamente a cadeia de caracteres. As aspas simples são consideradas parte de um nome de arquivo do Windows, portanto, você deve usar aspas duplas. Por exemplo,  
+   Se o *módulo* caminho inclui uma vírgula, um espaço inserido ou uma chave, você deve usar aspas em torno do caminho para que o analisador de contexto possa reconhecer corretamente a cadeia de caracteres. As aspas simples são consideradas parte de um nome de arquivo do Windows, portanto, você deve usar aspas duplas. Por exemplo,  
   
-    ```cpp  
-    {,,"a long, long, library name.dll"} g_Var  
-    ```  
+  ```cpp  
+  {,,"a long, long, library name.dll"} g_Var  
+  ```  
   
--   *expressão* é qualquer expressão C++ válida que resolve para um destino válido, como um nome de função, o nome de variável ou o endereço do ponteiro no *módulo*.  
+- *expressão* é qualquer expressão C++ válida que resolve para um destino válido, como um nome de função, o nome de variável ou o endereço do ponteiro no *módulo*.  
   
- Quando o avaliador de expressão localiza um símbolo em uma expressão, procura pelo símbolo na seguinte ordem:  
+  Quando o avaliador de expressão localiza um símbolo em uma expressão, procura pelo símbolo na seguinte ordem:  
   
 1.  Escopo léxico externo, começando com o bloco atual, série de instruções incluídas entre chaves e a continuação externa com o bloco delimitador. O bloco atual é o código que contém o local atual, endereço do ponteiro de instrução.  
   

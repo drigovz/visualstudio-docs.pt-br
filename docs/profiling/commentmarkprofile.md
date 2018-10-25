@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aaae7a6ce1185426f23a8182ddcdf0c969f39a4b
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c42fc37837673305fb13c99856e778c45a4a3a8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691037"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858492"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 A função `CommentMarkProfile` insere um marcador numérico e uma cadeia de caracteres de texto no arquivo .*vsp*. Para que a marcação e o comentário sejam inseridos, a criação de perfil para o thread que contém a função `CommentMarkProfile` deve ser ON.  

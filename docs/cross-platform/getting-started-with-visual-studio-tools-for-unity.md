@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: dbe546f43b0a66abc78b94480894b63dc4f5eafa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9d924ee92258e348d5ffee1551fcde7707d711cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283100"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855203"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Introdução às Ferramentas do Visual Studio para Unity
 
@@ -47,7 +47,7 @@ A versão do Visual Studio incluída na instalação do Unity pode não ser a ma
 
 Se o Visual 2017 Studio já estiver instalado, ou preferir instalá-lo manualmente, execute o instalador do Visual Studio.
 
-1. [Baixe o instalador do Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio) ou abra-o, se já estiver instalado.
+1. [Baixe o instalador do Visual Studio](/visualstudio/install/install-visual-studio) ou abra-o, se já estiver instalado.
 
 1. Clique em **Modificar** (se já estiver instalado) ou em **Instalar** (para novas instalações) para a versão desejada do Visual Studio.
 
@@ -63,21 +63,21 @@ Começando pelo Unity 2018.1, o Visual Studio deve ser o editor de scripts exter
 
 1. Selecione **Preferências** no menu **Editar**.
 
-  ![Selecionar preferências](media/vstu_unity-preferences.png)
+   ![Selecionar preferências](media/vstu_unity-preferences.png)
 
-1. Na caixa de diálogo Preferências, selecione a guia **Ferramentas Externas**.
+2. Na caixa de diálogo Preferências, selecione a guia **Ferramentas Externas**.
 
-1. Na lista suspensa **Editor de Script Externo**, escolha sua versão preferida do Visual Studio, se ela estiver listada, caso contrário, selecione **Procurar....**.
+3. Na lista suspensa **Editor de Script Externo**, escolha sua versão preferida do Visual Studio, se ela estiver listada, caso contrário, selecione **Procurar....**.
 
-  ![Selecionar o Visual Studio](media/vstu_unity-external-tools.png)
+   ![Selecionar o Visual Studio](media/vstu_unity-external-tools.png)
 
-1. Se **Procurar...**  for selecionado, navegue até o diretório **Common7/IDE** dentro do seu diretório de instalação do Visual Studio e selecione **devenv.exe**. Em seguida, clique em **Abrir**.
+4. Se **Procurar...**  for selecionado, navegue até o diretório **Common7/IDE** dentro do seu diretório de instalação do Visual Studio e selecione **devenv.exe**. Em seguida, clique em **Abrir**.
 
-  ![Selecione Abrir](media/vstu_browse-for-application.png)
+   ![Selecione Abrir](media/vstu_browse-for-application.png)
 
-1. Após a seleção do Visual Studio na lista **Editor de Script Externo**, confirme se a caixa de seleção **Anexo do Editor** está selecionada.
+5. Após a seleção do Visual Studio na lista **Editor de Script Externo**, confirme se a caixa de seleção **Anexo do Editor** está selecionada.
 
-1. Feche a caixa de diálogo **Preferências** para concluir o processo de configuração.
+6. Feche a caixa de diálogo **Preferências** para concluir o processo de configuração.
 
 ## <a name="support-for-older-versions"></a>Suporte para versões mais antigas
 

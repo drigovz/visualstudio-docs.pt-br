@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6843e9287fd53b17329b70d331d0f37b87917f7
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: bfe90b47086232650a38581bb2a8af1b534b8063
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815919"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835976"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Como coletar dados de desempenho de um site
 
@@ -41,7 +41,7 @@ Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho 
 
 - Alguns usuários podem negar acesso à criação de perfil para todos os outros usuários.
 
- Para obter mais informações, confira [Criação de perfil e segurança do Windows Vista](../profiling/profiling-and-windows-vista-security.md) e as opções de administração em [VSPerfCmd](../profiling/vsperfcmd.md).
+  Para obter mais informações, confira [Criação de perfil e segurança do Windows Vista](../profiling/profiling-and-windows-vista-security.md) e as opções de administração em [VSPerfCmd](../profiling/vsperfcmd.md).
 
 ## <a name="to-profile-a-web-site-project"></a>Para criar o perfil de um projeto de site
 
@@ -79,11 +79,11 @@ Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho 
 
 5. Na caixa **Qual URL ou Caminho executará seu aplicativo Web** na terceira página do assistente, insira a URL para a home page do aplicativo e, em seguida, clique em **Avançar**.
 
-    - Para um site baseado em servidor (IIS), digite uma URL como **http://localhost/MySite/default.aspx**. Isso faz com que o aplicativo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] no computador local na raiz do aplicativo do MySite tenha seu perfil criado e a página default.aspx nesse site seja iniciada no Internet Explorer para iniciar a sessão.
+   - Para um site baseado em servidor (IIS), digite uma URL como **<http://localhost/MySite/default.aspx>**. Isso faz com que o aplicativo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] no computador local na raiz do aplicativo do MySite tenha seu perfil criado e a página default.aspx nesse site seja iniciada no Internet Explorer para iniciar a sessão.
 
-    - Para um site da Web baseado em um arquivo, digite um caminho como file///**c:\WebSites\MySite\default.aspx**. Isso faz com que o aplicativo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] localizado em c:\webSites\MySite tenha seu perfil criado e a página http://localhost:nnnn/MySite/default.aspx seja iniciada no Internet Explorer para iniciar a sessão.
+   - Para um site da Web baseado em um arquivo, digite um caminho como file///**c:\WebSites\MySite\default.aspx**. Isso faz com que o aplicativo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] localizado em c:\webSites\MySite tenha seu perfil criado e a página http://localhost:nnnn/MySite/default.aspx seja iniciada no Internet Explorer para iniciar a sessão.
 
-    - Para sites externos sobre os quais deseja coletar dados de JavaScript, digite a URL, por exemplo, http://www.contoso.com.
+   - Para sites externos sobre os quais deseja coletar dados de JavaScript, digite a URL, por exemplo, http://www.contoso.com.
 
      Para obter mais informações, exiba as páginas de propriedades para um binário de destino de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 

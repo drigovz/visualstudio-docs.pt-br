@@ -15,12 +15,12 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73555abcc1a3c6afebf6528cc493e62a403ad00a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d81916910eb4769801ae330c10edde24cb52f52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196309"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923401"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrando verbos para extensões de nome de arquivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ Em geral, a associação de uma extensão de nome de arquivo com um aplicativo t
 ## <a name="registering-standard-verbs"></a>Registrar verbos padrão  
  O sistema operacional reconhece os seguintes verbos padrão:  
   
--   Abrir  
+- Abrir  
   
--   Editar  
+- Editar  
   
--   Play  
+- Play  
   
--   Imprimir  
+- Imprimir  
   
--   Visualizar  
+- Visualizar  
   
- Sempre que possível, registre um verbo padrão. A opção mais comum é o verbo Open. Use o verbo de edição somente se houver uma diferença clara entre a abertura do arquivo e editando o arquivo. Por exemplo, abrir um arquivo. htm exibe no navegador, enquanto a edição de um arquivo. htm inicia um editor de HTML. Verbos padrão estão localizados com a localidade do sistema operacional.  
+  Sempre que possível, registre um verbo padrão. A opção mais comum é o verbo Open. Use o verbo de edição somente se houver uma diferença clara entre a abertura do arquivo e editando o arquivo. Por exemplo, abrir um arquivo. htm exibe no navegador, enquanto a edição de um arquivo. htm inicia um editor de HTML. Verbos padrão estão localizados com a localidade do sistema operacional.  
   
 > [!NOTE]
 >  Ao registrar verbos padrão, não defina o valor padrão para a chave de abertura. O valor padrão contém a cadeia de caracteres de exibição no menu. O sistema operacional fornece essa cadeia de caracteres para verbos padrão.  

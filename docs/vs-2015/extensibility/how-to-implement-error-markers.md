@@ -15,12 +15,12 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ff4df9e76494e6409ce9d988781926e1a10602a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1ced074e3257bee41cb9ffcc33279e17b148bbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242951"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838277"
 ---
 # <a name="how-to-implement-error-markers"></a>Como: implementar o marcador de erros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,23 +31,23 @@ Marcadores de erro (ou ondulados vermelhos) são as personalizações do editor 
   
 ### <a name="to-implement-the-red-wavy-underline-feature"></a>Para implementar o recurso de sublinhado vermelho ondulado  
   
-1.  Selecione o texto sob a qual você deseja colocar o sublinhado vermelho ondulado.  
+1. Selecione o texto sob a qual você deseja colocar o sublinhado vermelho ondulado.  
   
-2.  Criar um marcador do tipo `MARKER_CODESENSE_ERROR`. Para obter mais informações, consulte [como: adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md).  
+2. Criar um marcador do tipo `MARKER_CODESENSE_ERROR`. Para obter mais informações, consulte [como: adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md).  
   
-3.  Depois disso, passe um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> ponteiro de interface.  
+3. Depois disso, passe um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> ponteiro de interface.  
   
- Esse processo também permite que você crie o texto da dica ou um menu de contexto especial sobre um marcador de determinado. Para obter mais informações, consulte [como: adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md).  
+   Esse processo também permite que você crie o texto da dica ou um menu de contexto especial sobre um marcador de determinado. Para obter mais informações, consulte [como: adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md).  
   
- Os seguintes objetos são necessários antes de marcadores de erro podem ser exibidos.  
+   Os seguintes objetos são necessários antes de marcadores de erro podem ser exibidos.  
   
--   Um analisador.  
+- Um analisador.  
   
--   Um provedor de tarefa (ou seja, uma implementação de <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>) que mantém um registro das alterações nas informações de linha para identificar as linhas para ser analisado novamente.  
+- Um provedor de tarefa (ou seja, uma implementação de <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>) que mantém um registro das alterações nas informações de linha para identificar as linhas para ser analisado novamente.  
   
--   Eventos de alteração de um filtro de exibição de texto que captura o cursor do modo de exibição usando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) método.  
+- Eventos de alteração de um filtro de exibição de texto que captura o cursor do modo de exibição usando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) método.  
   
- O analisador, o provedor de tarefas e o filtro de fornecem a infraestrutura necessária para que os marcadores de erro possível. As etapas a seguir fornecem o processo para exibir os marcadores de erro.  
+  O analisador, o provedor de tarefas e o filtro de fornecem a infraestrutura necessária para que os marcadores de erro possível. As etapas a seguir fornecem o processo para exibir os marcadores de erro.  
   
 1.  Em uma exibição que está sendo filtrada, o filtro obtém um ponteiro para o provedor de tarefas associado aos dados do modo de exibição.  
   

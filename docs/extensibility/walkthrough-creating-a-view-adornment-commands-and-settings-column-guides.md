@@ -11,33 +11,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d4f701b58c95a08f9017043138c98b824d4e406
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 7d0605798f5970411fa315d309807dc6f1f7a0cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496097"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872350"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Passo a passo: Criar um adorno de exibição, comandos e configurações (guias de coluna)
 Você pode estender o editor de texto/código do Visual Studio com comandos e efeitos de exibição. Este artigo mostra como começar com um recurso de extensão popular, guias de coluna. Guias de coluna são visualmente luz linhas desenhadas em modo de exibição do editor de texto para ajudá-lo a gerenciar seu código para as larguras das colunas específicas. Especificamente, o código formatado pode ser importante para os exemplos incluem em documentos, postagens de blog ou relatórios de bugs.  
   
  Neste passo a passo, você:  
   
--   Crie um projeto VSIX  
+- Crie um projeto VSIX  
   
--   Adicionar um adorno de exibição do editor  
+- Adicionar um adorno de exibição do editor  
   
--   Adicionar suporte para salvar e obter as configurações (onde a guias de coluna de desenho e suas cores)  
+- Adicionar suporte para salvar e obter as configurações (onde a guias de coluna de desenho e suas cores)  
   
--   Adicionar comandos (Adicionar/remover guias de coluna, alterar suas cores)  
+- Adicionar comandos (Adicionar/remover guias de coluna, alterar suas cores)  
   
--   Coloque os comandos no menu de edição e menus de contexto do documento de texto  
+- Coloque os comandos no menu de edição e menus de contexto do documento de texto  
   
--   Adicionar suporte para invocar os comandos da janela de comando do Visual Studio  
+- Adicionar suporte para invocar os comandos da janela de comando do Visual Studio  
   
- Você pode experimentar uma versão do recurso de guias de coluna com essa galeria do Visual Studio[extensão](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
+  Você pode experimentar uma versão do recurso de guias de coluna com essa galeria do Visual Studio[extensão](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
   
- **Observação**: neste passo a passo, você deve colar uma grande quantidade de código em alguns arquivos gerados pelos modelos de extensão do Visual Studio. No entanto, em breve neste passo a passo fará referência a uma solução completa no github com outros exemplos de extensão. O código completo é um pouco diferente porque tem ícones de comando real em vez de usar generictemplate ícones.  
+  **Observação**: neste passo a passo, você deve colar uma grande quantidade de código em alguns arquivos gerados pelos modelos de extensão do Visual Studio. No entanto, em breve neste passo a passo fará referência a uma solução completa no github com outros exemplos de extensão. O código completo é um pouco diferente porque tem ícones de comando real em vez de usar generictemplate ícones.  
   
 ## <a name="get-started"></a>Introdução  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ela está incluída como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -45,21 +45,21 @@ Você pode estender o editor de texto/código do Visual Studio com comandos e ef
 ## <a name="set-up-the-solution"></a>Configurar a solução  
  Primeiro, crie um projeto VSIX, adicione um adorno de exibição do editor e, em seguida, adicionar um comando (o que adiciona um VSPackage próprio para o comando). A arquitetura básica é o seguinte:  
   
--   Você tem um ouvinte de criação de exibição de texto que cria um `ColumnGuideAdornment` objeto por modo de exibição. Esse objeto escuta eventos sobre como alterar o modo de exibição ou guias de coluna de atualização ou de redesenhada configurações alterando, conforme necessário.  
+- Você tem um ouvinte de criação de exibição de texto que cria um `ColumnGuideAdornment` objeto por modo de exibição. Esse objeto escuta eventos sobre como alterar o modo de exibição ou guias de coluna de atualização ou de redesenhada configurações alterando, conforme necessário.  
   
--   Há um `GuidesSettingsManager` que lida com a leitura e gravação do armazenamento de configurações do Visual Studio. O Gerenciador de configurações também oferece operações para atualizar as configurações que dão suporte os comandos do usuário (Adicionar coluna, remova a coluna, alterar a cor).  
+- Há um `GuidesSettingsManager` que lida com a leitura e gravação do armazenamento de configurações do Visual Studio. O Gerenciador de configurações também oferece operações para atualizar as configurações que dão suporte os comandos do usuário (Adicionar coluna, remova a coluna, alterar a cor).  
   
--   Há um pacote do VSIP é necessário se você tiver os comandos do usuário, mas é apenas um código clichê que inicializa o objeto de implementação de comandos.  
+- Há um pacote do VSIP é necessário se você tiver os comandos do usuário, mas é apenas um código clichê que inicializa o objeto de implementação de comandos.  
   
--   Há um `ColumnGuideCommands` comandos de objeto que executa o usuário e conecta os manipuladores de comandos para comandos declarados em de *VSCT* arquivo.  
+- Há um `ColumnGuideCommands` comandos de objeto que executa o usuário e conecta os manipuladores de comandos para comandos declarados em de *VSCT* arquivo.  
   
- **VSIX**. Use **arquivo &#124; novo...**  comando para criar um projeto. Escolha o **extensibilidade** nó sob **c#** no painel de navegação à esquerda e escolha **projeto VSIX** no painel direito. Insira o nome **ColumnGuides** e escolha **Okey** para criar o projeto.  
+  **VSIX**. Use **arquivo &#124; novo...**  comando para criar um projeto. Escolha o **extensibilidade** nó sob **c#** no painel de navegação à esquerda e escolha **projeto VSIX** no painel direito. Insira o nome **ColumnGuides** e escolha **Okey** para criar o projeto.  
   
- **Exibir adornos**. Pressione o botão direito do ponteiro no nó do projeto no Gerenciador de soluções. Escolha o **adicionar &#124; Novo Item...**  comando para adicionar um novo item do adorno de exibição. Escolher **extensibilidade &#124; Editor** no painel de navegação à esquerda e escolha **Editor de visor adorno** no painel direito. Insira o nome **ColumnGuideAdornment** como o item de nome e escolha **Add** para adicioná-lo.  
+  **Exibir adornos**. Pressione o botão direito do ponteiro no nó do projeto no Gerenciador de soluções. Escolha o **adicionar &#124; Novo Item...**  comando para adicionar um novo item do adorno de exibição. Escolher **extensibilidade &#124; Editor** no painel de navegação à esquerda e escolha **Editor de visor adorno** no painel direito. Insira o nome **ColumnGuideAdornment** como o item de nome e escolha **Add** para adicioná-lo.  
   
- Você pode ver este modelo de item adicionados dois arquivos ao projeto (bem como referências e assim por diante): **ColumnGuideAdornment.cs** e **ColumnGuideAdornmentTextViewCreationListener.cs**. Os modelos de desenhar um retângulo roxo no modo de exibição. Na seção a seguir, você pode alterar algumas linhas no ouvinte de criação da exibição e substitua o conteúdo do **ColumnGuideAdornment.cs**.  
+  Você pode ver este modelo de item adicionados dois arquivos ao projeto (bem como referências e assim por diante): **ColumnGuideAdornment.cs** e **ColumnGuideAdornmentTextViewCreationListener.cs**. Os modelos de desenhar um retângulo roxo no modo de exibição. Na seção a seguir, você pode alterar algumas linhas no ouvinte de criação da exibição e substitua o conteúdo do **ColumnGuideAdornment.cs**.  
   
- **Comandos**. Na **Gerenciador de soluções**, pressione o botão direito do ponteiro no nó do projeto. Escolha o **adicionar &#124; Novo Item...**  comando para adicionar um novo item do adorno de exibição. Escolher **extensibilidade &#124; VSPackage** no painel de navegação à esquerda e escolha **comando personalizado** no painel direito. Insira o nome **ColumnGuideCommands** como o item de nome e escolha **Add**. Além das várias referências, adicionando os comandos e o pacote também adicionada **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**, e **ColumnGuideCommandsPackage.vsct** . Na seção a seguir, você deve substituir o conteúdo dos arquivos primeiro e último para definir e implementar os comandos.  
+  **Comandos**. Na **Gerenciador de soluções**, pressione o botão direito do ponteiro no nó do projeto. Escolha o **adicionar &#124; Novo Item...**  comando para adicionar um novo item do adorno de exibição. Escolher **extensibilidade &#124; VSPackage** no painel de navegação à esquerda e escolha **comando personalizado** no painel direito. Insira o nome **ColumnGuideCommands** como o item de nome e escolha **Add**. Além das várias referências, adicionando os comandos e o pacote também adicionada **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**, e **ColumnGuideCommandsPackage.vsct** . Na seção a seguir, você deve substituir o conteúdo dos arquivos primeiro e último para definir e implementar os comandos.  
   
 ## <a name="set-up-the-text-view-creation-listener"></a>Configurar o ouvinte de criação de exibição de texto  
  Abra *ColumnGuideAdornmentTextViewCreationListener.cs* no editor. Esse código implementa um manipulador para sempre que o Visual Studio cria os modos de exibição de texto. Há atributos que controlam quando o manipulador é chamado dependendo das características do modo de exibição.  

@@ -15,12 +15,12 @@ ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 69cbcd1f8ab1f04f02d89839eed1e0cd67aa2fd9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 07da336ad46cf873501e21f95bdf41ed6124e289
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190457"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846402"
 ---
 # <a name="source-control-vspackage-architecture"></a>Arquitetura do VSPackage de controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,25 +34,25 @@ Um pacote de controle de origem é um VSPackage que usa os serviços que o [!INC
   
  Stub de controle do código-fonte controla as tarefas a seguir.  
   
--   Fornece a interface do usuário comum que é necessário para o registro do pacote de controle de origem.  
+- Fornece a interface do usuário comum que é necessário para o registro do pacote de controle de origem.  
   
--   Carrega um pacote de controle de origem.  
+- Carrega um pacote de controle de origem.  
   
--   Define um pacote de controle de origem como ativo/inativo.  
+- Define um pacote de controle de origem como ativo/inativo.  
   
- Stub de controle do código-fonte entrada todas as chamadas de serviço do IDE para que o pacote de rotas e procura o serviço do Active Directory para o pacote de controle de origem.  
+  Stub de controle do código-fonte entrada todas as chamadas de serviço do IDE para que o pacote de rotas e procura o serviço do Active Directory para o pacote de controle de origem.  
   
- O pacote de adaptador de controle do código-fonte é um controle de fonte especial de pacote que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece. Este pacote é o componente central para dar suporte a controle plug-ins de origem com base em que a API de plug-in de controle do código-fonte. Quando um plug-in de controle de origem é o plug-in Active Directory, o Stub de controle de origem envia seus eventos para o pacote de adaptador de controle do código-fonte. Por sua vez, o pacote de adaptador de controle do código-fonte se comunica com o plug-in de controle do código-fonte usando a API de plug-in de controle do código-fonte e também fornece uma interface do usuário que é comum para controle de origem todos os plug-ins padrão.  
+  O pacote de adaptador de controle do código-fonte é um controle de fonte especial de pacote que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece. Este pacote é o componente central para dar suporte a controle plug-ins de origem com base em que a API de plug-in de controle do código-fonte. Quando um plug-in de controle de origem é o plug-in Active Directory, o Stub de controle de origem envia seus eventos para o pacote de adaptador de controle do código-fonte. Por sua vez, o pacote de adaptador de controle do código-fonte se comunica com o plug-in de controle do código-fonte usando a API de plug-in de controle do código-fonte e também fornece uma interface do usuário que é comum para controle de origem todos os plug-ins padrão.  
   
- Quando um pacote de controle de origem é o pacote do Active Directory, por outro lado, o Stub de controle do código-fonte se comunica diretamente com o pacote usando o [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] interfaces de controle de origem de pacote. O pacote de controle de origem é responsável por hospedar seu próprio controle do código-fonte da interface do usuário.  
+  Quando um pacote de controle de origem é o pacote do Active Directory, por outro lado, o Stub de controle do código-fonte se comunica diretamente com o pacote usando o [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] interfaces de controle de origem de pacote. O pacote de controle de origem é responsável por hospedar seu próprio controle do código-fonte da interface do usuário.  
   
- ![Gráfico de arquitetura de controle do código-fonte](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
+  ![Gráfico de arquitetura de controle do código-fonte](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
   
- Para um pacote de controle de origem, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] não fornece o código de controle do código-fonte ou uma API para integração. Compare isso com a abordagem descrita na [criando um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md) onde o plug-in de controle do código-fonte tem que implementar um conjunto rígido de funções e os retornos de chamada.  
+  Para um pacote de controle de origem, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] não fornece o código de controle do código-fonte ou uma API para integração. Compare isso com a abordagem descrita na [criando um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md) onde o plug-in de controle do código-fonte tem que implementar um conjunto rígido de funções e os retornos de chamada.  
   
- Como qualquer VSPackage, um pacote de controle de origem é um objeto COM que pode ser criado usando `CoCreateInstance`. O VSPackage se torna disponível para o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE com a implementação de <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Quando uma instância tiver sido criada, um VSPackage recebe um ponteiro de site e um <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interface que fornece o VSPackage acessem os serviços disponíveis e interfaces no IDE.  
+  Como qualquer VSPackage, um pacote de controle de origem é um objeto COM que pode ser criado usando `CoCreateInstance`. O VSPackage se torna disponível para o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE com a implementação de <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Quando uma instância tiver sido criada, um VSPackage recebe um ponteiro de site e um <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interface que fornece o VSPackage acessem os serviços disponíveis e interfaces no IDE.  
   
- Escrever um pacote de controle de origem com base em VSPackage requer conhecimento de programação mais avançado que escrever uma API de plug-in de controle de origem com base no plug-in.  
+  Escrever um pacote de controle de origem com base em VSPackage requer conhecimento de programação mais avançado que escrever uma API de plug-in de controle de origem com base no plug-in.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   

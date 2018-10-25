@@ -19,12 +19,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab8ab81c83f98a7a35620db7cbb10a0f700d78e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 831fb08941e16abdb197d3a25e71f2a20fcb14cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172738"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909673"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Gerenciando Assinatura de Assembly e Manifesto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,23 +40,23 @@ A assinatura de nome forte fornece a um componente de software uma identidade gl
 ## <a name="asset-types-and-signing"></a>Tipos de ativos e assinatura  
  É possível assinar manifestos de assemblies e do aplicativo do .NET. Eles incluem o seguinte:  
   
--   executáveis (.exe)  
+- executáveis (.exe)  
   
--   manifestos do aplicativo (.exe.manifest)  
+- manifestos do aplicativo (.exe.manifest)  
   
--   manifestos de implantação (.application)  
+- manifestos de implantação (.application)  
   
--   assemblies com componentes compartilhados (.dll)  
+- assemblies com componentes compartilhados (.dll)  
   
- É necessário assinar os seguintes tipos de ativo:  
+  É necessário assinar os seguintes tipos de ativo:  
   
-1.  assemblies, se você desejar implantá-los no GAC (cache de assembly global).  
+1. assemblies, se você desejar implantá-los no GAC (cache de assembly global).  
   
-2.  manifestos do aplicativo e de implantação [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. O Visual Studio permite a assinatura por padrão desses aplicativos.  
+2. manifestos do aplicativo e de implantação [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. O Visual Studio permite a assinatura por padrão desses aplicativos.  
   
-3.  Assemblies de interoperabilidade primários, que são usados para a interoperabilidade COM. O utilitário TLBIMP impõe uma nomenclatura forte ao criar um assembly de interoperabilidade primário com base em uma biblioteca de tipos COM.  
+3. Assemblies de interoperabilidade primários, que são usados para a interoperabilidade COM. O utilitário TLBIMP impõe uma nomenclatura forte ao criar um assembly de interoperabilidade primário com base em uma biblioteca de tipos COM.  
   
- Em geral, não se deve assinar executáveis. Um componente de nome forte não pode referenciar um componente que não tem um nome forte implantado com o aplicativo. O Visual Studio não assina executáveis do aplicativo, mas em vez disso, assina o manifesto do aplicativo, que aponta para o executável de nome fraco. Em geral, você deve evitar a assinatura de componentes privados ao aplicativo, pois sua assinatura pode dificultar o gerenciamento de dependências.  
+   Em geral, não se deve assinar executáveis. Um componente de nome forte não pode referenciar um componente que não tem um nome forte implantado com o aplicativo. O Visual Studio não assina executáveis do aplicativo, mas em vez disso, assina o manifesto do aplicativo, que aponta para o executável de nome fraco. Em geral, você deve evitar a assinatura de componentes privados ao aplicativo, pois sua assinatura pode dificultar o gerenciamento de dependências.  
   
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Como assinar um assembly no Visual Studio  
  Assine um aplicativo ou componente usando a guia **Assinatura** da janela Propriedades do projeto (clique com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecione **Propriedades**, digite **propriedades do projeto** na janela **Início Rápido** ou pressione ALT+ENTER na janela **Gerenciador de Soluções**). Selecione a guia **Assinatura** e, em seguida, marque a caixa de seleção **Assinar o assembly**.  

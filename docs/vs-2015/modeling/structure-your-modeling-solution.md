@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4409891b7d6cbc4be5f46b598cd5910f3e0e9284
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 007d194249cdca1ba95c758bc170db113cb0c3d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841008"
 ---
 # <a name="structure-your-modeling-solution"></a>Estruturar a solução de modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,63 +35,63 @@ Para usar modelos com eficiência em um projeto de desenvolvimento, os membros d
   
 #### <a name="to-divide-an-application-into-layers"></a>Para dividir um aplicativo em camadas  
   
-1.  A estrutura de suas soluções de base na estrutura do seu aplicativo, como o aplicativo web, aplicativo de serviço ou aplicativo da área de trabalho. Uma variedade de arquiteturas comuns é discutida [arquétipos de aplicativo no guia de arquitetura de aplicativo do Microsoft](http://go.microsoft.com/fwlink/?LinkId=196681).  
+1. A estrutura de suas soluções de base na estrutura do seu aplicativo, como o aplicativo web, aplicativo de serviço ou aplicativo da área de trabalho. Uma variedade de arquiteturas comuns é discutida [arquétipos de aplicativo no guia de arquitetura de aplicativo do Microsoft](http://go.microsoft.com/fwlink/?LinkId=196681).  
   
-2.  Criar um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução, que chamaremos a solução de arquitetura. Esta solução será usada para criar o design geral do sistema. Ele conterá os modelos, mas nenhum código.  
+2. Criar um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução, que chamaremos a solução de arquitetura. Esta solução será usada para criar o design geral do sistema. Ele conterá os modelos, mas nenhum código.  
   
-     Adicione um diagrama de camada para essa solução. No diagrama de camada, desenhe a arquitetura que você escolheu para o seu aplicativo. Por exemplo, o diagrama pode mostrar essas camadas e as dependências entre eles: apresentação; Lógica de negócios; e os dados.  
+    Adicione um diagrama de camada para essa solução. No diagrama de camada, desenhe a arquitetura que você escolheu para o seu aplicativo. Por exemplo, o diagrama pode mostrar essas camadas e as dependências entre eles: apresentação; Lógica de negócios; e os dados.  
   
-     Você pode criar uma nova solução do Visual Studio e diagrama de camada ao mesmo tempo usando o **UML novo ou diagrama de camada** comando as **arquitetura** menu.  
+    Você pode criar uma nova solução do Visual Studio e diagrama de camada ao mesmo tempo usando o **UML novo ou diagrama de camada** comando as **arquitetura** menu.  
   
-3.  Adicione para os diagramas UML de modelo de arquitetura que representam os conceitos de negócios importantes e casos de uso que são chamados no design de todas as camadas.  
+3. Adicione para os diagramas UML de modelo de arquitetura que representam os conceitos de negócios importantes e casos de uso que são chamados no design de todas as camadas.  
   
-4.  Crie uma solução do Visual Studio separada para cada camada no diagrama da arquitetura de camada.  
+4. Crie uma solução do Visual Studio separada para cada camada no diagrama da arquitetura de camada.  
   
-     Essas soluções serão usadas para desenvolver o código das camadas.  
+    Essas soluções serão usadas para desenvolver o código das camadas.  
   
-5.  Crie modelos UML que representarão os designs das camadas e os conceitos que são comuns a todas as camadas. Organize os modelos de modo que todos os modelos podem ser vistos da solução de arquitetura e os modelos relevantes podem ser vistos em cada camada.  
+5. Crie modelos UML que representarão os designs das camadas e os conceitos que são comuns a todas as camadas. Organize os modelos de modo que todos os modelos podem ser vistos da solução de arquitetura e os modelos relevantes podem ser vistos em cada camada.  
   
-     Você pode fazer isso usando qualquer um dos procedimentos a seguir. A primeira alternativa cria um projeto de modelagem separado para cada camada, e o segundo cria um projeto de modelagem única que é compartilhado entre as camadas.  
+    Você pode fazer isso usando qualquer um dos procedimentos a seguir. A primeira alternativa cria um projeto de modelagem separado para cada camada, e o segundo cria um projeto de modelagem única que é compartilhado entre as camadas.  
   
-    ###### <a name="to-use-a-separate-modeling-project-for-each-layer"></a>Para usar um projeto de modelagem separado para cada camada  
+   ###### <a name="to-use-a-separate-modeling-project-for-each-layer"></a>Para usar um projeto de modelagem separado para cada camada  
   
-    1.  Crie um projeto de modelagem em cada solução de camada.  
+   1. Crie um projeto de modelagem em cada solução de camada.  
   
-         Esse modelo contém diagramas UML que descrevem os requisitos e design dessa camada. Ele também pode conter os diagramas de camada que mostram as camadas aninhadas.  
+       Esse modelo contém diagramas UML que descrevem os requisitos e design dessa camada. Ele também pode conter os diagramas de camada que mostram as camadas aninhadas.  
   
-         Agora você tem um modelo para cada camada, além de um modelo para a arquitetura do aplicativo. Cada modelo é contido em sua própria solução. Isso permite que os membros da equipe trabalhar nas camadas ao mesmo tempo.  
+       Agora você tem um modelo para cada camada, além de um modelo para a arquitetura do aplicativo. Cada modelo é contido em sua própria solução. Isso permite que os membros da equipe trabalhar nas camadas ao mesmo tempo.  
   
-    2.  Para a solução de arquitetura, adicione o projeto de modelagem de cada solução de camada. Para fazer isso, abra a solução de arquitetura. No Gerenciador de soluções, clique com botão direito no nó da solução, aponte para adicionar e, em seguida, clique em **projeto existente**. Navegue até o projeto de modelagem (. modelproj) na solução de uma camada.  
+   2. Para a solução de arquitetura, adicione o projeto de modelagem de cada solução de camada. Para fazer isso, abra a solução de arquitetura. No Gerenciador de soluções, clique com botão direito no nó da solução, aponte para adicionar e, em seguida, clique em **projeto existente**. Navegue até o projeto de modelagem (. modelproj) na solução de uma camada.  
   
-         Cada modelo agora está visível em duas soluções: sua solução de "home" e a solução de arquitetura.  
+       Cada modelo agora está visível em duas soluções: sua solução de "home" e a solução de arquitetura.  
   
-    3.  Para o projeto de modelagem de cada camada, adicione um diagrama de camada. Comece com uma cópia do diagrama da arquitetura de camada. Você pode excluir as partes que não são as dependências do diagrama de camada.  
+   3. Para o projeto de modelagem de cada camada, adicione um diagrama de camada. Comece com uma cópia do diagrama da arquitetura de camada. Você pode excluir as partes que não são as dependências do diagrama de camada.  
   
-         Você também pode adicionar diagramas de camada que representam a estrutura detalhada dessa camada.  
+       Você também pode adicionar diagramas de camada que representam a estrutura detalhada dessa camada.  
   
-         Esses diagramas são usados para validar o código que é desenvolvido nessa camada.  
+       Esses diagramas são usados para validar o código que é desenvolvido nessa camada.  
   
-    4.  Na solução de arquitetura, edite os modelos de design de todas as camadas e os requisitos usando o Visual Studio.  
+   4. Na solução de arquitetura, edite os modelos de design de todas as camadas e os requisitos usando o Visual Studio.  
   
-         Em cada solução de camada, desenvolva o código para essa camada, referindo-se ao modelo. Se você for o conteúdo para fazer o desenvolvimento sem usar o mesmo computador para atualizar o modelo, você pode ler o modelo e desenvolver código usando versões do Visual Studio que não é possível criar modelos. Você também pode gerar o código do modelo nessas versões.  
+       Em cada solução de camada, desenvolva o código para essa camada, referindo-se ao modelo. Se você for o conteúdo para fazer o desenvolvimento sem usar o mesmo computador para atualizar o modelo, você pode ler o modelo e desenvolver código usando versões do Visual Studio que não é possível criar modelos. Você também pode gerar o código do modelo nessas versões.  
   
-     Esse método garante que nenhum interferência será causada pelos desenvolvedores que editar os modelos de camada ao mesmo tempo.  
+      Esse método garante que nenhum interferência será causada pelos desenvolvedores que editar os modelos de camada ao mesmo tempo.  
   
-     No entanto, como os modelos são separados, é difícil para se referir a conceitos comuns. Cada modelo deve ter sua própria cópia dos elementos no qual ele é dependente de outras camadas e a arquitetura. O diagrama de camada em cada camada deve ser mantido em sincronia com o diagrama de camada de arquitetura. É difícil de manter a sincronização quando alterar esses elementos, embora você possa desenvolver ferramentas para fazer isso.  
+      No entanto, como os modelos são separados, é difícil para se referir a conceitos comuns. Cada modelo deve ter sua própria cópia dos elementos no qual ele é dependente de outras camadas e a arquitetura. O diagrama de camada em cada camada deve ser mantido em sincronia com o diagrama de camada de arquitetura. É difícil de manter a sincronização quando alterar esses elementos, embora você possa desenvolver ferramentas para fazer isso.  
   
-    ###### <a name="to-use-a-separate-package-for-each-layer"></a>Para usar um pacote separado para cada camada  
+   ###### <a name="to-use-a-separate-package-for-each-layer"></a>Para usar um pacote separado para cada camada  
   
-    1.  Na solução para cada camada, adicione o projeto de modelagem de arquitetura. No Gerenciador de soluções, clique com botão direito no nó da solução, aponte para **Add**e, em seguida, clique em **projeto existente**. O projeto de modelagem único agora pode ser acessado de cada solução: o projeto de arquitetura e o projeto de desenvolvimento para cada camada.  
+   1. Na solução para cada camada, adicione o projeto de modelagem de arquitetura. No Gerenciador de soluções, clique com botão direito no nó da solução, aponte para **Add**e, em seguida, clique em **projeto existente**. O projeto de modelagem único agora pode ser acessado de cada solução: o projeto de arquitetura e o projeto de desenvolvimento para cada camada.  
   
-    2.  No modelo de UML compartilhado, crie um pacote para cada camada: no Gerenciador de soluções, selecione o projeto de modelagem. No Gerenciador de modelos UML, clique com botão direito no nó de raiz do modelo, aponte para **Add**e, em seguida, clique em **pacote**.  
+   2. No modelo de UML compartilhado, crie um pacote para cada camada: no Gerenciador de soluções, selecione o projeto de modelagem. No Gerenciador de modelos UML, clique com botão direito no nó de raiz do modelo, aponte para **Add**e, em seguida, clique em **pacote**.  
   
-         Cada pacote conterá os diagramas UML que descrevem os requisitos e design da camada correspondente.  
+       Cada pacote conterá os diagramas UML que descrevem os requisitos e design da camada correspondente.  
   
-    3.  Se for necessário, adicione diagramas de camada de local para a estrutura interna de cada camada.  
+   3. Se for necessário, adicione diagramas de camada de local para a estrutura interna de cada camada.  
   
-     Esse método permite que os elementos de design de cada camada para referir-se diretamente das camadas e a arquitetura comum dos quais ele depende.  
+      Esse método permite que os elementos de design de cada camada para referir-se diretamente das camadas e a arquitetura comum dos quais ele depende.  
   
-     Embora o trabalho simultâneo em pacotes diferentes pode causar alguns conflitos, eles são muito fáceis de gerenciar porque os pacotes são armazenados em arquivos separados. A grande dificuldade é causada pela exclusão de um elemento que é referenciado em um pacote dependente. Para obter mais informações, consulte [gerenciar modelos e diagramas com controle de versão](../modeling/manage-models-and-diagrams-under-version-control.md).  
+      Embora o trabalho simultâneo em pacotes diferentes pode causar alguns conflitos, eles são muito fáceis de gerenciar porque os pacotes são armazenados em arquivos separados. A grande dificuldade é causada pela exclusão de um elemento que é referenciado em um pacote dependente. Para obter mais informações, consulte [gerenciar modelos e diagramas com controle de versão](../modeling/manage-models-and-diagrams-under-version-control.md).  
   
 ## <a name="creating-architecture-templates"></a>Criando modelos de arquitetura  
  Na prática, você não criará todas as suas soluções do Visual Studio ao mesmo tempo, mas adicioná-las conforme o andamento do projeto. Você provavelmente também use a mesma estrutura de solução de projetos futuros.  Para ajudar você a criar novas soluções rapidamente, você pode criar um modelo de solução ou projeto. Você pode capturar o modelo em um Visual Studio Integration VSIX (extensão) para que seja fácil de distribuir e instalar em outros computadores.  

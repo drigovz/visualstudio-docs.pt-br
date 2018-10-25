@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d76cf493c20966a989d559b89da20cf5e24247e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d140fed32ac3816b75e13496dc3507fc728f7d26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916513"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Adicionar a que lista a um submenu um mais usados recentemente
 Este passo a passo se baseia no demonstrações [adicionar um submenu a um menu](../extensibility/adding-a-submenu-to-a-menu.md)e mostra como adicionar uma lista dinâmica a um submenu. A lista dinâmica constitui a base para a criação de uma lista de usados mais recentemente (MRU).  
@@ -38,9 +38,9 @@ Este passo a passo se baseia no demonstrações [adicionar um submenu a um menu]
   
 ## <a name="create-an-extension"></a>Criar uma extensão  
   
--   Siga os procedimentos em [adicionando um submenu a um menu](../extensibility/adding-a-submenu-to-a-menu.md) para criar o submenu que é modificado nos procedimentos a seguir.  
+- Siga os procedimentos em [adicionando um submenu a um menu](../extensibility/adding-a-submenu-to-a-menu.md) para criar o submenu que é modificado nos procedimentos a seguir.  
   
- Os procedimentos neste passo a passo supõem que o nome do VSPackage é `TopLevelMenu`, que é o nome que é usado no [adicionar um menu a barra de menus do Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
+  Os procedimentos neste passo a passo supõem que o nome do VSPackage é `TopLevelMenu`, que é o nome que é usado no [adicionar um menu a barra de menus do Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
   
 ## <a name="create-a-dynamic-item-list-command"></a>Criar um comando de lista de item dinâmico  
   

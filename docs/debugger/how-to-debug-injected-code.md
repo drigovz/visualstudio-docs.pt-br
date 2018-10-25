@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf602d8ee670e5fce8602cb50d2aaa1066b501de
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 479df9e5761066248b8657d9656132b072bddb13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866071"
 ---
 # <a name="how-to-debug-injected-code"></a>Como depurar código injetado
 > [!NOTE]
@@ -39,17 +39,17 @@ ms.locfileid: "31475149"
   
  Usar atributos pode simplificar muito a programação C++. Para obter mais informações, consulte [conceitos](/cpp/windows/attributed-programming-concepts). Alguns atributos são interpretados diretamente pelo compilador. Outros atributos injetam o código na origem do programa, que o compilador em seguida compila. Este código injetado facilita a programação reduzindo a quantidade de códigos que você precisa escrever. Entretanto, às vezes, um bug pode causar falha no aplicativo ao executar o código injetado. Quando isso acontece, você provavelmente desejará examinar o código injetado. O Visual Studio fornece duas maneiras de ver o código injetado:  
   
--   Você pode exibir o código injetado no **desmontagem** janela.  
+- Você pode exibir o código injetado na **desmontagem** janela.  
   
--   Usando [/Fx](/cpp/build/reference/fx-merge-injected-code), você pode criar um arquivo de origem mesclada que contém código injetado e original.  
+- Usando o [/Fx](/cpp/build/reference/fx-merge-injected-code), você pode criar um arquivo de origem mesclada que contém o código original e injetado.  
   
- O **desmontagem** janela mostra instruções de linguagem assembly que correspondem ao código-fonte e o código injetado por atributos. Além disso, o **desmontagem** janela pode mostrar a anotação do código-fonte.  
+  O **desmontagem** janela mostra instruções de linguagem de assembly que correspondem ao código-fonte e o código injetado por atributos. Além disso, o **desmontagem** janela pode mostrar a anotação do código-fonte.  
   
 ### <a name="to-turn-on-source-annotation"></a>Para ativar a anotação de origem  
   
 -   Clique com botão direito do **desmontagem** janela e escolha **Mostrar código-fonte** no menu de atalho.  
   
-     Se você souber o local de um atributo em uma janela de origem, você pode usar o menu de atalho para localizar o código injetado no **desmontagem** janela.  
+     Se você souber o local de um atributo em uma janela de origem, você pode usar o menu de atalho para localizar o código injetado na **desmontagem** janela.  
   
 ### <a name="to-view-injected-code"></a>Para exibir o código injetado  
   
@@ -57,15 +57,15 @@ ms.locfileid: "31475149"
   
 2.  Em uma janela do código-fonte, coloque o cursor na frente do atributo cujo código injetado você deseja exibir.  
   
-3.  Clique com botão direito e selecione **Go To Disassembly** no menu de atalho.  
+3.  Clique com botão direito e selecione **ir para desmontagem** no menu de atalho.  
   
-     Se o local de atributo estiver próximo ao ponto de execução atual, você pode selecionar o **desmontagem** janela a partir de **depurar** menu.  
+     Se o local do atributo estiver perto do ponto de execução atual, você pode selecionar o **desmontagem** janela a partir de **depurar** menu.  
   
 ### <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>Para exibir o código de desmontagem no ponto de execução atual  
   
 1.  O depurador deve estar no modo de interrupção.  
   
-2.  Do **depurar** menu, escolha **Windows**e clique em **desmontagem**.  
+2.  Dos **Debug** menu, escolha **Windows**e clique em **desmontagem**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Segurança do depurador](../debugger/debugger-security.md)   

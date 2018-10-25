@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b3a4be1c89d2e0a5da7de4d4793db87bf1deadce
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3ca0d99a1bab255208b8eb9f1bb7fda69a14c1c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882334"
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>Inserir imagens, vídeos e clipes de áudio no XAML Designer
 Imagens, vídeos e clipes de áudio adicione apelo visual ao seu aplicativo.
@@ -27,7 +27,7 @@ Imagens, vídeos e clipes de áudio adicione apelo visual ao seu aplicativo.
  Esses vídeos podem ajudá-lo a inserir imagens, vídeos e clipes de áudio em seu aplicativo.
 
 |Tarefa|Assista a um breve vídeo|
-|----------|-------------------------|
+|----------| - |
 |Importar um arquivo do Adobe FXG|![Configurar funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Versão prévia de importação de FXG no Blend](http://www.bing.com/videos/search?q=blend%20import%20FXG%20file&qs=n&form=QBVR&pq=blend%20import%20fxg%20file&sc=0-13&sp=-1&sk=#view=detail&mid=3C733B0B50A43166C55C3C733B0B50A43166C55C)|
 |Importar um arquivo do Adobe Illustrator|![Configurar funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Importar um arquivo do Adobe Illustrator (ai) no Blend](http://www.bing.com/videos/search?q=add%20illustrator%20file%20to%20blend&qs=n&form=QBVR&pq=add%20illustrator%20file%20to%20blend&sc=0-0&sp=-1&sk=#view=detail&mid=FDB1B25D4DEB69D24515FDB1B25D4DEB69D24515)|
 |Importar um arquivo do Adobe Photoshop|![Configurar funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Importar um arquivo do Photoshop no Blend](https://www.youtube.com/watch?v=ekYyhirFKs0)|

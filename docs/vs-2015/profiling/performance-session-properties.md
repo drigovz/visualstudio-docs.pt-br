@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77bf4e0892b81d276836f7bad45272adf338b48
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9ee879bec628628a19914a6fbc6236cad3fb5c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306144"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879110"
 ---
 # <a name="performance-session-properties"></a>Propriedades da sessão de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Crie uma **Sessão de Desempenho** executando o **Assistente de Desempenho** ou criando manualmente uma sessão. A **Sessão de Desempenho** é exibida no **Gerenciador de Desempenho** após a **Sessão de Desempenho** ser criada.  
+  Crie uma **Sessão de Desempenho** executando o **Assistente de Desempenho** ou criando manualmente uma sessão. A **Sessão de Desempenho** é exibida no **Gerenciador de Desempenho** após a **Sessão de Desempenho** ser criada.  
   
- Para exibir as propriedades da **Sessão de Desempenho**, selecione o nome da sessão em **Gerenciador de Desempenho**, clique nela com o botão direito do mouse e selecione **Propriedades**.  
+  Para exibir as propriedades da **Sessão de Desempenho**, selecione o nome da sessão em **Gerenciador de Desempenho**, clique nela com o botão direito do mouse e selecione **Propriedades**.  
   
- A sessão de desempenho tem as seguintes páginas de propriedade:  
+  A sessão de desempenho tem as seguintes páginas de propriedade:  
   
 ## <a name="general"></a>Geral  
  Essas configurações permitem que você selecione o método de criação de perfil para adicionar dados de tempo de vida e de coleção de objetos .NET e para especificar o local do relatório padrão e das convenções de nomenclatura.  
@@ -59,17 +59,17 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
 ## <a name="sampling"></a>Amostragem  
  Essas configurações permitem que você selecione o intervalo de amostragem e do evento quando a amostragem é usada como o método de criação de perfil. Um evento de amostragem é usado para coletar dados de criação de perfil no intervalo especificado. Por exemplo, se o evento de amostragem for ciclos do relógio e o intervalo de amostragem for definido como 10.000.000, então os dados de criação de perfil serão coletados a cada 10 milhões de ciclos do relógio. Os quatro tipos de eventos de amostragem a seguir estão disponíveis:  
   
--   Ciclos do relógio – para problemas ligados à CPU  
+- Ciclos do relógio – para problemas ligados à CPU  
   
--   Falhas de Página – para problemas relacionados à memória  
+- Falhas de Página – para problemas relacionados à memória  
   
--   Chamadas do Sistema – para problemas relacionados a E/S  
+- Chamadas do Sistema – para problemas relacionados a E/S  
   
--   Contadores de Desempenho – para problemas de baixo desempenho  
+- Contadores de Desempenho – para problemas de baixo desempenho  
   
--   Eventos de amostragem adicionais podem ser especificados com base nos contadores de desempenho disponíveis  
+- Eventos de amostragem adicionais podem ser especificados com base nos contadores de desempenho disponíveis  
   
- Para obter mais informações, consulte [Como escolher os eventos de amostragem](../profiling/how-to-choose-sampling-events.md)  
+  Para obter mais informações, consulte [Como escolher os eventos de amostragem](../profiling/how-to-choose-sampling-events.md)  
   
 ## <a name="binary"></a>Binário  
  Essas configurações permitem que você especifique se deseja realocar o binário instrumentado para outro local. Por exemplo, se você está criando o perfil My.DLL e optar por não realocar o binário instrumentado, uma cópia de backup de My.DLL chamada My.Orig.DLL será criada. Posteriormente, My.DLL será modificado inserindo investigações para coletar dados. Se você decidir realocar o binário instrumentado, o binário original não será renomeado e o binário instrumentado é copiado para o local especificado para uso durante a instrumentação.  

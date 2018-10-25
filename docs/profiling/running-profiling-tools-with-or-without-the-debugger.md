@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5197ba9e1a2fda9cb6a41cfe903bd772db53331
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 92744b9fdbfa0e383ba061cfe51c80c9b8cd9976
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626576"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929420"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Executar ferramentas de criação de perfil com ou sem o depurador
 O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas das quais (por exemplo, **Utilização de CPU** e **Uso de Memória**) podem ser executadas com ou sem o depurador. Ferramentas de desempenho de não depurador não devem ser executadas em configurações de versão, enquanto ferramentas integradas ao depurador destinam-se a ser executadas em configurações de depuração.  
@@ -42,60 +42,60 @@ Você pode usar as ferramentas de criação de perfil sem o depurador com o Wind
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Coletar dados de criação de perfil ao depurar  
  A seção a seguir lida com a depuração local. Você pode descobrir mais sobre a depuração em um dispositivo ou a depuração remota nas próximas seções.  
   
-1.  Abra o projeto que você deseja depurar e clique em **Depurar** > **Iniciar Depuração** (ou **Iniciar** na barra de ferramentas ou **F5**).  
+1. Abra o projeto que você deseja depurar e clique em **Depurar** > **Iniciar Depuração** (ou **Iniciar** na barra de ferramentas ou **F5**).  
   
-2.  A janela **Ferramentas de Diagnóstico** é exibida automaticamente, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico**.  
+2. A janela **Ferramentas de Diagnóstico** é exibida automaticamente, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico**.  
   
-3.  Execute os cenários dos quais deseja coletar dados.  
+3. Execute os cenários dos quais deseja coletar dados.  
   
-     Enquanto você estiver executando a sessão, poderá ver informações sobre eventos, memória de processo e utilização da CPU.  
+    Enquanto você estiver executando a sessão, poderá ver informações sobre eventos, memória de processo e utilização da CPU.  
   
-     O gráfico a seguir mostra a janela **Ferramentas de Diagnóstico** no Visual Studio 2015 Atualização 1:  
+    O gráfico a seguir mostra a janela **Ferramentas de Diagnóstico** no Visual Studio 2015 Atualização 1:  
   
-     ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  Você pode optar por ver **Uso de Memória** ou **Utilização de CPU** (ou ambos) com as configurações **Selecionar Ferramentas** na barra de ferramentas. Se você estiver executando o Visual Studio Enterprise, poderá habilitar ou desabilitar o IntelliTrace em **Ferramentas** > **Opções** > **IntelliTrace**.  
+4. Você pode optar por ver **Uso de Memória** ou **Utilização de CPU** (ou ambos) com as configurações **Selecionar Ferramentas** na barra de ferramentas. Se você estiver executando o Visual Studio Enterprise, poderá habilitar ou desabilitar o IntelliTrace em **Ferramentas** > **Opções** > **IntelliTrace**.  
   
-5.  A sessão de diagnóstico termina quando você interrompe a depuração.  
+5. A sessão de diagnóstico termina quando você interrompe a depuração.  
   
- No Visual Studio 2015 Atualização 1, a janela **Ferramentas de Diagnóstico** facilita você se concentrar nos eventos que lhe interessam.   Os nomes de evento agora são mostrados com prefixos de categoria (**Gesture**, **Program Output**, **Breakpoint**, **File**, etc.) para que você possa verificar rapidamente a lista para uma determinada categoria ou ignorar as categorias que não lhe interessam.  
+   No Visual Studio 2015 Atualização 1, a janela **Ferramentas de Diagnóstico** facilita você se concentrar nos eventos que lhe interessam.   Os nomes de evento agora são mostrados com prefixos de categoria (**Gesture**, **Program Output**, **Breakpoint**, **File**, etc.) para que você possa verificar rapidamente a lista para uma determinada categoria ou ignorar as categorias que não lhe interessam.  
   
- A janela agora tem uma caixa de pesquisa para que você possa localizar uma cadeia de caracteres específica em qualquer lugar na lista de eventos. Por exemplo, o gráfico a seguir mostra os resultados de uma pesquisa da cadeia de caracteres "install" que corresponde a quatro eventos:  
+   A janela agora tem uma caixa de pesquisa para que você possa localizar uma cadeia de caracteres específica em qualquer lugar na lista de eventos. Por exemplo, o gráfico a seguir mostra os resultados de uma pesquisa da cadeia de caracteres "install" que corresponde a quatro eventos:  
   
- ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
+   ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
- Você também pode filtrar eventos dentro e fora da exibição na janela. Na lista suspensa **Filtro**, você pode marcar ou desmarcar categorias específicas de eventos:. Os nomes de categoria são os mesmos que os nomes de prefixo.  
+   Você também pode filtrar eventos dentro e fora da exibição na janela. Na lista suspensa **Filtro**, você pode marcar ou desmarcar categorias específicas de eventos:. Os nomes de categoria são os mesmos que os nomes de prefixo.  
   
- ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
+   ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
- Para obter mais informações, consulte [Pesquisando e filtrando a guia de Eventos na janela de Ferramentas de Diagnóstico](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+   Para obter mais informações, consulte [Pesquisando e filtrando a guia de Eventos na janela de Ferramentas de Diagnóstico](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
   
 ## <a name="collect-profiling-data-without-debugging"></a>Coletar dados de criação de perfil sem depuração  
  Algumas ferramentas de criação de perfil requerem privilégios de administrador para serem executadas. Você pode abrir o Visual Studio como administrador ou optar por executar as ferramentas como administrador ao iniciar a sessão de diagnóstico.  
   
-1.  Abra o projeto no Visual Studio.  
+1. Abra o projeto no Visual Studio.  
   
-2.  No menu **Depurar**, escolha **Criador de Perfil de Desempenho** (Tecla de atalho: **Alt**+**F2**).  
+2. No menu **Depurar**, escolha **Criador de Perfil de Desempenho** (Tecla de atalho: **Alt**+**F2**).  
   
-3.  Na página de inicialização de diagnóstico, escolha uma ou mais ferramentas para executar na sessão. São exibidas apenas as ferramentas que são aplicáveis ao tipo de projeto, o sistema operacional e à linguagem de programação. Quando você escolhe uma ferramenta de diagnóstico, as seleções de ferramentas que não podem ser executadas na mesma sessão de diagnóstico são desabilitadas. Veja aqui como suas escolhas podem parecer para um aplicativo UWP em C#:  
+3. Na página de inicialização de diagnóstico, escolha uma ou mais ferramentas para executar na sessão. São exibidas apenas as ferramentas que são aplicáveis ao tipo de projeto, o sistema operacional e à linguagem de programação. Quando você escolhe uma ferramenta de diagnóstico, as seleções de ferramentas que não podem ser executadas na mesma sessão de diagnóstico são desabilitadas. Veja aqui como suas escolhas podem parecer para um aplicativo UWP em C#:  
   
-     ![Selecionar as ferramentas de diagnóstico](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
+    ![Selecionar as ferramentas de diagnóstico](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
   
-4.  Para iniciar a sessão de diagnóstico, clique em **Iniciar**.  
+4. Para iniciar a sessão de diagnóstico, clique em **Iniciar**.  
   
-5.  Execute os cenários para os quais você deseja coletar dados.  
+5. Execute os cenários para os quais você deseja coletar dados.  
   
-     Durante a execução da sessão, algumas ferramentas exibem gráficos de dados em tempo real na página de início das ferramentas de diagnóstico.  
+    Durante a execução da sessão, algumas ferramentas exibem gráficos de dados em tempo real na página de início das ferramentas de diagnóstico.  
   
-     ![Coletar dados sobre o Desempenho e o Diagnóstico pag](../profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
+    ![Coletar dados sobre o Desempenho e o Diagnóstico pag](../profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
   
-6.  Para encerrar a sessão de diagnóstico, clique em **Parar a coleta**.  
+6. Para encerrar a sessão de diagnóstico, clique em **Parar a coleta**.  
   
- Quando você interrompe a coleta de dados em uma sessão de diagnóstico, os dados são analisados e o relatório é exibido na página Diagnóstico.  
+   Quando você interrompe a coleta de dados em uma sessão de diagnóstico, os dados são analisados e o relatório é exibido na página Diagnóstico.  
   
- Você também pode abrir arquivos de sessão .diagnostic salvos na página de inicialização de ferramentas de diagnóstico.  
+   Você também pode abrir arquivos de sessão .diagnostic salvos na página de inicialização de ferramentas de diagnóstico.  
   
- ![Abrir um arquivo de sessão de diagnóstico salvo](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![Abrir um arquivo de sessão de diagnóstico salvo](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>O relatório de criação de perfil  
  ![Relatório de ferramentas de diagnóstico](../profiling/media/diag_report.png "DIAG_Report")  

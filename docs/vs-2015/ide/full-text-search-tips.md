@@ -19,12 +19,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9e05c7aa16d689dd037546fe9a199f43a80b0401
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 85770dfd3c610f92bcb190b7a2c151b40cd31a4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303427"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850042"
 ---
 # <a name="full-text-search-tips"></a>Dicas de pesquisa de texto completo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,8 +47,8 @@ Um dos métodos mais úteis para localizar informações na Ajuda é executando 
  Se você especificar uma cadeia de caracteres de pesquisa que inclui várias palavras, como "word1 word2", essa cadeia de caracteres será equivalente a digitar "word1 AND word2", que retornará apenas os tópicos que contêm todas as palavras individuais nessa cadeia de caracteres de pesquisa.  
   
 > [!IMPORTANT]
->  1.  Não há suporte para pesquisas de frase. Se você especificar mais de uma palavra em uma cadeia de caracteres de pesquisa, os tópicos retornados conterão todas as palavras especificadas, mas não necessariamente a frase exata especificada.  
-> 2.  Use operadores lógicos para especificar a relação entre as palavras em sua frase de pesquisa. É possível incluir operadores lógicos como AND, OR, NOT e NEAR para refinar ainda mais a sua pesquisa. Por exemplo, se você pesquisar "declarando NEAR união", os resultados da pesquisa incluirão tópicos que contêm as palavras "declarando" e "união" com poucas palavras entre as duas. Para obter mais informações, consulte [Operadores lógicos em expressões de pesquisa](../ide/logical-operators-in-search-expressions.md).  
+> 1. Não há suporte para pesquisas de frase. Se você especificar mais de uma palavra em uma cadeia de caracteres de pesquisa, os tópicos retornados conterão todas as palavras especificadas, mas não necessariamente a frase exata especificada.  
+>    2.  Use operadores lógicos para especificar a relação entre as palavras em sua frase de pesquisa. É possível incluir operadores lógicos como AND, OR, NOT e NEAR para refinar ainda mais a sua pesquisa. Por exemplo, se você pesquisar "declarando NEAR união", os resultados da pesquisa incluirão tópicos que contêm as palavras "declarando" e "união" com poucas palavras entre as duas. Para obter mais informações, consulte [Operadores lógicos em expressões de pesquisa](../ide/logical-operators-in-search-expressions.md).  
   
 ### <a name="filters"></a>Filtros  
  É possível restringir ainda mais os resultados da pesquisa usando operadores de pesquisa avançada. A Ajuda inclui três categorias que você pode usar para filtrar os resultados de uma pesquisa de texto completo: Título, Código e Palavra-chave. Para obter mais informações, consulte [Operadores de pesquisa avançada em expressões de pesquisa](../ide/advanced-search-operators-in-search-expressions.md).  
