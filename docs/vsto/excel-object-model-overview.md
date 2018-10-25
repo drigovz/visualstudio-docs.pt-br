@@ -22,33 +22,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4c5dee963faaf52b6e1511d0b689ebe6ee5554e2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8ca93cae45eed272b683275896efcf83229ca9a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880787"
 ---
 # <a name="excel-object-model-overview"></a>Visão geral do modelo de objeto do Excel
   Para desenvolver soluções que usam o Microsoft Office Excel, você pode interagir com os objetos fornecidos pelo modelo de objeto do Excel. Este tópico apresenta os objetos mais importantes:  
   
--   <xref:Microsoft.Office.Interop.Excel.Application>  
+- <xref:Microsoft.Office.Interop.Excel.Application>  
   
--   <xref:Microsoft.Office.Interop.Excel.Workbook>  
+- <xref:Microsoft.Office.Interop.Excel.Workbook>  
   
--   <xref:Microsoft.Office.Interop.Excel.Worksheet>  
+- <xref:Microsoft.Office.Interop.Excel.Worksheet>  
   
--   <xref:Microsoft.Office.Interop.Excel.Range>  
+- <xref:Microsoft.Office.Interop.Excel.Range>  
   
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
+  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- O modelo de objeto parecido com o da interface do usuário. O <xref:Microsoft.Office.Interop.Excel.Application> objeto representa o aplicativo inteiro e cada <xref:Microsoft.Office.Interop.Excel.Workbook> objeto contém uma coleção de `Worksheet` objetos. A partir daí, é a abstração principal que representa as células a <xref:Microsoft.Office.Interop.Excel.Range> objeto, que permite que você trabalhe com células individuais ou grupos de células.  
+  O modelo de objeto parecido com o da interface do usuário. O <xref:Microsoft.Office.Interop.Excel.Application> objeto representa o aplicativo inteiro e cada <xref:Microsoft.Office.Interop.Excel.Workbook> objeto contém uma coleção de `Worksheet` objetos. A partir daí, é a abstração principal que representa as células a <xref:Microsoft.Office.Interop.Excel.Range> objeto, que permite que você trabalhe com células individuais ou grupos de células.  
   
- Além do modelo de objeto do Excel, os projetos do Office no Visual Studio fornecem *hospedar itens* e *hospedar controles* que estendem alguns objetos no modelo de objeto do Excel. Itens de host e controles de host se comportam como os objetos do Excel eles estendem, mas eles também têm funcionalidade adicional, como recursos de vinculação de dados e eventos adicionais. Para obter mais informações, consulte [automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md) e [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md).  
+  Além do modelo de objeto do Excel, os projetos do Office no Visual Studio fornecem *hospedar itens* e *hospedar controles* que estendem alguns objetos no modelo de objeto do Excel. Itens de host e controles de host se comportam como os objetos do Excel eles estendem, mas eles também têm funcionalidade adicional, como recursos de vinculação de dados e eventos adicionais. Para obter mais informações, consulte [automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md) e [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md).  
   
- Este tópico fornece uma visão geral do modelo de objeto do Excel. Para obter recursos onde você pode aprender mais sobre todo o modelo de objeto do Excel, consulte [Use a documentação do modelo de objeto Excel](#ExcelOMDocumentation).  
+  Este tópico fornece uma visão geral do modelo de objeto do Excel. Para obter recursos onde você pode aprender mais sobre todo o modelo de objeto do Excel, consulte [Use a documentação do modelo de objeto Excel](#ExcelOMDocumentation).  
   
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer os manipuladores de eventos de uso do i: em uma Excel 2007 Add-in?](http://go.microsoft.com/fwlink/?LinkID=130291), e [como fazer as formas de i: Use para criar um gráfico de bolhas no Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer os manipuladores de eventos de uso do i: em uma Excel 2007 Add-in?](http://go.microsoft.com/fwlink/?LinkID=130291), e [como fazer as formas de i: Use para criar um gráfico de bolhas no Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="access-objects-in-an-excel-project"></a>Acessar objetos em um projeto do Excel  
  Quando você cria um novo projeto de suplemento do VSTO para Excel, Visual Studio cria automaticamente um *ThisAddIn. vb* ou *ThisAddIn.cs* arquivo de código. Você pode acessar o objeto de aplicativo usando `Me.Application` ou `this.Application`.  
@@ -69,15 +69,15 @@ ms.locfileid: "35670212"
   
  Porque os dados em um documento do Excel estiverem altamente estruturados, o modelo de objeto é simples e hierárquico. O Excel fornece centenas de objetos com os quais você talvez queira interagir, mas você pode obter uma boa introdução no modelo de objeto, concentrando-se em um pequeno subconjunto dos objetos disponíveis. Esses objetos incluem os seguintes quatro:  
   
--   Aplicativo  
+- Aplicativo  
   
--   Pastas de trabalho  
+- Pastas de trabalho  
   
--   Planilha  
+- Planilha  
   
--   Intervalo  
+- Intervalo  
   
- Grande parte do trabalho feito com o Excel gira em torno dessas quatro objetos e seus membros.  
+  Grande parte do trabalho feito com o Excel gira em torno dessas quatro objetos e seus membros.  
   
 ### <a name="application-object"></a>Objeto de aplicativo  
  O Excel <xref:Microsoft.Office.Interop.Excel.Application> objeto representa o próprio aplicativo do Excel. O <xref:Microsoft.Office.Interop.Excel.Application> objeto expõe uma grande quantidade de informações sobre o aplicativo em execução, as opções aplicadas a essa instância, e os objetos de usuário atuais abra dentro da instância.  

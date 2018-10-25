@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a5e2bb260f8ef44936485203689bf7cf3e34e6c1
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b5a05629773334648239a8656577fbe0ae347625
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857822"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830695"
 ---
 # <a name="t4-include-directive"></a>Diretiva de inclusão T4
 
@@ -26,31 +26,31 @@ Em um modelo de texto no Visual Studio, você pode incluir texto de outro arquiv
 <#@ include file="filePath" [once="true"] #>
 ```
 
--   `filePath` pode ser absoluto ou relativo ao arquivo de modelo atual.
+- `filePath` pode ser absoluto ou relativo ao arquivo de modelo atual.
 
-     Além disso, as extensões específicas do Visual Studio podem especificar seus próprios diretórios para pesquisar arquivos de inclusão. Por exemplo, quando você instalou o SDK de visualização e modelagem (ferramentas DSL), a pasta a seguir é adicionada à lista de inclusão: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
+   Além disso, as extensões específicas do Visual Studio podem especificar seus próprios diretórios para pesquisar arquivos de inclusão. Por exemplo, quando você instalou o SDK de visualização e modelagem (ferramentas DSL), a pasta a seguir é adicionada à lista de inclusão: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
 
-     Essas pastas de inclusão adicionais podem depender da extensão do arquivo de inclusão. Por exemplo, a pasta de inclusão das Ferramentas DSL só é acessível a arquivos de inclusão com a extensão de arquivo `.tt`
+   Essas pastas de inclusão adicionais podem depender da extensão do arquivo de inclusão. Por exemplo, a pasta de inclusão das Ferramentas DSL só é acessível a arquivos de inclusão com a extensão de arquivo `.tt`
 
--   `filePath` pode incluir variáveis de ambiente delimitadas com "%". Por exemplo:
+- `filePath` pode incluir variáveis de ambiente delimitadas com "%". Por exemplo:
 
-    ```
-    <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>
-    ```
+  ```
+  <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>
+  ```
 
--   O nome de um arquivo incluído não precisa usar a extensão `".tt"`.
+- O nome de um arquivo incluído não precisa usar a extensão `".tt"`.
 
-     Você pode usar outra extensão como `".t4"` para arquivos incluídos. Isso ocorre porque, quando você adiciona uma `.tt` arquivo a um projeto, o Visual Studio define automaticamente seus **Custom Tool** propriedade `TextTemplatingFileGenerator`. Geralmente, você não quer que os arquivos incluídos sejam transformados individualmente.
+   Você pode usar outra extensão como `".t4"` para arquivos incluídos. Isso ocorre porque, quando você adiciona uma `.tt` arquivo a um projeto, o Visual Studio define automaticamente seus **Custom Tool** propriedade `TextTemplatingFileGenerator`. Geralmente, você não quer que os arquivos incluídos sejam transformados individualmente.
 
-     Por outro lado, você deve estar ciente de que, em alguns casos, a extensão do arquivo afeta as pastas adicionais em que os arquivos de inclusão serão pesquisados. Isso pode ser importante quando você tem um arquivo incluído que contenha outros arquivos.
+   Por outro lado, você deve estar ciente de que, em alguns casos, a extensão do arquivo afeta as pastas adicionais em que os arquivos de inclusão serão pesquisados. Isso pode ser importante quando você tem um arquivo incluído que contenha outros arquivos.
 
--   O conteúdo incluído é processado quase como se fizesse parte do modelo de texto de inclusão. Entretanto, você pode incluir um arquivo que contenha um bloco de recurso de classe `<#+...#>` mesmo se a diretiva `include` for seguida por blocos de texto comum ou de controle padrão.
+- O conteúdo incluído é processado quase como se fizesse parte do modelo de texto de inclusão. Entretanto, você pode incluir um arquivo que contenha um bloco de recurso de classe `<#+...#>` mesmo se a diretiva `include` for seguida por blocos de texto comum ou de controle padrão.
 
--   Use `once="true"` para garantir que o modelo é incluído somente uma vez, mesmo se ele é chamado de mais de um arquivo de inclusão.
+- Use `once="true"` para garantir que o modelo é incluído somente uma vez, mesmo se ele é chamado de mais de um arquivo de inclusão.
 
-     Isso faz com que recurso fácil criar uma biblioteca de trechos de código T4 reutilizáveis que você pode incluir a será sem se preocupar que algum outro trecho já incluiu-los.  Por exemplo, suponha que você tem uma biblioteca de trechos muito refinados que lidam com processamento de modelo e geração de c#.  Por sua vez, eles são usados por alguns utilitários de tarefas mais específicas, como a geração de exceções, que você pode usar de qualquer modelo de aplicativo mais específico. Se você desenhar o grafo de dependência, verá que alguns snippets poderiam ser incluídos várias vezes. Mas o parâmetro `once` evita as inclusões subsequentes.
+   Isso faz com que recurso fácil criar uma biblioteca de trechos de código T4 reutilizáveis que você pode incluir a será sem se preocupar que algum outro trecho já incluiu-los.  Por exemplo, suponha que você tem uma biblioteca de trechos muito refinados que lidam com processamento de modelo e geração de c#.  Por sua vez, eles são usados por alguns utilitários de tarefas mais específicas, como a geração de exceções, que você pode usar de qualquer modelo de aplicativo mais específico. Se você desenhar o grafo de dependência, verá que alguns snippets poderiam ser incluídos várias vezes. Mas o parâmetro `once` evita as inclusões subsequentes.
 
- **MyTextTemplate.tt:**
+  **MyTextTemplate.tt:**
 
 ```
 <#@ output extension=".txt" #>
@@ -61,7 +61,6 @@ Output message 5 (from top template).
    GenerateMessage(6); // defined in TextFile1.t4
    AnotherGenerateMessage(7); // defined in TextFile2.t4
 #>
-
 ```
 
  **TextFile1.t4:**
@@ -78,7 +77,6 @@ void GenerateMessage(int n)
 <#+
 }
 #>
-
 ```
 
  **TextFile2.t4:**
@@ -93,7 +91,6 @@ void AnotherGenerateMessage(int n)
 <#+
 }
 #>
-
 ```
 
  **O arquivo gerado resultante, mytexttemplate. txt:**
@@ -108,7 +105,6 @@ Output message 1 (from top template).
 Output message 5 (from top template).
    Output Message 6 (from GenerateMessage method).
        Output Message 7 (from AnotherGenerateMessage method).
-
 ```
 
 ## <a name="msbuild"></a> Usando propriedades do projeto no MSBuild e Visual Studio
@@ -128,7 +124,6 @@ Output message 5 (from top template).
       <Value>$(myIncludeFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
  Agora você pode usar a propriedade do projeto em modelos de texto, que se transformam corretamente no Visual Studio e no MSBuild:

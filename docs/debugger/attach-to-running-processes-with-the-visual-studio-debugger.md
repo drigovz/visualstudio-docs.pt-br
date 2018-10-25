@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc638bdd70e9456ea1f2c937febbfdd974f2d20
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: bdd83cb8b2d20d3e3abcacbb69d50e1a68831ca4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443630"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843256"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar a processos em execução com o depurador do Visual Studio
 Você pode anexar o depurador do Visual Studio para um processo em execução em um computador local ou remoto. Depois que o processo está em execução, selecione **Debug** > **anexar ao processo** ou pressione **Ctrl**+**Alt** + **P** no Visual Studio e usar o **anexar ao processo** caixa de diálogo para anexar o depurador ao processo.
@@ -54,30 +54,30 @@ Para depurar um processo em um computador remoto, consulte [anexar a um processo
 
 **Para anexar a um processo no computador local:**  
 
-1.  No Visual Studio, selecione **Debug** > **anexar ao processo** (ou pressione **Ctrl**+**Alt** + **P**) para abrir o **anexar ao processo** caixa de diálogo.
+1. No Visual Studio, selecione **Debug** > **anexar ao processo** (ou pressione **Ctrl**+**Alt** + **P**) para abrir o **anexar ao processo** caixa de diálogo.
   
-  **Tipo de Conexão** deve ser definido como **padrão**. **Destino de Conexão** deve ser o nome do computador local. 
+   **Tipo de Conexão** deve ser definido como **padrão**. **Destino de Conexão** deve ser o nome do computador local. 
   
-  ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process") 
+   ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process") 
   
-1.  No **processos disponíveis** lista, localize e selecione o processo ou processos que você deseja anexar.  
+2. No **processos disponíveis** lista, localize e selecione o processo ou processos que você deseja anexar.  
 
-  - Para selecionar rapidamente um processo, digite seu nome ou a primeira letra na **processos de filtro** caixa. 
+   - Para selecionar rapidamente um processo, digite seu nome ou a primeira letra na **processos de filtro** caixa. 
   
-  - Se você não souber o nome do processo, percorra a lista, ou consulte [comum de cenários de depuração](#BKMK_Scenarios) para alguns nomes comuns do processo. 
+   - Se você não souber o nome do processo, percorra a lista, ou consulte [comum de cenários de depuração](#BKMK_Scenarios) para alguns nomes comuns do processo. 
   
-  >[!TIP]
-  >Processos podem iniciar e parar em segundo plano enquanto o **anexar ao processo** caixa de diálogo é aberta, portanto, a lista de processos em execução pode não estar atualizada. Você pode selecionar **Refresh** a qualquer momento para ver a lista atual. 
+   >[!TIP]
+   >Processos podem iniciar e parar em segundo plano enquanto o **anexar ao processo** caixa de diálogo é aberta, portanto, a lista de processos em execução pode não estar atualizada. Você pode selecionar **Refresh** a qualquer momento para ver a lista atual. 
   
-1.  No **anexar a** campo, verifique se o tipo de código que você pretende depurar está listado. O padrão **automática** definindo funciona para a maioria dos tipos de aplicativo. 
+3. No **anexar a** campo, verifique se o tipo de código que você pretende depurar está listado. O padrão **automática** definindo funciona para a maioria dos tipos de aplicativo. 
   
-  Para selecionar manualmente os tipos de código:
-    1. Clique em **selecionar**. 
-    1. No **Selecionar tipo de código** caixa de diálogo, selecione **depurar esses tipos de código**.
-    1. Selecione os tipos de código que você deseja depurar.
-    1. Selecione **OK**.
+   Para selecionar manualmente os tipos de código:
+   1. Clique em **selecionar**. 
+   1. No **Selecionar tipo de código** caixa de diálogo, selecione **depurar esses tipos de código**.
+   1. Selecione os tipos de código que você deseja depurar.
+   1. Selecione **OK**.
   
-1.  Selecione **anexar**.
+4. Selecione **anexar**.
   
 >[!NOTE]
 >Você também pode ser associada a vários aplicativos para depuração, mas apenas um aplicativo está ativo no depurador em um momento. Você pode definir o aplicativo ativo no Visual Studio **local de depuração** barra de ferramentas ou **processos** janela.  
@@ -90,46 +90,46 @@ Para obter instruções mais completas para depuração de aplicativos do ASP.NE
 
 **Para anexar a um processo em execução em um computador remoto:**  
 
-1.  No Visual Studio, selecione **Debug** > **anexar ao processo** (ou pressione **Ctrl**+**Alt** + **P**) para abrir o **anexar ao processo** caixa de diálogo.
+1. No Visual Studio, selecione **Debug** > **anexar ao processo** (ou pressione **Ctrl**+**Alt** + **P**) para abrir o **anexar ao processo** caixa de diálogo.
   
-1.  **Tipo de Conexão** deve ser **padrão** na maioria dos casos. No **destino de Conexão** , selecione o computador remoto, usando um dos seguintes métodos:
+2. **Tipo de Conexão** deve ser **padrão** na maioria dos casos. No **destino de Conexão** , selecione o computador remoto, usando um dos seguintes métodos:
 
-  - Selecione a seta suspensa ao lado **destino de Conexão**e selecione o nome do computador na lista suspensa.  
-  - Digite o nome do computador na **destino de Conexão** caixa.
+   - Selecione a seta suspensa ao lado **destino de Conexão**e selecione o nome do computador na lista suspensa.  
+   - Digite o nome do computador na **destino de Conexão** caixa.
       
-      > [!NOTE]
-      > Se você não pode se conectar usando o nome do computador remoto, tente usar o IP e endereço da porta (por exemplo, `123.45.678.9:4022`). 4022 é a porta padrão para o depurador remoto do Visual Studio 2017 x64. Para outras atribuições de porta do depurador remoto, consulte [atribuições de porta do depurador remoto](remote-debugger-port-assignments.md).  
+     > [!NOTE]
+     > Se você não pode se conectar usando o nome do computador remoto, tente usar o IP e endereço da porta (por exemplo, `123.45.678.9:4022`). 4022 é a porta padrão para o depurador remoto do Visual Studio 2017 x64. Para outras atribuições de porta do depurador remoto, consulte [atribuições de porta do depurador remoto](remote-debugger-port-assignments.md).  
       
-  - Selecione o **encontrar** lado a **destino de Conexão** caixa para abrir o **conexões remotas** caixa de diálogo. O **conexões remotas** caixa de diálogo lista todos os dispositivos que estão na sua sub-rede local ou diretamente conectado ao seu computador. Talvez você precise [abra a porta UDP 3702](../debugger/remote-debugger-port-assignments.md) no servidor para descobrir dispositivos remotos. Selecione o computador ou dispositivo que você deseja e, em seguida, clique em **selecionar**. 
+   - Selecione o **encontrar** lado a **destino de Conexão** caixa para abrir o **conexões remotas** caixa de diálogo. O **conexões remotas** caixa de diálogo lista todos os dispositivos que estão na sua sub-rede local ou diretamente conectado ao seu computador. Talvez você precise [abra a porta UDP 3702](../debugger/remote-debugger-port-assignments.md) no servidor para descobrir dispositivos remotos. Selecione o computador ou dispositivo que você deseja e, em seguida, clique em **selecionar**. 
   
-  > [!NOTE]
-  > O **tipo de Conexão** configuração persiste entre as sessões de depuração. O **destino de Conexão** configuração persiste entre as sessões de depuração somente se uma conexão de depuração bem-sucedida ocorreu com o destino.
+   > [!NOTE]
+   > O **tipo de Conexão** configuração persiste entre as sessões de depuração. O **destino de Conexão** configuração persiste entre as sessões de depuração somente se uma conexão de depuração bem-sucedida ocorreu com o destino.
 
-1.  Clique em **Refresh** para popular o **processos disponíveis** lista.
+3. Clique em **Refresh** para popular o **processos disponíveis** lista.
      
-     >[!TIP]
-     >Processos podem iniciar e parar em segundo plano enquanto o **anexar ao processo** caixa de diálogo é aberta, portanto, a lista de processos em execução pode não estar atualizada. Você pode selecionar **Refresh** a qualquer momento para ver a lista atual. 
+    >[!TIP]
+    >Processos podem iniciar e parar em segundo plano enquanto o **anexar ao processo** caixa de diálogo é aberta, portanto, a lista de processos em execução pode não estar atualizada. Você pode selecionar **Refresh** a qualquer momento para ver a lista atual. 
      
-1.  No **processos disponíveis** lista, localize e selecione o processo ou processos que você deseja anexar.  
+4. No **processos disponíveis** lista, localize e selecione o processo ou processos que você deseja anexar.  
 
-  - Para selecionar rapidamente um processo, digite seu nome ou a primeira letra na **processos de filtro** caixa. 
+   - Para selecionar rapidamente um processo, digite seu nome ou a primeira letra na **processos de filtro** caixa. 
   
-  - Se você não souber o nome do processo, percorra a lista, ou consulte [comum de cenários de depuração](#BKMK_Scenarios) para alguns nomes comuns do processo. 
+   - Se você não souber o nome do processo, percorra a lista, ou consulte [comum de cenários de depuração](#BKMK_Scenarios) para alguns nomes comuns do processo. 
   
-  - Para localizar os processos em execução em todas as contas de usuário, selecione o **Mostrar processos de todos os usuários** caixa de seleção.
+   - Para localizar os processos em execução em todas as contas de usuário, selecione o **Mostrar processos de todos os usuários** caixa de seleção.
       
-      >[!NOTE]
-      >Se você tentar anexar a um processo de propriedade de uma conta de usuário não confiável, aparecerá uma confirmação da caixa de diálogo de aviso de segurança. Para obter mais informações, consulte [aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+     >[!NOTE]
+     >Se você tentar anexar a um processo de propriedade de uma conta de usuário não confiável, aparecerá uma confirmação da caixa de diálogo de aviso de segurança. Para obter mais informações, consulte [aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
       
-1.  No **anexar a** campo, verifique se o tipo de código que você pretende depurar está listado. O padrão **automática** definindo funciona para a maioria dos tipos de aplicativo. 
+5. No **anexar a** campo, verifique se o tipo de código que você pretende depurar está listado. O padrão **automática** definindo funciona para a maioria dos tipos de aplicativo. 
   
-  Para selecionar manualmente os tipos de código:
-    1. Clique em **selecionar**. 
-    1. No **Selecionar tipo de código** caixa de diálogo, selecione **depurar esses tipos de código**.
-    1. Selecione os tipos de código que você deseja depurar.
-    1. Selecione **OK**.
+   Para selecionar manualmente os tipos de código:
+   1. Clique em **selecionar**. 
+   1. No **Selecionar tipo de código** caixa de diálogo, selecione **depurar esses tipos de código**.
+   1. Selecione os tipos de código que você deseja depurar.
+   1. Selecione **OK**.
   
-1.  Selecione **anexar**.
+6. Selecione **anexar**.
   
 >[!NOTE]
 >Você também pode ser associada a vários aplicativos para depuração, mas apenas um aplicativo está ativo no depurador em um momento. Você pode definir o aplicativo ativo no Visual Studio **local de depuração** barra de ferramentas ou **processos** janela.  

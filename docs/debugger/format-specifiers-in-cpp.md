@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3bd99ed0a4350dbaf8c2e158f8b86464f50393c4
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 714ca84a860f01ecc0df6536adb5ea9bb60989fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057750"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820493"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato em C++ no depurador do Visual Studio
 Você pode alterar o formato no qual um valor é exibido na **inspeção** janela usando especificadores de formato.  
@@ -43,9 +43,9 @@ Você pode alterar o formato no qual um valor é exibido na **inspeção** janel
   
 > [!NOTE]
 >  Quando o depurador nativo do Visual Studio é alterado para um novo mecanismo de depuração, alguns novos especificadores de formato foram adicionados e alguns antigos foram removidos. O depurador antigo ainda é usado quando você fizer interop (nativa e gerenciada combinadas) depuração com c++ CLI. As seções a seguir neste tópico mostram os especificadores de formato para cada mecanismo de depuração.
->   
->  -   [Especificadores de formato](#BKMK_Visual_Studio_2012_format_specifiers) descreve os especificadores de formato no novo mecanismo de depuração.  
-> -   [Especificadores de formato para depuração interop com c++ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) descreve os especificadores de formato no mecanismo de depuração antigo.  
+> 
+> - [Especificadores de formato](#BKMK_Visual_Studio_2012_format_specifiers) descreve os especificadores de formato no novo mecanismo de depuração.  
+>   -   [Especificadores de formato para depuração interop com c++ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) descreve os especificadores de formato no mecanismo de depuração antigo.  
   
 ## <a name="using-format-specifiers"></a>Usando especificadores de formato  
  Se você tiver o seguinte código:  
@@ -80,7 +80,7 @@ int main() {
 |sub|Cadeia de caracteres Unicode (codificação UTF-16) (sem aspas)|\<local > L "hello world"|Olá, mundo|  
 |bstr|Cadeia de caracteres BSTR|\<local > L "hello world"|L "hello world"|  
 |Env|Bloco de ambiente (cadeia de caracteres nula dupla encerrado)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
-|**s32**|Cadeia de caracteres UTF-32|\<local > U "hello world"|U "hello world"|  
+|**s32**|Cadeia de caracteres UTF-32|\<local > U "hello world"|u "hello world"|  
 |**s32b**|Cadeia de caracteres UTF-32 (sem aspas)|\<local > U "hello world"|Olá, mundo|  
 |**en**|enum|Saturday(6)|Sábado|  
 |**hv**|Tipo de ponteiro - indica que o valor do ponteiro está sendo inspecionado é o resultado da alocação de heap de uma matriz, por exemplo, `new int[3]`.|\<local > {\<primeiro membro >}|\<local > {\<primeiro membro >, \<segundo membro >,...}|  

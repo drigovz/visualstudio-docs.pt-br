@@ -15,12 +15,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55bd1e82af3e87fc7845bd122794888a24ca7f02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6c8589afcd64e62e2869283cb4d2a25835b672e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251960"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870582"
 ---
 # <a name="inside-the-editor"></a>Dentro do editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,42 +29,42 @@ O editor é composto de um número de diferentes subsistemas, que são projetado
   
  Estas seções descrevem diferentes aspectos do editor:  
   
--   [Visão geral dos subsistemas](../extensibility/inside-the-editor.md#overview)  
+- [Visão geral dos subsistemas](../extensibility/inside-the-editor.md#overview)  
   
--   [O modelo de texto](../extensibility/inside-the-editor.md#textmodel)  
+- [O modelo de texto](../extensibility/inside-the-editor.md#textmodel)  
   
--   [A exibição de texto](../extensibility/inside-the-editor.md#textview)  
+- [A exibição de texto](../extensibility/inside-the-editor.md#textview)  
   
- Estas seções descrevem os recursos do editor:  
+  Estas seções descrevem os recursos do editor:  
   
--   [Classificadores e marcas](../extensibility/inside-the-editor.md#tagsandclassifiers)  
+- [Classificadores e marcas](../extensibility/inside-the-editor.md#tagsandclassifiers)  
   
--   [Adornos](../extensibility/inside-the-editor.md#adornments)  
+- [Adornos](../extensibility/inside-the-editor.md#adornments)  
   
--   [Projeção](../extensibility/inside-the-editor.md#projection)  
+- [Projeção](../extensibility/inside-the-editor.md#projection)  
   
--   [Estrutura de tópicos](../extensibility/inside-the-editor.md#outlining)  
+- [Estrutura de tópicos](../extensibility/inside-the-editor.md#outlining)  
   
--   [Associações de mouse](../extensibility/inside-the-editor.md#mousebindings)  
+- [Associações de mouse](../extensibility/inside-the-editor.md#mousebindings)  
   
--   [Operações de editor](../extensibility/inside-the-editor.md#editoroperations)  
+- [Operações de editor](../extensibility/inside-the-editor.md#editoroperations)  
   
--   [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
+- [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
 ##  <a name="overview"></a> Visão geral dos subsistemas  
   
 ### <a name="text-model-subsystem"></a>Subsistema de modelo de texto  
  O subsistema de modelo de texto é responsável por representação de texto e habilitar sua manipulação. O subsistema de modelo de texto contém o <xref:Microsoft.VisualStudio.Text.ITextBuffer> interface, que descreve a sequência de caracteres a ser exibido pelo editor. Esse texto pode ser modificado, controlado e manipulado de várias maneiras. O modelo de texto também fornece tipos para os seguintes aspectos:  
   
--   Um serviço que associa a arquivos de texto e gerencia lendo e gravando-os no sistema de arquivos.  
+- Um serviço que associa a arquivos de texto e gerencia lendo e gravando-os no sistema de arquivos.  
   
--   Um serviço diferencial que localiza as diferenças mínimas entre duas sequências de objetos.  
+- Um serviço diferencial que localiza as diferenças mínimas entre duas sequências de objetos.  
   
--   Um sistema para descrever o texto em um buffer em termos de subconjuntos do texto em outros buffers.  
+- Um sistema para descrever o texto em um buffer em termos de subconjuntos do texto em outros buffers.  
   
- O subsistema de modelo de texto é livre de conceitos (UI) de interface do usuário. Por exemplo, não é responsável pela formatação de texto ou o layout de texto, e ele não tem conhecimento de adornos visual que pode ser associado com o texto.  
+  O subsistema de modelo de texto é livre de conceitos (UI) de interface do usuário. Por exemplo, não é responsável pela formatação de texto ou o layout de texto, e ele não tem conhecimento de adornos visual que pode ser associado com o texto.  
   
- Os tipos públicos do subsistema de modelo de texto estão contidos em Microsoft.VisualStudio.Text.Data.dll e Microsoft.VisualStudio.CoreUtilitiy.dll, depender apenas de biblioteca de classes base do .NET Framework e o MEF Managed Extensibility Framework ().  
+  Os tipos públicos do subsistema de modelo de texto estão contidos em Microsoft.VisualStudio.Text.Data.dll e Microsoft.VisualStudio.CoreUtilitiy.dll, depender apenas de biblioteca de classes base do .NET Framework e o MEF Managed Extensibility Framework ().  
   
 ### <a name="text-view-subsystem"></a>Subsistema de modo de exibição de texto  
  O subsistema de modo de exibição de texto é responsável por formatar e exibir texto. Os tipos nesse subsistema são divididos em duas camadas, dependendo se os tipos se baseiam no Windows Presentation Foundation (WPF). Os tipos mais importantes são <xref:Microsoft.VisualStudio.Text.Editor.ITextView> e <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, que controlam o conjunto de linhas de texto que devem ser exibidas e também o cursor, a seleção e os recursos para o adorno de texto por meio de elementos de UI do WPF. Esse subsistema fornece também a área de exibição de margens ao redor do texto. Dessas margens podem ser estendidas e podem conter diferentes tipos de efeitos de conteúdo e o visuais. Exemplos de margens são linha número exibe e barras de rolagem.  

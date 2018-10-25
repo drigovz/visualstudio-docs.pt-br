@@ -13,12 +13,12 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96b4ded80d3c00c0f2c7a5c9037758f72907ea28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8f792553e29a4b24d30a25dd835db0b96befcbd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215599"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824256"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Passo a passo: criando um SDK usando C# ou Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,23 +138,23 @@ Neste passo a passo, você aprenderá como criar um SDK de biblioteca de matemá
   
 ##  <a name="createSample"></a> Para criar um aplicativo de exemplo que usa a biblioteca de classes  
   
-1.  Na barra de menus, escolha **arquivo**, **New**, **novo projeto**.  
+1. Na barra de menus, escolha **arquivo**, **New**, **novo projeto**.  
   
-2.  Na lista de modelos, expanda **Visual c#** ou **Visual Basic**e, em seguida, escolha o **Windows Store** nó.  
+2. Na lista de modelos, expanda **Visual c#** ou **Visual Basic**e, em seguida, escolha o **Windows Store** nó.  
   
-3.  Escolha o **aplicativo em branco** modelo, o nome do projeto **ArithmeticUI**e, em seguida, escolha o **Okey** botão.  
+3. Escolha o **aplicativo em branco** modelo, o nome do projeto **ArithmeticUI**e, em seguida, escolha o **Okey** botão.  
   
-4.  Na **Gerenciador de soluções**, abra o menu de atalho para o **ArithmeticUI** do projeto e, em seguida, escolha **Add**, **referência**.  
+4. Na **Gerenciador de soluções**, abra o menu de atalho para o **ArithmeticUI** do projeto e, em seguida, escolha **Add**, **referência**.  
   
-5.  Na lista de tipos de referência, expanda **Windows**e, em seguida, escolha **extensões**.  
+5. Na lista de tipos de referência, expanda **Windows**e, em seguida, escolha **extensões**.  
   
-6.  No painel de detalhes, escolha o **SDK de matemática simples** extensão.  
+6. No painel de detalhes, escolha o **SDK de matemática simples** extensão.  
   
-     Informações adicionais sobre o SDK é exibida. Você pode escolher o **mais informações** link para abrir http://www.msdn.microsoft.com, conforme especificado no arquivo Sdkmanifest no início deste passo a passo.  
+    Informações adicionais sobre o SDK é exibida. Você pode escolher o **mais informações** link para abrir http://www.msdn.microsoft.com, conforme especificado no arquivo Sdkmanifest no início deste passo a passo.  
   
-7.  No **Gerenciador de referências** caixa de diálogo, selecione o **SDK de matemática simples** caixa de seleção e, em seguida, escolha o **Okey** botão.  
+7. No **Gerenciador de referências** caixa de diálogo, selecione o **SDK de matemática simples** caixa de seleção e, em seguida, escolha o **Okey** botão.  
   
-8.  Na barra de menus, escolha **modo de exibição**, **Pesquisador de objetos**.  
+8. Na barra de menus, escolha **modo de exibição**, **Pesquisador de objetos**.  
   
 9. No **navegue** , escolha **matemática simples**.  
   
@@ -176,7 +176,7 @@ Neste passo a passo, você aprenderá como criar um SDK de biblioteca de matemá
   
      O resultado correto é exibido.  
   
- Você criou e usado um SDK de extensão com êxito.  
+    Você criou e usado um SDK de extensão com êxito.  
   
 ## <a name="see-also"></a>Consulte também  
  [Passo a passo: Criando um SDK usando C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   

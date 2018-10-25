@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d072dcf839f31df2dba14a3293ed962cd3a68fce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c346c74b88f899101d30a0ecfb3a46544093a596
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281020"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847834"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Usar arquivos de despejo com o Visual Studio
 Arquivos de despejo com ou sem heaps; criar um arquivo de despejo; abrir um arquivo de despejo; Localize os binários, do pdb e arquivo de origem para um arquivo de despejo.
@@ -64,11 +64,11 @@ Arquivos de despejo com ou sem heaps; criar um arquivo de despejo; abrir um arqu
 ##  <a name="BKMK_Create_a_dump_file"></a> Criar um arquivo de despejo
  Para criar um arquivo de despejo com o Visual Studio:
 
--   Enquanto você estiver depurando um processo no Visual Studio, será possível salvar um arquivo de despejo quando o depurador parar em uma exceção ou em um ponto de interrupção. Escolher **Debug**, em seguida, **Salvar despejo como**, em seguida, **depurar**. No **Salvar despejo como** na caixa de **Salvar como tipo** lista, você pode selecionar **minidespejo** ou **minidespejo com Heap** (o padrão).
+- Enquanto você estiver depurando um processo no Visual Studio, será possível salvar um arquivo de despejo quando o depurador parar em uma exceção ou em um ponto de interrupção. Escolher **Debug**, em seguida, **Salvar despejo como**, em seguida, **depurar**. No **Salvar despejo como** na caixa de **Salvar como tipo** lista, você pode selecionar **minidespejo** ou **minidespejo com Heap** (o padrão).
 
--   Com o [depuração Just-in-](../debugger/just-in-time-debugging-in-visual-studio.md) habilitado, você pode anexar o depurador a um processo travado que está em execução fora do depurador e, em seguida, salve um arquivo de despejo. Consulte [anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- Com o [depuração Just-in-](../debugger/just-in-time-debugging-in-visual-studio.md) habilitado, você pode anexar o depurador a um processo travado que está em execução fora do depurador e, em seguida, salve um arquivo de despejo. Consulte [anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 
- Você também pode criar arquivos de despejo com qualquer programa que ofereça suporte ao formato de minidespejo do Windows. Por exemplo, o **Procdump** utilitário de linha de comando do [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) pode criar arquivos de despejo de falha do processo com base em disparadores ou sob demanda. Ver [requisitos e limitações](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) neste tópico para obter mais informações sobre como usar outras ferramentas para criar arquivos de despejo.
+  Você também pode criar arquivos de despejo com qualquer programa que ofereça suporte ao formato de minidespejo do Windows. Por exemplo, o **Procdump** utilitário de linha de comando do [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) pode criar arquivos de despejo de falha do processo com base em disparadores ou sob demanda. Ver [requisitos e limitações](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) neste tópico para obter mais informações sobre como usar outras ferramentas para criar arquivos de despejo.
 
 ##  <a name="BKMK_Open_a_dump_file"></a> Abrir um arquivo de despejo
 
@@ -85,31 +85,31 @@ Arquivos de despejo com ou sem heaps; criar um arquivo de despejo; abrir um arqu
 ##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Localizar os binários, arquivos de símbolo (. PDB) e arquivos de origem
  Para usar os recursos completos do Visual Studio a fim de depurar um arquivo de despejo, você precisar acessar:
 
--   O arquivo .exe para o qual o despejo foi feito e outros binários (DLL, etc.) que foram usados no processo de despejo.
+- O arquivo .exe para o qual o despejo foi feito e outros binários (DLL, etc.) que foram usados no processo de despejo.
 
-     Se você estiver depurando um despejo com dados de heap, o Visual Studio poderá lidar com binários ausentes para alguns módulos, mas deverá ter binários para módulos suficientes de modo a gerar pilhas de chamadas válidas. O Visual Studio inclui os módulos nativos em um arquivo de despejo com heap.
+   Se você estiver depurando um despejo com dados de heap, o Visual Studio poderá lidar com binários ausentes para alguns módulos, mas deverá ter binários para módulos suficientes de modo a gerar pilhas de chamadas válidas. O Visual Studio inclui os módulos nativos em um arquivo de despejo com heap.
 
--   Arquivos de símbolo (.pdb) para o .exe e outros binários.
+- Arquivos de símbolo (.pdb) para o .exe e outros binários.
 
--   Arquivos de origem para os módulos em que você está interessado.
+- Arquivos de origem para os módulos em que você está interessado.
 
-     Os arquivos executável e .pdb devem corresponder exatamente à versão e à compilação dos arquivos usados quando o despejo foi criado.
+   Os arquivos executável e .pdb devem corresponder exatamente à versão e à compilação dos arquivos usados quando o despejo foi criado.
 
-     Você pode depurar usando a desmontagem dos módulos, se você não encontrar os arquivos de origem
+   Você pode depurar usando a desmontagem dos módulos, se você não encontrar os arquivos de origem
 
- **Caminhos de pesquisa padrão para arquivos executáveis**
+  **Caminhos de pesquisa padrão para arquivos executáveis**
 
- Visual Studio pesquisa automaticamente esses locais de arquivos executáveis que não estão incluídos no arquivo de despejo:
+  Visual Studio pesquisa automaticamente esses locais de arquivos executáveis que não estão incluídos no arquivo de despejo:
 
-1.  O diretório que contém o arquivo de despejo.
+1. O diretório que contém o arquivo de despejo.
 
-2.  O caminho do módulo que é especificado no arquivo de despejo. Esse é o caminho do módulo no computador onde o despejo foi coletado.
+2. O caminho do módulo que é especificado no arquivo de despejo. Esse é o caminho do módulo no computador onde o despejo foi coletado.
 
-3.  Os caminhos de símbolo especificados na **Debugging**, **opções**, **símbolos** página do Visual Studio **ferramentas**, **opções**  caixa de diálogo. Você pode adicionar mais locais para pesquisa nessa página.
+3. Os caminhos de símbolo especificados na **Debugging**, **opções**, **símbolos** página do Visual Studio **ferramentas**, **opções**  caixa de diálogo. Você pode adicionar mais locais para pesquisa nessa página.
 
- **Usando nenhum binário > Símbolo > páginas de origem**
+   **Usando nenhum binário > Símbolo > páginas de origem**
 
- Se o Visual Studio não é possível localizar os arquivos necessários para depurar um módulo no despejo, ele exibe uma página apropriada (**nenhum binário encontrado**, **nenhum símbolo encontrado**, ou **nenhuma origem encontrada**). Essas páginas fornecem informações detalhadas sobre a causa do problema e fornecem links de ação que podem ajudar a identificar o local correto dos arquivos. Confira [Especificar arquivos de símbolo (.pdb) e de origem no Depurador do Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+   Se o Visual Studio não é possível localizar os arquivos necessários para depurar um módulo no despejo, ele exibe uma página apropriada (**nenhum binário encontrado**, **nenhum símbolo encontrado**, ou **nenhuma origem encontrada**). Essas páginas fornecem informações detalhadas sobre a causa do problema e fornecem links de ação que podem ajudar a identificar o local correto dos arquivos. Confira [Especificar arquivos de símbolo (.pdb) e de origem no Depurador do Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="see-also"></a>Consulte também
 

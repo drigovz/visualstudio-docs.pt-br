@@ -22,12 +22,12 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 853719e66bf7cd6a258bc2df231ca04fca7a9242
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186193"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884895"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Instruções passo a passo: depurando um aplicativo multithread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,17 +105,17 @@ Thread::Sleep(3000);
   
 #### <a name="to-discover-the-thread-marker"></a>Para descobrir o marcador de thread  
   
-1.  Com o botão direito no **Threads** janela, em seguida, clique em **Mostrar Threads em origem**.  
+1. Com o botão direito no **Threads** janela, em seguida, clique em **Mostrar Threads em origem**.  
   
-2.  Examine a medianiz no lado esquerdo da janela. Nessa linha, você verá um ícone semelhante a dois threads de pano. Um thread é vermelho e o outro é azul. O marcador de thread indica que um thread está parado nesse local. Possivelmente, o thread está parado nesse local.  
+2. Examine a medianiz no lado esquerdo da janela. Nessa linha, você verá um ícone semelhante a dois threads de pano. Um thread é vermelho e o outro é azul. O marcador de thread indica que um thread está parado nesse local. Possivelmente, o thread está parado nesse local.  
   
-3.  Passe o ponteiro sobre o marcador de thread. Um DataTip que aparece. O DataTip mostra o nome e o número de ID do thread para cada thread parado. Nesse caso, há apenas um thread, cujo nome é provavelmente `<noname>`.  
+3. Passe o ponteiro sobre o marcador de thread. Um DataTip que aparece. O DataTip mostra o nome e o número de ID do thread para cada thread parado. Nesse caso, há apenas um thread, cujo nome é provavelmente `<noname>`.  
   
-4.  Clique com o botão direito no marcador de thread. Observe as opções no menu de atalho.  
+4. Clique com o botão direito no marcador de thread. Observe as opções no menu de atalho.  
   
- Esse ícone é um *marcador de thread*:  
+   Esse ícone é um *marcador de thread*:  
   
- ![Marcador de thread](../debugger/media/threadmarker.gif "ThreadMarker")  
+   ![Marcador de thread](../debugger/media/threadmarker.gif "ThreadMarker")  
   
 ## <a name="flagging-and-unflagging-threads"></a>Sinalizando e removendo a sinalização de threads  
  No [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)], você pode sinalizar os threads para os quais deseja dar atenção especial. Sinalizar threads é uma boa maneira de manter o controle de threads importantes e ignorar threads com os quais você não precisa se preocupar.  

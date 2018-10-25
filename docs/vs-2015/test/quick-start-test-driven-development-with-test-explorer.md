@@ -13,12 +13,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 335219920a10816535f19e7fc21d856b1eb1cd06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a67f4f79688cb4cdbe482c90cd93b784349d748a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831686"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Início rápido: desenvolvimento orientado por testes com o Gerenciador de Testes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,33 +38,33 @@ ms.locfileid: "49212336"
   
 #### <a name="to-run-unit-tests-by-using-test-explorer"></a>Para executar testes de unidade usando o Gerenciador de Testes  
   
-1.  Crie testes de unidade que usam as estruturas de teste de sua escolha.  
+1. Crie testes de unidade que usam as estruturas de teste de sua escolha.  
   
-     Por exemplo, para criar um teste que usa a estrutura MSTest:  
+    Por exemplo, para criar um teste que usa a estrutura MSTest:  
   
-    1.  Criar um projeto de teste.  
+   1.  Criar um projeto de teste.  
   
-         Na caixa de diálogo **Novo Projeto**, expanda **Visual Basic**, **Visual C#** ou **Visual C++** e escolha **Teste**.  
+        Na caixa de diálogo **Novo Projeto**, expanda **Visual Basic**, **Visual C#** ou **Visual C++** e escolha **Teste**.  
   
-         Selecione **Projeto de teste de unidade**.  
+        Selecione **Projeto de teste de unidade**.  
   
-    2.  Grave cada teste de unidade como um método. Prefixe cada método de teste com o atributo `[TestMethod]`.  
+   2.  Grave cada teste de unidade como um método. Prefixe cada método de teste com o atributo `[TestMethod]`.  
   
-2.  Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o botão de alternância ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.  
+2. Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o botão de alternância ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.  
   
-3.  Na barra de menus, escolha **Teste**, **Executar testes de unidade**, **Todos os testes**.  
+3. Na barra de menus, escolha **Teste**, **Executar testes de unidade**, **Todos os testes**.  
   
-     A solução é criada e os testes são executados.  
+    A solução é criada e os testes são executados.  
   
-     O Gerenciador de Testes abre e exibe um resumo dos resultados.  
+    O Gerenciador de Testes abre e exibe um resumo dos resultados.  
   
- **Para ver uma lista completa de testes,** escolha **Mostrar Tudo** em qualquer categoria.  
+   **Para ver uma lista completa de testes,** escolha **Mostrar Tudo** em qualquer categoria.  
   
- **Para ver os detalhes de um resultado do teste:** selecione o teste no Gerenciador de Testes para exibir detalhes como mensagens de exceção no painel de detalhes.  
+   **Para ver os detalhes de um resultado do teste:** selecione o teste no Gerenciador de Testes para exibir detalhes como mensagens de exceção no painel de detalhes.  
   
- **Para navegar para o código de um teste,** clique duas vezes no teste no Gerenciador de Testes ou escolha **Abrir Teste** no menu de atalho.  
+   **Para navegar para o código de um teste,** clique duas vezes no teste no Gerenciador de Testes ou escolha **Abrir Teste** no menu de atalho.  
   
- **Para depurar um teste,** abra o menu de atalho para um ou mais testes e escolha **Depurar Testes Selecionados**.  
+   **Para depurar um teste,** abra o menu de atalho para um ou mais testes e escolha **Depurar Testes Selecionados**.  
   
 > [!IMPORTANT]
 >  Os resultados que são exibidos são para as execuções mais recentes. A barra colorida de resultados mostra somente os resultados dos testes que foram executados. Por exemplo, se você executar vários testes e alguns deles falharem e executar apenas os testes com sucesso, a barra de resultados mostrará todos na cor verde.  
@@ -77,61 +77,61 @@ ms.locfileid: "49212336"
   
 #### <a name="creating-the-test-and-method"></a>Criando o teste e o método  
   
-1.  Crie um projeto de biblioteca de classes do Visual C#. Esse projeto conterá o código que queremos fornecer. Neste exemplo, o nome usado é `MyMath`.  
+1. Crie um projeto de biblioteca de classes do Visual C#. Esse projeto conterá o código que queremos fornecer. Neste exemplo, o nome usado é `MyMath`.  
   
-2.  Criar um projeto de teste.  
+2. Criar um projeto de teste.  
   
-    -   Na caixa de diálogo **Novo Projeto**, escolha **Visual C#**, **Teste** e escolha **Projeto de Teste de Unidade**.  
+   -   Na caixa de diálogo **Novo Projeto**, escolha **Visual C#**, **Teste** e escolha **Projeto de Teste de Unidade**.  
   
-         ![Novos projetos de código e teste](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
+        ![Novos projetos de código e teste](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   
-3.  Escreva um método de teste básico. Verifique o resultado obtido para uma entrada específica:  
+3. Escreva um método de teste básico. Verifique o resultado obtido para uma entrada específica:  
   
-    ```csharp  
+   ```csharp  
   
-    [TestMethod]  
-    public void BasicRooterTest()  
-    {  
-      // Create an instance to test:  
-      Rooter rooter = new Rooter();  
-      // Define a test input and output value:  
-      double expectedResult = 2.0;  
-      double input = expectedResult * expectedResult;  
-      // Run the method under test:  
-      double actualResult = rooter.SquareRoot(input);  
-      // Verify the result:  
-      Assert.AreEqual(expectedResult, actualResult,  
-          delta: expectedResult / 100);  
-    }  
-    ```  
+   [TestMethod]  
+   public void BasicRooterTest()  
+   {  
+     // Create an instance to test:  
+     Rooter rooter = new Rooter();  
+     // Define a test input and output value:  
+     double expectedResult = 2.0;  
+     double input = expectedResult * expectedResult;  
+     // Run the method under test:  
+     double actualResult = rooter.SquareRoot(input);  
+     // Verify the result:  
+     Assert.AreEqual(expectedResult, actualResult,  
+         delta: expectedResult / 100);  
+   }  
+   ```  
   
-4.  Gere o método do teste.  
+4. Gere o método do teste.  
   
-    1.  Coloque o cursor em `Rooter`, em seguida, no menu de atalho, escolha **Gerar**, **Novo Tipo**.  
+   1.  Coloque o cursor em `Rooter`, em seguida, no menu de atalho, escolha **Gerar**, **Novo Tipo**.  
   
-    2.  Na caixa de diálogo **Gerar Novo Tipo**, defina **Projeto** para o projeto de biblioteca de classes. Neste exemplo, é `MyMath`.  
+   2.  Na caixa de diálogo **Gerar Novo Tipo**, defina **Projeto** para o projeto de biblioteca de classes. Neste exemplo, é `MyMath`.  
   
-    3.  Coloque o cursor em `SquareRoot`, em seguida, no menu de atalho, escolha **Gerar**, **Stub do método**.  
+   3.  Coloque o cursor em `SquareRoot`, em seguida, no menu de atalho, escolha **Gerar**, **Stub do método**.  
   
-5.  Execute o teste de unidade.  
+5. Execute o teste de unidade.  
   
-    1.  No menu **Teste**, escolha **Executar Testes de Unidade**, **Todos os Testes**.  
+   1.  No menu **Teste**, escolha **Executar Testes de Unidade**, **Todos os Testes**.  
   
-         A solução é criada e executada.  
+        A solução é criada e executada.  
   
-         O Gerenciador de Testes abre e exibe os resultados.  
+        O Gerenciador de Testes abre e exibe os resultados.  
   
-         Se um teste aparecer sob **Testes com Falha**.  
+        Se um teste aparecer sob **Testes com Falha**.  
   
-6.  Selecione o nome do teste.  
+6. Selecione o nome do teste.  
   
-     Os detalhes do teste são exibidos na parte inferior do Gerenciador de Testes.  
+    Os detalhes do teste são exibidos na parte inferior do Gerenciador de Testes.  
   
-7.  Selecione os itens em **Rastreamento de pilha** para ver onde o teste falhou.  
+7. Selecione os itens em **Rastreamento de pilha** para ver onde o teste falhou.  
   
- ![Gerenciador de Testes de unidade mostrando teste com falha.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
+   ![Gerenciador de Testes de unidade mostrando teste com falha.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
   
- Neste ponto, você criou um teste e um stub que você modificará para que o teste seja aprovado.  
+   Neste ponto, você criou um teste e um stub que você modificará para que o teste seja aprovado.  
   
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Após cada alteração, faça todos os testes serem aprovados  
   

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de6698f6e635a151a0f78eecbb90f4d7bd525969
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d6338044dff5aa5b0555b15b689c04ddd406c50f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151269"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887651"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Passo a passo: Fazer o Download de assemblies por demanda com a API de implantação do ClickOnce
 Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo são baixadas quando o aplicativo é executado pela primeira vez. No entanto, você pode ter partes de seu aplicativo que são usados por um pequeno conjunto de seus usuários. Nesse caso, você deseja baixar um assembly somente quando você cria um de seus tipos. A instrução a seguir demonstra como marcar determinados assemblies em seu aplicativo como "opcional", e como baixá-los usando as classes no <xref:System.Deployment.Application> namespace quando o common language runtime (CLR) requê-los.  
@@ -42,40 +42,40 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../depl
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly"></a>Para criar um projeto que usa um assembly sob demanda  
   
-1.  Crie um diretório chamado ClickOnceOnDemand.  
+1. Crie um diretório chamado ClickOnceOnDemand.  
   
-2.  Abra o Prompt de comando do Windows SDK ou o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Prompt de comando.  
+2. Abra o Prompt de comando do Windows SDK ou o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Prompt de comando.  
   
-3.  Altere para o diretório de ClickOnceOnDemand.  
+3. Altere para o diretório de ClickOnceOnDemand.  
   
-4.  Gere um par de chaves pública/privada usando o seguinte comando:  
+4. Gere um par de chaves pública/privada usando o seguinte comando:  
   
-    ```cmd  
-    sn -k TestKey.snk  
-    ```  
+   ```cmd  
+   sn -k TestKey.snk  
+   ```  
   
-5.  Usando o bloco de notas ou outro editor de texto, definir uma classe denominada `DynamicClass` com uma única propriedade chamada `Message`.  
+5. Usando o bloco de notas ou outro editor de texto, definir uma classe denominada `DynamicClass` com uma única propriedade chamada `Message`.  
   
-     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
-     [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]  
+    [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
+    [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]  
   
-6.  Salve o texto como um arquivo chamado *ClickOnceLibrary.cs* ou *ClickOnceLibrary.vb*, dependendo da linguagem que você usa, como o *ClickOnceOnDemand* directory.  
+6. Salve o texto como um arquivo chamado *ClickOnceLibrary.cs* ou *ClickOnceLibrary.vb*, dependendo da linguagem que você usa, como o *ClickOnceOnDemand* directory.  
   
-7.  Compile o arquivo em um assembly.  
+7. Compile o arquivo em um assembly.  
   
-    ```csharp  
-    csc /target:library /keyfile:TestKey.snk ClickOnceLibrary.cs  
-    ```  
+   ```csharp  
+   csc /target:library /keyfile:TestKey.snk ClickOnceLibrary.cs  
+   ```  
   
-    ```vb  
-    vbc /target:library /keyfile:TestKey.snk ClickOnceLibrary.vb  
-    ```  
+   ```vb  
+   vbc /target:library /keyfile:TestKey.snk ClickOnceLibrary.vb  
+   ```  
   
-8.  Para obter a chave pública token para o assembly, use o seguinte comando:  
+8. Para obter a chave pública token para o assembly, use o seguinte comando:  
   
-    ```cmd  
-    sn -T ClickOnceLibrary.dll  
-    ```  
+   ```cmd  
+   sn -T ClickOnceLibrary.dll  
+   ```  
   
 9. Criar um novo arquivo usando o texto de editor e insira o código a seguir. Esse código cria um aplicativo de formulários do Windows que baixa o assembly ClickOnceLibrary quando for necessário.  
   
@@ -118,15 +118,15 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../depl
   
 #### <a name="to-test-your-on-demand-assembly"></a>Para testar seu assembly sob demanda  
   
-1.  Carregue seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação em um servidor Web.  
+1. Carregue seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação em um servidor Web.  
   
-2.  Iniciar o aplicativo implantado com [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] em um navegador da Web, inserindo a URL e o manifesto de implantação. Se você chamar sua [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo `ClickOnceOnDemand`e carregá-lo para o diretório raiz da adatum.com, a URL teria esta aparência:  
+2. Iniciar o aplicativo implantado com [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] em um navegador da Web, inserindo a URL e o manifesto de implantação. Se você chamar sua [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo `ClickOnceOnDemand`e carregá-lo para o diretório raiz da adatum.com, a URL teria esta aparência:  
   
-    ```  
-    http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
-    ```  
+   ```  
+   http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
+   ```  
   
-3.  Quando o formulário principal é exibida, pressione a <xref:System.Windows.Forms.Button>. Você deve ver uma cadeia de caracteres em uma janela de caixa de mensagem que diz "Olá, mundo!".  
+3. Quando o formulário principal é exibida, pressione a <xref:System.Windows.Forms.Button>. Você deve ver uma cadeia de caracteres em uma janela de caixa de mensagem que diz "Olá, mundo!".  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:System.Deployment.Application.ApplicationDeployment>

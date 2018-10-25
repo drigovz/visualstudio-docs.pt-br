@@ -24,12 +24,12 @@ caps.latest.revision: 86
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 52d83911da0f8c1a54618a389db3cff6bbcbab1e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fafbccdae03c604e4d9b150b5745a75792833681
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245811"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834572"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Editar modelos e diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,22 +77,22 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
   
 ##  <a name="Creating"></a> Criar diagramas de modelagem UML  
   
-1.  Sobre o **arquitetura** menu no Visual Studio, clique em **UML novo ou diagrama de camada**.  
+1. Sobre o **arquitetura** menu no Visual Studio, clique em **UML novo ou diagrama de camada**.  
   
-2.  Selecione e nomeie seu diagrama.  
+2. Selecione e nomeie seu diagrama.  
   
-3.  Na **adicionar ao projeto de modelagem**, selecione um projeto de modelagem existente ou selecione **criar um novo projeto de modelagem**.  
+3. Na **adicionar ao projeto de modelagem**, selecione um projeto de modelagem existente ou selecione **criar um novo projeto de modelagem**.  
   
-    > [!NOTE]
-    >  Um diagrama de modelagem deve estar dentro de um projeto de modelagem.  
+   > [!NOTE]
+   >  Um diagrama de modelagem deve estar dentro de um projeto de modelagem.  
   
- Você também pode adicionar um diagrama em um projeto de modelagem existente no Gerenciador de soluções. Clique com botão direito no projeto de modelagem, aponte para **Add**e, em seguida, clique em **Novo Item**.  
+   Você também pode adicionar um diagrama em um projeto de modelagem existente no Gerenciador de soluções. Clique com botão direito no projeto de modelagem, aponte para **Add**e, em seguida, clique em **Novo Item**.  
   
 #### <a name="to-create-an-empty-uml-modeling-project"></a>Para criar um projeto de modelagem UML vazio  
   
--   No **arquivo** , aponte para **New**, clique em **projeto**e, no **novo projeto** caixa de diálogo, clique duas vezes em **de modelagem Projetos**.  
+- No **arquivo** , aponte para **New**, clique em **projeto**e, no **novo projeto** caixa de diálogo, clique duas vezes em **de modelagem Projetos**.  
   
- Para obter mais informações sobre como gerenciar projetos de modelagem, consulte [diagramas e projetos de modelagem UML criar](../modeling/create-uml-modeling-projects-and-diagrams.md).  
+  Para obter mais informações sobre como gerenciar projetos de modelagem, consulte [diagramas e projetos de modelagem UML criar](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 ##  <a name="Drawing"></a> Desenhar diagramas de modelagem UML  
  Um diagrama de modelagem exibe uma coleção de elementos de modelo vinculada por relações. Cada elemento é exibido como uma forma e cada relação é exibida como um conector entre duas formas.  
@@ -104,21 +104,21 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
   
 #### <a name="to-create-elements-and-relationships-in-a-uml-modeling-diagram"></a>Para criar elementos e relações em um diagrama de modelagem UML  
   
-1.  Para criar um elemento de modelo, clique em uma ferramenta de elemento na caixa de ferramentas e, em seguida, clique no diagrama de onde você deseja que ele apareça. Depois de criar o elemento, ajuste seu tamanho e forma arrastando suas alças.  
+1. Para criar um elemento de modelo, clique em uma ferramenta de elemento na caixa de ferramentas e, em seguida, clique no diagrama de onde você deseja que ele apareça. Depois de criar o elemento, ajuste seu tamanho e forma arrastando suas alças.  
   
-     Em alguns casos, você pode colocar um novo elemento dentro de outro elemento. Por exemplo, em um diagrama de classe UML, você pode colocar uma classe dentro de um pacote.  
+    Em alguns casos, você pode colocar um novo elemento dentro de outro elemento. Por exemplo, em um diagrama de classe UML, você pode colocar uma classe dentro de um pacote.  
   
-    > [!NOTE]
-    >  Se você não conseguir ver a caixa de ferramentas, clique em **caixa de ferramentas** sobre o **exibição** menu.  
+   > [!NOTE]
+   >  Se você não conseguir ver a caixa de ferramentas, clique em **caixa de ferramentas** sobre o **exibição** menu.  
   
-2.  Para criar uma relação, clique em uma ferramenta de relação, clique no elemento onde você deseja que a relação para iniciar e, em seguida, clique no elemento de onde você deseja que ele termine.  
+2. Para criar uma relação, clique em uma ferramenta de relação, clique no elemento onde você deseja que a relação para iniciar e, em seguida, clique no elemento de onde você deseja que ele termine.  
   
-     Diferentes tipos de relações podem iniciar ou terminar em diferentes tipos de elementos. Por exemplo, em um diagrama de classe UML, uma relação de associação não pode iniciar ou terminar em um elemento de comentário.  
+    Diferentes tipos de relações podem iniciar ou terminar em diferentes tipos de elementos. Por exemplo, em um diagrama de classe UML, uma relação de associação não pode iniciar ou terminar em um elemento de comentário.  
   
-    > [!NOTE]
-    >  Para usar a mesma ferramenta várias vezes, clique duas vezes a ferramenta. Quando você tiver terminado, clique o **ponteiro** ferramenta.  
+   > [!NOTE]
+   >  Para usar a mesma ferramenta várias vezes, clique duas vezes a ferramenta. Quando você tiver terminado, clique o **ponteiro** ferramenta.  
   
- Alguns tipos de diagramas, você também pode desenhar formas simples. Essas formas não são parte do modelo, mas você pode usá-los para chamar atenção para partes do diagrama ou dividi-la em áreas diferentes.  
+   Alguns tipos de diagramas, você também pode desenhar formas simples. Essas formas não são parte do modelo, mas você pode usá-los para chamar atenção para partes do diagrama ou dividi-la em áreas diferentes.  
   
 ##  <a name="Editing"></a> Edição de formas e conectores  
  Quando você redimensiona uma forma de cor ou redirecionar um conector, não há nenhum efeito sobre o modelo subjacente. No entanto, quando você renomeia uma forma no diagrama ou no Gerenciador de modelos UML, o elemento correspondente é renomeado no Gerenciador de modelos UML e em outros diagramas que apresentam esse elemento.  
@@ -139,17 +139,17 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
   
 #### <a name="to-move-one-end-of-a-connector-to-another-shape"></a>Para mover uma extremidade de um conector para outra forma  
   
-1.  Realize um dos seguintes procedimentos:  
+1. Realize um dos seguintes procedimentos:  
   
-    -   Pressione **CTRL** e move a extremidade.  
+   - Pressione **CTRL** e move a extremidade.  
   
      \- ou -  
   
-    -   O conector com o botão direito e, em seguida, clique em **reconectar**.  
+   - O conector com o botão direito e, em seguida, clique em **reconectar**.  
   
-2.  Clique no final do conector que você deseja mover.  
+2. Clique no final do conector que você deseja mover.  
   
-3.  Clique na forma que você deseja mover para o conector.  
+3. Clique na forma que você deseja mover para o conector.  
   
 #### <a name="to-change-color-or-other-properties-of-an-element-relationship-or-diagram"></a>Para alterar a cor ou outras propriedades de um elemento, relação, ou de diagrama  
   
@@ -267,11 +267,11 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
   
 #### <a name="to-copy-an-entire-diagram"></a>Para copiar o diagrama inteiro  
   
-1.  Crie um novo diagrama.  
+1. Crie um novo diagrama.  
   
-2.  Selecione todos os elementos em um diagrama existente, copiá-los e colá-los em um novo.  
+2. Selecione todos os elementos em um diagrama existente, copiá-los e colá-los em um novo.  
   
- Você não pode replicar um diagrama, copiando e colando no Gerenciador de soluções.  
+   Você não pode replicar um diagrama, copiando e colando no Gerenciador de soluções.  
   
 ##  <a name="Deleting"></a> A exclusão de um elemento de modelo ou seus modos de exibição  
  Alguns tipos de elementos, especificamente os classificadores, podem ser removidos de um diagrama sem excluí-las do modelo. Classificadores são os elementos principais que são exibidos em diagramas de classe, diagramas de componente e usam diagramas de caso. Eles podem aparecer em mais de um diagrama. Para esses tipos de elementos, há dois comandos separados: **remover do diagrama** e **excluir do modelo**.  
@@ -283,15 +283,15 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
   
 #### <a name="to-remove-a-classifiers-view-from-a-diagram"></a>Para remover o modo de exibição do classificador de um diagrama  
   
--   O elemento no diagrama com o botão direito e, em seguida, clique em **remover do diagrama**.  
+- O elemento no diagrama com o botão direito e, em seguida, clique em **remover do diagrama**.  
   
- \- ou -  
+  \- ou -  
   
--   Clique no elemento no diagrama e, em seguida, pressione a **excluir** chave.  
+- Clique no elemento no diagrama e, em seguida, pressione a **excluir** chave.  
   
-    -   Este modo de exibição do elemento desaparece. No entanto, o elemento permanece no modelo, e você ainda pode encontrá-lo no **Gerenciador de modelos UML**. Outros modos de exibição do mesmo elemento também permanecem.  
+  -   Este modo de exibição do elemento desaparece. No entanto, o elemento permanece no modelo, e você ainda pode encontrá-lo no **Gerenciador de modelos UML**. Outros modos de exibição do mesmo elemento também permanecem.  
   
-    -   Cada conector que termina nessa forma é removida do diagrama, mas a relação que ele representa permanece no modelo. Você pode ver a relação na **Gerenciador de modelos UML** sob **relações**, em cada elemento que ele se conecta.  
+  -   Cada conector que termina nessa forma é removida do diagrama, mas a relação que ele representa permanece no modelo. Você pode ver a relação na **Gerenciador de modelos UML** sob **relações**, em cada elemento que ele se conecta.  
   
 #### <a name="to-delete-an-element-from-the-model"></a>Para excluir um elemento do modelo  
   

@@ -22,12 +22,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 1807efdefd387c4e4fa01c2acec0f7b32bbce6f8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 733eb98544d48716ec073605d68628ddeab7b794
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215911"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827578"
 ---
 # <a name="trusted-application-deployment-overview"></a>Visão geral da implantação de aplicativos confiáveis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,11 +57,11 @@ Este tópico fornece uma visão geral de como implantar [!INCLUDE[ndptecclick](.
   
  Em organizações maiores, o publicador e o implantador são frequentemente duas entidades separadas:  
   
--   O publicador é o grupo que cria o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo.  
+- O publicador é o grupo que cria o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo.  
   
--   O implantador é o grupo, normalmente o departamento de TI (tecnologia) de informações, que distribui [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo em computadores de área de trabalho corporativa.  
+- O implantador é o grupo, normalmente o departamento de TI (tecnologia) de informações, que distribui [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo em computadores de área de trabalho corporativa.  
   
- Você deve seguir estas etapas para tirar proveito da implantação de aplicativos confiáveis:  
+  Você deve seguir estas etapas para tirar proveito da implantação de aplicativos confiáveis:  
   
 1.  Obter um certificado para o publicador.  
   

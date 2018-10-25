@@ -25,12 +25,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ebe9a7d566c1e5b7748f02817564a58fa7eae934
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6d869e3e6be26db871deb3afc7bc398025cc15d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862353"
 ---
 # <a name="how-to-stop-code-changes"></a>Como parar as alterações de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Quando Editar e Continuar estiver no processo de aplicar alterações de código
   
 ### <a name="to-stop-applying-code-changes"></a>Para parar de aplicar alterações de código  
   
--   Escolher **parar de aplicar alterações de código** da **depurar** menu.  
+- Escolher **parar de aplicar alterações de código** da **depurar** menu.  
   
- Este item de menu está visível apenas quando as alterações de código estão sendo aplicadas.  
+  Este item de menu está visível apenas quando as alterações de código estão sendo aplicadas.  
   
- Se você escolher esta opção, nenhuma das alterações de código serão confirmadas.  
+  Se você escolher esta opção, nenhuma das alterações de código serão confirmadas.  
   
 ## <a name="see-also"></a>Consulte também  
  [Editar e continuar](../debugger/edit-and-continue.md)   

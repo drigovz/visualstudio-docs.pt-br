@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f49e2e9e23f19a4346080b0e59435128e33849d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833181"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Passo a passo: Criar um modelo usando os controles de conteúdo
   Este passo a passo demonstra como criar uma personalização no nível de documento que usa controles de conteúdo para criar conteúdo reutilizável e não estruturados em um modelo do Microsoft Office Word.  
@@ -35,17 +35,17 @@ ms.locfileid: "35670098"
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Criando tabelas que contêm o conteúdo de uma palavra controla modelo em tempo de design.  
+- Criando tabelas que contêm o conteúdo de uma palavra controla modelo em tempo de design.  
   
--   Preenchendo um controle de conteúdo de caixa de combinação e um controle de lista suspensa de conteúdo por meio de programação.  
+- Preenchendo um controle de conteúdo de caixa de combinação e um controle de lista suspensa de conteúdo por meio de programação.  
   
--   Impedindo que os usuários da edição de uma tabela especificada.  
+- Impedindo que os usuários da edição de uma tabela especificada.  
   
--   Adicionando tabelas para a coleção de blocos de construção de um modelo.  
+- Adicionando tabelas para a coleção de blocos de construção de um modelo.  
   
--   Criando um controle de conteúdo que exibe os blocos de construção disponíveis no modelo.  
+- Criando um controle de conteúdo que exibe os blocos de construção disponíveis no modelo.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
@@ -68,31 +68,31 @@ ms.locfileid: "35670098"
   
 ### <a name="to-create-the-employee-table"></a>Para criar a tabela employee  
   
-1.  No modelo do Word que está hospedado na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, na faixa de opções, clique em de **inserir** guia.  
+1. No modelo do Word que está hospedado na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, na faixa de opções, clique em de **inserir** guia.  
   
-2.  No **tabelas** , clique em **tabela**e inserir uma tabela com duas colunas e quatro linhas.  
+2. No **tabelas** , clique em **tabela**e inserir uma tabela com duas colunas e quatro linhas.  
   
-3.  Digite o texto na primeira coluna, para que ele fique parecido com a coluna a seguir:  
+3. Digite o texto na primeira coluna, para que ele fique parecido com a coluna a seguir:  
   
-    ||  
-    |-|  
-    |**Nome do funcionário**|  
-    |**Data de contratação**|  
-    |**Título**|  
-    |**Imagem**|  
+   ||  
+   |-|  
+   |**Nome do funcionário**|  
+   |**Data de contratação**|  
+   |**Título**|  
+   |**Imagem**|  
   
-4.  Clique na primeira célula na segunda coluna (lado **nome do funcionário**).  
+4. Clique na primeira célula na segunda coluna (lado **nome do funcionário**).  
   
-5.  Na faixa de opções, clique no **desenvolvedor** guia.  
+5. Na faixa de opções, clique no **desenvolvedor** guia.  
   
-    > [!NOTE]  
-    >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, consulte [como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   > [!NOTE]  
+   >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, consulte [como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  No **controles** , clique no **texto** botão ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>para a primeira célula.  
+6. No **controles** , clique no **texto** botão ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>para a primeira célula.  
   
-7.  Clique na segunda célula na segunda coluna (lado **data de contratação**).  
+7. Clique na segunda célula na segunda coluna (lado **data de contratação**).  
   
-8.  No **controles** , clique no **selecionador de data** botão ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> segunda célula.  
+8. No **controles** , clique no **selecionador de data** botão ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> segunda célula.  
   
 9. Clique na terceira célula na segunda coluna (lado **título**).  
   
@@ -107,27 +107,27 @@ ms.locfileid: "35670098"
   
 ### <a name="to-create-the-customer-feedback-table"></a>Para criar a tabela de comentários do cliente  
   
-1.  No modelo do Word, clique na linha após a tabela de funcionários que você adicionou anteriormente e pressione **Enter** para adicionar um novo parágrafo.  
+1. No modelo do Word, clique na linha após a tabela de funcionários que você adicionou anteriormente e pressione **Enter** para adicionar um novo parágrafo.  
   
-2.  Na faixa de opções, clique no **inserir** guia.  
+2. Na faixa de opções, clique no **inserir** guia.  
   
-3.  No **tabelas** , clique em **tabela**e inserir uma tabela com duas colunas e três linhas.  
+3. No **tabelas** , clique em **tabela**e inserir uma tabela com duas colunas e três linhas.  
   
-4.  Digite o texto na primeira coluna, para que ele fique parecido com a coluna a seguir:  
+4. Digite o texto na primeira coluna, para que ele fique parecido com a coluna a seguir:  
   
-    ||  
-    |-|  
-    |**Nome do cliente**|  
-    |**Classificação de satisfação**|  
-    |**Comentários**|  
+   ||  
+   |-|  
+   |**Nome do cliente**|  
+   |**Classificação de satisfação**|  
+   |**Comentários**|  
   
-5.  Clique na primeira célula da segunda coluna (lado **Customer Name**).  
+5. Clique na primeira célula da segunda coluna (lado **Customer Name**).  
   
-6.  Na faixa de opções, clique no **desenvolvedor** guia.  
+6. Na faixa de opções, clique no **desenvolvedor** guia.  
   
-7.  No **controles** , clique no **texto** botão ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>para a primeira célula.  
+7. No **controles** , clique no **texto** botão ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>para a primeira célula.  
   
-8.  Clique na segunda célula da segunda coluna (lado **classificação de satisfação**).  
+8. Clique na segunda célula da segunda coluna (lado **classificação de satisfação**).  
   
 9. No **controles** , clique no **lista suspensa** botão ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> segunda célula.  
   

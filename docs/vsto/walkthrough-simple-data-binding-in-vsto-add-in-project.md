@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8903f18a578c9365b34ea420706b4e9f41fd2b1c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4710dea4e194328a226f0e9d76b236d3e30e97bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890225"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Passo a passo: Associação de dados simples no projeto de suplemento do VSTO
 
@@ -74,27 +74,27 @@ Use o **fontes de dados** janela para adicionar um conjunto de dados tipado ao s
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Para adicionar um dataset tipado ao projeto
 
-1.  Se o **fontes de dados** janela não estiver visível, exibi-lo, na barra de menus, escolhendo **exibição** > **Other Windows**  >   **Fontes de dados**.
+1. Se o **fontes de dados** janela não estiver visível, exibi-lo, na barra de menus, escolhendo **exibição** > **Other Windows**  >   **Fontes de dados**.
 
-2.  Escolher **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.
+2. Escolher **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.
 
-3.  Clique em **banco de dados**e, em seguida, clique em **próxima**.
+3. Clique em **banco de dados**e, em seguida, clique em **próxima**.
 
-4.  Se você tiver uma conexão existente para o `AdventureWorksLT` do banco de dados, escolha essa conexão e clique em **próxima**.
+4. Se você tiver uma conexão existente para o `AdventureWorksLT` do banco de dados, escolha essa conexão e clique em **próxima**.
 
-     Caso contrário, clique em **nova Conexão**e usar o **Adicionar Conexão** caixa de diálogo para criar a nova conexão. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).
+    Caso contrário, clique em **nova Conexão**e usar o **Adicionar Conexão** caixa de diálogo para criar a nova conexão. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).
 
-5.  No **salvar a cadeia de Conexão no arquivo de configuração de aplicativo** , clique em **próxima**.
+5. No **salvar a cadeia de Conexão no arquivo de configuração de aplicativo** , clique em **próxima**.
 
-6.  No **Choose Your Database Objects** página, expanda **tabelas** e selecione **cliente (SalesLT)**.
+6. No **Choose Your Database Objects** página, expanda **tabelas** e selecione **cliente (SalesLT)**.
 
-7.  Clique em **Finalizar**.
+7. Clique em **Finalizar**.
 
-     O *Adventureworksltdataset* arquivo é adicionado ao **Gerenciador de soluções**. Esse arquivo define os seguintes itens:
+    O *Adventureworksltdataset* arquivo é adicionado ao **Gerenciador de soluções**. Esse arquivo define os seguintes itens:
 
-    -   Um dataset tipado chamado `AdventureWorksLTDataSet`. Esse conjunto de dados representa o conteúdo do **Customer (SalesLT)** tabela no banco de dados AdventureWorksLT.
+   - Um dataset tipado chamado `AdventureWorksLTDataSet`. Esse conjunto de dados representa o conteúdo do **Customer (SalesLT)** tabela no banco de dados AdventureWorksLT.
 
-    -   Um TableAdapter nomeado `CustomerTableAdapter`. Este TableAdapter pode ser usado para ler e gravar dados no `AdventureWorksLTDataSet`. Para obter mais informações, consulte [visão geral de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+   - Um TableAdapter nomeado `CustomerTableAdapter`. Este TableAdapter pode ser usado para ler e gravar dados no `AdventureWorksLTDataSet`. Para obter mais informações, consulte [visão geral de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
      Você usará dois desses objetos posteriormente neste passo a passo.
 

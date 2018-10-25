@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 1a9d47431497f05fd5538510b39b44298587dd0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d77d63cc82b7af6281183b3eae67d09b0454fffb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287359"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868255"
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Instruções passo a passo: criando um conjunto de dados com o Designer de Conjunto de Dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Neste passo a passo, você irá criar um conjunto de dados usando o **Dataset De
   
  As tarefas ilustradas neste passo a passo incluem:  
   
--   Criando um novo **aplicativo do Windows** projeto.  
+- Criando um novo **aplicativo do Windows** projeto.  
   
--   Adicionando um vazio **conjunto de dados** item ao projeto.  
+- Adicionando um vazio **conjunto de dados** item ao projeto.  
   
--   Criar e configurar uma fonte de dados em seu aplicativo, criando um dataset com o **Dataset Designer**.  
+- Criar e configurar uma fonte de dados em seu aplicativo, criando um dataset com o **Dataset Designer**.  
   
--   Criando uma conexão para o banco de dados Northwind **Gerenciador de servidores**.  
+- Criando uma conexão para o banco de dados Northwind **Gerenciador de servidores**.  
   
--   Criando tabelas com TableAdapters no conjunto de dados com base em tabelas no banco de dados.  
+- Criando tabelas com TableAdapters no conjunto de dados com base em tabelas no banco de dados.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para concluir este passo a passo, você precisará de:  

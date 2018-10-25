@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26985893ae5a6431743564e28793957ecf0f9e01
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: de5329d05ebc8dcfe9d9970c353d573835fc5d00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756808"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866383"
 ---
 # <a name="trycatch-activity-designer"></a>Designer de atividade de TryCatch
 
@@ -42,7 +42,7 @@ O **TryCatch** designer não oferece suporte à edição **Catch**. Se você qui
 A tabela a seguir mostra o <xref:System.Activities.Statements.TryCatch>propriedades e descreve como elas são usadas no designer.
 
 |Nome da Propriedade|Necessária|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica o nome amigável opcional de atividade de <xref:System.Activities.Statements.TryCatch> . O padrão é TryCatch.|
 |<xref:System.Activities.Statements.TryCatch.Try%2A>|False|A atividade executada primeiro quando <xref:System.Activities.Statements.TryCatch> executar.|
 |<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|A coleção de **Catch** elementos a ser verificado quando o <xref:System.Activities.Statements.TryCatch.Try%2A> atividade lançará uma exceção.<br /><br /> Você precisa pelo menos de adicionar uma atividade em <xref:System.Activities.Statements.TryCatch.Catches%2A> ou uma atividade no bloco de <xref:System.Activities.Statements.TryCatch.Finally%2A> .|

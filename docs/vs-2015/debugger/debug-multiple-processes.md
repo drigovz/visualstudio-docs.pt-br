@@ -25,12 +25,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c3bbd49aeab7df414d558a8841a55d982d8d2595
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c321ec5cc69689dbe251b10da2e985e5511813d5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829347"
 ---
 # <a name="debug-multiple-processes"></a>Depurar vários processos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,11 +51,11 @@ Veja como iniciar processos de depuração, alternar entre processos, interrompe
 ##  <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a> Configurar o comportamento de execução de vários processos  
  Por padrão, quando vários processos são executados no depurador, os comandos de quebra, avanço e interrupção do depurador geralmente afetam todos os processos. Por exemplo, quando um processo é suspenso em um ponto de interrupção, a execução de todos outros processos é suspendida também. Você pode alterar esse comportamento padrão para obter mais controle sobre os destinos dos comandos de execução.  
   
-1.  Sobre o **Debug** menu, escolha **opções e configurações**.  
+1. Sobre o **Debug** menu, escolha **opções e configurações**.  
   
-2.  Sobre o **Debugging**, **geral** página, desmarque o **interromper todos os processos quando um processo for interrompido** caixa de seleção.  
+2. Sobre o **Debugging**, **geral** página, desmarque o **interromper todos os processos quando um processo for interrompido** caixa de seleção.  
   
- ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
+   ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
 ##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Localizar a origem e o símbolo arquivos (. PDB)  
  Para navegar no código-fonte de um processo, o depurador precisa acessar os arquivos de origem e os arquivos do símbolo do processo. Confira [Especificar arquivos de símbolo (.pdb) e de origem no Depurador do Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
@@ -70,11 +70,11 @@ Veja como iniciar processos de depuração, alternar entre processos, interrompe
   
 > [!NOTE]
 >  O depurador não é anexado automaticamente a um processo filho que é inicializado por um processo depurado, mesmo se o projeto filho estiver na mesma solução. Para depurar um processo filho:  
->   
->  -   Anexar ao processo filho depois que for iniciado.  
->   
->      -ou-  
-> -   Configurar o Windows para iniciar automaticamente o processo filho em uma nova instância do depurador.  
+> 
+> - Anexar ao processo filho depois que for iniciado.  
+> 
+>   -ou-  
+>   -   Configurar o Windows para iniciar automaticamente o processo filho em uma nova instância do depurador.  
   
 ###  <a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a> Iniciar a depuração de vários processos em uma solução do Visual Studio  
  Quando você tiver mais de um projeto em uma solução do Visual Studio que pode executar de forma independente (projetos que são executados em processos separados), será possível selecionar quais projetos o depurador inicia.  
@@ -93,15 +93,15 @@ Veja como iniciar processos de depuração, alternar entre processos, interrompe
   
 ####  <a name="BKMK_Start_multiple_projects_in_a_solution"></a> Iniciar vários projetos em uma solução  
   
-1.  Selecione a solução no Gerenciador de soluções e, em seguida, escolha **propriedades** no menu de contexto.  
+1. Selecione a solução no Gerenciador de soluções e, em seguida, escolha **propriedades** no menu de contexto.  
   
-2.  Selecione **propriedades comuns**, **projeto de inicialização** sobre o **propriedades** caixa de diálogo.  
+2. Selecione **propriedades comuns**, **projeto de inicialização** sobre o **propriedades** caixa de diálogo.  
   
-3.  Para cada projeto que você deseja alterar, escolha **inicie**, **iniciar sem depuração**, ou **None**.  
+3. Para cada projeto que você deseja alterar, escolha **inicie**, **iniciar sem depuração**, ou **None**.  
   
- ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [iniciar vários processos em uma solução VS, anexar a um processo, iniciar automaticamente um processo no depurador](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
+   ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [iniciar vários processos em uma solução VS, anexar a um processo, iniciar automaticamente um processo no depurador](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
   
- ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
+   ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
 ###  <a name="BKMK_Attach_to_a_process"></a> Anexar a um processo  
  O depurador também pode ser *anexar* para programas que são executados em processos fora do Visual Studio, incluindo programas que estão sendo executados em um dispositivo remoto. Após vincular-se a um programa, você poderá usar comandos de execução do depurador, inspecionar o estado do programa e assim por diante. A capacidade de inspecionar o programa pode ser limitada se o programa foi criado com informações de depuração, se você tem acesso ao código-fonte do programa, e se o compilador just-in-time (JIT) do Common Language Runtime está controlando as informações de depuração.  
@@ -119,27 +119,27 @@ Veja como iniciar processos de depuração, alternar entre processos, interrompe
 ###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Iniciar automaticamente um processo no depurador  
  Às vezes, pode ser necessário depurar o código de inicialização para um programa que foi iniciado por outro processo. Os exemplos incluem serviços e ações de configuração personalizada. Nesses cenários, você poderá fazer com que o depurador seja iniciado e automaticamente anexado quando seu aplicativo iniciar.  
   
-1.  Inicie o Editor do registro (**regedit.exe**).  
+1. Inicie o Editor do registro (**regedit.exe**).  
   
-2.  Navegue até a **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options** pasta.  
+2. Navegue até a **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options** pasta.  
   
-3.  Selecione a pasta do aplicativo que você deseja iniciar o depurador.  
+3. Selecione a pasta do aplicativo que você deseja iniciar o depurador.  
   
-     Se o nome do aplicativo não estiver listado como uma pasta filho, selecione **Image File Execution Options** e, em seguida, escolha **New**, **chave** no menu de contexto. Selecione a nova chave, escolha **Renomear** no menu de atalho e, em seguida, insira o nome do aplicativo.  
+    Se o nome do aplicativo não estiver listado como uma pasta filho, selecione **Image File Execution Options** e, em seguida, escolha **New**, **chave** no menu de contexto. Selecione a nova chave, escolha **Renomear** no menu de atalho e, em seguida, insira o nome do aplicativo.  
   
-4.  No menu de contexto da pasta do aplicativo, escolha **New**, **valor de cadeia de caracteres**.  
+4. No menu de contexto da pasta do aplicativo, escolha **New**, **valor de cadeia de caracteres**.  
   
-5.  Altere o nome do novo valor de **novo valor** para `debugger`.  
+5. Altere o nome do novo valor de **novo valor** para `debugger`.  
   
-6.  No menu de contexto da entrada do depurador, escolha **modificar**.  
+6. No menu de contexto da entrada do depurador, escolha **modificar**.  
   
-7.  Na caixa de diálogo Editar cadeia de caracteres, digite `vsjitdebugger.exe` no **dados de valor** caixa.  
+7. Na caixa de diálogo Editar cadeia de caracteres, digite `vsjitdebugger.exe` no **dados de valor** caixa.  
   
-     ![Editar caixa de diálogo de cadeia de caracteres](../debugger/media/dbg-execution-automaticstart-editstringdlg.png "DBG_Execution_AutomaticStart_EditStringDlg")  
+    ![Editar caixa de diálogo de cadeia de caracteres](../debugger/media/dbg-execution-automaticstart-editstringdlg.png "DBG_Execution_AutomaticStart_EditStringDlg")  
   
- ![Depurador automático começar a entrada em regedit.exe](../debugger/media/dbg-execution-automaticstart-result.png "DBG_Execution_AutomaticStart_Result")  
+   ![Depurador automático começar a entrada em regedit.exe](../debugger/media/dbg-execution-automaticstart-result.png "DBG_Execution_AutomaticStart_Result")  
   
- ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
+   ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
 ##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Alternar entre processos, interromper e continuar a execução, percorrer o código-fonte  
   
@@ -150,23 +150,23 @@ Veja como iniciar processos de depuração, alternar entre processos, interrompe
   
  **Para definir o processo atual**  
   
--   Na barra de ferramentas local de depuração, escolha **processo** para exibir o **processo** caixa de listagem. Selecione o processo que você deseja designar como o processo atual.  
+- Na barra de ferramentas local de depuração, escolha **processo** para exibir o **processo** caixa de listagem. Selecione o processo que você deseja designar como o processo atual.  
   
-     ![Alternar entre processos](../debugger/media/dbg-execution-switchbetweenmodules.png "DBG_Execution_SwitchBetweenModules")  
+   ![Alternar entre processos](../debugger/media/dbg-execution-switchbetweenmodules.png "DBG_Execution_SwitchBetweenModules")  
   
-     Se o **local de depuração** barra de ferramentas não estiver visível, escolha **ferramentas**, **personalizar**. Sobre o **barras de ferramentas** guia, escolha **local de depuração**.  
+   Se o **local de depuração** barra de ferramentas não estiver visível, escolha **ferramentas**, **personalizar**. Sobre o **barras de ferramentas** guia, escolha **local de depuração**.  
   
--   Abra o **processos** janela (atalho **Ctrl + Alt + Z**), localize o processo que você deseja definir como o processo atual e clique duas vezes nele.  
+- Abra o **processos** janela (atalho **Ctrl + Alt + Z**), localize o processo que você deseja definir como o processo atual e clique duas vezes nele.  
   
-     ![Janela de processos](../debugger/media/dbg-processeswindow.png "DBG_ProcessesWindow")  
+   ![Janela de processos](../debugger/media/dbg-processeswindow.png "DBG_ProcessesWindow")  
   
-     O processo atual é marcado por uma seta amarela.  
+   O processo atual é marcado por uma seta amarela.  
   
- Alternar para um projeto o torna o processo atual para fins de depuração. Qualquer janela do depurador que você exibir mostrará o estado do processo atual e todos os comandos das etapas afetarão somente o processo atual.  
+  Alternar para um projeto o torna o processo atual para fins de depuração. Qualquer janela do depurador que você exibir mostrará o estado do processo atual e todos os comandos das etapas afetarão somente o processo atual.  
   
- ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [alternar entre processos, interromper e continuar a execução, percorrer o código-fonte](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
+  ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [alternar entre processos, interromper e continuar a execução, percorrer o código-fonte](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
   
- ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
+  ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
 ###  <a name="BKMK_Break__step__and_continue_commands"></a> Interromper, depurar e continuar comandos  
   
@@ -191,15 +191,15 @@ Veja como iniciar processos de depuração, alternar entre processos, interrompe
   
 ##  <a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a> Parar a depuração, finalizar ou desanexar dos processos  
   
--   [Parar, finalizar e desanexar comandos](#BKMK_Stop__terminate__and_detach_commands)  
+- [Parar, finalizar e desanexar comandos](#BKMK_Stop__terminate__and_detach_commands)  
   
- Por padrão, quando você escolhe **Debug**, **parar depuração** quando vários processos estão abertos no depurador, o depurador encerra ou dispara de todos os processos, dependendo de como o processo foi aberto no depurador:  
+  Por padrão, quando você escolhe **Debug**, **parar depuração** quando vários processos estão abertos no depurador, o depurador encerra ou dispara de todos os processos, dependendo de como o processo foi aberto no depurador:  
   
--   Se o processo atual foi iniciado no depurador, esse processo é finalizado.  
+- Se o processo atual foi iniciado no depurador, esse processo é finalizado.  
   
--   Se você já anexou o depurador ao processo atual, o depurador será desanexado do processo e o deixará em execução.  
+- Se você já anexou o depurador ao processo atual, o depurador será desanexado do processo e o deixará em execução.  
   
- Por exemplo, se você iniciar a depuração de um processo de uma solução do Visual Studio, anexe a outro processo já está em execução e, em seguida, escolha **parar depuração**, a sessão de depuração termina, o processo que foi iniciado no Visual Studio é finalizado, enquanto o processo que você anexou permanecerá em execução. Você pode usar os seguintes procedimentos para controlar a maneira que você interrompe a depuração.  
+  Por exemplo, se você iniciar a depuração de um processo de uma solução do Visual Studio, anexe a outro processo já está em execução e, em seguida, escolha **parar depuração**, a sessão de depuração termina, o processo que foi iniciado no Visual Studio é finalizado, enquanto o processo que você anexou permanecerá em execução. Você pode usar os seguintes procedimentos para controlar a maneira que você interrompe a depuração.  
   
 > [!NOTE]
 >  O **interromper todos os processos quando um processo for interrompido** opção não afeta a interrupção de depuração ou encerramento e desanexação dos processos.  

@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dbac1e67e5b23f277d2698c0cb1a959918c32372
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8a21067eab6e55f3fb031e57fa2257b0d40a7eb6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860492"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886455"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personalizar o armazenamento de arquivos e a serialização XML
 
@@ -301,7 +301,7 @@ Nós de propriedade XML estão localizadas sob os nós de classe.
 Nós de dados de função são encontradas sob os nós de classe de origem.
 
 |Propriedade|Descrição|
-|--------------|-----------------|
+|-|-|
 |Tem o Moniker personalizado|Defina como verdadeiro se desejar fornecer seu próprio código para gerar e resolvendo monikers que atravessam a essa relação.<br /><br /> Para obter instruções detalhadas, compile a solução e, em seguida, clique duas vezes as mensagens de erro.|
 |Relacionamento de domínio|Especifica a relação ao qual essas opções se aplicam. Somente leitura.|
 |Omitir um elemento|Se for true, o nó XML que corresponde à função de origem é omitido do esquema.<br /><br /> Se houver mais de uma relação entre as classes de origem e destino, este nó de função faz distinção entre os links que pertencem a duas relações. Portanto, recomendamos que você não defina essa opção nesse caso.|

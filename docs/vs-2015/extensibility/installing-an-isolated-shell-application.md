@@ -16,34 +16,34 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3c19f48ffe00f3c824dc5085910b0319bc3c184
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7722132a81c63902450edd85ef90bde94ad94744
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257342"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880491"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalação de um aplicativo de Shell isolado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para instalar um aplicativo de Shell, você deve executar as etapas a seguir.  
   
--   Prepare a sua solução.  
+- Prepare a sua solução.  
   
--   Crie um pacote do Windows Installer (MSI) para seu aplicativo.  
+- Crie um pacote do Windows Installer (MSI) para seu aplicativo.  
   
--   Crie um bootstrapper de instalação.  
+- Crie um bootstrapper de instalação.  
   
- Todo o código de exemplo neste documento é proveniente de [exemplo de implantação do Shell](http://go.microsoft.com/fwlink/?LinkId=262245), que pode ser baixado da Galeria de código no site do MSDN. O exemplo mostra os resultados da execução de cada uma dessas etapas.  
+  Todo o código de exemplo neste documento é proveniente de [exemplo de implantação do Shell](http://go.microsoft.com/fwlink/?LinkId=262245), que pode ser baixado da Galeria de código no site do MSDN. O exemplo mostra os resultados da execução de cada uma dessas etapas.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para executar os procedimentos descritos neste tópico, as ferramentas a seguir devem ser instaladas em seu computador.  
   
--   SDK do Visual Studio  
+- SDK do Visual Studio  
   
--   O [conjunto de ferramentas do Windows Installer XML](http://go.microsoft.com/fwlink/?LinkId=82720) versão 3.6  
+- O [conjunto de ferramentas do Windows Installer XML](http://go.microsoft.com/fwlink/?LinkId=82720) versão 3.6  
   
- O exemplo também requer o Microsoft Visualization e o SDK de modelagem, que nem todos os shells exigem.  
+  O exemplo também requer o Microsoft Visualization e o SDK de modelagem, que nem todos os shells exigem.  
   
 ## <a name="preparing-your-solution"></a>Preparando sua solução  
  Por padrão, os modelos de Shell compilar para pacotes VSIX, mas esse comportamento é destinado principalmente para fins de depuração. Quando você implanta um aplicativo do Shell, você deve usar pacotes do MSI para permitir que o acesso ao registro e reinicializações durante a instalação. Para preparar seu aplicativo para implantação de MSI, execute as seguintes etapas.  

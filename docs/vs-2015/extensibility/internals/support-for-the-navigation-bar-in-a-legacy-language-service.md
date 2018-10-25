@@ -16,12 +16,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b731f10a30f20e3c5a9670a91400e86be004852e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7105299956a338d0dd4a637b404f9ccad2447662
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267365"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839135"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Suporte para a barra de navegação em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,11 +69,11 @@ namespace TestLanguagePackage
   
  A seleção que as alterações nos tipos de lista suspensa, a lista de membros deve ser atualizada para refletir o novo tipo de. O que é mostrado na lista de membros pode ser:  
   
--   A lista de membros para o tipo atual.  
+- A lista de membros para o tipo atual.  
   
--   Todos os membros disponíveis na fonte de arquivo, mas com todos os membros não no tipo atual exibido no texto acinzentado. O usuário ainda pode selecionar os membros esmaecida, portanto, eles podem ser usados para navegação rápida, mas a cor indica que não são parte do tipo selecionado no momento.  
+- Todos os membros disponíveis na fonte de arquivo, mas com todos os membros não no tipo atual exibido no texto acinzentado. O usuário ainda pode selecionar os membros esmaecida, portanto, eles podem ser usados para navegação rápida, mas a cor indica que não são parte do tipo selecionado no momento.  
   
- Uma implementação do <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> método normalmente executa as seguintes etapas:  
+  Uma implementação do <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> método normalmente executa as seguintes etapas:  
   
 1.  Obter uma lista de declarações atuais para o arquivo de origem.  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 07675d7d6d592a83848b8af02031a573350c35f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01e583db3bb5b5aff6608b4028636823b4ca857c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244758"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844699"
 ---
 # <a name="switchlttgt-activity-designer"></a>Comutador&lt;T&gt; Designer de atividade
 A atividade de <xref:System.Activities.Statements.Switch%601> avalia uma expressão especificada e executa a atividade de uma coleção de atividades cuja chave associado corresponde ao valor obtido de avaliação.  
@@ -50,11 +50,11 @@ A atividade de <xref:System.Activities.Statements.Switch%601> avalia uma express
   
  Existem 2 maneiras de excluir casos:  
   
-1.  Selecione os casos e excluir-los.  
+1. Selecione os casos e excluir-los.  
   
-2.  Selecione o botão direito do mouse nesse caso, para exibir o menu de contexto e selecione **excluir**.  
+2. Selecione o botão direito do mouse nesse caso, para exibir o menu de contexto e selecione **excluir**.  
   
- Observe que você deve selecionar os casos os próprios para excluir. Selecionando e excluindo a atividade dentro de um caso exclui somente a atividade não os casos.  
+   Observe que você deve selecionar os casos os próprios para excluir. Selecionando e excluindo a atividade dentro de um caso exclui somente a atividade não os casos.  
   
 ## <a name="see-also"></a>Consulte também  
  [Fluxo de Controle](../workflow-designer/control-flow-activity-designers.md)

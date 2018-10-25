@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 293df108dd0fc8671c1d11a2b336af32369aa9f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fe051a37c610fcfd3c99f2ab762982065c5caf56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281444"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824432"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Introdução à depuração no Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,15 +153,15 @@ Visual Studio 2015 fornece um poderoso conjunto integrado de ferramentas de depu
   
  Os usos comuns para os pontos de interrupção incluem:  
   
-1.  Para restringir a origem de uma falha ou travamento, dispersá-la ao longo e ao redor do código da chamada de método que você acredita que está causando a falha. Conforme você percorre o código, remova e redefina os pontos de interrupção mais próximos até encontrar a linha de código incorreta.  
+1. Para restringir a origem de uma falha ou travamento, dispersá-la ao longo e ao redor do código da chamada de método que você acredita que está causando a falha. Conforme você percorre o código, remova e redefina os pontos de interrupção mais próximos até encontrar a linha de código incorreta.  
   
-2.  Ao introduzir um novo código, defina um ponto de interrupção no início dele e percorra o código para verificar se ele está se comportando conforme o esperado.  
+2. Ao introduzir um novo código, defina um ponto de interrupção no início dele e percorra o código para verificar se ele está se comportando conforme o esperado.  
   
-3.  Se tiver implementado um comportamento complicado, defina pontos de interrupção para o código de algoritmo para que você possa inspecionar os valores das variáveis e dados quando o programa for interrompido.  
+3. Se tiver implementado um comportamento complicado, defina pontos de interrupção para o código de algoritmo para que você possa inspecionar os valores das variáveis e dados quando o programa for interrompido.  
   
-4.  Se estiver escrevendo código C ou C++, use de pontos de interrupção para parar o código para que você possa inspecionar os valores de endereço (procure por NULL) e contagens de referência ao depurar para falhas relacionadas à memória.  
+4. Se estiver escrevendo código C ou C++, use de pontos de interrupção para parar o código para que você possa inspecionar os valores de endereço (procure por NULL) e contagens de referência ao depurar para falhas relacionadas à memória.  
   
- Para obter mais informações sobre como usar pontos de interrupção, leia [Usando pontos de interrupção](../debugger/using-breakpoints.md)  
+   Para obter mais informações sobre como usar pontos de interrupção, leia [Usando pontos de interrupção](../debugger/using-breakpoints.md)  
   
 ### <a name="setting-conditional-breakpoints"></a>Configurando pontos de interrupção condicionais  
  Se você tiver um ponto de interrupção em um loop ou recursão ou se tiver muitos pontos de interrupção que percorre com frequência, use um ponto de interrupção condicional para garantir que seu código seja suspenso APENAS quando condições específicas forem atendidas. Caso contrário, você pressionará F11 muitas vezes.  

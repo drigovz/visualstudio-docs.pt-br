@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e19e93423dc1437a41d4e15dd67fa669fb1cee5e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 69bd6ac15bcaa08800177df92eb8a40e8109d6b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823671"
 ---
 # <a name="ribbon-xml"></a>XML da faixa de opções
   O item da faixa de opções (XML) permite que você personalize uma faixa de opções usando XML. Use o item de faixa de opções (XML), se você quiser personalizar a faixa de opções de forma que não é compatível com o item da faixa de opções (Visual Designer). Para obter uma comparação do que você pode fazer com cada item, consulte [visão geral da faixa de opções](../vsto/Ribbon-overview.md).  
@@ -41,11 +41,11 @@ ms.locfileid: "35670094"
 ## <a name="add-a-ribbon-xml-item-to-a-project"></a>Adicionar um item da faixa de opções (XML) a um projeto  
  Você pode adicionar um **da faixa de opções (XML)** item a qualquer projeto do Office da **Adicionar Novo Item** caixa de diálogo. Visual Studio adiciona automaticamente os arquivos a seguir ao seu projeto:  
   
--   Um arquivo XML de faixa de opções. Esse arquivo define a interface do usuário da faixa de opções (IU). Use esse arquivo para adicionar elementos de interface do usuário, como guias, grupos e controles. Para obter detalhes, consulte [referência do arquivo XML de faixa de opções](#RibbonDescriptorFile) mais adiante neste tópico.  
+- Um arquivo XML de faixa de opções. Esse arquivo define a interface do usuário da faixa de opções (IU). Use esse arquivo para adicionar elementos de interface do usuário, como guias, grupos e controles. Para obter detalhes, consulte [referência do arquivo XML de faixa de opções](#RibbonDescriptorFile) mais adiante neste tópico.  
   
--   Um arquivo de código da faixa de opções. Esse arquivo contém o *faixa de opções classe*. Essa classe tem o nome que você especificou para o **da faixa de opções (XML)** item o **Adicionar Novo Item** caixa de diálogo. Aplicativos do Microsoft Office usam uma instância dessa classe para carregar a faixa de opções personalizada. Para obter detalhes, consulte [referência de classe da faixa de opções](#RibbonExtensionClass) mais adiante neste tópico.  
+- Um arquivo de código da faixa de opções. Esse arquivo contém o *faixa de opções classe*. Essa classe tem o nome que você especificou para o **da faixa de opções (XML)** item o **Adicionar Novo Item** caixa de diálogo. Aplicativos do Microsoft Office usam uma instância dessa classe para carregar a faixa de opções personalizada. Para obter detalhes, consulte [referência de classe da faixa de opções](#RibbonExtensionClass) mais adiante neste tópico.  
   
- Por padrão, esses arquivos de adicionar um grupo personalizado para o **Add-Ins** guia na faixa de opções.  
+  Por padrão, esses arquivos de adicionar um grupo personalizado para o **Add-Ins** guia na faixa de opções.  
   
 ## <a name="display-the-custom-ribbon-in-a-microsoft-office-application"></a>Exibir a faixa de opções personalizada em um aplicativo do Microsoft Office  
  Depois de adicionar um **da faixa de opções (XML)** item ao seu projeto, você deve adicionar código para o **ThisAddin**, **ThisWorkbook**, ou **ThisDocument** classe que substitui o `CreateRibbonExtensibilityObject` método e retorna o XML da faixa de opções de classe para o aplicativo do Office.  
@@ -83,18 +83,18 @@ ms.locfileid: "35670094"
 ###  <a name="CallBackMethods"></a> Definir métodos de retorno de chamada  
  Defina seus métodos de retorno de chamada na classe da faixa de opções no arquivo de código da faixa de opções. Um método de retorno de chamada tem vários requisitos:  
   
--   Ele deve ser declarado como público.  
+- Ele deve ser declarado como público.  
   
--   Seu nome deve corresponder ao nome de um método de retorno de chamada que é atribuída a um controle no arquivo XML de faixa de opções.  
+- Seu nome deve corresponder ao nome de um método de retorno de chamada que é atribuída a um controle no arquivo XML de faixa de opções.  
   
--   Sua assinatura deve corresponder à assinatura de um tipo de método de retorno de chamada que está disponível para o controle associado de faixa de opções.  
+- Sua assinatura deve corresponder à assinatura de um tipo de método de retorno de chamada que está disponível para o controle associado de faixa de opções.  
   
- Para obter uma lista completa das assinaturas de método de retorno de chamada para controles da faixa de opções, consulte o artigo técnico [personalizar a interface do usuário da faixa de opções do Office (2007) para desenvolvedores (parte 3 de 3)](http://msdn.microsoft.com/a16c7df5-93f3-4920-baa8-7b7290794c15). Visual Studio não fornece suporte ao IntelliSense para os métodos de retorno de chamada que você criar no arquivo de código da faixa de opções. Se você criar um método de retorno de chamada que não corresponde a uma assinatura válida, o código será compilado, mas nada ocorrerá quando o usuário clica no controle.  
+  Para obter uma lista completa das assinaturas de método de retorno de chamada para controles da faixa de opções, consulte o artigo técnico [personalizar a interface do usuário da faixa de opções do Office (2007) para desenvolvedores (parte 3 de 3)](http://msdn.microsoft.com/a16c7df5-93f3-4920-baa8-7b7290794c15). Visual Studio não fornece suporte ao IntelliSense para os métodos de retorno de chamada que você criar no arquivo de código da faixa de opções. Se você criar um método de retorno de chamada que não corresponde a uma assinatura válida, o código será compilado, mas nada ocorrerá quando o usuário clica no controle.  
   
- Todos os métodos de retorno de chamada tem um <xref:Microsoft.Office.Core.IRibbonControl> parâmetro que representa o controle que chamou o método. Você pode usar esse parâmetro para reutilizar o mesmo método de retorno de chamada para vários controles. O exemplo de código a seguir demonstra uma **onAction** método de retorno de chamada que executa tarefas diferentes, dependendo de qual controle o usuário clica.  
+  Todos os métodos de retorno de chamada tem um <xref:Microsoft.Office.Core.IRibbonControl> parâmetro que representa o controle que chamou o método. Você pode usar esse parâmetro para reutilizar o mesmo método de retorno de chamada para vários controles. O exemplo de código a seguir demonstra uma **onAction** método de retorno de chamada que executa tarefas diferentes, dependendo de qual controle o usuário clica.  
   
- [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
- [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]  
+  [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
+  [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]  
   
 ##  <a name="RibbonDescriptorFile"></a> Referência do arquivo XML da faixa de opções  
  Você pode definir sua faixa de opções personalizada pela adição de elementos e atributos para o arquivo XML de faixa de opções. Por padrão, o arquivo XML de faixa de opções contém o XML a seguir.  
@@ -142,7 +142,7 @@ ms.locfileid: "35670094"
   
 |Método|Descrição|  
 |------------|-----------------|  
-|`GetCustomUI`|Retorna o conteúdo do arquivo XML de faixa de opções. Aplicativos do Microsoft Office chamam esse método para obter uma cadeia de caracteres XML que define a interface do usuário da sua faixa de opções personalizada. Este método implementa o método <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A>. **Observação:** `GetCustomUI` devem ser implementadas apenas para retornar o conteúdo do arquivo XML de faixa de opções; ele não deve ser usado para inicializar o suplemento do VSTO.   Em particular, você não deve tentar exibir caixas de diálogo ou outras janelas no seu `GetCustomUI` implementação. Caso contrário, a faixa de opções personalizada pode não se comportar corretamente. Se for preciso executar o código que inicializa o suplemento do VSTO, adicione o código para o `ThisAddIn_Startup` manipulador de eventos.|  
+|`GetCustomUI`|Retorna o conteúdo do arquivo XML de faixa de opções. Aplicativos do Microsoft Office chamam esse método para obter uma cadeia de caracteres XML que define a interface do usuário da sua faixa de opções personalizada. Este método implementa o método <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A>. **Observação:** `GetCustomUI` devem ser implementadas apenas para retornar o conteúdo do arquivo XML de faixa de opções; ele não deve ser usado para inicializar o suplemento do VSTO. Em particular, você não deve tentar exibir caixas de diálogo ou outras janelas no seu `GetCustomUI` implementação. Caso contrário, a faixa de opções personalizada pode não se comportar corretamente. Se for preciso executar o código que inicializa o suplemento do VSTO, adicione o código para o `ThisAddIn_Startup` manipulador de eventos.|  
 |`OnLoad`|Atribui a <xref:Microsoft.Office.Core.IRibbonControl> parâmetro para o `Ribbon` campo. Aplicativos do Microsoft Office chamam esse método quando eles são carregados a faixa de opções personalizada. Você pode usar este campo para atualizar dinamicamente a faixa de opções personalizada. Para obter mais informações, consulte o artigo técnico [personalizar a interface do usuário da faixa de opções do Office (2007) para desenvolvedores (parte 1 de 3)](http://msdn.microsoft.com/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
 |`GetResourceText`|Chamado pelo `GetCustomUI` método para obter o conteúdo do arquivo XML de faixa de opções.|  
   

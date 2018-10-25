@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 070ab3c216cacfcaeaf73bdc4cc6bebdaf52233b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dac26a7846f4a6b611c53e9cd537d112a8205d2f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836782"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Compilando aplicativos ClickOnce a partir da linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,39 +49,39 @@ No [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], você pode 
   
 #### <a name="to-create-and-publish-a-clickonce-project"></a>Para criar e publicar um projeto do ClickOnce  
   
-1.  Clique em **novo projeto** da **arquivo** menu. A caixa de diálogo **Novo Projeto** é exibida.  
+1. Clique em **novo projeto** da **arquivo** menu. A caixa de diálogo **Novo Projeto** é exibida.  
   
-2.  Selecione **aplicativo do Windows** e nomeie-o `CmdLineDemo`.  
+2. Selecione **aplicativo do Windows** e nomeie-o `CmdLineDemo`.  
   
-3.  Dos **construir** menu, clique no **publicar** comando.  
+3. Dos **construir** menu, clique no **publicar** comando.  
   
-     Essa etapa garante que o projeto está configurado corretamente para produzir um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação de aplicativos.  
+    Essa etapa garante que o projeto está configurado corretamente para produzir um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação de aplicativos.  
   
-     O Assistente de Publicação será exibido.  
+    O Assistente de Publicação será exibido.  
   
-4.  No Assistente de publicação, clique em **concluir**.  
+4. No Assistente de publicação, clique em **concluir**.  
   
-     Visual Studio gera e exibe a página da Web padrão, chamada Publish. htm.  
+    Visual Studio gera e exibe a página da Web padrão, chamada Publish. htm.  
   
-5.  Salve seu projeto e anote o local da pasta na qual ele está armazenado.  
+5. Salve seu projeto e anote o local da pasta na qual ele está armazenado.  
   
- As etapas acima criam um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] projeto que foi publicado pela primeira vez. Agora você pode reproduzir o build fora do IDE.  
+   As etapas acima criam um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] projeto que foi publicado pela primeira vez. Agora você pode reproduzir o build fora do IDE.  
   
 #### <a name="to-reproduce-the-build-from-the-command-line"></a>Para reproduzir a compilação da linha de comando  
   
-1.  Saia do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+1. Saia do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
-2.  Do Windows **inicie** menu, clique em **todos os programas**, em seguida, **Microsoft Visual Studio**, em seguida, **ferramentas do Visual Studio**, então **Prompt de comando do visual Studio**. Isso deve abrir um prompt de comando na pasta raiz do usuário atual.  
+2. Do Windows **inicie** menu, clique em **todos os programas**, em seguida, **Microsoft Visual Studio**, em seguida, **ferramentas do Visual Studio**, então **Prompt de comando do visual Studio**. Isso deve abrir um prompt de comando na pasta raiz do usuário atual.  
   
-3.  No **Prompt de comando do Visual Studio**, altere o diretório atual para o local do projeto que você acabou de criar acima. Por exemplo, digite `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
+3. No **Prompt de comando do Visual Studio**, altere o diretório atual para o local do projeto que você acabou de criar acima. Por exemplo, digite `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
   
-4.  Para remover os arquivos existentes produzidos em "criar e publicar uma [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] projeto," tipo `rmdir /s publish`.  
+4. Para remover os arquivos existentes produzidos em "criar e publicar uma [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] projeto," tipo `rmdir /s publish`.  
   
-     Esta etapa é opcional, mas garante que os novos arquivos foram todos produzidos pela compilação de linha de comando.  
+    Esta etapa é opcional, mas garante que os novos arquivos foram todos produzidos pela compilação de linha de comando.  
   
-5.  Digite `msbuild /target:publish` no terminal integrado.  
+5. Digite `msbuild /target:publish` no terminal integrado.  
   
- As etapas acima produzirá uma completa [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação de aplicativos em uma subpasta do projeto chamada P**ublicar**. CmdLineDemo.application é o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto de implantação. A pasta CmdLineDemo_1.0.0.0 contém os arquivos CmdLineDemo.exe e CmdLineDemo.exe.manifest, o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto do aplicativo. Setup.exe é o bootstrapper, que, por padrão, está configurado para instalar o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. A pasta DotNetFX contém os redistribuíveis para o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Isso é todo o conjunto de arquivos que você precisa para implantar seu aplicativo na Web ou por meio de UNC ou CD/DVD.  
+   As etapas acima produzirá uma completa [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação de aplicativos em uma subpasta do projeto chamada P**ublicar**. CmdLineDemo.application é o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto de implantação. A pasta CmdLineDemo_1.0.0.0 contém os arquivos CmdLineDemo.exe e CmdLineDemo.exe.manifest, o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto do aplicativo. Setup.exe é o bootstrapper, que, por padrão, está configurado para instalar o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. A pasta DotNetFX contém os redistribuíveis para o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Isso é todo o conjunto de arquivos que você precisa para implantar seu aplicativo na Web ou por meio de UNC ou CD/DVD.  
   
 ## <a name="publishing-properties"></a>Propriedades de publicação  
  Quando você publica o aplicativo em procedimentos anteriores, as propriedades a seguir são inseridas no seu arquivo de projeto, o Assistente de publicação. Essas propriedades influenciam diretamente como o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo é produzido.  
@@ -116,51 +116,51 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  Propriedades de publicação são controladas em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do **Publish**, **segurança**, e **Signing** páginas de propriedades do **Designer de projeto** . Abaixo está uma descrição das propriedades de publicação, junto com uma indicação de como cada um é definida em várias páginas de propriedade do designer do aplicativo:  
   
--   `AssemblyOriginatorKeyFile` Determina o arquivo de chave usado para assinar seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestos de aplicativo. Essa mesma chave também pode ser usado para atribuir um nome forte a seus assemblies. Essa propriedade é definida a **Signing** página do **Designer de projeto**.  
+- `AssemblyOriginatorKeyFile` Determina o arquivo de chave usado para assinar seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestos de aplicativo. Essa mesma chave também pode ser usado para atribuir um nome forte a seus assemblies. Essa propriedade é definida a **Signing** página do **Designer de projeto**.  
   
- As seguintes propriedades são definidas na **segurança** página:  
+  As seguintes propriedades são definidas na **segurança** página:  
   
--   **Habilitar configurações de segurança do ClickOnce** determina se [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestos são gerados. Quando um projeto é criado inicialmente, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] geração de manifesto está desativado por padrão. O assistente automaticamente desativa esse sinalizador nos quando você publica pela primeira vez.  
+- **Habilitar configurações de segurança do ClickOnce** determina se [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestos são gerados. Quando um projeto é criado inicialmente, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] geração de manifesto está desativado por padrão. O assistente automaticamente desativa esse sinalizador nos quando você publica pela primeira vez.  
   
--   **TargetZone** determina o nível de confiança para ser emitida no seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto do aplicativo. Os valores possíveis são "Internet", "LocalIntranet" e "Custom". Internet e LocalIntranet fará com que um conjunto de permissões padrão para ser emitida no seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto do aplicativo. LocalIntranet é o padrão e, basicamente, significa confiança total. Personalizada Especifica que somente as permissões explicitamente especificadas no arquivo manifest base devem ser emitida no [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto do aplicativo. O arquivo App. manifest é um arquivo de manifesto parcial que contém apenas as definições de informações de confiança. É um arquivo oculto, adicionado automaticamente ao seu projeto quando você configurar permissões na **segurança** página.  
+- **TargetZone** determina o nível de confiança para ser emitida no seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto do aplicativo. Os valores possíveis são "Internet", "LocalIntranet" e "Custom". Internet e LocalIntranet fará com que um conjunto de permissões padrão para ser emitida no seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto do aplicativo. LocalIntranet é o padrão e, basicamente, significa confiança total. Personalizada Especifica que somente as permissões explicitamente especificadas no arquivo manifest base devem ser emitida no [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto do aplicativo. O arquivo App. manifest é um arquivo de manifesto parcial que contém apenas as definições de informações de confiança. É um arquivo oculto, adicionado automaticamente ao seu projeto quando você configurar permissões na **segurança** página.  
   
- As seguintes propriedades são definidas na **publicar** página:  
+  As seguintes propriedades são definidas na **publicar** página:  
   
--   `PublishUrl` é o local em que o aplicativo será publicado no IDE. Ele é inserido na [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto do aplicativo se nem a `InstallUrl` ou `UpdateUrl` propriedade for especificada.  
+- `PublishUrl` é o local em que o aplicativo será publicado no IDE. Ele é inserido na [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto do aplicativo se nem a `InstallUrl` ou `UpdateUrl` propriedade for especificada.  
   
--   `ApplicationVersion` Especifica a versão do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo. Este é um número de versão de quatro dígitos. Se o último dígito é um "*", em seguida, a `ApplicationRevision` substituirá o valor inserido no manifesto no momento da compilação.  
+- `ApplicationVersion` Especifica a versão do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo. Este é um número de versão de quatro dígitos. Se o último dígito é um "*", em seguida, a `ApplicationRevision` substituirá o valor inserido no manifesto no momento da compilação.  
   
--   `ApplicationRevision` Especifica a revisão. Esse é um inteiro que é incrementado toda vez que você publica no IDE. Observe que não é incrementado automaticamente para compilações executadas na linha de comando.  
+- `ApplicationRevision` Especifica a revisão. Esse é um inteiro que é incrementado toda vez que você publica no IDE. Observe que não é incrementado automaticamente para compilações executadas na linha de comando.  
   
--   `Install` Determina se o aplicativo é um aplicativo instalado ou um aplicativo de execução da Web.  
+- `Install` Determina se o aplicativo é um aplicativo instalado ou um aplicativo de execução da Web.  
   
--   `InstallUrl` (não mostrado) é o local em que os usuários instalarão o aplicativo. Se for especificado, esse valor é gravado no bootstrapper setup.exe se o `IsWebBootstrapper` propriedade está habilitada. Ele também é inserido no manifesto-se aplicativo a `UpdateUrl` não for especificado.  
+- `InstallUrl` (não mostrado) é o local em que os usuários instalarão o aplicativo. Se for especificado, esse valor é gravado no bootstrapper setup.exe se o `IsWebBootstrapper` propriedade está habilitada. Ele também é inserido no manifesto-se aplicativo a `UpdateUrl` não for especificado.  
   
--   `SupportUrl` (não mostrado) é o local vinculado a **adicionar ou remover programas** caixa de diálogo para um aplicativo instalado.  
+- `SupportUrl` (não mostrado) é o local vinculado a **adicionar ou remover programas** caixa de diálogo para um aplicativo instalado.  
   
- As seguintes propriedades são definidas **atualizações do aplicativo** caixa de diálogo, acessada a partir de **publicar** página.  
+  As seguintes propriedades são definidas **atualizações do aplicativo** caixa de diálogo, acessada a partir de **publicar** página.  
   
--   `UpdateEnabled` Indica se o aplicativo deve verificar se há atualizações.  
+- `UpdateEnabled` Indica se o aplicativo deve verificar se há atualizações.  
   
--   `UpdateMode` Especifica as atualizações de primeiro plano ou atualizações em segundo plano.  
+- `UpdateMode` Especifica as atualizações de primeiro plano ou atualizações em segundo plano.  
   
--   `UpdateInterval` Especifica a frequência com que o aplicativo deve verificar se há atualizações.  
+- `UpdateInterval` Especifica a frequência com que o aplicativo deve verificar se há atualizações.  
   
--   `UpdateIntervalUnits` Especifica se o `UpdateInterval` valor está em unidades de horas, dias ou semanas.  
+- `UpdateIntervalUnits` Especifica se o `UpdateInterval` valor está em unidades de horas, dias ou semanas.  
   
--   `UpdateUrl` (não mostrado) é o local em que o aplicativo receberá atualizações. Se for especificado, esse valor é inserido no manifesto do aplicativo.  
+- `UpdateUrl` (não mostrado) é o local em que o aplicativo receberá atualizações. Se for especificado, esse valor é inserido no manifesto do aplicativo.  
   
--   As seguintes propriedades são definidas **opções de publicação** caixa de diálogo, acessada a partir de **publicar** página.  
+- As seguintes propriedades são definidas **opções de publicação** caixa de diálogo, acessada a partir de **publicar** página.  
   
--   `PublisherName` Especifica o nome do publicador exibido no prompt mostrado durante a instalação ou execução do aplicativo. No caso de um aplicativo instalado, ele também é usado para especificar o nome da pasta na **iniciar** menu.  
+- `PublisherName` Especifica o nome do publicador exibido no prompt mostrado durante a instalação ou execução do aplicativo. No caso de um aplicativo instalado, ele também é usado para especificar o nome da pasta na **iniciar** menu.  
   
--   `ProductName` Especifica o nome do produto exibido no prompt mostrado durante a instalação ou execução do aplicativo. No caso de um aplicativo instalado, ele também é usado para especificar o nome do atalho na **iniciar** menu.  
+- `ProductName` Especifica o nome do produto exibido no prompt mostrado durante a instalação ou execução do aplicativo. No caso de um aplicativo instalado, ele também é usado para especificar o nome do atalho na **iniciar** menu.  
   
--   As seguintes propriedades são definidas **pré-requisitos** caixa de diálogo, acessada a partir de **publicar** página.  
+- As seguintes propriedades são definidas **pré-requisitos** caixa de diálogo, acessada a partir de **publicar** página.  
   
--   `BootstrapperEnabled` Determina se deve gerar o bootstrapper setup.exe.  
+- `BootstrapperEnabled` Determina se deve gerar o bootstrapper setup.exe.  
   
--   `IsWebBootstrapper` Determina se o bootstrapper setup.exe funciona pela Web ou no modo baseado em disco.  
+- `IsWebBootstrapper` Determina se o bootstrapper setup.exe funciona pela Web ou no modo baseado em disco.  
   
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL, SupportUrl, PublishURL e UpdateURL  
  A tabela a seguir mostra as quatro opções de URL para a implantação do ClickOnce.  

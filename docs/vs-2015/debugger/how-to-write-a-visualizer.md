@@ -26,12 +26,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 815c2eba06af4fe50eb9dc87dd158fe1713342ac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1243c9d26e25bd76a7e8b3518484671bdd973fb9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280144"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841865"
 ---
 # <a name="how-to-write-a-visualizer"></a>Como escrever um visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,27 +43,27 @@ Você pode escrever um visualizador personalizado para um objeto de qualquer cla
   
  A arquitetura de um visualizador de depurador tem duas partes:  
   
--   O *do lado do depurador* é executado dentro do depurador do Visual Studio. O código do lado depurador cria e exibe a interface do usuário para o visualizador.  
+- O *do lado do depurador* é executado dentro do depurador do Visual Studio. O código do lado depurador cria e exibe a interface do usuário para o visualizador.  
   
--   O *lado a ser depurado* é executado dentro do processo de depuração do Visual Studio (o *ser depurado*).  
+- O *lado a ser depurado* é executado dentro do processo de depuração do Visual Studio (o *ser depurado*).  
   
- O objeto de dados que você deseja visualizar (um objeto String, por exemplo) existe no processo a ser depurado. Assim, o lado a ser depurado precisa enviar esse objeto de dados para o lado do depurador, que pode então exibi-lo usando uma interface de usuário que você cria.  
+  O objeto de dados que você deseja visualizar (um objeto String, por exemplo) existe no processo a ser depurado. Assim, o lado a ser depurado precisa enviar esse objeto de dados para o lado do depurador, que pode então exibi-lo usando uma interface de usuário que você cria.  
   
- O lado do depurador recebe esse objeto de dados a serem visualizados de um *provedor do objeto* que implementa o <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interface. Lado a ser depurado envia o objeto de dados por meio de *origem do objeto*, que é derivado de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. O provedor do objeto também pode enviar dados de volta para a origem do objeto, que permite escrever um visualizador que edita, além de exibir, dados. O provedor do objeto pode ser substituído para se comunicar com o avaliador de expressão e, consequentemente, com a origem do objeto  
+  O lado do depurador recebe esse objeto de dados a serem visualizados de um *provedor do objeto* que implementa o <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interface. Lado a ser depurado envia o objeto de dados por meio de *origem do objeto*, que é derivado de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. O provedor do objeto também pode enviar dados de volta para a origem do objeto, que permite escrever um visualizador que edita, além de exibir, dados. O provedor do objeto pode ser substituído para se comunicar com o avaliador de expressão e, consequentemente, com a origem do objeto  
   
- O lado a ser depurado e o lado do depurador comunicam-se por meio do <xref:System.IO.Stream>. Os métodos são fornecidos para serializar um objeto de dados em um <xref:System.IO.Stream> e desserializar o <xref:System.IO.Stream> de volta para um objeto de dados.  
+  O lado a ser depurado e o lado do depurador comunicam-se por meio do <xref:System.IO.Stream>. Os métodos são fornecidos para serializar um objeto de dados em um <xref:System.IO.Stream> e desserializar o <xref:System.IO.Stream> de volta para um objeto de dados.  
   
- O código do lado a ser depurado é especificado usando o atributo DebuggerVisualizer (<xref:System.Diagnostics.DebuggerVisualizerAttribute>).  
+  O código do lado a ser depurado é especificado usando o atributo DebuggerVisualizer (<xref:System.Diagnostics.DebuggerVisualizerAttribute>).  
   
- Para criar a interface do usuário do visualizador no lado do depurador, você deverá criar uma classe que herda de <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> e substitui o método <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> para exibir a interface.  
+  Para criar a interface do usuário do visualizador no lado do depurador, você deverá criar uma classe que herda de <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> e substitui o método <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> para exibir a interface.  
   
- Você pode usar <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> para exibir formulários, caixas de diálogo e os controles do Windows a partir do visualizador.  
+  Você pode usar <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> para exibir formulários, caixas de diálogo e os controles do Windows a partir do visualizador.  
   
- O suporte para tipos genéricos é limitado. Você poderá escrever um visualizador para um destino que é um tipo genérico somente se o tipo genérico for um tipo aberto. Essa restrição é a mesma que a restrição ao usar o atributo `DebuggerTypeProxy`. Para obter detalhes, consulte [usando o atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).  
+  O suporte para tipos genéricos é limitado. Você poderá escrever um visualizador para um destino que é um tipo genérico somente se o tipo genérico for um tipo aberto. Essa restrição é a mesma que a restrição ao usar o atributo `DebuggerTypeProxy`. Para obter detalhes, consulte [usando o atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).  
   
- Os visualizadores personalizados podem ter considerações de segurança. Ver [considerações de segurança do visualizador](../debugger/visualizer-security-considerations.md).  
+  Os visualizadores personalizados podem ter considerações de segurança. Ver [considerações de segurança do visualizador](../debugger/visualizer-security-considerations.md).  
   
- Os procedimentos a seguir dão uma exibição de alto nível do que você precisa fazer para criar um visualizador. Para obter uma explicação mais detalhada, consulte [instruções passo a passo: escrevendo um visualizador em c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+  Os procedimentos a seguir dão uma exibição de alto nível do que você precisa fazer para criar um visualizador. Para obter uma explicação mais detalhada, consulte [instruções passo a passo: escrevendo um visualizador em c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
   
 ### <a name="to-create-the-debugger-side"></a>Para criar o lado do depurador  
   

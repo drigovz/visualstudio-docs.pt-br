@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69774b098e76bb14ed11be092ae7ebedb71c218a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 401458a33c67d0c8d0302fddcdfd988113101e28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202755"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837549"
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizando o comportamento da operação de excluir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ A exclusão de um elemento geralmente provoca também a exclusão de seus elemen
   
 #### <a name="to-set-delete-propagation"></a>Para configurar a propagação de exclusão  
   
-1.  No diagrama de definição de DSL, selecione a *função* a serem propagação seja excluída. A função é representada pela linha à esquerda ou à direita de uma caixa de relação de domínio.  
+1. No diagrama de definição de DSL, selecione a *função* a serem propagação seja excluída. A função é representada pela linha à esquerda ou à direita de uma caixa de relação de domínio.  
   
-     Por exemplo, se você deseja especificar que sempre que um Álbum for excluído, os Artistas relacionados também sejam excluídos, selecione a função conectada ao Artista da classe de domínio.  
+    Por exemplo, se você deseja especificar que sempre que um Álbum for excluído, os Artistas relacionados também sejam excluídos, selecione a função conectada ao Artista da classe de domínio.  
   
-2.  Na janela Propriedades, defina as **propaga exclusão** propriedade.  
+2. Na janela Propriedades, defina as **propaga exclusão** propriedade.  
   
-3.  Pressione F5 e verifique se:  
+3. Pressione F5 e verifique se:  
   
-    -   Quando uma instância desse relacionamento é excluída, o elemento na função selecionada também é excluído.  
+   -   Quando uma instância desse relacionamento é excluída, o elemento na função selecionada também é excluído.  
   
-    -   Quando um elemento na função oposta é excluído, instâncias dessa relação são excluídas e os elementos relacionados a essa função são excluídos.  
+   -   Quando um elemento na função oposta é excluído, instâncias dessa relação são excluídas e os elementos relacionados a essa função são excluídos.  
   
- Você também pode ver a **propaga exclusão** opção a **detalhes de DSL** janela. Selecione uma classe de domínio e, na janela de detalhes de DSL, abra o **comportamento de exclusão** página clicando no botão ao lado da janela. O **propagar** opção é mostrada para a função oposta de cada relação. O **Excluir estilo** coluna indica se o **propagar** opção está em sua configuração padrão, mas ele não tem nenhuma efeito separado.  
+   Você também pode ver a **propaga exclusão** opção a **detalhes de DSL** janela. Selecione uma classe de domínio e, na janela de detalhes de DSL, abra o **comportamento de exclusão** página clicando no botão ao lado da janela. O **propagar** opção é mostrada para a função oposta de cada relação. O **Excluir estilo** coluna indica se o **propagar** opção está em sua configuração padrão, mas ele não tem nenhuma efeito separado.  
   
 ## <a name="delete-propagation-by-using-program-code"></a>Propagação de exclusão usando o código do programa  
  As opções no arquivo Definição de DSL só permitem que você escolha se a exclusão se propaga para um vizinho imediato ou não. Para implementar um esquema mais complexo de propagação de exclusão, você pode gravar o código do programa.  
@@ -138,17 +138,17 @@ partial class MusicLibDeleteClosure
 ##  <a name="ondeleting"></a> Usando OnDeleting e OnDeleted  
  Você pode substituir `OnDeleting()` ou `OnDeleted()` em uma classe de domínio ou em uma relação de domínio.  
   
-1.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> é chamado quando um elemento está prestes a ser excluído, mas antes que suas relações sejam desconectadas. Ele ainda é navegável de outros elementos e ainda está em `store.ElementDirectory`.  
+1. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> é chamado quando um elemento está prestes a ser excluído, mas antes que suas relações sejam desconectadas. Ele ainda é navegável de outros elementos e ainda está em `store.ElementDirectory`.  
   
-     Se vários elementos forem excluído ao mesmo tempo, OnDeleting será chamado por todos eles antes de executar as exclusões.  
+    Se vários elementos forem excluído ao mesmo tempo, OnDeleting será chamado por todos eles antes de executar as exclusões.  
   
-     `IsDeleting` é verdadeiro.  
+    `IsDeleting` é verdadeiro.  
   
-2.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> é chamado quando o elemento foi excluído. Ele permanece no heap do CLR para que um Desfazer possa ser realizado, se necessário, mas é desvinculado de outros elementos e removido de `store.ElementDirectory`. Para relações, a função ainda referencia os antigo representantes da função.`IsDeleted` é verdadeiro.  
+2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> é chamado quando o elemento foi excluído. Ele permanece no heap do CLR para que um Desfazer possa ser realizado, se necessário, mas é desvinculado de outros elementos e removido de `store.ElementDirectory`. Para relações, a função ainda referencia os antigo representantes da função.`IsDeleted` é verdadeiro.  
   
-3.  OnDeleting e OnDeleted são chamados quando o usuário invoca Desfazer depois de criar um elemento e quando uma exclusão anterior é repetida em Refazer. Use `this.Store.InUndoRedoOrRollback` para evitar atualizar elementos de repositório nesses casos. Para obter mais informações, consulte [como: usar transações para atualizar o modelo](../modeling/how-to-use-transactions-to-update-the-model.md).  
+3. OnDeleting e OnDeleted são chamados quando o usuário invoca Desfazer depois de criar um elemento e quando uma exclusão anterior é repetida em Refazer. Use `this.Store.InUndoRedoOrRollback` para evitar atualizar elementos de repositório nesses casos. Para obter mais informações, consulte [como: usar transações para atualizar o modelo](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
- Por exemplo, o código a seguir exclui um Álbum quando sua última Música filha é excluída:  
+   Por exemplo, o código a seguir exclui um Álbum quando sua última Música filha é excluída:  
   
 ```  
   

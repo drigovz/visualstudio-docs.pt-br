@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b46be8e9ad7a4a437f1009eb30407428f31b425b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7e468f75abbadbe46ea973a5c04d2e286fcfaca5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279148"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867696"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar e continuar (Visual C++)
 Você pode usar Editar e continuar em projetos do Visual C++. Ver [alterações de código com suporte (C++)](../debugger/supported-code-changes-cpp.md) para obter informações sobre as limitações de editar e continuar.
@@ -41,17 +41,17 @@ Para obter mais informações sobre as melhorias do Visual Studio 2015 atualiza�
 > [!IMPORTANT]
 > Para configurações de compilação necessários e outras informações sobre compatibilidade de recursos, consulte [C++ Edit e Continue no Visual Studio 2015 atualização 3] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
   
-1.  Se você estiver em uma sessão de depuração, pare a depuração (**Shift + F5**).
+1. Se você estiver em uma sessão de depuração, pare a depuração (**Shift + F5**).
 
 2. No menu **Ferramentas**, escolha **Opções**.
   
-3.  No **opções** caixa de diálogo, selecione **depuração > geral**.
+3. No **opções** caixa de diálogo, selecione **depuração > geral**.
 
-4.  Para habilitar, selecione **habilitar editar e continuar**. Para desabilitar, desmarque a caixa de seleção.
+4. Para habilitar, selecione **habilitar editar e continuar**. Para desabilitar, desmarque a caixa de seleção.
   
-5.  No **editar e continuar** grupo, marque ou desmarque as **habilitar nativo editar e continuar** caixa de seleção.  
+5. No **editar e continuar** grupo, marque ou desmarque as **habilitar nativo editar e continuar** caixa de seleção.  
   
- Alterar essa configuração afeta todos os projetos que você trabalha em. Você não precisa recriar seu aplicativo após alterar essa configuração. Se você criar seu aplicativo de linha de comando ou de um makefile, mas depurar no ambiente do Visual Studio, você ainda pode usar Editar e continuar se você definir a **/ZI** opção.  
+   Alterar essa configuração afeta todos os projetos que você trabalha em. Você não precisa recriar seu aplicativo após alterar essa configuração. Se você criar seu aplicativo de linha de comando ou de um makefile, mas depurar no ambiente do Visual Studio, você ainda pode usar Editar e continuar se você definir a **/ZI** opção.  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Como aplicar as alterações de código explicitamente  
  No Visual C++, editar e continuar podem aplicar alterações de código de duas maneiras. Alterações de código podem ser aplicadas implicitamente, quando você escolhe um comando de execução, ou explicitamente, usando o **aplicar alterações de código** comando.  
@@ -65,11 +65,11 @@ Para obter mais informações sobre as melhorias do Visual Studio 2015 atualiza�
   
  Para parar de aplicar alterações de código:  
   
--   Sobre o **Debug** menu, escolha **parar de aplicar alterações de código**.  
+- Sobre o **Debug** menu, escolha **parar de aplicar alterações de código**.  
   
- Este item de menu está visível apenas quando as alterações de código estão sendo aplicadas.  
+  Este item de menu está visível apenas quando as alterações de código estão sendo aplicadas.  
   
- Se você escolher esta opção, nenhuma das alterações de código serão confirmadas.  
+  Se você escolher esta opção, nenhuma das alterações de código serão confirmadas.  
   
 ##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> Como redefinir o ponto de execução  
  Algumas alterações de código podem fazer o ponto de execução ser movido para um novo local quando Editar e Continuar aplicar as alterações. Editar e Continuar coloca o ponto de execução o mais exatamente possível, mas os resultados podem não estar corretos em todos os casos.  

@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: fd51bd397e6db3728c10f52db68d45e226fb605b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3ffe88fb54da26468ca510a2f1a7ab6170d88db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881710"
 ---
 # <a name="how-to-install-sample-databases"></a>Como instalar bancos de dados de exemplo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,11 +96,11 @@ Muitos exemplos de dados exigem a capacidade de conectar-se ao Northwind, Pubs, 
   
 #### <a name="to-install-the-northwind-sample-database-for-microsoft-access"></a>Para instalar o banco de dados de exemplo Northwind do Microsoft Access  
   
-1.  No Microsoft Access 2010 ou posterior, pesquisar modelos online para a Northwind e escolha **banco de dados de exemplo Northwind 2007 da área de trabalho**.  
+1. No Microsoft Access 2010 ou posterior, pesquisar modelos online para a Northwind e escolha **banco de dados de exemplo Northwind 2007 da área de trabalho**.  
   
-2.  No Microsoft Access, salve o arquivo de banco de dados como Northwind.accdb.  
+2. No Microsoft Access, salve o arquivo de banco de dados como Northwind.accdb.  
   
- A nova extensão para bancos de dados do Access .accdb. Ver [programação de dados com o Microsoft Access 2010](http://msdn.microsoft.com/library/office/ff965871.aspx). Para se conectar ao banco de dados Northwind usando o acesso, consulte [como: conectar-se ao banco de dados Northwind](../data-tools/how-to-connect-to-the-northwind-database.md).  
+   A nova extensão para bancos de dados do Access .accdb. Ver [programação de dados com o Microsoft Access 2010](http://msdn.microsoft.com/library/office/ff965871.aspx). Para se conectar ao banco de dados Northwind usando o acesso, consulte [como: conectar-se ao banco de dados Northwind](../data-tools/how-to-connect-to-the-northwind-database.md).  
   
 ## <a name="net-framework-security"></a>Segurança do .NET Framework  
  Os bancos de dados de amostra são apenas para ilustrar e não necessariamente demonstram as práticas recomendadas de segurança.  

@@ -65,12 +65,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220526"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838680"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Escrevendo código no editor de códigos e de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,19 +146,19 @@ O editor do Visual Studio fornece muitos recursos que tornam mais fácil para vo
 
  Para ocultar a barra de navegação, altere a opção **Barra de Navegação** na configuração Todas as Linguagens do Editor de Texto (**Ferramentas/Opções/Editor de Texto/Todas as Linguagens** ou você pode alterar as configurações de linguagens individuais). Você pode navegar nas caixas suspensas da seguinte maneira:  
 
--   Para mudar o foco da janela de código para a barra de navegação, pressione a combinação de tecla de atalho CTRL + F2.  
+- Para mudar o foco da janela de código para a barra de navegação, pressione a combinação de tecla de atalho CTRL + F2.  
 
--   Para retornar o foco da barra de navegação para a janela de código, pressione a tecla ESC.  
+- Para retornar o foco da barra de navegação para a janela de código, pressione a tecla ESC.  
 
--   Para mudar o foco de um item ao outro item na barra de navegação, pressione a tecla TAB.  
+- Para mudar o foco de um item ao outro item na barra de navegação, pressione a tecla TAB.  
 
--   Para selecionar o item de Barra de navegação que tem o foco e retornar ao IDE, pressione a tecla ENTER  
+- Para selecionar o item de Barra de navegação que tem o foco e retornar ao IDE, pressione a tecla ENTER  
 
--   Para navegar até uma classe ou um tipo, clique em seu nome na lista suspensa à esquerda.  
+- Para navegar até uma classe ou um tipo, clique em seu nome na lista suspensa à esquerda.  
 
--   Para navegar diretamente até um procedimento em uma classe, clique em um procedimento na lista suspensa à direita.  
+- Para navegar diretamente até um procedimento em uma classe, clique em um procedimento na lista suspensa à direita.  
 
- Em uma classe parcial, os membros definidos fora do arquivo de código atual podem estar esmaecidos.  
+  Em uma classe parcial, os membros definidos fora do arquivo de código atual podem estar esmaecidos.  
 
 ## <a name="find-code-using-navigate-to"></a>Localizar código usando Navegar Para
 Comando a "Navegar até" do Visual Studio faz uma pesquisa restrita do seu código para ajudá-lo a localizar rapidamente elementos especificados em arquivos de código, caminhos de arquivo e símbolos de código. Ao contrário de outras pesquisas de texto como Localizar ou Localizar nos Arquivos, o Navegar Para limita sua pesquisa às áreas em que o código real reside, como arquivos, formulários e módulos de código. Por exemplo, se você pesquisar uma cadeia de caracteres em um aplicativo Web ASP .NET usando Localizar ou Localizar nos Arquivos em toda a solução, você poderá obter várias ocorrências, incluindo instâncias da cadeia de caracteres nos comentários de código. Usando navegar para, no entanto, você pode apenas obter uma única função, ignorando todas as instâncias da cadeia de caracteres nos comentários de código.

@@ -20,12 +20,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11a3a39b1b2f4d2d00f973cbaf38620641e45ca6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 31d5ced897badded98aa82b2245e8f210517afd6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213298"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845286"
 ---
 # <a name="code-snippet-picker"></a>Seletor de snippet de código
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ O Editor de Códigos do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece 
   
  O procedimento para exibir o **Seletor de Snippet de Código** varia de acordo com a linguagem que você está usando.  
   
--   [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] – Clique com o botão direito do mouse no local desejado no Editor de Códigos para exibir o menu de atalho e selecione **Inserir Snippet**.  
+- [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] – Clique com o botão direito do mouse no local desejado no Editor de Códigos para exibir o menu de atalho e selecione **Inserir Snippet**.  
   
--   [!INCLUDE[csprcs](../../includes/csprcs-md.md)] – Clique com o botão direito do mouse no local desejado no Editor de Códigos para exibir o menu de atalho e selecione **Inserir Snippet** ou **Envolver com**.  
+- [!INCLUDE[csprcs](../../includes/csprcs-md.md)] – Clique com o botão direito do mouse no local desejado no Editor de Códigos para exibir o menu de atalho e selecione **Inserir Snippet** ou **Envolver com**.  
   
--   [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] – O **Seletor de Snippet de Código** não está disponível.  
+- [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] – O **Seletor de Snippet de Código** não está disponível.  
   
--   Visual #F – O **Seletor de Snippet de Código** não está disponível.  
+- Visual #F – O **Seletor de Snippet de Código** não está disponível.  
   
--   [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] – Clique com o botão direito do mouse no local desejado no Editor de Códigos para exibir o menu de atalho e selecione **Inserir Snippet** ou **Envolver com**.  
+- [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] – Clique com o botão direito do mouse no local desejado no Editor de Códigos para exibir o menu de atalho e selecione **Inserir Snippet** ou **Envolver com**.  
   
--   XML – Clique com o botão direito do mouse no local desejado no Editor de Códigos para exibir o menu de atalho e selecione **Inserir Snippet** ou **Envolver com**.  
+- XML – Clique com o botão direito do mouse no local desejado no Editor de Códigos para exibir o menu de atalho e selecione **Inserir Snippet** ou **Envolver com**.  
   
--   HTML – Clique com o botão direito do mouse no local desejado no Editor de Códigos para exibir o menu de atalho e selecione **Inserir Snippet** ou **Envolver com**.  
+- HTML – Clique com o botão direito do mouse no local desejado no Editor de Códigos para exibir o menu de atalho e selecione **Inserir Snippet** ou **Envolver com**.  
   
--   SQL – Clique com o botão direito do mouse no local desejado no Editor de Códigos para exibir o menu de atalho e selecione **Inserir Snippet**.  
+- SQL – Clique com o botão direito do mouse no local desejado no Editor de Códigos para exibir o menu de atalho e selecione **Inserir Snippet**.  
   
- Na maioria das linguagens de desenvolvimento do Visual Studio, é possível usar o **Gerenciador de Snippets de Código** para adicionar pastas à **Lista de Pastas** que o **Seletor de Snippet de Código** examina em busca de arquivos de snippet XML. Você também pode criar seus próprios snippets para adicionar à lista. Para obter mais informações, consulte [Passo a passo: criando um snippet de código](../../ide/walkthrough-creating-a-code-snippet.md).  
+  Na maioria das linguagens de desenvolvimento do Visual Studio, é possível usar o **Gerenciador de Snippets de Código** para adicionar pastas à **Lista de Pastas** que o **Seletor de Snippet de Código** examina em busca de arquivos de snippet XML. Você também pode criar seus próprios snippets para adicionar à lista. Para obter mais informações, consulte [Passo a passo: criando um snippet de código](../../ide/walkthrough-creating-a-code-snippet.md).  
   
 ## <a name="uielement-list"></a>Lista UIElement  
  Nome do Item  

@@ -17,12 +17,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b174145561f6005e9498384190800945e36af078
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 40d508a11807fe90981104e0cc7e6557577da103
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259981"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855593"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Adicionando um controle de usuário à página inicial
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -141,41 +141,41 @@ Este passo a passo mostra como adicionar uma referência DLL para uma página in
 ## <a name="adding-the-user-control-to-the-start-page"></a>Adicionando o controle de usuário para a página inicial  
  Para disponibilizar esse controle para o projeto de página inicial, no arquivo de página de início do projeto, adicione uma referência para a nova biblioteca de controle. Em seguida, você pode adicionar o controle para a marcação de XAML de página de início.  
   
-1.  Na **Gerenciador de soluções**, no projeto de página inicial, clique com botão direito **referências** e, em seguida, clique em **Add Reference**.  
+1. Na **Gerenciador de soluções**, no projeto de página inicial, clique com botão direito **referências** e, em seguida, clique em **Add Reference**.  
   
-2.  Sobre o **projetos** guia, selecione **WebUserControl** e, em seguida, clique em **Okey**.  
+2. Sobre o **projetos** guia, selecione **WebUserControl** e, em seguida, clique em **Okey**.  
   
-3.  No menu **Compilar**, clique em **Compilar Solução**.  
+3. No menu **Compilar**, clique em **Compilar Solução**.  
   
-     Compilando a solução disponibiliza o controle de usuário para o IntelliSense para outros arquivos na solução.  
+    Compilando a solução disponibiliza o controle de usuário para o IntelliSense para outros arquivos na solução.  
   
- Para adicionar o controle para a marcação de XAML de página Iniciar, adicionar uma referência ao namespace para o assembly e, em seguida, colocar o controle na página.  
+   Para adicionar o controle para a marcação de XAML de página Iniciar, adicionar uma referência ao namespace para o assembly e, em seguida, colocar o controle na página.  
   
 #### <a name="to-add-the-control-to-the-markup"></a>Para adicionar o controle à marcação  
   
-1.  Na **Gerenciador de soluções**, abra o arquivo. XAML de página inicial.  
+1. Na **Gerenciador de soluções**, abra o arquivo. XAML de página inicial.  
   
-2.  No **XAML** painel, adicione a seguinte declaração de namespace para o nível superior <xref:System.Windows.Controls.Grid> elemento.  
+2. No **XAML** painel, adicione a seguinte declaração de namespace para o nível superior <xref:System.Windows.Controls.Grid> elemento.  
   
-    ```xml  
-    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
-    ```  
+   ```xml  
+   xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
+   ```  
   
-3.  No **XAML** painel, role até a \<grade > seção.  
+3. No **XAML** painel, role até a \<grade > seção.  
   
-     A seção contém um <xref:System.Windows.Controls.TabControl> elemento em um <xref:System.Windows.Controls.Grid> elemento.  
+    A seção contém um <xref:System.Windows.Controls.TabControl> elemento em um <xref:System.Windows.Controls.Grid> elemento.  
   
-4.  Adicionar um \<TabControl > elemento que contém um \<TabItem > que contém uma referência ao controle de usuário.  
+4. Adicionar um \<TabControl > elemento que contém um \<TabItem > que contém uma referência ao controle de usuário.  
   
-    ```xml  
+   ```xml  
   
-    <TabItem Header="Web" Height="Auto">  
-        <vsc:UserControl1 />  
-    </TabItem>  
+   <TabItem Header="Web" Height="Auto">  
+       <vsc:UserControl1 />  
+   </TabItem>  
   
-    ```  
+   ```  
   
- Agora você pode testar o controle.  
+   Agora você pode testar o controle.  
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>Testando uma página de início personalizados criados manualmente  
   

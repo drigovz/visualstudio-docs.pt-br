@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7e0acee43c05332dd3f9f10eecb7ea55b02671f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842632"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Navegar por uma sessão de depuração no Visual Studio (XAML e C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,29 +93,29 @@ Este início rápido demonstra como navegar de sessões de depuração do Visual
   
  {1&gt;Quando você entra em uma linha de código, o depurador executa uma das seguintes ações:&lt;1}  
   
--   {1&gt;Se a próxima instrução não for uma chamada para uma função em sua solução, o depurador executará a instrução, irá para a próxima instrução e suspenderá a execução.&lt;1}  
+- {1&gt;Se a próxima instrução não for uma chamada para uma função em sua solução, o depurador executará a instrução, irá para a próxima instrução e suspenderá a execução.&lt;1}  
   
--   Se a instrução for uma chamada para uma função em sua solução, o depurador se move para o ponto de entrada da função chamada e, em seguida, suspende a execução.  
+- Se a instrução for uma chamada para uma função em sua solução, o depurador se move para o ponto de entrada da função chamada e, em seguida, suspende a execução.  
   
- Continue entrar nas instruções de exemplo 1, até atingir o ponto de saída. O depurador realça a chave de fechamento do método.  
+  Continue entrar nas instruções de exemplo 1, até atingir o ponto de saída. O depurador realça a chave de fechamento do método.  
   
- **Examine os valores de variáveis em dicas de dados.** Quando você passa o mouse sobre um nome de variável, o nome, o valor e o tipo da variável é exibida em uma dica de dados.  
+  **Examine os valores de variáveis em dicas de dados.** Quando você passa o mouse sobre um nome de variável, o nome, o valor e o tipo da variável é exibida em uma dica de dados.  
   
- ![Dica de dados do depurador](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
+  ![Dica de dados do depurador](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
   
- Passe o mouse sobre a variável `a`. Observe o nome, valor, tipo de dados. Passe o mouse sobre a variável `methodTrack`. Novamente, observe o nome, valor, tipo de dados.  
+  Passe o mouse sobre a variável `a`. Observe o nome, valor, tipo de dados. Passe o mouse sobre a variável `methodTrack`. Novamente, observe o nome, valor, tipo de dados.  
   
- **Examine os valores de variáveis na janela locais.** Sobre o **Debug** , aponte para **Windows**e, em seguida, escolha **locais**. (Teclado: Alt + 4).  
+  **Examine os valores de variáveis na janela locais.** Sobre o **Debug** , aponte para **Windows**e, em seguida, escolha **locais**. (Teclado: Alt + 4).  
   
- ![Janela locais](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
+  ![Janela locais](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
   
- As janelas de variáveis locais é uma exibição de árvore dos parâmetros e variáveis da função. As propriedades de uma variável de objeto são nós filho do próprio objeto. O `this` variável é um parâmetro oculto em todos os métodos do objeto que representa o objeto em si. Nesse caso, ele representa a classe MainPage. Porque `methodTrack` é um membro do tipo de classe, seu valor e os dados da MainPage são listados em uma linha embaixo `this`. Expanda o `this` nó para exibir o `methodTrack` informações.  
+  As janelas de variáveis locais é uma exibição de árvore dos parâmetros e variáveis da função. As propriedades de uma variável de objeto são nós filho do próprio objeto. O `this` variável é um parâmetro oculto em todos os métodos do objeto que representa o objeto em si. Nesse caso, ele representa a classe MainPage. Porque `methodTrack` é um membro do tipo de classe, seu valor e os dados da MainPage são listados em uma linha embaixo `this`. Expanda o `this` nó para exibir o `methodTrack` informações.  
   
- **Adicione uma inspeção para a variável methodTrack.** O `methodWatch` variável é usada em todo este guia de início rápido para mostrar os métodos chamados nos exemplos. Para tornar mais fácil de exibir o valor da variável, adicione-o para uma janela de observação. O nome da variável na janela locais com o botão direito e, em seguida, escolha **Adicionar inspeção**.  
+  **Adicione uma inspeção para a variável methodTrack.** O `methodWatch` variável é usada em todo este guia de início rápido para mostrar os métodos chamados nos exemplos. Para tornar mais fácil de exibir o valor da variável, adicione-o para uma janela de observação. O nome da variável na janela locais com o botão direito e, em seguida, escolha **Adicionar inspeção**.  
   
- ![Janela de inspeção](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
+  ![Janela de inspeção](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
   
- Você pode inspecionar diversas variáveis em uma janela inspeção. Os valores de variáveis inspecionadas, como valores nas janelas de dica de dados e locais são atualizados sempre que a execução é suspensa. Você também pode adicionar variáveis à janela Inspeção do editor de códigos. Selecione a variável para assistir, direito do mouse e, em seguida, escolha **Adicionar inspeção**.  
+  Você pode inspecionar diversas variáveis em uma janela inspeção. Os valores de variáveis inspecionadas, como valores nas janelas de dica de dados e locais são atualizados sempre que a execução é suspensa. Você também pode adicionar variáveis à janela Inspeção do editor de códigos. Selecione a variável para assistir, direito do mouse e, em seguida, escolha **Adicionar inspeção**.  
   
 ##  <a name="BKMK_StepIntoOverOut"></a> Para failover e fora de métodos  
  Em contraste a entrar em um método chamado por um método pai, percorrendo um método executa o método filho e, em seguida, suspende a execução no método de chamada como o pai é retomada. Você pode entrar em um método quando você estiver familiarizado com a maneira como o método funciona e tiver certeza de que sua execução não afetará o problema que você está investigando.  
