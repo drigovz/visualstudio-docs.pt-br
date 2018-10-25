@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a63dd4eae31b99646af04ceabe76e4edb946027
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849028"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Passo a passo: Criar a primeira personalização no nível de documento para Excel
   Este passo a passo introdutório mostra como criar uma personalização no nível de documento do Microsoft Office Excel. Os recursos que você criar nesse tipo de solução estão disponíveis somente quando uma pasta de trabalho específica é aberta. Você não pode usar uma personalização no nível de documento para fazer alterações em todo o aplicativo, por exemplo, exibindo uma nova guia de faixa de opções quando qualquer pasta de trabalho é aberta.  
@@ -31,17 +31,17 @@ ms.locfileid: "38800926"
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Criando um projeto de pasta de trabalho do Excel.  
+- Criando um projeto de pasta de trabalho do Excel.  
   
--   Adicionando texto a uma planilha que está hospedada no designer do Visual Studio.  
+- Adicionando texto a uma planilha que está hospedada no designer do Visual Studio.  
   
--   Escrevendo código que usa o modelo de objeto do Excel para adicionar texto à planilha personalizada quando ele é aberto.  
+- Escrevendo código que usa o modelo de objeto do Excel para adicionar texto à planilha personalizada quando ele é aberto.  
   
--   Criando e executando o projeto para testá-lo.  
+- Criando e executando o projeto para testá-lo.  
   
--   Limpando o projeto concluído para remover arquivos de compilação desnecessárias e as configurações de segurança de seu computador de desenvolvimento.  
+- Limpando o projeto concluído para remover arquivos de compilação desnecessárias e as configurações de segurança de seu computador de desenvolvimento.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
@@ -54,35 +54,35 @@ ms.locfileid: "38800926"
   
 ### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>Para criar um novo projeto de pasta de trabalho do Excel no Visual Studio  
   
-1.  Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1. Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
+2. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-3.  No painel de modelos, expanda **Visual c#** ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.  
+3. No painel de modelos, expanda **Visual c#** ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.  
   
-4.  Sob o expandida **Office/SharePoint** nó, selecione o **suplementos do Office** nó.  
+4. Sob o expandida **Office/SharePoint** nó, selecione o **suplementos do Office** nó.  
   
-5.  Na lista de modelos de projeto, escolha um projeto de suplemento do VSTO do Excel.  
+5. Na lista de modelos de projeto, escolha um projeto de suplemento do VSTO do Excel.  
   
-6.  No **nome** , digite **FirstWorkbookCustomization**.  
+6. No **nome** , digite **FirstWorkbookCustomization**.  
   
-7.  Clique em **OK**.  
+7. Clique em **OK**.  
   
-     O **Visual Studio Tools for Office Project Wizard** é aberta.  
+    O **Visual Studio Tools for Office Project Wizard** é aberta.  
   
-8.  Selecione **criar um novo documento**e clique em **Okey**.  
+8. Selecione **criar um novo documento**e clique em **Okey**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o **FirstWorkbookCustomization** de projeto e adiciona os seguintes arquivos ao projeto.  
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o **FirstWorkbookCustomization** de projeto e adiciona os seguintes arquivos ao projeto.  
   
-    -   *FirstWorkbookCustomization*. xlsx - representa a pasta de trabalho do Excel no projeto. Contém todas as planilhas e gráficos.  
+   - *FirstWorkbookCustomization*. xlsx - representa a pasta de trabalho do Excel no projeto. Contém todas as planilhas e gráficos.  
   
-    -   Sheet1 (*. vb* arquivo para o Visual Basic ou *CS* arquivo para o Visual C#)-uma planilha que fornece a superfície de design e o código para a primeira planilha na pasta de trabalho. Para obter mais informações, consulte [item de host da planilha](../vsto/worksheet-host-item.md).  
+   - Sheet1 (*. vb* arquivo para o Visual Basic ou *CS* arquivo para o Visual C#)-uma planilha que fornece a superfície de design e o código para a primeira planilha na pasta de trabalho. Para obter mais informações, consulte [item de host da planilha](../vsto/worksheet-host-item.md).  
   
-    -   Planilha2 (*. vb* arquivo para o Visual Basic ou *CS* arquivo para o Visual C#)-uma planilha que fornece a superfície de design e o código para a segunda planilha na pasta de trabalho.  
+   - Planilha2 (*. vb* arquivo para o Visual Basic ou *CS* arquivo para o Visual C#)-uma planilha que fornece a superfície de design e o código para a segunda planilha na pasta de trabalho.  
   
-    -   Sheet3 (*. vb* arquivo para o Visual Basic ou *CS* arquivo para o Visual C#)-uma planilha que fornece a superfície de design e o código para a terceira planilha na pasta de trabalho.  
+   - Sheet3 (*. vb* arquivo para o Visual Basic ou *CS* arquivo para o Visual C#)-uma planilha que fornece a superfície de design e o código para a terceira planilha na pasta de trabalho.  
   
-    -   ThisWorkbook (*. vb* arquivo para o Visual Basic ou *CS* arquivo para o Visual C#)-contém a superfície de design e o código para personalizações no nível de pasta de trabalho. Para obter mais informações, consulte [item de host da pasta de trabalho](../vsto/workbook-host-item.md).  
+   - ThisWorkbook (*. vb* arquivo para o Visual Basic ou *CS* arquivo para o Visual C#)-contém a superfície de design e o código para personalizações no nível de pasta de trabalho. Para obter mais informações, consulte [item de host da pasta de trabalho](../vsto/workbook-host-item.md).  
   
      O arquivo de código Sheet1 é aberto automaticamente no designer.  
   

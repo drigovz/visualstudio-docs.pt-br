@@ -27,12 +27,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 550eedd1157d05f180e2229cec7594ae48c2fe45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 342d51b5057ac0c17e92db1d4c454962b50df19a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239376"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843386"
 ---
 # <a name="hierarchical-update"></a>Atualização hierárquica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,14 +89,14 @@ Atualização hierárquica * refere-se ao processo de salvar dados atualizados (
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Para atualizar o código para confirmar as alterações às tabelas relacionadas antes de salvar  
   
-1.  Clique duas vezes o **salve** botão a <xref:System.Windows.Forms.BindingNavigator> para abrir **Form1** no Editor de códigos.  
+1. Clique duas vezes o **salve** botão a <xref:System.Windows.Forms.BindingNavigator> para abrir **Form1** no Editor de códigos.  
   
-2.  Adicione uma linha de código para chamar o método `OrdersBindingSource.EndEdit` após a linha que chama o método `CustomersBindingSource.EndEdit`. O código a **salvar** clique de botão evento deve ser semelhante à seguinte:  
+2. Adicione uma linha de código para chamar o método `OrdersBindingSource.EndEdit` após a linha que chama o método `CustomersBindingSource.EndEdit`. O código a **salvar** clique de botão evento deve ser semelhante à seguinte:  
   
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
+    [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
+    [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
   
- Além de confirmar as alterações em uma tabela filho relacionada antes de salvar dados em um banco de dados, você também pode confirmar registros pais recém-criados antes de adicionar novos registros filhos a um conjunto de dados. Em outras palavras, pode ser necessário adicionar o novo registro pai (Cliente) para o conjunto de dados antes que as restrições de chave estrangeira permitam que novos registros filhos (Pedidos) sejam adicionados ao conjunto de dados. Para realizar isso, você pode usar o evento filho `BindingSource.AddingNew`.  
+   Além de confirmar as alterações em uma tabela filho relacionada antes de salvar dados em um banco de dados, você também pode confirmar registros pais recém-criados antes de adicionar novos registros filhos a um conjunto de dados. Em outras palavras, pode ser necessário adicionar o novo registro pai (Cliente) para o conjunto de dados antes que as restrições de chave estrangeira permitam que novos registros filhos (Pedidos) sejam adicionados ao conjunto de dados. Para realizar isso, você pode usar o evento filho `BindingSource.AddingNew`.  
   
 > [!NOTE]
 >  Se você precisa confirmar novos registros pais depende do tipo de controle que é usada para associar à fonte de dados. Neste passo a passo, você pode usar controles individuais para associar a tabela pai. Isso exige que o código adicional para confirmar o novo registro pai. Se os registros pai em vez disso, foram exibidos em um controle de vinculação complexa como o <xref:System.Windows.Forms.DataGridView>adicionais nesse <xref:System.Windows.Forms.BindingSource.EndEdit%2A> chamada para o registro pai não seria necessário. Isso porque a funcionalidade subjacente de associação de dados do controle processa a confirmação dos novos registros.  

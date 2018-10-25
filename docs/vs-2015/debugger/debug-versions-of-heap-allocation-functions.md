@@ -30,12 +30,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d61d56800a69e0d651df6dd82043d0bb17f05e94
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7a6bf3976138f385f103c6d046e2b71133a8795d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874990"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Versões de depuração das funções de alocação da pilha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,15 +46,15 @@ A biblioteca em tempo de execução C contém versões especiais de depuração 
   
  No entanto, talvez você queira chamar explicitamente `_malloc_dbg`. Chamar `_malloc_dbg` explicitamente tem alguns benefícios adicionais:  
   
--   Acompanhar alocações de tipo `_CLIENT_BLOCK`.  
+- Acompanhar alocações de tipo `_CLIENT_BLOCK`.  
   
--   Armazenar o arquivo de origem e o número da linha em que a solicitação de alocação ocorreu.  
+- Armazenar o arquivo de origem e o número da linha em que a solicitação de alocação ocorreu.  
   
- Se você não quiser converter suas `malloc` chamadas para `_malloc_dbg`, você pode obter as informações do arquivo de origem definindo [crtdbg_map_alloc](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), que faz com que o pré-processador mapear diretamente todas as chamadas para `malloc` para `_malloc_dbg` em vez de depender de um wrapper em torno `malloc`.  
+  Se você não quiser converter suas `malloc` chamadas para `_malloc_dbg`, você pode obter as informações do arquivo de origem definindo [crtdbg_map_alloc](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), que faz com que o pré-processador mapear diretamente todas as chamadas para `malloc` para `_malloc_dbg` em vez de depender de um wrapper em torno `malloc`.  
   
- Para controlar os tipos separados de alocações em blocos do cliente, você deverá chamar `_malloc_dbg` diretamente e definir o parâmetro `blockType` como `_CLIENT_BLOCK`.  
+  Para controlar os tipos separados de alocações em blocos do cliente, você deverá chamar `_malloc_dbg` diretamente e definir o parâmetro `blockType` como `_CLIENT_BLOCK`.  
   
- Quando Debug não estiver definido, chamadas para `malloc` não serão perturbadas, as chamadas a `_malloc_dbg` são resolvidas para `malloc`, a definição de [crtdbg_map_alloc](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b) é ignorada e a fonte de informações do arquivo que pertencem à solicitação de alocação não é fornecida. Como `malloc` não tem um parâmetro de tipo de bloco, as solicitações para tipos de `_CLIENT_BLOCK` são tratadas como alocações padrão.  
+  Quando Debug não estiver definido, chamadas para `malloc` não serão perturbadas, as chamadas a `_malloc_dbg` são resolvidas para `malloc`, a definição de [crtdbg_map_alloc](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b) é ignorada e a fonte de informações do arquivo que pertencem à solicitação de alocação não é fornecida. Como `malloc` não tem um parâmetro de tipo de bloco, as solicitações para tipos de `_CLIENT_BLOCK` são tratadas como alocações padrão.  
   
 ## <a name="see-also"></a>Consulte também  
  [Técnicas de depuração CRT](../debugger/crt-debugging-techniques.md)

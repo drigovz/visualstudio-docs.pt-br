@@ -18,23 +18,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23fbe0a7563dbb1ebb3832dbe5c340e67dacac72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3a31bac6b3cbd13fcff8c841c9947e8c14f8984a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670727"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839759"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Como: atualizar uma fonte de dados com dados de um controle de host
   Você pode associar um controle de host a uma fonte de dados e atualizar a fonte de dados com as alterações feitas aos dados no controle. Há duas etapas principais nesse processo:  
   
-1.  Atualize a fonte de dados na memória com os dados modificados no controle. Normalmente, a fonte de dados na memória é um <xref:System.Data.DataSet>, um <xref:System.Data.DataTable>, ou algum outro objeto de dados.  
+1. Atualize a fonte de dados na memória com os dados modificados no controle. Normalmente, a fonte de dados na memória é um <xref:System.Data.DataSet>, um <xref:System.Data.DataTable>, ou algum outro objeto de dados.  
   
-2.  Atualize o banco de dados com os dados alterados na fonte de dados na memória. Isso é aplicável somente se a fonte de dados estiver conectada a um banco de dados de back-end, como um banco de dados do SQL Server ou Microsoft Office Access.  
+2. Atualize o banco de dados com os dados alterados na fonte de dados na memória. Isso é aplicável somente se a fonte de dados estiver conectada a um banco de dados de back-end, como um banco de dados do SQL Server ou Microsoft Office Access.  
   
- Para obter mais informações sobre vinculação de dados e controles de host, consulte [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md) e [associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+   Para obter mais informações sobre vinculação de dados e controles de host, consulte [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md) e [associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
+   [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="update-the-in-memory-data-source"></a>Atualizar a fonte de dados na memória  
  Por padrão, os controles de host que permitem a vinculação de dados simples (como controles de conteúdo em um documento do Word ou um controle de intervalo nomeado em uma planilha do Excel) não salvar as alterações de dados à fonte de dados na memória. Ou seja, quando um usuário final altera um valor em um controle de host e, em seguida, navega para fora do controle, o novo valor no controle não é salva automaticamente para a fonte de dados.  
@@ -57,14 +57,14 @@ ms.locfileid: "35670727"
   
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Para definir um controle para atualizar automaticamente a fonte de dados na memória por meio de código  
   
-1.  Use o modo de System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged do <xref:System.Windows.Forms.Binding> objeto que associa o controle à fonte de dados. Há duas opções para atualizar a fonte de dados:  
+1. Use o modo de System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged do <xref:System.Windows.Forms.Binding> objeto que associa o controle à fonte de dados. Há duas opções para atualizar a fonte de dados:  
   
-    -   Para atualizar a fonte de dados quando o controle for validado, defina essa propriedade para System.Windows.Forms.DataSourceUpdateMode.OnValidation.  
+   - Para atualizar a fonte de dados quando o controle for validado, defina essa propriedade para System.Windows.Forms.DataSourceUpdateMode.OnValidation.  
   
-    -   Para atualizar a fonte de dados quando o valor da propriedade do controle associado a dados é alterado, defina essa propriedade para System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.  
+   - Para atualizar a fonte de dados quando o valor da propriedade do controle associado a dados é alterado, defina essa propriedade para System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.  
   
-        > [!NOTE]  
-        >  A opção System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged não se aplica a controles de host do Word, porque o Word faz as notificações não documento – alteração da oferta ou alteração do controle. No entanto, essa opção pode ser usada para controles de Windows Forms em documentos do Word.  
+     > [!NOTE]  
+     >  A opção System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged não se aplica a controles de host do Word, porque o Word faz as notificações não documento – alteração da oferta ou alteração do controle. No entanto, essa opção pode ser usada para controles de Windows Forms em documentos do Word.  
   
      O exemplo a seguir configura um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle para atualizar automaticamente a fonte de dados quando o valor no controle é alterado. Este exemplo pressupõe que você tenha um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle chamado `namedRange1` com seu <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> propriedade associada a um campo em uma fonte de dados.  
   

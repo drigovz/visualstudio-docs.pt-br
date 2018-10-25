@@ -19,25 +19,25 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc9f03650e4e99b7a7277f183993b84d79a67ab2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4ec6a27b8fcd35b4b74108f7bc608c975e120b02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828676"
 ---
 # <a name="visualizer-architecture"></a>Arquitetura do visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A arquitetura de um visualizador de depurador tem duas partes:  
   
--   O *do lado do depurador* é executado dentro do depurador do Visual Studio. O código do lado depurador cria e exibe a interface do usuário para o visualizador.  
+- O *do lado do depurador* é executado dentro do depurador do Visual Studio. O código do lado depurador cria e exibe a interface do usuário para o visualizador.  
   
--   O *lado a ser depurado* é executado dentro do processo de depuração do Visual Studio (o *ser depurado*).  
+- O *lado a ser depurado* é executado dentro do processo de depuração do Visual Studio (o *ser depurado*).  
   
- Um visualizador é um componente do depurador que permite que o depurador exiba (*visualizar*) o conteúdo de um objeto de dados em um formato significativo e legível. Alguns visualizadores também dão suporte à edição do objeto de dados. Ao escrever visualizadores personalizados, você poderá estender o depurador para lidar com seus próprios tipos de dados personalizados.  
+  Um visualizador é um componente do depurador que permite que o depurador exiba (*visualizar*) o conteúdo de um objeto de dados em um formato significativo e legível. Alguns visualizadores também dão suporte à edição do objeto de dados. Ao escrever visualizadores personalizados, você poderá estender o depurador para lidar com seus próprios tipos de dados personalizados.  
   
- O objeto de dados a ser visualizado reside no processo que você está depurando (o *lado a ser depurado* processo). A interface do usuário que exibirá os dados é criada no processo a ser depurado do Visual Studio:  
+  O objeto de dados a ser visualizado reside no processo que você está depurando (o *lado a ser depurado* processo). A interface do usuário que exibirá os dados é criada no processo a ser depurado do Visual Studio:  
   
 |Processo do depurador|Processo a ser depurado|  
 |----------------------|----------------------|  

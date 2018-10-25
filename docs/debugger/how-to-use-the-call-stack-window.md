@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 168f89512dee8331448db1becabdc7262b5e4744
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d390ba4cd47297c6d653cb68693439fd01c16815
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774717"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853604"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Exibir a pilha de chamadas e usar a janela de pilha de chamadas no depurador do Visual Studio
 
@@ -45,17 +45,17 @@ Quando [símbolos de depuração](#bkmk_symbols) não estão disponíveis para a
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
->  [!NOTE]
+> [!NOTE]
 > O **pilha de chamadas** janela é semelhante à perspectiva de depuração em alguns IDEs como o Eclipse. 
-
+> 
 > [!NOTE]
 >  As caixas de diálogo e os comandos de menu vistos podem ser diferentes daqueles descritos aqui, dependendo da edição ou das configurações ativas. Para alterar suas configurações, selecione **Import and Export Settings** sobre o **ferramentas** menu.  Consulte [Personalizando o IDE](../ide/personalizing-the-visual-studio-ide.md)
   
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>Exibir a pilha de chamadas no depurador 
   
--   Durante a depuração, o **Debug** menu, selecione **Windows > pilha de chamadas**.
+- Durante a depuração, o **Debug** menu, selecione **Windows > pilha de chamadas**.
 
- ![Janela pilha de chamadas](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+  ![Janela pilha de chamadas](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
 Uma seta amarela identifica o quadro de pilha onde o ponteiro de execução está localizado atualmente. Por padrão, esse é o quadro de pilha que cujas informações aparecem na origem, **Locals**, **Autos**, **Assista**, e **desmontagem** windows . Se você quiser alterar o contexto do depurador para outro quadro na pilha, você pode fazer isso [alternar para outro quadro de pilha](#bkmk_switch).   
   

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 727c11e24eb3409de89fe211c6a37691dfec298c
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: dce43c02f4976b51bab61a48f615fb0307102fc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204109"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884180"
 ---
 # <a name="customize-a-rule-set"></a>Personalizar um conjunto de regras
 
@@ -34,11 +34,11 @@ Para criar uma regra personalizada definida, você pode abrir uma conjunto de re
 
 3. No **executar este conjunto de regras** lista suspensa, siga um destes procedimentos:
 
-    - Selecione o conjunto de regras que você deseja personalizar.
+   - Selecione o conjunto de regras que você deseja personalizar.
 
      \- ou -
 
-    - Selecione  **\<procurar... >** especificar uma regra existente definida que não está na lista.
+   - Selecione  **\<procurar... >** especificar uma regra existente definida que não está na lista.
 
 4. Selecione **abrir** para exibir as regras no editor de conjunto de regras.
 

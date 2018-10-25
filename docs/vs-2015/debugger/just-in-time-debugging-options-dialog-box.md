@@ -29,12 +29,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5522c9da025b76a3892d3923cdd7397b8ed5ce5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fbe323d5c8939ee5a4088436c906b99b4696254e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207487"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872922"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Caixa de diálogo Just-In-Time, Depuração, Opções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +43,13 @@ Para acessar o **Just-In-Time** página, vá para o **ferramentas** menu e cliqu
   
  Você pode habilitar a depuração Just-In-Time para estes tipos de programa:  
   
--   Gerenciado  
+- Gerenciado  
   
--   Nativo  
+- Nativo  
   
--   script  
+- script  
   
- A depuração Just-In-Time é uma técnica para depurar um programa que é iniciado fora do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Você pode executar um programa criado no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fora do ambiente do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se você tiver habilitado a depuração Just-In-Time, uma falha exibirá uma caixa de diálogo que perguntará se você quer depurar.  
+  A depuração Just-In-Time é uma técnica para depurar um programa que é iniciado fora do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Você pode executar um programa criado no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fora do ambiente do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se você tiver habilitado a depuração Just-In-Time, uma falha exibirá uma caixa de diálogo que perguntará se você quer depurar.  
   
 ## <a name="associated-warnings"></a>Avisos associados  
  Quando você visita esta página do **opções** caixa de diálogo, você poderá ver uma mensagem de aviso como esta:  

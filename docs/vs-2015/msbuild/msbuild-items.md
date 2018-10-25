@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d04bd43be2a4fa2a72dec687df2582ccf6201b94
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d517d3fd24b17c33a7bba9f888fbb904631be5f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229353"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851927"
 ---
 # <a name="msbuild-items"></a>Itens do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,13 +100,13 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
 ##  <a name="BKMK_Wildcards"></a> Usando caracteres curinga para especificar itens  
  Você pode usar os caracteres curinga **, \* e ? para especificar um grupo de arquivos como entradas para um build em vez de listar cada arquivo separadamente.  
   
--   O caractere curinga ? corresponde a um único caractere.  
+- O caractere curinga ? corresponde a um único caractere.  
   
--   O caractere curinga * corresponde a zero ou mais caracteres.  
+- O caractere curinga * corresponde a zero ou mais caracteres.  
   
--   A sequência de caractere curinga ** corresponde a um caminho parcial.  
+- A sequência de caractere curinga ** corresponde a um caminho parcial.  
   
- Por exemplo, você pode especificar todos os arquivos .cs no diretório que contém o arquivo de projeto usando o seguinte elemento no arquivo de projeto.  
+  Por exemplo, você pode especificar todos os arquivos .cs no diretório que contém o arquivo de projeto usando o seguinte elemento no arquivo de projeto.  
   
 ```  
 <CSFile Include="*.cs"/>  

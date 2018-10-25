@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2339dcfe80e994b8bc9062d137263d3b25d274d
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542410"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882660"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primeiro, examine o depurador do Visual Studio
 
@@ -188,7 +188,7 @@ Neste exemplo, o `DirectoryInfo` chamada forneceu o erro na cadeia de caracteres
 
 O auxiliar de exceção é um ótimo recurso que pode ajudá-lo a depurar erros. Você também pode fazer coisas como exibir detalhes do erro e adicionar uma inspeção de auxiliar de exceção. Ou, se necessário, você pode alterar as condições para lançar a exceção específica.
 
->  [!NOTE]
+> [!NOTE]
 > O auxiliar de exceção substitui o Assistente de exceção em [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Expanda o **configurações de exceção** nó para ver mais opções sobre como lidar com esse tipo de exceção, mas você não precisa alterar nada para este tour!

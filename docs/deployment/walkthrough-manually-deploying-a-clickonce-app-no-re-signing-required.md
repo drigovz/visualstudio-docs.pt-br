@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b23d7da819a0403366260b240fa095defd0f120a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 91f552ce30030abeae6af0d63763625e711d32e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511403"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875093"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Passo a passo: Implantar manualmente um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade Visual
 Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e, em seguida, dê a ele a um cliente para publicar e implantar, o cliente teve tradicionalmente atualizar o manifesto de implantação e assine-o novamente. Enquanto ainda é o método preferencial na maioria dos casos, o .NET Framework 3.5 permite que você crie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações que podem ser implantadas por clientes sem precisar regenerar um novo manifesto de implantação. Para obter mais informações, consulte [ClickOnce implantar aplicativos para servidores de teste e produção sem assinar novamente](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
@@ -48,36 +48,36 @@ Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>Para implantar um aplicativo ClickOnce com vários implantação e suporte de identidade visual usando Mage.exe  
   
-1.  Abra um prompt de comando do Visual Studio ou um [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] prompt de comando e altere o diretório no qual você armazenará seus [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] arquivos.  
+1. Abra um prompt de comando do Visual Studio ou um [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] prompt de comando e altere o diretório no qual você armazenará seus [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] arquivos.  
   
-2.  Crie um diretório chamado depois da versão atual da sua implantação. Se essa for a primeira vez que você está implantando o aplicativo, você deverá escolher provavelmente **1.0.0.0**.  
+2. Crie um diretório chamado depois da versão atual da sua implantação. Se essa for a primeira vez que você está implantando o aplicativo, você deverá escolher provavelmente **1.0.0.0**.  
   
-    > [!NOTE]
-    >  A versão da sua implantação pode ser diferente do que a versão dos arquivos do aplicativo.  
+   > [!NOTE]
+   >  A versão da sua implantação pode ser diferente do que a versão dos arquivos do aplicativo.  
   
-3.  Criar um subdiretório chamado **bin** e copie todos os arquivos do aplicativo aqui, incluindo arquivos executáveis, assemblies, recursos e arquivos de dados.  
+3. Criar um subdiretório chamado **bin** e copie todos os arquivos do aplicativo aqui, incluindo arquivos executáveis, assemblies, recursos e arquivos de dados.  
   
-4.  Gere o manifesto do aplicativo com uma chamada para Mage.exe.  
+4. Gere o manifesto do aplicativo com uma chamada para Mage.exe.  
   
-    ```cmd  
-    mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
-    ```  
+   ```cmd  
+   mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
+   ```  
   
-5.  Assinar o manifesto de aplicativo com o certificado digital.  
+5. Assinar o manifesto de aplicativo com o certificado digital.  
   
-    ```cmd  
-    mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
-    ```  
+   ```cmd  
+   mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
+   ```  
   
-6.  Gere o manifesto de implantação com uma chamada para *Mage.exe*. Por padrão, *Mage.exe* marcará sua [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação como um aplicativo instalado, para que ele pode ser executado tanto online e offline. Para disponibilizar o aplicativo somente quando o usuário está online, use o `-i` argumento com um valor de `f`. Uma vez que esse aplicativo aproveitará as vantagens do recurso de implantação de várias, exclua o `-providerUrl` argumento para *Mage.exe*. (Nas versões do .NET Framework anteriores à versão 3.5, exceto `-providerUrl` para um aplicativo offline resultará em erro.)  
+6. Gere o manifesto de implantação com uma chamada para *Mage.exe*. Por padrão, *Mage.exe* marcará sua [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação como um aplicativo instalado, para que ele pode ser executado tanto online e offline. Para disponibilizar o aplicativo somente quando o usuário está online, use o `-i` argumento com um valor de `f`. Uma vez que esse aplicativo aproveitará as vantagens do recurso de implantação de várias, exclua o `-providerUrl` argumento para *Mage.exe*. (Nas versões do .NET Framework anteriores à versão 3.5, exceto `-providerUrl` para um aplicativo offline resultará em erro.)  
   
-    ```cmd  
-    mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
-    ```  
+   ```cmd  
+   mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
+   ```  
   
-7.  Não assinar o manifesto de implantação.  
+7. Não assinar o manifesto de implantação.  
   
-8.  Forneça todos os arquivos para o cliente, que vai implantar o aplicativo em sua rede.  
+8. Forneça todos os arquivos para o cliente, que vai implantar o aplicativo em sua rede.  
   
 9. Neste ponto, o cliente deve assinar o manifesto de implantação com seu próprio certificado gerado automaticamente. Por exemplo, se o cliente trabalha para uma empresa chamada Adventure Works, ele pode gerar um certificado autoassinado usando o *MakeCert.exe* ferramenta. Em seguida, use o *Pvk2pfx.exe* ferramenta para combinar os arquivos criados pelo *MakeCert.exe* em um arquivo PFX que pode ser passado para *Mage.exe*.  
   
@@ -96,28 +96,28 @@ Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageuiexe"></a>Para implantar um aplicativo ClickOnce com vários implantação e suporte de identidade visual usando MageUI.exe  
   
-1.  Abra um prompt de comando do Visual Studio ou um [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] prompt de comando e navegue até o diretório no qual você armazenará seus [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] arquivos.  
+1. Abra um prompt de comando do Visual Studio ou um [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] prompt de comando e navegue até o diretório no qual você armazenará seus [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] arquivos.  
   
-2.  Criar um subdiretório chamado **bin** e copie todos os arquivos do aplicativo aqui, incluindo arquivos executáveis, assemblies, recursos e arquivos de dados.  
+2. Criar um subdiretório chamado **bin** e copie todos os arquivos do aplicativo aqui, incluindo arquivos executáveis, assemblies, recursos e arquivos de dados.  
   
-3.  Crie um subdiretório chamado depois da versão atual da sua implantação. Se essa for a primeira vez que você está implantando o aplicativo, você deverá escolher provavelmente **1.0.0.0**.  
+3. Crie um subdiretório chamado depois da versão atual da sua implantação. Se essa for a primeira vez que você está implantando o aplicativo, você deverá escolher provavelmente **1.0.0.0**.  
   
-    > [!NOTE]
-    >  A versão da sua implantação pode ser diferente do que a versão dos arquivos do aplicativo.  
+   > [!NOTE]
+   >  A versão da sua implantação pode ser diferente do que a versão dos arquivos do aplicativo.  
   
-4.  Mover o \\ **bin** diretório para o diretório que você criou na etapa 2.  
+4. Mover o \\ **bin** diretório para o diretório que você criou na etapa 2.  
   
-5.  Inicie a ferramenta gráfica *MageUI.exe*.  
+5. Inicie a ferramenta gráfica *MageUI.exe*.  
   
-    ```cmd  
-    MageUI.exe  
-    ```  
+   ```cmd  
+   MageUI.exe  
+   ```  
   
-6.  Criar um novo manifesto de aplicativo, selecionando **arquivo**, **New**, **manifesto do aplicativo** no menu.  
+6. Criar um novo manifesto de aplicativo, selecionando **arquivo**, **New**, **manifesto do aplicativo** no menu.  
   
-7.  No padrão **nome** , insira o número de versão e o nome dessa implantação. Além disso, forneça um valor para **publicador**, que será usado como o nome da pasta para o link de atalho do aplicativo no menu Iniciar quando ele é implantado.  
+7. No padrão **nome** , insira o número de versão e o nome dessa implantação. Além disso, forneça um valor para **publicador**, que será usado como o nome da pasta para o link de atalho do aplicativo no menu Iniciar quando ele é implantado.  
   
-8.  Selecione o **opções de aplicativo** guia e clique em **uso manifesto do aplicativo para obter informações de confiança**. Isso permitirá que outros fornecedores de identidade visual para este [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.  
+8. Selecione o **opções de aplicativo** guia e clique em **uso manifesto do aplicativo para obter informações de confiança**. Isso permitirá que outros fornecedores de identidade visual para este [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.  
   
 9. Selecione o **arquivos** guia e clique no **procurar** lado de **diretório de aplicativo** caixa de texto.  
   

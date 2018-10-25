@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: 981c05e61e02746e1cbaf40e7f15553d04786a02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: acc359d7dec2c008bec49a86357faa7227d53ff6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875067"
 ---
 # <a name="shared-colors"></a>Cores compartilhadas
 Inserir introdução aqui.  
@@ -48,10 +48,10 @@ Inserir introdução aqui.
  Use...  
  -   sempre que você precisa criar um menu personalizado.  
   
--   Quando você tem um novo componente de interface do usuário que você deseja correspondência com os menus do Visual Studio.  
+- Quando você tem um novo componente de interface do usuário que você deseja correspondência com os menus do Visual Studio.  
   
- Não use...  
- a cor de plano de fundo sozinha. Sempre use a combinação de plano de fundo/primeiro plano conforme especificado.  
+  Não use...  
+  a cor de plano de fundo sozinha. Sempre use a combinação de plano de fundo/primeiro plano conforme especificado.  
   
 ##### <a name="menu-title"></a>Título de menu  
  Títulos de menus consistem em um plano de fundo, uma borda e o texto do título, bem como um glifo opcional, normalmente, quando o menu é encontrado em uma barra de comandos.  
@@ -64,9 +64,9 @@ Inserir introdução aqui.
  Não use...  
  -   para qualquer coisa que você não deseja sempre corresponde ao título de menu.  
   
--   em qualquer combinação de plano de fundo/primeiro plano diferente do especificado.  
+- em qualquer combinação de plano de fundo/primeiro plano diferente do especificado.  
   
- **Padrão**  
+  **Padrão**  
   
 |Componente|Elemento|Nome do token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -113,9 +113,9 @@ Inserir introdução aqui.
  Não use...  
  -   para qualquer lista suspensa que ocorre em outro contexto.  
   
--   em qualquer combinação de plano de fundo/primeiro plano diferente do especificado.  
+- em qualquer combinação de plano de fundo/primeiro plano diferente do especificado.  
   
- **Padrão**  
+  **Padrão**  
   
 |Componente|Elemento|Nome do token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -180,9 +180,9 @@ Inserir introdução aqui.
  Não use...  
  -   para elementos de interface do usuário que não são semelhantes a uma barra de comandos.  
   
--   para componentes de barra de comando que não sejam aqueles para os quais nomes de token são especificados.  
+- para componentes de barra de comando que não sejam aqueles para os quais nomes de token são especificados.  
   
- **Padrão** (nenhum outro estado)  
+  **Padrão** (nenhum outro estado)  
   
 |Elemento|Nome do token: Category.color|  
 |-------------|--------------------------------|  
@@ -202,9 +202,9 @@ Inserir introdução aqui.
  Não use...  
  -   para controles que têm seus próprios nomes de token.  
   
--   em qualquer combinação de plano de fundo/primeiro plano diferente do especificado.  
+- em qualquer combinação de plano de fundo/primeiro plano diferente do especificado.  
   
- **Padrão**  
+  **Padrão**  
   
 |Componente|Elemento|Nome do token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -252,14 +252,14 @@ Inserir introdução aqui.
  Use...  
  -   ao criar caixas de combinação personalizada.  
   
--   ao criar um controle de barra de comando é semelhante a uma caixa de combinação.  
+- ao criar um controle de barra de comando é semelhante a uma caixa de combinação.  
   
- Não use...  
- -   para qualquer coisa que você não deseja sempre coincidir com o comando da barra da interface do usuário.  
+  Não use...  
+  -   para qualquer coisa que você não deseja sempre coincidir com o comando da barra da interface do usuário.  
   
--   Quando você tem acesso a uma caixa de combinação com estilo.  
+- Quando você tem acesso a uma caixa de combinação com estilo.  
   
- **Padrão**  
+  **Padrão**  
   
 |Componente|Elemento|Nome do token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -333,9 +333,9 @@ Inserir introdução aqui.
  Não use...  
  -   para qualquer coisa que não é semelhante a uma lista suspensa.  
   
--   para caixas de combinação ou botões de divisão.  
+- para caixas de combinação ou botões de divisão.  
   
- **Padrão**  
+  **Padrão**  
   
 |Componente|Elemento|Nome do token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -397,9 +397,9 @@ Inserir introdução aqui.
  Não use...  
  -   para outros tipos de botões.  
   
--   em qualquer combinação de plano de fundo/primeiro plano diferente do especificado.  
+- em qualquer combinação de plano de fundo/primeiro plano diferente do especificado.  
   
- **Padrão**  
+  **Padrão**  
   
 |Componente|Elemento|Nome do token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -550,19 +550,19 @@ Inserir introdução aqui.
 ##### <a name="open-document-tabs"></a>Guias de documento aberto  
  Cada documento aberto tem uma guia no canal de guia de documento que exibe seu nome. Documentos podem ser selecionados ou abra em segundo plano, e suas guias refletem esses estados:  
   
--   A guia selecionada representa o documento que está sendo exibido no documento bem. Uma guia selecionada tem uma borda de documento que estende bem em toda a borda superior do documento.  
+- A guia selecionada representa o documento que está sendo exibido no documento bem. Uma guia selecionada tem uma borda de documento que estende bem em toda a borda superior do documento.  
   
--   Guias de plano de fundo são guias qualquer documento que não estão na guia selecionada no momento. Quando clicado, eles tornam-se a guia selecionada e adquirem todas as cores de plano de fundo, borda e texto desses nomes de token.  
+- Guias de plano de fundo são guias qualquer documento que não estão na guia selecionada no momento. Quando clicado, eles tornam-se a guia selecionada e adquirem todas as cores de plano de fundo, borda e texto desses nomes de token.  
   
- ![Aplicar linhas vermelhas no guia de documento aberto](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
+  ![Aplicar linhas vermelhas no guia de documento aberto](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
   
- Use...  
- Quando você estiver criando guias de documento personalizado.  
+  Use...  
+  Quando você estiver criando guias de documento personalizado.  
   
- Não use...  
- -   as guias de provisionados (visualização).  
+  Não use...  
+  -   as guias de provisionados (visualização).  
   
--   para qualquer interface do usuário que você não deseja alterar automaticamente se o shell tem uma atualização de tema.  
+- para qualquer interface do usuário que você não deseja alterar automaticamente se o shell tem uma atualização de tema.  
   
 ##### <a name="selected-tab"></a>Guia selecionada  
  **Com foco**  
@@ -611,9 +611,9 @@ Inserir introdução aqui.
  Não use...  
  -   para qualquer tipo de documento ou a guia não é provisório (visualização).  
   
--   para qualquer interface do usuário que você não deseja alterar automaticamente se o shell tem uma atualização de tema.  
+- para qualquer interface do usuário que você não deseja alterar automaticamente se o shell tem uma atualização de tema.  
   
- **Guia de visualização selecionado: focalizado**  
+  **Guia de visualização selecionado: focalizado**  
   
 |Componente|Elemento|Nome do token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -658,9 +658,9 @@ Inserir introdução aqui.
  Não use...  
  -   para a interface do usuário que não é semelhante a um botão de estouro.  
   
--   para botões de estouro da barra de comando.  
+- para botões de estouro da barra de comando.  
   
- **Padrão**  
+  **Padrão**  
   
 |Componente|Elemento|Nome do token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -765,9 +765,9 @@ Inserir introdução aqui.
  Não use...  
  -   para os botões que aparecem em outros locais.  
   
--   em qualquer combinação de plano de fundo/primeiro plano diferente do especificado.  
+- em qualquer combinação de plano de fundo/primeiro plano diferente do especificado.  
   
- **Padrão**  
+  **Padrão**  
   
 |Componente|Elemento|Nome do token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -870,25 +870,25 @@ Inserir introdução aqui.
   
  Uma caixa de pesquisa pode ser um dos vários estados, algumas das quais são mutuamente exclusivas:  
   
--   "Concentradas" ou "sem foco" refere-se a ou não o cursor estiver na caixa de texto.  
+- "Concentradas" ou "sem foco" refere-se a ou não o cursor estiver na caixa de texto.  
   
--   "Active" ou "inativos" refere-se de se o usuário inseriu uma consulta de pesquisa na caixa de texto.  
+- "Active" ou "inativos" refere-se de se o usuário inseriu uma consulta de pesquisa na caixa de texto.  
   
--   "Passagem" significa que o usuário tem moused sobre a caixa de pesquisa com o mouse (esse estado substitui todos os outros estados).  
+- "Passagem" significa que o usuário tem moused sobre a caixa de pesquisa com o mouse (esse estado substitui todos os outros estados).  
   
--   "Desabilitada" significa que a funcionalidade de pesquisa está desativada para o contexto atual.  
+- "Desabilitada" significa que a funcionalidade de pesquisa está desativada para o contexto atual.  
   
- ![Corte de caixa de pesquisa de funcionários](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
+  ![Corte de caixa de pesquisa de funcionários](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
   
- Use...  
- Quando você estiver criando uma caixa de pesquisa personalizada.  
+  Use...  
+  Quando você estiver criando uma caixa de pesquisa personalizada.  
   
- Não use...  
- -   para qualquer coisa que não é uma caixa de pesquisa.  
+  Não use...  
+  -   para qualquer coisa que não é uma caixa de pesquisa.  
   
--   para qualquer coisa que você não deseja sempre correspondem à pesquisa de caixa de interface do usuário.  
+- para qualquer coisa que você não deseja sempre correspondem à pesquisa de caixa de interface do usuário.  
   
- **Com foco**  
+  **Com foco**  
   
 |Componente|Elemento|Nome do token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -969,14 +969,14 @@ Inserir introdução aqui.
  Use...  
  -   Quando você estiver criando uma lista suspensa de pesquisa personalizada.  
   
--   os nomes de token corretos para os componentes da lista correta.  
+- os nomes de token corretos para os componentes da lista correta.  
   
- Não use...  
- -   para listas suspensas, que aparecem em outros contextos.  
+  Não use...  
+  -   para listas suspensas, que aparecem em outros contextos.  
   
--   em qualquer combinação de plano de fundo/primeiro plano diferente do especificado.  
+- em qualquer combinação de plano de fundo/primeiro plano diferente do especificado.  
   
- **Padrão (nenhum outro estado)**  
+  **Padrão (nenhum outro estado)**  
   
 |Elemento|Nome do token: Category.color|  
 |-------------|--------------------------------|  
@@ -1133,9 +1133,9 @@ Inserir introdução aqui.
  Não use...  
  -   para qualquer coisa que não é semelhante a uma exibição de árvore.  
   
--   em qualquer combinação de plano de fundo/primeiro plano diferente do especificado.  
+- em qualquer combinação de plano de fundo/primeiro plano diferente do especificado.  
   
- **Padrão**  
+  **Padrão**  
   
 |Componente|Elemento|Nome do token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1295,9 +1295,9 @@ Inserir introdução aqui.
  Não use...  
  -   para qualquer interface do usuário que não é uma lista suspensa ou caixa de combinação.  
   
--   para um [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown) ou [caixa de combinação](../misc/shared-colors.md#BKMK_CommandComboBox) na barra de comandos.  
+- para um [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown) ou [caixa de combinação](../misc/shared-colors.md#BKMK_CommandComboBox) na barra de comandos.  
   
- **Padrão**  
+  **Padrão**  
   
 |Componente|Elemento|Nome do token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1428,12 +1428,12 @@ Inserir introdução aqui.
  Use...  
  -   para designers que são semelhantes para o Designer de manifesto.  
   
--   em vez de usar controles de guia comum na parte superior de um editor dentro do documento bem.  
+- em vez de usar controles de guia comum na parte superior de um editor dentro do documento bem.  
   
- Não use...  
- -   Se você tiver mais de seis guias.  
+  Não use...  
+  -   Se você tiver mais de seis guias.  
   
--   para qualquer interface do usuário que não é estruturado, como o Designer de manifesto.  
+- para qualquer interface do usuário que não é estruturado, como o Designer de manifesto.  
   
 |Estado|Componente|Elemento|Nome do token: Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
@@ -1550,10 +1550,10 @@ Inserir introdução aqui.
  Use...  
  -   para as áreas onde você coloca menus ou barras de ferramentas.  
   
--   com a combinação de nome de token correto em segundo plano/primeiro plano.  
+- com o plano de fundo correto / combinação de nome de token de primeiro plano.  
   
- Não use...  
- para as áreas que não são semelhantes a uma prateleira de comando.  
+  Não use...  
+  para as áreas que não são semelhantes a uma prateleira de comando.  
   
 |Componente|Elemento|Nome do token: Category.color|  
 |---------------|-------------|--------------------------------|  

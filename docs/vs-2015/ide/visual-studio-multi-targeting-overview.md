@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 03ffd0a1d7150d03a801fdc839f48b072f278130
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277063"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857673"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visão geral de multissegmentação do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,29 +37,29 @@ Nesta versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], é possível espe
 ## <a name="framework-targeting-features"></a>Recursos de definição de destino da estrutura  
  A definição de destino da estrutura inclui os seguintes recursos:  
   
--   Ao abrir um projeto que tem como destino uma versão anterior do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], o [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] pode atualizá-lo ou deixar o destino no estado em que se encontra.  
+- Ao abrir um projeto que tem como destino uma versão anterior do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], o [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] pode atualizá-lo ou deixar o destino no estado em que se encontra.  
   
--   Ao criar um projeto, é possível especificar a versão do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que você deseja definir como destino.  
+- Ao criar um projeto, é possível especificar a versão do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que você deseja definir como destino.  
   
--   É possível alterar a versão do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que um projeto existente tem como destino.  
+- É possível alterar a versão do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que um projeto existente tem como destino.  
   
--   É possível definir como destino uma versão diferente do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] em cada um dos vários projetos na mesma solução.  
+- É possível definir como destino uma versão diferente do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] em cada um dos vários projetos na mesma solução.  
   
--   Ao alterar a versão do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que um projeto tem como destino, o [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] faz as alterações necessárias nas referências e nos arquivos de configuração.  
+- Ao alterar a versão do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que um projeto tem como destino, o [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] faz as alterações necessárias nas referências e nos arquivos de configuração.  
   
- Ao trabalhar em um projeto que tem como destino uma versão anterior do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], o Visual Studio altera dinamicamente o ambiente de desenvolvimento, da seguinte maneira:  
+  Ao trabalhar em um projeto que tem como destino uma versão anterior do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], o Visual Studio altera dinamicamente o ambiente de desenvolvimento, da seguinte maneira:  
   
--   Ele filtra os itens das caixas de diálogo **Novo Projeto**, **Adicionar Novo Item**, **Adicionar Nova Referência** e **Adicionar Referência de Serviço** para omitir as opções que não estão disponíveis na versão de destino.  
+- Ele filtra os itens das caixas de diálogo **Novo Projeto**, **Adicionar Novo Item**, **Adicionar Nova Referência** e **Adicionar Referência de Serviço** para omitir as opções que não estão disponíveis na versão de destino.  
   
--   Ele filtra os controles personalizados da **Caixa de ferramentas** para remover aqueles que não estão disponíveis na versão de destino e mostrar somente os controles mais atualizados quando vários controles estão disponíveis.  
+- Ele filtra os controles personalizados da **Caixa de ferramentas** para remover aqueles que não estão disponíveis na versão de destino e mostrar somente os controles mais atualizados quando vários controles estão disponíveis.  
   
--   Ele filtra o IntelliSense para omitir os recursos de idioma que não estão disponíveis na versão de destino.  
+- Ele filtra o IntelliSense para omitir os recursos de idioma que não estão disponíveis na versão de destino.  
   
--   Ele filtra as propriedades na janela **Propriedades** para omitir aquelas que não estão disponíveis na versão de destino.  
+- Ele filtra as propriedades na janela **Propriedades** para omitir aquelas que não estão disponíveis na versão de destino.  
   
--   Ele filtra as opções de menu para omitir as opções que não estão disponíveis na versão de destino.  
+- Ele filtra as opções de menu para omitir as opções que não estão disponíveis na versão de destino.  
   
--   Para builds, ele usa a versão do compilador e as opções do compilador apropriadas para a versão de destino.  
+- Para builds, ele usa a versão do compilador e as opções do compilador apropriadas para a versão de destino.  
   
 > [!NOTE]
 >  A definição de destino da estrutura não assegura que o aplicativo será executado corretamente. É necessário testar o aplicativo para ter certeza de que ele é executado na versão de destino. Não é possível definir como destino versões de estrutura anteriores ao .NET Framework 2.0.  

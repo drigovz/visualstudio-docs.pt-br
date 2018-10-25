@@ -30,12 +30,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5afabc774165ac001545c084a77cba6d165cf88b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2b7bb6c990567a483ab28d215019fe1b259d166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181513"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862080"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Criando aplicativos ClickOnce para a implantação por terceiros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,13 +92,13 @@ Nem todos os desenvolvedores que estão criando implantações do ClickOnce plan
   
  Há três maneiras de que o cliente possa assinar o manifesto de implantação nessa situação:  
   
-1.  O cliente pode usar um certificado válido emitido por uma autoridade de certificação (CA).  
+1. O cliente pode usar um certificado válido emitido por uma autoridade de certificação (CA).  
   
-2.  Como uma variação dessa abordagem, o cliente pode escolher assinar seu manifesto de implantação com um certificado autoassinado. A desvantagem é que ele fará com que o aplicativo para exibir as palavras "Editor desconhecido" quando o usuário é perguntado se deseja instalá-lo. No entanto, a vantagem é que ele impede que os clientes menores de precisar gastar tempo e dinheiro necessário para um certificado emitido por uma autoridade de certificação.  
+2. Como uma variação dessa abordagem, o cliente pode escolher assinar seu manifesto de implantação com um certificado autoassinado. A desvantagem é que ele fará com que o aplicativo para exibir as palavras "Editor desconhecido" quando o usuário é perguntado se deseja instalá-lo. No entanto, a vantagem é que ele impede que os clientes menores de precisar gastar tempo e dinheiro necessário para um certificado emitido por uma autoridade de certificação.  
   
-3.  Por fim, o desenvolvedor pode incluir seu próprio certificado autoassinado no pacote de instalação. Isso apresenta os problemas potenciais com identidade do aplicativo discutida anteriormente neste tópico.  
+3. Por fim, o desenvolvedor pode incluir seu próprio certificado autoassinado no pacote de instalação. Isso apresenta os problemas potenciais com identidade do aplicativo discutida anteriormente neste tópico.  
   
- A desvantagem para o método de projeto de implantação de instalação é o tempo e as despesas necessários para compilar um aplicativo de implantação personalizada.  
+   A desvantagem para o método de projeto de implantação de instalação é o tempo e as despesas necessários para compilar um aplicativo de implantação personalizada.  
   
 ### <a name="have-customer-generate-deployment-manifest"></a>Ter o cliente gerar o manifesto de implantação  
  Uma terceira estratégia de implantação possíveis é entregar somente os arquivos de aplicativo e o manifesto do aplicativo desativado para o cliente. Nesse cenário, o cliente é responsável por usar o SDK do .NET Framework para gerar e assinar o manifesto de implantação.  

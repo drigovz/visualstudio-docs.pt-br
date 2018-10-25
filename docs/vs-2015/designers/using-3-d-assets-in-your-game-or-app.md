@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e04f4c82e6f11f2659b4cc65549efb291009b720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226298"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863588"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Usando ativos 3D no jogo ou no aplicativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,18 +57,18 @@ Este artigo descreve como é possível usar o [!INCLUDE[vsprvs](../includes/vspr
   
 #### <a name="to-add-an-asset-to-your-build"></a>Para adicionar um ativo à sua compilação  
   
-1.  No **Gerenciador de Soluções**, no seu projeto, abra o menu de atalho do ativo e selecione **Propriedades**. A caixa de diálogo **Página de Propriedades** do ativo é exibida.  
+1. No **Gerenciador de Soluções**, no seu projeto, abra o menu de atalho do ativo e selecione **Propriedades**. A caixa de diálogo **Página de Propriedades** do ativo é exibida.  
   
-2.  Verifique se as propriedades **Configuração** e **Plataforma** estão definidas para os valores aos quais você deseja aplicar as suas alterações.  
+2. Verifique se as propriedades **Configuração** e **Plataforma** estão definidas para os valores aos quais você deseja aplicar as suas alterações.  
   
-3.  Em **Propriedades da Configuração**, escolha **Geral** e, na grade de propriedades, em **Geral**, defina a propriedade **Tipo de Item** para o tipo de item do pipeline de conteúdo adequado. Por exemplo, no caso um arquivo de imagem ou de textura, escolha **Pipeline de Conteúdo da Imagem**.  
+3. Em **Propriedades da Configuração**, escolha **Geral** e, na grade de propriedades, em **Geral**, defina a propriedade **Tipo de Item** para o tipo de item do pipeline de conteúdo adequado. Por exemplo, no caso um arquivo de imagem ou de textura, escolha **Pipeline de Conteúdo da Imagem**.  
   
-    > [!IMPORTANT]
-    >  Por padrão, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] presume que muitos tipos de arquivos de imagem devem ser classificados usando o tipo de item **Imagem**, integrado ao [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Portanto, você precisa alterar a propriedade **Tipo de Item** de cada imagem que deseja que seja processada pelo pipeline de conteúdo da imagem. Outros tipos de arquivos de origem de pipeline de conteúdo para modelos 3D e gráficos de sombreador visual assumem como padrão o **Tipo de Item** correto.  
+   > [!IMPORTANT]
+   >  Por padrão, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] presume que muitos tipos de arquivos de imagem devem ser classificados usando o tipo de item **Imagem**, integrado ao [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Portanto, você precisa alterar a propriedade **Tipo de Item** de cada imagem que deseja que seja processada pelo pipeline de conteúdo da imagem. Outros tipos de arquivos de origem de pipeline de conteúdo para modelos 3D e gráficos de sombreador visual assumem como padrão o **Tipo de Item** correto.  
   
-4.  Selecione o botão **OK**.  
+4. Selecione o botão **OK**.  
   
- Seguem os três tipos de item de pipeline de conteúdo e seus tipos de arquivo de origem e saída associados.  
+   Seguem os três tipos de item de pipeline de conteúdo e seus tipos de arquivo de origem e saída associados.  
   
 |Tipo de item|Tipos de arquivo de origem|Formato do arquivo de saída|  
 |---------------|-----------------------|------------------------|  

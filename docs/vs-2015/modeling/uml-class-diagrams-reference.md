@@ -27,12 +27,12 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 890c69a4cde928e645dd2ede9fbbb27f66a44794
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cad1f9d5e0e4cefe6e0fba6ec4e919e78f00dd4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220113"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855842"
 ---
 # <a name="uml-class-diagrams-reference"></a>Diagramas de classe UML: referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,30 +49,30 @@ Um diagrama de classe UML descreve o objeto e as informações de estruturas usa
 ## <a name="reading-class-diagrams"></a>Diagramas de classe de leitura  
  A tabela nesta seção descreve os elementos que você pode ver no diagrama de classe UML. Para obter informações sobre as propriedades desses elementos, consulte os tópicos a seguir:  
   
--   [Propriedades de tipos em diagramas de classe UML](../modeling/properties-of-types-on-uml-class-diagrams.md)  
+- [Propriedades de tipos em diagramas de classe UML](../modeling/properties-of-types-on-uml-class-diagrams.md)  
   
--   [Propriedades de atributos em diagramas de classe UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [Propriedades de atributos em diagramas de classe UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Propriedades de operações em diagramas de classe UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [Propriedades de operações em diagramas de classe UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [Propriedades de associações em diagramas de classes UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [Propriedades de associações em diagramas de classes UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
- ![Três classes mostrando relações e as propriedades](../modeling/media/uml-classovreading.png "UML_ClassOvReading")  
+  ![Três classes mostrando relações e as propriedades](../modeling/media/uml-classovreading.png "UML_ClassOvReading")  
   
-|**Forma**|**Elemento**|**Descrição**|  
-|---------------|-----------------|---------------------|  
-|1|**Class**|Uma definição de objetos que compartilham dado características estruturais ou comportamentais. Para obter mais informações, consulte [diagramas de classe de propriedades de tipos em UML](../modeling/properties-of-types-on-uml-class-diagrams.md).|  
-|1|Classificador|O nome geral para uma classe, interface ou enumeração. Casos de uso de componentes, e os atores são também classificadores.|  
-|2|Recolher / expandir de controles|Se você não conseguir ver os detalhes de um classificador, clique no expansor no canto superior esquerdo do classificador. Você também terá que clique em [+] em cada segmento.|  
-|3|**Atributo**|Um valor tipado anexado a cada instância de um classificador.<br /><br /> Para adicionar um atributo, clique o **atributos** seção e, em seguida, pressione **ENTER**. Digite a assinatura do atributo. Para obter mais informações, consulte [diagramas de classe de propriedades de atributos em UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md).|  
-|4|**operação**|Um método ou função que pode ser executada por instâncias de um classificador. Para adicionar uma operação, clique o **operações** seção e, em seguida, pressione **ENTER**. Digite a assinatura da operação. Para obter mais informações, consulte [diagramas de classe de propriedades de operações em UML](../modeling/properties-of-operations-on-uml-class-diagrams.md).|  
-|5|**Associação**|Uma relação entre os membros dos dois classificadores. Para obter mais informações, consulte [diagramas de classe de propriedades de associações em UML](../modeling/properties-of-associations-on-uml-class-diagrams.md).|  
-|5a|**Agregação**|Uma associação que representa uma relação de propriedade compartilhada. O **agregação** propriedade da função proprietário é definida como **compartilhado**.|  
-|5b|**Composição**|Uma associação que representa uma relação de parte do todo. O **agregação** propriedade da função proprietário é definida como **composto**.|  
-|6|**Nome da associação**|O nome de uma associação. O nome pode ser deixado vazio.|  
-|7|**Nome da função**|O nome de uma função, ou seja, uma extremidade de uma associação. Pode ser usado para fazer referência ao objeto associado. Na ilustração anterior, para qualquer ordem `O`, `O.ChosenMenu` é seu Menu associado.<br /><br /> Cada função tem suas próprias propriedades listadas nas propriedades da associação.|  
-|8|**Multiplicidade**|Indica quantos dos objetos no fim pode ser vinculada a cada objeto em outro. No exemplo, cada pedido deve ser vinculado a exatamente um Menu.<br /><br /> **\*** significa que não há nenhum limite superior para o número de links que podem ser feitas.|  
-|9|**Generalização**|O *específicos* classificador herda parte de sua definição da *geral* classificador. O classificador geral é no final de seta do conector. Atributos, associações e operações são herdadas pelo classificador específico.<br /><br /> Use o **herança** ferramenta para criar uma generalização entre os dois classificadores.|  
+| **Forma** |       **Elemento**        |                                                                                                                                                             **Descrição**                                                                                                                                                              |
+|-----------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     1     |        **Class**         |                                                           Uma definição de objetos que compartilham dado características estruturais ou comportamentais. Para obter mais informações, consulte [diagramas de classe de propriedades de tipos em UML](../modeling/properties-of-types-on-uml-class-diagrams.md).                                                            |
+|     1     |        Classificador        |                                                                                                             O nome geral para uma classe, interface ou enumeração. Casos de uso de componentes, e os atores são também classificadores.                                                                                                             |
+|     2     | Recolher / expandir de controles |                                                                                         Se você não conseguir ver os detalhes de um classificador, clique no expansor no canto superior esquerdo do classificador. Você também terá que clique em [+] em cada segmento.                                                                                         |
+|     3     |      **Atributo**       |   Um valor tipado anexado a cada instância de um classificador.<br /><br /> Para adicionar um atributo, clique o **atributos** seção e, em seguida, pressione **ENTER**. Digite a assinatura do atributo. Para obter mais informações, consulte [diagramas de classe de propriedades de atributos em UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md).   |
+|     4     |      **operação**       | Um método ou função que pode ser executada por instâncias de um classificador. Para adicionar uma operação, clique o **operações** seção e, em seguida, pressione **ENTER**. Digite a assinatura da operação. Para obter mais informações, consulte [diagramas de classe de propriedades de operações em UML](../modeling/properties-of-operations-on-uml-class-diagrams.md). |
+|     5     |     **Associação**      |                                                                  Uma relação entre os membros dos dois classificadores. Para obter mais informações, consulte [diagramas de classe de propriedades de associações em UML](../modeling/properties-of-associations-on-uml-class-diagrams.md).                                                                   |
+|    5a     |     **Agregação**      |                                                                                                    Uma associação que representa uma relação de propriedade compartilhada. O **agregação** propriedade da função proprietário é definida como **compartilhado**.                                                                                                     |
+|    5b     |     **Composição**      |                                                                                                      Uma associação que representa uma relação de parte do todo. O **agregação** propriedade da função proprietário é definida como **composto**.                                                                                                      |
+|     6     |   **Nome da associação**   |                                                                                                                                         O nome de uma associação. O nome pode ser deixado vazio.                                                                                                                                          |
+|     7     |      **Nome da função**       |                       O nome de uma função, ou seja, uma extremidade de uma associação. Pode ser usado para fazer referência ao objeto associado. Na ilustração anterior, para qualquer ordem `O`, `O.ChosenMenu` é seu Menu associado.<br /><br /> Cada função tem suas próprias propriedades listadas nas propriedades da associação.                       |
+|     8     |     **Multiplicidade**     |                                         Indica quantos dos objetos no fim pode ser vinculada a cada objeto em outro. No exemplo, cada pedido deve ser vinculado a exatamente um Menu.<br /><br /> **\\**\* significa que não há nenhum limite superior para o número de links que podem ser feitas.                                         |
+|     9     |    **Generalização**    |  O *específicos* classificador herda parte de sua definição da *geral* classificador. O classificador geral é no final de seta do conector. Atributos, associações e operações são herdadas pelo classificador específico.<br /><br /> Use o **herança** ferramenta para criar uma generalização entre os dois classificadores.   |
   
  ![Pacote que contém a interface e a enumeração](../modeling/media/uml-classovpackage.png "UML_ClassOvPackage")  
   

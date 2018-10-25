@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fc773f9b4945a16bac0a9726e0a06f94726fad96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 230cd5ae3bd4ae0d46baf4fe48f00eca9ffe879d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236750"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825109"
 ---
 # <a name="develop-tests-from-a-model"></a>Desenvolver testes por meio de um modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,19 +66,19 @@ Você pode usar os requisitos e modelos de arquitetura para ajudar você a organ
   
 ###### <a name="to-link-tests-to-a-use-case"></a>Para vincular os testes para um caso de uso  
   
-1.  No [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], criar um requisito e um conjunto de testes de base nele. Para saber como fazer isso, consulte [testando o aplicativo](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. No [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], criar um requisito e um conjunto de testes de base nele. Para saber como fazer isso, consulte [testando o aplicativo](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-     O requisito de que você cria é um item de trabalho em [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Pode ser um item de trabalho de história de usuário, requisito ou caso de uso, dependendo do modelo de processo que usa o seu projeto com [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para obter mais informações, consulte [acompanhar o trabalho usando o Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+    O requisito de que você cria é um item de trabalho em [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Pode ser um item de trabalho de história de usuário, requisito ou caso de uso, dependendo do modelo de processo que usa o seu projeto com [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para obter mais informações, consulte [acompanhar o trabalho usando o Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
-2.  Vincule o item de trabalho de requisito para um ou mais casos de uso em seu modelo.  
+2. Vincule o item de trabalho de requisito para um ou mais casos de uso em seu modelo.  
   
-     Em um diagrama de caso de uso, um caso de uso com o botão direito e, em seguida, clique em **Link para o Item de trabalho**. Para obter mais informações, consulte [vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md).  
+    Em um diagrama de caso de uso, um caso de uso com o botão direito e, em seguida, clique em **Link para o Item de trabalho**. Para obter mais informações, consulte [vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md).  
   
-3.  Adicione ao conjunto de testes, casos de teste que verificam se os casos de uso.  
+3. Adicione ao conjunto de testes, casos de teste que verificam se os casos de uso.  
   
- Normalmente, cada item de trabalho de história ou requisito de usuário será vinculado a vários casos de uso em seu modelo, e cada caso de uso será vinculado a vários requisitos ou histórias de usuários. Isso ocorre porque cada história de usuário ou requisito aborda um conjunto de tarefas que desenvolver vários casos de uso. Por exemplo, em uma iteração inicial do seu projeto, você pode desenvolver a história de usuário básico no qual um cliente pode escolher itens de um catálogo e que eles sejam entregues. Em uma iteração posterior, o texto pode ser que o usuário paga quando concluir a ordem e o fornecedor recebe o dinheiro depois que ele envia as mercadorias.  Cada história adiciona uma cláusula a pós-condição de caso de uso de bens de ordem.  
+   Normalmente, cada item de trabalho de história ou requisito de usuário será vinculado a vários casos de uso em seu modelo, e cada caso de uso será vinculado a vários requisitos ou histórias de usuários. Isso ocorre porque cada história de usuário ou requisito aborda um conjunto de tarefas que desenvolver vários casos de uso. Por exemplo, em uma iteração inicial do seu projeto, você pode desenvolver a história de usuário básico no qual um cliente pode escolher itens de um catálogo e que eles sejam entregues. Em uma iteração posterior, o texto pode ser que o usuário paga quando concluir a ordem e o fornecedor recebe o dinheiro depois que ele envia as mercadorias.  Cada história adiciona uma cláusula a pós-condição de caso de uso de bens de ordem.  
   
- Você pode criar links separados de requisitos para as cláusulas de pós-condição escrevendo essas cláusulas em comentários separados no diagrama de caso de uso. Você pode vincular cada comentário a um item de trabalho de requisito e vincular o comentário para o caso de uso no diagrama.  
+   Você pode criar links separados de requisitos para as cláusulas de pós-condição escrevendo essas cláusulas em comentários separados no diagrama de caso de uso. Você pode vincular cada comentário a um item de trabalho de requisito e vincular o comentário para o caso de uso no diagrama.  
   
 ### <a name="base-tests-on-the-requirements-types"></a>Testes de base nos tipos de requisitos  
  Os tipos, o que é, as classes, interfaces e enumerações, de um modelo de requisitos descrevem os conceitos e as relações em termos de como os usuários pensam e se comunicar sobre seus negócios. Ele exclui tipos preocupado apenas com o design interno do sistema.  

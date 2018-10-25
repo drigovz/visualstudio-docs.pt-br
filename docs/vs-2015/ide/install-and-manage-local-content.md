@@ -29,12 +29,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8a67a9105314ad73076d3a8b12d51c23f83097
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193825"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832726"
 ---
 # <a name="install-and-manage-local-content"></a>Instalar e gerenciar o conteúdo local
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,9 +109,9 @@ Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover
   
 #### <a name="to-update-local-content"></a>Para atualizar o conteúdo local  
   
--   No canto inferior direito da barra de status, escolha o link **Clique aqui para baixar agora**.  
+- No canto inferior direito da barra de status, escolha o link **Clique aqui para baixar agora**.  
   
- Os tempos de atualização podem variar, mas você pode exibir o progresso da atualização na barra de status.  
+  Os tempos de atualização podem variar, mas você pode exibir o progresso da atualização na barra de status.  
   
 ## <a name="moving-local-content"></a>Movendo o conteúdo local  
  Você pode economizar espaço em disco movendo conteúdo instalado do computador local para um compartilhamento de rede ou outra partição no computador local.  

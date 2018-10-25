@@ -18,32 +18,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a2a89a0c838a91559c6066bea341924e5ca627e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0091054c0c0d2cfb7f19f2ca46839cfdcf47832b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774640"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861183"
 ---
 # <a name="how-to-add-a-resource-file"></a>Como: adicionar um arquivo de recurso
   Os comandos para adicionar arquivos de recurso é no menu de atalho do nó da solução e nós de recurso no Gerenciador de soluções. Para obter mais informações, consulte [soluções do SharePoint Localizando](../sharepoint/localizing-sharepoint-solutions.md).  
   
 ### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>Para adicionar um arquivo de recurso global para uma solução do SharePoint  
   
-1.  No [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], abra uma solução do SharePoint.  
+1. No [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], abra uma solução do SharePoint.  
   
-2.  Na **Gerenciador de soluções**, escolha um nó de projeto do SharePoint e, em seguida, na barra de menus, escolha **Project** > **Add New Item**.  
+2. Na **Gerenciador de soluções**, escolha um nó de projeto do SharePoint e, em seguida, na barra de menus, escolha **Project** > **Add New Item**.  
   
-3.  No **Adicionar Novo Item** diálogo caixa, escolha o **arquivo de recursos globais** modelo e, em seguida, escolha o **adicionar** botão.  
+3. No **Adicionar Novo Item** diálogo caixa, escolha o **arquivo de recursos globais** modelo e, em seguida, escolha o **adicionar** botão.  
   
-    > [!NOTE]  
-    >  O modelo de item de projeto do arquivo de recursos globais só aparece quando um item de projeto do SharePoint é selecionado.  
+   > [!NOTE]  
+   >  O modelo de item de projeto do arquivo de recursos globais só aparece quando um item de projeto do SharePoint é selecionado.  
   
-4.  No **adicionar recurso** caixa de diálogo, escolha uma cultura para o arquivo de recurso, como o inglês (Estados Unidos).  
+4. No **adicionar recurso** caixa de diálogo, escolha uma cultura para o arquivo de recurso, como o inglês (Estados Unidos).  
   
-     Esta etapa adiciona um arquivo de recurso global à sua solução no formato, Resource_x_**.** _cultura_**.** resx, tais como, *Resource1.en resx*.  
+    Esta etapa adiciona um arquivo de recurso global à sua solução no formato, Resource_x_**.** <em>cultura</em><strong>.</strong> resx, tais como, *Resource1.en resx*.  
   
-5.  Quando o **Editor de recursos** é aberto no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], adicionar recursos ao arquivo de recurso.  
+5. Quando o **Editor de recursos** é aberto no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], adicionar recursos ao arquivo de recurso.  
   
 ### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>Para adicionar um arquivo de recurso a um recurso do SharePoint  
   

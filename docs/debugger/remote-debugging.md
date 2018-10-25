@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9edfae9eb2109a81208cd864dd992dee565f7958
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 6718c3390e26b0949d26805e24bcffb17e4c6deb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101070"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872428"
 ---
 # <a name="remote-debugging"></a>Depuração remota
 Você pode depurar um aplicativo do Visual Studio que tenha sido implantado em um computador diferente. Para fazer isso, você deve usar o depurador remoto do Visual Studio.
@@ -95,25 +95,25 @@ Para depuração no ASP.NET e outros ambientes de servidor, você deve executar 
 
  Se você quiser configurar o depurador remoto como um serviço, siga estas etapas.
 
-1.  Localizar o **Assistente de configuração do depurador remoto** (rdbgwiz.exe). (Isso é um aplicativo separado do depurador remoto.) Ele está disponível apenas quando você instala as ferramentas remotas. Ele não é instalado com o Visual Studio.
+1. Localizar o **Assistente de configuração do depurador remoto** (rdbgwiz.exe). (Isso é um aplicativo separado do depurador remoto.) Ele está disponível apenas quando você instala as ferramentas remotas. Ele não é instalado com o Visual Studio.
 
-2.  Começar a executar o Assistente de configuração. Quando a primeira página é exibida, clique em **próxima**.
+2. Começar a executar o Assistente de configuração. Quando a primeira página é exibida, clique em **próxima**.
 
-3.  Verifique as **executar o depurador remoto do Visual Studio 2015, como um serviço** caixa de seleção.
+3. Verifique as **executar o depurador remoto do Visual Studio 2015, como um serviço** caixa de seleção.
 
-4.  Adicione o nome da conta de usuário e senha.
+4. Adicione o nome da conta de usuário e senha.
 
-     Talvez você precise adicionar o **fazer logon como um serviço** direito de usuário dessa conta (localizar **política de segurança Local** (secpol. msc) na **iniciar** página ou janela (ou tipo  **secpol** em um prompt de comando). Quando a janela é exibida, clique duas vezes **atribuição de direitos de usuário**, em seguida, localize **fazer logon como um serviço** no painel direito. Clique duas vezes nesse item. Adicione a conta de usuário para o **propriedades** janela e clique em **Okey**). Clique em **Avançar**.
+    Talvez você precise adicionar o **fazer logon como um serviço** direito de usuário dessa conta (localizar **política de segurança Local** (secpol. msc) na **iniciar** página ou janela (ou tipo  **secpol** em um prompt de comando). Quando a janela é exibida, clique duas vezes **atribuição de direitos de usuário**, em seguida, localize **fazer logon como um serviço** no painel direito. Clique duas vezes nesse item. Adicione a conta de usuário para o **propriedades** janela e clique em **Okey**). Clique em **Avançar**.
 
-5.  Selecione o tipo de rede que você deseja que as ferramentas remotas para se comunicar com. Pelo menos um tipo de rede deve ser selecionado. Se os computadores estiverem conectados por meio de um domínio, você deve escolher o primeiro item. Se os computadores estiverem conectados por meio de um grupo de trabalho ou um grupo doméstico, você deve escolher os itens de segundo ou terceiro. Clique em **Avançar**.
+5. Selecione o tipo de rede que você deseja que as ferramentas remotas para se comunicar com. Pelo menos um tipo de rede deve ser selecionado. Se os computadores estiverem conectados por meio de um domínio, você deve escolher o primeiro item. Se os computadores estiverem conectados por meio de um grupo de trabalho ou um grupo doméstico, você deve escolher os itens de segundo ou terceiro. Clique em **Avançar**.
 
-6.  Se o serviço pode ser iniciado, você verá **concluiu com êxito o Assistente de configuração de depurador Visual remoto Studio**. Se o serviço não pode ser iniciado, você verá **Falha ao concluir o Assistente de configuração de depurador Visual remoto Studio**. A página também fornece algumas dicas a seguir para restaurar o serviço para iniciar.
+6. Se o serviço pode ser iniciado, você verá **concluiu com êxito o Assistente de configuração de depurador Visual remoto Studio**. Se o serviço não pode ser iniciado, você verá **Falha ao concluir o Assistente de configuração de depurador Visual remoto Studio**. A página também fornece algumas dicas a seguir para restaurar o serviço para iniciar.
 
-7.  Clique em **Finalizar**.
+7. Clique em **Finalizar**.
 
- Neste ponto, o depurador remoto está em execução como um serviço. Você pode verificar isso acessando **painel de controle > serviços** e procurando **depurador remoto do Visual Studio 2015**.
+   Neste ponto, o depurador remoto está em execução como um serviço. Você pode verificar isso acessando **painel de controle > serviços** e procurando **depurador remoto do Visual Studio 2015**.
 
- Você pode parar e iniciar o serviço de depurador remoto do **painel de controle > serviços**.
+   Você pode parar e iniciar o serviço de depurador remoto do **painel de controle > serviços**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurar a depuração com símbolos remotos
 

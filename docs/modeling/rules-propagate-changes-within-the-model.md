@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3e1abc17e9675423359c6f850056a2fedf062e01
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8f506b71240024206523821080cdf958660aa963
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567016"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865955"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regras propagam alterações dentro do modelo
 Você pode criar uma regra do repositório para propagar uma alteração de um elemento para outro na visualização e o SDK de modelagem (VMSDK). Quando ocorre uma alteração a qualquer elemento na Store, as regras estão agendadas para ser executado, normalmente, quando a transação externa é confirmada. Há diferentes tipos de regras para diferentes tipos de eventos, como adicionar um elemento ou excluí-lo. Você pode anexar as regras para tipos específicos de elementos, formas ou diagramas. Muitos recursos internos são definidos por regras: por exemplo, as regras de garantem que um diagrama é atualizado quando o modelo é alterado. Você pode personalizar sua linguagem específica do domínio, adicionando suas próprias regras.
@@ -67,7 +67,6 @@ namespace ExampleNamespace
    }
  }
 }
-
 ```
 
 > [!NOTE]
@@ -75,13 +74,13 @@ namespace ExampleNamespace
 
 ### <a name="to-define-a-rule"></a>Para definir uma regra
 
-1.  Defina a regra como uma classe prefixada com o `RuleOn` atributo. O atributo associa a regra com uma das suas classes de domínio, relações ou elementos de diagrama. A regra será aplicada a cada instância dessa classe, que pode ser abstrato.
+1. Defina a regra como uma classe prefixada com o `RuleOn` atributo. O atributo associa a regra com uma das suas classes de domínio, relações ou elementos de diagrama. A regra será aplicada a cada instância dessa classe, que pode ser abstrato.
 
-2.  Registre-se a regra ao adicioná-lo para o conjunto retornado por `GetCustomDomainModelTypes()` em sua classe de modelo de domínio.
+2. Registre-se a regra ao adicioná-lo para o conjunto retornado por `GetCustomDomainModelTypes()` em sua classe de modelo de domínio.
 
-3.  Derive a classe de regra de uma das classes abstratas de regra e escrever o código do método de execução.
+3. Derive a classe de regra de uma das classes abstratas de regra e escrever o código do método de execução.
 
- As seções a seguir descrevem essas etapas mais detalhadamente.
+   As seções a seguir descrevem essas etapas mais detalhadamente.
 
 ### <a name="to-define-a-rule-on-a-domain-class"></a>Para definir uma regra em uma classe de domínio
 
@@ -129,24 +128,26 @@ namespace ExampleNamespace
 
 ### <a name="to-write-the-code-of-the-rule"></a>Escrever o código da regra
 
--   Derive a classe de regra de uma das seguintes classes base:
+- Derive a classe de regra de uma das seguintes classes base:
 
-    |Classe base|Disparador|
-    |----------------|-------------|
-    |<xref:Microsoft.VisualStudio.Modeling.AddRule>|Um elemento, um link ou uma forma é adicionada.<br /><br /> Use isso para detectar novas relações, além de novos elementos.|
-    |<xref:Microsoft.VisualStudio.Modeling.ChangeRule>|Um valor de propriedade de domínio é alterado. O argumento de método fornece os valores novos e antigos.<br /><br /> Para formas, esta regra é disparada quando o interno `AbsoluteBounds` alterações de propriedade, se a forma é movida.<br /><br /> Em muitos casos, é mais conveniente substituir `OnValueChanged` ou `OnValueChanging` no manipulador de propriedade. Esses métodos são chamados imediatamente antes e após a alteração. Por outro lado, a regra é executada normalmente no final da transação. Para obter mais informações, consulte [manipuladores de alteração de valor de propriedade de domínio](../modeling/domain-property-value-change-handlers.md). **Observação:** essa regra não é disparada quando um link é criado ou excluído. Em vez disso, escreva uma `AddRule` e um `DeleteRule` para a relação de domínio.|
-    |<xref:Microsoft.VisualStudio.Modeling.DeletingRule>|Acionado quando um elemento ou o link está prestes a ser excluído. A propriedade ModelElement.IsDeleting é true até o término da transação.|
-    |<xref:Microsoft.VisualStudio.Modeling.DeleteRule>|Executado quando um elemento ou um link foi excluído. A regra é executada depois que todas as outras regras foram executadas, incluindo DeletingRules. ModelElement.IsDeleting for false, e ModelElement.IsDeleted for true. Para permitir um Desfazer subsequente, o elemento não é realmente removido da memória, mas ele é removido do Store.ElementDirectory.|
-    |<xref:Microsoft.VisualStudio.Modeling.MoveRule>|Um elemento é movido de um repositório de partição para outra.<br /><br /> (Observe que isso não está relacionado à posição de uma forma gráfica).|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule>|Essa regra se aplica somente a relações de domínio. Se você atribuir explicitamente um elemento de modelo para ambas as extremidades de um link é disparado.|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule>|Acionado quando a ordenação de links para ou de um elemento é alterada usando os métodos MoveBefore ou MoveToIndex em um link.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>|Executado quando uma transação é criada.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>|Executado quando a transação está prestes a ser confirmada.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>|Executado quando a transação está prestes a ser revertida.|
 
--   Cada classe tem um método que você substituir. Tipo `override` em sua classe para descobri-lo. O parâmetro deste método identifica o elemento que está sendo alterado.
+  | Classe base | Disparador |
+  |-|-|
+  | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Um elemento, um link ou uma forma é adicionada.<br /><br /> Use isso para detectar novas relações, além de novos elementos. |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Um valor de propriedade de domínio é alterado. O argumento de método fornece os valores novos e antigos.<br /><br /> Para formas, esta regra é disparada quando o interno `AbsoluteBounds` alterações de propriedade, se a forma é movida.<br /><br /> Em muitos casos, é mais conveniente substituir `OnValueChanged` ou `OnValueChanging` no manipulador de propriedade. Esses métodos são chamados imediatamente antes e após a alteração. Por outro lado, a regra é executada normalmente no final da transação. Para obter mais informações, consulte [manipuladores de alteração de valor de propriedade de domínio](../modeling/domain-property-value-change-handlers.md). **Observação:** essa regra não é disparada quando um link é criado ou excluído. Em vez disso, escreva uma `AddRule` e um `DeleteRule` para a relação de domínio. |
+  | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | Acionado quando um elemento ou o link está prestes a ser excluído. A propriedade ModelElement.IsDeleting é true até o término da transação. |
+  | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | Executado quando um elemento ou um link foi excluído. A regra é executada depois que todas as outras regras foram executadas, incluindo DeletingRules. ModelElement.IsDeleting for false, e ModelElement.IsDeleted for true. Para permitir um Desfazer subsequente, o elemento não é realmente removido da memória, mas ele é removido do Store.ElementDirectory. |
+  | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | Um elemento é movido de um repositório de partição para outra.<br /><br /> (Observe que isso não está relacionado à posição de uma forma gráfica). |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule> | Essa regra se aplica somente a relações de domínio. Se você atribuir explicitamente um elemento de modelo para ambas as extremidades de um link é disparado. |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule> | Acionado quando a ordenação de links para ou de um elemento é alterada usando os métodos MoveBefore ou MoveToIndex em um link. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | Executado quando uma transação é criada. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | Executado quando a transação está prestes a ser confirmada. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | Executado quando a transação está prestes a ser revertida. |
 
- Observe os seguintes pontos sobre as regras:
+
+- Cada classe tem um método que você substituir. Tipo `override` em sua classe para descobri-lo. O parâmetro deste método identifica o elemento que está sendo alterado.
+
+  Observe os seguintes pontos sobre as regras:
 
 1.  O conjunto de alterações em uma transação pode disparar regras de muitos. Geralmente, as regras são executadas quando a transação externa é confirmada. Elas são executadas em uma ordem não especificada.
 
@@ -208,7 +209,6 @@ namespace Company.TaskRuleExample
   }
 
 }
-
 ```
 
 ## <a name="see-also"></a>Consulte também

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06d1c518b55c6f6df6a579fe1603c556201e7a18
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c76f9c533fd83584c12f03b4e0c0f1d44e281c8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280825"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861820"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Depurar JavaScript usando o console no Visual Studio
   
@@ -55,95 +55,95 @@ ms.locfileid: "44280825"
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Para depurar o código JavaScript no aplicativo FlipView  
   
-1.  Crie uma nova solução no Visual Studio escolhendo **arquivo** > **novo projeto**.  
+1. Crie uma nova solução no Visual Studio escolhendo **arquivo** > **novo projeto**.  
   
-2.  Escolher **JavaScript** > **Windows Universal**e, em seguida, escolha **WinJS App**.  
+2. Escolher **JavaScript** > **Windows Universal**e, em seguida, escolha **WinJS App**.  
   
-3.  Digite um nome para o projeto, como `FlipViewApp`e escolha **Okey** para criar o aplicativo.  
+3. Digite um nome para o projeto, como `FlipViewApp`e escolha **Okey** para criar o aplicativo.  
   
-4.  No elemento de corpo de index. HTML, substitua o código HTML existente por este código:  
+4. No elemento de corpo de index. HTML, substitua o código HTML existente por este código:  
   
-    ```html  
-    <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
-             style="display:none">  
-        <div class="fixedItem" >  
-            <img src="#" data-win-bind="src: flipImg" />  
-        </div>  
-    </div>  
-    <div id="fView" data-win-control="WinJS.UI.FlipView" data-win-options="{  
-        itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
-    </div>  
-    ```  
+   ```html  
+   <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
+            style="display:none">  
+       <div class="fixedItem" >  
+           <img src="#" data-win-bind="src: flipImg" />  
+       </div>  
+   </div>  
+   <div id="fView" data-win-control="WinJS.UI.FlipView" data-win-options="{  
+       itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
+   </div>  
+   ```  
   
-5.  Abra default.css e adicione o seguinte CSS para o seletor `#fView`:  
+5. Abra default.css e adicione o seguinte CSS para o seletor `#fView`:  
   
-    ```css  
-    #fView {  
-        background-color:#0094ff;  
-        height: 500px;  
-        margin: 25px;  
-    }  
-    ```  
+   ```css  
+   #fView {  
+       background-color:#0094ff;  
+       height: 500px;  
+       margin: 25px;  
+   }  
+   ```  
   
-6.  Abra default.js e substitua o código pelo seguinte código JavaScript:  
+6. Abra default.js e substitua o código pelo seguinte código JavaScript:  
   
-    ```javascript  
-    (function () {  
-        "use strict";  
+   ```javascript  
+   (function () {  
+       "use strict";  
   
-        var app = WinJS.Application;  
-        var activation = Windows.ApplicationModel.Activation;  
+       var app = WinJS.Application;  
+       var activation = Windows.ApplicationModel.Activation;  
   
-        var myData = [];  
-        for (var x = 0; x < 4; x++) {  
-            myData[x] = { flipImg: "/images/logo.png" }  
-        };  
+       var myData = [];  
+       for (var x = 0; x < 4; x++) {  
+           myData[x] = { flipImg: "/images/logo.png" }  
+       };  
   
-        var pages = new WinJS.Binding.List(myData, { proxy: true });  
+       var pages = new WinJS.Binding.List(myData, { proxy: true });  
   
-        app.onactivated = function (args) {  
-            if (args.detail.kind === activation.ActivationKind.launch) {  
-                if (args.detail.previousExecutionState !==  
-                activation.ApplicationExecutionState.terminated) {  
-                    // TODO: . . .  
-                } else {  
-                    // TODO: . . .  
-                }  
-                args.setPromise(WinJS.UI.processAll());  
+       app.onactivated = function (args) {  
+           if (args.detail.kind === activation.ActivationKind.launch) {  
+               if (args.detail.previousExecutionState !==  
+               activation.ApplicationExecutionState.terminated) {  
+                   // TODO: . . .  
+               } else {  
+                   // TODO: . . .  
+               }  
+               args.setPromise(WinJS.UI.processAll());  
   
-                updateImages();  
-            }  
-        };  
+               updateImages();  
+           }  
+       };  
   
-        function updateImages() {  
+       function updateImages() {  
   
-            pages.push(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
-            pages.push(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
-            pages.push(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
+           pages.push(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+           pages.push(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+           pages.push(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
   
-        };  
+       };  
   
-        app.oncheckpoint = function (args) {  
-        };  
+       app.oncheckpoint = function (args) {  
+       };  
   
-        app.start();  
+       app.start();  
   
-        var publicMembers = {  
-            items: pages  
-        };  
+       var publicMembers = {  
+           items: pages  
+       };  
   
-        WinJS.Namespace.define("Data", publicMembers);  
+       WinJS.Namespace.define("Data", publicMembers);  
   
-    })();  
-    ```  
+   })();  
+   ```  
   
-7.  Se um destino de depuração não estiver selecionado, escolha **computador Local** na lista suspensa lista ao lado de **dispositivo** botão o **depurar** barra de ferramentas:  
+7. Se um destino de depuração não estiver selecionado, escolha **computador Local** na lista suspensa lista ao lado de **dispositivo** botão o **depurar** barra de ferramentas:  
   
-     ![Lista de destino de depuração Select](../debugger/media/js_select_target.png "JS_Select_Target")  
+    ![Lista de destino de depuração Select](../debugger/media/js_select_target.png "JS_Select_Target")  
   
-8.  Pressione F5 para iniciar o depurador.  
+8. Pressione F5 para iniciar o depurador.  
   
-     O aplicativo será executado, mas não haverá imagens. Erros APPHOST na janela Console do JavaScript indicam que não há imagens.  
+    O aplicativo será executado, mas não haverá imagens. Erros APPHOST na janela Console do JavaScript indicam que não há imagens.  
   
 9. Com o `FlipView` aplicativo em execução, o tipo `Data.items` no prompt de entrada da janela do console (ao lado de ">>" símbolo) e pressione Enter.  
   

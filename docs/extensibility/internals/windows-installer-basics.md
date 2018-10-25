@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c5044479ca08933f5088101cc088ea3011b4c4
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 73d1462cd6a5dacf57939ae06e7b490235483a60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495538"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843126"
 ---
 # <a name="windows-installer-basics"></a>Noções básicas do Windows Installer
 O Windows Installer instala e desinstala aplicativos ou produtos de software no computador do usuário, executar essas tarefas em unidades chamadas de componentes do Windows Installer (às vezes chamados de WICs ou apenas componentes). Um GUID que identifica cada WIC, que é a unidade básica de instalação e a contagem de referências para as configurações usando o Windows Installer.  
@@ -29,17 +29,17 @@ O Windows Installer instala e desinstala aplicativos ou produtos de software no 
 ## <a name="authoring-a-vspackage"></a>Criação de um VSPackage  
  Windows Installer usa pacotes de instalação, que contêm informações que o Windows Installer precisa para instalar, desinstalar ou reparar um produto e para executar a interface de usuário (UI) de configuração. Cada pacote de instalação inclui um arquivo. msi, que contém um banco de dados de instalação, um fluxo de informações de resumo e fluxos de dados de várias partes da instalação. Para usar o instalador, você deve criar uma instalação. Como o instalador organiza as instalações em torno do conceito de componentes e armazena informações sobre a instalação em um banco de dados relacional, o processo de criação de um pacote de instalação em larga escala envolve as seguintes etapas:  
   
-1.  Planeje sua configuração de criação para dar suporte a suas estratégias de lado a lado e o controle de versão.  
+1. Planeje sua configuração de criação para dar suporte a suas estratégias de lado a lado e o controle de versão.  
   
-2.  Identifica os recursos a serem apresentados aos usuários.  
+2. Identifica os recursos a serem apresentados aos usuários.  
   
-3.  Organize o VSPackage e as dependências em componentes.  
+3. Organize o VSPackage e as dependências em componentes.  
   
-4.  Preencha o banco de dados com informações de instalação.  
+4. Preencha o banco de dados com informações de instalação.  
   
-5.  Valide o pacote de instalação.  
+5. Valide o pacote de instalação.  
   
- Esta documentação está preocupada principalmente com a primeira e terceira etapas do processo. Durante essas etapas você organizar seus recursos de VSPackage em WICs para que você pode estruturar seu controle de versão e preparando estratégia para levar em conta as versões subsequentes do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. As três etapas restantes são abordadas em detalhes na documentação do Windows Installer no SDK da plataforma.  
+   Esta documentação está preocupada principalmente com a primeira e terceira etapas do processo. Durante essas etapas você organizar seus recursos de VSPackage em WICs para que você pode estruturar seu controle de versão e preparando estratégia para levar em conta as versões subsequentes do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. As três etapas restantes são abordadas em detalhes na documentação do Windows Installer no SDK da plataforma.  
   
 ## <a name="key-terms"></a>Principais termos  
  A seguir está as definições dos termos principais relacionadas à tecnologia Windows Installer.  

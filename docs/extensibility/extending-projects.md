@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a914afada4422364db043582be43658cf494b9c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902813"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864667"
 ---
 # <a name="extend-projects"></a>Estender projetos
 Projetos e soluções são as maneiras em que o Visual Studio organiza os arquivos de código e recursos em unidades de compilação e implantação. Você pode encontrar mais informações sobre projetos de [projetos (SDK do Visual Studio)](../extensibility/extending-projects.md).  
@@ -36,7 +36,7 @@ Projetos e soluções são as maneiras em que o Visual Studio organiza os arquiv
  Descreve como criar um sistema de projeto personalizado.  
   
  [Salvar dados em arquivos de projeto](../extensibility/saving-data-in-project-files.md)  
- Explica como adicionar ao projeto (*.* proj *) os arquivos.  
+ Explica como adicionar ao projeto (<em>.</em> proj *) os arquivos.  
   
  [Verificar subtipos de um projeto em tempo de execução](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
  Explica como verificar o subtipo de um projeto em tempo de execução.  

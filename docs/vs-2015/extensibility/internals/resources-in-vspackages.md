@@ -17,12 +17,12 @@ ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 073245be91c1689d0dd70d30207dc4dd809c578e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d032863677a24f377da8068b4a6e5565c5a2241c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188561"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830672"
 ---
 # <a name="resources-in-vspackages"></a>Recursos em VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,28 +31,28 @@ Você pode incorporar recursos localizados em nativa da interface do usuário DL
   
  Alguns recursos não podem ser inseridos em VSPackages. Os seguintes tipos gerenciados podem ser inseridos:  
   
--   Cadeias de caracteres  
+- Cadeias de caracteres  
   
--   Chaves de carregamento de pacote (que também são cadeias de caracteres)  
+- Chaves de carregamento de pacote (que também são cadeias de caracteres)  
   
--   Ícones da janela de ferramenta  
+- Ícones da janela de ferramenta  
   
--   Arquivos de saída de tabela de comando (CTO) compilados  
+- Arquivos de saída de tabela de comando (CTO) compilados  
   
--   Bitmaps CTO  
+- Bitmaps CTO  
   
--   Ajuda de linha de comando  
+- Ajuda de linha de comando  
   
--   Sobre dados de caixa de diálogo  
+- Sobre dados de caixa de diálogo  
   
- Recursos em um pacote gerenciado são selecionados por ID de recurso. Uma exceção é o arquivo CTO, que deve ser nomeado CTMENU. O arquivo CTO deve aparecer na tabela de recursos, como um `byte[]`. Todos os outros itens de recurso são identificados por tipo.  
+  Recursos em um pacote gerenciado são selecionados por ID de recurso. Uma exceção é o arquivo CTO, que deve ser nomeado CTMENU. O arquivo CTO deve aparecer na tabela de recursos, como um `byte[]`. Todos os outros itens de recurso são identificados por tipo.  
   
- Você pode usar o <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> atributo para indicar ao [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que os recursos gerenciados estão disponíveis.  
+  Você pode usar o <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> atributo para indicar ao [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que os recursos gerenciados estão disponíveis.  
   
- [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
- [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
+  [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
+  [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
   
- Definindo <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> dessa maneira indica que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] deve ignorar as DLLs de satélite não gerenciado ao procurar por recursos, por exemplo, usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Se [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] encontra dois ou mais recursos que têm a mesma ID de recurso, ele usa o primeiro recurso encontra.  
+  Definindo <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> dessa maneira indica que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] deve ignorar as DLLs de satélite não gerenciado ao procurar por recursos, por exemplo, usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Se [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] encontra dois ou mais recursos que têm a mesma ID de recurso, ele usa o primeiro recurso encontra.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir é uma representação gerenciada de um ícone de janela de ferramenta.  

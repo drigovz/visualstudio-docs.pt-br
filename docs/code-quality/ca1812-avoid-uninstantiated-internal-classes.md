@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b82f18f4cc6ff5bb2666a51c4e8f37e22fd7d32b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 45ff6e07abb77623fe1007ef5e13556e26852224
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858997"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827449"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: evitar classes internas sem instâncias
+
 |||
 |-|-|
 |NomeDoTipo|AvoidUninstantiatedInternalClasses|
@@ -32,12 +33,14 @@ ms.locfileid: "47858997"
 |Alteração Significativa|Não são significativas|
 
 ## <a name="cause"></a>Causa
- Uma instância de um tipo no nível de assembly não é criada pelo código no assembly.
+
+Uma instância de um tipo no nível de assembly não é criada pelo código no assembly.
 
 ## <a name="rule-description"></a>Descrição da regra
- Essa regra tenta localizar uma chamada para um dos construtores de tipo e relata uma violação se nenhuma chamada for encontrada.
 
- Os seguintes tipos não são verificados por essa regra:
+Essa regra tenta localizar uma chamada para um dos construtores de tipo e relata uma violação se nenhuma chamada for encontrada.
+
+Os seguintes tipos não são verificados por essa regra:
 
 - Tipos de valor
 
@@ -51,19 +54,21 @@ ms.locfileid: "47858997"
 
 - Tipos que não pode ser instanciada e que definem `static` (`Shared` no Visual Basic) apenas métodos.
 
- Se você aplicar <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> ao assembly que está sendo analisado, essa regra não ocorrerá nos construtores que são marcados como `internal` porque você não pode determinar se um campo está sendo usado por outro `friend` assembly.
+Se você aplicar <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> ao assembly que está sendo analisado, essa regra não ocorrerá nos construtores que são marcados como `internal` porque você não pode determinar se um campo está sendo usado por outro `friend` assembly.
 
- Mesmo que não é possível contornar essa limitação na análise de código do Visual Studio, o FxCop autônomo externo ocorrer em construtores internos se cada `friend` assembly está presente na análise.
+Mesmo que não é possível contornar essa limitação na análise de código do Visual Studio, o FxCop autônomo externo ocorrer em construtores internos se cada `friend` assembly está presente na análise.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, remova o tipo ou adicione o código que usa-o. Se o tipo contém apenas métodos estáticos, adicione o seguinte para o tipo para impedir que o compilador emite um construtor de instância pública padrão:
+
+Para corrigir uma violação dessa regra, remova o tipo ou adicione o código que usa-o. Se o tipo contém apenas métodos estáticos, adicione o seguinte para o tipo para impedir que o compilador emite um construtor de instância pública padrão:
 
 - Um construtor particular para tipos que se destinam a versões do .NET Framework 1.0 e 1.1.
 
 - O `static` (`Shared` no Visual Basic) modificador para tipos que se destinam [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- É seguro suprimir um aviso nessa regra. É recomendável que você suprimir esse aviso nas seguintes situações:
+
+É seguro suprimir um aviso nessa regra. É recomendável que você suprimir esse aviso nas seguintes situações:
 
 - A classe é criada por meio de métodos de reflexão de associação tardia como <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
@@ -90,11 +95,12 @@ ms.locfileid: "47858997"
     mc.Create();
     ```
 
- Nessas situações, é recomendável que suprimir este aviso.
+  Nessas situações, é recomendável que suprimir este aviso.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1811: evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1801: examinar parâmetros não usados](../code-quality/ca1801-review-unused-parameters.md)
+[CA1811: evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1804: remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)
+[CA1801: examinar parâmetros não usados](../code-quality/ca1801-review-unused-parameters.md)
+
+[CA1804: remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)

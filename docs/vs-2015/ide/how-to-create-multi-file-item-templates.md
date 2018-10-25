@@ -18,25 +18,25 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cda39459d0ddc0920dbb5b47157d90160ad3d166
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286787"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862171"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Como criar modelos de item multiarquivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Os modelos de item podem especificar apenas um item, mas, algumas vezes, o item é composto por vários arquivos. Por exemplo, um modelo de item do Windows Forms para Visual Basic exige os três arquivos a seguir:  
   
--   Um arquivo .vb que contém o código do formulário.  
+- Um arquivo .vb que contém o código do formulário.  
   
--   Um arquivo .vb que contém as informações de designer do formulário.  
+- Um arquivo .vb que contém as informações de designer do formulário.  
   
--   Um arquivo .resx que contém os recursos inseridos do formulário.  
+- Um arquivo .resx que contém os recursos inseridos do formulário.  
   
- Os modelos de item de vários arquivos exigem parâmetros para garantir que as extensões de nome de arquivo corretas sejam usadas quando o item é criado no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se você criar um modelo de item usando o assistente **Exportar Modelo**, esses parâmetros serão gerados automaticamente, e não será necessária nenhuma edição. As etapas a seguir explicam como usar parâmetros para garantir que as extensões de nome de arquivo corretas sejam criadas.  
+  Os modelos de item de vários arquivos exigem parâmetros para garantir que as extensões de nome de arquivo corretas sejam usadas quando o item é criado no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se você criar um modelo de item usando o assistente **Exportar Modelo**, esses parâmetros serão gerados automaticamente, e não será necessária nenhuma edição. As etapas a seguir explicam como usar parâmetros para garantir que as extensões de nome de arquivo corretas sejam criadas.  
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>Para criar manualmente um modelo de item de vários arquivos  
   

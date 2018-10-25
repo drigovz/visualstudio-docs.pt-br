@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15d666ed4e2896a1645f1f47a5a310dc3151309f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a18ad30fac44028f4eda89da72babeb36ffe24a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670075"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873962"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personalizar os recursos de interface do usuário usando interfaces de extensibilidade
   As ferramentas de desenvolvimento do Office no Visual Studio fornecem classes e designers que lidar com muitos detalhes de implementação quando usá-los para criar painéis de tarefas personalizados, personalizações da faixa de opções e regiões de formulário do Outlook em um suplemento do VSTO. No entanto, você também pode implementar o *interface de extensibilidade* para cada recurso por conta própria, se você tiver requisitos especiais.  
@@ -61,17 +61,17 @@ ms.locfileid: "35670075"
 ### <a name="example-of-implementing-an-extensibility-interface"></a>Exemplo de implementação de uma interface de extensibilidade  
  O exemplo de código a seguir demonstra uma implementação simples dos <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> interface para criar um painel de tarefas personalizado. Este exemplo define duas classes:  
   
--   O `TaskPaneHelper` implementos de classe <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> para criar e exibir um painel de tarefas personalizado.  
+- O `TaskPaneHelper` implementos de classe <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> para criar e exibir um painel de tarefas personalizado.  
   
--   O `TaskPaneUI` classe fornece a interface do usuário do painel de tarefas. Os atributos para o `TaskPaneUI` classe torná-la visível para COM, que permite que os aplicativos do Microsoft Office descobrir a classe. Neste exemplo, a interface do usuário é um vazio <xref:System.Windows.Forms.UserControl>, mas você pode adicionar controles ao modificar o código.  
+- O `TaskPaneUI` classe fornece a interface do usuário do painel de tarefas. Os atributos para o `TaskPaneUI` classe torná-la visível para COM, que permite que os aplicativos do Microsoft Office descobrir a classe. Neste exemplo, a interface do usuário é um vazio <xref:System.Windows.Forms.UserControl>, mas você pode adicionar controles ao modificar o código.  
   
-    > [!NOTE]  
-    >  Para expor os `TaskPaneUI` classe ao COM, você também deve definir o **registrar para interoperabilidade COM** propriedade para o projeto.  
+  > [!NOTE]  
+  >  Para expor os `TaskPaneUI` classe ao COM, você também deve definir o **registrar para interoperabilidade COM** propriedade para o projeto.  
   
- [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
- [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
+  [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
+  [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
- Para obter mais informações sobre como implementar <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, consulte [criar painéis de tarefas personalizados no 2007 Office system](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) na documentação do Microsoft Office.  
+  Para obter mais informações sobre como implementar <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, consulte [criar painéis de tarefas personalizados no 2007 Office system](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) na documentação do Microsoft Office.  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>Exemplo de substituição do método RequestService  
  O exemplo de código a seguir demonstra como substituir a <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> método para retornar uma instância da `TaskPaneHelper` classe do exemplo de código anterior. Ele verifica o valor de *serviceGuid* parâmetro para determinar qual interface está sendo solicitada e, em seguida, retorna um objeto que implementa a interface.  

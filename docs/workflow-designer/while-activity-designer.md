@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f0e83f674378ca7f9297aedbeb580b4f2cad89
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de41c8351c7767cbfe0882cffb48b145e341f923
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973396"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835859"
 ---
 # <a name="while-activity-designer"></a>Quando designer de atividades
 
@@ -28,10 +28,10 @@ O <xref:System.Activities.Statements.While> atividade executa a atividade contid
 A tabela a seguir mostra as propriedades mais úteis de atividade de <xref:System.Activities.Statements.While> e descreve como elas são usadas no designer.
 
 |Nome da Propriedade|Necessária|Uso|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica o nome amigável do designer de atividade de <xref:System.Activities.Statements.While> no cabeçalho. O valor padrão é quando. O valor pode ser editado no **propriedades** janela ou diretamente no cabeçalho de designer de atividade.<br /><br /> Embora não seja necessário <xref:System.Activities.Activity.DisplayName%2A> restrita, é uma prática recomendada usar um.|
-|<xref:System.Activities.Statements.While.Body%2A>|False|Contém a atividade seja executada enquanto o <xref:System.Activities.Statements.While.Condition%2A> é avaliada como **true**.|
-|<xref:System.Activities.Statements.While.Condition%2A>|verdadeiro|Contém a expressão que é avaliada para determinar se a atividade de <xref:System.Activities.Statements.While.Body%2A> deve ser executado.|
+|-|--------------|-|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica o nome amigável do designer de atividade de <xref:System.Activities.Statements.While> no cabeçalho. O valor padrão é quando. O valor pode ser editado na **propriedades** janela ou diretamente no cabeçalho do designer de atividade.<br /><br /> Embora não seja necessário <xref:System.Activities.Activity.DisplayName%2A> restrita, é uma prática recomendada usar um.|
+|<xref:System.Activities.Statements.While.Body%2A>|False|Contém a atividade seja executada enquanto o <xref:System.Activities.Statements.While.Condition%2A> for avaliada como **verdadeiro**.|
+|<xref:System.Activities.Statements.While.Condition%2A>|verdadeiro|Contém a expressão do Visual Basic que é avaliada para determinar se a atividade no <xref:System.Activities.Statements.While.Body%2A> deve ser executado.|
 
 ## <a name="see-also"></a>Consulte também
 

@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c90270876721f2a43c78375108608064d325b39a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e162b1fdc8f775fc7b4d95249ceeac8d86cd0b74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260208"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836860"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Descrever o fluxo de controle com fragmentos em diagramas de sequência UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,46 +57,46 @@ Em um diagrama de sequência UML *fragmentos combinados* permitem que você most
   
 #### <a name="to-create-a-combined-fragment"></a>Para criar um fragmento combinado  
   
-1.  Selecione uma mensagem ou uma sequência de mensagens, que tudo comece na ocorrência de linha da vida ou execução mesma.  
+1. Selecione uma mensagem ou uma sequência de mensagens, que tudo comece na ocorrência de linha da vida ou execução mesma.  
   
-    > [!NOTE]
-    >  Se você selecionar mais de uma mensagem, eles devem formar uma sequência ininterrupta.  
+   > [!NOTE]
+   >  Se você selecionar mais de uma mensagem, eles devem formar uma sequência ininterrupta.  
   
-2.  Clique em uma das mensagens, aponte para **envolver com**e, em seguida, clique em tipo de fragmento combinado que você deseja, tal como **fragmento combinado de Alt**.  
+2. Clique em uma das mensagens, aponte para **envolver com**e, em seguida, clique em tipo de fragmento combinado que você deseja, tal como **fragmento combinado de Alt**.  
   
-     Um novo fragmento combinado é exibida. O cabeçalho indica o tipo de fragmento combinado que você selecionou, tais como **Alt**.  
+    Um novo fragmento combinado é exibida. O cabeçalho indica o tipo de fragmento combinado que você selecionou, tais como **Alt**.  
   
-     Dentro do fragmento combinado, há um fragmento que contém as mensagens que você selecionou.  
+    Dentro do fragmento combinado, há um fragmento que contém as mensagens que você selecionou.  
   
- Você pode adicionar mais operandos de interação a alguns tipos de fragmento combinado.  
+   Você pode adicionar mais operandos de interação a alguns tipos de fragmento combinado.  
   
- Depois que você reorganizar mensagens dentro de um fragmento combinado, escolha **reorganizar Layout** no menu de atalho para redimensionar o quadro de fragmento combinado.  
+   Depois que você reorganizar mensagens dentro de um fragmento combinado, escolha **reorganizar Layout** no menu de atalho para redimensionar o quadro de fragmento combinado.  
   
 #### <a name="to-add-a-new-interaction-operand-to-a-combined-fragment"></a>Para adicionar um novo operando de interação para um fragmento combinado  
   
-1.  Clique com botão direito em um espaço em branco dentro do operando de interação (2), fora de qualquer fragmento independente e abaixo do título do fragmento combinado.  
+1. Clique com botão direito em um espaço em branco dentro do operando de interação (2), fora de qualquer fragmento independente e abaixo do título do fragmento combinado.  
   
-2.  Aponte para **adicionar**.  
+2. Aponte para **adicionar**.  
   
-3.  Clique em **operando de interação antes**, ou **interação operando após**.  
+3. Clique em **operando de interação antes**, ou **interação operando após**.  
   
-4.  Você pode adicionar mensagens dentro do novo operando de interação usando as ferramentas de mensagem, ou copiando e colando as mensagens existentes.  
+4. Você pode adicionar mensagens dentro do novo operando de interação usando as ferramentas de mensagem, ou copiando e colando as mensagens existentes.  
   
- Você pode definir as **Guard** propriedade de um operando de interação para descrever as condições em que as mensagens dentro dele são executadas. Por exemplo, em um **Loop** combinados fragmento, você pode usar a proteção para especificar a condição durante o qual o loop continua. Em um **Alt** combinado de fragmento, você pode especificar uma condição separada para cada operando de interação.  
+   Você pode definir as **Guard** propriedade de um operando de interação para descrever as condições em que as mensagens dentro dele são executadas. Por exemplo, em um **Loop** combinados fragmento, você pode usar a proteção para especificar a condição durante o qual o loop continua. Em um **Alt** combinado de fragmento, você pode especificar uma condição separada para cada operando de interação.  
   
 #### <a name="to-set-the-guard-of-an-interaction-operand"></a>Para definir o protetor de um operando de interação  
   
-1.  Clique em um espaço em branco dentro do operando de interação (2), fora de qualquer fragmento independente.  
+1. Clique em um espaço em branco dentro do operando de interação (2), fora de qualquer fragmento independente.  
   
-     Uma borda de seleção aparece em torno do operando de interação e a condição de proteção.  
+    Uma borda de seleção aparece em torno do operando de interação e a condição de proteção.  
   
-     O título na **propriedades** janela mostra **operando de interação**.  
+    O título na **propriedades** janela mostra **operando de interação**.  
   
-2.  Digite a condição de proteção.  
+2. Digite a condição de proteção.  
   
-     A condição será exibida na parte superior do fragmento (4).  
+    A condição será exibida na parte superior do fragmento (4).  
   
- Você pode definir as propriedades de alguns tipos de fragmentos combinados.  
+   Você pode definir as propriedades de alguns tipos de fragmentos combinados.  
   
 #### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>Para definir ou exibir as propriedades de um fragmento combinado  
   

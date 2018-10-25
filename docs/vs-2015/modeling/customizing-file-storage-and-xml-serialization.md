@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867437"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personalizando o armazenamento de arquivos e a serialização XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,26 +105,26 @@ Quando o usuário salva uma instância, ou *modelo*, de uma linguagem específic
 ## <a name="understanding-monikers"></a>Noções básicas sobre Monikers  
  Monikers são usados para representar referências cruzadas entre diferentes partes dos arquivos de modelo e o diagrama. Eles também são usados no `.diagram` arquivo para referir-se a nós no arquivo de modelo. Há duas formas de moniker:  
   
--   *Monikers ID* citar o GUID do elemento de destino. Por exemplo:  
+- *Monikers ID* citar o GUID do elemento de destino. Por exemplo:  
   
-    ```  
-    <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
+  ```  
+  <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
   
-    ```  
+  ```  
   
--   *Qualificado monikers chave* identificar o elemento de destino pelo valor de uma propriedade de domínio designado, chamado da chave do moniker. O moniker do elemento de destino é prefixado pelo moniker do seu elemento pai na árvore de relações inseridas.  
+- *Qualificado monikers chave* identificar o elemento de destino pelo valor de uma propriedade de domínio designado, chamado da chave do moniker. O moniker do elemento de destino é prefixado pelo moniker do seu elemento pai na árvore de relações inseridas.  
   
-     Os exemplos a seguir são obtidos de uma DSL no qual existe é uma classe de domínio chamada álbum, que tem uma relação de incorporação em um domínio canção nomeada de classe:  
+   Os exemplos a seguir são obtidos de uma DSL no qual existe é uma classe de domínio chamada álbum, que tem uma relação de incorporação em um domínio canção nomeada de classe:  
   
-    ```  
-    <albumMoniker title="/My Favorites/Jazz after Teatime" />  
-    <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
+  ```  
+  <albumMoniker title="/My Favorites/Jazz after Teatime" />  
+  <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
   
-    ```  
+  ```  
   
-     Qualificado monikers chave serão usadas se a classe de destino tem uma propriedade de domínio para o qual a opção **é a chave do Moniker** é definido como `true` na **comportamento da serialização Xml**. No exemplo, essa opção é definida para as propriedades de domínio denominadas "Título" nas classes de domínio "Álbum" e "Música".  
+   Qualificado monikers chave serão usadas se a classe de destino tem uma propriedade de domínio para o qual a opção **é a chave do Moniker** é definido como `true` na **comportamento da serialização Xml**. No exemplo, essa opção é definida para as propriedades de domínio denominadas "Título" nas classes de domínio "Álbum" e "Música".  
   
- Qualificado monikers de chave são mais fáceis de ler do que monikers de ID. Se você pretende que o XML de seus arquivos de modelo a ser lido por pessoas, considere o uso de monikers chave qualificados. No entanto, é possível que o usuário definir mais de um elemento para ter a mesma chave do moniker. Chaves duplicadas pode causar o recarregamento do arquivo não corretamente. Portanto, se você definir uma classe de domínio que é referenciada usando monikers chave qualificados, você deve considerar maneiras de impedir que o usuário salvar um arquivo que tem identificadores duplicados.  
+  Qualificado monikers de chave são mais fáceis de ler do que monikers de ID. Se você pretende que o XML de seus arquivos de modelo a ser lido por pessoas, considere o uso de monikers chave qualificados. No entanto, é possível que o usuário definir mais de um elemento para ter a mesma chave do moniker. Chaves duplicadas pode causar o recarregamento do arquivo não corretamente. Portanto, se você definir uma classe de domínio que é referenciada usando monikers chave qualificados, você deve considerar maneiras de impedir que o usuário salvar um arquivo que tem identificadores duplicados.  
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>Para definir uma classe de domínio sejam referenciadas pelo monikers de ID  
   

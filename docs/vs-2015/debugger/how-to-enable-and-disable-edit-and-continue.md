@@ -30,12 +30,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2700076fa0cc08aa137377b9a99c1179d9b8fc12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9540e40325293795c44e0d9c2283a27f1d9ea0c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856698"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>Como habilitar e desabilitar Editar e Continuar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,18 +48,18 @@ Você pode desabilitar ou habilitar editar e continuar na **opções** caixa de 
   
 #### <a name="to-enabledisable-edit-and-continue"></a>Para habilitar/desabilitar a função Editar e Continuar  
   
-1.  Abrir página de opções de depuração (**Ferramentas / opções / depuração**).  
+1. Abrir página de opções de depuração (**Ferramentas / opções / depuração**).  
   
-2.  Role para baixo até **editar e continuar** categoria.  
+2. Role para baixo até **editar e continuar** categoria.  
   
-3.  Para habilitar, selecione a **habilitar editar e continuar** caixa de seleção. Para desabilitar, desmarque a caixa de seleção.  
+3. Para habilitar, selecione a **habilitar editar e continuar** caixa de seleção. Para desabilitar, desmarque a caixa de seleção.  
   
-    > [!NOTE]
-    >  Se IntelliTrace estiver habilitado e você coletar eventos de IntelliTrace e informações de chamada, Editar e Continuar estará desabilitado. Para obter mais informações, consulte [configurar o IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+   > [!NOTE]
+   >  Se IntelliTrace estiver habilitado e você coletar eventos de IntelliTrace e informações de chamada, Editar e Continuar estará desabilitado. Para obter mais informações, consulte [configurar o IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
-4.  Clique em **OK**.  
+4. Clique em **OK**.  
   
- Para obter mais informações sobre essas opções, consulte [geral, depuração, caixa de diálogo Opções](../debugger/general-debugging-options-dialog-box.md).  
+   Para obter mais informações sobre essas opções, consulte [geral, depuração, caixa de diálogo Opções](../debugger/general-debugging-options-dialog-box.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Editar e continuar](../debugger/edit-and-continue.md)

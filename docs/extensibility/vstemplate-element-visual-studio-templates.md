@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb4275a8cf88ccedc93695422261624801fdcf33
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 260e745db7036981ab0a3c79074d99a2b7c7fbb5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586746"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828386"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>Elemento VSTemplate (modelos do Visual Studio)
 Contém todos os metadados sobre o modelo de projeto, o modelo de item ou o starter kit para.  
@@ -40,10 +40,10 @@ Contém todos os metadados sobre o modelo de projeto, o modelo de item ou o star
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descrição|  
-|---------------|-----------------|  
-|`Type`|Identifica o modelo como um modelo de projeto ou um modelo de item. Esse atributo pode ter um valor de `Project` ou `Item`.|  
-|`Version`|Especifica um número de versão para o modelo. Modelos no [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] e [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] têm um `Version` valor de atributo `3.0.0`.|  
+| Atributo | Descrição |
+|-----------| - |
+| `Type` | Identifica o modelo como um modelo de projeto ou um modelo de item. Esse atributo pode ter um valor de `Project` ou `Item`. |
+| `Version` | Especifica um número de versão para o modelo. Modelos no [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] e [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] têm um `Version` valor de atributo `3.0.0`. |
   
 ### <a name="child-elements"></a>Elementos filho  
   

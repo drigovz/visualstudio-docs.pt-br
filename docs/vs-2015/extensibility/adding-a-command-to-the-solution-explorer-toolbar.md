@@ -17,12 +17,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ad3c479349b698283fcb3a7145dcfc3948254b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254358"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836730"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Adicionando um comando à barra de ferramentas do Gerenciador de Soluções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,41 +87,41 @@ Este passo a passo mostra como adicionar um botão para o **Gerenciador de solu�
   
 #### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Para exibir um botão quando um ou mais projetos estão abertos  
   
-1.  No `<Buttons>` seção do ToolbarButtonPackage.vsct, adicionar dois sinalizadores de comando para existente `<Button>` elemento, entre a `<Strings>` e `<Icons>` marcas.  
+1. No `<Buttons>` seção do ToolbarButtonPackage.vsct, adicionar dois sinalizadores de comando para existente `<Button>` elemento, entre a `<Strings>` e `<Icons>` marcas.  
   
-    ```xml  
-    <CommandFlag>DefaultInvisible</CommandFlag>  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DefaultInvisible</CommandFlag>  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-     O `DefaultInvisible` e `DynamicVisibility` sinalizadores devem ser definidos isso que as entradas na `<VisibilityConstraints>` seção entrem em vigor.  
+    O `DefaultInvisible` e `DynamicVisibility` sinalizadores devem ser definidos isso que as entradas na `<VisibilityConstraints>` seção entrem em vigor.  
   
-2.  Criar uma `<VisibilityConstraints>` seção que tem dois `<VisibilityItem>` entradas. Colocar a nova seção logo após o fechamento `</Commands>` marca.  
+2. Criar uma `<VisibilityConstraints>` seção que tem dois `<VisibilityItem>` entradas. Colocar a nova seção logo após o fechamento `</Commands>` marca.  
   
-    ```xml  
-    <VisibilityConstraints>  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasSingleProject" />  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasMultipleProjects" />  
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasSingleProject" />  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasMultipleProjects" />  
+   </VisibilityConstraints>  
+   ```  
   
-     Cada item de visibilidade representa uma condição sob a qual o botão especificado é exibido. Para aplicar várias condições, você deve criar várias entradas para o mesmo botão.  
+    Cada item de visibilidade representa uma condição sob a qual o botão especificado é exibido. Para aplicar várias condições, você deve criar várias entradas para o mesmo botão.  
   
-3.  Compile o projeto e comece a depuração. A instância experimental é exibida.  
+3. Compile o projeto e comece a depuração. A instância experimental é exibida.  
   
-     O **Gerenciador de soluções** barra de ferramentas não contém o botão tachado.  
+    O **Gerenciador de soluções** barra de ferramentas não contém o botão tachado.  
   
-4.  Abra qualquer solução que contenha um projeto.  
+4. Abra qualquer solução que contenha um projeto.  
   
-     Botão Tachado aparece na barra de ferramentas à direita dos botões existentes.  
+    Botão Tachado aparece na barra de ferramentas à direita dos botões existentes.  
   
-5.  Sobre o **arquivo** menu, clique em **fechar solução**. O botão desaparece da barra de ferramentas.  
+5. Sobre o **arquivo** menu, clique em **fechar solução**. O botão desaparece da barra de ferramentas.  
   
- A visibilidade do botão é controlada pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] até que o VSPackage seja carregado. Depois que o VSPackage for carregado, a visibilidade do botão é controlada pelo VSPackage.  Para obter mais informações, consulte [MenuCommands Vs. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md).  
+   A visibilidade do botão é controlada pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] até que o VSPackage seja carregado. Depois que o VSPackage for carregado, a visibilidade do botão é controlada pelo VSPackage.  Para obter mais informações, consulte [MenuCommands Vs. OleMenuCommands](../misc/menucommands-vs-olemenucommands.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

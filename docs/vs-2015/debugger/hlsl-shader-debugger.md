@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d759a587057550930271a91205f278704c4cbc21
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3a0db7986d42b61b65241a8487bc1a595de4f655
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174181"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827942"
 ---
 # <a name="hlsl-shader-debugger"></a>Depurador de sombreador HLSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,13 +39,13 @@ O depurador HLSL no analisador de gráficos do Visual Studio ajuda você a enten
   
  No entanto, o depurador HLSL, atualmente, encontra-se limitado por estes motivos:  
   
--   O depurador HLSL não dá suporte a editar e continuar, mas você pode fazer alterações em seus sombreadores e, em seguida, gerar novamente o quadro para ver os resultados.  
+- O depurador HLSL não dá suporte a editar e continuar, mas você pode fazer alterações em seus sombreadores e, em seguida, gerar novamente o quadro para ver os resultados.  
   
--   Não é possível depurar um aplicativo e seu código de sombreador ao mesmo tempo. No entanto, você pode alternar entre eles.  
+- Não é possível depurar um aplicativo e seu código de sombreador ao mesmo tempo. No entanto, você pode alternar entre eles.  
   
--   É possível adicionar variáveis e registros à janela Inspeção, mas expressões não têm suporte.  
+- É possível adicionar variáveis e registros à janela Inspeção, mas expressões não têm suporte.  
   
- Entretanto, o depurador HLSL oferece a melhor experiência de depuração e mais parecida com a de uma CPU, que de outra forma não seria possível.  
+  Entretanto, o depurador HLSL oferece a melhor experiência de depuração e mais parecida com a de uma CPU, que de outra forma não seria possível.  
   
 ## <a name="hlsl-shader-edit--apply"></a>Editar e aplicar sombreador HLSL  
  O depurador de sombreador HLSL não oferece suporte para Editar e Continuar da mesma maneira que o depurador de CPU, porque o modelo de execução GPU não permite que o estado do sombreador seja desfeito. Em vez disso, o depurador HLSL oferece suporte a editar e aplicar, o que permite que você edite os arquivos de origem HLSL e escolha **aplicar** para regenerar o quadro para ver o efeito das alterações. Seu código de sombreador modificado é armazenado em um arquivo separado para preservar a integridade dos arquivos de origem HLSL originais do seu projeto, mas quando você estiver satisfeito com as alterações que você pode escolher **copiar para...** Para copiar as alterações em seu projeto. Usando esse recurso, você pode iterar rapidamente no código do sombreador que contém erros e eliminar as etapas caras de recompilação e captura do seu do fluxo de trabalho de depuração do HLSL.  
@@ -67,18 +67,18 @@ O depurador HLSL no analisador de gráficos do Visual Studio ajuda você a enten
   
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pixel-history"></a>Para iniciar o depurador HLSL do Histórico de Pixel de Gráficos  
   
-1.  No **histórico de Pixel de gráficos** janela, expanda a chamada de desenho associada ao sombreador que você deseja depurar. Cada chamada de desenho pode corresponder a vários primitivos.  
+1. No **histórico de Pixel de gráficos** janela, expanda a chamada de desenho associada ao sombreador que você deseja depurar. Cada chamada de desenho pode corresponder a vários primitivos.  
   
-2.  Nos detalhes da chamada de desenho, expanda um primitivo cuja contribuição de cor resultante sugira um bug em seu código de sombreador. Se vários primitivos sugerirem um bug, escolha o primeiro primitivo que o sugere, de modo que você possa evitar uma acumulação de erros, o que pode dificultar o diagnóstico do problema.  
+2. Nos detalhes da chamada de desenho, expanda um primitivo cuja contribuição de cor resultante sugira um bug em seu código de sombreador. Se vários primitivos sugerirem um bug, escolha o primeiro primitivo que o sugere, de modo que você possa evitar uma acumulação de erros, o que pode dificultar o diagnóstico do problema.  
   
-3.  Nos detalhes do primitivos, escolha se deseja depurar o **sombreador de vértice** ou o **sombreador de Pixel**. Depure o sombreador de vértices quando você suspeitar que o sombreador de pixel está correto, mas está gerando uma contribuição de cor incorreta porque o sombreador de vértices está passando constantes incorretas a ele. Caso contrário, depure o sombreador de pixel.  
+3. Nos detalhes do primitivos, escolha se deseja depurar o **sombreador de vértice** ou o **sombreador de Pixel**. Depure o sombreador de vértices quando você suspeitar que o sombreador de pixel está correto, mas está gerando uma contribuição de cor incorreta porque o sombreador de vértices está passando constantes incorretas a ele. Caso contrário, depure o sombreador de pixel.  
   
-     À direita do sombreador escolhido, escolha **iniciar depuração**, que aparece como uma pequena seta verde.  
+    À direita do sombreador escolhido, escolha **iniciar depuração**, que aparece como uma pequena seta verde.  
   
-    > [!NOTE]
-    >  Esse ponto de entrada no depurador HLSL depura o thread do sombreador de pixel, que corresponde à chamada de desenho, ao primitivo e ao pixel que você escolheu, ou os threads do sombreador de vértices, cujos resultados são interpolados pela chamada de desenho, pelo primitivo e pelo pixel que você escolheu. No caso de sombreadores de vértices, você ainda pode refinar o ponto de entrada para um vértice específico expandindo os detalhes do sombreador de vértices.  
+   > [!NOTE]
+   >  Esse ponto de entrada no depurador HLSL depura o thread do sombreador de pixel, que corresponde à chamada de desenho, ao primitivo e ao pixel que você escolheu, ou os threads do sombreador de vértices, cujos resultados são interpolados pela chamada de desenho, pelo primitivo e pelo pixel que você escolheu. No caso de sombreadores de vértices, você ainda pode refinar o ponto de entrada para um vértice específico expandindo os detalhes do sombreador de vértices.  
   
- Para obter exemplos sobre como usar o depurador HLSL para depurar erros do sombreador, consulte [exemplos](../debugger/graphics-diagnostics-examples.md) ou explicações passo a passo vinculadas na seção Consulte também.  
+   Para obter exemplos sobre como usar o depurador HLSL para depurar erros do sombreador, consulte [exemplos](../debugger/graphics-diagnostics-examples.md) ou explicações passo a passo vinculadas na seção Consulte também.  
   
 ## <a name="see-also"></a>Consulte também  
  [Passo a passo: Objetos ausentes devido ao sombreamento de vértice](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   

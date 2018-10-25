@@ -28,12 +28,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eea8457c988e6ce1ff5f965a0154e8f2dbe87a2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2807fa9d0085c70e3336a5f9a0d66b28a775f4fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244420"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830594"
 ---
 # <a name="how-to-debug-native-dlls"></a>Como depurar DLLs nativas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,29 +43,29 @@ ms.locfileid: "49244420"
   
  Quando você depura uma DLL, pode iniciar a depuração de:  
   
--   O projeto usado para criar o executável que chama a DLL.  
+- O projeto usado para criar o executável que chama a DLL.  
   
- \- ou -  
+  \- ou -  
   
--   O projeto usado para criar a própria DLL.  
+- O projeto usado para criar a própria DLL.  
   
- Se você tiver o projeto usado para criar o executável, inicie a depuração do início desse projeto. Você pode abrir um arquivo de origem para a DLL e definir os pontos de interrupção nesse arquivo, mesmo que não seja uma parte do projeto usado para criar o executável. Para obter mais informações, consulte [pontos de interrupção](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+  Se você tiver o projeto usado para criar o executável, inicie a depuração do início desse projeto. Você pode abrir um arquivo de origem para a DLL e definir os pontos de interrupção nesse arquivo, mesmo que não seja uma parte do projeto usado para criar o executável. Para obter mais informações, consulte [pontos de interrupção](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
- Se você iniciar a depuração do projeto que cria a DLL, deverá especificar o executável que deseja usar ao depurar a DLL.  
+  Se você iniciar a depuração do projeto que cria a DLL, deverá especificar o executável que deseja usar ao depurar a DLL.  
   
 ### <a name="to-specify-an-executable-for-the-debug-session"></a>Para especificar um executável para a sessão de depuração  
   
-1.  Na **Gerenciador de soluções**, selecione o projeto que cria a DLL.  
+1. Na **Gerenciador de soluções**, selecione o projeto que cria a DLL.  
   
-2.  Dos **modo de exibição** menu, escolha**páginas de propriedade**.  
+2. Dos **modo de exibição** menu, escolha**páginas de propriedade**.  
   
-3.  No **páginas de propriedades** caixa de diálogo, abra o **propriedades de configuração** pasta e selecione o **depuração** categoria.  
+3. No **páginas de propriedades** caixa de diálogo, abra o **propriedades de configuração** pasta e selecione o **depuração** categoria.  
   
-4.  No **comando** , especifique o nome do caminho para o contêiner. Por exemplo, C:\Arquivos de Programas\MyApplication\MYAPP.EXE.  
+4. No **comando** , especifique o nome do caminho para o contêiner. Por exemplo, C:\Arquivos de Programas\MyApplication\MYAPP.EXE.  
   
-5.  No **argumentos de comando** , especifique todos os argumentos necessários para o executável.  
+5. No **argumentos de comando** , especifique todos os argumentos necessários para o executável.  
   
- Se você não especificar o executável na _Project_**páginas de propriedades** caixa de diálogo, o [executável para a caixa de diálogo de sessão de depuração](../debugger/executable-for-debugging-session-dialog-box.md) aparece quando você iniciar a depuração.  
+   Se você não especificar o executável na _Project_**páginas de propriedades** caixa de diálogo, o [executável para a caixa de diálogo de sessão de depuração](../debugger/executable-for-debugging-session-dialog-box.md) aparece quando você iniciar a depuração.  
   
 ## <a name="see-also"></a>Consulte também  
  [Segurança do depurador](../debugger/debugger-security.md)   

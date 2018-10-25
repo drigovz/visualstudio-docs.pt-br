@@ -23,30 +23,30 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f14358307c2c95e1b796695a0253a520ea00e3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8354c850d1f55d229ce3f1205ca0bf0fe5f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249425"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837068"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Como usar a janela Inspeção Paralela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que uma expressão mantém em vários threads. Cada linha representa um thread que está sendo executado em um aplicativo, mas um thread pode ser representado em várias linhas. Mais especificamente, cada linha representa uma chamada de função cuja assinatura de função corresponde à função no registro de ativação atual. Você pode classificar, reorganizar, remover e agrupar os itens que estão nas colunas. Você pode sinalizar, remover sinalização, congelar (suspender) e descongelar (retomar) threads. As colunas a seguir são exibidas na **inspeção paralela** janela:  
   
--   A coluna do sinalizador, na qual você pode marcar um thread ao qual deseja prestar atenção especial.  
+- A coluna do sinalizador, na qual você pode marcar um thread ao qual deseja prestar atenção especial.  
   
--   A coluna do quadro, na qual uma seta indica o quadro selecionado.  
+- A coluna do quadro, na qual uma seta indica o quadro selecionado.  
   
--   Uma coluna configurável que pode exibir o computador, o processo, o bloco, a tarefa e o thread.  
+- Uma coluna configurável que pode exibir o computador, o processo, o bloco, a tarefa e o thread.  
   
-    > [!TIP]
-    >  Você deve abrir o **tarefa paralela** janela para exibir as informações da tarefa na **inspeção paralela** janela.  
+  > [!TIP]
+  >  Você deve abrir o **tarefa paralela** janela para exibir as informações da tarefa na **inspeção paralela** janela.  
   
--   O  **\<Adicionar inspeção >** coluna, na qual você pode inserir expressões para assistir.  
+- O  **\<Adicionar inspeção >** coluna, na qual você pode inserir expressões para assistir.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>Para exibir a janela Inspeção Paralela  
   

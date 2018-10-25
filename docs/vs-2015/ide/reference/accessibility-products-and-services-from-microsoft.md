@@ -24,12 +24,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8f16fdd837b266bfcc04f7e35cfbadd12a14fa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96ad41ff6cec9a03c8d57905427dbdf45b5b4ed9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826980"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produtos e serviços de acessibilidade da Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -75,11 +75,11 @@ A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços pa
 ##  <a name="hearing"></a> Atendimento ao cliente para pessoas com deficiências auditivas  
  Se você for deficiente auditivo ou tiver algum tipo de deficiência auditiva, o acesso completo aos produtos da Microsoft e ao atendimento ao cliente estará disponível por meio de um serviço de telefone de texto (TTY/TDD):  
   
--   Para obter atendimento ao cliente, contate o Microsoft Sales Information Center em (800) 892-5234 entre 6:30 AM e 17:30, hora do Pacífico, de segunda a sexta-feira, exceto feriados.  
+- Para obter atendimento ao cliente, contate o Microsoft Sales Information Center em (800) 892-5234 entre 6:30 AM e 17:30, hora do Pacífico, de segunda a sexta-feira, exceto feriados.  
   
--   Para obter assistência técnica nos Estados Unidos, contate os Microsoft Product Support Services em (800) 892-5234 entre 6:00 e 18:00, hora do Pacífico, de segunda a sexta-feira, exceto feriados. No Canadá, disque (905) 568-9641 entre 8:00 e 20:00 PM, hora do Leste, de segunda a sexta-feira, exceto feriados.  
+- Para obter assistência técnica nos Estados Unidos, contate os Microsoft Product Support Services em (800) 892-5234 entre 6:00 e 18:00, hora do Pacífico, de segunda a sexta-feira, exceto feriados. No Canadá, disque (905) 568-9641 entre 8:00 e 20:00 PM, hora do Leste, de segunda a sexta-feira, exceto feriados.  
   
- Os Microsoft Support Services estão sujeitos aos preços, termos e condições em vigor no momento em que o serviço é usado.  
+  Os Microsoft Support Services estão sujeitos aos preços, termos e condições em vigor no momento em que o serviço é usado.  
   
 ##  <a name="moreinfo"></a> Para obter mais informações  
  Para obter mais informações sobre como a tecnologia acessível para computadores ajuda a melhorar as vidas das pessoas com deficiências, consulte o site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).  

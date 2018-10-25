@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: fd0aa403e702a591a0b09d0891116063a3ed9ff2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f8d1ae730947a70cac253866d0257aa4e0216626
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281046"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882763"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Executar aplicativos UWP no simulador
 O simulador do Visual Studio para aplicativos UWP é um aplicativo da área de trabalho que simula um aplicativo UWP. Normalmente, convém depurar no computador local, um dispositivo conectado ou um computador remoto. No entanto, em alguns cenários, você talvez queira usar o simulador do Visual Studio para emular um tamanho da tela física diferente e resolução. Você também pode simular eventos comuns de toque e rotação e simular propriedades de conexão de rede.
@@ -115,35 +115,35 @@ O simulador do Visual Studio para aplicativos UWP é um aplicativo da área de t
   
  Para simular propriedades de rede:  
   
-1.  Na barra de ferramentas do simulador, escolha o **alterar propriedades da rede** botão.  
+1. Na barra de ferramentas do simulador, escolha o **alterar propriedades da rede** botão.  
   
-2.  Sobre o **definir propriedades de rede** caixa de diálogo, selecione **uso simulado propriedades de rede**.  
+2. Sobre o **definir propriedades de rede** caixa de diálogo, selecione **uso simulado propriedades de rede**.  
   
-     Desmarque a caixa de seleção para remover a simulação e retornar às propriedades de rede da interface atualmente conectada.  
+    Desmarque a caixa de seleção para remover a simulação e retornar às propriedades de rede da interface atualmente conectada.  
   
-3.  Insira um **nome do perfil** para a rede simulada. É recomendável usar um nome exclusivo que você pode usar para identificar a simulação na [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) propriedade da [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) objeto.  
+3. Insira um **nome do perfil** para a rede simulada. É recomendável usar um nome exclusivo que você pode usar para identificar a simulação na [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) propriedade da [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) objeto.  
   
-4.  Selecione o [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) valor para o perfil da **tipo de custo de rede** lista.  
+4. Selecione o [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) valor para o perfil da **tipo de custo de rede** lista.  
   
-5.  Dos **sinalizador de Status de limite de dados** lista, você pode definir o [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) propriedade ou o [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) propriedade como true, ou você pode escolher  **Abaixo do limite de dados** para definir os dois valores como false.  
+5. Dos **sinalizador de Status de limite de dados** lista, você pode definir o [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) propriedade ou o [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) propriedade como true, ou você pode escolher  **Abaixo do limite de dados** para definir os dois valores como false.  
   
-6.  Dos **estado de Roaming** lista, defina as [Roaming](/uwp/api/windows.networking.connectivity.connectioncost) propriedade.  
+6. Dos **estado de Roaming** lista, defina as [Roaming](/uwp/api/windows.networking.connectivity.connectioncost) propriedade.  
   
-7.  Escolher **propriedades do conjunto** para simular as propriedades de rede Disparando um primeiro plano [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) eventos e um plano de fundo [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) do tipo  **NetworkStateChange**.  
+7. Escolher **propriedades do conjunto** para simular as propriedades de rede Disparando um primeiro plano [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) eventos e um plano de fundo [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) do tipo  **NetworkStateChange**.  
   
- **Para obter mais informações sobre como gerenciar conexões de rede**  
+   **Para obter mais informações sobre como gerenciar conexões de rede**  
   
- [Guia de início rápido: Gerenciando monitorados restrições de custo de rede](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Guia de início rápido: Gerenciando monitorados restrições de custo de rede](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [Exemplo de informações de rede](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [Exemplo de informações de rede](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [Analisar o uso de energia](../profiling/analyze-energy-use-in-store-apps.md)  
+   [Analisar o uso de energia](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
+   [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
   
- [Como responder a eventos do sistema com tarefas em segundo plano](/previous-versions/windows/apps/hh977058(v=win.10))  
+   [Como responder a eventos do sistema com tarefas em segundo plano](/previous-versions/windows/apps/hh977058(v=win.10))  
   
- [Como disparar eventos para suspender, retomar e em segundo plano em aplicativos UWP](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
+   [Como disparar eventos para suspender, retomar e em segundo plano em aplicativos UWP](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Navegar no simulador com o teclado  
  Você pode navegar a barra de ferramentas do simulador pressionando **CTRL + ALT + seta para cima** para alternar o foco da janela do simulador na barra de ferramentas do simulador. Use o **seta para cima** e o **seta para baixo** para mover entre os botões da barra de ferramentas.  

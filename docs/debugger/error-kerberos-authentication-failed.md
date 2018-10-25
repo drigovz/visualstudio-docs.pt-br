@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 085b120974ee23d0d7e3712cdbb0a8f7f7021e83
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 0cf34885ee715a5685e4c2ced8b5a116e5c33e8d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056851"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857635"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Erro: falha na autenticação Kerberos
 Ao tentar fazer a depuração remota, você poderá receber a seguinte mensagem de erro:  
@@ -34,15 +34,15 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
  A autenticação Kerberos não está disponível nestas condições:  
   
--   O computador de destino ou o computador host do depurador está em um grupo de trabalho, em vez de em um domínio  
+- O computador de destino ou o computador host do depurador está em um grupo de trabalho, em vez de em um domínio  
   
-     \- ou -  
+   \- ou -  
   
--   Kerberos foi desabilitado no controlador de domínio.  
+- Kerberos foi desabilitado no controlador de domínio.  
   
- Se a autenticação Kerberos não estiver disponível, alterar a conta usada para executar o Monitor de Depuração Remota do Visual Studio. Para o procedimento, consulte [erro: serviço de depurador remoto a do Visual Studio no computador de destino não pode se reconectar a este computador](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
+  Se a autenticação Kerberos não estiver disponível, alterar a conta usada para executar o Monitor de Depuração Remota do Visual Studio. Para o procedimento, consulte [erro: serviço de depurador remoto a do Visual Studio no computador de destino não pode se reconectar a este computador](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
   
- Se ambos os computadores estiverem conectados ao mesmo domínio e você ainda receber essa mensagem, verifique se o DNS no computador de destino está resolvendo corretamente o nome do computador host do depurador. Consulte o procedimento a seguir.  
+  Se ambos os computadores estiverem conectados ao mesmo domínio e você ainda receber essa mensagem, verifique se o DNS no computador de destino está resolvendo corretamente o nome do computador host do depurador. Consulte o procedimento a seguir.  
   
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>Para verificar se o DNS no computador de destino está resolvendo corretamente o nome do computador host do depurador  
   

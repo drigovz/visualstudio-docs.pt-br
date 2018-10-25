@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 990879ca953a2d43a6dee66424fdff2e2dd3c274
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: fae4a6cc21264e62c5a12db79c8a937f0a366314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778364"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843529"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Passo a passo: Alterar a formatação da planilha usando controles CheckBox
   Este passo a passo mostra as Noções básicas de como usar caixas de seleção em uma planilha do Microsoft Office Excel para alterar a formatação. Você usará as ferramentas de desenvolvimento do Office no Visual Studio para criar e adicionar código ao seu projeto. Para ver o resultado como um exemplo completo, consulte o exemplo de controles do Excel em [exemplos de desenvolvimento do Office e instruções passo a passo](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -101,24 +101,24 @@ ms.locfileid: "38778364"
   
 #### <a name="to-add-text-to-a-namedrange-control"></a>Para adicionar texto a um controle NamedRange  
   
-1.  Dos **controles do Excel** guia de ferramentas, arraste um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle a célula **B9**.  
+1. Dos **controles do Excel** guia de ferramentas, arraste um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle a célula **B9**.  
   
-2.  Verifique **$B$ 9** aparece na caixa de texto editável e que a célula **B9** está selecionado. Se não estiver, clique na célula **B9** para selecioná-lo.  
+2. Verifique **$B$ 9** aparece na caixa de texto editável e que a célula **B9** está selecionado. Se não estiver, clique na célula **B9** para selecioná-lo.  
   
-3.  Clique em **OK**.  
+3. Clique em **OK**.  
   
-4.  Célula **B9** torna-se um intervalo nomeado `NamedRange1`.  
+4. Célula **B9** torna-se um intervalo nomeado `NamedRange1`.  
   
-     Não há nenhuma indicação visível na planilha, mas `NamedRange1` aparece na **caixa nome** (logo acima a planilha no lado esquerdo) quando a célula **B9** está selecionado.  
+    Não há nenhuma indicação visível na planilha, mas `NamedRange1` aparece na **caixa nome** (logo acima a planilha no lado esquerdo) quando a célula **B9** está selecionado.  
   
-5.  Certifique-se de que **NamedRange1** está visível na caixa de listagem nome do objeto da **propriedades** janela e altere as propriedades a seguir:  
+5. Certifique-se de que **NamedRange1** está visível na caixa de listagem nome do objeto da **propriedades** janela e altere as propriedades a seguir:  
   
-    |Propriedade|Valor|  
-    |--------------|-----------|  
-    |**Nome**|**textFont**|  
-    |**Value2**|**Clique em uma caixa de seleção para alterar a formatação deste texto.**|  
+   |Propriedade|Valor|  
+   |--------------|-----------|  
+   |**Nome**|**textFont**|  
+   |**Value2**|**Clique em uma caixa de seleção para alterar a formatação deste texto.**|  
   
- Em seguida, escreva o código para formatar o texto quando uma opção é selecionada.  
+   Em seguida, escreva o código para formatar o texto quando uma opção é selecionada.  
   
 ## <a name="format-the-text-when-an-option-is-selected"></a>Formatar o texto quando uma opção é selecionada.  
  Nesta seção, você escreverá código para que quando o usuário seleciona uma opção de formatação, o formato do texto na planilha é alterado.  

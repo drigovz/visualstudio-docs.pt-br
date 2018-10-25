@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f0ad5f409b6f7da852abbf2872bf01ef678b7a5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8de721b7f26152cd4e7f5df1ee7eb4d04770511
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233981"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835937"
 ---
 # <a name="t4-include-directive"></a>Diretiva de inclusão T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,31 +30,31 @@ Em um modelo de texto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], você pod
 <#@ include file="filePath" [once="true"] #>  
 ```  
   
--   `filePath` pode ser absoluto ou relativo ao arquivo de modelo atual.  
+- `filePath` pode ser absoluto ou relativo ao arquivo de modelo atual.  
   
-     Além disso, as extensões específicas do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podem especificar seus próprios diretórios para pesquisar arquivos de inclusão. Por exemplo, quando você instalou o SDK de visualização e modelagem (ferramentas DSL), a pasta a seguir é adicionada à lista de inclusão: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.  
+   Além disso, as extensões específicas do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podem especificar seus próprios diretórios para pesquisar arquivos de inclusão. Por exemplo, quando você instalou o SDK de visualização e modelagem (ferramentas DSL), a pasta a seguir é adicionada à lista de inclusão: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.  
   
-     Essas pastas de inclusão adicionais podem depender da extensão do arquivo de inclusão. Por exemplo, a pasta de inclusão das Ferramentas DSL só é acessível a arquivos de inclusão com a extensão de arquivo `.tt`  
+   Essas pastas de inclusão adicionais podem depender da extensão do arquivo de inclusão. Por exemplo, a pasta de inclusão das Ferramentas DSL só é acessível a arquivos de inclusão com a extensão de arquivo `.tt`  
   
--   `filePath` pode incluir variáveis de ambiente delimitadas com "%". Por exemplo:  
+- `filePath` pode incluir variáveis de ambiente delimitadas com "%". Por exemplo:  
   
-    ```  
-    <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
-    ```  
+  ```  
+  <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
+  ```  
   
--   O nome de um arquivo incluído não precisa usar a extensão `".tt"`.  
+- O nome de um arquivo incluído não precisa usar a extensão `".tt"`.  
   
-     Você pode usar outra extensão como `".t4"` para arquivos incluídos. Isso ocorre porque, quando você adiciona uma `.tt` arquivo a um projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] define automaticamente seus **Custom Tool** propriedade para `TextTemplatingFileGenerator`. Geralmente, você não quer que os arquivos incluídos sejam transformados individualmente.  
+   Você pode usar outra extensão como `".t4"` para arquivos incluídos. Isso ocorre porque, quando você adiciona uma `.tt` arquivo a um projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] define automaticamente seus **Custom Tool** propriedade para `TextTemplatingFileGenerator`. Geralmente, você não quer que os arquivos incluídos sejam transformados individualmente.  
   
-     Por outro lado, você deve estar ciente de que, em alguns casos, a extensão do arquivo afeta as pastas adicionais em que os arquivos de inclusão serão pesquisados. Isso pode ser importante quando você tem um arquivo incluído que contenha outros arquivos.  
+   Por outro lado, você deve estar ciente de que, em alguns casos, a extensão do arquivo afeta as pastas adicionais em que os arquivos de inclusão serão pesquisados. Isso pode ser importante quando você tem um arquivo incluído que contenha outros arquivos.  
   
--   O conteúdo incluído é processado quase como se fizesse parte do modelo de texto de inclusão. Entretanto, você pode incluir um arquivo que contenha um bloco de recurso de classe `<#+...#>` mesmo se a diretiva `include` for seguida por blocos de texto comum ou de controle padrão.  
+- O conteúdo incluído é processado quase como se fizesse parte do modelo de texto de inclusão. Entretanto, você pode incluir um arquivo que contenha um bloco de recurso de classe `<#+...#>` mesmo se a diretiva `include` for seguida por blocos de texto comum ou de controle padrão.  
   
--   Use `once="true"` para garantir que um modelo seja incluído somente uma vez, mesmo se for invocado por mais de um arquivo de inclusão.  
+- Use `once="true"` para garantir que um modelo seja incluído somente uma vez, mesmo se for invocado por mais de um arquivo de inclusão.  
   
-     Isso faz com que recurso fácil criar uma biblioteca de trechos de código T4 reutilizáveis que você pode incluir a será sem se preocupar que algum outro trecho já incluiu-los.  Por exemplo, suponha que você tem uma biblioteca de trechos muito refinados que lidam com processamento de modelo e geração de c#.  Por sua vez, eles são usados por alguns utilitários de tarefas mais específicas, como a geração de exceções, que você pode usar de qualquer modelo de aplicativo mais específico. Se você desenhar o grafo de dependência, verá que alguns snippets poderiam ser incluídos várias vezes. Mas o parâmetro `once` evita as inclusões subsequentes.  
+   Isso faz com que recurso fácil criar uma biblioteca de trechos de código T4 reutilizáveis que você pode incluir a será sem se preocupar que algum outro trecho já incluiu-los.  Por exemplo, suponha que você tem uma biblioteca de trechos muito refinados que lidam com processamento de modelo e geração de c#.  Por sua vez, eles são usados por alguns utilitários de tarefas mais específicas, como a geração de exceções, que você pode usar de qualquer modelo de aplicativo mais específico. Se você desenhar o grafo de dependência, verá que alguns snippets poderiam ser incluídos várias vezes. Mas o parâmetro `once` evita as inclusões subsequentes.  
   
- **MyTextTemplate.tt:**  
+  **MyTextTemplate.tt:**  
   
 ```  
 <#@ output extension=".txt" #>  

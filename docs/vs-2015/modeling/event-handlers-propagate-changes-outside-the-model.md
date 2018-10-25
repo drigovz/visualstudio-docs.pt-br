@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bfddc0903c520469833a0f160444202edf07c32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303193"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823691"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Manipuladores de eventos propagam alterações fora do modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,23 +31,23 @@ No SDK de modelagem e visualização, você pode definir manipuladores de evento
   
 ### <a name="to-define-a-store-event"></a>Para definir um evento de armazenamento  
   
-1.  Escolha o tipo de evento que você deseja monitorar. Para obter uma lista completa, examine as propriedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propriedade corresponde a um tipo de evento. Usada com mais frequência são tipos de evento:  
+1. Escolha o tipo de evento que você deseja monitorar. Para obter uma lista completa, examine as propriedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propriedade corresponde a um tipo de evento. Usada com mais frequência são tipos de evento:  
   
-    -   `ElementAdded` – disparado quando um elemento de modelo, link de relação, forma ou conector é criado.  
+   -   `ElementAdded` – disparado quando um elemento de modelo, link de relação, forma ou conector é criado.  
   
-    -   ElementPropertyChanged – disparado quando o valor de um `Normal` propriedade de domínio é alterada. O evento é disparado somente se os valores novos e antigos não são iguais. O evento não pode ser aplicado às propriedades de armazenamento calculadas e personalizadas.  
+   -   ElementPropertyChanged – disparado quando o valor de um `Normal` propriedade de domínio é alterada. O evento é disparado somente se os valores novos e antigos não são iguais. O evento não pode ser aplicado às propriedades de armazenamento calculadas e personalizadas.  
   
-         Ele não pode ser aplicado a propriedades da função que correspondem aos links do relacionamento. Em vez disso, use `ElementAdded` para monitorar a relação de domínio.  
+        Ele não pode ser aplicado a propriedades da função que correspondem aos links do relacionamento. Em vez disso, use `ElementAdded` para monitorar a relação de domínio.  
   
-    -   `ElementDeleted` – disparado depois de um elemento de modelo, relação, forma ou conector foi excluído. Você ainda pode acessar os valores de propriedade do elemento, mas ele será não têm nenhuma relação a outros elementos.  
+   -   `ElementDeleted` – disparado depois de um elemento de modelo, relação, forma ou conector foi excluído. Você ainda pode acessar os valores de propriedade do elemento, mas ele será não têm nenhuma relação a outros elementos.  
   
-2.  Adicione uma definição de classe parcial para _{1&gt;yourdsl&lt;1_**DocData** em um arquivo de código separado no **DslPackage** projeto.  
+2. Adicione uma definição de classe parcial para _{1&gt;yourdsl&lt;1_**DocData** em um arquivo de código separado no **DslPackage** projeto.  
   
-3.  Escreva o código do evento como um método, como no exemplo a seguir. Ele pode ser `static`, a menos que você deseja acessar `DocData`.  
+3. Escreva o código do evento como um método, como no exemplo a seguir. Ele pode ser `static`, a menos que você deseja acessar `DocData`.  
   
-4.  Substituir `OnDocumentLoaded()` para registrar o manipulador. Se você tiver mais de um manipulador, você pode registrá-los todos no mesmo lugar.  
+4. Substituir `OnDocumentLoaded()` para registrar o manipulador. Se você tiver mais de um manipulador, você pode registrá-los todos no mesmo lugar.  
   
- O local do código de registro não é crítico. `DocView.LoadView()` é um local alternativo.  
+   O local do código de registro não é crítico. `DocView.LoadView()` é um local alternativo.  
   
 ```  
 using System;  

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fa0e7899e2f6e52536e2296519a1697e27a3643
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ae7b54e6311a58d93c5cc11cfc073c4032df32dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637062"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855983"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>Elemento ProjectItem (modelos de item do Visual Studio)
 Especifica um arquivo que está incluído no modelo de item.  
@@ -51,13 +51,13 @@ Especifica um arquivo que está incluído no modelo de item.
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descrição|  
-|---------------|-----------------|  
-|`SubType`|Atributo opcional.<br /><br /> Especifica o subtipo de um item em um modelo de item de vários arquivos. Esse valor é usado para determinar o editor que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usará para abrir o item.|  
-|`CustomTool`|Atributo opcional.<br /><br /> Define o CustomTool para o item no arquivo de projeto.|  
-|`ItemType`|Atributo opcional.<br /><br /> Define o ItemType para o item no arquivo de projeto.|  
-|`ReplaceParameters`|Atributo opcional.<br /><br /> Um valor booliano que especifica se o item tem valores de parâmetros que devem ser substituídas quando um projeto é criado a partir do modelo. O valor padrão é `false`.|  
-|`TargetFileName`|Atributo opcional.<br /><br /> Especifica o nome do item que é criado a partir do modelo. Esse atributo é útil para usar substituição de parâmetro para criar um nome de item.|  
+| Atributo | Descrição |
+|---------------------| - |
+| `SubType` | Atributo opcional.<br /><br /> Especifica o subtipo de um item em um modelo de item de vários arquivos. Esse valor é usado para determinar o editor que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usará para abrir o item. |
+| `CustomTool` | Atributo opcional.<br /><br /> Define o CustomTool para o item no arquivo de projeto. |
+| `ItemType` | Atributo opcional.<br /><br /> Define o ItemType para o item no arquivo de projeto. |
+| `ReplaceParameters` | Atributo opcional.<br /><br /> Um valor booliano que especifica se o item tem valores de parâmetros que devem ser substituídas quando um projeto é criado a partir do modelo. O valor padrão é `false`. |
+| `TargetFileName` | Atributo opcional.<br /><br /> Especifica o nome do item que é criado a partir do modelo. Esse atributo é útil para usar substituição de parâmetro para criar um nome de item. |
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  

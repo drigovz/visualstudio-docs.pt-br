@@ -16,12 +16,12 @@ ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f731c9f441aecf5277dafffc5cc8b10d1a703a4b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8bf3de0c558dbda1d1b43e7b5887780f1a1e2b90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832051"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Criando pastas de contêiner pai para soluções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Na fonte de controle de plug-in API versão 1.2, um usuário pode especificar um
   
  O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE quase sempre cria uma pasta SUR ao adicionar uma solução ao controle de origem. Especificamente, isso é feito nos seguintes casos:  
   
--   O projeto é um compartilhamento de arquivos de projeto da Web.  
+- O projeto é um compartilhamento de arquivos de projeto da Web.  
   
--   Existem diferentes unidades para o projeto e o arquivo de solução.  
+- Existem diferentes unidades para o projeto e o arquivo de solução.  
   
--   Não há compartilhamento diferente para o projeto e o arquivo de solução.  
+- Não há compartilhamento diferente para o projeto e o arquivo de solução.  
   
--   Projetos foram adicionados separadamente (em uma solução de controle do código-fonte).  
+- Projetos foram adicionados separadamente (em uma solução de controle do código-fonte).  
   
- No [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] é aconselhável que o nome da pasta SUR ser o mesmo que o nome da solução sem a extensão. A tabela a seguir resume o comportamento em duas versões.  
+  No [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] é aconselhável que o nome da pasta SUR ser o mesmo que o nome da solução sem a extensão. A tabela a seguir resume o comportamento em duas versões.  
   
 |Recurso|tSource 1.1 de versão de API de plug-in de controle|Versão 1.2 da API de plug-in de controle de origem|  
 |-------------|----------------------------------------------|---------------------------------------------|  

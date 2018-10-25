@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fd034f4802679daa442f04b469a37f04d580ea94
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: da2ddc582c6555e8ec4567f4faace603f6f0f677
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872480"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Passo a passo: Vinculação de dados complexos no projeto do suplemento do VSTO
   Você pode associar dados a controles de host e controles de formulários do Windows em projetos de suplemento do VSTO. Este passo a passo demonstra como adicionar controles a uma planilha do Microsoft Office Excel e ligar os controles a dados em tempo de execução.
@@ -31,11 +31,11 @@ ms.locfileid: "36758868"
 
  Esta explicação passo a passo ilustra as seguintes tarefas:
 
--   Adicionando um <xref:Microsoft.Office.Tools.Excel.ListObject> controle em uma planilha em tempo de execução.
+- Adicionando um <xref:Microsoft.Office.Tools.Excel.ListObject> controle em uma planilha em tempo de execução.
 
--   Criando um <xref:System.Windows.Forms.BindingSource> que conecta o controle a uma instância de um conjunto de dados.
+- Criando um <xref:System.Windows.Forms.BindingSource> que conecta o controle a uma instância de um conjunto de dados.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
@@ -66,27 +66,27 @@ ms.locfileid: "36758868"
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Para adicionar um dataset tipado ao projeto
 
-1.  Se o **fontes de dados** janela não estiver visível, exibi-lo, na barra de menus, escolhendo **exibição** > **Other Windows**  >   **Fontes de dados**.
+1. Se o **fontes de dados** janela não estiver visível, exibi-lo, na barra de menus, escolhendo **exibição** > **Other Windows**  >   **Fontes de dados**.
 
-2.  Escolher **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.
+2. Escolher **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.
 
-3.  Clique em **banco de dados**e, em seguida, clique em **próxima**.
+3. Clique em **banco de dados**e, em seguida, clique em **próxima**.
 
-4.  Se você tiver uma conexão existente para o `AdventureWorksLT` do banco de dados, escolha essa conexão e clique em **próxima**.
+4. Se você tiver uma conexão existente para o `AdventureWorksLT` do banco de dados, escolha essa conexão e clique em **próxima**.
 
-     Caso contrário, clique em **nova Conexão**e usar o **Adicionar Conexão** caixa de diálogo para criar a nova conexão. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).
+    Caso contrário, clique em **nova Conexão**e usar o **Adicionar Conexão** caixa de diálogo para criar a nova conexão. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).
 
-5.  No **salvar a cadeia de Conexão no arquivo de configuração de aplicativo** , clique em **próxima**.
+5. No **salvar a cadeia de Conexão no arquivo de configuração de aplicativo** , clique em **próxima**.
 
-6.  No **Choose Your Database Objects** página, expanda **tabelas** e selecione **endereço (SalesLT)**.
+6. No **Choose Your Database Objects** página, expanda **tabelas** e selecione **endereço (SalesLT)**.
 
-7.  Clique em **Finalizar**.
+7. Clique em **Finalizar**.
 
-     O *Adventureworksltdataset* arquivo é adicionado ao **Gerenciador de soluções**. Esse arquivo define os seguintes itens:
+    O *Adventureworksltdataset* arquivo é adicionado ao **Gerenciador de soluções**. Esse arquivo define os seguintes itens:
 
-    -   Um dataset tipado chamado `AdventureWorksLTDataSet`. Esse conjunto de dados representa o conteúdo do **endereço (SalesLT)** tabela no banco de dados AdventureWorksLT.
+   - Um dataset tipado chamado `AdventureWorksLTDataSet`. Esse conjunto de dados representa o conteúdo do **endereço (SalesLT)** tabela no banco de dados AdventureWorksLT.
 
-    -   Um TableAdapter nomeado `AddressTableAdapter`. Este TableAdapter pode ser usado para ler e gravar dados no `AdventureWorksLTDataSet`. Para obter mais informações, consulte [visão geral de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+   - Um TableAdapter nomeado `AddressTableAdapter`. Este TableAdapter pode ser usado para ler e gravar dados no `AdventureWorksLTDataSet`. Para obter mais informações, consulte [visão geral de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
      Você usará dois desses objetos posteriormente neste passo a passo.
 

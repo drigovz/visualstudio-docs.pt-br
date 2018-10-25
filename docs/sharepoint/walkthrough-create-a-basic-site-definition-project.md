@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dee03e2cd7b1c22faf5f1b06ec5efe763bad1387
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8a9a879db7c1d24dbfd8312dbc75d9b0bbaa8803
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844390"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Passo a passo: Criar um projeto de definição de site básico
   Este passo a passo mostra como criar uma definição de site básico que contém uma Web part visual com alguns controles nele. Para clareza, a Web part visual que você cria tem apenas alguns controles. No entanto, você pode criar definições de site do SharePoint mais sofisticadas que incluem mais funcionalidade.  
   
  Este passo a passo demonstra as seguintes tarefas:  
   
--   Criando uma definição de site usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modelo de projeto.  
+- Criando uma definição de site usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modelo de projeto.  
   
--   Criando um site do SharePoint por meio de uma definição de site no SharePoint.  
+- Criando um site do SharePoint por meio de uma definição de site no SharePoint.  
   
--   Adicionando uma Web part visual à solução.  
+- Adicionando uma Web part visual à solução.  
   
--   Personalizando a página de Default. aspx do site com a adição de nova Web part visual.  
+- Personalizando a página de Default. aspx do site com a adição de nova Web part visual.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
@@ -52,29 +52,29 @@ ms.locfileid: "37118452"
   
 #### <a name="to-create-a-site-definition-project"></a>Para criar um projeto de definição do site  
   
-1.  Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**. Se o seu IDE for definido para usar configurações de desenvolvimento do Visual Basic, na barra de menus, escolha **arquivo** > **novo projeto**.  
+1. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**. Se o seu IDE for definido para usar configurações de desenvolvimento do Visual Basic, na barra de menus, escolha **arquivo** > **novo projeto**.  
   
-     A caixa de diálogo **Novo Projeto** é exibida.  
+    A caixa de diálogo **Novo Projeto** é exibida.  
   
-2.  Expanda o **Visual c#** nó ou o **Visual Basic** nó, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.  
+2. Expanda o **Visual c#** nó ou o **Visual Basic** nó, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.  
   
-3.  No **modelos** , escolha o **o projeto do SharePoint 2010** modelo.  
+3. No **modelos** , escolha o **o projeto do SharePoint 2010** modelo.  
   
-4.  No **nome** , digite **TestSiteDef**e, em seguida, escolha o **Okey** botão.  
+4. No **nome** , digite **TestSiteDef**e, em seguida, escolha o **Okey** botão.  
   
-     O **Assistente para personalização do SharePoint** é exibida.  
+    O **Assistente para personalização do SharePoint** é exibida.  
   
-5.  Sobre o **especificar o nível de site e segurança para depuração** página, insira a URL do site do SharePoint onde você deseja depurar a definição de site ou usar o local padrão (http://*nome do sistema*/).  
+5. Sobre o **especificar o nível de site e segurança para depuração** página, insira a URL do site do SharePoint onde você deseja depurar a definição de site ou usar o local padrão (http://<em>nome do sistema</em>/).  
   
-6.  No **qual é o nível de confiança para essa solução do SharePoint?** , escolha o **implantar como uma solução de farm** botão de opção.  
+6. No **qual é o nível de confiança para essa solução do SharePoint?** , escolha o **implantar como uma solução de farm** botão de opção.  
   
-     Todos os projetos de definição de site devem ser implantados como soluções de farm. Para obter mais informações sobre soluções em área restrita em comparação com soluções de farm, consulte [considerações sobre a solução em área restrita](../sharepoint/sandboxed-solution-considerations.md).  
+    Todos os projetos de definição de site devem ser implantados como soluções de farm. Para obter mais informações sobre soluções em área restrita em comparação com soluções de farm, consulte [considerações sobre a solução em área restrita](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Escolha o **concluir** botão.  
+7. Escolha o **concluir** botão.  
   
-     O projeto aparece na **Gerenciador de soluções**.  
+    O projeto aparece na **Gerenciador de soluções**.  
   
-8.  Na **Gerenciador de soluções**, escolha o nó do projeto e, em seguida, na barra de menus, escolha **Project** > **Add New Item**.  
+8. Na **Gerenciador de soluções**, escolha o nó do projeto e, em seguida, na barra de menus, escolha **Project** > **Add New Item**.  
   
 9. Em um **Visual c#** ou **Visual Basic**, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.  
   

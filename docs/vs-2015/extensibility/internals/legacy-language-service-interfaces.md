@@ -16,12 +16,12 @@ ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 654a0d7de3ad75c541d14a38a2a897adb731ea7a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d64ff7ec1aea24a5e98b3f37339639440e31bf42
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249204"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837237"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfaces de serviço de linguagem herdada
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ Para qualquer linguagem de programação específica, pode haver apenas uma inst
   
  Você pode implementar as interfaces de serviço de linguagem principal em qualquer número de classes separadas. No entanto, uma abordagem comum é implementar as interfaces a seguir em uma única classe:  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (opcional)  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (opcional)  
   
- O <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface deve ser implementada em todos os serviços de linguagem. Ele fornece informações sobre seu serviço de linguagem, como o nome localizado da linguagem, as extensões de nome de arquivo associadas com o serviço de linguagem e como recuperar um colorizador.  
+  O <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface deve ser implementada em todos os serviços de linguagem. Ele fornece informações sobre seu serviço de linguagem, como o nome localizado da linguagem, as extensões de nome de arquivo associadas com o serviço de linguagem e como recuperar um colorizador.  
   
 ## <a name="additional-language-service-interfaces"></a>Interfaces de serviço de idioma adicionais  
  Outras interfaces podem ser fornecidos com o serviço de linguagem. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] solicita uma instância separada dessas interfaces para cada instância do buffer de texto. Portanto, você deve implementar cada uma dessas interfaces em seu próprio objeto. A tabela a seguir mostra as interfaces que exigem uma instância por instância do buffer de texto.  

@@ -18,29 +18,29 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b7caa6af725fc1af5551e9b705e609e25f74121b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82ce653eda1ec074f050809845610fbc1ab1bc0c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303440"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833649"
 ---
 # <a name="visualize-code"></a>Visualizar código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode usar a visualização e modelagem de ferramentas no Visual Studio para ajudá-lo a entender o código existente e descrever seu aplicativo. Isso permite aprender visualmente como suas alterações poderão afetar o código e ajudam a que avaliar o trabalho e os riscos resultam dessas mudanças. Por exemplo:  
   
--   Para entender as relações em seu código, mapear essas relações visualmente.  
+- Para entender as relações em seu código, mapear essas relações visualmente.  
   
--   Para descrever a arquitetura do seu sistema e manter o código consistente com seu design, crie diagramas de camada e validar o código em relação a esses diagramas.  
+- Para descrever a arquitetura do seu sistema e manter o código consistente com seu design, crie diagramas de camada e validar o código em relação a esses diagramas.  
   
--   Para descrever estruturas de classes, crie diagramas de classe.  
+- Para descrever estruturas de classes, crie diagramas de classe.  
   
--   Para modelar e comunicar-se vários aspectos do sistema, desenhe diagramas de modelagem UML (Unified Language). Por exemplo, você pode modelar um sistema de componentes, tipos, as interações e processos.  
+- Para modelar e comunicar-se vários aspectos do sistema, desenhe diagramas de modelagem UML (Unified Language). Por exemplo, você pode modelar um sistema de componentes, tipos, as interações e processos.  
   
- Essas ferramentas também ajudam você a se comunicar com mais facilidade com as pessoas envolvidas com o seu projeto. Por exemplo, você pode usar diagramas de classe UML para criar um Glossário comum para discutir sobre o sistema com os participantes do projeto, os usuários e os membros da equipe.  
+  Essas ferramentas também ajudam você a se comunicar com mais facilidade com as pessoas envolvidas com o seu projeto. Por exemplo, você pode usar diagramas de classe UML para criar um Glossário comum para discutir sobre o sistema com os participantes do projeto, os usuários e os membros da equipe.  
   
- Para ver quais versões do Visual Studio dão suporte a cada recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
+  Para ver quais versões do Visual Studio dão suporte a cada recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
   
 ## <a name="what-do-you-want-to-do"></a>O que você deseja fazer?  
   

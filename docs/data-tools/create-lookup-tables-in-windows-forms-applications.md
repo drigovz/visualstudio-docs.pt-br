@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b154b970d2a738e80efa5cbf669d29bd7bae589
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f68cb2178242e5589f312f6ddc2c555da3f47a0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756760"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872818"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Criar tabelas de pesquisa em aplicativos do Windows Forms
 O termo *tabela de pesquisa* descreve controles que estão associados às tabelas de dois dados relacionados. Esses controles de pesquisa exibem dados da primeira tabela com base em um valor selecionado na segunda tabela.
@@ -52,7 +52,7 @@ O termo *tabela de pesquisa* descreve controles que estão associados às tabela
      As associações de pesquisa agora são estabelecidas. Consulte a tabela a seguir para as propriedades específicas que foram definidas no controle.
 
     |Propriedade|Explicação da configuração|
-    |--------------|----------------------------|
+    |--------------| - |
     |**Fonte de dados**|Visual Studio define essa propriedade para o <xref:System.Windows.Forms.BindingSource>, criado para a tabela que você arrasta para o controle (em vez de <xref:System.Windows.Forms.BindingSource>, criado quando o controle foi criado).<br /><br /> Se você precisar fazer um ajuste, defina isso como o <xref:System.Windows.Forms.BindingSource> da tabela com a coluna que você deseja exibir.|
     |**DisplayMember**|O Visual Studio define essa propriedade para a primeira coluna após a chave primária que tem um tipo de dado de cadeia da tabela que você arrasta para o controle.<br /><br /> Se você precisar fazer um ajuste, defina isso para o nome da coluna que deseja exibir.|
     |**ValueMember**|O Visual Studio define essa propriedade para a primeira coluna participante da chave primária, ou a primeira coluna na tabela, se nenhuma chave for definida.<br /><br /> Se você precisar fazer um ajuste, defina isso para a chave primária na tabela com a coluna que você deseja exibir.|
