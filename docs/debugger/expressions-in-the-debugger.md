@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a29c9cd7c1c80ca27ea3e72b4aab3e881bb8d480
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4df9ae5c8b525ff75985ff7aff071d2b2e86e1cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626026"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926183"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressões no depurador do Visual Studio
 O depurador do Visual Studio inclui avaliadores de expressão que funcionam quando você insere uma expressão na **QuickWatch** caixa de diálogo **inspeção** janela, ou **imediato** janela. Os avaliadores de expressão também estão em funcionamento na **pontos de interrupção** janela e muitos outros locais no depurador.
@@ -91,13 +91,13 @@ int main()
   
  Funções intrínsecas do depurador:  
   
--   São certamente seguras: executar uma função intrínseca do depurador não corromperá o processo que está sendo depurado.  
+- São certamente seguras: executar uma função intrínseca do depurador não corromperá o processo que está sendo depurado.  
   
--   São permitidas em todas as expressões, mesmo em cenários onde os efeitos colaterais e a avaliação de função não são permitidos.  
+- São permitidas em todas as expressões, mesmo em cenários onde os efeitos colaterais e a avaliação de função não são permitidos.  
   
--   Trabalham em cenários onde as chamadas de funções normais não são possíveis, por exemplo, depurar um minidespejo.  
+- Trabalham em cenários onde as chamadas de funções normais não são possíveis, por exemplo, depurar um minidespejo.  
   
- As funções intrínsecas do depurador também podem tornar mais convenientes as expressões de avaliação. Por exemplo, `strncmp(str, "asd")` é muito mais fácil escrever em uma condição de ponto de interrupção que `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
+  As funções intrínsecas do depurador também podem tornar mais convenientes as expressões de avaliação. Por exemplo, `strncmp(str, "asd")` é muito mais fácil escrever em uma condição de ponto de interrupção que `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
   
 |Área|Funções intrínsecas|  
 |----------|-------------------------|  

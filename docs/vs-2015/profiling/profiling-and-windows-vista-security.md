@@ -17,25 +17,25 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 141c8ee9e2a5924ce74dca119e1ba897add0c04b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 567640eafb3886d51469447eba31e439ca150618
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185882"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836977"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Criação de perfil e segurança do Windows Vista
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dependendo das configurações de Permissões de Acesso do Usuário do [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)] que um administrador de computador disponibilizou, um usuário individual pode ter a permissão de segurança para analisar um processo no computador. Os exemplos a seguir ilustram possíveis diferenças entre os usuários:  
   
--   Alguns usuários podem acessar recursos de criação de perfil avançados quando o administrador tiver configurado o início do driver e do serviço.  
+- Alguns usuários podem acessar recursos de criação de perfil avançados quando o administrador tiver configurado o início do driver e do serviço.  
   
--   Os usuários do domínio podem acessar apenas as amostras de criação de perfil.  
+- Os usuários do domínio podem acessar apenas as amostras de criação de perfil.  
   
--   Alguns usuários podem negar acesso à criação de perfil para todos os outros usuários.  
+- Alguns usuários podem negar acesso à criação de perfil para todos os outros usuários.  
   
- Para obter mais informações, consulte as opções de ADMIN em [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Para obter mais informações, consulte as opções de ADMIN em [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ## <a name="cross-session-profiling"></a>Criação de perfil de sessão cruzada  
  *Criação de perfil de sessão cruzada* é a capacidade de analisar um processo que é executado em uma sessão de logon diferente. Por exemplo, a maioria dos serviços executados na sessão 0, os usuários não podem ser executados diretamente na sessão 0. Usando o botão **Anexar ao Processo** na barra de ferramentas do Gerenciador de Desempenho ou a opção /attach da ferramenta de linha de comando VSPerfCmd, você pode analisar a maioria dos processos em sessões de logon diferentes.  

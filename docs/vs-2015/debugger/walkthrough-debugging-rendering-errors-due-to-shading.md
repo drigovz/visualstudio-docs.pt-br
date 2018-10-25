@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c73553e73dc2010afb03deba9a1421e76f962308
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 80bb5f5561ad3170d2ecbbe02bb10749e605dfd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922361"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Instruções passo a passo: depurando erros de renderização devido ao sombreamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,55 +46,55 @@ Este passo a passo demonstra como usar [!INCLUDE[vsprvs](../includes/vsprvs-md.m
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Para examinar um quadro no log de gráficos  
   
-1.  No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], carregar um log de gráficos que contém um quadro que exibe o modelo ausente. Uma nova janela de documento de log de gráficos aparece no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Na parte superior desta janela é a saída de destino de renderização do quadro selecionado. Na parte inferior é parte do **lista de quadros**, que exibe cada quadro capturado como uma imagem em miniatura.  
+1. No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], carregar um log de gráficos que contém um quadro que exibe o modelo ausente. Uma nova janela de documento de log de gráficos aparece no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Na parte superior desta janela é a saída de destino de renderização do quadro selecionado. Na parte inferior é parte do **lista de quadros**, que exibe cada quadro capturado como uma imagem em miniatura.  
   
-2.  No **lista de quadros**, selecionar um quadro no qual o objeto não tem a aparência correta. O destino de renderização é atualizado para refletir o quadro selecionado. Nesse cenário, os gráficos de log documento janela semelhante ao seguinte:  
+2. No **lista de quadros**, selecionar um quadro no qual o objeto não tem a aparência correta. O destino de renderização é atualizado para refletir o quadro selecionado. Nesse cenário, os gráficos de log documento janela semelhante ao seguinte:  
   
-     ![Documento de log de gráficos no Visual Studio. ](../debugger/media/gfx-diag-demo-render-error-shader-step-1.png "gfx_diag_demo_render_error_shader_step_1")  
+    ![Documento de log de gráficos no Visual Studio. ](../debugger/media/gfx-diag-demo-render-error-shader-step-1.png "gfx_diag_demo_render_error_shader_step_1")  
   
- Depois de selecionar um quadro que demonstra o problema, você pode usar o **histórico de Pixel de gráficos** janela para diagnosticá-lo. O **histórico de Pixel de gráficos** janela mostra os primitivos que poderiam ter tido um efeito em um pixel específico, seus sombreadores e quais seus efeitos sobre o destino de renderização foram, em ordem cronológica.  
+   Depois de selecionar um quadro que demonstra o problema, você pode usar o **histórico de Pixel de gráficos** janela para diagnosticá-lo. O **histórico de Pixel de gráficos** janela mostra os primitivos que poderiam ter tido um efeito em um pixel específico, seus sombreadores e quais seus efeitos sobre o destino de renderização foram, em ordem cronológica.  
   
 #### <a name="to-examine-a-pixel"></a>Para examinar um pixel  
   
-1.  Abra o **histórico de Pixel de gráficos** janela. Sobre o **diagnóstico de gráficos** barra de ferramentas, escolha **histórico de Pixel**.  
+1. Abra o **histórico de Pixel de gráficos** janela. Sobre o **diagnóstico de gráficos** barra de ferramentas, escolha **histórico de Pixel**.  
   
-2.  Selecione um pixel para examinar. Na janela do documento de log de gráficos, selecione um dos pixels no objeto que é colorido incorretamente:  
+2. Selecione um pixel para examinar. Na janela do documento de log de gráficos, selecione um dos pixels no objeto que é colorido incorretamente:  
   
-     ![A seleção de um pixel exibe informações sobre seu histórico. ](../debugger/media/gfx-diag-demo-render-error-shader-step-2.png "gfx_diag_demo_render_error_shader_step_2")  
+    ![A seleção de um pixel exibe informações sobre seu histórico. ](../debugger/media/gfx-diag-demo-render-error-shader-step-2.png "gfx_diag_demo_render_error_shader_step_2")  
   
-     O **histórico de Pixel de gráficos** janela é atualizada para refletir o pixel selecionado. Nesse cenário, o **histórico de Pixel de gráficos** janela tem esta aparência:  
+    O **histórico de Pixel de gráficos** janela é atualizada para refletir o pixel selecionado. Nesse cenário, o **histórico de Pixel de gráficos** janela tem esta aparência:  
   
-     ![O histórico de pixel mostra um evento DrawIndexed. ](../debugger/media/gfx-diag-demo-render-error-shader-step-3.png "gfx_diag_demo_render_error_shader_step_3")  
+    ![O histórico de pixel mostra um evento DrawIndexed. ](../debugger/media/gfx-diag-demo-render-error-shader-step-3.png "gfx_diag_demo_render_error_shader_step_3")  
   
-     Observe que o resultado do sombreador de pixel é totalmente opaco preto (0, 0, 0, 1) e que o **fusão de saída** combinado com o **Previous** cor do pixel de forma que o **resultado** também é preto totalmente opaco.  
+    Observe que o resultado do sombreador de pixel é totalmente opaco preto (0, 0, 0, 1) e que o **fusão de saída** combinado com o **Previous** cor do pixel de forma que o **resultado** também é preto totalmente opaco.  
   
- Depois de examinar um pixel que incorretamente é colorido e descobrir que a saída do sombreador de pixel não é a cor esperada, você pode usar o depurador HLSL para examinar o sombreador de pixel e descobrir o que aconteceu com a cor do objeto. Você pode usar o depurador HLSL para examinar o estado das variáveis HLSL durante a execução, percorrer o código HLSL e defina pontos de interrupção para ajudá-lo a diagnosticar o problema.  
+   Depois de examinar um pixel que incorretamente é colorido e descobrir que a saída do sombreador de pixel não é a cor esperada, você pode usar o depurador HLSL para examinar o sombreador de pixel e descobrir o que aconteceu com a cor do objeto. Você pode usar o depurador HLSL para examinar o estado das variáveis HLSL durante a execução, percorrer o código HLSL e defina pontos de interrupção para ajudá-lo a diagnosticar o problema.  
   
 #### <a name="to-examine-the-pixel-shader"></a>Para examinar o sombreador de pixel  
   
-1.  Inicie a depuração do sombreador de pixel. No **histórico de Pixel de gráficos** janela sob o objeto do primitiva, próximo a **sombreador de Pixel**, escolha o **iniciar depuração** botão.  
+1. Inicie a depuração do sombreador de pixel. No **histórico de Pixel de gráficos** janela sob o objeto do primitiva, próximo a **sombreador de Pixel**, escolha o **iniciar depuração** botão.  
   
-2.  Nesse cenário, porque o sombreador de pixel passa apenas a cor por meio do sombreador de vértice, é fácil observar que o sombreador de pixel não é a origem do problema.  
+2. Nesse cenário, porque o sombreador de pixel passa apenas a cor por meio do sombreador de vértice, é fácil observar que o sombreador de pixel não é a origem do problema.  
   
-3.  O ponteiro sobre `input.color`. Observe que seu valor é preto totalmente opaco (0, 0, 0, 1).  
+3. O ponteiro sobre `input.color`. Observe que seu valor é preto totalmente opaco (0, 0, 0, 1).  
   
-     ![O membro "color" de "entrada" é preto. ](../debugger/media/gfx-diag-demo-render-error-shader-step-5.png "gfx_diag_demo_render_error_shader_step_5")  
+    ![O membro "color" de "entrada" é preto. ](../debugger/media/gfx-diag-demo-render-error-shader-step-5.png "gfx_diag_demo_render_error_shader_step_5")  
   
-     Nesse cenário, o exame revela que a cor incorreta é provavelmente o resultado de um sombreador de vértice que não fornece as informações de cor certa para o sombreador de pixel no qual operar.  
+    Nesse cenário, o exame revela que a cor incorreta é provavelmente o resultado de um sombreador de vértice que não fornece as informações de cor certa para o sombreador de pixel no qual operar.  
   
- Depois de determinar que o sombreador de vértices provavelmente não está fornecendo as informações certas para o sombreador de pixel, a próxima etapa é examinar o sombreador de vértices.  
+   Depois de determinar que o sombreador de vértices provavelmente não está fornecendo as informações certas para o sombreador de pixel, a próxima etapa é examinar o sombreador de vértices.  
   
 #### <a name="to-examine-the-vertex-shader"></a>Para examinar o sombreador de vértice  
   
-1.  Inicie a depuração do sombreador de vértice. No **histórico de Pixel de gráficos** janela sob o objeto do primitiva, próximo a **sombreador de vértice**, escolha o **iniciar depuração** botão.  
+1. Inicie a depuração do sombreador de vértice. No **histórico de Pixel de gráficos** janela sob o objeto do primitiva, próximo a **sombreador de vértice**, escolha o **iniciar depuração** botão.  
   
-2.  Localize a estrutura de saída do sombreador de vértice — isso é a entrada para o sombreador de pixel. Nesse cenário, o nome dessa estrutura é `output`. Examine o código do sombreador de vértice e observe que o `color` membro do `output` estrutura tiver sido definido explicitamente como preto totalmente opaco, talvez como resultado de alguém que está depurando esforços.  
+2. Localize a estrutura de saída do sombreador de vértice — isso é a entrada para o sombreador de pixel. Nesse cenário, o nome dessa estrutura é `output`. Examine o código do sombreador de vértice e observe que o `color` membro do `output` estrutura tiver sido definido explicitamente como preto totalmente opaco, talvez como resultado de alguém que está depurando esforços.  
   
-3.  Confirme que o membro de cor nunca é copiado da estrutura de entrada. Porque o valor de `output.color` é definido como preto totalmente opaco imediatamente antes o `output` estrutura é retornada, ele é uma boa ideia para certificar-se de que o valor de `output` não foi inicializado corretamente em uma linha anterior. Percorrer o código de sombreador de vértice até que a linha que define `output.color` preto enquanto inspeciona o valor de `output.color`. Observe que o valor de `output.color` não foi inicializado até que ele seja definido para preto. Isso confirma que a linha de código que define `output.color` para preto deve ser modificado, em vez de excluído.  
+3. Confirme que o membro de cor nunca é copiado da estrutura de entrada. Porque o valor de `output.color` é definido como preto totalmente opaco imediatamente antes o `output` estrutura é retornada, ele é uma boa ideia para certificar-se de que o valor de `output` não foi inicializado corretamente em uma linha anterior. Percorrer o código de sombreador de vértice até que a linha que define `output.color` preto enquanto inspeciona o valor de `output.color`. Observe que o valor de `output.color` não foi inicializado até que ele seja definido para preto. Isso confirma que a linha de código que define `output.color` para preto deve ser modificado, em vez de excluído.  
   
-     ![O valor de "output.color" é preto. ](../debugger/media/gfx-diag-demo-render-error-shader-step-7.png "gfx_diag_demo_render_error_shader_step_7")  
+    ![O valor de "output.color" é preto. ](../debugger/media/gfx-diag-demo-render-error-shader-step-7.png "gfx_diag_demo_render_error_shader_step_7")  
   
- Depois de determinar que a causa do problema de renderização é que o sombreador de vértice não fornece o valor da cor correta para o sombreador de pixel, você pode usar essas informações para corrigir o problema. Nesse cenário, você pode corrigi-lo alterando o código a seguir o sombreador de vértice  
+   Depois de determinar que a causa do problema de renderização é que o sombreador de vértice não fornece o valor da cor correta para o sombreador de pixel, você pode usar essas informações para corrigir o problema. Nesse cenário, você pode corrigi-lo alterando o código a seguir o sombreador de vértice  
   
 ```  
 output.color = float3(0.0f, 0.0f, 0.0f);  

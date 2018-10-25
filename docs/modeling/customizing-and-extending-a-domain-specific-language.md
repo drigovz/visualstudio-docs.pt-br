@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ba8c37e4fd5e62a0f8d05d735fb991c86937698d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859985"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816683"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizando e estendendo uma linguagem específica do domínio
 O Visual Studio de modelagem e o SDK de visualização (VMSDK) oferece vários níveis na qual você pode definir as ferramentas de modelagem:
@@ -35,7 +35,7 @@ O Visual Studio de modelagem e o SDK de visualização (VMSDK) oferece vários n
 ## <a name="customShapes"></a> Nesta seção
 
 |Para obter esse efeito|Consulte este tópico|
-|----------------------------|-------------------------|
+|-|-|
 |Permitir que o usuário definir as propriedades de cor e estilo de uma forma.|A classe de forma ou conector com o botão direito, aponte para **adicionar exposto**e clique em um item.<br /><br /> Ver [Personalizando a apresentação no diagrama](../modeling/customizing-presentation-on-the-diagram.md).|
 |No diagrama, as propriedades como altura inicial e a largura, cor, dicas de ferramenta de compartilhamento semelhante diferentes classes de elemento de modelo.|Use a herança entre classes de conector ou formas. Mapeamentos entre as formas derivadas e classes de domínio derivadas herdam os detalhes do mapeamento dos pais.<br /><br /> Ou então, mapear as classes de domínio diferentes para a mesma classe de forma.|
 |Uma classe de elemento de modelo é exibida por contextos de formas diferentes.|Mapear mais de uma classe de forma para a mesma classe de domínio. Quando você compila a solução, execute o relatório de erros e forneça o código solicitado para decidir qual forma a ser usado.|

@@ -21,12 +21,12 @@ caps.latest.revision: 112
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c241a4ac216fa42d6a67e7e2165e2ceac195e96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7ab3e165a00fa55c8e08f4b538d749d53471e0eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279091"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929485"
 ---
 # <a name="using-saved-intellitrace-data"></a>Usando os dados salvos do IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,25 +164,25 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
   
 ##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>Iniciar depuração com uma ID de correlação do SharePoint  
   
-1.  Copie a ID de correlação do SharePoint de sua origem.  
+1. Copie a ID de correlação do SharePoint de sua origem.  
   
-     Por exemplo:  
+    Por exemplo:  
   
-     ![IntelliTrace &#45; erro do SharePoint &#45; ID de correlação](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
+    ![IntelliTrace &#45; erro do SharePoint &#45; ID de correlação](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
-2.  Abra o arquivo. itrace e, em seguida, vá para **análise** e insira a ID de correlação do SharePoint para revisar a solicitação da web correspondente e os eventos registrados.  
+2. Abra o arquivo. itrace e, em seguida, vá para **análise** e insira a ID de correlação do SharePoint para revisar a solicitação da web correspondente e os eventos registrados.  
   
-     ![Log do IntelliTrace &#45; ID de correlação do SharePoint inserir](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+    ![Log do IntelliTrace &#45; ID de correlação do SharePoint inserir](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
-3.  Sob **eventos de solicitação**, examine os eventos. A partir da parte superior, os eventos aparecem na ordem em que aconteceram.  
+3. Sob **eventos de solicitação**, examine os eventos. A partir da parte superior, os eventos aparecem na ordem em que aconteceram.  
   
-    1.  Escolha um evento para ver seus detalhes.  
+   1. Escolha um evento para ver seus detalhes.  
   
-    2.  Escolher **iniciar depuração** para iniciar a depuração no ponto onde o evento ocorreu.  
+   2. Escolher **iniciar depuração** para iniciar a depuração no ponto onde o evento ocorreu.  
   
-     ![Arquivo de log do IntelliTrace &#45; solicitação do modo de exibição da web &#43; eventos](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+      ![Arquivo de log do IntelliTrace &#45; solicitação do modo de exibição da web &#43; eventos](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
- Você pode ver esses tipos de eventos do SharePoint com eventos do IntelliTrace:  
+   Você pode ver esses tipos de eventos do SharePoint com eventos do IntelliTrace:  
   
 -   **Eventos de perfil do usuário**  
   
@@ -204,28 +204,28 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
   
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Iniciar depuração a partir de uma exceção sem tratamento  
   
-1.  Escolha uma ID de correlação do SharePoint para uma exceção. As exceções são agrupadas por tipo e pilha de chamadas.  
+1. Escolha uma ID de correlação do SharePoint para uma exceção. As exceções são agrupadas por tipo e pilha de chamadas.  
   
-2.  (Opcional) Expandir **pilha de chamadas** para ver a pilha de chamadas para um grupo de exceções.  
+2. (Opcional) Expandir **pilha de chamadas** para ver a pilha de chamadas para um grupo de exceções.  
   
-3.  Escolher **exceção da depuração** para iniciar a depuração no ponto onde e quando a exceção ocorreu.  
+3. Escolher **exceção da depuração** para iniciar a depuração no ponto onde e quando a exceção ocorreu.  
   
-     ![Log do IntelliTrace &#45; exceções sem tratamento do SharePoint](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+    ![Log do IntelliTrace &#45; exceções sem tratamento do SharePoint](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
- Para obter instruções, consulte [instruções passo a passo: depurando um aplicativo do SharePoint usando o IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Para os tipos de dados que registra o agente, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md).  
+   Para obter instruções, consulte [instruções passo a passo: depurando um aplicativo do SharePoint usando o IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Para os tipos de dados que registra o agente, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md).  
   
 ###  <a name="ThreadsList"></a> Lista de threads  
  Examine os threads registrados executados no processo de destino. Você pode iniciar a depuração do primeiro evento válido do IntelliTrace em um thread selecionado.  
   
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>Para iniciar a depuração de um thread específico  
   
-1.  Sob **lista de Threads**, escolha um thread.  
+1. Sob **lista de Threads**, escolha um thread.  
   
-2.  Na parte inferior da **lista de Threads**, escolha **iniciar depuração**. Você também pode clicar duas vezes em um thread.  
+2. Na parte inferior da **lista de Threads**, escolha **iniciar depuração**. Você também pode clicar duas vezes em um thread.  
   
-     Para iniciar a depuração de onde o aplicativo começa, clique duas vezes em **Thread principal**. Ver [recursos do IntelliTrace](../debugger/intellitrace-features.md).  
+    Para iniciar a depuração de onde o aplicativo começa, clique duas vezes em **Thread principal**. Ver [recursos do IntelliTrace](../debugger/intellitrace-features.md).  
   
- Os dados do thread que o usuário cria podem ser mais úteis do que os threads que um servidor cria e gerencia para aplicativos Web hospedados pelo IIS.  
+   Os dados do thread que o usuário cria podem ser mais úteis do que os threads que um servidor cria e gerencia para aplicativos Web hospedados pelo IIS.  
   
 |**Coluna**|**Mostra a**|  
 |----------------|-------------------|  

@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255496"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812459"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Como criar um conjunto de regras personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ Na [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Para criar uma regra personalizada de um único conjunto de regras existente  
   
-1.  No Gerenciador de soluções, clique com botão direito no projeto e, em seguida, selecione **propriedades**.  
+1. No Gerenciador de soluções, clique com botão direito no projeto e, em seguida, selecione **propriedades**.  
   
-2.  Sobre o **propriedades** , clique em **análise de código**.  
+2. Sobre o **propriedades** , clique em **análise de código**.  
   
-3.  No **do conjunto de regras** lista suspensa, siga um destes procedimentos:  
+3. No **do conjunto de regras** lista suspensa, siga um destes procedimentos:  
   
-    -   Selecione o conjunto de regras que você deseja personalizar.  
+   - Selecione o conjunto de regras que você deseja personalizar.  
   
      \- ou -  
   
-    -   Selecione  **\<procurar... >** especificar uma regra existente definida que não está na lista.  
+   - Selecione  **\<procurar... >** especificar uma regra existente definida que não está na lista.  
   
-4.  Clique em **abrir** para exibir as regras no editor de conjunto de regras.  
+4. Clique em **abrir** para exibir as regras no editor de conjunto de regras.  
   
 #### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>Para criar uma regra personalizada definida de vários conjuntos de regra existente  
   

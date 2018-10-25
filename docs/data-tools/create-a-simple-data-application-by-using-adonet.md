@@ -13,18 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f44264eace04475fc96e42b533a288ef87dd2c2b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 5bcdd9120088663e469070c31962dfacc97bce0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758477"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891005"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo de dados simples usando o ADO.NET
 
 Quando você cria um aplicativo que manipule dados em um banco de dados, você pode executar tarefas básicas como definir cadeias de caracteres de conexão, inserção de dados e executar procedimentos armazenados. Ao seguir este tópico, você pode descobrir como interagir com um banco de dados de dentro de um aplicativo simples de "formulários sobre dados" do Windows Forms usando o Visual c# ou Visual Basic e ADO.NET.  Todas as tecnologias de dados do .NET — inclusive conjuntos de dados, o LINQ to SQL e Entity Framework —, por fim, execute as etapas que são muito semelhantes às mostradas neste artigo.
 
- Este artigo demonstra uma maneira simples de obter dados para fora de um banco de dados de uma maneira rápida. Se seu aplicativo precisa modificar dados de maneiras não triviais e atualizar o banco de dados, você deve considerar usando o Entity Framework e usando a associação de dados para sincronizar automaticamente os controles de interface do usuário para as alterações nos dados subjacentes.
+Este artigo demonstra uma maneira simples de obter dados para fora de um banco de dados de uma maneira rápida. Se seu aplicativo precisa modificar dados de maneiras não triviais e atualizar o banco de dados, você deve considerar usando o Entity Framework e usando a associação de dados para sincronizar automaticamente os controles de interface do usuário para as alterações nos dados subjacentes.
 
 > [!IMPORTANT]
 > Para manter o código simples, ele não inclui tratamento de exceção pronta para produção.
@@ -65,29 +65,29 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 
 ## <a name="create-the-forms-and-add-controls"></a>Criar os formulários e adicionar controles
 
-1.  Criar um projeto para um aplicativo do Windows Forms e nomeie- **SimpleDataApp**.
+1. Criar um projeto para um aplicativo do Windows Forms e nomeie- **SimpleDataApp**.
 
-     O Visual Studio cria o projeto e vários arquivos, incluindo um formulário vazio do Windows chamado **Form1**.
+    O Visual Studio cria o projeto e vários arquivos, incluindo um formulário vazio do Windows chamado **Form1**.
 
-2.  Adicione dois formulários do Windows ao seu projeto para que ele tenha três formulários e forneça a eles os seguintes nomes:
+2. Adicione dois formulários do Windows ao seu projeto para que ele tenha três formulários e forneça a eles os seguintes nomes:
 
-    -   **Navegação**
+   -   **Navegação**
 
-    -   **NewCustomer**
+   -   **NewCustomer**
 
-    -   **FillOrCancel**
+   -   **FillOrCancel**
 
-3.  Para cada formulário, adicione as caixas de texto, botões e outros controles que aparecem nas ilustrações a seguir. Para cada controle, defina as propriedades que descrevem as tabelas.
+3. Para cada formulário, adicione as caixas de texto, botões e outros controles que aparecem nas ilustrações a seguir. Para cada controle, defina as propriedades que descrevem as tabelas.
 
-    > [!NOTE]
-    >  A caixa de grupo e os controles de rótulo adicionam clareza mas não são usados no código.
+   > [!NOTE]
+   > A caixa de grupo e os controles de rótulo adicionam clareza mas não são usados no código.
 
- **Formulário de navegação**
+   **Formulário de navegação**
 
- ![Caixa de diálogo de navegação](../data-tools/media/simpleappnav.png)
+   ![Caixa de diálogo de navegação](../data-tools/media/simpleappnav.png)
 
 |Controles para o formulário de navegação|Propriedades|
-|--------------------------------------|----------------|
+| - |----------------|
 |Botão|Nome = btnGoToAdd|
 |Botão|Nome = btnGoToFillOrCancel|
 |Botão|Nome = btnExit|
@@ -97,7 +97,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
  ![Adicionar um novo cliente e fazer um pedido](../data-tools/media/simpleappnewcust.png)
 
 |Controles para o formulário NewCustomer|Propriedades|
-|---------------------------------------|----------------|
+| - |----------------|
 |TextBox|Nome = txtCustomerName|
 |TextBox|Nome = txtCustomerID<br /><br /> ReadOnly = True|
 |Botão|Name = btnCreateAccount|
@@ -112,7 +112,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
  ![preencher ou Cancelar ordens](../data-tools/media/simpleappcancelfill.png)
 
 |Controles para o formulário FillOrCancel|Propriedades|
-|----------------------------------------|----------------|
+| - |----------------|
 |TextBox|Nome = txtOrderID|
 |Botão|Name = btnFindByOrderID|
 |DateTimePicker|Formato = abreviado<br /><br /> Nome = dtpFillDate|

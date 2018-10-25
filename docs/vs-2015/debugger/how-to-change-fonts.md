@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2d1b2d6cf02bea494fb08583bcbc2c1e17583e7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 39d8638c3b0fba1c8753fd773a447863ee01be77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838615"
 ---
 # <a name="how-to-change-fonts"></a>Como alterar fontes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Você pode alterar a fonte, estilo de fonte e tamanho da fonte para o windows Sp
   
 ### <a name="to-change-font-options"></a>Para alterar as opções de fonte  
   
-1.  Dos **modo de exibição** menu, escolha **fonte**.  
+1. Dos **modo de exibição** menu, escolha **fonte**.  
   
-2.  Escolha uma fonte, estilo de fonte e tamanho da fonte.  
+2. Escolha uma fonte, estilo de fonte e tamanho da fonte.  
   
-3.  Clique em **OK**.  
+3. Clique em **OK**.  
   
- Selecionando **fonte Salvar como padrão** fará com que todas as futuras Spy + + windows para usar essa fonte.  
+   Selecionando **fonte Salvar como padrão** fará com que todas as futuras Spy + + windows para usar essa fonte.  
   
 ## <a name="see-also"></a>Consulte também  
  [Usando Spy + +](../debugger/using-spy-increment.md)   

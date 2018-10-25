@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e9a8e990ee3b95d93f8757f54b92c808fb650f8
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: f9c72abaaf1a799316686c77b127952f1fe4f689
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433322"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832882"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>Renderizar destino formato variantes de 16 bpp
 Define o formato de pixel como DXGI_FORMAT_B5G6R5_UNORM para todos os destinos de renderização e buffers de fundo.  
@@ -43,9 +43,9 @@ Aplicativos que fazem parte de uma cadeia de troca tem um formato de buffer de f
 2. Copie o destino de renderização para o buffer de fundo da cadeia de troca desenhando um quadrupleto de tela inteira com o destino de renderização como textura de origem.
 3. Chame Present na cadeia de swap.
 
- Se essa estratégia economiza largura de banda mais do que é consumido, copiando o destino de renderização para o buffer de fundo da cadeia de troca, desempenho de renderização é aprimorado.
+   Se essa estratégia economiza largura de banda mais do que é consumido, copiando o destino de renderização para o buffer de fundo da cadeia de troca, desempenho de renderização é aprimorado.
 
- Arquiteturas de GPU que usam técnicas de renderização lado a lado podem ver os benefícios significativos de desempenho usando um formato de buffer de quadro de 16 bpp. Essa melhoria é porque uma porção maior do que o buffer de quadro pode caber no cache de buffer de quadro de local de cada bloco. As arquiteturas de renderização lado a lado podem ser encontradas em GPUs de dispositivos móveis e tablet. Elas raramente são encontradas em outros tipos de dispositivos.  
+   Arquiteturas de GPU que usam técnicas de renderização lado a lado podem ver os benefícios significativos de desempenho usando um formato de buffer de quadro de 16 bpp. Essa melhoria é porque uma porção maior do que o buffer de quadro pode caber no cache de buffer de quadro de local de cada bloco. As arquiteturas de renderização lado a lado podem ser encontradas em GPUs de dispositivos móveis e tablet. Elas raramente são encontradas em outros tipos de dispositivos.  
   
 ## <a name="remarks"></a>Comentários  
  O formato do destino de renderização é redefinido como DXGI_FORMAT_B5G6R5_UNORM em todas as chamadas de `ID3D11Device::CreateTexture2D` que criam um destino de renderização. O formato é substituído especificamente quando o objeto D3D11_TEXTURE2D_DESC apresentado a pDesc descreve um destino de renderização, ou seja:  

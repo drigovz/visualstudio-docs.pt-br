@@ -28,12 +28,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c5b7f053a2a63830e80247eeeeadcf34e2a6a351
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250478"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926092"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Criar projetos e diagramas de modelagem UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,29 +50,29 @@ Os modelos de UML ajudam você a entende, discuta e criar sistemas de software. 
   
 #### <a name="to-create-a-diagram-and-add-it-to-a-project"></a>Criar um diagrama e adicioná-lo a um projeto  
   
-1.  Sobre o **arquitetura** menu, escolha **UML novo ou diagrama de camada**.  
+1. Sobre o **arquitetura** menu, escolha **UML novo ou diagrama de camada**.  
   
-2.  No **adicionar novo diagrama** caixa de diálogo, clique no tipo de diagrama de modelagem que você deseja.  
+2. No **adicionar novo diagrama** caixa de diálogo, clique no tipo de diagrama de modelagem que você deseja.  
   
-     ![Adicionar caixa de diálogo Novo diagrama](../modeling/media/uml-adddiagram.png "UML_AddDiagram")  
+    ![Adicionar caixa de diálogo Novo diagrama](../modeling/media/uml-adddiagram.png "UML_AddDiagram")  
   
-3.  Digite um nome para o novo diagrama.  
+3. Digite um nome para o novo diagrama.  
   
-4.  No **adicionar ao projeto de modelagem** caixa:  
+4. No **adicionar ao projeto de modelagem** caixa:  
   
-    -   Selecione um projeto de modelagem que já existe na solução e, em seguida, clique em **Okey**.  
+   - Selecione um projeto de modelagem que já existe na solução e, em seguida, clique em **Okey**.  
   
      \- ou -  
   
-    1.  Selecione **criar um novo projeto de modelagem**e, em seguida, clique em **Okey**.  
+   1.  Selecione **criar um novo projeto de modelagem**e, em seguida, clique em **Okey**.  
   
-    2.  No **criar novo projeto de modelagem** caixa de diálogo, digite um nome e local para o novo projeto e, em seguida, clique em **Okey**.  
+   2.  No **criar novo projeto de modelagem** caixa de diálogo, digite um nome e local para o novo projeto e, em seguida, clique em **Okey**.  
   
-         ![Criar caixa de diálogo Novo projeto de modelagem](../modeling/media/uml-createmodel.png "UML_CreateModel")  
+        ![Criar caixa de diálogo Novo projeto de modelagem](../modeling/media/uml-createmodel.png "UML_CreateModel")  
   
-         Se sua solução estiver aberta, o novo projeto é adicionado à solução. Se você não tiver nenhuma solução aberta, você pode digitar um nome para uma nova solução.  
+        Se sua solução estiver aberta, o novo projeto é adicionado à solução. Se você não tiver nenhuma solução aberta, você pode digitar um nome para uma nova solução.  
   
- Se você já tiver um projeto de modelagem, você também pode usar o procedimento a seguir.  
+   Se você já tiver um projeto de modelagem, você também pode usar o procedimento a seguir.  
   
 #### <a name="to-add-a-diagram-to-an-existing-modeling-project"></a>Para adicionar um diagrama em um projeto de modelagem existente  
   

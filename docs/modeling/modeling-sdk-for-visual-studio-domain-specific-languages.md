@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7af41e9e66c22e514961dc888a42153c078667cf
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 28b42e5178808a86faff33dbb887500b8979123b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857775"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811915"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK de Modelagem para Visual Studio - linguagens específicas ao domínio
 Usando o SDK de modelagem para Visual Studio, você pode criar ferramentas de desenvolvimento baseado em modelo avançadas que podem ser integradas ao Visual Studio. Da mesma forma, você pode criar uma ou mais definições de modelo e integrá-las em um conjunto de ferramentas.
@@ -26,17 +26,17 @@ Usando o SDK de modelagem para Visual Studio, você pode criar ferramentas de de
 
  O MSDK permite desenvolver rapidamente um modelo na forma de uma linguagem específica do domínio (DSL). Você começa ao usar um editor especializado para definir um esquema ou sintaxe abstrata junto com uma notação gráfica. Dessa definição, o VMSDK gera:
 
--   Uma implementação de modelo com uma API fortemente tipada executada em um repositório baseado em transação.
+- Uma implementação de modelo com uma API fortemente tipada executada em um repositório baseado em transação.
 
--   Um gerenciador baseado em árvore.
+- Um gerenciador baseado em árvore.
 
--   Um editor gráfico no qual os usuários podem exibir o modelo ou partes dele que você definir.
+- Um editor gráfico no qual os usuários podem exibir o modelo ou partes dele que você definir.
 
--   Métodos de serialização que salvam seus modelos em XML legível.
+- Métodos de serialização que salvam seus modelos em XML legível.
 
--   Recursos para gerar código de programa e outros artefatos usando modelagem de texto.
+- Recursos para gerar código de programa e outros artefatos usando modelagem de texto.
 
- Você pode personalizar e estender todos esses recursos. Suas extensões são integradas de tal forma que você ainda pode atualizar a definição de DSL e gerar novamente os recursos sem perder suas extensões.
+  Você pode personalizar e estender todos esses recursos. Suas extensões são integradas de tal forma que você ainda pode atualizar a definição de DSL e gerar novamente os recursos sem perder suas extensões.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

@@ -19,12 +19,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d24d4b1fe15656f074ce580a809fe394d861a71
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bde835248c6f837b27958f13085c4cb832c25e9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252464"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928471"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>Guia de Introdução (SDK de Acesso à Interface de Depuração)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,21 +33,21 @@ A depuração Interface de acesso (DIA) SDK fornece documentação das instruç�
   
  Para usar melhor o DIA SDK, você deve estar familiarizado com o seguinte:  
   
--   Linguagem de programação do C++  
+- Linguagem de programação do C++  
   
--   Programação COM  
+- Programação COM  
   
--   Ambiente de desenvolvimento integrado Visual Studio (IDE) para compilar os exemplos  
+- Ambiente de desenvolvimento integrado Visual Studio (IDE) para compilar os exemplos  
   
- O DIA SDK é normalmente instalado com o Visual Studio e o local padrão é *[unidade]* \Program Files\Microsoft 9.0\DIA do Visual Studio SDK. Como parte da instalação, MSDIA90, que implementa o DIA SDK, é registrado automaticamente para que tudo o que você precisa fazer para usá-lo é incluir `dia2.h` em seu programa e um link para `diaguids.lib`.  
+  O DIA SDK é normalmente instalado com o Visual Studio e o local padrão é *[unidade]* \Program Files\Microsoft 9.0\DIA do Visual Studio SDK. Como parte da instalação, MSDIA90, que implementa o DIA SDK, é registrado automaticamente para que tudo o que você precisa fazer para usá-lo é incluir `dia2.h` em seu programa e um link para `diaguids.lib`.  
   
- Cabeçalho: include\dia2.h  
+  Cabeçalho: include\dia2.h  
   
- Biblioteca: lib\diaguids.lib  
+  Biblioteca: lib\diaguids.lib  
   
- DLL: bin\msdia80.dll  
+  DLL: bin\msdia80.dll  
   
- IDL: idl\dia2.idl  
+  IDL: idl\dia2.idl  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Visão geral](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  

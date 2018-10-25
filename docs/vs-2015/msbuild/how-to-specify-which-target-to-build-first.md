@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3978d72372f2aa9a0c57184083c67476886016aa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4ea97ed3650e74a10bfc5e49657f0ed3dce60ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232109"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840684"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Como especificar o destino a ser compilado primeiro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Um arquivo de projeto pode conter um ou mais elementos `Target` que definem como
   
 #### <a name="to-specify-one-initial-target"></a>Para especificar um destino inicial  
   
--   Especifique o destino padrão no atributo `InitialTargets` do elemento `Project`. Por exemplo:  
+- Especifique o destino padrão no atributo `InitialTargets` do elemento `Project`. Por exemplo:  
   
-     `<Project InitialTargets="Clean">`  
+   `<Project InitialTargets="Clean">`  
   
- Você pode especificar mais de um destino inicial no atributo `InitialTargets` ao listar os destinos em ordem e usar um ponto e vírgula para separar cada destino. Os destinos na lista serão executados sequencialmente.  
+  Você pode especificar mais de um destino inicial no atributo `InitialTargets` ao listar os destinos em ordem e usar um ponto e vírgula para separar cada destino. Os destinos na lista serão executados sequencialmente.  
   
 #### <a name="to-specify-more-than-one-initial-target"></a>Para especificar mais de um destino inicial  
   
@@ -53,11 +53,11 @@ Um arquivo de projeto pode conter um ou mais elementos `Target` que definem como
   
 #### <a name="to-specify-one-default-target"></a>Para especificar um destino padrão  
   
--   Especifique o destino padrão no atributo `DefaultTargets` do elemento `Project`. Por exemplo:  
+- Especifique o destino padrão no atributo `DefaultTargets` do elemento `Project`. Por exemplo:  
   
-     `<Project DefaultTargets="Compile">`  
+   `<Project DefaultTargets="Compile">`  
   
- Você pode especificar mais de um destino padrão no atributo `DefaultTargets` ao listar os destinos em ordem e usar um ponto e vírgula para separar cada destino. Os destinos na lista serão executados sequencialmente.  
+  Você pode especificar mais de um destino padrão no atributo `DefaultTargets` ao listar os destinos em ordem e usar um ponto e vírgula para separar cada destino. Os destinos na lista serão executados sequencialmente.  
   
 #### <a name="to-specify-more-than-one-default-target"></a>Para especificar mais de um destino padrão  
   

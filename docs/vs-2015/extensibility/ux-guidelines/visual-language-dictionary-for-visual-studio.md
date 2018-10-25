@@ -13,12 +13,12 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f5a8ec02368c5a05587665f1e41b55b2daba409
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267618"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886390"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Dicionário de linguagem Visual para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Visual Studio usa uma linguagem visual comum para ilustrar os conceitos que são
   
  **Diretrizes gerais**  
   
--   Esses conceitos visual devem ser usados consistentemente com suas definições de dicionário. Caso contrário, você corre o risco de confundir os usuários, que esperam elementos comuns para têm significados consistentes.  
+- Esses conceitos visual devem ser usados consistentemente com suas definições de dicionário. Caso contrário, você corre o risco de confundir os usuários, que esperam elementos comuns para têm significados consistentes.  
   
--   Escolha apenas os conceitos mais relevantes ou importantes para uso em seus ícones, para que as imagens seja nítido e fáceis de distinguir.  
+- Escolha apenas os conceitos mais relevantes ou importantes para uso em seus ícones, para que as imagens seja nítido e fáceis de distinguir.  
   
--   Use apenas um ou dois conceitos em cada imagem.  
+- Use apenas um ou dois conceitos em cada imagem.  
   
--   Para obter mais estratégias para projetar ícones, consulte [design de ícone](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).  
+- Para obter mais estratégias para projetar ícones, consulte [design de ícone](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).  
   
- **Ir para a seção:**  
+  **Ir para a seção:**  
   
 1.  [Conceitos da-Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 847f37d14743ae45efc273e8ac0b9f6d68b83e3e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6fa8f027fbb3418fff47b0459628afb691c8a05a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893670"
 ---
 # <a name="t4-import-directive"></a>Diretiva de importação T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,15 +45,15 @@ The file contains: <#=  fileContent #>
 ## <a name="standard-imports"></a>Importações padrão  
  O seguinte namespace é importado automaticamente, para que não seja necessário gravar uma diretiva de importação para ele:  
   
--   `System`  
+- `System`  
   
- Além disso, se você usar uma diretiva personalizada, o processador de diretriz pode importar alguns namespaces automaticamente.  
+  Além disso, se você usar uma diretiva personalizada, o processador de diretriz pode importar alguns namespaces automaticamente.  
   
- Por exemplo, se você gravar modelos para uma linguagem específica do domínio (DSL), você não precisa gravar diretivas de importação para os namespaces a seguir:  
+  Por exemplo, se você gravar modelos para uma linguagem específica do domínio (DSL), você não precisa gravar diretivas de importação para os namespaces a seguir:  
   
--   `Microsoft.VisualStudio.Modeling`  
+- `Microsoft.VisualStudio.Modeling`  
   
--   O namespace de sua DSL  
+- O namespace de sua DSL  
   
 ## <a name="see-also"></a>Consulte também  
  [Diretiva de assembly T4](../modeling/t4-assembly-directive.md)

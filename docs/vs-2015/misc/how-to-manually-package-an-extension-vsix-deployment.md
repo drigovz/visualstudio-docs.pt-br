@@ -12,23 +12,23 @@ ms.topic: article
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: douge
-ms.openlocfilehash: ad93bfe700c881977130ba6651bd3e271207a56f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d10d0e49389b43a288826adf2043c603aeff36a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269269"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925832"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Como: empacotar manualmente uma extensão (implantação do VSIX)
 Você pode criar um pacote VSIX para encapsular um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão para a implantação. Há três maneiras de criar o pacote:  
   
--   Criar um projeto de pacote VSIX usando um dos modelos de extensibilidade que estão incluídos no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK. Essa é a opção mais fácil na maioria dos cenários.  
+- Criar um projeto de pacote VSIX usando um dos modelos de extensibilidade que estão incluídos no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK. Essa é a opção mais fácil na maioria dos cenários.  
   
--   Encapsular a saída do seu projeto de extensão em um vazio [VSIX Project](../extensibility/vsix-project-template.md). Recomendamos essa opção para modelos, não há suporte para assemblies e tipos personalizados.  
+- Encapsular a saída do seu projeto de extensão em um vazio [VSIX Project](../extensibility/vsix-project-template.md). Recomendamos essa opção para modelos, não há suporte para assemblies e tipos personalizados.  
   
--   Crie manualmente um pacote VSIX. Recomendamos essa opção somente quando as duas opções não estão disponíveis.  
+- Crie manualmente um pacote VSIX. Recomendamos essa opção somente quando as duas opções não estão disponíveis.  
   
- Este documento descreve a terceira opção.  
+  Este documento descreve a terceira opção.  
   
 ## <a name="creating-a-vsix-package"></a>Criando um pacote VSIX  
  Para empacotar manualmente uma extensão, adicione um arquivo extension.manifest e um [Content_Types]. XML ao projeto de extensão, colocá-los em um arquivo compactado junto com sua saída de compilação e renomear o arquivo compactado para que ele tenha uma extensão de nome de arquivo. VSIX. A extensão para ser empacotado deve ser de um tipo que é compatível com o [esquema VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
