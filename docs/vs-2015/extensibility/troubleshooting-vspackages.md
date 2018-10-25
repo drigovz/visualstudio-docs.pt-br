@@ -16,12 +16,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0317b4d641cb965b5f92ad31cfab6d3580db30a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cc3395f065d211c2d8e7d4f68a6b3ec8c25474d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225557"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949299"
 ---
 # <a name="troubleshooting-vspackages"></a>Solucionando problemas de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,19 +116,19 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>Solucionar problemas de um VSPackage ausente ou uma de suas dependências  
   
-1.  Para código gerenciado, certifique-se de que os caminhos de referência estão corretos.  
+1. Para código gerenciado, certifique-se de que os caminhos de referência estão corretos.  
   
-    1.  No menu **Projeto**, clique em **Propriedades**.  
+   1.  No menu **Projeto**, clique em **Propriedades**.  
   
-    2.  Selecione o **referências** guia o **páginas de propriedade** caixa de diálogo e verifique se todos os caminhos estão corretos. Como alternativa, você pode usar o **Pesquisador de objetos** para procurar os objetos referenciados.  
+   2.  Selecione o **referências** guia o **páginas de propriedade** caixa de diálogo e verifique se todos os caminhos estão corretos. Como alternativa, você pode usar o **Pesquisador de objetos** para procurar os objetos referenciados.  
   
-         Para código gerenciado, você pode usar o [Fuslogvw.exe (Assembly Binding Log Viewer)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) para exibir os detalhes de carregamentos de assembly com falha.  
+        Para código gerenciado, você pode usar o [Fuslogvw.exe (Assembly Binding Log Viewer)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) para exibir os detalhes de carregamentos de assembly com falha.  
   
-2.  Para código não gerenciado, localize o CLSID do VSPackage no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nó do Registro CLSID:  
+2. Para código não gerenciado, localize o CLSID do VSPackage no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nó do Registro CLSID:  
   
-     Studio HKLM\Software\Microsoft\Visual\\*\<versão >* \CLSID  
+    Studio HKLM\Software\Microsoft\Visual\\*\<versão >* \CLSID  
   
- Certifique-se de que a entrada InprocServer32 tem o caminho correto da dll VSPackage.  
+   Certifique-se de que a entrada InprocServer32 tem o caminho correto da dll VSPackage.  
   
 ## <a name="see-also"></a>Consulte também  
  [VSPackages](../extensibility/internals/vspackages.md)
