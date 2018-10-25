@@ -13,12 +13,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b49f83813bc5acd64de74a27a025bc78503902c5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cec2164cf248f9301a2e75f0babe4d6f71726ff2
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747346"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459667"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introdução ao C++ no Visual Studio
 
@@ -87,7 +87,7 @@ Em seguida, adicione o código para exibir a palavra “Hello” na janela do co
    using namespace std;
    ```
 
-   Você deve ter notado que uma caixa aparece conforme insere o código. Essa caixa contém sugestões de preenchimento automático para os caracteres que você inserir. Ela é parte do IntelliSense do C++, que fornece prompts de codificação, incluindo a classe ou os membros da interface e as informações de parâmetro. Você também pode usar trechos de código, que são blocos de código predefinidos. Para obter mais informações, consulte [Usando IntelliSense](../ide/using-intellisense.md) e [Trechos de código](../ide/code-snippets.md).
+   Você deve ter notado que uma caixa aparece conforme insere o código. Essa caixa contém sugestões de preenchimento automático para os caracteres que você inserir. Ela é parte do IntelliSense do C++, que fornece prompts de codificação, incluindo a classe ou os membros da interface e as informações de parâmetro. Você também pode usar snippets de código, que são blocos de código predefinidos. Para obter mais informações, consulte [Usando IntelliSense](../ide/using-intellisense.md) e [Snippets de código](../ide/code-snippets.md).
 
    ![O código fixo no editor](../ide/media/get-started-cpp-cout-fix.png)
 
@@ -151,7 +151,7 @@ Agora que você verificou que tudo está funcionando, já pode preparar um build
 
 Quando este build for concluído, você terá criado um aplicativo que poderá copiar e ser executado em qualquer janela de prompt de comando. Ele pode não fazer muito, mas é o gateway para coisas maiores.
 
-Parabéns por concluir este guia de início rápido! Se desejar explorar mais exemplos, consulte [Amostras do Visual Studio](../ide/visual-studio-samples.md).
+Parabéns por concluir este guia de início rápido!
 
 ## <a name="see-also"></a>Consulte também
 

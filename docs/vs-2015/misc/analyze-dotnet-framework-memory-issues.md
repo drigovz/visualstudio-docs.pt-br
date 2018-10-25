@@ -15,23 +15,23 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: susanno
 manager: douge
-ms.openlocfilehash: 210fb8ced645250789c9c1da0339abe0814656ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f33b9e82ee1248988c949a9edea9f09de0d368df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288386"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812563"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analisar problemas de memória .NET Framework
 Encontre perdas de memória e uso ineficiente da memória no código do .NET Framework com o analisador de memória gerenciada do Visual Studio. A versão mínima do .NET Framework do código de destino é o .NET Framework 4.5.  
   
  A ferramenta de análise de memória analisa informações em *arquivos de despejo com dados de heap* que uma cópia dos objetos na memória de um aplicativo. Você pode coletar arquivos de despejo (.dmp) do IDE do Visual Studio ou usar outras ferramentas de sistema.  
   
--   É possível analisar um único instantâneo para compreender o impacto relativo dos tipos de objeto sobre o uso da memória e encontrar o código no aplicativo que usa a memória de maneira ineficiente.  
+- É possível analisar um único instantâneo para compreender o impacto relativo dos tipos de objeto sobre o uso da memória e encontrar o código no aplicativo que usa a memória de maneira ineficiente.  
   
--   Você também pode comparar (*diff*) dois instantâneos que fazem com que a memória de um aplicativo para encontrar áreas no seu código usam aumentará ao longo do tempo.  
+- Você também pode comparar (*diff*) dois instantâneos que fazem com que a memória de um aplicativo para encontrar áreas no seu código usam aumentará ao longo do tempo.  
   
- Para obter uma explicação do analisador de memória gerenciada, consulte [usando o Visual Studio 2013 para diagnosticar problemas de memória do .NET na produção](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) no Visual Studio ALM + blog Team Foundation Server.  
+  Para obter uma explicação do analisador de memória gerenciada, consulte [usando o Visual Studio 2013 para diagnosticar problemas de memória do .NET na produção](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) no Visual Studio ALM + blog Team Foundation Server.  
   
 ##  <a name="BKMK_Contents"></a> Conteúdo  
  [Uso de memória em aplicativos do .NET Framework](#BKMK_Memory_use_in__NET_Framework_apps)  
@@ -68,32 +68,32 @@ Encontre perdas de memória e uso ineficiente da memória no código do .NET Fra
   
  **Para coletar um despejo do Visual Studio**  
   
-1.  É possível criar um arquivo de despejo para um processo iniciado em um projeto do Visual Studio ou anexar o depurador a um processo em execução. Ver [anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+1. É possível criar um arquivo de despejo para um processo iniciado em um projeto do Visual Studio ou anexar o depurador a um processo em execução. Ver [anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-2.  Pare a execução. O depurador é interrompido quando você escolhe **interromper tudo** sobre o **depurar** menu, ou uma exceção ou um ponto de interrupção  
+2. Pare a execução. O depurador é interrompido quando você escolhe **interromper tudo** sobre o **depurar** menu, ou uma exceção ou um ponto de interrupção  
   
-3.  Sobre o **Debug** menu, escolha **Salvar despejo como**. No **Salvar despejo como** diálogo caixa, especifique um local e verifique se **minidespejo com Heap** (o padrão) está selecionado na **Salvar como tipo** lista.  
+3. Sobre o **Debug** menu, escolha **Salvar despejo como**. No **Salvar despejo como** diálogo caixa, especifique um local e verifique se **minidespejo com Heap** (o padrão) está selecionado na **Salvar como tipo** lista.  
   
- **Para comparar dois instantâneos de memória**  
+   **Para comparar dois instantâneos de memória**  
   
- Para analisar o aumento do uso da memória de um aplicativo, colete dois arquivos de despejo de uma única instância do aplicativo.  
+   Para analisar o aumento do uso da memória de um aplicativo, colete dois arquivos de despejo de uma única instância do aplicativo.  
   
- ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
+   ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
 ##  <a name="BKMK_Analyze_memory_use"></a> Analisar o uso de memória  
  [Filtrar a lista de objetos](#BKMK_Filter_the_list_of_objects) **&#124;** [analisar os dados da memória de um único instantâneo](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [comparar dois de memória instantâneos](#BKMK_Compare_two_memory_snapshots)  
   
  Para analisar um arquivo de despejo em busca de problemas de uso da memória:  
   
-1.  No Visual Studio, escolha **arquivo**, **abrir** e especifique o arquivo de despejo.  
+1. No Visual Studio, escolha **arquivo**, **abrir** e especifique o arquivo de despejo.  
   
-2.  Sobre o **resumo do arquivo de minidespejo** , escolha **depurar memória gerenciada**.  
+2. Sobre o **resumo do arquivo de minidespejo** , escolha **depurar memória gerenciada**.  
   
-     ![Página de resumo do arquivo de despejo](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
+    ![Página de resumo do arquivo de despejo](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
   
- O analisador de memória começa uma sessão de depuração para analisar o arquivo e exibe os resultados na página Exibição do Heap:  
+   O analisador de memória começa uma sessão de depuração para analisar o arquivo e exibe os resultados na página Exibição do Heap:  
   
- ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
+   ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
 ###  <a name="BKMK_Filter_the_list_of_objects"></a> Filtrar a lista de objetos  
  Por padrão, o analisador de memória filtra a lista de objetos em um instantâneo de memória para mostrar apenas os tipos e as instâncias codificados pelo usuário e somente aqueles tipos cujo tamanho total inclusivo excede uma porcentagem limite do tamanho total do heap. Você pode alterar essas opções na **as configurações de exibição** lista:  
@@ -117,28 +117,28 @@ Encontre perdas de memória e uso ineficiente da memória no código do .NET Fra
 #### <a name="object-type-table"></a>Tabela Tipo de Objeto  
  A tabela superior lista os tipos de objetos mantidos na memória.  
   
--   **Contagem de** mostra o número de instâncias do tipo no instantâneo.  
+- **Contagem de** mostra o número de instâncias do tipo no instantâneo.  
   
--   **Tamanho (Bytes)** é o tamanho de todas as instâncias do tipo, excluindo o tamanho dos objetos cujas referências ele mantém. O  
+- **Tamanho (Bytes)** é o tamanho de todas as instâncias do tipo, excluindo o tamanho dos objetos cujas referências ele mantém. O  
   
--   **Tamanho inclusivo (Bytes)** inclui os tamanhos de objetos referenciados.  
+- **Tamanho inclusivo (Bytes)** inclui os tamanhos de objetos referenciados.  
   
- Você pode escolher o ícone de instâncias (![o ícone de instância na coluna de tipo de objeto](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) na **tipo de objeto** coluna para exibir uma lista das instâncias das tipo.  
+  Você pode escolher o ícone de instâncias (![o ícone de instância na coluna de tipo de objeto](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) na **tipo de objeto** coluna para exibir uma lista das instâncias das tipo.  
   
 #### <a name="instance-table"></a>Tabela Instância  
  ![Tabela de instâncias](../misc/media/dbg-mma-instancestable.png "DBG_MMA_InstancesTable")  
   
--   **Instância** é o local de memória do objeto que serve como o identificador de objeto do objeto  
+- **Instância** é o local de memória do objeto que serve como o identificador de objeto do objeto  
   
--   **Valor** mostra o valor real de tipos de valor. É possível focalizar o nome de um tipo de referência para exibir os valores de dados em uma dica de dados.  
+- **Valor** mostra o valor real de tipos de valor. É possível focalizar o nome de um tipo de referência para exibir os valores de dados em uma dica de dados.  
   
-     ![Valores em uma dica de dados da instância](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
+   ![Valores em uma dica de dados da instância](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
   
--   **Tamanho (Bytes)** é o tamanho do objeto, excluindo o tamanho dos objetos cujas referências ele mantém. O  
+- **Tamanho (Bytes)** é o tamanho do objeto, excluindo o tamanho dos objetos cujas referências ele mantém. O  
   
--   **Tamanho inclusivo (Bytes)** inclui os tamanhos de objetos referenciados.  
+- **Tamanho inclusivo (Bytes)** inclui os tamanhos de objetos referenciados.  
   
- Por padrão, os tipos e as instâncias são classificadas por **tamanho inclusivo (Bytes)**. Escolha um cabeçalho de coluna na lista para alterar a ordem de classificação.  
+  Por padrão, os tipos e as instâncias são classificadas por **tamanho inclusivo (Bytes)**. Escolha um cabeçalho de coluna na lista para alterar a ordem de classificação.  
   
 #### <a name="paths-to-root"></a>demarcadores para a Raiz  
   
@@ -148,17 +148,17 @@ Encontre perdas de memória e uso ineficiente da memória no código do .NET Fra
   
 #### <a name="referenced-types--referenced-objects"></a>Tipos Referenciados/Objetos Referenciados  
   
--   Um tipo selecionado do **tipo de objeto** tabela, o **tipos referenciados** guia mostra o tamanho e o número de tipos referenciados mantidos por todos os objetos do tipo selecionado.  
+- Um tipo selecionado do **tipo de objeto** tabela, o **tipos referenciados** guia mostra o tamanho e o número de tipos referenciados mantidos por todos os objetos do tipo selecionado.  
   
--   Para uma instância selecionada de um tipo **objetos referenciados** mostra os objetos que são mantidos pela instância selecionada. É possível focalizar o nome para exibir os valores de dados em uma dica de dados.  
+- Para uma instância selecionada de um tipo **objetos referenciados** mostra os objetos que são mantidos pela instância selecionada. É possível focalizar o nome para exibir os valores de dados em uma dica de dados.  
   
- **Referências circulares**  
+  **Referências circulares**  
   
- Um objeto pode referenciar um segundo objeto que mantém direta ou indiretamente uma referência ao primeiro objeto. Quando o analisador de memória encontra essa situação, ele para de expandir o caminho de referência e adiciona uma **[ciclo detectado]** anotação para a listagem do primeiro objeto e é interrompido.  
+  Um objeto pode referenciar um segundo objeto que mantém direta ou indiretamente uma referência ao primeiro objeto. Quando o analisador de memória encontra essa situação, ele para de expandir o caminho de referência e adiciona uma **[ciclo detectado]** anotação para a listagem do primeiro objeto e é interrompido.  
   
- **Tipos de raiz**  
+  **Tipos de raiz**  
   
- O analisador de memória adiciona anotações a objetos raiz que descrevam o tipo de referência mantido:  
+  O analisador de memória adiciona anotações a objetos raiz que descrevam o tipo de referência mantido:  
   
 |Anotação|Descrição|  
 |----------------|-----------------|  
@@ -176,17 +176,17 @@ Encontre perdas de memória e uso ineficiente da memória no código do .NET Fra
 ###  <a name="BKMK_Compare_two_memory_snapshots"></a> Comparar dois instantâneos de memória  
  É possível comparar dois arquivos de despejo de um processo para encontrar objetos que possam ser a causa de perdas de memória. O intervalo entre a coleta do primeiro arquivo (anterior) e do segundo arquivo (posterior) deve ser grande o suficiente para que o aumento no número de objetos perdidos fique claramente aparente. Para comparar os dois arquivos:  
   
-1.  Abra o segundo arquivo de despejo de memória e, em seguida, escolha **depurar memória gerenciada** sobre o **resumo do arquivo de minidespejo** página.  
+1. Abra o segundo arquivo de despejo de memória e, em seguida, escolha **depurar memória gerenciada** sobre o **resumo do arquivo de minidespejo** página.  
   
-2.  Na página de relatório de análise de memória, abra o **Selecionar linha de base** lista e, em seguida, escolha **procurar** para especificar o primeiro arquivo de despejo.  
+2. Na página de relatório de análise de memória, abra o **Selecionar linha de base** lista e, em seguida, escolha **procurar** para especificar o primeiro arquivo de despejo.  
   
- O analisador adiciona colunas ao painel superior do relatório que exibem a diferença entre o **contagem**, **tamanho**, e **tamanho inclusivo** dos tipos para esses valores no instantâneo anterior.  
+   O analisador adiciona colunas ao painel superior do relatório que exibem a diferença entre o **contagem**, **tamanho**, e **tamanho inclusivo** dos tipos para esses valores no instantâneo anterior.  
   
- ![Comparação de colunas na lista de tipo](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
+   ![Comparação de colunas na lista de tipo](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
   
- Um **Diff contagem de referência** coluna também é adicionada para o **caminhos para raiz** tabela.  
+   Um **Diff contagem de referência** coluna também é adicionada para o **caminhos para raiz** tabela.  
   
- ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
+   ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
 ## <a name="see-also"></a>Consulte também  
  [Blog VS ALM TFS: Usando o Visual Studio 2013 para diagnosticar problemas de memória do .NET na produção](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   

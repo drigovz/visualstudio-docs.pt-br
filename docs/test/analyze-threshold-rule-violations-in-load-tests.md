@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 41837a9ff3d67f2d712352115bcb6581580b32a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234979"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812992"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisando violações de regra de limite em testes de carga usando o Analisador de Teste de Carga
 
@@ -35,7 +35,7 @@ Se ocorrer qualquer violação, um hiperlink de **violações de limite** aparec
  A tabela de violações de limite exibe as primeiras 1.000 violações. A tabela a seguir contém estas colunas:
 
 |Column|Descrição|Visível por padrão|
-|------------|-----------------|------------------------|
+|-|-|-|
 |Hora|O tempo durante o teste de carga em que a violação ocorreu.|Sim|
 |Computador|O nome do computador em teste em que a violação ocorreu. **Observação:** isso é importante quando você executa testes de carga em equipamentos.|Sim|
 |Categoria|A categoria do contador de desempenho em que a violação ocorreu.|Sim|
