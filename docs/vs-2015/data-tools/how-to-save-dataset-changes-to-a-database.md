@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: a197952bcc392f84db3f612a158817237e077d36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60bb855202cfb333820fe2292fedc0b31608c5c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202274"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949013"
 ---
 # <a name="how-to-save-dataset-changes-to-a-database"></a>Como salvar as alterações no conjunto de dados em um banco de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,15 +69,15 @@ Depois que os dados no conjunto de dados foi modificados e validados, você prov
 ## <a name="updating-two-related-tables-in-a-dataset"></a>Atualizando duas tabelas relacionadas em um conjunto de dados  
  Ao atualizar as tabelas relacionadas em um conjunto de dados, é importante atualizar na sequência apropriada para reduzir a chance de violar as restrições de integridade referencial. A ordem de execução do comando também seguirá os índices do <xref:System.Data.DataRowCollection> no conjunto de dados. Para evitar que erros de integridade de dados que está sendo gerado, a prática recomendada é atualizar o banco de dados na sequência a seguir:  
   
-1.  Tabela filho: excluir registros.  
+1. Tabela filho: excluir registros.  
   
-2.  Tabela pai: Inserir, atualizar e excluir registros.  
+2. Tabela pai: Inserir, atualizar e excluir registros.  
   
-3.  Tabela filho: inserir e atualizar registros.  
+3. Tabela filho: inserir e atualizar registros.  
   
- Para obter informações detalhadas sobre como salvar dados de várias tabelas, consulte [salvar dados em um banco de dados (várias tabelas)](../data-tools/save-data-to-a-database-multiple-tables.md).  
+   Para obter informações detalhadas sobre como salvar dados de várias tabelas, consulte [salvar dados em um banco de dados (várias tabelas)](../data-tools/save-data-to-a-database-multiple-tables.md).  
   
- Se você estiver atualizando dois ou mais tabelas relacionadas, você deve incluir toda a lógica de atualização dentro de uma transação. Uma transação é um processo que garante que todas as alterações a um banco de dados são bem-sucedidas antes de aplicar qualquer alteração. Para obter mais informações, consulte [transações e simultaneidade](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
+   Se você estiver atualizando dois ou mais tabelas relacionadas, você deve incluir toda a lógica de atualização dentro de uma transação. Uma transação é um processo que garante que todas as alterações a um banco de dados são bem-sucedidas antes de aplicar qualquer alteração. Para obter mais informações, consulte [transações e simultaneidade](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
   
 #### <a name="to-update-two-related-tables-using-a-tableadapter"></a>Para atualizar duas tabelas relacionadas usando um TableAdapter  
   

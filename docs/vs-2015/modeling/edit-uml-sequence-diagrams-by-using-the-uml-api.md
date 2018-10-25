@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b2c826174f65155e2a832ec55471246ffad9568b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0711a16206ae1f6fc1efba0b3422c650c993396d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185491"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941991"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Editar diagramas de sequência UML usando a API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,13 +121,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>Atualização de uma interação e seu Layout  
  Quando você atualiza uma interação, sempre terminar sua operação atualizando seu layout usando um dos seguintes métodos:  
   
--   `ISequenceDiagram.UpdateShapePositions()` Ajusta as posições das formas que recentemente foram inseridas ou movidas e seus vizinhos.  
+- `ISequenceDiagram.UpdateShapePositions()` Ajusta as posições das formas que recentemente foram inseridas ou movidas e seus vizinhos.  
   
--   `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` redesenha o diagrama inteiro. Você pode usar o parâmetro para especificar o reposicionamento das linhas da vida, mensagens ou ambos.  
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` redesenha o diagrama inteiro. Você pode usar o parâmetro para especificar o reposicionamento das linhas da vida, mensagens ou ambos.  
   
- Isso é particularmente importante quando você insere novos elementos ou move elementos existentes. Eles não estarão nas posições corretas no diagrama até que você executou uma dessas operações. Você só precisa chamar uma dessas operações uma vez no final de uma série de alterações.  
+  Isso é particularmente importante quando você insere novos elementos ou move elementos existentes. Eles não estarão nas posições corretas no diagrama até que você executou uma dessas operações. Você só precisa chamar uma dessas operações uma vez no final de uma série de alterações.  
   
- Para evitar bemusing o usuário que executa um comando Desfazer após seu comando, use uma `ILinkedUndoTransaction` para incluir as alterações e o último `Layout()` ou `UpdateShapePositions()` operações. Por exemplo:  
+  Para evitar bemusing o usuário que executa um comando Desfazer após seu comando, use uma `ILinkedUndoTransaction` para incluir as alterações e o último `Layout()` ou `UpdateShapePositions()` operações. Por exemplo:  
   
 ```  
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))  

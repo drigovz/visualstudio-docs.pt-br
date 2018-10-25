@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b44d57fbd36e82a84aaa0b2e837d24d429073f79
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ca43b4daea5c5bb95a0752eeae93814d234e9a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845312"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923011"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associar controles a dados no Visual Studio
 Você pode exibir dados para usuários do seu aplicativo pela associação de dados a controles. Você pode criar esses controles ligados a dados arrastando itens dos **fontes de dados** window em uma superfície de design ou controles em uma superfície no Visual Studio.
@@ -30,14 +30,15 @@ Você pode exibir dados para usuários do seu aplicativo pela associação de da
 ## <a name="data-sources"></a>Fontes de dados
  No contexto de associação de dados, uma fonte de dados representa os dados na memória que pode ser associado a sua interface do usuário. Em termos práticos, uma fonte de dados pode ser uma classe do Entity Framework, um conjunto de dados, um ponto de extremidade de serviço que é encapsulado em um objeto de proxy do .NET, uma classe LINQ to SQL, ou qualquer objeto do .NET ou coleção. Algumas fontes de dados permitem criar controles associados a dados arrastando itens dos **fontes de dados** janela, enquanto outras fontes de dados não. A tabela a seguir mostra quais fontes de dados têm suporte.
 
-|Fonte de dados|Suporte a arrastar e soltar no **o Designer de formulários do Windows**|Suporte a arrastar e soltar no **o WPF Designer**|Suporte a arrastar e soltar no **Silverlight Designer**|
-|-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
-|Conjunto de dados|Sim|Sim|Não|
-|Modelo de Dados de Entidade|Sim<sup>1</sup>|Sim|Sim|
-|Classes LINQ to SQL|Não<sup>2</sup>|Não<sup>2</sup>|Não<sup>2</sup>|
-|Serviços (incluindo [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services e web services)|Sim|Sim|Sim|
-|Objeto|Sim|Sim|Sim|
-|SharePoint|Sim|Sim|Sim|
+
+| Fonte de dados | Suporte a arrastar e soltar no **o Designer de formulários do Windows** | Suporte a arrastar e soltar no **o WPF Designer** | Suporte a arrastar e soltar no **Silverlight Designer** |
+| - | - | - | - |
+| Conjunto de dados | Sim | Sim | Não |
+| Modelo de Dados de Entidade | Sim<sup>1</sup> | Sim | Sim |
+| Classes LINQ to SQL | Não<sup>2</sup> | Não<sup>2</sup> | Não<sup>2</sup> |
+| Serviços (incluindo [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services e web services) | Sim | Sim | Sim |
+| Objeto | Sim | Sim | Sim |
+| SharePoint | Sim | Sim | Sim |
 
  1. Gerar o modelo usando o **modelo de dados de entidade** assistente, em seguida, arrastar esses objetos para o designer.
 
@@ -54,7 +55,7 @@ Você pode exibir dados para usuários do seu aplicativo pela associação de da
  A tabela a seguir lista algumas das tarefas mais comuns que você executa para associar controles a dados.
 
 |Tarefa|Mais informações|
-|----------|----------------------|
+|----------| - |
 |Abra o **fontes de dados** janela.|Abra uma superfície de design no editor e escolha **modo de exibição** > **fontes de dados**.|
 |Adicione uma fonte de dados ao seu projeto.|[Adicionar novas fontes de dados](../data-tools/add-new-data-sources.md)|
 |Definir o controle que é criado quando você arrasta um item do **fontes de dados** janela no Designer.|[Definir o controle a ser criado quando arrastado da janela Fontes de Dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|

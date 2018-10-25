@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 160609032a4118c0a15abe88115971f267b90f4c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928809"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Passo a passo: Criar a primeira personalização no nível de documento para Word
   Este passo a passo introdutório mostra como criar uma personalização no nível de documento para o Microsoft Office Word. Os recursos que você criar nesse tipo de solução estão disponíveis somente quando um documento específico estiver aberto. Você não pode usar uma personalização no nível de documento para fazer alterações em todo o aplicativo, por exemplo, exibindo uma nova guia de faixa de opções quando qualquer documento é aberto.  
@@ -31,17 +31,17 @@ ms.locfileid: "38778101"
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Criando um projeto de documento do Word.  
+- Criando um projeto de documento do Word.  
   
--   Adicionar texto ao documento que está hospedado no designer do Visual Studio.  
+- Adicionar texto ao documento que está hospedado no designer do Visual Studio.  
   
--   Escrevendo código que usa o modelo de objeto do Word para adicionar texto ao documento personalizado quando ele é aberto.  
+- Escrevendo código que usa o modelo de objeto do Word para adicionar texto ao documento personalizado quando ele é aberto.  
   
--   Criando e executando o projeto para testá-lo.  
+- Criando e executando o projeto para testá-lo.  
   
--   Limpando o projeto para remover arquivos de compilação desnecessárias e as configurações de segurança de seu computador de desenvolvimento.  
+- Limpando o projeto para remover arquivos de compilação desnecessárias e as configurações de segurança de seu computador de desenvolvimento.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  

@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 409133c173f497b1f21b36c7d8c4c89561c0aa15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b069674827ab266b4a4b7a99f81e039d487f6da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171451"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922636"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: os tipos APTCA só devem estender tipos base APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |NomeDoTipo|AptcaTypesShouldOnlyExtendAptcaBaseTypes|
@@ -44,15 +45,15 @@ ms.locfileid: "49171451"
 
  Quando o atributo APTCA estiver presente em um assembly totalmente confiável e um tipo no assembly for herdado de um tipo que não permita chamadores parcialmente confiáveis, será possível uma exploração de segurança. Se dois tipos `T1` e `T2` atendem às condições a seguir, chamadores mal-intencionados podem usar o tipo `T1` para ignorar a exigência de herança de confiança total implícito que protege `T2`:
 
--   `T1` um tipo público é declarado em um assembly totalmente confiável que tem o atributo APTCA.
+- `T1` um tipo público é declarado em um assembly totalmente confiável que tem o atributo APTCA.
 
--   `T1` herdado de um tipo `T2` fora do assembly.
+- `T1` herdado de um tipo `T2` fora do assembly.
 
--   `T2`do assembly não tem o atributo APTCA e, portanto, não devem ser herdada por tipos em assemblies parcialmente confiáveis.
+- `T2`do assembly não tem o atributo APTCA e, portanto, não devem ser herdada por tipos em assemblies parcialmente confiáveis.
 
- Um tipo parcialmente confiável `X` podem herdar de `T1`, que concede a ele acesso a membros herdados declarados em `T2`. Porque `T2` não tem o atributo APTCA, seu tipo derivado imediato (`T1`) deve atender uma demanda de herança de confiança total; `T1` tem confiança total e, portanto, satisfaz essa verificação. O risco de segurança é porque `X` não participa de satisfazer a demanda de herança que protege `T2` de criação de subclasses não confiável. Por esse motivo, os tipos com o atributo APTCA não devem estender tipos que não têm o atributo.
+  Um tipo parcialmente confiável `X` podem herdar de `T1`, que concede a ele acesso a membros herdados declarados em `T2`. Porque `T2` não tem o atributo APTCA, seu tipo derivado imediato (`T1`) deve atender uma demanda de herança de confiança total; `T1` tem confiança total e, portanto, satisfaz essa verificação. O risco de segurança é porque `X` não participa de satisfazer a demanda de herança que protege `T2` de criação de subclasses não confiável. Por esse motivo, os tipos com o atributo APTCA não devem estender tipos que não têm o atributo.
 
- Outro problema de segurança e talvez um mais comum, é que o tipo derivado (`T1`) pode, por meio de erro do programador, expor os membros protegidos do tipo que requer confiança total (`T2`). Quando isso ocorrer, os chamadores não confiáveis obtém acesso a informações que devem estar disponíveis somente para tipos de totalmente confiáveis.
+  Outro problema de segurança e talvez um mais comum, é que o tipo derivado (`T1`) pode, por meio de erro do programador, expor os membros protegidos do tipo que requer confiança total (`T2`). Quando isso ocorrer, os chamadores não confiáveis obtém acesso a informações que devem estar disponíveis somente para tipos de totalmente confiáveis.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Se o tipo relatado pela violação de está em um assembly que não requer o atributo APTCA, removê-lo.

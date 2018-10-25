@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12ab9170c0f071ba319c0560f55291f41174ddf9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1adef2aeda5385fae1e3603127e3eea3f5ad109b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306261"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943031"
 ---
 # <a name="threads-view"></a>Modo de Exibição de Threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ A exibição de Threads é uma lista simples de todos os threads associados com 
   
 #### <a name="to-open-the-threads-view"></a>Para abrir a exibição de Threads  
   
-1.  Dos **Spy** menu, escolha **Threads**.  
+1. Dos **Spy** menu, escolha **Threads**.  
   
- ![Spy&#43; &#43; exibição de Threads](../debugger/media/spy-threads.png "Spy + + _Threads")  
-Exibição de Threads do Spy + +  
+   ![Spy&#43; &#43; exibição de Threads](../debugger/media/spy-threads.png "Spy + + _Threads")  
+   Exibição de Threads do Spy + +  
   
- A figura acima mostra a exibição de Threads.  
+   A figura acima mostra a exibição de Threads.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Procurando por um Thread na exibição de Threads](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
