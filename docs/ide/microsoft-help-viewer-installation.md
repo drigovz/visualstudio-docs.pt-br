@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e902df40e27fb5bf27ca29d9335634844024f3fb
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 512a573a0d04f9459080442a2b2b01837ac37229
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747476"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942710"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalação do Microsoft Help Viewer
 
@@ -45,9 +45,9 @@ Outra maneira de instalar o Microsoft Help Viewer facilmente é por meio da caix
 
    ![Botão Instalar](media/help_viewer_install.png)
 
-|         |         |
+| | |
 |---------|---------|
-|  ![ícone de câmera para vídeo](../install/media/video-icon.png)  |  [Assista a um vídeo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) sobre como instalar o Microsoft Help Viewer usando o Instalador do Visual Studio. |
+| ![ícone de câmera para vídeo](../install/media/video-icon.png) | [Assista a um vídeo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) sobre como instalar o Microsoft Help Viewer usando o Instalador do Visual Studio. |
 
 ## <a name="see-also"></a>Consulte também
 

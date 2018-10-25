@@ -15,12 +15,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 142e39a9d1b826edaaf519eea2ecaf8dfb72b5ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: abb37b7bdfbc01affea63aa90d35b3702dcb4719
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208644"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907918"
 ---
 # <a name="code-generation-in-a-build-process"></a>Geração de código em um processo de build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,11 +160,11 @@ A transformação de texto ocorre antes de outras tarefas no processo de compila
 
 Em `AfterTransform`, você pode referenciar listas de arquivos:
 
--   GeneratedFiles – uma lista de arquivos gravados pelo processo. Para os arquivos que substituíram os arquivos somente leitura existentes, %(GeneratedFiles.ReadOnlyFileOverwritten) será true. Esses arquivos podem passar por check-out do controle do código-fonte.
+- GeneratedFiles – uma lista de arquivos gravados pelo processo. Para os arquivos que substituíram os arquivos somente leitura existentes, %(GeneratedFiles.ReadOnlyFileOverwritten) será true. Esses arquivos podem passar por check-out do controle do código-fonte.
 
--   NonGeneratedFiles – uma lista de arquivos somente leitura que não foram substituídos.
+- NonGeneratedFiles – uma lista de arquivos somente leitura que não foram substituídos.
 
- Por exemplo, você definirá uma tarefa fazer check-out de GeneratedFiles.
+  Por exemplo, você definirá uma tarefa fazer check-out de GeneratedFiles.
 
 ## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath e OutputFileName
 
@@ -255,7 +255,6 @@ Edite seu arquivo .csproj ou .vbproj para definir uma propriedade do projeto. Es
       <Value>$(myLibFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
 Agora você pode usar sua propriedade de projeto no assembly e diretivas de inclusão:

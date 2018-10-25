@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a10c8db7a9706c406cb192f9418c1fd8d04e888a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0920c9a506adaf562a8acc77b2b030e461f11ed1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765694"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934880"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Como coletar dados de amostragem no nível de linha
 A amostragem de nível de linha é a capacidade do criador de perfil para determinar o local no código de uma função de processamento intensivo em que o processador tem que gastar a maior parte de seu tempo, como uma função que tem amostras altamente exclusivas.  
@@ -32,21 +32,21 @@ A amostragem de nível de linha é a capacidade do criador de perfil para determ
 ### <a name="available-data"></a>Dados disponíveis  
  Os dados de amostragem de nível de linha disponíveis incluem as seguintes informações:  
   
--   Nome da função.  
+- Nome da função.  
   
--   Endereço da função.  
+- Endereço da função.  
   
--   Início da linha – número de linha do código do qual foi obtida a amostra.  
+- Início da linha – número de linha do código do qual foi obtida a amostra.  
   
--   Fim da linha – número de linha de término do código-fonte. Esse geralmente é o mesmo que os dados do "Início da linha", exceto quando uma única instrução do programa abrange várias linhas do código-fonte.  
+- Fim da linha – número de linha de término do código-fonte. Esse geralmente é o mesmo que os dados do "Início da linha", exceto quando uma única instrução do programa abrange várias linhas do código-fonte.  
   
--   Início do caractere – coluna de início da amostra de agregação. É geralmente 0, exceto quando uma única linha contém várias instruções de programa.  
+- Início do caractere – coluna de início da amostra de agregação. É geralmente 0, exceto quando uma única linha contém várias instruções de programa.  
   
--   Final do caractere – coluna de término do exemplo de agregação.  
+- Final do caractere – coluna de término do exemplo de agregação.  
   
--   IP – endereço em que o exemplo de agregação foi obtido (somente em modo de exibição de IP).  
+- IP – endereço em que o exemplo de agregação foi obtido (somente em modo de exibição de IP).  
   
- Na exibição de **Módulos**, se uma função tiver estatísticas em nível de linha, as estatísticas estarão aninhadas em cada função. Além disso, são apresentadas as estatísticas no nível de IP que estão aninhadas em cada linha.  
+  Na exibição de **Módulos**, se uma função tiver estatísticas em nível de linha, as estatísticas estarão aninhadas em cada função. Além disso, são apresentadas as estatísticas no nível de IP que estão aninhadas em cada linha.  
   
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Desligar a amostragem no nível de linha para o código gerenciado  
  Por padrão, a amostragem de nível de linha está ativada. Desligue a coleta de dados no nível de linha para o código gerenciado usando um dos seguintes comandos:  

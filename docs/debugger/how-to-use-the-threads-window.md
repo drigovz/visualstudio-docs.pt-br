@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65626bc483d7794c2adae141903783238a97eddd
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468459"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933554"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Passo a passo: Depurar um aplicativo multi-threaded no Visual Studio usando a janela Threads
 O Visual Studio fornece um **Threads** elementos para ajudá-lo a depurar aplicativos multithread de interface de janela e outro usuário. Este tutorial mostra como usar o **Threads** janela e o **local de depuração** barra de ferramentas. Para obter informações sobre as outras ferramentas, consulte [começar a depurar aplicativos multissegmentados](../debugger/get-started-debugging-multithreaded-apps.md). Este tutorial leva apenas alguns minutos, mas concluí-la você se familiarizará com os recursos para depurar aplicativos multithread.   
@@ -72,29 +72,29 @@ Para iniciar este tutorial, você precisará de um projeto de aplicativo multith
   
 #### <a name="to-start-debugging"></a>Para iniciar a depuração  
   
-1.  Clique na medianiz esquerda do `Console.WriteLine` instrução para inserir um novo ponto de interrupção.  
+1. Clique na medianiz esquerda do `Console.WriteLine` instrução para inserir um novo ponto de interrupção.  
   
-     Na medianiz no lado esquerdo do editor de código fonte, um círculo vermelho aparece. Isso indica que um ponto de interrupção agora está definido nesse local.  
+    Na medianiz no lado esquerdo do editor de código fonte, um círculo vermelho aparece. Isso indica que um ponto de interrupção agora está definido nesse local.  
   
-2.  Sobre o **Debug** menu, clique em **iniciar depuração** (**F5**).  
+2. Sobre o **Debug** menu, clique em **iniciar depuração** (**F5**).  
   
-     A depuração é iniciada, seu aplicativo de console começa a ser executado e, em seguida, para no ponto de interrupção.  
+    A depuração é iniciada, seu aplicativo de console começa a ser executado e, em seguida, para no ponto de interrupção.  
   
-3.  Se a janela do aplicativo de console tiver o foco neste momento, clique na janela do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para retornar o foco para o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+3. Se a janela do aplicativo de console tiver o foco neste momento, clique na janela do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para retornar o foco para o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-4.  No editor de código fonte, localize a linha que contém o código a seguir:  
+4. No editor de código fonte, localize a linha que contém o código a seguir:  
   
-    ```VB  
-    Thread.Sleep(5000)   
-    ```  
+   ```VB  
+   Thread.Sleep(5000)   
+   ```  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    Thread::Sleep(3000);  
-    ```
+   ```C++  
+   Thread::Sleep(3000);  
+   ```
   
 #### <a name="to-discover-the-thread-marker"></a>Para descobrir o marcador de thread  
 

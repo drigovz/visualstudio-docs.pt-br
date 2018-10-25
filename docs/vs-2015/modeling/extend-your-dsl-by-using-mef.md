@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b4b3eea594bbfca0701fc8e719af0cf481fa434c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fd5e4727c4352ca27d905bad608c4a1c17284f9b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930629"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estender a DSL usando MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,141 +30,141 @@ Você pode estender sua linguagem específica de domínio (DSL) usando Managed E
   
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Para habilitar sua DSL seja estendida pelo MEF  
   
-1.  Criar uma nova pasta chamada **MefExtension** dentro de **DslPackage** projeto. Adicione os seguintes arquivos para ele:  
+1. Criar uma nova pasta chamada **MefExtension** dentro de **DslPackage** projeto. Adicione os seguintes arquivos para ele:  
   
-     Nome do arquivo: `CommandExtensionVSCT.tt`  
+    Nome do arquivo: `CommandExtensionVSCT.tt`  
   
-    > [!IMPORTANT]
-    >  O GUID do conjunto neste arquivo para ser o mesmo que o CommandSetId de GUID que é definido em DslPackage\GeneratedCode\Constants.tt  
+   > [!IMPORTANT]
+   >  O GUID do conjunto neste arquivo para ser o mesmo que o CommandSetId de GUID que é definido em DslPackage\GeneratedCode\Constants.tt  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#  
-    // CmdSet Guid must be defined before master template is included  
-    // This Guid must be kept synchronized with the CommandSetId Guid in Constants.tt  
-    Guid guidCmdSet = new Guid ("00000000-0000-0000-0000-000000000000");  
-    string menuidCommandsExtensionBaseId="0x4000";  
-    #>  
-    <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#  
+   // CmdSet Guid must be defined before master template is included  
+   // This Guid must be kept synchronized with the CommandSetId Guid in Constants.tt  
+   Guid guidCmdSet = new Guid ("00000000-0000-0000-0000-000000000000");  
+   string menuidCommandsExtensionBaseId="0x4000";  
+   #>  
+   <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>  
+   ```  
   
-     Nome do arquivo: `CommandExtensionRegistrar.tt`  
+    Nome do arquivo: `CommandExtensionRegistrar.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>  
+   ```  
   
-     Nome do arquivo: `ValidationExtensionEnablement.tt`  
+    Nome do arquivo: `ValidationExtensionEnablement.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>  
+   ```  
   
-     Nome do arquivo: `ValidationExtensionRegistrar.tt`  
+    Nome do arquivo: `ValidationExtensionRegistrar.tt`  
   
-     Se você adicionar esse arquivo, você deve habilitar a validação na DSL usando pelo menos uma das opções no **EditorValidation** no Gerenciador de DSL.  
+    Se você adicionar esse arquivo, você deve habilitar a validação na DSL usando pelo menos uma das opções no **EditorValidation** no Gerenciador de DSL.  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>  
+   ```  
   
-     Nome do arquivo: `PackageExtensionEnablement.tt`  
+    Nome do arquivo: `PackageExtensionEnablement.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>  
+   ```  
   
-2.  Criar uma nova pasta chamada **MefExtension** dentro de **Dsl** projeto. Adicione os seguintes arquivos para ele:  
+2. Criar uma nova pasta chamada **MefExtension** dentro de **Dsl** projeto. Adicione os seguintes arquivos para ele:  
   
-     Nome do arquivo: `DesignerExtensionMetaDataAttribute.tt`  
+    Nome do arquivo: `DesignerExtensionMetaDataAttribute.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>  
+   ```  
   
-     Nome do arquivo: `GestureExtensionEnablement.tt`  
+    Nome do arquivo: `GestureExtensionEnablement.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="Dsl\GestureExtensionEnablement.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="Dsl\GestureExtensionEnablement.tt" #>  
+   ```  
   
-     Nome do arquivo: `GestureExtensionController.tt`  
+    Nome do arquivo: `GestureExtensionController.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="Dsl\GestureExtensionController.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="Dsl\GestureExtensionController.tt" #>  
+   ```  
   
-3.  Adicione a seguinte linha ao arquivo existente denominada **Dslpackage\commands.VSCT.**:  
+3. Adicione a seguinte linha ao arquivo existente denominada **Dslpackage\commands.VSCT.**:  
   
-    ```  
-    <Include href="MefExtension\CommandExtensionVSCT.vsct"/>  
-    ```  
+   ```  
+   <Include href="MefExtension\CommandExtensionVSCT.vsct"/>  
+   ```  
   
-     Insira a linha depois existente `<Include>` diretiva.  
+    Insira a linha depois existente `<Include>` diretiva.  
   
-4.  `Open DslDefinition.dsl.`  
+4. `Open DslDefinition.dsl.`  
   
-5.  No Gerenciador de DSL, selecione **Editor \ validação**.  
+5. No Gerenciador de DSL, selecione **Editor \ validação**.  
   
-6.  Na janela Propriedades, certifique-se de que pelo menos uma das propriedades nomeadas **usa...**  é `true`.  
+6. Na janela Propriedades, certifique-se de que pelo menos uma das propriedades nomeadas **usa...**  é `true`.  
   
-7.  Na barra de ferramentas do Gerenciador de soluções, clique em **transformar todos os modelos**.  
+7. Na barra de ferramentas do Gerenciador de soluções, clique em **transformar todos os modelos**.  
   
-     Arquivos da subsidiária aparecem abaixo de cada um dos arquivos que você adicionou.  
+    Arquivos da subsidiária aparecem abaixo de cada um dos arquivos que você adicionou.  
   
-8.  Compile e execute a solução para verificar se ele ainda está funcionando.  
+8. Compile e execute a solução para verificar se ele ainda está funcionando.  
   
- Sua DSL agora está habilitado para MEF. Você pode gravar comandos de menu, manipuladores de gestos e restrições de validação como extensões MEF. Você pode escrever essas extensões em sua solução DSL, junto com outros códigos personalizados. Além disso, você ou outros desenvolvedores podem escrever separado [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensões que estendem sua DSL.  
+   Sua DSL agora está habilitado para MEF. Você pode gravar comandos de menu, manipuladores de gestos e restrições de validação como extensões MEF. Você pode escrever essas extensões em sua solução DSL, junto com outros códigos personalizados. Além disso, você ou outros desenvolvedores podem escrever separado [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensões que estendem sua DSL.  
   
 ## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>Criação de uma extensão de uma DSL MEF habilitado  
  Se você tiver acesso a uma DSL habilitado de MEF, criado por você mesmo ou outra pessoa, você pode escrever extensões para ele. As extensões podem ser usadas para adicionar comandos de menu, manipuladores de gestos ou restrições de validação. Para criar essas extensões, você deve usar um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução VSIX (extensão). A solução tem duas partes: um projeto de biblioteca de classes que compila o assembly de código e um projeto VSIX que empacota o assembly.  
   
 #### <a name="to-create-a-dsl-extension-vsix"></a>Para criar uma DSL de extensão VSIX  
   
-1.  Crie um novo projeto de biblioteca de classes. Para fazer isso, além de **novo projeto** caixa de diálogo, selecione **Visual Basic** ou **Visual c#** e, em seguida, selecione **biblioteca de classes**.  
+1. Crie um novo projeto de biblioteca de classes. Para fazer isso, além de **novo projeto** caixa de diálogo, selecione **Visual Basic** ou **Visual c#** e, em seguida, selecione **biblioteca de classes**.  
   
-2.  No novo projeto de biblioteca de classe, adicione uma referência ao assembly da DSL.  
+2. No novo projeto de biblioteca de classe, adicione uma referência ao assembly da DSL.  
   
-    -   Normalmente, esse assembly tem um nome que termina com ". DSL.dll".  
+   - Normalmente, esse assembly tem um nome que termina com ". DSL.dll".  
   
-    -   Se você tiver acesso ao projeto DSL, você pode encontrar o arquivo do assembly no diretório **Dsl\bin\\\***  
+   - Se você tiver acesso ao projeto DSL, você pode encontrar o arquivo do assembly no diretório **Dsl\bin\\\\***  
   
-    -   Se você tiver acesso ao arquivo VSIX de DSL, você pode encontrar o assembly, alterando a extensão de nome de arquivo do arquivo VSIX para. zip". Descompacte o arquivo. zip.  
+   - Se você tiver acesso ao arquivo VSIX de DSL, você pode encontrar o assembly, alterando a extensão de nome de arquivo do arquivo VSIX para. zip". Descompacte o arquivo. zip.  
   
-3.  Adicione referências aos assemblies do .NET a seguir:  
+3. Adicione referências aos assemblies do .NET a seguir:  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
+   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
   
-    -   System.ComponentModel.Composition.dll  
+   -   System.ComponentModel.Composition.dll  
   
-    -   System.Windows.Forms.dll  
+   -   System.Windows.Forms.dll  
   
-4.  Crie um projeto VSIX na mesma solução. Para fazer isso, na **novo projeto** diálogo caixa, expanda **Visual Basic** ou **Visual c#**, clique em **extensibilidade**e, em seguida, selecione  **Projeto do VSIX**.  
+4. Crie um projeto VSIX na mesma solução. Para fazer isso, na **novo projeto** diálogo caixa, expanda **Visual Basic** ou **Visual c#**, clique em **extensibilidade**e, em seguida, selecione  **Projeto do VSIX**.  
   
-5.  No Gerenciador de soluções, clique com botão direito do projeto VSIX e, em seguida, clique em **definir como projeto de inicialização**.  
+5. No Gerenciador de soluções, clique com botão direito do projeto VSIX e, em seguida, clique em **definir como projeto de inicialização**.  
   
-6.  No novo projeto, abra **vsixmanifest**.  
+6. No novo projeto, abra **vsixmanifest**.  
   
-7.  Clique em **adicionar conteúdo**. Na caixa de diálogo, defina **tipo de conteúdo** à **componente MEF**, e **projeto de origem** ao seu projeto de biblioteca de classe.  
+7. Clique em **adicionar conteúdo**. Na caixa de diálogo, defina **tipo de conteúdo** à **componente MEF**, e **projeto de origem** ao seu projeto de biblioteca de classe.  
   
-8.  Adicione uma referência VSIX para a DSL.  
+8. Adicione uma referência VSIX para a DSL.  
   
-    1.  Na **vsixmanifest**, clique em **adicionar referência**  
+   1. Na **vsixmanifest**, clique em **adicionar referência**  
   
-    2.  Na caixa de diálogo, clique em **adicione carga** e, em seguida, localize o arquivo VSIX de DSL. O arquivo VSIX baseia-se na solução de DSL, em **DslPackage\bin\\\***.  
+   2. Na caixa de diálogo, clique em **adicione carga** e, em seguida, localize o arquivo VSIX de DSL. O arquivo VSIX baseia-se na solução de DSL, em * * DslPackage\bin\\\\* * *.  
   
-         Isso permite que os usuários a instalar a DSL e sua extensão ao mesmo tempo. Se o usuário já tiver instalado o DSL, apenas sua extensão será instalada.  
+       Isso permite que os usuários a instalar a DSL e sua extensão ao mesmo tempo. Se o usuário já tiver instalado o DSL, apenas sua extensão será instalada.  
   
 9. Revisar e atualizar os outros campos de **vsixmanifest**. Clique em **selecionar edições** e verifique o correto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edições são definidas.  
   

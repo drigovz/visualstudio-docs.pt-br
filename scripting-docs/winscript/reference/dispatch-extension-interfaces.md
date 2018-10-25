@@ -15,27 +15,27 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5617019d15648b3aabd5d06df0f3662c4883183
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b7b77f096d70b15272e0cce1b985f3c32f89e495
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640376"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940925"
 ---
 # <a name="dispatch-extension-interfaces"></a>Interfaces de extensão de expedição
 O arquivo de cabeçalho DispEx.h fornece as interfaces listadas nesta seção.  
-  
+
 ## <a name="in-this-section"></a>Nesta seção  
- As interfaces a seguir são para o Microsoft Windows Script Host e mecanismos de Script do Windows.  
-  
--   [Interface ICanHandleException](../../winscript/reference/icanhandleexception-interface.md)  
-  
--   [Interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
-  
--   [Interface IDispError](../../winscript/reference/idisperror-interface.md)  
-  
--   [Interface IVariantChangeType](../../winscript/reference/ivariantchangetype-interface.md)  
-  
- As interfaces a seguir são específicas para o Host de Script do Windows:  
-  
--   [Interface IObjectIdentity](../../winscript/reference/iobjectidentity-interface.md)
+ As seguintes interfaces são para o Microsoft Windows Script Host e os mecanismos de Script do Windows.  
+
+- [Interface ICanHandleException](../../winscript/reference/icanhandleexception-interface.md)  
+
+- [Interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
+
+- [Interface IDispError](../../winscript/reference/idisperror-interface.md)  
+
+- [Interface IVariantChangeType](../../winscript/reference/ivariantchangetype-interface.md)  
+
+  As seguintes interfaces são específicas para o Host de Script do Windows:  
+
+- [Interface IObjectIdentity](../../winscript/reference/iobjectidentity-interface.md)

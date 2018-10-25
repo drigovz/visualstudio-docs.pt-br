@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d59798e5ecf503b1dcb6b76e9d0d8fb448cc1e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e362ca665d7012e52d7ed49cce66adc4632b013
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295016"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937883"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Criando uma interface de usuário usando o XAML Designer no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,8 +33,8 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
   
  Para tarefas avançadas de design XAML como animações e comportamentos, consulte [Criando uma interface do usuário usando o Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md).  
   
-## <a name="xaml-designer-workspace"></a>Espaço de trabalho do Designer XAML  
- O espaço de trabalho no Designer XAML consiste em vários elementos da interface visual. Esses elementos incluem a prancheta, o Editor XAML, a janela Dispositivo, a janela Estrutura de Tópicos de Documento e a janela Propriedades. Para abrir o Designer XAML, clique com o botão direito do mouse em um arquivo XAML no **Gerenciador de Soluções** e selecione **Exibir Designer**.  
+## <a name="xaml-designer-workspace"></a>Workspace do Designer XAML  
+ O workspace no Designer XAML consiste em vários elementos da interface visual. Esses elementos incluem a prancheta, o Editor XAML, a janela Dispositivo, a janela Estrutura de Tópicos de Documento e a janela Propriedades. Para abrir o Designer XAML, clique com o botão direito do mouse em um arquivo XAML no **Gerenciador de Soluções** e selecione **Exibir Designer**.  
   
 ## <a name="authoring-views"></a>Criando modos de exibição  
  O Designer XAML fornece um modo de exibição XAML e um modo Design sincronizado de marcação XAML renderizada de seu aplicativo. Com um arquivo XAML aberto no Visual Studio, você pode mudar o modo de exibição de Design e a exibição XAML usando as guias **Design** e **XAML**. Você pode usar o botão **Alternar Painéis** para mudar qual janela é exibida no topo: a prancheta ou o Editor XAML.  
@@ -133,31 +133,31 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 ## <a name="document-outline-window"></a>Janela Estrutura de Tópicos de Documento  
  A janela Estrutura de Tópicos de Documento no Designer XAML ajuda a executar estas tarefas:  
   
--   Exibir a estrutura hierárquica de todos os elementos no artboard.  
+- Exibir a estrutura hierárquica de todos os elementos no artboard.  
   
--   Selecionar elementos para que você possa modificá-los (movê-los na hierarquia, modificá-los no artboard, definir suas propriedades na janela Propriedades e assim por diante). Para obter mais informações, consulte [Trabalhando com elementos no Designer XAML](../designers/working-with-elements-in-xaml-designer.md)  
+- Selecionar elementos para que você possa modificá-los (movê-los na hierarquia, modificá-los no artboard, definir suas propriedades na janela Propriedades e assim por diante). Para obter mais informações, consulte [Trabalhando com elementos no Designer XAML](../designers/working-with-elements-in-xaml-designer.md)  
   
--   Criar e modificar modelos para elementos que são controles.  
+- Criar e modificar modelos para elementos que são controles.  
   
--   Usar o menu de contexto para elementos selecionados. O mesmo menu também está disponível para os elementos selecionados no artboard.  
+- Usar o menu de contexto para elementos selecionados. O mesmo menu também está disponível para os elementos selecionados no artboard.  
   
- Para exibir a janela de Estrutura de tópicos do documento na barra de menus, escolha **Exibição**, **Outras Janelas**, **Estrutura de Tópicos do Documento**.  
+  Para exibir a janela de Estrutura de tópicos do documento na barra de menus, escolha **Exibição**, **Outras Janelas**, **Estrutura de Tópicos do Documento**.  
   
- ![Janela de Estrutura de tópicos do documento](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
+  ![Janela de Estrutura de tópicos do documento](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
   
- Estas são as opções disponíveis na janela Estrutura de Tópicos de Documento:  
+  Estas são as opções disponíveis na janela Estrutura de Tópicos de Documento:  
   
- **Estrutura de Tópicos do Documento**  
- O modo de exibição principal na janela Estrutura de Tópicos de Documento exibe a hierarquia de um documento em uma estrutura de árvore. Você pode usar a natureza hierárquica da estrutura de tópicos de documento para examinar o documento em vários níveis de detalhes, bem como para bloquear e ocultar os elementos individualmente ou em grupos.  
+  **Estrutura de Tópicos do Documento**  
+  O modo de exibição principal na janela Estrutura de Tópicos de Documento exibe a hierarquia de um documento em uma estrutura de árvore. Você pode usar a natureza hierárquica da estrutura de tópicos de documento para examinar o documento em vários níveis de detalhes, bem como para bloquear e ocultar os elementos individualmente ou em grupos.  
   
- **Mostrar/ocultar**  
- Exibe ou oculta os elementos do artboard que correspondem aos itens na Estrutura de Tópicos de Documento. Use os botões **Mostrar/ocultar**, que exibem um símbolo de olho quando mostrados ou pressione CTRL+H para ocultar elementos e SHIFT+CTRL+H para exibi-los.  
+  **Mostrar/ocultar**  
+  Exibe ou oculta os elementos do artboard que correspondem aos itens na Estrutura de Tópicos de Documento. Use os botões **Mostrar/ocultar**, que exibem um símbolo de olho quando mostrados ou pressione CTRL+H para ocultar elementos e SHIFT+CTRL+H para exibi-los.  
   
- **Bloquear/desbloquear**  
- Bloqueia ou desbloqueia os elementos do artboard que correspondem aos itens na Estrutura de Tópicos de Documento. Os elementos bloqueados não podem ser modificados. Use os botões **Bloquear/desbloquear**, que exibem um símbolo de cadeado quando bloqueados ou pressione CTRL+L para bloquear elementos e SHIFT+CTRL+L para desbloqueá-los.  
+  **Bloquear/desbloquear**  
+  Bloqueia ou desbloqueia os elementos do artboard que correspondem aos itens na Estrutura de Tópicos de Documento. Os elementos bloqueados não podem ser modificados. Use os botões **Bloquear/desbloquear**, que exibem um símbolo de cadeado quando bloqueados ou pressione CTRL+L para bloquear elementos e SHIFT+CTRL+L para desbloqueá-los.  
   
- **Retornar escopo para pageRoot**  
- A opção na parte superior da janela Estrutura de Tópicos de Documento, que mostra um símbolo de seta para cima, retorna a estrutura de tópicos de documento ao escopo anterior. O controle de escopo só é aplicável quando você está no escopo de um estilo ou modelo.  
+  **Retornar escopo para pageRoot**  
+  A opção na parte superior da janela Estrutura de Tópicos de Documento, que mostra um símbolo de seta para cima, retorna a estrutura de tópicos de documento ao escopo anterior. O controle de escopo só é aplicável quando você está no escopo de um estilo ou modelo.  
   
 ## <a name="properties-window"></a>Janela de Propriedades  
  A janela Propriedades permite definir valores de propriedade em controles. Veja como ela se parece:  

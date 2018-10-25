@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7a79ddd1644103d3e60f42c909706f2a3d771e9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 933c18a43cb8ebacd32914cb487fb0216b538b25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942472"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: alterar o design usando visualização e modelagem
 
@@ -82,7 +82,7 @@ Para obter mais informações sobre o Team Foundation Server, consulte:
 A tabela a seguir descreve as funções que essas ferramentas podem executar durante vários e vários estágios do ciclo de vida de desenvolvimento de software:
 
 ||**Modelagem dos requisitos de usuário**|**Modelagem de processo empresarial**|**Design e arquitetura do sistema**|**Visualização de código e a exploração**|**Verificação**|
-|------|------------------------------------|-----------------------------------|--------------------------------------|------------------------------------------|----------------------|
+|------|-|-|-|-|-|
 |Diagrama de linguagem específica do domínio (DSL)|Sim|Sim|Sim|||
 |Diagrama de dependência e validação de camada|||Sim|Sim|Sim|
 |Mapa de código|||Sim|Sim|Sim|
@@ -145,7 +145,7 @@ Antes das equipes de check-in de suas alterações, elas validam o código contr
 O dinner Now deve estimar o custo de atender o requisito de novo. Isso depende em parte quanto essa alteração afetará outras partes do sistema. Para ajudá-los a entender isso, um dos desenvolvedores da Dinner Now cria esses mapas e diagramas de código existente:
 
 |**Mapa ou diagrama**|**programas**|
-|------------------------|---------------|
+|-|-|
 |*Mapa de código*<br /><br /> Consulte:<br /><br /> - [Mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)<br />- [Procurar e reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)<br />- [Personalizar mapa de códigos editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|As dependências e outros relacionamentos no código.<br /><br /> Por exemplo, Dinner Now pode começar revisando os mapas de código de assembly para uma visão geral dos assemblies e suas dependências. Eles podem detalhar os mapas para explorar namespaces e classes nesses assemblies.<br /><br /> O dinner Now também pode criar mapas para explorar areas particulares e outros tipos de relações no código. Eles usam o Gerenciador de soluções para localizar e selecionar as áreas e relacionamentos de seu interesse.|
 |*Diagrama de classe base*<br /><br /> Consulte [Como adicionar diagramas de classe a projetos (Designer de Classe)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Classes existentes no código|
 
@@ -166,14 +166,14 @@ O dinner Now deve estimar o custo de atender o requisito de novo. Isso depende e
  Para descrever alterações em outras partes do sistema, como componentes ou interações, a equipe pode desenhar esses elementos em quadros de comunicações. Eles também podem desenhar os diagramas a seguir no Visual Studio para que os detalhes podem ser capturados, gerenciados e compreendidos por ambas equipes:
 
 |**Diagramas**|**Descreve**|
-|------------------|-------------------|
+|-|-|
 |*Diagrama de classe base*<br /><br /> Consulte [Como adicionar diagramas de classe a projetos (Designer de Classe)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Classes existentes no código.|
 
 ### <a name="ValidatingCode"></a> Manter o código consistente com o Design
  O dinner Now deve se certificar de que os códigos atualizados ficaram consistentes com o design. Eles criam diagramas de dependência que descrevem as camadas de funcionalidade no sistema, especifique as dependências permitidas entre os artefatos de solução deles e associam para essas camadas.
 
 |**Diagrama**|**Descreve**|
-|-----------------|-------------------|
+|-|-|
 |*Diagrama de dependência*<br /><br /> Consulte:<br /><br /> - [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)<br />- [Validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)|A arquitetura lógica do código.<br /><br /> Um diagrama de dependência organiza e mapeia os artefatos em uma solução do Visual Studio para grupos abstratos chamados *camadas*. Essas camadas identificam as funções, tarefas ou funções que esses artefatos executam no sistema.<br /><br /> Diagramas de camada são úteis para descrever o design pretendido do sistema e validação de código em evolução em relação a esse design.<br /><br /> Para criar camadas, arraste itens do Gerenciador de soluções, mapas de código, modo de exibição de classe e Pesquisador de objetos. Para desenhar novas camadas, use a caixa de ferramentas ou clique com botão direito na superfície do diagrama.<br /><br /> Para exibir as dependências existentes, clique com botão direito na superfície do diagrama de camada e, em seguida, clique em **gerar dependências**. Para especificar dependências destinadas, desenhe novas dependências.|
 
  Por exemplo, o diagrama de dependência a seguir descreve as dependências entre camadas e o número de artefatos que estão associados a cada camada:
@@ -330,7 +330,7 @@ Este mapa mostra que a classe PaymentApprover agora está no espaço DinnerNow B
 #### <a name="relationship-to-other-diagrams"></a>Relação com Outros Diagramas
 
 |**Diagrama**|**Descreve**|
-|-----------------|-------------------|
+|-|-|
 |Diagrama de dependência|A arquitetura lógica do sistema. Use a validação de dependência para certificar-se de que o código permaneça consistente com o design.<br /><br /> Para ajudá-lo a identificar dependencys existentes ou dependencys pretendidos, crie um mapa de código e agrupar itens relacionados. Para criar um diagrama de dependência, consulte:<br /><br /> - [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)|
 |Diagrama de classe (baseado em código)|Classes existentes no código para um projeto específico.<br /><br /> Para visualizar e modificar uma classe existente no código, use o Designer de classe.<br /><br /> Consulte [Como adicionar diagramas de classe a projetos (Designer de Classe)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
 
@@ -369,11 +369,11 @@ Um diagrama de classe tem os seguintes recursos principais:
 
 - Uma *associação* indica algum tipo de relação entre os dois classificadores.
 
-    - Uma *agregação* é uma associação que indica uma propriedade compartilhada entre classificadores.
+  - Uma *agregação* é uma associação que indica uma propriedade compartilhada entre classificadores.
 
-    - Um *composição* é uma associação que indica uma relação de inteiro-parte entre classificadores.
+  - Um *composição* é uma associação que indica uma relação de inteiro-parte entre classificadores.
 
-     Para mostrar agregações ou composições, defina as **agregação** propriedade em uma associação. **Compartilhado** mostra agregações e **composto** mostra composições.
+    Para mostrar agregações ou composições, defina as **agregação** propriedade em uma associação. **Compartilhado** mostra agregações e **composto** mostra composições.
 
 - Um *dependência* indica que a alterar a definição de um classificador pode alterar a definição de outro classificador.
 
@@ -399,7 +399,7 @@ Como ponto de partida para explorar e discutir as classes existentes, você pode
 #### <a name="relationship-to-other-diagrams"></a>Relação com Outros Diagramas
 
 |**Diagrama**|**Descrição**|
-|-----------------|---------------------|
+|-|-|
 |Diagrama de dependência|Defina a arquitetura lógica do sistema no que diz respeito às classes.<br /><br /> Use a validação de dependência para certificar-se de que o código permaneça consistente com o design.<br /><br /> Consulte:<br /><br /> - [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)<br />- [Validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)|
 |Mapa de código|Visualize a organização e os relacionamentos no código existente.<br /><br /> Para identificar classes, seus relacionamentos e seus métodos, crie um mapa de códigos que mostre esses elementos.<br /><br /> Consulte:<br /><br /> - [Mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)|
 
@@ -440,13 +440,13 @@ Um diagrama de dependência tem os seguintes recursos principais:
 
      O número em uma camada mostra o número de artefatos que estão associados à camada. Esses artefatos podem ser namespaces, projetos, classes, métodos e assim por diante. Ao interpretar o número de artefatos em uma camada, lembre-se de:
 
-    - Se uma camada estiver vinculada a um artefato que contenha outros artefatos, mas não estiver vinculada diretamente a outros artefatos, o número incluirá apenas o artefato vinculado. No entanto, os outros artefatos estão incluídos para análise durante a validação da camada.
+  - Se uma camada estiver vinculada a um artefato que contenha outros artefatos, mas não estiver vinculada diretamente a outros artefatos, o número incluirá apenas o artefato vinculado. No entanto, os outros artefatos estão incluídos para análise durante a validação da camada.
 
-         Por exemplo, se uma camada estiver vinculada a um único namespace, o número de artefatos vinculados será 1, mesmo se o namespace contiver classes. Se a camada também tiver links para cada classe no namespace, o número incluirá as classes vinculadas.
+       Por exemplo, se uma camada estiver vinculada a um único namespace, o número de artefatos vinculados será 1, mesmo se o namespace contiver classes. Se a camada também tiver links para cada classe no namespace, o número incluirá as classes vinculadas.
 
-    - Se uma camada contiver outras camadas vinculadas a artefatos, a camada de contêiner também estará vinculada a esses artefatos, mesmo que o número na camada de contêiner não inclua esses artefatos.
+  - Se uma camada contiver outras camadas vinculadas a artefatos, a camada de contêiner também estará vinculada a esses artefatos, mesmo que o número na camada de contêiner não inclua esses artefatos.
 
-     Para ver os artefatos que estão vinculados a uma camada, a dependência com o botão direito e, em seguida, clique em **Exibir Links** para abrir **Gerenciador de camadas**.
+    Para ver os artefatos que estão vinculados a uma camada, a dependência com o botão direito e, em seguida, clique em **Exibir Links** para abrir **Gerenciador de camadas**.
 
 - Um *dependência* indica que uma camada pode usar a funcionalidade em outra camada, mas não vice-versa. Um *dependência bidirecional* indica que uma camada pode usar a funcionalidade em outra camada e vice-versa.
 
@@ -473,13 +473,13 @@ Diagramas de dependência ajudam a:
 #### <a name="relationship-to-other-diagrams"></a>Relação com Outros Diagramas
 
 |**Diagrama**|**Descrição**|
-|-----------------|---------------------|
+|-|-|
 |Mapa de código|Visualize a organização e os relacionamentos no código existente.<br /><br /> Para criar camadas, gere um mapa de código e, em seguida, agrupar itens no mapa como camadas potenciais. Arraste os grupos do mapa para o diagrama de dependência.<br /><br /> Consulte:<br /><br /> - [Mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)<br />- [Procurar e reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)|
 
 ## <a name="external-resources"></a>Recursos externos
 
 |**Categoria**|**Links**|
-|------------------|---------------|
+|-|-|
 |**Fóruns**|- [Visualização do Visual Studio e ferramentas de modelagem](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visualização do Visual Studio e modelagem (ferramentas DSL) do SDK](http://go.microsoft.com/fwlink/?LinkId=184721)|
 
 ## <a name="see-also"></a>Consulte também

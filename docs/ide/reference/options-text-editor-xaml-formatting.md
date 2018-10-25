@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 59b161c1f2dedd0b9c14f9949cfcc164f39b26ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 272fb5368b73e483bb7d2f44c475d5e4e7bfdfcc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933567"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opções, Editor de Texto, XAML, Formatação
 Use a página de propriedades **Formatação** para especificar como elementos e atributos são formatados nos documentos XAML. Para abrir a caixa de diálogo **Opções**, clique no menu **Ferramentas** e clique em **Opções**. Para acessar a página de propriedades de **Formatação**, expanda o nó **Editor de Texto**, **XAML**, **Formatação**.
@@ -96,11 +96,12 @@ Você pode especificar os eventos que causam formatação automática.
 ## <a name="element-spacing"></a>Espaçamento de Elementos
  Use essa configuração para controlar como os elementos são organizados no documento XAML
 
-|||
-|-|-|
-|**Preservar novas linhas no conteúdo**|Linhas vazias no conteúdo do elemento não são removidas.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
-|**Recolher várias linhas vazias no conteúdo para uma linha única**|Linhas vazias no conteúdo do elemento são recolhidas em uma única linha.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
-|**Remover linhas vazias no conteúdo**|Todas as linhas vazias no conteúdo do elemento são removidas.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>`|
+
+| | |
+| - | - |
+| **Preservar novas linhas no conteúdo** | Linhas vazias no conteúdo do elemento não são removidas.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>\` |
+| **Recolher várias linhas vazias no conteúdo para uma linha única** | Linhas vazias no conteúdo do elemento são recolhidas em uma única linha.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>` |
+| **Remover linhas vazias no conteúdo** | Todas as linhas vazias no conteúdo do elemento são removidas.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>` |
 
 ## <a name="miscellaneous-section-auto-insert"></a>Seção Diversos, Inserção Automática
  Use essa configuração para controlar quando marcas e aspas são geradas automaticamente.

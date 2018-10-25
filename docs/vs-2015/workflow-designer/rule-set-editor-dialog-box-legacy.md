@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9da35b83eead06f40452696bb9559d409da8e38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294574"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942394"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Caixa de diálogo do editor de regra (legados)
 Este tópico descreve como usar o **Rule Set Editor** caixa de diálogo em novas [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -67,19 +67,19 @@ Este tópico descreve como usar o **Rule Set Editor** caixa de diálogo em novas
   
  As expressões dão suporte aos seguintes operadores:  
   
--   Operadores relacionais: ==, =! =  
+- Operadores relacionais: ==, =! =  
   
--   Operadores de comparação: <, \<=, >, > =  
+- Operadores de comparação: <, \<=, >, > =  
   
--   Operadores aritméticos: +, -, *,/, MODIFICAÇÃO  
+- Operadores aritméticos: +, -, *,/, MODIFICAÇÃO  
   
--   Operadores lógicos: E, & &, OR, &#124; &#124;, não!  
+- Operadores lógicos: E, & &, OR, &#124; &#124;, não!  
   
--   Operadores bit a bit: &,&#124;  
+- Operadores bit a bit: &,&#124;  
   
- Precedência de operadores de expressão segue regras de precedência de operador C#.  
+  Precedência de operadores de expressão segue regras de precedência de operador C#.  
   
- Para obter mais informações sobre as condições, consulte [usando condições em fluxos de trabalho](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
+  Para obter mais informações sobre as condições, consulte [usando condições em fluxos de trabalho](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Interromper e atualizar funções  
  **Ações:** e **ações Else:** dar suporte a expressões **interromper** e **atualização** funções. Para usar o **Halt** de função, digite **interromper** em um **, em seguida, a ação:** ou **outra ação:** caixa de texto. O **Halt** ação faz com que a regra a execução de parar imediatamente, e o controle retorna para o código de chamada. Você usa o **atualização** função com o encadeamento de encaminhamento.  
