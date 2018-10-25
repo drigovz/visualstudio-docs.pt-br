@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f44ffa801ba9b76010466ca8884a36217f843b55
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 16c66ecf1f7bade9a81f6ef1fab50375c6acdb6f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231562"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935998"
 ---
 # <a name="get-a-port"></a>Obter uma porta
 Uma porta representa uma conexão a uma máquina que processos estão em execução. Esse computador pode ser o computador local ou em um computador remoto (que possivelmente poderia estar executando um sistema de operacional não são baseados no Windows, consulte [portas](../../extensibility/debugger/ports.md) para obter mais informações).  

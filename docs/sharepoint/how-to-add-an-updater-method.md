@@ -22,52 +22,52 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3004e6b83f98ccf82e6086c4669618ef4fb48c8c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a4d50180173673b4999c18b8980c682d79637bd3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755737"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951412"
 ---
 # <a name="how-to-add-an-updater-method"></a>Como: adicionar um método Updater
   Você pode habilitar os usuários atualizem dados comerciais em uma lista externa do SharePoint com a criação de um *atualizador* método. Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-an-updater-method"></a>Para criar um método Updater  
   
-1.  No designer de BDC, escolha uma entidade.  
+1. No designer de BDC, escolha uma entidade.  
   
-2.  Na barra de menus, escolha **modo de exibição** > **Other Windows** > **detalhes do método BDC**.  
+2. Na barra de menus, escolha **modo de exibição** > **Other Windows** > **detalhes do método BDC**.  
   
-     Abre a janela de detalhes do método BDC. Para obter mais informações sobre essa janela, consulte [visão geral das ferramentas de design de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md).  
+    Abre a janela de detalhes do método BDC. Para obter mais informações sobre essa janela, consulte [visão geral das ferramentas de design de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
-3.  No **adicionar um método** , escolha **criar método de atualizador**.  
+3. No **adicionar um método** , escolha **criar método de atualizador**.  
   
-     Visual Studio adiciona os seguintes elementos ao modelo. Esses elementos são exibidos na janela de detalhes do método BDC.  
+    Visual Studio adiciona os seguintes elementos ao modelo. Esses elementos são exibidos na janela de detalhes do método BDC.  
   
-    -   Um método chamado **atualização**.  
+   - Um método chamado **atualização**.  
   
-    -   Um parâmetro de entrada para o método.  
+   - Um parâmetro de entrada para o método.  
   
-    -   Um descritor de tipo para o parâmetro. Por padrão, o Visual Studio usa descritor de tipo de entidade que você definiu para o método Finder (por exemplo: contato).  
+   - Um descritor de tipo para o parâmetro. Por padrão, o Visual Studio usa descritor de tipo de entidade que você definiu para o método Finder (por exemplo: contato).  
   
-    -   Uma instância de método para o método.  
+   - Uma instância de método para o método.  
   
      Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-    > [!NOTE]  
-    >  Se o identificador do tipo de entidade representa um campo em uma tabela de banco de dados que é gerado automaticamente, defina a **campo do pré-atualizador** propriedade **verdadeiro**.  
+   > [!NOTE]  
+   >  Se o identificador do tipo de entidade representa um campo em uma tabela de banco de dados que é gerado automaticamente, defina a **campo do pré-atualizador** propriedade **verdadeiro**.  
   
-4.  Na **Gerenciador de soluções**, abra o menu de atalho do serviço arquivo de código que foi gerado para a entidade e, em seguida, escolha **Exibir código**.  
+4. Na **Gerenciador de soluções**, abra o menu de atalho do serviço arquivo de código que foi gerado para a entidade e, em seguida, escolha **Exibir código**.  
   
-     O arquivo de código do serviço de entidade é aberto na **Editor de códigos**. Para obter mais informações sobre esse arquivo, consulte [criar um modelo de conectividade de dados de negócios](../sharepoint/creating-a-business-data-connectivity-model.md).  
+    O arquivo de código do serviço de entidade é aberto na **Editor de códigos**. Para obter mais informações sobre esse arquivo, consulte [criar um modelo de conectividade de dados de negócios](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
-5.  Adicione código para o método de atualização para atualizar dados. O exemplo a seguir atualiza as informações de um contato do banco de dados de exemplo AdventureWorks para SQL Server.  
+5. Adicione código para o método de atualização para atualizar dados. O exemplo a seguir atualiza as informações de um contato do banco de dados de exemplo AdventureWorks para SQL Server.  
   
-    > [!NOTE]  
-    >  Substitua o valor da `ServerName` campo com o nome do seu servidor.  
+   > [!NOTE]  
+   >  Substitua o valor da `ServerName` campo com o nome do seu servidor.  
   
-     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
-     [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]  
+    [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
+    [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]  
   
 ## <a name="see-also"></a>Consulte também
  [Criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md)   

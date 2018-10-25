@@ -18,12 +18,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f64f5510974af133100a355656bf3689d928869
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd910b0e0295ca12807b96af189032ffec766429
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261580"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949819"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Caixa de diálogo Configurações de Compilador Avançadas (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ Use a caixa de diálogo **Configurações Avançadas do Compilador** do **Design
   
 ### <a name="to-access-this-dialog-box"></a>Para acessar essa caixa de diálogo  
   
-1.  No **Gerenciador de Soluções**, escolha um nó do projeto (não o nó **Solução**).  
+1. No **Gerenciador de Soluções**, escolha um nó do projeto (não o nó **Solução**).  
   
-2.  No menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Compilar**.  
+2. No menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Compilar**.  
   
-3.  Na [Página Compilar, Designer de Projeto (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), selecione a **Configuração** e a **Plataforma**. Nas configurações de build simplificadas, as listas **Configuração** e **Plataforma** não são exibidas. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+3. Na [Página Compilar, Designer de Projeto (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), selecione a **Configuração** e a **Plataforma**. Nas configurações de build simplificadas, as listas **Configuração** e **Plataforma** não são exibidas. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
   
-4.  Clique em **Opções Avançadas de Compilação**.  
+4. Clique em **Opções Avançadas de Compilação**.  
   
- [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
   
 ## <a name="optimizations"></a>Otimizações  
  As opções a seguir especificam otimizações que podem, em alguns casos, diminuir um arquivo de programa, fazer um programa executar mais rapidamente ou acelerar o processo de build.  

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdb56a12f2f9fb6838579165bbe374e4dfbdca47
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 342cb6c1f014c94bd86363415177ec747b0dc1b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542423"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943135"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>O que há de novo no depurador no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -35,8 +35,8 @@ O depurador inclui esses novos recursos:
 
     A coleção de instantâneos está disponível para os seguintes aplicativos Web em execução no Serviço de Aplicativo do Azure:
 
-    * Aplicativos ASP.NET em execução no .NET Framework 4.6.1 ou posterior.
-    * Aplicativos ASP.NET Core em execução no .NET Core 2.0 ou posterior no Windows.
+  * Aplicativos ASP.NET em execução no .NET Framework 4.6.1 ou posterior.
+  * Aplicativos ASP.NET Core em execução no .NET Core 2.0 ou posterior no Windows.
 
     Para obter mais informações, consulte [depurar aplicativos ASP.NET dinâmicos usando o depurador de instantâneo](../debugger/debug-live-azure-applications.md).
 

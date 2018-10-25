@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 37fe948838a5263eca2107e2e868e2dc49cdf2a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd360e07ca555bb7cb2c482970ab9a202f7bb630
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229366"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932542"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Instruções passo a passo: gerenciando código usando modelos de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,15 +100,15 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-add-an-xml-file"></a>Para adicionar um arquivo XML  
   
-1.  Na **Gerenciador de soluções**, clique com botão direito no projeto, clique em **Add** e, em seguida, clique em **Novo Item**.  
+1. Na **Gerenciador de soluções**, clique com botão direito no projeto, clique em **Add** e, em seguida, clique em **Novo Item**.  
   
-2.  No **Adicionar Novo Item** caixa de diálogo, selecione **arquivo XML** do **modelos** painel.  
+2. No **Adicionar Novo Item** caixa de diálogo, selecione **arquivo XML** do **modelos** painel.  
   
-3.  Adicione seu conteúdo de exemplo para o arquivo.  
+3. Adicione seu conteúdo de exemplo para o arquivo.  
   
-4.  Para este passo a passo, nomeie o arquivo `exampleXml.xml`. Defina o conteúdo do arquivo a ser o XML mostrado na seção anterior.  
+4. Para este passo a passo, nomeie o arquivo `exampleXml.xml`. Defina o conteúdo do arquivo a ser o XML mostrado na seção anterior.  
   
- .  
+   .  
   
 ### <a name="add-a-test-code-file"></a>Adicionar um arquivo de código de teste  
  Adicione um arquivo c# ao seu projeto e escrever em um exemplo do código que você deseja ser capaz de gravar. Por exemplo:  
@@ -140,33 +140,33 @@ namespace MyProject
   
 ##### <a name="to-add-a-text-template-file-to-your-project"></a>Para adicionar um arquivo de modelo de texto ao seu projeto  
   
-1.  Na **Gerenciador de soluções**, clique com botão direito no projeto, clique em **Add**e, em seguida, clique em **Novo Item**.  
+1. Na **Gerenciador de soluções**, clique com botão direito no projeto, clique em **Add**e, em seguida, clique em **Novo Item**.  
   
-2.  No **Adicionar Novo Item** caixa de diálogo, selecione **modelo de texto** do **modelos** painel.  
+2. No **Adicionar Novo Item** caixa de diálogo, selecione **modelo de texto** do **modelos** painel.  
   
-    > [!NOTE]
-    >  Certifique-se de que você adicione um modelo de texto e não um pré-processado modelo de texto.  
+   > [!NOTE]
+   >  Certifique-se de que você adicione um modelo de texto e não um pré-processado modelo de texto.  
   
-3.  No arquivo, na diretiva do modelo, altere o `hostspecific` atributo `true`.  
+3. No arquivo, na diretiva do modelo, altere o `hostspecific` atributo `true`.  
   
-     Essa alteração permitirá que o código de modelo acessar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] serviços.  
+    Essa alteração permitirá que o código de modelo acessar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] serviços.  
   
-4.  Na diretiva de saída, altere o atributo de extensão para ". cs", para que o modelo gera um arquivo c#. Em um projeto do Visual Basic, você alteraria-lo para "vb".  
+4. Na diretiva de saída, altere o atributo de extensão para ". cs", para que o modelo gera um arquivo c#. Em um projeto do Visual Basic, você alteraria-lo para "vb".  
   
-5.  Salve o arquivo. Nesse estágio, o arquivo de modelo de texto deve conter estas linhas:  
+5. Salve o arquivo. Nesse estágio, o arquivo de modelo de texto deve conter estas linhas:  
   
-    ```  
-    <#@ template debug="false" hostspecific="true" language="C#" #>  
-    <#@ output extension=".cs" #>  
-    ```  
+   ```  
+   <#@ template debug="false" hostspecific="true" language="C#" #>  
+   <#@ output extension=".cs" #>  
+   ```  
   
- .  
+   .  
   
- Observe que um arquivo. cs aparece no Gerenciador de soluções como uma subsidiária do arquivo de modelo. Você pode vê-lo clicando [+] ao lado do nome do arquivo de modelo. Esse arquivo é gerado a partir do arquivo de modelo sempre que você salve ou mova o foco para fora do arquivo de modelo. O arquivo gerado será compilado como parte do seu projeto.  
+   Observe que um arquivo. cs aparece no Gerenciador de soluções como uma subsidiária do arquivo de modelo. Você pode vê-lo clicando [+] ao lado do nome do arquivo de modelo. Esse arquivo é gerado a partir do arquivo de modelo sempre que você salve ou mova o foco para fora do arquivo de modelo. O arquivo gerado será compilado como parte do seu projeto.  
   
- Para sua conveniência, enquanto você desenvolve o arquivo de modelo, organize as janelas do arquivo de modelo e o arquivo gerado, de modo que você pode vê-los próximos uns dos outros. Isso permite que você veja imediatamente a saída do seu modelo. Você também observará que, quando o seu modelo gera o código c# inválido, erros serão exibidos na janela de mensagem de erro.  
+   Para sua conveniência, enquanto você desenvolve o arquivo de modelo, organize as janelas do arquivo de modelo e o arquivo gerado, de modo que você pode vê-los próximos uns dos outros. Isso permite que você veja imediatamente a saída do seu modelo. Você também observará que, quando o seu modelo gera o código c# inválido, erros serão exibidos na janela de mensagem de erro.  
   
- Todas as edições que você execute diretamente no arquivo gerado serão perdidas sempre que você salvar o arquivo de modelo. Você deve, portanto, evite editar o arquivo gerado ou editá-lo somente para testes curtos. Às vezes é útil tentar um curto fragmento de código no arquivo gerado, em que o IntelliSense está em operação, e, em seguida, copie-o para o arquivo de modelo.  
+   Todas as edições que você execute diretamente no arquivo gerado serão perdidas sempre que você salvar o arquivo de modelo. Você deve, portanto, evite editar o arquivo gerado ou editá-lo somente para testes curtos. Às vezes é útil tentar um curto fragmento de código no arquivo gerado, em que o IntelliSense está em operação, e, em seguida, copie-o para o arquivo de modelo.  
   
 ## <a name="developing-the-text-template"></a>Desenvolvendo o modelo de texto  
  Seguindo o melhor conselho sobre o desenvolvimento ágil, desenvolveremos o modelo no passo a passo, limpar alguns dos erros a cada incremento, até que o código de teste compila e executa corretamente.  
@@ -408,17 +408,17 @@ namespace MyProject
 ## <a name="conclusion"></a>Conclusão  
  Este passo a passo demonstra várias técnicas e os benefícios da geração de código:  
   
--   *Geração de código* é a criação de parte do código-fonte do aplicativo de um *modelo*. O modelo contém as informações em um formato adequado para o domínio do aplicativo e pode mudar ao longo do tempo de vida do aplicativo.  
+- *Geração de código* é a criação de parte do código-fonte do aplicativo de um *modelo*. O modelo contém as informações em um formato adequado para o domínio do aplicativo e pode mudar ao longo do tempo de vida do aplicativo.  
   
--   Tipagem forte é uma vantagem da geração de código. Enquanto o modelo representa as informações em um formato mais adequado para o usuário, o código gerado permite que outras partes do aplicativo para lidar com as informações usando um conjunto de tipos.  
+- Tipagem forte é uma vantagem da geração de código. Enquanto o modelo representa as informações em um formato mais adequado para o usuário, o código gerado permite que outras partes do aplicativo para lidar com as informações usando um conjunto de tipos.  
   
--   IntelliSense e o compilador ajudam você a criar código que adota o esquema do modelo, ao escrever novo código e quando o esquema é atualizado.  
+- IntelliSense e o compilador ajudam você a criar código que adota o esquema do modelo, ao escrever novo código e quando o esquema é atualizado.  
   
--   A adição de um único pouco complicadas, arquivo de modelo a um projeto pode fornecer esses benefícios.  
+- A adição de um único pouco complicadas, arquivo de modelo a um projeto pode fornecer esses benefícios.  
   
--   Um modelo de texto pode ser desenvolvido e testado rapidamente e de forma incremental.  
+- Um modelo de texto pode ser desenvolvido e testado rapidamente e de forma incremental.  
   
- Neste passo a passo, o código do programa, na verdade, é gerado de uma instância do modelo, um exemplo representativo dos arquivos XML que o aplicativo processará. Em uma abordagem mais formal, o esquema XML seria a entrada para o modelo, na forma de um arquivo. xsd ou uma definição de linguagem específica do domínio. Essa abordagem tornaria mais fácil para o modelo determinar características como a multiplicidade de uma relação.  
+  Neste passo a passo, o código do programa, na verdade, é gerado de uma instância do modelo, um exemplo representativo dos arquivos XML que o aplicativo processará. Em uma abordagem mais formal, o esquema XML seria a entrada para o modelo, na forma de um arquivo. xsd ou uma definição de linguagem específica do domínio. Essa abordagem tornaria mais fácil para o modelo determinar características como a multiplicidade de uma relação.  
   
 ## <a name="troubleshooting-the-text-template"></a>O modelo de texto de solução de problemas  
  Se você já viu os erros de compilação ou transformação de modelo na **lista de erros**, ou se o arquivo de saída não foi gerado corretamente, você pode solucionar o modelo de texto com as técnicas descritas [gerando Arquivos com o utilitário TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).  

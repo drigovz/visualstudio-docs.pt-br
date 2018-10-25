@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 29c7ee223bbfbeb2dd7b262c33d6c00ea3c41411
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a3497d46ed4c9c5a04d8f40cc3056ea282593884
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245538"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934230"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Solucionando problemas do Visualizador da Ajuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +50,9 @@ Este tópico aborda problemas que podem ocorrer com o Visualizador da Ajuda.
 ## <a name="additional-resources"></a>Recursos adicionais  
  Você pode obter mais informações e fornecer comentários sobre o Visualizador da Ajuda usando os seguintes recursos:  
   
--   Para fornecer comentários, consulte [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) no site da Microsoft ou enviar um email para [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).  
+- Para fornecer comentários, consulte [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) no site da Microsoft ou enviar um email para [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).  
   
--   Para obter mais informações, consulte o fórum [Documentação do Desenvolvedor e Sistema de Ajuda](http://go.microsoft.com/fwlink/?LinkId=232741) e o blog [The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743).  
+- Para obter mais informações, consulte o fórum [Documentação do Desenvolvedor e Sistema de Ajuda](http://go.microsoft.com/fwlink/?LinkId=232741) e o blog [The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743).  
   
 ## <a name="see-also"></a>Consulte também  
  [Guia do administrador do Help Viewer 2.1](http://go.microsoft.com/fwlink/?LinkId=243985)

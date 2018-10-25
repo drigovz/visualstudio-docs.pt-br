@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 66239362e454d5ab333214c444aeee3fa54b1b8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936844"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Começar a depurar aplicativos multi-threaded no Visual Studio
 Visual Studio fornece várias ferramentas e os elementos de interface do usuário para ajudá-lo a depurar aplicativos multi-threaded. Este tutorial mostra como usar marcadores de thread, o **pilhas paralelas** janela, o **inspeção paralela** janela pontos de interrupção condicionais e pontos de interrupção de filtro. Este tutorial leva apenas alguns minutos, mas concluí-la você se familiarizará com os recursos para depurar aplicativos multithread.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo")  |    [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) sobre depuração com multithread que mostra etapas semelhantes. |
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) sobre depuração com multithread que mostra etapas semelhantes. |
 
 Outros tópicos fornecem informações adicionais sobre como usar outras ferramentas de depuração multithread:
 
@@ -217,30 +217,30 @@ Para iniciar este tutorial, você precisará de um projeto de aplicativo multith
   
 #### <a name="to-start-debugging"></a>Para iniciar a depuração  
   
-1.  Clique na medianiz esquerda dos `Thread.Sleep` ou `this_thread::sleep_for` instrução para inserir um novo ponto de interrupção.  
+1. Clique na medianiz esquerda dos `Thread.Sleep` ou `this_thread::sleep_for` instrução para inserir um novo ponto de interrupção.  
   
-     Na medianiz no lado esquerdo do editor de código fonte, um círculo vermelho aparece. Isso indica que um ponto de interrupção agora está definido nesse local. 
+    Na medianiz no lado esquerdo do editor de código fonte, um círculo vermelho aparece. Isso indica que um ponto de interrupção agora está definido nesse local. 
   
-2.  Sobre o **Debug** menu, clique em **iniciar depuração** (**F5**).  
+2. Sobre o **Debug** menu, clique em **iniciar depuração** (**F5**).  
   
-     Visual Studio compila a solução, o aplicativo começa a ser executado com o depurador anexado e, em seguida, o aplicativo for interrompida no ponto de interrupção.  
+    Visual Studio compila a solução, o aplicativo começa a ser executado com o depurador anexado e, em seguida, o aplicativo for interrompida no ponto de interrupção.  
   
-    > [!NOTE]
-    > Se você alternar o foco para a janela do console, clique na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] janela para retornar o foco para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+   > [!NOTE]
+   > Se você alternar o foco para a janela do console, clique na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] janela para retornar o foco para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-4.  No editor de código fonte, localize a linha que contém o ponto de interrupção:  
+3. No editor de código fonte, localize a linha que contém o ponto de interrupção:  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    this_thread::sleep_for(chrono::seconds(3)); 
-    ```
+   ```C++  
+   this_thread::sleep_for(chrono::seconds(3)); 
+   ```
 
-    ```VB
-    Thread.Sleep(3000)
-    ```    
+   ```VB
+   Thread.Sleep(3000)
+   ```    
   
 #### <a name="ShowThreadsInSource"></a>Para descobrir o marcador de thread  
 

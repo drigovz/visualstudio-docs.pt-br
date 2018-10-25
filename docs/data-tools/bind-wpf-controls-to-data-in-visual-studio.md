@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87991e778a045aa86bca91ff737d528a55b0079f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 1dadf656ad287512a956bc510bbbcc043d21ab07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281229"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942901"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associar controles WPF a dados no Visual Studio
 
@@ -36,7 +36,7 @@ Para obter informações gerais sobre como criar controles associados a dados no
 A tabela a seguir lista as tarefas que podem ser realizadas arrastando itens dos **fontes de dados** janela para o [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)].
 
 |Tarefa|Mais informações|
-|----------|----------------------|
+|----------| - |
 |Crie novos controles de associação de dados.<br /><br /> Associe controles existentes a dados.|[Associar controles do WPF a um conjunto de dados](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |Crie controles que exibam dados relacionados em uma relação pai-filho: quando o usuário seleciona um registro de dados pai em um controle, outro controle exibe dados filho relacionados ao registro selecionado.|[Exibir dados relacionados em aplicativos WPF](../data-tools/display-related-data-in-wpf-applications.md)|
 |Criar uma *tabela de pesquisa* que exibe informações de uma tabela com base no valor de um campo de chave estrangeira em outra tabela.|[Criar tabelas de pesquisa em aplicativos do WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)|
@@ -52,12 +52,13 @@ Quando você arrasta um item dos **fontes de dados** janela para o [!INCLUDE[wpf
 
 A seguinte tabela lista os [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] e o código que o Visual Studio gera para cada tipo de fonte de dados a **fontes de dados** janela.
 
-|Fonte de dados|Gerar XAML que associa um controle à fonte de dados|Gerar código que preenche a fonte de dados com dados|
-|-----------------|-----------------------------------------------------------|--------------------------------------------------------|
-|Conjunto de dados|Sim|Sim|
-|[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]|Sim|Sim|
-|Serviço|Sim|Não|
-|Objeto|Sim|Não|
+
+| Fonte de dados | Gerar XAML que associa um controle à fonte de dados | Gerar código que preenche a fonte de dados com dados |
+| - | - | - |
+| Conjunto de dados | Sim | Sim |
+| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | Sim | Sim |
+| Serviço | Sim | Não |
+| Objeto | Sim | Não |
 
 ### <a name="datasets"></a>Conjuntos de dados
 
@@ -69,21 +70,21 @@ Quando você arrasta uma tabela ou coluna a partir de **fontes de dados** janela
 
 O Visual Studio também faz as seguintes alterações no arquivo code-behind:
 
--   Cria um manipulador de eventos <xref:System.Windows.FrameworkElement.Loaded> para o elemento [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] que contém o controle. O manipulador de eventos preenche a tabela com dados, recupera o <xref:System.Windows.Data.CollectionViewSource> dos recursos do contêiner e, em seguida, torna o primeiro item dados o item atual. Se um <xref:System.Windows.FrameworkElement.Loaded> já existe um manipulador de eventos, o Visual Studio adiciona este código ao manipulador de eventos existente.
+- Cria um manipulador de eventos <xref:System.Windows.FrameworkElement.Loaded> para o elemento [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] que contém o controle. O manipulador de eventos preenche a tabela com dados, recupera o <xref:System.Windows.Data.CollectionViewSource> dos recursos do contêiner e, em seguida, torna o primeiro item dados o item atual. Se um <xref:System.Windows.FrameworkElement.Loaded> já existe um manipulador de eventos, o Visual Studio adiciona este código ao manipulador de eventos existente.
 
 ### <a name="entity-data-models"></a>Modelos de dados de entidade
 
 Quando você arrasta uma entidade ou uma propriedade de entidade a partir de **fontes de dados** janela para o designer, o Visual Studio gera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] que faz o seguinte:
 
--   Adiciona um novo <xref:System.Windows.Data.CollectionViewSource> aos recursos do contêiner arrastados para o item. O <xref:System.Windows.Data.CollectionViewSource> é um objeto que pode ser usado para navegar e exibir os dados na entidade.
+- Adiciona um novo <xref:System.Windows.Data.CollectionViewSource> aos recursos do contêiner arrastados para o item. O <xref:System.Windows.Data.CollectionViewSource> é um objeto que pode ser usado para navegar e exibir os dados na entidade.
 
--   Cria uma associação de dados para um controle. Se você arrastar o item para um controle existente no designer, o [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] associará o controle ao item. Se você arrastar o item para um contêiner, o [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] cria o controle que foi selecionado para o item arrastado e associará o controle ao item. O controle é criado dentro de um novo <xref:System.Windows.Controls.Grid>.
+- Cria uma associação de dados para um controle. Se você arrastar o item para um controle existente no designer, o [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] associará o controle ao item. Se você arrastar o item para um contêiner, o [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] cria o controle que foi selecionado para o item arrastado e associará o controle ao item. O controle é criado dentro de um novo <xref:System.Windows.Controls.Grid>.
 
 O Visual Studio também faz as seguintes alterações no arquivo code-behind:
 
--   Adiciona um novo método que retorna uma consulta para a entidade arrastada para o designer (ou a entidade que contém a propriedade que você arrastou para o designer). O novo método tem o nome `Get<EntityName>Query`, onde `\<EntityName>` é o nome da entidade.
+- Adiciona um novo método que retorna uma consulta para a entidade arrastada para o designer (ou a entidade que contém a propriedade que você arrastou para o designer). O novo método tem o nome `Get<EntityName>Query`, onde `\<EntityName>` é o nome da entidade.
 
--   Cria um manipulador de eventos <xref:System.Windows.FrameworkElement.Loaded> para o elemento [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] que contém o controle. Chamadas do manipulador de eventos do `Get<EntityName>Query` método para preencher a entidade com dados, recupera o <xref:System.Windows.Data.CollectionViewSource> do contêiner recursos e, em seguida, torna o primeiro item dados o item atual. Se um <xref:System.Windows.FrameworkElement.Loaded> já existe um manipulador de eventos, o Visual Studio adiciona este código ao manipulador de eventos existente.
+- Cria um manipulador de eventos <xref:System.Windows.FrameworkElement.Loaded> para o elemento [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] que contém o controle. Chamadas do manipulador de eventos do `Get<EntityName>Query` método para preencher a entidade com dados, recupera o <xref:System.Windows.Data.CollectionViewSource> do contêiner recursos e, em seguida, torna o primeiro item dados o item atual. Se um <xref:System.Windows.FrameworkElement.Loaded> já existe um manipulador de eventos, o Visual Studio adiciona este código ao manipulador de eventos existente.
 
 ### <a name="services"></a>Serviços
 
@@ -91,9 +92,9 @@ Quando você arrasta um objeto de serviço ou uma propriedade do **fontes de dad
 
 O Visual Studio gera XAML, que faz o seguinte:
 
--   Adiciona um novo <xref:System.Windows.Data.CollectionViewSource> aos recursos do contêiner arrastados para o item. O <xref:System.Windows.Data.CollectionViewSource> é um objeto que pode ser usado para navegar e exibir os dados no objeto retornado pelo serviço.
+- Adiciona um novo <xref:System.Windows.Data.CollectionViewSource> aos recursos do contêiner arrastados para o item. O <xref:System.Windows.Data.CollectionViewSource> é um objeto que pode ser usado para navegar e exibir os dados no objeto retornado pelo serviço.
 
--   Cria uma associação de dados para um controle. Se você arrastar o item para um controle existente no designer, o [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] associará o controle ao item. Se você arrastar o item para um contêiner, o [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] cria o controle que foi selecionado para o item arrastado e associará o controle ao item. O controle é criado dentro de um novo <xref:System.Windows.Controls.Grid>.
+- Cria uma associação de dados para um controle. Se você arrastar o item para um controle existente no designer, o [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] associará o controle ao item. Se você arrastar o item para um contêiner, o [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] cria o controle que foi selecionado para o item arrastado e associará o controle ao item. O controle é criado dentro de um novo <xref:System.Windows.Controls.Grid>.
 
 ### <a name="objects"></a>Objetos
 

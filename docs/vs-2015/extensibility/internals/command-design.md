@@ -16,12 +16,12 @@ ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d46bbe3c9898fae2974b482e1ead607ea486fef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eacde73ded992eb72396cdb5f84dc01b145cf874
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252454"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949260"
 ---
 # <a name="command-design"></a>Design de comando
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,15 +48,15 @@ Quando você adiciona um comando a um VSPackage, você deve especificar onde ele
 ### <a name="command-organization"></a>Organização de comando  
  O ambiente posiciona comandos por grupo, prioridade e menu.  
   
--   Grupos são coleções lógicas de comandos relacionados, por exemplo, o **Recortar**, **cópia**, e **colar** grupo de comandos. Grupos são os comandos que aparecem nos menus.  
+- Grupos são coleções lógicas de comandos relacionados, por exemplo, o **Recortar**, **cópia**, e **colar** grupo de comandos. Grupos são os comandos que aparecem nos menus.  
   
--   Prioridade determina a ordem na qual os comandos individuais em um grupo aparecem no menu.  
+- Prioridade determina a ordem na qual os comandos individuais em um grupo aparecem no menu.  
   
--   Menus atuam como contêineres para grupos.  
+- Menus atuam como contêineres para grupos.  
   
- O ambiente predefine alguns comandos, grupos e menus. Para obter mais informações, consulte [comando padrão, o grupo e o posicionamento da barra de ferramentas](../../extensibility/internals/default-command-group-and-toolbar-placement.md).  
+  O ambiente predefine alguns comandos, grupos e menus. Para obter mais informações, consulte [comando padrão, o grupo e o posicionamento da barra de ferramentas](../../extensibility/internals/default-command-group-and-toolbar-placement.md).  
   
- Um comando pode ser atribuído a um grupo primário. O grupo primário controla a posição do comando na estrutura do menu principal e além de **personalizar** caixa de diálogo. Um comando pode aparecer em vários grupos; Por exemplo, um comando pode ser, no menu principal, um menu de atalho e uma barra de ferramentas. Para obter mais informações, consulte [como os VSPackages adicionar elementos Interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
+  Um comando pode ser atribuído a um grupo primário. O grupo primário controla a posição do comando na estrutura do menu principal e além de **personalizar** caixa de diálogo. Um comando pode aparecer em vários grupos; Por exemplo, um comando pode ser, no menu principal, um menu de atalho e uma barra de ferramentas. Para obter mais informações, consulte [como os VSPackages adicionar elementos Interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
   
 ### <a name="command-routing"></a>Roteamento de comando  
  O processo de invocação e roteamento de comandos para VSPackages difere do processo de chamada de métodos em instâncias de objeto.  

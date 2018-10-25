@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 1dffa349aa94c5221e359633c7a8b4ef2e4fdde5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3fc044d7b59a1d9bfa48139c479625e47440b5e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250608"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928679"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solucionando problemas e problemas conhecidos (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,21 +64,21 @@ Nesta seção, você encontrará soluções para problemas comuns das Ferramenta
   
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Para relatar que o Visual Studio congela durante a depuração com as Ferramentas do Visual Studio para Unity  
   
-1.  Abra uma nova instância do Visual Studio.  
+1. Abra uma nova instância do Visual Studio.  
   
-2.  Abra o diálogo Anexar ao Processo. Na nova instância do Visual Studio, escolha **Depurar** e **Anexar ao Processo** no menu principal.  
+2. Abra o diálogo Anexar ao Processo. Na nova instância do Visual Studio, escolha **Depurar** e **Anexar ao Processo** no menu principal.  
   
-3.  Anexe o depurador à instância congelada do Visual Studio. No diálogo **Anexar ao Processo**, selecione a instância congelada do Visual Studio na tabela **Processos Disponíveis** e, em seguida, escolha o botão **Anexar**.  
+3. Anexe o depurador à instância congelada do Visual Studio. No diálogo **Anexar ao Processo**, selecione a instância congelada do Visual Studio na tabela **Processos Disponíveis** e, em seguida, escolha o botão **Anexar**.  
   
-4.  Pause o Depurador. Na nova instância do Visual Studio, escolha **Depurar**, **Interromper Tudo** no menu principal ou pressione **Ctrl+Alt+Break**.  
+4. Pause o Depurador. Na nova instância do Visual Studio, escolha **Depurar**, **Interromper Tudo** no menu principal ou pressione **Ctrl+Alt+Break**.  
   
-5.  Crie um despejo de thread. Na janela Comando, digite o comando a seguir e pressione **Enter**.  
+5. Crie um despejo de thread. Na janela Comando, digite o comando a seguir e pressione **Enter**.  
   
-    ```powershell  
-    Debug.ListCallStack /AllThreads /ShowExternalCode  
-    ```  
+   ```powershell  
+   Debug.ListCallStack /AllThreads /ShowExternalCode  
+   ```  
   
-     Talvez seja necessário tornar a janela **Comando** visível primeiro. No Visual Studio, escolha **Exibir**, **Outras Janelas**, **janela Comando** no menu principal.  
+    Talvez seja necessário tornar a janela **Comando** visível primeiro. No Visual Studio, escolha **Exibir**, **Outras Janelas**, **janela Comando** no menu principal.  
   
-6.  Por fim, envie o despejo de thread para [vstusp@microsoft.com](mailto:vstusp@microsoft.com), junto com uma descrição do que você estava fazendo quando o Visual Studio congelou.
+6. Por fim, envie o despejo de thread para [vstusp@microsoft.com](mailto:vstusp@microsoft.com), junto com uma descrição do que você estava fazendo quando o Visual Studio congelou.
 

@@ -29,12 +29,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 76abbde711e73598eb8c7bcfde052335222d0822
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa793fa91667dd360c301442ccb0831d11122473
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175598"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931825"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Caixa de diálogo Navegador da Web, Ambiente, Opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,14 +57,14 @@ Define opções para o navegador da Web interno e o Internet Explorer. Para aces
  Exibir fonte em  
  Define o editor usado para abrir uma página da Web ao escolher **Exibir Fonte** na página do navegador da Web interno.  
   
--   **Editor de origem** Selecione para exibir a fonte em [Escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md).  
+- **Editor de origem** Selecione para exibir a fonte em [Escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md).  
   
--   **Editor de HTML** Selecione para exibir a fonte no [Designer de HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Use essa seleção para editar a página da Web em uma das duas exibições: modo de exibição de Design ou a exibição de Fonte padrão baseada em texto.  
+- **Editor de HTML** Selecione para exibir a fonte no [Designer de HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Use essa seleção para editar a página da Web em uma das duas exibições: modo de exibição de Design ou a exibição de Fonte padrão baseada em texto.  
   
--   **Editor externo** Selecione para exibir a fonte em outro editor. Especifique o caminho de um editor escolhido, por exemplo, Notepad.exe.  
+- **Editor externo** Selecione para exibir a fonte em outro editor. Especifique o caminho de um editor escolhido, por exemplo, Notepad.exe.  
   
- Opções do Internet Explorer  
- Clique para alterar as opções do Internet Explorer na caixa de diálogo **Propriedades da Internet**. As alterações feitas nessa caixa de diálogo afetam o navegador da Web interno e as instâncias do Internet Explorer iniciadas fora do IDE do Visual Studio (por exemplo, no menu Iniciar).  
+  Opções do Internet Explorer  
+  Clique para alterar as opções do Internet Explorer na caixa de diálogo **Propriedades da Internet**. As alterações feitas nessa caixa de diálogo afetam o navegador da Web interno e as instâncias do Internet Explorer iniciadas fora do IDE do Visual Studio (por exemplo, no menu Iniciar).  
   
 > [!NOTE]
 >  Use a caixa de diálogo Procurar Com para substituir o navegador da Web interno do Visual Studio, que é uma versão do Internet Explorer, usando outro navegador da Web externo.  

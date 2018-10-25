@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99c8a008cf48d596569e61534d7bfbf7cb9e45c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eee52a4f77c7d3a07b237f01877c5cba30e53900
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256562"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950843"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Como criar modelos multiprojeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,55 +32,55 @@ Os modelos de vários projetos atuam como contêineres para dois ou mais projeto
   
  Um modelo multiprojeto deve incluir os itens a seguir, compactados em um arquivo .zip:  
   
--   Um arquivo .vstemplate raiz para todo o modelo multiprojeto. Esse arquivo .vstemplate raiz contém os metadados que a caixa de diálogo **Novo Projeto** exibe e especifica onde localizar os arquivos .vstemplate para os projetos nesse modelo. Esse arquivo deve estar localizado na raiz do arquivo .zip.  
+- Um arquivo .vstemplate raiz para todo o modelo multiprojeto. Esse arquivo .vstemplate raiz contém os metadados que a caixa de diálogo **Novo Projeto** exibe e especifica onde localizar os arquivos .vstemplate para os projetos nesse modelo. Esse arquivo deve estar localizado na raiz do arquivo .zip.  
   
--   Uma ou mais pastas que contêm os arquivos necessários para um modelo de projeto completo. Isso inclui todos os arquivos de código do projeto e um arquivo .vstemplate do projeto.  
+- Uma ou mais pastas que contêm os arquivos necessários para um modelo de projeto completo. Isso inclui todos os arquivos de código do projeto e um arquivo .vstemplate do projeto.  
   
- Por exemplo, um arquivo .zip de modelo multiprojeto com dois projetos poderia ter os seguintes arquivos e diretórios:  
+  Por exemplo, um arquivo .zip de modelo multiprojeto com dois projetos poderia ter os seguintes arquivos e diretórios:  
   
- MultiProjectTemplate.vstemplate  
+  MultiProjectTemplate.vstemplate  
   
- \Project1\Project1.vstemplate  
+  \Project1\Project1.vstemplate  
   
- \Project1\Project1.vbproj  
+  \Project1\Project1.vbproj  
   
- \Project1\Class.vb  
+  \Project1\Class.vb  
   
- \Project2\Project2.vstemplate  
+  \Project2\Project2.vstemplate  
   
- \Project2\Project2.vbproj  
+  \Project2\Project2.vbproj  
   
- \Project2\Class.vb  
+  \Project2\Class.vb  
   
- O arquivo .vstemplate raiz para um modelo multiprojeto difere de um modelo de projeto único das seguintes maneiras:  
+  O arquivo .vstemplate raiz para um modelo multiprojeto difere de um modelo de projeto único das seguintes maneiras:  
   
--   O atributo `Type` do elemento `VSTemplate` contém o valor `ProjectGroup`. Por exemplo:  
+- O atributo `Type` do elemento `VSTemplate` contém o valor `ProjectGroup`. Por exemplo:  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="ProjectGroup"  
-        xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    ```  
+  ```  
+  <VSTemplate Version="2.0.0" Type="ProjectGroup"  
+      xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+  ```  
   
--   O elemento `TemplateContent` contém um elemento `ProjectCollection` que tem um ou mais elementos `ProjectTemplateLink` que definem os caminhos para os arquivos .vstemplate dos projetos incluídos. Por exemplo:  
+- O elemento `TemplateContent` contém um elemento `ProjectCollection` que tem um ou mais elementos `ProjectTemplateLink` que definem os caminhos para os arquivos .vstemplate dos projetos incluídos. Por exemplo:  
   
-    ```  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <ProjectTemplateLink>  
-                Project1\Project1.vstemplate  
-            </ProjectTemplateLink>  
-            <ProjectTemplateLink>  
-                Project2\Project2.vstemplate  
-            </ProjectTemplateLink>  
-        </ProjectCollection>  
-    </TemplateContent>  
-    ```  
+  ```  
+  <TemplateContent>  
+      <ProjectCollection>  
+          <ProjectTemplateLink>  
+              Project1\Project1.vstemplate  
+          </ProjectTemplateLink>  
+          <ProjectTemplateLink>  
+              Project2\Project2.vstemplate  
+          </ProjectTemplateLink>  
+      </ProjectCollection>  
+  </TemplateContent>  
+  ```  
   
- Modelos multiprojeto também se comportam de maneira diferente dos modelos normais. Modelos multiprojeto têm as seguintes características exclusivas:  
+  Modelos multiprojeto também se comportam de maneira diferente dos modelos normais. Modelos multiprojeto têm as seguintes características exclusivas:  
   
--   Projetos individuais em um modelo multiprojeto não podem ter nomes atribuídos pela caixa de diálogo **Novo Projeto**. Em vez disso, use o atributo `ProjectName` no elemento `ProjectTemplateLink` para especificar o nome de cada projeto. Para obter mais informações, consulte o primeiro exemplo na seção a seguir.  
+- Projetos individuais em um modelo multiprojeto não podem ter nomes atribuídos pela caixa de diálogo **Novo Projeto**. Em vez disso, use o atributo `ProjectName` no elemento `ProjectTemplateLink` para especificar o nome de cada projeto. Para obter mais informações, consulte o primeiro exemplo na seção a seguir.  
   
--   Modelos multiprojeto podem conter projetos escritos em diferentes linguagens, mas o próprio modelo inteiro só pode ser colocado em uma categoria usando o elemento `ProjectType`.  
+- Modelos multiprojeto podem conter projetos escritos em diferentes linguagens, mas o próprio modelo inteiro só pode ser colocado em uma categoria usando o elemento `ProjectType`.  
   
 ### <a name="to-create-a-multi-project-template"></a>Para criar um modelo multiprojeto  
   

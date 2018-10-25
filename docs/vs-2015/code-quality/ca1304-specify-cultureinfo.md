@@ -20,15 +20,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d53cdb1622fbb9750cddd2a79b1bbc7cd606ba20
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0078309f1c87e4bd1feb9a8c82d7c654185c13df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188327"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948758"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: especificar CultureInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |NomeDoTipo|SpecifyCultureInfo|
@@ -48,15 +49,15 @@ ms.locfileid: "49188327"
 ## <a name="rule-description"></a>Descrição da Regra
  Quando um <xref:System.Globalization.CultureInfo> ou <xref:System.IFormatProvider?displayProperty=fullName> objeto não for fornecido, o valor padrão fornecido pelo membro sobrecarregado pode não ter o efeito desejado em todas as localidades. Além disso, [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] membros escolhem a cultura padrão e a formatação com base em suposições que podem não estar corretas para seu código. Para garantir que o código funciona conforme o esperado para seus cenários, você deve fornecer informações específicas da cultura acordo com as diretrizes a seguir:
 
--   Se o valor será exibido ao usuário, use a cultura atual. Consulte <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.
+- Se o valor será exibido ao usuário, use a cultura atual. Consulte <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.
 
--   Se o valor será armazenado e acessado pelo software, ou seja, mantidos em um arquivo ou banco de dados, use a cultura invariável. Consulte <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.
+- Se o valor será armazenado e acessado pelo software, ou seja, mantidos em um arquivo ou banco de dados, use a cultura invariável. Consulte <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.
 
--   Se você não souber o destino do valor, ter o consumidor de dados ou provedor de especificar a cultura.
+- Se você não souber o destino do valor, ter o consumidor de dados ou provedor de especificar a cultura.
 
- Observe que <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> é usado apenas para recuperar os recursos localizados por meio de uma instância da <xref:System.Resources.ResourceManager?displayProperty=fullName> classe.
+  Observe que <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> é usado apenas para recuperar os recursos localizados por meio de uma instância da <xref:System.Resources.ResourceManager?displayProperty=fullName> classe.
 
- Mesmo se o comportamento padrão do membro sobrecarregado é apropriado para suas necessidades, é melhor chamar explicitamente a sobrecarga de específicas da cultura para que seu código seja autodocumentados e mais fácil manutenção.
+  Mesmo se o comportamento padrão do membro sobrecarregado é apropriado para suas necessidades, é melhor chamar explicitamente a sobrecarga de específicas da cultura para que seu código seja autodocumentados e mais fácil manutenção.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, use a sobrecarga que utiliza um <xref:System.Globalization.CultureInfo> ou <xref:System.IFormatProvider> e especifique o argumento de acordo com as diretrizes que foram listados anteriormente.

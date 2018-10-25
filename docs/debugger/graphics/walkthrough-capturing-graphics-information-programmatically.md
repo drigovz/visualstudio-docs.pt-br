@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50bf9d042cd89a8f53cf63208c485682d46e68f4
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 659e370d664b3db2c3624d73164b4489cc2680a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510420"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933281"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Instruções passo a passo: capturando informações de gráfico de forma programática
 É possível usar o Diagnóstico de Gráficos do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para capturar de forma programática informações gráficas de um aplicativo Direct3D.  
@@ -69,24 +69,24 @@ ms.locfileid: "39510420"
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Para obter a interface IDXGraphicsAnalysis  
   
--   Use o código a seguir para ligar a interface IDXGraphicsAnalysis à interface de depuração DXGI.  
+- Use o código a seguir para ligar a interface IDXGraphicsAnalysis à interface de depuração DXGI.  
   
-    ```cpp
-    IDXGraphicsAnalysis* pGraphicsAnalysis;  
-    HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
-    ```  
+  ```cpp
+  IDXGraphicsAnalysis* pGraphicsAnalysis;  
+  HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
+  ```  
   
-     Certifique-se de verificar a `HRESULT` retornado por [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) para garantir que você tenha uma interface válida antes de você usá-lo:  
+   Certifique-se de verificar a `HRESULT` retornado por [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) para garantir que você tenha uma interface válida antes de você usá-lo:  
   
-    ```cpp
-    if (FAILED(getAnalysis))  
-    {  
-        // Abort program or disable programmatic capture in your app.  
-    }  
-    ```  
+  ```cpp
+  if (FAILED(getAnalysis))  
+  {  
+      // Abort program or disable programmatic capture in your app.  
+  }  
+  ```  
   
-    > [!NOTE]
-    >  Se `DXGIGetDebugInterface1` retorna `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), verifique se o aplicativo está em execução no diagnóstico de gráficos (ALT+F5 no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
+  > [!NOTE]
+  >  Se `DXGIGetDebugInterface1` retorna `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), verifique se o aplicativo está em execução no diagnóstico de gráficos (ALT+F5 no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
   
 ### <a name="capturing-graphics-information"></a>Capturando informações de gráficos  
  Agora que você tem uma interface `IDXGraphicsAnalysis` válida, é possível usar `BeginCapture` e `EndCapture` para capturar informações gráficas.  
