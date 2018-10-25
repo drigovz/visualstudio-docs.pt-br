@@ -17,12 +17,12 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e375cc8d314163b277cc20685ae19f134236b0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 321cbd6482be088bd57c94224c41d4626a86a0f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240806"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892682"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Preenchimento de membro em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ O preenchimento de membro IntelliSense é uma dica de ferramenta que exibe uma l
 ## <a name="how-it-works"></a>Como ele funciona  
  A seguir estão as duas maneiras em que uma lista de membros é mostrada usando as classes MPF:  
   
--   Posicionando o cursor em um identificador ou após um caractere de preenchimento de membro e selecionando **Listar membros** da **IntelliSense** menu.  
+- Posicionando o cursor em um identificador ou após um caractere de preenchimento de membro e selecionando **Listar membros** da **IntelliSense** menu.  
   
--   O <xref:Microsoft.VisualStudio.Package.IScanner> scanner detecta um caractere de preenchimento de membro e define um gatilho de token de <xref:Microsoft.VisualStudio.Package.TokenTriggers> desse caractere.  
+- O <xref:Microsoft.VisualStudio.Package.IScanner> scanner detecta um caractere de preenchimento de membro e define um gatilho de token de <xref:Microsoft.VisualStudio.Package.TokenTriggers> desse caractere.  
   
- Um caractere de preenchimento de membro indica que um membro de uma classe, estrutura ou enumeração está a seguir. Por exemplo, em c# ou Visual Basic o caractere de preenchimento de membro é um `.`, enquanto em C++ o caractere é um `.` ou um `->`. O valor do gatilho é definido quando o caractere de seleção de membro é verificado.  
+  Um caractere de preenchimento de membro indica que um membro de uma classe, estrutura ou enumeração está a seguir. Por exemplo, em c# ou Visual Basic o caractere de preenchimento de membro é um `.`, enquanto em C++ o caractere é um `.` ou um `->`. O valor do gatilho é definido quando o caractere de seleção de membro é verificado.  
   
 ### <a name="the-intellisense-member-list-command"></a>O comando de lista de membro IntelliSense  
  O <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando inicia uma chamada para o <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método na <xref:Microsoft.VisualStudio.Package.Source> classe e o <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método, por sua vez, chama o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analisador de método com a razão de análise de <xref:Microsoft.VisualStudio.Package.ParseReason>.  

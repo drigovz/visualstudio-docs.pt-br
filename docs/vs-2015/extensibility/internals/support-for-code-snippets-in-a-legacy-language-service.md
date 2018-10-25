@@ -17,12 +17,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71098c0dda7c06f446658c4970d0b6cf2e35e55e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d1769b4064b92283e75c242a5abb897296c5156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198504"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847769"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Suporte para snippets de código em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -335,15 +335,15 @@ namespace TestLanguagePackage
   
  Quando o serviço de linguagem obtém o nome do atalho, ele chama o <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> método para obter o título do trecho de código de nome de arquivo e código. O serviço de linguagem, em seguida, chama o <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> método no <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe para inserir o trecho de código. Os seguintes métodos são chamados pelo Visual Studio na ordem fornecida no <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe durante o processo de inserir o trecho de código:  
   
-1.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-2.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+2. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-3.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+3. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
- Para obter mais informações sobre como obter uma lista de trechos de código instalado para seu serviço de linguagem, consulte [instruções passo a passo: obtendo uma lista de instalados trechos de código (implementação herdada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+   Para obter mais informações sobre como obter uma lista de trechos de código instalado para seu serviço de linguagem, consulte [instruções passo a passo: obtendo uma lista de instalados trechos de código (implementação herdada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
 ## <a name="implementing-the-expansionfunction-class"></a>Implementando a classe ExpansionFunction  
  Uma função de expansão é uma função nomeada que é inserida em um modelo de trecho de código e retorna um ou mais valores sejam colocados em um campo. Para dar suporte a funções de expansão em seu serviço de linguagem, você deve derivar uma classe a partir de <xref:Microsoft.VisualStudio.Package.ExpansionFunction> de classe e implementar o <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> método. Em seguida, você deve substituir o <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> método no <xref:Microsoft.VisualStudio.Package.LanguageService> classe para retornar uma nova instanciação da sua versão do <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe para cada função de expansão que você oferece suporte. Se você oferecer suporte a uma lista de valores possíveis de uma função de expansão, você também deve substituir a <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> método no <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe para retornar uma lista desses valores.  

@@ -20,12 +20,12 @@ ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b2486df22db8ebcbf8a9dd40a0bd374b6d8abfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2584c3cdd60c130183e09d2a809ff0ee1621856d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868840"
 ---
 # <a name="localizing-menu-commands"></a>Localizando comandos de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,48 +37,48 @@ Você pode fornecer o texto localizado para o menu e barra de ferramentas de com
 ## <a name="localizing-command-names"></a>Localizando os nomes de comando  
  Os VSPackages, comandos de menu e botões da barra de ferramentas são definidos no arquivo. VSCT.  
   
-1.  Na **Gerenciador de soluções**, altere o nome do arquivo. VSCT do *filename*VSCT para *filename*.en US.vsct.  
+1. Na **Gerenciador de soluções**, altere o nome do arquivo. VSCT do *filename*VSCT para *filename*.en US.vsct.  
   
-2.  Faça uma cópia do *filename*.en-US.vsct para cada idioma de localizado.  
+2. Faça uma cópia do *filename*.en-US.vsct para cada idioma de localizado.  
   
-     Nome de cada cópia *filename*. *Localidade*VSCT, onde *localidade* é um nome de cultura específica. Para obter uma lista de valores de nome de cultura, consulte [IDs de localidade atribuídas pela Microsoft](https://msdn.microsoft.com/library/windows/apps/jj657969.aspx).  
+    Nome de cada cópia *filename*. *Localidade*VSCT, onde *localidade* é um nome de cultura específica. Para obter uma lista de valores de nome de cultura, consulte [IDs de localidade atribuídas pela Microsoft](https://msdn.microsoft.com/library/windows/apps/jj657969.aspx).  
   
-     Eles *filename*. *Localidade*arquivos. VSCT conterá o texto de menu traduzido para o seu pacote.  
+    Eles *filename*. *Localidade*arquivos. VSCT conterá o texto de menu traduzido para o seu pacote.  
   
-3.  Abra cada *filename*. *Localidade*arquivo. VSCT para localizar o texto.  
+3. Abra cada *filename*. *Localidade*arquivo. VSCT para localizar o texto.  
   
-    1.  Modificar a [ButtonText](../extensibility/buttontext-element.md) elemento valores conforme apropriado para o idioma específico.  
+   1. Modificar a [ButtonText](../extensibility/buttontext-element.md) elemento valores conforme apropriado para o idioma específico.  
   
-    2.  Se você for fornecer ícones localizadas, modifique a [Bitmap](../extensibility/bitmap-element.md) valores para apontar para os arquivos de destino.  
+   2. Se você for fornecer ícones localizadas, modifique a [Bitmap](../extensibility/bitmap-element.md) valores para apontar para os arquivos de destino.  
   
-     O exemplo a seguir mostra o texto do botão em inglês e espanhol para abrir uma janela de ferramentas do Gerenciador de árvore da família.  
+      O exemplo a seguir mostra o texto do botão em inglês e espanhol para abrir uma janela de ferramentas do Gerenciador de árvore da família.  
   
-     [FamilyTree.en US.vsct]  
+      [FamilyTree.en US.vsct]  
   
-    ```xml  
-    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <Icon guid="guidImages" id="bmpPic2" />  
-      <Strings>  
-        <CommandName>cmdidFamilyTree</CommandName>  
-        <ButtonText>Family Tree Explorer</ButtonText>  
-      </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <Icon guid="guidImages" id="bmpPic2" />  
+     <Strings>  
+       <CommandName>cmdidFamilyTree</CommandName>  
+       <ButtonText>Family Tree Explorer</ButtonText>  
+     </Strings>  
+   </Button>  
+   ```  
   
-     [FamilyTree.es ES.vsct]  
+    [FamilyTree.es ES.vsct]  
   
-    ```xml  
-    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <Icon guid="guidImages" id="bmpPic2" />  
-      <Strings>  
-        <CommandName>cmdidFamilyTree</CommandName>  
-        <ButtonText>Explorar el arbol genealogico</ButtonText>  
-      </Strings>  
-    </Button>  
+   ```xml  
+   <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <Icon guid="guidImages" id="bmpPic2" />  
+     <Strings>  
+       <CommandName>cmdidFamilyTree</CommandName>  
+       <ButtonText>Explorar el arbol genealogico</ButtonText>  
+     </Strings>  
+   </Button>  
   
-    ```  
+   ```  
   
 ## <a name="localizing-other-text-resources"></a>Localização de outros recursos de texto  
  Recursos de texto diferentes nomes de comando são definidos em arquivos de recurso (. resx).  

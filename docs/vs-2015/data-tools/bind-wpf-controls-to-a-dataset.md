@@ -21,12 +21,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5b56371ed66287f4b8f8005b6e793f6311427100
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19189e63a3fb3fdfa3016cb2643cc34a193a2a52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289556"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892994"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associar controles do WPF a um conjunto de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,30 +36,30 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Criando um aplicativo WPF e um conjunto de dados gerado a partir de dados no banco de dados de exemplo AdventureWorksLT.  
+- Criando um aplicativo WPF e um conjunto de dados gerado a partir de dados no banco de dados de exemplo AdventureWorksLT.  
   
--   Criando um conjunto de controles ligados a dados ao arrastar uma tabela de dados das **fontes de dados** janela para uma janela no Designer do WPF.  
+- Criando um conjunto de controles ligados a dados ao arrastar uma tabela de dados das **fontes de dados** janela para uma janela no Designer do WPF.  
   
--   Criando botões que navegam para a frente e para trás nos registros de produtos.  
+- Criando botões que navegam para a frente e para trás nos registros de produtos.  
   
--   Criando um botão para salvar as alterações que os usuários fazem nos registros de produtos na tabela de dados e na fonte de dados subjacente.  
+- Criando um botão para salvar as alterações que os usuários fazem nos registros de produtos na tabela de dados e na fonte de dados subjacente.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT a [site da CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).  
+- Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT a [site da CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).  
   
- Conhecimento prévio dos conceitos a seguir também é útil, mas não é necessário para concluir o passo a passo:  
+  Conhecimento prévio dos conceitos a seguir também é útil, mas não é necessário para concluir o passo a passo:  
   
--   Conjuntos de dados e TableAdapters. Para obter mais informações, consulte [ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) e [visão geral de TableAdapter](../data-tools/tableadapter-overview.md).  
+- Conjuntos de dados e TableAdapters. Para obter mais informações, consulte [ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) e [visão geral de TableAdapter](../data-tools/tableadapter-overview.md).  
   
--   Trabalhando com o WPF Designer. Para obter mais informações, consulte [WPF e Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Trabalhando com o WPF Designer. Para obter mais informações, consulte [WPF e Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
--   Associação de dados do WPF. Para obter mais informações, consulte [Visão geral de vinculação de dados](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Associação de dados do WPF. Para obter mais informações, consulte [Visão geral de vinculação de dados](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-project"></a>Criar o projeto  
  Crie um novo projeto WPF. O projeto exibirá registros de produtos.  

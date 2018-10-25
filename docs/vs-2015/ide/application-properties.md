@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b74279373a11a13fd7e2e3fc47b2eb57e35d981
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a89832fe70e2e19085e8006646de5370b6019cbc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848612"
 ---
 # <a name="application-properties"></a>Propriedades do aplicativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,31 +32,31 @@ Você pode definir propriedades gerais de aplicativo para aplicativos do Visual 
   
  As seguintes tarefas podem ser realizadas no painel **Aplicativo**:  
   
--   Especificar informações de assembly  
+- Especificar informações de assembly  
   
--   Especificar uma tela inicial para um aplicativo  
+- Especificar uma tela inicial para um aplicativo  
   
--   Especificar eventos no nível do aplicativo  
+- Especificar eventos no nível do aplicativo  
   
--   Alterar um nome de assembly  
+- Alterar um nome de assembly  
   
--   Alterar o namespace de um aplicativo  
+- Alterar o namespace de um aplicativo  
   
--   Alterar o tipo de aplicativo  
+- Alterar o tipo de aplicativo  
   
--   Alterar o objeto de inicialização de um aplicativo  
+- Alterar o objeto de inicialização de um aplicativo  
   
--   Especificar um ícone do aplicativo  
+- Especificar um ícone do aplicativo  
   
--   Habilitar estilos visuais do Windows XP  
+- Habilitar estilos visuais do Windows XP  
   
--   Especificar o comportamento de instanciação de um aplicativo  
+- Especificar o comportamento de instanciação de um aplicativo  
   
--   Habilitar a autenticação de usuário personalizada  
+- Habilitar a autenticação de usuário personalizada  
   
--   Especificar o comportamento de desligamento de um aplicativo  
+- Especificar o comportamento de desligamento de um aplicativo  
   
- As tarefas disponíveis para seu aplicativo dependem da linguagem de desenvolvimento usada.  
+  As tarefas disponíveis para seu aplicativo dependem da linguagem de desenvolvimento usada.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Como especificar um ícone do aplicativo (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  

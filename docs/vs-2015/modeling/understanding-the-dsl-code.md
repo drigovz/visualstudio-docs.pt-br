@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 78ef4b1a0e6622b077039797df2adcb02a355df0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: afe6a273716ab5e531781634be959c80d30a9e26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251154"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834013"
 ---
 # <a name="understanding-the-dsl-code"></a>Noções básicas do código de DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,25 +115,25 @@ Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode s
   
  Cada classe do domínio contém:  
   
--   Uma definição de propriedade e uma classe de manipulador aninhado para cada propriedade do domínio. É possível substituir OnValueChanging() e OnValueChanged(). Para obter mais informações, consulte [manipuladores de alteração de valor de propriedade de domínio](../modeling/domain-property-value-change-handlers.md).  
+- Uma definição de propriedade e uma classe de manipulador aninhado para cada propriedade do domínio. É possível substituir OnValueChanging() e OnValueChanged(). Para obter mais informações, consulte [manipuladores de alteração de valor de propriedade de domínio](../modeling/domain-property-value-change-handlers.md).  
   
-     Na DSL de exemplo, a classe `Comment` contém um `Text` de propriedade e um `TextPropertyHandler` de classe de manipulador.  
+   Na DSL de exemplo, a classe `Comment` contém um `Text` de propriedade e um `TextPropertyHandler` de classe de manipulador.  
   
--   Propriedades do acessador das relações das quais essa classe do domínio participa. (Não existe classe aninhada para propriedades de função.)  
+- Propriedades do acessador das relações das quais essa classe do domínio participa. (Não existe classe aninhada para propriedades de função.)  
   
-     Na DSL de exemplo, a classe `Comment` possui acessadores que acessa seu modelo pai através da relação de inserção `ComponentModelHasComments`.  
+   Na DSL de exemplo, a classe `Comment` possui acessadores que acessa seu modelo pai através da relação de inserção `ComponentModelHasComments`.  
   
--   Construtores. Se você deseja substituí-los, defina **possui construtor personalizado** na classe de domínio.  
+- Construtores. Se você deseja substituí-los, defina **possui construtor personalizado** na classe de domínio.  
   
--   Métodos do manipulador Protótipo de Grupo de Elementos (EGP). Eles são necessários se o usuário puder *mesclagem* (Adicionar) outro elemento com instâncias dessa classe. Geralmente, o usuário faz isso arrastando de uma ferramenta de conexão ou outro formato ou colando.  
+- Métodos do manipulador Protótipo de Grupo de Elementos (EGP). Eles são necessários se o usuário puder *mesclagem* (Adicionar) outro elemento com instâncias dessa classe. Geralmente, o usuário faz isso arrastando de uma ferramenta de conexão ou outro formato ou colando.  
   
-     Na DSL de exemplo, uma Porta de Entrada ou Porta de Saída pode ser mesclada com um Componente. Além disso, Componentes e Comentários podem ser mesclados com o modelo. O  
+   Na DSL de exemplo, uma Porta de Entrada ou Porta de Saída pode ser mesclada com um Componente. Além disso, Componentes e Comentários podem ser mesclados com o modelo. O  
   
-     Os métodos do manipulador EGP na classe Componente permite a um Componente aceitar Portas, porém, não Comentários. O manipulador EGP na classe raiz do modelo aceita Comentários e Componentes, porém, não Portas.  
+   Os métodos do manipulador EGP na classe Componente permite a um Componente aceitar Portas, porém, não Comentários. O manipulador EGP na classe raiz do modelo aceita Comentários e Componentes, porém, não Portas.  
   
- `DomainModel.cs`  
+  `DomainModel.cs`  
   
- A classe que representa o modelo do domínio. É derivado de <xref:Microsoft.VisualStudio.Modeling.DomainModel>.  
+  A classe que representa o modelo do domínio. É derivado de <xref:Microsoft.VisualStudio.Modeling.DomainModel>.  
   
 > [!NOTE]
 >  Não é a mesma que a classe raiz do modelo.  
@@ -166,31 +166,31 @@ Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode s
   
  `SerializationHelper.cs`  
   
--   Um método de validação para garantir que dois elementos não serão referenciados pelo mesmo moniker. Para obter mais informações, consulte [Personalizando o armazenamento de arquivos e a serialização XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
+- Um método de validação para garantir que dois elementos não serão referenciados pelo mesmo moniker. Para obter mais informações, consulte [Personalizando o armazenamento de arquivos e a serialização XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
--   Classe SerializationHelper, que fornece funções que são usadas em comum pelas classes de serialização.  
+- Classe SerializationHelper, que fornece funções que são usadas em comum pelas classes de serialização.  
   
- `Serializer.cs`  
+  `Serializer.cs`  
   
- Uma classe de serializador para cada classe, relação, forma, conector, diagrama e modelo do domínio.  
+  Uma classe de serializador para cada classe, relação, forma, conector, diagrama e modelo do domínio.  
   
- Muitos dos recursos dessas classes podem ser controlados pelas configurações no Gerenciador de DSL sob **comportamento da serialização Xml**.  
+  Muitos dos recursos dessas classes podem ser controlados pelas configurações no Gerenciador de DSL sob **comportamento da serialização Xml**.  
   
- `Shapes.cs`  
+  `Shapes.cs`  
   
- Uma classe para cada classe da forma na Definição da DSL. As formas são derivadas de <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>. Para obter mais informações, consulte [Personalizando o armazenamento de arquivos e a serialização XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
+  Uma classe para cada classe da forma na Definição da DSL. As formas são derivadas de <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>. Para obter mais informações, consulte [Personalizando o armazenamento de arquivos e a serialização XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
- Para substituir os métodos gerados por seus próprios métodos em uma classe parcial, defina **gera derivado duplo** para o conector na definição de DSL. Para substituir um construtor com seu próprio código, defina **possui construtor personalizado**.  
+  Para substituir os métodos gerados por seus próprios métodos em uma classe parcial, defina **gera derivado duplo** para o conector na definição de DSL. Para substituir um construtor com seu próprio código, defina **possui construtor personalizado**.  
   
- Para tornar a cor e alguns outros recursos de estilo variáveis em tempo de execução, a classe no diagrama de definição de DSL com o botão direito e aponte para **adicionar exposto**.  
+  Para tornar a cor e alguns outros recursos de estilo variáveis em tempo de execução, a classe no diagrama de definição de DSL com o botão direito e aponte para **adicionar exposto**.  
   
- Para tornar recursos de estilo adicionais variáveis em tempo de execução, consulte <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> e <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>, por exemplo  
+  Para tornar recursos de estilo adicionais variáveis em tempo de execução, consulte <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> e <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>, por exemplo  
   
- `ToolboxHelper.cs`  
+  `ToolboxHelper.cs`  
   
- Configura a caixa de ferramentas instalando protótipos de grupo de elementos nas ferramentas do elemento. Cópias desses protótipos são mescladas com os elementos de destino quando o usuário executa a ferramenta.  
+  Configura a caixa de ferramentas instalando protótipos de grupo de elementos nas ferramentas do elemento. Cópias desses protótipos são mescladas com os elementos de destino quando o usuário executa a ferramenta.  
   
- É possível substituir `CreateElementPrototype()` para definir um item de caixa de ferramentas que cria um grupo de diversos objetos. Por exemplo, é possível definir um item para representar objetos que possuem subcomponentes. Após alterar o código, redefina a instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para limpar o cache da caixa de ferramentas.  
+  É possível substituir `CreateElementPrototype()` para definir um item de caixa de ferramentas que cria um grupo de diversos objetos. Por exemplo, é possível definir um item para representar objetos que possuem subcomponentes. Após alterar o código, redefina a instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para limpar o cache da caixa de ferramentas.  
   
 ## <a name="generated-files-in-the-dslpackage-project"></a>Arquivos gerados no projeto DslPackage  
  O DslPackage acopla o modelo DSL ao shell do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], gerenciando comandos da janela, da caixa de ferramentas e do menu. A maioria das classes são derivadas duplas, de modo que é possível substituir qualquer um de seus métodos.  

@@ -13,12 +13,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f1769f4d94df0621e06eb01d3dad55598cc810c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ba2f13ff484f73a7455089ccf2689037eabebdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178419"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824380"
 ---
 # <a name="animations-for-visual-studio"></a>Animações para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,15 +64,15 @@ ms.locfileid: "49178419"
   
 #### <a name="do-not"></a>Não:  
   
--   Usar pequenos movimentos (movimentação em uma superfície pequena), preferindo desaparece e é alterado ao longo de movimentação de objetos.  
+- Usar pequenos movimentos (movimentação em uma superfície pequena), preferindo desaparece e é alterado ao longo de movimentação de objetos.  
   
--   Use animações que ocorrem em uma grande área da tela. Independentemente do tamanho, esse estilo de animação é distração ao usuário.  
+- Use animações que ocorrem em uma grande área da tela. Independentemente do tamanho, esse estilo de animação é distração ao usuário.  
   
--   Use animações que não estão relacionados para o objeto que o usuário está atualmente concentrado em ou interagir com.  
+- Use animações que não estão relacionados para o objeto que o usuário está atualmente concentrado em ou interagir com.  
   
--   Use animações que exigem interação do usuário para redefinir o estado, como forçar o usuário a responder a uma notificação de intermitente para torná-lo parar piscando. Interagir com eles de forma alguma deve ser suficiente para ignorá-las.  
+- Use animações que exigem interação do usuário para redefinir o estado, como forçar o usuário a responder a uma notificação de intermitente para torná-lo parar piscando. Interagir com eles de forma alguma deve ser suficiente para ignorá-las.  
   
- Para obter mais informações sobre aplicativos essas práticas recomendadas, consulte [padrões de animação](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns).  
+  Para obter mais informações sobre aplicativos essas práticas recomendadas, consulte [padrões de animação](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns).  
   
 ### <a name="animation-metrics"></a>Métricas de animação  
   
@@ -205,21 +205,21 @@ ms.locfileid: "49178419"
 ### <a name="overview"></a>Visão geral  
  Animações no Visual Studio devem atender a uma função específica e não prejudicar a produtividade do usuário. Características de animação geral aderir para incluir:  
   
--   Pequenas e não invasiva  
+- Pequenas e não invasiva  
   
--   Natural e realista  
+- Natural e realista  
   
--   Sutis e subdued  
+- Sutis e subdued  
   
--   Rápido e eficiente  
+- Rápido e eficiente  
   
--   Reduzida, não com pressa  
+- Reduzida, não com pressa  
   
- A ilustração a seguir mostra os estilos de animação recomendados para uso no Visual Studio. Nenhuma animação e animações sutis, como aplicar fade-in / fade out são usados com mais frequência. Há aplicativo limitado do movimento de animações, como expandir e contrair, X e Y para posicionar a alteração e rotação.  
+  A ilustração a seguir mostra os estilos de animação recomendados para uso no Visual Studio. Nenhuma animação e animações sutis, como aplicar fade-in / fade out são usados com mais frequência. Há aplicativo limitado do movimento de animações, como expandir e contrair, X e Y para posicionar a alteração e rotação.  
   
- ![Estilos de animação recomendados para o Visual Studio](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "a_VSAnimStyles 1202")  
+  ![Estilos de animação recomendados para o Visual Studio](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "a_VSAnimStyles 1202")  
   
- **Estilos de animação recomendados para o Visual Studio**  
+  **Estilos de animação recomendados para o Visual Studio**  
   
 #### <a name="appear-and-disappear"></a>Aparecem e desaparecem  
  Com esse padrão, um elemento alterna entre visível para fora do modo de exibição e de volta sem uma animação de transição:  
@@ -363,65 +363,65 @@ ms.locfileid: "49178419"
   
 #### <a name="tab-open"></a>Guia aberta  
   
--   Estilo: aparecem  
+- Estilo: aparecem  
   
--   Duração: Zero segundos  
+- Duração: Zero segundos  
   
- ![Guia animação aberta no Visual Studio](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "h_TabOpen 1202")  
+  ![Guia animação aberta no Visual Studio](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "h_TabOpen 1202")  
   
 #### <a name="tab-close"></a>Fechar Guia  
   
--   Estilo: Alteração de posição X  
+- Estilo: Alteração de posição X  
   
--   Duração: 200 milissegundos  
+- Duração: 200 milissegundos  
   
- ![Guia animação Fechar no Visual Studio](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "i_TabClose 1202")  
+  ![Guia animação Fechar no Visual Studio](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "i_TabClose 1202")  
   
 #### <a name="tab-reorder"></a>Reordenação de guia  
   
--   Estilo: Alteração de posição X  
+- Estilo: Alteração de posição X  
   
--   Duração: 200 milissegundos  
+- Duração: 200 milissegundos  
   
- ![Guia de animação de novo pedido no Visual Studio](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "j_TabReorder 1202")  
+  ![Guia de animação de novo pedido no Visual Studio](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "j_TabReorder 1202")  
   
 #### <a name="close-floating-document"></a>Fechar documento flutuante  
   
--   Estilo: aparecem  
+- Estilo: aparecem  
   
--   Duração: 200 milissegundos  
+- Duração: 200 milissegundos  
   
- ![Fechar flutuante animação de documento no Visual Studio](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "k_CloseFloatingDocument 1202")  
+  ![Fechar flutuante animação de documento no Visual Studio](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "k_CloseFloatingDocument 1202")  
   
 #### <a name="window-state-transition"></a>Transição de estado de janela  
   
--   Estilo: Para ser consistente com outras janelas, permitem que o sistema operacional atual definem a animação de fechamento do documento.  
+- Estilo: Para ser consistente com outras janelas, permitem que o sistema operacional atual definem a animação de fechamento do documento.  
   
--   Duração: 200 milissegundos  
+- Duração: 200 milissegundos  
   
- ![Animação de transição de estado de janela no Visual Studio](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "l_WindowStateTransition 1202")  
+  ![Animação de transição de estado de janela no Visual Studio](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "l_WindowStateTransition 1202")  
   
 #### <a name="menu-open"></a>Menu Abrir  
   
--   Estilo: fade in  
+- Estilo: fade in  
   
--   Duração: 200 milissegundos  
+- Duração: 200 milissegundos  
   
- ![Animação de menu Abrir no Visual Studio](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "m_MenuOpen 1202")  
+  ![Animação de menu Abrir no Visual Studio](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "m_MenuOpen 1202")  
   
 #### <a name="menu-close"></a>Feche o menu  
   
--   Estilo: esmaecimento  
+- Estilo: esmaecimento  
   
--   Duração: 200 milissegundos  
+- Duração: 200 milissegundos  
   
- ![A animação Fechar menu no Visual Studio](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "n_MenuClose 1202")  
+  ![A animação Fechar menu no Visual Studio](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "n_MenuClose 1202")  
   
 #### <a name="auto-hide-tool-window-reveal"></a>Revelação de janela de ferramenta de ocultamento automático  
   
--   Estilo: aparecem  
+- Estilo: aparecem  
   
--   Duração: Zero segundos  
+- Duração: Zero segundos  
   
- ![Automático&#45;Ocultar animação da janela de ferramenta no Visual Studio](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "o_AutoHideToolWindowReveal 1202")
+  ![Automático&#45;Ocultar animação da janela de ferramenta no Visual Studio](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "o_AutoHideToolWindowReveal 1202")
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: eb4d8696755a70005923833625c72a95e5f1e80a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7a5262814f6ccfb28ba796140e52175e2fe940a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842762"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Como: usar o ClickOnce para implantar aplicativos que podem ser executados em várias versões do .NET framework
 Você pode implantar um aplicativo destinado a várias versões do .NET Framework usando a tecnologia de implantação do ClickOnce. Isso exige que você deseja gerar e atualizar os manifestos do aplicativo e implantação.  
@@ -82,23 +82,23 @@ Você pode implantar um aplicativo destinado a várias versões do .NET Framewor
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Para alterar o manifesto do aplicativo para marcar os assemblies dependentes como assemblies do .NET Framework  
   
-1.  No diretório de publicação, abra o manifesto do aplicativo usando o Editor de XML no Visual Studio. O manifesto de implantação tem a *. manifest* extensão de nome de arquivo.  
+1. No diretório de publicação, abra o manifesto do aplicativo usando o Editor de XML no Visual Studio. O manifesto de implantação tem a *. manifest* extensão de nome de arquivo.  
   
-2.  Adicione `group="framework"` para a dependência de XML para os assemblies de sentinela (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, e `System.Data.Entity`). Por exemplo, o XML deve ser semelhante ao seguinte:  
+2. Adicione `group="framework"` para a dependência de XML para os assemblies de sentinela (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, e `System.Data.Entity`). Por exemplo, o XML deve ser semelhante ao seguinte:  
   
-    ```xml  
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
-    ```  
+   ```xml  
+   <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
+   ```  
   
-3.  Atualizar o número de versão a `<assemblyIdentity>` elemento para Microsoft.Windows.CommonLanguageRuntime ao número de versão para o .NET Framework que é o menor denominador comum. Por exemplo, se o aplicativo for destinado ao .NET Framework 3.5 e [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], use o 2.0.50727.0 número de versão e o XML devem ser semelhante ao seguinte:  
+3. Atualizar o número de versão a `<assemblyIdentity>` elemento para Microsoft.Windows.CommonLanguageRuntime ao número de versão para o .NET Framework que é o menor denominador comum. Por exemplo, se o aplicativo for destinado ao .NET Framework 3.5 e [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], use o 2.0.50727.0 número de versão e o XML devem ser semelhante ao seguinte:  
   
-    ```xml  
-    <dependency>  
-      <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">  
-        <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />  
-      </dependentAssembly>  
-    </dependency>  
-    ```  
+   ```xml  
+   <dependency>  
+     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">  
+       <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />  
+     </dependentAssembly>  
+   </dependency>  
+   ```  
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Para atualizar e assinar novamente o aplicativo e a implantação manifestos  
   

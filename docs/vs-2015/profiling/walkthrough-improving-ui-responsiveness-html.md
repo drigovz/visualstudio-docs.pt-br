@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b085bf032611eafcb822a4e083d00d4ae72fd1ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893371"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Passo a passo: Melhorando a capacidade de resposta da interface de usuário (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,45 +163,45 @@ Este passo a passo o orienta no processo de identificação e correção de um p
   
 ### <a name="analyzing-performance-data"></a>Analisando dados de desempenho  
   
-1.  Na barra de ferramentas **Depurar**, na lista **Iniciar Depuração**, escolha um dos Emuladores ou **Simulador** do Windows Phone.  
+1. Na barra de ferramentas **Depurar**, na lista **Iniciar Depuração**, escolha um dos Emuladores ou **Simulador** do Windows Phone.  
   
-2.  No menu **Depurar** escolha **Desempenho e Diagnóstico**.  
+2. No menu **Depurar** escolha **Desempenho e Diagnóstico**.  
   
-3.  Em **Ferramentas Disponíveis**, escolha **Capacidade de Resposta de interface do usuário em HTML** e escolha **Iniciar**.  
+3. Em **Ferramentas Disponíveis**, escolha **Capacidade de Resposta de interface do usuário em HTML** e escolha **Iniciar**.  
   
-     Neste tutorial, você anexará o criador de perfil ao projeto de inicialização. Para obter informações sobre outras opções, como, por exemplo, anexar o criador de perfil a um aplicativo instalado, consulte [Capacidade de Resposta de interface do usuário em HTML](../profiling/html-ui-responsiveness.md).  
+    Neste tutorial, você anexará o criador de perfil ao projeto de inicialização. Para obter informações sobre outras opções, como, por exemplo, anexar o criador de perfil a um aplicativo instalado, consulte [Capacidade de Resposta de interface do usuário em HTML](../profiling/html-ui-responsiveness.md).  
   
-     Ao iniciar o criador de perfil, você poderá ver o Controle de Conta de Usuário solicitando sua permissão para executar o arquivo VsEtwCollector.exe. Escolha **Sim**.  
+    Ao iniciar o criador de perfil, você poderá ver o Controle de Conta de Usuário solicitando sua permissão para executar o arquivo VsEtwCollector.exe. Escolha **Sim**.  
   
-4.  No aplicativo em execução, escolha **Aguardando valores** e espere cerca de 10 segundos. Verifique se o texto e a cor do botão são atualizados aproximadamente a cada segundo.  
+4. No aplicativo em execução, escolha **Aguardando valores** e espere cerca de 10 segundos. Verifique se o texto e a cor do botão são atualizados aproximadamente a cada segundo.  
   
-5.  No aplicativo em execução, alterne para o Visual Studio (Alt+Tab).  
+5. No aplicativo em execução, alterne para o Visual Studio (Alt+Tab).  
   
-6.  Escolha **Parar de coletar**.  
+6. Escolha **Parar de coletar**.  
   
-     O criador de perfil exibe informações em um nova guia no Visual Studio. Ao examinar os dados de utilização da CPU e produtividade visual (FPS), é possível identificar facilmente algumas tendências:  
+    O criador de perfil exibe informações em um nova guia no Visual Studio. Ao examinar os dados de utilização da CPU e produtividade visual (FPS), é possível identificar facilmente algumas tendências:  
   
-    -   A utilização da CPU aumenta expressivamente após cerca de 3 segundos (quando você pressionou o botão **Aguardando valores**) e mostra um padrão claro de eventos (uma mistura consistente de eventos de scripts, estilos e renderização) desse ponto em diante.  
+   - A utilização da CPU aumenta expressivamente após cerca de 3 segundos (quando você pressionou o botão **Aguardando valores**) e mostra um padrão claro de eventos (uma mistura consistente de eventos de scripts, estilos e renderização) desse ponto em diante.  
   
-    -   A produtividade visual não é afetada, e o FPS permanece em 60 o tempo todo (ou seja, não há quadros removidos).  
+   - A produtividade visual não é afetada, e o FPS permanece em 60 o tempo todo (ou seja, não há quadros removidos).  
   
      Vamos examinar uma seção típica do gráfico de utilização da CPU para descobrir o que o aplicativo está fazendo nesse período de alta atividade.  
   
-7.  Selecione uma parte de um a dois segundos no meio do gráfico de utilização da CPU (ou clique e arraste, ou use as teclas Tab e de direção). A ilustração a seguir mostra o gráfico de utilização da CPU depois de ser feita uma seleção. A área não sombreada é a seleção.  
+7. Selecione uma parte de um a dois segundos no meio do gráfico de utilização da CPU (ou clique e arraste, ou use as teclas Tab e de direção). A ilustração a seguir mostra o gráfico de utilização da CPU depois de ser feita uma seleção. A área não sombreada é a seleção.  
   
-     ![Gráfico de utilização de CPU](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![Gráfico de utilização de CPU](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
-8.  Escolha **Ampliar**.  
+8. Escolha **Ampliar**.  
   
-     O gráfico muda para mostrar mais detalhadamente o período selecionado. A ilustração a seguir mostra o gráfico de utilização da CPU após a ampliação. (Os dados específicos podem variar, mas o padrão geral será aparente.)  
+    O gráfico muda para mostrar mais detalhadamente o período selecionado. A ilustração a seguir mostra o gráfico de utilização da CPU após a ampliação. (Os dados específicos podem variar, mas o padrão geral será aparente.)  
   
-     ![Exibição ampliada](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
+    ![Exibição ampliada](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
   
-     Os Detalhes da linha do tempo no painel inferior mostram um exemplo de detalhes para o período selecionado.  
+    Os Detalhes da linha do tempo no painel inferior mostram um exemplo de detalhes para o período selecionado.  
   
-     ![Detalhes da linha do tempo](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
+    ![Detalhes da linha do tempo](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
   
-     Os eventos nos Detalhes de linha do tempo confirmam tendências visíveis no gráfico de utilização da CPU: há muitos eventos ocorrendo em curtos períodos de tempo. A exibição dos Detalhes de linha do tempo mostra que esses eventos são `Timer`, `Layout` e `Paint`.  
+    Os eventos nos Detalhes de linha do tempo confirmam tendências visíveis no gráfico de utilização da CPU: há muitos eventos ocorrendo em curtos períodos de tempo. A exibição dos Detalhes de linha do tempo mostra que esses eventos são `Timer`, `Layout` e `Paint`.  
   
 9. Use o menu de contexto (ou clique com o botão direito do mouse) em um dos eventos `Timer` no painel inferior e escolha **Filtrar para evento**. A ilustração a seguir mostra um exemplo dos detalhes típicos para um dos eventos `Timer` nesse aplicativo de teste.  
   

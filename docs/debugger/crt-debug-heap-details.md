@@ -75,12 +75,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f939c365718e60cf5053f76dd65b18c257de627e
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: df3dbcd36bdb72bdd76972ff03a295ba9310f8f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433464"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897076"
 ---
 # <a name="crt-debug-heap-details"></a>Detalhes da pilha de depuração CRT
 Este tópico fornece um aspecto detalhado na heap de depuração de CRT.  
@@ -207,19 +207,19 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  **Para usar o heap de depuração**  
   
--   Vincule a compilação de depuração de seu aplicativo a uma versão de depuração da biblioteca em tempo de execução do C.  
+- Vincule a compilação de depuração de seu aplicativo a uma versão de depuração da biblioteca em tempo de execução do C.  
   
- **Para alterar um ou mais campos de bits crtdbgflag e criar um novo estado para o sinalizador**  
+  **Para alterar um ou mais campos de bits crtdbgflag e criar um novo estado para o sinalizador**  
   
-1.  Chamar `_CrtSetDbgFlag` com o parâmetro `newFlag` definido como `_CRTDBG_REPORT_FLAG` (para obter o estado atual de `_crtDbgFlag`) e armazenar o valor retornado em uma variável temporária.  
+1. Chamar `_CrtSetDbgFlag` com o parâmetro `newFlag` definido como `_CRTDBG_REPORT_FLAG` (para obter o estado atual de `_crtDbgFlag`) e armazenar o valor retornado em uma variável temporária.  
   
-2.  Ative todos os bits usando `OR`ing-(bit a bit &#124; símbolo) na variável temporária com as máscaras de bits correspondentes (representadas no código do aplicativo por constantes de manifesto).  
+2. Ative todos os bits usando `OR`ing-(bit a bit &#124; símbolo) na variável temporária com as máscaras de bits correspondentes (representadas no código do aplicativo por constantes de manifesto).  
   
-3.  Desative os outros bits usando o operador `AND` (símbolo & bit a bit) na variável com o operador `NOT` (símbolo ~bit a bit) das máscaras de bits apropriadas.  
+3. Desative os outros bits usando o operador `AND` (símbolo & bit a bit) na variável com o operador `NOT` (símbolo ~bit a bit) das máscaras de bits apropriadas.  
   
-4.  Chamar `_CrtSetDbgFlag` com o parâmetro de `newFlag` definido como o valor armazenado na variável temporária para criar o novo estado para `_crtDbgFlag`.  
+4. Chamar `_CrtSetDbgFlag` com o parâmetro de `newFlag` definido como o valor armazenado na variável temporária para criar o novo estado para `_crtDbgFlag`.  
   
- Por exemplo, as seguintes linhas de código ativam detecção automática de escape e desativam a verificação de blocos de tipo `_CRT_BLOCK`:  
+   Por exemplo, as seguintes linhas de código ativam detecção automática de escape e desativam a verificação de blocos de tipo `_CRT_BLOCK`:  
   
 ```cpp
 // Get current flag  

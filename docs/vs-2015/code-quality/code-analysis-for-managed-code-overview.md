@@ -19,12 +19,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 048ea406fd9237640976f3a44bb5e53504276e0c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2d84ba17fb3fd866dcd73cd2821289c40153b6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279364"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872662"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Visão geral da análise de código para código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,11 +63,11 @@ Análise de código para código gerenciado analisa os assemblies gerenciados e 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Executar análise de código como parte da política de check-in  
  Como uma organização, você talvez queira exigem que todos os check-ins satisfaçam determinadas políticas. Em particular, você deseja certificar-se de que você siga essas políticas:  
   
--   Não havia nenhum erro de compilação no check-in do código.  
+- Não havia nenhum erro de compilação no check-in do código.  
   
--   Análise de código foi executada como parte da compilação mais recente.  
+- Análise de código foi executada como parte da compilação mais recente.  
   
- Você pode fazer isso com a especificação de políticas de check-in. Para obter mais informações, consulte [aprimorando a qualidade do código com políticas de Check-in do projeto de equipe](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
+  Você pode fazer isso com a especificação de políticas de check-in. Para obter mais informações, consulte [aprimorando a qualidade do código com políticas de Check-in do projeto de equipe](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
   
 ## <a name="team-build-integration"></a>Integração do Team Build  
  Você pode usar os recursos integrados do sistema de compilação para executar a ferramenta de análise como parte do processo de compilação. Para obter mais informações, consulte [Compilar o aplicativo](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  

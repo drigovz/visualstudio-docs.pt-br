@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51ac98095f8b0dc6e303a0fc4135e022e9de5011
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ee38f210585124f8492f6aed9f062003602f287
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895308"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Como anexar e desanexar ferramentas de desempenho de processos em execução
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,13 +39,13 @@ O criador de perfil pode ser usado para anexar ou desanexar de um processo em ex
   
  Os processos que estão disponíveis para criação de perfil dependem das Permissões de acesso do usuário definidas por um administrador do computador. Uma conta de usuário pode, por exemplo, ter permissão para qualquer um dos seguintes:  
   
--   Recursos avançados de criação de perfil, quando o administrador tiver configurado o início do driver e do serviço.  
+- Recursos avançados de criação de perfil, quando o administrador tiver configurado o início do driver e do serviço.  
   
--   Criação de perfil de amostra apenas (usuários de domínio).  
+- Criação de perfil de amostra apenas (usuários de domínio).  
   
--   Acesso negado à criação de perfil para todos.  
+- Acesso negado à criação de perfil para todos.  
   
- Para obter mais informações, consulte [Criação de perfil e segurança do Windows Vista](../profiling/profiling-and-windows-vista-security.md) e as opções de administração em [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Para obter mais informações, consulte [Criação de perfil e segurança do Windows Vista](../profiling/profiling-and-windows-vista-security.md) e as opções de administração em [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-attach-to-a-running-process"></a>Para anexar a um processo em execução  
   

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c62abe30fe2ba3896885d1969a3ec2bc45cc86
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 7ac82e36d3abc942e0c5492cc4d7acf347eba36c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757760"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839564"
 ---
 # <a name="invokemethod-activity-designer"></a>Designer de atividade de InvokeMethod
 
@@ -36,7 +36,7 @@ Acesso a **InvokeMethod** designer de atividade na **primitivos** categoria dos 
 A tabela a seguir mostra o <xref:System.Activities.Statements.InvokeMethod> propriedades e descreve como eles são usados no designer. Essas propriedades podem ser editadas na grade de propriedade e alguns podem ser editados na superfície do Designer de fluxo de trabalho.
 
 |Nome da Propriedade|Necessária|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|O nome amigável de atividade de <xref:System.Activities.Statements.InvokeMethod> . O valor padrão é InvokeMethod.<br /><br /> Embora o <xref:System.Activities.Activity.DisplayName%2A> não é estritamente necessária, é melhor usar um.|
 |<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|verdadeiro|O nome do método a ser chamado quando a atividade executar. O método chamado deve ser declarado como **público**. Essa propriedade pode ser editada na superfície do designer e é obrigatória.|
 |<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|A coleção de parâmetros do método chamado. Os parâmetros devem ser adicionados à coleção na mesma ordem que eles aparecem na assinatura de método. Para exibir o **parâmetros** caixa de diálogo onde é possível definir essa propriedade, clique no botão de reticências na **parâmetros** campo da grade de propriedade. Clique o **criar argumento** botão para adicionar os parâmetros.|
@@ -65,5 +65,5 @@ Essa restrição não se aplica aos <xref:System.Activities.Statements.InvokeMet
 
 - [Primitives](../workflow-designer/primitives-activity-designers.md)
 - [Atribuir](../workflow-designer/assign-activity-designer.md)
-- [Atraso](../workflow-designer/delay-activity-designer.md)
+- [Atrasar](../workflow-designer/delay-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

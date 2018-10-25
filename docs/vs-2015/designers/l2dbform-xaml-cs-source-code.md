@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6248b61b2332694151d84bd9f5969ff18587c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6ac13d8998972ddf60576537f8b0af55d832d820
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180583"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817529"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>Código de L2DBForm.xaml.cs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,19 +51,19 @@ Este tópico contém o conteúdo e a descrição do código-fonte C# no arquivo 
   
  No entanto trabalho principal de remover o item selecionado de livro é feito por apenas duas instruções:  
   
--   Primeiro, o elemento de livro associado com o item atualmente selecionado na caixa de listagem é recuperado:  
+- Primeiro, o elemento de livro associado com o item atualmente selecionado na caixa de listagem é recuperado:  
   
-    ```  
-    XElement selBook = (XElement)lbBooks.SelectedItem;   
-    ```  
+  ```  
+  XElement selBook = (XElement)lbBooks.SelectedItem;   
+  ```  
   
--   Em seguida, esse elemento é excluído do provedor de dados:  
+- Em seguida, esse elemento é excluído do provedor de dados:  
   
-    ```  
-    selBook.Remove();  
-    ```  
+  ```  
+  selBook.Remove();  
+  ```  
   
- Além disso, a associação de dados dinâmicos garante que interface do usuário do programa é atualizado automaticamente.  
+  Além disso, a associação de dados dinâmicos garante que interface do usuário do programa é atualizado automaticamente.  
   
 ## <a name="example"></a>Exemplo  
   

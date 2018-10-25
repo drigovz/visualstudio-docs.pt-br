@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c14cfea94277158583717aa77edc4636f245e58a
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b0e641ca9eafb0fb78dbe42e2deb936db8fd840b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857848"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916017"
 ---
 # <a name="t4-import-directive"></a>Diretiva de importação T4
 
@@ -41,15 +41,15 @@ The file contains: <#=  fileContent #>
 ## <a name="standard-imports"></a>Importações padrão
  O seguinte namespace é importado automaticamente, para que não seja necessário gravar uma diretiva de importação para ele:
 
--   `System`
+- `System`
 
- Além disso, se você usar uma diretiva personalizada, o processador de diretriz pode importar alguns namespaces automaticamente.
+  Além disso, se você usar uma diretiva personalizada, o processador de diretriz pode importar alguns namespaces automaticamente.
 
- Por exemplo, se você gravar modelos para uma linguagem específica do domínio (DSL), você não precisa gravar diretivas de importação para os namespaces a seguir:
+  Por exemplo, se você gravar modelos para uma linguagem específica do domínio (DSL), você não precisa gravar diretivas de importação para os namespaces a seguir:
 
--   `Microsoft.VisualStudio.Modeling`
+- `Microsoft.VisualStudio.Modeling`
 
--   Namespace de sua DSL
+- Namespace de sua DSL
 
 ## <a name="see-also"></a>Consulte também
 

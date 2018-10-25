@@ -28,12 +28,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8a1765c142fcf039b28b2e1c2e6ad1bf7038aaa9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220718"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860316"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Criar um banco de dados SQL usando um designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,23 +58,23 @@ ms.locfileid: "49220718"
   
 #### <a name="to-create-a-project-and-a-database-file"></a>Para criar um projeto e um arquivo de banco de dados  
   
-1.  Criar um projeto Windows Forms chamado `SampleDatabaseWalkthrough`.  
+1. Criar um projeto Windows Forms chamado `SampleDatabaseWalkthrough`.  
   
-2.  Na barra de menus, selecione **Project** > **Adicionar Novo Item**.  
+2. Na barra de menus, selecione **Project** > **Adicionar Novo Item**.  
   
-3.  Na lista de modelos de item, role para baixo e selecione **banco de dados baseado em serviço**.  
+3. Na lista de modelos de item, role para baixo e selecione **banco de dados baseado em serviço**.  
   
-     ![Caixa de diálogo de modelos de item](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
+    ![Caixa de diálogo de modelos de item](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
   
-4.  Nomeie o banco de dados **SampleDatabase**e, em seguida, selecione o **Add** botão.  
+4. Nomeie o banco de dados **SampleDatabase**e, em seguida, selecione o **Add** botão.  
   
-5.  Se o **fontes de dados** janela não estiver aberta, abra-o, selecionando as teclas Shift + Alt + D ou, na barra de menus, selecionando **exibição** > **Other Windows**  >  **Fontes de dados**.  
+5. Se o **fontes de dados** janela não estiver aberta, abra-o, selecionando as teclas Shift + Alt + D ou, na barra de menus, selecionando **exibição** > **Other Windows**  >  **Fontes de dados**.  
   
-6.  No **fontes de dados** janela, selecione a **Add New Data Source** link.  
+6. No **fontes de dados** janela, selecione a **Add New Data Source** link.  
   
-7.  No **Data Source Configuration Wizard**, selecione o **próxima** botão quatro vezes para aceitar as configurações padrão e, em seguida, selecione o **concluir** botão.  
+7. No **Data Source Configuration Wizard**, selecione o **próxima** botão quatro vezes para aceitar as configurações padrão e, em seguida, selecione o **concluir** botão.  
   
- Abrindo-se a janela de propriedades do banco de dados, é possível exibir sua cadeia de conexão e o local do arquivo .mdf principal. Você verá que o arquivo de banco de dados está na pasta do projeto.  
+   Abrindo-se a janela de propriedades do banco de dados, é possível exibir sua cadeia de conexão e o local do arquivo .mdf principal. Você verá que o arquivo de banco de dados está na pasta do projeto.  
   
 -   No Visual Studio, selecione **modo de exibição** > **SQL Server Object Explorer** se essa janela não estiver aberta. Abra a janela Propriedades, expandindo a **conexões de dados** nó, abrindo o menu de atalho de SampleDatabase e, em seguida, selecionando **propriedades**.  
   

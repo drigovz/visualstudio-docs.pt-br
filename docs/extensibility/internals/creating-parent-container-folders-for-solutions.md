@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be768f684a495271f06a2a79a71647a9bbaa8552
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 87fbda8cb55d0d2a6ef9f21a2a7878d4babd3fe6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498864"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830685"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Criar pastas de contêiner para soluções de pai
 No código-fonte controle plug-in API versão 1.2, um usuário pode especificar um destino de controle de origem de raiz única para todos os projetos da web dentro da solução. Essa única raiz é chamado de uma raiz de Unificação de Super (SUR).  
@@ -50,7 +50,7 @@ No código-fonte controle plug-in API versão 1.2, um usuário pode especificar 
 No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], é aconselhável que o nome da pasta SUR ser o mesmo que o nome da solução sem a extensão. A tabela a seguir resume o comportamento em duas versões.  
   
 |Recurso|Versão 1.1 do API de plug-in de controle de origem|Versão 1.2 da API de plug-in de controle de origem|  
-|-------------|----------------------------------------------|---------------------------------------------|  
+|-------------| - | - |  
 |Adicionar solução ao SCC|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
 |Adicionar o projeto à solução de controle do código-fonte|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Observação:** Visual Studio pressupõe que uma solução é um filho direto do SUR o.|  
   

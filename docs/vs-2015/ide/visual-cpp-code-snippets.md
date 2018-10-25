@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a125223521bf73012944841c6fcf531df3a9ae8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed64d9dde53b31cfe5f52ce708e4ee96d91fe8ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861352"
 ---
 # <a name="visual-c-code-snippets"></a>Snippets de código do Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ No Visual Studio, você pode usar snippets de código para adicionar código com
 ## <a name="inserting-a-code-snippet"></a>Inserindo um snippet de código  
  Para inserir um snippet de código, abra um arquivo de código do C++ (.cpp ou .h), clique em algum lugar dentro do arquivo e siga um destes procedimentos:  
   
--   Clique com o botão direito do mouse para obter o menu de contexto e selecione **Inserir Snippet**  
+- Clique com o botão direito do mouse para obter o menu de contexto e selecione **Inserir Snippet**  
   
--   No menu **Editar / IntelliSense**, selecione **Inserir Snippet**  
+- No menu **Editar / IntelliSense**, selecione **Inserir Snippet**  
   
--   Use as teclas de atalho: **CTRL + K + X**  
+- Use as teclas de atalho: **CTRL + K + X**  
   
- Você deve ver uma lista de opções que começam com **#if**. Ao selecionar **#if**, você verá o seguinte código adicionado ao arquivo:  
+  Você deve ver uma lista de opções que começam com **#if**. Ao selecionar **#if**, você verá o seguinte código adicionado ao arquivo:  
   
 ```cpp  
 #if 0  
@@ -50,13 +50,13 @@ No Visual Studio, você pode usar snippets de código para adicionar código com
 ## <a name="using-a-code-snippet-to-surround-selected-code"></a>Usar um snippet de código para envolver o código selecionado  
  Para usar um snippet de código para envolver o código selecionado, selecione uma linha (ou várias linhas) e siga um destes procedimentos:  
   
-1.  Clique com o botão direito do mouse para obter o menu de contexto e selecione **Envolver com**  
+1. Clique com o botão direito do mouse para obter o menu de contexto e selecione **Envolver com**  
   
-2.  No menu **Editar / IntelliSense**, selecione **Envolver com**  
+2. No menu **Editar / IntelliSense**, selecione **Envolver com**  
   
-3.  Use as teclas de atalho: **CTRL + K + S**  
+3. Use as teclas de atalho: **CTRL + K + S**  
   
- Selecione **#if**. Você deve ver algo parecido com isso:  
+   Selecione **#if**. Você deve ver algo parecido com isso:  
   
 ```cpp  
 #if 0  

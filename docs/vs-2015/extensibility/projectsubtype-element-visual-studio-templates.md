@@ -18,12 +18,12 @@ ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f28f0efc755f40a0d2f4cfdc710eda8f2f4799ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 43f7638039672fad530cb2cd2447dbe8174011cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894073"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>Elemento ProjectSubType (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,15 +65,15 @@ Classifica o modelo em uma subcategoria de valor especificado no `ProjectType` e
   
  O `ProjectSubType` elemento fornece uma subcategoria para a [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) elemento. Esse valor pode incluir:  
   
--   `SmartDevice-NETCFv1`: Especifica que os destinos de modelo a [!INCLUDE[Compact](../includes/compact-md.md)] versão 1.0.  
+- `SmartDevice-NETCFv1`: Especifica que os destinos de modelo a [!INCLUDE[Compact](../includes/compact-md.md)] versão 1.0.  
   
--   `SmartDevice-NETCFv2`: Especifica que os destinos tempalate o [!INCLUDE[Compact](../includes/compact-md.md)] versão 2.0.  
+- `SmartDevice-NETCFv2`: Especifica que os destinos tempalate o [!INCLUDE[Compact](../includes/compact-md.md)] versão 2.0.  
   
- Se um modelo contém um `ProjectType` elemento com um valor de `Web`, o `ProjectSubType` elemento Especifica a linguagem de programação do modelo. Esse elemento pode ter os seguintes valores:  
+  Se um modelo contém um `ProjectType` elemento com um valor de `Web`, o `ProjectSubType` elemento Especifica a linguagem de programação do modelo. Esse elemento pode ter os seguintes valores:  
   
--   `CSharp`: Especifica que o modelo cria um [!INCLUDE[csprcs](../includes/csprcs-md.md)] projeto da Web ou um item.  
+- `CSharp`: Especifica que o modelo cria um [!INCLUDE[csprcs](../includes/csprcs-md.md)] projeto da Web ou um item.  
   
--   `VisualBasic`: Especifica que o modelo cria um [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projeto da Web ou um item.  
+- `VisualBasic`: Especifica que o modelo cria um [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projeto da Web ou um item.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir mostra os metadados para um modelo de projeto para um [!INCLUDE[csprcs](../includes/csprcs-md.md)] segmentação do aplicativo de dispositivo a [!INCLUDE[Compact](../includes/compact-md.md)] versão 2.0.  

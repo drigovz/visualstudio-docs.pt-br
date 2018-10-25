@@ -15,12 +15,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c051425f2d3ae131362c2d95494ed0edbef5353e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca63b6a8c973b33a9dffc98966fd0622c0a5407a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246045"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868424"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Elementos do Shell isolado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Você pode modificar as configurações do registro, configurações de tempo de
 ## <a name="run-time-settings"></a>Configurações de tempo de execução  
  Quando um usuário inicia o aplicativo de shell isolado, ele chama o ponto de entrada do início do shell do Visual Studio. Configurações do aplicativo são definidas quando o aplicativo é iniciado, da seguinte maneira:  
   
-1.  Shell do Visual Studio verifica o registro de aplicativo para chaves específicas. Se a configuração para uma chave for especificada na chamada para o ponto de entrada inicial, em seguida, esse valor substitui o valor no registro.  
+1. Shell do Visual Studio verifica o registro de aplicativo para chaves específicas. Se a configuração para uma chave for especificada na chamada para o ponto de entrada inicial, em seguida, esse valor substitui o valor no registro.  
   
-2.  Se o ponto de registro nem a entrada de parâmetro especifica o valor de uma configuração, o valor padrão para a configuração é usado.  
+2. Se o ponto de registro nem a entrada de parâmetro especifica o valor de uma configuração, o valor padrão para a configuração é usado.  
   
- Quando um usuário inicia o aplicativo da linha de comando, todos os comutadores de linha de comando são passados para o shell do Visual Studio, que trata da mesma maneira que faz do Devenv. Para obter mais informações sobre opções do Devenv, consulte [opções de linha de comando Devenv](../ide/reference/devenv-command-line-switches.md) e [opções de linha de comando Devenv para desenvolvimento de VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Para obter mais informações sobre como um pacote registra para opções de linha de comando, consulte [Adicionando opções de linha de comando](../extensibility/adding-command-line-switches.md).  
+   Quando um usuário inicia o aplicativo da linha de comando, todos os comutadores de linha de comando são passados para o shell do Visual Studio, que trata da mesma maneira que faz do Devenv. Para obter mais informações sobre opções do Devenv, consulte [opções de linha de comando Devenv](../ide/reference/devenv-command-line-switches.md) e [opções de linha de comando Devenv para desenvolvimento de VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Para obter mais informações sobre como um pacote registra para opções de linha de comando, consulte [Adicionando opções de linha de comando](../extensibility/adding-command-line-switches.md).  
   
 ## <a name="the-start-entry-point"></a>O ponto de entrada inicial  
  O arquivo Appenvstub.dll contém pontos de entrada para acessar o shell isolado. Quando o aplicativo é iniciado, ele chama o ponto de entrada de início de Appenvstub.dll.  

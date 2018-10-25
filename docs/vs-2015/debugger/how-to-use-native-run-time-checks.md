@@ -46,39 +46,39 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e1efa6852a9bb1c2ec6cd4cabf63ca761506cad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca6d6d1e4a3ad6705890efdc40171857781e6d12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892929"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Como usar verificações de tempo de execução nativas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 No Visual C++, você pode usar nativos [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) para capturar erros comuns de tempo de execução, como:  
   
--   Dano do ponteiro de pilha.  
+- Dano do ponteiro de pilha.  
   
--   Excesso de matrizes locais.  
+- Excesso de matrizes locais.  
   
--   Dano de pilha.  
+- Dano de pilha.  
   
--   Dependências em variáveis locais não inicializadas.  
+- Dependências em variáveis locais não inicializadas.  
   
--   Perda de dados em uma atribuição para uma variável mais curta.  
+- Perda de dados em uma atribuição para uma variável mais curta.  
   
- Se você usar **/RTC** com um otimizado (**/O**) criar um resultados de erro do compilador. Se você usar um pragma `runtime_checks` em uma construção otimizada, o pragma não terá nenhum efeito.  
+  Se você usar **/RTC** com um otimizado (**/O**) criar um resultados de erro do compilador. Se você usar um pragma `runtime_checks` em uma construção otimizada, o pragma não terá nenhum efeito.  
   
- Quando você depurar um programa que tem as verificações de tempo de execução habilitadas, a ação padrão será para o programa parar e interromper no depurador quando ocorrer um erro em tempo de execução. Você pode alterar este comportamento padrão para qualquer verificação de tempo de execução. Para obter mais informações, consulte [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md).  
+  Quando você depurar um programa que tem as verificações de tempo de execução habilitadas, a ação padrão será para o programa parar e interromper no depurador quando ocorrer um erro em tempo de execução. Você pode alterar este comportamento padrão para qualquer verificação de tempo de execução. Para obter mais informações, consulte [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md).  
   
- Os procedimentos a seguir descrevem como habilitar as verificações nativas de tempo de execução em uma compilação de depuração e como modificar o comportamento nativo de verificação de tempo de execução.  
+  Os procedimentos a seguir descrevem como habilitar as verificações nativas de tempo de execução em uma compilação de depuração e como modificar o comportamento nativo de verificação de tempo de execução.  
   
- Outros tópicos desta seção fornecem informações sobre:  
+  Outros tópicos desta seção fornecem informações sobre:  
   
--   [Personalizar o tempo de execução verifica com a biblioteca de tempo de execução C](../debugger/native-run-time-checks-customization.md)  
+- [Personalizar o tempo de execução verifica com a biblioteca de tempo de execução C](../debugger/native-run-time-checks-customization.md)  
   
--   [Usar o tempo de execução verifica sem a biblioteca de tempo de execução C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
+- [Usar o tempo de execução verifica sem a biblioteca de tempo de execução C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
   
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Para habilitar as verificações de tempo de execução nativas em uma compilação de depuração  
   

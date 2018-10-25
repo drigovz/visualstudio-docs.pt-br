@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 081a3dfd809cc936f11d436e593d2be258452f85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670194"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847572"
 ---
 # <a name="build-office-solutions"></a>Compilar soluções do Office
   Em geral, compilar e depurar projetos do Office é o mesmo que a compilação e depuração de outros tipos de projetos no Visual Studio, como o Windows Forms. Os tópicos nesta seção explicam as diferenças que existem. Para obter informações gerais sobre como criar aplicativos, consulte [compilar e criar no Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -64,23 +64,23 @@ ms.locfileid: "35670194"
 ### <a name="application-level-projects"></a>Projetos de nível de aplicativo  
  Quando você compila um projeto de suplemento do VSTO, os itens a seguir estão incluídos na saída do projeto:  
   
--   O assembly do projeto e todos os assemblies referenciados que têm suas **Copy Local** propriedade definida como **verdadeiro**.  
+- O assembly do projeto e todos os assemblies referenciados que têm suas **Copy Local** propriedade definida como **verdadeiro**.  
   
--   O manifesto do aplicativo, que tem a extensão de nome de arquivo *. manifest*. Para obter mais informações, consulte [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).  
+- O manifesto do aplicativo, que tem a extensão de nome de arquivo *. manifest*. Para obter mais informações, consulte [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).  
   
--   O manifesto de implantação, que tem a extensão de nome de arquivo *VSTO*. Para obter mais informações, consulte [manifestos de implantação para soluções do Office](../vsto/deployment-manifests-for-office-solutions.md).  
+- O manifesto de implantação, que tem a extensão de nome de arquivo *VSTO*. Para obter mais informações, consulte [manifestos de implantação para soluções do Office](../vsto/deployment-manifests-for-office-solutions.md).  
   
--   Um banco de dados do programa (*PDB*) o arquivo para o assembly do projeto.  
+- Um banco de dados do programa (*PDB*) o arquivo para o assembly do projeto.  
   
- O processo de compilação para projetos de suplemento do VSTO também cria um conjunto de entradas do registro no computador de desenvolvimento que são necessários para carregar o suplemento do VSTO. Para obter mais informações, consulte [entradas do registro para suplementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
+  O processo de compilação para projetos de suplemento do VSTO também cria um conjunto de entradas do registro no computador de desenvolvimento que são necessários para carregar o suplemento do VSTO. Para obter mais informações, consulte [entradas do registro para suplementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
   
- Se você criar um projeto de suplemento do VSTO do Outlook que contém regiões de formulário, o processo de build adiciona as seguintes informações adicionais para o registro:  
+  Se você criar um projeto de suplemento do VSTO do Outlook que contém regiões de formulário, o processo de build adiciona as seguintes informações adicionais para o registro:  
   
--   Uma chave para cada classe de mensagem que está associado uma ou mais regiões de formulário.  
+- Uma chave para cada classe de mensagem que está associado uma ou mais regiões de formulário.  
   
--   Uma entrada para cada região do formulário e um valor associado que representa o nome do suplemento do VSTO do Outlook.  
+- Uma entrada para cada região do formulário e um valor associado que representa o nome do suplemento do VSTO do Outlook.  
   
- Outlook precisa dessas informações para carregar as regiões do formulário.  
+  Outlook precisa dessas informações para carregar as regiões do formulário.  
   
 ## <a name="referenced-assemblies"></a>Assemblies referenciados  
  Você pode fazer referência a assemblies (incluindo projetos de biblioteca de classe) do seu projeto compilando soluções do Office. Cada assembly referenciado tem uma propriedade chamada **Copy Local**. **Local da cópia** indica se o assembly é copiado para o diretório de saída. Por padrão, ele é definido como **verdadeira**. Cada assembly referenciado que tenha **Copy Local** definido como **verdadeiro** é copiado para o diretório de saída.  

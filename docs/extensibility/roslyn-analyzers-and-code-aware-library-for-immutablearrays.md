@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 075f3391a155938082847c708f831d0587cf54fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495915"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907476"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analisadores de Roslyn e biblioteca de reconhecimento de código para ImmutableArrays
 
@@ -82,7 +82,6 @@ Você pode implementar um analisador usando o Visual Basic que tem como alvo o c
 
 ```csharp
 public override void Initialize(AnalysisContext context) {}
-
 ```
 
 Abrir uma nova linha neste método e o tipo de "contexto." Para ver uma lista de conclusão do IntelliSense.  Você pode ver na lista de conclusão, existem várias `Register...` métodos para lidar com vários tipos de eventos.  Por exemplo, o primeiro deles, `RegisterCodeBlockAction`, chamadas de volta ao seu código para um bloco, o que geralmente é o código entre chaves.  Registrar-se para um bloco também chama de volta ao seu código para o inicializador de um campo, o valor fornecido para um atributo ou o valor de um parâmetro opcional.
@@ -225,7 +224,6 @@ namespace ImmutableArrayAnalyzer
     [ExportCodeFixProvider(LanguageNames.CSharp)]
     class BuildCodeFixProvider : CodeFixProvider
     {}
-
 ```
 
 **Criar um stub de membros derivados.** Agora, coloque o cursor do editor no identificador `CodeFixProvider` e pressione **Ctrl**+**.** (ponto) para criar um stub a implementação para essa classe base abstrata.  Isso gera uma propriedade e um método para você.

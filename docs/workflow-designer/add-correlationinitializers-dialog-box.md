@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d54724655db7147c06687aa88a4fe623bb277a45
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 724c4e3ac911e5fda62304a08565937f38425368
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756932"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948948"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>Adicione a caixa de diálogo CorrelationInitializers
 
@@ -33,7 +33,7 @@ Os inicializadores de correlação na coleção especificada com essa caixa de d
 A tabela a seguir descreve os elementos de (UI) de interface do usuário para o **adicionar inicializadores de correlação** caixa de diálogo:
 
 |Elemento da Interface do Usuário|Descrição|
-|----------------|-----------------|
+|-|-----------------|
 |**Adicionar inicializador**|Clique o **initialize adicionar** caixa para adicionar um inicializador adicional à coleção.|
 |**Tipo de correlação**|Especifica o tipo de inicializador de correlação. Há quatro tipos a escolher:<br /><br /> 1. Um inicializador de correlação de retorno de chamada para especificar <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer>.<br />2. Um inicializador de correlação de contexto para especificar <xref:System.ServiceModel.Activities.CorrelationInitializer>.<br />3. Um inicializador de correlação de solicitação de resposta para especificar <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer>.<br />4. Um inicializador de correlação de consulta para especificar <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>.<br /><br /> Para editar o **CorrelationType**<br /><br /> 1. Guia para a linha específica na **adicionar inicializador** DataGrid.<br />2. Para definir o foco **CorrelationTypeComboBox**, pressione **Ctrl**+**guia**.<br />3. Pressione Alt + seta para baixo para pop-up do **ComboBox** e editá-lo.|
 |**Consultas XPath**|Um par chave/valor que contém as consultas usadas para extrair dados de correlação das mensagens de entrada e saída. Esta lista só é válido para usar <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> tipos.|
