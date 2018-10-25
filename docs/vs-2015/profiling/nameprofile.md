@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47db8dc67108e8d443e5f485babb906bd7b040f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfe1b5fb517ed7b886e681081ac7910cfe717cc6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301932"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867163"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,17 +45,17 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  O nome do elemento de criação de perfil. Um nome é inválido (resultando em NameProfileA retorna NAME_ERROR_INVALID_NAME) se:  
   
--   O ponteiro transmitido para NameProfileA é um valor NULL  
+- O ponteiro transmitido para NameProfileA é um valor NULL  
   
--   Os dados de cadeia de caracteres de pszName começam com um número  
+- Os dados de cadeia de caracteres de pszName começam com um número  
   
--   Os dados de cadeia de caracteres de pszName contêm um espaço  
+- Os dados de cadeia de caracteres de pszName contêm um espaço  
   
--   Os dados de cadeia de caracteres de pszName contêm todos os seguintes caracteres: ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
+- Os dados de cadeia de caracteres de pszName contêm todos os seguintes caracteres: ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
   
- `Level`  
+  `Level`  
   
- Indica o nível de perfil de desempenho que pode ser aplicado a coleta de dados. Os seguintes valores de **PROFILE_CONTROL_LEVEL** podem ser usados para indicar um dos três níveis aos quais a coleta de dados de desempenho pode ser aplicada:  
+  Indica o nível de perfil de desempenho que pode ser aplicado a coleta de dados. Os seguintes valores de **PROFILE_CONTROL_LEVEL** podem ser usados para indicar um dos três níveis aos quais a coleta de dados de desempenho pode ser aplicada:  
   
 |Enumerador|Descrição|  
 |----------------|-----------------|  

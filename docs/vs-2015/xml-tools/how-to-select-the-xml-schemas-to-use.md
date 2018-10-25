@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5300623e3bbd1eeec584b30015e122539a6c7203
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93f573412524619292b1966e87abeda11cc0813a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210451"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863718"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Como: Selecione os esquemas XML para usar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,23 +36,23 @@ O editor XML fornece um cache de esquema %InstallDir% localizado no diretório \
   
 ### <a name="to-select-an-xml-schema-from-the-schema-cache"></a>Para selecionar um esquema XML de cache do esquema  
   
-1.  Abrir um arquivo no editor XML.  
+1. Abrir um arquivo no editor XML.  
   
-2.  Na janela de propriedades do documento, clique no botão sobre a **esquemas** campo.  
+2. Na janela de propriedades do documento, clique no botão sobre a **esquemas** campo.  
   
-     O **esquemas XML** caixa de diálogo é exibida. A caixa de diálogo lista todos os esquemas com uma extensão. xsd no cache de esquema (incluindo Esquemas referenciados no arquivo de Catalog.) e também qualquer esquema que está na solução atual, abra no Visual Studio, referenciado em um `xsd:schemaLocation` de atributo ou referenciados em o **esquemas** propriedade.  
+    O **esquemas XML** caixa de diálogo é exibida. A caixa de diálogo lista todos os esquemas com uma extensão. xsd no cache de esquema (incluindo Esquemas referenciados no arquivo de Catalog.) e também qualquer esquema que está na solução atual, abra no Visual Studio, referenciado em um `xsd:schemaLocation` de atributo ou referenciados em o **esquemas** propriedade.  
   
-3.  Selecione os esquemas para usar a validação seguindo um destes procedimentos:  
+3. Selecione os esquemas para usar a validação seguindo um destes procedimentos:  
   
-    -   Selecione um esquema listado na **esquemas XML** caixa de diálogo, clique o **uso** coluna e, em seguida, selecione **usar este esquema**.  
+   - Selecione um esquema listado na **esquemas XML** caixa de diálogo, clique o **uso** coluna e, em seguida, selecione **usar este esquema**.  
   
      -ou-  
   
-    -   Selecione vários esquemas listados na **esquemas XML** caixa de diálogo, o botão direito do mouse e selecione **usar este esquema**.  
+   - Selecione vários esquemas listados na **esquemas XML** caixa de diálogo, o botão direito do mouse e selecione **usar este esquema**.  
   
-4.  Clique em **OK**.  
+4. Clique em **OK**.  
   
-     A lista de esquemas selecionados será copiada para o **esquemas** propriedade de documento.  
+    A lista de esquemas selecionados será copiada para o **esquemas** propriedade de documento.  
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>Para adicionar um esquema XML para o cache de esquema  
   

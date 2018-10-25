@@ -17,12 +17,12 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: faa6c3a39b7aa8a0ca7b2788cd9946421cfe6b7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202573"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844153"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramas de camada: diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,9 +92,9 @@ Descrever a arquitetura do aplicativo em um alto nível, criando *diagramas de c
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Para fazer engenharia reversa de dependências existentes entre camadas  
   
--   Selecione uma camada ou várias camadas, uma camada selecionada com o botão direito e, em seguida, clique em **gerar dependências**.  
+- Selecione uma camada ou várias camadas, uma camada selecionada com o botão direito e, em seguida, clique em **gerar dependências**.  
   
- Normalmente, você verá algumas dependências que não devem existir. É possível editar essas dependências para alinhá-las com o design desejado.  
+  Normalmente, você verá algumas dependências que não devem existir. É possível editar essas dependências para alinhá-las com o design desejado.  
   
 ##  <a name="EditArchitecture"></a> Editar camadas e dependências para mostrar o design desejado  
  Para descrever as alterações que você planeja fazer em seu sistema ou a arquitetura pretendida, use as etapas a seguir para editar o diagrama de camada. Você também pode considerar fazer algumas alterações de refatoração para melhorar a estrutura do código antes de estendê-lo. Ver [melhorar a estrutura do código](#Improving).  
@@ -151,11 +151,11 @@ Descrever a arquitetura do aplicativo em um alto nível, criando *diagramas de c
 ##  <a name="UpdateCode"></a> Atualize o código para estar de acordo com a nova arquitetura  
  Normalmente, os erros serão exibidos na primeira vez que você valide o código em um diagrama de camada atualizada. Esses erros podem ter várias causas:  
   
--   Um artefato é atribuído à camada errada. Nesse caso, mova o artefato.  
+- Um artefato é atribuído à camada errada. Nesse caso, mova o artefato.  
   
--   Um artefato como, por exemplo, uma classe usa outra classe de maneira a entrar em conflito com a arquitetura. Nesse caso, refatore o código para remover a dependência.  
+- Um artefato como, por exemplo, uma classe usa outra classe de maneira a entrar em conflito com a arquitetura. Nesse caso, refatore o código para remover a dependência.  
   
- Para resolver esses erros, atualize o código até que mais nenhum erro seja exibido durante a validação. Isso geralmente é um processo iterativo. Para obter mais informações sobre esses erros, consulte [validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md).  
+  Para resolver esses erros, atualize o código até que mais nenhum erro seja exibido durante a validação. Isso geralmente é um processo iterativo. Para obter mais informações sobre esses erros, consulte [validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md).  
   
 > [!NOTE]
 >  Conforme você desenvolve ou refatora o código, você pode ter os novos artefatos para vincular ao diagrama de camada. No entanto, isso pode não ser necessário, por exemplo, quando você tem camadas que representam a namespaces existentes, e o novo código apenas adiciona mais material a esses namespaces.  

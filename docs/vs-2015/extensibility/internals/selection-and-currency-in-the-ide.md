@@ -18,12 +18,12 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fe6d5cb678cade67ef9e46e9b3c113c988bf879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bfd8b3d6a74d4be6edce66e6d921a6c608f861ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270914"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902861"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Seleção e moeda no IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,15 +52,15 @@ O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente de desenvolvimento in
 ### <a name="window-types-and-selection"></a>Seleção e tipos de janelas  
  O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE organiza windows em dois tipos gerais:  
   
--   Windows de tipo de hierarquia  
+- Windows de tipo de hierarquia  
   
--   Janelas de quadro, como janelas de ferramentas e documentos  
+- Janelas de quadro, como janelas de ferramentas e documentos  
   
- O IDE rastreia moeda diferente para cada um desses tipos de janela.  
+  O IDE rastreia moeda diferente para cada um desses tipos de janela.  
   
- A janela de tipo de projeto mais comum é o Gerenciador de soluções, que controla o IDE. Uma janela do tipo de projeto controla a hierarquia global e o ItemID do contexto da seleção global e a janela se baseia na seleção do usuário para determinar a hierarquia atual. Para o windows de tipo de projeto, o ambiente fornece o serviço global <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>por quais VSPackages pode monitorar os valores atuais para os elementos abertos. Propriedade de navegação no ambiente é orientada por este serviço global.  
+  A janela de tipo de projeto mais comum é o Gerenciador de soluções, que controla o IDE. Uma janela do tipo de projeto controla a hierarquia global e o ItemID do contexto da seleção global e a janela se baseia na seleção do usuário para determinar a hierarquia atual. Para o windows de tipo de projeto, o ambiente fornece o serviço global <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>por quais VSPackages pode monitorar os valores atuais para os elementos abertos. Propriedade de navegação no ambiente é orientada por este serviço global.  
   
- Janelas de quadro, por outro lado, usam o DocObject dentro da janela de quadro para enviar por push o valor de SelectionContext (o trio de hierarquia/ItemID/SelectionContainer). . Janelas com moldura de usam o serviço <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> para essa finalidade. O DocObject pode enviar por push somente os valores para o contêiner de seleção, deixando os valores de locais para a hierarquia e ItemID inalterados, como é típico para documentos de filho MDI.  
+  Janelas de quadro, por outro lado, usam o DocObject dentro da janela de quadro para enviar por push o valor de SelectionContext (o trio de hierarquia/ItemID/SelectionContainer). . Janelas com moldura de usam o serviço <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> para essa finalidade. O DocObject pode enviar por push somente os valores para o contêiner de seleção, deixando os valores de locais para a hierarquia e ItemID inalterados, como é típico para documentos de filho MDI.  
   
 ### <a name="events-and-currency"></a>Eventos e moeda  
  Dois tipos de eventos podem ocorrer que afetam a noção do ambiente de moeda:  

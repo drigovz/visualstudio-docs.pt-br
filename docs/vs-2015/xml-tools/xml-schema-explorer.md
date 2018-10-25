@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 730064f3557f6ef98579d4cbd79adb451c7c9bdc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 32116de7bb88fe937980b02e1789830a27ca36b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196606"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845869"
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,44 +29,44 @@ O XML Schema Explorer está integrado com o Microsoft Visual Studio e o Editor d
   
  O XML Schema Explorer permite que você faça o seguinte:  
   
--   Obter uma visão geral rápido do conjunto de esquema.  
+- Obter uma visão geral rápido do conjunto de esquema.  
   
--   Procurar e navegar na árvore.  
+- Procurar e navegar na árvore.  
   
--   Realizar pesquisas de palavra-chave e específicas do esquema. Para obter mais informações, consulte [procurando o conjunto de esquema](../xml-tools/searching-the-schema-set.md).  
+- Realizar pesquisas de palavra-chave e específicas do esquema. Para obter mais informações, consulte [procurando o conjunto de esquema](../xml-tools/searching-the-schema-set.md).  
   
--   Adicionar os resultados de pesquisa à Exibição de Gráfico ou Exibição de Modelo de Conteúdo  
+- Adicionar os resultados de pesquisa à Exibição de Gráfico ou Exibição de Modelo de Conteúdo  
   
--   Classificar a árvore pela ordem de documento, tipo ou nome. Para obter mais informações, consulte [classificação, filtragem e agrupamento](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).  
+- Classificar a árvore pela ordem de documento, tipo ou nome. Para obter mais informações, consulte [classificação, filtragem e agrupamento](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).  
   
--   Abra o Editor de XML e pule para as localizações de código no arquivo XSD. Para obter mais informações, consulte [integração com Editor XML](../xml-tools/integration-with-xml-editor.md).  
+- Abra o Editor de XML e pule para as localizações de código no arquivo XSD. Para obter mais informações, consulte [integração com Editor XML](../xml-tools/integration-with-xml-editor.md).  
   
--   Gere o exemplo de XML para elementos globais.  
+- Gere o exemplo de XML para elementos globais.  
   
- O XML Schema Explorer fornece uma exibição hierárquica do conjunto de esquema por meio de uma exibição de árvore. O XML Schema Explorer também fornece pesquisa, filtragem, navegação e classificação. Para acessar o XML Schema Explorer, faça o seguinte:  
+  O XML Schema Explorer fornece uma exibição hierárquica do conjunto de esquema por meio de uma exibição de árvore. O XML Schema Explorer também fornece pesquisa, filtragem, navegação e classificação. Para acessar o XML Schema Explorer, faça o seguinte:  
   
--   Se você estiver usando o [iniciar o modo de exibição](../xml-tools/start-view.md), clique no **XML Schema Explorer** link.  
+- Se você estiver usando o [iniciar o modo de exibição](../xml-tools/start-view.md), clique no **XML Schema Explorer** link.  
   
--   Se você estiver usando o [exibição de gráfico](../xml-tools/graph-view.md) ou o [exibição de modelo de conteúdo](../xml-tools/content-model-view.md) e tiver nós em seu espaço de trabalho, use o menu de contexto para selecionar o XML Schema Explorer.  
+- Se você estiver usando o [exibição de gráfico](../xml-tools/graph-view.md) ou o [exibição de modelo de conteúdo](../xml-tools/content-model-view.md) e tiver nós em seu espaço de trabalho, use o menu de contexto para selecionar o XML Schema Explorer.  
   
--   Você também pode selecionar o Explorerfrom de esquema XML o **exibição** menu.  
+- Você também pode selecionar o Explorerfrom de esquema XML o **exibição** menu.  
   
--   Você pode acessar o Explorerfrom de esquema XML um arquivo. vb que tem um literal de XML de Visual Basic associado a um arquivo. xsd. Para ver o esquema definido em XML Schema Explorer, clique com botão direito um nó XML em um literal XML ou uma importação de namespace XML e selecione o **Mostrar no Schema Explorer** comando. Para obter mais informações, consulte [integração de literais XML com XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).  
+- Você pode acessar o Explorerfrom de esquema XML um arquivo. vb que tem um literal de XML de Visual Basic associado a um arquivo. xsd. Para ver o esquema definido em XML Schema Explorer, clique com botão direito um nó XML em um literal XML ou uma importação de namespace XML e selecione o **Mostrar no Schema Explorer** comando. Para obter mais informações, consulte [integração de literais XML com XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).  
   
 ## <a name="tree-view"></a>Exibição de árvore  
  O XML Schema Explorer exibe informações de conjunto de esquema pré-compilado em uma estrutura de árvore. A estrutura de árvore é organizada da seguinte maneira:  
   
--   No nível superior está o nó do conjunto de esquema.  
+- No nível superior está o nó do conjunto de esquema.  
   
--   O segundo nível contém os namespaces.  
+- O segundo nível contém os namespaces.  
   
--   O terceiro nível contém os arquivos.  
+- O terceiro nível contém os arquivos.  
   
--   O quarto nível contém os nós globais. Isso pode incluir elementos, grupos, tipos complexos, tipos simples, atributos, grupos de atributo e instruções `include`, `import` e `redefine`.  
+- O quarto nível contém os nós globais. Isso pode incluir elementos, grupos, tipos complexos, tipos simples, atributos, grupos de atributo e instruções `include`, `import` e `redefine`.  
   
- A seguir veja um exemplo de uma estrutura de árvore:  
+  A seguir veja um exemplo de uma estrutura de árvore:  
   
- ![XML Schema Explorer](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")  
+  ![XML Schema Explorer](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")  
   
 ## <a name="selection-and-activation"></a>Seleção e ativação  
  Para realçar e selecionar um nó, clique uma vez no Schema Explorer.  
@@ -82,7 +82,7 @@ O XML Schema Explorer está integrado com o Microsoft Visual Studio e o Editor d
 ## <a name="draging-and-dropping-nodes"></a>Nós de arrastar e soltar  
  Você pode arrastar e soltar nós globais, nós de arquivo e nós de namespace em uma exibição do Designer XSD. Se a exibição atual for o [iniciar o modo de exibição](../xml-tools/start-view.md), arrastar um nó para o modo de exibição será aberto o [modo de exibição gráfico](../xml-tools/graph-view.md). Se a exibição atual for o [modo de exibição do modelo de conteúdo](../xml-tools/content-model-view.md) ou modo de exibição de gráfico, o modo de exibição não será alterado quando você remove um nó nela.  
   
- Soltar arquivos na exibição adicionará todos os nós globais no arquivo para o [espaço de trabalho do Designer XSD](../xml-tools/xml-schema-designer-workspace.md). Soltar namespaces na exibição adicionará todos os nós globais no namespace para o espaço de trabalho. O espaço de trabalho é compartilhado entre todas as visualizações.  
+ Soltar arquivos na exibição adicionará todos os nós globais no arquivo para o [espaço de trabalho do Designer XSD](../xml-tools/xml-schema-designer-workspace.md). Soltar namespaces na exibição adicionará todos os nós globais no namespace para o workspace. O workspace é compartilhado entre todas as visualizações.  
   
  Você não pode arrastar e soltar nós locais ou importações.  
   
@@ -97,7 +97,7 @@ O XML Schema Explorer está integrado com o Microsoft Visual Studio e o Editor d
 -   [Integração de literais XML com XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>Consulte também  
- [Como adicionar nós ao espaço de trabalho por meio do XML Schema Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
+ [Como adicionar nós ao workspace por meio do XML Schema Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
 
 
 

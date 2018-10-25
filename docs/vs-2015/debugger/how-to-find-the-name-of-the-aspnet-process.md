@@ -22,25 +22,25 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6b036fdd9f75afc0c9976591ae0df23194b196d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 223e060083554169ab6ffdb95faf4979e9466d02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825615"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Como localizar o nome do processo ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para anexar a um aplicativo do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] em execução, você precisará saber o nome do processo do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]:  
   
--   Se estiver executando o IIS 6.0 ou IIS 7.0, o nome será w3wp.exe.  
+- Se estiver executando o IIS 6.0 ou IIS 7.0, o nome será w3wp.exe.  
   
--   Se estiver executando uma versão anterior do IIS, o nome será aspnet_wp.exe.  
+- Se estiver executando uma versão anterior do IIS, o nome será aspnet_wp.exe.  
   
- Para aplicativos criados usando [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] ou versões posteriores, o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] código pode residir no sistema de arquivos e executar no servidor de teste WebDev.WebServer.exe. Nesse caso, você deve anexar a WebDev.WebServer.exe em vez do processo do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Essa situação aplica-se somente à depuração local.  
+  Para aplicativos criados usando [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] ou versões posteriores, o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] código pode residir no sistema de arquivos e executar no servidor de teste WebDev.WebServer.exe. Nesse caso, você deve anexar a WebDev.WebServer.exe em vez do processo do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Essa situação aplica-se somente à depuração local.  
   
- Aplicativos ASP antigos são executados dentro do processo inetinfo.exe do IIS quando ele está sendo executado no processo.  
+  Aplicativos ASP antigos são executados dentro do processo inetinfo.exe do IIS quando ele está sendo executado no processo.  
   
 > [!NOTE]
 >  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

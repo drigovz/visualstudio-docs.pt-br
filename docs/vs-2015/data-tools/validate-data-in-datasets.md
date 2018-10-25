@@ -27,12 +27,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5dd01b20e84bbe39e0c082a0b598fb6742f33d9f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa90ddb397d1c18e88ab8f25e2a0c3aee3e4d9a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279013"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891122"
 ---
 # <a name="validate-data-in-datasets"></a>Validar dados em conjuntos de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,21 +47,21 @@ Validação de dados é o processo de confirmar que os valores que estão sendo 
 ## <a name="validate-data"></a>Validar dados  
  Validação dentro de um conjunto de dados pode ser feita das seguintes maneiras:  
   
--   Criando sua própria validação específica de aplicativo que pode verificar valores em uma coluna de dados individuais durante alterações.  Para obter mais informações, consulte [como: validar dados durante alterações de coluna](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- Criando sua própria validação específica de aplicativo que pode verificar valores em uma coluna de dados individuais durante alterações.  Para obter mais informações, consulte [como: validar dados durante alterações de coluna](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
--   Criando sua própria validação de específicos do aplicativo que pode verificar valores de um inteiro de dados está mudando a linha. Para obter mais informações, consulte [como: validar dados durante alterações de linha](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- Criando sua própria validação de específicos do aplicativo que pode verificar valores de um inteiro de dados está mudando a linha. Para obter mais informações, consulte [como: validar dados durante alterações de linha](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
--   Criando chaves, restrições exclusivas, e assim por diante como parte da definição de esquema real do conjunto de dados. Para obter mais informações sobre como incorporar validação na definição de esquema, consulte [restringir uma coluna de dados para conter valores exclusivos](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).  
+- Criando chaves, restrições exclusivas, e assim por diante como parte da definição de esquema real do conjunto de dados. Para obter mais informações sobre como incorporar validação na definição de esquema, consulte [restringir uma coluna de dados para conter valores exclusivos](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).  
   
--   Definindo as propriedades do <xref:System.Data.DataColumn> objeto, como <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, e <xref:System.Data.DataColumn.Unique%2A>.  
+- Definindo as propriedades do <xref:System.Data.DataColumn> objeto, como <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, e <xref:System.Data.DataColumn.Unique%2A>.  
   
- Vários eventos são gerados pelo <xref:System.Data.DataTable> quando uma alteração está ocorrendo em um registro de objeto:  
+  Vários eventos são gerados pelo <xref:System.Data.DataTable> quando uma alteração está ocorrendo em um registro de objeto:  
   
--   O <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.ColumnChanged> eventos são gerados durante e após cada alteração em uma coluna individual. O <xref:System.Data.DataTable.ColumnChanging> evento é útil quando você deseja validar alterações em colunas específicas. Informações sobre a alteração proposta são passadas como um argumento com o evento. Para obter mais informações, consulte [como: validar dados durante alterações de coluna](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- O <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.ColumnChanged> eventos são gerados durante e após cada alteração em uma coluna individual. O <xref:System.Data.DataTable.ColumnChanging> evento é útil quando você deseja validar alterações em colunas específicas. Informações sobre a alteração proposta são passadas como um argumento com o evento. Para obter mais informações, consulte [como: validar dados durante alterações de coluna](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
--   O <xref:System.Data.DataTable.RowChanging> e <xref:System.Data.DataTable.RowChanged> eventos são gerados durante e após qualquer alteração em uma linha. O <xref:System.Data.DataTable.RowChanging> evento é mais geral. Ele indica que uma alteração está ocorrendo em algum lugar na linha, mas você não souber qual coluna foi alterada. Para obter mais informações, consulte [como: validar dados durante alterações de linha](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- O <xref:System.Data.DataTable.RowChanging> e <xref:System.Data.DataTable.RowChanged> eventos são gerados durante e após qualquer alteração em uma linha. O <xref:System.Data.DataTable.RowChanging> evento é mais geral. Ele indica que uma alteração está ocorrendo em algum lugar na linha, mas você não souber qual coluna foi alterada. Para obter mais informações, consulte [como: validar dados durante alterações de linha](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
- Por padrão, cada alteração em uma coluna, portanto, gera quatro eventos. A primeira é a <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.ColumnChanged> eventos para a coluna específica que está sendo alterado. Em seguida, estão os <xref:System.Data.DataTable.RowChanging> e <xref:System.Data.DataTable.RowChanged> eventos. Se várias alterações estão sendo feitas para a linha, os eventos serão gerados para cada alteração.  
+  Por padrão, cada alteração em uma coluna, portanto, gera quatro eventos. A primeira é a <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.ColumnChanged> eventos para a coluna específica que está sendo alterado. Em seguida, estão os <xref:System.Data.DataTable.RowChanging> e <xref:System.Data.DataTable.RowChanged> eventos. Se várias alterações estão sendo feitas para a linha, os eventos serão gerados para cada alteração.  
   
 > [!NOTE]
 >  A linha de dados <xref:System.Data.DataRow.BeginEdit%2A> método desativa a <xref:System.Data.DataTable.RowChanging> e <xref:System.Data.DataTable.RowChanged> eventos após cada alteração de coluna individual. Nesse caso, o evento não é gerado até que o <xref:System.Data.DataRow.EndEdit%2A> método foi chamado, quando o <xref:System.Data.DataTable.RowChanging> e <xref:System.Data.DataTable.RowChanged> eventos são gerados apenas uma vez. Para obter mais informações, consulte [desativar restrições ao preencher um conjunto de dados](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
@@ -94,13 +94,13 @@ Validação de dados é o processo de confirmar que os valores que estão sendo 
   
  Você pode validar dados quando o valor em uma coluna de dados é alterado respondendo ao <xref:System.Data.DataTable.ColumnChanging> eventos. Quando gerado, esse evento passa um argumento de evento (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>) que contém o valor proposto para a coluna atual. Com base no conteúdo de `e.ProposedValue`, você pode:  
   
--   Aceite o valor proposto, sem fazer nada.  
+- Aceite o valor proposto, sem fazer nada.  
   
--   Rejeitar o valor proposto, definindo o erro de coluna (<xref:System.Data.DataRow.SetColumnError%2A>) de dentro do manipulador de eventos de alteração de coluna.  
+- Rejeitar o valor proposto, definindo o erro de coluna (<xref:System.Data.DataRow.SetColumnError%2A>) de dentro do manipulador de eventos de alteração de coluna.  
   
--   Opcionalmente, usar um <xref:System.Windows.Forms.ErrorProvider> controle para exibir uma mensagem de erro para o usuário. Para obter mais informações, consulte [componente ErrorProvider](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6).  
+- Opcionalmente, usar um <xref:System.Windows.Forms.ErrorProvider> controle para exibir uma mensagem de erro para o usuário. Para obter mais informações, consulte [componente ErrorProvider](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6).  
   
- Validação também pode ser executada durante a <xref:System.Data.DataTable.RowChanging> eventos. Para obter mais informações, consulte [como: validar dados durante alterações de linha](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+  Validação também pode ser executada durante a <xref:System.Data.DataTable.RowChanging> eventos. Para obter mais informações, consulte [como: validar dados durante alterações de linha](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
 ## <a name="validate-data-during-row-changes"></a>Validar dados durante alterações de linha  
  Você pode escrever código para verificar se cada coluna que você deseja validar contém dados que atenda aos requisitos do seu aplicativo. Para fazer isso definindo a coluna para indicar que ele contém um erro se um valor proposto for inaceitável. Os exemplos a seguir definem um erro de coluna quando o `Quantity` coluna é 0 ou menos. Os manipuladores de eventos de alteração de linha devem se parecer com os exemplos a seguir.  

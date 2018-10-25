@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a814e3d07c2e51a8f946ae9a7b6eff03ea3c2e01
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6196f8b8a058424732469ff954d607e00c97d396
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859231"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819765"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Visão geral da interface de usuário das Ferramentas de Linguagem Específica do Domínio
 Quando você abre uma solução de ferramentas de linguagem específica do domínio (ferramentas DSL) no Visual Studio, a interface do usuário será semelhante a figura a seguir.
@@ -28,7 +28,7 @@ Quando você abre uma solução de ferramentas de linguagem específica do domí
  A tabela a seguir explica como as partes da interface do usuário são usadas.
 
 |**Elemento**|**Definição**|
-|-----------------|--------------------|
+|-|-|
 |Diagrama|O diagrama exibe o modelo de domínio.<br /><br /> O diagrama tem dois lados. Um dos lados define os tipos dos elementos em seus modelos. Por outro lado define como seus modelos aparecerá na tela.|
 |Caixa de Ferramentas|Arraste as ferramentas da caixa de ferramentas para adicionar classes de domínio e tipos ao diagrama de forma. Para adicionar mapas de formas, conectores e relações, a ferramenta, clique o nó de origem no diagrama e, em seguida, o nó de destino.|
 |DSL Explorer|**Gerenciador de DSL** é exibida quando uma definição de DSL é a janela ativa. Ele mostra a DSL como uma árvore. Gerenciador de DSL permite editar os recursos do modelo que não são exibidos no diagrama. Por exemplo, você pode adicionar itens de caixa de ferramentas e ative o processo de validação usando o **Gerenciador de DSL**.|
@@ -42,7 +42,7 @@ Quando você abre uma solução de ferramentas de linguagem específica do domí
  A tabela a seguir explica alguns dos elementos do diagrama de modelo de domínio.
 
 |**Termo**|**Definição**|
-|--------------|--------------------|
+|-|-|
 |Classe de domínio|Classes de domínio são os tipos de elementos em seus modelos.<br /><br /> Uma classe de domínio pode aparecer mais de uma vez em um diagrama, se ele é o destino de mais de uma relação.<br /><br /> Para adicionar uma classe de domínio, arraste a ferramenta de classe de domínio do **caixa de ferramentas** para o **Classes e relacionamentos** lado do diagrama.|
 |Relacionamento de domínio|As relações de domínio são os tipos de links entre os elementos em seus modelos.<br /><br /> Uma *relacionamento de incorporação* indica que o elemento de destino é de propriedade ou contido pelo elemento de origem e aparece como uma linha sólida. Cada elemento em um modelo deve ser o destino de uma relação de incorporação, para que o modelo de uma árvore de formulários. Um *relação de referência* indica um link geral entre elementos de modelo e aparece como uma linha tracejada. Qualquer elemento pode ter qualquer número de links de referência.<br /><br /> Criar uma relação clicando na ferramenta sobre o **caixa de ferramentas**, clicando na classe de domínio de origem e, em seguida, clicando na classe de destino.|
 |Formas e Conectores|Formas de especificam como os elementos de modelo devem ser exibidos em um diagrama DSL., conectores de especificam as linhas em um diagrama DSL que pode ser usado para exibir relações.<br /><br /> Para criar uma forma ou um conector, arraste a ferramenta para o **elementos de diagrama** lado do diagrama.|

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f1cd13ac0e167b407d01d2a5d769de16f6ce4da0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e945dbafbf7107b616a654d952bd8690bf72788a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904707"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Página de publicação, Designer de projeto (desenvolvimento do Office no Visual Studio)
   O **Publish** página do **Designer de projeto** é usado para configurar as propriedades de implantação.  
@@ -40,7 +40,7 @@ ms.locfileid: "35669907"
   
  O local da pasta de publicação é o diretório ao qual o Visual Studio copia os arquivos de solução, como os manifestos, assemblies e outros arquivos do build. Você deve ter acesso de gravação a esse diretório.  
   
- As opções incluem o computador local, um compartilhamento de arquivo UNC ou um site HTTP/HTTPS. O caminho pode ser local (*c:\foldername\publishfolder*), relativo (*publicar\\*), ou em um local totalmente qualificado (*\\\servername\foldername* ou http://*servername/foldername*).  
+ As opções incluem o computador local, um compartilhamento de arquivo UNC ou um site HTTP/HTTPS. O caminho pode ser local (*c:\foldername\publishfolder*), relativo (*publicar\\*), ou em um local totalmente qualificado (*\\\servername\foldername* ou http://<em>servername/foldername</em>).  
   
  Por padrão, é o local de publicação *http://localhost/projectname/* se você tiver o IIS instalado, ou o *publicar\\*  directory se você não tiver o IIS instalado.  
   
@@ -49,7 +49,7 @@ ms.locfileid: "35669907"
   
  A URL da pasta de instalação é o diretório do qual o usuário final instalará a personalização. Também é o caminho que a solução usará para verificar se há atualizações. O caminho pode ser o mesmo que o local da pasta de publicação, mas isso não é um requisito.  
   
- As opções incluem o computador local, um compartilhamento de arquivo UNC ou um site HTTP/HTTPS. O caminho pode ser local (*c:\foldername\publishfolder*), relativo (*publicar\\*), ou em um local totalmente qualificado (*\\\servername\foldername* ou http://*servername/foldername*). Todos os locais HTTP/HTTPS devem ser criados com caracteres US-ASCII. Não há suporte para caracteres Unicode.  
+ As opções incluem o computador local, um compartilhamento de arquivo UNC ou um site HTTP/HTTPS. O caminho pode ser local (*c:\foldername\publishfolder*), relativo (*publicar\\*), ou em um local totalmente qualificado (*\\\servername\foldername* ou http://<em>servername/foldername</em>). Todos os locais HTTP/HTTPS devem ser criados com caracteres US-ASCII. Não há suporte para caracteres Unicode.  
   
  Se o caminho de instalação for definido, os arquivos de personalização devem ser nesse local para os usuários instalarem a personalização. O local deve ser definido somente se você souber o local de implantação final.  
   
@@ -60,55 +60,55 @@ ms.locfileid: "35669907"
  **Pré-requisitos**  
  Os pré-requisitos podem ser incluídos com o programa de instalação ou baixados por demanda durante a instalação.  
   
--   **Baixar pré-requisitos do site do fornecedor do componente**: Use esta opção para baixar esses pré-requisitos da Microsoft.  
+- **Baixar pré-requisitos do site do fornecedor do componente**: Use esta opção para baixar esses pré-requisitos da Microsoft.  
   
--   **Baixar os pré-requisitos no mesmo local que meu aplicativo**: Use esta opção para os pré-requisitos no seu instalador do pacote. Incluir os arquivos de pré-requisito com o programa de instalação aumenta o tamanho da solução.  
+- **Baixar os pré-requisitos no mesmo local que meu aplicativo**: Use esta opção para os pré-requisitos no seu instalador do pacote. Incluir os arquivos de pré-requisito com o programa de instalação aumenta o tamanho da solução.  
   
--   **Baixar os pré-requisitos no seguinte local**: Use esta opção para disponibilizar os pré-requisitos para os usuários finais separadamente como outro programa de instalação em uma página da web ou compartilhamento de rede.  
+- **Baixar os pré-requisitos no seguinte local**: Use esta opção para disponibilizar os pré-requisitos para os usuários finais separadamente como outro programa de instalação em uma página da web ou compartilhamento de rede.  
   
- **Atualizações**  
- O intervalo de atualização determina a frequência com que a solução verifica se há atualizações. O padrão é verificar a cada sete dias.  
+  **Atualizações**  
+  O intervalo de atualização determina a frequência com que a solução verifica se há atualizações. O padrão é verificar a cada sete dias.  
   
- Verificar se há atualizações sempre que uma personalização no nível de documento ou um suplemento do VSTO é carregada seria mantê-lo atualizado, mas isso afetaria o desempenho de inicialização.  
+  Verificar se há atualizações sempre que uma personalização no nível de documento ou um suplemento do VSTO é carregada seria mantê-lo atualizado, mas isso afetaria o desempenho de inicialização.  
   
- Se você estiver implantando por meio de um CD ou unidade removível, defina isso como **nunca verificar se há atualizações**.  
+  Se você estiver implantando por meio de um CD ou unidade removível, defina isso como **nunca verificar se há atualizações**.  
   
- **Opções (Descrição)**  
- As opções de publicação para as propriedades a seguir podem ser definidas:  
+  **Opções (Descrição)**  
+  As opções de publicação para as propriedades a seguir podem ser definidas:  
   
--   Idioma de publicação: a localidade da solução do Office.  
+- Idioma de publicação: a localidade da solução do Office.  
   
--   Nome do publicador: o nome da empresa ou o desenvolvedor como ele aparece na **adicionar ou remover programas** ou **programas e recursos**.  
+- Nome do publicador: o nome da empresa ou o desenvolvedor como ele aparece na **adicionar ou remover programas** ou **programas e recursos**.  
   
--   Nome do produto: o nome da solução do Office, como ele aparece na **adicionar ou remover programas** ou **programas e recursos**.  
+- Nome do produto: o nome da solução do Office, como ele aparece na **adicionar ou remover programas** ou **programas e recursos**.  
   
--   URL de suporte: o local para os usuários finais contatar o suporte técnico para a solução do Office.  
+- URL de suporte: o local para os usuários finais contatar o suporte técnico para a solução do Office.  
   
- **Opções (configurações do Office)**  
- As opções de publicação para as propriedades a seguir podem ser definidas:  
+  **Opções (configurações do Office)**  
+  As opções de publicação para as propriedades a seguir podem ser definidas:  
   
--   Nome da solução: o nome da solução do Office como ela aparece no aplicativo do Office.  
+- Nome da solução: o nome da solução do Office como ela aparece no aplicativo do Office.  
   
--   Descrição: a descrição da solução do Office como ela aparece no aplicativo do Office.  
+- Descrição: a descrição da solução do Office como ela aparece no aplicativo do Office.  
   
--   Comportamento de carregamento de suplementos do VSTO.  
+- Comportamento de carregamento de suplementos do VSTO.  
   
-    -   Carregar na inicialização: Especifica que o suplemento do VSTO carrega quando o aplicativo do Office é iniciado.  
+  -   Carregar na inicialização: Especifica que o suplemento do VSTO carrega quando o aplicativo do Office é iniciado.  
   
-    -   Carregar sob demanda: Especifica que o suplemento do VSTO carrega quando o aplicativo requer, como quando um usuário clica em um elemento de interface do usuário que usa a funcionalidade no suplemento do VSTO.  
+  -   Carregar sob demanda: Especifica que o suplemento do VSTO carrega quando o aplicativo requer, como quando um usuário clica em um elemento de interface do usuário que usa a funcionalidade no suplemento do VSTO.  
   
- **Idioma de publicação** essa opção define o idioma dos termos de licença do Software Microsoft e inclui os pacotes de idiomas na lista de pré-requisitos. Ele não afeta o idioma da personalização. O idioma no programa de instalação é determinado pelos idiomas instalados do Visual Studio.  
+  **Idioma de publicação** essa opção define o idioma dos termos de licença do Software Microsoft e inclui os pacotes de idiomas na lista de pré-requisitos. Ele não afeta o idioma da personalização. O idioma no programa de instalação é determinado pelos idiomas instalados do Visual Studio.  
   
- Para obter mais informações sobre como alterar o **idioma de publicação**, consulte [como: alterar o idioma de publicação para um aplicativo ClickOnce](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
+  Para obter mais informações sobre como alterar o **idioma de publicação**, consulte [como: alterar o idioma de publicação para um aplicativo ClickOnce](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
   
- **Versão da publicação**  
- Define o número de versão para a personalização. Quando o número de versão é alterado, o aplicativo é publicado como uma atualização. Uma nova pasta é criada para cada versão durante o processo de compilação para evitar a substituição da versão anteriormente publicada. Cada parte da versão de publicação (**principais**, **secundárias**, **Build**, **revisão**) pode conter até cinco dígitos.  
+  **Versão da publicação**  
+  Define o número de versão para a personalização. Quando o número de versão é alterado, o aplicativo é publicado como uma atualização. Uma nova pasta é criada para cada versão durante o processo de compilação para evitar a substituição da versão anteriormente publicada. Cada parte da versão de publicação (**principais**, **secundárias**, **Build**, **revisão**) pode conter até cinco dígitos.  
   
- **Incrementar automaticamente a revisão com cada versão**  
- Opcional. Quando selecionada (padrão), o **revisão** parte do número de versão é incrementado em um cada vez que a personalização é publicada. Isso faz com que a personalização a ser publicado como uma atualização.  
+  **Incrementar automaticamente a revisão com cada versão**  
+  Opcional. Quando selecionada (padrão), o **revisão** parte do número de versão é incrementado em um cada vez que a personalização é publicada. Isso faz com que a personalização a ser publicado como uma atualização.  
   
- **Publicar Agora**  
- Publica o aplicativo usando as configurações atuais. Equivalente à **terminar** botão na **Assistente de publicação**.  
+  **Publicar Agora**  
+  Publica o aplicativo usando as configurações atuais. Equivalente à **terminar** botão na **Assistente de publicação**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)   

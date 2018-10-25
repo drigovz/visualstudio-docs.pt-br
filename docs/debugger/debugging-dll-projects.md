@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5118aafae296d839ad182d51b996da11a6bc556
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 04ffdd5d0256ae0fc42b89dfa850fb0ae2d36748
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057392"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818660"
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Depurando projetos de DLL do Visual Studio
 Os seguintes modelos do Visual Studio criam DLLs:  
@@ -54,24 +54,24 @@ Os seguintes modelos do Visual Studio criam DLLs:
 ##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Maneiras de depurar a DLL  
  Cada um dos projetos nesta seção cria uma DLL. Você não pode executar uma DLL diretamente. Ela deve ser chamada por um aplicativo, geralmente um EXE. Para obter mais informações, consulte [criando e gerenciando projetos do Visual C++](/cpp/ide/creating-and-managing-visual-cpp-projects). O aplicativo de chamada pode conter qualquer um dos seguintes critérios:  
   
--   Um aplicativo compilado em outro projeto na mesma solução do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que contém a biblioteca de classes.  
+- Um aplicativo compilado em outro projeto na mesma solução do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que contém a biblioteca de classes.  
   
--   Um aplicativo existente já implantado em um teste ou em um computador de produção.  
+- Um aplicativo existente já implantado em um teste ou em um computador de produção.  
   
--   Localizado na Web e acessado por meio de uma URL.  
+- Localizado na Web e acessado por meio de uma URL.  
   
--   Um aplicativo da Web que contém uma página da Web que insere a DLL.  
+- Um aplicativo da Web que contém uma página da Web que insere a DLL.  
   
 ###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Depurar o aplicativo de chamada  
 Para depurar uma DLL, comece depurando o aplicativo de chamada, normalmente um EXE ou um aplicativo Web. Há várias maneiras de depurá-lo.  
   
--   Se você tiver um projeto para o aplicativo de chamada, você pode abrir o projeto e iniciar a execução do **depurar** menu. Para obter mais informações, consulte [Introdução ao depurador](../debugger/getting-started-with-the-debugger.md).  
+- Se você tiver um projeto para o aplicativo de chamada, você pode abrir o projeto e iniciar a execução do **depurar** menu. Para obter mais informações, consulte [Introdução ao depurador](../debugger/getting-started-with-the-debugger.md).  
   
--   Se o aplicativo de chamada for um programa existente já implantado em um teste ou em um computador de produção e já estiver em execução, você poderá conectar-se a ele. Use este método se a DLL for um controle hospedado pelo Internet Explorer ou um controle em uma página da Web. Para obter mais informações, consulte [como: anexar a um processo em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+- Se o aplicativo de chamada for um programa existente já implantado em um teste ou em um computador de produção e já estiver em execução, você poderá conectar-se a ele. Use este método se a DLL for um controle hospedado pelo Internet Explorer ou um controle em uma página da Web. Para obter mais informações, consulte [como: anexar a um processo em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
--   Você pode depurá-lo no projeto da DLL. Para obter mais informações, consulte [como: depurar de um projeto de DLL](../debugger/how-to-debug-from-a-dll-project.md).  
+- Você pode depurá-lo no projeto da DLL. Para obter mais informações, consulte [como: depurar de um projeto de DLL](../debugger/how-to-debug-from-a-dll-project.md).  
   
--   Você pode depurá-lo partir o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [janela imediata](#vxtskdebuggingdllprojectstheimmediatewindow). Nesse caso, o **imediato** janela desempenha a função do aplicativo.  
+- Você pode depurá-lo partir o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [janela imediata](#vxtskdebuggingdllprojectstheimmediatewindow). Nesse caso, o **imediato** janela desempenha a função do aplicativo.  
   
 Antes de começar a depurar o aplicativo de chamada, convém definir um ponto de interrupção na biblioteca de classes. Para obter mais informações, consulte [usando pontos de interrupção](../debugger/using-breakpoints.md). Quando o ponto de interrupção for atingido, você poderá percorrer o código, observando a ação em cada linha até isolar o problema. Para obter mais informações, consulte [navegar pelo código no depurador](../debugger/navigating-through-code-with-the-debugger.md).
   
@@ -110,7 +110,7 @@ Se você estiver depurando uma DLL externa ao seu projeto, os recursos de depura
 
 O projeto precisa ser capaz de localizar a DLL e o arquivo. PDB usada para depuração. Você pode criar uma tarefa de compilação personalizada para copiar esses arquivos para o  **\<pasta do projeto > \Debug** pasta de saída, ou você pode copiar os arquivos na pasta de saída manualmente.
 
-Você pode definir facilmente os locais dos arquivos de cabeçalho e *.lib nas páginas de propriedades (projeto do C++ com o botão direito e escolha **propriedades da exibição**e, em seguida, escolha **todas as configurações de**) sem a necessidade de copiar -los em sua pasta de saída:
+Você pode definir facilmente os locais dos arquivos de cabeçalho e <em>arquivos. lib nas páginas de propriedades (projeto do C++ com o botão direito e escolha * * Propriedades de exibição</em><em>e, em seguida, escolha **todas as configurações de</em>* ) sem a necessidade de copiá-los em sua pasta de saída:
 
 - Pasta C/C++ (categoria geral) – Especifique a pasta que contém arquivos de cabeçalho na **diretórios de inclusão adicionais** campo.
 - Pasta do vinculador (categoria geral) – Especifique a pasta que contém o arquivo. lib na **diretórios de bibliotecas adicionais** campo. 

@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b56c4830c61ea0484d19195ab230fcd297a8588
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e983022764bc8a790987e3e0dc6045eea098a2ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913833"
 ---
 # <a name="mip-map-generation-variant"></a>Variante de geração de Mip-map
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,19 +36,19 @@ Habilita mapas mip em texturas que não são destinos de renderização.
 ## <a name="remarks"></a>Comentários  
  A geração do mapa mip é forçada em cada chamada de `ID3D11Device::CreateTexture2D` que cria uma textura de origem. A geração do mapa mip é forçada, especificamente, quando o objeto D3D11_TEXTUR2D_DESC apresentado a `pDesc` descreve um recurso do sombreador inalterável, ou seja:  
   
--   O membro BindFlags tem apenas o sinalizador D3D11_BIND_SHADER_RESOURCE definido.  
+- O membro BindFlags tem apenas o sinalizador D3D11_BIND_SHADER_RESOURCE definido.  
   
--   O membro Uso está definido como D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.  
+- O membro Uso está definido como D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.  
   
--   O membro CPUAccessFlags está definido como 0 (sem acesso à CPU).  
+- O membro CPUAccessFlags está definido como 0 (sem acesso à CPU).  
   
--   O membro SampleDesc tem seu membro Count definido como 1 (sem MSAA (suavização de amostra múltipla)).  
+- O membro SampleDesc tem seu membro Count definido como 1 (sem MSAA (suavização de amostra múltipla)).  
   
--   O membro MipLevels está definido como 1 (não há mapas mip).  
+- O membro MipLevels está definido como 1 (não há mapas mip).  
   
- Quando o aplicativo fornece os dados iniciais, o formato da textura deve permitir a geração de mapas mip automaticamente — conforme determinado por D3D11_FORMAT_SUPPORT_MIP_AUTOGEN —, a menos que o formato usado seja BC1, BC2 ou BC3. Caso contrário, a textura não é modificada e o mapa mip não é gerado após o fornecimento dos dados iniciais.  
+  Quando o aplicativo fornece os dados iniciais, o formato da textura deve permitir a geração de mapas mip automaticamente — conforme determinado por D3D11_FORMAT_SUPPORT_MIP_AUTOGEN —, a menos que o formato usado seja BC1, BC2 ou BC3. Caso contrário, a textura não é modificada e o mapa mip não é gerado após o fornecimento dos dados iniciais.  
   
- Quando há mapas mip gerados automaticamente para uma textura, as chamadas de `ID3D11Device::CreateShaderResourceView` são modificadas durante a reprodução para usar a cadeia de mip durante a amostragem da textura.  
+  Quando há mapas mip gerados automaticamente para uma textura, as chamadas de `ID3D11Device::CreateShaderResourceView` são modificadas durante a reprodução para usar a cadeia de mip durante a amostragem da textura.  
   
 ## <a name="example"></a>Exemplo  
  O **geração de mapas Mip** variante pode ser reproduzida usando códigos da seguinte forma:  

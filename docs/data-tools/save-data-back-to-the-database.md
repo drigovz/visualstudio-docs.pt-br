@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177338"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916901"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvar dados novamente no banco de dados
 
@@ -73,21 +73,21 @@ Você pode atualizar o conteúdo de um conjunto de dados por *mesclando* -lo com
 Ao mesclar conjuntos de dados, você pode passar um argumento booleano (`preserveChanges`) que informa o <xref:System.Data.DataSet.Merge%2A> método se deseja manter modificações existentes no conjunto de dados de destino. Como conjuntos de dados mantém várias versões de registros, é importante ter em mente que mais de uma versão dos registros está sendo mesclada. A tabela a seguir mostra como um registro em dois conjuntos de dados é mesclado:
 
 |DataRowVersion|Conjunto de dados de destino|Conjunto de dados de origem|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Original|James Wilson|James C. Wilson|
 |Atual|Jim Wilson|James C. Wilson|
 
 Chamar o <xref:System.Data.DataSet.Merge%2A> método na tabela anterior com `preserveChanges=false targetDataset.Merge(sourceDataset)` resulta nos seguintes dados:
 
 |DataRowVersion|Conjunto de dados de destino|Conjunto de dados de origem|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Original|James C. Wilson|James C. Wilson|
 |Atual|James C. Wilson|James C. Wilson|
 
 Chamar o <xref:System.Data.DataSet.Merge%2A> método com `preserveChanges = true targetDataset.Merge(sourceDataset, true)` resulta nos seguintes dados:
 
 |DataRowVersion|Conjunto de dados de destino|Conjunto de dados de origem|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Original|James C. Wilson|James C. Wilson|
 |Atual|Jim Wilson|James C. Wilson|
 
@@ -128,7 +128,7 @@ O <xref:System.Data.DataRow.RowState%2A> propriedade de um <xref:System.Data.Dat
 A tabela a seguir fornece detalhes sobre os valores possíveis do <xref:System.Data.DataRowState> enumeração:
 
 |Valor de DataRowState|Descrição|
-|------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowState.Added>|A linha foi adicionada como um item para um <xref:System.Data.DataRowCollection>. (Uma linha nesse estado não tem uma versão original correspondente, pois ela não existia quando a última <xref:System.Data.DataRow.AcceptChanges%2A> método foi chamado).|
 |<xref:System.Data.DataRowState.Deleted>|A linha foi excluída usando o <xref:System.Data.DataRow.Delete%2A> de um <xref:System.Data.DataRow> objeto.|
 |<xref:System.Data.DataRowState.Detached>|A linha foi criada, mas não faz parte de nenhum <xref:System.Data.DataRowCollection>. Um <xref:System.Data.DataRow> objeto estiver nesse estado imediatamente após ele ter sido criado, antes ele foi adicionado a uma coleção e depois que ele foi removido de uma coleção.|
@@ -142,7 +142,7 @@ Conjuntos de dados mantêm várias versões de registros. O <xref:System.Data.Da
 A tabela a seguir fornece detalhes sobre os valores possíveis do <xref:System.Data.DataRowVersion> enumeração:
 
 |Valor de DataRowVersion|Descrição|
-|--------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|A versão atual de um registro contém todas as modificações que foram executadas no registro desde a última vez <xref:System.Data.DataRow.AcceptChanges%2A> foi chamado. Se a linha tiver sido excluída, não há nenhuma versão atual.|
 |<xref:System.Data.DataRowVersion.Default>|O valor padrão de um registro, conforme definido pela fonte de dados ou esquema de conjunto de dados.|
 |<xref:System.Data.DataRowVersion.Original>|A versão original de um registro é uma cópia do registro como ele era que as últimas alterações foram confirmadas no conjunto de dados. Em termos práticos, isso é normalmente a versão de um registro como lida de uma fonte de dados.|

@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e80857ae1cfafdc6733af3eec78735dc249f4905
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94d13514800bac80723031c6bba7920d28ac83e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287476"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877290"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: implementar IDisposable corretamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |NomeDoTipo|ImplementIDisposableCorrectly|
@@ -39,23 +40,23 @@ ms.locfileid: "49287476"
 ## <a name="cause"></a>Causa
  `IDisposable` não foi implementado corretamente. Alguns motivos para esse problema estão listados aqui:
 
--   IDisposable é novamente implementado na classe.
+- IDisposable é novamente implementado na classe.
 
--   Finalizar novamente é substituído.
+- Finalizar novamente é substituído.
 
--   Dispose é substituído.
+- Dispose é substituído.
 
--   Dispose () não é público, sealed ou chamado Dispose.
+- Dispose () não é público, sealed ou chamado Dispose.
 
--   Dispose (bool) não é protegido, virtual ou sem lacre.
+- Dispose (bool) não é protegido, virtual ou sem lacre.
 
--   Tipos sem lacre, Dispose () deve chamar Dispose (True).
+- Tipos sem lacre, Dispose () deve chamar Dispose (True).
 
--   Para tipos sem lacre, a implementação de Finalize não chamar Dispose (bool) de um ou ambos os ou o finalizador da classe case.
+- Para tipos sem lacre, a implementação de Finalize não chamar Dispose (bool) de um ou ambos os ou o finalizador da classe case.
 
- Violação de qualquer um desses padrões irá disparar esse aviso.
+  Violação de qualquer um desses padrões irá disparar esse aviso.
 
- Cada raiz sem lacre IDisposable tipo deve fornecer seu próprio método void Dispose (bool) virtual protegido. Dispose () deve chamar Dipose(true) e Finalize deve chamar Dispose (False). Se você estiver criando um tipo de IDisposable raiz sem lacre, você deve definir Dispose (bool) e chamá-lo. Para obter mais informações, consulte [limpeza de recursos não gerenciados](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) na [diretrizes de Design do Framework](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) seção da documentação do .NET Framework.
+  Cada raiz sem lacre IDisposable tipo deve fornecer seu próprio método void Dispose (bool) virtual protegido. Dispose () deve chamar Dipose(true) e Finalize deve chamar Dispose (False). Se você estiver criando um tipo de IDisposable raiz sem lacre, você deve definir Dispose (bool) e chamá-lo. Para obter mais informações, consulte [limpeza de recursos não gerenciados](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) na [diretrizes de Design do Framework](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) seção da documentação do .NET Framework.
 
 ## <a name="rule-description"></a>Descrição da Regra
  Todos os tipos IDisposable devem implementar o padrão Dispose corretamente.

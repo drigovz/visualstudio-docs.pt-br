@@ -18,12 +18,12 @@ caps.latest.revision: 34
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3d6ab30934750f2c825029c1433ea7ca68447dcd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 551f2762886a9c6b8e7395d536538ac47752d3ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878148"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Novidades no design no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,35 +39,35 @@ Esta versão do Visual Studio inclui os seguintes aprimoramentos para ajudá-lo 
 
  Outros aprimoramentos incluem:
 
--   **Diagramas de cima para baixo melhorados**. Para médias e grandes soluções do Visual Studio, agora você pode usar um menu de arquitetura simplificado para obter um código mais útil mapas para sua solução. Os assemblies da sua solução são agrupados pelas pastas de solução, para que você possa vê-los no contexto e aproveitar o esforço feito para estruturar a solução. Você verá imediatamente projeto e referências de assembly e, em seguida, os tipos de link que aparecem. Além disso, os assemblies externos à solução são agrupados de forma mais compacta.
+- **Diagramas de cima para baixo melhorados**. Para médias e grandes soluções do Visual Studio, agora você pode usar um menu de arquitetura simplificado para obter um código mais útil mapas para sua solução. Os assemblies da sua solução são agrupados pelas pastas de solução, para que você possa vê-los no contexto e aproveitar o esforço feito para estruturar a solução. Você verá imediatamente projeto e referências de assembly e, em seguida, os tipos de link que aparecem. Além disso, os assemblies externos à solução são agrupados de forma mais compacta.
 
--   **Projetos de teste têm estilo diferente e podem ser filtrados**. Você pode agora mais fácil e rapidamente identificar os projetos de teste no mapa porque eles têm estilos diferentes. Eles também podem ser filtrados para que você possa se concentrar no código de trabalho do aplicativo.
+- **Projetos de teste têm estilo diferente e podem ser filtrados**. Você pode agora mais fácil e rapidamente identificar os projetos de teste no mapa porque eles têm estilos diferentes. Eles também podem ser filtrados para que você possa se concentrar no código de trabalho do aplicativo.
 
--   **Links de dependência externa de simplificado**. Links de dependência não mais representam a herança de System. Object, System. ValueType, System. Enum e System. Delegate, que facilita ver dependências externas no mapa de códigos.
+- **Links de dependência externa de simplificado**. Links de dependência não mais representam a herança de System. Object, System. ValueType, System. Enum e System. Delegate, que facilita ver dependências externas no mapa de códigos.
 
--   **'Drill-in into dependency links' leva os filtros em consideração**. Você obtém um diagrama simples e útil quando expande para compreender as contribuições para um link de dependência. O diagrama é menos desorganizado e leva em consideração as opções que você selecionou de filtragem de link.
+- **'Drill-in into dependency links' leva os filtros em consideração**. Você obtém um diagrama simples e útil quando expande para compreender as contribuições para um link de dependência. O diagrama é menos desorganizado e leva em consideração as opções que você selecionou de filtragem de link.
 
--   **Elementos de código são adicionados a um mapa de código com seus contexto**. Como os diagramas agora aparecem com contexto (até assembly e solução de pasta que você pode filtrar as se necessário), que você conseguir diagramas mais eficientes ao arrastar e soltar elementos de código do Gerenciador de soluções, o modo de exibição de classe, o Pesquisador de objetos; ou, quando selecionar elementos no Gerenciador de soluções e selecionando mostram no mapa de códigos.
+- **Elementos de código são adicionados a um mapa de código com seus contexto**. Como os diagramas agora aparecem com contexto (até assembly e solução de pasta que você pode filtrar as se necessário), que você conseguir diagramas mais eficientes ao arrastar e soltar elementos de código do Gerenciador de soluções, o modo de exibição de classe, o Pesquisador de objetos; ou, quando selecionar elementos no Gerenciador de soluções e selecionando mostram no mapa de códigos.
 
--   **Obtenha mapas de código reativos mais rapidamente**. Arrastar e soltar operações produzem um resultado imediato, e os links entre os nós são criados com muito mais rapidamente, sem afetar as operações posteriores iniciadas pelo usuário, como expandir um nó ou solicitar mais nós. Quando você cria mapas de código sem compilar a solução, todos os casos de canto, como quando os assemblies não são compilados — agora são processados.
+- **Obtenha mapas de código reativos mais rapidamente**. Arrastar e soltar operações produzem um resultado imediato, e os links entre os nós são criados com muito mais rapidamente, sem afetar as operações posteriores iniciadas pelo usuário, como expandir um nó ou solicitar mais nós. Quando você cria mapas de código sem compilar a solução, todos os casos de canto, como quando os assemblies não são compilados — agora são processados.
 
--   **Ignorar a recompilação de sua solução.** Fornece um melhor desempenho durante a criação e edição de diagramas.
+- **Ignorar a recompilação de sua solução.** Fornece um melhor desempenho durante a criação e edição de diagramas.
 
--   **Filtrar nós de elemento de código e grupos**. Você organizar rapidamente seus mapas ao exibir ou ocultar elementos de código com base em sua categoria, bem como pelo agrupamento de elementos de código por pastas de solução, assemblies, namespaces, pastas de projeto e tipos.
+- **Filtrar nós de elemento de código e grupos**. Você organizar rapidamente seus mapas ao exibir ou ocultar elementos de código com base em sua categoria, bem como pelo agrupamento de elementos de código por pastas de solução, assemblies, namespaces, pastas de projeto e tipos.
 
--   **Filtre relações para tornar os diagramas mais fáceis de ler**. Filtragem de link agora também se aplica para cruzar os links de grupo, o que torna o trabalho com a janela de filtros menos intrusivo que do que era nas versões anteriores.
+- **Filtre relações para tornar os diagramas mais fáceis de ler**. Filtragem de link agora também se aplica para cruzar os links de grupo, o que torna o trabalho com a janela de filtros menos intrusivo que do que era nas versões anteriores.
 
--   **Criar diagramas da exibição de classe e Pesquisador de objetos**. Arraste e solte arquivos e assemblies em um novo ou um mapa existente do windows de modo de exibição de classe e Pesquisador de objetos.
+- **Criar diagramas da exibição de classe e Pesquisador de objetos**. Arraste e solte arquivos e assemblies em um novo ou um mapa existente do windows de modo de exibição de classe e Pesquisador de objetos.
 
- Ver [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md).
+  Ver [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md).
 
- **Outras alterações de design e modelagem nesta versão:**
+  **Outras alterações de design e modelagem nesta versão:**
 
--   **Diagramas de camada**. Atualize esses diagramas usando o modo de exibição de classe e Pesquisador de objetos. Para atender aos requisitos de design de software, use diagramas de camada para descrever as dependências desejadas para seu software. Mantenha o código consistente com esse design, localizando o código que não atende a essas restrições e validando códigos futuros com essa linha de base.
+- **Diagramas de camada**. Atualize esses diagramas usando o modo de exibição de classe e Pesquisador de objetos. Para atender aos requisitos de design de software, use diagramas de camada para descrever as dependências desejadas para seu software. Mantenha o código consistente com esse design, localizando o código que não atende a essas restrições e validando códigos futuros com essa linha de base.
 
--   **Diagramas de UML**. Você não pode mais criar diagramas de classe UML e diagramas de sequência do código. Mas você ainda criar esses diagramas usando novos elementos UML.
+- **Diagramas de UML**. Você não pode mais criar diagramas de classe UML e diagramas de sequência do código. Mas você ainda criar esses diagramas usando novos elementos UML.
 
--   **Gerenciador de arquitetura**. Não há mais você pode usar o Architecture Explorer para criar diagramas. Mas você ainda pode usar o Gerenciador de soluções.
+- **Gerenciador de arquitetura**. Não há mais você pode usar o Architecture Explorer para criar diagramas. Mas você ainda pode usar o Gerenciador de soluções.
 
 ##  <a name="VersionSupport"></a> Suporte de edição para a arquitetura e ferramentas de modelagem
 

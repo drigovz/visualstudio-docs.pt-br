@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2683f9dc520603004e71778e8498f5b2493b1895
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af0ce2e4ff9b8df28ebc0c6dd57ad5b4ebee895f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301815"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914561"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores da CPU e do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,19 +93,19 @@ O Criador de Perfil do Visual Studio permite coletar dados de desempenho que for
   
 ##### <a name="to-view-a-list-of-a-list-of-all-cpu-counters-that-are-supported-on-the-current-platform"></a>Para exibir uma lista de todos os contadores da CPU com suporte na plataforma atual  
   
-1.  No Gerenciador de Desempenho, clique com o botão direito do mouse na sessão de desempenho e clique em **Propriedades**.  
+1. No Gerenciador de Desempenho, clique com o botão direito do mouse na sessão de desempenho e clique em **Propriedades**.  
   
-2.  Realize um dos seguintes procedimentos:  
+2. Realize um dos seguintes procedimentos:  
   
-    -   Clique em **Amostragem** e, em seguida, selecione **Contador de desempenho** na lista de eventos **Amostra**. Os contadores da CPU são listados em **Contadores de desempenho disponíveis**.  
+   - Clique em **Amostragem** e, em seguida, selecione **Contador de desempenho** na lista de eventos **Amostra**. Os contadores da CPU são listados em **Contadores de desempenho disponíveis**.  
   
-         **Observação** Clique em **Cancelar** para retornar à configuração de amostragem anterior.  
+      **Observação** Clique em **Cancelar** para retornar à configuração de amostragem anterior.  
   
      -ou-  
   
-    -   Selecione **Contadores da CPU** e, em seguida, **Coletar Contadores da CPU**. Os contadores da CPU são listados em **Contadores disponíveis**.  
+   - Selecione **Contadores da CPU** e, em seguida, **Coletar Contadores da CPU**. Os contadores da CPU são listados em **Contadores disponíveis**.  
   
-         **Observação** Clique em **Cancelar** para retornar à configuração de coleta de contadores anterior.  
+      **Observação** Clique em **Cancelar** para retornar à configuração de coleta de contadores anterior.  
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Para exibir uma lista de contadores do Windows com suporte na plataforma atual  
   

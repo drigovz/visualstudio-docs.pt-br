@@ -17,12 +17,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09f2a3b03c09ffd3f215c0fc404f027601c8b549
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb4a1822d0be86d19f25bfaa46e296abc7a73a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811744"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Obtendo logs de build com o MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Usando opções com o MSBuild, você pode especificar quantos dados de build voc
 ## <a name="setting-the-level-of-detail"></a>Definindo o nível de detalhes  
  Quando você compila um projeto usando MSBuild sem especificar um nível de detalhamento, as seguintes informações aparecem no log de saída:  
   
--   Erros, avisos e mensagens que são classificados como altamente importante.  
+- Erros, avisos e mensagens que são classificados como altamente importante.  
   
--   Alguns eventos de status.  
+- Alguns eventos de status.  
   
--   Um resumo do build.  
+- Um resumo do build.  
   
- Usando a opção **/verbosity** (**/v**), você pode controlar a quantidade de dados exibida no log de saída. Para solucionar o problema, use um nível de detalhes de `detailed` (`d`) ou `diagnostic` (`diag`), que fornece o máximo de informações.  
+  Usando a opção **/verbosity** (**/v**), você pode controlar a quantidade de dados exibida no log de saída. Para solucionar o problema, use um nível de detalhes de `detailed` (`d`) ou `diagnostic` (`diag`), que fornece o máximo de informações.  
   
- O processo de build pode ficar mais lento ao definir o **/verbosity** para `detailed` e ainda mais lento se definir o **/verbosity** para `diagnostic`.  
+  O processo de build pode ficar mais lento ao definir o **/verbosity** para `detailed` e ainda mais lento se definir o **/verbosity** para `diagnostic`.  
   
 ```  
 msbuild MyProject.proj /t:go /v:diag  

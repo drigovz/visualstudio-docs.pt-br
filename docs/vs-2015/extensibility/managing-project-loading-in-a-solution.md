@@ -15,12 +15,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 465adc1c7804582767415c3e9e5311c2379c7b8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9f7df8c667753c13a5b69935a31755a72d232a96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914249"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Gerenciando o carregamento de projeto em uma solução
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,23 +100,23 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 ## <a name="detecting-and-managing-solution-and-project-loading"></a>Detectar e gerenciar a solução e o carregamento do projeto  
  Para detectar o estado de carregamento de projetos e soluções, chame <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> com os seguintes valores:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` retorna `true` se a solução e todos os seus projetos forem carregados, caso contrário, `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` retorna `true` se a solução e todos os seus projetos forem carregados, caso contrário, `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` retorna `true` se um lote de projetos estão atualmente sendo carregados em segundo plano, caso contrário, `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` retorna `true` se um lote de projetos estão atualmente sendo carregados em segundo plano, caso contrário, `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` retorna `true` se um lote de projetos estão atualmente sendo carregado de forma síncrona como resultado de um comando de usuário ou outro carregamento explícito, caso contrário, `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` retorna `true` se um lote de projetos estão atualmente sendo carregado de forma síncrona como resultado de um comando de usuário ou outro carregamento explícito, caso contrário, `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` retorna `true` se a solução está atualmente sendo fechada, caso contrário, `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` retorna `true` se a solução está atualmente sendo fechada, caso contrário, `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` retorna `true` se uma solução está atualmente sendo aberta, caso contrário, `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` retorna `true` se uma solução está atualmente sendo aberta, caso contrário, `false`.  
   
- Você também pode garantir que os projetos e soluções sejam carregadas (não importa quais são as prioridades de carregamento de projeto), chamando um dos seguintes métodos:  
+  Você também pode garantir que os projetos e soluções sejam carregadas (não importa quais são as prioridades de carregamento de projeto), chamando um dos seguintes métodos:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: chamar esse método força os projetos em uma solução para carregar antes que o método retorna.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: chamar esse método força os projetos em uma solução para carregar antes que o método retorna.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: chamar esse método força os projetos na `guidProject` carregar antes que o método retorna.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: chamar esse método força os projetos na `guidProject` carregar antes que o método retorna.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: chamar esse método força o projeto no `guidProjectID` carregar antes que o método retorna.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: chamar esse método força o projeto no `guidProjectID` carregar antes que o método retorna.  
   
 > [!NOTE]
 >  . Por padrão somente os projetos que têm a demanda de carga e prioridades de carregamento em segundo plano são carregadas, mas se o <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> sinalizador é passado para o método, todos os projetos serão carregados, exceto para aqueles que são marcados para carregar explicitamente.

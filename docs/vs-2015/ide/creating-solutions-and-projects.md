@@ -23,12 +23,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3ffd5a4d341b8a194dee9f6d8600a75999df38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 336fb41ee6a4c90e7065187b2805aefe9e6e6df7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248528"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893689"
 ---
 # <a name="creating-solutions-and-projects"></a>Criando soluções e projetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,15 +74,15 @@ Os projetos são os contêineres lógicos para tudo que é necessário para cria
   
 #### <a name="to-create-an-empty-solution"></a>Para criar uma solução vazia  
   
-1.  No menu **Arquivo**, clique em **Novo** e, em seguida, clique em **Novo Projeto**.  
+1. No menu **Arquivo**, clique em **Novo** e, em seguida, clique em **Novo Projeto**.  
   
-2.  No painel esquerdo, selecione **Instalados**, selecione **Outros Tipos de Projeto** e, em seguida, selecione **Soluções do Visual Studio** na lista expandida.  
+2. No painel esquerdo, selecione **Instalados**, selecione **Outros Tipos de Projeto** e, em seguida, selecione **Soluções do Visual Studio** na lista expandida.  
   
-3.  No painel central, selecione **Solução em Branco**.  
+3. No painel central, selecione **Solução em Branco**.  
   
-4.  Veja os valores **Nome** e **Local** para sua solução e, em seguida, clique em **OK**.  
+4. Veja os valores **Nome** e **Local** para sua solução e, em seguida, clique em **OK**.  
   
- Depois de criar uma solução vazia, é possível adicionar projetos novos ou existentes ou itens a ele clicando em **Adicionar Novo Item** ou **Adicionar Item Existente** no menu **Projeto**.  
+   Depois de criar uma solução vazia, é possível adicionar projetos novos ou existentes ou itens a ele clicando em **Adicionar Novo Item** ou **Adicionar Item Existente** no menu **Projeto**.  
   
 ### <a name="deleting-solutions"></a>Excluindo soluções  
  É possível excluir uma solução permanentemente, mas não usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Antes de excluir uma solução, mova os projetos que você pode deseja usar novamente em outra solução. Em seguida, use o Gerenciador de Arquivos para excluir o diretório que contém os arquivos de solução .sln e .suo.  

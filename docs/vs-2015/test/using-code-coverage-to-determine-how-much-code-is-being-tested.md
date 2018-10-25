@@ -15,12 +15,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: da8a33d454b5c406e43fa04157ae154a709cfe1e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: adeca654f14fd068c7ce1cb042e57dbc3891cbf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253156"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834052"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usando cobertura de código para determinar quanto código está sendo testado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ Para determinar que proporção do código do projeto está sendo testada de fat
   
 > [!TIP]
 >  Para obter resultados precisos:  
->   
->  -   Verifique se a otimização do compilador será desativada.  
->   
->      Se você estiver trabalhando com código não gerenciado (nativo), use uma compilação de depuração.  
-> -   Verifique se você está gerando arquivos .pdb (símbolo) para cada assembly.  
->   
->  Se você não obtiver os resultados esperados, consulte [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md). . Não se esqueça de executar novamente a cobertura de código depois de atualizar seu código. Os resultados de cobertura e a coloração de código não serão atualizados automaticamente depois que você alterar o código ou executar os testes.  
+> 
+> - Verifique se a otimização do compilador será desativada.  
+> 
+>   Se você estiver trabalhando com código não gerenciado (nativo), use uma compilação de depuração.  
+>   -   Verifique se você está gerando arquivos .pdb (símbolo) para cada assembly.  
+> 
+>   Se você não obtiver os resultados esperados, consulte [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md). . Não se esqueça de executar novamente a cobertura de código depois de atualizar seu código. Os resultados de cobertura e a coloração de código não serão atualizados automaticamente depois que você alterar o código ou executar os testes.  
   
 ## <a name="reporting-in-blocks-or-lines"></a>Emissão de relatórios em os blocos ou linhas  
  A cobertura de código é contada em *blocos*. Um bloco é uma parte do código com exatamente um ponto de entrada e de saída.  Se o fluxo de controle do programa passar por um bloco durante a execução do teste, esse bloco será considerado coberto. O número de vezes que o bloco é usado não tem efeito sobre o resultado.  
@@ -255,19 +255,19 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>Analisando a cobertura de código no serviço de compilação  
  Quando você faz check-in de seu código, os testes serão executados no servidor de compilação, juntamente com os outros testes de outros membros da equipe. (Se você ainda não tiver configurado isso, consulte [Executar testes no processo de build](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) É útil analisar a cobertura de código no serviço de compilação, pois isso dá o panorama mais recente e mais abrangente da cobertura no projeto inteiro. Também incluirá os testes automatizados do sistema e outros testes codificados que você normalmente não executa nos computadores de desenvolvimento.  
   
-1.  No Team Explorer, abra **Compilações** e adicione ou edite uma definição de build.  
+1. No Team Explorer, abra **Compilações** e adicione ou edite uma definição de build.  
   
-2.  Na página **Processo**, expanda **Testes Automatizados**, **Fonte de Teste**, **Configurações de Execução**. Defina **Tipo de Arquivo de Configurações de Execução** como **Cobertura de Código Habilitada**.  
+2. Na página **Processo**, expanda **Testes Automatizados**, **Fonte de Teste**, **Configurações de Execução**. Defina **Tipo de Arquivo de Configurações de Execução** como **Cobertura de Código Habilitada**.  
   
-     Se você tiver mais de uma definição de Fonte de Teste, repita essa etapa para cada uma.  
+    Se você tiver mais de uma definição de Fonte de Teste, repita essa etapa para cada uma.  
   
-    -   *Mas não há nenhum campo denominado **Tipo de Arquivo de Configurações de Execução**.*  
+   - <em>Mas não há nenhum campo nomeado **tipo de arquivo de configurações de execução</em>*. *  
   
-         Em **Testes Automatizados**, selecione **Assembly de Teste** e escolha o botão de reticências **[...]** no final da linha. Na caixa de diálogo **Adicionar/Editar Execução de Teste**, em **Test Runner**, selecione **Visual Studio Test Runner**.  
+      Em **Testes Automatizados**, selecione **Assembly de Teste** e escolha o botão de reticências **[...]** no final da linha. Na caixa de diálogo **Adicionar/Editar Execução de Teste**, em **Test Runner**, selecione **Visual Studio Test Runner**.  
   
- ![Configurar a definição de build para cobertura de código](../test/media/codecoverage-plaincc.png "CodeCoverage plainCC")  
+   ![Configurar a definição de build para cobertura de código](../test/media/codecoverage-plaincc.png "CodeCoverage plainCC")  
   
- Depois que a compilação é executada, os resultados da cobertura de código são anexados à execução do teste e aparecem no resumo de compilação.  
+   Depois que a compilação é executada, os resultados da cobertura de código são anexados à execução do teste e aparecem no resumo de compilação.  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>Analisando a cobertura de código em uma linha de comando  
  Para executar testes a partir da linha de comando, use vstest.console.exe. A cobertura de código é uma opção desse utilitário. Para obter mais informações, consulte [Opções de linha de comando de VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).  

@@ -15,12 +15,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 486d41927e45dc8c99fda06c29d14871008d7066
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251921"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817867"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Instruções passo a passo: conectando um host a um processador de diretriz gerado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,34 +56,34 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
   
 #### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>Usar ferramentas de linguagem específica de domínio para gerar um processador de diretriz se baseia em um modelo de domínio  
   
-1.  Crie uma solução de linguagem específica de domínio que tem as seguintes características:  
+1. Crie uma solução de linguagem específica de domínio que tem as seguintes características:  
   
-    -   Nome: DSLMinimalTest  
+   - Nome: DSLMinimalTest  
   
-    -   Modelo de solução: linguagem mínima  
+   - Modelo de solução: linguagem mínima  
   
-    -   Extensão de arquivo: min  
+   - Extensão de arquivo: min  
   
-    -   Nome da empresa: Fabrikam  
+   - Nome da empresa: Fabrikam  
   
      Para obter mais informações sobre como criar uma solução de linguagem específica de domínio, consulte [como: criar uma solução de linguagem específica do domínio](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
-2.  No menu **Compilar**, clique em **Compilar Solução**.  
+2. No menu **Compilar**, clique em **Compilar Solução**.  
   
-    > [!IMPORTANT]
-    >  Esta etapa gera o processador de diretriz e adiciona a chave para ele no registro.  
+   > [!IMPORTANT]
+   >  Esta etapa gera o processador de diretriz e adiciona a chave para ele no registro.  
   
-3.  No menu **Depuração**, clique em **Iniciar Depuração**.  
+3. No menu **Depuração**, clique em **Iniciar Depuração**.  
   
-     Uma segunda instância do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é aberta.  
+    Uma segunda instância do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é aberta.  
   
-4.  Na compilação experimental, na **Gerenciador de soluções**, clique duas vezes no arquivo **sample.min**.  
+4. Na compilação experimental, na **Gerenciador de soluções**, clique duas vezes no arquivo **sample.min**.  
   
-     O arquivo é aberto no designer. Observe que o modelo tem dois elementos, ExampleElement1 e ExampleElement2 e um link entre elas.  
+    O arquivo é aberto no designer. Observe que o modelo tem dois elementos, ExampleElement1 e ExampleElement2 e um link entre elas.  
   
-5.  Feche a segunda instância de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+5. Feche a segunda instância de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-6.  Salve a solução e, em seguida, feche o Designer de linguagem específica do domínio.  
+6. Salve a solução e, em seguida, feche o Designer de linguagem específica do domínio.  
   
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Conectando um Host de modelo de texto personalizado a um processador de diretriz  
  Depois de gerar o processador de diretriz, você se conectar o processador de diretriz e o host de modelo de texto personalizado que você criou na [instruções passo a passo: Criando um Host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md).  

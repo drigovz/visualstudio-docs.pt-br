@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea1c04066099b385b03c1b81bc4d85c7fb13e329
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: ba6f0a1aff0c263534c17256b7f5cf49ff9c9533
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118372"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898051"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Solucionar problemas de implantação e empacotamento do SharePoint
   Este tópico aborda diversos problemas que você pode encontrar ao empacotar e implantar soluções do SharePoint.
@@ -59,18 +59,18 @@ ms.locfileid: "37118372"
 ## <a name="differences-between-f5-deployment"></a>Diferenças entre a implantação de F5
  Quando você usa [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para implantar seu projeto do SharePoint para o servidor do SharePoint local para testar e depurar, há algumas etapas adicionais que são executadas pelo [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-1.  Redefina o serviço de informações da Internet (IIS) durante a etapa de implantação.
+1. Redefina o serviço de informações da Internet (IIS) durante a etapa de implantação.
 
-2.  Associe automaticamente fluxos de trabalho.
+2. Associe automaticamente fluxos de trabalho.
 
-3.  Defina a ordem de ativação de recurso acordo com a hierarquia no Designer de pacote.
+3. Defina a ordem de ativação de recurso acordo com a hierarquia no Designer de pacote.
 
- Você pode adicionar etapas de implantação personalizado a alteração ainda mais a **F5** comportamento. Para obter mais informações, consulte [instruções passo a passo: criar uma etapa de implantação para projetos do SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+   Você pode adicionar etapas de implantação personalizado a alteração ainda mais a **F5** comportamento. Para obter mais informações, consulte [instruções passo a passo: criar uma etapa de implantação para projetos do SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>Atraso exibindo a página do SharePoint quando implantar a web part visual
  A página do SharePoint leva muito tempo para aparecer durante a implantação de uma Web part Visual para a pasta Bin em [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)], ou [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Se você alterar todos os arquivos em um nível superior [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] recompilações do diretório, como o diretório Bin, todo o aplicativo Web. Isso pode causar um atraso de até 25 segundos para a página do SharePoint para renderizar.
 
-### <a name="error-message"></a>Mensagem de erro
+### <a name="error-message"></a>mensagem de erro
  nenhuma.
 
 ### <a name="resolution"></a>Resolução
@@ -87,7 +87,7 @@ ms.locfileid: "37118372"
 ## <a name="sharepoint-project-deployment-fails-with-error-failed-to-extract-the-cab-file-in-the-solution"></a>Falha de implantação de projeto do SharePoint com o erro "Falha ao extrair o arquivo de gabinete na solução"
  Se o nome de qualquer item de projeto do SharePoint contiver parênteses, sua solução falhará na implantação com um erro.
 
-### <a name="error-message"></a>Mensagem de erro
+### <a name="error-message"></a>mensagem de erro
  Ocorreu um erro na etapa de implantação adicionar solução: Falha ao extrair o arquivo de gabinete na solução.
 
 ### <a name="resolution"></a>Resolução
@@ -96,7 +96,7 @@ ms.locfileid: "37118372"
 ## <a name="error-appears-when-deploying-a-visual-web-part-to-a-site-on-a-different-web-application"></a>Erro aparece ao implantar uma web part visual em um site em um aplicativo web diferente
  Na primeira vez que você implante uma Web part visual em um site em um aplicativo Web diferente no qual está implementada atualmente (alterando a propriedade SiteUrl da parte Web visual), você obterá um erro.
 
-### <a name="error-message"></a>Mensagem de erro
+### <a name="error-message"></a>mensagem de erro
  Ocorreu um erro na etapa de implantação adicionar solução: um recurso com a ID [#] já foi instalado neste farm. Use o atributo de força para reinstalar explicitamente o recurso.
 
 ### <a name="resolution"></a>Resolução
@@ -105,7 +105,7 @@ ms.locfileid: "37118372"
 ## <a name="warning-appears-when-deploying-nested-user-controls"></a>Aviso é exibido ao implantar controles de usuário aninhados
  Este aviso ocorre quando você implanta uma solução do SharePoint que tem controles de usuário aninhados, como uma Web part visual que contém um controle de usuário ou um controle de usuário que contém uma Web part visual ou outro controle de usuário. Este aviso ocorre se você adicionar um controle a um designer arrastando-o na caixa de ferramentas ou usando o @Register diretiva na exibição da fonte.
 
-### <a name="error-message"></a>Mensagem de erro
+### <a name="error-message"></a>mensagem de erro
  Aviso 1 elemento ' [*nome do controle*]' não é um elemento conhecido. Isso pode ocorrer se houver um erro de compilação no site da Web ou o arquivo Web. config está ausente.
 
 ### <a name="resolution"></a>Resolução

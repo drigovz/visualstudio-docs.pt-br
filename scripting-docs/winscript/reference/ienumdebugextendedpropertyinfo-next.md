@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 343620e4539e9d095f2708ab46077ee0dafd1932
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 57cb567926f92c77f52a339fa2fecd7a315bd1b6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727976"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893618"
 ---
 # <a name="ienumdebugextendedpropertyinfonext"></a>IEnumDebugExtendedPropertyInfo::Next
 Recupera um número especificado de`ExtendedDebugPropertyInfo` estruturas em uma sequência de enumeração.  
@@ -43,10 +43,10 @@ HRESULT Next (
  [in] O número de `ExtendedDebugPropertyInfo`estruturas a serem recuperados.  
   
  `rgelt`  
- [out] Uma matriz de `ExtendedDebugPropertyInfo` estruturas recuperadas.  
+ [out] Uma matriz de `ExtendedDebugPropertyInfo` recuperadas de estruturas.  
   
  `pceltFetched`  
- [out] O número de `ExtendedDebugPropertyInfo` estruturas realmente recuperadas.  
+ [out] O número de `ExtendedDebugPropertyInfo` realmente recuperadas de estruturas.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Retorna um válidas `HRESULT`, normalmente `S_OK`.  

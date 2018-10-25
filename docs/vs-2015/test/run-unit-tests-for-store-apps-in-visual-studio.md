@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: cba96af95aaab2416d12a3791df2165f2f8d4102
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a1091231fd934669547348a183de98b15e53dff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228497"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900482"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Executar testes de unidade de aplicativos da Store no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,32 +28,32 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
   
 > [!NOTE]
 >  Os tópicos nesta seção descrevem a funcionalidade do Visual Studio Express para Windows 8. O Visual Studio Community, Enterprise e Professional fornecem funcionalidades adicionais para teste de unidade.  
->   
->  -   Use qualquer estrutura de teste de unidade de software livre ou de terceiros que tenham criado um adaptador complementar para o Gerenciador de Testes da Microsoft. Você também pode analisar e exibir informações de cobertura de código para seus testes.  
-> -   Execute os testes depois de cada compilação. Você também pode usar Microsoft Fakes, uma estrutura de isolamento para código gerenciado que ajuda a focar seus testes no seu próprio código, substituindo o código de teste pela funcionalidade do sistema e de terceiros.  
->   
->  Para obter mais informações, consulte [Executar o teste de unidade em seu código](../test/unit-test-your-code.md) na Biblioteca do MSDN.  
+> 
+> - Use qualquer estrutura de teste de unidade de software livre ou de terceiros que tenham criado um adaptador complementar para o Gerenciador de Testes da Microsoft. Você também pode analisar e exibir informações de cobertura de código para seus testes.  
+>   -   Execute os testes depois de cada compilação. Você também pode usar Microsoft Fakes, uma estrutura de isolamento para código gerenciado que ajuda a focar seus testes no seu próprio código, substituindo o código de teste pela funcionalidade do sistema e de terceiros.  
+> 
+>   Para obter mais informações, consulte [Executar o teste de unidade em seu código](../test/unit-test-your-code.md) na Biblioteca do MSDN.  
   
 ##  <a name="BKMK_In_this_topic"></a> Neste tópico  
  [Estruturas de teste de unidade e projetos de teste](#BKMK_Unit_test_frameworks_and_test_projects)  
   
  [Executando testes no Gerenciador de Testes](#BKMK_Running_tests_in_Test_Explorer)  
   
--   [Executando testes](#BKMK_Running_tests)  
+- [Executando testes](#BKMK_Running_tests)  
   
- [Exibindo resultados de teste](#BKMK_Viewing_test_results)  
+  [Exibindo resultados de teste](#BKMK_Viewing_test_results)  
   
--   [Exibindo detalhes do teste](#BKMK_Viewing_test_details)  
+- [Exibindo detalhes do teste](#BKMK_Viewing_test_details)  
   
--   [Exibindo o código-fonte de um método de teste](#BKMK_Viewing_the_source_code_of_a_test_method)  
+- [Exibindo o código-fonte de um método de teste](#BKMK_Viewing_the_source_code_of_a_test_method)  
   
- [Organizando a lista de testes](#BKMK_Organizing_the_test_list)  
+  [Organizando a lista de testes](#BKMK_Organizing_the_test_list)  
   
--   [Agrupando testes](#BKMK_Grouping_tests)  
+- [Agrupando testes](#BKMK_Grouping_tests)  
   
--   [Pesquisando e filtrando a lista de testes](#BKMK_Searching_and_filtering_the_test_list)  
+- [Pesquisando e filtrando a lista de testes](#BKMK_Searching_and_filtering_the_test_list)  
   
- [Depurando testes de unidade](#BKMK_Debugging_unit_tests)  
+  [Depurando testes de unidade](#BKMK_Debugging_unit_tests)  
   
 ##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Estruturas de teste de unidade e projetos de teste  
  O Visual Studio Express para aplicativos da Windows Store inclui as estruturas de teste de unidade da Microsoft para código C++ gerenciado e nativo. O Gerenciador de Testes pode executar testes de vários projetos de teste em uma solução e de classes de teste que fazem parte dos projetos de código de produção. Os projetos de teste podem ser qualquer combinação de Visual C++ ou estruturas de teste de unidade Visual C# e Visual Basic. Quando o código em teste é escrito para o .NET Framework, o projeto de teste pode ser escrito em qualquer linguagem do .NET Framework, independentemente do idioma de código de destino. Projetos de código C/C++ nativos devem ser testados usando uma estrutura de teste de unidade C++.  
@@ -72,13 +72,13 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
 ###  <a name="BKMK_Running_tests"></a> Executando testes  
  Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize um dos seguintes procedimentos:  
   
--   Para executar todos os testes em uma solução, escolha **Executar Todos**.  
+- Para executar todos os testes em uma solução, escolha **Executar Todos**.  
   
--   Para executar todos os testes em um grupo padrão, escolha **Executar...** e, em seguida, escolha o grupo no menu.  
+- Para executar todos os testes em um grupo padrão, escolha **Executar...** e, em seguida, escolha o grupo no menu.  
   
--   Selecione os testes individuais que deseja executar, abra o menu de atalho para um teste selecionado e escolha **Executar Testes Selecionados**.  
+- Selecione os testes individuais que deseja executar, abra o menu de atalho para um teste selecionado e escolha **Executar Testes Selecionados**.  
   
- A barra de aprovação/reprovação na parte superior da janela do Gerenciador de Testes é animada conforme os testes são executados. Na conclusão da execução de teste, a barra de aprovação/reprovação ficará verde se todos os testes forem aprovados ou vermelha se algum deles for reprovado.  
+  A barra de aprovação/reprovação na parte superior da janela do Gerenciador de Testes é animada conforme os testes são executados. Na conclusão da execução de teste, a barra de aprovação/reprovação ficará verde se todos os testes forem aprovados ou vermelha se algum deles for reprovado.  
   
 ##  <a name="BKMK_Viewing_test_results"></a> Exibindo resultados de teste  
  Conforme você executa, grava e executa novamente os testes, o Gerenciador de Testes exibe os resultados em grupos **Testes com falha**, **Testes Aprovados**, **Testes Ignorados** e **Testes Não Executados**. O painel de detalhes na parte inferior do Gerenciador de Testes exibe um resumo da execução de teste.  
@@ -88,17 +88,17 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
   
  O painel de detalhes de teste exibe as seguintes informações:  
   
--   O nome do arquivo de origem e o número de linha do método de teste.  
+- O nome do arquivo de origem e o número de linha do método de teste.  
   
--   O status do teste.  
+- O status do teste.  
   
--   O tempo decorrido que o método de teste levou para ser executado.  
+- O tempo decorrido que o método de teste levou para ser executado.  
   
- Se o teste falhar, o painel de detalhes também exibe:  
+  Se o teste falhar, o painel de detalhes também exibe:  
   
--   A mensagem retornada pela estrutura de teste de unidade para o teste.  
+- A mensagem retornada pela estrutura de teste de unidade para o teste.  
   
--   O rastreamento de pilha no momento em que o teste falhou.  
+- O rastreamento de pilha no momento em que o teste falhou.  
   
 ###  <a name="BKMK_Viewing_the_source_code_of_a_test_method"></a> Exibindo o código-fonte de um método de teste  
  Para exibir o código-fonte para um método de teste no editor do Visual Studio, selecione o teste e, em seguida, escolha **Abrir teste** no menu de atalho (teclado: F12).  
@@ -120,14 +120,14 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
 ##  <a name="BKMK_Debugging_unit_tests"></a> Depurando testes de unidade  
  Você pode usar o Gerenciador de Testes para iniciar uma sessão de depuração para os testes. Passar pelo código com o depurador do Visual Studio permite-lhe navegar facilmente entre os testes de unidade e o projeto sendo testado. Para iniciar a depuração:  
   
-1.  No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.  
+1. No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.  
   
-    > [!NOTE]
-    >  Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.  
+   > [!NOTE]
+   >  Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.  
   
-2.  No Gerenciador de Testes, selecione os métodos de teste e escolha **Depurar Testes Selecionados** no menu de atalho.  
+2. No Gerenciador de Testes, selecione os métodos de teste e escolha **Depurar Testes Selecionados** no menu de atalho.  
   
- Para obter mais informações sobre o depurador, consulte [Depuração no Visual Studio](../debugger/debugging-in-visual-studio.md).
+   Para obter mais informações sobre o depurador, consulte [Depuração no Visual Studio](../debugger/debugging-in-visual-studio.md).
 
 
 

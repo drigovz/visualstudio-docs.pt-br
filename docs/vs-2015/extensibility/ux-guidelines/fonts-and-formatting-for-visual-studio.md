@@ -13,12 +13,12 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 44f9bff7fe1508094474b7067237e8c0b6620605
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca4fd95664d45c480557b8a00d503550327c60ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275464"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833025"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fontes e formatação para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -356,13 +356,13 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Capitalização de título  
  Capitalização de título é um estilo no qual as primeiras letras da maioria ou todas as palavras dentro de uma frase estão em maiusculas. No Visual Studio, capitalização de título é usada para vários itens, incluindo:  
   
--   **Dicas de ferramenta.** Exemplo: "Visualizar itens selecionados"  
+- **Dicas de ferramenta.** Exemplo: "Visualizar itens selecionados"  
   
--   **Cabeçalhos de coluna.** Exemplo: "resposta do sistema"  
+- **Cabeçalhos de coluna.** Exemplo: "resposta do sistema"  
   
--   **Itens de menu.** Exemplo: "Salvar tudo"  
+- **Itens de menu.** Exemplo: "Salvar tudo"  
   
- Ao usar a capitalização de título, estas são as diretrizes para quando colocar em maiuscula palavras e deixá-los em minúsculas:  
+  Ao usar a capitalização de título, estas são as diretrizes para quando colocar em maiuscula palavras e deixá-los em minúsculas:  
   
 |Maiúsculas|Comentários e exemplos|  
 |---------------|---------------------------|  

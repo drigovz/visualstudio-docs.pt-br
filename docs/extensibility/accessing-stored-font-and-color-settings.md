@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 553f183eff03ae6437e7db37102005a5e901c0a4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 953f74b309d8dc147d04d86b843f138002de972f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081638"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910674"
 ---
 # <a name="access-stored-font-and-color-settings"></a>Configurações de fonte e cor armazenados do Access
 O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE) armazena configurações modificadas para fontes e cores no registro. Você pode usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface para acessar essas configurações.
@@ -49,17 +49,17 @@ O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o ambiente de desenv
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Para usar a persistência de estado de fontes e cores
  Persistência de fontes e cores envolve:
 
--   Sincronizar as configurações de IDE com configurações armazenadas no registro.
+- Sincronizar as configurações de IDE com configurações armazenadas no registro.
 
--   Propagação de informações sobre a modificação do registro.
+- Propagação de informações sobre a modificação do registro.
 
--   Configurando e recuperando as configurações armazenadas no registro.
+- Configurando e recuperando as configurações armazenadas no registro.
 
- Sincronizar a configuração de armazenamento com as configurações do IDE é totalmente transparente. O IDE subjacente gravará automaticamente as configurações atualizadas para **exibir itens** para as entradas do registro de categorias.
+  Sincronizar a configuração de armazenamento com as configurações do IDE é totalmente transparente. O IDE subjacente gravará automaticamente as configurações atualizadas para **exibir itens** para as entradas do registro de categorias.
 
- Se vários VSPackages compartilham uma categoria específica, um VSPackage deve exigir que os eventos são gerados quando os métodos do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface são usadas para modificar as configurações do registro armazenado.
+  Se vários VSPackages compartilham uma categoria específica, um VSPackage deve exigir que os eventos são gerados quando os métodos do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface são usadas para modificar as configurações do registro armazenado.
 
- Por padrão, a geração de eventos não está habilitada. Para habilitar a geração de eventos, uma categoria deve ser aberta usando <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Abrir uma categoria faz com que o IDE chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> método que implementa um VSPackage.
+  Por padrão, a geração de eventos não está habilitada. Para habilitar a geração de eventos, uma categoria deve ser aberta usando <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Abrir uma categoria faz com que o IDE chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> método que implementa um VSPackage.
 
 > [!NOTE]
 >  Modificações por meio de **fontes e cores** geram eventos independente da página de propriedades <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. Você pode usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interface para determinar se uma atualização das configurações de fonte e cor armazenada em cache é necessária antes de chamar os métodos do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> classe.

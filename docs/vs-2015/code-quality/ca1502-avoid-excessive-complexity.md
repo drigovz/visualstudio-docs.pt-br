@@ -20,15 +20,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0f81efa03c3955114561e923c232e8ee81dd2af6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b582d4679aee10010741994117b8b17f47b23aa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890576"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: evitar complexidade excessiva
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |NomeDoTipo|AvoidExcessiveComplexity|
@@ -59,11 +60,11 @@ ms.locfileid: "49259071"
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>Como a complexidade ciclomática é calculada
  A complexidade ciclomática é calculada adicionando 1 ao seguinte:
 
--   Número de ramificações (como `if`, `while`, e `do`)
+- Número de ramificações (como `if`, `while`, e `do`)
 
--   Número de `case` instruções em um `switch`
+- Número de `case` instruções em um `switch`
 
- Os exemplos a seguir mostram os métodos que possuem as complexidades de ciclomática variados.
+  Os exemplos a seguir mostram os métodos que possuem as complexidades de ciclomática variados.
 
 ## <a name="example"></a>Exemplo
  **Complexidade ciclomática igual a 1**

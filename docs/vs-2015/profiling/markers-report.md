@@ -16,37 +16,37 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0bfd7b6ef909415814bb8eff6da24ec8fef33ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a1777f2f9fbd63ba659e74d0ce471962b29b15fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811060"
 ---
 # <a name="markers-report"></a>Relatório de marcadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O Relatório de Marcadores lista os marcadores no período de tempo exibido.  A movimentação panorâmica, a aplicação de zoom ou a ocultação de pistas pode fazer com que os marcadores apareçam ou desapareçam. O relatório contém informações sobre cada marcador:  
   
--   A hora em que ele foi iniciado, com relação ao começo do rastreamento.  
+- A hora em que ele foi iniciado, com relação ao começo do rastreamento.  
   
--   Sua duração. A duração é zero para mensagens e sinalizadores porque eles representam um instante.  
+- Sua duração. A duração é zero para mensagens e sinalizadores porque eles representam um instante.  
   
--   A ID do thread que o gerou.  
+- A ID do thread que o gerou.  
   
--   O provedor ETW (Acompanhamento de Eventos para Windows) que o gerou.  
+- O provedor ETW (Acompanhamento de Eventos para Windows) que o gerou.  
   
--   A série de marcadores da qual ele foi escrito.  
+- A série de marcadores da qual ele foi escrito.  
   
--   A categoria de eventos à qual ele pertence.  
+- A categoria de eventos à qual ele pertence.  
   
--   Seu nível de importância.  
+- Seu nível de importância.  
   
--   Seu tipo (extensão, sinalizador ou mensagem).  
+- Seu tipo (extensão, sinalizador ou mensagem).  
   
--   Uma descrição detalhada do que ele representa  
+- Uma descrição detalhada do que ele representa  
   
- Escolha o botão **Exportar** para salvar o Relatório de Marcadores como um arquivo CSV. Você pode usar os dados no arquivo CSV com outros aplicativos ou ferramentas.  
+  Escolha o botão **Exportar** para salvar o Relatório de Marcadores como um arquivo CSV. Você pode usar os dados no arquivo CSV com outros aplicativos ou ferramentas.  
   
 > [!NOTE]
 >  O Relatório de Marcadores pode exibir 1.000 marcadores. Para ver todos os marcadores, exporte o relatório completo para um arquivo CSV.

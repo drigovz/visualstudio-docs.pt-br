@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280565"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826486"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Alterações na extensibilidade do Visual Studio 2017
 
@@ -59,13 +59,14 @@ A maioria dos assemblies de núcleo do Visual Studio não são mais instalados n
 > [INSTALLDIR] refere-se abaixo para o diretório raiz de instalação do Visual Studio. *VSIXInstaller.exe* preencher isso automaticamente, mas para escrever código de implantação personalizada, leia [localizando o Visual Studio](locating-visual-studio.md).
 
 * Assemblies que só foram instalados no GAC:
-  * Agora, esses assemblies são instalados sob * [INSTALLDIR] \Common7\IDE\*, *[INSTALLDIR] \Common7\IDE\PublicAssemblies* ou *\Common7\IDE\PrivateAssemblies [INSTALLDIR]*. Essas pastas são parte dos caminhos de investigação do processo do Visual Studio.
+  * Agora, esses assemblies são instalados sob <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> ou *\Common7\IDE\PrivateAssemblies [INSTALLDIR]*. Essas pastas são parte dos caminhos de investigação do processo do Visual Studio.
+
 * Assemblies que foram instalados em um caminho de investigação não e no GAC:
   * A cópia no GAC foi removida da instalação.
   * Um *pkgdef* arquivo foi adicionado ao especificar uma entrada de base de código para o assembly.
 
     Por exemplo:
-    
+
     ```xml
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
     "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
@@ -81,7 +82,7 @@ A maioria dos assemblies de núcleo do Visual Studio não são mais instalados n
   * Seu código será capaz de localizar assemblies de núcleo do Visual Studio.
   * Considere o uso de um *pkgdef* arquivo para especificar um caminho para os assemblies, se necessário.
 * Se sua extensão está em execução fora do processo do Visual Studio:
-  * Considere procurando assemblies de núcleo do Visual Studio em * [INSTALLDIR] \Common7\IDE\*, *[INSTALLDIR] \Common7\IDE\PublicAssemblies* ou *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*usando o resolvedor de assembly ou arquivo de configuração.
+  * Considere procurando assemblies de núcleo do Visual Studio sob <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> ou *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*usando o resolvedor de assembly ou arquivo de configuração.
 
 ## <a name="change-reduce-registry-impact"></a>Alteração: Reduzir o impacto do registro
 

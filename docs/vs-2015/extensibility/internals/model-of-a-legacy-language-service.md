@@ -15,12 +15,12 @@ ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb8b7ebc9cb5f0b1f6b2f2b313fa42418105ceec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9adeb87fe7830854ba2f7823ebb24605e072d10e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294028"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907697"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modelo de um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ Um serviço de linguagem define os elementos e recursos para um idioma específi
 ## <a name="a-minimal-language-service"></a>Um serviço de linguagem mínima  
  O serviço de linguagem mais básico contém os dois objetos a seguir:  
   
--   O *serviço de linguagem* implementa o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface. Um serviço de linguagem tem informações sobre a linguagem, incluindo seu nome, extensões de nome de arquivo, o Gerenciador de janela de código e colorizador.  
+- O *serviço de linguagem* implementa o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface. Um serviço de linguagem tem informações sobre a linguagem, incluindo seu nome, extensões de nome de arquivo, o Gerenciador de janela de código e colorizador.  
   
--   O *colorizador* implementa o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interface.  
+- O *colorizador* implementa o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interface.  
   
- O desenho conceitual a seguir mostra um modelo de um serviço de linguagem básica.  
+  O desenho conceitual a seguir mostra um modelo de um serviço de linguagem básica.  
   
- ![Gráfico de modelo de serviço de linguagem](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
-Modelo de serviço de linguagem básica  
+  ![Gráfico de modelo de serviço de linguagem](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+  Modelo de serviço de linguagem básica  
   
- Os hosts de janela de documento a *exibição de documento* do editor, neste caso, o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editor de núcleo. O modo de exibição de documento e o buffer de texto são de propriedade pelo editor. Esses objetos funcionam com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] por meio de uma janela de documento especializado chamado um *janela de código*. A janela de código está contida em um <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto que é criado e controlado pelo IDE.  
+  Os hosts de janela de documento a *exibição de documento* do editor, neste caso, o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editor de núcleo. O modo de exibição de documento e o buffer de texto são de propriedade pelo editor. Esses objetos funcionam com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] por meio de uma janela de documento especializado chamado um *janela de código*. A janela de código está contida em um <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto que é criado e controlado pelo IDE.  
   
- Quando um arquivo com uma determinada extensão é carregado, o editor localiza o serviço de idioma associado a essa extensão e passa para ele a janela de código chamando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> método. O serviço de linguagem retorna um *Gerenciador de janelas de código*, que implementa o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interface.  
+  Quando um arquivo com uma determinada extensão é carregado, o editor localiza o serviço de idioma associado a essa extensão e passa para ele a janela de código chamando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> método. O serviço de linguagem retorna um *Gerenciador de janelas de código*, que implementa o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interface.  
   
- A tabela a seguir fornece uma visão geral dos objetos no modelo.  
+  A tabela a seguir fornece uma visão geral dos objetos no modelo.  
   
 |Componente|Objeto|Função|  
 |---------------|------------|--------------|  

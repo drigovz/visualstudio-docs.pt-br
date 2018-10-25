@@ -17,12 +17,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 6d4f460d39d01f231cea03bf6bc81b927528844e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a72c907bf08ce534a61eb4ab7e4667135f104149
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173843"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885597"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Como criar e executar uma instalação autônoma do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +91,9 @@ Você pode executar o aplicativo de instalação para [!INCLUDE[vsprvs](../inclu
   
 #### <a name="to-run-an-unattended-installation-on-a-client-computer"></a>Para executar uma instalação autônoma em um computador cliente  
   
--   Abra o **inicie** menu, escolha **executar**e, em seguida, insira \\ \\ *ServerName*\IDEinstall\vs_*produto*.exe /adminfile *PathOfTheAdmindeployment.xmlFile**AdditionalParametersAsNeeded*  
+- Abra o **inicie** menu, escolha **executar**e, em seguida, insira \\ \\ *ServerName*\IDEinstall\vs_*produto*.exe /adminfile *PathOfTheAdmindeployment.xmlFile*<em>AdditionalParametersAsNeeded</em>  
   
-     Por exemplo, você pode especificar a seguinte linha de comando: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart`  
+   Por exemplo, você pode especificar a seguinte linha de comando: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart`  
   
 #### <a name="to-enable-clients-to-manually-install-visual-studio-with-pre-defined-settings"></a>Para permitir que clientes instalem manualmente o Visual Studio com configurações predefinidas  
   
@@ -115,59 +115,59 @@ Você pode executar o aplicativo de instalação para [!INCLUDE[vsprvs](../inclu
   
 #### <a name="to-change-admindeployment-settings-on-a-client-computer-after-visual-studio-has-been-installed"></a>Para alterar as configurações de AdminDeployment em um computador cliente após o Visual Studio ter sido instalado  
   
-1.  Atualize Admindeployment. XML conforme necessário.  
+1. Atualize Admindeployment. XML conforme necessário.  
   
-2.  Abra o **inicie** menu e, em seguida, escolha **executar**.  
+2. Abra o **inicie** menu e, em seguida, escolha **executar**.  
   
-3.  Insira o seguinte texto: \\ \\ *ServerName*\IDEinstall\vs_*produto*.exe /AdminFile PathToAdmindeployment.xml arquivo  
+3. Insira o seguinte texto: \\ \\ *ServerName*\IDEinstall\vs_*produto*.exe /AdminFile PathToAdmindeployment.xml arquivo  
   
-     AdditionalParametersAsNeeded  
+    AdditionalParametersAsNeeded  
   
-     Por exemplo, você pode especificar a seguinte linha de comando: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\IDEinstall\AdminDeployment.xml /quiet /norestart`  
+    Por exemplo, você pode especificar a seguinte linha de comando: `\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\IDEinstall\AdminDeployment.xml /quiet /norestart`  
   
- Reparar é o parâmetro padrão depois que o Visual Studio está instalado. Se você reparar o Visual Studio com um /AdminFile atualizado, você substituirá as configurações de implantação do Admin atual com aqueles que invoca o arquivo Admindeployment XML atualizado.  
+   Reparar é o parâmetro padrão depois que o Visual Studio está instalado. Se você reparar o Visual Studio com um /AdminFile atualizado, você substituirá as configurações de implantação do Admin atual com aqueles que invoca o arquivo Admindeployment XML atualizado.  
   
 ## <a name="updating-an-installation"></a>Atualizando uma instalação  
  A Microsoft lançou várias atualizações para o Visual Studio 2015. Esta seção explica como atualizar sua imagem de instalação autônoma do Visual Studio 2015, para que ele inclua as atualizações.  
   
 #### <a name="to-update-an-unattended-installation-of-visual-studio"></a>Para atualizar uma instalação autônoma do Visual Studio  
   
-1.  Localize o arquivo de Product.exe na imagem de rede existente, clique duas vezes e, em seguida, clique em **propriedades**.  
+1. Localize o arquivo de Product.exe na imagem de rede existente, clique duas vezes e, em seguida, clique em **propriedades**.  
   
-2.  Clique o **detalhes** guia e, em seguida, anote as **versão do produto** propriedade.  
+2. Clique o **detalhes** guia e, em seguida, anote as **versão do produto** propriedade.  
   
-     ![Exemplo de caixa de diálogo de propriedades em uma instalação autônoma do Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "autônoma Install - caixa de diálogo Propriedades")  
+    ![Exemplo de caixa de diálogo de propriedades em uma instalação autônoma do Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "autônoma Install - caixa de diálogo Propriedades")  
   
-3.  ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>Se a versão do produto é 14.0.24720.0 ou 14.0.24720.1, siga estas etapas:  
-4.  1.  Execute *Product.exe* /Layout *Drive:* \IDEinstall em um computador que tenha acesso à Internet. (Por exemplo, execute: `vs_enterprise.exe /Layout d:\IDEinstall`.)  
+3. ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>Se a versão do produto é 14.0.24720.0 ou 14.0.24720.1, siga estas etapas:  
+4. 1.  Execute *Product.exe* /Layout *Drive:* \IDEinstall em um computador que tenha acesso à Internet. (Por exemplo, execute: `vs_enterprise.exe /Layout d:\IDEinstall`.)  
   
-    2.  Depois que o /Layout for concluído, copie a nova imagem para um novo local.  
+   2.  Depois que o /Layout for concluído, copie a nova imagem para um novo local.  
   
-    3.  Criar e modificar o arquivo Admindeployment XML. Para fazer isso, use o `/CreateAdminFile`  *\<local do arquivo >* parâmetro de linha de comando. (Para obter mais informações, consulte a seção "Implantando Visual Studio no modo autônomo" deste artigo.)  
+   3.  Criar e modificar o arquivo Admindeployment XML. Para fazer isso, use o `/CreateAdminFile`  *\<local do arquivo >* parâmetro de linha de comando. (Para obter mais informações, consulte a seção "Implantando Visual Studio no modo autônomo" deste artigo.)  
   
-    4.  O computador cliente, execute o seguinte comando para atualizar a cópia do Visual Studio que você instalou anteriormente: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe*  /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml lightweightserver /quiet /norestart ".  
+   4.  O computador cliente, execute o seguinte comando para atualizar a cópia do Visual Studio que você instalou anteriormente: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe*  /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml lightweightserver /quiet /norestart ".  
   
-         Por exemplo, execute: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
-5.  ###### <a name="for-other-product-version-values-follow-these-steps"></a>Para outros valores de versão do produto, siga estas etapas:  
-6.  1.  Execute *Product.exe* /Layout *Drive:* \IDEinstall em um computador que tenha acesso à Internet. (Por exemplo, execute `vs-enterprise.exe /Layout d:\IDEinstall`.)  
+        Por exemplo, execute: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
+5. ###### <a name="for-other-product-version-values-follow-these-steps"></a>Para outros valores de versão do produto, siga estas etapas:  
+6. 1.  Execute *Product.exe* /Layout *Drive:* \IDEinstall em um computador que tenha acesso à Internet. (Por exemplo, execute `vs-enterprise.exe /Layout d:\IDEinstall`.)  
   
-    2.  Depois que o /Layout for concluído, copie a nova imagem para um novo local. (Ou, você pode substituir a imagem de rede existente em vez disso.)  
+   2.  Depois que o /Layout for concluído, copie a nova imagem para um novo local. (Ou, você pode substituir a imagem de rede existente em vez disso.)  
   
-    3.  Crie e modifique o arquivo Admindeployment XML. Para fazer isso, use o `/CreateAdminFile`  *\<local do arquivo >* parâmetro de linha de comando. (Para obter mais informações, consulte a seção "Implantando Visual Studio no modo autônomo" deste artigo.)  
+   3.  Crie e modifique o arquivo Admindeployment XML. Para fazer isso, use o `/CreateAdminFile`  *\<local do arquivo >* parâmetro de linha de comando. (Para obter mais informações, consulte a seção "Implantando Visual Studio no modo autônomo" deste artigo.)  
   
-    4.  Se você copiar a imagem para um novo local, você deve executar o comando a seguir no computador cliente para atualizar a cópia do Visual Studio que você instalou anteriormente: "\\\\*server1*\IDEinstall_Updated_1\\ *Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml lightweightserver /quiet /norestart ".  
+   4.  Se você copiar a imagem para um novo local, você deve executar o comando a seguir no computador cliente para atualizar a cópia do Visual Studio que você instalou anteriormente: "\\\\*server1*\IDEinstall_Updated_1\\ *Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml lightweightserver /quiet /norestart ".  
   
-         Por exemplo, execute: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
+        Por exemplo, execute: `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
   
-    5.  Se você substituir a imagem de rede existente, você pode executar o comando, conforme listado na etapa anterior, ou você pode fazer o seguinte:  
+   5.  Se você substituir a imagem de rede existente, você pode executar o comando, conforme listado na etapa anterior, ou você pode fazer o seguinte:  
   
-    6.  1.  Abra **painel de controle**e, em seguida, escolha **programas e recursos**.  
+   6.  1.  Abra **painel de controle**e, em seguida, escolha **programas e recursos**.  
   
-        2.  Escolher **Visual Studio**e, em seguida, escolha **alteração**.  
+       2.  Escolher **Visual Studio**e, em seguida, escolha **alteração**.  
   
-        3.  Depois que o Visual Studio é iniciado no modo de manutenção, clique em **modificar**.  
+       3.  Depois que o Visual Studio é iniciado no modo de manutenção, clique em **modificar**.  
   
-        4.  A atualização mais recente deve aparecer na página de recursos. Selecione os outros recursos que você deseja instalar, clique em **próxima**e, em seguida, clique em **atualizar** para instalar a atualização e os novos recursos.  
+       4.  A atualização mais recente deve aparecer na página de recursos. Selecione os outros recursos que você deseja instalar, clique em **próxima**e, em seguida, clique em **atualizar** para instalar a atualização e os novos recursos.  
   
 ## <a name="registering-the-product"></a>Registrando o produto  
  Após a instalação ter sido concluída, será possível registrar sua cópia do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] de dentro do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

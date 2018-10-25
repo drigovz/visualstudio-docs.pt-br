@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0445ad1cb92e2206a3e37e76a6f55c9a42ca1558
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f3694c23f52a1c34cd99d8391b14cc92ac939813
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282361"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903667"
 ---
 # <a name="how-to-stop-code-changes"></a>Como parar as alterações de código
 Quando Editar e Continuar estiver no processo de aplicar alterações de código, você poderá interromper a operação.  
@@ -34,11 +34,11 @@ Quando Editar e Continuar estiver no processo de aplicar alterações de código
   
 ### <a name="to-stop-applying-code-changes"></a>Para parar de aplicar alterações de código  
   
--   Escolher **parar de aplicar alterações de código** da **depurar** menu.  
+- Escolher **parar de aplicar alterações de código** da **depurar** menu.  
   
- Este item de menu está visível apenas quando as alterações de código estão sendo aplicadas.  
+  Este item de menu está visível apenas quando as alterações de código estão sendo aplicadas.  
   
- Se você escolher esta opção, nenhuma das alterações de código serão confirmadas.  
+  Se você escolher esta opção, nenhuma das alterações de código serão confirmadas.  
   
 ## <a name="see-also"></a>Consulte também  
  [Editar e continuar](../debugger/edit-and-continue.md)   

@@ -16,12 +16,12 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3e03ea9985840d20c812f56d7a0f9cae66420cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ff386c2f333d3558aa6631dd2e4c13f8bfd595c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261801"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838745"
 ---
 # <a name="test-area-6-delete"></a>Área de teste 6: excluir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Essa área de plug-in de teste de controle de origem aborda as ações de exclus
   
  A seguir está uma lista de itens que podem ser excluídos:  
   
--   Arquivos  
+- Arquivos  
   
--   Pastas  
+- Pastas  
   
--   Projeto  
+- Projeto  
   
- Dependendo do tipo de projeto, você terá a opção de **remova** o projeto (deixa os arquivos no disco) ou **excluir** o projeto (remove os arquivos no disco). Qualquer ação remove o projeto ou item de **Gerenciador de soluções**.  
+  Dependendo do tipo de projeto, você terá a opção de **remova** o projeto (deixa os arquivos no disco) ou **excluir** o projeto (remove os arquivos no disco). Qualquer ação remove o projeto ou item de **Gerenciador de soluções**.  
   
 ## <a name="expected-behavior"></a>Comportamento esperado  
  O comportamento esperado para os casos de teste na área de teste delete é:  

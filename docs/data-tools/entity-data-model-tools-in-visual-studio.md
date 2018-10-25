@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 679c91014966167c64296638d9d0a9b2d302d345
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: bbffe18b108beb230a77da38df99a7100e542a27
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819089"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Ferramentas do Entity Framework no Visual Studio
 Entity Framework é uma tecnologia de mapeamento relacional de objeto que permite aos desenvolvedores de .NET trabalhar com dados relacionais usando objetos específicos de domínio. Elimina a necessidade da maioria do código de acesso a dados que os desenvolvedores geralmente precisam gravar. O Entity Framework é o mapeamento relacional de objeto recomendado (ORM) tecnologia para novos aplicativos do .NET de modelagem.
@@ -28,16 +28,16 @@ As ferramentas do Entity Framework são instaladas como parte dos **armazenament
 
 Estas são as ferramentas específicas que constituem ferramentas do Entity Framework no Visual Studio:
 
--   Você pode usar o [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Designer** (**Entity Designer**) para criar visualmente e modificar entidades, associações, mapeamentos e relações de herança. O **Entity Designer** também gera [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] ou [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] código da camada de objeto.
+- Você pode usar o [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Designer** (**Entity Designer**) para criar visualmente e modificar entidades, associações, mapeamentos e relações de herança. O **Entity Designer** também gera [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] ou [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] código da camada de objeto.
 
--   Você pode usar o  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] assistente** para gerar um modelo conceitual de um banco de dados existente e adicionar informações de conexão de banco de dados ao seu aplicativo.
+- Você pode usar o  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] assistente** para gerar um modelo conceitual de um banco de dados existente e adicionar informações de conexão de banco de dados ao seu aplicativo.
 
--   Você pode usar o **Assistente para criação de banco de dados** para criar um modelo conceitual primeiro e, em seguida, criar um banco de dados que oferece suporte ao modelo.
+- Você pode usar o **Assistente para criação de banco de dados** para criar um modelo conceitual primeiro e, em seguida, criar um banco de dados que oferece suporte ao modelo.
 
--   Você pode usar o **Assistente de atualização de modelo** para atualizar seu modelo conceitual, o modelo de armazenamento e a mapeamentos de quando foram feitas alterações no banco de dados subjacente.
+- Você pode usar o **Assistente de atualização de modelo** para atualizar seu modelo conceitual, o modelo de armazenamento e a mapeamentos de quando foram feitas alterações no banco de dados subjacente.
 
-    > [!NOTE]
-    >  Iniciando com o Visual Studio 2010, as ferramentas do Entity Framework não dá suporte ao [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
+  > [!NOTE]
+  >  Iniciando com o Visual Studio 2010, as ferramentas do Entity Framework não dá suporte ao [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
 
 As ferramentas de gerar ou modificar uma *. edmx* arquivo. Isso *. edmx* arquivo contém informações que descrevem o modelo conceitual, o modelo de armazenamento e os mapeamentos entre eles. Para obter mais informações, consulte [EDMX](https://docs.microsoft.com/ef/ef6/).
 
@@ -45,12 +45,12 @@ As ferramentas de gerar ou modificar uma *. edmx* arquivo. Isso *. edmx* arquivo
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
-|-----------|-----------------|
-|[Entity Framework do ADO.NET](/dotnet/framework/data/adonet/ef/index)|Descreve como usar [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] ferramentas, que [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] fornece para criar aplicativos.|
-|[Modelo de Dados de Entidade](/dotnet/framework/data/adonet/entity-data-model)|Fornece links e informações sobre como trabalhar com dados que são usados por aplicativos criados no [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].|
-|[Documentação do Entity Framework (EF))](https://docs.microsoft.com/ef/ef6/get-started)|Fornece um índice de vídeos, tutoriais e documentação do advanced para ajudá-lo a tirar o máximo proveito do Entity Framework.|
-|[O ASP.NET 5 aplicativo para o novo banco de dados](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|Descreve como criar um novo aplicativo ASP.NET 5 usando o Entity Framework 7.|
+| Título | Descrição |
+| - | - |
+| [Entity Framework do ADO.NET](/dotnet/framework/data/adonet/ef/index) | Descreve como usar [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] ferramentas, que [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] fornece para criar aplicativos. |
+| [Modelo de Dados de Entidade](/dotnet/framework/data/adonet/entity-data-model) | Fornece links e informações sobre como trabalhar com dados que são usados por aplicativos criados no [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]. |
+| [Documentação do Entity Framework (EF))](https://docs.microsoft.com/ef/ef6/get-started) | Fornece um índice de vídeos, tutoriais e documentação do advanced para ajudá-lo a tirar o máximo proveito do Entity Framework. |
+| [O ASP.NET 5 aplicativo para o novo banco de dados](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html) | Descreve como criar um novo aplicativo ASP.NET 5 usando o Entity Framework 7. |
 
 ## <a name="see-also"></a>Consulte também
 

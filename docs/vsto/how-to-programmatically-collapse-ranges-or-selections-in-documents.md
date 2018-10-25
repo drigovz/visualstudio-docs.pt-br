@@ -19,57 +19,57 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87a4b490b7cc7b1942723e6033117571bf08cba6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: fee3c821c0b6a39c8dfb499caa00355aa008d413
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669793"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906722"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Como: programaticamente recolher intervalos ou seleções em documentos
   Se você estiver trabalhando com um <xref:Microsoft.Office.Interop.Word.Range> ou <xref:Microsoft.Office.Interop.Word.Selection> do objeto, você talvez queira alterar a seleção para um ponto de inserção antes de inserir texto, para evitar a substituição de texto existente. Tanto a <xref:Microsoft.Office.Interop.Word.Range> e <xref:Microsoft.Office.Interop.Word.Selection> objetos têm um método de recolher, que usa o <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> valores de enumeração:  
   
--   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> Recolhe a seleção para o início da seleção. Esse é o padrão se você não especificar um valor de enumeração.  
+- <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> Recolhe a seleção para o início da seleção. Esse é o padrão se você não especificar um valor de enumeração.  
   
--   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> Recolhe a seleção até o final da seleção.  
+- <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> Recolhe a seleção até o final da seleção.  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ## <a name="to-collapse-a-range-and-insert-new-text"></a>Para recolher um intervalo e inserir novo texto  
   
-1.  Criar um <xref:Microsoft.Office.Interop.Word.Range> objeto que consiste o primeiro parágrafo no documento.  
+1. Criar um <xref:Microsoft.Office.Interop.Word.Range> objeto que consiste o primeiro parágrafo no documento.  
   
-     O exemplo de código a seguir pode ser usado em uma personalização no nível de documento.  
+    O exemplo de código a seguir pode ser usado em uma personalização no nível de documento.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#46)]
-     [!code-csharp[Trin_VstcoreWordAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#46)]  
+    [!code-vb[Trin_VstcoreWordAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#46)]
+    [!code-csharp[Trin_VstcoreWordAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#46)]  
   
-     O exemplo de código a seguir pode ser usado em um suplemento do VSTO. Esse código usa o documento ativo.  
+    O exemplo de código a seguir pode ser usado em um suplemento do VSTO. Esse código usa o documento ativo.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#46)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#46](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#46)]  
+    [!code-vb[Trin_VstcoreWordAutomationAddIn#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#46)]
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#46](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#46)]  
   
-2.  Use o <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> valor de enumeração para recolher o intervalo.  
+2. Use o <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> valor de enumeração para recolher o intervalo.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#47)]
-     [!code-csharp[Trin_VstcoreWordAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#47)]  
+    [!code-vb[Trin_VstcoreWordAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#47)]
+    [!code-csharp[Trin_VstcoreWordAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#47)]  
   
-3.  Inserir o novo texto.  
+3. Inserir o novo texto.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#48](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#48)]
-     [!code-csharp[Trin_VstcoreWordAutomation#48](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#48)]  
+    [!code-vb[Trin_VstcoreWordAutomation#48](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#48)]
+    [!code-csharp[Trin_VstcoreWordAutomation#48](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#48)]  
   
-4.  Selecione o <xref:Microsoft.Office.Interop.Word.Range>.  
+4. Selecione o <xref:Microsoft.Office.Interop.Word.Range>.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#49)]
-     [!code-csharp[Trin_VstcoreWordAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#49)]  
+    [!code-vb[Trin_VstcoreWordAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#49)]
+    [!code-csharp[Trin_VstcoreWordAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#49)]  
   
- Se você usar o <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> valor de enumeração, o texto é inserido no início do parágrafo seguinte.  
+   Se você usar o <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> valor de enumeração, o texto é inserido no início do parágrafo seguinte.  
   
- [!code-vb[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#50)]
- [!code-csharp[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#50)]  
+   [!code-vb[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#50)]
+   [!code-csharp[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#50)]  
   
- Você pode esperar que a inserção de uma nova frase pode inseri-la antes do marcador de parágrafo, mas que é o caso de não porque o intervalo original inclui o marcador de parágrafo. Para obter mais informações, consulte [como: excluir programaticamente marcas de parágrafo ao criar intervalos](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md).  
+   Você pode esperar que a inserção de uma nova frase pode inseri-la antes do marcador de parágrafo, mas que é o caso de não porque o intervalo original inclui o marcador de parágrafo. Para obter mais informações, consulte [como: excluir programaticamente marcas de parágrafo ao criar intervalos](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md).  
   
 ## <a name="document-level-customization-example"></a>Exemplo de personalização no nível de documento  
   

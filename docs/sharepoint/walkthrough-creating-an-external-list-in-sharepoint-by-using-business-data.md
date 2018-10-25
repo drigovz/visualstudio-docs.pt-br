@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9ebda2068358a43ed942e25d46e58ed2f45d9733
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf13870d54de312be3e97009c07076b49785516b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635535"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913963"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Passo a passo: Criar uma lista externa no SharePoint usando dados corporativos
 
@@ -232,12 +232,12 @@ Para habilitar o serviço BDC exibir os contatos em uma lista, você deve adicio
 
 5. No `ContactService` classe, substitua o `ReadList` método com o código a seguir. Esse código executa as seguintes tarefas:
 
-    - Recupera dados da tabela de contatos do banco de dados AdventureWorks.
+   - Recupera dados da tabela de contatos do banco de dados AdventureWorks.
 
-    - Retorna uma lista de entidades de contato para o serviço de BDC.
+   - Retorna uma lista de entidades de contato para o serviço de BDC.
 
-    > [!NOTE]
-    > Substitua o valor da `ServerName` campo com o nome do seu servidor.
+     > [!NOTE]
+     > Substitua o valor da `ServerName` campo com o nome do seu servidor.
 
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

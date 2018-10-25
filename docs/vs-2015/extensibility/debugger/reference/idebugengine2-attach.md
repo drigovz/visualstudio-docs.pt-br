@@ -17,12 +17,12 @@ ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa03f59945b1e51d0c86aee48dde27d0fa4b326b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d198baa227052fcff9e82a4d77b12624f8340616
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177080"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825682"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -73,25 +73,25 @@ int Attach(
 ## <a name="remarks"></a>Comentários  
  Há três razões para anexar a um programa, da seguinte maneira:  
   
--   `ATTACH_REASON_LAUNCH` indica que o DE é anexar ao programa porque o usuário iniciou o processo que o contém.  
+- `ATTACH_REASON_LAUNCH` indica que o DE é anexar ao programa porque o usuário iniciou o processo que o contém.  
   
--   `ATTACH_REASON_USER` indica que o usuário explicitamente solicitou o DE anexar a um programa (ou o processo que contém um programa).  
+- `ATTACH_REASON_USER` indica que o usuário explicitamente solicitou o DE anexar a um programa (ou o processo que contém um programa).  
   
--   `ATTACH_REASON_AUTO` indica que o DE é anexar a um determinado programa porque ele já está sendo depurado outros programas em um determinado processo. Isso também é chamado a anexação automática.  
+- `ATTACH_REASON_AUTO` indica que o DE é anexar a um determinado programa porque ele já está sendo depurado outros programas em um determinado processo. Isso também é chamado a anexação automática.  
   
- Quando este método é chamado, o DE precisa enviar esses eventos em sequência:  
+  Quando este método é chamado, o DE precisa enviar esses eventos em sequência:  
   
-1.  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (se ele não já foi enviado para uma determinada instância do mecanismo de depuração)  
+1. [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (se ele não já foi enviado para uma determinada instância do mecanismo de depuração)  
   
-2.  [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
+2. [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
   
-3.  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
+3. [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
   
- Além disso, se for o motivo para anexação `ATTACH_REASON_LAUNCH`, o DE que precisa enviar o [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) eventos.  
+   Além disso, se for o motivo para anexação `ATTACH_REASON_LAUNCH`, o DE que precisa enviar o [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) eventos.  
   
- Uma vez o obtém do [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) do objeto correspondente para o programa que está sendo depurado, ela pode ser consultada para qualquer interface privada.  
+   Uma vez o obtém do [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) do objeto correspondente para o programa que está sendo depurado, ela pode ser consultada para qualquer interface privada.  
   
- Antes de chamar os métodos de um nó de programa na matriz fornecida pelo `pProgram` ou `rgpProgramNodes`, representação, se necessário, deve ser habilitada no `IDebugProgram2` interface que representa o nó do programa. Normalmente, no entanto, essa etapa não é necessária. Para obter mais informações, consulte [problemas de segurança](../../../extensibility/debugger/security-issues.md).  
+   Antes de chamar os métodos de um nó de programa na matriz fornecida pelo `pProgram` ou `rgpProgramNodes`, representação, se necessário, deve ser habilitada no `IDebugProgram2` interface que representa o nó do programa. Normalmente, no entanto, essa etapa não é necessária. Para obter mais informações, consulte [problemas de segurança](../../../extensibility/debugger/security-issues.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

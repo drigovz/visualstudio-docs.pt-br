@@ -21,12 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 2b4393758b4c246af0da830b6ed8d8e20eb8ff40
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f64fa378029546f7a3126b324c282f6a91d7231
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897622"
 ---
 # <a name="how-to-connect-to-the-northwind-database"></a>Como se conectar ao banco de dados Northwind
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,29 +38,29 @@ ms.locfileid: "49191120"
   
 #### <a name="to-create-a-data-connection-to-the-northwind-database-sql-server"></a>Para criar uma conexão de dados com o banco de dados Northwind (SQL Server)  
   
-1.  Sobre o **exibição** menu, escolha **Gerenciador de servidores**/**Database Explorer**.  
+1. Sobre o **exibição** menu, escolha **Gerenciador de servidores**/**Database Explorer**.  
   
-2.  Na **Gerenciador de servidores**/**Database Explorer**, abra o menu de atalho **conexões de dados** e escolha **Adicionar Conexão**.  
+2. Na **Gerenciador de servidores**/**Database Explorer**, abra o menu de atalho **conexões de dados** e escolha **Adicionar Conexão**.  
   
-     Depois de escolher **Adicionar Conexão**, o **Escolher fonte de dados** caixa de diálogo ou o **Adicionar Conexão** caixa de diálogo será exibida.  
+    Depois de escolher **Adicionar Conexão**, o **Escolher fonte de dados** caixa de diálogo ou o **Adicionar Conexão** caixa de diálogo será exibida.  
   
-3.  Se o **Choose Data Source** caixa de diálogo for exibida, selecione **Microsoft SQL Server**e, em seguida, escolha **Okey**.  
+3. Se o **Choose Data Source** caixa de diálogo for exibida, selecione **Microsoft SQL Server**e, em seguida, escolha **Okey**.  
   
-     Se o **Adicionar Conexão** caixa de diálogo aparece e o **fonte de dados** não é **Microsoft SQL Server (SqlClient)**, escolha o **alteração** Para abrir o **fonte de dados de alteração** caixa de diálogo, selecione **Microsoft SQL Server**e, em seguida, escolha o **Okey** botão.  
+    Se o **Adicionar Conexão** caixa de diálogo aparece e o **fonte de dados** não é **Microsoft SQL Server (SqlClient)**, escolha o **alteração** Para abrir o **fonte de dados de alteração** caixa de diálogo, selecione **Microsoft SQL Server**e, em seguida, escolha o **Okey** botão.  
   
-4.  No **nome do servidor** lista, especifique o nome do servidor no qual o banco de dados Northwind está localizado.  
+4. No **nome do servidor** lista, especifique o nome do servidor no qual o banco de dados Northwind está localizado.  
   
-5.  Dependendo dos requisitos da sua versão do SQL Server e banco de dados Northwind, escolha **usar autenticação do Windows** ou escolha **usar a autenticação do SQL Server** e insira um nome de usuário e senha para fazer logon no computador que executa o SQL Server.  
+5. Dependendo dos requisitos da sua versão do SQL Server e banco de dados Northwind, escolha **usar autenticação do Windows** ou escolha **usar a autenticação do SQL Server** e insira um nome de usuário e senha para fazer logon no computador que executa o SQL Server.  
   
-6.  Escolha o banco de dados Northwind a **selecione ou insira um nome de banco de dados** lista.  
+6. Escolha o banco de dados Northwind a **selecione ou insira um nome de banco de dados** lista.  
   
-7.  Escolher **Conexão de teste** para verificar a conectividade ao banco de dados Northwind.  
+7. Escolher **Conexão de teste** para verificar a conectividade ao banco de dados Northwind.  
   
-8.  Escolha **OK**.  
+8. Escolha **OK**.  
   
-     Uma conexão de dados no banco de dados Northwind é adicionada à **Gerenciador de servidores**/**Gerenciador de banco de dados**.  
+    Uma conexão de dados no banco de dados Northwind é adicionada à **Gerenciador de servidores**/**Gerenciador de banco de dados**.  
   
- Além de conectar a uma instância remota de um banco de dados do SQL Server, também é possível se conectar diretamente aos arquivos reais que contêm o banco de dados. Isso permite que você adicione os arquivos de banco de dados diretamente em um projeto em que eles possam ser implantados como parte do aplicativo. Atualmente, há suporte para os seguintes arquivos de banco de dados local: arquivos de banco de dados do SQL Server Compact (. sdf), [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] e arquivos de banco de dados SQL Server Express (. mdf) e arquivos de banco de dados do Microsoft Access (. mdb ou. accdb).  
+   Além de conectar a uma instância remota de um banco de dados do SQL Server, também é possível se conectar diretamente aos arquivos reais que contêm o banco de dados. Isso permite que você adicione os arquivos de banco de dados diretamente em um projeto em que eles possam ser implantados como parte do aplicativo. Atualmente, há suporte para os seguintes arquivos de banco de dados local: arquivos de banco de dados do SQL Server Compact (. sdf), [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] e arquivos de banco de dados SQL Server Express (. mdf) e arquivos de banco de dados do Microsoft Access (. mdb ou. accdb).  
   
 #### <a name="to-create-a-data-connection-to-the-northwind-databasesql-server-database-file-mdf"></a>Para criar uma conexão de dados com o banco de dados Northwind – arquivo de banco de dados do SQL Server (.mdf)  
   

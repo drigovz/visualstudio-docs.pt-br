@@ -16,23 +16,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4171f0237b7735748da567bd9482856c013759bc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c3d763209d60440066df758b6c1eca087dea9b03
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670181"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906670"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>Como: salvar documentos do Visio programaticamente
   Há várias maneiras de salvar documentos do Microsoft Office Visio:  
   
--   Salve alterações em um documento existente.  
+- Salve alterações em um documento existente.  
   
--   Salvar um novo documento, ou salvar um documento com um novo nome.  
+- Salvar um novo documento, ou salvar um documento com um novo nome.  
   
--   Salve um documento com os argumentos especificados.  
+- Salve um documento com os argumentos especificados.  
   
- Para obter mais informações, consulte a documentação de referência do VBA para o [Microsoft.Office.Interop.Visio.Document.Save](https://msdn.microsoft.com/library/office/ff766478.aspx) método, [Microsoft.Office.Interop.Visio.Document.SaveAs](https://msdn.microsoft.com/library/office/ff765824.aspx) emétodo[ Microsoft.Office.Interop.Visio.Document.SaveAsEx](https://msdn.microsoft.com/library/office/ff768149.aspx) método.  
+  Para obter mais informações, consulte a documentação de referência do VBA para o [Microsoft.Office.Interop.Visio.Document.Save](https://msdn.microsoft.com/library/office/ff766478.aspx) método, [Microsoft.Office.Interop.Visio.Document.SaveAs](https://msdn.microsoft.com/library/office/ff765824.aspx) emétodo[ Microsoft.Office.Interop.Visio.Document.SaveAsEx](https://msdn.microsoft.com/library/office/ff768149.aspx) método.  
   
 ## <a name="save-an-existing-document"></a>Salvar um documento existente  
   
