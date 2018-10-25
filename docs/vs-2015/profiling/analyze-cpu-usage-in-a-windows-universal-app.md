@@ -20,12 +20,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f91fa126c066d3c028cb7e634468ab8b455c8e30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a7f39e3210d898e07f96f3ff787915953148e008
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250712"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833597"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analisar o uso de CPU em um aplicativo universal do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,27 +55,27 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> Coletar dados de uso da CPU  
  ![Executar um build de versão do aplicativo no simulador](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
-1.  No Visual Studio, defina o destino de implantação como **Simulador** e a configuração da solução como **Liberação**.  
+1. No Visual Studio, defina o destino de implantação como **Simulador** e a configuração da solução como **Liberação**.  
   
-    -   Executar o aplicativo no simulador permite que você alterne facilmente entre o aplicativo e o Visual Studio IDE.  
+   -   Executar o aplicativo no simulador permite que você alterne facilmente entre o aplicativo e o Visual Studio IDE.  
   
-    -   Executar este aplicativo no modo **Liberar** dá a você uma visão melhor do desempenho atual do aplicativo.  
+   -   Executar este aplicativo no modo **Liberar** dá a você uma visão melhor do desempenho atual do aplicativo.  
   
-2.  No menu **Depurar**, escolha **Criador de Perfil de Desempenho...**.  
+2. No menu **Depurar**, escolha **Criador de Perfil de Desempenho...**.  
   
-3.  No hub de Desempenho e Diagnóstico, escolha **Uso da CPU** e **Iniciar**.  
+3. No hub de Desempenho e Diagnóstico, escolha **Uso da CPU** e **Iniciar**.  
   
-     ![Iniciar a sessão de diagnóstico CpuUsage](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
+    ![Iniciar a sessão de diagnóstico CpuUsage](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
   
-4.  Quando o aplicativo for iniciado, clique em **Obter Número Máximo**. Aguarde cerca de um segundo após a exibição da saída e escolha **Obter Número Máximo Assíncrono**. Esperar entre cliques de botão torna mais fácil isolar as rotinas de clique do botão no relatório de diagnóstico.  
+4. Quando o aplicativo for iniciado, clique em **Obter Número Máximo**. Aguarde cerca de um segundo após a exibição da saída e escolha **Obter Número Máximo Assíncrono**. Esperar entre cliques de botão torna mais fácil isolar as rotinas de clique do botão no relatório de diagnóstico.  
   
-5.  Depois que a segunda linha de saída for exibida, escolha **Parar Coleção** no hub Desempenho e Diagnóstico.  
+5. Depois que a segunda linha de saída for exibida, escolha **Parar Coleção** no hub Desempenho e Diagnóstico.  
   
- ![Parar a coleta de dados de CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![Parar a coleta de dados de CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
- A ferramenta Uso da CPU analisa os dados e exibe o relatório.  
+   A ferramenta Uso da CPU analisa os dados e exibe o relatório.  
   
- ![Relatório de CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![Relatório de CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a> Analisar o relatório de Uso da CPU  
   

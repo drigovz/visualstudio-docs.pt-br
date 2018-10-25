@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e2c960fda37a15fe129a6a2b67c4a55c297cefa
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f2ba9e49a45305c42f813f996392bb1fa5af41b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669940"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842658"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Visão geral do desenvolvimento de soluções Office (VSTO)
   Ao usar o Microsoft Office como o front-end para soluções, você pode tirar proveito das interfaces de usuário do Microsoft Office e ferramentas como os recursos de processamento de texto no Word, os recursos de análise de dados do Excel e os recursos de gerenciamento de email do Outlook familiares . Você pode desenvolver soluções no Visual Studio para personalizar aplicativos do Office e adicionar os recursos específicos que você precisa para seus processos de negócios. Por exemplo, você pode transformar o Word em um gerador de contrato que monta contratos fora das partes pré-existentes que podem ser feitas editáveis ou não editável. Com o Excel, você pode criar uma planilha de orçamento automatizado personalizada para diferentes projetos. Os usuários também podem executar soluções do office offline, que torna mais prático do que seria se você usar uma arquitetura baseada na web a soluções complexas.  
@@ -31,13 +31,13 @@ ms.locfileid: "35669940"
 ## <a name="choose-an-office-project-type"></a>Escolha um tipo de projeto do Office  
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornece os seguintes tipos de modelos de projeto para desenvolvimento do Office com base no VSTO:  
   
--   **Personalizações no nível do documento** estão associados um documento específico.  
+- **Personalizações no nível do documento** estão associados um documento específico.  
   
--   **Suplementos do VSTO** estão associados com o aplicativo em si.  
+- **Suplementos do VSTO** estão associados com o aplicativo em si.  
   
- Para decidir qual desses tipos de projeto é melhor para sua solução, pense se você deseja que seu código seja executado somente quando um documento específico estiver aberto, ou se você deseja que o código esteja disponível sempre que o aplicativo está em execução. Para obter mais informações sobre os modelos de projeto, consulte [visão geral de modelos de projeto do Office](../vsto/office-project-templates-overview.md).  
+  Para decidir qual desses tipos de projeto é melhor para sua solução, pense se você deseja que seu código seja executado somente quando um documento específico estiver aberto, ou se você deseja que o código esteja disponível sempre que o aplicativo está em execução. Para obter mais informações sobre os modelos de projeto, consulte [visão geral de modelos de projeto do Office](../vsto/office-project-templates-overview.md).  
   
- Os tipos de projetos que podem ser criados dependem de quais aplicativos do Office que você instalou no computador de desenvolvimento. Para obter mais informações, consulte [recursos disponíveis por tipo de projeto e aplicativo do Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  Os tipos de projetos que podem ser criados dependem de quais aplicativos do Office que você instalou no computador de desenvolvimento. Para obter mais informações, consulte [recursos disponíveis por tipo de projeto e aplicativo do Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ### <a name="document-level-customizations"></a>Personalizações no nível de documento  
  Personalizações no nível do documento consistem em um assembly que está associado um único documento, pasta de trabalho ou modelo no Microsoft Office Word ou Microsoft Office Excel. O assembly é carregado quando o documento associado é aberto. Recursos em personalizações criadas estão disponíveis somente quando o documento associado é aberto. As personalizações não podem fazer alterações em todo o aplicativo, como a exibição de uma nova guia de faixa de opções ou de item de menu quando qualquer documento é aberto.  

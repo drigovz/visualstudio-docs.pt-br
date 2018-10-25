@@ -31,12 +31,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48091178f9f606adecaa9d0047ea35ef25e2b4a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 04c0430140d848c3c0b2386cc4156be1dbdd47c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270019"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819778"
 ---
 # <a name="how-to-debug-injected-code"></a>Como depurar código injetado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ OBSERVAÇÃO]
   
  Usar atributos pode simplificar muito a programação C++. Para obter mais informações, consulte [conceitos](http://msdn.microsoft.com/library/563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e). Alguns atributos são interpretados diretamente pelo compilador. Outros atributos injetam o código na origem do programa, que o compilador em seguida compila. Este código injetado facilita a programação reduzindo a quantidade de códigos que você precisa escrever. Entretanto, às vezes, um bug pode causar falha no aplicativo ao executar o código injetado. Quando isso acontece, você provavelmente desejará examinar o código injetado. O Visual Studio fornece duas maneiras de ver o código injetado:  
   
--   Você pode exibir o código injetado na **desmontagem** janela.  
+- Você pode exibir o código injetado na **desmontagem** janela.  
   
--   Usando o [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), você pode criar um arquivo de origem mesclada que contém o código original e injetado.  
+- Usando o [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), você pode criar um arquivo de origem mesclada que contém o código original e injetado.  
   
- O **desmontagem** janela mostra instruções de linguagem de assembly que correspondem ao código-fonte e o código injetado por atributos. Além disso, o **desmontagem** janela pode mostrar a anotação do código-fonte.  
+  O **desmontagem** janela mostra instruções de linguagem de assembly que correspondem ao código-fonte e o código injetado por atributos. Além disso, o **desmontagem** janela pode mostrar a anotação do código-fonte.  
   
 ### <a name="to-turn-on-source-annotation"></a>Para ativar a anotação de origem  
   

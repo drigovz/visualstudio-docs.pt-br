@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b5647a62064857bca6a6352a14fe56eff4386f9
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: fa564919abcfb4c8bd94fbaf139b69f2375deebd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497990"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825810"
 ---
 # <a name="how-to-use-the-activity-log"></a>Como: usar o log de atividades
 Os VSPackages pode gravar mensagens no log de atividade. Esse recurso é especialmente útil para depurar os VSPackages em ambientes de varejo.  
@@ -47,15 +47,15 @@ Os VSPackages pode gravar mensagens no log de atividade. Esse recurso é especia
   
 ## <a name="to-examine-the-activity-log"></a>Para examinar o log de atividades  
   
-1.  Executar o Visual Studio com o [/Log](../ide/reference/log-devenv-exe.md) opção de linha de comando para gravar activitylog. XML no disco durante a sessão.
+1. Executar o Visual Studio com o [/Log](../ide/reference/log-devenv-exe.md) opção de linha de comando para gravar activitylog. XML no disco durante a sessão.
 
-2.  Depois de fechar o Visual Studio, localize o log de atividades na subpasta para dados do Visual Studio: **% AppData %* \Microsoft\VisualStudio\15.0\ActivityLog.xml*.  
+2. Depois de fechar o Visual Studio, localize o log de atividades na subpasta para dados do Visual Studio:  <em>*% AppData %</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*.  
   
-3.  Abra o log de atividades com qualquer editor de texto. Aqui está uma entrada típica:  
+3. Abra o log de atividades com qualquer editor de texto. Aqui está uma entrada típica:  
   
-    ```  
-    Called for: Company.MyApp.MyAppPackage ...  
-    ```  
+   ```  
+   Called for: Company.MyApp.MyAppPackage ...  
+   ```  
   
 ## <a name="robust-programming"></a>Programação robusta  
  Como o log de atividades é um serviço, o log de atividades não está disponível no construtor de VSPackage.  

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44cbabd41e40c0e157a75fa260985752e3d5e016
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 132a94b6e91148d943d998ab7e4aab96d0d74960
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257905"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822548"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Passo a passo: Exibir texto em uma caixa de texto em um documento usando um botão
   Este passo a passo demonstra como usar os botões e caixas de texto em uma personalização no nível de documento para o Microsoft Office Word.  
@@ -29,11 +29,11 @@ ms.locfileid: "35257905"
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Adicionando controles ao documento do Word em um projeto de nível de documento em tempo de design.  
+- Adicionando controles ao documento do Word em um projeto de nível de documento em tempo de design.  
   
--   Preenchendo uma caixa de texto quando um botão é clicado.  
+- Preenchendo uma caixa de texto quando um botão é clicado.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
@@ -58,25 +58,25 @@ ms.locfileid: "35257905"
   
 ### <a name="to-add-a-button-and-a-text-box"></a>Para adicionar um botão e uma caixa de texto  
   
-1.  Verifique se o documento é aberto no designer do Visual Studio.  
+1. Verifique se o documento é aberto no designer do Visual Studio.  
   
-2.  Dos **controles comuns** guia da **caixa de ferramentas**, arraste um <xref:Microsoft.Office.Tools.Word.Controls.TextBox> controle ao documento.  
+2. Dos **controles comuns** guia da **caixa de ferramentas**, arraste um <xref:Microsoft.Office.Tools.Word.Controls.TextBox> controle ao documento.  
   
-    > [!NOTE]  
-    >  No Word, os controles são descartados em linha com o texto por padrão. Você pode modificar os maneira como os controles e objetos shape são inseridos, alterando o padrão no **edite** guia da **opções** caixa de diálogo do Word.  
+   > [!NOTE]  
+   >  No Word, os controles são descartados em linha com o texto por padrão. Você pode modificar os maneira como os controles e objetos shape são inseridos, alterando o padrão no **edite** guia da **opções** caixa de diálogo do Word.  
   
-3.  Sobre o **modo de exibição** menu, clique em **janela propriedades**.  
+3. Sobre o **modo de exibição** menu, clique em **janela propriedades**.  
   
-4.  Encontrar **TextBox1** na **propriedades** caixa de lista suspensa da janela e altere a **nome** propriedade da caixa de texto para **displayText**.  
+4. Encontrar **TextBox1** na **propriedades** caixa de lista suspensa da janela e altere a **nome** propriedade da caixa de texto para **displayText**.  
   
-5.  Arraste uma **botão** controlar o documento e alterar as propriedades a seguir.  
+5. Arraste uma **botão** controlar o documento e alterar as propriedades a seguir.  
   
-    |Propriedade|Valor|  
-    |--------------|-----------|  
-    |**Nome**|**insertText**|  
-    |**Texto**|**Inserir texto**|  
+   |Propriedade|Valor|  
+   |--------------|-----------|  
+   |**Nome**|**insertText**|  
+   |**Texto**|**Inserir texto**|  
   
- Agora você pode escrever o código que será executado quando o botão é clicado.  
+   Agora você pode escrever o código que será executado quando o botão é clicado.  
   
 ## <a name="populate-the-text-box-when-the-button-is-clicked"></a>Preencha a caixa de texto quando o botão é clicado  
  Sempre que o usuário clica no botão, **Olá, mundo!** é adicionado à caixa de texto.  

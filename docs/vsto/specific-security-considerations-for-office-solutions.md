@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c3bf48cf5f8acd24661adf2d9ae36324fadfd72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: dcb2e0a3c381b1dd07c7724c3a64c53307856014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669955"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951386"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Considerações sobre segurança específicas para soluções do Office
   Os recursos de segurança fornecidos pelo Microsoft .NET Framework e do Microsoft Office podem ajudar a proteger suas soluções do Office em relação a possíveis ameaças à segurança. Este tópico explica algumas dessas ameaças e fornece recomendações para ajudar a proteger contra elas. Ele também inclui informações sobre como as configurações de segurança do Microsoft Office afetam soluções do Office.  
@@ -55,11 +55,11 @@ ms.locfileid: "35669955"
   
  O object model guard pode afetar o VSTO Add-ins de maneiras diferentes, dependendo do Outlook é usado com o Microsoft Exchange Server:  
   
--   Se o Outlook não for usado com o Exchange, um administrador pode habilitar ou desabilitar o object model guard para todos os suplementos do VSTO no computador.  
+- Se o Outlook não for usado com o Exchange, um administrador pode habilitar ou desabilitar o object model guard para todos os suplementos do VSTO no computador.  
   
--   Se o Outlook é usado com o Exchange, um administrador pode habilitar ou desabilitar o object model guard para todos os suplementos do VSTO no computador ou o administrador pode especificar que certos VSTO Add-ins pode ser executada sem encontrar o object model guard. Os administradores também podem modificar o comportamento do object model guard para determinadas áreas do modelo de objeto. Por exemplo, os administradores podem automaticamente permitir que VSTO Add-ins enviar email programaticamente, mesmo se o object model guard estiver habilitado.  
+- Se o Outlook é usado com o Exchange, um administrador pode habilitar ou desabilitar o object model guard para todos os suplementos do VSTO no computador ou o administrador pode especificar que certos VSTO Add-ins pode ser executada sem encontrar o object model guard. Os administradores também podem modificar o comportamento do object model guard para determinadas áreas do modelo de objeto. Por exemplo, os administradores podem automaticamente permitir que VSTO Add-ins enviar email programaticamente, mesmo se o object model guard estiver habilitado.  
   
- A partir do Outlook 2007, o comportamento do object model guard foi alterado para melhorar a experiência do usuário e do desenvolvedor, ajudando a manter o Outlook seguro. Para obter mais informações, consulte [alterações de segurança do Outlook 2007 de código](http://go.microsoft.com/fwlink/?LinkId=73429).  
+  A partir do Outlook 2007, o comportamento do object model guard foi alterado para melhorar a experiência do usuário e do desenvolvedor, ajudando a manter o Outlook seguro. Para obter mais informações, consulte [alterações de segurança do Outlook 2007 de código](http://go.microsoft.com/fwlink/?LinkId=73429).  
   
 ### <a name="minimize-object-model-guard-warnings"></a>Minimizar os avisos de proteção de modelo de objeto  
  Para evitar avisos de segurança quando você usa métodos e propriedades restritas, certifique-se de que seu suplemento do VSTO obtém objetos do Outlook do `Application` campo do `ThisAddIn` classe em seu projeto. Para obter mais informações sobre esse campo, consulte [suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md).  
@@ -94,15 +94,15 @@ ms.locfileid: "35669955"
   
  Se o usuário impede que suplementos do VSTO carregamento usando o **Central de confiabilidade**, os seguintes tipos de suplementos do VSTO não serão carregado:  
   
--   Gerenciado e COM suplementos do VSTO.  
+- Gerenciado e COM suplementos do VSTO.  
   
--   Documentos inteligentes de gerenciados e não gerenciados.  
+- Documentos inteligentes de gerenciados e não gerenciados.  
   
--   Gerenciado e automação VSTO Add-ins.  
+- Gerenciado e automação VSTO Add-ins.  
   
--   Componentes gerenciados e dados em tempo real.  
+- Componentes gerenciados e dados em tempo real.  
   
- Os procedimentos a seguir descrevem como os usuários podem usar o **Central de confiabilidade** para restringir o VSTO Add-ins de carregamento no Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e o Microsoft Office 2010. Esses procedimentos não afetam o VSTO Add-ins ou personalizações criadas usando ferramentas de desenvolvimento do Office no Visual Studio.  
+  Os procedimentos a seguir descrevem como os usuários podem usar o **Central de confiabilidade** para restringir o VSTO Add-ins de carregamento no Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e o Microsoft Office 2010. Esses procedimentos não afetam o VSTO Add-ins ou personalizações criadas usando ferramentas de desenvolvimento do Office no Visual Studio.  
   
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>Para desabilitar o VSTO Add-ins no Microsoft Office 2010 e Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplicativos  
   

@@ -25,12 +25,12 @@ caps.latest.revision: 93
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 866ca64818f0426f0dcb0955a050de6a18660951
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc6ef0463f98b5aec938ff7748a64b34b32c3934
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843828"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizar mapa de códigos editando os arquivos DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,43 +45,43 @@ Para personalizar um mapa de código, você pode editar o arquivo Directed Graph
 ##  <a name="OrganizeNodes"></a> Elementos de código do grupo  
  Você pode adicionar novos grupos ou converta nós existentes em um grupo.  
   
-1.  Abra o arquivo. dgml em um editor de texto ou XML.  
+1. Abra o arquivo. dgml em um editor de texto ou XML.  
   
-2.  Para converter um elemento de código em um grupo, encontre o `<Node/>` elemento para esse elemento de código.  
+2. Para converter um elemento de código em um grupo, encontre o `<Node/>` elemento para esse elemento de código.  
   
-     \- ou -  
+    \- ou -  
   
-     Para adicionar um novo grupo, localize o `<Nodes>` seção. Adicione um novo `<Node/>` elemento.  
+    Para adicionar um novo grupo, localize o `<Nodes>` seção. Adicione um novo `<Node/>` elemento.  
   
-3.  No elemento `<Node/>`, adicione um atributo `Group` para especificar se o grupo aparece expandido ou recolhido. Por exemplo:  
+3. No elemento `<Node/>`, adicione um atributo `Group` para especificar se o grupo aparece expandido ou recolhido. Por exemplo:  
   
-    ```xml  
-    <Nodes>  
-       <Node Id="MyFirstGroup" Group="Expanded" />  
-       <Node Id="MySecondGroup" Group="Collapsed" />  
-    </Nodes>  
-    ```  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyFirstGroup" Group="Expanded" />  
+      <Node Id="MySecondGroup" Group="Collapsed" />  
+   </Nodes>  
+   ```  
   
-4.  No `<Links>` seção, certifique-se de que um `<Link/>` elemento que tem os seguintes atributos para cada relação entre um elemento de código de grupo e seus elementos de código de filho:  
+4. No `<Links>` seção, certifique-se de que um `<Link/>` elemento que tem os seguintes atributos para cada relação entre um elemento de código de grupo e seus elementos de código de filho:  
   
-    -   Um `Source` atributo que especifica o elemento de código do grupo  
+   - Um `Source` atributo que especifica o elemento de código do grupo  
   
-    -   Um `Target` atributo que especifica o elemento de código do filho  
+   - Um `Target` atributo que especifica o elemento de código do filho  
   
-    -   Um `Category` atributo que especifica um `Contains` relação entre o elemento de código de grupo e seu elemento de código do filho  
+   - Um `Category` atributo que especifica um `Contains` relação entre o elemento de código de grupo e seu elemento de código do filho  
   
      Por exemplo:  
   
-    ```xml  
-    <Links>  
-       <Link Category="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildOne" />  
-       <Link Category ="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildTwo" />  
-       <Link Category ="Contains" Source="MySecondNewGroup" Target="SecondGroupChildOne" />  
-       <Link Category="Contains" Source="MySecondNewGroup" Target="SecondGroupChildTwo" />  
-    </Links>  
-    ```  
+   ```xml  
+   <Links>  
+      <Link Category="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildOne" />  
+      <Link Category ="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildTwo" />  
+      <Link Category ="Contains" Source="MySecondNewGroup" Target="SecondGroupChildOne" />  
+      <Link Category="Contains" Source="MySecondNewGroup" Target="SecondGroupChildTwo" />  
+   </Links>  
+   ```  
   
-     Para obter mais informações sobre o `Category` atributo, consulte [atribuir categorias a elementos de código e links](#AssignCategories).  
+    Para obter mais informações sobre o `Category` atributo, consulte [atribuir categorias a elementos de código e links](#AssignCategories).  
   
 ##  <a name="ChangeGraphStyle"></a> Alterar o estilo do mapa  
  Você pode alterar a cor de plano de fundo e a cor da borda do mapa, editando o arquivo. dgml do mapa. Para alterar o estilo de elementos de código e links, consulte [alterar o estilo dos elementos de código e links](#Highlight).  
@@ -252,81 +252,81 @@ Para personalizar um mapa de código, você pode editar o arquivo Directed Graph
   
 ##### <a name="to-apply-custom-styles-to-a-group-of-code-elements-or-links"></a>Para aplicar estilos personalizados a um grupo de elementos de código ou links  
   
-1.  Abra o arquivo. dgml em um editor de texto ou XML.  
+1. Abra o arquivo. dgml em um editor de texto ou XML.  
   
-2.  Se um elemento `<Styles></Styles>` não existir, adicione um no elemento `<DirectedGraph></DirectedGraph>` depois do elemento `<Links></Links>`.  
+2. Se um elemento `<Styles></Styles>` não existir, adicione um no elemento `<DirectedGraph></DirectedGraph>` depois do elemento `<Links></Links>`.  
   
-3.  No elemento `<Styles></Styles>`, no elemento `<Style/>` e especifique os seguintes atributos:  
+3. No elemento `<Styles></Styles>`, no elemento `<Style/>` e especifique os seguintes atributos:  
   
-    -   `TargetType="Node` &#124; `Link | Graph"`  
+   - `TargetType="Node` &#124; `Link | Graph"`  
   
-    -   `GroupLabel="` *NameInLegendBox* `"`  
+   - `GroupLabel="` *NameInLegendBox* `"`  
   
-    -   `ValueLabel="` *NameInStylePickerBox* `"`  
+   - `ValueLabel="` *NameInStylePickerBox* `"`  
   
      Para aplicar um estilo personalizado a todos os tipos de destino, não use uma condição.  
   
 ##### <a name="to-apply-a-conditional-style-to-groups-of-code-elements-or-links"></a>Para aplicar um estilo condicional a grupos de elementos de código ou links  
   
-1.  Abra o arquivo. dgml em um editor de texto ou XML.  
+1. Abra o arquivo. dgml em um editor de texto ou XML.  
   
-2.  No elemento `<Style/>`, adicione um elemento `<Condition/>` que contém um atributo `Expression` para especificar uma expressão que retorna um valor Booliano.  
+2. No elemento `<Style/>`, adicione um elemento `<Condition/>` que contém um atributo `Expression` para especificar uma expressão que retorna um valor Booliano.  
   
-     Por exemplo:  
+    Por exemplo:  
   
-    ```xml  
-    <Condition Expression="MyCategory"/>  
-    ```  
+   ```xml  
+   <Condition Expression="MyCategory"/>  
+   ```  
   
-     - ou –  
+    - ou –  
   
-    ```xml  
-    <Condition Expression="MyCategory > 100"/>  
-    ```  
+   ```xml  
+   <Condition Expression="MyCategory > 100"/>  
+   ```  
   
-     - ou –  
+    - ou –  
   
-    ```xml  
-    <Condition Expression="HasCategory('MyCategory')"/>  
-    ```  
+   ```xml  
+   <Condition Expression="HasCategory('MyCategory')"/>  
+   ```  
   
-     Essa expressão usa a seguinte sintaxe BNF (Backus-Naur Form):  
+    Essa expressão usa a seguinte sintaxe BNF (Backus-Naur Form):  
   
-     <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>  
+    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>  
   
-     <BinaryExpression> ::= <Expression> <Operator> <Expression>  
+    <BinaryExpression> ::= <Expression> <Operator> <Expression>  
   
-     <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
+    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
   
-     <Operator> :: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "ou" &#124; "e" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
+    <Operator> :: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "ou" &#124; "e" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
   
-     <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
+    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
   
-     <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>  
+    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>  
   
-     <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
+    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
   
-     <PropertyGet> :: = Identificador  
+    <PropertyGet> :: = Identificador  
   
-     <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
+    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
   
-     <Identifier> ::= [^. ]*  
+    <Identifier> ::= [^. ]*  
   
-     <Literal> :: = literal de cadeia de único ou duplo  
+    <Literal> :: = literal de cadeia de único ou duplo  
   
-     <Number> :: = cadeia de caracteres de dígitos com ponto decimal opcional  
+    <Number> :: = cadeia de caracteres de dígitos com ponto decimal opcional  
   
-     Você pode especificar vários `<Condition/>` elementos, que devem ser verdadeiros para aplicar o estilo.  
+    Você pode especificar vários `<Condition/>` elementos, que devem ser verdadeiros para aplicar o estilo.  
   
-3.  Na próxima linha depois do `<Condition/>` elemento, adicione um ou vários `<Setter/>` elementos para especificar um `Property` fixo e atributo `Value` atributo ou um computada `Expression` atributo a ser aplicado ao mapa, elementos de código ou links que atendam à a condição.  
+3. Na próxima linha depois do `<Condition/>` elemento, adicione um ou vários `<Setter/>` elementos para especificar um `Property` fixo e atributo `Value` atributo ou um computada `Expression` atributo a ser aplicado ao mapa, elementos de código ou links que atendam à a condição.  
   
-     Por exemplo:  
+    Por exemplo:  
   
-    ```xml  
-    <Setter Property="BackGround" Value="Green"/>  
-    ```  
+   ```xml  
+   <Setter Property="BackGround" Value="Green"/>  
+   ```  
   
- Como um exemplo completo simple, a seguinte condição Especifica que um elemento de código é exibido em verde ou vermelho com base na possibilidade seus `Passed` categoria é definida como `True` ou `False`:  
+   Como um exemplo completo simple, a seguinte condição Especifica que um elemento de código é exibido em verde ou vermelho com base na possibilidade seus `Passed` categoria é definida como `True` ou `False`:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -575,74 +575,74 @@ Para personalizar um mapa de código, você pode editar o arquivo Directed Graph
   
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>Para vincular um documento ou uma URL para um elemento de código  
   
-1.  Abra o arquivo. dgml em um editor de texto ou XML.  
+1. Abra o arquivo. dgml em um editor de texto ou XML.  
   
-2.  Encontre o `<Node/>` elemento para o elemento de código que você deseja.  
+2. Encontre o `<Node/>` elemento para o elemento de código que você deseja.  
   
-3.  Realize uma das tarefas na tabela a seguir:  
+3. Realize uma das tarefas na tabela a seguir:  
   
-     Um elemento de código único  
+    Um elemento de código único  
   
-    -   No `<Node/>` ou `<Link/>` elemento, adicionar um `Reference` atributo para especificar o local do elemento do código.  
+   - No `<Node/>` ou `<Link/>` elemento, adicionar um `Reference` atributo para especificar o local do elemento do código.  
   
-        > [!NOTE]
-        >  Só é possível ter um atributo `Reference` por elemento.  
-  
-     Por exemplo:  
-  
-    ```xml  
-    <Nodes>  
-       <Node Id="MyNode" Reference="MyDocument.txt" />  
-    </Nodes>  
-    <Properties>  
-       <Property Id="Reference" Label="My Document" DataType="System.String" IsReference="True" />  
-    </Properties>  
-    ```  
-  
-     Vários elementos de código  
-  
-    1.  No elemento `<Node/>` ou `<Link/>`, adicione um novo atributo para especificar o local de cada referência.  
-  
-    2.  Na seção `<Properties>`:  
-  
-        1.  Adicione um elemento `<Property/>` para cada novo tipo de referência.  
-  
-        2.  Defina o atributo `Id` como o nome do novo atributo de referência.  
-  
-        3.  Adicione a `IsReference` de atributos e defini-lo como `True` para fazer com que a referência apareça no elemento de código **ir para referência** menu de atalho.  
-  
-        4.  Use o `Label` atributo para especificar o texto de exibição no elemento de código **ir para referência** menu de atalho.  
+     > [!NOTE]
+     >  Só é possível ter um atributo `Reference` por elemento.  
   
      Por exemplo:  
   
-    ```xml  
-    <Nodes>  
-       <Node Id="MyNode" SequenceDiagram="MySequenceDiagram.sequencediagram" ActiveBugs="MyActiveBugs.wiq"/>  
-    </Nodes>  
-    <Properties>  
-       <Property Id="SequenceDiagram" Label="My Sequence Diagram" DataType="System.String" IsReference="True" />  
-       <Property Id="ActiveBugs" Label="Active Bugs" DataType="System.String" IsReference="True" />  
-    </Properties>  
-    ```  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyNode" Reference="MyDocument.txt" />  
+   </Nodes>  
+   <Properties>  
+      <Property Id="Reference" Label="My Document" DataType="System.String" IsReference="True" />  
+   </Properties>  
+   ```  
   
-     No mapa, o nome do elemento de código é exibido sublinhado. Quando você abre o menu de atalho para o elemento de código ou o link, você verá uma **ir para referência** menu de atalho que contém os elementos de código vinculadas para sua escolha.  
+    Vários elementos de código  
   
-4.  Use o atributo `ReferenceTemplate` para especificar uma cadeia de caracteres comum, por exemplo, uma URL, usada por várias referências em vez de repetir a cadeia de caracteres na referência.  
+   1. No elemento `<Node/>` ou `<Link/>`, adicione um novo atributo para especificar o local de cada referência.  
   
-     O atributo `ReferenceTemplate` especifica um espaço reservado para o valor da referência. No exemplo a seguir, o `{0}` espaço reservado na `ReferenceTemplate` será substituído pelos valores de atributo a `MyFirstReference` e `MySecondReference` os atributos no `<Node/>` elemento para produzir um caminho completo:  
+   2. Na seção `<Properties>`:  
   
-    ```xml  
-    <Nodes>  
-       <Node Id="MyNode" MyFirstReference="MyFirstDocument" MySecondReference="MySecondDocument"/>  
-       <Node Id="MySecondNode" MyFirstReference="AnotherFirstDocument" MySecondReference="AnotherSecondDocument"/>  
-    </Nodes>  
-    <Properties>  
-       <Property Id="MyFirstReference" Label="My First Document" DataType="System.String" IsReference="True" ReferenceTemplate="http://www.Fabrikam.com/FirstDocuments/{0}.asp"/>  
-       <Property Id="MySecondReference" Label="My Second Document" DataType="System.String" IsReference="True" ReferenceTemplate=" http://www.Fabrikam.com/SecondDocuments/{0}.asp"/>  
-    </Properties>  
-    ```  
+      1.  Adicione um elemento `<Property/>` para cada novo tipo de referência.  
   
-5.  Para exibir o elemento de código referenciado ou os elementos do mapa de código, abra o menu de atalho para o elemento de código ou o link. Escolher **ir para referência** e, em seguida, o elemento de código.  
+      2.  Defina o atributo `Id` como o nome do novo atributo de referência.  
+  
+      3.  Adicione a `IsReference` de atributos e defini-lo como `True` para fazer com que a referência apareça no elemento de código **ir para referência** menu de atalho.  
+  
+      4.  Use o `Label` atributo para especificar o texto de exibição no elemento de código **ir para referência** menu de atalho.  
+  
+      Por exemplo:  
+  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyNode" SequenceDiagram="MySequenceDiagram.sequencediagram" ActiveBugs="MyActiveBugs.wiq"/>  
+   </Nodes>  
+   <Properties>  
+      <Property Id="SequenceDiagram" Label="My Sequence Diagram" DataType="System.String" IsReference="True" />  
+      <Property Id="ActiveBugs" Label="Active Bugs" DataType="System.String" IsReference="True" />  
+   </Properties>  
+   ```  
+  
+    No mapa, o nome do elemento de código é exibido sublinhado. Quando você abre o menu de atalho para o elemento de código ou o link, você verá uma **ir para referência** menu de atalho que contém os elementos de código vinculadas para sua escolha.  
+  
+4. Use o atributo `ReferenceTemplate` para especificar uma cadeia de caracteres comum, por exemplo, uma URL, usada por várias referências em vez de repetir a cadeia de caracteres na referência.  
+  
+    O atributo `ReferenceTemplate` especifica um espaço reservado para o valor da referência. No exemplo a seguir, o `{0}` espaço reservado na `ReferenceTemplate` será substituído pelos valores de atributo a `MyFirstReference` e `MySecondReference` os atributos no `<Node/>` elemento para produzir um caminho completo:  
+  
+   ```xml  
+   <Nodes>  
+      <Node Id="MyNode" MyFirstReference="MyFirstDocument" MySecondReference="MySecondDocument"/>  
+      <Node Id="MySecondNode" MyFirstReference="AnotherFirstDocument" MySecondReference="AnotherSecondDocument"/>  
+   </Nodes>  
+   <Properties>  
+      <Property Id="MyFirstReference" Label="My First Document" DataType="System.String" IsReference="True" ReferenceTemplate="http://www.Fabrikam.com/FirstDocuments/{0}.asp"/>  
+      <Property Id="MySecondReference" Label="My Second Document" DataType="System.String" IsReference="True" ReferenceTemplate=" http://www.Fabrikam.com/SecondDocuments/{0}.asp"/>  
+   </Properties>  
+   ```  
+  
+5. Para exibir o elemento de código referenciado ou os elementos do mapa de código, abra o menu de atalho para o elemento de código ou o link. Escolher **ir para referência** e, em seguida, o elemento de código.  
   
 ## <a name="see-also"></a>Consulte também  
  [Mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)   

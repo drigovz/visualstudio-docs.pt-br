@@ -18,12 +18,12 @@ ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87b755ac0dbe7e10cfe52693840101729ab32069
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce1d7b431e7918c172947c508ae06e5770877ea6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241196"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863497"
 ---
 # <a name="commandtable-element"></a>Elemento CommandTable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,10 +51,10 @@ CommandTable é o elemento raiz do arquivo. VSCT. Esse é o arquivo que define o
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descrição|  
-|---------------|-----------------|  
-|xmlns|Necessário. Namespaces XML:<br /><br /> xmlns = "http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"<br /><br /> xmlns: xs = "http://www.w3.org/2001/XMLSchema"|  
-|linguagem|Opcional. O atributo de idioma pode ser usado para especificar o idioma padrão de todos os \<cadeias de caracteres > elementos na tabela de comandos.  Se o idioma não for especificado, será usado o idioma do processo atual:<br /><br /> Language = "en-us"|  
+| Atributo |                                                                                                                   Descrição                                                                                                                   |
+|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   xmlns   |                                   Necessário. Namespaces XML:<br /><br /> xmlns = "<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns: xs = "<http://www.w3.org/2001/XMLSchema>"                                   |
+| linguagem  | Opcional. O atributo de idioma pode ser usado para especificar o idioma padrão de todos os \<cadeias de caracteres > elementos na tabela de comandos.  Se o idioma não for especificado, será usado o idioma do processo atual:<br /><br /> Language = "en-us" |
   
 ### <a name="child-elements"></a>Elementos filho  
   

@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5949578a6515d74d97821608093f8cdf0dfc7b15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 616b837613e0e2c76330a68133929e6b85a94f98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295289"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812927"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar uma exceção de simultaneidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,13 +129,13 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
   
  O usuário com três versões do registro applicationpresents:  
   
--   O registro atual no banco de dados  
+- O registro atual no banco de dados  
   
--   O registro original que é carregado no conjunto de dados  
+- O registro original que é carregado no conjunto de dados  
   
--   As alterações propostas no conjunto de dados  
+- As alterações propostas no conjunto de dados  
   
- O usuário, em seguida, é capaz de substituir o banco de dados com a versão proposta, ou cancelar a atualização e atualizar o conjunto de dados com os novos valores do banco de dados.  
+  O usuário, em seguida, é capaz de substituir o banco de dados com a versão proposta, ou cancelar a atualização e atualizar o conjunto de dados com os novos valores do banco de dados.  
   
 #### <a name="to-enable-the-handling-of-concurrency-errors"></a>Para habilitar o tratamento de erros de simultaneidade  
   

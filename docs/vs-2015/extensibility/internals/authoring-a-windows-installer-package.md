@@ -16,12 +16,12 @@ ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ed245a1d26be951f6cada4b8ae58c158102d190
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 22dcd12eb366504ee1e7cdd19970ffe9913241bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198270"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862912"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Criação de um pacote do Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,30 +31,30 @@ O modelo do Windows Installer unidades de dados. Em vez de escrever um script de
 ## <a name="database-entries"></a>Entradas de banco de dados  
  Para instalar um VSPackage, um pacote do Windows Installer deve conter entradas de banco de dados para executar as seguintes tarefas:  
   
--   Pesquisar para localizar as versões do sistema [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o VSPackage dá suporte a (usando tabelas do Windows Installer que incluem AppSearch, CompLocator, RegLocator, DrLocator e assinatura).  
+- Pesquisar para localizar as versões do sistema [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o VSPackage dá suporte a (usando tabelas do Windows Installer que incluem AppSearch, CompLocator, RegLocator, DrLocator e assinatura).  
   
--   Cancelar a instalação, se nenhuma versão com suporte do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] está instalado ou se outro requisito de sistema do VSPackage não for atendido (usando a tabela de LaunchCondition).  
+- Cancelar a instalação, se nenhuma versão com suporte do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] está instalado ou se outro requisito de sistema do VSPackage não for atendido (usando a tabela de LaunchCondition).  
   
--   Instale o VSPackage e os arquivos dependentes (usando o diretório, componente e tabelas de arquivo).  
+- Instale o VSPackage e os arquivos dependentes (usando o diretório, componente e tabelas de arquivo).  
   
--   Adicione as informações apropriadas para o VSPackage no registro (usando a tabela de registro).  
+- Adicione as informações apropriadas para o VSPackage no registro (usando a tabela de registro).  
   
--   Integrar o VSPackage na [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] chamando **devenv.exe /setup** (usando a tabela CustomAction).  
+- Integrar o VSPackage na [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] chamando **devenv.exe /setup** (usando a tabela CustomAction).  
   
- Para obter mais informações, consulte [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
+  Para obter mais informações, consulte [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
   
 ## <a name="setup-tools"></a>Ferramentas de instalação  
  Uma variedade de ferramentas de configuração de produtos de terceiros fornecem um ambiente de desenvolvimento para pacotes do Windows Installer. Duas ferramentas gratuitas são as seguintes:  
   
--   InstallShield Limited Edition  
+- InstallShield Limited Edition  
   
-     Você pode obter uma versão limitada do InstallShield por meio do Visual Studio **novo projeto** caixa de diálogo. Expandir **Other Project Types** e, em seguida, selecione **instalação e implantação**. Selecione o modelo do InstallShield.  
+   Você pode obter uma versão limitada do InstallShield por meio do Visual Studio **novo projeto** caixa de diálogo. Expandir **Other Project Types** e, em seguida, selecione **instalação e implantação**. Selecione o modelo do InstallShield.  
   
--   Conjunto de Ferramentas XML do Windows Installer  
+- Conjunto de Ferramentas XML do Windows Installer  
   
-     O conjunto de ferramentas cria pacotes do Windows Installer XML dos arquivos de origem. O conjunto de ferramentas é um projeto de código-fonte aberto da Microsoft. Você pode baixar o código-fonte e os executáveis do [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix).  
+   O conjunto de ferramentas cria pacotes do Windows Installer XML dos arquivos de origem. O conjunto de ferramentas é um projeto de código-fonte aberto da Microsoft. Você pode baixar o código-fonte e os executáveis do [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix).  
   
- Para os produtos comerciais que se integram [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usando o [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], consulte [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).  
+  Para os produtos comerciais que se integram [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usando o [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], consulte [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).  
   
 ## <a name="see-also"></a>Consulte também  
  [Instalar VSPackages com o Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

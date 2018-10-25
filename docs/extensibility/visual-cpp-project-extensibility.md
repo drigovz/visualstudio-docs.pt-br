@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76adb5df7fec7663f5c9bc1a4c84c378f0e14a82
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135653"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850797"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema extensibilidade e conjunto de ferramentas de integração do Project
 
@@ -478,12 +478,13 @@ O formato de regra é simples, portanto, esta seção descreve somente os atribu
 
 O `PageTemplate` atributo define como a regra é exibida na **páginas de propriedade** caixa de diálogo. O atributo pode ter um destes valores:
 
-|Atributo|Descrição|
-|-|-|
-`generic`|Todas as propriedades são mostradas em uma única página nos títulos de categoria<br/>A regra pode ser visível para os `Project` e `PropertySheet` contextos, mas não `File`.<br/><br/> Exemplo: `$(VCTargetsPath)` \\ *1033*\\*arquivo General*
-`tool`|Categorias são mostradas como subpáginas.<br/>A regra pode ser visível em todos os contextos: `Project`, `PropertySheet` e `File`.<br/>A regra está visível nas propriedades do projeto somente se o projeto tem itens com o `ItemType` definidos no `Rule.DataSource`, a menos que o nome da regra está incluído no `ProjectTools` grupo de itens.<br/><br/>Exemplo: `$(VCTargetsPath)` \\ *1033*\\*clang.xml*
-`debugger`|A página é mostrada como parte da página de depuração.<br/>Categorias são ignoradas no momento.<br/>O nome da regra deve corresponder do objeto Debug iniciador MEF `ExportDebugger` atributo.<br/><br/>Exemplo: `$(VCTargetsPath)` \\ *1033*\\*depurador\_local\_windows.xml*
-*custom*| Modelo personalizado. O nome do modelo deve corresponder a `ExportPropertyPageUIFactoryProvider` atributo do `PropertyPageUIFactoryProvider` objeto MEF. Ver **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Exemplo: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml*
+
+| Atributo | Descrição |
+|------------| - |
+| `generic` | Todas as propriedades são mostradas em uma única página nos títulos de categoria<br/>A regra pode ser visível para os `Project` e `PropertySheet` contextos, mas não `File`.<br/><br/> Exemplo: `$(VCTargetsPath)` \\ *1033*\\*arquivo General* |
+| `tool` | Categorias são mostradas como subpáginas.<br/>A regra pode ser visível em todos os contextos: `Project`, `PropertySheet` e `File`.<br/>A regra está visível nas propriedades do projeto somente se o projeto tem itens com o `ItemType` definidos no `Rule.DataSource`, a menos que o nome da regra está incluído no `ProjectTools` grupo de itens.<br/><br/>Exemplo: `$(VCTargetsPath)` \\ *1033*\\*clang.xml* |
+| `debugger` | A página é mostrada como parte da página de depuração.<br/>Categorias são ignoradas no momento.<br/>O nome da regra deve corresponder do objeto Debug iniciador MEF `ExportDebugger` atributo.<br/><br/>Exemplo: `$(VCTargetsPath)` \\ *1033*\\*depurador\_local\_windows.xml* |
+| *custom* | Modelo personalizado. O nome do modelo deve corresponder a `ExportPropertyPageUIFactoryProvider` atributo do `PropertyPageUIFactoryProvider` objeto MEF. Ver **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Exemplo: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml* |
 
 Se a regra usa um dos modelos com base em grade de propriedade, ele poderá usar esses pontos de extensibilidade para suas propriedades:
 

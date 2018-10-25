@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08b6c27bdd3f6806545551a766d92550622001ee
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bc43329070795415962cf18068f8320ae7458604
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905409"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Expor eventos no SDK do Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] permite a fonte de eventos usando a automação. É recomendável que a fonte de eventos para projetos e itens de projeto.  
@@ -28,23 +28,23 @@ ms.locfileid: "39500401"
   
  O processo a seguir explica como os eventos específicos de VSPackage são retornados.  
   
-1.  O ambiente inicia.  
+1. O ambiente inicia.  
   
-2.  Ele lê a partir do registro todos os nomes de valor sob a **automação**, **AutomationEvents**, e **AutomationProperties** chaves de todos os VSPackages e armazena os nomes em um tabela.  
+2. Ele lê a partir do registro todos os nomes de valor sob a **automação**, **AutomationEvents**, e **AutomationProperties** chaves de todos os VSPackages e armazena os nomes em um tabela.  
   
-3.  Chama um consumidor de automação, neste exemplo, `DTE.Events.AutomationProjectsEvents` ou `DTE.Events.AutomationProjectItemsEvents`.  
+3. Chama um consumidor de automação, neste exemplo, `DTE.Events.AutomationProjectsEvents` ou `DTE.Events.AutomationProjectItemsEvents`.  
   
-4.  O ambiente localiza o parâmetro de cadeia de caracteres na tabela e carrega o VSPackage correspondente.  
+4. O ambiente localiza o parâmetro de cadeia de caracteres na tabela e carrega o VSPackage correspondente.  
   
-5.  O ambiente chama o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> método usando o nome passado na chamada; neste exemplo, `AutomationProjectsEvents` ou `AutomationProjectItemsEvents`.  
+5. O ambiente chama o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> método usando o nome passado na chamada; neste exemplo, `AutomationProjectsEvents` ou `AutomationProjectItemsEvents`.  
   
-6.  O VSPackage cria um objeto de raiz que tem métodos como `get_AutomationProjectsEvents` e `get_AutomationProjectItemEvents` e, em seguida, retorna um ponteiro de IDispatch para o objeto.  
+6. O VSPackage cria um objeto de raiz que tem métodos como `get_AutomationProjectsEvents` e `get_AutomationProjectItemEvents` e, em seguida, retorna um ponteiro de IDispatch para o objeto.  
   
-7.  O ambiente chama o método apropriado com base no nome passado para a chamada de automação.  
+7. O ambiente chama o método apropriado com base no nome passado para a chamada de automação.  
   
-8.  O `get_` método cria outro objeto IDispatch com base em eventos que implementa ambos o `IConnectionPointContainer` interface e o `IConnectionPoint` interface e retorna um `IDispatchpointer` ao objeto.  
+8. O `get_` método cria outro objeto IDispatch com base em eventos que implementa ambos o `IConnectionPointContainer` interface e o `IConnectionPoint` interface e retorna um `IDispatchpointer` ao objeto.  
   
- Para expor um evento usando a automação, você deve responder às <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> e inspeção para cadeias de caracteres que você adiciona ao registro. No exemplo de projeto básico, as cadeias de caracteres são *BscProjectsEvents* e *BscProjectItemsEvents*.  
+   Para expor um evento usando a automação, você deve responder às <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> e inspeção para cadeias de caracteres que você adiciona ao registro. No exemplo de projeto básico, as cadeias de caracteres são *BscProjectsEvents* e *BscProjectItemsEvents*.  
   
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Entradas do registro do exemplo de projeto básico  
  Esta seção mostra onde adicionar valores de evento de automação para o registro.  

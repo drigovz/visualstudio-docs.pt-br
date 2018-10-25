@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3ad96b9ed53b7600417f3c3e8a283c7a4a372842
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ddb8f32cbf23184da140c3426e88c1f622dea1b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286488"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832674"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Como criar um sombreador Phong básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,19 +43,19 @@ Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed G
   
 #### <a name="to-create-a-phong-shader"></a>Para criar um sombreador Phong  
   
-1.  Crie um sombreador Lambert, conforme descrito em [Como criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).  
+1. Crie um sombreador Lambert, conforme descrito em [Como criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).  
   
-2.  Desconecte o nó **Lambert** do nó **Cor Final**. Escolha o terminal **RGB** do nó **Lambert** e, em seguida, escolha **Quebrar Links**. Isso abre o espaço para o nó que será adicionado na próxima etapa.  
+2. Desconecte o nó **Lambert** do nó **Cor Final**. Escolha o terminal **RGB** do nó **Lambert** e, em seguida, escolha **Quebrar Links**. Isso abre o espaço para o nó que será adicionado na próxima etapa.  
   
-3.  Adicione um nó **Adicionar** ao grafo. Na **Caixa de Ferramentas**, em **Matemática**, selecione **Adicionar** e mova-a para a superfície de design.  
+3. Adicione um nó **Adicionar** ao grafo. Na **Caixa de Ferramentas**, em **Matemática**, selecione **Adicionar** e mova-a para a superfície de design.  
   
-4.  Adicione um nó **Especular** ao gráfico. Na **Caixa de Ferramentas**, em **Utilitário**, selecione **Especular** e mova-o para a superfície de design.  
+4. Adicione um nó **Especular** ao gráfico. Na **Caixa de Ferramentas**, em **Utilitário**, selecione **Especular** e mova-o para a superfície de design.  
   
-5.  Adicione a contribuição especular. Mova o terminal de **Saída** do nó **Especular** para o terminal **X** do nó **Adicionar** e, em seguida, mova o terminal de **Saída** do nó **Lambert** para o terminal **Y** do nó **Adicionar**. Essas conexões combinam as contribuições de cor difusa e especular totais para o pixel.  
+5. Adicione a contribuição especular. Mova o terminal de **Saída** do nó **Especular** para o terminal **X** do nó **Adicionar** e, em seguida, mova o terminal de **Saída** do nó **Lambert** para o terminal **Y** do nó **Adicionar**. Essas conexões combinam as contribuições de cor difusa e especular totais para o pixel.  
   
-6.  Conecte o valor de cor calculado à cor final. Mova o terminal de **Saída** do nó **Adicionar** para o terminal **RGB** do nó **Cor Final**.  
+6. Conecte o valor de cor calculado à cor final. Mova o terminal de **Saída** do nó **Adicionar** para o terminal **RGB** do nó **Cor Final**.  
   
- A ilustração a seguir mostra o grafo de sombreador concluído e uma visualização do sombreador aplicado a um modelo de bule.  
+   A ilustração a seguir mostra o grafo de sombreador concluído e uma visualização do sombreador aplicado a um modelo de bule.  
   
 > [!NOTE]
 >  Para demonstrar melhor o efeito do sombreador nesta ilustração, foi especificada uma cor laranja usando o parâmetro **MaterialDiffuse** do sombreador e foi especificado um acabamento de aparência metálica usando os parâmetros **MaterialSpecular** e **MaterialSpecularPower**. Para obter informações sobre parâmetros de material, consulte a seção Visualização de Sombreadores em [Designer de Sombreador](../designers/shader-designer.md).  

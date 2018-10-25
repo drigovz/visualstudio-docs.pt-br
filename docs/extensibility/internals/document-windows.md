@@ -13,27 +13,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdf892b6d80358885f0da8e20a97bd9453c50f27
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: dcd2c47de8e1ad8b650da0819b5e8b0a46213e29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499335"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875965"
 ---
 # <a name="document-windows"></a>Janelas de documento
 No Visual Studio, uma *janela de documento* é uma janela com moldura filho que está associada uma janela de interface de documentos múltiplos (MDI). Janelas de documento normalmente são usadas para a exibição e modificação do código-fonte ou texto, mas eles também podem hospedar outros tipos de funcionais. Janelas de documento:  
   
--   Podem ser organizados em grupos de guia horizontal ou vertical separada no pai MDI, para que vários arquivos podem ser exibidos ao mesmo tempo.  
+- Podem ser organizados em grupos de guia horizontal ou vertical separada no pai MDI, para que vários arquivos podem ser exibidos ao mesmo tempo.  
   
--   Podem ser encaixadas em qualquer ordem no pai MDI.  
+- Podem ser encaixadas em qualquer ordem no pai MDI.  
   
--   Pode ser flutuante livremente.  
+- Pode ser flutuante livremente.  
   
--   São vinculados na ordem de tabulação para outras janelas MDI.  
+- São vinculados na ordem de tabulação para outras janelas MDI.  
   
- Os comandos para agrupamento, Encaixando e flutuando podem ser encontrados no menu de atalho para uma guia da janela de documento.  
+  Os comandos para agrupamento, Encaixando e flutuando podem ser encontrados no menu de atalho para uma guia da janela de documento.  
   
- Para obter mais informações sobre o comportamento de janela no Visual Studio, consulte [Personalizar layouts de janela](../../ide/customizing-window-layouts-in-visual-studio.md).  
+  Para obter mais informações sobre o comportamento de janela no Visual Studio, consulte [Personalizar layouts de janela](../../ide/customizing-window-layouts-in-visual-studio.md).  
   
 ## <a name="document-window-implementation"></a>Implementação de janela de documento  
  Janelas de documento são criadas com a implementação de um editor. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interface cria janelas de documentos como parte de criar uma instância de um editor. Para obter mais informações, consulte [herdado interfaces no editor de](../../extensibility/legacy-interfaces-in-the-editor.md).  

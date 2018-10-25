@@ -22,25 +22,25 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e28ee8c4fa17eca8f2b5419b1d9aefb229fd020
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e5d49b70cc594a05bae8056fe8139e405e15cba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219148"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888083"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitações da depuração WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Há três modos de começar a depuração de um serviço WCF:  
   
--   Você está depurando um processo de cliente que chama um serviço. O depurador entra no serviço. O serviço não tem que estar na mesma solução que o aplicativo cliente.  
+- Você está depurando um processo de cliente que chama um serviço. O depurador entra no serviço. O serviço não tem que estar na mesma solução que o aplicativo cliente.  
   
--   Você está depurando um processo de cliente que faz a solicitação para um serviço. O serviço deve fazer parte de sua solução.  
+- Você está depurando um processo de cliente que faz a solicitação para um serviço. O serviço deve fazer parte de sua solução.  
   
--   Você usa **anexar ao processo** para anexar a um serviço que está sendo executado. A depuração começa dentro do serviço.  
+- Você usa **anexar ao processo** para anexar a um serviço que está sendo executado. A depuração começa dentro do serviço.  
   
- Este tópico descreve limitações nesses cenários.  
+  Este tópico descreve limitações nesses cenários.  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>Limitações para entrar em um serviço  
  Para entrar em um serviço de aplicativos cliente que você está depurando, as seguintes condições devem ser atendidas:  

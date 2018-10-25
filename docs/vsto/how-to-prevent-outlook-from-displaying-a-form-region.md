@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87a03e62c77730c7be2c9487c5e344d668ea62cc
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 1ec9f45b2055a7a56e067440d216482877da14c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949052"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Como: evitar que o Outlook exiba uma região de formulário
   Pode haver situações em que você quer que o Microsoft Office Outlook para exibir uma região de formulário para um determinado item. Por exemplo, se um item de contato não contiver um endereço comercial, você pode impedir que uma região de formulário que mostra o local da empresa em um mapa apareça.  
@@ -30,13 +30,13 @@ ms.locfileid: "35254782"
   
 ## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Para impedir que o Outlook exiba uma região de formulário  
   
-1.  Abra o arquivo de código para a região do formulário que você deseja modificar.  
+1. Abra o arquivo de código para a região do formulário que você deseja modificar.  
   
-2.  Expanda o **fábrica de região de formulário** região de código.  
+2. Expanda o **fábrica de região de formulário** região de código.  
   
-3.  Adicione código para o `FormRegionInitializing` manipulador de eventos que define o <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> propriedade da <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> classe para **true**.  
+3. Adicione código para o `FormRegionInitializing` manipulador de eventos que define o <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> propriedade da <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> classe para **true**.  
   
- Neste exemplo, se o item de contato não contiver um endereço, o <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> estiver definida como **verdadeiro**, e a região do formulário não é exibida.  
+   Neste exemplo, se o item de contato não contiver um endereço, o <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> estiver definida como **verdadeiro**, e a região do formulário não é exibida.  
   
 ## <a name="example"></a>Exemplo  
  [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]

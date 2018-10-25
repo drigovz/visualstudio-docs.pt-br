@@ -15,12 +15,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f98990cfe1a3451b9932eb5614de614c05434edb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 62a451b1004a6e93980d7fb594781e661b06246d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221554"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863614"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,19 +65,19 @@ Verifique se seu código está funcionando conforme o esperado criando e executa
   
  Criamos uma solução `MyBank` que contém dois projetos:  
   
--   `Accounts`  
+- `Accounts`  
   
--   `BankDb`  
+- `BankDb`  
   
- Nossa primeira tentativa de criação do projeto `Accounts` contém uma classe para manter informações básicas sobre uma conta, uma interface que especifica a funcionalidade comum dos tipos de conta, como depositar e sacar ativos da conta, e uma classe derivada da interface que representa uma conta corrente. Começamos os projetos Contas criando os seguintes arquivos de origem:  
+  Nossa primeira tentativa de criação do projeto `Accounts` contém uma classe para manter informações básicas sobre uma conta, uma interface que especifica a funcionalidade comum dos tipos de conta, como depositar e sacar ativos da conta, e uma classe derivada da interface que representa uma conta corrente. Começamos os projetos Contas criando os seguintes arquivos de origem:  
   
--   `AccountInfo.cs` define as informações básicas de uma conta.  
+- `AccountInfo.cs` define as informações básicas de uma conta.  
   
--   `IAccount.cs` define uma interface padrão `IAccount` de uma conta, incluindo métodos de depósito e saque de ativos de uma conta e de recuperação do saldo da conta.  
+- `IAccount.cs` define uma interface padrão `IAccount` de uma conta, incluindo métodos de depósito e saque de ativos de uma conta e de recuperação do saldo da conta.  
   
--   `CheckingAccount.cs` contém a classe `CheckingAccount` que implementa a interface `IAccounts` de uma conta corrente.  
+- `CheckingAccount.cs` contém a classe `CheckingAccount` que implementa a interface `IAccounts` de uma conta corrente.  
   
- Sabemos por experiência própria que uma das coisas que um saque de conta corrente deve fazer é garantir que o valor sacado seja, no máximo, o que existe como saldo na conta. Podemos substituir o método `IAccount.Withdaw` na `CheckingAccount` por um método que verifica essa condição. O método pode ser mais ou menos assim:  
+  Sabemos por experiência própria que uma das coisas que um saque de conta corrente deve fazer é garantir que o valor sacado seja, no máximo, o que existe como saldo na conta. Podemos substituir o método `IAccount.Withdaw` na `CheckingAccount` por um método que verifica essa condição. O método pode ser mais ou menos assim:  
   
 ```csharp  
   
@@ -102,46 +102,46 @@ public void Withdraw(double amount)
   
  **Gerar o projeto de teste de unidade e os stubs de teste de unidade**  
   
-1.  Na janela do editor de código, clique com botão direito do mouse e escolha **Criar Testes de Unidade** no menu de contexto.  
+1. Na janela do editor de código, clique com botão direito do mouse e escolha **Criar Testes de Unidade** no menu de contexto.  
   
-     ![Na janela do editor, exiba o menu de contexto](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
+    ![Na janela do editor, exiba o menu de contexto](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
   
-2.  Clique em OK para aceitar os padrões e criar testes de unidade ou altere os valores usados para criar e nomear o teste de unidade de projeto e os testes de unidade. Você pode selecionar o código que é adicionado por padrão aos métodos de teste de unidade.  
+2. Clique em OK para aceitar os padrões e criar testes de unidade ou altere os valores usados para criar e nomear o teste de unidade de projeto e os testes de unidade. Você pode selecionar o código que é adicionado por padrão aos métodos de teste de unidade.  
   
-     ![Clique com o botão direito do mouse no editor e escolha Criar Testes de Unidade](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
+    ![Clique com o botão direito do mouse no editor e escolha Criar Testes de Unidade](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
   
-3.  Os stubs de teste de unidade são criados em um novo projeto de teste de unidade para todos os métodos na classe.  
+3. Os stubs de teste de unidade são criados em um novo projeto de teste de unidade para todos os métodos na classe.  
   
-     ![Os testes de unidade são criados](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
+    ![Os testes de unidade são criados](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
   
-4.  Agora, avance para saber como [adicionar código aos métodos de teste de unidade](#BKMK_Writing_your_tests) a fim de fazer o teste de unidade ser relevante ou outros testes de unidade extra que você queira adicionar para testar seu código.  
+4. Agora, avance para saber como [adicionar código aos métodos de teste de unidade](#BKMK_Writing_your_tests) a fim de fazer o teste de unidade ser relevante ou outros testes de unidade extra que você queira adicionar para testar seu código.  
   
- **Criar projeto de teste de unidade e testes de unidade manualmente**  
+   **Criar projeto de teste de unidade e testes de unidade manualmente**  
   
- Um projeto de teste de unidade geralmente espelha a estrutura de um projeto de código único. No exemplo MyBank, você adicionará dois projetos de teste de unidade chamados `AccountsTests` e `BankDbTests` à solução `MyBanks`. Os nomes de projeto de teste são arbitrários, mas convém adotar uma convenção de nomenclatura padrão.  
+   Um projeto de teste de unidade geralmente espelha a estrutura de um projeto de código único. No exemplo MyBank, você adicionará dois projetos de teste de unidade chamados `AccountsTests` e `BankDbTests` à solução `MyBanks`. Os nomes de projeto de teste são arbitrários, mas convém adotar uma convenção de nomenclatura padrão.  
   
- **Para adicionar um projeto de teste de unidade a uma solução:**  
+   **Para adicionar um projeto de teste de unidade a uma solução:**  
   
-1.  No menu **Arquivo**, escolha **Novo** e, em seguida, escolha **Projeto** (Teclado: Ctrl + Shift + N).  
+5. No menu **Arquivo**, escolha **Novo** e, em seguida, escolha **Projeto** (Teclado: Ctrl + Shift + N).  
   
-2.  Na caixa de diálogo Novo Projeto, expanda o nó **Instalado**, escolha o idioma que você deseja usar para o projeto de teste e escolha **Testar**.  
+6. Na caixa de diálogo Novo Projeto, expanda o nó **Instalado**, escolha o idioma que você deseja usar para o projeto de teste e escolha **Testar**.  
   
-3.  Para usar uma das estruturas de teste de unidade da Microsoft, escolha **Projeto de Teste de Unidade** na lista de modelos de projeto. Caso contrário, escolha o modelo de projeto da estrutura de teste de unidade que você deseja usar. Para testar o projeto `Accounts` do nosso exemplo, você deve nomear o projeto `AccountsTests`.  
+7. Para usar uma das estruturas de teste de unidade da Microsoft, escolha **Projeto de Teste de Unidade** na lista de modelos de projeto. Caso contrário, escolha o modelo de projeto da estrutura de teste de unidade que você deseja usar. Para testar o projeto `Accounts` do nosso exemplo, você deve nomear o projeto `AccountsTests`.  
   
-    > [!WARNING]
-    >  Nem todas as estruturas de teste de unidade de código aberto e de terceiros fornecem um modelo de projeto do Visual Studio. Consulte o documento da estrutura para saber como criar um projeto.  
+   > [!WARNING]
+   >  Nem todas as estruturas de teste de unidade de código aberto e de terceiros fornecem um modelo de projeto do Visual Studio. Consulte o documento da estrutura para saber como criar um projeto.  
   
-4.  Em seu projeto de teste de unidade, adicione uma referência ao projeto de código em teste, neste caso, ao projeto Contas.  
+8. Em seu projeto de teste de unidade, adicione uma referência ao projeto de código em teste, neste caso, ao projeto Contas.  
   
-     Para criar a referência ao projeto de código:  
+    Para criar a referência ao projeto de código:  
   
-    1.  Selecione o projeto no Gerenciador de Soluções.  
+   1.  Selecione o projeto no Gerenciador de Soluções.  
   
-    2.  No menu **Projeto**, escolha **Adicionar Referência**.  
+   2.  No menu **Projeto**, escolha **Adicionar Referência**.  
   
-    3.  Na caixa de diálogo Gerenciador de Referência, abra o nó **Solução** e escolha **Projetos**. Selecione o nome do projeto de código e feche a caixa de diálogo.  
+   3.  Na caixa de diálogo Gerenciador de Referência, abra o nó **Solução** e escolha **Projetos**. Selecione o nome do projeto de código e feche a caixa de diálogo.  
   
- Cada projeto de teste de unidade contém classes que refletem os nomes das classes no projeto do código. Em nosso exemplo, o projeto `AccountsTests` contém as seguintes classes:  
+   Cada projeto de teste de unidade contém classes que refletem os nomes das classes no projeto do código. Em nosso exemplo, o projeto `AccountsTests` contém as seguintes classes:  
   
 -   A classe `AccountInfoTests` contém os métodos de teste de unidade para a classe `AccountInfo` no projeto `BankAccount`  
   
@@ -152,13 +152,13 @@ public void Withdraw(double amount)
   
  O padrão AAA (Arrange, Act, Assert) é uma maneira comum de escrever testes de unidade para um método em teste.  
   
--   A seção **Organizar** (Arrange) de um método de teste de unidade inicializa os objetos e define o valor dos dados que são passados para o método sendo testado.  
+- A seção **Organizar** (Arrange) de um método de teste de unidade inicializa os objetos e define o valor dos dados que são passados para o método sendo testado.  
   
--   A seção **Agir** (Act) invoca o método sendo testado com os parâmetros organizados.  
+- A seção **Agir** (Act) invoca o método sendo testado com os parâmetros organizados.  
   
--   A seção **Declarar** (Assert) verifica se a ação do método em teste se comporta conforme o esperado.  
+- A seção **Declarar** (Assert) verifica se a ação do método em teste se comporta conforme o esperado.  
   
- Para testar o método `CheckingAccount.Withdraw` de nosso exemplo, podemos escrever dois testes: um que verifica o comportamento padrão do método e outro que verifica se um saque acima do saldo falhará. Na classe `CheckingAccountTests`, podemos adicionar os seguintes métodos:  
+  Para testar o método `CheckingAccount.Withdraw` de nosso exemplo, podemos escrever dois testes: um que verifica o comportamento padrão do método e outro que verifica se um saque acima do saldo falhará. Na classe `CheckingAccountTests`, podemos adicionar os seguintes métodos:  
   
 ```csharp  
 [TestMethod]  
@@ -265,24 +265,24 @@ public void My_Test ()
   
  **R:** você pode usar o Gerenciador de Testes para iniciar uma sessão de depuração para os testes. Passar pelo código com o depurador do Visual Studio permite-lhe navegar facilmente entre os testes de unidade e o projeto sendo testado. Para iniciar a depuração:  
   
-1.  No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.  
+1. No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.  
   
-    > [!NOTE]
-    >  Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.  
+   > [!NOTE]
+   >  Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.  
   
-2.  No Gerenciador de Testes, selecione os métodos de teste e escolha **Depurar Testes Selecionados** no menu de atalho.  
+2. No Gerenciador de Testes, selecione os métodos de teste e escolha **Depurar Testes Selecionados** no menu de atalho.  
   
- Obter mais detalhes sobre [como depurar testes de unidade](../debugger/debugging-in-visual-studio.md).  
+   Obter mais detalhes sobre [como depurar testes de unidade](../debugger/debugging-in-visual-studio.md).  
   
- **P: se estou usando TDD, como faço para gerar código de meus testes?**  
+   **P: se estou usando TDD, como faço para gerar código de meus testes?**  
   
- **R:** use o IntelliSense para gerar classes e métodos no código do seu projeto. Escreva uma instrução em um método de teste que chama a classe ou o método que você deseja gerar e abra o menu do IntelliSense na chamada. Se a chamada é um construtor da nova classe, escolha **Gerar novo tipo** no menu e siga o assistente para inserir a classe em seu projeto de código. Se a chamada é para um método, escolha **Gerar novo método** no menu IntelliSense.  
+   **R:** use o IntelliSense para gerar classes e métodos no código do seu projeto. Escreva uma instrução em um método de teste que chama a classe ou o método que você deseja gerar e abra o menu do IntelliSense na chamada. Se a chamada é um construtor da nova classe, escolha **Gerar novo tipo** no menu e siga o assistente para inserir a classe em seu projeto de código. Se a chamada é para um método, escolha **Gerar novo método** no menu IntelliSense.  
   
- ![Gerar menu Intellisense do Stub de Método](../test/media/ute-generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
+   ![Gerar menu Intellisense do Stub de Método](../test/media/ute-generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
   
- **P: posso criar testes de unidade que usam vários conjuntos de dados como entrada para executar o teste?**  
+   **P: posso criar testes de unidade que usam vários conjuntos de dados como entrada para executar o teste?**  
   
- **R:** Sim. Os *métodos de teste voltados para dados* permitem que você teste um intervalo de valores com um método de teste de unidade. Use um atributo `DataSource` para o método de teste que especifica a fonte de dados e a tabela que contém os valores de variáveis que você deseja testar.  No corpo do método, atribua os valores de linha às variáveis usando o indexador `TestContext.DataRow[`*ColumnName*`]`.  
+   **R:** Sim. Os *métodos de teste voltados para dados* permitem que você teste um intervalo de valores com um método de teste de unidade. Use um atributo `DataSource` para o método de teste que especifica a fonte de dados e a tabela que contém os valores de variáveis que você deseja testar.  No corpo do método, atribua os valores de linha às variáveis usando o indexador `TestContext.DataRow[`*ColumnName*`]`.  
   
 > [!NOTE]
 >  Esses procedimentos se aplicam somente ao teste de métodos que você escreve usando o Microsoft Unit Test Framework para código gerenciado. Se você estiver usando uma estrutura diferente, consulte a documentação dela para ver a funcionalidade equivalente.  
@@ -334,21 +334,21 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
  O Microsoft Fakes usa duas abordagens a fim de criar classes substitutas para dependências externas.  
   
-1.  *Stubs* geram classes substitutas derivadas da interface pai da classe de dependência de destino. Os métodos stub podem ser substituídos por métodos virtuais públicos da classe de destino.  
+1. *Stubs* geram classes substitutas derivadas da interface pai da classe de dependência de destino. Os métodos stub podem ser substituídos por métodos virtuais públicos da classe de destino.  
   
-2.  *Shims* usam a instrumentação de tempo de execução para desviar as chamadas a um método de destino para um método shim substituto no caso de métodos não virtuais.  
+2. *Shims* usam a instrumentação de tempo de execução para desviar as chamadas a um método de destino para um método shim substituto no caso de métodos não virtuais.  
   
- Em ambas as abordagens, você pode usar os representantes de chamadas gerados para o método de dependência a fim de especificar o comportamento desejado no método de teste.  
+   Em ambas as abordagens, você pode usar os representantes de chamadas gerados para o método de dependência a fim de especificar o comportamento desejado no método de teste.  
   
- Saiba mais sobre [como isolar métodos de teste de unidade com o Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
+   Saiba mais sobre [como isolar métodos de teste de unidade com o Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
   
- **P: posso usar outras estruturas de teste de unidade para criar testes de unidade?**  
+   **P: posso usar outras estruturas de teste de unidade para criar testes de unidade?**  
   
- **R:** Sim, siga estas etapas para [encontrar e instalar outras estruturas](../test/install-third-party-unit-test-frameworks.md). Depois de reiniciar o Visual Studio, reabra a solução para criar testes de unidade e selecione suas estruturas instaladas aqui:  
+   **R:** Sim, siga estas etapas para [encontrar e instalar outras estruturas](../test/install-third-party-unit-test-frameworks.md). Depois de reiniciar o Visual Studio, reabra a solução para criar testes de unidade e selecione suas estruturas instaladas aqui:  
   
- ![Selecione outra estrutura de teste de unidade instalada](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
+   ![Selecione outra estrutura de teste de unidade instalada](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
   
- Seu stubs de teste de unidade serão criados usando a estrutura selecionada.
+   Seu stubs de teste de unidade serão criados usando a estrutura selecionada.
 
 
 

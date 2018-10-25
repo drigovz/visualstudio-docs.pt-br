@@ -33,12 +33,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9bdff85f80999d312a6c09c0c92e39fedfa37439
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173591"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901639"
 ---
 # <a name="viewing-the-structure-of-code"></a>Exibindo a estrutura do código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,23 +145,23 @@ Janela de Hierarquia de Chamada
   
  Você pode filtrar o que deseja exibir no **Pesquisador de Objetos**. Usando a lista suspensa na parte superior da janela, você pode escolher entre as seguintes opções:  
   
--   Qualquer .NET Framework  
+- Qualquer .NET Framework  
   
--   Silverlight  
+- Silverlight  
   
--   A solução ativa  
+- A solução ativa  
   
--   Um conjunto personalizado de componentes  
+- Um conjunto personalizado de componentes  
   
- Componentes personalizados podem incluir executáveis de código gerenciado, assemblies de biblioteca, bibliotecas de tipos e arquivos .ocx. Não é possível adicionar componentes personalizados C++. Configurações personalizadas são salvas no diretório de aplicativo do usuário do Visual Studio, %APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat.  
+  Componentes personalizados podem incluir executáveis de código gerenciado, assemblies de biblioteca, bibliotecas de tipos e arquivos .ocx. Não é possível adicionar componentes personalizados C++. Configurações personalizadas são salvas no diretório de aplicativo do usuário do Visual Studio, %APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat.  
   
- O painel esquerdo do **Pesquisador de Objetos** mostra contêineres físicos, como componentes COM e do .NET Framework. É possível expandir os nós do contêiner para exibir os namespaces que eles contêm e, em seguida, expandir os namespaces para exibir os tipos que eles contêm. Quando você seleciona um tipo, seus membros (como propriedades e métodos) são listados no painel direito. O painel inferior direito exibe informações detalhadas sobre o item selecionado.  
+  O painel esquerdo do **Pesquisador de Objetos** mostra contêineres físicos, como componentes COM e do .NET Framework. É possível expandir os nós do contêiner para exibir os namespaces que eles contêm e, em seguida, expandir os namespaces para exibir os tipos que eles contêm. Quando você seleciona um tipo, seus membros (como propriedades e métodos) são listados no painel direito. O painel inferior direito exibe informações detalhadas sobre o item selecionado.  
   
- Você pode pesquisar um item específico usando a caixa **Pesquisar** na parte superior da janela. As pesquisas não diferenciam maiúsculas de minúsculas. Os resultados da pesquisa são exibidos no painel esquerdo. Para limpar uma pesquisa, escolha o botão **Limpar Pesquisa** (X) ao lado da caixa **Pesquisar**.  
+  Você pode pesquisar um item específico usando a caixa **Pesquisar** na parte superior da janela. As pesquisas não diferenciam maiúsculas de minúsculas. Os resultados da pesquisa são exibidos no painel esquerdo. Para limpar uma pesquisa, escolha o botão **Limpar Pesquisa** (X) ao lado da caixa **Pesquisar**.  
   
- O **Pesquisador de Objetos** mantém controle das seleções feitas, e você pode navegar entre suas seleções usando os botões **Avançar** e **Voltar** na barra de ferramentas.  
+  O **Pesquisador de Objetos** mantém controle das seleções feitas, e você pode navegar entre suas seleções usando os botões **Avançar** e **Voltar** na barra de ferramentas.  
   
- É possível usar o **Pesquisador de Objetos** para adicionar uma referência de assembly a uma solução aberta selecionando um item (assembly, namespace, tipo ou membro) e escolhendo o botão **Adicionar Referência** na barra de ferramentas.  
+  É possível usar o **Pesquisador de Objetos** para adicionar uma referência de assembly a uma solução aberta selecionando um item (assembly, namespace, tipo ou membro) e escolhendo o botão **Adicionar Referência** na barra de ferramentas.  
   
 ### <a name="object-browser-settings"></a>Configurações do Pesquisador de Objetos  
  Usando o botão **Configurações do Pesquisador de Objetos** na barra de ferramentas, você pode especificar um dos seguintes modos de exibição.  

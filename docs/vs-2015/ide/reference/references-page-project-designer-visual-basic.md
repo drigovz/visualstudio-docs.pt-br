@@ -22,12 +22,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db774bdfb02d762c2370ab342cc67c1a9b792bed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0dabf5b84eb1adde1d6e579b7ec5ad6a6c443723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859051"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referências, Designer de Projeto (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Use a página **Referências** do **Designer de Projeto** para gerenciar referê
   
 > [!NOTE]
 >  Quando o sistema do projeto encontra uma referência de assembly, o sistema resolve a referência examinando os seguintes locais, na seguinte ordem:  
->   
->  1.  A pasta do projeto. Os arquivos da pasta do projeto aparecem no **Gerenciador de Soluções** quando **Mostrar Todos os Arquivos** não está em vigor.  
-> 2.  Pastas especificadas na caixa de diálogo **Caminhos de Referência**.  
-> 3.  Pastas que exibem arquivos na caixa de diálogo **Adicionar Referência**.  
-> 4.  A pasta obj do projeto. (Quando você adiciona uma referência COM a seu projeto, um ou mais assemblies podem ser adicionados à pasta obj do projeto.)  
+> 
+> 1. A pasta do projeto. Os arquivos da pasta do projeto aparecem no **Gerenciador de Soluções** quando **Mostrar Todos os Arquivos** não está em vigor.  
+>    2.  Pastas especificadas na caixa de diálogo **Caminhos de Referência**.  
+>    3.  Pastas que exibem arquivos na caixa de diálogo **Adicionar Referência**.  
+>    4.  A pasta obj do projeto. (Quando você adiciona uma referência COM a seu projeto, um ou mais assemblies podem ser adicionados à pasta obj do projeto.)  
   
  **Referências**  
  Esta lista mostra todas as referências no projeto, utilizadas ou não utilizadas.  

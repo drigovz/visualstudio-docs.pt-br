@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d45145da27d019b0750202a38c24ecb1e147d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f19bbbfbde9a111c6edea112b7250fca934ac7f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881684"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gerenciar exceções com o depurador do Visual Studio
 
@@ -217,7 +217,7 @@ Para adicionar exceções condicionais:
 
    ![As condições adicionais para uma exceção](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Para cada linha de condição, digite o nome do módulo e altere a lista de operadores de comparação para **é igual a** ou **não é igual a**. Você pode especificar caracteres curinga (**\***) no nome para especificar mais de um módulo.
+3. Para cada linha de condição, digite o nome do módulo e altere a lista de operadores de comparação para **é igual a** ou **não é igual a**. Você pode especificar caracteres curinga (* *\\* * *) no nome para especificar mais de um módulo.
 
 4. Se você precisar excluir uma condição, escolha o **X** no final da linha de condição.
 

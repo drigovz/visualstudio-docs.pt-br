@@ -13,12 +13,12 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 34ce6854c5af256c9a4fde35340414b6b2de640f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de18b0371baae2d48be9341b605f064875ef21de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252493"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869048"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Passo a passo: exibindo sugestões de lâmpada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,21 +27,21 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
   
  Nos editores do Visual c# e Visual Basic, você também pode usar o .NET Compiler Platform ("Roslyn") para gravar e empacotar seus próprios analisadores de código com as ações que exibem as lâmpadas automaticamente. Para obter mais informações, consulte:  
   
--   [Como Gravar um c# diagnóstico e a correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Como Gravar um c# diagnóstico e a correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [Como Gravar um diagnóstico do Visual Basic e correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Como Gravar um diagnóstico do Visual Basic e correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- Outras linguagens como C++ também fornecem as lâmpadas para algumas ações rápidas, como uma sugestão para criar uma implementação de stub dessa função.  
+  Outras linguagens como C++ também fornecem as lâmpadas para algumas ações rápidas, como uma sugestão para criar uma implementação de stub dessa função.  
   
- Uma lâmpada é semelhante ao seguinte. Em um projeto do Visual Basic ou Visual c#, uma linha ondulada vermelha aparece sob um nome de variável quando ela é inválida. Quando você passa o mouse sobre o identificador inválido, uma lâmpada é exibida perto do cursor.  
+  Uma lâmpada é semelhante ao seguinte. Em um projeto do Visual Basic ou Visual c#, uma linha ondulada vermelha aparece sob um nome de variável quando ela é inválida. Quando você passa o mouse sobre o identificador inválido, uma lâmpada é exibida perto do cursor.  
   
- ![lâmpada](../extensibility/media/lightbulb.png "lâmpada")  
+  ![lâmpada](../extensibility/media/lightbulb.png "lâmpada")  
   
- Se você clicar na seta para baixo, a lâmpada, um conjunto de ações sugeridas que é exibido, juntamente com uma visualização da ação selecionada. Nesse caso, ele mostra as alterações que serão feitas ao seu código se você executar a ação.  
+  Se você clicar na seta para baixo, a lâmpada, um conjunto de ações sugeridas que é exibido, juntamente com uma visualização da ação selecionada. Nesse caso, ele mostra as alterações que serão feitas ao seu código se você executar a ação.  
   
- ![visualização da lâmpada](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![visualização da lâmpada](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- Você pode usar as lâmpadas para fornecer suas próprias ações sugeridas. Por exemplo, você pode fornecer ações para mover as chaves para uma nova linha de abertura ou movê-los ao final da linha anterior. A instrução a seguir mostra como criar uma lâmpada que aparece na palavra atual e tem duas ações sugeridas: **convertida em letras maiusculas** e **converter em letras minúsculas**.  
+  Você pode usar as lâmpadas para fornecer suas próprias ações sugeridas. Por exemplo, você pode fornecer ações para mover as chaves para uma nova linha de abertura ou movê-los ao final da linha anterior. A instrução a seguir mostra como criar uma lâmpada que aparece na palavra atual e tem duas ações sugeridas: **convertida em letras maiusculas** e **converter em letras minúsculas**.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  

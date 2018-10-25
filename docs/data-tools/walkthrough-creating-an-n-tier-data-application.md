@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 007a0a85bf9d7200860194b881a3d0505f6bee45
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 87b88c6fc8c6add2c93721b46165ffd295f4d614
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175337"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942888"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Passo a passo: Criar um aplicativo de dados de n camadas
 *N camadas* aplicativos de dados são aplicativos que acessam dados e são separados em várias camadas de lógicas, ou *camadas*. A separação de componentes de aplicativos em camadas discretas aumenta a capacidade de manutenção e a escalabilidade do aplicativo. Isso é feito pela adoção com mais facilidade de novas tecnologias que podem ser aplicadas a uma única camada, sem precisar reprojetar toda a solução. A arquitetura de N camadas inclui uma camada de apresentação, uma camada intermediária e uma camada de dados. A camada intermediária geralmente inclui uma camada de acesso a dados, uma camada lógica de negócios e componentes compartilhados, tais como autenticação e validação. A camada de dados inclui um banco de dados relacional. Os aplicativos de N camadas geralmente armazenam informações confidenciais na camada de acesso a dados da camada intermediária para manter o isolamento de usuários finais que acessam a camada de apresentação. Para obter mais informações, consulte [visão geral dos aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md).
@@ -73,7 +73,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
  A primeira etapa deste passo a passo é criar uma solução e dois projetos de biblioteca de classes. A biblioteca de primeira classe contém o conjunto de dados (o gerado digitada `DataSet` DataTables que mantêm os dados do aplicativo e classe). Este projeto é usado como a camada de entidade de dados do aplicativo e geralmente está localizada na camada intermediária. O conjunto de dados cria o conjunto de dados inicial e automaticamente separa o código em duas bibliotecas de classes.
 
 > [!NOTE]
->  Certifique-se de nomear o projeto e a solução corretamente antes de clicar em **Okey**. Isso facilitará a conclusão deste passo a passo.
+> Certifique-se de nomear o projeto e a solução corretamente antes de clicar em **Okey**. Isso facilitará a conclusão deste passo a passo.
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Para criar a solução de N camadas e a biblioteca de classes DataEntityTier
 
@@ -106,7 +106,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
  A próxima etapa é criar um conjunto de dados tipado. Conjuntos de dados tipados são criados com a classe de conjunto de dados (incluindo `DataTables` classes) e o `TableAdapter` classes em um único projeto. (Todas as classes são geradas em um único arquivo.) Quando você separar o conjunto de dados e TableAdapters em diferentes projetos, é a classe de conjunto de dados é movida para outro projeto, deixando o `TableAdapter` classes no projeto original. Portanto, crie o conjunto de dados no projeto que conterá, por fim, os TableAdapters (no projeto DataAccessTier). Criar o conjunto de dados usando o **Data Source Configuration Wizard**.
 
 > [!NOTE]
->  É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
+> É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Para criar o conjunto de dados
 
@@ -129,7 +129,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 6.  Se o banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, escolha **próxima**.
 
     > [!NOTE]
-    >  Se você escolheu um arquivo do banco de dados local (em vez de se conectar ao SQL Server), talvez seja perguntado se deseja adicionar o arquivo ao projeto. Escolher **Sim** para adicionar o arquivo de banco de dados ao projeto.
+    > Se você escolheu um arquivo do banco de dados local (em vez de se conectar ao SQL Server), talvez seja perguntado se deseja adicionar o arquivo ao projeto. Escolher **Sim** para adicionar o arquivo de banco de dados ao projeto.
 
 7.  Selecione **próxima** sobre o **salvar a cadeia de Conexão no arquivo de configuração de aplicativo** página.
 
@@ -144,20 +144,20 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 ### <a name="to-separate-the-tableadapters-from-the-dataset"></a>Para separar os TableAdapters do Conjunto de Dados
 
-1.  Clique duas vezes em **NorthwindDataSet** na **Gerenciador de soluções** para abrir o conjunto de dados do **Dataset Designer**.
+1. Clique duas vezes em **NorthwindDataSet** na **Gerenciador de soluções** para abrir o conjunto de dados do **Dataset Designer**.
 
-2.  Selecione uma área vazia no designer.
+2. Selecione uma área vazia no designer.
 
-3.  Localize o **projeto DataSet** nó na **propriedades** janela.
+3. Localize o **projeto DataSet** nó na **propriedades** janela.
 
-4.  No **projeto DataSet** lista, selecione **DataEntityTier**.
+4. No **projeto DataSet** lista, selecione **DataEntityTier**.
 
-5.  No menu **Build**, selecione **Compilar Solução**.
+5. No menu **Build**, selecione **Compilar Solução**.
 
- O conjunto de dados e os TableAdapters são separados em dois projetos de biblioteca de classes. O projeto que continha originalmente todo o conjunto de dados (`DataAccessTier`) agora contém somente os TableAdapters. O projeto atribuído a **projeto DataSet** propriedade (`DataEntityTier`) contém o conjunto de dados tipado: *NorthwindDataSet* (ou  *NorthwindDataSet.Dataset.Designer.cs*).
+   O conjunto de dados e os TableAdapters são separados em dois projetos de biblioteca de classes. O projeto que continha originalmente todo o conjunto de dados (`DataAccessTier`) agora contém somente os TableAdapters. O projeto atribuído a **projeto DataSet** propriedade (`DataEntityTier`) contém o conjunto de dados tipado: *NorthwindDataSet* (ou  *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
->  Quando você separa os conjuntos de dados e TableAdapters (Configurando o **projeto DataSet** propriedade), classes parciais do conjunto de dados existentes no projeto não serão movidas automaticamente. As classes parciais do conjunto de dados existentes devem ser movidas manualmente para o projeto do conjunto de dados.
+> Quando você separa os conjuntos de dados e TableAdapters (Configurando o **projeto DataSet** propriedade), classes parciais do conjunto de dados existentes no projeto não serão movidas automaticamente. As classes parciais do conjunto de dados existentes devem ser movidas manualmente para o projeto do conjunto de dados.
 
 ## <a name="create-a-new-service-application"></a>Criar um novo aplicativo de serviço
 Este passo a passo demonstra como acessar a camada de acesso de dados por meio de um serviço WCF, então, vamos criar um novo aplicativo de serviço do WCF.
@@ -224,7 +224,7 @@ Este passo a passo demonstra como acessar a camada de acesso de dados por meio d
  Agora que a camada de acesso a dados contém os métodos para retornar dados, crie métodos no serviço de dados para chamar os métodos na camada de acesso a dados.
 
 > [!NOTE]
->  Para projetos C#, adicione uma referência ao assembly `System.Data.DataSetExtensions` para que o código a seguir seja compilado.
+> Para projetos C#, adicione uma referência ao assembly `System.Data.DataSetExtensions` para que o código a seguir seja compilado.
 
 ### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>Para criar as funções GetCustomers e GetOrders no serviço de dados
 
@@ -323,7 +323,7 @@ Vamos definir a **PresentationTier** projeto como o projeto de inicialização p
 3.  Selecione **Service1** e escolha **Okey**.
 
     > [!NOTE]
-    >  Se você tiver vários serviços no computador atual, selecione o serviço que você criou anteriormente neste passo a passo (o serviço que contém o `GetCustomers` e `GetOrders` métodos).
+    > Se você tiver vários serviços no computador atual, selecione o serviço que você criou anteriormente neste passo a passo (o serviço que contém o `GetCustomers` e `GetOrders` métodos).
 
 ## <a name="add-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Adicionar DataGridViews ao formulário para exibir os dados retornados pelo serviço de dados
  Depois de adicionar a referência de serviço para o serviço de dados, o **fontes de dados** janela é preenchida automaticamente com os dados que são retornados pelo serviço.
@@ -361,7 +361,7 @@ Vamos definir a **PresentationTier** projeto como o projeto de inicialização p
 O valor padrão para `maxReceivedMessageSize` não é grande o suficiente para manter os dados recuperados do `Customers` e `Orders` tabelas. Nas etapas a seguir, você irá aumentar o valor para 6553600. Você altere o valor no cliente, que atualiza automaticamente a referência de serviço.
 
 > [!NOTE]
->  O menor tamanho padrão se destina a limitar a exposição para ataques de negação de serviço (DoS). Para obter mais informações, consulte <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
+> O menor tamanho padrão se destina a limitar a exposição para ataques de negação de serviço (DoS). Para obter mais informações, consulte <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Para aumentar o valor maxReceivedMessageSize
 

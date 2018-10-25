@@ -15,23 +15,23 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15f0aeda589b101d9d02c9741eabf8b0e1866e4c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e7d103415869cc30f2c940b632c73f611986af2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273358"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811356"
 ---
 # <a name="using-the-settings-store"></a>Usar o repositório de configurações
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Há dois tipos de repositórios de configurações:  
   
--   Definições de configuração que são configurações do Visual Studio e o VSPackage somente leitura. Visual Studio mescla as configurações de todos os arquivos. pkgdef conhecidos nesse repositório.  
+- Definições de configuração que são configurações do Visual Studio e o VSPackage somente leitura. Visual Studio mescla as configurações de todos os arquivos. pkgdef conhecidos nesse repositório.  
   
--   Configurações do usuário, que são graváveis configurações, como aqueles que são exibidos nas páginas a **opções** caixa de diálogo, páginas de propriedade e determinadas outras caixas de diálogo. Extensões do Visual Studio podem usá-los para o armazenamento local de pequenas quantidades de dados.  
+- Configurações do usuário, que são graváveis configurações, como aqueles que são exibidos nas páginas a **opções** caixa de diálogo, páginas de propriedade e determinadas outras caixas de diálogo. Extensões do Visual Studio podem usá-los para o armazenamento local de pequenas quantidades de dados.  
   
- Este passo a passo mostra como ler dados do repositório de configuração de configuração. Ver [gravando o Store de configurações do usuário](../extensibility/writing-to-the-user-settings-store.md) para obter uma explicação de como gravar no repositório de configurações do usuário.  
+  Este passo a passo mostra como ler dados do repositório de configuração de configuração. Ver [gravando o Store de configurações do usuário](../extensibility/writing-to-the-user-settings-store.md) para obter uma explicação de como gravar no repositório de configurações do usuário.  
   
 ## <a name="creating-the-example-project"></a>Criando o projeto de exemplo  
  Esta seção mostra como criar um projeto de extensão simples com um comando de menu para demonstração.  
@@ -43,44 +43,44 @@ Há dois tipos de repositórios de configurações:
 ## <a name="using-the-configuration-settings-store"></a>Usando a configuração de configurações Store  
  Esta seção mostra como detectar e exibir as definições de configuração.  
   
-1.  No arquivo SettingsStorageCommand.cs, adicione as seguintes instruções using:  
+1. No arquivo SettingsStorageCommand.cs, adicione as seguintes instruções using:  
   
-    ```  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Settings;  
-    using Microsoft.VisualStudio.Shell.Settings;  
-    using System.Windows.Forms;  
-    ```  
+   ```  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Settings;  
+   using Microsoft.VisualStudio.Shell.Settings;  
+   using System.Windows.Forms;  
+   ```  
   
-2.  No `MenuItemCallback`, remova o corpo do método e adicione estas linhas obtém repositório de configurações de configuração:  
+2. No `MenuItemCallback`, remova o corpo do método e adicione estas linhas obtém repositório de configurações de configuração:  
   
-    ```  
-    SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-    SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-    ```  
+   ```  
+   SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+   SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+   ```  
   
-     O <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> é uma classe auxiliar gerenciada sobre o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> service.  
+    O <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> é uma classe auxiliar gerenciada sobre o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> service.  
   
-3.  Agora, descubra se as ferramentas do Windows Phone serão instaladas. O código deve ter esta aparência:  
+3. Agora, descubra se as ferramentas do Windows Phone serão instaladas. O código deve ter esta aparência:  
   
-    ```  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-        SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-        bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
-        string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
-        MessageBox.Show(message);  
-    }  
-    ```  
+   ```  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+       SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+       bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
+       string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
+       MessageBox.Show(message);  
+   }  
+   ```  
   
-4.  Teste o código. Compile o projeto e comece a depuração.  
+4. Teste o código. Compile o projeto e comece a depuração.  
   
-5.  Na instância experimental, sobre o **ferramentas** menu, clique em **SettingsStoreCommand invocar**.  
+5. Na instância experimental, sobre o **ferramentas** menu, clique em **SettingsStoreCommand invocar**.  
   
-     Você deve ver uma caixa de texto **ferramentas de desenvolvedor do Microsoft Windows Phone:** seguido **verdadeiro** ou **False**.  
+    Você deve ver uma caixa de texto **ferramentas de desenvolvedor do Microsoft Windows Phone:** seguido **verdadeiro** ou **False**.  
   
- O Visual Studio manterá o repositório de configurações no registro do sistema.  
+   O Visual Studio manterá o repositório de configurações no registro do sistema.  
   
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Usar um editor do registro para verificar as definições de configuração  
   

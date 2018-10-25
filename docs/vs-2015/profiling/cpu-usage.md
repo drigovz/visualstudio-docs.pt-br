@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a25c50eaf3f0f5e31e6a3085967f0b6bd5f1055c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f49ab702a411c1d5205be8c626ce1032e57ab4ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208683"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876510"
 ---
 # <a name="cpu-usage"></a>Uso da CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,33 +34,33 @@ Quando você precisa investigar problemas de desempenho no aplicativo, um bom co
   
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> Coletar dados de uso da CPU  
   
-1.  No Visual Studio, defina a configuração da solução como **Versão** e escolha o destino da implantação.  
+1. No Visual Studio, defina a configuração da solução como **Versão** e escolha o destino da implantação.  
   
-     ![Selecionar a versão e o computador local](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![Selecionar a versão e o computador local](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-    -   Executar o aplicativo no modo **Versão** fornece uma melhor exibição do desempenho real do aplicativo.  
+   -   Executar o aplicativo no modo **Versão** fornece uma melhor exibição do desempenho real do aplicativo.  
   
-    -   Executar o aplicativo no computador local replica melhor a execução do aplicativo instalado.  
+   -   Executar o aplicativo no computador local replica melhor a execução do aplicativo instalado.  
   
-    -   Se você estiver coletando dados de um dispositivo remoto, execute o aplicativo diretamente no dispositivo e não usando uma Conexão de Área de Trabalho Remota.  
+   -   Se você estiver coletando dados de um dispositivo remoto, execute o aplicativo diretamente no dispositivo e não usando uma Conexão de Área de Trabalho Remota.  
   
-    -   Para aplicativos Windows Phone, a coleta de dados diretamente do **Dispositivo** fornece os dados mais precisos.  
+   -   Para aplicativos Windows Phone, a coleta de dados diretamente do **Dispositivo** fornece os dados mais precisos.  
   
-2.  No menu **Depurar**, escolha **Criador de Perfil de Desempenho...**.  
+2. No menu **Depurar**, escolha **Criador de Perfil de Desempenho...**.  
   
-3.  Escolha **Uso da CPU** e, em seguida, **Iniciar**.  
+3. Escolha **Uso da CPU** e, em seguida, **Iniciar**.  
   
-     ![Escolher Uso da CPU](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![Escolher Uso da CPU](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4.  Quando o aplicativo for iniciado, clique em **Obter Número Máximo**. Aguarde cerca de um segundo após a exibição da saída e escolha **Obter Número Máximo Assíncrono**. Esperar entre cliques de botão torna mais fácil isolar as rotinas de clique do botão no relatório de diagnóstico.  
+4. Quando o aplicativo for iniciado, clique em **Obter Número Máximo**. Aguarde cerca de um segundo após a exibição da saída e escolha **Obter Número Máximo Assíncrono**. Esperar entre cliques de botão torna mais fácil isolar as rotinas de clique do botão no relatório de diagnóstico.  
   
-5.  Depois que a segunda linha de saída for exibida, escolha **Parar Coleção** no hub Desempenho e Diagnóstico.  
+5. Depois que a segunda linha de saída for exibida, escolha **Parar Coleção** no hub Desempenho e Diagnóstico.  
   
- ![Parar a coleta de dados de CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![Parar a coleta de dados de CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
- A ferramenta Uso da CPU analisa os dados e exibe o relatório.  
+   A ferramenta Uso da CPU analisa os dados e exibe o relatório.  
   
- ![Relatório de CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![Relatório de CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analise o relatório de uso da CPU  
   

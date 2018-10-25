@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7901c0acaf9500673b9b6cfc551ed3151e1b3c5b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1a37dcac9d75cbd773894b3d708dd4931f77b4ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637757"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888404"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Expor propriedades à janela de propriedades
 Este passo a passo expõe as propriedades públicas de um objeto para o **propriedades** janela. As alterações feitas a essas propriedades são refletidas na **propriedades** janela.  
@@ -33,72 +33,72 @@ Este passo a passo expõe as propriedades públicas de um objeto para o **propri
   
 ### <a name="to-expose-properties-to-the-properties-window"></a>Para expor propriedades à janela de propriedades  
   
-1.  Cada extensão do Visual Studio inicia com um projeto de implantação do VSIX que conterá os ativos de extensão. Criar uma [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto do VSIX chamado `MyObjectPropertiesExtension`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c#** > **extensibilidade**.  
+1. Cada extensão do Visual Studio inicia com um projeto de implantação do VSIX que conterá os ativos de extensão. Criar uma [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto do VSIX chamado `MyObjectPropertiesExtension`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c#** > **extensibilidade**.  
   
-2.  Adicionar uma janela de ferramentas, adicionando um modelo de item da janela de ferramenta personalizada denominado `MyToolWindow`. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item**. No **caixa de diálogo Adicionar Novo Item**, acesse **itens do Visual c#** > **extensibilidade** e selecione **janela de ferramenta personalizada**. No **nome** campo na parte inferior da caixa de diálogo, altere o nome de arquivo para *MyToolWindow.cs*. Para obter mais informações sobre como criar uma janela de ferramentas personalizada, consulte [criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2. Adicionar uma janela de ferramentas, adicionando um modelo de item da janela de ferramenta personalizada denominado `MyToolWindow`. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item**. No **caixa de diálogo Adicionar Novo Item**, acesse **itens do Visual c#** > **extensibilidade** e selecione **janela de ferramenta personalizada**. No **nome** campo na parte inferior da caixa de diálogo, altere o nome de arquivo para *MyToolWindow.cs*. Para obter mais informações sobre como criar uma janela de ferramentas personalizada, consulte [criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-3.  Abra *MyToolWindow.cs* e adicione a seguinte instrução using:  
+3. Abra *MyToolWindow.cs* e adicione a seguinte instrução using:  
   
-    ```csharp  
-    using System.Collections;  
-    using System.ComponentModel;  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    ```  
+   ```csharp  
+   using System.Collections;  
+   using System.ComponentModel;  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   ```  
   
-4.  Agora, adicione os campos a seguir para o `MyToolWindow` classe.  
+4. Agora, adicione os campos a seguir para o `MyToolWindow` classe.  
   
-    ```csharp  
-    private ITrackSelection trackSel;  
-    private SelectionContainer selContainer;  
+   ```csharp  
+   private ITrackSelection trackSel;  
+   private SelectionContainer selContainer;  
   
-    ```  
+   ```  
   
-5.  Adicione o seguinte código para o `MyToolWindow` classe.  
+5. Adicione o seguinte código para o `MyToolWindow` classe.  
   
-    ```csharp  
-    private ITrackSelection TrackSelection  
-    {  
-        get  
-        {  
-            if (trackSel == null)  
-                trackSel =  
-                   GetService(typeof(STrackSelection)) as ITrackSelection;  
-            return trackSel;  
-        }  
-    }  
+   ```csharp  
+   private ITrackSelection TrackSelection  
+   {  
+       get  
+       {  
+           if (trackSel == null)  
+               trackSel =  
+                  GetService(typeof(STrackSelection)) as ITrackSelection;  
+           return trackSel;  
+       }  
+   }  
   
-    public void UpdateSelection()  
-    {  
-        ITrackSelection track = TrackSelection;  
-        if (track != null)  
-            track.OnSelectChange((ISelectionContainer)selContainer);  
-    }  
+   public void UpdateSelection()  
+   {  
+       ITrackSelection track = TrackSelection;  
+       if (track != null)  
+           track.OnSelectChange((ISelectionContainer)selContainer);  
+   }  
   
-    public void SelectList(ArrayList list)  
-    {  
-        selContainer = new SelectionContainer(true, false);  
-        selContainer.SelectableObjects = list;  
-        selContainer.SelectedObjects = list;  
-        UpdateSelection();  
-    }  
+   public void SelectList(ArrayList list)  
+   {  
+       selContainer = new SelectionContainer(true, false);  
+       selContainer.SelectableObjects = list;  
+       selContainer.SelectedObjects = list;  
+       UpdateSelection();  
+   }  
   
-    public override void OnToolWindowCreated()  
-    {  
-        ArrayList listObjects = new ArrayList();  
-        listObjects.Add(this);  
-        SelectList(listObjects);  
-    }  
-    ```  
+   public override void OnToolWindowCreated()  
+   {  
+       ArrayList listObjects = new ArrayList();  
+       listObjects.Add(this);  
+       SelectList(listObjects);  
+   }  
+   ```  
   
-     O `TrackSelection` usos de propriedade `GetService` para obter uma `STrackSelection` serviço, que fornece um <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interface. O `OnToolWindowCreated` manipulador de eventos e `SelectList` método juntos, criam uma lista de objetos selecionados que contém somente o ferramenta Painel objeto de janela em si. O `UpdateSelection` método informa o **propriedades** janela para exibir as propriedades públicas do painel de janela de ferramentas.  
+    O `TrackSelection` usos de propriedade `GetService` para obter uma `STrackSelection` serviço, que fornece um <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interface. O `OnToolWindowCreated` manipulador de eventos e `SelectList` método juntos, criam uma lista de objetos selecionados que contém somente o ferramenta Painel objeto de janela em si. O `UpdateSelection` método informa o **propriedades** janela para exibir as propriedades públicas do painel de janela de ferramentas.  
   
-6.  Compile o projeto e comece a depuração. A instância experimental do Visual Studio deve aparecer.  
+6. Compile o projeto e comece a depuração. A instância experimental do Visual Studio deve aparecer.  
   
-7.  Se o **propriedades** janela não estiver visível, abra-o pressionando **F4**.  
+7. Se o **propriedades** janela não estiver visível, abra-o pressionando **F4**.  
   
-8.  Abra o **MyToolWindow** janela. Você pode encontrá-lo no **modo de exibição** > **Other Windows**.  
+8. Abra o **MyToolWindow** janela. Você pode encontrá-lo no **modo de exibição** > **Other Windows**.  
   
-     A janela é aberta e as propriedades públicas do painel da janela aparecem na **propriedades** janela.  
+    A janela é aberta e as propriedades públicas do painel da janela aparecem na **propriedades** janela.  
   
 9. Alterar o **legenda** propriedade no **propriedades** janela para **propriedades do meu objeto**.  
   

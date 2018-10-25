@@ -14,25 +14,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a9730a4f096ffbbe89eb3b6fef40393232efdfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01eddb375a521059cac35bf541dec4e4f09d881a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273020"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824210"
 ---
 # <a name="remote-debugger-port-assignments"></a>Atribuições de porta do depurador remoto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O depurador remoto do Visual Studio pode ser executado como um aplicativo ou como um serviço em segundo plano. Quando ele é executado como um aplicativo, ele usa uma porta atribuída por padrão, da seguinte maneira:  
   
--   Visual Studio 2015:4020  
+- Visual Studio 2015:4020  
   
--   Visual Studio 2013:4018  
+- Visual Studio 2013:4018  
   
--   Visual Studio 2012:4016  
+- Visual Studio 2012:4016  
   
- Em outras palavras, o número da porta atribuída ao depurador remoto é incrementado por 2 para cada versão. Você pode definir um número de porta diferente da que você deseja. Explicaremos como definir os números de porta em uma seção posterior.  
+  Em outras palavras, o número da porta atribuída ao depurador remoto é incrementado por 2 para cada versão. Você pode definir um número de porta diferente da que você deseja. Explicaremos como definir os números de porta em uma seção posterior.  
   
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>A porta do depurador remoto em sistemas operacionais de 32 bits  
  4020 TCP (no Visual Studio 2015) é a porta principal e é necessário para todos os cenários. Você pode configurar isso na linha de comando ou a janela do depurador remoto.  

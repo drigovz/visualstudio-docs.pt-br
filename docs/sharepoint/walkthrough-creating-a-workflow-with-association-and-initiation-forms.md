@@ -22,37 +22,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4832ce22bfa0137040892ffcd1ce08b3f32646bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873871"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Passo a passo: Criar um fluxo de trabalho com formulários de associação e iniciação
   Este passo a passo demonstra como criar um fluxo de trabalho sequencial básico que incorpora o uso de formulários de associação e iniciação. Esses são os formulários ASPX que permitem que os parâmetros a ser adicionado a um fluxo de trabalho quando ele pela primeira vez é associado pelo administrador do SharePoint (o formulário de associação), e quando o fluxo de trabalho é iniciado pelo usuário (o formulário de inicialização).  
   
  Este passo a passo descreve um cenário em que um usuário deseja criar um fluxo de trabalho de aprovação para relatórios de despesas que tem os seguintes requisitos:  
   
--   Quando o fluxo de trabalho está associado uma lista, o administrador é solicitado com um formulário de associação no qual eles digitar um limite de dólar para relatórios de despesas.  
+- Quando o fluxo de trabalho está associado uma lista, o administrador é solicitado com um formulário de associação no qual eles digitar um limite de dólar para relatórios de despesas.  
   
--   Os funcionários carregar seus relatórios de despesas para a lista de documentos compartilhados, iniciar o fluxo de trabalho e, em seguida, insira o custo total do formulário de iniciação do fluxo de trabalho.  
+- Os funcionários carregar seus relatórios de despesas para a lista de documentos compartilhados, iniciar o fluxo de trabalho e, em seguida, insira o custo total do formulário de iniciação do fluxo de trabalho.  
   
--   Se um relatório de despesas de funcionários total exceder o limite de predefinido do administrador, uma tarefa é criada para o gerente do funcionário aprovar o relatório de despesas. No entanto, se o total de relatórios de despesas de um funcionário é menor que ou igual ao limite de gastos, uma mensagem de aprovação automática é gravada para a lista de histórico do fluxo de trabalho.  
+- Se um relatório de despesas de funcionários total exceder o limite de predefinido do administrador, uma tarefa é criada para o gerente do funcionário aprovar o relatório de despesas. No entanto, se o total de relatórios de despesas de um funcionário é menor que ou igual ao limite de gastos, uma mensagem de aprovação automática é gravada para a lista de histórico do fluxo de trabalho.  
   
- Esta explicação passo a passo ilustra as seguintes tarefas:  
+  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Criando um projeto de fluxo de trabalho sequencial de definição de lista do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+- Criando um projeto de fluxo de trabalho sequencial de definição de lista do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
--   Criando uma agenda de fluxo de trabalho.  
+- Criando uma agenda de fluxo de trabalho.  
   
--   Manipulação de eventos de atividade de fluxo de trabalho.  
+- Manipulação de eventos de atividade de fluxo de trabalho.  
   
--   Criando formulários de associação e iniciação de fluxo de trabalho.  
+- Criando formulários de associação e iniciação de fluxo de trabalho.  
   
--   Associando o fluxo de trabalho.  
+- Associando o fluxo de trabalho.  
   
--   O fluxo de trabalho é iniciado manualmente.  
+- O fluxo de trabalho é iniciado manualmente.  
   
 > [!NOTE]  
 >  Embora este passo a passo usa um projeto de fluxo de trabalho sequencial, o processo é o mesmo para fluxos de trabalho de máquina de estado.  

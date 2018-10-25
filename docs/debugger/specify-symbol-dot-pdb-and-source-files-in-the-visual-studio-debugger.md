@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f7710a84b05743c738bd694be0e5bcc117ab19
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 23286c6b042b7064c5ebfdf758a6b82e1b97f961
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880273"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850226"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Especificar arquivos de símbolo (.pdb) e de origem no depurador do Visual Studio
 
@@ -67,24 +67,24 @@ Além disso, o depurador procura por arquivos de símbolo nos seguintes locais:
    
    Por padrão, se você tiver criado uma DLL ou um *.exe* arquivo no seu computador, o vinculador coloca o caminho completo e nome de arquivo do associado *. PDB* arquivo na DLL ou *.exe* arquivo. O depurador verifica para ver se o arquivo de símbolo existe nesse local.  
    
-1. A mesma pasta que a DLL ou *.exe* arquivo.
+2. A mesma pasta que a DLL ou *.exe* arquivo.
    
-1. Qualquer locais especificados nas opções do depurador para arquivos de símbolo. Para adicionar e habilitar os locais de símbolos, consulte [configurar locais de símbolos e opções de carregamento](#BKMK_Specify_symbol_locations_and_loading_behavior). 
+3. Qualquer locais especificados nas opções do depurador para arquivos de símbolo. Para adicionar e habilitar os locais de símbolos, consulte [configurar locais de símbolos e opções de carregamento](#BKMK_Specify_symbol_locations_and_loading_behavior). 
    
-    - Qualquer pasta de cache de símbolo local.  
+   - Qualquer pasta de cache de símbolo local.  
   
-    - Rede especificada, internet, ou servidores de símbolo local e locais, como servidores de símbolo da Microsoft, se selecionado. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pode baixar arquivos de símbolo de depuração dos servidores de símbolo que implementam o `symsrv` protocolo. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) e o [ferramentas de depuração para Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) são duas ferramentas que podem usar servidores de símbolo. 
+   - Rede especificada, internet, ou servidores de símbolo local e locais, como servidores de símbolo da Microsoft, se selecionado. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pode baixar arquivos de símbolo de depuração dos servidores de símbolo que implementam o `symsrv` protocolo. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) e o [ferramentas de depuração para Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) são duas ferramentas que podem usar servidores de símbolo. 
       
-      Servidores de símbolo, que você pode usar incluem:  
+     Servidores de símbolo, que você pode usar incluem:  
       
-      **Servidores públicos de símbolos Microsoft**: para depurar uma falha que ocorre durante uma chamada para uma DLL do sistema ou em uma biblioteca de terceiros, você geralmente precisa de sistema *. PDB* arquivos. Sistema *. PDB* arquivos contêm símbolos para DLLs do Windows *.exe* arquivos e drivers de dispositivo. Você pode obter os símbolos para sistemas de operacionais do Windows, MDAC, IIS, ISA e o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dos servidores de símbolo Microsoft públicos. 
+     **Servidores públicos de símbolos Microsoft**: para depurar uma falha que ocorre durante uma chamada para uma DLL do sistema ou em uma biblioteca de terceiros, você geralmente precisa de sistema *. PDB* arquivos. Sistema *. PDB* arquivos contêm símbolos para DLLs do Windows *.exe* arquivos e drivers de dispositivo. Você pode obter os símbolos para sistemas de operacionais do Windows, MDAC, IIS, ISA e o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dos servidores de símbolo Microsoft públicos. 
       
-      **Servidores em uma rede interna ou em seu computador local de símbolo**: sua equipe ou empresa pode criar servidores de símbolo para seus próprios produtos e como um cache para símbolos de fontes externas. Você pode ter um servidor de símbolo no seu próprio computador. 
+     **Servidores em uma rede interna ou em seu computador local de símbolo**: sua equipe ou empresa pode criar servidores de símbolo para seus próprios produtos e como um cache para símbolos de fontes externas. Você pode ter um servidor de símbolo no seu próprio computador. 
       
-      **Servidores de símbolo de terceiros**: provedores de terceiros de bibliotecas e aplicativos do Windows podem fornecer acesso ao servidor de símbolo na internet. 
+     **Servidores de símbolo de terceiros**: provedores de terceiros de bibliotecas e aplicativos do Windows podem fornecer acesso ao servidor de símbolo na internet. 
     
-    > [!WARNING]
-    > Se você usar um servidor de símbolos que não seja a servidores públicos de símbolos da Microsoft, certifique-se de que o servidor de símbolos e seu caminho são confiáveis. Como arquivos de símbolo podem conter códigos executáveis arbitrários, você pode ser exposto às ameaças de segurança.  
+     > [!WARNING]
+     > Se você usar um servidor de símbolos que não seja a servidores públicos de símbolos da Microsoft, certifique-se de que o servidor de símbolos e seu caminho são confiáveis. Como arquivos de símbolo podem conter códigos executáveis arbitrários, você pode ser exposto às ameaças de segurança.  
 
 <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>
 ### <a name="configure-symbol-locations-and-loading-options"></a>Configurar opções de carregamento e locais de símbolos
@@ -101,7 +101,7 @@ Sobre o **ferramentas** > **opções** > **depuração** > **símbolos** página
    
    ![Ferramentas &#45; opções &#45; depuração &#45; página de símbolos](media/dbg-options-symbols.png "ferramentas &#45; opções &#45; depuração &#45; página de símbolos")  
    
-1. Sob **locais de arquivo (. PDB) de símbolo**,
+2. Sob **locais de arquivo (. PDB) de símbolo**,
    - Para usar o **servidores de símbolo Microsoft**, marque a caixa de seleção.  
    
    - Para adicionar um novo local de servidor do símbolo
@@ -119,21 +119,21 @@ Sobre o **ferramentas** > **opções** > **depuração** > **símbolos** página
    - Para editar uma URL ou caminho, duas vezes na entrada, ou selecione-o e pressione **F2**.  
    - Para remover uma entrada, selecione-o e, em seguida, selecione a **-** ícone.
   
-1.  (Opcional) Para melhorar o desempenho de carregamento de símbolo, sob **armazenar em Cache os símbolos neste diretório**, digite um caminho de pasta local que servidores de símbolo podem copiar símbolos para.  
+3. (Opcional) Para melhorar o desempenho de carregamento de símbolo, sob **armazenar em Cache os símbolos neste diretório**, digite um caminho de pasta local que servidores de símbolo podem copiar símbolos para.  
   
-    > [!NOTE]
-    > Não coloque o cache de símbolo local em uma pasta protegida, como C:\Windows ou em uma subpasta. Use uma pasta de leitura/gravação.  
+   > [!NOTE]
+   > Não coloque o cache de símbolo local em uma pasta protegida, como C:\Windows ou em uma subpasta. Use uma pasta de leitura/gravação.  
   
-    > [!NOTE]
-    > Para projetos do C++, se você tiver o `_NT_SYMBOL_PATH` conjunto de variáveis de ambiente, ele substituirá o valor definido em **armazenar em Cache os símbolos neste diretório**.
+   > [!NOTE]
+   > Para projetos do C++, se você tiver o `_NT_SYMBOL_PATH` conjunto de variáveis de ambiente, ele substituirá o valor definido em **armazenar em Cache os símbolos neste diretório**.
   
-1. Especificar os módulos que você deseja que o depurador para carregar a partir de **símbolo locais de arquivo (. PDB)** quando ele for iniciado.  
+4. Especificar os módulos que você deseja que o depurador para carregar a partir de **símbolo locais de arquivo (. PDB)** quando ele for iniciado.  
   
-  -  Selecione **carregar todos os módulos, a menos que excluídos** (o padrão) para carregar todos os símbolos para todos os módulos no local do arquivo de símbolo, exceto excluir especificamente os módulos. Para excluir determinados módulos, selecione **especificar módulos excluídos**, selecione o **+** ícone, digite os nomes dos módulos a serem excluídos e, em seguida, selecione **Okey**.  
+   -  Selecione **carregar todos os módulos, a menos que excluídos** (o padrão) para carregar todos os símbolos para todos os módulos no local do arquivo de símbolo, exceto excluir especificamente os módulos. Para excluir determinados módulos, selecione **especificar módulos excluídos**, selecione o **+** ícone, digite os nomes dos módulos a serem excluídos e, em seguida, selecione **Okey**.  
   
-  -  Para carregar somente os módulos que você especificar os símbolo locais de arquivos, selecione **carregar somente os módulos especificados**. Selecione **especificar módulos incluídos**, selecione o **+** ícone, digite os nomes dos módulos para incluir e, em seguida, selecione **Okey**. Os arquivos de símbolo para outros módulos não são carregados.  
+   -  Para carregar somente os módulos que você especificar os símbolo locais de arquivos, selecione **carregar somente os módulos especificados**. Selecione **especificar módulos incluídos**, selecione o **+** ícone, digite os nomes dos módulos para incluir e, em seguida, selecione **Okey**. Os arquivos de símbolo para outros módulos não são carregados.  
   
-1.  Selecione **OK**.
+5. Selecione **OK**.
 
 ## <a name="other-symbol-options-for-debugging"></a>Outras opções de símbolo de depuração
   
