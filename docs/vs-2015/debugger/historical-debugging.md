@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c38affa6611f716b6d66eebcc16d5d82c2a8ae6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e10387a775c13fd67218b0a52626b4537b01273a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293872"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938468"
 ---
 # <a name="historical-debugging"></a>Depuração de histórico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,29 +69,29 @@ private static int AddInt(int add)
   
  Vamos supor que o valor esperado `resultInt` depois de chamar `AddAll()` é 20 (o resultado de incrementar `testInt` 20 vezes). (Vamos também supor que você não consegue ver o bug no `AddInt()`). Mas o resultado é, na verdade, 44. Como pode localizar o bug sem percorrendo `AddAll()` 10 vezes? Podemos usar depuração histórica para encontrar bugs mais rápido e mais facilmente. Veja como:  
   
-1.  Em Ferramentas / opções / IntelliTrace / geral, certifique-se de que IntelliTrace estiver habilitado e selecione os eventos do IntelliTrace e informações de opção de chamada. Se você não selecionar essa opção, você não poderá ver a medianiz de navegação (conforme explicado abaixo).  
+1. Em Ferramentas / opções / IntelliTrace / geral, certifique-se de que IntelliTrace estiver habilitado e selecione os eventos do IntelliTrace e informações de opção de chamada. Se você não selecionar essa opção, você não poderá ver a medianiz de navegação (conforme explicado abaixo).  
   
-2.  Defina um ponto de interrupção a `Console.WriteLine(resultInt);` linha.  
+2. Defina um ponto de interrupção a `Console.WriteLine(resultInt);` linha.  
   
-3.  Inicie a depuração. O código é executado no ponto de interrupção. No **Locals** janela, você pode ver que o valor de `resultInt` é 44.  
+3. Inicie a depuração. O código é executado no ponto de interrupção. No **Locals** janela, você pode ver que o valor de `resultInt` é 44.  
   
-4.  Abra o **ferramentas de diagnóstico** janela (**depurar / Mostrar ferramentas de diagnóstico**). A janela de código deve ter esta aparência:  
+4. Abra o **ferramentas de diagnóstico** janela (**depurar / Mostrar ferramentas de diagnóstico**). A janela de código deve ter esta aparência:  
   
-     ![Janela de código no ponto de interrupção](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
+    ![Janela de código no ponto de interrupção](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
-5.  Você deve ver uma seta dupla na margem esquerda, logo acima do ponto de interrupção. Essa área é chamada a medianiz de navegação e é usada para depuração de histórico. Clique na seta.  
+5. Você deve ver uma seta dupla na margem esquerda, logo acima do ponto de interrupção. Essa área é chamada a medianiz de navegação e é usada para depuração de histórico. Clique na seta.  
   
-     Na janela de código, você deverá ver que a linha de código anterior (`int resultInt = AddIterative(testInt);`) é colorido em rosa. Acima da janela, você deve ver uma mensagem que você está agora na depuração histórica.  
+    Na janela de código, você deverá ver que a linha de código anterior (`int resultInt = AddIterative(testInt);`) é colorido em rosa. Acima da janela, você deve ver uma mensagem que você está agora na depuração histórica.  
   
-     A janela de código agora fica assim:  
+    A janela de código agora fica assim:  
   
-     ![janela de código no modo de depuração histórica](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+    ![janela de código no modo de depuração histórica](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6.  Agora você pode intervir a `AddAll()` método (**F11**, ou o **intervir** botão na medianiz de navegação. Vá para frente (**F10**, ou **ir para próxima chamada** na medianiz de navegação. A linha rosa agora, é o `j = AddInt(j);` linha. **F10** nesse caso, não a etapa para a próxima linha de código. Em vez disso, ele etapas para a próxima chamada de função. Depuração histórica navega de uma chamada e, em seguida, ele ignora as linhas de código que não incluem uma chamada de função.  
+6. Agora você pode intervir a `AddAll()` método (**F11**, ou o **intervir** botão na medianiz de navegação. Vá para frente (**F10**, ou **ir para próxima chamada** na medianiz de navegação. A linha rosa agora, é o `j = AddInt(j);` linha. **F10** nesse caso, não a etapa para a próxima linha de código. Em vez disso, ele etapas para a próxima chamada de função. Depuração histórica navega de uma chamada e, em seguida, ele ignora as linhas de código que não incluem uma chamada de função.  
   
-7.  Entrar agora o `AddInt()` método. Você deve ver o bug nesse código imediatamente.  
+7. Entrar agora o `AddInt()` método. Você deve ver o bug nesse código imediatamente.  
   
- Este procedimento apenas uma pequena amostra do que você pode fazer com a depuração histórica. Para obter mais informações sobre as diferentes configurações e os efeitos dos botões diferentes na medianiz de navegação, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md).
+   Este procedimento apenas uma pequena amostra do que você pode fazer com a depuração histórica. Para obter mais informações sobre as diferentes configurações e os efeitos dos botões diferentes na medianiz de navegação, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md).
 
 
 

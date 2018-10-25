@@ -16,27 +16,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 250e3ed3fb548dad26bc29f83fae35b8e6727c9f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f0a6a50ca1e84d9b1f5508cccbad24607f36b3f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669912"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942056"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Personalizar uma faixa de opções para InfoPath
   Quando você personaliza a faixa de opções no Microsoft Office InfoPath, você deve considerar onde sua faixa de opções personalizada será exibida no aplicativo. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] pode exibir a faixa de opções em três tipos de janelas de aplicativo do InfoPath:  
   
--   Windows que exibem um modelo de formulário é aberto no modo de design.  
+- Windows que exibem um modelo de formulário é aberto no modo de design.  
   
--   Windows que exibem um formulário que é baseado em um modelo de formulário.  
+- Windows que exibem um formulário que é baseado em um modelo de formulário.  
   
--   A janela de visualização de impressão.  
+- A janela de visualização de impressão.  
   
- **Aplica-se a:** as informações neste tópico se aplicam a projetos de suplemento do VSTO para InfoPath 2010. Para obter mais informações, consulte [recursos disponíveis por tipo de projeto e aplicativo do Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  **Aplica-se a:** as informações neste tópico se aplicam a projetos de suplemento do VSTO para InfoPath 2010. Para obter mais informações, consulte [recursos disponíveis por tipo de projeto e aplicativo do Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
- Os usuários e designers de abrem um modelo de formulário no modo de design para modificar a aparência e o layout do modelo. Os usuários abrem os formulários baseados em um modelo de formulário para adicionar conteúdo.  
+  Os usuários e designers de abrem um modelo de formulário no modo de design para modificar a aparência e o layout do modelo. Os usuários abrem os formulários baseados em um modelo de formulário para adicionar conteúdo.  
   
- A janela de visualização de impressão permite que os designers e os usuários visualizar as páginas de um formulário ou modelo de formulário antes que eles imprimirem-los.  
+  A janela de visualização de impressão permite que os designers e os usuários visualizar as páginas de um formulário ou modelo de formulário antes que eles imprimirem-los.  
   
 > [!NOTE]  
 >  O **AddIns** guia não aparece na janela de visualização de impressão. Se você quiser uma guia personalizada para aparecer na janela de visualização de impressão, verifique se o **OfficeId** da guia não está definida **TabAddIns**.  

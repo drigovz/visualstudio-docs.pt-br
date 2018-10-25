@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fcc49f96faf043101ffb2462d544e41394b38e7b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e0f2e81d82db81859ff5833903d00b8bf149436
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941215"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>How to Report a Problem with Visual Studio 2015 (Como relatar um problema com o Visual Studio 2015)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Se você encontrar um problema com o Visual Studio 2015, queremos saber sobre el
   
 ###  <a name="describe_the_problem"></a>  
   
-1.  Forneça um título descritivo para o problema que nos ajudará a roteá-lo para a equipe correta no Visual Studio.  
+1. Forneça um título descritivo para o problema que nos ajudará a roteá-lo para a equipe correta no Visual Studio.  
   
-2.  Forneça todos os detalhes adicionais e, se possível, as etapas para reproduzir o problema.  
+2. Forneça todos os detalhes adicionais e, se possível, as etapas para reproduzir o problema.  
   
-3.  Escolha uma área de problema no menu suspenso. Se você não tiver certeza, faça a melhor suposição.  
+3. Escolha uma área de problema no menu suspenso. Se você não tiver certeza, faça a melhor suposição.  
   
- ![Caixa de diálogo Relatar um Problema](../ide/media/report-a-problem-dialog.png "Caixa de diálogo Relatar um Problema")  
+   ![Caixa de diálogo Relatar um Problema](../ide/media/report-a-problem-dialog.png "Caixa de diálogo Relatar um Problema")  
   
 ## <a name="provide-a-screenshot-optional"></a>Fornecer uma captura de tela (opcional)  
  Escolha **Incluir uma captura de tela** para enviar sua tela atual à Microsoft. A ferramenta permite que você recorte a imagem para mostrar apenas a parte da tela que mostra o problema. Você pode anexar capturas de tela adicionais ou outros arquivos clicando no botão **Anexar Arquivos Adicionais**.  

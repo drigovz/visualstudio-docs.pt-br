@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4cf2f6e95a9a0614c578957cabeedf91f1c90ed1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89750ad7ee47f1238d75d3c51ae0b6ee291944fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299865"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940938"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Como coletar dados do contador de CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,29 +33,29 @@ Um contador de evento de CPU é usado para coletar dados de desempenho específi
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Dois tipos de eventos do contador de CPU ocorrem:  
+  Dois tipos de eventos do contador de CPU ocorrem:  
   
--   Eventos portáteis – eventos de CPU que podem ser coletados, independentemente da CPU específica.  
+- Eventos portáteis – eventos de CPU que podem ser coletados, independentemente da CPU específica.  
   
--   Eventos de plataforma – eventos de CPU que estão acoplados a uma CPU específica.  
+- Eventos de plataforma – eventos de CPU que estão acoplados a uma CPU específica.  
   
- Os eventos portáteis incluem eventos gerais, como Instruções Desativadas e Ciclos Não Interrompidos, eventos de buffer de CPU, eventos de ramificação e eventos de cache L2. Os contadores de evento de plataforma disponíveis são determinados pelo fabricante do processador.  
+  Os eventos portáteis incluem eventos gerais, como Instruções Desativadas e Ciclos Não Interrompidos, eventos de buffer de CPU, eventos de ramificação e eventos de cache L2. Os contadores de evento de plataforma disponíveis são determinados pelo fabricante do processador.  
   
- Categorias de eventos podem ser compartilhadas entre contadores de plataforma e portáteis. Por exemplo, as seguintes categorias de dados são frequentemente comuns aos dois tipos:  
+  Categorias de eventos podem ser compartilhadas entre contadores de plataforma e portáteis. Por exemplo, as seguintes categorias de dados são frequentemente comuns aos dois tipos:  
   
--   Eventos de memória.  
+- Eventos de memória.  
   
--   Eventos de front-end.  
+- Eventos de front-end.  
   
--   Eventos de ramificação.  
+- Eventos de ramificação.  
   
- Você pode coletar dados do contador de desempenho de duas formas no Criador de perfil:  
+  Você pode coletar dados do contador de desempenho de duas formas no Criador de perfil:  
   
--   Colete dados de um ou mais contadores ao analisar por instrumentação.  
+- Colete dados de um ou mais contadores ao analisar por instrumentação.  
   
--   Especifique um evento de contador como o intervalo de amostragem, quando você analisar por amostragem. Para obter mais informações, consulte [Como escolher os eventos de amostragem](../profiling/how-to-choose-sampling-events.md).  
+- Especifique um evento de contador como o intervalo de amostragem, quando você analisar por amostragem. Para obter mais informações, consulte [Como escolher os eventos de amostragem](../profiling/how-to-choose-sampling-events.md).  
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Para coletar dados de contador de desempenho de CPU ao analisar por instrumentação  
   

@@ -16,12 +16,12 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 122ef6b8f1e597006fd53e6360d10d304cc760b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c69df0e8c1aace595a1c79d52b7ca4cd08b7a004
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302608"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941211"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Geração de novo projeto: nos bastidores, Parte um
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -175,35 +175,35 @@ devenv /installvstemplates
 #### <a name="a-quick-review"></a>Uma rápida revisão  
  Vamos modificar o **novo projeto** caixa de diálogo caixa e criar um novo modelo de projeto do usuário.  
   
-1.  Adicione uma subpasta MyProjectNode a pasta de 14.0\Common7\IDE\ProjectTemplates\CSharp \Program Visual Studio.  
+1. Adicione uma subpasta MyProjectNode a pasta de 14.0\Common7\IDE\ProjectTemplates\CSharp \Program Visual Studio.  
   
-2.  Crie um arquivo de MyProject.vstdir na pasta MyProjectNode usando qualquer editor de texto.  
+2. Crie um arquivo de MyProject.vstdir na pasta MyProjectNode usando qualquer editor de texto.  
   
-3.  Adicione estas linhas ao arquivo vstdir:  
+3. Adicione estas linhas ao arquivo vstdir:  
   
-    ```  
-    <TemplateDir Version="1.0.0">  
-        <SortOrder>6</SortOrder>  
-    </TemplateDir>  
-    ```  
+   ```  
+   <TemplateDir Version="1.0.0">  
+       <SortOrder>6</SortOrder>  
+   </TemplateDir>  
+   ```  
   
-4.  Salve e feche o arquivo vstdir.  
+4. Salve e feche o arquivo vstdir.  
   
-5.  Crie um arquivo de MyProject.vstemplate na pasta MyProjectNode usando qualquer editor de texto.  
+5. Crie um arquivo de MyProject.vstemplate na pasta MyProjectNode usando qualquer editor de texto.  
   
-6.  Adicione estas linhas ao arquivo. vstemplate:  
+6. Adicione estas linhas ao arquivo. vstemplate:  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-        <TemplateData>  
-            <ProjectType>CSharp</ProjectType>  
-        </TemplateData>  
-    </VSTemplate>  
-    ```  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+       <TemplateData>  
+           <ProjectType>CSharp</ProjectType>  
+       </TemplateData>  
+   </VSTemplate>  
+   ```  
   
-7.  Salve o arquivo de the.vstemplate e feche o editor.  
+7. Salve o arquivo de the.vstemplate e feche o editor.  
   
-8.  Envie o arquivo. vstemplate para uma nova pasta MyProjectNode\MyProject.zip compactada.  
+8. Envie o arquivo. vstemplate para uma nova pasta MyProjectNode\MyProject.zip compactada.  
   
 9. Na janela de comando do Visual Studio, digite:  
   
@@ -211,13 +211,13 @@ devenv /installvstemplates
     devenv /installvstemplates  
     ```  
   
- Abra o Visual Studio.  
+   Abra o Visual Studio.  
   
-1.  Abra o **novo projeto** diálogo caixa e expanda o **Visual c#** nó do projeto.  
+10. Abra o **novo projeto** diálogo caixa e expanda o **Visual c#** nó do projeto.  
   
- ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
+    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
- **MyProjectNode** aparece como um nó filho do Visual c# apenas sob o nó do Windows.  
+    **MyProjectNode** aparece como um nó filho do Visual c# apenas sob o nó do Windows.  
   
 ## <a name="see-also"></a>Consulte também  
  [Nova geração de projeto: Nos bastidores, parte 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

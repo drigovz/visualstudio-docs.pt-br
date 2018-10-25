@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6ca08103614989ddbfd096a08a1531e756c9f67c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7f3d3f8dc34cf354fd6cb6b6689701dab791132d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942524"
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Projetos de banco de dados e aplicativos da camada de dados no Visual Studio
 
@@ -30,11 +30,11 @@ Para obter uma lista dos recursos de banco de dados que são compatíveis com ap
 
 ## <a name="common-high-level-tasks"></a>Tarefas comuns de alto nível
 
-|Tarefas de alto nível|Conteúdo de suporte|
-|----------------------|------------------------|
-|**Iniciar o desenvolvimento de um aplicativo da camada de dados:** um DAC é um novo conceito introduzido com [!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)] que contém a definição para um [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] banco de dados e o suporte a objetos que são usados por um cliente-servidor ou 3 camadas de instância aplicativo. Um DAC inclui objetos de banco de dados, como tabelas e exibições, junto com as entidades de instância, como logons. Você pode usar o Visual Studio para criar um projeto de DAC, crie um arquivo de pacote DAC e enviar esse arquivo de pacote DAC para um administrador de banco de dados para a implantação em uma instância do [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] mecanismo de banco de dados.|-   [Criar e gerenciar aplicativos de camada de dados](http://go.microsoft.com/fwlink/?LinkId=160741)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
-|**Execução de desenvolvimento iterativo do banco de dados:** se você for um desenvolvedor ou testador, você fazer check-out de partes do projeto e, em seguida, atualizá-los em um ambiente de desenvolvimento isolado. Ao usar esse tipo de ambiente, você pode testar suas alterações sem afetar outros membros da equipe. Depois que as alterações forem concluídas, você verificar os arquivos de volta para o controle de versão, onde outros membros da equipe podem obter as alterações e compilar e implantá-los em um servidor de teste.|-   [Consulta e editores de texto (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)<br />-   [Depurador Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324)|
-|**Criação de protótipos, verificando resultados de teste e modificar os scripts de banco de dados e objetos:** você pode usar o [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] editor para realizar qualquer uma dessas tarefas comuns.|-   [Consulta e editores de texto (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)|
+| Tarefas de alto nível | Conteúdo de suporte |
+| - | - |
+| **Iniciar o desenvolvimento de um aplicativo da camada de dados:** um DAC é um novo conceito introduzido com [!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)] que contém a definição para um [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] banco de dados e o suporte a objetos que são usados por um cliente-servidor ou 3 camadas de instância aplicativo. Um DAC inclui objetos de banco de dados, como tabelas e exibições, junto com as entidades de instância, como logons. Você pode usar o Visual Studio para criar um projeto de DAC, crie um arquivo de pacote DAC e enviar esse arquivo de pacote DAC para um administrador de banco de dados para a implantação em uma instância do [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] mecanismo de banco de dados. | -   [Criar e gerenciar aplicativos de camada de dados](http://go.microsoft.com/fwlink/?LinkId=160741)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328) |
+| **Execução de desenvolvimento iterativo do banco de dados:** se você for um desenvolvedor ou testador, você fazer check-out de partes do projeto e, em seguida, atualizá-los em um ambiente de desenvolvimento isolado. Ao usar esse tipo de ambiente, você pode testar suas alterações sem afetar outros membros da equipe. Depois que as alterações forem concluídas, você verificar os arquivos de volta para o controle de versão, onde outros membros da equipe podem obter as alterações e compilar e implantá-los em um servidor de teste. | -   [Consulta e editores de texto (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)<br />-   [Depurador Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324) |
+| **Criação de protótipos, verificando resultados de teste e modificar os scripts de banco de dados e objetos:** você pode usar o [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] editor para realizar qualquer uma dessas tarefas comuns. | -   [Consulta e editores de texto (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) |
 
 ## <a name="see-also"></a>Consulte também
 

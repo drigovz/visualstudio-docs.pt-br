@@ -32,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3d080945edc13d0f4542fdd9c981037af108325c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cae9f5af0c6b8df6594a78bc7601ac123c349dc5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220695"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949422"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,47 +53,47 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
  **Mostrar configurações de**  
  Lista todos os elementos da interface do usuário para os quais é possível alterar os esquemas de fontes e cores. Após selecionar um item da lista, você pode personalizar as configurações de cor do item selecionado em **Exibir itens**.  
   
--   **Editor de Texto**  
+- **Editor de Texto**  
   
-     Alterações nas configurações de exibição de cor, tamanho e estilo da fonte do Editor de Texto afetam a aparência do texto no editor de texto padrão. Documentos abertos em um editor de texto fora do IDE não serão afetados por essas configurações.  
+   Alterações nas configurações de exibição de cor, tamanho e estilo da fonte do Editor de Texto afetam a aparência do texto no editor de texto padrão. Documentos abertos em um editor de texto fora do IDE não serão afetados por essas configurações.  
   
--   **Impressora**  
+- **Impressora**  
   
-     Alterações nas configurações de exibição de cor, tamanho e estilo da fonte da Impressora afetam a aparência do texto em documentos impressos.  
+   Alterações nas configurações de exibição de cor, tamanho e estilo da fonte da Impressora afetam a aparência do texto em documentos impressos.  
   
-    > [!NOTE]
-    >  Conforme for necessário, é possível selecionar uma fonte padrão para impressão diferente daquela usada para exibição no editor de texto. Isso pode ser útil ao imprimir códigos que contêm caracteres de byte único e de caractere duplo.  
+  > [!NOTE]
+  >  Conforme for necessário, é possível selecionar uma fonte padrão para impressão diferente daquela usada para exibição no editor de texto. Isso pode ser útil ao imprimir códigos que contêm caracteres de byte único e de caractere duplo.  
   
--   **Preenchimento de Declaração**  
+- **Preenchimento de Declaração**  
   
-     Altera o tamanho e o estilo da fonte do texto que aparece no pop-up de preenchimento de declaração no editor.  
+   Altera o tamanho e o estilo da fonte do texto que aparece no pop-up de preenchimento de declaração no editor.  
   
--   **Dica de ferramenta do Editor**  
+- **Dica de ferramenta do Editor**  
   
-     Altera o tamanho e o estilo da fonte do texto que aparece em ToolTips exibidas no editor.  
+   Altera o tamanho e o estilo da fonte do texto que aparece em ToolTips exibidas no editor.  
   
--   **Fonte do ambiente**  
+- **Fonte do ambiente**  
   
-     Altera o tamanho e o estilo da fonte de todos os elementos de interface do usuário do IDE que ainda não têm uma opção separada em **Mostrar configurações de**. Por exemplo, essa opção se aplica à **Página Inicial**, mas não afetaria a Janela de **Saída**.  
+   Altera o tamanho e o estilo da fonte de todos os elementos de interface do usuário do IDE que ainda não têm uma opção separada em **Mostrar configurações de**. Por exemplo, essa opção se aplica à **Página Inicial**, mas não afetaria a Janela de **Saída**.  
   
--   **[Todas as janelas de ferramentas de texto]**  
+- **[Todas as janelas de ferramentas de texto]**  
   
-     Alterações nas configurações de exibição de cor, tamanho e estilo da fonte deste item afetam a aparência do texto nas janelas de ferramentas que têm painéis de saída no IDE. Por exemplo, Janela de Saída, janela Comando, janela Imediato etc.  
+   Alterações nas configurações de exibição de cor, tamanho e estilo da fonte deste item afetam a aparência do texto nas janelas de ferramentas que têm painéis de saída no IDE. Por exemplo, Janela de Saída, janela Comando, janela Imediato etc.  
   
-    > [!NOTE]
-    >  Alterações no texto de itens **[Todas as janelas de ferramentas de texto]** não terão efeito durante a sessão em que forem feitas. É possível avaliar tais alterações abrindo outra instância do Visual Studio.  
+  > [!NOTE]
+  >  Alterações no texto de itens **[Todas as janelas de ferramentas de texto]** não terão efeito durante a sessão em que forem feitas. É possível avaliar tais alterações abrindo outra instância do Visual Studio.  
   
- **Usar Padrões**  
- Redefine os valores de fonte e cor do item de lista selecionado em **Mostrar configurações de**. O botão **Usar** é exibido quando outros esquemas de exibição estão disponíveis para seleção. Por exemplo, é possível escolher entre dois esquemas para a impressora.  
+  **Usar Padrões**  
+  Redefine os valores de fonte e cor do item de lista selecionado em **Mostrar configurações de**. O botão **Usar** é exibido quando outros esquemas de exibição estão disponíveis para seleção. Por exemplo, é possível escolher entre dois esquemas para a impressora.  
   
- **Fonte (o negrito indica fontes de largura fixa)**  
- Lista todas as fontes instaladas em seu sistema. Quando o menu suspenso aparece pela primeira vez, a fonte atual do elemento selecionado no campo **Mostrar configurações de** é realçada. Fontes fixas – que são mais fáceis de alinhar no editor – aparecem em negrito.  
+  **Fonte (o negrito indica fontes de largura fixa)**  
+  Lista todas as fontes instaladas em seu sistema. Quando o menu suspenso aparece pela primeira vez, a fonte atual do elemento selecionado no campo **Mostrar configurações de** é realçada. Fontes fixas – que são mais fáceis de alinhar no editor – aparecem em negrito.  
   
- **Size**  
- Listas tamanhos de pontos disponíveis para a fonte realçada. Alterar o tamanho da fonte afeta todos os **Itens de exibição** para a seleção **Mostrar configurações de**.  
+  **Size**  
+  Listas tamanhos de pontos disponíveis para a fonte realçada. Alterar o tamanho da fonte afeta todos os **Itens de exibição** para a seleção **Mostrar configurações de**.  
   
- **Exibir itens**  
- Lista os itens cuja cor de primeiro plano e a cor da tela de fundo você pode modificar.  
+  **Exibir itens**  
+  Lista os itens cuja cor de primeiro plano e a cor da tela de fundo você pode modificar.  
   
 > [!NOTE]
 >  **Texto sem Formatação** é o item de exibição padrão. Sendo assim, propriedades atribuídas a **PlainText** serão substituídas por propriedades atribuídas a outros itens de exibição. Por exemplo, se você atribuir a cor azul a **PlainText** e a cor verde a **Identificador**, todos os identificadores serão exibidos em verde. Neste exemplo, as propriedades de **Identificador** substituem as propriedades em **PlainText**.  

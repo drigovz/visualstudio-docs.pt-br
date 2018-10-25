@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: aff5a67d54376488ccce2bca5dd67b84d6c73949
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 87ab5ccde2c1100fbd0efc5f4272efe27803b717
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210178"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938611"
 ---
 # <a name="how-to-delete-records-in-a-database"></a>Como excluir registros em um banco de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,12 +49,12 @@ Para excluir registros de um banco de dados, use o `TableAdapter.Update` método
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterupdate-method"></a>Para excluir registros de um banco de dados usando o método do TableAdapter.  
   
--   Excluir registros de desejado <xref:System.Data.DataTable> excluindo <xref:System.Data.DataRow> objetos da tabela. Para obter mais informações, consulte [como: excluir linhas em uma DataTable](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e). Após as linhas são excluídas do <xref:System.Data.DataTable>, chame o `TableAdapter.Update` método. Você pode controlar a quantidade de dados para atualizar, passando em um todo <xref:System.Data.DataSet>, um <xref:System.Data.DataTable>, uma matriz de <xref:System.Data.DataRow>s ou um único <xref:System.Data.DataRow>. O código a seguir mostra como excluir um registro de um <xref:System.Data.DataTable> e, em seguida, chamar o `TableAdapter.Update` método para comunicar as alterações e excluir a linha do banco de dados. (Este exemplo usa o banco de dados de Northwind `Region` tabela.)  
+- Excluir registros de desejado <xref:System.Data.DataTable> excluindo <xref:System.Data.DataRow> objetos da tabela. Para obter mais informações, consulte [como: excluir linhas em uma DataTable](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e). Após as linhas são excluídas do <xref:System.Data.DataTable>, chame o `TableAdapter.Update` método. Você pode controlar a quantidade de dados para atualizar, passando em um todo <xref:System.Data.DataSet>, um <xref:System.Data.DataTable>, uma matriz de <xref:System.Data.DataRow>s ou um único <xref:System.Data.DataRow>. O código a seguir mostra como excluir um registro de um <xref:System.Data.DataTable> e, em seguida, chamar o `TableAdapter.Update` método para comunicar as alterações e excluir a linha do banco de dados. (Este exemplo usa o banco de dados de Northwind `Region` tabela.)  
   
-     [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
-     [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
+   [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
+   [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
   
- Se seu aplicativo usa objetos para armazenar os dados em seu aplicativo, você pode usar os métodos DBDirect do TableAdapter para excluir dados diretamente do banco de dados. Chamar o `Delete` método remove registros do banco de dados com base nos valores de parâmetro passados.  
+  Se seu aplicativo usa objetos para armazenar os dados em seu aplicativo, você pode usar os métodos DBDirect do TableAdapter para excluir dados diretamente do banco de dados. Chamar o `Delete` método remove registros do banco de dados com base nos valores de parâmetro passados.  
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterdelete-method"></a>Para excluir registros de um banco de dados usando o método TableAdapter.  
   

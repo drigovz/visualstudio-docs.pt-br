@@ -13,12 +13,12 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 63761dc543b327c1c8639203c80afb92d4700c8d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8dab39c5718b8872df5e81281ba9dda886ebf313
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941198"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Teste de unidade de aplicativos do C++ existentes com Gerenciador de Testes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,118 +60,118 @@ Recomendamos que, antes de alterar um aplicativo existente, você verifique se e
   
 ###  <a name="staticLink"></a>Para alterar o código em teste para uma biblioteca estática  
   
--   Se os testes devem usar membros que não são exportados por um projeto em teste e este é criado como uma biblioteca dinâmica, considere a possibilidade de convertê-la em uma biblioteca estática.  
+- Se os testes devem usar membros que não são exportados por um projeto em teste e este é criado como uma biblioteca dinâmica, considere a possibilidade de convertê-la em uma biblioteca estática.  
   
-    1.  No Gerenciador de Soluções, no menu de atalho do projeto em teste, selecione **Propriedades**. A janela de propriedades do projeto aparece.  
+  1.  No Gerenciador de Soluções, no menu de atalho do projeto em teste, selecione **Propriedades**. A janela de propriedades do projeto aparece.  
   
-    2.  Escolha **Propriedades de Configuração**, **Geral**.  
+  2.  Escolha **Propriedades de Configuração**, **Geral**.  
   
-    3.  Defina **Tipo de Configuração** como **Biblioteca Estática (.lib)**.  
+  3.  Defina **Tipo de Configuração** como **Biblioteca Estática (.lib)**.  
   
- Continue com o procedimento [Para vincular os testes aos arquivos de biblioteca ou objeto](#objectRef).  
+  Continue com o procedimento [Para vincular os testes aos arquivos de biblioteca ou objeto](#objectRef).  
   
 ###  <a name="projectRef"></a>Para fazer referência a funções exportadas do projeto de teste  
   
--   Se um projeto em teste exporta as funções que deseja testar, você pode adicionar uma referência ao projeto de código do projeto de teste.  
+- Se um projeto em teste exporta as funções que deseja testar, você pode adicionar uma referência ao projeto de código do projeto de teste.  
   
-    1.  Criar um projeto de teste em C++.  
+  1.  Criar um projeto de teste em C++.  
   
-        1.  No menu **Arquivo**, escolha **Novo**, **Projeto**, **Visual C++, Teste**, **Projeto de Teste de Unidade C++**.  
+      1.  No menu **Arquivo**, escolha **Novo**, **Projeto**, **Visual C++, Teste**, **Projeto de Teste de Unidade C++**.  
   
-    2.  No Gerenciador de Soluções, no menu de atalho do projeto de teste, selecione **Referências**. A janela de propriedades do projeto aparece.  
+  2.  No Gerenciador de Soluções, no menu de atalho do projeto de teste, selecione **Referências**. A janela de propriedades do projeto aparece.  
   
-    3.  Selecione **Propriedades Comuns**, **Estrutura e Referências**e escolha o botão **Adicionar Nova Referência**.  
+  3.  Selecione **Propriedades Comuns**, **Estrutura e Referências**e escolha o botão **Adicionar Nova Referência**.  
   
-    4.  Selecione **Projetos**e o projeto a ser testado.  
+  4.  Selecione **Projetos**e o projeto a ser testado.  
   
-         Escolha o botão **Adicionar**.  
+       Escolha o botão **Adicionar**.  
   
-    5.  Nas propriedades do projeto de teste, adicione o local do projeto em teste a Incluir Diretórios.  
+  5.  Nas propriedades do projeto de teste, adicione o local do projeto em teste a Incluir Diretórios.  
   
-         Escolha **Propriedades de Configuração**, **Diretórios VC + +**, **Incluir Diretórios**.  
+       Escolha **Propriedades de Configuração**, **Diretórios VC + +**, **Incluir Diretórios**.  
   
-         Escolha **Editar**e adicione o diretório de cabeçalho do projeto que está sendo testado.  
+       Escolha **Editar**e adicione o diretório de cabeçalho do projeto que está sendo testado.  
   
- Vá para [Escrevendo testes de unidade](#addTests).  
+  Vá para [Escrevendo testes de unidade](#addTests).  
   
 ###  <a name="objectRef"></a>Para vincular os testes aos arquivos de biblioteca ou objeto  
   
--   Se o código em teste não exporta as funções que deseja testar, você pode adicionar o arquivo de saída **.obj** ou **.lib** às dependências do projeto de teste.  
+- Se o código em teste não exporta as funções que deseja testar, você pode adicionar o arquivo de saída **.obj** ou **.lib** às dependências do projeto de teste.  
   
-    1.  Criar um projeto de teste em C++.  
+  1.  Criar um projeto de teste em C++.  
   
-        1.  No menu **Arquivo**, escolha **Novo**, **Projeto**, **Visual C++, Teste**, **Projeto de Teste de Unidade C++**.  
+      1.  No menu **Arquivo**, escolha **Novo**, **Projeto**, **Visual C++, Teste**, **Projeto de Teste de Unidade C++**.  
   
-    2.  No Gerenciador de Soluções, no menu de atalho do projeto de teste, selecione **Propriedades**. A janela de propriedades do projeto aparece.  
+  2.  No Gerenciador de Soluções, no menu de atalho do projeto de teste, selecione **Propriedades**. A janela de propriedades do projeto aparece.  
   
-    3.  Escolha **Propriedades de Configuração**, **Vinculador**, **Entrada**, **Dependências Adicionais**.  
+  3.  Escolha **Propriedades de Configuração**, **Vinculador**, **Entrada**, **Dependências Adicionais**.  
   
-         Escolha **Editar**e adicione os nomes dos arquivos **.obj** ou **.lib**. Não use os nomes de caminho completo.  
+       Escolha **Editar**e adicione os nomes dos arquivos **.obj** ou **.lib**. Não use os nomes de caminho completo.  
   
-    4.  Escolha **Propriedades de Configuração**, **Vinculador**, **Geral**, **Diretórios de Biblioteca Adicionais**.  
+  4.  Escolha **Propriedades de Configuração**, **Vinculador**, **Geral**, **Diretórios de Biblioteca Adicionais**.  
   
-         Escolha **Editar**e adicione o caminho do diretório dos arquivos **.obj** ou **.lib**. O caminho fica geralmente dentro da pasta de compilação do projeto em teste.  
+       Escolha **Editar**e adicione o caminho do diretório dos arquivos **.obj** ou **.lib**. O caminho fica geralmente dentro da pasta de compilação do projeto em teste.  
   
-    5.  Escolha **Propriedades de Configuração**, **Diretórios VC + +**, **Incluir Diretórios**.  
+  5.  Escolha **Propriedades de Configuração**, **Diretórios VC + +**, **Incluir Diretórios**.  
   
-         Escolha **Editar**e adicione o diretório de cabeçalho do projeto que está sendo testado.  
+       Escolha **Editar**e adicione o diretório de cabeçalho do projeto que está sendo testado.  
   
- Vá para [Escrevendo testes de unidade](#addTests).  
+  Vá para [Escrevendo testes de unidade](#addTests).  
   
 ###  <a name="sameProject"></a>Para adicionar testes de unidade no mesmo projeto  
   
-1.  Modifique as propriedades do projeto do código de produto para incluir os cabeçalhos e os arquivos de biblioteca necessários aos testes de unidade.  
+1. Modifique as propriedades do projeto do código de produto para incluir os cabeçalhos e os arquivos de biblioteca necessários aos testes de unidade.  
   
-    1.  No Gerenciador de Soluções, no menu de atalho do projeto em teste, selecione Propriedades. A janela de propriedades do projeto aparece.  
+   1.  No Gerenciador de Soluções, no menu de atalho do projeto em teste, selecione Propriedades. A janela de propriedades do projeto aparece.  
   
-    2.  Escolha **Propriedades de Configuração**, **Diretórios VC + +**.  
+   2.  Escolha **Propriedades de Configuração**, **Diretórios VC + +**.  
   
-    3.  Edite os diretórios Incluir e Biblioteca:  
+   3.  Edite os diretórios Incluir e Biblioteca:  
   
-        |||  
-        |-|-|  
-        |**Incluir Diretórios**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|  
-        |**Diretórios de Biblioteca**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|  
+       |||  
+       |-|-|  
+       |**Incluir Diretórios**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|  
+       |**Diretórios de Biblioteca**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|  
   
-2.  Adicione um arquivo de teste de unidade C++:  
+2. Adicione um arquivo de teste de unidade C++:  
   
-    -   No Gerenciador de Soluções, no menu de atalho do projeto, escolha **Adicionar**, **Novo Item**e escolha **Teste de Unidade C++**.  
+   -   No Gerenciador de Soluções, no menu de atalho do projeto, escolha **Adicionar**, **Novo Item**e escolha **Teste de Unidade C++**.  
   
- Vá para [Escrevendo testes de unidade](#addTests).  
+   Vá para [Escrevendo testes de unidade](#addTests).  
   
 ##  <a name="addTests"></a> Escrevendo testes de unidade  
   
-1.  Em cada arquivo de código de teste de unidade, adicione uma instrução `#include` aos cabeçalhos do projeto em teste.  
+1. Em cada arquivo de código de teste de unidade, adicione uma instrução `#include` aos cabeçalhos do projeto em teste.  
   
-2.  Adicione métodos e classes de teste aos arquivos de código do teste de unidade. Por exemplo:  
+2. Adicione métodos e classes de teste aos arquivos de código do teste de unidade. Por exemplo:  
   
-    ```cpp  
-    #include "stdafx.h"  
-    #include "CppUnitTest.h"  
-    #include "MyProjectUnderTest.h"  
-    using namespace Microsoft::VisualStudio::CppUnitTestFramework;  
-    namespace MyTest  
-    {  
-      TEST_CLASS(MyTests)  
-      {  
-      public:  
-          TEST_METHOD(MyTestMethod)  
-          {  
-              Assert::AreEqual(MyProject::Multiply(2,3), 6);  
-          }  
-      };  
-    }  
-    ```  
+   ```cpp  
+   #include "stdafx.h"  
+   #include "CppUnitTest.h"  
+   #include "MyProjectUnderTest.h"  
+   using namespace Microsoft::VisualStudio::CppUnitTestFramework;  
+   namespace MyTest  
+   {  
+     TEST_CLASS(MyTests)  
+     {  
+     public:  
+         TEST_METHOD(MyTestMethod)  
+         {  
+             Assert::AreEqual(MyProject::Multiply(2,3), 6);  
+         }  
+     };  
+   }  
+   ```  
   
- Para saber mais, confira [Teste de unidade de código nativo com o Gerenciador de Testes](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c).  
+   Para saber mais, confira [Teste de unidade de código nativo com o Gerenciador de Testes](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c).  
   
 ## <a name="run-the-tests"></a>Executar os testes  
   
-1.  No menu **Exibir**, escolha **Outras Janelas**, **Gerenciador de Testes**.  
+1. No menu **Exibir**, escolha **Outras Janelas**, **Gerenciador de Testes**.  
   
-2.  No Gerenciador de Testes, escolha **Executar Todos**.  
+2. No Gerenciador de Testes, escolha **Executar Todos**.  
   
- Para saber mais, confira [Início Rápido: desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md).
+   Para saber mais, confira [Início Rápido: desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md).
 
 
 
