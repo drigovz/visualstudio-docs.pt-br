@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933424"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Substituindo e estendendo as classes geradas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ Sua definição de DSL é uma plataforma na qual você pode criar um conjunto po
   
  Por exemplo, no exemplo Library.dsl, o `CirculationBook` classe de domínio tem o `Generates``Double Derived` propriedade definida como `true`. O código gerado para essa classe de domínio contém duas classes:  
   
--   `CirculationBookBase`, que é um resumo e que contém todos os métodos e propriedades.  
+- `CirculationBookBase`, que é um resumo e que contém todos os métodos e propriedades.  
   
--   `CirculationBook`, que é derivado de `CirculationBookBase`. Ele está vazio, exceto seus construtores.  
+- `CirculationBook`, que é derivado de `CirculationBookBase`. Ele está vazio, exceto seus construtores.  
   
- Para substituir qualquer método, você cria uma definição parcial da classe derivada, como `CirculationBook`. Você pode substituir os métodos gerados e os métodos herdados da estrutura de modelagem.  
+  Para substituir qualquer método, você cria uma definição parcial da classe derivada, como `CirculationBook`. Você pode substituir os métodos gerados e os métodos herdados da estrutura de modelagem.  
   
- Você pode usar esse método com todos os tipos de elemento, incluindo conectores, relações, formas, diagramas e elementos de modelo. Você também pode substituir métodos de outras classes geradas. Algumas classes geradas, como o ToolboxHelper sempre são derivados de double.  
+  Você pode usar esse método com todos os tipos de elemento, incluindo conectores, relações, formas, diagramas e elementos de modelo. Você também pode substituir métodos de outras classes geradas. Algumas classes geradas, como o ToolboxHelper sempre são derivados de double.  
   
 ### <a name="custom-constructors"></a>Construtores personalizados  
  Você não pode substituir um construtor. Mesmo em classes derivadas de duplo, o construtor deve ser na classe derivada.  

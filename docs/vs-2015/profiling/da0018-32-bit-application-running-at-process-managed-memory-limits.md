@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 237d38fe601b8ae2d530cc735701fe236572601a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6795675d8cf2b41310dadfc7aec44eb9ae8a0f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269575"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928757"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: aplicativo de 32 bits em execução em limites de memória gerenciada do processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,23 +57,23 @@ Id da regra | DA0018 |
   
  Se o excesso de sobrecarga de memória gerenciada for um problema, considere uma destas opções:  
   
--   otimizar o uso do aplicativo de recursos de memória gerenciada  
+- otimizar o uso do aplicativo de recursos de memória gerenciada  
   
-     -ou-  
+   -ou-  
   
--   tomar medidas para aliviar as restrições de arquitetura em relação ao tamanho máximo de memória virtual para um processo de 32 bits  
+- tomar medidas para aliviar as restrições de arquitetura em relação ao tamanho máximo de memória virtual para um processo de 32 bits  
   
- Para otimizar o uso do aplicativo de recursos de memória gerenciada, colete dados de alocação de memória gerenciada em uma execução de criação de perfil de Alocação de Memória do .NET. Examine os relatórios de [Exibições de dados da memória do .NET](../profiling/dotnet-memory-data-views.md) para entender o padrão do aplicativo de alocação de memória.  
+  Para otimizar o uso do aplicativo de recursos de memória gerenciada, colete dados de alocação de memória gerenciada em uma execução de criação de perfil de Alocação de Memória do .NET. Examine os relatórios de [Exibições de dados da memória do .NET](../profiling/dotnet-memory-data-views.md) para entender o padrão do aplicativo de alocação de memória.  
   
- Use a [Exibição de Tempo de Vida do Objeto](../profiling/object-lifetime-view.md) para determinar quais objetos de dados do programa estão sobrevivendo na geração e, em seguida, recuperados dela.  
+  Use a [Exibição de Tempo de Vida do Objeto](../profiling/object-lifetime-view.md) para determinar quais objetos de dados do programa estão sobrevivendo na geração e, em seguida, recuperados dela.  
   
- Use a [Exibição de Alocações](../profiling/dotnet-memory-allocations-view.md) para determinar o caminho de execução que resultou nessas alocações.  
+  Use a [Exibição de Alocações](../profiling/dotnet-memory-allocations-view.md) para determinar o caminho de execução que resultou nessas alocações.  
   
- Para obter mais informações sobre como melhorar o desempenho da coleta de lixo, consulte o artigo técnico sobre o .NET Framework [Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=177946) (Noções básicas sobre o coletor de lixo e dicas de desempenho) no site do MSDN.  
+  Para obter mais informações sobre como melhorar o desempenho da coleta de lixo, consulte o artigo técnico sobre o .NET Framework [Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=177946) (Noções básicas sobre o coletor de lixo e dicas de desempenho) no site do MSDN.  
   
- Para obter alívio de arquitetura das restrições de memória virtual em relação ao tamanho da parte privada de um espaço de endereço do processo, tente executar esse processo de 32 bits em um computador de 64 bits.  Um processo de 32 bits em um computador de 64 bits pode adquirir até 4 GB de memória virtual privada.  
+  Para obter alívio de arquitetura das restrições de memória virtual em relação ao tamanho da parte privada de um espaço de endereço do processo, tente executar esse processo de 32 bits em um computador de 64 bits.  Um processo de 32 bits em um computador de 64 bits pode adquirir até 4 GB de memória virtual privada.  
   
- Um processo de 64 bits em execução em um computador de 64 bits pode adquirir até 8 TB de memória virtual. Considere uma nova compilação do aplicativo para que ele seja executado como um aplicativo nativo de 64 bits. Essa regra se destina apenas a fins informativos e pode não exigir ação corretiva.
+  Um processo de 64 bits em execução em um computador de 64 bits pode adquirir até 8 TB de memória virtual. Considere uma nova compilação do aplicativo para que ele seja executado como um aplicativo nativo de 64 bits. Essa regra se destina apenas a fins informativos e pode não exigir ação corretiva.
 
 
 

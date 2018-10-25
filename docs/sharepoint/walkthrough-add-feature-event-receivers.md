@@ -19,33 +19,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a8777dff45eb257a941716306f099c67e3fcda7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab2eded41d9416f03592c9346a379f8a276366a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626082"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948753"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Passo a passo: Adicionar receptores de evento
   Receptores de evento são métodos executados quando ocorre por um dos seguintes eventos relacionados ao recurso no SharePoint:
 
--   Um recurso é instalado.
+- Um recurso é instalado.
 
--   Um recurso é ativado.
+- Um recurso é ativado.
 
--   Um recurso é desativado.
+- Um recurso é desativado.
 
--   Um recurso é removido.
+- Um recurso é removido.
 
- Este passo a passo demonstra como adicionar um receptor de eventos para um recurso em um projeto do SharePoint. Ele demonstra as seguintes tarefas:
+  Este passo a passo demonstra como adicionar um receptor de eventos para um recurso em um projeto do SharePoint. Ele demonstra as seguintes tarefas:
 
--   Criando um projeto vazio com um receptor de evento do recurso.
+- Criando um projeto vazio com um receptor de evento do recurso.
 
--   Manipulando o **FeatureDeactivating** método.
+- Manipulando o **FeatureDeactivating** método.
 
--   Usando o modelo de objeto de projeto do SharePoint para adicionar um comunicado para a lista de avisos.
+- Usando o modelo de objeto de projeto do SharePoint para adicionar um comunicado para a lista de avisos.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:

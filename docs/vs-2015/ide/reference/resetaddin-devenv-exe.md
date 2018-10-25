@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: df5fe62efd783551a483853543ddb30312e64c65
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1b53a30845ca4b20372fb5a6e3552f31f3c1b60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213662"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950518"
 ---
 # <a name="resetaddin-devenvexe"></a>/ResetAddin (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Devenv /ResetAddin AddIn
  Opcional. O nome de comando do Suplemento.  
   
 ## <a name="remarks"></a>Comentários  
- Por padrão, o nome do comando do suplemento é igual a *\<AddInSolutionName>*.Connect *.\<AddInSolutionName>* e aparece no Connect.cs como o parâmetro `commandName` do método `Exec`. Você também pode verificar o nome do comando começando a digitar o nome do suplemento na janela Comandos no Visual Studio e usando o IntelliSense para preencher o restante.  
+ Por padrão, o nome do comando do suplemento é igual a *\<AddInSolutionName>*.Connect<em>.\<AddInSolutionName></em> e aparece no Connect.cs como o parâmetro `commandName` do método `Exec`. Você também pode verificar o nome do comando começando a digitar o nome do suplemento na janela Comandos no Visual Studio e usando o IntelliSense para preencher o restante.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir inicia o Visual Studio e impede o suplemento `MyAddin` de ser executado na inicialização.  

@@ -26,12 +26,12 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2da6004598d04ca91cea6e29e07ae9fcc1fb28e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: acae33e015b158c36b5e8c27b5b88131c863fc9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949884"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Exibir valores de dados em Dicas de Dados no editor de códigos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,16 +42,16 @@ Os DataTips fornecem um modo conveniente de exibir informações sobre variávei
   
 ### <a name="to-display-a-datatip-in-break-mode-only"></a>Para exibir um DataTip (somente no modo de interrupção)  
   
-1.  Em uma janela de origem, coloque o ponteiro do mouse sobre qualquer variável no escopo atual.  
+1. Em uma janela de origem, coloque o ponteiro do mouse sobre qualquer variável no escopo atual.  
   
-     Um DataTip aparece.  
+    Um DataTip aparece.  
   
-    > [!NOTE]
-    >  Os DataTips são sempre avaliados no contexto onde a execução é suspensa e não por onde o cursor está passando. Se você passar o mouse sobre uma variável em outra função com o mesmo nome de uma variável que está no contexto atual, o valor da variável na outra função será exibido como o valor da variável no contexto atual.  
+   > [!NOTE]
+   >  Os DataTips são sempre avaliados no contexto onde a execução é suspensa e não por onde o cursor está passando. Se você passar o mouse sobre uma variável em outra função com o mesmo nome de uma variável que está no contexto atual, o valor da variável na outra função será exibido como o valor da variável no contexto atual.  
   
-2.  O DataTip desaparecerá quando você remover o ponteiro do mouse. Para fixar o DataTip de modo que ela permaneça aberta, clique o **fixar à origem** ícone, ou  
+2. O DataTip desaparecerá quando você remover o ponteiro do mouse. Para fixar o DataTip de modo que ela permaneça aberta, clique o **fixar à origem** ícone, ou  
   
-    -   Com o botão direito em uma variável e, em seguida, clique em **fixar à origem**.  
+   - Com o botão direito em uma variável e, em seguida, clique em **fixar à origem**.  
   
      O DataTip fixado é fechado quando a sessão de depuração termina.  
   

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 966f9dd422137b2966deb23a7c29e328a21957a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef2a2800ecb46f12f9dde4357bf54711a1df8797
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635262"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934672"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Passo a passo: Chamando o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores
   Este passo a passo demonstra como chamar o modelo de objeto de cliente do SharePoint de uma extensão para o **conexões do SharePoint** nó no **Gerenciador de servidores**. Para obter mais informações sobre como usar o modelo de objeto de cliente do SharePoint, consulte [chamam os modelos de objeto SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -57,11 +57,11 @@ Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir
 ## <a name="create-the-projects"></a>Crie os projetos
  Para concluir este passo a passo, você deve criar dois projetos:  
   
--   Um projeto VSIX para criar o pacote VSIX para implantar o **Gerenciador de servidores** extensão.  
+- Um projeto VSIX para criar o pacote VSIX para implantar o **Gerenciador de servidores** extensão.  
   
--   Um projeto de biblioteca de classe que implementa o **Gerenciador de servidores** extensão.  
+- Um projeto de biblioteca de classe que implementa o **Gerenciador de servidores** extensão.  
   
- Inicie o passo a passo Criando os projetos.  
+  Inicie o passo a passo Criando os projetos.  
   
 #### <a name="to-create-the-vsix-project"></a>Para criar o projeto do VSIX  
   

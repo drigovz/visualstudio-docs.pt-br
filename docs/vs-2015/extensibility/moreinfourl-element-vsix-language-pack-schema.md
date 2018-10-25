@@ -13,12 +13,12 @@ ms.assetid: 3f07b67b-95c5-4ae8-8b7e-d643cbbb0348
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ec29228180826849cb4d119a5e527dc473ace79
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 698892062fa7c8379c98104ada9c7ee646002b52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934061"
 ---
 # <a name="moreinfourl-element-vsix-language-pack-schema"></a>Elemento MoreInfoURL (esquema de pacote de idiomas do VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,12 +57,12 @@ Opcional. Um link para informações localizadas sobre a extensão.
   
 ## <a name="element-information"></a>Informações do elemento  
   
-|||  
-|-|-|  
-|Namespace|http://schemas.microsoft.com/developer/vsx-schema-lp/2010|  
-|Nome do esquema|Esquema de pacote de idiomas do VSIX|  
-|Arquivo de validação|VSIXLanguagePackSchema.xsd|  
-|Pode ser vazio|Não aplicável|  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Namespace    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
+|   Nome do esquema   |                 Esquema de pacote de idiomas do VSIX                 |
+| Arquivo de validação |                VSIXLanguagePackSchema.xsd                 |
+|  Pode ser vazio   |                      Não aplicável                       |
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema do pacote de idioma VSX](../extensibility/vsx-language-pack-schema-reference.md)   

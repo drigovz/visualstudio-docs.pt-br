@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5385e006bcd2f79ab7b1c2e723e696b833991f36
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 680f57878b3dd06e2f5935874f4a3f3bb06a2a1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948220"
 ---
 # <a name="port-suppliers"></a>Fornecedores de porta
 Na arquitetura do depurador, uma *fornecedor de porta*:  
   
--   Está contido por um servidor e fornece as portas na solicitação para esse servidor.  
+- Está contido por um servidor e fornece as portas na solicitação para esse servidor.  
   
--   Adicione e remova as portas do servidor que contém.  
+- Adicione e remova as portas do servidor que contém.  
   
--   Pode enumerar todas as portas que ele tenha fornecido para o servidor.  
+- Pode enumerar todas as portas que ele tenha fornecido para o servidor.  
   
--   É representado por um [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interface, que está registrado com o Visual Studio por meio do registro. Essa interface pode ser obtida chamando [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
+- É representado por um [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interface, que está registrado com o Visual Studio por meio do registro. Essa interface pode ser obtida chamando [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Fornece um fornecedor de porta padrão e uma porta padrão. Se uma porta personalizada precisa ser implementado, um fornecedor de porta personalizado também precisa ser implementada para fornecer essas portas personalizadas.  
+  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Fornece um fornecedor de porta padrão e uma porta padrão. Se uma porta personalizada precisa ser implementado, um fornecedor de porta personalizado também precisa ser implementada para fornecer essas portas personalizadas.  
   
 ## <a name="see-also"></a>Consulte também  
  [Servidores](../../extensibility/debugger/servers-visual-studio-sdk.md)   
