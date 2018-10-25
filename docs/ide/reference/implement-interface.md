@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4b17e924a6736d37b78709a516f6ca9068d4711c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d34c3978b119b978e83204967e4d5f6af5946314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811536"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementar uma interface no Visual Studio
 
@@ -36,22 +36,22 @@ Esta geração de código aplica-se a:
 
    - C#:
 
-    ![Código em C# realçado](media/interface-highlight-cs.png)
+       ![Código em C# realçado](media/interface-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código em VB realçado](media/interface-highlight-vb.png)
+       ![Código em VB realçado](media/interface-highlight-vb.png)
 
-1. Depois, siga um destes procedimentos:
+2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
-     - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
-     - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece.
-     - Clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece na margem esquerda se o cursor de texto já estiver na linha com o rabisco vermelho.
+      - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
+      - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece.
+      - Clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece na margem esquerda se o cursor de texto já estiver na linha com o rabisco vermelho.
 
-1. Selecione **Implementar interface** no menu suspenso.
+3. Selecione **Implementar interface** no menu suspenso.
 
    ![Visualização da implementação de interface](media/interface-preview-cs.png)
 
@@ -63,11 +63,11 @@ Esta geração de código aplica-se a:
 
    - C#:
 
-      ![Resultado da implementação da interface em C#](media/interface-result-cs.png)
+       ![Resultado da implementação da interface em C#](media/interface-result-cs.png)
 
    - Visual Basic:
 
-      ![Resultado da implementação da interface em VB](media/interface-result-vb.png)
+       ![Resultado da implementação da interface em VB](media/interface-result-vb.png)
 
    > [!TIP]
    > (Somente C#) Use a opção **Implementar interface explicitamente** para prefixar cada método gerado com o nome da interface a fim de evitar colisões de nome.
