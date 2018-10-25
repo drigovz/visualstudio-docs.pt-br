@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdb02ccb4e1b32904e9423a0f851b538144d6f29
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1a3b766e4eacc04bbf4d4a8e4c022484d452954f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497648"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820870"
 ---
 # <a name="how-to-use-text-markers"></a>Como: usar marcadores de texto
 Marcadores de texto podem ser aplicadas para editar um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> objeto.  
@@ -41,19 +41,19 @@ Marcadores de texto podem ser aplicadas para editar um <xref:Microsoft.VisualStu
   
 ### <a name="to-add-features-to-text-markers"></a>Para adicionar recursos a marcadores de texto  
   
-1.  Ele pode ser desejável para adicionar recursos adicionais a um marcador de texto, como dicas de ferramenta, um menu de contexto especial ou manipulador para circunstâncias especiais. Para fazer isso:  
+1. Ele pode ser desejável para adicionar recursos adicionais a um marcador de texto, como dicas de ferramenta, um menu de contexto especial ou manipulador para circunstâncias especiais. Para fazer isso:  
   
-2.  Criar um objeto que implementa o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface.  
+2. Criar um objeto que implementa o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface.  
   
-3.  Se a funcionalidade adicional for desejada, implemente a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>e o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced> interfaces no mesmo objeto que implementa o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface.  
+3. Se a funcionalidade adicional for desejada, implemente a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>e o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced> interfaces no mesmo objeto que implementa o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface.  
   
-4.  Passe o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface que você cria, para a chamada para o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> método ou o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> método usado para aplicar o marcador de texto para uma determinada região do texto.  
+4. Passe o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface que você cria, para a chamada para o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> método ou o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> método usado para aplicar o marcador de texto para uma determinada região do texto.  
   
-5.  Ao adicionar o suporte do menu de contexto a uma região de marcador de texto é necessário criar o menu.  
+5. Ao adicionar o suporte do menu de contexto a uma região de marcador de texto é necessário criar o menu.  
   
-     Para obter mais informações sobre como criar um contexto menu, consulte [menus de contexto](../extensibility/context-menus.md).  
+    Para obter mais informações sobre como criar um contexto menu, consulte [menus de contexto](../extensibility/context-menus.md).  
   
-6.  O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente chama os métodos das interfaces fornecidas, tais como o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A> método, ou o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> método conforme necessário.  
+6. O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente chama os métodos das interfaces fornecidas, tais como o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A> método, ou o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> método conforme necessário.  
   
 ## <a name="see-also"></a>Consulte também  
  [Usar marcadores de texto com a API herdada](../extensibility/using-text-markers-with-the-legacy-api.md)   

@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f031e81911c9a36cd2c48abf7bd2b092bb5940f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289569"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886273"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Executar aplicativos da Windows Store em um computador remoto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
   
  [Configurando o projeto do Visual Studio para depuração remota](#BKMK_ConnectVS)  
   
--   [Escolhendo o dispositivo remoto para projetos c# e Visual Basic](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
+- [Escolhendo o dispositivo remoto para projetos c# e Visual Basic](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
   
--   [Escolhendo o dispositivo remoto para projetos em JavaScript e C++](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
+- [Escolhendo o dispositivo remoto para projetos em JavaScript e C++](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
   
- [Execução de uma sessão de depuração remota](#BKMK_RunRemoteDebug)  
+  [Execução de uma sessão de depuração remota](#BKMK_RunRemoteDebug)  
   
 ##  <a name="BKMK_Prerequisites"></a> Pré-requisitos  
  Para depurar em um dispositivo remoto:  
@@ -123,20 +123,20 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
 ##  <a name="BKMK_ConfigureRemoteDebugger"></a> Configurando o depurador remoto  
  São usadas duas ferramentas para modificar a configuração do depurador remoto.  
   
-1.  Sobre o **ferramentas** menu da **Visual Studio Remote Debugging Monitor**:  
+1. Sobre o **ferramentas** menu da **Visual Studio Remote Debugging Monitor**:  
   
-    1.  Escolher **opções** para alterar o número da porta, o modo de autenticação ou o intervalo de tempo limite do depurador remoto.  
+   1.  Escolher **opções** para alterar o número da porta, o modo de autenticação ou o intervalo de tempo limite do depurador remoto.  
   
-    2.  Escolher **permissões** para adicionar ou remover usuários que têm permissão para depuração remota.  
+   2.  Escolher **permissões** para adicionar ou remover usuários que têm permissão para depuração remota.  
   
-        > [!NOTE]
-        >  As permissões devem ser concedidas a cada conta de usuário que depurar remotamente.  
+       > [!NOTE]
+       >  As permissões devem ser concedidas a cada conta de usuário que depurar remotamente.  
   
- Você usa o **Assistente de configuração do depurador remoto** para definir opções avançadas para o depurador remoto. Para abrir o assistente, escolha **Assistente de configuração do depurador remoto** na tela inicial.  
+   Você usa o **Assistente de configuração do depurador remoto** para definir opções avançadas para o depurador remoto. Para abrir o assistente, escolha **Assistente de configuração do depurador remoto** na tela inicial.  
   
-1.  Sobre o **configurar o depurador remoto do Visual Studio** página, que você pode optar por executar o depurador remoto como um serviço. Na maioria dos casos, não é obrigatória a execução como um serviço.  
+2. Sobre o **configurar o depurador remoto do Visual Studio** página, que você pode optar por executar o depurador remoto como um serviço. Na maioria dos casos, não é obrigatória a execução como um serviço.  
   
-2.  Sobre o **configurar o Firewall do Windows para depuração** página, você pode adicionar ou remover o tipo de rede que você deseja que o depurador remoto para se conectar ao. Somente as redes às quais o dispositivo está conectado no momento estão habilitadas. Você deve escolher pelo menos uma rede.  
+3. Sobre o **configurar o Firewall do Windows para depuração** página, você pode adicionar ou remover o tipo de rede que você deseja que o depurador remoto para se conectar ao. Somente as redes às quais o dispositivo está conectado no momento estão habilitadas. Você deve escolher pelo menos uma rede.  
   
 ##  <a name="BKMK_ConnectVS"></a> Configurando o projeto do Visual Studio para depuração remota  
  Você especifica o dispositivo remoto ao qual deseja se conectar nas propriedades do projeto. O procedimento varia dependendo da linguagem de programação. Você pode digitar o nome da rede do dispositivo remoto ou pode selecioná-lo na caixa de diálogo Selecionar Conexão de Depurador Remoto.  

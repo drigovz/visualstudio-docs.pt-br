@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 30c1a0add4dcb10b5b202b43b791c27a7c14640c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 841311af90ddf4bedfb9d055e5764068cdc71632
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305338"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859701"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Ferramentas de dados do Visual Studio para .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Visual Studio e o .NET Framework juntos fornecem API abrangente e suporte a ferr
   
  O fluxo de trabalho típico é o seguinte:  
   
-1.  Instale um desenvolvimento ou teste de banco de dados em seu computador local. Ver [instalando sistemas de banco de dados, ferramentas e exemplos](../data-tools/installing-database-systems-tools-and-samples.md). Se você estiver usando um serviço de dados do Azure, essa etapa não é necessária.  
+1. Instale um desenvolvimento ou teste de banco de dados em seu computador local. Ver [instalando sistemas de banco de dados, ferramentas e exemplos](../data-tools/installing-database-systems-tools-and-samples.md). Se você estiver usando um serviço de dados do Azure, essa etapa não é necessária.  
   
-2.  Teste a conexão ao banco de dados (ou serviço ou arquivo local) no Visual Studio. Ver [adicionar novas conexões](../data-tools/add-new-connections.md).  
+2. Teste a conexão ao banco de dados (ou serviço ou arquivo local) no Visual Studio. Ver [adicionar novas conexões](../data-tools/add-new-connections.md).  
   
-3.  (Opcional) Use as ferramentas para gerar e configurar um novo modelo. Modelos com base no Entity Framework são a recomendação padrão para novos aplicativos. O modelo, seja qual for o que você utiliza, é a fonte de dados que o aplicativo interage com. O modelo logicamente fica entre o banco de dados ou serviço e o aplicativo.  Ver [adicionar novas fontes de dados](../data-tools/add-new-data-sources.md).  
+3. (Opcional) Use as ferramentas para gerar e configurar um novo modelo. Modelos com base no Entity Framework são a recomendação padrão para novos aplicativos. O modelo, seja qual for o que você utiliza, é a fonte de dados que o aplicativo interage com. O modelo logicamente fica entre o banco de dados ou serviço e o aplicativo.  Ver [adicionar novas fontes de dados](../data-tools/add-new-data-sources.md).  
   
-4.  Arraste a fonte de dados do **fontes de dados** janela na superfície de design do Windows Forms, ASP.NET ou Windows Presentation Foundation para gerar o código de associação de dados que exibirá os dados para o usuário da maneira que você especificar. Ver [associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
+4. Arraste a fonte de dados do **fontes de dados** janela na superfície de design do Windows Forms, ASP.NET ou Windows Presentation Foundation para gerar o código de associação de dados que exibirá os dados para o usuário da maneira que você especificar. Ver [associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
-5.  Adicione código personalizado para coisas como as regras de negócio, pesquisa e validação de dados, ou para tirar proveito da funcionalidade personalizada que expõe o banco de dados subjacente.  
+5. Adicione código personalizado para coisas como as regras de negócio, pesquisa e validação de dados, ou para tirar proveito da funcionalidade personalizada que expõe o banco de dados subjacente.  
   
- Você pode ignorar a etapa 3 e programar um aplicativo .NET para emitir comandos diretamente para um banco de dados, em vez de usar um modelo. Nesse caso, você encontrará a documentação relevante aqui: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). Observe que você ainda pode usar o Assistente de configuração de fonte de dados e designers para gerar o código de associação de dados ao popular seus próprios objetos na memória e, em seguida, vincular dados em controles de interface do usuário a esses objetos.  
+   Você pode ignorar a etapa 3 e programar um aplicativo .NET para emitir comandos diretamente para um banco de dados, em vez de usar um modelo. Nesse caso, você encontrará a documentação relevante aqui: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). Observe que você ainda pode usar o Assistente de configuração de fonte de dados e designers para gerar o código de associação de dados ao popular seus próprios objetos na memória e, em seguida, vincular dados em controles de interface do usuário a esses objetos.  
   
 ## <a name="in-this-section"></a>Nesta seção  
   

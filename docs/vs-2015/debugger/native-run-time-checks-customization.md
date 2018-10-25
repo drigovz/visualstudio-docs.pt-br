@@ -31,31 +31,31 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 906aca3071c9abc6bd06ac1f0dc4d75bd1920a61
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 396778e87732d73462a7ecc2a420ea22a00936b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300879"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856594"
 ---
 # <a name="native-run-time-checks-customization"></a>Personalização das verificações de tempo de execução nativas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando você compila com **/RTC** (verificações de tempo de execução) ou usar o `runtime_checks` pragma, a biblioteca de tempo de execução C fornece verificações de tempo de execução nativas. Em alguns casos, você pode personalizar a verificação de tempo de execução:  
   
--   Para rotear mensagens de verificação de tempo de execução para um arquivo ou destino diferente do padrão.  
+- Para rotear mensagens de verificação de tempo de execução para um arquivo ou destino diferente do padrão.  
   
--   Para especificar um destino de saída para mensagens de verificação de tempo de execução em um depurador de terceiros.  
+- Para especificar um destino de saída para mensagens de verificação de tempo de execução em um depurador de terceiros.  
   
--   Para reportar mensagens de verificação de tempo de execução de um programa compilado com uma versão lançada da biblioteca em tempo de execução C. As versões de lançamento da biblioteca não usam `_CrtDbgReportW` para reportar erros em tempo de execução. Em vez disso, eles exibem um **Assert** caixa de diálogo para cada erro de tempo de execução.  
+- Para reportar mensagens de verificação de tempo de execução de um programa compilado com uma versão lançada da biblioteca em tempo de execução C. As versões de lançamento da biblioteca não usam `_CrtDbgReportW` para reportar erros em tempo de execução. Em vez disso, eles exibem um **Assert** caixa de diálogo para cada erro de tempo de execução.  
   
- Para personalizar a verificação de erro em tempo de execução, você pode:  
+  Para personalizar a verificação de erro em tempo de execução, você pode:  
   
--   Escreva uma função de relatório de erro de tempo de execução. Para obter mais informações, consulte [como: gravar uma função de relatório de erro de tempo de execução](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
+- Escreva uma função de relatório de erro de tempo de execução. Para obter mais informações, consulte [como: gravar uma função de relatório de erro de tempo de execução](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
   
--   Personalize o destino da mensagem de erro.  
+- Personalize o destino da mensagem de erro.  
   
--   Consulte para obter informações sobre erros de verificação de tempo de execução.  
+- Consulte para obter informações sobre erros de verificação de tempo de execução.  
   
 ## <a name="customize-the-error-message-destination"></a>Personalize o destino da mensagem de erro  
  Se você usar `_CrtDbgReportW` para reportar erros, poderá usar `_CrtSetReportMode` para especificar o destino das mensagens de erro.  

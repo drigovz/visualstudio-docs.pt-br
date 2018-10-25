@@ -30,12 +30,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa414aacc8b7ffc39132157686abee860cac994c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cdefbbc16021931e3d31dd2d46f4e6509c4dd17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287749"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907580"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Como usar a Janela de Desmontagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,23 +46,23 @@ Esse recurso está disponível somente se a depuração do nível de endereços 
   
  Além de instruções de assembly, o **desmontagem** janela pode mostrar as seguintes informações opcionais:  
   
--   Endereço de memória onde cada instrução está localizada. Para aplicativos nativos, este é o endereço de memória real. Para o Visual Basic, C# ou código gerenciado, é um deslocamento do início da função.  
+- Endereço de memória onde cada instrução está localizada. Para aplicativos nativos, este é o endereço de memória real. Para o Visual Basic, C# ou código gerenciado, é um deslocamento do início da função.  
   
--   O código-fonte do qual o código do assembly deriva.  
+- O código-fonte do qual o código do assembly deriva.  
   
--   As representações byte a byte de código do computador real ou instruções de MSIL.  
+- As representações byte a byte de código do computador real ou instruções de MSIL.  
   
--   Nomes do símbolo para os endereços de memória.  
+- Nomes do símbolo para os endereços de memória.  
   
--   Números de linha que correspondem ao código-fonte.  
+- Números de linha que correspondem ao código-fonte.  
   
- As instruções da linguagem de assembly consistem em mnemônica, que são abreviações para nomes de instrução e símbolos que representam variáveis, registros e constantes. Cada instrução de linguagem de máquina é representada por um mnemônico de assembly da linguagem, geralmente seguido por uma ou mais variáveis, registros ou constantes.  
+  As instruções da linguagem de assembly consistem em mnemônica, que são abreviações para nomes de instrução e símbolos que representam variáveis, registros e constantes. Cada instrução de linguagem de máquina é representada por um mnemônico de assembly da linguagem, geralmente seguido por uma ou mais variáveis, registros ou constantes.  
   
- Se você não puder ler a linguagem assembly e quiser aproveitar a janela Desmontagem, consulte um bom livro sobre programação da linguagem de assembly. A programação da linguagem de assembly está além do escopo do que podemos abordar nesta breve introdução à janela Desmontagem.  
+  Se você não puder ler a linguagem assembly e quiser aproveitar a janela Desmontagem, consulte um bom livro sobre programação da linguagem de assembly. A programação da linguagem de assembly está além do escopo do que podemos abordar nesta breve introdução à janela Desmontagem.  
   
- Como o código do assembly depende intensamente dos registros do processador ou, no caso do código gerenciado, os registros do Common Language Runtime, você normalmente achará útil usar a janela Desmontagem junto com a janela Registros, o que permite examinar o conteúdo do registro.  
+  Como o código do assembly depende intensamente dos registros do processador ou, no caso do código gerenciado, os registros do Common Language Runtime, você normalmente achará útil usar a janela Desmontagem junto com a janela Registros, o que permite examinar o conteúdo do registro.  
   
- Você provavelmente jamais desejará ou precisará exibir instruções de código de máquina em seu formato bruto e numérico, em vez da linguagem de assembly. No entanto, se quiser fazer isso, poderá usar a janela Memória para essa finalidade ou escolher Bytes de Código no menu de atalho na janela Desmontagem.  
+  Você provavelmente jamais desejará ou precisará exibir instruções de código de máquina em seu formato bruto e numérico, em vez da linguagem de assembly. No entanto, se quiser fazer isso, poderá usar a janela Memória para essa finalidade ou escolher Bytes de Código no menu de atalho na janela Desmontagem.  
   
 > [!NOTE]
 >  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

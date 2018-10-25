@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1888e2244182296ad2c5375d0055583dda69e592
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b745a9e74fd4016db60883b06091a33c6d30d52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944967"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860663"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Como exibir, salvar e configurar arquivos de log de build
 
@@ -44,7 +44,7 @@ Se você compilar qualquer tipo de projeto usando o MSBuild, é possível criar 
 3.  Na lista **Detalhamento da saída de build do projeto no MSBuild**, escolha um dos seguintes valores e, em seguida, escolha o botão **OK**.
 
     |Nível de detalhes|Descrição|
-    |---------------------|-----------------|
+    | - |-----------------|
     |**Silencioso**|Exibe apenas um resumo do build.|
     |**Mínima**|Exibe um resumo do build e dos erros, avisos e mensagens categorizadas como altamente importantes.|
     |**Normal**|Exibe um resumo do build; erros, avisos e mensagens categorizados como altamente importantes; e as principais etapas do build. Use esse nível de detalhes com mais frequência.|
@@ -60,4 +60,4 @@ Se você compilar qualquer tipo de projeto usando o MSBuild, é possível criar 
 
 - [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Criar e limpar projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Compilar e criar](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)

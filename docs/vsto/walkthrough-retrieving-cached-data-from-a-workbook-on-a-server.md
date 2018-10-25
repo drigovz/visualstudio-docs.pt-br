@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb7cb76c471681fe49e5ea6957cd94f9829c64db
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 255121bb7dd504ecd96d05fb6257c3b2edeb96ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816957"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Passo a passo: Recuperar dados armazenados em cache de uma pasta de trabalho em um servidor
   Este passo a passo demonstra como recuperar dados de um conjunto de dados é armazenado em cache em uma pasta de trabalho do Microsoft Office Excel sem iniciar o Excel usando o <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.  
@@ -33,17 +33,17 @@ ms.locfileid: "35670053"
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Definindo um conjunto de dados que contém dados a partir de *AdventureWorksLT* banco de dados.  
+- Definindo um conjunto de dados que contém dados a partir de *AdventureWorksLT* banco de dados.  
   
--   Criação de instâncias do conjunto de dados em um projeto de pasta de trabalho do Excel e um projeto de aplicativo de console.  
+- Criação de instâncias do conjunto de dados em um projeto de pasta de trabalho do Excel e um projeto de aplicativo de console.  
   
--   Criando um <xref:Microsoft.Office.Tools.Excel.ListObject> que é associada ao conjunto de dados na pasta de trabalho e preencher o <xref:Microsoft.Office.Tools.Excel.ListObject> com os dados quando a pasta de trabalho é aberta.  
+- Criando um <xref:Microsoft.Office.Tools.Excel.ListObject> que é associada ao conjunto de dados na pasta de trabalho e preencher o <xref:Microsoft.Office.Tools.Excel.ListObject> com os dados quando a pasta de trabalho é aberta.  
   
--   Adicionando o conjunto de dados na pasta de trabalho para o cache de dados.  
+- Adicionando o conjunto de dados na pasta de trabalho para o cache de dados.  
   
--   Leitura de dados do conjunto de dados armazenados em cache no conjunto de dados no aplicativo de console sem iniciar o Excel.  
+- Leitura de dados do conjunto de dados armazenados em cache no conjunto de dados no aplicativo de console sem iniciar o Excel.  
   
- Embora este passo a passo pressupõe que você está executando o código no computador de desenvolvimento, o código demonstrado por este passo a passo pode ser usado em um servidor que não tenha o Excel instalado.  
+  Embora este passo a passo pressupõe que você está executando o código no computador de desenvolvimento, o código demonstrado por este passo a passo pode ser usado em um servidor que não tenha o Excel instalado.  
   
 > [!NOTE]  
 >  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
@@ -93,29 +93,29 @@ ms.locfileid: "35670053"
   
 ### <a name="define-a-typed-dataset-in-the-class-library-project"></a>Definir um conjunto de dados tipado no projeto de biblioteca de classes  
   
-1.  Na **Gerenciador de soluções**, clique no **AdventureWorksDataSet** projeto.  
+1. Na **Gerenciador de soluções**, clique no **AdventureWorksDataSet** projeto.  
   
-2.  Se o **fontes de dados** janela não estiver visível, exibi-lo, na barra de menus, escolhendo **exibição** > **Other Windows**  >   **Fontes de dados**.  
+2. Se o **fontes de dados** janela não estiver visível, exibi-lo, na barra de menus, escolhendo **exibição** > **Other Windows**  >   **Fontes de dados**.  
   
-3.  Escolher **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.  
+3. Escolher **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.  
   
-4.  Clique em **banco de dados**e, em seguida, clique em **próxima**.  
+4. Clique em **banco de dados**e, em seguida, clique em **próxima**.  
   
-5.  Se você tiver uma conexão existente no banco de dados AdventureWorksLT, escolha essa conexão e clique em **próxima**.  
+5. Se você tiver uma conexão existente no banco de dados AdventureWorksLT, escolha essa conexão e clique em **próxima**.  
   
-     Caso contrário, clique em **nova Conexão**e usar o **Adicionar Conexão** caixa de diálogo para criar a nova conexão. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).  
+    Caso contrário, clique em **nova Conexão**e usar o **Adicionar Conexão** caixa de diálogo para criar a nova conexão. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).  
   
-6.  No **salvar a cadeia de Conexão no arquivo de configuração de aplicativo** , clique em **próxima**.  
+6. No **salvar a cadeia de Conexão no arquivo de configuração de aplicativo** , clique em **próxima**.  
   
-7.  No **Choose Your Database Objects** página, expanda **tabelas** e selecione **produto (SalesLT)**.  
+7. No **Choose Your Database Objects** página, expanda **tabelas** e selecione **produto (SalesLT)**.  
   
-8.  Clique em **Finalizar**.  
+8. Clique em **Finalizar**.  
   
-     O *Adventureworksltdataset* arquivo é adicionado para o **AdventureWorksDataSet** projeto. Esse arquivo define os seguintes itens:  
+    O *Adventureworksltdataset* arquivo é adicionado para o **AdventureWorksDataSet** projeto. Esse arquivo define os seguintes itens:  
   
-    -   Um dataset tipado chamado `AdventureWorksLTDataSet`. Esse conjunto de dados representa o conteúdo da tabela Produtos no banco de dados AdventureWorksLT.  
+   - Um dataset tipado chamado `AdventureWorksLTDataSet`. Esse conjunto de dados representa o conteúdo da tabela Produtos no banco de dados AdventureWorksLT.  
   
-    -   Um TableAdapter nomeado `ProductTableAdapter`. Este TableAdapter pode ser usado para ler e gravar dados no `AdventureWorksLTDataSet`. Para obter mais informações, consulte [visão geral de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
+   - Um TableAdapter nomeado `ProductTableAdapter`. Este TableAdapter pode ser usado para ler e gravar dados no `AdventureWorksLTDataSet`. Para obter mais informações, consulte [visão geral de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
   
      Você usará dois desses objetos posteriormente neste passo a passo.  
   
@@ -236,44 +236,44 @@ ms.locfileid: "35670053"
   
 ### <a name="retrieve-data-from-the-cached-dataset"></a>Recuperar dados do conjunto de dados armazenados em cache  
   
-1.  No **Gerenciador de soluções**, clique com botão direito do **DataReader** do projeto e clique em **adicionar referência**.  
+1. No **Gerenciador de soluções**, clique com botão direito do **DataReader** do projeto e clique em **adicionar referência**.  
   
-2.  Sobre o **.NET** guia, selecione **ServerDocument**.  
+2. Sobre o **.NET** guia, selecione **ServerDocument**.  
   
-3.  Clique em **OK**.  
+3. Clique em **OK**.  
   
-4.  No **Gerenciador de soluções**, clique com botão direito do **DataReader** do projeto e clique em **adicionar referência**.  
+4. No **Gerenciador de soluções**, clique com botão direito do **DataReader** do projeto e clique em **adicionar referência**.  
   
-5.  Sobre o **projetos** guia, selecione **AdventureWorksDataSet**e clique em **Okey**.  
+5. Sobre o **projetos** guia, selecione **AdventureWorksDataSet**e clique em **Okey**.  
   
-6.  Abra o *Program.cs* ou *Module1.vb* arquivo no editor de códigos.  
+6. Abra o *Program.cs* ou *Module1.vb* arquivo no editor de códigos.  
   
-7.  Adicione o seguinte **usando** (para c#) ou **Imports** (para Visual Basic) à parte superior do arquivo de código.  
+7. Adicione o seguinte **usando** (para c#) ou **Imports** (para Visual Basic) à parte superior do arquivo de código.  
   
-     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
-     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]  
+    [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
+    [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]  
   
-8.  Adicione o seguinte código ao método de `Main` . Esse código declara os seguintes objetos:  
+8. Adicione o seguinte código ao método de `Main` . Esse código declara os seguintes objetos:  
   
-    -   Uma instância das `AdventureWorksLTDataSet` tipo que é definido na **AdventureWorksDataSet** projeto.  
+   - Uma instância das `AdventureWorksLTDataSet` tipo que é definido na **AdventureWorksDataSet** projeto.  
   
-    -   O caminho para a pasta de trabalho na pasta de compilação de AdventureWorksReport a **AdventureWorksReport** projeto.  
+   - O caminho para a pasta de trabalho na pasta de compilação de AdventureWorksReport a **AdventureWorksReport** projeto.  
   
-    -   Um <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> objeto a ser usado para acessar o cache de dados na pasta de trabalho.  
+   - Um <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> objeto a ser usado para acessar o cache de dados na pasta de trabalho.  
   
-        > [!NOTE]  
-        >  O código a seguir pressupõe que a pasta de trabalho é salvo usando o *. xlsx* extensão. Se a pasta de trabalho em seu projeto tem uma extensão diferente, modifique o caminho conforme necessário.  
+     > [!NOTE]  
+     >  O código a seguir pressupõe que a pasta de trabalho é salvo usando o *. xlsx* extensão. Se a pasta de trabalho em seu projeto tem uma extensão diferente, modifique o caminho conforme necessário.  
   
      [!code-csharp[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#10)]
      [!code-vb[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#10)]  
   
 9. Adicione o seguinte código para o `Main` método após o código que você adicionou na etapa anterior. Esse código executa as seguintes tarefas:  
   
-    -   Ele usa o <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> propriedade do <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe para acessar o conjunto de dados armazenados em cache na pasta de trabalho.  
+   - Ele usa o <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> propriedade do <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe para acessar o conjunto de dados armazenados em cache na pasta de trabalho.  
   
-    -   Ele lê os dados do conjunto de dados armazenados em cache no conjunto de dados local.  
+   - Ele lê os dados do conjunto de dados armazenados em cache no conjunto de dados local.  
   
-    -   Ele exibe o número de linhas no conjunto de dados local para confirmar que ele tem dados.  
+   - Ele exibe o número de linhas no conjunto de dados local para confirmar que ele tem dados.  
   
      [!code-csharp[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#11)]
      [!code-vb[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#11)]  

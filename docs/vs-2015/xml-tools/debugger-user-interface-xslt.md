@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0117053e47ee9238ee225b9265865b34c6f2140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300177"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891839"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface de usuário do depurador (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,13 +90,13 @@ Este tópico descreve as janelas e caixas de diálogo do depurador. Discute some
   
  A lista a seguir descreve algumas restrições na avaliação de expressão XPath.  
   
--   Somente as funções internas XPath são permitidas.  
+- Somente as funções internas XPath são permitidas.  
   
--   XSLT interno funciona como `document()`, `key()`, não é permitido, e assim por diante.  
+- XSLT interno funciona como `document()`, `key()`, não é permitido, e assim por diante.  
   
--   As funções definidas pelo usuário não são permitidas.  
+- As funções definidas pelo usuário não são permitidas.  
   
- Para obter mais informações, consulte [como: avaliar uma expressão XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
+  Para obter mais informações, consulte [como: avaliar uma expressão XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
   
 ## <a name="disassembly-window"></a>A janela de desmontagem  
  A janela de desmontagem mostra o código do assembly que é gerado pelo compilador XSLT. Esta janela pode ser usada da mesma forma como quaisquer outras janelas de desmontagem do Visual Studio.  

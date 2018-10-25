@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 94b1b46ce7d2843c733e1baf13f12672c98a3989
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851602"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Como criar um adaptador de dados de diagnóstico
 
@@ -33,7 +33,7 @@ Para criar um *adaptador de dados de diagnóstico*, crie uma biblioteca de class
  A seguir está uma lista parcial dos principais eventos que você pode usar ao criar seu adaptador de dados de diagnóstico. Para obter uma lista completa de eventos do adaptador de dados de diagnóstico, consulte a classe abstrata <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>.
 
 |evento|Descrição|
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Início da execução do teste|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Fim da execução do teste|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseStart>|Início de cada teste na execução de testes|
@@ -52,78 +52,78 @@ Para criar um *adaptador de dados de diagnóstico*, crie uma biblioteca de class
 
 ### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Para criar e instalar um adaptador de dados de diagnóstico
 
-1.  Criar uma nova biblioteca de classes.
+1. Criar uma nova biblioteca de classes.
 
-    1.  No menu **Arquivo**, selecione **Novo** e aponte para **Novo projeto**.
+   1.  No menu **Arquivo**, selecione **Novo** e aponte para **Novo projeto**.
 
-    2.  De **Tipos de projeto**, selecione a linguagem a ser usada.
+   2.  De **Tipos de projeto**, selecione a linguagem a ser usada.
 
-    3.  Em **Modelos instalados do Visual Studio**, clique em **Biblioteca de Classes**.
+   3.  Em **Modelos instalados do Visual Studio**, clique em **Biblioteca de Classes**.
 
-    4.  Digite um nome para o adaptador de dados de diagnóstico.
+   4.  Digite um nome para o adaptador de dados de diagnóstico.
 
-    5.  Escolha **OK**.
+   5.  Escolha **OK**.
 
-2.  Adicione o assembly **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
+2. Adicione o assembly **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-    1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e escolha o comando **Adicionar Referência**.
+   1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e escolha o comando **Adicionar Referência**.
 
-    2.  Escolha **.NET** e localize **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
+   2.  Escolha **.NET** e localize **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-    3.  Escolha **OK**.
+   3.  Escolha **OK**.
 
-3.  Adicione o assembly **Microsoft.VisualStudio.QualityTools.Common**.
+3. Adicione o assembly **Microsoft.VisualStudio.QualityTools.Common**.
 
-    1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e selecione o comando **Adicionar Referência**.
+   1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e selecione o comando **Adicionar Referência**.
 
-    2.  Escolha **.NET** e localize **Microsoft.VisualStudio.QualityTools.Common.dll**.
+   2.  Escolha **.NET** e localize **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-    3.  Escolha **OK**.
+   3.  Escolha **OK**.
 
-4.  Adicione as seguintes instruções `using` para seu arquivo de classe:
+4. Adicione as seguintes instruções `using` para seu arquivo de classe:
 
-    ```csharp
-    using Microsoft.VisualStudio.TestTools.Common;
-    using Microsoft.VisualStudio.TestTools.Execution;
-    using System.Linq;
-    using System.Text;
-    using System.Xml;
-    using System;
-    ```
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.Common;
+   using Microsoft.VisualStudio.TestTools.Execution;
+   using System.Linq;
+   using System.Text;
+   using System.Xml;
+   using System;
+   ```
 
-5.  Adicione <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> à classe do seu adaptador de dados de diagnóstico para identificá-la como um adaptador de dados de diagnóstico, substituindo **Empresa**, **Produto** e **Versão** pelas informações apropriadas do seu adaptador de dados de diagnóstico:
+5. Adicione <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> à classe do seu adaptador de dados de diagnóstico para identificá-la como um adaptador de dados de diagnóstico, substituindo **Empresa**, **Produto** e **Versão** pelas informações apropriadas do seu adaptador de dados de diagnóstico:
 
-    ```csharp
-    [DataCollectorTypeUri("datacollector://Company/Product/Version")]
-    ```
+   ```csharp
+   [DataCollectorTypeUri("datacollector://Company/Product/Version")]
+   ```
 
-6.  Adicione o atributo de <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> à classe, substituindo os parâmetros pelas informações apropriadas para o adaptador de dados de diagnóstico:
+6. Adicione o atributo de <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> à classe, substituindo os parâmetros pelas informações apropriadas para o adaptador de dados de diagnóstico:
 
-    ```csharp
-    [DataCollectorFriendlyName("Collect Log Files", false)]
-    ```
+   ```csharp
+   [DataCollectorFriendlyName("Collect Log Files", false)]
+   ```
 
-     Este nome amigável é exibido na atividade de configurações de teste.
+    Este nome amigável é exibido na atividade de configurações de teste.
 
-    > [!NOTE]
-    > Você também pode adicionar <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> para especificar `Type` do editor de configuração personalizada para este adaptador de dados, e opcionalmente para especificar o arquivo de ajuda para usar o editor.
-    >
-    > Você também pode aplicar <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> para especificar que ele sempre deve ser ativado.
+   > [!NOTE]
+   > Você também pode adicionar <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> para especificar `Type` do editor de configuração personalizada para este adaptador de dados, e opcionalmente para especificar o arquivo de ajuda para usar o editor.
+   >
+   > Você também pode aplicar <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> para especificar que ele sempre deve ser ativado.
 
-7.  A classe do adaptador de dados de diagnóstico deve herdar da classe de <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> como segue:
+7. A classe do adaptador de dados de diagnóstico deve herdar da classe de <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> como segue:
 
-    ```csharp
-    public class MyDiagnosticDataAdapter : DataCollector
-    ```
+   ```csharp
+   public class MyDiagnosticDataAdapter : DataCollector
+   ```
 
-8.  Adicione as variáveis locais como a seguir:
+8. Adicione as variáveis locais como a seguir:
 
-    ```csharp
-    private DataCollectionEvents dataEvents;
-    private DataCollectionLogger dataLogger;
-    private DataCollectionSink dataSink;
-    private XmlElement configurationSettings;
-    ```
+   ```csharp
+   private DataCollectionEvents dataEvents;
+   private DataCollectionLogger dataLogger;
+   private DataCollectionSink dataSink;
+   private XmlElement configurationSettings;
+   ```
 
 9. Adicione o método de <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector.Initialize*> e um método **Dispose**. No método `Initialize`, você inicializa o coletor de dados, quaisquer dados de configuração das configurações de teste e registra os manipuladores de eventos que deseja usar como segue:
 
@@ -273,7 +273,7 @@ Para criar um *adaptador de dados de diagnóstico*, crie uma biblioteca de class
 
 17. Execute seus testes usando as configurações de teste com o adaptador de dados de diagnóstico selecionado.
 
-   O arquivo de dados que você especificou está anexado aos resultados do teste.
+    O arquivo de dados que você especificou está anexado aos resultados do teste.
 
 ## <a name="see-also"></a>Consulte também
 

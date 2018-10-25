@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 015725197c2c269a7b6aed2e20f0159e2a9f2fe6
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c956da1df5507d2efecb3ff72f034d54fb377eb5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758553"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898402"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Como: adicionar uma propriedade a projetos do SharePoint
   Você pode usar uma extensão de projeto para adicionar uma propriedade para qualquer projeto do SharePoint. A propriedade aparece na **propriedades** janela quando o projeto está selecionado no **Gerenciador de soluções**.  
@@ -48,11 +48,11 @@ ms.locfileid: "36758553"
   
  Para manter as alterações feitas aos valores de propriedade, o **definir** acessadores para as propriedades de usam as seguintes APIs:  
   
--   `CustomUserFileProperty` usa o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> propriedade para salvar seu valor para o arquivo de opção de usuário do projeto.  
+- `CustomUserFileProperty` usa o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> propriedade para salvar seu valor para o arquivo de opção de usuário do projeto.  
   
--   `CustomProjectFileProperty` usa o <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> método para salvar seu valor para o arquivo de projeto.  
+- `CustomProjectFileProperty` usa o <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> método para salvar seu valor para o arquivo de projeto.  
   
- Para obter mais informações sobre como manter os dados nesses arquivos, consulte [salvar os dados nas extensões do sistema de projeto do SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+  Para obter mais informações sobre como manter os dados nesses arquivos, consulte [salvar os dados nas extensões do sistema de projeto do SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
 ### <a name="specify-the-behavior-of-custom-properties"></a>Especificar o comportamento de propriedades personalizadas  
  Você pode definir como uma propriedade personalizada é exibida e comporta-se a **propriedades** janela aplicando atributos do <xref:System.ComponentModel> namespace à definição da propriedade. Os seguintes atributos são úteis em muitos cenários:  

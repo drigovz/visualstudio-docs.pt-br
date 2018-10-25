@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b9641ccc9064f576f471c7e75d59c3d5b8f0db6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 473cc26a9d3e7b7bc5ec97d1608706aea2ca3009
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898714"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Adicionar uma propriedade de controle a uma definição de Linguagem Específica de Domínio
 
@@ -30,29 +30,30 @@ Por exemplo, nas ferramentas de linguagem específica do domínio (ferramentas D
 
 Este passo a passo, você criará uma linguagem específica de domínio (DSL) que tem uma propriedade que tem um valor padrão com base na propriedade de Namespace padrão do modelo de controle de Namespace. Para obter mais informações sobre propriedades de acompanhamento, consulte [definindo propriedades de controle](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
 
--   O suporte de ferramentas DSL descritores de propriedade de controle. No entanto, o designer DSL não pode ser usado para adicionar uma propriedade de acompanhamento para um idioma. Portanto, você deve adicionar código personalizado para definir e implementar a propriedade de controle.
+- O suporte de ferramentas DSL descritores de propriedade de controle. No entanto, o designer DSL não pode ser usado para adicionar uma propriedade de acompanhamento para um idioma. Portanto, você deve adicionar código personalizado para definir e implementar a propriedade de controle.
 
- Uma propriedade de controle tem dois estados: acompanhar e atualizada pelo usuário. Propriedades de controle têm os seguintes recursos:
+  Uma propriedade de controle tem dois estados: acompanhar e atualizada pelo usuário. Propriedades de controle têm os seguintes recursos:
 
--   Quando estiver no estado de controle, o valor da propriedade de acompanhamento é calculado e o valor é atualizado como outras propriedades na alteração do modelo.
+- Quando estiver no estado de controle, o valor da propriedade de acompanhamento é calculado e o valor é atualizado como outras propriedades na alteração do modelo.
 
--   Quando estiver sendo atualizado pelo estado do usuário, o valor da propriedade de acompanhamento retém o valor para o qual o usuário definido pela última vez a propriedade.
+- Quando estiver sendo atualizado pelo estado do usuário, o valor da propriedade de acompanhamento retém o valor para o qual o usuário definido pela última vez a propriedade.
 
--   No **propriedades** janela, o **redefinir** de comando para a propriedade de controle é habilitada apenas quando a propriedade está no atualizada pelo estado do usuário. O **redefinir** comando define a propriedade de controle de estado do controle.
+- No **propriedades** janela, o **redefinir** de comando para a propriedade de controle é habilitada apenas quando a propriedade está no atualizada pelo estado do usuário. O **redefinir** comando define a propriedade de controle de estado do controle.
 
--   No **propriedades** janela, quando a propriedade de controle está no estado de controle, seu valor é exibida em uma fonte normal.
+- No **propriedades** janela, quando a propriedade de controle está no estado de controle, seu valor é exibida em uma fonte normal.
 
--   No **propriedades** janela, quando a propriedade de controle está no atualizada por estado de usuário, seu valor é exibido em uma fonte em negrito.
+- No **propriedades** janela, quando a propriedade de controle está no atualizada por estado de usuário, seu valor é exibido em uma fonte em negrito.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Antes de começar este passo a passo, você deve primeiro instalar esses componentes:
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
+| [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581) |
 
 ## <a name="create-the-project"></a>Criar o projeto
 
@@ -718,33 +719,33 @@ Adicione código para dar suporte o comportamento de pós-carga personalizado pa
 
 A próxima etapa é criar e executar o designer DSL em uma nova instância de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] para que você possa verificar se a propriedade de controle está funcionando corretamente.
 
-1.  Sobre o **construir** menu, clique em **recompilar solução**.
+1. Sobre o **construir** menu, clique em **recompilar solução**.
 
-2.  No menu **Depuração**, clique em **Iniciar Depuração**.
+2. No menu **Depuração**, clique em **Iniciar Depuração**.
 
-     O build experimental do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] abre o **depuração** solução, que contém um arquivo de teste vazio.
+    O build experimental do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] abre o **depuração** solução, que contém um arquivo de teste vazio.
 
-3.  Na **Gerenciador de soluções**, duas vezes no arquivo Test.trackingPropertyDsl para abri-lo no designer e, em seguida, clique na superfície de design.
+3. Na **Gerenciador de soluções**, duas vezes no arquivo Test.trackingPropertyDsl para abri-lo no designer e, em seguida, clique na superfície de design.
 
-     Observe que, nos **propriedades** janela para o diagrama, o **Namespace padrão** é de propriedade **DefaultNamespace**e o **elementos personalizados** é de propriedade **0/0**.
+    Observe que, nos **propriedades** janela para o diagrama, o **Namespace padrão** é de propriedade **DefaultNamespace**e o **elementos personalizados** é de propriedade **0/0**.
 
-4.  Arraste uma **ExampleElement** elemento o **caixa de ferramentas** à superfície do diagrama.
+4. Arraste uma **ExampleElement** elemento o **caixa de ferramentas** à superfície do diagrama.
 
-5.  No **propriedades** janela para o elemento, selecione a **Namespace do elemento** propriedade e altere o valor de **DefaultNamespace** para  **OtherNamespace**.
+5. No **propriedades** janela para o elemento, selecione a **Namespace do elemento** propriedade e altere o valor de **DefaultNamespace** para  **OtherNamespace**.
 
-     Observe que o valor de **Namespace do elemento** agora é mostrado em negrito.
+    Observe que o valor de **Namespace do elemento** agora é mostrado em negrito.
 
-6.  No **propriedades** janela, clique com botão direito **Namespace do elemento**e, em seguida, clique em **redefinir**.
+6. No **propriedades** janela, clique com botão direito **Namespace do elemento**e, em seguida, clique em **redefinir**.
 
-     O valor da propriedade é alterado para **DefaultNamespace**, e o valor é mostrado em uma fonte normal.
+    O valor da propriedade é alterado para **DefaultNamespace**, e o valor é mostrado em uma fonte normal.
 
-     Clique com botão direito **Namespace do elemento** novamente. O **redefinir** comando agora está desabilitado porque a propriedade está atualmente em seu estado de acompanhamento.
+    Clique com botão direito **Namespace do elemento** novamente. O **redefinir** comando agora está desabilitado porque a propriedade está atualmente em seu estado de acompanhamento.
 
-7.  Arraste outro **ExampleElement** da **caixa de ferramentas** para a superfície do diagrama e altere seu **Namespace do elemento** para **OtherNamespace**.
+7. Arraste outro **ExampleElement** da **caixa de ferramentas** para a superfície do diagrama e altere seu **Namespace do elemento** para **OtherNamespace**.
 
-8.  Clique na superfície de design.
+8. Clique na superfície de design.
 
-     No **propriedades** janela para o diagrama, o valor de **elementos personalizados** agora está **1/2**.
+    No **propriedades** janela para o diagrama, o valor de **elementos personalizados** agora está **1/2**.
 
 9. Alteração **Namespace padrão** para o diagrama de **DefaultNamespace** para **NewNamespace**.
 

@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e14da45b7c4f6064685cc4dbd88cd26aca3b0ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bdae912e1eb43d3fa323850fa9dae35f2c56f18
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198374"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923206"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Como copiar elementos de diagrama de classe para um documento do Microsoft Office (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Você pode copiar formas de um diagrama de classe do .NET (arquivo .cd) para out
   
 ### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>Para copiar todos os elementos em um diagrama de classe  
   
-1.  Clique com o botão direito do mouse na superfície do diagrama e escolha **Selecionar tudo**. (Teclado: **Ctrl + A**)  
+1. Clique com o botão direito do mouse na superfície do diagrama e escolha **Selecionar tudo**. (Teclado: **Ctrl + A**)  
   
-2.  No menu **Editar**, selecione **Copiar Imagem**.  
+2. No menu **Editar**, selecione **Copiar Imagem**.  
   
- Você também pode escolher **Copiar** em vez de **Copiar Imagem**. **Copiar** copia a imagem como um bitmap regular. **Copiar Imagem** copia a imagem como uma imagem baseada em vetor, o que é melhor para a maioria dos aplicativos do Office.  
+   Você também pode escolher **Copiar** em vez de **Copiar Imagem**. **Copiar** copia a imagem como um bitmap regular. **Copiar Imagem** copia a imagem como uma imagem baseada em vetor, o que é melhor para a maioria dos aplicativos do Office.  
   
 ## <a name="see-also"></a>Consulte também  
  [Como imprimir diagramas de classe (Designer de Classe)](../ide/how-to-print-class-diagrams-class-designer.md)   

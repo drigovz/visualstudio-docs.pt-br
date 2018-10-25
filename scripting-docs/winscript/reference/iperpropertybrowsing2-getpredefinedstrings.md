@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e07d52eca9434acc7e54f3b35b111cf12af0a871
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a60225e69a04399a3ff0160291b84e9f3fda513c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729246"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915953"
 ---
 # <a name="iperpropertybrowsing2getpredefinedstrings"></a>IPerPropertyBrowsing2::GetPredefinedStrings
-Permite que o chamador preencher uma caixa de listagem com uma matriz de contado de ponteiros de cadeia de caracteres que representam os valores possíveis para essa propriedade.  
+Permite que o chamador preencher uma caixa de listagem com uma matriz contada de ponteiros de cadeia de caracteres que representam os valores possíveis para essa propriedade.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -43,10 +43,10 @@ HRESULT GetPredefinedStrings(
  [in] Identificador de expedição da propriedade para o qual o chamador está solicitando a lista de cadeia de caracteres.  
   
  `pCaStrings`  
- [out] Ponteiro para uma estrutura de matriz alocada pelo chamador, contado que contém a contagem do elemento e o endereço de uma matriz alocada pelo método de ponteiros de cadeia de caracteres. Se o método falhar, nenhuma memória é alocada e o conteúdo da estrutura é indefinido.  
+ [out] Ponteiro para uma estrutura de matriz alocada pelo chamador, contado que contém a contagem de elemento e o endereço de uma matriz alocada pelo método de ponteiros de cadeia de caracteres. Se o método falhar, nenhuma memória é alocada, e o conteúdo da estrutura é indefinido.  
   
  `pCaCookies`  
- [out] Ponteiro para a estrutura de matriz alocada pelo chamador, contado que contém a contagem do elemento e o endereço de uma matriz de DWORDs alocada pelo método. Se o método falhar, nenhuma memória é alocada e o conteúdo da estrutura é indefinido.  
+ [out] Ponteiro para a estrutura de matriz alocada pelo chamador, contado que contém a contagem de elemento e o endereço de uma matriz alocada pelo método de DWORDs. Se o método falhar, nenhuma memória é alocada, e o conteúdo da estrutura é indefinido.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Retorna um válidas `HRESULT`, normalmente `S_OK`.  

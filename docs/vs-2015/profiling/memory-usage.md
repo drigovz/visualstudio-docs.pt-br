@@ -14,29 +14,29 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f07c169b6c282b68c96c2e1c9be821ef4e00700
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a93caaf861c5118bf95651efbf41fcee1ef817e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846051"
 ---
 # <a name="memory-usage"></a>Uso de Memória
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Encontre vazamentos de memória e memória ineficiente enquanto estiver depurando com a ferramenta de diagnóstico **Uso de Memória** integrada ao depurador. A ferramenta Uso de Memória permite que você tire um ou mais *instantâneos* do heap de memória gerenciada e do heap de memória nativa. Você pode coletar instantâneos de aplicativos .NET, nativos ou mistos (.NET e nativos).  
   
--   É possível analisar um único instantâneo para compreender o impacto relativo dos tipos de objeto sobre o uso da memória e encontrar o código no aplicativo que usa a memória de maneira ineficiente.  
+- É possível analisar um único instantâneo para compreender o impacto relativo dos tipos de objeto sobre o uso da memória e encontrar o código no aplicativo que usa a memória de maneira ineficiente.  
   
--   Também é possível comparar (diff) dois instantâneos de um aplicativo para encontrar áreas no código que causam o aumento do uso da memória com o passar do tempo.  
+- Também é possível comparar (diff) dois instantâneos de um aplicativo para encontrar áreas no código que causam o aumento do uso da memória com o passar do tempo.  
   
- O gráfico a seguir mostra a janela **Ferramentas de Diagnóstico** no Visual Studio 2015 Atualização 1:  
+  O gráfico a seguir mostra a janela **Ferramentas de Diagnóstico** no Visual Studio 2015 Atualização 1:  
   
- ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
- Embora você possa coletar instantâneos de memória a qualquer momento na ferramenta **Uso de Memória**, pode usar o depurador do Visual Studio para controlar como o seu aplicativo é executado ao investigar problemas de desempenho. A definição de pontos de interrupção, passo a passo, Interromper Tudo e outras ações de depurador podem ajudá-lo a concentrar as investigações de desempenho nos caminhos de código mais relevantes. A execução dessas ações enquanto o aplicativo é executado pode eliminar o ruído do código que não lhe interessa e reduzir significativamente a quantidade de tempo que leva para diagnosticar um problema.  
+  Embora você possa coletar instantâneos de memória a qualquer momento na ferramenta **Uso de Memória**, pode usar o depurador do Visual Studio para controlar como o seu aplicativo é executado ao investigar problemas de desempenho. A definição de pontos de interrupção, passo a passo, Interromper Tudo e outras ações de depurador podem ajudá-lo a concentrar as investigações de desempenho nos caminhos de código mais relevantes. A execução dessas ações enquanto o aplicativo é executado pode eliminar o ruído do código que não lhe interessa e reduzir significativamente a quantidade de tempo que leva para diagnosticar um problema.  
   
- Você também pode usar a ferramenta de memória fora do depurador. Confira [Uso de memória sem depuração](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0).  
+  Você também pode usar a ferramenta de memória fora do depurador. Confira [Uso de memória sem depuração](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0).  
   
 > [!NOTE]
 >  **Suporte de alocador personalizado** O criador de perfil de memória nativa funciona com a coleta de dados de evento [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) de alocação emitidos durante o tempo de execução.  Os alocadores no CRT e no SDK do Windows foram anotados no nível de origem para que seus dados de alocação possam ser capturados.  Se você estiver escrevendo seus próprios alocadores, todas as funções que retornam um ponteiro para um heap de memória recém-alocada poderão ser decoradas com [declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(allocator), como visto neste exemplo de myMalloc:  
@@ -57,29 +57,29 @@ Encontre vazamentos de memória e memória ineficiente enquanto estiver depurand
  ![Tirar instantâneo](../profiling/media/dbgdiag-mem-mixedtoolbar-takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")  
   
 > [!TIP]
->  -   Para criar uma linha de base para comparações de memória, tire um instantâneo no início da sessão de depuração.  
-> -   Como pode ser um desafio capturar o perfil de memória de uma operação de seu interesse quando o aplicativo aloca e desaloca memória com frequência, defina pontos de interrupção no início e no final da operação ou percorra a operação para localizar o ponto exato em que a memória foi alterada.  
+> - Para criar uma linha de base para comparações de memória, tire um instantâneo no início da sessão de depuração.  
+>   -   Como pode ser um desafio capturar o perfil de memória de uma operação de seu interesse quando o aplicativo aloca e desaloca memória com frequência, defina pontos de interrupção no início e no final da operação ou percorra a operação para localizar o ponto exato em que a memória foi alterada.  
   
 ## <a name="viewing-memory-snapshot-details"></a>Exibindo detalhes do instantâneo de memória  
  As linhas da tabela de resumo Uso de Memória lista os instantâneos que você fez durante a sessão de depuração.  
   
  As colunas da linha dependem do modo de depuração escolhido nas propriedades do projeto: .NET, nativo ou misto (.NET e nativo).  
   
--   As colunas **Objetos Gerenciados** e **Alocações Nativas** exibem o número de objetos nas memórias .NET e nativa quando o instantâneo foi tirado.  
+- As colunas **Objetos Gerenciados** e **Alocações Nativas** exibem o número de objetos nas memórias .NET e nativa quando o instantâneo foi tirado.  
   
--   As colunas **Tamanho de Heap Gerenciado** e **Tamanho de Heap Nativo** exibem o número de bytes nos heaps .NET e nativos  
+- As colunas **Tamanho de Heap Gerenciado** e **Tamanho de Heap Nativo** exibem o número de bytes nos heaps .NET e nativos  
   
--   Quando você tira vários instantâneos, as células da tabela de resumo incluem a alteração no valor entre o instantâneo de linha e o instantâneo anterior.  
+- Quando você tira vários instantâneos, as células da tabela de resumo incluem a alteração no valor entre o instantâneo de linha e o instantâneo anterior.  
   
-     ![Célula da tabela de resumo de memória](../profiling/media/dbgdiag-mem-summarytablecell.png "DBGDIAG_MEM_SummaryTableCell")  
+   ![Célula da tabela de resumo de memória](../profiling/media/dbgdiag-mem-summarytablecell.png "DBGDIAG_MEM_SummaryTableCell")  
   
- **Para exibir um relatório de detalhes:**  
+  **Para exibir um relatório de detalhes:**  
   
--   Para exibir detalhes apenas do instantâneo selecionado, escolha o link atual.  
+- Para exibir detalhes apenas do instantâneo selecionado, escolha o link atual.  
   
--   Para exibir detalhes da diferença entre o instantâneo atual e o instantâneo anterior, escolha o link de alteração.  
+- Para exibir detalhes da diferença entre o instantâneo atual e o instantâneo anterior, escolha o link de alteração.  
   
- O relatório é exibido em uma janela separada.  
+  O relatório é exibido em uma janela separada.  
   
 ## <a name="memory-usage-details-reports"></a>Relatórios de detalhes Uso de Memória  
   
@@ -121,17 +121,17 @@ Encontre vazamentos de memória e memória ineficiente enquanto estiver depurand
   
 ### <a name="change-diff-reports"></a>Relatórios de comparação (Diff)  
   
--   Escolha o link de alteração em uma célula da tabela de resumo da guia **Uso de Memória** na janela **Ferramentas de Diagnóstico**.  
+- Escolha o link de alteração em uma célula da tabela de resumo da guia **Uso de Memória** na janela **Ferramentas de Diagnóstico**.  
   
-     ![Escolher um relatório de comparação](../profiling/media/dbgdiag-mem-choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+   ![Escolher um relatório de comparação](../profiling/media/dbgdiag-mem-choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
--   Escolha um instantâneo na lista **Comparar com** de um relatório gerenciado ou nativo.  
+- Escolha um instantâneo na lista **Comparar com** de um relatório gerenciado ou nativo.  
   
-     ![Escolher um instantâneo na lista Comparar com](../profiling/media/dbgdiag-mem-choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
+   ![Escolher um instantâneo na lista Comparar com](../profiling/media/dbgdiag-mem-choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
- O relatório de comparação adiciona colunas (marcadas com **(Diff)**) ao relatório base que mostra a diferença entre o valor do instantâneo base e o do instantâneo de comparação. Veja como o relatório de comparação Exibição de Tipo Nativo pode se parecer:  
+  O relatório de comparação adiciona colunas (marcadas com **(Diff)**) ao relatório base que mostra a diferença entre o valor do instantâneo base e o do instantâneo de comparação. Veja como o relatório de comparação Exibição de Tipo Nativo pode se parecer:  
   
- ![Exibição de comparação de tipos nativos](../profiling/media/dbgdiag-mem-native-typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
+  ![Exibição de comparação de tipos nativos](../profiling/media/dbgdiag-mem-native-typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>Blogs e vídeos  
  [Janela do depurador Ferramentas de Diagnóstico no Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  

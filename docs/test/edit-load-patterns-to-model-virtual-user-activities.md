@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 431fea97c0dcca0407f2b0627e6b2d9def774799
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: fb5e63f8c33267d622271221271ba8e71bb6f205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179434"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862496"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Editar padrões de carga para modelar atividades de usuário virtual
 
@@ -56,32 +56,32 @@ O padrão de carga é um componente de um cenário. Os cenários, com os padrõe
 
  O padrão de carga em pode ser usado para aumentar a carga no servidor ou nos servidores à medida que o teste de carga é executado de modo que você possa ver como o desempenho varia à medida que a carga de usuários aumenta. Por exemplo, para ver como será o desempenho do seu servidor ou dos servidores à medida que a carga de usuário aumenta para 2.000 usuários, você pode executar um teste de carga de 10 horas usando um padrão de carga em etapa com as seguintes propriedades:
 
--   **Contagem inicial de usuários**: 100
+- **Contagem inicial de usuários**: 100
 
--   **Contagem máxima de usuários**: 2.000
+- **Contagem máxima de usuários**: 2.000
 
--   **Duração da etapa (segundos)**: 1.800
+- **Duração da etapa (segundos)**: 1.800
 
--   **Tempo de rampa de etapa (segundos)**: 20
+- **Tempo de rampa de etapa (segundos)**: 20
 
--   **Contagem de usuário em etapas**: 100
+- **Contagem de usuário em etapas**: 100
 
- Essas configurações executam o teste de carga durante 30 minutos (1.800 segundos) em cargas de 100, 200, 300 e até 2.000 usuários. A propriedade **Tempo de rampa de etapa** deve ser mencionada, porque é única dessas propriedades não disponível para seleção no **Novo Assistente de Teste de Carga**. Essa propriedade permite que o aumento de uma etapa para a seguinte (por exemplo, de 100 para 200 usuários) ocorra gradualmente, e não de imediato. No exemplo, a carga de usuário seria aumentada de 100 para 200 usuários durante um período de 20 segundos (um aumento de cinco usuários por segundo). Para saber mais, confira [Como especificar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
+  Essas configurações executam o teste de carga durante 30 minutos (1.800 segundos) em cargas de 100, 200, 300 e até 2.000 usuários. A propriedade **Tempo de rampa de etapa** deve ser mencionada, porque é única dessas propriedades não disponível para seleção no **Novo Assistente de Teste de Carga**. Essa propriedade permite que o aumento de uma etapa para a seguinte (por exemplo, de 100 para 200 usuários) ocorra gradualmente, e não de imediato. No exemplo, a carga de usuário seria aumentada de 100 para 200 usuários durante um período de 20 segundos (um aumento de cinco usuários por segundo). Para saber mais, confira [Como especificar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
 
 ### <a name="goal-based"></a>Baseado em metas
 
  Um padrão de carga baseado em metas se assemelha ao padrão em etapa, mas ajusta a carga de usuário com base nos limites do contador de desempenho em comparação com os ajustes de carga de usuário periódicos. As cargas baseadas em meta são úteis para várias finalidades diferentes:
 
--   Maximizando saída dos agentes: meça a métrica limitadora principal no agente para maximizar a saída dos agentes. Normalmente, ela é CPU; porém, também pode ser memória.
+- Maximizando saída dos agentes: meça a métrica limitadora principal no agente para maximizar a saída dos agentes. Normalmente, ela é CPU; porém, também pode ser memória.
 
--   Atingindo certo nível de recurso de destino, normalmente CPU, no servidor de destino, e medindo a produtividade nesse nível. Isso permite fazer comparações de execução a execução de produtividade dado um nível consistente de uso de recursos no servidor.
+- Atingindo certo nível de recurso de destino, normalmente CPU, no servidor de destino, e medindo a produtividade nesse nível. Isso permite fazer comparações de execução a execução de produtividade dado um nível consistente de uso de recursos no servidor.
 
--   Atingindo um nível de produtividade de destino no servidor.
+- Atingindo um nível de produtividade de destino no servidor.
 
- Na tabela a seguir, um exemplo mostra um padrão baseado em meta com as seguintes configurações de propriedades:
+  Na tabela a seguir, um exemplo mostra um padrão baseado em meta com as seguintes configurações de propriedades:
 
 |Grupo de propriedades|Propriedade|Valor|
-|--------------------|--------------|-----------|
+|-|--------------|-|
 |Contador de desempenho|Categoria|Processador|
 |Contador de desempenho|Computador|ContosoServer1|
 |Contador de desempenho|Contador|% de tempo do processador|
@@ -109,7 +109,7 @@ O padrão de carga é um componente de um cenário. Os cenários, com os padrõe
 ## <a name="tasks"></a>Tarefas
 
 |Tarefas|Tópicos associados|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Especificando o padrão de carga inicial para o teste de carga:** ao criar um teste de carga usando o **Novo Assistente de Teste de Carga**, você seleciona um padrão de carga.|-   [Alterar o padrão de carga](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
 |**Editando o padrão de carga para o teste de carga:** depois de criar o teste de carga, você poderá editar o padrão de carga no **Editor de Teste de Carga**.|-   [Como especificar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 |**Especificando se os usuários virtuais no cenário do teste de carga devem incluir dados de cache na Web:** você pode alterar a propriedade **Percentual de novos usuários** para afetar a maneira como o teste de carga simula o armazenamento em cache na Web que seria executado por um navegador da Web para os usuários virtuais.|-   [Como especificar o percentual de usuários virtuais que usam dados de cache da Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|

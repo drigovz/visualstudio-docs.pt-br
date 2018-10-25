@@ -21,12 +21,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 588f93a89713d42efaba61a34b0dabe5eb2af523
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e133ac057de9340900501b16e2c3b1ee7a388
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238508"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862158"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Como usar o teclado de forma exclusiva
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece muitas combinações p
   
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Para adicionar controles da Caixa de Ferramentas a um designer usando o teclado  
   
-1.  Na barra de menus, escolha **Exibir**, **Caixa de Ferramentas**.  
+1. Na barra de menus, escolha **Exibir**, **Caixa de Ferramentas**.  
   
-2.  Escolha as teclas Ctrl + Seta para cima ou Ctrl + Seta para baixo para percorrer as seções na guia atual da Caixa de Ferramentas.  
+2. Escolha as teclas Ctrl + Seta para cima ou Ctrl + Seta para baixo para percorrer as seções na guia atual da Caixa de Ferramentas.  
   
-3.  Escolha as teclas de Seta para cima ou **Seta para baixo** para percorrer os controles.  
+3. Escolha as teclas de Seta para cima ou **Seta para baixo** para percorrer os controles.  
   
-4.  Após o controle ser selecionado, pressione a tecla Enter.  
+4. Após o controle ser selecionado, pressione a tecla Enter.  
   
- O controle é adicionado ao formulário ou designer.  
+   O controle é adicionado ao formulário ou designer.  
   
 ## <a name="dialog-box-options"></a>Opções de caixa de diálogo  
  É possível percorrer as opções em uma caixa de diálogo e alterar as configurações da opção usando o teclado.  

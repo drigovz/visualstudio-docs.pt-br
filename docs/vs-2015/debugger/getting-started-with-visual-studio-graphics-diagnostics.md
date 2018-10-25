@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d7f16422b8282daa1f94011adf1e4a7df5cf387
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4ba62fc129674bd25f97037efdfcdbf7396ea3a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277804"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824926"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Introdução ao Diagnóstico de Gráficos do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Nesta seção você irá se preparar para usar o diagnóstico de gráficos pela 
 ## <a name="requirements"></a>Requisitos  
  Para usar o diagnóstico de gráficos no Visual Studio 2015, você deve ter uma destas edições:  
   
--   Visual Studio 2015 Enterprise  
+- Visual Studio 2015 Enterprise  
   
--   Visual Studio 2015 Professional  
+- Visual Studio 2015 Professional  
   
--   Visual Studio 2015 Community  
+- Visual Studio 2015 Community  
   
- [!INCLUDE[downloadvs](../includes/downloadvs-md.md)]  
+  [!INCLUDE[downloadvs](../includes/downloadvs-md.md)]  
   
 ### <a name="windows-10-prerequisites"></a>Pré-requisitos do Windows 10  
  O recurso opcional do Windows *as ferramentas de gráficos* fornece a infraestrutura de captura e reprodução que é exigida pelo diagnóstico de gráficos no Windows 10.  
@@ -54,17 +54,17 @@ Nesta seção você irá se preparar para usar o diagnóstico de gráficos pela 
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Para instalar as ferramentas de gráficos para o Windows 10  
   
-1.  Sobre o **iniciar** menu, escolha **configurações**. O **configurações** caixa de diálogo é exibida.  
+1. Sobre o **iniciar** menu, escolha **configurações**. O **configurações** caixa de diálogo é exibida.  
   
-2.  No **as configurações** caixa de diálogo, escolha **sistema**, em seguida, selecione **aplicativos instalados** na lista de configurações do sistema.  
+2. No **as configurações** caixa de diálogo, escolha **sistema**, em seguida, selecione **aplicativos instalados** na lista de configurações do sistema.  
   
-3.  No lado direito dos **as configurações** caixa de diálogo, escolha **gerenciar recursos opcionais** sob **aplicativos e recursos instalados**. O **gerenciar recursos opcionais** caixa de diálogo é exibida.  
+3. No lado direito dos **as configurações** caixa de diálogo, escolha **gerenciar recursos opcionais** sob **aplicativos e recursos instalados**. O **gerenciar recursos opcionais** caixa de diálogo é exibida.  
   
-4.  No **gerenciar recursos opcionais** caixa de diálogo, escolha **adicionar um recurso**. É exibida uma lista de recursos opcionais que você pode instalar.  
+4. No **gerenciar recursos opcionais** caixa de diálogo, escolha **adicionar um recurso**. É exibida uma lista de recursos opcionais que você pode instalar.  
   
-5.  Selecione **as ferramentas de gráficos** na lista de recursos, em seguida, escolha **instalar**.  
+5. Selecione **as ferramentas de gráficos** na lista de recursos, em seguida, escolha **instalar**.  
   
- O recurso ferramentas de gráficos também é instalado automaticamente quando você instala o SDK do Windows 10.  
+   O recurso ferramentas de gráficos também é instalado automaticamente quando você instala o SDK do Windows 10.  
   
 > [!TIP]
 >  O recurso opcional de ferramentas de gráficos do Windows 10 fornece a funcionalidade de captura e reprodução leve — como o programa de linha de comando de captura **dxcap.exe**— que podem ser usados em suporte, teste e cenários de diagnóstico em computadores nos quais ferramentas de desenvolvedor não estiverem instaladas. Para obter mais informações, consulte o [ferramenta de captura de linha de comando](../debugger/command-line-capture-tool.md) tópico.  
@@ -75,11 +75,11 @@ Nesta seção você irá se preparar para usar o diagnóstico de gráficos pela 
 ### <a name="1---create-a-direct3d-app"></a>1 - criar um aplicativo Direct3D  
  Se você já tem seu próprio aplicativo Direct3D para explorar os diagnósticos de gráficos, muito bem! Caso contrário, você pode usar um dos exemplos de Direct3D disponíveis na Galeria de códigos.  
   
--   Para experimentar o diagnóstico de gráficos com 12, Direct3D no Windows 10 usando o Visual Studio 2015, tente as [amostra Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) para Windows 10.  
+- Para experimentar o diagnóstico de gráficos com 12, Direct3D no Windows 10 usando o Visual Studio 2015, tente as [amostra Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) para Windows 10.  
   
--   Para experimentar o diagnóstico de gráficos com o Direct3D 11 no Windows 10 ou Windows 8.1, você pode usar o **DirectX App (Windows Universal)** ou **DirectX App (Windows 8.1)** modelos de projeto. Ou, para algo mais interessante, experimente o [exemplo do jogo marble maze DirectX](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345) para Windows 8.1.  
+- Para experimentar o diagnóstico de gráficos com o Direct3D 11 no Windows 10 ou Windows 8.1, você pode usar o **DirectX App (Windows Universal)** ou **DirectX App (Windows 8.1)** modelos de projeto. Ou, para algo mais interessante, experimente o [exemplo do jogo marble maze DirectX](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345) para Windows 8.1.  
   
- Verifique se que você pode compilar o aplicativo antes de prosseguir.  
+  Verifique se que você pode compilar o aplicativo antes de prosseguir.  
   
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - iniciar uma sessão de diagnóstico de gráficos  
  Agora você está pronto para começar a primeira sessão de diagnóstico de gráficos. No Visual Studio, no menu principal, escolha **depurar, elementos gráficos, iniciar diagnóstico**, ou apenas pressione **ALT+F5**. Isso inicia o aplicativo em Diagnóstico de gráficos e exibe as janelas de sessão de diagnóstico no Visual Studio.  
@@ -96,11 +96,11 @@ Nesta seção você irá se preparar para usar o diagnóstico de gráficos pela 
   
 ##### <a name="to-capture-a-sequence-of-frames"></a>Para capturar uma sequência de quadros  
   
--   No Visual Studio, na janela de sessão de diagnóstico, defina **quadros a serem capturados** para o número de quadros que você deseja capturar na sequência, em seguida, capturar a sequência de usando qualquer um dos métodos descritos acima para capturar quadros únicos.  
+- No Visual Studio, na janela de sessão de diagnóstico, defina **quadros a serem capturados** para o número de quadros que você deseja capturar na sequência, em seguida, capturar a sequência de usando qualquer um dos métodos descritos acima para capturar quadros únicos.  
   
-     Para capturar quadros únicos novamente, defina **quadros a serem capturados** para `1`.  
+   Para capturar quadros únicos novamente, defina **quadros a serem capturados** para `1`.  
   
- Quando você terminar apenas a captura de quadros sair do aplicativo ou escolha o **parar** botão da barra de ferramentas de gráficos ou janela de sessão de diagnóstico.  
+  Quando você terminar apenas a captura de quadros sair do aplicativo ou escolha o **parar** botão da barra de ferramentas de gráficos ou janela de sessão de diagnóstico.  
   
 ### <a name="4--examine-captured-frames-in-the-graphics-analyzer"></a>4 – examinar os quadros capturados no analisador de gráficos  
  Agora você está pronto para examinar os quadros capturada. Para começar a analisar um quadro, escolha o número de quadro do quadro que você deseja examinar da janela de sessão de diagnóstico. Isso abre o quadro na **analisador de gráficos**, onde você pode usar as ferramentas de diagnóstico de gráficos para examinar como o seu aplicativo usa o Direct3D para rastrear problemas de renderização, ou usar o **análise de quadros** ferramenta para Entenda seu desempenho.  

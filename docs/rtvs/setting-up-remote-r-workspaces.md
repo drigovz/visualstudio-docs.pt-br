@@ -1,6 +1,6 @@
 ---
-title: Espaços de trabalho remotos para R
-description: Como configurar espaços de trabalho remotos de R e conectar-se a eles do Visual Studio.
+title: Workspaces remotos para R
+description: Como configurar workspaces remotos de R e conectar-se a eles do Visual Studio.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
@@ -10,16 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 6ef92d907b34705e0a0461d06827f5504b0e61c3
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827708"
 ---
-# <a name="set-up-remote-workspaces"></a>Configurar espaços de trabalho remotos
+# <a name="set-up-remote-workspaces"></a>Configurar workspaces remotos
 
-Este artigo explica como configurar um servidor remoto com SSL e um serviço do R adequado. Isso permite que as RTVS (Ferramentas do R para Visual Studio) se conectem a um espaço de trabalho remoto nesse servidor.
+Este artigo explica como configurar um servidor remoto com SSL e um serviço do R adequado. Isso permite que as RTVS (Ferramentas do R para Visual Studio) se conectem a um workspace remoto nesse servidor.
 
 ## <a name="remote-computer-requirements"></a>Requisitos do computador remoto
 
@@ -97,15 +97,15 @@ Para obter os benefícios e os riscos do uso de um certificado autoassinado, con
 Para emitir um certificado autoassinado por conta própria:
 
 1. Use o SSH ou faça logon no computador Linux.
-1. Instale o pacote `ssl-cert`:
+2. Instale o pacote `ssl-cert`:
     ```sh
     sudo apt-get install ssl-cert
     ```
-1. Execute `make-ssl-cert` para gerar o certificado SSL autoassinado padrão:
+3. Execute `make-ssl-cert` para gerar o certificado SSL autoassinado padrão:
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
-1. Converta a chave gerada e os arquivos PEM em PFX. O PFX gerado deve estar na sua pasta inicial:
+4. Converta a chave gerada e os arquivos PEM em PFX. O PFX gerado deve estar na sua pasta inicial:
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
@@ -135,12 +135,12 @@ Para executar o código R, o computador remoto deve ter um interpretador de R in
 
 1. Baixe e instale um dos seguintes:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [CRAN R para Windows](https://cran.r-project.org/bin/windows/base/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [CRAN R para Windows](https://cran.r-project.org/bin/windows/base/)
 
-    Ambos têm funcionalidade idêntica, mas o Microsoft R Open beneficia-se de bibliotecas de álgebra linear aceleradas por hardware como cortesia do [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
+     Ambos têm funcionalidade idêntica, mas o Microsoft R Open beneficia-se de bibliotecas de álgebra linear aceleradas por hardware como cortesia do [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
 
-1. Execute o [Instalador de serviços do R](https://aka.ms/rtvs-services) e reinicie quando solicitado. O instalador faz o seguinte:
+2. Execute o [Instalador de serviços do R](https://aka.ms/rtvs-services) e reinicie quando solicitado. O instalador faz o seguinte:
 
     - Crie uma pasta em *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\* e copie todos os binários necessários.
     - Instala `RHostBrokerService` e `RUserProfileService` e configura para iniciar automaticamente.
@@ -160,12 +160,12 @@ Para executar o código R, o computador remoto deve ter um interpretador de R in
 
 1. Baixe e instale um dos seguintes:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [CRAN R para Windows](https://cran.r-project.org/bin/linux/ubuntu/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [CRAN R para Windows](https://cran.r-project.org/bin/linux/ubuntu/)
 
-    Ambos têm funcionalidade idêntica, mas o Microsoft R Open beneficia-se de bibliotecas de álgebra linear aceleradas por hardware como cortesia do [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
+     Ambos têm funcionalidade idêntica, mas o Microsoft R Open beneficia-se de bibliotecas de álgebra linear aceleradas por hardware como cortesia do [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
 
-1. Siga as instruções no [Serviço R Remoto para Linux](setting-up-remote-r-service-on-linux.md), que abrange computadores Ubuntu físicos, máquinas virtuais do Azure Ubuntu, WSL (Subsistema Windows para Linux) e contêineres do Docker, incluindo os que estão em execução no Repositório de Contêineres do Azure.
+2. Siga as instruções no [Serviço R Remoto para Linux](setting-up-remote-r-service-on-linux.md), que abrange computadores Ubuntu físicos, máquinas virtuais do Azure Ubuntu, WSL (Subsistema Windows para Linux) e contêineres do Docker, incluindo os que estão em execução no Repositório de Contêineres do Azure.
 
 ## <a name="configure-r-services"></a>Configurar serviços do R
 

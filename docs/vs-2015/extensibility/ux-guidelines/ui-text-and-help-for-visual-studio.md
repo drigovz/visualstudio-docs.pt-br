@@ -13,12 +13,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 350a379e14e526385776b815ce7e356a437d12af
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bb802aa9dd797004b61ab856dda7b7670f204c79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908230"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texto da interface do usuário e a Ajuda do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -319,15 +319,15 @@ ms.locfileid: "49303805"
   
  Essa solução faz quatro suposições que poderiam causar bugs:  
   
--   Botão de Ajuda da caixa de diálogo estiver **IDHELP** (9).  
+- Botão de Ajuda da caixa de diálogo estiver **IDHELP** (9).  
   
--   A caixa de diálogo parece correta quando o botão Ajuda estiver oculto.  
+- A caixa de diálogo parece correta quando o botão Ajuda estiver oculto.  
   
--   A caixa de diálogo não substitui sua winproc.  
+- A caixa de diálogo não substitui sua winproc.  
   
--   A caixa de diálogo não será inserida dentro de outra caixa de diálogo.  
+- A caixa de diálogo não será inserida dentro de outra caixa de diálogo.  
   
- Se a caixa de diálogo reside no msenv e não usar **VBDialogBoxParam**, investigue aproveitando **VBDialogBoxParam** antes de implementar seu próprio manipulador.  
+  Se a caixa de diálogo reside no msenv e não usar **VBDialogBoxParam**, investigue aproveitando **VBDialogBoxParam** antes de implementar seu próprio manipulador.  
   
 ##### <a name="dialogs-created-through-other-packages"></a>Caixas de diálogo criadas por meio de outros pacotes  
  Você pode implementar sua própria solução para caixas de diálogo que residem fora do msenv. Para uma classe de caixa de diálogo compartilhadas em seu VSPackage, considere mover o botão à barra de título ou implementar um manipulador em cada caixa de diálogo. O código a seguir é um esqueleto de uma implementação para ajudar você a começar:  

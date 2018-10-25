@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfbb7b1a10c27793133afdfdaf0d673fac9535c8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670716"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836756"
 ---
 # <a name="office-ui-customization"></a>Personalização da interface do usuário do Office
   Você pode personalizar a interface do usuário (UI) de aplicativos do Microsoft Office usando as ferramentas de desenvolvedor do Office no Visual Studio. Este tópico descreve os recursos de interface do usuário que você pode personalizar nas seções a seguir:  
@@ -61,13 +61,13 @@ ms.locfileid: "35670716"
   
  As ferramentas de desenvolvimento do Office no Visual Studio fornecem duas maneiras diferentes de personalizar os painéis de tarefas:  
   
--   Você pode adicionar um painel de ações para uma personalização no nível de documento. Por padrão, o painel de ações é exibido no lado direito do aplicativo, à direita do documento. No entanto, o painel de ações também pode ser exibido para a esquerda, superior ou inferior do documento.  
+- Você pode adicionar um painel de ações para uma personalização no nível de documento. Por padrão, o painel de ações é exibido no lado direito do aplicativo, à direita do documento. No entanto, o painel de ações também pode ser exibido para a esquerda, superior ou inferior do documento.  
   
--   Você pode adicionar um painel de tarefas personalizado para um suplemento do VSTO. Os usuários podem encaixar painéis de tarefas personalizados em diferentes lados da janela do aplicativo, ou pode arrastar painéis de tarefas personalizados em qualquer local na janela.  
+- Você pode adicionar um painel de tarefas personalizado para um suplemento do VSTO. Os usuários podem encaixar painéis de tarefas personalizados em diferentes lados da janela do aplicativo, ou pode arrastar painéis de tarefas personalizados em qualquer local na janela.  
   
- Painéis de ações e painéis de tarefas personalizados fornecem funcionalidade hospedando uma variedade de controles para ajudar os usuários com tarefas como a entrada de dados. Em comparação com um grupo de faixa de opções, painéis de ações e painéis de tarefas personalizados fornecem uma área muito maior para incluir o texto e controles.  
+  Painéis de ações e painéis de tarefas personalizados fornecem funcionalidade hospedando uma variedade de controles para ajudar os usuários com tarefas como a entrada de dados. Em comparação com um grupo de faixa de opções, painéis de ações e painéis de tarefas personalizados fornecem uma área muito maior para incluir o texto e controles.  
   
- Para obter mais informações sobre painéis de ações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md). Para obter mais informações sobre painéis de tarefas personalizados, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).  
+  Para obter mais informações sobre painéis de ações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md). Para obter mais informações sobre painéis de tarefas personalizados, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).  
   
 ##  <a name="Ribbon"></a> Faixa de opções personalizada da interface do usuário  
  Você pode personalizar a interface do usuário da faixa de opções para expor a funcionalidade que você adicionar a aplicativos do Office. A faixa de opções é uma maneira de organizar os comandos relacionados (na forma de controles) para que eles são mais fáceis de encontrar. Você pode criar seus próprios guias da faixa de opções e grupos para conceder aos usuários acesso à funcionalidade fornecida por você em sua solução. Agora, a maioria dos recursos que foram acessados usando os menus e barras de ferramentas em versões anteriores do Microsoft Office system pode ser acessada por meio da faixa de opções.  

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e89fb94b8c68bd4ac1219b675b8e77df206bf806
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6fc870e53e9323b8f76cfa39b2e6f961b04e973a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945435"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825758"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implementar uma classe abstrata no Visual Studio
 
@@ -36,24 +36,24 @@ Esta geração de código aplica-se a:
 
    - C#:
 
-    ![Código em C# realçado](media/abstract-highlight-cs.png)
+       ![Código em C# realçado](media/abstract-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código em VB realçado](media/abstract-highlight-vb.png)
+       ![Código em VB realçado](media/abstract-highlight-vb.png)
 
-1. Depois, siga um destes procedimentos:
+2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
-     - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
-     - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece.
-     - Clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece na margem esquerda se o cursor de texto já estiver na linha com o rabisco vermelho.
+      - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
+      - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece.
+      - Clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece na margem esquerda se o cursor de texto já estiver na linha com o rabisco vermelho.
 
    ![Visualização da implementação de classe](media/abstract-preview-cs.png)
 
-1. Selecione **Implementar Classe Abstrata** no menu suspenso.
+3. Selecione **Implementar Classe Abstrata** no menu suspenso.
 
    > [!TIP]
    > - Use o link **Visualizar alterações** na parte inferior da janela de visualização [para ver todas as alterações](../../ide/preview-changes.md) que serão feitas antes de fazer sua seleção.
@@ -63,11 +63,11 @@ Esta geração de código aplica-se a:
 
    - C#:
 
-      ![Implementar o resultado da classe C#](media/abstract-result-cs.png)
+       ![Implementar o resultado da classe C#](media/abstract-result-cs.png)
 
    - Visual Basic:
 
-      ![Implementar o resultado da classe VB](media/abstract-result-vb.png)
+       ![Implementar o resultado da classe VB](media/abstract-result-vb.png)
 
 ## <a name="see-also"></a>Consulte também
 

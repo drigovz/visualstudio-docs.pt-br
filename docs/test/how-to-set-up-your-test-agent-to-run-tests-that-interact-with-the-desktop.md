@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5a1be45dd85fdbc7df9870fe7d0db16b4020376c
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: b8eba85de98dd46a8ff6ad44154249598a489f5a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370673"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862093"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Como configurar o agente de teste para executar testes que interagem com a área de trabalho
 
@@ -48,27 +48,27 @@ Use o procedimento a seguir para configurar todos os agentes que são atribuído
 
    > [!NOTE]
    > - O usuário que você adiciona para iniciar o processo também deve ser adicionado como um membro do grupo TeamTestAgentService no computador do controlador de teste para esse agente. Se esse for o usuário atual, quando você adicioná-lo ao computador do controlador de teste, será preciso fazer logoff ou reiniciar o computador.
-   - As senhas nulas não são compatíveis com contas de usuário.
-   - Se você quiser usar o IntelliTrace ou os dados da emulação de rede e o adaptador de diagnóstico, a conta de usuário deverá ser um membro do grupo Administradores. Se o computador que está executando o agente de teste estiver usando um sistema operacional que tenha uma conta de usuário com privilégios mínimos, você também precisará executá-lo como um administrador (elevado). Se o nome de usuário do agente não estiver no serviço de agente, ele tentará adicioná-lo, o que requer permissões no controlador de teste.
-   - O usuário que tentar usar o controlador de teste deverá estar na conta Usuários do controlador de teste ou não poderá executar os testes relacionados ao controlador.
+   > - As senhas nulas não são compatíveis com contas de usuário.
+   > - Se você quiser usar o IntelliTrace ou os dados da emulação de rede e o adaptador de diagnóstico, a conta de usuário deverá ser um membro do grupo Administradores. Se o computador que está executando o agente de teste estiver usando um sistema operacional que tenha uma conta de usuário com privilégios mínimos, você também precisará executá-lo como um administrador (elevado). Se o nome de usuário do agente não estiver no serviço de agente, ele tentará adicioná-lo, o que requer permissões no controlador de teste.
+   > - O usuário que tentar usar o controlador de teste deverá estar na conta Usuários do controlador de teste ou não poderá executar os testes relacionados ao controlador.
 
 4. Para ter certeza de que um computador que tem um agente de teste pode executar testes após ser reinicializado, você pode configurar o computador para fazer logon automaticamente como usuário do agente de teste. Selecione **Fazer logon automaticamente**. Isso armazenará o nome de usuário e a senha em um formato criptografado no Registro.
 
    > [!NOTE]
    > Quando você está conectado ao ambiente de laboratório usando uma área de trabalho remota ou uma conexão baseada em convidado, talvez se depare com desconexões frequentes e inesperadas. Uma possível causa da perda de conexão é que o computador esteja configurado para acessar automaticamente a rede.
 
-7. Para garantir que a proteção de tela esteja desabilitada, uma vez que isso pode interferir em todos os testes automatizados que devem interagir com a área de trabalho, selecione **Certifique-se de que a proteção de tela está desabilitada**.
+5. Para garantir que a proteção de tela esteja desabilitada, uma vez que isso pode interferir em todos os testes automatizados que devem interagir com a área de trabalho, selecione **Certifique-se de que a proteção de tela está desabilitada**.
 
    > [!WARNING]
    > Haverá riscos à segurança se você fizer logon automaticamente ou desabilitar a proteção de tela. Ao ativar o logon automático, você permite que outros usuários iniciem esse computador e permite que eles usem a conta que faz logon automaticamente. Se você desabilitar a proteção de tela, o computador talvez não solicite o logon de um usuário para desbloquear o computador. Isso permite que qualquer pessoa acesse o computador se ela tiver acesso físico a ele. Se habilitar esses recursos em um computador, você deverá verificar se esses computadores estão fisicamente seguros. Por exemplo, esses computadores estão localizados em um laboratório fisicamente seguro. Se você desmarcar **Certifique-se de que a proteção de tela está desabilitada**, isso não habilitará a proteção de tela.
 
    Para que o agente volte a ser executado como um serviço, você pode usar essa ferramenta e selecionar **Serviço**.
 
-8. Para aplicar suas alterações, escolha **Aplicar Configurações**.
+6. Para aplicar suas alterações, escolha **Aplicar Configurações**.
 
    É exibida uma caixa de diálogo **Resumo da configuração** que mostra o status de cada uma das etapas para configurar o agente de teste.
 
-9. Para fechar a caixa de diálogo **Resumo da configuração**, escolha **Fechar**. Em seguida, escolha **Fechar** novamente para fechar a **Ferramenta de Configuração do Test Agent**.
+7. Para fechar a caixa de diálogo **Resumo da configuração**, escolha **Fechar**. Em seguida, escolha **Fechar** novamente para fechar a **Ferramenta de Configuração do Test Agent**.
 
    > [!NOTE]
    > Há um ícone da área de notificação que é executado no computador para um agente de teste que está sendo executado como um processo. Ele mostra o status do agente de teste. Você poderá iniciar, parar ou reiniciar o agente se ele estiver sendo executado como um processo usando essa ferramenta. Para iniciar o agente de teste como um processo caso ele não esteja sendo executado, escolha **Iniciar** > **Visual Studio** > **Agente de Teste do Visual Studio**.

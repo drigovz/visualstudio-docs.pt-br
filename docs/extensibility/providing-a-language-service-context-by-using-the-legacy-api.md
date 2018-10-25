@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9daef780847da99463811a9c10399102dc7b808
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 67ff7d911ef0cdd3debd920ac85e9e3265a619e3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637426"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909952"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>Fornecer um contexto de serviço de linguagem, usando a API herdada
 Há duas opções para um serviço de linguagem fornecer o contexto de usuário usando o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo: fornecer um contexto de marcador de texto, ou fornecer todo o contexto de usuário. As diferenças entre cada são descritas aqui.  
@@ -35,20 +35,20 @@ Há duas opções para um serviço de linguagem fornecer o contexto de usuário 
   
  Há duas maneiras diferentes para implementar `IVsLanguageContextProvider`:  
   
--   Fornecer uma palavra-chave para o recipiente de contexto  
+- Fornecer uma palavra-chave para o recipiente de contexto  
   
-     Quando o editor é chamado para atualizar o recipiente de contexto, passe os atributos e palavras-chave apropriadas e, em seguida, retornar `S_OK`. Esse valor de retorno instrui o editor para manter seu contexto de palavra-chave e atributo em vez de fornecer a palavra-chave na posição do cursor ao recipiente de contexto.  
+   Quando o editor é chamado para atualizar o recipiente de contexto, passe os atributos e palavras-chave apropriadas e, em seguida, retornar `S_OK`. Esse valor de retorno instrui o editor para manter seu contexto de palavra-chave e atributo em vez de fornecer a palavra-chave na posição do cursor ao recipiente de contexto.  
   
--   Obter a palavra-chave da palavra-chave na posição do cursor  
+- Obter a palavra-chave da palavra-chave na posição do cursor  
   
-     Quando o editor é chamado para atualizar o recipiente de contexto, passe os atributos apropriados e, em seguida, retornar `E_FAIL`. Esse valor de retorno instrui o editor para manter seus atributos no recipiente de contexto, mas atualize o recipiente de contexto com a palavra-chave na posição do cursor.  
+   Quando o editor é chamado para atualizar o recipiente de contexto, passe os atributos apropriados e, em seguida, retornar `E_FAIL`. Esse valor de retorno instrui o editor para manter seus atributos no recipiente de contexto, mas atualize o recipiente de contexto com a palavra-chave na posição do cursor.  
   
- O diagrama a seguir demonstra como o contexto é fornecido para um serviço de linguagem que implementa `IVsLanguageContextProvider`.  
+  O diagrama a seguir demonstra como o contexto é fornecido para um serviço de linguagem que implementa `IVsLanguageContextProvider`.  
   
- ![Gráfico de LangServiceImplementation2](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
-Contexto para um serviço de linguagem  
+  ![Gráfico de LangServiceImplementation2](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
+  Contexto para um serviço de linguagem  
   
- Como você pode ver no diagrama, o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] principal editor de texto tem um recipiente de contexto anexado a ele. Esse recipiente de contexto aponta para três recipientes de subcontexto separado: serviço de linguagem, o editor padrão e o marcador de texto. Os recipientes language service e o texto marcador subcontexto contêm atributos e palavras-chave para o serviço de linguagem, se o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> interface é implementada, os marcadores de texto e se o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interface é implementada. Se você não implementar qualquer uma dessas interfaces, o editor fornece contexto para a palavra-chave na posição do cursor no recipiente de subcontexto de editor padrão.  
+  Como você pode ver no diagrama, o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] principal editor de texto tem um recipiente de contexto anexado a ele. Esse recipiente de contexto aponta para três recipientes de subcontexto separado: serviço de linguagem, o editor padrão e o marcador de texto. Os recipientes language service e o texto marcador subcontexto contêm atributos e palavras-chave para o serviço de linguagem, se o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> interface é implementada, os marcadores de texto e se o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interface é implementada. Se você não implementar qualquer uma dessas interfaces, o editor fornece contexto para a palavra-chave na posição do cursor no recipiente de subcontexto de editor padrão.  
   
 ## <a name="context-guidelines-for-editors-and-designers"></a>Diretrizes de contexto para editores e designers  
  Designers e editores devem fornecer uma palavra-chave geral para o editor ou a janela do designer. Isso é feito para que um tópico de ajuda genérico, mas apropriado, será exibido para o designer ou editor quando um usuário pressiona **F1**. Um editor deve, além disso, forneça a palavra-chave atual na posição do cursor ou fornecer um termo-chave com base na seleção atual. Isso é feito para garantir que um tópico da Ajuda para o texto ou um elemento de interface do usuário apontado ou selecionado exibe quando o usuário pressiona **F1**. Um designer fornece contexto para um item selecionado em um designer, como um botão em um formulário. Editores e designers também devem se conectar a um serviço de linguagem conforme descrito na [fundamentos do serviço de linguagem herdado](../extensibility/internals/legacy-language-service-essentials.md).

@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5bb0b27e57490f49dc677cffa553bc10201e5a47
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 930d7ededf4a54aaf75516c59001eaccf38c210c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896751"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Navegar e atualizar um modelo no código do programa
 
@@ -186,46 +186,46 @@ using (Transaction t =
 
  Este exemplo ilustra esses pontos essenciais sobre a criação de um elemento:
 
--   Crie o novo elemento em uma partição específica do Store. Para elementos de modelo e relações, mas não formas, isso geralmente é a partição padrão.
+- Crie o novo elemento em uma partição específica do Store. Para elementos de modelo e relações, mas não formas, isso geralmente é a partição padrão.
 
--   Torna o destino de uma relação de incorporação. Em DslDefinition deste exemplo, cada pessoa deve ser o destino da relação FamilyTreeHasPeople incorporada. Para fazer isso, podemos pode definir a propriedade de função FamilyTreeModel do objeto Person ou adicionar a pessoa para a propriedade de função de pessoas do objeto FamilyTreeModel.
+- Torna o destino de uma relação de incorporação. Em DslDefinition deste exemplo, cada pessoa deve ser o destino da relação FamilyTreeHasPeople incorporada. Para fazer isso, podemos pode definir a propriedade de função FamilyTreeModel do objeto Person ou adicionar a pessoa para a propriedade de função de pessoas do objeto FamilyTreeModel.
 
--   Definir as propriedades de um novo elemento, especialmente a propriedade para o qual `IsName` é verdadeiro para o DslDefinition. Esse sinalizador marca a propriedade que serve para identificar o elemento exclusivamente dentro de seu proprietário. Nesse caso, a propriedade de nome tem esse sinalizador.
+- Definir as propriedades de um novo elemento, especialmente a propriedade para o qual `IsName` é verdadeiro para o DslDefinition. Esse sinalizador marca a propriedade que serve para identificar o elemento exclusivamente dentro de seu proprietário. Nesse caso, a propriedade de nome tem esse sinalizador.
 
--   A definição de DSL deste DSL deve ter sido carregada para a Store. Se você estiver escrevendo uma extensão como um comando de menu, isso geralmente será já true. Em outros casos, você pode explicitamente carregar o modelo para a Store, ou usar <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> carregá-lo. Para obter mais informações, consulte [como: abrir um modelo de arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md).
+- A definição de DSL deste DSL deve ter sido carregada para a Store. Se você estiver escrevendo uma extensão como um comando de menu, isso geralmente será já true. Em outros casos, você pode explicitamente carregar o modelo para a Store, ou usar <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> carregá-lo. Para obter mais informações, consulte [como: abrir um modelo de arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
- Quando você cria um elemento dessa forma, uma forma é criada automaticamente (se a DSL tem um diagrama). Ele aparece em um local atribuído automaticamente, com a forma padrão, cor e outros recursos. Se você quiser controlar onde e como a forma associada é exibida, consulte [criação de um elemento e sua forma](#merge).
+  Quando você cria um elemento dessa forma, uma forma é criada automaticamente (se a DSL tem um diagrama). Ele aparece em um local atribuído automaticamente, com a forma padrão, cor e outros recursos. Se você quiser controlar onde e como a forma associada é exibida, consulte [criação de um elemento e sua forma](#merge).
 
 ##  <a name="links"></a> Criação de Links do relacionamento
  Existem duas relações definidas no exemplo, a definição de DSL. Cada relação define uma *propriedades da função* na classe em cada extremidade da relação.
 
  Há três maneiras em que você pode criar uma instância de uma relação. Cada um desses três métodos tem o mesmo efeito:
 
--   Defina a propriedade do representante da função de origem. Por exemplo:
+- Defina a propriedade do representante da função de origem. Por exemplo:
 
-    -   `familyTree.People.Add(edward);`
+  -   `familyTree.People.Add(edward);`
 
-    -   `edward.Parents.Add(henry);`
+  -   `edward.Parents.Add(henry);`
 
--   Defina a propriedade do representante da função de destino. Por exemplo:
+- Defina a propriedade do representante da função de destino. Por exemplo:
 
-    -   `edward.familyTreeModel = familyTree;`
+  -   `edward.familyTreeModel = familyTree;`
 
-         A multiplicidade desta função é `1..1`, portanto, atribuímos o valor.
+       A multiplicidade desta função é `1..1`, portanto, atribuímos o valor.
 
-    -   `henry.Children.Add(edward);`
+  -   `henry.Children.Add(edward);`
 
-         A multiplicidade desta função é `0..*`, portanto, podemos adicionar à coleção.
+       A multiplicidade desta função é `0..*`, portanto, podemos adicionar à coleção.
 
--   Construa uma instância da relação explicitamente. Por exemplo:
+- Construa uma instância da relação explicitamente. Por exemplo:
 
-    -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
+  -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
-    -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
+  -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
 
- O último método é útil se você quiser definir as propriedades na própria relação.
+  O último método é útil se você quiser definir as propriedades na própria relação.
 
- Quando você cria um elemento dessa forma, um conector no diagrama é criado automaticamente, mas ele tem uma forma padrão, cor e outros recursos. Para controlar como o conector associado é criado, consulte [criação de um elemento e sua forma](#merge).
+  Quando você cria um elemento dessa forma, um conector no diagrama é criado automaticamente, mas ele tem uma forma padrão, cor e outros recursos. Para controlar como o conector associado é criado, consulte [criação de um elemento e sua forma](#merge).
 
 ##  <a name="deleteelements"></a> Excluir elementos
  Excluir um elemento chamando `Delete()`:
@@ -234,21 +234,21 @@ using (Transaction t =
 
  Esta operação excluirá também:
 
--   Links do relacionamento de e para o elemento. Por exemplo, `edward.Parents` não conterá mais `henry`.
+- Links do relacionamento de e para o elemento. Por exemplo, `edward.Parents` não conterá mais `henry`.
 
--   Elementos em funções para o qual o `PropagatesDelete` sinalizador é verdadeiro. Por exemplo, a forma que exibe o elemento será excluída.
+- Elementos em funções para o qual o `PropagatesDelete` sinalizador é verdadeiro. Por exemplo, a forma que exibe o elemento será excluída.
 
- Por padrão, cada relação de incorporação tem `PropagatesDelete` verdadeira em que a função de destino. Excluindo `henry` não exclui o `familyTree`, mas `familyTree.Delete()` seria excluir todos os `Persons`. Para obter mais informações, consulte [Personalizando o comportamento de exclusão](../modeling/customizing-deletion-behavior.md).
+  Por padrão, cada relação de incorporação tem `PropagatesDelete` verdadeira em que a função de destino. Excluindo `henry` não exclui o `familyTree`, mas `familyTree.Delete()` seria excluir todos os `Persons`. Para obter mais informações, consulte [Personalizando o comportamento de exclusão](../modeling/customizing-deletion-behavior.md).
 
- Por padrão, `PropagatesDelete` não é verdadeiro para as funções de relações de referência.
+  Por padrão, `PropagatesDelete` não é verdadeiro para as funções de relações de referência.
 
- Você pode fazer com que as regras de exclusão omitir as propagações específicas quando você exclui um objeto. Isso é útil se você estiver substituindo um elemento para outro. Você fornecer o GUID de uma ou mais funções para os quais não deveriam ser propagada exclusão. O GUID pode ser obtido da classe de relação:
+  Você pode fazer com que as regras de exclusão omitir as propagações específicas quando você exclui um objeto. Isso é útil se você estiver substituindo um elemento para outro. Você fornecer o GUID de uma ou mais funções para os quais não deveriam ser propagada exclusão. O GUID pode ser obtido da classe de relação:
 
- `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
- (Esse exemplo específico não terá efeito algum, pois `PropagatesDelete` está `false` para funções do `ParentsHaveChildren` relacionamento.)
+  (Esse exemplo específico não terá efeito algum, pois `PropagatesDelete` está `false` para funções do `ParentsHaveChildren` relacionamento.)
 
- Em alguns casos, a exclusão é impedida pela existência de um bloqueio no elemento ou em um elemento que seria excluído pelo propagação. Você pode usar `element.CanDelete()` para verificar se o elemento pode ser excluído.
+  Em alguns casos, a exclusão é impedida pela existência de um bloqueio no elemento ou em um elemento que seria excluído pelo propagação. Você pode usar `element.CanDelete()` para verificar se o elemento pode ser excluído.
 
 ##  <a name="deletelinks"></a> Excluindo os Links do relacionamento
  Você pode excluir um link de relação, removendo um elemento de uma propriedade de função:
@@ -325,7 +325,7 @@ using (Transaction t = targetDiagram.Store.
  Em sua definição de DSL, cada elemento que você especificar cria uma classe derivada de uma das seguintes classes padrão.
 
 |Tipo de elemento|Classe base|
-|---------------------|----------------|
+|-|-|
 |Classe de domínio|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|
 |Relacionamento de domínio|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|
 |Forma|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
@@ -468,7 +468,6 @@ partial class MyDiagram
     }
   }
 }
-
 ```
 
  Se você fornecer mais de uma forma, definir suas posições relativas usando o `AbsoluteBounds`.

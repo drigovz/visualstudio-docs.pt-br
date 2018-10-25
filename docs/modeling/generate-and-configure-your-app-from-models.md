@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b4ab0a7cf012d2230437bceb96da80c78a4b493a
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 78dc0907fa717f61b6cf883994a3ac2fd6072ba1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858490"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872792"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Gerar e configurar o aplicativo por meio de modelos
 Você pode gerar ou configurar as partes do seu aplicativo de um modelo.
@@ -24,26 +24,26 @@ Você pode gerar ou configurar as partes do seu aplicativo de um modelo.
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Gerando o código do seu aplicativo de um modelo
  É a maneira mais fácil para gerar o código usando modelos de texto. Você pode gerar o código na mesma solução do Visual Studio em que você mantenha o modelo. Para obter mais informações, consulte:
 
--   [Geração de código no tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+- [Geração de código no tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
--   [Gerando código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)
+- [Gerando código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)
 
- Esse método é mais fácil aplicar incrementalmente. Iniciar com um aplicativo que funciona apenas para um caso específico e escolha algumas partes dele que você deseja variar do modelo. Renomeie os arquivos de código-fonte dessas partes para que se tornem arquivos de modelo (. TT) de texto. Neste ponto, os arquivos de origem. cs automaticamente serão gerados de arquivos de modelo, portanto, o aplicativo funcionará como antes.
+  Esse método é mais fácil aplicar incrementalmente. Iniciar com um aplicativo que funciona apenas para um caso específico e escolha algumas partes dele que você deseja variar do modelo. Renomeie os arquivos de código-fonte dessas partes para que se tornem arquivos de modelo (. TT) de texto. Neste ponto, os arquivos de origem. cs automaticamente serão gerados de arquivos de modelo, portanto, o aplicativo funcionará como antes.
 
- Em seguida, você pode levar a uma parte do código e substituí-la por uma expressão de modelo de texto, que lê o modelo e gera essa parte do arquivo de origem. Pelo menos um valor do modelo deve gerar o código-fonte original para que, novamente, você pode executar o aplicativo e ele funcionará como antes. Depois de testar valores diferentes de modelos, você pode passar para inserir expressões de modelo em outra parte do código.
+  Em seguida, você pode levar a uma parte do código e substituí-la por uma expressão de modelo de texto, que lê o modelo e gera essa parte do arquivo de origem. Pelo menos um valor do modelo deve gerar o código-fonte original para que, novamente, você pode executar o aplicativo e ele funcionará como antes. Depois de testar valores diferentes de modelos, você pode passar para inserir expressões de modelo em outra parte do código.
 
- Esse método incremental significa que a geração de código geralmente é uma abordagem de baixo risco. Os aplicativos resultantes geralmente executam quase, bem como uma versão manuscrita.
+  Esse método incremental significa que a geração de código geralmente é uma abordagem de baixo risco. Os aplicativos resultantes geralmente executam quase, bem como uma versão manuscrita.
 
- No entanto, se você iniciar com um aplicativo existente, você pode achar que um lote de refatoração é necessária para separar os diferentes comportamentos que são governados pelo modelo para que eles podem ser variados independentemente. É recomendável que você avalie esse aspecto do aplicativo ao estimar o custo do seu projeto.
+  No entanto, se você iniciar com um aplicativo existente, você pode achar que um lote de refatoração é necessária para separar os diferentes comportamentos que são governados pelo modelo para que eles podem ser variados independentemente. É recomendável que você avalie esse aspecto do aplicativo ao estimar o custo do seu projeto.
 
 ## <a name="configuring-your-application-from-a-model"></a>Configurar seu aplicativo de um modelo
  Se você deseja variar o comportamento do aplicativo em tempo de execução, você não pode usar a geração de código, o que gera o código-fonte antes do aplicativo é compilado. Em vez disso, você pode projetar seu aplicativo para ler o modelo e variam de seu comportamento de acordo. Para obter mais informações, consulte:
 
--   [Como abrir um modelo partindo de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Como abrir um modelo partindo de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
- Esse método também pode ser aplicado incrementalmente, mas há mais trabalho no início. Você precisa escrever o código que leia o modelo e configurar uma estrutura que permite que seus valores fique acessível para as partes variáveis. Tornar as partes variáveis genéricos é mais caro do que a geração de código.
+  Esse método também pode ser aplicado incrementalmente, mas há mais trabalho no início. Você precisa escrever o código que leia o modelo e configurar uma estrutura que permite que seus valores fique acessível para as partes variáveis. Tornar as partes variáveis genéricos é mais caro do que a geração de código.
 
- Um aplicativo genérico executa normalmente menos bem que suas contrapartes específicos. Se o desempenho é fundamental, seu plano de projeto deve incluir uma avaliação desse risco.
+  Um aplicativo genérico executa normalmente menos bem que suas contrapartes específicos. Se o desempenho é fundamental, seu plano de projeto deve incluir uma avaliação desse risco.
 
 ## <a name="developing-a-derived-application"></a>Desenvolvendo um aplicativo derivado
  Você pode achar úteis as seguintes diretrizes gerais.

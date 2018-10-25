@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b97cffd30416313ac9f46e6d0ab1bbd505fc4aed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 256000fb3371477c74d4f922de6cb10f3998ae86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831127"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Encontrando e usando extensões do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ As extensões do Visual Studio são pacotes de código executados dentro do Visu
 ## <a name="sample-master-copies-and-working-copies"></a>Cópias mestras e cópias funcionais de amostras  
  Quando você instala um exemplo online, a solução é armazenada em dois locais:  
   
--   Uma cópia funcional é armazenada no local especificado na caixa de diálogo **Novo Projeto**.  
+- Uma cópia funcional é armazenada no local especificado na caixa de diálogo **Novo Projeto**.  
   
--   Uma cópia mestra separada é armazenada em seu computador.  
+- Uma cópia mestra separada é armazenada em seu computador.  
   
- É possível usar a caixa de diálogo **Extensões e Atualizações** para executar estas tarefas relacionadas a amostras:  
+  É possível usar a caixa de diálogo **Extensões e Atualizações** para executar estas tarefas relacionadas a amostras:  
   
--   Listar as cópias mestras dos exemplos que você instalou.  
+- Listar as cópias mestras dos exemplos que você instalou.  
   
--   Desabilitar ou desinstalar a cópia mestra de um exemplo.  
+- Desabilitar ou desinstalar a cópia mestra de um exemplo.  
   
--   Instale os Pacotes de Exemplos, que são coleções de exemplos que se relacionam a uma tecnologia ou um recurso.  
+- Instale os Pacotes de Exemplos, que são coleções de exemplos que se relacionam a uma tecnologia ou um recurso.  
   
--   Instalar exemplos online individuais. (Também é possível fazer isso na caixa de diálogo **Novo Projeto**.)  
+- Instalar exemplos online individuais. (Também é possível fazer isso na caixa de diálogo **Novo Projeto**.)  
   
--   Exibir notificações de atualização quando as alterações do código-fonte são publicadas para exemplos instalados.  
+- Exibir notificações de atualização quando as alterações do código-fonte são publicadas para exemplos instalados.  
   
--   Atualize a cópia mestra de uma amostra instalada quando houver uma notificação de atualização.  
+- Atualize a cópia mestra de uma amostra instalada quando houver uma notificação de atualização.  
   
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Instalando sem usar a caixa de diálogo Extensões e Atualizações  
  As extensões que foram empacotadas em arquivos .vsix podem estar disponíveis em outros locais, e não na Galeria do Visual Studio. A caixa de diálogo **Extensões e Atualizações** não pode detectar esses arquivos, mas é possível instalar um arquivo .vsix clicando duas vezes no arquivo ou selecionando-o e pressionando a tecla ENTER. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Extensões e Atualizações** para habilitá-la, desabilitá-la ou desinstalá-la.  

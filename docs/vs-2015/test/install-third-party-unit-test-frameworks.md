@@ -13,12 +13,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c4e10d7545973e1c202f29c17e9e3ba06f024501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6798106eda43be42e3149160a797e6bf469f9d42
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301113"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900898"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalar estruturas de teste de unidade de terceiros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,34 +34,34 @@ O Gerenciador de Testes do Visual Studio pode executar qualquer estrutura de tes
   
 ### <a name="installing-from-visual-studio"></a>Instalação do Visual Studio  
   
-1.  Escolha **Ferramentas** no menu padrão e, em seguida, selecione **Extensões e atualizações**.  
+1. Escolha **Ferramentas** no menu padrão e, em seguida, selecione **Extensões e atualizações**.  
   
-2.  Expanda **Online**, **Galeria do Visual Studio**, **Ferramentas**. Escolha **Teste**.  
+2. Expanda **Online**, **Galeria do Visual Studio**, **Ferramentas**. Escolha **Teste**.  
   
-3.  Navegue pela lista para localizar a estrutura.  
+3. Navegue pela lista para localizar a estrutura.  
   
-4.  Selecione a estrutura e escolha **Download**.  
+4. Selecione a estrutura e escolha **Download**.  
   
- Para obter mais informações, consulte [Localizando e Usando Extensões do Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
+   Para obter mais informações, consulte [Localizando e Usando Extensões do Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
   
 ### <a name="installing-from-the-web"></a>Instalação da Web  
  Se você souber a estrutura em que você está interessado:  
   
-1.  Abra [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) no site do MSDN.  
+1. Abra [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) no site do MSDN.  
   
-2.  Digite o nome da estrutura na caixa **Localizar**.  
+2. Digite o nome da estrutura na caixa **Localizar**.  
   
-3.  Escolha a estrutura na lista de resultados para navegar até a página da Galeria do Visual Studio para a ferramenta.  
+3. Escolha a estrutura na lista de resultados para navegar até a página da Galeria do Visual Studio para a ferramenta.  
   
- Para procurar uma lista de estruturas juntamente com outras ferramentas de teste:  
+   Para procurar uma lista de estruturas juntamente com outras ferramentas de teste:  
   
-1.  Abra [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) no site do MSDN.  
+4. Abra [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) no site do MSDN.  
   
-2.  Escolha **Procurar**.  
+5. Escolha **Procurar**.  
   
-3.  Na lista **Categoria**, expanda o nó **Ferramentas** e escolha **Teste**.  
+6. Na lista **Categoria**, expanda o nó **Ferramentas** e escolha **Teste**.  
   
-4.  Escolha uma estrutura na lista de resultados para navegar até uma página da Galeria do Visual Studio para a ferramenta.  
+7. Escolha uma estrutura na lista de resultados para navegar até uma página da Galeria do Visual Studio para a ferramenta.  
   
 ## <a name="see-also"></a>Consulte também  
  [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)

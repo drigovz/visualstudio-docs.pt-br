@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0ea42942fc06225bc5c64c02eba85a766a94ef1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949300"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Como criar um suplemento do Visual Studio para o Visualizador de Resultados de Teste de Desempenho Web
 
@@ -49,28 +49,28 @@ Um suplemento é uma DLL compilada executada no IDE (ambiente de desenvolvimento
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Para criar um suplemento usando o Assistente de Suplemento
 
-1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução, escolha **Adicionar** e, em seguida, selecione **Novo Projeto**.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução, escolha **Adicionar** e, em seguida, selecione **Novo Projeto**.
 
-     A caixa de diálogo **Novo Projeto** é exibida.
+    A caixa de diálogo **Novo Projeto** é exibida.
 
-2.  Em **Modelos Instalados**, expanda **Outros Tipos de Projetos** e selecione **Extensibilidade**.
+2. Em **Modelos Instalados**, expanda **Outros Tipos de Projetos** e selecione **Extensibilidade**.
 
-3.  Na lista de modelos, selecione **Suplemento do Visual Studio**.
+3. Na lista de modelos, selecione **Suplemento do Visual Studio**.
 
-4.  Em **Nome**, digite um nome para o suplemento. Por exemplo, **WebPerfTestResultsViewerAddin**.
+4. Em **Nome**, digite um nome para o suplemento. Por exemplo, **WebPerfTestResultsViewerAddin**.
 
-5.  Escolha **OK**.
+5. Escolha **OK**.
 
-     O **Assistente de Suplemento** do Visual Studio é iniciado.
+    O **Assistente de Suplemento** do Visual Studio é iniciado.
 
-6.  Escolha **Avançar**.
+6. Escolha **Avançar**.
 
-7.  Na página **Selecione uma Linguagem de Programação**, selecione a linguagem de programação que deseja usar para gravar o suplemento.
+7. Na página **Selecione uma Linguagem de Programação**, selecione a linguagem de programação que deseja usar para gravar o suplemento.
 
-    > [!NOTE]
-    > Este tópico usa o Visual C# no código de exemplo.
+   > [!NOTE]
+   > Este tópico usa o Visual C# no código de exemplo.
 
-8.  Na página **Selecione um Aplicativo Host**, selecione **Visual Studio** e desmarque **Macros do Visual Studio**.
+8. Na página **Selecione um Aplicativo Host**, selecione **Visual Studio** e desmarque **Macros do Visual Studio**.
 
 9. Escolha **Avançar**.
 
@@ -96,18 +96,18 @@ Um suplemento é uma DLL compilada executada no IDE (ambiente de desenvolvimento
 
      Você adicionará o código ao arquivo *Connect.cs* após o procedimento a seguir, que cria um controle de usuário que será referenciado por este projeto WebPerfTestResultsViewerAddin.
 
- Após um suplemento ser criado, será necessário registrá-lo no Visual Studio para que ele possa ser ativado no **Gerenciador de Suplementos**. Faça isso usando um arquivo XML que tenha uma extensão de nome de arquivo *.addin*.
+    Após um suplemento ser criado, será necessário registrá-lo no Visual Studio para que ele possa ser ativado no **Gerenciador de Suplementos**. Faça isso usando um arquivo XML que tenha uma extensão de nome de arquivo *.addin*.
 
- O arquivo *.addin* descreve as informações de que Visual Studio precisa para exibir o suplemento no **Gerenciador de Suplementos**. Quando o Visual Studio é iniciado, ele examina no local do arquivo *.addin* os arquivos *.addin* disponíveis. Se encontrar algum, ele lerá o arquivo XML e fornecerá ao **Gerenciador de Suplementos** as informações necessárias para iniciar o suplemento quando clicado.
+    O arquivo *.addin* descreve as informações de que Visual Studio precisa para exibir o suplemento no **Gerenciador de Suplementos**. Quando o Visual Studio é iniciado, ele examina no local do arquivo *.addin* os arquivos *.addin* disponíveis. Se encontrar algum, ele lerá o arquivo XML e fornecerá ao **Gerenciador de Suplementos** as informações necessárias para iniciar o suplemento quando clicado.
 
- O arquivo *.addin* é criado automaticamente quando você cria um suplemento usando o **Assistente de Suplemento**.
+    O arquivo *.addin* é criado automaticamente quando você cria um suplemento usando o **Assistente de Suplemento**.
 
 ### <a name="add-in-file-locations"></a>Locais de arquivo de suplemento
 
 Duas cópias do arquivo *.addin* são criadas automaticamente pelo **Assistente de Suplemento**, da seguinte forma:
 
 |**Local do arquivo .addin**|**Descrição**|
-|------------------------------|----------------------------|---------------------|
+|-|----------------------------|-|
 |Pasta raiz do projeto|Usado na implantação do projeto de suplemento. Incluído no projeto para facilitar a edição e tem o caminho local para a implantação de XCopy-style.|
 |Pasta do suplemento|Usado para executar o suplemento no ambiente de depuração. Ela deve sempre apontar para o caminho de saída da configuração da compilação atual.|
 

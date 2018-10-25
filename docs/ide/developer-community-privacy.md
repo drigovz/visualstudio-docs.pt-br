@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2905cd6fcf9255eb8ba76d636d908651e2254115
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 21515d6e9841d943cf91799224afdebf8326e07e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327070"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836821"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidade de dados da Comunidade de Desenvolvedores
 
@@ -33,13 +33,13 @@ Se você está preocupado com a privacidade dos dados, não coloque nada que des
 
 1. No relatório que você criou, escolha **Adicionar comentário** para criar uma descrição particular do problema.
 
-1. No editor de resposta, use o controle abaixo dos botões **Enviar** e **Cancelar** para especificar a audiência da resposta. Escolha **Visível por moderadores e o cartaz original** para limitar a visibilidade aos funcionários da Microsoft e a você mesmo.
+2. No editor de resposta, use o controle abaixo dos botões **Enviar** e **Cancelar** para especificar a audiência da resposta. Escolha **Visível por moderadores e o cartaz original** para limitar a visibilidade aos funcionários da Microsoft e a você mesmo.
 
    ![Controle de privacidade na Comunidade de Desenvolvedores](media/developer-community-privacy-control.png)
 
    Somente as pessoas que você especifica podem ver o comentário e as imagens, os links ou o código incluídos nele. Todas as respostas no comentário têm a mesma visibilidade que o comentário original. Isso é verdadeiro mesmo quando o controle de privacidade nas respostas não mostra corretamente o status de visibilidade restrito.
 
-1. Adicione a descrição e quaisquer outras informações, imagens e anexos de arquivo necessários para a reprodução. Escolha o botão **Enviar** para enviar essas informações em particular.
+3. Adicione a descrição e quaisquer outras informações, imagens e anexos de arquivo necessários para a reprodução. Escolha o botão **Enviar** para enviar essas informações em particular.
 
    > [!NOTE]
    > Há um limite de 2 GB para arquivos anexados e de no máximo 10 arquivos. Se você precisar carregar um arquivo maior, envie um novo relatório de problema ou solicite uma URL de upload a um funcionário da Microsoft em um comentário particular.
@@ -82,8 +82,8 @@ Quando a ação **Relatar um problema** é iniciada com o Visual Studio, nós co
 
    - Arquivo de despejo
 
-   > [!NOTE]
-   > Antes do envio do relatório, você pode excluir os dados de gravação que não deseja enviar.
+    > [!NOTE]
+    > Antes do envio do relatório, você pode excluir os dados de gravação que não deseja enviar.
 
 ## <a name="see-also"></a>Consulte também
 

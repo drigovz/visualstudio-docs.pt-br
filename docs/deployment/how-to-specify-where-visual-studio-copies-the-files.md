@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b2a4d642bc551127f34fe7a64ec01665b7ace70
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 1cc4e6b3ad623497f50f60b5eb3c0d7c8b00b1cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078622"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869581"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Como: especificar onde o Visual Studio copiará os arquivos
 Quando você publica um aplicativo usando o ClickOnce, o `Publish Location` propriedade especifica o local onde os arquivos de aplicativo e manifesto são colocados. Isso pode ser um caminho de arquivo ou o caminho para um servidor FTP.  
@@ -34,15 +34,15 @@ Quando você publica um aplicativo usando o ClickOnce, o `Publish Location` prop
   
 ### <a name="to-specify-a-publishing-location"></a>Para especificar um local de publicação  
   
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Clique o **publicar** guia.  
+2. Clique o **publicar** guia.  
   
-3.  No **local de publicação** , insira o local de publicação usando um dos seguintes formatos:  
+3. No **local de publicação** , insira o local de publicação usando um dos seguintes formatos:  
   
-    -   Para publicar em um caminho de disco ou compartilhamento de arquivo, insira o caminho usando um caminho UNC (*\\\Server\ApplicationName*) ou um caminho de arquivo (*C:\Deploy\ApplicationName*).  
+   - Para publicar em um caminho de disco ou compartilhamento de arquivo, insira o caminho usando um caminho UNC (*\\\Server\ApplicationName*) ou um caminho de arquivo (*C:\Deploy\ApplicationName*).  
   
-    -   Para publicar em um servidor FTP, insira o caminho usando o formato *ftp://ftp.microsoft.com/\<ApplicationName >*.  
+   - Para publicar em um servidor FTP, insira o caminho usando o formato <em>ftp://ftp.microsoft.com/\<ApplicationName ></em>.  
   
      Observe que o texto deve estar presente na **local de publicação** caixa para que o botão Procurar (**...** ) botão funcione.  
   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2ce10d096ff646b462c7b0aff2cbcf33493aad0c
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ce49eb2e6892528d95e40bc1c40e36f355495c65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320651"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829281"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Como configurar a emulação de rede usando configurações de teste no Visual Studio
 
@@ -38,21 +38,21 @@ Uma conta que tenha privilégios de administrador deve ser usada para a emulaç�
 
  O Visual Studio usa emulação de rede real baseada em software para todos os tipos de testes. Isso inclui testes de carga. A emulação de rede verdadeira simula condições de rede pela manipulação direta de pacotes de rede. O emulador real de rede pode emular o comportamento de redes com fio e sem fio usando um link físico confiável, como Ethernet. Os seguintes atributos de rede são incorporados na emulação de rede verdadeira:
 
--   O tempo da viagem de ida e volta pela rede (latência)
+- O tempo da viagem de ida e volta pela rede (latência)
 
--   A quantidade de largura de banda disponível
+- A quantidade de largura de banda disponível
 
--   Comportamento do enfileiramento
+- Comportamento do enfileiramento
 
--   Perda de pacote
+- Perda de pacote
 
--   Reordenação de pacotes
+- Reordenação de pacotes
 
--   Propagações de erros.
+- Propagações de erros.
 
- A emulação de rede verdadeira também fornece flexibilidade em pacotes de rede de filtragem com base em endereços IP ou em protocolos como TCP, UDP e ICMP.
+  A emulação de rede verdadeira também fornece flexibilidade em pacotes de rede de filtragem com base em endereços IP ou em protocolos como TCP, UDP e ICMP.
 
- A emulação real de rede pode ser usada por desenvolvedores e testadores na rede para emular um ambiente de teste desejado, avaliar o desempenho, prever o efeito da alteração ou para tomar decisões sobre otimização da tecnologia. Quando comparada com bases de teste de hardware, a emulação de rede verdadeira é uma solução muito mais econômica e flexível.
+  A emulação real de rede pode ser usada por desenvolvedores e testadores na rede para emular um ambiente de teste desejado, avaliar o desempenho, prever o efeito da alteração ou para tomar decisões sobre otimização da tecnologia. Quando comparada com bases de teste de hardware, a emulação de rede verdadeira é uma solução muito mais econômica e flexível.
 
 ## <a name="configure-network-emulation-for-your-test-settings"></a>Configurar a emulação de rede para as configurações de teste
  Antes de executar as etapas neste procedimento, você deverá abrir as configurações de teste no Visual Studio e selecionar a página **Dados e Diagnósticos**.

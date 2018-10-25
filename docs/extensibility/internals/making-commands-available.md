@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd7344fe7227f6fa7afd00684a99d8172bad8736
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c1292dc3879effa53f3b4a41b87374a3a5f46ff0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857127"
 ---
 # <a name="making-commands-available"></a>Disponibilizando comandos
 Quando vários VSPackages são adicionados ao Visual Studio, a interface do usuário (IU) pode ficar sobrecarregada com comandos. Você pode programar seu pacote para ajudar a reduzir esse problema, da seguinte maneira:
@@ -54,12 +54,13 @@ Observe que o carregamento atrasado também pode melhorar o desempenho de inicia
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] monitora as alterações que resultam de ações do usuário como carregar um projeto ou vai da edição de construção. Quando ocorrem alterações, a aparência do IDE automaticamente será modificada. A tabela a seguir mostra quatro principais contextos do IDE alteração-la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] monitores.
 
-|Tipo de contexto|Descrição|
-|---------------------|-----------------|
-|Tipo de projeto ativo|Para a maioria dos tipos de projeto, isso `GUID` valor é igual ao GUID do VSPackage que implementa o projeto. No entanto, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projetos usam o tipo de projeto `GUID` como o valor.|
-|Janela ativa|Normalmente, isso é a última janela do documento ativo que estabelece o contexto de interface do usuário atual para associações de teclas. No entanto, ele também pode ser uma janela de ferramenta que tem uma tabela de associação de teclas que se parece com o navegador da Web interno. Para janelas de documento com várias guias, como o editor de HTML, cada guia tem um contexto diferente do comando `GUID`.|
-|Serviço de linguagem do Active Directory|O serviço de linguagem que está associado com o arquivo que está sendo exibido em um editor de texto.|
-|Janela da ferramenta ativa|Uma janela de ferramenta que está aberto e tem o foco.|
+
+| Tipo de contexto | Descrição |
+|-------------------------| - |
+| Tipo de projeto ativo | Para a maioria dos tipos de projeto, isso `GUID` valor é igual ao GUID do VSPackage que implementa o projeto. No entanto, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projetos usam o tipo de projeto `GUID` como o valor. |
+| Janela ativa | Normalmente, isso é a última janela do documento ativo que estabelece o contexto de interface do usuário atual para associações de teclas. No entanto, ele também pode ser uma janela de ferramenta que tem uma tabela de associação de teclas que se parece com o navegador da Web interno. Para janelas de documento com várias guias, como o editor de HTML, cada guia tem um contexto diferente do comando `GUID`. |
+| Serviço de linguagem do Active Directory | O serviço de linguagem que está associado com o arquivo que está sendo exibido em um editor de texto. |
+| Janela da ferramenta ativa | Uma janela de ferramenta que está aberto e tem o foco. |
 
  Uma área principal de contexto quinta é o estado da interface do usuário do IDE. Contextos de interface do usuário são identificados pelo contexto do comando ativo `GUID`s, da seguinte maneira:
 

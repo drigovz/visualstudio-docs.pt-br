@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1be2a91408202ce42d7371154d0201e778381300
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b9eb1de3f18c487a2e6d3cdf3d0ce7ef95e578b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327249"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889991"
 ---
 # <a name="develop-sharepoint-solutions"></a>Desenvolver soluções do SharePoint
   Vários modelos de tipo de projeto do SharePoint estão disponíveis no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para a criação de sites do SharePoint e os elementos do site. Para obter uma lista dos tipos de projeto disponíveis, consulte [SharePoint modelos de item de projeto e projeto](../sharepoint/sharepoint-project-and-project-item-templates.md). Veja a seguir uma descrição dos elementos e propriedades de um projeto do SharePoint.  
@@ -38,10 +38,10 @@ ms.locfileid: "36327249"
 ### <a name="special-nodes"></a>Nós especiais
  Cada projeto do SharePoint contém dois nós que não podem ser renomeados, excluídos, recortar, copiados ou arrastados do projeto. Esses nós são da seguinte maneira:  
   
--   Recursos    
--   Pacote  
+- Recursos    
+- Pacote  
   
- Ambos os nós sempre aparecem em todos os projetos do SharePoint, mesmo se nenhum recurso ou os pacotes são definidos para o projeto.  
+  Ambos os nós sempre aparecem em todos os projetos do SharePoint, mesmo se nenhum recurso ou os pacotes são definidos para o projeto.  
   
 #### <a name="features-node"></a>Nó de recursos
  O **recursos** nó contém um ou mais recursos de projeto do SharePoint. Um recurso é um contêiner de extensões para o SharePoint. Depois que um recurso é implantado no servidor do SharePoint, pode ser incluído em definições de site ou ativado individualmente por administradores do SharePoint nos sites do SharePoint. Para obter mais informações, consulte [trabalhando com recursos](http://go.microsoft.com/fwlink/?LinkID=147704).  

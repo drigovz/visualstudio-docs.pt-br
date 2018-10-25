@@ -30,25 +30,25 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 452cf6ac386affb886e9a318e8686eea85e59d66
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e512620e1af8da85039ed403d4280568101fbe57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237140"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829255"
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>Habilitando funcionalidades de depuração no Visual C++ (/D_DEBUG)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Na [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], recursos de depuração como asserções são habilitados quando você compila seu programa com o símbolo **Debug** definido. Você pode definir **Debug** em uma das duas maneiras:  
   
--   Especificar **#define Debug** no seu código-fonte, ou  
+- Especificar **#define Debug** no seu código-fonte, ou  
   
--   Especifique o **/D_DEBUG** opção de compilador. (Se você criar seu projeto no Visual Studio usando assistentes **/D_DEBUG** é definido automaticamente na configuração de depuração.)  
+- Especifique o **/D_DEBUG** opção de compilador. (Se você criar seu projeto no Visual Studio usando assistentes **/D_DEBUG** é definido automaticamente na configuração de depuração.)  
   
- Quando **Debug** é definido, o compilador compila as seções de código cercadas por **#ifdef DEBUG** e `#endif`.  
+  Quando **Debug** é definido, o compilador compila as seções de código cercadas por **#ifdef DEBUG** e `#endif`.  
   
- A configuração Depuração de um programa MFC deve ser vinculada a uma versão de depuração da biblioteca MFC. Os arquivos de cabeçalho MFC determinam a versão correta da biblioteca MFC para vincular com base nos símbolos que você definiu, tais como **Debug** e **Unicode**. Para obter detalhes, consulte [versões de biblioteca MFC](http://msdn.microsoft.com/library/3d7a8ae1-e276-4cf8-ba63-360c2f85ad0e).  
+  A configuração Depuração de um programa MFC deve ser vinculada a uma versão de depuração da biblioteca MFC. Os arquivos de cabeçalho MFC determinam a versão correta da biblioteca MFC para vincular com base nos símbolos que você definiu, tais como **Debug** e **Unicode**. Para obter detalhes, consulte [versões de biblioteca MFC](http://msdn.microsoft.com/library/3d7a8ae1-e276-4cf8-ba63-360c2f85ad0e).  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando código nativo](../debugger/debugging-native-code.md)   

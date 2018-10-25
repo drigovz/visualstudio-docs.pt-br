@@ -13,12 +13,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb915f7d17070d78e5749834c325bfee4e8a6879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56f1afba0db8ba213a601835ca7a8df39d56f171
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860754"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Padrões comuns de controle para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -218,23 +218,23 @@ ms.locfileid: "49224036"
   
 ##### <a name="visual-style"></a>Estilo Visual  
   
--   As marcas d'água devem ser centralizadas horizontalmente dentro da janela.  
+- As marcas d'água devem ser centralizadas horizontalmente dentro da janela.  
   
--   As marcas d'água devem ser centralizado, não alinhado à esquerda.  
+- As marcas d'água devem ser centralizado, não alinhado à esquerda.  
   
--   As marcas d'água podem centralizadas verticalmente ou posicionadas na parte superior da área. Se localizado próximo à parte superior da área, deve haver espaço suficiente acima para que a marca d'água se destaca.  
+- As marcas d'água podem centralizadas verticalmente ou posicionadas na parte superior da área. Se localizado próximo à parte superior da área, deve haver espaço suficiente acima para que a marca d'água se destaca.  
   
--   Use o `Environment.GrayText` fonte do ambiente padrão e token de cor. Hiperlinks devem usar os tokens de hiperlink padrão compartilhado: `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, e `Environment.PanelHyperlinkDisabled`.  
+- Use o `Environment.GrayText` fonte do ambiente padrão e token de cor. Hiperlinks devem usar os tokens de hiperlink padrão compartilhado: `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, e `Environment.PanelHyperlinkDisabled`.  
   
--   As marcas d'água não podem ser selecionadas no plano de fundo  
+- As marcas d'água não podem ser selecionadas no plano de fundo  
   
--   Se possível, inclua links em que a marca d'água para ajudar o usuário a se familiarizar.  
+- Se possível, inclua links em que a marca d'água para ajudar o usuário a se familiarizar.  
   
- ![Texto em uma janela do designer de marca d'água](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
+  ![Texto em uma janela do designer de marca d'água](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
   
- ![Texto em uma janela de ferramenta de marca d'água](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
+  ![Texto em uma janela de ferramenta de marca d'água](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
   
- **Exemplos de texto de marca d'água no Visual Studio**  
+  **Exemplos de texto de marca d'água no Visual Studio**  
   
 ##  <a name="BKMK_ButtonsAndHyperlinks"></a> Hiperlinks e botões  
   
@@ -246,25 +246,25 @@ ms.locfileid: "49224036"
   
  Quando usar os botões de comando:  
   
--   Comandos primários  
+- Comandos primários  
   
--   Exibição do windows usada para coletar entrada ou fazer escolhas, mesmo se eles são comandos secundários  
+- Exibição do windows usada para coletar entrada ou fazer escolhas, mesmo se eles são comandos secundários  
   
--   Ações destrutivas ou irreversíveis  
+- Ações destrutivas ou irreversíveis  
   
--   Botões de compromisso em assistentes e fluxos de página  
+- Botões de compromisso em assistentes e fluxos de página  
   
- Evite os botões de comando nas janelas de ferramentas, ou se precisar de mais de duas palavras para o rótulo. Os links podem ter mais rótulos.  
+  Evite os botões de comando nas janelas de ferramentas, ou se precisar de mais de duas palavras para o rótulo. Os links podem ter mais rótulos.  
   
- Quando usar links:  
+  Quando usar links:  
   
--   Navegação para outra janela, documento ou página da web  
+- Navegação para outra janela, documento ou página da web  
   
--   Situações que exigem um rótulo mais tempo ou uma frase curta para descrever a intenção da ação  
+- Situações que exigem um rótulo mais tempo ou uma frase curta para descrever a intenção da ação  
   
--   Uma forte espaços em que um botão seria sobrecarregar a interface do usuário, desde que a ação não destrutivas ou irreversível  
+- Uma forte espaços em que um botão seria sobrecarregar a interface do usuário, desde que a ação não destrutivas ou irreversível  
   
--   Ocupando comandos secundários em situações em que há muitos comandos  
+- Ocupando comandos secundários em situações em que há muitos comandos  
   
 #### <a name="examples"></a>Exemplos  
  ![Uma mensagem de status a seguir os links de comando da barra de informações](../../extensibility/ux-guidelines/media/070703-01-commandlinkinfobar.png "070703 01_CommandLinkInfobar")  
@@ -307,19 +307,19 @@ ms.locfileid: "49224036"
   
  Quando usar o botão curto somente reticências:  
   
--   Se houver mais de um longo **[procurar...]**  botão na caixa de diálogo, como quando vários campos permitem para navegação. Usar curto **[...]**  botão de cada um para evitar as chaves de acesso confuso criadas por essa situação (**& navegue** e **p & rocurar** na mesma caixa de diálogo).  
+- Se houver mais de um longo **[procurar...]**  botão na caixa de diálogo, como quando vários campos permitem para navegação. Usar curto **[...]**  botão de cada um para evitar as chaves de acesso confuso criadas por essa situação (**& navegue** e **p & rocurar** na mesma caixa de diálogo).  
   
--   Em uma caixa de diálogo estreita, ou quando não há nenhum lugar razoável para colocar o botão longo.  
+- Em uma caixa de diálogo estreita, ou quando não há nenhum lugar razoável para colocar o botão longo.  
   
--   Se o botão será exibido em um controle de grade.  
+- Se o botão será exibido em um controle de grade.  
   
- Diretrizes para usar o botão:  
+  Diretrizes para usar o botão:  
   
--   Não use uma chave de acesso. Para acessá-lo usando o teclado, o usuário deve guia do controle adjacente. Certifique-se de que a ordem de tabulação é, de modo que qualquer botão de procurar fica imediatamente após o campo que ele será preenchido. Nunca use um caractere de sublinhado abaixo do primeiro período.  
+- Não use uma chave de acesso. Para acessá-lo usando o teclado, o usuário deve guia do controle adjacente. Certifique-se de que a ordem de tabulação é, de modo que qualquer botão de procurar fica imediatamente após o campo que ele será preenchido. Nunca use um caractere de sublinhado abaixo do primeiro período.  
   
--   Defina o Active Accessibility MSAA (Microsoft) **nome** propriedade **procurar...**  (incluindo as reticências) para que a tela leitores lerá como "Procurar" e não "dot-ponto-ponto" ou "período período-período." Para controles gerenciados, isso significa que a configuração de **AccessibleName** propriedade.  
+- Defina o Active Accessibility MSAA (Microsoft) **nome** propriedade **procurar...**  (incluindo as reticências) para que a tela leitores lerá como "Procurar" e não "dot-ponto-ponto" ou "período período-período." Para controles gerenciados, isso significa que a configuração de **AccessibleName** propriedade.  
   
--   Nunca use um sinal de reticências **[...]**  botão para qualquer coisa, exceto uma ação de navegação. Por exemplo, se você precisar um **[novo...]**  botão, mas não tem espaço suficiente para o texto, em seguida, a caixa de diálogo precisa ser reprojetada.  
+- Nunca use um sinal de reticências **[...]**  botão para qualquer coisa, exceto uma ação de navegação. Por exemplo, se você precisar um **[novo...]**  botão, mas não tem espaço suficiente para o texto, em seguida, a caixa de diálogo precisa ser reprojetada.  
   
 ##### <a name="sizing-and-spacing"></a>Dimensionamento e espaçamento  
  ![Dimensionamento &#91;procurar... &#93; botões](../../extensibility/ux-guidelines/media/070703-06-browsesizing.png "070703 06_BrowseSizing")  
@@ -442,13 +442,13 @@ ms.locfileid: "49224036"
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (exibição de árvore e exibição de grade)  
  Um controle trid é um controle complexo que contém uma exibição de árvore em uma grade. Expandindo, recolhimento e navegar pela árvore devem respeitar os mesmos comandos de teclado que uma exibição de árvore, com as seguintes adições:  
   
--   **Seta para a direita:** expandir um nó. Depois que o nó é expandido, ele deve continuar navegando até a coluna mais próxima à direita. Deve interromper a navegação no final da linha.  
+- **Seta para a direita:** expandir um nó. Depois que o nó é expandido, ele deve continuar navegando até a coluna mais próxima à direita. Deve interromper a navegação no final da linha.  
   
--   **Guia:** navega para a célula mais próxima à direita.  No final da linha, a navegação continua para a próxima linha.  
+- **Guia:** navega para a célula mais próxima à direita.  No final da linha, a navegação continua para a próxima linha.  
   
--   **Shift + Tab:** navega para a célula mais próxima à esquerda.  No início da linha, a navegação continua para a célula mais à direita na linha anterior.  
+- **Shift + Tab:** navega para a célula mais próxima à esquerda.  No início da linha, a navegação continua para a célula mais à direita na linha anterior.  
   
- ![Controle Trid no Visual Studio](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
+  ![Controle Trid no Visual Studio](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
   
- **Um controle trid no Visual Studio**
+  **Um controle trid no Visual Studio**
 

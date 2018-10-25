@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e2b3452f64e97d56cae56a2575caa6fea00d1f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296017"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830737"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funcionalidades do IntelliSense o editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ O editor XML fornece os recursos do IntelliSense comparáveis a outros editores 
 ## <a name="intellisense-in-an-xslt-document"></a>O IntelliSense em um documento XSLT  
  Após adicionar um modelo nomeado ou um atributo para o documento de fonte, você pode usar o IntelliSense para inserir o seguinte:  
   
--   Nomes definidos de atributo.  
+- Nomes definidos de atributo.  
   
--   Modos do modelo.  
+- Modos do modelo.  
   
--   Nomes de modelo.  
+- Nomes de modelo.  
   
--   Nomes de parâmetro para um modo determinado.  
+- Nomes de parâmetro para um modo determinado.  
   
--   Nomes de parâmetro para um modelo chamado determinado.  
+- Nomes de parâmetro para um modelo chamado determinado.  
   
- Para obter mais informações, consulte [instruções passo a passo: usando XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tópico.  
+  Para obter mais informações, consulte [instruções passo a passo: usando XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tópico.  
   
 ## <a name="auto-completion"></a>Preenchimento automático  
  O editor XML também facilita editando XML preenchendo na sintaxe XML necessário para você. Por exemplo, se você digitar a seguinte marcação inicial:  
@@ -72,19 +72,19 @@ O editor XML fornece os recursos do IntelliSense comparáveis a outros editores 
   
  Da mesma forma, o editor XML também insere a seguinte sintaxe XML automaticamente para você:  
   
--   Termina uma instrução de processamento:  `?>`  
+- Termina uma instrução de processamento:  `?>`  
   
--   Finalizar um bloco CDATA: `]]>`  
+- Finalizar um bloco CDATA: `]]>`  
   
--   Termine um comentário: `-->`  
+- Termine um comentário: `-->`  
   
--   Termina uma declaração de DTD: `>`  
+- Termina uma declaração de DTD: `>`  
   
- O editor XML também tem a capacidade de inserir uma declaração de namespace se você selecionar um elemento qualificado namespace ou o atributo de uma lista do IntelliSense e de namespace para esse elemento ou atributo ainda não está no escopo.  
+  O editor XML também tem a capacidade de inserir uma declaração de namespace se você selecionar um elemento qualificado namespace ou o atributo de uma lista do IntelliSense e de namespace para esse elemento ou atributo ainda não está no escopo.  
   
- Por exemplo, se você selecionar o elemento de `e:Book` de lista do IntelliSense onde o prefixo é associado ao namespace de `http://books` que não foi declarada no documento, o editor XML insere a declaração de namespace necessário para você. O seguinte é o texto resultante XML:  
+  Por exemplo, se você selecionar o elemento de `e:Book` de lista do IntelliSense onde o prefixo é associado ao namespace de `http://books` que não foi declarada no documento, o editor XML insere a declaração de namespace necessário para você. O seguinte é o texto resultante XML:  
   
- `<e:Book xmlns:e="http://books"`  
+  `<e:Book xmlns:e="http://books"`  
   
 ## <a name="brace-matching"></a>Correspondência de chave  
  O editor XML fornece a chave realçando para fornecer feedback imediato em elementos que apenas se você tiver fechado. Você também pode usar o atalho de teclado (CTRL) para ignorar uma chave da chave correspondente.  

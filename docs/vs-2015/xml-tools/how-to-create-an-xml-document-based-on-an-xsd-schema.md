@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54d7ead9f759e990b741ac9c5219af693d10a412
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbecacc0729c936489c05d3bb59260341a08d314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287256"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884219"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Como criar um documento XML baseado em um esquema XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ O **gerar XML de exemplo** recurso gera um arquivo XML de exemplo com base em se
   
  Você pode usar esta opção para os seguintes situações:  
   
--   Para entender o uso de várias construções no seu esquema.  
+- Para entender o uso de várias construções no seu esquema.  
   
--   Para confirmar que o esquema faz o que é esperado dele.  
+- Para confirmar que o esquema faz o que é esperado dele.  
   
- O **gerar XML de exemplo** recurso só está disponível nos elementos globais e requer um conjunto de esquema XML válido.  
+  O **gerar XML de exemplo** recurso só está disponível nos elementos globais e requer um conjunto de esquema XML válido.  
   
- Esse recurso normalmente gera documentos XML válidos. No entanto, se o esquema contiver um ou mais dos seguintes, o exemplo poderá não ser válido:  
+  Esse recurso normalmente gera documentos XML válidos. No entanto, se o esquema contiver um ou mais dos seguintes, o exemplo poderá não ser válido:  
   
--   As restrições de identidade `xs:key`, `xs:keyref` e `xs:unique`.  
+- As restrições de identidade `xs:key`, `xs:keyref` e `xs:unique`.  
   
--   `xs:pattern` facetas.  
+- `xs:pattern` facetas.  
   
--   Enumerações do tipo `xs:QName`.  
+- Enumerações do tipo `xs:QName`.  
   
--   Tipos `xs:ENTITY`, `xs:ENTITIES` e `xs:NOTATION`.  
+- Tipos `xs:ENTITY`, `xs:ENTITIES` e `xs:NOTATION`.  
   
- Além disso, observe que o conteúdo de `xs:base64Binary` será gerado apenas se as enumerações ocorrerem no esquema para esse tipo.  
+  Além disso, observe que o conteúdo de `xs:base64Binary` será gerado apenas se as enumerações ocorrerem no esquema para esse tipo.  
   
 ### <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Para gerar um documento de instância XML baseado no arquivo XSD  
   

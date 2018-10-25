@@ -34,12 +34,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26e3efd74d020678d6c908ccf77eb6f35349b9b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2c5c15e9ec78efa2fa3c12c0c70d2573bd50697
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825680"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar aos processos em execução com o Depurador do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,31 +83,31 @@ Você pode usar esse recurso para depurar aplicativos em execução em um comput
 
 1. No Visual Studio, selecione **depurar / anexar ao processo** (ou pressione **CTRL + ALT + P**).
 
-2.  No **anexar ao processo** caixa de diálogo, selecione a conexão apropriada de tipo dos **transporte** lista. **Padrão** é a configuração correta para a maioria dos casos.
+2. No **anexar ao processo** caixa de diálogo, selecione a conexão apropriada de tipo dos **transporte** lista. **Padrão** é a configuração correta para a maioria dos casos.
 
-    O **transporte** configuração persiste entre as sessões de depuração. 
+   O **transporte** configuração persiste entre as sessões de depuração. 
   
-3.  Use o **qualificador** caixa de listagem para escolher o nome do computador remoto por um dos seguintes métodos:  
+3. Use o **qualificador** caixa de listagem para escolher o nome do computador remoto por um dos seguintes métodos:  
   
-    1.  Digite o nome na **qualificador** caixa de listagem.
+   1. Digite o nome na **qualificador** caixa de listagem.
     
-        >**Observação** se, em etapas posteriores, você não pode se conectar usando o nome do computador remoto, use o endereço IP. (O número da porta pode aparecer automaticamente depois de selecionar o processo. Você também pode inseri-lo manualmente. Na ilustração abaixo, 4020 é a porta padrão para o depurador remoto.)  
+      >**Observação** se, em etapas posteriores, você não pode se conectar usando o nome do computador remoto, use o endereço IP. (O número da porta pode aparecer automaticamente depois de selecionar o processo. Você também pode inseri-lo manualmente. Na ilustração abaixo, 4020 é a porta padrão para o depurador remoto.)  
   
-    2.  Clique na seta suspensa anexada para o **qualificador** caixa de listagem e selecione o nome do computador na lista suspensa.  
+   2. Clique na seta suspensa anexada para o **qualificador** caixa de listagem e selecione o nome do computador na lista suspensa.  
   
-    3.  Clique o **encontrar** lado a**qualificador** lista para abrir o **Selecionar Conexão de depurador remoto** caixa de diálogo. O **Selecionar Conexão de depurador remoto** caixa de diálogo lista todos os dispositivos que estão em sua sub-rede local e qualquer dispositivo que está diretamente conectado ao computador por um cabo Ethernet. Clique no computador ou dispositivo que você deseja e, em seguida, clique em **selecionar**. 
+   3. Clique o **encontrar** lado a**qualificador** lista para abrir o **Selecionar Conexão de depurador remoto** caixa de diálogo. O **Selecionar Conexão de depurador remoto** caixa de diálogo lista todos os dispositivos que estão em sua sub-rede local e qualquer dispositivo que está diretamente conectado ao computador por um cabo Ethernet. Clique no computador ou dispositivo que você deseja e, em seguida, clique em **selecionar**. 
   
-     O **qualificador** configuração persiste entre as sessões de depuração somente se uma conexão de depuração bem-sucedida ocorre com o qualificador.
+      O **qualificador** configuração persiste entre as sessões de depuração somente se uma conexão de depuração bem-sucedida ocorre com o qualificador.
      
-4.  Clique em **Refresh**.
+4. Clique em **Refresh**.
 
-      O **processos disponíveis** lista é exibida automaticamente quando você abrir o **processos** caixa de diálogo. Os processos podem iniciar e parar em segundo plano quando a caixa de diálogo está aberta. No entanto, o conteúdo nem sempre será atual. Você pode atualizar a lista a qualquer momento para ver a lista atual de processos clicando **Refresh**. 
+     O **processos disponíveis** lista é exibida automaticamente quando você abrir o **processos** caixa de diálogo. Os processos podem iniciar e parar em segundo plano quando a caixa de diálogo está aberta. No entanto, o conteúdo nem sempre será atual. Você pode atualizar a lista a qualquer momento para ver a lista atual de processos clicando **Refresh**. 
      
-4.  No **anexar ao processo** diálogo caixa, localize o programa que você deseja anexar a partir de **processos disponíveis** lista.  
+5. No **anexar ao processo** diálogo caixa, localize o programa que você deseja anexar a partir de **processos disponíveis** lista.  
   
-     Se o processo está em execução em uma conta de usuário diferente, selecione a **Mostrar processos de todos os usuários** caixa de seleção.
+    Se o processo está em execução em uma conta de usuário diferente, selecione a **Mostrar processos de todos os usuários** caixa de seleção.
      
-5.  Clique em **Anexar**.  
+6. Clique em **Anexar**.  
 
 ## <a name="additional-info"></a>Informações adicionais
 
@@ -164,21 +164,21 @@ Em alguns cenários de depuração locais, você pode depurar no Visual Studio s
   
  **Para obter informações específicas sobre por que um tipo de código falha ao anexar**  
   
-1.  Desanexe do processo. Sobre o **Debug** menu, clique em **desanexar tudo**.  
+1. Desanexe do processo. Sobre o **Debug** menu, clique em **desanexar tudo**.  
   
-2.  Anexe o processo novamente, selecionando apenas um único tipo de código.  
+2. Anexe o processo novamente, selecionando apenas um único tipo de código.  
   
-    1.  No **anexar ao processo** caixa de diálogo, selecione o processo na **processos disponíveis** lista.  
+   1. No **anexar ao processo** caixa de diálogo, selecione o processo na **processos disponíveis** lista.  
   
-    2.  Clique em **selecionar**.  
+   2. Clique em **selecionar**.  
   
-    3.  No **Selecionar tipo de código** caixa de diálogo, selecione **depurar esses tipos de código** e o tipo de código que não foi anexado. Limpe qualquer outro código.  
+   3. No **Selecionar tipo de código** caixa de diálogo, selecione **depurar esses tipos de código** e o tipo de código que não foi anexado. Limpe qualquer outro código.  
   
-    4.  Clique em **OK**. O **Select Code Type** caixa de diálogo é fechada.  
+   4. Clique em **OK**. O **Select Code Type** caixa de diálogo é fechada.  
   
-    5.  No **anexar ao processo** caixa de diálogo, clique em **Attach**.  
+   5. No **anexar ao processo** caixa de diálogo, clique em **Attach**.  
   
-     Desta vez, o anexo falhará completamente e você receberá uma mensagem de erro específica.  
+      Desta vez, o anexo falhará completamente e você receberá uma mensagem de erro específica.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurar vários processos](../debugger/debug-multiple-processes.md)   

@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 67c1661543370dc589bf5a20ad8837913e9d19e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1b99999c3a075b6e79f2b98fc70cf50a9d01a84d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199206"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892825"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Usando o Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ Nesta seção, você aprenderá como usar os recursos de integração e produtiv
   
 ##### <a name="to-create-empty-monobehavior-method-definitions-by-using-the-monobehavior-wizard"></a>Para criar definições de método MonoBehavior vazias usando o Assistente do MonoBehavior  
   
-1.  No Visual Studio, posicione o cursor onde quiser que os métodos sejam inseridos e pressione **Ctrl+Shift+M** para iniciar o Assistente do MonoBehavior. Ou, se você deseja inserir os novos métodos depois que um já foi implementado, é possível especificar isso posteriormente; Basta pressionar **Ctrl+Shift+M**.  
+1. No Visual Studio, posicione o cursor onde quiser que os métodos sejam inseridos e pressione **Ctrl+Shift+M** para iniciar o Assistente do MonoBehavior. Ou, se você deseja inserir os novos métodos depois que um já foi implementado, é possível especificar isso posteriormente; Basta pressionar **Ctrl+Shift+M**.  
   
-2.  Selecione os métodos que deseja sobrecarregar. Na janela **Criar métodos de script**, em **Selecionar métodos para criar**, marque a caixa de seleção ao lado do nome de cada método para sobrecarregar.  
+2. Selecione os métodos que deseja sobrecarregar. Na janela **Criar métodos de script**, em **Selecionar métodos para criar**, marque a caixa de seleção ao lado do nome de cada método para sobrecarregar.  
   
-3.  Certifique-se de que a versão do framework exibida na lista suspensa **Versão do Framework** corresponde à versão que você está usando. Se não corresponder, altere o valor da lista suspensa para a versão que deseja usar.  
+3. Certifique-se de que a versão do framework exibida na lista suspensa **Versão do Framework** corresponde à versão que você está usando. Se não corresponder, altere o valor da lista suspensa para a versão que deseja usar.  
   
-4.  Escolha onde os métodos serão inseridos. Por padrão, os métodos são inseridos na posição do cursor; Se desejar inseri-los em outro lugar, é possível inseri-los depois de qualquer método que já esteja implementado na classe. Para escolher um desses locais, altere o valor da lista suspensa **Ponto de inserção** para o local desejado.  
+4. Escolha onde os métodos serão inseridos. Por padrão, os métodos são inseridos na posição do cursor; Se desejar inseri-los em outro lugar, é possível inseri-los depois de qualquer método que já esteja implementado na classe. Para escolher um desses locais, altere o valor da lista suspensa **Ponto de inserção** para o local desejado.  
   
-5.  Se desejar que o Assistente gere comentários para os métodos que você selecionou, marque a caixa de seleção **Gerar comentários do método**. Esses comentários servem para ajudá-lo a entender quando o método é chamado e quais são suas responsabilidades gerais.  
+5. Se desejar que o Assistente gere comentários para os métodos que você selecionou, marque a caixa de seleção **Gerar comentários do método**. Esses comentários servem para ajudá-lo a entender quando o método é chamado e quais são suas responsabilidades gerais.  
   
-6.  Selecione o botão **OK** para sair do assistente e inserir os métodos em seu código.  
+6. Selecione o botão **OK** para sair do assistente e inserir os métodos em seu código.  
   
- O Assistente do MonoBehavior é especialmente útil enquanto ainda estiver aprendendo a API do Unity ou quando você precisar sobrecarregar um método com o qual não esteja familiarizado. Conforme você se torna experiente com a API do Unity, é possível usar o Assistente rápido do MonoBehavior para criar métodos rapidamente com os quais você já está familiarizado.  
+   O Assistente do MonoBehavior é especialmente útil enquanto ainda estiver aprendendo a API do Unity ou quando você precisar sobrecarregar um método com o qual não esteja familiarizado. Conforme você se torna experiente com a API do Unity, é possível usar o Assistente rápido do MonoBehavior para criar métodos rapidamente com os quais você já está familiarizado.  
   
 #### <a name="quick-monobehavior-scripting-wizard"></a>Assistente rápido de script do MonoBehavior  
  Quando já estiver familiarizado com a API do Unity, é possível implementar métodos sobrecarregados ainda mais rapidamente usando o Assistente rápido de MonoBehavior. Ao usar este assistente, você pode especificar apenas um método que seja inserido sem comentários de método no local do cursor.  
@@ -80,11 +80,11 @@ Nesta seção, você aprenderá como usar os recursos de integração e produtiv
   
 ##### <a name="to-view-the-unity-project-explorer"></a>Para exibir o Gerenciador de Projetos do Unity  
   
--   No Visual Studio, no menu principal, escolha **Exibição**, **Gerenciador de Projetos do Unity**. Teclado: **Alt+Shift+E**  
+- No Visual Studio, no menu principal, escolha **Exibição**, **Gerenciador de Projetos do Unity**. Teclado: **Alt+Shift+E**  
   
-     ![Exibir a janela Gerenciador de Projetos do Unity. ](../cross-platform/media/vstu-view-unity-project-explorer.png "vstu_view_unity_project_explorer")  
+   ![Exibir a janela Gerenciador de Projetos do Unity. ](../cross-platform/media/vstu-view-unity-project-explorer.png "vstu_view_unity_project_explorer")  
   
- O Gerenciador de Projetos do Unity mostra todos os arquivos de projeto do Unity e diretórios da mesma forma que o Editor do Unity, isso é diferente de navegar nos scripts do Unity com o Gerenciador de Soluções, que contém somente os arquivos de script e os exibe como os projetos e a solução gerada pelas Ferramentas do Visual Studio para Unity. Especialmente em grandes projetos, geralmente, é mais fácil localizar o script que deseja modificar usando o Gerenciador de Projetos do Unity; Ele também torna mais fácil modificar outros tipos de arquivos, por exemplo, arquivos de configuração com base em texto, no Visual studio sem adicioná-los a um dos projetos na solução do Visual Studio.  
+  O Gerenciador de Projetos do Unity mostra todos os arquivos de projeto do Unity e diretórios da mesma forma que o Editor do Unity, isso é diferente de navegar nos scripts do Unity com o Gerenciador de Soluções, que contém somente os arquivos de script e os exibe como os projetos e a solução gerada pelas Ferramentas do Visual Studio para Unity. Especialmente em grandes projetos, geralmente, é mais fácil localizar o script que deseja modificar usando o Gerenciador de Projetos do Unity; Ele também torna mais fácil modificar outros tipos de arquivos, por exemplo, arquivos de configuração com base em texto, no Visual studio sem adicioná-los a um dos projetos na solução do Visual Studio.  
   
 ### <a name="unity-error-list"></a>Lista de Erros do Unity  
  Você pode exibir as mensagens do console do Unity dentro do Visual Studio quando ele estiver conectado a uma instância do Unity. Isso inclui erros e avisos do Unity. As mensagens são exibidas na janela **Lista de Erros** do Visual Studio; mensagens de erro do Unity são exibidas na guia **Erros**, as mensagens de aviso na guia **Avisos** e outras mensagens, por exemplo, as mensagens enviadas usando a API do Unity Debug. Log, são exibidas na guia **Mensagens**.  
@@ -149,20 +149,20 @@ Nesta seção, você aprenderá como usar os recursos de integração e produtiv
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>Para habilitar a depuração de scripts em um player do Unity  
   
--   certifique-se de que esteja criando um build de desenvolvimento com a depuração de script habilitada. Nas configurações de build do seu projeto do Unity, marque as caixas de seleção **Build de Desenvolvimento** e **Depuração de Script**.  
+- certifique-se de que esteja criando um build de desenvolvimento com a depuração de script habilitada. Nas configurações de build do seu projeto do Unity, marque as caixas de seleção **Build de Desenvolvimento** e **Depuração de Script**.  
   
- ![Defina as configurações de build do Unity para depuração. ](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
+  ![Defina as configurações de build do Unity para depuração. ](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
- Além disso, para depurar um aplicativo Unity em execução no **Web Player do Unity**, também é necessário configurá-lo para usar o **Canal de versão de desenvolvimento**.  
+  Além disso, para depurar um aplicativo Unity em execução no **Web Player do Unity**, também é necessário configurá-lo para usar o **Canal de versão de desenvolvimento**.  
   
 ##### <a name="to-configure-the-development-release-channel-in-unity-web-player"></a>Para configurar o Canal de versão de desenvolvimento no Web Player do Unity  
   
--   No Web Player do Unity, no menu de contexto, escolha **Canal de Versão** e certifique-se de que a opção **Desenvolvimento** esteja habilitada.  
+- No Web Player do Unity, no menu de contexto, escolha **Canal de Versão** e certifique-se de que a opção **Desenvolvimento** esteja habilitada.  
   
-    > [!IMPORTANT]
-    >  No Unity 4.2 e posterior, o item de menu de contexto **Canal de Versão** só está disponível no menu de contexto do Web Player quando a tecla **Alt** é pressionada à medida que o menu de contexto é aberto. Se o Web Player estiver sendo executado no Mac OS X, pressione a tecla **Opção**.  
+  > [!IMPORTANT]
+  >  No Unity 4.2 e posterior, o item de menu de contexto **Canal de Versão** só está disponível no menu de contexto do Web Player quando a tecla **Alt** é pressionada à medida que o menu de contexto é aberto. Se o Web Player estiver sendo executado no Mac OS X, pressione a tecla **Opção**.  
   
- Finalmente, certifique-se de que você esteja conectado à instância do Unity que você deseja depurar. Para obter informações sobre como fazer isso, consulte a seção [Conectando o Visual Studio ao Unity](#connecting-visual-studio-to-unity).  
+  Finalmente, certifique-se de que você esteja conectado à instância do Unity que você deseja depurar. Para obter informações sobre como fazer isso, consulte a seção [Conectando o Visual Studio ao Unity](#connecting-visual-studio-to-unity).  
   
 ### <a name="debugging-a-dll-in-your-unity-project"></a>Depurando uma DLL em seu projeto do Unity  
  Muitos desenvolvedores do Unity estão escrevendo componentes de código como DLLs externas para que a funcionalidade que desenvolvem possa ser facilmente compartilhada com outros projetos. Ferramentas do Visual Studio para Unity facilitam a depuração do código nessas DLLs perfeitamente com outro código no seu projeto do Unity.  
@@ -174,23 +174,23 @@ Nesta seção, você aprenderá como usar os recursos de integração e produtiv
   
 ##### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Para depurar um projeto de DLL gerenciado usado em seu projeto do Unity  
   
-1.  Adicione o projeto de DLL existente para a solução do Visual Studio gerada pelas Ferramentas do Visual Studio para Unity. Com menos frequência, você pode iniciar um novo projeto DLL gerenciado para conter componentes de código no seu projeto do Unity; Se esse for o caso, você poderá adicionar um novo projeto de DLL gerenciado para a solução do Visual Studio em vez disso. Para obter mais informações sobre como adicionar um projeto novo ou existente a uma solução, consulte [Como adicionar projetos a uma solução](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).  
+1. Adicione o projeto de DLL existente para a solução do Visual Studio gerada pelas Ferramentas do Visual Studio para Unity. Com menos frequência, você pode iniciar um novo projeto DLL gerenciado para conter componentes de código no seu projeto do Unity; Se esse for o caso, você poderá adicionar um novo projeto de DLL gerenciado para a solução do Visual Studio em vez disso. Para obter mais informações sobre como adicionar um projeto novo ou existente a uma solução, consulte [Como adicionar projetos a uma solução](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).  
   
-     ![Adicione o projeto de DLL existente à solução.](../cross-platform/media/vstu-debugging-dll-add-existing.png "vstu_debugging_dll_add_existing")  
+    ![Adicione o projeto de DLL existente à solução.](../cross-platform/media/vstu-debugging-dll-add-existing.png "vstu_debugging_dll_add_existing")  
   
-     Em ambos os casos, as Ferramentas do Visual Studio para Unity mantêm a referência de projeto, mesmo se ele tiver de gerar novamente os arquivos de projeto e solução novamente, então, você precisa executar essas etapas de uma vez.  
+    Em ambos os casos, as Ferramentas do Visual Studio para Unity mantêm a referência de projeto, mesmo se ele tiver de gerar novamente os arquivos de projeto e solução novamente, então, você precisa executar essas etapas de uma vez.  
   
-2.  Faça referência ao perfil de framework do Unity correto no projeto de DLL. No Visual Studio, nas propriedades do projeto DLL, defina a propriedade **Estrutura de destino** para a versão do framework do Unity que você está usando. Essa é a Biblioteca de classes base di Unity que corresponde à compatibilidade de API que seu projeto tenha como alvo, como bibliotecas de classes base completas, micro ou da Web. Isso impede que a DLL chame métodos do framework que existem em outros frameworks ou níveis de compatibilidade, mas que podem não existir na versão de framework do Unity que você está usando.  
+2. Faça referência ao perfil de framework do Unity correto no projeto de DLL. No Visual Studio, nas propriedades do projeto DLL, defina a propriedade **Estrutura de destino** para a versão do framework do Unity que você está usando. Essa é a Biblioteca de classes base di Unity que corresponde à compatibilidade de API que seu projeto tenha como alvo, como bibliotecas de classes base completas, micro ou da Web. Isso impede que a DLL chame métodos do framework que existem em outros frameworks ou níveis de compatibilidade, mas que podem não existir na versão de framework do Unity que você está usando.  
   
-     ![Defina a estrutura de destino da DLL para o framework do Unity.](../cross-platform/media/vstu-debugging-dll-target-framework.png "vstu_debugging_dll_target_framework")  
+    ![Defina a estrutura de destino da DLL para o framework do Unity.](../cross-platform/media/vstu-debugging-dll-target-framework.png "vstu_debugging_dll_target_framework")  
   
-3.  Copie a DLL para a pasta Ativos do seu projeto do Unity. No Unity, ativos são arquivos que são empacotados e implantados juntos com seu aplicativo do Unity para que eles possam ser carregados no tempo de execução. Como DLLs vinculadas no tempo de execução, elas devem ser implantadas como ativos. Para serem implantadas como um ativo, o Editor do Unity exige que as DLLs sejam colocadas dentro da pasta Ativos em seu projeto do Unity. Há duas formas de fazer isso:  
+3. Copie a DLL para a pasta Ativos do seu projeto do Unity. No Unity, ativos são arquivos que são empacotados e implantados juntos com seu aplicativo do Unity para que eles possam ser carregados no tempo de execução. Como DLLs vinculadas no tempo de execução, elas devem ser implantadas como ativos. Para serem implantadas como um ativo, o Editor do Unity exige que as DLLs sejam colocadas dentro da pasta Ativos em seu projeto do Unity. Há duas formas de fazer isso:  
   
-    -   Modifique as configurações de build do seu projeto de DLL para incluir uma tarefa posterior ao build que copia os arquivos DLL e PDB de saída de sua pasta de saída para a pasta **Ativos** do seu projeto do Unity.  
+   - Modifique as configurações de build do seu projeto de DLL para incluir uma tarefa posterior ao build que copia os arquivos DLL e PDB de saída de sua pasta de saída para a pasta **Ativos** do seu projeto do Unity.  
   
-    -   Modifique as configurações de build do seu projeto de DLL para definir a pasta de saída como a pasta **Ativos** do seu projeto do Unity. Arquivos DLL e PDB serão colocados na pasta **Ativos**.  
+   - Modifique as configurações de build do seu projeto de DLL para definir a pasta de saída como a pasta **Ativos** do seu projeto do Unity. Arquivos DLL e PDB serão colocados na pasta **Ativos**.  
   
      Os arquivos PDB são necessários para a depuração porque eles contêm símbolos de depuração da DLL e mapeiam o código da DLL para sua forma de código-fonte. As Ferramentas do Visual Studio para Unity usarão informações da DLL e PDB para criar um arquivo DLL.MDB, que é o formato de símbolo de depuração usado pelo mecanismo de script do Unity.  
   
-4.  Depure seu código. Agora você pode depurar seu código-fonte de DLL junto com o código-fonte do seu projeto do Unity e usar todos os recursos de depuração com os quais esteja acostumado, como pontos de interrupção e depuração no código.
+4. Depure seu código. Agora você pode depurar seu código-fonte de DLL junto com o código-fonte do seu projeto do Unity e usar todos os recursos de depuração com os quais esteja acostumado, como pontos de interrupção e depuração no código.
 

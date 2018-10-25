@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7890f5c1db26616ec1041b202a3863d1fbfae20e
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 72b5472b6a23729026d9e044b7190f031eaaf4bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234157"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845405"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analisar resultados do teste de carga usando o Analisador de Teste de Carga
 
@@ -44,8 +44,8 @@ Essas tarefas podem ser concluídas se você executar o teste de carga no Visual
 ## <a name="tasks"></a>Tarefas
 
 |Tarefas|Tópicos associados|
-|-----------|-----------------------|
+|-|-|
 |**Acessando os resultados do teste de carga:** quando você executar um teste de carga usando o Editor de Teste de Carga, os resultados do teste de carga serão abertos automaticamente e o teste de carga em execução será exibido no **Analisador de Teste de Carga**.|-   [Como acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)|
-|**Adicionar observações de análise ao teste de carga:** você pode adicionar comentários ao seu teste de carga quando você conduz sua análise. Os comentários são armazenados permanentemente, junto com o resultado do teste de carga. A descrição inserida também aparece na coluna **Descrição** associada ao teste de carga na caixa de diálogo **Abrir e Gerenciar Resultados dos Testes** no Editor de Teste de Carga.<br /><br /> Para obter mais informações, confira [Como acessar resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md).<br /><br /> Além disso, os comentários são exibidos quando você cria um relatório do Excel para os resultados de testes de carga.<br /><br /> Para obter mais informações, confira [Relatando resultados do teste de carga para comparações de testes ou análise de tendências](../test/compare-load-test-results.md).|-   [Como adicionar comentários durante análise de um teste de carga completo](../test/how-to-add-comments-on-a-completed-load-test.md)|
+|**Adicionar observações de análise ao teste de carga:** você pode adicionar comentários ao seu teste de carga quando você conduz sua análise. Os comentários são armazenados permanentemente, junto com o resultado do teste de carga. A descrição inserida também aparece na coluna **Descrição** associada ao teste de carga na caixa de diálogo **Abrir e Gerenciar Resultados dos Testes** no Editor de Teste de Carga.<br /><br /> Para saber mais, confira [Como acessar resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md).<br /><br /> Além disso, os comentários são exibidos quando você cria um relatório do Excel para os resultados de testes de carga.<br /><br /> Para saber mais, confira [Relatando resultados do teste de carga para comparações de testes ou análise de tendências](../test/compare-load-test-results.md).|-   [Como adicionar comentários durante análise de um teste de carga completo](../test/how-to-add-comments-on-a-completed-load-test.md)|
 |**Analisando os resultados do teste de carga:** depois de acessar os dados de execução de teste de carga, você pode analisar os dados resultantes. Você pode exibir o Resumo do Teste de Carga para entender os resultados rapidamente. O resumo do teste de carga mostra os resultados-chave em um formato compacto e fácil de ler.<br /><br /> Você pode imprimir o resumo do teste de carga. Isso deixa prático usá-lo quando você comunica resultados aos participantes.<br /><br /> Você pode analisar os detalhes dos resultados do teste de carga usando os gráficos e tabelas dos resultados. Eles incluem **Erros**, **Páginas**, **Solicitações**, **Rastreamento do SQL**, **Testes**, **Limites** e **Transações**.|-   [Visão geral resumida dos resultados do teste de carga](../test/load-test-results-summary-overview.md)<br />-   [Como exibir resposta da página da Web](../test/how-to-view-web-page-response-time-in-a-load-test.md)<br />-   [Analisando violações de regra de limite](../test/analyze-threshold-rule-violations-in-load-tests.md)<br />-   [Analisar resultados do teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md)<br />-   [Analisar resultados do teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)|
 |**Analisando a atividade de usuário virtual nos resultados do teste de carga para isolar problemas de desempenho:** você pode usar o Gráfico de atividade do usuário virtual para visualizar o que os usuários virtuais estão fazendo durante um teste de carga. Isso pode ajudar a isolar picos em uma CPU ou quedas em solicitações/s, e determina quais testes ou páginas estão em execução durante esses picos e quedas.|-   [Analisando a atividade do usuário virtual na exibição Detalhes](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)|

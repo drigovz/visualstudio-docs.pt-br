@@ -9,12 +9,12 @@ description: Saiba como exportar uma lista de assinantes e os detalhes de suas a
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9b2e03235391826c7a8cc486089a5a3e6384b09a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 8881c2d1779d3aea8289397e459c70868698e0f3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867241"
 ---
 # <a name="exporting-subscription-information"></a>Exportando informações de assinatura
 
@@ -24,4 +24,4 @@ Esse recurso é útil em alguns cenários, como atribuições de acompanhamento 
 
 Para realizar a exportação, basta selecionar a guia **Exportar** e o arquivo é baixado no computador local. O arquivo inclui o nome da conta do contrato que contém suas assinaturas do usuário e também a data da exportação.  
 > [!div class="mx-imgBorder"]
-> ![Exportar assinantes](_img\exporting-subscriptions\exporting-subscriptions.png)
+> ![Exportar assinantes](_img/exporting-subscriptions/exporting-subscriptions.png)

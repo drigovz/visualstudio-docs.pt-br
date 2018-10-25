@@ -22,12 +22,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: da31c33288489c3dbaef8a51b5c3fe2fe96d818b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c832686cbe56bb9d2a3b9f31206dada8043e7b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241495"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918630"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Associar objetos no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,11 +64,11 @@ Visual Studio fornece ferramentas de tempo de design para trabalhar com objetos 
 ### <a name="loaddata-into-objects"></a>LoadData em objetos  
  Neste exemplo, você carrega dados em seus objetos usando TableAdapters. Por padrão, os TableAdapters são criados com dois tipos de métodos que buscam dados de um banco de dados e popular tabelas de dados.  
   
--   O `TableAdapter.Fill` método preenche uma tabela de dados existente com os dados retornados.  
+- O `TableAdapter.Fill` método preenche uma tabela de dados existente com os dados retornados.  
   
--   O `TableAdapter.GetData` método retorna uma nova tabela de dados preenchida com dados.  
+- O `TableAdapter.GetData` método retorna uma nova tabela de dados preenchida com dados.  
   
- A maneira mais fácil de carregar os objetos personalizados com dados é chamar o `TableAdapter.GetData` método, um loop através da coleção de linhas na tabela de dados retornados e preencher cada objeto com os valores em cada linha. Você pode criar um `GetData` método que retorna uma tabela de dados preenchida para qualquer consulta adicionada a um TableAdapter.  
+  A maneira mais fácil de carregar os objetos personalizados com dados é chamar o `TableAdapter.GetData` método, um loop através da coleção de linhas na tabela de dados retornados e preencher cada objeto com os valores em cada linha. Você pode criar um `GetData` método que retorna uma tabela de dados preenchida para qualquer consulta adicionada a um TableAdapter.  
   
 > [!NOTE]
 >  Visual Studio nomeia as consultas TableAdapter `Fill` e `GetData` por padrão, mas esses nomes podem ser alterados a qualquer nome de método válido.  

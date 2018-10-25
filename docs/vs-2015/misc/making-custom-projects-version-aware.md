@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: 3ae06a36155ed7270ce01178fa49e40dff06aed8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236321"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832999"
 ---
 # <a name="making-custom-projects-version-aware"></a>Tornando projetos personalizados com reconhecimento de versão
 No seu sistema de projeto personalizado, você pode permitir que os projetos desse tipo de carga em várias versões do Visual Studio. Você também pode impedir projetos deste tipo de carregamento em uma versão anterior do Visual Studio. Você também pode habilitar esse projeto para se identificar para uma versão posterior, no caso do projeto exige o reparo, a conversão ou a substituição.  
@@ -125,13 +125,13 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  Se esse método define `pUpgradeRequired` como TRUE e retornará `S_OK`, o resultado será tratado como "Atualização" e como se o método definido um sinalizador de atualização para o valor `VSPUVF_PROJECT_ONEWAYUPGRADE`, que é descrito posteriormente neste tópico. A seguir retorna valores têm suporte usando esse método mais antigo, mas somente quando `pUpgradeRequired` está definido como TRUE:  
   
-1.  `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Converte esse valor de retorno de `pUpgradeRequired` valor como TRUE equivalentes às `VSPUVF_PROJECT_SAFEREPAIR`, que é descrito posteriormente neste tópico.  
+1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Converte esse valor de retorno de `pUpgradeRequired` valor como TRUE equivalentes às `VSPUVF_PROJECT_SAFEREPAIR`, que é descrito posteriormente neste tópico.  
   
-2.  `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Converte esse valor de retorno de `pUpgradeRequired` valor como TRUE equivalentes às `VSPUVF_PROJECT_UNSAFEREPAIR`, que é descrito posteriormente neste tópico  
+2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Converte esse valor de retorno de `pUpgradeRequired` valor como TRUE equivalentes às `VSPUVF_PROJECT_UNSAFEREPAIR`, que é descrito posteriormente neste tópico  
   
-3.  `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Converte esse valor de retorno de `pUpgradeRequired` valor como TRUE equivalentes às `VSPUVF_PROJECT_ONEWAYUPGRADE`, que é descrito posteriormente neste tópico.  
+3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Converte esse valor de retorno de `pUpgradeRequired` valor como TRUE equivalentes às `VSPUVF_PROJECT_ONEWAYUPGRADE`, que é descrito posteriormente neste tópico.  
   
- As novas implementações na `IVsProjectUpgradeViaFactory4` e `IVsProjectFlavorUpgradeViaFactory2` habilitar especificando o tipo de migração com mais precisão.  
+   As novas implementações na `IVsProjectUpgradeViaFactory4` e `IVsProjectFlavorUpgradeViaFactory2` habilitar especificando o tipo de migração com mais precisão.  
   
 > [!NOTE]
 >  Você pode armazenar em cache o resultado da verificação de compatibilidade, o `UpgradeProject_CheckOnly` , de modo que ele também pode ser usado por uma chamada subsequente para `CreateProject`.  

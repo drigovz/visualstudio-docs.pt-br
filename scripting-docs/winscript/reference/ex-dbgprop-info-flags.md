@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0af0de81c0253b72fe432cb3cefe11c362bc2ec4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e66ff43cd51977bf0c23ca0e024a2e05b53f5022
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878083"
 ---
 # <a name="exdbgpropinfoflags"></a>EX_DBGPROP_INFO_FLAGS
 Usado para especificar `ExtendedDebugPropertyInfo` campos.  
@@ -42,7 +42,7 @@ enum {
   
 ## <a name="members"></a>Membros  
  EX_DBGPROP_INFO_ID  
- Inicializa o identificador para a propriedade.  
+ Inicializa um identificador para a propriedade.  
   
  EX_DBGPROP_INFO_NTYPE  
  Inicializa o tipo da propriedade.  

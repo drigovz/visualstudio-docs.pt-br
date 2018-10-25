@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3d44834fe02f873007e7461c789fb94f98c9208e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df09e647908b264ade467b8fafd4487641d3be6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301855"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841098"
 ---
 # <a name="install-visual-studio-2015"></a>Instalar o Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,17 +135,17 @@ Esta página inclui informações detalhadas para ajudá-lo com a instalação *
   
 #### <a name="to-install-or-uninstall-help-content"></a>Para instalar ou desinstalar conteúdo da Ajuda  
   
-1.  Sobre o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu da barra, escolha **ajuda**, **adicionar e remover conteúdo da Ajuda**.  
+1. Sobre o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu da barra, escolha **ajuda**, **adicionar e remover conteúdo da Ajuda**.  
   
-2.  No **gerenciar conteúdo** guia da **Microsoft Help Viewer**, selecione a fonte de instalação para o conteúdo da Ajuda.  
+2. No **gerenciar conteúdo** guia da **Microsoft Help Viewer**, selecione a fonte de instalação para o conteúdo da Ajuda.  
   
-3.  Se você estiver procurando uma coleção específica da Ajuda, digite o nome ou uma palavra-chave as **pesquisa** caixa de texto e pressione **Enter**.  
+3. Se você estiver procurando uma coleção específica da Ajuda, digite o nome ou uma palavra-chave as **pesquisa** caixa de texto e pressione **Enter**.  
   
-4.  Ao lado do nome da coleção de Ajuda que você deseja, escolha o **Add** ou **remover** link.  
+4. Ao lado do nome da coleção de Ajuda que você deseja, escolha o **Add** ou **remover** link.  
   
-5.  Clique o **atualização** botão.  
+5. Clique o **atualização** botão.  
   
- Para obter mais informações sobre como instalar ou implantar ajuda offline, consulte o [guia de administrador do Visualizador da Ajuda](../ide/help-viewer-administrator-guide.md).  
+   Para obter mais informações sobre como instalar ou implantar ajuda offline, consulte o [guia de administrador do Visualizador da Ajuda](../ide/help-viewer-administrator-guide.md).  
   
 ##  <a name="serviceReleases"></a> Verificando liberações de serviço e atualizações de produto  
  Porque nem todas as extensões são compatíveis, o Visual Studio não atualiza extensões automaticamente quando você atualizar de versões anteriores. Você deverá reinstalar as extensões do [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=178891) ou do Editor do software.  

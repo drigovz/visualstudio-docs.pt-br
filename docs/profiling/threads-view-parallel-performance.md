@@ -14,29 +14,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 80ce83bba65affcb47a702d572d8d962f712667e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883965"
 ---
 # <a name="threads-view-parallel-performance"></a>Exibição de threads (desempenho paralelo)
 A **Exibição de Threads** é a mais detalhada e cheia de recursos do Visualizador de Simultaneidade (escolha **Analisar** > **Visualizador de Simultaneidade** para iniciar o visualizador de simultaneidade). Ao usar essa exibição, é possível identificar se os threads estão sendo executados ou bloqueados devido à sincronização, E/S ou a algum outro motivo.  
   
  Durante a análise do perfil, a Visualização Simultânea examina todos os eventos de alternância de contexto do sistema operacional em cada thread do aplicativo. Alternâncias de contexto podem ocorrer por vários motivos, como estes:  
   
--   Um thread é bloqueado em um primitivo de sincronização.  
+- Um thread é bloqueado em um primitivo de sincronização.  
   
--   O quantum de um thread expira.  
+- O quantum de um thread expira.  
   
--   Um thread faz uma solicitação de E/S de bloqueio.  
+- Um thread faz uma solicitação de E/S de bloqueio.  
   
- A Exibição Threads atribui uma categoria a cada alternância de contexto quando um thread interrompe a execução. As categorias são mostradas na legenda, na parte inferior esquerda da exibição. A Visualização Simultânea categoriza eventos de alternância de contexto pesquisando APIs de bloqueio conhecidas na pilha de chamadas do thread. Se não houver nenhuma correspondência de pilha de chamadas, o motivo de espera fornecido por [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] será usado. No entanto, a categoria [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] pode se basear em um detalhe de implementação e pode não refletir a intenção do usuário. Por exemplo, [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] relata o motivo de espera do bloqueio em um bloqueio de leitor-gravador compacto nativo como E/S em vez de sincronização. Na maioria dos casos, é possível identificar a causa raiz de um evento de bloqueio examinando as pilhas de chamadas que correspondem aos eventos de alternância de contexto.  
+  A Exibição Threads atribui uma categoria a cada alternância de contexto quando um thread interrompe a execução. As categorias são mostradas na legenda, na parte inferior esquerda da exibição. A Visualização Simultânea categoriza eventos de alternância de contexto pesquisando APIs de bloqueio conhecidas na pilha de chamadas do thread. Se não houver nenhuma correspondência de pilha de chamadas, o motivo de espera fornecido por [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] será usado. No entanto, a categoria [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] pode se basear em um detalhe de implementação e pode não refletir a intenção do usuário. Por exemplo, [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] relata o motivo de espera do bloqueio em um bloqueio de leitor-gravador compacto nativo como E/S em vez de sincronização. Na maioria dos casos, é possível identificar a causa raiz de um evento de bloqueio examinando as pilhas de chamadas que correspondem aos eventos de alternância de contexto.  
   
- A Exibição Threads também mostra as dependências entre threads. Por exemplo, se você identificar um thread que está bloqueado em um objeto de sincronização, será possível procurar o thread que o desbloqueou e examinar a atividade na pilha de chamadas desse thread no ponto em que ele desbloqueou o outro.  
+  A Exibição Threads também mostra as dependências entre threads. Por exemplo, se você identificar um thread que está bloqueado em um objeto de sincronização, será possível procurar o thread que o desbloqueou e examinar a atividade na pilha de chamadas desse thread no ponto em que ele desbloqueou o outro.  
   
- Quando os threads estão em execução, a Visualização Simultânea coleta amostras. Na Exibição Threads, é possível analisar qual código é executado por um ou mais threads durante um segmento de execução. Você também pode examinar os relatórios de bloqueio e os relatórios que criam o perfil da execução da árvore de pilha de chamadas.  
+  Quando os threads estão em execução, a Visualização Simultânea coleta amostras. Na Exibição Threads, é possível analisar qual código é executado por um ou mais threads durante um segmento de execução. Você também pode examinar os relatórios de bloqueio e os relatórios que criam o perfil da execução da árvore de pilha de chamadas.  
   
 ## <a name="usage"></a>Uso  
  Estas são algumas maneiras pelas quais é possível usar a Exibição Threads:  
@@ -58,26 +58,26 @@ A **Exibição de Threads** é a mais detalhada e cheia de recursos do Visualiza
 ## <a name="examine-specific-time-intervals-and-threads"></a>Examinar threads e intervalos de tempo específicos  
  A Exibição Threads mostra uma linha do tempo. É possível aplicar zoom e panorâmica à linha do tempo para examinar intervalos e threads específicos do aplicativo. No eixo X é mostrado o tempo e no eixo Y são mostrados vários canais:  
   
--   Dois canais de E/S para cada unidade de disco do sistema, um canal para leituras e outro para gravações.  
+- Dois canais de E/S para cada unidade de disco do sistema, um canal para leituras e outro para gravações.  
   
--   Um canal para cada thread no processo.  
+- Um canal para cada thread no processo.  
   
--   Canais de marcador, se houver eventos de marcador no rastreamento. Inicialmente, os canais de marcador são exibidos sob os canais de thread que geraram esses eventos.  
+- Canais de marcador, se houver eventos de marcador no rastreamento. Inicialmente, os canais de marcador são exibidos sob os canais de thread que geraram esses eventos.  
   
--   Canais de GPU.  
+- Canais de GPU.  
   
- Esta é uma ilustração da Exibição de Threads:  
+  Esta é uma ilustração da Exibição de Threads:  
   
- ![Exibição de threads](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
-Modo de Exibição de Threads  
+  ![Exibição de threads](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+  Modo de Exibição de Threads  
   
- Inicialmente, os threads são classificados na ordem em que são criados, para que o thread do aplicativo principal seja o primeiro. É possível usar a opção de classificação no canto superior esquerdo da exibição para classificar threads por outro critério (por exemplo, pela maioria dos trabalhos de execução executada).  
+  Inicialmente, os threads são classificados na ordem em que são criados, para que o thread do aplicativo principal seja o primeiro. É possível usar a opção de classificação no canto superior esquerdo da exibição para classificar threads por outro critério (por exemplo, pela maioria dos trabalhos de execução executada).  
   
- É possível ocultar threads que não estão executando o trabalho selecionando seus nomes na coluna à esquerda e, em seguida, escolhendo o botão **Ocultar Threads Selecionados** na barra de ferramentas. Recomendamos ocultar os threads completamente bloqueados, pois suas estatísticas são irrelevantes e podem obstruir os relatórios.  
+  É possível ocultar threads que não estão executando o trabalho selecionando seus nomes na coluna à esquerda e, em seguida, escolhendo o botão **Ocultar Threads Selecionados** na barra de ferramentas. Recomendamos ocultar os threads completamente bloqueados, pois suas estatísticas são irrelevantes e podem obstruir os relatórios.  
   
- Para identificar threads adicionais a serem ocultados, na legenda ativa, escolha o relatório **Resumo Por Thread** na guia **Relatório de Perfil**. Isso exibe o gráfico de Detalhamento da Execução, que mostra o estado de threads para o intervalo de tempo selecionado. Em alguns níveis de zoom, alguns threads podem não ser exibidos. Quando isso ocorre, elipses são exibidas à direita.  
+  Para identificar threads adicionais a serem ocultados, na legenda ativa, escolha o relatório **Resumo Por Thread** na guia **Relatório de Perfil**. Isso exibe o gráfico de Detalhamento da Execução, que mostra o estado de threads para o intervalo de tempo selecionado. Em alguns níveis de zoom, alguns threads podem não ser exibidos. Quando isso ocorre, elipses são exibidas à direita.  
   
- Depois de selecionar um intervalo de tempo e alguns threads nele, é possível iniciar a análise de desempenho.  
+  Depois de selecionar um intervalo de tempo e alguns threads nele, é possível iniciar a análise de desempenho.  
   
 ## <a name="analysis-tools"></a>Ferramentas de análise  
  Esta seção descreve os relatórios e outras ferramentas de análise.  

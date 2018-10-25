@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7179a22d2713c9ddc894618bd6921f3f873f2ad8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633126"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951048"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>O lançamento deve ser seguido por uma expressão na mesma linha de origem
-Você usou o `throw` palavra-chave, mas não seguiu-lo com uma expressão na mesma linha de origem. Um `throw` consiste em duas partes: o `throw` palavra-chave, seguido pela expressão seja gerada. Por exemplo:  
+Você usou o `throw` palavra-chave, mas não seguiu-lo com uma expressão na mesma linha de código-fonte. Um `throw` instrução consiste em duas partes: o `throw` palavra-chave, seguido pela expressão seja lançada. Por exemplo:  
   
 ```JavaScript  
 if (denominator == 0) {  
@@ -40,7 +40,7 @@ if (denominator == 0) {
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Verifique se o `throw` palavra-chave e a expressão a ser lançado aparece na mesma linha.  
+-   Certifique-se de que o `throw` palavra-chave e a expressão a ser gerada aparece na mesma linha.  
   
 ## <a name="see-also"></a>Consulte também  
  [Objeto Error](../../javascript/reference/error-object-javascript.md)   

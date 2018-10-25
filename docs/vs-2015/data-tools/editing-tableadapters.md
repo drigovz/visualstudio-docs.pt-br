@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: faeac90c92675c897774cc3650575cd60f5be991
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b242f8154f31391d168f2a41bfd00c01f037d87e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877641"
 ---
 # <a name="editing-tableadapters"></a>Editando TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,21 +127,21 @@ ms.locfileid: "49288399"
 ## <a name="create-new-stored-procedures"></a>Criar novos procedimentos armazenados  
  Esta seção explica como concluir o **Assistente de configuração de consulta do TableAdapter** ao selecionar o **criar novos procedimentos armazenados** opção.  
   
-1.  No **gerar os procedimentos armazenados** página, digite a instrução SQL para executar ao chamar o procedimento armazenado.  
+1. No **gerar os procedimentos armazenados** página, digite a instrução SQL para executar ao chamar o procedimento armazenado.  
   
-    > [!NOTE]
-    >  O assistente fornece acesso para o **construtor de consultas**, uma ferramenta visual para criar consultas SQL. Para abri-lo, clique no **construtor de consultas** botão.  
+   > [!NOTE]
+   >  O assistente fornece acesso para o **construtor de consultas**, uma ferramenta visual para criar consultas SQL. Para abri-lo, clique no **construtor de consultas** botão.  
   
-2.  No **criar os procedimentos armazenados** página, faça o seguinte:  
+2. No **criar os procedimentos armazenados** página, faça o seguinte:  
   
-    1.  Digite um nome para o novo procedimento armazenado.  
+   1. Digite um nome para o novo procedimento armazenado.  
   
-    2.  Especifique se o procedimento armazenado será criado no banco de dados subjacente.  
+   2. Especifique se o procedimento armazenado será criado no banco de dados subjacente.  
   
-        > [!NOTE]
-        >  A capacidade de criar um procedimento armazenado no banco de dados é determinada pelas configurações de segurança do banco de dados específico.  
+      > [!NOTE]
+      >  A capacidade de criar um procedimento armazenado no banco de dados é determinada pelas configurações de segurança do banco de dados específico.  
   
-     O **visualizar resultados do assistente** página mostra os resultados de criar a consulta do TableAdapter. Se o assistente encontrar problemas, esta página fornecerá as informações sobre o erro.  
+      O **visualizar resultados do assistente** página mostra os resultados de criar a consulta do TableAdapter. Se o assistente encontrar problemas, esta página fornecerá as informações sobre o erro.  
   
 ## <a name="use-existing-stored-procedures"></a>Usar procedimentos armazenados existentes  
  Esta seção explica como concluir o **Assistente de configuração de consulta do TableAdapter** ao selecionar o **usar procedimentos armazenados existentes** opção.  

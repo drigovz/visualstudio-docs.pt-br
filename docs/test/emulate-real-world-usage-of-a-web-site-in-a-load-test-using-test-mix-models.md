@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 682370de0964e8bc96a069f015f37144f4d9a83f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3e3710d82ee22975963169940bfae71b21a64279
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177260"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820896"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emular o uso real esperado de um site ou aplicativo em um teste de carga usando modelos de combinação de testes
 
@@ -42,13 +42,13 @@ Você pode especificar uma das seguintes opções de modelo da combinação de t
 ###  <a name="BasedOnTestsStarted"></a> Percentual baseado em testes iniciados
  Para cada teste na combinação, você pode especificar uma porcentagem que determine com que frequência o teste será selecionado como o próximo teste a ser executado. Por exemplo, você pode atribuir os seguintes valores de porcentagem a três testes:
 
--   TestA (50%)
+- TestA (50%)
 
--   TestB (35%)
+- TestB (35%)
 
--   TestC (15%)
+- TestC (15%)
 
- Se você usar essa configuração, o próximo teste a ser iniciado será baseado nas porcentagens atribuídas. Você faz isso sem levar em conta o número de usuários virtuais que estão executando atualmente cada teste.
+  Se você usar essa configuração, o próximo teste a ser iniciado será baseado nas porcentagens atribuídas. Você faz isso sem levar em conta o número de usuários virtuais que estão executando atualmente cada teste.
 
 ###  <a name="PercentageBasedonVirtualUsers"></a> Percentual baseado em usuários virtuais
  Esse modelo da combinação de testes determina a porcentagem de usuários virtuais que executarão um teste específico. Se você usar esse modelo de combinação de testes, o próximo teste a ser iniciado será baseado não apenas nas porcentagens atribuídas, mas também na porcentagem de usuários virtuais que estão executando atualmente um teste específico. A qualquer momento do teste de carga, o número usuários que estão executando um teste específico corresponde à distribuição atribuída o mais próximo possível.
@@ -56,28 +56,28 @@ Você pode especificar uma das seguintes opções de modelo da combinação de t
 ###  <a name="PacingTestMix"></a> Definição do ritmo da combinação de testes
  Se você especificar um ritmo para a combinação de testes, definirá uma taxa de execução de testes para cada usuário virtual para cada teste da combinação. Para cada teste, essa taxa é expressa como testes executados por usuário virtual por hora. Por exemplo, você pode atribuir o seguinte ritmo de combinação de testes para os testes a seguir:
 
--   TestA: 4 testes por usuário por hora
+- TestA: 4 testes por usuário por hora
 
--   TestB: 2 testes por usuário por hora
+- TestB: 2 testes por usuário por hora
 
--   TestC: 0,125 testes por usuário por hora
+- TestC: 0,125 testes por usuário por hora
 
- Se você usar o modelo de ritmo de combinação de testes, o mecanismo de tempo de execução do teste de carga garantirá que a taxa real em que os testes são iniciados seja menor ou igual à taxa especificada. Se a execução dos testes demorar muito para que o número atribuído seja concluído, um erro será retornado.
+  Se você usar o modelo de ritmo de combinação de testes, o mecanismo de tempo de execução do teste de carga garantirá que a taxa real em que os testes são iniciados seja menor ou igual à taxa especificada. Se a execução dos testes demorar muito para que o número atribuído seja concluído, um erro será retornado.
 
- A configuração de **Tempo de processamento entre iterações de teste** não se aplica quando você usa o ritmo de combinação de testes.
+  A configuração de **Tempo de processamento entre iterações de teste** não se aplica quando você usa o ritmo de combinação de testes.
 
 #### <a name="apply-distribution-to-pacing-delay"></a>Aplicar distribuição à definição dos atrasos
  O valor da propriedade de **Aplicar distribuição à definição dos atrasos** em um cenário de teste de carga poderá ser definida como verdadeiro ou falso:
 
--   **Verdadeiro**: o cenário aplicará atrasos de distribuição estatística típicos especificados pelo valor na coluna **Testes por usuário por hora** na caixa de diálogo **Editar Combinação de Testes**. Para saber mais, veja [Editar modelos de combinação de texto para especificar a probabilidade de um usuário virtual executar um teste](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **Verdadeiro**: o cenário aplicará atrasos de distribuição estatística típicos especificados pelo valor na coluna **Testes por usuário por hora** na caixa de diálogo **Editar Combinação de Testes**. Para saber mais, veja [Editar modelos de combinação de texto para especificar a probabilidade de um usuário virtual executar um teste](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Por exemplo, suponhamos que você tenha o valor de **Testes por Usuário por Hora** na caixa de diálogo **Editar Combinação de Testes** definido como 2 usuários por hora. Se a propriedade **Aplicar distribuição à definição dos atrasos** for definida como **Verdadeiro**, uma distribuição estatística típica será aplicada ao tempo de espera entre os testes. Os testes ainda serão executados 2 vezes por hora, mas não haverá necessariamente 30 minutos entre eles. O primeiro teste pode ser executado depois de 4 minutos e o segundo teste, depois de 45 minutos.
+   Por exemplo, suponhamos que você tenha o valor de **Testes por Usuário por Hora** na caixa de diálogo **Editar Combinação de Testes** definido como 2 usuários por hora. Se a propriedade **Aplicar distribuição à definição dos atrasos** for definida como **Verdadeiro**, uma distribuição estatística típica será aplicada ao tempo de espera entre os testes. Os testes ainda serão executados 2 vezes por hora, mas não haverá necessariamente 30 minutos entre eles. O primeiro teste pode ser executado depois de 4 minutos e o segundo teste, depois de 45 minutos.
 
--   **Falso**: os testes serão executados no ritmo especificado no valor na coluna **Testes por usuário por hora** na caixa de diálogo **Editar Combinação de Testes**. Para saber mais, veja [Editar modelos de combinação de texto para especificar a probabilidade de um usuário virtual executar um teste](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **Falso**: os testes serão executados no ritmo especificado no valor na coluna **Testes por usuário por hora** na caixa de diálogo **Editar Combinação de Testes**. Para saber mais, veja [Editar modelos de combinação de texto para especificar a probabilidade de um usuário virtual executar um teste](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Por exemplo, suponhamos que você tenha o valor de **Testes por Usuário por Hora** na caixa de diálogo **Editar Combinação de Testes** definido como 2 usuários por hora. Se a propriedade **Aplicar distribuição à definição dos atrasos** for definida como **Falso**, basicamente não haverá intervalo na execução dos testes. O teste será executado a cada 30 minutos. Isso garante que você execute 2 testes por hora.
+   Por exemplo, suponhamos que você tenha o valor de **Testes por Usuário por Hora** na caixa de diálogo **Editar Combinação de Testes** definido como 2 usuários por hora. Se a propriedade **Aplicar distribuição à definição dos atrasos** for definida como **Falso**, basicamente não haverá intervalo na execução dos testes. O teste será executado a cada 30 minutos. Isso garante que você execute 2 testes por hora.
 
- Para saber mais, confira [Como aplicar distribuição à definição dos atrasos durante o uso de um modelo de combinação de testes](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
+  Para saber mais, confira [Como aplicar distribuição à definição dos atrasos durante o uso de um modelo de combinação de testes](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
 ###  <a name="SequentialOrder"></a> Ordem sequencial
  Selecionar a opção Com base na ordem sequencial faz com que cada usuário virtual execute todos os testes no cenário na ordem em que os testes foram definidos.
@@ -88,17 +88,17 @@ Você pode especificar uma das seguintes opções de modelo da combinação de t
 ## <a name="initialize-and-terminate-tests"></a>Inicializar e terminar testes
  Você pode selecionar testes para execução no início e o término da sessão de teste de carga de cada usuário virtual. Para saber mais, veja [Editar modelos de combinação de texto para especificar a probabilidade de um usuário virtual executar um teste](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
--   **Inicializar teste**. Esse teste é executado por cada usuário virtual antes que qualquer um dos testes na combinação de testes seja executado.
+- **Inicializar teste**. Esse teste é executado por cada usuário virtual antes que qualquer um dos testes na combinação de testes seja executado.
 
--   **Encerrar teste**. Esse teste é executado depois que todos os testes de um usuário virtual específico são executados.
+- **Encerrar teste**. Esse teste é executado depois que todos os testes de um usuário virtual específico são executados.
 
- Observe o seguinte sobre o teste de inicialização e o teste de encerramento:
+  Observe o seguinte sobre o teste de inicialização e o teste de encerramento:
 
--   Você pode especificar a duração do teste de carga por tempo em vez de por contagem de iterações. Nesse caso, quando a duração da execução do teste de carga terminar, o teste de encerramento não será executado.
+- Você pode especificar a duração do teste de carga por tempo em vez de por contagem de iterações. Nesse caso, quando a duração da execução do teste de carga terminar, o teste de encerramento não será executado.
 
--   Se o teste de inicialização for um teste de unidade ou um teste de desempenho na Web, o estado do objeto TestContext ou WebTestContext após a conclusão do teste de inicialização será salvo. Em seguida, ele será usado como o contexto inicial para iterações de testes na combinação de testes.
+- Se o teste de inicialização for um teste de unidade ou um teste de desempenho na Web, o estado do objeto TestContext ou WebTestContext após a conclusão do teste de inicialização será salvo. Em seguida, ele será usado como o contexto inicial para iterações de testes na combinação de testes.
 
--   Os novos usuários, conforme definido na propriedade de Porcentagem de Novos Usuários do cenário, sempre executam o teste de inicialização, uma iteração de um teste da combinação de testes, e o teste de encerramento.
+- Os novos usuários, conforme definido na propriedade de Porcentagem de Novos Usuários do cenário, sempre executam o teste de inicialização, uma iteração de um teste da combinação de testes, e o teste de encerramento.
 
 ## <a name="see-also"></a>Consulte também
 

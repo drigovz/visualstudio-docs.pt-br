@@ -15,12 +15,12 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c6ed7f72a8125d2307b91cd829bd6f474145fa78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827474"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definir e instalar uma extensão de modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ No Visual Studio, você pode definir as extensões para diagramas de modelagem. 
 ## <a name="creating-a-modeling-extension-solution"></a>Criando uma solução de extensão de modelagem  
  Para definir uma extensão de modelagem, você deve criar uma solução que contém esses projetos:  
   
--   Um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto integração VSIX (extensão). Isso gera um arquivo que atua como um instalador para os componentes da sua extensão.  
+- Um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto integração VSIX (extensão). Isso gera um arquivo que atua como um instalador para os componentes da sua extensão.  
   
--   Um projeto biblioteca de classes, necessário para os componentes que incluem o código do programa.  
+- Um projeto biblioteca de classes, necessário para os componentes que incluem o código do programa.  
   
- Se você quiser tornar uma extensão que tem vários componentes, você pode desenvolvê-los em uma única solução. Você precisa apenas um projeto VSIX.  
+  Se você quiser tornar uma extensão que tem vários componentes, você pode desenvolvê-los em uma única solução. Você precisa apenas um projeto VSIX.  
   
- Componentes que não exigem código, como itens de caixa de ferramentas personalizado e perfis personalizados do UML, podem ser adicionados diretamente ao projeto de VSIX sem o uso de projetos de biblioteca de classe separada. Componentes que exigem o código do programa com mais facilidade são definidos em um projeto de biblioteca de classe separada. Componentes que exigem código incluem manipuladores de gestos, comandos de menu e código de validação.  
+  Componentes que não exigem código, como itens de caixa de ferramentas personalizado e perfis personalizados do UML, podem ser adicionados diretamente ao projeto de VSIX sem o uso de projetos de biblioteca de classe separada. Componentes que exigem o código do programa com mais facilidade são definidos em um projeto de biblioteca de classe separada. Componentes que exigem código incluem manipuladores de gestos, comandos de menu e código de validação.  
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Para criar um projeto de biblioteca de classes para comandos de menu, manipuladores de gesto ou validação  
   
@@ -133,15 +133,15 @@ No Visual Studio, você pode definir as extensões para diagramas de modelagem. 
   
 #### <a name="to-uninstall-an-extension"></a>Para desinstalar uma extensão  
   
-1.  Sobre o **ferramentas** menu, clique em **extensões e atualizações**.  
+1. Sobre o **ferramentas** menu, clique em **extensões e atualizações**.  
   
-2.  Expandir **extensões instaladas**.  
+2. Expandir **extensões instaladas**.  
   
-3.  Selecione a extensão e, em seguida, clique em **desinstalação**.  
+3. Selecione a extensão e, em seguida, clique em **desinstalação**.  
   
- Raramente, uma extensão defeituosa Falha ao carregar e cria um relatório na janela de erros, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo no seguinte local no qual *% LocalAppData %* é normalmente *DriveName*: \Users\\*denomedeusuário*\AppData\Local:  
+   Raramente, uma extensão defeituosa Falha ao carregar e cria um relatório na janela de erros, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo no seguinte local no qual *% LocalAppData %* é normalmente *DriveName*: \Users\\*denomedeusuário*\AppData\Local:  
   
- *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versão]**  
+   *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versão]**  
   
 ## <a name="see-also"></a>Consulte também  
  [Definir um perfil para estender UML](../modeling/define-a-profile-to-extend-uml.md)   

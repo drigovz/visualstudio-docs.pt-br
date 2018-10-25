@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b05406af9e10a23f37d03b30518b20343b7d3f98
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 267d3e06e9f0d4733a7985f65aa81f368c3f5413
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669925"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925104"
 ---
 # <a name="event-logging-for-office-solutions"></a>Log de eventos para soluções do Office
   Você pode usar o Visualizador de eventos no Windows para ver mensagens de exceção que são capturadas pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ao instalar ou desinstalar soluções do Office. Você pode usar essas mensagens do agente de log de eventos para solucionar problemas de implantação e instalação.  
@@ -51,33 +51,33 @@ ms.locfileid: "35669925"
   
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Para ler o Log de eventos no Windows 7, Windows Vista e Windows Server 2008  
   
-1.  No painel de controle, abra **ferramentas administrativas**.  
+1. No painel de controle, abra **ferramentas administrativas**.  
   
-2.  Inicie **Visualizador de eventos**.  
+2. Inicie **Visualizador de eventos**.  
   
-3.  Expandir **Logs do Windows**.  
+3. Expandir **Logs do Windows**.  
   
-4.  Na lista de logs de eventos, selecione **aplicativo**.  
+4. Na lista de logs de eventos, selecione **aplicativo**.  
   
-5.  Sobre o **ação** menu, clique em **Filtrar Log atual**.  
+5. Sobre o **ação** menu, clique em **Filtrar Log atual**.  
   
-6.  No **origem do evento** lista, selecione **VSTO 4.0**.  
+6. No **origem do evento** lista, selecione **VSTO 4.0**.  
   
-7.  Para eventos de instalação nos **ID do evento** , digite **4096**.  
+7. Para eventos de instalação nos **ID do evento** , digite **4096**.  
   
-8.  Clique em **Okey** para ver a exibição filtrada.  
+8. Clique em **Okey** para ver a exibição filtrada.  
   
- O Visualizador de eventos inclui as seguintes informações:  
+   O Visualizador de eventos inclui as seguintes informações:  
   
--   O local do manifesto de implantação para a solução.  
+- O local do manifesto de implantação para a solução.  
   
--   Uma mensagem que descreve a causa do erro ou exceção.  
+- Uma mensagem que descreve a causa do erro ou exceção.  
   
- Essas mensagens de exceção podem ajudá-lo a determinar o motivo para um problema de instalação, como um certificado não confiável, um local do documento não confiável ou um manifesto de implantação inválido.  
+  Essas mensagens de exceção podem ajudá-lo a determinar o motivo para um problema de instalação, como um certificado não confiável, um local do documento não confiável ou um manifesto de implantação inválido.  
   
- Depois que uma solução do Office é desinstalada, as mensagens de exceção permanecem no log de eventos.  
+  Depois que uma solução do Office é desinstalada, as mensagens de exceção permanecem no log de eventos.  
   
- Para mostrar ou registrar em log mensagens de exceção quando uma solução do Office está em execução, consulte [projetos do Office Debug](../vsto/debugging-office-projects.md) e [projetos do Office depurar](../vsto/debugging-office-projects.md).  
+  Para mostrar ou registrar em log mensagens de exceção quando uma solução do Office está em execução, consulte [projetos do Office Debug](../vsto/debugging-office-projects.md) e [projetos do Office depurar](../vsto/debugging-office-projects.md).  
   
 ### <a name="localization"></a>Localização  
  O idioma da mensagem de exceção é determinado pelo Visual Studio Tools para Office runtime language. Por exemplo, se o computador do usuário final com o pacote de idioma japonês instalado, a mensagem de exceção é gravada no log de eventos em japonês.  

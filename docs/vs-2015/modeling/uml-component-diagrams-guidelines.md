@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5a45466b441fc8964b0b3a715acbd95b920e3392
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa08a132c752b5bdde7ba2b497a6bd206e8f2972
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299371"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843841"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagramas de componente UML: diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
   
  O desenho de diagramas de componente tem vários benefícios:  
   
--   O pensamento do design em relação aos blocos principais ajuda a equipe de desenvolvimento a compreender um design existente e a criar um novo.  
+- O pensamento do design em relação aos blocos principais ajuda a equipe de desenvolvimento a compreender um design existente e a criar um novo.  
   
--   Pensando no sistema como uma coleção de componentes com interfaces fornecidas bem definidas e obrigatórias, você melhora a separação entre os componentes. Isso, por sua vez, facilita a compreensão e a alteração do design quando os requisitos são alterados.  
+- Pensando no sistema como uma coleção de componentes com interfaces fornecidas bem definidas e obrigatórias, você melhora a separação entre os componentes. Isso, por sua vez, facilita a compreensão e a alteração do design quando os requisitos são alterados.  
   
- É possível usar um diagrama de componente para representar o design, independentemente da linguagem ou da plataforma que o design usa ou usará.  
+  É possível usar um diagrama de componente para representar o design, independentemente da linguagem ou da plataforma que o design usa ou usará.  
   
 ##  <a name="OtherDiagrams"></a> Relação com outros diagramas  
  É possível usar um diagrama de componente com outros diagramas.  
@@ -118,32 +118,32 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
   
 ##### <a name="to-add-ports-to-a-component"></a>Para adicionar portas a um componente  
   
-1.  Na caixa de ferramentas, clique em **Interface fornecida** ou **Interface obrigatória**.  
+1. Na caixa de ferramentas, clique em **Interface fornecida** ou **Interface obrigatória**.  
   
-2.  Clique no componente ao qual você deseja adicioná-la.  
+2. Clique no componente ao qual você deseja adicioná-la.  
   
-     Uma porta é exibida no limite do componente.  
+    Uma porta é exibida no limite do componente.  
   
-     Uma interface nova é criada como o tipo da porta. Essa interface é exibida no **Gerenciador de modelos UML**.  
+    Uma interface nova é criada como o tipo da porta. Essa interface é exibida no **Gerenciador de modelos UML**.  
   
-3.  Arraste a porta em torno do limite do componente para colocá-la onde você deseja.  
+3. Arraste a porta em torno do limite do componente para colocá-la onde você deseja.  
   
-4.  Arraste o rótulo da porta para ajustar sua posição.  
+4. Arraste o rótulo da porta para ajustar sua posição.  
   
-5.  Clique no rótulo para alterá-lo. O rótulo mostra o nome da interface. Se alterá-lo, você mudará o nome da interface.  
+5. Clique no rótulo para alterá-lo. O rótulo mostra o nome da interface. Se alterá-lo, você mudará o nome da interface.  
   
- Se quiser listar os atributos e as operações da interface, você poderá fazer isso adicionando-os à interface no Gerenciador de Modelos UML. Como alternativa, é possível arrastar a interface do Gerenciador de Modelos UML para um diagrama de classe e adicionar as operações e os atributos para lá.  
+   Se quiser listar os atributos e as operações da interface, você poderá fazer isso adicionando-os à interface no Gerenciador de Modelos UML. Como alternativa, é possível arrastar a interface do Gerenciador de Modelos UML para um diagrama de classe e adicionar as operações e os atributos para lá.  
   
 ### <a name="linking-between-components"></a>Vinculando entre componentes  
  Use uma dependência (4) para mostrar que o requisito de um componente pode ser atendido pelas operações ou pelos serviços fornecidos por outro componente.  
   
 ##### <a name="to-show-that-a-provided-interface-can-satisfy-a-required-interface"></a>Para mostrar que uma interface fornecida pode atender a uma interface obrigatória  
   
-1.  Na caixa de ferramentas, clique em **dependência**.  
+1. Na caixa de ferramentas, clique em **dependência**.  
   
-2.  Clique na porta com a interface obrigatória em um componente e, em seguida, clique na porta com a interface fornecida em outro componente.  
+2. Clique na porta com a interface obrigatória em um componente e, em seguida, clique na porta com a interface fornecida em outro componente.  
   
- Você deve tentar evitar a criação de loops de dependência nos quais cada componente em um grupo depende de todos os outros componentes.  
+   Você deve tentar evitar a criação de loops de dependência nos quais cada componente em um grupo depende de todos os outros componentes.  
   
 ##### <a name="to-add-a-port-for-an-existing-interface-to-a-component"></a>Para adicionar uma porta para uma interface existente a um componente  
   
@@ -269,11 +269,11 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
   
  Use os diagramas de sequência para avaliar como o trabalho do sistema é distribuído entre os diferentes componentes.  
   
--   Se for muito empilhado em uma parte, provavelmente será mais difícil atualizar o aplicativo do que se o trabalho estiver distribuído por igual.  
+- Se for muito empilhado em uma parte, provavelmente será mais difícil atualizar o aplicativo do que se o trabalho estiver distribuído por igual.  
   
--   Se o trabalho estiver muito distribuído com muitas interações, o desempenho do sistema poderá ser ruim e ser difícil de compreender.  
+- Se o trabalho estiver muito distribuído com muitas interações, o desempenho do sistema poderá ser ruim e ser difícil de compreender.  
   
- ![Partes de colaboração de exibição de diagrama de sequência](../modeling/media/uml-compdescparts.png "UML_CompDescParts")  
+  ![Partes de colaboração de exibição de diagrama de sequência](../modeling/media/uml-compdescparts.png "UML_CompDescParts")  
   
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>Para desenhar um diagrama de sequência que mostre a colaboração entre as partes  
   
@@ -327,13 +327,13 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
   
  Entre os tipos comuns de dependência estão os seguintes:  
   
--   Um componente chama o código dentro do outro.  
+- Um componente chama o código dentro do outro.  
   
--   Um componente cria uma instância de uma classe definida dentro de outra classe.  
+- Um componente cria uma instância de uma classe definida dentro de outra classe.  
   
--   Um componente usa informações criadas por outro componente.  
+- Um componente usa informações criadas por outro componente.  
   
- É possível usar o nome da seta de dependência para denotar um tipo específico de uso. Para definir o nome, clique com botão direito na seta e clique em **propriedades**e defina as **nome** campo na janela Propriedades.  
+  É possível usar o nome da seta de dependência para denotar um tipo específico de uso. Para definir o nome, clique com botão direito na seta e clique em **propriedades**e defina as **nome** campo na janela Propriedades.  
   
 ## <a name="see-also"></a>Consulte também  
  [Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md)   

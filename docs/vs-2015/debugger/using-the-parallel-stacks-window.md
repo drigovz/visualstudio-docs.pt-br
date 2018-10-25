@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 353d9a39a299c0803bb4f27843fcae43375105cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3be45a598535d81e23cd32ff4d30045ae2ac8dcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891720"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Usando a janela Pilhas Paralelas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,21 +99,21 @@ O **pilhas paralelas** janela é útil quando você estiver depurando aplicativo
 ## <a name="tasks-view"></a>Modo de Exibição de Tarefas  
  Se seu aplicativo está usando <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos (código gerenciado) ou `task_handle` objetos (código nativo) para expressar o paralelismo, você pode usar a caixa de combinação na barra de ferramentas de janela pilhas paralelas para alternar para o *modo de exibição tarefas*. O Modo de Exibição de Tarefas mostra as chamadas de pilhas de tarefas reais em vez de threads. O Modo de Exibição de Tarefas é diferente do Modo de Exibição de Threads da seguinte maneira:  
   
--   As pilhas de chamadas de threads que não estão executando tarefas não são mostradas.  
+- As pilhas de chamadas de threads que não estão executando tarefas não são mostradas.  
   
--   As pilhas de chamadas de threads que estão executando tarefas serão cortadas visualmente na parte superior e inferior para mostrar os quadros mais relevantes que pertencem a tarefas.  
+- As pilhas de chamadas de threads que estão executando tarefas serão cortadas visualmente na parte superior e inferior para mostrar os quadros mais relevantes que pertencem a tarefas.  
   
--   Quando várias tarefas estiverem em um thread, as pilhas de chamadas dessas tarefas serão divididas em nós separados.  
+- Quando várias tarefas estiverem em um thread, as pilhas de chamadas dessas tarefas serão divididas em nós separados.  
   
- A ilustração a seguir mostra o Modo de Exibição de Tarefas de Pilhas Paralelas à direita e o Modo de Exibição de Threads correspondente à esquerda.  
+  A ilustração a seguir mostra o Modo de Exibição de Tarefas de Pilhas Paralelas à direita e o Modo de Exibição de Threads correspondente à esquerda.  
   
- ![Modo de exibição na janela pilhas paralelas de tarefas](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
+  ![Modo de exibição na janela pilhas paralelas de tarefas](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
   
- Para ver a pilha de chamadas inteira, simplesmente alternar para exibição de Threads clicando duas vezes um quadro de pilha e, em seguida, clicando em **ir para Thread**.  
+  Para ver a pilha de chamadas inteira, simplesmente alternar para exibição de Threads clicando duas vezes um quadro de pilha e, em seguida, clicando em **ir para Thread**.  
   
- Como descrito na tabela anterior, ao passar o cursor sobre um contexto do método, você poderá ver informações adicionais. A imagem a seguir mostra as informações na dica de ferramentas para o Modo de Exibição de Threads e o Modo de Exibição de Tarefas.  
+  Como descrito na tabela anterior, ao passar o cursor sobre um contexto do método, você poderá ver informações adicionais. A imagem a seguir mostra as informações na dica de ferramentas para o Modo de Exibição de Threads e o Modo de Exibição de Tarefas.  
   
- ![Dicas de ferramentas na janela pilhas paralelas](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
+  ![Dicas de ferramentas na janela pilhas paralelas](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
   
 ## <a name="method-view"></a>Modo de Exibição do Método  
  Do Modo de Exibição de Threads ou de Tarefas, você pode girar o gráfico no método atual clicando no ícone do Modo de Exibição do Método na barra de ferramentas. O Modo de Exibição do Método mostra rapidamente todos os métodos em todos os threads que chamam ou são chamados pelo método atual. A ilustração a seguir mostra um Modo de Exibição de Threads e também como as mesmas informações aparecem no Modo de Exibição do Método.  

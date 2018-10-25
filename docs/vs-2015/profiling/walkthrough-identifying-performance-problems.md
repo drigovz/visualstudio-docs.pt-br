@@ -19,12 +19,12 @@ caps.latest.revision: 58
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be81688429d6a7d9d8d2cc5fa3e1e1a5662d1263
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33450d7f904cebd79259c30245cf07e23ca1aba1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274476"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896128"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Passo a passo: Identificando problemas de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Este passo a passo demonstra como criar um perfil de um aplicativo para identifi
   
 ## <a name="prerequisites"></a>Pré-requisitos  
   
--   Compreensão intermediária de C#.  
+- Compreensão intermediária de C#.  
   
--   Uma cópia de [Amostra do PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md).  
+- Uma cópia de [Amostra do PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md).  
   
- Para trabalhar com as informações fornecidas pela criação de perfil, é bom ter as informações de símbolo de depuração disponíveis.  
+  Para trabalhar com as informações fornecidas pela criação de perfil, é bom ter as informações de símbolo de depuração disponíveis.  
   
 ## <a name="profiling-by-using-the-sampling-method"></a>Criação de perfil usando o método de amostragem  
  A amostragem é um método de criação de perfil pelo qual o processo em questão é monitorado periodicamente para determinar a função ativa. Os dados resultantes fornecem uma contagem da frequência da função na parte superior da pilha de chamadas, quando o processo foi amostrado.  
@@ -139,29 +139,29 @@ Este passo a passo demonstra como criar um perfil de um aplicativo para identifi
   
 #### <a name="to-analyze-instrumented-profiling-results"></a>Para analisar resultados de criação de perfil instrumentado  
   
-1.  O gráfico de linha do tempo da exibição **Resumo** do relatório mostra a utilização de CPU do programa durante a execução da criação de perfil. A operação de exportação de dados deve ser o grande pico ou o limite no lado direito do gráfico. É possível filtrar a sessão de desempenho para exibir e analisar apenas os dados coletados na operação de exportação. Clique à esquerda do ponto no gráfico em que começa a operação de exportação de dados. Clique novamente à direita da operação. Em seguida, clique em **Filtrar por Seleção** na lista de links à direita da linha do tempo.  
+1. O gráfico de linha do tempo da exibição **Resumo** do relatório mostra a utilização de CPU do programa durante a execução da criação de perfil. A operação de exportação de dados deve ser o grande pico ou o limite no lado direito do gráfico. É possível filtrar a sessão de desempenho para exibir e analisar apenas os dados coletados na operação de exportação. Clique à esquerda do ponto no gráfico em que começa a operação de exportação de dados. Clique novamente à direita da operação. Em seguida, clique em **Filtrar por Seleção** na lista de links à direita da linha do tempo.  
   
-     A árvore de **Afunilamento** mostra que o método <xref:System.String.Concat%2A> chamado pelo método PeopleTrax.Form1.ExportData consome um grande percentual do tempo. Como **System.String.Concat** também está na parte superior da lista **Funções com Mais Trabalho Individual**, reduzir o tempo gasto na função é um ponto provável de otimização.  
+    A árvore de **Afunilamento** mostra que o método <xref:System.String.Concat%2A> chamado pelo método PeopleTrax.Form1.ExportData consome um grande percentual do tempo. Como **System.String.Concat** também está na parte superior da lista **Funções com Mais Trabalho Individual**, reduzir o tempo gasto na função é um ponto provável de otimização.  
   
-2.  Clique duas vezes em **System.String.Concat** em qualquer uma das tabelas de resumo para obter mais informações na exibição Detalhes da Função.  
+2. Clique duas vezes em **System.String.Concat** em qualquer uma das tabelas de resumo para obter mais informações na exibição Detalhes da Função.  
   
-3.  Você pode ver que o PeopleTrax.Form1.ExportData é o único método que chama Concat. Clique em **PeopleTrax.Form1.ExportData** na lista **Chamando Funções** para selecionar o método como o destino da exibição Detalhes da Função.  
+3. Você pode ver que o PeopleTrax.Form1.ExportData é o único método que chama Concat. Clique em **PeopleTrax.Form1.ExportData** na lista **Chamando Funções** para selecionar o método como o destino da exibição Detalhes da Função.  
   
-4.  Examine o método na janela Exibição de Código da Função. Observe que não há nenhuma chamada literal para **System.String.Concat**. Em vez disso, há vários usos do operando +=, que o compilador substitui por chamadas para **System.String.Concat**. Quaisquer modificações em uma cadeia de caracteres no .NET Framework faz com que uma nova cadeia de caracteres seja alocada. O .NET Framework inclui uma classe <xref:System.Text.StringBuilder> que é otimizada para concatenação de cadeia de caracteres  
+4. Examine o método na janela Exibição de Código da Função. Observe que não há nenhuma chamada literal para **System.String.Concat**. Em vez disso, há vários usos do operando +=, que o compilador substitui por chamadas para **System.String.Concat**. Quaisquer modificações em uma cadeia de caracteres no .NET Framework faz com que uma nova cadeia de caracteres seja alocada. O .NET Framework inclui uma classe <xref:System.Text.StringBuilder> que é otimizada para concatenação de cadeia de caracteres  
   
-5.  Para substituir essa área de problema por código otimizado, adicione OPTIMIZED_EXPORTDATA como um símbolo de compilação condicional ao projeto PeopleTrax.  
+5. Para substituir essa área de problema por código otimizado, adicione OPTIMIZED_EXPORTDATA como um símbolo de compilação condicional ao projeto PeopleTrax.  
   
-6.  No Gerenciador de Soluções, clique com o botão direito do mouse no projeto PeopleTrax e clique em **Propriedades**.  
+6. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto PeopleTrax e clique em **Propriedades**.  
   
-     O formulário de propriedades do projeto PeopleTrax aparece.  
+    O formulário de propriedades do projeto PeopleTrax aparece.  
   
-7.  Clique na guia **Build**.  
+7. Clique na guia **Build**.  
   
-8.  Na caixa de texto **Símbolos de compilação condicional**, digite **OPTIMIZED_EXPORTDATA**.  
+8. Na caixa de texto **Símbolos de compilação condicional**, digite **OPTIMIZED_EXPORTDATA**.  
   
 9. Feche o formulário de propriedades do projeto e escolha **Salvar tudo** ao ser solicitado.  
   
- Quando você executar o aplicativo novamente, verá melhorias marcadas no desempenho. É recomendável que você execute a sessão de criação de perfil novamente, mesmo que haja melhorias visíveis no desempenho do usuário. É importante revisar os dados depois de corrigir um problema porque o primeiro problema pode obscurecer algum outro problema.  
+   Quando você executar o aplicativo novamente, verá melhorias marcadas no desempenho. É recomendável que você execute a sessão de criação de perfil novamente, mesmo que haja melhorias visíveis no desempenho do usuário. É importante revisar os dados depois de corrigir um problema porque o primeiro problema pode obscurecer algum outro problema.  
   
 ## <a name="see-also"></a>Consulte também  
  [Visões gerais](../profiling/overviews-performance-tools.md)   

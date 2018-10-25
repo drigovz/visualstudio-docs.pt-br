@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ed93b4acef31dd3b1be55983525ac8999c539c
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 190c94d70b87306ce119a2f37cf10b0f034fede9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860050"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869282"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Como personalizar o dicionário de análise do código
 Análise de código usa um dicionário interno para verificar identificadores em seu código para erros de ortografia, caso gramatical e outras convenções de nomenclatura de diretrizes do .NET Framework. Você pode criar um arquivo Xml de dicionário personalizado para adicionar, remover ou modificar os termos e abreviações acrônimos ao dicionário interno.
@@ -61,17 +61,17 @@ Análise de código usa um dicionário interno para verificar identificadores em
 ## <a name="custom-dictionary-elements"></a>Elementos do dicionário personalizado
  Você pode modificar o comportamento do dicionário de análise de código, adicionando os termos de como o texto interno dos seguintes elementos no dicionário personalizado:
 
--   [Dicionário e palavras/reconhecido/de palavras](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
+- [Dicionário e palavras/reconhecido/de palavras](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
 
--   [Dicionário e palavras/não reconhecida/de palavras](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
+- [Dicionário e palavras/não reconhecida/de palavras](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
 
--   [Dicionário/palavras/preterido/termo [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
+- [Dicionário/palavras/preterido/termo [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
 
--   [Dicionário/palavras/composta/termo [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
+- [Dicionário/palavras/composta/termo [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
--   [Dicionário/palavras/DiscreteExceptions/termo](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
+- [Dicionário/palavras/DiscreteExceptions/termo](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
--   [Dicionário/acrônimos/CasingExceptions/acrônimo](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
+- [Dicionário/acrônimos/CasingExceptions/acrônimo](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
 ###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> Dicionário e palavras/reconhecido/de palavras
  Para incluir um termo na lista de termos que identifica a análise de código como escrito corretamente, adicione o termo como o texto interno de um elemento do dicionário e palavras/reconhecido/de palavras. Termos de elementos do dicionário e palavras/reconhecido/de palavras não diferenciam maiusculas de minúsculas.
@@ -89,7 +89,6 @@ Análise de código usa um dicionário interno para verificar identificadores em
       </Words>
       ...
 </Dictionary>
-
 ```
 
  Termos de dicionário/palavras/reconhecido nós são aplicados as seguintes regras de análise de código:
@@ -124,7 +123,6 @@ Análise de código usa um dicionário interno para verificar identificadores em
       </Words>
       ...
 </Dictionary>
-
 ```
 
  Termos no nó de dicionário/palavras/não reconhecida são aplicados as seguintes regras de análise de código:
@@ -148,11 +146,11 @@ Análise de código usa um dicionário interno para verificar identificadores em
 
  Para incluir um termo alternativo sugerido no aviso, especifique a alternativa no atributo PreferredAlternate do elemento de termo. Você pode deixar o valor do atributo vazio se não desejar sugerir uma alternativa.
 
--   O termo reprovado em palavras do dicionário/elemento obsoleto/termo não diferencia maiusculas de minúsculas.
+- O termo reprovado em palavras do dicionário/elemento obsoleto/termo não diferencia maiusculas de minúsculas.
 
--   O valor do atributo PreferredAlternate diferencia maiusculas de minúsculas. Use Pascal case para alternativas compostas.
+- O valor do atributo PreferredAlternate diferencia maiusculas de minúsculas. Use Pascal case para alternativas compostas.
 
- **Exemplo**
+  **Exemplo**
 
 ```
 <Dictionary>
@@ -165,7 +163,6 @@ Análise de código usa um dicionário interno para verificar identificadores em
       </Words>
       ...
 </Dictionary>
-
 ```
 
  Termos no nó de palavras/dicionário/preteridos são aplicados as seguintes regras de análise de código:
@@ -183,11 +180,11 @@ Análise de código usa um dicionário interno para verificar identificadores em
 ###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Dicionário/palavras/composta/termo [@CompoundAlternate]
  O dicionário interno identifica alguns termos como termos simples e discretos, em vez de um termo composto. Para incluir um termo na lista de termos que a análise de código identifica como uma palavra composta e para especificar as maiusculas e minúsculas corretas do termo, adicione o termo como o texto interno de um elemento de dicionário/palavras/composta/termo. No atributo do elemento de termo CompoundAlternate, especifique as palavras individuais que compõem o termo composto, usando maiusculas para a primeira letra de palavras individuais (caso Pascal). Observe que o termo especificado no texto interno é automaticamente adicionado à lista de palavras/dicionário/DiscreteExceptions.
 
--   O termo reprovado em palavras do dicionário/elemento obsoleto/termo não diferencia maiusculas de minúsculas.
+- O termo reprovado em palavras do dicionário/elemento obsoleto/termo não diferencia maiusculas de minúsculas.
 
--   O valor do atributo PreferredAlternate diferencia maiusculas de minúsculas. Use Pascal case para alternativas compostas.
+- O valor do atributo PreferredAlternate diferencia maiusculas de minúsculas. Use Pascal case para alternativas compostas.
 
- **Exemplo**
+  **Exemplo**
 
 ```
 <Dictionary>
@@ -200,7 +197,6 @@ Análise de código usa um dicionário interno para verificar identificadores em
       </Words>
       ...
 </Dictionary>
-
 ```
 
  Termos no nó de palavras/dicionário/compostos são aplicados as seguintes regras de análise de código:
@@ -229,7 +225,6 @@ Análise de código usa um dicionário interno para verificar identificadores em
       </Words>
       ...
 </Dictionary>
-
 ```
 
  Termos no nó de palavras/dicionário/DiscreteExceptions são aplicados as seguintes regras de análise de código:
@@ -254,7 +249,6 @@ Análise de código usa um dicionário interno para verificar identificadores em
       </Acronyms>
       ...
 </Dictionary>
-
 ```
 
  Termos no nó de dicionário/acrônimos/CasingExceptions são aplicados as seguintes regras de análise de código:

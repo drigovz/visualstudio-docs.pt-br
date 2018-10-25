@@ -23,12 +23,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d11bc0743faa9e512fcd144bfef09a84a316531d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 17deca1afc78e238e098285e760a791504b61fe8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284980"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880710"
 ---
 # <a name="encodings-and-line-breaks"></a>Codificações e quebras de linha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ No Visual Studio, é possível usar os configurações **Arquivo/Opções avanç
   
  No Visual Studio, os seguintes caracteres são interpretados como quebras de linha:  
   
--   CRLF: retorno de carro + alimentação de linha, caracteres Unicode 000D + 000A  
+- CRLF: retorno de carro + alimentação de linha, caracteres Unicode 000D + 000A  
   
--   LF: alimentação de linha, caractere Unicode 000A  
+- LF: alimentação de linha, caractere Unicode 000A  
   
--   NEL: próxima linha, caractere Unicode 0085  
+- NEL: próxima linha, caractere Unicode 0085  
   
--   LS: separador de linha, caractere Unicode 2028  
+- LS: separador de linha, caractere Unicode 2028  
   
--   PS: separador de parágrafo, caractere Unicode 2029  
+- PS: separador de parágrafo, caractere Unicode 2029  
   
- O texto copiado de outros aplicativos mantém a codificação original e os caracteres de quebra de linha. Por exemplo, quando você copia texto do Bloco de notas e o cola em um arquivo de texto no Visual Studio, o texto tem as mesmas configurações que ele tinha no Bloco de notas.  
+  O texto copiado de outros aplicativos mantém a codificação original e os caracteres de quebra de linha. Por exemplo, quando você copia texto do Bloco de notas e o cola em um arquivo de texto no Visual Studio, o texto tem as mesmas configurações que ele tinha no Bloco de notas.  
   
- Quando você abre um arquivo que caracteres com uma quebra de linha diferente, talvez você veja uma caixa de diálogo que pergunta se os caracteres de quebra de linha inconsistentes devem ser normalizados e quais os tipo de quebras de linha você deseja escolher.
+  Quando você abre um arquivo que caracteres com uma quebra de linha diferente, talvez você veja uma caixa de diálogo que pergunta se os caracteres de quebra de linha inconsistentes devem ser normalizados e quais os tipo de quebras de linha você deseja escolher.
 
 
 

@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: dd638a539b8956716aa60b5361bd003c18d35f9b
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a203d471d5947df9919ed8c9afe7d1c2d41296f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283319"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908893"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Início Rápido: Criar seu primeiro aplicativo da Plataforma Universal do Windows no Visual Studio com XAML e C&#35;
 
@@ -46,9 +46,9 @@ Primeiro, crie um projeto da Plataforma Universal do Windows. O tipo de projeto 
 
    ![Aceite as configurações padrão de Destino e de Versão mínima na caixa de diálogo Novo Projeto da Plataforma Universal do Windows](../ide/media/new-uwp-project-target-minver-dialog.png)
 
-  > [!NOTE]
-  > Se esta for a primeira vez que você usa o Visual Studio para criar um aplicativo UWP, uma caixa de diálogo **Configurações** poderá aparecer. Selecione **Modo do Desenvolvedor** e, em seguida, escolha **Sim**.<br><br>
- ![Habilitar o Modo do Desenvolvedor na caixa de diálogo Configurações da UWP](../ide/media/enable-developer-mode.png)<br><br>O Visual Studio instala um pacote de Modo do Desenvolvedor adicional. Quando o pacote de instalação for concluído, feche a caixa de diálogo **Configurações**.
+   > [!NOTE]
+   > Se esta for a primeira vez que você usa o Visual Studio para criar um aplicativo UWP, uma caixa de diálogo **Configurações** poderá aparecer. Selecione **Modo do Desenvolvedor** e, em seguida, escolha **Sim**.<br><br>
+   ![Habilitar o Modo do Desenvolvedor na caixa de diálogo Configurações da UWP](../ide/media/enable-developer-mode.png)<br><br>O Visual Studio instala um pacote de Modo do Desenvolvedor adicional. Quando o pacote de instalação for concluído, feche a caixa de diálogo **Configurações**.
 
 ## <a name="create-the-application"></a>Criar o aplicativo
 
@@ -58,29 +58,29 @@ Primeiro, crie um projeto da Plataforma Universal do Windows. O tipo de projeto 
 
 1. No **Gerenciador de Soluções**, clique duas vezes em *MainPage.xaml* para abrir o modo divisão.
 
-  ![Abra o MainPage.xaml no Gerenciador de Soluções ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
+   ![Abra o MainPage.xaml no Gerenciador de Soluções ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  Existem dois painéis: o **Designer XAML**, que inclui uma tela de design e o **Editor de XAML**, no qual você pode adicionar ou alterar o código.
+   Existem dois painéis: o **Designer XAML**, que inclui uma tela de design e o **Editor de XAML**, no qual você pode adicionar ou alterar o código.
 
-  ![O painel Designer XAML no editor de XAML](../ide/media/uwp-xaml-editor.png)
+   ![O painel Designer XAML no editor de XAML](../ide/media/uwp-xaml-editor.png)
 
 2. Escolha **Caixa de ferramentas** para abrir a janela de submenu Caixa de Ferramentas.
 
-  ![Clique na Caixa de Ferramentas para abrir a janela de submenu Caixa de Ferramentas](../ide/media/uwp-toolbox.png)
+   ![Clique na Caixa de Ferramentas para abrir a janela de submenu Caixa de Ferramentas](../ide/media/uwp-toolbox.png)
 
-  (Se a opção **Caixa de Ferramentas** não for exibida, ela poderá ser aberta na barra de menus. Para fazer isso, escolha **Exibição** > **Barra de Ferramentas**. Ou pressione **Ctrl**+**Alt**+**X**.)
+   (Se a opção **Caixa de Ferramentas** não for exibida, ela poderá ser aberta na barra de menus. Para fazer isso, escolha **Exibição** > **Barra de Ferramentas**. Ou pressione **Ctrl**+**Alt**+**X**.)
 
 3. Clique no ícone **Fixar** para encaixar a janela Caixa de Ferramentas.
 
-  ![Clique no ícone de pino para encaixar a janela Caixa de Ferramentas](../ide/media/uwp-toolbox-autohide.png)
+   ![Clique no ícone de pino para encaixar a janela Caixa de Ferramentas](../ide/media/uwp-toolbox-autohide.png)
 
 4. Clique no controle de **Botão** e, em seguida, arraste-o para a tela de design.
 
    ![Clique no controle de Botão e arraste-o para a tela de Design](../ide/media/uwp-toolbox-add-button-control.png)
 
-  Se você examinar o código no **Editor XAML**, verá que o botão também foi adicionado lá:
+   Se você examinar o código no **Editor XAML**, verá que o botão também foi adicionado lá:
 
-  ![Clique no controle de Botão e arraste-o para a tela de Design](../ide/media/uwp-xaml-control-code-window.png)
+   ![Clique no controle de Botão e arraste-o para a tela de Design](../ide/media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Adicionar um rótulo para o botão
 
@@ -100,18 +100,18 @@ O termo "Manipulador de eventos" parece complicado, mas é apenas outro nome par
 
 2. Edite o código do manipulador de eventos em *MainPage.xaml.cs*, a página code-behind.
 
- É aqui que as coisas ficam interessantes. O manipulador de eventos padrão tem esta aparência:
+   É aqui que as coisas ficam interessantes. O manipulador de eventos padrão tem esta aparência:
 
    ![O manipulador de eventos Button_Click padrão ](../ide/media/uwp-button-click-code.png)
 
- Vamos alterá-lo, para que fique assim:
+   Vamos alterá-lo, para que fique assim:
 
     ![O novo manipulador de eventos Button_Click assíncrono ](../ide/media/uwp-add-hello-world-async-code.png)
 
-  Aqui está o código a ser copiado e colado:
+   Aqui está o código a ser copiado e colado:
 
-  ```C#
-  private async void Button_Click(object sender, RoutedEventArgs e)
+   ```C#
+   private async void Button_Click(object sender, RoutedEventArgs e)
          {
              MediaElement mediaElement = new MediaElement();
              var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
@@ -119,7 +119,7 @@ O termo "Manipulador de eventos" parece complicado, mas é apenas outro nome par
              mediaElement.SetSource(stream, stream.ContentType);
              mediaElement.Play();
          }
-  ```
+   ```
 
 #### <a name="what-did-we-just-do"></a>O que nós acabamos de fazer?
 
@@ -141,7 +141,7 @@ O código usa algumas APIs do Windows para criar um objeto de sintetização de 
 
 3. Clique no botão **Olá, Mundo**.
 
- Seu dispositivo Windows 10 dirá literalmente "Olá, Mundo!"
+   Seu dispositivo Windows 10 dirá literalmente "Olá, Mundo!"
 
 4. Para fechar o aplicativo, clique no botão **Parar Depuração** na barra de ferramentas. (Como alternativa, escolha **Depurar** > **Parar depuração** na barra de menus ou pressione **Shift** + **F5**.)
 

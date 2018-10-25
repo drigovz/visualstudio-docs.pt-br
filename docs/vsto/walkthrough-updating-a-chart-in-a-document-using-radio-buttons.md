@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a72a5cb07f39f8d2acaec59e5da5a66a30293453
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5e82c50c83a8824b4570779034b0480aa0615a30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904668"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Explicação passo a passo: Um gráfico em um documento usando botões de opção de atualização
   Esse passo a passo demonstra como usar os botões de opção em uma personalização ao nível do documento do Microsoft Office Word para fornecer aos usuários a opção de selecionar estilos de gráficos no documento.  
@@ -30,15 +30,15 @@ ms.locfileid: "35258214"
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Adicionar um gráfico ao documento em um projeto ao nível do documento no tempo de design.  
+- Adicionar um gráfico ao documento em um projeto ao nível do documento no tempo de design.  
   
--   Agrupamento dos botões de opção adicionando-os a um controle de usuário.  
+- Agrupamento dos botões de opção adicionando-os a um controle de usuário.  
   
--   Alterando o estilo do gráfico quando uma opção ser selecionada.  
+- Alterando o estilo do gráfico quando uma opção ser selecionada.  
   
- Para ver o resultado como um exemplo completo, consulte o Word Controls Sample em [exemplos de desenvolvimento do Office e instruções passo a passo](../vsto/office-development-samples-and-walkthroughs.md).  
+  Para ver o resultado como um exemplo completo, consulte o Word Controls Sample em [exemplos de desenvolvimento do Office e instruções passo a passo](../vsto/office-development-samples-and-walkthroughs.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  

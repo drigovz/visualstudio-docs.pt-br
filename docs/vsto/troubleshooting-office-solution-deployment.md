@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: bba978da26a2aa7b7263fa5d2e88fa8acdc272f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774642"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885997"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Solucionar problemas de implantação de solução do Office
   Este tópico contém informações sobre como resolver problemas comuns que você pode encontrar ao implantar soluções do Office.  
@@ -35,11 +35,11 @@ ms.locfileid: "43774642"
 ## <a name="change-the-assembly-name-causes-conflicts"></a>Altere o nome de assembly faz com que os conflitos  
  Se você alterar o **nome do Assembly** valor na **aplicativo** página da **Project Designer** depois que você já implantou uma solução, as ferramentas de publicação irá modificar o Pacote de instalação para ter um *Setup.exe* arquivo e dois manifestos de implantação. Se você implantar dois arquivos de manifesto, as condições a seguir podem ocorrer:  
   
--   Se o usuário final instalar ambas as versões, o aplicativo carregará os dois suplementos do VSTO.  
+- Se o usuário final instalar ambas as versões, o aplicativo carregará os dois suplementos do VSTO.  
   
--   Se o suplemento do VSTO que foi instalado antes que o nome do assembly foi alterado, o usuário final nunca receberá atualizações.  
+- Se o suplemento do VSTO que foi instalado antes que o nome do assembly foi alterado, o usuário final nunca receberá atualizações.  
   
- Para evitar essas condições, não altere a solução **nome do Assembly** valor depois de implantar a solução.  
+  Para evitar essas condições, não altere a solução **nome do Assembly** valor depois de implantar a solução.  
   
 ## <a name="check-for-updates-takes-a-long-time"></a>Verifique se há atualizações leva muito tempo  
  Visual Studio 2010 Tools for Office runtime fornece uma entrada de registro que os administradores podem usar para definir o valor de tempo limite para baixar os manifestos e a solução.  
@@ -63,7 +63,7 @@ ms.locfileid: "43774642"
  Você pode adicionar o .NET Framework, o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]e os Office assemblies de interoperabilidade primários para seu pacote de instalação como pré-requisitos que são implantados com sua solução do Office. Para obter informações sobre como instalar assemblies de interoperabilidade primários, consulte [configurar um computador para desenvolver soluções do Office](../vsto/configuring-a-computer-to-develop-office-solutions.md) e [como: assemblies de interoperabilidade primários do Office Instale](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
 ## <a name="publish-using-localhost-can-cause-installation-problems"></a>Publicar usando 'Localhost' pode causar problemas de instalação  
- Quando você usa "http://localhost" como o local de instalação ou de publicação para soluções de nível de documento, o **Assistente de publicação** não converte a cadeia de caracteres ao nome do computador real. Nesse caso, a solução deve ser instalada no computador de desenvolvimento. Para usar IIS no computador de desenvolvimento, use o nome totalmente qualificado para todos os locais HTTP/HTTPS/FTP em vez do localhost soluções implantadas.  
+ Quando você usa "<http://localhost>" como o local de instalação ou de publicação para soluções de nível de documento, o **Assistente de publicação** não converte a cadeia de caracteres ao nome do computador real. Nesse caso, a solução deve ser instalada no computador de desenvolvimento. Para usar IIS no computador de desenvolvimento, use o nome totalmente qualificado para todos os locais HTTP/HTTPS/FTP em vez do localhost soluções implantadas.  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>Armazenados em cache de assemblies é carregado em vez de assemblies atualizados  
  Fusion, o carregador de assembly do .NET Framework, carrega a cópia armazenada em cache de assemblies quando o caminho de saída do projeto é um compartilhamento de rede, o assembly é assinado com um nome forte e a versão do assembly da personalização não muda. Se você atualizar um assembly que atende a essas condições, a atualização não aparecerá na próxima vez que você executar o projeto porque a cópia armazenada em cache é carregada.  
@@ -72,13 +72,13 @@ ms.locfileid: "43774642"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Para baixar os assemblies em vez de carregar cópias armazenadas em cache  
   
-1.  Na barra de menus, escolha **Project**, _ProjectName_**propriedades**.  
+1. Na barra de menus, escolha **Project**, _ProjectName_**propriedades**.  
   
-2.  Sobre o **Application** , escolha **informações de Assembly**.  
+2. Sobre o **Application** , escolha **informações de Assembly**.  
   
-3.  No primeiro **versão do Assembly** , digite um asterisco (\*) e, em seguida, escolha o **Okey** botão.  
+3. No primeiro **versão do Assembly** , digite um asterisco (\*) e, em seguida, escolha o **Okey** botão.  
   
- Depois de alterar a versão do assembly, você pode continuar a assinar o assembly com um nome forte e Fusion carregará a versão mais recente da personalização.  
+   Depois de alterar a versão do assembly, você pode continuar a assinar o assembly com um nome forte e Fusion carregará a versão mais recente da personalização.  
   
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>A instalação falha quando o URI tem caracteres que não são de US-ASCII  
  Quando você publica uma solução do Office em um local HTTP/HTTPS/FTP, o caminho não pode ter quaisquer caracteres Unicode que não estão em US-ASCII. Esses caracteres podem causar um comportamento inconsistente no programa de instalação. Use caracteres US-ASCII para o caminho de instalação.  
@@ -91,15 +91,15 @@ ms.locfileid: "43774642"
 ## <a name="uncaught-exception-or-method-not-found-error-when-you-install-a-solution"></a>Exceção não percebida ou método não encontrado erro quando você instala uma solução  
  Quando você instala soluções do Office abrindo o manifesto de implantação (um *VSTO* arquivo), mensagens de erro de aplicativo, documento ou pasta de trabalho do Office em para as seguintes condições podem aparecer:  
   
--   Método não encontrado.  
+- Método não encontrado.  
   
--   MissingMethodException.  
+- MissingMethodException.  
   
--   Exceção não capturada.  
+- Exceção não capturada.  
   
- Para evitar essas mensagens de erro, instale a solução executando o programa de instalação.  
+  Para evitar essas mensagens de erro, instale a solução executando o programa de instalação.  
   
- Quando você instala a solução sem executar o programa de instalação, o instalador não verificar ou instalar os pré-requisitos. O programa de instalação verifica a versão correta dos pré-requisitos e instala-os conforme necessário.  
+  Quando você instala a solução sem executar o programa de instalação, o instalador não verificar ou instalar os pré-requisitos. O programa de instalação verifica a versão correta dos pré-requisitos e instala-os conforme necessário.  
   
 ## <a name="manifest-registry-keys-for-add-ins-change-after-an-installshield-limited-edition-project-is-built"></a>Depois que um projeto InstallShield Limited Edition é construído de manifesto chaves do registro de alteração de suplementos  
  A chave do registro de manifesto que faz parte de uma instalação de suplemento do VSTO do programa, às vezes, as alterações do *VSTO* à *. manifest* quando você compila um projeto do InstallShield Limited Edition.  
