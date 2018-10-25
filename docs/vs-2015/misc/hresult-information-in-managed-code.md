@@ -15,31 +15,31 @@ helpviewer_keywords:
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: douge
-ms.openlocfilehash: b629f856bcdba13523c094b5d3fd32b6848ec23f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08d14f1155838e53321224280a69e7a76bf07b52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911844"
 ---
 # <a name="hresult-information-in-managed-code"></a>Informações de HRESULT em código gerenciado
 A interação entre código gerenciado e COM pode causar problemas quando os valores de retorno HRESULT forem encontrados.  
   
  Em uma interface COM, um valor de retorno HRESULT pode executar essas funções:  
   
--   Fornecer informações de erro (por exemplo, <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>).  
+- Fornecer informações de erro (por exemplo, <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>).  
   
--   Fornecer informações de status sobre o comportamento normal do programa.  
+- Fornecer informações de status sobre o comportamento normal do programa.  
   
- Quando chama COM código gerenciado, HRESULTs podem causar esses problemas:  
+  Quando chama COM código gerenciado, HRESULTs podem causar esses problemas:  
   
--   Funções COM que retornam valores HRESULT menor que zero (códigos de falha) geram exceções.  
+- Funções COM que retornam valores HRESULT menor que zero (códigos de falha) geram exceções.  
   
--   OS métodos com regularmente retornam duas ou mais códigos de sucesso diferentes, por exemplo, <xref:Microsoft.VisualStudio.VSConstants.S_OK> ou <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>, não podem ser diferenciadas.  
+- OS métodos com regularmente retornam duas ou mais códigos de sucesso diferentes, por exemplo, <xref:Microsoft.VisualStudio.VSConstants.S_OK> ou <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>, não podem ser diferenciadas.  
   
- Porque muitos dos [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] funções COM retornará valores HRESULT menor que zero ou retornam códigos de sucesso diferentes, o [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] assemblies de interoperabilidade foram gravados para que as assinaturas de método são preservadas. Todos os [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] métodos de interoperabilidade são de `int` tipo. Valores HRESULT são passados por meio da camada de interoperabilidade sem alteração e sem gerar exceções.  
+  Porque muitos dos [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] funções COM retornará valores HRESULT menor que zero ou retornam códigos de sucesso diferentes, o [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] assemblies de interoperabilidade foram gravados para que as assinaturas de método são preservadas. Todos os [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] métodos de interoperabilidade são de `int` tipo. Valores HRESULT são passados por meio da camada de interoperabilidade sem alteração e sem gerar exceções.  
   
- Como uma função COM retorna um HRESULT para o método gerenciado que faz a chamada, o método de chamada deve verificar o HRESULT e lançar exceções conforme necessário.  
+  Como uma função COM retorna um HRESULT para o método gerenciado que faz a chamada, o método de chamada deve verificar o HRESULT e lançar exceções conforme necessário.  
   
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Tratamento HRESULTs retornados para o código gerenciado de COM  
  Quando você chama uma interface COM de código gerenciado, examine o valor HRESULT e lançar uma exceção, se necessário. O <xref:Microsoft.VisualStudio.ErrorHandler> classe contém o <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> método, que lança uma exceção de COM, dependendo do valor de HRESULT é passado para ele.  

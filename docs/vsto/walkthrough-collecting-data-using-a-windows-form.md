@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce17a44a6680288a31d80993a11d59eaa95f1a31
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1d48f2a104505e6b6ea9942847d8cd4dd2f3e669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900469"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Passo a passo: Coletar dados usando um formulário do Windows
   Este passo a passo demonstra como abrir um formulário do Windows de uma personalização no nível de documento do Microsoft Office Excel, coletar informações do usuário e grave essas informações em uma célula de planilha.  
@@ -70,41 +70,41 @@ ms.locfileid: "35669926"
   
 ### <a name="to-add-a-windows-form"></a>Para adicionar um formulário do Windows  
   
-1.  Selecione o projeto **WinFormInput** na **Gerenciador de soluções**.  
+1. Selecione o projeto **WinFormInput** na **Gerenciador de soluções**.  
   
-2.  Sobre o **Project** menu, clique em **Adicionar formulário do Windows**.  
+2. Sobre o **Project** menu, clique em **Adicionar formulário do Windows**.  
   
-3.  Nomeie o formulário **GetInputString.vb** ou **GetInputString.cs**e, em seguida, clique em **adicionar**.  
+3. Nomeie o formulário **GetInputString.vb** ou **GetInputString.cs**e, em seguida, clique em **adicionar**.  
   
-     O novo formulário é aberto no designer.  
+    O novo formulário é aberto no designer.  
   
-4.  Adicionar um <xref:System.Windows.Forms.TextBox> e um <xref:System.Windows.Forms.Button> ao formulário.  
+4. Adicionar um <xref:System.Windows.Forms.TextBox> e um <xref:System.Windows.Forms.Button> ao formulário.  
   
-5.  Selecione o botão, localize a propriedade **texto** no **Properties** janela e altere o texto a ser **Okey**.  
+5. Selecione o botão, localize a propriedade **texto** no **Properties** janela e altere o texto a ser **Okey**.  
   
- Em seguida, adicione código ao `ThisWorkbook.vb` ou `ThisWorkbook.cs` para coletar as informações do usuário.  
+   Em seguida, adicione código ao `ThisWorkbook.vb` ou `ThisWorkbook.cs` para coletar as informações do usuário.  
   
 ## <a name="display-the-windows-form-and-collecting-information"></a>Exibir o formulário do Windows e a coleta de informações  
  Criar uma instância da `GetInputString` formulário do Windows e exibi-lo e, em seguida, gravar as informações do usuário em uma célula na planilha.  
   
 #### <a name="to-display-the-form-and-collect-information"></a>Para exibir o formulário e coletar informações  
   
-1.  Clique com botão direito **ThisWorkbook. vb** ou **ThisWorkbook.cs** na **Gerenciador de soluções**e, em seguida, clique em **Exibir código**.  
+1. Clique com botão direito **ThisWorkbook. vb** ou **ThisWorkbook.cs** na **Gerenciador de soluções**e, em seguida, clique em **Exibir código**.  
   
-2.  No <xref:Microsoft.Office.Tools.Excel.Workbook.Open> manipulador de eventos do `ThisWorkbook`, adicione o seguinte código para declarar uma variável para o formulário `GetInputString` e, em seguida, mostrar o formulário.  
+2. No <xref:Microsoft.Office.Tools.Excel.Workbook.Open> manipulador de eventos do `ThisWorkbook`, adicione o seguinte código para declarar uma variável para o formulário `GetInputString` e, em seguida, mostrar o formulário.  
   
-    > [!NOTE]  
-    >  No c#, você deve adicionar um manipulador de eventos como mostra a <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> evento abaixo. Para obter informações sobre como criar manipuladores de eventos, consulte [como: criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+   > [!NOTE]  
+   >  No c#, você deve adicionar um manipulador de eventos como mostra a <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> evento abaixo. Para obter informações sobre como criar manipuladores de eventos, consulte [como: criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
   
-3.  Criar um método chamado `WriteStringToCell` que grava o texto em um intervalo nomeado. Esse método é chamado do formulário, e a entrada do usuário é passada para o <xref:Microsoft.Office.Tools.Excel.NamedRange> controle, `formInput`, na célula **A1**.  
+3. Criar um método chamado `WriteStringToCell` que grava o texto em um intervalo nomeado. Esse método é chamado do formulário, e a entrada do usuário é passada para o <xref:Microsoft.Office.Tools.Excel.NamedRange> controle, `formInput`, na célula **A1**.  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
   
- Em seguida, adicione código ao formulário para lidar com o clique do botão eventos.  
+   Em seguida, adicione código ao formulário para lidar com o clique do botão eventos.  
   
 ## <a name="send-information-to-the-worksheet"></a>Enviar informações para a planilha  
   

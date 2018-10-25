@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4a52b63dc5605dfae533a4108e11a43ed0c62ed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2507b509ee33957845f010f7c18404d257ad4a38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306365"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837562"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Depurando ou desabilitando o código do projeto no Designer XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,17 +25,17 @@ Em muitos casos, exceções sem tratamento no designer XAML podem ser causadas q
   
  O código do projeto inclui:  
   
--   Controles personalizados e controles de usuário  
+- Controles personalizados e controles de usuário  
   
--   Bibliotecas de classes  
+- Bibliotecas de classes  
   
--   Conversores de valor  
+- Conversores de valor  
   
--   Associações em relação a dados de tempo de design gerados do código do projeto  
+- Associações em relação a dados de tempo de design gerados do código do projeto  
   
- Quando o código do projeto é desabilitado, o Visual Studio mostrará espaços reservados, como o nome da propriedade para uma associação em que os dados não estejam mais disponíveis; ou um espaço reservado para um controle que não esteja mais em execução.  
+  Quando o código do projeto é desabilitado, o Visual Studio mostrará espaços reservados, como o nome da propriedade para uma associação em que os dados não estejam mais disponíveis; ou um espaço reservado para um controle que não esteja mais em execução.  
   
- ![Caixa de diálogo de exceção sem tratamento](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
+  ![Caixa de diálogo de exceção sem tratamento](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
   
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>Para determinar se o código do projeto está causando uma exceção  
   

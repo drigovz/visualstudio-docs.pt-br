@@ -21,12 +21,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 76967e02d730b06438136bb0354ce5a67a648ea4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6661eeeeaa802e482dd540f7a7793186f917edf3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188643"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853799"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Como especificar onde o Visual Studio copiará os arquivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,15 +40,15 @@ Quando você publica um aplicativo usando o ClickOnce, o `Publish Location` prop
   
 ### <a name="to-specify-a-publishing-location"></a>Para especificar um local de publicação  
   
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Clique o **publicar** guia.  
+2. Clique o **publicar** guia.  
   
-3.  No **local de publicação** , insira o local de publicação usando um dos seguintes formatos:  
+3. No **local de publicação** , insira o local de publicação usando um dos seguintes formatos:  
   
-    -   Para publicar em um caminho de disco ou compartilhamento de arquivo, insira o caminho usando um caminho UNC (\\\Server\ApplicationName) ou um caminho de arquivo (C:\Deploy\ApplicationName).  
+   - Para publicar em um caminho de disco ou compartilhamento de arquivo, insira o caminho usando um caminho UNC (\\\Server\ApplicationName) ou um caminho de arquivo (C:\Deploy\ApplicationName).  
   
-    -   Para publicar em um servidor FTP, insira o caminho usando o formato ftp://ftp.microsoft.com/ApplicationName.  
+   - Para publicar em um servidor FTP, insira o caminho usando o formato ftp://ftp.microsoft.com/ApplicationName.  
   
      Observe que o texto deve estar presente na **local de publicação** caixa para que o botão Procurar (**...** ) botão funcione.  
   

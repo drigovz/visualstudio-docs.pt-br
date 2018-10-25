@@ -17,12 +17,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 103792f4751d290d9d782fa4e71309ebcf3914da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911324"
 ---
 # <a name="registering-a-project-type"></a>Registrando um tipo de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -215,17 +215,17 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
   
  A entrada de menu aponta o IDE para o recurso usado para recuperar as informações de menu. Quando esses dados foi mesclados com o banco de dados do menu, a mesma chave será adicionada na seção MenusMerged do registro. O VSPackage não deve modificar qualquer coisa na seção MenusMerged diretamente. No campo de dados na tabela a seguir, há três vírgula-campos separados por. O primeiro campo identifica um caminho completo de um arquivo de recurso de menu:  
   
--   Se o primeiro campo for omitido, o recurso de menu é carregado do identificado pelo GUID VSPackage DLL satélite.  
+- Se o primeiro campo for omitido, o recurso de menu é carregado do identificado pelo GUID VSPackage DLL satélite.  
   
- O segundo campo identifica uma ID de recurso de menu do tipo CTMENU:  
+  O segundo campo identifica uma ID de recurso de menu do tipo CTMENU:  
   
--   Se a ID de recurso é especificada, e o caminho do arquivo é fornecido pelo primeiro parâmetro, um recurso de menu é carregado do caminho de arquivo completo.  
+- Se a ID de recurso é especificada, e o caminho do arquivo é fornecido pelo primeiro parâmetro, um recurso de menu é carregado do caminho de arquivo completo.  
   
--   Se a ID de recurso é fornecida, mas o caminho do arquivo não é, o recurso de menu é carregado do DLL satélite.  
+- Se a ID de recurso é fornecida, mas o caminho do arquivo não é, o recurso de menu é carregado do DLL satélite.  
   
--   Se o caminho completo do arquivo é fornecido e a ID de recurso é omitido, o arquivo a ser carregado deve ser um arquivo CTO.  
+- Se o caminho completo do arquivo é fornecido e a ID de recurso é omitido, o arquivo a ser carregado deve ser um arquivo CTO.  
   
- O último campo identifica o número de versão para o recurso CTMENU. Você pode mesclar um menu novamente, alterando o número de versão.  
+  O último campo identifica o número de versão para o recurso CTMENU. Você pode mesclar um menu novamente, alterando o número de versão.  
   
 |Nome|Tipo|Dados|Descrição|  
 |----------|----------|----------|-----------------|  

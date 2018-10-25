@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fc975ab5c9c1e43b79ddd861bca3a61e9005f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63cd97a23f26d23b99aa7c93be90cef91a630856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906156"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de diretrizes principais do C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ Diretrizes principais do C++ são um conjunto portátil de diretrizes, regras e 
   
 #### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project"></a>Para adicionar o pacote de Microsoft.CppCoreCheck ao seu projeto  
   
-1.  Na **Gerenciador de soluções**, clique com botão direito para abrir o menu de contexto do seu projeto na solução que você deseja adicionar o pacote. Escolher **gerenciar pacotes NuGet** para abrir o **Gerenciador de pacotes NuGet**.  
+1. Na **Gerenciador de soluções**, clique com botão direito para abrir o menu de contexto do seu projeto na solução que você deseja adicionar o pacote. Escolher **gerenciar pacotes NuGet** para abrir o **Gerenciador de pacotes NuGet**.  
   
-2.  No **Gerenciador de pacotes NuGet** janela, procure Microsoft.CppCoreCheck.  
+2. No **Gerenciador de pacotes NuGet** janela, procure Microsoft.CppCoreCheck.  
   
-     ![Janela Gerenciador de pacotes do NuGet mostra o pacote de CppCoreCheck](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
+    ![Janela Gerenciador de pacotes do NuGet mostra o pacote de CppCoreCheck](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
   
-3.  Selecione o pacote Microsoft.CppCoreCheck e, em seguida, escolha o **instalar** botão para adicionar as regras ao seu projeto.  
+3. Selecione o pacote Microsoft.CppCoreCheck e, em seguida, escolha o **instalar** botão para adicionar as regras ao seu projeto.  
   
- O pacote NuGet adiciona um arquivo. targets do MSBuild adicional ao seu projeto que é invocado quando você habilita a análise de código em seu projeto. Esse arquivo. targets adiciona as regras de verificação principal do C++ como uma extensão adicional para a ferramenta de análise de código do Visual Studio.  
+   O pacote NuGet adiciona um arquivo. targets do MSBuild adicional ao seu projeto que é invocado quando você habilita a análise de código em seu projeto. Esse arquivo. targets adiciona as regras de verificação principal do C++ como uma extensão adicional para a ferramenta de análise de código do Visual Studio.  
   
- Você pode habilitar a análise de código em seu projeto, selecionando o **habilitar análise de código no Build** caixa de seleção na **análise de código** seção o **páginas de propriedade** caixa de diálogo para seu projeto.  
+   Você pode habilitar a análise de código em seu projeto, selecionando o **habilitar análise de código no Build** caixa de seleção na **análise de código** seção o **páginas de propriedade** caixa de diálogo para seu projeto.  
   
- ![Página de propriedades para configurações gerais de análise de código](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
+   ![Página de propriedades para configurações gerais de análise de código](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
   
- As regras de verificação principal do C++ se tornam parte dos conjuntos de regras padrão que são executados quando a análise de código está habilitada. Como as regras de verificação principal do C++ estão em desenvolvimento, algumas regras podem não estar prontas para uso em todo o código, mas podem ser informativas durante o desenvolvimento. Essas regras são lançadas como experimental. Você pode optar por executar as regras de lançamento ou experimentais nas propriedades de seu projeto.  
+   As regras de verificação principal do C++ se tornam parte dos conjuntos de regras padrão que são executados quando a análise de código está habilitada. Como as regras de verificação principal do C++ estão em desenvolvimento, algumas regras podem não estar prontas para uso em todo o código, mas podem ser informativas durante o desenvolvimento. Essas regras são lançadas como experimental. Você pode optar por executar as regras de lançamento ou experimentais nas propriedades de seu projeto.  
   
- ![Página de propriedades para configurações de extensões de análise de código](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
+   ![Página de propriedades para configurações de extensões de análise de código](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
- Para habilitar ou desabilitar os conjuntos de regra de verificação principal do C++, abra o **páginas de propriedade** caixa de diálogo para seu projeto. Sob **propriedades de configuração**, expanda **análise de código**, **extensões**. Na lista suspensa próxima ao controle **habilitar a verificação principal do C++ (liberados)** ou **Habilitar verificação principal do C++ (Experimental)**, escolha **Sim** ou **não**. Escolher **Okey** ou **aplicar** para salvar suas alterações.  
+   Para habilitar ou desabilitar os conjuntos de regra de verificação principal do C++, abra o **páginas de propriedade** caixa de diálogo para seu projeto. Sob **propriedades de configuração**, expanda **análise de código**, **extensões**. Na lista suspensa próxima ao controle **habilitar a verificação principal do C++ (liberados)** ou **Habilitar verificação principal do C++ (Experimental)**, escolha **Sim** ou **não**. Escolher **Okey** ou **aplicar** para salvar suas alterações.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Verifique os tipos, limites e tempos de vida  
  Atualmente, o pacote de verificação principal do C++ contém verificadores para o [segurança de tipo](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), [delimita safety](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds), e [segurança de tempo de vida](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) perfis.  
@@ -81,15 +81,15 @@ int main()
   
  Este exemplo demonstra alguns dos avisos que as regras de verificação principal do C++ podem encontrar:  
   
--   C26494 é regra Type.5: sempre inicialize um objeto.  
+- C26494 é regra Type.5: sempre inicialize um objeto.  
   
--   C26485 é regra Bounds.3: decaimento nenhum ponteiro de matriz.  
+- C26485 é regra Bounds.3: decaimento nenhum ponteiro de matriz.  
   
--   C26481 é regra Bounds.1: não use aritmética de ponteiro. Use `span` em seu lugar.  
+- C26481 é regra Bounds.1: não use aritmética de ponteiro. Use `span` em seu lugar.  
   
- Se o rulesets de análise do código de verificação principal do C++ estão instalado e habilitado quando você compila esse código, os dois primeiros avisos forem gerados, mas o terceiro é suprimido. Aqui está a saída da compilação do código de exemplo:  
+  Se o rulesets de análise do código de verificação principal do C++ estão instalado e habilitado quando você compila esse código, os dois primeiros avisos forem gerados, mas o terceiro é suprimido. Aqui está a saída da compilação do código de exemplo:  
   
- **1 >---compilação iniciada: projeto: CoreCheckExample, configuração: Debug Win32 -**  
+  **1 >---compilação iniciada: projeto: CoreCheckExample, configuração: Debug Win32 -**  
 **----**  
 **1 > CoreCheckExample.cpp**  
 **1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  

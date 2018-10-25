@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836392"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implantando um processador de diretiva personalizada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ Para usar um processador de diretriz personalizado no [!INCLUDE[vsprvs](../inclu
   
  Os métodos alternativos são:  
   
--   [Extensão do Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Isso fornece uma maneira de instalar e desinstalar o processador de diretriz em seu próprio computador e em outros computadores. Normalmente, você pode empacotar outros recursos na mesma VSIX.  
+- [Extensão do Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Isso fornece uma maneira de instalar e desinstalar o processador de diretriz em seu próprio computador e em outros computadores. Normalmente, você pode empacotar outros recursos na mesma VSIX.  
   
--   [VSPackage](../extensibility/internals/vspackages.md). Se você estiver for definir um VSPackage que contém outros recursos além do processador de diretriz, há um método conveniente para registrar o processador de diretriz.  
+- [VSPackage](../extensibility/internals/vspackages.md). Se você estiver for definir um VSPackage que contém outros recursos além do processador de diretriz, há um método conveniente para registrar o processador de diretriz.  
   
--   Definir uma chave do Registro. Nesse método, você adiciona uma entrada de Registro para o processador de diretriz.  
+- Definir uma chave do Registro. Nesse método, você adiciona uma entrada de Registro para o processador de diretriz.  
   
- Você precisará usar um desses métodos somente se quiser transformar o modelo de texto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou no [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Se você usar um host personalizado em seu próprio aplicativo, seu host personalizado será responsável por localizar os processadores de diretrizes para cada diretiva.  
+  Você precisará usar um desses métodos somente se quiser transformar o modelo de texto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou no [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Se você usar um host personalizado em seu próprio aplicativo, seu host personalizado será responsável por localizar os processadores de diretrizes para cada diretiva.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Implantando um processador de diretriz em uma VSIX  
  Você pode adicionar um processador de diretriz personalizado para um [Visual Studio VSIX (extensão)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Você precisará certificar-se de que os dois seguintes itens estejam contidos no arquivo .vsix:  
   
--   O assembly (.dll) que contém a classe do processador de diretriz personalizado.  
+- O assembly (.dll) que contém a classe do processador de diretriz personalizado.  
   
--   Um arquivo .pkgdef que registra o processador de diretriz. O nome raiz do arquivo deve ser igual ao do assembly. Por exemplo, seus arquivos podem ser nomeados como CDP.dll e CDP.pkgdef.  
+- Um arquivo .pkgdef que registra o processador de diretriz. O nome raiz do arquivo deve ser igual ao do assembly. Por exemplo, seus arquivos podem ser nomeados como CDP.dll e CDP.pkgdef.  
   
- Para inspecionar ou alterar o conteúdo de um arquivo .vsix, altere a extensão do seu nome de arquivo para .zip e abra-o. Depois de editar o conteúdo, altere o nome do arquivo de volta para .vsix.  
+  Para inspecionar ou alterar o conteúdo de um arquivo .vsix, altere a extensão do seu nome de arquivo para .zip e abra-o. Depois de editar o conteúdo, altere o nome do arquivo de volta para .vsix.  
   
- Há várias maneiras de criar um arquivo .vsix. O procedimento a seguir descreve um método.  
+  Há várias maneiras de criar um arquivo .vsix. O procedimento a seguir descreve um método.  
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Para desenvolver um processador de diretriz personalizado em um projeto VSIX  
   
@@ -167,27 +167,27 @@ Para usar um processador de diretriz personalizado no [!INCLUDE[vsprvs](../inclu
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Para registrar um processador de diretriz definindo uma chave do Registro  
   
-1.  Execute `regedit`.  
+1. Execute `regedit`.  
   
-2.  Em regedit, navegue até  
+2. Em regedit, navegue até  
   
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-     Se você desejar instalar o processador de diretriz na versão de avaliação do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], insira “Exp” após “11.0”.  
+    Se você desejar instalar o processador de diretriz na versão de avaliação do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], insira “Exp” após “11.0”.  
   
-3.  Adicione uma chave do Registro que tenha o mesmo nome da classe do processador de diretriz.  
+3. Adicione uma chave do Registro que tenha o mesmo nome da classe do processador de diretriz.  
   
-    -   Na árvore do registro, clique com botão direito do **DirectiveProcessors** nó, aponte para **New**e, em seguida, clique em **chave**.  
+   -   Na árvore do registro, clique com botão direito do **DirectiveProcessors** nó, aponte para **New**e, em seguida, clique em **chave**.  
   
-4.  No novo nó, adicione valores de cadeia de caracteres para Class e CodeBase ou Assembly, de acordo com as tabelas a seguir.  
+4. No novo nó, adicione valores de cadeia de caracteres para Class e CodeBase ou Assembly, de acordo com as tabelas a seguir.  
   
-    1.  Clique com botão direito no nó que você criou, aponte para **New**e, em seguida, clique em **valor de cadeia de caracteres**.  
+   1.  Clique com botão direito no nó que você criou, aponte para **New**e, em seguida, clique em **valor de cadeia de caracteres**.  
   
-    2.  Edite o nome do valor.  
+   2.  Edite o nome do valor.  
   
-    3.  Clique duas vezes no nome e edite os dados.  
+   3.  Clique duas vezes no nome e edite os dados.  
   
- Se o processador de diretriz personalizado não estiver no GAC, as subchaves do Registro deverão se parecer como na tabela a seguir:  
+   Se o processador de diretriz personalizado não estiver no GAC, as subchaves do Registro deverão se parecer como na tabela a seguir:  
   
 |Nome|Tipo|Dados|  
 |----------|----------|----------|  

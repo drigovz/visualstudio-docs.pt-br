@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f35779debdad5a43781b2fe7221085f3fe0e1010
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cea6e61a1afd734ca0ae52a704a2d881371f5817
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42636252"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882581"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Passo a passo: Criar seu primeiro suplemento VSTO para PowerPoint
   Este passo a passo mostra como criar um suplemento do VSTO para PowerPoint do Microsoft Office. Os recursos que você criar nesse tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual apresentações estão abertas. Para obter mais informações, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -32,15 +32,15 @@ ms.locfileid: "42636252"
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Criando um projeto de suplemento do VSTO do PowerPoint para o PowerPoint.  
+- Criando um projeto de suplemento do VSTO do PowerPoint para o PowerPoint.  
   
--   Escrevendo código que usa o modelo de objeto do PowerPoint para adicionar uma caixa de texto para cada novo slide.  
+- Escrevendo código que usa o modelo de objeto do PowerPoint para adicionar uma caixa de texto para cada novo slide.  
   
--   Criando e executando o projeto para testá-lo.  
+- Criando e executando o projeto para testá-lo.  
   
--   Limpando o projeto para que o suplemento do VSTO não seja executado automaticamente em seu computador de desenvolvimento.  
+- Limpando o projeto para que o suplemento do VSTO não seja executado automaticamente em seu computador de desenvolvimento.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
@@ -78,18 +78,18 @@ ms.locfileid: "42636252"
   
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>Para adicionar uma caixa de texto para cada novo slide  
   
-1.  No arquivo de código ThisAddIn, adicione o seguinte código para o `ThisAddIn` classe. Esse código define um manipulador de eventos para o [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) evento do <xref:Microsoft.Office.Interop.PowerPoint.Application> objeto.  
+1. No arquivo de código ThisAddIn, adicione o seguinte código para o `ThisAddIn` classe. Esse código define um manipulador de eventos para o [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) evento do <xref:Microsoft.Office.Interop.PowerPoint.Application> objeto.  
   
-     Quando o usuário adiciona um novo slide na apresentação ativa, esse manipulador de eventos adiciona uma caixa de texto na parte superior do novo slide, e adiciona algum texto à caixa de texto.  
+    Quando o usuário adiciona um novo slide na apresentação ativa, esse manipulador de eventos adiciona uma caixa de texto na parte superior do novo slide, e adiciona algum texto à caixa de texto.  
   
-     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  Se você estiver usando c#, adicione o seguinte código para o `ThisAddIn_Startup` manipulador de eventos. Esse código é necessária para conectar o `Application_PresentationNewSlide` manipulador de eventos com o [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) eventos.  
+2. Se você estiver usando c#, adicione o seguinte código para o `ThisAddIn_Startup` manipulador de eventos. Esse código é necessária para conectar o `Application_PresentationNewSlide` manipulador de eventos com o [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) eventos.  
   
-     [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]  
   
- Para modificar cada novo slide, os exemplos de código anterior usam os seguintes objetos:  
+   Para modificar cada novo slide, os exemplos de código anterior usam os seguintes objetos:  
   
 -   O `Application` campo do `ThisAddIn` classe. O `Application` campo retorna um <xref:Microsoft.Office.Interop.PowerPoint.Application> objeto que representa a instância atual do PowerPoint.  
   

@@ -21,12 +21,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8b6d5d7b6196b78bfaa68d944b9e652dabf54b85
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fd1bd7965f0277ce1d3d900be6ee10db097eeb3f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909101"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Como criar associações de arquivo para um aplicativo ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,31 +35,31 @@ ms.locfileid: "49300926"
   
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>Para criar associações de arquivo para um aplicativo ClickOnce  
   
-1.  Criar uma [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo normalmente, ou usar seu existente [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo.  
+1. Criar uma [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo normalmente, ou usar seu existente [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo.  
   
-2.  Abra o manifesto do aplicativo com um texto ou editor XML, como o bloco de notas.  
+2. Abra o manifesto do aplicativo com um texto ou editor XML, como o bloco de notas.  
   
-3.  Encontre o elemento `assembly`. Para obter mais informações, consulte [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md) (Manifesto do aplicativo ClickOnce).  
+3. Encontre o elemento `assembly`. Para obter mais informações, consulte [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md) (Manifesto do aplicativo ClickOnce).  
   
-4.  Como um filho de `assembly` elemento, adicionar um `fileAssociation` elemento. O `fileAssociation` elemento tem quatro atributos:  
+4. Como um filho de `assembly` elemento, adicionar um `fileAssociation` elemento. O `fileAssociation` elemento tem quatro atributos:  
   
-    -   `extension`: A extensão de nome de arquivo que você deseja associar o aplicativo.  
+   - `extension`: A extensão de nome de arquivo que você deseja associar o aplicativo.  
   
-    -   `description`: Uma descrição do tipo de arquivo, que será exibido no shell do Windows.  
+   - `description`: Uma descrição do tipo de arquivo, que será exibido no shell do Windows.  
   
-    -   `progid`: Uma cadeia de caracteres que identifica exclusivamente o tipo de arquivo, para marcá-la no registro.  
+   - `progid`: Uma cadeia de caracteres que identifica exclusivamente o tipo de arquivo, para marcá-la no registro.  
   
-    -   `defaultIcon`: Um ícone a ser usado para esse tipo de arquivo. O ícone deve ser adicionado como um recurso de arquivo no manifesto do aplicativo. Para obter mais informações, consulte [Como incluir um arquivo de dados em um aplicativo ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+   - `defaultIcon`: Um ícone a ser usado para esse tipo de arquivo. O ícone deve ser adicionado como um recurso de arquivo no manifesto do aplicativo. Para obter mais informações, consulte [Como incluir um arquivo de dados em um aplicativo ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
      Para obter um exemplo de `file` e `fileAssociation` elementos, consulte [ \<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md).  
   
-5.  Se você quiser associar mais de um tipo de arquivo com o aplicativo, adicionar mais `fileAssociation` elementos. Observe que o `progid` atributo deve ser diferente para cada um.  
+5. Se você quiser associar mais de um tipo de arquivo com o aplicativo, adicionar mais `fileAssociation` elementos. Observe que o `progid` atributo deve ser diferente para cada um.  
   
-6.  Quando terminar com o manifesto do aplicativo, assine novamente o manifesto. Você pode fazer isso na linha de comando usando Mage.exe.  
+6. Quando terminar com o manifesto do aplicativo, assine novamente o manifesto. Você pode fazer isso na linha de comando usando Mage.exe.  
   
-     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
+    `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
   
-     Para obter mais informações, consulte [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)  
+    Para obter mais informações, consulte [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)  
   
 ## <a name="see-also"></a>Consulte também  
  [\<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md)   

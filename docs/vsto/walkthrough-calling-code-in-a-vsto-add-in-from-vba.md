@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3bc8154be515bcf0509b2458534fed7c1c520e4e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9e46cf9032cae7d6400822be7d72394a7845314f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513615"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843815"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Passo a passo: Chamar o código em um suplemento do VSTO do VBA
   Este passo a passo demonstra como expor um objeto em um suplemento do VSTO para outras soluções do Microsoft Office, incluindo o Visual Basic for Applications (VBA) e COM VSTO Add-ins.  
@@ -37,13 +37,13 @@ ms.locfileid: "39513615"
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Definindo uma classe que pode ser exposta para outras soluções do Office.  
+- Definindo uma classe que pode ser exposta para outras soluções do Office.  
   
--   Expondo a classe a outras soluções do Office.  
+- Expondo a classe a outras soluções do Office.  
   
--   Chamar um método da classe de código do VBA.  
+- Chamar um método da classe de código do VBA.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  

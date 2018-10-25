@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: aef6236b896495f81e91cbdd7befd2923c013a33
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 3450671c32cb7cfa03ade49bffcbecea728ddacf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131954"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917512"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associar controles do WPF a um conjunto de dados
 
@@ -58,15 +58,15 @@ Conhecimento prévio dos conceitos a seguir também é útil, mas não é necess
 
 Crie um novo projeto WPF para exibir os registros de produtos.
 
-1.  Inicie o Visual Studio.
+1. Inicie o Visual Studio.
 
-2.  No menu **Arquivo**, selecione **Novo** > **Projeto**.
+2. No menu **Arquivo**, selecione **Novo** > **Projeto**.
 
-3.  Expandir **Visual Basic** ou **Visual c#** e, em seguida, selecione **Windows**.
+3. Expandir **Visual Basic** ou **Visual c#** e, em seguida, selecione **Windows**.
 
-4.  Selecione o **aplicativo WPF** modelo de projeto.
+4. Selecione o **aplicativo WPF** modelo de projeto.
 
-5.  No **nome** , digite **AdventureWorksProductsEditor** e, em seguida, selecione **Okey**.
+5. No **nome** , digite **AdventureWorksProductsEditor** e, em seguida, selecione **Okey**.
 
    Visual Studio cria o projeto AdventureWorksProductsEditor.
 
@@ -126,23 +126,23 @@ Para preencher o conjunto de dados com dados, use o método `Fill` do `ProductTa
 
 Adicione vários botões à janela, modificando o XAML no WPF Designer. A seguir neste passo a passo, você adicionará o código que permite aos usuários navegar e salvar alterações nos registros de produtos, usando esses botões.
 
-1.  Na **Gerenciador de soluções**, clique duas vezes em *MainWindow. XAML*.
+1. Na **Gerenciador de soluções**, clique duas vezes em *MainWindow. XAML*.
 
-     A janela é aberta na **WPF Designer**.
+    A janela é aberta na **WPF Designer**.
 
-2.  Na exibição [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] do designer, adicione o seguinte código entre as marcas `<Grid>`:
+2. Na exibição [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] do designer, adicione o seguinte código entre as marcas `<Grid>`:
 
-    ```xaml
-    <Grid.RowDefinitions>
-        <RowDefinition Height="75" />
-        <RowDefinition Height="625" />
-    </Grid.RowDefinitions>
-    <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-    <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
-    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
-    ```
+   ```xaml
+   <Grid.RowDefinitions>
+       <RowDefinition Height="75" />
+       <RowDefinition Height="625" />
+   </Grid.RowDefinitions>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
+   ```
 
-3.  Compile o projeto.
+3. Compile o projeto.
 
 ## <a name="create-data-bound-controls"></a>Criar controles associados a dados
 

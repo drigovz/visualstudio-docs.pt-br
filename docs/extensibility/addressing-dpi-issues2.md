@@ -9,41 +9,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2187e0d930195a7e40464d431d51d788dd26a119
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2c4ca03c932b86ad6f9907020b037abb1308a6f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918526"
 ---
 # <a name="address-dpi-issues"></a>Questões DPI
 Um número crescente de dispositivos é fornecidos com telas de "alta resolução". Normalmente, essas telas têm mais de 200 pixels por polegada (ppi). Trabalhar com um aplicativo nesses computadores necessitará de conteúdo a ser escalado verticalmente para atender às necessidades de exibir o conteúdo em uma distância de exibição normal para o dispositivo. A partir de 2014, o principal alvo para monitores de alta densidade é móvel (tablets, laptops clamshell e telefones) de dispositivos de computação.  
   
  Windows 8.1 e posterior contém vários recursos para habilitar esses computadores trabalhar com exibições e ambientes em que a máquina está conectada a ambos alta densidade e densidade standard exibe ao mesmo tempo.  
   
--   Windows podem permitir que você a ajustar o conteúdo para o dispositivo usando o "Tornar texto e outros itens maiores ou menores" configuração (disponível desde o Windows XP).  
+- Windows podem permitir que você a ajustar o conteúdo para o dispositivo usando o "Tornar texto e outros itens maiores ou menores" configuração (disponível desde o Windows XP).  
   
--   Windows 8.1 e posterior dimensionará automaticamente conteúdo para a maioria dos aplicativos ser consistente quando movidos entre exibições de diferentes densidades de pixels. Quando o vídeo principal é de alta densidade (200% scaling) e a exibição secundária é a densidade padrão (100%), o Windows dimensionará automaticamente o conteúdo da janela de aplicativo para baixo na exibição do secundária (1 pixel exibido para cada 4 pixels renderizados pelo aplicativo).  
+- Windows 8.1 e posterior dimensionará automaticamente conteúdo para a maioria dos aplicativos ser consistente quando movidos entre exibições de diferentes densidades de pixels. Quando o vídeo principal é de alta densidade (200% scaling) e a exibição secundária é a densidade padrão (100%), o Windows dimensionará automaticamente o conteúdo da janela de aplicativo para baixo na exibição do secundária (1 pixel exibido para cada 4 pixels renderizados pelo aplicativo).  
   
--   Windows padrão serão o direito de colocação em escala para a densidade de pixels e exibindo a distância para a exibição (Windows 7 e superior, configuráveis pelo OEM).  
+- Windows padrão serão o direito de colocação em escala para a densidade de pixels e exibindo a distância para a exibição (Windows 7 e superior, configuráveis pelo OEM).  
   
--   Windows podem dimensionar automaticamente conteúdo para cima 250% em novos dispositivos que excedem 280 ppi (a partir de S14 do Windows 8.1).  
+- Windows podem dimensionar automaticamente conteúdo para cima 250% em novos dispositivos que excedem 280 ppi (a partir de S14 do Windows 8.1).  
   
- Windows tem uma maneira de lidar com o aumento da interface do usuário para tirar proveito das contagens de aumento de pixel. Um aplicativo aceita o esse sistema declarando si mesmo "sistema de reconhecimento de DPI". Aplicativos que não fazem isso são aumentados pelo sistema. Isso pode resultar em uma experiência de usuário "difusa" onde todo o aplicativo é alongado de pixel uniformemente. Por exemplo:  
+  Windows tem uma maneira de lidar com o aumento da interface do usuário para tirar proveito das contagens de aumento de pixel. Um aplicativo aceita o esse sistema declarando si mesmo "sistema de reconhecimento de DPI". Aplicativos que não fazem isso são aumentados pelo sistema. Isso pode resultar em uma experiência de usuário "difusa" onde todo o aplicativo é alongado de pixel uniformemente. Por exemplo:  
   
- ![Problemas de DPI difuso](../extensibility/media/dpi-issues-fuzzy.png "DPI emite difusa")  
+  ![Problemas de DPI difuso](../extensibility/media/dpi-issues-fuzzy.png "DPI emite difusa")  
   
- Visual Studio aceita o que está sendo o reconhecimento de dimensionamento de DPI e, portanto, não está "virtualizado."  
+  Visual Studio aceita o que está sendo o reconhecimento de dimensionamento de DPI e, portanto, não está "virtualizado."  
   
- Windows (e o Visual Studio) aproveitam várias tecnologias de interface do usuário, que têm diferentes maneiras de lidar com definido pelo sistema de fatores de dimensionamento. Por exemplo:  
+  Windows (e o Visual Studio) aproveitam várias tecnologias de interface do usuário, que têm diferentes maneiras de lidar com definido pelo sistema de fatores de dimensionamento. Por exemplo:  
   
--   WPF mede os controles de forma independente de dispositivo (unidades, não em pixels). UI WPF pode ser dimensionado automaticamente para o DPI atual.  
+- WPF mede os controles de forma independente de dispositivo (unidades, não em pixels). UI WPF pode ser dimensionado automaticamente para o DPI atual.  
   
--   Todos os tamanhos de texto, independentemente da estrutura de interface do usuário são expressos em pontos e, portanto, são tratados pelo sistema como independente de DPI. Texto no WPF, WinForms e Win32 já dimensionar corretamente quando desenhada para o dispositivo de vídeo.  
+- Todos os tamanhos de texto, independentemente da estrutura de interface do usuário são expressos em pontos e, portanto, são tratados pelo sistema como independente de DPI. Texto no WPF, WinForms e Win32 já dimensionar corretamente quando desenhada para o dispositivo de vídeo.  
   
--   Janelas e caixas de diálogo do Win32/WinForms tem meios para habilitar o layout é redimensionado com texto (por exemplo, por meio de grade, fluxo e painéis de layout de tabela). Eles permitem evitar locais de pixel embutido em código que não são dimensionados quando os tamanhos de fonte são aumentados.  
+- Janelas e caixas de diálogo do Win32/WinForms tem meios para habilitar o layout é redimensionado com texto (por exemplo, por meio de grade, fluxo e painéis de layout de tabela). Eles permitem evitar locais de pixel embutido em código que não são dimensionados quando os tamanhos de fonte são aumentados.  
   
--   Ícones fornecidos pelo sistema ou recursos com base nas métricas do sistema (por exemplo, SM_CXICON e SM_CXSMICON) já estão dimensionados para cima.  
+- Ícones fornecidos pelo sistema ou recursos com base nas métricas do sistema (por exemplo, SM_CXICON e SM_CXSMICON) já estão dimensionados para cima.  
   
 ## <a name="older-win32-gdi-gdi-and-winforms-based-ui"></a>Win32 mais antigos (GDI, GDI+) e a interface do usuário baseada no WinForms  
  Embora o WPF já estiver reconhecimento de DPI alto, grande parte do nosso código baseado em Win32/GDI não foi gravado originalmente com reconhecimento de DPI em mente. Windows fornece APIs de escala de DPI. Correções para problemas de Win32 devem usá-las consistente em todo o produto. Visual Studio forneceu um auxiliar de biblioteca de classes para evitar a duplicação de funcionalidade e garantindo a consistência em todo o produto.  
@@ -85,21 +85,21 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
 ## <a name="layout-issues"></a>Problemas de layout  
  Problemas comuns de layout podem ser evitados, principalmente por manter os pontos na interface de usuário dimensionados e a relação em vez de usar locais absolutos (especificamente, em unidades de pixel). Por exemplo:  
   
--   Posições de texto do layout necessário ajustar a conta para imagens expandidos.  
+- Posições de texto do layout necessário ajustar a conta para imagens expandidos.  
   
--   Colunas em grades precisam ter larguras ajustadas para o texto expandidos.  
+- Colunas em grades precisam ter larguras ajustadas para o texto expandidos.  
   
--   Tamanhos de embutido em código ou o espaço entre os elementos também precisará ser escalado verticalmente. Tamanhos com base apenas nas dimensões de texto são costuma funcionar bem, porque as fontes são automaticamente escaladas verticalmente.  
+- Tamanhos de embutido em código ou o espaço entre os elementos também precisará ser escalado verticalmente. Tamanhos com base apenas nas dimensões de texto são costuma funcionar bem, porque as fontes são automaticamente escaladas verticalmente.  
   
- Funções de auxiliar estão disponíveis no <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> classe para permitir o dimensionamento no eixo X e Y:  
+  Funções de auxiliar estão disponíveis no <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> classe para permitir o dimensionamento no eixo X e Y:  
   
--   LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (funções permitem o dimensionamento em X / eixo Y)  
+- LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (funções permitem o dimensionamento em X / eixo Y)  
   
--   espaço de int = DpiHelper.LogicalToDeviceUnitsX (10);  
+- espaço de int = DpiHelper.LogicalToDeviceUnitsX (10);  
   
--   int altura = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
+- int altura = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
   
- Há sobrecargas de LogicalToDeviceUnits para permitir o dimensionamento de objetos, como Rect, ponto e tamanho.  
+  Há sobrecargas de LogicalToDeviceUnits para permitir o dimensionamento de objetos, como Rect, ponto e tamanho.  
   
 ## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>Usando a biblioteca DPIHelper/classe para dimensionar imagens e o layout  
  A biblioteca do auxiliar de DPI do Visual Studio está disponível em formulários nativos e gerenciados e pode ser usada por outros aplicativos fora do shell do Visual Studio.  
@@ -144,15 +144,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  Recomendações:  
   
--   Para a arte de imagem e faixas de logotipo, o padrão <xref:System.Windows.Media.BitmapScalingMode> modo de redimensionamento pode ser usado.  
+- Para a arte de imagem e faixas de logotipo, o padrão <xref:System.Windows.Media.BitmapScalingMode> modo de redimensionamento pode ser usado.  
   
--   Para itens de menu e imagens de iconografia, o <xref:System.Windows.Media.BitmapScalingMode> deve ser usado quando ele não faz com que outros artefatos de distorção eliminar o grau de seleção (no % 200 e 300%).  
+- Para itens de menu e imagens de iconografia, o <xref:System.Windows.Media.BitmapScalingMode> deve ser usado quando ele não faz com que outros artefatos de distorção eliminar o grau de seleção (no % 200 e 300%).  
   
--   Para os níveis de zoom grande não múltiplos de 100% (por exemplo, 250% ou % 350), dimensionando imagens iconografia com bicúbica resulta em difusa e Desbotado da interface do usuário. Um resultado melhor é obtido ao dimensionar a imagem com NearestNeighbor para o múltiplo de maior de 100% (por exemplo, 200% ou 300%) primeiro e o dimensionamento com bicúbica a partir daí. Consulte o caso especial: prescaling imagens do WPF para grande DPI níveis para obter mais informações.  
+- Para os níveis de zoom grande não múltiplos de 100% (por exemplo, 250% ou % 350), dimensionando imagens iconografia com bicúbica resulta em difusa e Desbotado da interface do usuário. Um resultado melhor é obtido ao dimensionar a imagem com NearestNeighbor para o múltiplo de maior de 100% (por exemplo, 200% ou 300%) primeiro e o dimensionamento com bicúbica a partir daí. Consulte o caso especial: prescaling imagens do WPF para grande DPI níveis para obter mais informações.  
   
- A classe DpiHelper no namespace Microsoft.VisualStudio.PlatformUI fornece um membro <xref:System.Windows.Media.BitmapScalingMode> que pode ser usado para associação. Isso permitirá que o shell do Visual Studio controlar o modo de dimensionamento em todo o produto uniformemente, dependendo do fator de escala de DPI de bitmap.  
+  A classe DpiHelper no namespace Microsoft.VisualStudio.PlatformUI fornece um membro <xref:System.Windows.Media.BitmapScalingMode> que pode ser usado para associação. Isso permitirá que o shell do Visual Studio controlar o modo de dimensionamento em todo o produto uniformemente, dependendo do fator de escala de DPI de bitmap.  
   
- Para usá-lo em XAML, adicione:  
+  Para usá-lo em XAML, adicione:  
   
 ```xaml  
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  

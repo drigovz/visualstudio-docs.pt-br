@@ -13,12 +13,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bda4e23fc98210ddf35bd81efee6ca41c2d945b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70950e616a4ce0cc2e355205b65b5da7ec7ce88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303299"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848651"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Fundamentos de UX para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -168,15 +168,15 @@ ms.locfileid: "49303299"
 ### <a name="hyperlink-anti-patterns"></a>Antipadrões de hiperlink  
  O exemplo a seguir contém dois antipadrões.  
   
-1.  Em primeiro plano ativar vermelho em foco significa compartilhado cor correta do serviço da fonte não está sendo usado.  
+1. Em primeiro plano ativar vermelho em foco significa compartilhado cor correta do serviço da fonte não está sendo usado.  
   
-2.  Não é o texto apropriado para um link para um tópico conceitual "Saiba mais". Objetivo do usuário não é saber mais, é compreender as ramificações de sua preferência.  
+2. Não é o texto apropriado para um link para um tópico conceitual "Saiba mais". Objetivo do usuário não é saber mais, é compreender as ramificações de sua preferência.  
   
- ![Hiperlink anti&#45;padrões](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "j_HyperlinkIncorrect 0102")  
+   ![Hiperlink anti&#45;padrões](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "j_HyperlinkIncorrect 0102")  
   
- **Ignorando o serviço de cor e uso de "Saiba mais" para os hiperlinks são antipadrões do Visual Studio.**  
+   **Ignorando o serviço de cor e uso de "Saiba mais" para os hiperlinks são antipadrões do Visual Studio.**  
   
- **Uma melhor solução:** faça a pergunta que o usuário deve estar se perguntando, clicando no link.  
+   **Uma melhor solução:** faça a pergunta que o usuário deve estar se perguntando, clicando no link.  
   
 -   Como funcionam os serviços do Windows Azure?  
   

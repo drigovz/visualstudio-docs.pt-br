@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55a5c6eada52cead60abb830a5a873cc71cac194
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c6550e4d9af994be1b703b56ab91cb33e6fdf5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238583"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824199"
 ---
 # <a name="utilization-navigator"></a>Navegador da utilização
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Navegador da Utilização e período de tempo selecionado
   
  Veja como usar o Navegador da Utilização para manipular o intervalo de tempo exibido:  
   
--   É possível ter uma vista panorâmica ao arrastar o controle de posição para a esquerda ou direita. (Teclado: mova o foco para o elevador e, em seguida, pressione a tecla de direção para a esquerda ou direita.)  
+- É possível ter uma vista panorâmica ao arrastar o controle de posição para a esquerda ou direita. (Teclado: mova o foco para o elevador e, em seguida, pressione a tecla de direção para a esquerda ou direita.)  
   
--   É possível alterar a extensão do intervalo arrastando um dos identificadores. (Teclado: mova o foco para um identificador e, em seguida, pressione a tecla de direção para a direita ou esquerda.)  
+- É possível alterar a extensão do intervalo arrastando um dos identificadores. (Teclado: mova o foco para um identificador e, em seguida, pressione a tecla de direção para a direita ou esquerda.)  
   
- Se o intervalo for alterado por meio de um controle de zoom diferente da Visualização Simultânea, o Navegador da Utilização se atualizará para refletir a mudança.
+  Se o intervalo for alterado por meio de um controle de zoom diferente da Visualização Simultânea, o Navegador da Utilização se atualizará para refletir a mudança.
 
 
 

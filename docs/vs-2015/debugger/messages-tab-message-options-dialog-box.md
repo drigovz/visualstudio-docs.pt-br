@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d169e4b53850fc4c63a838fdd8936c2f3d4820be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 533cbf2e6c971da709818343089d13a78d99a997
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298539"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912260"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Guia Mensagens, Caixa de diálogo Opções da Mensagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ Use o **mensagens** tab para selecionar qual mensagem tipos à lista na [exibiç
  **Grupos de mensagens**  
  Selecione os grupos de mensagens para a exibição. Os grupos disponíveis incluem:  
   
--   WM_USER: com um código de maior que ou igual a WM_USER  
+- WM_USER: com um código de maior que ou igual a WM_USER  
   
--   Registrado: registrado com o **RegisterWindowMessage** chamar  
+- Registrado: registrado com o **RegisterWindowMessage** chamar  
   
--   Desconhecido: mensagens desconhecidas no intervalo de 0 a (WM_USER – 1)  
+- Desconhecido: mensagens desconhecidas no intervalo de 0 a (WM_USER – 1)  
   
- Observe que esses **grupos de mensagens** não são mapeadas para as entradas específicas sob **exibição de mensagens para**. Quando você seleciona um grupo, a seleção é aplicada diretamente ao fluxo de mensagens.  
+  Observe que esses **grupos de mensagens** não são mapeadas para as entradas específicas sob **exibição de mensagens para**. Quando você seleciona um grupo, a seleção é aplicada diretamente ao fluxo de mensagens.  
   
- Uma caixa de seleção esmaecida dentro **grupos de mensagens** indica que o **exibição de mensagens para** caixa de listagem foi modificada para mensagens nesse grupo; nem todos os tipos de mensagem nesse grupo são selecionados.  
+  Uma caixa de seleção esmaecida dentro **grupos de mensagens** indica que o **exibição de mensagens para** caixa de listagem foi modificada para mensagens nesse grupo; nem todos os tipos de mensagem nesse grupo são selecionados.  
   
- **Salvar configurações como padrão**  
- Salve as configurações atuais para uso posterior como opções de pesquisa da mensagem. Essas configurações também são salvas ao sair Spy + +.
+  **Salvar configurações como padrão**  
+  Salve as configurações atuais para uso posterior como opções de pesquisa da mensagem. Essas configurações também são salvas ao sair Spy + +.
 
 
 

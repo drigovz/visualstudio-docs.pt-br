@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 79ceb9393291f6197cd68743dffdfd314776e717
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58a6c33449162665c10c6fa1d2c96f665c904a98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219408"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915004"
 ---
 # <a name="define-packages-and-namespaces"></a>Definir pacotes e namespaces
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,20 +78,20 @@ No Visual Studio, uma *pacote* é um contêiner para as definições dos element
   
 #### <a name="to-create-a-package-in-uml-model-explorer"></a>Para criar um pacote no Gerenciador de modelos UML  
   
-1.  Abra **Gerenciador de modelos UML**. Sobre o **arquitetura** , aponte para **Windows**e, em seguida, clique no **Gerenciador de modelos UML**.  
+1. Abra **Gerenciador de modelos UML**. Sobre o **arquitetura** , aponte para **Windows**e, em seguida, clique no **Gerenciador de modelos UML**.  
   
-2.  Clique com botão direito um pacote ou um modelo ao qual você deseja adicionar um novo pacote.  
+2. Clique com botão direito um pacote ou um modelo ao qual você deseja adicionar um novo pacote.  
   
-    > [!NOTE]
-    >  Você pode aninhar um pacote dentro de outro pacote.  
+   > [!NOTE]
+   >  Você pode aninhar um pacote dentro de outro pacote.  
   
-3.  Aponte para **Add** e, em seguida, clique em **pacote**.  
+3. Aponte para **Add** e, em seguida, clique em **pacote**.  
   
-     Um novo pacote é exibido no modelo.  
+    Um novo pacote é exibido no modelo.  
   
-4.  Digite um novo nome para o pacote.  
+4. Digite um novo nome para o pacote.  
   
- Se você tiver criado um pacote no Gerenciador de modelos UML, você pode exibi-lo em um diagrama de classe UML. Você também pode exibir um pacote em mais de um diagrama de classes UML.  
+   Se você tiver criado um pacote no Gerenciador de modelos UML, você pode exibi-lo em um diagrama de classe UML. Você também pode exibir um pacote em mais de um diagrama de classes UML.  
   
 #### <a name="to-show-an-existing-package-on-a-uml-class-diagram"></a>Para mostrar um pacote existente em um diagrama de classe UML  
   
@@ -103,15 +103,15 @@ No Visual Studio, uma *pacote* é um contêiner para as definições dos element
 ##  <a name="Elements"></a> Criar elementos de modelo dentro de pacotes  
  Há quatro maneiras em que você pode colocar os elementos de modelo dentro de um pacote:  
   
--   Adicione um novo elemento a um pacote no Gerenciador de modelos UML.  
+- Adicione um novo elemento a um pacote no Gerenciador de modelos UML.  
   
--   Adicione classes e outros tipos de pacotes em um diagrama de classe UML.  
+- Adicione classes e outros tipos de pacotes em um diagrama de classe UML.  
   
--   Defina as **LinkedPackage** propriedade de um diagrama para que novos elementos criados no diagrama são colocados dentro do pacote que você especificar. Diagramas de classe, diagramas de componente e diagramas de caso de uso podem ser vinculados a um pacote dessa maneira.  
+- Defina as **LinkedPackage** propriedade de um diagrama para que novos elementos criados no diagrama são colocados dentro do pacote que você especificar. Diagramas de classe, diagramas de componente e diagramas de caso de uso podem ser vinculados a um pacote dessa maneira.  
   
--   Mova elementos para dentro ou fora de um pacote no Gerenciador de modelos UML.  
+- Mova elementos para dentro ou fora de um pacote no Gerenciador de modelos UML.  
   
- Um elemento em um pacote é exibido sob o pacote no Gerenciador de modelos UML e seu nome qualificado começa com o nome qualificado do pacote. Para ver o nome qualificado de qualquer elemento, o elemento com o botão direito e, em seguida, clique em **propriedades**. O **nome qualificado** propriedade aparece na **propriedades** janela.  
+  Um elemento em um pacote é exibido sob o pacote no Gerenciador de modelos UML e seu nome qualificado começa com o nome qualificado do pacote. Para ver o nome qualificado de qualquer elemento, o elemento com o botão direito e, em seguida, clique em **propriedades**. O **nome qualificado** propriedade aparece na **propriedades** janela.  
   
 #### <a name="to-create-an-element-in-a-package-in-uml-model-explorer"></a>Para criar um elemento em um pacote no Gerenciador de modelos UML  
   

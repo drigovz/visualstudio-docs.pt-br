@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64a22cb00a90d9d5475fe89ff8c7fc800f23d86a
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: c37da890842711b941e61aadc23ed85d60672f3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371141"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823756"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo e o serviço de imagem
 Esse guia contém diretrizes e práticas recomendadas para adotar o serviço de imagem do Visual Studio e o catálogo de imagem introduzido no Visual Studio 2015.  
@@ -32,46 +32,46 @@ Esse guia contém diretrizes e práticas recomendadas para adotar o serviço de 
   
  Por que adotar o serviço de imagem?  
   
--   Sempre obter a imagem "perfeito" mais recente do Visual Studio  
+- Sempre obter a imagem "perfeito" mais recente do Visual Studio  
   
--   Você pode enviar e usar suas próprias imagens  
+- Você pode enviar e usar suas próprias imagens  
   
--   Não há necessidade de testar suas imagens out quando o Windows adiciona a nova escala de DPI  
+- Não há necessidade de testar suas imagens out quando o Windows adiciona a nova escala de DPI  
   
--   Antigos obstáculos de arquiteturas em suas implementações de endereço  
+- Antigos obstáculos de arquiteturas em suas implementações de endereço  
   
- As ferramentas de shell do Visual Studio antes e depois de usar o serviço de imagem:  
+  As ferramentas de shell do Visual Studio antes e depois de usar o serviço de imagem:  
   
- ![Serviço de imagem de antes e depois](../extensibility/media/image-service-before-and-after.png "serviço de imagem de antes e depois")  
+  ![Serviço de imagem de antes e depois](../extensibility/media/image-service-before-and-after.png "serviço de imagem de antes e depois")  
   
 ## <a name="how-it-works"></a>Como ele funciona
  O serviço de imagem pode fornecer uma imagem de bitmap adequada para qualquer estrutura de interface do usuário com suporte:  
   
--   WPF: BitmapSource  
+- WPF: BitmapSource  
   
--   WinForms: System.Drawing.Bitmap  
+- WinForms: System.Drawing.Bitmap  
   
--   Win32: HBITMAP  
+- Win32: HBITMAP  
   
- Diagrama de fluxo do serviço de imagem  
+  Diagrama de fluxo do serviço de imagem  
   
- ![Diagrama de fluxo do serviço de imagem](../extensibility/media/image-service-flow-diagram.png "diagrama de fluxo do serviço de imagem")  
+  ![Diagrama de fluxo do serviço de imagem](../extensibility/media/image-service-flow-diagram.png "diagrama de fluxo do serviço de imagem")  
   
- **Monikers de imagem**  
+  **Monikers de imagem**  
   
- Um moniker de imagem (ou moniker de forma abreviada) é um par de ID do GUID que identifica exclusivamente um ativo de imagem ou um ativo de lista de imagem da biblioteca de imagens.  
+  Um moniker de imagem (ou moniker de forma abreviada) é um par de ID do GUID que identifica exclusivamente um ativo de imagem ou um ativo de lista de imagem da biblioteca de imagens.  
   
- **Monikers conhecidos**  
+  **Monikers conhecidos**  
   
- O conjunto de identificadores de imagens contidas no catálogo de imagens do Visual Studio e publicamente consumíveis por qualquer componente do Visual Studio ou a extensão de.  
+  O conjunto de identificadores de imagens contidas no catálogo de imagens do Visual Studio e publicamente consumíveis por qualquer componente do Visual Studio ou a extensão de.  
   
- **Arquivos de manifesto de imagem**  
+  **Arquivos de manifesto de imagem**  
   
- Manifesto de imagem (*.imagemanifest*) arquivos são arquivos XML que definem um conjunto de ativos de imagem, os identificadores que representam os ativos e a imagem real ou imagens que representam cada ativo. Manifestos de imagem podem definir imagens independentes ou listas de imagens para dar suporte de interface do usuário. Além disso, há atributos que podem ser definidos no ativo ou nas imagens individuais por trás de cada ativo para alterar quando e como esses ativos são exibidos.  
+  Manifesto de imagem (*.imagemanifest*) arquivos são arquivos XML que definem um conjunto de ativos de imagem, os identificadores que representam os ativos e a imagem real ou imagens que representam cada ativo. Manifestos de imagem podem definir imagens independentes ou listas de imagens para dar suporte de interface do usuário. Além disso, há atributos que podem ser definidos no ativo ou nas imagens individuais por trás de cada ativo para alterar quando e como esses ativos são exibidos.  
   
- **Esquema de manifesto de imagem**  
+  **Esquema de manifesto de imagem**  
   
- Um manifesto de conclusão de imagem tem esta aparência:  
+  Um manifesto de conclusão de imagem tem esta aparência:  
   
 ```xml  
 <ImageManifest>  
@@ -405,52 +405,52 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
   
  Esses são os principais locais para usar identificadores de origem em uma janela de ferramenta. Siga as instruções para cada:  
   
-1.  Guia da janela de ferramenta quando as guias de Introdução pequenas o suficiente (também usada na **Ctrl**+**guia** alternador de janela).  
+1. Guia da janela de ferramenta quando as guias de Introdução pequenas o suficiente (também usada na **Ctrl**+**guia** alternador de janela).  
   
-     Adicione esta linha ao construtor para a classe que deriva de **ToolWindowPane** tipo:  
+    Adicione esta linha ao construtor para a classe que deriva de **ToolWindowPane** tipo:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    this.BitmapImageMoniker = KnownMonikers.Blank;  
-    ```  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   this.BitmapImageMoniker = KnownMonikers.Blank;  
+   ```  
   
-2.  O comando para abrir a janela da ferramenta.  
+2. O comando para abrir a janela da ferramenta.  
   
-     No *VSCT* de arquivos para o pacote, botão de comando da janela de ferramentas de edição:  
+    No *VSCT* de arquivos para o pacote, botão de comando da janela de ferramentas de edição:  
   
-    ```xml  
-    <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <!-- Replace this KnownMoniker with your desired ImageMoniker -->  
-      <Icon guid="ImageCatalogGuid" id="Blank" />  
-      <!-- Add this -->  
-      <CommandFlag>IconIsMoniker</CommandFlag>  
-      <Strings>  
-        <ButtonText>MyToolWindow</ButtonText>  
-      </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <!-- Replace this KnownMoniker with your desired ImageMoniker -->  
+     <Icon guid="ImageCatalogGuid" id="Blank" />  
+     <!-- Add this -->  
+     <CommandFlag>IconIsMoniker</CommandFlag>  
+     <Strings>  
+       <ButtonText>MyToolWindow</ButtonText>  
+     </Strings>  
+   </Button>  
+   ```  
   
- **Como usar o monikers de imagem em uma janela de ferramentas existentes?**  
+   **Como usar o monikers de imagem em uma janela de ferramentas existentes?**  
   
- Atualizar uma janela de ferramenta existente para usar os identificadores de origem da imagem é semelhante para as etapas para criar uma nova janela de ferramenta.  
+   Atualizar uma janela de ferramenta existente para usar os identificadores de origem da imagem é semelhante para as etapas para criar uma nova janela de ferramenta.  
   
- Esses são os principais locais para usar identificadores de origem em uma janela de ferramenta. Siga as instruções para cada:  
+   Esses são os principais locais para usar identificadores de origem em uma janela de ferramenta. Siga as instruções para cada:  
   
-1.  Guia da janela de ferramenta quando as guias de Introdução pequenas o suficiente (também usada na **Ctrl**+**guia** alternador de janela).  
+3. Guia da janela de ferramenta quando as guias de Introdução pequenas o suficiente (também usada na **Ctrl**+**guia** alternador de janela).  
   
-    1.  Remover essas linhas (se houver) no construtor da classe que deriva de **ToolWindowPane** tipo:  
+   1.  Remover essas linhas (se houver) no construtor da classe que deriva de **ToolWindowPane** tipo:  
   
-        ```csharp  
-        this.BitmapResourceID = <Value>;  
-        this.BitmapIndex = <Value>;  
-        ```  
+       ```csharp  
+       this.BitmapResourceID = <Value>;  
+       this.BitmapIndex = <Value>;  
+       ```  
   
-    2.  Consulte a etapa 1 # o "Como usar os identificadores de origem da imagem em uma nova janela de ferramenta?" seção acima.  
+   2.  Consulte a etapa 1 # o "Como usar os identificadores de origem da imagem em uma nova janela de ferramenta?" seção acima.  
   
-2.  O comando para abrir a janela da ferramenta.  
+4. O comando para abrir a janela da ferramenta.  
   
-    -   Consulte a etapa 2 # o "Como usar os identificadores de origem da imagem em uma nova janela de ferramenta?" seção acima.  
+   -   Consulte a etapa 2 # o "Como usar os identificadores de origem da imagem em uma nova janela de ferramenta?" seção acima.  
   
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Como usar o monikers de imagem em um arquivo. VSCT?  
  Atualização de seu *VSCT* arquivo conforme indicado pelas linhas de comentados abaixo:  
@@ -516,83 +516,83 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="how-do-i-port-a-project-system"></a>Como posso portar um sistema de projeto?  
  **Como fornecer ImageMonikers para um projeto**  
   
-1.  Implemente **VSHPROPID_SupportsIconMonikers** do projeto **IVsHierarchy**e retornar true.  
+1. Implemente **VSHPROPID_SupportsIconMonikers** do projeto **IVsHierarchy**e retornar true.  
   
-2.  Implementam **VSHPROPID_IconMonikerImageList** (se o projeto original usado **VSHPROPID_IconImgList**) ou **VSHPROPID_IconMonikerGuid**,  **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (se o projeto original usado  **VSHPROPID_IconHandle** e **VSHPROPID_OpenFolderIconHandle**).  
+2. Implementam **VSHPROPID_IconMonikerImageList** (se o projeto original usado **VSHPROPID_IconImgList**) ou **VSHPROPID_IconMonikerGuid**,  **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (se o projeto original usado  **VSHPROPID_IconHandle** e **VSHPROPID_OpenFolderIconHandle**).  
   
-3.  Altere a implementação dos VSHPROPIDs originais para ícones para criar versões "herdadas" dos ícones se pontos de extensão solicitação-los. **IVsImageService2** fornece a funcionalidade necessária obter esses ícones  
+3. Altere a implementação dos VSHPROPIDs originais para ícones para criar versões "herdadas" dos ícones se pontos de extensão solicitação-los. **IVsImageService2** fornece a funcionalidade necessária obter esses ícones  
   
- **Requisitos adicionais para o VB / c# projeto sabores**  
+   **Requisitos adicionais para o VB / c# projeto sabores**  
   
- Implementar apenas **VSHPROPID_SupportsIconMonikers** se você detectar que o seu projeto é a **sabor mais externo**. Caso contrário, o tipo mais externo real pode não oferecer suporte monikers de imagem na realidade, e seu tipo base pode efetivamente "Ocultar" imagens personalizadas.  
+   Implementar apenas **VSHPROPID_SupportsIconMonikers** se você detectar que o seu projeto é a **sabor mais externo**. Caso contrário, o tipo mais externo real pode não oferecer suporte monikers de imagem na realidade, e seu tipo base pode efetivamente "Ocultar" imagens personalizadas.  
   
- **Como usar o monikers de imagem no CPS?**  
+   **Como usar o monikers de imagem no CPS?**  
   
- Definindo imagens personalizadas no CPS (Common Project System) pode ser feito manualmente ou por meio de um modelo de item que vem com o SDK de extensibilidade do sistema de projeto.  
+   Definindo imagens personalizadas no CPS (Common Project System) pode ser feito manualmente ou por meio de um modelo de item que vem com o SDK de extensibilidade do sistema de projeto.  
   
- **Usando a extensibilidade do sistema de projeto do SDK**  
+   **Usando a extensibilidade do sistema de projeto do SDK**  
   
- Siga as instruções em [fornecer ícones personalizados para o tipo do tipo de projeto/Item](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) para personalizar suas imagens de CPS. Para obter mais informações sobre o CPS podem ser encontradas em [documentação de extensibilidade do sistema de projeto do Visual Studio](https://github.com/Microsoft/VSProjectSystem)  
+   Siga as instruções em [fornecer ícones personalizados para o tipo do tipo de projeto/Item](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) para personalizar suas imagens de CPS. Para obter mais informações sobre o CPS podem ser encontradas em [documentação de extensibilidade do sistema de projeto do Visual Studio](https://github.com/Microsoft/VSProjectSystem)  
   
- **Manualmente, use ImageMonikers**  
+   **Manualmente, use ImageMonikers**  
   
-1.  Implemente e exporte o **IProjectTreeModifier** interface no seu sistema de projeto.  
+4. Implemente e exporte o **IProjectTreeModifier** interface no seu sistema de projeto.  
   
-2.  Determinar quais **KnownMoniker** ou moniker de imagem personalizada que você deseja usar.  
+5. Determinar quais **KnownMoniker** ou moniker de imagem personalizada que você deseja usar.  
   
-3.  No **ApplyModifications** método, faça o seguinte em algum lugar no método antes de retornar a nova árvore, semelhante do exemplo abaixo:  
+6. No **ApplyModifications** método, faça o seguinte em algum lugar no método antes de retornar a nova árvore, semelhante do exemplo abaixo:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
-    ```  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
+   ```  
   
-4.  Se você estiver criando uma nova árvore, você pode definir as imagens personalizadas, passando os monikers desejados para o método NewTree, semelhante do exemplo abaixo:  
+7. Se você estiver criando uma nova árvore, você pode definir as imagens personalizadas, passando os monikers desejados para o método NewTree, semelhante do exemplo abaixo:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    ProjectImageMoniker icon         = KnownMonikers.FolderClosed.ToProjectSystemType();  
-    ProjectImageMoniker expandedIcon = KnownMonikers.FolderOpened.ToProjectSystemType();  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   ProjectImageMoniker icon         = KnownMonikers.FolderClosed.ToProjectSystemType();  
+   ProjectImageMoniker expandedIcon = KnownMonikers.FolderOpened.ToProjectSystemType();  
   
-    return this.ProjectTreeFactory.Value.NewTree(/*caption*/<value>,  
-                                                 /*filePath*/<value>,  
-                                                 /*browseObjectProperties*/<value>,  
-                                                 icon,  
-                                                 expandedIcon);  
-    ```  
+   return this.ProjectTreeFactory.Value.NewTree(/*caption*/<value>,  
+                                                /*filePath*/<value>,  
+                                                /*browseObjectProperties*/<value>,  
+                                                icon,  
+                                                expandedIcon);  
+   ```  
   
 ## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>Como converter de uma faixa de imagem real para uma faixa de imagem com base no identificador de origem?  
  **Preciso dar suporte a HIMAGELISTs**  
   
  Se houver uma faixa de imagem já existente para o código que você deseja atualizar para usar o serviço de imagem, mas você é restringidas pelas APIs que exigem a passagem em torno de listas de imagens, você ainda pode obter os benefícios do serviço de imagem. Para criar uma faixa de imagem com base no identificador de origem, siga as etapas abaixo para criar um manifesto de monikers existentes.  
   
-1.  Execute o **ManifestFromResources** ferramenta, passando-o da faixa de imagens. Isso irá gerar um manifesto para a faixa.  
+1. Execute o **ManifestFromResources** ferramenta, passando-o da faixa de imagens. Isso irá gerar um manifesto para a faixa.  
   
-    -   Recomendado: forneça um nome de não padrão para o manifesto de acordo com seu uso.  
+   -   Recomendado: forneça um nome de não padrão para o manifesto de acordo com seu uso.  
   
-2.  Se você estiver usando apenas **KnownMonikers**, em seguida, faça o seguinte:  
+2. Se você estiver usando apenas **KnownMonikers**, em seguida, faça o seguinte:  
   
-    -   Substitua os \<imagens > seção do manifesto com \<imagens / >.  
+   -   Substitua os \<imagens > seção do manifesto com \<imagens / >.  
   
-    -   Remover todas as IDs de subimage (tudo que for \<imagestrip nome > _ # #).  
+   -   Remover todas as IDs de subimage (tudo que for \<imagestrip nome > _ # #).  
   
-    -   Recomendado: renomear o símbolo AssetsGuid e o símbolo de faixa de imagem de acordo com seu uso.  
+   -   Recomendado: renomear o símbolo AssetsGuid e o símbolo de faixa de imagem de acordo com seu uso.  
   
-    -   Substitua cada **ContainedImage**do GUID com $(ImageCatalogGuid), substitua cada **ContainedImage**do ID com $(\<moniker >) e adicione o atributo de externo = "true" para cada **ContainedImage**  
+   -   Substitua cada **ContainedImage**do GUID com $(ImageCatalogGuid), substitua cada **ContainedImage**do ID com $(\<moniker >) e adicione o atributo de externo = "true" para cada **ContainedImage**  
   
-        -   \<Moniker > deve ser substituído com o **KnownMoniker** que corresponda à imagem, mas com "KnownMonikers". removido do nome.  
+       -   \<Moniker > deve ser substituído com o **KnownMoniker** que corresponda à imagem, mas com "KnownMonikers". removido do nome.  
   
-    -   Adicione < importação Manifest="$(ManifestFolder)\\< relativo ao instalar o caminho de diretório para *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\*> na parte superior do \<símbolos > seção.  
+   -   Adicione < importação Manifest="$(ManifestFolder)\\< relativo ao instalar o caminho de diretório para *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\*> na parte superior do \<símbolos > seção.  
   
-        -   O caminho relativo é determinado pelo local de implantação definido na configuração de criação para o manifesto.  
+       -   O caminho relativo é determinado pelo local de implantação definido na configuração de criação para o manifesto.  
   
-3.  Execute o **ManifestToCode** ferramenta para gerar wrappers para que o código existente tem um moniker que ele pode usar para consultar o serviço de imagem para a faixa de imagem.  
+3. Execute o **ManifestToCode** ferramenta para gerar wrappers para que o código existente tem um moniker que ele pode usar para consultar o serviço de imagem para a faixa de imagem.  
   
-    -   Recomendado: fornece nomes de não padrão para os wrappers e os namespaces de acordo com seu uso.  
+   -   Recomendado: fornece nomes de não padrão para os wrappers e os namespaces de acordo com seu uso.  
   
-4.  Fazer todo o adiciona, instalação de criação/implantação e outras alterações de código para trabalhar com o serviço de imagem e os novos arquivos.  
+4. Fazer todo o adiciona, instalação de criação/implantação e outras alterações de código para trabalhar com o serviço de imagem e os novos arquivos.  
   
- Exemplo de manifesto incluindo imagens internas e externas para ver o que deve se parecer com:  
+   Exemplo de manifesto incluindo imagens internas e externas para ver o que deve se parecer com:  
   
 ```xml  
 <?xml version="1.0"?>  

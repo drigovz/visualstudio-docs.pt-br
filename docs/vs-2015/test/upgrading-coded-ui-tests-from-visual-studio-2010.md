@@ -13,12 +13,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ec0229107b4a9ab3ef3710fb5306f1dfdcccfa44
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2475a61839e34b69d8e99e01bde32fd47b9c276
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907138"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Atualizando testes de IU codificados a partir do Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,17 +56,17 @@ Projetos de teste que contêm testes de IU codificados criados no [!INCLUDE[vs_d
   
  Depois de aplicar a atualização, os seguintes recursos de ferramenta de teste de IU codificado do [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 serão aprimorados para o Windows 8:  
   
--   Você pode executar um Teste de IU codificado para os controles do WPF (Windows Presentation Foundation) baseados no Microsoft .NET Framework 4.5 em um computador que está executando o Windows 8.  
+- Você pode executar um Teste de IU codificado para os controles do WPF (Windows Presentation Foundation) baseados no Microsoft .NET Framework 4.5 em um computador que está executando o Windows 8.  
   
--   Você pode executar um Teste de IU codificado para o Internet Explorer 10 de 64 bits (x64) em um computador que está executando o Windows 8.  
+- Você pode executar um Teste de IU codificado para o Internet Explorer 10 de 64 bits (x64) em um computador que está executando o Windows 8.  
   
- A atualização também contém correções para os seguintes problemas:  
+  A atualização também contém correções para os seguintes problemas:  
   
--   **Cobertura de código:** impossibilidade de abrir um arquivo de cobertura de código (.coverage) criado pelo Visual Studio 2012 no [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.  
+- **Cobertura de código:** impossibilidade de abrir um arquivo de cobertura de código (.coverage) criado pelo Visual Studio 2012 no [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.  
   
--   **Artefatos de teste presos:** sua equipe tem um artefato de teste que é atribuído a um usuário inválido no Team Foundation Server (TFS) 2010. Por exemplo, um usuário saiu da empresa, mas ainda tem um caso de teste atribuído a ele. Atualize o TFS 2010 para TFS 2012. Você usa o [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 para se conectar ao servidor TFS atualizado. Não é possível atribuir o artefato de teste a qualquer usuário do TFS usando [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.  
+- **Artefatos de teste presos:** sua equipe tem um artefato de teste que é atribuído a um usuário inválido no Team Foundation Server (TFS) 2010. Por exemplo, um usuário saiu da empresa, mas ainda tem um caso de teste atribuído a ele. Atualize o TFS 2010 para TFS 2012. Você usa o [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 para se conectar ao servidor TFS atualizado. Não é possível atribuir o artefato de teste a qualquer usuário do TFS usando [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.  
   
--   **Teste de carga:** quando você executa um teste de carga junto com um tipo de rede que não é o perfil de rede local (LAN) em um computador com o Windows 8, o driver do emulador de rede faz com que o sistema operacional falhe. Para obter mais detalhes, consulte o [Artigo KB 2736182](http://support.microsoft.com/kb/2736182).  
+- **Teste de carga:** quando você executa um teste de carga junto com um tipo de rede que não é o perfil de rede local (LAN) em um computador com o Windows 8, o driver do emulador de rede faz com que o sistema operacional falhe. Para obter mais detalhes, consulte o [Artigo KB 2736182](http://support.microsoft.com/kb/2736182).  
   
 ## <a name="see-also"></a>Consulte também  
  [Portabilidade, migração e atualização de projetos do Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)   

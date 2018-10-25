@@ -15,12 +15,12 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b6a89c76cf1f292ca99664e0e75c4070bdddaa54
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5b5346f47d3dcb836a0e8eeef7d9b21bd55ccd07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859933"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896231"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Passo a passo: conectar um host a um processador de diretiva gerado
 
@@ -33,21 +33,22 @@ Este passo a passo, você expandirá seu host personalizado para que ele dá sup
 
 Esta explicação passo a passo inclui as seguintes tarefas:
 
--   Usando [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] para gerar um processador de diretriz se baseia em um modelo de domínio.
+- Usando [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] para gerar um processador de diretriz se baseia em um modelo de domínio.
 
--   Conectando um host de modelo de texto personalizado para o processador de diretriz gerado.
+- Conectando um host de modelo de texto personalizado para o processador de diretriz gerado.
 
--   Testando o host personalizado com o processador de diretriz gerado.
+- Testando o host personalizado com o processador de diretriz gerado.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|SDK de Visualização e Modelagem do Visual Studio||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| SDK de Visualização e Modelagem do Visual Studio | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -57,34 +58,34 @@ Além disso, você deve ter a transformação do modelo de texto personalizado c
 
 Neste passo a passo, você pode usar o Assistente de Designer de linguagem específica de domínio para criar uma linguagem específica de domínio para a solução DSLMinimalTest.
 
-1.  Crie uma solução de linguagem específica de domínio que tem as seguintes características:
+1. Crie uma solução de linguagem específica de domínio que tem as seguintes características:
 
-    -   Nome: DSLMinimalTest
+   -   Nome: DSLMinimalTest
 
-    -   Modelo de solução: linguagem mínima
+   -   Modelo de solução: linguagem mínima
 
-    -   Extensão de arquivo: min
+   -   Extensão de arquivo: min
 
-    -   Nome da empresa: Fabrikam
+   -   Nome da empresa: Fabrikam
 
    Para obter mais informações sobre como criar uma solução de linguagem específica de domínio, consulte [como: criar uma solução de linguagem específica do domínio](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-2.  No menu **Compilar**, clique em **Compilar Solução**.
+2. No menu **Compilar**, clique em **Compilar Solução**.
 
-    > [!IMPORTANT]
-    > Esta etapa gera o processador de diretriz e adiciona a chave para ele no registro.
+   > [!IMPORTANT]
+   > Esta etapa gera o processador de diretriz e adiciona a chave para ele no registro.
 
-3.  No menu **Depuração**, clique em **Iniciar Depuração**.
+3. No menu **Depuração**, clique em **Iniciar Depuração**.
 
-     Abre uma segunda instância do Visual Studio.
+    Abre uma segunda instância do Visual Studio.
 
-4.  Na compilação experimental, na **Gerenciador de soluções**, clique duas vezes no arquivo **sample.min**.
+4. Na compilação experimental, na **Gerenciador de soluções**, clique duas vezes no arquivo **sample.min**.
 
-     O arquivo é aberto no designer. Observe que o modelo tem dois elementos, ExampleElement1 e ExampleElement2 e um link entre elas.
+    O arquivo é aberto no designer. Observe que o modelo tem dois elementos, ExampleElement1 e ExampleElement2 e um link entre elas.
 
-5.  Feche a segunda instância do Visual Studio.
+5. Feche a segunda instância do Visual Studio.
 
-6.  Salve a solução e, em seguida, feche o Designer de linguagem específica do domínio.
+6. Salve a solução e, em seguida, feche o Designer de linguagem específica do domínio.
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Conectar-se um Host de modelo de texto personalizado a um processador de diretriz
 

@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da5df0faa57a63f44892fa86785bccf4716f38f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67876c6b9191c8b551eb70906272751bc55ef481
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837965"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante de compressão de textura BC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Habilita a compactação do bloco em texturas cujo formato de pixel é uma varia
 ## <a name="remarks"></a>Comentários  
  Para compactar texturas, use um formato de compactação em bloco em cada chamada de `ID3DDevice::CreateTexture2D`, que cria uma textura de origem. As texturas são compactadas quando:  
   
--   O objeto `D3D11_TEXTURE2D_DESC` apresentado a `pDesc` descreve um recurso do sombreador inalterável, ou seja:  
+- O objeto `D3D11_TEXTURE2D_DESC` apresentado a `pDesc` descreve um recurso do sombreador inalterável, ou seja:  
   
-    -   O membro BindFlags tem apenas o sinalizador D3D11_BIND_SHADER_RESOURCE definido.  
+  -   O membro BindFlags tem apenas o sinalizador D3D11_BIND_SHADER_RESOURCE definido.  
   
-    -   O membro Uso está definido como D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.  
+  -   O membro Uso está definido como D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.  
   
-    -   O membro CPUAccessFlags está definido como 0 (sem acesso à CPU).  
+  -   O membro CPUAccessFlags está definido como 0 (sem acesso à CPU).  
   
-    -   O membro SamplerDesc tem seu membro Count definido como 1 (sem MSAA (suavização de amostra múltipla)).  
+  -   O membro SamplerDesc tem seu membro Count definido como 1 (sem MSAA (suavização de amostra múltipla)).  
   
--   Os dados iniciais são fornecidos para a chamada de `CreateTexture2D`.  
+- Os dados iniciais são fornecidos para a chamada de `CreateTexture2D`.  
   
- Estes são os formatos de origem compatíveis e seus respectivos formatos compactados em blocos:  
+  Estes são os formatos de origem compatíveis e seus respectivos formatos compactados em blocos:  
   
 |Formato original (de)|Formato compactado (para)|  
 |------------------------------|------------------------------|  

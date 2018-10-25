@@ -33,12 +33,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52320637f9de3f7c96af75dae7a53a5626dfeb36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f1a09cf7e4f6e15ee49ce62914b650c3622e6e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249815"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894047"
 ---
 # <a name="format-specifiers-in-c"></a>Especificadores de formato em C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Você pode alterar o formato no qual um valor é exibido na **inspeção** janel
   
 > [!NOTE]
 >  O depurador nativo do Visual Studio foi alterado para um novo mecanismo de depuração. Como parte dessa alteração, alguns novos especificadores de formato foram adicionados e alguns antigos foram removidos. O depurador antigo ainda é usado quando você fizer interop (nativa e gerenciada combinadas) depuração com c++ CLI. As seções a seguir neste tópico mostram os especificadores de formato para cada mecanismo de depuração.  
->   
->  -   [Especificadores de formato](#BKMK_Visual_Studio_2012_format_specifiers) descreve os especificadores de formato no novo mecanismo de depuração.  
-> -   [Especificadores de formato para depuração interop com c++ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) descreve os especificadores de formato no mecanismo de depuração antigo.  
+> 
+> - [Especificadores de formato](#BKMK_Visual_Studio_2012_format_specifiers) descreve os especificadores de formato no novo mecanismo de depuração.  
+>   -   [Especificadores de formato para depuração interop com c++ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) descreve os especificadores de formato no mecanismo de depuração antigo.  
   
 ## <a name="using-format-specifiers"></a>Usando especificadores de formato  
  Se você tiver o seguinte código:  

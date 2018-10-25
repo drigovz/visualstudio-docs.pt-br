@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c538897de64f6b7cc1f832cc07604991375872
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: dfdcb3e273e3e2c7b957a78280511980fa9c93fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283737"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905305"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Usar o coletor autônomo do IntelliTrace
 O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico do IntelliTrace para seus aplicativos em servidores de produção ou em outros ambientes sem instalar o Visual Studio no computador de destino e sem alterar o ambiente do sistema de destino. O coletor autônomo IntelliTrace funciona em aplicativos web, SharePoint, do WPF e Windows Forms. Quando você terminar a coleta de dados, basta excluir o coletor para desinstalá-lo.
@@ -33,22 +33,22 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico do
 
  **Requisitos**
 
--   .NET Framework 3.5, 4 ou 4.5
+- .NET Framework 3.5, 4 ou 4.5
 
--   Visual Studio Enterprise (mas não no Professional ou Community edições) em um computador de desenvolvimento ou em outro computador para abrir arquivos. itrace
+- Visual Studio Enterprise (mas não no Professional ou Community edições) em um computador de desenvolvimento ou em outro computador para abrir arquivos. itrace
 
-    > [!NOTE]
-    >  Certifique-se de salvar o símbolo arquivos (.pdb). Para depurar com o IntelliTrace e percorrer o código, você deve ter os arquivos de origem e de símbolo correspondentes. Ver [diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md).
+  > [!NOTE]
+  >  Certifique-se de salvar o símbolo arquivos (.pdb). Para depurar com o IntelliTrace e percorrer o código, você deve ter os arquivos de origem e de símbolo correspondentes. Ver [diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md).
 
- **PERGUNTAS FREQUENTES**
+  **PERGUNTAS FREQUENTES**
 
--   [Quais aplicativos funcionam com o coletor?](#WhatApps)
+- [Quais aplicativos funcionam com o coletor?](#WhatApps)
 
--   [Como posso começar?](#GetStarted)
+- [Como posso começar?](#GetStarted)
 
--   [Como posso obter a maioria dos dados sem afetar a velocidade do meu aplicativo?](#Minimizing)
+- [Como posso obter a maioria dos dados sem afetar a velocidade do meu aplicativo?](#Minimizing)
 
--   [Onde mais posso obter dados do IntelliTrace?](#WhereElse)
+- [Onde mais posso obter dados do IntelliTrace?](#WhereElse)
 
 ##  <a name="WhatApps"></a> Quais aplicativos funcionam com o coletor?
 
@@ -78,40 +78,40 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico do
 
 ##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Instalar o coletor
 
-1.  No servidor do seu aplicativo, crie o diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
+1. No servidor do seu aplicativo, crie o diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
 
-2.  Obtenha o coletor do Microsoft Download Center ou da pasta de instalação do Visual Studio 2013 atualização 3. [Coletor IntelliTrace para Visual Studio 2013 atualização 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909)::
+2. Obtenha o coletor do Microsoft Download Center ou da pasta de instalação do Visual Studio 2013 atualização 3. [Coletor IntelliTrace para Visual Studio 2013 atualização 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909)::
 
-    -   **Centro de Download da Microsoft**:
+   - **Centro de Download da Microsoft**:
 
-        1.  Lado **IntelliTraceCollector.exe**, escolha **baixar**.
+     1. Lado **IntelliTraceCollector.exe**, escolha **baixar**.
 
-        2.  Salvar IntelliTraceCollector.exe ao diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
+     2. Salvar IntelliTraceCollector.exe ao diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
 
-        3.  Execute o IntelliTraceCollector.exe. Isso extrai o arquivo IntelliTraceCollection.cab.
+     3. Execute o IntelliTraceCollector.exe. Isso extrai o arquivo IntelliTraceCollection.cab.
 
-         \- ou -
+        \- ou -
 
-    -   **Pasta de instalação do Visual Studio**:
+   - **Pasta de instalação do Visual Studio**:
 
-        1.  Copie o IntelliTraceCollection.cab da pasta a seguir:
+     1.  Copie o IntelliTraceCollection.cab da pasta a seguir:
 
-             **.. \Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
+          **.. \Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
-        2.  Coloque o intellitracecollection. cab no diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
+     2.  Coloque o intellitracecollection. cab no diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
 
-3.  Expanda o IntelliTraceCollection.cab:
+3. Expanda o IntelliTraceCollection.cab:
 
-    1.  No servidor do seu aplicativo, abra uma janela de prompt de comando como administrador.
+   1.  No servidor do seu aplicativo, abra uma janela de prompt de comando como administrador.
 
-    2.  Navegue até o diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
+   2.  Navegue até o diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
 
-    3.  Use o **expandir** comando, incluindo o período (**.**) no final, para expandir o intellitracecollection. cab:
+   3.  Use o **expandir** comando, incluindo o período (**.**) no final, para expandir o intellitracecollection. cab:
 
-         `expand  /f:* IntelliTraceCollection.cab .`
+        `expand  /f:* IntelliTraceCollection.cab .`
 
-        > [!NOTE]
-        >  O período (**.**) preserva as subpastas que contêm planos de coleta localizada.
+       > [!NOTE]
+       >  O período (**.**) preserva as subpastas que contêm planos de coleta localizada.
 
 ##  <a name="ConfigurePermissionsRunningCollector"></a> Configurar permissões para o diretório do coletor
 
@@ -167,47 +167,47 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico do
 
 ##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> Configurar permissões para o diretório do arquivo. itrace
 
-1.  No servidor do seu aplicativo, crie o diretório do arquivo. itrace, por exemplo: **C:\IntelliTraceLogFiles**
+1. No servidor do seu aplicativo, crie o diretório do arquivo. itrace, por exemplo: **C:\IntelliTraceLogFiles**
 
-    > [!NOTE]
-    >  -   Para evitar a lentidão no aplicativo, escolha um local em um disco de alta velocidade local que não seja muito ativo.
-    > -   Você pode colocar os arquivos .iTrace e os coletores no mesmo lugar. No entanto, se você tiver um aplicativo da web ou do SharePoint, verifique se que esse local está fora do diretório que hospeda o aplicativo.
+   > [!NOTE]
+   > - Para evitar a lentidão no aplicativo, escolha um local em um disco de alta velocidade local que não seja muito ativo.
+   >   -   Você pode colocar os arquivos .iTrace e os coletores no mesmo lugar. No entanto, se você tiver um aplicativo da web ou do SharePoint, verifique se que esse local está fora do diretório que hospeda o aplicativo.
+   > 
+   > [!IMPORTANT]
+   > - Restrinja o diretório do arquivo .iTrace a apenas as identidades que devem trabalhar com o coletor. Um arquivo .iTrace pode conter informações confidenciais, tais como dados de usuários, bancos de dados, outros locais de origem e cadeias de conexão como IntelliTrace podem registrar quaisquer dados que passem os parâmetros de método ou como valores de retorno.
+   >   -   Certifique-se de aqueles que podem abrir os arquivos .iTrace têm autoridade para ver dados confidenciais. Tenha cuidado ao compartilhar arquivos .iTrace. Se outras pessoas precisarem ter acesso, copie os arquivos para um local compartilhado seguro.
 
-    > [!IMPORTANT]
-    >  -   Restrinja o diretório do arquivo .iTrace a apenas as identidades que devem trabalhar com o coletor. Um arquivo .iTrace pode conter informações confidenciais, tais como dados de usuários, bancos de dados, outros locais de origem e cadeias de conexão como IntelliTrace podem registrar quaisquer dados que passem os parâmetros de método ou como valores de retorno.
-    > -   Certifique-se de aqueles que podem abrir os arquivos .iTrace têm autoridade para ver dados confidenciais. Tenha cuidado ao compartilhar arquivos .iTrace. Se outras pessoas precisarem ter acesso, copie os arquivos para um local compartilhado seguro.
+2. Para um aplicativo da web ou do SharePoint, conceda ao seu pool de aplicativos permissões totais para o diretório de arquivos .iTrace. Você pode usar o Windows **icacls** de comando ou use o Windows Explorer (ou Explorador de arquivos).
 
-2.  Para um aplicativo da web ou do SharePoint, conceda ao seu pool de aplicativos permissões totais para o diretório de arquivos .iTrace. Você pode usar o Windows **icacls** de comando ou use o Windows Explorer (ou Explorador de arquivos).
+    Por exemplo:
 
-     Por exemplo:
+   - Para configurar as permissões com o Windows **icacls** comando:
 
-    -   Para configurar as permissões com o Windows **icacls** comando:
+     - Para um aplicativo Web na **DefaultAppPool** pool de aplicativos:
 
-        -   Para um aplicativo Web na **DefaultAppPool** pool de aplicativos:
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`
 
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`
+     - Para um aplicativo do SharePoint na **SharePoint - 80** pool de aplicativos:
 
-        -   Para um aplicativo do SharePoint na **SharePoint - 80** pool de aplicativos:
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
+       -ou-
 
-         -ou-
+   - Para configurar permissões com o Windows Explorer (ou o Explorador de Arquivos):
 
-    -   Para configurar permissões com o Windows Explorer (ou o Explorador de Arquivos):
+     1.  Abra **propriedades** para o diretório do arquivo. itrace.
 
-        1.  Abra **propriedades** para o diretório do arquivo. itrace.
+     2.  Sobre o **segurança** guia, escolha **editar**, **adicionar**.
 
-        2.  Sobre o **segurança** guia, escolha **editar**, **adicionar**.
+     3.  Certifique-se **entidades de segurança internas** aparece na **Selecione este tipo de objeto** caixa. Se ele não estiver presente, escolha **tipos de objeto** para adicioná-lo.
 
-        3.  Certifique-se **entidades de segurança internas** aparece na **Selecione este tipo de objeto** caixa. Se ele não estiver presente, escolha **tipos de objeto** para adicioná-lo.
+     4.  Verifique se o computador local aparece na **desse local** caixa. Se ele não estiver presente, escolha **locais** alterá-la.
 
-        4.  Verifique se o computador local aparece na **desse local** caixa. Se ele não estiver presente, escolha **locais** alterá-la.
+     5.  No **insira os nomes de objeto a selecionar** caixa, adicione o pool de aplicativos para o aplicativo Web ou aplicativo do SharePoint.
 
-        5.  No **insira os nomes de objeto a selecionar** caixa, adicione o pool de aplicativos para o aplicativo Web ou aplicativo do SharePoint.
+     6.  Escolher **verificar nomes** para resolver o nome. Escolha **OK**.
 
-        6.  Escolher **verificar nomes** para resolver o nome. Escolha **OK**.
-
-        7.  Verifique se o pool de aplicativos tem **controle total**.
+     7.  Verifique se o pool de aplicativos tem **controle total**.
 
 ##  <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Coletar dados de um aplicativo Web ou aplicativo do SharePoint
 
@@ -291,92 +291,89 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico do
 
  Estas são algumas das maneiras de obter a maioria dos dados sem deixar seu aplicativo mais lento:
 
--   Execute o coletor somente quando você achar que há um problema ou quando você puder reproduzir o problema.
+- Execute o coletor somente quando você achar que há um problema ou quando você puder reproduzir o problema.
 
-     Inicie a coleta, reproduza o problema e, em seguida, pare a coleta. Abra o arquivo. itrace no Visual Studio Enterprise e examinar os dados. Ver [abrir o arquivo. itrace no Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files).
+   Inicie a coleta, reproduza o problema e, em seguida, pare a coleta. Abra o arquivo. itrace no Visual Studio Enterprise e examinar os dados. Ver [abrir o arquivo. itrace no Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files).
 
--   Para aplicativos da web e do SharePoint, o coletor grava os dados de todos os aplicativos que compartilham o pool de aplicativos especificado. Isso talvez deixe mais lento qualquer aplicativo que compartilhe o mesmo pool de aplicativos, mesmo que você possa especificar módulos para um único aplicativo no plano de coleta.
+- Para aplicativos da web e do SharePoint, o coletor grava os dados de todos os aplicativos que compartilham o pool de aplicativos especificado. Isso talvez deixe mais lento qualquer aplicativo que compartilhe o mesmo pool de aplicativos, mesmo que você possa especificar módulos para um único aplicativo no plano de coleta.
 
-     Para evitar que o coletor deixe outros aplicativos mais lentos, hospede cada aplicativo em seu próprio pool de aplicativos.
+   Para evitar que o coletor deixe outros aplicativos mais lentos, hospede cada aplicativo em seu próprio pool de aplicativos.
 
--   Revise os eventos no plano de coleta para o qual o IntelliTrace coleta os dados. Edite o plano de coleta para desabilitar eventos que não sejam relevantes ou que não sejam de seu interesse.
+- Revise os eventos no plano de coleta para o qual o IntelliTrace coleta os dados. Edite o plano de coleta para desabilitar eventos que não sejam relevantes ou que não sejam de seu interesse.
 
-     Para desabilitar um evento, defina o atributo `enabled` para o elemento `<DiagnosticEventSpecification>` como `false`:
+   Para desabilitar um evento, defina o atributo `enabled` para o elemento `<DiagnosticEventSpecification>` como `false`:
 
-     `<DiagnosticEventSpecification enabled="false">`
+   `<DiagnosticEventSpecification enabled="false">`
 
-     Se o atributo `enabled` não existir, o evento estará habilitado.
+   Se o atributo `enabled` não existir, o evento estará habilitado.
 
-     *Como isso melhora o desempenho?*
+   *Como isso melhora o desempenho?*
 
-    -   Você pode reduzir o tempo de inicialização desabilitando eventos que não são relevantes para o aplicativo. Por exemplo, desabilite eventos do Fluxo de Trabalho do Windows para aplicativos que não usam o Fluxo de Trabalho do Windows.
+  -   Você pode reduzir o tempo de inicialização desabilitando eventos que não são relevantes para o aplicativo. Por exemplo, desabilite eventos do Fluxo de Trabalho do Windows para aplicativos que não usam o Fluxo de Trabalho do Windows.
 
-    -   Você pode melhorar o desempenho de inicialização e do tempo de execução desabilitando eventos do registro para aplicativos que acessam o registro, mas não apresentam problemas com as configurações do registro.
+  -   Você pode melhorar o desempenho de inicialização e do tempo de execução desabilitando eventos do registro para aplicativos que acessam o registro, mas não apresentam problemas com as configurações do registro.
 
--   Revise os módulos no plano de coleta para o qual o IntelliTrace coleta os dados. Edite o plano de coleta para incluir somente os módulos de seu interesse:
+- Revise os módulos no plano de coleta para o qual o IntelliTrace coleta os dados. Edite o plano de coleta para incluir somente os módulos de seu interesse:
 
-    1.  Abra o plano de coleta. Encontre o elemento `<ModuleList>`.
+  1. Abra o plano de coleta. Encontre o elemento `<ModuleList>`.
 
-    2.  Em `<ModuleList>`, defina o atributo `isExclusionList` como `false`.
+  2. Em `<ModuleList>`, defina o atributo `isExclusionList` como `false`.
 
-    3.  Use o elemento `<Name>` para especificar cada módulo com um dos seguintes: nome do arquivo, valor da cadeia de caracteres para incluir qualquer módulo cujo nome contenha essa cadeia de caracteres ou chave pública.
+  3. Use o elemento `<Name>` para especificar cada módulo com um dos seguintes: nome do arquivo, valor da cadeia de caracteres para incluir qualquer módulo cujo nome contenha essa cadeia de caracteres ou chave pública.
 
      Por exemplo, para coletar dados apenas do módulo da web principal do aplicativo da web Fabrikam Fiber, crie uma lista como esta:
 
-    ```xml
-    <ModuleList isExclusionList="false">
-       <Name>FabrikamFiber.Web.dll</Name>
-    </ModuleList>
+  ```xml
+  <ModuleList isExclusionList="false">
+     <Name>FabrikamFiber.Web.dll</Name>
+  </ModuleList>
+  ```
 
-    ```
+   Para coletar dados de qualquer módulo cujo nome inclua "Fabrikam", crie uma lista assim:
 
-     Para coletar dados de qualquer módulo cujo nome inclua "Fabrikam", crie uma lista assim:
+  ```xml
+  <ModuleList isExclusionList="false">
+     <Name>Fabrikam</Name>
+  </ModuleList>
+  ```
 
-    ```xml
-    <ModuleList isExclusionList="false">
-       <Name>Fabrikam</Name>
-    </ModuleList>
+   Para coletar dados de módulos especificando seus tokens de chave pública, crie uma lista assim:
 
-    ```
+  ```xml
+  <ModuleList isExclusionList="false">
+     <Name>PublicKeyToken:B77A5C561934E089</Name>
+     <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>
+     <Name>PublicKeyToken:31BF3856AD364E35</Name>
+     <Name>PublicKeyToken:89845DCD8080CC91</Name>
+     <Name>PublicKeyToken:71E9BCE111E9429C</Name>
+  </ModuleList>
+  ```
 
-     Para coletar dados de módulos especificando seus tokens de chave pública, crie uma lista assim:
+   *Como isso melhora o desempenho?*
 
-    ```xml
-    <ModuleList isExclusionList="false">
-       <Name>PublicKeyToken:B77A5C561934E089</Name>
-       <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>
-       <Name>PublicKeyToken:31BF3856AD364E35</Name>
-       <Name>PublicKeyToken:89845DCD8080CC91</Name>
-       <Name>PublicKeyToken:71E9BCE111E9429C</Name>
-    </ModuleList>
+   Isso reduz a quantidade de informações de chamada de método e outros dados de instrumentação que o IntelliTrace coleta quando o aplicativo é iniciado e executado. Esses dados permite:
 
-    ```
+  - Percorrer o código após a coleta de dados.
 
-     *Como isso melhora o desempenho?*
+  - Examinar os valores passados e retornados das chamadas de função.
 
-     Isso reduz a quantidade de informações de chamada de método e outros dados de instrumentação que o IntelliTrace coleta quando o aplicativo é iniciado e executado. Esses dados permite:
+    *Por que não excluir módulos em vez disso?*
 
-    -   Percorrer o código após a coleta de dados.
+    Por padrão, os planos de coleta excluem módulos definindo o atributo `isExclusionList` como `true`. Entretanto, excluir módulos ainda pode resultar na coleta de dados de módulos que não atendem aos critérios da lista ou que talvez não o interessem, como módulos de terceiros ou de software livre.
 
-    -   Examinar os valores passados e retornados das chamadas de função.
+- *Há todos os dados que IntelliTrace não coleta?*
 
-     *Por que não excluir módulos em vez disso?*
+   Sim, para reduzir o impacto no desempenho, o IntelliTrace restringe a coleta de dados aos valores de tipos de dados primitivos passado e retornados de métodos e a valores de tipos de dados primitivos nos campos em objetos de nível superior passado e retornados dos métodos.
 
-     Por padrão, os planos de coleta excluem módulos definindo o atributo `isExclusionList` como `true`. Entretanto, excluir módulos ainda pode resultar na coleta de dados de módulos que não atendem aos critérios da lista ou que talvez não o interessem, como módulos de terceiros ou de software livre.
+   Por exemplo, suponhamos que você tenha uma assinatura de método `AlterEmployee` que aceite um inteiro `id` e um objeto `Employee``oldemployee`:
 
--   *Há todos os dados que IntelliTrace não coleta?*
+   `public Employee AlterEmployee(int id, Employee oldemployee)`
 
-     Sim, para reduzir o impacto no desempenho, o IntelliTrace restringe a coleta de dados aos valores de tipos de dados primitivos passado e retornados de métodos e a valores de tipos de dados primitivos nos campos em objetos de nível superior passado e retornados dos métodos.
+   O tipo `Employee` tem os seguintes atributos: `Id`, `Name` e `HomeAddress`. Existe uma relação de associação entre `Employee` e o tipo `Address`.
 
-     Por exemplo, suponhamos que você tenha uma assinatura de método `AlterEmployee` que aceite um inteiro `id` e um objeto `Employee``oldemployee`:
+   ![Relação entre o funcionário e o endereço](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
-     `public Employee AlterEmployee(int id, Employee oldemployee)`
-
-     O tipo `Employee` tem os seguintes atributos: `Id`, `Name` e `HomeAddress`. Existe uma relação de associação entre `Employee` e o tipo `Address`.
-
-     ![Relação entre o funcionário e o endereço](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
-
-     O coletor registra valores de `id`, `Employee.Id`, `Employee.Name` e o objeto `Employee` retornado pelo método `AlterEmployee`. Entretanto, o coletor não registra informações sobre o objeto `Address`, exceto se ele era nulo ou não. O coletor também não registra dados sobre variáveis locais no método `AlterEmployee`, a menos que outros métodos usem essas variáveis locais como parâmetros em que eles são gravados como parâmetros de método.
+   O coletor registra valores de `id`, `Employee.Id`, `Employee.Name` e o objeto `Employee` retornado pelo método `AlterEmployee`. Entretanto, o coletor não registra informações sobre o objeto `Address`, exceto se ele era nulo ou não. O coletor também não registra dados sobre variáveis locais no método `AlterEmployee`, a menos que outros métodos usem essas variáveis locais como parâmetros em que eles são gravados como parâmetros de método.
 
 ##  <a name="WhereElse"></a> Onde mais posso obter dados do IntelliTrace?
 

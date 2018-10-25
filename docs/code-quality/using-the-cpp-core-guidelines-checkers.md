@@ -9,12 +9,12 @@ dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: f7a802fc1d2a83d3618d19254900a9b3dacb7f7c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 735b4891449d139058b7cf114639390f6a930b55
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279863"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908334"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de diretrizes principais do C++
 Diretrizes principais do C++ são um conjunto portátil de diretrizes, regras e as práticas recomendadas sobre como codificar em C++ criado pelos designers e especialistas em C++. Atualmente, o Visual Studio suporta um subconjunto dessas regras como parte de suas ferramentas de análise de código para C++. Os verificadores de diretrizes de núcleo são instalados por padrão no Visual Studio 2017 e são [disponível como um pacote do NuGet para Visual Studio 2015](#vs2015_corecheck).
@@ -53,15 +53,15 @@ int main()
 }
 ```
 
- Este exemplo demonstra alguns dos avisos que as regras de verificação principal do C++ podem encontrar:
+Este exemplo demonstra alguns dos avisos que as regras de verificação principal do C++ podem encontrar:
 
--   C26494 é regra Type.5: sempre inicialize um objeto.
+- C26494 é regra Type.5: sempre inicialize um objeto.
 
--   C26485 é regra Bounds.3: decaimento nenhum ponteiro de matriz.
+- C26485 é regra Bounds.3: decaimento nenhum ponteiro de matriz.
 
--   C26481 é regra Bounds.1: não use aritmética de ponteiro. Use `span` em seu lugar.
+- C26481 é regra Bounds.1: não use aritmética de ponteiro. Use `span` em seu lugar.
 
- Se o rulesets de análise do código de verificação principal do C++ estão instalado e habilitado quando você compila esse código, os dois primeiros avisos forem gerados, mas o terceiro é suprimido. Aqui está a saída da compilação do código de exemplo:
+Se o rulesets de análise do código de verificação principal do C++ estão instalado e habilitado quando você compila esse código, os dois primeiros avisos forem gerados, mas o terceiro é suprimido. Aqui está a saída da compilação do código de exemplo:
 
 ```Output
 1>------ Build started: Project: CoreCheckExample, Configuration: Debug Win32 ------
@@ -80,34 +80,36 @@ Conforme novas regras são adicionadas ao verificador de diretrizes de núcleo d
 Tópicos de referência para a maioria das regras estão sob [Visual Studio C++ Core verificar referência](code-analysis-for-cpp-corecheck.md).
 
 A partir do Visual Studio 2017 versão 15.3, os conjuntos de regra com suporte são:
-  - **Regras de ponteiro de proprietário** impor [verificações de gerenciamento de recursos relacionados ao proprietário<T> das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Regras de ponteiro de proprietário** impor [verificações de gerenciamento de recursos relacionados ao proprietário<T> das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Regras de const** impor [verificações relacionadas a const das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+- **Regras de const** impor [verificações relacionadas a const das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
-  - **Regras de ponteiro bruto** impor [gerenciamento de recursos verifica ponteiros relacionados a brutos das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Regras de ponteiro bruto** impor [gerenciamento de recursos verifica ponteiros relacionados a brutos das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Regras de ponteiro exclusivo** impor [verificações de gerenciamento de recursos relacionadas aos tipos com semânticas de ponteiros exclusivos das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Regras de ponteiro exclusivo** impor [verificações de gerenciamento de recursos relacionadas aos tipos com semânticas de ponteiros exclusivos das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Regras de limites** impor a [delimita o perfil das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+- **Regras de limites** impor a [delimita o perfil das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-  - **Regras de tipo** impor a [tipo de perfil de diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
+- **Regras de tipo** impor a [tipo de perfil de diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
-  **Visual Studio 2017 versão 15.5**:
-  - **Classe regras** algumas regras que se concentrar no uso adequado de funções de membro especial e especificações virtuais. Este é um subconjunto das verificações recomendado para [classes e hierarquias de classe](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class).
-  - **Regras de simultaneidade** uma única regra, que captura os objetos de proteção declarado incorretamente. Para obter mais informações, consulte [diretrizes relacionadas à simultaneidade](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency).
-  - **Regras de declaração** algumas regras do [interfaces diretrizes](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) que se concentram em variáveis como globais são declarados.
-  - **Função regras** duas verificações de ajudam na adoção do `noexcept` especificador. Isso é uma parte das diretrizes para [limpar a função design e implementação](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions).
-  - **Regras de ponteiro compartilhado** como parte da [gerenciamento de recursos](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) a imposição de diretrizes, adicionamos algumas regras específicas para ponteiros como compartilhados são passadas para funções ou usadas localmente.
-  - **Regras de estilo** uma verificação simple, mas importante, que proibe o uso de [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). Isso é a primeira etapa no aprimoramento da codificação de estilo e uso de expressões e instruções em C++.
+**Visual Studio 2017 versão 15.5**:
 
-  **Visual Studio 2017 versão 15.6**:
-  - **Regras aritméticas** regras para detectar aritmética [estouro](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [assinados não assinados operações](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned) e [manipulação de bits](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).
+- **Classe regras** algumas regras que se concentrar no uso adequado de funções de membro especial e especificações virtuais. Este é um subconjunto das verificações recomendado para [classes e hierarquias de classe](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class).
+- **Regras de simultaneidade** uma única regra, que captura os objetos de proteção declarado incorretamente. Para obter mais informações, consulte [diretrizes relacionadas à simultaneidade](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency).
+- **Regras de declaração** algumas regras do [interfaces diretrizes](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) que se concentram em variáveis como globais são declarados.
+- **Função regras** duas verificações de ajudam na adoção do `noexcept` especificador. Isso é uma parte das diretrizes para [limpar a função design e implementação](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions).
+- **Regras de ponteiro compartilhado** como parte da [gerenciamento de recursos](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) a imposição de diretrizes, adicionamos algumas regras específicas para ponteiros como compartilhados são passadas para funções ou usadas localmente.
+- **Regras de estilo** uma verificação simple, mas importante, que proibe o uso de [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). Isso é a primeira etapa no aprimoramento da codificação de estilo e uso de expressões e instruções em C++.
 
+**Visual Studio 2017 versão 15.6**:
 
- Você pode optar por limitar os avisos para apenas um ou alguns dos grupos. O **mínimo nativo** e **recomendado nativo** regra conjuntos incluem regras de verificação principal do C++, além de outras verificações PREfast. Para ver o disponíveis conjuntos de regra, abra a caixa de diálogo Propriedades do projeto, selecione **código Analysis\General**, abra a lista suspensa na **conjuntos de regras** caixa de combinação e selecionar com **escolher vários conjuntos de regras** . Para obter mais informações sobre como usar conjuntos de regra no Visual Studio, consulte [usando os conjuntos de regras para agrupar regras de análise de código](using-rule-sets-to-group-code-analysis-rules.md).
+- **Regras aritméticas** regras para detectar aritmética [estouro](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [assinados não assinados operações](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned) e [manipulação de bits](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).
+
+Você pode optar por limitar os avisos para apenas um ou alguns dos grupos. O **mínimo nativo** e **recomendado nativo** regra conjuntos incluem regras de verificação principal do C++, além de outras verificações PREfast. Para ver o disponíveis conjuntos de regra, abra a caixa de diálogo Propriedades do projeto, selecione **código Analysis\General**, abra a lista suspensa na **conjuntos de regras** caixa de combinação e selecionar com **escolher vários conjuntos de regras** . Para obter mais informações sobre como usar conjuntos de regra no Visual Studio, consulte [usando os conjuntos de regras para agrupar regras de análise de código](using-rule-sets-to-group-code-analysis-rules.md).
 
 ## <a name="macros"></a>Macros
- O verificador de diretrizes do C++ Core vem com um arquivo de cabeçalho, que define as macros que tornam mais fácil suprimir todas categorias de avisos no código:
+
+O verificador de diretrizes do C++ Core vem com um arquivo de cabeçalho, que define as macros que tornam mais fácil suprimir todas categorias de avisos no código:
 
 ```cpp
 ALL_CPPCORECHECK_WARNINGS
@@ -128,7 +130,8 @@ Essas macros correspondem aos conjuntos de regras e expandem em uma lista separa
 ```
 
 ## <a name="attributes"></a>Atributos
- O compilador Microsoft Visual C++ tem um suporte limitado para a GSL suprimir o atributo. Ele pode ser usado para suprimir avisos em expressões e instruções de blocos dentro de uma função.
+
+O compilador Microsoft Visual C++ tem um suporte limitado para a GSL suprimir o atributo. Ele pode ser usado para suprimir avisos em expressões e instruções de blocos dentro de uma função.
 
 ```cpp
 // Supress only warnings from the 'r.11' rule in expression.
@@ -151,17 +154,19 @@ Essas macros correspondem aos conjuntos de regras e expandem em uma lista separa
 ```
 
 ## <a name="suppressing-analysis-by-using-command-line-options"></a>Suprimindo a análise, usando as opções de linha de comando
- Em vez de #pragmas, você pode usar as opções de linha de comando na página de propriedades do arquivo para suprimir avisos para um projeto ou um único arquivo. Por exemplo, para desabilitar o aviso 26400 para um arquivo:
 
- 1) Clique no arquivo em **Gerenciador de soluções**
+Em vez de #pragmas, você pode usar as opções de linha de comando na página de propriedades do arquivo para suprimir avisos para um projeto ou um único arquivo. Por exemplo, para desabilitar o aviso 26400 para um arquivo:
 
- 2) Escolha **propriedades | C / C + + | Linha de comando**
+1. Clique no arquivo em **Gerenciador de soluções**
 
- 3) No **opções adicionais** janela, adicione `/wd26400`.
+2. Escolha **propriedades | C / C + + | Linha de comando**
 
- Você pode usar a opção de linha de comando para desabilitar temporariamente todas as análises de código para um arquivo, especificando `/analyze-`. Isso produz o aviso *D9025 substituindo '/ANALYZE' com ' /ANALYZE -'*, que lembra você de habilitar a análise de código novamente mais tarde.
+3. No **opções adicionais** janela, adicione `/wd26400`.
 
- ## <a name="corecheck_per_file"></a> Habilitar o verificador de diretrizes do C++ Core nos arquivos de projeto específico
+Você pode usar a opção de linha de comando para desabilitar temporariamente todas as análises de código para um arquivo, especificando `/analyze-`. Isso produz o aviso *D9025 substituindo '/ANALYZE' com ' /ANALYZE -'*, que lembra você de habilitar a análise de código novamente mais tarde.
+
+## <a name="corecheck_per_file"></a> Habilitar o verificador de diretrizes do C++ Core nos arquivos de projeto específico
+
 Às vezes, pode ser útil para análise de código foco e ainda usar o IDE do Visual Studio. O cenário de exemplo a seguir pode ser usado para projetos grandes, para economizar tempo de compilação e para facilitar para filtrar os resultados:
 
 1. No shell de comando, defina as `esp.extension` e `esp.annotationbuildlevel` variáveis de ambiente.
@@ -174,6 +179,7 @@ Essas macros correspondem aos conjuntos de regras e expandem em uma lista separa
 8. Recompile o projeto. As verificações de PREFast comuns devem ser executado em todos os arquivos. Porque o verificador de diretrizes do C++ Core não está habilitado por padrão, ele só deve ser executado no arquivo que está configurado para usá-lo.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Como usar o verificador de diretrizes do C++ Core fora do Visual Studio
+
 Você pode usar as verificações de diretrizes principais do C++ em compilações automatizadas.
 
 ### <a name="msbuild"></a>MSBuild
@@ -186,6 +192,7 @@ Você pode usar as verificações de diretrizes principais do C++ em compilaçõ
     <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
 ```
+
 Verifique se que você adicionar essas propriedades antes da importação do arquivo Microsoft.Cpp.targets. Você pode escolher os conjuntos de regras específicas ou criar um conjunto de regras personalizadas ou usar o conjunto de regras padrão que inclui outras verificações PREfast.
 
 Você pode executar o verificador de núcleo do C++ somente em arquivos especificados usando a mesma abordagem [descritos anteriormente](#corecheck_per_file), mas usando arquivos do MSBuild. As variáveis de ambiente podem ser definidas usando o `BuildMacro` item:
@@ -210,42 +217,42 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 ```
 
 ### <a name="non-msbuild-projects"></a>Projetos não MSBuild
+
 Se você usar um sistema de compilação que não depende do MSBuild ainda é possível executar o verificador, mas você precisa para se familiarizar com alguns recursos internos de configuração do mecanismo de análise de código. Esses componentes internos não são garantidos para ter suporte no futuro.
 
 Você precisa definir algumas variáveis de ambiente e usar as opções de linha de comando adequadas para o compilador. É melhor trabalhar no ambiente do "Prompt de comando de ferramentas nativas" para que você não precisa pesquisar caminhos específicos para o compilador, incluir diretórios etc.
 
 1. **Variáveis de ambiente**
-  - `set esp.extensions=cppcorecheck.dll` Isso informa ao mecanismo para carregar o módulo de diretrizes principais do C++.
-  - `set esp.annotationbuildlevel=ignore` Isso desabilita a lógica que processa as anotações de SAL. As anotações não afetam a análise de código no verificador de diretrizes de núcleo de C++, ainda que seu processamento leva tempo (às vezes, muito tempo). Essa configuração é opcional, mas altamente recomendado.
-  - `set caexcludepath=%include%` É altamente recomendável que você desabilite os avisos que são acionados em cabeçalhos padrão. Você pode adicionar mais caminhos aqui, por exemplo, o caminho para os cabeçalhos comuns em seu projeto.
+   - `set esp.extensions=cppcorecheck.dll` Isso informa ao mecanismo para carregar o módulo de diretrizes principais do C++.
+   - `set esp.annotationbuildlevel=ignore` Isso desabilita a lógica que processa as anotações de SAL. As anotações não afetam a análise de código no verificador de diretrizes de núcleo de C++, ainda que seu processamento leva tempo (às vezes, muito tempo). Essa configuração é opcional, mas altamente recomendado.
+   - `set caexcludepath=%include%` É altamente recomendável que você desabilite os avisos que são acionados em cabeçalhos padrão. Você pode adicionar mais caminhos aqui, por exemplo, o caminho para os cabeçalhos comuns em seu projeto.
 2. **Opções de linha de comando**
-  - `/analyze`  Habilita a análise de código (Considere também usar /ANALYZE: somente e /ANALYZE: quiet).
-  - `/analyze:plugin EspXEngine.dll` Esta opção carrega o mecanismo de extensões de análise de código para o PREfast. Esse mecanismo, por sua vez, carrega o verificador de diretrizes de núcleo do C++.
-
-
+   - `/analyze`  Habilita a análise de código (Considere também usar /ANALYZE: somente e /ANALYZE: quiet).
+   - `/analyze:plugin EspXEngine.dll` Esta opção carrega o mecanismo de extensões de análise de código para o PREfast. Esse mecanismo, por sua vez, carrega o verificador de diretrizes de núcleo do C++.
 
 ## <a name="use-the-guideline-support-library"></a>Use a biblioteca de suporte de diretriz
  A biblioteca de suporte de diretriz é projetada para ajudá-lo a seguir as diretrizes de núcleo. O GSL inclui definições que permitem que você substitua construções propenso a erro alternativas mais seguras. Por exemplo, você pode substituir uma `T*, length` par de parâmetros com o `span<T>` tipo. A GSL está disponível em [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). A biblioteca é o código-fonte aberto, portanto, você pode exibir as fontes de, fazer comentários ou contribuir com. O projeto pode ser encontrado em [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- ## <a name="vs2015_corecheck"></a> Use as diretrizes de verificação principal do C++ em projetos do Visual Studio 2015
-  Se você usar o Visual Studio 2015, conjuntos de regras de análise de código verificação principal do C++ não são instalados por padrão. Você deve executar algumas etapas adicionais antes de habilitar as ferramentas de análise de código de verificação principal do C++ no Visual Studio 2015. Microsoft fornece suporte para projetos do Visual Studio 2015 usando um pacote do Nuget. O pacote é chamado Microsoft.CppCoreCheck e está disponível em [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Este pacote requer que você tem pelo menos o Visual Studio 2015 com atualização 1 instalado.
+## <a name="vs2015_corecheck"></a> Use as diretrizes de verificação principal do C++ em projetos do Visual Studio 2015
 
- O pacote também instala outro pacote como uma dependência, uma biblioteca de suporte diretriz (GSL) somente de cabeçalho. A GSL também está disponível no GitHub em [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+Se você usar o Visual Studio 2015, conjuntos de regras de análise de código verificação principal do C++ não são instalados por padrão. Você deve executar algumas etapas adicionais antes de habilitar as ferramentas de análise de código de verificação principal do C++ no Visual Studio 2015. Microsoft fornece suporte para projetos do Visual Studio 2015 usando um pacote do Nuget. O pacote é chamado Microsoft.CppCoreCheck e está disponível em [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Este pacote requer que você tem pelo menos o Visual Studio 2015 com atualização 1 instalado.
 
- Por causa da maneira que as regras de análise de código são carregadas, você deve instalar o pacote do Microsoft.CppCoreCheck NuGet em cada projeto de C++ que você deseja verificar no Visual Studio 2015.
+O pacote também instala outro pacote como uma dependência, uma biblioteca de suporte diretriz (GSL) somente de cabeçalho. A GSL também está disponível no GitHub em [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
-#### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Para adicionar o pacote de Microsoft.CppCoreCheck ao seu projeto no Visual Studio 2015
+Por causa da maneira que as regras de análise de código são carregadas, você deve instalar o pacote do Microsoft.CppCoreCheck NuGet em cada projeto de C++ que você deseja verificar no Visual Studio 2015.
 
-1.  Na **Gerenciador de soluções**, clique com botão direito para abrir o menu de contexto do seu projeto na solução que você deseja adicionar o pacote. Escolher **gerenciar pacotes NuGet** para abrir o **Gerenciador de pacotes NuGet**.
+### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Para adicionar o pacote de Microsoft.CppCoreCheck ao seu projeto no Visual Studio 2015
 
-2.  No **Gerenciador de pacotes NuGet** janela, procure Microsoft.CppCoreCheck.
+1. Na **Gerenciador de soluções**, clique com botão direito para abrir o menu de contexto do seu projeto na solução que você deseja adicionar o pacote. Escolher **gerenciar pacotes NuGet** para abrir o **Gerenciador de pacotes NuGet**.
 
-     ![Janela Gerenciador de pacotes do NuGet mostra o pacote de CppCoreCheck](../code-quality/media/cppcorecheck_nuget_window.png)
+2. No **Gerenciador de pacotes NuGet** janela, procure Microsoft.CppCoreCheck.
 
-3.  Selecione o pacote Microsoft.CppCoreCheck e, em seguida, escolha o **instalar** botão para adicionar as regras ao seu projeto.
+    ![Janela Gerenciador de pacotes do NuGet mostra o pacote de CppCoreCheck](../code-quality/media/cppcorecheck_nuget_window.png)
 
- O pacote NuGet adiciona adicionais do MSBuild *. targets* ao seu projeto que é invocado quando você habilitar a análise de código em seu projeto. Isso *. targets* arquivo adiciona as regras de verificação principal do C++ como uma extensão adicional para a ferramenta de análise de código do Visual Studio. Quando o pacote é instalado, você pode usar a caixa de diálogo páginas de propriedades para habilitar ou desabilitar as regras de experimentais e lançadas.
+3. Selecione o pacote Microsoft.CppCoreCheck e, em seguida, escolha o **instalar** botão para adicionar as regras ao seu projeto.
+
+   O pacote NuGet adiciona adicionais do MSBuild *. targets* ao seu projeto que é invocado quando você habilitar a análise de código em seu projeto. Isso *. targets* arquivo adiciona as regras de verificação principal do C++ como uma extensão adicional para a ferramenta de análise de código do Visual Studio. Quando o pacote é instalado, você pode usar a caixa de diálogo páginas de propriedades para habilitar ou desabilitar as regras de experimentais e lançadas.
 
 ## <a name="see-also"></a>Consulte também
-[Referência do Visual Studio principal do C++ seleção](code-analysis-for-cpp-corecheck.md).
 
+- [Verificação de referência do Visual Studio principal do C++](code-analysis-for-cpp-corecheck.md)

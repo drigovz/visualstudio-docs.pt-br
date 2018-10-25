@@ -16,12 +16,12 @@ ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d6d1e7f9323227ca6d925acadf93068935887f3d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1d701679755d73e01e27c7be0ba9833bf878bc43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894437"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Como: criar um Atom Feed para uma galeria privada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Você pode criar um Atom (RSS) para um local de intranet que contém as extensõ
 ## <a name="creating-an-atom-feed"></a>Criar um Atom Feed  
  Para criar um Atom feed como uma galeria privada, você deve primeiro coletar suas extensões (arquivos. VSIX) em uma pasta. Você pode organizá-los em subpastas, se você quiser. Você precisará também os seguintes recursos:  
   
--   Um arquivo atom.xml que faz com que as extensões disponíveis como uma galeria privada. Para obter informações sobre como conectar-se o arquivo atom.xml **extensões e atualizações**, consulte [galerias privadas](../extensibility/private-galleries.md).  
+- Um arquivo atom.xml que faz com que as extensões disponíveis como uma galeria privada. Para obter informações sobre como conectar-se o arquivo atom.xml **extensões e atualizações**, consulte [galerias privadas](../extensibility/private-galleries.md).  
   
--   Uma pasta que contém os arquivos de imagem que foram extraídos de extensões (por exemplo, capturas de tela). O arquivo atom.xml contém links relativos para essas imagens para que eles estejam disponíveis no **extensões e atualizações**.  
+- Uma pasta que contém os arquivos de imagem que foram extraídos de extensões (por exemplo, capturas de tela). O arquivo atom.xml contém links relativos para essas imagens para que eles estejam disponíveis no **extensões e atualizações**.  
   
- Por exemplo, suponha que você coletou as duas extensões a seguir em uma pasta:  
+  Por exemplo, suponha que você coletou as duas extensões a seguir em uma pasta:  
   
--   Template_Wizard_239.VSIX, que é um modelo de projeto do VSIX vazio.  
+- Template_Wizard_239.VSIX, que é um modelo de projeto do VSIX vazio.  
   
--   SelectionHighlight.vsix, que é uma ferramenta para realçar todas as instâncias de uma palavra selecionada.  
+- SelectionHighlight.vsix, que é uma ferramenta para realçar todas as instâncias de uma palavra selecionada.  
   
- O conteúdo do arquivo atom.xml seria semelhante ao exemplo a seguir:  
+  O conteúdo do arquivo atom.xml seria semelhante ao exemplo a seguir:  
   
 ```  
   <?xml version="1.0" encoding="utf-8" ?>   

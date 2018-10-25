@@ -27,12 +27,12 @@ caps.latest.revision: 91
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 784f36c022f967f59e365ac35912a9e54a81b82c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dba1be310260a2b1ae6ad28efe4b3d98ac14c4a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281431"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896829"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Procurar e reorganizar mapa de códigos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -178,25 +178,25 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
 ###  <a name="AddNodes"></a>   
 ##### <a name="add-a-link-between-existing-code-elements"></a>Adicionar um link entre os elementos de código existentes  
   
-1.  Selecione o elemento de código de origem. Uma barra de ferramentas é exibida acima do elemento de código.  
+1. Selecione o elemento de código de origem. Uma barra de ferramentas é exibida acima do elemento de código.  
   
-     ![Barra de ferramentas de gráfico de dependência](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
+    ![Barra de ferramentas de gráfico de dependência](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
   
-2.  Na barra de ferramentas, escolha o primeiro ícone, **criar novo link deste nó para nó em que você clicar em Avançar**.  
+2. Na barra de ferramentas, escolha o primeiro ícone, **criar novo link deste nó para nó em que você clicar em Avançar**.  
   
-3.  Selecione o elemento de código de destino. Um link será exibido entre os elementos de código de dois.  
+3. Selecione o elemento de código de destino. Um link será exibido entre os elementos de código de dois.  
   
- \- ou -  
+   \- ou -  
   
-1.  Selecione o elemento de código fonte no mapa.  
+4. Selecione o elemento de código fonte no mapa.  
   
-2.  Se você tiver um mouse instalado, mova o ponteiro do mouse fora dos limites do mapa.  
+5. Se você tiver um mouse instalado, mova o ponteiro do mouse fora dos limites do mapa.  
   
-3.  Abra o menu de atalho do elemento de código e escolha **edite**, **Add**, **Link genérico**.  
+6. Abra o menu de atalho do elemento de código e escolha **edite**, **Add**, **Link genérico**.  
   
-4.  Pressionar TAB até e selecione o elemento de código de destino para o link.  
+7. Pressionar TAB até e selecione o elemento de código de destino para o link.  
   
-5.  Pressione **retornar**.  
+8. Pressione **retornar**.  
   
 ###  <a name="AddComments"></a>   
 ##### <a name="add-a-comment-to-an-existing-node-on-the-map"></a>Adicionar um comentário a um nó existente no mapa  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05faacee77496f8d25ca926e4a1d441819cd9d9d
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863927"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816671"
 ---
 # <a name="layout-for-visual-studio"></a>Layout para o Visual Studio
 A maioria das caixas de diálogo do Visual Studio estão [layout de caixa de diálogo do utilitário](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), que são o unthemed esse padrão de acompanhamento de caixas de diálogo [princípios de layout de caixa de diálogo de área de trabalho do Windows](/windows/desktop/uxguide/win-dialog-box). Como o Visual Studio moverá atualizar sua interface do usuário, algumas das caixas de diálogo mais proeminentes têm um novo design que estabelece a eles como definição de produto experiências. Eles [layout da caixa de diálogo com tema](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) têm uma aparência com tema.  
@@ -56,19 +56,19 @@ A maioria das caixas de diálogo do Visual Studio estão [layout de caixa de di�
   
 #### <a name="command-buttons"></a>Botões de comando  
   
--   Botões de comando operam no quadro da caixa de diálogo, não no conteúdo. Eles devem ser colocados na parte inferior direita e devem ter espaço suficiente variável acima para definir os botões separadas.  
+- Botões de comando operam no quadro da caixa de diálogo, não no conteúdo. Eles devem ser colocados na parte inferior direita e devem ter espaço suficiente variável acima para definir os botões separadas.  
   
--   Se houver botões horizontais que operam na caixa de diálogo, a configuração de botão de comando alternativo é uma pilha vertical na parte superior direita. Ver [botões de comando interiores](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) abaixo.  
+- Se houver botões horizontais que operam na caixa de diálogo, a configuração de botão de comando alternativo é uma pilha vertical na parte superior direita. Ver [botões de comando interiores](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) abaixo.  
   
--   O espaço à esquerda dos botões de comando (esquerda/central inferior da caixa de diálogo) é considerado parte da "faixa" dos controles de operação da caixa de diálogo. A única coisa que deve atrapalham a que o espaço é um link de Ajuda que é relevante para a tarefa geral ou a caixa de diálogo.  
+- O espaço à esquerda dos botões de comando (esquerda/central inferior da caixa de diálogo) é considerado parte da "faixa" dos controles de operação da caixa de diálogo. A única coisa que deve atrapalham a que o espaço é um link de Ajuda que é relevante para a tarefa geral ou a caixa de diálogo.  
   
--   Botões de comando devem ser 75 x 23 pixels.  
+- Botões de comando devem ser 75 x 23 pixels.  
   
--   Botões de comando devem ser 6 pixels de distância.  
+- Botões de comando devem ser 6 pixels de distância.  
   
- ![Alinhamento de botão básica](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
+  ![Alinhamento de botão básica](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
   
- **Figura 08.01-c: Alinhamento de botão básica**  
+  **Figura 08.01-c: Alinhamento de botão básica**  
   
 #### <a name="labels"></a>Rótulos  
   
@@ -106,19 +106,19 @@ A maioria das caixas de diálogo do Visual Studio estão [layout de caixa de di�
 ####  <a name="BKMK_InteriorCommandButtons"></a> Botões de comando interior  
  Caixas de diálogo mais complexos, um controle interno pode ter seus próprios botões relacionados, que podem afetar onde se encontram botões de confirmação da caixa de diálogo.  
   
--   Use um alinhamento vertical (coluna) do interior botões quando **Okey**/**Cancelar** são orientado horizontalmente no canto inferior direito.  
+- Use um alinhamento vertical (coluna) do interior botões quando **Okey**/**Cancelar** são orientado horizontalmente no canto inferior direito.  
   
--   Use um alinhamento horizontal (linha) do interior botões quando **Okey**/**Cancelar** são orientados verticalmente no canto superior direito. Essa situação é menos comum.  
+- Use um alinhamento horizontal (linha) do interior botões quando **Okey**/**Cancelar** são orientados verticalmente no canto superior direito. Essa situação é menos comum.  
   
--   Tamanho do botão interior deve ter como destino o tamanho do botão padrão de 75 x 23 pixels, correspondência de tamanho de **Okey**/**Cancelar** botões quando possível. Se o rótulo do botão faz com que o botão exceder o tamanho do botão padrão, os outros botões nesse conjunto devem ser alinhadas com que o tamanho mais amplo.  
+- Tamanho do botão interior deve ter como destino o tamanho do botão padrão de 75 x 23 pixels, correspondência de tamanho de **Okey**/**Cancelar** botões quando possível. Se o rótulo do botão faz com que o botão exceder o tamanho do botão padrão, os outros botões nesse conjunto devem ser alinhadas com que o tamanho mais amplo.  
   
- ![Botões horizontal Okey e Cancel](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
+  ![Botões horizontal Okey e Cancel](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
   
- **Figura 08.01-f: Botões de Interior Vertical com Okey horizontal/Cancelar**  
+  **Figura 08.01-f: Botões de Interior Vertical com Okey horizontal/Cancelar**  
   
- ![Botões Okey vertical e Cancel](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
+  ![Botões Okey vertical e Cancel](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
   
- **Figura 08.01-g: Botões de interiores Horizontal com Okey vertical/Cancelar**  
+  **Figura 08.01-g: Botões de interiores Horizontal com Okey vertical/Cancelar**  
   
 #### <a name="browse-button"></a>[Procurar...] botão  
  **[Procurar...]**  botões que seguem uma caixa de texto devem esclarecer "Procurar..." por completo, incluindo o botão de reticências. Se o espaço é forte ou haja diversas **[procurar...]**  botões na tela, o botão podem ser reduzido para apenas o botão de reticências.  

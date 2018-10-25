@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4202b14fce4c914737989e4a408cd74040c4d0a
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 17daf186920be45a70200cd896a390ab74c4c6d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873884"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Passo a passo: Associar dados a controles em um painel de ações do Word
   Este passo a passo demonstra a associação de dados a controles em um painel de ações no Word. Os controles de demonstram uma relação mestre/detalhes entre tabelas em um banco de dados do SQL Server.  
@@ -78,28 +78,28 @@ ms.locfileid: "38781926"
   
 ### <a name="to-add-a-data-source-to-the-project"></a>Para adicionar uma fonte de dados ao projeto  
   
-1.  Se o **fontes de dados** janela não estiver visível, exibi-lo, na barra de menus, escolhendo **exibição** > **Other Windows**  >   **Fontes de dados**.  
+1. Se o **fontes de dados** janela não estiver visível, exibi-lo, na barra de menus, escolhendo **exibição** > **Other Windows**  >   **Fontes de dados**.  
   
-    > [!NOTE]  
-    >  Se **Show Data Sources** não estiver disponível, clique no documento do Word e, em seguida, verifique novamente.  
+   > [!NOTE]  
+   >  Se **Show Data Sources** não estiver disponível, clique no documento do Word e, em seguida, verifique novamente.  
   
-2.  Clique em **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.  
+2. Clique em **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.  
   
-3.  Selecione **banco de dados** e, em seguida, clique em **próxima**.  
+3. Selecione **banco de dados** e, em seguida, clique em **próxima**.  
   
-4.  Selecione uma conexão de dados para o banco de dados do SQL Server de exemplo Northwind, ou adicionar uma nova conexão usando o **nova Conexão** botão.  
+4. Selecione uma conexão de dados para o banco de dados do SQL Server de exemplo Northwind, ou adicionar uma nova conexão usando o **nova Conexão** botão.  
   
-5.  Clique em **Avançar**.  
+5. Clique em **Avançar**.  
   
-6.  Desmarque a opção para salvar a conexão se ela está selecionada e clique **próxima**.  
+6. Desmarque a opção para salvar a conexão se ela está selecionada e clique **próxima**.  
   
-7.  Expanda o **tabelas** nó na **objetos de banco de dados** janela.  
+7. Expanda o **tabelas** nó na **objetos de banco de dados** janela.  
   
-8.  Marque a caixa de seleção ao lado de **fornecedores** e **produtos** tabelas.  
+8. Marque a caixa de seleção ao lado de **fornecedores** e **produtos** tabelas.  
   
 9. Clique em **Finalizar**.  
   
- O assistente adiciona as **fornecedores** tabela e **produtos** de tabela para o **fontes de dados** janela. Ele também adiciona um dataset tipado ao seu projeto que está visível no **Gerenciador de soluções**.  
+   O assistente adiciona as **fornecedores** tabela e **produtos** de tabela para o **fontes de dados** janela. Ele também adiciona um dataset tipado ao seu projeto que está visível no **Gerenciador de soluções**.  
   
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Para adicionar controles de Windows Forms associados a dados a um controle do painel Ações  
   

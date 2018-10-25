@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23de3ebb79acb342f711593200795246ded97c49
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5f82437fc2a04b1df04624b33e3069a1191e811
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910687"
 ---
 # <a name="performance-session-overview"></a>Visão geral da sessão de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,28 +33,28 @@ Esta visão geral explica as noções básicas de criação de perfil. Desenvolv
   
  As etapas a seguir constituem o processo básico de como usar as Ferramentas de Criação de Perfil:  
   
-1.  Configure a sessão de desempenho, especificando o método de coleta e os dados que você deseja coletar.  
+1. Configure a sessão de desempenho, especificando o método de coleta e os dados que você deseja coletar.  
   
-2.  Colete os dados de criação de perfil executando o aplicativo na sessão de desempenho.  
+2. Colete os dados de criação de perfil executando o aplicativo na sessão de desempenho.  
   
-3.  Analisar os dados e identificar problemas de desempenho.  
+3. Analisar os dados e identificar problemas de desempenho.  
   
-4.  Modifique o código no IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para aumentar o desempenho do código do aplicativo  
+4. Modifique o código no IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para aumentar o desempenho do código do aplicativo  
   
-5.  Colete dados de criação de perfil no código alterado e compare os dados de criação de perfil dos dados originais e alterados.  
+5. Colete dados de criação de perfil no código alterado e compare os dados de criação de perfil dos dados originais e alterados.  
   
-6.  Gere um relatório que documenta o aumento no desempenho.  
+6. Gere um relatório que documenta o aumento no desempenho.  
   
- Para trabalhar com as informações fornecidas pela criação de perfil, você deve ter informações de símbolo disponíveis para os binários que você deseja analisar e para os binários do sistema operacional Windows.  
+   Para trabalhar com as informações fornecidas pela criação de perfil, você deve ter informações de símbolo disponíveis para os binários que você deseja analisar e para os binários do sistema operacional Windows.  
   
 ## <a name="configure-the-performance-session"></a>Configurar a sessão de desempenho  
  Para configurar uma sessão de criação de perfil, selecione o método de criação de perfil que você deseja usar e os dados que você deseja coletar. O **Assistente de Desempenho** das Ferramentas de Criação de Perfil podem orientá-lo pela configuração básica e você pode usar as páginas de propriedade da Sessão de Desempenho para adicionar mais opções:  
   
--   Os métodos de criação de perfil incluem amostragem, rastreamento e alocação de memória.  
+- Os métodos de criação de perfil incluem amostragem, rastreamento e alocação de memória.  
   
--   Os valores de dados incluem tempo, processador e contadores de desempenho do sistema operacional e eventos de aplicativo, tais como falhas de página e transições de kernel.  
+- Os valores de dados incluem tempo, processador e contadores de desempenho do sistema operacional e eventos de aplicativo, tais como falhas de página e transições de kernel.  
   
- Você pode configurar uma sessão de desempenho em um projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] como parte da solução do projeto ou binários arbitrários de perfil por meio do IDE do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Você pode especificar as propriedades de sessão nas páginas de propriedade da Sessão de Desempenho ou pode usar o Assistente de Criação de Perfil.  
+  Você pode configurar uma sessão de desempenho em um projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] como parte da solução do projeto ou binários arbitrários de perfil por meio do IDE do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Você pode especificar as propriedades de sessão nas páginas de propriedade da Sessão de Desempenho ou pode usar o Assistente de Criação de Perfil.  
   
 ## <a name="collect-profiling-data"></a>Coletar dados de criação de perfil  
  Inicie a coleta dos dados de criação de perfil no **Gerenciador de Desempenho**. Você pode pausar e retomar a criação de perfil para limitar a quantidade de dados coletados. Você também pode anexar a um processo que já está em execução.  
@@ -66,11 +66,11 @@ Esta visão geral explica as noções básicas de criação de perfil. Desenvolv
 ## <a name="analyze-the-data-and-identify-performance-issues"></a>Analisar os dados e identificar problemas de desempenho  
  Quando você encerra uma execução de criação de perfil, os dados são analisados e um resumo é exibido nas janelas de exibição **Relatório de Desempenho** das Ferramentas de Criação de Perfil. Os dados de criação de perfil são coletados para a pilha de chamadas e as funções individuais do aplicativo de destino. Exibições de relatório mostram análise de desempenho para intervalos de dados dos processos, threads, módulos, funções e linhas de código-fonte do aplicativo. Valores de dados de criação de perfil para uma função incluem o seguinte:  
   
--   O tempo total gasto na função e em funções filho que foram chamadas pela função (valores inclusivos).  
+- O tempo total gasto na função e em funções filho que foram chamadas pela função (valores inclusivos).  
   
--   O tempo gasto para executar apenas o código na função (valores exclusivos).  
+- O tempo gasto para executar apenas o código na função (valores exclusivos).  
   
- As mais de doze exibições diferentes permitem analisar os dados de criação de perfil da maneira mais eficiente. As personalizações de exibição permitem filtrar e classificar os dados para localizar as funções que podem estar causando problemas de desempenho. A filtragem de afunilamento fornece realce imediato dos caminhos mais ativos nas exibições de Árvore de Chamadas e Módulo.  
+  As mais de doze exibições diferentes permitem analisar os dados de criação de perfil da maneira mais eficiente. As personalizações de exibição permitem filtrar e classificar os dados para localizar as funções que podem estar causando problemas de desempenho. A filtragem de afunilamento fornece realce imediato dos caminhos mais ativos nas exibições de Árvore de Chamadas e Módulo.  
   
 ## <a name="modify-the-application-code"></a>Modificar o código do aplicativo  
  Após isolar um ou mais problemas de desempenho relevantes, você pode modificar o código usando o IDE do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e, em seguida, coletar dados de criação de perfil para suas alterações.  

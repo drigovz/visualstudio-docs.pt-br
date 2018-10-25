@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddd64829f1e9f04c1e7634537818f3b6a081db8f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 96b280221ba7efdefd3023f015bd4075b8c03aaa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280604"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910479"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Adicionar controle de usuário para a página de início
 Este passo a passo mostra como adicionar uma referência DLL para uma página inicial personalizada. O exemplo adiciona um controle de usuário à solução, compila o controle de usuário e, em seguida, faz referência ao assembly compilado da página inicial *. XAML* arquivo. Uma nova guia hospeda o controle de usuário, que funciona como um navegador da Web básico.  
@@ -137,41 +137,41 @@ Este passo a passo mostra como adicionar uma referência DLL para uma página in
 ## <a name="add-the-user-control-to-the-start-page"></a>Adicionar o controle de usuário para a página de início  
  Para disponibilizar esse controle para o projeto de página inicial, no arquivo de página de início do projeto, adicione uma referência para a nova biblioteca de controle. Em seguida, você pode adicionar o controle para a marcação de XAML de página de início.  
   
-1.  Na **Gerenciador de soluções**, no projeto de página inicial, clique com botão direito **referências** e, em seguida, clique em **Add Reference**.  
+1. Na **Gerenciador de soluções**, no projeto de página inicial, clique com botão direito **referências** e, em seguida, clique em **Add Reference**.  
   
-2.  Sobre o **projetos** guia, selecione **WebUserControl** e, em seguida, clique em **Okey**.  
+2. Sobre o **projetos** guia, selecione **WebUserControl** e, em seguida, clique em **Okey**.  
   
-3.  No menu **Compilar**, clique em **Compilar Solução**.  
+3. No menu **Compilar**, clique em **Compilar Solução**.  
   
-     Compilando a solução disponibiliza o controle de usuário para o IntelliSense para outros arquivos na solução.  
+    Compilando a solução disponibiliza o controle de usuário para o IntelliSense para outros arquivos na solução.  
   
- Para adicionar o controle para a marcação de XAML de página Iniciar, adicionar uma referência ao namespace para o assembly e, em seguida, colocar o controle na página.  
+   Para adicionar o controle para a marcação de XAML de página Iniciar, adicionar uma referência ao namespace para o assembly e, em seguida, colocar o controle na página.  
   
 ### <a name="to-add-the-control-to-the-markup"></a>Para adicionar o controle à marcação  
   
-1.  Na **Gerenciador de soluções**, abra a página inicial *. XAML* arquivo.  
+1. Na **Gerenciador de soluções**, abra a página inicial *. XAML* arquivo.  
   
-2.  No **XAML** painel, adicione a seguinte declaração de namespace para o nível superior <xref:System.Windows.Controls.Grid> elemento.  
+2. No **XAML** painel, adicione a seguinte declaração de namespace para o nível superior <xref:System.Windows.Controls.Grid> elemento.  
   
-    ```xml  
-    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
-    ```  
+   ```xml  
+   xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
+   ```  
   
-3.  No **XAML** painel, role até a \<grade > seção.  
+3. No **XAML** painel, role até a \<grade > seção.  
   
-     A seção contém um <xref:System.Windows.Controls.TabControl> elemento em um <xref:System.Windows.Controls.Grid> elemento.  
+    A seção contém um <xref:System.Windows.Controls.TabControl> elemento em um <xref:System.Windows.Controls.Grid> elemento.  
   
-4.  Adicionar um \<TabControl > elemento que contém um \<TabItem > que contém uma referência ao controle de usuário.  
+4. Adicionar um \<TabControl > elemento que contém um \<TabItem > que contém uma referência ao controle de usuário.  
   
-    ```xml  
+   ```xml  
   
-    <TabItem Header="Web" Height="Auto">  
-        <vsc:UserControl1 />  
-    </TabItem>  
+   <TabItem Header="Web" Height="Auto">  
+       <vsc:UserControl1 />  
+   </TabItem>  
   
-    ```  
+   ```  
   
- Agora você pode testar o controle.  
+   Agora você pode testar o controle.  
   
 ## <a name="test-a-manually-created-custom-start-page"></a>Testar uma página de início personalizados criados manualmente  
   

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 312c216f3670599653ddc6833f3e8f0e5cf5a8d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f360982f26cf2eb9ffe26678743bb514d9606ae7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42625918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890667"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Estender as ferramentas do SharePoint no Visual Studio
   As ferramentas do SharePoint no Visual Studio atender os requisitos de muitos cenários de desenvolvimento de aplicativo. No entanto, talvez você descubra os casos em que eles não fornecem a funcionalidade que você ou outros desenvolvedores exigem. Nesses casos, você pode estender as ferramentas do SharePoint para criar a funcionalidade que você precisa.
@@ -38,11 +38,11 @@ ms.locfileid: "42625918"
 ### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Estender o nó de conexões do SharePoint no Gerenciador de servidores
  No Visual Studio, você pode usar o **conexões do SharePoint** nó na **Server Explorer** janela para exibir muitos dos componentes de um ou mais sites locais do SharePoint em uma exibição de árvore hierárquica. Você também pode estender a **conexões do SharePoint** nó das seguintes maneiras:
 
--   Adicionando seus próprios nós. Isso é útil se você quiser exibir componentes de sites do SharePoint que não são exibidos por padrão.
+- Adicionando seus próprios nós. Isso é útil se você quiser exibir componentes de sites do SharePoint que não são exibidos por padrão.
 
--   Estendendo nós existentes. Por exemplo, você pode adicionar um novo nó filho a um nó existente, ou você pode adicionar um item de menu de atalho a um nó e executar tarefas quando um desenvolvedor clica no item de menu.
+- Estendendo nós existentes. Por exemplo, você pode adicionar um novo nó filho a um nó existente, ou você pode adicionar um item de menu de atalho a um nó e executar tarefas quando um desenvolvedor clica no item de menu.
 
- Para obter mais informações, consulte [estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  Para obter mais informações, consulte [estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
 ## <a name="development-computer-requirements"></a>Requisitos do computador de desenvolvimento
  Para criar extensões para as ferramentas do SharePoint, seu computador de desenvolvimento deve atender os mesmos requisitos para a criação de soluções do SharePoint no Visual Studio.

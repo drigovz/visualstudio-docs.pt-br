@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e229919a625241f270090eb59be4aa8cd478c18c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f97bfca4623a826130e68a5399cc2ab86f784cbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251678"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899585"
 ---
 # <a name="xml-schemas-dialog-box"></a>A caixa de diálogo de esquemas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,23 +33,23 @@ O **esquemas XML** caixa de diálogo é usada para selecionar quais esquemas XSD
  **Use**  
  Selecione como o esquema XML deve ser usada.  
   
--   **Automático**. Este esquema não está em uso pelo documento atual mas está disponível para a associação automática. Se o documento XML declarar um namespace que corresponde `targetNamespace` deste esquema, o esquema será associado e é automaticamente encapsulado no conjunto de esquema.  
+- **Automático**. Este esquema não está em uso pelo documento atual mas está disponível para a associação automática. Se o documento XML declarar um namespace que corresponde `targetNamespace` deste esquema, o esquema será associado e é automaticamente encapsulado no conjunto de esquema.  
   
--   **Usar este esquema**. Este esquema está sendo usado pelo documento atual. Qualquer o usuário que solicitou explicitamente este esquema está usado clicando nessa coluna, ou o esquema foi associado automaticamente com base em `targetNamespace`correspondente.  
+- **Usar este esquema**. Este esquema está sendo usado pelo documento atual. Qualquer o usuário que solicitou explicitamente este esquema está usado clicando nessa coluna, ou o esquema foi associado automaticamente com base em `targetNamespace`correspondente.  
   
--   **Não use esquemas selecionados**. Este esquema não é usado pelo documento atual, mesmo se o esquema tem `targetNamespace`correspondente. Essa configuração pode ser útil para resolver conflitos quando há mais de uma versão do mesmo esquema no cache ou na solução de esquema.  
+- **Não use esquemas selecionados**. Este esquema não é usado pelo documento atual, mesmo se o esquema tem `targetNamespace`correspondente. Essa configuração pode ser útil para resolver conflitos quando há mais de uma versão do mesmo esquema no cache ou na solução de esquema.  
   
- **Namespace de destino**  
- Exibe o namespace de destino associada com o esquema XML.  
+  **Namespace de destino**  
+  Exibe o namespace de destino associada com o esquema XML.  
   
- **Nome do arquivo**  
- Exibe o nome do arquivo de esquema XML.  
+  **Nome do arquivo**  
+  Exibe o nome do arquivo de esquema XML.  
   
- **Adicionar**  
- Abre o **abrir esquema XSD** caixa de diálogo, que permite que você selecionar esquemas adicionais para adicionar ao conjunto de esquema. Quando você adiciona um esquema para o esquema definido, o **uso** o valor da coluna é definido como **usar este esquema**.  
+  **Adicionar**  
+  Abre o **abrir esquema XSD** caixa de diálogo, que permite que você selecionar esquemas adicionais para adicionar ao conjunto de esquema. Quando você adiciona um esquema para o esquema definido, o **uso** o valor da coluna é definido como **usar este esquema**.  
   
- **Removerr**  
- Remove o esquema do dataset selecionado de esquema. Remove o esquema de cache de memória do esquema, mas não no sistema de arquivos.  
+  **Removerr**  
+  Remove o esquema do dataset selecionado de esquema. Remove o esquema de cache de memória do esquema, mas não no sistema de arquivos.  
   
 ## <a name="see-also"></a>Consulte também  
  [Componentes do Editor de XML](../xml-tools/xml-editor-components.md)   

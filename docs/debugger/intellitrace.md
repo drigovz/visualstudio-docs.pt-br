@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfa8b1430bde66416a47d2bbc93bd6f728c0709b
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e2ee2e3662e550e013b2f8436cc32ee9585a419d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542435"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825407"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -52,11 +52,11 @@ Você pode usar o IntelliTrace no Visual Studio Enterprise edition (mas não as 
 
 ## <a name="IntelliTraceSupport"></a> Quais aplicativos posso depurar com o IntelliTrace?
 
-|||
-|-|-|
-|**Suporte completo**|– Aplicativos Visual Basic e Visual c# que usam o .NET Framework 2.0 ou versões superiores.<br/>É possível depurar a maioria dos aplicativos, inclusive ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e aplicativos de 64 bits.<br/>Para depurar aplicativos do SharePoint com o IntelliTrace, consulte [instruções passo a passo: depurando um aplicativo do SharePoint usando o IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Para depurar aplicativos do Microsoft Azure com o IntelliTrace, consulte [depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Suporte limitado**|-Direcionamento de suporte do Windows exibir instantâneos usando o retrocesso do IntelliTrace de aplicativos nativos. Há suporte para apenas os eventos de depurador e a exceção.<br />-.NET core e aplicativos ASP.NET Core tem suporte para determinados os eventos somente controlador MVC, ADO.NET e HTTPClicent na depuração local. Não há suporte para o coletor autônomo para aplicativos .NET Core ou ASP.NET Core.<br />-Aplicativos F # em uma base de avaliação<br />-Aplicativos UWP com suporte somente para eventos|
-|**Não tem suporte**|-Outras linguagens e script<br />-Windows Services, Silverlight, Xbox ou [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplicativos|
+| | |
+|---------------------| - |
+| **Suporte completo** | – Aplicativos Visual Basic e Visual c# que usam o .NET Framework 2.0 ou versões superiores.<br/>É possível depurar a maioria dos aplicativos, inclusive ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e aplicativos de 64 bits.<br/>Para depurar aplicativos do SharePoint com o IntelliTrace, consulte [instruções passo a passo: depurando um aplicativo do SharePoint usando o IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Para depurar aplicativos do Microsoft Azure com o IntelliTrace, consulte [depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
+| **Suporte limitado** | -Direcionamento de suporte do Windows exibir instantâneos usando o retrocesso do IntelliTrace de aplicativos nativos. Há suporte para apenas os eventos de depurador e a exceção.<br />-.NET core e aplicativos ASP.NET Core tem suporte para determinados os eventos somente controlador MVC, ADO.NET e HTTPClicent na depuração local. Não há suporte para o coletor autônomo para aplicativos .NET Core ou ASP.NET Core.<br />-Aplicativos F # em uma base de avaliação<br />-Aplicativos UWP com suporte somente para eventos |
+| **Não tem suporte** | -Outras linguagens e script<br />-Windows Services, Silverlight, Xbox ou [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplicativos |
 
 > [!NOTE]
 > Se você quiser depurar um processo que já está em execução, você pode coletar somente eventos do IntelliTrace (nenhuma informação de chamada). Você pode anexar a um processo de 32 bits ou 64 bits no computador local. Eventos que ocorrem antes de anexar ao processo não são coletados.
@@ -77,7 +77,7 @@ Você pode salvar dados do IntelliTrace a partir destas fontes:
 
 - Aplicativos Web em ASP.NET hospedados no IIS ou aplicativos SharePoint 2010 e SharePoint 2013 em execução na implantação quando você usa o Agente de Monitoramento da Microsoft, sozinhos ou com o System Center 2012. Ver [usar o coletor autônomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) e [monitorando com o Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).
 
- Estes são alguns exemplos de como o IntelliTrace pode ajudar na depuração:
+  Estes são alguns exemplos de como o IntelliTrace pode ajudar na depuração:
 
 - O aplicativo corrompeu um arquivo de dados, mas você não sabe onde esse evento ocorreu.
 
@@ -111,11 +111,11 @@ Por padrão, o IntelliTrace registra apenas eventos do IntelliTrace: eventos, ex
 
      Por padrão, para ajudar no desempenho, IntelliTrace não registra todos os valores possíveis para um evento do depurador. Em vez de isso, ele registra estes valores:
 
-    - Os valores na **Locals** janela. Manter o **Locals** janela aberta para consultar esses valores.
+  - Os valores na **Locals** janela. Manter o **Locals** janela aberta para consultar esses valores.
 
-    - Os valores na **Autos** somente se de janela a **Autos** janela está aberta
+  - Os valores na **Autos** somente se de janela a **Autos** janela está aberta
 
-    - Valores em DataTips que surgem quando você move o ponteiro do mouse sobre uma variável na janela de origem para ver seu valor. O IntelliTrace não coleta valores em DataTips fixados.
+  - Valores em DataTips que surgem quando você move o ponteiro do mouse sobre uma variável na janela de origem para ver seu valor. O IntelliTrace não coleta valores em DataTips fixados.
 
     Quando o modo de eventos do IntelliTrace e de instantâneos está habilitado, o IntelliTrace será tirar um instantâneo do processo do aplicativo em cada depurador **ponto de interrupção** e **etapa** eventos. Isso registrará os valores na **Locals**, **Autos**, e **Assista** windows, independentemente se as janelas estão abertas ou não. Valores em quaisquer dicas de dados fixos também serão coletados.
 

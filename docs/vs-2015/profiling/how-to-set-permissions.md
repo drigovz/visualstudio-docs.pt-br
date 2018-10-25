@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41641a0c5b24ea9492b2980fac998155b8ea5332
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d33c99ba2bbca5c7e99d73c9c8168e08674b499e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905244"
 ---
 # <a name="how-to-set-permissions"></a>Como definir permissões
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Este tópico descreve como um Administrador de um computador concede as permiss�
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Membros do grupo Usuários precisarão de acesso às pastas e arquivos no disco que está compartilhado com outros membros da equipe. O segundo procedimento, "Para conceder acesso a arquivos de projeto compartilhados" descreve como conceder esse acesso.  
+  Membros do grupo Usuários precisarão de acesso às pastas e arquivos no disco que está compartilhado com outros membros da equipe. O segundo procedimento, "Para conceder acesso a arquivos de projeto compartilhados" descreve como conceder esse acesso.  
   
- Membros do grupo Usuários podem executar as ferramentas de criação de perfil se um administrador conceder-lhes acesso ao driver de software das ferramentas de criação de perfil. O último procedimento, "Para conceder acesso ao driver de criação de perfil," descreve como conceder acesso a esse driver.  
+  Membros do grupo Usuários podem executar as ferramentas de criação de perfil se um administrador conceder-lhes acesso ao driver de software das ferramentas de criação de perfil. O último procedimento, "Para conceder acesso ao driver de criação de perfil," descreve como conceder acesso a esse driver.  
   
 > [!NOTE]
 >  Você precisa de permissões de administrador para seguir as etapas nesses procedimentos.  
@@ -89,47 +89,47 @@ Este tópico descreve como um Administrador de um computador concede as permiss�
   
 ### <a name="to-grant-access-to-the-profiling-driver"></a>Para conceder acesso ao driver de criação de perfil  
   
-1.  Abra um prompt de comando como administrador.  
+1. Abra um prompt de comando como administrador.  
   
-2.  Altere o diretório para:  
+2. Altere o diretório para:  
   
-    ```  
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
-    ```  
+   ```  
+   <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
+   ```  
   
-3.  Execute o seguinte comando:  
+3. Execute o seguinte comando:  
   
-    ```  
-    vsperfcmd /admin:driver,start /admin:service,start  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,start /admin:service,start  
+   ```  
   
-     Este comando instala e inicia o driver para as ferramentas de criação de perfil.  
+    Este comando instala e inicia o driver para as ferramentas de criação de perfil.  
   
-     Esse comando inicia o serviço e o driver de criação de perfil para que usuários não administradores usem os recursos de criação de perfil que estão disponíveis em seus espaços de processo de Usuário. Somente um Administrador pode executar o comando e ele falhará para usuários não administrativos.  
+    Esse comando inicia o serviço e o driver de criação de perfil para que usuários não administradores usem os recursos de criação de perfil que estão disponíveis em seus espaços de processo de Usuário. Somente um Administrador pode executar o comando e ele falhará para usuários não administrativos.  
   
-     Observe que os efeitos desta etapa são desfeitos após o computador reiniciar, a menos que você também execute a etapa final deste procedimento.  
+    Observe que os efeitos desta etapa são desfeitos após o computador reiniciar, a menos que você também execute a etapa final deste procedimento.  
   
-4.  Execute o comando para permitir o acesso à funcionalidade do driver de criação de perfil por um usuário ou grupo que não tem acesso de administrador no computador:  
+4. Execute o comando para permitir o acesso à funcionalidade do driver de criação de perfil por um usuário ou grupo que não tem acesso de administrador no computador:  
   
-    ```  
-    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
-    ```  
+   ```  
+   vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
+   ```  
   
-     Este comando concede à conta \<nome de usuário> ou \<nome do grupo> o acesso às ferramentas de Criação de Perfil. A opção \<direito> determina a funcionalidade de criação de perfil que o usuário pode acessar. A opção \<direito> pode ser um ou mais dos seguintes valores:  
+    Este comando concede à conta \<nome de usuário> ou \<nome do grupo> o acesso às ferramentas de Criação de Perfil. A opção \<direito> determina a funcionalidade de criação de perfil que o usuário pode acessar. A opção \<direito> pode ser um ou mais dos seguintes valores:  
   
-    -   FullAccess – permite acesso a todos os métodos de criação de perfil, incluindo a coleta de dados de desempenho de serviços, de amostragem e de criação de perfil entre sessões.  
+   -   FullAccess – permite acesso a todos os métodos de criação de perfil, incluindo a coleta de dados de desempenho de serviços, de amostragem e de criação de perfil entre sessões.  
   
-    -   SampleProfiling – permite acesso aos métodos de criação de perfil por amostragem  
+   -   SampleProfiling – permite acesso aos métodos de criação de perfil por amostragem  
   
-    -   CrossSession – permite o acesso à criação de perfil entre sessões o que é necessário para serviços de criação de perfil.  
+   -   CrossSession – permite o acesso à criação de perfil entre sessões o que é necessário para serviços de criação de perfil.  
   
-5.  (Opcional) Para preservar os resultados de qualquer uma das etapas anteriores depois que o computador reiniciar, execute o seguinte comando:  
+5. (Opcional) Para preservar os resultados de qualquer uma das etapas anteriores depois que o computador reiniciar, execute o seguinte comando:  
   
-    ```  
-    vsperfcmd /admin:driver,autostart,on  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,autostart,on  
+   ```  
   
- Os usuários especificados, após o logon, agora poderão usar as ferramentas de criação de perfil sem permissões de Administrador.  
+   Os usuários especificados, após o logon, agora poderão usar as ferramentas de criação de perfil sem permissões de Administrador.  
   
 ## <a name="see-also"></a>Consulte também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   

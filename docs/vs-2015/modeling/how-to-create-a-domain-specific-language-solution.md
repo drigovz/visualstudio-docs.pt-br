@@ -18,12 +18,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cf28035726f20aa715bfe12a48b1378edfacb673
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2650afc2172cdcceca892d4ad19a05becac3e472
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223204"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908896"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Como criar uma solução de linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,43 +43,43 @@ Uma linguagem específica de domínio (DSL) é criada usando especializado [!INC
   
 #### <a name="to-create-a-domain-specific-language-solution"></a>Para criar uma solução de linguagem específica do domínio  
   
-1.  Inicie o assistente DSL.  
+1. Inicie o assistente DSL.  
   
-    1.  No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
+   1. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-    2.  A caixa de diálogo **Novo Projeto** é exibida.  
+   2. A caixa de diálogo **Novo Projeto** é exibida.  
   
-    3.  Sob **tipos de projeto**, expanda o **Other Project Types** nó e clique em **extensibilidade**.  
+   3. Sob **tipos de projeto**, expanda o **Other Project Types** nó e clique em **extensibilidade**.  
   
-    4.  Clique em **Designer de linguagem específica do domínio**.  
+   4. Clique em **Designer de linguagem específica do domínio**.  
   
-    5.  No **nome** , digite um nome para a solução. Clique em **OK**.  
+   5. No **nome** , digite um nome para a solução. Clique em **OK**.  
   
-         O **Assistente de Designer de linguagem específica do domínio** é exibida.  
+       O **Assistente de Designer de linguagem específica do domínio** é exibida.  
   
-        > [!NOTE]
-        >  De preferência, o nome que você digita deve ser um Visual C# identificador válido, porque ele pode ser usado para gerar código.  
+      > [!NOTE]
+      >  De preferência, o nome que você digita deve ser um Visual C# identificador válido, porque ele pode ser usado para gerar código.  
   
-     ![Criar caixa de diálogo DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
+      ![Criar caixa de diálogo DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
-2.  Escolha um modelo DSL.  
+2. Escolha um modelo DSL.  
   
-     Sobre o **selecionar opções de linguagem específica do domínio** , selecione um dos modelos de solução, como **linguagem mínima**. Escolha um modelo que é semelhante a DSL que você deseja criar.  
+    Sobre o **selecionar opções de linguagem específica do domínio** , selecione um dos modelos de solução, como **linguagem mínima**. Escolha um modelo que é semelhante a DSL que você deseja criar.  
   
-     Para obter mais informações sobre modelos de solução, consulte [escolhendo um modelo de solução de linguagem específica do domínio](../modeling/choosing-a-domain-specific-language-solution-template.md).  
+    Para obter mais informações sobre modelos de solução, consulte [escolhendo um modelo de solução de linguagem específica do domínio](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
-3.  Digite uma extensão de nome de arquivo **extensão de arquivo** página. Ele deve ser exclusivo no seu computador e, em todos os computadores nos quais você deseja instalar a DSL. Você deve ver a mensagem **nenhum aplicativo ou os editores do Visual Studio usam esta extensão**.  
+3. Digite uma extensão de nome de arquivo **extensão de arquivo** página. Ele deve ser exclusivo no seu computador e, em todos os computadores nos quais você deseja instalar a DSL. Você deve ver a mensagem **nenhum aplicativo ou os editores do Visual Studio usam esta extensão**.  
   
-    -   Se você usou a extensão de nome de arquivo no anteriores DSLs experimentais que não foram totalmente instaladas, você pode desmarcá-las fora usando o **redefinir a instância Experimental** ferramenta, que pode ser encontrada no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu SDK.  
+   -   Se você usou a extensão de nome de arquivo no anteriores DSLs experimentais que não foram totalmente instaladas, você pode desmarcá-las fora usando o **redefinir a instância Experimental** ferramenta, que pode ser encontrada no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu SDK.  
   
-    -   Se outro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão que usa esta extensão de arquivo tiver sido totalmente instalado em seu computador, considere desinstalá-lo. Sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.  
+   -   Se outro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão que usa esta extensão de arquivo tiver sido totalmente instalado em seu computador, considere desinstalá-lo. Sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.  
   
-4.  Inspecione e ajustar se necessário, os campos nas páginas restantes do assistente. Quando estiver satisfeito com as configurações, clique em **concluir**. Para obter mais informações sobre as configurações, consulte [páginas do Assistente de Designer de DSL](#settings).  
+4. Inspecione e ajustar se necessário, os campos nas páginas restantes do assistente. Quando estiver satisfeito com as configurações, clique em **concluir**. Para obter mais informações sobre as configurações, consulte [páginas do Assistente de Designer de DSL](#settings).  
   
-     O assistente cria uma solução que tem dois projetos, que são nomeados **Dsl** e **DslPackage**.  
+    O assistente cria uma solução que tem dois projetos, que são nomeados **Dsl** e **DslPackage**.  
   
-    > [!NOTE]
-    >  Se você vir uma mensagem que o alerta não executar modelos de texto de fontes não confiáveis, clique em **Okey**. Você pode definir essa mensagem não seja exibido novamente.  
+   > [!NOTE]
+   >  Se você vir uma mensagem que o alerta não executar modelos de texto de fontes não confiáveis, clique em **Okey**. Você pode definir essa mensagem não seja exibido novamente.  
   
 ##  <a name="settings"></a> As páginas do Assistente de Designer de DSL  
  Você pode deixar vários campos inalterados de seus valores padrão. No entanto, certifique-se de que você defina o campo de extensão de arquivo.  

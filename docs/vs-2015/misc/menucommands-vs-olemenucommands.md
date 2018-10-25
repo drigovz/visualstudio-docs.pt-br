@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: douge
-ms.openlocfilehash: c555b306c38d852f8fbd02c6f2b9347f4a359559
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3b548a43cabcb097250411c3475f47774c840511
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193577"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911898"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
 Você pode criar comandos de menu, derivando de <xref:System.ComponentModel.Design.MenuCommand> ou de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objeto e impementling os manipuladores de eventos apropriado. Na maioria dos casos, você pode usar <xref:System.ComponentModel.Design.MenuCommand>, como o modelo de projeto de VSPackage faz, mas, ocasionalmente, talvez você precise usar <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
@@ -41,90 +41,90 @@ Você pode criar comandos de menu, derivando de <xref:System.ComponentModel.Desi
   
 #### <a name="to-add-a-command-to-the-ide"></a>Para adicionar um comando ao IDE  
   
-1.  Abra o arquivo. VSCT.  
+1. Abra o arquivo. VSCT.  
   
-2.  No `Symbols` seção, localize o [GuidSymbol](../extensibility/guidsymbol-element.md) elemento que contém os grupos e comandos.  
+2. No `Symbols` seção, localize o [GuidSymbol](../extensibility/guidsymbol-element.md) elemento que contém os grupos e comandos.  
   
-3.  Criar uma [IDSymbol](../extensibility/idsymbol-element.md) elemento para cada menu, grupo ou comando que você deseja adicionar, conforme mostrado no exemplo a seguir.  
+3. Criar uma [IDSymbol](../extensibility/idsymbol-element.md) elemento para cada menu, grupo ou comando que você deseja adicionar, conforme mostrado no exemplo a seguir.  
   
-    ```xml
-    <GuidSymbol name="guidButtonGroupCmdSet" value="{f69209e9-975a-4543-821d-1f4a2c52d737}">
-      <IDSymbol name="MyMenuGroup" value="0x1020" />
-      <IDSymbol name="cmdidMyCommand" value="0x0100" />
-    </GuidSymbol>
-    ```
+   ```xml
+   <GuidSymbol name="guidButtonGroupCmdSet" value="{f69209e9-975a-4543-821d-1f4a2c52d737}">
+     <IDSymbol name="MyMenuGroup" value="0x1020" />
+     <IDSymbol name="cmdidMyCommand" value="0x0100" />
+   </GuidSymbol>
+   ```
       
-     O `name` atributos do `GuidSymbol` e `IDSymbol` elementos fornecem o par de GUID:ID para cada novo menu, um grupo ou um comando. O `guid` representa um conjunto de comandos que está definido para o VSPackage. Você pode definir vários conjuntos de comandos. Cada par de GUID:ID deve ser exclusivo.  
+    O `name` atributos do `GuidSymbol` e `IDSymbol` elementos fornecem o par de GUID:ID para cada novo menu, um grupo ou um comando. O `guid` representa um conjunto de comandos que está definido para o VSPackage. Você pode definir vários conjuntos de comandos. Cada par de GUID:ID deve ser exclusivo.  
   
-4.  No [botões](../extensibility/buttons-element.md) seção, crie um [botão](../extensibility/button-element.md) elemento para definir o comando, conforme mostrado no exemplo a seguir.  
+4. No [botões](../extensibility/buttons-element.md) seção, crie um [botão](../extensibility/button-element.md) elemento para definir o comando, conforme mostrado no exemplo a seguir.  
   
-    ```xml
-    <Button guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
-      <Parent guid="guidButtonGroupCmdSet" id="MyMenuGroup" />
-      <Icon guid="guidImages" id="bmpPic1" />
-      <Strings>
-        <CommandName>cmdidMyCommand</CommandName>
-        <ButtonText>My Command name</ButtonText>
-      </Strings>
-    </Button>
-    ``` 
+   ```xml
+   <Button guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
+     <Parent guid="guidButtonGroupCmdSet" id="MyMenuGroup" />
+     <Icon guid="guidImages" id="bmpPic1" />
+     <Strings>
+       <CommandName>cmdidMyCommand</CommandName>
+       <ButtonText>My Command name</ButtonText>
+     </Strings>
+   </Button>
+   ``` 
      
-    1.  Defina as `guid` e `id` campos a serem associados a GUID:ID do novo comando.  
+   1.  Defina as `guid` e `id` campos a serem associados a GUID:ID do novo comando.  
   
-    2.  Defina o `priority` atributo.  
+   2.  Defina o `priority` atributo.  
   
-         O `priority` atributo é usado pela. VSCT para determinar o local do botão entre os outros objetos no respectivo grupo pai.  
+        O `priority` atributo é usado pela. VSCT para determinar o local do botão entre os outros objetos no respectivo grupo pai.  
   
-         Comandos que têm valores de prioridade mais baixos são exibidos acima ou à esquerda de comandos que têm valores de prioridade mais alta. Os valores de prioridade duplicados são permitidos, mas a posição relativa dos comandos que têm a mesma prioridade é determinada pela ordem na qual os VSPackages são processados em tempo de execução e, nessa ordem não pode ser predeterminada.  
+        Comandos que têm valores de prioridade mais baixos são exibidos acima ou à esquerda de comandos que têm valores de prioridade mais alta. Os valores de prioridade duplicados são permitidos, mas a posição relativa dos comandos que têm a mesma prioridade é determinada pela ordem na qual os VSPackages são processados em tempo de execução e, nessa ordem não pode ser predeterminada.  
   
-         Omitindo o `priority` atributo define seu valor como 0.  
+        Omitindo o `priority` atributo define seu valor como 0.  
   
-    3.  Defina o `type` atributo. Na maioria dos casos, seu valor será `"Button"`. Para obter descrições dos outros tipos de botões válidos, consulte [elemento Button](../extensibility/button-element.md).  
+   3.  Defina o `type` atributo. Na maioria dos casos, seu valor será `"Button"`. Para obter descrições dos outros tipos de botões válidos, consulte [elemento Button](../extensibility/button-element.md).  
   
-5.  Na definição do botão, crie uma [cadeias de caracteres](../extensibility/strings-element.md) elemento que contém uma [ButtonText](../extensibility/buttontext-element.md) elemento para conter o nome do menu, como ele aparece no IDE e uma [CommandName](../extensibility/commandname-element.md) elemento para conter o nome do comando que é usado para acessar o menu na **comando** janela.  
+5. Na definição do botão, crie uma [cadeias de caracteres](../extensibility/strings-element.md) elemento que contém uma [ButtonText](../extensibility/buttontext-element.md) elemento para conter o nome do menu, como ele aparece no IDE e uma [CommandName](../extensibility/commandname-element.md) elemento para conter o nome do comando que é usado para acessar o menu na **comando** janela.  
   
-     Se a cadeia de caracteres de texto do botão inclui o caractere '&', o usuário pode abrir o menu pressionando a tecla ALT mais o caractere imediatamente após o '&'.  
+    Se a cadeia de caracteres de texto do botão inclui o caractere '&', o usuário pode abrir o menu pressionando a tecla ALT mais o caractere imediatamente após o '&'.  
   
-     Adicionando um `Tooltip` elemento fará com que o texto contido seja exibido quando um usuário posiciona o ponteiro sobre o botão.  
+    Adicionando um `Tooltip` elemento fará com que o texto contido seja exibido quando um usuário posiciona o ponteiro sobre o botão.  
   
-6.  Adicionar um [ícone](../extensibility/icon-element.md) elemento para especificar o ícone, se houver, para ser exibido com o comando. Os ícones são necessários para botões em barras de ferramentas, mas não para itens de menu. O `guid` e `id` da `Icon` elemento deve corresponder aos de uma [Bitmap](../extensibility/bitmap-element.md) elemento definido no `Bitmaps` seção.  
+6. Adicionar um [ícone](../extensibility/icon-element.md) elemento para especificar o ícone, se houver, para ser exibido com o comando. Os ícones são necessários para botões em barras de ferramentas, mas não para itens de menu. O `guid` e `id` da `Icon` elemento deve corresponder aos de uma [Bitmap](../extensibility/bitmap-element.md) elemento definido no `Bitmaps` seção.  
   
-7.  Adicione sinalizadores de comando, conforme apropriado, para alterar a aparência e comportamento do botão. Para fazer isso, adicione uma [CommandFlag](../extensibility/command-flag-element.md) elemento na definição de menu.  
+7. Adicione sinalizadores de comando, conforme apropriado, para alterar a aparência e comportamento do botão. Para fazer isso, adicione uma [CommandFlag](../extensibility/command-flag-element.md) elemento na definição de menu.  
   
-8.  Defina o grupo pai do comando. O grupo pai pode ser um grupo que você cria, um grupo de outro pacote ou um grupo a partir do IDE. Por exemplo, para adicionar o comando à barra de ferramentas de edição da Visual Studio, ao lado de **comentário** e **Remover comentário** botões, definir o pai para guidStdEditor:IDG_VS_EDITTOOLBAR_COMMENT. Se o pai for um grupo definido pelo usuário, ele deve ser o filho de um menu, barra de ferramentas ou janela de ferramenta que aparece no IDE.  
+8. Defina o grupo pai do comando. O grupo pai pode ser um grupo que você cria, um grupo de outro pacote ou um grupo a partir do IDE. Por exemplo, para adicionar o comando à barra de ferramentas de edição da Visual Studio, ao lado de **comentário** e **Remover comentário** botões, definir o pai para guidStdEditor:IDG_VS_EDITTOOLBAR_COMMENT. Se o pai for um grupo definido pelo usuário, ele deve ser o filho de um menu, barra de ferramentas ou janela de ferramenta que aparece no IDE.  
   
-     Você pode fazer isso de duas maneiras, dependendo do seu projeto:  
+    Você pode fazer isso de duas maneiras, dependendo do seu projeto:  
   
-    -   No `Button` elemento, criar um [pai](../extensibility/parent-element.md) elemento e o conjunto de seus `guid` e `id` campos para o Guid e ID do grupo que irá hospedar o comando, também conhecido como o *grupo pai primário*.  
+   -   No `Button` elemento, criar um [pai](../extensibility/parent-element.md) elemento e o conjunto de seus `guid` e `id` campos para o Guid e ID do grupo que irá hospedar o comando, também conhecido como o *grupo pai primário*.  
   
-         O exemplo a seguir define um comando que será exibido em um menu definido pelo usuário.  
+        O exemplo a seguir define um comando que será exibido em um menu definido pelo usuário.  
   
-        ```xml
-        <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">
-          <Parent guid="guidTopLevelMenuCmdSet" id="MyMenuGroup" />
-          <Icon guid="guidImages" id="bmpPic1" />
-          <Strings>
-            <CommandName>cmdidTestCommand</CommandName>
-            <ButtonText>Test Command</ButtonText>
-              </Strings>
-        </Button>
-        ```
+       ```xml
+       <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">
+         <Parent guid="guidTopLevelMenuCmdSet" id="MyMenuGroup" />
+         <Icon guid="guidImages" id="bmpPic1" />
+         <Strings>
+           <CommandName>cmdidTestCommand</CommandName>
+           <ButtonText>Test Command</ButtonText>
+             </Strings>
+       </Button>
+       ```
       
-    -   Você pode omitir o `Parent` elemento se o comando é posicionado por meio de posicionamento do comando. Criar uma [CommandPlacements](../extensibility/commandplacements-element.md) elemento antes do `Symbols` seção e, em seguida, adicione um [CommandPlacement](../extensibility/commandplacement-element.md) elemento que tem o `guid` e `id` do comando, um `priority`e um pai, conforme mostrado no exemplo a seguir.  
+   -   Você pode omitir o `Parent` elemento se o comando é posicionado por meio de posicionamento do comando. Criar uma [CommandPlacements](../extensibility/commandplacements-element.md) elemento antes do `Symbols` seção e, em seguida, adicione um [CommandPlacement](../extensibility/commandplacement-element.md) elemento que tem o `guid` e `id` do comando, um `priority`e um pai, conforme mostrado no exemplo a seguir.  
   
-    ```xml
-    <CommandPlacements>
-      <CommandPlacement guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x105">
-        <Parent guid="guidButtonGroupCmdSet" id="MyMenuGroup" />
-      </CommandPlacement>
-    </CommandPlacements>
-    ```
+   ```xml
+   <CommandPlacements>
+     <CommandPlacement guid="guidButtonGroupCmdSet" id="cmdidMyCommand" priority="0x105">
+       <Parent guid="guidButtonGroupCmdSet" id="MyMenuGroup" />
+     </CommandPlacement>
+   </CommandPlacements>
+   ```
       
-         Creating multiple command placements that have the same GUID:ID and have different parents causes a menu to appear in multiple locations. For more information, see [CommandPlacements](../extensibility/commandplacements-element.md) element.  
+        Creating multiple command placements that have the same GUID:ID and have different parents causes a menu to appear in multiple locations. For more information, see [CommandPlacements](../extensibility/commandplacements-element.md) element.  
   
-     Para obter mais informações sobre grupos de comando e gerenciamento do domínio pai, consulte [criar grupos reutilizáveis de botões](../extensibility/creating-reusable-groups-of-buttons.md).  
+    Para obter mais informações sobre grupos de comando e gerenciamento do domínio pai, consulte [criar grupos reutilizáveis de botões](../extensibility/creating-reusable-groups-of-buttons.md).  
   
- Neste ponto, o comando estará visível no IDE, mas não terá nenhuma funcionalidade. Se o comando foi criado pelo modelo de pacote, ele terá um manipulador de clique que exibe uma mensagem por padrão.  
+   Neste ponto, o comando estará visível no IDE, mas não terá nenhuma funcionalidade. Se o comando foi criado pelo modelo de pacote, ele terá um manipulador de clique que exibe uma mensagem por padrão.  
   
 ## <a name="handling-the-new-command"></a>Tratar o comando novo  
  A maioria dos comandos em código gerenciado podem ser tratadas por estrutura de pacote gerenciado (MPF) por meio da associação de comando com um <xref:System.ComponentModel.Design.MenuCommand> objeto ou <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objeto e implementar seus manipuladores de eventos.  
@@ -175,29 +175,29 @@ Você pode criar comandos de menu, derivando de <xref:System.ComponentModel.Desi
   
 #### <a name="to-implement-querystatus"></a>Para implementar QueryStatus  
   
-1.  O evento QueryStatus ocorre antes que um comando é exibido. Isso permite que as propriedades desse comando para ser definida no evento manipulador antes de atingir o usuário. Somente os comandos que são adicionados como <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objetos podem acessar esse método.  
+1. O evento QueryStatus ocorre antes que um comando é exibido. Isso permite que as propriedades desse comando para ser definida no evento manipulador antes de atingir o usuário. Somente os comandos que são adicionados como <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objetos podem acessar esse método.  
   
-     Adicionar um `EventHandler` do objeto para o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> evento na <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objeto que é criado para lidar com o comando, conforme mostrado no exemplo a seguir (`menuItem` é o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> instância).  
+    Adicionar um `EventHandler` do objeto para o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> evento na <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objeto que é criado para lidar com o comando, conforme mostrado no exemplo a seguir (`menuItem` é o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> instância).  
   
-     [!code-csharp[MenuText#14](../snippets/csharp/VS_Snippets_VSSDK/menutext/cs/menutextpackage.cs#14)]
-     [!code-vb[MenuText#14](../snippets/visualbasic/VS_Snippets_VSSDK/menutext/vb/menutextpackage.vb#14)]  
+    [!code-csharp[MenuText#14](../snippets/csharp/VS_Snippets_VSSDK/menutext/cs/menutextpackage.cs#14)]
+    [!code-vb[MenuText#14](../snippets/visualbasic/VS_Snippets_VSSDK/menutext/vb/menutextpackage.vb#14)]  
   
-     O `EventHandler` objeto recebe o nome de um método que é chamado quando o status do comando de menu é consultado.  
+    O `EventHandler` objeto recebe o nome de um método que é chamado quando o status do comando de menu é consultado.  
   
-2.  Implemente o método de manipulador de status de consulta para o comando. O `object` `sender` parâmetro pode ser convertido em um <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objeto, que é usado para definir os vários atributos do comando de menu, incluindo o texto. A tabela a seguir mostra as propriedades na <xref:System.ComponentModel.Design.MenuCommand> classe (que a classe MPF <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> deriva) que correspondem ao <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> sinalizadores.  
+2. Implemente o método de manipulador de status de consulta para o comando. O `object` `sender` parâmetro pode ser convertido em um <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objeto, que é usado para definir os vários atributos do comando de menu, incluindo o texto. A tabela a seguir mostra as propriedades na <xref:System.ComponentModel.Design.MenuCommand> classe (que a classe MPF <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> deriva) que correspondem ao <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> sinalizadores.  
   
-    |Propriedade MenuCommand|Sinalizador OLECMDF|  
-    |--------------------------|------------------|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
+   |Propriedade MenuCommand|Sinalizador OLECMDF|  
+   |--------------------------|------------------|  
+   |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
+   |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
+   |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
   
-     Para alterar o texto de um comando de menu, use o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A> propriedade no <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> do objeto, conforme mostrado no exemplo a seguir.  
+    Para alterar o texto de um comando de menu, use o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A> propriedade no <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> do objeto, conforme mostrado no exemplo a seguir.  
   
-     [!code-csharp[MenuText#11](../snippets/csharp/VS_Snippets_VSSDK/menutext/cs/menutextpackage.cs#11)]
-     [!code-vb[MenuText#11](../snippets/visualbasic/VS_Snippets_VSSDK/menutext/vb/menutextpackage.vb#11)]  
+    [!code-csharp[MenuText#11](../snippets/csharp/VS_Snippets_VSSDK/menutext/cs/menutextpackage.cs#11)]
+    [!code-vb[MenuText#11](../snippets/visualbasic/VS_Snippets_VSSDK/menutext/vb/menutextpackage.vb#11)]  
   
- MPF controla automaticamente o caso dos grupos sem suporte ou desconhecidos. A menos que um comando foi adicionado para o <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> usando o <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> não há suporte para o método, o comando.  
+   MPF controla automaticamente o caso dos grupos sem suporte ou desconhecidos. A menos que um comando foi adicionado para o <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> usando o <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> não há suporte para o método, o comando.  
   
 ### <a name="handling-commands-by-using-the-iolecommandtarget-interface"></a>Manipulando comandos por meio da Interface IOleCommandTarget  
  Para o código que usa o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> diretamente a interface, o VSPackage deve implementar ambas as <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> métodos do <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface. Se o VSPackage implementa uma hierarquia do projeto, o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> métodos do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface deve ser implementada em vez disso.  
@@ -208,45 +208,45 @@ Você pode criar comandos de menu, derivando de <xref:System.ComponentModel.Desi
   
 ##### <a name="to-implement-the-querystatus-method"></a>Para implementar o método QueryStatus  
   
-1.  Retornar <xref:Microsoft.VisualStudio.VSConstants.S_OK> para comandos válidos.  
+1. Retornar <xref:Microsoft.VisualStudio.VSConstants.S_OK> para comandos válidos.  
   
-2.  Defina as `cmdf` elemento do `prgCmds` parâmetro.  
+2. Defina as `cmdf` elemento do `prgCmds` parâmetro.  
   
-     O valor da `cmdf` elemento é a união lógica dos valores da <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> enumeração, combinada com o OR lógico (`|`) operador.  
+    O valor da `cmdf` elemento é a união lógica dos valores da <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> enumeração, combinada com o OR lógico (`|`) operador.  
   
-     Use a enumeração apropriada, com base no status do comando:  
+    Use a enumeração apropriada, com base no status do comando:  
   
-    -   Se houver suporte para o comando:  
+   - Se houver suporte para o comando:  
   
-         `prgCmds[0].cmdf = OLECMDF_SUPPORTED;`  
+      `prgCmds[0].cmdf = OLECMDF_SUPPORTED;`  
   
-    -   Se o comando deve ser invisível no momento:  
+   - Se o comando deve ser invisível no momento:  
   
-         `prgCmds[0].cmdf |= OLECMDF_INVISIBLE;`  
+      `prgCmds[0].cmdf |= OLECMDF_INVISIBLE;`  
   
-    -   Se o comando é ativado e parece ter sido clicado:  
+   - Se o comando é ativado e parece ter sido clicado:  
   
-         `prgCmds[0].cmdf |= OLECMDF_LATCHED;`  
+      `prgCmds[0].cmdf |= OLECMDF_LATCHED;`  
   
-         No caso do processamento de comandos que são hospedados em um menu do tipo `MenuControllerLatched`, o primeiro comando que está marcado com o `OLECMDF_LATCHED` sinalizador é o comando de padrão que é exibido pelo menu na inicialização. Para obter mais informações sobre `MenuController` tipos de menu, consulte [elemento Menu](../extensibility/menu-element.md).  
+      No caso do processamento de comandos que são hospedados em um menu do tipo `MenuControllerLatched`, o primeiro comando que está marcado com o `OLECMDF_LATCHED` sinalizador é o comando de padrão que é exibido pelo menu na inicialização. Para obter mais informações sobre `MenuController` tipos de menu, consulte [elemento Menu](../extensibility/menu-element.md).  
   
-    -   Se o comando é habilitado no momento:  
+   - Se o comando é habilitado no momento:  
   
-         `prgCmds[0].cmdf |= OLECMDF_ENABLED;`  
+      `prgCmds[0].cmdf |= OLECMDF_ENABLED;`  
   
-    -   Se o comando é parte de um menu de atalho e fica oculta por padrão:  
+   - Se o comando é parte de um menu de atalho e fica oculta por padrão:  
   
-         `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
+      `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
   
-    -   Se o comando usa o `TEXTCHANGES` sinalizador, defina a `rgwz` elemento da `pCmdText` parâmetro para o novo texto do comando e definido o `cwActual` elemento do `pCmdText` parâmetro para o tamanho da cadeia de caracteres de comando.  
+   - Se o comando usa o `TEXTCHANGES` sinalizador, defina a `rgwz` elemento da `pCmdText` parâmetro para o novo texto do comando e definido o `cwActual` elemento do `pCmdText` parâmetro para o tamanho da cadeia de caracteres de comando.  
   
      Para condições de erro, o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método deve manipular casos de erro a seguir:  
   
-    -   Se o GUID é desconhecido ou não tem suporte, retorne `OLECMDERR_E_UNKNOWNGROUP`.  
+   - Se o GUID é desconhecido ou não tem suporte, retorne `OLECMDERR_E_UNKNOWNGROUP`.  
   
-    -   Se o GUID é conhecido, mas a ID de comando é desconhecido ou não tem suporte, retorne `OLECMDERR_E_NOTSUPPORTED`.  
+   - Se o GUID é conhecido, mas a ID de comando é desconhecido ou não tem suporte, retorne `OLECMDERR_E_NOTSUPPORTED`.  
   
- A implementação de VSPackage do <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> método também deve retornar códigos de erro específicos, dependendo se o comando tem suporte e se o comando foi tratado com êxito.  
+   A implementação de VSPackage do <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> método também deve retornar códigos de erro específicos, dependendo se o comando tem suporte e se o comando foi tratado com êxito.  
   
 ##### <a name="to-implement-the-exec-method"></a>Para implementar o método Exec  
   

@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0d2d7d14b1e87a584da9f789c5092373db5519d5
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b5e66be099734008e09456cbd1e0f4fb4b0d5c9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327135"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854280"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Criar modelos de projeto do SharePoint para itens de projeto e modelos de item
   Quando você define um tipo de item de projeto personalizado do SharePoint, você pode associá-lo com um modelo de item ou um modelo de projeto. Essa associação permite que outros desenvolvedores a usar o item de projeto no Visual Studio. Você também pode criar um Assistente para o modelo.
@@ -47,14 +47,16 @@ ms.locfileid: "36327135"
 
  A tabela a seguir lista alguns dos arquivos opcionais mais comuns que podem ser incluídos no modelo de item. Alguns tipos de itens de projeto podem exigir outros arquivos não listados aqui.
 
-|Arquivo opcional|Descrição|
-|-------------------|-----------------|
-|*Elements. XML*|Um *elemento Feature* arquivo. Esse arquivo define a interface do usuário e o comportamento da personalização que criou o item de projeto. Cada tipo de personalização, como instâncias de lista, tipos de conteúdo ou ações personalizadas, tem um esquema diferente que define o conteúdo desse arquivo. Para obter mais informações, consulte [bloco de construção: recursos](http://go.microsoft.com/fwlink/?LinkId=169183) e [esquemas de recurso](http://go.microsoft.com/fwlink/?LinkId=169192).|
-|*Schema. XML*|O arquivo de esquema para definições de lista. Para obter mais informações, consulte [bloco de construção: listas e bibliotecas de documentos](http://go.microsoft.com/fwlink/?LinkId=177792) e [Schema. XML](http://go.microsoft.com/fwlink/?LinkId=177793).|
-|*. WebPart*|Um *definição de Web Part* arquivo. Esse arquivo contém as configurações de propriedade para uma Web Part. Para obter mais informações, consulte [bloco de construção: Web Parts](http://go.microsoft.com/fwlink/?LinkId=177791).|
-|*. ascx*|Um arquivo de controle de usuário ASP.NET. Esse arquivo define a interface do usuário de uma Web Part Visual.|
-|*. aspx*|Um arquivo de página ASP.NET. Esse arquivo contém a marcação XML que define uma página de aplicativo.|
-|*. CS* ou *VB* arquivos|Esses arquivos de código definem o comportamento das personalizações do SharePoint que têm um modelo de programação que pode ser acessado do Visual c# ou código do Visual Basic, como páginas de aplicativos, Web parts e fluxos de trabalho.|
+
+| Arquivo opcional | Descrição |
+|----------------------| - |
+| *Elements. XML* | Um *elemento Feature* arquivo. Esse arquivo define a interface do usuário e o comportamento da personalização que criou o item de projeto. Cada tipo de personalização, como instâncias de lista, tipos de conteúdo ou ações personalizadas, tem um esquema diferente que define o conteúdo desse arquivo. Para obter mais informações, consulte [bloco de construção: recursos](http://go.microsoft.com/fwlink/?LinkId=169183) e [esquemas de recurso](http://go.microsoft.com/fwlink/?LinkId=169192). |
+| *Schema. XML* | O arquivo de esquema para definições de lista. Para obter mais informações, consulte [bloco de construção: listas e bibliotecas de documentos](http://go.microsoft.com/fwlink/?LinkId=177792) e [Schema. XML](http://go.microsoft.com/fwlink/?LinkId=177793). |
+| *. WebPart* | Um *definição de Web Part* arquivo. Esse arquivo contém as configurações de propriedade para uma Web Part. Para obter mais informações, consulte [bloco de construção: Web Parts](http://go.microsoft.com/fwlink/?LinkId=177791). |
+| *. ascx* | Um arquivo de controle de usuário ASP.NET. Esse arquivo define a interface do usuário de uma Web Part Visual. |
+| *. aspx* | Um arquivo de página ASP.NET. Esse arquivo contém a marcação XML que define uma página de aplicativo. |
+| *. CS* ou *VB* arquivos | Esses arquivos de código definem o comportamento das personalizações do SharePoint que têm um modelo de programação que pode ser acessado do Visual c# ou código do Visual Basic, como páginas de aplicativos, Web parts e fluxos de trabalho. |
+
 ## <a name="create-project-templates"></a>Criar modelos de projeto
  Quando você cria um modelo de projeto do SharePoint, há alguns arquivos que são sempre arquivos obrigatórios e opcionais que podem ser usados por determinados tipos de projetos. Normalmente, os projetos do SharePoint incluem pelo menos um item de projeto do SharePoint. No entanto, isso não é necessário. Por exemplo, você pode definir um modelo de projeto do SharePoint que se destina a ser usado apenas para implantar soluções do SharePoint criadas em outros projetos.
 

@@ -13,12 +13,12 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9e92050eab33b542cc5b8165aed63fde1e5fc7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 657f54b258d759d0d966f65ff40649e0fb2a0669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287684"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823522"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Visão Geral das Ferramentas do Visual Studio para Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Nesta seção, saiba mais sobre os recursos que as Ferramentas do Visual Studio 
 ## <a name="superior-debugging"></a>Depuração Superior  
  Conecte o poderoso depurador do Visual Studio ao jogo do Unity para depurar scripts do C# e DLLs mesmo se ele estiver em execução autônoma ou no editor do Unity. É possível usar todos os recursos de depuração esperados do Visual Studio.  
   
--   Pontos de interrupção, incluindo pontos de interrupção condicionais.  
+- Pontos de interrupção, incluindo pontos de interrupção condicionais.  
   
--   Avalie expressões complexas na janela Inspeção.  
+- Avalie expressões complexas na janela Inspeção.  
   
--   Inspecione e modifique o valor de variáveis e argumentos.  
+- Inspecione e modifique o valor de variáveis e argumentos.  
   
--   Analise objetos complexos e estruturas de dados.  
+- Analise objetos complexos e estruturas de dados.  
   
- É possível até mesmo depurar um jogo do Unity enquanto ele é executado em outro computador em sua rede.  
+  É possível até mesmo depurar um jogo do Unity enquanto ele é executado em outro computador em sua rede.  
   
 ## <a name="productivity"></a>Produtividade  
  Além da produtividade estabelecida pelo Visual Studio no registro e refatoração de código no C#, as Ferramentas do Visual Studio para Unity fornecem recursos extra para desenvolvedores do Unity.  

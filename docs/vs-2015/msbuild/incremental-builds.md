@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef689ede76b85a393fc56e452f1f5af4b059d0e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 187761ce813081877434c2a7c3a570059bc556ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251441"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812316"
 ---
 # <a name="incremental-builds"></a>Builds incrementais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,13 +50,13 @@ Os builds incrementais são builds que são otimizados para que os destinos que 
   
  Há três casos:  
   
--   O destino tem um atributo `Condition` que é avaliado como `false`. Nesse caso, o destino não é executado e não tem nenhum efeito no build.  
+- O destino tem um atributo `Condition` que é avaliado como `false`. Nesse caso, o destino não é executado e não tem nenhum efeito no build.  
   
--   O destino tem saídas desatualizadas e é executado para atualizá-las.  
+- O destino tem saídas desatualizadas e é executado para atualizá-las.  
   
--   O destino não tem saídas desatualizadas e é ignorado. O MSBuild avalia o destino e faz alterações em itens e propriedades como se o destino tivesse sido executado.  
+- O destino não tem saídas desatualizadas e é ignorado. O MSBuild avalia o destino e faz alterações em itens e propriedades como se o destino tivesse sido executado.  
   
- Para oferecer suporte à compilação incremental, as tarefas devem garantir que o valor de atributo `TaskParameter` de qualquer elemento `Output` seja igual a um parâmetro de entrada da tarefa. Estes são alguns exemplos:  
+  Para oferecer suporte à compilação incremental, as tarefas devem garantir que o valor de atributo `TaskParameter` de qualquer elemento `Output` seja igual a um parâmetro de entrada da tarefa. Estes são alguns exemplos:  
   
 ```  
 <CreateProperty Value="123">  

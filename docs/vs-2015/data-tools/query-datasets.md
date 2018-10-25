@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 21c509656ab32c1532bb9523d0bbc3d8cf94f0a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219291"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890563"
 ---
 # <a name="query-datasets"></a>Consultar conjuntos de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,13 +75,13 @@ Para procurar registros específicos em um conjunto de dados, use o método Find
   
  Os exemplos de código a seguir demonstram como navegar para cima e para relacionamentos em conjuntos de dados tipados. O uso de exemplos de código digitado <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) e gerado `FindBy` *PrimaryKey* (`FindByCustomerID`) métodos para localizar uma linha desejada e retornar os registros relacionados. Os exemplos de compilar e executam corretamente somente se você tiver:  
   
--   Uma instância de um conjunto de dados denominado `NorthwindDataSet` com um `Customers` tabela.  
+- Uma instância de um conjunto de dados denominado `NorthwindDataSet` com um `Customers` tabela.  
   
--   Um `Orders` tabela.  
+- Um `Orders` tabela.  
   
--   Uma relação nomeada `FK_Orders_Customers`relacionando as duas tabelas disponíveis ao escopo do seu código  
+- Uma relação nomeada `FK_Orders_Customers`relacionando as duas tabelas disponíveis ao escopo do seu código  
   
- Além disso, ambas as tabelas precisam ser preenchida com dados para todos os registros a serem retornados.  
+  Além disso, ambas as tabelas precisam ser preenchida com dados para todos os registros a serem retornados.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Para retornar os registros de um registro pai selecionado filho  
   

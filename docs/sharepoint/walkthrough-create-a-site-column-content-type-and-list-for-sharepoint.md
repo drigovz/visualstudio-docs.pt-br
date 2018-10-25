@@ -24,29 +24,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c0359af3d55f6efe26b2ae3bde7bc7726f7d333
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635649"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900118"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Passo a passo: Criar uma coluna de site, o tipo de conteúdo e a lista para o SharePoint
   Os procedimentos a seguir demonstram como criar colunas de site do SharePoint personalizadas — ou *campos*— bem como um tipo de conteúdo que usa as colunas de site. Ele também mostra como criar uma lista que usa o novo tipo de conteúdo.  
   
  Esta explicação passo a passo inclui as seguintes tarefas:  
   
--   [Criando colunas de Site personalizadas](#BKMK_CreatingCustSiteCols).  
+- [Criando colunas de Site personalizadas](#BKMK_CreatingCustSiteCols).  
   
--   [Criando um tipo de conteúdo personalizado](#BKMK_CreateCustContType).  
+- [Criando um tipo de conteúdo personalizado](#BKMK_CreateCustContType).  
   
--   [Criando uma lista](#BKMK_CreateList).  
+- [Criando uma lista](#BKMK_CreateList).  
   
--   [Criando uma lista](#BKMK_CreateList).  
+- [Criando uma lista](#BKMK_CreateList).  
   
--   [Testando o aplicativo](#BKMK_TestApp).  
+- [Testando o aplicativo](#BKMK_TestApp).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  

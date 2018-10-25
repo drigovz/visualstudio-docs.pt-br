@@ -26,12 +26,12 @@ caps.latest.revision: 55
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3d8578d81dd955cc9e7223692be1fe9f63d2bf00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 529f36b476158e7333cf03210dec94ec8bab4ef2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278666"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869152"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagramas de sequência UML: diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,15 +60,15 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 ##  <a name="Using"></a> Usando diagramas de sequência UML  
  Você pode usar diagramas de sequência para uma variedade de finalidades em diferentes níveis de detalhes do programa. Ocasiões típicos para desenhar um diagrama de sequência são da seguinte maneira:  
   
--   Se você tiver um diagrama de caso de uso que resume os usuários do seu sistema e suas metas, você pode desenhar diagramas de sequência para descrever como os principais componentes do sistema interagem para cumprir o objetivo de cada caso de uso. Para obter mais informações, consulte [diagramas de caso de uso UML: diretrizes](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Se você tiver um diagrama de caso de uso que resume os usuários do seu sistema e suas metas, você pode desenhar diagramas de sequência para descrever como os principais componentes do sistema interagem para cumprir o objetivo de cada caso de uso. Para obter mais informações, consulte [diagramas de caso de uso UML: diretrizes](../modeling/uml-use-case-diagrams-guidelines.md).  
   
--   Se você tiver identificado as mensagens que chegam em uma interface de um componente, você pode desenhar diagramas de sequência para descrever como as partes internas do componente interagem para alcançar o resultado necessário para cada mensagem recebida. Para obter mais informações, consulte [diagramas de componente UML: diretrizes](../modeling/uml-component-diagrams-guidelines.md).  
+- Se você tiver identificado as mensagens que chegam em uma interface de um componente, você pode desenhar diagramas de sequência para descrever como as partes internas do componente interagem para alcançar o resultado necessário para cada mensagem recebida. Para obter mais informações, consulte [diagramas de componente UML: diretrizes](../modeling/uml-component-diagrams-guidelines.md).  
   
- Desenhar diagramas de sequência tem vários benefícios:  
+  Desenhar diagramas de sequência tem vários benefícios:  
   
--   Você pode ver facilmente como as tarefas são distribuídas entre os componentes.  
+- Você pode ver facilmente como as tarefas são distribuídas entre os componentes.  
   
--   Você pode identificar padrões de interação que dificultam a atualizar o software.  
+- Você pode identificar padrões de interação que dificultam a atualizar o software.  
   
 ## <a name="relationship-to-other-diagrams"></a>Relação com outros diagramas  
  Você pode usar diagramas de sequência UML junto com outros diagramas de várias maneiras.  
@@ -90,17 +90,17 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
   
 #### <a name="to-create-a-sequence-diagram"></a>Para criar um diagrama de sequência  
   
-1.  Sobre o **arquitetura** menu, clique em **UML novo ou diagrama de camada**.  
+1. Sobre o **arquitetura** menu, clique em **UML novo ou diagrama de camada**.  
   
-2.  Sob **modelos**, clique em **diagrama de sequência UML**.  
+2. Sob **modelos**, clique em **diagrama de sequência UML**.  
   
-3.  Nomeie o diagrama.  
+3. Nomeie o diagrama.  
   
-4.  Na **adicionar ao projeto de modelagem**, selecione um projeto de modelagem existente na sua solução, ou **criar um novo projeto de modelagem**e, em seguida, clique em **Okey**.  
+4. Na **adicionar ao projeto de modelagem**, selecione um projeto de modelagem existente na sua solução, ou **criar um novo projeto de modelagem**e, em seguida, clique em **Okey**.  
   
-     Um novo diagrama de sequência é exibido com o **diagrama de sequência** caixa de ferramentas. A caixa de ferramentas contém os elementos necessários e conectores.  
+    Um novo diagrama de sequência é exibido com o **diagrama de sequência** caixa de ferramentas. A caixa de ferramentas contém os elementos necessários e conectores.  
   
- ![Partes de um diagrama de sequência](../modeling/media/uml-sequence.png "UML_Sequence")  
+   ![Partes de um diagrama de sequência](../modeling/media/uml-sequence.png "UML_Sequence")  
   
 #### <a name="to-draw-a-sequence-diagram"></a>Para desenhar um diagrama de sequência  
   
@@ -143,15 +143,15 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
   
 #### <a name="to-display-and-edit-the-signature-text-for-a-message"></a>Para exibir e editar o texto da assinatura para uma mensagem  
   
--   Na linha de vida de destino deve ser associada ou mapeada para tipos para o texto da assinatura para ser visível. Para realizar essa tarefa, execute uma das seguintes etapas:  
+- Na linha de vida de destino deve ser associada ou mapeada para tipos para o texto da assinatura para ser visível. Para realizar essa tarefa, execute uma das seguintes etapas:  
   
-    -   Clique com botão direito na linha de vida e, em seguida, escolha **criar classe**.  
+  - Clique com botão direito na linha de vida e, em seguida, escolha **criar classe**.  
   
-         -ou-  
+     -ou-  
   
-    -   Selecione a linha da vida, pressione **F4**e, em seguida, no **propriedades** janela, defina a **tipo** propriedade a um existente, digite ou especifique o nome para um novo tipo. O rótulo da mensagem com o botão direito e, em seguida, escolha **operação criar**.  
+  - Selecione a linha da vida, pressione **F4**e, em seguida, no **propriedades** janela, defina a **tipo** propriedade a um existente, digite ou especifique o nome para um novo tipo. O rótulo da mensagem com o botão direito e, em seguida, escolha **operação criar**.  
   
-     O texto da assinatura é exibida abaixo do rótulo de mensagem. Agora você pode editar o texto da assinatura. Para obter mais informações, consulte [Classes e as linhas de vida](#ClassesAndLifelines).  
+    O texto da assinatura é exibida abaixo do rótulo de mensagem. Agora você pode editar o texto da assinatura. Para obter mais informações, consulte [Classes e as linhas de vida](#ClassesAndLifelines).  
   
 #### <a name="to-improve-the-layout-of-a-sequence-diagram"></a>Para melhorar o layout de um diagrama de sequência  
   
@@ -227,21 +227,21 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
   
  Linhas de vida podem representar um desses níveis de detalhe:  
   
--   Objetos no código do programa, que existe ou você está desenvolvendo.  
+- Objetos no código do programa, que existe ou você está desenvolvendo.  
   
--   Componentes ou seus subcomponentes, geralmente a omissão fachadas proxies e outros mecanismos de connective.  
+- Componentes ou seus subcomponentes, geralmente a omissão fachadas proxies e outros mecanismos de connective.  
   
--   Seu sistema e atores externos  
+- Seu sistema e atores externos  
   
- As mensagens podem representar um desses níveis de detalhe:  
+  As mensagens podem representar um desses níveis de detalhe:  
   
--   Mensagens de software no código do programa, em uma API, ou interface da Web.  
+- Mensagens de software no código do programa, em uma API, ou interface da Web.  
   
--   As transações ou subpropriedades de transações, por exemplo, entre os usuários e o sistema, ou entre o código e o banco de dados.  
+- As transações ou subpropriedades de transações, por exemplo, entre os usuários e o sistema, ou entre o código e o banco de dados.  
   
--   Casos de uso - principais interações entre usuários e o sistema.  
+- Casos de uso - principais interações entre usuários e o sistema.  
   
- Se você estiver Explorando o código existente ou que descreve um novo design, geralmente é útil desenhar e discutir o menor detalhadas modos de exibição.  
+  Se você estiver Explorando o código existente ou que descreve um novo design, geralmente é útil desenhar e discutir o menor detalhadas modos de exibição.  
   
 ## <a name="describing-variations"></a>Descrevendo variações  
  O diagrama mostra uma única sequência de eventos típica. Se você quiser mostrar as possibilidades alternativas, como cenários de falha, você pode usar qualquer uma dessas opções:  
@@ -275,18 +275,18 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
   
 ##### <a name="to-create-a-lifeline-from-an-existing-type"></a>Para criar uma linha da vida de um tipo existente  
   
--   Arraste uma classe, componente ou interface do Gerenciador de modelos UML para um diagrama de sequência.  
+- Arraste uma classe, componente ou interface do Gerenciador de modelos UML para um diagrama de sequência.  
   
-     \- ou -  
+   \- ou -  
   
-    1.  Clique com botão direito a classe, componente ou interface em seu respectivo diagrama e, em seguida, clique em **criar linha de vida**.  
+  1. Clique com botão direito a classe, componente ou interface em seu respectivo diagrama e, em seguida, clique em **criar linha de vida**.  
   
-    2.  No **criar linha de vida** caixa de diálogo, selecione um diagrama de sequência e, em seguida, clique em **Okey**.  
+  2. No **criar linha de vida** caixa de diálogo, selecione um diagrama de sequência e, em seguida, clique em **Okey**.  
   
      Uma nova linha de vida de instância nomeada é exibida, cujo tipo é o tipo que você arrastou.  
   
-    > [!NOTE]
-    >  Você pode repetir essa ação quantas vezes desejar. Isso criará as linhas de vida com nomes de instância diferente.  
+  > [!NOTE]
+  >  Você pode repetir essa ação quantas vezes desejar. Isso criará as linhas de vida com nomes de instância diferente.  
   
 ##### <a name="to-change-the-type-of-a-lifeline"></a>Para alterar o tipo de uma linha da vida  
   

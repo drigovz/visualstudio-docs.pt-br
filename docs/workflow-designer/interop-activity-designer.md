@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1abd1dff1cb63f2e80e3c4b242699fbede2c3201
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 47ede5eebc4d7caf4fe1565c5d8b93b2524ed6ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849353"
 ---
 # <a name="interop-activity-designer"></a>Designer de atividade de Interoperabilidade
 
@@ -46,7 +46,7 @@ Clique o **clique para procurar** texto na **ActivityType** caixa, no **interope
 A tabela a seguir mostra o <xref:System.Activities.Statements.Interop> propriedades e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedade ou na superfície de Designer de fluxo de trabalho.
 
 |Nome da Propriedade|Necessária|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|O nome amigável de atividade de <xref:System.Activities.Statements.Interop> . O valor padrão é **interoperabilidade**. Embora o nome de exibição não é necessário, é recomendável fornecer um.|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|verdadeiro|Especifica o tipo de atividade contida pela atividade de <xref:System.Activities.Statements.Interop> . Este tipo especificado deve derivar de <xref:System.Workflow.ComponentModel.Activity>.|
 

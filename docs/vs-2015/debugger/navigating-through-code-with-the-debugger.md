@@ -26,12 +26,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d91d99b6eaa33f3aae84ecd3510bf08fe194f101
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f37674f1899ab710d4612eb2b9cd89764ce74634
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186147"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898142"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Navegar pelo Código com o Depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,25 +63,25 @@ Familiarize-se com comandos e atalhos para navegar pelo código no depurador e o
   
  Aqui estão alguns detalhes sobre o comportamento do **intervir**:  
   
--   Em uma chamada de função aninhada **intervir** etapas para a função aninhada mais profundamente. Se você usar **intervir** em uma chamada como `Func1(Func2())`, o depurador vai para a função `Func2`.  
+- Em uma chamada de função aninhada **intervir** etapas para a função aninhada mais profundamente. Se você usar **intervir** em uma chamada como `Func1(Func2())`, o depurador vai para a função `Func2`.  
   
--   O depurador avança realmente com as instruções de código em vez de linhas físicas. Por exemplo, uma cláusula `if` pode ser gravada em uma linha:  
+- O depurador avança realmente com as instruções de código em vez de linhas físicas. Por exemplo, uma cláusula `if` pode ser gravada em uma linha:  
   
-    ```csharp  
-    int x = 42;  
-    string s = "Not answered";  
-    if( int x == 42) s = "Answered!";  
-    ```  
+  ```csharp  
+  int x = 42;  
+  string s = "Not answered";  
+  if( int x == 42) s = "Answered!";  
+  ```  
   
-    ```vb  
-    Dim x As Integer = 42  
-    Dim s As String = "Not answered"  
-    If x = 42 Then s = "Answered!"  
-    ```  
+  ```vb  
+  Dim x As Integer = 42  
+  Dim s As String = "Not answered"  
+  If x = 42 Then s = "Answered!"  
+  ```  
   
-     Quando você entra nessa linha, o depurador trata a condição como uma etapa e a consequência como outra (nesse exemplo, a condição é verdadeira.)  
+   Quando você entra nessa linha, o depurador trata a condição como uma etapa e a consequência como outra (nesse exemplo, a condição é verdadeira.)  
   
- Para rastrear visualmente a pilha de chamadas ao entrar em funções, consulte [mapear métodos na pilha de chamadas ao depurar](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+  Para rastrear visualmente a pilha de chamadas ao entrar em funções, consulte [mapear métodos na pilha de chamadas ao depurar](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ##  <a name="BKMK_Step_over_Step_out"></a> Percorrer o código, ignorando a funções  
  Ao executar o código no depurador, muitas vezes você vai perceber que você não precisa ver o que acontece em uma função específica (não se preocupa-lo ou se você souber que ele funciona, como o código da biblioteca bem testado). Use estes comandos para ignorar por meio de código (as funções ainda forem executados, claro, mas o depurador ignora-los).  
@@ -146,20 +146,20 @@ Familiarize-se com comandos e atalhos para navegar pelo código no depurador e o
   
 > [!CAUTION]
 >  Definir a instrução a seguir faz com que o contador do programa pule diretamente para a nova localização. Use este comando com cuidado:  
->   
->  -   As instruções entre os pontos de execução antigos e novos não são executadas.  
-> -   Se você mover o ponto de execução para trás, as instruções intervenientes não serão desfeitas.  
-> -   Mover a instrução seguinte para outra função ou escopo normalmente resulta em danos à pilha de chamadas, causando um erro em tempo de execução ou uma exceção. Se você tentar mover a instrução seguinte para outro escopo, o depurador abrirá uma caixa de diálogo com um aviso e dará uma chance de cancelar a operação. No Visual Basic, você não pode mover a instrução seguinte para outro escopo ou função.  
-> -   No C++ nativo, se você tiver as verificações de tempo de execução ativadas, definir a instrução seguinte poderá fazer com que uma exceção seja gerada quando a execução chegar ao final do método.  
-> -   Quando editar e continuar está ativada, **definir próxima instrução** falhar caso você tenha feito edições que editar e continuar não pode remapear imediatamente. Isso pode ocorrer, por exemplo, se você editou o código dentro de um bloco catch. Quando isso acontece, você verá uma mensagem de erro que indica que a operação não é suportada.  
-  
+> 
+> - As instruções entre os pontos de execução antigos e novos não são executadas.  
+>   -   Se você mover o ponto de execução para trás, as instruções intervenientes não serão desfeitas.  
+>   -   Mover a instrução seguinte para outra função ou escopo normalmente resulta em danos à pilha de chamadas, causando um erro em tempo de execução ou uma exceção. Se você tentar mover a instrução seguinte para outro escopo, o depurador abrirá uma caixa de diálogo com um aviso e dará uma chance de cancelar a operação. No Visual Basic, você não pode mover a instrução seguinte para outro escopo ou função.  
+>   -   No C++ nativo, se você tiver as verificações de tempo de execução ativadas, definir a instrução seguinte poderá fazer com que uma exceção seja gerada quando a execução chegar ao final do método.  
+>   -   Quando editar e continuar está ativada, **definir próxima instrução** falhar caso você tenha feito edições que editar e continuar não pode remapear imediatamente. Isso pode ocorrer, por exemplo, se você editou o código dentro de um bloco catch. Quando isso acontece, você verá uma mensagem de erro que indica que a operação não é suportada.  
+> 
 > [!NOTE]
 >  No código gerenciado, você não pode mover a instrução seguinte nas seguintes circunstâncias:  
->   
->  -   A instrução a seguir é um método diferente do que a instrução atual.  
-> -   A depuração foi iniciada com a depuração Just-In-Time.  
-> -   Um desenrolamento de pilha de chamada está em andamento.  
-> -   Uma exceção System.StackOverflowException ou System.Threading.ThreadAbortException foi lançada.  
+> 
+> - A instrução a seguir é um método diferente do que a instrução atual.  
+>   -   A depuração foi iniciada com a depuração Just-In-Time.  
+>   -   Um desenrolamento de pilha de chamada está em andamento.  
+>   -   Uma exceção System.StackOverflowException ou System.Threading.ThreadAbortException foi lançada.  
   
  Não é possível definir a próxima instrução durante a execução ativa do seu aplicativo. Para definir a próxima instrução, o depurador deve estar no modo de interrupção.  
   

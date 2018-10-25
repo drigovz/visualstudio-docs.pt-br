@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b1ec46cf032928a090991577b83782e1fcfb513
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899273"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Passo a passo: Meu primeiro aplicativo da área de trabalho do WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -958,27 +958,27 @@ um name = "Introdução" ></a> neste passo a passo fornece uma introdução ao d
   
  Para obter mais informações sobre os modelos de arquitetura e programação do WPF, consulte os seguintes tópicos:  
   
--   [Arquitetura do WPF](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
+- [Arquitetura do WPF](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
   
--   [Visão geral do XAML](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
+- [Visão geral do XAML](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
   
--   [Visão geral das propriedades da dependência](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
+- [Visão geral das propriedades da dependência](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
   
--   [Sistema de layout](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
+- [Sistema de layout](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
   
--   [Estilos e modelos](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
+- [Estilos e modelos](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
   
- Para obter mais informações sobre como criar aplicativos, consulte os seguintes tópicos:  
+  Para obter mais informações sobre como criar aplicativos, consulte os seguintes tópicos:  
   
--   [Visão geral do desenvolvimento de aplicativos](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
+- [Visão geral do desenvolvimento de aplicativos](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
   
--   [Visão geral dos controles](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
+- [Visão geral dos controles](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
   
--   [Visão geral da vinculação de dados](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
+- [Visão geral da vinculação de dados](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
   
--   [Visão geral de mídia, animação e elementos gráficos do WPF](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
+- [Visão geral de mídia, animação e elementos gráficos do WPF](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
   
--   [Documentos no WPF](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
+- [Documentos no WPF](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
 ## <a name="see-also"></a>Consulte também  
  [Passo a passo: Criar um aplicativo de área de trabalho do WPF conectado a um serviço móvel do Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   

@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 18d87e523e9c0456f0f80add89c2ade32cf903fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3dedba320ce8a783b7d54df54a30b0759a6bd00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199804"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896218"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Como: Definir pontos de interrupção em fluxos de trabalho
 Quando você usa [!INCLUDE[wfd1](../includes/wfd1-md.md)], você pode definir pontos de interrupção nos fluxos de trabalho gráficos como você faria em Visual Basic ou no código em c. Como esperado, a execução de fluxo de trabalho que ele pare em cada ponto de interrupção esse definido.  
@@ -26,10 +26,10 @@ Quando você usa [!INCLUDE[wfd1](../includes/wfd1-md.md)], você pode definir po
   
 > [!NOTE]
 >  Os pontos de interrupção em fluxos de trabalho chamados não são suportados.  
-  
+> 
 > [!WARNING]
->  Certifique-se de que você selecione a opção **Habilitar Just My Code (somente gerenciado)** da **ferramentas**, **opções**, **depuração** menu antes de você depure. Se você tem duas sequências aninhadas dentro de outra sequência e você definir um ponto de interrupção na primeira sequência interna, pressionando **F11** não depurará na segunda sequência interna se o **Habilitar Just My Code (somente gerenciado)** opção não estiver selecionada.  
-  
+>  Certifique-se de que você selecione a opção **Habilitar Just My Code (somente gerenciado)** da **ferramentas**, **opções**, **depuração** menu antes de você depure. Se você tem duas sequências aninhadas dentro de outra sequência e você definir um ponto de interrupção na primeira sequência interna, pressionando **F11** não depurará na segunda sequência interna se o <strong>Habilitar Just My Code (somente gerenciado)</strong>opção não estiver selecionada.  
+> 
 > [!WARNING]
 >  Os pontos de interrupção em um fluxo de trabalho não obterão a ocorrência se o caminho completo para a propriedade de arquivo XAML não é preciso. O caminho completo do arquivo XAML não é preciso após movido o projeto/solução para outra pasta ou a outro computador. Selecione Ctrl+S para salvar e atualiza a propriedade de caminho completo.  
   

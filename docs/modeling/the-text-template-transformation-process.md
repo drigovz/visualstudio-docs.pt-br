@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c8dad80e4f9bc9d051663c2c224d7058028b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1ace7528eb1685765fe5c7ff11ce9b3c3234a941
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860219"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919150"
 ---
 # <a name="the-text-template-transformation-process"></a>O processo de transformação de modelo de texto
 O processo de transformação do modelo de texto utiliza um arquivo de modelo de texto como entrada e gera um novo arquivo de texto como saída. Por exemplo, você pode usar modelos de texto para gerar o código Visual Basic ou c#, ou você pode gerar um relatório HTML.
@@ -28,7 +28,7 @@ O processo de transformação do modelo de texto utiliza um arquivo de modelo de
 ## <a name="components"></a>Componentes
 
 |Componente|Descrição|Personalizável (Sim/não)|
-|---------------|-----------------|------------------------------|
+|-|-|-|
 |mecanismo|O componente de mecanismo controla o processo de transformação do modelo de texto|Nº|
 |Host|O host é a interface entre o mecanismo e o ambiente do usuário. O Visual Studio é um host do processo de transformação de texto.|Sim. Você pode escrever um host personalizado.|
 |Processadores de diretriz|Processadores de diretiva são classes que lidam com diretivas em modelos de texto. Você pode usar diretivas para fornecer dados a um modelo de texto de uma fonte de entrada.|Sim. Você pode escrever os processadores de diretriz personalizados|

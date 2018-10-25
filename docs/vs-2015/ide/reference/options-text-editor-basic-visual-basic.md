@@ -23,12 +23,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f49a6f55cdccc82214c20c4b489d83bbd0199d8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb8856f250810988b73058562402c8d1fe8c644f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227832"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902471"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Opções, Editor de Texto, Básico (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,28 +42,28 @@ A página de propriedades **Específico do VB**, na pasta **Básico** da pasta *
  **Reformatação automática de código**  
  O editor de texto reformata seu código conforme apropriado. Quando essa opção é selecionada, o editor de códigos:  
   
--   Alinhará seu código com a posição correta de guia  
+- Alinhará seu código com a posição correta de guia  
   
--   Redefinirá as maiúsculas e minúsculas de palavras-chave, variáveis e objetos para o formato correto  
+- Redefinirá as maiúsculas e minúsculas de palavras-chave, variáveis e objetos para o formato correto  
   
--   Adicionará um `Then` ausente a uma instrução `If...Then`  
+- Adicionará um `Then` ausente a uma instrução `If...Then`  
   
--   Adicionará parênteses a chamadas de função  
+- Adicionará parênteses a chamadas de função  
   
--   Adicionará aspas finais faltando a cadeias de caracteres  
+- Adicionará aspas finais faltando a cadeias de caracteres  
   
--   Reformatará notação exponencial  
+- Reformatará notação exponencial  
   
--   Reformatará datas  
+- Reformatará datas  
   
- **Habilitar modo de estrutura de tópicos**  
- Ao abrir um arquivo no editor de código, você pode exibir o documento no modo de estrutura de tópicos. Consulte [Estrutura de Tópicos](../../ide/outlining.md) para obter mais informações. Quando essa opção é selecionada, o recurso de estrutura de tópicos é ativado quando você abre um arquivo.  
+  **Habilitar modo de estrutura de tópicos**  
+  Ao abrir um arquivo no editor de código, você pode exibir o documento no modo de estrutura de tópicos. Consulte [Estrutura de Tópicos](../../ide/outlining.md) para obter mais informações. Quando essa opção é selecionada, o recurso de estrutura de tópicos é ativado quando você abre um arquivo.  
   
- **Inserção automática de membros Interface e MustOverride**  
- Quando você confirma uma instrução `Implements` ou uma instrução `Inherits` para uma classe, o editor de texto insere protótipos para os membros que devem ser implementados ou substituídos, respectivamente.  
+  **Inserção automática de membros Interface e MustOverride**  
+  Quando você confirma uma instrução `Implements` ou uma instrução `Inherits` para uma classe, o editor de texto insere protótipos para os membros que devem ser implementados ou substituídos, respectivamente.  
   
- **Mostrar separadores de linha do procedimento**  
- O editor de texto indica o escopo visual dos procedimentos. Uma linha é desenhada nos arquivos de origem .vb do seu projeto nos locais listados na tabela a seguir:  
+  **Mostrar separadores de linha do procedimento**  
+  O editor de texto indica o escopo visual dos procedimentos. Uma linha é desenhada nos arquivos de origem .vb do seu projeto nos locais listados na tabela a seguir:  
   
 |Local no arquivo de origem .vb|Exemplo de local da linha|  
 |---------------------------------|------------------------------|  

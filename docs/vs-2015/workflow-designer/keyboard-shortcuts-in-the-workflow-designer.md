@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 955e942f3e2215fa20a95b2e25c6abddc355fd6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267794"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895334"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Atalhos de teclado no Designer de Fluxo de Trabalho
 Qualquer funcionalidade central de [!INCLUDE[wfd1](../includes/wfd1-md.md)] pode ser acessada pelo teclado.  
@@ -49,29 +49,29 @@ Qualquer funcionalidade central de [!INCLUDE[wfd1](../includes/wfd1-md.md)] pode
 ### <a name="flowchart"></a>Fluxograma  
  A lista a seguir mostra os gestos usados para construir um fluxograma pelo teclado. Como no restante de [!INCLUDE[wfd2](../includes/wfd2-md.md)], as atividades são adicionadas à superfície de designer usando os atalhos globais da caixa de ferramentas fornecidos com [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
--   Para mover uma atividade, selecione a atividade e use as teclas de seta para reposicioná-la.  
+- Para mover uma atividade, selecione a atividade e use as teclas de seta para reposicioná-la.  
   
--   Para redimensionar um fluxograma, mover uma atividade após a borda atual do fluxograma usando as teclas de direção. O fluxograma é redimensionado automaticamente.  
+- Para redimensionar um fluxograma, mover uma atividade após a borda atual do fluxograma usando as teclas de direção. O fluxograma é redimensionado automaticamente.  
   
--   Para definir uma atividade como o nó inicial, use o **DataSet como StartNode** comando no menu de contexto.  
+- Para definir uma atividade como o nó inicial, use o **DataSet como StartNode** comando no menu de contexto.  
   
--   Para conectar atividades:  
+- Para conectar atividades:  
   
-    1.  Selecione a atividade de origem alternar a atividade.  
+  1.  Selecione a atividade de origem alternar a atividade.  
   
-    2.  Pressione CTRL+E, M quantas vezes forem necessárias mover o foco do teclado a atividade de destino.  
+  2.  Pressione CTRL+E, M quantas vezes forem necessárias mover o foco do teclado a atividade de destino.  
   
-    3.  Pressione CTRL+E, S para adicionar a atividade de destino a seleção.  
+  3.  Pressione CTRL+E, S para adicionar a atividade de destino a seleção.  
   
-    4.  Pressione CTRL+E, F- 2.0 para adicionar o conector de origem para o destino.  
+  4.  Pressione CTRL+E, F- 2.0 para adicionar o conector de origem para o destino.  
   
- Notas sobre como conectar atividades pelo teclado:  
+  Notas sobre como conectar atividades pelo teclado:  
   
--   Você pode fazer várias conexões ao mesmo tempo, adicionando mais atividades a seleção antes de pressionar CTRL + E, F. As conexões são feitas na ordem em que as atividades foram adicionadas à seleção.  
+- Você pode fazer várias conexões ao mesmo tempo, adicionando mais atividades a seleção antes de pressionar CTRL + E, F. As conexões são feitas na ordem em que as atividades foram adicionadas à seleção.  
   
--   Se um par de atividades não pode ser conectado, por exemplo se a atividade de origem já tiver uma conexão de saída, conexões entre outras atividades na seleção é feito ainda sempre que possível.  
+- Se um par de atividades não pode ser conectado, por exemplo se a atividade de origem já tiver uma conexão de saída, conexões entre outras atividades na seleção é feito ainda sempre que possível.  
   
--   Quando um **FlowDecision** está incluído na seleção e o **FlowDecision** não tem nenhum conector de saída, o conector é colocado no **verdadeiro** branch.  
+- Quando um **FlowDecision** está incluído na seleção e o **FlowDecision** não tem nenhum conector de saída, o conector é colocado no **verdadeiro** branch.  
   
 ### <a name="expression-editing"></a>Edição de expressão  
  Por padrão, os atalhos de teclado padrão para edição de texto de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] se aplicam no editor de expressão em [!INCLUDE[wfd2](../includes/wfd2-md.md)], com as seguintes restrições:  
