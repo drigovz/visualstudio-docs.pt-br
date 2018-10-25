@@ -21,12 +21,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63b5938131713c32f410f89c80a3efefa8b6c346
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a171613c4bd6f34b826869214d11d247c9c59a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268236"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923999"
 ---
 # <a name="net-memory-allocations-view"></a>Exibição de alocações da memória do .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ A exibição de Alocações lista os tipos criados durante a execução de cria�
   
  Os dados em uma linha de tipo exibem o número total de objetos do tipo criados na execução de criação de perfil e o número total de bytes alocados para os objetos desse tipo. Os valores inclusivos e exclusivos para um tipo são sempre os mesmos.  
   
--   Os valores inclusivos são para objetos criados nas instâncias da função e suas funções filho chamadas pela função pai na árvore de chamadas.  
+- Os valores inclusivos são para objetos criados nas instâncias da função e suas funções filho chamadas pela função pai na árvore de chamadas.  
   
--   Os valores exclusivos são para objetos criados diretamente pela função quando foram chamados pela função pai. Objetos criados nas funções filho não são incluídos.  
+- Os valores exclusivos são para objetos criados diretamente pela função quando foram chamados pela função pai. Objetos criados nas funções filho não são incluídos.  
   
- Os dados de uma função exibem o número de objetos criados e o número de bytes alocados para objetos do tipo pai.  
+  Os dados de uma função exibem o número de objetos criados e o número de bytes alocados para objetos do tipo pai.  
   
 ## <a name="highlighting-the-execution-hot-path"></a>Realce do afunilamento de execução  
  É possível encontrar o caminho de execução da árvore de chamadas que criou a maioria dos objetos do tipo pai.  

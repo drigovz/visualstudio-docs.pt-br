@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c0e1d4d5ff0aae952294ef3ee127a0d325a3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ba5c208e6354e0588f939074ac73a49c5b24b049
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859887"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929966"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizando o Gerenciador de Modelos
 Você pode alterar a aparência e comportamento do explorer para o seu designer de linguagem específica do domínio da seguinte maneira:
@@ -42,23 +42,23 @@ Você pode alterar a aparência e comportamento do explorer para o seu designer 
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>Para adicionar um ícone para um nó no explorer
 
-1.  Criar um [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solução usando o modelo de solução de fluxo de tarefa.
+1. Criar um [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solução usando o modelo de solução de fluxo de tarefa.
 
-2.  Colocar um arquivo. bmp que contém um ícone de 16 x 16 pixels na **Dsl\Resources** pasta na solução.
+2. Colocar um arquivo. bmp que contém um ícone de 16 x 16 pixels na **Dsl\Resources** pasta na solução.
 
-3.  No **Gerenciador de DSL**, clique com botão direito **comportamento do Gerenciador** e, em seguida, clique em **adicionar novas configurações do Gerenciador de nó**.
+3. No **Gerenciador de DSL**, clique com botão direito **comportamento do Gerenciador** e, em seguida, clique em **adicionar novas configurações do Gerenciador de nó**.
 
-     Uma **ExplorerNodeSettings** nó aparece sob o **configurações personalizadas de nó** nó.
+    Uma **ExplorerNodeSettings** nó aparece sob o **configurações personalizadas de nó** nó.
 
-4.  Selecione **ExplorerNodeSettings**e, em seguida, o **propriedades** janela, defina **classe** para **ator**.
+4. Selecione **ExplorerNodeSettings**e, em seguida, o **propriedades** janela, defina **classe** para **ator**.
 
-5.  Definir **ícone para exibição** ao caminho do arquivo de ícone.
+5. Definir **ícone para exibição** ao caminho do arquivo de ícone.
 
-6.  Transformar todos os modelos e, em seguida, compilar e executar a solução.
+6. Transformar todos os modelos e, em seguida, compilar e executar a solução.
 
-7.  No designer gerado, abra o diagrama de exemplo.
+7. No designer gerado, abra o diagrama de exemplo.
 
-     O Explorer deve mostrar três **ator** nós que têm seu ícone.
+    O Explorer deve mostrar três **ator** nós que têm seu ícone.
 
 > [!NOTE]
 >  Se você tiver definido um ícone de nó para qualquer elemento que é exibido no Gerenciador de gerado, todos os nós de explorer exibirá o ícone. Se nenhum ícone tiver sido definido, os nós exibirá o ícone padrão.

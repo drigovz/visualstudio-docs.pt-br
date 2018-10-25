@@ -14,12 +14,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: da21c3b8646ef69432259e4430b940824ad05dd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176534"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920658"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definir restrições de validação para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,24 +51,24 @@ Você pode definir restrições de validação que testam se o modelo de atende 
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Para criar uma extensão de validação em seu próprio VSIX  
   
-1.  No **novo projeto** caixa de diálogo **projetos de modelagem**, selecione **extensão de validação**.  
+1. No **novo projeto** caixa de diálogo **projetos de modelagem**, selecione **extensão de validação**.  
   
-2.  Abra o **. CS** de arquivos no novo projeto e modifique a classe para implementar a restrição de validação.  
+2. Abra o **. CS** de arquivos no novo projeto e modifique a classe para implementar a restrição de validação.  
   
-     Para obter mais informações, consulte [avaliando a restrição de validação](#Implementing).  
+    Para obter mais informações, consulte [avaliando a restrição de validação](#Implementing).  
   
-    > [!IMPORTANT]
-    >  Certifique-se de que seu **. CS** arquivos contêm o seguinte `using` instrução:  
-    >   
-    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
+   > [!IMPORTANT]
+   >  Certifique-se de que seu **. CS** arquivos contêm o seguinte `using` instrução:  
+   >   
+   >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
-3.  Você pode adicionar outras restrições definindo novos métodos. Para identificar um método como um método de validação, ele deve ser marcado com os atributos da mesma maneira como o método de validação inicial.  
+3. Você pode adicionar outras restrições definindo novos métodos. Para identificar um método como um método de validação, ele deve ser marcado com os atributos da mesma maneira como o método de validação inicial.  
   
-4.  Teste suas restrições pressionando F5. Para obter mais informações, consulte [execução de uma restrição de validação](#Executing).  
+4. Teste suas restrições pressionando F5. Para obter mais informações, consulte [execução de uma restrição de validação](#Executing).  
   
-5.  Instalar o comando de menu em outro computador copiando o arquivo **bin\\\*\\\*. VSIX** que é compilado pelo seu projeto. Para obter mais informações, consulte [instalando e desinstalando uma extensão](#Installing).  
+5. Instalar o comando de menu em outro computador copiando o arquivo **bin\\\*\\\*. VSIX** que é compilado pelo seu projeto. Para obter mais informações, consulte [instalando e desinstalando uma extensão](#Installing).  
   
- Quando você adiciona outros **. CS** arquivos, normalmente, você precisará do seguinte `using` instruções:  
+   Quando você adiciona outros **. CS** arquivos, normalmente, você precisará do seguinte `using` instruções:  
   
 ```csharp  
 using System.Collections.Generic;  
@@ -272,13 +272,13 @@ public void ValidateSomething
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
--   `"error string"` aparece no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lista de erros  
+- `"error string"` aparece no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lista de erros  
   
--   `errorCode` é uma cadeia de caracteres que deve ser um identificador exclusivo do erro  
+- `errorCode` é uma cadeia de caracteres que deve ser um identificador exclusivo do erro  
   
--   `elementsWithError` identifica os elementos no modelo. Quando o usuário clica duas vezes no relatório de erros, a forma que representa esse elemento será selecionada.  
+- `elementsWithError` identifica os elementos no modelo. Quando o usuário clica duas vezes no relatório de erros, a forma que representa esse elemento será selecionada.  
   
- `LogError(),` `LogWarning()` e `LogMessage()` colocar mensagens em diferentes seções da lista de erros.  
+  `LogError(),` `LogWarning()` e `LogMessage()` colocar mensagens em diferentes seções da lista de erros.  
   
 ## <a name="how-validation-methods-are-applied"></a>Como os métodos de validação são aplicados  
  A validação é aplicada a todos os elementos no modelo, inclusive relações e as partes dos elementos maiores, como atributos de uma classe e os parâmetros de uma operação.  
@@ -389,15 +389,15 @@ context.LogError(... , usecase);
   
 #### <a name="to-uninstall-an-extension"></a>Para desinstalar uma extensão  
   
-1.  No menu **Ferramentas**, escolha **Extensões e Atualizações**.  
+1. No menu **Ferramentas**, escolha **Extensões e Atualizações**.  
   
-2.  Expandir **extensões instaladas**.  
+2. Expandir **extensões instaladas**.  
   
-3.  Selecione a extensão e, em seguida, escolha **desinstalação**.  
+3. Selecione a extensão e, em seguida, escolha **desinstalação**.  
   
- Raramente, uma extensão defeituosa Falha ao carregar e cria um relatório na janela de erros, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo no seguinte local no qual *% LocalAppData %* é normalmente *DriveName*: \Users\\*denomedeusuário*\AppData\Local:  
+   Raramente, uma extensão defeituosa Falha ao carregar e cria um relatório na janela de erros, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo no seguinte local no qual *% LocalAppData %* é normalmente *DriveName*: \Users\\*denomedeusuário*\AppData\Local:  
   
- *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versão]**  
+   *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versão]**  
   
 ##  <a name="Example"></a> Exemplo  
  Este exemplo localiza loops na relação de dependência entre elementos.  

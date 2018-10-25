@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 25bb1d9d26c9f5f4b4447af46cb48b5492429136
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: c6f25aa6aa574f856bcce7601602ed2f195e785a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549320"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949533"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: implementar métodos de serialização corretamente
 
@@ -49,7 +49,7 @@ ms.locfileid: "45549320"
 
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
- Manipuladores de eventos de serialização usam um único parâmetro do tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, return `void`e ter `private` visibilidade.
+  Manipuladores de eventos de serialização usam um único parâmetro do tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, return `void`e ter `private` visibilidade.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
  Para corrigir uma violação dessa regra, corrija a assinatura, o tipo de retorno ou a visibilidade do manipulador de eventos de serialização.

@@ -15,29 +15,29 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab478d6a007081787d8b076e906f5094caea8b2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d0f89d02d0fcccc66ddd1f66b411f6b3f542cff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206915"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939261"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Adicionando a pesquisa a uma janela de ferramentas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando você cria ou atualiza uma janela de ferramentas em sua extensão, você pode adicionar a mesma funcionalidade de pesquisa que aparece em outro lugar no Visual Studio. Essa funcionalidade inclui os seguintes recursos:  
   
--   Uma caixa de pesquisa que está sempre localizada em uma área personalizada da barra de ferramentas.  
+- Uma caixa de pesquisa que está sempre localizada em uma área personalizada da barra de ferramentas.  
   
--   Um indicador de progresso é sobreposto na caixa de pesquisa em si.  
+- Um indicador de progresso é sobreposto na caixa de pesquisa em si.  
   
--   A capacidade de Mostrar resultados assim que você insere cada caractere (pesquisa instantânea) ou somente depois que você escolhe a tecla Enter (pesquisa sob demanda).  
+- A capacidade de Mostrar resultados assim que você insere cada caractere (pesquisa instantânea) ou somente depois que você escolhe a tecla Enter (pesquisa sob demanda).  
   
--   Uma lista que mostra os termos para os quais você pesquisou mais recentemente.  
+- Uma lista que mostra os termos para os quais você pesquisou mais recentemente.  
   
--   A capacidade de filtrar pesquisas por campos específicos ou aspectos dos destinos de pesquisa.  
+- A capacidade de filtrar pesquisas por campos específicos ou aspectos dos destinos de pesquisa.  
   
- Seguindo este passo a passo, você aprenderá a executar as seguintes tarefas:  
+  Seguindo este passo a passo, você aprenderá a executar as seguintes tarefas:  
   
 1.  Crie um projeto de VSPackage.  
   

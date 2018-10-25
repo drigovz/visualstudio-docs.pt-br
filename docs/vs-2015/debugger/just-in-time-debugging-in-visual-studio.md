@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 606f0129d49e8d5b8f07e6c8fac60fa5029a4828
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a2fdbbd98833ff43e07b17f605b6c3a105eb3efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294041"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940574"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Depuração Just-In-Time no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ As ações que você deve executar quando você vir o Visual Studio Just-in-Time
   
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Para habilitar ou desabilitar a depuração Just-In-Time  
   
-1.  Abra o Visual Studio. No menu **Ferramentas**, clique em **Opções**.  
+1. Abra o Visual Studio. No menu **Ferramentas**, clique em **Opções**.  
   
-2.  No **opções** caixa de diálogo, selecione o **depuração** pasta.  
+2. No **opções** caixa de diálogo, selecione o **depuração** pasta.  
   
-3.  No **Debugging** pasta, selecione a **Just-In-Time** página.  
+3. No **Debugging** pasta, selecione a **Just-In-Time** página.  
   
-4.  No **just-in-habilitar a depuração desses tipos de código** caixa, marque ou desmarque os tipos de programa relevantes: **gerenciado**, **nativo**, ou **Script**.  
+4. No **just-in-habilitar a depuração desses tipos de código** caixa, marque ou desmarque os tipos de programa relevantes: **gerenciado**, **nativo**, ou **Script**.  
   
-     Para desabilitar a depuração Just-In-Time depois que ela tiver sido habilitada, você deve executar com privilégios de administrador. A habilitação da depuração Just-In-Time define uma chave do Registro, sendo necessários privilégios de Administrador para alterar essa chave.  
+    Para desabilitar a depuração Just-In-Time depois que ela tiver sido habilitada, você deve executar com privilégios de administrador. A habilitação da depuração Just-In-Time define uma chave do Registro, sendo necessários privilégios de Administrador para alterar essa chave.  
   
-5.  Clique em **OK**.  
+5. Clique em **OK**.  
   
- A depuração Just-In-Time ainda poderá ser habilitada, mesmo que o Visual Studio não esteja mais instalado no seu computador. Quando o Visual Studio não estiver instalado, você não é possível desabilitar a depuração do Visual Studio Just-In-Time **opções** caixa de diálogo. Nesse caso, você poderá desabilitar a depuração Just-In-Time editando o Registro do Windows.  
+   A depuração Just-In-Time ainda poderá ser habilitada, mesmo que o Visual Studio não esteja mais instalado no seu computador. Quando o Visual Studio não estiver instalado, você não é possível desabilitar a depuração do Visual Studio Just-In-Time **opções** caixa de diálogo. Nesse caso, você poderá desabilitar a depuração Just-In-Time editando o Registro do Windows.  
   
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Para desabilitar a depuração Just-In-Time editando o Registro  
   
