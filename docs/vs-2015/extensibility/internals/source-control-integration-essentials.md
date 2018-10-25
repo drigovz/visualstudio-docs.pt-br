@@ -17,12 +17,12 @@ ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ecd87dfc4c2993023d0c882ce581280204f99d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f28781adb2679fb70e3d45d47507cd6e6aabd994
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811003"
 ---
 # <a name="source-control-integration-essentials"></a>Conceitos básicos da integração do controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,28 +34,28 @@ ms.locfileid: "49232344"
   
  Para implementar um plug-in para usar a API de plug-in de controle do código-fonte do controle de fonte, siga estas etapas:  
   
-1.  Criar uma DLL que implementa as funções especificadas na [Plug-ins de controle de origem](../../extensibility/source-control-plug-ins.md).  
+1. Criar uma DLL que implementa as funções especificadas na [Plug-ins de controle de origem](../../extensibility/source-control-plug-ins.md).  
   
-2.  Registrar a DLL, tornando as entradas de registro apropriadas, conforme descrito em [como: instalar um plug-in de controle do código-fonte](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
+2. Registrar a DLL, tornando as entradas de registro apropriadas, conforme descrito em [como: instalar um plug-in de controle do código-fonte](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
   
-3.  Criar um auxiliar de interface do usuário e exibi-la quando for solicitado pelo pacote de adaptador de controle de origem (o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] componente que manipula a funcionalidade de controle do código-fonte por meio do plug-ins de controle do código-fonte).  
+3. Criar um auxiliar de interface do usuário e exibi-la quando for solicitado pelo pacote de adaptador de controle de origem (o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] componente que manipula a funcionalidade de controle do código-fonte por meio do plug-ins de controle do código-fonte).  
   
- Para obter mais informações, consulte [criando um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md).  
+   Para obter mais informações, consulte [criando um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md).  
   
 ## <a name="source-control-vspackage"></a>VSPackage de controle do código-fonte  
  Um implementação de VSPackage do controle de origem permite que você desenvolva uma substituição personalizada para o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] da interface do usuário do controle de origem. Essa abordagem fornece controle total sobre a integração de controle do código-fonte, mas exige que você forneça os elementos de interface do usuário e implementam as interfaces de controle do código-fonte que outra forma seriam fornecidas sob a abordagem de plug-in.  
   
  Para implementar um VSPackage de controle do código-fonte, faça o seguinte:  
   
-1.  Criar e registrar seu próprio controle do código-fonte VSPackage, conforme descrito em [registro e seleção](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
+1. Criar e registrar seu próprio controle do código-fonte VSPackage, conforme descrito em [registro e seleção](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
   
-2.  Substitua o controle de fonte padrão da interface do usuário com sua interface do usuário personalizada. Ver [Interface do usuário personalizada](../../extensibility/internals/custom-user-interface-source-control-vspackage.md).  
+2. Substitua o controle de fonte padrão da interface do usuário com sua interface do usuário personalizada. Ver [Interface do usuário personalizada](../../extensibility/internals/custom-user-interface-source-control-vspackage.md).  
   
-3.  Especificar glifos a ser usada e manipular **Gerenciador de soluções** eventos de glifo. Ver [controle de glifo](../../extensibility/internals/glyph-control-source-control-vspackage.md).  
+3. Especificar glifos a ser usada e manipular **Gerenciador de soluções** eventos de glifo. Ver [controle de glifo](../../extensibility/internals/glyph-control-source-control-vspackage.md).  
   
-4.  Manipular eventos de consulta de editar e salvar consulta, conforme mostrado na [consulta Editar consulta salvar](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md).  
+4. Manipular eventos de consulta de editar e salvar consulta, conforme mostrado na [consulta Editar consulta salvar](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md).  
   
- Para obter mais informações, consulte [criando um VSPackage de controle do código-fonte](../../extensibility/internals/creating-a-source-control-vspackage.md).  
+   Para obter mais informações, consulte [criando um VSPackage de controle do código-fonte](../../extensibility/internals/creating-a-source-control-vspackage.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Visão geral](../../extensibility/internals/source-control-integration-overview.md)   

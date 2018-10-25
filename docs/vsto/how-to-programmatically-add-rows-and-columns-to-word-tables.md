@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 865a33e181d761665dbe2e44976f171a2b60d433
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: fca44524c3a7c7f10e855eaf62e8b77dc225ae01
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255883"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818673"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Como: adicionar linhas e colunas de forma programática a tabelas do Word
   Em uma tabela do Microsoft Office Word, as células são organizadas em linhas e colunas. Você pode usar o <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> método da <xref:Microsoft.Office.Interop.Word.Rows> objeto para adicionar linhas à tabela e o <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> método da <xref:Microsoft.Office.Interop.Word.Columns> objeto para adicionar colunas.  
@@ -32,15 +32,15 @@ ms.locfileid: "35255883"
 ## <a name="document-level-customization-examples"></a>Exemplos de personalização de nível de documento  
  Os exemplos de código a seguir podem ser usados em uma personalização no nível de documento. Para usar esses exemplos, executá-los pelo `ThisDocument` classe em seu projeto. Esses exemplos pressupõem que o documento associado à sua personalização já tem pelo menos uma tabela.  
   
-> [!IMPORTANT]  
+> [!IMPORTANT]
 >  Esse código é executado apenas em projetos que você cria usando qualquer um dos modelos de projeto a seguir:  
->   
-> -   Documento do Word 2013  
-> -   Modelo do Word 2013  
-> -   Documento do Word 2010  
-> -   Modelo do Word 2010  
->   
->  Se você quiser executar essa tarefa em qualquer outro tipo de projeto, você deve adicionar uma referência para o **Interop** assembly e, em seguida, você deve usar classes do assembly para adicionar linhas e colunas a tabelas. Para obter mais informações, consulte [como: aplicativos do Office de destino por meio de assemblies de interoperabilidade primários](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) e [referência de assembly de interoperabilidade primária do Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+> 
+> - Documento do Word 2013  
+> - Modelo do Word 2013  
+> - Documento do Word 2010  
+> - Modelo do Word 2010  
+> 
+>   Se você quiser executar essa tarefa em qualquer outro tipo de projeto, você deve adicionar uma referência para o **Interop** assembly e, em seguida, você deve usar classes do assembly para adicionar linhas e colunas a tabelas. Para obter mais informações, consulte [como: aplicativos do Office de destino por meio de assemblies de interoperabilidade primários](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) e [referência de assembly de interoperabilidade primária do Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
 ### <a name="to-add-a-row-to-a-table"></a>Para adicionar uma linha em uma tabela  
   

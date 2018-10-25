@@ -19,12 +19,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e17d1af4af50981b1c816d52444f3028162345c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5027c9d40d37aeaee6186662567a009fb051900e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237062"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812599"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Executar aplicativos do Windows Phone no emulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode 
   
  Quando você executa um aplicativo do Windows Phone pela primeira vez no Emulador do Windows Phone, podem ocorrer os seguintes eventos:  
   
-1.  O emulador é iniciado.  
+1. O emulador é iniciado.  
   
-2.  O emulador carrega o sistema operacional do Windows Phone.  
+2. O emulador carrega o sistema operacional do Windows Phone.  
   
-3.  O emulador exibe a tela inicial do Windows Phone.  
+3. O emulador exibe a tela inicial do Windows Phone.  
   
-4.  Seu aplicativo é implantado no emulador.  
+4. Seu aplicativo é implantado no emulador.  
   
-5.  Seu aplicativo é executado no emulador.  
+5. Seu aplicativo é executado no emulador.  
   
- Se o emulador selecionado já estiver em execução, seu aplicativo é implantado e iniciado no emulador em execução. Apenas uma instância de cada emulador pode executar de cada vez.  
+   Se o emulador selecionado já estiver em execução, seu aplicativo é implantado e iniciado no emulador em execução. Apenas uma instância de cada emulador pode executar de cada vez.  
   
 > [!TIP]
 >  Quando você testar seu aplicativo no emulador, deixe o emulador aberto entre as sessões de depuração, assim poderá reexecutar seu aplicativo rapidamente.  
@@ -75,13 +75,13 @@ O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode 
   
 ##### <a name="to-stop-a-running-app"></a>Para interromper a execução de um aplicativo  
   
--   Para interromper um aplicativo em execução, faça o seguinte:  
+- Para interromper um aplicativo em execução, faça o seguinte:  
   
-    -   No Visual Studio, sobre o **Debug** menu, clique em **parar depuração**, ou pressione Shift + F5.  
+  - No Visual Studio, sobre o **Debug** menu, clique em **parar depuração**, ou pressione Shift + F5.  
   
-    -   No emulador, pressione a **volta** botão para sair do aplicativo. Se a página ativa do aplicativo não foi página inicial do aplicativo, talvez seja necessário pressionar o **volta** botão mais de uma vez.  
+  - No emulador, pressione a **volta** botão para sair do aplicativo. Se a página ativa do aplicativo não foi página inicial do aplicativo, talvez seja necessário pressionar o **volta** botão mais de uma vez.  
   
-     O aplicativo sai e a tela Iniciar abre. Isso encerra a sessão de depuração atual.  
+    O aplicativo sai e a tela Iniciar abre. Isso encerra a sessão de depuração atual.  
   
 ##### <a name="to-restart-an-app-without-debugging"></a>Para reiniciar um aplicativo sem depuração  
   
@@ -122,21 +122,21 @@ O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode 
 ##  <a name="BKMK_buttons"></a> Use os botões de hardware simulados no emulador  
  Simule o uso dos botões de hardware de um telefone usando os botões de hardware simulados no lado direito da tela do emulador.  
   
--   Clique o **energia** botão para simular a exibição e desligando. Clique e segure para simular o desligamento do telefone.  
+- Clique o **energia** botão para simular a exibição e desligando. Clique e segure para simular o desligamento do telefone.  
   
--   Clique o **2&gt;aumentar** ou **Diminuir Volume** botão para simular a alteração de volume dos alto-falante do telefone para chamadas telefônicas e notificações.  
+- Clique o **2&gt;aumentar** ou **Diminuir Volume** botão para simular a alteração de volume dos alto-falante do telefone para chamadas telefônicas e notificações.  
   
--   O **câmera** botão inicia o aplicativo de câmera. Você pode simular tirar uma foto ou um vídeo usando os controles no aplicativo de câmera.  
+- O **câmera** botão inicia o aplicativo de câmera. Você pode simular tirar uma foto ou um vídeo usando os controles no aplicativo de câmera.  
   
- A captura de tela a seguir mostra os botões de hardware simulados.  
+  A captura de tela a seguir mostra os botões de hardware simulados.  
   
-1.  A imagem à esquerda exibe a tela Iniciar no emulador.  
+1. A imagem à esquerda exibe a tela Iniciar no emulador.  
   
-2.  A imagem do meio exibe o emulador após tocar o **energia** botão para desativar a exibição.  
+2. A imagem do meio exibe o emulador após tocar o **energia** botão para desativar a exibição.  
   
-3.  A imagem à direita exibe a tela do emulador após tocar o **Aumentar Volume** botão para aumentar o volume.  
+3. A imagem à direita exibe a tela do emulador após tocar o **Aumentar Volume** botão para aumentar o volume.  
   
- ![Botões no emulador do Windows Phone](../debugger/media/wp-emulator-buttons.png "WP_Emulator_buttons")  
+   ![Botões no emulador do Windows Phone](../debugger/media/wp-emulator-buttons.png "WP_Emulator_buttons")  
   
 ##  <a name="BKMK_tasks_kbd"></a> Usar o teclado do computador com o emulador  
  O emulador suporta mapeamento do teclado de hardware em seu computador de desenvolvimento para teclado em um Windows Phone. O comportamento das teclas é igual ao de um dispositivo Windows Phone.  
@@ -175,21 +175,21 @@ O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode 
   
  Por exemplo, se seu aplicativo requer vários contatos, você pode criar os registros de contato uma vez e salvar um instantâneo do emulador. Do contrário, você tem de recriar o registro de contato toda vez que iniciar o emulador.  
   
--   Clique em **novo ponto de verificação** para capturar um novo instantâneo do estado do emulador com os dados e configurações necessárias para testar seu aplicativo novamente mais tarde. O novo ponto de verificação é adicionado para o **pontos de verificação** lista.  
+- Clique em **novo ponto de verificação** para capturar um novo instantâneo do estado do emulador com os dados e configurações necessárias para testar seu aplicativo novamente mais tarde. O novo ponto de verificação é adicionado para o **pontos de verificação** lista.  
   
-     Você não pode capturar um ponto de verificação enquanto o depurador estiver anexado ao emulador.  
+   Você não pode capturar um ponto de verificação enquanto o depurador estiver anexado ao emulador.  
   
--   Selecione um ponto de verificação de **pontos de verificação** lista para exibir informações sobre o ponto de verificação.  
+- Selecione um ponto de verificação de **pontos de verificação** lista para exibir informações sobre o ponto de verificação.  
   
--   Selecione o botão de opção a **padrão** coluna para tornar um ponto de verificação salvo o ponto de verificação padrão para o emulador do Active Directory.  
+- Selecione o botão de opção a **padrão** coluna para tornar um ponto de verificação salvo o ponto de verificação padrão para o emulador do Active Directory.  
   
--   Clique em **restaurar** para reiniciar o sistema operacional do Windows Phone no emulador e carregar o instantâneo selecionado.  
+- Clique em **restaurar** para reiniciar o sistema operacional do Windows Phone no emulador e carregar o instantâneo selecionado.  
   
--   Clique em **excluir** para excluir um instantâneo que você não precisa mais.  
+- Clique em **excluir** para excluir um instantâneo que você não precisa mais.  
   
- A imagem original do emulador sempre aparece como o primeiro item a **pontos de verificação** lista e não pode ser alterada ou excluída. No entanto, você pode selecionar um instantâneo diferente como imagem padrão do emulador.  
+  A imagem original do emulador sempre aparece como o primeiro item a **pontos de verificação** lista e não pode ser alterada ou excluída. No entanto, você pode selecionar um instantâneo diferente como imagem padrão do emulador.  
   
- ![Guia de pontos de verificação do emulador do Windows Phone](../debugger/media/wp-emulator-checkpoints.png "WP_Emulator_checkpoints")  
+  ![Guia de pontos de verificação do emulador do Windows Phone](../debugger/media/wp-emulator-checkpoints.png "WP_Emulator_checkpoints")  
   
 ##  <a name="BKMK_tasks_shot"></a> Capturar capturas de tela no emulador  
  Você pode criar capturas de tela de seus aplicativos do Windows Phone usando a ferramenta de captura de tela a partir da janela Ferramentas adicionais. A ferramenta cria arquivos PNG que correspondem à resolução do emulador em execução.  
@@ -198,27 +198,27 @@ O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode 
   
 #### <a name="to-create-an-app-screenshot-by-using-the-built-in-emulator-screenshot-tool"></a>Para criar uma captura de tela do aplicativo usando a ferramenta de captura de tela interna do emulador  
   
-1.  Para otimizar a qualidade de suas capturas de tela, defina o nível de zoom do emulador para 100%. Quanto mais alto você definir o nível de zoom, melhor será a qualidade da captura de tela.  
+1. Para otimizar a qualidade de suas capturas de tela, defina o nível de zoom do emulador para 100%. Quanto mais alto você definir o nível de zoom, melhor será a qualidade da captura de tela.  
   
-2.  Inicie seu aplicativo no emulador.  
+2. Inicie seu aplicativo no emulador.  
   
-3.  Na barra de ferramentas do emulador, clique no botão expandir para abrir o **ferramentas adicionais** janela.  
+3. Na barra de ferramentas do emulador, clique no botão expandir para abrir o **ferramentas adicionais** janela.  
   
-4.  Clique o **captura de tela** guia.  
+4. Clique o **captura de tela** guia.  
   
-5.  Quando seu aplicativo estiver pronto, clique o **capturar** botão.  
+5. Quando seu aplicativo estiver pronto, clique o **capturar** botão.  
   
-     A captura de tela aparece no espaço de trabalho.  
+    A captura de tela aparece no workspace.  
   
-6.  Clique o **salve** para abrir o **Salvar como** caixa de diálogo.  
+6. Clique o **salve** para abrir o **Salvar como** caixa de diálogo.  
   
-7.  Escolha o local e **nome do arquivo** que você deseja e, em seguida, clique em **salvar**.  
+7. Escolha o local e **nome do arquivo** que você deseja e, em seguida, clique em **salvar**.  
   
-8.  Como opção, navegue para outras páginas em seu aplicativo para capturar telas adicionais.  
+8. Como opção, navegue para outras páginas em seu aplicativo para capturar telas adicionais.  
   
 9. Inicie o emulador com uma resolução de tela diferente para capturar as mesmas telas com uma resolução diferente. Se você executou seu aplicativo ao depurar, é necessário parar a depuração antes de poder executá-lo novamente em outro emulador.  
   
- Desabilite os contadores de taxa de quadros na tela do emulador antes de capturar telas que serão enviadas à Windows Phone Store.  
+   Desabilite os contadores de taxa de quadros na tela do emulador antes de capturar telas que serão enviadas à Windows Phone Store.  
   
 #### <a name="to-disable-frame-rate-counters-in-the-emulator-before-capturing-screenshots"></a>Para desabilitar os contadores de taxa de quadros no emulador antes de capturar telas  
   

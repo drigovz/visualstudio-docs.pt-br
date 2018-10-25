@@ -21,12 +21,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36403a4aa8fc7076c7daff8f88e5fe654cef0a51
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19184f0925c8c1ed4d2815a59c93281d7c04d0fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215846"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818050"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>Erro: verifique se o DNS está configurado corretamente no computador de destino
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
  Esse erro ocorre quando o computador de destino não pode resolver o nome do computador host do depurador do Visual Studio. Verifique as configurações DNS no computador de destino.  
   
--   Para obter informações sobre como exibir a configuração DNS no Windows 8.1, Vista, Windows 7, Windows Server 2012, Windows Server 2008 ou Windows Server 2008 R2, fazer isso: sobre o **iniciar** menu, escolha **ajuda e suporte** e, em seguida, pesquise **configurações de TCP/IP de alteração**.  
+- Para obter informações sobre como exibir a configuração DNS no Windows 8.1, Vista, Windows 7, Windows Server 2012, Windows Server 2008 ou Windows Server 2008 R2, fazer isso: sobre o **iniciar** menu, escolha **ajuda e suporte** e, em seguida, pesquise **configurações de TCP/IP de alteração**.  
   
--   Para obter mais informações, acesse [site do Microsoft Windows](http://go.microsoft.com/fwlink/?LinkId=252720) e pesquise **configurações de TCP/IP de alteração**.  
+- Para obter mais informações, acesse [site do Microsoft Windows](http://go.microsoft.com/fwlink/?LinkId=252720) e pesquise **configurações de TCP/IP de alteração**.  
   
- Se você não conseguir resolver o problema de DNS, tente executar o Depurador Remoto em uma conta diferente. Esse erro ocorre somente quando você está executando o Depurador Remoto sob a conta Serviço de Rede ou Sistema Local. Se você executar o Depurador Remoto em outra conta, ele poderá usar a autenticação NTLM, que não exige DNS. . Para o procedimento, consulte [erro: serviço de depurador remoto a do Visual Studio no computador de destino não pode se reconectar a este computador](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
+  Se você não conseguir resolver o problema de DNS, tente executar o Depurador Remoto em uma conta diferente. Esse erro ocorre somente quando você está executando o Depurador Remoto sob a conta Serviço de Rede ou Sistema Local. Se você executar o Depurador Remoto em outra conta, ele poderá usar a autenticação NTLM, que não exige DNS. . Para o procedimento, consulte [erro: serviço de depurador remoto a do Visual Studio no computador de destino não pode se reconectar a este computador](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
 
 
 

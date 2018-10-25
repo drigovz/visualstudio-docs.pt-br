@@ -23,12 +23,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce77ac0d7d2cf7cfa131742f40f89af692982506
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8ef4cf0c416a72b61b1e02f97cf28798ecb340
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189042"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812850"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Como mover-se no Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,20 +48,20 @@ O IDE (ambiente de desenvolvimento integrado) foi projetado para que você possa
   
 #### <a name="to-move-through-open-files-in-order-of-use"></a>Para percorrer os arquivos abertos por ordem de uso  
   
--   Para ativar os documentos abertos na ordem em que foram utilizados mais recentemente, pressione CTRL + SINAL DE SUBTRAÇÃO.  
+- Para ativar os documentos abertos na ordem em que foram utilizados mais recentemente, pressione CTRL + SINAL DE SUBTRAÇÃO.  
   
--   Para ativar os documentos abertos na ordem inversa, pressione CTRL + SHIFT + SINAL DE SUBTRAÇÃO.  
+- Para ativar os documentos abertos na ordem inversa, pressione CTRL + SHIFT + SINAL DE SUBTRAÇÃO.  
   
-    > [!NOTE]
-    >  As opções **Navegar para Trás** e **Navegar para Frente** também podem ser encontradas no menu **Exibir**.  
+  > [!NOTE]
+  >  As opções **Navegar para Trás** e **Navegar para Frente** também podem ser encontradas no menu **Exibir**.  
   
- Você também pode mudar para um arquivo específico aberto no editor, independentemente de quando o arquivo foi acessado pela última vez, usando o **Navegador de IDE**, a lista **Arquivos Ativos** no editor ou a caixa de diálogo **Windows**.  
+  Você também pode mudar para um arquivo específico aberto no editor, independentemente de quando o arquivo foi acessado pela última vez, usando o **Navegador de IDE**, a lista **Arquivos Ativos** no editor ou a caixa de diálogo **Windows**.  
   
- O **Navegador de IDE** funciona de modo muito semelhante ao gerenciador de aplicativos do Windows. Ele não está disponível nos menus e pode ser acessado somente usando teclas de atalho. Você pode usar qualquer um dos dois comandos para acessar o **Navegador de IDE** (mostrado abaixo) para percorrer os arquivos, dependendo da ordem na qual deseja percorrê-los.  
+  O **Navegador de IDE** funciona de modo muito semelhante ao gerenciador de aplicativos do Windows. Ele não está disponível nos menus e pode ser acessado somente usando teclas de atalho. Você pode usar qualquer um dos dois comandos para acessar o **Navegador de IDE** (mostrado abaixo) para percorrer os arquivos, dependendo da ordem na qual deseja percorrê-los.  
   
- ![Navegador de IDE do Visual Studio](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
+  ![Navegador de IDE do Visual Studio](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
   
- O `Window.PreviousDocumentWindowNav` permite ir para o arquivo acessado mais recentemente e `Window.NextDocumentWindowNav` permite mover-se na ordem inversa. Configurações Gerais de Desenvolvimento atribuem CTRL + SHIFT + TAB a `Window.PreviousDocumentWindowNav` e CTRL + TAB a `Window.NextDocumentWindowNav`.  
+  O `Window.PreviousDocumentWindowNav` permite ir para o arquivo acessado mais recentemente e `Window.NextDocumentWindowNav` permite mover-se na ordem inversa. Configurações Gerais de Desenvolvimento atribuem CTRL + SHIFT + TAB a `Window.PreviousDocumentWindowNav` e CTRL + TAB a `Window.NextDocumentWindowNav`.  
   
 > [!NOTE]
 >  Se a combinação de configurações que você está usando ainda não tiver uma combinação de teclas de atalho atribuída a esse comando, você poderá atribuir seu próprio comando personalizado usando a página **Teclado** da caixa de diálogo **Opções**. Para obter mais informações, consulte [Identificando e personalizando atalhos de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  

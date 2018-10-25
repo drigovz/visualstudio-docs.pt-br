@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e898620fe7b319b785e8e0d337cc04192b206bd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b4a3c0e60dc9211baf0b8568b3804b1df7f82765
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812160"
 ---
 # <a name="network-usage"></a>Uso de rede
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as 
 ## <a name="collecting-network-tool-data"></a>Coleta de dados da ferramenta de rede  
  Você deve executar a ferramenta de **rede** com um projeto aberto do Visual Studio no computador do Visual Studio.  
   
-1.  Abra o projeto no Visual Studio.  
+1. Abra o projeto no Visual Studio.  
   
-2.  No menu, clique em **Depurar/Criador de Perfil de Desempenho...**. Escolha Rede, **Iniciar**.  
+2. No menu, clique em **Depurar/Criador de Perfil de Desempenho...**. Escolha Rede, **Iniciar**.  
   
-3.  A ferramenta de rede começa coletando o tráfego HTTP do seu aplicativo.  
+3. A ferramenta de rede começa coletando o tráfego HTTP do seu aplicativo.  
   
-     Ao executar seu aplicativo, a exibição de resumo no painel esquerdo automaticamente exibe uma lista de operações HTTP capturadas. Selecione um item na exibição de resumo para obter mais informações no painel de detalhes no painel direito.  
+    Ao executar seu aplicativo, a exibição de resumo no painel esquerdo automaticamente exibe uma lista de operações HTTP capturadas. Selecione um item na exibição de resumo para obter mais informações no painel de detalhes no painel direito.  
   
-4.  Selecione **Parar** para fechar o aplicativo.  
+4. Selecione **Parar** para fechar o aplicativo.  
   
- A janela de relatório deve ser semelhante a:  
+   A janela de relatório deve ser semelhante a:  
   
- ![A janela de rede](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
+   ![A janela de rede](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Análise de dados  
  Você pode analisar o tráfego HTTP capturado enquanto o aplicativo é executado ou mesmo depois que o aplicativo foi fechado, selecionando qualquer uma das operações de rede exibidas no modo de exibição de resumo.  

@@ -25,12 +25,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8ece4edf9ee91446565f2790392bd6d478fd3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205511"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818322"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Guia de início rápido: depurar o JavaScript usando o console
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
  A janela Console do JavaScript permite que você:  
   
--   Envie objetos, valores e mensagens de seu aplicativo para a janela do console.  
+- Envie objetos, valores e mensagens de seu aplicativo para a janela do console.  
   
--   Exiba e modifique os valores das variáveis local e global no aplicativo em execução.  
+- Exiba e modifique os valores das variáveis local e global no aplicativo em execução.  
   
--   Exiba visualizadores de objetos.  
+- Exiba visualizadores de objetos.  
   
--   Execute o código JavaScript, que é executado no contexto do script atual.  
+- Execute o código JavaScript, que é executado no contexto do script atual.  
   
--   Exiba erros e exceções de JavaScript, além de exceções de DOM (Document Object Model) e do Windows Runtime .  
+- Exiba erros e exceções de JavaScript, além de exceções de DOM (Document Object Model) e do Windows Runtime .  
   
--   Realizar outras tarefas, como limpar a tela. Ver [comandos do JavaScript Console](../debugger/javascript-console-commands.md) para a lista completa de comandos.  
+- Realizar outras tarefas, como limpar a tela. Ver [comandos do JavaScript Console](../debugger/javascript-console-commands.md) para a lista completa de comandos.  
   
- Neste tópico:  
+  Neste tópico:  
   
--   [Depurar usando a janela do Console do JavaScript](#InteractiveConsole)  
+- [Depurar usando a janela do Console do JavaScript](#InteractiveConsole)  
   
--   [Modo de depuração e quebra interativo](#InteractiveDebuggingBreakMode)  
+- [Modo de depuração e quebra interativo](#InteractiveDebuggingBreakMode)  
   
--   [Modo de linha única e modo multilinha na janela do Console do JavaScript](#SinglelineMultilineMode)  
+- [Modo de linha única e modo multilinha na janela do Console do JavaScript](#SinglelineMultilineMode)  
   
--   [Alternar o contexto de execução do script](#Switching)  
+- [Alternar o contexto de execução do script](#Switching)  
   
 > [!TIP]
 >  Se a janela do Console do JavaScript estiver fechada, escolha **Debug**>**Windows** > **Console do JavaScript** para abri-la novamente. A janela só aparece durante uma sessão de depuração de script.  
