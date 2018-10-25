@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: faa6f205bfc4033ea4adb92f5d0d0a6718d4ac47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 91600821b3d68c04382028e469a4e1a54a5d191c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812734"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Como: adicionar validação a classes de entidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,46 +37,46 @@ ms.locfileid: "49286397"
   
 #### <a name="to-validate-data-during-a-columns-value-change"></a>Para validar dados durante o valor de uma coluna alterar  
   
-1.  Abra ou crie um novo arquivo LINQ to SQL Classes (**dbml** arquivo) no [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Clique duas vezes o **dbml** de arquivo no **Gerenciador de soluções**.)  
+1. Abra ou crie um novo arquivo LINQ to SQL Classes (**dbml** arquivo) no [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Clique duas vezes o **dbml** de arquivo no **Gerenciador de soluções**.)  
   
-2.  No Designer relacional de objetos, clique com botão direito a classe para o qual você deseja adicionar validação e, em seguida, clique em **Exibir código**.  
+2. No Designer relacional de objetos, clique com botão direito a classe para o qual você deseja adicionar validação e, em seguida, clique em **Exibir código**.  
   
-     O editor de códigos abre com uma classe parcial para a classe de entidade selecionada.  
+    O editor de códigos abre com uma classe parcial para a classe de entidade selecionada.  
   
-3.  Coloque o cursor na classe parcial.  
+3. Coloque o cursor na classe parcial.  
   
-4.  Para projetos do Visual Basic:  
+4. Para projetos do Visual Basic:  
   
-    1.  Expanda o **nome do método** lista.  
+   1. Expanda o **nome do método** lista.  
   
-    2.  Localize o **na**_COLUMNNAME_**Changing** método para a coluna que você deseja adicionar validação a.  
+   2. Localize o **na**_COLUMNNAME_**Changing** método para a coluna que você deseja adicionar validação a.  
   
-    3.  Uma `On` *COLUMNNAME* `Changing` método é adicionado à classe parcial.  
+   3. Uma `On` *COLUMNNAME* `Changing` método é adicionado à classe parcial.  
   
-    4.  Adicione o seguinte código para primeiro verificar que um valor está inserido e para garantir em que o valor inserido para a coluna é aceitável para seu aplicativo. O argumento de `value` contém o valor proposto, para adicionar a lógica para confirmar que é um valor válido:  
+   4. Adicione o seguinte código para primeiro verificar que um valor está inserido e para garantir em que o valor inserido para a coluna é aceitável para seu aplicativo. O argumento de `value` contém o valor proposto, para adicionar a lógica para confirmar que é um valor válido:  
   
-        ```vb  
-        If value.HasValue Then  
-            ' Add code to ensure that the value is acceptable.  
-            ' If value < 1 Then  
-            '    Throw New Exception("Invalid data!")  
-            ' End If  
-        End If  
-        ```  
+      ```vb  
+      If value.HasValue Then  
+          ' Add code to ensure that the value is acceptable.  
+          ' If value < 1 Then  
+          '    Throw New Exception("Invalid data!")  
+          ' End If  
+      End If  
+      ```  
   
-     Para projetos C#:  
+      Para projetos C#:  
   
-    1.  Porque os projetos C# não gerenciar automaticamente os manipuladores de eventos, você pode usar o IntelliSense para criar métodos parciais de alteração.  
+   5. Porque os projetos C# não gerenciar automaticamente os manipuladores de eventos, você pode usar o IntelliSense para criar métodos parciais de alteração.  
   
-         Tipo `partial` e um espaço para acessar a lista de métodos parciais disponíveis. Clique no método de alteração para a coluna que você deseja adicionar validação para. O seguinte código lembra o código que é gerado quando você seleciona um método parcial de alterar:  
+       Tipo `partial` e um espaço para acessar a lista de métodos parciais disponíveis. Clique no método de alteração para a coluna que você deseja adicionar validação para. O seguinte código lembra o código que é gerado quando você seleciona um método parcial de alterar:  
   
-        ```csharp  
-        partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)  
-            {  
-               throw new System.NotImplementedException();  
-            }  
+      ```csharp  
+      partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)  
+          {  
+             throw new System.NotImplementedException();  
+          }  
   
-        ```  
+      ```  
   
 ## <a name="adding-validation-for-updates-to-an-entity-class"></a>Adicionar validação para atualizações para uma classe de entidade  
  Além de verificar valores alterações pendentes, você também pode validar dados quando é feita uma tentativa de atualizar uma classe completa de entidade. A validação durante uma atualização tentada permite que você comparar valores em várias colunas se as regras comerciais exigem esta. O procedimento a seguir mostra como validar quando é feita uma tentativa de atualizar uma classe completa de entidade.  
@@ -86,47 +86,47 @@ ms.locfileid: "49286397"
   
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Para validar dados durante uma atualização para uma entidade  
   
-1.  Abra ou crie um novo arquivo LINQ to SQL Classes (**dbml** arquivo) no [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Clique duas vezes o **dbml** de arquivo no **Gerenciador de soluções**.)  
+1. Abra ou crie um novo arquivo LINQ to SQL Classes (**dbml** arquivo) no [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Clique duas vezes o **dbml** de arquivo no **Gerenciador de soluções**.)  
   
-2.  Uma área vazia no Designer relacional de objetos com o botão direito e clique em **Exibir código**.  
+2. Uma área vazia no Designer relacional de objetos com o botão direito e clique em **Exibir código**.  
   
-     O editor de códigos abre com uma classe parcial para `DataContext`.  
+    O editor de códigos abre com uma classe parcial para `DataContext`.  
   
-3.  Coloque o cursor na classe parcial para `DataContext`.  
+3. Coloque o cursor na classe parcial para `DataContext`.  
   
-4.  Para projetos do Visual Basic:  
+4. Para projetos do Visual Basic:  
   
-    1.  Expanda o **nome do método** lista.  
+   1. Expanda o **nome do método** lista.  
   
-    2.  Clique em **atualização**_ENTITYCLASSNAME_.  
+   2. Clique em **atualização**_ENTITYCLASSNAME_.  
   
-    3.  Uma `Update` *ENTITYCLASSNAME* método é adicionado à classe parcial.  
+   3. Uma `Update` *ENTITYCLASSNAME* método é adicionado à classe parcial.  
   
-    4.  Acessar valores de colunas individuais usando o argumento de `instance` , conforme mostrado no código o seguir:  
+   4. Acessar valores de colunas individuais usando o argumento de `instance` , conforme mostrado no código o seguir:  
   
-        ```vb  
-        If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then  
-            Dim ErrorMessage As String = "Invalid data!"  
-            Throw New Exception(ErrorMessage)  
-        End If  
-        ```  
+      ```vb  
+      If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then  
+          Dim ErrorMessage As String = "Invalid data!"  
+          Throw New Exception(ErrorMessage)  
+      End If  
+      ```  
   
-     Para projetos C#:  
+      Para projetos C#:  
   
-    1.  Porque os projetos c# não gerenciar automaticamente os manipuladores de eventos, você pode usar o IntelliSense para criar parcial `Update` *CLASSNAME* método.  
+   5. Porque os projetos c# não gerenciar automaticamente os manipuladores de eventos, você pode usar o IntelliSense para criar parcial `Update` *CLASSNAME* método.  
   
-    2.  Tipo `partial` e um espaço para acessar a lista de métodos parciais disponíveis. Clique no método de atualização para a classe que você deseja adicionar validação para. O código a seguir é semelhante ao código que é gerado quando você seleciona uma `Update` *CLASSNAME* método parcial:  
+   6. Tipo `partial` e um espaço para acessar a lista de métodos parciais disponíveis. Clique no método de atualização para a classe que você deseja adicionar validação para. O código a seguir é semelhante ao código que é gerado quando você seleciona uma `Update` *CLASSNAME* método parcial:  
   
-        ```csharp  
-        partial void UpdateCLASSNAME(CLASSNAME instance)  
-        {  
-            if ((instance.COLUMNNAME == x) && (instance.COLUMNNAME = y))  
-            {  
-                string ErrorMessage = "Invalid data!";  
-                throw new System.Exception(ErrorMessage);  
-            }  
-        }  
-        ```  
+      ```csharp  
+      partial void UpdateCLASSNAME(CLASSNAME instance)  
+      {  
+          if ((instance.COLUMNNAME == x) && (instance.COLUMNNAME = y))  
+          {  
+              string ErrorMessage = "Invalid data!";  
+              throw new System.Exception(ErrorMessage);  
+          }  
+      }  
+      ```  
   
 ## <a name="see-also"></a>Consulte também  
  [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

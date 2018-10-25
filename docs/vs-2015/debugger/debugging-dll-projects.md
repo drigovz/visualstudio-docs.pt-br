@@ -24,59 +24,59 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb1d8cf355aee56797b5c814341255cb47cf4f9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fff87db239d023dbb5aa8f13757f7af42a969dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814553"
 ---
 # <a name="debugging-dll-projects"></a>Depurando projetos de DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Os modelos a seguir criam DLLs:  
   
--   Biblioteca de Classes (C++, C# e Visual Basic)  
+- Biblioteca de Classes (C++, C# e Visual Basic)  
   
--   (C++, C# e Visual Basic): Biblioteca de Controle Windows Forms  
+- (C++, C# e Visual Basic): Biblioteca de Controle Windows Forms  
   
-     A depuração de uma Biblioteca de Controles do Windows é semelhante à depuração de um projeto de Biblioteca de Classe. Na maioria dos casos, você chamará o controle do Windows de outro projeto. Ao depurar o projeto de chamada, você poderá entrar no código do controle do Windows, definir pontos de interrupção e executar outras operações de depuração. Para obter mais informações, consulte [controles dos Windows Forms](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
+   A depuração de uma Biblioteca de Controles do Windows é semelhante à depuração de um projeto de Biblioteca de Classe. Na maioria dos casos, você chamará o controle do Windows de outro projeto. Ao depurar o projeto de chamada, você poderá entrar no código do controle do Windows, definir pontos de interrupção e executar outras operações de depuração. Para obter mais informações, consulte [controles dos Windows Forms](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
   
--   (C# e Visual Basic): Biblioteca de Controles da Web  
+- (C# e Visual Basic): Biblioteca de Controles da Web  
   
-     Para obter mais informações, consulte [biblioteca de controle da Web (código gerenciado)](../debugger/web-control-library-managed-code.md).  
+   Para obter mais informações, consulte [biblioteca de controle da Web (código gerenciado)](../debugger/web-control-library-managed-code.md).  
   
--   (C++): Controle ActiveX do MFC e Controle Activex de Dispositivo Inteligente do MFC  
+- (C++): Controle ActiveX do MFC e Controle Activex de Dispositivo Inteligente do MFC  
   
-     Os controles ActiveX são controles que podem ser baixados pela Internet em um computador de cliente, e exibidos e ativados em páginas da Web.  
+   Os controles ActiveX são controles que podem ser baixados pela Internet em um computador de cliente, e exibidos e ativados em páginas da Web.  
   
-     A depuração dos controles do ActiveX é semelhante à depuração de outros tipos de controles porque não podem ser executadas como autônomas, mas devem ser inseridas em uma página da Web HTML. Para obter mais informações, consulte [como: depurar um controle ActiveX](../debugger/how-to-debug-an-activex-control.md).  
+   A depuração dos controles do ActiveX é semelhante à depuração de outros tipos de controles porque não podem ser executadas como autônomas, mas devem ser inseridas em uma página da Web HTML. Para obter mais informações, consulte [como: depurar um controle ActiveX](../debugger/how-to-debug-an-activex-control.md).  
   
--   (C++): DLL de Dispositivo Inteligente do MFC  
+- (C++): DLL de Dispositivo Inteligente do MFC  
   
-     Para obter mais informações, consulte [técnicas de depuração MFC](../debugger/mfc-debugging-techniques.md).  
+   Para obter mais informações, consulte [técnicas de depuração MFC](../debugger/mfc-debugging-techniques.md).  
   
- Esta seção também contém informações sobre os seguintes tópicos:  
+  Esta seção também contém informações sobre os seguintes tópicos:  
   
--   [Como depurar de um projeto de DLL](../debugger/how-to-debug-from-a-dll-project.md)  
+- [Como depurar de um projeto de DLL](../debugger/how-to-debug-from-a-dll-project.md)  
   
--   [Como depurar no modo misto](../debugger/how-to-debug-in-mixed-mode.md)  
+- [Como depurar no modo misto](../debugger/how-to-debug-in-mixed-mode.md)  
   
- Este tópico contém as seções a seguir, que fornecem considerações sobre como se preparar para depurar bibliotecas de classe:  
+  Este tópico contém as seções a seguir, que fornecem considerações sobre como se preparar para depurar bibliotecas de classe:  
   
--   [Criação de uma versão de depuração](#vxtskdebuggingdllprojectsbuildingadebugversion)  
+- [Criação de uma versão de depuração](#vxtskdebuggingdllprojectsbuildingadebugversion)  
   
--   [Depuração de modo misto](#vxtskdebuggingdllprojectsmixedmodedebugging)  
+- [Depuração de modo misto](#vxtskdebuggingdllprojectsmixedmodedebugging)  
   
--   [Alterando as configurações padrão](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
+- [Alterando as configurações padrão](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
   
--   [Maneiras de depurar a DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
+- [Maneiras de depurar a DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
   
--   [O aplicativo de chamada](#vxtskdebuggingdllprojectsthecallingapplication)  
+- [O aplicativo de chamada](#vxtskdebuggingdllprojectsthecallingapplication)  
   
--   [Controles em uma página da Web](#vxtskdebuggingdllprojectscontrolsonawebpage)  
+- [Controles em uma página da Web](#vxtskdebuggingdllprojectscontrolsonawebpage)  
   
--   [A janela imediata](#vxtskdebuggingdllprojectstheimmediatewindow)  
+- [A janela imediata](#vxtskdebuggingdllprojectstheimmediatewindow)  
   
 ##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Criação de uma versão de depuração  
  Não importa como você inicia a depuração, certifique-se de compilar a versão de Depuração da DLL primeiro e verifique se a versão de Depuração está no local onde o aplicativo espera encontrá-la. Isso pode parecer óbvio, mas se você esquecer desta etapa, o aplicativo poderá encontrar uma versão diferente da DLL e carregá-la. O programa continuará a ser executado enquanto você se pergunta o porquê do ponto de interrupção nunca ter sido atingido. Quando você estiver depurando, você pode verificar quais DLLs seu programa carregou abrindo o depurador **módulos** janela. O **módulos** janela lista cada DLL ou EXE carregado no processo que você está depurando. Para obter mais informações, consulte [como: usar a janela módulos](../debugger/how-to-use-the-modules-window.md).  
@@ -103,15 +103,15 @@ Os modelos a seguir criam DLLs:
 ###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Depurar o aplicativo de chamada  
  Para depurar uma DLL, comece depurando o aplicativo de chamada, normalmente um EXE ou um aplicativo Web. Há várias maneiras de depurá-lo.  
   
--   Se você tiver um projeto para o aplicativo de chamada, você pode abrir o projeto e iniciar a execução do **depurar** menu. Para obter mais informações, consulte [como: Iniciar execução](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
+- Se você tiver um projeto para o aplicativo de chamada, você pode abrir o projeto e iniciar a execução do **depurar** menu. Para obter mais informações, consulte [como: Iniciar execução](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
   
--   Se o aplicativo de chamada for um programa existente já implantado em um teste ou em um computador de produção e já estiver em execução, você poderá conectar-se a ele. Use este método se a DLL for um controle hospedado pelo Internet Explorer ou um controle em uma página da Web. Para obter mais informações, consulte [como: anexar a um processo em execução](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
+- Se o aplicativo de chamada for um programa existente já implantado em um teste ou em um computador de produção e já estiver em execução, você poderá conectar-se a ele. Use este método se a DLL for um controle hospedado pelo Internet Explorer ou um controle em uma página da Web. Para obter mais informações, consulte [como: anexar a um processo em execução](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
   
--   Você pode depurá-lo no projeto da DLL. Para obter mais informações, consulte [como: depurar de um projeto de DLL](../debugger/how-to-debug-from-a-dll-project.md).  
+- Você pode depurá-lo no projeto da DLL. Para obter mais informações, consulte [como: depurar de um projeto de DLL](../debugger/how-to-debug-from-a-dll-project.md).  
   
--   Você pode depurá-lo partir o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **imediato** janela. Nesse caso, o **imediato** janela desempenha a função do aplicativo.  
+- Você pode depurá-lo partir o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **imediato** janela. Nesse caso, o **imediato** janela desempenha a função do aplicativo.  
   
- Antes de começar a depurar o aplicativo de chamada, convém definir um ponto de interrupção na biblioteca de classes. Para obter mais informações, consulte [pontos de interrupção e Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Quando o ponto de interrupção for atingido, você poderá percorrer o código, observando a ação em cada linha até isolar o problema. Para obter mais informações, consulte [visão geral de revisão de código](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
+  Antes de começar a depurar o aplicativo de chamada, convém definir um ponto de interrupção na biblioteca de classes. Para obter mais informações, consulte [pontos de interrupção e Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Quando o ponto de interrupção for atingido, você poderá percorrer o código, observando a ação em cada linha até isolar o problema. Para obter mais informações, consulte [visão geral de revisão de código](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
   
 ###  <a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Controles em uma página da Web  
  Para depurar um controle de página de Web, crie uma página do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que o insira caso ainda não exista uma página do tipo. Em seguida, coloque os pontos de interrupção no código da página da Web, bem como no código de controle. Você chama a página da Web do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
