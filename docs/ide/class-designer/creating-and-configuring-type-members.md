@@ -31,19 +31,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b5e60da7ea3058f192ad59dcc57a493115a751b
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957691"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938793"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Criar e configurar membros de tipo no Designer de Classe
 
 É possível adicionar esses membros aos tipos em um diagrama de classe e configurá-los na Janela **Detalhes da Classe**:
 
 |**Tipo**|**Membros que pode conter**|
-|--------------|--------------------------------|
+|--------------| - |
 |Classe|método, propriedade (para C# e Visual Basic), campo, evento (para C# e Visual Basic), construtor (método), destruidor (método), constante|
 |Enum|membro|
 |Interface|método, propriedade, evento (para C# e Visual Basic)|
@@ -58,7 +58,7 @@ ms.locfileid: "33957691"
 ## <a name="common-tasks"></a>Tarefas comuns
 
 |Tarefa|Conteúdo de suporte|
-|----------|------------------------|
+|----------| - |
 |**Introdução:** antes de criar e configurar membros de tipo, você precisa abrir a janela **Detalhes da Classe**.|- [Abrir a janela Detalhes da Classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Observações sobre uso de detalhes da classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Exibição de informações somente leitura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
 |**Criar e modificar membros de tipo:** você pode criar membros, modificar membros e adicionar parâmetros a um método usando a janela **Detalhes da Classe**.|- [Criar membros](creating-and-configuring-type-members.md#create-members)<br />- [Modificar membros de tipo](creating-and-configuring-type-members.md#modify-type-members)<br />- [Adicionar parâmetros a métodos](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 

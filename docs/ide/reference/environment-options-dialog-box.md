@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 959be2a2f80f215aa3d72a36b8b989e6fa219c3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 45a7cef09937181fbf6c721b8c8eca73b6351742
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930538"
 ---
 # <a name="environment-options-dialog-box"></a>Caixa de diálogo Opções do Ambiente
 Você pode usar as páginas da pasta **Ambiente** na caixa de diálogo **Opções** para definir como determinados elementos do IDE (ambiente de desenvolvimento integrado) são exibidos e se comportam. Na barra de menus, é possível acessar as páginas Ambiente escolhendo **Ferramentas**, **Opções** e selecionando **Ambiente**.
@@ -28,7 +28,7 @@ Você pode usar as páginas da pasta **Ambiente** na caixa de diálogo **Opçõe
 
 
 |Para obter informações como|Consulte|
-|----------------------------------|---------|
+| - |---------|
 |Personalizar a aparência e o comportamento dos menus, das janelas e de outros elementos do IDE.|[Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)|
 |Alterar as configurações para salvamento e restauração automáticos de arquivos.|[Caixa de diálogo Recuperação Automática, Ambiente, Opções](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Estabelecer configurações de gerenciamento e exibição de documento que incluem o comportamento de arquivos diversos.|[Caixa de diálogo Documentos, Ambiente, Opções](../../ide/reference/documents-environment-options-dialog-box.md)|

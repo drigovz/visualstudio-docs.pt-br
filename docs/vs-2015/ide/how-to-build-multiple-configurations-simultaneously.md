@@ -14,23 +14,23 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e34be1203ba97c23302bd28dcf7578ba6cffd2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa16c4c02f92f71d3288896d56b94a6d570c7dd4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205576"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930408"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>Como compilar várias configurações simultaneamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 É possível compilar a maioria dos tipos de projetos com várias, ou até mesmo todas, as configurações de build ao mesmo tempo usando a caixa de diálogo **Build em Lotes**. No entanto, não é possível compilar os seguintes tipos de projetos em várias configurações de build ao mesmo tempo:  
   
-1.  Aplicativos [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] criados para Windows usando JavaScript.  
+1. Aplicativos [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] criados para Windows usando JavaScript.  
   
-2.  Todos os projetos do Visual Basic.  
+2. Todos os projetos do Visual Basic.  
   
- Para obter mais informações sobre configurações de build, consulte [Noções básicas sobre configurações de build](../ide/understanding-build-configurations.md).  
+   Para obter mais informações sobre configurações de build, consulte [Noções básicas sobre configurações de build](../ide/understanding-build-configurations.md).  
   
 ### <a name="to-build-a-project-in-multiple-build-configurations"></a>Para compilar um projeto em várias configurações de build  
   

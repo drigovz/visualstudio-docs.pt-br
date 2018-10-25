@@ -18,25 +18,25 @@ ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 105a4ed0f30991fe656c7f257ca766dd06c150a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b00f2ae82a2fd8afb62dcd42237bd313c0355ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941705"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Comandos e menus que usam assemblies de interoperabilidade
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Um VSPackage que implementa os comandos de menu e barra de ferramentas usando assemblies de interoperabilidade deve:  
   
--   Informar o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE) sobre os comandos que ele suporta e se elas estão habilitadas.  
+- Informar o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE) sobre os comandos que ele suporta e se elas estão habilitadas.  
   
--   Aderir às regras (contrato) para lidar com comandos.  
+- Aderir às regras (contrato) para lidar com comandos.  
   
--   Implementar explicitamente a manipulação de comando, usando o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface.  
+- Implementar explicitamente a manipulação de comando, usando o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface.  
   
- O exemplo a seguir descreve como realizar essas tarefas.  
+  O exemplo a seguir descreve como realizar essas tarefas.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Determinar o status do comando usando assemblies de interoperabilidade](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  

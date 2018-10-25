@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9b9a49ee6a59870d37676e2ca969e99a1516658
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 9f7696018ec191e851c0d5864ad36e3eeb31b599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941731"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Ferramentas para detectar e gerenciar instâncias do Visual Studio
 
@@ -61,8 +61,8 @@ Como essas entradas não são armazenadas no Registro global, há instruções e
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
 
-  > [!NOTE]
-  > `<config>` corresponde à instância do Visual Studio que você deseja procurar.
+   > [!NOTE]
+   > `<config>` corresponde à instância do Visual Studio que você deseja procurar.
 
 Você precisará fornecer um nome de hive, que se tornará o nome do hive isolado. Depois de fazer isso, você poderá pesquisar o Registro no hive isolado que criou.
 
