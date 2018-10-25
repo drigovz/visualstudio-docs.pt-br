@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab5bfe3068f79bceb02352b47de4beb08da75c85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179420"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941939"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Como criar um tipo anulável (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Alguns tipos de valor nem sempre têm (ou precisam de) um valor definido. Essa �
   
  Os tipos que permitem valor nulo são instâncias da estrutura <xref:System.Nullable%601>. Cada instância de um tipo que permite valor nulo tem duas propriedades públicas somente leitura, `HasValue` e `Value`:  
   
--   `HasValue` é do tipo `bool` e indica se a variável contém um valor definido. `True` significa que a variável contém um valor não nulo. É possível testar um valor definido usando uma instrução como `if (x.HasValue)` ou `if (y != null)`.  
+- `HasValue` é do tipo `bool` e indica se a variável contém um valor definido. `True` significa que a variável contém um valor não nulo. É possível testar um valor definido usando uma instrução como `if (x.HasValue)` ou `if (y != null)`.  
   
--   `Value` é do mesmo tipo que o tipo subjacente. Se `HasValue` for `True`, `Value` conterá um valor significativo. Se `HasValue` for `False`, o acesso a `Value` gerará uma exceção de operação inválida.  
+- `Value` é do mesmo tipo que o tipo subjacente. Se `HasValue` for `True`, `Value` conterá um valor significativo. Se `HasValue` for `False`, o acesso a `Value` gerará uma exceção de operação inválida.  
   
- Por padrão, ao declarar uma variável como um tipo que permite valor nulo, ela não terá nenhum valor definido (`HasValue` é `False`), além do valor padrão de seu tipo de valor subjacente.  
+  Por padrão, ao declarar uma variável como um tipo que permite valor nulo, ela não terá nenhum valor definido (`HasValue` é `False`), além do valor padrão de seu tipo de valor subjacente.  
   
- O Designer de Classe exibe um tipo que permite valor nulo assim que ele exibe seu tipo subjacente.  
+  O Designer de Classe exibe um tipo que permite valor nulo assim que ele exibe seu tipo subjacente.  
   
- Para obter mais informações sobre tipos que permitem valor nulo no Visual C#, consulte [Tipos que permitem valor nulo](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Para obter mais informações sobre tipos que permitem valor nulo no Visual Basic, consulte [Tipos de valores que permitem valor nulo](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
+  Para obter mais informações sobre tipos que permitem valor nulo no Visual C#, consulte [Tipos que permitem valor nulo](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Para obter mais informações sobre tipos que permitem valor nulo no Visual Basic, consulte [Tipos de valores que permitem valor nulo](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Para adicionar um tipo que permite valor nulo usando o Designer de Classe  
   

@@ -10,37 +10,37 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 884f97acb6ff0e54c641c3a5df9c5edba9868e50
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f88aa5b9983390771a9b869a6e141802e94d684
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184100"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949806"
 ---
 # <a name="image-library-viewer"></a>Visualizador da biblioteca de imagens
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carregar e pesquisar os manifestos de imagem, permitindo que o usuário para manipulá-los da mesma maneira que faria do Visual Studio. O usuário pode alterar o plano de fundo, tamanhos, DPI, alto contraste e outras configurações. A ferramenta também exibe informações de carregamento para cada manifesto de imagem e exibe informações de origem para cada imagem no manifesto de imagem. Essa ferramenta é útil para:  
   
-1.  Diagnosticando erros  
+1. Diagnosticando erros  
   
-2.  Atributos de garantir que estão definidos corretamente nos manifestos de imagem personalizada  
+2. Atributos de garantir que estão definidos corretamente nos manifestos de imagem personalizada  
   
-3.  Procurando por imagens no catálogo de imagem do Visual Studio para que uma extensão do Visual Studio pode usar as imagens que se ajustam o estilo do Visual Studio  
+3. Procurando por imagens no catálogo de imagem do Visual Studio para que uma extensão do Visual Studio pode usar as imagens que se ajustam o estilo do Visual Studio  
   
- ![Imagem Hero de Visualizador de biblioteca](../../extensibility/internals/media/image-library-viewer-hero.png "biblioteca herói de Visualizador de imagem")  
+   ![Imagem Hero de Visualizador de biblioteca](../../extensibility/internals/media/image-library-viewer-hero.png "biblioteca herói de Visualizador de imagem")  
   
- **Moniker de imagem**  
+   **Moniker de imagem**  
   
- Um moniker de imagem (ou moniker de forma abreviada) é um par de GUID:ID que identifica exclusivamente um ativo de imagem ou um ativo de lista de imagem da biblioteca de imagens.  
+   Um moniker de imagem (ou moniker de forma abreviada) é um par de GUID:ID que identifica exclusivamente um ativo de imagem ou um ativo de lista de imagem da biblioteca de imagens.  
   
- **Arquivos de manifesto de imagem**  
+   **Arquivos de manifesto de imagem**  
   
- Arquivos de manifesto (.imagemanifest) da imagem são arquivos XML que definem um conjunto de ativos de imagem, os identificadores que representam os ativos e a imagem real ou imagens que representam cada ativo. Manifestos de imagem podem definir imagens independentes ou listas de imagens para dar suporte de interface do usuário. Além disso, há atributos que podem ser definidos no ativo ou nas imagens individuais por trás de cada ativo para alterar quando e como esses ativos são exibidos.  
+   Arquivos de manifesto (.imagemanifest) da imagem são arquivos XML que definem um conjunto de ativos de imagem, os identificadores que representam os ativos e a imagem real ou imagens que representam cada ativo. Manifestos de imagem podem definir imagens independentes ou listas de imagens para dar suporte de interface do usuário. Além disso, há atributos que podem ser definidos no ativo ou nas imagens individuais por trás de cada ativo para alterar quando e como esses ativos são exibidos.  
   
- **Esquema de manifesto de imagem**  
+   **Esquema de manifesto de imagem**  
   
- Um manifesto de conclusão de imagem tem esta aparência:  
+   Um manifesto de conclusão de imagem tem esta aparência:  
   
 ```xml  
 <ImageManifest>  

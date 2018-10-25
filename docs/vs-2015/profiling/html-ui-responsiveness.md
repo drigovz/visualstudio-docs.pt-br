@@ -25,12 +25,12 @@ caps.latest.revision: 52
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cfff3a7267d23e424214f49fed5b0577860c0a4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a8d8bd033c79257336b71e3f62099bd3eaf3808
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937571"
 ---
 # <a name="html-ui-responsiveness"></a>Capacidade de Resposta de interface do usuário HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -211,36 +211,36 @@ if (performance.mark && performance.measure) {
   
  Use este gráfico para:  
   
--   Identificar áreas de interesse geral.  
+- Identificar áreas de interesse geral.  
   
--   Escolha um período específico a ser exibido no gráfico de detalhes da linha do tempo. Para escolher um período, selecione em uma parte do gráfico e arraste o ponteiro para fazer uma seleção.  
+- Escolha um período específico a ser exibido no gráfico de detalhes da linha do tempo. Para escolher um período, selecione em uma parte do gráfico e arraste o ponteiro para fazer uma seleção.  
   
--   Obtenha uma exibição mais detalhada de um período selecionado clicando no botão **Ampliar**.  
+- Obtenha uma exibição mais detalhada de um período selecionado clicando no botão **Ampliar**.  
   
- Para obter mais informações sobre como usar o grafo , consulte [Isolar um problema de capacidade de resposta da interface do usuário](#Workflow) neste tópico.  
+  Para obter mais informações sobre como usar o grafo , consulte [Isolar um problema de capacidade de resposta da interface do usuário](#Workflow) neste tópico.  
   
 ###  <a name="VisualThroughput"></a> Exibir a taxa de transferência visual (FPS)  
  O gráfico de taxa de transferência visual permite que você identifique períodos em que a taxa de quadros cai. Ele mostra os quadros por segundo (FPS) para o aplicativo. Este gráfico é mais útil para o desenvolvimento de jogos e de aplicativos de mídia avançados.  
   
  O valor de FPS exibido pode diferir da taxa de quadros real. Tenha estas informações em mente quando for examinar dados nesse gráfico:  
   
--   O gráfico mostra o FPS que o aplicativo é capaz de atingir em qualquer tempo específico. Quando o aplicativo estiver ocioso, a taxa de FPS será a mesma que a taxa de atualização do monitor.  
+- O gráfico mostra o FPS que o aplicativo é capaz de atingir em qualquer tempo específico. Quando o aplicativo estiver ocioso, a taxa de FPS será a mesma que a taxa de atualização do monitor.  
   
--   O gráfico a seguir mostra a taxa de FPS real se o aplicativo estiver executando um trabalho que exija atualizações visuais.  
+- O gráfico a seguir mostra a taxa de FPS real se o aplicativo estiver executando um trabalho que exija atualizações visuais.  
   
--   O gráfico a seguir mostrará o valor zero se os quadros forem ignorados.  
+- O gráfico a seguir mostrará o valor zero se os quadros forem ignorados.  
   
- Este exemplo mostra a aparência do gráfico Taxa de Transferência Visual:  
+  Este exemplo mostra a aparência do gráfico Taxa de Transferência Visual:  
   
- ![Gráfico de taxa de transferência Visual](../profiling/media/js-htmlvizprof-vizthru.png "JS_HTMLVizProf_VizThru")  
+  ![Gráfico de taxa de transferência Visual](../profiling/media/js-htmlvizprof-vizthru.png "JS_HTMLVizProf_VizThru")  
   
- Use o gráfico Taxa de Transferência Visual para:  
+  Use o gráfico Taxa de Transferência Visual para:  
   
--   Identificar áreas de interesse geral.  
+- Identificar áreas de interesse geral.  
   
--   Escolha um período específico a ser exibido no gráfico de detalhes da linha do tempo. Para escolher um período, selecione em uma parte do gráfico e arraste o ponteiro para fazer uma seleção.  
+- Escolha um período específico a ser exibido no gráfico de detalhes da linha do tempo. Para escolher um período, selecione em uma parte do gráfico e arraste o ponteiro para fazer uma seleção.  
   
--   Obtenha uma exibição mais detalhada de um período selecionado clicando no botão **Ampliar**.  
+- Obtenha uma exibição mais detalhada de um período selecionado clicando no botão **Ampliar**.  
   
 ###  <a name="TimelineDetails"></a> Exibir detalhes da linha de tempo  
  O gráfico de detalhes da linha do tempo aparece no painel inferior do Criador de Perfil de Capacidade de Resposta da Interface de Usuário. Ele fornece informações sequenciais e hierárquicas sobre eventos que consumiram a maioria do tempo da CPU durante períodos selecionados. Esse grafo pode ajudá-lo a determinar o que disparou um evento específico e, em alguns casos, como o evento é remapeado para o código-fonte. Esse gráfico também ajuda a determinar o tempo necessário para pintar atualizações visuais na tela.  
@@ -317,23 +317,23 @@ if (performance.mark && performance.measure) {
 ##  <a name="ProfilerEvents"></a> Referência de evento do criador de perfil  
  Os eventos do Criador de Perfis são categorizados e codificados por cor no Criador de Perfis de Capacidade de Resposta de Interface de Usuário. Essas são as categorias de evento:  
   
--   **Carregamento.** Indica o tempo gasto para recuperar recursos do aplicativo e analisar HTML e CSS quando o aplicativo é carregado pela primeira vez. Isso pode incluir solicitações de rede.  
+- **Carregamento.** Indica o tempo gasto para recuperar recursos do aplicativo e analisar HTML e CSS quando o aplicativo é carregado pela primeira vez. Isso pode incluir solicitações de rede.  
   
--   **Geração de script.** Indica a análise de tempo gasto e o JavaScript em execução. Isso inclui eventos DOM, temporizadores, avaliação de script e trabalho de quadro de animação. Inclui o código do usuário e o código da biblioteca.  
+- **Geração de script.** Indica a análise de tempo gasto e o JavaScript em execução. Isso inclui eventos DOM, temporizadores, avaliação de script e trabalho de quadro de animação. Inclui o código do usuário e o código da biblioteca.  
   
--   **GC.** Indica o tempo gasto na coleta de lixo.  
+- **GC.** Indica o tempo gasto na coleta de lixo.  
   
--   **Estilização.** Indica o tempo gasto analisando o CSS e calculando a apresentação e o layout do elemento.  
+- **Estilização.** Indica o tempo gasto analisando o CSS e calculando a apresentação e o layout do elemento.  
   
--   **Renderização.** Indica o tempo gasto na pintura da tela.  
+- **Renderização.** Indica o tempo gasto na pintura da tela.  
   
--   **Decodificação de imagem.** Indica o tempo gasto com a descompactação e a decodificação de imagens.  
+- **Decodificação de imagem.** Indica o tempo gasto com a descompactação e a decodificação de imagens.  
   
- Para o script e as categorias de estilo, o Criador de Perfis de Capacidade de Resposta de Interface de Usuário pode fornecer dados que você pode manipular no gráfico de detalhes da linha de tempo. Caso identifique problemas de script, você pode executar o criador de perfis de amostragem de CPU com o criador de perfis de Capacidade de Resposta da Interface de Usuário. Opcionalmente, você poderia usar o criador de perfis de função do Visual Studio para obter dados mais detalhados. Para obter mais informações, consulte [dados de temporização de função JavaScript analisar](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
+  Para o script e as categorias de estilo, o Criador de Perfis de Capacidade de Resposta de Interface de Usuário pode fornecer dados que você pode manipular no gráfico de detalhes da linha de tempo. Caso identifique problemas de script, você pode executar o criador de perfis de amostragem de CPU com o criador de perfis de Capacidade de Resposta da Interface de Usuário. Opcionalmente, você poderia usar o criador de perfis de função do Visual Studio para obter dados mais detalhados. Para obter mais informações, consulte [dados de temporização de função JavaScript analisar](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
   
- Para as outras categorias de evento, talvez você possa identificar os efeitos colaterais da plataforma resultantes da adição de funcionalidades ao seu aplicativo, mas nesses casos você não poderá resolver determinados problemas de desempenho usando o Criador de Perfis de Capacidade de Resposta de Interface de Usuário.  
+  Para as outras categorias de evento, talvez você possa identificar os efeitos colaterais da plataforma resultantes da adição de funcionalidades ao seu aplicativo, mas nesses casos você não poderá resolver determinados problemas de desempenho usando o Criador de Perfis de Capacidade de Resposta de Interface de Usuário.  
   
- Esta tabela mostra os eventos e suas descrições:  
+  Esta tabela mostra os eventos e suas descrições:  
   
 |evento|Categoria do evento|Ocorre quando|  
 |-----------|--------------------|-----------------|  

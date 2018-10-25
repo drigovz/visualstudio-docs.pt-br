@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c61d2ab349a245f4720c69479519c54cc078f882
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd62abec72694689f810073a375f7ed9e4173bf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228495"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950388"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante de metade/um quarto nas dimensões de textura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Reduz as dimensões de textura nas texturas que não são destinos de renderiza�
 ## <a name="remarks"></a>Comentários  
  As dimensões da textura são reduzidas em cada chamada a `ID3D11Device::CreateTexture2D`, que cria uma textura de origem. As dimensões da textura são reduzidas especificamente quando o objeto D3D11_TEXTURE2D_DESC transferido em `pDesc` descreve uma textura usada na renderização; ou seja:  
   
--   O membro BindFlags tem apenas o sinalizador D3D11_BIND_SHADER_RESOURCE definido.  
+- O membro BindFlags tem apenas o sinalizador D3D11_BIND_SHADER_RESOURCE definido.  
   
--   O membro MiscFlags não possui o sinalizador D3D11_RESOURCE_MISC_TILE_POOL ou o conjunto de sinalizadores D3D11_RESOURCE_MISC_TILED (recursos lado a lado não são redimensionados).  
+- O membro MiscFlags não possui o sinalizador D3D11_RESOURCE_MISC_TILE_POOL ou o conjunto de sinalizadores D3D11_RESOURCE_MISC_TILED (recursos lado a lado não são redimensionados).  
   
--   O formato de textura tem suporte como destino de renderização, como determinado por D3D11_FORMAT_SUPPORT_RENDER_TARGET, que é necessário para reduzir o tamanho da textura. Os formatos BC1, BC2 e BC3 também têm suporte, embora não como destinos de renderização.  
+- O formato de textura tem suporte como destino de renderização, como determinado por D3D11_FORMAT_SUPPORT_RENDER_TARGET, que é necessário para reduzir o tamanho da textura. Os formatos BC1, BC2 e BC3 também têm suporte, embora não como destinos de renderização.  
   
- Se forem fornecidos dados iniciais pelo aplicativo, essa variante escala os dados da textura para o tamanho adequado antes de criar a textura. Se forem fornecidos dados iniciais em um formato compactado de bloco, somo BC1, BC2 ou BC3, eles são decodificados, escalados e codificados novamente antes de serem usados para criar a textura menor. (A natureza da compactação baseada em blocos significa que o processo de decodificação, escala e codificação extra quase sempre resulta em qualidade inferior da imagem do que quando uma textura compactada em bloco é gerada de uma versão escalada da textura, que não havia sido codificada anteriormente.)  
+  Se forem fornecidos dados iniciais pelo aplicativo, essa variante escala os dados da textura para o tamanho adequado antes de criar a textura. Se forem fornecidos dados iniciais em um formato compactado de bloco, somo BC1, BC2 ou BC3, eles são decodificados, escalados e codificados novamente antes de serem usados para criar a textura menor. (A natureza da compactação baseada em blocos significa que o processo de decodificação, escala e codificação extra quase sempre resulta em qualidade inferior da imagem do que quando uma textura compactada em bloco é gerada de uma versão escalada da textura, que não havia sido codificada anteriormente.)  
   
- Se mapas de mip forem habilitados para a textura, a variante reduz o número de nível de mip de maneira equivalente; um a menos ao redimensionar para a metade ou dois a menos ao redimensionar para um quarto.  
+  Se mapas de mip forem habilitados para a textura, a variante reduz o número de nível de mip de maneira equivalente; um a menos ao redimensionar para a metade ou dois a menos ao redimensionar para um quarto.  
   
 ## <a name="example"></a>Exemplo  
  Essa variante redimensiona as texturas no tempo de execução antes da chamada para `CreateTexture2D`. Não recomendamos essa abordagem para códigos de produção, pois as texturas em tamanho integral consomem mais espaço em disco e a etapa adicional pode aumentar o tempo de carregamento no aplicativo, especialmente no caso de texturas compactadas, que requerem recursos computacionais significativos para codificação. Ao invés disso, recomendamos que você redimensione as texturas offline usando um editor de imagens ou um processador de imagem que faça parte do seu pipeline de compilação. Essas abordagens reduzem os requisitos de espaço em disco e eliminam a sobrecarga do tempo de execução no aplicativo, além de oferecer mais tempo de processamento para que seja possível manter a melhor qualidade de imagem ao reduzir ou compactar as texturas.  
