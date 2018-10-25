@@ -10,12 +10,12 @@ ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87a928f1d987d496bee40c4236f53b5e14cb034d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bb2a5c33f0cdfe75f6e2bf6713ab92e36b588986
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948402"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Usar as ferramentas de dados no Visual Studio para desenvolver soluções de dados
 
@@ -33,7 +33,7 @@ Saiba como usar as ferramentas de dados no Visual Studio para desenvolver e test
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Saiba mais sobre o Visual Studio e as ferramentas do .NET Framework e o suporte de API para o desenvolvimento de aplicativos de dados</h3>
+                        <h3>Saiba mais sobre o Visual Studio e as ferramentas do .NET Framework, e sobre o suporte de API para desenvolvimento de aplicativos de dados</h3>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ Saiba como usar as ferramentas de dados no Visual Studio para desenvolver e test
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Saiba mais sobre como criar, implantar e manter bancos de dados com o SQL Server Data Tools</h3>
+                        <h3>Saiba mais sobre como projetar, implantar e manter bancos de dados com o SQL Server Data Tools</h3>
                     </div>
                 </div>
             </div>

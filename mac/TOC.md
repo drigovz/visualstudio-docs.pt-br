@@ -2,7 +2,8 @@
 # [Tour do IDE](ide-tour.md)
 
 # [Instalação](installation.md)
-## [Instalação da versão prévia](install-preview.md)
+## [Instalar e usar por trás de um firewall ou proxy](install-behind-a-firewall-or-proxy-server.md)
+## [Instalar uma versão prévia](install-preview.md)
 ## [Atualizar](update.md)
 ## [Desinstalar](uninstall.md)
 
@@ -28,7 +29,7 @@
 ## [Comentários](comments.md)
 ## [Comportamento do Editor](editor-behavior.md)
 ## [Comentários da Tarefa](task-comments.md)
-## [Trechos](snippets.md)
+## [Snippets](snippets.md)
 ## [Bloquear Seleção](block-selection.md)
 ## [Temas do Editor](editor-themes.md)
 ## [EditorConfig](editorconfig.md)
