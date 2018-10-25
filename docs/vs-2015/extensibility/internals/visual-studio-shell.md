@@ -16,12 +16,12 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f0ef1e207fffc4d44963b968caad392b9d976c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 141b0966c3b7d53bf1084b3ea9ac466bbc92d0bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222398"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903706"
 ---
 # <a name="visual-studio-shell"></a>Shell do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,59 +31,59 @@ O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] shell é o principal agente de
 ## <a name="shell-responsibilities"></a>Responsabilidades do shell  
  O shell tem as seguintes responsabilidades principais:  
   
--   Elementos básicos que dão suporte a (por meio de interfaces COM) da interface do usuário (IU). Eles incluem barras de ferramentas e menus padrão, janelas filho de interface de vários documentos (MDI), ou quadros de janela de documento e quadros de janela de ferramenta e suporte de encaixe.  
+- Elementos básicos que dão suporte a (por meio de interfaces COM) da interface do usuário (IU). Eles incluem barras de ferramentas e menus padrão, janelas filho de interface de vários documentos (MDI), ou quadros de janela de documento e quadros de janela de ferramenta e suporte de encaixe.  
   
--   Manter uma lista de todos os documentos abertos no momento em uma tabela de documento (RDT) em execução para coordenar a persistência de documentos e a garantia de que um documento não pode ser aberto em mais de uma forma ou em formas incompatíveis.  
+- Manter uma lista de todos os documentos abertos no momento em uma tabela de documento (RDT) em execução para coordenar a persistência de documentos e a garantia de que um documento não pode ser aberto em mais de uma forma ou em formas incompatíveis.  
   
--   Suporte a interface do roteamento de comando e manipulação de comandos, `IOleCommandTarget`.  
+- Suporte a interface do roteamento de comando e manipulação de comandos, `IOleCommandTarget`.  
   
--   Carregar VSPackages em momentos apropriados. Carregamento de atraso de um VSPackage é necessário para melhorar o desempenho do shell.  
+- Carregar VSPackages em momentos apropriados. Carregamento de atraso de um VSPackage é necessário para melhorar o desempenho do shell.  
   
--   Gerenciando determinados serviços compartilhados, tais como <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, que fornece a funcionalidade básica de shell e <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, que fornece a funcionalidade básica de janelas.  
+- Gerenciando determinados serviços compartilhados, tais como <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, que fornece a funcionalidade básica de shell e <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, que fornece a funcionalidade básica de janelas.  
   
--   Gerenciando os arquivos de solução (. sln). As soluções contêm grupos de projetos relacionados, semelhantes aos arquivos de espaço de trabalho (dsw) no Visual C++ 6.0.  
+- Gerenciando os arquivos de solução (. sln). As soluções contêm grupos de projetos relacionados, semelhantes aos arquivos de espaço de trabalho (dsw) no Visual C++ 6.0.  
   
--   Seleção de todo o shell de acompanhamento, o contexto e moeda. O shell rastreia os seguintes tipos de itens:  
+- Seleção de todo o shell de acompanhamento, o contexto e moeda. O shell rastreia os seguintes tipos de itens:  
   
-    -   O projeto atual  
+  -   O projeto atual  
   
-    -   O item de projeto atual ou ItemID atual <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  -   O item de projeto atual ou ItemID atual <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-    -   A seleção atual para o **propriedades** janela ou `SelectionContainer`  
+  -   A seleção atual para o **propriedades** janela ou `SelectionContainer`  
   
-    -   O contexto de interface do usuário IDs ou CmdUIGuids que controlam a visibilidade de comandos, menus e barras de ferramentas  
+  -   O contexto de interface do usuário IDs ou CmdUIGuids que controlam a visibilidade de comandos, menus e barras de ferramentas  
   
-    -   Os elementos ativos no momento, como a janela ativa, o documento e o Gerenciador de desfazer  
+  -   Os elementos ativos no momento, como a janela ativa, o documento e o Gerenciador de desfazer  
   
-    -   Os atributos de contexto de usuário que orientam a Ajuda dinâmica  
+  -   Os atributos de contexto de usuário que orientam a Ajuda dinâmica  
   
- O shell também atua como mediador de comunicação entre os VSPackages instalados e os serviços atuais. Ele dá suporte aos principais recursos do shell e torna-os disponíveis para todos os VSPackages integrados no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Esses principais recursos incluem os seguintes itens:  
+  O shell também atua como mediador de comunicação entre os VSPackages instalados e os serviços atuais. Ele dá suporte aos principais recursos do shell e torna-os disponíveis para todos os VSPackages integrados no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Esses principais recursos incluem os seguintes itens:  
   
--   **Sobre** tela inicial e de caixa de diálogo  
+- **Sobre** tela inicial e de caixa de diálogo  
   
--   **Adicionar novo e Adicionar Item existente** caixas de diálogo  
+- **Adicionar novo e Adicionar Item existente** caixas de diálogo  
   
--   **Exibição de classe** janela e **Pesquisador de objetos**  
+- **Exibição de classe** janela e **Pesquisador de objetos**  
   
--   **Referências** caixa de diálogo  
+- **Referências** caixa de diálogo  
   
--   **Estrutura de tópicos de documento** janela  
+- **Estrutura de tópicos de documento** janela  
   
--   **Ajuda dinâmica** janela  
+- **Ajuda dinâmica** janela  
   
--   **Encontre** e **substituir**  
+- **Encontre** e **substituir**  
   
--   **Abrir projeto** e **abrir arquivo** caixas de diálogo sobre o **New** menu  
+- **Abrir projeto** e **abrir arquivo** caixas de diálogo sobre o **New** menu  
   
--   **As opções** caixa de diálogo de **ferramentas** menu  
+- **As opções** caixa de diálogo de **ferramentas** menu  
   
--   Janela **Propriedades**  
+- Janela **Propriedades**  
   
--   **Gerenciador de Soluções**  
+- **Gerenciador de Soluções**  
   
--   **Lista de tarefas** janela  
+- **Lista de tarefas** janela  
   
--   **Caixa de Ferramentas**  
+- **Caixa de Ferramentas**  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

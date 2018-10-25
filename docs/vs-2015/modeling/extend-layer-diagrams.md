@@ -17,12 +17,12 @@ caps.latest.revision: 41
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5551a982b7f7135235c116cde28c71a0695874db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3c149558f53effff29d15bfce0d05f0dada0f7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301828"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847065"
 ---
 # <a name="extend-layer-diagrams"></a>Estender diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Você pode escrever código para criar e atualizar diagramas de camada e também
 ##  <a name="prereqs"></a> Requisitos  
  Você deve ter os seguintes itens instalados no computador em que você deseja desenvolver suas extensões em camadas:  
   
--   Visual Studio  
+- Visual Studio  
   
--   [SDK do Visual Studio](../extensibility/visual-studio-sdk.md)  
+- [SDK do Visual Studio](../extensibility/visual-studio-sdk.md)  
   
--   [SDK de modelagem para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)  
+- [SDK de modelagem para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)  
   
- Você deve ter uma versão adequada do Visual Studio instalado no computador em que você deseja executar suas extensões em camadas. Para obter mais informações, consulte [implantar uma extensão de modelo de camada](../modeling/deploy-a-layer-model-extension.md).  
+  Você deve ter uma versão adequada do Visual Studio instalado no computador em que você deseja executar suas extensões em camadas. Para obter mais informações, consulte [implantar uma extensão de modelo de camada](../modeling/deploy-a-layer-model-extension.md).  
   
- Para ver quais versões do Visual Studio dão suporte a diagramas de camada, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  Para ver quais versões do Visual Studio dão suporte a diagramas de camada, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Adicionar comandos e gestos a diagramas de camada](../modeling/add-commands-and-gestures-to-layer-diagrams.md)  

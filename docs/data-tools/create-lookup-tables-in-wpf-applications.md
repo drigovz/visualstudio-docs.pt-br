@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98dbffecc51b19a40b1b54cc9afc654fb850155b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bbecb481d96df1071388e834d44f8f712def2935
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924187"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Criar tabelas de pesquisa em aplicativos WPF
 O termo *tabela de pesquisa* (às vezes chamado de um *vinculação de pesquisa*) descreve um controle que exibe informações de uma tabela de dados com base no valor de um campo de chave estrangeira em outra tabela. Você pode criar uma tabela de pesquisa, arrastando o nó principal de uma tabela pai ou objeto de **fontes de dados** window para um controle que já está associado a uma coluna ou propriedade em uma tabela filho relacionada.
@@ -83,7 +83,7 @@ Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Ca
      O Visual Studio define algumas propriedades no controle para configurar a associação de pesquisa. A tabela a seguir lista as propriedades que o Visual Studio modifica. Se necessário, você pode alterar essas propriedades no XAML ou nos **propriedades** janela.
 
     |Propriedade|Explicação da configuração|
-    |--------------|----------------------------|
+    |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Esta propriedade especifica a coleção ou associação que é usada para obter os dados que são exibidos no controle. Visual Studio define essa propriedade para o <xref:System.Windows.Data.CollectionViewSource> para os dados pai que você arrastou para o controle.|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Essa propriedade especifica o caminho do item de dados que é exibido no controle. Visual Studio define essa propriedade para a primeira coluna ou propriedade nos dados do pai, após a chave primária, que tem um tipo de dados de cadeia de caracteres.<br /><br /> Se você quiser exibir uma coluna ou propriedade diferente dos dados pai, altere essa propriedade para o caminho de uma propriedade diferente.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio é associado a essa propriedade como a coluna ou a propriedade dos dados filho que você arrastou para o designer. Isso é a chave estrangeira para os dados pai.|

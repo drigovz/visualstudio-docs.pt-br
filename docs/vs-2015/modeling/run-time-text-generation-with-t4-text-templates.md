@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214741"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920125"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Geração de texto de tempo de execução com modelos de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -295,17 +295,17 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>Padrão de herança: fragmentos em métodos de Base  
  O padrão usado no exemplo a seguir, observe os seguintes pontos:  
   
--   A classe base `SharedFragments` define os métodos dentro de blocos de recurso de classe `<#+ ... #>`.  
+- A classe base `SharedFragments` define os métodos dentro de blocos de recurso de classe `<#+ ... #>`.  
   
--   A classe base não contém nenhum texto livre. Em vez disso, todos os seus blocos de texto ocorrem dentro de métodos da classe de recurso.  
+- A classe base não contém nenhum texto livre. Em vez disso, todos os seus blocos de texto ocorrem dentro de métodos da classe de recurso.  
   
--   A classe derivada chama os métodos definidos na `SharedFragments`.  
+- A classe derivada chama os métodos definidos na `SharedFragments`.  
   
--   O aplicativo chama o `TextTransform()` método da classe derivada, mas não transforma a classe base `SharedFragments`.  
+- O aplicativo chama o `TextTransform()` método da classe derivada, mas não transforma a classe base `SharedFragments`.  
   
--   As classes base e derivadas são modelos de texto de tempo de execução: ou seja, o **Custom Tool** estiver definida como **TextTemplatingFilePreprocessor**.  
+- As classes base e derivadas são modelos de texto de tempo de execução: ou seja, o **Custom Tool** estiver definida como **TextTemplatingFilePreprocessor**.  
   
- **SharedFragments.tt:**  
+  **SharedFragments.tt:**  
   
 ```csharp  
 <#@ template language="C#" #>  

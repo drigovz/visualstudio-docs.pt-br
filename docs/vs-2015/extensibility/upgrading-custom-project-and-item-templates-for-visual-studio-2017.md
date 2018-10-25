@@ -10,12 +10,12 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9137510f8d6949271a255b14b293f59366048f77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221150"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923440"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>Atualizando modelos de Item e projeto personalizados para o Visual Studio "15"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,24 +181,24 @@ VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.c
 ## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Atualizações para as extensões instaladas com um. MSI  
  Algumas extensões baseadas em MSI Implante modelos locais de modelo comuns, como o seguinte:  
   
--   **\<Diretório de instalação do Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates >**  
+- **\<Diretório de instalação do Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates >**  
   
--   **\<Diretório de instalação do Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< Project/ItemTemplates >**  
+- **\<Diretório de instalação do Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< Project/ItemTemplates >**  
   
- Se sua extensão executa uma implantação baseada em MSI, você precisa gerar o manifesto do modelo manualmente e certifique-se de que ele seja incluído na configuração da extensão. Você deve comparar os exemplos de vstman listados acima e o [modelo de manifesto do esquema de referência do Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md). Para ver o que você precisa incluir  
+  Se sua extensão executa uma implantação baseada em MSI, você precisa gerar o manifesto do modelo manualmente e certifique-se de que ele seja incluído na configuração da extensão. Você deve comparar os exemplos de vstman listados acima e o [modelo de manifesto do esquema de referência do Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md). Para ver o que você precisa incluir  
   
- Você deve criar manifestos separados para modelos de projeto e item, e eles devem apontar para o modelo diretório raiz conforme especificado acima. Você deve criar um manifesto por extensão e a localidade.  
+  Você deve criar manifestos separados para modelos de projeto e item, e eles devem apontar para o modelo diretório raiz conforme especificado acima. Você deve criar um manifesto por extensão e a localidade.  
   
 ## <a name="troubleshooting-template-installation"></a>Instalação do modelo de solução de problemas  
  Se você tiver problemas ao implantar seus modelos de projeto ou item, você pode habilitar o log de diagnóstico.  
   
-1.  Execute o seguinte comando para definir a chave do registro para habilitar o registro em log:  
+1. Execute o seguinte comando para definir a chave do registro para habilitar o registro em log:  
   
-     **reg adicionar HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
+    **reg adicionar HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
   
-2.  Inicie o Visual Studio e inicie as caixas de diálogo New Project e o novo Item para inicializar a ambas as árvores do modelo. O log de modelo agora aparece na **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**. A inicialização de cada árvore modelo acrescenta as entradas nesse log.  
+2. Inicie o Visual Studio e inicie as caixas de diálogo New Project e o novo Item para inicializar a ambas as árvores do modelo. O log de modelo agora aparece na **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**. A inicialização de cada árvore modelo acrescenta as entradas nesse log.  
   
- O arquivo de log contém as seguintes colunas:  
+   O arquivo de log contém as seguintes colunas:  
   
 -   **FullPathToTemplate**, que tem os seguintes valores:  
   

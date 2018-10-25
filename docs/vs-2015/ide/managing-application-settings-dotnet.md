@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac4f670b813970d027925b681a2e3211e1898e1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289504"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866123"
 ---
 # <a name="managing-application-settings-net"></a>Gerenciando configurações de aplicativo (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ As configurações de aplicativo permitem armazenar informações do aplicativo 
   
  Há dois tipos de configurações de aplicativo, com base no escopo:  
   
--   Configurações de escopo do aplicativo podem ser usadas para informações como uma URL para um serviço Web ou uma cadeia de conexão de banco de dados. Esses valores são associados ao aplicativo. Portanto, os usuários não podem alterá-los em tempo de execução.  
+- Configurações de escopo do aplicativo podem ser usadas para informações como uma URL para um serviço Web ou uma cadeia de conexão de banco de dados. Esses valores são associados ao aplicativo. Portanto, os usuários não podem alterá-los em tempo de execução.  
   
--   Configurações de escopo do usuário podem ser usadas para informações, como persistir a última posição de um formulário ou uma preferência de fonte. Os usuários podem alterar esses valores em tempo de execução.  
+- Configurações de escopo do usuário podem ser usadas para informações, como persistir a última posição de um formulário ou uma preferência de fonte. Os usuários podem alterar esses valores em tempo de execução.  
   
- Você pode alterar o tipo de uma configuração usando a propriedade **Escopo**.  
+  Você pode alterar o tipo de uma configuração usando a propriedade **Escopo**.  
   
- O sistema do projeto armazena configurações de aplicativo em dois arquivos XML: um arquivo app.config, que é criado em tempo de design ao criar a primeira configuração de aplicativo e um arquivo user.config, que é criado em tempo de execução quando o usuário executando o aplicativo altera o valor de qualquer configuração do usuário. Observe que as alterações nas configurações do usuário não são gravadas em disco, a menos que o aplicativo especificamente chame um método para fazer isso.  
+  O sistema do projeto armazena configurações de aplicativo em dois arquivos XML: um arquivo app.config, que é criado em tempo de design ao criar a primeira configuração de aplicativo e um arquivo user.config, que é criado em tempo de execução quando o usuário executando o aplicativo altera o valor de qualquer configuração do usuário. Observe que as alterações nas configurações do usuário não são gravadas em disco, a menos que o aplicativo especificamente chame um método para fazer isso.  
   
 ## <a name="creating-application-settings-at-design-time"></a>Criando configurações de aplicativo em tempo de design  
  Em tempo de design, você pode criar configurações de aplicativo de duas maneiras: usando a página **Configurações** do **Designer de Projeto** ou usando a janela **Propriedades** de um formulário ou controle, que permite que você associe uma configuração a uma propriedade.  

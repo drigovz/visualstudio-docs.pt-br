@@ -22,12 +22,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ad870c9b470e96a120e334c79ed5b36e44cca41a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33b1a45d1c5dc3275ebbde8124986705bcac51ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856789"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Como criar associações entre tipos (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ As linhas de associação no Designer de Classe mostram como as classes em um di
   
 ### <a name="to-change-the-name-of-an-association"></a>Para alterar o nome de uma associação  
   
--   Na superfície de diagrama, clique no rótulo da linha de associação e edite-o.  
+- Na superfície de diagrama, clique no rótulo da linha de associação e edite-o.  
   
- \- ou -  
+  \- ou -  
   
 1.  Clique na forma que contém a propriedade que é mostrada como uma associação.  
   

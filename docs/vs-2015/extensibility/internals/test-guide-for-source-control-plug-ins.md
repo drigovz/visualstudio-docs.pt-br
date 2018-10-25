@@ -19,12 +19,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1620de29372d1d8e397ad879e3c9f413c41b1286
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1893a30ff46470949fb5aa534f61f590e7ba2d95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219577"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873546"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guia de teste para plug-ins de controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,19 +46,19 @@ Esta seção fornece diretrizes para testar o plug-in com o controle de origem [
  Projeto Web  
  Há quatro tipos de projetos da Web: IIS Local, sistema de arquivos, Sites remotos e FTP.  
   
--   Projetos do sistema de arquivos são criados em um caminho local, mas eles não exigem o Internet Information Services (IIS) a serem instalados conforme elas são acessadas internamente por meio de um caminho UNC e podem ser colocadas sob controle de origem de dentro do IDE, assim como projetos de cliente.  
+- Projetos do sistema de arquivos são criados em um caminho local, mas eles não exigem o Internet Information Services (IIS) a serem instalados conforme elas são acessadas internamente por meio de um caminho UNC e podem ser colocadas sob controle de origem de dentro do IDE, assim como projetos de cliente.  
   
--   Projetos do IIS locais funcionam com o IIS está instalado no mesmo computador e é acessado com uma URL que aponta para o computador local.  
+- Projetos do IIS locais funcionam com o IIS está instalado no mesmo computador e é acessado com uma URL que aponta para o computador local.  
   
--   Projetos de Sites remotos também são criados em um serviços do IIS, mas eles são colocados sob controle do código-fonte no computador do servidor do IIS e não de dentro do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
+- Projetos de Sites remotos também são criados em um serviços do IIS, mas eles são colocados sob controle do código-fonte no computador do servidor do IIS e não de dentro do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
   
--   Projetos FTP são acessados por meio de um servidor FTP remoto, mas eles não podem ser colocados sob controle do código-fonte.  
+- Projetos FTP são acessados por meio de um servidor FTP remoto, mas eles não podem ser colocados sob controle do código-fonte.  
   
- Inscrição  
- Outro termo para a solução ou projeto sob controle do código-fonte.  
+  Inscrição  
+  Outro termo para a solução ou projeto sob controle do código-fonte.  
   
- Versão Store  
- O banco de dados que está sendo acessado por meio da API de plug-in de controle de origem.  
+  Versão Store  
+  O banco de dados que está sendo acessado por meio da API de plug-in de controle de origem.  
   
 ## <a name="test-areas-covered-in-this-section"></a>Áreas de teste abordadas nesta seção  
   

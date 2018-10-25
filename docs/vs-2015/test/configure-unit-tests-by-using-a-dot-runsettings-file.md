@@ -13,12 +13,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 806c19b7132a4541ff97c253700a5e5e980ef556
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255613"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817971"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um arquivo .runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ Os testes de unidade no Visual Studio podem ser configurados com um arquivo *.ru
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Personalizando testes com um arquivo .runsettings  
   
-1.  Adicione um arquivo XML à solução Visual Studio e renomeie-o para test.runsettings. (O nome do arquivo não importa, mas a extensão deve ser .runsettings.)  
+1. Adicione um arquivo XML à solução Visual Studio e renomeie-o para test.runsettings. (O nome do arquivo não importa, mas a extensão deve ser .runsettings.)  
   
-2.  Substitua o conteúdo do arquivo pelo [exemplo](#example).  
+2. Substitua o conteúdo do arquivo pelo [exemplo](#example).  
   
-     Edite-o conforme suas necessidades.  
+    Edite-o conforme suas necessidades.  
   
-3.  No menu **Testar**, escolha **Configurações de Teste**, **Selecionar Arquivo de Configurações de Teste**.  
+3. No menu **Testar**, escolha **Configurações de Teste**, **Selecionar Arquivo de Configurações de Teste**.  
   
- É possível criar mais de um arquivo \*.runsettings em sua solução e habilitá-los ou desabilitá-los em momentos diferentes com o menu **Configurações de Teste**.  
+   É possível criar mais de um arquivo \*.runsettings em sua solução e habilitá-los ou desabilitá-los em momentos diferentes com o menu **Configurações de Teste**.  
   
- ![Habilitando um arquivo de configurações de execução](../test/media/runsettings-1.png "RunSettings-1")  
+   ![Habilitando um arquivo de configurações de execução](../test/media/runsettings-1.png "RunSettings-1")  
   
 ##  <a name="example"></a> Copiar este exemplo de arquivo .runsettings  
  Veja um arquivo *.runsettings típico. Cada elemento do arquivo é opcional, porque cada valor possui um padrão.  

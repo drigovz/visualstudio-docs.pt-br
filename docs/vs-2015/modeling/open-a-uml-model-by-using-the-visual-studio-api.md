@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e92ece9a8097071c8d8cef5b77ca9fdb242d677f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14fa94779fc8d849bbfdb9176fdc94049078c674
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292702"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920182"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Abrir um modelo UML usando a API do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,27 +35,27 @@ Você também pode abrir modelos e diagramas na interface do usuário do Visual 
 ##  <a name="Showing"></a> Abrindo modelos e diagramas no Visual Studio  
  Para abrir um modelo na interface do usuário, use a API padrão do Visual Studio `EnvDTE.DTE`. Há duas conversões úteis que podem ser executadas em itens de projeto de modelagem:  
   
--   `EnvDTE.Project` pode ser convertido para e de `IModelingProject`, se o projeto é um projeto de modelagem, e se o projeto é carregado no AppDomain atual.  
+- `EnvDTE.Project` pode ser convertido para e de `IModelingProject`, se o projeto é um projeto de modelagem, e se o projeto é carregado no AppDomain atual.  
   
--   `EnvDTE.ProjectItem` pode ser convertido para e de `IDiagramContext`, se o item for um diagrama UML.  
+- `EnvDTE.ProjectItem` pode ser convertido para e de `IDiagramContext`, se o item for um diagrama UML.  
   
- Para o exemplo a seguir, seu projeto deve importar essas referências:  
+  Para o exemplo a seguir, seu projeto deve importar essas referências:  
   
--   EnvDTE  
+- EnvDTE  
   
--   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+- Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
--   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+- Microsoft.VisualStudio.Modeling.Sdk.[version]  
   
--   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
+- Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
   
--   Microsoft.VisualStudio.Shell.Immutable. [versão]  
+- Microsoft.VisualStudio.Shell.Immutable. [versão]  
   
--   Microsoft.VisualStudio.Uml.Interfaces  
+- Microsoft.VisualStudio.Uml.Interfaces  
   
--   System.ComponentModel.Composition  
+- System.ComponentModel.Composition  
   
- Este exemplo abre um modelo UML no Visual Studio:  
+  Este exemplo abre um modelo UML no Visual Studio:  
   
 ```  
 using EnvDTE; // Visual Studio API for loading diagrams  

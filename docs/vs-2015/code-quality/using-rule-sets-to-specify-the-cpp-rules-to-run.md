@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d343139a23453af12555b4ffbec8e3de7e2a827
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2b3aed9e2504011a61fe13acdf4a836cb41f8df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230863"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859662"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Usando conjuntos de regras para especificar as regras do C++ para execução
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ Na [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Para criar uma regra personalizada de um único conjunto de regras existente  
   
-1.  No Gerenciador de soluções, abra o menu de atalho para o projeto e, em seguida, escolha **propriedades**.  
+1. No Gerenciador de soluções, abra o menu de atalho para o projeto e, em seguida, escolha **propriedades**.  
   
-2.  Sobre o **propriedades** guia, escolha **análise de código**.  
+2. Sobre o **propriedades** guia, escolha **análise de código**.  
   
-3.  No **do conjunto de regras** lista suspensa, siga um destes procedimentos:  
+3. No **do conjunto de regras** lista suspensa, siga um destes procedimentos:  
   
-    -   Escolha o conjunto de regras que você deseja personalizar.  
+   - Escolha o conjunto de regras que você deseja personalizar.  
   
      \- ou -  
   
-    -   Escolher  **\<procurar... >** especificar uma regra existente definida que não está na lista.  
+   - Escolher  **\<procurar... >** especificar uma regra existente definida que não está na lista.  
   
-4.  Escolher **abrir** para exibir as regras no editor de conjunto de regras.  
+4. Escolher **abrir** para exibir as regras no editor de conjunto de regras.  
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Para modificar uma regra definida no editor de conjunto de regras  
   

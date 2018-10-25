@@ -31,12 +31,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 31e05d98af75758dfcd05ba70c6340c5b7f4be4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286280"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909725"
 ---
 # <a name="file-properties-javascript"></a>Propriedades de arquivo, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,15 +55,15 @@ ms.locfileid: "49286280"
 ### <a name="package-action"></a>Ação do Pacote  
  A propriedade **Ação do Pacote** indica o que o Visual Studio faz com um arquivo quando um build é executado. A **Ação do Pacote** pode ter um valor dentre vários:  
   
--   **Nenhum** – O arquivo não está incluído no manifesto do pacote. Um exemplo é um arquivo de texto que contém a documentação, como um arquivo Leiame.  
+- **Nenhum** – O arquivo não está incluído no manifesto do pacote. Um exemplo é um arquivo de texto que contém a documentação, como um arquivo Leiame.  
   
--   **Conteúdo** – O arquivo está incluído no manifesto do pacote. Por exemplo, essa configuração é o valor padrão para um arquivo .htm, .js, .css, de imagem, de áudio ou de vídeo.  
+- **Conteúdo** – O arquivo está incluído no manifesto do pacote. Por exemplo, essa configuração é o valor padrão para um arquivo .htm, .js, .css, de imagem, de áudio ou de vídeo.  
   
--   **Manifesto** – O arquivo não está incluído no manifesto do pacote. Em vez disso, o arquivo é usado para entrada ao gerar o manifesto do pacote. Esse é o valor padrão do arquivo package.appxmanifest.  
+- **Manifesto** – O arquivo não está incluído no manifesto do pacote. Em vez disso, o arquivo é usado para entrada ao gerar o manifesto do pacote. Esse é o valor padrão do arquivo package.appxmanifest.  
   
--   **Recurso** – O arquivo não está incluído no manifesto do pacote. Em vez disso, o conteúdo do arquivo é indexado no PRI (Índice de Recurso do Pacote) que entra no manifesto do pacote. Normalmente, ele é usado para arquivos de recurso.  
+- **Recurso** – O arquivo não está incluído no manifesto do pacote. Em vez disso, o conteúdo do arquivo é indexado no PRI (Índice de Recurso do Pacote) que entra no manifesto do pacote. Normalmente, ele é usado para arquivos de recurso.  
   
- O valor padrão para **Ação do Pacote** depende da extensão do arquivo adicionado à solução.  
+  O valor padrão para **Ação do Pacote** depende da extensão do arquivo adicionado à solução.  
   
 ### <a name="file-name-property"></a>Propriedade Nome de Arquivo  
  Exibe o nome de arquivo como um valor somente leitura. Para renomear o arquivo, é necessário clicar com o botão direito do mouse no Gerenciador de Soluções e selecionar **Renomear**.  

@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4056a390bf2ed486df6391d48fd17c1d0af2cdad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a3010e6304124ee306c5ecad3593df98d555523
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921828"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Como configurar projetos para destinar várias plataformas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornece uma maneira de uma soluç
   
 #### <a name="to-build-multiple-solution-configurations-at-once"></a>Para criar várias configurações de solução de uma vez  
   
-1.  Use o **Configuration Manager** para adicionar pelo menos duas plataformas de destino para a solução.  
+1. Use o **Configuration Manager** para adicionar pelo menos duas plataformas de destino para a solução.  
   
-2.  Use a janela **Build em Lotes** para criar várias configurações de solução de uma vez.  
+2. Use a janela **Build em Lotes** para criar várias configurações de solução de uma vez.  
   
- É possível ter uma plataforma de solução definida como, por exemplo, [!INCLUDE[vcprx64](../includes/vcprx64-md.md)], e não ter projetos na solução destinados à mesma plataforma. Também é possível ter vários projetos em sua solução, cada um destinado a plataformas diferentes. É recomendável que, se tiver uma dessas situações, você crie uma nova configuração com um nome descritivo para evitar confusão.  
+   É possível ter uma plataforma de solução definida como, por exemplo, [!INCLUDE[vcprx64](../includes/vcprx64-md.md)], e não ter projetos na solução destinados à mesma plataforma. Também é possível ter vários projetos em sua solução, cada um destinado a plataformas diferentes. É recomendável que, se tiver uma dessas situações, você crie uma nova configuração com um nome descritivo para evitar confusão.  
   
 ## <a name="see-also"></a>Consulte também  
  [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md)   

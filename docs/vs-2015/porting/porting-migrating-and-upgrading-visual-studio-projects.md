@@ -24,12 +24,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ec590e3c643f731a9c85bc59c0c36394988f6c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e1aa8ce06603860c2e509854edbd063de2d6f4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925624"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Portando, migrando e atualizando projetos do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,19 +92,19 @@ Quando você estiver considerando se deve ir para uma versão mais recente do Vi
 ## <a name="troubleshooting-project-compatibility-issues"></a>Solucionando problemas de compatibilidade de projeto  
  Aqui estão algumas coisas que você pode fazer quando um projeto não abrir no [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] ou [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]:  
   
--   Se você tenta abrir um projeto que não tem suporte no [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] ou [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] e para que a versão associada do Visual Studio não estiver instalada, talvez seja exibida uma mensagem de que o tipo de projeto não tem suporte e o tipo de projeto pode ser listado na  **Examinar alterações de projeto e solução** caixa de diálogo de **sem suporte a projetos**. Para resolver esse problema, abra a página de programas e recursos no Windows **painel de controle**, selecione **Visual Studio**e, em seguida, escolha **alteração**, **reparo** . Em seguida, você pode instalar a versão ausente.  
+- Se você tenta abrir um projeto que não tem suporte no [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] ou [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] e para que a versão associada do Visual Studio não estiver instalada, talvez seja exibida uma mensagem de que o tipo de projeto não tem suporte e o tipo de projeto pode ser listado na  **Examinar alterações de projeto e solução** caixa de diálogo de **sem suporte a projetos**. Para resolver esse problema, abra a página de programas e recursos no Windows **painel de controle**, selecione **Visual Studio**e, em seguida, escolha **alteração**, **reparo** . Em seguida, você pode instalar a versão ausente.  
   
--   Se você tenta abrir um projeto para um aplicativo da área de trabalho no [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], ocorrerá um erro e uma dessas mensagens é exibida: "Esta edição do Visual Studio dá suporte apenas a [!INCLUDE[win81](../includes/win81-md.md)] aplicativos" ou "Este projeto é incompatível com a edição atual do Visual Studio". [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] é restrito para o desenvolvimento, teste e implantação de aplicativos da Windows Store projetado para Windows 8.1. Para abrir um projeto de aplicativo da área de trabalho, você deve usar uma edição do Visual Studio que ofereça suporte a esse tipo de projeto.  
+- Se você tenta abrir um projeto para um aplicativo da área de trabalho no [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], ocorrerá um erro e uma dessas mensagens é exibida: "Esta edição do Visual Studio dá suporte apenas a [!INCLUDE[win81](../includes/win81-md.md)] aplicativos" ou "Este projeto é incompatível com a edição atual do Visual Studio". [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] é restrito para o desenvolvimento, teste e implantação de aplicativos da Windows Store projetado para Windows 8.1. Para abrir um projeto de aplicativo da área de trabalho, você deve usar uma edição do Visual Studio que ofereça suporte a esse tipo de projeto.  
   
-     Para obter mais informações sobre as edições do Visual Studio, consulte [produtos do Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=254332)  
+   Para obter mais informações sobre as edições do Visual Studio, consulte [produtos do Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=254332)  
   
--   Se você tentar abrir um projeto de aplicativo da Windows Store no [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop, ocorrerá um erro. O [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop não pode ser usado para compilar aplicativos da Windows Store. Se desejar compilar aplicativos da Windows Store, você também poderá instalar o [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]. Ou, para desenvolver aplicativos para todas as plataformas da Microsoft e da Web, tente o Visual Studio Professional 2013.  
+- Se você tentar abrir um projeto de aplicativo da Windows Store no [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop, ocorrerá um erro. O [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop não pode ser usado para compilar aplicativos da Windows Store. Se desejar compilar aplicativos da Windows Store, você também poderá instalar o [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]. Ou, para desenvolver aplicativos para todas as plataformas da Microsoft e da Web, tente o Visual Studio Professional 2013.  
   
--   Se um projeto exigir recursos específicos do [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], ele não poderá ser aberto em uma versão anterior.  
+- Se um projeto exigir recursos específicos do [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], ele não poderá ser aberto em uma versão anterior.  
   
--   Se estiver usando o [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e desejar abrir um projeto criado no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], você poderá personalizar o sistema do projeto para incorporar recursos do [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Para obter informações sobre como fazer isso, consulte [tornando personalizar projetos de reconhecimento de versão](../misc/making-custom-projects-version-aware.md).  
+- Se estiver usando o [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e desejar abrir um projeto criado no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], você poderá personalizar o sistema do projeto para incorporar recursos do [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Para obter informações sobre como fazer isso, consulte [tornando personalizar projetos de reconhecimento de versão](../misc/making-custom-projects-version-aware.md).  
   
- Para obter informações adicionais de solução de problemas, consulte o [compatibilidade do Visual Studio 2013](http://support.microsoft.com/kb/2863286) artigo KB.  
+  Para obter informações adicionais de solução de problemas, consulte o [compatibilidade do Visual Studio 2013](http://support.microsoft.com/kb/2863286) artigo KB.  
   
 ##  <a name="file"></a> Arquivos  
  A lista a seguir identifica se o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] oferece suporte a cada tipo de arquivo, se você pode abrir o arquivo no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e no Visual Studio 2010 SP1, e se você precisa modificá-lo para garantir a compatibilidade.  

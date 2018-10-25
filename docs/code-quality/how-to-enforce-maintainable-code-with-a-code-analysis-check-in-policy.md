@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 402b8e24b68f39524a9095a6ad5b177ab963f05a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f0121efb2e226b2407eee7eea50354a80482b1cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892084"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Como: impor um código com uma política de check-in do análise código
 
@@ -47,15 +47,15 @@ Os administradores de controle de versão do Team Foundation podem adicionar as 
 
 2. Marque as caixas de seleção para as seguintes regras:
 
-    -   Profundidade de herança: **CA1501 AvoidExcessiveInheritance** -limite: aviso em mais de 5 níveis de profundidade
+   - Profundidade de herança: **CA1501 AvoidExcessiveInheritance** -limite: aviso em mais de 5 níveis de profundidade
 
-    -   Complexidade: **CA1502 AvoidExcessiveComplexity** -limite: aviso em mais de 25
+   - Complexidade: **CA1502 AvoidExcessiveComplexity** -limite: aviso em mais de 25
 
-    -   Índice de facilidade de manutenção: **CA1505 AvoidUnmaintainableCode** -limite: aviso em menos de 20
+   - Índice de facilidade de manutenção: **CA1505 AvoidUnmaintainableCode** -limite: aviso em menos de 20
 
-    -   Acoplamento de classes: **CA1506 AvoidExcessiveClassCoupling** -limite: aviso em mais de 80 para uma classe e mais de 30 para um método
+   - Acoplamento de classes: **CA1506 AvoidExcessiveClassCoupling** -limite: aviso em mais de 80 para uma classe e mais de 30 para um método
 
-    Além disso, se você quiser uma violação de regra para impedir que uma compilação bem-sucedida, selecione a **tratar aviso como um erro** caixa de seleção ao lado da descrição da regra.
+     Além disso, se você quiser uma violação de regra para impedir que uma compilação bem-sucedida, selecione a **tratar aviso como um erro** caixa de seleção ao lado da descrição da regra.
 
 3. Clique em **OK**. A nova política de check-in agora se aplica ao check-ins futuras.
 

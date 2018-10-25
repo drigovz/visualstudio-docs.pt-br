@@ -15,12 +15,12 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8204dcfc7a0d8937551914ebedbc035767127507
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7255ed981bd65e364d1028c365aab66a73a76dcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292651"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815995"
 ---
 # <a name="solutions-overview"></a>Visão geral das soluções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ Uma solução é um agrupamento de um ou mais projetos que trabalham juntos para
   
  Quando uma solução é aberta, o seguinte processo ocorre.  
   
-1.  O ambiente lê a solução.  
+1. O ambiente lê a solução.  
   
-2.  Se o ambiente de encontrar um `CLSID`, ele carrega o VSPackage correspondente.  
+2. Se o ambiente de encontrar um `CLSID`, ele carrega o VSPackage correspondente.  
   
-3.  Se um VSPackage é carregado, as chamadas de ambiente `QueryInterface` para <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> interface para a interface que requer o VSPackage.  
+3. Se um VSPackage é carregado, as chamadas de ambiente `QueryInterface` para <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> interface para a interface que requer o VSPackage.  
   
-    1.  Ao ler de um arquivo. sln, o ambiente chama `QueryInterface` para `IVsPersistSolutionProps`.  
+   1.  Ao ler de um arquivo. sln, o ambiente chama `QueryInterface` para `IVsPersistSolutionProps`.  
   
-    2.  Ao ler de um arquivo. suo, o ambiente chama `QueryInterface` para `IVsPersistSolutionOpts`.  
+   2.  Ao ler de um arquivo. suo, o ambiente chama `QueryInterface` para `IVsPersistSolutionOpts`.  
   
- Informações específicas relacionadas ao uso desses arquivos podem ser encontradas no [solução (. Arquivo DPD)](../../extensibility/internals/solution-dot-sln-file.md) e [opções de usuário da solução (. Arquivo suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
+   Informações específicas relacionadas ao uso desses arquivos podem ser encontradas no [solução (. Arquivo DPD)](../../extensibility/internals/solution-dot-sln-file.md) e [opções de usuário da solução (. Arquivo suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
 > [!NOTE]
 >  Se você quiser criar uma nova configuração de solução consiste em configurações de dois projetos e exclusão de um terço da compilação, você precisa usar a automação ou páginas de propriedade de interface do usuário. Você não pode alterar as configurações de Gerenciador de build da solução e suas propriedades diretamente, mas você pode manipular o Gerenciador de build da solução usando o `SolutionBuild` classe do DTE no modelo de automação. Para obter mais informações sobre a configuração de soluções, consulte [configuração da solução](../../extensibility/internals/solution-configuration.md).  

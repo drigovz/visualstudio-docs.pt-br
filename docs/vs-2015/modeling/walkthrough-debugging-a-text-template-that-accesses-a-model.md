@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b8fd24f6c1e9b0427746296efa9a839bf46ed7ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924883"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Instruções passo a passo: depurando um modelo (template) de texto que acessa um modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ Quando você modificar ou adicionar modelos de texto em uma solução de linguag
 ## <a name="creating-a-domain-specific-language-solution"></a>Criando uma solução de linguagem específica do domínio  
  Neste procedimento, você deve criar uma solução de linguagem específica de domínio que tem as seguintes características:  
   
--   Nome: DebuggingTestLanguage  
+- Nome: DebuggingTestLanguage  
   
--   Modelo de solução: linguagem mínima  
+- Modelo de solução: linguagem mínima  
   
--   Extensão de arquivo: .ddd  
+- Extensão de arquivo: .ddd  
   
--   Nome da empresa: Fabrikam  
+- Nome da empresa: Fabrikam  
   
- Para obter mais informações sobre como criar uma solução de linguagem específica de domínio, consulte [como: criar uma solução de linguagem específica do domínio](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+  Para obter mais informações sobre como criar uma solução de linguagem específica de domínio, consulte [como: criar uma solução de linguagem específica do domínio](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="creating-a-text-template"></a>Criando um modelo de texto  
  Adicione um modelo de texto à sua solução.  

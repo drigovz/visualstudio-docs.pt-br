@@ -26,12 +26,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bea3ca5adf462ec6c403099c8276bbdb87e4b57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67cc55d47e10093b440597ce464d7cc058689455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920359"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Criando perfil em clusters HPC (computação de alto desempenho)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Você pode criar um perfil em nós de computação de clusters do Microsoft Wind
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para criar o perfil em um nó de computação do HPC, faça o seguinte:  
   
--   Instale o Microsoft HPC Pack 2008 no mesmo computador como [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. O computador não precisa fazer parte do cluster de HPC. Você pode instalar o HPC Pack por meio do [Centro de Download da Microsoft](http://go.microsoft.com/fwlink/?LinkID=177414).  
+- Instale o Microsoft HPC Pack 2008 no mesmo computador como [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. O computador não precisa fazer parte do cluster de HPC. Você pode instalar o HPC Pack por meio do [Centro de Download da Microsoft](http://go.microsoft.com/fwlink/?LinkID=177414).  
   
--   Instale o [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] e a versão autônoma das Ferramentas de Criação de Perfil do nó de computação do HPC. Programas de instalação estão disponíveis para ambos o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] e o criador de perfil autônomo na mídia de instalação do [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]. **Observação** Você deve reiniciar a computação depois de ter instalado [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] e antes de instalar as ferramentas de criação de perfil.  
+- Instale o [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] e a versão autônoma das Ferramentas de Criação de Perfil do nó de computação do HPC. Programas de instalação estão disponíveis para ambos o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] e o criador de perfil autônomo na mídia de instalação do [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]. **Observação** Você deve reiniciar a computação depois de ter instalado [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] e antes de instalar as ferramentas de criação de perfil.  
   
- Para instalar o [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] e as Ferramentas de Criação de perfil autônomas em um nó de computação do HPC ativo e habilitar a criação de perfil no computador do cluster, execute estas etapas:  
+  Para instalar o [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] e as Ferramentas de Criação de perfil autônomas em um nó de computação do HPC ativo e habilitar a criação de perfil no computador do cluster, execute estas etapas:  
   
 1.  Abra a janela de prompt de comando que é instalada com o HPC pack.  
   
