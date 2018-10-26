@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0a3b14086957d37809c8fbcba88386daff57be4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e28653749b19c9f53bd8e43e245fd8dcb20aa31
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891993"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050256"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associar uma região de formulário uma classe de mensagem do Outlook
   Você pode especificar quais itens do Microsoft Office Outlook exibem uma região de formulário por meio da associação a região do formulário com a classe message de cada item. Por exemplo, se você deseja acrescentar uma região de formulário na parte inferior de um item de email, você pode associar a região do formulário com o `IPM.Note` classe de mensagem.  
@@ -111,7 +111,7 @@ ms.locfileid: "49891993"
  [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)   
  [Passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Diretrizes para criar regiões de formulário do Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [Visão geral da classe de nome e a mensagem de formulário](http://msdn.microsoft.com/library/office/ff867629.aspx)   
- [Como os formulários do Outlook e itens funcionam juntos](http://msdn.microsoft.com/library/office/ff869706.aspx)  
+ [Visão geral da classe de nome e a mensagem de formulário](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)   
+ [Como os formulários do Outlook e itens funcionam juntos](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)  
   
   
