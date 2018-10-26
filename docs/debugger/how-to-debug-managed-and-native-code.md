@@ -2,7 +2,7 @@
 title: 'Tutorial: Depurar código gerenciado e nativo (modo misto)'
 description: Saiba como depurar uma DLL nativa de um aplicativo .NET Core ou .NET Framework usando a depuração de modo misto
 ms.custom: ''
-ms.date: 04/27/2018
+ms.date: 10/24/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
@@ -16,14 +16,14 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 1f34f6af0a98e71f5feb910f84e8d67ada051ae9
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 97ad3b6e112a05db817f7a522c3865893d439fd7
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057031"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050320"
 ---
-# <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>Tutorial: Depurar código gerenciado e nativo no Visual Studio
+# <a name="tutorial-debug-managed-and-native-code-in-the-same-debugging-session"></a>Tutorial: Depurar código gerenciado e nativo na mesma sessão de depuração
 
 Visual Studio permite que você habilitar mais de um tipo de depurador durante a depuração, que é chamado de depuração de modo misto. Neste tutorial, você deve definir opções para depurar código gerenciado e nativo em uma única sessão de depuração. Este tutorial mostra como depurar código nativo de um aplicativo gerenciado, mas você também pode fazer o inverso, e [depurar código gerenciado de um aplicativo nativo](../debugger/how-to-debug-in-mixed-mode.md). O depurador também oferece suporte a outros tipos de depuração de modo misto, como a depuração [Python e o código nativo](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md) e usando o depurador de scripts em tipos de aplicativo, como o ASP.NET.
 
@@ -40,9 +40,9 @@ Neste tutorial, você irá:
 
 * Você deve ter instalado o Visual Studio e o **desenvolvimento para Desktop com C++** carga de trabalho.
 
-    Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
+    Se você ainda não instalou o Visual Studio, vá para o [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) página para instalá-lo gratuitamente.
 
-    Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
+    Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
 
 * Você deve também ter o **desenvolvimento de área de trabalho do .NET** carga de trabalho ou o **.NET Core desenvolvimento multiplataforma** a carga de trabalho instalada, dependendo do tipo de qual aplicativo você deseja criar.
 
@@ -50,26 +50,26 @@ Neste tutorial, você irá:
 
 1. No Visual Studio, escolha **arquivo** > **New** > **projeto**.
 
-1. No **novo projeto** diálogo caixa, escolha **Visual C++**, **geral** na seção modelos instalados e, em seguida, no painel central, selecione **projeto vazio** .
+1. No **novo projeto** diálogo caixa, escolha **Visual C++**, **outros** na seção modelos instalados e, em seguida, no painel central, selecione **projeto vazio** .
 
-1. No **nome** , digite **depuração de modo misto** e clique em **Okey**.
+1. No **nome** , digite **Mixed_Mode_Debugging** e clique em **Okey**.
 
     Visual Studio cria o projeto vazio, o que é exibido no Gerenciador de soluções, no painel direito.
 
-1. No Gerenciador de soluções, clique com botão direito do **arquivos de origem** nó em C++ do projeto e, em seguida, escolha **Add** > **Novo Item**e, em seguida, selecione **C++ arquivo (. cpp)**. Dê ao arquivo o nome **Mixed Mode.cpp**e escolha **Add**.
+1. No Gerenciador de soluções, clique com botão direito do **arquivos de origem** nó em C++ do projeto e, em seguida, escolha **Add** > **Novo Item**e, em seguida, selecione **C++ arquivo (. cpp)**. Dê ao arquivo o nome **Mixed_Mode.cpp**e escolha **Add**.
 
     Visual Studio adiciona o novo arquivo C++.
 
-1. Copie o seguinte código para *Mixed Mode.cpp*:
+1. Copie o seguinte código para *Mixed_Mode.cpp*:
 
     ```cpp
     #include "Mixed_Mode.h"
     ```
-1. No Gerenciador de soluções, clique com botão direito do **arquivos de cabeçalho** nó em C++ do projeto e, em seguida, escolha **Add** > **Novo Item**e, em seguida, selecione  **O arquivo de cabeçalho (. h)**. Dê ao arquivo o nome **Mixed Mode.h**e escolha **Add**.
+1. No Gerenciador de soluções, clique com botão direito do **arquivos de cabeçalho** nó em C++ do projeto e, em seguida, escolha **Add** > **Novo Item**e, em seguida, selecione  **O arquivo de cabeçalho (. h)**. Dê ao arquivo o nome **Mixed_Mode.h**e escolha **Add**.
 
     Visual Studio adiciona o novo arquivo de cabeçalho.
 
-1. Copie o seguinte código para *Mixed Mode.h*:
+1. Copie o seguinte código para *Mixed_Mode.h*:
 
     ```cpp
     #ifndef MIXED_MODE_MULTIPLY_HPP
@@ -84,26 +84,29 @@ Neste tutorial, você irá:
     #endif
     ```
 
-1. Na barra de ferramentas de depuração, selecione uma **Debug** configuração e **qualquer CPU** como a plataforma ou, para o .NET Core, selecione **x64** como a plataforma.
+1. Na barra de ferramentas de depuração, selecione uma **Debug** configuração e **x86** ou **x64** como a plataforma (para .NET Core, que sempre é executado no modo de 64 bits, selecione **x64**  como a plataforma).
 
-    > [!NOTE]
-    > No .NET Core, escolha **x64** como a plataforma. .NET core sempre é executado no modo de 64 bits, portanto, isso é necessário.
+1. No Gerenciador de soluções, clique com botão direito no nó do projeto (**Mixed_Mode_Debugging**) e escolha **propriedades**.
 
-1. No Gerenciador de soluções, clique com botão direito no nó do projeto (**depuração de modo misto**) e escolha **propriedades**.
+    > [!IMPORTANT]
+    > Configuração de propriedade para C++ é por plataforma. Assim, se você alternar de um para a outra (x86 para x64 ou vice-versa), você também deve definir as propriedades para a nova configuração. (Na página de propriedades, verifique **x64** ou **Win32** é definida como a plataforma na parte superior da página.)
 
-1. No **propriedades** , escolha **propriedades de configuração** > **vinculador** > **avançado**, e em seguida, nos **nenhum ponto de entrada** lista suspensa, selecione **não**. Em seguida, aplica configurações.
+1. No **propriedades** , escolha **propriedades de configuração** > **vinculador** > **avançado**, e em seguida, nos **nenhum ponto de entrada** suspensa lista, certifique-se de que **não** está selecionado. Se você precisar alterar a configuração para **nenhuma**, em seguida, escolha **aplicar**.
 
 1. No **propriedades** , escolha **propriedades de configuração** > **geral**e, em seguida, selecione **biblioteca dinâmica (. dll)** partir de **tipo de configuração** campo. Em seguida, aplica configurações.
 
     ![Alternar para uma DLL nativa](../debugger/media/mixed-mode-set-as-native-dll.png)
 
-1. Clique com botão direito no projeto e escolha **Debug** > **Build**.
+1. Clique com botão direito no projeto e escolha **Build**.
 
     O projeto deve ser compilado sem erros.
 
 ## <a name="create-a-simple-net-framework-or-net-core-app-to-call-the-dll"></a>Criar um aplicativo simples do .NET Framework ou .NET Core para chamar a DLL
 
 1. No Visual Studio, escolha **arquivo** > **New** > **projeto**.
+
+    > [!NOTE]
+    > Embora você também pode adicionar o novo projeto gerenciado para a solução com o projeto C++, em vez de criar uma nova solução, não estamos fazendo que aqui para dar suporte a um conjunto maior de cenários de depuração.
 
 1. Escolha um modelo para o código do aplicativo.
 
@@ -128,9 +131,9 @@ Neste tutorial, você irá:
             // Replace the file path shown here with the
             // file path on your computer. For .NET Core, the typical (default) path
             // for a 64-bit DLL might look like this:
-            // C:\Users\username\source\repos\Mixed-Mode-Debugging\x64\Debug\Mixed-Mode-Debugging.dll
-            // Here, we show a typical path for a DLL targeting the **Any CPU** option.
-            [DllImport(@"C:\Users\username\source\repos\Mixed-Mode-Debugging\Debug\Mixed-Mode-Debugging.dll", EntryPoint =
+            // C:\Users\username\source\repos\Mixed_Mode_Debugging\x64\Debug\Mixed_Mode_Debugging.dll
+            // Here, we show a typical path for a DLL targeting the **x86** option.
+            [DllImport(@"C:\Users\username\source\repos\Mixed_Mode_Debugging\Debug\Mixed_Mode_Debugging.dll", EntryPoint =
             "mixed_mode_multiply", CallingConvention = CallingConvention.StdCall)]
             public static extern int Multiply(int x, int y);
             public static void Main(string[] args)
@@ -142,6 +145,8 @@ Neste tutorial, você irá:
         }
     }
     ```
+
+1. No novo código, atualize o caminho do arquivo para o caminho para a DLL que você criou anteriormente (consulte comentários do código). Verifique se você substituir a *nome de usuário* espaço reservado.
 
 ## <a name="configure-mixed-mode-debugging-net-framework"></a>Configurar o modo misto de depuração (.NET Framework)
 
