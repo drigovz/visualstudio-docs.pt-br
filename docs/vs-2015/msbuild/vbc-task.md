@@ -24,12 +24,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fe2bb17979b7bc4fd068ddd7fb309446c88b7f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f97e3ad4321cb8503a964115922f06e62f2c121
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184243"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143418"
 ---
 # <a name="vbc-task"></a>Tarefa Vbc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Encapsula vbc.exe, que produz executáveis (.exe), bibliotecas de vínculo dinâ
 |`NoLogo`|Parâmetro `Boolean` opcional.<br /><br /> Se for `true`, suprimirá a exibição de informações da barra de notificação do compilador. Esse parâmetro corresponde à opção [/nologo](http://msdn.microsoft.com/library/25ef54b6-d676-4639-a2d2-a747a158bc07) do compilador vbc.exe.|  
 |`NoStandardLib`|Parâmetro `Boolean` opcional.<br /><br /> Faz com que o compilador não referencie as bibliotecas padrão. Esse parâmetro corresponde à opção [/nostdlib](http://msdn.microsoft.com/library/140381b8-dc96-4ad5-ae11-792c9ed0be4d) do compilador vbc.exe.|  
 |`NoVBRuntimeReference`|Parâmetro `Boolean` opcional.<br /><br /> Apenas para uso interno. Se verdadeiro, impede a referência automática para Microsoft.VisualBasic.dll.|  
-|`NoWarnings`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, a tarefa suprime todos os avisos. Para obter mais informações, consulte [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).|  
+|`NoWarnings`|Parâmetro `Boolean` opcional.<br /><br /> Se ele for `true`, a tarefa suprimirá todos os avisos. Para obter mais informações, consulte [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).|  
 |`Optimize`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, habilita as otimizações do compilador. Esse parâmetro corresponde à opção [/optimize](http://msdn.microsoft.com/library/fcba4a97-3622-4b87-a891-0f77deab4998) do compilador vbc.exe.|  
 |`OptionCompare`|Parâmetro `String` opcional.<br /><br /> Especifica como são feitas comparações de cadeia de caracteres. Esse parâmetro pode ter os seguintes valores:<br /><br /> -   `binary`<br />-   `text`<br /><br /> O valor `binary` especifica que a tarefa usa comparações de cadeia de caracteres binária. O valor `text` especifica que a tarefa usa comparações de cadeia de caracteres de texto. O valor padrão desse parâmetro é `binary`. Esse parâmetro corresponde à opção [/optioncompare](http://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4) do compilador vbc.exe.|  
 |`OptionExplicit`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, a declaração explícita de variáveis é necessária. Esse parâmetro corresponde à opção [/optionexplicit](http://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7) do compilador vbc.exe.|  
