@@ -9,12 +9,12 @@ dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 735b4891449d139058b7cf114639390f6a930b55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6595e8990dece15e88e07a6c8eefabd3f543bbb7
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908334"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143457"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de diretrizes principais do C++
 Diretrizes principais do C++ são um conjunto portátil de diretrizes, regras e as práticas recomendadas sobre como codificar em C++ criado pelos designers e especialistas em C++. Atualmente, o Visual Studio suporta um subconjunto dessas regras como parte de suas ferramentas de análise de código para C++. Os verificadores de diretrizes de núcleo são instalados por padrão no Visual Studio 2017 e são [disponível como um pacote do NuGet para Visual Studio 2015](#vs2015_corecheck).
@@ -134,10 +134,10 @@ Essas macros correspondem aos conjuntos de regras e expandem em uma lista separa
 O compilador Microsoft Visual C++ tem um suporte limitado para a GSL suprimir o atributo. Ele pode ser usado para suprimir avisos em expressões e instruções de blocos dentro de uma função.
 
 ```cpp
-// Supress only warnings from the 'r.11' rule in expression.
+// Suppress only warnings from the 'r.11' rule in expression.
 [[gsl::suppress(r.11)]] new int;
 
-// Supress all warnings from the 'r' rule group (resource management) in block.
+// Suppress all warnings from the 'r' rule group (resource management) in block.
 [[gsl::suppress(r)]]
 {
     new int;
