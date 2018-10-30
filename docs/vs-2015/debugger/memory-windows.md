@@ -32,19 +32,19 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 140d3e0fb721c9913de6feb6f1ed9249c8b75cfa
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925494"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219517"
 ---
 # <a name="memory-windows"></a>Janelas de memória
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O **memória** janela fornece uma exibição no espaço de memória que é usado pelo seu aplicativo. O **Watch** janela, **QuickWatch** caixa de diálogo **Autos** janela, e **Locals** janela Mostrar o conteúdo de variáveis, que são armazenados em locais específicos na memória. Mas o **memória** janela mostra a imagem em grande escala. Esta exibição pode ser conveniente para examinar grandes partes de dados (buffers ou grandes cadeias de caracteres, por exemplo) que não são exibidas corretamente nas outras janelas. No entanto, o **memória** janela não é limitada a exibir dados. Ela exibirá tudo no espaço de memória, não importa se o conteúdo for dados, código ou bits aleatórios de lixo na memória não atribuída.  
   
- O **memória** janela está disponível somente se a depuração do nível de endereços estiver habilitada na **opções**caixa de diálogo**depuração** nó. O **memória** janela não está disponível para o Script ou SQL, que são linguagens que não reconhecem o conceito de memória.  
+ O **memória** janela está disponível somente se a depuração do nível de endereços estiver habilitada na **opções** caixa de diálogo**depuração** nó. O **memória** janela não está disponível para o Script ou SQL, que são linguagens que não reconhecem o conceito de memória.  
   
 ## <a name="opening-a-memory-window"></a>Abrindo uma janela de memória  
   

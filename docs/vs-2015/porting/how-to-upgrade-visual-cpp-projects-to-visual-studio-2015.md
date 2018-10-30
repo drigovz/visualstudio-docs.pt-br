@@ -16,17 +16,17 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a8673d2d1648acad973ebfa339e0334a5c1fd769
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dea8f8ff1354ac2729c7c11b6ff575b90837af66
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188559"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220063"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Como: atualizar projetos do Visual C++ para o Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente do Visual Studio 2017, consulte [guia de atualização e portabilidade do Visual C++](https://docs.microsoft.com/en-us/cpp/porting/visual-cpp-porting-and-upgrading-guide).
+Para obter a documentação mais recente do Visual Studio 2017, consulte [guia de atualização e portabilidade do Visual C++](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide).
 
 Quando você abre primeiro um projeto do Visual C++ que foi criado em uma versão anterior do Visual Studio, poderá ser solicitado que você atualize o projeto. A mensagem pergunta se você deseja atualizar para a versão mais recente do compilador e das bibliotecas do Visual C++. As opções de atualização dependem da versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que foi usada para criar o projeto.  
   

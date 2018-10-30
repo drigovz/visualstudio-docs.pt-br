@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ea54b743853bba445618ad3b6e08fd9a9a54027
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86c766f776195da17a33b9d52570a2867f700c9b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271044"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219985"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Opções, Editor de Texto, JavaScript, Formatação
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Use a página **Formatação** da caixa de diálogo **Opções** para definir op
 |**Colocar chave de abertura na nova linha para blocos de controle**|Quando essa opção é selecionada, o Editor de Código move a chave de abertura associada a um bloco de controle (por exemplo, os blocos de controle `if` e `while`) para uma nova linha.|  
   
 ## <a name="spacing"></a>Espaçamento  
- Essas opções determinam como os espaços são inseridos na exibição **Fonte**.  
+ Essas opções determinam como os espaços são inseridos no **origem** modo de exibição.  
   
 ## <a name="uielement-list"></a>Lista UIElement  
   

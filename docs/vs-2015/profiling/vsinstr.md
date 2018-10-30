@@ -23,12 +23,12 @@ caps.latest.revision: 49
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88e5815abbd9b773db1b6c35f2ecbbf08fd4862f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70ebc816b5bf0b2b27805499ebd688f62431a87f
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291289"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220281"
 ---
 # <a name="vsinstr"></a>VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ VSInstr [/U] filename [/options]
 |**ExcludeSmallFuncs**|Exclui funções pequenas, que são funções curtas que não fazem chamadas de função, da instrumentação. A opção **ExcludeSmallFuncs** oferece menos sobrecarga devido à instrumentação, portanto, uma velocidade de instrumentação aprimorada.<br /><br /> A exclusão de pequenas funções também reduz o tamanho do arquivo .vsp e o tempo necessário para análise.|  
 |**Marca:**{**Antes**`&#124;`**Depois**`&#124;`**Superior**`&#124;`**Inferior**}`,funcname,markid`|Insere uma marca de perfil (um identificador usado para delimitar os dados em relatórios) que você pode usar para identificar o início ou término de um intervalo de dados no arquivo de relatório. vsp.<br /><br /> **Before** – Imediatamente antes da entrada da função de destino.<br /><br /> **After** – Imediatamente depois da saída da função de destino.<br /><br /> **Top** – Imediatamente depois da entrada da função de destino.<br /><br /> **Bottom** – Imediatamente antes de cada retorno na função de destino.<br /><br /> `funcname` – Nome da função de destino<br /><br /> `Markid` – Um inteiro positivo (longo) para usar como o identificador da marca de perfil.|  
 |**Cobertura**|Executa a instrumentação de cobertura. Pode ser usado apenas com as seguintes opções: **Verbose**, **OutputPath**, **Exclude** e **Logfile**.|  
-|**Verbose**|A opção **Verbose** é usada para exibir informações detalhadas sobre o processo de instrumentação.|  
+|**Verbose**|O **Verbose** opção é usada para exibir informações detalhadas sobre o processo de instrumentação.|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|Suprime todos os avisos ou avisos específicos.<br /><br /> `Message Number` – o número o aviso. Se `Message Number` for omitido, todos os avisos serão suprimidos.<br /><br /> Para obter mais informações, consulte [Avisos VSInstr](../profiling/vsinstr-warnings.md).|  
 |**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|Especifica o nível de criação de perfil das seguintes opções de controle de coleta de dados VSInstr:<br /><br /> **Iniciar**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread** – Especifica as funções de controle da coleta de dados de nível de thread. A criação de perfil é iniciada ou interrompida somente para o thread atual. O estado da criação de perfil de outros threads não é afetado. O padrão é thread.<br /><br /> **Process** – Especifica as funções de controle da coleta de dados da criação de perfil em nível de processo. A criação de perfil é iniciada ou interrompida para todos os threads no processo atual. O estado da criação de perfil de outros processos não é afetado.<br /><br /> **Global** – Especifica as funções de controle de coleta de dados em nível global (processo cruzado).<br /><br /> Se você não especificar o nível de criação de perfil, ocorrerá um erro.|  
 |**Start** `:{` **Inside** `&#124;` **Outside** `},funcname`|Limita a coleta de dados à função de destino e a funções filho chamadas por essa função.<br /><br /> **Inside** – Insere a função StartProfile imediatamente após a entrada na função de destino. Insere a função StopProfile imediatamente antes de cada retorno na função de destino.<br /><br /> **Outside** – Insere a função StartProfile imediatamente antes de cada chamada à função de destino. Insere a função StopProfile imediatamente depois de cada chamada à função de destino.<br /><br /> `funcname` – o nome da função de destino.|  

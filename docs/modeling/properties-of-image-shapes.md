@@ -14,14 +14,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e492996a194c6602af3ec412b86f7477ef233e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d69db4619aaa3b0f2dde4ab5daac0bd31e958975
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928705"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220102"
 ---
 # <a name="properties-of-image-shapes"></a>Propriedades de formas de imagem
+
 Você pode usar formas de imagem para especificar como as classes de domínio são exibidos em um designer gerado. Definir uma forma de imagem, definindo o `Image` propriedade da classe para um arquivo de imagem predefinidos. Há suporte para os seguintes formatos:
 
 - .gif
@@ -38,11 +39,11 @@ Você pode usar formas de imagem para especificar como as classes de domínio s�
 
 - .png
 
-  Por padrão, os arquivos de recurso de designer, como arquivos de imagem, estão localizados na **recursos**pasta o **Dsl** projeto.
+Por padrão, os arquivos de recurso de designer, como arquivos de imagem, estão localizados na **recursos** pasta o **Dsl** projeto.
 
-  Para obter mais informações, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [personalizando e estendendo uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Para obter mais informações, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [personalizando e estendendo uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-  Formas de imagem têm as propriedades que são listadas na tabela a seguir.
+Formas de imagem têm as propriedades que são listadas na tabela a seguir.
 
 |Propriedade|Descrição|Padrão|
 |-|-|-|

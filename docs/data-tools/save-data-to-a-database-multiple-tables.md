@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2d4183a5bcfac62e9f6a1ad1509078bc6e534e68
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: c01af7a02dc8d6909b878b22dc3d40d0f3e0dfce
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174391"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220333"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvar dados em um banco de dados (várias tabelas)
 Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados de um formulário em um aplicativo do Windows, editar e enviá-los atualizados de volta para o banco de dados. Essa explicação passo a passo cria um formulário que exibe dados de duas tabelas relacionadas e mostra como editar registros e salvar alterações no banco de dados. Este exemplo usa as tabelas `Customers` e `Orders` do banco de dados de exemplo Northwind.
@@ -86,7 +86,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 1.  Sobre o **dados** menu, selecione **Show Data Sources**.
 
-2.  No **fontes de dados** janela, selecione**Add New Data Source** para iniciar o **Data Source Configuration Wizard**.
+2.  No **fontes de dados** janela, selecione **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.
 
 3.  Sobre o **escolher um tipo de fonte de dados** tela, selecione **banco de dados**e, em seguida, selecione **próxima**.
 
@@ -102,7 +102,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 6.  Sobre o **salvar a cadeia de caracteres de conexão para o arquivo de configuração de aplicativo**, selecione **próxima**.
 
-7.  Sobre o **Choose your Database Objects**, expanda o **tabelas** nó.
+7.  Sobre o **Choose your Database Objects** , expanda o **tabelas** nó.
 
 8.  Selecione o **clientes** e **pedidos** tabelas e, em seguida, selecione **concluir**.
 

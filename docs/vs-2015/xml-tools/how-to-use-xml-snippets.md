@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4da9c5cd5d4aaf3a99fd891a814b1f8ccef04ac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 774a0f5639057ea5b1dc190ce475278477a7f373
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245850"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219608"
 ---
 # <a name="how-to-use-xml-snippets"></a>Como: Use snippets XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Você pode chamar snippets XML usando os dois seguintes comandos no menu de atal
   
  Pressionando ENTER ou o ESC cancela a edição de campo e retorna o editor a normal.  
   
- As cores padrão para campos de trecho de código editável podem ser alteradas modificando a configuração do campo de trecho de código na **fontes e cores** painel da **opção**caixa de diálogo. Para obter mais informações, consulte [como: alterar fontes e cores no Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
+ As cores padrão para campos de trecho de código editável podem ser alteradas modificando a configuração do campo de trecho de código na **fontes e cores** painel da **opções** caixa de diálogo. Para obter mais informações, consulte [como: alterar fontes e cores no Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Trechos de código XML](../xml-tools/xml-snippets.md)   

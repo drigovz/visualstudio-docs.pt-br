@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f029cad2b0c8cb215a054502de5bc693cce5df5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928952"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219777"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Solucionar problemas de soluções do SharePoint
   Os seguintes problemas ou alertas que podem ocorrer quando você depura soluções do SharePoint usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador. Para obter mais informações, consulte [depuração de soluções de fluxo de trabalho do SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -136,7 +136,7 @@ ms.locfileid: "49928952"
   
 -   Instale o [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].  
   
--   Certifique-se de que você tem acesso de administrador para o site do SharePoint. Para obter mais informações, consulte o [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] artigo Online [atribuir ou remover administradores de aplicativos de serviço no SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
+-   Certifique-se de que você tem acesso de administrador para o site do SharePoint. Para obter mais informações, consulte o [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] artigo Online [atribuir ou remover administradores de aplicativos de serviço no SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Evento de web de exclusão do site não ocorre no projeto de receptor de evento
  Quando você cria um projeto de receptor de evento e selecionar determinados eventos da Web, como "um site está sendo excluído", ocorre o evento nunca.  

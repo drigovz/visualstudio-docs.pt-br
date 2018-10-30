@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba37ffc3bb277590b6cbdd309bc92e1466345183
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 66436f31a0c2f3b895b4f12a5fb352eddf685632
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822093"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219634"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Associar atalhos de teclado aos itens de menu
 Para associar um atalho de teclado a um comando de menu personalizado, basta adicionar uma entrada para o *VSCT* arquivo para o pacote. Este tópico explica como mapear um atalho de teclado para um botão personalizado, o item de menu ou o comando da barra de ferramentas e como aplicar o mapeamento de teclado no editor padrão ou limite-o a um editor personalizado.  
@@ -78,7 +78,7 @@ Para associar um atalho de teclado a um comando de menu personalizado, basta adi
   
    Na maioria das situações, **Shift** não deve ser usado sem um modificador segundo porque pressioná-lo já faz com que a maioria das teclas alfanuméricos digitar uma letra maiuscula ou um símbolo.  
   
-   Códigos de tecla virtual permite que você acesse chaves especiais que não têm um caractere associado a eles, por exemplo, as teclas de função e o **Backspace** chave. Para obter mais informações, consulte [códigos de tecla Virtual](https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes).  
+   Códigos de tecla virtual permite que você acesse chaves especiais que não têm um caractere associado a eles, por exemplo, as teclas de função e o **Backspace** chave. Para obter mais informações, consulte [códigos de tecla Virtual](https://docs.microsoft.com/windows/desktop/inputdev/virtual-key-codes).  
   
    Para tornar o comando disponível no Visual Studio editor, defina as `editor` atributo `guidVSStd97`.  
   

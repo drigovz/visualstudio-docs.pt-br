@@ -32,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cae9f5af0c6b8df6594a78bc7601ac123c349dc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949422"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220229"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -153,7 +153,7 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
 |**Palavra-chave**|Palavras-chave da linguagem específica que são reservadas. Por exemplo: classe e namespace.|  
 |**Endereço de Memória**|A cor do texto usado para exibir a coluna de endereço dentro da janela **Memória**.|  
 |**Memória Alterada**|A cor do texto usado para exibir dados alterados dentro da janela **Memória**.|  
-|**Dados da Memória**|A cor do texto usado para exibir dados dentro da janela **Memória**.|  
+|**Dados da Memória**|A cor do texto usado para exibir dados dentro de **memória** janela.|  
 |**Memória Ilegível**|A cor do texto usado para exibir áreas de memória ilegível dentro da janela **Memória**.|  
 |**Número**|Um número no código que representa um valor numérico real.|  
 |**Operador**|Operadores, como +, - e !=.|  

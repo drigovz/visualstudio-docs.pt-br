@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e7b9955cf71b1d8862274d4b3501cee35ddd080f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0f7c21dcffb7c17f859d79d3aed5522beb14acf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212375"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220528"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Adicionar validação a um conjunto de dados de n camadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ End Sub
   
 3.  Adicione código para verificar que `e.ProposedValue` contém dados que atenda aos requisitos do seu aplicativo. Se o valor proposto for inaceitável, configure a coluna para indicar que ele contém um erro.  
   
-     O exemplo de código a seguir valida que o **quantidade** coluna contém mais do que 0. Se**quantidade** é menor que ou igual a 0, a coluna é definida como um erro. O `Else` cláusula limpa o erro se**quantidade** for maior que 0. O código no manipulador de eventos de alteração de coluna deve se parecer com o seguinte:  
+     O exemplo de código a seguir valida que o **quantidade** coluna contém mais do que 0. Se **quantidade** é menor que ou igual a 0, a coluna é definida como um erro. O `Else` cláusula limpa o erro se **quantidade** for maior que 0. O código no manipulador de eventos de alteração de coluna deve se parecer com o seguinte:  
   
     ```vb  
     If (e.Column.ColumnName = Me.QuantityColumn.ColumnName) Then  

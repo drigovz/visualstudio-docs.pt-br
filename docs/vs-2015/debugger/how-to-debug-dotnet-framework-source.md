@@ -21,12 +21,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c717e1d9eccce48319d8a73dd52d7f13ce36296e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a4dd181a31f8fb092dc8b9156cb9a05a53ecf7e9
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240611"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218389"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Como depurar a origem do .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ A versão mais recente do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornece n
   
 ### <a name="to-enable-net-framework-source-debugging"></a>Para ativar a depuração de origem do .NET Framework  
   
-1.  Sobre o **ferramentas** menu, clique em **opção**s.  
+1.  No menu **Ferramentas**, clique em **Opções**.  
   
 2.  No **opções** caixa de diálogo, clique o **depuração** categoria.  
   
