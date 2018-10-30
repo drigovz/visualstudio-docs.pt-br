@@ -22,12 +22,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf3d47c4e14606a4d3cc3006735fbe04af809600
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6906e68c74bbb718f9bfc041ab35075b3f9b0aa
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195605"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220169"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar como o Visual Studio cria legendas para controles associados a dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,15 +83,15 @@ Quando você arrasta itens dos [janela fontes de dados](http://msdn.microsoft.co
   
 10. Com o botão direito do **Designers de dados** nó e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionSuffix`.  
   
-11. Clique com botão direito do **SmartCaptionExpression** item e, em seguida, selecione**modificar**.  
+11. Clique com botão direito do **SmartCaptionExpression** item e, em seguida, selecione **modificar**.  
   
 12. Insira a expressão regular que você deseja que o **fontes de dados** janela a ser usado.  
   
-13. Clique com botão direito do **SmartCaptionReplacement** item e, em seguida, selecione**modificar**.  
+13. Clique com botão direito do **SmartCaptionReplacement** item e, em seguida, selecione **modificar**.  
   
 14. Insira a substituição de cadeia de caracteres formatada da maneira que você deseja exibir os padrões de correspondência em sua expressão regular.  
   
-15. Clique com botão direito do **SmartCaptionSuffix** item e, em seguida, selecione**modificar**.  
+15. Clique com botão direito do **SmartCaptionSuffix** item e, em seguida, selecione **modificar**.  
   
 16. Insira qualquer caractere que você deseja que apareça no final da legenda.  
   
@@ -119,11 +119,11 @@ Quando você arrasta itens dos [janela fontes de dados](http://msdn.microsoft.co
   
 10. Com o botão direito do **Designers de dados** nó e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionSuffix`.  
   
-11. Clique com botão direito do **SmartCaptionExpression** item e, em seguida, selecione**modificar**.  
+11. Clique com botão direito do **SmartCaptionExpression** item e, em seguida, selecione **modificar**.  
   
 12. Insira `(.*)` para o valor. Isso corresponderá à cadeia de caracteres inteira.  
   
-13. Clique com botão direito do **SmartCaptionReplacement** item e, em seguida, selecione**modificar**.  
+13. Clique com botão direito do **SmartCaptionReplacement** item e, em seguida, selecione **modificar**.  
   
 14. Insira `$1` para o valor. Isso substitui a cadeia de caracteres com o valor correspondente, que é a cadeia de caracteres inteira para que ela permanecerá inalterada.  
   

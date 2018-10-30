@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c610ebecf48d8a21e8962a549d7114b8d13e3ad6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cf0941d1f08060bcc0c8889b3038d491dc91d1a7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270604"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220398"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Criar um Windows Form para pesquisar dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Um cenário de aplicativo comum exibirá dados selecionados em um formulário. P
   
 -   Criando e configurando a fonte de dados em seu aplicativo com o **configuração de fonte de dados** assistente.  
   
--   Definição do tipo subjacente dos itens na **fontes de dados**janela.  
+-   Definição do tipo subjacente dos itens na **fontes de dados** janela.  
   
 -   Criando controles que exibem dados arrastando itens dos **fontes de dados** janela em um formulário.  
   

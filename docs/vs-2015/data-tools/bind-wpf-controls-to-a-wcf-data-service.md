@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f3dbfad8655b8594301b8da7ce1dda050119206
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812420"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220372"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associar controles do WPF a um WCF Data Service
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
   
 3.  Altere o nome para `AdventureWorksModel.edmx`e clique em **Add**.  
   
-     O **modelo de dados de entidade**assistente é aberto.  
+     O **modelo de dados de entidade** assistente é aberto.  
   
 4.  Sobre o **escolher conteúdo do modelo** , clique em **gerar a partir do banco de dados**e clique em **próxima**.  
   
@@ -161,7 +161,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
   
 6.  No **fontes de dados** janela, clique em **Add New Data Source**.  
   
-     O **configuração de fonte de dados**assistente é aberto.  
+     O **configuração de fonte de dados** assistente é aberto.  
   
 7.  No **escolher um tipo de fonte de dados** página do assistente, selecione **Service**e, em seguida, clique em **próxima**.  
   

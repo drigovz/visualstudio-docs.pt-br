@@ -27,12 +27,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 342d51b5057ac0c17e92db1d4c454962b50df19a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d0176f203f7decb701d678a110856acdad36750b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843386"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220167"
 ---
 # <a name="hierarchical-update"></a>Atualização hierárquica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ Atualização hierárquica * refere-se ao processo de salvar dados atualizados (
   
 1.  Crie um manipulador de eventos para o evento `OrdersBindingSource.AddingNew`.  
   
-    -   Abra **Form1** no modo de design, selecione**OrdersBindingSource** na bandeja de componentes, selecione **eventos** no **propriedades** janela, e em seguida, clique duas vezes o **AddingNew** eventos.  
+    -   Abra **Form1** no modo de design, selecione **OrdersBindingSource** na bandeja de componentes, selecione **eventos** no **propriedades** janela, e em seguida, clique duas vezes o **AddingNew** eventos.  
   
 2.  Adicionar uma linha de código ao manipulador de eventos que chama o `CustomersBindingSource.EndEdit` método. O código no manipulador de eventos `OrdersBindingSource_AddingNew` deve ser semelhante ao seguinte:  
   

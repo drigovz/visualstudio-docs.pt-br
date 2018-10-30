@@ -22,12 +22,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d84780565d1761e75de7be9e5996a908d399f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4c73dd654a2d48be963e592d94685c74d3a16057
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233773"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219569"
 ---
 # <a name="save-data-by-using-a-transaction"></a>Salvar dados usando uma transação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Salvar dados em uma transação usando o <xref:System.Transactions> namespace. U
   
 1.  Sobre o **Project** menu, selecione **adicionar referência**.  
   
-2.  Sobre o **.NET** guia (**SQL Server** guia para projetos do SQL Server), selecione **System. Transactions**e selecione**Okey**.  
+2.  Sobre o **.NET** guia (**SQL Server** guia para projetos do SQL Server), selecione **System. Transactions**e, em seguida, selecione **Okey**.  
   
      Uma referência a Transactions é adicionada ao projeto.  
   

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e5ff6fd7c9e78871d180f08c6148c25fbede3583
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4178f1ca5a437c52754199d26a6d39023193aaf8
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756282"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219140"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Como: adicionar e remover assemblies adicionais
   Se um pacote do SharePoint depende de outros assemblies para funcionalidade ou dados, você pode adicionar os assemblies ao seu pacote de solução (. wsp). Dessa forma, o servidor do SharePoint certifica-se de que os assemblies personalizados são instalados com um pacote.  
@@ -66,7 +66,7 @@ ms.locfileid: "36756282"
   
 #### <a name="to-add-a-safe-control"></a>Para adicionar um controle seguro  
   
-1.  Abra o **Editar Assembly existente** caixa de diálogo. Para fazer isso, abra o Designer de pacote, escolha o **Advanced** guia, escolha um assembly e, em seguida, escolha o **editar**botão.  
+1.  Abra o **Editar Assembly existente** caixa de diálogo. Para fazer isso, abra o Designer de pacote, escolha o **Advanced** guia, escolha um assembly e, em seguida, escolha o **editar** botão.  
   
 2.  No **controles seguros** painel, escolha o **clique aqui para adicionar um novo item** botão.  
   

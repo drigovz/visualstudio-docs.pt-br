@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10b62093f85c51ee349386ec09470228d0194e9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a02d6dd09ec019ad05404c033889f89ed140dd1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833987"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219491"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Criar instâncias de projetos usando fábricas de projeto
 Tipos de projeto em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usar um *fábrica de projeto* para criar instâncias de objetos do projeto. Uma fábrica de projeto é semelhante a uma fábrica de classes padrão para objetos cocreatable do COM. No entanto, os objetos do projeto não são cocreatable; eles só podem ser criados usando uma fábrica de projeto.  
@@ -27,8 +27,6 @@ Tipos de projeto em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
  O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE chama a fábrica de projeto implementada no VSPackage quando um usuário carrega um projeto existente ou cria um novo projeto no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. O novo objeto de projeto fornece o IDE com informações suficientes para preencher **Gerenciador de soluções**. O novo objeto de projeto também fornece as interfaces necessárias para dar suporte a todas as ações relevantes de interface do usuário iniciadas pelo IDE.  
   
  Você pode implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interface em uma classe em seu projeto. Normalmente, residem em seu próprio módulo.  
-  
- Para obter um exemplo de uma implementação do `IVsProjectFactory` interface, consulte *PrjFac.cpp*, que está contido no [projeto básico](https://www.microsoft.com/download/details.aspx?id=55984) diretório de exemplo.  
   
  Projetos que dão suporte ao que está sendo agregada por um proprietário devem manter uma chave de proprietário no seu arquivo de projeto. Quando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> método é chamado em um projeto com uma chave de proprietário, o projeto de propriedade converte sua chave de proprietário para uma fábrica de projeto, GUID, em seguida, chama o `CreateProject` método nesta fábrica de projeto para fazer a criação real.  
   

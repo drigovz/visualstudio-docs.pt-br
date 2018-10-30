@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1210d95a73038ea21c0455e944eb46b1791b426
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 683d0e75ca5e925ccd7bf56ceffb0e28da844cc5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844504"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220320"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Passo a passo: Estender um tipo de item de projeto do SharePoint
   Você pode usar o **modelo de conectividade de dados corporativos** item de projeto para criar um modelo para o serviço de conectividade de dados comerciais (BDC) no SharePoint. Por padrão, quando você cria um modelo usando esse item de projeto, os dados no modelo não são exibidos aos usuários. Você também deve criar uma lista externa no SharePoint para permitir que os usuários exibam os dados.  
@@ -220,7 +220,7 @@ ms.locfileid: "49844504"
   
 5.  No **nome** , digite **SharePointProjectTestBDC**e, em seguida, escolha o **Okey** botão.  
   
-6.  No Assistente de personalização do SharePoint, insira a URL do site que você deseja usar para depuração, escolha **implantar como uma solução de farm**e, em seguida, escolha o **concluir**botão.  
+6.  No Assistente de personalização do SharePoint, insira a URL do site que você deseja usar para depuração, escolha **implantar como uma solução de farm**e, em seguida, escolha o **concluir** botão.  
   
 7.  Abra o menu de atalho do projeto SharePointProjectTestBDC, escolha **Add**e, em seguida, escolha **Novo Item**.  
   

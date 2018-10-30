@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: dac26a7846f4a6b611c53e9cd537d112a8205d2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836782"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220011"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Compilando aplicativos ClickOnce a partir da linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ No [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], você pode 
   
 5. Digite `msbuild /target:publish` no terminal integrado.  
   
-   As etapas acima produzirá uma completa [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação de aplicativos em uma subpasta do projeto chamada P**ublicar**. CmdLineDemo.application é o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto de implantação. A pasta CmdLineDemo_1.0.0.0 contém os arquivos CmdLineDemo.exe e CmdLineDemo.exe.manifest, o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto do aplicativo. Setup.exe é o bootstrapper, que, por padrão, está configurado para instalar o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. A pasta DotNetFX contém os redistribuíveis para o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Isso é todo o conjunto de arquivos que você precisa para implantar seu aplicativo na Web ou por meio de UNC ou CD/DVD.  
+   As etapas acima produzirá uma completa [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação de aplicativos em uma subpasta do projeto chamada **publicar**. CmdLineDemo.application é o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto de implantação. A pasta CmdLineDemo_1.0.0.0 contém os arquivos CmdLineDemo.exe e CmdLineDemo.exe.manifest, o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto do aplicativo. Setup.exe é o bootstrapper, que, por padrão, está configurado para instalar o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. A pasta DotNetFX contém os redistribuíveis para o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Isso é todo o conjunto de arquivos que você precisa para implantar seu aplicativo na Web ou por meio de UNC ou CD/DVD.  
   
 ## <a name="publishing-properties"></a>Propriedades de publicação  
  Quando você publica o aplicativo em procedimentos anteriores, as propriedades a seguir são inseridas no seu arquivo de projeto, o Assistente de publicação. Essas propriedades influenciam diretamente como o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo é produzido.  

@@ -21,12 +21,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19189e63a3fb3fdfa3016cb2643cc34a193a2a52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b77e8211d8f76627f16f96abed8a61e6dae03d7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892994"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219790"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associar controles do WPF a um conjunto de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
   
 2.  No **fontes de dados** janela, clique em **Add New Data Source**.  
   
-     O **configuração de fonte de dados**assistente é aberto.  
+     O **configuração de fonte de dados** assistente é aberto.  
   
 3.  Sobre o **escolher um tipo de fonte de dados** página, selecione **banco de dados**e, em seguida, clique em **próxima**.  
   
@@ -122,7 +122,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
   
 2.  No designer, clique com botão direito do **Fill,GetData()** de consulta e selecione **configurar**.  
   
-     O **configuração do TableAdapter**assistente é aberto.  
+     O **configuração do TableAdapter** assistente é aberto.  
   
 3.  No **insira uma instrução SQL** página, adicione a seguinte cláusula WHERE após o `SELECT` instrução na caixa de texto.  
   

@@ -24,40 +24,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f031598e0c8f290907e759bcfceac85c1b063f5f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 263e4bf4505995a4c8eccbe7c33f59115412dda5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474187"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219504"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Como aplicar edições no modo de interrupção com editar e continuar
 Você pode usar Editar e Continuar para editar o código no modo de interrupção e, depois, continuar sem interromper e reiniciar a execução.  
   
-Para limitações sobre o uso de editar e continuar durante a depuração, consulte [suporte para alterações de código (c# e Visual Basic](../debugger/supported-code-changes-csharp.md)]
+Para limitações sobre como usar Editar e continuar durante a depuração, consulte [Supported Code Changes (C# e Visual Basic](../debugger/supported-code-changes-csharp.md)]
   
 ### <a name="to-edit-code-in-break-mode"></a>Para editar código no modo de interrupção  
   
 1.  Entre no modo de interrupção executando um destes procedimentos:  
   
-    -   Definir um ponto de interrupção no seu código, em seguida, escolha **iniciar depuração** do **depurar** menu e aguarde o aplicativo para o ponto de interrupção.  
+    -   Defina um ponto de interrupção em seu código, em seguida, escolha **iniciar depuração** da **depurar** menu e aguarde até que o aplicativo para o ponto de interrupção.  
   
          -ou-  
   
-    -   Iniciar a depuração e, em seguida, selecione **interromper tudo** do **depurar** menu.  
+    -   Iniciar a depuração e, em seguida, selecione **interromper tudo** da **depurar** menu.  
   
          -ou-  
   
-    -   Quando ocorre uma exceção, escolha **habilitar edição** no**Exception Assistant**.  
+    -   Quando ocorre uma exceção, escolha **habilitar edição** sobre o **Assistente de exceção**.  
   
 2.  Faça as alterações de código desejadas e com suporte.  
   
-     Para obter mais informações, consulte [suporte para alterações de código (c# e Visual Basic](../debugger/supported-code-changes-csharp.md).  
+     Para obter mais informações, consulte [Supported Code Changes (c# e Visual Basic](../debugger/supported-code-changes-csharp.md).  
   
     > [!NOTE]
     >  Se você tentar fazer uma alteração de código que não seja permitida por Editar e Continuar, sua edição será sublinhada por uma linha ondulada roxa e uma tarefa será exibida na Lista de Tarefas. Você não poderá continuar a execução do código a menos que desfaça a alteração de código ilegal.  
   
-3.  Sobre o **depurar** menu, clique em **continuar** para retomar a execução.  
+3.  Sobre o **Debug** menu, clique em **continuar** para retomar a execução.  
   
      O código agora é executado com as edições aplicadas incorporadas ao projeto.  
   

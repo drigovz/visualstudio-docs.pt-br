@@ -19,12 +19,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8dc2222dd613cad4d5dad7dc70dccdbe0abfe128
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4aa34194933a63206133685b52def81b784b6154
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868567"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219818"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUIDs e IDs de comandos do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Os valores GUID e ID dos comandos incluídos no ambiente de desenvolvimento inte
   
 -   Itens de menu que incluem um caractere de sublinhado, como o **Print** comando as **arquivo** menu, em que o P está sublinhado.  
   
-     Os caracteres que são precedidos pelo caractere '&' em nomes de item de menu são exibidos como sublinhado. No entanto, os arquivos. VSCT são gravados em XML, que usa o caractere '&' para indicar os caracteres especiais e requer um e comercial que deve ser exibido deve ser esclarecido como&amp;'. Portanto, em um arquivo. VSCT, o **P**rimir comando é exibido como '&amp;Print'.  
+     Os caracteres que são precedidos pelo caractere '&' em nomes de item de menu são exibidos como sublinhado. No entanto, os arquivos. VSCT são gravados em XML, que usa o caractere '&' para indicar os caracteres especiais e requer um e comercial que deve ser exibido deve ser esclarecido como&amp;'. Portanto, em um arquivo. VSCT, o **Print** comando é exibido como '&amp;Print'.  
   
 -   Comandos que contêm texto dinâmico, como **salve** *nome do arquivo atual*e gerado dinamicamente os itens de menu, como os itens no **arquivos recentes** lista.  
   

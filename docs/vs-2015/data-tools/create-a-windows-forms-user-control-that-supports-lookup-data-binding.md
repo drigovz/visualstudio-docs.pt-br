@@ -21,12 +21,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9e1779ab1d39a28e750cab757c94717d496b98ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a1393f45c46709e4085d7e170265b92c6e00266
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231642"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219478"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados de pesquisa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +112,7 @@ Ao exibir dados nos Windows Forms, você pode escolher os controles existentes d
 3.  No menu **Compilação**, escolha **Compilar Solução**.  
   
 ## <a name="create-a-data-source-from-your-database"></a>Criar uma fonte de dados do banco de dados  
- Esta etapa cria uma fonte de dados usando o **Data Source Configuration**assistente, com base nas `Customers` e `Orders` tabelas no banco de dados de exemplo Northwind. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [bancos de dados de exemplo de instalar o SQL Server](../data-tools/install-sql-server-sample-databases.md).  
+ Esta etapa cria uma fonte de dados usando o **Data Source Configuration** assistente, com base nas `Customers` e `Orders` tabelas no banco de dados de exemplo Northwind. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [bancos de dados de exemplo de instalar o SQL Server](../data-tools/install-sql-server-sample-databases.md).  
   
 #### <a name="to-create-the-data-source"></a>Para criar a fonte de dados  
   

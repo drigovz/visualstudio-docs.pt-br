@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f82d53d5bbc9d309ba5d7e8710f0afe2023b8965
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933554"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219881"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Passo a passo: Depurar um aplicativo multi-threaded no Visual Studio usando a janela Threads
 O Visual Studio fornece um **Threads** elementos para ajudá-lo a depurar aplicativos multithread de interface de janela e outro usuário. Este tutorial mostra como usar o **Threads** janela e o **local de depuração** barra de ferramentas. Para obter informações sobre as outras ferramentas, consulte [começar a depurar aplicativos multissegmentados](../debugger/get-started-debugging-multithreaded-apps.md). Este tutorial leva apenas alguns minutos, mas concluí-la você se familiarizará com os recursos para depurar aplicativos multithread.   
@@ -37,7 +37,7 @@ Para iniciar este tutorial, você precisará de um projeto de aplicativo multith
   
      A caixa de diálogo **Novo Projeto** é exibida.  
   
-2.  No **tipo de projeto**s caixa, clique na linguagem de sua escolha: **Visual Basic**, **Visual c#**, ou **Visual C++**.  
+2.  No **tipos de projeto** caixa, clique na linguagem de sua escolha: **Visual Basic**, **Visual C#** , ou **Visual C++**.  
   
 3.  Sob **área de trabalho do Windows**, escolha **aplicativo de Console**.  
   

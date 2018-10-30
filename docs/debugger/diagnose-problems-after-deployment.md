@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ce10e56d197b720922356b72ab7245036c4f7d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b10635c1aefedf7af83a1c884717b80b442e8998
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865356"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219907"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnosticar problemas após a implantação usando o IntelliTrace
 
@@ -44,7 +44,7 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
 
 Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em seguida, removido. Para depurar aplicativos web ASP.NET após a implantação, use um dos seguintes métodos:
 
-* Para implantação no Azure, use [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/).
+* Para implantação no Azure, use [Application Insights](https://docs.microsoft.com/azure/application-insights/).
 
 * Se você precisar usar o IntelliTrace, abra o projeto no Visual Studio e carregar os arquivos de símbolo de compilação correspondente. Você pode carregar arquivos de símbolo a **módulos** janela ou por meio da configuração de símbolos no **ferramentas** > **opções** > **depuração**   >  **Símbolos**.
 
