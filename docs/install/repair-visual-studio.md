@@ -11,12 +11,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 825131bff8d6ed3466a6418bb1aac98787a2daea
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 9a7717a9ef889ee575afb3cc0b01fbb573a54f1f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880414"
 ---
 # <a name="repair-visual-studio-2017"></a>Reparar o Visual Studio 2017
 
@@ -24,10 +24,10 @@ ms.locfileid: "43139049"
 
 1. Localize o Instalador do Visual Studio no computador.
 
-     Por exemplo, em um computador que executa a Atualização de Aniversário do Windows 10, selecione **Iniciar** e, em seguida, role até a letra **V**, onde ele estará listado como **Instalador do Visual Studio**.
+     Por exemplo, em um computador que executa a Atualização de Aniversário do Windows 10 ou posterior, selecione **Iniciar** e, em seguida, role até a letra **V**, onde ele estará listado como **Instalador do Visual Studio**.
 
-     >[!NOTE]
-     Em alguns computadores, o Instalador do Visual Studio poderá estar listado sob a letra **“M”** como **Instalador do Microsoft Visual Studio**.<br/><br/> Como alternativa, encontre o Instalador do Visual Studio no seguinte local: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+   > [!NOTE]
+   >   Em alguns computadores, o Instalador do Visual Studio poderá estar listado sob a letra **“M”** como **Instalador do Microsoft Visual Studio**.<br/><br/> Como alternativa, encontre o Instalador do Visual Studio no seguinte local: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2. Clique ou toque para iniciar o instalador, selecione **Mais** e, em seguida, **Reparar**.
 

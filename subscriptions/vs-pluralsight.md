@@ -9,12 +9,12 @@ description: Saiba mais sobre a assinatura de treinamento do Pluralsight incluí
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3b90ac75cf92ac9adfef5023b3677b8044d44350
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 06acd50823b05e6b39cdf9cb41d2f4ec2d456c0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283139"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912000"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Benefícios de treinamento do Pluralsight nas assinaturas do Visual Studio
 
@@ -27,61 +27,63 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
 
 ## <a name="activation-steps"></a>Etapas de ativação
 1. Para ativar sua assinatura, conecte-se ao [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no link **Obter Código** no bloco do benefício Pluralsight, na seção Desenvolvimento Profissional.
-    > [!div class="mx-imgBorder"]
-    > ![Bloco do benefício do Pluralsight](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
-
-    > [!IMPORTANT]
-    > Quando você clica no link "Obter código" no bloco de benefício do Pluralsight, poderá receber a seguinte mensagem:
-    >
-    > **“Observação: se você tiver ativado anteriormente uma oferta diferente do Pluralsight por meio de sua assinatura do Visual Studio, talvez esse código não permita que você crie uma nova conta do Pluralsight.”**
+   > [!div class="mx-imgBorder"]
+   > ![Bloco do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
+   > 
+   > [!IMPORTANT]
+   > Quando você clica no link "Obter código" no bloco de benefício do Pluralsight, poderá receber a seguinte mensagem:
+   > 
+   > **“Observação: se você tiver ativado anteriormente uma oferta diferente do Pluralsight por meio de sua assinatura do Visual Studio, talvez esse código não permita que você crie uma nova conta do Pluralsight.”**
 
 2. Você receberá uma notificação de que o código do cupom foi recuperado com êxito.  Clique em **Ativar**.
-    > [!div class="mx-imgBorder"]
-    > ![Ativar o benefício do Pluralsight](_img\vs-pluralsight\vs-pluralsight-activate.png)
+   > [!div class="mx-imgBorder"]
+   > ![Ativar o benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
-3.  Você será redirecionado à página do Pluralsight para o benefício incluído com sua assinatura do Visual Studio.  Neste exemplo, ativaremos o benefício fornecido com associações do Visual Studio Dev Essentials. Clique em **Ativar seu benefício**.
-    > [!div class="mx-imgBorder"]
-    > ![Página de aterrissagem do Pluralsight VSDE](_img\vs-pluralsight\vs-pluralsight-vsde-landing.png)
+3. Você será redirecionado à página do Pluralsight para o benefício incluído com sua assinatura do Visual Studio.  Neste exemplo, ativaremos o benefício fornecido com associações do Visual Studio Dev Essentials. Clique em **Ativar seu benefício**.
+   > [!div class="mx-imgBorder"]
+   > ![Página de aterrissagem do Pluralsight VSDE](_img/vs-pluralsight/vs-pluralsight-vsde-landing.png)
 
-4.  Na página de ativação:
-    - Forneça as informações de contato solicitadas no formulário
-    - Clique na caixa de seleção para aceitar os termos de uso e a política de privacidade
-    - Clique em **Concordo. Ativar o benefício**.
-    > [!div class="mx-imgBorder"]
-    > ![Ativação do benefício do Pluralsight](_img\vs-pluralsight\vs-pluralsight-create-account-no-code.png)
-    > [!div class="mx-imgBorder"]
-    > ![Termos do benefício do Pluralsight](_img\vs-pluralsight\vs-pluralsight-terms.png)
+4. Na página de ativação:
+   - Forneça as informações de contato solicitadas no formulário
+   - Clique na caixa de seleção para aceitar os termos de uso e a política de privacidade
+   - Clique em **Concordo. Ativar o benefício**.
+     > [!div class="mx-imgBorder"]
+     > ![Ativação do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
+     > [!div class="mx-imgBorder"]
+     > ![Termos do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-terms.png)
 
-5.  Pode levar um momento para configurar sua conta.  Quando terminar, você verá uma confirmação na página e receberá um email com suas informações de logon.  O email será enviado para o alias especificado quando você criou a conta.  Verifique suas pastas de lixo eletrônico ou de spam se você tiver dificuldade para encontrar a mensagem.
-    > [!div class="mx-imgBorder"]
-    > ![Confirmação do benefício do Pluralsight](_img\vs-pluralsight\vs-pluralsight-confirmation-vse.png)
+5. Pode levar um momento para configurar sua conta.  Quando terminar, você verá uma confirmação na página e receberá um email com suas informações de logon.  O email será enviado para o alias especificado quando você criou a conta.  Verifique suas pastas de lixo eletrônico ou de spam se você tiver dificuldade para encontrar a mensagem.
+   > [!div class="mx-imgBorder"]
+   > ![Confirmação do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-confirmation-vse.png)
+   > 
+   > [!NOTE]
+   > Se sua conta não for elegível para resgatar novas ofertas, o email recebido explicará que houve um problema ao criar sua conta, pois ela não é elegível.  Ele também conterá informações para ajudá-lo a contatar a equipe de suporte do Pluralsight, que poderá responder dúvidas que você possa ter sobre a sua conta.
 
-    > [!NOTE]
-    > Se sua conta não for elegível para resgatar novas ofertas, o email recebido explicará que houve um problema ao criar sua conta, pois ela não é elegível.  Ele também conterá informações para ajudá-lo a contatar a equipe de suporte do Pluralsight, que poderá responder dúvidas que você possa ter sobre a sua conta.
+6. Depois que a conta for criada com êxito, o email recebido conterá seu nome de usuário e solicitará que você crie uma senha.  Forneça sua senha, insira-a novamente para confirmá-la e, em seguida, clique em **Fazer logon no Pluralsight**.
+   > [!div class="mx-imgBorder"]
+   > ![Email de boas-vindas do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
 
-6.  Depois que a conta for criada com êxito, o email recebido conterá seu nome de usuário e solicitará que você crie uma senha.  Forneça sua senha, insira-a novamente para confirmá-la e, em seguida, clique em **Fazer logon no Pluralsight**.
-    > [!div class="mx-imgBorder"]
-    > ![Email de boas-vindas do benefício do Pluralsight](_img\vs-pluralsight\vs-pluralsight-welcome-email.png)
+7. Insira o nome de usuário fornecido no email de boas-vindas e a senha recém-criada e clique em **Entrar**.
+   > [!div class="mx-imgBorder"]
+   > ![Logon do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-login.png)
 
-7.  Insira o nome de usuário fornecido no email de boas-vindas e a senha recém-criada e clique em **Entrar**.
-    > [!div class="mx-imgBorder"]
-    > ![Logon do benefício do Pluralsight](_img\vs-pluralsight\vs-pluralsight-login.png)
-
-8.  É só isso!  Agora você está pronto para começar a aprender com milhares de cursos do Pluralsight!
-    > [!div class="mx-imgBorder"]
-    > ![Página inicial do benefício do Pluralsight](_img\vs-pluralsight\vs-pluralsight-home.png)
+8. É só isso!  Agora você está pronto para começar a aprender com milhares de cursos do Pluralsight!
+   > [!div class="mx-imgBorder"]
+   > ![Página inicial do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-home.png)
 
 ## <a name="eligibility"></a>Qualificação
-| Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Padrão, nuvem anual)   | VL, Azure, Retail | Seis meses       |  Não<sup>2</sup>|
-| Visual Studio Professional (Padrão, nuvem anual) | VL, Azure, Retail                                       | 3 meses                                                           |Não<sup>2</sup>         |
-| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | 3 meses                                                           |Não<sup>2</sup>         |
-| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | 3 meses                                                           |Não<sup>2</sup>         |
-| Visual Studio Dev Essentials | NA  | 3 meses |Não|
-| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                  |NA|
-| Visual Studio Enterprise (NFR<sup>1</sup> ) | Programa                                       | Não disponível                                  |NA|
-<sup>1</sup>  *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner),BizSpark, MCT Software & Services, MCT Software & Services Developer, MVP (Microsoft Valued Partner), RD (diretor regional), MPN (Microsoft Partner Network), FTE, Imagine.*
+
+|                          Nível de Assinatura                          |     Canais      |    Benefício    |   Renovável?   |
+|----------------------------------------------------------------------|-------------------|---------------|----------------|
+|          Visual Studio Enterprise (Padrão, nuvem anual)           | VL, Azure, Retail |   Seis meses    | Não<sup>2</sup> |
+|         Visual Studio Professional (Padrão, nuvem anual)          | VL, Azure, Retail |   3 meses    | Não<sup>2</sup> |
+|              Visual Studio Test Professional (Padrão)              |    VL, Retail     |   3 meses    | Não<sup>2</sup> |
+|                      Plataformas MSDN (Padrão)                       |    VL, Retail     |   3 meses    | Não<sup>2</sup> |
+|                     Visual Studio Dev Essentials                     |        NA         |   3 meses    |       Não       |
+| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) |       Azure       | Não disponível |       NA       |
+|             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Programa      | Não disponível |       NA       |
+
+<sup>1</sup>  *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner),BizSpark, MCT Software & Services, MCT Software & Services Developer, MVP (Microsoft Valued Professional), RD (diretor regional), MPN (Microsoft Partner Network), FTE, Imagine.*
 
 <sup>2</sup>  *O benefício do Pluralsight é somente para uso único, vinculado ao indivíduo.  Depois que o assinante consome o benefício, ele não é restaurado. Consulte as perguntas frequentes abaixo para obter mais detalhes.  Após a expiração das assinaturas do Pluralsight, você pode se qualificar para receber 12 meses de acesso a 50 cursos do Pluralsight selecionados em uma de três áreas de estudo.*
 

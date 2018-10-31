@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 418ea3661f236866bbadcf278f288632c5e49435
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: b1331890a0ec9b788b17214a0d5f90b63ceb1a32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908973"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Etapa 5 – Usar o modelo Projeto Web do Flask de pesquisas
 
@@ -228,7 +228,7 @@ def seed():
     return redirect('/')
 ```
 
-A chamada a `repository.add_sample_polls()` termina em uma das implementações `Repository` específicas para seu armazenamento de dados escolhido. Cada implementação chama o método `_load_samples_json` encontrado em *models\__init__.py* para carregar o arquivo *models\samples.json* na memória. Em seguida, ela itera por esses dados para criar os objetos `Poll` e `Choice` necessários no armazenamento de dados.
+A chamada a `repository.add_sample_polls()` termina em uma das implementações `Repository` específicas para seu armazenamento de dados escolhido. Cada implementação chama o método `_load_samples_json` encontrado em *models\_\_init\_\_.py* para carregar o arquivo *models\samples.json* na memória. Em seguida, ela itera por esses dados para criar os objetos `Poll` e `Choice` necessários no armazenamento de dados.
 
 Após a conclusão desse processo, a instrução `redirect('/')` no método `seed` navega de volta para a home page. Como agora `repository.get_polls` retorna um objeto de dados, as marcas condicionais em *templates\index.html* agora renderizam uma tabela que contém as votações.
 
@@ -352,11 +352,8 @@ Agora você explorou a totalidade dos modelos "Projeto Web em Branco do Flask", 
 
 A execução de um aplicativo Web no computador de desenvolvimento é apenas uma etapa para disponibilizar o aplicativo para seus clientes. As próximas etapas podem incluir as seguintes tarefas:
 
-- Implante o aplicativo Web em um servidor de produção, como o Serviço de Aplicativo do Azure. Consulte [Publish to Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md) (Publicar no Serviço de Aplicativo do Azure), que inclui alterações específicas necessárias para aplicativos do Flask.
+- Implante o aplicativo Web em um servidor de produção, como o Serviço de Aplicativo do Azure. Confira [Publicar no Serviço de Aplicativo do Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 - Adicione uma implementação de repositório que usa outro armazenamento de dados em nível de produção como o PostgreSQL, o MySQL e o SQL Server (que podem ser hospedados no Azure). Também é possível usar o [SDK do Azure para Python](azure-sdk-for-python.md) para trabalhar com serviços de armazenamento do Azure como tabelas e blobs, bem como o Cosmos DB.
 
-- Configure um pipeline de integração contínua/implantação contínua em um serviço como o Azure Pipelines. Além de trabalhar com o controle do código-fonte (no Azure Repos, no GitHub ou em outro local), você pode fazer com que o Azure Test Plans execute automaticamente os testes de unidade como um pré-requisito para o lançamento, bem como configurar o pipeline para implantação em um servidor de preparo para testes adicionais antes de implantar na produção. Além disso, o Azure DevOps Services se integra com soluções de monitoramento, como o App Insights, e fecha o ciclo de inteiro com ferramentas ágeis de planejamento. Para obter mais informações, consulte:
-
-  - [Criar um pipeline de CI/CD para Python com os Projetos de DevOps do Azure](/azure/devops-project/azure-devops-project-python?view=vsts)
-  - [Desenvolvimento do Python no Azure com o Visual Studio Team Services (vídeo, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).
+- Configure um pipeline de integração contínua/implantação contínua em um serviço como o Visual Studio Team Services. Além de trabalhar com o controle de origem (no VSTS, GitHub ou em outro local), você pode fazer o VSTS automaticamente executar os testes de unidade como um pré-requisito para a versão e também configurar o pipeline para implantar em um servidor de teste para testes adicionais antes de implantar em produção. O VSTS, além disso, integra-se com as soluções de monitoramento, como o App Insights e fecha o ciclo de inteiro com ferramentas ágeis de planejamento. Para saber mais, confira [Criar um pipeline de CI/CD para Python com o projeto do Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts).

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382059"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909764"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Como criar um plug-in de gravação
 
@@ -87,11 +87,11 @@ Os procedimentos a seguir descrevem como criar o código rudimentar para um plug
 
 ### <a name="deploy-the-recorder-plug-in"></a>Implantar o plug-in de gravação
 
-Depois de compilar o plug-in de gravação, será necessário colocar a DLL resultante em um dos dois locais:
+Depois de compilar o plug-in de gravação, coloque a DLL resultante em um dos dois locais:
 
--   *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
+- *%ProgramFiles(x86)%\Microsoft Visual Studio\\[version]\\[edition]\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   *%USERPROFILE%\Meus Documentos\Visual Studio \<* versão *>\WebTestPlugins*
+- *%USERPROFILE%\Documents\Visual Studio [version]\WebTestPlugins*
 
 > [!WARNING]
 > Depois de copiar o plug-in de gravador em um dos dois locais, você deverá reiniciar o Visual Studio para que ele seja registrado.
@@ -113,8 +113,8 @@ Depois de compilar o plug-in de gravação, será necessário colocar a DLL resu
     >
     > Isso acontecerá se você fizer alterações no código de qualquer um de seus plug-ins e criar uma nova versão de DLL **(versão=0.0.0.0)**, mas o plug-in ainda estiver referenciando a versão original do plug-in. Para corrigir esse problema, siga estas etapas:
     >
-    > 1.  Em seu projeto de teste de carga e desempenho na Web, você verá um aviso em referências. Remova e adicione novamente a referência à DLL do plug-in.
-    > 2.  Remova o plug-in do teste ou do local apropriado e adicione-o de volta.
+    > 1. Em seu projeto de teste de carga e desempenho na Web, você verá um aviso em referências. Remova e adicione novamente a referência à DLL do plug-in.
+    > 2. Remova o plug-in do teste ou do local apropriado e adicione-o de volta.
 
 ## <a name="example"></a>Exemplo
 
@@ -123,7 +123,7 @@ Este exemplo demonstra como criar um plug-in personalizado de gravação de test
 > [!NOTE]
 > Uma listagem completa do código de exemplo está localizada na parte final deste tópico.
 
- **Revisando o código de exemplo**
+**Revisando o código de exemplo**
 
 ## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Iterar pelo resultado para encontrar a primeira página com ReportSession
 

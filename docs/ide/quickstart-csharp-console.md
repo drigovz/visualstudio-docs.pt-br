@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2766af365625890a0769f298d1801179da9c7e07
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: ee40aadd3287018e52910ad6b4a4000db6bcce8a
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029267"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443409"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Início Rápido: usar o Visual Studio para criar seu primeiro aplicativo de console em C#
 
@@ -39,9 +39,9 @@ Primeiro, você criará um projeto de aplicativo em C#. O tipo de projeto inclui
 
    ![Modelo de projeto do aplicativo do console (.NET Core) na caixa de diálogo Novo projeto no IDE do Visual Studio](../ide/media/new-project-csharp-dotnetcore-helloworld-console-app.png)
 
-     Se você não vir o modelo de projeto do **Aplicativo de Console (.NET Core)**, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**.
+     Se você não vir o modelo de projeto do **Aplicativo de Console (.NET Core)**, escolha o link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**.
 
-   ![Clique no link Abrir o Instalador do Visual Studio na caixa de diálogo Novo Projeto](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
+   ![Escolha o link Abrir Instalador do Visual Studio na caixa de diálogo Novo Projeto](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
 
      O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.
 
@@ -75,9 +75,9 @@ Vamos adicionar alguns códigos para pausar o aplicativo de modo que a janela do
 
 ## <a name="run-the-application"></a>Executar o aplicativo
 
-1. Clique no botão **Olá, Mundo** na barra de ferramentas para executar o aplicativo no modo de depuração. Ou pressione **F5**.
+1. Escolha o botão **HelloWorld** na barra de ferramentas para executar o aplicativo no modo de depuração. Ou pressione **F5**.
 
-   ![Clique no botão Olá, Mundo para executar o programa da barra de ferramentas](../ide/media/csharp-console-hello-world-button.png)
+   ![Escolha o botão Olá, Mundo para executar o aplicativo da barra de ferramentas](../ide/media/csharp-console-hello-world-button.png)
 
 1. Visualize o aplicativo na janela do console.
 
@@ -98,4 +98,4 @@ Vamos adicionar alguns códigos para pausar o aplicativo de modo que a janela do
 Parabéns por concluir este Guia de Início Rápido! Esperamos que você tenha aprendido um pouco sobre C# e o IDE do Visual Studio. Para saber mais, continue com os tutoriais a seguir.
 
 > [!div class="nextstepaction"]
-> [Tutoriais de C#](/dotnet/csharp/tutorials/)
+> [Introdução ao aplicativo de console em C# no Visual Studio](tutorial-csharp-console.md)

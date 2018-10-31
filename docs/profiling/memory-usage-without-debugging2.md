@@ -1,7 +1,7 @@
 ---
 title: Analisar o uso de memória sem o Depurador VS | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2c79184af7afa11e2008ff32ce2ffb2dedd19559
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668133"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827722"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analisar o uso de memória sem o depurador do Visual Studio
 Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o seguinte  
   
--   Monitorar o uso de memória do seu aplicativo diretamente no Visual Studio enquanto estiver desenvolvendo um cenário.  
+- Monitorar o uso de memória do seu aplicativo diretamente no Visual Studio enquanto estiver desenvolvendo um cenário.  
   
--   Criar instantâneos detalhados do estado de memória do seu aplicativo.  
+- Criar instantâneos detalhados do estado de memória do seu aplicativo.  
   
--   Comparar instantâneos para encontrar a causa raiz de problemas de memória.  
+- Comparar instantâneos para encontrar a causa raiz de problemas de memória.  
   
- Este tópico descreve como usar a ferramenta Uso de Memória para analisar um aplicativo UWP XAML. Se você quiser analisar o uso de memória no aplicativo UWP que usa JavaScript e HTML, confira [Analisar o uso de memória (JavaScript)](../profiling/javascript-memory.md).  
+  Atualmente, para medir o uso de memória de um aplicativo .NET Core, é necessário usar a ferramenta com o depurador anexado. Para outros aplicativos gerenciados e nativos, é possível usar a ferramenta com ou sem o depurador anexado. As capturas de tela neste tópico mostram um aplicativo UWP XAML. Se você quiser analisar o uso de memória no aplicativo UWP que usa JavaScript e HTML, confira [Analisar o uso de memória (JavaScript)](../profiling/javascript-memory.md).
   
 ## <a name="start-a-memory-usage-diagnostic-session"></a>Iniciar uma a sessão de diagnóstico de uso de memória  
   
@@ -69,13 +69,13 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Exibições de instantâneo do uso de memória  
  Você usa as exibições de instantâneos para abrir relatórios detalhados em novas janelas do Visual Studio. Há dois tipos de exibições de instantâneos:  
   
--   Um [Relatório de detalhes do instantâneo](#snapshot-reports) mostra os tipos e as instâncias em um instantâneo.  
+- Um [Relatório de detalhes do instantâneo](#snapshot-reports) mostra os tipos e as instâncias em um instantâneo.  
   
--   Um [Relatório de diferenças (dif) do instantâneo](#snapshot-difference-diff-reports) compara os tipos e as instâncias em dois instantâneos.  
+- Um [Relatório de diferenças (dif) do instantâneo](#snapshot-difference-diff-reports) compara os tipos e as instâncias em dois instantâneos.  
   
- ![Links de exibição de instantâneo](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![Links de exibição de instantâneo](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- Os itens numerados na imagem de exibição do instantâneo são links que abrem exibições de relatório de uso de memória.  
+  Os itens numerados na imagem de exibição do instantâneo são links que abrem exibições de relatório de uso de memória.  
   
 |||  
 |-|-|  

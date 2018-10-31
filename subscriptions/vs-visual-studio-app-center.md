@@ -9,12 +9,12 @@ description: Saiba mais sobre o benefício Visual Studio App Center incluído em
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 266ce307b8ee06eed427385d67c48d4258ae2a1c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 112597455bbabe9f42cc2834bd06bf5c52d7cc9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940977"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center em assinaturas do Visual Studio
 
@@ -41,6 +41,7 @@ O App Center é o controle de missões para aplicativos.
     > ![Portal do App Center do VS](_img/vs-app-center/vs-app-center-portal.png)
 
 ## <a name="eligibility"></a>Qualificação
+
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Padrão, nuvem anual, nuvem mensal)   | VL, Azure, Retail,  NFR<sup>1</sup> | Incluído       |  Sim          |
@@ -50,7 +51,7 @@ O App Center é o controle de missões para aplicativos.
 | Visual Studio Dev Essentials | NA  | Incluído                                                            |Sim |
 
 
-<sup>1</sup>  *Inclui:  NFR (Proibida a revenda), FTE, VSIP (Visual Studio Industry Partner), Imagine, MPN (Microsoft Partner Network), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP (Microsoft Valued Partner), RD (diretor regional).*
+<sup>1</sup>  *Inclui:  NFR (Proibida a revenda), FTE, VSIP (Visual Studio Industry Partner), Imagine, MPN (Microsoft Partner Network), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP (Microsoft Valued Professional), RD (Diretor Regional).*
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 

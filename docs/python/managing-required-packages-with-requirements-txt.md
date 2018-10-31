@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 478cb56856a5177f74b92542afadb0c36ac946c2
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: efefda9fb5eb863550684511a5c0834f5d43f7fd
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548784"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100907"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gerenciar os pacotes necessários com requirements.txt
 
-Se você estiver compartilhando um projeto com outras pessoas, usando um sistema de compilação ou pretender [publicá-lo no Microsoft Azure](python-azure-cloud-service-project-template.md), precisará especificar os pacotes externos exigidos pelo projeto. A abordagem recomendada é usar um [arquivo requirements.txt](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) que contém uma lista de comandos do PIP que instala as versões necessárias dos pacotes dependentes.
+Se você está compartilhando um projeto com outras pessoas, está usando um sistema de compilação ou pretende implantá-lo em qualquer outro local em que precise restaurar um ambiente, precisa especificar os pacotes externos exigidos pelo projeto. A abordagem recomendada é usar um [arquivo requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) que contém uma lista de comandos do PIP que instala as versões necessárias dos pacotes dependentes.
 
 Tecnicamente, qualquer nome de arquivo pode ser usado para acompanhar os requisitos (usando `-r <full path to file>` durante a instalação de um pacote), mas o Visual Studio fornece suporte específico para *requirements.txt*:
 

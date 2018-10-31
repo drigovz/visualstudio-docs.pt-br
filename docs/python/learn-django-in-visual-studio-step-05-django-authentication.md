@@ -1,4 +1,4 @@
----
+﻿---
 title: Tutorial – Saiba mais sobre Django no Visual Studio, etapa 5
 description: Um passo a passo dos conceitos básicos do Django no contexto dos projetos do Visual Studio, especificamente os recursos de autenticação fornecidos pelos modelos Projeto Web do Django.
 ms.date: 08/13/2018
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 419c9f54d0c537d417034eb4375d6402951609bd
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626610"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120349"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Etapa 5: Autenticar usuários no Django
 
@@ -198,9 +198,9 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
 
 1. Quando terminar, interrompa o servidor e, mais uma vez, confirme suas alterações no controle do código-fonte.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a> Pergunta: Qual é a finalidade da marcação {% csrf_token %} exibida nos elementos \<form\>?
+### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Pergunta: Qual é a finalidade da marcação {% csrf_token %} exibida nos elementos \<form\>?
 
-Resposta: A marca `{% csrf_token %}` inclui a [proteção interna contra solicitações intersite forjadas (csrf)](https://docs.djangoproject.com/en/2.0/ref/csrf/) do Django (documentos do Django). Normalmente, essa marca é adicionada a qualquer elemento que envolva métodos de solicitação POST, PUT ou DELETE, como um formulário. Em seguida, a função de renderização de modelo (`render`) insere a proteção necessária.
+Resposta: A marcação `{% csrf_token %}` inclui a [proteção interna contra solicitações intersites forjadas (csrf)](https://docs.djangoproject.com/en/2.0/ref/csrf/) do Django (documentos do Django). Normalmente, essa marca é adicionada a qualquer elemento que envolva métodos de solicitação POST, PUT ou DELETE, como um formulário. Em seguida, a função de renderização de modelo (`render`) insere a proteção necessária.
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00fab87a8fed4d1dcd9b4899551d68eaab28d46a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73e1d9d67d905fed5eb37e29c1be1ba7677da3e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884141"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Refatoração Mover um tipo para um arquivo correspondente
 
@@ -35,32 +35,32 @@ Esta refatoração aplica-se a:
 
 ## <a name="how-to"></a>Como fazer
 
-1. realce ou coloque o cursor do texto dentro do nome do tipo para mover:
+1. Coloque o cursor dentro do nome do tipo de onde ele está definido. Por exemplo:
+
+   ```csharp
+   class Person
+   ```
+
+   ```vb
+   Class Person
+   ```
+
+2. Depois, siga um destes procedimentos:
+
+   - Pressione **Ctrl**+**.**
+   - Clique com o botão direito do mouse sobre o nome do tipo e selecione **Ação Rápidas e Refatorações**
+
+1. Selecione **Mover tipo para *NomeDoTipo*.cs** no menu, em que *NomeDoTipo* é o nome do tipo selecionado.
+
+   O tipo é movido para um novo arquivo no projeto que possui o mesmo nome do tipo.
 
    - C#:
 
-    ![Código realçado – C#](media/movetype-highlight-cs.png)
+      ![Resultado embutido – C#](media/movetype-result-cs.png)
 
    - Visual Basic:
 
-    ![Código realçado – Visual Basic](media/movetype-highlight-vb.png)
-
-1. Depois, siga um destes procedimentos:
-
-   - **Teclado**
-     - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Mover o tipo para *TypeName*.cs** no pop-up da janela Visualização onde *TypeName* é o nome do tipo selecionado.
-   - **Mouse**
-     - Clique com o botão direito do mouse no código, selecione o menu **Ações Rápidas e Refatorações** e selecione **Mover o tipo para *TypeName*.cs** no pop-up da janela Visualização onde *TypeName* é o nome do tipo selecionado.
-
-   O tipo é movido para um novo arquivo com esse nome, como parte da sua solução.
-
-   - C#:
-
-    ![Resultado embutido – C#](media/movetype-result-cs.png)
-
-   - Visual Basic:
-
-    ![Resultado embutido – Visual Basic](media/movetype-result-vb.png)
+      ![Resultado embutido – Visual Basic](media/movetype-result-vb.png)
 
 ## <a name="see-also"></a>Consulte também
 

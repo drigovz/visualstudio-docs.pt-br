@@ -1,7 +1,7 @@
 ---
 title: Selecionando e instalando interpretadores do Python
 description: Uma lista completa de interpretadores do Python que têm suporte no Visual Studio com instruções breves sobre onde localizar os instaladores.
-ms.date: 09/04/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6491f5ec5fdcfc1435891cd953287e2c5123538a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548947"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324971"
 ---
 # <a name="install-python-interpreters"></a>Instalar interpretadores do Python
 
 Por padrão, a instalação da carga de trabalho de desenvolvimento do Python no Visual Studio 2017 também instala o Python 3 (64 bits). Como opção, você pode optar por instalar versões de 32 bits e 64 bits do Python 2, Python 3, Anaconda 2 e Anaconda 3, conforme descrito em [Instalação](installing-python-support-in-visual-studio.md).
 
-Você também pode instalar manualmente qualquer um dos interpretadores listados na tabela abaixo fora do instalador do Visual Studio. Por exemplo, se você instalar o Anaconda 3 antes de instalar o Visual Studio, não será necessário instalar novamente usando o instalador do Visual Studio.
+Você também pode instalar manualmente qualquer um dos interpretadores listados na tabela abaixo fora do instalador do Visual Studio. Por exemplo, se você instalar o Anaconda 3 antes de instalar o Visual Studio, não será necessário instalar novamente usando o instalador do Visual Studio. Você também pode instalar um interpretador manualmente se, por exemplo, houver uma versão mais recente disponível que ainda não aparece no instalador do Visual Studio.
 
 Para o **Visual Studio 2015 e versões anteriores**, é necessário instalar manualmente um dos interpretadores.
 

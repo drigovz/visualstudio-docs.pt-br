@@ -9,12 +9,12 @@ description: Saiba como ativar o benefício Azure incluído em sua assinatura do
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b8f3542fce0d04e4e6efeba6e2558740c5f5d12f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a97dbd638c4840266f22c46610f78ec5b2d527d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282307"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862329"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar o Microsoft Azure nas assinaturas do Visual Studio
 
@@ -24,51 +24,52 @@ Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adi
 
 ## <a name="eligibility"></a>Qualificação
 
-| Nível de Assinatura/Programa                                 | Benefício                     | Renovável?                                                   |
-|--------------------------------------------------------------|-----------------------------|--------------------------------------------------------------|
-| Visual Studio Enterprise Standard                            | Crédito mensal de US$150         |   Sim                                                        |
-| Visual Studio Enterprise anual                              | Crédito mensal de US$150         |   Sim                                                        |
-| Visual Studio Enterprise mensal                             | Não disponível               |                                                              |
-| Visual Studio Professional Standard                          | Crédito mensal de US$ 50          |   Sim                                                        |
-| Visual Studio Professional anual                            | Crédito mensal de US$ 50          |   Sim                                                        |
-| Visual Studio Professional mensal                           | Não disponível               |                                                              |
-| Visual Studio Test Pro                                       | Crédito mensal de US$ 50          |   Sim                                                        |
-| Plataformas MSDN                                               | Crédito mensal de US$ 100         |   Sim                                                        |
-| Visual Studio Dev Essentials                                 | Serviços gratuitos + crédito de US$ 200 | Os serviços gratuitos são permanentes.  O crédito de US $200 só ocorre uma vez.  |
-| Visual Studio Enterprise - NFR*                              | Crédito mensal de US$150         |   Sim                                                        |
-| Visual Studio Enterprise - FTE                               | Crédito mensal de US$150         |   Sim                                                        |
-| Visual Studio Enterprise ‒ Microsoft Partner Network         | Crédito mensal de US$150         |   Sim                                                        |
-| Visual Studio Professional – Microsoft Partner Network       | Não disponível               |                                                              |
-| Visual Studio Enterprise – Imagine (Standard)                | Não disponível               |                                                              |
-| Visual Studio Enterprise – Imagine (Premium)                 | Não disponível               |                                                              |
-| Visual Studio Enterprise – BizSpark                          | Crédito mensal de US$150         |   Sim                                                        |
-| Visual Studio Enterprise – Software e Serviços de MCT           | Crédito mensal de US$ 100         |   Sim                                                        |
-| Visual Studio Enterprise – Desenvolvedor de Software e Serviços de MCT | Crédito mensal de US$150         |   Sim                                                        |
-*Inclui NFR (Proibida a revenda), MVP (Microsoft Valued Partner), RD (Diretor de Região), VSIP (Visual Studio Industry Partner)
+|                 Nível de Assinatura/Programa                 |           Benefício           |                         Renovável?                          |
+|--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
+|              Visual Studio Enterprise Standard               |     Crédito mensal de US$150     |                             Sim                             |
+|               Visual Studio Enterprise anual                |     Crédito mensal de US$150     |                             Sim                             |
+|               Visual Studio Enterprise mensal               |        Não disponível        |                                                             |
+|             Visual Studio Professional Standard              |     Crédito mensal de US$ 50      |                             Sim                             |
+|              Visual Studio Professional anual               |     Crédito mensal de US$ 50      |                             Sim                             |
+|              Visual Studio Professional mensal              |        Não disponível        |                                                             |
+|                    Visual Studio Test Pro                    |     Crédito mensal de US$ 50      |                             Sim                             |
+|                        Plataformas MSDN                        |     Crédito mensal de US$ 100     |                             Sim                             |
+|                 Visual Studio Dev Essentials                 | Serviços gratuitos + crédito de US$ 200 | Os serviços gratuitos são permanentes.  O crédito de US $200 só ocorre uma vez. |
+|               Visual Studio Enterprise - NFR\*               |     Crédito mensal de US$150     |                             Sim                             |
+|                Visual Studio Enterprise - FTE                |     Crédito mensal de US$150     |                             Sim                             |
+|     Visual Studio Enterprise ‒ Microsoft Partner Network     |     Crédito mensal de US$150     |                             Sim                             |
+|    Visual Studio Professional – Microsoft Partner Network    |        Não disponível        |                                                             |
+|        Visual Studio Enterprise – Imagine (Standard)         |        Não disponível        |                                                             |
+|         Visual Studio Enterprise – Imagine (Premium)         |        Não disponível        |                                                             |
+|             Visual Studio Enterprise – BizSpark              |     Crédito mensal de US$150     |                             Sim                             |
+|      Visual Studio Enterprise – Software e Serviços de MCT      |     Crédito mensal de US$ 100     |                             Sim                             |
+| Visual Studio Enterprise – Desenvolvedor de Software e Serviços de MCT |     Crédito mensal de US$150     |                             Sim                             |
+
+*Inclui NFR (Proibida a revenda), MVP (Microsoft Valued Professional), RD (Diretor de Região), VSIP (Visual Studio Industry Partner)
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 ## <a name="activation-steps"></a>Etapas de Ativação
 
-1.  Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Localize o bloco Azure na seção Ferramentas da página Benefícios e clique no link **Ativar** na parte inferior do bloco de benefícios.
-    > [!div class="mx-imgBorder"]
-    > ![Bloco do Azure](_img\vs-azure\vs-azure-tile.png)
+2. Localize o bloco Azure na seção Ferramentas da página Benefícios e clique no link **Ativar** na parte inferior do bloco de benefícios.
+   > [!div class="mx-imgBorder"]
+   > ![Bloco do Azure](_img/vs-azure/vs-azure-tile.png)
 
-3.  Preencha as informações necessárias para criar sua assinatura do Azure, clique na caixa de seleção para aceitar os termos e condições e, em seguida, clique em **Inscrever-se**:
-    > [!div class="mx-imgBorder"]
-    > ![Inscrição do Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
+3. Preencha as informações necessárias para criar sua assinatura do Azure, clique na caixa de seleção para aceitar os termos e condições e, em seguida, clique em **Inscrever-se**:
+   > [!div class="mx-imgBorder"]
+   > ![Inscrição do Azure](_img/vs-azure/vs-azure-sign-up-cropped.png)
 
-4.  Quando sua conta estiver pronta, você terá a opção de escolher um plano de suporte do Azure (vendido separadamente) ou de começar a usar sua assinatura do Azure.
-    > [!div class="mx-imgBorder"]
-    > ![Preparação do Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
+4. Quando sua conta estiver pronta, você terá a opção de escolher um plano de suporte do Azure (vendido separadamente) ou de começar a usar sua assinatura do Azure.
+   > [!div class="mx-imgBorder"]
+   > ![Preparação do Azure](_img/vs-azure/vs-azure-getting-ready-cropped.png)
 
-5.  O Painel do Azure será carregado e, na primeira utilização, haverá a opção de fazer um tour.  O tour consiste em uma série de dicas de tela que indicarão como você pode realizar uma variedade de tarefas e localizar informações relevantes.  Ao concluir ou fechar o tour, o Painel do Azure será exibido.
+5. O Painel do Azure será carregado e, na primeira utilização, haverá a opção de fazer um tour.  O tour consiste em uma série de dicas de tela que indicarão como você pode realizar uma variedade de tarefas e localizar informações relevantes.  Ao concluir ou fechar o tour, o Painel do Azure será exibido.
 
-6.  Marque o [Portal do Azure](https://portal.azure.com) para facilitar os próximos acessos.
-    > [!div class="mx-imgBorder"]
-    > ![Painel do Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
+6. Marque o [Portal do Azure](https://portal.azure.com) para facilitar os próximos acessos.
+   > [!div class="mx-imgBorder"]
+   > ![Painel do Azure](_img/vs-azure/vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>Perguntas Frequentes
 

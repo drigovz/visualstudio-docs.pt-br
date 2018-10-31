@@ -9,32 +9,32 @@ description: Saiba como ativar o benefício do suporte técnico incluído na ass
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 072a0c7dc7679f965c84de06c969034db02766a2
-ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
+ms.openlocfilehash: 9fa92d530ac6db46ce014210bf1c4c91836b2d32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44701759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950063"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Ativar o benefício do Suporte Técnico em assinaturas do Visual Studio
 
 Resolva problemas de reparo em ambientes que não são de produção. (O benefício deve ser ativado antes de enviar uma solicitação de suporte.) As assinaturas de nuvem anual e padrão do Visual Studio Enterprise recebem quatro incidentes, enquanto as assinaturas de nuvem anual e padrão do Visual Studio Professional recebem dois incidentes.
 
-   > [!NOTE]
-   > Nem todas as assinaturas de um determinado nível são elegíveis para receber incidentes de suporte. As assinaturas adquiridas por meio do FTE, do NFR, do MPN, do MCT e de outros programas não recebem incidentes de suporte. Se sua assinatura não for elegível para receber os incidentes de suporte técnico, o bloco Suporte Técnico não aparecerá em seus benefícios disponíveis.
-
+> [!NOTE]
+> Nem todas as assinaturas de um determinado nível são elegíveis para receber incidentes de suporte. As assinaturas adquiridas por meio do FTE, do NFR, do MPN, do MCT e de outros programas não recebem incidentes de suporte. Se sua assinatura não for elegível para receber os incidentes de suporte técnico, o bloco Suporte Técnico não aparecerá em seus benefícios disponíveis.
+> 
 > [!div class="mx-imgBorder"]
-> ![Bloco do benefício do Suporte Técnico](_img\vs-tech-support\vs-tech-support-tile.png)
+> ![Bloco do benefício do Suporte Técnico](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1.  Para começar a usar seu benefício Suporte Técnico, clique em **Conversar para ativar** no bloco Suporte Técnico. 
-2.  Isso iniciará uma sessão de chat com um representante que poderá criar sua ID do Contrato e ID do Acesso e as fornecer para você. 
-3.  Para concluir o processo, será necessário fornecer ao representante:
-    - O endereço de email usado para entrar em sua assinatura
-    - A ID de assinatura, que pode ser encontrada na guia [Assinaturas](https://my.visualstudio.com/subscriptions).
+1. Para começar a usar seu benefício Suporte Técnico, clique em **Conversar para ativar** no bloco Suporte Técnico. 
+2. Isso iniciará uma sessão de chat com um representante que poderá criar sua ID do Contrato e ID do Acesso e as fornecer para você. 
+3. Para concluir o processo, será necessário fornecer ao representante:
+   - O endereço de email usado para entrar em sua assinatura
+   - A ID de assinatura, que pode ser encontrada na guia [Assinaturas](https://my.visualstudio.com/subscriptions).
 
-    > [!div class="mx-imgBorder"]
-    > ![Benefício do suporte técnico: encontrar a ID da assinatura](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
+   > [!div class="mx-imgBorder"]
+   > ![Benefício do suporte técnico: encontrar a ID da assinatura](_img/vs-tech-support/vs-tech-support-subID-cropped.png)
 
 
 > [!NOTE]
@@ -47,28 +47,28 @@ Quando a ID do Contrato e a ID do Acesso estiverem configuradas e você precisar
 
 ### <a name="submit-an-incident-online"></a>Enviar um incidente online
 
-1.  Para [enviar um incidente online](http://support.microsoft.com/oas/), especifique o produto com o qual você precisa de ajuda. Você pode selecioná-lo nas várias listas ou pesquisá-lo pelo nome. Para enviar um incidente do Visual Studio Enterprise 2017, por exemplo, clique em **Visual Studio** no grupo **Ferramentas para Desenvolvedores**.
-    > [!div class="mx-imgBorder"]    
-    > ![Benefício do Suporte Técnico – selecionar o produto do incidente](_img\vs-tech-support\vs-tech-support-select-product.png)
+1. Para [enviar um incidente online](http://support.microsoft.com/oas/), especifique o produto com o qual você precisa de ajuda. Você pode selecioná-lo nas várias listas ou pesquisá-lo pelo nome. Para enviar um incidente do Visual Studio Enterprise 2017, por exemplo, clique em **Visual Studio** no grupo **Ferramentas para Desenvolvedores**.
+   > [!div class="mx-imgBorder"]    
+   > ![Benefício do Suporte Técnico – selecionar o produto do incidente](_img/vs-tech-support/vs-tech-support-select-product.png)
 
-2.  Escolha o produto para o qual você precisa de suporte. (Por exemplo, clique em **Visual Studio Enterprise 2017** na lista de produtos do Visual Studio.)
-3.  Na página **Criar um incidente**, selecione o tipo de problema aplicável na lista suspensa. Para nosso exemplo, vamos escolher **IDE (Ambiente de Desenvolvimento Integrado)**.
-    > [!div class="mx-imgBorder"]    
-    > ![Benefício do suporte técnico: criar incidente](_img\vs-tech-support\vs-tech-support-create-incident.png)
+2. Escolha o produto para o qual você precisa de suporte. (Por exemplo, clique em **Visual Studio Enterprise 2017** na lista de produtos do Visual Studio.)
+3. Na página **Criar um incidente**, selecione o tipo de problema aplicável na lista suspensa. Para nosso exemplo, vamos escolher **IDE (Ambiente de Desenvolvimento Integrado)**.
+   > [!div class="mx-imgBorder"]    
+   > ![Benefício do suporte técnico: criar incidente](_img/vs-tech-support/vs-tech-support-create-incident.png)
 
-4.  Em seguida, escolha a **Categoria** que melhor atende à sua dúvida/problema. Para nosso exemplo, vamos escolher **Ferramentas de arquiteto.**
-5.  Clique em **Iniciar Solicitação**.
-6.  Na próxima página, você deverá escolher uma forma de pagamento.
-    - Escolha **Usar minha assinatura do Visual Studio**.
-    - Clique em **Usar outro contrato**
-    - Insira a ID de acesso e a ID do contrato
-    - Clique em **Adicionar**
-7.  Após adicionar o contrato de suporte, ele aparecerá na lista de contratos de suporte profissional. Escolha-o e clique em **Continuar**.
-    > [!div class="mx-imgBorder"]     
-    > ![Benefício do suporte técnico: pagamento](_img\vs-tech-support\vs-tech-support-payment.png)
+4. Em seguida, escolha a **Categoria** que melhor atende à sua dúvida/problema. Para nosso exemplo, vamos escolher **Ferramentas de arquiteto.**
+5. Clique em **Iniciar Solicitação**.
+6. Na próxima página, você deverá escolher uma forma de pagamento.
+   - Escolha **Usar minha assinatura do Visual Studio**.
+   - Clique em **Usar outro contrato**
+   - Insira a ID de acesso e a ID do contrato
+   - Clique em **Adicionar**
+7. Após adicionar o contrato de suporte, ele aparecerá na lista de contratos de suporte profissional. Escolha-o e clique em **Continuar**.
+   > [!div class="mx-imgBorder"]     
+   > ![Benefício do suporte técnico: pagamento](_img/vs-tech-support/vs-tech-support-payment.png)
 
-8.  Forneça as informações de contato e o método de contato preferencial e clique em **Continuar**.
-9.  Forneça um título para o incidente de suporte e descreva o problema.
+8. Forneça as informações de contato e o método de contato preferencial e clique em **Continuar**.
+9. Forneça um título para o incidente de suporte e descreva o problema.
 10. Responda a uma série rápida de perguntas para determinar a gravidade do problema.
 11. Clique na caixa de seleção para aceitar os termos do serviço.
 12. Clique em **Enviar** para enviar o problema.
@@ -102,6 +102,6 @@ Depois de concluir essas etapas, você poderá selecionar o plano de suporte ass
 | Visual Studio Dev Essentials | NA | Não disponível |NA|
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
 
-<sup>1</sup> *inclui: Imagine Premium. Exclui: NFR (Proibida a Revenda), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine Standard, MVP (Microsoft Valued Partner), RD (diretor regional), MCT Software & Services.*
+<sup>1</sup> *inclui: Imagine Premium. Exclui: NFR (Proibida a Revenda), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine Standard, MVP (Microsoft Valued Professional), RD (Diretor regional), MCT Software & Services.*
 
 <sup>2</sup> *inclui: Imagine Standard.*

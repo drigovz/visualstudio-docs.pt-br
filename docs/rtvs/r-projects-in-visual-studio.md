@@ -10,16 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d35a8882654170b62ed3dc37de2361b86cbb1ea1
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 154243351f3ff3e7babc502c2cf96dea6bcf5bf0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813825"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Criar projetos do R no Visual Studio
 
-Um projeto do R (um arquivo *.rxproj*) identifica todos os arquivos de código-fonte e de conteúdo associados a ele. Ele também contém informações de build de cada arquivo, mantém as informações para integração com sistemas de controle do código-fonte e ajuda a organizar o aplicativo em componentes lógicos. As informações relacionadas ao espaço de trabalho, como a lista de pacotes instalados, no entanto, são mantidas separadamente no próprio espaço de trabalho.
+Um projeto do R (um arquivo *.rxproj*) identifica todos os arquivos de código-fonte e de conteúdo associados a ele. Ele também contém informações de build de cada arquivo, mantém as informações para integração com sistemas de controle do código-fonte e ajuda a organizar o aplicativo em componentes lógicos. As informações relacionadas ao workspace, como a lista de pacotes instalados, no entanto, são mantidas separadamente no próprio workspace.
 
 Os projetos são sempre gerenciados em uma *solução* do Visual Studio, que pode conter vários projetos que podem fazer referências entre si. Consulte [Usar vários tipos de projeto no Visual Studio](#use-multiple-project-types-in-visual-studio).
 
@@ -42,8 +42,8 @@ O arquivo *rproject.rproj* mantém determinadas configurações do projeto espec
 | Propriedade | Padrão | Descrição |
 | --- | --- | --- |
 | Versão | 1.0 | A versão das Ferramentas do R para Visual Studio usadas para criar o projeto. |
-| RestoreWorkspace | Padrão | Carregar automaticamente as variáveis do Espaço de trabalho anteriores do arquivo `.RData` no diretório do projeto. |
-| SaveWorkspace | Padrão | Salvar as variáveis de espaço de trabalho atual no arquivo `.RData` no diretório do projeto ao fechar um projeto. |
+| RestoreWorkspace | Padrão | Carregar automaticamente as variáveis do Workspace anteriores do arquivo `.RData` no diretório do projeto. |
+| SaveWorkspace | Padrão | Salvar as variáveis de workspace atual no arquivo `.RData` no diretório do projeto ao fechar um projeto. |
 | AlwaysSaveHistory | Padrão | Salvar o histórico da janela interativa atual no arquivo `.RHistory` no diretório do projeto ao fechar um projeto. |
 | EnableCodeIndexing | Sim | Determina se deseja executar uma tarefa de indexação em segundo plano para acelerar as pesquisas de código. |
 | UseSpacesForTab | Sim | Determina se deseja inserir espaços (Sim) ou um caractere de tabulação (Não) quando a tecla **Tab** é pressionada no editor. |
@@ -65,14 +65,15 @@ Se você tem uma pasta existente de arquivos *.R* que deseja gerenciar em um pro
 
 Para abrir as páginas de propriedades do projeto, clique com o botão direito do mouse no projeto no **Gerenciador de Soluções** e selecione **Propriedades** ou clique no item de menu **Projeto > Propriedades do (nome do projeto)*. A janela aberta exibe propriedades do projeto:
 
-| Tabulação | Propriedade | Descrição |
-| --- | --- | --- |
-| Executar | Arquivo de inicialização | O nome do arquivo que é executado com o comando **Arquivo de inicialização de origem**, **F5**, **Depurar > Iniciar depuração** ou **Depurar > Iniciar sem depuração**. Clicar com o botão direito do mouse no arquivo no projeto e selecionar **Definir como script de inicialização do R** também o define como o arquivo de inicialização. |
-| | Redefinir R Interativo em execução | Limpa todas as variáveis de espaço de trabalho da janela interativa ao executar o projeto. Isso garante que não haja nenhum conteúdo no espaço de trabalho que restou das execuções anteriores. |
-| | Caminho do projeto remoto | Caminho para um espaço de trabalho remoto. |
-| | Transferir arquivos em execução | Indica se os arquivos do projeto, sujeitos ao filtro em **Arquivos para transferir**, devem ser copiados para um espaço de trabalho remoto com cada execução. |
-| | Arquivos para transferir | Nomes de arquivo e curingas que indicam os arquivos específicos para copiar em um espaço de trabalho remoto se **Transferir arquivos em execução** estiver selecionado. |
-| Configurações | (Arquivo Settings.R) | As configurações do projeto do R vêm dos arquivos *Settings.R* ou **.Settings.R* que estão localizados dentro do projeto. Se não houver nenhum arquivo de configurações, você poderá adicionar variáveis e salvar a página e, em seguida, um arquivo padrão *Settings.R* será criado para você. Também é possível adicionar o arquivo de configurações ao projeto por meio do comando de menu **Arquivo** > **Adicionar Novo Item**. <br/> As configurações são armazenadas como código R e o arquivo pode ser obtido antes da execução de outros módulos, portanto, pré-populando o ambiente com configurações predefinidas. |
+
+| Tabulação | Propriedade | Descrição | 
+| --- | --- | --- | 
+| Executar | Arquivo de inicialização | O nome do arquivo que é executado com o comando **Arquivo de inicialização de origem**, **F5**, **Depurar** > **Iniciar depuração** ou **Depurar** > **Iniciar sem depuração**. Clicar com o botão direito do mouse no arquivo no projeto e selecionar **Definir como script de inicialização do R** também o define como o arquivo de inicialização. | 
+| | Redefinir R Interativo em execução | Limpa todas as variáveis de workspace da janela interativa ao executar o projeto. Isso garante que não haja nenhum conteúdo no workspace que restou das execuções anteriores. | 
+| | Caminho do projeto remoto | Caminho para um workspace remoto. | 
+| | Transferir arquivos em execução | Indica se os arquivos do projeto, sujeitos ao filtro em **Arquivos para transferir**, devem ser copiados para um workspace remoto com cada execução. | 
+| | Arquivos para transferir | Nomes de arquivo e curingas que indicam os arquivos específicos para copiar em um workspace remoto se **Transferir arquivos em execução** estiver selecionado. | 
+| Configurações | (Arquivo Settings.R) | As configurações do projeto do R vêm dos arquivos *Settings.R* ou **.Settings.R* que estão localizados dentro do projeto. Se não houver nenhum arquivo de configurações, você poderá adicionar variáveis e salvar a página e, em seguida, um arquivo padrão *Settings.R* será criado para você. Também é possível adicionar o arquivo de configurações ao projeto por meio do comando de menu **Arquivo** > **Adicionar Novo Item**. <br/> As configurações são armazenadas como código R e o arquivo pode ser obtido antes da execução de outros módulos, portanto, pré-populando o ambiente com configurações predefinidas. | 
 
 ## <a name="r-specific-project-commands"></a>Comandos de projeto específico do R
 

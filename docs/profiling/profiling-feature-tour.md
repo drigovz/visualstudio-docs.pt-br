@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320833"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356789"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Início rápido: primeiro olhar sobre ferramentas de criação de perfil
 
@@ -34,7 +34,8 @@ Durante a depuração, é possível usar a janela **Ferramentas de Diagnóstico*
 
 A janela **Ferramentas de Diagnóstico** costuma ser a maneira preferencial para criar perfis de aplicativos, mas para builds de Versão também é possível fazer uma análise post-mortem do aplicativo. Se você quiser obter mais informações sobre diferentes abordagens, confira [Executar ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Para ver o suporte à ferramentas de criação de perfil para tipos diferentes de aplicativo, confira [Qual ferramenta devo usar?](#which-tool-should-i-use).
 
-> ![NOTE] Você pode usar as ferramentas post-mortem com o Windows 7 e posteriores. O Windows 8 ou posterior é necessário para executar ferramentas de criação de perfil com o depurador (janela **Ferramentas de Diagnóstico**).
+> [!NOTE]
+> Você pode usar as ferramentas post-mortem com o Windows 7 e posteriores. O Windows 8 ou posterior é necessário para executar ferramentas de criação de perfil com o depurador (janela **Ferramentas de Diagnóstico**).
 
 ## <a name="analyze-cpu-usage"></a>Analisar o uso de CPU
 
@@ -119,7 +120,7 @@ Ao selecionar um período nos gráficos e escolher **Exibir detalhes**, uma exib
 
 Também é possível usar os gráficos para determinar se há gargalos de desempenho limitados à CPU ou à GPU.
 
-## <a name="analyze-performance-javascript"></a>Analisar o desempenho (JavaScript)
+## <a name="analyze-performance-javascript-uwp"></a>Analisar o desempenho (JavaScript UWP)
 
 Para aplicativos UWP, é possível usar a ferramenta Memória JavaScript e a ferramenta Capacidade de Resposta de IU em HTML.
 
@@ -155,8 +156,8 @@ Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio ofer
   
 |Ferramenta de Desempenho|Área de Trabalho do Windows|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
-|[Uso de Memória](../profiling/memory-usage.md)|sim|sim|sim| 
 |[Uso da CPU](../profiling/cpu-usage.md)|sim|sim|sim|
+|[Uso de Memória](../profiling/memory-usage.md)|sim|sim|sim| 
 |[Uso de GPU](../debugger/gpu-usage.md)|sim|sim|no| 
 |[Linha do tempo do aplicativo](../profiling/application-timeline.md)|sim|sim|no|
 |[PerfTips](../profiling/perftips.md)|sim|sim para XAML, não para HTML|sim|

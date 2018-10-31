@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 125fb107bcb40510ad8196c26c9538ef505d2093
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f9d039d6f6f5593538063e751348148786667000
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079116"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879051"
 ---
 # <a name="how-to-clean-a-build"></a>Como limpar um build
 Quando você limpa um build, todos os arquivos de saída e intermediários são excluídos, deixando apenas os arquivos de projeto e componente. Nos arquivos de projeto e de componente, novas instâncias dos arquivos de saída e intermediários podem ser criadas. A biblioteca de tarefas comuns fornecida com o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclui uma tarefa [Exec](../msbuild/exec-task.md) que você pode usar para executar comandos do sistema. Para obter mais informações sobre a biblioteca de tarefas, confira [Referência de tarefas](../msbuild/msbuild-task-reference.md).  
@@ -53,13 +53,13 @@ Quando você limpa um build, todos os arquivos de saída e intermediários são 
 ## <a name="example"></a>Exemplo  
  O seguinte exemplo de projeto de código contém um novo destino, `Clean`, que usa a tarefa `RemoveDir` para excluir um diretório e todos os arquivos e diretórios que ele contém. Também no exemplo, o destino `Compile` cria um diretório separado para os itens de saída que são excluídos quando o build for removida.  
   
- `Compile` é definido como o destino padrão e, portanto, é usado automaticamente a menos que você especifique um ou mais destinos diferentes. Use a opção de linha de comando **/target** para especificar um destino diferente. Por exemplo:  
+ `Compile` é definido como o destino padrão e, portanto, é usado automaticamente a menos que você especifique um ou mais destinos diferentes. Use a opção de linha de comando **-target** para especificar um destino diferente. Por exemplo:  
   
- `msbuild <file name>.proj /target:Clean`  
+ `msbuild <file name>.proj -target:Clean`  
   
- A opção **/target** pode ser abreviada como **/t** e pode especificar mais de um destino. Por exemplo, para usar o destino `Clean` e, em seguida, o destino `Compile`, digite:  
+ A opção **-target** pode ser abreviada como **-t** e pode especificar mais de um destino. Por exemplo, para usar o destino `Clean` e, em seguida, o destino `Compile`, digite:  
   
- `msbuild <file name>.proj /t:Clean;Compile`  
+ `msbuild <file name>.proj -t:Clean;Compile`  
   
 ```xml  
 <Project DefaultTargets = "Compile"  

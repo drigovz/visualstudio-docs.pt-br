@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c23e7c7f6a6de9912a9c886f3eeba91208ae0ee6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942212"
 ---
 # <a name="walkthrough-build-an-application"></a>Passo a passo: Criar um aplicativo
 
@@ -114,23 +114,23 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
 1. No **Gerenciador de Soluções**, escolha o nó do projeto de nível superior.
 
-1. Na barra de menus, escolha **Exibir** > **Páginas de Propriedade**.
+2. Na barra de menus, escolha **Exibir** > **Páginas de Propriedade**.
 
      O **Designer de Projeto** é aberto.
 
-1. Na página **Compilar**, marque a caixa de seleção **Desabilitar todos os avisos**.
+3. Na página **Compilar**, marque a caixa de seleção **Desabilitar todos os avisos**.
 
      ![Página Compilar, Designer de Projeto](../ide/media/buildwalk_vbsupresswarnings.png)
 
      Para obter mais informações, consulte [Configurar avisos no Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
-1. Compile a solução.
+4. Compile a solução.
 
- A Janela de **Saída** exibe apenas informações de resumo do build.
+   A Janela de **Saída** exibe apenas informações de resumo do build.
 
- ![Janela de Saída, Avisos de build do Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
+   ![Janela de Saída, Avisos de build do Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
- Para obter mais informações, consulte [Como suprimir avisos do compilador](../ide/how-to-suppress-compiler-warnings.md).
+   Para obter mais informações, consulte [Como suprimir avisos do compilador](../ide/how-to-suppress-compiler-warnings.md).
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Exibir detalhes de build adicionais na janela Saída
 
@@ -138,7 +138,6 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
 > [!IMPORTANT]
 > Se você exibir mais informações, o build levará mais tempo para ser concluído.
-
 
 ### <a name="change-the-amount-of-information-in-the-output-window"></a>Alterar a quantidade de informações na janela Saída
 
@@ -221,7 +220,7 @@ Para obter mais informações, consulte [Como alterar o diretório de saída do 
 
    O arquivo executável é copiado para o caminho de rede especificado. Seu caminho será `\\myserver\builds\\FileName.exe`.
 
-Parabéns, você concluiu este passo a passo com êxito.
+Parabéns! Você concluiu este passo a passo com êxito.
 
 ## <a name="see-also"></a>Consulte também
 

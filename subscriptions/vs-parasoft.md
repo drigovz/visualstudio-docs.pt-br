@@ -9,12 +9,12 @@ description: Saiba como ativar a assinatura do Parasoft Virtualize/SOA Test Prof
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9636bd3a264cf3cdd364382ffdffb11c376f1598
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f9e9c617ba64ca0502e50619c107f000b4f6ad5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283152"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830178"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop em assinaturas do Visual Studio
 
@@ -23,56 +23,57 @@ Teste antes e com mais frequência.  Simule e teste o comportamento de aplicativ
 
 ## <a name="activation-steps"></a>Etapas de ativação
 
-1.  Para usar seu benefício Parasoft Virtualize/SOAtest Professional Desktop, entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Para usar seu benefício Parasoft Virtualize/SOAtest Professional Desktop, entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Localize o bloco Parasoft na seção de Ferramentas e clique no link **Obter Código** na parte inferior do bloco do benefício.   Você receberá uma notificação de que o código foi recuperado com êxito.  Clique em **Ativar**.
+2. Localize o bloco Parasoft na seção de Ferramentas e clique no link **Obter Código** na parte inferior do bloco do benefício.   Você receberá uma notificação de que o código foi recuperado com êxito.  Clique em **Ativar**.
+   > [!div class="mx-imgBorder"]
+   > ![Bloco do benefício Parasoft](_img/vs-parasoft/vs-parasoft-tile.png)
+
+3. Você será direcionado ao site da Parasoft, no qual criará uma conta.  Basta fornecer suas informações de contato e clicar em **Enviar**.
+   > [!div class="mx-imgBorder"]
+   > ![Criar conta do benefício Parasoft](_img/vs-parasoft/vs-parasoft-account-cropped.png)
+
+
+4. Depois de criar sua conta, será exibida uma notificação de que foi enviado um email para você com instruções de download.  (Lembre-se de verificar suas pastas de spam ou de lixo eletrônico, se o email não estiver na caixa de entrada.)
+
+5. Abra o email e copie o **Código de Ativação** para a área de transferência.
+
+6. Clique no link que corresponde ao seu sistema operacional.
+   > [!div class="mx-imgBorder"]
+   > ![Email de boas-vindas do benefício Parasoft](_img/vs-parasoft/vs-parasoft-email.png)
+
+7. Dependendo do navegador usado, poderão ser exibidas caixas de diálogo diferentes fornecendo a oportunidade de executar o instalador.  No Internet Explorer, por exemplo, aparecerá uma lista de downloads recentes com parasoft_soavirt_9.10.2_win32_x86_64.exe listado na parte superior. Clique em **Executar** para iniciar o instalador.
+
+8. Quando a caixa de diálogo Controle de Conta de Usuário for aberta, clique em **Sim**.
+
+9. Escolha o idioma desejado e, em seguida, clique em **OK**.
+
+10. O Assistente para Instalação do Parasoft SOAtest & Virtualize será iniciado.  Clique em **Avançar**.
     > [!div class="mx-imgBorder"]
-    > ![Bloco do benefício Parasoft](_img\vs-parasoft\vs-parasoft-tile.png)
+    > ![Iniciar instalação do benefício Parasoft](_img/vs-parasoft/vs-parasoft-start-install.png)
 
-2.  Você será direcionado ao site da Parasoft, no qual criará uma conta.  Basta fornecer suas informações de contato e clicar em **Enviar**.
+11. Clique em **Aceito o contrato** e, em seguida, clique em **Avançar**.
+
+12. Escolha onde deseja instalar os arquivos e clique em **Avançar**.
+
+13. Em seguida, você poderá escolher quais componentes deseja instalar ou poderá instalar todos (padrão).  Faça suas seleções e clique em **Avançar**.
+
+14. Especifique onde deseja inserir o atalho para o aplicativo instalado e clique em **Avançar**.
+
+15. O Certificado de Autoridade de Certificação Raiz da Web do SOAtest é necessário para determinados testes funcionais em sites HTTPS.  Escolha se deseja instalar o Certificado de Autoridade de Certificação Raiz e clique em **Avançar**.
     > [!div class="mx-imgBorder"]
-    > ![Criar conta do benefício Parasoft](_img\vs-parasoft\vs-parasoft-account-cropped.png)
+    > ![Certificado de autoridade de certificação raiz do benefício Parasoft](_img/vs-parasoft/vs-parasoft-install-root-ca.png)
 
+16. Escolha se deseja que os ícones da área de trabalho e de Início Rápido sejam criados durante a instalação e clique em **Avançar**.
 
-3.  Depois de criar sua conta, será exibida uma notificação de que foi enviado um email para você com instruções de download.  (Lembre-se de verificar suas pastas de spam ou de lixo eletrônico, se o email não estiver na caixa de entrada.)
-
-4.  Abra o email e copie o **Código de Ativação** para a área de transferência.
-
-5.  Clique no link que corresponde ao seu sistema operacional.
+17. Confirme as opções que você selecionou e clique em **Instalar** para começar a instalar o software.
     > [!div class="mx-imgBorder"]
-    > ![Email de boas-vindas do benefício Parasoft](_img\vs-parasoft\vs-parasoft-email.png)
+    > ![Benefício Parasoft pronto para ser instalado](_img/vs-parasoft/vs-parasoft-ready-to-install.png)
 
-6.  Dependendo do navegador usado, poderão ser exibidas caixas de diálogo diferentes fornecendo a oportunidade de executar o instalador.  No Internet Explorer, por exemplo, aparecerá uma lista de downloads recentes com parasoft_soavirt_9.10.2_win32_x86_64.exe listado na parte superior. Clique em **Executar** para iniciar o instalador.
-
-7.  Quando a caixa de diálogo Controle de Conta de Usuário for aberta, clique em **Sim**.
-
-8.  Escolha o idioma desejado e, em seguida, clique em **OK**.
-
-9.  O Assistente para Instalação do Parasoft SOAtest & Virtualize será iniciado.  Clique em **Avançar**.
-    > [!div class="mx-imgBorder"]
-    >![Iniciar instalação do benefício Parasoft](_img\vs-parasoft\vs-parasoft-start-install.png)
-
-10. Clique em **Aceito o contrato** e, em seguida, clique em **Avançar**.
-
-11. Escolha onde deseja instalar os arquivos e clique em **Avançar**.
-
-12. Em seguida, você poderá escolher quais componentes deseja instalar ou poderá instalar todos (padrão).  Faça suas seleções e clique em **Avançar**.
-
-13. Especifique onde deseja inserir o atalho para o aplicativo instalado e clique em **Avançar**.
-
-14. O Certificado de Autoridade de Certificação Raiz da Web do SOAtest é necessário para determinados testes funcionais em sites HTTPS.  Escolha se deseja instalar o Certificado de Autoridade de Certificação Raiz e clique em **Avançar**.
-    > [!div class="mx-imgBorder"]
-    > ![Certificado de autoridade de certificação raiz do benefício Parasoft](_img\vs-parasoft\vs-parasoft-install-root-ca.png)
-
-15. Escolha se deseja que os ícones da área de trabalho e de Início Rápido sejam criados durante a instalação e clique em **Avançar**.
-
-16. Confirme as opções que você selecionou e clique em **Instalar** para começar a instalar o software.
-    > [!div class="mx-imgBorder"]
-    > ![Benefício Parasoft pronto para ser instalado](_img\vs-parasoft\vs-parasoft-ready-to-install.png)
-
-17. Quando a instalação for concluída, clique em **Concluir**. Agora você está pronto para começar a usar o benefício desktop profissional Parasoft Virtualize/SOAtest!
+18. Quando a instalação for concluída, clique em **Concluir**. Agora você está pronto para começar a usar o benefício desktop profissional Parasoft Virtualize/SOAtest!
 
 ## <a name="eligibility"></a>Qualificação
+
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Padrão, nuvem anual)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Seis meses       |  Sim       |
@@ -82,7 +83,7 @@ Teste antes e com mais frequência.  Simule e teste o comportamento de aplicativ
 | Visual Studio Dev Essentials | NA  | Não disponível|NA |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
 
-<sup>1</sup>  *Inclui: Microsoft Partner Network (Enterprise).  Exclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Microsoft Valued Partner), RD (diretor regional).  MCT Software & Services.*
+<sup>1</sup>  *Inclui: Microsoft Partner Network (Enterprise).  Exclui:  NFR (Proibida a Revenda), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Microsoft Valued Professional), RD (diretor regional).  MCT Software & Services.*
 
 
 

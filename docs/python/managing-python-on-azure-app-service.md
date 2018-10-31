@@ -1,7 +1,7 @@
 ---
-title: Configurando o Python no Serviço de Aplicativo do Azure
+title: Como configurar o Python no Serviço de Aplicativo do Azure (Windows)
 description: Como instalar um interpretador e bibliotecas Python no Serviço de Aplicativo do Azure, e configurar os aplicativos Web para fazer referência corretamente a esse interpretador.
-ms.date: 07/26/2018
+ms.date: 10/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 76d413e37ec7ebeabd8c76655b4c47758ffafc48
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 10da39ca8074148ac11e69be559af8da9931213e
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468709"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459862"
 ---
-# <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Como configurar um ambiente Python no Serviço de Aplicativo do Azure
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Como configurar um ambiente Python no Serviço de Aplicativo do Azure (Windows)
 
 > [!Important]
-> A Microsoft está planejando reprovar as extensões do Python para o Serviço de Aplicativo, conforme descrito neste artigo em favor de uma implantação direta no Serviço de Aplicativo no Linux. Enquanto isso, as extensões ainda continuam funcionando. Para fazer uma implantação no Serviço de Aplicativo no Linux, confira [Implantar um aplicativo Web do Python no Aplicativo Web para Contêineres](/azure/app-service/containers/quickstart-python).
+> A Microsoft preteriu as extensões do Python para o Serviço de Aplicativo no Windows, conforme descrito neste artigo, em favor de uma implantação direta no [Serviço de Aplicativo no Linux](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 O [Serviço de Aplicativo do Azure](https://azure.microsoft.com/services/app-service/) é uma oferta de plataforma como serviço para aplicativos Web, quer eles sejam sites acessados por meio de um navegador, APIs REST usadas por seus próprios clientes ou processamento disparado por evento. O Serviço de Aplicativo dá suporte total ao uso do Python para implementar aplicativos.
 

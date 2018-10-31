@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 813fdbccaf7bb685f0b4bf182f0bd0aede907f83
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551656"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101128"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Como atribuir qual ambiente Python é usado para um projeto
 
@@ -50,7 +50,7 @@ Um ambiente virtual é uma combinação exclusiva de um intérprete Python espec
 
 Um benefício de usar um ambiente virtual é que, à medida que você desenvolve um projeto ao longo do tempo, o ambiente virtual sempre reflete as dependências exatas do projeto. (Um ambiente compartilhado global, por outro lado, contém qualquer número de bibliotecas, não importa se você as usa no projeto ou não.) É possível criar facilmente um arquivo *requirements.txt* pelo ambiente virtual, que é usado para reinstalar essas dependências em outro computador de desenvolvimento ou produção. Para saber mais, confira [Gerenciar pacotes necessários com requirements.txt](managing-required-packages-with-requirements-txt.md).
 
-Quando você abre um projeto no Visual Studio que contém um arquivo *requirements.txt*, o Visual Studio oferece automaticamente a opção de recriar o ambiente virtual. Em computadores em que o Visual Studio não estiver instalado, como o Serviço de Aplicativo do Azure, você poderá usar `pip install -r requirements.txt` para restaurar os pacotes (esse processo é descrito em [Gerenciar o Python no Serviço de Aplicativo do Azure](managing-python-on-azure-app-service.md)).
+Quando você abre um projeto no Visual Studio que contém um arquivo *requirements.txt*, o Visual Studio oferece automaticamente a opção de recriar o ambiente virtual. Em computadores em que o Visual Studio não está instalado, você pode usar `pip install -r requirements.txt` para restaurar os pacotes.
 
 Como um ambiente virtual contém um caminho embutido em código para o interpretador de base e é possível recriar o ambiente usando *requirements.txt*, normalmente você omite a pasta de todo o ambiente virtual no controle do código-fonte.
 
