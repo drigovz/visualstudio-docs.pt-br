@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd9f04b616ee7551f04a8c0b260eb69995943a8b
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 23e11629849c29a3c3024fe7aea7b708b1b7d87a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371154"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854475"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
 
@@ -47,20 +47,20 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ###  <a name="bkmk_analyze"></a> Analisar
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Analyze.NavigateBackward|**Shift+Alt+3**|
 |Analyze.NavigateForward|**Shift+Alt+4**|
 
 ###  <a name="bkmk_architecture"></a> Arquitetura
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Architecture.NewDiagram|**Ctrl+\\, Ctrl+N**|
 
 ###  <a name="bkmk_build"></a> Build
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Build.BuildSolution|**Ctrl+Shift+B**|
 |Build.Cancel|**Ctrl+Break**|
 |Build.Compile|**Ctrl+F7**|
@@ -69,13 +69,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ###  <a name="bkmk_classview"></a> Menus de Contexto do Modo de Exibição de Classe
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**Alt+Enter**|
 
 ###  <a name="bkmk_debug"></a> Depurar
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Debug.ApplyCodeChanges|**Alt+F10**|
 |Debug.Autos|**Ctrl+Alt+V, A**|
 |Debug.BreakAll|**Ctrl+Alt+Break**|
@@ -143,7 +143,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ###  <a name="bkmk_debugger"></a> Menus de contexto do depurador
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |DebuggerContextMenus.BreakpointsWindow.Delete|**Alt+F9, D**|
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**Alt+F9, A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**Alt+F9, S**|
@@ -151,7 +151,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ###  <a name="bkmk_diagnostics"></a> Hub de Diagnóstico
 
 |Comando|Atalho de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |DiagnosticsHub.StopCollection|**Ctrl+Alt+F2**|
 
 ###  <a name="bkmk_edit"></a> Editar
@@ -216,25 +216,25 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ###  <a name="bkmk_editorContext"></a> Menus de contexto do editor
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |EditorContextMenus.CodeWindow.Breakpoint.BreakpointEditlabels|**Alt+F9, L**|
 |EditorContextMenus.CodeWindow.CodeMap.ShowItem|**Ctrl+`**|
 |EditorContextMenus.CodeWindow.Execute|**Ctrl+Alt+F5**|
 |EditorContextMenus.CodeWindow.GoToView|**Ctrl+M, Ctrl+G**|
-|EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**Ctrl+K, Ctrl+O**|
+|EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**Crtl+K, Ctrl+O** (letra "O")|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**Ctrl+K, Ctrl+T**<br /><br /> ou<br /><br /> **Ctrl+K, T**|
 
 ###  <a name="bkmk_file"></a> Arquivo
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |File.Exit|**Alt+F4**|
 |File.NewFile|**Ctrl+N**|
 |File.NewProject|**Ctrl+Shift+N**|
 |File.NewWebSite|**Shift+Alt+N**|
-|File.OpenFile|**Ctrl+O**|
-|File.OpenProject|**Ctrl+Shift+O**|
-|File.OpenWebSite|**Shift+Alt+O**|
+|File.OpenFile|**Ctrl+O** (letra "O")|
+|File.OpenProject|**Ctrl+Shift+O** (letra "O")|
+|File.OpenWebSite|**Shift+Alt+O** (letra "O")|
 |File.Print|**Ctrl+P**|
 |File.SaveAll|**Ctrl+Shift+S**|
 |File.SaveSelectedItems|**Ctrl+S**|
@@ -243,7 +243,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ###  <a name="bkmk_help"></a> Ajuda
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Help.AddandRemoveHelpContent|**Ctrl+Alt+F1**|
 |Help.F1Help|**F1**|
 |Help.ViewHelp|**Ctrl+F1**|
@@ -252,88 +252,88 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ###  <a name="bkmk_loadtest"></a> Teste de carga
 
 |Comando|Atalho de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |LoadTest.JumpToCounterPane|**Ctrl+R, Q**|
 
 ###  <a name="bkmk_otherContext"></a> Outros menus de contexto
 
 |Comando|Atalho de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Inserir**|
 
 ###  <a name="bkmk_project"></a> Projeto
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Project.AddExistingItem|**Shift+Alt+A**|
 |Project.AddNewItem|**Ctrl+Shift+A**|
 |Project.ClassWizard|**Ctrl+Shift+X**|
 |Project.Override|**Ctrl+Alt+Ins**|
-|Project.Previewchanges|**Alt+;, Alt+C**|
-|Project.Publishselectedfiles|**Alt+;, Alt+P**|
-|Project.Replaceselectedfilesfromserver|**Alt+;, Alt+R**|
+|Project.Previewchanges|**Alt+;** e, em seguida, **Alt+C**|
+|Project.Publishselectedfiles|**Alt+;** e, em seguida, **Alt+P**|
+|Project.Replaceselectedfilesfromserver|**Alt+;** e, em seguida, **Alt+R**|
 
 ###  <a name="bkmk_projectContext"></a> Menus de contexto de projeto e solução
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**Alt+Seta para baixo**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**Alt+Seta para cima**|
 
 ###  <a name="bkmk_refactor"></a> Refatoração
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Refactor.EncapsulateField|**Ctrl+R, Ctrl+E**|
 |Refactor.ExtractInterface|**Ctrl+R, Ctrl+I**|
 |Refactor.ExtractMethod|**Ctrl+R, Ctrl+M**|
 |Refactor.RemoveParameters|**Ctrl+R, Ctrl+V**|
 |Refactor.Rename|**Ctrl+R, Ctrl+R**|
-|Refactor.ReorderParameters|**Ctrl+R, Ctrl+O**|
+|Refactor.ReorderParameters|**Crtl+R, Ctrl+O** (letra "O")|
 
 ###  <a name="bkmk_solutionexplorerGLOBAL"></a> Gerenciador de Soluções
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
-|SolutionExplorer.OpenFilesFilter|**Ctrl+[, O**<br /><br /> ou<br /><br /> **Ctrl+[, Ctrl+O**|
-|SolutionExplorer.PendingChangesFilter|**Ctrl+[, P**<br /><br /> ou<br /><br /> **Ctrl+[, Ctrl+P**|
-|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[, S**<br /><br /> ou<br /><br /> **Ctrl+[, Ctrl+S**|
+|--------------| - |
+|SolutionExplorer.OpenFilesFilter|**Ctrl+[**, **O** (letra "O")<br /><br /> ou<br /><br /> **Ctrl+[**, **Ctrl+O** (letra "O")|
+|SolutionExplorer.PendingChangesFilter|**Ctrl+[**, **P**<br /><br /> ou<br /><br /> **Ctrl+[**, **Ctrl+P**|
+|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[**, **S**<br /><br /> ou<br /><br /> **Ctrl+[**, **Ctrl+S**|
 
 ###  <a name="bkmk_team"></a> Equipe
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
-|Team.Git.GoToGitBranches|**Ctrl+0, Ctrl+N**<br /><br /> ou<br /><br /> **Ctrl+0, N**|
-|Team.Git.GoToGitChanges|**Ctrl+0, Ctrl+G**<br /><br /> ou<br /><br /> **Ctrl+0, G**|
-|Team.Git.GoToGitCommits|**Ctrl+0, Ctrl+O**<br /><br /> ou<br /><br /> **Ctrl+0, O**|
+|--------------| - |
+|Team.Git.GoToGitBranches|**Ctrl+0** (zero), **Ctrl+N**<br /><br /> ou<br /><br /> **Ctrl+0, N**|
+|Team.Git.GoToGitChanges|**Ctrl+0** (zero), **Ctrl+G**<br /><br /> ou<br /><br /> **Ctrl+0, G**|
+|Team.Git.GoToGitCommits|**Ctrl+0** (zero), **Ctrl+O** (letra "O")<br /><br /> ou<br /><br /> **Ctrl+0, O**|
 |Team.TeamExplorerSearch|**Ctrl+'**|
 
 ###  <a name="bkmk_TFcontext"></a> Menus de Contexto do Team Foundation
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
-|TeamFoundationContextMenus.Commands.GoToBuilds|**Ctrl+0, Ctrl+B**<br /><br /> ou<br /><br /> **Ctrl+0, B**|
-|TeamFoundationContextMenus.Commands.GoToConnect|**Ctrl+0, Ctrl+C**<br /><br /> ou<br /><br /> **Ctrl+0, C**|
-|TeamFoundationContextMenus.Commands.GoToDocuments|**Ctrl+0, Ctrl+D**<br /><br /> ou<br /><br /> **Ctrl+0, D**|
-|TeamFoundationContextMenus.Commands.GoToHome|**Ctrl+0, Ctrl+H**<br /><br /> ou<br /><br /> **Ctrl+0, H**|
-|TeamFoundationContextMenus.Commands.GoToMyWork|**Ctrl+0, Ctrl+M**<br /><br /> ou<br /><br /> **Ctrl+0, M**|
-|TeamFoundationContextMenus.Commands.GoToPendingChanges|**Ctrl+0, Ctrl+P**<br /><br /> ou<br /><br /> **Ctrl+0, P**|
-|TeamFoundationContextMenus.Commands.GoToReports|**Ctrl+0, Ctrl+R**<br /><br /> ou<br /><br /> **Ctrl+0, R**|
-|TeamFoundationContextMenus.Commands.GoToSettings|**Ctrl+0, Ctrl+S**<br /><br /> ou<br /><br /> **Ctrl+0, S**|
-|TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl+0, Ctrl+A**<br /><br /> ou<br /><br /> **Ctrl+0, A**|
-|TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl+0, Ctrl+W**<br /><br /> ou<br /><br /> **Ctrl+0, W**|
+|--------------| - |
+|TeamFoundationContextMenus.Commands.GoToBuilds|**Ctrl+0** (zero), **Ctrl+B**<br /><br /> ou<br /><br /> **Ctrl+0, B**|
+|TeamFoundationContextMenus.Commands.GoToConnect|**Ctrl+0** (zero), **Ctrl+C**<br /><br /> ou<br /><br /> **Ctrl+0, C**|
+|TeamFoundationContextMenus.Commands.GoToDocuments|**Ctrl+0** (zero), **Ctrl+D**<br /><br /> ou<br /><br /> **Ctrl+0, D**|
+|TeamFoundationContextMenus.Commands.GoToHome|**Ctrl+0** (zero), **Ctrl+H**<br /><br /> ou<br /><br /> **Ctrl+0, H**|
+|TeamFoundationContextMenus.Commands.GoToMyWork|**Ctrl+0** (zero), **Ctrl+M**<br /><br /> ou<br /><br /> **Ctrl+0, M**|
+|TeamFoundationContextMenus.Commands.GoToPendingChanges|**Ctrl+0** (zero), **Ctrl+P**<br /><br /> ou<br /><br /> **Ctrl+0, P**|
+|TeamFoundationContextMenus.Commands.GoToReports|**Ctrl+0** (zero), **Ctrl+R**<br /><br /> ou<br /><br /> **Ctrl+0, R**|
+|TeamFoundationContextMenus.Commands.GoToSettings|**Ctrl+0** (zero), **Ctrl+S**<br /><br /> ou<br /><br /> **Ctrl+0, S**|
+|TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl+0** (zero), **Ctrl+A**<br /><br /> ou<br /><br /> **Ctrl+0, A**|
+|TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl+0** (zero), **Ctrl+W**<br /><br /> ou<br /><br /> **Ctrl+0, W**|
 
 ###  <a name="bkmk_test"></a> Teste
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Test.UseCodedUITestBuilder|**Ctrl+\\, Ctrl+C**|
 |Test.UseExistingActionRecording|**Ctrl+\\, Ctrl+A**|
 
 ###  <a name="bkmk_testexplorerGLOBAL"></a> Gerenciador de Testes
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |TestExplorer.DebugAllTests|**Ctrl+R, Ctrl+A**|
 |TestExplorer.DebugAllTestsInContext|**Ctrl+R, Ctrl+T**|
 |TestExplorer.RepeatLastRun|**Ctrl+R, L**|
@@ -343,7 +343,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ###  <a name="bkmk_tools"></a> Ferramentas
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Tools.AttachtoProcess|**Ctrl+Alt+P**|
 |Tools.CodeSnippetsManager|**Ctrl+K, Ctrl+B**|
 |Tools.ForceGC|**Ctrl+Shift+Alt+F12, Ctrl+Shift+Alt+F12**|
@@ -352,7 +352,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ###  <a name="bkmk_view"></a> Modo de Exibição
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |View.AllWindows|**Shift+Alt+M**|
 |View.ArchitectureExplorer|**Ctrl+\\, Ctrl+R**|
 |View.Backward|**Alt+Seta para a esquerda**|
@@ -379,7 +379,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |View.Notifications|**Ctrl+W, N**<br /><br /> ou<br /><br /> **Ctrl+W, Ctrl+N**|
 |View.ObjectBrowser|**Ctrl+Alt+J**|
 |View.ObjectBrowserGoToSearchCombo|**Ctrl+K, Ctrl+R**|
-|View.Output|**Ctrl+Alt+O**|
+|View.Output|**Ctrl+Alt+O** (letra "O")|
 |View.PopBrowseContex|**Ctrl+Shift+8**|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**Shift+F4**|
@@ -401,7 +401,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ###  <a name="bkmk_window"></a> Janela
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Window.ActivateDocumentWindow|**Esc**|
 |Window.AddTabtoSelection|**Ctrl+Shift+Alt+Espaço**|
 |Window.CloseDocumentWindow|**Ctrl+F4**|
@@ -432,14 +432,14 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ###  <a name="bkmk_windowsazure"></a> Azure
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |WindowsAzure.RetryMobileServiceScriptOperation|**Ctrl+Num \*, Ctrl+R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**Ctrl+Num \*, Ctrl+D**|
 
 ##  <a name="adonet-entity-data-model-designer"></a>Designer de Modelo de Dados de Entidade ADO.NET
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down|**Alt+Seta para baixo**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down5|**Alt+PgDn**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToBottom|**Alt+End**|
@@ -454,7 +454,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="class-diagram"></a>Diagrama de classe
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |ClassDiagram.Collapse|**Num -**|
 |ClassDiagram.Expand|**Num +**|
 |Edit.Delete|**Ctrl+Del**|
@@ -466,7 +466,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="coded-ui-test-editor"></a>Editor de Testes de Interface de Usuário Codificada
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.UITestEditorContextMenu.CopyReferencetoClipboard|**Ctrl+C**|
 |OtherContextMenus.UITestEditorContextMenu.InsertDelayBefore|**Ctrl+Alt+D**|
 |OtherContextMenus.UITestEditorContextMenu.LocateAll|**Shift+Alt+L**|
@@ -477,14 +477,14 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="dataset-editor"></a>Editor de Conjunto de Dados
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|**Inserir**|
 |OtherContextMenus.DbTableContext.Add.Column|**Ctrl+L**|
 
 ##  <a name="difference-viewer"></a>Visualizador de Diferenças
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Diff.IgnoreTrimWhitespace|**Ctrl+\\, Ctrl+Barra de espaço**|
 |Diff.InlineView|**Ctrl+\\, Ctrl+1**|
 |Diff.LeftOnlyView|**Ctrl+\\, Ctrl+3**|
@@ -500,7 +500,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="dom-explorer"></a>Explorador do DOM
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |DOMExplorer.Refresh|**F5**|
 |DOMExplorer.SelectElement|**Ctrl+B**|
 |DOMExplorer.ShowLayout|**Ctrl+Shift+I**|
@@ -508,13 +508,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="f-interactive"></a>F# interativo
 
 |Comando|Atalho de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**Ctrl+Break**|
 
 ##  <a name="graph-document-editor"></a>Editor de Documento Gráfico
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**Inserir**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
@@ -526,13 +526,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="graphics-diagnostics"></a>Diagnóstico de gráfico
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Debug.Graphics.CaptureFrame|Nenhum|
 |Gráficos.MoverSeleçãoDePixelParaBaixo|**Shift+Alt+Seta para baixo**|
 |Gráficos.MoverSeleçãoDePixelParaEsquerda|**Shift+Alt+Seta para a esquerda**|
 |Gráficos.MoverSeleçãoDePixelParaDireita|**Shift+Alt+Seta para a direita**|
 |Gráficos.MoverSeleçãodePixelParaCima|**Shift+Alt+Seta para cima**|
-|Gráficos.AplicarZoomParaTamanhoReal|**Shift+Alt+0**|
+|Gráficos.AplicarZoomParaTamanhoReal|**Shift+Alt+0** (zero)|
 |Gráficos.AplicarParaAjustarJanela|**Shift+Alt+9**|
 |Gráficos.Ampliar|**Shift+Alt+=**|
 |Gráficos.Reduzir|**Shift+Alt+-**|
@@ -540,13 +540,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="html-editor"></a>Editor de HTML
 
 |Comando|Atalho de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**Ctrl+M, Ctrl+G**|
 
 ##  <a name="html-editor-design-view"></a>Exibição de Design do Editor HTML
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.MoveControlDown|**Ctrl+Seta para baixo**|
 |Edit.MoveControlUp|**Ctrl+seta para cima**|
 |Format.Bold|**Ctrl+B**|
@@ -569,7 +569,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="html-editor-source-view"></a>Modo Código-Fonte do Editor de HTML
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**Ctrl+M, Ctrl+G**|
 |View.NextView|**Ctrl+PgDn**|
 |View.SynchronizeViews|**Ctrl+Shift+Y**|
@@ -579,13 +579,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="layer-diagram"></a>Diagrama de camada
 
 |Comando|Atalho de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.Delete|**Shift+Delete**|
 
 ##  <a name="managed-resources-editor"></a>Editor de Recursos Gerenciados
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.EditCell|**F2**|
 |Edit.Remove|**Excluir**|
 |Edit.RemoveRow|**Ctrl+Delete**|
@@ -600,7 +600,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="merge-editor-window"></a>Janela do Editor de Mesclagem
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonLeftWindow|**Alt+1**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**Alt+2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**Alt+3**|
@@ -608,7 +608,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, Comparação de Esquemas
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |SQL.SSDTSchemaCompareCompare|**Shift+Alt+C**|
 |SQL.SSDTSchemaCompareGenerateScript|**Shift+Alt+G**|
 |SQL.SSDTSchemaCompareNextChange|**Shift+Alt+.**|
@@ -619,7 +619,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, Designer de Tabela
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |CommitAllEdits|**Shift+Alt+U**|
 |SQL.ExpandWildcards|**Ctrl+R, E**<br /><br /> ou<br /><br /> **Ctrl+R, Ctrl+E**|
 |SQL.FullyqualifyNames|**Ctrl+R, Q**<br /><br /> ou<br /><br /> **Ctrl+R, Ctrl+Q**|
@@ -630,7 +630,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, Editor T-SQL
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |CommitAllEdits|**Shift+Alt+U**|
 |SQL.ExecuteWithDebugger|**Alt+F5**|
 |SQL.ExpandWildcards|**Ctrl+R, E**<br /><br /> ou<br /><br /> **Ctrl+R, Ctrl+E**|
@@ -651,7 +651,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools, Editor T-SQL PDW
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |SQL.TSqlEditorCancelQuery|**Alt+Break**|
 |SQL.TSqlEditorExecuteQuery|**Ctrl+Shift+E**|
 |SQL.TSqlEditorResultsAsFile|**Ctrl+D, F**|
@@ -666,13 +666,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="page-inspector"></a>Inspetor de Página
 
 |Comando|Atalho de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |PageInspector.Minimize|**F12**|
 
 ##  <a name="query-designer"></a>Designer de Consulta
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |QueryDesigner.CancelRetrievingData|**Ctrl+T**|
 |QueryDesigner.Criteria|**Ctrl+2**|
 |QueryDesigner.Diagram|**Ctrl+1**|
@@ -685,7 +685,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="query-results"></a>Resultados da consulta
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |SQL.QueryResultsNewRow|**Alt+End**|
 |SQL.QueryResultsRefresh|**Shift+Alt+R**|
 |SQL.QueryResultsStop|**Alt+Break**|
@@ -693,7 +693,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="report-designer"></a>Designer de Relatório
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.BreakLine|**Enter**|
 |Edit.CharLeft|**Seta para a esquerda**|
 |Edit.CharLeftExtend|**Shift+Seta para a esquerda**|
@@ -719,14 +719,14 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="sequence-diagram"></a>Diagrama de sequência
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**Shift+Del**|
 
 ##  <a name="settings-designer"></a>Designer de Configurações
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.EditCell|**F2**|
 |Edit.RemoveRow|**Ctrl+Delete**|
 |Edit.SelectionCancel|**Esc**|
@@ -735,18 +735,18 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="solution-explorer"></a>Gerenciador de Soluções
 
 |Comando|Atalho de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**Ctrl+K, Ctrl+G**|
 
 ##  <a name="team-explorer"></a>Team Explorer
 
 |Comando|Atalho de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.Delete|**Excluir**|
 |File.Rename|**F2**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**Alt+Home**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**Alt+Seta para baixo**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**Alt+0**|
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**Alt+0** (zero)|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerPreviousSectionContent|**Alt+Seta para cima**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection1Content|**Alt+1**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection2Content|**Alt+2**|
@@ -766,154 +766,154 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="test-explorer"></a>Gerenciador de Testes
 
 |Comando|Atalho de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
 ##  <a name="text-editor"></a>Editor de Texto
 
-|Comandos|Atalhos de teclado|
-|--------------|------------------------|
-|Edit.BreakLine|**Enter**<br /><br /> ou<br /><br /> **Shift+Enter**|
-|Edit.CharLeft|**Seta para a esquerda**|
-|Edit.CharLeftExtend|**Shift+Seta para a esquerda**|
-|Edit.CharLeftExtendColumn|**Shift+Alt+Seta para a esquerda**|
-|Edit.CharRight|**Seta para a direita**|
-|Edit.CharRightExtend|**Shift+Seta para a direita**|
-|Edit.CharRightExtendColumn|**Shift+Alt+Seta para a direita**|
-|Edit.CharTranspose|**Ctrl+T**|
-|Edit.ClearBookmarks|**Ctrl+K, Ctrl+L**|
-|Edit.CollapseAllOutlining|**Ctrl+M, Ctrl+A**|
-|Edit.CollapseCurrentRegion|**Ctrl+M, Ctrl+S**|
-|Edit.CollapseTag|**Ctrl+M, Ctrl+T**|
-|Edit.CollapseToDefinitions|**Ctrl+M, Ctrl+O**|
-|Edit.CommentSelection|**Ctrl+K, Ctrl+C**|
-|Edit.CompleteWord|**Ctrl+Espaço**<br /><br /> ou<br /><br /> **Alt+Seta para a direita**|
-|Edit.CopyParameterTip|**Ctrl+Shift+Alt+C**|
-|Edit.DecreaseFilterLevel|**Alt+,**|
-|Edit.DeleteBackwards|**Backspace**<br /><br /> ou<br /><br /> **Shift+Bkspce**|
-|Edit.DeleteHorizontalWhiteSpace|**Ctrl+K, Ctrl+\**|
-|Edit.DocumentEnd|**Ctrl+End**|
-|Edit.DocumentEndExtend|**Ctrl+Shift+End**|
-|Edit.DocumentStart|**Ctrl+Home**|
-|Edit.DocumentStartExtend|**Ctrl+Shift+Home**|
-|Edit.ExpandAllOutlining|**Ctrl+M, Ctrl+X**|
-|Edit.ExpandCurrentRegion|**Ctrl+M, Ctrl+E**|
-|Edit.FormatDocument|**Ctrl+K, Ctrl+D**|
-|Edit.FormatSelection|**Ctrl+K, Ctrl+F**|
-|Edit.GotoBrace|**Ctrl+]**|
-|Edit.GotoBraceExtend|**Ctrl+Shift+]**|
-|Edit.HideSelection|**Ctrl+M, Ctrl+H**|
-|Edit.IncreaseFilterLevel|**Alt+.**|
-|Edit.IncrementalSearch|**Ctrl+I**|
-|Edit.InsertTab|**Tab**|
-|Edit.LineCut|**Ctrl+L**|
-|Edit.LineDelete|**Ctrl+Shift+L**|
-|Edit.LineDown|**Seta para Baixo**|
-|Edit.LineDownExtend|**Shift+Seta para baixo**|
-|Edit.LineDownExtendColumn|**Shift+Alt+Seta para baixo**|
-|Edit.LineEnd|**End**|
-|Edit.LineEndExtend|**Shift+End**|
-|Edit.LineEndExtendColumn|**Shift+Alt+End**|
-|Edit.LineOpenAbove|**Ctrl+Enter**|
-|Edit.LineOpenBelow|**Ctrl+Shift+Enter**|
-|Edit.LineStart|**Início**|
-|Edit.LineStartExtend|**Shift+Home**|
-|Edit.LineStartExtendColumn|**Shift+Alt+Home**|
-|Edit.LineTranspose|**Shift+Alt+T**|
-|Edit.LineUp|**Seta para Cima**|
-|Edit.LineUpExtend|**Shift+Seta para cima**|
-|Edit.LineUpExtendColumn|**Shift+Alt+Seta para cima**|
-|Edit.ListMembers|**Ctrl+J**|
-|Edit.MakeLowercase|**Ctrl+U**|
-|Edit.MakeUppercase|**Ctrl+Shift+U**|
-|Edit.MoveSelectedLinesDown|**Alt+Seta para baixo**|
-|Edit.MoveSelectedLinesUp|**Alt+Seta para cima**|
-|Edit.NextHighlightedReference|**Ctrl+Shift+Seta para baixo**|
-|Edit.OvertypeMode|**Inserir**|
-|Edit.PageDown|**PgDn**|
-|Edit.PageDownExtend|**Shift+PgDn**|
-|Edit.PageUp|**PgUp**|
-|Edit.PageUpExtend|**Shift+PgUp**|
-|Edit.ParameterInfo|**Ctrl+Shift+Barra de espaços**|
-|Edit.PasteParameterTip|**Ctrl+Shift+Alt+P**|
-|Edit.PeekBackward|**Ctrl+Alt+-**|
-|Edit.PeekDefinition|**Alt+F12**|
-|Edit.PeekForward|**Ctrl+Alt+=**|
-|Edit.PreviousHighlightedReference|**Ctrl+Shift+Seta para cima**|
-|Edit.QuickInfo|**Ctrl+K, Ctrl+I**|
-|Edit.ReverseIncrementalSearch|**Ctrl+Shift+I**|
-|Edit.ScrollLineDown|**Ctrl+Seta para baixo**|
-|Edit.ScrollLineUp|**Ctrl+seta para cima**|
-|Edit.SelectCurrentWord|**Ctrl+W**|
-|Edit.SelectionCancel|**Escape**|
-|Edit.SelectToLastGoBack|**Ctrl+=**|
-|Edit.ShowCodeLensMenu|**Alt+`**|
-|Edit.StopHidingCurrent|**Ctrl+M, Ctrl+U**|
-|Edit.StopOutlining|**Ctrl+M, Ctrl+P**|
-|Edit.SwapAnchor|**Ctrl+K, Ctrl+A**|
-|Edit.TabLeft|**Shift+Tab**|
-|Edit.ToggleAllOutlining|**Ctrl+M, Ctrl+L**|
-|Edit.ToggleBookmark|**Ctrl+K, Ctrl+K**|
-|Edit.ToggleCompletionMode|**Ctrl+Alt+Espaço**|
-|Edit.ToggleOutliningExpansion|**Ctrl+M, Ctrl+M**|
-|Edit.ToggleTaskListShortcut|**Ctrl+K, Ctrl+H**|
-|Edit.ToggleWordWrap|**Ctrl+E, Ctrl+W**|
-|Edit.UncommentSelection|**Ctrl+K, Ctrl+U**|
-|Edit.ViewBottom|**Ctrl+PgDn**|
-|Edit.ViewBottomExtend|**Ctrl+Shift+PgDn**|
-|Edit.ViewTop|**Ctrl+PgUp**|
-|Edit.ViewTopExtend|**Ctrl+Shift+PgUp**|
-|Edit.ViewWhiteSpace|**Ctrl+R, Ctrl+W**|
-|Edit.WordDeleteToEnd|**Ctrl+Delete**|
-|Edit.WordDeleteToStart|**Ctrl+Backspace**|
-|Edit.WordNext|**Ctrl+Seta para a direita**|
-|Edit.WordNextExtend|**Ctrl+Shift+Seta para a direita**|
-|Edit.WordNextExtendColumn|**Ctrl+Shift+Alt+Seta para a direita**|
-|Edit.WordPrevious|**Ctrl+Seta para a esquerda**|
-|Edit.WordPreviousExtend|**Ctrl+Shift+Seta para a esquerda**|
-|Edit.WordPreviousExtendColumn|**Ctrl+Shift+Alt+Seta para a esquerda**|
-|Edit.WordTranspose|**Ctrl+Shift+T**|
-|EditorContextMenus.CodeWindow.ExecuteInInteractive|**Alt+Enter**|
-|EditorContextMenus.CodeWindow.ExecuteLineInInteractive|**Alt+'**|
-|OtherContextMenus.HTMLContext.ViewinPageInspector|**Ctrl+K, Ctrl+G**|
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|**Alt+PgDn**|
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|**Alt+PgUp**|
+| Comandos | Atalhos de teclado |
+| - | - |
+| Edit.BreakLine | **Enter**<br /><br /> ou<br /><br /> **Shift+Enter** |
+| Edit.CharLeft | **Seta para a esquerda** |
+| Edit.CharLeftExtend | **Shift+Seta para a esquerda** |
+| Edit.CharLeftExtendColumn | **Shift+Alt+Seta para a esquerda** |
+| Edit.CharRight | **Seta para a direita** |
+| Edit.CharRightExtend | **Shift+Seta para a direita** |
+| Edit.CharRightExtendColumn | **Shift+Alt+Seta para a direita** |
+| Edit.CharTranspose | **Ctrl+T** |
+| Edit.ClearBookmarks | **Ctrl+K, Ctrl+L** |
+| Edit.CollapseAllOutlining | **Ctrl+M, Ctrl+A** |
+| Edit.CollapseCurrentRegion | **Ctrl+M, Ctrl+S** |
+| Edit.CollapseTag | **Ctrl+M, Ctrl+T** |
+| Edit.CollapseToDefinitions | **Ctrl+M, Ctrl+O** (letra "O") |
+| Edit.CommentSelection | **Ctrl+K, Ctrl+C** |
+| Edit.CompleteWord | **Ctrl+Espaço**<br /><br /> ou<br /><br /> **Alt+Seta para a direita** |
+| Edit.CopyParameterTip | **Ctrl+Shift+Alt+C** |
+| Edit.DecreaseFilterLevel | **Alt+,** |
+| Edit.DeleteBackwards | **Backspace**<br /><br /> ou<br /><br /> **Shift+Bkspce** |
+| Edit.DeleteHorizontalWhiteSpace | **Ctrl+K, Ctrl+\\** |
+| Edit.DocumentEnd | **Ctrl+End** |
+| Edit.DocumentEndExtend | **Ctrl+Shift+End** |
+| Edit.DocumentStart | **Ctrl+Home** |
+| Edit.DocumentStartExtend | **Ctrl+Shift+Home** |
+| Edit.ExpandAllOutlining | **Ctrl+M, Ctrl+X** |
+| Edit.ExpandCurrentRegion | **Ctrl+M, Ctrl+E** |
+| Edit.FormatDocument | **Ctrl+K, Ctrl+D** |
+| Edit.FormatSelection | **Ctrl+K, Ctrl+F** |
+| Edit.GotoBrace | **Ctrl+]** |
+| Edit.GotoBraceExtend | **Ctrl+Shift+]** |
+| Edit.HideSelection | **Ctrl+M, Ctrl+H** |
+| Edit.IncreaseFilterLevel | **Alt+.** |
+| Edit.IncrementalSearch | **Ctrl+I** |
+| Edit.InsertTab | **Tab** |
+| Edit.LineCut | **Ctrl+L** |
+| Edit.LineDelete | **Ctrl+Shift+L** |
+| Edit.LineDown | **Seta para Baixo** |
+| Edit.LineDownExtend | **Shift+Seta para baixo** |
+| Edit.LineDownExtendColumn | **Shift+Alt+Seta para baixo** |
+| Edit.LineEnd | **End** |
+| Edit.LineEndExtend | **Shift+End** |
+| Edit.LineEndExtendColumn | **Shift+Alt+End** |
+| Edit.LineOpenAbove | **Ctrl+Enter** |
+| Edit.LineOpenBelow | **Ctrl+Shift+Enter** |
+| Edit.LineStart | **Início** |
+| Edit.LineStartExtend | **Shift+Home** |
+| Edit.LineStartExtendColumn | **Shift+Alt+Home** |
+| Edit.LineTranspose | **Shift+Alt+T** |
+| Edit.LineUp | **Seta para Cima** |
+| Edit.LineUpExtend | **Shift+Seta para cima** |
+| Edit.LineUpExtendColumn | **Shift+Alt+Seta para cima** |
+| Edit.ListMembers | **Ctrl+J** |
+| Edit.MakeLowercase | **Ctrl+U** |
+| Edit.MakeUppercase | **Ctrl+Shift+U** |
+| Edit.MoveSelectedLinesDown | **Alt+Seta para baixo** |
+| Edit.MoveSelectedLinesUp | **Alt+Seta para cima** |
+| Edit.NextHighlightedReference | **Ctrl+Shift+Seta para baixo** |
+| Edit.OvertypeMode | **Inserir** |
+| Edit.PageDown | **PgDn** |
+| Edit.PageDownExtend | **Shift+PgDn** |
+| Edit.PageUp | **PgUp** |
+| Edit.PageUpExtend | **Shift+PgUp** |
+| Edit.ParameterInfo | **Ctrl+Shift+Barra de espaços** |
+| Edit.PasteParameterTip | **Ctrl+Shift+Alt+P** |
+| Edit.PeekBackward | **Ctrl+Alt+-** |
+| Edit.PeekDefinition | **Alt+F12** |
+| Edit.PeekForward | **Ctrl+Alt+=** |
+| Edit.PreviousHighlightedReference | **Ctrl+Shift+Seta para cima** |
+| Edit.QuickInfo | **Ctrl+K, Ctrl+I** |
+| Edit.ReverseIncrementalSearch | **Ctrl+Shift+I** |
+| Edit.ScrollLineDown | **Ctrl+Seta para baixo** |
+| Edit.ScrollLineUp | **Ctrl+seta para cima** |
+| Edit.SelectCurrentWord | **Ctrl+W** |
+| Edit.SelectionCancel | **Escape** |
+| Edit.SelectToLastGoBack | **Ctrl+=** |
+| Edit.ShowCodeLensMenu | **Alt+\`** |
+| Edit.StopHidingCurrent | **Ctrl+M, Ctrl+U** |
+| Edit.StopOutlining | **Ctrl+M, Ctrl+P** |
+| Edit.SwapAnchor | **Ctrl+K, Ctrl+A** |
+| Edit.TabLeft | **Shift+Tab** |
+| Edit.ToggleAllOutlining | **Ctrl+M, Ctrl+L** |
+| Edit.ToggleBookmark | **Ctrl+K, Ctrl+K** |
+| Edit.ToggleCompletionMode | **Ctrl+Alt+Espaço** |
+| Edit.ToggleOutliningExpansion | **Ctrl+M, Ctrl+M** |
+| Edit.ToggleTaskListShortcut | **Ctrl+K, Ctrl+H** |
+| Edit.ToggleWordWrap | **Ctrl+E, Ctrl+W** |
+| Edit.UncommentSelection | **Ctrl+K, Ctrl+U** |
+| Edit.ViewBottom | **Ctrl+PgDn** |
+| Edit.ViewBottomExtend | **Ctrl+Shift+PgDn** |
+| Edit.ViewTop | **Ctrl+PgUp** |
+| Edit.ViewTopExtend | **Ctrl+Shift+PgUp** |
+| Edit.ViewWhiteSpace | **Ctrl+R, Ctrl+W** |
+| Edit.WordDeleteToEnd | **Ctrl+Delete** |
+| Edit.WordDeleteToStart | **Ctrl+Backspace** |
+| Edit.WordNext | **Ctrl+Seta para a direita** |
+| Edit.WordNextExtend | **Ctrl+Shift+Seta para a direita** |
+| Edit.WordNextExtendColumn | **Ctrl+Shift+Alt+Seta para a direita** |
+| Edit.WordPrevious | **Ctrl+Seta para a esquerda** |
+| Edit.WordPreviousExtend | **Ctrl+Shift+Seta para a esquerda** |
+| Edit.WordPreviousExtendColumn | **Ctrl+Shift+Alt+Seta para a esquerda** |
+| Edit.WordTranspose | **Ctrl+Shift+T** |
+| EditorContextMenus.CodeWindow.ExecuteInInteractive | **Alt+Enter** |
+| EditorContextMenus.CodeWindow.ExecuteLineInInteractive | **Alt+'** |
+| OtherContextMenus.HTMLContext.ViewinPageInspector | **Ctrl+K, Ctrl+G** |
+| TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **Alt+PgDn** |
+| TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **Alt+PgUp** |
 
 ##  <a name="uml-activity-diagram"></a>Diagrama de atividade UML
 
 |Comando|Atalho de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.Delete|**Shift+Del**|
 
 ##  <a name="uml-class-diagram"></a>Diagrama de classe UML
 
 |Comando|Atalho de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
 ##  <a name="uml-component-diagram"></a>Diagrama de componente UML
 
 |Comando|Atalho de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
 ##  <a name="uml-use-case-diagram"></a>Diagrama de casos de uso UML
 
 |Comando|Atalho de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
 ##  <a name="vc-accelerator-editor"></a>Editor de Tecla Aceleradora do VC
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.NewAccelerator|**Inserir**|
 |Edit.NextKeyTyped|**Ctrl+W**|
 
 ##  <a name="vc-dialog-editor"></a>Editor de Caixa de Diálogo do VC
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.MoveControlDown|**Seta para Baixo**|
 |Edit.MoveControlLeft|**Seta para a esquerda**|
 |Edit.MoveControlRight|**Seta para a direita**|
@@ -947,7 +947,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="vc-image-editor"></a>Editor de Imagem do VC
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Image.AirbrushTool|**Ctrl+A**|
 |Image.BrushTool|**Ctrl+B**|
 |Image.CopyandOutlineSelection|**Ctrl+Shift+U**|
@@ -989,13 +989,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="vc-string-editor"></a>Editor de Cadeia de Caracteres do VC
 
 |Comando|Atalho de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.NewString|**Inserir**|
 
 ##  <a name="view-designer"></a>Designer de Modo de Exibição
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |QueryDesigner.CancelRetrievingData|**Ctrl+T**|
 |QueryDesigner.Criteria|**Ctrl+2**|
 |QueryDesigner.Diagram|**Ctrl+1**|
@@ -1008,13 +1008,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="visual-studio"></a>Visual Studio
 
 |Comando|Atalho de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**Ctrl+1**|
 
 ##  <a name="windows-forms-designer"></a>Designer de Formulários do Windows
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.BreakLine|**Enter**|
 |Edit.CharLeft|**Seta para a esquerda**|
 |Edit.CharLeftExtend|**Shift+Seta para a esquerda**|
@@ -1043,7 +1043,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="work-item-editor"></a>Editor de Itens de Trabalho
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CreateCopyofWorkItem|**Shift+Alt+C**|
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**Shift+Alt+L**|
@@ -1051,7 +1051,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="work-item-query-view"></a>Exibição de Consulta de Item de Trabalho
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CreateCopyofWorkItem|**Shift+Alt+C**|
 |Edit.Indent|**Shift+Alt+Seta para a direita**|
 |Edit.Outdent|**Shift+Alt+Seta para a esquerda**|
@@ -1062,7 +1062,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="work-item-results-view"></a>Exibição de Resultados de Item de Trabalho
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CreateCopyofWorkItem|**Shift+Alt+C**|
 |Edit.Indent|**Shift+Alt+Seta para a direita**|
 |Edit.Outdent|**Shift+Alt+Seta para a esquerda**|
@@ -1075,7 +1075,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="workflow-designer"></a>Designer de Fluxo de Trabalho
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CompleteWord|**Ctrl+K, W**<br /><br /> ou<br /><br /> **Ctrl+K, Ctrl+W**<br /><br /> ou<br /><br /> **Ctrl+Barra de espaços**<br /><br /> ou<br /><br /> **Alt+Seta para a direita**|
 |Edit.DecreaseFilterLevel|**Alt+,**|
 |Edit.IncreaseFilterLevel|**Alt+.**|
@@ -1094,7 +1094,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |WorkflowDesigner.Restore|**Ctrl+E, Ctrl+R**<br /><br /> ou<br /><br /> **Ctrl+E, R**|
 |WorkflowDesigner.ShowHideArgumentDesigner|**Ctrl+E, Ctrl+A**<br /><br /> ou<br /><br /> **Ctrl+E, A**|
 |WorkflowDesigner.ShowHideImportsDesigner|**Ctrl+E, Ctrl+I**<br /><br /> ou<br /><br /> **Ctrl+E, I**|
-|WorkflowDesigner.ShowHideOverviewMap|**Ctrl+E, Ctrl+O**<br /><br /> ou<br /><br /> **Ctrl+E, O**|
+|WorkflowDesigner.ShowHideOverviewMap|**Ctrl+E, Ctrl+O** (letra "O")<br /><br /> ou<br /><br /> **Ctrl+E, O**|
 |WorkflowDesigner.ShowHideVariableDesigner|**Ctrl+E, Ctrl+V**<br /><br /> ou<br /><br /> **Ctrl+E, V**|
 |WorkflowDesigner.ToggleSelection|**Ctrl+E, Ctrl+S**<br /><br /> ou<br /><br /> **Ctrl+E, S**|
 |WorkflowDesigner.ZoomIn|**Ctrl+Num +**|
@@ -1103,8 +1103,8 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="xaml-ui-designer"></a>XAML Designer
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
-|Design.FitAll|**Ctrl+0**|
+|--------------| - |
+|Design.FitAll|**Ctrl+0** (zero)|
 |Design.ShowHandles|**F9**|
 |Design.ZoomIn|**Ctrl+Alt+=**|
 |Design.ZoomOut|**Ctrl+Alt+-**|
@@ -1125,14 +1125,14 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 ##  <a name="xml-text-editor"></a>Editor XML (Texto)
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |XML.StartXSLTDebugging|**Alt+F5**|
 |XML.StartXSLTWithoutDebugging|**Ctrl+Alt+F5**|
 
 ##  <a name="xml-schema-designer"></a>Designer de Esquema XML
 
 |Comandos|Atalhos de teclado|
-|--------------|------------------------|
+|--------------| - |
 |GraphView.BottomtoTop|**Alt+Seta para cima**|
 |GraphView.LefttoRight|**Alt+Seta para a direita**|
 |GraphView.RighttoLeft|**Alt+Seta para a esquerda**|

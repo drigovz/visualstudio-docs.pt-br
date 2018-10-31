@@ -4,18 +4,18 @@ description: Como fazer sugestões ou relatar problemas ocorridos durante o uso 
 ms.topic: troubleshooting
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 10/11/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 98b9b2f346c169d6b992f0d65a1454e3de9e814d
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 410444e584307c468b61eb4a478fed0d8df09b2e
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223970"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101115"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Como relatar um problema no Visual Studio para Mac
 
-Se você encontrar um problema com o Visual Studio para Mac, gostaríamos de saber sobre isso para que possamos diagnosticá-lo e corrigi-lo. 
+Se você tem problemas com o Visual Studio para Mac, gostaríamos de saber o que é. Veja a seguir como relatar o problema para a [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/) para que possamos diagnosticá-lo e corrigi-lo.
 
 ## <a name="how-to-report-a-problem"></a>Como relatar um problema
 

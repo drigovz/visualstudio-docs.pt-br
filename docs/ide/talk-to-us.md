@@ -1,7 +1,7 @@
 ---
 title: Fale conosco
 ms.custom: ''
-ms.date: 02/19/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -14,28 +14,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faa0e17537f8f5b5e10b4d133615e3d82471c629
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: d301d2a43e820f59979692071edbfb25ba1d7386
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495876"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073735"
 ---
 # <a name="visual-studio-product-feedback"></a>Comentários de produto do Visual Studio
 
-Estamos interessados em suas ideias para aprimorar nossos produtos e documentação. Não podemos sempre responder pessoalmente, mas faremos com que seus comentários cheguem à pessoa ou equipe certa.
+Fale conosco! Estamos interessados em suas ideias para aprimorar nossos produtos e documentação. Não podemos sempre responder pessoalmente, mas faremos com que seus comentários cheguem à pessoa ou equipe certa.
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Desejo relatar um problema com o Visual Studio
 
-Se você estiver encontrando problemas usando o Visual Studio, como falhas, desempenho lento, um comportamento inesperado e assim por diante, relate o problema para nós usando a ferramenta **Relatar um Problema**. Basta clicar no ícone de comentários ao lado de **Início Rápido** ou escolher **Ajuda** > **Enviar Comentários** > **Relatar um Problema** na barra de menus. O Visual Studio relata o problema para a [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com). Para saber mais, veja [Como relatar um problema com o Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md).
+Se você tiver problemas com o Visual Studio&mdash;, tais como falhas, desempenho lento ou comportamento inesperado, &mdash;fale conosco usando a ferramenta **Relatar um problema**. No Visual Studio, escolha o ícone de comentários ao lado de **Início Rápido** ou escolha **Ajuda** > **Enviar Comentários** > **Relatar um Problema** na barra de menus. Em seguida, o Visual Studio abre a página [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com) no navegador, na qual você pode entrar para relatar o problema. Para saber mais, veja [Como relatar um problema com o Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Quero fazer sugestões sobre os recursos do Visual Studio
 
-Se houver algo que possamos fazer melhor, informe-nos! Escolha **Ajuda** > **Enviar Comentários** > **Fornecer uma sugestão** para sugerir um recurso ou alteração à equipe do Visual Studio. Sua sugestão será postada automaticamente no [UserVoice](https://visualstudio.uservoice.com), onde outras pessoas poderão votar nela.
+Se houver algo que possamos fazer melhor, fale conosco! No Visual Studio, escolha na barra de menus **Ajudar** > **Enviar Comentários** > **Fazer uma Sugestão**. Em seguida, o Visual Studio abre a página [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com) no navegador, no qual você pode entrar para compartilhar sua ideia. Para saber mais, confira [Sugerir um recurso ao Visual Studio 2017](suggest-a-feature.md).
 
 ### <a name="rate-this-product"></a>Classificar este produto
 
-Versões de pré-lançamento do Visual Studio têm um item de menu **Classificar este produto** que permite que você envie comentários sobre a qualidade do build que você está executando. Você não verá isso em versões de lançamento do produto.
+As versões de pré-lançamento do Visual Studio têm o item de menu **Classificar este produto** que as versões lançadas do produto não têm. Use o item de menu **Classificar este produto** para enviar comentários sobre a qualidade da versão de pré-lançamento que você está executando.
 
 ## <a name="i-want-to-contact-microsoft-support"></a>Desejo entrar em contato com o Suporte da Microsoft
 
@@ -50,7 +50,7 @@ Para organizações maiores que exigem suporte gerenciado diretamente da Microso
 
 Se o produto veio instalado em um novo computador ou dispositivo, o fabricante de hardware fornecerá suporte técnico e assistência para esse software. Contate o fabricante diretamente para obter suporte.
 
-Os serviços de suporte da Microsoft estão sujeitos a preços, termos e condições vigentes. Os preços, termos e condições estão sujeitos à alteração sem aviso.
+Os serviços de suporte da Microsoft estão sujeitos a preços, termos e condições vigentes. Os preços, os termos e as condições podem ser alterados sem aviso prévio.
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>Quero participar da comunidade de desenvolvedores
 

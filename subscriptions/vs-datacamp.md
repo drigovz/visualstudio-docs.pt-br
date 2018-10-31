@@ -9,12 +9,12 @@ description: Saiba mais sobre a assinatura de treinamento do DataCamp incluída 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f0a6fe16edf12616dd93b394b118f40651ffb0ec
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: cd0b92d8515e488d74cc124c888bb0e8ca9537e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282410"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863900"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>O benefício de treinamento do DataCamp em assinaturas do Visual Studio
 
@@ -27,15 +27,15 @@ A duração do benefício do DataCamp depende da sua assinatura do Visual Studio
 1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Localize o bloco do benefício do DataCamp na categoria "Desenvolvimento Profissional" e clique em **Ativar**.
-    > [!div class="mx-imgBorder"]
-    > ![Bloco do benefício DataCamp](_img\vs-datacamp\vs-datacamp-tile-2.png)
+   > [!div class="mx-imgBorder"]
+   > ![Bloco do benefício DataCamp](_img/vs-datacamp/vs-datacamp-tile-2.png)
 
 3. Na página do DataCamp, você pode criar uma nova conta.  É possível optar por inserir um endereço de email e senha ou entrar usando contas existentes do Facebook, do LinkedIn ou do Google.  Depois de inserir as informações de conexão, clique em **Começar**.
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp – Criar Conta](_img\vs-datacamp\vs-datacamp-create-account.png)
-
-    > [!NOTE]
-    > Quando você começar a criar a conta, poderá receber a seguinte mensagem de erro: "Opa!  Seu código promocional é inválido ou expirou."  Isso ocorre, porque quando seu código promocional é criado, ele expira após alguns minutos.  Se você receber essa mensagem, bastará voltar para a página [Benefícios](https://my.visualstudio.com/benefits) e clicar no link **Ativar** no bloco do benefício do DataCamp.
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp – Criar Conta](_img/vs-datacamp/vs-datacamp-create-account.png)
+   > 
+   > [!NOTE]
+   > Quando você começar a criar a conta, poderá receber a seguinte mensagem de erro: "Opa!  Seu código promocional é inválido ou expirou."  Isso ocorre, porque quando seu código promocional é criado, ele expira após alguns minutos.  Se você receber essa mensagem, bastará voltar para a página [Benefícios](https://my.visualstudio.com/benefits) e clicar no link **Ativar** no bloco do benefício do DataCamp.
 
 4. Depois de criar uma conta, você pode escolher um roteiro de aprendizagem.  As opções incluem:
     - Aprendizado de R para ciência de dados
@@ -43,28 +43,30 @@ A duração do benefício do DataCamp depende da sua assinatura do Visual Studio
     - Desenvolver seu conjunto de qualificações de ciência de dados
 
 
-    Basta clicar no roteiro escolhido para começar.
-    > [!div class="mx-imgBorder"]
-    > ![Escolha de roteiro no DataCamp](_img\vs-datacamp\vs-datacamp-choose-path.png)
+~~~
+Just click on your chosen path to get started.
+> [!div class="mx-imgBorder"]
+> ![DataCamp Choose Path](_img\vs-datacamp\vs-datacamp-choose-path.png)
+~~~
 
 5. Depois de selecionar o roteiro, é possível refinar ainda mais seu roteiro de aprendizagem selecionando uma meta.  Por exemplo, se você escolher o caminho "Desenvolver seu conjunto de qualificações de ciência de dados", as opções a seguir serão exibidas. Escolha uma opção ou clique em **Não sei.  Mostre-me todos os caminhos de carreiras** para criar um roteiro mais amplo.
-    > [!div class="mx-imgBorder"]
-    > ![Conjunto de qualificações de ciência de dados do DataCamp](_img\vs-datacamp\vs-datacamp-datascience.png)
+   > [!div class="mx-imgBorder"]
+   > ![Conjunto de qualificações de ciência de dados do DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png)
 
 
 6. Com base no roteiro e nas opções que você selecionou, você verá uma seleção de faixas de carreira.  Clique no botão **Registrar** na faixa de sua preferência.
-    > [!div class="mx-imgBorder"]
-    > ![Faixa de carreiras do DataCamp](_img\vs-datacamp\vs-datacamp-all-tracks.png)
+   > [!div class="mx-imgBorder"]
+   > ![Faixa de carreiras do DataCamp](_img/vs-datacamp/vs-datacamp-all-tracks.png)
 
 7. Depois de se registrar na faixa, o primeiro curso será aberto.  Você verá um tutorial explicando como interagir com o curso, incluindo a navegação e conclusão dos exercícios do curso.
 
-    > [!div class="mx-imgBorder"]
-    > ![Introdução ao DataCamp](_img\vs-datacamp\vs-datacamp-getting-started.png)
+   > [!div class="mx-imgBorder"]
+   > ![Introdução ao DataCamp](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
 Você pode parar a qualquer momento e retomar seu treinamento na próxima sessão.  Basta acessar [http://www.datacamp.com](http://www.datacamp.com) e entrar.  O seu painel será exibido e você poderá retomar o treinamento exatamente onde parou. Basta clicar em **Continuar Treinamento**.
 
 > [!div class="mx-imgBorder"]   
-> ![Treinamento Contínuo no DataCamp](_img\vs-datacamp\vs-datacamp-continue-training.png)
+> ![Treinamento Contínuo no DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Qualificação
 
@@ -80,7 +82,7 @@ Você pode parar a qualquer momento e retomar seu treinamento na próxima sessã
 
 
 
-<sup>1</sup>  *Inclui:  NFR (Proibida a revenda), FTE, MVP (Microsoft Valued Partner), RD (Diretor regional), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>  *Inclui:  NFR (Proibida a Revenda), FTE, MVP (Microsoft Valued Professional), RD (Diretor regional), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine*
 
 
 

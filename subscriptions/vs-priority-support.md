@@ -9,12 +9,12 @@ description: Saiba mais sobre o benefício de Suporte Prioritário incluído nas
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 21448d75cbdbbff5468617ebb3ffc816f672ad3e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866734"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Suporte Prioritário em assinaturas do Visual Studio
 
@@ -37,7 +37,7 @@ Os assinantes com assinaturas selecionadas do Visual Studio estão qualificados 
 
 ### <a name="microsoft-azure"></a>Microsoft Azure
    - [Serviços de Nuvem (Funções de Trabalho e da Web)](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)
-   
+
    - [Banco de Dados SQL do Azure](https://social.msdn.microsoft.com/Forums/en-US/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)
 
    - [Armazenamento do Azure](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)
@@ -229,6 +229,7 @@ Os assinantes com assinaturas selecionadas do Visual Studio estão qualificados 
 
 
 ## <a name="eligibility"></a>Qualificação
+
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Padrão, nuvem anual)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Incluído       |  Sim          |
@@ -238,7 +239,7 @@ Os assinantes com assinaturas selecionadas do Visual Studio estão qualificados 
 | Visual Studio Dev Essentials | NA  | Incluído                                                            |Sim |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
 
-<sup>1</sup>*Inclui: NFR (Não para revenda), FTE, VSIP (Visual Studio Industry Partner), Imagine.  Exclui: MPN (Microsoft Partner Network), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP (Microsoft Valued Partner), RD (Diretor regional).*
+<sup>1</sup>*Inclui: NFR (Não para revenda), FTE, VSIP (Visual Studio Industry Partner), Imagine.  Exclui: MPN (Microsoft Partner Network), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP (Microsoft Valued Professional), RD (Diretor regional).*
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 

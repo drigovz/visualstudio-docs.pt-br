@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d0e337ebb97b487adfd79be43ddc1301612ba090
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 25ddfd7c0d45666c4dbbafe98c88dc8f66aac447
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496110"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284044"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutorial: Introdução ao C# e ao ASP.NET Core no Visual Studio
 
@@ -131,7 +131,7 @@ Esta solução segue o padrão de design da **Página do Razor**. Ele é diferen
 
 1. Mantenha a janela do navegador aberta e retorne ao Visual Studio.
 
-1. No Visual Studio, escolha **About.cshtml**. Em seguida, exclua a palavra _alterado_ e, em seu lugar, adicione as palavras _arquivo e diretório_.
+1. No Visual Studio, escolha **About.cshtml**. Em seguida, exclua a palavra _adicional_ e, em seu lugar, adicione as palavras _arquivo e diretório_.
 
     ![Alterar o texto no arquivo About.cshtml](../ide/media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
 
@@ -197,4 +197,4 @@ Parabéns por concluir este tutorial. Esperamos que você tenha aprendido um pou
 
 ## <a name="see-also"></a>Consulte também
 
-[Publicar seu aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio](..//deployment/quickstart-deploy-to-azure.md)
+[Publicar seu aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio](../deployment/quickstart-deploy-to-azure.md)

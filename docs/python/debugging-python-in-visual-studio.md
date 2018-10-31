@@ -1,7 +1,7 @@
 ---
 title: Depurando código em Python
 description: Um passo a passo dos recursos de depuração no Visual Studio, especificamente para código Python, incluindo pontos de interrupção, passo a passo, inspeção dos valores, observação de exceções e depuração na janela interativa.
-ms.date: 08/14/2018
+ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626649"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101154"
 ---
 # <a name="debug-your-python-code"></a>Depurar o código do Python
 
@@ -25,7 +25,6 @@ O Visual Studio fornece uma experiência de depuração abrangente para o Python
 Veja também os seguintes artigos sobre depuração específicos ao cenário:
 
 - [Depuração remota do Linux](debugging-python-code-on-remote-linux-machines.md)
-- [Depuração remota do Azure](debugging-remote-python-code-on-azure.md)
 - [Depuração de modo misto do Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Símbolos para a depuração do modo misto](debugging-symbols-for-mixed-mode-c-cpp-python.md)
 
@@ -227,9 +226,45 @@ Para gerenciar a instalação do ptvsd:
 
 1. Se a versão for inferior à 4.1.1a9 (a versão empacotada com o Visual Studio), selecione o **X** à direita do pacote para desinstalar a versão mais antiga. Assim, o Visual Studio passará a usar a versão empacotada. (Você também pode desinstalar com o PowerShell usando `pip uninstall ptvsd`.)
 
-1. Como alternativa, você pode atualizar o pacote ptvsd para sua versão mais recente. Insira `ptvsd --upgrade -pre` na caixa de pesquisa, em seguida, selecione **Executar o comando: pip install ptvsd --upgrade -pre**. (Você também pode usar o mesmo comando no PowerShell).
+1. Como alternativa, você pode atualizar o pacote ptvsd para a última versão seguindo as instruções da seção [Solução de problemas](#troubleshooting).
 
-    ![Fornecendo o comando upgrade na janela Ambientes do Python](media/debugging-experimental-upgrade-ptvsd.png)
+## <a name="troubleshooting"></a>Solução de problemas
+
+Se você tiver problemas com o depurador, primeiro atualize a versão do ptvsd da seguinte maneira:
+
+1. Navegue até a guia **Pacotes** na janela **Ambientes do Python**.
+
+1. Insira `ptvsd --upgrade` na caixa de pesquisa, em seguida, selecione **Executar o comando: pip install ptvsd --upgrade**. (Você também pode usar o mesmo comando no PowerShell).
+
+    ![Como fornecer o comando ptvsd upgrade na janela Ambientes do Python](media/debugging-experimental-upgrade-ptvsd.png)
+
+Se o problema persistir, registre um problema no [Repositório GitHub do PTVS](https://github.com/Microsoft/ptvs/issues).
+
+### <a name="enable-debugger-logging"></a>Habilitar registro em log do depurador
+
+Ao investigar um problema do depurador, a Microsoft pode solicitar que você habilite e colete logs de depurador para ajudar no diagnóstico.
+
+As seguintes etapas habilitam a depuração na sessão atual do Visual Studio:
+
+1. Abra uma janela de comando no Visual Studio usando o comando de menu **Exibir** > **Outras Janelas** > **Janela de Comando**.
+
+1. Insira o seguinte comando:
+
+    ```ps
+    DebugAdapterHost.Logging /On
+    ```
+
+1. Inicie a depuração e percorra todas as etapas são necessárias para reproduzir o problema. Durante esse tempo, os logs de depuração aparecem na janela **Saída** em **Log de Host do Adaptador de Depuração**. Em seguida, você poderá copiar os logs dessa janela e colá-los em um problema do GitHub, em um email etc.
+
+    ![Saída de log do depurador na janela Saída](media/debugger-logging-output.png)
+
+1. Se o Visual Studio parar de funcionar ou se não for possível acessar a janela **Saída**, reinicie o Visual Studio, abra uma janela de comando e digite o seguinte comando:
+
+    ```ps
+    DebugAdapterHost.Logging /On /OutputWindow
+    ```
+
+1. Inicie a depuração e reproduza o problema novamente. Os logs de depurador podem ser encontrados em `%temp%\DebugAdapterHostLog.txt`.
 
 ## <a name="see-also"></a>Consulte também
 

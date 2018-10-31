@@ -9,12 +9,12 @@ description: Inscreva-se para receber a assinatura do MSDN Magazine incluída na
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a988c6cd546aee767c0900f2319bc456a79da266
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e51a928e00d97b801d112d426a9ba414d1c44f04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283581"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941263"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>O benefício MSDN Magazine nas assinaturas do Visual Studio
 
@@ -31,23 +31,24 @@ A Edição digital está disponível para membros do Visual Studio Dev Essential
 2.  Localize o bloco MSDN Magazine na seção de Desenvolvimento Profissional e clique em **Acessar**.
 
 ### <a name="printed-edition"></a>Edição impressa
-1.  Para começar a receber sua assinatura da MSDN Magazine, entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-2.  Localize o bloco MSDN Magazine na seção de Desenvolvimento Profissional e clique em **Assinar** no bloco de assinatura da MSDN Magazine. (Clique no "!" no canto inferior direito do bloco para acessar a edição digital).
-    > [!div class="mx-imgBorder"]
-    > ![Bloco do benefício MSDN Magazine](_img\vs-msdn\vs-msdn-tile.png)
+1. Para começar a receber sua assinatura da MSDN Magazine, entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+2. Localize o bloco MSDN Magazine na seção de Desenvolvimento Profissional e clique em **Assinar** no bloco de assinatura da MSDN Magazine. (Clique no "!" no canto inferior direito do bloco para acessar a edição digital).
+   > [!div class="mx-imgBorder"]
+   > ![Bloco do benefício MSDN Magazine](_img/vs-msdn/vs-msdn-tile.png)
 
 
-3.  Na página do MSDN Magazine, escolha seu tipo de assinatura preferencial.  Você pode escolher a edição digital gratuita, independentemente de onde você mora.  A versão impressa está disponível gratuitamente para residentes dos EUA.  Para endereços fora dos EUA são aplicados encargos de frete.
-    > [!div class="mx-imgBorder"]
-    > ![Assinaturas do benefício MSDN Magazine](_img\vs-msdn\vs-msdn-subs-page-resized.png)
+3. Na página do MSDN Magazine, escolha seu tipo de assinatura preferencial.  Você pode escolher a edição digital gratuita, independentemente de onde você mora.  A versão impressa está disponível gratuitamente para residentes dos EUA.  Para endereços fora dos EUA são aplicados encargos de frete.
+   > [!div class="mx-imgBorder"]
+   > ![Assinaturas do benefício MSDN Magazine](_img/vs-msdn/vs-msdn-subs-page-resized.png)
 
-4.  Forneça as informações de contato solicitadas e clique em **Enviar**.  (A versão da revista selecionada aparecerá na seção Assinatura da Revista.  Se você tiver escolhido a edição impressa, na primeira opção estará escrito **Sim!  Quero receber um ano (12 exemplares) da MSDN Magazine gratuitamente**.)
-    > [!div class="mx-imgBorder"]
-    > ![Perfil do benefício MSDN Magazine](_img\vs-msdn\vs-msdn-profile.png)
+4. Forneça as informações de contato solicitadas e clique em **Enviar**.  (A versão da revista selecionada aparecerá na seção Assinatura da Revista.  Se você tiver escolhido a edição impressa, na primeira opção estará escrito **Sim!  Quero receber um ano (12 exemplares) da MSDN Magazine gratuitamente**.)
+   > [!div class="mx-imgBorder"]
+   > ![Perfil do benefício MSDN Magazine](_img/vs-msdn/vs-msdn-profile.png)
 
-5.  E isso é tudo.  Dependendo da versão da revista escolhida, você começará a receber revistas impressas ou emails com links para as versões online mais recentes com a próxima edição.  Aproveite!
+5. E isso é tudo.  Dependendo da versão da revista escolhida, você começará a receber revistas impressas ou emails com links para as versões online mais recentes com a próxima edição.  Aproveite!
 
 ## <a name="eligibility"></a>Qualificação
+
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Padrão, nuvem anual)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado |Edição impressa       |  Nº  Disponível apenas para novos assinantes          |
@@ -59,7 +60,7 @@ A Edição digital está disponível para membros do Visual Studio Dev Essential
 
 <sup>1</sup>  *Edição impressa:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), FTE, Microsoft Partner Network (Enterprise), Imagine (Premium).*
 
-*Edição digital: MCT Software & Serviços, Microsoft Valued Partner (Professional), RD (Diretor regional).*
+*Edição digital: MCT Software & Services, MVP (Microsoft Valued Professional) (Professional), RD (Diretor regional).*
 
 *Exclui: Imagine (Standard), BizSpark, MCT Software & Services Developer*
 

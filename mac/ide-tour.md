@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 337badd0f32dad5c6bbf87dd981dc47de0cb87d3
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224076"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228848"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Tour do Visual Studio para Mac
 
@@ -97,7 +97,7 @@ O Visual Studio para Mac integra-se aos sistemas de controle do código-fonte Gi
 
 ![Nome do branch para indicar o projeto com controle do código-fonte](media/ide-tour-image22.png)
 
-Os arquivos com alterações não confirmadas têm uma anotação em seus ícones no Painel de Soluções, conforme mostrado na imagem abaixo:
+Os arquivos com alterações não confirmadas têm uma anotação em seus ícones no Painel de Soluções, como mostrado na imagem abaixo:
 
 ![Arquivos não confirmados no painel de soluções](media/ide-tour-image23.png)
 

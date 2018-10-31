@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e77f5bbcdc09e44018e1a10c861e9875c569f65
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 2dc88c3861adb8b1d9f239d6ceedee2b76bc2e25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371050"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951607"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Passo a passo: Criar um ambiente de build de vários computadores
 
@@ -55,7 +55,7 @@ Ao instalar o Visual Studio no computador host, você pode criar os arquivos e a
 
 1. No computador host, instale o Visual Studio.
 
-2. No computador de build, instale o .NET Framework 4.5. Para verificar se ele está instalado, verifique se o valor da chave do Registro **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version** começa com "4.5".
+2. No computador de compilação, instale o .NET Framework 4.5 ou posterior. Para verificar se ele está instalado, verifique se a entrada de **Versão** na subchave de registro **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** tem o valor de **4.5** ou superior.
 
 ## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>Copiar arquivos do computador host para o computador de build
 
@@ -73,29 +73,29 @@ Observe que o nome da pasta *Arquivos de Programa* depende do sistema operaciona
 
 1. Se você tiver somente o SDK do Windows para Windows 8 instalado, copie estas pastas recursivamente do computador host para o computador de build:
 
-    - %ProgramFiles%\Windows Kits\8.0\bin\
+   - %ProgramFiles%\Windows Kits\8.0\bin\
 
-    - %ProgramFiles%\Windows Kits\8.0\Catalogs\
+   - %ProgramFiles%\Windows Kits\8.0\Catalogs\
 
-    - %ProgramFiles%\Windows Kits\8.0\DesignTime\
+   - %ProgramFiles%\Windows Kits\8.0\DesignTime\
 
-    - %ProgramFiles%\Windows Kits\8.0\include\
+   - %ProgramFiles%\Windows Kits\8.0\include\
 
-    - %ProgramFiles%\Windows Kits\8.0\Lib\
+   - %ProgramFiles%\Windows Kits\8.0\Lib\
 
-    - %ProgramFiles%\Windows Kits\8.0\Redist\
+   - %ProgramFiles%\Windows Kits\8.0\Redist\
 
-    - %ProgramFiles%\Windows Kits\8.0\References\
+   - %ProgramFiles%\Windows Kits\8.0\References\
 
-    Se você também tiver estes outros kits do Windows 8...
+     Se você também tiver estes outros kits do Windows 8...
 
-    - Kit de Avaliação e Implantação do Microsoft Windows
+   - Kit de Avaliação e Implantação do Microsoft Windows
 
-    - Kit de Driver do Microsoft Windows
+   - Kit de Driver do Microsoft Windows
 
-    - Kit de Certificação de Hardware do Microsoft Windows
+   - Kit de Certificação de Hardware do Microsoft Windows
 
-    ... eles poderão ter instalado arquivos nas pastas *%ProgramFiles%\Windows Kits\8.0* listadas na etapa anterior, e os termos de licença poderão não permitir direitos de servidor de build para esses arquivos. Verifique os termos de licença para cada kit do Windows instalado para determinar se os arquivos podem ser copiados para o computador de build. Se os termos de licença não permitirem direitos de servidor de build, remova os arquivos do computador de build.
+     ... eles poderão ter instalado arquivos nas pastas *%ProgramFiles%\Windows Kits\8.0* listadas na etapa anterior, e os termos de licença poderão não permitir direitos de servidor de build para esses arquivos. Verifique os termos de licença para cada kit do Windows instalado para determinar se os arquivos podem ser copiados para o computador de build. Se os termos de licença não permitirem direitos de servidor de build, remova os arquivos do computador de build.
 
 2. Copie as seguintes pastas recursivamente do computador host para o computador de build:
 
@@ -202,53 +202,53 @@ Você deve criar entradas do Registro para definir configurações para MSBuild.
 
 2. Crie as seguintes entradas do Registro no computador de build. Todas estas entradas são cadeias de caracteres (Tipo = = "REG_SZ" no Registro). Defina os valores dessas entradas da mesma forma que os valores das entradas comparáveis no computador host.
 
-    - **%RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(Default)**
+   - **%RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(Default)**
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder</strong>
 
-    - **%RegistryRoot%\VisualStudio\11.0@Source Directories**
+   - **%RegistryRoot%\VisualStudio\11.0@Source Directories**
 
-    - **%RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir**
+   - <strong>%RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@11.0**
+   - **%RegistryRoot%\VisualStudio\SxS\VC7@11.0**
 
-    - **%RegistryRoot%\VisualStudio\SxS\VS7@11.0**
+   - **%RegistryRoot%\VisualStudio\SxS\VS7@11.0**
 
-    - **%RegistryRoot%\Windows Kits\Installed Roots@KitsRoot**
+   - <strong>%RegistryRoot%\Windows Kits\Installed Roots@KitsRoot</strong>
 
-    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath**
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
 
-    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10**
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
 
-    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
 
-    Em um computador de build x64, crie também a seguinte entrada do Registro e consulte o computador host para determinar como configurá-la.
+   Em um computador de build x64, crie também a seguinte entrada do Registro e consulte o computador host para determinar como configurá-la.
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder</strong>
 
-    Se o computador de build for x64 e você desejar usar a versão de 64 bits do MSBuild, ou se você estiver usando o Build Service do Team Foundation Server em um computador x64, você deverá criar as seguintes entradas do Registro no Registro de 64 bits nativo. Consulte o computador host para determinar como definir estas entradas.
+   Se o computador de compilação for x64 e você desejar usar a versão de 64 bits do MSBuild, ou se você estiver usando o Build Service do Team Foundation Server em um computador x64, crie as seguintes entradas no registro de 64 bits nativo. Consulte o computador host para determinar como definir estas entradas.
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
 
 ## <a name="set-environment-variables-on-the-build-computer"></a>Definir variáveis de ambiente no computador de build
 
@@ -261,7 +261,7 @@ Abra uma janela do **Prompt de Comando** no computador de build e execute *%Prog
 Esta tabela descreve os argumentos compatíveis com *vcvarsall.bat*:
 
 |Argumento Vcvarsall.bat|Compilador|Compilar uma arquitetura de computador|Arquitetura de saída de compilação|
-|----------------------------|--------------|---------------------------------|-------------------------------|
+| - |--------------| - | - |
 |x86 (padrão)|Nativo de 32 bits|x86, x64|x86|
 |x86_amd64|x64 Cruzado|x86, x64|X64|
 |amd64|x64 Nativo|X64|X64|
@@ -276,17 +276,17 @@ Se *vcvarsall.bat* for executado com êxito – ou seja, nenhuma mensagem de err
 
 2. Opcionalmente, você também pode adicionar os seguintes caminhos à variável PATH para tornar mais fácil usar o MSBuild para compilar suas soluções.
 
-    Se você quiser usar o MSBuild nativo de 32 bits, adicione estes caminhos à variável PATH:
+   Se você quiser usar o MSBuild nativo de 32 bits, adicione estes caminhos à variável PATH:
 
-    - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools
 
-    - %windir%\Microsoft.NET\Framework\v4.0.30319
+   - %windir%\Microsoft.NET\Framework\v4.0.30319
 
-    Se você quiser usar o MSBuild nativo de 64 bits, adicione estes caminhos à variável PATH:
+   Se você quiser usar o MSBuild nativo de 64 bits, adicione estes caminhos à variável PATH:
 
-    - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
 
-    - %windir%\Microsoft.NET\Framework64\v4.0.30319
+   - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
 ## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a>Instalar assemblies do MSBuild para o GAC (Cache de Assembly Global) no computador de build
 

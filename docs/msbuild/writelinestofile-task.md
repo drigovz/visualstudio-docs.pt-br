@@ -1,7 +1,7 @@
 ---
 title: Tarefa WriteLinesToFile | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/20/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8fa6ff5dbfcbbeb158f22256e18f6fb90bab348
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 909c35ca889295385cae98d51a81b22b4f7eb5d8
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341804"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228832"
 ---
 # <a name="writelinestofile-task"></a>Tarefa WriteLinesToFile
 Grava os caminhos dos itens especificados no arquivo de texto especificado.  
@@ -39,7 +39,8 @@ Grava os caminhos dos itens especificados no arquivo de texto especificado.
 |`Lines`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica os itens a serem gravados no arquivo.|  
 |`Overwrite`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, a tarefa substituirá todo o conteúdo existente no arquivo.|  
 |`Encoding`|Parâmetro `String` opcional.<br /><br /> Seleciona a codificação de caracteres, por exemplo, "Unicode".  Confira também <xref:System.Text.Encoding>.|  
-  
+|`WriteOnlyWhenDifferent`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, o arquivo de destino especificado, se ele existir, será lido primeiro para comparar o que a tarefa teria gravado. Se idêntico, o arquivo não será gravado no disco, e o carimbo de data e hora será preservado.|  
+
 ## <a name="remarks"></a>Comentários  
  Se `Overwrite` for `true`, criará um novo arquivo, gravará os conteúdos nele e o fechará. Se o arquivo de destino já existir, ele será substituído. Se `Overwrite` for `false`, acrescentará os conteúdos ao arquivo, criando um arquivo de destino, caso ele ainda não exista.  
   

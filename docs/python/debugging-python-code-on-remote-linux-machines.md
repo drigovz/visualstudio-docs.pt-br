@@ -1,7 +1,7 @@
 ---
 title: Depuração de código Python em computadores remotos com Linux
 description: Como usar o Visual Studio para depurar o código Python em execução em computadores remotos com Linux, incluindo as etapas de configuração necessárias, segurança e solução de problemas.
-ms.date: 09/03/2018
+ms.date: 10/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3462e3e46a551b9f9245dc2cb5bf25bbcde768a5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 654ac9cfd466cfdd6486ea5aa9e658495d5704fe
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549305"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356763"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Depurar o código do Python remotamente no Linux
 
@@ -74,10 +74,8 @@ Para obter detalhes sobre como criar uma regra de firewall para uma VM do Azure,
 
    ```python
    import ptvsd
-   ptvsd.enable_attach('my_secret')
+   ptvsd.enable_attach()
    ```
-
-   O primeiro argumento passado para `enable_attach` (chamado de "segredo") restringe o acesso para o script em execução e esse segredo é inserido ao anexar o depurador remoto. (Embora não seja recomendado, é possível permitir que qualquer pessoa se conecte, use `enable_attach(secret=None)`.)
 
 1. Salve o arquivo e execute `python3 guessing-game.py`. A chamada para `enable_attach` é executada em segundo plano e aguarda as conexões de entrada enquanto você interage com o programa de outra maneira. Se desejado, a função `wait_for_attach` pode ser chamada após `enable_attach` para bloquear o programa até que o depurador seja anexado.
 
@@ -96,10 +94,7 @@ Nestas etapas, definiremos um ponto de interrupção simples para interromper o 
 
 1. No diálogo **Anexar ao Processo** que será exibido, configure o **Tipo de Conexão** como **Python remoto (ptvsd)**. (Em versões anteriores do Visual Studio, esses comandos são denominados **Transporte** e **Depuração remota do Python**.)
 
-1. No campo **Destino da Conexão** (**Qualificador** em versões anteriores), insira `tcp://<secret>@<ip_address>:5678`, em que `<secret>` é a cadeia de caracteres `enable_attach` passada no código Python, `<ip_address>` é o do computador remoto (que pode ser um endereço explícito ou um nome como myvm.cloudapp.net) e `:5678` é o número da porta de depuração remota.
-
-    > [!Warning]
-    > Caso esteja fazendo uma conexão pela Internet pública, use `tcps` e siga as instruções abaixo para [Proteger a conexão do depurador com SSL](#secure-the-debugger-connection-with-ssl).
+1. No campo **Destino da Conexão** (**Qualificador** em versões anteriores), insira `tcp://<ip_address>:5678`, em que `<ip_address>` é o do computador remoto (que pode ser um endereço explícito ou um nome como myvm.cloudapp.net) e `:5678` é o número da porta de depuração remota.
 
 1. Pressione **Enter** para popular a lista de processos do ptvsd disponíveis nesse computador:
 
@@ -121,7 +116,7 @@ Nestas etapas, definiremos um ponto de interrupção simples para interromper o 
 1. Verifique se o segredo no **Destino de Conexão** (ou **Qualificador**) corresponde exatamente ao segredo no código remoto.
 1. Verifique se o endereço IP no **Destino de Conexão** (ou **Qualificador**) corresponde ao do computador remoto.
 1. Verifique se a porta de depuração remota foi aberta no computador remoto e se o sufixo da porta foi incluído no destino de conexão, como `:5678`.
-    - Se for necessário usar uma porta diferente, será possível especificá-la na chamada `enable_attach` usando o argumento `address`, como em `ptvsd.enable_attach(secret = 'my_secret', address = ('0.0.0.0', 8080))`. Nesse caso, abra a porta específica no firewall.
+    - Se for necessário usar uma porta diferente, será possível especificá-la na chamada `enable_attach` usando o argumento `address`, como em `ptvsd.enable_attach(address = ('0.0.0.0', 8080))`. Nesse caso, abra a porta específica no firewall.
 1. Verifique na tabela a seguir se a versão do ptvsd instalada no computador remoto conforme retornado por `pip3 list` corresponde àquela utilizada pela versão das ferramentas do Python usadas no Visual Studio. Se necessário, atualize o ptvsd no computador remoto.
 
     | Versão do Visual Studio | Versão das ferramentas do Python/ptvsd |
@@ -136,9 +131,15 @@ Nestas etapas, definiremos um ponto de interrupção simples para interromper o 
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-## <a name="secure-the-debugger-connection-with-ssl"></a>Proteger a conexão do depurador com o SSL
+## <a name="using-ptvsd-3x"></a>Usar ptvsd 3.x
 
-Por padrão, a conexão com o servidor de depuração remota do ptvsd é protegida somente pelo segredo e todos os dados são passados em texto sem formatação. Para obter uma conexão mais segura, o ptvsd dá suporte ao SSL, o qual deve ser configurado da seguinte maneira:
+As informações a seguir aplicam-se apenas à depuração remota com o ptvsd 3.x, que contém alguns recursos que foram removidos do ptvsd 4.x.
+
+1. Com o ptvsd 3.x, a função `enable_attach` exigia que você passasse um "segredo" como o primeiro argumento que restringe o acesso para o script em execução. Você insere o segredo ao anexar o depurador remoto. Embora não seja recomendado, é possível permitir que qualquer pessoa se conecte, use `enable_attach(secret=None)`.
+
+1. A URL de destino de conexão é `tcp://<secret>@<ip_address>:5678`, em que `<secret>` é a cadeia de caracteres passada, `enable_attach`, no código do Python.
+
+Por padrão, a conexão com o servidor de depuração remota ptvsd 3.x é protegida somente pelo segredo e todos os dados são passados em texto sem formatação. Para obter uma conexão mais segura, o ptvsd 3.x dá suporte ao uso do SSL com o protocolo `tcsp`, que você configura da seguinte maneira:
 
 1. No computador remoto, gere certificados autoassinados separados e arquivos de chave usando o openssl:
 
@@ -171,17 +172,12 @@ Por padrão, a conexão com o servidor de depuração remota do ptvsd é protegi
 
     ![Escolhendo o transporte de depuração remota com SSL](media/remote-debugging-qualifier-ssl.png)
 
-### <a name="warnings"></a>Avisos
+1. O Visual Studio o avisará sobre possíveis problemas de certificado ao se conectar via SSL. É possível ignorar os avisos e continuar, porém, embora o canal ainda esteja criptografado contra interceptação, ele pode estar aberto a ataques man-in-the-middle.
 
-O Visual Studio o avisará sobre possíveis problemas de certificado ao se conectar via SSL, conforme descrito abaixo. É possível ignorar os avisos e continuar, porém, embora o canal ainda esteja criptografado contra interceptação, ele pode estar aberto a ataques man-in-the-middle.
+    1. Se o aviso **o certificado remoto não é confiável** abaixo for exibido, isso significará que o certificado não foi adicionado corretamente à AC Raiz Confiável. Verifique essas etapas e tente novamente.
 
-1. Se o aviso **o certificado remoto não é confiável** abaixo for exibido, isso significará que o certificado não foi adicionado corretamente à AC Raiz Confiável. Verifique essas etapas e tente novamente.
+        ![Aviso de certificado SSL confiável](media/remote-debugging-ssl-warning.png)
 
-    ![Aviso de certificado SSL confiável](media/remote-debugging-ssl-warning.png)
+    1. Se o aviso **O nome do certificado remoto não corresponde ao nome do host** abaixo for exibido, isso significará que o nome do host ou o endereço IP correto não foi usado como o **Nome Comum** durante a criação do certificado.
 
-1. Se o aviso **O nome do certificado remoto não corresponde ao nome do host** abaixo for exibido, isso significará que o nome do host ou o endereço IP correto não foi usado como o **Nome Comum** durante a criação do certificado.
-
-    ![Aviso de nome de host do certificado SSL](media/remote-debugging-ssl-warning2.png)
-
-> [!Warning]
-> No momento, o Visual Studio 2017 travará quando esses avisos forem ignorados. Verifique se todos os problemas foram corrigidos antes de tentar se conectar.
+        ![Aviso de nome de host do certificado SSL](media/remote-debugging-ssl-warning2.png)

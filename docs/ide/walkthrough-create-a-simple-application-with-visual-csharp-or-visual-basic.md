@@ -13,16 +13,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9757158f6711c33333959fe66ef881c6f69a67b0
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 343d8c35433fe7d6fb454de5183bcc6a914d2a5e
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008441"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788013"
 ---
 # <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Passo a passo: Criar um aplicativo simples com o C# ou o Visual Basic
 
-Ao concluir este passo a passo, você estará familiarizado com vários designers, ferramentas e caixas de diálogo que poderão ser usados no desenvolvimento de aplicativos com o Visual Studio. Você vai criar um aplicativo "Olá, Mundo", simples, projetar a interface do usuário, adicionar código e depurar erros enquanto aprende sobre o trabalho no IDE (ambiente de desenvolvimento integrado).
+Ao concluir este passo a passo, você estará familiarizado com vários designers, ferramentas e caixas de diálogo que poderão ser usados no desenvolvimento de aplicativos com o Visual Studio. Você vai criar um aplicativo "Olá, Mundo", projetar a interface do usuário, adicionar código e depurar erros enquanto aprende sobre o trabalho no [IDE](visual-studio-ide.md) (ambiente de desenvolvimento integrado).
 
 ## <a name="configure-the-ide"></a>Configurar o IDE
 
@@ -48,9 +48,12 @@ Ao criar um aplicativo no Visual Studio, você cria primeiro um projeto e uma so
 
 1. Selecione **OK**.
 
-O Visual Studio cria o projeto e a solução HelloWPFApp e o **Gerenciador de Soluções** mostra os diversos arquivos. O **Designer do WPF** mostra um modo de exibição de Design e um modo de exibição XAML de *MainWindow.xaml* em um modo divisão. É possível deslizar o divisor para mostrar mais ou menos de cada exibição. É possível optar por ver apenas a exibição visual ou apenas a exibição XAML. Os seguintes itens aparecem no **Gerenciador de Soluções**:
+   O Visual Studio cria o projeto e a solução HelloWPFApp e o **Gerenciador de Soluções** mostra os diversos arquivos. O **Designer do WPF** mostra um modo de exibição de Design e um modo de exibição XAML de *MainWindow.xaml* em um modo divisão. É possível deslizar o divisor para mostrar mais ou menos de cada exibição. É possível optar por ver apenas a exibição visual ou apenas a exibição XAML. Os seguintes itens aparecem no **Gerenciador de Soluções**:
 
-![Gerenciador de Soluções com arquivos HelloWPFApp carregados](../ide/media/exploreide-hellowpfappfiles.png)
+   ![Gerenciador de Soluções com arquivos HelloWPFApp carregados](../ide/media/exploreide-hellowpfappfiles.png)
+
+   > [!NOTE]
+   > Para saber mais informações sobre XAML (eXtensible Application Markup Language), confira a página [Visão geral do XAML para WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf).
 
 Depois de criar o projeto, você poderá personalizá-lo. Ao usar a janela **Propriedades** (encontrada no menu **Exibir**), é possível exibir e alterar opções para itens de projeto, controles e outros itens em um aplicativo.
 
@@ -84,7 +87,7 @@ Sua janela deve se parecer com a ilustração a seguir:
 
 ![Controle TextBlock no formulário Saudações](../ide/media/exploreide-greetingswithtextblockonly.png)
 
-A marcação XAML deve ter uma aparência semelhante a esta:
+A marcação XAML deve ter uma aparência semelhante ao exemplo a seguir:
 
 ```xaml
 <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
@@ -130,7 +133,7 @@ Agora você pode adicionar o texto de exibição para cada controle RadioButton.
 
 ### <a name="set-a-radio-button-to-be-checked-by-default"></a>Definir que um botão de opção faça check-in por padrão
 
-Nesta etapa, definiremos que o HelloButton permaneça marcado por padrão, de maneira que um dos botões de dois opção esteja sempre selecionado.
+Nesta etapa, definiremos que o HelloButton permaneça marcado por padrão, de maneira que um dos dois botões de opção esteja sempre selecionado.
 
 Na exibição XAML, localize a marcação do HelloButton e adicione um atributo **IsChecked**:
 

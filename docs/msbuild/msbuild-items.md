@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f7215817907e729b1e6cfcdfa07a0eaa307a7eb
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204122"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443591"
 ---
 # <a name="msbuild-items"></a>Itens do MSBuild
 Itens do MSBuild são entradas no sistema de build e eles normalmente representam arquivos (os arquivos estão especificados no atributo `Include`). Os itens são agrupados em tipos de item com base em seus nomes de elemento. Os tipos de item são listas nomeadas de itens que podem ser usados como parâmetros para tarefas. As tarefas usam os valores do item para executar as etapas do processo de build.  
@@ -35,7 +35,7 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
 </ItemGroup>  
 ```  
   
- O item *file2.cs* não substitui o item *file1.cs*; em vez disso, o nome de arquivo é acrescentado à lista de valores do tipo de item `Compile`. Você não pode remover um item de um tipo de item durante a fase de avaliação de um build.  
+ O item *file2.cs* não substitui o item *file1.cs*; em vez disso, o nome de arquivo é acrescentado à lista de valores do tipo de item `Compile`.
   
  O XML a seguir cria o mesmo tipo de item declarando os dois arquivos em um atributo `Include`. Observe que os nomes de arquivo são separados por ponto e vírgula.  
   
@@ -60,25 +60,26 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
  Por padrão, os itens de um tipo de item são separados por ponto e vírgula (;) quando são expandidos. Use a sintaxe @(\<ItemType>, '\<separator>') para especificar um separador diferente do padrão. Para obter mais informações, confira [Como exibir uma lista de itens separada por vírgulas](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="use-wildcards-to-specify-items"></a>Usar curingas para especificar itens  
- Você pode usar os caracteres curinga **, \* e ? para especificar um grupo de arquivos como entradas para um build em vez de listar cada arquivo separadamente.  
-  
--   O caractere curinga ? corresponde a um único caractere.  
-  
--   O caractere curinga * corresponde a zero ou mais caracteres.  
-  
--   A sequência de caractere curinga ** corresponde a um caminho parcial.  
 
-Por exemplo, você pode especificar todos os arquivos *.cs* no diretório que contém o arquivo de projeto usando o elemento a seguir no arquivo de projeto.  
+Você pode usar os caracteres curinga `**`, `*` e `?` para especificar um grupo de arquivos como entradas para um build em vez de listar cada arquivo separadamente.
+  
+- O caractere curinga `?` corresponde a um único caractere.
+- O caractere curinga `*` corresponde a zero ou mais caracteres.
+- A sequência de caracteres curinga `**` corresponde a um caminho parcial.
+
+Por exemplo, você pode especificar todos os arquivos `.cs` no diretório que contém o arquivo de projeto usando o elemento a seguir no arquivo de projeto.
 
 ```xml  
 <CSFile Include="*.cs"/>  
 ```  
 
-O seguinte elemento seleciona todos os arquivos *.vb* na unidade *D:*  
+O seguinte elemento seleciona todos os arquivos `.vb` na unidade `D:`:
 
 ```xml  
 <VBFile Include="D:/**/*.vb"/>  
 ```  
+
+Para incluir caracteres literais `*` ou `?` em um item sem expansão de curinga, você deve [usar o escape para os caracteres curinga](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
 Para obter mais informações sobre caracteres curinga, confira [Como selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md).  
 
@@ -180,7 +181,7 @@ Para obter mais informações sobre caracteres curinga, confira [Como selecionar
  A partir do .NET Framework 3.5, os elementos `Target` podem conter elementos [ItemGroup](../msbuild/itemgroup-element-msbuild.md) que podem conter elementos de item. Os atributos nesta seção são válidos quando são especificados para um item em um `ItemGroup` que é um `Target`.  
   
 ###  <a name="BKMK_RemoveAttribute"></a> Remover atributo  
- Os itens em um `ItemGroup` de um destino podem conter o atributo `Remove`, que remove itens específicos (arquivos) do tipo de item. Esse atributo foi introduzido no .NET Framework 3.5.  
+ O atributo `Remove` remove itens específicos (arquivos) do tipo de item. Esse atributo foi introduzido no .NET Framework 3.5, mas só tinha suporte em destinos até o MSBuild 15.0.
   
  O exemplo a seguir remove todos os arquivos *.config* do tipo de item Compile.  
   

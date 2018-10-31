@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 702c1124e3b14f8bfec4f514edd8e1e7def6b776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 238c903fc81ef2323d0de44e4e5b900a9b68d766
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947632"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915835"
 ---
 # <a name="install-and-manage-local-content"></a>Instalar e gerenciar o conteúdo local
 
@@ -40,7 +40,7 @@ Para gerenciar o conteúdo em seu computador local, faça logon com uma conta qu
 
 ## <a name="change-the-content-installation-source"></a>Alterar a fonte de instalação de conteúdo
 
-Por padrão, o Help Viewer instala o conteúdo usando um serviço online da Microsoft como origem. Geralmente, você não deve alterar a fonte de conteúdo, a menos que trabalhe em um ambiente corporativo para o qual um administrador do sistema já tenha instalado conteúdo em outro local.
+Por padrão, o Visualizador de Ajuda instala o conteúdo usando um serviço online da Microsoft como origem. Geralmente, você não deve alterar a fonte de conteúdo, a menos que trabalhe em um ambiente corporativo para o qual um administrador do sistema já tenha instalado conteúdo em outro local.
 
 ### <a name="to-change-the-content-installation-source"></a>Para alterar a origem da instalação de conteúdo
 
@@ -110,9 +110,9 @@ A barra de status indica quando estão disponíveis atualizações para o conte�
 
 ### <a name="to-update-local-content"></a>Para atualizar o conteúdo local
 
--   No canto inferior direito da barra de status, escolha o link **Clique aqui para baixar agora**.
+- No canto inferior direito da barra de status, escolha o link **Clique aqui para baixar agora**.
 
- Os tempos de atualização podem variar, mas você pode exibir o progresso da atualização na barra de status.
+Os tempos de atualização podem variar, mas você pode exibir o progresso da atualização na barra de status.
 
 ## <a name="move-local-content"></a>Mover o conteúdo local
 

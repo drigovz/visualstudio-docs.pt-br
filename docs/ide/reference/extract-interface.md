@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6afc2acab36be88b4eb554d1900e6b314e395bd9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b126d3753c0b4d92a3ef7bc2579c6208e61e308b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849873"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refatoração Extrair uma interface
 
@@ -41,44 +41,44 @@ Esta refatoração aplica-se a:
 
    - C#:
 
-    ![Código realçado – C#](media/extractinterface-highlight-cs.png)
+       ![Código realçado – C#](media/extractinterface-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código realçado – Visual Basic](media/extractinterface-highlight-vb.png)
+       ![Código realçado – Visual Basic](media/extractinterface-highlight-vb.png)
 
-1. Depois, siga um destes procedimentos:
+2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl+R**, em seguida, **Ctrl+I**. (Observe que o atalho de teclado pode ser diferente com base no perfil selecionado.)
-     - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Extrair Interface** no pop-up da janela Visualização.
+      - Pressione **Ctrl+R**, em seguida, **Ctrl+I**. (Observe que o atalho de teclado pode ser diferente com base no perfil selecionado.)
+      - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Extrair Interface** no pop-up da janela Visualização.
    - **Mouse**
-     - Selecione **Editar > Refatorar > Extrair Interface**.
-     - Clique com o botão direito do mouse no nome da classe, selecione o menu **Ações Rápidas e Refatorações** e selecione **Extrair Interface** no pop-up da janela Visualização.
+      - Selecione **Editar > Refatorar > Extrair Interface**.
+      - Clique com o botão direito do mouse no nome da classe, selecione o menu **Ações Rápidas e Refatorações** e selecione **Extrair Interface** no pop-up da janela Visualização.
 
-1. Na caixa de diálogo **Extrair Interface** que é exibida, insira as informações solicitadas:
+3. Na caixa de diálogo **Extrair Interface** que é exibida, insira as informações solicitadas:
 
    ![Extrair Interface](media/extractinterface-dialog-cs.png)
 
+
    | Campo | Descrição |
-   | --- | --- |
+   | - | - |
    | **Nome da nova interface** | O nome da interface a ser criada. O padrão é I*ClassName*, onde *ClassName* é o nome da classe selecionada acima. |
    | **Nome do novo arquivo** | O nome do arquivo que será gerado com a interface. Como acontece com o nome da interface, o padrão é I*ClassName*, onde *ClassName* é o nome da classe selecionada acima. |
    | **Selecionar membros públicos para formar a interface** | Os itens a serem extraídos para a interface. Você pode selecionar quantos desejar. |
 
-1. Escolha **OK**.
+
+4. Escolha **OK**.
 
    A interface foi criada no arquivo com o nome especificado. Além disso, a classe que você selecionou implementa essa interface.
 
    - C#:
 
-    ![Classe resultante – C#](media/extractinterface-class-cs.png)
-    ![Interface resultante – C#](media/extractinterface-interface-cs.png)
+      ![Classe resultante – C#](media/extractinterface-class-cs.png) ![Interface resultante – C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
-    ![Classe resultante – Visual Basic](media/extractinterface-class-vb.png)
-    ![Interface resultante – Visual Basic](media/extractinterface-interface-vb.png)
+      ![Classe resultante – Visual Basic](media/extractinterface-class-vb.png) ![Interface resultante – Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Consulte também
 

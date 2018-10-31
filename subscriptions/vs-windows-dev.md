@@ -9,12 +9,12 @@ description: Saiba mais sobre a Conta de Desenvolvedor do Windows incluída em s
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c9d7bc13013d3dd98f675a22b5fb01ac46b2b134
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: be7a740e22201a230658dec0803a8523f7716462
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279317"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832401"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Conta de Desenvolvedor do Windows nas assinaturas do Visual Studio
 
@@ -29,27 +29,28 @@ Para usar a conta de desenvolvedor do Windows, será necessário configurar uma 
 1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Localize o bloco Conta de Desenvolvedor do Windows na seção de Ferramentas e clique no link **Obter Código** na parte inferior do bloco do benefício.  Copie o código para a área de transferência e, em seguida, clique em **Ativar**.
-    > [!div class="mx-imgBorder"]
-    > ![Bloco do benefício Desenvolvedor do Windows](_img\vs-windows-dev\vs-windows-dev-tile.png)
+   > [!div class="mx-imgBorder"]
+   > ![Bloco do benefício Desenvolvedor do Windows](_img/vs-windows-dev/vs-windows-dev-tile.png)
 
-2. No site [https://developer.microsoft.com](https://developer.microsoft.com), você pode começar o processo de registro.  Clique em **Inscrever-se** para continuar.
-    > [!div class="mx-imgBorder"]
-    > ![Registro do benefício Desenvolvedor do Windows](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
+3. No site [https://developer.microsoft.com](https://developer.microsoft.com), você pode começar o processo de registro.  Clique em **Inscrever-se** para continuar.
+   > [!div class="mx-imgBorder"]
+   > ![Registro do benefício Desenvolvedor do Windows](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
 
-3. Entre em sua assinatura.  Se você tiver várias contas, escolha a que está associada à sua assinatura Enterprise.
-4. Na próxima página, selecione o país ou a região onde você mora ou onde sua empresa está localizada e, em seguida, clique em **Avançar**.
-5. Selecione **Individual** como o tipo de conta.
-6. Crie seu nome de exibição do editor.  Esse será o nome exclusivo que seus clientes verão associado aos seus aplicativos, serviços e suplementos.
-7. Forneça suas informações de contato e o idioma preferencial do email e clique em **Avançar**.
-8. Poderá ser solicitado que você verifique a senha.  Insira-a e clique em **Entrar**.
-9. Na página Registro – Pagamento, cole o código que você copiou anteriormente no campo Código Promocional.  A página será atualizada para mostrar que *nenhum pagamento é necessário*.  Clique em **Avançar**.
+4. Entre em sua assinatura.  Se você tiver várias contas, escolha a que está associada à sua assinatura Enterprise.
+5. Na próxima página, selecione o país ou a região onde você mora ou onde sua empresa está localizada e, em seguida, clique em **Avançar**.
+6. Selecione **Individual** como o tipo de conta.
+7. Crie seu nome de exibição do editor.  Esse será o nome exclusivo que seus clientes verão associado aos seus aplicativos, serviços e suplementos.
+8. Forneça suas informações de contato e o idioma preferencial do email e clique em **Avançar**.
+9. Poderá ser solicitado que você verifique a senha.  Insira-a e clique em **Entrar**.
+10. Na página Registro – Pagamento, cole o código que você copiou anteriormente no campo Código Promocional.  A página será atualizada para mostrar que *nenhum pagamento é necessário*.  Clique em **Avançar**.
     > [!div class="mx-imgBorder"]
-    > ![Registro do benefício Desenvolvedor do Windows](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
+    > ![Registro do benefício Desenvolvedor do Windows](_img/vs-windows-dev/vs-windows-dev-promo-cropped.png)
 
-10. Examine as informações da conta, examine o Contrato de Desenvolvedor de Aplicativos e clique na caixa de seleção para indicar que você aceita os termos e condições.  Em seguida, clique em **Concluir**.
-11. Clique em **Acessar painel** para começar a usar sua conta de desenvolvedor do Windows!
+11. Examine as informações da conta, examine o Contrato de Desenvolvedor de Aplicativos e clique na caixa de seleção para indicar que você aceita os termos e condições.  Em seguida, clique em **Concluir**.
+12. Clique em **Acessar painel** para começar a usar sua conta de desenvolvedor do Windows!
 
 ## <a name="eligibility"></a>Qualificação
+
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Padrão, nuvem anual)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Incluído       |  Sim|
@@ -59,7 +60,7 @@ Para usar a conta de desenvolvedor do Windows, será necessário configurar uma 
 | Visual Studio Dev Essentials | NA  | Não disponível                                            |  NA|
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
 
-<sup>1</sup>*Inclui: NFR (Não para revenda), FTE, VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer. Exclui: MPN (Microsoft Partner Network), Imagine, MVP (Microsoft com valor de parceiro), RD (Diretor regional), MCT Software & Services.*
+<sup>1</sup>*Inclui: NFR (Não para revenda), FTE, VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer. Exclui: MPN (Microsoft Partner Network), Imagine, MVP (Microsoft Valued Professional), RD (Diretor regional), MCT Software & Services.*
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 

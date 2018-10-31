@@ -1,20 +1,20 @@
 ---
 title: Gravar testes de unidade para C/C++ no Visual Studio
-ms.date: 11/04/2017
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7838d4435c71fa332711c0ef3794c8bed556827a
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: e79b65628193c7b90a03b2e1141dfc45b6b0829f
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341366"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879195"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Gravar testes de unidade para C/C++ no Visual Studio
 
@@ -31,6 +31,10 @@ O Visual Studio inclui estas estruturas de teste para C++, sem a necessidade de 
 - CTest
 
 Além das estruturas instaladas, é possível gravar seu próprio adaptador de teste em qualquer estrutura que você deseja usar no Visual Studio. Um adaptador de teste pode integrar testes de unidade à janela **Gerenciador de Testes**. Vários adaptadores de terceiros são disponibilizados no [Visual Studio Marketplace](https://marketplace.visualstudio.com). Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md).
+
+**Visual Studio 2017 versão 15.7 (Professional e Enterprise)**
+
+Os projetos de teste de unidade C++ são compatíveis com o [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
 **Visual Studio 2017 versão 15.5**
 
@@ -80,13 +84,14 @@ TEST_CLASS e TEST_METHOD fazem parte do [Framework de Teste Nativo da Microsoft]
 Um TEST_METHOD retorna nulo. Para produzir um resultado do teste, use os métodos estáticos na classe `Assert` para testar os resultados reais em relação a o que é esperado. No exemplo a seguir, considere que `MyClass` tem um construtor que usa uma `std::string`. É possível testar se o construtor inicializa a classe conforme o esperado da seguinte forma:
 
 ```cpp
-        TEST_METHOD(TestClassInit)
-        {
-            std::string name = "Bill";
-            MyClass mc(name);
-            Assert::AreEqual(name, mc.GetName());
-        }
+TEST_METHOD(TestClassInit)
+{
+    std::string name = "Bill";
+    MyClass mc(name);
+    Assert::AreEqual(name, mc.GetName());
+}
 ```
+
 No exemplo anterior, o resultado da chamada `Assert::AreEqual` determina o resultado do teste: aprovação ou falha. A classe Assert contém vários outros métodos para comparar os resultados esperados aos resultados reais.
 
 É possível adicionar *características* aos métodos de teste a fim de especificar os proprietários do teste, a prioridade e outras informações. Depois, é possível usar esses valores para classificar e agrupar os testes no **Gerenciador de Testes**. Para obter mais informações, consulte [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md).
@@ -111,6 +116,22 @@ Para testes com falha, a mensagem mostra detalhes que ajudam a diagnosticar a ca
 Para saber mais sobre como usar o **Gerenciador de Testes**, consulte [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md).
 
 Para conhecer as melhores práticas relacionadas ao teste de unidade, confira [Noções básicas sobre o teste de unidade](unit-test-basics.md)
+
+## <a name="use-codelens"></a>Usar o CodeLens
+
+**Apenas Visual Studio 2017 versão 15.7 Professional e Enterprise Editions**: o [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) permite que você veja rapidamente o status de uma unidade de teste sem sair do editor de código. Você pode inicializar o CodeLens para um projeto de teste de unidade do C++ em qualquer uma das seguintes formas:
+
+- Editar e compilar sua solução ou projeto de teste.
+- Recompilar sua solução ou projeto.
+- Executar o(s) teste(s) na janela do **Gerenciador de Testes**.
+
+Após o **CodeLens** ser inicializado, os ícones de status de teste podem ser vistos acima de cada teste de unidade.
+
+![Ícones do CodeLens C++](media/cpp-test-codelens-icons.png)
+
+ Clique no ícone para obter mais informações ou para executar ou depurar o teste de unidade:
+
+![Execução e depuração do CodeLens C++](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>Consulte também
 
