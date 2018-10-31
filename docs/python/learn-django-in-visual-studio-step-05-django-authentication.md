@@ -1,4 +1,4 @@
----
+﻿---
 title: Tutorial – Saiba mais sobre Django no Visual Studio, etapa 5
 description: Um passo a passo dos conceitos básicos do Django no contexto dos projetos do Visual Studio, especificamente os recursos de autenticação fornecidos pelos modelos Projeto Web do Django.
 ms.date: 08/13/2018
