@@ -58,8 +58,7 @@ Cria um arquivo *.zip* do conteúdo de um diretório.
     <Target Name="ZipOutputPath" AfterTargets="Build">
         <ZipDirectory
             SourceDirectory="$(OutputPath)"
-            DestinationFile="$(MSBuildProjectDirectory)\output.zip">
-        />
+            DestinationFile="$(MSBuildProjectDirectory)\output.zip" />
     </Target>
 
 </Project>
