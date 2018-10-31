@@ -49,12 +49,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4405e50a2bc264c88c073980da77fafbedf49cbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3cb2a939fb569ca9c50e6334fa7b836a6953dca4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830659"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219153"
 ---
 # <a name="options-text-editor-general"></a>Opções, Editor de Texto, Geral
 
@@ -94,14 +94,6 @@ Quando selecionado, exibe uma margem vertical ao longo da borda esquerda da áre
 ### <a name="indicator-margin"></a>Margem de indicadores
 
 Quando selecionado, exibe uma margem vertical fora da borda esquerda da área de texto do editor. Quando você clica nesta margem, um ícone e uma dica de ferramenta relacionados ao texto aparecem. Por exemplo, atalhos da lista de tarefas ou de pontos de interrupção aparecem na margem de indicadores. Informações da margem de indicadores não são impressas.
-
-### <a name="vertical-scroll-bar"></a>Barra de rolagem vertical
-
-Quando selecionado, exibe uma barra de rolagem vertical que permite rolar para cima e para baixo para exibir elementos que estão fora da área de exibição do Editor. Se barras de rolagem verticais não estiverem disponíveis, você poderá usar Page Up, Page Down e teclas do cursor para rolar.
-
-### <a name="horizontal-scroll-bar"></a>Barra de rolagem horizontal
-
-Quando selecionado, exibe uma barra de rolagem horizontal que permite rolar lateralmente para exibir elementos que estão fora da área de exibição do Editor. Se barras de rolagem horizontais não estiverem disponíveis, você poderá usar as teclas de cursor para rolar.
 
 ### <a name="highlight-current-line"></a>Realçar linha atual
 
