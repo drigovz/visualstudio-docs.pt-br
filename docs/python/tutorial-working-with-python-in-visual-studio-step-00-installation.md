@@ -1,7 +1,7 @@
 ---
 title: Trabalhando com Tutorial do Python, etapa 0, instalação
 description: Etapa 0 (pré-requisitos de instalação) de um passo a passo básico sobre trabalhar com o Python no Visual Studio.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,19 +11,19 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c0b28ab5310f1be97ecf7b7acbcaa3360b29c480
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5593de7de87244b9ee38a26a0688f4ffe5931c10
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513514"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219660"
 ---
-# <a name="install-python-support-in-visual-studio"></a>Instalar o suporte para Python no Visual Studio
+# <a name="install-python-support-in-visual-studio"></a>Instalar o suporte ao Python no Visual Studio
 
 > [!Note]
-> O suporte para Python está atualmente disponível somente no Visual Studio para Windows; no Mac e no Linux, o suporte para Python está disponível por meio do [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+> O suporte ao Python está atualmente disponível somente no Visual Studio para Windows; no Mac e no Linux, o suporte ao Python está disponível por meio do [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
-1. Baixe e execute o instalador do Visual Studio 2017 mais recente para Windows (o suporte para Python está presente na versão 15.2 e posteriores). Se você já tiver o Visual Studio instalado, execute o instalador do Visual Studio e vá para a etapa 2.
+1. Baixe e execute o instalador do Visual Studio 2017 mais recente para Windows (o suporte ao Python está presente na versão 15.2 e posteriores). Se você já tiver o Visual Studio instalado, execute o instalador do Visual Studio e vá para a etapa 2.
 
     > [!div class="nextstepaction"]
     > [Instalar Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
