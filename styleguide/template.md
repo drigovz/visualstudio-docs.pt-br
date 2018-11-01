@@ -177,7 +177,7 @@ Quando o UID contém os caracteres especiais \` ou \#, o valor do UID precisa se
 
 ## <a name="code"></a>Código
 
-A melhor maneira de incluir código é incluir trechos de uma amostra funcional. Crie a amostra seguindo as instruções do [guia de contribuição](../CONTRIBUTING.md#contributing-to-samples).
+A melhor maneira de incluir código é incluir snippets de uma amostra funcional. Crie a amostra seguindo as instruções do [guia de contribuição](../CONTRIBUTING.md#contributing-to-samples).
 
 É possível incluir o código usando a sintaxe de inclusão:
 
@@ -199,7 +199,7 @@ Outras linguagens com suporte são:
 
 O texto colocado para `<title>` aparece como uma sobreposição no texto. O `<pathToFile>` é o caminho para o arquivo de origem. O `<RegionName>` deve ser uma região no código-fonte que deve ser incluída. Use a sintaxe do pré-processador `#region` e `#endregion` para especificar a região de código a ser incluída.
 
-Para casos em que as regiões não funcionam, é possível especificar o início e término de um trecho usando um nome de elemento XML em um comentário de linha única. Por exemplo, é possível escrever isto em C#:
+Para casos em que as regiões não funcionam, é possível especificar o início e término de um snippet usando um nome de elemento XML em um comentário de linha única. Por exemplo, é possível escrever isto em C#:
 
 ```csharp
 // <CodeToInclude>
@@ -212,7 +212,7 @@ int sum = i + j;
 Em outras linguagens, use a sintaxe de comentário da linguagem.
 Finalmente, é possível usar números de linha: `#L1-L10` incluirá as linhas 1 a 10. Não incentivamos o uso de números de linha, pois são muito frágeis.
 
-A inclusão de trechos de programas completos garante que todo o código é executado por meio de nosso sistema de CI (Integração Contínua). No entanto, se você precisar mostrar algo que causa erros de tempo de compilação ou de execução, será possível usar blocos de código embutidos.
+A inclusão de snippets de programas completos garante que todo o código é executado por meio de nosso sistema de CI (Integração Contínua). No entanto, se você precisar mostrar algo que causa erros de tempo de compilação ou de execução, será possível usar blocos de código embutidos.
 
 ### <a name="inline-code-blocks-with-language-identifier"></a>Blocos de código embutidos com identificador de linguagem
 
@@ -330,7 +330,7 @@ E eles serão renderizados assim: ![Estilos de alerta](../images/alerts.png)
 > [!div class="button"]
 [links de botão](../docs/core/index.md)
 
-É possível ver um exemplo de botões em ação no [Intune Docs](https://docs.microsoft.com/en-us/intune/get-started/choose-how-to-enroll-devices). 
+É possível ver um exemplo de botões em ação no [Intune Docs](https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices). 
 
 ### <a name="selectors"></a>Seletores
 
@@ -338,7 +338,7 @@ E eles serão renderizados assim: ![Estilos de alerta](../images/alerts.png)
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Windows](../docs/core/tutorials/using-on-windows.md)
 
-É possível ver um exemplo de seletores em ação no [Intune Docs](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
+É possível ver um exemplo de seletores em ação no [Intune Docs](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
 
 ### <a name="step-by-steps"></a>Passo a passo
 
@@ -346,4 +346,4 @@ E eles serão renderizados assim: ![Estilos de alerta](../images/alerts.png)
 [Anterior](../docs/csharp/expression-trees-interpreting.md)
 [Próximo](../docs/csharp/expression-trees-translating.md)
 
-É possível ver um exemplo de passo a passo em ação no [Advanced Threat Analytics Docs](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/install-ata-step2).
+É possível ver um exemplo de passo a passo em ação no [Advanced Threat Analytics Docs](https://docs.microsoft.com/advanced-threat-analytics/deploy-use/install-ata-step2).
