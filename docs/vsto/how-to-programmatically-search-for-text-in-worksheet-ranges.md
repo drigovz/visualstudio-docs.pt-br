@@ -17,15 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0dcf2787706de121fba691edaf42e9971747524
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a323336979e16be376cfcd3da44cbc9b12bd73ea
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920073"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671957"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Como: programaticamente pesquisar texto em intervalos de planilhas
-  O <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> método da <xref:Microsoft.Office.Interop.Excel.Range> objeto lhe permite pesquisar texto dentro do intervalo. Esse texto pode ser qualquer uma das cadeias de caracteres erro podem aparecer em uma célula de planilha, como também `#NULL!` ou `#VALUE!`. Para obter mais informações sobre cadeias de caracteres de erro, consulte [valores de erro de célula](http://msdn.microsoft.com/library/office/ff839168.aspx).  
+  O <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> método da <xref:Microsoft.Office.Interop.Excel.Range> objeto lhe permite pesquisar texto dentro do intervalo. Esse texto pode ser qualquer uma das cadeias de caracteres erro podem aparecer em uma célula de planilha, como também `#NULL!` ou `#VALUE!`. Para obter mais informações sobre cadeias de caracteres de erro, consulte [valores de erro de célula](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
