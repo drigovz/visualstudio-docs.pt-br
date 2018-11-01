@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18045c8b6c388839f09ba42284ab498caf11dbf5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 35506967ee20ff6c936e2de4a19d7860e154e4c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182059"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866565"
 ---
 # <a name="item-definitions"></a>Definições de itens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,11 +94,11 @@ O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 permite a declara
 ## <a name="additive-and-multiple-definitions"></a>Aditivos e várias definições  
  Quando você adicionar definições ou usar vários ItemDefinitionGroups, lembre-se do seguinte:  
   
--   A especificação de metadados adicionais é adicionada ao tipo.  
+- A especificação de metadados adicionais é adicionada ao tipo.  
   
--   A última especificação tem precedência.  
+- A última especificação tem precedência.  
   
- Quando você tem vários ItemDefinitionGroups, cada especificação subsequente adiciona seus metadados à definição anterior. Por exemplo:  
+  Quando você tem vários ItemDefinitionGroups, cada especificação subsequente adiciona seus metadados à definição anterior. Por exemplo:  
   
 ```  
 <ItemDefinitionGroup>  

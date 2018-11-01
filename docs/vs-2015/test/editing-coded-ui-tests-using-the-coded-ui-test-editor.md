@@ -17,12 +17,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa426175155f45feb480b8185b5902049101f577
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242717"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951238"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editando testes de interface de usuário codificada usando o editor de teste de interface de usuário codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Editar propriedades de ações de interface do usuário
   
  Para modificar as propriedades de uma ação de interface do usuário, no painel **Ações de interface do usuário**, expanda o método de teste que contém uma ação de IU cujas propriedades você deseja editar, selecione a ação de interface do usuário e, em seguida, modifique as propriedades usando a janela Propriedades.  
   
- Por exemplo, se um servidor estiver indisponível e houver uma ação de interface do usuário associada com seu navegador da Web que estados **ir para página da Web 'http://Contoso1/default.aspx'**, você pode alterar a URL para `‘ http://Contoso2/default.aspx’`.  
+ Por exemplo, se um servidor estiver indisponível e houver uma ação de interface do usuário associada ao navegador da Web com a instrução **Acessar página da Web "<http://Contoso1/default.aspx’>"**, será possível alterar a URL para `‘ http://Contoso2/default.aspx’`.  
   
  ![Propriedades de controle](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Editar propriedades de controle  
@@ -125,19 +125,19 @@ Editar propriedades de controle
  *O que mais eu deveria saber?*  
  **Questões importantes**  
   
--   ![Ícone Cuidado](../test/media/caution.gif "cuidado") **Aviso:** ao dividir um método, modifique os códigos que chamam o método existente para que eles também chamem o novo método a ser criado caso ainda deseje incluir essas ações de interface do usuário. Quando um método é dividido, uma caixa de diálogo do Microsoft Visual Studio é exibida. Ela avisa que é necessário modificar os códigos que chamam o método existente para que eles também chamem o novo método a ser criado. Escolha **Sim**.  
+- ![Ícone Cuidado](../test/media/caution.gif "cuidado") **Aviso:** ao dividir um método, modifique os códigos que chamam o método existente para que eles também chamem o novo método a ser criado caso ainda deseje incluir essas ações de interface do usuário. Quando um método é dividido, uma caixa de diálogo do Microsoft Visual Studio é exibida. Ela avisa que é necessário modificar os códigos que chamam o método existente para que eles também chamem o novo método a ser criado. Escolha **Sim**.  
   
- **Dicas**  
+  **Dicas**  
   
--   ![Dica](../test/media/tip.png "Dica") Para desfazer a divisão, escolha **Desfazer** no menu **Editar** ou pressione Ctrl+Z.  
+- ![Dica](../test/media/tip.png "Dica") Para desfazer a divisão, escolha **Desfazer** no menu **Editar** ou pressione Ctrl+Z.  
   
--   ![Dica](../test/media/tip.png "Dica") É possível renomear o novo método. Selecione-o no painel Ações de interface do usuário e escolha o botão **Renomear** na barra de ferramentas do Editor de Teste de IU Codificado.  
+- ![Dica](../test/media/tip.png "Dica") É possível renomear o novo método. Selecione-o no painel Ações de interface do usuário e escolha o botão **Renomear** na barra de ferramentas do Editor de Teste de IU Codificado.  
   
-     -ou-  
+   -ou-  
   
-     Abra o menu de atalho do novo método de teste e escolha **Renomear**.  
+   Abra o menu de atalho do novo método de teste e escolha **Renomear**.  
   
-     Uma caixa de diálogo do Microsoft Visual Studio é exibida. Ela avisa que é necessário modificar os códigos que referenciam o método. Escolha **Sim**.  
+   Uma caixa de diálogo do Microsoft Visual Studio é exibida. Ela avisa que é necessário modificar os códigos que referenciam o método. Escolha **Sim**.  
   
 ##  <a name="CodedUITestEditor_MoveMethods"></a> Mover um método de teste para o arquivo UIMap a fim de facilitar a personalização  
  Se que um dos métodos de teste no teste de IU codificado requerer um código personalizado, será necessário movê-lo para o arquivo UIMap.cs ou UIMap.vb. Caso contrário, o código será substituído sempre que o teste de IU codificado for recompilado. Se o método não for movido, o código personalizado será substituído sempre que o teste for recompilado.  
@@ -149,11 +149,11 @@ Editar propriedades de controle
  *O que mais eu deveria saber?*  
  **Questões importantes**  
   
--   ![Ícone Cuidado](../test/media/caution.gif "Cuidado") **Aviso:** depois de mover o método, não é possível editá-lo usando o Editor de Teste de IU Codificado. Você deve adicionar seu código personalizado e mantê-lo usando o Editor de Códigos. Quando um método é movido, uma caixa de diálogo do Microsoft Visual Studio é exibida. Ela avisa que o método será movido do arquivo UIMap.uitest para o arquivo UIMap.cs ou UIMap.vb e que não será possível editar o método usando o Editor de Teste de IU Codificado. Escolha **Sim**.  
+- ![Ícone Cuidado](../test/media/caution.gif "Cuidado") **Aviso:** depois de mover o método, não é possível editá-lo usando o Editor de Teste de IU Codificado. Você deve adicionar seu código personalizado e mantê-lo usando o Editor de Códigos. Quando um método é movido, uma caixa de diálogo do Microsoft Visual Studio é exibida. Ela avisa que o método será movido do arquivo UIMap.uitest para o arquivo UIMap.cs ou UIMap.vb e que não será possível editar o método usando o Editor de Teste de IU Codificado. Escolha **Sim**.  
   
- **Dicas**  
+  **Dicas**  
   
--   ![Dica](../test/media/tip.png "Dica") Para desfazer a movimentação, selecione **Desfazer** no menu **Editar** ou pressione Ctrl+Z. No entanto, em seguida, será necessário remover manualmente o código do arquivo UIMap.cs ou UIMap.vb.  
+- ![Dica](../test/media/tip.png "Dica") Para desfazer a movimentação, selecione **Desfazer** no menu **Editar** ou pressione Ctrl+Z. No entanto, em seguida, será necessário remover manualmente o código do arquivo UIMap.cs ou UIMap.vb.  
   
 ##  <a name="CodedUITestEditor_LocateUIControl"></a> Localizar um Controle de interface do usuário no aplicativo em teste  
  Algumas vezes, pode ser difícil visualizar onde os controles estão localizados na interface do usuário do aplicativo em teste. Um dos recursos do Editor de Teste de IU Codificado é a seleção de um controle listado no mapa de controle da interface do usuário e a exibição da localização desse controle no aplicativo em teste. O recurso **Localizar o Controle de interface do usuário** no aplicativo em teste também pode ser usado para verificar modificações na propriedade de pesquisa de um controle.  
@@ -167,11 +167,11 @@ Editar propriedades de controle
  *O que mais eu deveria saber?*  
  **Questões importantes**  
   
--   ![Ícone Cuidado](../test/media/caution.gif "cuidado") **Aviso:** antes de localizar um controle de interface do usuário, verifique se o aplicativo associado ao teste está em execução.  
+- ![Ícone Cuidado](../test/media/caution.gif "cuidado") **Aviso:** antes de localizar um controle de interface do usuário, verifique se o aplicativo associado ao teste está em execução.  
   
- **Dicas**  
+  **Dicas**  
   
--   ![Dica](../test/media/tip.png "dica") Como alternativa, é possível usar a opção **Localizar Tudo** para verificar se todos os controles em um contêiner estão localizados corretamente. Essa opção será descrita na próxima seção.  
+- ![Dica](../test/media/tip.png "dica") Como alternativa, é possível usar a opção **Localizar Tudo** para verificar se todos os controles em um contêiner estão localizados corretamente. Essa opção será descrita na próxima seção.  
   
 ##  <a name="CodedUITestEditor_LocateDecendants"></a> Localizar um controle e seus descendentes  
  É possível verificar se todos os controles em um contêiner estão localizados corretamente na interface do usuário do aplicativo em teste. Isso pode ser útil para verificar alterações de propriedade de pesquisa realizadas no contêiner. Além disso, se houve alterações significativas na interface do usuário do aplicativo em teste, é possível validar se os controles de propriedades de pesquisa existentes ainda estão corretos.  
@@ -201,11 +201,11 @@ Editar propriedades de controle
  *O que mais eu deveria saber?*  
  **Observações**  
   
--   ![Pré-requisitos](../test/media/prereq.png "pré-requisitos") Se for necessário garantir que um controle específico esteja disponível antes de uma ação de interface do usuário, considere a adição de código personalizado ao método de teste por meio do método UITestControl.WaitForControlXXX() apropriado. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Fazendo Testes de IU Codificados Aguardarem Eventos Específicos Durante a Reprodução](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
+- ![Pré-requisitos](../test/media/prereq.png "pré-requisitos") Se for necessário garantir que um controle específico esteja disponível antes de uma ação de interface do usuário, considere a adição de código personalizado ao método de teste por meio do método UITestControl.WaitForControlXXX() apropriado. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Fazendo Testes de IU Codificados Aguardarem Eventos Específicos Durante a Reprodução](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
   
- **Dicas**  
+  **Dicas**  
   
--   ![Dica](../test/media/tip.png "Dica") Se a janela Propriedades não for exibida, pressione e segure a tecla Alt ao mesmo tempo em que pressiona Enter ou pressione a tecla F4.  
+- ![Dica](../test/media/tip.png "Dica") Se a janela Propriedades não for exibida, pressione e segure a tecla Alt ao mesmo tempo em que pressiona Enter ou pressione a tecla F4.  
   
 ## <a name="external-resources"></a>Recursos externos  
   
