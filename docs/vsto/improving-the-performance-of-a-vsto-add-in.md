@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9269d77af38364e936f0c84c7c5a83bd58493de7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 918ff0ac0a0b7f4e16c779516c015d7b74cec415
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827267"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672646"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Melhorar o desempenho de um suplemento do VSTO
   Você pode dar aos usuários uma experiência melhor ao otimizar o VSTO Add-ins que você cria para o Office, aplicativos para que eles são rapidamente iniciados, desligar, abrir itens e executar outras tarefas. Se o suplemento do VSTO para Outlook, você também pode reduzir a chance de que seu suplemento do VSTO será desabilitado devido a um desempenho ruim. Você pode aumentar o desempenho do seu suplemento do VSTO, implementando as estratégias a seguir:  
@@ -117,10 +117,6 @@ ms.locfileid: "49827267"
 >  Todo o código que chama o modelo de objeto do Office deve executar no thread principal.  
   
 ## <a name="see-also"></a>Consulte também  
- [Suplementos do VSTO do carregamento por demanda](http://blogs.msdn.com/b/andreww/archive/2008/07/14/demand-loading-vsto-add-ins.aspx)   
- [Carregamento de atraso do CLR em suplementos do Office](http://blogs.msdn.com/b/andreww/archive/2008/04/19/delay-loading-the-clr-in-office-add-ins.aspx)   
- [Desempenho do VSTO: atrasar o carregamento e você (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/01/07/vsto-performance-delay-loading-and-you.aspx)   
- [Melhorias de desempenho em breve para um service pack perto de você (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/11/30/performance-improvements-coming-soon-to-a-service-pack-near-you-stephen-peters.aspx)   
- [Desempenho do VSTO: reflexão (Stephen Peters) da faixa de opções](http://blogs.msdn.com/b/vsto/archive/2010/06/03/vsto-performance-ribbon-reflection.aspx)  
-  
-  
+ [Suplementos do VSTO do carregamento por demanda](https://blogs.msdn.microsoft.com/andreww/2008/07/14/demand-loading-vsto-add-ins/)   
+ [Carregamento de atraso do CLR em suplementos do Office](https://blogs.msdn.microsoft.com/andreww/2008/04/19/delay-loading-the-clr-in-office-add-ins/)   
+ [Criar suplementos para Office do VSTO usando o Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)   

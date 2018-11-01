@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf00afb612e12ce6712206808897a3b851d68b3a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669782"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671087"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Práticas recomendadas de desenvolvimento para COM, VSTO e suplementos do Office
   Se você estiver desenvolvendo suplementos VSTO, COM ou do VBA para o Office, siga as práticas recomendadas de desenvolvimento descritas neste artigo.   Isso ajudará a garantir que:
@@ -39,12 +39,12 @@ Se sua solução usa o .NET 4.0 ou posterior, use tipos de interoperabilidade in
 Se sua solução usa uma versão anterior do .NET, é recomendável que você atualize sua solução para usar o .NET 4.0 ou posterior. Usando o .NET 4.0 ou posterior reduz pré-requisitos de tempo de execução em versões mais recentes do Windows.
   
 ## <a name="avoid-depending-on-specific-office-versions"></a>Evitar depender de versões específicas do Office  
-Se sua solução usa a funcionalidade que só está disponível nas versões mais recentes do Office, verifique se o recurso existe (se possível, no nível do recurso) em tempo de execução (por exemplo, usando a manipulação ou verificando a versão da exceção). Validar as versões mínimas, em vez de versões específicas, usando as APIs com suporte no modelo de objeto, como o [Application.Version propriedade](https://msdn.microsoft.com/library/office/microsoft.office.interop.excel._application.version.aspx). Não é recomendável que você confiar em metadados binário do Office, os caminhos de instalação ou as chaves do registro porque eles podem ser alterados entre instalações, ambientes e versões.
+Se sua solução usa a funcionalidade que só está disponível nas versões mais recentes do Office, verifique se o recurso existe (se possível, no nível do recurso) em tempo de execução (por exemplo, usando a manipulação ou verificando a versão da exceção). Validar as versões mínimas, em vez de versões específicas, usando as APIs com suporte no modelo de objeto, como o [Application.Version propriedade](<xref:Microsoft.Office.Interop.Excel._Application.Version%2A>). Não é recomendável que você confiar em metadados binário do Office, os caminhos de instalação ou as chaves do registro porque eles podem ser alterados entre instalações, ambientes e versões.
 
 ## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Ativar o uso do Office de 32 bits e 64 bits   
 O destino de compilação padrão deve dar suporte a (x86) 32 bits e 64 bits (x64), a menos que sua solução depende de bibliotecas que estão disponíveis apenas para um número específico de bits. A versão de 64 bits do Office está aumentando na adoção, especialmente em ambientes de big data. Suporte de 32 bits e 64 bits torna mais fácil para seus usuários para fazer a transição entre as versões de 32 bits e 64 bits do Office.
 
-Ao escrever código VBA, o uso seguro de 64 bits instruções declare e converter variáveis conforme apropriado. Além disso, certifique-se de que os documentos podem ser compartilhados entre usuários que executam versões de 32 bits ou 64 bits do Office, fornecendo código para cada número de bits. Para obter mais informações, consulte [64-bit Visual Basic para visão geral dos aplicativos](https://msdn.microsoft.com/library/office/gg264421.aspx).
+Ao escrever código VBA, o uso seguro de 64 bits instruções declare e converter variáveis conforme apropriado. Além disso, certifique-se de que os documentos podem ser compartilhados entre usuários que executam versões de 32 bits ou 64 bits do Office, fornecendo código para cada número de bits. Para obter mais informações, consulte [64-bit Visual Basic para visão geral dos aplicativos](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview).
 
 ## <a name="support-restricted-environments"></a>Dar suporte a ambientes restritos   
 Sua solução não deve exigir privilégios de administrador ou elevação de conta de usuário. Além disso, a solução não deve depender definindo ou alterando:

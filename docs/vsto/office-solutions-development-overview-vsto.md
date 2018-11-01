@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2ba9e49a45305c42f813f996392bb1fa5af41b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3586d6bc141992d7d8fe4629e7f56d04e4e247aa
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842658"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672620"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Visão geral do desenvolvimento de soluções Office (VSTO)
   Ao usar o Microsoft Office como o front-end para soluções, você pode tirar proveito das interfaces de usuário do Microsoft Office e ferramentas como os recursos de processamento de texto no Word, os recursos de análise de dados do Excel e os recursos de gerenciamento de email do Outlook familiares . Você pode desenvolver soluções no Visual Studio para personalizar aplicativos do Office e adicionar os recursos específicos que você precisa para seus processos de negócios. Por exemplo, você pode transformar o Word em um gerador de contrato que monta contratos fora das partes pré-existentes que podem ser feitas editáveis ou não editável. Com o Excel, você pode criar uma planilha de orçamento automatizado personalizada para diferentes projetos. Os usuários também podem executar soluções do office offline, que torna mais prático do que seria se você usar uma arquitetura baseada na web a soluções complexas.  
@@ -83,7 +83,7 @@ ms.locfileid: "49842658"
  Usar o ClickOnce ou o Windows Installer para implantar soluções que você criar usando as ferramentas de desenvolvimento do Office no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. A implantação do ClickOnce permite que você crie soluções de atualização automática que podem ser instaladas e executadas com interação mínima do usuário. Windows Installer (*. msi*) arquivos podem ser facilmente distribuídos para computadores de usuários finais ou distribuídos usando o Systems Management Server (SMS). Para obter mais informações sobre como implantar soluções do Office do VSTO, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).  
   
 ### <a name="install-prerequisites"></a>Instalar pré-requisitos  
- Antes dos usuários finais podem executar uma solução que você criar usando as ferramentas de desenvolvimento do Office no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], seus computadores devem ter a determinados pré-requisitos instalados. Se você implantar sua solução usando o ClickOnce ou criando um arquivo do Windows Installer, estes pré-requisitos podem ser instalados com sua solução. Para obter mais informações, consulte [pré-requisitos de solução do Office para implantação](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e) e [como: instalar pré-requisitos em computadores de usuário final para executar soluções do Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+ Antes dos usuários finais podem executar uma solução que você criar usando as ferramentas de desenvolvimento do Office no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], seus computadores devem ter a determinados pré-requisitos instalados. Se você implantar sua solução usando o ClickOnce ou criando um arquivo do Windows Installer, estes pré-requisitos podem ser instalados com sua solução. Para obter mais informações, consulte [pré-requisitos de solução do Office para implantação](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e) e [como: instalar pré-requisitos em computadores de usuário final para executar soluções do Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 ### <a name="security"></a>Segurança  
  Para soluções do Office do VSTO é imposta por uma série de verificações de segurança que o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] faz quando ele instala e carrega a solução. Essas verificações incluem verificando se o local do manifesto de implantação é confiável ou se o certificado usado para assinar o manifesto de implantação é confiável. Para obter mais informações, consulte [soluções do Office Secure](../vsto/securing-office-solutions.md).  

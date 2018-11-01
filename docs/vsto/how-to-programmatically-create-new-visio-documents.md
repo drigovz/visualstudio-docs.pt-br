@@ -16,15 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b5b66690d3856a2bf1fc6df417b60ab5e293127
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 4142ebe86ea69fbb0a74f25c2a7053a60c527cdb
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256738"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671554"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>Como: criar novos documentos do Visio programaticamente
-  Quando você cria um novo Microsoft Office Visio desenhando o documento, você adicioná-lo para o `Microsoft.Office.Interop.Visio.Documents` coleção de documentos do Visio abertos. Consequentemente, o `Microsoft.Office.Interop.Visio.Documents.Add` método cria um novo documento de desenho do Visio. Para obter mais informações, consulte a documentação de referência do VBA para o [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) método.  
+  Quando você cria um novo Microsoft Office Visio desenhando o documento, você adicioná-lo para o `Microsoft.Office.Interop.Visio.Documents` coleção de documentos do Visio abertos. Consequentemente, o `Microsoft.Office.Interop.Visio.Documents.Add` método cria um novo documento de desenho do Visio. Para obter mais informações, consulte a documentação de referência do VBA para o [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) método.  
   
 ## <a name="create-new-blank-documents"></a>Criar novos documentos em branco  
   
@@ -46,7 +46,7 @@ ms.locfileid: "35256738"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#2)]  
   
 ## <a name="create-stencils-copied-from-existing-stencils"></a>Criar estênceis copiados de estênceis existentes  
- O [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) método pode criar um novo estêncil é uma cópia de um estêncil do Visio existente. Você deve fornecer o nome do arquivo e o caminho totalmente qualificado do estêncil.  
+ O [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) método pode criar um novo estêncil é uma cópia de um estêncil do Visio existente. Você deve fornecer o nome do arquivo e o caminho totalmente qualificado do estêncil.  
   
 ### <a name="to-create-a-new-stencil-that-is-copied-from-an-existing-stencil"></a>Para criar um novo estêncil que é copiado de um estêncil existente  
   

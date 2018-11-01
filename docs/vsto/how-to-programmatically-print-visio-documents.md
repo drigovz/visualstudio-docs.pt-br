@@ -16,17 +16,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4caf48d0268e653b7ce6f7a5c8e7efb1e2ec39e6
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 6beed729ed670d5f34c645575795b625e03e9583
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257499"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671216"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>Como: imprimir documentos do Visio de forma programática
   Você pode imprimir um documento do Microsoft Office Visio completo ou apenas uma página específica.  
   
- Para obter detalhes sobre os métodos de impressão, consulte a documentação de referência do VBA para o [Microsoft.Office.Interop.Visio.Document.Print](https://msdn.microsoft.com/library/office/ff767996.aspx) método e [Microsoft.Office.Interop.Visio.Page.Print](https://msdn.microsoft.com/library/office/ff765064.aspx) método .  
+ Para obter detalhes sobre os métodos de impressão, consulte a documentação de referência do VBA para o [Microsoft.Office.Interop.Visio.Document.Print](/office/vba/api/Visio.Document.Print) método e [Microsoft.Office.Interop.Visio.Page.Print](/office/vba/api/Visio.Page.Print) método .  
   
 ## <a name="print-a-visio-document"></a>Imprimir um documento do Visio  
   

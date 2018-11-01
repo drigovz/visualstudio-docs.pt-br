@@ -16,17 +16,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a3a7d2a9855abef0415661798c8a213eb748e22f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 28f882510e2370c0fb31645da5023e865afd667e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257846"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672672"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>Como: abrir documentos do Visio de forma programática
   Há dois métodos para abrir documentos existentes do Microsoft Office Visio: Open e OpenEx. O método OpenEx é idêntico ao método Open, exceto que ele forneça argumentos em que o chamador pode especificar como o documento é aberto.  
   
- Para obter detalhes sobre o modelo de objeto, consulte a documentação de referência do VBA para o [Microsoft.Office.Interop.Visio.Documents.Open](https://msdn.microsoft.com/library/office/ff765240.aspx) método e [Microsoft.Office.Interop.Visio.Documents.OpenEx](https://msdn.microsoft.com/library/office/ff767229.aspx) método.  
+ Para obter detalhes sobre o modelo de objeto, consulte a documentação de referência do VBA para o [Microsoft.Office.Interop.Visio.Documents.Open](/office/vba/api/Visio.Documents.Open) método e [Microsoft.Office.Interop.Visio.Documents.OpenEx](/office/vba/api/Visio.Documents.OpenEx) método.  
   
 ## <a name="open-a-visio-document"></a>Abra um documento do Visio  
   

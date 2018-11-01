@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7217c2b3177d3eb1f591cbb6256b9e40fba23b12
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38291b46f2f9fee83ba9af0ae553cecca5ee35f6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670736"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671697"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Desenvolvimento do Office e SharePoint no Visual Studio
   Você pode estender o Microsoft Office e SharePoint, criando um aplicativo leve ou suplemento que os usuários baixem do [Office Store](https://store.office.com/) ou um catálogo organizacional, ou criando uma solução baseada no .NET Framework que os usuários de instalar em um computador.  
@@ -45,7 +45,7 @@ ms.locfileid: "35670736"
 ##  <a name="Apps"></a> Criar suplementos para Office e SharePoint  
  Office 2013 e SharePoint 2013 apresentam um novo suplemento do modelo que ajuda você a criar, distribuir e monetizar suplementos que estendem o Office e SharePoint.  Esses suplementos podem executar no Office ou SharePoint Online, e os usuários podem interagir com eles de vários dispositivos.  
   
- Saiba como usar a nova [modelo de suplemento do Office](https://msdn.microsoft.com/library/office/jj220082.aspx) para estender a experiência do Office para seus usuários.  
+ Saiba como usar a nova [modelo de suplemento do Office](/office/dev/add-ins/overview/office-add-ins) para estender a experiência do Office para seus usuários.  
   
  Esses suplementos têm pegadas pequeno em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.  Para começar, use as ferramentas de desenvolvedor do Office no Visual Studio ou a ferramenta leve baseada na web com o codinome Napa Office 365 ferramentas de desenvolvimento, que lhe permite criar projetos, escrever código e executar seus suplementos em um navegador.  
   
@@ -64,8 +64,8 @@ ms.locfileid: "35670736"
   
 |Para|Consulte|  
 |--------|---------|  
-|Saiba mais sobre os suplementos do Office e, em seguida, crie um.|[Suplementos do Office](http://msdn.microsoft.com/office/dn448457)|  
-|Compare as diferentes maneiras em que você pode estender o Office e decidir se deve usar um aplicativo ou um suplemento do Office.|[Roteiro para suplementos do Office, VSTO e VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
+|Saiba mais sobre os suplementos do Office e, em seguida, crie um.|[Suplementos do Office](/office/dev/add-ins/publish/publish)|  
+|Compare as diferentes maneiras em que você pode estender o Office e decidir se deve usar um aplicativo ou um suplemento do Office.|[Roteiro para suplementos do Office, VSTO e VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|  
   
 ### <a name="build-a-sharepoint-add-in"></a>Criar um suplemento do SharePoint  
  Para estender o SharePoint para seus usuários, crie um suplemento do SharePoint. Ele é basicamente um aplicativo pequeno, fácil de usar, autônomo que resolve a necessidade dos usuários ou negócios.  
@@ -80,9 +80,9 @@ ms.locfileid: "35670736"
   
 |Para|Consulte|  
 |--------|---------|  
-|Saiba mais sobre os suplementos do SharePoint e crie um.|[Suplementos do SharePoint](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
-|Compare suplementos do SharePoint com soluções tradicionais do SharePoint.|[Suplementos do SharePoint em comparação com soluções do SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Escolha se deseja criar um suplemento do SharePoint ou uma solução do SharePoint.|[Decidir entre o SharePoint Add-ins e soluções do SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|
+|Saiba mais sobre os suplementos do SharePoint e crie um.|[Suplementos do SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)|  
+|Compare suplementos do SharePoint com soluções tradicionais do SharePoint.|[Suplementos do SharePoint em comparação com soluções do SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|  
+|Escolha se deseja criar um suplemento do SharePoint ou uma solução do SharePoint.|[Decidir entre o SharePoint Add-ins e soluções do SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
   
 ##  <a name="Add-ins"></a> Criar um suplemento do VSTO  
  Crie um suplemento de VSTO para Office 2007 ou Office 2010 de destino ou para estender o Office 2013 e Office 2016 além do que é possível com os suplementos do Office. Suplementos do VSTO é executado somente na área de trabalho. Os usuários precisam instalar suplementos do VSTO, portanto, eles são geralmente mais difíceis de implantar e dar suporte.  No entanto, seu suplemento do VSTO pode ser integrado mais estreitamente com o Office. Por exemplo, ele pode adicionar controles à Faixa de Opções do Office e executar tarefas de automação avançadas como mesclar documentos ou modificar gráficos. Você pode aproveitar o .NET Framework e usar o C# e o Visual Basic para interagir com objetos do Office.  
@@ -95,8 +95,8 @@ ms.locfileid: "35670736"
   
 |Para|Ler|  
 |--------|----------|  
-|Compare as diferentes maneiras em que você pode estender o Office e decidir se deve usar um suplemento do VSTO ou um suplemento do Office.|[Roteiro para suplementos do Office, VSTO e VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
-|Crie um suplemento do VSTO.|[Suplementos do VSTO compilar com o Visual Studio](https://msdn.microsoft.com/library/jj620922.aspx)|  
+|Compare as diferentes maneiras em que você pode estender o Office e decidir se deve usar um suplemento do VSTO ou um suplemento do Office.|[Roteiro para suplementos do Office, VSTO e VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|  
+|Crie um suplemento do VSTO.|[Suplementos do VSTO compilar com o Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)|  
   
 ##  <a name="Solutions"></a> Criar uma solução do SharePoint  
  Crie uma solução do SharePoint para SharePoint Foundation 2010 e SharePoint Server 2010 de destino ou para estender o SharePoint 2013 e SharePoint 2016 além do que é possível com um suplemento do SharePoint.  
@@ -107,7 +107,7 @@ ms.locfileid: "35670736"
   
 |Para|Consulte|  
 |--------|---------|  
-|Compare as soluções do SharePoint com os suplementos do SharePoint.|[Suplementos do SharePoint em comparação com soluções do SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
+|Compare as soluções do SharePoint com os suplementos do SharePoint.|[Suplementos do SharePoint em comparação com soluções do SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|  
 |Criar uma solução do SharePoint.|[Criar soluções do SharePoint](../sharepoint/create-sharepoint-solutions.md)|  
   
   

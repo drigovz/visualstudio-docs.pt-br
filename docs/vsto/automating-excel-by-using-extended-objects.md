@@ -24,11 +24,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: d50751b00a1a713a9f8848bdbebaaff1463c45c0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670225"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744906"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatizar o Excel usando objetos estendidos
   Ao desenvolver soluções do Excel no Visual Studio, você pode usar *hospedar itens* e *controle de host*s em suas soluções. Esses são objetos que estendem alguns objetos comumente usados no modelo de objeto do Excel (ou seja, o modelo de objeto que é exposto pelo assembly de interoperabilidade primário para Excel), como o <xref:Microsoft.Office.Interop.Excel.Worksheet> e <xref:Microsoft.Office.Interop.Excel.Range> objetos. Objetos estendidos se comportam como os objetos do Excel se baseiam, mas adicionar recursos adicionais, como novos eventos e recursos de ligação de dados para os objetos.  

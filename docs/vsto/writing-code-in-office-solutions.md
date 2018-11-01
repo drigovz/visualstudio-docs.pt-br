@@ -36,12 +36,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3466a5a448baf378cf18a00c0e987f3cbcc0cb5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e9773c06293f189e572ef84e9b10f45a1ca5d5d8
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669928"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670982"
 ---
 # <a name="write-code-in-office-solutions"></a>Escrever código em soluções do Office
   Há alguns aspectos de escrever código em projetos do Office que são diferentes dos outros tipos de projetos no Visual Studio. Muitas dessas diferenças estão relacionadas à forma como os modelos de objeto do Office são expostos ao código gerenciado. Outras diferenças relacionadas ao design de projetos do Office.  
@@ -62,7 +62,7 @@ ms.locfileid: "35669928"
  Os PIAs do Office não são necessários em computadores de usuários finais para executar soluções do Office que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior. Para obter mais informações, consulte [Design e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md).  
   
 ### <a name="use-types-in-primary-interop-assemblies"></a>Usar tipos em assemblies de interoperabilidade primários  
- Os PIAs do Office contém uma combinação de tipos que expõem o modelo de objeto dos aplicativos do Office e infraestrutura adicional que não se destina a ser usado diretamente em seu código. Para obter uma visão geral dos tipos nos PIAs do Office, consulte [visão geral de classes e interfaces em assemblies de interoperabilidade primários do Office](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5).  
+ Os PIAs do Office contém uma combinação de tipos que expõem o modelo de objeto dos aplicativos do Office e infraestrutura adicional que não se destina a ser usado diretamente em seu código. Para obter uma visão geral dos tipos nos PIAs do Office, consulte [visão geral de classes e interfaces em assemblies de interoperabilidade primários do Office](/previous-versions/office/office-12/ms247299\(v\=office.12\)).  
   
  Como os tipos dos PIAs do Office correspondem aos tipos de modelos de objeto COM base em com, a maneira de usar esses tipos geralmente é diferente de outros tipos gerenciados. Por exemplo, a maneira de você chama métodos com parâmetros opcionais em um assembly de interoperabilidade primário do Office depende a linguagem de programação que você está usando em seu projeto. Para mais informações, consulte os seguintes tópicos:  
   

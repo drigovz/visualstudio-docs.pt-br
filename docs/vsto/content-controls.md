@@ -41,12 +41,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 924f31ac38219453ae96fd573d968b18ce19c913
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940223"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672893"
 ---
 # <a name="content-controls"></a>Controles de conteúdo
   Controles de conteúdo fornecem uma maneira para você aos documentos de design e modelos que têm esses recursos:  
@@ -81,7 +81,7 @@ ms.locfileid: "49940223"
  Há nove tipos diferentes de controles de conteúdo que você pode adicionar aos documentos. A maioria dos controles de conteúdo tem um tipo correspondente <xref:Microsoft.Office.Tools.Word> namespace. Você também pode usar um genérico <xref:Microsoft.Office.Tools.Word.ContentControl>, que pode representar qualquer um dos controles de conteúdo disponíveis. Para um passo a passo que demonstra como usar cada um dos controles de conteúdo disponíveis, consulte [instruções passo a passo: criar um modelo usando os controles de conteúdo](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 ### <a name="build-block-gallery"></a>Criar galeria de blocos  
- Uma galeria de blocos de construção permite que os usuários selecionem de uma lista dos *blocos de construção de documento* para inserir em um documento. Um bloco de construção de documento é uma parte do conteúdo que foi criado para ser usada várias vezes, como um cabeçalho, uma tabela formatada ou uma folha de rosto comuns. Para obter mais informações, consulte o <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> tipo. Para obter mais informações sobre blocos de construção, consulte [quais são as novidades para desenvolvedores no Word 2007](http://msdn.microsoft.com/74aa6688-65b3-4167-997d-131f26ad8f84).  
+ Uma galeria de blocos de construção permite que os usuários selecionem de uma lista dos *blocos de construção de documento* para inserir em um documento. Um bloco de construção de documento é uma parte do conteúdo que foi criado para ser usada várias vezes, como um cabeçalho, uma tabela formatada ou uma folha de rosto comuns. Para obter mais informações, consulte o <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> tipo. Para obter mais informações sobre blocos de construção, consulte [quais são as novidades para desenvolvedores no Word 2007](/previous-versions/office/developer/office-2007/bb266218(v=office.12)).  
   
 ### <a name="check-box"></a>Caixa de seleção  
  Uma caixa de seleção fornece uma interface do usuário que representa um estado binário: marcada ou desmarcada.  
