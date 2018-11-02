@@ -18,22 +18,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c01af7a02dc8d6909b878b22dc3d40d0f3e0dfce
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 9fd3051aae78f6f0440c637137ea5a04f726df8c
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220333"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750819"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvar dados em um banco de dados (várias tabelas)
+
 Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados de um formulário em um aplicativo do Windows, editar e enviá-los atualizados de volta para o banco de dados. Essa explicação passo a passo cria um formulário que exibe dados de duas tabelas relacionadas e mostra como editar registros e salvar alterações no banco de dados. Este exemplo usa as tabelas `Customers` e `Orders` do banco de dados de exemplo Northwind.
 
- Você pode salvar os dados em seu aplicativo de volta no banco de dados chamando o método `Update` de um TableAdapter. Quando você arrasta tabelas do **fontes de dados** janela em um formulário, o código necessário para salvar dados é adicionada automaticamente. Quaisquer tabelas adicionais que são adicionadas a um formulário exigem a adição manual desse código. Essa explicação passo a passo mostra como adicionar código para salvar atualizações de mais de uma tabela.
+Você pode salvar os dados em seu aplicativo de volta no banco de dados chamando o método `Update` de um TableAdapter. Quando você arrasta tabelas do **fontes de dados** janela em um formulário, o código necessário para salvar dados é adicionada automaticamente. Quaisquer tabelas adicionais que são adicionadas a um formulário exigem a adição manual desse código. Essa explicação passo a passo mostra como adicionar código para salvar atualizações de mais de uma tabela.
 
 > [!NOTE]
->  As caixas de diálogo e comandos de menu que você vê podem diferir dos descritos na Ajuda, dependendo de suas configurações ativas ou a edição que você está usando. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> As caixas de diálogo e comandos de menu que você vê podem diferir dos descritos na Ajuda, dependendo de suas configurações ativas ou a edição que você está usando. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
- As tarefas ilustradas neste passo a passo incluem:
+As tarefas ilustradas neste passo a passo incluem:
 
 -   Criando um novo **aplicativo do Windows Forms** projeto.
 
@@ -48,6 +49,7 @@ Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados d
 -   Modificando o código para enviar os dados atualizados no conjunto de dados de volta ao banco de dados.
 
 ## <a name="prerequisites"></a>Pré-requisitos
+
 Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
 1.  Se você não tiver o SQL Server Express LocalDB, instalá-lo a partir de [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou por meio de **instalador do Visual Studio**. No **instalador do Visual Studio**, você pode instalar o SQL Server Express LocalDB como parte do **armazenamento de dados e processamento** carga de trabalho, ou como um componente individual.
@@ -65,9 +67,8 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
        Após alguns instantes, a consulta termina a execução e o banco de dados Northwind é criado.
 
 ## <a name="create-the-windows-forms-application"></a>Criar o aplicativo do Windows Forms
- A primeira etapa é criar uma **aplicativo do Windows Forms**. Atribuir um nome para o projeto é opcional durante esta etapa, mas vamos dar a ele um nome de nós será salvar o projeto mais tarde.
 
-#### <a name="to-create-the-new-windows-forms-application-project"></a>Para criar o novo projeto de aplicativo do Windows forms
+A primeira etapa é criar uma **aplicativo do Windows Forms**. Atribuir um nome para o projeto é opcional durante esta etapa, mas vamos dar a ele um nome de nós será salvar o projeto mais tarde.
 
 1. No Visual Studio, sobre o **arquivo** menu, selecione **New** > **projeto**.
 
@@ -80,9 +81,8 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
      O **UpdateMultipleTablesWalkthrough** projeto é criado e adicionado ao **Gerenciador de soluções**.
 
 ## <a name="create-the-data-source"></a>Criar a fonte de dados
- Esta etapa cria uma fonte de dados do banco de dados Northwind usando o **Data Source Configuration Wizard**. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
-#### <a name="to-create-the-data-source"></a>Para criar a fonte de dados
+Esta etapa cria uma fonte de dados do banco de dados Northwind usando o **Data Source Configuration Wizard**. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1.  Sobre o **dados** menu, selecione **Show Data Sources**.
 
@@ -109,18 +109,18 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
      O **NorthwindDataSet** é adicionado ao seu projeto, e as tabelas aparecem na **fontes de dados** janela.
 
 ## <a name="set-the-controls-to-be-created"></a>Defina os controles a serem criados
- Para este passo a passo, os dados na `Customers` a tabela está em um **detalhes** layout onde os dados são exibidos em controles individuais. Os dados do `Orders` a tabela está em um **grade** layout que é exibido em um <xref:System.Windows.Forms.DataGridView> controle.
 
-#### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Definir o tipo de remoção dos itens na Janela Fontes de Dados
+Para este passo a passo, os dados na `Customers` a tabela está em um **detalhes** layout onde os dados são exibidos em controles individuais. Os dados do `Orders` a tabela está em um **grade** layout que é exibido em um <xref:System.Windows.Forms.DataGridView> controle.
+
+### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Definir o tipo de remoção dos itens na Janela Fontes de Dados
 
 1.  No **fontes de dados** janela, expanda o **clientes** nó.
 
 2.  Sobre o **clientes** nó, selecione **detalhes** na lista de controle para alterar o controle do **clientes** tabela para controles individuais. Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 ## <a name="create-the-data-bound-form"></a>Criar o formulário de associação de dados
- Você pode criar os controles ligados a dados arrastando itens dos **fontes de dados** window para seu formulário.
 
-#### <a name="to-create-data-bound-controls-on-the-form"></a>Para criar controles de associação de dados no formulário
+Você pode criar os controles ligados a dados arrastando itens dos **fontes de dados** window para seu formulário.
 
 1.  Arraste principal **clientes** nó a partir do **fontes de dados** window para **Form1**.
 
@@ -129,17 +129,18 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 2.  Arraste relacionado **pedidos** nó a partir do **fontes de dados** window para **Form1**.
 
     > [!NOTE]
-    >  Relacionado **pedidos** nó está localizado abaixo de **Fax** coluna e é um nó filho do **clientes** nó.
+    > Relacionado **pedidos** nó está localizado abaixo de **Fax** coluna e é um nó filho do **clientes** nó.
 
      Um controle <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para navegação em registros são exibidos no formulário. Uma `OrdersTableAdapter` e <xref:System.Windows.Forms.BindingSource> aparecem na bandeja de componentes.
 
 ## <a name="add-code-to-update-the-database"></a>Adicione código para atualizar o banco de dados
- Você pode atualizar o banco de dados chamando o `Update` métodos do **clientes** e **pedidos** TableAdapters. Por padrão, um manipulador de eventos para o **salve** botão do<xref:System.Windows.Forms.BindingNavigator> é adicionado ao código do formulário para enviar atualizações para o banco de dados. Este procedimento modifica o código para enviar atualizações na ordem correta. Isso elimina a possibilidade de gerar erros de integridade referencial. O código também implementa manipulação de erros com a quebra automática da chamada de atualização em um bloco try-catch. Você pode mudar o código para atender às necessidades do seu aplicativo.
+
+Você pode atualizar o banco de dados chamando o `Update` métodos do **clientes** e **pedidos** TableAdapters. Por padrão, um manipulador de eventos para o **salve** botão do<xref:System.Windows.Forms.BindingNavigator> é adicionado ao código do formulário para enviar atualizações para o banco de dados. Este procedimento modifica o código para enviar atualizações na ordem correta. Isso elimina a possibilidade de gerar erros de integridade referencial. O código também implementa manipulação de erros com a quebra automática da chamada de atualização em um bloco try-catch. Você pode mudar o código para atender às necessidades do seu aplicativo.
 
 > [!NOTE]
->  Para maior clareza, este passo a passo não usa uma transação. No entanto, se você estiver atualizando dois ou mais tabelas relacionadas, inclua toda a lógica de atualização dentro de uma transação. Uma transação é um processo que garante que todas as alterações relacionadas a um banco de dados são bem-sucedidas antes que as alterações sejam confirmadas. Para obter mais informações, consulte [transações e simultaneidade](/dotnet/framework/data/adonet/transactions-and-concurrency).
+> Para maior clareza, este passo a passo não usa uma transação. No entanto, se você estiver atualizando dois ou mais tabelas relacionadas, inclua toda a lógica de atualização dentro de uma transação. Uma transação é um processo que garante que todas as alterações relacionadas a um banco de dados são bem-sucedidas antes que as alterações sejam confirmadas. Para obter mais informações, consulte [transações e simultaneidade](/dotnet/framework/data/adonet/transactions-and-concurrency).
 
-#### <a name="to-add-update-logic-to-the-application"></a>Para adicionar lógica de atualização ao aplicativo
+### <a name="to-add-update-logic-to-the-application"></a>Para adicionar lógica de atualização ao aplicativo
 
 1.  Selecione o **salve** botão o <xref:System.Windows.Forms.BindingNavigator>. Isso abre o Editor de códigos para o `bindingNavigatorSaveItem_Click` manipulador de eventos.
 
@@ -150,16 +151,13 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 ## <a name="test-the-application"></a>Testar o aplicativo
 
-#### <a name="to-test-the-application"></a>Para testar o aplicativo
-
-1.  Selecione **F5**.
+1.  Pressione **F5**.
 
 2.  Faça algumas alterações nos dados de um ou mais registros em cada tabela.
 
 3.  Selecione o **salvar** botão.
 
 4.  Confira os valores no banco de dados para verificar se as alterações foram salvas.
-
 
 ## <a name="see-also"></a>Consulte também
 
