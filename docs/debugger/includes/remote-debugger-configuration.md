@@ -13,35 +13,37 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 252c505260986bd08b5522ba79d1e00a82624241
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d89dbc0b752c2b8c538ec53769c166b6edbd802f
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942953"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50915095"
 ---
-Você deve ter permissões administrativas no computador remoto.  
+1. No computador remoto, localizar e iniciar o **depurador remoto** da **iniciar** menu. 
+   
+   Se você não tiver permissões administrativas no computador remoto, clique com botão direito do **depurador remoto** aplicativo e selecione **executar como administrador**. Caso contrário, apenas iniciá-lo normalmente.
+
+   Pode haver diferentes versões do *msvsmon.exe* na *x64*, *x32*, ou outras pastas. Certifique-se de iniciar a versão que você precise depurar seu aplicativo. 
+   
+1. Na primeira vez que você inicia o depurador remoto (ou antes você tiver configurado), o **configuração de depuração remota** caixa de diálogo é exibida.  
   
-1. Localize o aplicativo depurador remoto. (Encontrar msvsmon.exe no local em que ele foi instalado, ou abra o menu Iniciar e procure **depurador remoto**.)
+    ![Configuração do depurador remoto](../media/remotedebuggerconfwizardpage.png "configuração do depurador remoto")  
   
-    Se você estiver executando o depurador remoto em um servidor remoto, você pode o aplicativo depurador remoto com o botão direito e escolha **executar como administrador**. Se você não estiver executando-lo em um servidor remoto, apenas iniciá-lo normalmente.
+1. Se a API de serviços de Web do Windows não estiver instalada, o que ocorre apenas no Windows Server 2008 R2, selecione a **instalar** botão.  
   
-2. Ao iniciar as ferramentas remotas pela primeira vez (ou antes que você tenha configurado para isso), o **configuração de depuração remota** caixa de diálogo é exibida.  
+1. Selecione pelo menos um tipo de rede que deseja usar as ferramentas remotas no. Se os computadores estiverem conectados por meio de um domínio, você deve escolher o primeiro item. Se os computadores estiverem conectados por meio de um grupo de trabalho ou um grupo doméstico, escolha o item de segundo ou terceiro conforme apropriado.  
   
-    ![RemoteDebuggerConfWizardPage](../media/remotedebuggerconfwizardpage.png "RemoteDebuggerConfWizardPage")  
+1. Selecione **configurar a depuração remota** para configurar o firewall e iniciar o depurador remoto.  
   
-3. Se a API de serviço do Windows não está instalada (o que ocorre apenas no Windows Server 2008 R2), escolha o **instalar** botão.  
+1. Quando a configuração for concluída, o **depurador remoto** janela é exibida.
   
-4. Selecione os tipos de rede que você deseja usar as ferramentas remotas no. Pelo menos um tipo de rede deve ser selecionado. Se os computadores estiverem conectados por meio de um domínio, você deve escolher o primeiro item. Se os computadores estiverem conectados por meio de um grupo de trabalho ou um grupo doméstico, você precisa escolher o item de segundo ou terceiro conforme apropriado.  
+    ![Janela de depurador remoto](../media/remotedebuggerwindow.png "janela do depurador remoto")
   
-5. Escolher **configurar a depuração remota** para configurar o firewall e iniciar a ferramenta.  
+    O depurador remoto agora está aguardando uma conexão. Use o nome do servidor e porta número mostrado para definir a configuração de conexão remota no Visual Studio.  
   
-6. Quando a configuração estiver concluída, a janela do depurador remoto é exibida.
+Para interromper o depurador remoto, selecione **arquivo** > **Exit**. Você pode reiniciá-lo partir o **iniciar** menu, ou da linha de comando:  
   
-    ![RemoteDebuggerWindow](../media/remotedebuggerwindow.png "RemoteDebuggerWindow")
-  
-    O depurador remoto agora está aguardando uma conexão. Anote o nome do servidor e o número da porta que é exibido, como isso deve corresponder a configuração que você usa mais tarde no Visual Studio.  
-  
-   Quando você terminar a depuração e a necessidade de parar o depurador remoto, clique em **arquivo > Sair** na janela. Você pode reiniciá-lo partir o **iniciar** menu ou da linha de comando:  
-  
-   **\<Diretório de instalação do depurador remoto >\\< x86, x64, ARM, ARM64 ou Appx > \msvsmon.exe**.  
+```cmd
+<Remote debugger installation directory>\msvsmon.exe
+```
