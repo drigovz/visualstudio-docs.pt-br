@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f6fd04b715e573698719e7a2dc512d0882d10b8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4791566d3c37517c3c93e62e371bf4cbc9fc6604
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894346"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966551"
 ---
 # <a name="model-user-requirements"></a>Requisitos de usuário do modelo
 
-Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usuários ao desenhar diagramas sobre suas atividades e a parte seu sistema é reproduzido ajudá-los a atingir suas metas. Um modelo de requisitos é um conjunto desses diagramas, cada um deles enfoca um aspecto das necessidades dos usuários. Para uma demonstração em vídeo, consulte: [modelagem do domínio de negócios](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).
+Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usuários ao desenhar diagramas sobre suas atividades e a parte seu sistema é reproduzido ajudá-los a atingir suas metas. Um modelo de requisitos é um conjunto desses diagramas, cada um deles enfoca um aspecto das necessidades dos usuários. Para uma demonstração em vídeo, consulte: [modelagem do domínio de negócios](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain).
 
 Para ver quais versões do Visual Studio dão suporte a cada tipo de modelo, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ea23c6091910a83ddec41194aa43ae93c9b9eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee3c602dfc89aeafbfb82ae50771abc7ce66937e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820768"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966932"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Novidades no design no Visual Studio
 
@@ -40,7 +40,7 @@ O **arquitetura** menu agora contém um comando para criar diretamente um diagra
 
 Agora você ver o impacto das alterações imediatamente nos resultados da análise para o código na solução atual de cada vez que você salva o diagrama. Você não precisa mais esperar pela conclusão do comando "Validar dependências".
 
-Para obter mais detalhes, consulte [esta postagem de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+Para obter mais detalhes, consulte [esta postagem de blog](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Designers UML foram removidos
 
@@ -61,7 +61,7 @@ Entretanto, há suporte para visualizar a arquitetura de código .NET e C++ est�
 
 Se você for um usuário significativas dos designers UML, você pode continuar a usar o Visual Studio 2015 ou versões anteriores enquanto você decidir sobre uma ferramenta alternativa para suas necessidades UML.
 
-Para obter mais detalhes, consulte [esta postagem de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+Para obter mais detalhes, consulte [esta postagem de blog](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

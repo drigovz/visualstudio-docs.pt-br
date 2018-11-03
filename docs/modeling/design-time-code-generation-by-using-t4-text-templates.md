@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 911c7dd0ff70029a3ca83ded9008472269dceaed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a41b86068f9f7aedbe10635bf859818c0b468789
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829463"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967448"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Geração de código no tempo de design usando modelos de texto T4
 Modelos de texto T4 em tempo de design permitem que você gerar o código do programa e outros arquivos no projeto do Visual Studio. Normalmente, você escreve os modelos para que eles variem o código que geram de acordo com os dados de um *modelo*. Um modelo é um arquivo ou banco de dados que contém informações importantes sobre os requisitos do aplicativo.
@@ -153,7 +153,7 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
 
     ```csharp
 
-              <#@ template debug="false" hostspecific="false" language="C#" #>
+    <#@ template debug="false" hostspecific="false" language="C#" #>
     <#@ output extension=".cs" #>
     <# var properties = new string [] {"P1", "P2", "P3"}; #>
     // This is generated code:
@@ -225,7 +225,7 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
 
 ```csharp
 
-      <# var properties = File.ReadLines("C:\\propertyList.txt");#>
+<# var properties = File.ReadLines("C:\\propertyList.txt");#>
 ...
 <# foreach (string propertyName in properties) { #>
 ...
@@ -270,12 +270,13 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
  O tipo de `this.Host` (no VB, `Me.Host`) é `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.
 
 ### <a name="getting-data-from-visual-studio"></a>Obtendo dados do Visual Studio
- Para usar os serviços fornecidos no Visual Studio, defina as `hostSpecific` atributo e carregar o `EnvDTE` assembly. Você pode usar ServiceProvider.GetCOMService() para acessar o DTE e outros serviços. Por exemplo:
+ Para usar os serviços fornecidos no Visual Studio, defina as `hostSpecific` atributo e carregar o `EnvDTE` assembly. Importação `Microsoft.VisualStudio.TextTemplating`, que contém o `GetCOMService()` método de extensão.  Você pode usar ServiceProvider.GetCOMService() para acessar o DTE e outros serviços. Por exemplo:
 
-```scr
+```src
 <#@ template hostspecific="true" language="C#" #>
 <#@ output extension=".txt" #>
 <#@ assembly name="EnvDTE" #>
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating" #>
 <#
   IServiceProvider serviceProvider = (IServiceProvider)this.Host;
   EnvDTE.DTE dte = (EnvDTE.DTE) serviceProvider.GetCOMService(typeof(EnvDTE.DTE));
@@ -295,7 +296,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
  Se você tiver instalado o SDK do Visual Studio de modelagem, você pode ter todos os modelos transformados automaticamente sempre que você executar uma compilação. Para fazer isso, edite o arquivo do projeto (.csproj ou .vbproj) em um editor de texto e adicione as seguintes linhas perto do final do arquivo, depois de qualquer outra instrução `<import>`:
 
 > [!NOTE]
-> No Visual Studio 2017, o SDK de transformação do modelo de texto e o SDK do Visual Studio de modelagem são instalados automaticamente quando você instala os recursos específicos do Visual Studio. Para obter mais detalhes, consulte [esta postagem de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> No Visual Studio 2017, o SDK de transformação do modelo de texto e o SDK do Visual Studio de modelagem são instalados automaticamente quando você instala os recursos específicos do Visual Studio. Para obter mais detalhes, consulte [esta postagem de blog](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />

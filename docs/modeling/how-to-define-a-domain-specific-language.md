@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3e80e90928bd5ff81e7364e23a1d5035d2bfbe3a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed1259ef04f59d37752d89f922623b963bcbbc22
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860637"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967526"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Como definir uma linguagem específica do domínio
 Para definir uma linguagem específica de domínio (DSL), você pode criar uma solução do Visual Studio de um modelo. A parte fundamental da solução é o diagrama de Definição de DSL, que é armazenado em DslDefinition.dsl. A Definição de DSL define as classes e formas da DSL. Depois de modificar e adicionar esses elementos, você pode adicionar o código do programa para personalizar a DSL com mais detalhes.
@@ -213,7 +213,7 @@ Se você estiver familiarizado com as DSLs, recomendamos que você trabalhe por 
 
 ##### <a name="to-test-the-new-domain-classes"></a>Para testar as novas classes de domínio
 
-1.  **Clique em transformar todos os modelos** na barra de ferramentas do Gerenciador de soluções, para gerar o código do designer de DSL. Você pode automatizar esta etapa. Para obter mais informações, consulte [como automatizar a transformar todos os modelos](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
+1.  **Clique em transformar todos os modelos** na barra de ferramentas do Gerenciador de soluções, para gerar o código do designer de DSL. Você pode automatizar esta etapa. Para obter mais informações, consulte [como automatizar a transformar todos os modelos](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 2.  **Compile e execute a DSL.** Pressione F5 ou CTRL + F5 para executar uma nova instância do Visual Studio em modo experimental. Na instância experimental do Visual Studio, abra ou crie um arquivo que tem a extensão de nome de arquivo de sua DSL.
 

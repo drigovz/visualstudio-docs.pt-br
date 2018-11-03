@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6942511e325b77aaa3d646b6e84cd833b8b55ab2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 538ebb2121c488fa56f693a424f91b8af19a0c3e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871739"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966837"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Visão geral das Ferramentas de Linguagem Específica do Domínio
 Ferramentas de linguagem específica do domínio (ferramentas DSL), que são hospedados no Visual Studio, permitem que você criar uma linguagem específica de domínio e, em seguida, gerar tudo o que os usuários devem ter para criar modelos que são baseados na linguagem.
@@ -79,4 +79,4 @@ Ferramentas de linguagem específica do domínio (ferramentas DSL), que são hos
 ## <a name="see-also"></a>Consulte também
 
 - [A instância experimental](../extensibility/the-experimental-instance.md)
-- [Glossário de ferramentas de linguagem específica do domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário de ferramentas de linguagem específica do domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
