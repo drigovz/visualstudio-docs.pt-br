@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e1101a3e21fa75a180ec2421cdce37aa40bc9656
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 74172b6e7f03d7e3baef329f053fc4a83ee6ae28
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861274"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967383"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Noções básicas sobre modelos, classes e relações
 Uma linguagem específica de domínio (DSL) é definida por seu arquivo de definição de DSL, junto com qualquer código de programa personalizado você pode escrever. A maioria do código do programa na solução DSL é gerada a partir desse arquivo.
@@ -152,4 +152,4 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
 
 ## <a name="see-also"></a>Consulte também
 
-- [Glossário de ferramentas de linguagem específica do domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário de ferramentas de linguagem específica do domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

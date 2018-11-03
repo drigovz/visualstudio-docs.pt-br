@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c840ed268e8e5aaa70dcc83eb9a0eeff3a2eb33f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b0acab24dbb7ff1313e62e91b17bf87190dbb99
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815566"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967435"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizando ferramentas e a caixa de ferramentas
 
@@ -240,4 +240,4 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 - [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md)
 - [Como adicionar um manipulador de evento do tipo "arrastar e soltar"](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Navegando por um modelo no código do programa e atualizando-o](../modeling/navigating-and-updating-a-model-in-program-code.md)
-- [Exemplo de diagramas de circuito DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Exemplo de diagramas de circuito DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

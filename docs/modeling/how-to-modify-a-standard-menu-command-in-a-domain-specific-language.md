@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f174e4dde2c96383e9f8bdf61ff63558bb1d7bb3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 6aa827781cb8ea78aa5df79f8cb839a6f3548e11
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566775"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967045"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Como modificar um comando de menu padrão em uma linguagem específica do domínio
 
@@ -152,5 +152,4 @@ Para obter mais informações sobre como navegar entre elementos e sobre como cr
 - [Como os VSPackages adicionam elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Referência do esquema XML do VSCT](../extensibility/vsct-xml-schema-reference.md)
-- [VMSDK – exemplo de diagramas de circuito. Personalização abrangente de DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-- [Código de amostra: diagramas de circuito](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [VMSDK – exemplo de diagramas de circuito. Personalização abrangente de DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

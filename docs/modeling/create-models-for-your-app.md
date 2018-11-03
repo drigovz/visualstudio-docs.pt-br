@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e508dc838fd7bf8ff3dab493aa2d5d52c747d180
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf35f0d09178dd0516794ab79e8ac92239e42cd6
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849427"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966538"
 ---
 # <a name="create-models-for-your-app"></a>Criar modelos para o aplicativo
 
@@ -52,10 +52,10 @@ Para visualizar a arquitetura de um sistema ou o código existente, crie diagram
 |[Requisitos de usuário do modelo](../modeling/model-user-requirements.md)|Use modelos para esclarecer e comunicar as necessidades de usuários.|
 |[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|Use modelos para descrever a estrutura geral e o comportamento do seu sistema e certifique-se de que ele atenda às necessidades dos usuários.|
 |[Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)|Certifique-se de que seu software permaneça consistente com suas necessidades de usuários e a arquitetura geral do seu sistema.|
-|[Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usar modelos no desenvolvimento Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Use modelos para ajudá-lo a entender e alterar o seu sistema durante seu desenvolvimento.|
+|[Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usar modelos no desenvolvimento Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Use modelos para ajudá-lo a entender e alterar o seu sistema durante seu desenvolvimento.|
 |[Estruturar a solução de modelagem](../modeling/structure-your-modeling-solution.md)|Organize modelos em um projeto grande ou médio.|
 
 ## <a name="resources"></a>Recursos
 
 - [Visualização do Visual Studio & Fórum das ferramentas de modelagem](http://go.microsoft.com/fwlink/?LinkId=184720)
-- [Fórum de extensibilidade do Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsx)
+- [Fórum de extensibilidade do Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

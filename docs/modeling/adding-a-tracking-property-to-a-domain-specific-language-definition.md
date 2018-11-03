@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 473cc26a9d3e7b7bc5ec97d1608706aea2ca3009
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0417507323a627753bc62e50b424c37b547d4dad
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898714"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967474"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Adicionar uma propriedade de controle a uma definição de Linguagem Específica de Domínio
 
@@ -28,7 +28,7 @@ Um *acompanhamento domínio* é uma propriedade que pode ser atualizada pelo usu
 
 Por exemplo, nas ferramentas de linguagem específica do domínio (ferramentas DSL), o nome de exibição, a propriedade de uma classe de domínio tem um valor padrão que é calculado usando o nome da classe de domínio, mas um usuário pode alterar o valor em tempo de design ou redefini-lo para o valor calculado.
 
-Este passo a passo, você criará uma linguagem específica de domínio (DSL) que tem uma propriedade que tem um valor padrão com base na propriedade de Namespace padrão do modelo de controle de Namespace. Para obter mais informações sobre propriedades de acompanhamento, consulte [definindo propriedades de controle](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
+Este passo a passo, você criará uma linguagem específica de domínio (DSL) que tem uma propriedade que tem um valor padrão com base na propriedade de Namespace padrão do modelo de controle de Namespace. Para obter mais informações sobre propriedades de acompanhamento, consulte [definindo propriedades de controle](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
 
 - O suporte de ferramentas DSL descritores de propriedade de controle. No entanto, o designer DSL não pode ser usado para adicionar uma propriedade de acompanhamento para um idioma. Portanto, você deve adicionar código personalizado para definir e implementar a propriedade de controle.
 

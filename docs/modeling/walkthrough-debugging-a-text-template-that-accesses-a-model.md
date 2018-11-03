@@ -9,18 +9,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2b330dfc360a4986f5e255fc6369b819eabd4ebf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2c58579cce95c3117aa7653d62733f4e297bcc4
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836431"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966460"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Instruções passo a passo: depurando um modelo (template) de texto que acessa um modelo
 Quando você modificar ou adicionar modelos de texto em uma solução de linguagem específica de domínio, você pode receber erros quando o mecanismo transforma o modelo de código-fonte ou quando ele compila o código gerado. A instrução a seguir demonstra algumas das coisas que você pode fazer para depurar um modelo de texto.
 
 > [!NOTE]
->  Para obter mais informações sobre o texto modelos em geral, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md). Para obter mais informações sobre a depuração de modelos de texto, consulte [instruções passo a passo: depurando um modelo de texto](http://msdn.microsoft.com/Library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).
+>  Para obter mais informações sobre o texto modelos em geral, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md). Para obter mais informações sobre a depuração de modelos de texto, consulte [instruções passo a passo: depurando um modelo de texto](debugging-a-t4-text-template.md).
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Criando uma solução de linguagem específica do domínio
  Neste procedimento, você deve criar uma solução de linguagem específica de domínio que tem as seguintes características:

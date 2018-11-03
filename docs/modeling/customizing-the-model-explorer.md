@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ba5c208e6354e0588f939074ac73a49c5b24b049
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32ee70edb27ff68d7e2ee4c83a600a8725e6c08e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929966"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966645"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizando o Gerenciador de Modelos
 Você pode alterar a aparência e comportamento do explorer para o seu designer de linguagem específica do domínio da seguinte maneira:
@@ -115,4 +115,4 @@ Você pode alterar a aparência e comportamento do explorer para o seu designer 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Glossário de ferramentas de linguagem específica do domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário de ferramentas de linguagem específica do domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

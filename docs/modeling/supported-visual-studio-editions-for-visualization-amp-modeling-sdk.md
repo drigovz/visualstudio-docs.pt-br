@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 16a00dd5c0769cb49f5281570ba11433afa56dfe
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3dce04e4460222bcd0fcf2cebd747d9dd95f14d4
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858854"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966746"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Suporte para edições do Visual Studio para visualização &amp; SDK de modelagem
 Seguem listas das edições do Visual Studio que têm suporte com [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] nos ambientes de criação e implantação. Para obter mais informações sobre essas edições, consulte o Microsoft Visual Studio [Central de desenvolvedores](http://go.microsoft.com/fwlink/?LinkId=75628).
@@ -48,4 +48,4 @@ Seguem listas das edições do Visual Studio que têm suporte com [!INCLUDE[dsl]
 
 ## <a name="see-also"></a>Consulte também
 
-- [Glossário de ferramentas de linguagem específica do domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário de ferramentas de linguagem específica do domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

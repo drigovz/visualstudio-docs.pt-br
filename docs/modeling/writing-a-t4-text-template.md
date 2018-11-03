@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: afee98dfd4d3192bb964c09ba4813c4469af95ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d697f1fed2a7b17862ff4c6f72488674859f754
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839902"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967292"
 ---
 # <a name="writing-a-t4-text-template"></a>Gravando um modelo de texto T4
 Um modelo de texto contém o texto que será gerado a partir dele. Por exemplo, um modelo que cria uma página da web conterá "\<html >..." e todas as outras partes padrão de uma página HTML. Inserido no modelo são *blocos de controle*, que são fragmentos de código do programa. Os blocos de controle fornecem valores variáveis​e permitem que partes do texto sejam condicionadas e repetidas.
@@ -257,7 +257,7 @@ Content of MyFile.txt is:
 <#= myFile #>
 ```
 
-Você também pode obter outros serviços fornecidos pelo host. Para obter mais informações, consulte [acessando o Visual Studio ou outros Hosts de um modelo](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
+Você também pode obter outros serviços fornecidos pelo host. Para obter mais informações, consulte [acessando o Visual Studio ou outros Hosts de um modelo](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\)).
 
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Modelos de texto em tempo de design executados em um AppDomain separado
 

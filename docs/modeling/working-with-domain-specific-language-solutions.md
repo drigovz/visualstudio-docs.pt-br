@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e1d485e647f6bb32ea0685ee6098ff8bec19b2a2
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e9f4c77f06e1a899cd6490479802ef300bea4256
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858597"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966447"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Trabalhando com soluções de linguagem específica do domínio
 Uma linguagem específica de domínio (DSL) é criada usando uma solução do Visual Studio. Esta seção é sobre como configurar e personalizar a solução.
@@ -38,4 +38,4 @@ Uma linguagem específica de domínio (DSL) é criada usando uma solução do Vi
 
  [Como: estender o Designer de linguagem específica do domínio](../modeling/how-to-extend-the-domain-specific-language-designer.md) você pode personalizar o Designer de DSL com comandos de menu.
 
- [Como automatizar a transformar todos os modelos](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a) para evitar clicando em transformar todos os modelos, pode ser uma parte automática da compilação.
+ [Como automatizar a transformar todos os modelos](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)) para evitar clicando em transformar todos os modelos, pode ser uma parte automática da compilação.
