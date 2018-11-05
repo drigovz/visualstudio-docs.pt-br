@@ -5,7 +5,6 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
 - VS.ToolsOptionsPages.Environment.Fonts_And_Colors
 - VS.Environment.Fonts And Colors
@@ -28,12 +27,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d25ff0f0439d778d871cb2762db83e9261deaf94
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 751ae59a5a41d22728dd31f71491ec0d9a93ea19
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954223"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220255"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
 A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). É possível acessar essa caixa de diálogo clicando em **Ferramentas / Opções** e, em seguida, selecionando **Ambiente / Fontes e Cores**. Se essa página não aparecer na lista, selecione **Mostrar todas as configurações** na caixa de diálogo **Opções**.
@@ -115,8 +114,8 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
 |**Ponto de Interrupção – Mapeado (Aviso)**|Especifica a cor de realce para instruções ou linhas que contêm pontos de interrupção mapeados em estado de aviso. Aplicável para a depuração de ASP ou ASP.NET somente se pontos de interrupção no nível da instrução estiverem ativos ou se a opção **Realçar a linha de origem inteira para pontos de interrupção e a declaração atual** for selecionada em [Geral, Depuração, caixa de diálogo Opções](../../debugger/general-debugging-options-dialog-box.md).|
 |**Palavras-chave de usuário do C/C++**|Uma constante dentro de um arquivo de código específico definido por meio da diretiva `#define`.|
 |**Retorno de Chamada**|Especifica a cor de realce para instruções ou linhas de origem que indicam pontos de retorno de chamada quando o contexto é alternado para um registro de ativação não superior durante a depuração.|
-|**Campo dependente de trecho de código**|Um campo que será atualizado quando o campo editável atual for modificado.|
-|**Campo de Trecho de Código**|Campo editável quando um trecho de código está ativo.|
+|**Campo dependente de snippet de código**|Um campo que será atualizado quando o campo editável atual for modificado.|
+|**Campo de Snippet de Código**|Campo editável quando um snippet de código está ativo.|
 |**Texto Recolhível**|Um bloco de texto ou código que pode ser colocado e removido da exibição no Editor de Código.|
 |**Comentário**|Comentários sobre o código.|
 |**Erro do Compilador**|Rabiscos azuis no editor que indicam um erro do compilador.|
@@ -143,7 +142,7 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
 |**Palavra-chave**|Palavras-chave da linguagem específica que são reservadas. Por exemplo: classe e namespace.|
 |**Endereço de Memória**|A cor do texto usado para exibir a coluna de endereço dentro da janela **Memória**.|
 |**Memória Alterada**|A cor do texto usado para exibir dados alterados dentro da janela **Memória**.|
-|**Dados da Memória**|A cor do texto usado para exibir dados dentro da janela **Memória**.|
+|**Dados da Memória**|A cor do texto usada para exibir dados dentro da janela **Memória**.|
 |**Memória Ilegível**|A cor do texto usado para exibir áreas de memória ilegível dentro da janela **Memória**.|
 |**Número**|Um número no código que representa um valor numérico real.|
 |**Operador**|Operadores, como +, - e !=.|

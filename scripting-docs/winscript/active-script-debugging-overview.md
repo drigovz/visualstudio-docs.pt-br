@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 447a8faf6e62448e7e8ce9ee8d7d8097fba2dd7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919358"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220216"
 ---
 # <a name="active-script-debugging-overview"></a>Visão geral de depuração de script ativo
 As interfaces de depuração de script ativo permitem a depuração com neutralidade de idioma e de host e dão suporte a uma ampla variedade de ambientes de desenvolvimento.  
@@ -33,31 +33,30 @@ Figura 1
   
  Nas subseções a seguir, cada componente principal na depuração ativa e as respectivas interfaces associadas são discutidos. No entanto, antes de continuar, vários conceitos principais de depuração ativa devem ser definidos:  
   
- aplicativo host  
+ **aplicativo host**  
  O aplicativo que hospeda os mecanismos de script e fornece um conjunto de objetos que podem ser escritos em script (ou "modelo de objeto").  
   
- mecanismo de linguagem  
+ **mecanismo de linguagem**  
  Um componente que fornece abstrações de análise, execução e depuração para uma linguagem específica.  
   
- IDE de depurador  
+ **IDE do depurador**  
  O aplicativo que fornece depuração da interface do usuário por meio da comunicação com o aplicativo host e os mecanismos de linguagem.  
   
- gerenciador de depuração do computador  
- Um componente que mantém um registro de processos de aplicativo depuráveis.  
+ **gerenciador de depuração do computador** Um componente que mantém um registro dos processos de aplicativos depuráveis.  
   
- gerenciador de depuração do processo  
+ **gerenciador de depuração do processo**  
  Um componente que mantém a árvore de documentos depuráveis para um determinado aplicativo, controla os threads em execução e assim por diante.  
   
- contexto de documento  
+ **contexto de documento**  
  Um contexto de documento é uma abstração que representa um intervalo específico no código-fonte de um documento de host.  
   
- contexto de código  
+ **contexto de código**  
  Um contexto de código representa um local específico no código em execução de um mecanismo de linguagem (um "ponteiro de instrução virtual".)  
   
- contexto de expressão  
+ **contexto de expressão**  
  Um contexto específico (por exemplo, um registro de ativação) no qual as expressões podem ser avaliadas por um mecanismo de linguagem.  
   
- navegação de objeto  
+ **navegação de objeto**  
  Uma representação estruturada independente de linguagem do nome, tipo, valor e subobjetos de um determinado objeto, adequados para a implementação de uma interface do usuário de "janela de inspeção".  
   
  Abaixo está uma visão geral de cada um dos principais componentes de depuração ativa e das interfaces associadas correspondentes, seguida dos detalhes dessas interfaces.  

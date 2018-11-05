@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9186726a54099b0c75a468a99d760abd22b7f3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bef854fd04ce8ac2ddf6fe834b3bede0f371eefe
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945540"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050294"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expressões regulares no Visual Studio
 
@@ -49,7 +49,8 @@ Estes são alguns exemplos:
 |Encontrar a correspondência de zero ou mais ocorrências da expressão anterior (encontrar a correspondência do mínimo de caracteres possíveis)|*?|`e.*?e` corresponde a “ee” em “feeder”, mas não a “eede”.|
 |Encontrar a correspondência de uma ou mais ocorrências da expressão anterior (encontrar a correspondência do mínimo de caracteres possíveis)|+?|`e.+?e` corresponde a “ente” e “erprise” em “enterprise”, mas não à palavra inteira “enterprise”.|
 |Ancorar a cadeia de caracteres de correspondência ao início de uma linha ou uma cadeia de caracteres|^|`^car` corresponde à palavra “car” somente quando ela aparece no início de uma linha.|
-|Ancorar a cadeia de caracteres de correspondência ao final de uma linha|\r?$|`End\r?$` corresponde a “end” somente quando aparece no final de uma linha.|
+|Ancorar a cadeia de caracteres de correspondência ao final de uma linha|\r?$|`end\r?$` corresponde a “end” somente quando aparece no final de uma linha.|
+|Ancorar a cadeia de caracteres de correspondência ao final do arquivo|$|`end$` corresponde a "end" somente quando aparece no final do arquivo.|
 |Encontrar a correspondência de um único caractere em um conjunto|[abc]|`b[abc]` corresponde a “ba”, “bb” e “bc”.|
 |Encontrar a correspondência de um caractere em um intervalo de caracteres|[a-f]|`be[n-t]` corresponde a “bet” em “between”, “ben” em “beneath” e “bes” em “beside”, mas não a “below”.|
 |Capturar e numerar implicitamente a expressão contida entre parênteses|()|`([a-z])X\1` corresponde a “aXa” e “bXb”, mas não a “aXb”. “\1” se refere ao primeiro grupo de expressão “[a-z]”.|
@@ -58,8 +59,8 @@ Estes são alguns exemplos:
 |Encontrar a correspondência da expressão antes ou depois do símbolo.|&#124;|`(sponge\|mud) bath` corresponde a “sponge bath” e a “mud bath”.|
 |Escapa o caractere após a barra invertida| \\ |`\^` corresponde ao caractere ^.|
 |Especificar o número de ocorrências do caractere ou do grupo anterior|{x}, em que x é o número de ocorrências|`x(ab){2}x` corresponde a “xababx”, e `x(ab){2,3}x` corresponde a “xababx” e “xabababx”, mas não a “xababababx”.|
-|Encontrar a correspondência do texto em uma classe de caracteres Unicode, em que “X” é o número Unicode. Para obter mais informações sobre classes de caracteres Unicode, consulte<br /><br /> [Propriedades de caracteres Unicode Standard 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}|`\p{Lu}` corresponde a “T” e “D” em “Thomas Doe”.|
-|Encontrar a correspondência de um limite de palavra|`\b` (Fora de uma classe de caracteres, \b especifica um limite de palavra, e dentro de uma classe de caracteres, especifica um backspace).|`\bin` corresponde a “in” em “inside”, mas não em “pintor”.|
+|Corresponder ao texto em uma classe de caractere Unicode. Para obter mais informações sobre classes de caracteres Unicode, consulte<br /><br /> [Propriedades de caracteres Unicode Standard 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, em que "X" é o número Unicode.|`\p{Lu}` corresponde a “T” e “D” em “Thomas Doe”.|
+|Encontrar a correspondência de um limite de palavra|\b (fora de uma classe de caractere, `\b` especifica um limite de palavra e, dentro de uma classe de caractere, `\b` especifica um backspace.)|`\bin` corresponde a “in” em “inside”, mas não em “pintor”.|
 |Encontrar a correspondência de uma quebra de linha (isto é, um retorno de carro seguido por uma nova linha).|\r?\n|`End\r?\nBegin` corresponde a “End” e “Begin” somente quando “End” é a última cadeia de caracteres em uma linha e “Begin” é a primeira cadeia de caracteres na próxima linha.|
 |Encontrar a correspondência de um caractere alfanumérico|\w|`a\wd` corresponde a “add” e “a1d”, mas não a “a d”.|
 |Encontrar a correspondência de um caractere de espaço em branco.|(?([^\r\n])\s)|`Public\sInterface` corresponde à frase “Public Interface”.|

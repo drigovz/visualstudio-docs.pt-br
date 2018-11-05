@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e139fe1858772ed0505f774ce4c36e00bc059e0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 57991a7cac2d45cf618642ccd19ead1d94ce5978
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746120"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244470"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Adicionar suporte para outras linguagens ao editor do Visual Studio
 
@@ -31,7 +31,7 @@ Saiba mais sobre como o editor do Visual Studio dá suporte à leitura e à nave
 
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Colorização de sintaxe, preenchimento de declaração e suporte Navegar até
 
-Os recursos no editor do Visual Studio como colorização de sintaxe, preenchimento de declaração e Navegar até podem ajudá-lo a ler, criar e editar seu código mais facilmente. A captura de tela a seguir mostra um exemplo de edição de um script Perl no Visual Studio. A sintaxe é automaticamente colorizada. Por exemplo, os comentários no código são coloridos em verde, o código é em preto, os caminhos são em vermelho e as instruções são em azul. O editor do Visual Studio aplica automaticamente a colorização de sintaxe a qualquer linguagem que ele dá suporte. Além disso, quando você começar a inserir uma palavra-chave ou objeto de linguagem conhecido, o preenchimento de declaração exibe uma lista de possíveis declarações e objetos. O preenchimento de declaração pode ajudá-lo a criar código de maneira mais rápida e fácil.
+Os recursos no editor do Visual Studio, como colorização de sintaxe, preenchimento de declaração (também conhecido como IntelliSense) e _Navegar Para_, podem ajudá-lo a escrever, ler e editar o código com mais facilidade. A captura de tela a seguir mostra um exemplo de edição de um script Perl no Visual Studio. A sintaxe é automaticamente colorizada. Por exemplo, os comentários no código são coloridos em verde, o código é em preto, os caminhos são em vermelho e as instruções são em azul. O editor do Visual Studio aplica automaticamente a colorização de sintaxe a qualquer linguagem que ele dá suporte. Além disso, quando você começar a inserir uma palavra-chave ou objeto de linguagem conhecido, o preenchimento de declaração exibe uma lista de possíveis declarações e objetos. O preenchimento de declaração pode ajudá-lo a escrever o código com mais rapidez e facilidade.
 
 ![Colorização de sintaxe no script Perl](../ide/media/vside_perledit.png)
 
@@ -68,7 +68,7 @@ Todos esses tipos de arquivo terão os recursos descritos anteriormente, mesmo s
 
 ## <a name="add-support-for-non-supported-languages"></a>Adicionar suporte para linguagens sem suporte
 
-A Atualização 1 do Visual Studio 2015 e versões posteriores oferecem suporte a linguagens no editor usando [Gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Se a sua linguagem de programação favorita não tiver suporte no editor do Visual Studio, em primeiro lugar, pesquise na Web – um pacote TextMate para a linguagem já pode existir. No entanto, se você não encontrar um, poderá adicionar suporte a ela sozinho na Atualização 1 do Visual Studio 2015 ou posterior, criando um modelo de pacote TextMate para trechos e gramáticas de linguagem.
+A Atualização 1 do Visual Studio 2015 e versões posteriores oferecem suporte a linguagens no editor usando [Gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Se a sua linguagem de programação favorita não tiver suporte no editor do Visual Studio, em primeiro lugar, pesquise na Web – um pacote TextMate para a linguagem já pode existir. No entanto, se você não encontrar um, poderá adicionar suporte a ela sozinho na Atualização 1 do Visual Studio 2015 ou posterior, criando um modelo de pacote TextMate para snippets e gramáticas de linguagem.
 
 Adicione novas Gramáticas TextMate para o Visual Studio na seguinte pasta:
 
@@ -80,7 +80,7 @@ Nesse caminho base, adicione as pastas a seguir se forem aplicáveis à sua situ
 |-----------------|-----------------|
 |\\*\<nome da linguagem>*|A pasta da linguagem. Substitua *\<nome da linguagem>* pelo nome da linguagem. Por exemplo, *\Matlab*.|
 |*\Syntaxes*|A pasta da gramática. Contém os arquivos *.json* da gramática para a linguagem, como *Matlab.json*.|
-|*\Snippets*|A pasta de trechos. Contém trechos da linguagem.|
+|*\Snippets*|A pasta de snippets. Contém snippets da linguagem.|
 
 No Windows, *%userprofile%* determina o caminho: *c:\Usuários\\\<nome do usuário >*. Se a pasta de extensões não existir em seu sistema, será necessário criá-la. Se a pasta já existir, ela será oculta.
 
@@ -88,5 +88,5 @@ Para obter detalhes sobre como criar Gramáticas TextMate, consulte [TextMate �
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: criar um trecho de código](../ide/walkthrough-creating-a-code-snippet.md)
+- [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)
 - [Passo a passo: exibir preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)

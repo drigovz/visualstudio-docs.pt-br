@@ -32,12 +32,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c06e9a92eb6b6df82e4f45790b877286e6c52725
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5cd79db9b5bfc2e68dea2ff711b2da6ce55c9bc0
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081703"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220115"
 ---
 # <a name="link-task"></a>tarefa de vinculação
 Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de vinculador vincula arquivos-objeto e bibliotecas de formato COFF para criar um arquivo *.exe* (executável) ou uma DLL (biblioteca de vínculo dinâmico). Para obter mais informações, confira [Opções do vinculador](/cpp/build/reference/linker-options).  
@@ -67,7 +67,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
   
      Especifica atributos que serão colocados na seção `dependency` do arquivo de manifesto.  
   
-     Para obter mais informações, confira [/MANIFESTDEPENDENCY (Especificar dependências de manifesto)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Confira também [Arquivos de configuração de editor](https://docs.microsoft.com/en-us/windows/desktop/SbsCs/publisher-configuration-files).  
+     Para obter mais informações, confira [/MANIFESTDEPENDENCY (Especificar dependências de manifesto)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Confira também [Arquivos de configuração de editor](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files).  
   
 -   **AdditionalOptions**  
   
@@ -187,7 +187,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
   
      Especifica se o vinculador aplicará o atributo **SuppressUnmanagedCodeSecurityAttribute** às chamadas P/Invoke geradas pelo vinculador do código gerenciado nas DLLs nativas.  
   
-    Para obter mais informações, consulte [/CLRUNMANAGEDCODECHECK (Adicionar SupressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute).  
+    Para obter mais informações, confira [/CLRUNMANAGEDCODECHECK (Adicionar o SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).  
   
 -   **CreateHotPatchableImage**  
   
