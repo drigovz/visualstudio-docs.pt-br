@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9ae270e9a3a6c7b313d7bf811205b183f8c77fb0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cfbe7c83db57bbeb24089e7d3e794caaeca9d81
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913924"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967409"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Como adicionar um comando ao menu de atalho
 É possível adicionar comandos de menu à linguagem específica do domínio (DSL) para que seus usuários possam executar tarefas que são específicas de sua DSL. Os comandos aparecem no menu de contexto (atalho) quando os usuários clicam com o botão direito do mouse no diagrama. Você pode definir um comando para aparecer no menu apenas em circunstâncias específicas. Por exemplo, você pode tornar o comando visível apenas quando o usuário clicar em tipos específicos de elementos ou em elementos em estados específicos.
@@ -362,6 +362,6 @@ protected override IList<MenuCommand> GetMenuCommands()
 - [Escrevendo código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Como modificar um comando de menu padrão](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md)
-- [Código de amostra: diagramas de circuito](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Código de amostra: diagramas de circuito](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
