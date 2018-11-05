@@ -16,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3129df5ad051641499276fd5ee76fa0afde8a7d
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: fd6522f80a367be33830f02a30c056531593d9ac
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234440"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220424"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opções, Editor de Texto, C/C++, Avançado
 Ao alterar essas opções, você pode alterar o comportamento relacionado ao IntelliSense e ao banco de dados de navegação quando estiver programando em C ou C++.
@@ -134,6 +134,12 @@ Ao alterar essas opções, você pode alterar o comportamento relacionado ao Int
 
  Desabilita os rabiscos de erro do IntelliSense. Os “rabiscos” vermelhos não serão exibidos na janela do editor, mas o erro ainda aparecerá na janela Lista de Erros.
 
+ **Ajustar automaticamente o máximo de unidades de tradução armazenadas em cache**
+
+ O número máximo de unidades de translação será mantido ativo a qualquer momento para solicitações de IntelliSense. Você deve especificar um valor entre 2 e 15. Esse número está diretamente relacionado ao número máximo de processos de VCPkgSrv.exe que serão executados (para uma determinada instância do Visual Studio). O valor padrão é 2, mas se você tiver memória disponível, poderá aumentar esse valor e possivelmente alcançar um desempenho ligeiramente melhor no IntelliSense.
+
+ Para obter mais informações sobre as unidades de translação, consulte [Fases de translação](/cpp/preprocessor/phases-of-translation).
+
  **Desabilitar Auto Complementação #include**
 
  Desabilita o preenchimento automático de instruções `#include`.
@@ -141,16 +147,6 @@ Ao alterar essas opções, você pode alterar o comportamento relacionado ao Int
  **Usar barra “/” em #include Auto Complete**
 
  Dispara o preenchimento automático de instruções `#include` quando "/" é usado. O delimitador padrão é a barra invertida '\'. O compilador pode aceitar qualquer um, então use esta opção para especificar o que sua base de código usa.
-
- **Máximo de Unidades de Translação no Cache**
-
- O número máximo de unidades de translação será mantido ativo a qualquer momento para solicitações de IntelliSense. Você deve especificar um valor entre 2 e 15. Esse número está diretamente relacionado ao número máximo de processos de VCPkgSrv.exe que serão executados (para uma determinada instância do Visual Studio). O valor padrão é 2, mas se você tiver memória disponível, poderá aumentar esse valor e possivelmente alcançar um desempenho ligeiramente melhor no IntelliSense.
-
- Para obter mais informações sobre as unidades de translação, consulte [Fases de translação](/cpp/preprocessor/phases-of-translation).
-
- **Lista de Membros Ponto-a-Seta**
-
- Substitui '.' por '->' quando aplicável para a lista de membros.
 
  **Desabilitar Lista de Membros Agressivos**
 
@@ -160,25 +156,29 @@ Ao alterar essas opções, você pode alterar o comportamento relacionado ao Int
 
  Palavras-chave da linguagem como `void`, `class` e `switch` não aparecem em sugestões de lista de membros.
 
- **Desabilitar Trechos de Código da Lista de Membros**
+ **Desabilitar Snippets de Código da Lista de Membros**
 
- Os trechos de código não aparecem em sugestões de lista de membros.
-
- **Desabilitar Colorização Semântica**
-
- Desativa toda a colorização de código, exceto palavras-chave da linguagem, cadeias de caracteres e comentários.
-
- **Confirmação de Lista de Membro Inteligente**
-
- Adiciona uma linha quando você escolhe a tecla Enter no final de uma palavra totalmente digitada.
+ Os snippets de código não aparecem em sugestões de lista de membros.
 
  **Modo de Filtro da Lista de Membros**
 
  Define o tipo de algoritmo de correspondência. **Difuso** localiza as correspondências mais possíveis porque usa um algoritmo semelhante a um verificador ortográfico para localizar correspondências semelhantes, mas não idênticas. **Filtragem inteligente** corresponde subcadeias de caracteres, mesmo que não estejam no início de uma palavra. **Prefixo** corresponde apenas em subcadeias de caracteres idênticas que começam no início da palavra.
 
+ **Desabilitar Colorização Semântica**
+
+ Desativa toda a colorização de código, exceto palavras-chave da linguagem, cadeias de caracteres e comentários.
+
  **Caracteres de Confirmação de Lista de Membros**
 
  Especifica os caracteres que fazem com que a sugestão Lista de Membros atualmente realçada a ser confirmada. Você pode adicionar ou remover caracteres desta lista.
+
+ **Confirmação de Lista de Membro Inteligente**
+
+ Adiciona uma linha quando você escolhe a tecla Enter no final de uma palavra totalmente digitada.
+
+ **Habilitar a lista de membros de ponto para seta**
+
+ Substitui '.' por '->' quando aplicável para a lista de membros.
 
 ## <a name="references"></a>Referências
  **Desabilitar Resolução**
@@ -191,12 +191,14 @@ Ao alterar essas opções, você pode alterar o comportamento relacionado ao Int
 
  **Desabilitar Realce de Referência**
 
+Por padrão, quando você seleciona um texto, todas as instâncias do mesmo texto são realçadas automaticamente no documento atual. Você pode desabilitar esse recurso definindo **Desabilitar Realce de Referência** como **True**.
+
  ## <a name="text-editor"></a>Editor de Texto
- **Habilitar Expandir Escopos**
+ **Habilitar a opção de colocar entre chaves**
 
  Se habilitado, você poderá colocar o texto selecionado entre chaves digitando ‘{’ no editor de texto.
 
- **Habilitar Expandir Precedência**
+ **Habilitar a opção de colocar entre parênteses**
 
  Se habilitado, você poderá colocar o texto selecionado entre parênteses digitando ‘(’ no editor de texto.
 

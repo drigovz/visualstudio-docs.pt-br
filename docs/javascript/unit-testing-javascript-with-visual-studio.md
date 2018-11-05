@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d89292bd3f0c3835d6d2ed809310bc2a395553f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 678a37eec7643976e689cc027922ff481a0e005f
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776087"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219374"
 ---
 # <a name="unit-testing-in-nodejs"></a>Teste de unidade no Node.js
 
@@ -84,7 +84,7 @@ Execute testes no Visual Studio 2017 ou na linha de comando.
 
 ### <a name="run-tests-in-visual-studio-2017"></a>Executar testes no Visual Studio 2017
 
-Execute os testes clicando no link **Executar Tudo** no Gerenciador de Testes. Se preferir, execute testes selecionando um ou mais testes ou grupos, clicando com o botão direito do mouse e selecionando **Executar Testes Selecionados** no menu de atalho. Os testes são executados em segundo plano e o Gerenciador de Testes atualiza e mostra os resultados automaticamente. Além disso, depure também testes selecionados selecionando **Depurar Testes Selecionados**.
+Execute os testes clicando no link **Executar Tudo** no Gerenciador de Testes. Ou se preferir, execute os testes selecionando um ou mais testes ou grupos, clicando com o botão direito do mouse e escolhendo **Executar Testes Selecionados** no menu de atalho. Os testes são executados em segundo plano e o Gerenciador de Testes atualiza e mostra os resultados automaticamente. Além disso, depure também testes selecionados selecionando **Depurar Testes Selecionados**.
 
 > [!Warning]
 > Atualmente, a depuração de testes de unidade usando o Node 8 e superior só funciona em arquivos de teste JavaScript. Os arquivos de teste TypeScript não conseguirão atingir os pontos de interrupção. Como alternativa, use a palavra-chave `debugger`.

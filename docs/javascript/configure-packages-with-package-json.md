@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 039d88fb3aac6c1f7f0880be8b0f08dcf71bff5a
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 711d7b65eb329e844fedb0148006cacb1c7a0ebf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126631"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219089"
 ---
 # <a name="packagejson-configuration"></a>configuração do package.json
 
@@ -28,7 +28,7 @@ O sistema de controle de versão do pacote npm tem regras rígidas. O formato da
 
     [major].[minor].[patch]
 
-Digamos que você tenha um pacote em seu aplicativo com a versão 5.2.1. 5 é a versão principal, 2 é a versão secundária e 1 é o patch.
+Digamos que você tenha um pacote em seu aplicativo com a versão 5.2.1. A versão principal é 5, a versão secundária é 2 e o patch é 1.
 
 * Em uma atualização de versão principal, o pacote inclui novas funcionalidades que são incompatíveis com versões anteriores, ou seja, alterações de falha.
 * Em uma atualização de versão secundária, foram adicionados ao pacote novas funcionalidades que são compatíveis com versões anteriores dele.

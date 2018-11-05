@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e11b7458c5d26d56252b228522c53b00ebadb35b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853513"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220294"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Localizar alterações de código e outro histórico com o CodeLens
 
@@ -127,7 +127,7 @@ Descubra quantas pessoas alteraram seu código e a quantas alterações foram fe
 
 ### <a name="find-when-your-code-was-branched"></a>Descubra quando o código foi ramificado
 
-Para saber quando o código foi ramificado, navegue para o código no branch filho. Em seguida, selecione o indicador **alterações** ou pressione**Alt**+**6**:
+Para saber quando o código foi ramificado, navegue para o código no branch filho. Em seguida, selecione o indicador **alterações** ou pressione **Alt**+**6**:
 
 ![CodeLens: descobrir quando o código foi ramificado](../ide/media/codelens-first-branch.png)
 
@@ -297,7 +297,7 @@ Para usar o teclado:
 
 4. Pressione **Tab** para acessar a lista **Mostrar configurações de** e, em seguida, pressione **Seta para baixo** para selecionar **CodeLens**.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>P: Posso mover a exibição `head` do CodeLens?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>P: Posso mover o HUD do CodeLens?
 
 **R:** Sim, escolha o ![ícone de Encaixe](../ide/media/codelensdockwindow.png) para encaixar o CodeLens como uma janela.
 

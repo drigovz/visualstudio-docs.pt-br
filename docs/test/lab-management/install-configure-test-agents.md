@@ -1,6 +1,6 @@
 ---
 title: Instalar agentes e controladores de teste
-ms.date: 07/06/2018
+ms.date: 10/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcdc556366a84deffa37d7e0234b1c543882022c
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 8055e1c11f38ab83ae9c3a0570064ca49158b886
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370959"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219023"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalar agentes e controladores de teste
 
@@ -44,9 +44,9 @@ Esses instaladores estão disponíveis como arquivos ISO para a instalação fá
 
 ## <a name="compatible-versions-of-tfs-microsoft-test-manager-the-test-controller-and-test-agent"></a>Versões compatíveis do TFS, do Microsoft Test Manager, do controlador de teste e do agente de teste
 
-Você pode misturar versões diferentes do TFS, o Microsoft Test Manager (MTM), o controlador de teste e o agente de teste, conforme a tabela a seguir:
+Você pode combinar versões diferentes do TFS, o Microsoft Test Manager, o controlador de teste e o agente de teste, conforme a tabela a seguir:
 
-| TFS | MTM com a Central de Laboratório | Controlador | Agente |
+| TFS | Microsoft Test Manager com Central de Laboratório | Controlador | Agente |
 | --- | -------------------------------------- | ---------- | ----- |
 | 2017: atualizar do 2015 ou nova instalação | 2017 | 2017 | 2017 |
 | 2017: atualizar do 2015 ou nova instalação | 2017 | 2013 Atualização 5 | 2013 Atualização 5 |
@@ -55,6 +55,9 @@ Você pode misturar versões diferentes do TFS, o Microsoft Test Manager (MTM), 
 | 2015: nova instalação | 2013 | 2013 | 2013 |
 | 2015: atualizar do 2013 ou nova instalação | 2015 | 2013 | 2013 |
 | 2013 | 2015 | 2013 | 2013 |
+
+> [!NOTE]
+> Os cenários do Lab Management no TFS 2018 e no Azure DevOps Services foram preteridos. Para obter mais informações, confira [Notas sobre a versão do TFS 2018](/visualstudio/releasenotes/tfs2018-relnotes#--removing-support-for-lab-center-and-automated-testing-flows-in-microsoft-test-manager).
 
 ## <a name="upgrade-from-visual-studio-2013-test-agents"></a>Atualizar de agentes de teste do Visual Studio 2013
 

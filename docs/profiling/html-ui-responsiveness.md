@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c89a437938a042ead343ee5c1386ea11d637663d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87a70451799c7fc3a15eb14a9efbb0233ea2b154
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834507"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220141"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analisar a capacidade de resposta de interface do usuário HTML em Aplicativos Universais do Windows
 Este tópico descreve como isolar problemas de desempenho nos aplicativos usando o Criador de Perfil de Capacidade de Resposta da Interface do Usuário, uma ferramenta de desempenho disponível para Aplicativos Universais do Windows.  
@@ -42,7 +42,7 @@ Este tópico descreve como isolar problemas de desempenho nos aplicativos usando
   
 2.  No menu **Depurar**, escolha **Criador de Perfil de Desempenho**.  
   
-     Se desejar alterar o destino da análise para o criador de perfil, escolha **Alterar Destino**.  
+     Se você quiser alterar o destino da análise do criador de perfil, escolha **Alterar Destino**.  
   
      ![Alterar destino de análise](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   

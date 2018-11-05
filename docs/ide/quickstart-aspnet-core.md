@@ -2,7 +2,7 @@
 title: Usar o Visual Studio para criar um aplicativo Web ASP.NET Core em C#
 description: Saiba como criar um aplicativo Web simples do Olá, Mundo no Visual Studio com C# e ASP.NET Core, passo a passo.
 ms.custom: mvc
-ms.date: 07/20/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,22 +14,34 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 90b1f8209928922c388325163f37f0b1d7e983bb
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 4f074e118d942aee2d56c30efea6854d4a0cc35e
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135586"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244405"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Início rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web ASP.NET Core
 
 Nesta introdução de 5 a 10 minutos que mostra como usar o Visual Studio, você criará um aplicativo Web "Olá, Mundo" simples usando um modelo de projeto ASP.NET e a linguagem de programação C#.
 
+## <a name="before-you-begin"></a>Antes de começar
+
+### <a name="install-visual-studio"></a>Instalar o Visual Studio
+
 Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
+
+### <a name="update-visual-studio"></a>Atualizar o Visual Studio
+
+Se você já tiver instalado o Visual Studio, verifique se está executando a versão mais recente. Para obter mais informações de como atualizar sua instalação, confira a página [Atualizar o Visual Studio 2017 para a versão mais recente](../install/update-visual-studio.md).
+
+### <a name="choose-your-theme-optional"></a>Escolher o tema (opcional)
+
+Este tutorial de início rápido inclui capturas de tela que usam o tema escuro. Se você não estiver usando o tema escuro, mas quiser usá-lo, confira a página [Personalizar o IDE e o Editor do Visual Studio](quickstart-personalize-the-ide.md) para saber como.
 
 ## <a name="create-a-project"></a>Criar um projeto
 
-Primeiro, você criará um projeto de aplicativo Web ASP.NET Core. O tipo de projeto vem com todos os arquivos de modelo para criar um aplicativo Web, antes mesmo de você adicionar alguma coisa!
+Para começar, você criará um projeto de aplicativo Web ASP.NET Core. O tipo de projeto vem com todos os arquivos de modelo para criar um aplicativo Web, antes mesmo de você adicionar alguma coisa!
 
 1. Abra o Visual Studio 2017.
 
@@ -40,7 +52,7 @@ Primeiro, você criará um projeto de aplicativo Web ASP.NET Core. O tipo de pro
    ![Crie o novo projeto de aplicativo Web ASP.NET Core para C#](../ide/media/csharp-aspnet-choose-template-name-file.png)
 
    > [!NOTE]
-   > Se você não vir a categoria de modelo de projeto **.NET Core**, escolha o link **Abrir Instalador do Visual Studio** no painel esquerdo.
+   > Se você não vir a categoria de modelo de projeto **.NET Core**, escolha o link **Abrir Instalador do Visual Studio** no painel esquerdo. (Dependendo das suas configurações de exibição, talvez seja necessário rolar para vê-la.)
    >
    > ![Abrir Instalador do Visual Studio na caixa de diálogo Novo Projeto](../ide/media/open-visual-studio-installer.png)
    >
@@ -50,7 +62,12 @@ Primeiro, você criará um projeto de aplicativo Web ASP.NET Core. O tipo de pro
    >
    > (Talvez você precise fechar o Visual Studio antes de continuar a instalar a nova carga de trabalho.)
 
-1. Na caixa de diálogo **Novo aplicativo Web ASP.NET Core**, verifique se **ASP.NET Core 2.0** aparece no menu suspenso superior. Em seguida, escolha **Aplicativo Web** e escolha **OK**.
+1. Na caixa de diálogo **Novo aplicativo Web ASP.NET Core**, selecione **ASP.NET Core 2.0** ou posterior no menu suspenso superior.
+
+   > [!NOTE]
+   > Se o **ASP.NET Core 2.0** ou posterior não for exibido, verifique se você está executando a versão mais recente do Visual Studio. Para obter mais informações de como atualizar sua instalação, confira a página [Atualizar o Visual Studio 2017 para a versão mais recente](../install/update-visual-studio.md).
+
+1. Em seguida, escolha **Aplicativo Web** e, em seguida, **OK**.
 
    ![Caixa de diálogo Novo Aplicativo Web ASP.NET Core](../ide/media/quickstart-aspnet-core20.png)
 
@@ -91,7 +108,7 @@ Logo depois, o Visual Studio abre o arquivo de projeto.
 1. Pressione **Ctrl**+**F5** para executar o aplicativo e abri-lo em um navegador da Web.
 
    > [!NOTE]
-   > Se você receber uma mensagem de erro que diz **Não é possível se conectar ao servidor Web “IIS Express”**, feche o Visual Studio e abra-o usando a opção **Executar como administrador** clicando com o botão direito do mouse ou no menu de contexto. Em seguida, execute o aplicativo novamente.
+   > Se você receber uma mensagem de erro informando **Não é possível conectar ao servidor Web 'IIS Express'** ou uma mensagem de erro que mencione um certificado SSL, feche o Visual Studio. Em seguida, abra o Visual Studio usando a opção **Executar como administrador** no menu de contexto ou no menu acessado ao clicar com o botão direito do mouse. Em seguida, execute o aplicativo novamente.
 
 1. Na parte superior da página da Web, escolha **Sobre**.
 
@@ -114,4 +131,4 @@ Para saber mais, continue com o tutorial a seguir:
 
 ## <a name="see-also"></a>Consulte também
 
-[Publicar seu aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio](..//deployment/quickstart-deploy-to-azure.md)
+[Publicar seu aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio](../deployment/quickstart-deploy-to-azure.md)
