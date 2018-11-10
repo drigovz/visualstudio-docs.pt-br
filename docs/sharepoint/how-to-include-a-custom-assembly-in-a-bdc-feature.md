@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aa210047a65870806877e1d22e08fc1f2b9bc010
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e685c3003fa77814217716fc886589e4a2633429
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118350"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294663"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Como: incluir um assembly personalizado em uma recurso BDC
   Seu projeto pode fazer referência a assemblies de outros projetos na mesma solução. No entanto, você deve adicionar esses assemblies para o arquivo de recurso do projeto usando o **Assign referenciado assemblies para o LobSystems** caixa de diálogo.  
@@ -45,7 +45,7 @@ ms.locfileid: "37118350"
 4.  No **selecione um Assembly** , escolha o assembly personalizado.  
   
     > [!NOTE]  
-    >  Assemblies são exibidas somente na **Assign referenciado assemblies para o LobSystems** caixa de diálogo se você tiver adicionado uma referência ao projeto que contém o assembly. Para obter mais informações, consulte [como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+    >  Assemblies são exibidas somente na **Assign referenciado assemblies para o LobSystems** caixa de diálogo se você tiver adicionado uma referência ao projeto que contém o assembly. Para obter mais informações, consulte [como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 5.  No **propriedades de referência** grupo, abra a lista que aparece para o **escopo do LobSystem** propriedade, escolha o sistema LOB dos métodos que usam o assembly personalizado e, em seguida, escolha o **Okey**  botão.  
   

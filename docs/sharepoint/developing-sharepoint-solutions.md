@@ -18,17 +18,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b9eb1de3f18c487a2e6d3cdf3d0ce7ef95e578b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25a7402a8d0464152e9b1bdd9d2edcdc66824914
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889991"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295898"
 ---
 # <a name="develop-sharepoint-solutions"></a>Desenvolver soluções do SharePoint
   Vários modelos de tipo de projeto do SharePoint estão disponíveis no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para a criação de sites do SharePoint e os elementos do site. Para obter uma lista dos tipos de projeto disponíveis, consulte [SharePoint modelos de item de projeto e projeto](../sharepoint/sharepoint-project-and-project-item-templates.md). Veja a seguir uma descrição dos elementos e propriedades de um projeto do SharePoint.  
   
- Para obter informações sobre os suplementos do SharePoint e SharePoint 2013, consulte [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) e [suplementos do SharePoint compilar](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
+ Para obter informações sobre os suplementos do SharePoint e SharePoint 2013, consulte [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) e [suplementos do SharePoint compilar](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).  
   
 ## <a name="elements-of-a-sharepoint-project"></a>Elementos de um projeto do SharePoint
  Os nós em um projeto do SharePoint são conhecidos como *itens do SharePoint*. Itens do SharePoint também podem conter um ou mais subarquivos, conhecidos como *arquivos de item do SharePoint*, como [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] arquivos de configuração, os formulários. aspx e muito mais.  
@@ -97,10 +97,10 @@ ms.locfileid: "49889991"
   
 |Nome da Propriedade|Descrição|  
 |-------------------|-----------------|  
-|Ação de build|Especifica como o arquivo se relaciona aos processos de compilação e implantação. Para obter mais informações, consulte [propriedades do arquivo](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
-|Copiar para diretório de saída|Especifica se os arquivos de origem serão copiados para o diretório de saída. pode ser um dos seguintes valores:<br /><br /> -   *Não copiar*<br />-   *Sempre copiar*<br />-   *Copiar se mais recente*<br /><br /> Para obter mais informações, consulte [propriedades do arquivo](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
-|Ferramenta personalizada|Especifica o nome de uma ferramenta, se houver, que transforma o arquivo em tempo de design e coloca a saída da transformação em outro arquivo. Por exemplo, um conjunto de dados (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) arquivo tem uma ferramenta personalizada padrão. Para obter mais informações, consulte [propriedades do arquivo](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
-|Namespace de ferramenta personalizada|O namespace no qual a saída da ferramenta personalizada é copiada. Para obter mais informações, consulte [propriedades do arquivo](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
+|Ação de build|Especifica como o arquivo se relaciona aos processos de compilação e implantação. Para obter mais informações, consulte [propriedades do arquivo](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
+|Copiar para diretório de saída|Especifica se os arquivos de origem serão copiados para o diretório de saída. pode ser um dos seguintes valores:<br /><br /> -   *Não copiar*<br />-   *Sempre copiar*<br />-   *Copiar se mais recente*<br /><br /> Para obter mais informações, consulte [propriedades do arquivo](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
+|Ferramenta personalizada|Especifica o nome de uma ferramenta, se houver, que transforma o arquivo em tempo de design e coloca a saída da transformação em outro arquivo. Por exemplo, um conjunto de dados (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) arquivo tem uma ferramenta personalizada padrão. Para obter mais informações, consulte [propriedades do arquivo](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
+|Namespace de ferramenta personalizada|O namespace no qual a saída da ferramenta personalizada é copiada. Para obter mais informações, consulte [propriedades do arquivo](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
 |Local de implantação|O caminho totalmente qualificado do arquivo no servidor do SharePoint. Esse caminho é composto de raiz de implantação e caminho de implantação de subpropriedades.|  
 |Caminho de implantação|O caminho relativo do arquivo no arquivo do SharePoint Server, como Workflow1\\. O caminho totalmente qualificado para o arquivo é criado concatenando as *caminho de implantação* valor ao final da *raiz de implantação* valor.<br /><br /> Selecionando um valor de *RootFile* para o *tipo de implantação* alterações de propriedade a *raiz de implantação* propriedade \<SharePointRoot >\\, resultando em um caminho totalmente qualificado \<SharePointRoot > \Workflow1\\. Para obter mais informações, consulte [empacotamento e implantação de soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Raiz de implantação|Cadeia. A pasta raiz onde o arquivo é implantado no servidor do SharePoint. Por exemplo, \<SharePointRoot > \Template\Features\\\<FeatureName >\\.<br /><br /> O valor da *raiz de implantação* propriedade é determinada pelo *tipo de implantação* configuração.|  

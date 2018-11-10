@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ccaebf42100f4d9c0664bdf72be7d7f3808ebc1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af0871e428d57d9bb4da85a16963f539ecd08d96
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911311"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51221029"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analisar o uso de memória do JavaScript em aplicativos UWP
 O analisador de memória do JavaScript está disponível no Visual Studio para ajudar você a entender o uso de memória e a localizar vazamentos de memória em seus aplicativos UWP compilados para o Windows usando JavaScript. Os aplicativos com suporte incluem aplicativos para Aplicativos Universais do Windows.
@@ -355,15 +355,15 @@ if (performance && performance.mark) {
   
 -   Procurar os objetos retidos acidentalmente na memória depois que o usuário navegar para uma nova página, que é uma causa comum de problemas de memória. Por exemplo:  
   
-    -   o uso incorreto da função [URL.CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) pode causar esse problema.  
+    -   o uso incorreto da função [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) pode causar esse problema.  
   
-    -   Alguns objetos podem oferecer um método `dispose` e recomendações para o uso. Por exemplo, você deve chamar `dispose` em uma [WinJS.Binding.List](http://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) caso chame o método `createFiltered` da lista e, depois, navegue para outra página.  
+    -   Alguns objetos podem oferecer um método `dispose` e recomendações para o uso. Por exemplo, você deve chamar `dispose` em uma [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) caso chame o método `createFiltered` da lista e, depois, navegue para outra página.  
   
     -   Você pode precisar remover um ou mais ouvintes de eventos. Para obter mais informações, consulte [Exibir ouvintes de eventos DOM](../debugger/view-dom-event-listeners.md).  
   
--   Assista à última parte [deste vídeo](http://channel9.msdn.com/Events/Build/2013/3-316) da conferência Build 2013 sobre o analisador de memória de JavaScript.  
+-   Assista à última parte [deste vídeo](https://channel9.msdn.com/Events/Build/2013/3-316) da conferência Build 2013 sobre o analisador de memória de JavaScript.  
   
--   Leia [Gerenciar memória em aplicativos UWP](http://msdn.microsoft.com/magazine/jj651575.aspx).  
+-   Leia [Gerenciar memória em aplicativos UWP](https://msdn.microsoft.com/magazine/jj651575.aspx).  
   
 -   Considere temporariamente modificar o código para isolar problemas. Por exemplo, é possível:  
   

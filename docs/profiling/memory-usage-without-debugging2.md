@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c79184af7afa11e2008ff32ce2ffb2dedd19559
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fb3f0c5d44ed8043266640cfeb30838f7d37894
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827722"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220769"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analisar o uso de memória sem o depurador do Visual Studio
 Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o seguinte  
@@ -204,5 +204,5 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
  [Memória JavaScript](../profiling/javascript-memory.md)  
  [Criação de perfis no Visual Studio](../profiling/index.md)  
  [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)  
- [Práticas recomendadas de desempenho para aplicativos UWP em C++, C# e Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [Práticas recomendadas de desempenho para aplicativos UWP em C++, C# e Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706) (Diagnosticando problemas de memória com a nova Ferramenta de Uso de Memória no Visual Studio)
