@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 933f31d6cbfe34846b0331d76abdc39cdf261d29
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 593d778247e3c1e6b9a09358c82b5fd7139cfbb9
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775845"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672906"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Etapa 3: Atribuir um ícone aleatório a cada rótulo
 Se os ícones aparecerem nas mesmas células a cada jogo, ele não será muito desafiador. Para evitar isso, atribua os ícones aleatoriamente aos controles de rótulo no seu formulário usando um método `AssignIconsToSquares()`.
@@ -47,9 +47,9 @@ Se os ícones aparecerem nas mesmas células a cada jogo, ele não será muito d
 
      A primeira linha converte a variável **control** em um rótulo denominado **iconLabel**. A linha que vem a seguir está uma instrução `if` que verifica se a conversão funcionou. Se a conversão realmente funcionar, as instruções na instrução `if` serão executadas. (Como talvez você se lembre dos tutoriais anteriores, a instrução `if` é usada para avaliar qualquer condição especificada.) A primeira linha na instrução `if` cria uma variável denominada **randomNumber** que contém um número aleatório que corresponde a um dos itens na lista de ícones. Para fazer isso, ela usa o método <xref:System.Random.Next> do objeto <xref:System.Random> que você criou anteriormente. O método `Next` retorna o número aleatório. Essa linha também usa a propriedade <xref:System.Collections.Generic.List%601.Count> da lista **icons** para determinar o intervalo do qual escolher o número aleatório. A próxima linha atribui um dos itens da lista de ícones à propriedade <xref:System.Windows.Forms.Label.Text> do rótulo. A linha comentada é explicada mais adiante neste tópico. Por fim, a última linha na instrução `if` remove da lista o ícone que foi adicionado ao formulário.
 
-     Lembre-se de que se você não tiver certeza da função de alguma parte do código, será possível posicionar o ponteiro do mouse sobre um elemento do código e analisar a dica de ferramenta resultante. Você também pode percorrer cada linha do código enquanto o programa estiver em execução usando o depurador do Visual Studio. Veja [Como faço para executar em etapas com o depurador do Visual Studio?](http://msdn.microsoft.com/vstudio/ee672313.aspx) ou [Navegação pelo código com o depurador](../debugger/navigating-through-code-with-the-debugger.md) para obter mais informações.
+     Lembre-se de que se você não tiver certeza da função de alguma parte do código, será possível posicionar o ponteiro do mouse sobre um elemento do código e analisar a dica de ferramenta resultante. Você também pode percorrer cada linha do código enquanto o programa estiver em execução usando o depurador do Visual Studio. Veja [Como faço para executar em etapas com o depurador do Visual Studio?](https://msdn.microsoft.com/vstudio/ee672313.aspx) ou [Navegação pelo código com o depurador](../debugger/navigating-through-code-with-the-debugger.md) para obter mais informações.
 
-3.  Para preencher o tabuleiro do jogo com ícones, você precisa chamar o método `AssignIconsToSquares()` assim que programa for iniciado. Se você estiver usando o Visual C#, adicione uma instrução logo abaixo da chamada ao método `InitializeComponent()` no **construtor**_Form1_, de modo que o formulário chame o novo método para configurar a si mesmo antes de ser mostrado. Os construtores são chamados quando você cria um novo objeto, como uma classe ou um struct. Veja [Construtores (Guia de programação do C#)](http://msdn.microsoft.com/library/ace5hbzh.aspx) ou [Uso de construtores e destruidores](http://msdn.microsoft.com/library/2z08e49e.aspx) no Visual Basic para obter mais informações.
+3.  Para preencher o tabuleiro do jogo com ícones, você precisa chamar o método `AssignIconsToSquares()` assim que programa for iniciado. Se você estiver usando o Visual C#, adicione uma instrução logo abaixo da chamada ao método `InitializeComponent()` no **construtor**_Form1_, de modo que o formulário chame o novo método para configurar a si mesmo antes de ser mostrado. Os construtores são chamados quando você cria um novo objeto, como uma classe ou um struct. Veja [Construtores (Guia de programação do C#)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) ou [Uso de construtores e destruidores](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\)) no Visual Basic para obter mais informações.
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 

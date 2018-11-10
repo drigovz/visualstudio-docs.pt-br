@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5215770d362e2f1ebd21f9131b82073376c28bf6
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: e1c4e55fe6275d750d3bc3b03fb8f0ac5eec2751
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626646"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672919"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Dicas e truques de desempenho do Visual Studio
 
@@ -27,7 +27,7 @@ As recomendações de desempenho do Visual Studio destinam-se a situações de b
 
 Se você atualizar seu sistema de uma versão de 32 bits do Windows para uma versão de 64 bits, expanda a quantidade de memória virtual disponível para o Visual Studio de 2 GB para 4 GB. Isso permite que o Visual Studio lide com cargas de trabalho significativamente maiores, mesmo sendo um processo de 32 bits.
 
-Para obter mais informações, consulte [Limites de memória](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) e [Usar /LARGEADDRESSAWARE no Windows de 64 bits](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+Para obter mais informações, consulte [Limites de memória](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits) e [Usar /LARGEADDRESSAWARE no Windows de 64 bits](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="disable-automatic-file-restore"></a>Desabilitar a restauração de arquivo automática
 

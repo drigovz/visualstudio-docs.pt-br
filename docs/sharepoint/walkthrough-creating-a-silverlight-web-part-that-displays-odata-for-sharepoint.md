@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58f03bc18c2e851bb7732b54ff334e6e3332f74e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 67742078cefcd0608d1cff9a5bab609053544392
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878174"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296106"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Passo a passo: Criar uma web part do Silverlight que exiba OData para o SharePoint
   SharePoint 2010 expõe seus dados de lista por meio do OData. No SharePoint, o serviço OData é implementado pelo serviço RESTful ListData.svc. Este passo a passo mostra como criar uma web part do SharePoint que hospeda um aplicativo do Silverlight. O aplicativo do Silverlight exibe informações da lista de lançamento do SharePoint usando ListData.svc. Para obter mais informações, consulte [Interface REST do SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) e [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).  
@@ -71,7 +71,7 @@ ms.locfileid: "49878174"
   
 #### <a name="to-customize-the-silverlight-application"></a>Para personalizar o aplicativo do Silverlight
   
-1.  Adicione uma referência de assembly a System no aplicativo do Silverlight. Para obter mais informações, consulte [como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+1.  Adicione uma referência de assembly a System no aplicativo do Silverlight. Para obter mais informações, consulte [como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 2.  Na **Gerenciador de soluções**, abra o menu de atalho **referências**e, em seguida, escolha **Add Service Reference**.  
   

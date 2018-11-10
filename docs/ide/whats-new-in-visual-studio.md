@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 5bf6de28ff98bf7a05098cabefb86b8cd5169d27
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029102"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673023"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novidades no Visual Studio 2017
 
@@ -212,7 +212,7 @@ O novo Auxiliar de Exceção ajuda você a exibir as informações de exceção 
 
 ![A nova caixa de diálogo Auxiliar de Exceção no Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png)
 
-Para obter mais informações, consulte a postagem de blog [Use the new Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Usar o novo Auxiliar de Exceção no Visual Studio).
+Para obter mais informações, consulte a postagem de blog [Use the new Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Usar o novo Auxiliar de Exceção no Visual Studio).
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Instantâneos e retrocesso do IntelliTrace
 
@@ -264,7 +264,7 @@ A UWP (Plataforma Universal do Windows) é a plataforma de aplicativo do Windows
 
 Escolha sua linguagem de desenvolvimento preferencial&mdash;entre C#, Visual Basic, C++ ou JavaScript&mdash;para criar um aplicativo da Plataforma Universal do Windows para dispositivos do Windows 10. O Visual Studio 2017 fornece um modelo de aplicativo da UWP para cada idioma, permitindo que você crie um projeto único para todos os dispositivos. Quando seu trabalho for concluído, você poderá produzir um pacote do aplicativo e enviá-lo à Microsoft Store pelo Visual Studio para divulgar seu aplicativo aos clientes em qualquer dispositivo do Windows 10.
 
-**Novidade na versão 15.5**: o Visual Studio 2017 versão 15.5 fornece o melhor suporte para o SDK do Windows 10 Fall Creators Update (10.0.16299.0). O Windows 10 Fall Creators Update também oferece várias melhorias para os desenvolvedores da UWP. Aqui estão algumas das maiores alterações: 
+**Novidade na versão 15.5**: o Visual Studio 2017 versão 15.5 fornece o melhor suporte para o SDK do Windows 10 Fall Creators Update (10.0.16299.0). O Windows 10 Fall Creators Update também oferece várias melhorias para os desenvolvedores da UWP. Aqui estão algumas das maiores alterações: 
 
 * **Compatível com o .NET Standard 2.0**<br/>Além da implantação simplificada do aplicativo, o Windows 10 Fall Creators Update é a primeira versão do Windows 10 compatível com o .NET Standard 2.0. De fato, o [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) é uma implementação de referência da biblioteca de classes base que qualquer plataforma do .NET pode implementar. A meta do .NET Standard é facilitar o máximo possível para os desenvolvedores do .NET compartilhar o código em qualquer plataforma do .NET que eles escolham trabalhar.
 * **O melhor da UWP e do Win32**<br/>Melhoramos a Plataforma do Windows 10 com a [Ponte de Desktop](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) para tornar o Windows 10 melhor para todos os desenvolvedores do .NET, quer o foco atual esteja na UWP, no WPF, no Windows Forms ou no Xamarin. Com o novo tipo de projeto do Pacote de Aplicativo no Visual Studio 2017 versão 15.5, você pode criar Pacotes de Aplicativos do Windows para seus projetos do WPF ou do Windows Forms, assim como você pode fazer com os projetos da UWP. Depois de empacotar seu aplicativo, você obterá todos os benefícios de implantação de aplicativo do Windows 10 e terá a opção de distribuir por meio da Microsoft Store (para aplicativos de consumidor) ou da Microsoft Store para Empresas e Educação. Como os aplicativos empacotados têm acesso à superfície da API da UWP completa e às APIs do Win32 na área de trabalho, agora você pode modernizar seus aplicativos do WPF e do Windows Forms gradualmente com as APIs da UWP e com os recursos do Windows 10. Além disso, você pode incluir os componentes do Win32 em seus aplicativos da UWP que são aprimorados na área de trabalho com todos os recursos do Win32.

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c21402c3b2b71372aaf170c68c65777eba4e95bf
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1d6d2c5355fbce44bbb97a33e21ad623997ddceb
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703740"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670800"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 Executa o comando especificado depois de iniciar o IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -35,7 +35,7 @@ devenv /command CommandName
 ## <a name="remarks"></a>Comentários
  Após a conclusão da inicialização, o IDE executa o comando nomeado. Se você usar essa opção, o IDE não mostrará a Página Inicial do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] na inicialização.
 
- Se um suplemento expor um comando, será possível usar essa opção para iniciar o suplemento por meio da linha de comando. Para obter mais informações, consulte [Como controlar suplementos usando o Gerenciador de Suplementos](http://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).
+ Se um suplemento expor um comando, será possível usar essa opção para iniciar o suplemento por meio da linha de comando. Para obter mais informações, consulte [Como controlar suplementos usando o Gerenciador de Suplementos](https://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).
 
 ## <a name="example"></a>Exemplo
  Esse exemplo inicia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e executa a macro Abrir Arquivos Favoritos automaticamente.

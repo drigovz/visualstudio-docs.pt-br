@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3333aa5db6f28d23db901fef811b9291fdf1270e
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e4ea61199159e68f3707b6dac4d3a6c1f5ea7635
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177887"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671781"
 ---
 # <a name="manage-application-settings-net"></a>Gerenciar configurações de aplicativo (.NET)
 
@@ -100,7 +100,7 @@ Você deve chamar explicitamente o método `Save` dessa classe wrapper para pers
 Properties.Settings.Default.Save();
 ```
 
-Para obter informações gerais sobre como acessar as configurações de aplicativo por meio da classe `Settings`, confira [Visão geral sobre configurações de aplicativo (.NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview). Para obter informações sobre como fazer a iteração por meio das configurações, consulte esta [postagem no fórum](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Para obter informações gerais sobre como acessar as configurações de aplicativo por meio da classe `Settings`, confira [Visão geral sobre configurações de aplicativo (.NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview). Para obter informações sobre como fazer a iteração por meio das configurações, consulte esta [postagem no fórum](https://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
 ## <a name="see-also"></a>Consulte também
 

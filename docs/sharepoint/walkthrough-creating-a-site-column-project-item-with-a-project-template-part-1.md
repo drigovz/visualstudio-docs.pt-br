@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 202a9ac88310656c59fa507cbb8fe271b6f1d040
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56f50a3c50156cbd932fc7a7247fd96c4c6c2834
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813200"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296249"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Passo a passo: Criar um item de projeto da coluna de site com um modelo de projeto, parte 1
   Projetos do SharePoint são contêineres para um ou mais itens de projeto do SharePoint. Você pode estender o sistema de projeto do SharePoint no Visual Studio criando seus próprios tipos de item de projeto do SharePoint e, em seguida, associá-los a um modelo de projeto. Neste passo a passo, você definirá um tipo de item de projeto para a criação de uma coluna de site e, em seguida, você criará um modelo de projeto que pode ser usado para criar um novo projeto que contém um item de projeto da coluna de site.  
@@ -642,7 +642,7 @@ ms.locfileid: "49813200"
   
 1.  Na **Gerenciador de soluções**, no **SiteColumnProjectItem** projeto, abra o arquivo vsixmanifest no editor de manifesto.  
   
-     O arquivo vsixmanifest é a base para o arquivo Extension vsixmanifest que exigem todos os pacotes VSIX. Para obter mais informações sobre esse arquivo, consulte [1.0 referência do esquema de extensão do VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     O arquivo vsixmanifest é a base para o arquivo Extension vsixmanifest que exigem todos os pacotes VSIX. Para obter mais informações sobre esse arquivo, consulte [1.0 referência do esquema de extensão do VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  No **nome do produto** , digite **coluna de Site**.  
   
@@ -657,7 +657,7 @@ ms.locfileid: "49813200"
 6.  No **tipo** , escolha **Microsoft.VisualStudio.ProjectTemplate**.  
   
     > [!NOTE]  
-    >  Esse valor corresponde à `ProjectTemplate` elemento no arquivo Extension vsixmanifest. Este elemento identifica a subpasta no pacote VSIX que contém o modelo de projeto. Para obter mais informações, consulte [ProjectTemplate Element (esquema de VSX)](http://msdn.microsoft.com/en-us/87add64c-9dcd-495f-8815-209dab182cb1).  
+    >  Esse valor corresponde à `ProjectTemplate` elemento no arquivo Extension vsixmanifest. Este elemento identifica a subpasta no pacote VSIX que contém o modelo de projeto. Para obter mais informações, consulte [ProjectTemplate Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)).  
   
 7.  No **fonte** , escolha **um projeto na solução atual**.  
   
@@ -670,7 +670,7 @@ ms.locfileid: "49813200"
 10. No **tipo** , escolha **mefcomponent**.  
   
     > [!NOTE]  
-    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 11. No **fonte** , escolha **um projeto na solução atual**.  
   

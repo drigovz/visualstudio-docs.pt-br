@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2c8c23be02f13646c8577d2672bc60b63a1d0a
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 966634ee9a71854334bdd5342326c1663b9ad16c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008675"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672152"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Criar um visualizador de imagens
 
@@ -32,7 +32,7 @@ Neste tutorial, você cria um programa que carrega uma imagem de um arquivo e a 
 
 -   Adicionar as caixas de diálogo **Abrir Arquivo** e **Cor** a um formulário.
 
--   Escrever código usando o IntelliSense e trechos de código.
+-   Escrever código usando o IntelliSense e snippets de código.
 
 -   Escrever métodos de manipulador de eventos.
 
@@ -42,7 +42,7 @@ Quando você terminar, seu programa será como a imagem a seguir:
 
 ## <a name="tutorial-links"></a>Links do tutorial
 
-Para baixar uma versão concluída do exemplo, veja [Exemplo de tutorial completo do Visualizador de Imagens](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
+Para baixar uma versão concluída do exemplo, veja [Exemplo de tutorial completo do Visualizador de Imagens](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
 ![link para o vídeo](../data-tools/media/playvideo.gif)Para ver uma versão em vídeo deste tópico, confira [How do I: Create a picture viewer in Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) (Como fazer para criar um visualizador de imagens no Visual Basic?) ou [How do I: Create a picture viewer in C#?](http://go.microsoft.com/fwlink/?LinkId=205198) (Como fazer para criar um visualizador de imagens em C#?).
 

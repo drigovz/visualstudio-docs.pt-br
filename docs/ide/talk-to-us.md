@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d301d2a43e820f59979692071edbfb25ba1d7386
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 4c38a74a48dbac190b5f557641e10f54a0413703
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073735"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671983"
 ---
 # <a name="visual-studio-product-feedback"></a>Comentários de produto do Visual Studio
 
@@ -54,7 +54,7 @@ Os serviços de suporte da Microsoft estão sujeitos a preços, termos e condiç
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>Quero participar da comunidade de desenvolvedores
 
-Se você quiser compartilhar suas perguntas e respostas com outros desenvolvedores, use o site da [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com), os [Fóruns do MSDN](http://social.msdn.microsoft.com/Forums/home) ou o [StackOverflow](http://stackoverflow.com/). Você também pode exibir código de outros desenvolvedores e compartilhar os seus próprios exemplos no site [Exemplos de código do desenvolvedor](http://code.msdn.microsoft.com/).
+Se você quiser compartilhar suas perguntas e respostas com outros desenvolvedores, use o site da [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com), os [Fóruns do MSDN](https://social.msdn.microsoft.com/Forums/home) ou o [StackOverflow](http://stackoverflow.com/). Você também pode exibir código de outros desenvolvedores e compartilhar os seus próprios exemplos no site [Exemplos de código do desenvolvedor](https://code.msdn.microsoft.com/).
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Desejo ajudar a melhorar a documentação do Visual Studio
 

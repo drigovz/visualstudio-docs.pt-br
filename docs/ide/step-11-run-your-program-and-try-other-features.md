@@ -11,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: feee6c95852e90fef5f3fcacf47dfb67d48255b7
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 87992bb8ab2557dbca4c8e7e3a94dd99e5de7682
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747636"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671918"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Etapa 11: Executar o programa e experimentar outros recursos
 O programa é concluído e pronto para ser executado. Você pode executar o programa e definir a cor do plano de fundo de <xref:System.Windows.Forms.PictureBox>. Para saber mais, tente melhorar o programa alterando a cor do formulário, personalizando os botões e a caixa de seleção, e modificando as propriedades do formulário.
 
- Para baixar uma versão concluída do exemplo, veja [Exemplo de tutorial completo do Visualizador de Imagens](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
+ Para baixar uma versão concluída do exemplo, veja [Exemplo de tutorial completo do Visualizador de Imagens](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
  ![link para vídeo](../data-tools/media/playvideo.gif)Para ver uma versão em vídeo deste tópico, confira [Tutorial 1: Criar um visualizador de imagens no Visual Basic – Vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205216) ou [Tutorial 1: Criar um visualizador de imagens em C# – Vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
 
@@ -53,7 +53,7 @@ Caixa de diálogo **Cor**
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
--   Para aprender sobre programação no Visual Studio, veja [Conceitos de programação](http://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
+-   Para aprender sobre programação no Visual Studio, veja [Conceitos de programação](https://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
 
 -   Para saber mais sobre o Visual Basic, veja [Desenvolver aplicativos com o Visual Basic](/dotnet/visual-basic/developing-apps/index).
 

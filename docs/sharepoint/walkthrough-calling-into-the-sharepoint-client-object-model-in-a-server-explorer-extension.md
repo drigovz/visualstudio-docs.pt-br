@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ef2a2800ecb46f12f9dde4357bf54711a1df8797
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4510aa820e0f82c2fcd73ccb83ed0f8120a1399
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934672"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296028"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Passo a passo: Chamando o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores
   Este passo a passo demonstra como chamar o modelo de objeto de cliente do SharePoint de uma extensão para o **conexões do SharePoint** nó no **Gerenciador de servidores**. Para obter mais informações sobre como usar o modelo de objeto de cliente do SharePoint, consulte [chamam os modelos de objeto SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -195,7 +195,7 @@ Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir
   
 1.  Na **Gerenciador de soluções**, no **WebPartNode** projeto, abra **vsixmanifest** arquivo no editor de manifesto.  
   
-     O arquivo vsixmanifest é a base para o arquivo Extension vsixmanifest que exigem todos os pacotes VSIX. Para obter mais informações sobre esse arquivo, consulte [1.0 referência do esquema de extensão do VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     O arquivo vsixmanifest é a base para o arquivo Extension vsixmanifest que exigem todos os pacotes VSIX. Para obter mais informações sobre esse arquivo, consulte [1.0 referência do esquema de extensão do VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  No **nome do produto** , digite **Web parte Galeria de nó do Gerenciador de servidores**.  
   
@@ -208,7 +208,7 @@ Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir
 6.  No **adicionar novo ativo** na caixa de **tipo** , escolha **mefcomponent**.  
   
     > [!NOTE]  
-    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  No **fonte** , escolha **um projeto na solução atual**.  
   

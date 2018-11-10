@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23d22e5fc3169cc731428e8c5fafff607847c156
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 2987df6c8ed8a26c2cf95020e26f67c36721d676
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143184"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672776"
 ---
 # <a name="walkthrough-build-an-application"></a>Passo a passo: Criar um aplicativo
 
@@ -225,5 +225,5 @@ Parabéns! Você concluiu este passo a passo com êxito.
 ## <a name="see-also"></a>Consulte também
 
 - [Passo a passo: Criar um projeto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
-- [Visão geral da pré-compilação de projeto de aplicativo Web ASP.NET](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [Visão geral da pré-compilação de projeto de aplicativo Web ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))
 - [Passo a passo: Usar o MSBuild](../msbuild/walkthrough-using-msbuild.md)
