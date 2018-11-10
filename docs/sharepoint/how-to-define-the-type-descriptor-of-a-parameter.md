@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 586d7181c1a8eb3c94a8ad236d4ff40602378199
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec2b0173838446c770f3323aacefebabc195c48b
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869256"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294975"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Como: definir o descritor de tipo de um parâmetro
-  Um descritor de tipo contém propriedades que descrevem o tipo de dados de um parâmetro. Um descritor de tipo pode definir um campo, uma entidade ou uma coleção de entidades. Para obter mais informações, consulte [TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx).  
+  Um descritor de tipo contém propriedades que descrevem o tipo de dados de um parâmetro. Um descritor de tipo pode definir um campo, uma entidade ou uma coleção de entidades. Para obter mais informações, consulte [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Para definir o descritor de tipo de um parâmetro  
   
@@ -46,7 +46,7 @@ ms.locfileid: "49869256"
   
 2.  Na lista de Avançar para o **TypeName** propriedade, escolha o tipo de dados apropriado (por exemplo, **Int32**).  
   
-     Para obter informações sobre outros parâmetros opcionais, consulte [TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx).  
+     Para obter informações sobre outros parâmetros opcionais, consulte [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
   
 ### <a name="to-define-an-entity"></a>Para definir uma entidade  
   

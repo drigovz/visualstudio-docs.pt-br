@@ -1,7 +1,7 @@
 ---
 title: 'Como: depurar no modo misto | Microsoft Docs'
 ms.custom: ''
-ms.date: 06/19/2018
+ms.date: 11/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a08cf3cf95073d06c1dfa350f2de86bf72837c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2ef87a1f9fd90395a9a1f5c99ad6e8090b13304e
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182670"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295469"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>Como: depurar no modo misto
 Os procedimentos a seguir descrevem como habilitar a depuração de código gerenciado e nativo juntos, também conhecido como mista de depuração. Há dois cenários de depuração de modo misto:  
@@ -58,9 +58,12 @@ Se você não tiver acesso a projeto de um aplicativo de chamada, você pode dep
    
 1. Selecione o **Debug** guia e, em seguida, selecione **habilitar a depuração de código nativo**.
    
-1. Use **arquivo** > **salvar itens selecionados** ou **Ctrl + S** para salvar as alterações.
+1. Feche a página de propriedades para salvar as alterações.
 
    ![Habilitar a depuração de código nativo](../debugger/media/dbg-mixed-mode-from-csharp.png "habilitar a depuração de código nativo")
   
+>[!NOTE]
+>Na maioria das versões do Visual Studio 2017, você deve usar o *launchsettings. JSON* arquivo em vez de propriedades do projeto para habilitar a depuração de modo misto para código nativo em um aplicativo .NET Core. Para obter detalhes, consulte [depurar código gerenciado e nativo](../debugger/how-to-debug-managed-and-native-code.md).
+
 ## <a name="see-also"></a>Consulte também  
  [Como depurar de um projeto de DLL](../debugger/how-to-debug-from-a-dll-project.md)

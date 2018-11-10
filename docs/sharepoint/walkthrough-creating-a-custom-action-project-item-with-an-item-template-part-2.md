@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19792a9804072e7c6ade836b408951e2cfadd070
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910960"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296236"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 2
   Depois de definir um tipo personalizado de item de projeto do SharePoint e associá-lo a um modelo de item no Visual Studio, você também poderá fornecer um assistente do modelo. Você pode usar o Assistente para coletar informações dos usuários quando eles usam seu modelo para adicionar uma nova instância do item de projeto a um projeto. As informações que você coleta podem ser usadas para inicializar o item de projeto.  
@@ -306,7 +306,7 @@ ms.locfileid: "49910960"
   
 13. No **descrição** , digite **abre o site do SharePoint Developer Center**.  
   
-14. No **URL** , digite **http://msdn.microsoft.com/sharepoint/default.aspx**e, em seguida, escolha o **concluir** botão.  
+14. No **URL** , digite **https://docs.microsoft.com/sharepoint/dev/** e, em seguida, escolha o **concluir** botão.  
   
      O Visual Studio adiciona um item que é denominado **CustomAction1** ao seu projeto e abrirá o *Elements. XML* arquivo no editor. Verifique *Elements. XML* contém os valores que você especificou no assistente.  
   
@@ -327,7 +327,7 @@ ms.locfileid: "49910960"
   
      O **as configurações da lista** página será exibida.  
   
-4.  Sob o **comunicações** título na parte superior da página, escolha o **Central de desenvolvedores do SharePoint** vincular, verifique se o navegador abre o site http://msdn.microsoft.com/sharepoint/default.aspxe, em seguida, feche o navegador.  
+4.  Sob o **comunicações** título na parte superior da página, escolha o **Central de desenvolvedores do SharePoint** vincular, verifique se o navegador abre o site https://docs.microsoft.com/sharepoint/dev/e, em seguida, feche o navegador.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Limpando o computador de desenvolvimento
  Após concluir o teste o item de projeto, remova o modelo de item de projeto da instância experimental do Visual Studio.  
