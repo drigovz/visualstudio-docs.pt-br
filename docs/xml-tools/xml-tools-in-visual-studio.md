@@ -34,28 +34,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 446378df2d73f4d0c2bb8eac45075fa51365cd6d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 350908d2d21a30985e624ff9526c22d6e5cf9bb1
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693728"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349407"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Ferramentas XML no Visual Studio
 
 *Extensible Markup Language (XML)* é uma linguagem de marcação que fornece um formato para descrever dados. Isso facilita declarações mais precisas de conteúdo e mais resultados de pesquisa significativos nas diversas plataformas. Além disso, o XML permite a separação da apresentação dos dados. Por exemplo, em HTML, usam-se marcas para dizer ao navegador para exibir dados como negrito ou itálico; em XML, usam-se marcas somente para descrever dados, como nome da cidade, temperatura e pressão barométrica. Em XML, você usar folhas de estilo, como Extensible Stylesheet Language (XSL) e folhas de estilo em cascata (CSS) para apresentar os dados em um navegador. O XML separa os dados da apresentação e do processo. Isso permite exibir e processar os dados como desejar, aplicando diferentes folhas de estilo e aplicações.
 
-O XML é um subconjunto do SGML que é otimizado para entrega na Web. Ele é definido pelo World Wide Web Consortium (W3C). A padronização garante que os dados estruturados são uniformes e independentes de aplicativos ou fornecedores.
+O XML é um subconjunto do SGML que é otimizado para entrega na Web. Ele é definido pelo World Wide Web Consortium (W3C). Essa padronização garante que dados estruturados serão uniformes e independentes de aplicativos ou fornecedores.
 
-XML é o principal dos muitos recursos do Visual Studio e o .NET Framework. A lista a seguir artigo nomeia as ferramentas e recursos relacionados ao XML que são oferecidos no Visual Studio e o .NET Framework.
+O XML é a essência dos muitos recursos do Visual Studio e o .NET Framework. A lista a seguir artigo nomeia as ferramentas e recursos relacionados ao XML que são oferecidos no Visual Studio e o .NET Framework.
 
 Para obter mais informações, consulte o <xref:System.Xml?displayProperty=fullName> documentação.
 
 ## <a name="reference"></a>Referência
 
-[Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) expõe o [Editor XML](http://go.microsoft.com/fwlink/?LinkId=228249) árvore por meio de análise [LINQ](http://go.microsoft.com/fwlink/?LinkId=228250) para todos os documentos XML.
+[Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) expõe o [Editor de XML](http://go.microsoft.com/fwlink/?LinkId=228249) árvore por meio de análise [LINQ](http://go.microsoft.com/fwlink/?LinkId=228250) para todos os documentos XML.
 
-[Referência de padrões de XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fornece informações sobre tecnologias XML, incluindo XML, definição de tipo de documento (DTD), linguagem de definição de esquema XML (XSD) e XSLT.
+[Referência a padrões XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fornece informações sobre tecnologias XML, incluindo XML, definição de tipo de documento (DTD), linguagem de definição de esquema XML (XSD) e XSLT.
 
 <xref:System.Xml?displayProperty=fullName> Descreve as classes e outros elementos que compõem o <xref:System.Xml> namespace e fornece links para informações mais detalhadas sobre cada item.
 
@@ -63,9 +63,9 @@ Para obter mais informações, consulte o <xref:System.Xml?displayProperty=fullN
 
 ## <a name="related-sections"></a>Seções relacionadas
 
-[Modelo de objeto de documento (DOM) XML](/dotnet/standard/data/xml/xml-document-object-model-dom) descreve como o <xref:System.Xml.XmlDocument> e estar de acordo com suas classes associadas com o modelo de objeto de documento do W3C (Core) nível 1 e especificações de suporte de namespace de nível 2.
+[Modelo de objeto de documento (DOM) XML](/dotnet/standard/data/xml/xml-document-object-model-dom) descreve como o <xref:System.Xml.XmlDocument> e suas classes associadas estão em conformidade com as especificações de suporte de namespace de nível 2 e W3C Document Object Model (núcleos) de nível 1.
 
-[Processamento de dados XML com XmlReader e XmlWriter](https://msdn.microsoft.com/library/cc189001(v=vs.95).aspx)
+[Processar dados XML com XmlReader e XmlWriter](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc189001\(v\=vs.95\))
 
 [Transformações XSLT](/dotnet/standard/data/xml/xslt-transformations) descreve como o <xref:System.Xml.Xsl.XslCompiledTransform> classe implementa a recomendação XSLT 1.0.
 

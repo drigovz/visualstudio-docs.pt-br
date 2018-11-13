@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f0d53ece6add1c781cb18569139fea5ffbbeca76
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36755918"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000223"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Como relatar um problema com o Visual Studio 2017
 
@@ -125,7 +125,7 @@ Começando no Visual Studio 2017 versão 15.5, há um novo fluxo de trabalho par
 
 Se você não quiser ou não puder usar o Visual Studio para relatar um problema, há a possibilidade de que o problema já tenha sido relatado e uma solução tenha sido postada na página da [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/).
 
-Há também um local para fazer comentários ou uma sugestão sobre o produto, mesmo quando não há um problema para relatar. Para obter mais informações, consulte a página [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide).
+Se você não tem um problema a ser relatado, mas deseja sugerir um recurso, há um local para fazer isso também. Para saber mais, confira a página [Sugerir um recurso](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
 ## <a name="see-also"></a>Consulte também
 

@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c40d5b088dbf41e56fff1ad41b6ce4381f6602b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 92485f93bb4c2d1782f907acdb1e5252f611cdbe
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
+ms.lasthandoff: 11/12/2018
 ms.locfileid: "39179473"
 ---
 # <a name="debugging-managed-code"></a>Depurando código gerenciado

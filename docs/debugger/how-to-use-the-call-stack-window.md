@@ -1,7 +1,7 @@
 ---
 title: Exibir a pilha de chamadas no depurador do Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 04/06/2017
+ms.date: 10/29/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -30,18 +30,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d390ba4cd47297c6d653cb68693439fd01c16815
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 92d138e954ce01af04405b72ce50ab72a76d8cf3
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853604"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348879"
 ---
-# <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Exibir a pilha de chamadas e usar a janela de pilha de chamadas no depurador do Visual Studio
+# <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Exibir a pilha de chamadas e usar a janela pilha de chamadas no depurador
 
 Usando o **pilha de chamadas** janela, você pode exibir as chamadas de função ou procedimento que estão atualmente na pilha. O **pilha de chamadas** janela mostra a ordem em que métodos e funções estão sendo chamadas. A pilha de chamadas é uma boa maneira para examinar e entender o fluxo de execução de um aplicativo.
   
-Quando [símbolos de depuração](#bkmk_symbols) não estão disponíveis para a parte de uma pilha de chamadas, o **pilha de chamadas** janela pode não ser capaz de exibir as informações corretas para essa parte da pilha de chamadas. Se isso ocorrer, a notação a seguir será exibida:  
+Quando [símbolos de depuração](#bkmk_symbols) não estão disponíveis para a parte de uma pilha de chamadas, o **pilha de chamadas** janela pode não ser capaz de exibir as informações corretas para essa parte da pilha de chamadas, exibindo em vez disso:  
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
@@ -49,7 +49,7 @@ Quando [símbolos de depuração](#bkmk_symbols) não estão disponíveis para a
 > O **pilha de chamadas** janela é semelhante à perspectiva de depuração em alguns IDEs como o Eclipse. 
 > 
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu vistos podem ser diferentes daqueles descritos aqui, dependendo da edição ou das configurações ativas. Para alterar suas configurações, selecione **Import and Export Settings** sobre o **ferramentas** menu.  Consulte [Personalizando o IDE](../ide/personalizing-the-visual-studio-ide.md)
+>  As caixas de diálogo e os comandos de menu vistos podem ser diferentes daqueles descritos aqui, dependendo da edição ou das configurações ativas. Para alterar suas configurações, selecione **Import and Export Settings** sobre o **ferramentas** menu.  Ver [Personalizando o IDE](../ide/personalizing-the-visual-studio-ide.md).
   
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>Exibir a pilha de chamadas no depurador 
   
@@ -57,21 +57,21 @@ Quando [símbolos de depuração](#bkmk_symbols) não estão disponíveis para a
 
   ![Janela pilha de chamadas](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
-Uma seta amarela identifica o quadro de pilha onde o ponteiro de execução está localizado atualmente. Por padrão, esse é o quadro de pilha que cujas informações aparecem na origem, **Locals**, **Autos**, **Assista**, e **desmontagem** windows . Se você quiser alterar o contexto do depurador para outro quadro na pilha, você pode fazer isso [alternar para outro quadro de pilha](#bkmk_switch).   
+Uma seta amarela identifica o quadro de pilha onde o ponteiro de execução está localizado atualmente. Por padrão, as informações deste quadro de pilhas aparecem na fonte de **Locals**, **Autos**, **Assista**, e **desmontagem** windows. Para alterar o contexto do depurador para outro quadro na pilha, [alternar para outro quadro de pilha](#bkmk_switch).   
   
 ## <a name="display-non-user-code-in-the-call-stack-window"></a>Exibir o código de não usuário na janela pilha de chamadas  
   
 -   Clique com botão direito do **pilha de chamadas** janela e selecione **Mostrar código externo**.
 
-Código de não usuário é qualquer código que não é mostrado quando [Just My Code](../debugger/just-my-code.md) está habilitado. No código gerenciado, os quadros de código não-usuário ficam ocultos por padrão. A notação a seguir é exibida em vez dos quadros de código não-usuário:  
+Código de não usuário é qualquer código que não é mostrado quando [Just My Code](../debugger/just-my-code.md) está habilitado. No código gerenciado, os quadros de código não-usuário ficam ocultos por padrão. A notação a seguir será exibida no lugar os quadros de código não-usuário:  
   
-**[\<Código externo >]**  
+`[<External Code>]`
   
 ## <a name="bkmk_switch"></a> Alternar para outro quadro de pilha (alterar o contexto do depurador)
   
 1.  No **pilha de chamadas** janela, o botão direito do mouse a pilha de quadro cujos código e os dados que você deseja exibir.
 
-    Ou, você pode clicar duas vezes em um quadro do **pilha de chamadas** janela para alternar para quadro selecionado. 
+    Ou, você pode clicar duas vezes em um quadro do **pilha de chamadas** janela para alternar para quadro. 
   
 2.  Selecione **alternar para quadro**.  
   
@@ -83,7 +83,7 @@ Código de não usuário é qualquer código que não é mostrado quando [Just M
 
 ## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Executar uma função específica da janela pilha de chamadas  
   
--  No **pilha de chamadas** janela, selecione a função, clique com botão direito e escolha **executar até o Cursor**.  
+-  No **pilha de chamadas** janela, selecione a função, clique com botão direito e, em seguida, escolha **executar até o Cursor**.  
   
 ## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Defina um ponto de interrupção no ponto de saída de uma chamada de função  
   
@@ -95,11 +95,11 @@ Código de não usuário é qualquer código que não é mostrado quando [Just M
   
 ## <a name="visually-trace-the-call-stack"></a>Rastrear visualmente a pilha de chamadas  
 
-Se você estiver usando o Visual Studio Enterprise (somente), você pode exibir mapas de código para a pilha de chamadas durante a depuração.
+No Visual Studio Enterprise (somente), você pode exibir mapas de código para a pilha de chamadas durante a depuração.
 
-- No **pilha de chamadas** janela, abra o menu de atalho. Escolher **Mostrar pilha de chamadas no mapa de códigos**. (Teclado: **CTRL** + **SHIFT** + **`**)  
+- No **pilha de chamadas** janela, abra o menu de atalho. Escolher **Mostrar pilha de chamadas no mapa de códigos** (**Ctrl** + **Shift** + **`**).  
   
-    Para obter informações detalhadas, consulte [mapear métodos na pilha de chamadas ao depurar](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
+    Para obter mais informações, consulte [mapear métodos na pilha de chamadas ao depurar](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
 ![Mostrar pilha de chamadas no mapa de códigos](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
   
@@ -109,18 +109,18 @@ Se você estiver usando o Visual Studio Enterprise (somente), você pode exibir 
 
 ## <a name="change-the-optional-information-displayed"></a>Alterar as informações opcionais exibidas  
   
--   Clique com botão direito do **pilha de chamadas** janela e defina ou desmarque **mostram \<**  _as informações que você deseja_ **>**.  
+-   Clique com botão direito no **pilha de chamadas** janela e defina ou desmarque **mostram \<**  _as informações que você deseja_ **>**.  
   
 ## <a name="bkmk_symbols"></a> Carregar símbolos para um módulo
-No **pilha de chamadas** janela, você pode carregar símbolos de depuração para o código que não tem símbolos carregados atualmente. Esses símbolos podem ser símbolos do .NET Framework ou do sistema baixados dos servidores públicos de símbolo da Microsoft ou de símbolos em um caminho de símbolo no computador que você está depurando.  
+No **pilha de chamadas** janela, você pode carregar símbolos de depuração para o código que não tem símbolos carregados atualmente. Esses símbolos podem ser do .NET Framework ou símbolos de sistema baixados do servidores de símbolo públicos da Microsoft ou símbolos em um caminho de símbolo no computador que você está depurando.  
   
-Consulte [especificar símbolo (. PDB) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+Ver [especificar arquivos de símbolo (. PDB) e código-fonte](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
   
 ### <a name="to-load-symbols"></a>Para carregar símbolos  
   
 1.  No **pilha de chamadas** janela, o botão direito do mouse quadro da pilha para o qual os símbolos não são carregados. O quadro ficará esmaecido.  
   
-2.  Aponte para **Load Symbols** e, em seguida, clique em **servidores de símbolo Microsoft** (se disponível) ou navegue até o caminho do símbolo.  
+2.  Aponte para **Load Symbols** e, em seguida, selecione **servidores de símbolo Microsoft** (se disponível), ou navegue até o caminho do símbolo.  
   
 ### <a name="to-set-the-symbol-path"></a>Para definir o caminho do símbolo  
   
@@ -128,18 +128,18 @@ Consulte [especificar símbolo (. PDB) e arquivos de origem](../debugger/specify
   
      O **opções** caixa de diálogo é aberta e o **símbolos** página é exibida.  
   
-2.  Clique em **configurações de símbolo**.  
+2.  Selecione **configurações de símbolo**.  
   
 3.  No **opções** caixa de diálogo, clique no ícone de pasta.  
   
      No **locais de arquivo (. PDB) de símbolo** caixa, será exibido um cursor.  
   
-4.  Digite um nome de caminho de diretório no local do símbolo no computador que você está depurando. Para depuração local e remota, esse é um caminho no computador local.
+4.  Insira um nome de caminho de diretório para o local do símbolo no computador que você está depurando. Para depuração local e remota, esse é um caminho no computador local.
   
-5.  Clique em **OK** para fechar a caixa de diálogo **Opções**.  
+5.  Selecione **Okey** para fechar o **opções** caixa de diálogo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Código misto e informações ausentes na janela Pilha de Chamadas](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)  
  [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Especifique o símbolo (. PDB) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Especificar arquivos de símbolo (. PDB) e código-fonte](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Usando pontos de interrupção](../debugger/using-breakpoints.md)

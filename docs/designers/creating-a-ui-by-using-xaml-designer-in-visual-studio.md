@@ -1,6 +1,6 @@
 ---
-title: Criando uma interface de usuário usando o XAML Designer no Visual Studio
-ms.date: 07/17/2017
+title: Criando uma interface do usuário usando o Designer XAML
+ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: da5b6d3659371eb7e6d04a782c37cbab73a59fd5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903251"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220990"
 ---
-# <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Criando uma interface de usuário usando o XAML Designer no Visual Studio
+# <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Criar uma interface do usuário usando o Designer XAML no Visual Studio
 
 O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a criar aplicativos Web e Windows baseados em XAML. Você pode criar interfaces do usuário para seus aplicativos arrastando controles da **Caixa de Ferramentas** e configurando propriedades na janela **Propriedades**. Você também pode editar XAML diretamente no modo de exibição XAML.
 
@@ -108,6 +108,9 @@ O zoom de marcação permite dimensionar o modo de exibição **XAML**. Você po
 
 ## <a name="device-window"></a>Janela Dispositivo
 
+> [!NOTE]
+> Se a versão da plataforma de destino (`TargetPlatformVersion`) de um aplicativo UWP for 10.0.16299.0 ou superior, a janela **Dispositivo** não estará disponível.
+
 A janela **Dispositivo** no Designer XAML permite simular no tempo de design vários modos de exibição, vídeos e opções de exibição para o projeto. A janela **Dispositivo** fica disponível no menu **Design** quando você está trabalhando no Designer XAML. Veja como ela se parece:
 
 ![Janela Dispositivo](../designers/media/xaml_editor_device_panel.png)
@@ -190,7 +193,7 @@ A janela **Propriedades** permite definir valores de propriedade em controles. V
 
 ![Janela de Propriedades](../designers/media/xaml_editor_prop_window.png)
 
-Há várias opções na parte superior da janela **Propriedades**. Você pode alterar o nome do elemento atualmente selecionado usando a caixa **Nome**. No canto esquerdo superior, há um ícone que representa o elemento atualmente selecionado. Para organizar as propriedades por categoria ou em ordem alfabética, clique em **Categoria**, **Nome** ou **Fonte** na lista **Organizar por**. Para ver a lista de eventos de um controle, clique no botão **Eventos**, que exibe um símbolo de relâmpago. Para pesquisar uma propriedade, comece a digitar o nome da propriedade na caixa **Propriedades de Pesquisa**. A janela **Propriedades** exibe as propriedades que correspondem à pesquisa à medida que você digita. Algumas propriedades permitem que você defina propriedades avançadas selecionando um botão de seta para baixo. Para obter mais informações de como usar propriedades e manipular eventos, confira [Quickstart: Adding controls and handling events](http://go.microsoft.com/fwlink/?LinkID=247983) (Guia de início rápido: adicionando controles e manipulando eventos)
+Há várias opções na parte superior da janela **Propriedades**. Você pode alterar o nome do elemento atualmente selecionado usando a caixa **Nome**. No canto esquerdo superior, há um ícone que representa o elemento atualmente selecionado. Para organizar as propriedades por categoria ou em ordem alfabética, clique em **Categoria**, **Nome** ou **Fonte** na lista **Organizar por**. Para ver a lista de eventos de um controle, clique no botão **Eventos**, que exibe um símbolo de relâmpago. Para pesquisar uma propriedade, comece a digitar o nome da propriedade na caixa **Propriedades de Pesquisa**. A janela **Propriedades** exibe as propriedades que correspondem à pesquisa à medida que você digita. Algumas propriedades permitem que você defina propriedades avançadas selecionando um botão de seta para baixo. Para obter mais informações de como usar propriedades e manipular eventos, confira [Introdução a controles e padrões](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)
 
 À direita de cada valor da propriedade, está um *marcador de propriedade* que é exibido como símbolo de caixa. A aparência do marcador da propriedade indica se existe uma associação de dados ou um recurso aplicado à propriedade. Por exemplo, um símbolo de caixa branca indica um valor padrão, um símbolo de caixa preta normalmente indica que um recurso local foi aplicado, e uma caixa laranja geralmente indica que uma associação de dados foi aplicada. Quando você clica no marcador da propriedade, pode navegar para a definição de um estilo, abrir o construtor da associação de dados ou abrir o selecionador de recurso.
 

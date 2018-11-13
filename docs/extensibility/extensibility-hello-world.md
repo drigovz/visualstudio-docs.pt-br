@@ -1,5 +1,5 @@
 ---
-title: Olá, mundo | Microsoft Docs
+title: Tutorial de extensão do Hello World | Microsoft Docs
 ms.custom: ''
 ms.date: 07/10/2017
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: e2122a98778372690990a75269be2f3087653678
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356750"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349459"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Criar sua primeira extensão: Olá, mundo
 
@@ -30,6 +30,9 @@ O processo, você aprenderá como:
 Neste exemplo, você usará o Visual c# para adicionar que um botão de menu personalizado chamado "Diga Hello World!" Isso se parece com isso:
 
 ![Comando do Hello World](media/hello-world-say-hello-world.png)
+
+> [!NOTE]
+> Este artigo se aplica ao Visual Studio no Windows. Para o Visual Studio para Mac, consulte [instruções passo a passo de extensibilidade no Visual Studio para Mac](/visualstudio/mac/extending-visual-studio-mac-walkthrough).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -133,6 +136,6 @@ Você deverá ver a saída do novo comando personalizado, neste caso, a caixa de
 
 Agora que você conhece os fundamentos de trabalhar com a extensibilidade do Visual Studio, aqui é onde você pode saber mais:
 
-* [Começar a desenvolver extensões do Visual Studio](starting-to-develop-visual-studio-extensions.md) -exemplos, tutoriais. e publicar sua extensão.
+* [Começar a desenvolver extensões do Visual Studio](starting-to-develop-visual-studio-extensions.md) -exemplos, tutoriais. e publicar sua extensão
 * [O que há de novo no SDK do Visual Studio 2017](what-s-new-in-the-visual-studio-2017-sdk.md) -novos recursos de extensibilidade do Visual Studio 2017
 * [Dentro do Visual Studio SDK](internals/inside-the-visual-studio-sdk.md) -Conheça os detalhes de extensibilidade do Visual Studio

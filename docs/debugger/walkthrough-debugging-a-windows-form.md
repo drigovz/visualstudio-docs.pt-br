@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fdd9dadc92143fabfaeea35d776b57b4b4c1748
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: dd847a4db232d32c941722d5ee537a21bdaf33a8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468524"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349160"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Instruções passo a passo: um Windows Form
 Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form cria um aplicativo padrão do Windows. Você pode concluir este passo a passo usando o Visual Basic, C# ou C++.  
@@ -59,7 +59,7 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
   
 4.  Clique em **OK**.  
   
-     O Visual Studio cria um novo projeto e exibe um novo formulário no designer do Windows Forms. Para obter mais informações, consulte [Designer de formulários do Windows](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
+     O Visual Studio cria um novo projeto e exibe um novo formulário no designer do Windows Forms. Para obter mais informações, consulte [Designer de formulários do Windows](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\)).  
   
 5.  Sobre o **modo de exibição** menu, selecione **caixa de ferramentas**.  
   
@@ -110,7 +110,7 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
     textBox1->Text = "Button was clicked!";  
     ``` 
   
-     Um ponto vermelho aparece e o texto da linha é realçado em vermelho. O ponto vermelho representa um ponto de interrupção. Para obter mais informações, consulte [pontos de interrupção](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Quando você executa o aplicativo no depurador, o depurador interromperá a execução nesse local quando o código é atingido. Você pode exibir o estado do aplicativo e depurá-lo.  
+     Um ponto vermelho aparece e o texto da linha é realçado em vermelho. O ponto vermelho representa um ponto de interrupção. Para obter mais informações, consulte [pontos de interrupção](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Quando você executa o aplicativo no depurador, o depurador interromperá a execução nesse local quando o código é atingido. Você pode exibir o estado do aplicativo e depurá-lo.  
   
     > [!NOTE]
     >  Você pode também clique qualquer linha de código, aponte para **ponto de interrupção**e, em seguida, clique em **Inserir ponto de interrupção** para adicionar um ponto de interrupção nessa linha.  

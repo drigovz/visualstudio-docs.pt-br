@@ -16,18 +16,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fea1b0fa804726cb43bdc5b6d866ceedc186924c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: edcbcb969e45403d9ca138b259073e3cf4d73be0
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780419"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349618"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Como: Mostrar a guia Desenvolvedor na faixa de opções
   Para acessar o **desenvolvedor** guia na faixa de opções de um aplicativo do Office, você deve configurá-lo para mostrar essa guia porque ela não aparece por padrão. Por exemplo, você deve mostrar essa guia se você deseja adicionar um <xref:Microsoft.Office.Tools.Word.GroupContentControl> para uma personalização no nível de documento para Word.  
   
 > [!NOTE]  
->  Essa orientação se aplica ao Office 2010 ou posterior apenas a aplicativos. Se você desejar mostrar essa guia no 2007 Microsoft Office System, consulte a seguinte versão deste tópico [como: Mostrar a guia Desenvolvedor na faixa de opções](http://msdn.microsoft.com/library/bb608625(v=vs.90).aspx).  
+>  Essa orientação se aplica ao Office 2010 ou posterior apenas a aplicativos. Se você desejar mostrar essa guia no 2007 Microsoft Office System, consulte a seguinte versão deste tópico [como: Mostrar a guia Desenvolvedor na faixa de opções](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   

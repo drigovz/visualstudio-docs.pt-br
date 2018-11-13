@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28b233f360e4a5fb066ae41b288dc0cdb2d610f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820456"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348741"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Implantar componentes do COM ClickOnce
 Implantação de componentes legados COM tradicionalmente tem sido uma tarefa difícil. Componentes precisam ser registrados globalmente e, portanto, podem causar efeitos colaterais indesejáveis entre aplicativos sobrepostos. Essa situação geralmente não é um problema em aplicativos .NET Framework porque componentes são completamente isolados para um aplicativo ou são compatíveis com o lado a lado. Visual Studio permite que você implante os componentes isolados no Windows XP ou o sistema de operacional superior.  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Fornece um mecanismo fácil e seguro para implantar seus aplicativos .NET. No entanto, se seus aplicativos usam componentes herdados, você precisará executar etapas adicionais para implantá-los. Este tópico descreve como implantar componentes isolados e fazer referência a componentes nativos (por exemplo, do Visual Basic 6.0 ou Visual C++).  
   
- Para obter mais informações sobre como implantar componentes do COM isolado, consulte "Simplifique a implantação de aplicativo com [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e COM sem registro" em [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Para obter mais informações sobre como implantar componentes do COM isolado, consulte [simplificam a implantação de aplicativos com o ClickOnce e COM sem registro](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).
   
 ## <a name="registration-free-com"></a>COM sem registro  
  COM sem registro é uma tecnologia nova para implantar e ativar os componentes isolados. Ele funciona, colocando a biblioteca de tipos de todas as do componente e informações de registro que normalmente são instaladas no registro do sistema em um arquivo XML chamado um manifesto, armazenados na mesma pasta que o aplicativo.  

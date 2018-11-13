@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 018d94f2952b8169890377410ff00baf1a80fd41
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 87536df138de092948d845cf05d20af8e63ad68a
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176379"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672139"
 ---
 # <a name="showwebbrowser-command"></a>Comando ShowWebBrowser
 
@@ -50,10 +50,10 @@ View.ShowWebBrowser URL [/new][/ext]
  O alias do comando **ShowWebBrowser** é **navegue** ou **nav**.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir exibe a home page do MSDN Online em um navegador da Web fora do IDE. Se uma instância do navegador da Web já estiver aberta, ela será usada; caso contrário, uma nova instância será iniciada.
+ O exemplo a seguir exibe a home page do Microsoft Docs em um navegador da Web fora do IDE. Se uma instância do navegador da Web já estiver aberta, ela será usada; caso contrário, uma nova instância será iniciada.
 
 ```cmd
->View.ShowWebBrowser http://msdn.microsoft.com /ext
+>View.ShowWebBrowser https://docs.microsoft.com /ext
 ```
 
 ## <a name="see-also"></a>Consulte também

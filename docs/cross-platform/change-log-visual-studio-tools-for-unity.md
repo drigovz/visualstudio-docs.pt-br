@@ -10,19 +10,19 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: cd23bbf09e79ac4f7763a563e361954d9cfde072
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: da2e91e15572a9904115926447523d8dba23a36a
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120673"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000720"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Windows)
 Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="3807"></a>3.8.0.7
  Lançado em 20 de setembro de 2018
- 
+
 ### <a name="bug-fixes"></a>Correções de bug
 
 -   **Depurador:**
@@ -31,7 +31,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="3806"></a>3.8.0.6
  Lançado em 27 de agosto de 2018
- 
+
 ### <a name="bug-fixes"></a>Correções de bug
 
 -   **Integração:**
@@ -40,7 +40,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="3805"></a>3.8.0.5
  Lançado em 20 de agosto de 2018
- 
+
 ### <a name="bug-fixes"></a>Correções de bug
 
 -   **Integração:**
@@ -49,13 +49,13 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="3804"></a>3.8.0.4
  Lançado em 14 de agosto de 2018
- 
+
 ### <a name="new-features"></a>Novos recursos
 
 -   **Avaliação:**
 
     -   Foi adicionado suporte para valores de ponteiro.
-    
+
     -   Foi adicionado suporte para métodos genéricos.
 
 ### <a name="bug-fixes"></a>Correções de bug
@@ -66,7 +66,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="3803"></a>3.8.0.3
  Lançado em 24 de julho de 2018
- 
+
 ### <a name="bug-fixes"></a>Correções de bug
 
 -   **Geração do Projeto:**
@@ -75,24 +75,24 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="3802"></a>3.8.0.2
  Lançado em 7 de julho de 2018
- 
+
 ### <a name="bug-fixes"></a>Correções de bug
 
 -   **Geração do Projeto:**
 
     -   Solução alternativa temporária para um bug de desempenho do Unity: armazenar em cache MonoIslands ao gerar projetos.
-    
+
 ## <a name="3801"></a>3.8.0.1
  Lançado em 26 de junho de 2018
- 
+
 ### <a name="new-features"></a>Novos recursos
 
 -   **Depuração:**
 
     -   Foi adicionado suporte para comandos UserLog e UserBreak.
-    
+
     -   Foi adicionado o suporte para carregamento do tipo lento (otimizando a carga da rede e a latência de resposta de depurador).
-       
+
 ### <a name="bug-fixes"></a>Correções de bug
 
 -   **Avaliação:**
@@ -101,19 +101,19 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ## <a name="3800"></a>3.8.0.0
  Lançado em 30 de maio de 2018
- 
+
 ### <a name="new-features"></a>Novos recursos
 
 -   **Depuração:**
 
     -   Foi adicionado suporte para exibir as variáveis em construções de assíncronas.
-    
+
     -   Foi adicionado suporte para o processamento de tipos aninhados ao definir pontos de interrupção, para evitar avisos em construções do compilador.
-    
+
 -   **Integração:**
 
     -   Foi adicionado suporte para gramáticas textmate para sombreadores (a carga de trabalho do C++ não é mais necessária para coloração de código do sombreador).
-    
+
 ### <a name="bug-fixes"></a>Correções de bug
 
 -   **Geração do Projeto:**
@@ -137,15 +137,15 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 -   **Depuração:**
 
     -   Adição de suporte para depuração orquestrada (depuração de vários players/editores na mesma sessão do Visual Studio).
-    
+
     -   Adição de suporte para depuração de player USB no Android.
-    
+
     -   Adição de suporte para depuração de player UWP/IL2CPP.
 
 -   **Avaliação:**
 
     -   Adição de suporte para especificadores hexadecimais.
-    
+
     -   Experiência de avaliação da janela de inspeção aprimorada.
 
 ### <a name="bug-fixes"></a>Correções de bug
@@ -841,9 +841,9 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 ### <a name="bug-fixes"></a>Correções de bug
 
--   Corrija a manipulação de temas do Visual Studio. Anteriormente, as caixas de diálogo em temas pretos podiam aparecer vazias (problemas de Conexão [nº 932637](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/932637/) e [nº 936439](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/936439/)).
+-   Corrija a manipulação de temas do Visual Studio. Anteriormente, as caixas de diálogo em temas pretos podiam aparecer vazias.
 
--   Corrija o congelamento do Unity ao conectar o depurador enquanto o Unity está recompilando (problemas de Conexão [nº 947119](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/947119/) e [nº 969211](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/969211/)).
+-   Corrija o congelamento do Unity ao conectar o depurador enquanto o Unity está recompilando.
 
 -   Corrija pontos de interrupção ao depurar editores ou jogadores remotos compilados em outro sistema.
 
@@ -853,7 +853,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 -   Corrija a manipulação de escopo de variáveis no depurador para evitar variáveis dinâmicas que pareçam fora do escopo.
 
--   Corrija a pesquisa de membros estáticos na Avaliação de Expressão do depurador (problema de Conexão [nº 953379](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/953379/)).
+-   Corrija a pesquisa de membros estáticos na Avaliação de Expressão do depurador.
 
 -   Corrija a exibição de tipos na Avaliação de Expressão do depurador para mostrar propriedades e campos estáticos.
 

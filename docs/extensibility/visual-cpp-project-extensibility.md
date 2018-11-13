@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 913ad2e785fcdb2067f89d0d4de2b250db40468b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850797"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349670"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema extensibilidade e conjunto de ferramentas de integração do Project
 
@@ -434,7 +434,7 @@ O sistema de projeto do Visual C++ se baseia a [sistema de projeto do VS](https:
 
 ### <a name="project-property-pages"></a>Páginas de propriedades do projeto
 
-Para obter informações gerais de design, consulte [extensibilidade da plataforma - parte 1](http://blogs.msdn.com/b/vsproject/archive/2009/06/10/platform-extensibility-part-1.aspx) e [extensibilidade da plataforma - parte 2](http://blogs.msdn.com/b/vsproject/archive/2009/06/18/platform-extensibility-part-2.aspx).
+Para obter informações gerais de design, consulte [extensibilidade da plataforma - parte 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) e [extensibilidade da plataforma - parte 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
 
 Em termos simples, as páginas de propriedades que você verá na **propriedades do projeto** caixa de diálogo para um projeto C++ são definidos pela *regra* arquivos. Um arquivo de regra especifica um conjunto de propriedades para mostrar em uma página de propriedades e como e onde eles devem ser salvos no projeto de arquivos. Arquivos de regras são arquivos. XML que usam o formato Xaml. Os tipos usados para serializá-los são descritos em [xamltypes](/dotnet/api/microsoft.build.framework.xamltypes). Para obter mais informações sobre o uso de arquivos de regras em projetos, consulte [arquivos de regras do XML da página de propriedade](/cpp/ide/property-page-xml-files).
 
