@@ -1,6 +1,6 @@
 ---
 title: Opções, Editor de Texto, C#, Avançado
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 16c92111fc29071447d4af5e736b881fa7c7a769
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 7cfbc6d57e5bfd3c6a8f317967448039a9b3f5e4
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356737"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670709"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opções, Editor de Texto, C#, Avançado
 
@@ -36,7 +36,7 @@ Use a página de opções **Avançado** para modificar as configurações de for
 
 - Colocar as diretivas “System” primeiro ao classificar os usos
 
-   Quando selecionado, o comando **Remover e classificar usos** no menu de clique com o botão direito classifica as diretivas `using` e coloca os namespaces "System" no topo da lista
+   Quando selecionado, o comando **Remover e classificar usos** no menu de clique com o botão direito do mouse classifica as diretivas `using` e coloca os namespaces "System" no topo da lista.
 
    Antes da classificação:
 
@@ -89,9 +89,10 @@ Use a página de opções **Avançado** para modificar as configurações de for
    using System.Linq;
    ```
    
-- Adicionar usos para tipos em assemblies de referência e pacotes do NuGet 
+- Sugerir usos para tipos em assemblies de referência 
+- Sugerir usos para tipos em pacotes NuGet 
 
-   Quando selecionado, uma [Ação Rápida](../quick-actions.md) está disponível para instalar um pacote do NuGet e adicionar uma diretriz `using` para tipos não referenciados.
+   Quando essas opções estiverem selecionadas, uma [Ação Rápida](../quick-actions.md) estará disponível para instalar um pacote NuGet e para adicionar uma diretiva `using` para tipos não referenciados.
 
    ![Ação rápida para instalar o pacote NuGet no Visual Studio](media/nuget-lightbulb.png)
   
@@ -106,6 +107,16 @@ Use a página de opções **Avançado** para modificar as configurações de for
 - Entre no modo estrutura de tópicos quando os arquivos abrem
 
    Quando selecionado, descreve o arquivo de código automaticamente, o que cria blocos de código recolhíveis. Na primeira vez que um arquivo é aberto, blocos #regions e blocos de códigos inativos são recolhidos.
+
+- Mostrar separadores de linha de procedimento
+
+   O editor de texto indica o escopo visual dos procedimentos. Uma linha é desenhada nos arquivos de origem *.vb* do seu projeto nos locais listados na tabela a seguir:
+
+   |Local no arquivo de origem .vb|Exemplo de local da linha|
+   |---------------------------------|------------------------------|
+   |Após o encerramento de um constructo de declaração de bloco|–   No final de uma classe, estrutura, módulo, interface ou enumeração<br />–   Depois de uma propriedade, função ou sub<br />–   Não entre cláusulas get e set em uma propriedade|
+   |Depois de um conjunto de constructos de linha única|–   Depois das instruções de importação, antes de uma definição de tipo em um arquivo de classe<br />–   Depois de variáveis declaradas em uma classe, antes de qualquer procedimento|
+   |Depois de declarações de linha única (declarações de nível não de bloco)|–   Após instruções de importação, instruções de herdar, declarações de variável, declarações de evento, declarações de delegado e instruções de declaração DLL|
 
 ## <a name="editor-help"></a>Ajuda do Editor
 

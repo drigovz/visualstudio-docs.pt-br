@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 689889e98a5a9b69a49e73ccea73f30fc3c25249
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e2204f10711db96033976cf7b4f7bd3639daf422
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274307"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349082"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Cadeias de caracteres de exibição em um visualizador de cadeia de caracteres no Visual Studio
 
@@ -43,9 +43,9 @@ Para abrir o Visualizador de cadeia de caracteres, você precisa ser interrompid
 
 ## <a name="view-string-visualizer-data"></a>Exibir dados do Visualizador de cadeia de caracteres
 
-Na janela do Visualizador de cadeia de caracteres, o **expressão** campo mostra a variável ou expressão que você está passando o mouse sobre, e o **valor** campo mostra o valor de cadeia de caracteres. 
+Na janela do Visualizador de cadeia de caracteres, o **expressão** campo mostra a variável ou expressão que você está passando o mouse sobre, e o **valor** campo mostra o valor de cadeia de caracteres.
 
-Um espaço em branco **valor** significa que o visualizador escolhido não reconhece a cadeia de caracteres. Por exemplo, o **Visualizador XML** mostra um espaço em branco **valor** para uma cadeia de caracteres de texto sem marcas XML ou uma cadeia de caracteres JSON. 
+Um espaço em branco **valor** significa que o visualizador escolhido não reconhece a cadeia de caracteres. Por exemplo, o **Visualizador XML** mostra um espaço em branco **valor** para uma cadeia de caracteres de texto sem marcas XML ou uma cadeia de caracteres JSON.
 
 Para exibir cadeias de caracteres que o visualizador escolhido não pode reconhecer, escolha o **Visualizador de texto**. O **Visualizador de texto** mostra texto sem formatação.
 
@@ -67,5 +67,7 @@ Uma cadeia de caracteres HTML bem formada aparece como se renderizado em um nave
 
 ![Visualizador de cadeia de caracteres HTML](../debugger/media/dbg-string-visualizers-html.png "Visualizador de cadeia de caracteres de HTML")
 
-## <a name="see-also"></a>Consulte também  
- [Criar visualizadores personalizados (c#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+## <a name="see-also"></a>Consulte também
+
+- [Criar visualizadores personalizados (c#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+- [Visualizações de dados no Visual Studio para Mac](/visualstudio/mac/data-visualizations)

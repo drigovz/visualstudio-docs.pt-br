@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ab47830d0d6f3c221d08f6869bd8efcbe5b4ff9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 4b32f5585c71f5767a907d9f3eb9c2dc8329ab97
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859712"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348872"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analisar e modelar a sua arquitetura
 
@@ -112,4 +112,4 @@ Uma DSL é uma notação de design para uma finalidade específica. No Visual St
 ## <a name="see-also"></a>Consulte também
 
 - [O que há de novo](../modeling/what-s-new-for-design-in-visual-studio.md)
-- [DevOps e gerenciamento de ciclo de vida do aplicativo](http://msdn.microsoft.com/Library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps e gerenciamento de ciclo de vida do aplicativo](/azure/devops/user-guide/devops-alm-overview)

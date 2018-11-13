@@ -73,9 +73,9 @@ A primeira coisa a considerar ao definir o estilo de controles é se os controle
   
 -   Campos de entrada devem ser dimensionados para caber o conteúdo não se ajustar à largura da janela na qual eles são mostrados, nem arbitrariamente corresponde ao tamanho de um campo longo, como um caminho. Comprimento pode ser uma indicação ao usuário de limitações sobre quantos caracteres é permitido no campo.  
   
-     ![Tamanho do campo de entrada incorreta: é improvável que o nome será longo. ] (../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl")<br />Tamanho do campo de entrada incorreta: é improvável que o nome será longo.
+     ![Tamanho do campo de entrada incorreta: é improvável que o nome será longo. ](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl")<br />Tamanho do campo de entrada incorreta: é improvável que o nome será longo.
   
-     ![Corrija o comprimento do campo de entrada: o campo de entrada é uma largura razoável para o conteúdo esperado. ] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Corrija o comprimento do campo de entrada: o campo de entrada é uma largura razoável para o conteúdo esperado.
+     ![Corrija o comprimento do campo de entrada: o campo de entrada é uma largura razoável para o conteúdo esperado. ](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Corrija o comprimento do campo de entrada: o campo de entrada é uma largura razoável para o conteúdo esperado.
   
 ###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Caixas de combinação e listas suspensas  
 Para o comportamento de interação típica, execute as [diretrizes de área de trabalho do Windows para listas suspensas e caixas de combinação](/windows/desktop/uxguide/ctrl-drop).  
@@ -89,9 +89,9 @@ Para o comportamento de interação típica, execute as [diretrizes de área de 
 #### <a name="layout"></a>Layout  
 Suspensos e caixas de combinação devem ser ajustados para caber o conteúdo não se ajustar à largura da janela na qual eles são mostrados, nem arbitrariamente corresponde ao tamanho de um campo longo, como um caminho.  
   
-![Incorreto: a largura da lista suspensa é muito longa para o conteúdo que será exibido. ] (../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707 03_IncorrectDropDownLayout")<br />Incorreto: a largura da lista suspensa é muito longa para o conteúdo que será exibido.
+![Incorreto: a largura da lista suspensa é muito longa para o conteúdo que será exibido. ](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707 03_IncorrectDropDownLayout")<br />Incorreto: a largura da lista suspensa é muito longa para o conteúdo que será exibido.
   
-![Correto: na lista suspensa é dimensionada para permitir o crescimento de tradução, mas não desnecessariamente longas. ] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Correto: na lista suspensa é dimensionada para permitir o crescimento de tradução, mas não desnecessariamente longas. 
+![Correto: na lista suspensa é dimensionada para permitir o crescimento de tradução, mas não desnecessariamente longas. ](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Correto: na lista suspensa é dimensionada para permitir o crescimento de tradução, mas não desnecessariamente longas. 
   
 ###  <a name="BKMK_CheckBoxes"></a> Caixas de seleção  
 Para o comportamento de interação típica, execute as [diretrizes de área de trabalho do Windows para as caixas de seleção](/windows/desktop/uxguide/ctrl-check-boxes).  
@@ -108,9 +108,9 @@ Para o comportamento de interação típica, execute as [diretrizes de área de 
   
 -   Alinhe as caixas de seleção com a linha de base da primeira linha de texto.  
   
-     ![Incorreto: a caixa de seleção é centralizada no texto. ] (../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign")<br />Incorreto: a caixa de seleção é centralizada no texto.
+     ![Incorreto: a caixa de seleção é centralizada no texto. ](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign")<br />Incorreto: a caixa de seleção é centralizada no texto.
   
-     ![Correto: a caixa de seleção é alinhada com a primeira linha do texto. ] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Correto: a caixa de seleção é alinhada com a primeira linha do texto.
+     ![Correto: a caixa de seleção é alinhada com a primeira linha do texto. ](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Correto: a caixa de seleção é alinhada com a primeira linha do texto.
   
 ###  <a name="BKMK_RadioButtons"></a> Botões de opção  
 Para o comportamento de interação típica, execute as [diretrizes de área de trabalho do Windows para botões de opção](/windows/desktop/uxguide/ctrl-radio-buttons).  
@@ -346,9 +346,9 @@ Controles de exibição de árvore devem estar de acordo com o design de expanso
 #### <a name="selection"></a>Seleção  
 Quando um nó é selecionado na exibição de árvore, o realce deve expandir para a largura total do controle de exibição de árvore. Isso ajuda os usuários a identificar claramente qual item que foi selecionado. Cores de seleção devem refletir o tema atual do Visual Studio.  
   
-![Correto: realce do nó selecionado se encaixa em toda a largura do controle de exibição de árvore. ] (../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />Correto: realce do nó selecionado se encaixa em toda a largura do controle de exibição de árvore.
+![Correto: realce do nó selecionado se encaixa em toda a largura do controle de exibição de árvore. ](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />Correto: realce do nó selecionado se encaixa em toda a largura do controle de exibição de árvore.
   
-![Incorreta: o realce do nó selecionado não couber toda a largura do controle de exibição de árvore. ] (../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />Incorreta: o realce do nó selecionado não couber toda a largura do controle de exibição de árvore.
+![Incorreta: o realce do nó selecionado não couber toda a largura do controle de exibição de árvore. ](../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />Incorreta: o realce do nó selecionado não couber toda a largura do controle de exibição de árvore.
   
 #### <a name="icons"></a>Ícones  
 Ícones só devem ser usados em controles de exibição de árvore, se eles ajudar a identificar visualmente as diferenças entre os itens. Em geral, os ícones devem ser usados apenas em listas heterogêneas nos quais os ícones transportam informações para diferenciar os tipos de elementos. Em uma lista homogênea usando ícones com frequência pode ser visto como o ruído e deve ser evitado. Nesse caso, o ícone do grupo (pai) pode transmitir o tipo de itens dentro dela. A exceção a essa regra seria se o ícone é dinâmico e é usado para indicar o estado.  
@@ -356,14 +356,14 @@ Quando um nó é selecionado na exibição de árvore, o realce deve expandir pa
 #### <a name="scroll-bars"></a>Barras de rolagem  
 Barras de rolagem sempre deverão estar ocultos se o conteúdo caiba no controle de exibição de árvore. É aceitável para barras de rolagem ser ocultos ou semitransparente em uma janela rolável e aparecem quando a janela que contém a exibição de árvore tem o foco ou após a passagem da árvore de exibir em si.  
   
-![Ambas as barras de rolagem vertical e horizontal são exibidas porque o conteúdo excederam os limites do controle de exibição de árvore. ] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Ambas as barras de rolagem vertical e horizontal são exibidas porque o conteúdo excederam os limites do controle de exibição de árvore.
+![Ambas as barras de rolagem vertical e horizontal são exibidas porque o conteúdo excederam os limites do controle de exibição de árvore. ](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Ambas as barras de rolagem vertical e horizontal são exibidas porque o conteúdo excederam os limites do controle de exibição de árvore.
   
 ###  <a name="BKMK_TreeViewInteractions"></a> Interações de modo de exibição de árvore  
   
 #### <a name="context-menus"></a>Menus de contexto  
 Um nó do modo de exibição de árvore pode revelar as opções do submenu em um menu de contexto. Normalmente, isso ocorre quando um usuário tem pequeno um item ou pressionou a tecla de Menu em um teclado do Windows com o item selecionado. É importante que o nó obtém foco e está selecionado. Isso ajuda o usuário a identificar qual item de submenu pertence.  
   
-![O item que tem geram o foco de ganhos de menu de contexto para notificar o usuário que o item foi selecionado. ] (../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />O item que tem geram o foco de ganhos de menu de contexto para notificar o usuário que o item foi selecionado.
+![O item que tem geram o foco de ganhos de menu de contexto para notificar o usuário que o item foi selecionado. ](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />O item que tem geram o foco de ganhos de menu de contexto para notificar o usuário que o item foi selecionado.
   
 #### <a name="keyboard"></a>Teclado  
 O modo de exibição de árvore deve fornecer a capacidade de selecionar itens e expandir/recolher nós usando o teclado. Isso garante que a navegação atende aos nossos requisitos de acessibilidade.  

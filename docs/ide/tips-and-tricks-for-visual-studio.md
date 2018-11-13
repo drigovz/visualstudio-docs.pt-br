@@ -1,6 +1,6 @@
 ---
 title: Atalhos de teclado do Visual Studio
-ms.date: 06/21/2017
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321275"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220847"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Atalhos de teclado para o Visual Studio
 
@@ -73,6 +73,11 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos de 
 
 |Comando|Atalho|Disponibilidade de versão|
 |-|-|-|
+|Ir para Todos|**Ctrl**+**T**|
+|Ir para Arquivos Recentes|**Ctrl**+**T**,**R**|
+|Pontos de inserção múltiplos com vários cursores|**Ctrl**+**Alt**+**clique**|
+|Adicionar seleção de correspondência com vários cursores|**Shift**+**Alt**+**Ins**|
+|Formatar Documento|**Ctrl**+**K**,**D**|Visual Studio 2017 versão 15.8|
 |Modo de Sugestão do IntelliSense|**Ctrl**+**Alt**+**Espaço** (Ativar/desativar)||
 |Forçar a exibição do IntelliSense|**Ctrl**+**J**||
 |Ações Rápidas|**Ctrl**+**.**||
@@ -95,6 +100,9 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos de 
 |Navegar entre várias janelas Inspecionar Definição|**Ctrl**+**Alt**+**-** e **Ctrl**+**Alt**+**=**||
 |Navegar entre vários resultados de espiada|**F8** e **Shift**+**F8**||
 |Alterne entre a janela do editor de códigos e a janela de definição de auge|**Shift**+**Esc**||
+|Ir para o bloco delimitador|**Ctrl**+**Alt**+**UpArrow**|
+|Ir para o problema seguinte/anterior|**Alt**+**PgUp**/**PgDn**|
+|Menu de navegação contextual|**Alt**+**`**|
 
 ## <a name="toolbars"></a>Barras de ferramentas
 
@@ -128,4 +136,4 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos de 
 
 - [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md)
 - [Atalhos de teclado (Azure DevOps Services e TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Blog de dicas e truques sobre o Visual Studio](http://blogs.msdn.com/b/zainnab)
+- [Blog de dicas e truques sobre o Visual Studio](https://blogs.msdn.com/b/zainnab)
