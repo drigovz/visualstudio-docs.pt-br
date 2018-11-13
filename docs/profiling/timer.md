@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 914b0c3e493e8486247704ef22967c8ccd511ed2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668052"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744997"
 ---
 # <a name="timer"></a>Temporizador
 A opção **Timer** do *VSPerfCmd.exe* define o evento de criação de perfil com amostragem para ciclos de relógio do processador e, como opção, altera o número de ciclos em um intervalo de amostragem do padrão de 10.000.000. Em um processador de 1 GHz (um gigahertz), 10.000.000 ciclos de relógio são aproximadamente 100 amostras por segundo. O número mínimo de ciclos que pode ser especificado é 50.000.  

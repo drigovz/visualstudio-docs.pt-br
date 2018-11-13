@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 261eef97d6b76d5cc793ecb34d2697abc717e0ca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70a06548dd25ade1bf64bad6a99261e043f6ac65
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920892"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670826"
 ---
 # <a name="options-page-debugging-node-properties"></a>Página de Opções, Depuração, Propriedades do Nó
 As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) associadas à categoria **Depuração**, `DTE.Properties("Debugging", <Property Page>)` da caixa de diálogo **Opções**.
@@ -81,10 +81,10 @@ As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) ass
 
 ## <a name="see-also"></a>Consulte também
 
-- [Controlando as configurações de opções](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [Determinando os nomes dos itens de propriedade nas páginas de opções](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Controlando as configurações de opções](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Determinando os nomes dos itens de propriedade nas páginas de opções](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Página de Opções, Propriedades do Nó de Fontes e Cores](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Página de Opções, Propriedades do Nó de Editor de Texto](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Caixa de diálogo Geral, Depuração, Opções](../../debugger/general-debugging-options-dialog-box.md)
-- [Caixa de diálogo Editar e Continuar, Depuração, Opções](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+- [Caixa de diálogo Editar e Continuar, Depuração, Opções](/visualstudio/debugger/edit-and-continue?view=vs-2015)
 - [Caixa de diálogo Just-In-Time, Depuração, Opções](../../debugger/just-in-time-debugging-options-dialog-box.md)

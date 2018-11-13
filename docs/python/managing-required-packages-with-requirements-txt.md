@@ -1,7 +1,7 @@
 ---
 title: Usando um arquivo requirements.txt para gerenciar requisitos do pacote
-description: Você pode usar um arquivo requirements.txt para gerenciar as dependências de um projeto. Se você receber um projeto que contém um arquivo requirements.txt, você pode instalar facilmente essas dependências em uma única etapa.
-ms.date: 06/27/2018
+description: Um arquivo requirements.txt descreve as dependências de um projeto. Se você receber um projeto que contém um arquivo requirements.txt, você pode instalar facilmente essas dependências em uma única etapa.
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: efefda9fb5eb863550684511a5c0834f5d43f7fd
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 49f87ff5836188d6fefb80feac94b27902de7968
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100907"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218396"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gerenciar os pacotes necessários com requirements.txt
 
-Se você está compartilhando um projeto com outras pessoas, está usando um sistema de compilação ou pretende implantá-lo em qualquer outro local em que precise restaurar um ambiente, precisa especificar os pacotes externos exigidos pelo projeto. A abordagem recomendada é usar um [arquivo requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) que contém uma lista de comandos do PIP que instala as versões necessárias dos pacotes dependentes.
+Se você compartilha um projeto com outras pessoas, usa um sistema de build ou planeja copiar o projeto para qualquer outra localização em que precise restaurar um ambiente, você precisa especificar os pacotes externos exigidos pelo projeto. A abordagem recomendada é usar um [arquivo requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) que contém uma lista de comandos do PIP que instala as versões necessárias dos pacotes dependentes. O comando mais comum é `pip freeze > requirements.txt`, que registra a lista atual de pacotes de um ambiente no *requirements.txt*.
 
 Tecnicamente, qualquer nome de arquivo pode ser usado para acompanhar os requisitos (usando `-r <full path to file>` durante a instalação de um pacote), mas o Visual Studio fornece suporte específico para *requirements.txt*:
 
@@ -65,7 +65,7 @@ Cleaning up...
     Removing temporary dir C:\Project\env\build...
 ```
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 
 - [Gerenciar ambientes do Python no Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Selecionar um intérprete para um projeto](selecting-a-python-environment-for-a-project.md)

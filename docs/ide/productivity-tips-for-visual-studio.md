@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c5c93edd089c09fff1423b7375bebb10dc18168
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 362004cba4792fe2405d6cc009a0ae918fdd535e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179626"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671294"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Dicas de produtividade para o Visual Studio
 
@@ -34,9 +34,9 @@ Escreva código mais rapidamente usando os seguintes recursos.
 
      Para habilitar o modo de sugestão, escolha as teclas **Ctrl**+**Alt**+**Barra de espaço** ou, na barra de menus, escolha **Editar** > **IntelliSense** > **Ativar/Desativar Modo de Preenchimento**.
 
-- **Use trechos de código**. Você pode usar trechos internos ou criar seus próprios trechos.
+- **Use snippets de código**. Você pode usar snippets internos ou criar seus próprios snippets.
 
-     Para inserir um trecho, na barra de menus, escolha **Editar** > **IntelliSense** > **Inserir Trecho** ou **Cercar com**, ou abra o menu de atalho em um arquivo e escolha **Trecho** > **Inserir Trecho** ou **Cercar com**. Para obter mais informações, consulte [Trechos de Código](../ide/code-snippets.md).
+     Para inserir um snippet, na barra de menus, escolha **Editar** > **IntelliSense** > **Inserir Snippet** ou **Cercar com**, ou abra o menu de atalho em um arquivo e escolha **Trecho** > **Inserir Snippet** ou **Cercar com**. Para obter mais informações, consulte [Snippets de Código](../ide/code-snippets.md).
 
 - **Corrija erros de código embutidos**. As Ações Rápidas permitem refatorar, gerar ou, de outro modo, modificar o código de maneira fácil com uma única ação. Essas ações podem ser aplicadas usando os ícones de chave de fenda ![ícone de chave de fenda](media/screwdriver-icon.png) ou de lâmpada ![ícone de lâmpada](media/light-bulb-icon.png) ou pressionando **Alt**+**Enter** ou **Ctrl**+**.** quando o cursor estiver sobre a linha de código apropriada. Consulte [Ações Rápidas](quick-actions.md) para obter mais informações.
 
@@ -78,7 +78,7 @@ Você pode procurar no IDE comandos, arquivos e opções, bem como filtrar o con
 
 A depuração pode consumir muito tempo, mas as dicas a seguir podem ajudar a acelerar o processo.
 
-- **Teste a mesma página, aplicativo ou site em navegadores diferentes**. À medida que você depura seu código, poderá facilmente mudar entre os navegadores da Web instalados, incluindo o [Inspetor de Página (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), sem ter que abrir a caixa de diálogo **Procurar Com**. Você pode usar a lista **Destino de Depuração**, que está na barra de ferramentas **Standard** ao lado do botão **Iniciar Depuração**, para verificar rapidamente qual navegador está utilizando enquanto depura ou exibe as páginas.
+- **Teste a mesma página, aplicativo ou site em navegadores diferentes**. À medida que você depura seu código, poderá facilmente mudar entre os navegadores da Web instalados, incluindo o [Inspetor de Página (Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), sem ter que abrir a caixa de diálogo **Procurar Com**. Você pode usar a lista **Destino de Depuração**, que está na barra de ferramentas **Standard** ao lado do botão **Iniciar Depuração**, para verificar rapidamente qual navegador está utilizando enquanto depura ou exibe as páginas.
 
     ![Selecionar opções de depuração de navegador da Web](../ide/media/webbrowserdropdowntoolbar.png)
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c85ce933f7ec1c19304a2c0d0fc4c1001df91823
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65da91ea1182a5c14d6c4b27057b6561221077e8
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929797"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220822"
 ---
 # <a name="summary-view"></a>Exibição resumida
 A exibição de resumo exibe informações sobre as funções ou os objetos de desempenho mais caro em uma execução de criação de perfil. Essa exibição fornece um gráfico de linha do tempo e listas de duas ou mais das funções mais caras ou objetos com base nas métricas de desempenho do método de criação de perfil. Os dados nessa exibição dependem do método de criação de perfil que foi usado (amostragem, instrumentação ou simultaneidade) e se a alocação de memória .NET foi coletada.  
@@ -52,8 +52,8 @@ A exibição de resumo exibe informações sobre as funções ou os objetos de d
 | **Exibir Árvore de Chamadas Cortada** | Exibe os caminhos de execução mais caros no modo de exibição de árvore de chamada. Para obter mais informações, confira [Exibição Árvore de Chamadas](../profiling/call-tree-view.md). |
 | **Mostrar linhas de acesso** | Não disponível para criação de perfil de dados que foram coletados usando o método de instrumentação. Exibe as linhas de código-fonte mais caras na exibição de linhas. Para obter mais informações, confira [Exibição Linhas](../profiling/lines-view.md). |
 | **Comparar Relatórios** | Exibe o **selecionar arquivos de análise para comparação** caixa de diálogo na qual você pode especificar outro arquivo de dados de criação de perfil a ser comparado com o arquivo atual. Para obter mais informações, confira [Comparar arquivos de dados de desempenho](../profiling/comparing-performance-data-files.md). |
-| **Exportar Dados de Relatório** | Exibe a caixa de diálogo **Exportar relatório**, na qual você pode especificar um ou mais modos de exibição de relatório para salvar como valores separados por vírgulas (. csv) ou arquivos .xml. Para obter mais informações, confira [Como exportar relatórios de ferramentas de criação de perfil](http://msdn.microsoft.com/en-us/174b5bd3-df9b-4fd4-88d4-76032ab90451). |
-| **Salvar relatório analisado** | Salva o arquivo de dados de criação de perfil atual como um arquivo .vsps, que abre mais rapidamente na interface para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Para obter mais informações, confira [Como salvar arquivos de dados de perfis analisados](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556). |
+| **Exportar Dados de Relatório** | Exibe a caixa de diálogo **Exportar relatório**, na qual você pode especificar um ou mais modos de exibição de relatório para salvar como valores separados por vírgulas (. csv) ou arquivos .xml. Para obter mais informações, confira [Como exportar relatórios de ferramentas de criação de perfil](/previous-versions/visualstudio/visual-studio-2010/ms182394\(v\=vs.100\)). |
+| **Salvar relatório analisado** | Salva o arquivo de dados de criação de perfil atual como um arquivo .vsps, que abre mais rapidamente na interface para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Para obter mais informações, confira [Como salvar arquivos de dados de perfis analisados](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\)). |
 | **Filtrar Dados de Relatório** | Exibe o painel de filtro de relatório perfil no qual você pode especificar critérios para restringir os dados na exibição do relatório. Para obter mais informações, confira [Filtro de exibição de relatório de desempenho](../profiling/performance-report-view-filter.md) |
 | **Alternar Tela Inteira** | Alterna o modo de tela inteira para o modo de exibição de relatório. |
 

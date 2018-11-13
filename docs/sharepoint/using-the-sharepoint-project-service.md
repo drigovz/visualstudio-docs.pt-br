@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a74f2b7a2810a268c68306490dbbe2c197f0c72
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a5d4c2950754ebbef2920720cf784084b2968a82
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118348"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295053"
 ---
 # <a name="use-the-sharepoint-project-service"></a>Usar o serviço de projeto do SharePoint
   O sistema de projeto do SharePoint inclui um serviço de projeto que você pode usar para executar tarefas relacionadas ao sistema de projeto. O serviço de projeto é um <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objeto.  
@@ -50,5 +50,5 @@ ms.locfileid: "37118348"
  [Como: recuperar o serviço de projeto do SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
  [Estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [Extensões de ferramentas de visão geral do modelo de programação do SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
- [Como obter um serviço do objeto DTE](http://msdn.microsoft.com/library/bb166401.aspx)  
+ [Como obter um serviço do objeto DTE](https://msdn.microsoft.com/library/bb166401.aspx)  
   

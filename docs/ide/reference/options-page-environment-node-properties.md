@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07031432218f2d4e0eb037582f2b1f5a76193cdb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e22b24889a14d49afddd3c30858814ddec663e6a
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879748"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672724"
 ---
 # <a name="options-page-environment-node-properties"></a>Página de Propriedades, Ambiente, Propriedades do Nó
 Este documento descreve as páginas (ou coleções de propriedades) associadas a uma categoria **Ambiente**, `DTE.Properties("Environment", <Property Page>)`, da caixa de diálogo **Opções**. O título de cada subseção é a chamada usada para acessar a coleção Propriedades e a tabela em cada subseção lista as propriedades na coleção.
@@ -161,8 +161,8 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 
 ## <a name="see-also"></a>Consulte também
 
-- [Controlando as configurações de opções](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [Determinando os nomes dos itens de propriedade nas páginas de opções](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Controlando as configurações de opções](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Determinando os nomes dos itens de propriedade nas páginas de opções](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Página de Opções, Propriedades do Nó de Fontes e Cores](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Página de Opções, Propriedades do Nó de Editor de Texto](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)

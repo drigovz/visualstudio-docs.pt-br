@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4eb5b3a73d2b06123e7878ac90ceb5bdf21869c
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: b7f492c1a192f8c12418c679f498bf282859cbf3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143158"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671879"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Caixa de diálogo Navegador da Web, Ambiente, Opções
 Define opções para o navegador da Web interno e o Internet Explorer. Para acessar essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda a pasta **Ambiente** e selecione **Navegador da Web**.
@@ -53,7 +53,7 @@ Define opções para o navegador da Web interno e o Internet Explorer. Para aces
 
 -   **Editor de origem** Selecione para exibir a fonte no [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **Editor de HTML** Selecione para exibir a fonte no [designer de HTML](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use essa seleção para editar a página da Web em uma das duas exibições: modo de exibição de Design ou a exibição de Fonte padrão baseada em texto.
+-   **Editor de HTML** Selecione para exibir a fonte no [designer de HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use essa seleção para editar a página da Web em uma das duas exibições: modo de exibição de Design ou a exibição de Fonte padrão baseada em texto.
 
 -   **Editor externo** Selecione para exibir a fonte em outro editor. Especifique o caminho de um editor escolhido, por exemplo, Notepad.exe.
 
@@ -68,4 +68,4 @@ Clique para alterar as opções do Internet Explorer na caixa de diálogo **Prop
 
 - [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)
-- [Designer de HTML](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)
+- [Designer de HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)
