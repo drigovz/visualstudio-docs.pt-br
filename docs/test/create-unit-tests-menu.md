@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c8f0f0aeab7256c15c423678de2cdc7e88b1eb2
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 55b6af26064edc3eecb942b70aa2b4f5bc5307fd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135543"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296405"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Criar stubs de método de teste de unidade com o comando Criar Testes de Unidade
 
@@ -62,11 +62,11 @@ As extensões da estrutura de teste também estão disponíveis no Visual Studio
 
 ## <a name="when-should-i-use-this-feature"></a>Quando devo usar esse recurso?
 
-Use esse recurso sempre que precisar criar testes de unidade, mas especialmente quando estiver testando um código existente que tem pouca ou nenhuma cobertura de teste e nenhuma documentação. Em outras palavras, onde há uma especificação de código limitada ou inexistente. Ela implementa efetivamente uma abordagem semelhante aos [Testes de unidade inteligentes](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/19/introducing-smart-unit-tests.aspx) que caracterizam o comportamento observado do código.
+Use esse recurso sempre que precisar criar testes de unidade, mas especialmente quando estiver testando um código existente que tem pouca ou nenhuma cobertura de teste e nenhuma documentação. Em outras palavras, onde há uma especificação de código limitada ou inexistente. Ela implementa efetivamente uma abordagem semelhante aos [Testes de unidade inteligentes](https://blogs.msdn.microsoft.com/devops/2014/11/19/introducing-smart-unit-tests/) que caracterizam o comportamento observado do código.
 
 No entanto, esse recurso é igualmente aplicável para a situação em que o desenvolvedor começa escrevendo um código e o usa para inicializar a disciplina de teste de unidade. Dentro do fluxo de codificação, o desenvolvedor talvez queira criar rapidamente um stub de método de teste de unidade (com uma classe de teste adequada e um projeto de teste adequado) para uma determinada parte do código.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Criar stubs de método de teste de unidade com "Criar testes de unidade"](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)
+- [Criar stubs de método de teste de unidade com "Criar testes de unidade"](https://blogs.msdn.microsoft.com/devops/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)
 - [Postagens de blog sobre testes de unidade](https://blogs.msdn.microsoft.com/devops/?s=unit+testing)

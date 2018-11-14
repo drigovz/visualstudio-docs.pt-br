@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93335be347e9c2ae66045bc49f9609d6cb3a929d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: deddf46a479e0ab8d4e0bebbaf3fffe4d90b622d
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379768"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51293441"
 ---
 # <a name="sample-code-for-testing"></a>Código de exemplo para testes
 
@@ -27,7 +27,7 @@ Esse código de exemplo contém uma classe, *BankAccount*, com vários métodos 
 O código é usado nos seguintes guias passo a passo:
 
 - [Criar e executar testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Este passo a passo orienta você pelas etapas para criar e personalizar testes de unidade, executá-los e examinar os resultados de teste.
-- [Usar o utilitário de teste de linha de comando](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). Neste passo a passo, você usará o utilitário de linha de comando *MSTest.exe* para executar testes e exibir os resultados.
+- [Usar o utilitário de teste de linha de comando](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). Neste passo a passo, você usará o utilitário de linha de comando *MSTest.exe* para executar testes e exibir os resultados.
 
 ## <a name="sample-code"></a>Código de exemplo
 
@@ -135,4 +135,4 @@ Para trabalhar com esse código, crie primeiro um projeto para ele no Visual Stu
 ## <a name="see-also"></a>Consulte também
 
 - [Passo a passo: criar e executar testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-- [Passo a passo: usar o utilitário de teste de linha de comando](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+- [Passo a passo: usar o utilitário de teste de linha de comando](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
