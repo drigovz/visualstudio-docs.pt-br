@@ -38,25 +38,25 @@ Comece criando um novo arquivo e adicionando códigos nele.
 
    ![Arquivo de código C# no Visual Studio](media/quickstart-editor.png)
 
-## <a name="use-code-snippets"></a>Usar trechos de código
+## <a name="use-code-snippets"></a>Usar snippets de código
 
-O Visual Studio fornece *trechos de código* úteis que você pode usar para gerar os blocos de código usados com frequência de forma rápida e fácil. Os [trechos de código](../ide/code-snippets.md) estão disponíveis para linguagens de programação diferentes, incluindo C#, Visual Basic e C++. Vamos adicionar o trecho `void Main` de C# em nosso arquivo.
+O Visual Studio fornece *snippets de código* úteis que você pode usar para gerar os blocos de código usados com frequência de forma rápida e fácil. Os [snippets de código](../ide/code-snippets.md) estão disponíveis para linguagens de programação diferentes, incluindo C#, Visual Basic e C++. Vamos adicionar o snippet `void Main` de C# em nosso arquivo.
 
 1. Coloque o cursor logo acima da chave de fechamento final **}** no arquivo e digite os caracteres `svm` (que significam `static void Main`&mdash;não se preocupe muito se você não sabe o que isso significa).
 
-   Uma caixa de diálogo pop-up é exibida com informações sobre o trecho de código `svm`.
+   Uma caixa de diálogo pop-up é exibida com informações sobre o snippet de código `svm`.
 
-   ![IntelliSense para o trecho de código no Visual Studio](media/quickstart-intellisense-snippet.png)
+   ![IntelliSense para o snippet de código no Visual Studio](media/quickstart-intellisense-snippet.png)
 
-1. Pressione a **Guia** duas vezes para inserir o trecho de código.
+1. Pressione a **Guia** duas vezes para inserir o snippet de código.
 
    Você verá que a assinatura do método `static void Main()` será adicionada ao arquivo. O método [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) é o ponto de entrada para aplicativos C#.
 
-Os trechos de código disponíveis variam em linguagens de programação diferentes. Examine os trechos de código disponíveis para a linguagem escolhendo **Editar** > **IntelliSense** > **Inserir Trecho** e, em seguida, escolhendo a pasta da linguagem. Para o C#, a lista tem este aspecto:
+Os snippets de código disponíveis variam em linguagens de programação diferentes. Examine os snippets de código disponíveis para a linguagem escolhendo **Editar** > **IntelliSense** > **Inserir Snippet** e, em seguida, escolhendo a pasta da linguagem. Para o C#, a lista tem este aspecto:
 
-![Lista de trecho de código de C#](media/quickstart-code-snippet-list.png)
+![Lista de snippet de código de C#](media/quickstart-code-snippet-list.png)
 
-A lista inclui trechos para a criação de uma [classe](/dotnet/csharp/programming-guide/classes-and-structs/classes), um [construtor](/dotnet/csharp/programming-guide/classes-and-structs/constructors), um loop [for](/dotnet/csharp/language-reference/keywords/for), uma instrução [if](/dotnet/csharp/language-reference/keywords/if-else) ou [switch](/dotnet/csharp/language-reference/keywords/switch) e muito mais.
+A lista inclui snippets para a criação de uma [classe](/dotnet/csharp/programming-guide/classes-and-structs/classes), um [construtor](/dotnet/csharp/programming-guide/classes-and-structs/constructors), um loop [for](/dotnet/csharp/language-reference/keywords/for), uma instrução [if](/dotnet/csharp/language-reference/keywords/if-else) ou [switch](/dotnet/csharp/language-reference/keywords/switch) e muito mais.
 
 ## <a name="comment-out-code"></a>Comentar o código
 
@@ -130,7 +130,7 @@ O [IntelliSense](../ide/using-intellisense.md) é um recurso valioso quando voc�
 
 1. Para inserir o restante da palavra `query` usando a funcionalidade de preenchimento de palavras do IntelliSense, pressione **Tab**.
 
-1. Finalize o bloco de código para que ele se pareça com o seguinte código. Você mesmo pode praticar usando os trechos de código novamente ao inserir `cw` e, então, pressionar a **Guia** duas vezes para gerar o código `Console.WriteLine`.
+1. Finalize o bloco de código para que ele se pareça com o seguinte código. Você mesmo pode praticar usando os snippets de código novamente ao inserir `cw` e, então, pressionar a **Guia** duas vezes para gerar o código `Console.WriteLine`.
 
    ```csharp
    foreach (string str in query)
@@ -162,7 +162,7 @@ Ninguém obtém o código correto na primeira vez e uma das coisas que talvez vo
 
 ## <a name="see-also"></a>Consulte também
 
-- [Trechos de código](../ide/code-snippets.md)
+- [Snippets de código](../ide/code-snippets.md)
 - [Navegar pelo código](../ide/navigating-code.md)
 - [Estrutura de tópicos](../ide/outlining.md)
 - [Ir para Definição e Definição de Pico](../ide/go-to-and-peek-definition.md)

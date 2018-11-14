@@ -1,8 +1,12 @@
 items:
 - name: Documentação do depurador
   href: index.md
-- name: Visão geral
-  href: debugger-overview.md
+- name: Visão Geral
+  items:
+  - name: O que é depuração?
+    href: what-is-debugging.md
+  - name: Escreva melhor em código C# com Visual Studio
+    href: write-better-code-with-visual-studio.md
 - name: Guias de Início Rápido
   items:
   - name: Introdução ao depurador
@@ -832,9 +836,9 @@ items:
   items:
   - name: Novidades do depurador no Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 7e308b631a5ce56ec065fcada6b65e11d8afe4bb
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: a765e04da6e5d03c47a17e3b9d1642aec182c1f7
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751044"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561680"

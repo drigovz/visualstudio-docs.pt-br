@@ -1,7 +1,7 @@
 ---
 title: Depuração de modo misto para Python
 description: Como depurar simultaneamente C++ e Python no Visual Studio, incluindo a troca entre ambientes, valores de exibição e expressões de avaliação.
-ms.date: 06/26/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4d5ec15e6fea377e8ffc23cc5215a88081d0f9bd
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2038f681578c3410b8b4dc1fe67552064e0e2d93
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552078"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607829"
 ---
 # <a name="debug-python-and-c-together"></a>Depurar o Python e o C++ juntos
 

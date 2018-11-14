@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 16ec8cdb2402546f2059053495a8e656427783e3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3adcb961e3031180054706da9d43dd04dccdedf
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937324"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348637"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Criar XAML no Visual Studio
 
@@ -52,7 +52,7 @@ Para tarefas mais básicas, a IDE do Visual Studio e do Blend for Visual Studio 
 
 - **Um Gerenciador de Soluções comum:** o **Gerenciador de Soluções** fornece uma exibição organizada dos projetos e de seus arquivos, bem como o acesso imediato aos comandos associados a eles. Com o Gerenciador de Soluções, fica mais fácil trabalhar com projetos corporativos grandes. Confira [Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md).
 
-- **Team Explorer:** com o Team Explorer, você pode gerenciar seus projetos com repositórios GIT ou TFS para facilitar a colaboração em equipe. Consulte [Trabalhar no Team Explorer](http://msdn.microsoft.com/Library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
+- **Team Explorer:** com o Team Explorer, você pode gerenciar seus projetos com repositórios GIT ou TFS para facilitar a colaboração em equipe. Consulte [Trabalhar no Team Explorer](/azure/devops/user-guide/work-team-explorer).
 
 - **NuGet:** é possível gerenciar pacotes NuGet no Visual Studio e no Blend for Visual Studio. O NuGet é um gerenciador de pacotes do .NET Framework que simplifica a instalação e remoção de pacotes de uma solução.
 

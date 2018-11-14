@@ -1,7 +1,7 @@
 ---
 title: Modelo de projeto Web do Django para Python
 description: Uma visão geral dos modelos do Visual Studio para aplicativos Web escritos em Python usando a estrutura Django.
-ms.date: 07/03/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4ea90a97067e92d39772bd4257dc3abbae58d1d8
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 1e00fd7df429b219589e1e49ddbc5ccadca5e032
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100959"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607426"
 ---
 # <a name="django-web-project-template"></a>Modelo de projeto Web Django
 
