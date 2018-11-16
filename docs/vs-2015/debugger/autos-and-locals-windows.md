@@ -23,15 +23,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94b583fee7f0e03fae3f194f1614d82016136e13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51e62df0fb98a9c7b04b09b3e58fb52828e1bd5a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191315"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782473"
 ---
 # <a name="autos-and-locals-windows"></a>Autos e locais Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ O **Autos** janela (durante a depuração, **CTRL + ALT + V, A**, ou **depurar /
  ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
 ## <a name="what-variables-appear-in-the-autos-window"></a>Quais variáveis são exibidos na janela Autos?  
- Você pode usar o **automóveis** janela no código c#, Visual Basic e C++. O **automóveis** janela não suporta JavaScript ou F #.  
+ Você pode usar o **automóveis** janela no código c#, Visual Basic e C++. O **automóveis** não tem suporte para JavaScript ou F#.  
   
  Em c# e Visual Basic, o **automóveis** janela exibirá qualquer variável usada na linha atual ou anterior. Por exemplo, se você declara quatro variáveis e defini-los da seguinte maneira:  
   
