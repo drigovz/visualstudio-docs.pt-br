@@ -18,12 +18,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af377c3f0ff5e49e43d00395d8f08bf4498e6636
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00ed8231641718b6d0dce8d535b0c43e40b83dd8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883947"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783032"
 ---
 # <a name="making-commands-available"></a>Disponibilizando comandos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Quando vários VSPackages são adicionados ao Visual Studio, a interface do usu�
 ## <a name="delayed-loading"></a>Carregamento atrasado  
  Habilitar uma forma comum de carregamento com atraso é projetar o VSPackage, de forma que seus comandos são exibidos na interface do usuário, mas o próprio pacote não será carregado até que um usuário clica em um dos comandos. Para fazer isso, no arquivo. VSCT, crie comandos que não têm nenhum sinalizador de comando.  
   
- O exemplo a seguir mostra a definição de um comando de menu de um arquivo. VSCT. Esse é o comando que é gerado pelo modelo de pacote Visual Studio quando o **comando de Menu** está selecionada no modelo.  
+ O exemplo a seguir mostra a definição de um comando de menu de um arquivo. VSCT. Esse é o comando que é gerado pelo modelo de pacote do Visual Studio quando o **comando de Menu** está selecionada no modelo.  
   
 ```xml  
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">  
