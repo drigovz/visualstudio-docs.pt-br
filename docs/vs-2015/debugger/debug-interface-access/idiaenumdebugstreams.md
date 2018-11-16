@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumDebugStreams interface
 ms.assetid: 611caf4f-7a5f-4aa4-b909-52feeb3cc752
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e9f63b0e8ecb063b3c0d870a726400c636526232
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e1224905a22d5679efb4ff5df6107502ab8a28b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273904"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795369"
 ---
 # <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Enumera os vários fluxos de depuração contidos na fonte de dados.
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDiaEnumDebugStreams : IUnknown  
+IDiaEnumDebugStreams : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
