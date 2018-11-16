@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 caps.latest.revision: 66
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 839bfcd761ac090924b0964e99ea3d1f360cc7f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6c4c60265fda66f7506fe6d886fa671527c1587
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852356"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785450"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnosticar problemas após a implantação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
   
     Se você usar um modelo personalizado, verifique se o modelo tem uma atividade para indexar o código-fonte. Posteriormente, adicione um argumento de MSBuild para especificar onde salvar o arquivo de símbolos.  
   
-    ![Configurar o caminho de símbolos no TFS 2013 de definição de build](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+    ![Configurar o caminho de símbolos na definição de compilação TFS 2013](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
     Para obter mais informações sobre símbolos, consulte [publicar dados de símbolo](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6).  
   
