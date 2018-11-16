@@ -17,12 +17,12 @@ ms.assetid: 5854a172-ea82-481c-97d9-c7fc16923d44
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a1afe99bddcb7932699538ba8388d8c1ea96d4cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f27c8ee7f72c593bd1ec5248ed61f1835b5afd9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839915"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723397"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Define o tipo de referência. Reservado para uso futuro.
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT SetReferenceType (   
+HRESULT SetReferenceType (   
    REFERENCE_TYPE dwRefType  
 );  
 ```  
   
 ```csharp  
-int SetReferenceType (   
+int SetReferenceType (   
    enum_REFERENCE_TYPE dwRefType  
 );  
 ```  
