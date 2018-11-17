@@ -15,12 +15,12 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d0f89d02d0fcccc66ddd1f66b411f6b3f542cff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cd5331e433c4790a51dfb7c42b5b0b50eb26c1a6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939261"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794147"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Adicionando a pesquisa a uma janela de ferramentas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -131,9 +131,9 @@ Quando você cria ou atualiza uma janela de ferramentas em sua extensão, você 
      Para habilitar a pesquisa, você deve substituir o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> propriedade. O <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> implementos de classe <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch> e fornece uma implementação padrão que não permite a pesquisa.  
   
     ```csharp  
-    public override bool SearchEnabled  
+    public override bool SearchEnabled  
     {  
-        get { return true; }  
+        get { return true; }  
     }  
     ```  
   
@@ -280,7 +280,7 @@ Quando você cria ou atualiza uma janela de ferramentas em sua extensão, você 
 1.  No arquivo TestSearch.cs, adicione o seguinte código para o `TestSearch` classe. Esse código permite que a pesquisa instantânea, em vez de sob demanda pesquisa (isto é, o usuário não precisa clicar em ENTER). O código substitui o `ProvideSearchSettings` método no `TestSearch` classe, que é necessário alterar as configurações padrão.  
   
     ```csharp  
-    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)  
+    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)  
     {  
         Utilities.SetValue(pSearchSettings,   
             SearchSettingsDataSource.SearchStartTypeProperty.Name,   
@@ -328,7 +328,7 @@ Quando você cria ou atualiza uma janela de ferramentas em sua extensão, você 
   
     ```csharp  
     private IVsEnumWindowSearchOptions m_optionsEnum;  
-    public override IVsEnumWindowSearchOptions SearchOptionsEnum  
+    public override IVsEnumWindowSearchOptions SearchOptionsEnum  
     {  
         get  
         {  
@@ -408,13 +408,13 @@ Quando você cria ou atualiza uma janela de ferramentas em sua extensão, você 
 1.  No arquivo TestSearch.cs, adicione o seguinte código para o `TestSearch` classe. O código implementa `SearchFiltersEnum` adicionando um <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> que especifica para filtrar os resultados da pesquisa para que sejam exibidos apenas linhas pares.  
   
     ```csharp  
-    public override IVsEnumWindowSearchFilters SearchFiltersEnum  
+    public override IVsEnumWindowSearchFilters SearchFiltersEnum  
     {  
         get  
         {  
             List<IVsWindowSearchFilter> list = new List<IVsWindowSearchFilter>();  
             list.Add(new WindowSearchSimpleFilter("Search even lines only", "Search even lines only", "lines", "even"));  
-            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;  
+            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;  
         }  
     }  
   
@@ -425,19 +425,19 @@ Quando você cria ou atualiza uma janela de ferramentas em sua extensão, você 
 2.  No arquivo TestSearch.cs, adicione os seguintes métodos para o `TestSearchTask` classe, que está no `TestSearch` classe. Esses métodos aceitam o `OnStartSearch` método, que na próxima etapa, você modificará.  
   
     ```csharp  
-    private string RemoveFromString(string origString, string stringToRemove)  
+    private string RemoveFromString(string origString, string stringToRemove)  
     {  
         int index = origString.IndexOf(stringToRemove);  
         if (index == -1)  
             return origString;  
-        else   
+        else   
              return (origString.Substring(0, index) + origString.Substring(index + stringToRemove.Length)).Trim();  
     }  
   
-    private string[] GetEvenItems(string[] contentArr)  
+    private string[] GetEvenItems(string[] contentArr)  
     {  
         int length = contentArr.Length / 2;  
-        string[] evenContentArr = new string[length];  
+        string[] evenContentArr = new string[length];  
   
         int indexB = 0;  
         for (int index = 1; index < contentArr.Length; index += 2)  
@@ -453,13 +453,13 @@ Quando você cria ou atualiza uma janela de ferramentas em sua extensão, você 
 3.  No `TestSearchTask` classe, atualize o `OnStartSearch` método com o código a seguir. Essa alteração atualiza o código para dar suporte ao filtro.  
   
     ```csharp  
-    protected override void OnStartSearch()  
+    protected override void OnStartSearch()  
     {  
-        // Use the original content of the text box as the target of the search.   
-        var separator = new string[] { Environment.NewLine };  
+        // Use the original content of the text box as the target of the search.   
+        var separator = new string[] { Environment.NewLine };  
         string[] contentArr = ((TestSearchControl)m_toolWindow.Content).SearchContent.Split(separator, StringSplitOptions.None);  
   
-        // Get the search option.   
+        // Get the search option.   
         bool matchCase = false;  
         matchCase = m_toolWindow.MatchCaseOption.Value;  
   
@@ -472,7 +472,7 @@ Quando você cria ou atualiza uma janela de ferramentas em sua extensão, você 
         {  
             string searchString = this.SearchQuery.SearchString;  
   
-            // If the search string contains the filter string, filter the content array.   
+            // If the search string contains the filter string, filter the content array.   
             string filterString = "lines:\"even\"";  
   
             if (this.SearchQuery.SearchString.Contains(filterString))  
@@ -484,7 +484,7 @@ Quando você cria ou atualiza uma janela de ferramentas em sua extensão, você 
                 searchString = RemoveFromString(searchString, filterString);  
             }  
   
-            // Determine the results.   
+            // Determine the results.   
             uint progress = 0;  
             foreach (string line in contentArr)  
             {  
@@ -507,7 +507,7 @@ Quando você cria ou atualiza uma janela de ferramentas em sua extensão, você 
   
                 SearchCallback.ReportProgress(this, progress++, (uint)contentArr.GetLength(0));  
   
-                // Uncomment the following line to demonstrate the progress bar.   
+                // Uncomment the following line to demonstrate the progress bar.   
                 // System.Threading.Thread.Sleep(100);  
             }  
         }  
@@ -523,8 +523,8 @@ Quando você cria ou atualiza uma janela de ferramentas em sua extensão, você 
             this.SearchResults = resultCount;  
         }  
   
-        // Call the implementation of this method in the base class.   
-        // This sets the task status to complete and reports task completion.   
+        // Call the implementation of this method in the base class.   
+        // This sets the task status to complete and reports task completion.   
         base.OnStartSearch();  
     }  
     ```  

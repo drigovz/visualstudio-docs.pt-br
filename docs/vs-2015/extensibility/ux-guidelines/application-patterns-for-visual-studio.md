@@ -13,12 +13,12 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d52a6e8eb5be9fb6516bcbc7788cf3115e2debdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d3c0be041628d840908b1814e26f14a488651603
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848690"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748468"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Padrões de aplicativo para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -387,7 +387,7 @@ ms.locfileid: "49848690"
   
   Evite escolher uma ação destrutiva permanentemente para o comando padrão. Se o comando estiver presente, escolha um comando mais seguro como padrão.  
   
-#### <a name="access-keys"></a>Chaves de acesso  
+#### <a name="access-keys"></a>Teclas de acesso  
  Não use chaves de acesso para **Okey**/**Cancelar**/**ajuda** botões. Por padrão, esses botões são mapeados a teclas de atalho:  
   
 |Nome do botão|Atalho de teclado|  

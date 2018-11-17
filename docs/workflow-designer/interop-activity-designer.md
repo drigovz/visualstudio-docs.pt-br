@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ede5eebc4d7caf4fe1565c5d8b93b2524ed6ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f3b5fd2674d63fad6398eeaee082862c4cf6476
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849353"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809123"
 ---
 # <a name="interop-activity-designer"></a>Designer de atividade de Interoperabilidade
 
@@ -35,7 +35,7 @@ O [migração](../workflow-designer/migration-activity-designers.md) categoria q
 
 Para projetos c#, você pode redirecionar o projeto para usar o .NET Framework 4 completo clicando com o projeto no **Gerenciador de soluções** e selecionando **propriedades**. Sobre o **aplicativo** guia, selecione o **NET Framework 4** opção no **estrutura de destino**. Selecione **Sim** confirme essa alteração.
 
-Para projetos do VB, você pode redirecionar o projeto para usar o .NET Framework 4 completo pelo botão direito do mouse no projeto no **Gerenciador de soluções** e selecionando **propriedades**. Sobre o **Compile** , clique no **opções avançadas de compilação** botão. Selecione **.Net Framework 4** da **lista do framework de destino**e, em seguida, clique em **Okey**. Selecione **Sim** confirme essa alteração.
+Para projetos do Visual Basic, você pode redirecionar o projeto para usar o .NET Framework 4 completo pelo botão direito do mouse no projeto no **Gerenciador de soluções** e selecionando **propriedades**. Sobre o **Compile** , clique no **opções avançadas de compilação** botão. Selecione **.Net Framework 4** da **lista do framework de destino**e, em seguida, clique em **Okey**. Selecione **Sim** confirme essa alteração.
 
 O **Interop** designer de atividade pode ser arrastado de **caixa de ferramentas** e solto sobre a superfície do Designer de fluxo de trabalho onde quer que as atividades são colocadas em geral, como em um <xref:System.Activities.Statements.Sequence>. Descartando o **Interop** designer de atividade cria uma <xref:System.Activities.Statements.Interop> atividade com um padrão **DisplayName** de interoperabilidade. Você pode editar a <xref:System.Activities.Activity.DisplayName%2A> no cabeçalho do **interoperabilidade** designer de atividade, ou nos **DisplayName** caixa da grade de propriedade.
 

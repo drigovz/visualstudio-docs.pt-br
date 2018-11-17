@@ -10,15 +10,15 @@ f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 ms.assetid: 0a9f70ed-21ad-4a10-8535-b9c5885ad8f4
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70c2276ef49ebc90deb6530b781856d9e9b2d29d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: abf50ba94992a599fbb2e64aa9b1e551dde3cbdf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904525"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766507"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Erro: A avaliação da função &#39;função&#39; atingiu o tempo limite e precisou ser interrompida de forma não segura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
