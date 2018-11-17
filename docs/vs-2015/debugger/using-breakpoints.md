@@ -43,15 +43,15 @@ helpviewer_keywords:
 - breakpoints, about breakpoints
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 caps.latest.revision: 63
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b066ed3171ebd59d5c921fc795b1478bb9d2df32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d980fd2367545eb5c824bacc507d9ced9aa2d723
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925390"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765952"
 ---
 # <a name="using-breakpoints"></a>Usando pontos de interrupção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,8 +171,8 @@ Você pode definir pontos de interrupção quando você deseja interromper a exe
   
    A condição pode ser qualquer expressão válida que seja reconhecida pelo depurador. Para obter mais informações sobre expressões válidas, consulte [expressões no depurador](../debugger/expressions-in-the-debugger.md).  
   
-## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Usando IDs de objeto em condições de ponto de interrupção (c# e F #)  
- Há vezes quando você deseja observar o comportamento de um objeto específico; Por exemplo, você talvez queira saber por que um objeto foi inserido mais de uma vez em uma coleção. No c# e F #, você pode criar IDs de objeto para instâncias específicas do [tipos de referência](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) e usá-los em condições de ponto de interrupção. A ID de objeto é gerada pelo common language runtime (CLR) serviços de depuração e associada ao objeto.  Para criar uma ID de objeto, faça o seguinte:  
+## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Usando IDs de objeto em condições de ponto de interrupção (C# e F#)  
+ Há vezes quando você deseja observar o comportamento de um objeto específico; Por exemplo, você talvez queira saber por que um objeto foi inserido mais de uma vez em uma coleção. No C# e F#, você pode criar IDs de objeto para instâncias específicas de [tipos de referência](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) e usá-los em condições de ponto de interrupção. A ID de objeto é gerada pelo common language runtime (CLR) serviços de depuração e associada ao objeto.  Para criar uma ID de objeto, faça o seguinte:  
   
 1. Defina um ponto de interrupção no código de algum tempo depois que o objeto foi criado.  
   
