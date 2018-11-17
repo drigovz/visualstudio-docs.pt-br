@@ -13,14 +13,14 @@ f1_keywords:
 - vs.diagnostics.managedmemoryanalysis
 ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
-ms.author: susanno
+ms.author: mikejo
 manager: douge
-ms.openlocfilehash: f33b9e82ee1248988c949a9edea9f09de0d368df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5b5b79e351f828f443e133f40c322ffba3f1a8b6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812563"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810475"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analisar problemas de memória .NET Framework
 Encontre perdas de memória e uso ineficiente da memória no código do .NET Framework com o analisador de memória gerenciada do Visual Studio. A versão mínima do .NET Framework do código de destino é o .NET Framework 4.5.  
