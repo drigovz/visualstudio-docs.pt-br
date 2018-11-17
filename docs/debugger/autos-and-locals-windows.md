@@ -16,20 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35fa37831ad79a55effe849f8605ae6b5d299d3a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 1d72a9cd4ad29785884417881324e6d348e03d83
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349644"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826698"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecionar variáveis nas janelas Autos e locais
 
-O **automóveis** e **Locals** windows mostram valores de variáveis durante a depuração. Os windows estão disponíveis somente durante uma sessão de depuração.
-
-O **automóveis** janela mostra as variáveis usadas em torno do ponto de interrupção atual. O **Locals** janela mostra as variáveis definidas no escopo local, que geralmente é o método ou a função atual.
-
-Para abrir o **automóveis** janela, durante a depuração, selecione **Debug** > **Windows** > **Autos**, ou pressione **Ctrl**+**Alt**+**V** > **um**.
+O **automóveis** e **Locals** windows mostram valores de variáveis durante a depuração. Os windows estão disponíveis somente durante uma sessão de depuração. O **automóveis** janela mostra as variáveis usadas em torno do ponto de interrupção atual. O **Locals** janela mostra as variáveis definidas no escopo local, que geralmente é o método ou a função atual. Se essa for a primeira vez que você tentou depurar o código, você talvez queira ler [gravar melhor C# usando o Visual Studio de código](../debugger/write-better-code-with-visual-studio.md) e [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes de prosseguir com este artigo.
+  
+Para abrir o **automóveis** janela, durante a depuração, selecione **Debug** > **Windows** > **Autos**, ou pressione **Ctrl**+**Alt**+**V** > **um**.  
 
 Para abrir o **Locals** janela, durante a depuração, selecione **Debug** > **Windows** > **Locals**, ou pressione **Alt**+**4**.
 
@@ -147,13 +145,13 @@ private static int subtractVars(int i, int j)
 
 Para ver os valores de retorno de `sumVars()` e `subtractVars()` chamadas de método na janela Autos:
 
-1. Defina um ponto de interrupção a `int x = sumVars(a, b) + subtractVars(c, d);` linha.
-
-1. Iniciar a depuração e quando a execução pausa no ponto de interrupção, selecione **Step Over** ou pressione **F10**. Você deve ver os seguintes valores de retornados na **automóveis** janela:
-
-  ![Valor de retorno de Autos C# ](../debugger/media/autosreturnvaluecsharp2.png "Autos retornam valorC#")
-
-## <a name="see-also"></a>Consulte também
-
-- [Janelas do depurador](../debugger/debugger-windows.md)
-- [Visualizações de dados no Visual Studio para Mac](/visualstudio/mac/data-visualizations)
+1. Defina um ponto de interrupção a `int x = sumVars(a, b) + subtractVars(c, d);` linha.  
+   
+1. Iniciar a depuração e quando a execução pausa no ponto de interrupção, selecione **Step Over** ou pressione **F10**. Você deve ver os seguintes valores de retornados na **automóveis** janela:  
+   
+  ![Valor de retorno de Autos C# ](../debugger/media/autosreturnvaluecsharp2.png "Autos retornam valorC#")  
+  
+## <a name="see-also"></a>Consulte também  
+ [O que está sendo depurado?](../debugger/what-is-debugging.md)  
+ [Gravar melhor C# o código usando o Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Introdução à depuração](../debugger/debugger-feature-tour.md) [janelas do depurador](../debugger/debugger-windows.md)

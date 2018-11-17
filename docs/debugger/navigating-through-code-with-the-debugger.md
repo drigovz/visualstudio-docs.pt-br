@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 865fbca5092378af044d6121862119ecba8625a2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+ms.openlocfilehash: df2f0c94fa5d3bfc275a09b065555f32f260ba91
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748675"
+ms.locfileid: "51826721"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navegar pelo código com o depurador do Visual Studio
 
-O depurador do Visual Studio pode ajudá-lo a navegar pelo código para inspecionar o estado de um aplicativo e mostrar o fluxo de execução. Você pode usar atalhos de teclado, comandos de depuração, os pontos de interrupção e outros recursos para obter rapidamente o código que você deseja examinar. Familiaridade com comandos de navegação do depurador e atalhos torna mais rápido e mais fácil localizar e resolver problemas do aplicativo.  
+O depurador do Visual Studio pode ajudá-lo a navegar pelo código para inspecionar o estado de um aplicativo e mostrar o fluxo de execução. Você pode usar atalhos de teclado, comandos de depuração, os pontos de interrupção e outros recursos para obter rapidamente o código que você deseja examinar. Familiaridade com comandos de navegação do depurador e atalhos torna mais rápido e mais fácil localizar e resolver problemas do aplicativo.  Se essa for a primeira vez que você tentou depurar o código, você talvez queira ler [gravar melhor C# usando o Visual Studio de código](../debugger/write-better-code-with-visual-studio.md) e [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes de prosseguir com este artigo.
   
 ## <a name="basic-debugging"></a>Depuração básica  
 
@@ -183,4 +183,9 @@ Para carregar símbolos da Microsoft, consulte [configurar locais de símbolos e
 1. No **módulos** janela, você pode informar quais módulos possuem símbolos carregados na **Status do símbolo** coluna. Com o módulo que você deseja carregar símbolos para e, em seguida, selecione o botão direito **carregar símbolos**.  
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Depurar propriedades e operadores no código gerenciado  
- Por padrão, o depurador depura parcialmente propriedades e operadores no código gerenciado. Depurar parcialmente propriedades e operadores geralmente fornece uma melhor experiência de depuração. Para habilitar a depuração de propriedades e operadores, além **ferramentas** (ou **Debug**) > **opções** > **depuração**  >  **Gerais**, desmarque as **depurar parcialmente propriedades e operadores (somente gerenciado)** caixa de seleção.
+ O depurador considera propriedades e operadores no código gerenciado por padrão. Na maioria dos casos, isso proporciona uma melhor experiência de depuração. Para habilitar a depuração em propriedades ou operadores, escolha **Debug** > **opções**. Sobre o **Debugging** > **geral** página, desmarque o **depurar parcialmente propriedades e operadores (somente gerenciado)** caixa de seleção.
+
+## <a name="see-also"></a>Consulte também
+ [O que está sendo depurado?](../debugger/what-is-debugging.md)  
+ [Gravar melhor C# o código usando o Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Primeira olhada na depuração](../debugger/debugger-feature-tour.md) 
