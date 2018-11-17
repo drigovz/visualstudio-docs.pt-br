@@ -13,12 +13,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 51e924f14ebb8b20f193d163529096efe76318f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84ade82822d5481d098fe98408a130ba93f68ee0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831752"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725714"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Cores e estilos para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -413,7 +413,7 @@ protected override void Dispose(bool disposing)
   
 - **manipular eventos gerados pelo IDE** implementando as [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) interface. O IDE chama o método apropriado seguindo as modificações do usuário da página fontes e cores. Por exemplo, ele chama o [OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) método se uma nova fonte é selecionada.  
   
-  **OR**  
+  **OU**  
   
 - **sondar o IDE para que as alterações**. Isso pode ser feito por meio do sistema implementado [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interface. Embora principalmente para oferecer suporte a persistência, o [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) método pode obter informações de fonte e cor para itens de exibição. Para obter mais informações sobre configurações de fonte e cor, consulte o artigo do MSDN [acessar fonte armazenados e as configurações de cor](https://msdn.microsoft.com/library/bb166382.aspx).  
   
