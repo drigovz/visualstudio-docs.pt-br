@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumSymbols::Clone method
 ms.assetid: 5c542025-98cf-4307-901f-b9430f780cf0
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f49c20917a1358e461f30ebeaa9fdb9f1d0e4c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cd6e63701a467056560c380e0991bc43b9c3ad4d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951542"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806420"
 ---
 # <a name="idiaenumsymbolsclone"></a>IDiaEnumSymbols::Clone
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Cria um enumerador que contém o mesmo estado de enumeração que o enumerador a
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumSymbols** ppenum  
 );  
 ```  
