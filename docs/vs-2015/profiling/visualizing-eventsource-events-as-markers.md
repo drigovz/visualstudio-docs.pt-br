@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4167ed020b0ec071e9fbe212dbb74ce0d54c03c2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c39f137299c1f229de8c3c6dc8d7329cba6033cb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251882"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742553"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualizando eventos EventSource como marcadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,12 +43,12 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
 |Nível ETW|Importância da Visualização Simultânea|  
 |---------------|---------------------------------------|  
 |win:LogAlways|Normal|  
-|win:Critical|Crítico|  
+|win:Critical|Critical|  
 |win:Error|Crítico|  
-|win:Warning|Alta|  
+|win:Warning|High|  
 |win:Informational|Normal|  
-|win:Verbose|Baixo|  
-|Maior que win:verbose|Baixo|  
+|win:Verbose|Low|  
+|Maior que win:verbose|Low|  
   
 ### <a name="series-name"></a>Nome da Série  
  O nome da tarefa do evento é usado para o nome da série. O nome da série está vazio se nenhuma tarefa tiver sido definida para o evento.  
@@ -79,12 +79,12 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
 |Valor de cvImportance|Importância da Visualização Simultânea|  
 |------------------------|---------------------------------------|  
 |0|Normal|  
-|1|Crítico|  
-|2|Alta|  
-|3|Alta|  
+|1|Critical|  
+|2|High|  
+|3|High|  
 |4|Normal|  
 |5|Baixo|  
-|Todos os outros valores|Baixo|  
+|Todos os outros valores|Low|  
   
 ### <a name="series-name"></a>Nome da Série  
  Use o campo de evento `cvSeries`, uma cadeia de caracteres, para controlar o nome que a Visualização Simultânea dá a um evento do EventSource.  
