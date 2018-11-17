@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_addressSection method
 ms.assetid: fe80d479-3bb5-4f55-9b62-1bd58d0a60ce
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9fd81818de0a09d0f4c95d18e45c48d6aad86948
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8e85f8a33a4edce6a396d3076784b13cdb3538c6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899559"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771234"
 ---
 # <a name="idiasymbolgetaddresssection"></a>IDiaSymbol::get_addressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera a parte da seção de um local de endereço. Usado quando o [enumeraç�
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_addressSection (   
+HRESULT get_addressSection (   
    DWORD* pRetVal  
 );  
 ```  

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - CommentMarkProfileA
 ms.assetid: 33ccff45-c33a-4672-b41f-5b317b848cd1
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0b9e651c9f294e002725b4c3cbe7cbd8558a4c37
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71d1722cd09bfb76e2ca8c72c6948923b0713100
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848417"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802935"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
   
  Ponteiro para a cadeia de texto para inserir. A cadeia de caracteres deve ser menor que 256 caracteres, incluindo o terminador NULO.  
   
-## <a name="property-valuereturn-value"></a>Valor da propriedade/valor de retorno  
+## <a name="property-valuereturn-value"></a>Valor de propriedade/Valor de retorno  
  A função indica êxito ou falha usando a enumeração **PROFILE_COMMAND_STATUS**. O valor de retorno pode ser um dos seguintes:  
   
 |Enumerador|Descrição|  
