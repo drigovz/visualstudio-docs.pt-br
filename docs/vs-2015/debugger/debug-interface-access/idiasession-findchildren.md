@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSession::findChildren method
 ms.assetid: 5d19046f-f668-4aa9-8788-95cda9a98997
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4bb723009181d0a1b69fd0a69a96263e8c82506
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71a200d04da6ff79406f54feee05b73be4e6f689
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903862"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782811"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera todos os filhos de um identificador do pai especificado que corresponde
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findChildren (   
+HRESULT findChildren (   
    IDiaSymbol*       parent,  
    SymTagEnum        symtag,  
    LPCOLESTR         name,  

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_managed method
 ms.assetid: a69d00be-2a89-415c-b116-385c422e2fd5
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 085508743eabfefc24aad23061c460f55eac5e66
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 63542e0791e9b1c9c27d2d775701a583d8b9e35f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872779"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726357"
 ---
 # <a name="idiasymbolgetmanaged"></a>IDiaSymbol::get_managed
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Recupera um sinalizador que especifica se o símbolo refere-se ao código gerenc
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_managed (   
+HRESULT get_managed (   
    BOOL* pRetVal  
 );  
 ```  
