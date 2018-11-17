@@ -9,12 +9,12 @@ ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: f6404b15e8a7cd3f95ac63bbae6076ef62fcff06
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: b20a43181ad4d36377e61434b880b491543a6c47
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51001326"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791599"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Integração contínua nos serviços de DevOps do Azure usando os projetos de implantação do grupo de recursos do Azure
 Para implantar um modelo do Azure, você deve executar tarefas em vários estágios: compilar, testar, copiar para o Azure (também chamado de "Preparo") e implantar o modelo. Há duas maneiras diferentes para implantar modelos em serviços de DevOps do Azure. Ambos os métodos oferecem os mesmos resultados, então escolha aquele que melhor se adapta a seu fluxo de trabalho.
@@ -131,7 +131,7 @@ Os procedimentos a seguir orientam você pelas etapas necessárias para configur
 
 1. Edite seu pipeline de compilação de serviços de DevOps do Azure para adicionar que duas novas etapas de compilação. Escolha o pipeline de compilação sob o **definições de compilação** categoria e, em seguida, escolha o **editar** link.
    
-   ![Editar definição de build][12]
+   ![Editar definição de compilação][12]
 2. Adicionar novas etapas de compilação ao pipeline de build usando o **Adicionar etapa de compilação...** .
    
    ![Adicionar etapa de build][13]
