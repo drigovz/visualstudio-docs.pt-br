@@ -18,12 +18,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d6cc66b828b07c0facb8fae19b562dc6566df420
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b01219fa0d9f3ab95fb2d64e2d3dd003557bfe51
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199895"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761247"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalar o Visual Studio versões lado a lado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "49199895"
   
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Versões do .NET Framework e instalações lado a lado  
   
--   Projetos do Visual Basic, Visual c# e Visual F # usam a **estrutura de destino** opção a **Designer de projeto** para especificar qual versão do .NET Framework usa um projeto. Para um projeto do C++, é possível alterar manualmente a estrutura de destino alterando o arquivo .vcxproj. Para obter mais informações, consulte [compatibilidade de versão](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).  
+-   Visual Basic, Visual C#e o Visual F# projetos usam o **estrutura de destino** opção o **Project Designer** para especificar qual versão do .NET Framework usa um projeto. Para um projeto do C++, é possível alterar manualmente a estrutura de destino alterando o arquivo .vcxproj. Para obter mais informações, consulte [compatibilidade de versão](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).  
   
      Quando você cria um projeto, você pode especificar qual versão do .NET Framework o projeto é direcionado na **do .NET Framework** lista o **novo projeto** caixa de diálogo.  
   
