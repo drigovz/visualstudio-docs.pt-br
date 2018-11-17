@@ -13,12 +13,12 @@ ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd1eefc0cab26f54ef7b1491c234d1187f5f79c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e75a800ab86cc1ec902382bee06efd65c276b046
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905929"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51804463"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menus e comandos para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ ms.locfileid: "49905929"
   
 -   Editar  
   
--   Exibir  
+-   View  
   
 -   Ferramentas  
   
@@ -100,7 +100,7 @@ ms.locfileid: "49905929"
   
 -   Build  
   
--   Depurar  
+-   Depuração  
   
 ##### <a name="context-specific-menus"></a>Menus de contexto específico  
   
@@ -108,7 +108,7 @@ ms.locfileid: "49905929"
   
 -   Dados  
   
--   Teste  
+-   Testar  
   
 -   Arquitetura  
   
