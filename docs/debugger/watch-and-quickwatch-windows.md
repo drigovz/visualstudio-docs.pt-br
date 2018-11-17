@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4db887a3e27d995229da6d954c4b3f66173e9e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa469b109e0e22e426d76f75be50309196c6a264
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897349"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826785"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Assista a variáveis com janelas de inspeção e QuickWatch 
 
@@ -278,5 +278,6 @@ Para observar o `a` variável,
 1. Continue a depuração. Você pode observar a variável na **inspeção** janela.
 
 ## <a name="see-also"></a>Consulte também
-
-[Janelas do depurador](../debugger/debugger-windows.md)
+ [O que está sendo depurado?](../debugger/what-is-debugging.md)  
+ [Gravar melhor C# o código usando o Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Introdução à depuração](../debugger/debugger-feature-tour.md) [janelas do depurador](../debugger/debugger-windows.md)

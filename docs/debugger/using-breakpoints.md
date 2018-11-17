@@ -36,15 +36,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bd522a5f5ff39814df3526843ae7d03578f92e86
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816673"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826837"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
-Pontos de interrupção são uma das técnicas de depuração mais importantes na caixa de ferramentas do seu desenvolvedor. Sempre que você deseja pausar a execução do depurador, você definir pontos de interrupção. Por exemplo, talvez você queira ver o estado das variáveis de código ou examinar a pilha de chamadas em um determinado ponto de interrupção.  
+Pontos de interrupção são uma das técnicas de depuração mais importantes na caixa de ferramentas do seu desenvolvedor. Sempre que você deseja pausar a execução do depurador, você definir pontos de interrupção. Por exemplo, talvez você queira ver o estado das variáveis de código ou examinar a pilha de chamadas em um determinado ponto de interrupção. Se esta for sua primeira tentativa de depurar um código, leia [Como depurar para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes continuar neste artigo.
   
 ##  <a name="BKMK_Overview"></a> Defina pontos de interrupção no código-fonte  
  Você pode definir um ponto de interrupção em qualquer linha de código executável. Por exemplo, no código a seguir em C#, você pode definir um ponto de interrupção na declaração de variável, o `for` loop ou qualquer código dentro de `for` loop. Não é possível definir um ponto de interrupção, as declarações de namespace ou classe ou a assinatura do método.  
@@ -235,8 +235,8 @@ Quando você seleciona **expressão condicional**, você pode escolher entre dua
  >- Para código nativo, o depurador não considerará a primeira avaliação da condição como uma alteração, portanto, não atingir o ponto de interrupção na primeira avaliação. 
  >- Para código gerenciado, o depurador atinge o ponto de interrupção na primeira avaliação depois **quando alterado** está selecionado.  
   
-### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>Usando IDs de objeto em expressões condicionais (c# e F # apenas)  
- Há ocasiões em que você deseja observar o comportamento de um objeto específico. Por exemplo, você talvez queira saber por que um objeto foi inserido em uma coleção de mais de uma vez. No c# e F #, você pode criar IDs de objeto para instâncias específicas do [tipos de referência](/dotnet/csharp/language-reference/keywords/reference-types)e usá-los em condições de ponto de interrupção. A ID de objeto é gerada pelo common language runtime (CLR) serviços de depuração e associada ao objeto.  
+### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>Usando IDs de objeto em expressões condicionais (C# e F# somente)  
+ Há ocasiões em que você deseja observar o comportamento de um objeto específico. Por exemplo, você talvez queira saber por que um objeto foi inserido em uma coleção de mais de uma vez. No C# e F#, você pode criar IDs de objeto para instâncias específicas de [tipos de referência](/dotnet/csharp/language-reference/keywords/reference-types)e usá-los em condições de ponto de interrupção. A ID de objeto é gerada pelo common language runtime (CLR) serviços de depuração e associada ao objeto.  
 
 **Para criar uma ID de objeto:** 
   
@@ -305,5 +305,7 @@ Coloque os valores de cadeia de caracteres entre aspas duplas. Você pode combin
 Tracepoints são exibidos como losangos vermelhos na margem esquerda do código-fonte e **pontos de interrupção** windows. 
   
 ## <a name="see-also"></a>Consulte também  
-[Solucionar problemas de pontos de interrupção no depurador do Visual Studio](../debugger/troubleshooting-breakpoints.md)  
-[Navegar pelo código com o depurador](../debugger/navigating-through-code-with-the-debugger.md)
+ [O que está sendo depurado?](../debugger/what-is-debugging.md)  
+ [Gravar melhor C# o código usando o Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)  
+ [Solucionar problemas de pontos de interrupção no depurador do Visual Studio](../debugger/troubleshooting-breakpoints.md)  

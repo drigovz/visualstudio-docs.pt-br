@@ -1,5 +1,5 @@
 ---
-title: O que está sendo depurado?
+title: O que é depuração?
 description: Entender o que significa depurar um aplicativo
 ms.custom: debug-experiments
 ms.date: 10/17/2018
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bece83e7e2a66499721c017932d4b498b664b459
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 7cd96d61718972c82c6002888e123003530c019c
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561729"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826655"
 ---
-# <a name="what-is-debugging"></a>O que está sendo depurado?
+# <a name="what-is-debugging"></a>O que é depuração?
 
 O depurador do Visual Studio é uma ferramenta poderosa. Antes de mostrarmos como usá-lo, queremos falar sobre alguns termos como *depurador*, *depuração*, e *modo de depuração*. Dessa forma, quando falamos posteriormente encontrando e corrigindo bugs, vamos falar sobre a mesma coisa.
 
@@ -49,7 +49,7 @@ O depurador é uma ferramenta essencial para encontrar e corrigir bugs em seus a
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste artigo, você aprendeu alguns conceitos gerais de depuração. Em seguida, você pode começar a aprender como depurar com o Visual Studio e como escrever código com menos bugs.
+Neste artigo, você aprendeu alguns conceitos gerais de depuração. Em seguida, você pode começar a aprender como depurar com o Visual Studio e como escrever código com menos bugs. O artigo a seguir mostra C# exemplos de código, mas os conceitos se aplicam a todos os idiomas com suporte do Visual Studio.
 
 > [!div class="nextstepaction"]
 > [Gravar melhor C# o código usando o Visual Studio](../debugger/write-better-code-with-visual-studio.md)

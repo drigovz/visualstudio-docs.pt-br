@@ -1,5 +1,5 @@
 ---
-title: Exibir valores de dados em DataTips no editor de código | Microsoft Docs
+title: Exibir valores de dados em DataTips no editor de códigos | Microsoft Docs
 ms.custom: ''
 ms.date: 07/14/2017
 ms.technology: vs-ide-debug
@@ -19,34 +19,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b260cd8a4cd102683c4342d5f199102660cfbe90
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: afb318c8aa327345b3cd76ee16b718db1e0386aa
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477323"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826723"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Exibir os valores de dados em DataTips no editor de códigos
-Os DataTips fornecem um modo conveniente de exibir informações sobre variáveis em seu programa durante a depuração. Os DataTips funcionam apenas no modo de interrupção e apenas com variáveis que estejam no escopo de execução atual.
+Os DataTips fornecem um modo conveniente de exibir informações sobre variáveis em seu programa durante a depuração. Os DataTips funcionam apenas no modo de interrupção e apenas com variáveis que estejam no escopo de execução atual. Se essa for a primeira vez que você tentou depurar o código, você talvez queira ler [gravar melhor C# usando o Visual Studio de código](../debugger/write-better-code-with-visual-studio.md) e [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes de prosseguir com este artigo.
   
 ### <a name="to-display-a-datatip"></a>Para exibir um DataTip  
   
-1. Definir um ponto de interrupção e iniciar a depuração (pressione **F5**).
+1. Defina um ponto de interrupção e iniciar a depuração (pressione **F5**).
 
-2. Onde está em pausa no depurador, coloque o ponteiro do mouse sobre qualquer variável no escopo atual.
+2. Quando em pausa no depurador, coloque o ponteiro do mouse sobre qualquer variável no escopo atual.
   
      Um DataTip aparece.
   
-3.  O DataTip desaparecerá quando você remover o ponteiro do mouse. Para fixar o DataTip para que ela permaneça aberta, clique o **Pin a fonte de** ícone ou o botão direito do mouse em uma variável, em seguida, clique em **Pin a fonte**.
+3.  O DataTip desaparecerá quando você remover o ponteiro do mouse. Para fixar o DataTip de modo que ela permaneça aberta, clique o **fixar à origem** ícone ou o botão direito do mouse em uma variável, em seguida, clique em **fixar à origem**.
 
-    ![Fixar uma dica de dados](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
+    ![A fixação de uma dica de dados](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
     > [!NOTE]
     > Os DataTips são sempre avaliados no contexto onde a execução é suspensa e não por onde o cursor está passando. Se você passar o mouse sobre uma variável em outra função com o mesmo nome de uma variável que está no contexto atual, o valor da variável na outra função será exibido como o valor da variável no contexto atual.
   
 ### <a name="to-unpin-a-datatip-and-make-it-float"></a>Para desafixar um DataTip e fazê-lo flutuar  
   
--   Em um DataTip fixo, clique no **Desafixar do código-fonte** ícone.  
+-   Em um DataTip fixado, clique o **Desafixar da origem** ícone.  
   
      O ícone de fixar é alterado para a posição desafixada. O DataTip agora flutua sobre todas as janelas abertas. O DataTip flutuante é fechado quando a sessão de depuração termina.  
   
@@ -58,17 +58,17 @@ Os DataTips fornecem um modo conveniente de exibir informações sobre variávei
   
 ### <a name="to-close-a-datatip"></a>Para fechar um DataTip  
   
--   Posicione o ponteiro do mouse sobre um DataTip e, em seguida, clique no **fechar** ícone.  
+-   Coloque o ponteiro do mouse sobre um DataTip e, em seguida, clique no **fechar** ícone.  
   
 ### <a name="to-close-all-datatips"></a>Para fechar todos os DataTips  
   
--   Sobre o **depurar** menu, clique em **limpar todos os DataTips**.  
+-   Sobre o **Debug** menu, clique em **limpar todos os DataTips**.  
   
 ### <a name="to-close-all-datatips-for-a-specific-file"></a>Para fechar todos os DataTips para um arquivo específico  
   
--   Sobre o **depurar** menu, clique em **limpar todos os DataTips fixos em** *arquivo*.  
+-   Sobre o **depurar** menu, clique em **limpar todos os DataTips fixados no** *arquivo*.  
   
-## <a name="expand-and-edit-information"></a>Expandir e editar as informações  
+## <a name="expand-and-edit-information"></a>Expandir e editar informações  
  Você pode usar os DataTips para expandir uma matriz, uma estrutura ou um objeto para exibir seus membros. Você também pode editar o valor de uma variável de um DataTip.  
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>Para expandir uma variável para ver seus elementos  
@@ -96,12 +96,12 @@ Os DataTips fornecem um modo conveniente de exibir informações sobre variávei
   
      O DataTip permanecerá transparente enquanto você mantiver pressionada a tecla CTRL.  
   
-## <a name="visualize-complex-data-types"></a>Visualize os tipos de dados complexos  
- Se um ícone de Lupa aparece ao lado de um nome de variável em um DataTip, um ou mais [visualizadores](../debugger/create-custom-visualizers-of-data.md), como o [visualizadores de cadeia de caracteres](../debugger/string-visualizer-dialog-box.md), estão disponíveis para as variáveis desse tipo de dados. Você pode usar um visualizador para exibir informações de uma maneira mais significativa, geralmente gráfica.
+## <a name="visualize-complex-data-types"></a>Visualizar os tipos de dados complexos  
+ Se um ícone de lupa aparecer ao lado de um nome de variável em um DataTip, um ou mais [visualizadores](../debugger/create-custom-visualizers-of-data.md), como o [visualizadores de cadeia de caracteres](../debugger/string-visualizer-dialog-box.md), estão disponíveis para variáveis desse tipo de dados. Você pode usar um visualizador para exibir informações de uma maneira mais significativa, geralmente gráfica.
   
 #### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>Para exibir o conteúdo de uma variável usando um visualizador  
   
--   Clique no ícone de lupa ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "ícone visualizador") para selecionar o visualizador padrão para o tipo de dados.  
+-   Clique no ícone de lupa ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "ícone do visualizador") para selecionar o visualizador padrão para o tipo de dados.  
   
      -ou-  
   
@@ -109,14 +109,14 @@ Os DataTips fornecem um modo conveniente de exibir informações sobre variávei
   
      Um visualizador exibe as informações.  
   
-## <a name="add-information-to-a-watch-window"></a>Adicionar informações a uma janela Inspecionar  
- Se você quiser continuar assistir a uma variável em uma exibição de lista, você pode adicionar a variável para o **inspecionar** janela a partir de um DataTip.  
+## <a name="add-information-to-a-watch-window"></a>Adicionar informações a uma janela Inspeção  
+ Se você quiser continuar a inspecionar uma variável em uma exibição de lista, você pode adicionar a variável para o **inspeção** janela a partir de um DataTip.  
   
 #### <a name="to-add-a-variable-to-the-watch-window"></a>Para adicionar uma variável à janela Inspeção  
   
--   Clique um DataTip e, em seguida, clique em **Adicionar inspeção**.  
+-   Um DataTip com o botão direito e, em seguida, clique em **Adicionar inspeção**.  
   
-     A variável é adicionada para o **inspecionar** janela. Se você estiver usando uma edição que dá suporte a vários **inspecionar** windows, a variável é adicionada ao **inspecionar 1.**  
+     A variável é adicionada para o **inspeção** janela. Se você estiver usando uma edição que dá suporte a vários **Watch** windows, a variável é adicionada à **inspeção 1.**  
   
 ## <a name="import-and-export-datatips"></a>Importar e exportar DataTips  
  Você pode exportar DataTips para um arquivo XML, que pode ser compartilhado com um colega ou editado por um editor de texto.  
@@ -127,7 +127,7 @@ Os DataTips fornecem um modo conveniente de exibir informações sobre variávei
   
      O **exportar DataTips** caixa de diálogo é exibida.  
   
-2.  Use técnicas padrão de arquivos para navegar até o local onde deseja salvar o arquivo XML, digite um nome para o arquivo de **nome de arquivo** caixa e, em seguida, clique em **Okey**.  
+2.  Use técnicas de arquivo padrão para navegar até o local onde você deseja salvar o arquivo XML, digite um nome para o arquivo na **nome do arquivo** caixa e, em seguida, clique em **Okey**.  
   
 #### <a name="to-import-datatips"></a>Para importar DataTips  
   
@@ -138,6 +138,8 @@ Os DataTips fornecem um modo conveniente de exibir informações sobre variávei
 2.  Use a caixa de diálogo para localizar o arquivo XML que você deseja abrir e clique em **Okey**.  
   
 ## <a name="see-also"></a>Consulte também  
- [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Inspecionar e Windows QuickWatch](../debugger/watch-and-quickwatch-windows.md)   
+ [O que está sendo depurado?](../debugger/what-is-debugging.md)  
+ [Gravar melhor C# o código usando o Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Introdução à depuração](../debugger/debugger-feature-tour.md) [exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)   
+ [Inspeção e QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   

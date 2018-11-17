@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 669f3625827d923a0951caa1bb0137d38c0daacc
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 195d63e5ddb8b8536c1d0c1c4197270f5b3aa508
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637491"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826811"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Como: migrar projetos de extensibilidade para o Visual Studio 2017
 
@@ -63,7 +63,7 @@ Para garantir que a instalação do usuário do Visual Studio tem todos os assem
 * Certifique-se de `InstallationTarget` inclui 15.0.
 * Adicione os pré-requisitos de instalação necessárias (conforme mostrado no exemplo a seguir).
   * É recomendável que você especificar somente IDs de componente os pré-requisitos de instalação.
-  * Consulte a seção no final deste documento para [instruções sobre como identificar as IDs de componente](#finding-component-ids).
+  * Consulte a seção no final deste documento para [instruções sobre como identificar as IDs de componente](#find-component-ids).
 
 Exemplo:
 
