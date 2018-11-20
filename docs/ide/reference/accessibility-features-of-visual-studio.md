@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d892d89f06d47ffe33d57c27b211163fa9568a2d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 57d5149225668a9ef036798b384f41656d2c07e8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943693"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348715"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Recursos de acessibilidade do Visual Studio
 
@@ -38,11 +38,13 @@ Além dos recursos de acessibilidade e utilitários no Windows, os seguintes rec
 
 -   Preenchimento automático para métodos e parâmetros
 
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Acessibilidade do Visual Studio para Mac](/visualstudio/mac/accessibility).
+
 > [!IMPORTANT]
 > As informações nesta seção somente são aplicadas aos usuários que licenciam produtos Microsoft nos Estados Unidos. Se tiver obtido este produto fora dos Estados Unidos, você pode usar o cartão de informações da subsidiária que acompanha o pacote de software ou pode visitar a página [Fale Conosco do Suporte da Microsoft](http://support.microsoft.com/ContactUs) e clicar no link **Localizar escritórios da Microsoft em todo o mundo** (na parte inferior da página). Esta página fornece uma lista de números de telefone e endereços da Microsoft para suporte aos serviços. Você pode contatar qualquer subsidiária para descobrir se os tipos de produtos ou serviços descritos nesta seção estão disponíveis na sua área. As informações sobre acessibilidade estão disponíveis em outros idiomas, incluindo japonês e francês.
 
-
- Para mais informações, consulte os seguintes tópicos:
+Para mais informações, consulte os seguintes tópicos:
 
 -   [Como definir opções de acessibilidade do IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 

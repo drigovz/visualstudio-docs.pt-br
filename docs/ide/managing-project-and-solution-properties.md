@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96581fbaff9c2ddc85fbb92d73096f2a369d4c7b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 77ac77ca999ef627c0f3c9e763b7e5799b97d679
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746306"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349238"
 ---
 # <a name="manage-project-and-solution-properties"></a>Gerenciar propriedades do projeto e da solução
 
@@ -25,6 +25,9 @@ Projetos têm propriedades que controlam muitos aspectos da compilação, da dep
 Os projetos do .NET também podem ter um nó de propriedades na árvore do projeto em si.
 
 ![Nó de propriedades na árvore do Gerenciador de Soluções](../ide/media/vs2015_props_se.png)
+
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Gerenciando propriedades da solução e do projeto (Visual Studio para Mac)](/visualstudio/mac/managing-solutions-and-project-properties).
 
 ## <a name="project-properties"></a>Propriedades de projeto
 
@@ -56,3 +59,4 @@ Para acessar propriedades na solução, clique com o botão direito do mouse no 
 ## <a name="see-also"></a>Consulte também
 
 - [Soluções e projetos no Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- [Gerenciando propriedades da solução e do projeto (Visual Studio para Mac)](/visualstudio/mac/managing-solutions-and-project-properties)

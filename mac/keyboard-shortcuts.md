@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 3aea39862ee2221454a337d7c50defd41319623b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: ff5a7d79bf59f841aaf1957095cb2ae0e53a46c7
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224026"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295105"
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Atalhos de teclado comuns no Visual Studio para Mac
 
@@ -18,17 +18,17 @@ ms.locfileid: "43224026"
 
 Este comando gera código contextualmente:
 
- `⌘ + 1`
+`⌘ + 1`
 
 ![Um painel é exibido com as opções para gerar o código relacionado ao símbolo selecionado](media/keyboard-shortcuts-image8.png)
 
 ## <a name="search-files-symbols-and-commands"></a>Pesquisar arquivos, símbolos e comandos
 
-`control + .` 
+`control + .`
 
-## <a name="autocomplete"></a>Preenchimento Automático 
+## <a name="autocomplete"></a>Preenchimento Automático
 
-`control + /` 
+`control + /`
 
 ## <a name="quick-fixes-and-actions"></a>Correções e ações rápidas
 
@@ -50,7 +50,7 @@ Permite comutar rapidamente entre arquivos:
 
 ## <a name="move-lines-around-in-editor"></a>Mover linhas no Editor
 
-`alt + up/down` 
+`alt + up/down`
 
 Use o comando **alt + tecla para cima** para mover a linha atual ou as linhas selecionadas no momento para cima e use o comando **alt + tecla para baixo** para mover as linhas para baixo. Se for compatível com o suplemento de linguagem, as linhas serão recuadas novamente para coincidir com o contexto ao serem movidas para dentro e para fora do escopo.
 
@@ -71,3 +71,7 @@ Move o cursor para o início ou o fim da linha:
 Expande a seleção de palavra, subexpressão, instrução e membro da linha de forma lógica:
 
 `alt + shift + up` para selecionar `alt + shift + down` para anular a seleção
+
+## <a name="see-also"></a>Consulte também
+
+- [Atalhos de teclado no Visual Studio (no Windows)](/visualstudio/ide/tips-and-tricks-for-visual-studio)

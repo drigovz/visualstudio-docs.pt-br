@@ -27,16 +27,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bb8395d0e0a3b7d4295577cd86568cf15f0db3d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901184"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349043"
 ---
 # <a name="understand-build-configurations"></a>Noções sobre configurações de build
 
 É possível armazenar diferentes configurações de propriedades de solução e de projeto para usar em diferentes tipos de builds. Para criar, selecionar, modificar ou excluir uma configuração, é possível usar o **Configuration Manager**. Para abri-lo, na barra de menus, escolha **Build** > **Configuration Manager** ou apenas digite **Configuração** na caixa **Início Rápido**. Também é possível usar a lista **Configurações de Solução** na barra de ferramentas **Padrão** para selecionar uma configuração ou para abrir o **Configuration Manager**.
+
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Configurações de build no Visual Studio para Mac](/visualstudio/mac/configurations).
 
 > [!NOTE]
 > Se não for possível localizar as definições de configuração da solução na barra de ferramentas nem acessar o **Configuration Manager**, as configurações de desenvolvimento [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] poderão ser aplicadas. Para obter mais informações, consulte [Como gerenciar configurações com as configurações para desenvolvedores do Visual Basic aplicadas](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
@@ -51,7 +54,7 @@ Cada entrada na caixa **Contextos do Projeto** em uma configuração de soluçã
 
 > [!NOTE]
 > Quando você define uma nova configuração de solução e marca a caixa de seleção **Criar novas configurações de projeto**, o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] atribui automaticamente a nova configuração a todos os projetos. Da mesma forma, quando você define uma nova plataforma de solução e marca a caixa de seleção **Criar novas plataformas de projeto**, o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] atribui automaticamente a nova plataforma a todos os projetos. Além disso, se você adicionar um projeto que define como destino uma nova plataforma, o Visual Studio adiciona essa plataforma à lista de plataformas de solução e a atribui a todos os projetos.
-> 
+>
 > Ainda é possível modificar as configurações para cada projeto.
 
 A configuração da solução ativa também fornece contexto ao IDE. Por exemplo, se você estiver trabalhando em um projeto e a configuração especificar que ele será criado para um dispositivo móvel, a **Caixa de Ferramentas** exibirá apenas os itens que podem ser usados em um projeto de dispositivo móvel.
@@ -92,3 +95,4 @@ A configuração da solução ativa também fornece contexto ao IDE. Por exemplo
 - [Soluções e Projetos](../ide/solutions-and-projects-in-visual-studio.md)
 - [Referência de build do C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Opções de linha de comando do Devenv](../ide/reference/devenv-command-line-switches.md)
+- [Configurações de build (Visual Studio para Mac)](/visualstudio/mac/configurations)

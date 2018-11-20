@@ -1,6 +1,6 @@
 ---
-title: Como gerenciar a quebra de texto no Editor
-ms.date: 11/04/2016
+title: Quebra automática de linha
+ms.date: 11/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -14,16 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1419a473bc0edc9fbc68ab978feb776ed63636
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 6fc38d1ee5a8e5543675700c35cc0cb298aefad9
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42626774"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349108"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Como gerenciar a quebra automática de linha no editor
 
 É possível definir e desmarcar a opção **Quebra automática de linha**. Quando essa opção for definida, a parte de uma linha longa que se estender além da largura atual da janela Editor de Código será exibida na próxima linha. Quando essa opção estiver desmarcada, por exemplo, para facilitar o uso de numeração de linha, será possível rolar para a direita para ver os finais das linhas longas.
+
+> [!NOTE]
+> Este tópico aplica-se apenas ao Visual Studio no Windows. Atualmente, o Visual Studio para Mac não dá suporte para a quebra automática de linha.
 
 ## <a name="to-set-word-wrap-preferences"></a>Para definir preferências de quebra automática de linha
 

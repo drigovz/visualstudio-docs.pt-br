@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 2e389bec552212da36fba5f35da89cc85efe9a52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 99d9d4571b2e2842124c9b5d5413e5b59905fa2a
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923037"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295771"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Como testar uma DLL do Visual C++
 
@@ -46,7 +46,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
     -   Os métodos de teste são agrupados em classes usando `TEST_CLASS(YourClassName){...}`.
 
-         Quando os testes são executados, uma instância de cada classe de teste é criada. Os métodos de teste são chamados em uma ordem não especificada. Você pode definir métodos especiais que são invocados antes e depois de cada módulo, classe ou método. Para obter mais informações, consulte [Usando Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md) na biblioteca MSDN.
+         Quando os testes são executados, uma instância de cada classe de teste é criada. Os métodos de teste são chamados em uma ordem não especificada. Você pode definir métodos especiais que são invocados antes e depois de cada módulo, classe ou método. Para obter mais informações, confira [Usando o Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md).
 
 ##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Verificar se o testes são executados no Gerenciador de Testes
 

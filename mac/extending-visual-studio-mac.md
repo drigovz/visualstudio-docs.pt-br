@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 83d5eac54560d9c0c1960808d39a909858db323d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900664"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295131"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Estendendo o Visual Studio para Mac
 
@@ -23,7 +23,7 @@ Para personalizar o Visual Studio para Mac, você pode criar um pacote de extens
 
 ![Arquitetura de suplemento](media/extending-visual-studio-mac-addin1.png)
 
-Para que um pacote de extensão se baseie no Visual Studio para Mac, ele deve ter extensões baseadas em pontos de extensão pré-existentes dentro do IDE do Visual Studio para Mac. Quando um pacote de extensão depende de um ponto de extensão definido em um host de suplemento, ele deve ter uma _dependência_ no pacote de extensão em questão.
+Para que um pacote de extensão se baseie no Visual Studio para Mac, ele deve ter extensões baseadas em pontos de extensão pré-existentes dentro do IDE do Visual Studio para Mac. Quando um pacote de extensão depende de um ponto de extensão definido em um host de suplemento, ele deve ter uma _dependência_ no pacote de extensão em questão.
 
 A vantagem desse design modular é que o Visual Studio para Mac é extensível – há muitos pontos de extensão que podem servir de base com pacotes de extensão personalizados. Exemplos de pacotes de extensão atuais incluem suporte para C# e F#, ferramentas de depuração e modelos de projeto.
 
@@ -52,13 +52,13 @@ Além disso, referências adicionais podem ser adicionadas por meio do nó de re
 
 ![Inserir captura de tela de data](media/extending-visual-studio-mac-addin13.png)
 
-Eles também têm seus atributos `assembly:AddinDependency ` correspondentes adicionados no tempo de build. Depois que os metadados e as declarações de dependência estão em vigor, você pode se concentrar nos blocos de construção essenciais do pacote de extensão.
+Eles também têm seus atributos `assembly:AddinDependency` correspondentes adicionados no tempo de build. Depois que os metadados e as declarações de dependência estão em vigor, você pode se concentrar nos blocos de construção essenciais do pacote de extensão.
 
 ## <a name="extensions-and-extension-points"></a>Extensões e pontos de extensão
 
 Um ponto de extensão é um espaço reservado que define uma estrutura de dados (um tipo), enquanto uma extensão define dados que correspondem a uma estrutura especificada por um determinado ponto de extensão. Os pontos de extensão especificam o tipo de extensão que pode ser aceito em sua declaração. As extensões são declaradas usando nomes de tipos ou caminhos de extensão. Consulte a [Referência de ponto de extensão](https://github.com/mono/mono-addins/wiki/Extension-Points) para ver uma explicação mais aprofundada sobre como criar o ponto de extensão que você precisa.
 
-A arquitetura de extensão/ponto de extensão mantém o desenvolvimento do Visual Studio para Mac modular e rápida. 
+A arquitetura de extensão/ponto de extensão mantém o desenvolvimento do Visual Studio para Mac modular e rápida.
 
 <!--Since there are a large number of extension types, this article focuses on the ones used in the extension package that was built in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md).-->
 
@@ -163,3 +163,7 @@ Para ver informações sobre o escopo das áreas que estão disponíveis para o 
 
 > [!NOTE]
 > Estamos trabalhando para melhorar os cenários de extensibilidade do Visual Studio para Mac. Se você estiver criando extensões e precisa de ajuda ou informações adicionais, ou deseja fornecer comentários, preencha o formulário [Visual Studio for Mac Extension Authoring](https://aka.ms/vsmac-extensions-survey) (Criação de extensão do Visual Studio para Mac).
+
+## <a name="see-also"></a>Consulte também
+
+- [Desenvolver extensões do Visual Studio (no Windows)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

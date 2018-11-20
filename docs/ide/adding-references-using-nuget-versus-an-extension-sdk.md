@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3de51b0c984522810b174bdb1784420620ba037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a895124effa8155ab2edb4652962b605926234d5
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858460"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349472"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Adicionar referências usando o NuGet versus um SDK de Extensão
 
-É possível fornecer um pacote de consumo em projetos do Visual Studio usando a extensão do NuGet para Visual Studio ou um SDK (Software Development Kit). Ao descrever as similaridades e diferenças entre os dois mecanismos, este tópico pode ajudá-lo a escolher o melhor para sua tarefa.
+Você pode fornecer um pacote para consumo em projetos do Visual Studio usando o NuGet ou um SDK (Software Development Kit). Ao descrever as semelhanças e as diferenças entre os dois mecanismos, este artigo pode ajudá-lo a escolher o melhor para sua tarefa.
 
 - O NuGet é um sistema de gerenciamento de pacotes de software livre que simplifica o processo de incorporação de bibliotecas em uma solução de projeto. Para obter mais informações, consulte a [documentação do NuGet](/nuget).
 
@@ -27,7 +27,6 @@ ms.locfileid: "49858460"
 ## <a name="which-mechanism-should-i-use"></a>Que mecanismo devo usar?
 
 A tabela a seguir ajuda a comparar os recursos de referência de um SDK com os recursos de referência do NuGet.
-
 
 | Recurso | Suporte do SDK | Anotações do SDK | Suporte do NuGet | Anotações do NuGet |
 | - | - | - |---------------| - |
@@ -70,4 +69,5 @@ A tabela a seguir ajuda a comparar os recursos de referência de um SDK com os r
 
 ## <a name="see-also"></a>Consulte também
 
-- [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md)
+- [Gerenciar referências em um projeto](../ide/managing-references-in-a-project.md)
+- [Gerenciar referências em um projeto (Visual Studio para Mac)](/visualstudio/mac/managing-references-in-a-project)

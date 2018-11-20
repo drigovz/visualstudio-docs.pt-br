@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9b6890613cc4ad41af77e27f7f41c6f5c9da
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219842"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349329"
 ---
 # <a name="python-web-application-project-templates"></a>Modelos de projeto de aplicativo Web Python
 
 O Python no Visual Studio é compatível com o desenvolvimento de projetos da Web nas estruturas Bottle, Flask e Django por meio de modelos de projeto e um inicializador de depuração que pode ser configurado para manipular várias estruturas. Esses modelos incluem um arquivo *requirements.txt* para declarar as dependências necessárias. Ao criar um projeto com base em um desses modelos, o Visual Studio solicita que você instale esses pacotes (confira [Instalar os requisitos do projeto](#install-project-requirements) mais adiante neste artigo).
 
-Você também pode usar o modelo genérico **Projeto Web** para outras estruturas, como Pyramid. Nesse caso, nenhuma estrutura é instalada com o modelo. Em vez disso, instale os pacotes necessários no ambiente que você está usando para o projeto (confira [Gerenciar ambientes do Python](managing-python-environments-in-visual-studio.md)).
+Você também pode usar o modelo genérico **Projeto Web** para outras estruturas, como Pyramid. Nesse caso, nenhuma estrutura é instalada com o modelo. Em vez disso, instale os pacotes necessários no ambiente em que você está usando para o projeto (confira [Janela de ambientes do Python – guia Pacote](python-environments-window-tab-reference.md#packages-tab)).
 
 Para obter informações de como implantar um aplicativo Web do Python no Azure, confira [Publicar no Serviço de Aplicativo do Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
 

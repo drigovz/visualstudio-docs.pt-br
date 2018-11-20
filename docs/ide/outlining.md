@@ -17,16 +17,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6c8102eb2bc94785d36256fc0c5653146cc5c76
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c0b1312ef84e88050423cce74953f452e33dd9bf
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447200"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349173"
 ---
 # <a name="outlining"></a>Estrutura de tópicos
 
 Você pode optar por ocultar a exibição de algum código recolhendo uma região do código para que ele apareça sob um sinal de adição (**+**). Você expande uma região recolhida clicando no sinal de adição. Se for um usuário de teclado, você poderá escolher **Ctrl**+**M**+**M** para recolher e expandir. Você também pode recolher uma região de estrutura de tópicos clicando duas vezes em qualquer linha na região na margem da estrutura de tópicos, que aparece à esquerda do código. Você pode ver o conteúdo de uma região recolhida como uma dica de ferramenta quando focaliza a região recolhida.
+
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Editor de código-fonte (Visual Studio para Mac)](/visualstudio/mac/source-editor).
 
 As regiões na margem da estrutura de tópicos também são realçadas quando você focaliza a margem com o mouse. A cor de realce padrão pode parecer bastante esmaecida em algumas configurações de cor. Você pode alterá-la em **Ferramentas** > **Opções** > **Ambiente** > **Fontes e Cores**  >  **Região recolhível**.
 
@@ -55,3 +58,4 @@ Você também pode usar o SDK do Visual Studio para definir as regiões de texto
 ## <a name="see-also"></a>Consulte também
 
 - [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Editor de código-fonte (Visual Studio para Mac)](/visualstudio/mac/source-editor)

@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce6a85ff80d8da081b0d69763ed477174de7ed4
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9d2ad9e3e6644f3f0ffc2d4fbf163968f16065f3
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863615"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349127"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar e criar no Visual Studio
 
-Executar um build cria assemblies e aplicativos executáveis do código-fonte a qualquer momento durante um ciclo de desenvolvimento. De modo geral, o processo de compilação é muito semelhante entre vários tipos de projeto diferentes, como Windows, ASP.NET, aplicativos móveis e outros. O processo de compilação também é muito semelhante entre linguagens de programação, como C#, Visual Basic, C++ e F#.
+Quando você compila o código-fonte, o mecanismo de build cria assemblies e aplicativos executáveis. De modo geral, o processo de compilação é muito semelhante entre vários tipos de projeto diferentes, como Windows, ASP.NET, aplicativos móveis e outros. O processo de build também é semelhante entre as linguagens de programação, como C#, Visual Basic, C++, e F#.
 
-Compilando seu código com frequência, é possível identificar erros rapidamente em tempo de compilação, como sintaxe incorreta, palavras-chave com erros de ortografia e erros de digitação. Também é possível detectar e corrigir com rapidez erros em tempo de execução, como erros lógicos e semânticos, compilando e executando frequentemente versões de depuração do código.
+Compilando seu código com frequência, é possível identificar erros rapidamente em tempo de compilação, como sintaxe incorreta, palavras-chave com erros de ortografia e erros de digitação. Também é possível detectar e corrigir erros em tempo de execução, como erros lógicos e semânticos, ao compilar e executar versões de depuração do código.
 
-Uma compilação bem-sucedida é, essencialmente, uma validação de que o código-fonte do aplicativo contém sintaxe correta e de que todas as referências estáticas a bibliotecas, assemblies e outros componentes foram resolvidas. Isso produz um executável de aplicativo que pode, por sua vez, ser testado quanto ao funcionamento adequado em um [ambiente de depuração](../debugger/index.md) e por meio de uma variedade de testes manuais e automatizados para [validar a qualidade do código](../test/improve-code-quality.md). Após o aplicativo ter sido totalmente testado, você pode compilar uma versão de lançamento para ser implantada por seus clientes. Para obter uma introdução a esse processo, veja [Passo a passo: Criação de um aplicativo](../ide/walkthrough-building-an-application.md).
+Um build bem-sucedido valida que o código-fonte do aplicativo contém a sintaxe correta e que todas as referências estáticas a bibliotecas, assemblies e outros componentes podem ser resolvidas. É produzido um aplicativo executável que pode ser testado quanto ao funcionamento adequado em um [ambiente de depuração](../debugger/index.md) e por meio de uma variedade de testes manuais e automatizados para [validar a qualidade do código](../test/improve-code-quality.md). Depois que o aplicativo for completamente testado, você poderá compilar uma versão de lançamento a ser implantada em seus clientes. Para obter uma introdução a esse processo, veja [Passo a passo: Criação de um aplicativo](../ide/walkthrough-building-an-application.md).
 
 Você pode usar qualquer um dos métodos a seguir para compilar um aplicativo: o IDE do Visual Studio, as ferramentas de linha de comando do MSBuild, e o Azure Pipelines:
 
@@ -37,6 +37,9 @@ Você pode usar qualquer um dos métodos a seguir para compilar um aplicativo: o
 | Azure Pipelines | – Automatizar o processo de build como parte de um pipeline de integração contínua/entrega contínua.<br />– Aplicar testes automatizados com cada compilação.<br />– Empregar recursos baseados em nuvem praticamente ilimitados para processos de build.<br />– Modificar o fluxo de trabalho de compilação e, conforme necessário, criar atividades de compilação para realizar tarefas profundamente personalizadas.|
 
 A documentação nesta seção detalha mais o processo de compilação baseado no IDE. Para obter mais informações sobre os outros métodos, confira [MSBuild](../msbuild/msbuild.md) e [Azure Pipelines](/azure/devops/pipelines/index?view=vsts), respectivamente.
+
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Compilar e criar no Visual Studio para Mac](/visualstudio/mac/compiling-and-building).
 
 ## <a name="overview-of-building-from-the-ide"></a>Visão geral da compilação no IDE
 
@@ -57,3 +60,4 @@ A partir daí, você pode explorar uma variedade de outras tarefas:
 ## <a name="see-also"></a>Consulte também
 
 - [Criar (compilar) projetos de site](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
+- [Compilar e criar (Visual Studio para Mac)](/visualstudio/mac/compiling-and-building)

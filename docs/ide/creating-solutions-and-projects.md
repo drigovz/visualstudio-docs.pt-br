@@ -17,18 +17,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d8d222a35c06cd7d53e2e104761cc1f30bf816e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a912534b9e0212e68a947fa892395a233f263a87
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813811"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349631"
 ---
 # <a name="create-solutions-and-projects"></a>Criar soluções e projetos
 
 *Projetos* são contêineres lógicos no Visual Studio que contêm os itens necessários para criar seu aplicativo, como arquivos de código-fonte, bitmaps, ícones e referências de componente e serviço. Quando você cria um novo projeto, o Visual Studio cria uma *solução* para contê-lo. Você poderá, então, adicionar projetos novos ou existentes à solução, se desejar. As soluções também podem conter arquivos não conectados a nenhum projeto específico.
 
 ![Hierarquia de projeto/solução](./media/vside-proj-soln.png)
+
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Criar projetos no Visual Studio para Mac](/visualstudio/mac/create-new-projects).
 
 Você pode exibir suas soluções e projetos em uma janela de ferramentas chamada **Gerenciador de Soluções**. A captura de tela a seguir mostra uma solução de exemplo no **Gerenciador de Soluções** (**BikeSharing.Xamarin-UWP**) que contém dois projetos: **BikeSharing.Clients.Core** e **BikeSharing.Clients.Windows**. Cada projeto contém vários arquivos, pastas e referências. O nome do projeto em negrito é o *projeto de inicialização*, ou seja, o projeto que é iniciado quando você executa o aplicativo. Você pode especificar qual projeto é o projeto de inicialização.
 
@@ -39,7 +42,7 @@ Embora você possa construir um projeto por conta própria, adicionando nele os 
 Dito isso, soluções e projetos não são necessários para desenvolver aplicativos no Visual Studio. Você também pode simplesmente abrir código clonado do Git ou baixado em outro lugar. Para obter mais informações, consulte [Desenvolver código no Visual Studio sem projetos nem soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
 > [!NOTE]
-> As descrições deste tópico baseiam-se na edição Visual Studio Community. As caixas de diálogo e comandos de menu que você vê podem ser diferentes dos descritos aqui, dependendo de suas configurações ou da edição Visual Studio. Para alterar as configurações, por exemplo, para configurações **Gerais** ou do **Visual C++**, escolha **Ferramentas**, **Importar e exportar configurações** e, em seguida, escolha **Redefinir todas as configurações**.
+> As descrições deste tópico baseiam-se na edição Visual Studio Community. As caixas de diálogo e comandos de menu que você vê podem ser diferentes dos descritos aqui, dependendo de suas configurações ou da edição Visual Studio. Para alterar as configurações, por exemplo, para configurações **Gerais** ou do **Visual C++**, escolha **Ferramentas** > **Importar e Exportar Configurações** e, em seguida, escolha **Redefinir todas as configurações**.
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Para criar um projeto com base em um modelo de projeto
 
@@ -138,3 +141,4 @@ Você pode excluir as soluções e seu conteúdo permanentemente, mas não usand
 - [Soluções e Projetos](../ide/solutions-and-projects-in-visual-studio.md)
 - [Repositórios de software livre da Microsoft no GitHub](https://github.com/Microsoft)
 - [Exemplos de código para desenvolvedores](https://code.msdn.microsoft.com/)
+- [Criar projetos (Visual Studio para Mac)](/visualstudio/mac/create-new-projects)

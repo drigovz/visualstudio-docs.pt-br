@@ -5,16 +5,16 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/19/2018
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
-ms.openlocfilehash: 4ffb7ce8a796641d54a5c29c58b9f166a9189d1c
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 76a536f621a3c715a62b9e132dc661a2bcf8eb07
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228793"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294923"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Abrir várias soluções ou instâncias do Visual Studio para Mac
 
-Por padrão, todos os aplicativos de um Mac, incluindo o Visual Studio para Mac, são aplicativos de _instância única_. Isso significa que se o aplicativo que você deseja usar já estiver aberto (ilustrado por um "ponto" sob o ícone no encaixe), selecionar o ícone novamente abrirá a instância em execução, em vez de uma nova.  Caso precise de instâncias adicionais do aplicativo, solicite ao sistema para abri-las para você, conforme descrito na [próxima seção](#open-a-second-instance-of-visual-studio-for-mac).
+Por padrão, todos os aplicativos de um Mac, incluindo o Visual Studio para Mac, são aplicativos de _instância única_. Isso significa que se o aplicativo que você deseja usar já estiver aberto (ilustrado por um ponto sob o ícone no encaixe), selecionar o ícone novamente abrirá a instância em execução, em vez de uma nova. Caso precise de instâncias adicionais do aplicativo, solicite ao sistema para abri-las para você, conforme descrito na [próxima seção](#open-a-second-instance-of-visual-studio-for-mac).
 
 Além disso, quando você abre uma solução, o comportamento padrão é abrir a solução em um novo workspace e fechar o workspace atual (se necessário). Substitua esse comportamento padrão mantendo o workspace atual aberto, conforme descrito na seção [Abrir uma segunda solução](#open-a-second-solution-inside-a-single-instance).
 
@@ -33,13 +33,14 @@ Para abrir uma segunda solução junto com a primeira solução, use as seguinte
 1. Com sua primeira solução já aberta, selecione **Arquivo** > **Abrir**.
 2. Navegue pelo sistema de arquivos para encontrar a solução existente.
 3. Selecione o arquivo **.sln** e depois **Opções**:
-    
+
     ![Captura de tela do Visual Studio para Mac, com o arquivo .sln e Opções realçados](media/open-multiple-solutions-image3.png)
+
 4. Desmarque a caixa **Fechar área de trabalho atual**:
 
     ![Captura de tela da caixa de diálogo Opções, com a caixa Fechar área de trabalho atual desmarcada](media/open-multiple-solutions-image1.png)
 
-1. Selecione **Abrir** para abrir a segunda solução no Painel de Soluções.
+5. Selecione **Abrir** para abrir a segunda solução no Painel de Soluções.
 
 Como alternativa, se você abriu a solução recentemente, use as seguintes etapas:
 

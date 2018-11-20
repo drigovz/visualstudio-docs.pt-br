@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 039d0caac98bdb574f2e42303ccb001e9600a740
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220847"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348937"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Atalhos de teclado para o Visual Studio
 
@@ -22,6 +22,9 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos de 
 
 > [!TIP]
 > Os atalhos listados aqui são apenas um subconjunto dos atalhos de teclado disponíveis. Para obter uma lista mais completa, consulte [Atalhos de teclado padrão](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Atalhos de teclado comuns no Visual Studio para Mac](/visualstudio/mac/keyboard-shortcuts).
 
 ## <a name="window-management"></a>Gerenciamento de janelas
 
@@ -136,4 +139,5 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos de 
 
 - [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md)
 - [Atalhos de teclado (Azure DevOps Services e TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Blog de dicas e truques sobre o Visual Studio](https://blogs.msdn.com/b/zainnab)
+- [Blog de dicas e truques sobre o Visual Studio](https://blogs.msdn.microsoft.com/zainnab/)
+- [Atalhos de teclado comuns no Visual Studio para Mac](/visualstudio/mac/keyboard-shortcuts)

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57898fbcfba72c67b199ea584d494cb96dfbf491
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 473f46e87ded78e134ab021b68c57248f8ac1a33
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811835"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349199"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Dicas de acessibilidade e truques do Visual Studio
 
@@ -26,6 +26,9 @@ ms.locfileid: "49811835"
 > Para saber mais sobre atualizações de acessibilidade recentes, confira a postagem no blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Aprimoramentos de acessibilidade no Visual Studio 2017 versão 15.3).
 
 O Visual Studio tem recursos internos de acessibilidade que são compatíveis com leitores de tela e outras tecnologias assistenciais. Este tópico lista combinações de teclas de atalho comum que você pode usar para executar tarefas apenas com o teclado e inclui informações de como usar temas de alto contraste para melhorar a visibilidade. Além disso, mostra como usar anotações para revelar informações úteis sobre o código e como configurar indicações de som para eventos de build e de ponto de interrupção.
+
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Acessibilidade do Visual Studio para Mac](/visualstudio/mac/accessibility).
 
 ## <a name="save-your-ide-settings"></a>Salvar as configurações do IDE
 
@@ -104,3 +107,4 @@ Veja como.
 * [Como personalizar menus e barras de ferramentas no Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 * [Acessibilidade da Microsoft](https://www.microsoft.com/Accessibility)
+* [Acessibilidade (Visual Studio para Mac)](/visualstudio/mac/accessibility)

@@ -5,25 +5,24 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 9549a9d51fa2d86f60564e842bfc5e13a5f6523c
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7fbd275e3e946461559db41668a749cd6631ba09
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224430"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296301"
 ---
 # <a name="customizing-the-build-system"></a>Personalizando o sistema de build
 
-O MSbuild é um mecanismo de build desenvolvido pela Microsoft que permite compilar aplicativos primariamente .NET. A estrutura Mono também tem sua própria implementação do Build Engine da Microsoft, chamado **xbuild**. No entanto, o xbuild foi desativado para dar lugar ao uso do MSBuild em todos os sistemas operacionais.
+O MSbuild é um mecanismo de build desenvolvido pela Microsoft que permite compilar aplicativos primariamente .NET. A estrutura Mono também tem sua própria implementação do Build Engine da Microsoft, chamado **xbuild**. No entanto, o xbuild foi desativado para favorecer o uso do MSBuild em todos os sistemas operacionais.
 
-O **MSbuild** é usado principalmente como sistema de build para projetos no Visual Studio para Mac. 
+O **MSbuild** é usado principalmente como sistema de build para projetos no Visual Studio para Mac.
 
-O MSBuild funciona obtendo um conjunto de entradas, como arquivos de origem, e transformando-os em saídas, como arquivos executáveis. Ela obtém essa saída invocando ferramentas como o compilador. 
-
+O MSBuild funciona obtendo um conjunto de entradas, como arquivos de origem, e transformando-os em saídas, como arquivos executáveis. Ela obtém essa saída invocando ferramentas como o compilador.
 
 ## <a name="msbuild-file"></a>Arquivo do MSBuild
 
-O MSBuild usa um arquivo XML, chamado de arquivo de projeto, que define os *Itens* que fazem parte do seu projeto (como recursos de imagem) e as *Propriedades* necessárias para compilar o projeto. Este arquivo de projeto sempre terá uma extensão de arquivo terminando em `proj`, como `.csproj` para projetos C#. 
+O MSBuild usa um arquivo XML, chamado de arquivo de projeto, que define os *Itens* que fazem parte do seu projeto (como recursos de imagem) e as *Propriedades* necessárias para compilar o projeto. Este arquivo de projeto sempre terá uma extensão de arquivo terminando em `proj`, como `.csproj` para projetos C#.
 
 ### <a name="viewing-the-msbuild-file"></a>Exibindo o arquivo do MSBuild
 
@@ -61,7 +60,7 @@ Há dois tipos de dados fundamentais no MSBuild: *itens* e *propriedades*, que s
 
 As propriedades são pares chave/valor, que são usados para armazenar configurações que afetam a compilação, como opções do compilador.
 
-Elas são definidas usando um PropertyGroup e podem conter qualquer número de PropertiesGroups, que pode conter qualquer número de propriedades. 
+Elas são definidas usando um PropertyGroup e podem conter qualquer número de PropertiesGroups, que pode conter qualquer número de propriedades.
 
 Por exemplo, o PropertyGroup para um aplicativo de console simples pode ser semelhante ao XML seguinte:
 
@@ -83,9 +82,9 @@ Propriedades podem ser referidas de expressões que usam a sintaxe `$()`. Por ex
 
 Os itens fornecem uma maneira de lidar com entradas para o sistema de build, como listas ou conjuntos e geralmente representam arquivos. Cada item tem um *tipo* e uma *especificação* de item, bem como *metadados* arbitrários opcionais. Observe que o MSBuild não funciona em itens individuais, ele obtém todos os itens de um determinado tipo, chamado *conjunto* de itens
 
-Os itens são criados declarando um `ItemGroup`. Pode haver qualquer quantidade de ItemGroups, que podem conter qualquer quantidade de itens. 
+Os itens são criados declarando um `ItemGroup`. Pode haver qualquer quantidade de ItemGroups, que podem conter qualquer quantidade de itens.
 
-Por exemplo, o trecho de código a seguir cria telas de inicialização do iOS. As telas de inicialização têm o tipo de compilação `BundleResource`, com a especificação como o caminho para a imagem:
+Por exemplo, o snippet de código a seguir cria telas de inicialização do iOS. As telas de inicialização têm o tipo de compilação `BundleResource`, com a especificação como o caminho para a imagem:
 
 ```xml
  <ItemGroup>
@@ -104,5 +103,5 @@ Por exemplo, o trecho de código a seguir cria telas de inicialização do iOS. 
 
 Os recursos a seguir podem ser usados para conhecer melhor o MSBuild:
 
-* [MSDN – Visão geral](https://msdn.microsoft.com/library/dd393574.aspx)
-* [MSDN – Conceitos](https://msdn.microsoft.com/library/dd637714.aspx)
+* [Visão geral do MSBuild](/visualstudio/msbuild/msbuild)
+* [Conceitos do MSBuild](/visualstudio/msbuild/msbuild-concepts)

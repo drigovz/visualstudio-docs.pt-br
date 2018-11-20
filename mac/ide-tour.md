@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 37c4f6c50cc5deaee1decf6fcfae5eda211018b2
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228848"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295677"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Tour do Visual Studio para Mac
 
@@ -56,13 +56,13 @@ O Painel de Soluções organiza os projetos em uma solução:
 Para saber mais sobre como usar os Projetos e Soluções no Visual Studio para Mac, veja o artigo [Projetos e Soluções](projects-and-solutions.md).
 
 ## <a name="assembly-references"></a>Referências de Assembly
- 
+
 As referências de assembly para cada projeto estão disponíveis na pasta Referências:
 
 ![Pasta Referências no painel de soluções](media/ide-tour-image19.png)
 
 As referências adicionais são adicionadas usando a caixa de diálogo **Editar Referências**, que é exibida clicando duas vezes na pasta Referências ou selecionando **Editar Referências** em suas ações de menu de contexto:
- 
+
 ![Caixa de diálogo Editar Referências](media/ide-tour-image20.png)
 
 Para saber mais sobre como usar Referências no Visual Studio para Mac, veja o artigo [Gerenciando referências em um projeto](managing-references-in-a-project.md).
@@ -93,7 +93,7 @@ Para saber mais sobre visualizações de dados do depurador, visite o artigo [Vi
 
 ## <a name="version-control"></a>Controle de versão
 
-O Visual Studio para Mac integra-se aos sistemas de controle do código-fonte Git e Subversion. Projetos com controle do código-fonte são marcados com o branch listado ao lado do nome da Solução: 
+O Visual Studio para Mac integra-se aos sistemas de controle do código-fonte Git e Subversion. Projetos com controle do código-fonte são marcados com o branch listado ao lado do nome da Solução:
 
 ![Nome do branch para indicar o projeto com controle do código-fonte](media/ide-tour-image22.png)
 
@@ -102,3 +102,7 @@ Os arquivos com alterações não confirmadas têm uma anotação em seus ícone
 ![Arquivos não confirmados no painel de soluções](media/ide-tour-image23.png)
 
 Para saber mais sobre como usar o controle de versão no Visual Studio, veja o artigo [Controle de Versão](version-control.md).
+
+## <a name="see-also"></a>Consulte também
+
+- [IDE do Visual Studio (no Windows)](/visualstudio/ide/visual-studio-ide)
