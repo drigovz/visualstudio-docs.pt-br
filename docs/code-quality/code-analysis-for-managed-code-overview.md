@@ -1,5 +1,5 @@
 ---
-title: Análise de código para código gerenciado no Visual Studio
+title: Análise estática de código para código gerenciado
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 1e77955de9bb650ac262d8f9b7513c90acbd19ac
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320807"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948420"
 ---
-# <a name="overview-of-code-analysis-for-managed-code"></a>Visão geral da análise de código para código gerenciado
+# <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Visão geral da análise de código estático para código gerenciado no Visual Studio
 
-Visual Studio 2017 analisa o código gerenciado de duas maneiras: com legacy *FxCop* análise estática de assemblies gerenciados e com o .NET Compiler Platform *analisadores*. Este tópico aborda a análise de código estático do FxCop. Para saber mais sobre a análise de código usando analisadores do .NET Compiler Platform, consulte [analisadores de visão geral do Roslyn](../code-quality/roslyn-analyzers-overview.md).
+Visual Studio 2017 pode executar a análise de código gerenciado de duas maneiras: com *FxCop* análise estática de assemblies gerenciados e com os mais modernos *analisadores de Roslyn*. Este tópico aborda a análise de código estático do FxCop. Para saber mais sobre a análise de código usando analisadores de código, consulte [analisadores de visão geral do Roslyn](../code-quality/roslyn-analyzers-overview.md).
 
 Análise de código para código gerenciado analisa os assemblies gerenciados e relata informações sobre assemblies, como violações de programação e regras de design estabelecidas nas diretrizes de Design do Microsoft .NET Framework.
 
@@ -75,7 +75,7 @@ Você pode fazer isso com a especificação de políticas de check-in. Para obte
 
 ## <a name="team-build-integration"></a>Integração do Team build
 
-Você pode usar os recursos integrados do sistema de compilação para executar a ferramenta de análise como parte do processo de compilação. Para obter mais informações, consulte [Pipelines do Azure](/azure/devops/pipelines/index?view=vsts).
+Você pode usar os recursos integrados do sistema de compilação para executar a ferramenta de análise como parte do processo de compilação. Para obter mais informações, confira [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Consulte também
 
