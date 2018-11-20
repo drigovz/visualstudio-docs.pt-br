@@ -1,5 +1,5 @@
 ---
-title: Soluções e projetos no Visual Studio
+title: Soluções e projetos
 ms.date: 10/05/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -26,14 +26,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7368778928384f50e96bfd8c5f3f1e107e6b411d
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: ba0ed54e8acd28be3f267d83473f9514f471ef4a
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089653"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349303"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
+
+Este artigo descreve o conceito de um *projeto* e de uma *solução* no Visual Studio. Ele também aborda rapidamente a janela de ferramentas **Gerenciador de Soluções** e como criar um projeto.
+
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Projetos e soluções no Visual Studio para Mac](/visualstudio/mac/projects-and-solutions).
 
 ## <a name="projects"></a>Projetos
 
@@ -62,7 +67,7 @@ O Visual Studio usa dois tipos de arquivos (*.sln* e *.suo*) para armazenar conf
 
 ## <a name="create-new-projects"></a>Criar novos projetos
 
-A maneira mais fácil de criar um novo projeto é começar de um modelo de projeto para um tipo específico de aplicativo ou site. Um modelo de projeto consiste em um conjunto básico de arquivos de código, arquivos de configuração, ativos e configurações gerados previamente. Esses modelos são o que você vê na caixa de diálogo **Novo Projeto** ou **Novo Site** quando escolhe **Arquivo** > **Novo** > **Projeto** ou **Arquivo** > **Novo** > **Site**. Para obter mais informações, confira [Criar soluções e projetos](../ide/creating-solutions-and-projects.md).
+A maneira mais fácil de criar um novo projeto é começar de um modelo de projeto para um tipo específico de aplicativo ou site. Um modelo de projeto consiste em um conjunto básico de arquivos de código, arquivos de configuração, ativos e configurações gerados previamente. Esses modelos são os que aparecem na caixa de diálogo **Novo Projeto** quando você escolhe **Arquivo** > **Novo** > **Projeto**. Para obter mais informações, confira [Criar soluções e projetos](../ide/creating-solutions-and-projects.md).
 
 Também é possível criar modelos de item e de projeto personalizados. Para obter mais informações, confira [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md).
 
@@ -75,3 +80,5 @@ Depois de criar um novo projeto, você pode usar o **Gerenciador de Soluções**
 ## <a name="see-also"></a>Consulte também
 
 - [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Projetos e soluções (Visual Studio para Mac)](/visualstudio/mac/projects-and-solutions)
+- [Adicionar e remover itens do projeto (Visual Studio para Mac)](/visualstudio/mac/add-and-remove-project-items)

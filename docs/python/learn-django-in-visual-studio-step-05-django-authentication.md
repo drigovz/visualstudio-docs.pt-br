@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: cd3dce86104343b6c10bd1329b3ee3cdb7c7ee4f
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120349"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561641"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Etapa 5: Autenticar usuários no Django
 
@@ -152,24 +152,30 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
 
 1. Para verificar se o usuário autenticado está autorizado a acessar recursos específicos, você precisa recuperar as permissões específicas do usuário do banco de dados. Para obter mais informações, confira [Using the Django authentication system](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Usando o sistema de autenticação do Django) (documentos do Django).
 
-1. O superusuário ou o administrador, em particular, está autorizado a acessar as interfaces de administrador internas do Django usando as URLs relativas "/admin/" e "/admin/doc/". Para habilitar essas interfaces, abra o *urls.py* do projeto do Django e remova os comentários das seguintes entradas:
+1. O superusuário ou o administrador, em particular, está autorizado a acessar as interfaces de administrador internas do Django usando as URLs relativas "/admin/" e "/admin/doc/". Para habilitar essas interfaces, faça o seguinte:
 
-    ```python
-    from django.conf.urls import include
-    from django.contrib import admin
-    admin.autodiscover()
+    1. Instale o pacote Python docutils em seu ambiente. Uma boa maneira de fazer isso é adicionar "docutils" ao arquivo *requirements.txt* e, em seguida, no **Gerenciador de Soluções**, expandir o projeto, expandir o nó **Ambientes do Python** e, em seguida, clicar com o botão direito do mouse no ambiente que você está usando e selecionar **Instalar do requirements.txt**.
 
-    # ...
-    urlpatterns = [
+    1. Abra o projeto do Django *urls.py* e remova os comentários padrão das seguintes entradas:
+
+        ```python
+        from django.conf.urls import include
+        from django.contrib import admin
+        admin.autodiscover()
+
         # ...
-        url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-        url(r'^admin/', include(admin.site.urls)),
-    ]
-    ```
+        urlpatterns = [
+            # ...
+            url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+            url(r'^admin/', include(admin.site.urls)),
+        ]
+        ```
 
-    Quando você reiniciar o aplicativo, navegue até "/admin/" e "/admin/doc/" e execute tarefas, como criar contas de usuário adicionais.
+    1. No arquivo *settings.py* do projeto do Django, navegue até a coleção `INSTALLED_APPS` e adicione `'django.contrib.admindocs'`.
 
-    ![Interface de administrador do Django](media/django/step05-administrator-interface.png)
+    1. Quando você reiniciar o aplicativo, navegue até "/admin/" e "/admin/doc/" e execute tarefas, como criar contas de usuário adicionais.
+
+        ![Interface de administrador do Django](media/django/step05-administrator-interface.png)
 
 1. A parte final do fluxo de autenticação é fazer logoff. Como você pode ver em *loginpartial.html*, o link **Fazer logoff** apenas faz um POST para a URL relativa "/login", que é manipulada pela exibição interna `django.contrib.auth.views.logout`. Essa exibição não exibe nenhuma interface do usuário e apenas navega para a home page (conforme mostrado em *urls.py* para o padrão "^logout$"). Se você quiser exibir uma página de logoff, primeiro altere o padrão da URL conforme mostrado a seguir para adicionar uma propriedade "template_name" e remover a propriedade "next_page":
 

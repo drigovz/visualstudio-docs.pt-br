@@ -16,16 +16,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47468c7ff7ead04ad2c6261725089ca454faffc2
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 7766a7fd935cc1e1131c4780a5a88ef6fa54e838
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612695"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349382"
 ---
 # <a name="use-the-task-list"></a>Usar a Lista de Tarefas
 
 Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens, como `TODO` e `HACK`, ou tokens personalizados, e para gerenciar atalhos que levarão você diretamente a um local predefinido no código. Clique no item na lista para ir até seu local no código-fonte.
+
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Comentários da tarefa (Visual Studio para Mac)](/visualstudio/mac/task-comments).
 
 ## <a name="the-task-list-window"></a>A janela Lista de Tarefas
 
@@ -104,3 +107,4 @@ Para navegar pelos atalhos no código, escolha um atalho na lista e escolha **Pr
 ## <a name="see-also"></a>Consulte também
 
 - [Caixa de diálogo Lista de Tarefas, Ambiente, Opções](../ide/reference/task-list-environment-options-dialog-box.md)
+- [Comentários da tarefa (Visual Studio para Mac)](/visualstudio/mac/task-comments)

@@ -33,12 +33,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6120d1ece56e24712fd1217090159ec627f88d61
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384234"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349095"
 ---
 # <a name="find-and-replace-text"></a>Localizar e substituir texto
 
@@ -93,6 +93,9 @@ Você pode definir conjuntos de componentes como o escopo da pesquisa escolhendo
 
 ## <a name="multi-caret-selection"></a>Seleção de vários cursores
 
+> [!NOTE]
+> Esta seção aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Seleção de bloco](/visualstudio/mac/block-selection).
+
 **Novo no Visual Studio 2017 versão 15.8**
 
 Use a *seleção de vários cursores* para fazer a mesma edição em dois ou mais locais ao mesmo tempo. Por exemplo, você pode inserir o mesmo texto ou modificar o texto existente em vários locais ao mesmo tempo.
@@ -130,3 +133,4 @@ Alguns dos comandos também estão disponíveis no menu **Editar**, em **Vários
 
 - [Usar expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
 - [Refatorar um código no Visual Studio](../ide/refactoring-in-visual-studio.md)
+- [Seleção de bloco (Visual Studio para Mac)](/visualstudio/mac/block-selection)

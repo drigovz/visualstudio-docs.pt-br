@@ -1,17 +1,17 @@
 ---
-title: Solução de problemas com o Visual Studio para Mac
+title: Solução de problemas
 description: Problemas comuns e resoluções para usuários do Visual Studio para Mac.
 ms.topic: troubleshooting
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 6d8edc7942b460c4c11e20bc9a0c5cae204328cf
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 3a5ea59e6f98891cd113ccad9a74038ca52cccf8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224243"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294637"
 ---
 # <a name="troubleshooting"></a>Solução de problemas
 
@@ -27,7 +27,7 @@ Quando uma exceção é detectada, uma bolha de exceção é exibida. Para exibi
 
 ![Exibir mais detalhes sobre uma exceção](media/troubleshooting-image2.png)
 
-Isso exibirá a caixa de diálogo **Mostrar detalhes**, fornecendo mais informações sobre a exceção:
+Isso exibe a caixa de diálogo **Mostrar Detalhes**, fornecendo mais informações sobre a exceção:
 
 ![Mostrar a caixa de diálogo de detalhes](media/troubleshooting-image3.png)
 
@@ -45,4 +45,8 @@ Seções importantes da caixa de diálogo, numeradas acima, são descritas em de
 10. Por padrão, isso é definido para o mesmo que a opção **Depurar somente o código do projeto** nas configurações do depurador. Marcar essa caixa permitirá que todo o código que não é do usuário seja recolhido em uma linha no rastreamento de pilha.
 11. Um botão Copiar para copiar a saída de `exception.ToString()` para a área de transferência.
 
-Observe que algumas dessas seções só ficarão visíveis quando a exceção tiver uma exceção interna.
+Observe que algumas dessas seções só ficam visíveis quando a exceção tem uma exceção interna.
+
+## <a name="see-also"></a>Consulte também
+
+- [Recursos para solução de problemas de erros do IDE (Visual Studio no Windows)](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

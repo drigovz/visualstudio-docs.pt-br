@@ -5,12 +5,12 @@ ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: conceptdev
 ms.author: crdun
 ms.date: 04/04/2018
-ms.openlocfilehash: bcc09fab45bf9580349675a65150319c34236f97
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 463b002ed2a511c47b518dba756f3ca4c6a5ca35
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224342"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295170"
 ---
 # <a name="connected-services-walkthrough"></a>Passo a passo do Connected Services
 
@@ -18,8 +18,7 @@ O fluxo de trabalho do Connected Services leva o fluxo de trabalho do portal do 
 
 Este passo a passo mostra como adicionar um serviço de back-end do Azure, que oferece armazenamento de dados em nuvem, autenticação e notificações por push, em um aplicativo PCL (Biblioteca de Classes Portátil) multiplataforma do Xamarin.Forms.
 
-
-1.  Para começar, clique duas vezes no nó **Connected Services** na solução, o que abre a **Galeria de Serviços**.
+1. Para começar, clique duas vezes no nó **Serviços Conectados** na solução, o que abre a **Galeria de Serviços**.
   Esta é uma lista de todos os serviços disponíveis para o tipo de aplicativo. Selecione um serviço (como **Back-end móvel com o Serviço de Aplicativo do Azure**) clicando nele.
 
     [![Nó do Connected Services no Visual Studio para Mac](media/connected-services-image001-sml.png "Nó do Connected Services no Visual Studio para Mac")](media/connected-services-image001.png#lightbox)
@@ -68,7 +67,11 @@ Um novo serviço requer os seguintes parâmetros:
 
 -   **Nome do serviço de aplicativo** – nome/ID exclusiva do plano
 -   **Assinatura** – a assinatura que você deseja usar para pagar pelo serviço
--   **Grupo de Recursos** – um modo de organizar todos os recursos do Azure para um projeto. Opção de usar um existente ou criar um. Se esse for seu primeiro serviço do Azure, crie um.
+-   **Grupo de Recursos** – um modo de organizar todos os recursos do Azure para um projeto. Opção de usar um existente ou criar um. Se esse for seu primeiro serviço do Azure, crie um.
 -   **Plano de Serviço** – determina o local e o custo dos recursos que o usam. Opção de usar um existente ou criar um. Se esse for o primeiro serviço do Azure, use o padrão ou crie um novo na camada gratuita (F1).
 
-Visite a [Documentação do Serviço de Aplicativo do Azure](https://azure.microsoft.com/documentation/learning-paths/appservice-mobileapps/) para obter mais informações.
+Visite a [Documentação dos aplicativos móveis](/azure/app-service-mobile/) para obter mais informações.
+
+## <a name="see-also"></a>Consulte também
+
+- [Serviços Conectados (Visual Studio no Windows)](/visualstudio/azure/vs-azure-tools-connected-services-storage)
