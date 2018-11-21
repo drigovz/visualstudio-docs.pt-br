@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1235e6360ccc5f6c0677f7ec9acb1dd85cad226
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 452b4045357db12c4b4cff1a5b6e27035cf85d82
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180172"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257193"
 ---
-# <a name="debug-at-design-time-in-visual-studio"></a>Depurar em tempo de Design no Visual Studio
+# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Depurar em tempo de Design no Visual Studio (C#, C++, Visual Basic, F#)
 
 Em alguns cenários, você talvez queira depurar o código no design de tempo, em vez de enquanto o aplicativo está em execução. Você pode fazer isso usando o **imediato** janela. Se você quiser depurar o código XAML que interage com outro código, como o código de associação de dados, você pode usar **Debug** > **anexar ao processo** para fazer isso.
   
@@ -32,7 +32,7 @@ Em alguns cenários, você talvez queira depurar o código no design de tempo, e
 
 Você pode usar o Visual Studio **imediato** janela para executar uma função ou sub-rotina enquanto seu aplicativo não está em execução. Se a função ou a sub-rotina contiverem um ponto de interrupção, o Visual Studio interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Esse recurso é chamado de depuração em tempo de design.  
 
-O exemplo a seguir está no Visual Basic, mas o **imediato** janela também tem suporte em aplicativos c# e C++.
+O exemplo a seguir está em Visual Basic. Usar o **Immediate** janela em tempo de design também é compatível com C#, C++, e F# aplicativos.
   
 1.  Cole o seguinte código no aplicativo de console do Visual Basic:  
   

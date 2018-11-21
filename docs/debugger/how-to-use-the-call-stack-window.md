@@ -30,23 +30,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d138e954ce01af04405b72ce50ab72a76d8cf3
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 264aeeeaac47e30eb08b4320443da15ea48a8601
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348879"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257232"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Exibir a pilha de chamadas e usar a janela pilha de chamadas no depurador
 
-Usando o **pilha de chamadas** janela, você pode exibir as chamadas de função ou procedimento que estão atualmente na pilha. O **pilha de chamadas** janela mostra a ordem em que métodos e funções estão sendo chamadas. A pilha de chamadas é uma boa maneira para examinar e entender o fluxo de execução de um aplicativo.
+Usando o **pilha de chamadas** janela, você pode exibir as chamadas de função ou procedimento que estão atualmente na pilha. A janela **Pilha de Chamadas** mostra a ordem em que os métodos e as funções são chamados. A pilha de chamadas é uma boa maneira de examinar e entender o fluxo de execução de um aplicativo.
   
 Quando [símbolos de depuração](#bkmk_symbols) não estão disponíveis para a parte de uma pilha de chamadas, o **pilha de chamadas** janela pode não ser capaz de exibir as informações corretas para essa parte da pilha de chamadas, exibindo em vez disso:  
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
 > [!NOTE]
-> O **pilha de chamadas** janela é semelhante à perspectiva de depuração em alguns IDEs como o Eclipse. 
+> A janela **Pilha de Chamadas** é semelhante à perspectiva de Depuração em alguns IDEs, como o Eclipse. 
 > 
 > [!NOTE]
 >  As caixas de diálogo e os comandos de menu vistos podem ser diferentes daqueles descritos aqui, dependendo da edição ou das configurações ativas. Para alterar suas configurações, selecione **Import and Export Settings** sobre o **ferramentas** menu.  Ver [Personalizando o IDE](../ide/personalizing-the-visual-studio-ide.md).
@@ -103,7 +103,7 @@ No Visual Studio Enterprise (somente), você pode exibir mapas de código para a
 
 ![Mostrar pilha de chamadas no mapa de códigos](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
   
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack"></a>Exibir o código de desmontagem para uma função na pilha de chamadas  
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Exibir o código de desmontagem para uma função na pilha de chamadas (C#, C++, Visual Basic, F#) 
   
 -   No **pilha de chamadas** janela, o botão direito do mouse a função cujo código de desmontagem você deseja ver e selecione **ir para desmontagem**.    
 
@@ -111,7 +111,8 @@ No Visual Studio Enterprise (somente), você pode exibir mapas de código para a
   
 -   Clique com botão direito no **pilha de chamadas** janela e defina ou desmarque **mostram \<**  _as informações que você deseja_ **>**.  
   
-## <a name="bkmk_symbols"></a> Carregar símbolos para um módulo
+## <a name="bkmk_symbols"></a> Carregar símbolos para um módulo (C#, C++, Visual Basic, F#)
+
 No **pilha de chamadas** janela, você pode carregar símbolos de depuração para o código que não tem símbolos carregados atualmente. Esses símbolos podem ser do .NET Framework ou símbolos de sistema baixados do servidores de símbolo públicos da Microsoft ou símbolos em um caminho de símbolo no computador que você está depurando.  
   
 Ver [especificar arquivos de símbolo (. PDB) e código-fonte](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).

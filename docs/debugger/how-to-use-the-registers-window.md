@@ -25,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ceadd2f131a75e01cec67c21dca0d7837b02738a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5f236bf43d3667cd4263d205c4588593a973824d
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551841"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257155"
 ---
-# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>Exibir valores de registrar e usar a janela de registros no depurador do Visual Studio
+# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Exibir valores de registrar e usar a janela de registros no depurador do Visual Studio (C#, C++, Visual Basic, F#)
 A janela registros estará disponível somente se a depuração do nível de endereços estiver habilitada na **opções** caixa de diálogo **depuração** nó **geral** categoria.  
   
  O **registra** janela exibe conteúdo do registro. Se você mantiver os **registra** janela aberta, conforme você percorre seu programa, você pode ver alteração dos valores do registro como o código é executado. Os valores que foram alterados recentemente são exibidos em vermelho. Você pode editar valores do registro. Para obter mais informações, consulte [como: editar o valor do registrador](../debugger/how-to-edit-a-register-value.md).  

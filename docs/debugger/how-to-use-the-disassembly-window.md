@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51510d09a1840035bb96817d30aebdcd6bf3ebd7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9733569c3fa53d2c5a5905b5b893d16b4eeaf10b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671138"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257037"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Exibir o código de desmontagem no depurador do Visual Studio
+# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Exibir o código de desmontagem no depurador do Visual Studio (C#, C++, Visual Basic, F#)
 
 O **desmontagem** janela mostra o código assembly correspondente às instruções criadas pelo compilador. Se você estiver depurando código gerenciado, essas instruções de assembly correspondem ao código nativo criado pelo compilador Just-in-Time (JIT), não a Microsoft intermediate language (MSIL criado pelo compilador do Visual Studio).  
   
@@ -41,7 +41,7 @@ Esse recurso só estará disponível se a depuração do nível de endereços es
 
 Além de instruções de assembly, o **desmontagem** janela pode mostrar as seguintes informações opcionais:  
   
-- Endereço de memória onde cada instrução está localizada. Para aplicativos nativos, ele é o endereço de memória real. Para o Visual Basic, C#, ou código gerenciado, ele é um deslocamento do início da função.  
+- Endereço de memória onde cada instrução está localizada. Para aplicativos nativos, ele é o endereço de memória real. Para o Visual Basic ou C#, ele é um deslocamento do início da função.  
   
 - O código-fonte do qual o código do assembly deriva.  
   

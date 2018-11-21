@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 072cfcf253bb01687df20a6a0f2d41b71468b90c
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612721"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257349"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Aprender dicas de produtividade e truques do depurador no Visual Studio
 
@@ -60,10 +60,10 @@ Com o depurador em pausa em uma linha de código, use o mouse para captar o pont
 
 ![Mova o ponteiro de execução](../debugger/media/dbg-tour-move-the-execution-pointer.gif "mover o ponteiro de execução")
 
-Alterando o fluxo de execução, você pode fazer coisas como caminhos de execução de código diferente de teste ou execute novamente o código sem reiniciar o depurador.
+Alterando o fluxo de execução, você pode fazer coisas como testar caminhos de execução de código diferentes ou executar novamente o código sem reiniciar o depurador.
 
 > [!WARNING]
-> Geralmente, você precisa ter cuidado com esse recurso, e você verá um aviso na dica de ferramenta. Você pode ver outros avisos, muito. Movendo o ponteiro não é possível reverter o seu aplicativo para um estado anterior do aplicativo.
+> Geralmente, você precisa ter cuidado com esse recurso. Um aviso é exibido na dica de ferramenta. Outros avisos também podem ser exibidos. Movendo o ponteiro não é possível reverter o seu aplicativo para um estado anterior do aplicativo.
 
 ## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Controlar um objeto fora do escopo (c#, Visual Basic)
 
@@ -145,7 +145,7 @@ Selecione uma operação na exibição de resumo para exibir mais detalhes.
 
 Para obter mais informações, consulte [Uso de rede](../profiling/network-usage.md).
 
-## <a name="modules_window"></a> Se familiarizar mais com como o depurador se anexa ao aplicativo
+## <a name="modules_window"></a> Se familiarizar mais com como o depurador se anexa ao aplicativo (C#, C++, Visual Basic, F#)
 
 Para anexar a seu aplicativo em execução, o depurador carrega arquivos de símbolo (. PDB) gerados para o mesmo build exato do aplicativo que você está tentando depurar. Em alguns cenários, um pouco conhecimento dos arquivos de símbolo pode ser útil. Você pode examinar como o Visual Studio carrega os arquivos de símbolo usando o **módulos** janela.
 
