@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e462e64df90a7672efa890897b48726a0e764e6c
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: b0946137cb259386648b7b3ac2883c33f5724352
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704649"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948603"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 Limpa e, em seguida, compila a configuração de solução especificada.
@@ -66,7 +66,7 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 
 ## <a name="see-also"></a>Consulte também
 
-- [Opções de linha de comando devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
 - [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

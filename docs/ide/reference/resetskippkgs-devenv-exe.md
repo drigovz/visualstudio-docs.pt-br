@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbf7a601213c3c02cc35f2d9453eee6b1d39c43e
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 5f797b6228124da8d8a998a6647dcfd9195ea92c
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704493"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948058"
 ---
 # <a name="resetskippkgs-devenvexe"></a>/ResetSkipPkgs (devenv.exe)
 Limpa todas as opções para ignorar o carregamento adicionadas a VSPackages por usuários que desejam evitar o carregamento de VSPackages com problemas, e inicia o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -42,4 +42,4 @@ Devenv.exe /ResetSkipPkgs
 
 ## <a name="see-also"></a>Consulte também
 
-- [Opções de linha de comando devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)

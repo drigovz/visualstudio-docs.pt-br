@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d832753b798cc9e476b675f8791c1ab245b3adee
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: ba3da2325750fca655e0de28e13bb13da208963d
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561667"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826772"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Tutorial: Aprenda a depurar usando o Visual Studio
 
@@ -297,7 +297,7 @@ Neste tutorial, você irá:
 
     Pontos de interrupção são o recurso mais básico e essencial da depuração confiável. Um ponto de interrupção indica quando o Visual Studio deve suspender o código em execução para que você possa examinar os valores das variáveis ou o comportamento de memória ou se uma ramificação de código está sendo executada ou não. 
 
-6. Pressione **F5** ou o botão **Iniciar Depuração**. O aplicativo é iniciado e o depurador executa a linha de código em que você definiu o ponto de interrupção.
+2. Pressione **F5** ou o botão **Iniciar Depuração**. O aplicativo é iniciado e o depurador executa a linha de código em que você definiu o ponto de interrupção.
 
     ![Definir e atingir um ponto de interrupção](../debugger/media/get-started-set-breakpoint.gif)
 
@@ -325,14 +325,14 @@ Geralmente, usamos atalhos de teclado aqui porque essa é uma boa maneira de exe
 
 ## <a name="navigate-code-using-run-to-click"></a>Navegar usando Executar até o Clique
 
-5. No editor de códigos, role para baixo e passe o mouse sobre o método `Console.WriteLine` (`std::cout` em C++) na classe `Triangle` até que o botão verde **Executar até o Clique** ![Executar até o Clique](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apareça à esquerda.
+1. No editor de códigos, role para baixo e passe o mouse sobre o método `Console.WriteLine` (`std::cout` em C++) na classe `Triangle` até que o botão verde **Executar até o Clique** ![Executar até o Clique](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apareça à esquerda.
 
      ![Usar o recurso Executar até o Clique](../debugger/media/get-started-run-to-click.png "Executar até o Clique")
 
    > [!NOTE]
    > O botão **Executar até o Clique** é novo no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Se o botão de seta verde não for exibido, use **F11**, neste exemplo, para avançar o depurador até o lugar certo.
 
-6. Clique no botão **Executar até o Clique** ![Executar até o Clique](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Clique no botão **Executar até o Clique** ![Executar até o Clique](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
     O uso desse botão é semelhante à configuração de um ponto de interrupção temporário. **Executar até o Clique** é útil para abranger rapidamente uma região visível do código do aplicativo (você pode clicar em qualquer arquivo aberto).
 
@@ -447,4 +447,4 @@ Os recursos que permitem que você inspecione variáveis são uns dos mais útei
 Neste tutorial, você aprendeu como iniciar o depurador, percorrer o código e inspecionar variáveis. Talvez você queira obter uma visão geral dos recursos do depurador, com links para mais informações.
 
 > [!div class="nextstepaction"]
-> [Dicas e truques do depurador](../debugger/debugger-tips-and-tricks.md)
+> [Introdução ao depurador](../debugger/debugger-feature-tour.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07dfcbb6064d0f1043c0621534b953a5f5c63e82
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1badcaba6f6461f6a2c6b73580d8d12c50481c2b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704948"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948771"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 Abre o arquivo executável especificado a ser depurado.
@@ -49,4 +49,4 @@ Devenv.exe /debugexe MyApplication.exe
 
 ## <a name="see-also"></a>Consulte também
 
-- [Opções de linha de comando devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)
