@@ -16,16 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d72a9cd4ad29785884417881324e6d348e03d83
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: b196d993e7091fd9d4b09fe3c228346e7421911e
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826698"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257206"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecionar variáveis nas janelas Autos e locais
 
 O **automóveis** e **Locals** windows mostram valores de variáveis durante a depuração. Os windows estão disponíveis somente durante uma sessão de depuração. O **automóveis** janela mostra as variáveis usadas em torno do ponto de interrupção atual. O **Locals** janela mostra as variáveis definidas no escopo local, que geralmente é o método ou a função atual. Se essa for a primeira vez que você tentou depurar o código, você talvez queira ler [gravar melhor C# usando o Visual Studio de código](../debugger/write-better-code-with-visual-studio.md) e [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes de prosseguir com este artigo.
+
+ O **automóveis** janela está disponível para C#, código do Visual Basic, C++ e Python, mas não para JavaScript ou F#.
   
 Para abrir o **automóveis** janela, durante a depuração, selecione **Debug** > **Windows** > **Autos**, ou pressione **Ctrl**+**Alt**+**V** > **um**.  
 
@@ -34,7 +36,7 @@ Para abrir o **Locals** janela, durante a depuração, selecione **Debug** > **W
 Se você precisar de mais informações sobre depuração básica, consulte [Introdução ao depurador](../debugger/getting-started-with-the-debugger.md).
 
 > [!NOTE]
-> Este tópico se aplica ao Visual Studio no Windows. Para o Visual Studio para Mac, consulte [visualizações de dados no Visual Studio para Mac](/visualstudio/mac/data-visualizations).
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, consulte [visualizações de dados no Visual Studio para Mac](/visualstudio/mac/data-visualizations).
 
 ## <a name="use-the-autos-and-locals-windows"></a>Usar as janelas Autos e locais
 
@@ -71,9 +73,7 @@ Defina um ponto de interrupção e iniciar a depuração. Quando o ponto de inte
 
 ![Barra de ferramentas local de depuração](../debugger/media/debuglocationtoolbar.png "barra de ferramentas Depurar local")
 
-## <a name="bkmk_whatvariables"></a> Variáveis na janela Autos
-
- O **automóveis** janela está disponível para C#, Visual Basic e C++ de código, mas não para JavaScript ou F#.
+## <a name="bkmk_whatvariables"></a> As variáveis na janela Autos (C#, C++, Visual Basic, Python)
 
  Linguagens de código diferentes exibem variáveis diferentes nos **automóveis** janela.
 

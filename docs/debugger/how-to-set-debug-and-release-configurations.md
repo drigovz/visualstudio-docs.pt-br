@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18689a82fe2ae7c66eb8e8d6ef9bd115e2950cac
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 9a65a3331c210bdfb4143ff890180fdc7d663229
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073981"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257219"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Define a depuração e configurações no Visual Studio de versão
 
@@ -64,7 +64,7 @@ ou
 
   ![barras de ferramentas de configuração de build](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
-## <a name="BKMK_symbols_release"></a>Gerar arquivos de símbolo (. PDB) para uma compilação
+## <a name="BKMK_symbols_release"></a>Gerar arquivos de símbolo (. PDB) para uma compilação (C#, C++, Visual Basic, F#)
 
 Você pode optar por gerar arquivos de símbolo (. PDB) e o que depurar informações a serem incluídas. Para a maioria dos tipos de projeto, o compilador gera arquivos de símbolo por padrão para depuração e builds de versão, enquanto outras configurações padrão diferem por tipo de projeto e a versão do Visual Studio.
 

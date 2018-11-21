@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 263e4bf4505995a4c8eccbe7c33f59115412dda5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: f45b2a64e7602d038a12f436019a8f99e352aa26
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219504"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257063"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Como aplicar edições no modo de interrupção com editar e continuar
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Como: aplicar edições no modo de interrupção com editar e continuar (Visual Basic)
 Você pode usar Editar e Continuar para editar o código no modo de interrupção e, depois, continuar sem interromper e reiniciar a execução.  
   
 Para limitações sobre como usar Editar e continuar durante a depuração, consulte [Supported Code Changes (C# e Visual Basic](../debugger/supported-code-changes-csharp.md)]

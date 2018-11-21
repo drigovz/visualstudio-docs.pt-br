@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdd83cb8b2d20d3e3abcacbb69d50e1a68831ca4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af44fcfe553cd720461de3a4e16986d573785c2f
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843256"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257336"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar a processos em execução com o depurador do Visual Studio
 Você pode anexar o depurador do Visual Studio para um processo em execução em um computador local ou remoto. Depois que o processo está em execução, selecione **Debug** > **anexar ao processo** ou pressione **Ctrl**+**Alt** + **P** no Visual Studio e usar o **anexar ao processo** caixa de diálogo para anexar o depurador ao processo.
@@ -153,7 +153,7 @@ Para alguns tipos de aplicativo, como os aplicativos do aplicativo Universal do 
 
 Para que o depurador se anexe ao código escrito em C++, o código precisa emitir `DebuggableAttribute`. Você pode adicionar isso ao seu código automaticamente por meio da vinculação com o [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) a opção de vinculador.
 
-Para depuração de script do lado do cliente, a depuração de script deve ser habilitada no navegador. Para depurar o script do lado do cliente no Chrome, escolha **Webkit** como o tipo de código e, dependendo de seu tipo de aplicativo, talvez você precise iniciar o navegador no modo de depuração (tipo `chrome.exe --remote-debugging-port=9222` de uma linha de comando).
+Para depuração de script do lado do cliente, a depuração de script deve ser habilitada no navegador. Para depurar o script do lado do cliente no Chrome, escolha **Webkit** como o tipo de código e, dependendo de seu tipo de aplicativo, talvez seja necessário fechar todas as instâncias do Chrome e iniciar o navegador no modo de depuração (tipo `chrome.exe --remote-debugging-port=9222` de uma linha de comando).
 
 Para selecionar rapidamente um processo em execução para anexar a, no Visual Studio, digite **Ctrl**+**Alt**+**P**e, em seguida, digite a primeira letra das nome do processo.
 
