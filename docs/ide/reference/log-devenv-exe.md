@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3373f1e1a23ae0373a9c49a39a924398ebe143e0
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fb33eedf322009cfd5602c481bce36beb4126a9b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704766"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948378"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 Registra toda a atividade no arquivo de log para resolução de problemas. Este arquivo aparece depois de você chamar `devenv /log` pelo menos uma vez. Por padrão, o arquivo de log é:
@@ -41,4 +41,4 @@ Devenv /log Path\NameOfLogFile
 
 ## <a name="see-also"></a>Consulte também
 
-- [Opções de linha de comando devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)

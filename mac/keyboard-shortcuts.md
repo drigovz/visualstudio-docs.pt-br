@@ -3,14 +3,14 @@ title: Atalhos de teclado comuns do editor de código-fonte
 description: Este artigo descreve alguns atalhos de teclado comuns do editor de código-fonte do Visual Studio para Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/06/2018
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: ff5a7d79bf59f841aaf1957095cb2ae0e53a46c7
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2ac2a98223e86a564ff6ce733e11767a918bc55b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295105"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948784"
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Atalhos de teclado comuns no Visual Studio para Mac
 
