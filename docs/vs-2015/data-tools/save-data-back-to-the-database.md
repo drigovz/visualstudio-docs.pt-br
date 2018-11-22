@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829632"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281843"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvar dados novamente no banco de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ O conjunto de dados é uma cópia na memória dos dados. Se você modificar esse
 ## <a name="two-stage-updates"></a>Atualizações de dois estágios  
  Atualizar uma fonte de dados é um processo de duas etapas. A primeira etapa é atualizar o conjunto de dados com novos registros, registros alterados ou registros excluídos. Se seu aplicativo nunca enviar essas alterações de volta para a fonte de dados, em seguida, você terá concluído com a atualização.  
   
- Se você enviar as alterações no banco de dados, uma segunda etapa é necessária. Se você não estiver usando controles ligados a dados, você precisa chamar manualmente o método Update do mesmo TableAdapter (ou adaptador de dados) que você usou para preencher o conjunto de dados. No entanto, você também pode usar adaptadores diferentes, por exemplo, para mover dados de uma fonte de dados para outro ou para atualizar várias fontes de dados. Se você não estiver usando a associação de dados e está salvando as alterações para tabelas relacionadas, você precisa instanciar manualmente uma variável da classe TableAdapterManager gerado automaticamente e, em seguida, chame seu método UdpateAll.  
+ Se você enviar as alterações no banco de dados, uma segunda etapa é necessária. Se você não estiver usando controles ligados a dados, você precisa chamar manualmente o método Update do mesmo TableAdapter (ou adaptador de dados) que você usou para preencher o conjunto de dados. No entanto, você também pode usar adaptadores diferentes, por exemplo, para mover dados de uma fonte de dados para outro ou para atualizar várias fontes de dados. Se você não estiver usando a associação de dados e está salvando as alterações para tabelas relacionadas, você precisa instanciar manualmente uma variável da classe TableAdapterManager gerado automaticamente e, em seguida, chame seu método UpdateAll.  
   
  ![Atualizações de conjunto de dados do Visual Basic](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates")  
 Processo de atualização de dois estágios e a função do DataRowVersion em uma atualização bem-sucedida  
