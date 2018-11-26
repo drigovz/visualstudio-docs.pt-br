@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612669"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257362"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Como depurar para iniciantes absolutos
 
@@ -80,7 +80,7 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
 
 1. É necessário ter o Visual Studio instalado e a carga de trabalho de **desenvolvimento de área de trabalho do .NET** ou a carga de trabalho de **desenvolvimento de plataforma cruzada do .NET Core** instalada, dependendo de qual tipo de aplicativo você deseja criar.
 
-    Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
+    Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  para instalá-lo gratuitamente.
 
     Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique em **Ferramentas** > **Obter ferramentas e recursos**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de área de trabalho do .NET** (ou a carga de trabalho **Desenvolvimento de plataforma cruzada do .NET Core**) e escolha **Modificar**.
 
@@ -325,11 +325,11 @@ Quando você encontrar a região de código com o problema, use o depurador para
 * Verifique se o seu aplicativo está executando o código que você espera. (Por exemplo, no aplicativo de exemplo, esperávamos que o código para a instrução de opção definisse o tipo de galáxia como Irregular, mas o aplicativo ignorou o código devido ao erro de digitação.)
 
 > [!TIP]
-> Use um depurador para ajudá-lo a encontrar bugs. Uma ferramenta de depuração poderá localizar bugs *para você* somente se conhecer a intenção do seu código. Uma ferramenta só poderá conhecer a intenção do seu código se você, o desenvolvedor, expressar essa intenção. Gravar [testes de unidade](../test/improve-code-quality.md) é como se faz isso.
+> Use um depurador para ajudá-lo a encontrar bugs. Uma ferramenta de depuração poderá localizar bugs *para você* somente se conhecer a intenção do seu código. Uma ferramenta só poderá conhecer a intenção do seu código se você, o desenvolvedor, expressar essa intenção. Gravar [testes de unidade](../test/improve-code-quality.md) é como se faz isso. 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste artigo, você aprendeu alguns conceitos gerais de depuração. Em seguida, é possível começar a aprender como depurar com o Visual Studio.
+Neste artigo, você aprendeu alguns conceitos gerais de depuração. Em seguida, é possível começar a aprender mais sobre o depurador.
 
 > [!div class="nextstepaction"]
 > [Aprenda a depurar usando o Visual Studio](../debugger/getting-started-with-the-debugger.md)

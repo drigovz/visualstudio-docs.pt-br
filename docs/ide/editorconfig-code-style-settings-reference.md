@@ -8,7 +8,7 @@ dev_langs:
 helpviewer_keywords:
 - coding conventions [EditorConfig]
 - EditorConfig coding conventions
-- language conventions [EditorConfig]
+- language code style rules [EditorConfig]
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: gewarren
@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 237651c67cd2578b2b2a2e4ffade3f4c6d180d78
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: a54a3d6b967e7652c25e24922d7bd3b49141cc17
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967539"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769746"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Configurações de convenção de codificação do .NET para o EditorConfig
 
@@ -35,7 +35,7 @@ Confira o final deste artigo para obter um [exemplo do arquivo .editorconfig](#e
 
 Há três categorias de convenção de codificação .NET com suporte:
 
-- [Convenções de linguagem](#language-conventions)
+- [Estilos de código da linguagem](#language-code-styles)
 
    Regras referentes à linguagem C# ou Visual Basic. Por exemplo, você pode especificar regras sobre o uso de `var` ou tipos explícitos ao definir variáveis ou dar preferência a membros aptos para expressão.
 
@@ -47,13 +47,13 @@ Há três categorias de convenção de codificação .NET com suporte:
 
    Regras relacionadas a nomenclatura dos elementos de código. Por exemplo, você pode especificar que os métodos `async` devem terminar com "Async".
 
-## <a name="language-conventions"></a>Convenções de linguagem
+## <a name="language-code-styles"></a>Estilos de código da linguagem
 
-As regras para convenções de linguagem têm o seguinte formato:
+As regras para o estilos de código da linguagem têm o seguinte formato:
 
 `options_name = false|true : none|silent|suggestion|warning|error`
 
-Para cada regra de convenção de linguagem, você deve especificar **true** (dê preferência a esse estilo) ou **false** (não dê preferência a esse estilo) e uma **gravidade**. A gravidade especifica o nível de imposição para aquele estilo.
+Para cada regra de estilo de linguagem, é necessário especificar **true** (dê preferência a esse estilo) ou **false** (não dê preferência a esse estilo) e uma **gravidade**. A gravidade especifica o nível de imposição para aquele estilo.
 
 A tabela a seguir lista os valores possíveis de gravidade e seus efeitos:
 
@@ -65,7 +65,7 @@ Severidade | Efeito
 `warning` | Quando esta regra de estilo for violada, deverá ser exibido um aviso do compilador.
 `error` | Quando esta regra de estilo for violada, deverá ser exibido um erro do compilador.
 
-A lista a seguir mostra as regras convenção de linguagem permitidas:
+A lista a seguir mostra as configurações de estilo de código da linguagem permitidas:
 
 - Configurações de estilo de código do .NET
     - [Qualificadores "This." e "Me."](#this_and_me)
@@ -2244,7 +2244,7 @@ dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
 dotnet_naming_symbols.constant_fields.required_modifiers          = const
 
 ###############################
-# C# Coding Conventions       #
+# C# Code Style Rules         #
 ###############################
 
 [*.cs]
@@ -2261,7 +2261,7 @@ csharp_style_expression_bodied_properties = true:none
 csharp_style_expression_bodied_indexers = true:none
 csharp_style_expression_bodied_accessors = true:none
 
-# Pattern matching preferences
+# Pattern-matching preferences
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
@@ -2314,9 +2314,9 @@ csharp_space_between_method_call_empty_parameter_list_parentheses = false
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 
-###############################
-# VB Coding Conventions       #
-###############################
+##################################
+# Visual Basic Code Style Rules  #
+##################################
 
 [*.vb]
 # Modifier preferences

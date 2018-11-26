@@ -1,23 +1,23 @@
 ---
-title: Sugerir uma funcionalidade para o Visual Studio
+title: 'Visão geral: sugerir uma funcionalidade para o Visual Studio'
 description: Descreve quais sugestões estão na Comunidade de Desenvolvedores, como fazer uma sugestão e como as sugestões são usadas pela Microsoft no roteiro do Visual Studio
-ms.date: 09/20/2018
+ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
-author: Seiyer
+author: seaniyer
 ms.author: seiyer
-manager: shve
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf14f613dba6b1b7f3230c19570fc93c47374e8
-ms.sourcegitcommit: 7081de442666c0cfb0986f6bf5d02d42916fed3b
+ms.openlocfilehash: 04d76dcb09db27ed3ac63ba0dd6cc8fc60588f0f
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403651"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826682"
 ---
-# <a name="suggest-a-feature"></a>Sugerir um recurso
+# <a name="overview-suggest-a-feature"></a>Visão geral: Sugerir um recurso
 
 Introduzimos uma experiência totalmente nova para sugerir recursos juntamente com a capacidade atual para relatar problemas na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com). Essa é uma nova maneira de ter mais autonomia para interagir diretamente com o fluxo de trabalho de engenharia do Visual Studio.
 
@@ -42,47 +42,59 @@ Os diversos estados associados com as sugestões de recursos estão listados aba
 ![Estado Novo para sugestões na Comunidade de Desenvolvedores](../ide/media/SuggestStates/New.jpg)
 
 **Novo** significa a sugestão foi recentemente informada por você ou outra pessoa. Ainda não foi executada nenhuma ação. A linha de frente fará algumas verificações preliminares para certificar-se de que podemos prosseguir. Aguarde o nosso retorno em aproximadamente cinco dias úteis com os próximos passos.
+
 - - -
 
 ![Estado Sob Revisão para sugestões na Comunidade de Desenvolvedores](../ide/media/SuggestStates/UnderReview.jpg)
 
 **Sob revisão** indica que a sugestão de recurso foi colocada na fila para priorização. Priorizamos os recursos para ampliar o melhor valor na comunidade de desenvolvedores, levando em consideração também o roteiro do produto.
 
-Mesmo se não for possível prosseguir imediatamente com a nova sugestão de recurso, continuaremos a monitorar sua ideia por aproximadamente 90 dias, permitindo que a comunidade faça suas ponderações e, em seguida, tome uma decisão sobre as próximas etapas.
+Mesmo se não for possível prosseguir imediatamente com a nova sugestão de recurso, continuaremos monitorando sua ideia por aproximadamente 90 dias, permitindo que a comunidade faça suas ponderações e, em seguida, tome uma decisão sobre as próximas etapas.
+
 - - -
 
 ![Estado No Roteiro para sugestões na Comunidade de Desenvolvedores](../ide/media/SuggestStates/OnRoadmap.jpg)
 
 **No Roteiro** significa que sua sugestão de recurso tem um impacto amplo na comunidade e ajudará a melhorar a experiência de produto. Alocamos um tempo para ela em nosso roteiro. Enviaremos a atualização a você sobre o progresso.
+
 - - -
 
 ![Estado Precisamos de Mais Informações para sugestões na Comunidade de Desenvolvedores](../ide/media/SuggestStates/NeedMoreInfo.jpg)
 
 Uma sugestão de recurso marcada com **Precisamos de Mais Informações** significa que precisamos de mais detalhes para compreender melhor sua sugestão. Verifique os comentários, nos quais solicitamos informações adicionais para uma melhor compreensão.
+
 - - -
+
 ![Estado Fechado – Outro Produto para sugestões na Comunidade de Desenvolvedores](../ide/media/SuggestStates/ClosedOtherProduct.jpg)
 
-**Fechado – Outro Produto** significa que não é possível resolver a sua sugestão de recurso neste momento porque ela não é aplicável ao produto que foi informado. No entanto, forneceremos detalhes sobre onde você pode compartilhar sua nova sugestão de recurso para o produto apropriado.
+**Fechado – Outro Produto** significa que não é possível resolver a sua sugestão de recurso neste momento, porque ela não é aplicável ao produto para o qual foi informada. No entanto, forneceremos detalhes sobre onde você pode compartilhar sua nova sugestão de recurso para o produto apropriado.
+
 - - -
+
 ![Estado Fechado – Duplicado para sugestões na Comunidade de Desenvolvedores](../ide/media/SuggestStates/ClosedDuplicate.jpg)
 
 **Fechado – Duplicado** indica que outra pessoa já sugeriu o mesmo recurso. Examine os comentários para localizar o link para a sugestão de recurso existente. Os comentários e votos foram mesclados na sugestão original. Siga a sugestão original.
+
 - - -
+
 ![Estado Fechado – Informações Insuficientes para sugestões na Comunidade de Desenvolvedores](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg) 
 
-**Fechado – Informações Insuficientes** indica que, após várias tentativas, ainda não recebemos informações suficientes para entender totalmente sua sugestão de recurso. Precisamos fechar a nova sugestão de recurso, pois não é possível realizar nenhuma outra ação neste estágio.
+**Fechado – Informações Insuficientes** indica que, após várias tentativas, ainda não recebemos informações suficientes para entender totalmente sua sugestão de recurso. Precisamos fechar a nova sugestão de funcionalidade, pois não é possível executar nenhuma outra ação neste estágio.
 
 Encontrou as informações que estava procurando? Você pode solicitar para reativar o tíquete quando tiver as informações adicionais.
+
 - - -
 
 ![Estado Concluído – Versão Prévia para sugestões na Comunidade de Desenvolvedores](../ide/media/SuggestStates/CompletedPreview.jpg)
 
 **Concluído – Versão Prévia** indica que implementamos o recurso sugerido. Você pode baixar uma versão prévia do Visual Studio que contém sua sugestão usando o link fornecido nos comentários.
+
 - - -
 
 ![Estado Concluído – Lançado para sugestões na Comunidade de Desenvolvedores](../ide/media/SuggestStates/CompletedRelease.jpg)
 
-**Concluído – Lançado** indica que sua sugestão do novo recurso foi lançada na atualização mais recente do produto. A atualização do Visual Studio pode ser baixada usando o link fornecido nos comentários. 
+**Concluído – Lançado** indica que sua sugestão do novo recurso foi lançada na atualização mais recente do produto. A atualização do Visual Studio pode ser baixada usando o link fornecido nos comentários.
+
 - - -
 
 ## <a name="faq"></a>Perguntas Frequentes
@@ -107,6 +119,6 @@ O sistema de votação no Voz do Usuário funciona de modo diferente dos votos n
 
 ### <a name="how-long-can-i-expect-actions-to-take"></a>Quanto tempo posso esperar pelas tomada de ações?
 
-Estamos totalmente empenhados em ouvir suas sugestões de recursos e tomar medidas para fornecer experiências valiosas aos nossos clientes. As ações em sugestões são priorizadas com base no impacto mais amplo para a comunidade. Mesmo se não formos capazes de responder pessoalmente a todas as sugestões, tenha certeza de que seus comentários chegam à equipe certa e são avaliados com cuidado.
+Estamos totalmente empenhados em ouvir suas sugestões de funcionalidades e tomar medidas para fornecer experiências valiosas aos nossos clientes. As ações em sugestões são priorizadas com base no impacto mais amplo para a comunidade. Mesmo se não for possível responder pessoalmente a toda sugestão, garantiremos que seus comentários cheguem à equipe certa e seja avaliado com cuidado.
 
 O tempo de resposta depende do status em que estão seus comentários. Examine a explicação dos status neste documento para entender os tempos de resposta.
