@@ -2,7 +2,7 @@
 title: Usar parâmetros de linha de comando para instalar o Visual Studio
 description: Saiba como usar parâmetros de linha de comando para controlar ou personalizar sua instalação do Visual Studio.
 ms.custom: ''
-ms.date: 05/07/2018
+ms.date: 11/14/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 051935a2c7022af3c6811e90a89697a08f52fa9a
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: e52d61c1226e131c9d989a70f7c8e6432d8f3733
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050359"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768523"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Usar parâmetros de linha de comando para instalar o Visual Studio 2017
 
@@ -55,6 +55,7 @@ As opções de linha de comando são usadas em conjunto com o bootstrapper de in
 | `update` | Atualiza um produto instalado. |
 | `repair` | Repara um produto instalado. |
 | `uninstall` | Desinstala um produto instalado. |
+| `export` | **Novo na 15.9**: exporta a seleção da instalação para um arquivo de configuração de instalação. |
 
 | **Opção de instalação** | **Descrição** |
 | ----------------------- | --------------- |
@@ -74,6 +75,7 @@ As opções de linha de comando são usadas em conjunto com o bootstrapper de in
 | `--nickname <name>` | **Opcional**: define o apelido a ser atribuído a um produto instalado. O apelido não pode ter mais de 10 caracteres.  |
 | `--productKey` | **Opcional**: define a chave do produto (Product Key) a ser usada para um produto instalado. Ele é composto de 25 caracteres alfanuméricos no formato `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` ou `xxxxxxxxxxxxxxxxxxxxxxxxx`. |
 | `--help, --?, -h, -?` | Exibir uma versão offline desta página. |
+| `--config <path>` | **Opcional** e **Novo na 15.9**: durante uma instalação ou operação de modificação, isso determina as cargas de trabalho e componentes a serem adicionados com base em um arquivo de configuração de instalação salvo anteriormente. Essa operação é aditiva e não removerá nenhuma carga de trabalho nem componente se ele não estiver presente no arquivo. Além disso, os itens que não se aplicarem ao produto não serão adicionados. Durante uma operação de exportação, isso determina a localização para salvar o arquivo de configuração de instalação. |
 
 > Observação: ao especificar várias cargas de trabalho e vários componentes, é necessário repetir a opção de linha de comando `--add` ou `--remove` para cada item.
 
