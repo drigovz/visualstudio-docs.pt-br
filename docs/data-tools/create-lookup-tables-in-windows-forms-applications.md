@@ -13,31 +13,32 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f68cb2178242e5589f312f6ddc2c555da3f47a0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c52e5f157dcbc6dcfeacf72df465bd3d8d9d172e
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872818"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304904"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Criar tabelas de pesquisa em aplicativos do Windows Forms
+
 O termo *tabela de pesquisa* descreve controles que estão associados às tabelas de dois dados relacionados. Esses controles de pesquisa exibem dados da primeira tabela com base em um valor selecionado na segunda tabela.
 
- Você pode criar tabelas de pesquisa, arrastando o nó principal de uma tabela pai (da [janela fontes de dados](add-new-data-sources.md)) para um controle em seu formulário que já está associado à coluna na tabela filho relacionada.
+Você pode criar tabelas de pesquisa, arrastando o nó principal de uma tabela pai (da [janela Data Sources](add-new-data-sources.md#data-sources-window)) para um controle em seu formulário que já está associado à coluna na tabela filho relacionada.
 
- Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Cada registro a `Orders` tabela inclui um `CustomerID`, indicando qual cliente fez o pedido. O `CustomerID` é uma chave estrangeira apontando para um registro de cliente no `Customers` tabela. Nesse cenário, você expandirá a `Orders` na tabela o **fontes de dados** janela e defina o nó principal como **detalhes**. Em seguida, defina a `CustomerID` coluna para usar um <xref:System.Windows.Forms.ComboBox> (ou qualquer outro controle que dá suporte à vinculação de pesquisa) e arraste o `Orders` nó para seu formulário. Por fim, arraste o `Customers` nó para o controle que está associado à coluna relacionada — nesse caso, o <xref:System.Windows.Forms.ComboBox> associado para o `CustomerID` coluna.
+Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Cada registro a `Orders` tabela inclui um `CustomerID`, indicando qual cliente fez o pedido. O `CustomerID` é uma chave estrangeira apontando para um registro de cliente no `Customers` tabela. Nesse cenário, você expandirá a `Orders` na tabela o **fontes de dados** janela e defina o nó principal como **detalhes**. Em seguida, defina a `CustomerID` coluna para usar um <xref:System.Windows.Forms.ComboBox> (ou qualquer outro controle que dá suporte à vinculação de pesquisa) e arraste o `Orders` nó para seu formulário. Por fim, arraste o `Customers` nó para o controle que está associado à coluna relacionada — nesse caso, o <xref:System.Windows.Forms.ComboBox> associado para o `CustomerID` coluna.
 
 ## <a name="to-databind-a-lookup-control"></a>Vincular dados de um controle de pesquisa
 
-1.  Abra o **fontes de dados** janela.
+1.  Com o projeto aberto, abra o **fontes de dados** janela escolhendo **exibição** > **Other Windows** > **defontesdedados**.
 
     > [!NOTE]
-    >  Tabelas de pesquisa requerem que as duas tabelas relacionadas ou objetos estejam disponíveis na **fontes de dados** janela. Para obter mais informações, consulte [relacionamentos em conjuntos de dados](relationships-in-datasets.md).
+    > Tabelas de pesquisa requerem que as duas tabelas relacionadas ou objetos estejam disponíveis na **fontes de dados** janela. Para obter mais informações, consulte [relacionamentos em conjuntos de dados](relationships-in-datasets.md).
 
 2.  Expanda os nós na **fontes de dados** janela até que você possa ver a tabela pai e todas as suas colunas e a tabela filho relacionada e todas as suas colunas.
 
     > [!NOTE]
-    >  O nó da tabela filho é o nó que aparece como um nó filho expansível na tabela pai.
+    > O nó da tabela filho é o nó que aparece como um nó filho expansível na tabela pai.
 
 3.  Altere o tipo subjacente da tabela filho para **detalhes** selecionando **detalhes** na lista de controle no nó da tabela filho. Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
@@ -53,10 +54,10 @@ O termo *tabela de pesquisa* descreve controles que estão associados às tabela
 
     |Propriedade|Explicação da configuração|
     |--------------| - |
-    |**Fonte de dados**|Visual Studio define essa propriedade para o <xref:System.Windows.Forms.BindingSource>, criado para a tabela que você arrasta para o controle (em vez de <xref:System.Windows.Forms.BindingSource>, criado quando o controle foi criado).<br /><br /> Se você precisar fazer um ajuste, defina isso como o <xref:System.Windows.Forms.BindingSource> da tabela com a coluna que você deseja exibir.|
-    |**DisplayMember**|O Visual Studio define essa propriedade para a primeira coluna após a chave primária que tem um tipo de dado de cadeia da tabela que você arrasta para o controle.<br /><br /> Se você precisar fazer um ajuste, defina isso para o nome da coluna que deseja exibir.|
-    |**ValueMember**|O Visual Studio define essa propriedade para a primeira coluna participante da chave primária, ou a primeira coluna na tabela, se nenhuma chave for definida.<br /><br /> Se você precisar fazer um ajuste, defina isso para a chave primária na tabela com a coluna que você deseja exibir.|
-    |**SelectedValue**|Visual Studio define essa propriedade como a coluna original descartada dos **fontes de dados** janela.<br /><br /> Se você precisar fazer um ajuste, defina isso para a coluna de chave estrangeira na tabela relacionada.|
+    |DataSource|O Visual Studio define esta propriedade para o <xref:System.Windows.Forms.BindingSource> criado para a tabela que você arrasta para o controle (em oposição ao <xref:System.Windows.Forms.BindingSource> criado quando o controle foi criado).<br /><br /> Se você precisar fazer um ajuste, defina isso como o <xref:System.Windows.Forms.BindingSource> da tabela com a coluna que você deseja exibir.|
+    |DisplayMember|O Visual Studio define essa propriedade para a primeira coluna após a chave primária que tem um tipo de dado de cadeia da tabela que você arrasta para o controle.<br /><br /> Se você precisar fazer um ajuste, defina isso para o nome da coluna que deseja exibir.|
+    |ValueMember|O Visual Studio define essa propriedade para a primeira coluna participante da chave primária, ou a primeira coluna na tabela, se nenhuma chave for definida.<br /><br /> Se você precisar fazer um ajuste, defina isso para a chave primária na tabela com a coluna que você deseja exibir.|
+    |SelectedValue|Visual Studio define essa propriedade como a coluna original descartada dos **fontes de dados** janela.<br /><br /> Se você precisar fazer um ajuste, defina isso para a coluna de chave estrangeira na tabela relacionada.|
 
 ## <a name="see-also"></a>Consulte também
 

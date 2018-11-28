@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e23a023b3e37b9c4f3869bfa699ffee1f44caffa
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750806"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388732"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar uma exceção de simultaneidade
 
@@ -65,9 +65,6 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
        Após alguns instantes, a consulta termina a execução e o banco de dados Northwind é criado.
 
-> [!NOTE]
-> As caixas de diálogo e comandos de menu que você vê podem diferir dos descritos na Ajuda, dependendo de suas configurações ativas ou a edição que você está usando. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
-
 ## <a name="create-a-new-project"></a>Criar um novo projeto
 
 Comece criando um novo aplicativo Windows Forms:
@@ -88,7 +85,7 @@ Em seguida, crie um conjunto de dados denominado **NorthwindDataSet**:
 
 1. Sobre o **dados** menu, escolha **fonte de adicionar novos dados**.
 
-   Abre o Assistente de configuração de fonte de dados.
+   O Assistente de Configuração de Fonte de Dados é aberto.
 
 2. Sobre o **escolher um tipo de fonte de dados** tela, selecione **banco de dados**.
 
@@ -109,7 +106,7 @@ Em seguida, crie um conjunto de dados denominado **NorthwindDataSet**:
 
 Nesta seção, você criará um <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> arrastando a **clientes** do item dos **fontes de dados** janela para o formulário do Windows.
 
-1. Sobre o **dados** menu, escolha **Mostrar fontes de dados** para abrir o **janela fontes de dados**.
+1. Para abrir o **fontes de dados** janela diante a **dados** menu, escolha **Mostrar fontes de dados**.
 
 2. No **fontes de dados** janela, expanda o **NorthwindDataSet** nó e, em seguida, selecione o **clientes** tabela.
 
