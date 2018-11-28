@@ -10,20 +10,20 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0defe437e0778ee9d3c134148a3ca7e4b4cd2ef9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 572de1a3fccf9b66000d82e14f7895ab5cf0029f
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264656"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304865"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; elemento (desenvolvimento do Office no Visual Studio)
-  O **appAddin** elemento o `vstov4` namespace armazena informações específicas de personalização para suplementos do VSTO.  
+  O **appAddin** elemento da `vstov4` namespace armazena informações de personalização específicas para suplementos do VSTO.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -46,24 +46,24 @@ ms.locfileid: "34264656"
 |Atributo|Descrição|  
 |---------------|-----------------|  
 |**Aplicativo**|Necessário. Identifica o aplicativo do Microsoft Office. O valor pode ser um dos seguintes: Excel, InfoPath, Outlook, PowerPoint, Project, Visio ou Word.|  
-|**LoadBehavior**|Opcional. Por padrão, o **loadBehavior** é habilitada ao definir esse valor como. Para depuração, o suplemento do VSTO pode ser desabilitado, definindo o valor para os dois. Para obter mais informações, consulte a tabela denominada LoadBehavior valores [entradas do registro para suplementos do VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
-|**keyName**|Necessário. Esse valor é o nome da chave do registro que será usado pelo aplicativo para carregar o suplemento do VSTO. Para obter mais informações, consulte [entradas do registro para suplementos do VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**LoadBehavior**|Opcional. Por padrão, o **loadBehavior** é habilitada ao definir esse valor como. Para depuração, o suplemento do VSTO pode ser desabilitado definindo o valor para dois. Para obter mais informações, consulte a tabela intitulada valores LoadBehavior [entradas do registro para suplementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**keyName**|Necessário. Esse valor é o nome da chave do registro que será usado pelo aplicativo para carregar o suplemento do VSTO. Para obter mais informações, consulte [entradas do registro para suplementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
   
  O **appAddin** elemento tem os seguintes elementos filho.  
   
 ### <a name="friendlyname"></a>Nome amigável  
- Opcional. O **friendlyName** elemento é explicado em [ &#60;friendlyName&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
+ Opcional. O **friendlyName** elemento é explicado na [ &#60;friendlyName&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
   
 ### <a name="description"></a>descrição  
- Opcional. O **descrição** elemento é explicado em [ &#60;descrição&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
+ Opcional. O **descrição** elemento é explicado na [ &#60;descrição&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
   
 ### <a name="formregions"></a>formRegions  
- Necessário apenas para Outlook suplementos do VSTO que incluem regiões de formulário. O **formRegions** elemento é explicado em [ &#60;formRegions&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  
+ Necessário apenas para Outlook suplementos do VSTO que incluem regiões de formulário. O **formRegions** elemento é explicado na [ &#60;formRegions&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  
   
 ## <a name="vsto-add-in-example"></a>Exemplo de suplemento do VSTO  
   
 ### <a name="description"></a>Descrição  
- O exemplo de código a seguir ilustra **appAddin** elementos em uma solução do Outlook implantados usando [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este exemplo de código é parte de um exemplo maior fornecido em [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).  
+ O exemplo de código a seguir ilustra **appAddin** elementos em uma solução do Outlook implantado usando [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este exemplo de código é parte de um exemplo maior fornecido no [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Código  
   
