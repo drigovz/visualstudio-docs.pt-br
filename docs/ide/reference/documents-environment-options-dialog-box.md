@@ -33,19 +33,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ae8fd7cf7acb27fd528c306c0d6a57955c6fe8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 3009f32adeb70dd376d7116280de6e3e1b557e7a
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "50143379"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388917"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Caixa de diálogo Documentos, Ambiente, Opções
 
 Use esta página da caixa de diálogo **Opções** para controlar a exibição de documentos no IDE (ambiente de desenvolvimento integrado) e gerenciar alterações externas em documentos e arquivos. É possível acessar essa caixa de diálogo clicando em **Opções** no menu **Ferramentas** e selecionando **Documentos** no nó **Ambiente**. Se **Documentos** não aparecer na lista, selecione **Mostrar todas as configurações** na caixa de diálogo **Opções**.
-
-> [!NOTE]
-> As opções disponíveis nas caixas de diálogo e os nomes os locais dos comandos de menu que você vê podem diferir do que é descrito na Ajuda, dependendo de suas configurações ativas ou da edição. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 **Reutilizar a janela do documento atual, se tiver sido salva**
 

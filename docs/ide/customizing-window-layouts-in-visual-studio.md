@@ -1,5 +1,5 @@
 ---
-title: Personalizar layouts de janela no Visual Studio
+title: Personalizar layouts de janela
 ms.date: 01/23/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62fa251eac1546b0d5588dfc4dc43bead725bf81
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 849f94d178453d3b90140f59dc9ed5a84cd98466
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746839"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389637"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar layouts de janela no Visual Studio
 
@@ -50,7 +50,7 @@ Na guia **Visualização**, é possível exibir arquivos no editor sem abri-los.
 
 ### <a name="tab-groups"></a>Grupos de guias
 
-Os grupos de guias ampliam sua capacidade de gerenciar o espaço de trabalho limitado ao trabalhar com dois ou mais documentos abertos no IDE. É possível organizar várias janelas do documento e de ferramentas em grupos de guias verticais ou horizontais e embaralhar os documentos de um grupo de guias em outro.
+Os grupos de guias ampliam sua capacidade de gerenciar o workspace limitado ao trabalhar com dois ou mais documentos abertos no IDE. É possível organizar várias janelas do documento e de ferramentas em grupos de guias verticais ou horizontais e embaralhar os documentos de um grupo de guias em outro.
 
 ### <a name="split-windows"></a>Dividir janelas
 
@@ -81,9 +81,6 @@ Uma janela do documento e uma janela de ferramentas podem ser *encaixadas* para 
 -   Redefina o posicionamento da janela para o layout padrão ou para um layout personalizado salvo.
 
 As janelas de ferramentas e do documento podem ser organizadas arrastando-as, usando comandos no menu **Janela** e clicando com o botão direito do mouse na barra de título da janela a ser organizada.
-
-> [!NOTE]
-> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ### <a name="dock-windows"></a>Encaixar janelas
 

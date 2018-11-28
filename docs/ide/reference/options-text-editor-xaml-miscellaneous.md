@@ -30,22 +30,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4174191f9927679eb698e2e918a7bfa50f915a3e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 30986c0f18a2cc272cb917be9ce24b2a335c0b4b
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673188"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388628"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opções, Editor de texto, XAML, Diversos
+
 Use a página de propriedades **Diversos** para especificar como elementos e atributos são formatados nos documentos XAML. Para abrir a caixa de diálogo **Opções**, clique no menu **Ferramentas** e clique em **Opções**. Para acessar a página de propriedades **Diversos**, expanda o nó **Editor de texto** > **XAML** > **Diversos**.
 
-> [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
-
 ## <a name="auto-insert"></a>AutoInserção
- Use essa configuração para controlar quando marcas e aspas são geradas automaticamente.
+
+Use essa configuração para controlar quando marcas e aspas são geradas automaticamente.
 
 |||
 |-|-|
@@ -55,7 +53,8 @@ Use a página de propriedades **Diversos** para especificar como elementos e atr
 |**Vírgulas para separar parâmetros MarkupExtension**|Especifica se vírgulas são geradas quando você digita mais de um parâmetro em uma extensão de marcação.|
 
 ## <a name="errors-and-warnings"></a>Erros e Avisos
- Use essa configuração para controlar quando os erros e avisos são gerados automaticamente. Para obter mais informações, confira [Avisos e erros de XAML](../../designers/xaml-errors-warnings.md).
+
+Use essa configuração para controlar quando os erros e avisos são gerados automaticamente. Para obter mais informações, confira [Avisos e erros de XAML](../../designers/xaml-errors-warnings.md).
 
 ## <a name="see-also"></a>Consulte também
 

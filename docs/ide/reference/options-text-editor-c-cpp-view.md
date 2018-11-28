@@ -13,21 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9cf1cde04a45df47627b8b8bf9a0fad7b9bef0c4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c4ffef0b1b76f453048ff20e3cbada0b8a591c65
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673193"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388826"
 ---
 # <a name="options-text-editor-cc-view"></a>Opções, Editor de Texto, C/C++, Exibição
 
 Use essas páginas de propriedades para alterar o comportamento padrão do editor de código ao programar em C ou C++.
 
 Para acessar essa página de propriedades, escolha **Ferramentas** > **Opções** e expanda **Editor de Texto** e **C/C++** e, em seguida, escolha **Exibir**.
-
-> [!NOTE]
-> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Consulte [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="code-squiggles"></a>Linhas ondulantes de código
 
@@ -49,7 +46,7 @@ Para acessar essa página de propriedades, escolha **Ferramentas** > **Opções*
 
 - **Enumerar tarefas de comentário** – Examinar arquivos de software livre para tokens do VS e relate-os na janela Lista de Tarefas.
 
-- **Realçar tokens correspondentes** – Realçar chaves de fechamento ou a sintaxe que corresponde ao local em que o cursor está posicionado. 
+- **Realçar tokens correspondentes** – Realçar chaves de fechamento ou a sintaxe que corresponde ao local em que o cursor está posicionado.
 
 ## <a name="outlining"></a>Estrutura de tópicos
 
