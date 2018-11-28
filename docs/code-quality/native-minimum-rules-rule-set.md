@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dd0d7b14c26038c57ce175abcff383ad9de5cf3
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 9149276064b76a08705b70883bb3c2e136e23334
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225042"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389008"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Conjunto de regras mínimas nativo
 O Microsoft Native mínimo regras enfocam os problemas mais críticos do código nativo, inclusive falhas potenciais de segurança e falhas do aplicativo. Você deve incluir este conjunto de regras em qualquer conjunto personalizado que criar para seus projetos nativos.
@@ -37,7 +37,7 @@ O Microsoft Native mínimo regras enfocam os problemas mais críticos do código
 |[C6270](../code-quality/c6270.md)|Falta argumento float para formatar a função|
 |[C6271](../code-quality/c6271.md)|Argumento extra para formatar função|
 |[C6272](../code-quality/c6272.md)|Argumento diferente de float para formatar a função|
-|[C6273](../code-quality/c6273.md)|Argumento não inteiro para formatar a função|
+|[C6273](../code-quality/c6273.md)|Argumento não inteiro para formatar função|
 |[C6274](../code-quality/c6274.md)|Argumento diferente de caractere para formatar a função|
 |[C6276](../code-quality/c6276.md)|Conversão de cadeia de caracteres inválida|
 |[C6277](../code-quality/c6277.md)|Chamada CreateProcess inválida|
@@ -102,7 +102,7 @@ O Microsoft Native mínimo regras enfocam os problemas mais críticos do código
 |[C28215](../code-quality/c28215.md)|O typefix não pode ser aplicado a um parâmetro que já tem um typefix|
 |[C28216](../code-quality/c28216.md)|A anotação checkReturn se aplica apenas a pós-condições para o parâmetro da função específica.|
 |[C28217](../code-quality/c28217.md)|Para função, o número de parâmetros para anotação não corresponde ao encontrado no arquivo|
-|[C28218](../code-quality/c28218.md)|Para parâmetro de função, o parâmetro de anotação não corresponde ao encontrado no arquivo|
+|[C28218](../code-quality/c28218.md)|Para o parâmetro de função, o parâmetro da anotação não corresponde ao encontrado no arquivo|
 |[C28219](../code-quality/c28219.md)|Membro de enumeração esperada para anotação do parâmetro na anotação|
 |[C28220](../code-quality/c28220.md)|Expressão inteira esperada para anotação do parâmetro na anotação|
 |[C28221](../code-quality/c28221.md)|Expressão de sequência de caracteres esperada para o parâmetro na anotação|

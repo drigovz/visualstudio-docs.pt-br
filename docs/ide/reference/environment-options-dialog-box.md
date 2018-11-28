@@ -13,19 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45a7cef09937181fbf6c721b8c8eca73b6351742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61b2e6461fb80cfd12f76a6e96ac629ce640fa89
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930538"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388761"
 ---
 # <a name="environment-options-dialog-box"></a>Caixa de diálogo Opções do Ambiente
+
 Você pode usar as páginas da pasta **Ambiente** na caixa de diálogo **Opções** para definir como determinados elementos do IDE (ambiente de desenvolvimento integrado) são exibidos e se comportam. Na barra de menus, é possível acessar as páginas Ambiente escolhendo **Ferramentas**, **Opções** e selecionando **Ambiente**.
-
-> [!NOTE]
-> As caixas de diálogo e os comandos de menu que aparecem no computador podem ser diferentes dos que são descritos na Ajuda, pois variam de acordo com as configurações ativas e a edição do Visual Studio que você está usando. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
 
 |Para obter informações como|Consulte|
 | - |---------|

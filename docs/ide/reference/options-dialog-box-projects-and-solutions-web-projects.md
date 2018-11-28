@@ -12,21 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26625fad5435fa8d5088a59465612e15808a07c4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4a5efe344859c8b9fbdc10edbea0bbb193c6df55
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671229"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389348"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Caixa de diálogo Opções, Projetos e Soluções, Projetos Web
 
 Define o servidor Web que projetos Web usarão para desenvolvimento dentro do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Para acessar essas opções, selecione **Ferramentas > Opções**, expanda **Projetos e Soluções** e selecione **Projetos Web**.
 
 Por padrão, executar um projeto Web no Visual Studio usa o Visual Studio Development Server. Para obter mais informações, consulte [Servidores Web no Visual Studio para projetos Web ASP.NET](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\)).
-
-> [!NOTE]
-> As opções disponíveis nas caixas de diálogo e os nomes os locais dos comandos de menu que você vê podem diferir do que é descrito na Ajuda, dependendo de suas configurações ativas ou da edição. Esta página de Ajuda foi escrita pensando nas **Configurações da Web** em mente. Para exibir ou alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="settings"></a>Configurações
 
