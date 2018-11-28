@@ -1,5 +1,5 @@
 ---
-title: Personalizar como o Visual Studio cria legendas para controles associados a dados
+title: Personalizar legendas para controles ligados a dados
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 69e97efe6db8b06f476b7dc004e3b52a77701cb0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 11f7249f30b1866ca7c4aea4bbefa850a5353c0f
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758414"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305579"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar como o Visual Studio cria legendas para controles associados a dados
 
-Quando você arrasta itens dos [janela fontes de dados](add-new-data-sources.md) para um designer, uma consideração especial entra em ação: os nomes de coluna nos rótulos de legenda são reformatados para uma cadeia de caracteres mais legível quando duas ou mais palavras são encontradas concatenados. Você pode personalizar a maneira na qual esses rótulos são criados, definindo o **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** valores em o **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** chave do registro.
+Quando você arrasta itens dos [janela fontes de dados](add-new-data-sources.md#data-sources-window) para um designer, uma consideração especial entra em ação: os nomes de coluna nos rótulos de legenda são reformatados para uma cadeia de caracteres mais legível quando duas ou mais palavras são encontradas concatenados. Você pode personalizar a maneira na qual esses rótulos são criados, definindo o **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** valores em o **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** chave do registro.
 
 > [!NOTE]
 > Essa chave do registro não existe até que você criá-lo.
@@ -44,8 +44,8 @@ A tabela a seguir lista as configurações padrão interno para esses valores do
 |Item do registro|Valor padrão|Explicação|
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|Corresponde a um caractere minúsculo seguido por um caractere maiusculo ou um sublinhado.|
-|**SmartCaptionReplacement**|**US $1 $2**|O **US $1** representa quaisquer caracteres correspondidos no primeiro parênteses da expressão e o **US $2** representa quaisquer caracteres correspondidos no segundo parênteses. A substituição é a primeira correspondência, um espaço e, em seguida, a segunda correspondência.|
-|**SmartCaptionSuffix**|**:**|Representa um caractere acrescentado à cadeia de caracteres retornada. Por exemplo, se a legenda for `Company Name`, o sufixo torna `Company Name:`|
+|**SmartCaptionReplacement**|{1&gt;$1&lt;1}|O **US $1** representa quaisquer caracteres correspondidos no primeiro parênteses da expressão e o **US $2** representa quaisquer caracteres correspondidos no segundo parênteses. A substituição é a primeira correspondência, um espaço e, em seguida, a segunda correspondência.|
+|**SmartCaptionSuffix**|**:|Representa um caractere acrescentado à cadeia de caracteres retornada. Por exemplo, se a legenda for `Company Name`, o sufixo torna `Company Name:`|
 
 > [!CAUTION]
 > Você deve ser muito cuidado ao fazer qualquer coisa no Editor do registro. Faça backup do registro antes de editá-lo. Se você usar o Editor do Registro incorretamente, você pode causar sérios problemas que talvez exijam a reinstalação do sistema operacional. A Microsoft não garante que os problemas que causam usando o Editor do Registro incorretamente podem ser resolvidos. Use o Editor do Registro por sua conta e risco.
@@ -60,25 +60,25 @@ A tabela a seguir lista as configurações padrão interno para esses valores do
 
 3.  Expanda o **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nó.
 
-7.  Clique com botão direito do **15.0** nó e crie um novo **chave** chamado `Data Designers`.
+4.  Clique com botão direito do **15.0** nó e crie um novo **chave** chamado `Data Designers`.
 
-8.  Clique com botão direito do **Designers de dados** nó e criar três novos valores de cadeia de caracteres:
+5.  Clique com botão direito do **Designers de dados** nó e criar três novos valores de cadeia de caracteres:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. Clique com botão direito do **SmartCaptionExpression** valor e, em seguida, selecione **modificar**.
+6. Clique com botão direito do **SmartCaptionExpression** valor e, em seguida, selecione **modificar**.
 
-12. Insira a expressão regular que você deseja que o **fontes de dados** janela a ser usado.
+7. Insira a expressão regular que você deseja que o **fontes de dados** janela a ser usado.
 
-13. Clique com botão direito do **SmartCaptionReplacement** valor e, em seguida, selecione **modificar**.
+8. Clique com botão direito do **SmartCaptionReplacement** valor e, em seguida, selecione **modificar**.
 
-14. Insira a substituição de cadeia de caracteres formatada da maneira que você deseja exibir os padrões de correspondência em sua expressão regular.
+9. Insira a substituição de cadeia de caracteres formatada da maneira que você deseja exibir os padrões de correspondência em sua expressão regular.
 
-15. Clique com botão direito do **SmartCaptionSuffix** valor e, em seguida, selecione **modificar**.
+10. Clique com botão direito do **SmartCaptionSuffix** valor e, em seguida, selecione **modificar**.
 
-16. Insira qualquer caractere que você deseja que apareça no final da legenda.
+11. Insira qualquer caractere que você deseja que apareça no final da legenda.
 
     Na próxima vez que você arrasta itens dos **fontes de dados** janela, os rótulos de legenda são criados usando os novos valores de registro fornecidos.
 
@@ -90,21 +90,21 @@ A tabela a seguir lista as configurações padrão interno para esses valores do
 
 3.  Expanda o **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nó.
 
-7.  Clique com botão direito do **15.0** nó e crie um novo **chave** chamado `Data Designers`.
+4.  Clique com botão direito do **15.0** nó e crie um novo **chave** chamado `Data Designers`.
 
-8.  Clique com botão direito do **Designers de dados** nó e criar três novos valores de cadeia de caracteres:
+5.  Clique com botão direito do **Designers de dados** nó e criar três novos valores de cadeia de caracteres:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. Clique com botão direito do **SmartCaptionExpression** item e, em seguida, selecione **modificar**.
+6. Clique com botão direito do **SmartCaptionExpression** item e, em seguida, selecione **modificar**.
 
-12. Insira `(.*)` para o valor. Isso corresponderá à cadeia de caracteres inteira.
+7. Insira `(.*)` para o valor. Isso corresponderá à cadeia de caracteres inteira.
 
-13. Clique com botão direito do **SmartCaptionReplacement** item e, em seguida, selecione **modificar**.
+8. Clique com botão direito do **SmartCaptionReplacement** item e, em seguida, selecione **modificar**.
 
-14. Insira `$1` para o valor. Isso substitui a cadeia de caracteres com o valor correspondente, que é a cadeia de caracteres inteira para que ela permanecerá inalterada.
+9. Insira `$1` para o valor. Isso substitui a cadeia de caracteres com o valor correspondente, que é a cadeia de caracteres inteira para que ela permanecerá inalterada.
 
     Na próxima vez que você arrasta itens dos **fontes de dados** janela, os rótulos de legenda são criados com legendas não modificadas.
 
