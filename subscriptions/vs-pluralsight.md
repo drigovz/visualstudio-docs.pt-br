@@ -9,12 +9,12 @@ description: Saiba mais sobre a assinatura de treinamento do Pluralsight incluí
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a384769b5d2f643a215a1a0c136fc44fd7d45e42
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: c39b7e052f3e978530dbc093767fabde4172d8e2
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826685"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389105"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Benefícios de treinamento do Pluralsight nas assinaturas do Visual Studio
 
@@ -26,7 +26,7 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
 
 
 ## <a name="activation-steps"></a>Etapas de ativação
-1. Para ativar sua assinatura, conecte-se ao [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no link **Obter Código** no bloco do benefício Pluralsight, na seção Desenvolvimento Profissional.
+1. Para ativar sua assinatura, conecte-se ao [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no link **Obter código** no bloco do benefício Pluralsight, localizado na seção Desenvolvimento Profissional.
    > [!div class="mx-imgBorder"]
    > ![Bloco do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
    > 
@@ -39,11 +39,7 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
    > [!div class="mx-imgBorder"]
    > ![Ativar o benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
-3. Você será redirecionado à página do Pluralsight para o benefício incluído com sua assinatura do Visual Studio.  Neste exemplo, ativaremos o benefício fornecido com associações do Visual Studio Dev Essentials. Clique em **Ativar seu benefício**.
-   > [!div class="mx-imgBorder"]
-   > ![Página de aterrissagem do Pluralsight VSDE](_img/vs-pluralsight/vs-pluralsight-vsde-landing.png)
-
-4. Na página de ativação:
+3. Você será redirecionado à página do Pluralsight para o benefício incluído com sua assinatura do Visual Studio.  
    - Forneça as informações de contato solicitadas no formulário
    - Clique na caixa de seleção para aceitar os termos de uso e a política de privacidade
    - Clique em **Concordo. Ativar o benefício**.
@@ -85,7 +81,7 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
 
 <sup>1</sup>  *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner),BizSpark, MCT Software & Services, MCT Software & Services Developer, MVP (Microsoft Valued Professional), RD (diretor regional), MPN (Microsoft Partner Network), FTE, Imagine.*
 
-<sup>2</sup> *O benefício Pluralsight é somente para uso único, associado ao indivíduo.  Depois que o assinante consome o benefício, ele não é restaurado. 
+<sup>2</sup>  *O benefício do Pluralsight é somente para uso único, vinculado ao indivíduo.  Depois que o assinante consome o benefício, ele não é reiniciado.*
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 

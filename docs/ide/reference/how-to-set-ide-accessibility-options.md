@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d0149be4996f762373aae77d7535dbf8e02809
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df94a57358edd9619b43bbcddb26d4e3485a1ab1
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909776"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388420"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Como definir opções de acessibilidade do IDE
 
@@ -27,10 +27,10 @@ ms.locfileid: "49909776"
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] contém recursos que facilitam a leitura para pessoas com deficiência visual e a escrita para pessoas com destreza limitada. Esses recursos incluem alterar o tamanho e a cor do texto em editores, alterar o tamanho do texto e de botões em barras de ferramentas e o preenchimento automático para métodos e parâmetros, entre outros.
 
- Além disso, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dá suporte a layouts de teclado Dvorak, que tornam os caracteres digitados com maior frequência mais acessíveis. Você também pode personalizar as teclas de atalho padrão disponíveis com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Para obter mais informações, consulte [Identificando e personalizando atalhos de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+Além disso, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dá suporte a layouts de teclado Dvorak, que tornam os caracteres digitados com maior frequência mais acessíveis. Você também pode personalizar as teclas de atalho padrão disponíveis com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Para obter mais informações, consulte [Identificando e personalizando atalhos de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Redefinir as configurações](../environment-settings.md#reset-settings).
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Editores, caixas de diálogo e janelas de ferramentas
 

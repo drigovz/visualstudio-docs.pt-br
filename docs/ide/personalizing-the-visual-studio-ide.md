@@ -9,23 +9,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2e42c31d7cbdb52e602eee4e424eb78ee89d77
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: d8f52061acff03a1339a9c7b7f3f8ff4901ec6a5
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348686"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388719"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizar o IDE do Visual Studio
 
-Você pode personalizar o Visual Studio de várias maneiras para dar o melhor suporte ao seu próprio estilo e requisitos de desenvolvimento. Muitas das configurações usam perfis móveis entre as instâncias do Visual Studio&mdash;consulte [Configurações sincronizadas](../ide/synchronized-settings-in-visual-studio.md). Este tópico descreve de forma breve as diferentes personalizações e o local em que é possível encontrar mais informações.
+Você pode personalizar o Visual Studio de várias maneiras para dar o melhor suporte ao seu próprio estilo e requisitos de desenvolvimento. Muitas das configurações usam perfis móveis entre as instâncias do Visual Studio&mdash;consulte [Configurações sincronizadas](../ide/synchronized-settings-in-visual-studio.md). Este artigo descreve de forma breve as diferentes personalizações e o local em que é possível encontrar mais informações.
 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Personalizar o IDE do Visual Studio para Mac](/visualstudio/mac/customizing-the-ide).
 
+## <a name="default-settings"></a>Configurações padrão
+
+Escolha uma coleção padrão de configurações que otimiza o Visual Studio para seu tipo de desenvolvimento. Para obter mais informações, confira [Configurações do ambiente](environment-settings.md).
+
 ## <a name="general-environment-options"></a>Opções do ambiente geral
 
-Muitas opções de personalização são expostas por meio da caixa de diálogo [Opções do ambiente](../ide/reference/environment-options-dialog-box.md). Há duas maneiras de acessar essa caixa de diálogo:
+Muitas opções de personalização são expostas pela caixa de diálogo [Opções de Ambiente](../ide/reference/environment-options-dialog-box.md). Há duas maneiras de acessar essa caixa de diálogo:
 
 - Na barra de menus, escolha **Ferramentas** > **Opções** e, se o nó **Ambiente** ainda não estiver expandido, expanda-o.
 
@@ -62,6 +66,7 @@ Você pode definir e salvar vários layouts de janela e mudar entre eles. Por ex
 
 ## <a name="see-also"></a>Consulte também
 
+- [Configurações do ambiente](environment-settings.md)
 - [Visão geral do IDE do Visual Studio](../ide/visual-studio-ide.md)
 - [Início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Personalizar o IDE do Visual Studio para Mac](/visualstudio/mac/customizing-the-ide)

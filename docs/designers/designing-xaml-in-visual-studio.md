@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a3adcb961e3031180054706da9d43dd04dccdedf
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c23a73302e5d4771b3372b8f4534b42806156da0
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348637"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389611"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Criar XAML no Visual Studio
 
@@ -48,7 +48,7 @@ Para tarefas mais básicas, a IDE do Visual Studio e do Blend for Visual Studio 
 
      ![Experiência de recarregar arquivo](../designers/media/blendfilereload.png)
 
-- **Layouts e configurações sincronizados:** layouts personalizados permitem salvar e aplicar as personalizações de layout da janela de ferramentas. O Visual Studio sincroniza essas personalizações e preferências entre o Visual Studio e o Blend para Visual Studio entre os computadores quando você se conecta com a mesma conta Microsoft. Consulte [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+- **Layouts e configurações sincronizados:** layouts personalizados permitem salvar e aplicar as personalizações de layout da janela de ferramentas. O Visual Studio sincroniza essas personalizações e preferências entre o Visual Studio e o Blend para Visual Studio entre os computadores quando você se conecta com a mesma conta Microsoft. Confira [Sincronizar configurações em vários computadores](../ide/synchronized-settings-in-visual-studio.md).
 
 - **Um Gerenciador de Soluções comum:** o **Gerenciador de Soluções** fornece uma exibição organizada dos projetos e de seus arquivos, bem como o acesso imediato aos comandos associados a eles. Com o Gerenciador de Soluções, fica mais fácil trabalhar com projetos corporativos grandes. Confira [Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md).
 
