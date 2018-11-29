@@ -1,6 +1,6 @@
 ---
 title: Sincronizar as configurações
-ms.date: 01/23/2017
+ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 633767e66a4b3d976999574c885a3e6f7a06ddcf
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ecac148e745eff956151af71a37b23f67a816f56
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766123"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388485"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizar as configurações do Visual Studio em vários computadores
 
@@ -27,7 +27,7 @@ Quando você entra no Visual Studio em vários computadores usando a mesma conta
 
 Por padrão, as seguintes configurações são sincronizadas:
 
-- Configurações de desenvolvimento. Você precisa selecionar um conjunto de configurações na primeira execução do Visual Studio, mas pode alterar a seleção a qualquer momento. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+- Configurações de desenvolvimento. Você seleciona uma coleção de configurações na primeira vez que abrir o Visual Studio, mas pode alterar a seleção a qualquer momento. Para obter mais informações, confira [Configurações do ambiente](../ide/environment-settings.md).
 
 - Alias de comando definidos pelo usuário. Para saber mais sobre como definir aliases de comando, veja [Aliases de comando do Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
@@ -53,24 +53,6 @@ Por padrão, as seguintes configurações são sincronizadas:
 
 As configurações sincronizadas para o Visual Studio são ativadas por padrão. Desligue as configurações sincronizadas em um computador acessando a página **Ferramentas** > **Opções** > **Ambiente** > **Contas** e desmarcando a opção **Sincronizar as configurações em dispositivos quando estiver conectado ao Visual Studio**. Por exemplo, se você optar por não sincronizar as configurações do Visual Studio no computador "A", as alterações de configuração feitas no computador "A" não serão exibidas nos computadores "B" ou "C". Os computadores "B" e "C" continuarão sendo sincronizados um com o outro, mas não com o computador "A".
 
-## <a name="reset-settings"></a>Redefinir configurações
-
-Redefina todas as configurações de uma coleção de configurações padrão seguindo estas etapas:
-
-1. No Visual Studio, selecione **Ferramentas** > **Importar e Exportar Configurações** para abrir o **Assistente de Importação e Exportação de Configurações**.
-
-1. No **Assistente de Importação e Exportação de Configurações**, selecione **Redefinir todas as configurações** e, em seguida, selecione **Avançar**.
-
-   ![Assistente de Importação e Exportação de Configurações no Visual Studio](media/reset-all-settings.png)
-
-1. Na página **Salvar Configurações Atuais**, selecione **Sim** ou **não** e, em seguida, **Avançar**.
-
-1. Na página **Escolher uma coleção de configurações padrão**, escolha uma coleção e, em seguida, selecione **Concluir**.
-
-   ![Coleções de configurações no Visual Studio](media/settings-collections.png)
-
-1. Na página **Redefinição Concluída**, selecione **Fechar**.
-
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Sincronizar configurações em edições e produtos da família Visual Studio
 
 As configurações podem ser sincronizadas em qualquer edição do Visual Studio, incluindo Community Edition. As configurações também são sincronizadas em todos os produtos da família Visual Studio. No entanto, cada um desses produtos da família pode ter suas próprias configurações que não são compartilhadas com o Visual Studio. Por exemplo, as configurações específicas a um produto no computador "A" são compartilhadas com outro produto no computador "B", mas não com o Visual Studio nos computadores "A" ou "B".
@@ -94,4 +76,6 @@ Se, no momento, você tem instalações lado a lado do Visual Studio 2017 e dese
 
 ## <a name="see-also"></a>Consulte também
 
-[Personalizar o IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [Personalizar o IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [Configurações do ambiente](../ide/environment-settings.md)
+- [Caixa de diálogo Ambiente > Opções de Contas](reference/synchronized-settings-environment-options-dialog-box.md)

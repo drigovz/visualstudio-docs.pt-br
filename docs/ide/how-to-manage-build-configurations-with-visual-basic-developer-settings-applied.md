@@ -1,16 +1,13 @@
 ---
-title: Como gerenciar configurações de build com configurações de desenvolvedor do Visual Basic aplicadas
-ms.date: 11/04/2016
+title: Gerenciar configurações de build com as definições do desenvolvedor do Visual Basic
+ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio, building with Visual Basic settings
-- MSBuild, debug build
 - advanced build configurations
-- building with Visual Basic developer settings
+- building with Visual Basic developer settings (Visual Studio)
 - debug builds
-- MSBuild, release build
 - release builds
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
 author: gewarren
@@ -18,20 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 987419e62d54b44a21a70f625e2a240bd7aecc21
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 90e00c544db2064f55d78de5dad00cc27105451e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946254"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388680"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Como gerenciar configurações de build com configurações de desenvolvedor do Visual Basic aplicadas
 
-Por padrão, todas as opções avançadas de configuração de build ficam ocultas com as configurações do desenvolvedor aplicadas. Este tópico explica como habilitar essas configurações manualmente.
+Por padrão, todas as opções avançadas de configuração de build ficam ocultas quando as configurações do desenvolvedor do Visual Basic são aplicadas. Este artigo explica como habilitar manualmente essas configurações de build.
 
 ## <a name="enable-advanced-build-configurations"></a>Habilitar configurações de build avançadas
 
-Por padrão, as configurações de desenvolvedor do Visual Basic ocultam a opção de abrir a caixa de diálogo **Configuration Manager** e as listas **Configuração** e **Plataforma** no [Designer de Projeto](..//ide/reference/application-page-project-designer-visual-basic.md).
+Por padrão, as configurações de desenvolvedor do Visual Basic ocultam a opção de abrir a caixa de diálogo **Configuration Manager** e as listas **Configuração** e **Plataforma** no [Designer de Projeto](../ide/reference/application-page-project-designer-visual-basic.md).
 
 1.  No menu **Ferramentas**, clique em **Opções**.
 
@@ -44,9 +41,10 @@ Por padrão, as configurações de desenvolvedor do Visual Basic ocultam a opç�
 
 4.  Clique em **OK**.
 
-     No menu **Build**, **Configuration Manager** agora está disponível e as listas **Configuração** e **Plataforma** estão visíveis no **Designer de Projeto**.
+     O **Configuration Manager** agora está disponível no menu **Build** e as listas **Configuração** e **Plataforma** estão visíveis no **Designer de Projeto**.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Compreender configurações de build](../ide/understanding-build-configurations.md)
-- [Compilar e criar](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)
+- [Configurações do ambiente](../ide/environment-settings.md)

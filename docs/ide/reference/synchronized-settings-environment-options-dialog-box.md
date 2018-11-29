@@ -1,6 +1,6 @@
 ---
-title: Caixa de diálogo de configurações sincronizadas, ambiente, opções
-ms.date: 11/04/2016
+title: Referência de opções de contas
+ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,17 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa23853b425bf45543f2bb42614ca6057b791ccc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9dadf81f386ef93fab5a3f6c4cebf9969d0a6f23
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942748"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388459"
 ---
-# <a name="synchronized-settings-environment-options-dialog-box"></a>Caixa de diálogo de configurações sincronizadas, ambiente, opções
+# <a name="accounts-environment-options-dialog-box"></a>Caixa de diálogo Contas, Ambiente, Opções
 
-Use esta página para especificar se deseja sincronizar (usar perfil móvel) suas configurações em vários computadores. Para obter mais informações, consulte [Synchronized Settings (Configurações sincronizadas)](../../ide/synchronized-settings-in-visual-studio.md).
+Use esta página para especificar se deseja sincronizar as configurações em vários computadores. Para obter mais informações, confira [Configurações sincronizadas](../../ide/synchronized-settings-in-visual-studio.md).
 
 ### <a name="see-also"></a>Consulte também
 
+- [Sincronizar configurações em vários computadores](../synchronized-settings-in-visual-studio.md)
+- [Configurações do ambiente](../environment-settings.md)
 - [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)
