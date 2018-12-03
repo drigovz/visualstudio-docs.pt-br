@@ -1,5 +1,5 @@
 ---
-title: Criar tabelas de pesquisa em aplicativos WPF
+title: Criar tabelas de pesquisa em aplicativos do WPF
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,14 +18,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbecb481d96df1071388e834d44f8f712def2935
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924187"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305475"
 ---
-# <a name="create-lookup-tables-in-wpf-applications"></a>Criar tabelas de pesquisa em aplicativos WPF
+# <a name="create-lookup-tables-in-wpf-applications"></a>Criar tabelas de pesquisa em aplicativos do WPF
+
 O termo *tabela de pesquisa* (às vezes chamado de um *vinculação de pesquisa*) descreve um controle que exibe informações de uma tabela de dados com base no valor de um campo de chave estrangeira em outra tabela. Você pode criar uma tabela de pesquisa, arrastando o nó principal de uma tabela pai ou objeto de **fontes de dados** window para um controle que já está associado a uma coluna ou propriedade em uma tabela filho relacionada.
 
 Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Cada registro a `Orders` tabela inclui uma `CustomerID` que indica qual cliente fez o pedido. O `CustomerID` é uma chave estrangeira que aponta para um registro de cliente no `Customers` tabela. Quando você exibe uma lista de pedidos do `Orders` tabela, você talvez queira exibir o nome do cliente real, em vez do `CustomerID`. Porque o nome do cliente está no `Customers` tabela, você precisa criar uma tabela de pesquisa para exibir o nome do cliente. A tabela de pesquisa usa o `CustomerID` valor no `Orders` registre para navegar pela relação e retornar o nome do cliente.
@@ -41,7 +42,7 @@ Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Ca
     -   Objetos. Para obter mais informações, consulte [associar a objetos no Visual Studio](bind-objects-in-visual-studio.md).
 
     > [!NOTE]
-    >  Antes de criar uma tabela de pesquisa, duas tabelas relacionadas ou objetos devem existir como uma fonte de dados para o projeto.
+    > Antes de criar uma tabela de pesquisa, duas tabelas relacionadas ou objetos devem existir como uma fonte de dados para o projeto.
 
 2.  Abra o **WPF Designer**e certifique-se de que o designer contém um contêiner que é um destino de soltar válido para itens na **fontes de dados** janela.
 
@@ -52,7 +53,7 @@ Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Ca
 4.  Expanda os nós na **fontes de dados** janela, até que você possa ver a tabela pai ou objeto e a tabela filho relacionada ou objeto.
 
     > [!NOTE]
-    >  A tabela filho relacionada ou o objeto é o nó que aparece como um nó filho expansível sob a tabela pai ou o objeto.
+    > A tabela filho relacionada ou o objeto é o nó que aparece como um nó filho expansível sob a tabela pai ou o objeto.
 
 5.  Clique no menu suspenso para o nó filho e selecione **detalhes**.
 
@@ -67,12 +68,12 @@ Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Ca
     -   **ListView**
 
         > [!NOTE]
-        >  Se o **ListBox** ou **ListView** controle não aparecer na lista, você pode adicionar esses controles à lista. Para obter informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+        > Se o **ListBox** ou **ListView** controle não aparecer na lista, você pode adicionar esses controles à lista. Para obter informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
     -   Qualquer controle personalizado que deriva de <xref:System.Windows.Controls.Primitives.Selector>.
 
         > [!NOTE]
-        >  Para obter informações sobre como adicionar personalizado controles à lista de controles que você podem selecionar para itens na **fontes de dados** janela, consulte [adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+        > Para obter informações sobre como adicionar personalizado controles à lista de controles que você podem selecionar para itens na **fontes de dados** janela, consulte [adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 8.  Arraste o nó filho do **fontes de dados** window para um contêiner no WPF designer. (No exemplo anterior, o nó filho é o **pedidos** nó.)
 
@@ -93,4 +94,4 @@ Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Ca
 
 - [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Exibir dados relacionados em aplicativos WPF](../data-tools/display-related-data-in-wpf-applications.md)
-- [Passo a passo: Exibindo dados relacionados em um aplicativo WPF](../data-tools/display-related-data-in-wpf-applications.md)
+- [Passo a passo: exibindo dados relacionados em um aplicativo WPF](../data-tools/display-related-data-in-wpf-applications.md)

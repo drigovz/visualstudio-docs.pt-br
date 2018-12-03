@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0a07abe1cbb380acde91067e3e6252d0cd8596
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4dc45c624d44ed550fb491fc57638ba033090346
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830048"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388102"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Como: publicar um aplicativo WPF com estilos visuais habilitados
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Como publicar um aplicativo WPF com estilos visuais habilitados
 Estilos visuais permitem a aparência dos controles comuns para mudar com base no tema escolhido pelo usuário. Por padrão, os estilos visuais estiverem habilitados não para aplicativos do Windows Presentation Foundation (WPF), portanto, você deve habilitá-los manualmente. No entanto, habilitar estilos visuais para um aplicativo WPF e, em seguida, publicar a solução causa um erro. Este tópico descreve como resolver esse erro e o processo para publicar um aplicativo WPF com estilos visuais habilitados. Para obter mais informações sobre estilos visuais, consulte [visão geral de estilos visuais](/windows/desktop/Controls/visual-styles-overview). Para obter mais informações sobre a mensagem de erro, consulte [solucionar problemas de erros específicos nas implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Para resolver o erro e publicar a solução, você deve executar as seguintes tarefas:  
@@ -39,7 +39,11 @@ Estilos visuais permitem a aparência dos controles comuns para mudar com base n
      Por padrão, os estilos visuais não estão habilitados.  
   
     ```xml  
-    <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+        </dependentAssembly>
+    </dependency>
     ```  
   
      Os procedimentos a seguir mostram como abrir o arquivo de manifesto associado ao seu projeto.  
@@ -78,7 +82,18 @@ Estilos visuais permitem a aparência dos controles comuns para mudar com base n
      Esse XML descreve o assembly que contém controles que dão suporte a estilos visuais.  
   
     ```xml  
-    <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
+    <?xml version="1.0" encoding="utf-8"?>
+    <asmv1:assembly manifestVersion="1.0" 
+        xmlns="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <dependency>
+            <dependentAssembly>
+                <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+            </dependentAssembly>
+        </dependency>
+    </asmv1:assembly>
     ```  
   
 2.  No bloco de notas, clique em **arquivo**e, em seguida, clique em **Salvar como**.  
@@ -163,7 +178,7 @@ Estilos visuais permitem a aparência dos controles comuns para mudar com base n
   
 ## <a name="see-also"></a>Consulte também
 
--[Solução de problemas de erros específicos nas implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+-[Solução de problemas com erros específicos nas implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Visão geral de estilos visuais](/windows/desktop/Controls/visual-styles-overview)
-- [Habilitar estilos visuais](/windows/desktop/Controls/cookbook-overview)
+- [Habilitando Estilos Visuais](/windows/desktop/Controls/cookbook-overview)
 - [Prompts de Comando](/dotnet/framework/tools/developer-command-prompt-for-vs)

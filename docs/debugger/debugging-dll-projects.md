@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96dc4277bfdc783d969a2e98fb93fcc5975e9ad7
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
-ms.translationtype: MT
+ms.openlocfilehash: c00740b31e5b9d7cc5678bfc248e673a57e59ccf
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607621"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305306"
 ---
-# <a name="debug-dlls-in-visual-studio"></a>Depurar DLLs no Visual Studio
+# <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Depurar DLLs no Visual Studio (C#, C++, Visual Basic, F#)
 
 Uma DLL (biblioteca de vínculo dinâmico) é uma biblioteca que contém o código e dados que podem ser usados por mais de um aplicativo. Você pode usar o Visual Studio para criar, compilar, configurar e depurar DLLs. 
 
@@ -35,7 +35,7 @@ Uma DLL (biblioteca de vínculo dinâmico) é uma biblioteca que contém o códi
 
 Os seguintes modelos de projeto do Visual Studio podem criar DLLs:
 
-- C#ou biblioteca de classes do Visual Basic 
+- C#, Visual Basic, ou F# biblioteca de classes 
 - C#ou a biblioteca de controles (WCF) de formulários do Windows do Visual Basic 
 - C++ Dynamic-Link Library (DLL)
 
@@ -47,12 +47,12 @@ Você geralmente chama uma DLL de outro projeto. Quando você depura o projeto d
 
 ## <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a> Configuração de depuração da DLL
 
-Quando você usa um modelo de projeto do Visual Studio para criar um aplicativo, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cria automaticamente as configurações necessárias para as configurações de compilação de depuração e versão. Você pode alterar essas configurações, se necessário. Para obter mais informações, consulte os seguintes artigos:
+Quando você usa um modelo de projeto do Visual Studio para criar um aplicativo, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cria automaticamente as configurações necessárias para as configurações de compilação de depuração e versão. Você pode alterar essas configurações, se necessário. Para obter mais informações, confira os seguintes artigos:
 
 - [Configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-- [Configurações do projeto para C# configurações de depuração](../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Configurações do projeto para configurações de depuração do C#](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Definições do projeto para uma configuração de depuração do Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Como: configurações de conjunto de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md)  
+- [Como definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md)  
   
 ### <a name="set-c-debuggableattribute"></a>Definir DebuggableAttribute C++
 
@@ -110,10 +110,9 @@ O aplicativo que chama uma DLL pode ser:
   
 - Um aplicativo a partir um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto na mesma ou em uma solução diferente da DLL.  
 - Um aplicativo existente que já esteja implantado e em execução em um computador de teste ou produção.  
-- Localizado na web e acessados por meio de uma URL.  
+- Localizado na Web e acessado por meio de uma URL.  
 - Um aplicativo web com uma página da web que insere a DLL.  
   
-
 Para depurar uma DLL de um aplicativo de chamada, você pode:  
   
 - Abra o projeto para o aplicativo de chamada e iniciar a depuração, selecionando **Debug** > **iniciar depuração** ou pressionando **F5**.  
@@ -131,7 +130,7 @@ Durante a depuração, você pode usar o **módulos** para verificar as DLLs e *
 Você pode usar o **imediato** janela para avaliar os métodos ou funções de DLL em tempo de design. O **imediato** janela desempenha a função de um aplicativo de chamada. 
 
 >[!NOTE]
->Você pode usar o **imediato** janela em tempo de design com a maioria dos tipos de projeto. Atualmente não há suporte para .NET Core, SQL ou projetos da web.
+>Você pode usar o **imediato** janela em tempo de design com a maioria dos tipos de projeto. Não há suporte para SQL, projetos da web ou script.
 
 Por exemplo, para testar um método chamado `Test` na classe `Class1`:
 
@@ -145,7 +144,7 @@ Por exemplo, para testar um método chamado `Test` na classe `Class1`:
   
    No C#, todos os nomes devem ser totalmente qualificados. Todos os métodos ou variáveis devem ser o escopo atual e o contexto de quando o serviço de linguagem tenta avaliar a expressão.  
    
-1. Supondo que `Test` usa um `int` parâmetro, avaliar `Test` usando o **imediato** janela:  
+1. Supondo que `Test` aceite um parâmetro `int`, avalie `Test` usando a janela **Imediato**:  
    
    ```csharp
    ?obj.Test(10);  
@@ -153,9 +152,9 @@ Por exemplo, para testar um método chamado `Test` na classe `Class1`:
    
    O resultado é impressa na **imediato** janela.  
    
-1. Você pode continuar a depuração `Test` colocando um ponto de interrupção dentro dele, e, em seguida, avaliando a função novamente.  
+1. Você pode continuar a depuração do `Test` colocando um ponto de interrupção dentro dele e avaliando a função novamente.  
    
-   O ponto de interrupção será atingido e você pode percorrer `Test`. Após a execução `Test`, o depurador será novamente no modo de design.
+   O ponto de interrupção será atingido e você pode percorrer `Test`. Após a execução do `Test`, o Depurador voltará ao modo Design.
 
 ##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Depuração de modo misto  
 
@@ -164,10 +163,10 @@ Você pode escrever um aplicativo de chamada para uma DLL de com em código gere
 Você também pode depurar uma DLL nativa de um projeto de chamada gerenciada. Para obter mais informações, consulte [como depurar código gerenciado e nativo](how-to-debug-managed-and-native-code.md). 
 
 ## <a name="see-also"></a>Consulte também  
- [Depurar código gerenciado](../debugger/debugging-managed-code.md)   
+ [Depurar o código gerenciado](../debugger/debugging-managed-code.md)   
  [Tipos de projeto do Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)   
- [C#, F#e tipos de projeto do Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Configurações do projeto para C# configurações de depuração](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Configurações do projeto para uma configuração de depuração do Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Tipos de projeto do C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Configurações do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
+ [Configurações do projeto para configurações de depuração do C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Definições do projeto para uma configuração de depuração do Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Segurança do depurador](../debugger/debugger-security.md)

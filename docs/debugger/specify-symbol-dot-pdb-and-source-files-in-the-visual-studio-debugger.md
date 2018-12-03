@@ -1,7 +1,7 @@
 ---
 title: Especifique o símbolo (. PDB) e arquivos de origem no depurador | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 04/05/2018
+ms.date: 10/08/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c289da63a8fbc8469734e905c29edca1149e04c4
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 35eb141850770a20b78020c57868a7fb2ff3bf90
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257375"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389170"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Especificar o símbolo (. PDB) e arquivos de origem no depurador do Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -139,7 +139,7 @@ Sobre o **ferramentas** > **opções** > **depuração** > **símbolos** página
   
 Você pode selecionar opções adicionais de símbolo na **ferramentas** > **opções** > **depuração** > **geral** (ou **Debug** > **opções** > **geral**):  
 
-- **Carregar exportações de DLL (somente nativo)**  
+- **Carregar exportações de dll (somente Nativas)**  
   
   Carrega o DLL exportar tabelas para C/C++. Para obter detalhes, consulte [DLL exportar tabelas](#use-dumpbin-exports). Informações de exportação de DLL de leitura envolve alguma sobrecarga, o carregamento de tabelas de exportação é desativado por padrão. Você também pode usar `dumpbin /exports` em uma linha de comando de compilação do C/C++.  
   
@@ -149,14 +149,14 @@ Você pode selecionar opções adicionais de símbolo na **ferramentas** > **op�
   
   ![Opções de &#47; depuração &#47; opções gerais de desmontagem](../debugger/media/dbg_options_general_disassembly_checkbox.png "opções &#47; depuração &#47; opções gerais de desmontagem")  
   <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a>
-- **Habilitar o suporte do servidor de origem**  
+- **Habilitar suporte a servidor de origem**  
   
   Usa o servidor de origem para ajudar a depurar um aplicativo quando não há nenhum código-fonte no computador local, ou o *. PDB* arquivo não coincide com o código-fonte. Servidor de origem recebe solicitações de arquivos e retorna os arquivos reais do controle de origem. Servidor de origem é executado por meio de uma DLL denominada *SRCSRV* para ler do aplicativo *. PDB* arquivo. O *. PDB* arquivo contém ponteiros para o repositório de código-fonte, bem como os comandos usados para recuperar o código-fonte do repositório. 
   
   Você pode limitar os comandos que *SRCSRV* pode executar a partir do aplicativo *. PDB* arquivo listando os comandos permitidos em um arquivo chamado *SRCSRV. ini*. Coloque o *SRCSRV. ini* arquivo na mesma pasta que *SRCSRV* e *devenv.exe*.  
   
   >[!IMPORTANT]
-  >Comandos arbitrários podem ser inseridos em um aplicativo *. PDB* de arquivos, portanto, certifique-se de colocar somente os comandos que você deseja executar em um *SRCSRV. ini* arquivo. Qualquer tentativa de executar um comando não está no *srcsvr* arquivo fará com que uma caixa de diálogo de confirmação aparecer. Para obter mais informações, consulte [aviso de segurança: depurador deve executar comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
+  >Comandos arbitrários podem ser inseridos em um aplicativo *. PDB* de arquivos, portanto, certifique-se de colocar somente os comandos que você deseja executar em um *SRCSRV. ini* arquivo. Qualquer tentativa de executar um comando que não esteja no arquivo *srcsvr.ini* fará com que uma caixa de diálogo de confirmação seja exibida. Para obter mais informações, consulte [aviso de segurança: depurador deve executar comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
   >
   >Nenhuma validação é feita em parâmetros do comando. Portanto, tenha cuidado com comandos confiáveis. Por exemplo, se você listou *cmd.exe* no seu *SRCSRV. ini*, um usuário mal-intencionado pode especificar parâmetros na *cmd.exe* seria mais perigoso.  
   
@@ -168,7 +168,7 @@ Você pode selecionar opções adicionais de símbolo na **ferramentas** > **op�
 
 Quando você compila um projeto do IDE do Visual Studio com o padrão **depurar** configuração de build, o C++ e os compiladores gerenciados criam os arquivos de símbolos apropriados para seu código. Você também pode definir opções do compilador no código. 
 
-### <a name="cc-options"></a>Opções de C/C++ 
+### <a name="cc-options"></a>Opções do C/C++ 
 
 - *VC\<x >. PDB* e  *\<projeto >. PDB* arquivos
   
@@ -176,13 +176,13 @@ Quando você compila um projeto do IDE do Visual Studio com o padrão **depurar*
   
   Se você criar seu aplicativo C/C++ usando um makefile e especificar **/ZI** ou **/Zi** sem usar **/Fd**, o compilador cria dois *. PDB*arquivos:  
   
-  - *VC\<x >. PDB*, onde  *\<x >* representa a versão do Visual C++, por exemplo *VC11.pdb* 
+  - *VC\<x>.pdb*, em que *\<x>* representa a versão do Visual C++, por exemplo, *VC11.pdb* 
     
-    O *VC\<x >. PDB* arquivo armazena todas as informações de depuração para os arquivos de objeto individuais e reside no mesmo diretório que o makefile do projeto. Cada vez que ele cria um arquivo de objeto, o compilador do C/C++ mescla informações de depuração em *VC\<x >. PDB*. Portanto, mesmo se todos os arquivos de origem incluam arquivos de cabeçalho, como  *\<Windows. h >*, os typedefs desses cabeçalhos são armazenados apenas uma vez, em vez de em todos os arquivos de objeto. As informações inseridas incluem informações de tipo, mas não incluem informações de símbolo, como definições de função.  
+    O *VC\<x >. PDB* arquivo armazena todas as informações de depuração para os arquivos de objeto individuais e reside no mesmo diretório que o makefile do projeto. Cada vez que ele cria um arquivo de objeto, o compilador do C/C++ mescla informações de depuração em *VC\<x >. PDB*. Portanto, mesmo se todos os arquivos de origem incluam arquivos de cabeçalho, como  *\<Windows. h >*, os typedefs desses cabeçalhos são armazenados apenas uma vez, em vez de em todos os arquivos de objeto. As informações inseridas incluem informações de tipo, mas não incluem informações de símbolo como definições de função.  
   
   - *\<projeto >. PDB* 
     
-    O  *\<projeto >. PDB* arquivo armazena todas as informações de depuração para o projeto *.exe* de arquivo e reside no *\debug* subdiretório. O  *\<projeto >. PDB* arquivo contém informações de depuração completas, incluindo protótipos de função, não apenas as informações de tipo encontradas no *VC\<x >. PDB*. 
+    O  *\<projeto >. PDB* arquivo armazena todas as informações de depuração para o projeto *.exe* de arquivo e reside no *\debug* subdiretório. O arquivo *\<projeto>.pdb* contém todas as informações de depuração, incluindo protótipos de função, não apenas as informações de tipo encontradas no *VC\<x>.pdb*. 
   
   Os dois os *VC\<x >. PDB* e  *\<projeto >. PDB* arquivos permitem atualizações incrementais. O vinculador também insere o caminho para o *. PDB* arquivos de *.exe* ou *. dll* arquivo que ele cria.  
   
@@ -190,11 +190,11 @@ Quando você compila um projeto do IDE do Visual Studio com o padrão **depurar*
   
   Use `dumpbin /exports` para ver os símbolos disponíveis na tabela de exportação de uma DLL. Informações simbólicas das tabelas de exportação DLL podem ser útil para trabalhar com mensagens do Windows, procedimentos do Windows (WindowProcs), COM objetos, empacotamento ou qualquer DLL, você não tem símbolos para. Os símbolos estão disponíveis para qualquer DLL de 32 bits do sistema. As chamadas são listadas na ordem de chamada, com a função atual (a mais profundamente aninhada) na parte superior. 
   
-  Lendo o `dumpbin /exports` de saída, você pode ver os nomes de função exato, incluindo caracteres não alfanuméricos. Ver os nomes de função exato é útil para definir um ponto de interrupção em uma função, porque os nomes de função podem ser truncados em outro lugar no depurador. Para obter mais informações, consulte [dumpbin/exportações](/cpp/build/reference/dash-exports).  
+  Lendo o `dumpbin /exports` de saída, você pode ver os nomes de função exato, incluindo caracteres não alfanuméricos. Ver os nomes de função exato é útil para definir um ponto de interrupção em uma função, porque os nomes de função podem ser truncados em outro lugar no depurador. Para obter mais informações, confira [dumpbin /exports](/cpp/build/reference/dash-exports).  
   
 ### <a name="net-framework-options"></a>Opções do .NET Framework 
   
-Compilar com o **/Debug** para criar um *. PDB* arquivo. Você pode criar aplicativos com **/Debug: full** ou **/Debug: pdbonly**. Compilando com **/Debug: full** gera código depurável. Compilando com **/Debug: pdbonly** gera *. PDB* os arquivos, mas não gera o `DebuggableAttribute` que informa o compilador JIT que as informações de depuração estão disponíveis. Use **/Debug: pdbonly** se você quiser gerar *. PDB* arquivos para uma versão de compilação que você não deseja ser depurável. Para obter mais informações, consulte [/debug (opções do compilador c#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) ou [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
+Compilar com o **/Debug** para criar um *. PDB* arquivo. Você pode criar aplicativos com **/Debug: full** ou **/Debug: pdbonly**. Compilando com **/Debug: full** gera código depurável. Compilando com **/Debug: pdbonly** gera *. PDB* os arquivos, mas não gera o `DebuggableAttribute` que informa o compilador JIT que as informações de depuração estão disponíveis. Use **/Debug: pdbonly** se você quiser gerar *. PDB* arquivos para uma versão de compilação que você não deseja ser depurável. Para obter mais informações, consulte [/Debug (C# opções do compilador)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) ou [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
   
 ### <a name="web-applications"></a>Aplicativos Web  
   
@@ -216,10 +216,10 @@ Durante a depuração, o **módulos** janela mostra os módulos de código que o
   
 |Opção|Descrição|  
 |------------|-----------------|  
-|**Carregar símbolos**|É exibida para os módulos com símbolos ignorados, não foi encontrados ou não carregados. Tenta carregar símbolos de locais especificados na **opções** > **depuração** > **símbolos** página. Se o arquivo de símbolo não é foi encontrado ou não carregado, inicia **Explorador de arquivos** para que você possa especificar um novo local de pesquisa.|  
-|**Informações de carregamento de símbolo**|Mostra o local de um arquivo de símbolo carregado ou os locais que foram pesquisados se o depurador não é possível localizar o arquivo.|  
-|**Configurações de símbolo**|Abre o **opções** > **depuração** > **símbolos** página, onde você pode editar e adicionar locais de símbolos.|  
-|**Sempre carregar automaticamente**|Adiciona o arquivo de símbolo selecionado à lista de arquivos que são carregados automaticamente pelo depurador.|  
+|**Carregar Símbolos**|É exibida para os módulos com símbolos ignorados, não foi encontrados ou não carregados. Tenta carregar símbolos de locais especificados na **opções** > **depuração** > **símbolos** página. Se o arquivo de símbolo não é foi encontrado ou não carregado, inicia **Explorador de arquivos** para que você possa especificar um novo local de pesquisa.|  
+|**Informações de Carregamento de Símbolos**|Mostra o local de um arquivo de símbolo carregado ou os locais que foram pesquisados se o depurador não é possível localizar o arquivo.|  
+|**Configurações de Símbolo**|Abre o **opções** > **depuração** > **símbolos** página, onde você pode editar e adicionar locais de símbolos.|  
+|**Sempre Carregar Automaticamente**|Adiciona o arquivo de símbolo selecionado à lista de arquivos que são carregados automaticamente pelo depurador.|  
 
 ### <a name="use-the-no-symbols-loadedno-source-loaded-pages"></a>Use as páginas nenhuma símbolos Loaded/No origem carregada
 
@@ -265,4 +265,4 @@ Você pode especificar os locais em que o depurador procura por arquivos de orig
 ## <a name="see-also"></a>Consulte também  
 [Entender os arquivos de símbolo e configurações de símbolo do Visual Studio](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-[Alterações no Visual Studio 2012 e 2013 de carregamento de símbolo remoto do .NET](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)
+[Alterações de carregamento de símbolo remoto do .NET no Visual Studio 2012 e 2013](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

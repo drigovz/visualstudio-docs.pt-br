@@ -1,5 +1,5 @@
 ---
-title: Criar um aplicativo de dados simples com o WPF e Entity Framework 6
+title: Criar um aplicativo de dados simples com o WPF e o Entity Framework 6
 ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,14 +11,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8909ef785bd721e5b07046329e4841cebc5ec24e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5993256b41a07c4861ef2def58dc14d7fd849313
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822066"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305605"
 ---
-# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Criar um aplicativo de dados simples com o WPF e Entity Framework 6
+# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Criar um aplicativo de dados simples com o WPF e o Entity Framework 6
 
 Este passo a passo mostra como criar um aplicativo básico "formulários sobre dados" no Visual Studio. O aplicativo usa o LocalDB do SQL Server, o banco de dados Northwind, Entity Framework 6 e do Windows Presentation Foundation. Ele mostra como fazer a associação de dados básica com um modo de exibição de detalhes mestre, e também tem um navegador de associação personalizado com botões para **mover próximo**, **mover anterior**, **mover para começando**, **Mover para o final**, **atualização** e **excluir**.
 
@@ -64,7 +64,7 @@ Este exemplo usa o SQL Server Express LocalDB e o banco de dados de exemplo Nort
 
    ![Entity Framework modelo novo Item de projeto](../data-tools/media/raddata-ef-new-project-item.png)
 
-2. Chamar o modelo `Northwind_model` e escolha **Okey**. O **Assistente de modelo de dados de entidade** é aberta. Escolher **EF Designer do banco de dados** e, em seguida, clique em **próxima**.
+2. Chamar o modelo `Northwind_model` e escolha **Okey**. O **Assistente do Modelo de Dados de Entidade** será aberto. Escolher **EF Designer do banco de dados** e, em seguida, clique em **próxima**.
 
    ![Modelo do EF do banco de dados](../data-tools/media/raddata-ef-model-from-database.png)
 

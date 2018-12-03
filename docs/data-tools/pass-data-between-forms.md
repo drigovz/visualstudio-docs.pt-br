@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 580ca6a9a384fff373a72e5449af2790a8c1e5b8
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: 4a0d248f59754d3f46e8fab0e0924c36a80b0d89
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750750"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305540"
 ---
 # <a name="pass-data-between-forms"></a>Passar dados entre formulários
 
@@ -39,9 +39,9 @@ As tarefas ilustradas neste passo a passo incluem:
 
 -   Criando e configurando um conjunto de dados com o [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).
 
--   Selecionando o controle a ser criado no formulário ao arrastar itens dos **fontes de dados** janela. Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+-   Selecionando o controle a ser criado no formulário ao arrastar itens da janela **Fontes de Dados**. Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Criando um controle associado a dados arrastando itens dos **fontes de dados** janela em um formulário.
+-   Criar controles associados a dados arrastando itens da janela **Fontes de Dados** para um formulário.
 
 -   Criar um segundo formulário com uma grade para exibir dados.
 
@@ -77,43 +77,43 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 4. Nomeie o projeto **PassingDataBetweenForms**e, em seguida, escolha **Okey**.
 
-     O **PassingDataBetweenForms** projeto é criado e adicionado ao **Gerenciador de soluções**.
+     O projeto **PassingDataBetweenForms** é criado e adicionado ao **Gerenciador de Soluções**.
 
 ## <a name="create-the-data-source"></a>Criar a fonte de dados
 
-1.  Sobre o **dados** menu, clique em **Show Data Sources**.
+1.  Para abrir o **fontes de dados** janela diante de **dados** menu, clique em **Mostrar fontes de dados**.
 
-2.  No **fontes de dados** janela, selecione **Add New Data Source** para iniciar o **configuração de fonte de dados** assistente.
+2.  Na janela **Fontes de Dados**, selecione **Adicionar Nova Fonte de Dados** para iniciar o assistente de **Configuração de Fonte de Dados**.
 
-3.  Selecione **banco de dados** sobre o **escolher um tipo de fonte de dados** página e, em seguida, clique em **próxima**.
+3.  Selecione **Banco de Dados** na página **Escolher um Tipo de Fonte de Dados** e, em seguida, clique em **Avançar**.
 
-4.  No **escolha um modelo de banco de dados** página, verifique **Dataset** é especificado e, em seguida, clique em **próxima**.
+4.  Na página **Escolha um Modelo de Banco de Dados**, verifique se o **Conjunto de dados** foi especificado e clique em **Avançar**.
 
-5.  Sobre o **escolha sua Conexão de dados** página, faça o seguinte:
+5.  Na página **Escolha a Conexão de Dados**, faça o seguinte:
 
     -   Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
-    -   Selecione **nova Conexão** para iniciar o **Adicionar/Modificar Conexão** caixa de diálogo.
+    -   Selecione **Nova Conexão** para inicializar a caixa de diálogo **Adicionar/Modificar Conexão**.
 
-6.  Se seu banco de dados exigir uma senha e se a opção para incluir dados confidenciais é ativada, selecione a opção e, em seguida, clique em **próxima**.
+6.  Se o banco de dados exigir uma senha e a opção para incluir dados confidenciais estiver habilitada, clique em **Avançar**.
 
 7.  Sobre o **salvar a cadeia de caracteres de conexão para o arquivo de configuração de aplicativo** , clique em **próxima**.
 
 8.  Sobre o **Choose your Database Objects** página, expanda o **tabelas** nó.
 
-9. Selecione o **clientes** e **pedidos** tabelas e clique **concluir**.
+9. Selecione as tabelas **Customers** e **Orders** e, em seguida, clique em **Finalizar**.
 
-     O **NorthwindDataSet** é adicionado ao seu projeto e o **clientes** e **pedidos** tabelas aparecem no **fontes de dados** janela.
+     O **NorthwindDataSet** é adicionado ao projeto e as tabelas **Customers** e **Orders** aparecem na janela **Fontes de Dados**.
 
 ## <a name="create-the-first-form-form1"></a>Criar o primeiro formulário (Form1)
 
-Você pode criar uma grade de associação de dados (um <xref:System.Windows.Forms.DataGridView> controle), arrastando o **clientes** nó a partir de **fontes de dados** janela para o formulário.
+Você pode criar uma grade de associação de dados (um controle <xref:System.Windows.Forms.DataGridView>), arrastando o nó **Clientes** da janela **Fontes de Dados** para o formulário.
 
 ### <a name="to-create-a-data-bound-grid-on-the-form"></a>Para criar uma grade de associação de dados no formulário
 
--   Arraste principal **clientes** nó a partir do **fontes de dados** window para **Form1**.
+-   Arraste o nó principal **Clientes** da janela **Fontes de Dados** para **Form1**.
 
-     Um <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramenta (<xref:System.Windows.Forms.BindingNavigator>) para navegação em registros são exibidos no **Form1**. Um [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes.
+     Um <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para navegação em registros são exibidos no **Form1**. Um [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> são exibidos na bandeja de componentes.
 
 ## <a name="create-the-second-form"></a>Criar o segundo formulário
 
@@ -121,29 +121,29 @@ Crie um segundo formulário para passar dados.
 
 1.  No menu **Projeto**, escolha **Adicionar Formulário do Windows**.
 
-2.  Deixe o nome padrão **Form2**e clique em **Add**.
+2.  Deixe o nome padrão **Form2** e clique em **Adicionar**.
 
-3.  Arraste principal **pedidos** nó a partir do **fontes de dados** window para **Form2**.
+3.  Arraste o nó principal **Pedidos** da janela **Fontes de Dados** para **Form2**.
 
-     Um <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramenta (<xref:System.Windows.Forms.BindingNavigator>) para navegação em registros são exibidos no **Form2**. Um [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes.
+     Um <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para navegação em registros são exibidos no **Form2**. Um [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> são exibidos na bandeja de componentes.
 
-4.  Excluir o **OrdersBindingNavigator** da bandeja de componentes.
+4.  Exclua o **OrdersBindingNavigator** da bandeja de componentes.
 
-     O **OrdersBindingNavigator** desaparece da **Form2**.
+     O **OrdersBindingNavigator** desaparece do **Form2**.
 
 ## <a name="add-a-tableadapter-query"></a>Adicionar uma consulta do TableAdapter
 
 Adicione uma consulta TableAdapter ao Form2 para carregar pedidos do cliente selecionado no Form1.
 
-1.  Clique duas vezes o **NorthwindDataSet** arquivo no **Gerenciador de soluções**.
+1.  Clique duas vezes no arquivo **NorthwindDataSet.xsd** no **Gerenciador de Soluções**.
 
-2.  Clique com botão direito do **OrdersTableAdapter**e selecione **Add Query**.
+2.  Clique com o botão direito do mouse no **OrdersTableAdapter** e selecione **Adicionar Consulta**.
 
-3.  Deixe a opção padrão **usar instruções SQL**e, em seguida, clique em **próxima**.
+3.  Deixe a opção padrão **Usar instruções SQL** e clique em **Avançar**.
 
-4.  Deixe a opção padrão **SELECT que retorna linhas**e, em seguida, clique em **próxima**.
+4.  Deixe a opção padrão **SELECT que retorna linhas** e clique em **Avançar**.
 
-5.  Adicionar uma cláusula WHERE à consulta, para retornar `Orders` baseia o `CustomerID`. A consulta deve ser semelhante ao seguinte:
+5.  Adicione uma cláusula WHERE à consulta para retornar `Orders` com base no `CustomerID`. A consulta deve ser semelhante ao seguinte:
 
     ```sql
     SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
@@ -158,26 +158,26 @@ Adicione uma consulta TableAdapter ao Form2 para carregar pedidos do cliente sel
 
 7.  Para o **preencha um nome de DataTableMethod**, tipo `FillByCustomerID`.
 
-8.  Desmarque a **retornar uma DataTable** opção e, em seguida, clique em **próxima**.
+8.  Desmarque a opção **Retornar uma DataTable** e clique em **Avançar**.
 
 9. Clique em **Finalizar**.
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Criar um método no Form2 para passar dados para
 
-1.  Clique com botão direito **Form2**e selecione **Exibir código** para abrir **Form2** no **Editor de códigos**.
+1.  Clique com o botão direito do mouse no **Form2** e selecione **Exibir Código** para abrir o **Form2** no **Editor de Códigos**.
 
-2.  Adicione o seguinte código ao **Form2** depois que o `Form2_Load` método:
+2.  Adicione o seguinte código ao **Form2** depois do método `Form2_Load`:
 
      [!code-vb[VbRaddataDisplaying#1](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_1.vb)]
      [!code-csharp[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Criar um método no Form1 para passar dados e exibir o Form2
 
-1.  Na **Form1**, clique com botão direito da grade de dados do cliente e, em seguida, clique em **propriedades**.
+1.  No **Form1**, clique com o botão direito do mouse na grade de dados do Cliente e clique em **Propriedades**.
 
 2.  Na janela **Propriedades**, clique em **Eventos**.
 
-3.  Clique duas vezes o **CellDoubleClick** eventos.
+3.  Clique duas vezes no evento **CellDoubleClick**.
 
      O Editor de Códigos é exibido.
 
@@ -190,7 +190,7 @@ Adicione uma consulta TableAdapter ao Form2 para carregar pedidos do cliente sel
 
 -   Pressione **F5** para executar o aplicativo.
 
--   Clique duas vezes em um registro de cliente no **Form1** para abrir **Form2** com pedidos do cliente.
+-   Clique duas vezes em um registro de cliente no **Form1** para abrir o **Form2** com pedidos do cliente.
 
 ## <a name="next-steps"></a>Próximas etapas
 

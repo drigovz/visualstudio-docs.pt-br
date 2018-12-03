@@ -1,7 +1,7 @@
 ---
 title: Depurar o código do usuário com apenas meu código | Microsoft Docs
 ms.custom: ''
-ms.date: 05/18/2018
+ms.date: 10/22/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 854ce90f18b5df7d3e25b4b0949d76202e4f4a04
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: 01e36c528b71bb49b29265890ca6c48863f01be9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050333"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389021"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Depurar somente código de usuário com apenas meu código 
 
@@ -23,7 +23,7 @@ ms.locfileid: "50050333"
 
 Apenas meu código funciona de maneira diferente em projetos do .NET Framework, C++ e JavaScript.
 
-##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Habilitar ou desabilitar apenas meu código  
+##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Habilitar ou desabilitar Apenas Meu Código  
 
 Para a maioria das linguagens de programação, apenas meu código está habilitado por padrão. 
 
@@ -56,7 +56,7 @@ No **pilha de chamadas** ou **tarefas** janela, apenas meu código recolhe o có
 
 Clicar duas vezes em uma linha de código externo expandido na **pilha de chamadas** janela realça a linha de código de chamada em verde no código-fonte. DLLs ou outros módulos não foi encontrada ou carregada, um símbolo ou origem não encontrado pode abrir a página.
 
-##  <a name="BKMK__NET_Framework_Just_My_Code"></a>Apenas meu código do .NET framework 
+##  <a name="BKMK__NET_Framework_Just_My_Code"></a>Apenas Meu Código do .NET Framework 
 
 Em projetos do .NET Framework, apenas meu código usa o símbolo (*. PDB*) arquivos e otimizações de programa para classificar o código de usuário e de não usuário. O depurador do .NET Framework considera otimizado binários e não carregado *. PDB* arquivos de código de não usuário.
   
@@ -81,7 +81,7 @@ Se ocorrer uma exceção sem tratamento no código de não usuário, o depurador
   
 Se as exceções de primeira chance são habilitadas para a exceção, a linha de código de usuário chamada é realçada em verde no código-fonte. O **pilha de chamadas** janela exibe um quadro anotado rotulado **[código externo]**.  
 
-##  <a name="BKMK_C___Just_My_Code"></a> Apenas meu código do C++  
+##  <a name="BKMK_C___Just_My_Code"></a> Apenas Meu Código do C++  
   
 No C++, permitindo que apenas meu código é o mesmo que usar o [/JMC (apenas meu código de depuração)](/cpp/build/reference/jmc) comutador de compilador.
 
@@ -117,7 +117,7 @@ Se o depurador atinge uma exceção, ele parará na exceção, se ele está no c
  Em projetos do C++, você pode especificar funções para percorrer listando-os como código de não usuário em  *\*. natstepfilter* arquivos.  
   
 - Para especificar o código de não usuário para todos os usuários locais do Visual Studio, adicione a *. natstepfilter* do arquivo para o *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* pasta.  
-- Para especificar o código de não usuário para um usuário individual, adicione a *. natstepfilter* do arquivo para o *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers* pasta.  
+- Para especificar código de não usuário para um usuário individual, adicione o arquivo *.natstepfilter* à pasta *%USERPROFILE%\Meus Documentos\Visual Studio 2017\Visualizers*.  
   
 Um *. natstepfilter* arquivo é um arquivo XML com esta sintaxe:  
   
@@ -148,8 +148,8 @@ Um *. natstepfilter* arquivo é um arquivo XML com esta sintaxe:
 
 Para projetos C++, você pode especificar os módulos, arquivos de origem e funções de **pilha de chamadas** janela trata como código de não usuário especificando-os na  *\*. natjmc* arquivos.  
   
--   Para especificar o código de não usuário para todos os usuários do computador do Visual Studio, adicione a *. natjmc* do arquivo para o *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* pasta.  
--   Para especificar o código de não usuário para um usuário individual, adicione a *. natjmc* do arquivo para o *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers* pasta.  
+-   Para especificar código de não usuário para todos os usuários do computador do Visual Studio, adicione o arquivo *.natjmc* à pasta *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*.  
+-   Para especificar código de não usuário para um usuário individual, adicione o arquivo *.natjmc* à pasta *%USERPROFILE%\Meus Documentos\Visual Studio 2017\Visualizers*.  
 
 Um *. natjmc* arquivo é um arquivo XML com esta sintaxe:  
   
@@ -177,14 +177,14 @@ Um *. natjmc* arquivo é um arquivo XML com esta sintaxe:
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|`Name`|Necessário. O caminho completo do módulo ou dos módulos. Você pode usar os caracteres curinga do Windows `?` (zero ou um caractere) e `*` (zero ou mais caracteres). Por exemplo,<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> informa o depurador para tratar todos os módulos no *\3rdParty\UtilLibs* em qualquer unidade como código externo.|  
+|`Name`|Necessário. O caminho completo do módulo ou dos módulos. Você pode usar os caracteres curinga do Windows `?` (zero ou um caractere) e `*` (zero ou mais caracteres). Por exemplo,<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> informa o depurador para tratar todos os módulos em *\3rdParty\UtilLibs* em qualquer unidade como código externo.|  
 |`Company`|Opcional. O nome da empresa que publica o módulo inserido no arquivo executável. Você pode usar esse atributo para resolver a ambiguidade dos módulos.|  
   
  **Atributos do elemento de arquivo**  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|`Name`|Necessário. O caminho completo do arquivo ou arquivos de origem a serem tratados como código externo. Você pode usar os caracteres curinga do Windows `?` e `*` ao especificar o caminho.|  
+|`Name`|Necessário. O caminho completo do arquivo ou arquivos de origem a serem tratados como código externo. Você pode usar os caracteres curinga do Windows `?` e `*` quando especificar o caminho.|  
   
  **Atributos do elemento de função**  
   
@@ -194,9 +194,9 @@ Um *. natjmc* arquivo é um arquivo XML com esta sintaxe:
 |`Module`|Opcional. O nome ou o caminho completo do módulo que contém a função. Você pode usar esse atributo para resolver a ambiguidade de funções com o mesmo nome.|  
 |`ExceptionImplementation`|Quando definido como `true`, a pilha de chamadas exibe a função que lançou a exceção em vez dessa função.|  
   
-##  <a name="BKMK_JavaScript_Just_My_Code"></a> Apenas meu código do JavaScript  
+##  <a name="BKMK_JavaScript_Just_My_Code"></a> Apenas Meu Código do JavaScript  
 
-<a name="BKMK_JS_User_and_non_user_code"></a> JavaScript Just My Code controla a exibição de pilha de revisão e chamada categorizando o código em uma destas classificações:  
+<a name="BKMK_JS_User_and_non_user_code"></a> O Apenas Meu Código do JavaScript controla a depuração e a exibição da pilha de chamadas categorizando o código em uma destas classificações:  
 
 |||  
 |-|-|  
@@ -226,7 +226,7 @@ Você pode alterar as classificações padrão e classificar arquivos específic
 
 - Se uma função é o código de não usuário, **Debug** > **intervir** (ou **F11**) tem o mesmo comportamento **depurar**  >  **Step Over** (ou **F10**).  
 - Se uma etapa começar em não-usuário (**LibraryCode** ou **UnrelatedCode**) código, depuração temporária se comportará como se apenas meu código não está habilitado. Quando você percorrer de volta até o código do usuário, apenas meu código passo a passo é habilitado novamente.  
-- Quando um usuário código etapa resulta em deixar o contexto de execução atual, o depurador para na próxima linha de código de usuário executada. Por exemplo, se um retorno de chamada é executado no **LibraryCode** código, o depurador continuará até que a próxima linha de código do usuário seja executada.
+- Quando um usuário código etapa resulta em deixar o contexto de execução atual, o depurador para na próxima linha de código de usuário executada. Por exemplo, se um retorno de chamada for executado em código **LibraryCode**, o depurador continuará até que a próxima linha de código de usuário seja executada.
 - **Depuração circular** (ou **Shift**+**F11**) interrompe na próxima linha do código do usuário. 
 
 Se não houver nenhum outro código de usuário, depuração continua até que ele termina, acessa outro ponto de interrupção ou gera um erro. 
@@ -242,7 +242,7 @@ Se ocorrer uma exceção sem tratamento no **UnrelatedCode**, e **MyCode** ou **
   
 Se exceções de primeira chance são habilitadas para a exceção e a exceção ocorre no **LibraryCode** ou **UnrelatedCode**:  
   
--   Se a exceção for tratada, o depurador não interromperá.  
+-   Se a exceção for tratada, o depurador não será interrompido.  
 -   Se a exceção não for tratada, o depurador será interrompido.  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> Personalizar apenas meu código do JavaScript  
@@ -279,7 +279,7 @@ Especificações nesse arquivo substituem as classificações padrão e o *mycod
   
  **Eval, Function e ScriptBlock**  
   
- O **Eval**, **função**, e **ScriptBlock** pares chave-valor determinar dinamicamente como código gerado é classificado:  
+ Os pares chave-valor **Eval**, **Function** e **ScriptBlock** determinam como o código gerado dinamicamente é classificado:  
   
 |||  
 |-|-|  
@@ -289,18 +289,18 @@ Especificações nesse arquivo substituem as classificações padrão e o *mycod
   
  Você pode alterar o valor para um destas palavras-chave:  
   
--   `MyCode`  classifica o script como **MyCode**.  
--   `Library`  classifica o script como **LibraryCode**.  
--   `Unrelated`  classifica o script como **UnrelatedCode**.  
+-   `MyCode` classifica o script como **MyCode**.  
+-   `Library` classifica o script como **LibraryCode**.  
+-   `Unrelated` classifica o script como **UnrelatedCode**.  
   
-  **MyCode, Libraries e não relacionados**  
+  **MyCode, Libraries e Unrelated**  
   
- O **MyCode**, **bibliotecas**, e **Unrelated** pares chave-valor especifique as URLs ou arquivos que você deseja incluir em uma classificação:  
+ Os pares chave-valor **MyCode**, **Libraries** e **Unrelated** especificam as URLs ou os arquivos que você deseja incluir em uma classificação:  
   
 |||  
 |-|-|  
 |**MyCode**|Uma matriz de URLs ou arquivos classificados como **MyCode**.|  
-|**Bibliotecas**|Uma matriz de URLs ou arquivos classificados como **LibraryCode**.|  
-|**Não relacionados**|Uma matriz de URLs ou arquivos classificados como **UnrelatedCode**.|  
+|**Libraries**|Uma matriz de URLs ou arquivos classificados como **LibraryCode**.|  
+|**Unrelated**|Uma matriz de URLs ou arquivos classificados como **UnrelatedCode**.|  
   
  A cadeia de caracteres de URL ou o arquivo pode ter um ou mais `*` caracteres, que correspondem a zero ou mais caracteres. `*` é o mesmo que a expressão regular `.*`.

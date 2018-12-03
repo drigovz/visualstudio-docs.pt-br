@@ -1,6 +1,6 @@
 ---
 title: Adicionar novas fontes de dados
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bbe808f1c43e0f4083f5ed1d04db347560a2630
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: fe32424632d06ed637b41dcd3d4b614afde369bd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666625"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304604"
 ---
 # <a name="add-new-data-sources"></a>Adicionar novas fontes de dados
 
-No contexto das ferramentas de dados do .NET no Visual Studio, o termo *fonte de dados* refere-se a objetos .NET que se conectar a um armazenamento de dados e expõem os dados para um aplicativo .NET. Os designers do Visual Studio podem consumir a saída da fonte de dados para gerar o código clichê que associa os dados a formas quando você arrasta e solta os objetos de banco de dados a partir de **fontes de dados** janela. Esse tipo de fonte de dados pode ser:
+No contexto das ferramentas de dados do .NET no Visual Studio, o termo *fonte de dados* refere-se aos objetos .NET que se conectam a um armazenamento de dados e disponibilizar os dados a um aplicativo .NET. Os designers do Visual Studio podem consumir a saída da fonte de dados para gerar o código clichê que associa os dados a formas quando você arrasta e solta os objetos de banco de dados a partir de **fontes de dados** janela. Esse tipo de fonte de dados pode ser:
 
 - Uma classe em um modelo do Entity Framework que está associado a algum tipo de banco de dados.
 
@@ -43,7 +43,16 @@ Você cria e edita fontes de dados usando o **Data Source Configuration Wizard**
 
 ![Assistente para Configuração da Fonte de Dados](../data-tools/media/data-source-configuration-wizard.png)
 
-Depois de criar uma fonte de dados, ele aparece na **fontes de dados** janela da ferramenta (**Shift**+**Alt**+**1!d**ou **modo de exibição** > **outros Windows** > **fonte de dados**). Você pode arrastar uma fonte de dados do **fontes de dados** window em uma superfície de design do formulário ou controle. Isso faz com que o código clichê a ser gerado que exibe os dados do armazenamento de dados. A ilustração a seguir mostra um conjunto de dados foi descartado em um formulário do Windows. Se você selecionar **F5** no aplicativo, os dados do banco de dados subjacente é exibida nos controles do formulário.
+## <a name="data-sources-window"></a>janela Fontes de Dados
+
+Depois de criar uma fonte de dados, ele aparece na **fontes de dados** janela da ferramenta.
+
+> [!TIP]
+> Para abrir o **fontes de dados** , verifique se seu projeto está aberto e, em seguida, pressione **Shift**+**Alt**+**1!d**ou escolha **modo de exibição** > **Other Windows** > **fontes de dados**.
+
+Você pode arrastar uma fonte de dados do **fontes de dados** window em uma superfície de design do formulário ou controle. Isso faz com que o código clichê a ser gerado que exibe os dados do armazenamento de dados.
+
+A ilustração a seguir mostra um conjunto de dados foi descartado em um formulário do Windows. Se você selecionar **F5** no aplicativo, os dados do banco de dados subjacente é exibida nos controles do formulário.
 
 ![Operação de arrastar do código-fonte de dados](../data-tools/media/raddata-data-source-drag-operation.png)
 
@@ -81,12 +90,12 @@ Você pode criar uma fonte de dados entre os seguintes tipos de serviços:
 
 - [WCF Data Services](/dotnet/framework/data/wcf/wcf-data-services-overview)
 
-- [Serviços do WCF](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [WCF services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 
 - Serviços da Web
 
     > [!NOTE]
-    > Os itens que aparecem na **fontes de dados** janela são dependentes dos dados que o serviço retorna. Alguns serviços não podem fornecer informações suficientes para que o **Data Source Configuration Wizard** criar objetos associáveis. Por exemplo, se o serviço retorna um conjunto de dados não tipado, nenhum item aparecerá na **fontes de dados** janela quando você concluir o assistente. Isso ocorre porque os conjuntos de dados não tipados não fornecem um esquema e, portanto, o assistente não tem informações suficientes para criar a fonte de dados.
+    > Os itens que aparecem na **fontes de dados** janela são dependentes dos dados que o serviço retorna. Alguns serviços podem não fornecer informações suficientes para o **Assistente de Configuração de Fonte de Dados** criar objetos associáveis. Por exemplo, se o serviço retorna um conjunto de dados não tipado, nenhum item aparecerá na **fontes de dados** janela quando você concluir o assistente. Isso ocorre porque os conjuntos de dados não tipados não fornecem um esquema e, portanto, o assistente não tem informações suficientes para criar a fonte de dados.
 
 ## <a name="data-source-for-an-object"></a>Fonte de dados para um objeto
 

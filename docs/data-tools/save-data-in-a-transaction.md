@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 97d18ef8323eeb0781eb103eb8baa0c3fab0d63c
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: f9b4fad02b6b0d8324e13d4465f4602c16ce85ba
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750820"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305046"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Passo a passo: salvar dados em uma transação
 
@@ -48,7 +48,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
        Após alguns instantes, a consulta termina a execução e o banco de dados Northwind é criado.
 
-## <a name="create-a-windows-forms-application"></a>Criar um aplicativo Windows Forms
+## <a name="create-a-windows-forms-application"></a>Criar um aplicativo do Windows Forms
 
 A primeira etapa é criar uma **aplicativo do Windows Forms**.
 
@@ -60,15 +60,15 @@ A primeira etapa é criar uma **aplicativo do Windows Forms**.
 
 4. Nomeie o projeto **SavingDataInATransactionWalkthrough**e, em seguida, escolha **Okey**.
 
-     O **SavingDataInATransactionWalkthrough** projeto é criado e adicionado ao **Gerenciador de soluções**.
+     O projeto **SavingDataInATransactionWalkthrough** é criado e adicionado ao **Gerenciador de Soluções**.
 
 ## <a name="create-a-database-data-source"></a>Criar uma fonte de dados do banco de dados
 
 Esta etapa usa a **Data Source Configuration Wizard** para criar uma fonte de dados com base nas `Customers` e `Orders` tabelas no banco de dados de exemplo Northwind.
 
-1.  Sobre o **dados** menu, selecione **Show Data Sources**.
+1.  Para abrir o **fontes de dados** janela diante de **dados** menu, selecione **Mostrar fontes de dados**.
 
-2.  No **fontes de dados** janela, selecione **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.
+2.  Na janela **Fontes de Dados**, selecione **Adicionar Nova Fonte de Dados** para iniciar o **Assistente de Configuração de Fonte de Dados**.
 
 3.  Sobre o **escolher um tipo de fonte de dados** tela, selecione **banco de dados**e, em seguida, selecione **próxima**.
 
@@ -78,7 +78,7 @@ Esta etapa usa a **Data Source Configuration Wizard** para criar uma fonte de da
 
          -ou-
 
-    -   Selecione **nova Conexão** para iniciar o **Adicionar/Modificar Conexão** caixa de diálogo caixa e criar uma conexão ao banco de dados Northwind.
+    -   Selecione **Nova Conexão** para inicializar a caixa de diálogo **Adicionar/Modificar Conexão** e criar uma conexão com o banco de dados Northwind.
 
 5.  Se seu banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, selecione **próxima**.
 
@@ -88,15 +88,15 @@ Esta etapa usa a **Data Source Configuration Wizard** para criar uma fonte de da
 
 8.  Selecione o `Customers` e `Orders` tabelas e, em seguida, selecione **concluir**.
 
-     O **NorthwindDataSet** é adicionado ao seu projeto e o `Customers` e `Orders` as tabelas aparecem no **fontes de dados** janela.
+     O **NorthwindDataSet** é adicionado ao projeto e as tabelas `Customers` e `Orders` aparecem na janela **Fontes de Dados**.
 
 ## <a name="add-controls-to-the-form"></a>Adicionar controles ao formulário
 
-Você pode criar os controles ligados a dados arrastando itens dos **fontes de dados** window para seu formulário.
+Você pode criar controles de associação de dados arrastando itens da janela **Fontes de Dados** para um formulário.
 
 1. No **fontes de dados** janela, expanda o **clientes** nó.
 
-2. Arraste principal **clientes** nó a partir do **fontes de dados** window para **Form1**.
+2. Arraste o nó principal **Clientes** da janela **Fontes de Dados** para **Form1**.
 
    Um controle <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para navegação em registros são exibidos no formulário. Um [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes.
 
@@ -114,7 +114,7 @@ As transações usam o namespace <xref:System.Transactions>. Uma referência do 
 
 2.  Selecione **System. Transactions** (sobre o **.NET** guia) e, em seguida, selecione **Okey**.
 
-     Uma referência a **System. Transactions** é adicionado ao projeto.
+     Uma referência a **System.Transactions** é adicionada ao projeto.
 
 ## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>Modifique o código no botão SaveItem do BindingNavigator
 
@@ -141,28 +141,28 @@ A ordem para reconciliar as alterações aos dados relacionados é a seguinte:
 
 ### <a name="to-delete-existing-orders"></a>Para excluir pedidos existentes
 
--   Adicione o seguinte `DeleteOrders` método **Form1**:
+-   Adicione o seguinte método `DeleteOrders` a **Form1**:
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>Para excluir clientes existentes
 
--   Adicione o seguinte `DeleteCustomers` método **Form1**:
+-   Adicione o seguinte método `DeleteCustomers` a **Form1**:
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>Para adicionar novos clientes
 
--   Adicione o seguinte `AddNewCustomers` método **Form1**:
+-   Adicione o seguinte método `AddNewCustomers` a **Form1**:
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>Para adicionar novos pedidos
 
--   Adicione o seguinte `AddNewOrders` método **Form1**:
+-   Adicione o seguinte método `AddNewOrders` a **Form1**:
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]
@@ -173,5 +173,5 @@ Pressione **F5** para executar o aplicativo.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: salvar dados usando uma transação](../data-tools/save-data-by-using-a-transaction.md)
+- [Como salvar dados usando uma transação](../data-tools/save-data-by-using-a-transaction.md)
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)

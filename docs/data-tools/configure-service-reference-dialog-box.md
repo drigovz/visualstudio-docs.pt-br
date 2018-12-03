@@ -16,19 +16,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: daa18ea2716972daa1429580ad0b2f5be5afe76c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f0cb2737356813a9b637d7f16e9d5cda704c022a
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854065"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389494"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Caixa de diálogo Configurar Referência de Serviço
 
 O **Configure Service Reference** caixa de diálogo permite que você configure o comportamento dos serviços do Windows Communication Foundation (WCF).
-
-> [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 Para acessar o **Configure Service Reference** caixa de diálogo, o botão direito do mouse, um serviço de referência na **Gerenciador de soluções** e escolha **configurar referência de serviço**. Você também pode acessar a caixa de diálogo clicando o **Advanced** botão na **Adicionar caixa de diálogo de referência de serviço**.
 
@@ -66,7 +63,7 @@ Para acessar o **Configure Service Reference** caixa de diálogo, o botão direi
 
  Determina se os métodos de serviço WCF é chamado de forma síncrona (o padrão) ou assíncrona.
 
- **Gerar operações baseadas em tarefa**
+ **Gerar operações baseadas em tarefas**
 
  Ao escrever código assíncrono, essa opção permite tirar proveito da tarefa paralela TPL (biblioteca) que foi introduzido com o .NET 4. Ver [(TPL) biblioteca de paralelismo de tarefas](/dotnet/standard/parallel-programming/task-parallel-library-tpl).
 
@@ -82,15 +79,15 @@ Para acessar o **Configure Service Reference** caixa de diálogo, o botão direi
 
  Especifica o tipo de coleção de dicionário para um cliente WCF. O tipo padrão é <xref:System.Collections.Generic.Dictionary%602>.
 
- **Reutilizar os tipos em assemblies referenciados**
+ **Usar novamente os tipos em assemblies consultados**
 
  Determina se um cliente WCF tenta reutilizar o que já existe em assemblies referenciados em vez de gerar novos tipos quando um serviço é adicionado ou atualizado. Por padrão, esta opção estiver marcada.
 
- **Reutilizar os tipos em todos os assemblies referenciados**
+ **Usar novamente os tipos em todos os assemblies consultados**
 
  Quando selecionada, todos os tipos na **lista de assemblies referenciados** são reutilizados se possível. Por padrão, essa opção é selecionada.
 
- **Reutilizar os tipos em assemblies referenciados especificados**
+ **Usar novamente os tipos em determinados assemblies consultados**
 
  Quando selecionada, somente nos tipos selecionados na **lista de assemblies referenciados** são reutilizados.
 
@@ -98,17 +95,17 @@ Para acessar o **Configure Service Reference** caixa de diálogo, o botão direi
 
  Contém uma lista de assemblies referenciados para o projeto ou o site. Quando você seleciona **reutilizar os tipos em assemblies referenciados especificados**, você pode selecionar ou limpar assemblies individuais.
 
- **Adicionar referência Web**
+ **Adicionar Referência Web**
 
  Exibe a **Add Web Reference** caixa de diálogo.
 
 > [!NOTE]
 > Essa opção deve ser usada somente para projetos que usam a versão 2.0 do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
-> 
+>
 > [!NOTE]
 > O **Add Web Reference** botão está disponível apenas quando o **Configure Service Reference** caixa de diálogo é exibida da **Adicionar caixa de diálogo de referência de serviço**.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: adicionar uma referência a um serviço web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Como adicionar uma referência a um serviço Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Serviços do Windows Communication Foundation e WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)
