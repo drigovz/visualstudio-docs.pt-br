@@ -1,7 +1,7 @@
 ---
 title: Usar pontos de interrupção no depurador do Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 02/07/2018
+ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -36,20 +36,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd522a5f5ff39814df3526843ae7d03578f92e86
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 15fa2172aab62d6b6f6ffcd21186b28f336ead4e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826837"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389131"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
 Pontos de interrupção são uma das técnicas de depuração mais importantes na caixa de ferramentas do seu desenvolvedor. Sempre que você deseja pausar a execução do depurador, você definir pontos de interrupção. Por exemplo, talvez você queira ver o estado das variáveis de código ou examinar a pilha de chamadas em um determinado ponto de interrupção. Se esta for sua primeira tentativa de depurar um código, leia [Como depurar para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes continuar neste artigo.
   
 ##  <a name="BKMK_Overview"></a> Defina pontos de interrupção no código-fonte  
- Você pode definir um ponto de interrupção em qualquer linha de código executável. Por exemplo, no código a seguir em C#, você pode definir um ponto de interrupção na declaração de variável, o `for` loop ou qualquer código dentro de `for` loop. Não é possível definir um ponto de interrupção, as declarações de namespace ou classe ou a assinatura do método.  
+ Você pode definir um ponto de interrupção em qualquer linha de código executável. Por exemplo, no seguinte C# código, você pode definir um ponto de interrupção na declaração de variável, o `for` loop ou qualquer código dentro de `for` loop. Não é possível definir um ponto de interrupção, as declarações de namespace ou classe ou a assinatura do método.  
 
  Para definir um ponto de interrupção no código-fonte, clique na margem da extrema esquerda ao lado de uma linha de código. Você também pode selecionar a linha e pressione **F9**, selecione **Debug** > **alternar ponto de interrupção**, ou clique com botão direito e selecione **depontodeinterrupção**  >  **Inserir ponto de interrupção**. O ponto de interrupção aparece como um ponto vermelho na margem esquerda.  
+
+No C# código, o ponto de interrupção e linhas de execução atual são realçadas automaticamente. Para código C++, você pode ativar realce de ponto de interrupção e linhas atuais, selecionando **ferramentas** (ou **Debug**) > **opções**  >   **Depurando** >  **realçar a linha de origem inteira para pontos de interrupção e a instrução atual (C++)**. 
   
  ![Defina um ponto de interrupção](../debugger/media/basicbreakpoint.png "básico ponto de interrupção")  
   
@@ -113,11 +115,11 @@ Para visualmente rastrear pontos de interrupção durante a execução de códig
    
    - Use o nome da função totalmente qualificado. 
      
-     Exemplo:  `Namespace1.ClassX.MethodA()`
+     Exemplo: `Namespace1.ClassX.MethodA()`
      
    - Adicione os tipos de parâmetro de uma função sobrecarregada. 
      
-     Exemplo:  `MethodA(int, string)`
+     Exemplo: `MethodA(int, string)`
      
    - Use o '!' símbolo para especificar o módulo.
      
@@ -163,8 +165,8 @@ Para visualmente rastrear pontos de interrupção durante a execução de códig
 3.  No **contagem de bytes** lista suspensa, selecione o número de bytes que você deseja que o depurador para observar. Por exemplo, se você selecionar **4**, o depurador examinará os quatro bytes começando em `&avar` e interromperá se qualquer um desses bytes mudar o valor.  
 
 Pontos de interrupção não funcionam nas seguintes condições:  
--   Um processo que está sendo depurado não grava o local da memória.  
--   O local da memória é compartilhado entre dois ou mais processos.  
+-   Um processo que não estiver sendo depurado grava na localização da memória.  
+-   A localização de memória é compartilhada entre dois ou mais processos.  
 -   O local da memória é atualizado no kernel. Por exemplo, se a memória é passada para o Windows de 32 bits `ReadFile` função, a memória será atualizada de modo kernel, portanto, o depurador não quebre na atualização.  
 
 >[!NOTE]
@@ -172,7 +174,7 @@ Pontos de interrupção não funcionam nas seguintes condições:
 >  
 >- Se você definir um ponto de interrupção de dados em uma variável local, o ponto de interrupção permanece habilitado quando a função terminar, mas o endereço de memória não é mais aplicável, portanto, o comportamento do ponto de interrupção é imprevisível. Se você definir um ponto de interrupção de dados em uma variável local, você deve excluir ou desabilitar o ponto de interrupção antes do fim da função.  
 
-##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Gerenciar pontos de interrupção na janela pontos de interrupção 
+##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Gerenciar pontos de interrupção na janela de Pontos de Interrupção 
 
  Você pode usar o **pontos de interrupção** janela para ver e gerenciar todos os pontos de interrupção em sua solução. Esse local centralizado é especialmente útil em uma solução grande ou para cenários complexos de depuração em que os pontos de interrupção são essenciais. 
 
@@ -199,7 +201,7 @@ Você pode usar rótulos para classificar e filtrar a lista de pontos de interru
 - Para importar os pontos de interrupção, na **pontos de interrupção** janela, selecione a **importar pontos de interrupção de um arquivo** ícone, navegue até o local do arquivo XML e selecione **abrir**. 
 
 ##  <a name="breakpoint-conditions"></a>Condições de ponto de interrupção  
- Você pode controlar quando e onde um ponto de interrupção é executada, definindo condições. A condição pode ser qualquer expressão válida que reconhece o depurador. Para obter mais informações sobre expressões válidas, consulte [expressões no depurador](../debugger/expressions-in-the-debugger.md).  
+ Você pode controlar quando e onde um ponto de interrupção é executada, definindo condições. A condição pode ser qualquer expressão válida que reconhece o depurador. Para obter mais informações sobre expressões válidas, confira [Expressões no depurador](../debugger/expressions-in-the-debugger.md).  
 
 **Para definir uma condição de ponto de interrupção:**
 
@@ -216,7 +218,7 @@ Você pode usar rótulos para classificar e filtrar a lista de pontos de interru
 Pontos de interrupção com o conjunto de condições são exibidos com um **+** símbolo no código-fonte e **pontos de interrupção** windows. 
 
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
-### <a name="conditional-expression"></a>Expressão condicional
+### <a name="conditional-expression"></a>Expressão Condicional
 
 Quando você seleciona **expressão condicional**, você pode escolher entre duas condições: **vale** ou **quando alterado**. Escolher **vale** para interromper quando a expressão for satisfeita, ou **quando alterado** para interromper quando o valor da expressão for alterado.  
   
@@ -248,7 +250,7 @@ Quando você seleciona **expressão condicional**, você pode escolher entre dua
    
    Você deve ver uma **$** além de um número no **locais** janela. Isso é a ID de objeto.  
    
-3. Adicionar um novo ponto de interrupção no ponto em que você deseja investigar; Por exemplo, quando o objeto deve ser adicionado à coleção. O ponto de interrupção com o botão direito e selecione **condições**.  
+3. Adicionar um novo ponto de interrupção no ponto em que você deseja investigar; Por exemplo, quando o objeto deve ser adicionado à coleção. Clique com o botão direito do mouse no ponto de interrupção e selecione **Condições**.  
    
 4. Use a ID de objeto na **expressão condicional** campo. Por exemplo, se a variável `item` é o objeto a ser adicionado à coleção, selecione **for verdadeira** e digite **item = = $\<n >**, onde \<n > é o número de ID de objeto .  
    
@@ -280,13 +282,13 @@ Sob **condições** na **configurações de ponto de interrupção** janela, sel
 Coloque os valores de cadeia de caracteres entre aspas duplas. Você pode combinar cláusulas usando `&` (AND), `||` (OR), `!` (NOT) e parênteses.  
   
 ##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Ações de ponto de interrupção e Tracepoints  
- Um *tracepoint* é um ponto de interrupção que imprime uma mensagem para o **saída** janela. Um tracepoint pode funcionar como uma declaração de rastreamento temporária na linguagem de programação.  
+ Um *tracepoint* é um ponto de interrupção que imprime uma mensagem na janela de **Saída**. Um tracepoint pode funcionar como uma declaração de rastreamento temporária na linguagem de programação.  
   
 **Para definir um tracepoint:**
 
 1. Um ponto de interrupção com o botão direito e selecione **ações**. Ou, nos **configurações de ponto de interrupção** janela, passe o mouse sobre o ponto de interrupção, selecione o **configurações** ícone e, em seguida, selecione **ações**.  
    
-1. Insira uma mensagem na **registrar uma mensagem de janela de saída** campo. A mensagem pode incluir cadeias de caracteres de texto genérico, valores de variáveis ou expressões incluídas em especificadores de formato e entre chaves ([c#](../debugger/format-specifiers-in-csharp.md) e [C++](../debugger/format-specifiers-in-cpp.md)) para obter os valores.
+1. Insira uma mensagem na **registrar uma mensagem de janela de saída** campo. A mensagem pode incluir cadeias de caracteres de texto genérico, valores de variáveis ou expressões incluídas em especificadores de formato e entre chaves ([ C# ](../debugger/format-specifiers-in-csharp.md) e [C++](../debugger/format-specifiers-in-cpp.md)) para obter os valores.
    
    Você também pode usar as seguintes palavras-chave especial na mensagem:  
    
@@ -305,7 +307,7 @@ Coloque os valores de cadeia de caracteres entre aspas duplas. Você pode combin
 Tracepoints são exibidos como losangos vermelhos na margem esquerda do código-fonte e **pontos de interrupção** windows. 
   
 ## <a name="see-also"></a>Consulte também  
- [O que está sendo depurado?](../debugger/what-is-debugging.md)  
+ [O que é depuração?](../debugger/what-is-debugging.md)  
  [Gravar melhor C# o código usando o Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
  [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)  
  [Solucionar problemas de pontos de interrupção no depurador do Visual Studio](../debugger/troubleshooting-breakpoints.md)  

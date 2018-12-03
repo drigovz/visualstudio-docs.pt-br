@@ -1,7 +1,7 @@
 ---
 title: Inspecionar variáveis nas janelas Autos e locais | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 04/17/2018
+ms.date: 10/18/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b196d993e7091fd9d4b09fe3c228346e7421911e
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 37843e6f84bf16efee4d149ed08a7ecb525d7574
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257206"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388511"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecionar variáveis nas janelas Autos e locais
 
@@ -69,7 +69,7 @@ Você pode usar o **local de depuração** barra de ferramentas para selecionar 
 
 Para habilitar o **local de depuração** barra de ferramentas, clique em uma parte vazia da área da barra de ferramentas e selecione **local de depuração** da lista suspensa ou selecione **exibição**  >   **Barras de ferramentas** > **local de depuração**.
 
-Defina um ponto de interrupção e iniciar a depuração. Quando o ponto de interrupção é atingido, as pausas de execução e você pode ver o local na **local de depuração** barra de ferramentas.
+Definir um ponto de interrupção e iniciar a depuração. Quando o ponto de interrupção é atingido, as pausas de execução e você pode ver o local na **local de depuração** barra de ferramentas.
 
 ![Barra de ferramentas local de depuração](../debugger/media/debuglocationtoolbar.png "barra de ferramentas Depurar local")
 
@@ -152,6 +152,6 @@ Para ver os valores de retorno de `sumVars()` e `subtractVars()` chamadas de mé
   ![Valor de retorno de Autos C# ](../debugger/media/autosreturnvaluecsharp2.png "Autos retornam valorC#")  
   
 ## <a name="see-also"></a>Consulte também  
- [O que está sendo depurado?](../debugger/what-is-debugging.md)  
+ [O que é depuração?](../debugger/what-is-debugging.md)  
  [Gravar melhor C# o código usando o Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
  [Introdução à depuração](../debugger/debugger-feature-tour.md) [janelas do depurador](../debugger/debugger-windows.md)

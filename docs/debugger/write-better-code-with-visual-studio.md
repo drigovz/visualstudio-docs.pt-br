@@ -2,7 +2,7 @@
 title: Permitir que você escreve Ajuda do Visual Studio C# código com menos bugs
 description: Compreender como escrever códigos melhores com menos bugs
 ms.custom: debug-experiments
-ms.date: 10/30/2018
+ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
-ms.translationtype: MT
+ms.openlocfilehash: 2c16cfdc8d554ce9bf556ea707f977989e1dab72
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948953"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389371"
 ---
-# <a name="write-better-c-code-using-visual-studio"></a>Gravar melhor C# o código usando o Visual Studio
+# <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Corrigir bugs, escrevendo melhor C# o código usando o Visual Studio
 
 Depurar o código pode ser demorado – e, às vezes, frustrante – tarefa. Levará tempo para aprender a depurar, com eficácia. Um IDE avançado como o Visual Studio pode facilitar muito o seu trabalho. Um IDE pode ajudar você a depurar seu código mais rapidamente e não apenas isso, mas ele também pode ajudar você escreve códigos melhores com menos erros. Nosso objetivo neste artigo é fornecer uma visão holística do processo de depuração, para que você saiba quando usar o analisador de código, quando uso o depurador e quando usar outras ferramentas.
 
@@ -42,7 +42,7 @@ Se você preferir, você pode criar um aplicativo de console do .NET Framework o
 Para criar o aplicativo, abra o Visual Studio e escolha **arquivo > Novo projeto**. Sob **Visual C#** , escolha **área de trabalho do Windows** ou **.NET Core**e, em seguida, no painel central, escolha uma **aplicativo de Console**. Digite um nome como **Console_Parse_JSON** e clique em **Okey**. O Visual Studio cria o projeto. Cole a [código de exemplo](#sample-code) para o projeto *Program.cs* arquivo.
 
 > [!NOTE]
-> Se o modelo de projeto do **Aplicativo de Console** não for exibido, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha o **desenvolvimento de área de trabalho do .NET** ou **desenvolvimento de plataforma cruzada do .NET Core** carga de trabalho, em seguida, escolha **modificar**.
+> Se o modelo de projeto do **Aplicativo de Console** não for exibido, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de área de trabalho do .NET** (ou a carga de trabalho **Desenvolvimento multiplataforma do .NET Core**) e escolha **Modificar**.
 
 ## <a name="find-the-red-and-green-squiggles"></a>Localize as linhas onduladas vermelhas e verdes!
 
@@ -81,7 +81,7 @@ Para corrigir esse erro, altere o `points` membro o `User` classe desta:
 internal string points;
 ```
 
-Para isso:
+para isto:
 
 ```csharp
 [DataMember]
@@ -113,17 +113,17 @@ O Rabisco verde desaparece.
 
 Quando tiver corrigido os rabiscos vermelhos e resolvido – ou pelo menos investigado – o todas as linhas onduladas verdes, você está pronto para iniciar o depurador e executar o aplicativo.
 
-Pressione **F5** (**Depurar > Iniciar depuração**) ou o **iniciar depuração** botão ![iniciar depuração](../debugger/media/dbg-tour-start-debugging.png "iniciar depuração ") na barra de ferramentas Depurar.
+Pressione **F5** (**Depurar > Iniciar Depuração**) ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na barra de ferramentas Depurar.
 
 Neste ponto, o aplicativo de exemplo gera um `SerializationException` exceção (um erro de tempo de execução). Ou seja, o aplicativo restringe nos dados que ele está tentando serializar. Como você iniciou o aplicativo no modo de depuração (o depurador é anexado), o auxiliar de exceção do depurador leva você diretamente para o código que lançou a exceção e fornece a você uma mensagem de erro úteis.
 
 ![Ocorre uma SerializationException](../debugger/media/write-better-code-serialization-exception.png)
 
-A mensagem de erro instrui você que o valor `4o` não pode ser analisado como um número inteiro. Neste exemplo, você sabe os dados são inválidos: `4o` deve ser `40`. No entanto, se você não estiver no controle dos dados em um cenário real (digamos que você estiver obtendo-lo de um serviço da web), o que fazer sobre isso? Como corrigir isso?
+A mensagem de erro instrui você que o valor `4o` não pode ser analisado como um número inteiro. Neste exemplo, você sabe os dados são inválidos: `4o` deve ser `40`. No entanto, se você não estiver no controle dos dados em um cenário real (digamos que você estiver obtendo-lo de um serviço da web), o que fazer sobre isso? Como consertar isso?
 
 Quando você atinge uma exceção, você precisa fazer algumas perguntas (e responder uma):
 
-* É apenas um bug que você pode corrigir a essa exceção? Ou,
+* É apenas um bug que você pode corrigir a essa exceção? Ou
 
 * Essa exceção é algo que os usuários podem encontrar?
 

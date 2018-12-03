@@ -23,18 +23,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 56b85f96815fca34330f57f6b653c497f21a835b
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: 52225ba4801fcee92b3f68fd6ec1cf7cc6c63086
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750789"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305709"
 ---
 # <a name="hierarchical-update"></a>Atualização hierárquica
 
 *Atualização hierárquica* refere-se ao processo de salvar dados atualizados (de um conjunto de dados com duas ou mais tabelas relacionadas) para um banco de dados, mantendo as regras de integridade referencial. *A integridade referencial* refere-se às regras de consistência fornecido pelas restrições em um banco de dados que controlam o comportamento de inserção, atualização e exclusão de registros relacionados. Por exemplo, é a integridade referencial que impõe a criação de um registro de cliente antes de permitir que os pedidos a ser criado para esse cliente.  Para obter mais informações sobre relacionamentos em conjuntos de dados, consulte [relacionamentos em conjuntos de dados](../data-tools/relationships-in-datasets.md).
 
-O recurso de atualização hierárquica usa um `TableAdapterManager` para gerenciar o `TableAdapter`s em um dataset tipado. O `TableAdapterManager` componente é uma classe gerada pelo Visual Studio, portanto, não é parte do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Quando você arrasta uma tabela da janela fontes de dados a um formulário do Windows ou a página do WPF, o Visual Studio adiciona uma variável do tipo TableAdapterManager ao formulário ou página e vê-lo no designer na bandeja de componentes. Para obter informações detalhadas sobre o `TableAdapterManager` classe, consulte a seção de referência do TableAdapterManager [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+O recurso de atualização hierárquica usa um `TableAdapterManager` para gerenciar o `TableAdapter`s em um dataset tipado. O `TableAdapterManager` componente é uma classe gerada pelo Visual Studio, portanto, não é parte do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Quando você arrasta uma tabela das **fontes de dados** janela para uma página de formulário do Windows ou do WPF, Visual Studio adiciona uma variável do tipo TableAdapterManager para o formulário ou página e vê-lo no designer na bandeja de componentes. Para obter informações detalhadas sobre o `TableAdapterManager` classe, consulte a seção de referência do TableAdapterManager [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
 Por padrão, um conjunto de dados trata tabelas relacionadas como "apenas relações" o que significa que ele não impõe restrições de chave estrangeira. Você pode modificar essa configuração em tempo de design usando o **Dataset Designer**. Selecione a linha de relação entre duas tabelas para abrir o **relação** caixa de diálogo. As alterações feitas aqui determinam como o `TableAdapterManager` se comporta quando ele envia as alterações nas tabelas relacionadas no banco de dados.
 
@@ -65,7 +65,7 @@ Definindo a ordem para executar atualizações define a ordem do indivíduo inse
 > [!NOTE]
 > É importante entender que a ordem de atualização é totalmente inclusiva. Ou seja, quando as atualizações são executadas, inserções e exclusões são executadas para todas as tabelas no conjunto de dados.
 
-Para definir a `UpdateOrder` propriedade, depois de arrastar itens da [janela fontes de dados](add-new-data-sources.md) para um formulário, selecione o `TableAdapterManager` na bandeja de componentes e em seguida, defina a `UpdateOrder` propriedade no **propriedades** janela.
+Para definir a `UpdateOrder` propriedade, depois de arrastar itens da [janela fontes de dados](add-new-data-sources.md#data-sources-window) para um formulário, selecione o `TableAdapterManager` na bandeja de componentes e em seguida, defina a `UpdateOrder` propriedade no **propriedades** janela.
 
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>Criar uma cópia de backup de um conjunto de dados antes de executar uma atualização hierárquica
 
@@ -80,18 +80,18 @@ No entanto, às vezes, você talvez queira restaurar o conjunto de dados da cóp
 
 Salve as alterações das tabelas relacionadas de dados no conjunto de dados para o banco de dados chamando o método `TableAdapterManager.UpdateAll` e passando no nome do conjunto de dados que contém as tabelas relacionadas. Por exemplo, execute o método `TableAdapterManager.UpdateAll(NorthwindDataset)` para enviar atualizações de todas as tabelas no NorthwindDataset para o banco de dados back-end.
 
-Depois que você solta os itens da **fontes de dados** , janela de código é adicionado automaticamente para o `Form_Load` evento para preencher cada tabela (o `TableAdapter.Fill` métodos). Código também é adicionado para o **salvar** eventos de clique de botão o <xref:System.Windows.Forms.BindingNavigator> para salvar dados do conjunto de dados no banco de dados (o `TableAdapterManager.UpdateAll` método).
+Depois de soltar os itens da janela **Fontes de Dados**, o código é automaticamente adicionado ao evento `Form_Load` para preencher cada tabela (os métodos `TableAdapter.Fill`). O código também é adicionado ao evento de clique do botão **Salvar** do <xref:System.Windows.Forms.BindingNavigator> para salvar os dados do conjunto de dados de volta ao banco de dados (o método `TableAdapterManager.UpdateAll`).
 
-O código salvar gerado também contém uma linha de código que chama o método `CustomersBindingSource.EndEdit`. Mais especificamente, ele chama o <xref:System.Windows.Forms.BindingSource.EndEdit%2A> método do primeiro <xref:System.Windows.Forms.BindingSource>que é adicionado ao formulário. Em outras palavras, esse código é gerado apenas para a primeira tabela que é arrastada do **fontes de dados** janela para o formulário. A chamada <xref:System.Windows.Forms.BindingSource.EndEdit%2A> confirma as alterações que estão em processo em qualquer controle de associação de dados sendo editado no momento. Portanto, se um controle associado a dados ainda tem foco e você clicar o **salve** botão, todas as edições pendentes nesse controle serão confirmadas antes da gravação real (o `TableAdapterManager.UpdateAll` método).
+O código salvar gerado também contém uma linha de código que chama o método `CustomersBindingSource.EndEdit`. Mais especificamente, ele chama o <xref:System.Windows.Forms.BindingSource.EndEdit%2A> método do primeiro <xref:System.Windows.Forms.BindingSource>que é adicionado ao formulário. Em outras palavras, esse código é gerado apenas para a primeira tabela que é arrastada do **fontes de dados** janela para o formulário. A chamada <xref:System.Windows.Forms.BindingSource.EndEdit%2A> confirma as alterações que estão em processo em qualquer controle de associação de dados sendo editado no momento. Portanto, se um controle associado a dados ainda estiver em foco e você clicar no botão **Salvar**, todas as edições pendentes nesse controle serão confirmadas antes da gravação real (o método `TableAdapterManager.UpdateAll`).
 
 > [!NOTE]
 > O **Dataset Designer** apenas adiciona o `BindingSource.EndEdit` código para a primeira tabela que é arrastada para o formulário. Portanto, é necessário adicionar uma linha de código para chamar o método `BindingSource.EndEdit` para cada tabela relacionada no formulário. Para este passo a passo, isso significa que você precisa adicionar uma chamada ao método `OrdersBindingSource.EndEdit`.
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Para atualizar o código para confirmar as alterações às tabelas relacionadas antes de salvar
 
-1.  Clique duas vezes o **salve** botão a <xref:System.Windows.Forms.BindingNavigator> para abrir **Form1** no Editor de códigos.
+1.  Clique duas vezes no botão **Salvar** no <xref:System.Windows.Forms.BindingNavigator> para abrir **Form1** no Editor de Códigos.
 
-2.  Adicione uma linha de código para chamar o método `OrdersBindingSource.EndEdit` após a linha que chama o método `CustomersBindingSource.EndEdit`. O código a **salvar** clique de botão evento deve ser semelhante à seguinte:
+2.  Adicione uma linha de código para chamar o método `OrdersBindingSource.EndEdit` após a linha que chama o método `CustomersBindingSource.EndEdit`. O código no evento de clique do botão **Salvar** deve ser semelhante ao seguinte:
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]

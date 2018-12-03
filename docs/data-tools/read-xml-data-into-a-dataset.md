@@ -22,19 +22,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 160d008425cc1c82fb8be26e7a6be9b3be82e999
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1e43d118a5fcfe00a8eb6eaa7f34a17ff1f6a4be
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908414"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389209"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Ler dados XML em um conjunto de dados
 
 O ADO.NET fornece métodos simples para trabalhar com dados XML. Neste passo a passo, você deve criar um aplicativo do Windows que carrega dados XML em um conjunto de dados. O conjunto de dados é exibido em um <xref:System.Windows.Forms.DataGridView> controle. Por fim, um esquema XML com base no conteúdo do arquivo XML é exibido em uma caixa de texto.
-
-> [!NOTE]
-> As caixas de diálogo e comandos de menu que você vê podem diferir dos descritos na Ajuda, dependendo de suas configurações ativas ou a edição que você está usando. Para alterar suas configurações, nos **ferramentas** menu, selecione **Import and Export Settings**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-new-project"></a>Criar um novo projeto
 
@@ -54,7 +51,7 @@ Nesta etapa, você cria um projeto do Visual Basic ou Visual c#.
 
 Porque este passo a passo se concentra na leitura de dados XML em um conjunto de dados, o conteúdo de um arquivo XML é fornecido.
 
-1. Sobre o **Project** menu, selecione **Adicionar Novo Item**.
+1. No menu **Projeto**, selecione **Adicionar Novo Item**.
 
 2. Selecione **arquivo XML**, nomeie o arquivo **Authors**e, em seguida, selecione **adicionar**.
 
@@ -150,7 +147,7 @@ A interface do usuário para esse aplicativo consiste no seguinte:
 
     -   Dois <xref:System.Windows.Forms.Button> controles
 
-3.  Defina as seguintes propriedades:
+3.  Defina as propriedades a seguir:
 
     |Controle|Propriedade|Configuração|
     |-------------|--------------|-------------|
