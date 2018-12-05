@@ -15,16 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 95aa0b7545ab7f326779b24475c8f7593ede27a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dba28aea3a4859c9767925a0ac3c7b2ec8e75275
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879826"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894502"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Especificar conjuntos de contadores e regras de limite para computadores em um teste de carga
 
 Os testes de carga oferecem conjuntos de contadores nomeados úteis para quando você analisar dados de contadores de desempenho. Conjuntos do contador são organizados pela tecnologia e incluem Application, ASP.NET, .NET Application, IIS e SQL. Quando você cria um teste de carga com o **Novo Assistente de Teste de Carga**, um conjunto inicial de contadores é adicionado. Esses oferecem a você uma seleção de conjuntos de contadores importantes e predefinidos para o seu teste de carga. Você gerencia os contadores no **Editor de Teste de Carga**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Se os testes de carga forem distribuídos por computadores remotos, os contadores de agente e controlador serão mapeados para os conjuntos de contadores de agente e controlador. Para obter mais informações sobre como usar computadores remotos no teste de carga, consulte [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md).
@@ -42,7 +44,7 @@ Por padrão, os contadores de desempenho são coletados no controlador e nos age
 |**Gerenciar conjuntos de contadores para o teste de carga:** depois de criar o teste de carga, você pode editar o conjunto de contadores definido no Editor de Teste de Carga. Gerenciar conjuntos de contadores envolve escolher o conjunto de computadores dos quais você deseja coletar dados de desempenho e atribuir um conjunto de contadores para coletar de cada computador individual. Você gerencia os contadores no Editor de testes de carga.|-   [Como gerenciar conjuntos de contadores](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Adicionar conjuntos de contadores ao teste de carga:** quando você cria um teste de carga com o **Novo Assistente de Teste de Carga**, um conjunto inicial de contadores é adicionado. Isso oferece um conjunto de contadores predefinidos para seu teste de carga. Depois de criar um teste de carga, você pode adicionar novos contadores aos conjuntos de contadores existentes usando o Editor de testes de carga.|-   [Como adicionar contadores a conjuntos de contadores](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Como adicionar conjuntos de contadores personalizados](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**Especificar uma regra de limite usando contadores para o teste de carga:** uma regra de limite é uma regra que é definida em um contador de desempenho individual para monitorar o uso de recursos do sistema durante um teste de carga. As definições de conjunto de contadores contêm regras de limite predefinidas para muitos contadores de desempenho importantes. As regras de limite nos testes de carga comparam um valor de contador de desempenho ou com um valor constante, ou outro valor de contador de desempenho.|-   [Como adicionar uma regra de limite](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
-|**Atribuir nomes amigáveis aos computadores para os quais conjuntos de contadores são mapeados:** você pode adicionar marcas do computador que permitem aplicar um nome com facilidade reconhecido a um computador. As marcas são exibidas no nó **Mapeamentos de conjuntos de contadores** da árvore no Editor de Teste de Carga. Mais importante, as marcas são exibidas em relatórios do Excel que ajudam os participantes a identificar que função o computador tem no teste de carga, por exemplo, "Web Server1 em lab2" ou "SQL Server2 no escritório Phoenix".<br /><br /> Para saber mais, confira [Relatar resultados do teste de carga para comparações de testes ou análise de tendências](../test/compare-load-test-results.md).|-   [Como adicionar marcas de computador a mapeamentos do conjunto de contadores](../test/how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor.md)|
+|**Atribuir nomes amigáveis aos computadores para os quais conjuntos de contadores são mapeados:** você pode adicionar marcas do computador que permitem aplicar um nome com facilidade reconhecido a um computador. As marcas são exibidas no nó **Mapeamentos de conjuntos de contadores** da árvore no Editor de Teste de Carga. Mais importante, as marcas são exibidas em relatórios do Excel que ajudam os participantes a identificar que função o computador tem no teste de carga, por exemplo, "Web Server1 em lab2" ou "SQL Server2 no escritório Phoenix".<br /><br /> Para saber mais, confira [Relatar resultados do teste de carga para comparações de testes ou análise de tendências](../test/compare-load-test-results.md).||
 
 ## <a name="use-counter-sets"></a>Usar conjuntos de contadores
 

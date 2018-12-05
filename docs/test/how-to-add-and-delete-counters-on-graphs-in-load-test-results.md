@@ -13,24 +13,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b43cc3acbbff70124685229e33362cfd9b30561
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 21fa28e9ff149bcf117e3bde5d553a2cf641c04a
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908790"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896517"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Como adicionar e excluir contadores em gráficos em resultados de teste de carga
 
 Você pode usar o painel **Contadores** para adicionar contadores de desempenho a um grafo.
 
- ![Contador adicionado ao grafo](../test/media/ltest_selectcounter.png)
+![Contador adicionado ao grafo](../test/media/ltest_selectcounter.png)
 
- **Considerações sobre o intervalo de amostragem do contador de desempenho**
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Escolha um valor para a propriedade **Taxa de Amostragem** nas configurações de execução de teste de carga com base na duração do seu teste de carga. Uma taxa de amostragem menor, como o valor padrão de cinco segundos, requer mais espaço no banco de dados dos resultados de testes de carga. Para testes de carga mais longos, aumentar a taxa de amostragem reduzirá a quantidade de dados coletados. Para saber mais, confira [Como especificar a taxa de amostragem](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+**Considerações sobre o intervalo de amostragem do contador de desempenho**
 
- Veja algumas diretrizes para taxas de amostragem:
+Escolha um valor para a propriedade **Taxa de Amostragem** nas configurações de execução de teste de carga com base na duração do seu teste de carga. Uma taxa de amostragem menor, como o valor padrão de cinco segundos, requer mais espaço no banco de dados dos resultados de testes de carga. Para testes de carga mais longos, aumentar a taxa de amostragem reduzirá a quantidade de dados coletados. Para saber mais, confira [Como especificar a taxa de amostragem](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+
+Veja algumas diretrizes para taxas de amostragem:
 
 |Duração do teste de carga|Taxa de amostragem recomendada|
 |-|-----------------------------|
@@ -39,11 +41,11 @@ Você pode usar o painel **Contadores** para adicionar contadores de desempenho 
 |8 a 24 horas|30 segundos|
 |> 24 horas|60 segundos|
 
- **Considerações para inclusão de detalhes de medição de tempo para coletar dados de percentil**
+**Considerações para inclusão de detalhes de medição de tempo para coletar dados de percentil**
 
- Há uma propriedade nas configurações de execução no Editor de Teste de Carga denominada **Armazenamento de detalhes de medição de tempo**. Se a propriedade **Armazenamento de detalhes de medição de tempo** estiver habilitada, o tempo para execução de cada teste, transação e página individual durante o teste de carga será armazenado no repositório de resultados de testes de carga. Isso permite que os 90º e 95º dados de percentil sejam mostrados no **Analisador de Teste de Carga** nas tabelas Testes, Transações e Páginas.
+Há uma propriedade nas configurações de execução no Editor de Teste de Carga denominada **Armazenamento de detalhes de medição de tempo**. Se a propriedade **Armazenamento de detalhes de medição de tempo** estiver habilitada, o tempo para execução de cada teste, transação e página individual durante o teste de carga será armazenado no repositório de resultados de testes de carga. Isso permite que os 90º e 95º dados de percentil sejam mostrados no **Analisador de Teste de Carga** nas tabelas Testes, Transações e Páginas.
 
- Há duas opções para habilitar a propriedade **Armazenamento de detalhes de medição de tempo** nas propriedades de configurações de execução, denominadas **StatisticsOnly** e **AllIndividualDetails**. Seja qual opção for escolhidas, todos os testes, páginas e transações individuais são cronometrados, e os dados de percentil são calculados dos dados de medição de tempo individuais. A diferença é que, com a opção **StatisticsOnly**, assim que os dados de percentil são calculados, os dados de medição de tempo individuais são excluídos do repositório. Isso reduz a quantidade de espaço necessário no repositório quando você usa detalhes de medição de tempo. No entanto, os usuários avançados podem querer processar os dados detalhados de medição de tempo de outras formas, usando ferramentas SQL. Nesse caso, a opção **AllIndividualDetails** deve ser usada para que os dados detalhados de medição de tempo estejam disponíveis para esse processamento. Além disso, se você definir a propriedade para **AllIndividualDetails**, será possível analisar a atividade do usuário virtual usando o gráfico de **Atividade de Usuário Virtual** no **Analisador de Teste de Carga** após a conclusão da execução do teste de carga. Para saber mais, confira [Análise da atividade de usuário virtual na exibição Detalhes](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+Há duas opções para habilitar a propriedade **Armazenamento de detalhes de medição de tempo** nas propriedades de configurações de execução, denominadas **StatisticsOnly** e **AllIndividualDetails**. Seja qual opção for escolhidas, todos os testes, páginas e transações individuais são cronometrados, e os dados de percentil são calculados dos dados de medição de tempo individuais. A diferença é que, com a opção **StatisticsOnly**, assim que os dados de percentil são calculados, os dados de medição de tempo individuais são excluídos do repositório. Isso reduz a quantidade de espaço necessário no repositório quando você usa detalhes de medição de tempo. No entanto, os usuários avançados podem querer processar os dados detalhados de medição de tempo de outras formas, usando ferramentas SQL. Nesse caso, a opção **AllIndividualDetails** deve ser usada para que os dados detalhados de medição de tempo estejam disponíveis para esse processamento. Além disso, se você definir a propriedade para **AllIndividualDetails**, será possível analisar a atividade do usuário virtual usando o gráfico de **Atividade de Usuário Virtual** no **Analisador de Teste de Carga** após a conclusão da execução do teste de carga. Para saber mais, confira [Análise da atividade de usuário virtual na exibição Detalhes](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
 A quantidade de espaço necessária no repositório de resultados de testes de carga para armazenar os dados detalhados de medição de tempo pode ser muito grande, especialmente para testes de carga mais longos. Além disso, o tempo para armazenar esses dados no repositório de resultados de testes de carga no final do teste de carga é mais longo, pois esses dados são armazenados nos agentes de teste de carga até que o teste de carga seja concluído. Quando o teste de carga é concluído, os dados são armazenados no repositório. Por padrão, a propriedade **Armazenamento de detalhes de medição de tempo** fica habilitada. Se isso for um problema para o seu ambiente de teste, talvez seja conveniente definir o **Armazenamento de detalhes de medição de tempo** como **Nenhum**.
 

@@ -1,5 +1,5 @@
 ---
-title: Especificando tipos de rede virtual em um cenário de teste de carga no Visual Studio
+title: Especificando tipos de rede virtuais em um cenário de teste de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,32 +14,34 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b1f545260b3632c8097ce4bfed9eff7f2de0ccbd
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 586038d325f17d37167166a361ee214d959ba2ab
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380222"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894671"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Especificar tipos de rede virtual em um cenário de teste de carga
 
 A *combinação de redes* oferece uma maneira de simular carga de modo mais realista em um cenário de teste de carga. A carga é gerada usando uma combinação heterogênea de tipos de rede, em vez de um único tipo de rede. Você cria uma situação mais parecida com a forma que os usuários finais interagem com seus aplicativos.
 
- Uma combinação de redes especifica a probabilidade de um usuário virtual executar um determinado *perfil de rede*. Um perfil de rede é uma simulação da largura de banda da rede na camada de aplicativo. Ele não simula a latência.
+Uma combinação de redes especifica a probabilidade de um usuário virtual executar um determinado *perfil de rede*. Um perfil de rede é uma simulação da largura de banda da rede na camada de aplicativo. Ele não simula a latência.
 
- Ao criar um teste de carga, talvez seja conveniente simular que a carga está sendo gerada por mais de um tipo de conexão de rede. A combinação de redes oferece vários tipos de rede. As diferentes redes são simuladas. Quando você escolhe uma opção como `Cable-DSL 1.5Mbps`, os tempos de espera são injetados no teste para simular a largura de banda selecionada.
+Ao criar um teste de carga, talvez seja conveniente simular que a carga está sendo gerada por mais de um tipo de conexão de rede. A combinação de redes oferece vários tipos de rede. As diferentes redes são simuladas. Quando você escolhe uma opção como `Cable-DSL 1.5Mbps`, os tempos de espera são injetados no teste para simular a largura de banda selecionada.
 
- A combinação de redes funciona como outras opções de combinação. Um tipo de rede é selecionado e aleatoriamente associado a um usuário virtual, com base na combinação de redes. Os testes desse usuário são executados usando um tipo de rede específico, com base na probabilidade especificada na combinação.
+A combinação de redes funciona como outras opções de combinação. Um tipo de rede é selecionado e aleatoriamente associado a um usuário virtual, com base na combinação de redes. Os testes desse usuário são executados usando um tipo de rede específico, com base na probabilidade especificada na combinação.
 
- Depois de especificar uma combinação de redes, você pode adicionar e remover tipos de rede. Também é possível alterar a distribuição da combinação de redes usando o controle misto.
+Depois de especificar uma combinação de redes, você pode adicionar e remover tipos de rede. Também é possível alterar a distribuição da combinação de redes usando o controle misto.
 
- O controle misto permite ajustar facilmente a distribuição de redes em um cenário.
+O controle misto permite ajustar facilmente a distribuição de redes em um cenário.
 
- Para obter mais informações, confira [Sobre o controle misto](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+Para saber mais, confira [Sobre o controle misto](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="true-network-emulation"></a>Emulação de rede verdadeira
 
- O Visual Studio usa emulação de rede verdadeira baseada em software para todos os tipos de teste, inclusive testes de carga. A emulação de rede verdadeira simula condições de rede pela manipulação direta de pacotes de rede. O emulador real de rede pode emular o comportamento de redes com fio e sem fio usando um link físico confiável, como Ethernet. Os seguintes atributos de rede são incorporados na emulação de rede verdadeira:
+O Visual Studio usa emulação de rede verdadeira baseada em software para todos os tipos de teste, inclusive testes de carga. A emulação de rede verdadeira simula condições de rede pela manipulação direta de pacotes de rede. O emulador real de rede pode emular o comportamento de redes com fio e sem fio usando um link físico confiável, como Ethernet. Os seguintes atributos de rede são incorporados na emulação de rede verdadeira:
 
 -   O tempo da viagem de ida e volta pela rede (latência)
 
@@ -68,7 +70,7 @@ A emulação de rede verdadeira pode ser usada por desenvolvedores e testadores 
 
 2.  Na coluna **Tipo de rede**, escolha a seta para a nova entrada. Escolha o tipo de rede desejado.
 
-3.  (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para obter mais informações, confira [Sobre o controle misto](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+3.  (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para saber mais, confira [Sobre o controle misto](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
 4.  Quando terminar de adicionar redes, escolha **OK**.
 
@@ -80,7 +82,7 @@ A emulação de rede verdadeira pode ser usada por desenvolvedores e testadores 
 
 3.  Selecione a rede na grade e escolha **Remover**.
 
-4.  (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para obter mais informações, confira [Sobre o controle misto](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+4.  (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para saber mais, confira [Sobre o controle misto](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
 5.  Quando terminar de remover redes, escolha **OK**.
 

@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f29e43c66844f915d9d79de3819166905b083df2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ceb3ecde3941a12b7113ede04b5f7dda841c7816
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813980"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894723"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisitos do controlador de teste e do agente de teste para teste de carga
 
 Vários tipos de teste, incluindo testes manuais, de unidade, de desempenho Web e de carga, estão integrados ao Visual Studio. O Visual Studio permite que usuários do Gerenciamento do Ciclo de Vida do Aplicativo do Visual Studio executem testes em computadores remotos usando um controlador de teste e um ou mais agentes. Consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="hardware-and-software-requirements"></a>Requisitos de hardware e software
 
