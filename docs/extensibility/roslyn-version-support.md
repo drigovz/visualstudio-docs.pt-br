@@ -1,6 +1,7 @@
 ---
 title: Mapeamentos de versão do pacote de Roslyn com suporte
 ms.date: 11/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-sdk
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a8896818afddddd11012a5db4ee23f7ecb4b442
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 18938ef7cdf0b1b0f7193c2f795a394837f92abb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967552"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895997"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>Referência de versão de pacote de plataforma do .NET compilador
 
@@ -39,5 +40,5 @@ A tabela a seguir mostra quais [pacote de plataforma (Roslyn) do compilador .NET
 
 ## <a name="see-also"></a>Consulte também
 
-- [SDK do .NET compiler Platform](/dotnet/csharp/roslyn-sdk/)
+- [SDK do .NET Compiler Platform](/dotnet/csharp/roslyn-sdk/)
 - [Introdução ao analisadores Roslyn](getting-started-with-roslyn-analyzers.md)
