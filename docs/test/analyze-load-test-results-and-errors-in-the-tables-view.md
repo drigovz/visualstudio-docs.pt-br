@@ -23,16 +23,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cab92c4daac6da81541771b534f4f1a6f9be159e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928666"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896621"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analisar resultados do teste de carga e erros na exibição Tabelas do Analisador de Teste de Carga
 
 Ao exibir os resultados de uma execução do teste de carga, você pode mostrar painéis diferentes que ofereçam maneiras diferentes de analisar os dados. É possível exibir os dados como um gráfico, para ver como eles mudam com o passar do tempo, ou exibir os dados como tabelas detalhadas.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Para alternar para a exibição de tabela, escolha **Tabelas** na barra de ferramentas do **teste de carga**. Para alternar entre tabelas diferentes, use a lista suspensa **Tabela** na barra de ferramentas acima da grade de tabela. Na exibição de tabela, é possível exibir até quatro tabelas por vez. Para obter mais informações, consulte [Organizar lado a lado tabelas de teste de carga](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables) neste tópico.
 
@@ -41,14 +43,14 @@ A maioria dos valores numéricos exibidos em uma tabela para contadores de desem
 > [!NOTE]
 > As colunas chamadas **Último** só permanecem disponíveis durante a execução de um teste de carga. Depois que um teste de carga é concluído, essas colunas não permanecem disponíveis.
 
- É possível classificar a maioria das tabelas escolhendo-se o título da coluna que você deseja classificar. Por padrão, algumas tabelas não exibem todas as colunas disponíveis. Será possível adicionar colunas a tabelas, se houver colunas disponíveis. Para adicionar colunas, clique com o botão direito do mouse na tabela e escolha **Adicionar/Remover Colunas**.
+É possível classificar a maioria das tabelas escolhendo-se o título da coluna que você deseja classificar. Por padrão, algumas tabelas não exibem todas as colunas disponíveis. Será possível adicionar colunas a tabelas, se houver colunas disponíveis. Para adicionar colunas, clique com o botão direito do mouse na tabela e escolha **Adicionar/Remover Colunas**.
 
 > [!NOTE]
 > É possível copiar os dados de uma tabela para outros aplicativos como o Excel para análise adicional.
 
 ## <a name="the-load-test-tables"></a>As tabelas do teste de carga
 
- A tabela a seguir lista as tabelas que estão disponíveis para analisar execuções de teste de carga.
+A tabela a seguir lista as tabelas que estão disponíveis para analisar execuções de teste de carga.
 
 |Nome da tabela|Descrição|
 |-|-|

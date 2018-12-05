@@ -1,5 +1,5 @@
 ---
-title: Editando cenários de teste de carga no Visual Studio
+title: Cenários de teste de carga
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 865be7c7c6371f92f85d853a7dde045274fc5efb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837133"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896530"
 ---
 # <a name="edit-load-test-scenarios"></a>Editar cenários de teste de carga
 
 Um *cenário* de teste de carga especifica o padrão de carga, a combinação de testes, a combinação de navegadores e a combinação de redes. Cenários são importantes porque permitem que você configure testes para simular cargas de trabalho complexas e realistas.
 
 Por exemplo, você pode testar um site de comércio eletrônico que tem um front-end de Internet usado por centenas de clientes simultâneos em muitas velocidades de conexão e que usam diferentes navegadores. O mesmo site também pode ter uma função de administração que é usada por funcionários internos para atualizar produtos e exibir estatísticas. Esses usuários internos acessariam normalmente o site usando o mesmo navegador e uma conexão de alta velocidade de rede local. Você deve encapsular as propriedades desses dois grupos de usuários diferentes em cenários diferentes. Cada cenário pode conter um tipo de usuário virtual. Nesse caso, um cenário de teste de carga poderá ser criado para representar clientes virtuais e outro cenário poderá ser criado para representar usuários internos virtuais de um site.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="scenario-components"></a>Componentes do cenário
 

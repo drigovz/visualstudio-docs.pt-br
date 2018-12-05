@@ -11,26 +11,28 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bda1c548b4db5d7f94a1dd85befdff5645460b83
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 13d0f405b59b95df0edbcfc5e6f051c1f3140035
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295092"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896101"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Adicionar uma fonte de dados a um teste de desempenho Web
 
 Associe dados para fornecer valores diferentes para o mesmo teste, por exemplo, para fornecer valores diferentes para seus parâmetros de postagem de formulário.
 
- ![Associando dados a um teste de desempenho Web](../test/media/web_test_databinding_conceptual.png)
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Usaremos um aplicativo de exemplo do ASP.NET. Ele tem três páginas *.aspx* – a página padrão, uma página vermelha e uma página azul. A página padrão tem um controle de rádio para escolher vermelho ou azul e um botão enviar. As outras duas páginas *.aspx* são muito simples. Uma tem um rótulo chamado Vermelho e a outra, Azul. Quando você opta por enviar a página padrão, exibimos uma das outras páginas. É possível baixar a amostra [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) ou simplesmente prosseguir usando seu próprio aplicativo Web.
+![Associando dados a um teste de desempenho Web](../test/media/web_test_databinding_conceptual.png)
 
- ![Executando o aplicativo Web a ser testado](../test/media/web_test_databinding_runwebapp.png)
+Usaremos um aplicativo de exemplo do ASP.NET. Ele tem três páginas *.aspx* – a página padrão, uma página vermelha e uma página azul. A página padrão tem um controle de rádio para escolher vermelho ou azul e um botão enviar. As outras duas páginas *.aspx* são muito simples. Uma tem um rótulo chamado Vermelho e a outra, Azul. Quando você opta por enviar a página padrão, exibimos uma das outras páginas. É possível baixar a amostra [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) ou simplesmente prosseguir usando seu próprio aplicativo Web.
 
- Sua solução também deve incluir um teste de desempenho Web que navegará pelas páginas do aplicativo Web.
+![Executando o aplicativo Web a ser testado](../test/media/web_test_databinding_runwebapp.png)
 
- ![Solução com o teste de desempenho Web](../test/media/web_test_databinding_solution.png)
+Sua solução também deve incluir um teste de desempenho Web que navegará pelas páginas do aplicativo Web.
+
+![Solução com o teste de desempenho Web](../test/media/web_test_databinding_solution.png)
 
 ## <a name="create-a-sql-database"></a>Criar um banco de dados SQL
 

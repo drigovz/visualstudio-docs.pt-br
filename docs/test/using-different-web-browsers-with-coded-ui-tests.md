@@ -1,5 +1,5 @@
 ---
-title: Usando navegadores da Web diferentes com testes de interface do usuário codificados no Visual Studio
+title: Usando navegadores diferentes com testes de interface do usuário codificada
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 088ae3f16e20234760194be3ed3d6ddb4beb98f3
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: f7301ef674e3ad3b940204be30bfffa878f88e45
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295612"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895100"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usar navegadores da Web diferentes com testes de IU codificados
 
 Os testes de IU codificados podem automatizar testes para aplicativos Web gravando os testes usando o Internet Explorer. Você pode personalizar o teste e executá-lo usando o Internet Explorer ou outros tipos de navegador para esses aplicativos Web.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 Primeiro, instale os [Componentes do Selenium para testes de IU codificados entre navegadores](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 

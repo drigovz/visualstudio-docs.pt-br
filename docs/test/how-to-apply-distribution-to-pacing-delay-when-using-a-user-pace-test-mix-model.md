@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 20fa17054c3334566114c5baf9bc98a71025c225
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 19634186e13574c322c2e9bcc636dda3a823b158
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204070"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896180"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Como aplicar distribuição à definição dos atrasos durante o uso de um modelo de combinação de testes
 
 Depois de criar seu teste de carga usando o **Novo Assistente de Teste de Carga**, você poderá usar o Editor de Teste de Carga para alterar as propriedades de cenários para que eles atendam às suas metas e necessidades de teste.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 A propriedade **Aplicar Distribuição à Definição dos Atrasos** é definida usando a janela **Propriedades**. As propriedades do cenário de teste de carga são modificadas usando o Editor de testes de carga.
 

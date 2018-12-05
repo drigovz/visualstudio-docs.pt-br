@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257362"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821364"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Como depurar para iniciantes absolutos
 
@@ -244,7 +244,7 @@ Em seguida, criaremos um aplicativo que tem alguns bugs.
 
     ![Erro de sintaxe](../debugger/media/beginners-no-definition.png)
 
-    Mesmo que definamos cada galáxia com um objeto de tipo `GType` (que tem a propriedade `MGType`), o depurador não reconhece o objeto `theGalaxy` como um objeto de tipo `GType`. O que está havendo? Você deseja examinar qualquer código que define o tipo de galáxia. Quando você fizer isso, verá que a classe `GType` definitivamente tem uma propriedade de `MyGType`, mas algo não está certo. A mensagem de erro sobre `object` acaba sendo a pista; para o interpretador de linguagem, o tipo parece ser um objeto do tipo `object`, em vez de um objeto do tipo `GType`.
+    Mesmo que definamos cada galáxia com um objeto de tipo `GType` (que tem a propriedade `MyGType`), o depurador não reconhece o objeto `theGalaxy` como um objeto de tipo `GType`. O que está havendo? Você deseja examinar qualquer código que define o tipo de galáxia. Quando você fizer isso, verá que a classe `GType` definitivamente tem uma propriedade de `MyGType`, mas algo não está certo. A mensagem de erro sobre `object` acaba sendo a pista; para o interpretador de linguagem, o tipo parece ser um objeto do tipo `object`, em vez de um objeto do tipo `GType`.
 
 1. Examinando seu código com relação à definição do tipo de galáxia, você acha que a propriedade `GalaxyType` da classe `Galaxy` é especificada como `object`, em vez de `GType`.
 

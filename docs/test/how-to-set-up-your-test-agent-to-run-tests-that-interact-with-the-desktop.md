@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b8eba85de98dd46a8ff6ad44154249598a489f5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f657babf33c315be2760cf59f3ec57525643f70e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862093"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894567"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Como configurar o agente de teste para executar testes que interagem com a área de trabalho
 
 Se desejar executar testes automatizados que interajam com a área de trabalho, configure o agente para ser executado como um processo em vez de um serviço. Por exemplo, se você desejar executar um teste de IU codificado remotamente usando um controlador de teste e um agente de teste ou se desejar executar um teste e capturar uma gravação de vídeo ao executá-lo, será preciso configurar o agente para ser executado como um processo. Quando você atribui agentes a funções nas configurações de teste usando o Visual Studio ou atribui agentes a funções no seu ambiente usando o Microsoft Test Manager, é preciso alterar a configuração para todos os agentes atribuídos às funções que têm que interagir com a área de trabalho.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!WARNING]
 > Se você usar o Microsoft Test Manager para configurar um ambiente de laboratório, ele instalará o agente de teste. No **Assistente para Criação de Ambiente**, especifique que você deseja configurar uma das funções para executar testes de IU codificados.

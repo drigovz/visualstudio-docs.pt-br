@@ -1,6 +1,6 @@
 ---
 title: Testes automatizados de IU
-ms.date: 11/04/2016
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -18,16 +18,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cbe8f1b9e0fc1fcc47a8d90e0033e8edb933e1aa
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ce10c81265ecfd95f43d62c73d69c902eda1a6c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296067"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896634"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar a automação da interface do usuário para testar o código
 
 Os testes automatizados que orientam o aplicativo por meio da IU (interface do usuário) são conhecidos como *testes de IU codificados* (CUITs) no Visual Studio. Entre esses testes estão testes funcionais dos controles de interface de usuário. Eles permitem verificar se todo o aplicativo, inclusive sua interface do usuário, está funcionando corretamente. Os testes de IU codificados são especialmente úteis quando há validação ou outra lógica na interface do usuário, como em uma página da Web. Eles também costumam ser usados para automatizar um teste manual existente.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 Conforme mostrado na ilustração a seguir, uma experiência de desenvolvimento típica pode ser uma em que, inicialmente, você só compila o aplicativo e clica nos controles de interface do usuário para verificar se as coisas estão funcionando corretamente. Em seguida, você pode optar por criar um teste automatizado para não precisar continuar testando o aplicativo manualmente. Dependendo da funcionalidade específica testada no aplicativo, é possível gravar código para um teste funcional ou para um teste de integração que pode ou não incluir testes no nível da interface do usuário. Se desejar acessar diretamente uma lógica de negócios, você poderá codificar um teste de unidade. Porém, em determinadas circunstâncias, pode ser benéfico incluir testes dos diversos controles de interface de usuário no aplicativo. Um teste de IU codificado pode verificar se a variação de código não afeta a funcionalidade do aplicativo.
 

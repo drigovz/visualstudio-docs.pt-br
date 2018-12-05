@@ -13,22 +13,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9a36578753a3b50608c7c1d3fe3184a3e7ff64e8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8999d3acdd9160ea33f6e1fa9d07dc9f69619b01
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176756"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896465"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Editar a combinação de testes para especificar os tipos de navegadores da Web em um cenário de teste de carga
 
 A *combinação de navegadores* possibilita simular a carga de modo mais realista em um cenário de teste de carga. A carga é gerada usando uma combinação heterogênea de navegadores da Web, em vez de um único navegador da Web. Você cria um cenário mais próximo dos navegadores da Web que serão usados com seus aplicativos.
 
- Uma combinação de navegadores especifica a probabilidade de um usuário virtual executar um tipo específico de navegador da Web em um cenário de teste de carga. Ao criar um teste de carga, talvez seja conveniente simular que a carga é gerada por mais de um navegador da Web. Quando você adiciona um tipo de navegador da Web à combinação do conjunto de navegadores da Web que são fornecidos, um conjunto de cabeçalhos associados para o navegador da Web selecionado é adicionado a cada solicitação HTTP que é enviada a um teste de desempenho na Web.
+Uma combinação de navegadores especifica a probabilidade de um usuário virtual executar um tipo específico de navegador da Web em um cenário de teste de carga. Ao criar um teste de carga, talvez seja conveniente simular que a carga é gerada por mais de um navegador da Web. Quando você adiciona um tipo de navegador da Web à combinação do conjunto de navegadores da Web que são fornecidos, um conjunto de cabeçalhos associados para o navegador da Web selecionado é adicionado a cada solicitação HTTP que é enviada a um teste de desempenho na Web.
 
- A combinação de navegadores funciona como outras opções de combinação. Um tipo de navegador da Web é aleatoriamente associado a um usuário virtual, com base na combinação de navegadores. Os testes desse usuário são executados em um navegador da Web específico, com base na probabilidade especificada na combinação.
+A combinação de navegadores funciona como outras opções de combinação. Um tipo de navegador da Web é aleatoriamente associado a um usuário virtual, com base na combinação de navegadores. Os testes desse usuário são executados em um navegador da Web específico, com base na probabilidade especificada na combinação.
 
- Depois de especificar uma combinação de navegadores, posteriormente, você poderá adicionar e remover tipos de navegador da Web da combinação. Você também pode alterar a distribuição da combinação de navegadores usando o controle misto. O controle misto permite ajustar facilmente a distribuição de navegadores em um cenário.
+Depois de especificar uma combinação de navegadores, posteriormente, você poderá adicionar e remover tipos de navegador da Web da combinação. Você também pode alterar a distribuição da combinação de navegadores usando o controle misto. O controle misto permite ajustar facilmente a distribuição de navegadores em um cenário.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-browsers-to-a-scenario"></a>Adicionar novos navegadores a um cenário
 
