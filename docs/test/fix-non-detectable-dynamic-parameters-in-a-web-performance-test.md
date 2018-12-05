@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 095e986e46332b4bf548cb84188d9f0c35324bc3
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 2a2f75e1aee917a3f4cc9dc7feed15619c23f24e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645179"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895594"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corrigir parâmetros dinâmicos não detectáveis em um teste de desempenho Web
 
@@ -30,6 +30,8 @@ Alguns sites usam parâmetros dinâmicos para processar algumas de suas solicita
 -   Valores de parâmetro dinâmicos que são definidos como cadeias de caracteres de consulta ou parâmetros de postagem de formulário Eles são tratados pela detecção de parâmetro dinâmico depois que você registra um teste de desempenho Web.
 
 Alguns tipos de parâmetros dinâmicos não são detectados. Um parâmetro dinâmico não detectado irá fazer com que seu teste de desempenho na Web falhe porque o valor dinâmico provavelmente será diferente sempre que o teste for executado. Para manipular corretamente esses parâmetros, você pode adicionar regras de extração aos parâmetros dinâmicos em seu teste de desempenho na Web manualmente.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-and-run-a-web-app-with-dynamic-parameters"></a>Criar e executar um aplicativo Web com parâmetros dinâmicos
 

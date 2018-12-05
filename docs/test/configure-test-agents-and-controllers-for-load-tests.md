@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: abc993d13752cdae00ea75c1eba8e39901f562c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 363aac5bc07b49670cb35f5f1080f7835e7c4701
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942979"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895633"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurar controladores e agentes de teste para executar testes de carga
 
@@ -22,6 +22,8 @@ O Visual Studio pode gerar uma carga simulada para seu aplicativo usando máquin
 
 > [!NOTE]
 > Também é possível usar o teste de carga baseado em nuvem para fornecer máquinas virtuais que gerenciem a carga de muitos usuários que acessam o site ao mesmo tempo. Saiba mais sobre teste de carga baseado em nuvem em [Executar testes de carga usando o Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="load-simulation-architecture"></a>Arquitetura de simulação de carga
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ef21d270154025a52c603186ba959fad080e5bba
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ce3e85965aa8823aa12102fff41401cf24eef6a7
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380532"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896725"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Como criar um plug-in de teste de carga
 
@@ -27,6 +27,8 @@ Você pode criar um plug-in de teste de carga para executar o código em momento
 
 > [!NOTE]
 > Você também pode criar plug-ins para testes de desempenho na Web. Para obter mais informações, confira [Como criar um plug-in de teste de desempenho Web](../test/how-to-create-a-web-performance-test-plug-in.md)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-load-test-plug-in-by-using-visual-c"></a>Para criar um plug-in de teste de carga usando o Visual C#
 

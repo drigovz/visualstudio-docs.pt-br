@@ -1,5 +1,5 @@
 ---
-title: Configurações de execução de teste de carga no Visual Studio
+title: Carregar configurações de execução de teste
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d0a3311c90638b3fd34b9d651b89af2bed07f421
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b0123ba4e6f9565cc31f63a23bb0be0b5bee344
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817375"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895490"
 ---
 # <a name="load-test-run-settings-properties"></a>Propriedades das configurações de execução de teste de carga
 
 As configurações de execução de um teste de carga determinam uma variedade de outras configurações, incluindo a duração de teste, o nível de detalhes da coleta de resultados, e os conjuntos de contadores que são coletados quando o teste é executado. Você pode criar e armazenar várias configurações de execução para cada teste de carga e selecionar uma configuração específica a ser usada quando executar o teste. Uma configuração de execução inicial é adicionada ao teste de carga quando você cria o teste de carga usando o **Novo Assistente de Teste de Carga**.
 
- As tabelas a seguir descrevem as várias propriedades para configurações de execução do teste de carga. Você pode alterar essas propriedades para atender aos seus requisitos específicos de teste de carga.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Para obter mais informações, confira [Definir as configurações de execução de teste de carga](../test/configure-load-test-run-settings.md).
+As tabelas a seguir descrevem as várias propriedades para configurações de execução do teste de carga. Você pode alterar essas propriedades para atender aos seus requisitos específicos de teste de carga.
+
+Para obter mais informações, confira [Definir as configurações de execução de teste de carga](../test/configure-load-test-run-settings.md).
 
 ## <a name="general-properties"></a>Propriedades gerais
 
@@ -42,7 +44,7 @@ As configurações de execução de um teste de carga determinam uma variedade d
 |Propriedade|Definição|
 |-|----------------|
 |**Máximo de logs de teste**|Especifica o número máximo de logs de teste para salvar para o teste de carga. Quando o valor inserido para o número máximo de logs de teste for atingido, o teste de carga parará de coletar logs. Portanto, os logs serão coletados no início de teste, não no final. O teste de carga continuará sendo executado até ser concluído.|
-|**Salvar frequência de logs para testes concluídos**|Especifica a frequência com que o log de teste será gravado. O número que indica que um de cada número inserido de testes será salvo no log de teste. Por exemplo, inserindo o valor de dez especifica que o décimo, vigésimo, trigésimo etc. será gravado no log de teste. Definindo o valor como 0 especifica que nenhum log de teste será salvo.<br /><br /> Para obter mais informações, confira [Como especificar a frequência com que os logs de teste são salvos](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
+|**Salvar frequência de logs para testes concluídos**|Especifica a frequência com que o log de teste será gravado. O número que indica que um de cada número inserido de testes será salvo no log de teste. Por exemplo, inserindo o valor de dez especifica que o décimo, vigésimo, trigésimo etc. será gravado no log de teste. Definindo o valor como 0 especifica que nenhum log de teste será salvo.|
 |**Salvar log em caso de falha do teste**|Um valor booliano que determina se os logs de teste são salvos se um teste falhar em um teste de carga. O padrão é `True`.<br /><br /> Para obter mais informações, confira [Como especificar se as falhas no teste são salvas em logs de teste](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
  Para obter mais informações, confira [Modificar as configurações de log de teste de carga](../test/modify-load-test-logging-settings.md).

@@ -17,18 +17,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 25db0c85f014aa92c103f4afbb0192c5cb57c659
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 6c3627b55fa7b4b60193d31fc96be803301ce4c9
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371115"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895646"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Como selecionar um repositório de resultados do teste de carga
 
 Você não está limitado a um repositório de resultados local. Geralmente, os testes de carga são executados em um conjunto remoto de computadores de agente. Os agentes, juntamente com um controlador, podem gerar mais carga simulada do que qualquer computador individual. Para obter mais informações, consulte [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md).
 
 Os resultados do teste de seus agentes ou do seu computador local podem ser salvos em qualquer servidor SQL no qual você criou um repositório de resultados de testes de carga. Em ambos os casos, você precisa identificar o local de armazenamento dos resultados do teste de carga usando a janela **Administrar Controladores de Teste**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="identify-a-results-store-for-load-test-data"></a>Identificar um repositório de resultados para dados de testes de carga
 

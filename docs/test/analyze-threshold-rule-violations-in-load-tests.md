@@ -17,18 +17,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 41837a9ff3d67f2d712352115bcb6581580b32a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 17a79e4c684ee60d18288bc30ce1e3fce83dc8a5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812992"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895425"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisando violações de regra de limite em testes de carga usando o Analisador de Teste de Carga
 
 As regras de limite são associadas a contadores de desempenho específicos, e as violações indicam que um contador de desempenho excedeu ou ficou abaixo de um valor definido. Ao executar um teste de carga, você pode analisar as violações que ocorrem de acordo com as regras de limite definidas anteriormente.
 
 Se ocorrer qualquer violação, um hiperlink de **violações de limite** aparecerá na barra de status do **Analisador de Teste de Carga** e especificará o número de violações que ocorreram. Você escolhe o hiperlink para exibir a tabela de violações de limite. Você também pode exibir violações de limite na janela **Contadores** e no gráfico.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="view-threshold-violations-in-the-table"></a>Exibir violações de limite na tabela
 
@@ -67,8 +69,6 @@ Se ocorrer qualquer violação, um hiperlink de **violações de limite** aparec
  Se desejar, as violações de limite também podem ser mostradas no gráfico. O ícone de limite é exibido no gráfico ao lado do ponto de dados onde a violação de limite ocorreu.
 
  Na árvore de contadores, o ícone de uma violação de limite é propagado do nó de contador específico até o nó raiz. Isso alerta você para uma violação em um contador que pode não estar visível na árvore porque a árvore não foi expandida.
-
- Para obter mais informações, confira [Usando o painel Contadores nas exibições Grafos e Tabelas](../test/counters-panel-in-load-test-analyzer.md).
 
 ## <a name="view-threshold-violations-on-the-graph"></a>Exibir violações de limite no grafo
 

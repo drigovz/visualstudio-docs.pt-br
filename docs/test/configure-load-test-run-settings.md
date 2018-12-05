@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c20a56ce2d78ab5ba3c3fdcde19af573a830fc5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813833"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895620"
 ---
 # <a name="configure-load-test-run-settings"></a>Definir configurações de execução de teste de carga
 
 *Configurações de execução* são um conjunto de propriedades que influenciam a maneira como um teste de carga é executado. As configurações de execução são organizadas por categorias na janela **Propriedades**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Você pode ter mais de uma configuração de execução em um teste de carga. No entanto, somente uma das configurações de execução pode estar ativa por execução. As outras configurações de execução oferecem uma maneira rápida de selecionar uma configuração alternativa a ser usada em execuções de teste subsequentes.
 

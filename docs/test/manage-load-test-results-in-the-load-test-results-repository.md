@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d54c599d812bfff393cbc4ccf330aa35b902f38f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc0dff5f9e2c647d153cf1c38bb33802b47151d6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950011"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895451"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Gerenciar resultados do teste de carga no repositório de Resultados do Teste de Carga
 
 Quando você executa seus testes de carga, todas as informações obtidas durante uma execução de teste de carga podem ser armazenadas no *Repositório de Resultados de Teste de Carga*, que é um banco de dados SQL. O Repositório de Resultados de Teste de Carga contém dados do contador de desempenho e todas as informações sobre erros gravados. O banco de dados Repositório de Resultados é criado pela configuração para controladores ou criada automaticamente na primeira execução local de um teste de carga. Para uma execução local, o banco de dados será criado automaticamente se o esquema de teste de carga não estiver presente.
 
- Se você modificar a cadeia de conexão do repositório de resultados do controlador para usar outro servidor, o novo servidor precisará executar o script *loadtestresultsrepository.sql* para criar o esquema.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- O Visual Studio Enterprise fornece conjuntos de contadores nomeados que coletam contadores de desempenho comuns baseados em uma tecnologia. Esses conjuntos são úteis quando você está analisando um servidor IIS, um servidor ASP.NET ou um servidor SQL. Todos os dados coletados com conjuntos de contadores são armazenados no Repositório de Resultados do Teste de Carga.
+Se você modificar a cadeia de conexão do repositório de resultados do controlador para usar outro servidor, o novo servidor precisará executar o script *loadtestresultsrepository.sql* para criar o esquema.
+
+O Visual Studio Enterprise fornece conjuntos de contadores nomeados que coletam contadores de desempenho comuns baseados em uma tecnologia. Esses conjuntos são úteis quando você está analisando um servidor IIS, um servidor ASP.NET ou um servidor SQL. Todos os dados coletados com conjuntos de contadores são armazenados no Repositório de Resultados do Teste de Carga.
 
 > [!IMPORTANT]
 > Há uma diferença entre um conjunto de contadores e os dados do contador de desempenho. Um conjunto de contadores é metadados. Ele define um grupo de contadores de desempenho que devem ser coletados de um computador que esteja executando uma função específica como, por exemplo, o IIS ou o SQL Server. O contador faz parte da definição do teste de carga. Os dados do contador de desempenho são coletados com base nos conjuntos de contadores, no mapeamento do conjunto de contadores para um computador específico e na taxa de amostragem.

@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5333fe1562a9398e930bb077dd2a4cfe6aab6825
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 082b3da934e602aef2f0c4eefcfffc45da2c40f0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380242"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896075"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Usar a legenda da exibição Grafos para analisar testes de carga
 
 A exibição Gráficos do Analisador de Testes de Carga inclui um painel de legenda que exibe informações para cada contador de desempenho associado ao gráfico selecionado atualmente.
 
 ![Legenda de exibição dos gráficos](../test/media/load_viewlegend.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 As seguintes informações estão contidas na legenda:
 
@@ -31,18 +33,18 @@ As seguintes informações estão contidas na legenda:
 -   **Intervalo:** esta coluna exibe o intervalo do eixo y do contador de desempenho. Por padrão, esse valor se ajustará automaticamente à medida que o intervalo de dados de exemplo mudar. Um intervalo definido automaticamente sempre será a próxima potência de 10 maior que o valor máximo; isso inclui potências negativas de dez. Um gráfico pode conter vários contadores, cada um com um intervalo diferente. Por isso, o eixo y não é identificado com nenhum intervalo específico, e sim identificado com valores de 0-100 que representam uma porcentagem do intervalo total para cada contador. Por exemplo, para um contador com um intervalo de 1.000, um ponto de dados de 60 no eixo y corresponderia a um valor de 600 para o contador.
 
     > [!NOTE]
-    > Você pode desativar o ajuste de valor do intervalo automático bloqueando o intervalo em um valor específico. Quando o intervalo é bloqueado, todos os valores excedendo o intervalo são exibidos como o valor máximo que você especificou na parte superior do gráfico. Use a caixa de diálogo **Opções de plotagem** para bloquear o intervalo em um valor específico. Para obter mais informações, confira [Como especificar opções de plotagem para contadores de representação gráfica](../test/how-to-specify-plot-options-for-graphing-counters.md).
+    > Você pode desativar o ajuste de valor do intervalo automático bloqueando o intervalo em um valor específico. Quando o intervalo é bloqueado, todos os valores excedendo o intervalo são exibidos como o valor máximo que você especificou na parte superior do gráfico. Use a caixa de diálogo **Opções de plotagem** para bloquear o intervalo em um valor específico.
 
 -   **Contador:** as quatro colunas chamadas **Contador**, **Instância**, **Categoria** e **Computador** identificam com exclusividade o contador de desempenho.
 
--   **Cor:** a coluna **Cor** mostra a cor e o estilo da linha plotada do contador de desempenho. Use a caixa de diálogo **Opções de plotagem** para alterar a cor ou o estilo da linha de um contador de desempenho no gráfico. A caixa de diálogo **Opções de plotagem** está disponível no menu de atalho da legenda. Para obter mais informações, confira [Como especificar opções de plotagem para contadores de representação gráfica](../test/how-to-specify-plot-options-for-graphing-counters.md).
+-   **Cor:** a coluna **Cor** mostra a cor e o estilo da linha plotada do contador de desempenho. Use a caixa de diálogo **Opções de plotagem** para alterar a cor ou o estilo da linha de um contador de desempenho no gráfico. A caixa de diálogo **Opções de plotagem** está disponível no menu de atalho da legenda.
 
 -   **Estatísticas:** as colunas **Mín.**, **Máx.**, **Média** e **Último** mostram as respectivas estatísticas do contador de desempenho. Esses valores correspondem aos dados exibidos na região visível do gráfico. Por exemplo, se você ampliar uma região de uma execução, as estatísticas da legenda refletirão valores somente da área ampliada. A coluna "Último" é o valor do contador de desempenho do intervalo de amostragem concluído mais recentemente.
 
     > [!NOTE]
     > A coluna Último só é exibida na legenda do Analisador de Testes de Carga quando o teste de carga está em execução.
 
-     Para obter mais informações, confira [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+     Para saber mais, confira [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 A seleção de um item na legenda faz o seguinte:
 
@@ -59,6 +61,5 @@ A seleção de um item na legenda faz o seguinte:
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como especificar opções de gráfico para contadores de representação gráfica](../test/how-to-specify-plot-options-for-graphing-counters.md)
 - [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [Analisar resultados do teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md)

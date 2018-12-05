@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: cf94de633554cef495b0a9a023426ac49de75c76
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382029"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895269"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Como criar um plug-in no nível da solicitação
 
 *Solicitações* são as instruções declarativas que constituem testes de desempenho Web. Plug-ins de teste de desempenho na Web permitem isolar e reutilizar o código fora das instruções declarativas principais no teste de desempenho na Web. Você pode criar plug-ins e adicioná-los a uma solicitação individual, bem como ao teste de desempenho na Web que a contém. Um *plug-in de solicitação* personalizado oferece uma maneira de chamar um código quando uma solicitação específica é executada em um teste de desempenho Web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Cada plug-in de solicitação de teste de desempenho na Web tem um método PreRequest e um método PostRequest. Depois de anexar um plug-in de solicitação a uma solicitação HTTP específica, o evento PreRequest será acionado antes de a solicitação ser emitido, e o PostRequest é acionado depois que a resposta é recebida.
 

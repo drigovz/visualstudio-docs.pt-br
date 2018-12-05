@@ -10,22 +10,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 00abfd827bf98d79e74ecbaf9a01efdc7761c3ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6737a5b12b9205e5d6ed3ddde6de89e820d92fce
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881697"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895230"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Como analisar o que usuários virtuais estão fazendo durante um teste de carga usando o gráfico de atividade de usuário virtual
 
 Veja a atividade do usuário virtual associado ao seu teste de carga usando o **Gráfico de atividade de usuário virtual**. Cada linha do gráfico representa um usuário virtual individual. O **Gráfico de Atividade de Usuário Virtual** mostra exatamente o que cada usuário virtual executou durante o teste. É possível ver padrões de atividade de usuário, padrões de carga, correlacionar testes reprovados ou lentos e ver solicitações com outra atividade de usuário virtual. O **Gráfico de Atividade de Usuário Virtual** está disponível apenas depois da conclusão da execução do teste de carga.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 Os procedimentos a seguir demonstram como exibir o **Gráfico de atividade do usuário virtual**, como investigar as atividades de um usuário específico e como usar a filtragem.
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>Para ver o Gráfico de Atividade de Usuário Virtual nos resultados do teste de carga
 
-1.  Para exibir os dados do usuário virtual, primeiro você precisa definir a configuração **Todos os detalhes individuais** para a propriedade **Armazenamento de detalhes de medição de tempo** associada ao teste de carga. Em seguida, execute o teste de carga. Para saber mais, confira [Como configurar a coleta de detalhes completos para habilitar o gráfico de atividade do usuário virtual](../test/how-to-configure-load-tests-to-collect-full-details.md).
+1.  Para exibir os dados do usuário virtual, primeiro você precisa definir a configuração **Todos os detalhes individuais** para a propriedade **Armazenamento de detalhes de medição de tempo** associada ao teste de carga. Em seguida, execute o teste de carga.
 
 2.  Após a execução do teste de carga, a página de resumo dos resultados do teste é exibida. Escolha o botão **Detalhes do Usuário** na barra de ferramentas.
 

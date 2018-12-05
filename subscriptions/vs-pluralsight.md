@@ -9,12 +9,12 @@ description: Saiba mais sobre a assinatura de treinamento do Pluralsight incluí
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c39b7e052f3e978530dbc093767fabde4172d8e2
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 18de63935f4d8c85e5b5f8d2c3ca26fa4d09b4fc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389105"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895347"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Benefícios de treinamento do Pluralsight nas assinaturas do Visual Studio
 
@@ -44,7 +44,7 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
    - Clique na caixa de seleção para aceitar os termos de uso e a política de privacidade
    - Clique em **Concordo. Ativar o benefício**.
      > [!div class="mx-imgBorder"]
-     > ![Ativação do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
+     > ![Ativação do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
      > [!div class="mx-imgBorder"]
      > ![Termos do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-terms.png)
 

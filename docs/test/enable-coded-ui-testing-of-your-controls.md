@@ -1,5 +1,5 @@
 ---
-title: Habilitar testes de interface do usuário codificados dos controles no Visual Studio
+title: Habilitar testes de IU codificado dos controles
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,18 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6f71012cca199cbee90995be654a75c1abb7fa79
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b9f9256407f854e5e7eefbca0cdd767679b9c88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153557"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895945"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar testes de IU codificado dos controles
 
 Implemente o suporte à estrutura de teste de IU codificado para que seu controle possa ser testado. É possível adicionar níveis crescentes de suporte incrementalmente. Comece com o suporte ao registro e reprodução e à validação de propriedade. Em seguida, baseie-se nele para habilitar o construtor de teste de IU codificado a reconhecer as propriedades personalizadas do controle. Forneça classes personalizadas para acessar essas propriedades do código gerado. Você também pode ajudar o construtor de teste de IU codificado a capturar ações da maneira mais próxima à intenção da ação que está sendo registrada.
 
 ![CUIT&#95;Full](../test/media/cuit_full.png)
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Suporte ao registro, reprodução e validação de propriedade com a implementação de acessibilidade
 

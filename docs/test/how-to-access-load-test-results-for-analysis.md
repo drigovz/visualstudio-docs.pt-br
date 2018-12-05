@@ -16,18 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e2d857ccc22d6e824d32a5ae429295563bba334d
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 91e1b3c3a094e9bb510132d9160432a868fd559c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175667"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896439"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Como acessar os resultados do teste de carga para análise
 
 Quando você executar um teste de carga do Editor de Teste de Carga, os resultados de testes de carga serão abertos automaticamente e o teste de carga em execução será exibido no **Analisador de Teste de Carga**. Ao executar um teste de carga da linha de comando, você deverá acessar os resultados de testes de carga manualmente.
 
 O resultado de teste de carga para o teste de carga concluído contém exemplos de contador de desempenho e informações de erros que foram coletados periodicamente dos computadores em teste. Um grande número de exemplos de contador de desempenho podem ser coletados durante a execução de um teste de carga. A quantidade de dados de desempenho coletados depende do tamanho da execução do teste, do intervalo de amostragem, do número de computadores em teste, do número de contadores que estão sendo coletados, dos coletores de dados que são configurados e dos níveis de registro em log. Em um teste de carga grande, a quantidade de dados de desempenho coletados pode atingir facilmente vários gigabytes. Para obter mais informações, consulte [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-access-a-load-test-result"></a>Para acessar um resultado de teste local
 
@@ -54,4 +56,4 @@ O resultado de teste de carga para o teste de carga concluído contém exemplos 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -10,27 +10,29 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25adfc867ca208f367f047e4cb94322718e12b52
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851602"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895308"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Como criar um adaptador de dados de diagnóstico
 
 Para criar um *adaptador de dados de diagnóstico*, crie uma biblioteca de classes usando o Visual Studio e adicione as APIs do Adaptador de Dados de Diagnóstico fornecidas pelo Visual Studio Enterprise à sua biblioteca de classes. Envie quaisquer informações que você desejar como um fluxo ou um arquivo ao <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> fornecido pela estrutura ao manipular eventos gerados durante a execução de teste. Os fluxos ou arquivos enviados a <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> são armazenados como arquivos anexos aos resultados de teste quando seu teste é concluído. Se você criar um bug desses resultados de teste ou quando usar o [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], os arquivos também serão vinculados ao bug.
 
- Você pode criar um adaptador de dados de diagnóstico que afeta o computador onde seus testes são executados, ou um computador que é parte do ambiente que você está usando para executar o aplicativo do teste. Por exemplo, coletando arquivos em seu computador de teste onde os testes são executados ou coletando arquivos no computador que serve na função de servidor Web para seu aplicativo.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Você pode dar ao adaptador de dados de diagnóstico um nome amigável a ser exibido quando você criar suas configurações de teste usando o Microsoft Test Manager ou usando o Visual Studio. As configurações de teste permitem que você defina qual função de computador executará adaptadores de dados de diagnóstico específicos em seu ambiente quando você executar os testes. Você também pode configurar os adaptadores de dados de diagnóstico ao criar suas configurações de teste. Por exemplo, você pode criar um adaptador de dados de diagnóstico que colete logs personalizados do servidor Web. Quando você cria suas configurações de teste, você pode selecionar para executar este adaptador de dados de diagnóstico no computador ou computadores que estão executando esta função do servidor Web, e pode alterar a configuração para que suas configurações de teste coletem somente os últimos três logs que foram criados. Para obter mais informações sobre as configurações de teste, confira [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md).
+Você pode criar um adaptador de dados de diagnóstico que afeta o computador onde seus testes são executados, ou um computador que é parte do ambiente que você está usando para executar o aplicativo do teste. Por exemplo, coletando arquivos em seu computador de teste onde os testes são executados ou coletando arquivos no computador que serve na função de servidor Web para seu aplicativo.
 
- Os eventos são gerados quando você executa seus testes de modo que o adaptador de dados de diagnóstico possa executar tarefas nesse ponto no teste.
+Você pode dar ao adaptador de dados de diagnóstico um nome amigável a ser exibido quando você criar suas configurações de teste usando o Microsoft Test Manager ou usando o Visual Studio. As configurações de teste permitem que você defina qual função de computador executará adaptadores de dados de diagnóstico específicos em seu ambiente quando você executar os testes. Você também pode configurar os adaptadores de dados de diagnóstico ao criar suas configurações de teste. Por exemplo, você pode criar um adaptador de dados de diagnóstico que colete logs personalizados do servidor Web. Quando você cria suas configurações de teste, você pode selecionar para executar este adaptador de dados de diagnóstico no computador ou computadores que estão executando esta função do servidor Web, e pode alterar a configuração para que suas configurações de teste coletem somente os últimos três logs que foram criados. Para obter mais informações sobre as configurações de teste, confira [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md).
+
+Os eventos são gerados quando você executa seus testes de modo que o adaptador de dados de diagnóstico possa executar tarefas nesse ponto no teste.
 
 > [!IMPORTANT]
 > Esses eventos podem ser gerados em threads diferentes, especialmente quando você tem testes que são executados em vários computadores. Portanto, você deve estar ciente de possíveis problemas de threading e não corromper inadvertidamente os dados internos do adaptador personalizado. Certifique-se de que o adaptador de dados de diagnóstico seja do tipo thread-safe.
 
- A seguir está uma lista parcial dos principais eventos que você pode usar ao criar seu adaptador de dados de diagnóstico. Para obter uma lista completa de eventos do adaptador de dados de diagnóstico, consulte a classe abstrata <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>.
+A seguir está uma lista parcial dos principais eventos que você pode usar ao criar seu adaptador de dados de diagnóstico. Para obter uma lista completa de eventos do adaptador de dados de diagnóstico, consulte a classe abstrata <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>.
 
 |evento|Descrição|
 |-|-----------------|
@@ -44,9 +46,9 @@ Para criar um *adaptador de dados de diagnóstico*, crie uma biblioteca de class
 > [!NOTE]
 > Quando um teste manual terminar, nenhum evento de coleção de dados é enviado ao adaptador de dados de diagnóstico. Quando um teste é executado novamente, terá um novo identificador de situação de teste. Se um usuário redefinir um teste durante um teste (gerando o evento <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset>) ou se alterar um resultado da etapa de teste, nenhum evento da coleção de dados será enviado ao adaptador de dados de diagnóstico, mas o identificador de caso de teste permanecerá o mesmo. Para determinar se um caso de teste foi redefinido, você deve rastrear o identificador de caso de teste em seu adaptador de dados de diagnóstico.
 
- Use o seguinte procedimento para criar o adaptador de dados de diagnóstico que coleta um arquivo de dados que é baseado nas informações que você configura quando você cria suas configurações de teste.
+Use o seguinte procedimento para criar o adaptador de dados de diagnóstico que coleta um arquivo de dados que é baseado nas informações que você configura quando você cria suas configurações de teste.
 
- Para obter um projeto completo do adaptador de dados de diagnóstico de exemplo, incluindo um editor de configuração personalizado, confira [Projeto de exemplo para criar um adaptador de dados de diagnóstico](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
+Para obter um projeto completo do adaptador de dados de diagnóstico de exemplo, incluindo um editor de configuração personalizado, confira [Projeto de exemplo para criar um adaptador de dados de diagnóstico](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
 
 ##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Criar e instalar um adaptador de dados de diagnóstico
 

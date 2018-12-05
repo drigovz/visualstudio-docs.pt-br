@@ -16,18 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fd184f292a063823b6513e7b6a1817e2477db303
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ae70422ce3c88a3de6842f3f0946666b86ae559e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380558"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895009"
 ---
 # <a name="load-test-results-summary-overview"></a>Visão geral do resumo dos resultados do teste de carga
 
 Depois de executar um teste de carga, você poderá exibir o resumo do teste de carga para entender os resultados rapidamente. O resumo do teste de carga fornece os resultados-chave em um formato compacto e fácil de ler. Você também pode imprimir o resumo do teste de carga. Isso deixa prático usá-lo quando você comunica resultados aos participantes. O resumo do teste de carga também é a exibição padrão quando você abre um resultado do teste de carga de um teste de carga executado anteriormente. Para saber mais, confira [Como acessar resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md).
 
- ![Exibição resumida](../test/media/ltest_summaryview.png)
+![Exibição resumida](../test/media/ltest_summaryview.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="the-load-test-summary"></a>O resumo do teste de carga
 
@@ -127,7 +129,7 @@ A seção Controlador e recursos do agente contém uma lista dos computadores us
 
 ## <a name="errors"></a>Erros
 
-A seção erros contém uma lista de todos os erros ocorridos durante o teste de carga. O tipo e o subtipo do erro, a contagem e a última mensagem são exibidos. Você pode escolher um erro para abrir a tabela **Erros** e inspecionar mais detalhes desse erro. Para obter mais informações, confira [Analisar resultados do teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) e [Como analisar erros usando o painel Contadores](../test/how-to-analyze-errors-using-the-counters-panel.md).
+A seção erros contém uma lista de todos os erros ocorridos durante o teste de carga. O tipo e o subtipo do erro, a contagem e a última mensagem são exibidos. Você pode escolher um erro para abrir a tabela **Erros** e inspecionar mais detalhes desse erro. Para obter mais informações, consulte [Analisar resultados de teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
 > Você pode recolher e expandir essa seção escolhendo a seta à esquerda do título da seção.

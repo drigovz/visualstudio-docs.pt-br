@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6525327e85d40b9b942e4e29a7d759a15598c824
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909764"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895828"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Como criar um plug-in de gravação
 
 O <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permite que você modifique um teste de desempenho na Web gravado. A modificação ocorre depois que você escolhe **Parar** na barra de ferramentas do **Gravador de Teste de Desempenho Web**, mas antes de o teste ser salvo e apresentado no Editor de Testes de Desempenho Web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Um plug-in de gravador permite que você execute sua própria correlação personalizada em parâmetros dinâmicos. Com a funcionalidade de correlação interna, os testes de desempenho Web detectam os parâmetros dinâmicos na gravação da Web no momento da conclusão ou quando você usa **Promover Parâmetros Dinâmicos a Parâmetros de Teste na Web** na barra de ferramentas do **Editor de Testes de Desempenho Web**. No entanto, a funcionalidade de detecção interna nem sempre encontra todos os parâmetros dinâmicos. Por exemplo, ela não encontra uma ID da sessão, que normalmente tem seu valor alterado entre 5 a 30 minutos. Portanto, você precisa executar manualmente o processo de correlação.
 
