@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 406c1c0c853563dc45b76e0bbcfefb3e21df0aff
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1178cd08bf8d12b4fba61e858ca5631d103292c2
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379365"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895568"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Como especificar o percentual de usuários virtuais que usam dados de cache da Web
 
 Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, você poderá alterar as propriedades dos cenários de forma a atender suas necessidades e objetivos de teste usando o **Editor de Teste de Carga**. Para obter uma lista completa das propriedades de cenário de teste de carga e suas descrições, confira [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 A propriedade **Percentual de novos Usuários** é definida na janela **Propriedades**. Edite as propriedades de cenário de teste de carga no **Editor de Teste de Carga**.
 

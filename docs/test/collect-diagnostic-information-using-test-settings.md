@@ -1,5 +1,5 @@
 ---
-title: Coletar informações de diagnóstico usando configurações de teste no Visual Studio
+title: Coletar informações de diagnóstico usando configurações de teste
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 288d1ce5511d33a48006c97030d2b9c2f12ec88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865343"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895204"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Coletar informações de diagnóstico usando configurações de teste
 
@@ -32,6 +32,8 @@ Você pode usar *Configurações de teste* no Visual Studio para coletar dados a
 -   Coletar dados do IntelliTrace para ajudar a isolar bugs não reproduzíveis
 
 Os adaptadores de dados de diagnóstico também podem ser usados para alterar o comportamento de um computador de teste. Por exemplo, com uma configuração de teste no Visual Studio, você pode emular vários gargalos de topologia de rede para avaliar o desempenho do aplicativo de sua equipe.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="use-test-settings-with-visual-studio"></a>Usar configurações de teste com o Visual Studio
 

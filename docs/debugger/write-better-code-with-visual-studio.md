@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c16cfdc8d554ce9bf556ea707f977989e1dab72
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: e4cf3c7ae8b45f6d3410925977c2c67784b1ca6d
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389371"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621585"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Corrigir bugs, escrevendo melhor C# o código usando o Visual Studio
 
-Depurar o código pode ser demorado – e, às vezes, frustrante – tarefa. Levará tempo para aprender a depurar, com eficácia. Um IDE avançado como o Visual Studio pode facilitar muito o seu trabalho. Um IDE pode ajudar você a depurar seu código mais rapidamente e não apenas isso, mas ele também pode ajudar você escreve códigos melhores com menos erros. Nosso objetivo neste artigo é fornecer uma visão holística do processo de depuração, para que você saiba quando usar o analisador de código, quando uso o depurador e quando usar outras ferramentas.
+Depurar o código pode ser demorado – e, às vezes, frustrante – tarefa. Leva tempo para saber como depurar com eficiência, mas um IDE avançado como o Visual Studio pode tornar seu trabalho muito mais fácil. Um IDE pode ajudar você a depurar seu código mais rapidamente e não apenas isso, mas ele também pode ajudar você escreve códigos melhores com menos erros. Nosso objetivo neste artigo é fornecer uma visão holística do processo de depuração, para que você saiba quando usar o analisador de código, quando uso o depurador e quando usar outras ferramentas.  
 
 Neste artigo, falamos sobre aproveitando o IDE para tornar suas sessões de depuração mais produtivo. Abordemos a várias tarefas, como:
 

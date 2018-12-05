@@ -9,16 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc225862ee4b9fbc2c4c94aaab4f410719391ee7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48c377a8a5c48db7e0726ab5d5cc238e6b83c71c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926586"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895282"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gerenciar controladores e agentes de teste
 
 Se quiser usar o Visual Studio para executar testes remotamente, distribuir testes entre várias máquinas ou executar testes de carga, você deverá configurar um controlador de teste, agentes de teste e um arquivo de configurações de teste. Este tópico descreve como gerenciar controladores e agentes de teste depois de instalá-los e configurá-los pela primeira vez.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Se você usa o Microsoft Test Manager para executar testes em ambientes de laboratório, você gerencia controladores de teste e seus agentes usando o **Gerenciador do Controlador de Teste** na **Central do Laboratório** para o Microsoft Test Manager. Este tópico só será aplicável se você usar o Visual Studio para executar testes.
 

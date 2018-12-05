@@ -12,16 +12,18 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 92764cbb78dfc11b718d2640cd059febe913a9b2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3dcbd6065d45bf5350b80d555f335d3b8ec1cec7
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668127"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895958"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Criar um teste de IU codificado para testar um aplicativo UWP
 
 Este artigo explica como criar um teste de IU codificado para um aplicativo UWP (Plataforma Universal do Windows).
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="create-a-uwp-app-to-test"></a>Criar um aplicativo UWP para teste
 

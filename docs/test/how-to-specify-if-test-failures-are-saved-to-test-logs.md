@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6196a940ff1aba0c072c2b81a96371a5ad700d1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 65e8632a161ac345408a030d2d536086abbe48af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381447"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895113"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Como especificar se as falhas de teste são salvas em logs de teste usando o Editor de Teste de Carga
 
@@ -25,6 +25,7 @@ Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, 
 > [!NOTE]
 > Para obter uma lista completa das propriedades de configurações de execução e suas descrições, confira [Propriedades de configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-specify-if-the-test-log-is-saved-when-a-test-fails-in-a-scenario"></a>Para especificar se o log de teste será salvo quando um teste falhar em um cenário
 
@@ -48,5 +49,3 @@ Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, 
 
 - [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)
 - [Passo a passo: criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md)
-- [Como configurar a coleta de detalhes completos para habilitar o Gráfico de Atividade do Usuário Virtual](../test/how-to-configure-load-tests-to-collect-full-details.md)
-- [Como especificar a frequência com que os logs de teste são salvos](../test/how-to-specify-how-frequently-test-logs-are-saved.md)

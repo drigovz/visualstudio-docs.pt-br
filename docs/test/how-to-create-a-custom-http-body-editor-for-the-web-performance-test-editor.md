@@ -10,18 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 338aade9ddef3c4ef571ea2a5bffc67064c81869
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0dc31bef7a7d2e91599cdc25be4f98445beda67f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862457"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896738"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Como criar um editor de corpo HTTP personalizado para o Editor de Testes de Desempenho Web
 
 Você pode criar um editor de conteúdo personalizado que permite editar o conteúdo do corpo da cadeia de caracteres ou o conteúdo binário do corpo de uma solicitação de serviço Web, por exemplo, SOAP, REST, asmx, wcf, RIA e outros tipos de solicitação de serviço Web.
 
- Você pode implementar estes tipos de editores:
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Você pode implementar estes tipos de editores:
 
 -   **Editor de conteúdo de cadeias de caracteres** É implementado usando a interface <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>.
 

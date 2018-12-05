@@ -17,16 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 57c73a0da427141e4a8f94a51fa57ef7aa871019
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c635d3a2c21d1ab84feca285c8cea8eb2aac68f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870049"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895074"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analisar resultados do teste de carga na exibição Grafos do Analisador de Teste de Carga
 
 Os resultados de um teste de carga são exibidos como dados em vários painéis diferentes.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Para exibir os resultados do teste como grafos, escolha **Grafos** na barra de ferramentas **teste de carga**. Cada gráfico individual é exibido em um painel, com o nome do gráfico exibido na parte superior em uma lista suspensa. Para exibir um gráfico diferente no painel, escolha um nome de gráfico diferente na lista.
 
@@ -82,7 +84,6 @@ A tabela a seguir lista os gráficos internos que estão disponíveis para anali
 |**Exibir contadores em gráficos:** você pode adicionar diferentes tipos de dados a um grafo de resultados de testes de carga colocando contadores no gráfico.|-   [Como adicionar e excluir contadores em grafos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Ampliar gráficos:** após a conclusão de um teste de carga, você poderá usar as barras de zoom para ampliar e rolar para uma região do gráfico. Ao ampliar, você pode examinar detalhadamente os dados que foram gerados durante uma execução de teste de carga.|-   [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
 |**Organizar gráficos lado a lado:** você pode organizar grafos de resultados de testes de carga em qualquer um dos diversos padrões. Você pode organizar até quatro grafos lado a lado.||
-|**Modificar a aparência das plotagens do contador de desempenho nos gráficos:** você pode alterar as opções de linha de plotagem dos contadores de desempenho nos gráficos. Isso inclui cor e estilo de linha. Além disso, é possível indicar se deseja especificar automática ou manualmente o intervalo que deseja usar para plotagem do contador de desempenho.|-   [Como especificar opções de gráfico para contadores de representação gráfica](../test/how-to-specify-plot-options-for-graphing-counters.md)|
 |**Criar gráficos personalizados:** você pode projetar gráficos que exibam informações específicas sobre resultados de testes de carga. Você cria um gráfico personalizado especificando os contadores de teste de carga que o gráfico exibirá.|-   [Como criar gráficos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)|
 |**Exportar os dados de contadores de desempenho no grafo:** você pode exportar os dados do grafo para o Microsoft Excel usando o botão **Exportar Dados do Gráfico para o Excel** na barra de ferramentas do **Analisador de Teste de Carga** enquanto está na exibição **Grafos**.||
 
