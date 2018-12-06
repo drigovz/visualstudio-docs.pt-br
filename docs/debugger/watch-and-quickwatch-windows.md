@@ -18,18 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa469b109e0e22e426d76f75be50309196c6a264
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 944347f6afc371775afca1b58bae77271b60359c
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826785"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621637"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Assista a variáveis com janelas de inspeção e QuickWatch 
 
 Enquanto você estiver depurando, você pode usar **Watch** windows e **QuickWatch** para inspecionar variáveis e expressões. Os windows estão disponíveis somente durante uma sessão de depuração.
 
 **Assista** windows podem exibir diversas variáveis de cada vez durante a depuração. O **QuickWatch** caixa de diálogo exibe uma única variável por vez e deve ser fechada antes de depuração de continuar.
+
+Se essa for a primeira vez que você tentou depurar o código, você talvez queira ler [corrigir bugs, escrevendo melhor C# código](../debugger/write-better-code-with-visual-studio.md) e [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes de prosseguir com este artigo.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Observe as variáveis com uma janela Inspeção
 
@@ -142,7 +144,7 @@ Uma expressão com efeitos colaterais é avaliada apenas uma vez, quando você p
 
 Uma maneira de impedir a designação de efeitos colaterais é desativar a avaliação automática de funções. Na **ferramentas** > **opções** > **depuração** > **geral**, cancele a seleção de **Habilitar a avaliação de propriedade e outras chamadas de função implícitas**.
 
-Para C# apenas, quando a avaliação de propriedades ou chamadas de função implícitas é desativada, você pode forçar a avaliação, adicionando o **CA** modificador de formato para uma variável **nome** no **Watch**  janela. Ver [especificadores em c# de formato](../debugger/format-specifiers-in-csharp.md).
+Para C# apenas, quando a avaliação de propriedades ou chamadas de função implícitas é desativada, você pode forçar a avaliação, adicionando o **CA** modificador de formato para uma variável **nome** no **Watch**  janela. Ver [Formatar especificadores em C# ](../debugger/format-specifiers-in-csharp.md).
 
 ## <a name="bkmk_objectIds"></a> Usar IDs de objeto na janela de inspeção (C# e Visual Basic)
 
@@ -217,13 +219,13 @@ Para atualizar **modo de exibição dinâmico** valores, selecionadas o [ícone 
 
 Para exibir apenas o **modo de exibição dinâmico** para um objeto, adicione uma **dinâmico** especificador de formato após o nome de objeto dinâmico na **Assista** janela:
 
-- Para c#: `ObjectName, dynamic`
+- Para C#: `ObjectName, dynamic`
 - Para o Visual Basic: `$dynamic, ObjectName`
 
 >[!NOTE]
 >- O C# depurador não reavalia automaticamente os valores de **modo de exibição dinâmico** quando você entrar para a próxima linha de código. 
 >- O depurador do Visual Basic é atualizada automaticamente expressões adicionadas por meio de **modo de exibição dinâmico**.
->- Avaliar os membros de um **modo de exibição dinâmico** pode ter [efeitos colaterais](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). 
+>- A avaliação dos membros de um **Modo de Exibição Dinâmico** pode ter [efeitos colaterais](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). 
 
 **Para inserir uma nova inspeção variável que converte um objeto em um objeto dinâmico:**
   
@@ -278,6 +280,6 @@ Para observar o `a` variável,
 1. Continue a depuração. Você pode observar a variável na **inspeção** janela.
 
 ## <a name="see-also"></a>Consulte também
- [O que está sendo depurado?](../debugger/what-is-debugging.md)  
- [Gravar melhor C# o código usando o Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [O que é depuração?](../debugger/what-is-debugging.md)  
+ [Corrigir bugs escrevendo um melhor código C#](../debugger/write-better-code-with-visual-studio.md)  
  [Introdução à depuração](../debugger/debugger-feature-tour.md) [janelas do depurador](../debugger/debugger-windows.md)
