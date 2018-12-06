@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c473faf449176b38d4505675b1060618344db0d6
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: 4156ff8f81e7a011aeff0cf753af60bb3d6cd924
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388154"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621533"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Exibir os valores de dados em DataTips no editor de códigos
 
-DataTips são uma maneira conveniente de exibir informações sobre variáveis em seu aplicativo durante a depuração. 
+Os DataTips fornecem um modo conveniente de exibir informações sobre variáveis em seu programa durante a depuração. Os DataTips funcionam apenas no modo de interrupção e apenas com variáveis que estejam no escopo de execução atual. Se essa for a primeira vez que você tentou depurar o código, você talvez queira ler [corrigir bugs, escrevendo melhor C# código](../debugger/write-better-code-with-visual-studio.md) e [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes de prosseguir com este artigo.
 
 Se esta for sua primeira vez em que depuração, você talvez queira ler [gravar melhor C# usando o Visual Studio de código](../debugger/write-better-code-with-visual-studio.md) e [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes de ler este artigo.
   
@@ -127,8 +127,8 @@ Você pode exportar DataTips para um arquivo XML, que você pode compartilhar ou
 
 ## <a name="see-also"></a>Consulte também  
  [O que é depuração?](../debugger/what-is-debugging.md)  
- [Gravar melhor C# o código usando o Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
- [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)   
- [Exibir dados no depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Janelas Inspeção e Inspeção Rápida](../debugger/watch-and-quickwatch-windows.md)   
+ [Corrigir bugs escrevendo um melhor código C#](../debugger/write-better-code-with-visual-studio.md)  
+ [Introdução à depuração](../debugger/debugger-feature-tour.md) [exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)   
+ [Janelas Inspeção e QuickWatch](../debugger/watch-and-quickwatch-windows.md)   
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
+
