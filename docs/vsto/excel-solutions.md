@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 43215d1827d8115e694134e75d03add48f16eb81
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 917a83a434dc27074b0d786f64fcdbdc5fd294d3
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859220"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027387"
 ---
 # <a name="excel-solutions"></a>Soluções do Excel
   Visual Studio fornece modelos de projeto, que você pode usar para criar personalizações em nível de documento e suplementos do VSTO para o Microsoft Office Excel. Você pode usar essas soluções para automatizar o Excel, estender os recursos do Excel e personalizar a interface de usuário (IU) do Excel. Para obter mais informações sobre as diferenças entre personalizações no nível de documento e suplementos do VSTO, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -76,9 +76,7 @@ ms.locfileid: "49859220"
 
  Para criar um projeto de suplemento do VSTO para Excel, use a pasta de trabalho do Excel ou modelos de projeto de modelo do Excel na **novo projeto** caixa de diálogo do Visual Studio. Para obter mais informações, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
- Para obter informações gerais sobre o funcionamento do VSTO Add-ins, consulte [arquitetura do VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
-
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer i: automatizar o PowerPoint de um suplemento do Excel?](http://go.microsoft.com/fwlink/?LinkID=130300).  
+ Para obter informações gerais sobre o funcionamento do VSTO Add-ins, consulte [arquitetura do VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 ### <a name="excel-add-in-programming-model"></a>Excel Add-in do modelo de programação  
  Quando você cria um projeto de suplemento do VSTO do Excel, o Visual Studio gera uma classe, chamada `ThisAddIn`, que é a base da sua solução. Essa classe fornece um ponto de partida para escrever seu código, e ele também expõe o modelo de objeto do Excel para o suplemento do VSTO.  
