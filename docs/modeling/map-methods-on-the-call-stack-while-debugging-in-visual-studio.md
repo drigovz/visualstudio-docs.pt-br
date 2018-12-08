@@ -1,5 +1,5 @@
 ---
-title: Mapear métodos na pilha de chamadas ao depurar no Visual Studio
+title: Mapear métodos na pilha de chamadas ao depurar
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
@@ -30,15 +30,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1d0139463f468ed6d909658bb143412dc122020
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4597f1352e02033c55fcdced126e184f854b463
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856178"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067392"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapear métodos na pilha de chamadas ao depurar no Visual Studio
-Crie um mapa de código para rastrear visualmente a pilha de chamadas durante a depuração. Você pode fazer anotações no mapa para acompanhar o que o código está fazendo, de modo a se concentrar na localização de bugs.
+Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a depuração. Você pode fazer anotações no mapa para acompanhar o que o código está fazendo, de modo a se concentrar na localização de bugs.
 
  ![Depuração com pilhas de chamadas em mapas de códigos](../debugger/media/debuggermap_overview.png)
 
@@ -121,7 +121,7 @@ Crie um mapa de código para rastrear visualmente a pilha de chamadas durante a 
 
  ![Adicionar outra pilha de chamadas ao mapa de código](../debugger/media/debuggermap_addpaintobjectcallstack.png)
 
- Você observará que todos os gestos do usuário no mapa chamam `Repaint`, exceto para `undo`. Isso pode explicar o motivo `undo` não funcionar imediatamente.
+ Você observará que todos os gestos do usuário no mapa chamam `Repaint`, exceto para `undo`. Isso pode explicar o motivo de `undo` não funcionar imediatamente.
 
  Após corrigir o bug e continuar executando o programa, o mapa adicionará a nova chamada de `undo` para `Repaint`:
 
