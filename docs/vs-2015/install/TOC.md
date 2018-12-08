@@ -12,5 +12,3 @@
 ## [Como atualizar de uma edição para avaliação do Visual Studio](how-to-upgrade-from-a-trial-edition-of-visual-studio.md)
 ## [Como localizar a chave do produto (Product Key) do Visual Studio](how-to-locate-the-visual-studio-product-key.md)
 ## [Exceções à política de ciclo de vida do Visual Studio](visual-studio-lifecycle-policy-exceptions.md)
-# [Instalar o Visual Studio 2017](install-visual-studio-15-preview-5.md)
-## [Modificar o Visual Studio 2017](modify-visual-studio-15-preview-5.md)

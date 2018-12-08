@@ -2,14 +2,16 @@
 layout: HubPage
 hide_bc: true
 title: Documentação do Visual Studio | Microsoft Docs
+titleSuffix: ''
 description: Saiba como usar o Visual Studio 2017 para desenvolver aplicativos, serviços e ferramentas na linguagem de sua escolha para suas plataformas e dispositivos.
 ms.topic: hub-page
-ms.openlocfilehash: 961d9f46d78b23fa976b3a8cdc774d219445c8b1
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.custom: seodec18
+ms.openlocfilehash: 2508110634eeae708e678be8eb5af16a8ad50e24
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000277"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066087"
 ---
 <div id="main" class="v2">
     <div class="container">
