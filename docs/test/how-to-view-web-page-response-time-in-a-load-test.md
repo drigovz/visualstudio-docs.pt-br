@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 945bbe8377d51974bdfb09b762e415da3004346b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9740d26ef99c10bb9ec84afa23b998f6e1467f40
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821832"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895256"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Como exibir o tempo de resposta da página da Web em um teste de carga usando o Analisador de Teste de Carga
 
 O tempo necessário para cada página da Web carregar é conhecido como *tempo de resposta*. Quando você cria um teste de desempenho na Web, pode definir uma meta de tempo de resposta para cada solicitação de página da Web no teste de desempenho na Web.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Se você executar o teste de desempenho na Web sob estresse em um teste de carga, poderá analisar as seguintes informações para cada página:
 
@@ -36,8 +38,6 @@ Se você executar o teste de desempenho na Web sob estresse em um teste de carga
 -   Analisando o tempo de resposta da página da Web na exibição de grafos
 
 ## <a name="view-response-time-data-in-a-table"></a>Exibir dados de tempo de resposta em uma tabela
-
-### <a name="to-view-response-time-data-in-a-table"></a>Para exibir dados de tempo de resposta em uma tabela
 
 1. No **Analisador de Teste de Carga**, escolha **Tabelas** na barra de ferramentas para garantir que a grade da tabela seja exibida.
 
@@ -70,7 +70,7 @@ Se você executar o teste de desempenho na Web sob estresse em um teste de carga
 
 Você também pode exibir dados de tempo de resposta em um gráfico para ver como eles mudam com o passar do tempo durante o teste de carga. Isso é especialmente útil se seu padrão de carga aumenta conforme a execução do teste (por exemplo, se você usar o padrão de carga por etapa). Para obter mais informações, confira [Editar padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-### <a name="to-view-response-time-data-in-a-graph"></a>Para exibir dados de tempo de resposta em um gráfico
+Para exibir dados de tempo de resposta em um gráfico:
 
 1. No **Analisador de Teste de Carga**, escolha **Grafos** na barra de ferramentas para garantir que o grafo seja exibido.
 

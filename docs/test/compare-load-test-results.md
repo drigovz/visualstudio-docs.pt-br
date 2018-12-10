@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc54324f2c5bc91dba64aa35b125bbdc12ca1a45
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834273"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895022"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Relatar resultados de teste de carga para comparações de testes ou análise de tendências
 
-Você pode gerar relatórios de teste de carga do Microsoft Excel baseados em dois ou mais resultados de teste. Dois tipos de relatórios de teste de carga estão disponíveis:
+Você pode gerar relatórios de teste de carga do Microsoft Excel baseados em dois ou mais resultados de teste.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Dois tipos de relatórios de teste de carga estão disponíveis:
 
 - Comparação de execução&mdash;Esse relatório tem, na verdade, dois relatórios que exibem dados de comparação lado a lado usando tabelas e gráficos de barras.
 
@@ -33,7 +37,7 @@ As definições de relatório são armazenadas no banco de dados de teste de car
 Além disso, o arquivo da planilha do Excel pode ser compartilhada com participantes de modo que os participantes precisem se conectar ao banco de dados para ver o relatório.
 
 > [!NOTE]
-> Se você adicionar comentários a um teste de carga, eles aparecerão no relatório do Excel. Para obter mais informações, confira [Como adicionar comentários durante a análise de um teste de carga completo](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Se você adicionar comentários a um teste de carga, eles aparecerão no relatório do Excel.
 
 ## <a name="tasks"></a>Tarefas
 

@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 36176ce14b51af1cf692b6b04d862882a48d7e4e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379800"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895191"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Como configurar o criador de perfil do ASP.NET para carregar testes usando configurações de teste no Visual Studio
 
 Você pode usar o adaptador de dados de diagnóstico do criador de perfil do ASP.NET para coletar informações do criador de perfil do ASP.NET. Esse adaptador de dados de diagnóstico coleta dados de desempenho de aplicativos ASP.NET.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Esse adaptador de dados de diagnóstico não pode ser usado para testes que são executados usando o Microsoft Test Manager. Você pode usar o adaptador de diagnóstico do Criador de Perfil do ASP.NET com testes de carga usando sites que exigem apenas o Visual Studio Enterprise.
@@ -31,13 +33,9 @@ O adaptador de dados de diagnóstico do criador de perfil do ASP.NET permite col
 
 Para obter mais informações, confira [Como criar uma configuração de teste para um teste de carga distribuída](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
-O procedimento a seguir descreve como configurar o adaptador de dados de diagnóstico para o criador de perfil do ASP.NET.
-
-## <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Para configurar o criador de perfil do ASP.NET para suas configurações de teste
+## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>Configurar o criador de perfil do ASP.NET para suas configurações do teste
 
 Antes de executar as etapas neste procedimento, você deverá abrir as configurações de teste no Visual Studio e selecionar a página **Dados e Diagnósticos**.
-
-### <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Para configurar o criador de perfil do ASP.NET para suas configurações de teste
 
 1.  Selecione a função a ser usada para coletar dados do criador de perfil do ASP.NET.
 

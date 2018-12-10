@@ -1,12 +1,12 @@
 ---
-title: Aprenda a depurar código C# usando o depurador do Visual Studio
+title: Aprenda a depurar C++ usando o depurador do Visual Studio
 ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
 ms.custom: debug-experiment
-ms.date: 11/27/2018
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
-- CSharp
+- C++
 helpviewer_keywords:
 - debugger
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
@@ -15,22 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 549f38839495385c983cc68f14fc94629ac988c3
+ms.openlocfilehash: 56ef97401a87f39e9c3bfd3138ee3a26646064c6
 ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821299"
+ms.locfileid: "52825860"
 ---
-# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: aprenda a depurar código C# usando o Visual Studio
+# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: aprenda a depurar código C++ usando o Visual Studio
 
-Este artigo apresenta os recursos do depurador do Visual Studio passo a passo. Quando você *depura seu aplicativo*, isso normalmente significa executar o aplicativo com o depurador anexado. Quando você faz isso, o depurador fornece várias maneiras de mostrar o que o código está fazendo enquanto é executado. Você pode percorrer o código e examinar os valores armazenados em variáveis, definir inspeções em variáveis para ver quando os valores mudam, examinar o caminho de execução do código, ver se um branch de código está em execução e assim por diante. Se esta foi sua primeira tentativa de depurar um código, leia [Depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [Corrigir bugs escrevendo um melhor código C#](../debugger/write-better-code-with-visual-studio.md) antes continuar a ler este artigo.
+Este artigo apresenta os recursos do depurador do Visual Studio passo a passo. Se você quiser obter uma visão mais detalhada dos recursos do depurador, confira [Tour pelos recursos do depurador](../debugger/debugger-feature-tour.md). Quando você *depura seu aplicativo*, isso normalmente significa executar o aplicativo com o depurador anexado. Quando você faz isso, o depurador fornece várias maneiras de mostrar o que o código está fazendo enquanto é executado. Você pode percorrer o código e examinar os valores armazenados em variáveis, definir inspeções em variáveis para ver quando os valores mudam, examinar o caminho de execução do código, ver se um branch de código está em execução e assim por diante. Se esta for sua primeira tentativa de depurar um código, leia [Como depurar para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes continuar neste artigo.
 
 | | |
 |---------|---------|
 | ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sobre depuração que mostra etapas semelhantes. |
-
-Embora o aplicativo de demonstração esteja em C#, a maioria dos recursos são aplicáveis a C++, Visual Basic, F#, Python, JavaScript e outras linguagens compatíveis com o Visual Studio (o F# não é compatível com editar e continuar). F# e JavaScript não dão suporte à janela **Autos**). As capturas de tela estão em C#.
 
 Neste tutorial, você irá:
 
@@ -42,126 +40,124 @@ Neste tutorial, você irá:
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Você precisa ter o Visual Studio 2017 instalado e a carga de trabalho de **desenvolvimento para desktop com .NET**.
+* Você precisa ter o Visual Studio 2017 instalado e a carga de trabalho de **Desenvolvimento para desktop com C++**.
 
     Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  para instalá-lo gratuitamente.
 
-    Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto** (selecione **Arquivo** > **Novo** > **Projeto**). O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento para desktop com .NET** e, em seguida, selecione **Modificar**.
+    Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto** (selecione **Arquivo** > **Novo** > **Projeto**). O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
 
 ## <a name="create-a-project"></a>Criar um projeto
 
 1. No Visual Studio, escolha **Arquivo > Novo Projeto**.
 
-2. Em **Visual C#**, escolha **Área de Trabalho do Windows** e, em seguida, no painel central, escolha **Aplicativo de Console**.
+2. Em **Visual C++**, escolha **Área de Trabalho do Windows** e escolha **Aplicativo de Console do Windows** no painel central.
 
-    Se o modelo de projeto do **Aplicativo de Console** não for exibido, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho *Desenvolvimento para desktop com .NET** e, em seguida, selecione **Modificar**.
+    Se o modelo de projeto do **Aplicativo de Console do Windows** não for exibido, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
 
 3. Digite um nome como **get-started-debugging** e clique em **OK**.
 
     O Visual Studio cria o projeto.
 
-4. Em *Program.cs*, substitua o código a seguir
+4. Em *get-started-debugging.cpp*, substitua o código a seguir
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
-    namespace get_started_debugging
+    ```c++
+    int main()
     {
-        class Program
-        {
-            static void Main(string[] args)
-            {
-            }
-        }
+        return 0;
     }
     ```
 
     com este código:
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
+    ```c++
+    #include "pch.h"
 
-    public class Shape
+    #include <string>
+    #include <vector>
+    #include <iostream>
+
+    class Shape
     {
-        // A few example members
-        public int X { get; private set; }
-        public int Y { get; private set; }
-        public int Height { get; set; }
-        public int Width { get; set; }
-   
+        int privateX = 0;
+        int privateY = 0;
+        int privateHeight = 0;
+        int privateWidth = 0;
+
+        int getX() const { return privateX; }
+        void setX(int value) { privateX = value; }
+
+        int getY() const { return privateY; }
+        void setY(int value) { privateY = value; }
+
+        int getHeight() const { return privateHeight; }
+        void setHeight(int value) { privateHeight = value; }
+
+        int getWidth() const { return privateWidth; }
+        void setWidth(int value) { privateWidth = value; }
+
+        public:
         // Virtual method
-        public virtual void Draw()
+        virtual void Draw()
         {
-            Console.WriteLine("Performing base class drawing tasks");
+            std::wcout << L"Performing base class drawing tasks" << std::endl;
         }
-    }
+    };
 
-    class Circle : Shape
+    class Circle : public Shape
     {
-        public override void Draw()
+        public:
+        void Draw() override
         {
-            // Code to draw a circle...
-            Console.WriteLine("Drawing a circle");
-            base.Draw();
+        // Code to draw a circle...
+        std::wcout << L"Drawing a circle" << std::endl;
+        Shape::Draw();
         }
-    }
+    };
 
-    class Rectangle : Shape
+    class Rectangle : public Shape
     {
-        public override void Draw()
+        public:
+        void Draw() override
         {
-            // Code to draw a rectangle...
-            Console.WriteLine("Drawing a rectangle");
-            base.Draw();
+        // Code to draw a rectangle...
+        std::wcout << L"Drawing a rectangle" << std::endl;
+        Shape::Draw();
         }
-    }
+    };
 
-    class Triangle : Shape
+    class Triangle : public Shape
     {
-        public override void Draw()
+        public:
+        void Draw() override
         {
-            // Code to draw a triangle...
-            Console.WriteLine("Drawing a trangle");
-            base.Draw();
+        // Code to draw a triangle...
+        std::wcout << L"Drawing a trangle" << std::endl;
+        Shape::Draw();
         }
-    }
+    };
 
-    class Program
+    int main(std::vector<std::wstring> &args)
     {
-        static void Main(string[] args)
+        auto shapes = std::vector<Shape*>
         {
+            new Rectangle(),
+            new Triangle(),
+            new Circle()
+        };
 
-            var shapes = new List<Shape>
-            {
-                new Rectangle(),
-                new Triangle(),
-                new Circle()
-            };
-
-            foreach (var shape in shapes)
-            {
-                shape.Draw();
-            }
-
-            // Keep the console open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
+        for (auto shape : shapes)
+        {
+            shape->Draw();
         }
-
     }
 
     /* Output:
-        Drawing a rectangle
-        Performing base class drawing tasks
-        Drawing a triangle
-        Performing base class drawing tasks
-        Drawing a circle
-        Performing base class drawing tasks
+    Drawing a rectangle
+    Performing base class drawing tasks
+    Drawing a triangle
+    Performing base class drawing tasks
+    Drawing a circle
+    Performing base class drawing tasks
     */
     ```
 
@@ -171,7 +167,7 @@ Neste tutorial, você irá:
 
      **F5** inicia o aplicativo com o depurador anexado ao processo do aplicativo, mas nós ainda não fizemos nada de especial para examinar o código. Portanto, o aplicativo apenas é carregado e a saída do console é exibida.
 
-    ```cmd
+    ```
     Drawing a rectangle
     Performing base class drawing tasks
     Drawing a triangle
@@ -186,9 +182,9 @@ Neste tutorial, você irá:
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Definir um ponto de interrupção e iniciar o depurador
 
-1. No loop `foreach` da função `Main`, defina um ponto de interrupção clicando na margem esquerda da seguinte linha de código:
+1. No loop `for` da função `main`, defina um ponto de interrupção clicando na margem esquerda da seguinte linha de código:
 
-    `shape.Draw()`
+    `shape->Draw()`
 
     Aparece um círculo vermelho no qual você definiu o ponto de interrupção.
 
@@ -196,7 +192,7 @@ Neste tutorial, você irá:
 
 2. Pressione **F5** ou o botão **Iniciar Depuração** ![Start Debugging](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração", o aplicativo é iniciado e o depurador executa a linha de código em que você definiu o ponto de interrupção.
 
-    ![Definir e atingir um ponto de interrupção](../debugger/media/get-started-set-breakpoint.gif)
+    ![Definir e atingir um ponto de interrupção](../debugger/media/get-started-set-breakpoint-cpp.gif)
 
     A seta amarela representa a instrução na qual o depurador está em pausa, que também suspende a execução do aplicativo no mesmo ponto (essa instrução ainda não foi executada).
 
@@ -208,23 +204,23 @@ Neste tutorial, você irá:
 
 Geralmente, usamos atalhos de teclado aqui porque essa é uma boa maneira de executar o aplicativo rapidamente no depurador (os comandos equivalentes, como os comandos de menu, são mostrados entre parênteses).
 
-1. Enquanto estiver em pausa na chamada de método `shape.Draw` no método `Main`, pressione **F11** (ou escolha **Depurar > Intervir**) para avançar no código até a classe `Rectangle`.
+1. Enquanto estiver em pausa na chamada de método `shape->Draw` na função `main`, pressione **F11** (ou escolha **Depurar > Intervir**) para avançar no código até a classe `Rectangle`.
 
-     ![Usar F11 para intervir no código](../debugger/media/get-started-f11.png "F11 Intervir")
+     ![Usar F11 para intervir no código](../debugger/media/get-started-f11-cpp.png "F11 Intervir")
 
      F11 é o comando **Intervir**, que avança a execução do aplicativo uma instrução por vez. F11 é uma boa maneira de examinar o fluxo de execução com o máximo de detalhes. (Também vamos mostrar algumas outras opções para percorrer o código com mais rapidez.) Por padrão, o depurador ignora as partes do código que não são do usuário (se quiser saber mais detalhes, confira [Apenas Meu Código](../debugger/just-my-code.md)).
 
-2. Pressione **F10** (ou escolha **Depurar > Depuração Parcial**) algumas vezes até que o depurador pare na chamada de método `base.Draw`. Em seguida, pressione **F10** mais uma vez.
+2. Pressione **F10** (ou escolha **Depurar > Depuração Parcial**) algumas vezes até que o depurador pare na chamada de método `Shape::Draw`. Em seguida, pressione **F10** mais uma vez.
 
-     ![Usar F10 para Depuração Parcial do código](../debugger/media/get-started-step-over.png "F10 Depuração Parcial")
+     ![Usar F10 para Depuração Parcial do código](../debugger/media/get-started-step-over-cpp.png "F10 Depuração Parcial")
 
-     Observe neste momento que o depurador não intervém no método `Draw` da classe base (`Shape`). **F10** avança o depurador sem intervir em funções ou métodos no código do aplicativo (o código ainda é executado). Pressionando F10 na chamada de método `base.Draw` (em vez de **F11**), ignoramos o código de implementação de `base.Draw` (no qual talvez não estejamos interessados no momento).
+     Observe neste momento que o depurador não intervém no método `Draw` da classe base (`Shape`). **F10** avança o depurador sem intervir em funções ou métodos no código do aplicativo (o código ainda é executado). Pressionando F10 na chamada de método `Shape::Draw` (em vez de **F11**), ignoramos o código de implementação de `Draw` na classe base (no qual talvez não estejamos interessados no momento).
 
 ## <a name="navigate-code-using-run-to-click"></a>Navegar usando Executar até o Clique
 
-1. No editor de códigos, role para baixo e passe o mouse sobre o método `Console.WriteLine` na classe `Triangle` até que o botão verde **Executar até o Clique** ![Executar até o Clique](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apareça à esquerda.
+1. No editor de códigos, role para baixo e passe o mouse sobre o `std::cout` na classe `Triangle` até que o botão verde **Executar até o Clique** ![Executar até o Clique](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apareça à esquerda.
 
-     ![Usar o recurso Executar até o Clique](../debugger/media/get-started-run-to-click.png "Executar até o Clique")
+     ![Usar o recurso Executar até o Clique](../debugger/media/get-started-run-to-click-cpp.png "Executar até o Clique")
 
    > [!NOTE]
    > O botão **Executar até o Clique** é novo no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Se o botão de seta verde não for exibido, use **F11**, neste exemplo, para avançar o depurador até o lugar certo.
@@ -233,7 +229,7 @@ Geralmente, usamos atalhos de teclado aqui porque essa é uma boa maneira de exe
 
     O uso desse botão é semelhante à configuração de um ponto de interrupção temporário. **Executar até o Clique** é útil para abranger rapidamente uma região visível do código do aplicativo (você pode clicar em qualquer arquivo aberto).
 
-    O depurador avança para a implementação do método `Console.WriteLine` da classe `Triangle`.
+    O depurador avança para a implementação do método `std::cout` da classe `Triangle`.
 
     Durante a pausa, você poderá observar um erro de digitação! A saída "Drawing a trangle" contém um erro de digitação. Podemos corrigir isso aqui mesmo enquanto o aplicativo é executado no depurador.
 
@@ -241,7 +237,7 @@ Geralmente, usamos atalhos de teclado aqui porque essa é uma boa maneira de exe
 
 1. Clique em "Drawing a trangle" e digite uma correção, alterando "trangle" para "triangle".
 
-1. Pressione **F11** uma vez e veja que o depurador avançará novamente.
+1. Pressione **F11** uma vez, você verá uma mensagem que o código está recompilando e, em seguida, o depurador avançará novamente.
 
     > [!NOTE]
     > Dependendo de qual tipo de código você editar no depurador, será exibida uma mensagem de aviso. Em alguns cenários, o código precisará ser recompilado para que você possa continuar.
@@ -254,7 +250,7 @@ Digamos que você termine de examinar o método `Draw` na classe `Triangle` e qu
 
      Este comando retoma a execução do aplicativo (e avança o depurador) até que a função atual retorne.
 
-     Você deve ter voltado ao loop `foreach` no método `Main`.
+     Você deve ter voltado ao loop `for` no método `main`.
 
 ## <a name="restart-your-app-quickly"></a>Reinicie o aplicativo rapidamente
 
@@ -262,39 +258,35 @@ Clique no botão **Reiniciar** ![Reiniciar Aplicativo](../debugger/media/dbg-tou
 
 Ao pressionar **Reiniciar**, você economiza tempo em comparação com a opção de parar o aplicativo e reiniciar o depurador. O depurador é pausado no primeiro ponto de interrupção que é encontrado pela execução do código.
 
-O depurador para novamente no ponto de interrupção definido por você no método `shape.Draw()`.
+O depurador para novamente no ponto de interrupção definido por você no método `shape->Draw()`.
 
 ## <a name="inspect-variables-with-data-tips"></a>Inspecionar variáveis com dicas de dados
 
 Os recursos que permitem que você inspecione variáveis são uns dos mais úteis do depurador e há diferentes maneiras de fazer isso. Muitas vezes, ao tentar depurar um problema, você tenta descobrir se as variáveis estão armazenando os valores que elas deveriam conter em um momento específico.
 
-1. Durante a pausa no método `shape.Draw()`, passe o mouse sobre o objeto `shape` e veja o valor da propriedade padrão dele, que é o tipo de objeto `Rectangle`.
+1. Durante a pausa no método `shape->Draw()`, passe o mouse sobre o contêiner `shapes` (objeto de vetor) e veja o valor da propriedade padrão dele, a propriedade `size`, mostrando `size=3`.
 
-1. Expanda o objeto `shape` para ver todas as suas propriedades, assim como a propriedade `Height`, que tem um valor de 0.
+1. Expanda o objeto `shapes` para ver todas as suas propriedades, como o primeiro índice da matriz `[0]`, que tem um endereço de memória.
 
-1. Pressione **F10** (ou **Depurar** > **Depuração Parcial**) algumas vezes para iterar uma vez pelo loop `foreach`, pausando novamente em `shape.Draw()`.
+    Você pode expandir mais os objetos para exibir suas propriedades.
 
-1. Passe o mouse sobre o objeto shape novamente e, desta vez, você verá que você tenha um novo objeto com um tipo `Triangle`.
+1. Expanda o primeiro índice `[0]` para ver a propriedade `privateHeight` do retângulo.
 
-     ![Exibir uma dica de dados](../debugger/media/get-started-data-tip.gif "Exibir uma dica de dados")
+     ![Exibir uma dica de dados](../debugger/media/get-started-data-tip-cpp.png "Exibir uma dica de dados")
 
-    Muitas vezes, durante a depuração, você deseja uma maneira rápida de verificar valores de propriedade em variáveis, para ver se eles estão armazenando os valores que você espera que armazenem. As dicas de dados são uma boa maneira de fazer isso.
+     Muitas vezes, durante a depuração, queremos uma maneira rápida de verificar valores de propriedade em objetos e as dicas de dados são uma ótima maneira de fazer isso.
 
 ## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Inspecionar variáveis com as janelas Autos e Locais
 
 1. Examine a janela **Autos** na parte inferior do editor de códigos.
 
-    Se ela estiver fechada, abra-a enquanto está em pausa no depurador, escolhendo **Depurar** > **Janelas** > **Autos**.
+     ![Inspecionar variáveis na janela Autos](../debugger/media/get-started-autos-window-cpp.png "Janela Autos")
 
-1. Expanda o objeto `shapes`.
+    Na janela **Autos**, veja as variáveis e seus valores atuais. Para C++, a janela **Autos** mostra as variáveis nas três linhas de código anteriores.
 
-     ![Inspecionar variáveis na janela Autos](../debugger/media/get-started-autos-window.png "Janela Autos")
+2. Em seguida, examine a janela **Locais**, em uma guia ao lado da janela **Autos**.
 
-    Na janela **Autos**, veja as variáveis e seus valores atuais. A janela **Autos** mostra todas as variáveis usadas na linha atual ou a linha anterior (verifique a documentação para saber o comportamento específico a uma linguagem).
-
-1. Em seguida, examine a janela **Locais**, em uma guia ao lado da janela **Autos**.
-
-    A janela **Locais** mostra as variáveis que estão no [escopo](https://www.wikipedia.org/wiki/Scope_(computer_science)) atual, ou seja, o contexto de execução atual.
+    A janela **Locais** mostra as variáveis que estão no [escopo](https://www.wikipedia.org/wiki/Scope_(computer_science)) atual, ou seja, o contexto de execução de código atual.
 
 ## <a name="set-a-watch"></a>Definir uma inspeção
 
@@ -306,15 +298,13 @@ Os recursos que permitem que você inspecione variáveis são uns dos mais útei
 
 ## <a name="examine-the-call-stack"></a>Examinar a pilha de chamadas
 
-1. Durante a pausa no loop `foreach`, clique na janela **Pilha de Chamadas** que fica aberta por padrão no painel inferior direito.
+1. Durante a pausa no loop `for`, clique na janela **Pilha de Chamadas** que fica aberta por padrão no painel inferior direito.
 
-    Se ela estiver fechada, abra-a enquanto está em pausa no depurador, escolhendo **Depurar** > **Janelas** > **Pilha de Chamadas**.
+2. Pressione **F11** algumas vezes até que o depurador seja colocado em pausa no método `Shape::Draw` da classe `Rectangle` no editor de códigos. Examine a janela **Pilha de Chamadas**.
 
-2. Pressione **F11** algumas vezes até que o depurador seja colocado em pausa no método `Base.Draw` da classe `Triangle` no editor de códigos. Examine a janela **Pilha de Chamadas**.
+    ![Examinar a pilha de chamadas](../debugger/media/get-started-call-stack-cpp.png "ExamineCallStack")
 
-    ![Examinar a pilha de chamadas](../debugger/media/get-started-call-stack.png "ExamineCallStack")
-
-    A janela **Pilha de Chamadas** mostra a ordem em que os métodos e as funções são chamados. A linha superior mostra a função atual (o método `Triangle.Draw` neste aplicativo). A segunda linha mostra que `Triangle.Draw` foi chamado por meio do método `Main` e assim por diante.
+    A janela **Pilha de Chamadas** mostra a ordem em que os métodos e as funções são chamados. A linha superior mostra a função atual (o método `Rectangle::Draw` neste exemplo). A segunda linha mostra que `Rectangle::Draw` foi chamado por meio da função `main` e assim por diante.
 
    > [!NOTE]
    > A janela **Pilha de Chamadas** é semelhante à perspectiva de Depuração em alguns IDEs, como o Eclipse.
@@ -327,11 +317,11 @@ Os recursos que permitem que você inspecione variáveis são uns dos mais útei
 
 ## <a name="change-the-execution-flow"></a>Alterar o fluxo de execução
 
-1. Com o depurador em pausa na chamada de método `Circle.Draw`, use o mouse para segurar a seta amarela (o ponteiro de execução) à esquerda e movê-la uma linha para cima, até a chamada de método `Console.WriteLine`.
+1. Com o depurador em pausa na chamada de método `Shape::Draw`, use o mouse para segurar a seta amarela (o ponteiro de execução) à esquerda e movê-la uma linha para cima, até a chamada de método `std::cout`.
 
 1. Pressione **F11**.
 
-    O depurador executa novamente o método `Console.WriteLine` (você vê isso na saída da janela do console).
+    O depurador executa novamente o método `std::cout` (você vê isso na saída da janela do console).
 
     Alterando o fluxo de execução, você pode fazer coisas como testar caminhos de execução de código diferentes ou executar novamente o código sem reiniciar o depurador.
 
