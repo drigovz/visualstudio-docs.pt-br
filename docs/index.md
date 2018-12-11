@@ -6,12 +6,12 @@ titleSuffix: ''
 description: Saiba como usar o Visual Studio 2017 para desenvolver aplicativos, serviços e ferramentas na linguagem de sua escolha para suas plataformas e dispositivos.
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: 2508110634eeae708e678be8eb5af16a8ad50e24
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b509f5d34596f3db46d20157fd3ce1fd2cec3d7c
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066087"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160095"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -91,7 +91,7 @@ ms.locfileid: "53066087"
                                             <div class="cardText">
                                                 <h3>Saiba como usar o Visual Studio</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Iniciar um tour guiado</a></li>
+                                                    <li><a class="barLink" href="get-started/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Iniciar um tour guiado</a></li>
                                                     <li><a class="barLink" href="ide/index-writing-code.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />Gravar e editar código</a></li>
                                                     <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />Compilar seu código</a></li>
                                                     <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />Depurar seu código</a></li>
