@@ -1,5 +1,5 @@
 ---
-title: Fazer testes de interface do usuário codificados aguardarem eventos específicos no Visual Studio
+title: Fazer os testes de IU codificados aguardarem eventos específicos
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,54 +9,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a88980869d6eb7f8b30c4e1197f373f1895d52
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d1f077269ddfd736aa98b78c64c81170037853eb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295118"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894762"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Fazer os testes de IU codificados aguardarem eventos específicos durante a reprodução
 
 Na reprodução de um teste de IU codificado, é possível instruir o teste a aguardar a ocorrência de determinados eventos, como a exibição de uma janela, o desaparecimento da barra de progresso etc. Para fazer isso, use o método apropriado UITestControl.WaitForControlXXX(), conforme descrito na tabela a seguir. Para obter um exemplo de um teste de IU codificado que aguarda a habilitação de um controle usando o método <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, confira [Passo a passo: Criando, editando e mantendo um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- **Requisitos**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- Visual Studio Enterprise
+**Requisitos**
+
+Visual Studio Enterprise
 
 > [!TIP]
 > Você também pode adicionar atrasos antes de ações usando o Editor de teste de IU codificado. Para obter mais informações, confira [Como inserir um atraso antes de uma ação de interface do usuário usando o Editor de Teste de IU Codificado](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
 
+**Métodos UITestControl.WaitForControlXXX()**
 
- **Métodos UITestControl.WaitForControlXXX()**
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
+Aguarda até que o controle esteja pronto para aceitar a entrada do mouse e do teclado. O mecanismo implicitamente solicita que essa API para todas as ações aguarde até que controle esteja pronto antes de realizar qualquer operação. No entanto, em determinados cenários complexos, você precisará fazer a chamada explícita.
 
- Aguarda até que o controle esteja pronto para aceitar a entrada do mouse e do teclado. O mecanismo implicitamente solicita que essa API para todas as ações aguarde até que controle esteja pronto antes de realizar qualquer operação. No entanto, em determinados cenários complexos, você precisará fazer a chamada explícita.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
+Aguarda o controle ser habilitado quando o assistente está fazendo alguma validação assíncrona da entrada ao fazer chamadas para o servidor. Por exemplo, você pode aguardar até que o botão **Avançar** do assistente esteja habilitado (). Para obter um exemplo desse método, confira [Passo a passo: Criando, editando e mantendo um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- Aguarda o controle ser habilitado quando o assistente está fazendo alguma validação assíncrona da entrada ao fazer chamadas para o servidor. Por exemplo, você pode aguardar até que o botão **Avançar** do assistente esteja habilitado (). Para obter um exemplo desse método, confira [Passo a passo: Criando, editando e mantendo um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
+Aguarda até que o controle apareça na interface do usuário. Por exemplo, você está esperando uma caixa de diálogo de erro depois que o aplicativo fez a validação dos parâmetros. O tempo necessário para a validação é variável. Você pode usar esse método para aguardar a caixa de diálogo de erro.
 
- Aguarda até que o controle apareça na interface do usuário. Por exemplo, você está esperando uma caixa de diálogo de erro depois que o aplicativo fez a validação dos parâmetros. O tempo necessário para a validação é variável. Você pode usar esse método para aguardar a caixa de diálogo de erro.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
+Aguarda até que o controle desapareça da interface do usuário. Por exemplo, você pode aguardar até que a barra de progresso desapareça.
 
- Aguarda até que o controle desapareça da interface do usuário. Por exemplo, você pode aguardar até que a barra de progresso desapareça.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
+Aguarda até que propriedade especificada do controle tenha o valor especificado. Por exemplo, você aguarda até que o texto de status seja alterado para **Concluído**.
 
- Aguarda até que propriedade especificada do controle tenha o valor especificado. Por exemplo, você aguarda até que o texto de status seja alterado para **Concluído**.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
+Aguarda até que a propriedade especificada do controle tenha o oposto do valor especificado. Por exemplo, você aguarda até que a caixa de edição não seja somente leitura, isto é, editável.
 
- Aguarda até que a propriedade especificada do controle tenha o oposto do valor especificado. Por exemplo, você aguarda até que a caixa de edição não seja somente leitura, isto é, editável.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
-
- Aguarda até que o predicado especificado volte a ser `true`. Isso pode ser usado em operações de espera complexas (como condições OR) em um determinado controle. Por exemplo, você pode aguardar até que o texto de status seja **Êxito** ou **Falha**, conforme mostrado no código a seguir:
+Aguarda até que o predicado especificado volte a ser `true`. Isso pode ser usado em operações de espera complexas (como condições OR) em um determinado controle. Por exemplo, você pode aguardar até que o texto de status seja **Êxito** ou **Falha**, conforme mostrado no código a seguir:
 
 ```csharp
 

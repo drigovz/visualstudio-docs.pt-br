@@ -1,5 +1,5 @@
 ---
-title: Padrões de carga para testes de carga no Visual Studio
+title: Padrões de carga para teste de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fb5e63f8c33267d622271221271ba8e71bb6f205
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a15f771d2afa2b5c8e02eed99b3168a537365a3f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862496"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895295"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Editar padrões de carga para modelar atividades de usuário virtual
 
@@ -27,6 +27,8 @@ O padrão de carga é um componente de um cenário. Os cenários, com os padrõe
 
 > [!NOTE]
 > Em todos os padrões de carga, a carga que o Visual Studio gera é uma carga simulada de usuários virtuais.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="load-patterns"></a>Padrões de carga
 

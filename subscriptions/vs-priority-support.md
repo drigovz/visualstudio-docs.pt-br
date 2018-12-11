@@ -1,26 +1,24 @@
 ---
-title: Benefício de Suporte Prioritário da assinatura do Visual Studio | Microsoft Docs
+title: Benefício da Comunidade de Desenvolvedores na Assinatura do Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/07/2018
+ms.date: 12/04/2018
 ms.topic: Get-Started-Article
-description: Saiba mais sobre o benefício de Suporte Prioritário incluído nas assinaturas do Visual Studio.
+description: Saiba mais sobre o benefício da Comunidade de Desenvolvedores incluído nas assinaturas do Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7eb168f8163d75e01ac688439780fd7d65df3506
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866734"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896647"
 ---
-# <a name="priority-support-in-visual-studio-subscriptions"></a>Suporte Prioritário em assinaturas do Visual Studio
+# <a name="developer-community-support-in-visual-studio-subscriptions"></a>Suporte da Comunidade de Desenvolvedores em assinaturas do Visual Studio
 
-O benefício de Suporte Prioritário fornece acesso a uma variedade de fóruns da comunidade de suporte em que você pode pesquisar postagens existentes ou fazer novas perguntas.  Se a comunidade não responder sua dúvida dentro de dois dias, a equipe de suporte da Microsoft fornecerá uma resposta.
-
-Os assinantes com assinaturas selecionadas do Visual Studio estão qualificados para receber suporte prioritário por meio de um grande número de fóruns que abrangem diversos tópicos.  Clique em qualquer um dos links abaixo para ir diretamente para esse fórum.  
+O benefício da Comunidade de Desenvolvedores fornece acesso a uma variedade de fóruns da comunidade de suporte em que você pode pesquisar postagens existentes ou fazer novas perguntas. Clique em qualquer um dos links abaixo para ir diretamente para esse fórum.  
 
 ## <a name="included-forums"></a>Fóruns incluídos
 

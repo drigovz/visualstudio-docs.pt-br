@@ -1,5 +1,5 @@
 ---
-title: Incluir gravações de tela e de voz durante testes usando configurações de teste no Visual Studio
+title: Tela de registro e de voz durante testes
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c213d7f7119b2c7310212f61c140177ef7c84c76
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321067"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894407"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Como incluir gravações da tela e de voz durante testes usando as configurações de teste
 
@@ -25,6 +25,8 @@ No editor de configuração do Visual Studio, é possível configurar o adaptado
 > As gravações de tela e voz não dão suporte a várias configurações de monitor.
 
 O gravador de tela e voz pode ser usado com testes manuais ou automatizados. Por exemplo, se executar um teste de IU codificado remotamente, você talvez queira gravar a área de trabalho para ver o teste de IU codificado à medida que ele é executado. Para obter informações sobre como capturar uma gravação de tela e de voz remotamente, confira [Como configurar o agente de teste para executar testes que interagem com a área de trabalho](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Para configurar a gravação de voz e tela para suas configurações de teste
 

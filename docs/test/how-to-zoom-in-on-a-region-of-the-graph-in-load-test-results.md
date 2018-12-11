@@ -13,43 +13,45 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3a5d07e4267291e30f85b1b16b49213ab119cd1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa5f6b3c5f4069a0b62fa6433c8ecef527558a0d
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932345"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895880"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Como ampliar uma região do grafo nos resultados do teste de carga
 
 Após a conclusão de um teste de carga, você poderá usar as barras de zoom para ampliar e rolar para uma região do gráfico. Ao ampliar, você pode examinar detalhadamente os dados que foram gerados durante uma execução de teste de carga.
 
-> [!NOTE]
-> A ampliação estará disponível somente quando você estiver analisando o resultado de um teste de carga concluído, não enquanto você estiver observando os resultados de um teste em execução.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- O controle de zoom fica visível apenas no **Analisador de Teste de Carga** quando você exibe um resultado do teste de carga no modo de zoom. O modo de zoom será estabelecido na Exibição de gráfico quando um teste de carga for concluído ou um teste de carga que foi executado anteriormente for carregado. Mostre ou oculte os controles de zoom nos grafos usando **Mostrar Controles de Zoom** na barra de ferramentas.
+A ampliação estará disponível somente quando você estiver analisando o resultado de um teste de carga concluído, não enquanto você estiver observando os resultados de um teste em execução.
 
- O **zoom do eixo x horizontal** pode ser ajustado para analisar períodos específicos durante o teste de carga. O **zoom do eixo y vertical** pode ser ajustado para analisar intervalos de valores específicos dos contadores incluídos no grafo.
+O controle de zoom fica visível apenas no **Analisador de Teste de Carga** quando você exibe um resultado do teste de carga no modo de zoom. O modo de zoom será estabelecido na Exibição de gráfico quando um teste de carga for concluído ou um teste de carga que foi executado anteriormente for carregado. Mostre ou oculte os controles de zoom nos grafos usando **Mostrar Controles de Zoom** na barra de ferramentas.
 
- Os controles de zoom da **linha do tempo horizontal** e do **intervalo de valores vertical** podem ser ajustados usando o mouse. O **controle de linha do tempo horizontal** também pode ser ajustado usando as teclas de direção para a esquerda e para a direita. Usando as teclas de seta para ajustar o controle de zoom, você pode ajustar o intervalo de janelas em 1 intervalo de amostragem por vez. O uso das teclas **Shift** e de direção faz ajustes de 10 intervalos de amostragem.
+O **zoom do eixo x horizontal** pode ser ajustado para analisar períodos específicos durante o teste de carga. O **zoom do eixo y vertical** pode ser ajustado para analisar intervalos de valores específicos dos contadores incluídos no grafo.
 
- Para ajustar o controle de zoom usando a tecla de direção, primeiro defina o foco no controle de zoom usando a tecla **Tab**. Quando o controle deslizante esquerdo tiver o foco, as teclas de seta moverão o limite inicial da janela de zoom em 1 intervalo para a esquerda ou para a direita. Quando o foco estiver no controle deslizante central, você poderá usar as teclas de seta para rolar a janela de zoom para a esquerda ou para a direita 1 intervalo de amostragem sem alterar o tamanho da janela de zoom. E, por fim, o controle deslizante do lado direito é movido, estendendo ou reduzindo o intervalo do fim da janela de zoom em 1 intervalo de amostragem.
+Os controles de zoom da **linha do tempo horizontal** e do **intervalo de valores vertical** podem ser ajustados usando o mouse. O **controle de linha do tempo horizontal** também pode ser ajustado usando as teclas de direção para a esquerda e para a direita. Usando as teclas de seta para ajustar o controle de zoom, você pode ajustar o intervalo de janelas em 1 intervalo de amostragem por vez. O uso das teclas **Shift** e de direção faz ajustes de 10 intervalos de amostragem.
 
- Para retornar os controles de zoom horizontal e vertical para mostrar os intervalos de valores e linha do tempo completos, você pode usar a opção **Aplicar zoom horizontal**, a opção **Aplicar zoom vertical** ou a opção **Aplicar zoom para ambos** no menu pop-up do gráfico.
+Para ajustar o controle de zoom usando a tecla de direção, primeiro defina o foco no controle de zoom usando a tecla **Tab**. Quando o controle deslizante esquerdo tiver o foco, as teclas de seta moverão o limite inicial da janela de zoom em 1 intervalo para a esquerda ou para a direita. Quando o foco estiver no controle deslizante central, você poderá usar as teclas de seta para rolar a janela de zoom para a esquerda ou para a direita 1 intervalo de amostragem sem alterar o tamanho da janela de zoom. E, por fim, o controle deslizante do lado direito é movido, estendendo ou reduzindo o intervalo do fim da janela de zoom em 1 intervalo de amostragem.
+
+Para retornar os controles de zoom horizontal e vertical para mostrar os intervalos de valores e linha do tempo completos, você pode usar a opção **Aplicar zoom horizontal**, a opção **Aplicar zoom vertical** ou a opção **Aplicar zoom para ambos** no menu pop-up do gráfico.
 
 > [!TIP]
 > É possível usar **Sincronizar controles de zoom horizontal** na barra de ferramentas para ativar ou desativar a sincronização de zoom horizontal automática. Com a sincronização ativada, qualquer zoom que você aplicar a um grafo também será aplicado aos outros grafos na exibição Grafos.
 
- ![Controle de zoom do modo de exibição de grafo](../test/media/ltest_zoomcontrol.png) Controle de zoom do modo de exibição de grafo
+![Controle de zoom da exibição de grafo](../test/media/ltest_zoomcontrol.png)
 
- Na ilustração anterior, foi aplicado zoom no grafo **Sistema em Teste** para investigação de problemas de limite. As violações de limite foram habilitadas usando **Mostrar violações de limite no gráfico** no menu suspenso **Opções de gráfico** na barra de ferramentas.
+Na ilustração anterior, foi aplicado zoom no grafo **Sistema em Teste** para investigação de problemas de limite. As violações de limite foram habilitadas usando **Mostrar violações de limite no gráfico** no menu suspenso **Opções de gráfico** na barra de ferramentas.
 
- Para obter mais informações, confira [Analisar os resultados do teste de carga na exibição Grafo](../test/analyze-load-test-results-in-the-graphs-view.md).
+Para obter mais informações, confira [Analisar os resultados do teste de carga na exibição Grafo](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="display-graphs"></a>Exibir grafos
- Antes de modificar a exibição de um gráfico ampliando ou reduzindo, ou rolando, siga este procedimento para exibir gráficos.
 
-### <a name="to-display-graphs"></a>Para exibir gráficos
+Antes de modificar a exibição de um gráfico ampliando ou reduzindo, ou rolando, siga este procedimento para exibir gráficos.
+
+Para exibir gráficos:
 
 1.  Execute um teste de carga até que ele seja todo concluído.
 
@@ -68,7 +70,8 @@ Após a conclusão de um teste de carga, você poderá usar as barras de zoom pa
      Cada barra de zoom tem duas alças. Uma alça é uma área retangular em cada extremidade da barra de zoom.
 
 ## <a name="zoom-and-scroll"></a>Zoom e rolagem
- Quando vários gráficos forem exibidos, você poderá mantê-los sincronizados para que exibam a mesma parte da execução de teste de carga.
+
+Quando vários gráficos forem exibidos, você poderá mantê-los sincronizados para que exibam a mesma parte da execução de teste de carga.
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>Para sincronizar a ampliação e a rolagem
 
