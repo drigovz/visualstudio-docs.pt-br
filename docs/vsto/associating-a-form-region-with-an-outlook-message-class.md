@@ -13,17 +13,17 @@ dev_langs:
 helpviewer_keywords:
 - FormRegionMessageClassAttribute
 - form regions [Office development in Visual Studio], message classes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e28653749b19c9f53bd8e43e245fd8dcb20aa31
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: b9614a0feab70dd97cfd64861737c8b42dd146b7
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050256"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248027"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associar uma região de formulário uma classe de mensagem do Outlook
   Você pode especificar quais itens do Microsoft Office Outlook exibem uma região de formulário por meio da associação a região do formulário com a classe message de cada item. Por exemplo, se você deseja acrescentar uma região de formulário na parte inferior de um item de email, você pode associar a região do formulário com o `IPM.Note` classe de mensagem.  
@@ -48,7 +48,7 @@ ms.locfileid: "50050256"
  Você também pode especificar os nomes das classes de mensagem personalizada. Classes de mensagem personalizada identificam formulários personalizados que você define no Outlook.  
   
 > [!NOTE]  
->  Para conhecer as regiões de formulário Substituir tudo e substituição, você pode especificar um novo nome de classe de mensagem personalizada. Você não precisa usar o nome de classe de mensagem de um formulário personalizado existente. O nome da classe de mensagem personalizada deve ser exclusivo. Uma maneira de garantir que o nome seja exclusivo é usar uma convenção de nomenclatura semelhante à seguinte: \< *StandardMessageClassName*>.\< *Empresa*>.\< *MessageClassName*> (por exemplo: `IPM.Note.Contoso.MyMessageClass`).  
+>  Para conhecer as regiões de formulário Substituir tudo e substituição, você pode especificar um novo nome de classe de mensagem personalizada. Você não precisa usar o nome de classe de mensagem de um formulário personalizado existente. O nome da classe de mensagem personalizada deve ser exclusivo. Uma maneira de garantir que o nome seja exclusivo é usar uma convenção de nomenclatura semelhante ao seguinte: \<*StandardMessageClassName*>.\< *Empresa*>.\< *MessageClassName*> (por exemplo: `IPM.Note.Contoso.MyMessageClass`).  
   
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associar uma região de formulário uma classe de mensagem do Outlook  
  Há duas maneiras de associar uma região de formulário uma classe de mensagem:  
@@ -60,7 +60,7 @@ ms.locfileid: "50050256"
 ### <a name="use-the-new-outlook-form-region-wizard"></a>Use o Assistente de nova região de formulário do Outlook  
  Na página final do **nova região de formulário do Outlook** assistente, você pode selecionar as classes de mensagem padrão e digite os nomes das classes de mensagem personalizada que você deseja associar à região do formulário.  
   
- As classes de mensagem padrão não estão disponíveis se a região do formulário foi projetada para substituir todo o formulário ou a página padrão de um formulário. Você pode especificar nomes de classe de mensagem padrão somente para formulários que adicionar uma nova página a um formulário ou que são acrescentados à parte inferior de um formulário. Para obter mais informações, consulte [como: adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+ As classes de mensagem padrão não estão disponíveis se a região do formulário foi projetada para substituir todo o formulário ou a página padrão de um formulário. Você pode especificar nomes de classe de mensagem padrão somente para formulários que adicionar uma nova página a um formulário ou que são acrescentados à parte inferior de um formulário. Confira mais informações em [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
  Para incluir uma ou mais classes de mensagem personalizada, digite os nomes na **quais classes de mensagem personalizadas exibirão esta região do formulário?** caixa.  
   
@@ -99,7 +99,7 @@ ms.locfileid: "50050256"
   
 - Não exceda 256 caracteres para cada nome de classe de mensagem.  
   
-- Não inclua os nomes das classes de mensagem padrão se a região do formulário substitui todo o formulário ou a página padrão de um formulário. Você pode especificar nomes de classe de mensagem padrão somente para formulários que adicionar uma nova página a um formulário ou que são acrescentados à parte inferior de um formulário. Para obter mais informações, consulte [como: adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+- Não inclua os nomes das classes de mensagem padrão se a região do formulário substitui todo o formulário ou a página padrão de um formulário. Você pode especificar nomes de classe de mensagem padrão somente para formulários que adicionar uma nova página a um formulário ou que são acrescentados à parte inferior de um formulário. Confira mais informações em [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
   Quando você compila o projeto, o Visual Studio valida o formato dos nomes de classe de mensagem.  
   

@@ -1,6 +1,6 @@
 ---
-title: 'Passo a passo: Depurando um formulário da Web | Microsoft Docs'
-ms.custom: ''
+title: Depurar um formulário da Web | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67eba0d7a439583d8486f8937693a63e65dca0d6
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: d28ebc797715614aefaf7206f170157d4f4485f2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389598"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055148"
 ---
-# <a name="walkthrough-debugging-a-web-form"></a>Instruções passo a passo: depurando um formulário Web
+# <a name="walkthrough-debugging-a-web-form"></a>Passo a passo: Depuração de um formulário da Web
 As etapas deste passo a passo mostram como depurar um aplicativo Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], também conhecido como um Web Form. Mostra como iniciar e interromper a execução, definir pontos de interrupção e examinar variáveis na janela **Inspeção**.
 
 > [!NOTE]
@@ -69,7 +69,7 @@ As caixas de diálogo e os comandos do menu que você vê podem ser diferentes d
 
 11. Clique duas vezes no controle de botão que você removeu.
 
-     Isso leva à página de código: Default.aspx.cs para C# ou Default.aspx.vb para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. O cursor deve estar na função `Button1_Click`.
+     Isso leva à página de código. Default.aspx.cs para c# ou default para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. O cursor deve estar na função `Button1_Click`.
 
 12. Na função `Button1_Click`, adicione o seguinte código:
 

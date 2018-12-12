@@ -15,17 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], calling code from other solutions
 - interoperability [Office development in Visual Studio]
 - calling code from VBA
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7849f0df8f7e2f29c34b129dbf8e684424711b44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9290fcdd705f6f38b4b7e91e46d5b635f1e309ff
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904642"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248092"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Chamar o código no VSTO Add-ins de outras soluções do Office
   Você pode expor um objeto no seu suplemento do VSTO para outras soluções, incluindo outras soluções do Microsoft Office. Isso é útil se o suplemento do VSTO fornece um serviço que você deseja habilitar usar outras soluções. Por exemplo, se você tiver um suplemento do VSTO para o Microsoft Office Excel que executa cálculos nos dados financeiros de um serviço Web, outras soluções podem executar esses cálculos chamando o suplemento do VSTO do Excel em tempo de execução.  
@@ -77,7 +77,7 @@ ms.locfileid: "49904642"
   
    -   Defina as **registrar para interoperabilidade COM** propriedade no projeto em que você define a interface. Esta propriedade é necessária apenas se você quiser permitir que os clientes usam associação inicial para chamar o suplemento do VSTO.  
   
-   O exemplo de código a seguir demonstra uma `AddInUtilities` classe com um `ImportData` método que pode ser chamado por outras soluções. Para ver esse código no contexto de um passo a passo maior, consulte [instruções passo a passo: chamar o código em um suplemento do VSTO do VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+   O exemplo de código a seguir demonstra uma `AddInUtilities` classe com um `ImportData` método que pode ser chamado por outras soluções. Para ver esse código no contexto de um passo a passo maior, consulte [passo a passo: Chamar o código em um suplemento do VSTO do VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
    [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
    [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
@@ -95,7 +95,7 @@ ms.locfileid: "49904642"
  Para obter mais informações sobre o uso de threads em soluções do Office, consulte [suporte a Threading no Office](../vsto/threading-support-in-office.md).  
   
 ### <a name="override-the-requestcomaddinautomationservice-method"></a>Substitua o método RequestComAddInAutomationService  
- O exemplo de código a seguir demonstra como substituir <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> no `ThisAddIn` classe no seu suplemento do VSTO. O exemplo supõe que você definiu uma classe chamada `AddInUtilities` que você deseja expor para outras soluções. Para ver esse código no contexto de um passo a passo maior, consulte [instruções passo a passo: chamar o código em um suplemento do VSTO do VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+ O exemplo de código a seguir demonstra como substituir <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> no `ThisAddIn` classe no seu suplemento do VSTO. O exemplo supõe que você definiu uma classe chamada `AddInUtilities` que você deseja expor para outras soluções. Para ver esse código no contexto de um passo a passo maior, consulte [passo a passo: Chamar o código em um suplemento do VSTO do VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
  [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
  [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]  
@@ -114,7 +114,7 @@ ms.locfileid: "49904642"
    A maneira que você use o valor de retorno da propriedade COMAddIn.Object é diferente para os clientes do VBA e não VBA. Para clientes fora do processo, o código adicional é necessário para evitar uma possível condição de corrida.  
   
 ### <a name="access-objects-from-vba-solutions"></a>Objetos de acesso de soluções do VBA  
- O exemplo de código a seguir demonstra como usar o VBA para chamar um método que é exposto por um suplemento do VSTO. Essa macro VBA chama um método chamado `ImportData` que está definido em um suplemento VSTO chamado **ExcelImportData**. Para ver esse código no contexto de um passo a passo maior, consulte [instruções passo a passo: chamar o código em um suplemento do VSTO do VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+ O exemplo de código a seguir demonstra como usar o VBA para chamar um método que é exposto por um suplemento do VSTO. Essa macro VBA chama um método chamado `ImportData` que está definido em um suplemento VSTO chamado **ExcelImportData**. Para ver esse código no contexto de um passo a passo maior, consulte [passo a passo: Chamar o código em um suplemento do VSTO do VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ```vb
 Sub CallVSTOMethod()  
@@ -149,7 +149,7 @@ utilities.ImportData();
  [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md)   
  [Passo a passo: Chamar o código em um suplemento do VSTO do VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)   
- [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Personalizar os recursos de interface do usuário usando interfaces de extensibilidade](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   

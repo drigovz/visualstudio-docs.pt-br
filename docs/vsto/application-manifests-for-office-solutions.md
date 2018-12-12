@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: df388fb346c43f173ec1f96e3869088d7ce5b9dc
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9665be31a59de33713f981889bc8cb8a8cb55eea
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50744932"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248170"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Manifestos de aplicativo para soluções do Office
   Um manifesto de aplicativo é um arquivo XML que descreve os assemblies que são carregados em uma solução do Microsoft Office. Usam as ferramentas de desenvolvimento do Microsoft Office no Visual Studio a [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] esquema de manifesto de aplicativo definida na [manifesto do aplicativo ClickOnce](/visualstudio/deployment/clickonce-application-manifest) referência.  
@@ -93,7 +93,7 @@ ms.locfileid: "50744932"
 |[&#60;vstoRuntime&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|Necessário. Descreve uma versão específica do Visual Studio Tools para Office runtime que é compatível com a solução do Office.|**release**<br /><br /> **version**<br /><br /> **supportUrl**|  
   
 ## <a name="remarks"></a>Comentários  
- Você pode editar manualmente o aplicativo e manifestos de implantação em soluções do Office. Depois disso, você deve reassinar o aplicativo e manifestos de implantação usando o Manifest Generation and Editing Tool (*mage.exe* e *mageui.exe*). Para obter mais informações, consulte [como: assinar novamente os manifestos de aplicativo e implantação](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
+ Você pode editar manualmente o aplicativo e manifestos de implantação em soluções do Office. Depois disso, você deve reassinar o aplicativo e manifestos de implantação usando o Manifest Generation and Editing Tool (*mage.exe* e *mageui.exe*). Confira mais informações em [Como: Assinar novamente os manifestos de aplicativo e implantação](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
   
 ## <a name="file-location"></a>Local do arquivo  
  Um manifesto de aplicativo é específico para uma única versão de uma solução. Por esse motivo, os manifestos de aplicativo devem ser armazenados separadamente dos manifestos de implantação. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] coloca os arquivos específicos de versão em um subdiretório chamado depois da versão associada na *arquivos de aplicativo* subdiretório na pasta publish.  

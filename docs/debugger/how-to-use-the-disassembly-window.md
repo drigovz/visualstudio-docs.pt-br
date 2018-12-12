@@ -1,6 +1,6 @@
 ---
-title: Exibir o código de desmontagem no depurador no Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Exibir o código de desmontagem no depurador | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/30/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9cf75915b3ca17df1ee9e2ef41040147c146ea8
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c35432bdd01b9b79c2afaa266d8078caf04bd62b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52387663"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063830"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Exibir o código de desmontagem no depurador do Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -74,4 +74,4 @@ Uma seta amarela na margem esquerda marca o ponto de execução atual. Para cód
 
 * [Paginação para cima ou para baixo na memória](../debugger/how-to-page-up-or-down-in-memory.md)
 * [Exibição de dados no depurador](../debugger/viewing-data-in-the-debugger.md)
-* [Como usar a janela Registros](../debugger/how-to-use-the-registers-window.md)
+* [Como: Usar a janela registros](../debugger/how-to-use-the-registers-window.md)
