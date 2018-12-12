@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], building
 - application development [Office development in Visual Studio], debugging
 - Office solutions [Office development in Visual Studio], debugging
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 989014bb512ec77af908d823390b1e95b9a7872c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847572"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248225"
 ---
 # <a name="build-office-solutions"></a>Compilar soluções do Office
   Em geral, compilar e depurar projetos do Office é o mesmo que a compilação e depuração de outros tipos de projetos no Visual Studio, como o Windows Forms. Os tópicos nesta seção explicam as diferenças que existem. Para obter informações gerais sobre como criar aplicativos, consulte [compilar e criar no Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -100,7 +100,7 @@ ms.locfileid: "49847572"
 ## <a name="change-the-platform-target"></a>Alterar a plataforma de destino  
  Por padrão, é o destino da plataforma para projetos do Office **qualquer CPU**. Normalmente, você não deve alterar essa configuração. Soluções do Office que são criadas com o **qualquer CPU** configuração de execução em versões de 32 bits e 64 bits do Microsoft destino da plataforma [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ou [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].  
   
- Você deve definir o destino da plataforma x64 somente se você estiver criando uma solução que será executado apenas em versões de 64 bits do Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ou [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)], e sua solução chama APIs nativas de 64 bits. Para obter mais informações sobre como alterar a configuração de destino da plataforma, consulte [como: configurar projetos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md).  
+ Você deve definir o destino da plataforma x64 somente se você estiver criando uma solução que será executado apenas em versões de 64 bits do Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ou [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)], e sua solução chama APIs nativas de 64 bits. Para obter mais informações sobre como alterar a configuração de destino da plataforma, consulte [como: Configurar projetos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md).  
   
  Se você definir o destino da plataforma como x64, a solução não será executado em versões de 32 bits do Windows ou do Office. Plataforma de destino requer a solução seja executada em um processo de 64 bits x64.  
   
@@ -113,7 +113,7 @@ ms.locfileid: "49847572"
 |-----------|-----------------|  
 |[Depurar projetos do Office](../vsto/debugging-office-projects.md)|Apresenta os problemas envolvidos na depuração de projetos do Office.|  
 |[Passo a passo: Criar a primeira personalização no nível de documento para Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Demonstra como criar uma personalização básica de nível de documento para Excel.|  
-|[Como: habilitar novamente um suplemento VSTO que tenha sido desabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Descreve como reabilitar um suplemento VSTO que foi desabilitado rígida ou flexível.|  
+|[Como: Reabilitar um suplemento VSTO que tenha sido desabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Descreve como reabilitar um suplemento VSTO que foi desabilitado rígida ou flexível.|  
 |[Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)|Fornece links para informações sobre como criar soluções do Office e sobre a função de assemblies em sua solução.|  
   
   
