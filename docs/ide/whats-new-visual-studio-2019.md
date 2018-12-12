@@ -1,10 +1,11 @@
 ---
 title: Novidades no Visual Studio 2019 Preview
+titleSuffix: ''
 description: Saiba mais sobre os novos recursos na versão prévia do Visual Studio 2019.
-ms.custom: ''
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev16
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -16,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 838065d01e67f230d37ee318231371707117ec07
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897152"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159744"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Novidades no Visual Studio 2019 Preview
 
@@ -86,7 +87,7 @@ E com o Visual Studio 2019 Preview, esse serviço é instalado por padrão.
 
 ### <a name="manage-pull-requests-prs-from-the-ide"></a>Gerenciar PRs (solicitações de pull) do IDE
 
-Estamos introduzindo uma nova extensão que você pode baixar para usar com o Visual Studio 2019 Preview. Com essa nova extensão, você pode examinar, executar e até mesmo depurar solicitações de pull de sua equipe sem sair do IDE [(ambiente de desenvolvimento integrado)](../ide/visual-studio-ide.md) do Visual Studio. Damos suporte a código no Azure Repos atualmente, mas estamos expandindo para dar suporte a GitHub e melhorar a experiência geral.
+Estamos introduzindo uma nova extensão que você pode baixar para usar com o Visual Studio 2019 Preview. Com essa nova extensão, você pode examinar, executar e até mesmo depurar solicitações de pull de sua equipe sem sair do IDE [(ambiente de desenvolvimento integrado)](../get-started/visual-studio-ide.md) do Visual Studio. Damos suporte a código no Azure Repos atualmente, mas estamos expandindo para dar suporte a GitHub e melhorar a experiência geral.
 
 Para começar agora mesmo, você pode baixar a extensão [Solicitações de pull para o Visual Studio](https://aka.ms/pr4vs) do Visual Studio Marketplace.
 
