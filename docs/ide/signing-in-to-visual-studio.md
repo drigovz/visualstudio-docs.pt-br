@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e947ec99ff0d63f413e00f5602035a7baa0bd708
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348325"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159848"
 ---
 # <a name="sign-in-to-visual-studio"></a>Entrar no Visual Studio
 
@@ -70,6 +70,6 @@ Se você encontrar problemas ao entrar, confira a página [Suporte para contas](
 ## <a name="see-also"></a>Consulte também
 
 * [Como Desbloquear o Visual Studio](../ide/how-to-unlock-visual-studio.md)
-* [Visão geral do Visual Studio IDE](../ide/visual-studio-ide.md)
+* [Visão geral do Visual Studio IDE](../get-started/visual-studio-ide.md)
 * [Entrar (Visual Studio para Mac)](/visualstudio/mac/signing-in)
 * [Ativação (Visual Studio para Mac)](/visualstudio/mac/activation)

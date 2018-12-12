@@ -1,5 +1,5 @@
 ---
-title: Comandos do Visual Studio
+title: Comandos
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,32 +14,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7344a1051385b57f92720e9ca671e6aeb1ec46b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da258aab0a9c4e100591bf33abff710b1cf54f53
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878995"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063455"
 ---
 # <a name="visual-studio-commands"></a>Comandos do Visual Studio
+
 Os comandos do Visual Studio permitem invocar um comando na janela **Comando**, janela **Imediato** ou na caixa **Localizar/Comando**. Em cada caso, o sinal maior que (`>`) é usado para indicar que um comando deve ser seguido em vez de uma operação de pesquisa ou de depuração.
 
- É possível encontrar uma lista completa de comandos e sua sintaxe na caixa de diálogo **Teclado, Opções de Ambiente**.
+É possível encontrar uma lista completa de comandos e sua sintaxe na caixa de diálogo **Teclado, Opções de Ambiente**.
 
- O caractere de escape para comandos do Visual Studio é um caractere de circunflexo (^), que significa que o caractere imediatamente depois dele é interpretado literalmente, em vez de interpretado como um caractere de controle. Isso pode ser usado para inserir aspas retas ("), espaços, barras iniciais, acentos circunflexos ou quaisquer outros caracteres literais em um parâmetro ou valor de opção, com a exceção de nomes de opção. Por exemplo,
+O caractere de escape para comandos do Visual Studio é um caractere de circunflexo (^), que significa que o caractere imediatamente depois dele é interpretado literalmente, em vez de interpretado como um caractere de controle. Isso pode ser usado para inserir aspas retas ("), espaços, barras iniciais, acentos circunflexos ou quaisquer outros caracteres literais em um parâmetro ou valor de opção, com a exceção de nomes de opção. Por exemplo,
 
 ```
 >Edit.Find ^^t /regex
 ```
 
- Um acento circunflexo funciona da mesma forma tanto dentro quanto fora das aspas. Se um acento circunflexo for o último caractere na linha, ele será ignorado.
+Um acento circunflexo funciona da mesma forma tanto dentro quanto fora das aspas. Se um acento circunflexo for o último caractere na linha, ele será ignorado.
 
- Em versões localizadas do IDE, os nomes de comando podem ser inseridos na linguagem nativa do IDE ou em inglês. Por exemplo, é possível digitar `File.NewFile` ou `Fichier.NouveauFichier` no IDE francês para executar o mesmo comando.
+Em versões localizadas do IDE, os nomes de comando podem ser inseridos na linguagem nativa do IDE ou em inglês. Por exemplo, é possível digitar `File.NewFile` ou `Fichier.NouveauFichier` no IDE francês para executar o mesmo comando.
 
- Muitos comandos têm aliases. Para obter uma lista de aliases de comando, consulte [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md).
+Muitos comandos têm aliases. Para obter uma lista de aliases de comando, consulte [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md).
 
- Os comandos a seguir têm argumentos e/ou opções.
-
+Os comandos a seguir têm argumentos e/ou opções.
 
 | Nome do comando | Descrição |
 | - | - |
