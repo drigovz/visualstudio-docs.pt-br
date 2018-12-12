@@ -13,17 +13,17 @@ helpviewer_keywords:
 - deployment manifests [Office development in Visual Studio]
 - application manifests [Office development in Visual Studio]
 - assemblies [Office development in Visual Studio], updating
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f3fba49e90bbe0f5350a5d778b8591ec473807be
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bb4386469e02934045d9f1da45fe515dc9af5da2
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257996"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247953"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Manifestos de aplicativo e implantação em soluções do Office
   Um manifesto de aplicativo é um arquivo XML que fornece informações que são usadas por uma solução do Office para localizar e atualizar seus assemblies. Um manifesto de aplicativo pode ser usado com um manifesto de implantação, que é um arquivo XML armazenado no servidor que fornece as informações necessárias para localizar a versão mais atual do manifesto do aplicativo e assemblies.  

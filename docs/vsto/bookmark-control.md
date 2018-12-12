@@ -14,88 +14,88 @@ helpviewer_keywords:
 - Bookmark control, data binding
 - Bookmark control, events
 - Bookmark control
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 60ab9db37f3ed41de4afcdecbf2c9e83ffb5c2f6
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 242a4692bc75715e661244dc8f513d30cc9480ed
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264006"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248186"
 ---
 # <a name="bookmark-control"></a>controle Indicador
   O controle <xref:Microsoft.Office.Tools.Word.Bookmark> é um indicador que tem um nome exclusivo, expõe eventos e pode ser vinculado a dados. O indicador pode ser usado como um espaço reservado para marcar um item ou local em um documento do Microsoft Office Word. O <xref:Microsoft.Office.Tools.Word.Bookmark> controle é uma combinação de um <xref:Microsoft.Office.Interop.Word.Bookmark> objeto e um <xref:Microsoft.Office.Interop.Word.Range> objeto.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- Em projetos de nível de documento, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para o documento em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para qualquer documento aberto em tempo de execução. Para obter mais informações, consulte [como: Adicionar indicador controles a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
+ Em projetos de nível de documento, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para o documento em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para qualquer documento aberto no tempo de execução. Confira mais informações em [Como: Adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
 
 ## <a name="bind-data-to-the-control"></a>Associar dados ao controle
- Um <xref:Microsoft.Office.Tools.Word.Bookmark> controle oferece suporte à associação de dados simples. O indicador deve ser associado a uma fonte de dados usando o <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> propriedade. A propriedade de associação de dados padrão do indicador é o <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> propriedade.
+ Um <xref:Microsoft.Office.Tools.Word.Bookmark> controle dá suporte à vinculação de dados simples. O indicador deve ser associado a uma fonte de dados usando o <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> propriedade. A propriedade de associação de dados padrão do indicador é o <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> propriedade.
 
- Se os dados no conjunto de dados associado são atualizados, o <xref:Microsoft.Office.Tools.Word.Bookmark> controle mostra as alterações.
+ Se os dados no conjunto de dados associado forem atualizados, o <xref:Microsoft.Office.Tools.Word.Bookmark> controle mostra as alterações.
 
- Em projetos de nível de documento, você também pode associar dados a indicadores usando o **fontes de dados** janela. Para obter mais informações, consulte [como: preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md).
+ Em projetos de nível de documento, você também pode associar dados aos indicadores usando o **fontes de dados** janela. Confira mais informações em [Como: Preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md).
 
 ## <a name="formatting"></a>Formatação
  Formatação que pode ser aplicado a um <xref:Microsoft.Office.Interop.Word.Bookmark> pode ser aplicado a um <xref:Microsoft.Office.Tools.Word.Bookmark> controle. Essa formatação inclui fontes, recuos, espaçamento, numeração e estilos.
 
 ## <a name="assign-text-to-the-bookmark"></a>Atribuir o texto para o indicador
- Uma diferença adicional entre um <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> objeto e um <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> controle é como ele se comporta quando o texto é atribuído para o indicador. Se você atribuir o texto para um comprimento zero <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType>, o texto é anexado à direita do indicador e o indicador permanece comprimento zero. No entanto, se você atribuir o texto para um comprimento zero <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>, o texto será inserido no indicador e o comprimento do indicador se expande para o número total de caracteres inseridos.
+ Uma outra diferença entre um <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> objeto e um <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> controle é como ele se comporta quando o texto é atribuído para o indicador. Se você atribuir o texto a um comprimento de zero <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType>, o texto é acrescentado à direita do indicador e o indicador permanece tem comprimento zero. No entanto, se você atribuir o texto a um comprimento de zero <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>, o texto é inserido no indicador e o comprimento do indicador se expande para o número total de caracteres inseridos.
 
- O <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> controle também tem o <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> propriedade. Esta propriedade é diferente do <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> propriedade que está disponível no <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> propriedade de um <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> controle, ou o <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> propriedade de um <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> objeto.
+ O <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> controle também tem o <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> propriedade. Essa propriedade é diferente do <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> propriedade que está disponível na <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> propriedade de um <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> controle, ou o <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> propriedade de um <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> objeto.
 
-|Propriedade Text|Descrição|
+|Propriedade de texto|Descrição|
 |-------------------|-----------------|
 |<xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType>|Use essa propriedade para exibir o texto dentro do indicador e deixar o indicador no documento. A atribuição de texto para o indicador expande o intervalo do indicador e não exclui o indicador.<br /><br /> Por exemplo, `Bookmark1.Text = "Hello world"` insere o texto do indicador e deixa o indicador intacto.|
-|<xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType>|Use esta propriedade para exibir o texto no local do indicador e excluir automaticamente o indicador. Por exemplo, `Bookmark1.Range.Text = "Hello world"` insere o texto no indicador e exclui o indicador.|
+|<xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType>|Use essa propriedade para exibir o texto no local do indicador e exclui automaticamente o indicador. Por exemplo, `Bookmark1.Range.Text = "Hello world"` insere o texto do indicador e exclui o indicador.|
 
 ## <a name="rename-the-control-at-design-time"></a>Renomeie o controle em tempo de design
- Em projetos de nível de documento, quando você arrasta um <xref:Microsoft.Office.Tools.Word.Bookmark> controlar do **caixa de ferramentas** ao documento, o Visual Studio gera automaticamente um nome para o controle. Você pode alterar o nome do controle no **propriedades** janela.
+ Em projetos de nível de documento, quando você arrasta uma <xref:Microsoft.Office.Tools.Word.Bookmark> controlar do **caixa de ferramentas** ao seu documento, o Visual Studio gera automaticamente um nome para o controle. Você pode alterar o nome do controle na **propriedades** janela.
 
-## <a name="overlapping-controls"></a>Os controles sobrepostos
- Controles de indicador podem se sobrepõem uns aos outros. O mesmo texto pode ser compartilhado por mais de um indicador. Quando você atribui o novo texto para um dos indicadores de sobreposição, ele contém apenas o novo texto e os indicadores não se sobrepõem. O outro indicador agora contém apenas o texto que não foi compartilhado entre os indicadores de sobreposição originais.
+## <a name="overlapping-controls"></a>Sobrepondo controles
+ Controles de indicador podem se sobrepor uns aos outros. O mesmo texto pode ser compartilhado por mais de um indicador. Quando você atribui um novo texto a um dos indicadores sobrepostos, ele contém apenas o novo texto e os indicadores de não se sobrepõem. O outro marcador agora contém apenas o texto que não era compartilhado entre os indicadores de sobreposição originais.
 
  A tabela a seguir mostra como a frase "Este é o texto de exemplo". é compartilhado por dois indicadores sobrepostos:
 
 |Indicador|Texto|
 |--------------|----------|
-|Sobreposição de indicadores|[Esta é {exemplo] texto.}|
-|Bookmark1|Este é o exemplo|
+|Sobreposição de indicadores|[Esta é a amostra {] texto.}|
+|Bookmark1|Este é exemplo|
 |Bookmark2|texto de exemplo.|
 
- Se você atribuir o novo texto "Este é o substituto". Bookmark1, os indicadores não se sobrepõem e Bookmark2 retém somente o texto que originalmente não faz parte do Bookmark1.
+ Se você atribuir o novo texto "Esta é uma substituição." para Bookmark1, os indicadores não se sobrepõem e Bookmark2 retém apenas o texto que originalmente não era parte do Bookmark1.
 
 |Indicador|Texto|
 |--------------|----------|
 |Dois indicadores separados|[Esta é a substituição] {text}.|
-|Bookmark1|Este é o substituto|
-|Bookmark2|texto.|
+|Bookmark1|Esse é o substituto|
+|Bookmark2|Texto.|
 
-Se você alterar o texto de um indicador que contém outro indicador, o indicador interno não é excluído. No entanto, o indicador interno se torna um indicador vazio e move para o fim do indicador externo.
+Se você alterar o texto de um indicador que contém outro indicador, o indicador de interno não é excluído. No entanto, o indicador interno torna-se um indicador vazio e move para o fim do indicador externo.
 
-A tabela a seguir mostra como a frase "Este é o texto de exemplo". é compartilhada por um indicador que está contido dentro de outro indicador:
+A tabela a seguir mostra como a frase "Este é o texto de exemplo". é compartilhado por um indicador que está contido dentro de outro indicador:
 
 |Indicador|Texto|
 |--------------|----------|
-|Sobreposição de indicadores|[Esta é texto {exemplo}].|
+|Sobreposição de indicadores|[Este é o texto de {exemplo}].|
 |Bookmark1|Este é o texto de exemplo.|
 |Bookmark2|exemplo|
 
- Se você atribuir o novo texto "Este é o substituto". para Bookmark1, os indicadores não são sobrepostas e Bookmark2 se torna um indicador vazio que está localizado no final da Bookmark1.
+ Se você atribuir o novo texto "Esta é uma substituição." para Bookmark1, os indicadores não são sobrepostas e Bookmark2 torna-se um indicador vazio que está localizado no final da Bookmark1.
 
 |Indicador|Texto|
 |--------------|----------|
 |Dois indicadores separados|[Esta é uma substituição.]{}|
-|Bookmark1|Isso é a substituição.|
+|Bookmark1|Esse é o substituto.|
 |Bookmark2|*\<vazio >*|
 
 ## <a name="events"></a>Eventos
 
-Os seguintes eventos estão disponíveis para o <xref:Microsoft.Office.Tools.Word.Bookmark> controle:
+Os eventos a seguir estão disponíveis para o <xref:Microsoft.Office.Tools.Word.Bookmark> controle:
 
 -   <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeDoubleClick>
 
@@ -114,7 +114,7 @@ Os seguintes eventos estão disponíveis para o <xref:Microsoft.Office.Tools.Wor
 ## <a name="see-also"></a>Consulte também
 
 - [Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)
-- [Como: adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Como: Adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [Passo a passo: Criar menus de atalho para indicadores](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

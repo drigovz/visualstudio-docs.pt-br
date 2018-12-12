@@ -1,6 +1,6 @@
 ---
-title: Exibir a pilha de chamadas no depurador do Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Exibir a pilha de chamadas no depurador | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/29/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7804ed478fc218d1e218af6e26f5ee91071fb29c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: fe3b266ee44b326749ed555df77dee66b8e82aae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388019"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062345"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Exibir a pilha de chamadas e usar a janela pilha de chamadas no depurador
 
