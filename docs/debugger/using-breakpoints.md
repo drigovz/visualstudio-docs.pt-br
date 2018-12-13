@@ -1,6 +1,6 @@
 ---
-title: Usar pontos de interrupção no depurador do Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Usar pontos de interrupção no depurador | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15fa2172aab62d6b6f6ffcd21186b28f336ead4e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389131"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068442"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
 Pontos de interrupção são uma das técnicas de depuração mais importantes na caixa de ferramentas do seu desenvolvedor. Sempre que você deseja pausar a execução do depurador, você definir pontos de interrupção. Por exemplo, talvez você queira ver o estado das variáveis de código ou examinar a pilha de chamadas em um determinado ponto de interrupção. Se esta for sua primeira tentativa de depurar um código, leia [Como depurar para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes continuar neste artigo.
@@ -220,7 +220,7 @@ Pontos de interrupção com o conjunto de condições são exibidos com um **+**
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>Expressão Condicional
 
-Quando você seleciona **expressão condicional**, você pode escolher entre duas condições: **vale** ou **quando alterado**. Escolher **vale** para interromper quando a expressão for satisfeita, ou **quando alterado** para interromper quando o valor da expressão for alterado.  
+Quando você seleciona **expressão condicional**, você pode escolher entre duas condições: **Vale** ou **quando alterado**. Escolher **vale** para interromper quando a expressão for satisfeita, ou **quando alterado** para interromper quando o valor da expressão for alterado.  
   
  No exemplo a seguir, o ponto de interrupção somente quando o valor de `testInt` está **4**:  
   
