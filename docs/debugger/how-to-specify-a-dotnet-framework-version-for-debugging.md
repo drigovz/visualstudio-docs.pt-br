@@ -1,6 +1,6 @@
 ---
-title: 'Como: especificar uma versão do .NET Framework para depuração | Microsoft Docs'
-ms.custom: ''
+title: Especifique uma versão do .NET Framework para depuração | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 15792a8ecbc538bdbf5516d480abde4903fbd8d3
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 86289c9a93a0bb9e0f7756443d79f4a1a6dd38a6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304871"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056002"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Como: especificar uma versão do .NET Framework para depuração (C#, Visual Basic, F#)
+# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Como: Especificar uma versão do .NET Framework para depuração (C#, Visual Basic, F#)
 
 O depurador do Visual Studio dá suporte à depuração de versões mais antigas do Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , bem como a versão atual. Se você iniciar um aplicativo do Visual Studio, o depurador sempre poderá identificar a versão correta do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] para o aplicativo que você está depurando. No entanto, se o aplicativo já está em execução e você iniciar a depuração usando **anexar**, o depurador pode não ser capaz de identificar uma versão anterior da [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Se isso ocorrer, você receberá uma mensagem de erro, que indica  
 
@@ -47,7 +47,7 @@ Nos raros casos em que esse erro aparecer, você pode definir uma chave do regis
   
 3. Em **Editor do Registro**, abra a pasta HKEY_LOCAL_MACHINE.  
   
-4. Navegue até: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
+4. Navegar Para. HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
   
     Se a chave não existir, clique com o botão direito do mouse em HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine e clique em **Nova Chave**. Nomeie a nova chave `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.  
   
