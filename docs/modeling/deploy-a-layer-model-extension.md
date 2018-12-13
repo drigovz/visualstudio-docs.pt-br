@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: feae82f3909be5816e025de21200acda20933d63
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98697642135627173c5a6f31e90bf1dd1d0caeaf
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874612"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307746"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Implantar uma extensão de modelo de camada
 
@@ -49,7 +49,7 @@ Servidores do Team Foundation Server normalmente não tenha instalado o Visual S
 
 ### <a name="to-install-your-layer-extension-on-a-team-foundation-server-server"></a>Para instalar a extensão de camada em um servidor do Team Foundation Server
 
-1.  Cópia de **VSIX** arquivos do seu computador de desenvolvimento para o computador do Team Foundation Server (TFS).
+1.  Copiar o. *vsix* arquivos do seu computador de desenvolvimento para o computador do Team Foundation Server (TFS).
 
      Coloque o arquivo VSIX em um dos seguintes locais:
 
