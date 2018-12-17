@@ -1,5 +1,5 @@
 ---
-title: Usando expressões regulares no Visual Studio | Microsoft Docs
+title: Usando expressões regulares
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -24,16 +24,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0cf59b1061b6312a1c2881ff4dccdf03e5c502b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 90639e9f3f24a7985255e0a7ea42e303b9917739
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906709"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059425"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expressões regulares no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Visual Studio usa expressões regulares do .NET Framework para localizar e substituir texto. Para obter mais informações sobre as expressões regulares do .NET, consulte [Expressões regulares do .NET Framework](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
+O Visual Studio usa expressões regulares do .NET Framework para localizar e substituir texto. Para obter mais informações sobre as expressões regulares do .NET, consulte [Expressões regulares do .NET Framework](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
 
 Antes do Visual Studio 2012, o Visual Studio usava a sintaxe de expressão regular personalizada nas janelas Localizar e Substituir. Consulte [Conversões de expressões regulares do Visual Studio](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx) para obter uma explicação de como converter alguns dos símbolos personalizados de expressões regulares mais usados nas versões do .NET.
 
@@ -41,7 +41,7 @@ Antes do Visual Studio 2012, o Visual Studio usava a sintaxe de expressão regul
 > Em sistemas operacionais Windows, a maioria das linhas termina em “\r\n” (um retorno de carro seguido por uma nova linha). Esses caracteres não são visíveis, mas estão presentes no editor e são passados para o serviço Expressão Regular do .NET.
 
 > [!TIP]
-> Para obter informações sobre as expressões regulares usadas em padrões de substituição, consulte [Substituições](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Para usar um grupo de captura numerado, a sintaxe é `$1` para especificar o grupo numerado e `(x)` para especificar o grupo em questão. Por exemplo, a expressão regular agrupada `(\d)([a-z])` encontra quatro correspondências na seguinte cadeia de caracteres: **1a 2b 3c 4d**. A cadeia de caracteres de substituição `z$1` converte essa cadeia de caracteres em **z1 z2 z3 z4**.
+> Para obter informações sobre as expressões regulares usadas em padrões de substituição, consulte [Substituições](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Para usar um grupo de captura numerado, a sintaxe é `$1` para especificar o grupo numerado e `(x)` para especificar o grupo em questão. Por exemplo, a expressão regular agrupada `(\d)([a-z])` encontra quatro correspondências na cadeia de caracteres a seguir: **1A 2b 3C 4d**. A cadeia de caracteres de substituição `z$1` converte essa cadeia de caracteres em **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Exemplos de expressões regulares
 
@@ -78,4 +78,3 @@ Estes são alguns exemplos:
 |                                                                                                            Encontrar a correspondência de uma cadeia de caracteres entre aspas                                                                                                             |                                             ((\\".+?\\")&#124;('.+?'))                                             |                                                    Encontrar a correspondência de uma cadeia de caracteres entre aspas simples ou duplas.                                                     |
 |                                                                                                             Encontrar a correspondência de um número hexadecimal                                                                                                              |                                              \b0[xX]([0-9a-fA-F]\)\b                                               |                                                          Corresponde a “0xc67f”, mas não a “0xc67fc67f”.                                                           |
 |                                                                                                             Encontrar a correspondência de inteiros e decimais                                                                                                             |                                               \b[0-9]\*\\.\* [0-9] + \b                                               |                                                                     Encontrar a correspondência de “1.333”.                                                                      |
-

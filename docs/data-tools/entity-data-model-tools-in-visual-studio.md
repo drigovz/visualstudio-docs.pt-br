@@ -1,5 +1,5 @@
 ---
-title: Ferramentas do Entity Framework no Visual Studio
+title: Entity Framework Tools
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
@@ -10,21 +10,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbffe18b108beb230a77da38df99a7100e542a27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 14a0e5b6b746356e38dfc71c26f53ced5a470e34
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819089"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066790"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Ferramentas do Entity Framework no Visual Studio
+
 Entity Framework é uma tecnologia de mapeamento relacional de objeto que permite aos desenvolvedores de .NET trabalhar com dados relacionais usando objetos específicos de domínio. Elimina a necessidade da maioria do código de acesso a dados que os desenvolvedores geralmente precisam gravar. O Entity Framework é o mapeamento relacional de objeto recomendado (ORM) tecnologia para novos aplicativos do .NET de modelagem.
 
 Ferramentas do Entity Framework são projetadas para ajudá-lo a criar aplicativos do Entity Framework (EF). A documentação completa do Entity Framework está aqui: [EF Core e EF 6](/ef/).
 
 Com ferramentas do Entity Framework, você pode criar uma *modelo conceitual* de uma já existente de banco de dados e, em seguida, graficamente visualizar e editar seu modelo conceitual. Ou, você pode criar graficamente um modelo conceitual primeiro e, em seguida, gerar um banco de dados que dá suporte a seu modelo. Em ambos os casos, você pode atualizar automaticamente seu modelo quando subjacente alterações de banco de dados e gerar automaticamente o código da camada de objeto para o seu aplicativo. Geração de banco de dados e geração de código da camada de objeto são personalizáveis.
 
-As ferramentas do Entity Framework são instaladas como parte dos **armazenamento de dados e processamento** carga de trabalho no instalador do Visual Studio. Você também pode instalá-los como um componente indvidual sob o **SDKs, bibliotecas e estruturas** categoria.
+As ferramentas do Entity Framework são instaladas como parte dos **armazenamento de dados e processamento** carga de trabalho no instalador do Visual Studio. Você também pode instalá-los como um componente individual sob o **SDKs, bibliotecas e estruturas** categoria.
 
 Estas são as ferramentas específicas que constituem ferramentas do Entity Framework no Visual Studio:
 
@@ -37,7 +38,7 @@ Estas são as ferramentas específicas que constituem ferramentas do Entity Fram
 - Você pode usar o **Assistente de atualização de modelo** para atualizar seu modelo conceitual, o modelo de armazenamento e a mapeamentos de quando foram feitas alterações no banco de dados subjacente.
 
   > [!NOTE]
-  >  Iniciando com o Visual Studio 2010, as ferramentas do Entity Framework não dá suporte ao [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
+  > Iniciando com o Visual Studio 2010, as ferramentas do Entity Framework não dá suporte ao [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
 
 As ferramentas de gerar ou modificar uma *. edmx* arquivo. Isso *. edmx* arquivo contém informações que descrevem o modelo conceitual, o modelo de armazenamento e os mapeamentos entre eles. Para obter mais informações, consulte [EDMX](https://docs.microsoft.com/ef/ef6/).
 

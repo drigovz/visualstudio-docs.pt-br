@@ -1,6 +1,6 @@
 ---
-title: Solucionar problemas de pontos de interrupção no depurador do Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Solucionar problemas de pontos de interrupção no depurador | Microsoft Docs
+ms.custom: seodec18
 ms.date: 01/23/2018
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b285fd77c7e1ee25e6c82fc3f8c0ce48b4429e8b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: e27d9dee1713b8d9e748ad13d75d809f2057f24a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155393"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052845"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Solucionar problemas de pontos de interrupção no depurador do Visual Studio
 
@@ -24,7 +24,7 @@ Durante a depuração, um ponto de interrupção tem dois estados possíveis de 
 
 As seções a seguir descrevem avisos proeminentes e como corrigi-los. 
 
-### <a name="no-symbols-have-been-loaded-for-this-document"></a>"Nenhum símbolo foi carregado para esse documento" 
+### <a name="no-symbols-have-been-loaded-for-this-document"></a>"Nenhum símbolo foi carregado neste documento." 
 
 Vá para o **módulos** janela (**Debug** > **Windows** > **módulos**) e verifique se o módulo é carregado.  
 * Verifique se o módulo é carregado, o **Status do símbolo** coluna para ver se os símbolos foram carregados. 

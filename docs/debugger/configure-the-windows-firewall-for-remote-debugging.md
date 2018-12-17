@@ -1,6 +1,5 @@
 ---
 title: Configurar o Firewall do Windows para depuração remota | Microsoft Docs
-ms.custom: ''
 ms.date: 10/31/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4e4ccc09d8919260b1634fd02790c1bf5b10636
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: HT
+ms.openlocfilehash: da505c6193dd7d05cc10a8e7cec8383f8ee3adfc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750930"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058591"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurar o Firewall do Windows para depuração remota
 
@@ -64,8 +63,8 @@ Se você selecionar **usar o modo de compatibilidade gerenciado** sob **ferramen
 
 |**Portas**|**Entrada/saída**|**Protocolo**|**Descrição**|  
 |-|-|-|-|  
-|135, 139, 445|Saída|TCP|Obrigatório.|  
-|137, 138|Saída|UDP|Obrigatório.|  
+|135, 139, 445|Saída|TCP|Necessário.|  
+|137, 138|Saída|UDP|Necessário.|  
 
 Se sua diretiva de domínio requer comunicação de rede a ser executada por meio de IPSec, é necessário abrir portas adicionais nos computadores remotos e Visual Studio. Para depurar em um servidor de web IIS remoto, abra a porta 80 no computador remoto.
 

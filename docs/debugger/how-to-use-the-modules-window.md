@@ -1,6 +1,7 @@
 ---
-title: Exibir as DLLs e executáveis na janela de módulos | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Exibir as DLLs e executáveis
+titleSuffix: Visual Studio Modules window
+ms.custom: seodec18
 ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33a09fe01157e0e3f5493568437c1499f2831bdb
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 2702eb38e895f5fa9021fae754ae1e4a9325cf18
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257284"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066776"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Exibir as DLLs e executáveis na janela de módulos (C#, C++, Visual Basic, F#)
  
@@ -43,7 +44,7 @@ Durante a depuração do Visual Studio, o **módulos** janela lista e mostra inf
 
 Para abrir a janela de módulos, enquanto você estiver depurando, selecione **Debug** > **Windows** > **módulos**. 
   
-Por padrão, o **módulos** janela classifica os módulos pela ordem de carregamento. Para classificar por qualquer coluna da janela, selecione o cabeçalho na parte superior da coluna.  
+Por padrão, a janela **Módulos** classifica os módulos pela ordem de carregamento. Para classificar por qualquer coluna da janela, selecione o cabeçalho na parte superior da coluna.  
   
 ## <a name="load-symbols"></a>Carregar símbolos  
 
@@ -63,7 +64,7 @@ O **Status do símbolo** coluna o **módulos** janela mostra quais módulos têm
 
 **Para alterar as configurações de comportamento de carregamento de símbolo:**  
 
-1. No **módulos** janela, clique com botão direito de qualquer módulo.  
+1. Na janela **Módulos**, clique com o botão direito do mouse direito em qualquer módulo.  
    
 1. Selecione **configurações de símbolo**.  
   
@@ -73,11 +74,11 @@ O **Status do símbolo** coluna o **módulos** janela mostra quais módulos têm
   
 **Para alterar o comportamento de um módulo específico de carregamento de símbolo:**  
 
-1.  No **módulos** janela, clique com botão direito do módulo.  
+1.  Na janela **Módulos**, clique com o botão direito do mouse no módulo.  
 
 1.  No menu de atalho, marque ou desmarque **sempre carregar automaticamente**. As alterações entram em vigor na próxima sessão de depuração.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interrupção da execução](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))   
+ [Interrompendo a execução](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))   
  [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Especificar arquivos de símbolo (. PDB) e código-fonte](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

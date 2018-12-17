@@ -1,6 +1,6 @@
 ---
-title: Introdução ao diagnóstico de gráficos do Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Introdução ao diagnóstico de gráficos | Microsoft Docs
+ms.custom: seodec18
 ms.date: 05/26/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24cd668165b940955902605ef64c1ffb522b9fe1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 422a0fa4ea44cb3a605b8905282a5fe2a7e71e4c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929771"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055459"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Introdução ao Diagnóstico de Gráficos do Visual Studio
 Nesta seção você irá se preparar para usar o diagnóstico de gráficos pela primeira vez, em seguida, você irá capturar quadros de um aplicativo Direct3D e examiná-los no analisador de gráficos.  
@@ -50,7 +50,7 @@ Nesta seção você irá se preparar para usar o diagnóstico de gráficos pela 
 >  O recurso opcional de ferramentas de gráficos do Windows 10 fornece a funcionalidade de captura e reprodução leve — como o programa de linha de comando de captura **dxcap.exe**— que podem ser usados em suporte, teste e cenários de diagnóstico em computadores nos quais ferramentas de desenvolvedor não estiverem instaladas. Para obter mais informações, consulte o [ferramenta de captura de linha de comando](command-line-capture-tool.md) tópico.  
   
 ## <a name="using-graphics-diagnostics-for-the-first-time"></a>Usando o diagnóstico de gráficos pela primeira vez  
- Agora que você tem tudo o que você precisa, você está pronto para começar a usar o diagnóstico de gráficos. Basta seguir estas etapas.  
+ Agora que você tem tudo o que você precisa, você está pronto para começar a usar o diagnóstico de gráficos. Siga estas etapas.  
   
 ### <a name="1---create-a-direct3d-app"></a>1 - criar um aplicativo Direct3D  
  Se você já tem seu próprio aplicativo Direct3D para explorar os diagnósticos de gráficos, muito bem! Caso contrário, use um dos seguintes:

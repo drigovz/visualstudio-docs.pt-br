@@ -1,5 +1,5 @@
 ---
-title: Criar um aplicativo de dados simples usando o ADO.NET no Visual Studio
+title: Criar um aplicativo de dados simples usando o ADO.NET
 ms.date: 08/23/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5bcdd9120088663e469070c31962dfacc97bce0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891005"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064866"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo de dados simples usando o ADO.NET
 
@@ -35,7 +35,7 @@ Para criar o aplicativo, você precisará de:
 
 -   Visual Studio.
 
--   SQL Server Express LocalDB. Se você não tiver o SQL Server Express LocalDB, você pode instalá-lo partir o [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
+-   LocalDB do SQL Server Express. Se você não tiver o SQL Server Express LocalDB, você pode instalá-lo partir o [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
 Este tópico pressupõe que você está familiarizado com a funcionalidade básica do IDE do Visual Studio e pode criar um aplicativo Windows Forms, adicionar formulários para o projeto, colocar botões e outros controles em formulários, definem propriedades de controles e codificar eventos simples. Se você não estiver confortável com essas tarefas, sugerimos que você conclua a [Introdução ao Visual c# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) tópico antes de começar este passo a passo.
 
@@ -61,7 +61,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 
 7. Cole o script T-SQL no editor de consultas e, em seguida, escolha o **Execute** botão.
 
-     Após alguns instantes, a consulta termina a execução e os objetos de banco de dados são criados. O banco de dados contém duas tabelas: clientes e pedidos. Essas tabelas não contêm dados inicialmente, mas você pode adicionar dados ao executar o aplicativo que você vai criar. O banco de dados também contém quatro procedimentos armazenados simples.
+     Após alguns instantes, a consulta termina a execução e os objetos de banco de dados são criados. O banco de dados contém duas tabelas: Os clientes e pedidos. Essas tabelas não contêm dados inicialmente, mas você pode adicionar dados ao executar o aplicativo que você vai criar. O banco de dados também contém quatro procedimentos armazenados simples.
 
 ## <a name="create-the-forms-and-add-controls"></a>Criar os formulários e adicionar controles
 
@@ -100,11 +100,11 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 | - |----------------|
 |TextBox|Nome = txtCustomerName|
 |TextBox|Nome = txtCustomerID<br /><br /> ReadOnly = True|
-|Botão|Name = btnCreateAccount|
+|Botão|Nome = btnCreateAccount|
 |NumericUpdown|DecimalPlaces = 0<br /><br /> Máximo = 5000<br /><br /> Nome = numOrderAmount|
 |DateTimePicker|Formato = abreviado<br /><br /> Nome = dtpOrderDate|
 |Botão|Nome = btnPlaceOrder|
-|Botão|Name = btnAddAnotherAccount|
+|Botão|Nome = btnAddAnotherAccount|
 |Botão|Nome = btnAddFinish|
 
  **Formulário FillOrCancel**
@@ -114,7 +114,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 |Controles para o formulário FillOrCancel|Propriedades|
 | - |----------------|
 |TextBox|Nome = txtOrderID|
-|Botão|Name = btnFindByOrderID|
+|Botão|Nome = btnFindByOrderID|
 |DateTimePicker|Formato = abreviado<br /><br /> Nome = dtpFillDate|
 |DataGridView|Nome = dgvCustomerOrders<br /><br /> ReadOnly = True<br /><br /> RowHeadersVisible = False|
 |Botão|Nome = btnCancelOrder|
@@ -229,7 +229,7 @@ Para concluir a lógica de formulário de FillOrCancel, siga estas etapas.
      [!code-csharp[FillOrCancel#2](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#2)]
      [!code-vb[FillOrCancel#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#2)]
 
-## <a name="test-your-application"></a>Teste seu aplicativo
+## <a name="test-your-application"></a>Testar seu aplicativo
 
 Selecione o **F5** tecla para compilar e testar seu aplicativo depois que você codifica cada manipulador de eventos de clique e, em seguida, depois de concluir a codificação.
 
