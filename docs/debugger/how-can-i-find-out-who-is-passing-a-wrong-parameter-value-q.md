@@ -1,6 +1,6 @@
 ---
-title: Como posso descobrir quem está passando um valor de parâmetro incorreto? | Microsoft Docs
-ms.custom: ''
+title: Descobrir quem está passando um valor de parâmetro incorreto | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91c0574d3783c56a56e9e1932a675c45cb758ded
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 164ca15cfc508b952ccfe2f986892c0801fd1539
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284166"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059360"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Como posso descobrir quem está passando um valor de parâmetro incorreto?
 ## <a name="problem-description"></a>Descrição do problema  
@@ -40,19 +40,19 @@ ms.locfileid: "44284166"
   
 1.  Defina um local de ponto de interrupção no início da função.  
   
-2.  O ponto de interrupção com o botão direito e selecione **condição**.  
+2.  Clique com o botão direito do mouse no ponto de interrupção e selecione **Condição**.  
   
-3.  No **condição de ponto de interrupção** caixa de diálogo, clique no **condição** caixa de seleção. Ver [avançadas de pontos de interrupção](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
+3.  Na caixa de diálogo **Condição de Ponto de Interrupção**, clique na caixa de seleção **Condição**. Ver [avançadas de pontos de interrupção](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
   
 4.  Digite uma expressão, como `Var==3`, na caixa de texto, onde `Var` é o nome do parâmetro que contém o valor incorreto, e `3` é o valor incorreto passado para ele.  
   
-5.  Selecione o **é True** botão de opção e, em seguida, clique no **Okey** botão.  
+5.  Selecione o botão de opção **é True** e clique no botão **OK**.  
   
 6.  Agora, execute o programa novamente. O ponto de interrupção faz com que o programa pare no início da função quando o parâmetro `Var` tiver o valor `3`.  
   
-7.  Use a janela Pilha de Chamadas para localizar a função de chamada e navegar até seu código-fonte. Para obter mais informações, consulte [como: usar a janela pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md).  
+7.  Use a janela Pilha de Chamadas para localizar a função de chamada e navegar até seu código-fonte. Confira mais informações em [Como: Usar a janela Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Perguntas frequentes do código nativo de depuração](../debugger/debugging-native-code-faqs.md)   
+ [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md)   
  [Pontos de interrupção](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Depurando código nativo](../debugger/debugging-native-code.md)

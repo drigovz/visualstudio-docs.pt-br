@@ -1,6 +1,6 @@
 ---
-title: 'Como: aplicar edições no modo de interrupção com editar e continuar | Microsoft Docs'
-ms.custom: ''
+title: Aplicar edições no modo de interrupção com editar e continuar | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f45b2a64e7602d038a12f436019a8f99e352aa26
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 51a69414a8b61368cbb492494187567554f98e4c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257063"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063720"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Como: aplicar edições no modo de interrupção com editar e continuar (Visual Basic)
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Como: Aplicar edições no modo de interrupção com editar e continuar (Visual Basic)
 Você pode usar Editar e Continuar para editar o código no modo de interrupção e, depois, continuar sem interromper e reiniciar a execução.  
   
 Para limitações sobre como usar Editar e continuar durante a depuração, consulte [Supported Code Changes (C# e Visual Basic](../debugger/supported-code-changes-csharp.md)]
@@ -40,13 +40,13 @@ Para limitações sobre como usar Editar e continuar durante a depuração, cons
   
 1.  Entre no modo de interrupção executando um destes procedimentos:  
   
-    -   Defina um ponto de interrupção em seu código, em seguida, escolha **iniciar depuração** da **depurar** menu e aguarde até que o aplicativo para o ponto de interrupção.  
+    -   Defina um ponto de interrupção no código e escolha **Iniciar Depuração** no menu **Depurar** e aguarde até que o aplicativo atinja o ponto de interrupção.  
   
-         -ou-  
+         - ou -  
   
-    -   Iniciar a depuração e, em seguida, selecione **interromper tudo** da **depurar** menu.  
+    -   Inicie a depuração e, em seguida, selecione **Interromper Tudo** no menu **Depurar**.  
   
-         -ou-  
+         - ou -  
   
     -   Quando ocorre uma exceção, escolha **habilitar edição** sobre o **Assistente de exceção**.  
   
@@ -57,7 +57,7 @@ Para limitações sobre como usar Editar e continuar durante a depuração, cons
     > [!NOTE]
     >  Se você tentar fazer uma alteração de código que não seja permitida por Editar e Continuar, sua edição será sublinhada por uma linha ondulada roxa e uma tarefa será exibida na Lista de Tarefas. Você não poderá continuar a execução do código a menos que desfaça a alteração de código ilegal.  
   
-3.  Sobre o **Debug** menu, clique em **continuar** para retomar a execução.  
+3.  No menu **Depurar**, clique em **Continuar** para retomar a execução.  
   
      O código agora é executado com as edições aplicadas incorporadas ao projeto.  
   

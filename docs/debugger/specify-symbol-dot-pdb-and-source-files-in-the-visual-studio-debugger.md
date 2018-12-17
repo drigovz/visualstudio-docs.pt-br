@@ -1,6 +1,6 @@
 ---
-title: Especifique o símbolo (. PDB) e arquivos de origem no depurador | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Defina o símbolo (. PDB) e arquivos de origem no depurador
+ms.custom: seodec18
 ms.date: 10/08/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35eb141850770a20b78020c57868a7fb2ff3bf90
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6ba2f7794b052712d35bbdadb02a0ea8551dc78b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389170"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060440"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Especificar o símbolo (. PDB) e arquivos de origem no depurador do Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -77,11 +77,11 @@ Além disso, o depurador procura por arquivos de símbolo nos seguintes locais:
       
      Servidores de símbolo, que você pode usar incluem:  
       
-     **Servidores públicos de símbolos Microsoft**: para depurar uma falha que ocorre durante uma chamada para uma DLL do sistema ou em uma biblioteca de terceiros, você geralmente precisa de sistema *. PDB* arquivos. Sistema *. PDB* arquivos contêm símbolos para DLLs do Windows *.exe* arquivos e drivers de dispositivo. Você pode obter os símbolos para sistemas de operacionais do Windows, MDAC, IIS, ISA e o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dos servidores de símbolo Microsoft públicos. 
+     **Servidores de símbolo públicos da Microsoft**: Para depurar uma falha que ocorre durante uma chamada para uma DLL do sistema ou em uma biblioteca de terceiros, você geralmente precisa de sistema *. PDB* arquivos. Sistema *. PDB* arquivos contêm símbolos para DLLs do Windows *.exe* arquivos e drivers de dispositivo. Você pode obter os símbolos para sistemas de operacionais do Windows, MDAC, IIS, ISA e o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dos servidores de símbolo Microsoft públicos. 
       
-     **Servidores em uma rede interna ou em seu computador local de símbolo**: sua equipe ou empresa pode criar servidores de símbolo para seus próprios produtos e como um cache para símbolos de fontes externas. Você pode ter um servidor de símbolo no seu próprio computador. 
+     **Servidores de símbolo em uma rede interna ou no computador local**: Sua equipe ou empresa pode criar servidores de símbolo para seus próprios produtos e como um cache para símbolos de fontes externas. Você pode ter um servidor de símbolo no seu próprio computador. 
       
-     **Servidores de símbolo de terceiros**: provedores de terceiros de bibliotecas e aplicativos do Windows podem fornecer acesso ao servidor de símbolo na internet. 
+     **Servidores de símbolo de terceiros**: Provedores de terceiros de aplicativos e bibliotecas do Windows podem fornecer acesso ao servidor de símbolo na Internet. 
     
      > [!WARNING]
      > Se você usar um servidor de símbolos que não seja a servidores públicos de símbolos da Microsoft, certifique-se de que o servidor de símbolos e seu caminho são confiáveis. Como arquivos de símbolo podem conter códigos executáveis arbitrários, você pode ser exposto às ameaças de segurança.  
@@ -156,7 +156,7 @@ Você pode selecionar opções adicionais de símbolo na **ferramentas** > **op�
   Você pode limitar os comandos que *SRCSRV* pode executar a partir do aplicativo *. PDB* arquivo listando os comandos permitidos em um arquivo chamado *SRCSRV. ini*. Coloque o *SRCSRV. ini* arquivo na mesma pasta que *SRCSRV* e *devenv.exe*.  
   
   >[!IMPORTANT]
-  >Comandos arbitrários podem ser inseridos em um aplicativo *. PDB* de arquivos, portanto, certifique-se de colocar somente os comandos que você deseja executar em um *SRCSRV. ini* arquivo. Qualquer tentativa de executar um comando que não esteja no arquivo *srcsvr.ini* fará com que uma caixa de diálogo de confirmação seja exibida. Para obter mais informações, consulte [aviso de segurança: depurador deve executar comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
+  >Comandos arbitrários podem ser inseridos em um aplicativo *. PDB* de arquivos, portanto, certifique-se de colocar somente os comandos que você deseja executar em um *SRCSRV. ini* arquivo. Qualquer tentativa de executar um comando que não esteja no arquivo *srcsvr.ini* fará com que uma caixa de diálogo de confirmação seja exibida. Para obter mais informações, consulte [aviso de segurança: O depurador deve executar o comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
   >
   >Nenhuma validação é feita em parâmetros do comando. Portanto, tenha cuidado com comandos confiáveis. Por exemplo, se você listou *cmd.exe* no seu *SRCSRV. ini*, um usuário mal-intencionado pode especificar parâmetros na *cmd.exe* seria mais perigoso.  
   

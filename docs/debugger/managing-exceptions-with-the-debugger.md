@@ -1,6 +1,6 @@
 ---
-title: Gerenciar exceções com o depurador do Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Gerenciar exceções com o depurador | Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/09/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f19bbbfbde9a111c6edea112b7250fca934ac7f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: 02c7fbfca9a63ac736972ebea01a854e24f90188
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881684"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057912"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gerenciar exceções com o depurador do Visual Studio
 
@@ -67,14 +67,14 @@ O depurador pode interromper a execução no ponto em que uma exceção é lanç
 
 No **configurações de exceção** janela (**Depurar > Windows > configurações de exceção**), expanda o nó para uma categoria de exceções, tais como **exceções Common Language Runtime**. Em seguida, selecione a caixa de seleção para uma exceção específica dentro dessa categoria, como **System. AccessViolationException**. Você também pode selecionar uma categoria inteira de exceções.
 
-![Checked AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
+![Check-AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
 
 > [!TIP]
 > Você pode encontrar exceções específicas usando o **pesquisa** janela na **configurações de exceção** barra de ferramentas, ou usar Pesquisar para filtrar para namespaces específicos (como **System.IO**).
 
 Se você selecionar uma exceção na **configurações de exceção** janela, a execução do depurador interromperá sempre que a exceção é lançada, não importa se ele é manipulado. Agora, a exceção é chamada uma exceção de primeira chance. Por exemplo, aqui estão alguns cenários:
 
-- O seguinte c# aplicativo de console, o método Main lança um **AccessViolationException** dentro de um `try/catch` bloco.
+- A seguir C# gera do método Main do aplicativo de console, um **AccessViolationException** dentro de um `try/catch` bloco.
 
   ```csharp
   static void Main(string[] args)
@@ -101,7 +101,7 @@ Se você selecionar uma exceção na **configurações de exceção** janela, a 
 
   mas ele não exibe o `here` linha.
 
-- Um aplicativo de console c# faz referência a uma biblioteca de classes com uma classe que tem dois métodos. Um método lança uma exceção e lida com isso, enquanto um segundo método gera a mesma exceção, mas não lida com ele.
+- Um C# aplicativo de console faz referência a uma biblioteca de classes com uma classe que tem dois métodos. Um método lança uma exceção e lida com isso, enquanto um segundo método gera a mesma exceção, mas não lida com ele.
 
   ```csharp
   public class Class1
@@ -181,7 +181,7 @@ Para adicionar uma exceção:
 Para adicionar uma exceção para as exceções de acesso de memória de GPU, exceções de tempo de execução do JavaScript ou categorias de exceções do Win32, incluem o código de erro e a descrição.
 
 > [!TIP]
-> Verifique a ortografia! O **configurações de exceção** janela não verifica a existência de uma exceção adicionada. Portanto, se você digitar **Sytem.UriTemplateMatchException**, você obterá uma entrada para essa exceção (e não para **System.UriTemplateMatchException**).
+> Verifique a ortografia. O **configurações de exceção** janela não verifica a existência de uma exceção adicionada. Portanto, se você digitar **Sytem.UriTemplateMatchException**, você obterá uma entrada para essa exceção (e não para **System.UriTemplateMatchException**).
 
 Configurações de exceção são persistidas no arquivo. suo da solução, para que elas se aplicam a uma determinada solução. É possível reutilizar configurações de exceção específicos em soluções. Agora, somente as exceções adicionadas são persistentes; não são excluídos de exceções. Você pode adicionar uma exceção, feche e reabra a solução e a exceção ainda estará lá. Mas se você excluir uma exceção e fechar/reabrir a solução, a exceção reaparecerá.
 
@@ -224,7 +224,7 @@ Para adicionar exceções condicionais:
 ## <a name="see-also"></a>Consulte também
 
 [Continuar a execução depois de uma exceção](../debugger/continuing-execution-after-an-exception.md)<br/>
-[Como examinar um código de sistema após uma exceção](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-[Como usar verificações de tempo de execução nativas](../debugger/how-to-use-native-run-time-checks.md)<br/>
-[Usar verificações de tempo de execução sem a biblioteca de tempo de execução C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[Tutorial: Aprenda a depurar usando o Visual Studio](../debugger/getting-started-with-the-debugger.md)
+[Como: Examinar o código do sistema após uma exceção](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+[Como: Usar verificações de tempo de execução nativas](../debugger/how-to-use-native-run-time-checks.md)<br/>
+[Usar verificações de tempo de execução sem a biblioteca em tempo de execução C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+[Tutorial: Aprender a depurar usando o Visual Studio](../debugger/getting-started-with-the-debugger.md)

@@ -1,6 +1,6 @@
 ---
-title: Diagnóstico de gráficos do Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Diagnóstico de gráficos | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b8103db254e8ee7dd095f0dcd6e7890d4ab446e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e40a8ce0f2785aa606922d3f9c49f3aad48f7591
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872571"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058605"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnóstico de gráficos do Visual Studio
 Visual Studio*diagnóstico de gráficos* é um conjunto de ferramentas de registro e, em seguida, analisando problemas de desempenho e a renderização em aplicativos Direct3D. Diagnóstico de gráficos pode ser usado em aplicativos que estão sendo executadas localmente no seu PC com Windows, em um emulador de dispositivo do Windows ou em um dispositivo ou computador remoto.  
@@ -40,37 +40,37 @@ Visual Studio*diagnóstico de gráficos* é um conjunto de ferramentas de regist
  Nesta seção, você aprenderá como instalar o diagnóstico de gráficos do Visual Studio e como começar a usar o diagnóstico de gráficos com seu aplicativo Direct3D.  
 
  [Capturando informações de gráficos](capturing-graphics-information.md)  
- Para usar o Diagnóstico de Gráficos para examinar um problema de renderização no aplicativo, primeiro registre informações sobre como o aplicativo usa o DirectX. Durante a sessão de gravação, enquanto o aplicativo executa normalmente, você *capturar* (ou seja, selecionar) os quadros que você está interessado. A captura contém informações detalhadas sobre como os quadros são renderizados. É possível salvar as informações capturadas como um documento de log de gráficos para examinar mais tarde ou compartilhar com outros membros da equipe.  
+ Para usar o Diagnóstico de Gráficos para examinar um problema de renderização no aplicativo, primeiro registre informações sobre como o aplicativo usa o DirectX. Durante a sessão de gravação, enquanto o aplicativo é executado normalmente, você *captura* (ou seja, seleciona) os quadros de interesse. A captura contém informações detalhadas sobre como os quadros são renderizados. É possível salvar as informações capturadas como um documento de log de gráficos para examinar mais tarde ou compartilhar com outros membros da equipe.  
 
  [Uso de GPU](gpu-usage.md)  
  Para usar o diagnóstico de gráficos para analisar seu aplicativo, use a ferramenta de uso de GPU. Uso de GPU pode ser usado em conjunto com outras ferramentas de criação de perfil, como o uso da CPU, para correlacionar a atividade de CPU e GPU que pode causar problemas de desempenho em seu aplicativo.  
 
  [Documento de log de gráficos](graphics-log-document.md)  
- Para começar o exame de um log de gráficos registrado, você deve usar a janela do documento de Log de gráficos para selecionar um quadro capturado — ou até mesmo um pixel específico — para que você possa examinar detalhadamente os *eventos* (ou seja, as chamadas à API DirectX) que o afetam .  
+ Para começar o exame de um log de gráficos registrado, use a janela do documento de Log de Gráficos para selecionar um quadro capturado (ou mesmo um pixel específico) para que seja possível examinar em detalhes os *eventos* (ou seja, as chamadas à API DirectX) que o afetam.  
 
  [Análise de quadros](graphics-frame-analysis.md)  
  Depois de selecionar um quadro, use a Análise de Quadros de Gráficos para examinar e ajustar seu desempenho de renderização.  
 
  [Lista de Eventos](graphics-event-list.md)  
- Depois de selecionar um quadro, você usa o **lista de eventos gráficos** para examinar os eventos para determinar se eles estão relacionados ao problema de renderização.  
+ Depois de selecionar um quadro, use a **Lista de Eventos de Gráficos** para examinar os eventos e determinar se eles estão relacionados ao problema de renderização.  
 
  [Estado](graphics-state.md)  
  A janela de estado ajuda a entender o estado dos gráficos que está ativo no momento do evento atual.  
 
  [Estágios de Pipeline](graphics-pipeline-stages.md)  
- No **estágios de Pipeline gráficos** janela, você investigar como o evento selecionado no momento é processado pelos estágios de pipeline gráficos para que você possa identificar onde o problema de renderização aparece pela primeira vez. Examinar os estágios do pipeline é especialmente útil quando um objeto não aparece devido a uma transformação incorreta ou quando um dos estágios produz uma saída que não corresponde ao que o próximo estágio espera.  
+ Na janela **Estágios do Pipeline de Gráficos**, investigue como o evento selecionado no momento é processado pelos estágios do pipeline gráfico para que seja possível identificar onde o problema de renderização aparece pela primeira vez. Examinar os estágios do pipeline é especialmente útil quando um objeto não aparece devido a uma transformação incorreta ou quando um dos estágios produz uma saída que não corresponde ao que o próximo estágio espera.  
 
  [Pilha de Chamadas do Evento](graphics-event-call-stack.md)  
- Você usa o **pilha de chamadas do evento de gráficos** para examinar a pilha de chamadas do evento selecionado no momento para que você pode navegar para o código do aplicativo que está relacionado ao problema de renderização.  
+ Use a **Pilha de Chamadas do Evento de Gráficos** para examinar a pilha de chamadas do evento selecionado no momento para que seja possível navegar até o código de aplicativo relacionado ao problema de renderização.  
 
  [Histórico de Pixel](graphics-pixel-history.md)  
- Usando o **histórico de Pixel de gráficos** janela para analisar como o pixel selecionado no momento é afetado pelos eventos que o influenciaram, você pode identificar o evento ou uma combinação de eventos que causam certos tipos de problemas de renderização. O histórico de pixel é especialmente útil quando um objeto é renderizado incorretamente porque a saída do sombreador de pixel está incorreta ou foi combinada incorretamente com o buffer de quadro, ou quando um objeto não aparece porque seus pixels foram descartados antes de atingir o buffer de quadro.  
+ Usando a janela **Histórico de Pixel de Gráficos** para analisar como o pixel selecionado no momento é afetado pelos eventos que o influenciaram, é possível identificar o evento ou a combinação de eventos que causam certos tipos de problemas de renderização. O histórico de pixel é especialmente útil quando um objeto é renderizado incorretamente porque a saída do sombreador de pixel está incorreta ou foi combinada incorretamente com o buffer de quadro, ou quando um objeto não aparece porque seus pixels foram descartados antes de atingir o buffer de quadro.  
 
  [Tabela de Objeto](graphics-object-table.md)  
- Você usa o **tabela de objetos gráficos** para examinar as propriedades e o conteúdo de objetos específicos do Direct3D e recursos que estão em vigor para o evento selecionado no momento. A tabela de objetos pode ajudar a determinar o contexto do dispositivo gráfico que está ativo durante um evento e examinar os conteúdos de recursos gráficos, como buffers constantes, buffers de vértices e texturas.  
+ Use a **Tabela de Objetos Gráficos** para examinar as propriedades e o conteúdo de objetos e recursos do Direct3D específicos em vigor para o evento selecionado no momento. A tabela de objetos pode ajudar a determinar o contexto do dispositivo gráfico que está ativo durante um evento e examinar os conteúdos de recursos gráficos, como buffers constantes, buffers de vértices e texturas.  
 
  [Depurador HLSL](hlsl-shader-debugger.md)  
- Para examinar como o código do sombreador para o estágio de pipeline o evento selecionado no momento e os gráficos se comporta, você deve usar o **depurador HLSL** para percorrer o código, examinar o conteúdo de variáveis e realizar outras tarefas de depuração típicas. Também é possível usar o depurador HLSL para examinar o código do sombreador de computação, independente de os resultados serem processados mais pelo pipeline de gráficos ou apenas relidos pelo aplicativo.  
+ Para examinar como o código do sombreador para o evento selecionado no momento e o estágio do pipeline de gráficos se comportam, use o **Depurador HLSL** para percorrer o código, examinar o conteúdo das variáveis e realizar outras tarefas típicas de depuração. Também é possível usar o depurador HLSL para examinar o código do sombreador de computação, independente de os resultados serem processados mais pelo pipeline de gráficos ou apenas relidos pelo aplicativo.  
 
  [Ferramenta de captura de linha de comando](command-line-capture-tool.md)  
  Use a ferramenta de captura de linha de comando para capturar e reproduzir rapidamente informações de gráficos sem usar o Visual Studio ou captura programática. Em particular, você pode usar a ferramenta de captura de linha de comando para automação ou em um ambiente de teste.  

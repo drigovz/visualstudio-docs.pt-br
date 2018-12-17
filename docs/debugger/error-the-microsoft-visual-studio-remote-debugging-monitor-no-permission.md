@@ -1,6 +1,7 @@
 ---
-title: 'Erro: O Monitor de depuração remota do Microsoft Visual Studio no computador remoto não tem permissão para se conectar a este computador | Microsoft Docs'
-ms.custom: ''
+title: 'Erro: O Monitor de Depuração Remota do Microsoft Visual Studio no computador remoto não tem permissão para se conectar a este computador'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb71667da94027d3170a372a9a570e5e1eea4ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4bd5a9ef53940164c7d83dff0159af4c69f61010
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854163"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053426"
 ---
-# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>Erro: o Monitor de Depuração Remota do Microsoft Visual Studio no computador remoto não tem permissão para se conectar a este computador
+# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>Erro: O Monitor de Depuração Remota do Microsoft Visual Studio no computador remoto não tem permissão para se conectar a este computador
 Esse erro ocorre quando o usuário que está tentando executar o Monitor de Depuração Remota do Visual Studio (msvsmon) não tem uma conta no computador local.  
   
 ### <a name="to-fix-this-problem"></a>Para corrigir esse problema  
@@ -36,7 +37,7 @@ Esse erro ocorre quando o usuário que está tentando executar o Monitor de Depu
   
 - Execute msvsmon como um usuário que tem permissão para chamar no computador local. Isso significa que o usuário deve ser usuário de domínio e administrador no computador de msvsmon. Você pode especificar a conta de usuário para executar msvsmon de uma de duas maneiras:  
   
-  - Clique com botão direito no ícone de msvsmon e escolha **executar como** no menu de atalho  
+  - Clique com o botão direito do mouse no ícone de msvsmon e escolha **Executar como** no menu de atalho  
   
     \- ou -  
   
