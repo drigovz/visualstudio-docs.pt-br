@@ -1,6 +1,6 @@
 ---
-title: Analisar o uso de memória no Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Analisar o uso de memória
+ms.custom: seodec18
 ms.date: 01/02/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8971f26881e522c81f2c111098f09a94133072d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3fb854bcbb60dcde1358fe6128466b98780e559c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948909"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065743"
 ---
 # <a name="analyze-memory-usage"></a>Analisar o uso de memória
 Use a ferramenta de diagnóstico **Uso de Memória** integrada no depurador para localizar perdas de memória e uso de memória ineficiente. A ferramenta Uso de Memória permite que você tire um ou mais *instantâneos* do heap de memória gerenciada e do heap de memória nativa. Você pode coletar instantâneos de aplicativos .NET, ASP.NET, nativos ou mistos (.NET e nativos).  

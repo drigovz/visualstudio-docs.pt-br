@@ -1,5 +1,5 @@
 ---
-title: Como personalizar menus e barras de ferramentas no Visual Studio
+title: Personalizar menus e barras de ferramentas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -29,14 +29,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e9cab18be65d29b6cdd22b8948d2e89f75c4fe9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bb58d0a20e8764e7cefe013458476ddcd41ac416
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745943"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049685"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Como personalizar menus e barras de ferramentas no Visual Studio
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Como: Personalizar menus e barras de ferramentas no Visual Studio
 
 Para personalizar o Visual Studio, além de adicionar e remover barras de ferramentas e menus na barra de menus, você também pode adicionar e remover comandos em qualquer barra de ferramentas ou menu.
 
@@ -81,7 +81,7 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
         Você também pode arrastar uma barra de ferramentas pela sua borda esquerda para movê-la para qualquer lugar na área de encaixe principal.
 
         > [!NOTE]
-        > Para obter mais informações sobre como melhorar a usabilidade e a acessibilidade das barras de ferramentas, consulte [Como definir opções de acessibilidade do IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Para obter mais informações sobre como melhorar a usabilidade e a acessibilidade das barras de ferramentas, confira [Como: Definir opções de acessibilidade do IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="customizing_menu">Personalizar um menu ou uma barra de ferramentas</a>
 

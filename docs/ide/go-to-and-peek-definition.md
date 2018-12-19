@@ -1,5 +1,5 @@
 ---
-title: Exibindo definições de tipo no Visual Studio
+title: Exibindo definições de tipo
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e7b159eb48e995fa0bca6ea86299d09c1a10cf27
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745757"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062076"
 ---
 # <a name="view-type-and-member-definitions"></a>Exibir Definições de Membro e de Tipo
 
@@ -52,7 +52,7 @@ Em seguida, pressione **Ctrl** (ou qualquer outra tecla modificadora que estiver
 
 Se você inspecionar outra definição da janela pop-up, iniciará um caminho de navegação estrutural no qual poderá navegar usando os círculos e setas que aparecem acima da janela pop-up.
 
-Para obter mais informações, consulte [Como exibir e editar códigos usando Inspecionar Definição (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
+Para obter mais informações, confira [Como: Exibir e editar o código usando o comando Inspecionar Definição (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
 
 ## <a name="view-metadata-as-source-code-c"></a>Exibir metadados como código de origem (C#)
 
@@ -79,4 +79,4 @@ Novidade na No Visual Studio 2017 versão 15.6, você pode definir uma opção p
 ## <a name="see-also"></a>Consulte também
 
 - [Navegar pelo código](../ide/navigating-code.md)
-- [Como exibir e editar códigos usando a janela Inspecionar Definição (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Como: Exibir e editar o código usando o comando Inspecionar Definição (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

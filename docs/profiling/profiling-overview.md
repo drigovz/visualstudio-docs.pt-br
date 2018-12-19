@@ -1,6 +1,6 @@
 ---
-title: Visão geral da criação de perfil – Visual Studio | Microsoft Docs
-ms.custom: mvc
+title: Visão geral das ferramentas para medir o desempenho | Microsoft Docs
+ms.custom: seodec18
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
 ms.topic: overview
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c846b01634c1af9ba14e5c7ff460c279bf385a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 46b10f62f54306ddcbe8ab566f4e60d77526b0d2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844114"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059529"
 ---
-# <a name="overview-of-profiling-in-visual-studio"></a>Visão geral da criação de perfil no Visual Studio
+# <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Visão geral das ferramentas para medir o desempenho no Visual Studio
 
 Ferramentas de diagnóstico e criação de perfil ajudam você a diagnosticar o uso de memória e de CPU, além de outros problemas no aplicativo. Com essas ferramentas, você acumula dados (como valores de variáveis, chamadas de função e eventos) ao longo de um período, como o período em que você executa seu aplicativo. Você pode exibir o estado do seu aplicativo em pontos diferentes durante a execução do código ou pode executar uma análise post-mortem do desempenho do aplicativo.
 

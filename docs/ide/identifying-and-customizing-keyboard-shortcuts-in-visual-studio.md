@@ -1,5 +1,5 @@
 ---
-title: Identificar e personalizar atalhos de teclado no Visual Studio
+title: Identificar e personalizar atalhos de teclado
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 61ea8d6ee9243f79fe250872820643904bb2367a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747223"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062960"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificar e personalizar atalhos de teclado no Visual Studio
 
@@ -69,7 +69,7 @@ Se um atalho for atribuído a um comando no contexto Global e em mais nenhum out
 
 2. Expanda a pasta **Ambiente** e escolha **Teclado**.
 
-3. Opcional: filtre a lista de comandos inserindo todo ou parte do nome do comando, sem espaços, na caixa **Mostrar comandos que contenham**.
+3. Opcionais: Filtre a lista de comandos inserindo todo ou parte do nome do comando, sem espaços, na caixa **Mostrar comandos que contêm**.
 
 4. Na lista, escolha o comando ao qual você deseja atribuir um atalho de teclado.
 
@@ -78,7 +78,7 @@ Se um atalho for atribuído a um comando no contexto Global e em mais nenhum out
     Por exemplo, você pode escolher **Global** se desejar que o atalho funcione em todos os contextos. É possível usar qualquer atalho que não esteja mapeado (como Global) em outro editor. Caso contrário, o editor substitui o atalho.
 
     > [!NOTE]
-    > Não é possível atribuir as seguintes teclas como parte de um atalho de teclado em **Global**: Print Scrn/Sys Rq, Scroll Lock, Pause/Break, Tab, Caps Lock, Insert, Home, End, Page Up, Page Down, a tecla do logotipo do Windows, a tecla Aplicativo, qualquer uma das teclas de direção ou Enter e, no teclado numérico Num Lock, Delete ou Clear, nem a combinação Ctrl+Alt+Delete.
+    > Não é possível atribuir as seguintes teclas como parte de um atalho de teclado em **Global**: Print Scrn/Sys Rq, Scroll Lock, Pause/Break, Tab, Caps Lock, Insert, Home, End, Page Up, Page Down, a tecla do logotipo do Windows, a tecla Aplicativo, nenhuma das teclas de Direção ou Enter e, no teclado numérico, Num Lock, Delete ou Clear, nem a combinação Ctrl+Alt+Delete.
 
 6. Na caixa **Pressionar tecla(s) de atalho**, digite o atalho que deseja usar.
 

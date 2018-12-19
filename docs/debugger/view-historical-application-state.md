@@ -1,7 +1,7 @@
 ---
 title: Exibir o estado anterior do aplicativo usando o IntelliTrace
-ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
-ms.custom: mvc
+description: Saiba como tirar instantâneos e exibi-los com o retrocesso do IntelliTrace
+ms.custom: seodec18
 ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ba1ab23fead36cfabc8b2754535e8b10de981987
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846857"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060139"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Inspecionar estados anteriores do aplicativo usando o retrocesso do IntelliTrace no Visual Studio
 
@@ -96,9 +96,9 @@ Neste tutorial, você irá:
 
 O IntelliTrace no modo somente eventos permite que você ative a depuração histórica em pontos de interrupção e etapas do depurador. No entanto, o IntelliTrace somente capturará dados nas janelas **Locais** e **Autos** se elas estiverem abertas e somente capturará dados que estejam expandidos e na exibição. No modo somente eventos, você geralmente não tem uma exibição completa das variáveis e de objetos complexos. Além disso, não há suporte para a avaliação de expressão e para a exibição de dados na janela **Inspeção**. 
 
-No modo de eventos e instantâneos, o IntelliTrace captura todo o instantâneo do processo do aplicativo, incluindo objetos complexos. Em uma linha de código, você pode ver as mesmas informações como se você tivesse parado em um ponto de interrupção (e não importa se você expandiu previamente as informações). A avaliação da expressão também é compatível ao exibir um instantâneo.  
+No modo de eventos e instantâneos, o IntelliTrace captura todo o instantâneo do processo do aplicativo, incluindo objetos complexos. Em uma linha de código, você pode ver as mesmas informações como se você tivesse parado em um ponto de interrupção (e não importa se você expandiu previamente as informações). A avaliação da expressão também é compatível ao exibir um instantâneo.  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>Qual é o impacto de desempenho desse recurso? 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>Qual é o impacto de desempenho desse recurso? 
 
 O impacto no desempenho geral das etapas depende de seu aplicativo. A sobrecarga de tirar um instantâneo é de cerca de 30 ms. Quando um instantâneo é obtido, o processo do aplicativo é bifurcado e a cópia bifurcada é suspensa. Quando você exibe um instantâneo, o Visual Studio está anexando a cópia bifurcada do processo. Para cada instantâneo, o Visual Studio copia apenas a tabela de página e define as páginas como gravação de cópia. Se os objetos no heap forem alterados entre as etapas do depurador associadas a instantâneos, a respectiva tabela de página será copiada, resultando em um custo mínimo de memória. Se o Visual Studio detectar que não há memória suficiente para criar um instantâneo, ele não o fará.
  
@@ -112,7 +112,7 @@ O impacto no desempenho geral das etapas depende de seu aplicativo. A sobrecarga
   * Como alternativa: 
     1. Instale o conjunto de ferramentas do VC++ 2015.3 v140 para o componente de área de trabalho (x86, x64) do Instalador do Visual Studio.
     2. Compile o aplicativo de destino.
-    3. Na linha de comando, use a ferramenta editbin para definir o sinalizador `Largeaddressaware` para o executável de destino. Por exemplo, você pode usar esse comando (depois de atualizar o caminho): "C:\Arquivos de Programas (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
+    3. Na linha de comando, use a ferramenta editbin para definir o sinalizador `Largeaddressaware` para o executável de destino. Por exemplo, você pode usar este comando (depois de atualizar o caminho): "C:\Arquivos de Programas (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
     4. Para iniciar a depuração, pressione **F5**. Agora, os instantâneos são obtidos em pontos de interrupção e etapas do depurador.
 
        > [!Note]

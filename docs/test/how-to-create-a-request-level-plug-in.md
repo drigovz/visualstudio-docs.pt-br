@@ -1,5 +1,5 @@
 ---
-title: Criar um plug-in de nível de solicitação para testes de desempenho Web no Visual Studio
+title: Criar um plug-in de solicitação para testes de desempenho Web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cf94de633554cef495b0a9a023426ac49de75c76
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4b9408560eabf9a824f391625753b2ddd390a9d2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895269"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054068"
 ---
-# <a name="how-to-create-a-request-level-plug-in"></a>Como criar um plug-in no nível da solicitação
+# <a name="how-to-create-a-request-level-plug-in"></a>Como: Criar um plug-in de solicitação
 
 *Solicitações* são as instruções declarativas que constituem testes de desempenho Web. Plug-ins de teste de desempenho na Web permitem isolar e reutilizar o código fora das instruções declarativas principais no teste de desempenho na Web. Você pode criar plug-ins e adicioná-los a uma solicitação individual, bem como ao teste de desempenho na Web que a contém. Um *plug-in de solicitação* personalizado oferece uma maneira de chamar um código quando uma solicitação específica é executada em um teste de desempenho Web.
 
@@ -84,7 +84,7 @@ Você pode usar plug-ins personalizados de solicitação de teste de desempenho 
     > [!WARNING]
     > Você talvez receba um erro semelhante ao seguinte quando executar um teste de desempenho na Web ou um teste de carga usando seu plug-in:
     >
-    > **Falha na solicitação: exceção em \<plug-in> evento: não foi possível carregar arquivo ou assembly '\<"Nome do plug-in".dll arquivo>, versão =\<n.n.n. n >, Culture=neutral, PublicKeyToken=null' ou uma de suas dependências. O sistema não pode localizar o arquivo especificado.**
+    > **Falha na solicitação: Exceção no evento \<plug-in>: Não foi possível carregar o arquivo ou o assembly '\<Arquivo "Nome do plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' ou uma de suas dependências. O sistema não pode localizar o arquivo especificado.**
     >
     > Isso acontecerá se você fizer alterações no código de qualquer um de seus plug-ins e criar uma nova versão de DLL **(versão=0.0.0.0)**, mas o plug-in ainda estiver referenciando a versão original do plug-in. Para corrigir esse problema, siga estas etapas:
     >
@@ -126,5 +126,5 @@ namespace RequestPluginNamespace
 - [Criar código personalizado e plug-ins para testes de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Codificar uma regra de extração personalizada para um teste de desempenho Web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Codificar uma regra de validação personalizada para um teste de desempenho Web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Como criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md)
+- [Como: Criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md)
 - [Gerar e executar um teste de desempenho Web codificado](../test/generate-and-run-a-coded-web-performance-test.md)

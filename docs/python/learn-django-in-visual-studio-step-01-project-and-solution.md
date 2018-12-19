@@ -1,5 +1,6 @@
 ---
-title: Tutorial – Saiba mais sobre Django no Visual Studio, etapa 1
+title: Tutorial Aprenda a usar o Django no Visual Studio, etapa 1, conceitos básicos do Django
+titleSuffix: ''
 description: Um passo a passo com as noções básicas do Django no contexto dos projetos do Visual Studio, demonstrando o suporte que o Visual Studio oferece para o desenvolvimento do Django.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 32779861c3f7b8a0bc8ea9e8a3a42d00a8226e1a
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 549bd552cee0d9b833d1dee36f29f3a36b3f5f07
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001237"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061074"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutorial: Introdução à estrutura da Web do Django no Visual Studio
 
@@ -50,7 +52,7 @@ Um projeto do Visual Studio, por sua vez, pode conter o projeto do Django juntam
 
 No decorrer deste tutorial, você criará uma única solução do Visual Studio que contém três projetos independentes do Django, cada um contendo um único aplicativo do Django. Se você mantiver os projetos na mesma solução, poderá facilmente alternar entre diferentes arquivos para comparação.
 
-## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Etapa 1-1: Criar uma solução e um projeto do Visual Studio
+## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Etapa 1-1: Criar um projeto e uma solução do Visual Studio
 
 Ao trabalhar com o Django na linha de comando, você geralmente inicia um projeto executando o comando `django-admin startproject <project_name>`. No Visual Studio, se você usar o modelo "Projeto Web em Branco do Django", fornecerá a mesma estrutura em uma solução e projeto do Visual Studio.
 
@@ -64,8 +66,8 @@ Ao trabalhar com o Django na linha de comando, você geralmente inicia um projet
     - **Local**: especifique um local no qual criar o projeto e a solução do Visual Studio.
     - **Solução**: mantenha esse controle definido com a opção padrão **Criar nova solução**.
     - **Nome da solução**: definido como **LearningDjango**, que é apropriado para a solução como um contêiner para vários projetos neste tutorial.
-    - **Criar diretório para a solução**: deixar definido (o padrão).
-    - **Criar um novo repositório Git**: escolha essa opção (que é clara por padrão) para que o Visual Studio crie um repositório Git local quando criar a solução. Caso essa opção não seja exibida, execute o instalador do Visual Studio 2017 e adicione o **GIT para Windows** e a **Extensão do GitHub para Visual Studio** à guia **Componentes individuais** em **Ferramentas de código**.
+    - **Criar um diretório para a solução**: Deixe essa opção definida (o padrão).
+    - **Criar um repositório Git**: Selecione essa opção (que está desmarcada por padrão) para que o Visual Studio crie um repositório Git local quando ele criar a solução. Caso essa opção não seja exibida, execute o instalador do Visual Studio 2017 e adicione o **GIT para Windows** e a **Extensão do GitHub para Visual Studio** à guia **Componentes individuais** em **Ferramentas de código**.
 
 1. Após alguns instantes, o Visual Studio fará uma solicitação em uma caixa de diálogo com a mensagem **Este projeto exige pacotes externos** (mostrado abaixo). Essa caixa de diálogo é exibida porque o modelo inclui um arquivo *requirements.txt* que referencia o último pacote do Django 1.x. Escolha **Mostrar pacotes necessários** para ver as dependências exatas.
 
@@ -107,11 +109,11 @@ Como você marcou a opção **Criar novo repositório Git** na caixa de diálogo
 > [!Tip]
 > Para navegar rapidamente no **Team Explorer**, selecione o cabeçalho (que indica **Alterações** ou **Efetuar Push** nas imagens acima) para ver um menu pop-up das páginas disponíveis.
 
-### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Pergunta: Quais são algumas vantagens de usar o controle do código-fonte a partir do início de um projeto?
+### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Pergunta: Quais são algumas vantagens de usar o controle do código-fonte logo no início de um projeto?
 
-Resposta: Em primeiro lugar, se você usar o controle do código-fonte desde o início, especialmente se também usar um repositório remoto, terá um backup regular em um local fora do projeto. Em vez de manter um projeto apenas em um sistema de arquivos local, o controle do código-fonte também oferece um histórico de alterações completo e facilita a reversão de um único arquivo ou todo o projeto para um estado anterior. O histórico de alterações ajuda a determinar a causa das regressões (falhas de teste). Além disso, o controle do código-fonte é essencial se várias pessoas estiverem trabalhando em um projeto, pois ele gerencia substituições e fornece a resolução de conflitos. Por fim, o controle do código-fonte, que é basicamente uma forma de automação, deixa você preparado para automatizar o gerenciamento de compilações, testes e versões. Esse recurso realmente representa o primeiro passo no uso de DevOps em um projeto e, como os obstáculos para entrar são muito baixos, realmente não há motivos para não usar o controle do código-fonte desde o início.
+Resposta: Em primeiro lugar, o uso do controle do código-fonte desde o início, especialmente se você também usar um repositório remoto, fornece um backup regular em um local fora do projeto. Em vez de manter um projeto apenas em um sistema de arquivos local, o controle do código-fonte também oferece um histórico de alterações completo e facilita a reversão de um único arquivo ou todo o projeto para um estado anterior. O histórico de alterações ajuda a determinar a causa das regressões (falhas de teste). Além disso, o controle do código-fonte é essencial se várias pessoas estiverem trabalhando em um projeto, pois ele gerencia substituições e fornece a resolução de conflitos. Por fim, o controle do código-fonte, que é basicamente uma forma de automação, deixa você preparado para automatizar o gerenciamento de compilações, testes e versões. Esse recurso realmente representa o primeiro passo no uso de DevOps em um projeto e, como os obstáculos para entrar são muito baixos, realmente não há motivos para não usar o controle do código-fonte desde o início.
 
-Para uma discussão mais aprofundada sobre o controle do código-fonte usado como automação, confira [A origem da verdade: a função dos repositórios no DevOps](https://msdn.microsoft.com/magazine/mt763232), um artigo da MSDN Magazine destinado a aplicativos móveis, mas que também se aplica a aplicativos Web.
+Para obter uma discussão mais detalhada sobre o controle do código-fonte como automação, confira [A fonte da verdade: a função dos repositórios no DevOps](https://msdn.microsoft.com/magazine/mt763232), um artigo na MSDN Magazine escrito para aplicativos móveis que se aplica também a aplicativos Web.
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Pergunta: É possível evitar que o Visual Studio confirme automaticamente um novo projeto?
 
@@ -147,9 +149,9 @@ Agora que você configurou o controle do código-fonte para o projeto, é possí
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Pergunta: Por que criar um ambiente virtual?
 
-Resposta: Um ambiente virtual é uma ótima maneira de isolar as dependências exatas do seu aplicativo. Esse isolamento evita conflitos em um ambiente global do Python e auxilia nos testes e na colaboração. Com o tempo, à medida que desenvolver um aplicativo, invariavelmente, você introduzirá muitos pacotes úteis do Python. Mantendo os pacotes em um ambiente virtual específico do projeto, você pode atualizar com facilidade o arquivo *requirements.txt* do projeto que descreve esse ambiente, incluído no controle do código-fonte. Quando o projeto é copiado para outros computadores, incluindo servidores de build, servidores de implantação e outros computadores de desenvolvimento, é fácil recriar o ambiente usando apenas o *requirements.txt* (é por isso que o ambiente não precisa estar no controle do código-fonte). Para obter mais informações, confira [Usar ambientes virtuais](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
+Resposta: Um ambiente virtual é uma ótima maneira de isolar as dependências exatas do aplicativo. Esse isolamento evita conflitos em um ambiente global do Python e auxilia nos testes e na colaboração. Com o tempo, à medida que desenvolver um aplicativo, invariavelmente, você introduzirá muitos pacotes úteis do Python. Mantendo os pacotes em um ambiente virtual específico do projeto, você pode atualizar com facilidade o arquivo *requirements.txt* do projeto que descreve esse ambiente, incluído no controle do código-fonte. Quando o projeto é copiado para outros computadores, incluindo servidores de build, servidores de implantação e outros computadores de desenvolvimento, é fácil recriar o ambiente usando apenas o *requirements.txt* (é por isso que o ambiente não precisa estar no controle do código-fonte). Para obter mais informações, confira [Usar ambientes virtuais](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
-### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Pergunta: Como faço para remover um ambiente virtual que já está confirmado no controle do código-fonte?
+### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Pergunta: Como fazer para remover um ambiente virtual que já está confirmado no controle do código-fonte?
 
 Resposta: Primeiro, edite o arquivo *.gitignore* para excluir a pasta: localize a seção ao final com o comentário `# Python Tools for Visual Studio (PTVS)` e adicione uma nova linha à pasta do ambiente virtual, como `/BasicProject/env`. (Como o Visual Studio não mostra o arquivo no **Gerenciador de Soluções**, abra-o diretamente usando o comando de menu **Arquivo** > **Abrir** > **Arquivo**. Abra também o arquivo no **Team Explorer**: na página **Configurações**, selecione **Configurações do Repositório**, vá para a seção **Arquivos Ignorar e de Atributos** e, em seguida, selecione o link **Editar** ao lado de **.gitignore**.)
 
@@ -174,7 +176,7 @@ Após concluir a criação do projeto, analise o código do projeto do Django de
 
 3. Conforme observado anteriormente, o modelo do Visual Studio também adiciona um arquivo *requirements.txt* ao projeto especificando a dependência de pacote do Django. A presença desse arquivo é que faz com que você seja convidado a criar um ambiente virtual ao desenvolver o projeto pela primeira vez.
 
-### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Pergunta: O Visual Studio pode gerar um arquivo requirements.txt a partir de um ambiente virtual depois de instalar outros pacotes?
+### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Pergunta: O Visual Studio pode gerar um arquivo requirements.txt com base em um ambiente virtual depois de instalar outros pacotes?
 
 Resposta: Sim. Expanda o nó **Ambientes do Python**, clique com o botão direito do mouse no ambiente virtual e escolha o comando **Gerar requirements.txt**. É recomendável usar esse comando periodicamente conforme você modifica o ambiente e confirma as alterações em *requirements.txt* no controle do código-fonte, juntamente com outras alterações de código que dependem desse ambiente. Se você configurar a integração contínua em um servidor de compilação, deverá gerar o arquivo e confirmar as alterações sempre que modificar o ambiente.
 
@@ -209,6 +211,6 @@ Neste ponto, o projeto básico do Django não possui aplicativos. Crie um aplica
 
 ## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 
-- Código do projeto do Django: [Como gravar seu primeiro aplicativo do Django, parte 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
+- Código do projeto do Django: [Escrevendo seu primeiro aplicativo do Django, parte 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
 - Utilitário administrativo: [django-admin e manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)
 - Código-fonte do tutorial no GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

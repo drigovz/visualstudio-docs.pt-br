@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1164312d74259ad4f3a56750a487fb2578595cf0
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 67d8bc9ece20867e96f0ae0ee6d6ceb9ad2e3952
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924155"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159770"
 ---
-# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Como criar e executar o exemplo de LinqToXmlDataBinding
+# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Como: Compilar e executar o exemplo de LinqToXmlDataBinding
 
 Este tópico mostra como criar e compilar o projeto de LinqToXmlDataBinding Visual Studio, e como executar o programa resultante de LinqToXmlDataBinding Windows Presentation Foundation (WPF).
 
-Para obter mais informações sobre o Visual Studio, confira [Visão geral do IDE do Visual Studio](../ide/visual-studio-ide.md).
+Para obter mais informações sobre o Visual Studio, confira [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md).
 
 ## <a name="create-and-populate-the-project"></a>Criar e popular o projeto
 
@@ -81,5 +81,5 @@ O programa de LinqToXmlDataBinding permite que o usuário para exibir e manipula
 ## <a name="see-also"></a>Consulte também
 
 - [Exemplo de associação de dados do WPF usando LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)
-- [Passo a passo: exemplo de LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
-- [Visão geral do IDE do Visual Studio](../ide/visual-studio-ide.md)
+- [Passo a passo: Exemplo de LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
+- [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)

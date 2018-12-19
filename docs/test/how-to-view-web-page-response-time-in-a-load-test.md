@@ -1,5 +1,5 @@
 ---
-title: Tempo de resposta da página em um teste de carga no Visual Studio
+title: Tempo de resposta da página em um teste de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9740d26ef99c10bb9ec84afa23b998f6e1467f40
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 73ba296be1c001415746145c7bcf4d13c8b25053
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895256"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068089"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Como exibir o tempo de resposta da página da Web em um teste de carga usando o Analisador de Teste de Carga
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Como: Exibir o tempo de resposta da página da Web em um teste de carga usando o Analisador de Teste de Carga
 
 O tempo necessário para cada página da Web carregar é conhecido como *tempo de resposta*. Quando você cria um teste de desempenho na Web, pode definir uma meta de tempo de resposta para cada solicitação de página da Web no teste de desempenho na Web.
 
@@ -61,7 +61,7 @@ Se você executar o teste de desempenho na Web sob estresse em um teste de carga
    |**Max**|O tempo de resposta máximo da página.<br /><br /> Por padrão, esses dados não são coletados. Para coletar esses dados, no **Editor de Teste de Carga**, no nó **Configurações de Execução**, selecione o nó da configuração de execução a ser alterado. Na janela **Propriedades**, para a propriedade de **Armazenamento de Detalhes de Medição de Tempo**, selecione **AllIndividualDetails**.|
    |**Desvio padrão**|Por padrão, os dados de desvio padrão não são coletados. Para coletar esses dados, no **Editor de Teste de Carga**, no nó **Configurações de Execução**, selecione o nó da configuração de execução a ser alterado. Na janela **Propriedades**, para a propriedade de **Armazenamento de Detalhes de Medição de Tempo**, selecione **AllIndividualDetails**.|
    |**Tempo da Página**|O tempo médio de resposta para todas as solicitações feitas para a página da Web.|
-   |**Meta**|A meta de tempo da página. Esse é um valor constante para a página. **Observação:** a meta de tempo da página é exibida somente quando a meta é definida para a solicitação no teste de desempenho Web.|
+   |**Meta**|A meta de tempo da página. Esse é um valor constante para a página. **Observação:**  A Meta de Tempo da Página é exibida somente quando a meta é definida para a solicitação no teste de desempenho Web.|
    |**Meta da reunião %**|A porcentagem de solicitações feitas para a página da Web que atingiu a meta de tempo de resposta.|
 
    Para obter mais informações, consulte [Analisar resultados de teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
@@ -96,5 +96,5 @@ Para exibir dados de tempo de resposta em um gráfico:
 ## <a name="see-also"></a>Consulte também
 
 - [Analisar resultados do teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
-- [Como acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)
+- [Como: Acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

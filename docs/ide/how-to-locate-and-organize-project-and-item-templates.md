@@ -1,5 +1,5 @@
 ---
-title: Organizar modelos no Visual Studio
+title: Organizar modelos
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 65d4940e7a7969fe28fe115ec7ef42cfdc645c9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6bca61dd88b164fcae2b2ccb7e2a98086bf102b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948724"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066282"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Como localizar e organizar modelos de projeto e de item
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Como: Localizar e organizar modelos de projeto de e item
 
 Os arquivos de modelo devem ser colocados em um local que o Visual Studio reconheça, para que os modelos apareçam nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item**. Você também pode criar subcategorias personalizadas no local do modelo de usuário e as categorias são mostradas nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item**.
 
@@ -125,5 +125,5 @@ Você pode habilitar modelos em subcategorias a serem exibidos em suas categoria
 - [Personalizar modelos](../ide/customizing-project-and-item-templates.md)
 - [Referência de esquema de modelo do Visual Studio (extensibilidade)](../extensibility/visual-studio-template-schema-reference.md)
 - [NumberOfParentCategoriesToRollUp (modelos do Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)
-- [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)
-- [Como criar modelos de item](../ide/how-to-create-item-templates.md)
+- [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)
+- [Como: Criar modelos de item](../ide/how-to-create-item-templates.md)

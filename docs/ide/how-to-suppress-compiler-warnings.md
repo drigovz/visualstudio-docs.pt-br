@@ -1,5 +1,5 @@
 ---
-title: Suprimir avisos do compilador no Visual Studio para projetos e pacotes do NuGet
+title: Suprimir avisos do compilador para projetos e pacotes NuGet
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3a84dff28b174676ff6fe74bf5420863afcc83
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f805ce50a94304651aca6dd1379fbbf2f5ecc7b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948555"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060359"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Como suprimir avisos do compilador
+# <a name="how-to-suppress-compiler-warnings"></a>Como: Suprimir avisos do compilador
 
-Você pode organizar um log de build filtrando um ou mais tipos de avisos do compilador. Por exemplo, talvez você queira analisar apenas parte da saída gerada quando define o nível de detalhes de log de build como **Normal**, **Detalhado** ou **Diagnóstico**. Para saber mais sobre detalhamento, consulte [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md).
+Você pode organizar um log de build filtrando um ou mais tipos de avisos do compilador. Por exemplo, talvez você queira analisar apenas parte da saída gerada quando define o nível de detalhes de log de build como **Normal**, **Detalhado** ou **Diagnóstico**. Para obter mais informações sobre os detalhes, confira [Como: Exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Suprimir avisos específicos para o Visual C# ou F# #
 
@@ -133,6 +133,6 @@ Em alguns casos, convém suprimir avisos do compilador NuGet para um único paco
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: criar um aplicativo](../ide/walkthrough-building-an-application.md)
-- [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md)
-- [Compilar e criar](../ide/compiling-and-building-in-visual-studio.md)
+- [Passo a passo: Criar um aplicativo](../ide/walkthrough-building-an-application.md)
+- [Como: Exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)

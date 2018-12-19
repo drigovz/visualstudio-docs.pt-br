@@ -1,7 +1,7 @@
 ---
 title: Medir o uso da CPU em seus aplicativos
 description: Analise problemas de desempenho da CPU em seu aplicativo usando as ferramentas de diagnóstico integradas ao depurador.
-ms.custom: mvc
+ms.custom: seodec18
 ms.date: 02/27/2017
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966697652e969c3d6de9f3c17f52f88e84c89bb8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 46837bb68854f0f5dbb5c799d405c37431f6c379
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220671"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065756"
 ---
-# <a name="profile-application-performance-in-visual-studio"></a>Analisar desempenho de aplicativos no Visual Studio
+# <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Medir o desempenho do aplicativo analisando o uso da CPU
 Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar a guia **Uso de CPU** das Ferramentas de Diagnóstico para obter dados de desempenho do seu aplicativo. As Ferramentas de Diagnóstico têm suporte para desenvolvimento de .NET no Visual Studio, incluindo o ASP.NET e para desenvolvimento nativo/C++.
   
 Quando o depurador pausa, a ferramenta **Uso de CPU** coleta informações sobre as funções que estão em execução no aplicativo. A ferramenta lista as funções que estavam executando o trabalho e fornece um gráfico de linha do tempo que você pode usar para se concentrar em segmentos específicos da sessão de amostragem.
@@ -97,7 +97,7 @@ Neste tutorial, você irá:
 
      Neste ponto, você pode começar a analisar os dados.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>Etapa 2: Analisar os dados de uso de CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Etapa 2: Analisar os dados de uso da CPU
 
 Recomendamos que você comece a analisar os dados examinando a lista de funções em Uso da CPU, identificando as funções que fazem a maior parte do trabalho e, em seguida, fazendo uma análise mais detalhada de cada uma.
 

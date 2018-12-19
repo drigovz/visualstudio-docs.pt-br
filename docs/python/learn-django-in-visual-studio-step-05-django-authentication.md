@@ -1,5 +1,6 @@
 ---
-title: Tutorial – Saiba mais sobre Django no Visual Studio, etapa 5
+title: Tutorial Aprenda a usar o Django no Visual Studio, etapa 5, autenticação
+titleSuffix: ''
 description: Um passo a passo dos conceitos básicos do Django no contexto dos projetos do Visual Studio, especificamente os recursos de autenticação fornecidos pelos modelos Projeto Web do Django.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cb195e971612124ace53d8eb33b5c3563cd19a12
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 77cc7816a1a05e3b6a883416225717679dd5661b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001224"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064067"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Etapa 5: Autenticar usuários no Django
 
-**Etapa anterior: [Usar o modelo Projeto Web completo do Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**Etapa anterior: [Usar o modelo completo de Projeto Web do Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 Como a autenticação é uma necessidade comum dos aplicativos Web, o modelo "Projeto Web do Django" inclui um fluxo de autenticação básico. (O modelo "Pesquisa Projeto Web do Django" abordado na etapa 6 deste tutorial também inclui o mesmo fluxo.) Ao usar um dos modelos de projeto do Django, o Visual Studio inclui todos os módulos necessários para a autenticação em *settings.py* do projeto do Django.
 
@@ -204,9 +206,9 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
 
 1. Quando terminar, interrompa o servidor e, mais uma vez, confirme suas alterações no controle do código-fonte.
 
-### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Pergunta: Qual é a finalidade da marcação {% csrf_token %} exibida nos elementos \<form\>?
+### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Pergunta: Qual é a finalidade da tag {% csrf_token %} exibida nos elementos \<form\>?
 
-Resposta: A marcação `{% csrf_token %}` inclui a [proteção interna contra solicitações intersites forjadas (csrf)](https://docs.djangoproject.com/en/2.0/ref/csrf/) do Django (documentos do Django). Normalmente, essa marca é adicionada a qualquer elemento que envolva métodos de solicitação POST, PUT ou DELETE, como um formulário. Em seguida, a função de renderização de modelo (`render`) insere a proteção necessária.
+Resposta: A tag `{% csrf_token %}` inclui a [proteção interna contra CSRF (solicitação intersite forjada)](https://docs.djangoproject.com/en/2.0/ref/csrf/) do Django (documentação do Django). Normalmente, essa marca é adicionada a qualquer elemento que envolva métodos de solicitação POST, PUT ou DELETE, como um formulário. Em seguida, a função de renderização de modelo (`render`) insere a proteção necessária.
 
 ## <a name="next-steps"></a>Próximas etapas
 

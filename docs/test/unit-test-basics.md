@@ -1,5 +1,5 @@
 ---
-title: Noções básicas sobre testes de unidade no Visual Studio
+title: Noções básicas de teste de unidade
 ms.date: 2016-01-07
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45babce1d9b742bd2af5b047973c4f96b41e52cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935309"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053163"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -32,7 +32,7 @@ O Gerenciador de Testes também pode executar estruturas de teste de unidade de 
 
 Para obter uma introdução ao teste de unidade que leva você diretamente para a parte de codificação, confira um destes tópicos:
 
-- [Passo a passo: criar e executar testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Passo a passo: Criar e executar testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
 - [Início Rápido: Desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md)
 
@@ -246,7 +246,7 @@ Para obter mais informações, consulte [Executar testes de unidade com o Gerenc
 
 ## <a name="qa"></a>PERGUNTAS E RESPOSTAS
 
-**P: como posso depurar testes de unidade?**
+**P: Como fazer para depurar testes de unidade?**
 
 **R:** Use o **Gerenciador de Testes** para iniciar uma sessão de depuração para os testes. Passar pelo código com o depurador do Visual Studio permite-lhe navegar facilmente entre os testes de unidade e o projeto sendo testado. Para iniciar a depuração:
 
@@ -259,13 +259,13 @@ Para obter mais informações, consulte [Executar testes de unidade com o Gerenc
 
 Obter mais detalhes sobre [como depurar testes de unidade](../debugger/debugging-in-visual-studio.md).
 
-**P: se estou usando TDD, como faço para gerar código de meus testes?**
+**P: Se eu estiver usando o TDD, como fazer para gerar o código em meus testes?**
 
-**R:** use o IntelliSense para gerar classes e métodos no código do seu projeto. Escreva uma instrução em um método de teste que chama a classe ou o método que você deseja gerar e abra o menu do IntelliSense na chamada. Se a chamada é um construtor da nova classe, escolha **Gerar novo tipo** no menu e siga o assistente para inserir a classe em seu projeto de código. Se a chamada é para um método, escolha **Gerar novo método** no menu IntelliSense.
+**R:** Use o IntelliSense para gerar classes e métodos no código do projeto. Escreva uma instrução em um método de teste que chama a classe ou o método que você deseja gerar e abra o menu do IntelliSense na chamada. Se a chamada é um construtor da nova classe, escolha **Gerar novo tipo** no menu e siga o assistente para inserir a classe em seu projeto de código. Se a chamada é para um método, escolha **Gerar novo método** no menu IntelliSense.
 
 ![Gerar o menu do IntelliSense de stub do método](../test/media/ute_generatemethodstubintellisense.png)
 
-**P: posso criar testes de unidade que usam vários conjuntos de dados como entrada para executar o teste?**
+**P: Posso criar testes de unidade que usam vários conjuntos de dados como entrada para executar o teste?**
 
 **R:** Sim. Os *métodos de teste voltados para dados* permitem que você teste um intervalo de valores com um método de teste de unidade. Use um atributo `DataSource` para o método de teste que especifica a fonte de dados e a tabela que contém os valores de variáveis que você deseja testar.  No corpo do método, atribua os valores de linha às variáveis usando o indexador `TestContext.DataRow[`*ColumnName*`]`.
 
@@ -297,7 +297,7 @@ O método atribuído é executado uma vez para cada linha na tabela. O **Gerenci
 
 Saiba mais sobre [testes de unidade voltados para dados](../test/how-to-create-a-data-driven-unit-test.md).
 
-**P: posso exibir quanto do meu código é testado pelos meus testes de unidade?**
+**P: Posso exibir a quantidade de código que foi testada pelos meus testes de unidade?**
 
 **R:** Sim. Você pode determinar a quantidade de código que realmente está sendo testada por seus testes de unidade usando a ferramenta de cobertura de código do Visual Studio. Há suporte para idiomas nativos e gerenciados e todas as estruturas de teste de unidade que podem ser executadas pela estrutura de teste de unidade.
 
@@ -311,7 +311,7 @@ Os resultados da cobertura são exibidos na janela **Resultados da Cobertura de 
 
 Saiba mais sobre [cobertura de código](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
-**P: posso testar métodos no meu código que possuem dependências externas?**
+**P: Posso testar métodos em meu código que têm dependências externas?**
 
 **R:** Sim. Se você tiver o Visual Studio Enterprise, o Microsoft Fakes pode ser usado com método de teste que você escrever usando estruturas de teste de unidade para código gerenciado.
 
@@ -325,7 +325,7 @@ Em ambas as abordagens, você pode usar os representantes de chamadas gerados pa
 
 Saiba mais sobre [como isolar métodos de teste de unidade com o Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**P: posso usar outras estruturas de teste de unidade para criar testes de unidade?**
+**P: Posso usar outras estruturas de teste de unidade para criar testes de unidade?**
 
 **R:** Sim, siga estas etapas para [encontrar e instalar outras estruturas](../test/install-third-party-unit-test-frameworks.md). Depois de reiniciar o Visual Studio, reabra a solução para criar testes de unidade e selecione suas estruturas instaladas aqui:
 

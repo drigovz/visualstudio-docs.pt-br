@@ -1,5 +1,6 @@
 ---
-title: Tutorial – Saiba mais sobre Django no Visual Studio, etapa 6
+title: Tutorial Aprenda a usar o Django no Visual Studio, etapa 6, modelo de projeto Votações
+titleSuffix: ''
 description: Um passo a passo dos conceitos básicos do Django no contexto dos projetos do Visual Studio, especificamente os recursos do modelo de pesquisas do Projeto Web do Django, como a personalização administrativa.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 94c858a847e0e5029a989a6939a2094ed3792903
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: ecc0637495b484ae06cb0f18e45ba329c7fa3407
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001250"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062490"
 ---
-# <a name="step-6-use-the-polls-django-web-project-template"></a>Etapa 6: Usar o modelo Projeto Web do Django de pesquisas
+# <a name="step-6-use-the-polls-django-web-project-template"></a>Etapa 6: Usar o modelo de projeto Web Votações do Django
 
-**Etapa anterior: [Autenticar usuários em Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
+**Etapa anterior: [Autenticar usuários no Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
 
 Depois de entender o modelo de "Projeto Web do Django" do Visual Studio, você agora pode examinar o terceiro modelo do Django, "Pesquisas do projeto Web do Django", que tem como base a mesma base de código e demonstra o trabalho com um banco de dados.
 
@@ -190,13 +192,13 @@ Para ver o efeito de alterar um modelo, tente as seguintes etapas:
 
 Em geral, o recurso de migração do Django significa que você nunca precisa gerenciar seu esquema de banco de dados manualmente. Basta fazer alterações em seus modelos, gerar scripts de migração e aplicá-las com o comando de migração.
 
-### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Pergunta: O que acontece se eu esquecer de executar o comando de migração depois de fazer alterações nos modelos?
+### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Pergunta: O que acontecerá se eu esquecer de executar o comando de migração depois de fazer alterações nos modelos?
 
 Resposta: Se os modelos não corresponderem ao que está no banco de dados, o Django falhará em tempo de execução com as exceções adequadas. Por exemplo, se você esquecer de migrar a alteração do modelo mostrada na seção anterior, verá o erro **no such column: app_poll.author**:
 
 ![Erro mostrado quando uma alteração de modelo não tiver sido migrada](media/django/step06-exception-when-forgetting-to-migrate.png).
 
-### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Pergunta: Por que o Gerenciador de Soluções não mostra os scripts gerados recentemente após executar Django Make Migrations?
+### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Pergunta: Por que o Gerenciador de Soluções não mostra os scripts recém-gerados após a execução de Django Make Migrations?
 
 Resposta: Embora os scripts recém-gerados estejam na pasta *app/migrations* e sejam aplicados quando o comando **Django Migrate** é executado, eles não são exibidos automaticamente no **Gerenciador de Soluções** porque não foram adicionados ao projeto do Visual Studio. Para torná-las visíveis, primeiro selecione o comando de menu **Project** > **Show All Files** ou botão da barra de ferramentas descrito na imagem abaixo. Esse comando faz o **Gerenciador de Soluções** mostrar todos os arquivos na pasta do projeto, com um ícone de contorno pontilhado para itens que não foram adicionados ao projeto em si. Clique com o botão direito nos arquivos que você deseja adicionar e selecione **Include In Project**, que também os inclui no controle de origem com a próxima confirmação.
 
@@ -362,7 +364,7 @@ A chamada para `admin.site.register` em seguida conecta-se a essa classe para o 
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!Note]
-> Se você tiver confirmando sua solução do Visual Studio para controle de origem ao longo deste tutorial, agora será um bom momento para fazer outra confirmação. A solução deve corresponder ao código-fonte do tutorial no GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
+> Se você tiver confirmando sua solução do Visual Studio para controle de origem ao longo deste tutorial, agora será um bom momento para fazer outra confirmação. Sua solução deve corresponder ao código-fonte do tutorial no GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
 Agora você explorou a totalidade dos modelos de "Projeto em branco da Web do Django", "Projeto da Web do Django" e "Pesquisas de Projeto Web do Django" no Visual Studio. Você aprendeu as noções básicas do Django como o uso de modelos e modos de exibição e explorou roteamento, autenticação e uso de modelos de banco de dados. Agora você deverá ser capaz de criar um aplicativo Web por sua conta com os modos de exibição e os modelos de que precisar.
 

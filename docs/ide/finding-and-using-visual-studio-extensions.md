@@ -1,5 +1,5 @@
 ---
-title: Localizar e usar extensões do Visual Studio
+title: Localizar e usar extensões
 ms.date: 06/07/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a5b562aa6fe4a64f92d66ad0a6fff0395e5314a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cc67602db2d830283bb47fe7c3a9728d0d9fd799
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950274"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067901"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Localizar e usar extensões do Visual Studio
 
-As extensões do Visual Studio são pacotes de código executados dentro do Visual Studio e fornecem recursos novos ou aprimorados do Visual Studio. É possível encontrar mais informações sobre extensões do Visual Studio aqui: [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
+As extensões do Visual Studio são pacotes de código executados dentro do Visual Studio e fornecem recursos novos ou aprimorados do Visual Studio. Encontre mais informações sobre as extensões do Visual Studio aqui: [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
 
 É possível usar a caixa de diálogo **Extensões e Atualizações** para instalar as extensões e amostras do Visual Studio de sites e outros locais e habilitá-las, desabilitá-las, atualizá-las ou desinstalá-las. (**Ferramentas > Extensões e Atualizações** ou digite ou **Extensões** na janela **Início Rápido**). A caixa de diálogo também mostra atualizações para amostras e extensões instaladas. Também é possível baixar extensões de sites ou obtê-las de outros desenvolvedores.
 

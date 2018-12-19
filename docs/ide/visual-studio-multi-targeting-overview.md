@@ -1,5 +1,5 @@
 ---
-title: Direcionar ao .NET Framework no Visual Studio
+title: Definir o .NET Framework como destino
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: cba93b86d6ecebf249e11d18bd6e4b6b86e59fda
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: e0004678b62b9deba97d31815de577721008f77d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425083"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058292"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visão geral de multiplataforma no Visual Studio
 
@@ -68,13 +68,13 @@ Ao criar um projeto, selecione a versão do .NET Framework de destino na caixa d
 
 ![A lista suspensa Estrutura na caixa de diálogo Novo Projeto](media/vside-newproject-framework.png)
 
-Em um projeto existente, é possível alterar a versão [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino na caixa de diálogo das propriedades do projeto. Para obter mais informações, consulte [Como direcionar a uma versão do .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Em um projeto existente, é possível alterar a versão [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino na caixa de diálogo das propriedades do projeto. Para obter mais informações, confira [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Resolver referências de assembly do sistema e do usuário
 
 Para definir uma versão do .NET Framework como destino, é necessário primeiro instalar as referências de assembly apropriadas. É possível baixar pacotes de desenvolvedor para diferentes versões do .NET Framework na página de [downloads do .NET](https://www.microsoft.com/net/download/windows).
 
-A caixa de diálogo **Adicionar Referência** desabilita assemblies do sistema que não pertencem à versão [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino, para que eles não possam ser adicionados a um projeto acidentalmente. (Assemblies do sistema são arquivos *.dll* incluídos em uma versão do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].) As referências que pertencem a uma versão do Framework posterior à versão de destino não serão resolvidas e os controles que dependem dessa referência não podem ser adicionados. Se você desejar habilitar essa referência, redefina o destino [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] do projeto para um que inclua a referência.  Para obter mais informações, consulte [Como direcionar a uma versão do .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+A caixa de diálogo **Adicionar Referência** desabilita assemblies do sistema que não pertencem à versão [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino, para que eles não possam ser adicionados a um projeto acidentalmente. (Assemblies do sistema são arquivos *.dll* incluídos em uma versão do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].) As referências que pertencem a uma versão do Framework posterior à versão de destino não serão resolvidas e os controles que dependem dessa referência não podem ser adicionados. Se você desejar habilitar essa referência, redefina o destino [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] do projeto para um que inclua a referência.  Para obter mais informações, confira [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Para obter mais informações sobre referências de assembly, consulte [Resolver assemblies em tempo de design](../msbuild/resolving-assemblies-at-design-time.md).
 
@@ -85,4 +85,4 @@ Ao direcionar ao .NET Framework 3.5 ou posterior, uma referência ao **System.Co
 ## <a name="see-also"></a>Consulte também
 
 - [Multiplataforma (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [Como modificar a estrutura de destino e o conjunto de ferramentas da plataforma (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Como: Modificar a estrutura de destino e o conjunto de ferramentas da plataforma (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

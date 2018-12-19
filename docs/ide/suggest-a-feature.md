@@ -1,5 +1,5 @@
 ---
-title: 'Visão geral: sugerir uma funcionalidade para o Visual Studio'
+title: Sugerir um recurso
 description: Descreve quais sugestões estão na Comunidade de Desenvolvedores, como fazer uma sugestão e como as sugestões são usadas pela Microsoft no roteiro do Visual Studio
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
@@ -10,24 +10,24 @@ ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d76dcb09db27ed3ac63ba0dd6cc8fc60588f0f
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826682"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160030"
 ---
-# <a name="overview-suggest-a-feature"></a>Visão geral: Sugerir um recurso
+# <a name="overview-suggest-a-feature"></a>Visão geral: Sugerir uma funcionalidade
 
 Introduzimos uma experiência totalmente nova para sugerir recursos juntamente com a capacidade atual para relatar problemas na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com). Essa é uma nova maneira de ter mais autonomia para interagir diretamente com o fluxo de trabalho de engenharia do Visual Studio.
 
-Até agora, os usuários do Visual Studio usaram o fórum Voz do Usuário para propor novas ideias de recursos. A experiência *Sugerir um recurso* na Comunidade de Desenvolvedores permite que você faça a transição do fórum Voz do Usuário para uma única plataforma com todos os comentários que se envolvem diretamente com as equipes de produto do Visual Studio.  
+Até agora, os usuários do Visual Studio usaram o fórum Voz do Usuário para propor novas ideias de recursos. A experiência *Sugerir um recurso* na Comunidade de Desenvolvedores permite que você faça a transição do fórum Voz do Usuário para uma única plataforma com todos os comentários que se envolvem diretamente com as equipes de produto do Visual Studio.
 
 Migramos um conjunto inicial de ideias do fórum Voz do Usuário para a Comunidade de Desenvolvedores. A migração foi feita com base no impacto na comunidade dos comentários e nossas prioridades de roteiro do produto. Se você esperava ver aqui uma sugestão que talvez não tenhamos percebido, fique à vontade para adicioná-la à Comunidade de Desenvolvedores.
 
 ## <a name="votes"></a>Votos
 
-O sistema de votação no Voz do Usuário funciona de modo diferente dos votos na Comunidade de Desenvolvedores. Para manter a integridade das contagens de voto da Comunidade de Desenvolvedores e para evitar a distorção dos votos, mostramos a contagem de votos da Voz do Usuário em destaque, como uma marcação ao lado de cada sugestão de recurso. Enquanto você continua a votar em sugestões na Comunidade de Desenvolvedores aprimorada, sua nova contagem de voto será exibida separadamente da contagem de votos do Voz do Usuário.  
+O sistema de votação no Voz do Usuário funciona de modo diferente dos votos na Comunidade de Desenvolvedores. Para manter a integridade das contagens de voto da Comunidade de Desenvolvedores e para evitar a distorção dos votos, mostramos a contagem de votos da Voz do Usuário em destaque, como uma marcação ao lado de cada sugestão de recurso. Enquanto você continua a votar em sugestões na Comunidade de Desenvolvedores aprimorada, sua nova contagem de voto será exibida separadamente da contagem de votos do Voz do Usuário.
 
 ## <a name="user-voice"></a>Voz do Usuário
 
@@ -77,7 +77,7 @@ Uma sugestão de recurso marcada com **Precisamos de Mais Informações** signif
 
 - - -
 
-![Estado Fechado – Informações Insuficientes para sugestões na Comunidade de Desenvolvedores](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg) 
+![Estado Fechado – Informações Insuficientes para sugestões na Comunidade de Desenvolvedores](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
 **Fechado – Informações Insuficientes** indica que, após várias tentativas, ainda não recebemos informações suficientes para entender totalmente sua sugestão de recurso. Precisamos fechar a nova sugestão de funcionalidade, pois não é possível executar nenhuma outra ação neste estágio.
 

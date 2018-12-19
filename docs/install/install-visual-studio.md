@@ -1,7 +1,8 @@
 ---
-title: Instalar o Visual Studio 2017 | Microsoft Docs
+title: Instalar o Visual Studio
+titleSuffix: ''
 description: Saiba como instalar o Visual Studio, passo a passo.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -19,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3ba26f014b09624b1a8fec88bed8a5aefa632b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349683"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159731"
 ---
 # <a name="install-visual-studio-2017"></a>Instalar o Visual Studio 2017
 
@@ -125,7 +126,7 @@ Outra maneira de alterar o idioma padrão é executar o instalador a partir da l
 
 ## <a name="step-7---change-the-installation-location-optional"></a>Etapa 7 – Alterar o local de instalação (opcional)
 
-**Novidade no 15.7**: agora você pode reduzir o volume de instalação do Visual Studio na unidade do sistema. Você pode optar por mover o cache de download, os componentes compartilhados, os SDKs e as ferramentas para unidades diferentes e manter o Visual Studio na unidade que executá-los com mais rapidez.
+**Novidades do 15.7**: Agora você pode reduzir o volume de instalação do Visual Studio na unidade do sistema. Você pode optar por mover o cache de download, os componentes compartilhados, os SDKs e as ferramentas para unidades diferentes e manter o Visual Studio na unidade que executá-los com mais rapidez.
 
   ![Visual Studio 2017 – Alterar o local de instalação](media/installation-options-by-location.png "Alterar o local de instalação")
 

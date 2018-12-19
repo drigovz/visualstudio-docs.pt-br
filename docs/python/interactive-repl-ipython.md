@@ -1,6 +1,6 @@
 ---
 title: REPL (janela interativa) do IPython
-description: Usando a janela interativa do Visual Studio no modo IPython para um ambiente de desenvolvimento interativo e amigável com recursos de Computação Paralela Interativa.
+description: Use a janela interativa do Visual Studio no modo IPython para um ambiente de desenvolvimento interativo e amigável com funcionalidades de Computação Paralela Interativa.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b5429ccc963923a049d54ad3fbaa409586c0f772
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 84e93d06e294ef11cc345eb4c443845421a8f834
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219244"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067797"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Usar o IPython na janela Interativa
 
@@ -79,9 +80,9 @@ Para esse passo a passo, você deve ter o ambiente [Anaconda](https://www.contin
 
 8. Para ver os grafos fora da janela **Interativa**, execute o código em vez de usar o comando **Depurar** > **Iniciar sem Depuração**.
 
-O IPython tem muitos outros recursos úteis, como escape para o shell do sistema, substituição de variáveis, captura de saída etc. Consulte a [documentação do IPython](http://ipython.org/documentation.html) para obter mais informações.
+O IPython tem muitos outros recursos úteis, como escape para o shell do sistema, substituição de variáveis, captura de saída etc. Consulte a [documentação do IPython](https://ipython.org/documentation.html) para obter mais informações.
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 
 - Para usar o Jupyter facilmente e sem instalação, experimente o [serviço hospedado dos Notebooks do Azure](https://notebooks.azure.com/) que permitem que você mantenha e compartilhe seus blocos de anotações com outras pessoas.
 

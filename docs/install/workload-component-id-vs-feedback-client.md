@@ -1,5 +1,6 @@
 ---
 title: IDs de carga de trabalho e de componente do Feedback Client do Visual Studio 2017
+titleSuffix: ''
 description: Use IDs de carga de trabalho e de componente do Visual Studio para fornecer comentários detalhados para o Azure DevOps Services ou o Team Foundation Server
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: ffd62fed2cf65fc4d1672ab9c5c1e2e42e718974
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 6631027d604a9ac531211814109deaf309c18732
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607518"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066711"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Diretório de componentes do Feedback Client do Visual Studio 2017
 
@@ -35,7 +36,7 @@ Além disso, observe o seguinte sobre a página:
 * Se preferir, também será possível instalar os componentes **Recomendados** e **Opcionais**.
 * Também adicionamos uma seção que lista os componentes adicionais que não são afiliados a nenhuma carga de trabalho.
 
-Ao definir dependências no manifesto do VSIX, é necessário especificar somente IDs de Componente. Use as tabelas desta página para determinar nossas dependências mínimas de componente. Em alguns cenários, isso pode significar que somente um componente de uma carga de trabalho é especificado. Em outros cenários, isso pode significar que vários componentes de uma única carga de trabalho ou que vários componentes de várias cargas de trabalho são especificados. Para obter mais informações, consulte a página [Como migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Ao definir dependências no manifesto do VSIX, é necessário especificar somente IDs de Componente. Use as tabelas desta página para determinar nossas dependências mínimas de componente. Em alguns cenários, isso pode significar que somente um componente de uma carga de trabalho é especificado. Em outros cenários, isso pode significar que vários componentes de uma única carga de trabalho ou que vários componentes de várias cargas de trabalho são especificados. Para obter mais informações, confira a página [Como: Migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 Para obter mais informações sobre como usar essas IDs, consulte a página [Usar parâmetros de linha de comando para instalar o Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Além disso, para obter uma lista de IDs de carga de trabalho e de componente para outros produtos, consulte a página [IDs de carga de trabalho e de componente do Visual Studio 2017](workload-and-component-ids.md).
 
@@ -43,7 +44,7 @@ Para obter mais informações sobre como usar essas IDs, consulte a página [Usa
 
 **ID:** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**Descrição:** o Feedback Client permite que os stakeholders forneçam comentários detalhados para o Azure DevOps Services ou o Team Foundation Server.
+**Descrição:** O Feedback Client permite que os Stakeholders forneçam comentários detalhados para o Azure DevOps Services ou o Team Foundation Server.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluídos por essa carga de trabalho
 

@@ -1,23 +1,24 @@
 ---
-title: Publicando um aplicativo Python no Serviço de Aplicativo do Azure
-description: Opções para publicar um aplicativo do Python no Serviço de Aplicativo do Azure.
-ms.date: 10/10/2018
+title: Publicar um aplicativo do Python no Serviço de Aplicativo do Azure
+description: Opções de publicação de um aplicativo do Python no Serviço de Aplicativo do Azure, incluindo implantação do Git, contêineres para Linux e implantação no IIS.
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 050b98f663a1db6bde6d32342b094fe454046283
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 1c8c48eaa777da973f0a4b21d826bbab384b4536
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459654"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066685"
 ---
 # <a name="publish-to-azure-app-service"></a>Publicar no Serviço de Aplicativo do Azure
 
@@ -34,7 +35,7 @@ Git deploy conecta um Serviço de Aplicativo no Linux a uma ramificação espec�
 
 Para saber mais, confira os seguintes artigos na documentação do Azure:
 
-- [Início rápido: Criar um aplicativo Web do Python no Serviço de Aplicativo](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) fornece um breve passo a passo sobre o processo de Git deploy usando um aplicativo simples do Flask e a implantação de um repositório Git local.
+- [Início Rápido: Criar um aplicativo Web do Python no Serviço de Aplicativo](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json) fornece um breve passo a passo sobre o processo de implantação do Git usando um aplicativo simples do Flask e a implantação por meio de um repositório Git local.
 - [Como configurar o Python](/azure/app-service/containers/how-to-configure-python) descreve as características do Serviço de Aplicativo no contêiner do Linux e como personalizar o comando de inicialização do Gunicorn para seu aplicativo.
 
 ## <a name="publish-to-app-service-on-linux-using-containers"></a>Publicar no Serviço de Aplicativo no Linux usando contêineres

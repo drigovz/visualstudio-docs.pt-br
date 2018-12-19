@@ -1,5 +1,5 @@
 ---
-title: Tamanho do arquivo de log para testes de carga no Visual Studio
+title: Tamanho do Arquivo de Log para testes de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22cc77426abca46a95fd12c8954fd0965a194f5e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: eb77c9c037a46ad1195482abfddd102f50bcd1ae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894424"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067269"
 ---
-# <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Como especificar o tamanho máximo do arquivo de log para testes de carga
+# <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>Como: Especificar o tamanho máximo do arquivo de log para testes de carga
 
 Por padrão, o tamanho máximo do arquivo de log que é usado para testes de carga é definido como 20 megabytes. É possível alterar esse valor editando o arquivo de configuração associado ao serviço do controlador.
 

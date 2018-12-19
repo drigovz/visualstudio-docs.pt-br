@@ -1,6 +1,6 @@
 ---
 title: Modelos de aplicativo Web para Python
-description: Uma visão geral dos modelos do Visual Studio para aplicativos Web escritos em Python usando as estruturas Bottle, Flask e Django, incluindo configurações de depuração e publicação no Serviço de Aplicativo do Azure.
+description: O Visual Studio fornece modelos para aplicativos Web do Python usando as estruturas Bottle, Flask e Django; o suporte inclui configurações de depuração e publicação no Serviço de Aplicativo do Azure.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 06513030b34f7ab3217210a931722d72a6368ab3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349329"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068322"
 ---
 # <a name="python-web-application-project-templates"></a>Modelos de projeto de aplicativo Web Python
 
@@ -34,7 +35,7 @@ Crie um projeto com base em um modelo usando **Arquivo** > **Novo** > **Projeto*
 
 O modelo genérico de **Projeto Web**, mencionado anteriormente, fornece apenas um projeto vazio do Visual Studio sem nenhum código e nenhuma suposição diferente além de ser um projeto do Python. Para obter detalhes sobre o modelo **Serviço de Nuvem do Azure**, confira [Projetos do serviço de nuvem do Azure para o Python](python-azure-cloud-service-project-template.md).
 
-Todos os outros modelos se baseiam nas estruturas da Web Bottle, Flask ou Django e se enquadram em três grupos gerais, conforme descrito nas seções a seguir. Os aplicativos criados por um desses modelos contêm código suficiente para executar e depurar o aplicativo localmente. Cada um deles também fornece o [objeto de aplicativo WSGI](http://www.python.org/dev/peps/pep-3333/) necessário (python.org) para uso com servidores da Web de produção.
+Todos os outros modelos se baseiam nas estruturas da Web Bottle, Flask ou Django e se enquadram em três grupos gerais, conforme descrito nas seções a seguir. Os aplicativos criados por um desses modelos contêm código suficiente para executar e depurar o aplicativo localmente. Cada um deles também fornece o [objeto de aplicativo WSGI](https://www.python.org/dev/peps/pep-3333/) necessário (python.org) para uso com servidores da Web de produção.
 
 ### <a name="blank-group"></a>Grupo em branco
 
@@ -44,7 +45,7 @@ Todos os modelos de **Projeto Web \<estrutura> em Branco** criam um projeto com 
 | --- | --- |
 | **Projeto Web em Branco do Bottle** | Gera um aplicativo mínimo em *app.py* com uma home page do `/` e uma página `/hello/<name>` que ecoa `<name>` usando um modelo de página embutido muito curto. |
 | **Projeto Web em Branco do Django** | Gera um projeto Django com a estrutura do site principal do Django, mas não aplicativos Django. Para obter mais informações, confira [Modelos do Django](python-django-web-application-project-template.md) e [Etapa 1 do tutorial – Conheça o Django](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Projeto Web em Branco do Flask** | Gera um aplicativo mínimo com um único "Olá, Mundo!" página para `/`. Este aplicativo é semelhante ao resultado das seguintes etapas detalhadas em [Início rápido: use o Visual Studio para criar seu primeiro aplicativo Web Python](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Confira também [Etapa 1 do tutorial – Conheça o Flask](learn-flask-visual-studio-step-01-project-solution.md).
+| **Projeto Web em Branco do Flask** | Gera um aplicativo mínimo com um único "Olá, Mundo!" página para `/`. Esse aplicativo é semelhante ao resultado das seguintes etapas detalhadas em [Início Rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web do Python](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Confira também [Etapa 1 do tutorial – Conheça o Flask](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Grupo da Web
 

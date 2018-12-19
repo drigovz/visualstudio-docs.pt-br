@@ -1,5 +1,5 @@
 ---
-title: Unit Testing no Visual Studio
+title: Teste de unidade
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e9bb75c6d7265ca66ccc0922e2d26deaa4d7857a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b38d68d9883325d0654d476a869887bf8dc48a0c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874833"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057069"
 ---
 # <a name="unit-test-your-code"></a>Efetue testes de unidade em seu código
 
@@ -44,14 +44,14 @@ Use os tópicos a seguir como auxílio para entender e criar testes de unidades:
 
 |Tarefas|Tópicos associados|
 |-|-----------------------|
-|**Guias de início rápido e passo a passo:** use os tópicos a seguir para aprender sobre teste de unidade no Visual Studio a partir de exemplos de código.|-   [Passo a passo: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Início Rápido: desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Adicionar testes de unidade a aplicativos C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
-|**Teste de unidade com o gerenciador de testes:** saiba como o gerenciador de testes pode ajudar a criar testes de unidade mais produtivos e eficientes.|-   [Noções básicas de teste de unidade](../test/unit-test-basics.md)<br />-   [Criação de um projeto de teste de unidade](../test/create-a-unit-test-project.md)<br />-   [Execução de testes de unidade com o gerenciador de testes](../test/run-unit-tests-with-test-explorer.md)<br />-   [Instalação de frameworks de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)|
+|**Inícios Rápidos e tutoriais passo a passo:** Use os tópicos a seguir para saber mais sobre o teste de unidade no Visual Studio com exemplos de código.|-   [Passo a passo: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Guia de início rápido: Desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Adicionar testes de unidade a aplicativos C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
+|**Teste de unidade com o Gerenciador de Testes:** Saiba como o Gerenciador de Testes pode ajudar a criar testes de unidade mais produtivos e eficientes.|-   [Noções básicas de teste de unidade](../test/unit-test-basics.md)<br />-   [Criação de um projeto de teste de unidade](../test/create-a-unit-test-project.md)<br />-   [Execução de testes de unidade com o gerenciador de testes](../test/run-unit-tests-with-test-explorer.md)<br />-   [Instalação de frameworks de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)|
 |**Teste de unidade de código C++**|-   [Escrever testes de unidade para C/C++ com o Microsoft Unit Testing Framework para C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
 |**Isolamento de testes de unidade**|-   [Isolar o código em teste com o Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**Uso da cobertura de código para identificar qual proporção do código do projeto é testada:** saiba mais sobre o recurso de cobertura de código das ferramentas de teste do Visual Studio.|-   [Usar a cobertura de código para determinar quanto do código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Execução de análise de estresse e desempenho usando testes de carga:** você pode criar um teste de carga e adicionar seus testes de unidade a ele para ajudar a isolar os problemas de estresse e desempenho em seu aplicativo.|-   [Teste de carga (Azure Test Plans e TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|**Definição de restrições de qualidade:** você pode criar portões de qualidade para garantir que os testes sejam executados antes que o código seja verificado ou mesclado, para ajudar a garantir a qualidade do código.|-   [Políticas de check-in (TFVC do Azure Repos)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
-|**Definição de opções de teste:** por exemplo, você pode especificar onde os resultados dos testes são armazenados.|[Configurar testes de unidade usando um arquivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
+|**Usar a cobertura de código para identificar quais proporções do código do projeto são testadas:** Saiba mais sobre a funcionalidade de cobertura de código das ferramentas de teste do Visual Studio.|-   [Usar a cobertura de código para determinar quanto do código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**Executar a análise de desempenho e de estresse usando testes de carga:** Crie um teste de carga e adicione seus testes de unidade a ele para ajudar a isolar problemas de estresse e desempenho em seu aplicativo.|-   [Teste de carga (Azure Test Plans e TFS)](/azure/devops/test/load-test/index?view=vsts)|
+|**Definir restrições de qualidade:** Crie restrições de qualidade para impor que os testes sejam executados antes do check-in ou da mesclagem do código, para ajudar a garantir a qualidade do código.|-   [Políticas de check-in (TFVC do Azure Repos)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**Definir opções de teste:** Por exemplo, você pode especificar o local em que os resultados do teste são armazenados.|[Configurar testes de unidade usando um arquivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Documentação de referência da API
 

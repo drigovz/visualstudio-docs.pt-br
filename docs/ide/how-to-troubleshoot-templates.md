@@ -1,5 +1,5 @@
 ---
-title: Solucionar problemas de carregamento de modelo de projeto e de item do Visual Studio
+title: Solução de problemas de carregamento de modelo de projeto e de item
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +9,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4bb6a10e92bf8f26ffbcb81796b3c5c8371600b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2963bdbd4f788f6321d963bc52001f1875c48a14
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943313"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061863"
 ---
-# <a name="how-to-troubleshoot-templates"></a>Como solucionar problemas de modelos
+# <a name="how-to-troubleshoot-templates"></a>Como: Solucionar problemas de modelos
 
 Se houver falha no carregamento de um modelo no ambiente de desenvolvimento, haverá várias maneiras de localizar o problema.
 

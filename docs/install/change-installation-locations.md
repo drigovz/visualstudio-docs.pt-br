@@ -1,8 +1,9 @@
 ---
-title: Selecionar locais de instalação no Visual Studio 2017
-description: Saiba como reduzir o volume de instalação na unidade do sistema mudando a localização do cache de download, dos componentes compartilhados, dos SDKs e das ferramentas para unidades diferentes.
+title: Selecionar os locais de instalação
+description: Saiba como reduzir o volume de instalação do Visual Studio na unidade do sistema alterando a localização do cache de download, dos componentes compartilhados, dos SDKs e das ferramentas para unidades diferentes.
 ms.date: 11/07/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +16,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3b54674c24e3becf62e7568be127344104de0f
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2acefee22976e061b3feff83b00891037a0f2bbd
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295027"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159835"
 ---
 # <a name="select-the-installation-locations-in-visual-studio-2017"></a>Selecionar os locais de instalação no Visual Studio 2017
 
-**Novidade no 15.7**: você pode reduzir o volume de instalação do Visual Studio na unidade do sistema alterando a localização de alguns dos arquivos. Especificamente, você pode usar uma localização diferente para o cache de download, para os componentes compartilhados, os SDKs e os arquivos de ferramentas.
+**Novidades do 15.7**: Reduza o volume de instalação do Visual Studio na unidade do sistema alterando a localização de alguns dos arquivos. Especificamente, você pode usar uma localização diferente para o cache de download, para os componentes compartilhados, os SDKs e os arquivos de ferramentas.
 
    > [!NOTE]
    > Há algumas ferramentas e SDKs que têm regras diferentes sobre o local em que podem ser instalados. Essas ferramentas e SDKs são instalados em sua unidade do sistema, mesmo que você escolha outra localização.

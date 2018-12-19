@@ -1,5 +1,5 @@
 ---
-title: Analisar atividade do usuário virtual em testes de carga no Visual Studio
+title: Analisar a Atividade de Usuário Virtual em testes de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6737a5b12b9205e5d6ed3ddde6de89e820d92fce
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 0cac452a7fa4799c986df0f182643ed1b94afbe6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895230"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059516"
 ---
-# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Como analisar o que usuários virtuais estão fazendo durante um teste de carga usando o gráfico de atividade de usuário virtual
+# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Como: Analisar o que usuários virtuais fazem durante um teste de carga usando o gráfico de atividade de usuário virtual
 
 Veja a atividade do usuário virtual associado ao seu teste de carga usando o **Gráfico de atividade de usuário virtual**. Cada linha do gráfico representa um usuário virtual individual. O **Gráfico de Atividade de Usuário Virtual** mostra exatamente o que cada usuário virtual executou durante o teste. É possível ver padrões de atividade de usuário, padrões de carga, correlacionar testes reprovados ou lentos e ver solicitações com outra atividade de usuário virtual. O **Gráfico de Atividade de Usuário Virtual** está disponível apenas depois da conclusão da execução do teste de carga.
 
@@ -31,7 +31,7 @@ Os procedimentos a seguir demonstram como exibir o **Gráfico de atividade do us
 
 2.  Após a execução do teste de carga, a página de resumo dos resultados do teste é exibida. Escolha o botão **Detalhes do Usuário** na barra de ferramentas.
 
-     -ou-
+     - ou -
 
      Abra a exibição Gráficos escolhendo o botão **Gráficos** na barra de ferramentas. Clique com o botão direito do mouse em um gráfico e selecione **Ir para detalhe do usuário**.
 
@@ -108,4 +108,4 @@ Os procedimentos a seguir demonstram como exibir o **Gráfico de atividade do us
 ## <a name="see-also"></a>Consulte também
 
 - [Analisando a atividade do usuário virtual na exibição Detalhes](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [Passo a passo: Usando o gráfico de atividade do usuário virtual para isolar problemas](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [Passo a passo: Usando o gráfico de atividade de usuário virtual para isolar problemas](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

@@ -1,5 +1,5 @@
 ---
-title: Adicionando suporte para outras linguagens ao editor do Visual Studio
+title: Adicionar suporte do editor para outros idiomas
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 57991a7cac2d45cf618642ccd19ead1d94ce5978
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: f0ac463161d42e0d9ddf6b845b752916675ba4fe
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244470"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062089"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Adicionar suporte para outras linguagens ao editor do Visual Studio
 
@@ -84,9 +84,9 @@ Nesse caminho base, adicione as pastas a seguir se forem aplicáveis à sua situ
 
 No Windows, *%userprofile%* determina o caminho: *c:\Usuários\\\<nome do usuário >*. Se a pasta de extensões não existir em seu sistema, será necessário criá-la. Se a pasta já existir, ela será oculta.
 
-Para obter detalhes sobre como criar Gramáticas TextMate, consulte [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML (TextMate – Introdução a gramáticas de linguagem: como adicionar realce de sintaxe do código-fonte inserido no HTML)](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) e [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle (Observações sobre como criar uma gramática de linguagem e um tema personalizado para um pacote Textmate)](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+Para obter detalhes sobre como criar Gramáticas TextMate, confira [TextMate – Introdução a gramáticas de linguagem: Como adicionar o realce de sintaxe do código-fonte inserido em HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) e [Observações sobre como criar uma gramática da linguagem e um tema personalizado para um pacote TextMate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
 ## <a name="see-also"></a>Consulte também
 
 - [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)
-- [Passo a passo: exibir preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)
+- [Passo a passo: Exibir o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)

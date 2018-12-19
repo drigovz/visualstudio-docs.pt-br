@@ -1,5 +1,5 @@
 ---
-title: Personalizar tarefas de build e depuração no Visual Studio usando tasks.vs.json e launch.vs.json
+title: Personalizar tarefas de depuração de build usando tasks.vs.json launch.vs.json
 ms.date: 02/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4b915f632179ff118247e8c046ce980a824ea2
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 1a5249c1b60c1a3a08e37386bcfbd3d06706bae8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448081"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063173"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalizar tarefas de compilação e depuração para desenvolvimento de "Pasta Aberta"
 
@@ -44,7 +44,7 @@ Esses arquivos *.json* estão localizados em uma pasta oculta chamada *.vs* na p
 
 ## <a name="define-tasks-with-tasksvsjson"></a>Definir tarefas com tasks.vs.json
 
-Você pode automatizar os scripts de compilação, ou quaisquer outras operações externas nos arquivos existentes em seu espaço de trabalho atual, executando-os como tarefas diretamente no IDE. Você pode configurar uma nova tarefa clicando com o botão direito em um arquivo ou pasta e selecionando **Configurar Tarefas**.
+Você pode automatizar os scripts de compilação, ou quaisquer outras operações externas nos arquivos existentes em seu workspace atual, executando-os como tarefas diretamente no IDE. Você pode configurar uma nova tarefa clicando com o botão direito em um arquivo ou pasta e selecionando **Configurar Tarefas**.
 
 ![Menu Configurar Tarefas](../ide/media/customize-configure-tasks-menu.png)
 
@@ -205,20 +205,20 @@ Você pode criar tarefas para qualquer arquivo ou pasta especificando seu nome n
 
 |||
 |-|-|
-|`"*"`| a tarefa está disponível para todos os arquivos e pastas no espaço de trabalho|
-|`"*/"`| a tarefa está disponível para todas as pastas no espaço de trabalho|
-|`"*.js"`| a tarefa está disponível para todos os arquivos com a extensão *.js* no espaço de trabalho|
-|`"/*.js"`| a tarefa está disponível para todos os arquivos com a extensão *.js* na raiz do espaço de trabalho|
+|`"*"`| a tarefa está disponível para todos os arquivos e pastas no workspace|
+|`"*/"`| a tarefa está disponível para todas as pastas no workspace|
+|`"*.js"`| a tarefa está disponível para todos os arquivos com a extensão *.js* no workspace|
+|`"/*.js"`| a tarefa está disponível para todos os arquivos com a extensão *.js* na raiz do workspace|
 |`"src/*/"`| a tarefa está disponível para todas as subpastas da pasta *src*|
-|`"makefile"`| a tarefa está disponível para todos os arquivos *makefile* no espaço de trabalho|
-|`"/makefile"`| a tarefa está disponível apenas para o *makefile* na raiz do espaço de trabalho|
+|`"makefile"`| a tarefa está disponível para todos os arquivos *makefile* no workspace|
+|`"/makefile"`| a tarefa está disponível apenas para o *makefile* na raiz do workspace|
 
 #### <a name="macros-for-tasksvsjson"></a>Macros para tasks.vs.json
 
 |||
 |-|-|
 |`${env.<VARIABLE>}`| Especifica qualquer variável de ambiente (por exemplo, ${env.PATH}, ${env.COMSPEC} e assim por diante) que esteja definida para o prompt de comando do desenvolvedor. Para saber mais, confira [Prompt de comando do desenvolvedor para Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
-|`${workspaceRoot}`| O caminho completo para a pasta do espaço de trabalho (por exemplo, *C:\sources\hello*)|
+|`${workspaceRoot}`| O caminho completo para a pasta do workspace (por exemplo, *C:\sources\hello*)|
 |`${file}`| O caminho completo do arquivo ou pasta selecionado para execução dessa tarefa (por exemplo, *C:\sources\hello\src\hello.js*)|
 |`${relativeFile}`| O caminho relativo até o arquivo ou pasta (por exemplo, *src\hello.js*)|
 |`${fileBasename}`| O nome do arquivo sem o caminho ou extensão (por exemplo, *hello*)|
@@ -290,7 +290,7 @@ Quando você salva esse arquivo, o nome da nova configuração aparece na lista 
 > [!NOTE]
 > A propriedade da matriz `configurations` em *launch.vs.json* é lida em dois locais de arquivo &mdash;o diretório raiz da base de código, e o diretório *.vs*. Se houver um conflito, a prioridade será dada ao valor em *.vs\launch.vs.json*.
 
-## <a name="define-workspace-settings-in-vsworkspacesettingsjson"></a>Definir configurações de espaço de trabalho em VSWorkspaceSettings.json
+## <a name="define-workspace-settings-in-vsworkspacesettingsjson"></a>Definir configurações de workspace em VSWorkspaceSettings.json
 
 Você pode especificar configurações genéricas que podem afetar as tarefas e iniciar no arquivo *VSWorkspaceSettings.json*. Por exemplo, se você definir `envVars` no *VSWorkspaceSettings.json*, o Visual Studio adicionará as variáveis de ambiente especificadas aos comandos executados externamente. Para usar esse arquivo, você deverá criá-lo manualmente.
 

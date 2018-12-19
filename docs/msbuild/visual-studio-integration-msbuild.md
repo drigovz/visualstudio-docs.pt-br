@@ -1,6 +1,7 @@
 ---
-title: Integração com o Visual Studio (MSBuild) | Microsoft Docs
-ms.custom: ''
+title: Integração com o Visual Studio (MSBuild)
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: msbuild
 ms.topic: conceptual
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 874642371f173b56a174dabdd17ee1cf50cc79fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7449e8585cd9f1db8a4a43cddf8092f1a92c9758
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875470"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052417"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integração com o Visual Studio (MSBuild)
 O Visual Studio hospeda o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para carregar e compilar projetos gerenciados. Como [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] é responsável pelo projeto, quase todo projeto que estiver no formato [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poderá ser utilizado com êxito no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mesmo se o projeto tiver sido criado por meio de uma ferramenta diferente e tenha um processo de build personalizado.  
@@ -47,7 +48,7 @@ O Visual Studio hospeda o [!INCLUDE[vstecmsbuild](../extensibility/internals/inc
   
 ```xml  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
-Condition=" '$(Configuration)' == 'Release' "   
+Condition=" '$(Configuration)' == 'Release' "   
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
@@ -181,7 +182,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  A atualização rápida não se aplica a builds regulares no Visual Studio e o projeto será compilado como se o build tivesse sido invocado por meio do prompt de comando.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como estender o processo de build do Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
+ [Como: Estender o processo de build do Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [Iniciar um build pelo IDE](../msbuild/starting-a-build-from-within-the-ide.md)   
  [Registrar extensões do .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   

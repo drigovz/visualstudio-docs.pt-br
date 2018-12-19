@@ -1,6 +1,6 @@
 ---
-title: Como anexar o criador de perfil a um aplicativo autônomo nativo e coletar dados de simultaneidade usando a linha de comando| Microsoft Docs
-ms.custom: ''
+title: Anexar o criador de perfil a um aplicativo nativo e coletar dados de simultaneidade
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d189fccf53f94a5505f586527547f573cc75fa0
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ef2c5a7cbd21cba8b60944c2e3f45e4af05e630a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220489"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067039"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo independente nativo e coletar dados de simultaneidade usando a linha de comando
+# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Como: Anexar o criador de perfil a um aplicativo independente nativo e coletar dados de simultaneidade usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um aplicativo independente nativo (C/C++) em execução e coletar dados de contenção do thread.  
   
 > [!NOTE]

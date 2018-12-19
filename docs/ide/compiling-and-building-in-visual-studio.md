@@ -1,5 +1,5 @@
 ---
-title: Compilando e criando no Visual Studio
+title: Compilação e criação
 ms.date: 07/14/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2ad9e3e6644f3f0ffc2d4fbf163968f16065f3
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 7681ad9cd109dbc8da266721d9d8382d3552eda6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349127"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062587"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar e criar no Visual Studio
 
@@ -26,7 +26,7 @@ Quando você compila o código-fonte, o mecanismo de build cria assemblies e apl
 
 Compilando seu código com frequência, é possível identificar erros rapidamente em tempo de compilação, como sintaxe incorreta, palavras-chave com erros de ortografia e erros de digitação. Também é possível detectar e corrigir erros em tempo de execução, como erros lógicos e semânticos, ao compilar e executar versões de depuração do código.
 
-Um build bem-sucedido valida que o código-fonte do aplicativo contém a sintaxe correta e que todas as referências estáticas a bibliotecas, assemblies e outros componentes podem ser resolvidas. É produzido um aplicativo executável que pode ser testado quanto ao funcionamento adequado em um [ambiente de depuração](../debugger/index.md) e por meio de uma variedade de testes manuais e automatizados para [validar a qualidade do código](../test/improve-code-quality.md). Depois que o aplicativo for completamente testado, você poderá compilar uma versão de lançamento a ser implantada em seus clientes. Para obter uma introdução a esse processo, veja [Passo a passo: Criação de um aplicativo](../ide/walkthrough-building-an-application.md).
+Um build bem-sucedido valida que o código-fonte do aplicativo contém a sintaxe correta e que todas as referências estáticas a bibliotecas, assemblies e outros componentes podem ser resolvidas. É produzido um aplicativo executável que pode ser testado quanto ao funcionamento adequado em um [ambiente de depuração](../debugger/index.md) e por meio de uma variedade de testes manuais e automatizados para [validar a qualidade do código](../test/improve-code-quality.md). Depois que o aplicativo for completamente testado, você poderá compilar uma versão de lançamento a ser implantada em seus clientes. Para obter uma introdução a esse processo, confira [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md).
 
 Você pode usar qualquer um dos métodos a seguir para compilar um aplicativo: o IDE do Visual Studio, as ferramentas de linha de comando do MSBuild, e o Azure Pipelines:
 
@@ -45,7 +45,7 @@ A documentação nesta seção detalha mais o processo de compilação baseado n
 
 Quando você cria um projeto, o Visual Studio cria configurações de compilação padrão para o projeto e para a solução que contém o projeto.  Essas configurações definem a maneira como as soluções e os projetos são criados e implantados. Configurações de projeto, em particular, são exclusivas a uma plataforma de destino (por exemplo, o Windows ou Linux) e tipo de build (por exemplo, depuração ou lançamento). Você pode editar essas configurações como quiser e também pode criar suas próprias configurações, conforme necessário.
 
-Para obter uma introdução à compilação com o IDE, veja [Passo a passo: Criação de um aplicativo](walkthrough-building-an-application.md).
+Para obter uma introdução à compilação com o IDE, confira [Passo a passo: Criando um aplicativo](walkthrough-building-an-application.md).
 
 Em seguida, consulte [Compilando e limpando projetos e soluções no Visual Studio](building-and-cleaning-projects-and-solutions-in-visual-studio.md) para saber mais sobre as personalizações de diferentes aspectos que você pode fazer no processo. As personalizações incluem [alterar diretórios de saída](how-to-change-the-build-output-directory.md), [especificar eventos de build personalizados](specifying-custom-build-events-in-visual-studio.md), [gerenciar dependências do projeto](how-to-create-and-remove-project-dependencies.md), [gerenciar arquivos de log de build](how-to-view-save-and-configure-build-log-files.md) e [suprimir avisos do compilador](how-to-suppress-compiler-warnings.md).
 

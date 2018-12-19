@@ -1,5 +1,5 @@
 ---
-title: Recolher e expandir as regiões do código no Visual Studio
+title: Recolher e expandir as regiões de código
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0b1312ef84e88050423cce74953f452e33dd9bf
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: b39e9613e36b45f812738ab4eab6b945727b196b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349173"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064699"
 ---
 # <a name="outlining"></a>Estrutura de tópicos
 
@@ -53,7 +53,7 @@ Os comandos a seguir podem ser encontrados no submenu **Editar** > **Estrutura d
 |Recolher bloco:\<limite lógico>|(Visual C++) Recolhe uma região na função que contém o ponto de inserção. Por exemplo, se o ponto de inserção estiver dentro de um loop, o loop será ocultado.|
 |Recolher tudo: \<estruturas lógicas>|(Visual C++) Recolhe todas as estruturas de dentro da função.|
 
-Você também pode usar o SDK do Visual Studio para definir as regiões de texto que deseja expandir ou recolher. Consulte [Instruções passo a passo: estrutura de tópicos](../extensibility/walkthrough-outlining.md).
+Você também pode usar o SDK do Visual Studio para definir as regiões de texto que deseja expandir ou recolher. Confira [Passo a passo: Estrutura de tópicos](../extensibility/walkthrough-outlining.md).
 
 ## <a name="see-also"></a>Consulte também
 

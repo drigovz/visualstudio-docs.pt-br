@@ -1,5 +1,5 @@
 ---
-title: Criar relatórios de desempenho de teste de carga do Visual Studio usando o Microsoft Excel
+title: Criar relatórios de desempenho de teste de carga usando o Microsoft Excel
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7eda8336c45d0e0d90441ce918845d111976aaf4
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 5f276702aef4bf062d7da3e921965e674d5ec738
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896556"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064990"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Como criar relatórios de desempenho de teste de carga usando o Microsoft Excel
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Como: Criar relatórios de desempenho de teste de carga usando o Microsoft Excel
 
 Você pode gerar relatórios de teste de carga do Microsoft Excel baseados em dois ou mais resultados de teste.
 
@@ -31,7 +31,7 @@ Dois tipos de relatórios de teste de carga estão disponíveis:
 -   **Tendência** Você pode gerar a análise de tendência em dois ou mais resultados de testes de carga. Os resultados são exibidos usando gráficos de linhas, mas os dados estão disponíveis em tabelas dinâmicas.
 
 > [!TIP]
-> Você também pode criar manualmente relatórios do Microsoft Word, copiando e colando dados da exibição de resumo, gráficos e tabelas. Confira [Como criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
+> Você também pode criar manualmente relatórios do Microsoft Word, copiando e colando dados da exibição de resumo, gráficos e tabelas. Confira [Como: Criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
 
 Qualquer relatório pode ser usado para compartilhar dados de desempenho com participantes e informar se o desempenho e a integridade gerais do sistema estão melhorando ou piorando.
 

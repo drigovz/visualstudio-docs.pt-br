@@ -1,5 +1,5 @@
 ---
-title: Implementar uma interface no Visual Studio
+title: Implementar uma interface
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9abc1d5fde69127f796dcfcd4c7c09cf8743c915
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 7abe20831c920a0d4fd74f60a75e6112c480ab39
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295417"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068468"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementar uma interface no Visual Studio
 
@@ -24,11 +24,11 @@ Esta geração de código aplica-se a:
 
 - Visual Basic
 
-**O quê:** permite gerar imediatamente o código necessário para implementar uma interface.
+**O quê:** Permite gerar imediatamente o código necessário para implementar uma interface.
 
-**Quando:** você deseja herdar de uma interface.
+**Quando:** Você deseja herdar de uma interface.
 
-**Por quê:** você pode implementar manualmente todas as interfaces uma por uma; no entanto, esse recurso gerará automaticamente todas as assinaturas de método.
+**Por que:** Você pode implementar manualmente todas as interfaces uma por uma; no entanto, essa funcionalidade gerará todas as assinaturas de método automaticamente.
 
 ## <a name="how-to"></a>Como fazer
 

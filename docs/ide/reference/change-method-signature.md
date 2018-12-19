@@ -1,5 +1,5 @@
 ---
-title: Refatorar a assinatura de um método no Visual Studio
+title: Refatorar a assinatura do método
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 944340a8f6901934c3afc2f54323f73bc5639f8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 81f907ae1f7def1ce401990dc505f423aac5a4c1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842281"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062329"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refatoração Alterar uma assinatura de método
 
@@ -30,11 +30,11 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O quê:** permite remover ou alterar a ordem dos parâmetros do método.
+**O quê:** Permite remover ou alterar a ordem dos parâmetros de um método.
 
-**Quando:** você deseja mover ou remover um parâmetro de método que está sendo usado em uma variedade de locais.
+**Quando:** Você deseja mover ou remover um parâmetro de método que está sendo usado em uma variedade de locais.
 
-**Por quê:** você pode manualmente remover e reordenar os parâmetros e, em seguida, localizar todas as chamadas para esse método e alterá-las uma por uma, mas isso poderia levar a erros.  Essa ferramenta de refatoração executará a tarefa automaticamente.
+**Por que:** Você pode manualmente remover e reordenar os parâmetros e, em seguida, localizar todas as chamadas a esse método e alterá-las uma por uma, mas isso pode levar a erros.  Essa ferramenta de refatoração executará a tarefa automaticamente.
 
 ## <a name="how-to"></a>Como fazer
 

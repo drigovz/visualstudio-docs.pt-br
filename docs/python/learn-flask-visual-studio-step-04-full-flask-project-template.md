@@ -1,5 +1,6 @@
 ---
-title: Tutorial – Saiba mais sobre o Flask no Visual Studio, etapa 4
+title: Tutorial Aprenda a usar o Flask no Visual Studio, etapa 4, modelos de projeto Web
+titleSuffix: ''
 description: Um passo a passo das noções básicas do Flask no contexto dos projetos do Visual Studio, especificamente as funcionalidades fornecidas pelos modelos Projeto Web do Flask e Projeto Web do Flask/Jade.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,17 +9,18 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e9171b7f44a51380fd086798b4ab9c50fa98729
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c072d1187abf463cc2f185946f7e238bb091a534
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775952"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051695"
 ---
-# <a name="step-4-use-the-full-flask-web-project-template"></a>Etapa 4: Usar o modelo Projeto Web do Flask completo
+# <a name="step-4-use-the-full-flask-web-project-template"></a>Etapa 4: Usar o modelo completo de Projeto Web do Flask
 
 **Etapa anterior: [Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
@@ -86,7 +88,7 @@ No entanto, para usar um ambiente virtual existente, faça o seguinte:
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Etapa 4-2: Entender os modos de exibição e os modelos de página criados pelo modelo de projeto
 
-Quando você executa o projeto, observe que o aplicativo contém três modos de exibição: Página inicial, Sobre e Contato. O código dessas exibições é encontrado na pasta *FlaskWeb/views.py*. Cada função de exibição simplesmente chama `flask.render_template` com o caminho para um modelo e uma lista de variáveis de argumentos para os valores darem ao modelo. Por exemplo, a página Sobre é tratada pela função `about` (cujo decorador fornece o roteamento de URL):
+Quando você executar o projeto, observe que o aplicativo contém três modos de exibição: Página Inicial, Sobre e Contato. O código dessas exibições é encontrado na pasta *FlaskWeb/views.py*. Cada função de exibição simplesmente chama `flask.render_template` com o caminho para um modelo e uma lista de variáveis de argumentos para os valores darem ao modelo. Por exemplo, a página Sobre é tratada pela função `about` (cujo decorador fornece o roteamento de URL):
 
 ```python
 @app.route('/about')

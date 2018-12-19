@@ -1,5 +1,5 @@
 ---
-title: Adicionar uma regra de limite para testes de carga no Visual Studio
+title: Adicionar uma regra de limite para teste de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cddc0b9ca470fa43b00ec08b3b6316704df41e91
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896322"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063364"
 ---
-# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Como adicionar uma regra de limite usando o Editor de Teste de Carga
+# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Como: Adicionar uma regra de limite usando o Editor de Teste de Carga
 
 As regras de limite nos testes de carga comparam um valor de contador de desempenho ou com um valor constante, ou outro valor de contador de desempenho.
 
@@ -38,7 +38,7 @@ As regras de limite nos testes de carga comparam um valor de contador de desempe
 
      A caixa de diálogo **Adicionar regra de limite** é exibida.
 
-5.  Você pode escolher entre dois tipos de regra: **Comparar Constante** e **Comparar Contador**. Selecione o tipo apropriado e defina os valores.
+5.  Escolha um dos dois tipos de regras: **Comparar Constante** e **Comparar Contador**. Selecione o tipo apropriado e defina os valores.
 
     > [!NOTE]
     > Defina a propriedade **Alertar caso seja superado** como **Verdadeiro** para indicar que ultrapassar um limite é um problema ou como **Falso** para indicar que ficar abaixo do limite é um problema.

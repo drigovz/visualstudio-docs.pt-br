@@ -1,5 +1,5 @@
 ---
-title: Criar e executar um teste de carga no Visual Studio
+title: Criar e executar um teste de carga
 ms.date: 10/01/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 649fe84b716355f5c7228e371fa88d80937f24af
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: a5782985406d9b2daa53c1fd6ecefb3f31cc0104
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895373"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055764"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Passo a passo: Criar e executar um teste de carga que contém testes de unidade
 
@@ -37,13 +37,13 @@ Nesta explicação passo a passo, você concluirá as seguintes tarefas:
 
 -   Executar um teste de carga.
 
--   Execute as etapas de [Passo a passo: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) para criar uma biblioteca de classes C# simples que contém um projeto de desempenho Web e de teste de carga com alguns testes de unidade.
+-   Execute as etapas descritas em [Passo a passo: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) para criar uma biblioteca de classes C# simples que contém um projeto de desempenho Web e de teste de carga com alguns testes de unidade.
 
 ## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Criar um teste de carga que contém testes de unidade usando o Novo Assistente de Teste de Carga
 
 ### <a name="to-start-the-new-load-test-wizard"></a>Para iniciar o Novo assistente de teste de carga
 
-1.  Abra a solução Bank criada em [Passo a passo: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+1.  Abra a solução Banco criada em [Passo a passo: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 2.  No **Gerenciador de Soluções**, abra o menu de atalho do nó da solução de Banco, escolha **Adicionar** e **Novo Projeto**.
 

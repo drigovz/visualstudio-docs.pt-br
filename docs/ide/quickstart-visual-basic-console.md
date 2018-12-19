@@ -1,9 +1,9 @@
 ---
-title: 'Guia de início rápido: criar seu primeiro aplicativo de console no Visual Studio com o Visual Basic'
+title: Criar seu primeiro aplicativo de console com o Visual Basic
 description: Saiba como criar um aplicativo de console Olá, Mundo simples no Visual Studio com o Visual Basic, passo a passo.
-ms.custom: ''
 ms.date: 12/10/2017
 ms.prod: visual-studio-dev15
+ms.custom: seodec18
 ms.technology: vs-acquisition
 ms.topic: quickstart
 ms.devlang: vb
@@ -14,14 +14,14 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d75c178abdaae516b8694e9278d8df2007c2e1d
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 67a990b98b385cacab89bfa8270d8409f9e9aa5f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42627273"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159601"
 ---
-# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Guia de início rápido: criar seu primeiro aplicativo de console no Visual Studio com o Visual Basic
+# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Início Rápido: Criar seu primeiro aplicativo de console no Visual Studio com o Visual Basic
 
 Nesta introdução de 5 a 10 minutos ao IDE (ambiente de desenvolvimento integrado) do Visual Studio, você criará um aplicativo simples do Visual Basic que é executado no console.
 

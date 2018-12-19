@@ -1,5 +1,5 @@
 ---
-title: Configurações de registro em log de testes de carga no Visual Studio
+title: Configurações do log do teste de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d24bb1b3af468f35ae333407fc96c42f4f9e669b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: f280911be68616a1c2632195769547023832b061
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894879"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060032"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modificar configurações de registro em log de testes de carga
 
@@ -27,8 +27,8 @@ O *controlador de teste* armazena em spool todos os dados de exemplo do teste de
 
 |Tarefa|Tópicos associados|
 |-|-----------------------|
-|**Salvar logs se um teste de carga falhar:** você pode especificar se quer salvar o log de teste sempre que um teste de carga falhar.|-   [Como especificar se as falhas no teste são salvas em logs de teste](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**Definir o tamanho máximo de arquivo para o arquivo de log:** você pode editar o arquivo de configuração XML associado ao serviço do controlador de teste para especificar o tamanho de arquivo máximo que deseja usar para o arquivo de log.|[Como especificar o tamanho máximo do arquivo de log](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
+|**Salvar os logs se um teste de carga falhar:** Você poderá especificar se deseja salvar o log de teste sempre que um teste de carga falhar.|-   [Como: Especificar se as falhas de teste são salvas em logs de teste](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Definir o tamanho máximo de arquivo para o arquivo de log:** Você pode editar o arquivo de configuração XML associado ao serviço do controlador de teste para especificar o tamanho máximo de arquivo que você deseja usar para o arquivo de log.|[Como: Especificar o tamanho máximo do arquivo de log](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
 
 ## <a name="see-also"></a>Consulte também
 

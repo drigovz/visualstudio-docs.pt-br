@@ -1,6 +1,6 @@
 ---
-title: Como anexar o criador de perfil a um aplicativo autônomo do .NET Framework para coletar dados de simultaneidade usando a linha de comando | Microsoft Docs
-ms.custom: ''
+title: Anexar o criador de perfil a um aplicativo .NET para coletar dados de simultaneidade | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: f727e2a06fa2e5798de84c7b6ee6d97bfb2a4558
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: dfaab7ef38cd87180f6d97e1db45e2c2d5d16946
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815279"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055083"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo .NET Framework independente para coletar dados de simultaneidade usando a linha de comando
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>Como: Anexar o criador de perfil a um aplicativo independente do .NET Framework para coletar dados de simultaneidade usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um aplicativo (cliente) .NET Framework independente em execução e coletar dados de simultaneidade de thread e do processo.  
   
 > [!NOTE]
@@ -79,7 +79,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
   
     -   Digite **VSPerfCmd /detach**  
   
-         -ou-  
+         - ou -  
   
     -   Feche o aplicativo de destino.  
   

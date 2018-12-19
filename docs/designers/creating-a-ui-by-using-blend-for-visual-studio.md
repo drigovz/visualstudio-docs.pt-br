@@ -1,5 +1,6 @@
 ---
-title: Criando uma interface de usuário usando o Blend para Visual Studio
+title: Criar uma interface do usuário – Blend para Visual Studio
+titleSuffix: ''
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -11,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd1d8ab718575977e9f65ed55bfc6c3185d1642
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 76743674ef4e92f2ad52be108c1dafb8d942676c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890136"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059848"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Criando uma interface de usuário usando o Blend para Visual Studio
 
@@ -26,7 +27,7 @@ Blend para Visual Studio é um componente do Visual Studio. Para instalar o Blen
 
 ![Componentes da carga de trabalho UWP](media/installer-uwp.png)&nbsp;&nbsp;&nbsp;&nbsp;![Componentes da carga de trabalho de desenvolvimento de área de trabalho do .NET](media/installer-dotnet-desktop.png)
 
-Se você estiver começando a usar o Blend for Visual Studio, reserve um tempo para familiarizar-se com os recursos exclusivos do espaço de trabalho. Este tópico apresenta um tour rápido.
+Se você estiver começando a usar o Blend for Visual Studio, reserve um tempo para familiarizar-se com os recursos exclusivos do workspace. Este tópico apresenta um tour rápido.
 
 > [!NOTE]
 > Para fazer um tour pelos recursos de design compartilhados, como a prancheta, a janela **Estrutura de Tópicos do Documento** e a janela **Dispositivo**, confira [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
@@ -46,7 +47,7 @@ Se você estiver começando a usar o Blend for Visual Studio, reserve um tempo p
 |![Ferramentas de ativo](../designers/media/b1_5.png)|**Ferramentas de ativos** Acesse o painel **Ativos** e mostre o ativo usado mais recentemente na biblioteca.|![Texto explicativo E](../designers/media/b5_label_e.png)|**Controles de texto**|
 |||![Texto explicativo F](../designers/media/b5_label_f.png)|**Controles comuns**|
 
-**Assista a um vídeo curto:** ![Configure installed features](../designers/media/bldadminconsoleinitialconfigicon.png) [The Toolbar](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4) (Configurar recursos instalados, A barra de ferramentas).
+**Assista a um breve vídeo:** ![Configurar as funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [A barra de ferramentas](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
 ## <a name="tour-of-the-assets-panel"></a>Tour pelo painel Ativos
 
@@ -115,7 +116,7 @@ Use esse painel para exibir e modificar as propriedades de um objeto. Você tamb
 |![Texto explicativo 16](../designers/media/b5_label_16.png)|**Controle deslizante de gradiente** É exibido somente se um pincel de gradiente é selecionado.|
 |![Propriedades avançadas de apresentação](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Mostrar propriedades avançadas** Exiba categorias das propriedades menos usadas.|
 
-**Assista a um vídeo curto:** ![Configure installed features](../designers/media/bldadminconsoleinitialconfigicon.png) [Properties panel](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7) (Configurar recursos instalados, Painel Propriedades).
+**Assista a um breve vídeo:** ![Configurar as funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Painel Propriedades](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Consulte também
 

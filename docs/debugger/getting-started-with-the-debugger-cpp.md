@@ -1,6 +1,6 @@
 ---
 title: Aprenda a depurar C++ usando o depurador do Visual Studio
-ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
+description: Saiba como iniciar o depurador do Visual Studio, executar o código em etapas e inspecionar os dados.
 ms.custom: debug-experiment
 ms.date: 08/01/2018
 ms.technology: vs-ide-debug
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ef97401a87f39e9c3bfd3138ee3a26646064c6
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: f3578955d72dcb223baeb022a199fb274c0cc659
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52825860"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065242"
 ---
-# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: aprenda a depurar código C++ usando o Visual Studio
+# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Aprenda a depurar o código C++ usando o Visual Studio
 
 Este artigo apresenta os recursos do depurador do Visual Studio passo a passo. Se você quiser obter uma visão mais detalhada dos recursos do depurador, confira [Tour pelos recursos do depurador](../debugger/debugger-feature-tour.md). Quando você *depura seu aplicativo*, isso normalmente significa executar o aplicativo com o depurador anexado. Quando você faz isso, o depurador fornece várias maneiras de mostrar o que o código está fazendo enquanto é executado. Você pode percorrer o código e examinar os valores armazenados em variáveis, definir inspeções em variáveis para ver quando os valores mudam, examinar o caminho de execução do código, ver se um branch de código está em execução e assim por diante. Se esta for sua primeira tentativa de depurar um código, leia [Como depurar para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes continuar neste artigo.
 
@@ -313,7 +313,7 @@ Os recursos que permitem que você inspecione variáveis são uns dos mais útei
 
     Você pode clicar duas vezes em uma linha de código para examinar esse código-fonte. Isso também altera o escopo atual que está sendo inspecionado pelo depurador. Essa ação não avança o depurador.
 
-    Você também pode usar os menus acessados ao clicar com o botão direito do mouse na janela **Pilha de Chamadas** para fazer outras coisas. Por exemplo, você pode inserir pontos de interrupção em funções especificadas, avançar o depurador usando **Executar até o Cursor** e examinar o código-fonte. Para obter mais informações, confira [Como examinar a pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md).
+    Você também pode usar os menus acessados ao clicar com o botão direito do mouse na janela **Pilha de Chamadas** para fazer outras coisas. Por exemplo, você pode inserir pontos de interrupção em funções especificadas, avançar o depurador usando **Executar até o Cursor** e examinar o código-fonte. Para obter mais informações, confira [Como: Examinar a pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="change-the-execution-flow"></a>Alterar o fluxo de execução
 

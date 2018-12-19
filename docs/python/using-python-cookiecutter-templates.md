@@ -1,5 +1,5 @@
 ---
-title: Extensão CookieCutter para Python
+title: Usar modelos do CookieCutter com o Python
 description: O Visual Studio oferece suporte à extensão Cookiecutter gráfica para descobrir os modelos para o código Python e criar projetos a partir desses modelos.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b7a040b5ab12c1f940996ea26c27a6136ab81f2f
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6ca47c1410fd11c32cbce95b9adc5a62c6c26dcf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219686"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057185"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usar a extensão Cookiecutter
 
@@ -91,8 +92,8 @@ Para obter noções básicas sobre como criar um modelo do Cookiecutter, consult
 
 A renderização padrão de uma variável de modelo depende do tipo de dados (cadeia de caracteres ou lista):
 
-- Cadeia de caracteres: rótulo do nome da variável, caixa de texto para inserção do valor e uma marca-d'água mostrando o valor padrão. A dica de ferramenta na caixa de texto mostra o valor padrão.
-- Lista: rótulo do nome da variável e caixa de combinação para seleção de um valor. A dica de ferramenta na caixa de combinação mostra o valor padrão.
+- Cadeia de caracteres: Rótulo do nome da variável, caixa de texto para inserção do valor e uma marca-d'água mostrando o valor padrão. A dica de ferramenta na caixa de texto mostra o valor padrão.
+- Lista: Rótulo do nome da variável e caixa de combinação para seleção de um valor. A dica de ferramenta na caixa de combinação mostra o valor padrão.
 
 É possível melhorar essa renderização especificando metadados adicionais no arquivo *cookiecutter.json* que são específicos ao Visual Studio (e ignorados pela CLI do Cookiecutter). Todas as propriedades são opcionais:
 
@@ -101,7 +102,7 @@ A renderização padrão de uma variável de modelo depende do tipo de dados (ca
 | Rotular | Especifica o que é exibido acima do editor para a variável, em vez do nome da variável. |
 | Descrição | Especifica a dica de ferramenta que é exibida no controle de edição, em vez do valor padrão dessa variável. |
 | URL | Altera o rótulo para um hiperlink, com uma dica de ferramenta que mostra a URL. Se você clicar no hiperlink, o navegador padrão do usuário será aberto nessa URL. |
-| Seletor | Permite a personalização do editor para uma variável. Atualmente, há suporte para os seguintes seletores:<ul><li>`string`: caixa de texto padrão, o padrão para cadeias de caracteres.</li><li>`list`: caixa de combinação padrão, o padrão para listas.</li><li>`yesno`: caixa de combinação para escolher entre `y` e `n`, para cadeias de caracteres.</li><li>`odbcConnection`: caixa de texto com um botão **...** que exibe uma caixa de diálogo de conexão de banco de dados.</li></ul> |
+| Seletor | Permite a personalização do editor para uma variável. Atualmente, há suporte para os seguintes seletores:<ul><li>`string`: Caixa de texto padrão, o padrão para cadeias de caracteres.</li><li>`list`: Caixa de combinação padrão, o padrão para listas.</li><li>`yesno`: Caixa de combinação para escolha entre `y` e `n`, para cadeias de caracteres.</li><li>`odbcConnection`: Caixa de texto com um botão **...** que exibe uma caixa de diálogo de conexão de banco de dados.</li></ul> |
 
 Exemplo:
 

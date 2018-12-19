@@ -1,5 +1,5 @@
 ---
-title: Criar modelos multiprojetos para Visual Studio
+title: Criar modelos de multiprojeto
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,14 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 24002512ec891866839ad3bd33590c3dfe966e99
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: f53fa69f9fafd1dd3686a80fb367c2bc0b99a013
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978379"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049653"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Como criar modelos multiprojetos
+# <a name="how-to-create-multi-project-templates"></a>Como: Criar modelos de multiprojeto
 
 Os modelos de vários projetos atuam como contêineres para dois ou mais projetos. Quando você cria um projeto baseado em um modelo multiprojetos usando a caixa de diálogo **Novo Projeto**, todos os projetos no modelo são adicionados à solução.
 
@@ -171,7 +171,7 @@ Este exemplo usa o elemento **SolutionFolder** para dividir os projetos em dois 
 ## <a name="see-also"></a>Consulte também
 
 - [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
-- [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)
+- [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)
 - [Referência de esquema de modelo do Visual Studio (extensibilidade)](../extensibility/visual-studio-template-schema-reference.md)
 - [Elemento SolutionFolder (modelos do Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
 - [Elemento ProjectTemplateLink (modelos do Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
