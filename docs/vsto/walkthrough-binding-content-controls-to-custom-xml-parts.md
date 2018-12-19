@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1bc8aee0a1294aeda4c57a3416de4a0cc98129f3
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
-ms.translationtype: MT
+ms.openlocfilehash: d48c0e1921c57923021e88a2a4a5bb5f89763ef1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673026"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670208"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Passo a passo: Associar controles de conteúdo a partes XML personalizadas
   Este passo a passo demonstra como associar controles de conteúdo em uma personalização no nível de documento para Word a dados XML armazenados no documento.  
@@ -36,19 +36,19 @@ ms.locfileid: "50673026"
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
-- Adicionando controles de conteúdo para o documento do Word em um projeto de nível de documento em tempo de design.  
+-   Adicionando controles de conteúdo para o documento do Word em um projeto de nível de documento em tempo de design.  
   
-- Criando um arquivo de dados XML e um esquema XML que define os elementos para associar aos controles de conteúdo.  
+-   Criando um arquivo de dados XML e um esquema XML que define os elementos para associar aos controles de conteúdo.  
   
-- Anexando o esquema XML para o documento em tempo de design.  
+-   Anexando o esquema XML para o documento em tempo de design.  
   
-- Adicionando o conteúdo do arquivo XML para uma parte XML personalizada no documento em tempo de execução.  
+-   Adicionando o conteúdo do arquivo XML para uma parte XML personalizada no documento em tempo de execução.  
   
-- Associando os controles de conteúdo a elementos na parte XML personalizada.  
+-   Associando os controles de conteúdo a elementos na parte XML personalizada.  
   
-- Associando um <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> a um conjunto de valores que são definidos no esquema XML.  
+-   Associando um <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> a um conjunto de valores que são definidos no esquema XML.  
   
-  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+ [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
@@ -71,36 +71,36 @@ ms.locfileid: "50673026"
   
 ### <a name="to-add-content-controls-to-the-document"></a>Para adicionar controles de conteúdo no documento  
   
-1. No documento do Word que está hospedado na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, na faixa de opções, escolha o **inserir** guia.  
+1.  No documento do Word que está hospedado na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, na faixa de opções, escolha o **inserir** guia.  
   
-2. No **tabelas** grupo, escolha **tabela**e inserir uma tabela com 2 colunas e 3 linhas.  
+2.  No **tabelas** grupo, escolha **tabela**e inserir uma tabela com 2 colunas e 3 linhas.  
   
-3. Digite o texto na primeira coluna, para que ele fique parecido com a coluna a seguir:  
+3.  Digite o texto na primeira coluna, para que ele fique parecido com a coluna a seguir:  
   
-   ||  
-   |-|  
-   |**Nome do funcionário**|  
-   |**Data de contratação**|  
-   |**Título**|  
+    ||  
+    |-|  
+    |**Nome do funcionário**|  
+    |**Data de contratação**|  
+    |**Título**|  
   
-4. Na segunda coluna da tabela, escolha a primeira linha (lado **nome do funcionário**).  
+4.  Na segunda coluna da tabela, escolha a primeira linha (lado **nome do funcionário**).  
   
-5. Na faixa de opções, escolha o **desenvolvedor** guia.  
+5.  Na faixa de opções, escolha o **desenvolvedor** guia.  
   
-   > [!NOTE]  
-   >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, consulte [como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    > [!NOTE]  
+    >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, consulte [como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6. No **controles** grupo, escolha o **texto** botão ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>para a primeira célula.  
+6.  No **controles** grupo, escolha o **texto** botão ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>para a primeira célula.  
   
-7. Na segunda coluna da tabela, escolha a segunda linha (lado **data de contratação**).  
+7.  Na segunda coluna da tabela, escolha a segunda linha (lado **data de contratação**).  
   
-8. No **controles** grupo, escolha o **selecionador de data** botão ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> segunda célula.  
+8.  No **controles** grupo, escolha o **selecionador de data** botão ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> segunda célula.  
   
 9. Na segunda coluna da tabela, escolha a terceira linha (lado **título**).  
   
 10. No **controles** grupo, escolha o **lista suspensa** botão ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") adicionar um <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> até a última célula.  
   
-    Que é a interface do usuário para este projeto. Se você executar o projeto agora, você pode digite texto na primeira linha e selecione uma data na segunda linha. A próxima etapa é anexar os dados que você deseja exibir para o documento em um arquivo XML.  
+ Que é a interface do usuário para este projeto. Se você executar o projeto agora, você pode digite texto na primeira linha e selecione uma data na segunda linha. A próxima etapa é anexar os dados que você deseja exibir para o documento em um arquivo XML.  
   
 ## <a name="create-the-xml-data-file"></a>Criar o arquivo de dados XML  
  Normalmente, você obterá os dados XML para armazenar em uma parte XML personalizada de uma fonte externa, como um arquivo ou um banco de dados. Neste passo a passo, você deve criar um arquivo XML que contém os dados de funcionário, marcados por elementos que você associará aos controles de conteúdo no documento. Para disponibilizar os dados em tempo de execução, inserir o arquivo XML como um recurso no assembly de personalização.  
@@ -189,7 +189,7 @@ ms.locfileid: "50673026"
 ## <a name="attach-the-xml-schema-to-the-document"></a>Anexar o esquema XML no documento  
  Você deve anexar o esquema XML para o documento para associar o <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> para os valores válidos do `title` elemento.  
   
-### <a name="to-attach-the-xml-schema-to-the-document--includeword15shortvstoincludesword-15-short-mdmd"></a>Para anexar o esquema XML para o documento ( [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
+### <a name="to-attach-the-xml-schema-to-the-document-includeword15shortvstoincludesword-15-short-mdmd"></a>Para anexar o esquema XML para o documento ([!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
   
 1.  Ativar **EmployeeControls.docx** no designer.  
   
@@ -296,7 +296,7 @@ ms.locfileid: "50673026"
   
 9. Nomeie o arquivo **EmployeeControls.docx.zip**.  
   
-     O **EmployeeControls.docx** documento é salvo no formato XML aberto. Renomeando esse documento com o *. zip* extensão de nome de arquivo você pode examinar o conteúdo do documento. Para obter mais informações sobre o Open XML, consulte o artigo técnico [apresentando o Office (2007) Open XML de formatos de arquivo](/previous-versions/office/developer/office-2007/aa338205(v=office.12)).  
+     O **EmployeeControls.docx** documento é salvo no formato XML aberto. Renomeando esse documento com o *. zip* extensão de nome de arquivo você pode examinar o conteúdo do documento. Para obter mais informações sobre o Open XML, consulte o artigo técnico [apresentando o Office (2007) Open XML de formatos de arquivo](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf).  
   
 10. Abra o **EmployeeControls.docx.zip** arquivo.  
   
