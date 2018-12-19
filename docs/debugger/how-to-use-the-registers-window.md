@@ -1,6 +1,6 @@
 ---
-title: Modo de exibição dos valores de registro no depurador do Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Modo de exibição dos valores de registro no depurador | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab40e0b63b2a679b4c36a4625d517a03b6c123ad
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 31d9b9a9243bdf5bd39ebddf90ffa0ea32b23072
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389319"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058435"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Valores de registro de modo de exibição na janela de registros (C#, C++, Visual Basic, F#)
 
@@ -41,9 +41,9 @@ O **registra** janela exibe conteúdo do registro durante a depuração do Visua
 
 Durante a depuração, registre alterações de valores como o código é executado em seu aplicativo. Valores que foram alterados recentemente são exibidos em vermelho na **registra** janela.
 
-Para reduzir a desordem, a janela **Registros** organiza registros em grupos, que variam de acordo com a plataforma e o tipo de processador. Você pode exibir ou ocultar grupos de registros. Para obter mais informações, confira [Como exibir e ocultar grupos de registros](../debugger/how-to-display-and-hide-register-groups.md).
+Para reduzir a desordem, a janela **Registros** organiza registros em grupos, que variam de acordo com a plataforma e o tipo de processador. Você pode exibir ou ocultar grupos de registros. Confira mais informações em [Como: Exibir e ocultar grupos de registros](../debugger/how-to-display-and-hide-register-groups.md).
 
-Você pode editar valores do registro. Para obter mais informações, consulte [como: editar um valor de registro](../debugger/how-to-edit-a-register-value.md).
+Você pode editar valores do registro. Confira mais informações em [Como: Editar um valor de registro](../debugger/how-to-edit-a-register-value.md).
 
 **Para abrir a janela registros**
 
@@ -56,5 +56,5 @@ Você pode editar valores do registro. Para obter mais informações, consulte [
 
 ### <a name="see-also"></a>Consulte também
 
-- [Noções básicas sobre depuração: janela Registros](../debugger/debugging-basics-registers-window.md)
+- [Noções básicas de depuração: janela registros](../debugger/debugging-basics-registers-window.md)
 - [Exibição de dados no depurador](../debugger/viewing-data-in-the-debugger.md)
