@@ -1,6 +1,6 @@
 ---
-title: O que&#39;novo no Visual Studio 2015 | Microsoft Docs
-ms.custom: ''
+title: Novidades no Visual Studio 2015 | Microsoft Docs
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -17,17 +17,17 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab9d2536b3f92b62233a2ae05b79a722696136e4
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000252"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062432"
 ---
-# <a name="what39s-new-in-visual-studio-2015"></a>O que&#39;novo no Visual Studio 2015
+# <a name="what39s-new-in-visual-studio-2015"></a>Novidades no Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
 
-Bem-vindo ao Visual Studio 2015, um conjunto integrado de ferramentas de produtividade do desenvolvedor, serviços de nuvem e extensões que permitem que você e sua equipe criem ótimos aplicativos e jogos para a web, para a Windows Store, para a área de trabalho, para o Android e para iOS.
+Bem-vindo ao Visual Studio 2015, um pacote integrado de ferramentas de produtividade do desenvolvedor, de serviços de nuvem e de extensões que permitem que você e sua equipe criem ótimos aplicativos e jogos para a Web, para a Windows Store, para a área de trabalho, para Android e para iOS.
 
 Esta página destaca alguns dos recursos mais importantes que são novos desde o Visual Studio 2013 RTM, incluindo recursos que foram introduzidos pela primeira vez em uma das atualizações do Visual Studio 2013. Para obter uma lista completa das novidades no Visual Studio 2015, consulte o [notas de versão](https://www.visualstudio.com/news/vs2015-vs).
 
@@ -105,7 +105,7 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 ## <a name="visual-studio-graphics-diagnostics"></a>Diagnóstico de gráficos do Visual Studio
  Desde o Visual Studio 2013, Visual Studio Graphics diagnóstico adicionou muitos recursos novos, incluindo análise de quadro, suporte do Windows Phone, edição de sombreador e aplica e a linha de comando capturam ferramentas. Ele também adicionou suporte para depuração de aplicativos DirectX12. Para obter mais informações, consulte [diagnóstico de gráficos do Visual Studio](./debugger/visual-studio-graphics-diagnostics.md).
 
-## <a name="connect-to-services"></a>Conectar-se aos serviços
+## <a name="connect-to-services"></a>Conectar aos serviços
  Visual Studio 2015 torna mais fácil do que nunca conectar seu aplicativo aos serviços.  O Assistente para adicionar serviço conectado configura seu projeto, adiciona o suporte a autenticação necessária e baixa os pacotes NuGet necessários para você começar a codificar seu serviço rapidamente e sem complicações. O assistente Adicionar serviço conectado também se integra com o novo gerente de conta para torná-lo mais fácil trabalhar com várias contas de usuário e assinaturas. No Visual Studio 2015, o suporte para os serviços a seguir é fornecido fora da caixa (supondo que você tenha uma conta):
 
 1. Serviços móveis do Azure
@@ -114,7 +114,7 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 
 3. Office 365 (email, contatos, calendários, arquivos, usuários e grupos)
 
-4. A equipe de vendas
+4. Salesforce
 
    Novos serviços serão adicionados de forma contínua e você pode descobrir aquelas clicando no "localizar novos serviços link" no assistente.
 
@@ -183,18 +183,18 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 ### <a name="notification-hub"></a>Hub de notificação
  A interface do usuário para o hub de notificação foi otimizada para torná-lo mais fácil verificar rapidamente. Tipos de notificações adicionais foram adicionados incluindo problemas de desempenho, problemas de renderização e falhas, e você agora pode informar ao Visual Studio pare de mostrar uma notificação. Para obter mais informações, consulte [Notificações do Visual Studio](./ide/visual-studio-notifications.md).
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Localizar o que aconteceu com seu código (apenas para edições Enterprise e Professional)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens Encontre o que aconteceu com seu código (apenas para edições Enterprise e Professional)
  Mantenha o foco no trabalho enquanto você encontrar informações sobre seu código – sem sair do editor. Você pode revisar as alterações e outro histórico de itens de trabalho, bugs, revisões de código, e assim por diante para o código que é armazenado no Visual Studio Team Services (VSTS) ou no Team Foundation Server (TFS).
 
  No Visual Studio Enterprise e Professional do Visual Studio, agora você pode:
 
 - Obter histórico para um arquivo de código completo no editor do Visual Studio.
 
-   ![CodeLens: obtenha detalhes do arquivo de código](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens Obter detalhes do arquivo de código](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Ver um gráfico que mostra quem alterou seu código. Isso pode ajudá-lo a encontrar padrões nas alterações da sua equipe e avaliar o impacto delas.
 
-   ![CodeLens: ver o histórico de alterações do código como um grafo](./ide/media/codelens.png "CodeLens")
+   ![CodeLens Consulte o histórico de alterações de código como um grafo](./ide/media/codelens.png "CodeLens")
 
 - Ver facilmente quando o seu código foi alterado pela última vez.
 
@@ -203,9 +203,9 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
   Ver [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md).
 
 ### <a name="design-and-modeling-tools-enterprise-edition-only"></a>Design e modelagem de ferramentas (apenas Enterprise edition)
- **Gráficos de dependência e mapas de código**
+ **Mapas de código e gráficos de dependência**
 
- No Visual Studio Enterprise, quando você quiser entender dependências específicas em seu código, exiba-os Criando mapas de código. Em seguida, você pode navegar essas relações usando o mapa, que aparece ao lado de seu código. Mapas de código também podem ajudar a manter o controle de seu local no código enquanto você trabalha ou depura código, portanto, você lerá menos códigos enquanto aprende mais sobre o design do seu código.
+ No Visual Studio Enterprise, quando você quiser entender dependências específicas em seu código, exiba-os Criando mapas de código. Assim, você pode navegar entre essas relações usando o mapa que aparece ao lado do código. Os mapas de código também podem ajudar a saber em que parte do código você está enquanto trabalha ou depura código, para que seja necessário ler menos código enquanto examina o design do código.
 
  Nesta versão, fizemos os menus de atalho para elementos de código e links muito mais fácil de usar, agrupando comandos em seções relacionadas ao selecionar, edição, gerenciamento de grupos e alterando o layout do conteúdo do grupo. Observe também que os projetos de teste são exibidos em um estilo diferente de outros projetos e que atualizamos os ícones de elementos no mapa para versões mais adequadas.
 
@@ -213,25 +213,25 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 
  Outros aprimoramentos incluem:
 
-- **Diagramas de cima para baixo melhorados**. Para médias e grandes soluções do Visual Studio, agora você pode usar um menu de arquitetura simplificado para obter um código mais útil mapas para sua solução. Os assemblies da sua solução são agrupados pelas pastas de solução, para que você possa vê-los no contexto e aproveitar o esforço feito para estruturar a solução. Você verá imediatamente projeto e referências de assembly e, em seguida, os tipos de link que aparecem. Além disso, os assemblies externos à solução são agrupados de forma mais compacta.
+- **Diagramas de cima para baixo melhorados**. Para soluções médias a grandes do Visual Studio, agora você pode usar um menu de arquitetura simplificado para obter mapas de códigos mais eficientes para sua solução. Os assemblies da solução são agrupados pelas pastas da solução para que você possa vê-los no contexto e usufruir do esforço que empregou para estruturar a solução. Você verá imediatamente referências de projeto e assembly e, em seguida, aparecerão os tipos de link. Além disso, os assemblies que estiverem externos à solução serão agrupados de uma maneira mais compacta.
 
-- **Projetos de teste têm estilo diferente e podem ser filtrados**. Você pode agora mais fácil e rapidamente identificar os projetos de teste no mapa porque eles têm estilos diferentes. Eles também podem ser filtrados para que você possa se concentrar no código de trabalho do aplicativo.
+- **Os projetos de teste têm estilo diferente e podem ser filtrados**. Você pode agora mais fácil e rapidamente identificar os projetos de teste no mapa porque eles têm estilos diferentes. Eles também podem ser filtrados para que você possa se concentrar no código de trabalho do aplicativo.
 
-- **Links de dependência externa de simplificado**. Links de dependência não mais representam a herança de System. Object, System. ValueType, System. Enum e System. Delegate, que facilita ver dependências externas no mapa de códigos.
+- **Links de dependência externa simplificados**. Os links de dependência não representam mais a herança de System.Object, System.ValueType, System.Enum e System.Delegate, o que facilita a visualização das dependências externas no mapa de códigos.
 
-- **'Drill-in into dependency links' leva os filtros em consideração**. Você obtém um diagrama simples e útil quando expande para compreender as contribuições para um link de dependência. O diagrama é menos desorganizado e leva em consideração as opções que você selecionou de filtragem de link.
+- **O 'Aprofundamento nos links de dependência' leva os filtros em consideração**. Você obtém um diagrama simples e útil quando o expande para compreender as contribuições a um link de dependência. O diagrama é menos desorganizado e leva em consideração as opções de filtragem de link que você selecionou.
 
-- **Elementos de código são adicionados a um mapa de código com seus contexto**. Como os diagramas agora aparecem com contexto (até assembly e solução de pasta que você pode filtrar as se necessário), que você conseguir diagramas mais eficientes ao arrastar e soltar elementos de código do Gerenciador de soluções, o modo de exibição de classe, o Pesquisador de objetos; ou, quando selecionar elementos no Gerenciador de soluções e selecionando mostram no mapa de códigos.
+- **Os elementos de código são adicionados a um mapa de código com seus contextos**. Como os diagramas agora aparecem com contexto (até o assembly e a pasta de solução, que podem ser filtrados, se necessário), você pode obter diagramas mais eficientes ao arrastar e soltar elementos de código do Gerenciador de Soluções, do Modo de Exibição de Classe e do Pesquisador de Objetos ou ao solicitar elementos no Gerenciador de Soluções e escolher Exibir no Mapa de Códigos.
 
-- **Obtenha mapas de código reativos mais rapidamente**. Arrastar e soltar operações produzem um resultado imediato, e os links entre os nós são criados com muito mais rapidamente, sem afetar as operações posteriores iniciadas pelo usuário, como expandir um nó ou solicitar mais nós. Quando você cria mapas de código sem compilar a solução, todos os casos de canto, como quando os assemblies não são compilados — agora são processados.
+- **Obtenha mapas de código reativos mais rapidamente**. As operações de arrastar e soltar produzem um resultado imediato, e os links entre os nós são criados com muito mais rapidez, sem afetar as operações posteriores iniciadas pelo usuário, como expandir um nó ou solicitar mais nós. Quando você cria mapas de código sem compilar a solução, todos os casos de canto, como quando os assemblies não são compilados, são agora compilados.
 
 - **Ignorar a recompilação de sua solução.** Fornece um melhor desempenho durante a criação e edição de diagramas.
 
-- **Filtrar nós de elemento de código e grupos**. Você organizar rapidamente seus mapas ao exibir ou ocultar elementos de código com base em sua categoria, bem como pelo agrupamento de elementos de código por pastas de solução, assemblies, namespaces, pastas de projeto e tipos.
+- **Filtrar nós e grupos de elemento de código**. Você pode organizar rapidamente seus mapas ao exibir ou ocultar elementos de código com base na categoria e ao agrupar elementos de código por pastas de solução, assemblies, namespaces, pastas de projeto e tipos.
 
-- **Filtre relações para tornar os diagramas mais fáceis de ler**. Filtragem de link agora também se aplica para cruzar os links de grupo, o que torna o trabalho com a janela de filtros menos intrusivo que do que era nas versões anteriores.
+- **Filtre relações para tornar os diagramas mais fáceis de ler**. Agora, a filtragem de links também se aplica a links de grupos cruzados, o que torna o trabalho com a janela de filtros menos intrusivo do que era nas versões anteriores.
 
-- **Criar diagramas da exibição de classe e Pesquisador de objetos**. Arraste e solte arquivos e assemblies em um novo ou um mapa existente do windows de modo de exibição de classe e Pesquisador de objetos.
+- **Criar diagramas do Modo de Exibição de Classe e do Pesquisador de Objetos**. Arraste e solte arquivos e assemblies em um mapa novo ou existente nas janelas Modo de Exibição de Classe e Pesquisador de Objetos.
 
   Ver [mapear as dependências nas soluções](./modeling/map-dependencies-across-your-solutions.md).
 
@@ -239,11 +239,11 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 
 - **Diagramas de camada**. Atualize esses diagramas usando o modo de exibição de classe e Pesquisador de objetos. Para atender aos requisitos de design de software, use diagramas de camada para descrever as dependências desejadas para seu software. Mantenha o código consistente com esse design, localizando o código que não atende a essas restrições e validando códigos futuros com essa linha de base.
 
-- **Diagramas de UML**. Você não pode mais criar diagramas de classe UML e diagramas de sequência do código. Mas você ainda criar esses diagramas usando novos elementos UML.
+- **Diagramas de UML**. Não é mais possível criar diagramas de classe UML e diagramas de sequência por meio do código. Mas ainda é possível criar esses diagramas usando novos elementos UML.
 
-- **Gerenciador de arquitetura**. Não há mais você pode usar o Architecture Explorer para criar diagramas. Mas você ainda pode usar o Gerenciador de soluções.
+- **Architecture Explorer**. Não é mais possível usar o Architecture Explorer para criar diagramas. Mas ainda é possível usar o Gerenciador de Soluções.
 
-## <a name="visual-studio-extensibility-tools"></a>Ferramentas de extensibilidade do Visual Studio
+## <a name="visual-studio-extensibility-tools"></a>Ferramentas de Extensibilidade do Visual Studio
  Nunca foi mais fácil de instalar as ferramentas de extensibilidade de Visual Studio (SDK do VS e modelos), como agora estão incluídas como um componente opcional durante a instalação.  As ferramentas de extensibilidade permite aos desenvolvedores criar extensões para personalizar e adicionar recursos ao Visual Studio. Para obter mais informações sobre a extensibilidade do Visual Studio, consulte [SDK do Visual Studio](./extensibility/visual-studio-sdk.md)
 
  Se você deseja incluir as ferramentas de extensibilidade com sua instalação personalizada, você pode encontrá-los em **recursos / ferramentas comuns / ferramentas de extensibilidade do Visual Studio**.  Você também pode instalar as ferramentas de extensibilidade mais tarde abrindo o **novo projeto** caixa de diálogo e selecionando o **instalar ferramentas do Visual Studio Extensibility** item sob **Visual C# / Extensibilidade**.
@@ -251,14 +251,14 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 ## <a name="please-give-feedback"></a>Envie comentários
  Por que enviar comentários à equipe do Visual Studio? Porque nós levamos a sério os comentários dos clientes. Na verdade, vamos examinar cada parte dos comentários que entram em nosso sistema de comentários. Seus comentários orienta muito do que fazemos.
 
-### <a name="send-a-smile"></a>Enviar um Smiley
+### <a name="send-a-smile"></a>Enviar um sorriso
  Nos dizendo que você como nos ajuda a entender quando podemos atender ou exceder suas expectativas. Quando estamos Projetando e implementando novos recursos, podemos usar dados sobre os recursos que você gosta de ajudar com nossas decisões de design. Portanto, se você gosta de um recurso no Visual Studio, conte-nos sobre ele. É fácil e você pode fazer isso diretamente de dentro do IDE.
 
  Basta clicar no Smiley amarelo na barra de título, conte-no que você gostou, em seguida, clique no **enviar um Smiley** botão.
 
  E pronto! Podemos irá rotear seus comentários à equipe correta onde eles pat em si na parte de trás e começar a pensar em maneiras de encantá-lo ainda mais rapidamente.
 
-### <a name="send-a-frown"></a>Enviar um rosto triste
+### <a name="send-a-frown"></a>Enviar um Rosto Triste
  Ouvir em que precisamos fazer melhorias no produto nos ajuda a gerenciar nossa lista de pendências, concentrando-se pela primeira vez em que as coisas mais importantes para nossos clientes. Se houver algo que é bugging você, conte-nos sobre ele usando o **enviar um rosto triste** de recursos do diretamente dentro do IDE. Fizemos isso um processo muito simples demais:
 
  Clique no Smiley amarelo na barra de título, clique **enviar um rosto triste**. Conte-no que você não gostou, em seguida, clique em enviar um rosto triste botão. Para obter mais informações, consulte [Fale conosco](./ide/talk-to-us.md).
@@ -269,7 +269,8 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
  Primeiro, envie um rosto triste, conforme descrito acima. Na caixa de diálogo pop-up, você pode marcar seus comentários com qualquer uma das marcas padrão ou criar sua própria marca. Marcas nos ajudam a encaminhar seus comentários para a equipe de recursos apropriado. No **escolher uma categoria** lista suspensa, selecione a opção que representa o problema que você está relatando, siga as etapas para reproduzir o problema. Etapas detalhadas sobre como usar o Visual Studio para fornecer comentários também estão disponíveis. Para obter mais informações, consulte [Visual Studio enviar um Smiley instruções](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
 
 ## <a name="see-also"></a>Consulte também
-* [Crie aplicativos de plataforma cruzada com o Apache Cordova](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
+
+* [Criar aplicativos multiplataforma com o Apache Cordova](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [Criar aplicativos com interface do usuário nativa usando o Xamarin no Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [Compilar aplicativos de plataforma cruzada com o Visual C++](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 * [Gerar testes de unidade para seu código com IntelliTest](./test/generate-unit-tests-for-your-code-with-intellitest.md)
