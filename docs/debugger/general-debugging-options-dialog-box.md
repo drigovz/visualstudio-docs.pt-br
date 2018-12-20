@@ -25,7 +25,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 4b5711b90e2b160f48c05835ae833bfbe7cd29fe
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51730672"
@@ -125,11 +125,11 @@ Desative todas as personalizações de exibição da estrutura do objeto. Para o
 **Suprimir Otimização JIT no carregamento do módulo (somente gerenciado)**:  
 Desativa a otimização JIT de código gerenciado quando um módulo é carregado e JIT é compilado enquanto o depurador é anexado. Desativar a otimização pode facilitar a depuração de alguns problemas, embora às custas de desempenho. Se você estiver usando Apenas Meu Código, a supressão da otimização de JIT poderá fazer com que código que não seja do usuário apareça como código do usuário ("Meu Código"). Para obter mais informações, consulte [JIT otimização e depuração](../debugger/jit-optimization-and-debugging.md).
 
-**Habilitar a depuração de JavaScript para ASP.NET (Chrome, Edge e IE)**:  
+**Habilitar a depuração de JavaScript para ASP.NET (Chrome, Microsoft Edge e IE)**:  
 Permite que o depurador de script para aplicativos ASP.NET. No primeiro uso no Chrome, você precisa entrar no navegador para habilitar as extensões do Chrome que você instalou. Desabilite essa opção para reverter para o comportamento herdado.
 
-**Habilitar ferramentas de desenvolvedor do Edge para aplicativos JavaScript da UWP (Experimental)**:  
-Habilita as ferramentas de desenvolvedor para aplicativos UWP JavaScript no Edge.
+**Habilitar ferramentas de desenvolvedor do Microsoft Edge para aplicativos JavaScript da UWP (Experimental)**:  
+Habilita as ferramentas de desenvolvedor para aplicativos UWP JavaScript no Microsoft Edge.
 
 **Habilitar depurador JavaScript Chrome herdado para ASP.NET**:  
 Permite que o depurador de script JavaScript Chrome herdado para aplicativos ASP.NET. No primeiro uso no Chrome, você precisa entrar no navegador para habilitar as extensões do Chrome que você instalou.

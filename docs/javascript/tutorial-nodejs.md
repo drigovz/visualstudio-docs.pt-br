@@ -192,7 +192,7 @@ Em seguida, você executará o aplicativo com o depurador do Visual Studio anexa
 
 ## <a name="run-the-application"></a>Executar o aplicativo
 
-1. Selecione o destino de depuração na barra de ferramentas Depurar, como Edge ou Chrome.
+1. Selecione o destino de depuração na barra de ferramentas Depurar, como Microsoft Edge ou Chrome.
 
     ![Selecionar o destino de depuração](../javascript/media/tutorial-nodejs-deploy-target.png)
 
