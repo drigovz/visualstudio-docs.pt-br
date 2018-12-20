@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findAcceleratorInlineesByLinenum | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,27 +13,25 @@ dev_langs:
 - C++
 ms.assetid: 386c87aa-f7b2-4d38-9dd6-fffba9ff01f0
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99f344a1f6de8dba9dc14d1720515319796f629f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fcb0eb438e88107c1447a7334f767bbc17dc88b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468127"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738171"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSession::findAcceleratorInlineesByLinenum](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum).  
-  
 Retorna uma enumeração de símbolos para quadros embutidos que correspondem ao local de origem especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findAcceleratorInlineeLinesByName (   
+HRESULT findAcceleratorInlineeLinesByName (   
    IDiaSymbol*           parent,  
    IDiaSourceFile*       file,  
    DWORD                 linenum,  

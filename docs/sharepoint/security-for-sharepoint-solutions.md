@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3febd2a9a3d2450740b08cac4ad8d3c891386c9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b014c3b4ada42982c41928ca17472e3f585af3ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626127"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878759"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Segurança para soluções do SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] incorpora os seguintes recursos para ajudar a reforçar a segurança dos aplicativos do SharePoint.
@@ -34,7 +34,7 @@ ms.locfileid: "42626127"
 ## <a name="allowpartiallytrustedcallers-attribute"></a>Atributo AllowPartiallyTrustedCallers
  Por padrão, somente aplicativos que são totalmente confiáveis pelo sistema de CAS (segurança) de acesso do código de tempo de execução podem acessar um assembly de código gerenciado compartilhado. Marcar um assembly totalmente confiável com o atributo AllowPartiallyTrustedCallers permite que assemblies parcialmente confiáveis para acessá-lo.
 
- O atributo AllowPartiallyTrustedCallers é adicionado a qualquer solução do SharePoint que não foi implantada para o cache de assembly global do sistema ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Isso inclui soluções em área restrita ou soluções implantadas para o diretório de compartimento de aplicativo do SharePoint. Para obter mais informações, consulte [alterações de segurança versão 1 para o Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) e [implantação de Web Parts no SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
+ O atributo AllowPartiallyTrustedCallers é adicionado a qualquer solução do SharePoint que não foi implantada para o cache de assembly global do sistema ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Isso inclui soluções em área restrita ou soluções implantadas para o diretório de compartimento de aplicativo do SharePoint. Para obter mais informações, consulte [alterações de segurança versão 1 para o Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) e [implantação de Web Parts no SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
 
 ## <a name="safe-against-script-property"></a>Seguro em relação a propriedade de script
  *Injeção de script* é a inserção de código potencialmente mal-intencionado em controles ou páginas da Web. Para ajudar a proteger os sites do SharePoint 2010 contra injeção de script, os colaboradores não podem exibir ou editar Web parts ou suas propriedades por padrão. Esse comportamento é controlado por um atributo SafeControl chamado SafeAgainstScript. Na [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], defina esse atributo em um item de projeto **entradas de controle seguro** subpropriedade **seguro contra Script**. Para obter mais informações, consulte [fornecer informações de implantação de pacote e em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) e [como: marcar controles como controles seguros](../sharepoint/how-to-mark-controls-as-safe-controls.md).

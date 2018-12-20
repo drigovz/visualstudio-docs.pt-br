@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_basetype | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_baseType method
 ms.assetid: 5c69a241-a8d3-48ed-8b36-27463a196572
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b001c2a72d4f9633d497cd40df9af70048d6c04a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08af047b1c4134c6da0aa5250bd9d5ded20d4a60
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468126"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789181"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_basetype](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-basetype).  
-  
-Recupera o tipo base para esse símbolo *.*  
+Recupera o tipo base para esse símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_baseType (   
+HRESULT get_baseType (   
    DWORD* pRetVal  
 );  
 ```  

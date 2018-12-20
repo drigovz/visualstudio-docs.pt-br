@@ -1,7 +1,7 @@
 ---
 title: DOCCONTEXT_COMPARE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1a4643a525e5a97f7c8af3be2e86eba9ac161936
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0598fd3848623bdbef39f0c1cfec145399fbdc04
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474759"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758166"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DOCCONTEXT_COMPARE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/doccontext-compare).  
-  
 Especifica os critérios para comparar dois contextos de documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_DOCCONTEXT_COMPARE {   
+enum enum_DOCCONTEXT_COMPARE {   
    DOCCONTEXT_EQUAL         = 0x0001,  
    DOCCONTEXT_LESS_THAN     = 0x0002,  
    DOCCONTEXT_GREATER_THAN  = 0x0003,  
@@ -44,7 +42,7 @@ typedef DWORD DOCCONTEXT_COMPARE;
 ```  
   
 ```csharp  
-enum enum_DOCCONTEXT_COMPARE {   
+enum enum_DOCCONTEXT_COMPARE {   
    DOCCONTEXT_EQUAL         = 0x0001,  
    DOCCONTEXT_LESS_THAN     = 0x0002,  
    DOCCONTEXT_GREATER_THAN  = 0x0003,  

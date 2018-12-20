@@ -1,7 +1,7 @@
 ---
 title: IDebugProviderProgramNode2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b4b180ad9ceb0ccb44a04f4f06af3541d2244822
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d8c8b4afd825c2968dd3b7708b944901d9bf50c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464076"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741952"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProviderProgramNode2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugproviderprogramnode2).  
-  
 Essa interface realiza marshaling de interfaces relacionadas ao programa nos limites do processo.  
   
 ## <a name="syntax"></a>Sintaxe  

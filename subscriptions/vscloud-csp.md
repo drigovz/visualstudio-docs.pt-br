@@ -9,12 +9,12 @@ description: Informações para Provedores de Soluções na Nuvem como comprar e
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a455e645629266be28e50718ae5fffde309b3dd9
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 50f4cfeaa6d0f530a70729155f0e81065359281d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282281"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899455"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Comprar e gerenciar assinaturas de nuvem do Visual Studio para seus clientes
 
@@ -28,6 +28,8 @@ Primeiro você precisa configurar o locatário do cliente no Partner Center e cr
 
 [Saiba mais](/azure/devops/organizations/billing/csp/set-up-csp-customer)
 
+## <a name="who-can-buy-visual-studio-subscriptions"></a>Quem pode comprar assinaturas do Visual Studio?
+Qualquer pessoa que tenha [acesso de proprietário ou colaborador](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) à assinatura do Azure pode comprar assinaturas do Visual Studio. 
 
 ## <a name="how-to-buy"></a>Como comprar
 
@@ -73,6 +75,7 @@ Se algum assinante não tiver ativado sua assinatura do Visual Studio, o motivo 
 Para exibir os preços do Visual Studio para parceiros CSP, faça logon no [Partner Center](https://partnercenter.microsoft.com).  Escolha **Preços e ofertas** no painel de navegação esquerdo.  Escolha o arquivo de preços do mês atual em **serviços baseados em uso** no canto superior direito. Depois de baixar a planilha do Excel, acesse a planilha **Lista de preços do Azure** e filtre a folha **Categoria do Medidor** para **Visual Studio**.
 
 Aqui está a maneira de interpretar os dados dessa planilha:
+
 | Categoria do medidor    |   Nome                 |  Unidades                                |           O que é isso                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Assinatura                         | Assinatura mensal do Visual Studio Enterprise   |

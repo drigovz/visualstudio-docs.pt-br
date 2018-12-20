@@ -1,7 +1,7 @@
 ---
 title: Detalhes do Heap de depuração CRT | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -77,21 +77,19 @@ helpviewer_keywords:
 - debug heap, reporting functions
 ms.assetid: bf78ace6-28e4-4a04-97c6-39e0cdd00ba4
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bffaf070bfd92be0611156df65f008bd06c1ec32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 691db8ce3b9b956ef7e0299acddac74c926fcf5a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461251"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803013"
 ---
 # <a name="crt-debug-heap-details"></a>Detalhes da pilha de depuração CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [detalhes do Heap de depuração CRT](https://docs.microsoft.com/visualstudio/debugger/crt-debug-heap-details).  
-  
 Este tópico fornece um aspecto detalhado na heap de depuração de CRT.  
   
 ##  <a name="BKMK_Contents"></a> Conteúdo  
@@ -216,19 +214,19 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  **Para usar o heap de depuração**  
   
--   Vincule a compilação de depuração de seu aplicativo a uma versão de depuração da biblioteca em tempo de execução do C.  
+- Vincule a compilação de depuração de seu aplicativo a uma versão de depuração da biblioteca em tempo de execução do C.  
   
- **Para alterar um ou mais campos de bits crtdbgflag e criar um novo estado para o sinalizador**  
+  **Para alterar um ou mais campos de bits crtdbgflag e criar um novo estado para o sinalizador**  
   
-1.  Chamar `_CrtSetDbgFlag` com o parâmetro `newFlag` definido como `_CRTDBG_REPORT_FLAG` (para obter o estado atual de `_crtDbgFlag`) e armazenar o valor retornado em uma variável temporária.  
+1. Chamar `_CrtSetDbgFlag` com o parâmetro `newFlag` definido como `_CRTDBG_REPORT_FLAG` (para obter o estado atual de `_crtDbgFlag`) e armazenar o valor retornado em uma variável temporária.  
   
-2.  Ative todos os bits usando `OR`ing-(bit a bit &#124; símbolo) na variável temporária com as máscaras de bits correspondentes (representadas no código do aplicativo por constantes de manifesto).  
+2. Ative todos os bits usando `OR`ing-(bit a bit &#124; símbolo) na variável temporária com as máscaras de bits correspondentes (representadas no código do aplicativo por constantes de manifesto).  
   
-3.  Desative os outros bits usando o operador `AND` (símbolo & bit a bit) na variável com o operador `NOT` (símbolo ~bit a bit) das máscaras de bits apropriadas.  
+3. Desative os outros bits usando o operador `AND` (símbolo & bit a bit) na variável com o operador `NOT` (símbolo ~bit a bit) das máscaras de bits apropriadas.  
   
-4.  Chamar `_CrtSetDbgFlag` com o parâmetro de `newFlag` definido como o valor armazenado na variável temporária para criar o novo estado para `_crtDbgFlag`.  
+4. Chamar `_CrtSetDbgFlag` com o parâmetro de `newFlag` definido como o valor armazenado na variável temporária para criar o novo estado para `_crtDbgFlag`.  
   
- Por exemplo, as seguintes linhas de código ativam detecção automática de escape e desativam a verificação de blocos de tipo `_CRT_BLOCK`:  
+   Por exemplo, as seguintes linhas de código ativam detecção automática de escape e desativam a verificação de blocos de tipo `_CRT_BLOCK`:  
   
 ```  
 // Get current flag  

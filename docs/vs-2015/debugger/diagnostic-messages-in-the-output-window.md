@@ -1,7 +1,7 @@
 ---
 title: Mensagens de diagnóstico na janela de saída | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,41 +31,39 @@ helpviewer_keywords:
 - Debug class
 ms.assetid: 386e9524-be17-4573-83fb-4f7c5cae0be0
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0a9e0bb4fa34133937e39b310cb05360e66a443
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c963a93e2d1b882fd38db1a546cc49cb1bfedcd6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474474"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781121"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>Mensagens de diagnóstico na janela Saída
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [mensagens de diagnóstico na janela de saída](https://docs.microsoft.com/visualstudio/debugger/diagnostic-messages-in-the-output-window).  
-  
 Você pode gravar as mensagens de tempo de execução na janela Saída usando a classe de Depuração ou a classe de Rastreamento, que fazem parte da biblioteca de classes <xref:System.Diagnostics>. Use a classe de Depuração se você emitir uma saída apenas na versão de Depuração do programa. Use a classe de Rastreamento se você quiser uma saída nas versões de Depuração e de Inicialização.  
   
 ## <a name="output-methods"></a>Métodos de saída  
  As classes <xref:System.Diagnostics.Trace> e <xref:System.Diagnostics.Debug> fornecem os seguintes métodos de saída:  
   
--   Vários métodos `Write`, os quais geram informações sem interromper a execução. Esses métodos substituem o método `Debug.Print` usado em versões anteriores do Visual Basic.  
+- Vários métodos `Write`, os quais geram informações sem interromper a execução. Esses métodos substituem o método `Debug.Print` usado em versões anteriores do Visual Basic.  
   
--   Métodos <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> e <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, que interrompem informações de execução e de saída se uma condição especificada falhar. Por padrão, o método `Assert` exibe informações em uma caixa de diálogo. Para obter mais informações, consulte [asserções em código gerenciado](../debugger/assertions-in-managed-code.md).  
+- Métodos <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> e <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, que interrompem informações de execução e de saída se uma condição especificada falhar. Por padrão, o método `Assert` exibe informações em uma caixa de diálogo. Para obter mais informações, consulte [asserções em código gerenciado](../debugger/assertions-in-managed-code.md).  
   
--   Os métodos <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> e <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>, que sempre interrompem informações de execução e de saída. Por padrão, os métodos `Fail` exibem informações em uma caixa de diálogo.  
+- Os métodos <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> e <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>, que sempre interrompem informações de execução e de saída. Por padrão, os métodos `Fail` exibem informações em uma caixa de diálogo.  
   
- Além do programa fora do seu aplicativo, o **saída** janela pode exibir as informações sobre:  
+  Além do programa fora do seu aplicativo, o **saída** janela pode exibir as informações sobre:  
   
--   Módulos que o depurador carregou ou descarregou.  
+- Módulos que o depurador carregou ou descarregou.  
   
--   Exceções lançadas.  
+- Exceções lançadas.  
   
--   Processos encerrados.  
+- Processos encerrados.  
   
--   Threads encerrados.  
+- Threads encerrados.  
   
 ## <a name="see-also"></a>Consulte também  
  [Segurança do depurador](../debugger/debugger-security.md)   

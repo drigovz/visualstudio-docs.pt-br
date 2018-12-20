@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator2::GetService | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f8988a9e-9d18-42af-84a7-55f41e9adf63
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e8ef02bee0f716194f1d37d619f070e00ecadbe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94fed947ac7bb49b1883b7d46cc3269bac94bbf5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468033"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743502"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugExpressionEvaluator2::GetService](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugexpressionevaluator2-getservice).  
-  
 Recupera um objeto de serviço recebe seu identificador exclusivo.  
   
 ## <a name="syntax"></a>Sintaxe  

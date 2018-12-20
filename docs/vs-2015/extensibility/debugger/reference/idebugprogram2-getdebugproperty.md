@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::GetDebugProperty | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: d194224e-f0e6-46ab-85d4-9e2639e28946
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e92d0a20fb9639e3a969ff30a5b6b512019895a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6149036a4498812e1cba64a9f09b78bd4c378f6b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460453"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726303"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProgram2::GetDebugProperty](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-getdebugproperty).  
-  
 Obtém as propriedades do programa.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetDebugProperty(   
+HRESULT GetDebugProperty(   
    IDebugProperty2** ppProperty  
 );  
 ```  
   
 ```csharp  
-int GetDebugProperty(   
+int GetDebugProperty(   
    out IDebugProperty2 ppProperty  
 );  
 ```  

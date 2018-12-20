@@ -1,7 +1,7 @@
 ---
 title: 'Como: interceptar um clique em uma forma ou um decorador | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 306e61307a6d9a5ff41a3a4492365bef39ab8449
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a3e0d12aa7d5537b9dd11f1b7d4c3daedc68a84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472707"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926742"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Como interceptar um clique em uma forma ou um decorador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: interceptar um clique em uma forma ou um decorador](https://docs.microsoft.com/visualstudio/modeling/how-to-intercept-a-click-on-a-shape-or-decorator).  
-  
 Os procedimentos a seguir demonstram como interceptar um clique em uma forma ou um decorador de ícone. Você pode interceptar cliques, cliques duplos, arrasta, e outros gestos e fazer com que o elemento de responder.  
   
 ## <a name="to-intercept-clicks-on-shapes"></a>Para interceptar cliques em formas  
@@ -128,17 +126,17 @@ public partial class MyShape // change
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Interceptando clica e arrasta em listas de CompartmentShape  
  O exemplo a seguir permite que os usuários reordenar os itens em uma forma de compartimento, arrastando-os. Para executar este código:  
   
-1.  Criar uma nova solução DSL usando o **diagramas de classe** modelo de solução.  
+1. Criar uma nova solução DSL usando o **diagramas de classe** modelo de solução.  
   
-     Você também pode trabalhar com uma solução que contém as formas do compartimento de sua preferência. Esse código supõe que há uma relação de incorporação entre os elementos de modelo representados pela forma e os elementos representados em itens da lista de compartimento.  
+    Você também pode trabalhar com uma solução que contém as formas do compartimento de sua preferência. Esse código supõe que há uma relação de incorporação entre os elementos de modelo representados pela forma e os elementos representados em itens da lista de compartimento.  
   
-2.  Defina as **gera derivado duplo** propriedade da forma do compartimento.  
+2. Defina as **gera derivado duplo** propriedade da forma do compartimento.  
   
-3.  Adicione este código em um arquivo a **Dsl** projeto.  
+3. Adicione este código em um arquivo a **Dsl** projeto.  
   
-4.  Ajuste os nomes de classe e a forma de domínio nesse código para corresponder ao seu próprio DSL.  
+4. Ajuste os nomes de classe e a forma de domínio nesse código para corresponder ao seu próprio DSL.  
   
- Em resumo, o código funciona da seguinte maneira. Neste exemplo, `ClassShape` é o nome da forma do compartimento.  
+   Em resumo, o código funciona da seguinte maneira. Neste exemplo, `ClassShape` é o nome da forma do compartimento.  
   
 -   Um conjunto de manipuladores de eventos de mouse está anexado a cada instância de compartimento quando ele é criado.  
   

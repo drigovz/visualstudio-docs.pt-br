@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14cecb63e7f96e58b17672bbb5cb67a345b9ece8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: de9ae85156f9d272901893c74c5d2c9729a0a3dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924220"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Como: leitura de e gravação às propriedades do documento
   Você pode armazenar as propriedades do documento, juntamente com um documento. Aplicativos do Office fornecem uma série de propriedades internas, como autor, título e assunto. Este tópico mostra como definir propriedades de documento no Microsoft Office Excel e Microsoft Office Word.  
@@ -35,13 +35,13 @@ ms.locfileid: "35670719"
 ## <a name="set-document-properties-in-excel"></a>Definir propriedades de documento no Excel  
  Para trabalhar com propriedades internas no Excel, use as seguintes propriedades:  
   
--   Em um projeto de nível de documento, use o <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> propriedade do `ThisWorkbook` classe.  
+- Em um projeto de nível de documento, use o <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> propriedade do `ThisWorkbook` classe.  
   
--   Em um projeto de suplemento do VSTO, use o <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> propriedade de um <xref:Microsoft.Office.Interop.Excel.Workbook> objeto.  
+- Em um projeto de suplemento do VSTO, use o <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> propriedade de um <xref:Microsoft.Office.Interop.Excel.Workbook> objeto.  
   
- Essas propriedades retornam um <xref:Microsoft.Office.Core.DocumentProperties> objeto, que é uma coleção de <xref:Microsoft.Office.Core.DocumentProperty> objetos. Você pode usar o `Item` propriedade da coleção para recuperar uma propriedade específica, por nome ou índice dentro da coleção.  
+  Essas propriedades retornam um <xref:Microsoft.Office.Core.DocumentProperties> objeto, que é uma coleção de <xref:Microsoft.Office.Core.DocumentProperty> objetos. Você pode usar o `Item` propriedade da coleção para recuperar uma propriedade específica, por nome ou índice dentro da coleção.  
   
- O exemplo de código a seguir mostra como alterar o interno **número de revisão** propriedade em um projeto de nível de documento.  
+  O exemplo de código a seguir mostra como alterar o interno **número de revisão** propriedade em um projeto de nível de documento.  
   
 ### <a name="to-change-the-revision-number-property-in-excel"></a>Para alterar a propriedade de número de revisão no Excel  
   
@@ -58,13 +58,13 @@ ms.locfileid: "35670719"
 ## <a name="set-document-properties-in-word"></a>Definir propriedades de documento no Word  
  Para trabalhar com propriedades internas no Word, use as seguintes propriedades:  
   
--   Em um projeto de nível de documento, use o <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> propriedade do `ThisDocument` classe.  
+- Em um projeto de nível de documento, use o <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> propriedade do `ThisDocument` classe.  
   
--   Em um projeto de suplemento do VSTO, use o <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> propriedade de um <xref:Microsoft.Office.Interop.Word.Document> objeto.  
+- Em um projeto de suplemento do VSTO, use o <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> propriedade de um <xref:Microsoft.Office.Interop.Word.Document> objeto.  
   
- Essas propriedades retornam um <xref:Microsoft.Office.Core.DocumentProperties> objeto, que é uma coleção de <xref:Microsoft.Office.Core.DocumentProperty> objetos. Você pode usar o `Item` propriedade da coleção para recuperar uma propriedade específica, por nome ou índice dentro da coleção.  
+  Essas propriedades retornam um <xref:Microsoft.Office.Core.DocumentProperties> objeto, que é uma coleção de <xref:Microsoft.Office.Core.DocumentProperty> objetos. Você pode usar o `Item` propriedade da coleção para recuperar uma propriedade específica, por nome ou índice dentro da coleção.  
   
- O exemplo de código a seguir mostra como alterar o interno **assunto** propriedade em um projeto de nível de documento.  
+  O exemplo de código a seguir mostra como alterar o interno **assunto** propriedade em um projeto de nível de documento.  
   
 ### <a name="to-change-the-subject-property"></a>Para alterar a propriedade Subject  
   

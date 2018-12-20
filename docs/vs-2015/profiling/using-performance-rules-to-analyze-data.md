@@ -1,7 +1,7 @@
 ---
 title: Usando regras de desempenho para analisar dados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1deed23e-b31b-4714-982f-08ceebfc3096
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d22ca90e115d72db00998b26f2501b24adc60652
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a64457cc0ca33295e5d3d572ddb88481dfa2125d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462711"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784358"
 ---
 # <a name="using-performance-rules-to-analyze-data"></a>Usando regras de desempenho para analisar dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando as regras de desempenho para analisar dados](https://docs.microsoft.com/visualstudio/profiling/using-performance-rules-to-analyze-data).  
-  
 Os avisos de desempenho das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] indicam problemas em um aplicativo analisado que podem causar lentidão na execução do programa. Os avisos também podem indicar que talvez seja necessário alterar os métodos de coleta para coletar dados mais úteis. Avisos de desempenho são gerados automaticamente em uma sessão de criação de perfil. Os avisos são exibidos na janela **Lista de Erros** quando um arquivo de dados de criação de perfil está aberto no Visual Studio. Na janela **Lista de Erros**, é possível localizar o código-fonte do problema e exibir informações detalhadas sobre o erro, por exemplo, como resolvê-lo. Também é possível desabilitar avisos nos quais você não está interessado.  
   
 > [!NOTE]

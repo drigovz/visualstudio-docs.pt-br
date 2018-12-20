@@ -1,7 +1,7 @@
 ---
 title: IPropertyProxyEESide::GetManagedViewerCreationData | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,35 +17,33 @@ ms.assetid: c4eb4d60-8816-4d52-bc8d-dffd4f066499
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90087bfad956427ef3ff59fd7ffdc8b92c9f5687
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 570407afc4e06a1456f5e97e06814a44344aaa94
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473675"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756570"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IPropertyProxyEESide::GetManagedViewerCreationData](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata).  
-  
 Recupera informações sobre o visualizador para esse tipo de propriedade para instanciar esse visualizador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetManagedViewerCreationData(  
-   BSTR*                  assemName,  
-   IEEDataStorage**       assemBytes,  
-   IEEDataStorage**       assemPdb,  
-   BSTR*                  className,  
-   ASSEMBLYLOCRESOLUTION* alr,  
-   BOOL*                  replacementOk  
+HRESULT GetManagedViewerCreationData(  
+   BSTR*                  assemName,  
+   IEEDataStorage**       assemBytes,  
+   IEEDataStorage**       assemPdb,  
+   BSTR*                  className,  
+   ASSEMBLYLOCRESOLUTION* alr,  
+   BOOL*                  replacementOk  
 );  
 ```  
   
 ```csharp  
-int GetManagedViewerCreationData(  
+int GetManagedViewerCreationData(  
    out string                     assemName,  
    out IEEDataStorage             assemBytes,  
    out IEEDataStorage             assemPdb,  

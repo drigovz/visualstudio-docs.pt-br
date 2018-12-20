@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findInlineeLinesByLinenum | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,27 +13,25 @@ dev_langs:
 - C++
 ms.assetid: cf32ae7c-a0c8-4800-bc8f-d64fdd15fb06
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ecd508c98a8a40ea6f89b4d2054326c5794af6a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3c147c0360ae87c2f41d299d5860cede59a93f8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466543"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724834"
 ---
 # <a name="idiasessionfindinlineelinesbylinenum"></a>IDiaSession::findInlineeLinesByLinenum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSession::findInlineeLinesByLinenum](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findinlineelinesbylinenum).  
-  
 Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, o número de arquivo e linha de origem especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findInlineeLinesByVA (   
+HRESULT findInlineeLinesByVA (   
    IDiaSymbol*           compiland,  
    IDiaSourceFile*       file,  
    DWORD                 linenum,  

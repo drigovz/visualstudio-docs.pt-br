@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPorts2::Next | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 3f43d18c-6bd1-4ddd-95ef-9550abd2ad09
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11d9830666621cd8c3280fbf64cc8379c13b8de9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 752894721c316049d1d91aed63ef9176badb1278
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460603"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777299"
 ---
 # <a name="ienumdebugports2next"></a>IEnumDebugPorts2::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugPorts2::Next](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugports2-next).  
-  
 Retorna o próximo conjunto de elementos da enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  

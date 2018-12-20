@@ -1,7 +1,7 @@
 ---
 title: 'Idialoadcallback:: Notifydebugdir | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaLoadCallback::NotifyDebugDir method
 ms.assetid: bd04e2f6-0dbf-4742-a556-96f2cd99aa19
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4496a7941de29f4ef500a135559dcd746036f6d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 04a41e03a679a8910bb408162da57078e27eb654
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475555"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769554"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idialoadcallback:: Notifydebugdir](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idialoadcallback-notifydebugdir).  
-  
 Chamado quando um diretório de depuração foi encontrado no arquivo .exe.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT NotifyDebugDir (   
+HRESULT NotifyDebugDir (   
    BOOL  fExecutable,  
    DWORD cbData,  
    BYTE  data[]  

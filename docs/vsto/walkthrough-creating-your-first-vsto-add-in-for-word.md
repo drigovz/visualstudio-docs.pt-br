@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22e44ace13e0f70bf74b71f17975b3a45cb76471
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cf20b3f742bfc5ff6de6af080f3651f9d9027234
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808892"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940964"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Passo a passo: Criar seu primeiro suplemento VSTO para Word
   Este passo a passo introdutório mostra como criar um suplemento do VSTO para o Microsoft Office Word. Os recursos que você criar nesse tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual documento está aberto.  
@@ -32,15 +32,15 @@ ms.locfileid: "38808892"
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Criando um projeto de suplemento do VSTO do Word.  
+- Criando um projeto de suplemento do VSTO do Word.  
   
--   Escrevendo código que usa o modelo de objeto do Word para adicionar texto a um documento quando ele for salvo.  
+- Escrevendo código que usa o modelo de objeto do Word para adicionar texto a um documento quando ele for salvo.  
   
--   Criando e executando o projeto para testá-lo.  
+- Criando e executando o projeto para testá-lo.  
   
--   Limpando o projeto concluído para que o suplemento do VSTO não seja executado automaticamente em seu computador de desenvolvimento.  
+- Limpando o projeto concluído para que o suplemento do VSTO não seja executado automaticamente em seu computador de desenvolvimento.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
@@ -78,21 +78,21 @@ ms.locfileid: "38808892"
   
 ### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>Para adicionar um parágrafo de texto para o documento salvo  
   
-1.  No arquivo de código ThisAddIn, adicione o seguinte código para o `ThisAddIn` classe. O novo código define um manipulador de eventos para o <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> evento, que é gerado quando um documento é salvo.  
+1. No arquivo de código ThisAddIn, adicione o seguinte código para o `ThisAddIn` classe. O novo código define um manipulador de eventos para o <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> evento, que é gerado quando um documento é salvo.  
   
-     Quando o usuário salva um documento, o manipulador de eventos adiciona o novo texto no início do documento.  
+    Quando o usuário salva um documento, o manipulador de eventos adiciona o novo texto no início do documento.  
   
-     [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
   
-    > [!NOTE]  
-    >  Esse código usa um valor de índice de 1 para acessar o primeiro parágrafo de <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> coleção. Embora o Visual Basic e Visual c# usam conjuntos baseados em 0, os limites inferiores da matriz da maioria das coleções no modelo de objeto do Word é 1. Para obter mais informações, consulte [escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md).  
+   > [!NOTE]  
+   >  Esse código usa um valor de índice de 1 para acessar o primeiro parágrafo de <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> coleção. Embora o Visual Basic e Visual c# usam conjuntos baseados em 0, os limites inferiores da matriz da maioria das coleções no modelo de objeto do Word é 1. Para obter mais informações, consulte [escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md).  
   
-2.  Se você estiver usando c#, adicione o seguinte código necessário para o `ThisAddIn_Startup` manipulador de eventos. Esse código é usado para se conectar a `Application_DocumentBeforeSave` manipulador de eventos com o <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> eventos.  
+2. Se você estiver usando c#, adicione o seguinte código necessário para o `ThisAddIn_Startup` manipulador de eventos. Esse código é usado para se conectar a `Application_DocumentBeforeSave` manipulador de eventos com o <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> eventos.  
   
-     [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]  
   
- Para modificar o documento quando ele for salvo, os exemplos de código anterior usam os seguintes objetos:  
+   Para modificar o documento quando ele for salvo, os exemplos de código anterior usam os seguintes objetos:  
   
 -   O `Application` campo do `ThisAddIn` classe. O `Application` campo retorna um <xref:Microsoft.Office.Interop.Word.Application> objeto que representa a instância atual do Word.  
   

@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionObject::CreatePrimitiveObject | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 320930a86a58b51155b3f7400ea791135c321d95
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29bdf57c1d6ab77eeb2e283d13785487911efb5c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474171"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767402"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugFunctionObject::CreatePrimitiveObject](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject).  
-  
 Cria um objeto de dados primitivos, como um inteiro simples.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT CreatePrimitiveObject(   
+HRESULT CreatePrimitiveObject(   
    OBJECT_TYPE    ot,  
    IDebugObject** ppObject  
 );  

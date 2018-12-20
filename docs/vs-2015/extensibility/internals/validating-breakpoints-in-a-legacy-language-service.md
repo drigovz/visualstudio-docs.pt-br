@@ -1,7 +1,7 @@
 ---
 title: Validar pontos de interrupção em um serviço de linguagem herdado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3fbfd2ca8ec3377d8c7d97e38fb4669a2d2042b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0868e516720fd32a445f60f05f345936d24d6d7a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474576"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734977"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validando pontos de interrupção em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Validando os pontos de interrupção em um serviço de linguagem herdado](https://docs.microsoft.com/visualstudio/extensibility/internals/validating-breakpoints-in-a-legacy-language-service).  
-  
 Um ponto de interrupção indica que a execução do programa deve parar em um ponto específico, enquanto ele está sendo executado em um depurador. Um usuário pode colocar um ponto de interrupção em qualquer linha no arquivo de origem, uma vez que o editor não tem conhecimento sobre o que constitui um local válido para um ponto de interrupção. Quando o depurador é iniciado, todos os pontos de interrupção marcados (chamados de pontos de interrupção pendentes) são vinculados para o local apropriado no programa em execução. Ao mesmo tempo que os pontos de interrupção são validados para garantir que eles marcam os locais de código válido. Por exemplo, um ponto de interrupção em um comentário não é válido, porque não há nenhum código nesse local no código-fonte. O depurador desabilita os pontos de interrupção inválidos.  
   
  Uma vez que o serviço de linguagem sabe sobre o código-fonte que está sendo exibido, pode validar os pontos de interrupção antes que o depurador é iniciado. Você pode substituir o <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> método retorne um span especificando um local válido para um ponto de interrupção. O local do ponto de interrupção ainda é validado quando o depurador é iniciado, mas o usuário é notificado de pontos de interrupção inválida sem esperar que o depurador carregar.  

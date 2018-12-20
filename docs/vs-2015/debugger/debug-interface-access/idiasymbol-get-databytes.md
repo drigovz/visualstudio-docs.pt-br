@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_databytes | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_dataBytes method
 ms.assetid: 5eb37179-20d8-44ae-a72a-405c1b0435c4
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81672552bfecd824f9d969cc8b4606596d76b12a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a82f1161fdce536d9a66529eb9faf155c91debbd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461476"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787647"
 ---
 # <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_databytes](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-databytes).  
-  
 Recupera os bytes de dados de um símbolo de OEM.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_dataBytes (   
+HRESULT get_dataBytes (   
    DWORD  cbData,  
    DWORD* pcbData,  
    BYTE   data[]  

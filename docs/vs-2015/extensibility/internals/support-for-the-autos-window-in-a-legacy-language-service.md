@@ -1,7 +1,7 @@
 ---
 title: Suporte para a janela Autos em um serviço de linguagem herdado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 68d9266ce81da0819bbf0f17c06409afcb02083f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e1f787b3a0f2ab1c153dfd3742c8939975e3ad1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474473"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764468"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Suporte para a janela de automáticos em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [suporte para a janela Autos em um serviço de linguagem herdado](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service).  
-  
 O **automóveis** janela exibe expressões como variáveis e parâmetros que estão no escopo quando o programa que está sendo depurado está em pausa (seja devido a um ponto de interrupção ou uma exceção). As expressões podem incluir variáveis, locais ou globais e os parâmetros que foram alterados no escopo local. O **automóveis** janela também pode incluir instanciações de uma classe, estrutura ou algum outro tipo. Tudo o que um avaliador de expressão pode avaliar potencialmente pode ser mostrado na **automóveis** janela.  
   
  A estrutura de pacote gerenciado (MPF) não oferece suporte direto para o **automóveis** janela. No entanto, se você substituir a <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> método, você pode retornar uma lista de expressões a ser apresentado na **Autos** janela.  

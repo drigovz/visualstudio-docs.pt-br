@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 184c7ee5fc5155b532243c51f85d8b5420892925
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: c40fd9e5f21940be77af7dfbddf496594502641e
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079233"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751018"
 ---
 # <a name="importgroup-element"></a>Elemento ImportGroup
 Contém uma coleção de elementos `Import` que são agrupados em uma condição opcional. Para obter mais informações, confira [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).  
@@ -57,9 +57,9 @@ Contém uma coleção de elementos `Import` que são agrupados em uma condição
 
 ### <a name="parent-elements"></a>Elementos pai  
 
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|[Projeto](../msbuild/project-element-msbuild.md)|Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+| Elemento | Descrição |
+| - | - |
+| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir mostra o elemento `ImportGroup`.  
@@ -67,8 +67,8 @@ Contém uma coleção de elementos `Import` que são agrupados em uma condição
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <ImportGroup>  
-        <Import Project="$(Targets1.targets) />  
-        <Import Project="$(Targets2.targets) />  
+        <Import Project="$(Targets1.targets)" />  
+        <Import Project="$(Targets2.targets)" />  
     </ImportGroup>  
 ...  
 </Project>  

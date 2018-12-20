@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8620a51480868302fc840bffea5bbdb427c48f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d68347f2b6b9f538555e05c91b15dcb045b46d6
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635610"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295976"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Passo a passo: Criar uma extensão de projeto do SharePoint
   Este passo a passo ilustra como criar uma extensão para projetos do SharePoint. Você pode usar uma extensão de projeto para responder a eventos de nível de projeto, como quando um projeto é adicionado, excluído ou renomeado. Você também pode adicionar propriedades personalizadas ou responder quando um valor da propriedade muda. Diferentemente de extensões de item de projeto, as extensões de projeto não podem ser associadas um tipo específico de projeto do SharePoint. Quando você cria uma extensão de projeto, a extensão carrega quando qualquer tipo de projeto do SharePoint é aberto no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -53,11 +53,11 @@ ms.locfileid: "42635610"
 ## <a name="create-the-projects"></a>Crie os projetos
  Para concluir este passo a passo, você deve criar dois projetos:  
   
--   Um projeto VSIX para criar o pacote VSIX para implantar a extensão de projeto.  
+- Um projeto VSIX para criar o pacote VSIX para implantar a extensão de projeto.  
   
--   Um projeto de biblioteca de classe que implementa a extensão de projeto.  
+- Um projeto de biblioteca de classe que implementa a extensão de projeto.  
   
- Inicie o passo a passo Criando os projetos.  
+  Inicie o passo a passo Criando os projetos.  
   
 #### <a name="to-create-the-vsix-project"></a>Para criar o projeto do VSIX  
   
@@ -131,7 +131,7 @@ ms.locfileid: "42635610"
   
 1.  Na **Gerenciador de soluções**, abra o menu de atalho para o arquivo vsixmanifest e, em seguida, escolha o **abrir** botão.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre o arquivo no designer de manifesto. As informações que aparecem na **metadados** guia também aparece na **extensões e atualizações**. Todos os pacotes VSIX exigem o arquivo Extension vsixmanifest. Para obter mais informações sobre esse arquivo, consulte [1.0 referência do esquema de extensão do VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre o arquivo no designer de manifesto. As informações que aparecem na **metadados** guia também aparece na **extensões e atualizações**. Todos os pacotes VSIX exigem o arquivo Extension vsixmanifest. Para obter mais informações sobre esse arquivo, consulte [1.0 referência do esquema de extensão do VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  No **nome do produto** , digite **propriedade de projeto personalizado**.  
   
@@ -146,7 +146,7 @@ ms.locfileid: "42635610"
 6.  No **tipo** , escolha **mefcomponent**.  
   
     > [!NOTE]  
-    >  Esse valor corresponde à `MEFComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Esse valor corresponde à `MEFComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  No **fonte** , escolha o **um projeto na solução atual** botão de opção.  
   

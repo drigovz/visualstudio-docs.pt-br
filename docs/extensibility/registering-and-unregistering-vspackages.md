@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9abdf432664e57dd773649a88f97cf9b48675d7
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2075bec37e29359fb9c403f9cb149b70c01845b6
+ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638167"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410982"
 ---
 # <a name="register-and-unregister-vspackages"></a>Registrar e cancelar o registro de VSPackages
 Usar atributos para registrar um VSPackage, mas  
@@ -33,7 +33,9 @@ Usar atributos para registrar um VSPackage, mas
 [PackageRegistration(UseManagedResourcesOnly = true)]  
 [Guid("0B81D86C-0A85-4f30-9B26-DD2616447F95")]  
 public sealed class BasicPackage : Package  
-{. . .}  
+{
+    // ...
+}  
 ```  
   
 ## <a name="unregister-an-extension"></a>Cancelar o registro de uma extensão  
@@ -63,9 +65,9 @@ O código a seguir mostra como criar um novo atributo de registro.
   
 ```csharp  
 [AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = false)]  
-    public class CustomRegistrationAttribute : RegistrationAttribute  
-    {  
-    }  
+public class CustomRegistrationAttribute : RegistrationAttribute  
+{  
+}  
 ```  
   
  O <xref:System.AttributeUsageAttribute> é usado em classes de atributos para especificar o elemento de programa (classe, método, etc.) para que o atributo pertence, se ele pode ser usado mais de uma vez e se ele pode ser herdado.  
@@ -113,7 +115,7 @@ public override void Register(RegistrationAttribute.RegistrationContext context)
     {  
         if (packageKey != null)  
             packageKey.Close();  
-                }  
+    }  
 }  
   
 public override void Unregister(RegistrationContext context)  

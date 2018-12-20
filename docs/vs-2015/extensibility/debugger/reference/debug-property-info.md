@@ -1,7 +1,7 @@
 ---
 title: DEBUG_PROPERTY_INFO | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41755b695cec2558b09a4b41224e974e526de424
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0536bdb989e2dd86436c1c53c6bb376b348afc24
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467658"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796422"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DEBUG_PROPERTY_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/debug-property-info).  
-  
 Contém informações sobre uma propriedade de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-typedef struct tagDEBUG_PROPERTY_INFO {   
+typedef struct tagDEBUG_PROPERTY_INFO {   
    DEBUGPROP_INFO_FLAGS dwValidFields;  
    BSTR                 bstrFullName;  
    BSTR                 bstrName;  
@@ -46,7 +44,7 @@ typedef struct tagDEBUG_PROPERTY_INFO {
 ```  
   
 ```csharp  
-public struct DEBUG_PROPERTY_INFO {   
+public struct DEBUG_PROPERTY_INFO {   
    public uint            dwValidFields;  
    public string          bstrFullName;  
    public string          bstrName;  

@@ -1,7 +1,7 @@
 ---
 title: FIELD_KIND | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96f5f774533deb24376106ecbf3b7738182ea759
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60622f96550445070d89c239e2d1ca5a37184e73
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463271"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816795"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [FIELD_KIND](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/field-kind).  
-  
 Especifica o tipo do campo contido em um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_FIELD_KIND {   
+enum enum_FIELD_KIND {   
    FIELD_KIND_NONE       = 0x00000000,  
   
    // Type of field  
@@ -64,7 +62,7 @@ enum enum_FIELD_KIND {
    FIELD_TYPE_EXTENDED   = 0x00800000,  
   
    // Specific information about symbols  
-   FIELD_SYM_MEMBER      = 0x01000000,  
+   FIELD_SYM_MEMBER      = 0x01000000,  
    FIELD_SYM_LOCAL       = 0x02000000,  
    FIELD_SYM_PARAM       = 0x04000000,  
    FIELD_SYM_THIS        = 0x08000000,  
@@ -113,7 +111,7 @@ public enum enum_FIELD_KIND {
    FIELD_TYPE_EXTENDED   = 0x00800000,  
   
    // Specific information about symbols  
-   FIELD_SYM_MEMBER      = 0x01000000,  
+   FIELD_SYM_MEMBER      = 0x01000000,  
    FIELD_SYM_LOCAL       = 0x02000000,  
    FIELD_SYM_PARAM       = 0x04000000,  
    FIELD_SYM_THIS        = 0x08000000,  

@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugCustomAttributes::Reset | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e0db6518-5a71-4adb-a407-4d2ac7a3e369
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4faa2fb3b2286f014e3ab0dc40cb3c94469faaf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df775b8464249a5c6d8db8e7a71a50dcb989b7c4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464514"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791716"
 ---
 # <a name="ienumdebugcustomattributesreset"></a>IEnumDebugCustomAttributes::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugCustomAttributes::Reset](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugcustomattributes-reset).  
-  
 Redefine a sequência de enumeração para o início.  
   
 ## <a name="syntax"></a>Sintaxe  

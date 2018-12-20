@@ -1,7 +1,7 @@
 ---
 title: Diretrizes de posicionamento de comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81c40e2ee18f828ad379cdaabc40854fb87ccfb8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1729d4b5e65e60246926c1a3fd25342b10545068
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465887"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731002"
 ---
 # <a name="command-placement-guidelines"></a>Diretrizes de posicionamento de comando
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [diretrizes de posicionamento do comando](https://docs.microsoft.com/visualstudio/extensibility/internals/command-placement-guidelines).  
-  
 Práticas recomendadas para comandos de posicionamento no ambiente de desenvolvimento integrado (IDE) do Visual Studio variam dependendo do tamanho do conjunto de comandos. Comandos são definidos e posicionados de acordo com as informações em arquivos. VSCT.  
   
 ## <a name="best-practices-for-all-command-sets"></a>Práticas recomendadas para todos os conjuntos de comandos  

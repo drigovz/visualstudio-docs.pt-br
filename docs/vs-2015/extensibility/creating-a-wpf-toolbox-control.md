@@ -1,7 +1,7 @@
 ---
 title: Criar um controle de caixa de ferramentas do WPF | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0785ebf5177e892bd5c450525af10dd61d381fc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ad3edfa84ee64425a7a9fbc6b0dfc5098396907
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463682"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786022"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Criando um controle de caixa de ferramentas do WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando um controle de caixa de ferramentas do WPF](https://docs.microsoft.com/visualstudio/extensibility/creating-a-wpf-toolbox-control).  
-  
 O modelo de controle de caixa de ferramentas do WPF (Windows Presentation Framework) permite que você crie controles WPF que são adicionados automaticamente para o **caixa de ferramentas** quando a extensão está instalada. Este tópico mostra como usar o modelo para criar uma **caixa de ferramentas** controle que você pode distribuir a outros usuários.  
   
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  

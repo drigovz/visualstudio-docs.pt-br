@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_iscvtcil | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaSymbol::get_isCVTCIL method
 ms.assetid: 711b81fd-9549-44dc-9761-5eb862ed64c0
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41db1bb8488165cb25d84b92bb940bbe152804d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4608706b74612f19291b02e285242f0fdb4275a9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464871"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782707"
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_iscvtcil](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-iscvtcil).  
-  
 Recupera um sinalizador que indica se o módulo foi convertido de um módulo de idioma intermediário comum (CIL) para um módulo nativo.  
   
 ## <a name="syntax"></a>Sintaxe  

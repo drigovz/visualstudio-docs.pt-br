@@ -1,7 +1,7 @@
 ---
 title: 'CA1039: As listas são fortemente tipadas | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e20be039d2b743fecf15d855bc5f32fd65a75ce9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 681c1ada7600743c0a548f8a774dada6863f7d0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587340"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853409"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: as listas são fortemente tipadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1039: listas são fortemente tipadas](https://docs.microsoft.com/visualstudio/code-quality/ca1039-lists-are-strongly-typed).
 
 |||
 |-|-|

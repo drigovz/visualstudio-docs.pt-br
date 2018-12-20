@@ -1,7 +1,7 @@
 ---
 title: Criar modelos para seu aplicativo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -39,21 +39,19 @@ helpviewer_keywords:
 - UML diagrams
 ms.assetid: b69d9d91-c7e7-4dee-8eb6-706076eecb85
 caps.latest.revision: 60
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 769542e2f2864864146cb0f94c4dbf5bf1920b5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e3aa389441914121493148ecb8fa45b9f86beed
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466146"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745133"
 ---
 # <a name="create-models-for-your-app"></a>Criar modelos para o aplicativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar modelos para o aplicativo](https://docs.microsoft.com/visualstudio/modeling/create-models-for-your-app).  
-  
 Diagramas de modelagem ajudarão-lo a entender, esclarecer e comunicar ideias sobre seu código e os requisitos de usuário que deve oferecer suporte a seu sistema de software. Por exemplo, para descrever e comunicar requisitos do usuário, você pode usar o caso de uso (UML Unified Modeling Language), atividade, classe e diagramas de sequência. Para descrever e comunicar a funcionalidade de seu sistema, você pode usar o componente, classe, atividade e diagramas de sequência UML.  
   
  Ver [vídeo do Channel 9: melhorar a arquitetura com modelagem](http://go.microsoft.com/fwlink/?LinkID=252078).  

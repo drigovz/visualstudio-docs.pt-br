@@ -1,7 +1,7 @@
 ---
 title: Caixa de diálogo Projetos e Soluções, Opções | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6999a8af211fec07e50eac006e7de7bb11f49418
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4230f99b78809594d65da991c65c11d7dc30efd4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465477"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246188"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Soluções e Projetos, caixa de diálogo Opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [projetos e soluções, caixa de diálogo Opções](https://docs.microsoft.com/visualstudio/ide/reference/projects-and-solutions-options-dialog-box).  
-  
   
 Define o caminho padrão das pastas do projeto [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e determina o comportamento padrão da Janela de **Saída**, da **Lista de Tarefas** e do **Gerenciador de Soluções**, conforme os projetos são desenvolvidos e compilados. Para acessar essa caixa de diálogo, clique em **Ferramentas/Opções**, expanda **Projetos e Soluções** e clique em **Geral**.  
   

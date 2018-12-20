@@ -1,7 +1,7 @@
 ---
 title: Página de Aplicativo, Designer de Projeto (C#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22970716ed5bb13c3a9539f91288e8addf469f11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4a130a04be7a0645fef44ff6c8ae9dcc31b55dcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867228"
 ---
 # <a name="application-page-project-designer-c"></a>Página Aplicativo, Designer de Projeto (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [página de aplicativo, Designer de projeto (c#)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-csharp).  
-  
   
 Use a página **Aplicativo** do **Designer de Projeto** para especificar as propriedades e configurações de aplicativo do projeto.  
   
@@ -96,16 +94,16 @@ Use a página **Aplicativo** do **Designer de Projeto** para especificar as prop
  **Manifesto**  
  Seleciona uma opção de geração de manifesto quando o aplicativo é executado no Windows Vista no UAC (Controle de Conta de Usuário). Essa opção pode ter os seguintes valores:  
   
--   **Inserir manifesto com configurações padrão**. Dá suporte à maneira típica como o Visual Studio funciona no Windows Vista, que é inserir as informações de segurança no arquivo executável do aplicativo, especificando que `requestedExecutionLevel` seja `AsInvoker`. Esta é a opção padrão.  
+- **Inserir manifesto com configurações padrão**. Dá suporte à maneira típica como o Visual Studio funciona no Windows Vista, que é inserir as informações de segurança no arquivo executável do aplicativo, especificando que `requestedExecutionLevel` seja `AsInvoker`. Esta é a opção padrão.  
   
--   **Criar aplicativo sem um manifesto**. Esse método é conhecido como *virtualização*. Use essa opção para compatibilidade com aplicativos anteriores.  
+- **Criar aplicativo sem um manifesto**. Esse método é conhecido como *virtualização*. Use essa opção para compatibilidade com aplicativos anteriores.  
   
--   **Properties\app.manifest**. Essa opção é necessária para aplicativos implantados pelo ClickOnce ou COM sem registro. Se você publicar um aplicativo usando a implantação do ClickOnce, **Manifesto** será definido automaticamente como essa opção.  
+- **Properties\app.manifest**. Essa opção é necessária para aplicativos implantados pelo ClickOnce ou COM sem registro. Se você publicar um aplicativo usando a implantação do ClickOnce, **Manifesto** será definido automaticamente como essa opção.  
   
- **Arquivo de recurso**  
- Selecione esse botão de opção quando você estiver fornecendo um arquivo de recurso para o projeto. Selecionar essa opção desabilita as opções **Ícone** e **Manifesto**.  
+  **Arquivo de recurso**  
+  Selecione esse botão de opção quando você estiver fornecendo um arquivo de recurso para o projeto. Selecionar essa opção desabilita as opções **Ícone** e **Manifesto**.  
   
- Insira um nome de caminho ou use o botão Procurar (**...** ) para adicionar um arquivo de recurso Win32 ao projeto.  
+  Insira um nome de caminho ou use o botão Procurar (**...** ) para adicionar um arquivo de recurso Win32 ao projeto.  
   
 ## <a name="see-also"></a>Consulte também  
 [Gerenciando propriedades do aplicativo](../../ide/application-properties.md)  

@@ -1,7 +1,7 @@
 ---
 title: 'Lista de verificação: Criar novos tipos de projeto | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f73462d32e0b047e0b2427646cfc5a3709c5e78a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 90b48f5969a422ab9d211bb56900cf1b3b41a78b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461180"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737353"
 ---
 # <a name="checklist-creating-new-project-types"></a>Lista de verificação: criando novos tipos de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [lista de verificação: criar novos tipos de projeto](https://docs.microsoft.com/visualstudio/extensibility/internals/checklist-creating-new-project-types).  
-  
 Você deve concluir várias tarefas para criar um novo tipo de projeto. A lista de verificação a seguir fornece um guia para essas tarefas.  
   
 1.  A funcionalidade para o novo tipo de projeto de design. Para obter mais informações, consulte [decisões de Design de tipo de projeto](../../extensibility/internals/project-type-design-decisions.md).  

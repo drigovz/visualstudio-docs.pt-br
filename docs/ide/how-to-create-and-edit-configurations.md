@@ -20,18 +20,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa3aaa197f392d300e8787d582314846e789f47
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2d3f6b271eb6b9b663e30953fa597fb7d8cec6ac
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808786"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348520"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Como criar e editar configurações
 
 É possível compilar várias configurações de build para uma solução. Por exemplo, é possível configurar um build de depuração que seus testadores podem usar para localizar e corrigir problemas, e é possível configurar diferentes tipos de builds que podem ser distribuídos a diferentes clientes.
 
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Criar e editar configurações no Visual Studio para Mac](/visualstudio/mac/create-and-edit-configurations).
 
 ## <a name="create-build-configurations"></a>Configurações de build
 
@@ -127,3 +128,4 @@ Na caixa de diálogo **Configuration Manager** é possível usar a lista suspens
 - [Compreender configurações de build](../ide/understanding-build-configurations.md)
 - [Criar e limpar projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Gerenciar propriedades do projeto e da solução](managing-project-and-solution-properties.md)
+- [Criar e editar configurações (Visual Studio para Mac)](/visualstudio/mac/create-and-edit-configurations)

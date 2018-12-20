@@ -1,7 +1,7 @@
 ---
 title: 'DA0011: CompareTo dispendioso | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,15 +16,15 @@ f1_keywords:
 - vs.performance.rules.DA0011
 ms.assetid: 239a381d-0d97-4367-8668-746c93f5af2c
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9958e9ec729591aa89c97d4f1d23a819e7b7eeb6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af5797a9e3939d3163d6d1cee9719f38036543ab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475660"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720854"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: função CompareTo dispendiosa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

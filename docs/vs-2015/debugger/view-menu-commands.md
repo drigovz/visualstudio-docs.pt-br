@@ -1,7 +1,7 @@
 ---
 title: Exibir comandos de Menu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - View menu commands
 ms.assetid: 86a66cce-3436-4532-bc3e-3b0662c8b198
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2f4f1f1ace7d633b5b0a6d8b333063902eae086
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bbe9d1e7e95a4eac362dc9988eb353967e0a10f9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465405"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765147"
 ---
 # <a name="view-menu-commands"></a>Comandos do menu Exibir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [comandos do Menu Exibir](https://docs.microsoft.com/visualstudio/debugger/view-menu-commands).  
-  
 O **exibição** menu fornece comandos para controlar o Spy + + interface do usuário.  
   
  **Fonte**  

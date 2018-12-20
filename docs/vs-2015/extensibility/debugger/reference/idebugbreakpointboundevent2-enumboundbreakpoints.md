@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointBoundEvent2::EnumBoundBreakpoints | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: 1f588feb-522e-488d-be92-7bc19b9e3688
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9227fec4392327cd2f414c7d5db0876fd54abfa4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0cd3a74c7d9f3b2a7bc76874c3f64afb44ca277
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463029"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746144"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugBreakpointBoundEvent2::EnumBoundBreakpoints](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints).  
-  
 Cria um enumerador dos pontos de interrupção que estavam vinculados a este evento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT EnumBoundBreakpoints(   
+HRESULT EnumBoundBreakpoints(   
    IEnumDebugBoundBreakpoints2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumBoundBreakpoints(   
+int EnumBoundBreakpoints(   
    out IEnumDebugBoundBreakpoints2 ppEnum  
 );  
 ```  

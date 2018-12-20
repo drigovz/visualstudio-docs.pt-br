@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e386c052b43ee62ddde0516fa203298fe1babe5
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 3f9cf8c6a75e5f2a517931bf0fd858ea8f8f860c
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089024"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281739"
 ---
 # <a name="n-tier-data-applications-overview"></a>Visão geral dos aplicativos de dados de N camadas
 *N camadas* aplicativos de dados são aplicativos de dados que são separados em várias *camadas*. Aplicativos de n camadas também chamados de "aplicativos distribuídos" e "aplicativos multicamados", separam o processamento em camadas discretas que são distribuídas entre o cliente e o servidor. Quando você desenvolve aplicativos que acessam dados, você deve ter uma separação clara entre as várias camadas que compõem o aplicativo.
@@ -64,7 +64,7 @@ A ilustração a seguir mostra os recursos e tecnologias que estão disponíveis
 A camada intermediária geralmente se conecta à camada de dados usando uma conexão de dados. Esta conexão de dados normalmente é armazenada no componente de acesso de dados.
 
 ## <a name="data-tier"></a>Camada de dados
-O *camada de dados* é basicamente o servidor que armazena dados de um aplicativo (por exemplo, um servidor que executa [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]).
+O *camada de dados* é basicamente o servidor que armazena dados de um aplicativo (por exemplo, um servidor executando o SQL Server).
 
 A ilustração a seguir mostra os recursos e tecnologias que estão disponíveis no Visual Studio e onde eles podem caber na camada de dados de um aplicativo de n camadas.
 

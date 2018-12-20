@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial 3: criar um jogo da memória | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,36 +14,34 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 00484f4cefe196cc26dcb13aadb882c23f1f9e71
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5bd7243e49c447dc8c362b0c98bf2cc7d77d76d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475723"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939482"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutorial 3: criar um jogo da memória
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Tutorial 3: criar um jogo](https://docs.microsoft.com/visualstudio/ide/tutorial-3-create-a-matching-game).  
-  
 Neste tutorial, você cria um jogo da memória, onde o jogador deve combinar pares de ícones ocultos. Você aprenderá como:  
   
--   Armazenar objetos, como ícones, em um objeto `List`.  
+- Armazenar objetos, como ícones, em um objeto `List`.  
   
--   Usar um loop `foreach` no Visual C# ou um loop `For Each` no Visual Basic para iterar pelos itens em uma lista.  
+- Usar um loop `foreach` no Visual C# ou um loop `For Each` no Visual Basic para iterar pelos itens em uma lista.  
   
--   Acompanhar o estado de um formulário usando variáveis de referência.  
+- Acompanhar o estado de um formulário usando variáveis de referência.  
   
--   Criar um manipulador de eventos para responder a eventos que você pode usar com vários objetos.  
+- Criar um manipulador de eventos para responder a eventos que você pode usar com vários objetos.  
   
--   Criar um temporizador que faça a contagem regressiva e dispare um evento logo depois que ele for iniciado.  
+- Criar um temporizador que faça a contagem regressiva e dispare um evento logo depois que ele for iniciado.  
   
- Quando terminar este tutorial, seu programa se parecerá com a imagem a seguir.  
+  Quando terminar este tutorial, seu programa se parecerá com a imagem a seguir.  
   
- ![Jogo criado neste tutorial](../ide/media/express-finishedgame.png "Express_FinishedGame")  
-Jogo que você cria neste tutorial  
+  ![Jogo criado neste tutorial](../ide/media/express-finishedgame.png "Express_FinishedGame")  
+  Jogo que você cria neste tutorial  
   
- Para baixar uma versão completa do exemplo, consulte [Complete Matching Game tutorial sample (Exemplo de tutorial completo de jogo da memória)](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).  
+  Para baixar uma versão completa do exemplo, consulte [Complete Matching Game tutorial sample (Exemplo de tutorial completo de jogo da memória)](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).  
   
 > [!NOTE]
 >  Neste tutorial, o Visual C# e o Visual Basic são abordados, portanto concentre-se nas informações específicas da linguagem de programação que você está usando.  

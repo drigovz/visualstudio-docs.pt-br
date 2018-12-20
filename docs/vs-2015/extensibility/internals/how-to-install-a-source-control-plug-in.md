@@ -1,7 +1,7 @@
 ---
 title: 'Como: instalar um plug-in de controle do código-fonte | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a89244c35c504c3c98ef02e2360ab2daa2f660f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f151653387c95e77d775bfc9f37cbdfb9f824e7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465250"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741627"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Como: instalar um plug-in de controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: instalar um plug-in de controle do código-fonte](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-install-a-source-control-plug-in).  
-  
 Criando um controle de fonte plug-in envolve três etapas:  
   
 1.  Crie uma DLL com as funções definidas na seção de referência de API de plug-in de controle do código-fonte desta documentação.  
@@ -100,16 +98,16 @@ Criando um controle de fonte plug-in envolve três etapas:
 ## <a name="how-an-ide-locates-the-dll"></a>Como um IDE localiza a DLL  
  O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE tem duas maneiras de localizar a fonte de DLL de plug-in de controle:  
   
--   Localize o controle de fonte padrão plug-in e conectá-lo silenciosamente.  
+- Localize o controle de fonte padrão plug-in e conectá-lo silenciosamente.  
   
--   Localize fonte registrada de todos os plug-ins de controle, do qual o usuário escolhe um.  
+- Localize fonte registrada de todos os plug-ins de controle, do qual o usuário escolhe um.  
   
- Para localizar a DLL da primeira forma, o IDE se parece na subchave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider para a entrada ProviderRegKey. O valor desta entrada aponta para outra subchave. O IDE, em seguida, procura por uma entrada denominada SccServerPath nessa segunda subchave sob HKEY_LOCAL_MACHINE. O valor desta entrada aponta o IDE para a DLL.  
+  Para localizar a DLL da primeira forma, o IDE se parece na subchave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider para a entrada ProviderRegKey. O valor desta entrada aponta para outra subchave. O IDE, em seguida, procura por uma entrada denominada SccServerPath nessa segunda subchave sob HKEY_LOCAL_MACHINE. O valor desta entrada aponta o IDE para a DLL.  
   
 > [!NOTE]
 >  O IDE não carrega DLLs de caminhos relativos (por exemplo,.\NewProvider.DLL). Especifique um caminho completo para a DLL (por exemplo, c:\Providers\NewProvider.DLL). Isso reforça a segurança do IDE, impedindo que o carregamento de DLLs de plug-in não autorizados ou delegadas.  
   
- Para localizar a DLL da segunda forma, o IDE se parece em todas as entradas na subchave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders *.* Cada entrada tem um nome e um valor. O IDE exibirá uma lista desses nomes para o usuário *.* Quando o usuário escolhe um nome, o IDE localiza o valor para o nome selecionado que aponta para uma subchave. O IDE procurará uma entrada denominada SccServerPath nessa subchave sob HKEY_LOCAL_MACHINE. O valor desta entrada aponta o IDE para a DLL correta.  
+ Para localizar a DLL da segunda forma, o IDE se parece em todas as entradas na subchave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders<em>.</em> Cada entrada tem um nome e um valor. O IDE exibirá uma lista desses nomes para o usuário<em>.</em> Quando o usuário escolhe um nome, o IDE localiza o valor para o nome selecionado que aponta para uma subchave. O IDE procurará uma entrada denominada SccServerPath nessa subchave sob HKEY_LOCAL_MACHINE. O valor desta entrada aponta o IDE para a DLL correta.  
   
  Um plug-in de controle de origem precisa dar suporte a ambas as maneiras de localizar a DLL e, consequentemente, definir ProviderRegKey, substituindo qualquer definição anterior. Mais importante, ele deve se adicionar à lista de InstalledSccProviders para que o usuário possa ter uma opção do qual plug-in de controle do código-fonte para usar.  
   

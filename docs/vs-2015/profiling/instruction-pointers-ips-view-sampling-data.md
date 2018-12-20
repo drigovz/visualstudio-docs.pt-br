@@ -1,7 +1,7 @@
 ---
 title: Exibição de IPs (ponteiros de instrução) – Dados de amostragem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - Instruction Pointers view
 ms.assetid: c7f647bb-c5a3-4708-9f9d-33c0fd6e2e96
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d23c04906c9f1d3cd28ded7b88ee225c13240f53
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7bd936d9483469900a679ad08aada4bcf9235e78
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460590"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721964"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>Exibição de IPs (ponteiros de instrução) – Dados de amostragem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de ponteiros de instrução (IPs) - dados de amostragem](https://docs.microsoft.com/visualstudio/profiling/instruction-pointers-ips-view-sampling-data).  
-  
 A exibição de IPs dos dados de amostragem lista os dados de desempenho das instruções de assembly que estavam diretamente em execução quando as amostras foram coletadas na criação de perfil.  
   
 > [!NOTE]

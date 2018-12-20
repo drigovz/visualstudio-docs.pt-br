@@ -1,7 +1,7 @@
 ---
 title: 'Etapa 9: examinar, comentar e testar o código | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,45 +14,43 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e520d77a09ac9a1b1f19670c6638d064430af80f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f27cbc54839318674ae41385bd39876c6c513f1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464017"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836951"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Etapa 9: Revisar, comentar e testar o código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [etapa 9: Examinar, comentar e testar o código](https://docs.microsoft.com/visualstudio/ide/step-9-review-comment-and-test-your-code).  
-  
 Em seguida, adicione um comentário ao seu código. Um comentário é uma observação que não modifica a maneira que o programa se comporta. Facilita para alguém que esteja lendo o código para entender o que ele faz. Recomendamos que você tenha o hábito de adicionar comentários ao seu código. No Visual C#, duas barras (//) marcam uma linha como um comentário. No Visual Basic, aspas simples (') são usadas para marcar uma linha como um comentário. Após adicionar um comentário, teste seu programa. É uma prática recomendável executar e testar seu código com frequência enquanto trabalha em seus projetos e, portanto, você pode capturar e corrigir os problemas no início, antes que o código fique mais complicado. Isso é chamado de *teste iterativo*.  
   
  Você acabou de criar algo que funciona e que, embora ainda não esteja pronto, já pode carregar uma imagem. Antes de adicionar um comentário ao seu código e testá-lo, leva tempo para examinar os conceitos de código, pois você usará esses conceitos frequentemente:  
   
--   Quando você clica duas vezes no botão **Mostrar uma imagem** no Designer de Formulários do Windows, o IDE adiciona automaticamente um *método* para o código do seu programa.  
+- Quando você clica duas vezes no botão **Mostrar uma imagem** no Designer de Formulários do Windows, o IDE adiciona automaticamente um *método* para o código do seu programa.  
   
--   Os métodos são a forma como você organiza seu código: é como o código é agrupado.  
+- Os métodos são a forma como você organiza seu código: é como o código é agrupado.  
   
--   Na maioria das vezes, um método faz um pequeno número de coisas em uma ordem específica, como a forma como o seu método `showButton_Click()` mostra uma caixa de diálogo e carrega uma imagem.  
+- Na maioria das vezes, um método faz um pequeno número de coisas em uma ordem específica, como a forma como o seu método `showButton_Click()` mostra uma caixa de diálogo e carrega uma imagem.  
   
--   Um método é composto por *declarações* de código, ou linhas de código. Pense em um método como uma maneira de empacotar as instruções de código juntas.  
+- Um método é composto por *declarações* de código, ou linhas de código. Pense em um método como uma maneira de empacotar as instruções de código juntas.  
   
--   Quando um método é executado, ou *chamado*, as instruções no método são excluídas em ordem, uma após a outra, começando com a primeira.  
+- Quando um método é executado, ou *chamado*, as instruções no método são excluídas em ordem, uma após a outra, começando com a primeira.  
   
-     A seguir veja um exemplo de uma declaração.  
+   A seguir veja um exemplo de uma declaração.  
   
-    ```csharp  
-    pictureBox1.Load(openFileDialog1.FileName);  
-    ```  
+  ```csharp  
+  pictureBox1.Load(openFileDialog1.FileName);  
+  ```  
   
-    ```vb  
-    pictureBox1.Load(openFileDialog1.FileName)  
-    ```  
+  ```vb  
+  pictureBox1.Load(openFileDialog1.FileName)  
+  ```  
   
-     As instruções fazem com que seus programas funcionem. No Visual C#, uma instrução sempre termina em um ponto-e-vírgula. No Visual Basic, o final de uma linha é o fim de uma declaração. (Nenhuma vírgula é necessária no Visual Basic.) A instrução anterior diz ao controle `PictureBox` para carregar o arquivo que o usuário selecionou com o componente **OpenFileDialog**.  
+   As instruções fazem com que seus programas funcionem. No Visual C#, uma instrução sempre termina em um ponto-e-vírgula. No Visual Basic, o final de uma linha é o fim de uma declaração. (Nenhuma vírgula é necessária no Visual Basic.) A instrução anterior diz ao controle `PictureBox` para carregar o arquivo que o usuário selecionou com o componente **OpenFileDialog**.  
   
- ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para uma versão em vídeo deste tópico, consulte o [Tutorial 1: criar um Visualizador de Imagens no Visual Basic – Vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205216) ou o [Tutorial 1: criar um Visualizador de Imagens em C# – Vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.  
+  ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para uma versão em vídeo deste tópico, consulte o [Tutorial 1: criar um Visualizador de Imagens no Visual Basic – Vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205216) ou o [Tutorial 1: criar um Visualizador de Imagens em C# – Vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.  
   
 ### <a name="to-add-comments"></a>Para adicionar comentários  
   

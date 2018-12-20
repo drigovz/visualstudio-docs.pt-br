@@ -1,7 +1,7 @@
 ---
 title: Gerenciamento de titular de bloqueio de documentos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0cf3e532a7a20be746405a7c5f90bb2c345a36cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8eaeb8529f570db112bf43813fe20339f3bca7c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472676"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786295"
 ---
 # <a name="document-lock-holder-management"></a>Gerenciamento de proprietário de bloqueio de documento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [gerenciamento de titular de bloqueio de documento](https://docs.microsoft.com/visualstudio/extensibility/document-lock-holder-management).  
-  
 A tabela de documento em execução (RDT) mantém uma contagem de documentos abertos e todos eles têm os bloqueios de edição. Você pode colocar um bloqueio de edição em um documento no RDT quando é editado por meio de programação em segundo plano sem que o usuário ver um documento aberto em uma janela do documento. Essa funcionalidade é frequentemente usada pelos designers que modificar vários arquivos através de uma interface gráfica do usuário.  
   
 ## <a name="document-lock-holder-scenarios"></a>Cenários de titular de bloqueio de documento  

@@ -1,7 +1,7 @@
 ---
 title: 'Como: usar um visualizador | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,14 +26,14 @@ helpviewer_keywords:
 - visualizers, about visualizers
 ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
-ms.author: susanno
+ms.author: mikejo
 manager: douge
-ms.openlocfilehash: cc158e0d84db56bc26262d60acd0fb8e92e47188
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f50dba2f236127bd2e155ea13cb8646f18de0e92
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467660"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721913"
 ---
 # <a name="how-to-use-a-visualizer"></a>Como usar um visualizador
 Você pode usar um visualizador para exibir o conteúdo de uma variável ou objeto de uma maneira que seja mais significativa para o tipo de dados. Você pode usar visualizadores de **DataTips**, um **inspeção** janela, o **Autos** janela, ou o **Locals** janela.  

@@ -1,7 +1,7 @@
 ---
 title: UDT | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ helpviewer_keywords:
 - structs [C++]
 ms.assetid: f12459dd-c64d-4cc9-9ee3-a56e19e9e573
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91b552dc16ea71da41322bbdaee242c9f950a022
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7be6e104403a2de47960fb9af35f3e70b5092dd1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475972"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729173"
 ---
 # <a name="udt"></a>UDT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [UDT](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/udt).  
-  
 Cada classe, estrutura e união é identificado por um `SymTagUDT` símbolo. Cada membro, função, dados, ou tipo aninhado e cada classe base, aparece como um filho de classe do tipo definido pelo usuário (UDT).  
   
 ## <a name="properties"></a>Propriedades  

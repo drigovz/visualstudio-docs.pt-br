@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_arrayindextypeid | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_arrayIndexTypeId method
 ms.assetid: 124f86e2-6f66-4541-87c3-799f435b731e
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a47eda45032bbab591b5ea7c8e9ab427bb26aa93
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 01e3a27aca2bfd80c0bfe6185f1dce6c986d286d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463397"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760612"
 ---
 # <a name="idiasymbolgetarrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_arrayindextypeid](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-arrayindextypeid).  
-  
 Recupera o identificador de tipo de índice de matriz do símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_arrayIndexTypeId (   
+HRESULT get_arrayIndexTypeId (   
    DWORD* pRetVal  
 );  
 ```  

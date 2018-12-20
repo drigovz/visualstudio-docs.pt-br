@@ -1,7 +1,7 @@
 ---
 title: Interfaces (VSPackage de controle do código-fonte) e serviços relacionados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2aa25cc89bb3832aec6cfdf9a57c135147a1d86f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f308c0d8669bc8950578ffc615ebe64b91a4ea7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472822"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764322"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Serviços e interfaces relacionados (VSPackage de controle do código-fonte)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Interfaces (VSPackage de controle do código-fonte) e serviços relacionados](https://docs.microsoft.com/visualstudio/extensibility/internals/related-services-and-interfaces-source-control-vspackage).  
-  
 Esta seção lista todos o controle de fonte interfaces relacionadas à VSPackage no [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. O VSPackage de controle de origem implementa algumas dessas interfaces e usa outras pessoas para realizar tarefas de controle do código-fonte.  
   
 ## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Interfaces implementadas por e para os VSPackages de controle do código-fonte  

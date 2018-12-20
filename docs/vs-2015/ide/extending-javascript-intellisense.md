@@ -1,7 +1,7 @@
 ---
 title: Estendendo o JavaScript IntelliSense | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bee6a4f6cfdcdd53583fae858186ee8cc1da7ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465849"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867060"
 ---
 # <a name="extending-javascript-intellisense"></a>Estendendo JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [documentação do Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
-  
 O recurso de extensibilidade JavaScript IntelliSense permite que você personalize os resultados do IntelliSense no editor de JavaScript para bibliotecas de terceiros. Isso pode melhorar a experiência de desenvolvedores que usam essas bibliotecas.  
   
  O serviço de linguagem JavaScript fornece recursos do IntelliSense para bibliotecas de JavaScript de terceiros que são adicionadas a um projeto. Para a maioria das bibliotecas, preenchimento de declaração é fornecido automaticamente pelo serviço de linguagem. A ilustração a seguir mostra um exemplo de conclusão de instrução:  
@@ -86,13 +84,13 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Em seu código de extensão, você pode criar manipuladores para os seguintes tipos de evento usando `addEventListener`:  
   
--   `statementcompletion`, que adiciona um manipulador para um evento de conclusão de instrução. Preenchimento de declaração fornece uma lista de membros para um tipo específico que aparece depois que você digita um caractere especial como um ponto (.) ou uma lista de identificadores que aparece enquanto você digita ou quando você pressiona CTRL + J. O manipulador recebe um objeto de evento do tipo `CompletionEvent`, que suporta os seguintes membros: [itens de propriedade](#Items), [propriedade de destino](#Target), [targetName propriedade](#TargetName), e [definir o escopo de propriedade](#Scope).  
+- `statementcompletion`, que adiciona um manipulador para um evento de conclusão de instrução. Preenchimento de declaração fornece uma lista de membros para um tipo específico que aparece depois que você digita um caractere especial como um ponto (.) ou uma lista de identificadores que aparece enquanto você digita ou quando você pressiona CTRL + J. O manipulador recebe um objeto de evento do tipo `CompletionEvent`, que suporta os seguintes membros: [itens de propriedade](#Items), [propriedade de destino](#Target), [targetName propriedade](#TargetName), e [definir o escopo de propriedade](#Scope).  
   
--   `signaturehelp`, que adiciona um manipulador para informações de parâmetro do IntelliSense. Informações de parâmetro fornece informações sobre o número, nomes e tipos de parâmetros necessários para uma função. O manipulador recebe um objeto de evento do tipo `SignatureHelpEvent`, que suporta os seguintes membros: [propriedade de destino](#Target), [parentObject propriedade](#ParentObject), [functionComments propriedade](#FunctionComments), [functionHelp propriedade](#FunctionHelp).  
+- `signaturehelp`, que adiciona um manipulador para informações de parâmetro do IntelliSense. Informações de parâmetro fornece informações sobre o número, nomes e tipos de parâmetros necessários para uma função. O manipulador recebe um objeto de evento do tipo `SignatureHelpEvent`, que suporta os seguintes membros: [propriedade de destino](#Target), [parentObject propriedade](#ParentObject), [functionComments propriedade](#FunctionComments), [functionHelp propriedade](#FunctionHelp).  
   
--   `statementcompletionhint`, que adiciona um manipulador para informações rápidas do IntelliSense. A caixa pop-up de informações rápidas mostra a declaração completa de identificadores em seu código. O manipulador recebe um objeto de evento do tipo `CompletionHintEvent`, que suporta os seguintes membros: [completionItem propriedade](#CompletionItem), e [symbolHelp propriedade](#SymbolHelp).  
+- `statementcompletionhint`, que adiciona um manipulador para informações rápidas do IntelliSense. A caixa pop-up de informações rápidas mostra a declaração completa de identificadores em seu código. O manipulador recebe um objeto de evento do tipo `CompletionHintEvent`, que suporta os seguintes membros: [completionItem propriedade](#CompletionItem), e [symbolHelp propriedade](#SymbolHelp).  
   
- Para obter exemplos que mostram os recursos como preenchimento de declaração, informações de parâmetro e informações rápidas do IntelliSense, consulte [usando o IntelliSense](../ide/using-intellisense.md).  
+  Para obter exemplos que mostram os recursos como preenchimento de declaração, informações de parâmetro e informações rápidas do IntelliSense, consulte [usando o IntelliSense](../ide/using-intellisense.md).  
   
 > [!NOTE]
 >  No JavaScript, informações rápidas refere-se à caixa pop-up que aparece à direita de uma lista de conclusão. Você não é possível invocar informações rápidas.  

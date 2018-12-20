@@ -1,7 +1,7 @@
 ---
 title: Registrar o programa | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d522a4c422994d174d358450f9eb210762d262a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e26e15e17e69e8bf182d23161cb17ddbd5de0035
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465735"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797098"
 ---
 # <a name="registering-the-program"></a>Registrando o programa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [registrar o programa](https://docs.microsoft.com/visualstudio/extensibility/debugger/registering-the-program).  
-  
 Depois que o mecanismo de depuração tiver adquirido uma porta, representado por um [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface, a próxima etapa na habilitação de programa a ser depurado é registrá-lo com a porta. Depois de registrado, o programa está disponível para depuração por um dos seguintes meios:  
   
 -   O processo de anexação, que permite que o depurador obtenha controle total de depuração de um aplicativo em execução.  
@@ -79,7 +77,7 @@ Depois que o mecanismo de depuração tiver adquirido uma porta, representado po
                 if (SUCCEEDED(hr))  
                 {  
                     // pass on the parameters we were given (omitted here)  
-                    hr = spPortEx->LaunchSuspended(/* omitted paramters */,ppDebugProcess)  
+                    hr = spPortEx->LaunchSuspended(/* omitted parameters */,ppDebugProcess)  
                 }  
             }  
         }  

@@ -1,7 +1,7 @@
 ---
 title: Rótulo (depuração de acesso à Interface SDK) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ helpviewer_keywords:
 - Label symbol
 ms.assetid: 8cef7620-5bc8-4500-8bd0-e9e638bccb24
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15d833eb48bdf3fd3adffde0a16eab28705ab276
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43fcc7542e68b3a371bb45997841c0540fec506d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463264"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799178"
 ---
 # <a name="label-debug-interface-access-sdk"></a>Label (SDK de Acesso à Interface de Depuração)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [(Depurar SDK de acesso à Interface) do rótulo](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/label-debug-interface-access-sdk).  
-  
 Um local no código do programa é identificado por um `SymTagLabel` símbolo.  
   
 ## <a name="properties"></a>Propriedades  

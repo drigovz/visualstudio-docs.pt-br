@@ -1,7 +1,7 @@
 ---
 title: Especificar identificadores de arquivo para extensões de nome de arquivo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83bbc57098a68239a1ef26548e9cf05fd31322bb
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d0a4f0547da10a4d519d315000a0f35a19a56287
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587427"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726241"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Especificando identificadores de arquivo para extensões de nome de arquivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [manipuladores de especificação de arquivo para extensões de nome de arquivo](https://docs.microsoft.com/visualstudio/extensibility/specifying-file-handlers-for-file-name-extensions).  
-  
 Há várias maneiras para determinar o aplicativo que lida com um arquivo que tem uma extensão de arquivo específico. Os verbos OpenWithList e OpenWithProgids são duas maneiras de especificar identificadores de arquivo na entrada de registro para a extensão de arquivo.  
   
 ## <a name="openwithlist-verb"></a>Verbo OpenWithList  

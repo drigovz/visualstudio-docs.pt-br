@@ -1,7 +1,7 @@
 ---
 title: Canais (exibição de threads) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - Concurrency Visualizer, Channels (Threads View)
 ms.assetid: 2f798c17-2363-42a4-be94-a5751d208eac
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4b67d4c4b2f3faf6147942b78a23999fdebb294
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: feebccb0905a4e3161484b5c1fe9f0142fa41d53
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473756"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743534"
 ---
 # <a name="channels-threads-view"></a>Canais (exibição de threads)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [canais (exibição Threads)](https://docs.microsoft.com/visualstudio/profiling/channels-threads-view).  
-  
 A Visualização Simultânea mostra quatro tipos de canais: canais de thread, canais de disco, canais de marcador e canais da GPU.  
   
 ## <a name="thread-channels"></a>Canais de thread  

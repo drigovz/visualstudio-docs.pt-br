@@ -1,7 +1,7 @@
 ---
 title: Como escolher eventos de amostragem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,21 +21,19 @@ helpviewer_keywords:
 - performance tools, sample events
 ms.assetid: ce7cb734-80ac-4930-a4ef-e24395e1cc07
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2e00dcc15633e9b62f5db02e321950e4f91814f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96bf47c6bfc28e0939f6feb9fd7999e898c042a1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468046"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734508"
 ---
 # <a name="how-to-choose-sampling-events"></a>Como escolher eventos de amostragem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: escolher eventos de amostragem](https://docs.microsoft.com/visualstudio/profiling/how-to-choose-sampling-events).  
-  
 Por padrão, as ferramentas de criação de perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] coletam dados de desempenho em um intervalo especificado como um número de ciclos de processador que são usados pelo processo analisado. O número padrão de ciclos em um intervalo é de 10.000.000, que é aproximadamente 0,01 segundos em um computador de 1 GH. Você pode alterar o número de ciclos em um intervalo e também pode alterar o evento de amostragem. Os eventos de amostragem a seguir estão disponíveis:  
   
 -   Ciclos do relógio – para problemas associados à CPU.  

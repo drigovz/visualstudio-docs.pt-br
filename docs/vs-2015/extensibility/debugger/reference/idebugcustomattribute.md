@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttribute | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: c5ae41e9-00b9-4cca-871d-b8de9ef390d1
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7891e9be85fbac4f01a81e41dd36195f1ec41cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4230f8db75841e0ae7d990c906fe68cf71af701a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463169"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796903"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugCustomAttribute](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcustomattribute).  
-  
 Essa interface representa um atributo personalizado, e ele pode fornecer o nome, o pai e o tipo de classe do atributo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDebugCustomAttribute : IUnknown  
+IDebugCustomAttribute : IUnknown  
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  

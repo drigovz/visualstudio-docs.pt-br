@@ -1,19 +1,20 @@
 ---
 layout: LandingPage
-author: jasongroce
-ms.author: apexprodleads
+title: Extensibilidade do Visual Studio
+description: Saiba mais sobre a Extensibilidade do Visual Studio.
+author: gregvanl
+ms.author: gregvanl
+ms.date: 10/31/2018
 ms.technology: vs-ide-sdk
 ms.topic: landing-page
-title: Documentação de Extensibilidade do Visual Studio | Microsoft Docs
-description: Saiba mais sobre a Extensibilidade do Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 37f5bfbac42c55a332ddf6f1904e2008d50ae40f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 7a86fb34eb054423127ba2f91b055585a20719b3
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500291"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750739"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Documentação de extensibilidade do Visual Studio
 
@@ -49,7 +50,7 @@ O Visual Studio fornece várias opções de extensibilidade. Você pode estender
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Extensibilidade da Plataforma do Compilador .NET ("Roslyn")</h3>
+                        <h3>Extensibilidade do .NET Compiler Platform (&quot;Roslyn&quot;)</h3>
                     </div>
                 </div>
             </div>

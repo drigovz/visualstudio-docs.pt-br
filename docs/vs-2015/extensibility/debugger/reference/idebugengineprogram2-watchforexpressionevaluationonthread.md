@@ -1,7 +1,7 @@
 ---
 title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7d67290ea7bf88f8cdf01e88444cd69ec25d73a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d283005a4fee97502c160840c2330c9413fb3ac9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462521"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772138"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugEngineProgram2::WatchForExpressionEvaluationOnThread](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread).  
-  
 Permite (ou não) a avaliação da expressão para ocorrer em determinado thread, mesmo se o programa foi interrompido.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT WatchForExpressionEvaluationOnThread(   
+HRESULT WatchForExpressionEvaluationOnThread(   
    IDebugProgram2*       pOriginatingProgram,  
    DWORD                 dwTid,  
    DWORD                 dwEvalFlags,  
@@ -44,7 +42,7 @@ HRESULT WatchForExpressionEvaluationOnThread(
 ```  
   
 ```csharp  
-int WatchForExpressionEvaluationOnThread(   
+int WatchForExpressionEvaluationOnThread(   
    IDebugProgram2       pOriginatingProgram,  
    uint                  dwTid,  
    uint                  dwEvalFlags,  

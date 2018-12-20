@@ -1,7 +1,7 @@
 ---
 title: Depurar aplicativos multi-threaded no Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,21 +24,19 @@ helpviewer_keywords:
 - high-performance debugging
 ms.assetid: 9d175bc2-1d95-4c47-9bc3-9755af968a9c
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff0030baec409ae54dc5ebb219f5419e583a0efd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5b9ff27a8a864d648b5e9c545cee72ee64a4901
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473220"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758435"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicativos multithread no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depurar aplicativos multi-threaded no Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debug-multithreaded-applications-in-visual-studio).  
-  
 Um thread é uma sequência de instruções para que o sistema operacional aloque tempo no processador. Cada processo que está em execução no sistema operacional consiste em pelo menos um thread. Os processos que têm mais de um thread são chamados multithread.  
   
  Os computadores com vários processadores, processadores de vários núcleos ou processos de hyperthreading podem executar vários threads ao mesmo tempo. O processamento paralelo de vários threads pode aumentar melhorar o desempenho do programa, mas também pode tornar a depuração mais difícil porque apresenta a necessidade de manter controle de vários threads.  
@@ -101,16 +99,16 @@ Um thread é uma sequência de instruções para que o sistema operacional aloqu
  [Usando pontos de interrupção](../debugger/using-breakpoints.md)  
  -   Use filtros de ponto de interrupção quando você deseja colocar um ponto de interrupção em um segmento individual.  
   
--   Os pontos de controle permitem que você rastreie a execução do programa sem interrupções. Isso pode ser útil para estudar problemas, como deadlocks.  
+- Os pontos de controle permitem que você rastreie a execução do programa sem interrupções. Isso pode ser útil para estudar problemas, como deadlocks.  
   
- [Threading](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
- Conceitos de segmentação na programação de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], incluindo o código de exemplo.  
+  [Threading](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
+  Conceitos de segmentação na programação de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], incluindo o código de exemplo.  
   
- [Multithreading em componentes](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
- Como usar multithreading em componentes de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+  [Multithreading em componentes](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
+  Como usar multithreading em componentes de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   
- [Suporte de multithreading para código anterior (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
- Conceitos de segmentação e código de exemplo para programadores de C++ que usam o MFC.  
+  [Suporte de multithreading para código anterior (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
+  Conceitos de segmentação e código de exemplo para programadores de C++ que usam o MFC.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurar Threads e processos](../debugger/debug-threads-and-processes.md)   

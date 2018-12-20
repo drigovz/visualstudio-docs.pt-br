@@ -1,7 +1,7 @@
 ---
 title: Configurações e preparação do depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,21 +21,19 @@ helpviewer_keywords:
 - debug builds, setting up
 ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 caps.latest.revision: 40
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42bd81214e013f84b16eaa83d8123a8c09ee38ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d670470158c86fa62c860571779ec701f65a11f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468309"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766285"
 ---
 # <a name="debugger-settings-and-preparation"></a>Preparação e configurações do depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [preparação e configurações do depurador](https://docs.microsoft.com/visualstudio/debugger/debugger-settings-and-preparation).  
-  
 Essa seção descreve as configurações de propriedade relacionadas ao depurador, e a preparação necessária para depurar seu programa com o depurador do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se você criar seu programa no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usando os modelos de projeto, essas configurações serão definidas corretamente para você na configuração de depuração.  
   
  Para obter mais informações, consulte [Como definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md).  

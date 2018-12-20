@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9ebda2068358a43ed942e25d46e58ed2f45d9733
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 18848f0ebd6ffa289ea09553de82f5b9eb893181
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635535"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295833"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Passo a passo: Criar uma lista externa no SharePoint usando dados corporativos
 
@@ -85,7 +85,7 @@ Você precisa dos seguintes componentes para concluir esta instrução passo a p
 
 2. Adicione uma conexão ao banco de dados de exemplo AdventureWorks do SQL Server.
 
-     Para obter mais informações, consulte [Adicionar/Modificar Conexão (Microsoft SQL Server)](http://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3).
+     Para obter mais informações, consulte [Adicionar/Modificar Conexão (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3).
 
 3. Na **Gerenciador de soluções**, escolha o nó do projeto.
 
@@ -232,12 +232,12 @@ Para habilitar o serviço BDC exibir os contatos em uma lista, você deve adicio
 
 5. No `ContactService` classe, substitua o `ReadList` método com o código a seguir. Esse código executa as seguintes tarefas:
 
-    - Recupera dados da tabela de contatos do banco de dados AdventureWorks.
+   - Recupera dados da tabela de contatos do banco de dados AdventureWorks.
 
-    - Retorna uma lista de entidades de contato para o serviço de BDC.
+   - Retorna uma lista de entidades de contato para o serviço de BDC.
 
-    > [!NOTE]
-    > Substitua o valor da `ServerName` campo com o nome do seu servidor.
+     > [!NOTE]
+     > Substitua o valor da `ServerName` campo com o nome do seu servidor.
 
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

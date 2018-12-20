@@ -1,7 +1,7 @@
 ---
 title: IDebugEngineLaunch2::TerminateProcess | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: f7039e7f-5f57-4222-9ad2-11a66b2da6e0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4417c912aaa1c60af40a1032a2dbaad414d62362
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6967cf6a13e6dfdcefbec46371df75166dcff083
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473226"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767912"
 ---
 # <a name="idebugenginelaunch2terminateprocess"></a>IDebugEngineLaunch2::TerminateProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugEngineLaunch2::TerminateProcess](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugenginelaunch2-terminateprocess).  
-  
 Finaliza um processo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT TerminateProcess (   
+HRESULT TerminateProcess (   
    IDebugProcess2* pProcess  
 );  
 ```  
   
 ```csharp  
-int TerminateProcess (   
+int TerminateProcess (   
    IDebugProcess2 pProcess  
 );  
 ```  

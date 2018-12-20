@@ -1,7 +1,7 @@
 ---
 title: As ferramentas de avaliação para o Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e5679be0c8e479136a72d3377a6e17a7c2cd6e54
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4bf1f79cbba948f170849b6f9e89cb2421ceb9cf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474485"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806237"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Ferramentas de avaliação para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [as ferramentas de avaliação para o Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/evaluation-tools-for-visual-studio).  
-  
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Lista de verificação de habilidade para Visual Studio  
  Use esta lista de verificação para avaliar a qualidade da experiência do usuário para obter detalhes de visual e interação.  
   

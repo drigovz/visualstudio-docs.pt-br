@@ -1,7 +1,7 @@
 ---
 title: Elementos de Design de VSPackage do controle de origem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: edd3f2ff-ca32-4465-8ace-4330493b67bb
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: efc1133a57db0c179fbac05db9f6472237577e9e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 614acd30985df51c7089f93f067e95bd6ec1f12e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474943"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749374"
 ---
 # <a name="source-control-vspackage-design-elements"></a>Elementos de design do VSPackage de controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elementos de Design de VSPackage de controle do código-fonte](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-vspackage-design-elements).  
-  
 Os tópicos nesta seção descrevem a estrutura de controle de fonte de VSPackage deve implementar para integração profunda. Também lista as interfaces e os serviços que o controle de fonte VSPackage podem implementar e as interfaces e os serviços de VSPackage do controle de origem pode usar de outros [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] componentes para dar suporte à sua fonte de modelo e a funcionalidade de controle.  
   
 ## <a name="in-this-section"></a>Nesta seção  

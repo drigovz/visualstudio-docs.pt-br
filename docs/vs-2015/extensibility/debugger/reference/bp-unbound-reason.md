@@ -1,7 +1,7 @@
 ---
 title: BP_UNBOUND_REASON | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 554bdd9def52cfbde5b4fe535f017f762f1c8edc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d533af6d046e6e5f2b4ade9b1ccd3c51b775cffd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461067"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779561"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [BP_UNBOUND_REASON](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-unbound-reason).  
-  
 Fornece o motivo pelo qual que um ponto de interrupção foi desassociado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_BP_UNBOUND_REASON {   
+enum enum_BP_UNBOUND_REASON {   
    BPUR_UNKNOWN           = 0x0000,  
    BPUR_CODE_UNLOADED     = 0x0002,  
    BPUR_BREAKPOINT_REBIND = 0x0003,  
@@ -44,7 +42,7 @@ typedef DWORD BP_UNBOUND_REASON;
 ```  
   
 ```csharp  
-public enum enum_BP_UNBOUND_REASON {   
+public enum enum_BP_UNBOUND_REASON {   
    BPUR_UNKNOWN           = 0x0000,  
    BPUR_CODE_UNLOADED     = 0x0002,  
    BPUR_BREAKPOINT_REBIND = 0x0003,  

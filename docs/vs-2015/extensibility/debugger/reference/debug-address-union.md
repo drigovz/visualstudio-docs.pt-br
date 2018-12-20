@@ -1,7 +1,7 @@
 ---
 title: DEBUG_ADDRESS_UNION | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d33c7b81f077fe95294ead2a89a607a4b9e1a11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0bff5235224b0bc93ebe63b7b77b812bb54e0845
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461916"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754848"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DEBUG_ADDRESS_UNION](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/debug-address-union).  
-  
 Descreve os diferentes tipos de endereços.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -96,12 +94,12 @@ public struct DEBUG_ADDRESS_UNION {
  [C++] O nome da união.  
   
  unionmember  
- [Somente c#] Esse valor precisa ser empacotado para o tipo de estrutura apropriada com base em `dwKind`. Consulte os comentários para a associação entre `dwKind` e a interpretação da união.  
+ [C# somente] Esse valor precisa ser empacotado para o tipo de estrutura apropriada com base em `dwKind`. Consulte os comentários para a associação entre `dwKind` e a interpretação da união.  
   
 ## <a name="remarks"></a>Comentários  
  Essa estrutura é parte do [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estruturar e representa um dos vários tipos diferentes de endereços (o `DEBUG_ADDRESS` estrutura é preenchida por uma chamada para o [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) método).  
   
- [Somente c#] A tabela a seguir mostra como interpretar o `unionmember` membro para cada tipo de endereço. O exemplo mostra como isso é feito para um tipo de endereço.  
+ [C# somente] A tabela a seguir mostra como interpretar o `unionmember` membro para cada tipo de endereço. O exemplo mostra como isso é feito para um tipo de endereço.  
   
 |`dwKind`|`unionmember` interpretado como|  
 |--------------|----------------------------------|  

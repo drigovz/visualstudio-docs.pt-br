@@ -1,7 +1,7 @@
 ---
 title: Editor de Imagens | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49149fcae2afa25c22132f23298d3dea6bccf60f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 748d58ec8446841242fdf7b5b990eebe90df5ba1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473848"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185764"
 ---
 # <a name="image-editor"></a>Editor de imagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Editor de imagens](https://docs.microsoft.com/visualstudio/designers/image-editor).  
-  
 Este documento descreve como trabalhar com o Editor de Imagens do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para exibir e modificar os recursos de textura e imagens.  
   
  Você pode usar o Editor de Imagens para trabalhar com os tipos de formatos de imagem e com textura avançada que são usados no desenvolvimento de aplicativos DirectX, incluindo o suporte para formatos de arquivos de imagem populares e codificações de cor, recursos como canais alfa e mapeamento de MIP e muitos dos formatos de textura altamente comprimidos e de aceleração de hardware com suporte no DirectX.  
@@ -225,7 +223,7 @@ Este documento descreve como trabalhar com o Editor de Imagens do [!INCLUDE[vspr
 |----------|----------------|  
 |Todas as ferramentas e seleções|**Girar por**<br /> Define a quantidade, em graus, que o efeito da seleção ou ferramenta é girado no sentido horário.|  
 |**Lápis**, **Pincel**, **Spray**, **Borracha**|**Espessura**<br /> Define o tamanho da área afetada pela ferramenta.|  
-|**Texto**|**Antialias**<br /> Desenha o texto com bordas suavizadas. Isso fornece ao texto uma aparência mais suave.<br /><br /> **Value**<br /> O texto a ser desenhado.<br /><br /> **Fonte**<br /> A fonte usada para desenhar o texto.<br /><br /> **Size**<br /> O tamanho do texto.<br /><br /> **Negrito**<br /> Transforma a fonte em negrito.<br /><br /> **Itálico**<br /> Transforma a fonte em itálico.<br /><br /> **Sublinhado**<br /> Transforma a fonte em sublinhado.|  
+|**Texto**|**Antialias**<br /> Desenha o texto com bordas suavizadas. Isso fornece ao texto uma aparência mais suave.<br /><br /> **Valor**<br /> O texto a ser desenhado.<br /><br /> **Fonte**<br /> A fonte usada para desenhar o texto.<br /><br /> **Size**<br /> O tamanho do texto.<br /><br /> **Negrito**<br /> Transforma a fonte em negrito.<br /><br /> **Itálico**<br /> Transforma a fonte em itálico.<br /><br /> **Sublinhado**<br /> Transforma a fonte em sublinhado.|  
 |**Primitivo 2D**|**Antialias**<br /> Desenha primitivos com bordas suavizadas. Isso concede ao texto uma aparência mais suave.<br /><br /> **Espessura**<br /> Define a espessura da linha de que forma o limite do primitivo.<br /><br /> **Raio X**<br /> (Somente retângulo arredondado) Define o raio de arredondamento para as bordas superior e inferior do primitivo.<br /><br /> **Raio Y**<br /> (Somente retângulo arredondado) Define o raio de arredondamento para as bordas esquerda e direita do primitivo.|  
 |**Lápis**, **Pincel**, **Spray**, **Primitivo 2D**|**Canais**<br /> Habilita ou desabilita os canais de cor específicos para exibição e desenho. Se a **Exibição** for definida como um canal de cor específico, esse canal estará visível na imagem; caso contrário, ele não será visível. Se **Desenhar** estiver definido para um canal de cor específico, tal canal será afetado por operações de desenho; caso contrário, ele não será.|  
 |**Seleção de Varinha**, **Preenchimento**|**Tolerância**<br /> Define a diferença máxima entre cores adjacentes dentro da qual elas são consideradas semelhantes, para que cores menos ou mais semelhantes façam parte da região afetada ou selecionada. Por padrão, o valor é 32, o que significa que pixels adjacentes em 32 tons (mais claros ou mais escuros) da cor original são considerados como parte da região.|  

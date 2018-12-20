@@ -1,7 +1,7 @@
 ---
 title: Geração de texto de tempo de execução com modelos de texto T4 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c56b0b91301defaf08fb81c87e9eb070a9e5458
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920125"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Geração de texto de tempo de execução com modelos de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [geração de texto de tempo de execução com modelos de texto T4](https://docs.microsoft.com/visualstudio/modeling/run-time-text-generation-with-t4-text-templates).  
-  
 Você pode gerar cadeias de caracteres de texto em seu aplicativo em tempo de execução usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modelos de texto de tempo de execução. O computador em que o aplicativo é executado não precisa ter [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Modelos de tempo de execução são chamados de "pré-processado modelos de texto" porque o tempo de compilação, o modelo gera um código que é executado no tempo de execução.  
   
  Cada modelo é uma mistura do texto como ele aparecerá na cadeia de caracteres gerada e fragmentos de código do programa. Os fragmentos de programa fornecem valores para as partes variáveis da cadeia de caracteres e também controlam partes Condicionadas e repetidas.  
@@ -297,17 +295,17 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>Padrão de herança: fragmentos em métodos de Base  
  O padrão usado no exemplo a seguir, observe os seguintes pontos:  
   
--   A classe base `SharedFragments` define os métodos dentro de blocos de recurso de classe `<#+ ... #>`.  
+- A classe base `SharedFragments` define os métodos dentro de blocos de recurso de classe `<#+ ... #>`.  
   
--   A classe base não contém nenhum texto livre. Em vez disso, todos os seus blocos de texto ocorrem dentro de métodos da classe de recurso.  
+- A classe base não contém nenhum texto livre. Em vez disso, todos os seus blocos de texto ocorrem dentro de métodos da classe de recurso.  
   
--   A classe derivada chama os métodos definidos na `SharedFragments`.  
+- A classe derivada chama os métodos definidos na `SharedFragments`.  
   
--   O aplicativo chama o `TextTransform()` método da classe derivada, mas não transforma a classe base `SharedFragments`.  
+- O aplicativo chama o `TextTransform()` método da classe derivada, mas não transforma a classe base `SharedFragments`.  
   
--   As classes base e derivadas são modelos de texto de tempo de execução: ou seja, o **Custom Tool** estiver definida como **TextTemplatingFilePreprocessor**.  
+- As classes base e derivadas são modelos de texto de tempo de execução: ou seja, o **Custom Tool** estiver definida como **TextTemplatingFilePreprocessor**.  
   
- **SharedFragments.tt:**  
+  **SharedFragments.tt:**  
   
 ```csharp  
 <#@ template language="C#" #>  

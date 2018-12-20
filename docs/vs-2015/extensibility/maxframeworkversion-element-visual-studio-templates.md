@@ -1,7 +1,7 @@
 ---
 title: Elemento MaxFrameworkVersion (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7be6bf858130310f3b7a13078482746edf74a65a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5201d42bddb02eade61546ee61ae99283347082
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472808"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778170"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>Elemento MaxFrameworkVersion (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento MaxFrameworkVersion (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/maxframeworkversion-element-visual-studio-templates).  
-  
 Especifica a versão máxima do .NET Framework que é necessário para o modelo. Determina se o modelo é exibido na **modelos** seção o **adicionar novo projeto** com base no valor selecionado na caixa de diálogo, o **versão do Framework de destino** caixa do **adicionar novo projeto** caixa de diálogo.  
   
  \<VSTemplate >  

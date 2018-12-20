@@ -1,22 +1,23 @@
 ---
-title: Trabalhando com C++ e Python
+title: Escrever extensões do C++ para o Python
 description: Um passo a passo da criação de uma extensão em C++ para Python usando Visual Studio, CPython e PyBind11, incluindo uma depuração de modo misto.
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60f4081f205b160ad74dca52dec68a10d36e43fd
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 437cd7f926465b4a9c4986f0eeb4b30e53936895
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995970"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053471"
 ---
 # <a name="create-a-c-extension-for-python"></a>Criar uma extensão do C++ para o Python
 
@@ -101,6 +102,8 @@ Para obter mais informações, confira [Instalar o suporte para Python para Visu
 
 Siga as instruções nesta seção para criar dois projetos de C++ idênticos chamados "superfastcode" e "superfastcode2". Posteriormente, você usará em cada projeto formas diferentes de expor o código C++ para Python.
 
+1. Verifique se a variável de ambiente `PYTHONHOME` está definida para o interpretador do Python que você deseja usar. Os projetos do C++ no Visual Studio dependem dessa variável para localizar os arquivos, como *python.h*, que são usados ao criar uma extensão do Python.
+
 1. Clique com o botão direito do mouse na solução em **Gerenciador de Soluções** e escolha **Adicionar** > **Novo Projeto**. Uma solução do Visual Studio pode conter os projetos Python e C++ juntos (essa é uma das vantagens de usar o Visual Studio para Python).
 
 1. Pesquise por "C++", selecione **Projeto vazio**, especifique o nome "superfastcode" ("superfastcode2" para o segundo projeto) e selecione **OK**.
@@ -133,7 +136,7 @@ Siga as instruções nesta seção para criar dois projetos de C++ idênticos ch
     > Se a guia C/C++ não for exibida nas propriedades do projeto, isso indicará que o projeto não contém nenhum arquivo que ele identifica como arquivos de origem do C/C++. Essa condição poderá ocorrer se você criar um arquivo de origem sem uma extensão *.c* ou *.cpp*. Por exemplo, se você inseriu `module.coo` em vez de `module.cpp` acidentalmente na nova caixa de diálogo de item anteriormente, o Visual Studio criará o arquivo, mas não definirá o tipo de arquivo como “Código C/C+”, que é o que ativa a guia de propriedades do C/C++. Essa identificação incorreta continuará acontecendo mesmo se você renomear o arquivo com `.cpp`. Para configurar o tipo de arquivo corretamente, clique com o botão direito do mouse no arquivo no **Gerenciador de Soluções**, escolha **Propriedades** e, em seguida, defina **Tipo de Arquivo** como **Código C/C++**.
 
     > [!Warning]
-    > Sempre defina a opção **C/C++** > **Geração de Código** > **Biblioteca de Tempo de Execução** para **DLL multithread (/MD)**, mesmo para uma configuração de depuração, porque os binários Python que não são de depuração são criados com essa configuração. Se você definir a opção **DLL de depuração multithread (/MDd)**, a criação de uma configuração de **Depuração** gerará o erro **C1189: Py_LIMITED_API é incompatível com Py_DEBUG, Py_TRACE_REFS e Py_REF_DEBUG**. Além disso, se você remover `Py_LIMITED_API` para evitar o erro de build, o Python falhará ao tentar importar o módulo. (A falha ocorre na chamada da DLL a `PyModule_Create`, conforme descrito adiante, com a mensagem de saída **Erro fatal do Python: PyThreadState_Get: nenhum thread atual**.)
+    > Sempre defina a opção **C/C++** > **Geração de Código** > **Biblioteca de Tempo de Execução** para **DLL multithread (/MD)**, mesmo para uma configuração de depuração, porque os binários Python que não são de depuração são criados com essa configuração. Se, por acaso, você definir a opção **DLL de Depuração Multi-threaded (/MDd)**, a criação de uma configuração **Depuração** produzirá o erro **C1189: Py_LIMITED_API é incompatível com Py_DEBUG, com Py_TRACE_REFS e com Py_REF_DEBUG**. Além disso, se você remover `Py_LIMITED_API` para evitar o erro de build, o Python falhará ao tentar importar o módulo. (A falha ocorre na chamada da DLL a `PyModule_Create`, conforme descrito adiante, com a mensagem de saída **Erro fatal do Python: PyThreadState_Get: nenhum thread atual**.)
     >
     > A opção /MDd é usada para criar os binários de depuração Python (como *python_d.exe*), mas marcá-la para uma DLL de extensão ainda causará o erro de build com `Py_LIMITED_API`.
 
@@ -263,9 +266,9 @@ Se tiver concluído as etapas na seção anterior, você certamente observou que
 
 A compilação do módulo de C++ pode falhar pelos seguintes motivos:
 
-- Não é possível localizar *Python.h* (**E1696: não é possível abrir o arquivo de software livre "Python.h"** e/ou **C1083: não é possível abrir o arquivo de inclusão: "Python.h": o arquivo ou diretório não existe**), verifique se o caminho em **C/C++** > **Geral** > **Diretórios de Inclusão Adicionais** nas propriedades do projeto aponta para a pasta *include* da instalação do Python. Veja a etapa 6 em [Criar o projeto principal do C++](#create-the-core-c-project).
+- Não é possível localizar *Python.h* (**E1696: não é possível abrir o arquivo de origem "Python.h"** e/ou **C1083: Não é possível abrir o arquivo de inclusão: "Python.h": Esse arquivo ou diretório não existe**): verifique se o caminho em **C/C++** > **Geral** > **Diretórios de Inclusão Adicionais** nas propriedades do projeto aponta para a pasta *include* da instalação do Python. Veja a etapa 6 em [Criar o projeto principal do C++](#create-the-core-c-projects).
 
-- Não é possível localizar as bibliotecas Python: verifique se o caminho em **Vinculador** > **Geral** > **Diretórios de Biblioteca Adicionais** nos pontos de propriedades do projeto aponta para a pasta *libs* da instalação do Python. Veja a etapa 6 em [Criar o projeto principal do C++](#create-the-core-c-project).
+- Não é possível localizar as bibliotecas Python: verifique se o caminho em **Vinculador** > **Geral** > **Diretórios de Biblioteca Adicionais** nos pontos de propriedades do projeto aponta para a pasta *libs* da instalação do Python. Veja a etapa 6 em [Criar o projeto principal do C++](#create-the-core-c-projects).
 
 - Erros do vinculador relacionadas à arquitetura de destino: altere a arquitetura do projeto de destino C++ para corresponder à instalação do Python. Por exemplo, se você tiver como alvo x64 com o projeto C++, mas a instalação do Python for x86, altere o projeto C++ para ter como destino x86.
 
@@ -402,11 +405,12 @@ Há uma variedade de meios para criar extensões Python, conforme descrito na ta
 | --- | --- | --- | --- | --- |
 | Módulos de extensão do C/C++ para o CPython | 1991 | Biblioteca Padrão | [Tutoriais e documentação abrangente](https://docs.python.org/3/c-api/). Controle total. | Compilação, portabilidade, gerenciamento de referências. Profundo conhecimento sobre o C. |
 | [PyBind11](https://github.com/pybind/pybind11) (recomendado para C++) | 2015 |  | Biblioteca leve, somente cabeçalho para a criação de associações de Python de código C++ existente. Poucas dependências. Compatibilidade de PyPy. | Mais novo, menos maduro. Uso intensivo de recursos C++ 11. Lista curta de compiladores compatíveis (o Visual Studio está incluído). |
-| Cython (recomendado para C) | 2007 | [gevent](http://www.gevent.org/), [kivy](https://kivy.org/) | Semelhante ao Python. Altamente maduro. Alto desempenho. | Compilação, nova sintaxe, nova cadeia de ferramentas. |
+| Cython (recomendado para C) | 2007 | [gevent](https://www.gevent.org/), [kivy](https://kivy.org/) | Semelhante ao Python. Altamente maduro. Alto desempenho. | Compilação, nova sintaxe, nova cadeia de ferramentas. |
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Funciona com praticamente qualquer compilador C++. | Pacote grande e complexo de bibliotecas; contém várias soluções alternativas para compiladores antigos. |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Sem compilação, ampla disponibilidade. | O acesso e a mutação de estruturas do C são complicados e sujeitos a erros. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Gere associações para várias linguagens de uma só vez. | Sobrecarga excessiva se o Python for o único destino. |
-| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](http://pypy.org/) | Facilidade de integração, compatibilidade com o PyPy. | Mais novo, menos maduro. |
+| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Facilidade de integração, compatibilidade com o PyPy. | Mais novo, menos maduro. |
+| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Semelhante ao cffi usando C++. | Mais recente, pode ter alguns problemas com o VS 2017. |  
 
 ## <a name="see-also"></a>Consulte também
 

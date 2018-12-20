@@ -1,7 +1,7 @@
 ---
 title: Exibição de gráfico | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92192e36cc0acd33734974a2ddf723df7dfbc55a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1c0bbe55f2e63c1d86d71556392d57d1330c6b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460384"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813616"
 ---
 # <a name="graph-view"></a>Exibição de gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [modo de exibição gráfico](https://docs.microsoft.com/visualstudio/xml-tools/graph-view).  
-  
   
 A exibição do gráfico fornece uma representação gráfica de nós globais do esquema e relações entre os nós. Observe que a exibição do gráfico não permite que você alterar o layout do esquema definido na superfície de design. A exibição do gráfico também inclui a barra de ferramentas do designer de esquema XML e a barra de rastreamento.  
   
@@ -34,11 +32,11 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
  ![Modo de exibição de gráfico do Designer de esquema XML](../xml-tools/media/xsddesigner-graphview.gif "XSDDesigner_GraphView")  
   
 ## <a name="design-surface"></a>A superfície de design  
- A superfície de design do modo de gráfico exibe o conteúdo do [espaço de trabalho de Designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md). Se o espaço de trabalho contém quaisquer nós globais do conjunto de esquema, os nós são mostrados na superfície de design do modo de gráfico e as setas são desenhadas entre os nós que possuem relações.  
+ A superfície de design do modo de gráfico exibe o conteúdo do [espaço de trabalho de Designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md). Se o workspace contém quaisquer nós globais do conjunto de esquema, os nós são mostrados na superfície de design do modo de gráfico e as setas são desenhadas entre os nós que possuem relações.  
   
  Clique duas vezes em um nó no modo de gráfico trará anterior o editor XML.  
   
- Para excluir selecionou nós de espaço de trabalho, usa a barra de ferramentas do designer XSD ou a tecla DELETE.  
+ Para excluir selecionou nós de workspace, usa a barra de ferramentas do designer XSD ou a tecla DELETE.  
   
  Se a superfície de design está em branco, o editor XML, XML Schema Explorer, e a marca de agua são mostrados. O *marca d'água* é uma lista de links para todas as exibições de Designer XSD.  
   
@@ -57,9 +55,9 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 |**Mostrar em XML Schema Explorer**|Coloca o foco no esquema Explorer e ressalta o nó do esquema.|  
 |**Mostrar na exibição de gráfico**|Alterna para o modo de exibição gráfico (desativada).|  
 |**Gerar XML de exemplo**|Disponível somente para os elementos globais. Gerencia um arquivo XML de exemplo para o elemento global.|  
-|**Limpar o espaço de trabalho**|Limpa o espaço de trabalho e a superfície de design.|  
-|**Remover espaço de trabalho**|Removes selecionou nós de espaço de trabalho e da superfície de design.|  
-|**Remover tudo, exceto a seleção do espaço de trabalho**|Remove os nós que não são selecionados de espaço de trabalho e da superfície de design.|  
+|**Limpar o espaço de trabalho**|Limpa o workspace e a superfície de design.|  
+|**Remover espaço de trabalho**|Removes selecionou nós de workspace e da superfície de design.|  
+|**Remover tudo, exceto a seleção do espaço de trabalho**|Remove os nós que não são selecionados de workspace e da superfície de design.|  
 |**Exporte diagrama como imagem...**|Salva a superfície de design para um arquivo XPS.|  
 |**Selecionar tudo**|Selecionar todos os nós na superfície de design.|  
 |**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor XML. O item selecionado em XML Schema Explorer também será selecionado no editor XML.|  
@@ -109,9 +107,9 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 |**Mostrar exibição inicial**|Alterna para o [Iniciar modo de exibição](../xml-tools/start-view.md). Este modo de exibição pode ser acessado por meio do atalho de teclado: **CTRL + 1**.|  
 |**Mostrar modo de exibição do modelo de conteúdo**|Alterna para o [exibição de modelo de conteúdo](../xml-tools/content-model-view.md). Este modo de exibição pode ser acessado por meio do atalho de teclado: **CTRL + 2**.|  
 |**Mostrar exibição de gráfico**|Alterna para o [exibição de gráfico](../xml-tools/graph-view.md). Este modo de exibição pode ser acessado por meio do atalho de teclado: **CTRL + 3**.|  
-|**Limpar o espaço de trabalho**|Limpa o espaço de trabalho e a superfície de design.|  
-|**Remover espaço de trabalho**|Removes selecionou nós de espaço de trabalho e serface de design.|  
-|**Remover tudo, exceto a seleção do espaço de trabalho**|Remove os nós que não são selecionados de espaço de trabalho e serface de design. Essa opção é ativada no modo do modelo de conteúdo e no modo de gráfico.|  
+|**Limpar o espaço de trabalho**|Limpa o workspace e a superfície de design.|  
+|**Remover espaço de trabalho**|Removes selecionou nós de workspace e serface de design.|  
+|**Remover tudo, exceto a seleção do espaço de trabalho**|Remove os nós que não são selecionados de workspace e serface de design. Essa opção é ativada no modo do modelo de conteúdo e no modo de gráfico.|  
 |**Esquerda para a direita**|Altera o layout no modo de gráfico a uma representação hierárquica esquerda para a direita de nós. Essa opção pode ser acessada por meio do atalho de teclado: **Alt + seta para a direita**.|  
 |**Direita para a esquerda**|Altera o layout no modo de gráfico a uma representação hierárquica da direita para a esquerda de nós. Essa opção pode ser acessada por meio do atalho de teclado: **Alt + seta para a esquerda**.|  
 |**Cima para baixo**|Altera o layout no modo de gráfico a uma representação hierárquica de cima para baixo de nós. Essa opção pode ser acessada por meio do atalho de teclado: **Alt + seta para baixo**.|  
@@ -134,11 +132,11 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
   
  O zoom pode ser controlado das seguintes maneiras:  
   
--   Mantendo a tecla CTRL e girar o mouse rode quando o mouse está sobre a superfície de exibição de gráfico.  
+- Mantendo a tecla CTRL e girar o mouse rode quando o mouse está sobre a superfície de exibição de gráfico.  
   
--   Usando o controle deslizante. O controle deslizante mostra o nível atual de zoom.  
+- Usando o controle deslizante. O controle deslizante mostra o nível atual de zoom.  
   
- O controle deslizante de zoom é opaco ao selecionar, o passa sobre ele, ou utiliza o CTRL com a roda do mouse para aplicar zoom; em quaisquer outros vezes, é transparente.  
+  O controle deslizante de zoom é opaco ao selecionar, o passa sobre ele, ou utiliza o CTRL com a roda do mouse para aplicar zoom; em quaisquer outros vezes, é transparente.  
   
 ## <a name="xml-editor-integration"></a>Integração de editor XML  
  Você pode alternar para frente e para trás entre o modo de gráfico e o editor XML clicando em um nó e usando o menu de contexto de código de exibição.  

@@ -1,7 +1,7 @@
 ---
 title: Escrever um avaliador de expressão de tempo de execução de linguagem comum | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: bd79d57f-8e0a-4e14-a417-0b1de28fa1b2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6917a4ad5936792e309b5b14abbc862ca6bd5654
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cfd368bb0302fec1fcf9fdd1f6e6e069377846ab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472641"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783006"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Escrevendo um avaliador de expressão do Common Language Runtime
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [escrever um avaliador de expressão de tempo de execução de linguagem comum](https://docs.microsoft.com/visualstudio/extensibility/debugger/writing-a-common-language-runtime-expression-evaluator).  
-  
 > [!IMPORTANT]
 >  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   

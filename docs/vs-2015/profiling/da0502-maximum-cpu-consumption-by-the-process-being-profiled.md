@@ -1,7 +1,7 @@
 ---
 title: 'DA0502: consumo máximo de CPU pelo processo do qual o perfil está sendo criado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ f1_keywords:
 - vs.performance.502
 ms.assetid: 1ee53df5-b0dc-4265-9d4f-527830d08725
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be9b9ff318ade6546369e20d5508b2ad79dc0bb9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd2665e9b8055812678fc1a17c0b9df0f0405e42
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462776"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731244"
 ---
 # <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502: consumo de CPU máximo pelo processo com perfil criado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DA0502: consumo de CPU máximo pelo processo que está sendo analisado](https://docs.microsoft.com/visualstudio/profiling/da0502-maximum-cpu-consumption-by-the-process-being-profiled).  
-  
 Id da regra | DA0502 |  
 | Categoria | Monitoramento de recursos |  
 | Método de criação de perfil | Todos os |  

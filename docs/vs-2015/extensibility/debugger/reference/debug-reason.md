@@ -1,7 +1,7 @@
 ---
 title: DEBUG_REASON | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,35 +17,33 @@ ms.assetid: ad2ee898-8648-4671-9078-d32873862346
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 883630e7c9e00a58eac143a6cde7ee40109bb4e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ff97c4ffeac4b25aa92da3213525ad35ae444a3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476284"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801271"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DEBUG_REASON](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/debug-reason).  
-  
 Especifica por que o processo foi iniciado para depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_DEBUG_REASON {  
+enum enum_DEBUG_REASON {  
    DEBUG_REASON_ERROR         = 0,  
    DEBUG_REASON_USER_LAUNCHED = 1,  
    DEBUG_REASON_USER_ATTACHED = 2,  
    DEBUG_REASON_AUTO_ATTACHED = 3,  
    DEBUG_REASON_CAUSALITY     = 4  
 };  
-typedef DWORD DEBUG_REASON;  
+typedef DWORD DEBUG_REASON;  
 ```  
   
 ```csharp  
-public enum enum_DEBUG_REASON {  
+public enum enum_DEBUG_REASON {  
    DEBUG_REASON_ERROR         = 0,  
    DEBUG_REASON_USER_LAUNCHED = 1,  
    DEBUG_REASON_USER_ATTACHED = 2,  

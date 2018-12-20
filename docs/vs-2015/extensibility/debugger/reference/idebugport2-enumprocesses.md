@@ -1,7 +1,7 @@
 ---
 title: IDebugPort2::EnumProcesses | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: aafb32c5-5790-4807-a448-878a80256438
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5535bf60c9faad84bc146dca9d2af5324ba953b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15c8939fa7c220592620213ba837c5e8a76bd5f5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467657"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732776"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPort2::EnumProcesses](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugport2-enumprocesses).  
-  
 Retorna uma lista de todos os processos em execução em uma porta.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT EnumProcesses(   
+HRESULT EnumProcesses(   
    IEnumDebugProcesses2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumProcesses(   
+int EnumProcesses(   
    out IEnumDebugProcesses2 ppEnum  
 );  
 ```  

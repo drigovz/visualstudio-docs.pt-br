@@ -1,7 +1,7 @@
 ---
 title: Hierarquia de Chamada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 212109c37e1c85d5ddbc55413ab5a972edbfa337
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 86cf4e12f412e6448f4a4b7c38af8268f10d9c56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587437"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851096"
 ---
 # <a name="call-hierarchy"></a>Hierarquia de chamadas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [hierarquia de chamada](https://docs.microsoft.com/visualstudio/ide/reference/call-hierarchy).  
-  
   
 A Hierarquia de Chamada permite navegar pelo seu código exibindo todas as chamadas de e para um método, propriedade ou construtor selecionado. Isso permite compreender melhor como o código flui, bem como avaliar os efeitos das alterações no código. Você pode examinar vários níveis de código para exibir cadeias complexas de chamadas de método e pontos de entrada adicionais para o código, o que permite explorar todos os caminhos de execução possíveis.  
   
@@ -43,24 +41,24 @@ A Hierarquia de Chamada permite navegar pelo seu código exibindo todas as chama
  ![Hierarquia de Chamada com um nó aberto](../../ide/reference/media/onenode.png "OneNode")  
 Janela de Hierarquia de Chamada  
   
--   Se você expandir o nó **Chamadas para**, todos os membros que chamam o membro selecionado serão exibidos.  
+- Se você expandir o nó **Chamadas para**, todos os membros que chamam o membro selecionado serão exibidos.  
   
--   Se você expandir o nó **Chamadas de**, todos os membros que são chamados pelo membro selecionado serão exibidos.  
+- Se você expandir o nó **Chamadas de**, todos os membros que são chamados pelo membro selecionado serão exibidos.  
   
- Você pode, então, expandir cada um dos membros desses subnós em nós **Chamadas para** e **Chamadas de**. Isso permite navegar pela pilha de chamadores, conforme mostrado na ilustração a seguir.  
+  Você pode, então, expandir cada um dos membros desses subnós em nós **Chamadas para** e **Chamadas de**. Isso permite navegar pela pilha de chamadores, conforme mostrado na ilustração a seguir.  
   
- ![Hierarquia de chamada com vários nós abertos](../../ide/media/multiplenodes.png "MultipleNodes")  
-Janela de Hierarquia de Chamada  
+  ![Hierarquia de chamada com vários nós abertos](../../ide/media/multiplenodes.png "MultipleNodes")  
+  Janela de Hierarquia de Chamada  
   
- Para membros definidos como virtuais ou abstratos, um nó **Substitui o nome do método** é exibido. Para membros de interface, um nó **Implementa o nome do método** é exibido. Esses nós expansíveis aparecem no mesmo nível que os nós **Chamadas para** e **Chamadas de**.  
+  Para membros definidos como virtuais ou abstratos, um nó **Substitui o nome do método** é exibido. Para membros de interface, um nó **Implementa o nome do método** é exibido. Esses nós expansíveis aparecem no mesmo nível que os nós **Chamadas para** e **Chamadas de**.  
   
- A caixa **Escopo da Pesquisa** na barra de ferramentas contém opções para **Minha Solução**, **Projeto Atual** e **Documento Atual**.  
+  A caixa **Escopo da Pesquisa** na barra de ferramentas contém opções para **Minha Solução**, **Projeto Atual** e **Documento Atual**.  
   
- Quando você seleciona um membro filho no painel do modo de exibição de árvore **Hierarquia de Chamada**:  
+  Quando você seleciona um membro filho no painel do modo de exibição de árvore **Hierarquia de Chamada**:  
   
--   O painel de detalhes **Hierarquia de Chamada** exibe todas as linhas de código em que esse membro filho é chamado pelo membro pai.  
+- O painel de detalhes **Hierarquia de Chamada** exibe todas as linhas de código em que esse membro filho é chamado pelo membro pai.  
   
--   A **Janela de Definição de Código**, se estiver aberta, exibe o código do membro selecionado. Esta janela está disponível em C# e C++. Para obter mais informações sobre a janela, consulte [Exibindo a estrutura do código](../../ide/viewing-the-structure-of-code.md).  
+- A **Janela de Definição de Código**, se estiver aberta, exibe o código do membro selecionado. Esta janela está disponível em C# e C++. Para obter mais informações sobre a janela, consulte [Exibindo a estrutura do código](../../ide/viewing-the-structure-of-code.md).  
   
 > [!NOTE]
 >  A Hierarquia de Chamada não encontra referências do grupo ao método, que incluem os locais a que um método é adicionado como manipulador de eventos ou é atribuído a um delegado. Para localizar todas as referências a um método, você pode usar o comando **Localizar Todas as Referências**.  

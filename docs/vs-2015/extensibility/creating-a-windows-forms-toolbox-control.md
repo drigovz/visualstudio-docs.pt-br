@@ -1,7 +1,7 @@
 ---
 title: Criando um Windows Forms o controle de caixa de ferramentas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc1deab4439133eb43348289fcfbba204a1cf9ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 371fd4269cee5918bd0d0b623eb49e1f709a311d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468339"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781706"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Criando um controle de caixa de ferramentas do Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando um controle de caixa de ferramentas do Windows Forms](https://docs.microsoft.com/visualstudio/extensibility/creating-a-windows-forms-toolbox-control).  
-  
 O modelo de item de controle de caixa de ferramentas do Windows Forms que está incluído no Visual Studio Extensibility Tools (SDK do VS) permite que você crie um controle que é adicionado automaticamente para o **caixa de ferramentas** quando a extensão está instalada. Este tópico mostra como usar o modelo para criar um controle de um contador simples que você pode distribuir a outros usuários.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
@@ -83,16 +81,16 @@ O modelo de item de controle de caixa de ferramentas do Windows Forms que está 
 3.  Crie as seguintes declarações de propriedade pública.  
   
     ```csharp  
-    public int Value {  
+    public int Value {  
         get { return currentValue; }   
     }  
   
-    public string Message {  
+    public string Message {  
         get { return displayText; }  
         set { displayText = value; }  
     }  
   
-    public bool ShowReset {  
+    public bool ShowReset {  
         get { return btnReset.Visible; }  
         set { btnReset.Visible = value; }  
     }  
@@ -104,7 +102,7 @@ O modelo de item de controle de caixa de ferramentas do Windows Forms que está 
 4.  Coloque o seguinte código no `Load` evento para o controle.  
   
     ```csharp  
-    private void Counter_Load(object sender, EventArgs e)  
+    private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = Message + Value;  
@@ -117,7 +115,7 @@ O modelo de item de controle de caixa de ferramentas do Windows Forms que está 
 5.  Crie o seguinte método público para incrementar o contador.  
   
     ```csharp  
-    public void Increment()  
+    public void Increment()  
     {  
         currentValue++;  
         label1.Text = displayText + Value;  
@@ -129,7 +127,7 @@ O modelo de item de controle de caixa de ferramentas do Windows Forms que está 
 6.  Adicionar uma declaração para o `Incremented` eventos à classe do controle.  
   
     ```csharp  
-    public event EventHandler Incremented;  
+    public event EventHandler Incremented;  
     ```  
   
      Os chamadores podem adicionar manipuladores para este evento responda às alterações no valor do contador.  
@@ -137,7 +135,7 @@ O modelo de item de controle de caixa de ferramentas do Windows Forms que está 
 7.  Retornar ao modo de design e clique duas vezes o `Reset` botão para gerar o `btnReset_Click` manipulador de eventos e, em seguida, preenchê-lo conforme mostrado no exemplo a seguir.  
   
     ```csharp  
-    private void btnReset_Click(object sender, EventArgs e)  
+    private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = displayText + Value;  
@@ -151,7 +149,7 @@ O modelo de item de controle de caixa de ferramentas do Windows Forms que está 
   
     ```csharp  
     [ProvideToolboxControl("General", false)]  
-    public partial class Counter : UserControl  
+    public partial class Counter : UserControl  
     ```  
   
 ### <a name="testing-the-control"></a>Testando o controle  

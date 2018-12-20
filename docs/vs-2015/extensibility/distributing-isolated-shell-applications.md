@@ -1,7 +1,7 @@
 ---
 title: Distribuição de aplicativos de Shell isolado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: c503a985-d67a-4ef8-9123-7744a78f2f17
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7388a5b723b5346f1f653024215c16ba474fa48a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27228131c1e955a394e666ac05f0ddd68c879be0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474664"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758783"
 ---
 # <a name="distributing-isolated-shell-applications"></a>Distribuição de aplicativos de Shell isolado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [distribuição de aplicativos de Shell isolado](https://docs.microsoft.com/visualstudio/extensibility/distributing-isolated-shell-applications).  
-  
 Você deve instalar o Visual Studio e SDK do Visual Studio para criar um aplicativo de shell isolado. Para distribuir o aplicativo para as máquinas de outros usuários ou clientes, você deve incluir um pacote redistribuível especial para o shell isolado.  
   
 ## <a name="prerequisites-for-distributing-isolated-shell-applications"></a>Pré-requisitos para distribuição de aplicativos de Shell isolado  

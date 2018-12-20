@@ -1,7 +1,7 @@
 ---
 title: Página Opções, Propriedades do Nó de Depuração | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 128e4719775a4ce9d06214547936110ed88b7a14
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bcc4637ebb933c2d6cc8a06d15ad70c1fbb76c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460981"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223842"
 ---
 # <a name="options-page-debugging-node-properties"></a>Página de Opções, Depuração, Propriedades do Nó
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [página de opções, propriedades de nó de depuração](https://docs.microsoft.com/visualstudio/ide/reference/options-page-debugging-node-properties).  
-  
   
 As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) associadas à categoria **Depuração**, `DTE.Properties("Debugging", <Property Page>)` da caixa de diálogo **Opções**.  
   

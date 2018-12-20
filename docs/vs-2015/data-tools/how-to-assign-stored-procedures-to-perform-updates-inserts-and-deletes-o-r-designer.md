@@ -1,7 +1,7 @@
 ---
 title: 'Como: atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Object Relational Designer) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a211048e287bd3ef3e45625022f7389e06358e32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4f65af06a275dc50afafc70fd95c9b93d9bba458
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467995"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232707"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Como: atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer relacional de objetos)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Object Relational Designer)](https://docs.microsoft.com/visualstudio/data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer).  
-  
   
 Os procedimentos armazenados podem ser adicionados ao Designer Relacional de Objetos e executados como métodos típicos do <xref:System.Data.Linq.DataContext>. Eles também podem ser usados para substituir o padrão [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] comportamento de tempo de execução que executa inserções, atualizações e exclusões quando alterações são salvas de classes de entidade para um banco de dados (por exemplo, ao chamar o <xref:System.Data.Linq.DataContext.SubmitChanges%2A> método).  
   
@@ -34,7 +32,7 @@ Os procedimentos armazenados podem ser adicionados ao Designer Relacional de Obj
 >  O [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] manipula automaticamente os valores gerados por banco de dados para colunas de identidade (incremento automático), rowguidcol (GUID gerado por banco de dados) e carimbo de data/hora. Os valores gerados pelo banco de dados em outros tipos de coluna resultarão inesperadamente em um valor nulo. Para retornar os valores gerados pelo banco de dados, você deve definir manualmente <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> à `true` e <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> para um dos seguintes: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, ou <xref:System.Data.Linq.Mapping.AutoSync>.  
   
 ## <a name="configuring-the-update-behavior-of-an-entity-class"></a>Configurando o comportamento de atualização de uma classe de entidade  
- Por padrão, a lógica para atualizar um banco de dados (inserções, atualizações e exclusões), com alterações que foram feitas nos dados em classes de entidade [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)], é fornecida em tempo de execução pelo [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]. O tempo de execução cria comandos padrão Insert, Update e Delete que se baseiam no esquema da tabela (as informações de coluna e chave primária). Quando o comportamento padrão não for desejado, você pode configurar o comportamento de atualização atribuindo procedimentos armazenados específicos para executar as inserções, atualizações e exclusões necessárias para manipular os dados em sua tabela. Você também pode fazer isso quando o comportamento padrão não é gerado, por exemplo, quando as classes de entidade mapeiam para as exibições. Finalmente, você pode substituir o comportamento de atualização padrão quando o banco de dados exige o acesso à tabela através de procedimentos armazenados.  
+ Por padrão, a lógica para atualizar um banco de dados (inserções, atualizações e exclusões), com alterações que foram feitas nos dados em classes de entidade [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)], é fornecida em tempo de execução pelo [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]. O tempo de execução cria padrão de comandos Insert, Update e Delete com base no esquema da tabela (a coluna e informações de chave primária). Quando o comportamento padrão não for desejado, você pode configurar o comportamento de atualização atribuindo procedimentos armazenados específicos para executar as inserções, atualizações e exclusões necessárias para manipular os dados em sua tabela. Você também pode fazer isso quando o comportamento padrão não é gerado, por exemplo, quando as classes de entidade mapeiam para as exibições. Finalmente, você pode substituir o comportamento de atualização padrão quando o banco de dados exige o acesso à tabela através de procedimentos armazenados.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

@@ -1,7 +1,7 @@
 ---
 title: Documento de Log de elementos gráficos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ f1_keywords:
 - vs.graphics.vsglog
 ms.assetid: 6ccb1269-d55f-49c4-920d-baedf7de2888
 caps.latest.revision: 34
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 385744b280bbd8069acef4da0a36ae9bd9716fcb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 097f431446ed2148e2a61c6f85266843fe7ada44
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463982"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745164"
 ---
 # <a name="graphics-log-document"></a>Documentos de log de gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [documento de Log de gráficos](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-log-document).  
-  
 O documento de Log de gráficos é o registro de eventos de gráficos que ocorreu enquanto o aplicativo foi executado em uma sessão de diagnóstico de gráficos. Após ser gravado, você pode examinar o log no analisador de gráficos do Visual Studio para diagnosticar problemas de desempenho e renderização.  
   
  Este é o que um documento de log gráficos é semelhante no analisador de gráficos:  

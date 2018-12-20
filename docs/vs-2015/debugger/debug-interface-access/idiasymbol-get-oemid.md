@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_oemid | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_oemId method
 ms.assetid: c472830f-c3eb-46ab-9498-cd637763d241
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e12321cc8d6b54cfe7a70dd95663fc77fde34b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f95f86cdf05aa23c9c4623c58ca76d8242a8c9ed
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475364"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806731"
 ---
 # <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_oemid](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-oemid).  
-  
 Recupera o valor de ID do fabricante original do equipamento (OEM) do símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_oemId (   
+HRESULT get_oemId (   
    DWORD* pRetVal  
 );  
 ```  

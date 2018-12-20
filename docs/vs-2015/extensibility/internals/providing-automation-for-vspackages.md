@@ -1,7 +1,7 @@
 ---
 title: Fornecer automação a VSPackages | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96996afb545e34c1de683aceda558481a0a09e81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc6eb16d1873c7986d9fac556440f24eb007396f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475561"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774166"
 ---
 # <a name="providing-automation-for-vspackages"></a>Fornecendo automação para VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [fornecer automação a VSPackages](https://docs.microsoft.com/visualstudio/extensibility/internals/providing-automation-for-vspackages).  
-  
 Há duas maneiras de fornecer automação a VSPackages: Implementando objetos específicos de VSPackage e implementando objetos de automação padrão. Em geral, eles são usados juntos para estender o modelo de automação do ambiente.  
   
 ## <a name="vspackage-specific-objects"></a>Objetos específicos do VSPackage  

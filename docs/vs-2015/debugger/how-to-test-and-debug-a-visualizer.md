@@ -1,7 +1,7 @@
 ---
 title: 'Como: testar e depurar um visualizador | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,21 +20,19 @@ helpviewer_keywords:
 - debugging [Visual Studio], visualizers
 ms.assetid: 5cc12ce8-c819-48e4-b487-98d403001b28
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9972951b1c5064fcc0582909976a234158ea096
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00fb749505f8bfe16c353552aa3afcb9eaaefc2d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474641"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723287"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Como testar e depurar um visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: testar e depurar um visualizador](https://docs.microsoft.com/visualstudio/debugger/how-to-test-and-debug-a-visualizer).  
-  
 Quando você tiver gravado um visualizador, precisará depurá-lo e testá-lo.  
   
  Uma maneira de testar um visualizador é instalando-o no Visual Studio e chamando-o de uma janela do depurador. (Consulte [como: instalar um visualizador](../debugger/how-to-install-a-visualizer.md).) Se você fizer isso, precisará usar uma segunda instância do Visual Studio para anexar e depurar o visualizador, que está em execução na primeira instância do depurador.  

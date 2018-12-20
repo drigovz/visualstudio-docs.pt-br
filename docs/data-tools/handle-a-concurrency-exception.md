@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6aca4815672d700fbea9d489f6316b8b0337f8df
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
-ms.translationtype: MT
+ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582327"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388732"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar uma exceção de simultaneidade
 
@@ -65,9 +65,6 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
        Após alguns instantes, a consulta termina a execução e o banco de dados Northwind é criado.
 
-> [!NOTE]
-> As caixas de diálogo e comandos de menu que você vê podem diferir dos descritos na Ajuda, dependendo de suas configurações ativas ou a edição que você está usando. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
-
 ## <a name="create-a-new-project"></a>Criar um novo projeto
 
 Comece criando um novo aplicativo Windows Forms:
@@ -88,7 +85,7 @@ Em seguida, crie um conjunto de dados denominado **NorthwindDataSet**:
 
 1. Sobre o **dados** menu, escolha **fonte de adicionar novos dados**.
 
-   Abre o Assistente de configuração de fonte de dados.
+   O Assistente de Configuração de Fonte de Dados é aberto.
 
 2. Sobre o **escolher um tipo de fonte de dados** tela, selecione **banco de dados**.
 
@@ -109,7 +106,7 @@ Em seguida, crie um conjunto de dados denominado **NorthwindDataSet**:
 
 Nesta seção, você criará um <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> arrastando a **clientes** do item dos **fontes de dados** janela para o formulário do Windows.
 
-1. Sobre o **dados** menu, escolha **Mostrar fontes de dados** para abrir o **janela fontes de dados**.
+1. Para abrir o **fontes de dados** janela diante a **dados** menu, escolha **Mostrar fontes de dados**.
 
 2. No **fontes de dados** janela, expanda o **NorthwindDataSet** nó e, em seguida, selecione o **clientes** tabela.
 
@@ -162,13 +159,13 @@ Quando você tenta executar uma atualização e uma exceção é gerada, você g
 
 1. Adicione o seguinte código abaixo a `Form1_Load` método:
 
-     [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
-     [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
+   [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
+   [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
 
 2. Substitua os `CustomersBindingNavigatorSaveItem_Click` método para chamar o `UpdateDatabase` método para que fique semelhante ao seguinte:
 
-     [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
-     [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
+   [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
+   [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
 ### <a name="display-choices-to-the-user"></a>Exibir as opções para o usuário
 
@@ -176,8 +173,8 @@ O código que você acabou de escrever chama o `CreateMessage` procedimento para
 
 Crie a mensagem, adicionando o seguinte código para o **Editor de códigos**. Digite este código abaixo a `UpdateDatabase` método:
 
-     [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
-     [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
+[!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
+[!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
 ### <a name="process-the-users-response"></a>Processar a resposta do usuário
 
@@ -185,8 +182,8 @@ Você também precisa de código para processar a resposta do usuário para a ca
 
 Adicione o código a seguir abaixo do código que foi adicionado na seção anterior:
 
-     [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
-     [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
+[!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
+[!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
 ## <a name="test-the-form"></a>Testar o formulário
 

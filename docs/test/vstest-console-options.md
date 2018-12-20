@@ -1,5 +1,5 @@
 ---
-title: Opções de linha de comando do MSTest
+title: Opções da linha de comando de VSTest.Console.exe
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e78491f9e811a6ee9e6166734e11077fad272370
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4394fe8d7920f4127f5043808003d400bc991590
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279681"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220964"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opções da linha de comando de VSTest.Console.exe
 
@@ -41,10 +41,10 @@ A tabela a seguir lista todas as opções para o *VSTest.Console.exe*, além de 
 |**/Enablecodecoverage**|Permite o adaptador de diagnóstico de dados CodeCoverage na execução de teste.<br />As configurações padrão serão usadas se não forem especificadas usando o arquivo de configurações.|
 |**/InIsolation**|Executa os testes em um processo isolado.<br />Esse isolamento torna o processo *vstest.console.exe* menos suscetível a ser interrompido acidentalmente nos testes. Entretanto, os testes podem ser executados mais lentamente.|
 |**/UseVsixExtensions**|Essa opção faz com que o processo *vstest.console.exe* use ou ignore as extensões VSIX instaladas (se houver) na execução de teste.<br />Essa opção foi preterida. A partir da próxima versão principal do Visual Studio, essa opção poderá ser removida. A migração para o consumo de extensões foi disponibilizada como um pacote NuGet.<br />Exemplo: `/UseVsixExtensions:true`|
-|**/TestAdapterPath:[*caminho*]**|Força o processo *vstest.console.exe* a usar adaptadores de teste personalizados de um caminho especificado (se houver) na execução de teste.<br />Exemplo: `/TestAdapterPath:&lt;pathToCustomAdapters&gt;`|
+|**/TestAdapterPath:[*caminho*]**|Força o processo *vstest.console.exe* a usar adaptadores de teste personalizados de um caminho especificado (se houver) na execução de teste.<br />Exemplo: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*tipo de plataforma*]**|Arquitetura da plataforma de destino a ser usada para a execução de teste.<br />Os valores válidos são x86, x64 e ARM.|
 |**/Framework: [*versão do framework*]**|Versão do .NET Framework de destino a ser usada na execução de teste.<br />Os valores válidos são Framework35, Framework40, Framework45 e FrameworkUap10.<br />Se a estrutura de destino for especificada como **Framework35**, os testes serão executados no "modo de compatibilidade" do CLR 4.0.<br />Exemplo: `/Framework:framework40`|
-|**/TestCaseFilter:[*expressão*]**|Execute testes que correspondam à expressão fornecida.<br /><Expressão\> tem o formato <propriedade\>=<valor\>[&#124;<Expressão\>].<br />Exemplo: `/TestCaseFilter:"Priority=1"`<br />Exemplo: `/TestCaseFilter:"TestCategory=Nightly&#124;FullyQualifiedName=Namespace.ClassName.MethodName"`<br />A opção de linha de comando **/TestCaseFilter** não pode ser usada com a opção de linha de comando **/Tests**. <br />Para obter informações sobre como criar e usar expressões, confira [Filtro TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
+|**/TestCaseFilter:[*expressão*]**|Execute testes que correspondam à expressão fornecida.<br /><Expressão\> é do formato <propriedade\>=<valor\>[\|<Expressão\>].<br />Exemplo: `/TestCaseFilter:"Priority=1"`<br />Exemplo: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />A opção de linha de comando **/TestCaseFilter** não pode ser usada com a opção de linha de comando **/Tests**. <br />Para obter informações sobre como criar e usar expressões, confira [Filtro TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Exibe informações de uso.|
 |**/Logger:[*uri/nome_amigável*]**|Especificar um agente para resultados do teste.<br />Exemplo: para registrar em log os resultados em um Arquivo de Resultados do Teste do Visual Studio (TRX), use **/Logger:trx**.<br />Exemplo: para publicar resultados do teste no Team Foundation Server, use TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<URL do projeto\>;**<br />**BuildName=<nome do build\>;**<br />**TeamProject=<nome do projeto\>;**<br />**[;Platform=<Defaults to "Any CPU">]**<br />**[;Flavor=<Defaults to "Debug">]**<br />**[;RunTitle=<título\>]**|
 |**/ListTests:[*nome do arquivo*]**|Lista testes descobertos do contêiner de teste fornecido.|
@@ -54,6 +54,10 @@ A tabela a seguir lista todas as opções para o *VSTest.Console.exe*, além de 
 |**/ListSettingsProviders**|Lista provedores de configurações de teste instalados.|
 |**/Blame**|Acompanha os testes durante sua execução e, em caso de falha do processo de host de teste, emite os nomes de testes em sua sequência de execução até e incluindo o teste específico que estava em execução no momento da falha. Essa saída facilita o isolamento do teste incorreto e o diagnóstico adicional. [Mais informações](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag:[*nome do arquivo*]**|Grava os logs de rastreamento de diagnóstico no arquivo especificado.|
+|**/ResultsDirectory:[*caminho*]**|O diretório de resultados de teste será criado no caminho especificado, se não existir.<br />Exemplo: `/ResultsDirectory:<pathToResultsDirectory>`|
+|**/ParentProcessId:[*IDProcessoPai*]**|O ID do Processo Pai responsável por iniciar o processo atual.|
+|**/Port:[*porta*]**|A porta para a conexão de soquete e recebimento das mensagens do evento.|
+|**/Collect:[*NomeAmigável ColetorDados*]**|Habilita o coletor de dados para a execução de teste. [Mais informações](https://aka.ms/vstest-collect).|
 
 > [!TIP]
 > As opções e os valores não diferenciam maiúsculas de minúsculas.

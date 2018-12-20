@@ -1,7 +1,7 @@
 ---
 title: Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados de pesquisa | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d8bdf410875bcc37766d4ce9bca27bec6564ce01
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a1393f45c46709e4085d7e170265b92c6e00266
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463158"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219478"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados de pesquisa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando tabelas de pesquisa na associação de dados - controles dos Windows Forms | Microsoft Docs](https://docs.microsoft.com/visualstudio/data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding).  
-  
   
 Ao exibir dados nos Windows Forms, você pode escolher os controles existentes dos **caixa de ferramentas**, ou você pode criar controles personalizados se seu aplicativo requer funcionalidade não está disponível nos controles padrão. Este passo a passo mostra como criar um controle que implementa o <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. Os controles que implementam o <xref:System.ComponentModel.LookupBindingPropertiesAttribute> contêm três propriedade que podem ser associadas a dados. Tais controles são semelhantes a um <xref:System.Windows.Forms.ComboBox>.  
   
@@ -114,7 +112,7 @@ Ao exibir dados nos Windows Forms, você pode escolher os controles existentes d
 3.  No menu **Compilação**, escolha **Compilar Solução**.  
   
 ## <a name="create-a-data-source-from-your-database"></a>Criar uma fonte de dados do banco de dados  
- Esta etapa cria uma fonte de dados usando o **Data Source Configuration**assistente, com base nas `Customers` e `Orders` tabelas no banco de dados de exemplo Northwind. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [bancos de dados de exemplo de instalar o SQL Server](../data-tools/install-sql-server-sample-databases.md).  
+ Esta etapa cria uma fonte de dados usando o **Data Source Configuration** assistente, com base nas `Customers` e `Orders` tabelas no banco de dados de exemplo Northwind. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [bancos de dados de exemplo de instalar o SQL Server](../data-tools/install-sql-server-sample-databases.md).  
   
 #### <a name="to-create-the-data-source"></a>Para criar a fonte de dados  
   

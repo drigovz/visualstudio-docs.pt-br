@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3ca011f519c53924681d2c1a7042f25dcfaad208
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635194"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296236"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 2
   Depois de definir um tipo personalizado de item de projeto do SharePoint e associá-lo a um modelo de item no Visual Studio, você também poderá fornecer um assistente do modelo. Você pode usar o Assistente para coletar informações dos usuários quando eles usam seu modelo para adicionar uma nova instância do item de projeto a um projeto. As informações que você coleta podem ser usadas para inicializar o item de projeto.  
@@ -44,15 +44,15 @@ ms.locfileid: "42635194"
   
  Você também precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:  
   
--   Edições com suporte do Windows, SharePoint e Visual Studio.
+- Edições com suporte do Windows, SharePoint e Visual Studio.
   
--   O SDK do Visual Studio. Este passo a passo usa o **VSIX Project** modelo no SDK para criar um pacote VSIX para implantar o item de projeto. Para obter mais informações, consulte [estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- O SDK do Visual Studio. Este passo a passo usa o **VSIX Project** modelo no SDK para criar um pacote VSIX para implantar o item de projeto. Para obter mais informações, consulte [estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir o passo a passo:  
+  Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir o passo a passo:  
   
--   Assistentes para modelos de projeto e item no Visual Studio. Para obter mais informações, consulte [como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md) e o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface.  
+- Assistentes para modelos de projeto e item no Visual Studio. Para obter mais informações, consulte [como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md) e o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface.  
   
--   Ações personalizadas no SharePoint. Para obter mais informações, consulte [ação personalizada](http://go.microsoft.com/fwlink/?LinkId=177800).  
+- Ações personalizadas no SharePoint. Para obter mais informações, consulte [ação personalizada](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
 ## <a name="create-the-wizard-project"></a>Criar o projeto de Assistente
  Para concluir este passo a passo, você deve adicionar um projeto à solução CustomActionProjectItem que você criou na [instruções passo a passo: criar um item de projeto de ação personalizado com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Você implementará o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> de interface e definir o Assistente de interface do usuário neste projeto.  
@@ -306,7 +306,7 @@ ms.locfileid: "42635194"
   
 13. No **descrição** , digite **abre o site do SharePoint Developer Center**.  
   
-14. No **URL** , digite **http://msdn.microsoft.com/sharepoint/default.aspx**e, em seguida, escolha o **concluir** botão.  
+14. No **URL** , digite **https://docs.microsoft.com/sharepoint/dev/** e, em seguida, escolha o **concluir** botão.  
   
      O Visual Studio adiciona um item que é denominado **CustomAction1** ao seu projeto e abrirá o *Elements. XML* arquivo no editor. Verifique *Elements. XML* contém os valores que você especificou no assistente.  
   
@@ -327,7 +327,7 @@ ms.locfileid: "42635194"
   
      O **as configurações da lista** página será exibida.  
   
-4.  Sob o **comunicações** título na parte superior da página, escolha o **Central de desenvolvedores do SharePoint** vincular, verifique se o navegador abre o site http://msdn.microsoft.com/sharepoint/default.aspxe, em seguida, feche o navegador.  
+4.  Sob o **comunicações** título na parte superior da página, escolha o **Central de desenvolvedores do SharePoint** vincular, verifique se o navegador abre o site https://docs.microsoft.com/sharepoint/dev/e, em seguida, feche o navegador.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Limpando o computador de desenvolvimento
  Após concluir o teste o item de projeto, remova o modelo de item de projeto da instância experimental do Visual Studio.  

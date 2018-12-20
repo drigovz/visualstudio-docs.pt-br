@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3578573a2020dbf048e3da4e0bf44a54df07860b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 08723f30957ece57af0f666a5464907a686ad604
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668064"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220723"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analisar o uso de energia em aplicativos UWP
 O criador de perfil de **Consumo de Energia** do Visual Studio ajuda a analisar o consumo de energia de aplicativos UWP em dispositivos tablet de baixa capacidade executados o tempo todo ou parte do tempo usando apenas a própria bateria. Em um dispositivo alimentado por bateria, um aplicativo que consome muita energia pode causar grande insatisfação do cliente fazendo com que ele acabe desinstalando o programa. A otimização do consumo de energia pode aumentar a adoção e o uso de seu aplicativo pelos clientes.  
@@ -35,15 +35,15 @@ O criador de perfil de **Consumo de Energia** do Visual Studio ajuda a analisar 
   
  O criador de perfil Consumo de Energia usa estas definições de *potência* e *energia*:  
   
--   *Potência* mede a taxa com que a força é usada para executar o trabalho realizado em determinado período. Em ciências elétricas, a unidade padrão de potência é o *watt*, a qual é definida como a taxa em que o trabalho é executado quando um ampère de corrente flui através de uma diferença de potencial elétrico de um volt. No gráfico **Consumo de Energia**, as unidades são exibidas como miliwatts **mW**, que são um milésimo de um watt.  
+- *Potência* mede a taxa com que a força é usada para executar o trabalho realizado em determinado período. Em ciências elétricas, a unidade padrão de potência é o *watt*, a qual é definida como a taxa em que o trabalho é executado quando um ampère de corrente flui através de uma diferença de potencial elétrico de um volt. No gráfico **Consumo de Energia**, as unidades são exibidas como miliwatts **mW**, que são um milésimo de um watt.  
   
-     Observe que, como a potência é uma taxa, ela tem uma direção (o trabalho pode aumentar ou diminuir em um período) e uma velocidade (quanto o trabalho aumenta ou diminui).  
+   Observe que, como a potência é uma taxa, ela tem uma direção (o trabalho pode aumentar ou diminuir em um período) e uma velocidade (quanto o trabalho aumenta ou diminui).  
   
--   *Energia* mede a potência total, como capacidade ou potencial, como na capacidade de alimentação de uma bateria ou como no total de energia consumida durante um período. A unidade de energia é um watt-hora, a potência de um watt constantemente aplicada por uma hora. No **Resumo de Energia**, as unidades são exibidas como miliwatt-horas **mW-h**.  
+- *Energia* mede a potência total, como capacidade ou potencial, como na capacidade de alimentação de uma bateria ou como no total de energia consumida durante um período. A unidade de energia é um watt-hora, a potência de um watt constantemente aplicada por uma hora. No **Resumo de Energia**, as unidades são exibidas como miliwatt-horas **mW-h**.  
   
- ![Capacidade de energia, energia usada, total de energia usada](../profiling/media/energyprof_capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
+  ![Capacidade de energia, energia usada, total de energia usada](../profiling/media/energyprof_capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
   
- Por exemplo, uma bateria totalmente carregada em um tablet tem uma determinada quantidade de energia armazenada. Como a energia é usada para executar tarefas como comunicação por rede, cálculo de valores ou exibição de gráficos, a energia da bateria se dissipa em diferentes taxas. Para qualquer período, a potência total consumida também é medida por energia.  
+  Por exemplo, uma bateria totalmente carregada em um tablet tem uma determinada quantidade de energia armazenada. Como a energia é usada para executar tarefas como comunicação por rede, cálculo de valores ou exibição de gráficos, a energia da bateria se dissipa em diferentes taxas. Para qualquer período, a potência total consumida também é medida por energia.  
   
 ## <a name="identify-scenarios-with-user-marks"></a>Identificar cenários com marcas de usuário  
  Você também pode adicionar *marcas de usuário* aos seus dados de perfil para ajudar a identificar áreas na régua da linha do tempo.  
@@ -54,15 +54,15 @@ O criador de perfil de **Consumo de Energia** do Visual Studio ajuda a analisar 
   
  **Adicionar marcas a código C#, Visual Basic, C++**  
   
- Para adicionar uma marca do usuário ao código C#, Visual Basic, C++, crie primeiro um objeto [Windows.Foundation.Diagnostics LoggingChannel](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx). Em seguida, insira chamadas para os métodos [LoggingChannel.LogMessage](http://msdn.microsoft.com/library/windows/apps/dn264210.aspx) nos pontos do código que você deseja marcar. Use [LoggingLevel.Information](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) nas chamadas.  
+ Para adicionar uma marca do usuário ao código C#, Visual Basic, C++, crie primeiro um objeto [Windows.Foundation.Diagnostics LoggingChannel](xref:Windows.Foundation.Diagnostics.LoggingChannel). Em seguida, insira chamadas para os métodos [LoggingChannel.LogMessage](xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A) nos pontos do código que você deseja marcar. Use [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) nas chamadas.  
   
  Quando o método é executado, uma marca de usuário é adicionada aos dados de criação de perfil juntamente com uma mensagem.  
   
 > [!NOTE]
->  -   Windows.Foundation.Diagnostics LoggingChannel implementa a interface [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) (projetada como [System.IDisposable](/dotnet/api/system.idisposable) em C# e VB). Para evitar vazamento de recursos do sistema operacional, chame [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) em C# e VB) quando tiver terminado com um canal de registro em log.  
-> -   Cada canal de registro em log aberto deve ter um nome exclusivo. Tentar criar um novo canal de registro em log com o mesmo nome de um canal não descartado gera uma exceção.  
+> - Windows.Foundation.Diagnostics LoggingChannel implementa a interface [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) (projetada como [System.IDisposable](/dotnet/api/system.idisposable) em C# e VB). Para evitar vazamento de recursos do sistema operacional, chame [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) em C# e VB) quando tiver terminado com um canal de registro em log.  
+>   -   Cada canal de registro em log aberto deve ter um nome exclusivo. Tentar criar um novo canal de registro em log com o mesmo nome de um canal não descartado gera uma exceção.  
   
- Consulte [Exemplo de LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) do SDK do Windows para obter exemplos.  
+ Consulte [Exemplo de LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) do SDK do Windows para obter exemplos.  
   
  **Adicionar marcas ao código JavaScript**  
   
@@ -80,9 +80,9 @@ if (performance && performance.mark) {
  Para obter boas estimativas, você deverá criar o perfil de consumo de energia do aplicativo em um dispositivo com baixo consumo de energia alimentado por bateria. Como o Visual Studio não funciona na maioria desses dispositivos, você precisará conectar seu computador com o Visual Studio ao dispositivo usando as ferramentas remotas do Visual Studio. Para se conectar a um dispositivo remoto, você precisa configurar o projeto do Visual Studio e o dispositivo remoto. Consulte [Executar aplicativos UWP em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md) para obter mais informações.  
   
 > [!TIP]
->  -   Não é recomendado criar o perfil de energia no simulador UWP ou no computador com o Visual Studio. A criação de perfil no dispositivo real fornece dados muito mais realistas.  
-> -   Crie o perfil no dispositivo de destino enquanto ele é alimentado por bateria.  
-> -   Feche outros aplicativos que possam usar os mesmos recursos (rede, CPU ou tela).  
+> - Não é recomendado criar o perfil de energia no simulador UWP ou no computador com o Visual Studio. A criação de perfil no dispositivo real fornece dados muito mais realistas.  
+>   -   Crie o perfil no dispositivo de destino enquanto ele é alimentado por bateria.  
+>   -   Feche outros aplicativos que possam usar os mesmos recursos (rede, CPU ou tela).  
   
 ## <a name="collect-energy-profile-data-for-your-app"></a>Coletar dados do perfil de energia para seu aplicativo  
   
@@ -106,15 +106,15 @@ if (performance && performance.mark) {
 ## <a name="collect-energy-profile-data-for-an-installed-app"></a>Coletar dados do perfil de energia para um aplicativo instalado  
  A ferramenta Consumo de Energia só pode ser executada em aplicativos UWP que são iniciados a partir de uma solução do Visual Studio ou são instalados a partir da Microsoft Store. Quando uma solução é aberta no Visual Studio, o destino padrão é **Projeto de Inicialização**. Para direcionar um aplicativo instalado:  
   
-1.  Escolha **Alterar Destino** e escolha **Aplicativo Instalado**.  
+1. Escolha **Alterar Destino** e escolha **Aplicativo Instalado**.  
   
-2.  Na lista **Selecionar Pacote do Aplicativo Instalado**, escolha o destino.  
+2. Na lista **Selecionar Pacote do Aplicativo Instalado**, escolha o destino.  
   
-3.  Escolha **Consumo de Energia** na página de hub de diagnóstico.  
+3. Escolha **Consumo de Energia** na página de hub de diagnóstico.  
   
-4.  Escolha **Iniciar** para iniciar a criação de perfil.  
+4. Escolha **Iniciar** para iniciar a criação de perfil.  
   
- Para interromper a criação do perfil, retorne ao Visual Studio (Alt + Tab) e selecione **Interromper a coleta** na página Hub de diagnóstico.  
+   Para interromper a criação do perfil, retorne ao Visual Studio (Alt + Tab) e selecione **Interromper a coleta** na página Hub de diagnóstico.  
   
 ## <a name="analyze-energy-profile-data"></a>Analisar dados do perfil de energia  
  Os dados do perfil de energia são exibidos na janela do documento do Visual Studio:  
@@ -147,7 +147,7 @@ if (performance && performance.mark) {
   
 ## <a name="other-resources"></a>Outros recursos  
   
--   As seções **Estado da conexão e gerenciamento de custo** para [C#/VB/C++ e XAML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) e [JavaScript e HTML](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) no Centro de Desenvolvimento do Windows descrevem as APIs do Windows que fornecem informações sobre a conectividade de rede que seu aplicativo pode usar para minimizar os custos de tráfego de rede.  
+-   As seções **Estado da conexão e gerenciamento de custo** para [C#/VB/C++ e XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) e [JavaScript e HTML](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) no Centro de Desenvolvimento do Windows descrevem as APIs do Windows que fornecem informações sobre a conectividade de rede que seu aplicativo pode usar para minimizar os custos de tráfego de rede.  
   
      O simulador do Visual Studio para aplicativos UWP permite que você simule propriedades de conexão de dados das APIs de informações de rede. Consulte [Executar aplicativos UWP no simulador](../debugger/run-windows-store-apps-in-the-simulator.md)  
   

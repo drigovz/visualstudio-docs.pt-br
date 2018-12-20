@@ -1,7 +1,7 @@
 ---
 title: Definindo formas e conectores | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,34 +12,32 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ee16ff9dcca787fdf35101aff69348ccea42cfcf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463790"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812940"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definindo formas e conectores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definindo formas e conectores](https://docs.microsoft.com/visualstudio/modeling/defining-shapes-and-connectors).  
-  
 Há diversos tipos básicos de formas possíveis de serem usados para exibir informações em um diagrama em uma linguagem específica do domínio (DSL).  
   
 ##  <a name="shapeTypes"></a> Tipos básicos de formas e conectores  
  Um diagrama DSL mostra uma coleção de *formas* interconectadas por linhas ou *conectores*.  Geralmente, mas não sempre:  
   
--   As formas são representações visíveis dos elementos de modelo.  
+- As formas são representações visíveis dos elementos de modelo.  
   
--   Os conectores representam as relações de referência.  
+- Os conectores representam as relações de referência.  
   
--   O diagrama representa a instância da raiz do modelo.  
+- O diagrama representa a instância da raiz do modelo.  
   
--   Relações de incorporações entre os elementos de modelo são mostradas por confinamento. Por exemplo, os elementos que representam portas de componentes são incorporados no componente.  
+- Relações de incorporações entre os elementos de modelo são mostradas por confinamento. Por exemplo, os elementos que representam portas de componentes são incorporados no componente.  
   
- Esses padrões não são impostos, mas têm melhor suporte. Quando você projetar uma DSL, tenha em mente que o design das relações de incorporação deve ser influenciado por como você deseja apresentar o modelo na tela. Por outro lado, as relações de referência devem refletir os conceitos de seu domínio dos negócios.  
+  Esses padrões não são impostos, mas têm melhor suporte. Quando você projetar uma DSL, tenha em mente que o design das relações de incorporação deve ser influenciado por como você deseja apresentar o modelo na tela. Por outro lado, as relações de referência devem refletir os conceitos de seu domínio dos negócios.  
   
- Os seguintes tipos de formas estão disponíveis:  
+  Os seguintes tipos de formas estão disponíveis:  
   
 |Tipo de forma|Descrição|  
 |----------------|-----------------|  

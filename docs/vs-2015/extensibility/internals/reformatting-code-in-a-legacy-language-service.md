@@ -1,7 +1,7 @@
 ---
 title: Reformatar o código em um serviço de linguagem herdado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5361706e4dbb3c009de903a53cc78fcb7b93634
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95b878448904c194bd758d266e67599369502fe6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474672"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779262"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Reformatando o código em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [reformatar o código em um serviço de linguagem herdado](https://docs.microsoft.com/visualstudio/extensibility/internals/reformatting-code-in-a-legacy-language-service).  
-  
 No [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] código-fonte pode ser reformatado ao normalizar o uso de espaços em branco e recuos. Isso pode incluir inserindo ou remoção de espaços ou tabulações no início de cada linha, adicionar novas linhas entre as linhas ou substituindo espaços por tabulações ou guias com espaços.  
   
 > [!NOTE]

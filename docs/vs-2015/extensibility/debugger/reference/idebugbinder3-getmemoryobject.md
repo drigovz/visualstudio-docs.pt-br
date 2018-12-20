@@ -1,7 +1,7 @@
 ---
 title: IDebugBinder3::GetMemoryObject | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,35 +17,33 @@ ms.assetid: 71d959c7-45df-485f-b0ee-f1c0439d54fb
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4b307995ae13543b923c04852ff4addaf7bcbe57
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f93d6a76abdca5104a6187405d2141b125eaa342
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475865"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777494"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugBinder3::GetMemoryObject](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbinder3-getmemoryobject).  
-  
 Esse método recupera um objeto de memória que representa a memória que esse objeto está associado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT GetMemoryObject(  
-   IDebugField*   pField,  
-   UINT64         uConstant,  
-   IDebugObject** ppObject  
+HRESULT GetMemoryObject(  
+   IDebugField*   pField,  
+   UINT64         uConstant,  
+   IDebugObject** ppObject  
 );  
 ```  
   
 ```csharp  
-int GetMemoryObject(  
-   IDebugField      pField,  
-   long             uConstant,  
-   out IDebugObject ppObject  
+int GetMemoryObject(  
+   IDebugField      pField,  
+   long             uConstant,  
+   out IDebugObject ppObject  
 );  
 ```  
   

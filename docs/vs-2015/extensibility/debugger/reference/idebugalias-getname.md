@@ -1,7 +1,7 @@
 ---
 title: IDebugAlias::GetName | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: ac2d8891-56b5-40ef-9866-ed74f18bb043
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9815f23814b227dec07ae41e8b3f5fb0a27e2a39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f0e8c57f8ed011f732bdabbe04a720b98da90b5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465154"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742695"
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugAlias::GetName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugalias-getname).  
-  
 Obtém o nome desse alias.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT GetName(  
-   BSTR* pbstrName  
+HRESULT GetName(  
+   BSTR* pbstrName  
 );  
 ```  
   
 ```csharp  
-int GetName(  
-   out string pbstrName  
+int GetName(  
+   out string pbstrName  
 );  
 ```  
   

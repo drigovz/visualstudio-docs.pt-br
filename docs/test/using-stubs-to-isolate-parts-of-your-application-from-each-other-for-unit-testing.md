@@ -1,5 +1,5 @@
 ---
-title: Usando stubs para isolar partes de seu aplicativo para teste de unidade no Visual Studio
+title: Usando stubs para isolar partes do aplicativo para teste de unidade
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 9ee4fbcec25bdfa454f4c009f4d676a5291b7289
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2bf3441deef786a210b970fe9daaa7b30388d46e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382562"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065526"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Use stubs para isolar partes de seu aplicativo umas das outras para teste de unidade
 
@@ -447,7 +447,7 @@ Os tipos de stub são criados para oferecer uma experiência de depuração simp
 
 Cada tipo de stub gerado contém uma instância da interface `IStubBehavior` (pela propriedade `IStub.InstanceBehavior`). O comportamento é chamado sempre que um cliente chama um membro sem delegado personalizado anexado. Se o comportamento não for definido, ele usará a instância retornada pela propriedade `StubsBehaviors.Current`. Por padrão, essa propriedade retorna um comportamento que gerou uma exceção `NotImplementedException`.
 
-O comportamento pode ser alterado a qualquer momento definindo a propriedade `InstanceBehavior` em qualquer instância do stub. Por exemplo, o seguinte trecho altera um comportamento que não faz nada ou retorna o valor padrão do tipo de retorno: `default(T)`:
+O comportamento pode ser alterado a qualquer momento definindo a propriedade `InstanceBehavior` em qualquer instância do stub. Por exemplo, o seguinte snippet altera um comportamento que não faz nada ou retorna o valor padrão do tipo de retorno: `default(T)`:
 
 ```csharp
 // unit test code

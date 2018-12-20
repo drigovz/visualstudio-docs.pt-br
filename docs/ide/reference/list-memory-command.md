@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f3ce3aee4a7a498600da4eb0c99210c9c20d00f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 57d6c8c7821df8bd22723900ebd011c110a1857f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703412"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815176"
 ---
 # <a name="list-memory-command"></a>Comando Listar Memória
 Exibe o conteúdo do intervalo de memória especificado.
@@ -71,7 +71,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  Veja uma lista dos aliases disponíveis para o comando **Debug.ListMemory**:
 
 |Alias|Comando e opções|
-|-----------|--------------------------|
+|-----------| - |
 |**d**|Debug.ListMemory|
 |**da**|Debug.ListMemory /Ansi|
 |**db**|Debug.ListMemory /Format:OneByte|

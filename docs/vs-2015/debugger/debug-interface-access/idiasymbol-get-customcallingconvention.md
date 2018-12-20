@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_customcallingconvention | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaSymbol::get_customCallingConvention method
 ms.assetid: 0aa97951-f7e1-4fa5-a87f-2920460c122d
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b8e9595f325186f855a25839aaaab005f9f0057
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1268dc1e3db7a936f2d5dc86608859186d21f7d8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463308"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803208"
 ---
 # <a name="idiasymbolgetcustomcallingconvention"></a>IDiaSymbol::get_customCallingConvention
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_customcallingconvention](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-customcallingconvention).  
-  
 Recupera um sinalizador que especifica se a função tem uma convenção de chamada personalizada.  
   
 ## <a name="syntax"></a>Sintaxe  

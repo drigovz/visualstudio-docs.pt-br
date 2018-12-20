@@ -1,7 +1,7 @@
 ---
 title: Alterando as configurações de exibição usando a API herdada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c6ffd7796e0f90748ed46050d5d07ce2df210db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df84fa92cb0da8dd408b1cc8717628afa3d5ba19
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476286"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730628"
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Alterando as configurações de exibição usando a API herdada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [alterando as configurações de exibição usando a API herdada](https://docs.microsoft.com/visualstudio/extensibility/changing-view-settings-by-using-the-legacy-api).  
-  
 As configurações para recursos do editor de núcleo, como quebra automática de linha, margem de seleção e espaço virtual, podem ser alteradas pelo usuário por meio das **opções** caixa de diálogo. No entanto, também é possível alterar essas configurações programaticamente.  
   
 ## <a name="changing-settings-by-using-the-legacy-api"></a>Alterar as configurações usando a API herdada  

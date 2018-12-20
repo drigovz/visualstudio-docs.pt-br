@@ -1,5 +1,5 @@
 ---
-title: Especificar eventos de build personalizados no Visual Studio
+title: Especificar eventos de build personalizados
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f439a8bb1ae559e915769f8ea89ef7f4bf863
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e6c5bde6b6dce7655043f3dc766a5faa81fa944e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945916"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055122"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Especificar eventos de build personalizados no Visual Studio
 
@@ -25,9 +25,9 @@ Ao especificar um evento de build personalizado, é possível executar comandos 
 
  Para obter informações específicas sobre a linguagem de programação que está sendo usada, consulte os seguintes tópicos:
 
--   Visual Basic – [Como especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+-   Visual Basic – [Como: Especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   C# e F # – [Como especificar eventos de build (C#)](../ide/how-to-specify-build-events-csharp.md).
+-   C# e F# – [Como: Especificar eventos de build (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 -   Visual C++ – [Especificar eventos de build](/cpp/ide/specifying-build-events).
 
@@ -37,28 +37,28 @@ Os eventos de build seguem a mesma sintaxe dos comandos do DOS, mas é possível
 
  Para obter melhores resultados, siga estas dicas de formatação:
 
--   Adicione uma instrução `call` antes de todos os eventos de build que executam arquivos *.bat*.
+- Adicione uma instrução `call` antes de todos os eventos de build que executam arquivos *.bat*.
 
-     Exemplo: `call C:\MyFile.bat`
+   Exemplo: `call C:\MyFile.bat`
 
-     Exemplo: `call C:\MyFile.bat call C:\MyFile2.bat`
+   Exemplo: `call C:\MyFile.bat call C:\MyFile2.bat`
 
--   Coloque os caminhos de arquivo entre aspas.
+- Coloque os caminhos de arquivo entre aspas.
 
-     Exemplo (para [!INCLUDE[win8](../debugger/includes/win8_md.md)]): “%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe” – se “$(TargetPath)”
+   Exemplo (para [!INCLUDE[win8](../debugger/includes/win8_md.md)]): “%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe” – se “$(TargetPath)”
 
--   Separe vários comandos usando quebras de linha.
+- Separe vários comandos usando quebras de linha.
 
--   Inclua curingas, conforme necessário.
+- Inclua curingas, conforme necessário.
 
-     Exemplo: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
+   Exemplo: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
 
-    > [!NOTE]
-    >  `%I` no código acima deve ser `%%I` em scripts em lote.
+  > [!NOTE]
+  >  `%I` no código acima deve ser `%%I` em scripts em lote.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)
 - [Caixa de diálogo da linha de comando do evento de pré-build/evento de pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Caracteres especiais do MSBuild](../msbuild/msbuild-special-characters.md)
-- [Passo a passo: Compilar um aplicativo](../ide/walkthrough-building-an-application.md)
+- [Passo a passo: Criar um aplicativo](../ide/walkthrough-building-an-application.md)

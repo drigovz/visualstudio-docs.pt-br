@@ -1,5 +1,5 @@
 ---
-title: Recolher e expandir as regiões do código no Visual Studio
+title: Recolher e expandir as regiões de código
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,16 +17,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6c8102eb2bc94785d36256fc0c5653146cc5c76
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: b39e9613e36b45f812738ab4eab6b945727b196b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447200"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064699"
 ---
 # <a name="outlining"></a>Estrutura de tópicos
 
 Você pode optar por ocultar a exibição de algum código recolhendo uma região do código para que ele apareça sob um sinal de adição (**+**). Você expande uma região recolhida clicando no sinal de adição. Se for um usuário de teclado, você poderá escolher **Ctrl**+**M**+**M** para recolher e expandir. Você também pode recolher uma região de estrutura de tópicos clicando duas vezes em qualquer linha na região na margem da estrutura de tópicos, que aparece à esquerda do código. Você pode ver o conteúdo de uma região recolhida como uma dica de ferramenta quando focaliza a região recolhida.
+
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Editor de código-fonte (Visual Studio para Mac)](/visualstudio/mac/source-editor).
 
 As regiões na margem da estrutura de tópicos também são realçadas quando você focaliza a margem com o mouse. A cor de realce padrão pode parecer bastante esmaecida em algumas configurações de cor. Você pode alterá-la em **Ferramentas** > **Opções** > **Ambiente** > **Fontes e Cores**  >  **Região recolhível**.
 
@@ -50,8 +53,9 @@ Os comandos a seguir podem ser encontrados no submenu **Editar** > **Estrutura d
 |Recolher bloco:\<limite lógico>|(Visual C++) Recolhe uma região na função que contém o ponto de inserção. Por exemplo, se o ponto de inserção estiver dentro de um loop, o loop será ocultado.|
 |Recolher tudo: \<estruturas lógicas>|(Visual C++) Recolhe todas as estruturas de dentro da função.|
 
-Você também pode usar o SDK do Visual Studio para definir as regiões de texto que deseja expandir ou recolher. Consulte [Instruções passo a passo: estrutura de tópicos](../extensibility/walkthrough-outlining.md).
+Você também pode usar o SDK do Visual Studio para definir as regiões de texto que deseja expandir ou recolher. Confira [Passo a passo: Estrutura de tópicos](../extensibility/walkthrough-outlining.md).
 
 ## <a name="see-also"></a>Consulte também
 
 - [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Editor de código-fonte (Visual Studio para Mac)](/visualstudio/mac/source-editor)

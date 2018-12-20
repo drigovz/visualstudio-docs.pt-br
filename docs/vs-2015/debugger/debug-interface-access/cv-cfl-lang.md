@@ -1,7 +1,7 @@
 ---
 title: CV_CFL_LANG | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - CV_CFL_LANG enumeration
 ms.assetid: 4e8e0613-ad02-4de9-9f46-e4753c5b0251
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aaf07a00124018e4e254cae0c059b6f1b5f1be2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6e2aa402d3f882d83525b180707653b97533e32
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464691"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724794"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [CV_CFL_LANG](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/cv-cfl-lang).  
-  
 Especifica a linguagem de código fonte do aplicativo ou módulo vinculado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-typedef enum CV_CFL_LANG {   
+typedef enum CV_CFL_LANG {   
    CV_CFL_C       = 0x00,  
    CV_CFL_CXX     = 0x01,  
    CV_CFL_FORTRAN = 0x02,  

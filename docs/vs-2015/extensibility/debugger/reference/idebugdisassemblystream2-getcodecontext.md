@@ -1,7 +1,7 @@
 ---
 title: IDebugDisassemblyStream2::GetCodeContext | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: a6d0ae82-7617-4915-9713-369abe3e2e53
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c3b3b2c94a778c5684cd1eee2436a8db7dad87f2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5ee0aaa2511a85135ad1346fa1e3eea0067dd0f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462686"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797709"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugDisassemblyStream2::GetCodeContext](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext).  
-  
 Retorna um objeto de contexto de código correspondente a um identificador de local de código especificada.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetCodeContext(   
+HRESULT GetCodeContext(   
    UINT64               uCodeLocationId,  
    IDebugCodeContext2** ppCodeContext  
 );  
 ```  
   
 ```csharp  
-int GetCodeContext(   
+int GetCodeContext(   
    ulong                  uCodeLocationId,  
    out IDebugCodeContext2 ppCodeContext  
 );  

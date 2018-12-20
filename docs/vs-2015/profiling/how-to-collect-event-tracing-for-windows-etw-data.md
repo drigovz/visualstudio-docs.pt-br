@@ -1,7 +1,7 @@
 ---
 title: Como coletar dados de ETW (Rastreamento de Eventos para Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,21 +17,19 @@ helpviewer_keywords:
 - performance tools, enabling event trace providers
 ms.assetid: aa2261fe-d5f5-49fc-a171-d18842e1dc7d
 caps.latest.revision: 31
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9f3476a5aa27075f28d9d02f8ca7167cd3f7e64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b840f320495437bbabb35290b81a87bc2db545d5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473919"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762497"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Como coletar dados de Rastreamento de Eventos para Windows (ETW)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: dados coletar Event Tracing for Windows (ETW)](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-event-tracing-for-windows-etw-data).  
-  
 O ETW (Rastreamento de Eventos para Windows) é um recurso de rastreamento eficiente em nível de kernel que permite que o criador de perfil registre log de eventos de kernel ou de eventos definidos pelo aplicativo. Os dados coletados pelo provedor de eventos podem ser exibidos somente usando a opção /**Summary:ETW** da ferramenta de linha de comando [VSPerfReport](../profiling/vsperfreport.md). Você pode usar esse relatório para determinar o local em que ocorrem problemas de desempenho no aplicativo.  
   
  **Requisitos**  

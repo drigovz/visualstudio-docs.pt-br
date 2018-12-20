@@ -1,7 +1,7 @@
 ---
 title: NATIVE_ADDRESS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7a0cd085-bfc8-45cc-a3d4-4459070e207a
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 361bfb482f441dc464196adc28d041f986d9684f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4350329ae2628f27dc9940cc0e1597176210545
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474362"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810397"
 ---
 # <a name="nativeaddress"></a>NATIVE_ADDRESS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [NATIVE_ADDRESS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/native-address).  
-  
 Essa estrutura representa um endereço nativo.  
   
 ## <a name="syntax"></a>Sintaxe  

@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_targetrelativevirtualaddress | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_targetRelativeVirtualAddress method
 ms.assetid: 49a159f3-6943-44d3-90a3-0dba51e8a7ec
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 673146a4af83100e5ea6e92112fd66ec0cc45f15
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08dbc4e2791970953b0bfdf41d3232e554b3cca7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468307"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734414"
 ---
 # <a name="idiasymbolgettargetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_targetrelativevirtualaddress](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-targetrelativevirtualaddress).  
-  
 Recupera o endereço virtual relativo (RVA) de um destino da conversão.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_targetRelativeVirtualAddress (   
+HRESULT get_targetRelativeVirtualAddress (   
    DWORD* pRetVal  
 );  
 ```  

@@ -1,7 +1,7 @@
 ---
 title: Medir o uso de memória em seus aplicativos
 description: Encontre vazamentos de memória e memória ineficiente enquanto estiver depurando com a ferramenta de diagnóstico integrada ao depurador.
-ms.custom: mvc
+ms.custom: seodec18
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6924ff846da2ca7fb3ad7591f6d1c8e07f89b0d
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 622f35ccbe29130dea3b35b96373da0c8b39e0b7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627094"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052071"
 ---
-# <a name="profile-memory-usage-in-visual-studio"></a>Uso de memória de perfil no Visual Studio
+# <a name="measure-memory-usage-in-visual-studio"></a>Medir o uso de memória no Visual Studio
 Encontre vazamentos de memória e memória ineficiente enquanto estiver depurando com a ferramenta de diagnóstico **Uso de Memória** integrada ao depurador. A ferramenta Uso de Memória permite que você obtenha um ou mais *instantâneos* do heap de memória gerenciada e do heap de memória nativa para entender o impacto do uso de memória dos tipos de objeto. Você pode coletar instantâneos de aplicativos .NET, nativos ou mistos (.NET e nativos).  
   
  O gráfico a seguir mostra a janela **Ferramentas de Diagnóstico** (disponível no Visual Studio 2015 Atualização 1 e versões posteriores):  
@@ -63,11 +63,11 @@ Neste tutorial, você irá:
      ![Guia Resumo das Ferramentas de Diagnóstico](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     >  Como a coleta de dados de memória pode afetar o desempenho de depuração de seus aplicativos mistos ou nativos, os instantâneos de memória são desabilitados por padrão. Para habilitar instantâneos de aplicativos mistos ou nativos, inicie uma sessão de depuração (Tecla de atalho: **F5**). Quando a janela **Ferramentas de Diagnóstico** for exibida, escolha a guia **Uso de Memória** e, em seguida, **Criação de Perfil de Heap**.  
+     >  Como a coleta de dados de memória pode afetar o desempenho de depuração de seus aplicativos mistos ou nativos, os instantâneos de memória são desabilitados por padrão. Para habilitar instantâneos em aplicativos nativos ou de modo misto, inicie uma sessão de depuração (tecla de atalho: **F5**). Quando a janela **Ferramentas de Diagnóstico** for exibida, escolha a guia **Uso de Memória** e, em seguida, **Criação de Perfil de Heap**.  
      >   
      >  ![Habilitar instantâneos](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
      >   
-     >  Pare (tecla de atalho: **Shift**+**F5**) e reinicie a depuração.  
+     >  Interrompa (tecla de atalho: **Shift**+**F5**) e reinicie a depuração.  
 
 6.  Para obter um instantâneo no início da sessão de depuração, escolha **Tirar instantâneo** na barra de ferramentas de resumo **Uso de Memória**. (Talvez seja útil definir um ponto de interrupção aqui também.)
 
@@ -101,14 +101,14 @@ Quando você tira vários instantâneos, as células da tabela de resumo incluem
 
 Para analisar o uso da memória, clique em um dos links que abre um relatório detalhado do uso de memória:  
 
--   Para exibir detalhes da diferença entre o instantâneo atual e o instantâneo anterior, escolha o link de alteração à esquerda da seta (![Aumento do Uso de Memória](../profiling/media/prof-tour-mem-usage-up-arrow.png "Aumento do Uso de Memória")). Uma seta vermelha indica um aumento no uso de memória e uma seta verde indica uma diminuição.
+- Para exibir detalhes da diferença entre o instantâneo atual e o instantâneo anterior, escolha o link de alteração à esquerda da seta (![Aumento do Uso de Memória](../profiling/media/prof-tour-mem-usage-up-arrow.png "Aumento do Uso de Memória")). Uma seta vermelha indica um aumento no uso de memória e uma seta verde indica uma diminuição.
 
-    > [!TIP]
-    >  Para ajudar a identificar problemas de memória mais rapidamente, os relatórios de comparação são classificados pelos tipos de objeto que mais aumentaram no número geral (clique no link de alteração na coluna **Objetos (Comparação)**) ou que mais aumentaram quanto ao tamanho geral do heap (clique no link de alteração na coluna **Tamanho do Heap (Comparação)**).
+  > [!TIP]
+  >  Para ajudar a identificar problemas de memória mais rapidamente, os relatórios de comparação são classificados pelos tipos de objeto que mais aumentaram no número geral (clique no link de alteração na coluna **Objetos (Comparação)**) ou que mais aumentaram quanto ao tamanho geral do heap (clique no link de alteração na coluna **Tamanho do Heap (Comparação)**).
 
--   Para exibir detalhes apenas do instantâneo selecionado, clique no link que não é de alteração. 
+- Para exibir detalhes apenas do instantâneo selecionado, clique no link que não é de alteração. 
   
- O relatório é exibido em uma janela separada.   
+  O relatório é exibido em uma janela separada.   
   
 ### <a name="managed-types-reports"></a>Relatórios de tipos gerenciados  
  Escolha o link atual de uma célula **Objetos (Diff)** ou **Alocações (Diff)** da tabela de resumo de Uso de Memória.  
@@ -148,27 +148,27 @@ Para analisar o uso da memória, clique em um dos links que abre um relatório d
   
 ### <a name="change-diff-reports"></a>Relatórios de comparação (Diff)  
   
--   Escolha o link de alteração em uma célula da tabela de resumo da guia **Uso de Memória** na janela **Ferramentas de Diagnóstico**.  
+- Escolha o link de alteração em uma célula da tabela de resumo da guia **Uso de Memória** na janela **Ferramentas de Diagnóstico**.  
   
-     ![Escolher um relatório de comparação](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+   ![Escolher um relatório de comparação](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
--   Escolha um instantâneo na lista **Comparar com** de um relatório gerenciado ou nativo.  
+- Escolha um instantâneo na lista **Comparar com** de um relatório gerenciado ou nativo.  
   
-     ![Escolher um instantâneo na lista Comparar com](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
+   ![Escolher um instantâneo na lista Comparar com](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
- O relatório de comparação adiciona colunas (marcadas com **(Diff)**) ao relatório base que mostra a diferença entre o valor do instantâneo base e o do instantâneo de comparação. Veja como pode ser a aparência de um relatório de comparação Exibição de Tipo Nativo:  
+  O relatório de comparação adiciona colunas (marcadas com **(Diff)**) ao relatório base que mostra a diferença entre o valor do instantâneo base e o do instantâneo de comparação. Veja como pode ser a aparência de um relatório de comparação Exibição de Tipo Nativo:  
   
- ![Exibição de comparação de tipos nativos](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
+  ![Exibição de comparação de tipos nativos](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>Blogs e vídeos  
 
-|         |         |
+| | |
 |---------|---------|
-|  ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo")  |    [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) sobre como usar as ferramentas de diagnóstico que mostra como analisar o uso de memória e o uso de CPU no Visual Studio 2017. |
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) sobre como usar as ferramentas de diagnóstico que mostra como analisar o uso de memória e o uso de CPU no Visual Studio 2017. |
 
  [Analyze CPU and Memory While Debugging](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/) (Analisar a CPU e a memória durante a depuração)  
   
- [Visual C++ Blog: Memory Profiling in Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/) (Blog do Visual C++: Criação de perfil de memória no Visual C++ 2015)  
+ [Blog do Visual C++: Criação de perfil de memória no Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
 
 ## <a name="next-steps"></a>Próximas etapas
 

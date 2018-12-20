@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 999c7d4adf47dfecddd379c9f1252a343583831d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6c5a799a245d2149161809977446d0c005dbe293
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914496"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Visão geral de ferramentas de design de modelo BDC
   Você pode criar um modelo de conectividade de dados comerciais (BDC) usando o Designer de BDC, o **detalhes do método BDC** janela e o **BDC Explorer**.  
@@ -43,13 +43,13 @@ ms.locfileid: "36326212"
 ## <a name="bdc-designer"></a>Designer de BDC
  O Designer de BDC permite que você definir as entidades em seu modelo e organizar visualmente suas relações uns com os outros. Use o Designer de BDC para realizar as seguintes tarefas:  
   
--   Adicione entidades no modelo.  
+- Adicione entidades no modelo.  
   
--   Remova entidades do modelo.  
+- Remova entidades do modelo.  
   
--   Defina relações entre entidades.  
+- Defina relações entre entidades.  
   
- Para abrir o Designer de BDC, duas vezes no arquivo de modelo em seu projeto, ou abra o menu de atalho para o arquivo de modelo e, em seguida, escolha **abrir**. Adicionar uma entidade no modelo arrastando ou copiando uma **Entity** da **caixa de ferramentas** para o designer. Para criar uma associação entre duas entidades, escolha o **associação** no controlar as **caixa de ferramentas**, escolha a primeira entidade e, em seguida, escolha a segunda entidade.  
+  Para abrir o Designer de BDC, duas vezes no arquivo de modelo em seu projeto, ou abra o menu de atalho para o arquivo de modelo e, em seguida, escolha **abrir**. Adicionar uma entidade no modelo arrastando ou copiando uma **Entity** da **caixa de ferramentas** para o designer. Para criar uma associação entre duas entidades, escolha o **associação** no controlar as **caixa de ferramentas**, escolha a primeira entidade e, em seguida, escolha a segunda entidade.  
   
 ## <a name="bdc-method-details-window"></a>Janela de detalhes do método BDC
  Use o **detalhes do método BDC** janela para definir os parâmetros, instâncias e descritores de um método de filtro.  

@@ -1,7 +1,7 @@
 ---
 title: Arquitetura de tipos de projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9c1d940f-8a54-41f7-a8aa-c870e324371c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 714212e75375409564106930e4ff89482095799a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c04f760adc61b011acd51d9bdcdf7275ec6b6a28
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464998"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759040"
 ---
 # <a name="project-types-architecture"></a>Arquitetura de tipos de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [arquitetura de tipos de projeto](https://docs.microsoft.com/visualstudio/extensibility/internals/project-types-architecture).  
-  
 Esta seção contém informações detalhadas sobre a arquitetura de tipos de projeto no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 ## <a name="in-this-section"></a>Nesta seção  

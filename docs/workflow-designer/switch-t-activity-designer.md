@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afa5932ebfaea1e0a7f61997c26e95226ed51b1d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 40e5e735fb80e6071ad9e9423eecb0284a9823cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758010"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878176"
 ---
 # <a name="switcht-activity-designer"></a>Comutador\<T > Designer de atividade
 
@@ -39,7 +39,7 @@ A seguir estão as propriedades de **comutador < T\>**  designer. Todas essas pr
 A tabela a seguir mostra as propriedades mais úteis de <xref:System.Activities.Statements.Switch%601> e descreve como elas são usadas no designer.
 
 |Nome da Propriedade|Necessária|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica o nome amigável do designer de atividade de <xref:System.Activities.Statements.Switch%601> . O valor padrão é a opção < Int32\>. O valor pode ser editado na **propriedades** janela ou diretamente no cabeçalho de designer.<br /><br /> Embora não seja necessário <xref:System.Activities.Activity.DisplayName%2A> restrita, é uma prática recomendada usar um.|
 |<xref:System.Activities.Statements.Switch%601.Expression%2A>|verdadeiro|Especifica a expressão usada para comparar as chaves na coleção dos casos para determinar que casos a executar.|
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||Especifica a atividade executada se nenhuma correspondência for encontrada. Clique o **adicionar uma atividade** botão no designer para abrir o **padrão** caixa em que a atividade pode ser descartada.|

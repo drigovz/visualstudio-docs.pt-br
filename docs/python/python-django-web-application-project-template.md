@@ -1,26 +1,27 @@
 ---
 title: Modelo de projeto Web do Django para Python
-description: Uma visão geral dos modelos do Visual Studio para aplicativos Web escritos em Python usando a estrutura Django.
-ms.date: 07/03/2018
+description: O Visual Studio fornece um modelo abrangente para a criação rápida de aplicativos Web do Django com o Python.
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e847322b1bbbefec5c7013d7e90475e08f42694b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c1aba68ad8cde6aebbc881e61937dc53037b58c5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499537"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066516"
 ---
 # <a name="django-web-project-template"></a>Modelo de projeto Web Django
 
-O [Django](https://www.djangoproject.com/) é uma estrutura do Python de alto nível projetada para um desenvolvimento da Web rápido, seguro e escalonável. O suporte para Python no Visual Studio fornece vários modelos de projeto para configurar a estrutura de um aplicativo Web baseado em Django. Para usar um modelo no Visual Studio, selecione **Arquivo** > **Novo** > **Projeto**, pesquise "Django" e selecione um dentre os modelos **Projeto Web em Branco do Django**, **Projeto Web do Django** e **Projeto Web de Votações do Django**. Confira o [Tutorial – Conheça o Django](learn-django-in-visual-studio-step-01-project-and-solution.md) para obter um passo a passo de todos os modelos.
+O [Django](https://www.djangoproject.com/) é uma estrutura do Python de alto nível projetada para um desenvolvimento da Web rápido, seguro e escalonável. O suporte do Python no Visual Studio fornece vários modelos de projeto para configurar a estrutura de um aplicativo Web baseado em Django. Para usar um modelo no Visual Studio, selecione **Arquivo** > **Novo** > **Projeto**, pesquise "Django" e selecione um dentre os modelos **Projeto Web em Branco do Django**, **Projeto Web do Django** e **Projeto Web de Votações do Django**. Confira o [Tutorial – Conheça o Django](learn-django-in-visual-studio-step-01-project-and-solution.md) para obter um passo a passo de todos os modelos.
 
 O Visual Studio fornece o IntelliSense completo para projetos do Django:
 
@@ -50,19 +51,19 @@ O console de gerenciamento do Django é acessado por meio de vários comandos no
 
 - **Abrir o Shell do Django**: abre um shell no contexto do aplicativo que permite manipular os modelos:
 
-    ![Console](media/template-django-console-shell.png)
+    ![Resultados do comando Shell Abrir o Django](media/template-django-console-shell.png)
 
 - **Banco de Dados de Sincronização do Django**: executa `manage.py syncdb`em uma janela **interativa**:
 
-    ![Console](media/template-django-console-sync-db.png)
+    ![Resultado do comando Sincronizar BD do Django](media/template-django-console-sync-db.png)
 
-- **Coletar Estáticos**: executa `manage.py collectstatic --noinput` para copiar todos os arquivos estáticos para o caminho especificado por `STATIC_ROOT` em *settings.py*. Ao [publicar no Serviço de Aplicativo do Azure](publishing-python-web-applications-to-azure-from-visual-studio.md), os arquivos estáticos são coletados automaticamente como parte da operação de publicação.
+- **Coletar Estáticos**: executa `manage.py collectstatic --noinput` para copiar todos os arquivos estáticos para o caminho especificado por `STATIC_ROOT` em *settings.py*.
 
-    ![Console](media/template-django-console-collect-static.png)
+    ![Resultado do comando Coletar Arquivos Estáticos](media/template-django-console-collect-static.png)
 
 - **Validar**: executa `manage.py validate`, que relata os erros de validação nos modelos instalados especificados por `INSTALLED_APPS` em *settings.py*:
 
-    ![Console](media/template-django-console-validate.png)
+    ![Resultado do comando Validar](media/template-django-console-validate.png)
 
 ## <a name="see-also"></a>Consulte também
 

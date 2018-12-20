@@ -1,7 +1,7 @@
 ---
 title: IEEDataStorage::GetSize | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 33d232c4-1239-4abc-922b-e1bc5b908169
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4c251224a5718d0f7264804c3130e5ea4a5d05f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c11c634db7a0753e08facc66bd6595eaed63956
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472675"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769163"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEEDataStorage::GetSize](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ieedatastorage-getsize).  
-  
 Retorna o número de bytes contidos nesse objeto.  
   
 ## <a name="syntax"></a>Sintaxe  

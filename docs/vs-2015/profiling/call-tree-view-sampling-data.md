@@ -1,7 +1,7 @@
 ---
 title: Modo de exibição de árvore de chamadas – Dados de amostragem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - Call Tree view
 ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7f7f4f435b0b00fb68395d0c00670d7f89c9cb2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc324b621bfc3e472d6eb86227a6081e3384d2af
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467393"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798905"
 ---
 # <a name="call-tree-view---sampling-data"></a>Modo de exibição de árvore de chamadas – Dados de amostragem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [chamar de exibição de árvore – dados de amostragem](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-sampling-data).  
-  
 O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de função que foram percorridos no aplicativo analisado.  
   
 > [!NOTE]

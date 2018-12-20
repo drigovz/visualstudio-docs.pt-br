@@ -1,7 +1,7 @@
 ---
 title: Elemento RequiredFrameworkVersion (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3a3c19b2b13f28939cd362584804441b697925e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e40d52b4b5f194c04b9b46326a7d4d302c871cb5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472913"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755733"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Elemento RequiredFrameworkVersion (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento RequiredFrameworkVersion (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/requiredframeworkversion-element-visual-studio-templates).  
-  
 Especifica a versão mínima do .NET Framework que é exigida pelo modelo. Hierarquia de esquema.  
   
  \<VSTemplate >  

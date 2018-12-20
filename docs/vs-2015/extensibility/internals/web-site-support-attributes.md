@@ -1,7 +1,7 @@
 ---
 title: Atributos de suporte do Site da Web | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3fd60c1ffcb6bb4d3c386cf55fb1f33540bb3dd2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 312d8a760cc7005afc4308b637b12a292bd20329
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474440"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756670"
 ---
 # <a name="web-site-support-attributes"></a>Atributos de suporte a site
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tributos de suporte do Site da Web](https://docs.microsoft.com/visualstudio/extensibility/internals/web-site-support-attributes).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Projeto de site pode ser estendido para fornecer suporte para Web linguagens de programação. O idioma deve ser registrado com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para que os modelos de projeto podem aparecer em de **New Web Site** caixa de diálogo quando o idioma é selecionado.  
   
  O exemplo de IronPython Studio inclui suporte ao site. Você pode encontrá-lo com o [exemplos de VSSDK](../../misc/vssdk-samples.md). Ele inclui as seguintes classes de atributo para registrar o IronPython como uma linguagem de code-behind para novos projetos da Web.  

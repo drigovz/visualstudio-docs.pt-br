@@ -1,7 +1,7 @@
 ---
 title: 'Etapa 4: Adicionar um manipulador de eventos de clique a cada rótulo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,27 +14,25 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92b6e04ef903c1fa6cf7e94b04874e2d6048acd1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93ce8f97f32ac41c4724db3c4cc08389f052f1ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923375"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Etapa 4: Adicionar um manipulador de evento Click a cada rótulo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [etapa 4: adicionar um manipulador de eventos Click a cada rótulo](https://docs.microsoft.com/visualstudio/ide/step-4-add-a-click-event-handler-to-each-label).  
-  
 O jogo da memória funciona desta forma:  
   
-1.  Quando um jogador escolhe um dos quadrados com um ícone oculto, o programa mostra o ícone ao jogador alterando a cor do ícone para preto.  
+1. Quando um jogador escolhe um dos quadrados com um ícone oculto, o programa mostra o ícone ao jogador alterando a cor do ícone para preto.  
   
-2.  Em seguida, o jogador escolhe outro ícone oculto.  
+2. Em seguida, o jogador escolhe outro ícone oculto.  
   
-3.  Se os ícones corresponderem, eles permanecerão visíveis. Caso contrário, os ícones serão ocultados novamente.  
+3. Se os ícones corresponderem, eles permanecerão visíveis. Caso contrário, os ícones serão ocultados novamente.  
   
- Para que seu programa funcione dessa forma, adicione um manipulador de eventos Click que altera a cor do rótulo escolhido.  
+   Para que seu programa funcione dessa forma, adicione um manipulador de eventos Click que altera a cor do rótulo escolhido.  
   
 ### <a name="to-add-a-click-event-handler-to-each-label"></a>Para adicionar um manipulador de eventos Click a cada rótulo  
   

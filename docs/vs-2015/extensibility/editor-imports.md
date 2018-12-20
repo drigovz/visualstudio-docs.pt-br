@@ -1,7 +1,7 @@
 ---
 title: Importações do Editor | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7017d4a99bbfd58a854ba1cd33230f11928024cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f82815871f59dfcf4d384157a9461388e96d05e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475394"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759021"
 ---
 # <a name="editor-imports"></a>Importações do editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [importações do Editor](https://docs.microsoft.com/visualstudio/extensibility/editor-imports).  
-  
 Você pode importar um número de serviços do editor, fábricas e os agentes que fornecem a sua extensão com diferentes tipos de acesso para o editor de núcleo. Por exemplo, você pode importar o <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> para dar a você um <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> para um determinado tipo de conteúdo. (Este navegador permite que executar diferentes tipos de pesquisas em um buffer de texto).  
   
  Para usar uma importação de editor, importá-lo como um campo ou propriedade de uma classe que exporta uma parte do componente de Managed Extensibility Framework.  

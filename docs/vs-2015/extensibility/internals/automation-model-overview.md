@@ -1,7 +1,7 @@
 ---
 title: Visão geral do modelo de automação | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fdce23e892fe2fa14dc7f24f95d5744be2c67c39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd1e8ced29b1b1b090fd0feabca93f23dcb67a15
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465247"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809669"
 ---
 # <a name="automation-model-overview"></a>Visão geral do modelo de automação
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [visão geral do modelo de automação](https://docs.microsoft.com/visualstudio/extensibility/internals/automation-model-overview).  
-  
 O modelo de automação consiste em um conjunto de objetos em relação ao qual você pode gravar um suplemento do Visual Studio ou a extensão. Um suplemento é um aplicativo que pode manipular o ambiente do Visual Studio e automatizar tarefas comuns. Uma extensão do Visual Studio pode criar componentes personalizados do Visual Studio ou adicionar a funcionalidade dos componentes padrão, como o editor de texto.  
   
 ## <a name="objects-in-the-automation-model"></a>Objetos no modelo de automação  
@@ -42,15 +40,15 @@ Objetos de automação do Visual Studio
   
  Locais onde você pode considerar como estender o modelo de automação do ambiente:  
   
--   Projeto  
+- Projeto  
   
--   Documento  
+- Documento  
   
--   Código  
+- Código  
   
--   Build  
+- Build  
   
- Para obter mais informações sobre a automação, consulte [automação e extensibilidade do Visual Studio](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6). Este documento e os documentos que ela fornece links para ajudá-lo a tomar decisões sobre como você deve fornecer automação para o VSPackage.  
+  Para obter mais informações sobre a automação, consulte [automação e extensibilidade do Visual Studio](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6). Este documento e os documentos que ela fornece links para ajudá-lo a tomar decisões sobre como você deve fornecer automação para o VSPackage.  
   
 ## <a name="see-also"></a>Consulte também  
  [Como: criar um suplemento](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

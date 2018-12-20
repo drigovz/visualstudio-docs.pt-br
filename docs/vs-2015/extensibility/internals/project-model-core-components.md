@@ -1,7 +1,7 @@
 ---
 title: Componentes principais do modelo de projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e0fd5b5963686ac38975c62bab1d8ee93224cf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70cb00e6d2ecae8ba5fb8abefb76f7061406f0fd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461978"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741325"
 ---
 # <a name="project-model-core-components"></a>Componentes principais do projeto modelo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [componentes principais do projeto modelo](https://docs.microsoft.com/visualstudio/extensibility/internals/project-model-core-components).  
-  
 As tabelas a seguir expandem o modelo de projeto. As tabelas presentes breves descrições das interfaces e serviços identificados no modelo e as interfaces e os serviços associados a objetos específicos. Além disso, as tabelas de detalham sobre outras interfaces que são opcionais na criação do projeto e na manutenção dependendo dos requisitos do seu tipo de projeto específico.  
   
  Para obter mais informações, consulte [ferramentas de navegação de símbolo que dão suporte a](../../extensibility/internals/supporting-symbol-browsing-tools.md).  

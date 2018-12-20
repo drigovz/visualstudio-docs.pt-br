@@ -14,21 +14,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2b1c83a2954ca06385904f3a5e046f1c9ca50b
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 93288759ebcea6fd88777feeb1764ac41c57acc4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264425"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865774"
 ---
 # <a name="blocking-time-profile-report"></a>Relatório de perfil de tempo de bloqueio
 Os Relatórios de Perfil fornecem dados de tempo de bloqueio agregados para pilhas de chamadas específicas para cada categoria de bloqueio (por exemplo, "E/S" ou "Sincronização"). O relatório de Preempção lista os processos que admiram preempção do processo atual junto com o número de instâncias de preempção. Para criar o relatório do perfil de bloqueio, a ferramenta coleta chamadas à API de bloqueio e acumula-as em uma árvore de pilhas de chamadas. Dados mostrados nesses relatórios variam pelo intervalo de tempo atual, por threads ocultos e os dois filtros a seguir que podem ser aplicados:  
   
--   Se Apenas Meu Código for selecionado, serão apresentados somente os registros de ativação com código do usuário, mais um nível abaixo do código de usuário.  
+- Se Apenas Meu Código for selecionado, serão apresentados somente os registros de ativação com código do usuário, mais um nível abaixo do código de usuário.  
   
--   Se o valor de redução de Ruído for definido, pilhas agrupadas com uma frequência menor que a especificada serão ignoradas.  
+- Se o valor de redução de Ruído for definido, pilhas agrupadas com uma frequência menor que a especificada serão ignoradas.  
   
- Expanda qualquer entrada de árvore de chamada para localizar a linha de código na qual o tempo de bloqueio é gasto. Para localizar a linha de origem para uma entrada, escolha **Exibir Origem** no menu de atalho. Para localizar a linha de código que chamou esta, no menu de atalho, escolha **Exibir Sites de Chamada**. Se apenas um site de chamada estiver disponível, o comando será conectado à linha de código realçada para o site de chamada. Se houver vários sites de chamada, o comando abrirá uma caixa de diálogo na qual você pode selecionar uma entrada e, em seguida, escolher o botão **Ir para origem** para localizar o site de chamada realçado. Geralmente, é mais útil para exibir código-fonte para o site de chamada que tem mais instâncias, mais tempo ou ambos.  
+  Expanda qualquer entrada de árvore de chamada para localizar a linha de código na qual o tempo de bloqueio é gasto. Para localizar a linha de origem para uma entrada, escolha **Exibir Origem** no menu de atalho. Para localizar a linha de código que chamou esta, no menu de atalho, escolha **Exibir Sites de Chamada**. Se apenas um site de chamada estiver disponível, o comando será conectado à linha de código realçada para o site de chamada. Se houver vários sites de chamada, o comando abrirá uma caixa de diálogo na qual você pode selecionar uma entrada e, em seguida, escolher o botão **Ir para origem** para localizar o site de chamada realçado. Geralmente, é mais útil para exibir código-fonte para o site de chamada que tem mais instâncias, mais tempo ou ambos.  
   
 ## <a name="blocking-time-report-columns"></a>Colunas do relatório de tempo de bloqueio  
  A tabela a seguir mostra as colunas para cada relatório de tempo de bloqueio.  

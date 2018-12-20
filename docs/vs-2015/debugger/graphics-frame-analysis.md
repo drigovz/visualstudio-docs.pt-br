@@ -1,7 +1,7 @@
 ---
 title: Análise de quadros de gráficos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ f1_keywords:
 - vs.graphics.frameanalysis
 ms.assetid: 336c48ba-a1c4-4db9-b2a4-3de4a129cdd6
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 048379326f0bcc69cdadb828f6f2f741499d1d46
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59cd0006f375335d9cf3e714689bead6615b395d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473621"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770359"
 ---
 # <a name="graphics-frame-analysis"></a>Análise de Quadros de Gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [análise de quadros de gráficos](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-frame-analysis).  
-  
 Use análise de quadros de gráficos no analisador de gráficos do Visual Studio para analisar e otimizar o desempenho de renderização do Direct3D jogo ou aplicativo.  
   
 > [!IMPORTANT]
@@ -36,17 +34,17 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
 ## <a name="frame-analysis"></a>Análise de quadro  
  A análise de quadro usa as mesmas informações capturadas em um arquivo de log de elementos gráficos para fins de diagnóstico, mas as utiliza para resumir o desempenho de renderização. As informações de desempenho não são registradas no log durante a captura; ao invés disso, as informações de desempenho são geradas posteriormente, durante a análise de quadro, programando eventos e coletando estatísticas conforme o quadro é reproduzido. Essa abordagem possui diversas vantagens em relação a registrar informações de desempenho durante a captura:  
   
--   A análise de quadro pode tirar uma média dos resultados de diversas reproduções do mesmo quadro para garantir que o resumo do desempenho seja estatisticamente sólido.  
+- A análise de quadro pode tirar uma média dos resultados de diversas reproduções do mesmo quadro para garantir que o resumo do desempenho seja estatisticamente sólido.  
   
--   A análise de quadro pode gerar informações de desempenho para configurações de hardware e dispositivos diferentes daqueles em que as informações foram capturadas.  
+- A análise de quadro pode gerar informações de desempenho para configurações de hardware e dispositivos diferentes daqueles em que as informações foram capturadas.  
   
--   A análise de quadro pode gerar novos resumos de desempenho de informações capturadas anteriormente, por exemplo, quando os drivers de GPU são otimizados ou expõem recursos de depuração adicionais.  
+- A análise de quadro pode gerar novos resumos de desempenho de informações capturadas anteriormente, por exemplo, quando os drivers de GPU são otimizados ou expõem recursos de depuração adicionais.  
   
- Além dessas vantagens, a análise de quadros também pode alterar o modo como o quadro é renderizado durante a reprodução para que ela possa apresentar informações sobre como essas mudanças podem afetar o desempenho de renderização de um aplicativo. Você pode usar essas informações para se decidir entre possíveis estratégias de otimização sem ter que implementar todas elas e, depois, capturar e comparar todos os resultados você mesmo.  
+  Além dessas vantagens, a análise de quadros também pode alterar o modo como o quadro é renderizado durante a reprodução para que ela possa apresentar informações sobre como essas mudanças podem afetar o desempenho de renderização de um aplicativo. Você pode usar essas informações para se decidir entre possíveis estratégias de otimização sem ter que implementar todas elas e, depois, capturar e comparar todos os resultados você mesmo.  
   
- Embora a análise de quadro seja primordialmente pensada para ajudá-lo a alcançar um desempenho de renderização mais rápido, ela também pode ajudá-lo a atingir uma qualidade visual aprimorada para um determinado destino de desempenho ou reduzir o consumo de energia de GPU.  
+  Embora a análise de quadro seja primordialmente pensada para ajudá-lo a alcançar um desempenho de renderização mais rápido, ela também pode ajudá-lo a atingir uma qualidade visual aprimorada para um determinado destino de desempenho ou reduzir o consumo de energia de GPU.  
   
- Para ver uma demonstração do que a análise de quadros pode fazer para seu aplicativo, você pode assistir a [análise de quadros de gráficos do Visual Studio](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vídeo no Channel 9.  
+  Para ver uma demonstração do que a análise de quadros pode fazer para seu aplicativo, você pode assistir a [análise de quadros de gráficos do Visual Studio](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vídeo no Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Usando a análise de quadro  
  Antes de usar a análise de quadro, você precisa capturar informações gráficas de seu aplicativo enquanto ele é executado, exatamente como você faria ao usar qualquer uma das ferramentas do analisador de gráficos. Em seguida, na janela de documento (. vsglog) do log de gráficos, escolha o **análise de quadros** guia.  
@@ -60,23 +58,23 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
   
  Alguns resultados indicam diretamente como a variante afeta o desempenho de renderização:  
   
--   Se a variante Filtragem de Textura Bilinear tiver mostrado ganhos de desempenho, usar a filtragem de textura bilinear no aplicativo mostrará ganhos de desempenho semelhantes.  
+- Se a variante Filtragem de Textura Bilinear tiver mostrado ganhos de desempenho, usar a filtragem de textura bilinear no aplicativo mostrará ganhos de desempenho semelhantes.  
   
--   Se a variante do Visor 1 x 1 mostrar ganhos de desempenho, reduzir o tamanho dos destinos de renderização no aplicativo aprimorará o desempenho de renderização.  
+- Se a variante do Visor 1 x 1 mostrar ganhos de desempenho, reduzir o tamanho dos destinos de renderização no aplicativo aprimorará o desempenho de renderização.  
   
--   Se a variante Compactação de Textura BC tiver mostrado ganhos de desempenho, usar a compactação de textura BC no aplicativo mostrará ganhos de desempenho semelhantes.  
+- Se a variante Compactação de Textura BC tiver mostrado ganhos de desempenho, usar a compactação de textura BC no aplicativo mostrará ganhos de desempenho semelhantes.  
   
--   Se a variante 2xMSAA tiver quase o mesmo desempenho que a variante 0xMSAA, você poderá habilitar 2xMSAA no aplicativo para aprimorar a qualidade de renderização sem prejudicar o desempenho.  
+- Se a variante 2xMSAA tiver quase o mesmo desempenho que a variante 0xMSAA, você poderá habilitar 2xMSAA no aplicativo para aprimorar a qualidade de renderização sem prejudicar o desempenho.  
   
- Outros resultados podem sugerir implicações mais profundas e sutis no desempenho do aplicativo:  
+  Outros resultados podem sugerir implicações mais profundas e sutis no desempenho do aplicativo:  
   
--   Se a variante do Visor 1 x 1 mostrar ganhos de desempenho muito grandes, seu aplicativo provavelmente está consumindo mais taxa de enchimento do que a disponível. Se essa variante não mostrar ganhos de desempenho, o aplicativo provavelmente está processando muitas vértices.  
+- Se a variante do Visor 1 x 1 mostrar ganhos de desempenho muito grandes, seu aplicativo provavelmente está consumindo mais taxa de enchimento do que a disponível. Se essa variante não mostrar ganhos de desempenho, o aplicativo provavelmente está processando muitas vértices.  
   
--   Se a variante de Formato de Destino de Renderização de 16 bpp mostrar ganhos de desempenho significativos, seu aplicativo provavelmente está consumindo muita largura de banda de memória.  
+- Se a variante de Formato de Destino de Renderização de 16 bpp mostrar ganhos de desempenho significativos, seu aplicativo provavelmente está consumindo muita largura de banda de memória.  
   
--   Se a variante de Dimensões de Textura de Metade/Quarto mostrar ganhos de desempenho significativos, suas texturas provavelmente ocupam muita memória, consomem muita largura de banda ou usam o cache de textura de maneira ineficiente. Se essa variante não mostrar uma alteração no desempenho, provavelmente, você poderá usar texturas maiores e mais detalhadas sem prejudicar o desempenho.  
+- Se a variante de Dimensões de Textura de Metade/Quarto mostrar ganhos de desempenho significativos, suas texturas provavelmente ocupam muita memória, consomem muita largura de banda ou usam o cache de textura de maneira ineficiente. Se essa variante não mostrar uma alteração no desempenho, provavelmente, você poderá usar texturas maiores e mais detalhadas sem prejudicar o desempenho.  
   
- Quando contadores de hardware estão disponíveis, é possível usá-los para coletar informações bastante detalhadas sobre o motivo pelo qual o desempenho de renderização do aplicativo pode estar sendo impactado. Todos os dispositivos em nível de recurso 9.2 e superior dão suporte a consultas de oclusão de profundidade (**pixels obstruídos** contador) e carimbos de hora. Outros contadores de hardware podem estar disponíveis, dependendo se o fabricante de GPU implementou contadores de hardware e os expôs no driver. Você pode usar esses contadores para confirmar a causa precisa dos resultados mostrados na tabela de resumo; por exemplo, é possível determinar se o desenho excessivo é um fator relevante, examinando a porcentagem de pixels que foram obstruídos pelo teste de profundidade.  
+  Quando contadores de hardware estão disponíveis, é possível usá-los para coletar informações bastante detalhadas sobre o motivo pelo qual o desempenho de renderização do aplicativo pode estar sendo impactado. Todos os dispositivos em nível de recurso 9.2 e superior dão suporte a consultas de oclusão de profundidade (**pixels obstruídos** contador) e carimbos de hora. Outros contadores de hardware podem estar disponíveis, dependendo se o fabricante de GPU implementou contadores de hardware e os expôs no driver. Você pode usar esses contadores para confirmar a causa precisa dos resultados mostrados na tabela de resumo; por exemplo, é possível determinar se o desenho excessivo é um fator relevante, examinando a porcentagem de pixels que foram obstruídos pelo teste de profundidade.  
   
 ### <a name="timeline-and-summary-table"></a>Linha do tempo e tabela de resumo  
  Por padrão, a Linha do Tempo e a Tabela de Resumo são exibidas e as outras seções são recolhidas.  
@@ -159,11 +157,11 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
   
  Como nenhuma GPU de computador atualmente oferecida pela Intel, AMD ou nVidia tem suporte confiável a contadores de hardware de GPU, a Análise de Quadro não coleta contadores delas. No entanto, a Análise de Quadro coleta contadores de hardware dessas GPUs, com suporte confiável a elas:  
   
--   SOCs da Qualcomm (qualquer um com suporte a Windows Phone)  
+- SOCs da Qualcomm (qualquer um com suporte a Windows Phone)  
   
--   nVidia T40 (Tegra4).  
+- nVidia T40 (Tegra4).  
   
- Nenhuma outra plataforma com suporte à Análise de Quadro coleta contadores de hardware de GPU.  
+  Nenhuma outra plataforma com suporte à Análise de Quadro coleta contadores de hardware de GPU.  
   
 > [!NOTE]
 >  Como os contadores de hardware de GPU são recursos de hardware, pode levar vários passos para coletar o conjunto completo de contadores de hardware para cada variante de renderização. Como resultado, a ordem na qual os contadores de GPU são coletados não é especificada.  

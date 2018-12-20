@@ -1,7 +1,7 @@
 ---
 title: IDebugThread2::CanSetNextStatement | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: 7014af80-ff4f-4790-a34b-0528918d1fa3
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40cf5eba5cfb5a7e960ed8905141d4058d926d39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da93f5b6d2275e4584bebac664ed164981dd2850
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474632"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809318"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugThread2::CanSetNextStatement](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugthread2-cansetnextstatement).  
-  
 Determina se o ponteiro de instrução atual pode ser definido para o registro de ativação.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT CanSetNextStatement (   
+HRESULT CanSetNextStatement (   
    IDebugStackFrame2*  pStackFrame,  
    IDebugCodeContext2* pCodeContext  
 );  
 ```  
   
 ```csharp  
-int CanSetNextStatement (   
+int CanSetNextStatement (   
    IDebugStackFrame2  pStackFrame,  
    IDebugCodeContext2 pCodeContext  
 );  

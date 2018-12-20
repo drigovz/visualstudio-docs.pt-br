@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::findChildrenEx | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::findChildrenEx
 ms.assetid: 6e045045-da8c-4338-9423-81a1ca20c405
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e53b0e79e39d2ff543f31525b8d9b1bad4a6a2f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 35b091c9b4c3fedf88da06b475d296f168277e60
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465324"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737614"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSymbol::findChildrenEx](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-findchildrenex).  
-  
 Recupera os filhos do símbolo. Os símbolos de locais que são retornados incluem informações de intervalo em tempo real, se o programa é compilado com a otimização em.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findChildrenEx (   
+HRESULT findChildrenEx (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  

@@ -1,7 +1,7 @@
 ---
 title: FIELD_INFO | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e0df86a61e490ec98759b2c66458a781f6cbaf1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 06df41674f16520936d35662cdc2176b98768598
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465752"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770647"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [FIELD_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/field-info).  
-  
 Essa estrutura descreve uma variável local, parâmetro ou outro campo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-typedef struct _tagFieldInfo {   
+typedef struct _tagFieldInfo {   
    FIELD_INFO_FIELDS dwFields;  
    BSTR              bstrFullName;  
    BSTR              bstrName;  

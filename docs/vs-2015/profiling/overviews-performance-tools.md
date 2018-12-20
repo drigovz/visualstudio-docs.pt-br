@@ -1,7 +1,7 @@
 ---
 title: Visões gerais (Ferramentas de Desempenho) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
 caps.latest.revision: 27
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83bea4bba1314c6363308cf36b0eb075e256ddd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d055f4a68a7fbc866300ab5fe842d43a75ce7008
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467069"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741290"
 ---
 # <a name="overviews-performance-tools"></a>Visões gerais (ferramentas de desempenho)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [visões gerais (ferramentas de desempenho)](https://docs.microsoft.com/visualstudio/profiling/overviews-performance-tools).  
-  
 Esta seção fornece visões gerais conceituais e de terminologia para as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], que você pode usar para medir as características de desempenho de um aplicativo em desenvolvimento.  
   
 ## <a name="in-this-section"></a>Nesta seção  

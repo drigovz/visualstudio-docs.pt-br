@@ -1,7 +1,7 @@
 ---
 title: Interface do usuário personalizada (VSPackage de controle do código-fonte) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e544408f4cea3e9ec4e388ab76f4224abd7aa69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 237a79fe0225f54bd8be1f779f241bc54f13cd09
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462433"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728533"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interface do usuário personalizada (VSPackage de controle do código-fonte)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Interface do usuário personalizada (VSPackage de controle do código-fonte)](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-user-interface-source-control-vspackage).  
-  
 Um VSPackage declara seus itens de menu e seus estados padrão por meio do arquivo de tabela de comando do Visual Studio (. VSCT). O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE) exibe os itens de menu em seus estados padrão até que o VSPackage seja carregado. Subsequentemente, o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método é chamado para habilitar ou desabilitar itens de menu.  
   
  Um VSPackage pode definir uma chave do registro para que o VSPackage possa ser carregado automaticamente, dependendo do contexto de (UI) de interface de usuário um comando, embora geralmente controlam a uma fonte de VSPackage deve ser carregado sob demanda em vez de simplesmente alternar para um determinado contexto de interface do usuário. Para obter mais informações sobre a chave do registro AutoLoadPackages, consulte [gerenciar VSPackages](../../extensibility/managing-vspackages.md).  
@@ -44,19 +42,19 @@ Um VSPackage declara seus itens de menu e seus estados padrão por meio do arqui
   
  A lista a seguir mostra as interfaces afetadas pelo estado ativo de um VSPackage de controle de origem:  
   
--   Acompanhar eventos de documentos de projeto.  
+- Acompanhar eventos de documentos de projeto.  
   
--   Eventos de solução.  
+- Eventos de solução.  
   
--   Interfaces de persistência da solução. Quando estiver inativo, pacotes não devem gravar arquivos. sln e. suo.  
+- Interfaces de persistência da solução. Quando estiver inativo, pacotes não devem gravar arquivos. sln e. suo.  
   
--   Extensores de propriedade.  
+- Extensores de propriedade.  
   
- Exigida <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, e também quaisquer interfaces opcionais associados ao controle do código-fonte, não são chamados quando o VSPackage de controle de origem está inativo.  
+  Exigida <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, e também quaisquer interfaces opcionais associados ao controle do código-fonte, não são chamados quando o VSPackage de controle de origem está inativo.  
   
- Quando o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] é iniciado do IDE, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] define o contexto de interface do usuário do comando para a ID do controle de origem de padrão atual ID VSPackage. Isso faz com que a interface do usuário estática do controle de origem ativa VSPackage sejam exibidos no IDE sem realmente carregar o VSPackage. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] faz uma pausa para registrar com o VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> antes que ele faz com que todas as chamadas para o VSPackage.  
+  Quando o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] é iniciado do IDE, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] define o contexto de interface do usuário do comando para a ID do controle de origem de padrão atual ID VSPackage. Isso faz com que a interface do usuário estática do controle de origem ativa VSPackage sejam exibidos no IDE sem realmente carregar o VSPackage. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] faz uma pausa para registrar com o VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> antes que ele faz com que todas as chamadas para o VSPackage.  
   
- A tabela a seguir descreve detalhes específicos sobre como o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE oculta diferentes itens de interface do usuário.  
+  A tabela a seguir descreve detalhes específicos sobre como o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE oculta diferentes itens de interface do usuário.  
   
 |Item de interface do usuário|Descrição|  
 |-------------|-----------------|  

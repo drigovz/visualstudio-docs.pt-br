@@ -1,7 +1,7 @@
 ---
 title: Asserções em código gerenciado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,21 +28,19 @@ helpviewer_keywords:
 - assertions, managed code
 ms.assetid: 70ab2522-6486-4076-a1a9-e0f11cd0f3a1
 caps.latest.revision: 32
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08cdbcde693655997fd980c018935a2b1c6df768
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: c47b2b05ab358826d594d0c6ef29c1b50e0a529f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465302"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806536"
 ---
 # <a name="assertions-in-managed-code"></a>Asserções em código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [asserções em código gerenciado](https://docs.microsoft.com/visualstudio/debugger/assertions-in-managed-code).  
-  
 Uma asserção, ou instrução `Assert`, testa uma condição, que você especifica como um argumento para a instrução `Assert`. Se a condição for avaliada para true, nenhuma ação ocorrerá. Se a condição for avaliada como false, haverá falha de asserção. Se você estiver executando com uma compilação de depuração, o programa entrará no modo de interrupção.  
   
 ##  <a name="BKMK_In_this_topic"></a> Neste tópico  
@@ -155,19 +153,19 @@ Debug.Assert ( temp != 0 );
   
  Caso contrário, para que os métodos <xref:System.Diagnostics.Trace> funcionem, o programa deverá ter um dos seguintes na parte superior do arquivo de origem:  
   
--   `#Const TRACE = True` no Visual Basic  
+- `#Const TRACE = True` no Visual Basic  
   
--   `#define TRACE` no Visual C# e C++  
+- `#define TRACE` no Visual C# e C++  
   
- Ou o programa deverá ser compilado com a opção TRACE:  
+  Ou o programa deverá ser compilado com a opção TRACE:  
   
--   `/d:TRACE=True` no Visual Basic  
+- `/d:TRACE=True` no Visual Basic  
   
--   `/d:TRACE` no Visual C# e C++  
+- `/d:TRACE` no Visual C# e C++  
   
- Se você precisar usar os métodos de depuração em uma compilação de lançamento do C# ou Visual Basic, deverá definir o símbolo DEBUG na configuração de lançamento.  
+  Se você precisar usar os métodos de depuração em uma compilação de lançamento do C# ou Visual Basic, deverá definir o símbolo DEBUG na configuração de lançamento.  
   
- C++ não oferece suporte aos métodos da classe <xref:System.Diagnostics.Debug>. Você pode obter o mesmo efeito usando o <xref:System.Diagnostics.Trace> classe com compilação condicional, como `#ifdef DEBUG`... `#endif`. Você pode definir esses símbolos na  **\<projeto > páginas de propriedade** caixa de diálogo. Para obter mais informações, consulte [alterar configurações do projeto para uma configuração de depuração do Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) ou [alterando configurações do projeto para um C ou C++ depurar configuração](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+  C++ não oferece suporte aos métodos da classe <xref:System.Diagnostics.Debug>. Você pode obter o mesmo efeito usando o <xref:System.Diagnostics.Trace> classe com compilação condicional, como `#ifdef DEBUG`... `#endif`. Você pode definir esses símbolos na  **\<projeto > páginas de propriedade** caixa de diálogo. Para obter mais informações, consulte [alterar configurações do projeto para uma configuração de depuração do Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) ou [alterando configurações do projeto para um C ou C++ depurar configuração](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ##  <a name="BKMK_Assert_arguments"></a> Argumentos de declaração  
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> e <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> utilizam até três argumentos. O primeiro argumento, que é obrigatório, é a condição que você deseja verificar. Se você chamar <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> ou <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName> com apenas um argumento, o `Assert` método verifica a condição e, se o resultado for false, gera o conteúdo da pilha de chamadas para o **saída** janela. O exemplo a seguir mostra <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> e <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>:  

@@ -1,7 +1,7 @@
 ---
 title: Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,29 +14,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b5497eaaf74e36997150529f7a962ab02101d1a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ac0d333f8103f6904bce517397a73cc010b1d36
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873403"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [argumentos de linha de comando para Gerenciador de conteúdo de Ajuda](https://docs.microsoft.com/visualstudio/ide/command-line-arguments-for-the-help-content-manager).  
-  
 Você pode especificar como implantar e gerenciar conteúdo da Ajuda local usando argumentos de linha de comando para o Gerenciador de Conteúdo da Ajuda (HlpCtntmgr.exe). Você deve executar scripts para essa ferramenta de linha de comando com permissões de administrador, e você não pode executar esses scripts como um serviço. Você pode realizar as seguintes tarefas usando esta ferramenta:  
   
--   Adicionar ou atualizar o conteúdo da ajuda local de um disco ou da nuvem.  
+- Adicionar ou atualizar o conteúdo da ajuda local de um disco ou da nuvem.  
   
--   Remova o conteúdo da ajuda local.  
+- Remova o conteúdo da ajuda local.  
   
--   Mova o repositório de conteúdo local da Ajuda.  
+- Mova o repositório de conteúdo local da Ajuda.  
   
--   Adicionar, atualizar, remover ou mover o conteúdo da ajuda local silenciosamente.  
+- Adicionar, atualizar, remover ou mover o conteúdo da ajuda local silenciosamente.  
   
- Sintaxe:  
+  Sintaxe:  
   
 ```  
 HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceuri InstallationPoint  

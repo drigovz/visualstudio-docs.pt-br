@@ -1,7 +1,7 @@
 ---
 title: Depurando código nativo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,21 +24,19 @@ helpviewer_keywords:
 - native code, debugging
 ms.assetid: d94eee90-7e0d-4cac-88c1-9831030daa5e
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a4c8d5c19ea397f8fc23a962a045645740a1164
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8c81efece10fe55dc1cf228a3d0c23e7f5a64af
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461724"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730550"
 ---
 # <a name="debugging-native-code"></a>Depurando código nativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depurando código nativo](https://docs.microsoft.com/visualstudio/debugger/debugging-native-code).  
-  
 A seção aborda alguns problemas comuns de depuração e técnicas para aplicativos nativos. As técnicas abordadas nesta seção são de alto nível. Para conhecer a mecânica de como usar o depurador do Visual Studio, consulte [roteiro do depurador](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>Nesta seção  

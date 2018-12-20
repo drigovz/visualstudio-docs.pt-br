@@ -1,7 +1,7 @@
 ---
 title: Introdução às Ferramentas de Desempenho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - getting started, profiling tools
 ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0bb0fa65bbd11e18f6b83fafe0a7ad8df9fd15eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3503c845bd9b8ef3b5362f689d856dd04b59280f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466653"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777047"
 ---
 # <a name="getting-started-with-performance-tools"></a>Introdução às Ferramentas de Desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Introdução às ferramentas de desempenho](https://docs.microsoft.com/visualstudio/profiling/getting-started-with-performance-tools).  
-  
 Esta seção fornece uma visão geral dos conceitos e tarefas que você aplicará ao coletar, exibir e analisar o desempenho do código usando as Ferramentas de Desempenho do Visual Studio.  
   
  Essas ferramentas fornecem várias maneiras de coletar e analisar dados de desempenho. Mas, em muitos casos, a melhor maneira de começar é usar as configurações padrão do Assistente de Desempenho, o que lhe permite coletar estatísticas do aplicativo que podem indicar problemas de desempenho em seu código.  

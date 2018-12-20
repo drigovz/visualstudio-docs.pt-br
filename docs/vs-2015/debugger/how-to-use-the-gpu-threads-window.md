@@ -1,7 +1,7 @@
 ---
 title: 'Como: usar a janela de Threads GPU | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,44 +21,42 @@ helpviewer_keywords:
 - debugger, GPU threads window
 ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a747ec02e8b47649e42ec8fcb600de97f549c105
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8afd9cd09cf5977f58ee3a48b891f5291869b49c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474316"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799165"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Como usar a janela Threads de GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de Threads da GPU no depurador](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-gpu-threads-window).  
-  
 Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão sendo executadas no GPU no aplicativo que você está depurando. Para obter mais informações sobre aplicativos que são executados na GPU, consulte [visão geral do C++ AMP](http://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
   
  A janela de Threads da GPU contém uma tabela na qual cada linha representa um conjunto de threads de GPU que têm os mesmos valores em todas as colunas. Você pode classificar, reorganizar, remover e agrupar os itens que estão nas colunas. Você pode sinalizar, remover sinalização, congelar (suspender) e descongelar (retomar) threads da janela de Threads da GPU. As colunas a seguir são exibidas na janela Threads da GPU:  
   
--   A coluna do sinalizador, na qual você pode marcar um thread ao qual deseja prestar atenção especial.  
+- A coluna do sinalizador, na qual você pode marcar um thread ao qual deseja prestar atenção especial.  
   
--   A coluna thread ativo, em que uma seta amarela indica um thread ativo. Uma seta indica um thread onde a execução interrompe no depurador.  
+- A coluna thread ativo, em que uma seta amarela indica um thread ativo. Uma seta indica um thread onde a execução interrompe no depurador.  
   
--   O **contagem de threads** coluna, que exibe o número de threads no mesmo local.  
+- O **contagem de threads** coluna, que exibe o número de threads no mesmo local.  
   
--   O **linha** coluna, que exibe a linha de código em que cada grupo de threads está localizado.  
+- O **linha** coluna, que exibe a linha de código em que cada grupo de threads está localizado.  
   
--   O **endereço** coluna, que exibe o endereço da instrução onde cada grupo de threads está localizado. Por padrão, essa coluna está ocultada.  
+- O **endereço** coluna, que exibe o endereço da instrução onde cada grupo de threads está localizado. Por padrão, essa coluna está ocultada.  
   
--   O **local** coluna, que é o local no código-fonte.  
+- O **local** coluna, que é o local no código-fonte.  
   
--   O **Status** coluna, que mostra se o thread está ativo, bloqueado, não iniciado ou concluído.  
+- O **Status** coluna, que mostra se o thread está ativo, bloqueado, não iniciado ou concluído.  
   
--   O **bloco** coluna, que mostra o índice do bloco para os segmentos na linha.  
+- O **bloco** coluna, que mostra o índice do bloco para os segmentos na linha.  
   
- O cabeçalho da tabela mostra que o quadro e o thread estão sendo exibidos.  
+  O cabeçalho da tabela mostra que o quadro e o thread estão sendo exibidos.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-gpu-threads-window"></a>Para exibir a janela Threads da GPU  
   

@@ -1,7 +1,7 @@
 ---
 title: Iniciar | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14a68592a350c7c5604f6d7af3037eecf6c9d3e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c2f52a000cdf5eaa1a1ef4b9afeb141500f1911
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466988"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724183"
 ---
 # <a name="start"></a>Início
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [iniciar](https://docs.microsoft.com/visualstudio/profiling/start).  
-  
 A opção **Start** é uma opção de VSPerfCmd.exe que inicializa o criador de perfil para o método de criação de perfil especificado.  
   
 ## <a name="syntax"></a>Sintaxe  

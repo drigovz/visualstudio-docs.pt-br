@@ -1,7 +1,7 @@
 ---
 title: Salvando dados em arquivos de projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,25 +17,23 @@ ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: adecbedc7f8a7ca90c88548b4b4ab6f7b826f2ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87d858d675fb1b2fb60280321a319b24684d9d83
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461850"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755828"
 ---
 # <a name="saving-data-in-project-files"></a>Salvando dados em arquivos de projeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [salvando dados em arquivos de projeto](https://docs.microsoft.com/visualstudio/extensibility/saving-data-in-project-files).  
-  
 Um subtipo de projeto pode salvar e recuperar dados específicos subtipo-no arquivo de projeto. Estrutura de pacote gerenciado (MPF) oferece duas interfaces para realizar essa tarefa:  
   
--   O <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> interface permite que os valores de propriedade de acesso da **MSBuild** seção do arquivo de projeto. Os métodos fornecidos pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> pode ser chamado por qualquer usuário sempre que o usuário precisará carregar ou salvar dados relacionados de compilar.  
+- O <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> interface permite que os valores de propriedade de acesso da **MSBuild** seção do arquivo de projeto. Os métodos fornecidos pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> pode ser chamado por qualquer usuário sempre que o usuário precisará carregar ou salvar dados relacionados de compilar.  
   
--   O <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> é usada para persistir dados relacionados de não compilação no XML de forma livre. Os métodos fornecidos pelo <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> são chamados pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sempre que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] precisa para persistir dados relacionados de não compilação no arquivo de projeto.  
+- O <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> é usada para persistir dados relacionados de não compilação no XML de forma livre. Os métodos fornecidos pelo <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> são chamados pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sempre que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] precisa para persistir dados relacionados de não compilação no arquivo de projeto.  
   
- Para obter mais informações sobre como manter o build e os dados relacionados de não-compilação, consulte [persistência de dados no arquivo de projeto MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
+  Para obter mais informações sobre como manter o build e os dados relacionados de não-compilação, consulte [persistência de dados no arquivo de projeto MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
   
 ## <a name="saving-and-retrieving-build-related-data"></a>Salvando e recuperando build relacionados a dados  
   

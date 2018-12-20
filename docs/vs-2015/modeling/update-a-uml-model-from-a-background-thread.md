@@ -1,7 +1,7 @@
 ---
 title: Atualizar um modelo UML de um thread em segundo plano | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -9,21 +9,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 42c06b0b-b681-4e19-b5f3-6116dd2a4072
 caps.latest.revision: 15
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 448a24d2bfe7a466a239c025046bd0e6f13ea64e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4173b70cda9df39ce8a4500817fff199ed1a2996
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476191"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749986"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Atualizar um modelo UML por meio de um thread em segundo plano
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [atualizar um modelo UML de um thread em segundo plano](https://docs.microsoft.com/visualstudio/modeling/update-a-uml-model-from-a-background-thread).  
-  
 Às vezes, pode ser útil fazer alterações a um modelo em um thread em segundo plano. Por exemplo, se você estiver carregando informações de um recurso externo lento, você poderia usar um thread em segundo plano para supervisionar as atualizações. Isso permite que o usuário veja cada atualização assim que ele ocorre.  
   
  No entanto, você deve estar ciente de que o armazenamento de UML não é thread-safe. As seguintes precauções são importantes:  
@@ -37,35 +35,35 @@ A versão mais recente deste tópico pode ser encontrada em [atualizar um modelo
   
 #### <a name="to-run-the-example"></a>Para executar o exemplo  
   
-1.  Crie um manipulador de comandos em um projeto c#, conforme descrito em [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+1. Crie um manipulador de comandos em um projeto c#, conforme descrito em [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
-2.  Certifique-se de que o projeto inclua referências a esses assemblies:  
+2. Certifique-se de que o projeto inclua referências a esses assemblies:  
   
-    -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
   
-    -   Microsoft.VisualStudio.Uml.Interfaces  
+   -   Microsoft.VisualStudio.Uml.Interfaces  
   
-    -   System.ComponentModel.Composition  
+   -   System.ComponentModel.Composition  
   
-    -   System.Windows.Forms  
+   -   System.Windows.Forms  
   
-3.  Adicionar ao projeto um formulário do Windows chamado **ProgressForm**. Ele deve exibir uma mensagem informando que as atualizações estão em andamento. Ele não precisa ter todos os outros controles.  
+3. Adicionar ao projeto um formulário do Windows chamado **ProgressForm**. Ele deve exibir uma mensagem informando que as atualizações estão em andamento. Ele não precisa ter todos os outros controles.  
   
-4.  Adicione um arquivo c# que contém o código mostrado após a etapa 7.  
+4. Adicione um arquivo c# que contém o código mostrado após a etapa 7.  
   
-5.  Compile e execute o projeto.  
+5. Compile e execute o projeto.  
   
-     Uma nova instância da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] será iniciado em modo experimental.  
+    Uma nova instância da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] será iniciado em modo experimental.  
   
-6.  Crie ou abra um diagrama de classe UML na instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Crie ou abra um diagrama de classe UML na instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-7.  Clique com botão direito em qualquer lugar no diagrama de classe UML e, em seguida, clique em **adicionar várias Classes de UML**.  
+7. Clique com botão direito em qualquer lugar no diagrama de classe UML e, em seguida, clique em **adicionar várias Classes de UML**.  
   
- Várias novas caixas de classe serão exibida no diagrama, uma após a outra em intervalos de meio segundo.  
+   Várias novas caixas de classe serão exibida no diagrama, uma após a outra em intervalos de meio segundo.  
   
 ```csharp  
 using System;  

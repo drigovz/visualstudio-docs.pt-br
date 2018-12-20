@@ -1,7 +1,7 @@
 ---
 title: IDebugCodeContext3::GetModule | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8e4317b8-8255-486c-a896-a68ed94f8aa1
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c775442713f96b5eeba1265331a389a92ff774d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9b2d6820695999899eae7db7a9f901f096dd9298
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464475"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725420"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugCodeContext3::GetModule](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcodecontext3-getmodule).  
-  
 Recupera uma referência à interface do módulo de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  

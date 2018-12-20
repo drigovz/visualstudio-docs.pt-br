@@ -1,7 +1,7 @@
 ---
 title: Implantar uma extensão de modelo de camada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,21 +12,19 @@ helpviewer_keywords:
 - layer models, deploying extensions
 ms.assetid: 00a4675b-d20e-487e-8fd5-be2b1e0ba238
 caps.latest.revision: 29
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b5d581ca67a2d3fde5b7acab5937d1aedf88cfa4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a31413f5332ddfec8dc6021da85e2135d691f930
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462699"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735116"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Implantar uma extensão de modelo de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [implantar uma extensão de modelo de camada](https://docs.microsoft.com/visualstudio/modeling/deploy-a-layer-model-extension).  
-  
 Outros usuários do Visual Studio podem instalar extensões que você criar usando o Visual Studio de modelagem da camada.  
   
 ## <a name="installing-your-extension"></a>Instalando sua extensão  
@@ -34,13 +32,13 @@ Outros usuários do Visual Studio podem instalar extensões que você criar usan
   
 #### <a name="to-install-the-extension"></a>Para instalar a extensão  
   
-1.  No projeto que contém **source.vsix.manifest**, abra **bin\\ \***  no Explorador de arquivos.  
+1. No projeto que contém **source.vsix.manifest**, abra **bin\\\\*** no Explorador de arquivos.  
   
-2.  Cópia de  **\*VSIX** arquivo para o computador no qual você deseja instalar a extensão.  
+2. Cópia de  **\*VSIX** arquivo para o computador no qual você deseja instalar a extensão.  
   
-3.  No computador de destino, clique duas vezes o arquivo VSIX no Windows Explorer.  
+3. No computador de destino, clique duas vezes o arquivo VSIX no Windows Explorer.  
   
-     O instalador do VSIX é aberto.  
+    O instalador do VSIX é aberto.  
   
 #### <a name="to-uninstall-the-extension"></a>Para desinstalar a extensão  
   

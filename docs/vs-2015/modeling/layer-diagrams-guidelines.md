@@ -1,7 +1,7 @@
 ---
 title: 'Diagramas de camada: Diretrizes | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - constraints, architectural
 ms.assetid: 2903bec7-a93b-46a6-aac6-994ac4f3f1a7
 caps.latest.revision: 57
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd0115021ba00d8e727f67260f5bcdb00464dd2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fa7483a000b5abd59b846edceead3af93f41dbc4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461477"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734441"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramas de camada: diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [diagramas de dependência: diretrizes](https://docs.microsoft.com/visualstudio/modeling/layer-diagrams-guidelines).  
-  
 Descrever a arquitetura do aplicativo em um alto nível, criando *diagramas de camada* no Visual Studio. Certifique-se de que o código permaneça consistente com esse design, validando seu código com um diagrama de camada. Você também pode incluir validação de camada no processo de compilação. Ver [vídeo do Channel 9: Design e validar sua arquitetura usando diagramas de camada](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -94,9 +92,9 @@ Descrever a arquitetura do aplicativo em um alto nível, criando *diagramas de c
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Para fazer engenharia reversa de dependências existentes entre camadas  
   
--   Selecione uma camada ou várias camadas, uma camada selecionada com o botão direito e, em seguida, clique em **gerar dependências**.  
+- Selecione uma camada ou várias camadas, uma camada selecionada com o botão direito e, em seguida, clique em **gerar dependências**.  
   
- Normalmente, você verá algumas dependências que não devem existir. É possível editar essas dependências para alinhá-las com o design desejado.  
+  Normalmente, você verá algumas dependências que não devem existir. É possível editar essas dependências para alinhá-las com o design desejado.  
   
 ##  <a name="EditArchitecture"></a> Editar camadas e dependências para mostrar o design desejado  
  Para descrever as alterações que você planeja fazer em seu sistema ou a arquitetura pretendida, use as etapas a seguir para editar o diagrama de camada. Você também pode considerar fazer algumas alterações de refatoração para melhorar a estrutura do código antes de estendê-lo. Ver [melhorar a estrutura do código](#Improving).  
@@ -153,11 +151,11 @@ Descrever a arquitetura do aplicativo em um alto nível, criando *diagramas de c
 ##  <a name="UpdateCode"></a> Atualize o código para estar de acordo com a nova arquitetura  
  Normalmente, os erros serão exibidos na primeira vez que você valide o código em um diagrama de camada atualizada. Esses erros podem ter várias causas:  
   
--   Um artefato é atribuído à camada errada. Nesse caso, mova o artefato.  
+- Um artefato é atribuído à camada errada. Nesse caso, mova o artefato.  
   
--   Um artefato como, por exemplo, uma classe usa outra classe de maneira a entrar em conflito com a arquitetura. Nesse caso, refatore o código para remover a dependência.  
+- Um artefato como, por exemplo, uma classe usa outra classe de maneira a entrar em conflito com a arquitetura. Nesse caso, refatore o código para remover a dependência.  
   
- Para resolver esses erros, atualize o código até que mais nenhum erro seja exibido durante a validação. Isso geralmente é um processo iterativo. Para obter mais informações sobre esses erros, consulte [validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md).  
+  Para resolver esses erros, atualize o código até que mais nenhum erro seja exibido durante a validação. Isso geralmente é um processo iterativo. Para obter mais informações sobre esses erros, consulte [validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md).  
   
 > [!NOTE]
 >  Conforme você desenvolve ou refatora o código, você pode ter os novos artefatos para vincular ao diagrama de camada. No entanto, isso pode não ser necessário, por exemplo, quando você tem camadas que representam a namespaces existentes, e o novo código apenas adiciona mais material a esses namespaces.  

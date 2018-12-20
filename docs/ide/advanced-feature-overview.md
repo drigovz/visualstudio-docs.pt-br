@@ -1,5 +1,6 @@
 ---
 title: Funcionalidades avançadas do Visual Studio 2017
+titleSuffix: ''
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c32f63f6272d550604df79186ae7c54cfc3f22e
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: bd351ef1bf6b1e5eee16451e554d6cae94c60127
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320937"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159393"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funcionalidades do Visual Studio 2017
 
-O artigo [Visão geral do IDE do Visual Studio](../ide/visual-studio-ide.md) fornece uma introdução básica ao Visual Studio. Este artigo descreve as funcionalidades que podem ser mais apropriadas para desenvolvedores experientes ou aqueles que já estão familiarizados com o Visual Studio.
+O artigo [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md) fornece uma introdução básica ao Visual Studio. Este artigo descreve as funcionalidades que podem ser mais apropriadas para desenvolvedores experientes ou aqueles que já estão familiarizados com o Visual Studio.
 
 ## <a name="modular-installation"></a>Instalação modular
 
@@ -100,13 +101,13 @@ Quando o aplicativo estiver pronto para ser implantado em usuários ou em client
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Gerenciar seu código-fonte e colaborar com outros
 
-É possível gerenciar o código-fonte em repositórios Git hospedados por qualquer provedor, incluindo o GitHub. Ou use o [Azure DevOps Services](/azure/devops/index?view=vsts) para gerenciar o código, bem como bugs e itens de trabalho de todo o projeto. Consulte [Introdução ao GIT e ao Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) para obter mais informações sobre o gerenciamento de repositórios GIT no Visual Studio usando o Team Explorer. O Visual Studio também tem outros recursos de controle do código-fonte internos. Para saber mais sobre eles, consulte [Novos recursos do Git no Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
+É possível gerenciar o código-fonte em repositórios Git hospedados por qualquer provedor, incluindo o GitHub. Ou use o [Azure DevOps Services](/azure/devops/index) para gerenciar o código, bem como bugs e itens de trabalho de todo o projeto. Consulte [Introdução ao GIT e ao Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) para obter mais informações sobre o gerenciamento de repositórios GIT no Visual Studio usando o Team Explorer. O Visual Studio também tem outros recursos de controle do código-fonte internos. Para saber mais sobre eles, consulte [Novos recursos do Git no Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/devops/2017/03/06/new-git-features-in-visual-studio-2017/).
 
 O Azure DevOps Services são serviços baseados em nuvem voltados para planejamento, hospedagem, automatização e implantação de software e que permitem a colaboração em equipes. O Azure DevOps Services dá suporte a repositórios GIT (controle de versão distribuído) e ao Controle de Versão do Team Foundation (controle de versão centralizado), bem como a pipelines de CI/CD (build/lançamento contínuo) de código armazenado em sistemas de controle de versão. O Azure DevOps Services também dá suporte a metodologias de desenvolvimento Agile, CMMI e Scrum.
 
 O TFS (Team Foundation Server) é o hub de gerenciamento do ciclo de vida do aplicativo para o Visual Studio. Ele habilita a participação de todos os envolvidos com o processo de desenvolvimento usando uma única solução. O TFS também é útil para gerenciar equipes e projetos heterogêneos.
 
-Se você tiver uma organização do Azure DevOps Services ou um Team Foundation Server na rede, conecte-se a ela por meio da janela **Team Explorer** no Visual Studio. Nessa janela você pode fazer check-in ou check-out de código no controle do código-fonte, gerenciar itens de trabalho, iniciar compilações e acessar salas da equipe e espaços de trabalho. Abra o **Team Explorer** na caixa **Início Rápido** ou no menu principal, em **Exibir** > **Team Explorer** ou em **Equipe** > **Gerenciar Conexões**.
+Se você tiver uma organização do Azure DevOps ou um Team Foundation Server na rede, conecte-se a ela por meio da janela **Team Explorer** no Visual Studio. Nessa janela você pode fazer check-in ou check-out de código no controle do código-fonte, gerenciar itens de trabalho, iniciar compilações e acessar salas da equipe e workspaces. Abra o **Team Explorer** na caixa **Início Rápido** ou no menu principal, em **Exibir** > **Team Explorer** ou em **Equipe** > **Gerenciar Conexões**.
 
 A imagem a seguir mostra a janela **Team Explorer** em uma solução hospedada no Azure DevOps Services.
 
@@ -126,5 +127,5 @@ Para saber mais sobre como estender o Visual Studio, consulte [Estender o IDE do
 
 ## <a name="see-also"></a>Consulte também
 
-- [Visão geral do IDE do Visual Studio](../ide/visual-studio-ide.md)
+- [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
 - [Novidades no Visual Studio 2017](../ide/whats-new-in-visual-studio.md)

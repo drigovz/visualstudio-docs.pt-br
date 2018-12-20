@@ -1,7 +1,7 @@
 ---
 title: TYPE_INFO | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 29f5ea9b8cc1a382f7ca09dbe218d85c835feaa1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 628d6e5ae2e13ea117cb3fd50aca3ba2150ac59f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474769"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755449"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [TYPE_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/type-info).  
-  
 Essa estrutura especifica vários tipos de informações sobre o tipo de um campo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -72,7 +70,7 @@ public struct TYPE_INFO {
  Nome da união.  
   
  unionmember  
- [Somente c#] Marshaling para o tipo de estrutura apropriada com base em `dwKind`.  
+ [C# somente] Marshaling para o tipo de estrutura apropriada com base em `dwKind`.  
   
 ## <a name="remarks"></a>Comentários  
  Essa estrutura é passada para o [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) método onde ele é preenchido. Como o conteúdo da estrutura é interpretado se baseia o `dwKind` campo.  
@@ -80,7 +78,7 @@ public struct TYPE_INFO {
 > [!NOTE]
 >  [C++] Se `dwKind` é igual a `TYPE_KIND_BUILT`, em seguida, é necessário liberar subjacente [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) do objeto ao destruir o `TYPE_INFO` estrutura. Isso é feito chamando `typeInfo.type.typeBuilt.pUnderlyingField->Release()`.  
   
- [Somente c#] A tabela a seguir mostra como interpretar o `unionmember` membro para cada tipo do tipo. O exemplo mostra como isso é feito para um tipo de tipo.  
+ [C# somente] A tabela a seguir mostra como interpretar o `unionmember` membro para cada tipo do tipo. O exemplo mostra como isso é feito para um tipo de tipo.  
   
 |`dwKind`|`unionmember` interpretado como|  
 |--------------|----------------------------------|  

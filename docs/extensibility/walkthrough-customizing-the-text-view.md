@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: da09f01e602f2d30288bc9f872f761d0bee4fc42
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c328925fd558e01138354427a80db7a692753710
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498400"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924909"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Passo a passo: Personalizar a exibição de texto
 Você pode personalizar uma exibição de texto por meio da modificação de qualquer uma das seguintes propriedades em seu mapa de formatação do editor:  
@@ -48,26 +48,26 @@ Você pode personalizar uma exibição de texto por meio da modificação de qua
   
 ## <a name="define-the-content-type"></a>Definir o tipo de conteúdo  
   
-1.  Adicione um arquivo de classe e denomine- `ViewPropertyModifier`.  
+1. Adicione um arquivo de classe e denomine- `ViewPropertyModifier`.  
   
-2.  Adicione o seguinte `using` diretivas:  
+2. Adicione o seguinte `using` diretivas:  
   
-     [!code-csharp[VSSDKViewPropertyTest#1](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_1.cs)]
-     [!code-vb[VSSDKViewPropertyTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_1.vb)]  
+    [!code-csharp[VSSDKViewPropertyTest#1](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_1.cs)]
+    [!code-vb[VSSDKViewPropertyTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_1.vb)]  
   
-3.  Declare uma classe chamada `TestViewCreationListener` que herda de <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>. Exporte essa classe com os seguintes atributos:  
+3. Declare uma classe chamada `TestViewCreationListener` que herda de <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>. Exporte essa classe com os seguintes atributos:  
   
-    -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> para especificar o tipo de conteúdo ao qual se aplica a este ouvinte.  
+   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> para especificar o tipo de conteúdo ao qual se aplica a este ouvinte.  
   
-    -   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> para especificar a função desse ouvinte.  
+   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> para especificar a função desse ouvinte.  
   
      [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
      [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]  
   
-4.  Nessa classe, importe o <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>.  
+4. Nessa classe, importe o <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>.  
   
-     [!code-csharp[VSSDKViewPropertyTest#3](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_3.cs)]
-     [!code-vb[VSSDKViewPropertyTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_3.vb)]  
+    [!code-csharp[VSSDKViewPropertyTest#3](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_3.cs)]
+    [!code-vb[VSSDKViewPropertyTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_3.vb)]  
   
 ## <a name="change-the-view-properties"></a>Alterar as propriedades de exibição  
   

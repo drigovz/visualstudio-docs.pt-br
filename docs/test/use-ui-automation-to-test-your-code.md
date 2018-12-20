@@ -1,6 +1,6 @@
 ---
 title: Testes automatizados de IU
-ms.date: 11/04/2016
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -18,16 +18,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 491a70cd8ef35a1401bfe0cd8b6118709751d183
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ce10c81265ecfd95f43d62c73d69c902eda1a6c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321197"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896634"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar a automação da interface do usuário para testar o código
 
 Os testes automatizados que orientam o aplicativo por meio da IU (interface do usuário) são conhecidos como *testes de IU codificados* (CUITs) no Visual Studio. Entre esses testes estão testes funcionais dos controles de interface de usuário. Eles permitem verificar se todo o aplicativo, inclusive sua interface do usuário, está funcionando corretamente. Os testes de IU codificados são especialmente úteis quando há validação ou outra lógica na interface do usuário, como em uma página da Web. Eles também costumam ser usados para automatizar um teste manual existente.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 Conforme mostrado na ilustração a seguir, uma experiência de desenvolvimento típica pode ser uma em que, inicialmente, você só compila o aplicativo e clica nos controles de interface do usuário para verificar se as coisas estão funcionando corretamente. Em seguida, você pode optar por criar um teste automatizado para não precisar continuar testando o aplicativo manualmente. Dependendo da funcionalidade específica testada no aplicativo, é possível gravar código para um teste funcional ou para um teste de integração que pode ou não incluir testes no nível da interface do usuário. Se desejar acessar diretamente uma lógica de negócios, você poderá codificar um teste de unidade. Porém, em determinadas circunstâncias, pode ser benéfico incluir testes dos diversos controles de interface de usuário no aplicativo. Um teste de IU codificado pode verificar se a variação de código não afeta a funcionalidade do aplicativo.
 
@@ -402,7 +404,7 @@ Para obter e definir valores de propriedade específicas de controle de interfac
 
 ### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>Para obter ou definir propriedades de controles de teste de IU diretamente
 
-Com controles que derivam de <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, como [HtmlList](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.htmlcontrols.htmllist.aspx) ou [WinComboBox](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.wincontrols.wincombobox.aspx), você pode obter ou definir os valores de propriedade diretamente. O código a seguir mostra alguns exemplos:
+Com controles que derivam de <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, como [HtmlList](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) ou [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox), você pode obter ou definir os valores de propriedade diretamente. O código a seguir mostra alguns exemplos:
 
  ```csharp
  int i = myHtmlList.ItemCount;
@@ -437,13 +439,13 @@ Você pode analisar testes de IU codificados usando logs de teste de IU codifica
 
 ## <a name="whats-next"></a>O que vem a seguir?
 
-**Opções adicionais para executar testes de IU codificados:** é possível executar testes de IU codificados diretamente no Visual Studio, como descrito anteriormente neste tópico. Além disso, você pode executar testes automatizados de interface do usuário no Microsoft Test Manager ou no Team Foundation Build. Quando são automatizados, os testes de IU codificados precisam interagir com a área de trabalho quando executados, diferentemente de outros testes automatizados.
+**Opções adicionais para executar testes de IU codificados:** é possível executar testes de IU codificados diretamente no Visual Studio, como descrito anteriormente neste tópico. Além disso, você pode executar testes automatizados de interface do usuário no Microsoft Test Manager ou usando o Azure Pipelines. Quando são automatizados, os testes de IU codificados precisam interagir com a área de trabalho quando executados, diferentemente de outros testes automatizados.
 
 - [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md)
 
 - [Executar Testes no Processo de build](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Como configurar o agente de teste para executar testes que interagem com a área de trabalho](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Como configurar o agente de teste para executar testes que interagem com a área de trabalho](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
 **Adicionar suporte para controles personalizados:** a estrutura de teste de IU codificado não oferece suporte para todas as interfaces do usuário possíveis e pode não oferecer suporte à interface do usuário que você deseja testar. Por exemplo, você não pode criar imediatamente um teste de IU codificado para a IU do Microsoft Excel. Porém, você pode criar uma extensão para o framework de teste de IU codificado que oferecerá suporte a um controle personalizado.
 

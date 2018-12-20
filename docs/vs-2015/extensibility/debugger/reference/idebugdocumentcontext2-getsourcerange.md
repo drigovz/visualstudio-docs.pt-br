@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentContext2::GetSourceRange | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: 5903c75e-5390-4d13-9314-1ee276255313
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73600b81c71a1337470a1975902c40292ab4dcef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 134c2ec0c42b9ca2e548f76e3fa2acac2cb9c8eb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467353"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789116"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugDocumentContext2::GetSourceRange](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange).  
-  
 Obtém o intervalo de código de origem deste contexto de documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetSourceRange(   
+HRESULT GetSourceRange(   
    TEXT_POSITION* pBegPosition,  
    TEXT_POSITION* pEndPosition  
 );  
 ```  
   
 ```csharp  
-int GetSourceRange(   
+int GetSourceRange(   
    TEXT_POSITION[] pBegPosition,  
    TEXT_POSITION[] pEndPosition  
 );  

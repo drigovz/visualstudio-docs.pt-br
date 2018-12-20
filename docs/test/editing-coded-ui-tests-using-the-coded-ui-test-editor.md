@@ -13,16 +13,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 50d677eec2a88f2470a7a329c4cf9e2b85f065da
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6c45a8abceacb1d566ca5aba382e7955f1c2601e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177351"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895555"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar testes de IU codificados usando o Editor de Teste de IU Codificado
 
 o Editor de testes de interface de usuário codificada permite modificar facilmente os testes de IU codificados. Ao usar o Editor de Teste de IU Codificado, é possível localizar, exibir e editar as propriedades de métodos de teste e ações de interface do usuário. Além disso, é possível utilizar o mapa de controles de interface do usuário para exibir e editar os controles correspondentes.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **Requisitos**
 
@@ -74,7 +76,7 @@ Por meio do Editor de Teste de IU Codificado, é possível localizar e exibir ra
 
 Para modificar as propriedades de uma ação de interface do usuário, no painel **Ações de interface do usuário**, expanda o método de teste que contém uma ação de IU cujas propriedades você deseja editar, selecione a ação de interface do usuário e, em seguida, modifique as propriedades usando a janela Propriedades.
 
-Por exemplo, se um servidor estiver indisponível e houver uma ação de interface do usuário associada ao navegador da Web com a instrução **Acessar página da Web "http://Contoso1/default.aspx"**, será possível alterar a URL para `'http://Contoso2/default.aspx'`.
+Por exemplo, se um servidor estiver indisponível e houver uma ação de interface do usuário associada ao navegador da Web com a instrução **Acessar página da Web "<http://Contoso1/default.aspx>"**, será possível alterar a URL para `'http://Contoso2/default.aspx'`.
 
 ![Propriedades de controle](../test/media/codeduitestcontrolprop.png)
 

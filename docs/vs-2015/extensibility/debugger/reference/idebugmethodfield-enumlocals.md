@@ -1,7 +1,7 @@
 ---
 title: IDebugMethodField::EnumLocals | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: b0456a6d-2b96-49e2-a871-516571b4f6a5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 061d6dccb21bb94871aeed2ac1e20c345a6bf3f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d54ae7fbf8c8a16cb62b7c21a7b52fc52d6d8d08
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465246"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741841"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugMethodField::EnumLocals](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmethodfield-enumlocals).  
-  
 Cria um enumerador para variáveis locais selecionados do método.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT EnumLocals(   
+HRESULT EnumLocals(   
    IDebugAddress*     pAddress,  
    IEnumDebugFields** ppLocals  
 );  

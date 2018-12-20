@@ -1,7 +1,7 @@
 ---
 title: JIT otimização e depuração | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ helpviewer_keywords:
 - optimized code, debugging
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb73c434c978f7a8b1847976c73fe2bff47e3b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab86e023b99f524651b56bbca4ddea2d613448e2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473151"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770739"
 ---
 # <a name="jit-optimization-and-debugging"></a>Otimização e depuração JIT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Otimização JIT e depuração](https://docs.microsoft.com/visualstudio/debugger/jit-optimization-and-debugging).  
-  
 Quando você depura um aplicativo gerenciado, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] suprime a otimização de código just-in-time (JIT) por padrão. A supressão da otimização JIT significa que você está depurando código não otimizado. O código é executado um pouco mais lentamente porque não é otimizado, mas sua experiência de depuração é muito mais completa. A depuração de código otimizado é mais difícil e recomendada somente se você encontrar um bug no código otimizado que não pode ser reproduzido na versão não otimizada.  
   
  Otimização JIT é controlada no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , o **suprimir Otimização JIT no carregamento do módulo** opção. Você pode encontrar essa opção na **gerais** página sob a **depuração** nó no **opções** caixa de diálogo.  

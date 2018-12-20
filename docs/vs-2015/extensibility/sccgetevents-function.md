@@ -1,7 +1,7 @@
 ---
 title: Função SccGetEvents | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 32f8147d-6dcc-465e-b07b-42da5824f9b0
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e73fea52d207d4f9834d5c3eabb15bf733c7e23
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 821d8f565c4f8ebb926459da9031a055c6c7992f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464522"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807056"
 ---
 # <a name="sccgetevents-function"></a>Função SccGetEvents
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [função SccGetEvents](https://docs.microsoft.com/visualstudio/extensibility/sccgetevents-function).  
-  
 Essa função recupera um evento de status na fila.  
   
 ## <a name="syntax"></a>Sintaxe  

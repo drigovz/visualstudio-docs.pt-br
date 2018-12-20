@@ -1,7 +1,7 @@
 ---
 title: Ler modelos e diagramas em outras edições do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ helpviewer_keywords:
 - models, versions of Visual Studio
 ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
 caps.latest.revision: 22
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a4642086639fad8a5b39e4a03d4509b349807a9b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6d104d8d92345ba56d390fdd7ad9b856432b4c92
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587861"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757363"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Ler modelos e diagramas em outras edições do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ler modelos e diagramas em outras edições do Visual Studio](https://docs.microsoft.com/visualstudio/modeling/read-models-and-diagrams-in-other-visual-studio-editions).  
-  
 Quando você abre um modelo em uma versão do Visual Studio que não dá suporte à criação de modelo, o modelo é aberto no modo somente leitura. Nesse modo, você pode alterar o layout dos diagramas, mas você não pode alterar o modelo.  
   
  Para ver quais versões do Visual Studio dão suporte a criação de modelos, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -54,11 +52,11 @@ Quando você abre um modelo em uma versão do Visual Studio que não dá suporte
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Alterações que você pode fazer no modo somente leitura  
  Se você abrir um modelo e seus diagramas em uma versão do Visual Studio que não dá suporte à criação de modelo, você não pode alterar o modelo. Ou seja, você não pode alterar os elementos e relações que são exibidas em diagramas ou no Gerenciador de modelos. No entanto, você pode fazer algumas alterações no layout dos diagramas:  
   
--   Reorganize as formas e conectores no diagrama.  
+- Reorganize as formas e conectores no diagrama.  
   
--   Expandir e recolher formas.  
+- Expandir e recolher formas.  
   
- Você pode salvar essas alterações. Se você quiser fazer as alterações visíveis para outros usuários, você deve pelo menos enviar atualizada **. layout** arquivos.  
+  Você pode salvar essas alterações. Se você quiser fazer as alterações visíveis para outros usuários, você deve pelo menos enviar atualizada **. layout** arquivos.  
   
 ##  <a name="RelatedTopics"></a> Tópicos relacionados  
   

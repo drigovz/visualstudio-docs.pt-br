@@ -1,7 +1,7 @@
 ---
 title: BP_PASSCOUNT_STYLE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c5a505df625b6ac787f1c13a84e11eddb4d8e7a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e71ecf9abbb670a7d50efd24e778a8f86208b0a4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465035"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764496"
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [BP_PASSCOUNT_STYLE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-passcount-style).  
-  
 Especifica a condição associada com a contagem de passagem do ponto de interrupção que faz com que o ponto de interrupção seja acionado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_BP_PASSCOUNT_STYLE {   
+enum enum_BP_PASSCOUNT_STYLE {   
    BP_PASSCOUNT_NONE             = 0x0000,  
    BP_PASSCOUNT_EQUAL            = 0x0001,  
    BP_PASSCOUNT_EQUAL_OR_GREATER = 0x0002,  
@@ -44,7 +42,7 @@ typedef DWORD BP_PASSCOUNT_STYLE;
 ```  
   
 ```csharp  
-public enum enum_BP_PASSCOUNT_STYLE {   
+public enum enum_BP_PASSCOUNT_STYLE {   
    BP_PASSCOUNT_NONE             = 0x0000,  
    BP_PASSCOUNT_EQUAL            = 0x0001,  
    BP_PASSCOUNT_EQUAL_OR_GREATER = 0x0002,  

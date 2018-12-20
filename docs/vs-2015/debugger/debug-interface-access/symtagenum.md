@@ -1,7 +1,7 @@
 ---
 title: SymTagEnum | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - SymTagEnum enumeration
 ms.assetid: 528a50cf-e13d-46ec-a98c-323d5d047de9
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d90eac40bc6c64f83c1b55c2f0dd056e9aa9def
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09462ee9d9223c79b4ee0dcf4e8a5efa37b4c796
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475136"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783292"
 ---
 # <a name="symtagenum"></a>SymTagEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [SymTagEnum](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/symtagenum).  
-  
 Especifica o tipo do símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum SymTagEnum {   
+enum SymTagEnum {   
    SymTagNull,  
    SymTagExe,  
    SymTagCompiland,  

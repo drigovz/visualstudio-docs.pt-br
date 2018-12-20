@@ -1,7 +1,7 @@
 ---
 title: Tempo de processamento de interface do usuário | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - Concurrency Visualizer, UI Processing Time
 ms.assetid: 0ddb05a3-8c6b-448b-8488-2751c1e5abcc
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e35f5f37b0eced2822cb4b019732210bec94495
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ecf2c33b2af2e57c964e145a334f6dd0d7161a92
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473475"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738432"
 ---
 # <a name="ui-processing-time"></a>Tempo de processamento de interface do usuário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tempo de processamento de interface do usuário](https://docs.microsoft.com/visualstudio/profiling/ui-processing-time).  
-  
 Esses segmentos na linha do tempo estão associados aos tempos de bloqueio categorizados como Processamento de Interface do Usuário. Isso significa que um thread está bombeando mensagens do Windows ou realizando outro trabalho de interface do usuário. Durante esse tempo, um thread foi bloqueado em uma API que a Visualização Simultânea está contando como Processamento de Interface do Usuário. APIs como `GetMessage()` e `MsgWaitForMultipleObjects()` pertencem a esse grupo.  
   
  Se nenhuma API de bloqueio predefinida for identificada, examine as pilhas de chamadas e relatórios de perfil para determinar as causas subjacentes do atraso.  

@@ -1,7 +1,7 @@
 ---
 title: As configurações para projetos da Web de páginas de propriedade | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,21 +23,19 @@ helpviewer_keywords:
 - debug configurations, Web projects
 ms.assetid: 8ec5160a-6408-4f47-8d41-f0e20e79a3b9
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 579872bab86e0cd8f127a7222c7fbc9b823e1a5a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4aef37bb7f6ac6b5b11c1d5a1ea80f12fae288ec
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475861"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777858"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Configurações das páginas de propriedade para projetos Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [configurações de páginas de propriedade para projetos Web](https://docs.microsoft.com/visualstudio/debugger/property-pages-settings-for-web-projects).  
-  
 Você pode alterar as configurações de propriedade para uma configuração de depuração no site da web do **páginas de propriedades** caixa de diálogo, conforme discutido na [Debug and Release Configurations](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram onde localizar configurações relacionadas ao depurador na **páginas de propriedade** caixa de diálogo.  
   
 ### <a name="configuration-properties-folder-start-options-category"></a>A pasta propriedades de configuração (Opções de Inicialização)  

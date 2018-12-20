@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugAddresses::Next | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 941e4be7-858d-433a-9259-18d0d017be9e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11dba9c16b8f97c2ec9a1620ca8fd004833c6028
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c96b7e57a72e5058f5dcb5591dd3e9a20e4c347e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464870"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727261"
 ---
 # <a name="ienumdebugaddressesnext"></a>IEnumDebugAddresses::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugAddresses::Next](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugaddresses-next).  
-  
 Esse método retorna o próximo conjunto de elementos da enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  

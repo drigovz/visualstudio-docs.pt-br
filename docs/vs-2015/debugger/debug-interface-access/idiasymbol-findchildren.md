@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Findchildren | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::findChildren method
 ms.assetid: 5fe7573a-e48b-428d-9c17-7421b7209246
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60895193f1b32cb41adeb808034e3d7ca2e407e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 684fc0f5474e85806066de352da7ddad8527a3d2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465448"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809227"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Findchildren](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-findchildren).  
-  
 Recupera os filhos do símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findChildren (   
+HRESULT findChildren (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  

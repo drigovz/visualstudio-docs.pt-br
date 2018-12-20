@@ -1,7 +1,7 @@
 ---
 title: 'Como: obter um serviço | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc21d53df18fe855d0f745fcb4d11708e4ac07b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea5f3be4f5792213c5625e4c287195161eb1dd62
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460457"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785060"
 ---
 # <a name="how-to-get-a-service"></a>Como: obter um serviço
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: obter um serviço](https://docs.microsoft.com/visualstudio/extensibility/how-to-get-a-service).  
-  
 Muitas vezes você precisa obter os serviços do Visual Studio para acessar recursos diferentes. Em geral, um serviço do Visual Studio fornece uma ou mais interfaces que você pode usar. Você pode obter a maioria dos serviços de um VSPackage.  
   
  Qualquer VSPackage que deriva de <xref:Microsoft.VisualStudio.Shell.Package> e que localizado corretamente pode pedir para qualquer serviço global. Como a classe Package implementa <xref:System.IServiceProvider>, qualquer VSPackage que deriva de pacote também é um provedor de serviços.  
@@ -76,7 +74,7 @@ if (log == null) return;
  Eis como obter um serviço do objeto DTE.  
   
 ```csharp  
-// Start with the DTE object, for example:   
+// Start with the DTE object, for example:   
 // using EnvDTE;  
 // DTE dte = (DTE)GetService(typeof(DTE));  
   

@@ -1,7 +1,7 @@
 ---
 title: Visão geral dos aplicativos de dados de N camadas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 761002eb9e46ec0e344c653affbebb10b3922466
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a5f6c89f6b71ecd2902877757f7d852c0e51088
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464886"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852915"
 ---
 # <a name="n-tier-data-applications-overview"></a>Visão geral de aplicativos de dados de N camadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [visão geral dos aplicativos de dados de N camadas](https://docs.microsoft.com/visualstudio/data-tools/n-tier-data-applications-overview).  
-  
   
 N-camadas * aplicativos de dados são aplicativos de dados que são separados em várias *camadas*. Aplicativos de n camadas também chamados de "aplicativos distribuídos" e "aplicativos multicamados", separam o processamento em camadas discretas que são distribuídas entre o cliente e o servidor. Quando você desenvolve aplicativos que acessam dados, você deve ter uma separação clara entre as várias camadas que compõem o aplicativo.  
   
@@ -50,31 +48,31 @@ N-camadas * aplicativos de dados são aplicativos de dados que são separados em
 ## <a name="presentation-tier"></a>Camada de apresentação  
  O *camada de apresentação* é a camada na qual os usuários interagem com um aplicativo. Ele normalmente contém lógica de aplicativo adicionais também. Componentes da camada de apresentação típicas incluem o seguinte:  
   
--   Componentes de dados, como o <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.  
+- Componentes de dados, como o <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.  
   
--   Objeto de representações de dados, como [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classes de entidade para uso na camada de apresentação.  
+- Objeto de representações de dados, como [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classes de entidade para uso na camada de apresentação.  
   
- A camada de apresentação normalmente acessa a camada intermediária usando uma referência de serviço (por exemplo, uma [serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) aplicativo). A camada de apresentação não pode acessar diretamente a camada de dados. A camada de apresentação se comunica com a camada de dados por meio do componente de acesso a dados na camada intermediária.  
+  A camada de apresentação normalmente acessa a camada intermediária usando uma referência de serviço (por exemplo, uma [serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) aplicativo). A camada de apresentação não pode acessar diretamente a camada de dados. A camada de apresentação se comunica com a camada de dados por meio do componente de acesso a dados na camada intermediária.  
   
 ## <a name="middle-tier"></a>Camada intermediária  
  O *camada intermediária* é a camada que a camada de apresentação e os camada de dados usar para se comunicar entre si. Componentes de camada intermediária típicas incluem o seguinte:  
   
--   Lógica de negócios, como a validação de regras e dados de negócios.  
+- Lógica de negócios, como a validação de regras e dados de negócios.  
   
--   Componentes de acesso a dados e lógica, como o seguinte:  
+- Componentes de acesso a dados e lógica, como o seguinte:  
   
-    -   [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e [DataAdapters e DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
+  -   [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e [DataAdapters e DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
   
-    -   Objeto de representações de dados, como [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classes de entidade.  
+  -   Objeto de representações de dados, como [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classes de entidade.  
   
-    -   Serviços de aplicativo comuns, como autenticação, autorização e personalização.  
+  -   Serviços de aplicativo comuns, como autenticação, autorização e personalização.  
   
- A ilustração a seguir mostra os recursos e tecnologias que estão disponíveis no Visual Studio e onde eles podem caber na camada intermediária de um aplicativo de n camadas.  
+  A ilustração a seguir mostra os recursos e tecnologias que estão disponíveis no Visual Studio e onde eles podem caber na camada intermediária de um aplicativo de n camadas.  
   
- ![Componentes da camada de intermediária](../data-tools/media/ntiermid.png "NtierMid")  
-Camada intermediária  
+  ![Componentes da camada de intermediária](../data-tools/media/ntiermid.png "NtierMid")  
+  Camada intermediária  
   
- A camada intermediária geralmente se conecta à camada de dados usando uma conexão de dados. Esta conexão de dados normalmente é armazenada no componente de acesso de dados.  
+  A camada intermediária geralmente se conecta à camada de dados usando uma conexão de dados. Esta conexão de dados normalmente é armazenada no componente de acesso de dados.  
   
 ## <a name="data-tier"></a>Camada de Dados  
  O *camada de dados* é basicamente o servidor que armazena dados de um aplicativo (por exemplo, um servidor que executa [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]).  

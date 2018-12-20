@@ -1,5 +1,5 @@
 ---
-title: Associar um controlador de teste ou agente de teste a um adaptador de rede no Visual Studio
+title: Associar um controlador de teste ou um agente de teste a um adaptador de rede
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7ec26a9356c0136404f6fb9fe97e88b7b40ecf7f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 59a71b57c76fbb0650824efb29afe585c62162f9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203957"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065941"
 ---
-# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Como associar um controlador de teste ou agente de teste a um adaptador de rede
+# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Como: Associar um controlador de teste ou um agente de teste a um adaptador de rede
 
 Se um computador com o software de controlador de teste ou agente de teste instalado tiver vários adaptadores de rede, você precisará especificar o endereço IP em vez do nome do computador para identificar o controlador ou agente de teste.
 
@@ -30,6 +30,8 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 > **Erro 8110. Não é possível se conectar ao computador do controlador especificado ou acessar o objeto do controlador**
 >
 > Esse erro pode ser causado pela instalação do controlador de teste em um computador que tenha mais de um adaptador de rede. Também é possível instalar agentes com êxito e não ver esse problema até tentar executar um teste.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>Associar um controlador de teste a um adaptador de rede específico
 
@@ -49,7 +51,7 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 
 2.  No painel de resultados, na coluna **Nome**, clique com o botão direito do mouse no serviço **Controlador de Teste do Visual Studio** e escolha **Parar**.
 
-     -ou-
+     - ou -
 
      Abra um prompt de comando elevado e execute o seguinte comando em um comando:
 
@@ -95,7 +97,7 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 
 2.  No painel de resultados, na coluna **Nome**, clique com o botão direito do mouse no serviço **Agente de Teste do Visual Studio** e escolha **Parar**.
 
-     -ou-
+     - ou -
 
      Abra um prompt de comando elevado e execute o seguinte comando em um comando:
 
@@ -133,5 +135,5 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)
 - [Modificar configurações de registro em log de testes de carga](../test/modify-load-test-logging-settings.md)
 - [Configurar portas para controladores e agentes de teste](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Como especificar o tamanho máximo do arquivo de log](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Como especificar períodos de tempo limite para test controllers e test agents](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [Como: Especificar o tamanho máximo do arquivo de log](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
+- [Como: Especificar períodos de tempo limite para controladores e agentes de teste](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

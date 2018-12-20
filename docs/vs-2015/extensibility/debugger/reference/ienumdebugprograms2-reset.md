@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPrograms2::Reset | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b289242b-24ea-4df3-a811-20b0c8a903d6
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af27fc1d8edf12bc06e24cdd5b29c01274e57790
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf9d60467e7967e0e962e39f206ad3f72d738b1f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474987"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744628"
 ---
 # <a name="ienumdebugprograms2reset"></a>IEnumDebugPrograms2::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugPrograms2::Reset](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugprograms2-reset).  
-  
 Redefine a enumeração para o primeiro elemento.  
   
 ## <a name="syntax"></a>Sintaxe  

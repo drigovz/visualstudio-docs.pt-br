@@ -1,26 +1,28 @@
 ---
-title: Trabalhando com o Tutorial do Python, etapa 2, escrever e executar um código
+title: Etapa 2 do Tutorial do Python no Visual Studio, escrever e executar o código
+titleSuffix: ''
 description: Etapa 2 de um passo a passo básico das funcionalidades do Python no Visual Studio, incluindo como editar código e executar um projeto.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2fbd9729c02eedbcacd0955a6766b5627156090e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9b2f1c4743652f0925ef083d0ca62a34485c219b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513114"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054794"
 ---
-# <a name="step-2-write-and-run-code"></a>Etapa 2: Escrever e executar código
+# <a name="step-2-write-and-run-code"></a>Etapa 2: Escrever e executar o código
 
-**Etapa anterior: [Criar um novo projeto do Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
+**Etapa anterior: [Criar um projeto do Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
 Embora o **Gerenciador de Soluções** seja o local em que você gerencia arquivos de projeto, a janela do *editor* normalmente é o local em que você trabalha com o *conteúdo* dos arquivos, como o código-fonte. O editor tem reconhecimento contextual do tipo de arquivo que você está editando, incluindo a linguagem de programação (com base na extensão do arquivo) e oferece recursos apropriados para essa linguagem, como a coloração de sintaxe e o preenchimento automático usando o IntelliSense.
 

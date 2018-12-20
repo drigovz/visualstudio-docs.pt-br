@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugModules2::Clone | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: fd6d3abc-20d9-4f6f-9c8e-5bd29f68d47d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5b204456606fbdde8eb86f9421264b92f25c980d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b33738c67d57bf3f36bfeb95888c5ed0000a7e9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468376"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764847"
 ---
 # <a name="ienumdebugmodules2clone"></a>IEnumDebugModules2::Clone
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugModules2::Clone](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugmodules2-clone).  
-  
 Retorna uma cópia da enumeração atual como um objeto separado.  
   
 ## <a name="syntax"></a>Sintaxe  

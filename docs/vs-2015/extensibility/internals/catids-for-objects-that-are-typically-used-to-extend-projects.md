@@ -1,7 +1,7 @@
 ---
 title: CATIDs para objetos que normalmente são usados para estender projetos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0c7fdb66-ed96-4b36-89f6-021bca573572
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e2ad075ac384dc8bc4f83d16034715515fde5b04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57af657c888963dc9f33fc729678c0d8c82e0f0a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463541"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798502"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATIDs para objetos que normalmente são usados para estender projetos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [CATIDs para objetos que normalmente são usados para estender projetos](https://docs.microsoft.com/visualstudio/extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects).  
-  
 A tabela a seguir lista CATIDs que são usados para estender `Project` e `ProjectItem` objetos de automação para [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], e [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projetos. Essas CATIDs são definidos em VSLangProj.olb.  
   
 ## <a name="listing-of-catids"></a>Listagem de CATIDs  

@@ -1,7 +1,7 @@
 ---
 title: Trabalhando com dados de métricas de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,21 +17,19 @@ helpviewer_keywords:
 - results window, code metrics
 ms.assetid: 988193ec-b4a3-4e11-b5a1-7334979807d5
 caps.latest.revision: 19
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 954b81dfe738ebd0de1f8aa38cb4975a05333feb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca9d384b8c7b6d49e44826c65a156d715baa0786
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467514"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775882"
 ---
 # <a name="working-with-code-metrics-data"></a>Trabalhando com dados de métricas de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [trabalhando com dados de métricas de código](https://docs.microsoft.com/visualstudio/code-quality/working-with-code-metrics-data).  
-  
 O **resultados de métricas de código** janela exibe os dados que são gerados pela análise de métricas de código. Para obter mais informações sobre valores de dados de métricas de código, consulte [valores de métricas de código](../code-quality/code-metrics-values.md).  
   
  Esse tópico contém as seguintes seções:  

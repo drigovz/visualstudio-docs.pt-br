@@ -1,7 +1,7 @@
 ---
 title: 'Como: usar a janela módulos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,21 +29,19 @@ helpviewer_keywords:
 - modules, displaying
 ms.assetid: d840fdca-b035-4452-b652-72580c831896
 caps.latest.revision: 41
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f7a5c71a95c0e4c366b7001a3adf86d5bacc9c8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fea513b7593e260b5f5fb71e40ced98a1f8cc279
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464019"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764413"
 ---
 # <a name="how-to-use-the-modules-window"></a>Como usar a janela Módulos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Exibir módulos, DLLs e executáveis no depurador](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-modules-window).  
-  
 OBSERVAÇÃO]
 >  Esse recurso não está disponível para depuração do SQL ou script.  
   

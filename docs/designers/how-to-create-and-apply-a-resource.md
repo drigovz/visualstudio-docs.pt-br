@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98aece47b3936108b171ad7e2e1100e98d601312
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 405b208df0aedffe69c9e476a5a31745faeb84f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872558"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Como criar e aplicar um recurso
 Os estilos e modelos de elementos no Designer XAML são armazenados em entidades reutilizáveis chamadas recursos. Os estilos permitem que você defina propriedades de elemento e reutilize essas configurações para obter uma aparência consistente entre vários elementos. Um [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) define a aparência de um controle e também pode ser aplicado como um recurso. Para obter mais informações, confira [Início rápido: definindo o estilo de controles](http://go.microsoft.com/fwlink/?LinkID=248239) e [QuickStart: Control templates](http://go.microsoft.com/fwlink/?LinkID=247982) (Guia de início rápido: modelos de controle).
@@ -51,18 +51,18 @@ Os estilos e modelos de elementos no Designer XAML são armazenados em entidades
 
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>Para aplicar um recurso a um elemento ou propriedade
 
-1.  Na janela Estrutura de Tópicos do Documento, escolha o elemento em que você deseja aplicar um recurso.
+1. Na janela Estrutura de Tópicos do Documento, escolha o elemento em que você deseja aplicar um recurso.
 
-2.  Realize um dos seguintes procedimentos:
+2. Realize um dos seguintes procedimentos:
 
-    -   Aplique um recurso a uma propriedade. Na janela Propriedades, escolha o marcador de propriedade ao lado do valor da propriedade, escolha **Recurso Local** ou **Recurso do Sistema** e escolha um recurso disponível na lista que é exibida.
+   - Aplique um recurso a uma propriedade. Na janela Propriedades, escolha o marcador de propriedade ao lado do valor da propriedade, escolha **Recurso Local** ou **Recurso do Sistema** e escolha um recurso disponível na lista que é exibida.
 
-         Se um recurso que você esperava ver não aparecer, poderá ser porque o tipo de recurso não corresponde ao tipo da propriedade.
+      Se um recurso que você esperava ver não aparecer, poderá ser porque o tipo de recurso não corresponde ao tipo da propriedade.
 
-    -   Aplique um estilo ou recurso de modelo de controle a um controle. Abra o menu de contexto para um controle na janela Estrutura de Tópicos de Documento, escolha **Editar Modelo** ou **Editar Modelos Adicionais**, escolha **Aplicar Recurso** e selecione o nome do modelo de controle na lista que é exibida.
+   - Aplique um estilo ou recurso de modelo de controle a um controle. Abra o menu de contexto para um controle na janela Estrutura de Tópicos de Documento, escolha **Editar Modelo** ou **Editar Modelos Adicionais**, escolha **Aplicar Recurso** e selecione o nome do modelo de controle na lista que é exibida.
 
-        > [!NOTE]
-        >  **Editar Modelo** aplica modelos de controle. **Editar Modelos Adicionais** aplica outros tipos de modelo.
+     > [!NOTE]
+     >  **Editar Modelo** aplica modelos de controle. **Editar Modelos Adicionais** aplica outros tipos de modelo.
 
      É possível aplicar recursos sempre que eles são compatíveis. Por exemplo, você pode aplicar um recurso de pincel à propriedade **Primeiro plano** de um controle <xref:Windows.UI.Xaml.Controls.TextBox>.
 

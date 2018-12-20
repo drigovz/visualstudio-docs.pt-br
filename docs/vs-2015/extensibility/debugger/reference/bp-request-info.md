@@ -1,7 +1,7 @@
 ---
 title: BP_REQUEST_INFO | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41a134c70c94c6c7fa826cf952c2444b7128fbb6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88e832232ff23256d0eced905171c0b28a9a82e4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464476"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806783"
 ---
 # <a name="bprequestinfo"></a>BP_REQUEST_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [BP_REQUEST_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-request-info).  
-  
 Contém as informações necessárias para implementar um ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-typedef struct _BP_REQUEST_INFO {  
+typedef struct _BP_REQUEST_INFO {  
    BPREQI_FIELDS   dwFields;  
    GUID            guidLanguage;  
    BP_LOCATION     bpLocation;  
@@ -45,11 +43,11 @@ typedef struct _BP_REQUEST_INFO {
    BP_CONDITION    bpCondition;  
    BP_PASSCOUNT    bpPassCount;  
    BP_FLAGS        dwFlags;  
-} BP_REQUEST_INFO;  
+} BP_REQUEST_INFO;  
 ```  
   
 ```csharp  
-public struct BP_REQUEST_INFO {  
+public struct BP_REQUEST_INFO {  
    public uint           dwFields;  
    public Guid           guidLanguage;  
    public BP_LOCATION    bpLocation;  

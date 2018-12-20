@@ -1,7 +1,7 @@
 ---
 title: ArrayType | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - ArrayType symbol
 ms.assetid: 1d973a3a-2bde-46df-8625-85d519bb3cc9
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 603328f0600ed46b23c08ab280f7b7873218c2ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fae2f6fc1ca0c33580e45e95b5bc10f11c99e94e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465136"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788505"
 ---
 # <a name="arraytype"></a>ArrayType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ArrayType](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/arraytype).  
-  
 Uma matriz é identificada por um `SymTagArray` símbolo.  
   
 ## <a name="properties"></a>Propriedades  

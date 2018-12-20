@@ -1,7 +1,7 @@
 ---
 title: Decisões de Design de tipo de projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 49f4b198da38a53360efffcdff82daa6fcdb350c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 62d1a0e78aebd39c1f305c3480d6a418b382b4fd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474636"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781784"
 ---
 # <a name="project-type-design-decisions"></a>Decisões de design do tipo de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [decisões de Design de tipo de projeto](https://docs.microsoft.com/visualstudio/extensibility/internals/project-type-design-decisions).  
-  
 Antes de criar um novo tipo de projeto, você deve tomar várias decisões de design sobre o tipo de projeto. Você deve decidir quais tipos de itens que conterá seus projetos, como arquivos de projeto serão mantidos e qual modelo de compromisso que você usará.  
   
 ## <a name="project-items"></a>Itens de projeto  
@@ -50,13 +48,13 @@ Antes de criar um novo tipo de projeto, você deve tomar várias decisões de de
   
  Você tem várias opções a considerar sobre persistência para os itens em seu projeto. Você pode executar qualquer uma das seguintes opções:  
   
--   Salve cada arquivo individualmente quando ele tiver sido alterado.  
+- Salve cada arquivo individualmente quando ele tiver sido alterado.  
   
--   Capturar a quantidade de transações em uma única **salvar** operação.  
+- Capturar a quantidade de transações em uma única **salvar** operação.  
   
--   Salve arquivos localmente e, em seguida, publicar em um servidor ou usar outra abordagem para salvar itens de projeto quando o item representa uma conexão de dados para um objeto remoto.  
+- Salve arquivos localmente e, em seguida, publicar em um servidor ou usar outra abordagem para salvar itens de projeto quando o item representa uma conexão de dados para um objeto remoto.  
   
- Para obter mais informações sobre a persistência, consulte [persistência do projeto](../../extensibility/internals/project-persistence.md) e [abrindo e salvando itens de projeto](../../extensibility/internals/opening-and-saving-project-items.md).  
+  Para obter mais informações sobre a persistência, consulte [persistência do projeto](../../extensibility/internals/project-persistence.md) e [abrindo e salvando itens de projeto](../../extensibility/internals/opening-and-saving-project-items.md).  
   
 ## <a name="project-commitment-model"></a>Modelo de projeto de compromisso  
  Objetos de dados persistentes ser abertos no modo direto ou no modo transacionado?  

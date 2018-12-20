@@ -1,7 +1,7 @@
 ---
 title: StartProfile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - StartProfile
 ms.assetid: 1761311d-c9d5-48f5-b1f8-b3605829940a
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8755dcf0b392d17234a3f1224a04de4603840fc2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aff331d138a3cc61ef2a30adf07bb76157f25228
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463176"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732731"
 ---
 # <a name="startprofile"></a>StartProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [StartProfile](https://docs.microsoft.com/visualstudio/profiling/startprofile).  
-  
 A função `StartProfile` define o contador como 1 (on) para o nível de criação de perfil especificado.  
   
 ## <a name="syntax"></a>Sintaxe  

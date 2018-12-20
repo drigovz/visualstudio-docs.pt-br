@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 055e1da96ae3078c0b77597816868be5994d1223
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281267"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872402"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Passo a passo: Criar uma web part do SharePoint
 
@@ -96,13 +96,13 @@ Você pode especificar quais controles você deseja que apareça na Web Part adi
 
 3. Adicione o seguinte código para o `WebPart1` classe. Esse código declara os seguintes campos:
 
-    - Uma grade de dados para exibir os funcionários na Web Part.
+   - Uma grade de dados para exibir os funcionários na Web Part.
 
-    - Texto que aparece no controle que é usado para filtrar a grade de dados.
+   - Texto que aparece no controle que é usado para filtrar a grade de dados.
 
-    - Um rótulo que exibe um erro se a grade de dados é não é possível exibir dados.
+   - Um rótulo que exibe um erro se a grade de dados é não é possível exibir dados.
 
-    - Uma cadeia de caracteres que contém o caminho do arquivo de dados de funcionário.
+   - Uma cadeia de caracteres que contém o caminho do arquivo de dados de funcionário.
 
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
@@ -114,18 +114,18 @@ Você pode especificar quais controles você deseja que apareça na Web Part adi
 
 5. Substitua o `CreateChildControls` método com o código a seguir. Esse código executa as seguintes tarefas:
 
-    - Adiciona a grade de dados e o rótulo que é declarado na etapa anterior.
+   - Adiciona a grade de dados e o rótulo que é declarado na etapa anterior.
 
-    - Associa a grade de dados para um arquivo XML que contém dados de funcionários.
+   - Associa a grade de dados para um arquivo XML que contém dados de funcionários.
 
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
 6. Adicione o seguinte método à classe `WebPart1`. Esse código executa as seguintes tarefas:
 
-    - Cria um verbo que aparece no menu de verbos de Web Part da Web part renderizado.
+   - Cria um verbo que aparece no menu de verbos de Web Part da Web part renderizado.
 
-    - Manipula o evento que é gerado quando o usuário escolhe o verbo no menu de verbos. Esse código filtra a lista de funcionários que aparece na grade de dados.
+   - Manipula o evento que é gerado quando o usuário escolhe o verbo no menu de verbos. Esse código filtra a lista de funcionários que aparece na grade de dados.
 
      [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
      [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]

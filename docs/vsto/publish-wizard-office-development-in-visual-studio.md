@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edd88755fbc3065cf6d9ff95b9859b7e70393300
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0d1b72745b3bd8a24dc69a5bc4e1508c8b2f7571
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669970"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672740"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Assistente de publicação (desenvolvimento do Office no Visual Studio)
   Use o **Assistente de publicação** para copiar arquivos de solução para um local especificado, criar os arquivos de manifesto e criar um programa de instalação.  
@@ -41,19 +41,19 @@ ms.locfileid: "35669970"
   
  Digite o local como um caminho de disco, compartilhamento de arquivos, site FTP ou URL do site da web ou clique a **procurar** botão para procurar o local. O caminho pode ser nos seguintes formatos:  
   
--   Um caminho relativo ou absoluto no padrão Windows Formatar, como *C:\Deploy\MyApplication* ou *\MyApplication*.  
+- Um caminho relativo ou absoluto no padrão Windows Formatar, como *C:\Deploy\MyApplication* ou *\MyApplication*.  
   
--   Um caminho de convenção de nomenclatura Universal (UNC), como  *\\\ServerName\MyApplication\\*.  
+- Um caminho de convenção de nomenclatura Universal (UNC), como  *\\\ServerName\MyApplication\\*.  
   
--   Uma URL de uma web site, como http://www.microsoft.com/MyApplication.  
+- Uma URL de uma web site, como http://www.microsoft.com/MyApplication.  
   
- Por padrão, é o local de publicação *http://localhost/projectname/* se tiver instalado o IIS ou o diretório de Publish se você fizer não tiver o IIS instalado.  
+  Por padrão, é o local de publicação *http://localhost/projectname/* se tiver instalado o IIS ou o diretório de Publish se você fizer não tiver o IIS instalado.  
   
 > [!NOTE]  
 >  Existem considerações mais se o computador de destino está executando o Windows Vista. Você deve ser um administrador no computador Windows Vista para usar a opção de publicação local. Além disso, o local padrão é sempre o *publique\\*  diretório, independentemente de você ter instalado o IIS.  
   
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>O que é o caminho de instalação padrão em computadores de usuários finais?  
- O caminho de instalação é opcional. Se você preferir, você pode definir o caminho de instalação mais tarde. Para obter detalhes, consulte [como: alterar o caminho de instalação de uma solução do Office](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+ O caminho de instalação é opcional. Se você preferir, você pode definir o caminho de instalação mais tarde. Para obter detalhes, consulte [como: alterar o caminho de instalação de uma solução do Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
  O caminho de instalação é o diretório do qual o usuário final instalará a personalização. Também é o caminho que a solução usará para verificar se há atualizações. O **Assistente de publicação** não implanta a solução para esse local, a menos que o caminho é o mesmo que você digitou na **especifique o local para publicar este aplicativo** caixa da página anterior.  
   

@@ -1,7 +1,7 @@
 ---
 title: Como instalar o criador de perfil autônomo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - profiling tools, stand-alone profiler
 ms.assetid: cae81c95-83cd-4ab6-8a98-84ef977a2f6d
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c0b9048d54af3fdc6910803a3d82d8b33700d0d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 1d387a9f085b8cf755bfb8efb8ddd056c16cca4e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475648"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817159"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Como instalar o criador de perfil autônomo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: instalar o Profiler stand-alone](https://docs.microsoft.com/visualstudio/profiling/how-to-install-the-stand-alone-profiler).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornece uma linha de comando baseada no criador de perfil autônomo que pode ser executado sem instalar o IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Essa situação ocorre quando um computador não tiver ou não puder ter um ambiente de desenvolvimento instalado. Por exemplo, você não deve instalar um ambiente de desenvolvimento em um servidor Web de produção.  
   
 > [!NOTE]

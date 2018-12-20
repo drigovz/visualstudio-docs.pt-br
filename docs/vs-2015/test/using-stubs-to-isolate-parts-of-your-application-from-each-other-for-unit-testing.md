@@ -1,7 +1,7 @@
 ---
 title: Uso de stubs para isolar partes do seu aplicativo para teste de unidade | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b83a9e73661e6b8c525a800376453cf8cff6a53c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc12f77a8f1c3443606537dd6f818e9ee6625327
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476175"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853175"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usando stubs para isolar partes de seu aplicativo para teste de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando stubs para isolar partes do seu aplicativo umas das outras para teste de unidade](https://docs.microsoft.com/visualstudio/test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing).  
-  
 Tipos de stub * são uma das duas tecnologias que o Microsoft Fakes framework fornece para permitir que você isole facilmente um componente que você está testando de outros componentes que ele chama. Um stub é um pequeno trecho de código que ocupa o lugar de outro componente durante o teste. A vantagem de usar um stub é que ele retorna resultados consistentes, tornando mais fácil escrever o teste. E você pode executar testes mesmo se os outros componentes não estiverem funcionando ainda.  
   
  Para obter uma visão geral e início rápido guia Fakes, confira [Isolamento de código em teste com Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
@@ -127,13 +125,13 @@ End Function
   
  A injeção de interface aplica a seguinte regra:  
   
--   O código de qualquer componente de seu aplicativo nunca deve se referir explicitamente a uma classe de outro componente, em uma declaração ou em uma instrução `new`. Em vez disso, as variáveis e os parâmetros devem ser declarados com interfaces. As instâncias do componente devem ser criadas somente pelo contêiner do componente.  
+- O código de qualquer componente de seu aplicativo nunca deve se referir explicitamente a uma classe de outro componente, em uma declaração ou em uma instrução `new`. Em vez disso, as variáveis e os parâmetros devem ser declarados com interfaces. As instâncias do componente devem ser criadas somente pelo contêiner do componente.  
   
-     Nesse caso, “componente” significa uma classe ou um grupo de classes que você desenvolve e atualiza em conjunto. Normalmente, um componente é o código em um projeto do Visual Studio. É menos importante desacoplar classes em um componente, pois elas são atualizadas ao mesmo tempo.  
+   Nesse caso, “componente” significa uma classe ou um grupo de classes que você desenvolve e atualiza em conjunto. Normalmente, um componente é o código em um projeto do Visual Studio. É menos importante desacoplar classes em um componente, pois elas são atualizadas ao mesmo tempo.  
   
-     Também não é tão importante desacoplar seus componentes das classes de uma plataforma relativamente estável, como System.dll. Escrever interfaces para todas essas classes obstruiria seu código.  
+   Também não é tão importante desacoplar seus componentes das classes de uma plataforma relativamente estável, como System.dll. Escrever interfaces para todas essas classes obstruiria seu código.  
   
- O código StockAnalyzer pode, portanto, ser melhorado desacoplando-o do StockFeed usando uma interface como esta:  
+  O código StockAnalyzer pode, portanto, ser melhorado desacoplando-o do StockFeed usando uma interface como esta:  
   
 ```csharp  
 public interface IStockFeed  

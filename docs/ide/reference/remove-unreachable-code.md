@@ -1,5 +1,5 @@
 ---
-title: Refatoração Remover código inacessível no Visual Studio
+title: Refatoração Remover código inacessível
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -8,15 +8,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 dev_langs:
-- csharp
+- CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: fcd402398e8669eb84d1ee23cd128e2d7eb04031
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 34bd11fe681199cecd0acd2e79cbc2f5d11fc494
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124873"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059305"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Refatoração Remover código inacessível
 
@@ -24,11 +24,11 @@ Esta refatoração aplica-se a:
 
 - C#
 
-**O quê:** remove o código que nunca será executado.
+**O quê:** Remove o código que nunca será executado.
 
-**Quando:** seu programa não tem um caminho para um snippet de código, tornando esse snippet de código desnecessário.
+**Quando:** Seu programa não tem um caminho para um snippet de código, tornando esse snippet de código desnecessário.
 
-**Por quê:** melhorar a legibilidade e a facilidade de manutenção removendo o código que é supérfluo e nunca será executado.
+**Por que:** Melhorar a legibilidade e a facilidade de manutenção removendo o código que é supérfluo e nunca será executado.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -39,9 +39,9 @@ Esta refatoração aplica-se a:
 1. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Remover código inacessível** no pop-up da janela Visualização.
+      - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Remover código inacessível** no pop-up da janela Visualização.
    - **Mouse**
-     - Clique com o botão direito do mouse no código, selecione o menu **Ações Rápidas e Refatorações** e selecione **Remover código inacessível** no pop-up da janela Visualização.
+      - Clique com o botão direito do mouse no código, selecione o menu **Ações Rápidas e Refatorações** e selecione **Remover código inacessível** no pop-up da janela Visualização.
 
 1. Quando estiver satisfeito com a alteração, pressione **Enter** ou clique na correção no menu e as alterações serão confirmadas.
 

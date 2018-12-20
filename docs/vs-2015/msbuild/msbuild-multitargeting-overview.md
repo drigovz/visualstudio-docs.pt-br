@@ -1,7 +1,7 @@
 ---
 title: Visão geral da multiplataforma do MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 858c06ba61d44e7e7ddceed5d6378aaeafcc47bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da5d8d5aae19bee458a6d0750cb0d8cd4efa8c4d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466090"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243810"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Visão geral da multiplataforma no MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [visão geral de multiplataforma do MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-multitargeting-overview).  
-  
   
 Usando o MSBuild, você pode compilar um aplicativo para ser executado em qualquer uma das várias versões do .NET Framework e em qualquer uma das várias plataformas de sistema. Por exemplo, você pode compilar um aplicativo para execução no .NET Framework 2.0 em uma plataforma de 32 bits e pode compilar o mesmo aplicativo para ser executado no .NET Framework 4.5 em uma plataforma de 64 bits.  
   

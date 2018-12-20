@@ -1,7 +1,7 @@
 ---
 title: Função CvWriteFlag | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,21 +21,19 @@ helpviewer_keywords:
 - CvWriteFlagExVW method
 ms.assetid: ee9da1e2-7b34-4cba-81e2-215d25d32e4d
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f23935231628687900231da344d51c432944114b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 83dde7f6dfa465cc56a208ae041f52c7caf50682
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473943"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802974"
 ---
 # <a name="cvwriteflag-function"></a>Função CvWriteFlag
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [função CvWriteFlag](https://docs.microsoft.com/visualstudio/profiling/cvwriteflag-function).  
-  
 Grava um sinalizador para o arquivo de rastreamento da Visualização Simultânea.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -96,7 +94,7 @@ HRESULT CvWriteFlagExVA(
   
  **Unicode:** CvWriteFlagExW, CvWriteFlagExVW  
   
- **ANSI:** CvWriteFlagExA, CvWriteFlagExVA  
+ <strong>ANSI:</strong>CvWriteFlagExA, CvWriteFlagExVA  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de biblioteca C++](../profiling/cpp-library-reference.md)

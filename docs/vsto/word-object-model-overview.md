@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0005dd52c9c70edf41c9fc32c51e555748c78bfc
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 75a5f8e79bbd6dd34b046cbff6d59844a977efb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258448"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878005"
 ---
 # <a name="word-object-model-overview"></a>Visão geral do modelo de objeto do Word
   Ao desenvolver soluções do Word no Visual Studio, você interage com o modelo de objeto do Word. Esse modelo de objeto consiste em classes e interfaces que são fornecidos no assembly de interoperabilidade primário para o Word e são definidos na <xref:Microsoft.Office.Interop.Word> namespace.  
@@ -53,17 +53,17 @@ ms.locfileid: "35258448"
   
  As seções a seguir descrevem brevemente os objetos de nível superior e como eles interagem entre si. Esses objetos incluem os cinco seguintes:  
   
--   Objeto de aplicativo  
+- Objeto de aplicativo  
   
--   Objeto de documento  
+- Objeto de documento  
   
--   Objeto Selection  
+- Objeto Selection  
   
--   Objeto de intervalo  
+- Objeto de intervalo  
   
--   Objeto de indicador  
+- Objeto de indicador  
   
- Além do modelo de objeto do Word, os projetos do Office no Visual Studio fornecem *hospedar itens* e *hospedar controles* que estendem alguns objetos no modelo de objeto do Word. Itens de host e controles de host se comportam como eles estendem os objetos do Word, mas eles também têm funcionalidade adicional, como recursos de vinculação de dados e eventos adicionais. Para obter mais informações, consulte [automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md) e [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md).  
+  Além do modelo de objeto do Word, os projetos do Office no Visual Studio fornecem *hospedar itens* e *hospedar controles* que estendem alguns objetos no modelo de objeto do Word. Itens de host e controles de host se comportam como eles estendem os objetos do Word, mas eles também têm funcionalidade adicional, como recursos de vinculação de dados e eventos adicionais. Para obter mais informações, consulte [automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md) e [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md).  
   
 ### <a name="application-object"></a>Objeto de aplicativo  
  O <xref:Microsoft.Office.Interop.Word.Application> objeto representa o aplicativo Word e é o pai de todos os outros objetos. Seus membros geralmente se aplicam ao Word como um todo. Você pode usar suas propriedades e métodos para controlar o ambiente do Word.  
@@ -90,17 +90,17 @@ ms.locfileid: "35258448"
 ### <a name="range-object"></a>Objeto de intervalo  
  O <xref:Microsoft.Office.Interop.Word.Range> objeto representa uma área contígua em um documento e é definido por uma posição de caractere inicial e uma posição do caractere final. Você não está limitado a um único <xref:Microsoft.Office.Interop.Word.Range> objeto. É possível definir diversos <xref:Microsoft.Office.Interop.Word.Range> objetos no mesmo documento. Um <xref:Microsoft.Office.Interop.Word.Range> objeto tem as seguintes características:  
   
--   Ele pode consistir de apenas o ponto de inserção, um intervalo de texto ou o documento inteiro.  
+- Ele pode consistir de apenas o ponto de inserção, um intervalo de texto ou o documento inteiro.  
   
--   Ele inclui caracteres não imprimíveis como espaços, caracteres de tabulação e marcas de parágrafo.  
+- Ele inclui caracteres não imprimíveis como espaços, caracteres de tabulação e marcas de parágrafo.  
   
--   É a área representada pela seleção atual ou pode representar uma área diferente da seleção atual.  
+- É a área representada pela seleção atual ou pode representar uma área diferente da seleção atual.  
   
--   Não é visível em um documento, ao contrário de uma seleção, que está sempre visível.  
+- Não é visível em um documento, ao contrário de uma seleção, que está sempre visível.  
   
--   Ele não será salvo com um documento e existe somente enquanto o código está em execução.  
+- Ele não será salvo com um documento e existe somente enquanto o código está em execução.  
   
- Quando você insere o texto no final de um intervalo, o Word automaticamente expande o intervalo para incluir o texto inserido.  
+  Quando você insere o texto no final de um intervalo, o Word automaticamente expande o intervalo para incluir o texto inserido.  
   
 ### <a name="content-control-objects"></a>Objetos de controle de conteúdo  
  Um <xref:Microsoft.Office.Interop.Word.ContentControl> fornece uma maneira de controlar a entrada e a apresentação de texto e outros tipos de conteúdo em documentos do Word. Um <xref:Microsoft.Office.Interop.Word.ContentControl> pode exibir vários tipos diferentes de interface do usuário que são otimizados para uso em documentos do Word, como um controle rich text, um seletor de data ou uma caixa de combinação. Você também pode usar um <xref:Microsoft.Office.Interop.Word.ContentControl> para impedir que usuários editem seções do documento ou modelo.  
@@ -110,13 +110,13 @@ ms.locfileid: "35258448"
 ### <a name="bookmark-object"></a>Objeto de indicador  
  O <xref:Microsoft.Office.Interop.Word.Bookmark> objeto representa uma área contígua em um documento, com uma posição inicial e uma posição final. Você pode usar indicadores para marcar um local em um documento, ou como um contêiner para texto em um documento. Um <xref:Microsoft.Office.Interop.Word.Bookmark> objeto pode conter o ponto de inserção ou ser tão grande quanto o documento inteiro. Um <xref:Microsoft.Office.Interop.Word.Bookmark> tem as seguintes características que defini-lo, além do <xref:Microsoft.Office.Interop.Word.Range> objeto:  
   
--   Você pode nomear o indicador em tempo de design.  
+- Você pode nomear o indicador em tempo de design.  
   
--   <xref:Microsoft.Office.Interop.Word.Bookmark> objetos são salvos com o documento e, portanto, não são excluídos quando o código será interrompido ou o documento é fechado.  
+- <xref:Microsoft.Office.Interop.Word.Bookmark> objetos são salvos com o documento e, portanto, não são excluídos quando o código será interrompido ou o documento é fechado.  
   
--   Indicadores podem ser ocultos ou ficam visíveis definindo a <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> propriedade do <xref:Microsoft.Office.Interop.Word.View> do objeto para **false** ou **true**.  
+- Indicadores podem ser ocultos ou ficam visíveis definindo a <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> propriedade do <xref:Microsoft.Office.Interop.Word.View> do objeto para **false** ou **true**.  
   
- Visual Studio estende o <xref:Microsoft.Office.Interop.Word.Bookmark> objeto, fornecendo o <xref:Microsoft.Office.Tools.Word.Bookmark> controle de host. O <xref:Microsoft.Office.Tools.Word.Bookmark> controle de host se comporta como um nativo <xref:Microsoft.Office.Interop.Word.Bookmark>, mas tem eventos adicionais e recursos de vinculação de dados. Você pode associar dados a um controle de indicador em um documento da mesma forma que você associe dados a um controle de caixa de texto em um formulário do Windows. Para obter mais informações, consulte [controle de indicador](../vsto/bookmark-control.md).  
+  Visual Studio estende o <xref:Microsoft.Office.Interop.Word.Bookmark> objeto, fornecendo o <xref:Microsoft.Office.Tools.Word.Bookmark> controle de host. O <xref:Microsoft.Office.Tools.Word.Bookmark> controle de host se comporta como um nativo <xref:Microsoft.Office.Interop.Word.Bookmark>, mas tem eventos adicionais e recursos de vinculação de dados. Você pode associar dados a um controle de indicador em um documento da mesma forma que você associe dados a um controle de caixa de texto em um formulário do Windows. Para obter mais informações, consulte [controle de indicador](../vsto/bookmark-control.md).  
   
 ##  <a name="WordOMDocumentation"></a> Use a documentação de modelo de objeto do Word  
  Para obter informações completas sobre o modelo de objeto do Word, você pode consultar a referência de assembly de interoperabilidade primária (PIA) do Word e do Visual Basic para referência de modelo de objeto Applications (VBA).  

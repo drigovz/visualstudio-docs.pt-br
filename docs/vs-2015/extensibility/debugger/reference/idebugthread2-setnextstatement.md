@@ -1,7 +1,7 @@
 ---
 title: IDebugThread2::SetNextStatement | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: 9e2834dd-4ecf-45af-8e6c-f9318ebdac06
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55482e4bf3b4795f7c7f036c0074e456fd642a33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5956a57e9bd6db646091a5c0b7a0948d3cdac4bb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475726"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776233"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugThread2::SetNextStatement](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugthread2-setnextstatement).  
-  
 Define o ponteiro de instrução atual para o contexto de código fornecida.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT SetNextStatement (   
+HRESULT SetNextStatement (   
    IDebugStackFrame2*  pStackFrame,  
    IDebugCodeContext2* pCodeContext  
 );  
 ```  
   
 ```csharp  
-int SetNextStatement (   
+int SetNextStatement (   
    IDebugStackFrame2  pStackFrame,  
    IDebugCodeContext2 pCodeContext  
 );  

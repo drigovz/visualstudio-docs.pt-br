@@ -1,7 +1,7 @@
 ---
 title: 'CA2223: Os membros devem ser diferentes por tipo de retorno | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: baa4f49487fde1ea38ad7362c8941d15868abec7
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 5832ef0fdbb51381273c01025a6645136ea0077a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587234"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869165"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: os membros devem ser diferentes além do tipo de retorno
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA2223: os membros devem ser diferentes por tipo de retorno](https://docs.microsoft.com/visualstudio/code-quality/ca2223-members-should-differ-by-more-than-return-type).
 
 |||
 |-|-|
@@ -102,7 +100,6 @@ A versão mais recente deste tópico pode ser encontrada em [CA2223: os membros 
   } // end of class ReturnTypeTest
 
 } // end of namespace UsageLibrary
-
 ```
 
 

@@ -1,7 +1,7 @@
 ---
 title: Passo a passo no modo de interrupção | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b08dc8ee-6c63-4462-a097-6f525cfbb35a
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0721dcfe857f5c21aab634d02c29e864870c440b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4400bcbecce322185ec514e6d05ac9a37e27fdde
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466266"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749090"
 ---
 # <a name="stepping-in-break-mode"></a>Percorrendo o código no modo de interrupção
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [passo a passo no modo de interrupção](https://docs.microsoft.com/visualstudio/extensibility/debugger/stepping-in-break-mode).  
-  
 O exemplo a seguir descreve o processo que ocorre quando o depurador está no modo de interrupção e deve percorrer o código:  
   
 ## <a name="stepping-process"></a>Passo a passo do processo  

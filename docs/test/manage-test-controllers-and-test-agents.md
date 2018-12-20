@@ -1,6 +1,6 @@
 ---
-title: Gerenciar controladores e agentes de teste no Visual Studio
-ms.date: 11/04/2016
+title: Gerenciar controladores e agentes de teste
+ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -9,16 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4107f06658c081bc249e9e1b3a26d2a3480584dc
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ccc3a6342857d1f228118ef7b26601f3787908e4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279968"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059490"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gerenciar controladores e agentes de teste
 
 Se quiser usar o Visual Studio para executar testes remotamente, distribuir testes entre várias máquinas ou executar testes de carga, você deverá configurar um controlador de teste, agentes de teste e um arquivo de configurações de teste. Este tópico descreve como gerenciar controladores e agentes de teste depois de instalá-los e configurá-los pela primeira vez.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Se você usa o Microsoft Test Manager para executar testes em ambientes de laboratório, você gerencia controladores de teste e seus agentes usando o **Gerenciador do Controlador de Teste** na **Central do Laboratório** para o Microsoft Test Manager. Este tópico só será aplicável se você usar o Visual Studio para executar testes.
 
@@ -41,46 +43,37 @@ Você talvez queira adicionar um agente de teste a um controlador de teste difer
     > [!NOTE]
     > Você deve ter um agente de teste já instalado para adicioná-lo a um controlador de teste. Para obter mais informações de como instalar um agente de teste, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
 
-2. Se quiser alterar a maneira como o agente de teste é executado, escolha **Opções de Execução**.
+2. São apresentadas duas opções para executar o agente de teste:
 
-     Você recebe duas opções para como o agente de teste será executado:
+   - **Serviço**: Se você não precisar executar testes automatizados que interajam com a área de trabalho, como testes de IU codificados ou a criação de uma gravação de vídeo durante as execuções de teste, em **Executar o agente de teste como**, selecione **Serviço**. O agente de teste será iniciado como um serviço. Escolha **Avançar**.
 
-     **Serviço**: se você não precisar executar testes automatizados que interajam com a área de trabalho, como testes de IU codificados ou a criação de uma gravação de vídeo quando o teste for executado, em **Executar o agente de teste como**, selecione **Serviço**. O agente de teste será iniciado como um serviço. Escolha **Avançar**.
+      Agora você pode inserir os detalhes sobre o usuário quando inicia o agente de teste como um serviço.
 
-     Agora você pode inserir os detalhes sobre o usuário quando inicia o agente de teste como um serviço.
+      1. Insira o nome em **Nome de usuário**.
 
-    1. Insira o nome em **Nome de usuário**.
-
-    2. Insira a senha em **Senha**.
+      2. Insira a senha em **Senha**.
 
         |**Informações importantes sobre a conta de usuário**|
-        |--------------------------------------------|
+        |-|
         |– Senhas nulas não têm suporte com contas de usuário.|
         |– Se você quiser usar o coletor IntelliTrace ou a emulação de rede, a conta de usuário deverá ser um membro do grupo Administradores.|
         |– Se o nome de usuário do agente não estiver no serviço de agente, ele tentará adicioná-lo, o que requer permissões no controlador de teste.|
         |– O usuário que está tentando usar o controlador de teste deve estar na conta Usuários do controlador de teste ou não poderá executar os testes no controlador.|
 
-     **Processo interativo**: se você desejar executar testes automatizados que precisem interagir com a área de trabalho, como testes de IU codificados ou a criação de uma gravação de vídeo durante as execuções de teste, selecione **Processo Interativo**. O agente de teste será iniciado como um processo interativo, em vez de um serviço.
+   - **Processo Interativo**: Se você desejar executar testes automatizados que precisem interagir com a área de trabalho, como testes de IU codificados ou a criação de uma gravação de vídeo durante as execuções de teste, selecione **Processo Interativo**. O agente de teste será iniciado como um processo interativo, em vez de um serviço.
 
-     Na página seguinte, insira os detalhes sobre o usuário quando o agente de teste iniciar como um processo e outras opções.
+      Na página seguinte, insira os detalhes sobre o usuário quando o agente de teste iniciar como um processo e outras opções.
 
-    1. Insira o nome em **Nome de usuário**.
+      1. Insira o nome em **Nome de usuário**.
 
-    2. Insira a senha em **Senha**.
+      2. Insira a senha em **Senha**.
 
         > [!NOTE]
         > Se configurar o agente de teste para ser executado como um processo interativo com um usuário diferente do usuário atualmente ativo, você deverá reiniciar o computador e fazer logon como esse usuário diferente para poder iniciar o agente. Além disso, as senhas nulas não são compatíveis com contas de usuário. Se você quiser usar o coletor IntelliTrace ou a emulação de rede, a conta de usuário deverá ser um membro do grupo Administradores.
 
-        |**Informações importantes sobre a conta de usuário**|
-        |--------------------------------------------|
-        |– Senhas nulas não têm suporte com contas de usuário.|
-        |– Se você quiser usar o IntelliTrace ou os dados da emulação de rede e o adaptador de diagnóstico, a conta de usuário deverá ser um membro do grupo Administradores. – Se o computador que está executando o agente de teste tiver um sistema operacional que tenha uma conta de usuário com privilégios mínimos, você também precisará executá-lo como um administrador (elevado).|
-        |– Se o nome de usuário do agente não estiver no serviço de agente, ele tentará adicioná-lo, o que requer permissões no controlador de teste.|
-        |– O usuário que está tentando usar o controlador de teste deve estar na conta Usuários do controlador de teste ou não poderá executar os testes no controlador.|
+      3. Para garantir que um computador com um agente de teste possa executar testes após ser reinicializado, você pode configurar o computador para fazer logon automaticamente como o usuário do agente de teste. Selecione **Fazer logon automaticamente**. Isso armazenará o nome de usuário e a senha em um formato criptografado no Registro.
 
-    3. Para garantir que um computador com um agente de teste possa executar testes após ser reinicializado, você pode configurar o computador para fazer logon automaticamente como o usuário do agente de teste. Selecione **Fazer logon automaticamente**. Isso armazenará o nome de usuário e a senha em um formato criptografado no Registro.
-
-    4. Para garantir que a proteção de tela esteja desabilitada, uma vez que isso pode interferir em todos os testes automatizados que devem interagir com a área de trabalho, selecione **Certifique-se de que a proteção de tela está desabilitada**.
+      4. Para garantir que a proteção de tela esteja desabilitada, uma vez que isso pode interferir em todos os testes automatizados que devem interagir com a área de trabalho, selecione **Certifique-se de que a proteção de tela está desabilitada**.
 
         > [!WARNING]
         > Haverá riscos à segurança se você fizer logon automaticamente ou desabilitar a proteção de tela. Ao ativar o logon automático, você permite que outros usuários iniciem esse computador e permite que eles usem a conta que faz logon automaticamente. Se você desabilitar a proteção de tela, o computador talvez não solicite o logon de um usuário para desbloquear o computador. Isso permite que qualquer pessoa acesse o computador se ela tiver acesso físico a ele. Se habilitar esses recursos em um computador, você deverá verificar se esses computadores estão fisicamente seguros. Por exemplo, esses computadores estão localizados em um laboratório fisicamente seguro. (Se você desmarcar **Certifique-se de que a proteção de tela está desabilitada**, isso não habilitará a proteção de tela.)
@@ -124,7 +117,7 @@ Um agente de teste deve ser definido para o estado offline antes de ser removido
 O status do agente de teste pode ser qualquer um dos seguintes valores:
 
 |Status|Descrição|
-|------------|-----------------|
+|-|-----------------|
 |Executando teste|Executando testes|
 |Pronto|Disponível para executar testes ou coletar dados e diagnóstico|
 |Offline|Indisponível para executar testes ou coletar dados e diagnósticos|
@@ -150,17 +143,17 @@ Você pode alterar o status e outras configurações para um agente de teste que
 1. Altere as seguintes propriedades do agente de teste conforme necessário:
 
 |Propriedade do agente de teste|Descrição|
-|-------------------------|-----------------|
+|-|-----------------|
 |**Importância**|Usado para distribuir a carga quando você usa agentes de teste com níveis de desempenho diferentes. Por exemplo, um agente de teste com uma importância de 100 recebe duas vezes a carga como um agente de teste com uma importância de 50.|
-|**Troca de IPs**|Usado para configurar a troca de IP. A troca de IP permite que um agente de teste envie solicitações para um servidor usando um intervalo de endereços IP. Isso simula chamadas que venham de computadores cliente diferentes.<br /><br /> A troca de IP será importante se seu teste de carga estiver acessando um Web farm. A maioria de balanceadores de carga estabelece afinidade entre um cliente e um servidor Web específico usando o endereço IP do cliente. Se todas as solicitações estiverem vindo aparentemente de um único cliente, o balanceador de carga não balanceará a carga. Para obter um bom balanceamento de carga no Web farm, verifique se as solicitações vêm de um intervalo de endereços IP. **Observação:** você pode especificar um adaptador de rede ou usar **(Todos sem não atribuídos)** para selecionar automaticamente um que não esteja sendo usado atualmente. <br /><br /> Para usar o recurso de troca de IP, o serviço Visual Studio Test Agent deve ser executado como um usuário do grupo Administradores do computador do agente. Esse usuário é selecionado durante a configuração do agente, mas pode ser alterado modificando-se as propriedades do serviço e reiniciando-o.<br /><br /> Para verificar se a troca de IP está funcionando corretamente, habilite o registro em log IIS no servidor Web, use a funcionalidade de registro em log IIS para verificar se as solicitações vêm dos endereços IP que configurados por você.|
-|**Atributos**|Conjunto de pares de nome/valor que podem ser usados na seleção do agente de teste. Por exemplo, um teste pode exigir um sistema operacional específico. Você pode adicionar atributos na guia **Funções** do seu arquivo de configurações de teste e eles podem ser usados para selecionar um agente de teste que tenha atributos compatíveis. Se quiser executar um teste em vários computadores, crie um atributo na função de configurações de teste definida para executar seus testes e configure um atributo correspondente em cada agente de teste que você queira usar nessa função. **Observação:** essa configuração está disponível apenas para agentes de teste registrados em um controlador de teste que não está registrado em um projeto, pois esses atributos são usados somente nas configurações de teste do Visual Studio.|
+|**Troca de IPs**|Usado para configurar a troca de IP. A troca de IP permite que um agente de teste envie solicitações para um servidor usando um intervalo de endereços IP. Isso simula chamadas que venham de computadores cliente diferentes.<br /><br /> A troca de IP será importante se seu teste de carga estiver acessando um Web farm. A maioria de balanceadores de carga estabelece afinidade entre um cliente e um servidor Web específico usando o endereço IP do cliente. Se todas as solicitações estiverem vindo aparentemente de um único cliente, o balanceador de carga não balanceará a carga. Para obter um bom balanceamento de carga no Web farm, verifique se as solicitações vêm de um intervalo de endereços IP. **Observação:**  Você pode especificar um adaptador de rede ou usar **(Todos sem assinatura)** para selecionar automaticamente um que não esteja sendo usado atualmente. <br /><br /> Para usar o recurso de troca de IP, o serviço Visual Studio Test Agent deve ser executado como um usuário do grupo Administradores do computador do agente. Esse usuário é selecionado durante a configuração do agente, mas pode ser alterado modificando-se as propriedades do serviço e reiniciando-o.<br /><br /> Para verificar se a troca de IP está funcionando corretamente, habilite o registro em log IIS no servidor Web, use a funcionalidade de registro em log IIS para verificar se as solicitações vêm dos endereços IP que configurados por você.|
+|**Atributos**|Conjunto de pares de nome/valor que podem ser usados na seleção do agente de teste. Por exemplo, um teste pode exigir um sistema operacional específico. Você pode adicionar atributos na guia **Funções** do seu arquivo de configurações de teste e eles podem ser usados para selecionar um agente de teste que tenha atributos compatíveis. Se quiser executar um teste em vários computadores, crie um atributo na função de configurações de teste definida para executar seus testes e configure um atributo correspondente em cada agente de teste que você queira usar nessa função. **Observação:**  Essa configuração está disponível apenas para agentes de teste registrados em um controlador de teste que não esteja registrado em um projeto, pois esses atributos são usados somente nas configurações de teste do Visual Studio.|
 
 As alterações de atributo e importância do agente de teste entram em vigor imediatamente, mas não afetam os testes que estão em execução. O Intervalo de Endereços IP entra em vigor depois que o controlador de teste é reiniciado.
 
 (Opcional) Para alterar o status de um agente de teste, selecione o agente na lista e, em seguida, selecione a ação nas opções disponíveis com base no status atual do agente.
 
 > [!NOTE]
-> Se o agente de teste estiver sendo executado como um processo, você gerencia o status do agente de teste no ícone da área de notificação executado no computador em que seu agente de teste está instalado. Ele mostra o status do agente de teste. Você poderá iniciar, parar ou reiniciar o agente se ele estiver sendo executado como um processo usando essa ferramenta. Para iniciar o agente de teste como um processo caso ele não esteja sendo executado, escolha **Iniciar** > **Todos os Programas** > **Microsoft Visual Studio** > **Microsoft Visual Studio Test Agent**. Isso adiciona o ícone da área de notificação.
+> Se o agente de teste estiver sendo executado como um processo, você gerencia o status do agente de teste no ícone da área de notificação executado no computador em que seu agente de teste está instalado. Ele mostra o status do agente de teste. Você poderá iniciar, parar ou reiniciar o agente se ele estiver sendo executado como um processo usando essa ferramenta.
 
 ## <a name="configure-a-test-controller"></a>Configura um controlador de teste
 
@@ -173,7 +166,7 @@ Se quiser registrar seu controlador de teste em sua coleção de projetos do Tea
 
 ### <a name="to-configure-a-test-controller"></a>Para configurar um controlador de teste
 
-1. Para executar a ferramenta para reconfigurar seu controlador de teste a qualquer momento, escolha **Iniciar** > **Todos os Programas** >  **Microsoft Visual Studio** > **Ferramenta de Configuração do Controlador de Teste do Microsoft Visual Studio**.
+1. Para executar a ferramenta para reconfigurar o controlador de teste a qualquer momento, escolha **Iniciar** > **Ferramenta de Configuração do Controlador de Teste**.
 
      A caixa de diálogo **Configurar controlador de teste** é exibida.
 
@@ -182,9 +175,9 @@ Se quiser registrar seu controlador de teste em sua coleção de projetos do Tea
     > [!NOTE]
     > As senhas nulas não são compatíveis com contas de usuário.
 
-4. (Opcional) Se você não quiser usar seu controlador de teste com um ambiente de laboratório, mas somente para executar testes do Visual Studio, desmarque **Registrar com Coleção de Projetos**.
+4. (Opcional) Se você não quiser usar o controlador de teste com um ambiente de laboratório, mas somente para executar testes do Visual Studio, desmarque **Registrar controlador de teste com Coleção de Projetos de Equipe**.
 
-5. (Opcional) Para configurar seu controlador de teste para o teste de carga, selecione **Configurar para teste de carregamento**. Em seguida, digite sua instância do SQL Server em **Criar banco de dados de resultados de teste de carga na seguinte instância de SQL Server**.
+5. (Opcional) Para configurar seu controlador de teste para o teste de carga, selecione **Configurar controlador de teste para teste de carga**. Digite sua instância do SQL Server em **Criar banco de dados de resultados de teste de carga na seguinte instância de SQL Server**.
 
 > [!NOTE]
 > Para obter mais informações sobre solução de problemas de controladores de teste, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).

@@ -1,7 +1,7 @@
 ---
 title: Perguntas frequentes do código nativo de depuração | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,21 +24,19 @@ helpviewer_keywords:
 - debugging [C++], FAQs
 ms.assetid: 9a497032-cf73-441e-923b-4bbd5d37a6da
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0bd53cece94724059f9e7f90daae766d261134ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a8221d2cb481bad1d6f59d9eafe219cb5291c69
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474313"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751743"
 ---
 # <a name="debugging-native-code-faqs"></a>Perguntas frequentes de depuração do código nativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [perguntas frequentes de depuração nativa código](https://docs.microsoft.com/visualstudio/debugger/debugging-native-code-faqs).  
-  
 Os tópicos a seguir contêm respostas a algumas perguntas frequentes:  
   
 -   [Como posso depurar violações de acesso ao executar o programa autônomo?](../debugger/how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger-q.md)  

@@ -1,7 +1,7 @@
 ---
 title: Regras de desempenho de memória e paginação | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f37972b2-efe4-4a1c-a5d1-a246ccd76817
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e9512fefc13dccebdb0a930ea6000edcbbd8f7a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30d10d423c544a1117a56a954bacfa00f0ce439b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462618"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808629"
 ---
 # <a name="memory-and-paging-performance-rules"></a>Regras de desempenho de memória e paginação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [memória e paginação de regras de desempenho](https://docs.microsoft.com/visualstudio/profiling/memory-and-paging-performance-rules).  
-  
 As regras de desempenho na memória e categoria de paginação identificam a atividade de paginação em uma execução de criação de perfil que pode afetar a capacidade de resposta e o desempenho do aplicativo.  
   
 |||  

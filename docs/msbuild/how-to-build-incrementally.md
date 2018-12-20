@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56727c338f0f11c9d79704644888448c04064466
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f9e0251d41feb5bd9c61a719d932c6fd954be947
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178963"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932423"
 ---
 # <a name="how-to-build-incrementally"></a>Como criar de forma incremental
 Quando você cria um projeto grande, é importante que já tenha criado componentes que ainda estejam atualizados e não sejam recriados. Se todos os destinos forem criados todas as vezes, cada build levará muito tempo para ser concluída. Para habilitar as builds incrementais (builds nos quais somente os destinos que não foram criados antes ou destinos que estão desatualizados são recriadas), o [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) pode comparar os carimbos de data/hora dos arquivos de entrada com carimbos de data/hora dos arquivos de saída e determinar se ignora, compila ou recompila parcialmente um destino. No entanto, deve haver um mapeamento de um para um entre entradas e saídas. Você pode usar transformações para permitir que os destinos identifiquem esse mapeamento direto. Para obter mais informações sobre transformações, consulte [Transformações](../msbuild/msbuild-transforms.md).  
@@ -29,15 +29,15 @@ Quando você cria um projeto grande, é importante que já tenha criado componen
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Para especificar as entradas e saídas para um destino  
   
--   Use os atributos `Inputs` e `Outputs` do elemento `Target`. Por exemplo:  
+- Use os atributos `Inputs` e `Outputs` do elemento `Target`. Por exemplo:  
   
-    ```xml  
-    <Target Name="Build"  
-        Inputs="@(CSFile)"  
-        Outputs="hello.exe">  
-    ```  
+  ```xml  
+  <Target Name="Build"  
+      Inputs="@(CSFile)"  
+      Outputs="hello.exe">  
+  ```  
   
- O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pode comparar os carimbos de data/hora dos arquivos de entrada com carimbos de data/hora dos arquivos de saída e determinar se ignora, compila ou recompila parcialmente um destino. No seguinte exemplo, se um arquivo da lista de itens `@(CSFile)` for mais recente que o arquivo *hello.exe*, o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] executará o destino; caso contrário, ele será ignorado:  
+  O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pode comparar os carimbos de data/hora dos arquivos de entrada com carimbos de data/hora dos arquivos de saída e determinar se ignora, compila ou recompila parcialmente um destino. No seguinte exemplo, se um arquivo da lista de itens `@(CSFile)` for mais recente que o arquivo *hello.exe*, o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] executará o destino; caso contrário, ele será ignorado:  
   
 ```xml  
 <Target Name="Build"   

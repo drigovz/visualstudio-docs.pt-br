@@ -1,7 +1,7 @@
 ---
 title: Exemplos de diagnóstico de gráficos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 45dd86b2-801e-4b07-a8c4-7bd25641d7f8
 caps.latest.revision: 36
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee2476b8456492db52bcf802c127a22b5faec7e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9c4a5f3396992b8bca2756b33b9b6f920d54733
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464089"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776116"
 ---
 # <a name="graphics-diagnostics-examples"></a>Exemplos de diagnóstico de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exemplos de diagnóstico de gráficos](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-diagnostics-examples).  
-  
 Esses exemplos mostram como depurar problemas de renderização em aplicativos baseados em DirectX usando o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Diagnóstico de Gráficos.  
   
 ## <a name="capturing-graphics-information"></a>Capturando informações de gráficos  

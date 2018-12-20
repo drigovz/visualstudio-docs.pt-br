@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6d69167189c24d2a78a5ba02a34f6d95268d72e5
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b7790f5205aa24a68505a1b34e97283aff05e13c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510969"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950128"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Associar objetos como fontes de dados no Visual Studio
 
@@ -137,7 +137,7 @@ Salve dados no banco de dados, passando os valores de seu objeto para métodos D
 O Visual Studio cria métodos DBDirect que podem ser executados diretamente no banco de dados. Esses métodos não requerem objetos DataSet ou DataTable.
 
 |Método TableAdapter DBDirect|Descrição|
-|----------------------------------|-----------------|
+| - |-----------------|
 |`TableAdapter.Insert`|Adiciona novos registros para um banco de dados, permitindo que você passe valores de colunas individuais como parâmetros de método.|
 |`TableAdapter.Update`|Atualizações de registros existentes em um banco de dados. O método de atualização usa valores da coluna original e novo como parâmetros de método. Os valores originais são usados para localizar o registro original e os novos valores são usados para atualizar esse registro.<br /><br /> O `TableAdapter.Update` método também é usado para acomodar as alterações em um conjunto de dados no banco de dados, fazendo uma <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, ou uma matriz de <xref:System.Data.DataRow>s como parâmetros de método.|
 |`TableAdapter.Delete`|Exclui registros existentes do banco de dados com base em valores da coluna original passados como parâmetros de método.|

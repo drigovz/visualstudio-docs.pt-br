@@ -66,7 +66,7 @@ Depois de instalar as RTVS (Ferramentas do R para Visual Studio) (consulte [Inst
 
     ![Exibição de um gráfico no Visual Studio](media/getting-started-07-plot-window.png)
 
-A janela interativa também permite que você examine seu histórico, carregue e salve espaços de trabalho, anexe a um depurador e interaja com os arquivos de código-fonte em vez de usar os recursos de copiar e colar. Consulte [Trabalhando com a janela do R Interativo](interactive-repl-for-r-in-visual-studio.md) para obter detalhes.
+A janela interativa também permite que você examine seu histórico, carregue e salve workspaces, anexe a um depurador e interaja com os arquivos de código-fonte em vez de usar os recursos de copiar e colar. Consulte [Trabalhando com a janela do R Interativo](interactive-repl-for-r-in-visual-studio.md) para obter detalhes.
 
 ## <a name="experience-code-editing-features"></a>Experimentar recursos de edição de código
 
@@ -131,13 +131,13 @@ Por exemplo, as seguintes etapas criam um pequeno código para explorar o [Teore
 
     ![Gráfico dual atualizado no Visual Studio com a escala ajustada corretamente](media/getting-started-10-plot3.png)
 
-Há mais coisas que você pode fazer no editor. Para obter detalhes, confira [Editar código R](editing-r-code-in-visual-studio.md), [IntelliSense](r-intellisense.md), e [Trechos de código](code-snippets-for-r.md).
+Há mais coisas que você pode fazer no editor. Para obter detalhes, confira [Editar código R](editing-r-code-in-visual-studio.md), [IntelliSense](r-intellisense.md), e [Snippets de código](code-snippets-for-r.md).
 
 ## <a name="debug-your-code"></a>Depurar seu código
 
 Uma das principais vantagens do Visual Studio é sua interface do usuário de depuração. As RTVS incrementam essa base sólida e adicionam uma interface do usuário inovadora como o [Gerenciador de Variáveis](variable-explorer.md). Aqui, vamos apenas dar uma primeira olhada na depuração.
 
-1. Para começar, redefina o espaço de trabalho atual para limpar tudo o que fizemos até agora usando o comando de menu **Ferramentas do R** > **Sessão** > **Redefinir**. Por padrão, tudo o que você faz na janela interativa é acumulado para a sessão atual, que também será usado pelo depurador. Ao redefinir a sessão, você garante que a sessão de depuração seja iniciada sem nenhum dado preexistente. O comando **Redefinir**, no entanto, não afeta seu arquivo de origem *script.R*, pois ele é gerenciado e salvo fora do espaço de trabalho.
+1. Para começar, redefina o workspace atual para limpar tudo o que fizemos até agora usando o comando de menu **Ferramentas do R** > **Sessão** > **Redefinir**. Por padrão, tudo o que você faz na janela interativa é acumulado para a sessão atual, que também será usado pelo depurador. Ao redefinir a sessão, você garante que a sessão de depuração seja iniciada sem nenhum dado preexistente. O comando **Redefinir**, no entanto, não afeta seu arquivo de origem *script.R*, pois ele é gerenciado e salvo fora do workspace.
 
 1. Com o arquivo *script.R* criado na seção anterior, defina um ponto de interrupção na linha que começa com `pop <-` colocando o cursor nessa linha e, em seguida, pressionando **F9** ou selecionando o comando de menu **Depurar** > **Alternar Ponto de Interrupção**. De forma alternativa, apenas clique na margem esquerda (ou medianiz) dessa linha em que o ponto de interrupção vermelho aparece:
 
@@ -170,5 +170,5 @@ Neste passo a passo, você aprendeu as noções básicos de projetos R, usando a
 - [Projetos de exemplo](getting-started-samples.md)
 - [Editando código](editing-r-code-in-visual-studio.md)
 - [Depuração](debugging-r-in-visual-studio.md)
-- [Espaços de trabalho](r-workspaces-in-visual-studio.md)
+- [Workspaces](r-workspaces-in-visual-studio.md)
 - [Visualizando dados](visualizing-data-with-r-in-visual-studio.md)

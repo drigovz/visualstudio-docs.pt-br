@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2::Enable | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,30 +18,28 @@ ms.assetid: 1b4e3f73-c94d-4aa3-9aa8-0d8cb8a6c5ca
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f2d82b722a6ce0cb40c08551781073f7e45c4e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d2a8fa16f340fb2ce916e56b8b353b3f9bfac2a2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475820"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801284"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugBoundBreakpoint2::Enable](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugboundbreakpoint2-enable).  
-  
 Habilita ou desabilita o ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Enable(   
+HRESULT Enable(   
    BOOL fEnable  
 );  
 ```  
   
 ```csharp  
-int Enable(   
+int Enable(   
    int fEnable  
 );  
 ```  

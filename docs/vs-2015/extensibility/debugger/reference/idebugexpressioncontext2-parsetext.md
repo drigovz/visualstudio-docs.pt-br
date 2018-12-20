@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionContext2::ParseText | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: f58575db-f926-4ac8-83ff-7b3b86ab61e2
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9658d2962d99d6fbb72b0df813e1c3bd420c46cf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd7dfcaf2de12ab74399914d3654573878fcc17a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462217"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755358"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugExpressionContext2::ParseText](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugexpressioncontext2-parsetext).  
-  
 Analisa uma expressão na forma de texto para avaliação posterior.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT ParseText(   
+HRESULT ParseText(   
    LPCOLESTR           pszCode,  
    PARSEFLAGS          dwFlags,  
    UINT                nRadix,  
@@ -45,7 +43,7 @@ HRESULT ParseText(
 ```  
   
 ```csharp  
-int ParseText(   
+int ParseText(   
    string                pszCode,  
    enum_PARSEFLAGS       dwFlags,  
    uint                  nRadix,  

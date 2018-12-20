@@ -1,5 +1,5 @@
 ---
-title: Gerar um construtor no Visual Studio
+title: Ação rápida de geração de construtor
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c063d8abc3b00ce15726ebfe0e8733254718428
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: c6b267bee0c78de19ffa0d443f515375eeae949a
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124977"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295820"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Gerar um construtor no Visual Studio
 
@@ -47,10 +47,10 @@ Esta geração de código aplica-se a:
 1. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
-     - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
-     - Clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece na margem esquerda se o cursor de texto já estiver na linha vazia na classe.
+      - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
+      - Clique no ícone de ![Lâmpada](media/bulb-cs.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha vazia na classe.
 
    ![Visualização da geração do construtor](media/constructor1-preview-cs.png)
 
@@ -78,12 +78,12 @@ Esta geração de código aplica-se a:
 1. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
-     - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
-     - Clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece na margem esquerda se o cursor de texto já estiver na linha com a seleção.
+      - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
+      - Clique no ícone de ![Lâmpada](media/bulb-cs.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha com a seleção.
 
-     ![Visualização da geração do construtor](media/constructor2-preview-cs.png)
+      ![Visualização da geração do construtor](media/constructor2-preview-cs.png)
 
 1. Selecione **Gerar construtor 'TypeName(...)'** no menu suspenso.
 
@@ -97,24 +97,24 @@ Esta geração de código aplica-se a:
 
    - C#:
 
-    ![Código em C# realçado](media/constructor-highlight-cs.png)
+       ![Código em C# realçado](media/constructor-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código em VB realçado](media/constructor-highlight-vb.png)
+       ![Código em VB realçado](media/constructor-highlight-vb.png)
 
-1. Depois, siga um destes procedimentos:
+2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
-     - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
-     - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece.
-     - Clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece na margem esquerda se o cursor de texto já estiver na linha com o rabisco vermelho.
+      - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
+      - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) ícone que aparece.
+      - Clique no ícone de ![Lâmpada](media/bulb-cs.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha com o rabisco vermelho.
 
-    ![Visualização da geração do construtor](media/constructor-preview-cs.png)
+      ![Visualização da geração do construtor](media/constructor-preview-cs.png)
 
-1. Selecione **Gerar construtor em '*TypeName*'** no menu suspenso.
+3. Selecione **Gerar construtor em '*TypeName*'** no menu suspenso.
 
    > [!TIP]
    > Use o link **Visualizar alterações** na parte inferior da janela de visualização [para ver todas as alterações](../../ide/preview-changes.md) que serão feitas antes de fazer sua seleção.
@@ -123,36 +123,38 @@ Esta geração de código aplica-se a:
 
    - C#:
 
-      ![Gerar o resultado do método C#](media/constructor-result-cs.png)
+       ![Gerar o resultado do método C#](media/constructor-result-cs.png)
 
    - Visual Basic:
 
-      ![Gerar o resultado do método VB](media/constructor-result-vb.png)
+       ![Gerar o resultado do método VB](media/constructor-result-vb.png)
 
 ## <a id="addparameter"></a> Adicionar parâmetro ao construtor existente (somente C#)
 
 1. Adicione um parâmetro a uma chamada de construtor existente.
 
-1. coloque o cursor na linha em que há um rabisco vermelho indicando que você usou um construtor que ainda não existe.
+2. coloque o cursor na linha em que há um rabisco vermelho indicando que você usou um construtor que ainda não existe.
 
     ![Realce da geração do construtor](media/constructor4-highlight-cs.png)
 
-1. Depois, siga um destes procedimentos:
+3. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
-     - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
-     - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece.
-     - Clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece na margem esquerda se o cursor de texto já estiver na linha com o rabisco vermelho.
+      - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
+      - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) ícone que aparece.
+      - Clique no ícone de ![Lâmpada](media/bulb-cs.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha com o rabisco vermelho.
 
-    ![Visualização da geração do construtor](media/constructor4-preview-cs.png)
+      ![Visualização da geração do construtor](media/constructor4-preview-cs.png)
 
-1. Selecione **Adicionar parâmetro em 'TypeName(...)'** no menu suspenso.
+4. Selecione **Adicionar parâmetro em 'TypeName(...)'** no menu suspenso.
 
    O parâmetro é adicionado ao construtor, com o tipo inferido com base em seu uso.
 
    ![Resultado da geração do construtor](media/constructor4-result-cs.png)
+
+Também é possível adicionar um parâmetro a um método existente. Para saber mais, confira [Adicionar parâmetro a um método](add-parameter.md).
 
 ## <a id="create"></a> Criar e inicializar um campo ou uma propriedade de um parâmetro de construtor (somente C#)
 
@@ -165,10 +167,10 @@ Esta geração de código aplica-se a:
 1. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
-     - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
-     - Clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece na margem esquerda se o cursor de texto já estiver na linha com o parâmetro adicionado.
+      - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
+      - Clique no ícone de ![Lâmpada](media/bulb-cs.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha com o parâmetro adicionado.
 
    ![Visualização da geração do construtor](media/constructor5-preview-cs.png)
 

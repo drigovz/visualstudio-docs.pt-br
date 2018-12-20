@@ -1,7 +1,7 @@
 ---
 title: Servidor e problemas de configuração de cliente em implantações do ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 17ab417649818e9f56dbd1065929a6240a23d417
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462457"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948935"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuração de servidor e cliente em implantações do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [problemas de configuração de cliente em implantações do ClickOnce e servidor](https://docs.microsoft.com/visualstudio/deployment/server-and-client-configuration-issues-in-clickonce-deployments).  
-  
 Se você usar os serviços de informações da Internet (IIS) no Windows Server, e sua implantação contém um tipo de arquivo que o Windows não reconhecem, como um arquivo do Microsoft Word, o IIS se recusará a transmitir esse arquivo e sua implantação não terá êxito.  
   
  Além disso, alguns servidores Web e Web software de aplicativo, como [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], contêm uma lista de arquivos e tipos de arquivos que não é possível baixar. Por exemplo, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] impede o download de todos os arquivos Web. config. Esses arquivos podem conter informações confidenciais como nomes de usuário e senhas.  
@@ -43,15 +41,15 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
   
  Alguns servidores Web podem bloquear os arquivos com extensões como. dll,. config e. mdf. Aplicativos baseados no Windows geralmente incluem arquivos com algumas destas extensões. Se um usuário tenta executar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo que acessa um arquivo bloqueado em um servidor Web, ocorrerá um erro. Em vez de todas as extensões de arquivo, o desbloqueio [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] publica todos os arquivos de aplicativo com uma extensão de arquivo. Deploy"por padrão. Portanto, o administrador precisa apenas configurar o servidor Web para desbloquear as seguintes extensões de arquivo de três:  
   
--   .application  
+- .application  
   
--   .manifest  
+- .manifest  
   
--   .deploy  
+- .deploy  
   
- No entanto, você poderá desabilitar essa opção desmarcando os **usar a extensão de arquivo. Deploy"** opção a [caixa de diálogo Opções de publicação](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), nesse caso, você deve configurar o servidor Web para desbloquear todas as extensões de arquivo usado no aplicativo.  
+  No entanto, você poderá desabilitar essa opção desmarcando os **usar a extensão de arquivo. Deploy"** opção a [caixa de diálogo Opções de publicação](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), nesse caso, você deve configurar o servidor Web para desbloquear todas as extensões de arquivo usado no aplicativo.  
   
- Você terá que configurar. manifest,. Application e. Deploy, por exemplo, se você estiver usando o IIS em que você não tiver instalado o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], ou se você estiver usando outro servidor Web (por exemplo, Apache).  
+  Você terá que configurar. manifest,. Application e. Deploy, por exemplo, se você estiver usando o IIS em que você não tiver instalado o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], ou se você estiver usando outro servidor Web (por exemplo, Apache).  
   
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce e Secure Sockets Layer (SSL)  
  Um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo funcionará bem por SSL, exceto quando o Internet Explorer gera um aviso sobre o certificado SSL. O prompt pode ser gerado quando há algo errado com o certificado, tais como quando os nomes de site não coincidem ou o certificado expirou. Para tornar [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] trabalha em uma conexão SSL, certifique-se de que o certificado esteja atualizado e que os dados do certificado coincide com os dados do site.  
@@ -124,11 +122,11 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
   
  Se você implantar usando um servidor IIS, execute inetmgr.exe e adicionar novos tipos de arquivo da página da Web padrão:  
   
--   Para as extensões. Application e. manifest, o tipo MIME deve ser "application/x-ms-application." Para outros tipos de arquivo, o tipo MIME deve ser "application/octet-stream".  
+- Para as extensões. Application e. manifest, o tipo MIME deve ser "application/x-ms-application." Para outros tipos de arquivo, o tipo MIME deve ser "application/octet-stream".  
   
--   Se você criar um tipo de MIME com a extensão "*" e o tipo MIME "application/octet-stream", ele permitirá arquivos desbloqueado do tipo de arquivo a ser baixado. (No entanto, bloqueados arquivo não podem ser baixados tipos como. aspx e. asmx).  
+- Se você criar um tipo de MIME com a extensão "*" e o tipo MIME "application/octet-stream", ele permitirá arquivos desbloqueado do tipo de arquivo a ser baixado. (No entanto, bloqueados arquivo não podem ser baixados tipos como. aspx e. asmx).  
   
- Para obter instruções específicas sobre como configurar tipos de MIME no Windows Server, consulte a Base de Conhecimento Microsoft artigo KB326965, "IIS 6.0 faz não servir desconhecido tipos MIME" em [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+  Para obter instruções específicas sobre como configurar tipos de MIME no Windows Server, consulte a Base de Conhecimento Microsoft artigo KB326965, "IIS 6.0 faz não servir desconhecido tipos MIME" em [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
   
 ## <a name="content-type-mappings"></a>Mapeamentos de tipo de conteúdo  
  Ao publicar por meio de HTTP, o tipo de conteúdo (também conhecido como o tipo MIME) para o arquivo. Application deve ser "application/x-ms-application." Se você tiver [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] instalado no servidor, isso será definido para você automaticamente. Se isso não estiver instalado, você precisa criar uma associação de tipo MIME para o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] vroot do aplicativo (ou todo o servidor).  

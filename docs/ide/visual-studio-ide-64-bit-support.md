@@ -1,5 +1,5 @@
 ---
-title: Suporte ao IDE do Visual Studio de 64 bits
+title: Suporte de 64 bits
 ms.date: 02/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27553fe0fdac8378f8d4b1158902394f0704880c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fa48de77bdf5ba283068f3dfcc492a76ae3576c0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425732"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063335"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Suporte ao IDE do Visual Studio de 64 bits
 
@@ -30,7 +30,7 @@ O Visual Studio permite que você configure seus aplicativos para direcionar as 
 
 ## <a name="configure-projects-as-64-bit-applications"></a>Configurar projetos como aplicativos de 64 bits
 
-[Como configurar projetos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md) aborda como configurar projetos para serem compilados como aplicativos de 64 bits.
+[Como: Configurar projetos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md) aborda como configurar projetos para serem compilados como aplicativos de 64 bits.
 
 ## <a name="debug-a-64-bit-application"></a>Depurar um aplicativo de 64 bits
 

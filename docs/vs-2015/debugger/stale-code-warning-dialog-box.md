@@ -1,7 +1,7 @@
 ---
 title: Obsoleto de caixa de diálogo de aviso de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,21 +23,19 @@ helpviewer_keywords:
 - Edit and Continue, stale code
 ms.assetid: 594b894c-e652-4e13-a980-9909473d5712
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56e57eb23dc98cee800a2f25b685b001d3232d6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7d09355e1e565a2ed35ebd2b065677c42c66d662
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465235"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771451"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Caixa de diálogo Aviso de Código Obsoleto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [caixa de diálogo de aviso de código obsoleto](https://docs.microsoft.com/visualstudio/debugger/stale-code-warning-dialog-box).  
-  
 Essa caixa de diálogo aparece quando você tiver feito alterações no código nativo que **editar e continuar** não pôde aplicar imediatamente. Como resultado, alguns códigos nativos no quadro de pilhas atual agora está expirado, ou seja, obsoleto. Para obter mais informações, consulte [como: trabalhar com código obsoleto](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4).  
   
  **Não mostrar esta caixa de diálogo novamente**  

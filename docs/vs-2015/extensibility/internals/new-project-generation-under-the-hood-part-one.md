@@ -1,7 +1,7 @@
 ---
 title: 'Nova geração de projeto: Nos bastidores, parte 1 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 07532630263c4f7ff8fe0d9281abbbbd47772b3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f1181cb3f84471727b181bb1ff91b69e8613b8a5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460704"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792912"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Geração de novo projeto: nos bastidores, Parte um
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [nova geração de projeto: Under the Hood, parte 1](https://docs.microsoft.com/visualstudio/extensibility/internals/new-project-generation-under-the-hood-part-one).  
-  
 Jamais pensou em como criar seu próprio tipo de projeto? Se perguntar o que realmente acontece quando você cria um novo projeto? Vamos dar uma olhada nos bastidores e ver o que realmente está acontecendo.  
   
  Existem várias tarefas que coordena a Visual Studio para você:  
@@ -177,35 +175,35 @@ devenv /installvstemplates
 #### <a name="a-quick-review"></a>Uma rápida revisão  
  Vamos modificar o **novo projeto** caixa de diálogo caixa e criar um novo modelo de projeto do usuário.  
   
-1.  Adicione uma subpasta MyProjectNode a pasta de 14.0\Common7\IDE\ProjectTemplates\CSharp \Program Visual Studio.  
+1. Adicione uma subpasta MyProjectNode a pasta de 14.0\Common7\IDE\ProjectTemplates\CSharp \Program Visual Studio.  
   
-2.  Crie um arquivo de MyProject.vstdir na pasta MyProjectNode usando qualquer editor de texto.  
+2. Crie um arquivo de MyProject.vstdir na pasta MyProjectNode usando qualquer editor de texto.  
   
-3.  Adicione estas linhas ao arquivo vstdir:  
+3. Adicione estas linhas ao arquivo vstdir:  
   
-    ```  
-    <TemplateDir Version="1.0.0">  
-        <SortOrder>6</SortOrder>  
-    </TemplateDir>  
-    ```  
+   ```  
+   <TemplateDir Version="1.0.0">  
+       <SortOrder>6</SortOrder>  
+   </TemplateDir>  
+   ```  
   
-4.  Salve e feche o arquivo vstdir.  
+4. Salve e feche o arquivo vstdir.  
   
-5.  Crie um arquivo de MyProject.vstemplate na pasta MyProjectNode usando qualquer editor de texto.  
+5. Crie um arquivo de MyProject.vstemplate na pasta MyProjectNode usando qualquer editor de texto.  
   
-6.  Adicione estas linhas ao arquivo. vstemplate:  
+6. Adicione estas linhas ao arquivo. vstemplate:  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-        <TemplateData>  
-            <ProjectType>CSharp</ProjectType>  
-        </TemplateData>  
-    </VSTemplate>  
-    ```  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+       <TemplateData>  
+           <ProjectType>CSharp</ProjectType>  
+       </TemplateData>  
+   </VSTemplate>  
+   ```  
   
-7.  Salve o arquivo de the.vstemplate e feche o editor.  
+7. Salve o arquivo de the.vstemplate e feche o editor.  
   
-8.  Envie o arquivo. vstemplate para uma nova pasta MyProjectNode\MyProject.zip compactada.  
+8. Envie o arquivo. vstemplate para uma nova pasta MyProjectNode\MyProject.zip compactada.  
   
 9. Na janela de comando do Visual Studio, digite:  
   
@@ -213,13 +211,13 @@ devenv /installvstemplates
     devenv /installvstemplates  
     ```  
   
- Abra o Visual Studio.  
+   Abra o Visual Studio.  
   
-1.  Abra o **novo projeto** diálogo caixa e expanda o **Visual c#** nó do projeto.  
+10. Abra o **novo projeto** diálogo caixa e expanda o **Visual c#** nó do projeto.  
   
- ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
+    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
- **MyProjectNode** aparece como um nó filho do Visual c# apenas sob o nó do Windows.  
+    **MyProjectNode** aparece como um nó filho do Visual c# apenas sob o nó do Windows.  
   
 ## <a name="see-also"></a>Consulte também  
  [Nova geração de projeto: Nos bastidores, parte 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

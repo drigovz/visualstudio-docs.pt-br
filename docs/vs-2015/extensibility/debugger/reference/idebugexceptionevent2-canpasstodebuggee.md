@@ -1,7 +1,7 @@
 ---
 title: IDebugExceptionEvent2::CanPassToDebuggee | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: ae4bbe0a-fbe1-49be-a310-ea64279a434b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7233d6ee9b1f82d72717df9284221fca65673391
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 519a1077bd9f090f733b24dc5e127089613d5ddf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475381"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722144"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugExceptionEvent2::CanPassToDebuggee](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee).  
-  
 Determina se o mecanismo de depuração (DES) oferece suporte a opção de passar essa exceção para o programa que está sendo depurado quando a execução é retomada.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT CanPassToDebuggee(  
+HRESULT CanPassToDebuggee(  
    void  
 );  
 ```  
   
 ```csharp  
-int CanPassToDebuggee();  
+int CanPassToDebuggee();  
 ```  
   
 ## <a name="return-value"></a>Valor de retorno  

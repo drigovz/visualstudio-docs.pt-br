@@ -1,7 +1,7 @@
 ---
 title: 'Diagramas de atividade UML: Diretrizes | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - UML, activity diagrams
 ms.assetid: fe5dbe96-79ab-483a-b9bc-44d0d1d3efc2
 caps.latest.revision: 50
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 23665bb9e3241f9fe32913bbd5816a39404d0842
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a13db375305e96c4657e007f9cd8bfffbf34f990
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472717"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722687"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramas de atividade UML: diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [diagramas de atividade UML: diretrizes](https://docs.microsoft.com/visualstudio/modeling/uml-activity-diagrams-guidelines).  
-  
 No Visual Studio, você pode desenhar um diagrama de atividade para descrever um processo de negócios ou um algoritmo de software como um fluxo de trabalho por meio de uma série de ações. As pessoas, os componentes de software ou dispositivos podem executar essas ações. Para uma demonstração em vídeo, consulte: [captura de fluxos de trabalho comerciais por meio de diagramas de atividade](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/).  
   
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -38,28 +36,28 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
   
  Você pode usar um diagrama de atividade para muitas finalidades:  
   
--   Para descrever um processo de negócios ou um fluxo de trabalho entre usuários e seu sistema. Para obter mais informações, consulte [requisitos de usuário do modelo](../modeling/model-user-requirements.md).  
+- Para descrever um processo de negócios ou um fluxo de trabalho entre usuários e seu sistema. Para obter mais informações, consulte [requisitos de usuário do modelo](../modeling/model-user-requirements.md).  
   
--   Para descrever as etapas realizadas em um caso de uso. Para obter mais informações, consulte [diagramas de caso de uso UML: diretrizes](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Para descrever as etapas realizadas em um caso de uso. Para obter mais informações, consulte [diagramas de caso de uso UML: diretrizes](../modeling/uml-use-case-diagrams-guidelines.md).  
   
--   Para descrever um método, função ou operação no software. Para obter mais informações, consulte [modelar a arquitetura do seu aplicativo](../modeling/model-your-app-s-architecture.md).  
+- Para descrever um método, função ou operação no software. Para obter mais informações, consulte [modelar a arquitetura do seu aplicativo](../modeling/model-your-app-s-architecture.md).  
   
- Desenhar um diagrama de atividade pode ajudar a aperfeiçoar o processo. Se o diagrama de um processo existente for muito complexa, você pode considerar como o processo pode ser simplificado.  
+  Desenhar um diagrama de atividade pode ajudar a aperfeiçoar o processo. Se o diagrama de um processo existente for muito complexa, você pode considerar como o processo pode ser simplificado.  
   
- Para informações de referência sobre os elementos em diagramas de atividade, consulte [diagramas de atividade UML: referência](../modeling/uml-activity-diagrams-reference.md).  
+  Para informações de referência sobre os elementos em diagramas de atividade, consulte [diagramas de atividade UML: referência](../modeling/uml-activity-diagrams-reference.md).  
   
 ##  <a name="Relationships"></a> Relação com outros diagramas  
  Se você desenhar um diagrama de atividade para descrever um processo comercial ou uma forma em que os usuários usam o seu sistema, você pode desenhar um diagrama de caso de uso para mostrar uma exibição diferente das mesmas informações. No diagrama de caso, você desenhar as ações que os casos de uso. Dê os casos de uso com os mesmos nomes que as ações correspondentes. As vantagens da exibição de casos de uso são o que você pode:  
   
--   Mostrar em um diagrama como maior ações/casos de uso são compostos de partes menores, usando a relação de inclusões.  
+- Mostrar em um diagrama como maior ações/casos de uso são compostos de partes menores, usando a relação de inclusões.  
   
--   Conecte-se cada caso de uso/ação explicitamente para os usuários ou sistemas externos envolvidas na sua execução.  
+- Conecte-se cada caso de uso/ação explicitamente para os usuários ou sistemas externos envolvidas na sua execução.  
   
--   Desenhe os limites em torno de ações/casos de uso com suporte pelo seu sistema, ou cada componente principal dele.  
+- Desenhe os limites em torno de ações/casos de uso com suporte pelo seu sistema, ou cada componente principal dele.  
   
- Você também pode desenhar um diagrama de atividade para descrever o design detalhado de uma operação de software.  
+  Você também pode desenhar um diagrama de atividade para descrever o design detalhado de uma operação de software.  
   
- Em um diagrama de atividade, você pode mostrar o fluxo de dados passados entre ações. Consulte a seção sobre [que descreve o fluxo de dados](#DataFlows). Mas um diagrama de atividade não descreve a estrutura dos dados. Para essa finalidade, você pode desenhar um diagrama de classe UML. Para obter informações, consulte [diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md).  
+  Em um diagrama de atividade, você pode mostrar o fluxo de dados passados entre ações. Consulte a seção sobre [que descreve o fluxo de dados](#DataFlows). Mas um diagrama de atividade não descreve a estrutura dos dados. Para essa finalidade, você pode desenhar um diagrama de classe UML. Para obter informações, consulte [diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md).  
   
 ##  <a name="BasicSteps"></a> Etapas básicas para desenhar diagramas de atividade  
  Etapas detalhadas para a criação de qualquer um dos diagramas de modelagem são descritas em [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
@@ -114,18 +112,18 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
   
  Use os diagramas de atividade **ações** e **conectores** para descrever seu aplicativo como uma série de ações ou um sistema com o controle que fluem em sequência de uma ação para a próxima.  
   
--   Criar uma **ação** (1) para cada tarefa principal que é executada por um usuário, o sistema ou ambos em colaboração.  
+- Criar uma **ação** (1) para cada tarefa principal que é executada por um usuário, o sistema ou ambos em colaboração.  
   
-    > [!NOTE]
-    >  Tente descrever seu processo ou o algoritmo com apenas algumas ações. Você pode usar **chame ações de comportamento** para definir cada ação em mais detalhes em um diagrama separado, conforme descrito em [descrevendo subpropriedades atividades com ações de comportamento chamar](#Subactivities).  
+  > [!NOTE]
+  >  Tente descrever seu processo ou o algoritmo com apenas algumas ações. Você pode usar **chame ações de comportamento** para definir cada ação em mais detalhes em um diagrama separado, conforme descrito em [descrevendo subpropriedades atividades com ações de comportamento chamar](#Subactivities).  
   
--   Certifique-se de que o título de cada ação indica claramente o que ele normalmente alcança.  
+- Certifique-se de que o título de cada ação indica claramente o que ele normalmente alcança.  
   
--   Vincular as ações na sequência com **conectores** (2).  
+- Vincular as ações na sequência com **conectores** (2).  
   
--   Cada ação termina antes de começa a próxima ação no fluxo de controle. Se você quiser descrevem ações que se sobrepõem, use uma **nó de bifurcação** conforme descrito na seção [fluxos simultâneos](#Concurrent).  
+- Cada ação termina antes de começa a próxima ação no fluxo de controle. Se você quiser descrevem ações que se sobrepõem, use uma **nó de bifurcação** conforme descrito na seção [fluxos simultâneos](#Concurrent).  
   
- Embora o diagrama descreve a sequência de ações, ele não descreve como as ações são executadas ou como o controle é passado de uma ação para a próxima. Se você usar o diagrama para representar um processo comercial, controle pode ser passado, por exemplo, quando uma pessoa envia uma mensagem de email para outro. Se você usar o diagrama para representar um design de software, controle pode ser passado pelo fluxo normal de execução de uma instrução para o próximo.  
+  Embora o diagrama descreve a sequência de ações, ele não descreve como as ações são executadas ou como o controle é passado de uma ação para a próxima. Se você usar o diagrama para representar um processo comercial, controle pode ser passado, por exemplo, quando uma pessoa envia uma mensagem de email para outro. Se você usar o diagrama para representar um design de software, controle pode ser passado pelo fluxo normal de execução de uma instrução para o próximo.  
   
 ### <a name="describing-decisions-and-loops"></a>Descrevendo as decisões e Loops  
   
@@ -173,11 +171,11 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 ### <a name="swimlanes"></a>Raias  
  Às vezes é útil organizar as ações de uma atividade em áreas correspondentes às funções de negócios que executam as ações ou objetos diferentes. Essas áreas convencionalmente são organizadas em colunas e são chamadas *raias*.  
   
--   Use linhas ou retângulos do **formas simples** seção da caixa de ferramentas para desenhar as raias ou outras áreas.  
+- Use linhas ou retângulos do **formas simples** seção da caixa de ferramentas para desenhar as raias ou outras áreas.  
   
--   Para rotular cada Raia, crie um comentário e defina suas **Transparent** propriedade **verdadeiro**.  
+- Para rotular cada Raia, crie um comentário e defina suas **Transparent** propriedade **verdadeiro**.  
   
- Formas simples não fazem parte do modelo de UML e não aparecem no Gerenciador de modelos UML.  
+  Formas simples não fazem parte do modelo de UML e não aparecem no Gerenciador de modelos UML.  
   
 ##  <a name="DataFlows"></a> Descrevendo o fluxo de dados  
  Você pode descrever os dados que passam para dentro e fora de uma atividade em qualquer uma das duas maneiras:  
@@ -279,16 +277,16 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 ### <a name="describing-data-flow-in-and-out-of-sub-activities"></a>Descrevendo o fluxo de dados dentro e fora de subpropriedades de atividades  
  Você pode descrever os dados que fluem para dentro e fora de subpropriedades de atividades, da mesma forma que você use os parâmetros no software.  
   
--   Criar entrada e saída pinos (1) sobre a ação de comportamento chamado, para cada parte dos dados que fluem para dentro ou fora a ação. Nome de cada um deles apropriadamente.  
+- Criar entrada e saída pinos (1) sobre a ação de comportamento chamado, para cada parte dos dados que fluem para dentro ou fora a ação. Nome de cada um deles apropriadamente.  
   
--   No diagrama de atividade de subpropriedades, criar uma **nó do parâmetro de atividade** (2) para cada pino de entrada e saído na chamada da ação. Atribua o mesmo nome como seu pino correspondente a cada nó.  
+- No diagrama de atividade de subpropriedades, criar uma **nó do parâmetro de atividade** (2) para cada pino de entrada e saído na chamada da ação. Atribua o mesmo nome como seu pino correspondente a cada nó.  
   
-    > [!NOTE]
-    >  Um nó de parâmetro de atividade é semelhante a um nó de objeto. Para verificar que tipo de nó que você está examinando, clique com botão direito no nó e, em seguida, clique em **propriedades**. O tipo de nó é mostrado no cabeçalho da janela Propriedades.  
+  > [!NOTE]
+  >  Um nó de parâmetro de atividade é semelhante a um nó de objeto. Para verificar que tipo de nó que você está examinando, clique com botão direito no nó e, em seguida, clique em **propriedades**. O tipo de nó é mostrado no cabeçalho da janela Propriedades.  
   
--   No diagrama de atividade de subpropriedades, desenhe conectores que mostram o fluxo de objetos para dentro ou fora de cada nó de parâmetro de atividade.  
+- No diagrama de atividade de subpropriedades, desenhe conectores que mostram o fluxo de objetos para dentro ou fora de cada nó de parâmetro de atividade.  
   
- ![Os pinos em Call Behavior são mapeados para parâmetros de atividade](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")  
+  ![Os pinos em Call Behavior são mapeados para parâmetros de atividade](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")  
   
 ###  <a name="Postcondition"></a> Definindo as pós-condições e pré-condições  
  Você pode usar o **Local pós-condições** e **pré-condições Local** propriedades para especificar detalhes do resultado de uma ação. Essas propriedades descrevem o efeito da ação sem descrevendo como o efeito é obtido.  
@@ -391,45 +389,45 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 ### <a name="selection-and-transformation"></a>Seleção e transformação  
  Você pode especificar que os objetos em um fluxo do objeto são transformados, selecionado, ou ambos. Fluxo de um objeto é um fluxo para ou de um pin ou um nó de objeto.  
   
--   Uma transformação descreve como inserir um fluxo de objetos são convertidos em outro tipo.  
+- Uma transformação descreve como inserir um fluxo de objetos são convertidos em outro tipo.  
   
--   Uma seleção como só descreve alguns dos objetos inserindo um fluxo são transmitidos para a ação de recebimento.  
+- Uma seleção como só descreve alguns dos objetos inserindo um fluxo são transmitidos para a ação de recebimento.  
   
- O exemplo mostra uma transformação. A primeira ação no diagrama 1 produz um CEP ou código postal, em um pino de saída. Isso está conectado a um pino de entrada na segunda ação. Mas a segunda ação espera um endereço totalmente especificado. A conversão de um tipo para outro é especificada em uma segunda atividade de pesquisa de endereço. Isso é referenciado na propriedade de transformação do fluxo de objeto. A atividade de pesquisa de endereço contém um nó de parâmetro de atividade para o CEP de entrada e outro nó de parâmetro de atividade para o endereço completo da saída.  
+  O exemplo mostra uma transformação. A primeira ação no diagrama 1 produz um CEP ou código postal, em um pino de saída. Isso está conectado a um pino de entrada na segunda ação. Mas a segunda ação espera um endereço totalmente especificado. A conversão de um tipo para outro é especificada em uma segunda atividade de pesquisa de endereço. Isso é referenciado na propriedade de transformação do fluxo de objeto. A atividade de pesquisa de endereço contém um nó de parâmetro de atividade para o CEP de entrada e outro nó de parâmetro de atividade para o endereço completo da saída.  
   
- ![Objeto definida em outro diagrama de transformação](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")  
+  ![Objeto definida em outro diagrama de transformação](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")  
   
- Você pode especificar uma transformação ou seleção de duas maneiras:  
+  Você pode especificar uma transformação ou seleção de duas maneiras:  
   
--   Anexe um comentário ao pino de entrada ou saído.  
+- Anexe um comentário ao pino de entrada ou saído.  
   
-    -   Para distinguir esta descrição de um comentário geral, você pode começar o comentário com <\<**transformação**>> ou <\<**seleção**>>.  
+  -   Para distinguir esta descrição de um comentário geral, você pode começar o comentário com <\<**transformação**>> ou <\<**seleção**>>.  
   
--   Especifique a transformação ou a seleção em detalhes em um diagrama de atividade separado.  
+- Especifique a transformação ou a seleção em detalhes em um diagrama de atividade separado.  
   
-    -   Se você usar esse método, anexe um comentário também, para deixar claro para os leitores que a transformação foi definida.  
+  -   Se você usar esse método, anexe um comentário também, para deixar claro para os leitores que a transformação foi definida.  
   
 ##### <a name="to-specify-a-transformation-or-selection-in-a-separate-activity-diagram"></a>Para especificar uma transformação ou a seleção em um diagrama de atividade separado  
   
-1.  Crie um novo diagrama de atividade na qual descrever o fluxo de transformação ou a seleção.  
+1. Crie um novo diagrama de atividade na qual descrever o fluxo de transformação ou a seleção.  
   
-    -   Na **Gerenciador de soluções**, clique em seu projeto, aponte para **Add**, clique em **Novo Item**e, em seguida, clique em **diagrama de atividade**. Dê um nome apropriado para o fluxo de transformação ou seleção de diagrama. Clique em **Adicionar**.  
+   -   Na **Gerenciador de soluções**, clique em seu projeto, aponte para **Add**, clique em **Novo Item**e, em seguida, clique em **diagrama de atividade**. Dê um nome apropriado para o fluxo de transformação ou seleção de diagrama. Clique em **Adicionar**.  
   
-2.  No novo diagrama:  
+2. No novo diagrama:  
   
-    1.  Crie dois nós de parâmetro de atividade, uma para o fluxo de entrada e outra para a saída.  
+   1.  Crie dois nós de parâmetro de atividade, uma para o fluxo de entrada e outra para a saída.  
   
-    2.  Crie ações interconectadas com fluxos de objeto. Isso mostra como funciona a seleção ou transformação.  
+   2.  Crie ações interconectadas com fluxos de objeto. Isso mostra como funciona a seleção ou transformação.  
   
-3.  Em qualquer diagrama em que você deseja usar a transformação ou seleção:  
+3. Em qualquer diagrama em que você deseja usar a transformação ou seleção:  
   
-    1.  Crie um fluxo de objeto, ou seja, um conector para ou de uma entrada ou pino de saída, um nó de objeto ou um nó de parâmetro de atividade.  
+   1.  Crie um fluxo de objeto, ou seja, um conector para ou de uma entrada ou pino de saída, um nó de objeto ou um nó de parâmetro de atividade.  
   
-    2.  O fluxo do objeto com o botão direito e, em seguida, clique em **propriedades**.  
+   2.  O fluxo do objeto com o botão direito e, em seguida, clique em **propriedades**.  
   
-    3.  No **Transformation** ou **seleção** propriedade, selecione o diagrama em que você especificou o fluxo de transformação ou a seleção.  
+   3.  No **Transformation** ou **seleção** propriedade, selecione o diagrama em que você especificou o fluxo de transformação ou a seleção.  
   
- Você também pode definir uma seleção de um nó de objeto e na entrada individual e pinos de saída. Definir uma atividade de seleção como no procedimento anterior e, em seguida, defina as **seleção** propriedade de nó de objeto ou pino de entrada ou saído.  
+   Você também pode definir uma seleção de um nó de objeto e na entrada individual e pinos de saída. Definir uma atividade de seleção como no procedimento anterior e, em seguida, defina as **seleção** propriedade de nó de objeto ou pino de entrada ou saído.  
   
 ## <a name="see-also"></a>Consulte também  
  [Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md)   

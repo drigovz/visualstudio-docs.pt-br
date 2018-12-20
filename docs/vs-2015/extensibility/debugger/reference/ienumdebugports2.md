@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPorts2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1754eef3-cf62-42e0-b218-1911acba77d4
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9ff7eac1da5cba43bf93a352e571c7a1f912932b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 678784d8ee9a15099e4c46554e2c1451936611d8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473982"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750601"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugPorts2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugports2).  
-  
 Essa interface enumera as portas de um fornecedor de porta ou da máquina.  
   
 ## <a name="syntax"></a>Sintaxe  

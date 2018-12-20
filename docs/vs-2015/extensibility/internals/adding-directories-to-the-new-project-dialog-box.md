@@ -1,7 +1,7 @@
 ---
 title: Adicionar diretórios à caixa de diálogo Novo projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e22f0566ddde7bfd795bb01141deabbecd532a19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a03e61cf3699cd45a7b4b8e6a7e5b7d192ca6de
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474467"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769742"
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>Adicionar diretórios à caixa de diálogo Novo Projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionar diretórios à caixa de diálogo Novo projeto](https://docs.microsoft.com/visualstudio/extensibility/internals/adding-directories-to-the-new-project-dialog-box).  
-  
 Quando você cria novos tipos de projeto, você também pode registrar um novo diretório na **novo projeto** caixa de diálogo para exibi-los para uso como modelos. O exemplo de código a seguir explica como registrar um novo diretório, também conhecido como um nó. No exemplo, modelos expostos pelo VSPackage CLSID_Package são registrados. Como resultado, o lado esquerdo do **novo projeto** caixa de diálogo oferece o nó adicionado, com um nome determinado pelo recurso Folder_Label_ResID. Esse recurso é carregado do DLL de satélite do VSPackage.  
   
  O **pasta** valor representa um GUID de uma pasta sob a qual o nó de Folder_Label_ResID é exibido. No exemplo, o GUID que representa o **outros projetos** pasta na **tipos de projeto** painel da **novo projeto** caixa de diálogo. Se o **outros projetos** valor estiver ausente, o rótulo é posicionado no nível superior.  

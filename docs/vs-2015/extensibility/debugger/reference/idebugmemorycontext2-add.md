@@ -1,7 +1,7 @@
 ---
 title: IDebugMemoryContext2::Add | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,24 +18,22 @@ ms.assetid: 3c47e646-ce9e-4dd3-8f1a-6dbd3827d407
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 47fe65ae76f60026f08d18ce17fc48e22885e042
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4136d17552b2f903857ba090ebf9e9f1045ebd5b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462374"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797527"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugMemoryContext2::Add](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmemorycontext2-add).  
-  
 Adiciona o valor especificado para o contexto atual e retorna um novo contexto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Add(   
+HRESULT Add(   
    UINT64                 dwCount,  
    IDebugMemoryContext2** ppMemCxt  
 );  

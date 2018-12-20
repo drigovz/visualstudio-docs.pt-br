@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionObject::Evaluate | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 29349ea3-d5c1-4135-aa76-ced073ab9683
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 320ca906ad298a403c5a499d184266e8101830ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85c5e734108be01c6a252231d30ef0faac42631d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472646"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780354"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugFunctionObject::Evaluate](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfunctionobject-evaluate).  
-  
 Chama a função e retorna o valor resultante como um objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Evaluate(   
+HRESULT Evaluate(   
    IDebugObject** ppParams,  
    DWORD          dwParams,  
    DWORD          dwTimeout,  

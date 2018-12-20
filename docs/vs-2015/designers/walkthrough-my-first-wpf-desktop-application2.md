@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Meu primeiro aplicativo2 da área de trabalho do WPF| Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5994c17ff4e7e6071a22d235ab6888727b9ed026
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47587957"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899273"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Passo a passo: Meu primeiro aplicativo da área de trabalho do WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: meu primeiro Application2 de área de trabalho WPF](https://docs.microsoft.com/visualstudio/designers/walkthrough-my-first-wpf-desktop-application2).  
-  
 um name = "Introdução" ></a> neste passo a passo fornece uma introdução ao desenvolvimento do Windows Presentation Foundation (WPF). Você vai criar um aplicativo básico que inclui elementos comuns à maioria dos aplicativos de área de trabalho do WPF: marcação de XAML, code-behind, definições de aplicativo, controles, layout, vinculação de dados e estilos.  
   
 ##  <a name="Create_The_Application_Code_Files"></a> Criando o projeto de aplicativo  
@@ -960,27 +958,27 @@ um name = "Introdução" ></a> neste passo a passo fornece uma introdução ao d
   
  Para obter mais informações sobre os modelos de arquitetura e programação do WPF, consulte os seguintes tópicos:  
   
--   [Arquitetura do WPF](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
+- [Arquitetura do WPF](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
   
--   [Visão geral do XAML](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
+- [Visão geral do XAML](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
   
--   [Visão geral das propriedades da dependência](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
+- [Visão geral das propriedades da dependência](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
   
--   [Sistema de layout](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
+- [Sistema de layout](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
   
--   [Estilos e modelos](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
+- [Estilos e modelos](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
   
- Para obter mais informações sobre como criar aplicativos, consulte os seguintes tópicos:  
+  Para obter mais informações sobre como criar aplicativos, consulte os seguintes tópicos:  
   
--   [Visão geral do desenvolvimento de aplicativos](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
+- [Visão geral do desenvolvimento de aplicativos](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
   
--   [Visão geral dos controles](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
+- [Visão geral dos controles](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
   
--   [Visão geral da vinculação de dados](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
+- [Visão geral da vinculação de dados](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
   
--   [Visão geral de mídia, animação e elementos gráficos do WPF](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
+- [Visão geral de mídia, animação e elementos gráficos do WPF](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
   
--   [Documentos no WPF](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
+- [Documentos no WPF](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
 ## <a name="see-also"></a>Consulte também  
  [Passo a passo: Criar um aplicativo de área de trabalho do WPF conectado a um serviço móvel do Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   

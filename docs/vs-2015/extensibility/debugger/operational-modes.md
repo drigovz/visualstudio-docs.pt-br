@@ -1,7 +1,7 @@
 ---
 title: Modos operacionais | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ ms.assetid: f69972d0-809d-40df-9da3-04738791391c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b23ba695b02a0332ad40a2c51047336903255a13
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ac99d6022344089c40abb9ae36e94d825db4e3c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474251"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768476"
 ---
 # <a name="operational-modes"></a>Modos operacionais
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [modos operacionais](https://docs.microsoft.com/visualstudio/extensibility/debugger/operational-modes).  
-  
 Há três modos em que o IDE pode operar, da seguinte maneira:  
   
--   [Modo de design](#vsconoperationalmodesanchor1)  
+- [Modo de design](#vsconoperationalmodesanchor1)  
   
--   [Modo de execução](#vsconoperationalmodesanchor2)  
+- [Modo de execução](#vsconoperationalmodesanchor2)  
   
--   [Modo de interrupção](#vsconoperationalmodesanchor3)  
+- [Modo de interrupção](#vsconoperationalmodesanchor3)  
   
- Como seu mecanismo de depuração personalizado (DES) faz a transição entre esses modos é uma decisão de implementação que exige que você esteja familiarizado com os mecanismos de transição. O DE pode ou não pode implementar diretamente desses modos. Esses modos são realmente pacote modos de depuração que muda com base em eventos a partir DE ou de ação do usuário. Por exemplo, a transição do modo de execução para o modo de interrupção é provocado por um evento de interrupção a partir DE. A transição de interrupção para executar modo ou etapa é provocado pelo usuário que está executando operações como a etapa ou Execute. Para obter mais informações sobre DE transições, consulte [controlar a execução de](../../extensibility/debugger/control-of-execution.md).  
+  Como seu mecanismo de depuração personalizado (DES) faz a transição entre esses modos é uma decisão de implementação que exige que você esteja familiarizado com os mecanismos de transição. O DE pode ou não pode implementar diretamente desses modos. Esses modos são realmente pacote modos de depuração que muda com base em eventos a partir DE ou de ação do usuário. Por exemplo, a transição do modo de execução para o modo de interrupção é provocado por um evento de interrupção a partir DE. A transição de interrupção para executar modo ou etapa é provocado pelo usuário que está executando operações como a etapa ou Execute. Para obter mais informações sobre DE transições, consulte [controlar a execução de](../../extensibility/debugger/control-of-execution.md).  
   
 ##  <a name="vsconoperationalmodesanchor1"></a> Modo de design  
  Modo de design é o estado nonrunning de depuração do Visual Studio, período durante o qual você pode definir recursos em seu aplicativo de depuração.  

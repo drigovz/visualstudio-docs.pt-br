@@ -1,7 +1,7 @@
 ---
 title: Referência de esquema XML do VSCT | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84490c5bbaba926cb76927b5e545b88c4c1d4757
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bff3fb766c11987b84ba88b5c86ab3c8d24dbc94
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465004"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755872"
 ---
 # <a name="vsct-xml-schema-reference"></a>Referência do esquema XML do VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [referência de esquema de XML do VSCT](https://docs.microsoft.com/visualstudio/extensibility/vsct-xml-schema-reference).  
-  
 Fornece uma tabela de elementos de esquema do compilador de tabela de comando, com filho permitido elementos e atributos para cada um.  
   
  Um arquivo de configuração (. VSCT) da tabela de comando baseado em XML define os elementos de comando que fornece um VSPackage para o ambiente de desenvolvimento integrado (IDE). Esses elementos incluem itens de menu, menus, barras de ferramentas e caixas de combinação.  
@@ -42,11 +40,11 @@ Fornece uma tabela de elementos de esquema do compilador de tabela de comando, c
   
  Todos os valores GUID e ID devem ser definidos usando nomes simbólicos. Esses nomes podem ser definidos em arquivos de cabeçalho ou no VSCT \<símbolos > seções. Os nomes simbólicos devem ser locais, incluídos por meio \<Include > elementos, ou referenciada pela \<Extern > elementos. Um nome simbólico é importado de um arquivo de cabeçalho especificado em um \<Extern > elemento se ele segue o padrão simple de #define o valor de SÍMBOLO. O valor pode ser outro símbolo, desde que o símbolo foi definido anteriormente. Definições de GUID devem seguir o formato OLE ou C++. Valores de ID podem ser dígitos decimais ou dígitos hexadecimais que são precedidos por 0x, conforme mostrado nas linhas a seguir:  
   
--   {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
+- {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
--   {0x6d484634, 0xe53d, 0x4a2c, {0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
+- {0x6d484634, 0xe53d, 0x4a2c, {0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
   
- Comentários XML podem ser usados, mas as ferramentas de GUI (interface) de ida e volta gráfica do usuário podem descartá-las. O conteúdo de \<anotação > elementos têm garantia de ser mantida, independentemente do formato.  
+  Comentários XML podem ser usados, mas as ferramentas de GUI (interface) de ida e volta gráfica do usuário podem descartá-las. O conteúdo de \<anotação > elementos têm garantia de ser mantida, independentemente do formato.  
   
 ## <a name="schema-hierarchy"></a>Hierarquia de esquema  
  Um arquivo. VSCT tem os seguintes elementos principais.  

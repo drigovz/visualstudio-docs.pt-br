@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ dev_langs:
 - C++
 ms.assetid: 024ccd78-5867-4ca7-bc26-548758e9ac53
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3cb9f928cd239bf9072e2aaa3ad9af56acadef8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80edb1ce6f893bbab4d41e489f00dbc62337b424
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473615"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791352"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-findsymbolsbyrvaforacceleratorpointertag).  
-  
 Dado um valor de marca correspondente, esse método retorna uma enumeração de símbolos que estão contidas nessa função stub em um endereço virtual relativo de especificado.  
   
 ## <a name="syntax"></a>Sintaxe  

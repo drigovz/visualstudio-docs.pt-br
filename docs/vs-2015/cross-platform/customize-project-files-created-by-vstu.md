@@ -1,7 +1,7 @@
 ---
 title: Como personalizar os arquivos de projeto criados por VSTU | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 60b8cc1d-cacc-404d-b768-77e81bc354f8
 caps.latest.revision: 4
-author: TerryGLee
-ms.author: tglee
+author: conceptdev
+ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: ef11a6585d741fd28de918d4fa2a81f1eb927b43
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 51e03c97326409b4c793c48e6c151b059ad38e89
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460584"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768085"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Personalizar os arquivos de projeto criados pelo VSTU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [personalizar de arquivos de projeto criados pelo VSTU](https://docs.microsoft.com/visualstudio/cross-platform/customize-project-files-created-by-vstu).  
-  
   
 As ferramentas do Visual Studio para Unity fornecem um retorno de chamada de estilo Unity durante a geração do arquivo de projeto. Registre com o evento `VisualStudioIntegration.ProjectFileGeneration` para modificar o arquivo de projeto sempre que ele for gerado novamente.  
   

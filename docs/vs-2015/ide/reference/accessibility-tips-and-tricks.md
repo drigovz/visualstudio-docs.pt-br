@@ -1,7 +1,7 @@
 ---
 title: Dicas e truques de acessibilidade | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39f12a7f895d4bd1a625b22dee1fa3465a625bec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4fe4f45f6c858ede7bebc7cbbf3a5e734130000
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474617"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241014"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Dicas e truques de acessibilidade
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [dicas de acessibilidade e truques](https://docs.microsoft.com/visualstudio/ide/reference/accessibility-tips-and-tricks).  
-  
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] inclui recursos de acessibilidade internos para que você possa trabalhar mais facilmente no teclado e usar leitores de tela ou outros dispositivos de tecnologia adaptativa. O tópico inclui algumas sugestões para otimizar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para acessibilidade, bem como algumas combinações de teclas de atalho úteis.  
   

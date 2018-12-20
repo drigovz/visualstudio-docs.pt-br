@@ -1,7 +1,7 @@
 ---
 title: Abrir um modelo UML usando a API do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ helpviewer_keywords:
 - UML API, opening models in Visual Studio
 ms.assetid: 38423682-f2a7-4d2a-a2cd-fd680e9b4b4d
 caps.latest.revision: 17
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b492f7c7bcb1c6b33ee7f07b1f054027057835aa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 62b8700e85ccab271dbfdc4f9bac504ee64197a6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466523"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779613"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Abrir um modelo UML usando a API do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [abrir um modelo UML usando a API do Visual Studio](https://docs.microsoft.com/visualstudio/modeling/open-a-uml-model-by-using-the-visual-studio-api).  
-  
 Você também pode abrir modelos e diagramas na interface do usuário do Visual Studio por meio da API.  
   
  Se você quiser ler um modelo no código do programa sem torná-la visível para o usuário, você pode usar os seguintes métodos:  
@@ -37,27 +35,27 @@ Você também pode abrir modelos e diagramas na interface do usuário do Visual 
 ##  <a name="Showing"></a> Abrindo modelos e diagramas no Visual Studio  
  Para abrir um modelo na interface do usuário, use a API padrão do Visual Studio `EnvDTE.DTE`. Há duas conversões úteis que podem ser executadas em itens de projeto de modelagem:  
   
--   `EnvDTE.Project` pode ser convertido para e de `IModelingProject`, se o projeto é um projeto de modelagem, e se o projeto é carregado no AppDomain atual.  
+- `EnvDTE.Project` pode ser convertido para e de `IModelingProject`, se o projeto é um projeto de modelagem, e se o projeto é carregado no AppDomain atual.  
   
--   `EnvDTE.ProjectItem` pode ser convertido para e de `IDiagramContext`, se o item for um diagrama UML.  
+- `EnvDTE.ProjectItem` pode ser convertido para e de `IDiagramContext`, se o item for um diagrama UML.  
   
- Para o exemplo a seguir, seu projeto deve importar essas referências:  
+  Para o exemplo a seguir, seu projeto deve importar essas referências:  
   
--   EnvDTE  
+- EnvDTE  
   
--   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+- Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
--   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+- Microsoft.VisualStudio.Modeling.Sdk.[version]  
   
--   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
+- Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
   
--   Microsoft.VisualStudio.Shell.Immutable. [versão]  
+- Microsoft.VisualStudio.Shell.Immutable. [versão]  
   
--   Microsoft.VisualStudio.Uml.Interfaces  
+- Microsoft.VisualStudio.Uml.Interfaces  
   
--   System.ComponentModel.Composition  
+- System.ComponentModel.Composition  
   
- Este exemplo abre um modelo UML no Visual Studio:  
+  Este exemplo abre um modelo UML no Visual Studio:  
   
 ```  
 using EnvDTE; // Visual Studio API for loading diagrams  

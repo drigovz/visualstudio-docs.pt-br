@@ -1,7 +1,7 @@
 ---
 title: Trabalhando com elementos no Designer XAML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 917d0b66f479789b3cb727aeb822c3f2aa164cff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0ec7d97ace8f61f209e4664c0de42b883a6a5d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462206"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896939"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabalhando com elementos no Designer XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [trabalhando com elementos no Designer XAML](https://docs.microsoft.com/visualstudio/designers/working-with-elements-in-xaml-designer).  
-  
 Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo no XAML, no código ou usando o XAML Designer. Este tópico descreve como trabalhar com elementos no Designer XAML no Visual Studio ou Blend for Visual Studio.  
   
 ## <a name="adding-an-element-to-a-layout"></a>Adicionando um elemento a um layout  
@@ -48,21 +46,21 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
   
 #### <a name="to-change-the-layering-order"></a>Para alterar a ordem das camadas  
   
--   Realize um dos seguintes procedimentos:  
+- Realize um dos seguintes procedimentos:  
   
-    -   Na janela **Estrutura de Tópicos de Documento**, arraste os elementos para cima ou para baixo para criar a ordem das camadas desejada.  
+  - Na janela **Estrutura de Tópicos de Documento**, arraste os elementos para cima ou para baixo para criar a ordem das camadas desejada.  
   
-    -   Na janela Estrutura de Tópicos de Documento ou na prancheta, clique com o botão direito do mouse no elemento cuja ordem de camadas você deseja alterar, selecione **Ordem** e clique em uma destas opções:  
+  - Na janela Estrutura de Tópicos de Documento ou na prancheta, clique com o botão direito do mouse no elemento cuja ordem de camadas você deseja alterar, selecione **Ordem** e clique em uma destas opções:  
   
-        -   **Trazer para a Frente** para colocar o elemento na parte da frente da ordem.  
+    -   **Trazer para a Frente** para colocar o elemento na parte da frente da ordem.  
   
-        -   **Avançar** para avançar o elemento um nível na ordem.  
+    -   **Avançar** para avançar o elemento um nível na ordem.  
   
-        -   **Recuar** para recuar o elemento um nível na ordem.  
+    -   **Recuar** para recuar o elemento um nível na ordem.  
   
-        -   **Enviar para Trás** para enviar o elemento para a parte posterior da ordem.  
+    -   **Enviar para Trás** para enviar o elemento para a parte posterior da ordem.  
   
-     Altere a propriedade **ZIndex** na seção **Layout** na janela Propriedades. Para sobrepor elementos, a propriedade **ZIndex** tem precedência sobre a ordem de elementos mostrada na janela Estrutura de Tópicos de Documento. Um elemento com um valor **ZIndex** inferior será exibido na frente quando houver sobreposição de elementos.  
+    Altere a propriedade **ZIndex** na seção **Layout** na janela Propriedades. Para sobrepor elementos, a propriedade **ZIndex** tem precedência sobre a ordem de elementos mostrada na janela Estrutura de Tópicos de Documento. Um elemento com um valor **ZIndex** inferior será exibido na frente quando houver sobreposição de elementos.  
   
 ## <a name="changing-the-alignment-of-an-element"></a>Alterando o alinhamento de um elemento  
  Você pode alinhar elementos na prancheta usando comandos de menu ou arrastando os elementos para guias de alinhamento.  
@@ -117,9 +115,9 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>Para desagrupar elementos e excluir o layout  
   
--   Clique com o botão direito do mouse no grupo que você deseja desagrupar e clique em **Desagrupar**.  
+- Clique com o botão direito do mouse no grupo que você deseja desagrupar e clique em **Desagrupar**.  
   
- Você também pode agrupar ou desagrupar elementos clicando com o botão direito do mouse em itens selecionados na janela Estrutura de Tópicos de Documento e clicando em **Agrupar em** ou **Desagrupar**.  
+  Você também pode agrupar ou desagrupar elementos clicando com o botão direito do mouse em itens selecionados na janela Estrutura de Tópicos de Documento e clicando em **Agrupar em** ou **Desagrupar**.  
   
 ## <a name="resetting-the-element-layout"></a>Redefinindo o layout do elemento  
  Você pode restaurar valores padrão de propriedades de layout específicas de um elemento usando o comando Redefinir Layout. Ao usar esse comando, você pode redefinir a margem, o alinhamento, a largura, a altura e o tamanho de um elemento, individual ou coletivamente.  

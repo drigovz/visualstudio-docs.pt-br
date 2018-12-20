@@ -1,7 +1,7 @@
 ---
 title: Limitações na depuração de Script | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,21 +20,19 @@ helpviewer_keywords:
 - breakpoint mapping, limitations
 ms.assetid: 280eead5-693c-47af-967f-dfe9d23f84db
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aebdb57d9a242280be82e04c2a550159cba985d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 767322cd60ce1d1e455903b357a062cc1f31927d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462019"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753460"
 ---
 # <a name="limitations-on-script-debugging"></a>Limitações na depuração de script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [limitações na depuração de Script](https://docs.microsoft.com/visualstudio/debugger/limitations-on-script-debugging).  
-  
 O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] suporta a depuração de script do lado do cliente, sujeito às restrições neste tópico.  
   
 ## <a name="limitations-on-breakpoint-mapping-with-client-side-script"></a>Limitações do mapeamento de pontos de interrupção com script do lado do cliente  

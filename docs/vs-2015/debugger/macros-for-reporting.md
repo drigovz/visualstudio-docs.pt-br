@@ -1,7 +1,7 @@
 ---
 title: Macros para relatórios | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,21 +26,19 @@ helpviewer_keywords:
 - _RPTn macro
 ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22f3637aeee41f764825a0d8f8cd4fdca2cb3e94
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc2a5226b3d6f512d2c2f89d9fef2a80eef34340
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473745"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758450"
 ---
 # <a name="macros-for-reporting"></a>Macros para relatórios
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Macros para relatórios](https://docs.microsoft.com/visualstudio/debugger/macros-for-reporting).  
-  
 Você pode usar o **rptn**, e **rptfn** macros, definidas em CRTDBG. H, para substituir o uso de `printf` instruções para depuração. Essas macros desaparecem automaticamente na sua versão de compilação quando **Debug** não estiver definido, portanto, não há nenhuma necessidade de incluí-los em **#ifdef**s.  
   
 |Macro|Descrição|  

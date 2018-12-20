@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumstackframes:: Reset | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaEnumStackFrames::Reset method
 ms.assetid: efaba727-f271-44e9-beec-8441fb57664d
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abc5bac49cbfd3580d7aaa3129e3d2d1ef24826f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3673c9ec047113c8a725ca5bbe1bbfcf7776c55
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461217"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809994"
 ---
 # <a name="idiaenumstackframesreset"></a>IDiaEnumStackFrames::Reset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaenumstackframes:: Reset](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumstackframes-reset).  
-  
 Redefine a sequência de enumeração para o início.  
   
 ## <a name="syntax"></a>Sintaxe  

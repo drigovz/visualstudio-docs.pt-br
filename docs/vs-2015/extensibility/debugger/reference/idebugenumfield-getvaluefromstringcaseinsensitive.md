@@ -1,7 +1,7 @@
 ---
 title: IDebugEnumField::GetValueFromStringCaseInsensitive | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: ef95b38e-d9b2-4fb5-a166-7c2e14641dc7
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b113966f30bbec62dbd9901594d01e7074d687ec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8b3a9c1544705c5c5e777a63d5b1dfc7af7676e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475592"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798970"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugEnumField::GetValueFromStringCaseInsensitive](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive).  
-  
 Esse método usa uma pesquisa diferencia maiusculas de minúsculas para retornar o valor associado com o nome de uma constante de enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  

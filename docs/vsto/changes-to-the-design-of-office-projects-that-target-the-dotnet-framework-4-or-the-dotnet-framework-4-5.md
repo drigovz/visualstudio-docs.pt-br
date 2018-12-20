@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - Office development in Visual Studio, what's new
 - what's new [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c202fb5101542a17a736f2c615c9644d63b88f54
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b200c5b0df5f150e0d34b351a3e36a8a986f3ed6
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669944"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248238"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Alterações no design dos projetos do Office destinados ao .NET Framework 4 ou o .NET Framework 4.5
   A partir [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], o Visual Studio introduziu algumas alterações no design dos projetos do Office que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior. Se você estiver familiarizado com projetos do Office em versões anteriores do Visual Studio, você deve estar atento essas alterações antes de desenvolver projetos do Office que se destinam a essas versões do .NET Framework 4.0 ou posterior. Por padrão, todos os projetos que você cria usando o Visual Studio 2013 ou posterior direcionam o .NET Framework 4.0 ou posterior.  
@@ -61,7 +61,7 @@ ms.locfileid: "35669944"
   
 ## <a name="see-also"></a>Consulte também  
  [Migrar soluções do Office para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
- [O que há de novo no desenvolvimento do Office](http://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
+ [O que há de novo no desenvolvimento do Office](https://msdn.microsoft.com/library/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Visual Studio Tools for Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
   
   

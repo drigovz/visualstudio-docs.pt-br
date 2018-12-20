@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalkHelper::pdataForVA | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaStackWalkHelper2::pdataByVA method
 ms.assetid: fafc38fe-74dc-4726-9a51-eebf3a673d7f
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6949fba8216bbc1747c9bd1f963a0f1c06bff4e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c937ac3039ef5807623d99a9d7fcaadada17a3e6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466973"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816743"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaStackWalkHelper::pdataForVA](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackwalkhelper-pdataforva).  
-  
 Retorna o bloco de dados PDATA associado com o endereço virtual.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT pdataForVA(   
+HRESULT pdataForVA(   
    ULONGLONG  va,  
    DWORD      cbData,  
    DWORD*     pcbData,  

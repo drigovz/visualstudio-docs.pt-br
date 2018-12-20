@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Exibindo SmartTags | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: douge
-ms.openlocfilehash: 15e02986012f186ce4bcb2fdcd6914396b2b597e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 459530726628819587a3c228910baa3b902ae865
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939092"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Passo a passo: Exibindo SmartTags
 Marcas inteligentes foram preteridas em favor de lâmpadas. Ver [instruções passo a passo: Exibir sugestões de lâmpada](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
@@ -138,35 +138,35 @@ Marcas inteligentes foram preteridas em favor de lâmpadas. Ver [instruções pa
   
 #### <a name="to-implement-smart-tag-actions"></a>Para implementar as ações de marca inteligente  
   
-1.  Crie duas classes, a primeira chamada `UpperCaseSmartTagAction` e a segunda chamada `LowerCaseSmartTagAction`. Ambas as classes implementam <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction>.  
+1. Crie duas classes, a primeira chamada `UpperCaseSmartTagAction` e a segunda chamada `LowerCaseSmartTagAction`. Ambas as classes implementam <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction>.  
   
-     [!code-csharp[VSSDKSmartTagTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#15)]
-     [!code-vb[VSSDKSmartTagTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#15)]  
+    [!code-csharp[VSSDKSmartTagTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#15)]
+    [!code-vb[VSSDKSmartTagTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#15)]  
   
-     [!code-csharp[VSSDKSmartTagTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#16)]
-     [!code-vb[VSSDKSmartTagTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#16)]  
+    [!code-csharp[VSSDKSmartTagTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#16)]
+    [!code-vb[VSSDKSmartTagTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#16)]  
   
- Ambas as classes são semelhantes, exceto que um chama <xref:System.String.ToUpper%2A> e as outras chamadas <xref:System.String.ToLower%2A>. As etapas a seguir abrangem apenas a classe de ação em maiusculas, mas você deve implementar as duas classes. Use as etapas para implementar a ação de letras maiusculas como um padrão para implementar a ação em minúsculas.  
+   Ambas as classes são semelhantes, exceto que um chama <xref:System.String.ToUpper%2A> e as outras chamadas <xref:System.String.ToLower%2A>. As etapas a seguir abrangem apenas a classe de ação em maiusculas, mas você deve implementar as duas classes. Use as etapas para implementar a ação de letras maiusculas como um padrão para implementar a ação em minúsculas.  
   
-1.  Declare um conjunto de campos particulares.  
+2. Declare um conjunto de campos particulares.  
   
-     [!code-csharp[VSSDKSmartTagTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#17)]
-     [!code-vb[VSSDKSmartTagTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#17)]  
+    [!code-csharp[VSSDKSmartTagTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#17)]
+    [!code-vb[VSSDKSmartTagTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#17)]  
   
-2.  Adicione um construtor que define os campos.  
+3. Adicione um construtor que define os campos.  
   
-     [!code-csharp[VSSDKSmartTagTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#18)]
-     [!code-vb[VSSDKSmartTagTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#18)]  
+    [!code-csharp[VSSDKSmartTagTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#18)]
+    [!code-vb[VSSDKSmartTagTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#18)]  
   
-3.  Implemente as propriedades da seguinte maneira.  
+4. Implemente as propriedades da seguinte maneira.  
   
-     [!code-csharp[VSSDKSmartTagTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#19)]
-     [!code-vb[VSSDKSmartTagTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#19)]  
+    [!code-csharp[VSSDKSmartTagTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#19)]
+    [!code-vb[VSSDKSmartTagTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#19)]  
   
-4.  Implementar o <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction.Invoke%2A> método, substituindo o texto no trecho com seu equivalente em maiusculas.  
+5. Implementar o <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction.Invoke%2A> método, substituindo o texto no trecho com seu equivalente em maiusculas.  
   
-     [!code-csharp[VSSDKSmartTagTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#20)]
-     [!code-vb[VSSDKSmartTagTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#20)]  
+    [!code-csharp[VSSDKSmartTagTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#20)]
+    [!code-vb[VSSDKSmartTagTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#20)]  
   
 ## <a name="building-and-testing-the-code"></a>Compilar e testar o código  
  Para testar esse código, compile a solução SmartTagTest e executá-lo na instância experimental.  

@@ -1,7 +1,7 @@
 ---
 title: BaseType | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - BaseType symbol [DIA SDK]
 ms.assetid: 2f9e22e6-8360-496a-ac6b-17a5a56b0c46
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5506895f5d03f0be5b31376b5bb0c8d608eeb6e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08606b1d794ab61ebad0293613a6bdc9a4694c18
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460339"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771192"
 ---
 # <a name="basetype"></a>BaseType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [BaseType](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/basetype).  
-  
 Tipos de base são identificados por `SymTagBaseType` símbolos.  
   
 ## <a name="properties"></a>Propriedades  

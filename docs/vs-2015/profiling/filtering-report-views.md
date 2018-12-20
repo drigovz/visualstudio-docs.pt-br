@@ -1,7 +1,7 @@
 ---
 title: Filtrando Exibições de Relatório | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - profiling tools, configuring
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5fe6ce49a9ffee4230cfd4c0528b53761bc1caf1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5ce703fdc3b0d20feda83b59706e7c4792d2ade
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466582"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753440"
 ---
 # <a name="filtering-report-views"></a>Filtrando exibições de relatório
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Filtrando exibições de relatório](https://docs.microsoft.com/visualstudio/profiling/filtering-report-views).  
-  
 Você pode aplicar filtros para arquivos de dados de criação de perfil para limitar os dados de criação de perfil que são exibidos nas exibições de Relatório de Desempenho e exportados para arquivos de relatório. Você pode limitar um relatório aos dados entre os valores de carimbo de data/hora e limitar os dados a processos e threads específicos. Você pode salvar filtros em um arquivo e, em seguida, criar um filtro em um arquivo de dados de criação de perfil diferente importando o filtro salvo.  
   
  Você também pode limitar um relatório a um segmento de tempo usando a linha de tempo gráfica na Exibição de Resumo. Consulte [Como filtrar exibições de relatório por meio da linha do tempo de resumo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
@@ -49,25 +47,25 @@ Você pode aplicar filtros para arquivos de dados de criação de perfil para li
     |**And/Or**|Escolha **And** se essa cláusula e a próxima devem ambas ser verdadeiras para corresponder a um resultado. Escolha **Or** se essa cláusula ou a próxima podem ser verdadeiras para corresponder a um resultado.|  
     |**Campo**|Selecione o campo de relatório para usar na cláusula de filtro da lista de campos de dados exibida.|  
     |**Operador**|Selecione o operador que especifica o relacionamento que deseja na cláusula entre o campo e o valor.<br /><br /> =    É igual a<br /><br /> <>  Não é igual a<br /><br /> <    Menor que<br /><br /> >    Maior que<br /><br /> <=  Menor ou igual a<br /><br /> >= Maior ou igual a|  
-    |**Value**|Selecione ou insira o valor a ser procurado. Alguns campos listam os valores disponíveis para o campo.|  
+    |**Valor**|Selecione ou insira o valor a ser procurado. Alguns campos listam os valores disponíveis para o campo.|  
   
 3.  
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Para criar um filtro de relatório do criador de perfil na exibição de Relatório de Marcas  
   
-1.  Selecione **Marcas** na lista **Exibição Atual** na barra de ferramentas de Exibição de Relatório de Desempenho.  
+1. Selecione **Marcas** na lista **Exibição Atual** na barra de ferramentas de Exibição de Relatório de Desempenho.  
   
-     O relatório do criador de perfil de Marcas é exibido.  
+    O relatório do criador de perfil de Marcas é exibido.  
   
-2.  Selecione o ETW ou amostragem mesmo que deseje usar como o ponto inicial do relatório.  
+2. Selecione o ETW ou amostragem mesmo que deseje usar como o ponto inicial do relatório.  
   
-3.  Pressione e segure a tecla CTRL e clique no evento que deseja usar como o ponto final do relatório.  
+3. Pressione e segure a tecla CTRL e clique no evento que deseja usar como o ponto final do relatório.  
   
-4.  Clique com o botão direito do mouse e depois clique em uma das seguintes opções:  
+4. Clique com o botão direito do mouse e depois clique em uma das seguintes opções:  
   
-    -   **Adicionar filtro em Marcas** cria cláusulas de filtro que usam a coluna de Marca como campo de filtro.  
+   - **Adicionar filtro em Marcas** cria cláusulas de filtro que usam a coluna de Marca como campo de filtro.  
   
-    -   **Adicionar Filtro em Carimbos de Data/Hora** cria cláusulas de filtro que usam o carimbo de data/hora em milésimos de segundo como campo de filtro.  
+   - **Adicionar Filtro em Carimbos de Data/Hora** cria cláusulas de filtro que usam o carimbo de data/hora em milésimos de segundo como campo de filtro.  
   
      As duas opções filtram o arquivo de dados atual nos mesmo pontos inicial e final. Qualquer opção pode ser a melhor se exportar o filtro a ser usado em outros relatórios.  
   

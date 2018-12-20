@@ -1,7 +1,7 @@
 ---
 title: Compartilhar modelos e diagramas de exportação | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,21 +12,19 @@ helpviewer_keywords:
 - UML diagrams, saving
 ms.assetid: 22e47b4d-c185-478c-9535-56d292b45984
 caps.latest.revision: 16
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e450216d25c4e7991bd0bc27fcc64feb81a2919a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f59ac9d96a9f001b54c86bbf51819ecf2efb40c9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461741"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798450"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Modelos de compartilhamento e diagramas de exportação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [compartilhar modelos e diagramas de exportação](https://docs.microsoft.com/visualstudio/modeling/share-models-and-exporting-diagrams).  
-  
 No Visual Studio, você pode compartilhar modelos e diagramas com colegas de várias maneiras.  
   
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

@@ -1,7 +1,7 @@
 ---
 title: 'Etapa 2: Executar o programa | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3312f5017344e4a4710a330750c86727d097c15c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4c8c3788a40941d2cc6fe563af8bd030b2b913d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473623"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242184"
 ---
 # <a name="step-2-run-your-program"></a>Etapa 2: Executar o programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [etapa 2: executar o programa](https://docs.microsoft.com/visualstudio/ide/step-2-run-your-program).  
-  
 Ao criar uma nova solução, você na verdade cria um programa que é executado. Ele não faz muita coisa — apenas exibe uma janela vazia que mostra **Form1** na barra de título. Mas se ela funciona, você está prestes a descobrir.  
   
  ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para uma versão em vídeo deste tópico, consulte o [Tutorial 1: criar um Visualizador de Imagens no Visual Basic – Vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou o [Tutorial 1: criar um Visualizador de Imagens em C# – Vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.  

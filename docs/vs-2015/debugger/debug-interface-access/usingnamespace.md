@@ -1,7 +1,7 @@
 ---
 title: UsingNameSpace | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - UsingNamespace symbol tag
 ms.assetid: e8e1beb5-7cb9-43b4-9ff4-760d5f91ea2d
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbedc0fa1c718bf45472fa29309fa5d460c1c001
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65743f9e58459108ffadfdbeec089af48734581e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474186"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805288"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [UsingNameSpace](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/usingnamespace).  
-  
 Alguns símbolos pode ser referenciados por namespace e subsequentemente seria identificados por um `SymTagUsingNameSpace` marca.  
   
 > [!NOTE]

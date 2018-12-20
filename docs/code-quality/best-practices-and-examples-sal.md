@@ -9,12 +9,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1287d97ed50e781a0b7bf30be1f77d558c908f
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7922d381d61d40c20fa69859dd091849684723b2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899962"
 ---
 # <a name="best-practices-and-examples-sal"></a>Práticas recomendadas e exemplos (SAL)
 Aqui estão algumas maneiras de obter o máximo de fora a fonte de código SAL (Annotation Language) e evitar alguns problemas comuns.
@@ -61,7 +61,6 @@ void Func2(_Out_ int *p1)
 {
     *p = 1;
 }
-
 ```
 
 ## <a name="predefensive-and-postdefensive"></a>\_Pré\_defensiva\_ e \_Post\_defensiva\_
@@ -78,7 +77,6 @@ O exemplo a seguir demonstra um uso indevido comuns do `_Out_writes_`.
 void Func1(_Out_writes_(size) CHAR *pb,
     DWORD size
 );
-
 ```
 
 A anotação `_Out_writes_` significa que você tem um buffer. Ele tem `cb` bytes alocados, com o primeiro byte inicializado na saída. Essa anotação não é estritamente errada e é útil expressar o tamanho alocado. No entanto, ela não informa quantos elementos são inicializados pela função.
@@ -100,7 +98,6 @@ void Func2(_Out_writes_all_(size) CHAR *pb,
 void Func3(_Out_writes_(size) PSTR pb,
     DWORD size
 );
-
 ```
 
 ## <a name="out-pstr"></a>\_Out\_ PSTR
@@ -114,7 +111,6 @@ void Func1(_Out_ PSTR pFileName, size_t n);
 
 // Correct
 void Func2(_Out_writes_(n) PSTR wszFileName, size_t n);
-
 ```
 
 Como uma anotação `_In_ PCSTR` é comum e útil. Ele aponta para uma cadeia de caracteres de entrada que tem terminação NULL porque a pré-condição de `_In_` permite que o reconhecimento de uma cadeia de caracteres terminada em nulo.
@@ -130,7 +126,6 @@ void Func1(_In_ WCHAR* wszFileName);
 
 // Correct
 void Func2(_In_ PWSTR wszFileName);
-
 ```
 
 É comum que tem a especificação de apropriada de finalização NULL. Usar apropriado `STR` versão para substituir o tipo, conforme mostrado no exemplo a seguir.
@@ -148,7 +143,6 @@ BOOL StrEquals2(_In_ PSTR p1, _In_ PSTR p2)
 {
     return strcmp(p1, p2) == 0;
 }
-
 ```
 
 ## <a name="outrange"></a>\_Out\_intervalo\_
@@ -170,7 +164,6 @@ void Func2(
     DWORD cbSize,
     _Deref_out_range_(0, cbSize) _Out_ DWORD *pcbFilled
 );
-
 ```
 
  `_Deref_out_range_(0, cbSize)` não é estritamente necessária para algumas ferramentas porque ele pode ser inferido de `_Out_writes_to_(cbSize,*pcbFilled)`, mas ele é mostrado aqui para fins de integridade.
@@ -188,7 +181,6 @@ int Func1(_In_ MyData *p, int flag);
 // Correct
 _When_(flag == 0, _Requires_lock_held_(p->cs))
 int Func2(_In_ MyData *p, int flag);
-
 ```
 
  A expressão `result` refere-se a um valor de pós-estado não está disponível no estado de pré-lançamento.
@@ -210,7 +202,6 @@ _Success_(return != 0, _Acquires_lock_(*lpCriticalSection))
 BOOL WINAPI TryEnterCriticalSection(
   _Inout_ LPCRITICAL_SECTION lpCriticalSection
 );
-
 ```
 
 ## <a name="reference-variable"></a>Variável de referência
@@ -230,7 +221,6 @@ void Func2(
     _Out_writes_bytes_all_(cbSize) BYTE *pb,
     _Out_range_(0, 2) _Out_ DWORD &cbSize
 );
-
 ```
 
 ## <a name="annotations-on-return-values"></a>Anotações em valores de retorno
@@ -244,7 +234,6 @@ _Out_opt_ void *MightReturnNullPtr1();
 
 // Correct
 _Ret_maybenull_ void *MightReturnNullPtr2();
-
 ```
 
 Neste exemplo, `_Out_opt_` diz que o ponteiro pode ser NULL como parte da pré-condição. No entanto, as pré-condições não podem ser aplicadas ao valor de retorno. Nesse caso, a anotação correta é `_Ret_maybenull_`.

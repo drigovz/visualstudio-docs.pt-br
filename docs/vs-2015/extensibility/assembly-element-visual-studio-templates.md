@@ -1,7 +1,7 @@
 ---
 title: Elemento Assembly (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 987e46810aa8cfe51102d2940bf48d24fd6824cf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40bb0b99bfe22c7842296c2fbaa2b868ca1ef259
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465157"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802025"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Elemento de assembly (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento Assembly (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/assembly-element-visual-studio-templates).  
-  
 Especifica informações sobre um assembly, que usa o modelo para adicionar uma referência de assembly para projetos.  
   
  \<VSTemplate >  

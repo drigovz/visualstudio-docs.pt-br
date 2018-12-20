@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Depurando um modelo de texto que acessa um modelo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: beb0a9becf45a74dd34c1c282a2fb8f860f5145d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463532"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924883"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Instruções passo a passo: depurando um modelo (template) de texto que acessa um modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: depurando um modelo de texto que acessa um modelo](https://docs.microsoft.com/visualstudio/modeling/walkthrough-debugging-a-text-template-that-accesses-a-model).  
-  
 Quando você modificar ou adicionar modelos de texto em uma solução de linguagem específica de domínio, você pode receber erros quando o mecanismo transforma o modelo de código-fonte ou quando ele compila o código gerado. A instrução a seguir demonstra algumas das coisas que você pode fazer para depurar um modelo de texto.  
   
 > [!NOTE]
@@ -32,15 +30,15 @@ Quando você modificar ou adicionar modelos de texto em uma solução de linguag
 ## <a name="creating-a-domain-specific-language-solution"></a>Criando uma solução de linguagem específica do domínio  
  Neste procedimento, você deve criar uma solução de linguagem específica de domínio que tem as seguintes características:  
   
--   Nome: DebuggingTestLanguage  
+- Nome: DebuggingTestLanguage  
   
--   Modelo de solução: linguagem mínima  
+- Modelo de solução: linguagem mínima  
   
--   Extensão de arquivo: .ddd  
+- Extensão de arquivo: .ddd  
   
--   Nome da empresa: Fabrikam  
+- Nome da empresa: Fabrikam  
   
- Para obter mais informações sobre como criar uma solução de linguagem específica de domínio, consulte [como: criar uma solução de linguagem específica do domínio](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+  Para obter mais informações sobre como criar uma solução de linguagem específica de domínio, consulte [como: criar uma solução de linguagem específica do domínio](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="creating-a-text-template"></a>Criando um modelo de texto  
  Adicione um modelo de texto à sua solução.  

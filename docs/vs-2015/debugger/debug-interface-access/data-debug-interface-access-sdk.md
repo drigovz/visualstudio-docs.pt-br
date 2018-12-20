@@ -1,7 +1,7 @@
 ---
 title: Dados (SDK de acesso à Interface de depuração) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,21 +18,19 @@ helpviewer_keywords:
 - Data symbol
 ms.assetid: 0f17e96a-2e06-42c9-a877-3e5e670ee0ef
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a52548ba72a9c3ef35397b2e16085da61c2ae3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0e777401602a4d802fa48c2b14ba97be89d8631
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461771"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809968"
 ---
 # <a name="data-debug-interface-access-sdk"></a>Data (SDK de Acesso à Interface de Depuração)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [(Depurar SDK de acesso à Interface) de dados](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/data-debug-interface-access-sdk).  
-  
 Todas as variáveis, como parâmetros, variáveis locais, variáveis globais e membros de classe, são identificadas por `SymTagData` símbolos. Valores constantes (`LocIsConstant`) também são identificados com esse tipo.  
   
 ## <a name="properties"></a>Propriedades  

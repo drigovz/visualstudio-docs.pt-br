@@ -1,7 +1,7 @@
 ---
 title: Inspeção e QuickWatch Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,21 +26,19 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
 caps.latest.revision: 50
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e15167169b8940d65eeca66aaf3871997300cd04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b171352475b6c0b3bc916d27ab4ba351e84be42b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464712"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791664"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Inspeção e QuickWatch Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definir uma inspeção nas variáveis no Visual Studio](https://docs.microsoft.com/visualstudio/debugger/watch-and-quickwatch-windows).  
-  
 Você pode usar o **Watch** (**depurar / Windows / Assista / assistir (1, 2, 3 e 4)**) e **QuickWatch** (com o botão direito na variável / **depurar / QuickWatch**) windows para inspecionar variáveis e expressões durante uma sessão de depuração.  A diferença é que o **Watch** janela pode exibir diversas variáveis, enquanto o **QuickWatch** janela exibe uma única variável por vez.  
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Observar uma única variável com QuickWatch  
@@ -94,19 +92,19 @@ static void Main(string[] args)
   
  Adicione os valores das três variáveis à janela Inspeção, da seguinte maneira:  
   
-1.  Defina um ponto de interrupção a `c = a + b;` linha.  
+1. Defina um ponto de interrupção a `c = a + b;` linha.  
   
-2.  Iniciar a depuração (**F5**). Interrompe a execução no ponto de interrupção.  
+2. Iniciar a depuração (**F5**). Interrompe a execução no ponto de interrupção.  
   
-3.  Abra a janela Watch (**depurar / Windows / Assista / Assista 1**, ou **CTRL + ALT + W, 1**).  
+3. Abra a janela Watch (**depurar / Windows / Assista / Assista 1**, ou **CTRL + ALT + W, 1**).  
   
-4.  Adicione a `a` variável para a primeira linha, o `b` variável à segunda linha e o `c` variável para a terceira linha.  
+4. Adicione a `a` variável para a primeira linha, o `b` variável à segunda linha e o `c` variável para a terceira linha.  
   
-5.  Continue a depuração.  
+5. Continue a depuração.  
   
- Você deve ver os valores das variáveis e alterado conforme você itera através de `for` loop.  
+   Você deve ver os valores das variáveis e alterado conforme você itera através de `for` loop.  
   
- Se você estiver programando em código nativo, às vezes talvez seja necessário qualificar o contexto de um nome de variável ou de uma expressão que contenham um nome de variável. O contexto é a função, o arquivo de origem e o módulo onde se encontra uma variável. Se você precisar fazer isso, poderá usar a sintaxe de operador de contexto. Para obter mais informações, consulte expressões em C++.  
+   Se você estiver programando em código nativo, às vezes talvez seja necessário qualificar o contexto de um nome de variável ou de uma expressão que contenham um nome de variável. O contexto é a função, o arquivo de origem e o módulo onde se encontra uma variável. Se você precisar fazer isso, poderá usar a sintaxe de operador de contexto. Para obter mais informações, consulte expressões em C++.  
   
 ## <a name="observing-expressions-with-the-watch-window"></a>Observando as expressões com a janela Inspeção  
  Agora vamos tentar usar uma expressão em vez disso. Você pode adicionar qualquer expressão válida reconhecida pelo depurador.  
@@ -140,15 +138,15 @@ static void Main(string[] args)
   
  Se você apontar para o ícone, uma dica de ferramenta fornecerá informações sobre como a expressão não foi avaliada.  Se as setas de circundamento aparecerem, isso significará que a expressão não foi avaliada para um dos seguintes motivos:  
   
--   • Um erro ocorreu como a expressão estava sendo avaliada. Por exemplo, um tempo limite pode ter ocorrido, ou uma variável pode ter ficado fora do escopo.  
+- • Um erro ocorreu como a expressão estava sendo avaliada. Por exemplo, um tempo limite pode ter ocorrido, ou uma variável pode ter ficado fora do escopo.  
   
--   • A expressão contém uma chamada de função que pode disparar um efeito colateral no aplicativo (consulte [efeitos colaterais e expressões](#bkmk_sideEffects)).  
+- • A expressão contém uma chamada de função que pode disparar um efeito colateral no aplicativo (consulte [efeitos colaterais e expressões](#bkmk_sideEffects)).  
   
--   A avaliação automática de propriedades e chamadas de função implícitas pelo depurador está desativada (**Ferramentas / opções / depuração / habilitar a avaliação de propriedade e outras chamadas de função implícitas**), e, em seguida, a expressão não pode ser avaliado automaticamente.  
+- A avaliação automática de propriedades e chamadas de função implícitas pelo depurador está desativada (**Ferramentas / opções / depuração / habilitar a avaliação de propriedade e outras chamadas de função implícitas**), e, em seguida, a expressão não pode ser avaliado automaticamente.  
   
- Para atualizar o valor, clique no ícone de atualização ou pressione a barra de espaços. O depurador tenta reavaliar a expressão. Se o ícone de atualização apareceu porque a avaliação automática de propriedades e efeitos colaterais implícitos foi desativada, a expressão pode ser avaliada.  
+  Para atualizar o valor, clique no ícone de atualização ou pressione a barra de espaços. O depurador tenta reavaliar a expressão. Se o ícone de atualização apareceu porque a avaliação automática de propriedades e efeitos colaterais implícitos foi desativada, a expressão pode ser avaliada.  
   
- Se você vir um ícone que é um círculo com duas linhas onduladas cordas, a expressão não foi avaliada devido à dependência potencial entre threads. Em outras palavras, a avaliar o código requer outros threads em seu aplicativo sejam executados temporariamente. Quando você está no modo de interrupção, todos os threads em seu aplicativo normalmente estão parados. Permitir que outros threads sejam executados temporariamente pode ter inesperado de efeitos sobre o estado do seu programa e faz com que o depurador ignorar eventos como pontos de interrupção e as exceções geradas nesses threads.  
+  Se você vir um ícone que é um círculo com duas linhas onduladas cordas, a expressão não foi avaliada devido à dependência potencial entre threads. Em outras palavras, a avaliar o código requer outros threads em seu aplicativo sejam executados temporariamente. Quando você está no modo de interrupção, todos os threads em seu aplicativo normalmente estão parados. Permitir que outros threads sejam executados temporariamente pode ter inesperado de efeitos sobre o estado do seu programa e faz com que o depurador ignorar eventos como pontos de interrupção e as exceções geradas nesses threads.  
   
 ##  <a name="bkmk_sideEffects"></a> Efeitos colaterais e expressões  
  Avaliar algumas expressões pode alterar o valor de uma variável ou, de outra forma, afetar o estado do programa. Por exemplo, avaliar a expressão a seguir altera o valor de `var1`:  
@@ -240,11 +238,11 @@ public class Program
   
  Se você quiser exibir apenas os **modo de exibição dinâmico** para um objeto, você pode usar o **dinâmico** especificador de formato:  
   
--   C#: **ObjectName, dinâmico**  
+- C#: **ObjectName, dinâmico**  
   
--   Visual Basic:: **$dynamic, ObjectName**  
+- Visual Basic:: **$dynamic, ObjectName**  
   
- O **modo de exibição dinâmico** também melhora a experiência de depuração para objetos COM. Quando o depurador encontra um objeto COM envolvido na **ComObject**, ele adiciona um **modo de exibição dinâmico** nó do objeto.  
+  O **modo de exibição dinâmico** também melhora a experiência de depuração para objetos COM. Quando o depurador encontra um objeto COM envolvido na **ComObject**, ele adiciona um **modo de exibição dinâmico** nó do objeto.  
   
 ## <a name="see-also"></a>Consulte também  
  [Janelas do depurador](../debugger/debugger-windows.md)

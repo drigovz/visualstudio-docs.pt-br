@@ -1,6 +1,6 @@
 ---
-title: 'Como: escrever uma função de relatório de erro de tempo de execução | Microsoft Docs'
-ms.custom: ''
+title: Escrever uma função de relatório de erro de tempo de execução | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 381ba20b233f143cb63128368a710debb25a0abb
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 22c508a7fa8faedc66f9122de60921878a931fae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057867"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051497"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function"></a>Como escrever uma função de relatórios de erro de tempo de execução
+# <a name="how-to-write-a-run-time-error-reporting-function"></a>Como: Escrever uma função de relatório de erro em tempo de execução
 Uma função personalizada de relatório para erros em tempo de execução deve ter a mesma declaração que `_CrtDbgReportW`. Deve retornar um valor de 1 para o depurador.  
   
  O exemplo a seguir mostra como definir uma função personalizada de relatório.  
@@ -108,7 +108,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 ```  
   
 ## <a name="example"></a>Exemplo  
- Use `_RTC_SetErrorFuncW` para instalar a função personalizada em vez de `_CrtDbgReportW`. Para obter mais informações, consulte [RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). O valor de retorno de `_RTC_SetErrorFuncW` é a função de relatório anterior, que você pode salvar e restaurar se necessário.  
+ Use `_RTC_SetErrorFuncW` para instalar a função personalizada em vez de `_CrtDbgReportW`. Para obter mais informações, confira [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). O valor de retorno de `_RTC_SetErrorFuncW` é a função de relatório anterior, que você pode salvar e restaurar se necessário.  
   
 ```cpp
 #include <rtcapi.h>  

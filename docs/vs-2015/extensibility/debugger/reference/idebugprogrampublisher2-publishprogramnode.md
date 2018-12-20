@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramPublisher2::PublishProgramNode | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: d4b72e04-f726-46cf-8e56-5203ff205b12
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e2c3645eacff7ce7d089be5a55f3421d16dd73ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a4d7ec693fb482f11195f4d431a04acb3d1fead
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462062"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781225"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProgramPublisher2::PublishProgramNode](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode).  
-  
 Disponibiliza um nó de programa para uso pelos mecanismos de depuração (DEs) e a sessão de depuração SDM (Gerenciador).  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT PublishProgramNode(  
+HRESULT PublishProgramNode(  
    IDebugProgramNode2 *pProgramNode  
 );  
 ```  
   
 ```csharp  
-int PublishProgramNode(  
-   IDebugProgramNode2 pProgramNode  
+int PublishProgramNode(  
+   IDebugProgramNode2 pProgramNode  
 );  
 ```  
   

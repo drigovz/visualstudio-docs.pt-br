@@ -1,7 +1,7 @@
 ---
 title: THREADPROPERTY_FIELDS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 5b88acb9-03ea-4c29-a788-f0087dccbe23
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 861a7d51b69f72938750a3210c29b8ac560af016
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bcc299a9179a4e0aff5e405569690a9ce8db0ba
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462847"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774101"
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [THREADPROPERTY_FIELDS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/threadproperty-fields).  
-  
 Especifica quais informações sobre um thread deve ser recuperado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_THREADPROPERTY_FIELDS {   
+enum enum_THREADPROPERTY_FIELDS {   
    TPF_ID           = 0x0001,  
    TPF_SUSPENDCOUNT = 0x0002,  
    TPF_STATE        = 0x0004,  
@@ -47,7 +45,7 @@ typedef DWORD THREADPROPERTY_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_THREADPROPERTY_FIELDS {   
+public enum enum_THREADPROPERTY_FIELDS {   
    TPF_ID           = 0x0001,  
    TPF_SUSPENDCOUNT = 0x0002,  
    TPF_STATE        = 0x0004,  

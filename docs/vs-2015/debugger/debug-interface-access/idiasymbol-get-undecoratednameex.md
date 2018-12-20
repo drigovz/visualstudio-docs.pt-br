@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_undecoratednameex | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_undecoratedNameEx method
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e8299775b1cb75a874c4d79de9560d7149bb36d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1902c6300a35924e7fcd626d9b63f69bc5bbc2c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466979"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745404"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_undecoratednameex](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-undecoratednameex).  
-  
 Recupera parte ou todo um nome não decorado para um C++ decoradas nome (ligação).  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_undecoratedNameEx(   
+HRESULT get_undecoratedNameEx(   
    DWORD undecorateOptions,  
    BSTR* pRetval  
 );  

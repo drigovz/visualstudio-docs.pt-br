@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumsymbolsbyaddr:: Symbolbyrva | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaEnumSymbolsByAddr::symbolByRVA method
 ms.assetid: f7828029-f2ee-4ccd-afac-785adc60a4c8
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a85200e9e3139a84dcbecf3ea3500fd79c1b3aa5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bcd7bd8075e5012faa0f97a6a3cd92cf2174372b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466970"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754785"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaenumsymbolsbyaddr:: Symbolbyrva](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva).  
-  
 Posiciona o enumerador ao executar uma pesquisa por endereço virtual relativo (RVA).  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT symbolByRVA (   
+HRESULT symbolByRVA (   
    DWORD**      relativeVirtualAddress,  
    IDiaSymbol** ppsymbol  
 );  

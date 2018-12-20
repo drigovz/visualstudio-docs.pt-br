@@ -1,7 +1,7 @@
 ---
 title: Uso de controles HTML5 em testes de IU codificados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 14bdab12cf241914d1f41581ae5434ae1776ec2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 92ee95d4840ab9a833adc1b0060117f0d6b94fbd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474147"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254456"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usando controles HTML5 em testes de IU codificados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usar controles HTML5 em testes de IU codificados](https://docs.microsoft.com/visualstudio/test/using-html5-controls-in-coded-ui-tests).  
-  
 Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluídos no Internet Explorer 9 e no Internet Explorer 10.  
   
  **Requisitos**  

@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_hasinlasm | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaSymbol::get_hasInlAsm method
 ms.assetid: 7001c7cc-1459-4929-851b-a08066a803c6
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55d096c6b9d17ff4b2312a586db55effb9793167
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0cd376ccc2ac207206f3aa96fb1bc91aed1eb7dd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475340"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757097"
 ---
 # <a name="idiasymbolgethasinlasm"></a>IDiaSymbol::get_hasInlAsm
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_hasinlasm](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-hasinlasm).  
-  
 Recupera um sinalizador que especifica se a função contém assembly embutido.  
   
 ## <a name="syntax"></a>Sintaxe  

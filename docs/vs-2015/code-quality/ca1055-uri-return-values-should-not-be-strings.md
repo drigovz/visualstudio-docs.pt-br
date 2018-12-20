@@ -1,7 +1,7 @@
 ---
 title: 'CA1055: Valores não devem ser cadeias de caracteres de retorno de URI | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5fccccdef16d29e1dcc890c7799a8cb8a4486288
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 9f3e47b033de2bce785fce1145258b3b4f37699a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587170"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828840"
 ---
 # <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055: os valores de retorno de URI não devem ser cadeias de caracteres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1055: valores não devem ser cadeias de caracteres de retorno de URI](https://docs.microsoft.com/visualstudio/code-quality/ca1055-uri-return-values-should-not-be-strings).
 
 |||
 |-|-|

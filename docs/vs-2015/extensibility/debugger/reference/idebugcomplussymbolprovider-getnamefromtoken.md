@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetNameFromToken | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6e8cf468-5fd1-4655-93ed-88828d6068b7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e7a10208f5bbb7bd3803b0cd7e0a417c18b8ba3e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e311002db2a961f6d6d9c484b10c618d3561f11e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464396"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728792"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugComPlusSymbolProvider::GetNameFromToken](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcomplussymbolprovider-getnamefromtoken).  
-  
 Retorna o nome associado ao token especificado considerando seu objeto de metadados.  
   
 ## <a name="syntax"></a>Sintaxe  

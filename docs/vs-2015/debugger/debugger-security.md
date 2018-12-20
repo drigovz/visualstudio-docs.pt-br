@@ -1,7 +1,7 @@
 ---
 title: Segurança do depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,21 +20,19 @@ helpviewer_keywords:
 - security [Visual Studio], debugging best practices
 ms.assetid: d4fc3c43-e844-419c-8dbb-551cc2a9b09e
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f40dfc655148530045b6566ac56d77553951b93
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7f8166c7aea86b0decad84631f8c98054ee69253
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474129"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765364"
 ---
 # <a name="debugger-security"></a>Segurança do depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Debugger Security](https://docs.microsoft.com/visualstudio/debugger/debugger-security).  
-  
 A capacidade de depurar outro processo oferece poderes extremamente amplos que você não teria de outra forma, especialmente ao depurar remotamente. Um depurador mal-intencionado pode impor danos extensivos no computador que está sendo depurado.  
   
  Porém, muitos desenvolvedores não percebem que a ameaça à segurança também pode fluir na direção oposta. É possível que o código mal-intencionado no processo a ser depurado possa comprometer a segurança do computador de depuração: há várias explorações de segurança das quais você deve se proteger.  
@@ -47,11 +45,11 @@ A capacidade de depurar outro processo oferece poderes extremamente amplos que v
 ### <a name="managed-debugging-security"></a>Segurança de depuração gerenciada  
  Aqui estão algumas recomendações gerais que se aplicam a todas as depurações gerenciadas.  
   
--   Tenha cuidado ao anexar ao processo de um usuário não confiável: quando você faz isso, pressupõe que ele seja confiável. Quando você tenta anexar a um processo de usuário não confiável, uma caixa de diálogo de confirmação de aviso de segurança será exibida perguntando se você deseja anexar ao processo. "Usuários confiáveis" incluem você e um conjunto de usuários padrão comumente definidos em computadores que têm o .NET Framework instalado, como **aspnet**, **localsystem**, **networkservice**, e **localservice**. Para obter mais informações, consulte [aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
+- Tenha cuidado ao anexar ao processo de um usuário não confiável: quando você faz isso, pressupõe que ele seja confiável. Quando você tenta anexar a um processo de usuário não confiável, uma caixa de diálogo de confirmação de aviso de segurança será exibida perguntando se você deseja anexar ao processo. "Usuários confiáveis" incluem você e um conjunto de usuários padrão comumente definidos em computadores que têm o .NET Framework instalado, como **aspnet**, **localsystem**, **networkservice**, e **localservice**. Para obter mais informações, consulte [aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
   
--   Tenha cuidado ao baixar um projeto fora da Internet e carregá-lo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Isso é muito arriscado de fazer mesmo sem depuração. Quando você fizer isso, estará supondo que o projeto e o código que contém sejam confiáveis.  
+- Tenha cuidado ao baixar um projeto fora da Internet e carregá-lo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Isso é muito arriscado de fazer mesmo sem depuração. Quando você fizer isso, estará supondo que o projeto e o código que contém sejam confiáveis.  
   
- Para obter mais informações, consulte [Debugging Managed Code](../debugger/debugging-managed-code.md).  
+  Para obter mais informações, consulte [Debugging Managed Code](../debugger/debugging-managed-code.md).  
   
 ### <a name="remote-debugging-security"></a>Segurança de depuração remota  
  A depuração local é geralmente mais segura do que a depuração remota. A depuração remota aumenta a área da superfície total que pode ser analisada.  
@@ -81,11 +79,11 @@ A capacidade de depurar outro processo oferece poderes extremamente amplos que v
 ### <a name="symbols-and-source-code"></a>Símbolos e código-fonte  
  As duas ferramentas do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que demandam preocupações com segurança são as seguintes:  
   
--   O Servidor de Origem, que fornece versões do código-fonte de um repositório de códigos-fonte. É útil quando você não tem a versão atual do código-fonte de um programa. [Aviso de segurança: O depurador deve executar o comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
+- O Servidor de Origem, que fornece versões do código-fonte de um repositório de códigos-fonte. É útil quando você não tem a versão atual do código-fonte de um programa. [Aviso de segurança: O depurador deve executar o comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
   
--   O servidor do símbolo, que é usado para fornecer os símbolos necessárias para depurar uma falha durante uma chamada do sistema.  
+- O servidor do símbolo, que é usado para fornecer os símbolos necessárias para depurar uma falha durante uma chamada do sistema.  
   
- Consulte [especificar símbolo (. PDB) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+  Consulte [especificar símbolo (. PDB) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>Consulte também  
  [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)   

@@ -1,28 +1,29 @@
 ---
-title: Editando o código do Python
-description: A edição de Python no Visual Studio fornece recursos de IntelliSense, snippets de código e navegação, juntamente com formatação, lint e refatoração.
-ms.date: 09/04/2018
+title: Editar código do Python
+description: Para o Python, o Visual Studio fornece funcionalidades avançadas do IntelliSense, de snippets de código e navegação, juntamente com formatação, linting e refatoração.
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 680f568ef6d44aa5194931bd585ba307f7b64b3d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774759"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062810"
 ---
 # <a name="edit-python-code"></a>Editar código do Python
 
 Como você passa muito tempo dedicado ao desenvolvimento no editor de códigos, o [Suporte para Python no Visual Studio](installing-python-support-in-visual-studio.md) fornece funcionalidade para ajudá-lo a ser mais produtivo. Os recursos incluem o realce de sintaxe do IntelliSense, o preenchimento automático, a ajuda da assinatura, as substituições de método, a pesquisa e a navegação.
 
-O editor também é integrado à janela **Interativa** no Visual Studio, facilitando a troca do código entre as duas. Confira [Etapa 3 do tutorial: Usar a janela do REPL Interativo](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) e [Usar a janela Interativa – comando Enviar para Interativa](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) para obter detalhes.
+O editor também é integrado à janela **Interativa** no Visual Studio, facilitando a troca do código entre as duas. Confira a [Etapa 3 do Tutorial: Usar a janela REPL Interativa](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) e [Usar a janela Interativa – comando Enviar para Interativa](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) para obter detalhes.
 
 |   |   |
 |---|---|
@@ -44,7 +45,7 @@ O **Visual Studio 2017 versão 15.6** e posterior usa um modo diferente para for
 
 Preenchimentos aparecem como instruções, identificadores e outras palavras que podem ser inseridas adequadamente na localização atual no editor. O que é mostrado na lista baseia-se no contexto e é filtrado para omitir opções incorretas ou que desviam a atenção. Em geral, os preenchimentos são disparados com a digitação de diferentes instruções (como `import`) e operadores (incluindo um ponto final), mas é possível fazer com que eles apareçam a qualquer momento digitando **Ctrl**+**J** > **Espaço**.
 
-![Preenchimento de membro](media/code-editing-completions-simple.png)
+![Preenchimento de membro no editor do Visual Studio](media/code-editing-completions-simple.png)
 
 Quando uma lista de preenchimento é aberta, é possível pesquisar o preenchimento que você deseja usando as teclas de direção, o mouse ou continuando a digitação. Conforme você digita mais letras, a lista é filtrada ainda mais para mostrar os prováveis preenchimentos. Você também pode usar atalhos, como:
 
@@ -54,27 +55,27 @@ Quando uma lista de preenchimento é aberta, é possível pesquisar o preenchime
 
 Alguns exemplos:
 
-![Preenchimento de membro com filtragem](media/code-editing-completion-filtering.png)
+![Preenchimento de membro com filtragem no editor do Visual Studio](media/code-editing-completion-filtering.png)
 
 Os preenchimentos de membro aparecem automaticamente quando você digita um ponto final depois de uma variável ou um valor, juntamente com os métodos e os atributos dos tipos possíveis. Se uma variável puder ser de mais de um tipo, a lista incluirá todas as possibilidades de todos os tipos, com informações extras para indicar quais tipos dão suporte a cada preenchimento. Quando um preenchimento tem o suporte de todos os tipos possíveis, ele é mostrado sem anotação.
 
-![Preenchimento de membro em vários tipos](media/code-editing-completion-types.png)
+![Preenchimento de membro em vários tipos no editor do Visual Studio](media/code-editing-completion-types.png)
 
 Por padrão, os membros “dunder” (membros que começam e terminam com um sublinhado duplo) não são mostrados. Em geral, esses membros não devem ser acessados diretamente. Se você precisar de um, no entanto, digitar o sublinhado duplo à esquerda adiciona esses preenchimentos à lista:
 
-![Preenchimento de membro privado](media/code-editing-completion-dunder.png)
+![Preenchimento de membro particular no editor do Visual Studio](media/code-editing-completion-dunder.png)
 
 As instruções `import` e `from ... import` exibem uma lista de módulos que podem ser importados. Com `from ... import`, a lista inclui os membros que podem ser importados do módulo especificado.
 
-![Preenchimento de importação](media/code-editing-completion-import.png)
+![Importar o preenchimento no editor do Visual Studio](media/code-editing-completion-import.png)
 
 As instruções `raise` e `except` exibem listas de classes que provavelmente são tipos de erros. A lista pode não incluir todas as exceções definidas pelo usuário, mas ajuda você a encontrar as exceções internas adequadas rapidamente:
 
-![Preenchimento de exceção](media/code-editing-completion-exception.png)
+![Preenchimento de exceção no editor do Visual Studio](media/code-editing-completion-exception.png)
 
 Digitar @ inicia um decorador e mostra os decoradores possíveis. Muitos desses itens não podem ser usados como decoradores, verifique a documentação da biblioteca para determinar qual deles usar.
 
-![Preenchimento de decorador](media/code-editing-completion-decorator.png)
+![Preenchimento de decorador no editor do Visual Studio](media/code-editing-completion-decorator.png)
 
 > [!Tip]
 > Configure o comportamento de preenchimentos por meio de **Ferramentas** > **Opções** > **Editor de Texto** > **Python** > **Avançado**. Dentre eles, a opção **Filtrar lista com base na cadeia de caracteres de pesquisa** aplica a filtragem de sugestões de preenchimento enquanto você digita (o padrão é marcado) e a opção **O preenchimento de membro exibe a interseção dos membros** mostra apenas os preenchimentos compatíveis com todos os tipos possíveis (o padrão é desmarcado). Consulte [Opções – Resultados de Conclusão](python-support-options-and-settings-in-visual-studio.md#completion-results).
@@ -123,7 +124,7 @@ Usar o comando **Execute Mypy** neste código gera o seguinte erro:
 
 Ao escrever o código que chama uma função, a ajuda da assinatura é exibida quando você digita o `(` de abertura e exibe as informações de parâmetro e documentação disponíveis. Exiba-a também com **Ctrl**+**Shift**+**Espaço** dentro de uma chamada de função. As informações exibidas dependem das cadeias de caracteres de documentação no código-fonte da função, mas incluem os valores padrão.
 
-![Ajuda da assinatura](media/code-editing-signature-help.png)
+![Ajuda da assinatura no editor do Visual Studio](media/code-editing-signature-help.png)
 
 > [!Tip]
 > Para desabilitar a ajuda da assinatura, acesse **Ferramentas** > **Opções** > **Editor de Texto** > **Python** > **Geral** e desmarque a opção **Preenchimento de declaração** > **Informações de parâmetro**.
@@ -132,17 +133,17 @@ Ao escrever o código que chama uma função, a ajuda da assinatura é exibida q
 
 Focalizar o ponteiro do mouse em um identificador exibe uma dica de ferramenta Informações Rápidas. Dependendo do identificador, as Informações Rápidas poderão exibir os possíveis valores ou tipos, toda a documentação disponível, os tipos de retorno e os locais de definição:
 
-![Informação Rápida](media/code-editing-quick-info.png)
+![Informações Rápidas no editor do Visual Studio](media/code-editing-quick-info.png)
 
 ### <a name="code-coloring"></a>Coloração de código
 
 A coloração de código usa informações da análise de código para colorir variáveis, instruções e outras partes do código. Por exemplo, as variáveis que se referem a módulos ou classes podem ser exibidas em uma cor diferente da de funções ou outros valores e os nomes de parâmetro são exibidos em uma cor diferente da que variáveis locais ou globais. (Por padrão, as funções não são exibidas em negrito):
 
-![Coloração de código](media/code-editing-code-coloring.png)
+![Coloração de código e de sintaxe no editor do Visual Studio](media/code-editing-code-coloring.png)
 
 Para personalizar as cores, acesse **Ferramentas** > **Opções** > **Ambiente** > **Fontes e Cores** e modifique as entradas do **Python** na lista **Exibir itens**:
 
-![Opções de Fontes e Cores](media/code-editing-customize-colors.png)
+![Opções de Fontes e Cores no Visual Studio](media/code-editing-customize-colors.png)
 
 > [!Tip]
 > Para desabilitar a coloração de código, acesse **Ferramentas** > **Opções** > **Editor de Texto** > **Python** > **Avançado** e desmarque **Opções Diversas** > **Colorir nomes com base no tipo**. Consulte [Opções – Opções diversas](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
@@ -181,7 +182,7 @@ Selecionar esse código e escolher o comando **Envolver com** exibe uma lista de
 
 Veja os snippets de código disponíveis no **Gerenciador de Snippets de Código**, abertos usando o comando de menu **Ferramentas** > **Gerenciador de Snippets de Código** e selecionando **Python** como a linguagem:
 
-![Gerenciador de Snippets de Código](media/code-editing-code-snippets-manager.png)
+![Gerenciador de snippets de código no Visual Studio](media/code-editing-code-snippets-manager.png)
 
 Para criar seus próprios snippets de código, confira [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md).
 
@@ -195,7 +196,7 @@ O suporte do Python no Visual Studio fornece vários meios para navegar rapidame
 
 A barra de navegação é exibida na parte superior de cada janela do editor e inclui uma lista de dois níveis de definições. A lista suspensa à esquerda contém definições de nível superior de classe e função no arquivo atual; a lista suspensa à direita exibe uma lista de definições dentro do escopo mostrado à esquerda. Conforme você usa o editor, as listas são atualizadas para mostrar o contexto atual e você também pode selecionar uma entrada dessas listas para ir diretamente para ela.
 
-![Barra de navegação](media/code-editing-navigation-bar.png)
+![Navigation Bar] in the Visual Studio editor(media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > Para ocultar a barra de navegação, acesse **Ferramentas** > **Opções** > **Editor de Texto** > **Python** > **Gerais** e desmarque **Configurações** > **Barra de navegação**.
@@ -204,7 +205,7 @@ A barra de navegação é exibida na parte superior de cada janela do editor e i
 
 O comando **Ir Para Definição** vai rapidamente do uso de um identificador (como um nome de função, classe ou variável) para o código-fonte em que ele está definido. Invoque-o clicando com o botão direito do mouse em um identificador e selecionando **Ir para definição** ou colocando o cursor no identificador e pressionando **F12**. Ele funciona em todo o código e nas bibliotecas externas, desde que o código-fonte esteja disponível. Se o código-fonte da biblioteca não estiver disponível, o comando **Ir para definição** irá para a instrução `import` relevante de uma referência de módulo ou exibirá um erro.
 
-![Ir para definição](media/code-editing-go-to-definition.png)
+![Comando Ir para definição no Visual Studio](media/code-editing-go-to-definition.png)
 
 ### <a name="navigate-to"></a>Navegar para
 
@@ -212,7 +213,7 @@ O comando **Editar** > **Navegar Para** (**Ctrl**+**,**) exibe uma caixa de pesq
 
 Clicar duas vezes em um nome ou selecioná-lo com teclas de direção e **Enter** levará você para a definição desse identificador.
 
-![Navegar para](media/code-editing-navigate-to.png)
+![Comando Navegar para no Visual Studio](media/code-editing-navigate-to.png)
 
 ### <a name="find-all-references"></a>Localizar Todas as Referências
 

@@ -1,7 +1,7 @@
 ---
 title: Gravando um modelo de texto T4 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,31 +16,29 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3cfa97bb4b46ddf84916d92ce8437eb80556b80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463543"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897791"
 ---
 # <a name="writing-a-t4-text-template"></a>Gravando um modelo de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [gravando um modelo de texto T4](https://docs.microsoft.com/visualstudio/modeling/writing-a-t4-text-template).  
-  
 Um modelo de texto contém o texto que será gerado a partir dele. Por exemplo, um modelo que cria uma página da web conterá "\<html >..." e todas as outras partes padrão de uma página HTML. Inserido no modelo são *blocos de controle*, que são fragmentos de código do programa. Os blocos de controle fornecem valores variáveis​e permitem que partes do texto sejam condicionadas e repetidas.  
   
  Essa estrutura facilita o desenvolvimento de um modelo, porque você pode começar com um protótipo do arquivo gerado e inserir, gradativamente, blocos de controle que variam o resultado.  
   
  Os modelos de texto são compostos das seguintes partes:  
   
--   **Diretivas** -elementos que controlam como o modelo é processado.  
+- **Diretivas** -elementos que controlam como o modelo é processado.  
   
--   **Blocos de texto** – conteúdo que é copiado diretamente para a saída.  
+- **Blocos de texto** – conteúdo que é copiado diretamente para a saída.  
   
--   **Blocos de controle** -código de programa que insere valores de variáveis no texto e controla partes condicionais ou repetidas do texto.  
+- **Blocos de controle** -código de programa que insere valores de variáveis no texto e controla partes condicionais ou repetidas do texto.  
   
- Para testar os exemplos neste tópico, copiá-los em um arquivo de modelo conforme descrito em [geração de código de tempo de Design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Depois de editar o arquivo de modelo, salvá-lo e, em seguida, inspecione a saída **. txt** arquivo.  
+  Para testar os exemplos neste tópico, copiá-los em um arquivo de modelo conforme descrito em [geração de código de tempo de Design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Depois de editar o arquivo de modelo, salvá-lo e, em seguida, inspecione a saída **. txt** arquivo.  
   
 ## <a name="directives"></a>Diretivas  
  As diretivas de modelo de texto fornecem instruções gerais ao mecanismo de modelagem de texto sobre como gerar o código de transformação e o arquivo de saída.  

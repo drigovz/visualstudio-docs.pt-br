@@ -1,5 +1,5 @@
 ---
-title: Compatibilidade de banco de dados do Visual Studio
+title: Compatibilidade de banco de dados
 ms.date: 09/06/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6cb532ee53e61842eb9f36ae0ecd437ef8fe0e0f
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: ddb950fd916df6ff514e13435765b118e1e579dd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089189"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049554"
 ---
-# <a name="compatible-database-systems-for-visual-studio"></a>Sistemas de banco de dados compatível para o Visual Studio
+# <a name="compatible-database-systems-for-visual-studio"></a>Sistemas de banco de dados compatíveis para Visual Studio
 
 Para desenvolver um aplicativo conectado por dados no Visual Studio, você normalmente instala o sistema de banco de dados em seu computador de desenvolvimento local e, em seguida, implantar o aplicativo e o banco de dados em um ambiente de produção quando estiverem prontas. O Visual Studio instala o SQL Server Express LocalDB em seu computador como parte do **armazenamento de dados e processamento** carga de trabalho. Esta instância de LocalDB é útil para desenvolvimento de aplicativos de dados conectados rápida e facilmente.
 

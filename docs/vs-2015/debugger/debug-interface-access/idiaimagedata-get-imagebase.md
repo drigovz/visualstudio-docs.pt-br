@@ -1,7 +1,7 @@
 ---
 title: 'Idiaimagedata:: Get_imagebase | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaImageData::get_imageBase method
 ms.assetid: 4ba3d9e4-b205-4ee6-a41d-6996972f1f85
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 278ea226c9531cdf16cc7660bb4eba67860430a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e09fb71294631f95b0d1d39ac6137c2e49b5bdea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474983"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801297"
 ---
 # <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaimagedata:: Get_imagebase](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaimagedata-get-imagebase).  
-  
 Recupera o local da memória onde a imagem deve ser baseada.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_imageBase (   
+HRESULT get_imageBase (   
    ULONGLONG* pRetVal  
 );  
 ```  

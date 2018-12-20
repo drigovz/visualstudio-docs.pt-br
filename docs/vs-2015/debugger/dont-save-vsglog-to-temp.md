@@ -1,7 +1,7 @@
 ---
 title: DONT_SAVE_VSGLOG_TO_TEMP | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f27ab0e6-9575-4ca0-9901-37d3e5c3a2f5
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a43bc90e0f40f8a7b9aa9c15c198ed3e82cf0685
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 786fff96c74dd659b3aa10ef205a877956e5ea48
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476152"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809825"
 ---
 # <a name="dontsavevsglogtotemp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DONT_SAVE_VSGLOG_TO_TEMP](https://docs.microsoft.com/visualstudio/debugger/graphics/dont-save-vsglog-to-temp).  
-  
 Define sua presença se o arquivo de log de gráficos é salvo para o diretório de arquivos temporários do usuário.  
   
 ## <a name="syntax"></a>Sintaxe  

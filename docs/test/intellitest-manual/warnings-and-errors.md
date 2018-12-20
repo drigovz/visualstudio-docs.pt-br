@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 75cda2b45137d982038587ee1dcb73661b77f0df
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: efb82a7419ba58c27ccab864d2360538075a1089
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815789"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000608"
 ---
 # <a name="warnings-and-errors"></a>Avisos e erros
 
@@ -81,9 +81,9 @@ Você também pode definir a opção **TestExcludePathBoundsExceeded** para info
 No código de teste, você pode usar [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) para ignorar restrições geradas pela condição de loop:
 
 ```csharp
-for (int i=0; 
+for (int i=0;
     PexSymbolicValue.Ignore(i<100); // IntelliTest will 'forget' about this path condition
-    i++) 
+    i++)
 { }
 ```
 
@@ -111,7 +111,7 @@ void ParameterizedTest(int n) {
     { ... }
 
     // irrelevant for MaxConditions, since conditions do not depend on input
-    for (int i=0; i<100; i++) 
+    for (int i=0; i<100; i++)
     { ... }
 }
 ```
@@ -135,7 +135,7 @@ void ParameterizedTest(int n) {
     int nshadow = PexSymbolicValue.Ignore(n); // IntelliTest looses track of 'n'
 
     // irrevelant for MaxConditions, since nshadow is not related to input
-    for (int i=0; i<nshadow; i++)  
+    for (int i=0; i<nshadow; i++)
     {...}
 }
 ```
@@ -220,16 +220,18 @@ Esse erro geralmente é a consequência de um erro anterior. O IntelliTest usa u
 <a name="help-construct"></a>
 ## <a name="need-help-to-construct-object"></a>Precisa de ajuda para construir o objeto
 
-O IntelliTest [gera as entradas do teste](input-generation.md) e algumas das entradas podem ser objetos com campos. Aqui, o IntelliTest tenta gerar uma instância de uma classe que tem um campo particular e ele pressupõe que um comportamento do programa interessantes ocorrerá quando esse campo particular tiver um valor específico. 
+O IntelliTest [gera as entradas do teste](input-generation.md) e algumas das entradas podem ser objetos com campos.
+Aqui, o IntelliTest tenta gerar uma instância de uma classe que tem um campo particular e ele pressupõe que um comportamento do programa interessantes ocorrerá quando esse campo particular tiver um valor específico.
 
-No entanto, embora isso seja possível com o Reflection, o IntelliTest não produz objetos com valores de campo arbitrários. Em vez disso, nesses casos, ele se baseia no usuário para fornecer dicas sobre como usar os métodos públicos de uma classe para criar um objeto e colocá-lo em um estado em que seu campo particular tenha o valor desejado.
+No entanto, embora isso seja possível com o Reflection, o IntelliTest não produz objetos com valores de campo arbitrários.
+Em vez disso, nesses casos, ele se baseia no usuário para fornecer dicas sobre como usar os métodos públicos de uma classe para criar um objeto e colocá-lo em um estado em que seu campo particular tenha o valor desejado.
 
-Leia [Criando instâncias de classes existentes](input-generation.md#existing-classes) para saber como você pode ajudar o IntelliTest a construir objetos interessantes. 
+Leia [Criando instâncias de classes existentes](input-generation.md#existing-classes) para saber como você pode ajudar o IntelliTest a construir objetos interessantes.
 
 <a name="help-types"></a>
 ## <a name="need-help-to-find-types"></a>Precisa de ajuda para encontrar tipos
 
-O IntelliTest [gera as entradas de teste](input-generation.md) para qualquer tipo de .NET. Aqui, o IntelliTest tenta criar uma instância que deriva de uma classe abstrata ou implementa uma interface abstrata e o IntelliTest não sabe de nenhum tipo que satisfaça as restrições. 
+O IntelliTest [gera as entradas de teste](input-generation.md) para qualquer tipo de .NET. Aqui, o IntelliTest tenta criar uma instância que deriva de uma classe abstrata ou implementa uma interface abstrata e o IntelliTest não sabe de nenhum tipo que satisfaça as restrições.
 
 Você pode ajudar o IntelliTest apontando para um ou mais tipos que correspondam às restrições. Normalmente, um dos seguintes atributos ajudará:
 
@@ -252,7 +254,7 @@ Você pode ajudar o IntelliTest apontando para um ou mais tipos que correspondam
 <a name="usable-type-guessed"></a>
 ## <a name="usable-type-guessed"></a>Tipo utilizável estimado
 
-O IntelliTest [gera as entradas de teste](input-generation.md) para qualquer tipo de .NET. Quando um tipo é abstrato ou uma interface, o IntelliTest deve escolher uma implementação específica desse tipo. Para fazer essa escolha, é necessário saber quais são os tipos existentes. 
+O IntelliTest [gera as entradas de teste](input-generation.md) para qualquer tipo de .NET. Quando um tipo é abstrato ou uma interface, o IntelliTest deve escolher uma implementação específica desse tipo. Para fazer essa escolha, é necessário saber quais são os tipos existentes.
 
 Quando este aviso é exibido, ele indica que o IntelliTest procurava algum dos assemblies referenciados e encontrou um tipo de implementação, mas não tem certeza de se ele deve usar esse tipo ou se já tipos mais adequados disponíveis em outro lugar. IntelliTest simplesmente escolhe um tipo que pareceu promissor.
 
@@ -275,12 +277,14 @@ Ocorreu uma exceção no código do usuário. Inspecione o rastreamento de pilha
 
 O IntelliTest [gera entradas de teste](input-generation.md) monitorando a execução do programa. É essencial que o código relevante seja corretamente instrumentado para que o IntelliTest possa monitorar seu comportamento.
 
-Esse aviso é exibido quando o código instrumentado chama métodos em outro assembly não instrumentado. Se quiser que o IntelliTest explore a interação de ambos, você também deverá instrumentar o outro assembly (ou partes dele).
+Esse aviso é exibido quando o código instrumentado chama métodos em outro assembly não instrumentado.
+Se quiser que o IntelliTest explore a interação de ambos, você também deverá instrumentar o outro assembly (ou partes dele).
 
 <a name="external-method-called"></a>
 ## <a name="external-method-called"></a>Método externo chamado
 
-O IntelliTest [gera entradas de teste](input-generation.md) monitorando a execução dos aplicativos .NET. O IntelliTest não pode gerar entradas de teste significativas para o código que não é escrito em uma linguagem .NET.
+O IntelliTest [gera entradas de teste](input-generation.md) monitorando a execução dos aplicativos .NET.
+O IntelliTest não pode gerar entradas de teste significativas para o código que não é escrito em uma linguagem .NET.
 
 Esse aviso é exibido quando o código instrumentado chama um método nativo não gerenciado que o IntelliTest não pode analisar. Se você quiser que o IntelliTest explore a interação de ambos, você deverá simular o método não gerenciado.
 
@@ -289,7 +293,7 @@ Esse aviso é exibido quando o código instrumentado chama um método nativo nã
 
 O IntelliTest [gera entradas de teste](input-generation.md) monitorando a execução dos aplicativos .NET. No entanto, há alguns métodos que, por motivos técnicos, o IntelliTest não pode monitorar. Por exemplo, o IntelliTest não pode monitorar um construtor estático.
 
-Esse aviso é exibido quando o código instrumentado chama um método que o IntelliTest não pode monitorar. 
+Esse aviso é exibido quando o código instrumentado chama um método que o IntelliTest não pode monitorar.
 
 <a name="testability-issue"></a>
 ## <a name="testability-issue"></a>Problema de capacidade de teste
@@ -309,7 +313,7 @@ Atualmente isso inclui:
 * conversões entre os números de ponto flutuante e inteiros
 * todas as operações do tipo **System.Decimal**
 
-Esse aviso aparece quando o código executado realiza uma operação ou chama um método que o IntelliTest não pode interpretar. 
+Esse aviso aparece quando o código executado realiza uma operação ou chama um método que o IntelliTest não pode interpretar.
 
 <a name="observed-call-mismatch"></a>
 ## <a name="observed-call-mismatch"></a>Incompatibilidade de chamada observada
@@ -321,7 +325,7 @@ Geralmente, o IntelliTest não está ciente do fato de que ele não pode monitor
 
 * O IntelliTest monitorou um pouco de código, o que iniciou uma chamada para um método não instrumentado
 * O método não instrumentado chamou um método instrumentado
-* O IntelliTest monitora o método instrumentado que foi chamado 
+* O IntelliTest monitora o método instrumentado que foi chamado
 
 O IntelliTest não sabe o que o método intermediário não instrumentado fez, portanto, ele pode não ser capaz de gerar entradas de teste relevantes para a chamada instrumentada aninhada.
 
@@ -342,4 +346,4 @@ Em algumas situações, a alteração de um campo estático é aceitável:
 
 ## <a name="got-feedback"></a>Recebeu comentários?
 
-Poste suas ideias e solicitações de recursos no  **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Poste suas ideias e solicitações de recursos na [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

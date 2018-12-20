@@ -1,7 +1,7 @@
 ---
 title: Depurando erros e caixas de diálogo de aviso | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,21 +24,19 @@ helpviewer_keywords:
 - errors [Visual Studio], debugger
 ms.assetid: 73baaf39-3026-48c9-be48-8b9ba0063cde
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef599f3d786618339ac695b182a4efb5682035d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 094d7fa8e47cb718ee63ec5abb075db20ec1b66c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461224"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743280"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Caixas de diálogo Depurando Erros e Avisos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [erros de depuração e caixas de diálogo de aviso](https://docs.microsoft.com/visualstudio/debugger/debugging-errors-and-warning-dialog-boxes).  
-  
 Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao depurar o aplicativo.  
   
 ## <a name="in-this-section"></a>Nesta seção  

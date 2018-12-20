@@ -1,7 +1,7 @@
 ---
 title: O processo de transformação do modelo de texto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c7b39517e5e4c88bbefe6bf378e1dffd3c233872
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472949"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203769"
 ---
 # <a name="the-text-template-transformation-process"></a>O processo de transformação de modelo de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [o processo de transformação de modelo de texto](https://docs.microsoft.com/visualstudio/modeling/the-text-template-transformation-process).  
-  
 O processo de transformação do modelo de texto utiliza um arquivo de modelo de texto como entrada e gera um novo arquivo de texto como saída. Por exemplo, você pode usar modelos de texto para gerar o código Visual Basic ou c#, ou você pode gerar um relatório HTML.  
   
  Três componentes fazem parte desse processo: o mecanismo, o host e os processadores de diretriz. O mecanismo controla o processo. ele interage com o host e o processador de diretriz para produzir o arquivo de saída. O host fornece qualquer interação com o ambiente, como localizar arquivos e assemblies. O processador de diretriz adiciona funcionalidade, como ler dados de um arquivo XML ou um banco de dados.  

@@ -1,7 +1,7 @@
 ---
 title: Função CvWriteMessage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,21 +29,19 @@ helpviewer_keywords:
 - CvWriteMessageExA method
 ms.assetid: e20ae7be-bfa7-437a-b8c1-fa0f1baa7f83
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf261300ff1d9e447ed850dbb592a26f28f0b3ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: d98ead3931e884c0a99b112a71ee3921e85e3eb3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464262"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793289"
 ---
 # <a name="cvwritemessage-function"></a>Função CvWriteMessage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [função CvWriteMessage](https://docs.microsoft.com/visualstudio/profiling/cvwritemessage-function).  
-  
 Grava uma mensagem para o arquivo de rastreamento da Visualização Simultânea.  
   
 ## <a name="syntax"></a>Sintaxe  

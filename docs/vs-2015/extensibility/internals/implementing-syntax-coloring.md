@@ -1,7 +1,7 @@
 ---
 title: Implementando a coloração de sintaxe | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c86a782b3b100811d29b1f81bf2beb6c8cfae1a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30a53b1fc04bd08835ccf0ff0b0edb2e5d117fcb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473455"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775024"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementando a coloração de sintaxe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [implementando coloração de sintaxe](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-syntax-coloring).  
-  
 Quando o serviço de linguagem fornece colorização de sintaxe, o analisador converte uma linha de texto em uma matriz de itens de coloração e retorna os tipos de token correspondente a esse itens de coloração. O analisador deve retornar tipos de token que pertencem a uma lista de itens de coloração. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Exibe cada item que pode ser colorido na janela de código de acordo com os atributos atribuídos pelo objeto colorizador para o tipo de token apropriado.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] não especifica uma interface de analisador, e a implementação do analisador cabe completamente a você. No entanto, uma implementação de analisador padrão é fornecida no projeto do pacote de idiomas do Visual Studio. Para código gerenciado, a estrutura de pacote gerenciado (MPF) fornece suporte completo para colorir texto.  

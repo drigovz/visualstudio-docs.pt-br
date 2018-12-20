@@ -1,7 +1,7 @@
 ---
 title: 'Idiasectioncontrib:: Get_read | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSectionContrib::get_read method
 ms.assetid: 68bfb35c-eabd-412a-bc8f-3094703b98c4
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 611a3ada78448f431864591d8649bace32bf2318
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8fd46598f9d53e4603e4b7d9d23e48b3cf6b347
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460450"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757269"
 ---
 # <a name="idiasectioncontribgetread"></a>IDiaSectionContrib::get_read
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasectioncontrib:: Get_read](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasectioncontrib-get-read).  
-  
 Recupera um sinalizador que indica se a seção pode ser lido.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_read (   
+HRESULT get_read (   
    BOOL* pRetVal  
 );  
 ```  

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f569769613e4fac0b4773a755740274ec0933016
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635226"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831803"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Passo a passo: Criar uma web part para SharePoint usando um designer
 
@@ -98,9 +98,9 @@ Adicione o código que permite que o usuário adicione calendários ao modo de e
 
 1. Realize um dos seguintes conjuntos de etapas:
 
-    - No designer, clique duas vezes o **atualização** botão.
+   - No designer, clique duas vezes o **atualização** botão.
 
-    - No **propriedades** janela para o **atualização** botão, escolher o **eventos** botão. No **clique em** propriedade, digite **Button1_Click**e, em seguida, escolha a tecla Enter.
+   - No **propriedades** janela para o **atualização** botão, escolher o **eventos** botão. No **clique em** propriedade, digite **Button1_Click**e, em seguida, escolha a tecla Enter.
 
      O arquivo de código de controle de usuário é aberto no Editor de código e o `Button1_Click` manipulador de eventos é exibida. Posteriormente, você adicionará código para este manipulador de eventos.
 
@@ -116,11 +116,11 @@ Adicione o código que permite que o usuário adicione calendários ao modo de e
 
 4. Substitua os `Page_Load` método da `VisualWebPart1` classe pelo código a seguir. Esse código executa as seguintes tarefas:
 
-    - Adiciona um modo de exibição de calendário mensal ao controle de usuário.
+   - Adiciona um modo de exibição de calendário mensal ao controle de usuário.
 
-    - Adiciona uma caixa de seleção para cada lista de calendários no site.
+   - Adiciona uma caixa de seleção para cada lista de calendários no site.
 
-    - Especifica um modelo para cada tipo de item que aparece na exibição de calendário.
+   - Especifica um modelo para cada tipo de item que aparece na exibição de calendário.
 
      [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)]
      [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]

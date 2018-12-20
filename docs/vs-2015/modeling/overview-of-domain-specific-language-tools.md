@@ -1,7 +1,7 @@
 ---
 title: Visão geral das ferramentas de linguagem específica do domínio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 694ebbc73b531f4fab1c8b2f9621e14f4145bd70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c01116ee4a4b0edc43a6277db7725e8d962bd607
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460965"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839317"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Visão geral das Ferramentas de Linguagem Específica do Domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [visão geral das ferramentas de linguagem específica do domínio](https://docs.microsoft.com/visualstudio/modeling/overview-of-domain-specific-language-tools).  
-  
 Ferramentas de linguagem específica do domínio (ferramentas DSL), que são hospedados no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], permitem que você criar uma linguagem específica de domínio e, em seguida, gerar tudo o que os usuários devem ter para criar modelos que são baseados na linguagem.  
   
  As ferramentas a seguir estão incluídas nas ferramentas de DSL:  
@@ -41,31 +39,31 @@ Ferramentas de linguagem específica do domínio (ferramentas DSL), que são hos
 ## <a name="the-dsl-tools-solution"></a>A solução de ferramentas DSL  
  O Assistente de Designer específica de domínio fornece os seguintes modelos de solução:  
   
--   Fluxo de tarefas  
+- Fluxo de tarefas  
   
--   Diagramas de classe  
+- Diagramas de classe  
   
--   Linguagem mínima  
+- Linguagem mínima  
   
--   Modelos do componente  
+- Modelos do componente  
   
--   WPF mínima  
+- WPF mínima  
   
--   Windows. Forms mínima  
+- Windows. Forms mínima  
   
--   Biblioteca de DSL  
+- Biblioteca de DSL  
   
- Para obter mais informações, consulte [escolhendo um modelo de solução de linguagem específica do domínio](../modeling/choosing-a-domain-specific-language-solution-template.md).  
+  Para obter mais informações, consulte [escolhendo um modelo de solução de linguagem específica do domínio](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
- O assistente cria um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução que tem os seguintes projetos:  
+  O assistente cria um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução que tem os seguintes projetos:  
   
--   DSL  
+- DSL  
   
-     O projeto de Dsl define a linguagem específica de domínio e suas ferramentas de edição e de processamento.  
+   O projeto de Dsl define a linguagem específica de domínio e suas ferramentas de edição e de processamento.  
   
--   **DslPackage**  
+- **DslPackage**  
   
-     Projeto DslPackage determina como as ferramentas de linguagem integram [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+   Projeto DslPackage determina como as ferramentas de linguagem integram [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="the-dsl-tools-graphical-interface"></a>A Interface gráfica de ferramentas DSL  
  Você pode usar a interface gráfica de ferramentas DSL para adicionar elementos e relações para sua linguagem específica do domínio. Depois que você adicionou os elementos, você pode definir sua aparência, mapeando-os para as formas, personalizar cores e adicionar os decoradores. Você também pode adicionar elementos à caixa de ferramentas.  

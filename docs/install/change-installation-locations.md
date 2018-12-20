@@ -1,56 +1,66 @@
 ---
-title: Alterar locais de instalação no Visual Studio 2017
-description: Saiba como reduzir o volume de instalação na unidade do sistema mudando o local do cache de download, dos componentes compartilhados, dos SDKs e das ferramentas para unidades diferentes.
-ms.date: 05/07/2018
+title: Selecionar os locais de instalação
+description: Saiba como reduzir o volume de instalação do Visual Studio na unidade do sistema alterando a localização do cache de download, dos componentes compartilhados, dos SDKs e das ferramentas para unidades diferentes.
+ms.date: 11/07/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - change installation locations for Visual Studio
+- select an installation location for Visual Studio files
 - move installation files to different drives
+- use the D drive
 author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8b3ce1b0b0bc646f6a4d28031be51920da776cd
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 2acefee22976e061b3feff83b00891037a0f2bbd
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995901"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159835"
 ---
-# <a name="change-the-installation-locations-in-visual-studio-2017"></a>Alterar os locais de instalação no Visual Studio 2017
+# <a name="select-the-installation-locations-in-visual-studio-2017"></a>Selecionar os locais de instalação no Visual Studio 2017
 
-**Novidade no 15.7**: é possível reduzir o volume de instalação na unidade do sistema movendo o cache de download, os componentes compartilhados, os SDKs e as ferramentas para unidades diferentes.
+**Novidades do 15.7**: Reduza o volume de instalação do Visual Studio na unidade do sistema alterando a localização de alguns dos arquivos. Especificamente, você pode usar uma localização diferente para o cache de download, para os componentes compartilhados, os SDKs e os arquivos de ferramentas.
 
-Veja como.
+   > [!NOTE]
+   > Há algumas ferramentas e SDKs que têm regras diferentes sobre o local em que podem ser instalados. Essas ferramentas e SDKs são instalados em sua unidade do sistema, mesmo que você escolha outra localização.
 
-1. Ao instalar o Visual Studio, escolha a guia **Opções de instalação**.
+Pronto para começar? Veja como.
 
-  ![Visual Studio 2017 – Alterar o local de instalação](media/installation-options-by-location.png "Alterar o local de instalação")
+1. Ao instalar o Visual Studio, escolha a guia **Locais de instalação**.
 
-  > [!IMPORTANT]
-  > Se você interromper a instalação e retomá-la mais tarde, o Visual Studio continuará de onde parou. Ou seja, o progresso da instalação se aplicará ao que ainda precisa ser baixado e instalado e não iniciará da contagem anterior.
+   ![Visual Studio 2017 – Selecionar a localização de instalação](media/vs-installation-locations.png "Selecionar a localização de instalação.")
 
-2. Na seção **IDE do Visual Studio**, aceite o padrão. Isso instala o produto principal e inclui arquivos específicos desta versão do Visual Studio.
+1. Na seção **IDE do Visual Studio**, aceite o padrão. O Visual Studio instala o produto principal e inclui arquivos específicos desta versão do Visual Studio.
 
- > [!IMPORTANT]
- > Se a unidade do sistema é uma SSD (unidade de estado sólido), este é o motivo para recomendarmos que você aceite o local padrão na unidade do sistema: ao desenvolver com o Visual Studio, você lê e grava em muitos arquivos, o que aumenta a atividade de E/S de disco.  É melhor escolher sua unidade mais rápida para lidar com a carga.
+   ![Seção de IDE do Visual Studio da guia Localizações de Instalação](media/vs-installation-locations-ide.png "Aceitar o padrão para a seção de IDE do Visual Studio da guia Localização de Instalações.")
 
-2. Na seção **Cache de download**, decida se você deseja manter o cache de download e, em seguida, marque ou desmarque **Manter cache de download** de acordo com sua opção. <br><br>Se você optar por não manter o cache de download, o local será usado somente temporariamente. Além disso, essa ação não afetará ou excluirá arquivos de instalações anteriores. (Para limpar todos os pacotes de instalação, você precisará modificar as instalações anteriores separadamente.)
+   > [!TIP]
+   > Se a unidade do sistema é uma SSD (unidade de estado sólido), recomendamos que você aceite a localização padrão na unidade do sistema. Por quê? Ao desenvolver com o Visual Studio, você lê e grava em vários arquivos, aumentando a atividade de E/S do disco. É melhor escolher sua unidade mais rápida para lidar com a carga.
 
-3. Na seção **Cache de download**, especifique a unidade na qual deseja armazenar os manifestos e os arquivos de instalação. <br><br>Por exemplo, se você selecionar a carga de trabalho "Desenvolvimento para desktop com C++", o tamanho temporário necessário será de 1,58 GB na unidade do sistema, que será liberado assim que a instalação for concluída.
+1. Na seção **Cache de download**, decida se deseja manter o cache de download e, em seguida, decida em que local você deseja armazenar os arquivos.
 
- > [!NOTE]
- > Primeiro, os arquivos são baixados em uma pasta temporária na unidade do sistema e, posteriormente, são excluídos após o Visual Studio verificar e, em seguida, movê-los para a pasta de cache de download. Se você optar por manter o cache de download em uma unidade diferente, o Visual Studio ainda precisará de espaço em disco equivalente ao tamanho do cache de download na unidade do sistema.
- > [!IMPORTANT]
- > O local é definido com sua primeira instalação e não pode ser alterado posteriormente usando a interface do usuário do instalador. Em vez disso, você precisará [usar parâmetros de linha de comando](use-command-line-parameters-to-install-visual-studio.md) para mover o cache de download
+     ![Seção Cache de Download da guia Locais de Instalação](media/vs-installation-locations-cache.png "Escolher se deseja manter o cache de download após a instalação e, em seguida, especificar a unidade em que você deseja armazenar os arquivos.")
 
-4. Na seção **Componentes compartilhados, SDKs e ferramentas**, especifique a unidade na qual você deseja armazenar os arquivos compartilhados pelas instalações do Visual Studio lado a lado. SDKs e ferramentas que permitem que o instalador do Visual Studio altere seu local de instalação também são armazenados nesse diretório.
+    1. Marque ou desmarque **Manter o cache de download após a instalação**.
 
- > [!NOTE]
- > Há algumas ferramentas e SDKs que têm regras diferentes sobre onde podem ser instalados. (Essas ferramentas e SDKs ainda serão instalados em sua unidade do sistema, mesmo que você escolha outro local.)
+       Se você optar por não manter o cache de download, o local será usado somente temporariamente. Essa ação não afetará ou excluirá arquivos de instalações anteriores.
+
+    1. Especifique a unidade na qual deseja armazenar os manifestos e os arquivos de instalação do cache de download.
+
+        Por exemplo, se você selecionar a carga de trabalho "Desenvolvimento para desktop com C++", o tamanho temporário necessário será de 1,58 GB na unidade do sistema, que será liberado assim que a instalação for concluída.
+
+       > [!IMPORTANT]
+       > Essa localização é definida com sua primeira instalação e não pode ser alterada posteriormente usando a interface do usuário do instalador. Em vez disso, você precisará [usar parâmetros de linha de comando](use-command-line-parameters-to-install-visual-studio.md) para mover o cache de download.
+
+1. Na seção **Componentes, SDKs e ferramentas compartilhados**, especifique a unidade na qual você deseja armazenar os arquivos compartilhados pelas instalações lado a lado do Visual Studio. Os SDKs e as ferramentas também são armazenados nesse diretório.
+
+   ![Seção de Componentes, Ferramentas e SDKs Compartilhados da guia Locais de Instalação](media/vs-installation-locations-shared.png "Especificar a localização em que você deseja armazenar SDKs, ferramentas e componentes compartilhados.")
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

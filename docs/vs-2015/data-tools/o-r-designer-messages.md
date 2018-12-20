@@ -1,7 +1,7 @@
 ---
 title: Mensagens de Object Relational Designer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 53e7179c4edbd1ead3684307eca84ef19f1e48b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c055321c3936f92c21d5bff6ac63ecbeb7c982e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465794"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217640"
 ---
 # <a name="or-designer-messages"></a>Mensagens de object relational Designer de Objetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Relational Designer mensagens](https://docs.microsoft.com/visualstudio/data-tools/o-r-designer-messages).  
-  
   
 Este tópico lista as mensagens que você pode encontrar quando você trabalha com object relational Designer de Objetos.  
   

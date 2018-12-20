@@ -1,7 +1,7 @@
 ---
 title: IEEVisualizerDataProvider::GetNewObjectForVisualizer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: a898d549-4898-4fde-aad1-e8bb89129652
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f344033e719a06cba084bedcda2a495bd48a70a6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e37bd49da72ad406f07f634e09d187e048684b9a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463031"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761776"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEEVisualizerDataProvider::GetNewObjectForVisualizer](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer).  
-  
 Esse método obtém um novo objeto para o visualizador. Esse método sempre criará um novo objeto do objeto existente.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT GetNewObjectForVisualizer(  
-   IDebugObject** ppObject  
+HRESULT GetNewObjectForVisualizer(  
+   IDebugObject** ppObject  
 );  
 ```  
   
 ```csharp  
-int GetNewObjectForVisualizer(  
-   out IDebugObject ppObject  
+int GetNewObjectForVisualizer(  
+   out IDebugObject ppObject  
 );  
 ```  
   

@@ -1,7 +1,7 @@
 ---
 title: Elemento KeyBinding | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dd7f56a91661850a3154ad09376340696513646
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 32dafc1b16282657db40531e34d1eccb02841481
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476288"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780926"
 ---
 # <a name="keybinding-element"></a>Elemento KeyBinding
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento KeyBinding](https://docs.microsoft.com/visualstudio/extensibility/keybinding-element).  
-  
 O elemento de associação de teclas Especifica atalhos de teclado para os comandos.  
   
  Comandos podem ter associações de teclas única e duplos associadas a eles. Um exemplo de uma associação de chave única é CTRL + S para o **salvar** comando. Associações de teclas duplas exigem duas combinações de teclas sucessivas para acionar um comando. Um exemplo de uma associação de chave dupla é CTRL + K, CTRL + K para definir um indicador.  
@@ -45,10 +43,10 @@ O elemento de associação de teclas Especifica atalhos de teclado para os coman
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|GUID|Necessário.|  
-|id|Necessário.|  
-|editor|Necessário. O GUID do editor indica o contexto de edição para o qual este atalho de teclado estará ativo. O valor de escopo de associação global é "guidVSStd97".|  
-|CHAVE1|Necessário. Os valores válidos incluem todos os caracteres alfanuméricos typable e também valores hexadecimais de dois dígitos precedidos por 0x e VK_constants.|  
+|GUID|Obrigatório.|  
+|id|Obrigatório.|  
+|editor|Obrigatório. O GUID do editor indica o contexto de edição para o qual este atalho de teclado estará ativo. O valor de escopo de associação global é "guidVSStd97".|  
+|CHAVE1|Obrigatório. Os valores válidos incluem todos os caracteres alfanuméricos typable e também valores hexadecimais de dois dígitos precedidos por 0x e VK_constants.|  
 |Mod1|Opcional. Qualquer combinação de CTRL, ALT e SHIFT separados por espaço.|  
 |Key2|Opcional. Os valores válidos incluem todos os caracteres alfanuméricos typable e também valores hexadecimais de dois dígitos precedidos por 0x e VK_constants.|  
 |Mod2|Opcional. Qualquer combinação de CTRL, ALT e SHIFT separados por espaço.|  

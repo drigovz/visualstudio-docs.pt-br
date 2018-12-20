@@ -18,19 +18,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8f6928dd09b971e2c5924d34058a1a0d5e28394
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 041b3c5d0a67d590bc409c21dd53d5d162b0a0b9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947385"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389241"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opções, Editor de Texto, C#, IntelliSense
 
 Use a página de opções **IntelliSense** para modificar as configurações que afetam o comportamento do IntelliSense para C#. Para acessar essa página de opções, escolha **Ferramentas** > **Opções** e, em seguida, **Editor de Texto** > **C#** > **IntelliSense**.
-
-> [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 As opções do **IntelliSense** contém as seguintes seções:
 
@@ -44,25 +41,23 @@ As opções do **IntelliSense** contém as seguintes seções:
 
 - Realçar partes correspondentes de itens da lista de conclusão
 
-- Mostrar filtros da lista de conclusão
+- Mostrar itens de filtro de conclusão
 
-- Mostrar sugestões de nome
+## <a name="snippets-behavior"></a>Comportamento de snippets
 
-### <a name="snippets-behavior"></a>Comportamento de trechos de código
+- Nunca incluir snippets
 
-- Nunca incluir trechos de código
+   Quando essa opção estiver selecionada, o IntelliSense nunca adicionará aliases de snippets de código C# à lista de conclusão.
 
-   Quando essa opção estiver selecionada, o IntelliSense nunca adicionará aliases de trechos de código C# à lista de conclusão.
+- Sempre incluir snippets
 
-- Sempre incluir trechos de código
+   Quando essa opção estiver selecionada, o IntelliSense adicionará aliases de snippets de código C# à lista de preenchimento. Caso o alias do snippet de código seja igual a uma palavra-chave, por exemplo, [classe](/dotnet/csharp/language-reference/keywords/class), a palavra-chave será substituída pelo atalho. Para saber mais, consulte [Snippets de código C#](../../ide/visual-csharp-code-snippets.md).
 
-   Quando essa opção estiver selecionada, o IntelliSense adicionará aliases de trechos de código C# à lista de preenchimento. Caso o alias do trecho de código seja igual a uma palavra-chave, por exemplo, [classe](/dotnet/csharp/language-reference/keywords/class), a palavra-chave será substituída pelo atalho. Para saber mais, consulte [Trechos de código C#](../../ide/visual-csharp-code-snippets.md).
+- Incluir snippets quando ?-Tab for digitado após um identificador
 
-- Incluir trechos quando ?-Tab for digitado após um identificador
+   Quando essa opção estiver selecionada, o IntelliSense adicionará aliases de snippets de código C# à lista de conclusão quando **?**+**Tab** for pressionado após um identificador
 
-   Quando essa opção estiver selecionada, o IntelliSense adicionará aliases de trechos de código C# à lista de conclusão quando **?**+**Tab** for pressionado após um identificador
-
-### <a name="enter-key-behavior"></a>Comportamento da tecla Enter
+## <a name="enter-key-behavior"></a>Comportamento da tecla Enter
 
 - Nunca adicionar uma nova linha ao pressionar Enter
 
@@ -85,6 +80,10 @@ As opções do **IntelliSense** contém as seguintes seções:
 - Sempre adicionar uma nova linha ao pressionar Enter
 
    Especifica que, se você digitar *qualquer* um dos caracteres de uma entrada na lista de conclusão e depois pressionar **Enter**, uma nova linha será adicionada automaticamente e o cursor passará para a nova linha.
+
+## <a name="show-name-suggestions"></a>Mostrar sugestões de nome
+
+Executa a conclusão automática do nome de objeto dos membros que você selecionou recentemente.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7210a5c156b779b9064f72db9cab5445d0ce20c3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2072006941c0572fc8072f2dd99afe7d324326bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858348"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842840"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Modelos de compartilhamento e diagramas de exportação
 No Visual Studio, você pode compartilhar modelos e diagramas com colegas de várias maneiras.
@@ -46,7 +46,7 @@ No Visual Studio, você pode compartilhar modelos e diagramas com colegas de vá
 ## <a name="related-topics"></a>Tópicos relacionados
 
 |Título|Descrição|
-|-----------|-----------------|
+|-|-|
 |[Estruturar a solução de modelagem](../modeling/structure-your-modeling-solution.md)|Compartilhando modelos em um projeto grande ou médio.|
 |[Exportar diagramas como imagens](../modeling/export-diagrams-as-images.md)|Você pode copiar partes de diagramas para aplicativos como o PowerPoint ou Word ou imprimir um diagrama em um arquivo XPS.|
 |[Análise e modelagem de arquitetura](../modeling/analyze-and-model-your-architecture.md)|Visão geral dos modelos e diagramas.|

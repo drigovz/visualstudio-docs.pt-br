@@ -1,7 +1,7 @@
 ---
 title: CrossSession | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c4306f89b41639ba70e581ed6b3b4ce70089c01
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d0282ec76bb3907cca4e2b08be9f036c3d38400b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587883"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803559"
 ---
 # <a name="crosssession"></a>CrossSession
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [CrossSession](https://docs.microsoft.com/visualstudio/profiling/crosssession).  
-  
 A opção **CrossSession** do VSPerfCmd.exe permite que o criador de perfil colete dados de qualquer sessão de console. A opção **CrossSession** deve ser usada com a opção **Iniciar**.  
   
  Você pode usar a abreviação **CS** no lugar de **CrossSession**.  

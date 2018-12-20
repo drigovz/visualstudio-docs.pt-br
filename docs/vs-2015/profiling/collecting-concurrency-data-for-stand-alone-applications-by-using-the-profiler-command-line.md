@@ -1,7 +1,7 @@
 ---
 title: Coletando dados de simultaneidade para aplicativos autônomos usando a linha de comando do criador de perfil | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - profiling tools,concurrency method
 ms.assetid: 0a2c6d8a-50b3-48aa-b617-9137b049d21e
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ab84cb87be459723770992a543c2bb3abb941d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc20cce20c07e4fe33cf343cd0cc900a46be5586
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473946"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789727"
 ---
 # <a name="collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Coletando dados de simultaneidade para aplicativos autônomos usando a linha de comando do criador de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [coletando dados de simultaneidade para aplicativos autônomos usando a linha de comando do Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line).  
-  
 O método de simultaneidade das Ferramentas de Criação de Perfil [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite coletar dados de contenção de recursos e dados de atividade do thread que mostram a utilização da CPU, contenção e migração do thread, atrasos na sincronização, áreas de ES sobrepostas e outros eventos do sistema.  
   
 ## <a name="common-tasks"></a>Tarefas comuns  

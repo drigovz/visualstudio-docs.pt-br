@@ -21,20 +21,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a29c9cd7c1c80ca27ea3e72b4aab3e881bb8d480
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 035d66590c6b6087c56887a4eaa2b0538406f87b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626026"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257245"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressões no depurador do Visual Studio
 O depurador do Visual Studio inclui avaliadores de expressão que funcionam quando você insere uma expressão na **QuickWatch** caixa de diálogo **inspeção** janela, ou **imediato** janela. Os avaliadores de expressão também estão em funcionamento na **pontos de interrupção** janela e muitos outros locais no depurador.
   
- As seções a seguir fornecem detalhes sobre as expressões em idiomas diferentes.  
+ As seções a seguir descreve as limitações da avaliação de expressão para idiomas com suporte pelo Visual Studio.
   
-## <a name="f-expressions-are-not-supported"></a>Não há suporte para expressões de F #  
- Expressões de F # não são reconhecidas. Se você estiver depurando código F #, você precisa converter as expressões na sintaxe c# antes de inserir expressões em uma caixa de diálogo ou janela do depurador. Quando você converter expressões de F # para c#, não se esqueça de que c# usa a `==` operador para testar a igualdade, enquanto o F # usa o único `=`.  
+## <a name="f-expressions-are-not-supported"></a>F#Não há suporte para expressões  
+ F#expressões não são reconhecidas. Se você estiver depurando F# código, você precisa converter as expressões na C# sintaxe antes de inserir expressões em uma caixa de diálogo ou janela do depurador. Quando você converter expressões de F# para C#, lembre-se de que C# usa o `==` operador para testar a igualdade, enquanto F# usa o único `=`.  
   
 ## <a name="c-expressions"></a>Expressões C++  
  Para obter informações sobre como usar operadores de contexto com expressões em C++, consulte [operador de contexto (C++)](../debugger/context-operator-cpp.md).  
@@ -91,13 +91,13 @@ int main()
   
  Funções intrínsecas do depurador:  
   
--   São certamente seguras: executar uma função intrínseca do depurador não corromperá o processo que está sendo depurado.  
+- São certamente seguras: executar uma função intrínseca do depurador não corromperá o processo que está sendo depurado.  
   
--   São permitidas em todas as expressões, mesmo em cenários onde os efeitos colaterais e a avaliação de função não são permitidos.  
+- São permitidas em todas as expressões, mesmo em cenários onde os efeitos colaterais e a avaliação de função não são permitidos.  
   
--   Trabalham em cenários onde as chamadas de funções normais não são possíveis, por exemplo, depurar um minidespejo.  
+- Trabalham em cenários onde as chamadas de funções normais não são possíveis, por exemplo, depurar um minidespejo.  
   
- As funções intrínsecas do depurador também podem tornar mais convenientes as expressões de avaliação. Por exemplo, `strncmp(str, "asd")` é muito mais fácil escrever em uma condição de ponto de interrupção que `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
+  As funções intrínsecas do depurador também podem tornar mais convenientes as expressões de avaliação. Por exemplo, `strncmp(str, "asd")` é muito mais fácil escrever em uma condição de ponto de interrupção que `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
   
 |Área|Funções intrínsecas|  
 |----------|-------------------------|  

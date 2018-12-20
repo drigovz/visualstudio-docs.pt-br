@@ -1,7 +1,7 @@
 ---
 title: Usando membros do Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,15 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ef2c5f81f868f2b5d7eac68030b842bd1c45067c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 691b1e46f7657eb027fa48b31f31119cae0c7451
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465892"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216639"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Usando membros do Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [usando os membros do UnitTesting em testes de unidade](https://docs.microsoft.com/visualstudio/test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests).
-
 A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Use as classes e os membros do namespace <xref:Microsoft.VisualStudio.TestTools.UnitTesting> quando você estiver codificando testes de unidade. É possível usá-los ao gravar o teste de unidade do zero ou refinar um teste de unidade gerado do código em teste.
 
 ## <a name="groups-of-elements"></a>Grupos de Elementos

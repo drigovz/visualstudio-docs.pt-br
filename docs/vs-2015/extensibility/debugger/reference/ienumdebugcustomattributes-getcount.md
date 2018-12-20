@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugCustomAttributes::GetCount | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: fafe826f-4ebf-4572-b2a3-d5dd2916c12f
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1f8542b36cbc81f94234f313d58f6bfa2083c07
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e913d3092dbeee4bc7a5bfbfc2d722b3d202b4fb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475365"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772866"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugCustomAttributes::GetCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugcustomattributes-getcount).  
-  
 Obtém o número de atributos personalizados em um enumerador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetCount(   
+HRESULT GetCount(   
    ULONG* pcelt  
 );  
 ```  

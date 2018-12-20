@@ -1,5 +1,6 @@
 ---
 title: Tour do IDE do Visual Studio
+titleSuffix: ''
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbf969e6e9a37179621cad52243418a2d0536f1a
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7864a85e676e76dda593580d58036c4429fa43c7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42627026"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159562"
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Início rápido: Introdução ao IDE do Visual Studio
+# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Início Rápido: Introdução ao IDE do Visual Studio
 
 Nesta introdução de 5 a 10 minutos ao IDE (Ambiente de Desenvolvimento Integrado) do Visual Studio, faremos um tour em algumas janelas, menus e em outros recursos de interface do usuário.
 
@@ -105,13 +106,13 @@ Caso encontre problemas enquanto estiver usando o Visual Studio ou tenha sugest�
 Examinamos apenas alguns dos recursos do Visual Studio para nos familiarizarmos com a interface do usuário. Para explorar mais:
 
 > [!div class="nextstepaction"]
-> [Saiba mais sobre o editor de códigos](../ide/quickstart-editor.md)
+> [Saiba mais sobre o editor de códigos](../get-started/tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [Saiba mais sobre projetos e soluções](../ide/quickstart-projects-solutions.md)
+> [Saiba mais sobre projetos e soluções](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Consulte também
 
-- [Visão geral do IDE do Visual Studio](../ide/visual-studio-ide.md)
+- [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
 - [Mais recursos do Visual Studio 2017](../ide/advanced-feature-overview.md)
 - [Alterar as cores do tema e da fonte](../ide/quickstart-personalize-the-ide.md)

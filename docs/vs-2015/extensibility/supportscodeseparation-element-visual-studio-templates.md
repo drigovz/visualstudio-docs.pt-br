@@ -1,7 +1,7 @@
 ---
 title: Elemento SupportsCodeSeparation (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 492b77cf0eaa7f656de0df5ee2724945be980364
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7f4f03d461422b4f1423e6ef63cd7b3653234257
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467735"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775206"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>Elemento SupportsCodeSeparation (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento SupportsCodeSeparation (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/supportscodeseparation-element-visual-studio-templates).  
-  
 Especifica se ou não a **colocar código em arquivo separado** caixa de seleção está habilitada no **Adicionar Novo Item** caixa de diálogo.  
   
  \<VSTemplate >  

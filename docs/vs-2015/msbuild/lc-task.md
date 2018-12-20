@@ -1,7 +1,7 @@
 ---
 title: Tarefa LC | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d151f99aec8f752a64e2dae965321e4ef54eb734
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f265e06deab522c0b994f0892fb6a96c7ac4a7f
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473864"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645049"
 ---
 # <a name="lc-task"></a>Tarefa LC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tarefa LC](https://docs.microsoft.com/visualstudio/msbuild/lc-task).  
-  
   
 Encapsula LC.exe, que gera um arquivo .license de um arquivo .licx. Para obter mais informações sobre LC.exe, consulte [Lc.exe (Compilador de Licença)](http://msdn.microsoft.com/library/2de803b8-495e-4982-b209-19a72aba0460).  
   

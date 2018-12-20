@@ -1,7 +1,7 @@
 ---
 title: Adicionando o projeto e modelos de Item de projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8c59217f-56e5-4540-a73b-cd10de189373
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ca77f2cfeb6dbab7a8d9be33bf7ba822f25d2a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88411bd5fe985c398bd9e4e09ed3bcfb6a7610f0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460326"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780211"
 ---
 # <a name="adding-project-and-project-item-templates"></a>Adicionando o projeto e os modelos de item do projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionando projeto e modelos de Item de projeto](https://docs.microsoft.com/visualstudio/extensibility/internals/adding-project-and-project-item-templates).  
-  
 Quando você cria seus próprios tipos de projeto, você deve fornecer suporte para adição de novos projetos e itens de projeto usando o padrão [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrado caixas de diálogo (IDE) do ambiente de desenvolvimento. Os tópicos a seguir discutem as técnicas diferentes para adicionar projetos e itens de projeto.  
   
 ## <a name="in-this-section"></a>Nesta seção  

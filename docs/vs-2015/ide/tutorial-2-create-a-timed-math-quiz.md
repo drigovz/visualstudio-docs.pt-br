@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial 2: criar um teste de matemática temporizado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,34 +14,32 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ec4c1bd1c01229ab0c8f32a78e2b7483a1efc06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b0b7a5949ab8fe624a087a1e024367f896ddb99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465322"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884882"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutorial 2: Criar um teste de matemática com cronômetro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Tutorial 2: criar um teste de matemática cronometrado](https://docs.microsoft.com/visualstudio/ide/tutorial-2-create-a-timed-math-quiz).  
-  
 Neste tutorial, você cria um teste no qual o tomador de teste deve responder a quatro problemas aritméticos aleatórios dentro de um tempo especificado. Você aprenderá como:  
   
--   Gere números aleatórios usando a classe de `Random`.  
+- Gere números aleatórios usando a classe de `Random`.  
   
--   Disparar eventos para que ocorram em um horário específico usando um controle de **Temporizador**.  
+- Disparar eventos para que ocorram em um horário específico usando um controle de **Temporizador**.  
   
--   Fluxo do programa de controle usando instruções de `if else`.  
+- Fluxo do programa de controle usando instruções de `if else`.  
   
--   Execute operações aritméticas básicas no código.  
+- Execute operações aritméticas básicas no código.  
   
- Quando você terminar, seu teste ficará parecido com a imagem a seguir, mas com números diferentes.  
+  Quando você terminar, seu teste ficará parecido com a imagem a seguir, mas com números diferentes.  
   
- ![Teste de matemática com quatro problemas](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
-Teste que você cria neste tutorial  
+  ![Teste de matemática com quatro problemas](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
+  Teste que você cria neste tutorial  
   
- Para baixar uma versão concluída do teste, consulte [Exemplo de tutorial de teste completo de matemática](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
+  Para baixar uma versão concluída do teste, consulte [Exemplo de tutorial de teste completo de matemática](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
   
 > [!NOTE]
 >  O Visual C# e o Visual Basic são abordados neste tutorial, por isso, concentre-se nas informações específicas da linguagem de programação que você está usando.  

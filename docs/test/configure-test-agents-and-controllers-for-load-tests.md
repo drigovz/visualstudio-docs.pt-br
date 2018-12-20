@@ -1,5 +1,5 @@
 ---
-title: Configurar controladores e agentes de teste para testes de carga no Visual Studio
+title: Configurar agentes de teste e controladores de teste para testes de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0da0ca3fb5c36a0c878e641121312b2773b8215
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 1f33859522ff42fc85c31261527f17ea0f765199
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321106"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068011"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurar controladores e agentes de teste para executar testes de carga
 
@@ -22,6 +22,8 @@ O Visual Studio pode gerar uma carga simulada para seu aplicativo usando máquin
 
 > [!NOTE]
 > Também é possível usar o teste de carga baseado em nuvem para fornecer máquinas virtuais que gerenciem a carga de muitos usuários que acessam o site ao mesmo tempo. Saiba mais sobre teste de carga baseado em nuvem em [Executar testes de carga usando o Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="load-simulation-architecture"></a>Arquitetura de simulação de carga
 
@@ -35,25 +37,25 @@ A arquitetura de simulação da carga consiste em um cliente do Visual Studio, u
 
 Essa arquitetura oferece os seguintes benefícios:
 
--   A capacidade de expandir a geração de carga incluindo agentes de teste adicionais em um controlador de teste.
+- A capacidade de expandir a geração de carga incluindo agentes de teste adicionais em um controlador de teste.
 
--   Flexibilidade para instalar o cliente, o controlador de teste e o software do agente de teste no mesmo computador ou em computadores diferentes. Por exemplo:
+- Flexibilidade para instalar o cliente, o controlador de teste e o software do agente de teste no mesmo computador ou em computadores diferentes. Por exemplo:
 
-     **Configuração local:**
+   **Configuração local:**
 
-    -   Machine1: Visual Studio, controlador, agente.
+  - Machine1: Visual Studio, controlador, agente.
 
-     ![Computador local usando controlador e agente](./media/load-test-configa.png)
+    ![Computador local usando controlador e agente](./media/load-test-configa.png)
 
-     **Configuração remota típica:**
+    **Configuração remota típica:**
 
-    -   Machine1 e 2: Visual Studio (vários testadores podem usar o mesmo controlador).
+  - Machine1 e 2: Visual Studio (vários testadores podem usar o mesmo controlador).
 
-    -   Machine3: controlador (pode ter agentes instalados também).
+  - Machine3: Controlador (pode ter agentes instalados também).
 
-    -   Machine4-n: Agente ou agentes, todos associados ao controlador no Machine3.
+  - Machine4-n: Agentes, todos associados ao controlador em Machine3.
 
-     ![Computadores remotos usando controlador e agentes](./media/load-test-configb.png)
+    ![Computadores remotos usando controlador e agentes](./media/load-test-configb.png)
 
 Mesmo que um controlador de teste normalmente gerencie diversos agentes de teste, um agente só pode ser associado a um único controlador. Cada agente de teste pode ser compartilhado por uma equipe de desenvolvedores. Essa arquitetura facilita aumentar o número de agentes de teste, gerando, assim, cargas maiores.
 

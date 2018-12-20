@@ -1,7 +1,7 @@
 ---
 title: Como configurar testes de unidade para direcionar a uma versão anterior do .NET Framework | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,47 +13,45 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 051c6e9284ecfaa84957aa21b5966fd503a5f0a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 978f4e3edeb83d5980d793d74cf209e8e8f7205e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462720"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892779"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Como configurar testes de unidade para direcionar uma versão anterior do .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: configurar testes de unidade para uma versão anterior destino do .NET Framework](https://docs.microsoft.com/visualstudio/test/how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework).  
-  
 Quando você cria um projeto de teste no Microsoft Visual Studio, a versão mais recente do .NET Framework é definida como destino, por padrão. Além disso, se você atualizar projetos de teste de versões anteriores do Visual Studio, eles são atualizados para destinar-se à versão mais recente do .NET Framework. Ao editar as propriedades do projeto, é possível redirecionar explicitamente o projeto para versões anteriores do .NET Framework.  
   
  Você pode criar projetos de teste de unidade que se destinam a versões específicas do .NET Framework. A versão de destino deve ser 3.5 ou posterior e não pode ser uma versão de cliente. O Visual Studio permite o seguinte suporte básico para testes de unidade que se direcionam a versões específicas:  
   
--   Você pode criar projetos de teste de unidade e destiná-las a uma versão específica do .NET Framework.  
+- Você pode criar projetos de teste de unidade e destiná-las a uma versão específica do .NET Framework.  
   
--   Você pode executar testes de unidade direcionados a uma versão específica do .NET Framework no Visual Studio no computador local.  
+- Você pode executar testes de unidade direcionados a uma versão específica do .NET Framework no Visual Studio no computador local.  
   
--   Você pode executar testes de unidade direcionados a uma versão específica do .NET Framework usando o MSTest.exe no prompt de comando.  
+- Você pode executar testes de unidade direcionados a uma versão específica do .NET Framework usando o MSTest.exe no prompt de comando.  
   
--   Você pode executar testes de unidade em um agente de build como parte de um build.  
+- Você pode executar testes de unidade em um agente de build como parte de um build.  
   
- **Testar aplicativos de SharePoint**  
+  **Testar aplicativos de SharePoint**  
   
- Os recursos listados acima também permitem gravar testes de unidade e testes de integração de aplicativos do SharePoint usando o Visual Studio. [!INCLUDE[crabout](../includes/crabout-md.md)] como desenvolver aplicativos do SharePoint usando o Visual Studio, consulte [Criar soluções do SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [Criação e depuração de soluções do SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) e [Verificando e depurando o código do SharePoint](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
+  Os recursos listados acima também permitem gravar testes de unidade e testes de integração de aplicativos do SharePoint usando o Visual Studio. [!INCLUDE[crabout](../includes/crabout-md.md)] como desenvolver aplicativos do SharePoint usando o Visual Studio, consulte [Criar soluções do SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [Criação e depuração de soluções do SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) e [Verificando e depurando o código do SharePoint](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
   
- **Limitações**  
+  **Limitações**  
   
- As seguintes limitações se aplicam quando você redireciona projetos de teste para usar versões anteriores do .NET Framework:  
+  As seguintes limitações se aplicam quando você redireciona projetos de teste para usar versões anteriores do .NET Framework:  
   
--   No .NET Framework 3.5, há suporte para multiplataforma para projetos de teste que contenham somente testes de unidade. O .NET Framework 3.5 não oferece suporte a nenhum outro tipo de teste, como o teste de carga ou teste da interface do usuário codificada. O redirecionamento está bloqueado para tipos de teste diferentes de testes de unidade.  
+- No .NET Framework 3.5, há suporte para multiplataforma para projetos de teste que contenham somente testes de unidade. O .NET Framework 3.5 não oferece suporte a nenhum outro tipo de teste, como o teste de carga ou teste da interface do usuário codificada. O redirecionamento está bloqueado para tipos de teste diferentes de testes de unidade.  
   
--   A execução de testes que são destinados a uma versão anterior do .NET Framework só tem suporte no adaptador do host padrão. Não há suporte no adaptador do host do ASP.NET. Os aplicativos ASP.NET que precisam ser executados no contexto do ASP.NET Development Server devem ser compatíveis com a versão atual do .NET Framework.  
+- A execução de testes que são destinados a uma versão anterior do .NET Framework só tem suporte no adaptador do host padrão. Não há suporte no adaptador do host do ASP.NET. Os aplicativos ASP.NET que precisam ser executados no contexto do ASP.NET Development Server devem ser compatíveis com a versão atual do .NET Framework.  
   
--   O suporte à coleta de dados é desabilitado quando você executa testes que oferecem suporte a multiplataforma do .NET Framework 3.5. Você pode executar a cobertura de código usando as ferramentas de linha de comando do Visual Studio.  
+- O suporte à coleta de dados é desabilitado quando você executa testes que oferecem suporte a multiplataforma do .NET Framework 3.5. Você pode executar a cobertura de código usando as ferramentas de linha de comando do Visual Studio.  
   
--   Não é possível executar testes de unidade que usam o .NET Framework 3.5 em um computador remoto.  
+- Não é possível executar testes de unidade que usam o .NET Framework 3.5 em um computador remoto.  
   
--   Você não pode direcionar testes de unidade a versões de cliente anteriores do Framework.  
+- Você não pode direcionar testes de unidade a versões de cliente anteriores do Framework.  
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>Redirecionar para uma versão específica do .NET Framework para projetos de teste de unidade do Visual Basic  
   

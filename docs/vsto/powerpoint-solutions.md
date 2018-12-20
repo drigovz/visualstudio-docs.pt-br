@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f836662b9dfe4df8e45e24a7210664b8cecd49e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d7a2775526a088129060fc6375958b08cf6b19eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906553"
 ---
 # <a name="powerpoint-solutions"></a>Soluções PowerPoint
   Visual Studio fornece modelos de projeto, que você pode usar para criar suplementos do VSTO para PowerPoint do Microsoft Office. Você pode usar suplementos do VSTO para automatizar o PowerPoint, estender os recursos do PowerPoint ou personalizar a interface de usuário (IU) do PowerPoint.  
@@ -42,15 +42,15 @@ ms.locfileid: "35669810"
 ## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>Automatizar o PowerPoint usando o modelo de objeto do PowerPoint  
  O modelo de objeto do PowerPoint expõe vários tipos que você pode usar para automatizar o PowerPoint. Esses tipos permitem que você escreva código para realizar tarefas comuns:  
   
--   Programaticamente, crie e formate apresentações.  
+- Programaticamente, crie e formate apresentações.  
   
--   Adicionar ou remover slides de apresentações.  
+- Adicionar ou remover slides de apresentações.  
   
--   Adicione ou altere as formas em um slide.  
+- Adicione ou altere as formas em um slide.  
   
- Para acessar o modelo de objeto do PowerPoint de um suplemento do VSTO, use o `Application` campo do `ThisAddIn` classe em seu projeto. O `Application` campo retorna um <xref:Microsoft.Office.Interop.PowerPoint.Application> objeto que representa a instância atual do PowerPoint. Para obter mais informações, consulte [programa de suplementos do VSTO](../vsto/programming-vsto-add-ins.md).  
+  Para acessar o modelo de objeto do PowerPoint de um suplemento do VSTO, use o `Application` campo do `ThisAddIn` classe em seu projeto. O `Application` campo retorna um <xref:Microsoft.Office.Interop.PowerPoint.Application> objeto que representa a instância atual do PowerPoint. Para obter mais informações, consulte [programa de suplementos do VSTO](../vsto/programming-vsto-add-ins.md).  
   
- Quando você chama o modelo de objeto do PowerPoint, você pode usar os tipos fornecidos no assembly de interoperabilidade primário para o PowerPoint. O assembly de interoperabilidade primário atua como uma ponte entre o código gerenciado em que o suplemento do VSTO e o modelo de objeto COM no PowerPoint. Todos os tipos no assembly de interoperabilidade primário do PowerPoint são definidos na <xref:Microsoft.Office.Interop.PowerPoint> namespace. Para obter mais informações sobre assemblies de interoperabilidade primários, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) e [assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md).  
+  Quando você chama o modelo de objeto do PowerPoint, você pode usar os tipos fornecidos no assembly de interoperabilidade primário para o PowerPoint. O assembly de interoperabilidade primário atua como uma ponte entre o código gerenciado em que o suplemento do VSTO e o modelo de objeto COM no PowerPoint. Todos os tipos no assembly de interoperabilidade primário do PowerPoint são definidos na <xref:Microsoft.Office.Interop.PowerPoint> namespace. Para obter mais informações sobre assemblies de interoperabilidade primários, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) e [assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md).  
   
 ##  <a name="WordOMDocumentation"></a> Use a documentação de modelo de objeto do PowerPoint  
  Para obter informações completas sobre o modelo de objeto do PowerPoint, você pode consultar para a referência de assembly de interoperabilidade primária (PIA) do PowerPoint e a referência de modelo de objeto do VBA.  

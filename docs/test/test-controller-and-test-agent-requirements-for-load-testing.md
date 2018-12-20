@@ -1,5 +1,5 @@
 ---
-title: Requisitos de controlador de teste e de agente de teste para teste de carga no Visual Studio
+title: Test Controller e requisitos de Test Agent para testes de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8a5cc1f58e0cbdb59458311a1b9a4390bf69bbff
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380799"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051440"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisitos do controlador de teste e do agente de teste para teste de carga
 
 Vários tipos de teste, incluindo testes manuais, de unidade, de desempenho Web e de carga, estão integrados ao Visual Studio. O Visual Studio permite que usuários do Gerenciamento do Ciclo de Vida do Aplicativo do Visual Studio executem testes em computadores remotos usando um controlador de teste e um ou mais agentes. Consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="hardware-and-software-requirements"></a>Requisitos de hardware e software
 
@@ -31,7 +33,7 @@ Os computadores do agente de teste e do controlador de teste têm requisitos de 
 A tabela a seguir mostra os requisitos de hardware recomendados para a implantação de um controlador de teste e de agentes de teste.
 
 |**Configuração**|**Componente**|**CPU**|**HD**|**Memória**|
-|-----------------------|-------------------|-------------|------------|----------------|
+|-|-------------------|-|------------|-|
 |< 500 usuários virtuais|Agente de teste|2,6 GHz|10 GB|2 GB|
 |< 1000 usuários virtuais|Agente de teste|Processador duplo de 2,6 GHz|10 GB|2 GB|
 |N x 1000 usuários virtuais|Agente de teste|Expandir para N agentes, cada um com 2,6 Ghz duplo|10GB|2GB|

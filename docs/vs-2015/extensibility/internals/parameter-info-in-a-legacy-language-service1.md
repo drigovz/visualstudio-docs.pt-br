@@ -1,7 +1,7 @@
 ---
 title: Informações de parâmetro em uma função de linguagem herdado1 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 14958bb3a4094831a2440bde8db269832e46b238
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 462702fb73cd48f324c02344da5c5ed7c3957f23
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460454"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727933"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informações de parâmetro em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [informações de parâmetro em uma função de linguagem herdado1](https://docs.microsoft.com/visualstudio/extensibility/internals/parameter-info-in-a-legacy-language-service1).  
-  
 A dica de ferramenta informações de parâmetro do IntelliSense fornece aos usuários com dicas sobre onde eles estão em um constructo de linguagem.  
   
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações, consulte [estender o Editor e os serviços de linguagem](../../extensibility/extending-the-editor-and-language-services.md).  

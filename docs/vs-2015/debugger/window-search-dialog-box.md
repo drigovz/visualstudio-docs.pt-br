@@ -1,7 +1,7 @@
 ---
 title: Caixa de diálogo de pesquisa de janela | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - Window Search
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd352f1943d4576f848f5bd8d1a51b9196d72d03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2f32bf9800bc2ce08039fffcec26f965cbab444
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472650"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748087"
 ---
 # <a name="window-search-dialog-box"></a>Caixa de diálogo Pesquisa de Janela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [caixa de diálogo de pesquisa de janela](https://docs.microsoft.com/visualstudio/debugger/window-search-dialog-box).  
-  
 Use essa caixa de diálogo para localizar e selecionar o nó para uma janela específica no [modo de exibição do Windows](../debugger/windows-view.md). Para exibir essa caixa de diálogo, mova o foco para a janela de exibição do Windows. Em seguida, escolha **localizar janela** da **pesquisa** menu.  
   
  Você pode usar o **ferramenta Descobridora** selecionar uma janela, ou você pode inserir o identificador de janela, ou identificar a janela, legenda e classe.  

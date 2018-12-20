@@ -1,26 +1,28 @@
 ---
-title: Trabalhando com o Tutorial do Python, Etapa 4, depuração
+title: Etapa 4 do Tutorial do Python no Visual Studio, depuração
+titleSuffix: ''
 description: Etapa 4 de um passo a passo básico das funcionalidades do Python no Visual Studio, abordando como executar o código Python no depurador.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b163a7e421e3713cb160f4d0274f736d5d977d7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5facce6eff378586ece01b5774089e76058615f9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513329"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060414"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Etapa 4: Executar o código no depurador
 
-**Etapa anterior: [usar a janela interativa REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
+**Etapa anterior: [Usar a janela Interativa REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
 Além de gerenciar projetos, fornecer uma experiência de edição avançada e a janela **interativa**, o Visual Studio fornece depuração completa para código do Python. No depurador, você pode executar seu código passo a passo, incluindo cada iteração de um loop. Você também pode pausar o programa sempre que determinadas condições são verdadeiras. A qualquer momento em que o programa estiver em pausa no depurador, você poderá examinar todo o estado do programa e alterar o valor de variáveis. Essas ações são essenciais para a localização de bugs do programa e também fornecem recursos muito úteis para seguir com cuidado o fluxo exato do programa.
 

@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugReferenceInfo2::Skip | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 12f07ed8-92bd-47b5-9113-f73fec5bdde6
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d555135f32516ff84263a40d3c6119007e8e412
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30b185b691b290b0b6aa7a639fbc3db3b340e61b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466718"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755062"
 ---
 # <a name="ienumdebugreferenceinfo2skip"></a>IEnumDebugReferenceInfo2::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugReferenceInfo2::Skip](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugreferenceinfo2-skip).  
-  
 Ignora o número especificado de elementos.  
   
 ## <a name="syntax"></a>Sintaxe  

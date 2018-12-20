@@ -1,7 +1,7 @@
 ---
 title: 'Idiasectioncontrib:: Get_compilandid | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSectionContrib::get_compilandId method
 ms.assetid: 71ef2e63-d095-42b6-88d8-626e3129f0d9
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fdf4a8740b370b3b7c9ed417c48c4a4fd4c31b3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d61f929935d1ece7d2f22e946c073dc26d27d1a9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467928"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801167"
 ---
 # <a name="idiasectioncontribgetcompilandid"></a>IDiaSectionContrib::get_compilandId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasectioncontrib:: Get_compilandid](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasectioncontrib-get-compilandid).  
-  
 Recupera o identificador de compiland para a seção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_compilandId (   
+HRESULT get_compilandId (   
    DWORD* pRetVal  
 );  
 ```  

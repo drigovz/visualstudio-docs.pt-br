@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb0e6d011868f56375def1516bd0e41410da662
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 18ac2ad1125067109b0ca02d552e997f2c30482f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152494"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873770"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Passo a passo: criar um bootstrapper personalizado com um aviso de privacidade
 Você pode configurar os aplicativos ClickOnce para atualizar automaticamente quando assemblies com versões do assembly e versões mais recentes do arquivo se tornam disponíveis. Para certificar-se de que seus clientes de consentimento para esse comportamento, você pode exibir um prompt de privacidade para eles. Então, eles podem escolher se deseja conceder permissão ao aplicativo para atualizar automaticamente. Se o aplicativo não tem permissão para atualizar automaticamente, ele não é instalado.  
@@ -43,23 +43,23 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
 #### <a name="to-create-a-consent-dialog-box"></a>Para criar uma caixa de diálogo de consentimento  
   
-1.  No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
+1. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-2.  No **novo projeto** caixa de diálogo, clique em **Windows**e, em seguida, clique em **WindowsFormsApplication**.  
+2. No **novo projeto** caixa de diálogo, clique em **Windows**e, em seguida, clique em **WindowsFormsApplication**.  
   
-3.  Para o **nome**, digite **ConsentDialog**e, em seguida, clique em **Okey**.  
+3. Para o **nome**, digite **ConsentDialog**e, em seguida, clique em **Okey**.  
   
-4.  No designer, clique no formulário.  
+4. No designer, clique no formulário.  
   
-5.  No **propriedades** janela, altere o **texto** propriedade a ser **caixa de diálogo de consentimento atualização**.  
+5. No **propriedades** janela, altere o **texto** propriedade a ser **caixa de diálogo de consentimento atualização**.  
   
-6.  No **caixa de ferramentas**, expanda **todos os Windows Forms**e arraste uma **rótulo** controle ao formulário.  
+6. No **caixa de ferramentas**, expanda **todos os Windows Forms**e arraste uma **rótulo** controle ao formulário.  
   
-7.  No designer, clique no controle de rótulo.  
+7. No designer, clique no controle de rótulo.  
   
-8.  No **propriedades** janela, altere o **texto** propriedade sob **aparência** ao seguinte:  
+8. No **propriedades** janela, altere o **texto** propriedade sob **aparência** ao seguinte:  
   
-     Verifica se o aplicativo que você está prestes a instalar as atualizações mais recentes na Web. Clicando em "Concordo", você deve autorizar o aplicativo para verificar e instalar atualizações automaticamente da Internet.  
+    Verifica se o aplicativo que você está prestes a instalar as atualizações mais recentes na Web. Clicando em "Concordo", você deve autorizar o aplicativo para verificar e instalar atualizações automaticamente da Internet.  
   
 9. No **caixa de ferramentas**, arraste um **caixa de seleção** controle para o meio do formulário.  
   
@@ -112,28 +112,28 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
      Para desenvolvedores de Visual Basic somente:  
   
-    1.  Na **Gerenciador de soluções**, clique em **ConsentDialog**.  
+    1. Na **Gerenciador de soluções**, clique em **ConsentDialog**.  
   
-    2.  Sobre o **Project** menu, clique em **Adicionar módulo**e, em seguida, clique em **adicionar**.  
+    2. Sobre o **Project** menu, clique em **Adicionar módulo**e, em seguida, clique em **adicionar**.  
   
-    3.  No *Module1.vb* arquivo de código, adicione o código a seguir.  
+    3. No *Module1.vb* arquivo de código, adicione o código a seguir.  
   
-         [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
+        [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
-    4.  Sobre o **projeto** menu, clique em **propriedades ConsentDialog**e, em seguida, clique no **aplicativo** guia.  
+    4. Sobre o **projeto** menu, clique em **propriedades ConsentDialog**e, em seguida, clique no **aplicativo** guia.  
   
-    5.  Desmarque a opção **habilitar estrutura de aplicativo**.  
+    5. Desmarque a opção **habilitar estrutura de aplicativo**.  
   
-    6.  No **objeto de inicialização** menu suspenso, selecione **Module1**.  
+    6. No **objeto de inicialização** menu suspenso, selecione **Module1**.  
   
-        > [!NOTE]
-        >  Desabilitar a estrutura de aplicativo desabilita recursos, como estilos visuais do Windows XP, os eventos de aplicativo, tela inicial, aplicativo de instância única e muito mais. Para obter mais informações, consulte [Página de aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > [!NOTE]
+       >  Desabilitar a estrutura de aplicativo desabilita recursos, como estilos visuais do Windows XP, os eventos de aplicativo, tela inicial, aplicativo de instância única e muito mais. Para obter mais informações, consulte [Página de aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-     Visual c# somente para desenvolvedores:  
+       Visual c# somente para desenvolvedores:  
   
-     Abra o *Program.cs* arquivo de código e adicione o código a seguir.  
+       Abra o *Program.cs* arquivo de código e adicione o código a seguir.  
   
-     [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
+       [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
 26. Sobre o **construir** menu, clique em **BuildSolution**.  
   

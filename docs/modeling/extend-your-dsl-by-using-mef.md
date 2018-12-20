@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 205408cc4241bb0c10b4a2e413449f7b70452187
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0127bac6ca74be626f9ce22fb60ad5258ae6c3c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822119"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estender a DSL usando MEF
 
@@ -125,43 +125,43 @@ Se você tiver acesso a uma DSL habilitado de MEF, criado por você mesmo ou out
 
 #### <a name="to-create-a-dsl-extension-vsix"></a>Para criar uma DSL de extensão VSIX
 
-1.  Crie um novo projeto de biblioteca de classes. Para fazer isso, além de **novo projeto** caixa de diálogo, selecione **Visual Basic** ou **Visual c#** e, em seguida, selecione **biblioteca de classes**.
+1. Crie um novo projeto de biblioteca de classes. Para fazer isso, além de **novo projeto** caixa de diálogo, selecione **Visual Basic** ou **Visual c#** e, em seguida, selecione **biblioteca de classes**.
 
-2.  No novo projeto de biblioteca de classe, adicione uma referência ao assembly da DSL.
+2. No novo projeto de biblioteca de classe, adicione uma referência ao assembly da DSL.
 
-    -   Normalmente, esse assembly tem um nome que termina com ". DSL.dll".
+   - Normalmente, esse assembly tem um nome que termina com ". DSL.dll".
 
-    -   Se você tiver acesso ao projeto DSL, você pode encontrar o arquivo do assembly no diretório **Dsl\bin\\\***
+   - Se você tiver acesso ao projeto DSL, você pode encontrar o arquivo do assembly no diretório **Dsl\bin\\\\***
 
-    -   Se você tiver acesso ao arquivo VSIX de DSL, você pode encontrar o assembly, alterando a extensão de nome de arquivo do arquivo VSIX para. zip". Descompacte o arquivo. zip.
+   - Se você tiver acesso ao arquivo VSIX de DSL, você pode encontrar o assembly, alterando a extensão de nome de arquivo do arquivo VSIX para. zip". Descompacte o arquivo. zip.
 
-3.  Adicione referências aos assemblies do .NET a seguir:
+3. Adicione referências aos assemblies do .NET a seguir:
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
-    -   System.ComponentModel.Composition.dll
+   -   System.ComponentModel.Composition.dll
 
-    -   System.Windows.Forms.dll
+   -   System.Windows.Forms.dll
 
-4.  Crie um projeto VSIX na mesma solução. Para fazer isso, na **novo projeto** diálogo caixa, expanda **Visual Basic** ou **Visual c#**, clique em **extensibilidade**e, em seguida, selecione  **Projeto do VSIX**.
+4. Crie um projeto VSIX na mesma solução. Para fazer isso, na **novo projeto** diálogo caixa, expanda **Visual Basic** ou **Visual c#**, clique em **extensibilidade**e, em seguida, selecione  **Projeto do VSIX**.
 
-5.  No Gerenciador de soluções, clique com botão direito do projeto VSIX e, em seguida, clique em **definir como projeto de inicialização**.
+5. No Gerenciador de soluções, clique com botão direito do projeto VSIX e, em seguida, clique em **definir como projeto de inicialização**.
 
-6.  No novo projeto, abra **vsixmanifest**.
+6. No novo projeto, abra **vsixmanifest**.
 
-7.  Clique em **adicionar conteúdo**. Na caixa de diálogo, defina **tipo de conteúdo** à **componente MEF**, e **projeto de origem** ao seu projeto de biblioteca de classe.
+7. Clique em **adicionar conteúdo**. Na caixa de diálogo, defina **tipo de conteúdo** à **componente MEF**, e **projeto de origem** ao seu projeto de biblioteca de classe.
 
-8.  Adicione uma referência VSIX para a DSL.
+8. Adicione uma referência VSIX para a DSL.
 
-    1.  Na **vsixmanifest**, clique em **adicionar referência**
+   1. Na **vsixmanifest**, clique em **adicionar referência**
 
-    2.  Na caixa de diálogo, clique em **adicione carga** e, em seguida, localize o arquivo VSIX de DSL. O arquivo VSIX baseia-se na solução de DSL, em **DslPackage\bin\\\***.
+   2. Na caixa de diálogo, clique em **adicione carga** e, em seguida, localize o arquivo VSIX de DSL. O arquivo VSIX baseia-se na solução de DSL, em * * DslPackage\bin\\\\* * *.
 
-         Isso permite que os usuários a instalar a DSL e sua extensão ao mesmo tempo. Se o usuário já tiver instalado o DSL, apenas sua extensão será instalada.
+       Isso permite que os usuários a instalar a DSL e sua extensão ao mesmo tempo. Se o usuário já tiver instalado o DSL, apenas sua extensão será instalada.
 
 9. Revisar e atualizar os outros campos de **vsixmanifest**. Clique em **selecionar edições** e verificar se as edições do Visual Studio corretas estão definidas.
 

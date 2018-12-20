@@ -1,7 +1,7 @@
 ---
 title: Exibição de Linhas – Dados de Contenção | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,40 +13,38 @@ helpviewer_keywords:
 - Lines view
 ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09149f44e80155a13986d42d2b3279e5c39c8884
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d85173dcf2ab5632fdb18233f9f27f329ddd3769
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466549"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773191"
 ---
 # <a name="lines-view---contention-data"></a>Exibição de Linhas – Dados de Contenção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de linhas – dados de contenção](https://docs.microsoft.com/visualstudio/profiling/lines-view-contention-data).  
-  
 A exibição de Linhas de dados de contenção lista os dados de desempenho das instruções que estavam em execução quando as amostras foram coletadas na criação de perfil. Em um arquivo de origem, uma instrução pode abranger mais de uma linha em um arquivo de origem, e uma única linha pode incluir mais de uma instrução.  
   
  Uma instrução é identificada pelos seguintes dados:  
   
--   O arquivo de origem que contém a instrução da função.  
+- O arquivo de origem que contém a instrução da função.  
   
--   A função que contém a instrução.  
+- A função que contém a instrução.  
   
--   A linha de origem em que a instrução se inicia.  
+- A linha de origem em que a instrução se inicia.  
   
--   O caractere na linha de origem em que a instrução se inicia.  
+- O caractere na linha de origem em que a instrução se inicia.  
   
--   A linha de origem em que a instrução termina.  
+- A linha de origem em que a instrução termina.  
   
--   O caractere na linha de origem em que a instrução termina.  
+- O caractere na linha de origem em que a instrução termina.  
   
- A coluna de Nome de Linha fornece uma concatenação classificável dos dados do identificador.  
+  A coluna de Nome de Linha fornece uma concatenação classificável dos dados do identificador.  
   
- A tabela a seguir descreve as colunas do relatório de Exibição de Linhas.  
+  A tabela a seguir descreve as colunas do relatório de Exibição de Linhas.  
   
 |Column|Descrição|  
 |------------|-----------------|  

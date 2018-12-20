@@ -1,7 +1,7 @@
 ---
 title: IDebugBinder3::GetExceptionObjectAndType | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,33 +17,31 @@ ms.assetid: 2a313fe1-4ee1-4f01-af86-382d6c661a8f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ae8635e1b0888b40d668040959cade3c900f04d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d43cf051b90e8a5c0cece3acaf8e1e6ed45b37a0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462587"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781355"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugBinder3::GetExceptionObjectAndType](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype).  
-  
 Esse método recupera a exceção associada a um objeto, se houver.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT GetExceptionObjectAndType(  
-   IDebugObject** ppException,  
-   IDebugField**  ppField  
+HRESULT GetExceptionObjectAndType(  
+   IDebugObject** ppException,  
+   IDebugField**  ppField  
 );  
 ```  
   
 ```csharp  
-int GetExceptionObjectAndType(  
-   out IDebugObject ppException,  
-   out IDebugField  ppField  
+int GetExceptionObjectAndType(  
+   out IDebugObject ppException,  
+   out IDebugField  ppField  
 );  
 ```  
   

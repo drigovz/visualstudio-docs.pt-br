@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramEx2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 663359ed-635a-4539-addb-0cc52f19d1bd
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b04a592bfb2d2a341ce2431461b4c23fd7088b3b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 829a6f009471a517687316252f0711b5ac7da89c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466937"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727207"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProgramEx2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramex2).  
-  
 Essa interface permite que a sessão de depuração SDM (Gerenciador) anexar a um programa e colocar o nó de programa associado com um programa.  
   
 ## <a name="syntax"></a>Sintaxe  

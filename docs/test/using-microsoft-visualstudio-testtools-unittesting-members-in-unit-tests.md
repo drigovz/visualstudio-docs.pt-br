@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 886fc925c4053e7f9fdc9939ff33a5cda4228c0b
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bad6f01a49856e44120c0dc121ee262d9d26506c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381586"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295599"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Usar a estrutura de MSTest em testes de unidades
 
@@ -45,7 +45,7 @@ Use os seguintes elementos para configurar testes de unidade controlados por dad
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Atributos usados para estabelecer uma ordem de chamada
 
-Um elemento de código decorado com um dos seguintes atributos é chamado no momento em especificado por você. Para obter mais informações, confira [Anatomia de um teste de unidade](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Um elemento de código decorado com um dos seguintes atributos é chamado no momento em especificado por você. Para obter mais informações, confira [Anatomia de um teste de unidade](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="attributes-for-assemblies"></a>Atributos para assemblies
 
@@ -71,7 +71,7 @@ ClassInitialize e ClassCleanup são chamadas logo após a classe ser carregada e
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atributos usados para identificar classes de teste e métodos
 
-Cada classe de teste deve ter o atributo `TestClass` e cada método de teste deve ter o atributo `TestMethod`. Para obter mais informações, confira [Anatomia de um teste de unidade](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Cada classe de teste deve ter o atributo `TestClass` e cada método de teste deve ter o atributo `TestMethod`. Para obter mais informações, confira [Anatomia de um teste de unidade](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 

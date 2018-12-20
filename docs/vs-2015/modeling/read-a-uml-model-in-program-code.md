@@ -1,7 +1,7 @@
 ---
 title: Ler um modelo UML no código do programa | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ helpviewer_keywords:
 - UML API, reading models
 ms.assetid: 0f63105e-6079-498a-94f1-318c0f5f9621
 caps.latest.revision: 25
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f55126366fc80830edd92b16d64c51991c13e731
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 62355c8b934b152aae8d3a4102432d2eb0553473
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462835"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721244"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>Ler um modelo UML no código do programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ler um modelo UML no código do programa](https://docs.microsoft.com/visualstudio/modeling/read-a-uml-model-in-program-code).  
-  
 Você pode carregar um modelo UML e seus diagramas usando a API UML.  
   
 ##  <a name="Reading"></a> Leitura de um modelo no código do programa  
@@ -83,31 +81,31 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
 #### <a name="to-add-references-to-read-a-model-in-a-stand-alone-application"></a>Para adicionar referências para ler um modelo em um aplicativo autônomo.  
   
-1.  No Gerenciador de soluções, clique com botão direito do projeto no qual você está compilando o aplicativo e, em seguida, clique em **propriedades**. No editor de propriedades, nos **Application** guia, defina **estrutura de destino** para a versão necessária do .NET Framework.  
+1. No Gerenciador de soluções, clique com botão direito do projeto no qual você está compilando o aplicativo e, em seguida, clique em **propriedades**. No editor de propriedades, nos **Application** guia, defina **estrutura de destino** para a versão necessária do .NET Framework.  
   
-2.  Adicionar o [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] referências necessárias para acessar os modelos UML, normalmente:  
+2. Adicionar o [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] referências necessárias para acessar os modelos UML, normalmente:  
   
-    -   VisualStudio  
+   -   VisualStudio  
   
-    -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
+   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
   
-3.  Além das referências listadas nas seções anteriores, adicione as seguintes referências de projeto do **\Program Files\Microsoft Visual Studio [versão] \Common7\IDE\PrivateAssemblies**:  
+3. Além das referências listadas nas seções anteriores, adicione as seguintes referências de projeto do **\Program Files\Microsoft Visual Studio [versão] \Common7\IDE\PrivateAssemblies**:  
   
-    -   Microsoft.VisualStudio.Uml.dll  
+   - Microsoft.VisualStudio.Uml.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.ModelStore.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.ModelStore.Dsl.dll  
   
      Se desejar ler diagramas em seu aplicativo, você também pode exigir essas referências:  
   
-    -   Microsoft.VisualStudio.TeamArchitect.ActivityDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.ActivityDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.ComponentDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.ComponentDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.LogicalClassDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.LogicalClassDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.SequenceDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.SequenceDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.UseCase.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.UseCase.Dsl.dll  
   
 ## <a name="see-also"></a>Consulte também  
  [Programando com a API UML](../modeling/programming-with-the-uml-api.md)   

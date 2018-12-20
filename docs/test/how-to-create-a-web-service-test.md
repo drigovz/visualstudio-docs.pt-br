@@ -1,5 +1,5 @@
 ---
-title: Criar um teste de serviço Web no Visual Studio
+title: Criar um teste de serviço Web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 99d4c413dcb02efd56bf89dae3aa24b7f6905216
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380662"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053393"
 ---
-# <a name="how-to-create-a-web-service-test"></a>Como criar um teste de serviço Web
+# <a name="how-to-create-a-web-service-test"></a>Como: Criar um teste de serviço Web
 
 Você pode usar um teste de desempenho na Web para testar serviços Web. Usando as opções **Inserir solicitação** e **Inserir solicitação de serviço Web**, você pode personalizar as solicitações individuais no **Editor de Testes de Desempenho Web** para localizar páginas de serviço Web. Normalmente, você não exibe essas páginas no aplicativo Web. Portanto, você deve personalizar a solicitação para acessar essas páginas.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 Os procedimentos a seguir usam um serviço Web contido no Commerce Starter Kit. Baixe-o no [Kit de Início do ASP.NET Commerce](http://go.microsoft.com/fwlink/?LinkId=181469).
 
- **Requisitos**
+**Requisitos**
 
--   Visual Studio Enterprise
+Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>Para testar um serviço Web
 

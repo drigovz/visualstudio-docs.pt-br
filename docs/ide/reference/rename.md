@@ -1,5 +1,5 @@
 ---
-title: Refatoração Renomear no Visual Studio
+title: Renomeação de refatoração
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 696ec34bb0009b9b09b5902a102c71cf1331f320
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 02b08f3218ab6f1380884d2385899d6dd486bb81
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945448"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063147"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refatoração Renomear um símbolo de código
 
@@ -29,11 +29,11 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O quê:** permite renomear identificadores para símbolos de código, como campos, variáveis locais, métodos, namespaces, propriedades e tipos.
+**O quê:** Permite renomear identificadores para símbolos de código, como campos, variáveis locais, métodos, namespaces, propriedades e tipos.
 
-**Quando:** você deseja renomear algo com segurança sem a necessidade de localizar todas as instâncias e copiar/colar o novo nome.
+**Quando:** Você deseja renomear algo com segurança sem precisar localizar todas as instâncias e copiar/colar o novo nome.
 
-**Por quê:** copiar e colar o novo nome em um projeto inteiro provavelmente resultaria em erros. Essa ferramenta de refatoração realizará com precisão a ação de renomeação.
+**Por que:** Copiar e colar o novo nome em um projeto inteiro provavelmente resultará em erros. Essa ferramenta de refatoração realizará com precisão a ação de renomeação.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -41,34 +41,34 @@ Esta refatoração aplica-se a:
 
    - C#:
 
-    ![Código realçado – C#](media/rename-highlight-cs.png)
+       ![Código realçado – C#](media/rename-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código realçado – Visual Basic](media/rename-highlight-vb.png)
+       ![Código realçado – Visual Basic](media/rename-highlight-vb.png)
 
-1. Depois, siga um destes procedimentos:
+2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl+R**, em seguida, **Ctrl+R**. (Observe que o atalho de teclado pode ser diferente com base no perfil selecionado.)
+      - Pressione **Ctrl+R**, em seguida, **Ctrl+R**. (Observe que o atalho de teclado pode ser diferente com base no perfil selecionado.)
    - **Mouse**
-     - Selecione **Editar > Refatorar > Renomear**.
-     - Clique com o botão direito do mouse no código e selecione **Renomear**.
+      - Selecione **Editar > Refatorar > Renomear**.
+      - Clique com o botão direito do mouse no código e selecione **Renomear**.
 
-1. Renomeie o item digitando o novo nome.
+3. Renomeie o item digitando o novo nome.
 
    - C#:
 
-    ![Renomear animação – C#](media/rename-animated-cs.gif)
+      ![Renomear animação – C#](media/rename-animated-cs.gif)
 
    - Visual Basic:
 
-    ![Renomear – VB](media/rename-rename-vb.png)
+      ![Renomear – VB](media/rename-rename-vb.png)
 
    > [!TIP]
    > Também é possível atualizar os comentários e outras cadeias de caracteres para usar esse novo nome, bem como [visualizar as alterações](../../ide/preview-changes.md) antes de salvar usando as caixas de seleção na caixa **Renomear** que aparece na parte superior direita do editor.
 
-1. Quando estiver satisfeito com a alteração, escolha **Aplicar** ou pressione **Enter** e as alterações serão confirmadas.
+4. Quando estiver satisfeito com a alteração, escolha **Aplicar** ou pressione **Enter** e as alterações serão confirmadas.
 
 > [!NOTE]
 > Se você escolher um nome que já exista, o que causaria um conflito, a caixa **Renomear** o avisará.

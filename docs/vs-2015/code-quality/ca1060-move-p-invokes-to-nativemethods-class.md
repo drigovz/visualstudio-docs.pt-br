@@ -1,7 +1,7 @@
 ---
 title: 'CA1060: Mover P-Invokes para a classe NativeMethods | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2a198a7ff34900d97bca509690bb4e2d8e85f08
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 026f568d71c80af95d2d4bee640dc11d1042713f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913859"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: mover P/Invokes para a classe NativeMethods
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1060: mover P-Invokes para a classe NativeMethods](https://docs.microsoft.com/visualstudio/code-quality/ca1060-move-p-invokes-to-nativemethods-class).
 
 |||
 |-|-|
@@ -45,13 +43,13 @@ A versão mais recente deste tópico pode ser encontrada em [CA1060: mover P-Inv
 ## <a name="rule-description"></a>Descrição da Regra
  Métodos de invocação de plataforma, como aqueles que são marcados com o uso de <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atributo ou métodos que são definidos usando o `Declare` palavra-chave em [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], acessar código não gerenciado. Esses métodos devem ser em uma das seguintes classes:
 
--   **NativeMethods** -essa classe não suprime as movimentações de pilha para permissão de código não gerenciado. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> não deve ser aplicada a essa classe.) Essa classe é para os métodos que podem ser usados em qualquer lugar, porque uma movimentação de pilha será executada.
+- **NativeMethods** -essa classe não suprime as movimentações de pilha para permissão de código não gerenciado. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> não deve ser aplicada a essa classe.) Essa classe é para os métodos que podem ser usados em qualquer lugar, porque uma movimentação de pilha será executada.
 
--   **SafeNativeMethods** -essa classe suprime as movimentações de pilha para permissão de código não gerenciado. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> é aplicada a essa classe.) Essa classe é para os métodos que são seguros chamar qualquer pessoa. Chamadores desses métodos não são necessárias para executar uma revisão de segurança completa para certificar-se de que o uso é seguro porque os métodos são inofensivos para qualquer chamador.
+- **SafeNativeMethods** -essa classe suprime as movimentações de pilha para permissão de código não gerenciado. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> é aplicada a essa classe.) Essa classe é para os métodos que são seguros chamar qualquer pessoa. Chamadores desses métodos não são necessárias para executar uma revisão de segurança completa para certificar-se de que o uso é seguro porque os métodos são inofensivos para qualquer chamador.
 
--   **UnsafeNativeMethods** -essa classe suprime as movimentações de pilha para permissão de código não gerenciado. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> é aplicada a essa classe.) Essa classe é para os métodos que são potencialmente perigosos. Qualquer chamador desses métodos deve executar uma revisão de segurança completa para certificar-se de que o uso é seguro porque nenhuma movimentação de pilha será executada.
+- **UnsafeNativeMethods** -essa classe suprime as movimentações de pilha para permissão de código não gerenciado. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> é aplicada a essa classe.) Essa classe é para os métodos que são potencialmente perigosos. Qualquer chamador desses métodos deve executar uma revisão de segurança completa para certificar-se de que o uso é seguro porque nenhuma movimentação de pilha será executada.
 
- Essas classes são declaradas como `internal` (`Friend`, no Visual Basic) e declarar um construtor particular para impedir que novas instâncias que está sendo criado. Os métodos nessas classes devem estar `static` e `internal` (`Shared` e `Friend` no Visual Basic).
+  Essas classes são declaradas como `internal` (`Friend`, no Visual Basic) e declarar um construtor particular para impedir que novas instâncias que está sendo criado. Os métodos nessas classes devem estar `static` e `internal` (`Shared` e `Friend` no Visual Basic).
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, o método move ao apropriado **NativeMethods** classe. Para a maioria dos aplicativos, mover P/Invokes para uma nova classe chamada **NativeMethods** é suficiente.

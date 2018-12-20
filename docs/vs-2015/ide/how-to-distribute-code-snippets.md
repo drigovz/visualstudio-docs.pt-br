@@ -1,7 +1,7 @@
 ---
 title: Como distribuir snippets de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bda2aa5e7639b951b0df6bb83ff2d50fd4331e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14dea3842289b626b79d8dc7e294ba5f335d0351
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462930"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185699"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Como distribuir snippets de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: distribuir trechos de código](https://docs.microsoft.com/visualstudio/ide/how-to-distribute-code-snippets).  
-  
 Você pode simplesmente fornecer seus snippets de código a seus amigos e fazer com que instalem os snippets em seus próprios computadores usando o Gerenciador de Snippets de Código. No entanto, se você tiver vários snippets para distribuir ou gostaria de distribuí-los mais amplamente, inclua seu arquivo de snippet em uma extensão do Visual Studio, que usuários do Visual Studio podem instalar.  
   
  Você deve instalar o SDK do Visual Studio para criar extensões do Visual Studio. Localizar a versão do VSSDK que corresponde à sua instalação do Visual Studio em [Downloads do Visual Studio 2015](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx).  

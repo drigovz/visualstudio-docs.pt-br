@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Depurando um formulário da Web | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,25 +25,23 @@ helpviewer_keywords:
 - debugging [Visual Studio], Web Forms
 ms.assetid: e2b4fa14-8f5b-444d-a903-54070b784bd4
 caps.latest.revision: 34
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aff54238649947f578535dee2b813aa4daa90681
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 7024a9abc58117bf28ed78de107b1c17ddad601f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462086"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747265"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Instruções passo a passo: depurando um formulário Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: depurando um formulário Web](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-a-web-form).  
-  
 As etapas deste passo a passo mostram como depurar um aplicativo Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], também conhecido como um Web Form. Ele mostra como iniciar e parar a execução, definir pontos de interrupção e examinar variáveis na **inspeção** janela.  
   
 > [!NOTE]
->  Para concluir este passo a passo, você deverá ter privilégios de administrador no computador do servidor. Por padrão, o processo do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], aspnet_wp.exe ou w3wp.exe, é executado como um processo do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Para depurar o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], você deverá ter privilégios de Administrador no computador no qual o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] é executado. Para obter mais informações, consulte [requisitos de sistema](../debugger/aspnet-debugging-system-requirements.md).  
+>  Para concluir este passo a passo, você deverá ter privilégios de administrador no computador do servidor. Por padrão, o processo do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], aspnet_wp.exe ou w3wp.exe, é executado como um processo do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Para depurar o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], você deverá ter privilégios de Administrador no computador no qual o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] é executado. Para obter mais informações, consulte [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
  As caixas de diálogo e os comandos do menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   

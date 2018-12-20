@@ -1,7 +1,7 @@
 ---
 title: Enviar os eventos necessários | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1a3803b12c2941f9e76d1bb97d5885940197192
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 758f60b5bea17943eae9e55c98db420df2404d5a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474611"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758283"
 ---
 # <a name="sending-the-required-events"></a>Enviando os eventos necessários
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [enviar os eventos necessários](https://docs.microsoft.com/visualstudio/extensibility/debugger/sending-the-required-events).  
-  
 Use este procedimento para o envio de eventos necessários.  
   
 ## <a name="process-for-sending-required-events"></a>Processo de envio de eventos necessários  

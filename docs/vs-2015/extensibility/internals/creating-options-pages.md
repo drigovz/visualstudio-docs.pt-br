@@ -1,7 +1,7 @@
 ---
 title: Criando páginas de opções | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff543e0b75b4bd1ca09068f6de7b62248c515158
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 076c4934fe4f81bd56edc70356ecdcc1101456e8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472967"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760324"
 ---
 # <a name="creating-options-pages"></a>Criando páginas de opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando páginas de opções](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-options-pages).  
-  
 No [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] estrutura de pacote gerenciado, as classes derivadas de <xref:Microsoft.VisualStudio.Shell.DialogPage> estender a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE adicionando **opções** páginas sob o **ferramentas** menu.  
   
  Um objeto que implementa um determinado **opção de ferramentas** página estiver associada a VSPackages específicos pelo <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> objeto.  
@@ -53,17 +51,17 @@ No [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] estrutura de pacote gerenciad
 ## <a name="implementing-dialogpage-class"></a>A implementação da classe de DialogPage  
  Um objeto que fornece a implementação de um VSPackage de um <xref:Microsoft.VisualStudio.Shell.DialogPage>-tipo derivado pode tirar proveito dos recursos herdados a seguir:  
   
--   Uma janela de interface de usuário padrão.  
+- Uma janela de interface de usuário padrão.  
   
--   Um padrão disponível do mecanismo de persistência ambos se <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> é aplicado à classe, ou se o <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> estiver definida como `true` para o <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> que é aplicado à classe.  
+- Um padrão disponível do mecanismo de persistência ambos se <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> é aplicado à classe, ou se o <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> estiver definida como `true` para o <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> que é aplicado à classe.  
   
--   Suporte de automação.  
+- Suporte de automação.  
   
- O requisito mínimo para um objeto que implementa um **opções de ferramentas** página usando <xref:Microsoft.VisualStudio.Shell.DialogPage> é a adição de propriedades públicas.  
+  O requisito mínimo para um objeto que implementa um **opções de ferramentas** página usando <xref:Microsoft.VisualStudio.Shell.DialogPage> é a adição de propriedades públicas.  
   
- Se a classe registrada corretamente como um **opções de ferramentas** página provedor, em seguida, suas propriedades públicas estão disponíveis na **opções** seção o **ferramentas** menu na forma de um grade de propriedade.  
+  Se a classe registrada corretamente como um **opções de ferramentas** página provedor, em seguida, suas propriedades públicas estão disponíveis na **opções** seção o **ferramentas** menu na forma de um grade de propriedade.  
   
- Todos esses recursos padrão podem ser substituídos. Por exemplo, para criar um usuário mais sofisticado interface exige apenas substituir a implementação padrão de <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>.  
+  Todos esses recursos padrão podem ser substituídos. Por exemplo, para criar um usuário mais sofisticado interface exige apenas substituir a implementação padrão de <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>.  
   
 ## <a name="example"></a>Exemplo  
  O que se segue é uma implementação simples "hello world" de uma página de opções. Adicionando o seguinte código a um projeto padrão criado pelo modelo do pacote Visual Studio com o **comando de Menu** opção selecionada adequadamente demonstrará a funcionalidade da página de opção.  

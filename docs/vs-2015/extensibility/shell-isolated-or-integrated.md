@@ -1,7 +1,7 @@
 ---
 title: Shell (isolado ou integrado) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 364a45ea3ae66e3ba8962bfce1487cc04ba35397
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 856e32d4569e5dcb73e783d0a6b66e186fbb1848
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474600"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755875"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (isolado ou integrado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Shell (isolado ou integrado)](https://docs.microsoft.com/visualstudio/extensibility/shell-isolated-or-integrated).  
-  
 Você pode criar seu próprio aplicativo com base no Visual Studio no modo integrado ou isolado. No modo integrado, muitos recursos do Visual Studio estão disponíveis, além de seu aplicativo. No modo isolado, você deve escolher um subconjunto de recursos do Visual Studio que você deseja distribuir juntamente com sua própria extensão.  
   
 ## <a name="integrated-mode"></a>Modo integrado  
@@ -55,11 +53,11 @@ Você pode criar seu próprio aplicativo com base no Visual Studio no modo integ
   
 > [!IMPORTANT]
 >  O [contrato de licença de usuário final (EULA)](https://www.visualstudio.com/en-us/support/legal/mt171552) para o Visual Studio integrado e isolado shells inclui uma seção sobre a coleta de dados (**seção 3. Dados**).  Ele descreve os dados de uso do cliente que podem ser coletados pela Microsoft de usuários do que o software shell integrado ou isolado que você cria em seu aplicativo. Para obter mais informações, consulte [Microsoft Visual Studio produto privacidade da família](https://www.visualstudio.com/en-us/dn948229).  
->   
+> 
 >  Se você coletar dados de uso separados de seus clientes por meio de seu aplicativo, você deve fornecer o aviso apropriado para usuários do seu aplicativo do qual você coleta.  Quando você distribui o software de shell isolado ou integrado como parte do seu aplicativo, de acordo com a licença do Visual Studio Software Development Kit, você deve incluir um dos seguintes:  
->   
->  -   o contrato de licença de usuário final como parte da sua licença do aplicativo  
-> -   seus próprios termos de licença que exige que os clientes aceitem termos que protegem o Visual Studio integrado ou isolado shell pelo menos a quantidade como os termos de licença de usuário final Microsoft para o software de shell  
+> 
+> - o contrato de licença de usuário final como parte da sua licença do aplicativo  
+>   -   seus próprios termos de licença que exige que os clientes aceitem termos que protegem o Visual Studio integrado ou isolado shell pelo menos a quantidade como os termos de licença de usuário final Microsoft para o software de shell  
   
 ## <a name="additional-resources"></a>Recursos adicionais  
  Para obter mais informações sobre os pacotes redistribuíveis, consulte o [Downloads do Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=119298) site da Web.  

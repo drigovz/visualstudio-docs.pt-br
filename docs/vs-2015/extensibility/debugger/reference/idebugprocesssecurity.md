@@ -1,7 +1,7 @@
 ---
 title: IDebugProcessSecurity | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8a52ddca-bd99-49c0-9778-469dce7abd44
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c3cfa0d8ef0f43b21ec2057b71b688b2d3ecb66
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69efa5cf6f9a71e4d66ef03907645644a644413c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462606"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735764"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProcessSecurity](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocesssecurity).  
-  
 `IDebugProcessSecurity` é implementado por um fornecedor de porta para avisar o usuário que é seguro anexando ao processo.  
   
 ## <a name="syntax"></a>Sintaxe  

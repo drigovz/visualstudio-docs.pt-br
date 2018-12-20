@@ -1,7 +1,7 @@
 ---
 title: Adição de itens para a adicionar novo Item caixas de diálogo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 641c593a0c8f957982801824bd4f81bd62b904d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca9ae7d9e4f0ffc031d2dc8db3e940c9b844c57e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475427"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778547"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Adicionando itens às caixas de diálogo Adicionar Novo Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionando itens para as caixas de diálogo Adicionar Novo Item](https://docs.microsoft.com/visualstudio/extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes).  
-  
 O processo para adicionar itens para o **Adicionar Novo Item** caixa de diálogo começa com as chaves do registro. Conforme mostrado nas entradas de registro a seguir, a seção de AddItemTemplates contém o caminho de e o nome do diretório em que os itens disponibilizados na **Adicionar Novo Item** caixa de diálogo são colocados.  
   
 > [!NOTE]
@@ -74,15 +72,15 @@ O processo para adicionar itens para o **Adicionar Novo Item** caixa de diálogo
 ## <a name="filtering-project-items"></a>Filtragem de itens de projeto  
  `IVsFilterAddProjectItemDlg2` fornece para filtragem dos elementos na árvore (painel esquerdo) e arquivos de projeto (painel direito) das seguintes maneiras:  
   
--   Por nomes localizados (legendas exibidas na caixa de diálogo que está contida no arquivo. vsdir) fornecida pelo `IVsFilterAddProjectItemDlg`.  
+- Por nomes localizados (legendas exibidas na caixa de diálogo que está contida no arquivo. vsdir) fornecida pelo `IVsFilterAddProjectItemDlg`.  
   
--   Por que os nomes reais dos arquivos e pastas no disco (não localizado — nenhum arquivo. vsdir) fornecida pelo `IVsFilterAddProjectItemDlg`.  
+- Por que os nomes reais dos arquivos e pastas no disco (não localizado — nenhum arquivo. vsdir) fornecida pelo `IVsFilterAddProjectItemDlg`.  
   
--   Por categoria, fornecida pelo `IVsFilterAddProjectItemDlg2`.  
+- Por categoria, fornecida pelo `IVsFilterAddProjectItemDlg2`.  
   
- Para filtrar por categoria, forneça uma cadeia de caracteres da categoria a um item no arquivo. vsdir, como "Web form" ou "Item do cliente" no Visual Basic. O código da caixa de diálogo, em seguida, recupera a classificação de categoria do arquivo. vsdir e passá-lo para você. Você pode passar essas informações para sua implementação de `IVsFilterAddProjectItemDlg2` para filtrar o **Adicionar Novo Item** caixa de diálogo por categorias. Você também pode filtrar itens para páginas da Web ou como casos de aplicativo do Win32 de cliente. Além disso, você pode identificar [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] marcado itens como Microsoft Foundation Classes (MFC) ou itens do modelo do Active Directory library (ATL). Ao identificar esses itens, o sistema de projeto pode definir suas próprias classificações de forma que o sistema pode ser filtrado com base nas categorias e classificações.  
+  Para filtrar por categoria, forneça uma cadeia de caracteres da categoria a um item no arquivo. vsdir, como "Web form" ou "Item do cliente" no Visual Basic. O código da caixa de diálogo, em seguida, recupera a classificação de categoria do arquivo. vsdir e passá-lo para você. Você pode passar essas informações para sua implementação de `IVsFilterAddProjectItemDlg2` para filtrar o **Adicionar Novo Item** caixa de diálogo por categorias. Você também pode filtrar itens para páginas da Web ou como casos de aplicativo do Win32 de cliente. Além disso, você pode identificar [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] marcado itens como Microsoft Foundation Classes (MFC) ou itens do modelo do Active Directory library (ATL). Ao identificar esses itens, o sistema de projeto pode definir suas próprias classificações de forma que o sistema pode ser filtrado com base nas categorias e classificações.  
   
- Se você implementar essa funcionalidade de filtro, você não precisa mapear uma tabela de cada item que deve ser ocultada. Você pode simplesmente classificar itens em tipos e colocar as classificações no arquivo. vsdir ou em arquivos. Em seguida, você pode ocultar qualquer um dos itens que têm uma classificação específica, Implementando a interface. Dessa forma, você pode tornar os itens a **Adicionar Novo Item** dinâmico da caixa de diálogo, de acordo com o estado dentro do projeto.  
+  Se você implementar essa funcionalidade de filtro, você não precisa mapear uma tabela de cada item que deve ser ocultada. Você pode simplesmente classificar itens em tipos e colocar as classificações no arquivo. vsdir ou em arquivos. Em seguida, você pode ocultar qualquer um dos itens que têm uma classificação específica, Implementando a interface. Dessa forma, você pode tornar os itens a **Adicionar Novo Item** dinâmico da caixa de diálogo, de acordo com o estado dentro do projeto.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   

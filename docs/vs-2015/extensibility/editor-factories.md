@@ -1,7 +1,7 @@
 ---
 title: As fábricas de editor | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 645dd84b7a864a160e48582b92fbc44b8708309b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 74ea8d296db643e74654f9016c1f5bff4f34c6d8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462482"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809448"
 ---
 # <a name="editor-factories"></a>Fábricas de editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [fábricas](https://docs.microsoft.com/visualstudio/extensibility/editor-factories).  
-  
 Uma fábrica de editor cria objetos do editor e coloca-os em um quadro de janela conhecido como uma exibição física. Ele cria os dados de documentos e objetos de exibição de documento que são necessários para criar editores e designers. Uma fábrica de editor é necessário para criar o editor principal do Visual Studio e qualquer editor padrão. Um editor personalizado também pode ser criado com uma fábrica de editor.  
   
  Criar uma fábrica de editor Implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interface. O exemplo a seguir ilustra como implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> para criar uma fábrica de editor:  

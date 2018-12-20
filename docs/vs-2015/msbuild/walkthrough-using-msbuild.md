@@ -1,7 +1,7 @@
 ---
 title: 'Instruções passo a passo: usando o MSBuild | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,28 +16,26 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3dc173f438af65d6952d0d5df8adecd56530c801
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476021"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841411"
 ---
 # <a name="walkthrough-using-msbuild"></a>Instruções passo a passo: usando o MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: usando o MSBuild](https://docs.microsoft.com/visualstudio/msbuild/walkthrough-using-msbuild).  
-  
   
 O MSBuild é a plataforma de build da Microsoft e do Visual Studio. Estas instruções passo a passo apresentam os componentes essenciais do MSBuild e mostram como gravar, manipular e depurar projetos do MSBuild. Você aprenderá a:  
   
--   Criar e manipular um arquivo de projeto.  
+- Criar e manipular um arquivo de projeto.  
   
--   Usar as propriedades de build  
+- Usar as propriedades de build  
   
--   Usar itens de build.  
+- Usar itens de build.  
   
- Você pode executar o MSBuild no Visual Studio ou na janela Comando. Nestas instruções passo a passo, você criará um arquivo de projeto do MSBuild usando o Visual Studio. Você editará o arquivo de projeto no Visual Studio e usará uma janela Comando para compilar o projeto e examinar os resultados.  
+  Você pode executar o MSBuild no Visual Studio ou na janela Comando. Nestas instruções passo a passo, você criará um arquivo de projeto do MSBuild usando o Visual Studio. Você editará o arquivo de projeto no Visual Studio e usará uma janela Comando para compilar o projeto e examinar os resultados.  
   
 ## <a name="creating-an-msbuild-project"></a>Criando um projeto do MSBuild  
  O sistema de projetos do Visual Studio é baseado no MSBuild. Isso facilita a criação de um novo arquivo de projeto usando o Visual Studio. Nesta seção, você criará um arquivo de projeto do Visual C#. Você também poderá escolher criar um arquivo de projeto do Visual Basic. No contexto destas instruções passo a passo, a diferença entre os dois arquivos de projeto é secundária.  
@@ -79,20 +77,20 @@ O MSBuild é a plataforma de build da Microsoft e do Visual Studio. Estas instru
   
  O trabalho de compilar um aplicativo é feito com os elementos [Target](../msbuild/target-element-msbuild.md) e [Task](../msbuild/task-element-msbuild.md).  
   
--   Uma tarefa é a menor unidade de trabalho ou, em outras palavras, é o "átomo" de um build. As tarefas são componentes executáveis independentes que podem ter entradas e saídas. Não existem tarefas referenciadas ou definidas no arquivo de projeto no momento. Você adicionará tarefas ao arquivo de projeto nas seções a seguir. Para obter mais informações, consulte o tópico [Tarefas](../msbuild/msbuild-tasks.md).  
+- Uma tarefa é a menor unidade de trabalho ou, em outras palavras, é o "átomo" de um build. As tarefas são componentes executáveis independentes que podem ter entradas e saídas. Não existem tarefas referenciadas ou definidas no arquivo de projeto no momento. Você adicionará tarefas ao arquivo de projeto nas seções a seguir. Para obter mais informações, consulte o tópico [Tarefas](../msbuild/msbuild-tasks.md).  
   
--   Um destino é uma sequência nomeada de tarefas. No momento, há dois destinos ao final do arquivo de projeto incluídos nos comentários HTML: BeforeBuild e AfterBuild.  
+- Um destino é uma sequência nomeada de tarefas. No momento, há dois destinos ao final do arquivo de projeto incluídos nos comentários HTML: BeforeBuild e AfterBuild.  
   
-    ```  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
+  ```  
+  <Target Name="BeforeBuild">  
+  </Target>  
+  <Target Name="AfterBuild">  
+  </Target>  
+  ```  
   
-     Para obter mais informações, consulte o tópico [Destinos](../msbuild/msbuild-targets.md).  
+   Para obter mais informações, consulte o tópico [Destinos](../msbuild/msbuild-targets.md).  
   
- No nó Project há um atributo DefaultTargets opcional que seleciona o destino padrão para o build, o qual, neste caso, é Build.  
+  No nó Project há um atributo DefaultTargets opcional que seleciona o destino padrão para o build, o qual, neste caso, é Build.  
   
 ```  
 <Project ToolsVersion="12.0" DefaultTargets="Build" ...  
@@ -113,28 +111,28 @@ O MSBuild é a plataforma de build da Microsoft e do Visual Studio. Estas instru
   
 #### <a name="to-add-a-target-and-a-task"></a>Para adicionar um destino e uma tarefa  
   
-1.  Adicione estas linhas ao arquivo de projeto logo após a instrução Import:  
+1. Adicione estas linhas ao arquivo de projeto logo após a instrução Import:  
   
-    ```  
-    <Target Name="HelloWorld">  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+   </Target>  
+   ```  
   
-     Com isso, um destino chamado HelloWorld será criado. Observe que você tem suporte ao IntelliSense ao editar o arquivo de projeto.  
+    Com isso, um destino chamado HelloWorld será criado. Observe que você tem suporte ao IntelliSense ao editar o arquivo de projeto.  
   
-2.  Adicione linhas ao destino HelloWorld de modo que a seção resultante tenha esta aparência:  
+2. Adicione linhas ao destino HelloWorld de modo que a seção resultante tenha esta aparência:  
   
-    ```  
-    <Target Name="HelloWorld">  
-      <Message Text="Hello"></Message>  <Message Text="World"></Message>  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+     <Message Text="Hello"></Message>  <Message Text="World"></Message>  
+   </Target>  
+   ```  
   
-3.  Salve o arquivo de projeto.  
+3. Salve o arquivo de projeto.  
   
- A tarefa Message é uma das muitas tarefas fornecidas com o MSBuild. Para obter uma lista completa das tarefas disponíveis e informações de uso, consulte [Referência das tarefas](../msbuild/msbuild-task-reference.md).  
+   A tarefa Message é uma das muitas tarefas fornecidas com o MSBuild. Para obter uma lista completa das tarefas disponíveis e informações de uso, consulte [Referência das tarefas](../msbuild/msbuild-task-reference.md).  
   
- A tarefa Message usa o valor de cadeia de caracteres do atributo Text como entrada e o exibe no dispositivo de saída. O destino HelloWorld executa a tarefa Message duas vezes: primeiro para exibir "Hello" e, em seguida, para exibir "World".  
+   A tarefa Message usa o valor de cadeia de caracteres do atributo Text como entrada e o exibe no dispositivo de saída. O destino HelloWorld executa a tarefa Message duas vezes: primeiro para exibir "Hello" e, em seguida, para exibir "World".  
   
 ## <a name="building-the-target"></a>Compilando o destino  
  Execute o MSBuild no **Prompt de Comando do Visual Studio** para compilar o destino HelloWorld definido acima. Use a opção de linha de comando /target ou /t para selecionar o destino.  
@@ -259,19 +257,19 @@ $(PropertyName)
   
 #### <a name="to-set-a-property-value-from-the-command-line"></a>Para definir um valor da propriedade da linha de comando  
   
-1.  Na **janela Comando**, digite e execute esta linha:  
+1. Na **janela Comando**, digite e execute esta linha:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release  
+   ```  
   
-2.  Examine o resultado. Você deverá ver esta linha:  
+2. Examine o resultado. Você deverá ver esta linha:  
   
-    ```  
-    Configuration is Release.  
-    ```  
+   ```  
+   Configuration is Release.  
+   ```  
   
- O MSBuild cria a propriedade Configuration e atribui a ela o valor "Release".  
+   O MSBuild cria a propriedade Configuration e atribui a ela o valor "Release".  
   
 ## <a name="special-characters"></a>Caracteres especiais  
  Determinados caracteres têm significado especial em arquivos de projeto do MSBuild. O ponto e vírgula (;) e o asterisco (*) são exemplos desses caracteres. Para usar esses caracteres especiais como literais em um arquivo de projeto, eles devem ser especificados usando a sintaxe %xx, em que xx representa o valor hexadecimal ASCII do caractere.  
@@ -280,27 +278,27 @@ $(PropertyName)
   
 #### <a name="to-use-special-characters-in-the-message-task"></a>Para usar caracteres especiais na tarefa Message  
   
-1.  No editor de códigos, substitua ambas as tarefas Message por esta linha:  
+1. No editor de códigos, substitua ambas as tarefas Message por esta linha:  
   
-    ```  
-    <Message Text="%24(Configuration) is %22$(Configuration)%22" />  
-    ```  
+   ```  
+   <Message Text="%24(Configuration) is %22$(Configuration)%22" />  
+   ```  
   
-2.  Salve o arquivo de projeto.  
+2. Salve o arquivo de projeto.  
   
-3.  Na **janela Comando**, digite e execute esta linha:  
+3. Na **janela Comando**, digite e execute esta linha:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Examine o resultado. Você deverá ver esta linha:  
+4. Examine o resultado. Você deverá ver esta linha:  
   
-    ```  
-    $(Configuration) is "Debug"  
-    ```  
+   ```  
+   $(Configuration) is "Debug"  
+   ```  
   
- Para obter mais informações, consulte [Caracteres especiais no MSBuild](../msbuild/msbuild-special-characters.md).  
+   Para obter mais informações, consulte [Caracteres especiais no MSBuild](../msbuild/msbuild-special-characters.md).  
   
 ## <a name="build-items"></a>Compilar itens  
  Um item é uma informação, normalmente um nome de arquivo, que é usado como entrada no sistema de build. Por exemplo, uma coleção de itens que representam os arquivos de origem pode ser passada para uma tarefa chamada Compile para compilá-los em um assembly.  
@@ -340,31 +338,31 @@ $(PropertyName)
   
 #### <a name="to-examine-item-type-values"></a>Para examinar os valores de tipo de item  
   
-1.  No editor de códigos, substitua a tarefa do destino HelloWorld por este código:  
+1. No editor de códigos, substitua a tarefa do destino HelloWorld por este código:  
   
-    ```  
-    <Target Name="HelloWorld">  
-      <Message Text="Compile item type contains @(Compile)" />  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+     <Message Text="Compile item type contains @(Compile)" />  
+   </Target>  
+   ```  
   
-2.  Salve o arquivo de projeto.  
+2. Salve o arquivo de projeto.  
   
-3.  Na **janela Comando**, digite e execute esta linha:  
+3. Na **janela Comando**, digite e execute esta linha:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Examine o resultado. Você deverá ver esta linha longa:  
+4. Examine o resultado. Você deverá ver esta linha longa:  
   
-    ```  
-    Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs  
-    ```  
+   ```  
+   Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs  
+   ```  
   
- Por padrão, os valores de um tipo de item são separados por ponto e vírgula.  
+   Por padrão, os valores de um tipo de item são separados por ponto e vírgula.  
   
- Para alterar o separador de um tipo de item, use a seguinte sintaxe, em que ItemType é o tipo de item e Separator é uma cadeia de caracteres de um ou mais caracteres de separação:  
+   Para alterar o separador de um tipo de item, use a seguinte sintaxe, em que ItemType é o tipo de item e Separator é uma cadeia de caracteres de um ou mais caracteres de separação:  
   
 ```  
 @(ItemType, Separator)  
@@ -493,62 +491,62 @@ $(PropertyName)
   
 #### <a name="to-examine-item-metadata"></a>Para examinar metadados de item  
   
-1.  No editor de códigos, substitua a tarefa Message por esta linha:  
+1. No editor de códigos, substitua a tarefa Message por esta linha:  
   
-    ```  
-    <Message Text="Compile.DependentUpon: %(Compile.DependentUpon)" />  
-    ```  
+   ```  
+   <Message Text="Compile.DependentUpon: %(Compile.DependentUpon)" />  
+   ```  
   
-2.  Salve o arquivo de projeto.  
+2. Salve o arquivo de projeto.  
   
-3.  Na **janela Comando**, digite e execute esta linha:  
+3. Na **janela Comando**, digite e execute esta linha:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Examine o resultado. Você deverá ver estas linhas:  
+4. Examine o resultado. Você deverá ver estas linhas:  
   
-    ```  
-    Compile.DependentUpon:  
-    Compile.DependentUpon: Form1.cs  
-    Compile.DependentUpon: Resources.resx  
-    Compile.DependentUpon: Settings.settings  
-    ```  
+   ```  
+   Compile.DependentUpon:  
+   Compile.DependentUpon: Form1.cs  
+   Compile.DependentUpon: Resources.resx  
+   Compile.DependentUpon: Settings.settings  
+   ```  
   
- Observe que "Compile.DependentUpon" aparece várias vezes. O uso de metadados com essa sintaxe em um destino causa o "envio em lotes". Envio em lote significa que as tarefas no destino são executadas uma vez para cada valor exclusivo dos metadados. Trata-se do equivalente em script do MSBuild ao constructo comum de programação "loop for". Para obter mais informações, consulte [Envio em lote](../msbuild/msbuild-batching.md).  
+   Observe que "Compile.DependentUpon" aparece várias vezes. O uso de metadados com essa sintaxe em um destino causa o "envio em lotes". Envio em lote significa que as tarefas no destino são executadas uma vez para cada valor exclusivo dos metadados. Trata-se do equivalente em script do MSBuild ao constructo comum de programação "loop for". Para obter mais informações, consulte [Envio em lote](../msbuild/msbuild-batching.md).  
   
 ### <a name="well-known-metadata"></a>Metadados conhecidos  
  Sempre que um item é adicionado a uma lista de itens, esse item recebe alguns metadados conhecidos. Por exemplo, %(Filename) retorna o nome de arquivo de qualquer item. Para obter uma lista completa dos metadados conhecidos, consulte [Metadados de itens conhecidos](../msbuild/msbuild-well-known-item-metadata.md).  
   
 ##### <a name="to-examine-well-known-metadata"></a>Para examinar os metadados conhecidos  
   
-1.  No editor de códigos, substitua a tarefa Message por esta linha:  
+1. No editor de códigos, substitua a tarefa Message por esta linha:  
   
-    ```  
-    <Message Text="Compile Filename: %(Compile.Filename)" />  
-    ```  
+   ```  
+   <Message Text="Compile Filename: %(Compile.Filename)" />  
+   ```  
   
-2.  Salve o arquivo de projeto.  
+2. Salve o arquivo de projeto.  
   
-3.  Na **janela Comando**, digite e execute esta linha:  
+3. Na **janela Comando**, digite e execute esta linha:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Examine o resultado. Você deverá ver estas linhas:  
+4. Examine o resultado. Você deverá ver estas linhas:  
   
-    ```  
-    Compile Filename: Form1  
-    Compile Filename: Form1.Designer  
-    Compile Filename: Program  
-    Compile Filename: AssemblyInfo  
-    Compile Filename: Resources.Designer  
-    Compile Filename: Settings.Designer  
-    ```  
+   ```  
+   Compile Filename: Form1  
+   Compile Filename: Form1.Designer  
+   Compile Filename: Program  
+   Compile Filename: AssemblyInfo  
+   Compile Filename: Resources.Designer  
+   Compile Filename: Settings.Designer  
+   ```  
   
- Ao comparar os dois exemplos acima, você poderá ver que, embora nem todos os itens no tipo de item Compile tenham metadados DependentUpon, todos os itens têm os metadados conhecidos Filename.  
+   Ao comparar os dois exemplos acima, você poderá ver que, embora nem todos os itens no tipo de item Compile tenham metadados DependentUpon, todos os itens têm os metadados conhecidos Filename.  
   
 ### <a name="metadata-transformations"></a>Transformações de metadados  
  As listas de itens podem ser transformadas em novas listas de itens. Para transformar uma lista de itens, use a seguinte sintaxe, em que ItemType é o nome do tipo de item e MetadataName é o nome dos metadados:  
@@ -561,27 +559,27 @@ $(PropertyName)
   
 ##### <a name="to-transform-items-using-metadata"></a>Para transformar itens que usam metadados  
   
-1.  No editor de códigos, substitua a tarefa Message por esta linha:  
+1. No editor de códigos, substitua a tarefa Message por esta linha:  
   
-    ```  
-    <Message Text="Backup files: @(Compile->'%(filename).bak')" />  
-    ```  
+   ```  
+   <Message Text="Backup files: @(Compile->'%(filename).bak')" />  
+   ```  
   
-2.  Salve o arquivo de projeto.  
+2. Salve o arquivo de projeto.  
   
-3.  Na **janela Comando**, digite e execute esta linha:  
+3. Na **janela Comando**, digite e execute esta linha:  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  Examine o resultado. Você deverá ver esta linha:  
+4. Examine o resultado. Você deverá ver esta linha:  
   
-    ```  
-    Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak  
-    ```  
+   ```  
+   Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak  
+   ```  
   
- Observe que os metadados expressados nesta sintaxe não causam o envio em lote.  
+   Observe que os metadados expressados nesta sintaxe não causam o envio em lote.  
   
 ## <a name="whats-next"></a>O que vem a seguir?  
  Para saber como criar um arquivo de projeto simples etapa por etapa, experimente o [Instruções passo a passo: criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  

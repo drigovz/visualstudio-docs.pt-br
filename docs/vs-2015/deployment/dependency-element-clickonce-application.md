@@ -1,7 +1,7 @@
 ---
 title: '&lt;dependência&gt; elemento (aplicativo ClickOnce) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8a998e5649b45b3e442701bd78c95f85844f71d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e76d517af1e0bd93507a47facd63bd50ae98e635
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460513"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233851"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dependência&gt; elemento (aplicativo ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ &lt;dependência&gt; (aplicativo ClickOnce) do elemento](https://docs.microsoft.com/visualstudio/deployment/dependency-element-clickonce-application).  
-  
 Identifica uma dependência de plataforma ou assembly que é necessária para o aplicativo.  
   
 ## <a name="syntax"></a>Sintaxe  

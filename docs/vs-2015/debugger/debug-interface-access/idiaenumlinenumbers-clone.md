@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumlinenumbers:: clone | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaEnumLineNumbers::Clone method
 ms.assetid: fcd2479a-8ff7-4aba-a737-06123c280d54
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45c2bf6eafc654898ecd2723c616d01cea7028c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d9563d950948c7cc6f360af3d5bd62b2cd66e99
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467110"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725101"
 ---
 # <a name="idiaenumlinenumbersclone"></a>IDiaEnumLineNumbers::Clone
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaenumlinenumbers:: clone](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumlinenumbers-clone).  
-  
 Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumLineNumbers** ppenum  
 );  
 ```  

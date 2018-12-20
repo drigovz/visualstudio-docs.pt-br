@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttribute::GetAttributeBytes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 574deb12fd774d989f2868dd1300c6a641849015
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 41f1cb252b2537a49aa9542c39e7504a9b9940e0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465420"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763274"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugCustomAttribute::GetAttributeBytes](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcustomattribute-getattributebytes).  
-  
 Obtém as informações de atributo como um blob de bytes.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetAttributeBytes(   
+HRESULT GetAttributeBytes(   
    BYTE*  ppBlob,  
    DWORD* pdwLen  
 );  

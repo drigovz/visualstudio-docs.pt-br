@@ -1,7 +1,7 @@
 ---
 title: Depurar aplicativos de 64 bits | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,15 +19,15 @@ helpviewer_keywords:
 - 64-bit debugging
 ms.assetid: db648e5f-6375-4e2d-aa98-eb7261958927
 caps.latest.revision: 38
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41b3327e7c659772460bfa644e2540ed15a4ff89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4d195c3f0b07636f0a131cc4dca0298deef1041
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467359"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758836"
 ---
 # <a name="debug-64-bit-applications"></a>Depurar aplicativos de 64 bits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

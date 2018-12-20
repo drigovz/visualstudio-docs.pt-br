@@ -21,15 +21,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85d4dc4ab6b18cf7e9aa1f26167234572362231b
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0ee3f5765c3be3228453ef6c870335bde5e999d8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326015"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295007"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Informações adicionais sobre erros do SharePoint
-  Você pode encontrar assistência na solução de problemas [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erros e avisos em fóruns públicos do Microsoft Developer Network (MSDN) e tópicos de solução de problemas de ferramentas do SharePoint.  
+  Você pode encontrar assistência na solução de problemas [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erros e avisos em fóruns públicos do e tópicos de solução de problemas de ferramentas do SharePoint.  
   
 ## <a name="troubleshoot-errors-and-issues"></a>Solução de problemas e erros
  Para obter assistência com alguns erros comuns e outros problemas no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ferramentas do SharePoint, consulte os seguintes tópicos:  
@@ -41,7 +41,7 @@ ms.locfileid: "36326015"
 -   [Solucionar problemas de implantação e empacotamento do SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
 ## <a name="other-resources"></a>Outros recursos
- A seguinte tabela lista o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] de ferramentas do SharePoint fóruns e outros recursos disponíveis no MSDN.  
+ A seguinte tabela lista o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fóruns e outros recursos disponíveis de ferramentas do SharePoint.  
   
 |Termo|Definição|  
 |----------|----------------|  

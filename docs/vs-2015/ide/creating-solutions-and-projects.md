@@ -1,7 +1,7 @@
 ---
 title: Criando soluções e projetos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee777b8b1d2664fbaa284033f21624238d5cf456
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 336fb41ee6a4c90e7065187b2805aefe9e6e6df7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462706"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893689"
 ---
 # <a name="creating-solutions-and-projects"></a>Criando soluções e projetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar soluções e projetos](https://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects).  
-  
 Os projetos são os contêineres lógicos para tudo que é necessário para criar seu aplicativo. Quando você cria um projeto escolhendo **Arquivo &#124; Novo &#124; Projeto** no menu principal, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cria uma solução para contê-lo. Em seguida, é possível adicionar projetos novos ou existentes à solução, se necessário. É possível criar projetos de arquivos de código existentes e criar projetos temporários (apenas .NET) que serão excluídos quando você não os quiser mais.  
   
 > [!NOTE]
@@ -76,15 +74,15 @@ Os projetos são os contêineres lógicos para tudo que é necessário para cria
   
 #### <a name="to-create-an-empty-solution"></a>Para criar uma solução vazia  
   
-1.  No menu **Arquivo**, clique em **Novo** e, em seguida, clique em **Novo Projeto**.  
+1. No menu **Arquivo**, clique em **Novo** e, em seguida, clique em **Novo Projeto**.  
   
-2.  No painel esquerdo, selecione **Instalados**, selecione **Outros Tipos de Projeto** e, em seguida, selecione **Soluções do Visual Studio** na lista expandida.  
+2. No painel esquerdo, selecione **Instalados**, selecione **Outros Tipos de Projeto** e, em seguida, selecione **Soluções do Visual Studio** na lista expandida.  
   
-3.  No painel central, selecione **Solução em Branco**.  
+3. No painel central, selecione **Solução em Branco**.  
   
-4.  Veja os valores **Nome** e **Local** para sua solução e, em seguida, clique em **OK**.  
+4. Veja os valores **Nome** e **Local** para sua solução e, em seguida, clique em **OK**.  
   
- Depois de criar uma solução vazia, é possível adicionar projetos novos ou existentes ou itens a ele clicando em **Adicionar Novo Item** ou **Adicionar Item Existente** no menu **Projeto**.  
+   Depois de criar uma solução vazia, é possível adicionar projetos novos ou existentes ou itens a ele clicando em **Adicionar Novo Item** ou **Adicionar Item Existente** no menu **Projeto**.  
   
 ### <a name="deleting-solutions"></a>Excluindo soluções  
  É possível excluir uma solução permanentemente, mas não usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Antes de excluir uma solução, mova os projetos que você pode deseja usar novamente em outra solução. Em seguida, use o Gerenciador de Arquivos para excluir o diretório que contém os arquivos de solução .sln e .suo.  

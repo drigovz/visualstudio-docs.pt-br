@@ -9,12 +9,12 @@ description: Detalhes de quais assinaturas são oferecidas, quais regras se apli
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b3bea3831e2d16f43d378bfe77a4dc8f84fdda3f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283568"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876757"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Assinaturas do Visual Studio oferecidas aos parceiros no MPN (Microsoft Partner Network)
 Os parceiros que ganham uma competência ou que compram o Action Pack no MPN estão qualificados para usar assinaturas do Visual Studio. Essas assinaturas são licenciadas por usuário e são válidas somente quando atribuídas a um usuário nomeado específico que trabalha para a empresa parceira.
@@ -23,11 +23,13 @@ Os parceiros que ganham uma competência ou que compram o Action Pack no MPN est
 Quando um parceiro ganha uma competência, seja no nível Silver ou Gold, ele recebe um número principal de assinaturas do Visual Studio Enterprise. Esse benefício principal será alterado se o parceiro ganhar pelo menos uma competência Gold. A assinatura do Visual Studio Enterprise é uma oferta personalizada quase equivalente à [assinatura de nuvem anual do Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/), mas sem alguns benefícios (muitos dos quais são oferecidos separadamente aos parceiros como benefícios gerais do MPN e não como parte das assinaturas do Visual Studio Enterprise oferecidas pelo MPN).
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Principais benefícios do Visual Studio para ganhar pelo menos uma competência de qualquer tipo
+
 | Competências ganhadas apenas no nível Silver               | Pelo menos uma competência ganhada no nível Gold   |
 |------------------------------------------------------------|----------------------------------------------------|
 | Cinco assinaturas do Visual Studio Enterprise                   | 10 assinaturas do Visual Studio Enterprise          |
 
 ### <a name="additional-visual-studio-benefit-for-select-competencies"></a>Benefício adicional do Visual Studio para competências selecionadas
+
 | Competência                                  | Assinaturas adicionais ganhadas para a Competência **Silver** | Assinaturas adicionais ganhadas para a Competência **Gold** |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
 | Desenvolvimento do aplicativo                     | Cinco assinaturas do Visual Studio Enterprise                  | 25 assinaturas do Visual Studio Enterprise               |
@@ -39,6 +41,7 @@ Quando um parceiro ganha uma competência, seja no nível Silver ou Gold, ele re
 Independentemente de quantas competências um parceiro ganha, o número de assinaturas do Visual Studio é limitado da seguinte maneira:
 
 ### <a name="limits-for-visual-studio-subscriptions-earned-through-competencies"></a>Limites para assinaturas do Visual Studio ganhadas por meio de competências
+
 | Benefício máximo para parceiros somente com Competências Silver                   | Benefício máximo para parceiros com pelo menos uma Competência Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 assinaturas do Visual Studio Enterprise por país, 75 globalmente          | 50 assinaturas do Visual Studio Enterprise por país, 150 globalmente         |

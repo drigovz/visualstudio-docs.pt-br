@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Findsymbolbyrvaex | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSession::findSymbolByRVAEx method
 ms.assetid: 61344966-fed4-4c02-9e27-20356ec2ef7c
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f9c938439fde85104b5206430c8d7b4f991a067
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f507258a0c4eec9ee550d781029b7dbf0ced7b28
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462075"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776064"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasession:: Findsymbolbyrvaex](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findsymbolbyrvaex).  
-  
 Recupera um tipo de símbolo especificado que contém ou está mais próximo de um endereço especificado virtual relativo (RVA) e o deslocamento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findSymbolByRVAEx (   
+HRESULT findSymbolByRVAEx (   
    DWORD        rva,  
    SymTagEnum   symtag,  
    IDiaSymbol** ppSymbol,  

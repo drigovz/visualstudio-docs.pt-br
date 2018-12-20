@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: usando um arquivo de configuração para definir uma fonte de dados no Visual Studio'
+title: 'Passo a passo: Usando um arquivo de configuração para definir uma fonte de dados'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2552dec4e564b42d2044ce0d9da51ebfb8913901
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d329e1aedb5b81c2be2d52614e4c540ecb8ef8aa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382673"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066987"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Passo a passo: Usando um arquivo de configuração para definir uma fonte de dados
 
@@ -88,7 +88,7 @@ As cadeias de conexão definem as informações específicas do provedor para ac
 3. No primeiro elemento **add**, crie os seguintes atributos e valores para uma conexão com um banco de dados do Microsoft Access:
 
 |Atributo|Valores|
-|---------------|------------|
+|-|------------|
 |`name`|`"MyJetConn"`|
 |`connectionString`|`"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;"`|
 |`providerName`|`"System.Data.OleDb"`|
@@ -135,7 +135,7 @@ Nesta seção, você definirá duas fontes de dados para usar em um teste de uni
 4. No primeiro elemento **add**, crie os seguintes atributos e valores para uma fonte de dados do Microsoft Access:
 
 |Atributo|Valores|
-|---------------|------------|
+|-|------------|
 |`name`|`"MyJetDataSource"`|
 |`connectionString`|`"MyJetConn"`|
 |`dataTableName`|`"MyDataTable"`|
@@ -198,7 +198,7 @@ Agora que um arquivo *app.config* foi definido, você criará um teste de unidad
 
 3. Crie dois campos em `MyDataTable` chamados `Arg1` e `Arg2` usando o tipo de dados `Number`.
 
-4. Adicione cinco entidades em `MyDataTable` com os seguintes valores para `Arg1` e `Arg2`, respectivamente: (10,50), (3,2), (6,0), (0,8) e (12312,1000).
+4. Adicione cinco entidades a `MyDataTable` com os seguintes valores para `Arg1` e `Arg2`, respectivamente: (10,50), (3,2), (6,0), (0,8) e (12312,1000).
 
 5. Salve e feche o banco de dados.
 
@@ -212,7 +212,7 @@ Agora que um arquivo *app.config* foi definido, você criará um teste de unidad
 
 3. Crie dois cabeçalhos de coluna e nomeie-os como `Val1` e `Val2` em `Sheet1`.
 
-4. Adicione cinco entidades em `Sheet1` com os seguintes valores para `Val1` e `Val2`, respectivamente: (1,1), (2,2), (3,3), (4,4) e (5,0).
+4. Adicione cinco entidades a `Sheet1` com os seguintes valores para `Val1` e `Val2`, respectivamente: (1,1), (2,2), (3,3), (4,4) e (5,0).
 
 5. Salve e feche a planilha.
 
@@ -272,4 +272,4 @@ Agora que um arquivo *app.config* foi definido, você criará um teste de unidad
 ## <a name="see-also"></a>Consulte também
 
 - [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
-- [Como criar um teste de unidade controlado por dados](../test/how-to-create-a-data-driven-unit-test.md)
+- [Como: Criar um teste de unidade controlado por dados](../test/how-to-create-a-data-driven-unit-test.md)

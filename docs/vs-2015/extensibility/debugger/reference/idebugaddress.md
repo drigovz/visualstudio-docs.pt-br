@@ -1,7 +1,7 @@
 ---
 title: IDebugAddress | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: bc709ff7-4966-4f36-9af2-690efe2cea1d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 75a5b1ab9979d7d071282ab4d807d89b5e7abb2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82c532434475a46a6bf13a5b2395d6db1799cc15
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474826"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744005"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugAddress](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugaddress).  
-  
 Essa interface representa o endereço de um item. Ele é retornado pelo manipulador de símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  

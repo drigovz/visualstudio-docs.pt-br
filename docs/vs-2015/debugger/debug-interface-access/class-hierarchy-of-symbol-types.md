@@ -1,7 +1,7 @@
 ---
 title: Hierarquia de tipos de símbolo de classes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - symbols [DIA SDK], class hierarchies
 ms.assetid: 0ccd6990-4654-44cd-a6f3-bdd82fe90f6c
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35db9ca51285e10310a7fcee0c6db32dd9dff4a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c400479f761cb7d1bbe02c1aedade916da5596a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466057"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793029"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Hierarquia de classes de tipos de símbolos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [hierarquia de classe de tipos de símbolo](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/class-hierarchy-of-symbol-types).  
-  
 A tabela a seguir descreve os tipos de símbolo na hierarquia de classe.  
   
 ## <a name="symbol-types"></a>Tipos de símbolo  

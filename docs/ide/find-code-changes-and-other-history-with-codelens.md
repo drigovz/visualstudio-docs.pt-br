@@ -4,17 +4,19 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b50ea1ae20f6d8a03609dfd37a080108ca2e58e
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: e11b7458c5d26d56252b228522c53b00ebadb35b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384195"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220294"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Localizar alterações de código e outro histórico com o CodeLens
 
@@ -125,7 +127,7 @@ Descubra quantas pessoas alteraram seu código e a quantas alterações foram fe
 
 ### <a name="find-when-your-code-was-branched"></a>Descubra quando o código foi ramificado
 
-Para saber quando o código foi ramificado, navegue para o código no branch filho. Em seguida, selecione o indicador **alterações** ou pressione**Alt**+**6**:
+Para saber quando o código foi ramificado, navegue para o código no branch filho. Em seguida, selecione o indicador **alterações** ou pressione **Alt**+**6**:
 
 ![CodeLens: descobrir quando o código foi ramificado](../ide/media/codelens-first-branch.png)
 
@@ -162,7 +164,7 @@ Compare uma alteração recebida com a versão local pressionando **Shift**+**F1
 O ícone na coluna **Branch** indica como o branch está relacionado ao branch no qual você está trabalhando.
 
 |**Ícone**|**A alteração foi proveniente de:**|
-|--------------|-----------------------------------------|
+|--------------| - |
 |![CodeLens: alteração de ícone do branch atual](../ide/media/codelensbranchcurrenticon.png)|A ramificação atual|
 |![CodeLens: alteração de ícone do branch pai](../ide/media/codelensbranchparenticon.png)|A ramificação pai|
 |![CodeLens: alteração de ícone do branch filho](../ide/media/codelensbranchchildicon.png)|Uma ramificação filha|
@@ -295,7 +297,7 @@ Para usar o teclado:
 
 4. Pressione **Tab** para acessar a lista **Mostrar configurações de** e, em seguida, pressione **Seta para baixo** para selecionar **CodeLens**.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>P: Posso mover a exibição `head` do CodeLens?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>P: Posso mover o HUD do CodeLens?
 
 **R:** Sim, escolha o ![ícone de Encaixe](../ide/media/codelensdockwindow.png) para encaixar o CodeLens como uma janela.
 

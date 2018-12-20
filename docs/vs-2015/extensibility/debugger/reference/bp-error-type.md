@@ -1,7 +1,7 @@
 ---
 title: BP_ERROR_TYPE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 574830c7875b0711d6e14aa5b09370a5bf217903
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61ec31973d1de69b9b276456465b31c429d77469
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468043"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725842"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [BP_ERROR_TYPE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-error-type).  
-  
 Especifica o tipo de erro de um ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_BP_ERROR_TYPE {   
+enum enum_BP_ERROR_TYPE {   
    BPET_NONE            = 0x00000000,  
    BPET_TYPE_WARNING    = 0x00000001,  
    BPET_TYPE_ERROR      = 0x00000002,  
@@ -51,7 +49,7 @@ typedef DWORD BP_ERROR_TYPE;
 ```  
   
 ```csharp  
-public enum enum_BP_ERROR_TYPE {   
+public enum enum_BP_ERROR_TYPE {   
    BPET_NONE            = 0x00000000,  
    BPET_TYPE_WARNING    = 0x00000001,  
    BPET_TYPE_ERROR      = 0x00000002,  

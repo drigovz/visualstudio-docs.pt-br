@@ -1,7 +1,7 @@
 ---
 title: 'CA1061: Não ocultar métodos de classe base | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f018abbb864533e5c9d7b598638a4006a69ab2f3
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 8bcee9f4bee5f5e505b4dddfb53d6a4cf30c39c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47586990"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826720"
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: não ocultar métodos de classe base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1061: não ocultar métodos de classe base](https://docs.microsoft.com/visualstudio/code-quality/ca1061-do-not-hide-base-class-methods).
 
 |||
 |-|-|

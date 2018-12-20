@@ -1,7 +1,7 @@
 ---
 title: IDebugDisassemblyStream2::Read | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 117a90cbcfd96db808252b9653ee4c0015e92b0d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9bfa4fec20b715493a4f2f74c4a19aa845a44916
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468313"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725775"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugDisassemblyStream2::Read](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdisassemblystream2-read).  
-  
 Lê a partir da posição atual no fluxo de desmontagem de instruções.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Read(   
+HRESULT Read(   
    DWORD                     dwInstructions,  
    DISASSEMBLY_STREAM_FIELDS dwFields,  
    DWORD*                    pdwInstructionsRead,  
@@ -43,7 +41,7 @@ HRESULT Read(
 ```  
   
 ```csharp  
-int Read(   
+int Read(   
    uint                           dwInstructions,  
    enum_DISASSEMBLY_STREAM_FIELDS dwFields,  
    out uint                       pdwInstructionsRead,  

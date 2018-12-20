@@ -20,12 +20,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9821cde6c159712ff44438b74eea0f8e01247155
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 377815adc7751841e2a2a3bb2f4dc8b51beecdea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641046"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941276"
 ---
 # <a name="dbgpropinfoflags"></a>DBGPROP_INFO_FLAGS
 Usado para especificar `DebugPropertyInfo` campos  
@@ -64,7 +64,7 @@ enum {
  Inicializa o `pDebugProp` campo que contém um `IDebugProperty` interface.  
   
  DBGPROP_INFO_AUTOEXPAND  
- Especifica que o campo de valor deve conter o valor expandido automaticamente, se disponível, para este tipo de objeto.  
+ Especifica que o campo de valor deve conter o valor expandida automaticamente, se disponível, para esse tipo de objeto.  
   
 ## <a name="see-also"></a>Consulte também  
  [Estrutura DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)   

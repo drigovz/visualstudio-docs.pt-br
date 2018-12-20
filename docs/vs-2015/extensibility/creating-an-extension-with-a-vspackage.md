@@ -1,7 +1,7 @@
 ---
 title: Criar uma extensão com um VSPackage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea5e5320f612a1086e7bba2f63539470773078bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 945ae5b3cf6cd8769795c31a10a4f51e1f7eccb6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475239"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773295"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>Criando uma extensão com um VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar uma extensão com um VSPackage](https://docs.microsoft.com/visualstudio/extensibility/creating-an-extension-with-a-vspackage).  
-  
 Este passo a passo mostra como criar um projeto VSIX e adicione um item de projeto de VSPackage. Usaremos o VSPackage para obter o serviço de Shell de interface do usuário para mostrar uma caixa de mensagem.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  

@@ -1,7 +1,7 @@
 ---
 title: IDebugSettingsCallback2::GetMetricGuid | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 91092763-3362-4857-adf0-231bc1254206
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 48662b00dc168e44e6d1c8e5fb473e716e423304
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96d51249becabf932f3915363432ce7bd17402ea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472894"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800426"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugSettingsCallback2::GetMetricGuid](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsettingscallback2-getmetricguid).  
-  
 Recupera o identificador exclusivo de uma métrica, dado seu nome.  
   
 ## <a name="syntax"></a>Sintaxe  

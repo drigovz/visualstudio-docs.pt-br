@@ -1,7 +1,7 @@
 ---
 title: Entrar no modo de interrupção | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25adcc12e6d474899165c1a486fd550f34dd99a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 852f9104b2a510d033ab07a854e0c7bcbf4bf8f8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464056"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788271"
 ---
 # <a name="entering-break-mode"></a>Entrando no modo de interrupção
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [inserindo o modo de interrupção](https://docs.microsoft.com/visualstudio/extensibility/debugger/entering-break-mode).  
-  
 O exemplo a seguir descreve o processo que ocorre quando um ponto de interrupção é encontrado depois de entrar em uma função, em execução para a linha de código-fonte que contém o cursor de ou em execução para um ponto de interrupção.  
   
 ## <a name="break-mode-process"></a>Processo do modo de interrupção  

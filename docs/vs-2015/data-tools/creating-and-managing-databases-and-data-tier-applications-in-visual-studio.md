@@ -1,7 +1,7 @@
 ---
 title: Criar e gerenciar bancos de dados e aplicativos da camada de dados no Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ea5370349204765932baed828ffb9c9332b088f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82caaa97e4b6471e3c585fb23c49af00b2ceef0b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472954"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241612"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Criar e gerenciar bancos de dados e aplicativos da camada de dados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando e gerenciando bancos de dados e aplicativos da camada de dados](https://docs.microsoft.com/visualstudio/data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio).  
-  
   
 IMPORTANTE]
 >  Os projetos de banco de dados que foram incluídos em versões anteriores do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] agora são fornecidos em [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] ferramentas. Para obter mais informações, consulte [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).  

@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 796e1266e93fca845f9ac40d1fef0c1ca5a5b919
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 2f9a5d0c439d619864cc6e9559608e3c3891fc7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118442"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890030"
 ---
 # <a name="sandboxed-solution-considerations"></a>Considerações sobre a solução em área restrita
   *Soluções em área restrita* são um recurso do Microsoft SharePoint 2010 que permite que os usuários da coleção de site carregar suas próprias soluções de código personalizado. Uma solução em área restrita comum é carregar suas próprias Web Parts de usuários.  
@@ -81,66 +81,66 @@ ms.locfileid: "37118442"
 ## <a name="sandboxed-solution-limitations"></a>Limitações de solução de área restrita
  Quando uma solução em área restrita é implantada, a matriz de funcionalidade do SharePoint disponível para ele é limitada para ajudar a reduzir as vulnerabilidades de segurança pode ter. Algumas dessas limitações incluem o seguinte:  
   
--   Soluções em área restrita têm um subconjunto restrito de elementos da solução implantável disponíveis para eles. Modelos de projeto do SharePoint potencialmente vulneráveis, como definições de site e fluxos de trabalho, não estão disponíveis.  
+- Soluções em área restrita têm um subconjunto restrito de elementos da solução implantável disponíveis para eles. Modelos de projeto do SharePoint potencialmente vulneráveis, como definições de site e fluxos de trabalho, não estão disponíveis.  
   
--   SharePoint executa o código da solução em área restrita em um processo (*SPUCWorkerProcess.exe*) separado do principal [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] pool de aplicativos (*w3wp.exe*) processo.  
+- SharePoint executa o código da solução em área restrita em um processo (*SPUCWorkerProcess.exe*) separado do principal [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] pool de aplicativos (*w3wp.exe*) processo.  
   
--   Pastas mapeadas não podem ser adicionadas ao projeto.  
+- Pastas mapeadas não podem ser adicionadas ao projeto.  
   
--   Tipos no [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] assembly Microsoft.Office.Server não pode ser usado em soluções em área restrita. Além disso, somente tipos no [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] assembly Microsoft. SharePoint podem ser usados em soluções em área restrita.  
+- Tipos no [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] assembly Microsoft.Office.Server não pode ser usado em soluções em área restrita. Além disso, somente tipos no [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] assembly Microsoft. SharePoint podem ser usados em soluções em área restrita.  
   
- É importante observar que especificar uma solução do SharePoint como uma solução em área restrita não tem nenhum efeito no servidor do SharePoint; apenas determina como o projeto do SharePoint é implantado no SharePoint de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e quais assemblies ele se vincula. Não afeta o gerado *. wsp* arquivo e o *. wsp* arquivo não tem dados que correlaciona diretamente para o *solução em área restrita* propriedade.  
+  É importante observar que especificar uma solução do SharePoint como uma solução em área restrita não tem nenhum efeito no servidor do SharePoint; apenas determina como o projeto do SharePoint é implantado no SharePoint de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e quais assemblies ele se vincula. Não afeta o gerado *. wsp* arquivo e o *. wsp* arquivo não tem dados que correlaciona diretamente para o *solução em área restrita* propriedade.  
   
 ## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>Elementos soluções em área restrita e recursos
  Soluções em área restrita dão suporte a elementos e os recursos a seguir:  
   
--   Tipos de conteúdo/campos  
+- Tipos de conteúdo/campos  
   
--   Ações personalizadas  
+- Ações personalizadas  
   
--   Fluxos de trabalho declarativos  
+- Fluxos de trabalho declarativos  
   
--   Receptores de evento  
+- Receptores de evento  
   
--   Textos explicativos do recurso  
+- Textos explicativos do recurso  
   
--   Definições de lista  
+- Definições de lista  
   
--   Instâncias de lista  
+- Instâncias de lista  
   
--   Arquivos do módulo  
+- Arquivos do módulo  
   
--   Navegação  
+- Navegação  
   
--   *onet*  
+- *onet*  
   
--   SPItemEventReceiver  
+- SPItemEventReceiver  
   
--   SPListEventReceiver  
+- SPListEventReceiver  
   
--   SPWebEventReceiver  
+- SPWebEventReceiver  
   
--   Suporte para todas as Web Parts que derivam de `System.Web.UI.WebControls.WebParts.WebPart`  
+- Suporte para todas as Web Parts que derivam de `System.Web.UI.WebControls.WebParts.WebPart`  
   
--   Web Parts  
+- Web Parts  
   
--   Elementos de recurso WebTemplate (em vez de *webtemp*)  
+- Elementos de recurso WebTemplate (em vez de *webtemp*)  
   
--   Web Parts visuais  
+- Web Parts visuais  
   
- Soluções em área restrita não dão suporte a elementos e os recursos a seguir:  
+  Soluções em área restrita não dão suporte a elementos e os recursos a seguir:  
   
--   Páginas de aplicativo  
+- Páginas de aplicativo  
   
--   Grupo de ação personalizado  
+- Grupo de ação personalizado  
   
--   Recursos de escopo de farm  
+- Recursos de escopo de farm  
   
--   Elemento `HideCustomAction`  
+- Elemento `HideCustomAction`  
   
--   Recursos de escopo do aplicativo Web  
+- Recursos de escopo do aplicativo Web  
   
--   Fluxos de trabalho com código  
+- Fluxos de trabalho com código  
   
 ## <a name="see-also"></a>Consulte também
  [Diferenças entre a área restrita e soluções em farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   

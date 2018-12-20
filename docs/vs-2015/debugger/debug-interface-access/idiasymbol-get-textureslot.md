@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_textureSlot | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ dev_langs:
 - C++
 ms.assetid: 166a1a3a-2e10-4baa-ace1-9104b56185ce
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 798c92c07c2e87aaec7d1ea624bf164a26955bab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5e718316e11ba067ec9fd31057a7696585a0bf8f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467536"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764017"
 ---
 # <a name="idiasymbolgettextureslot"></a>IDiaSymbol::get_textureSlot
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSymbol::get_textureSlot](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-textureslot).  
-  
 Recupera o slot de textura.  
   
 ## <a name="syntax"></a>Sintaxe  

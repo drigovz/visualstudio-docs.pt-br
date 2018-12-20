@@ -1,7 +1,7 @@
 ---
 title: CompilandDetails | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - CompilandDetails symbol
 ms.assetid: ddc7d794-c622-4c63-b2a6-72f8b2d0022a
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c385d82dfc9a4223610000642b82b8cffe4a7109
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e94993440a8fba4b215cb7a7b32f55f98475fb51
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464047"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769071"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [CompilandDetails](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/compilanddetails).  
-  
 Informações de Compiland são divididas entre símbolos com um `SymTagCompiland` marca (nível baixo de detalhe) e um `SymTagCompilandDetails` marca (maior nível de detalhes). `SymTagCompilandDetails` requer o carregamento de símbolos adicionais. No entanto, ele fornece uma grande quantidade de informações sobre o compiland que não está disponível com um `SymTagCompiland` símbolo.  
   
 ## <a name="properties"></a>Propriedades  

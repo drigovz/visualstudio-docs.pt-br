@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_sizeInUdt | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ dev_langs:
 - C++
 ms.assetid: a82ab896-0185-46a4-b4d5-babfcc660fe1
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9fcd0f0dcb728bad39e7348244bd52c7b8b62d49
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2528428180386eb8c159dd2edc67f496ecd66883
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468373"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803481"
 ---
 # <a name="idiasymbolgetsizeinudt"></a>IDiaSymbol::get_sizeInUdt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSymbol::get_sizeInUdt](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-sizeinudt).  
-  
 Recupera o tamanho de um membro de um tipo definido pelo usuário.  
   
 ## <a name="syntax"></a>Sintaxe  

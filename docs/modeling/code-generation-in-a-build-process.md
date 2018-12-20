@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e42d37e6cb31917a7da8666a5bd0b4dd54f0a837
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: ef7c49c514c9104ee4659db983b04c27036df889
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409798"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281817"
 ---
 # <a name="code-generation-in-a-build-process"></a>Geração de código em um processo de compilação
 
-[Transformação de texto](../modeling/code-generation-and-t4-text-templates.md) pode ser invocado como parte do [processo de compilação](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) de uma solução do Visual Studio. Há tarefas de compilação que são especializadas para a transformação de texto. As tarefas de compilação T4 executam modelos de texto de tempo de design e também compilam modelos de texto de tempo de execução (pré-processados).
+[Transformação de texto](../modeling/code-generation-and-t4-text-templates.md) pode ser invocado como parte do [processo de compilação](/azure/devops/pipelines/index) de uma solução do Visual Studio. Há tarefas de compilação que são especializadas para a transformação de texto. As tarefas de compilação T4 executam modelos de texto de tempo de design e também compilam modelos de texto de tempo de execução (pré-processados).
 
 Há algumas diferenças em termos do que as tarefas de compilação podem fazer, dependendo do mecanismo de compilação que você usa. Quando você compila a solução no Visual Studio, um modelo de texto pode acessar a API do Visual Studio (EnvDTE) se o [hostspecific = "true"](../modeling/t4-template-directive.md) atributo é definido. Mas isso não é verdadeiro quando você compila a solução da linha de comando ou ao iniciar uma compilação do servidor por meio do Visual Studio. Nesses casos, a compilação é executada pelo MSBuild e um host T4 diferente é usado.
 
@@ -33,7 +33,7 @@ Para habilitar tarefas de compilação no seu computador de desenvolvimento, ins
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Se [seu servidor de compilação](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9) é executado em um computador no qual o Visual Studio não estiver instalado, copie os seguintes arquivos para o computador de build do seu computador de desenvolvimento. Substitua os números de versão mais recentes para ' *'.
+Se [seu servidor de compilação](/azure/devops/pipelines/agents/agents) é executado em um computador no qual o Visual Studio não estiver instalado, copie os seguintes arquivos para o computador de build do seu computador de desenvolvimento. Substitua os números de versão mais recentes para ' *'.
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
@@ -136,7 +136,7 @@ Não há integração interna específica com um sistema de controle do código-
 
 Para especificar que os arquivos somente leitura devem ser substituídos, insira esta propriedade:
 
-`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`
+`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>`
 
 A menos que você personalize a etapa de pós-processamento, um aviso será registrado na lista de erros quando um arquivo for substituído.
 
@@ -236,7 +236,7 @@ Em um modelo de texto, defina `hostspecific` na diretiva do modelo. Use o [parâ
 The project folder is: <#= ProjectFolder #>
 ```
 
-Em um processador de diretriz, você pode chamar [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx):
+Em um processador de diretriz, você pode chamar [ITextTemplatingEngineHost.ResolveParameterValue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\)):
 
 ```csharp
 string value = Host.ResolveParameterValue("-", "-", "parameterName");

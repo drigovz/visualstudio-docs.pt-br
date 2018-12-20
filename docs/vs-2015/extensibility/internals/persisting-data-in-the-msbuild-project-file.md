@@ -1,7 +1,7 @@
 ---
 title: Manter dados no arquivo de projeto do MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 288fe5387a25ed74f0fd18d9d461328f4e922724
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 059ddc7b9b8fe0de06530af704bb5f7e271f6744
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468316"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749647"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Mantendo os dados no arquivo de projeto do MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [persistência de dados no arquivo de projeto MSBuild](https://docs.microsoft.com/visualstudio/extensibility/internals/persisting-data-in-the-msbuild-project-file).  
-  
 Talvez seja necessário um subtipo de projeto manter dados específicos subtipo-no arquivo de projeto para uso posterior. Um subtipo de projeto usa a persistência de arquivo de projeto para atender aos seguintes requisitos:  
   
 1.  Manter os dados usados como parte da criação do projeto. (Para obter mais informações sobre o Microsoft Build Engine, consulte [MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Informações relacionadas ao build podem:  

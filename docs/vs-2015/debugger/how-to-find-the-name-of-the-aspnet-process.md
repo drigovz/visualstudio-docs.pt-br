@@ -1,7 +1,7 @@
 ---
 title: 'Como: localizar o nome do processo do ASP.NET | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,30 +19,28 @@ helpviewer_keywords:
 - ASP.NET process
 ms.assetid: 931a7597-b0f0-4a28-931d-46e63344435f
 caps.latest.revision: 32
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d29d40f55bc693040d1acce632feba72b0a58d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ad3bea47bcde0da87bd185fac132c95f26ce4b0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463998"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793237"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Como localizar o nome do processo ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: localizar o nome do processo do ASP.NET](https://docs.microsoft.com/visualstudio/debugger/how-to-find-the-name-of-the-aspnet-process).  
-  
 Para anexar a um aplicativo do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] em execução, você precisará saber o nome do processo do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]:  
   
--   Se estiver executando o IIS 6.0 ou IIS 7.0, o nome será w3wp.exe.  
+- Se estiver executando o IIS 6.0 ou IIS 7.0, o nome será w3wp.exe.  
   
--   Se estiver executando uma versão anterior do IIS, o nome será aspnet_wp.exe.  
+- Se estiver executando uma versão anterior do IIS, o nome será aspnet_wp.exe.  
   
- Para aplicativos criados usando [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] ou versões posteriores, o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] código pode residir no sistema de arquivos e executar no servidor de teste WebDev.WebServer.exe. Nesse caso, você deve anexar a WebDev.WebServer.exe em vez do processo do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Essa situação aplica-se somente à depuração local.  
+  Para aplicativos criados usando [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] ou versões posteriores, o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] código pode residir no sistema de arquivos e executar no servidor de teste WebDev.WebServer.exe. Nesse caso, você deve anexar a WebDev.WebServer.exe em vez do processo do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Essa situação aplica-se somente à depuração local.  
   
- Aplicativos ASP antigos são executados dentro do processo inetinfo.exe do IIS quando ele está sendo executado no processo.  
+  Aplicativos ASP antigos são executados dentro do processo inetinfo.exe do IIS quando ele está sendo executado no processo.  
   
 > [!NOTE]
 >  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

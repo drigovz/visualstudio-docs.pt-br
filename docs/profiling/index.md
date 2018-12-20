@@ -1,20 +1,21 @@
 ---
 layout: LandingPage
-title: Criação de perfil de seus aplicativos com o Visual Studio | Microsoft Docs
+title: Meça o desempenho do aplicativo usando a criação de perfil | Microsoft Docs
 description: Saiba como usar o Visual Studio 2017 para criar o perfil do desempenho dos seus aplicativos, serviços e ferramentas na linguagem de sua escolha.
+ms.custom: seodec18
 ms.topic: landing-page
 ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 1ebb16dab1e997809df80b6e67771a30347c6ab9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 972e4b8b58229786d403451ddfd7a49a3fe4d6a0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267680"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065539"
 ---
-# <a name="profiling-in-visual-studio"></a>Criação de perfis no Visual Studio
+# <a name="measure-app-performance-in-visual-studio"></a>Meça o desempenho do aplicativo no Visual Studio
 
 Ferramentas de diagnóstico e criação de perfil ajudam você a diagnosticar o uso de memória e de CPU, além de outros problemas no aplicativo. Com essas ferramentas, você pode acumular dados (como valores de variáveis, chamadas de função e eventos) ao longo do tempo em que você executar o aplicativo no depurador. Você pode exibir o estado do seu aplicativo em pontos diferentes durante a execução do seu código. 
 

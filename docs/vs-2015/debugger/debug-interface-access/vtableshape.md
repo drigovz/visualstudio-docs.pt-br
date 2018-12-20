@@ -1,7 +1,7 @@
 ---
 title: VTableShape | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ helpviewer_keywords:
 - SymTagVTableShape tag
 ms.assetid: dd97f4c3-115d-46a9-b506-2531e30a0d8f
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2f40c276cbbac7815c3a21778e7980616c879cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7be27583895768ea9c9324e3b6eb2d378de6f39
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462843"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739554"
 ---
 # <a name="vtableshape"></a>VTableShape
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [VTableShape](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/vtableshape).  
-  
 O [VTable](../../debugger/debug-interface-access/vtable.md) símbolo tem um símbolo de filho de classe identificado pelo `SymTagVTableShape` marca.  
   
 ## <a name="properties"></a>Propriedades  

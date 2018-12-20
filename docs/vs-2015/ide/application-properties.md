@@ -1,7 +1,7 @@
 ---
 title: Propriedades do aplicativo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,47 +18,45 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f56ede85ffe643b995e3c7b51327693c8ef8847
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a89832fe70e2e19085e8006646de5370b6019cbc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848612"
 ---
 # <a name="application-properties"></a>Propriedades do aplicativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [propriedades do aplicativo](https://docs.microsoft.com/visualstudio/ide/application-properties).  
-  
 Você pode definir propriedades gerais de aplicativo para aplicativos do Visual Basic, C# e F#, como o tipo de aplicativo, o objeto de inicialização e informações de assembly, no painel **Aplicativo** do **Designer de Projeto**.  
   
  As seguintes tarefas podem ser realizadas no painel **Aplicativo**:  
   
--   Especificar informações de assembly  
+- Especificar informações de assembly  
   
--   Especificar uma tela inicial para um aplicativo  
+- Especificar uma tela inicial para um aplicativo  
   
--   Especificar eventos no nível do aplicativo  
+- Especificar eventos no nível do aplicativo  
   
--   Alterar um nome de assembly  
+- Alterar um nome de assembly  
   
--   Alterar o namespace de um aplicativo  
+- Alterar o namespace de um aplicativo  
   
--   Alterar o tipo de aplicativo  
+- Alterar o tipo de aplicativo  
   
--   Alterar o objeto de inicialização de um aplicativo  
+- Alterar o objeto de inicialização de um aplicativo  
   
--   Especificar um ícone do aplicativo  
+- Especificar um ícone do aplicativo  
   
--   Habilitar estilos visuais do Windows XP  
+- Habilitar estilos visuais do Windows XP  
   
--   Especificar o comportamento de instanciação de um aplicativo  
+- Especificar o comportamento de instanciação de um aplicativo  
   
--   Habilitar a autenticação de usuário personalizada  
+- Habilitar a autenticação de usuário personalizada  
   
--   Especificar o comportamento de desligamento de um aplicativo  
+- Especificar o comportamento de desligamento de um aplicativo  
   
- As tarefas disponíveis para seu aplicativo dependem da linguagem de desenvolvimento usada.  
+  As tarefas disponíveis para seu aplicativo dependem da linguagem de desenvolvimento usada.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Como especificar um ícone do aplicativo (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  

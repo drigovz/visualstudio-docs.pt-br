@@ -1,7 +1,7 @@
 ---
 title: IDebugMethodField::EnumAllLocals | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 0bc7cc13-2628-4bd8-8c06-4d2aa6755ea8
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce7db92adfed5558eaaa86e2e84af51da9059020
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7f3f730d0afdbb1c78e2bf76ced59981ff51110
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460726"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774608"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugMethodField::EnumAllLocals](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmethodfield-enumalllocals).  
-  
 Cria um enumerador para todas as variáveis locais do método, inclusive aquelas geradas internamente por um compilador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT EnumAllLocals(   
+HRESULT EnumAllLocals(   
    IDebugAddress*     pAddress,  
    IEnumDebugFields** ppLocals  
 );  

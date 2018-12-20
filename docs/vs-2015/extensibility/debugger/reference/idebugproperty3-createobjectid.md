@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::CreateObjectID | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: f2fa81e7-822f-456e-8729-a96a18eea771
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5b7ca39a36bafe2ebba838c7f6d03f89e2f8132
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e27d0dca73829bb5dd98c42d2e42ba34f4afdf0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465731"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776194"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProperty3::CreateObjectID](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugproperty3-createobjectid).  
-  
 Cria uma ID exclusiva para essa propriedade para garantir que ele seja exclusivo entre todas as outras propriedades.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT CreateObjectID(  
+HRESULT CreateObjectID(  
    void  
 );  
 ```  
   
 ```csharp  
-int CreateObjectID();  
+int CreateObjectID();  
 ```  
   
 ## <a name="return-value"></a>Valor de retorno  

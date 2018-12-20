@@ -1,7 +1,7 @@
 ---
 title: Opções, Editor de Texto, C#, Avançado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64e01a00fbb4fcbd637652a161982bd86b645f20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 51707a1df9c9f7144dc9a3af021262ca818f03b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850510"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opções, Editor de Texto, C#, Avançado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [opções, Editor de texto, c#, avançado](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-csharp-advanced).  
-  
   
 Use essa caixa de diálogo para modificar as configurações de formatação do editor, refatoração de código e comentários da documentação XML do Visual C#. Para acessar essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda a pasta **Editor de Texto**, expanda **C#** e, em seguida, clique em **Avançado**.  
   
@@ -51,21 +49,21 @@ Use essa caixa de diálogo para modificar as configurações de formatação do 
  Sublinhar erros no editor  
  Identifica erros de build no código. Quando essa opção é selecionada, os sublinhados ondulados são exibidos em cores que têm significados específicos:  
   
--   Erros de análise são vermelhos.  
+- Erros de análise são vermelhos.  
   
--   Erros de build são azuis.  
+- Erros de build são azuis.  
   
--   Avisos de build são verdes.  
+- Avisos de build são verdes.  
   
--   Edições de [Editar e Continuar](../../debugger/edit-and-continue.md) inválidas são roxas.  
+- Edições de [Editar e Continuar](../../debugger/edit-and-continue.md) inválidas são roxas.  
   
- Mova o ponteiro sobre o segmento de código sublinhado para ver uma ToolTip com informações sobre o erro.  
+  Mova o ponteiro sobre o segmento de código sublinhado para ver uma ToolTip com informações sobre o erro.  
   
- Mostrar erros semânticos em tempo real  
- Identifica alguns erros de compilação sem compilação explícita, por exemplo, declarando e usando um tipo desconhecido ou referenciando uma propriedade desconhecida.  
+  Mostrar erros semânticos em tempo real  
+  Identifica alguns erros de compilação sem compilação explícita, por exemplo, declarando e usando um tipo desconhecido ou referenciando uma propriedade desconhecida.  
   
- Realçar referências a símbolo sob o cursor  
- Quando o cursor é posicionado em um símbolo, ou ao clicar em um símbolo, todas as instâncias desse símbolo no arquivo de código são realçadas.  
+  Realçar referências a símbolo sob o cursor  
+  Quando o cursor é posicionado em um símbolo, ou ao clicar em um símbolo, todas as instâncias desse símbolo no arquivo de código são realçadas.  
   
 ## <a name="refactoring"></a>Refatoração  
  Verificar os resultados da refatoração  

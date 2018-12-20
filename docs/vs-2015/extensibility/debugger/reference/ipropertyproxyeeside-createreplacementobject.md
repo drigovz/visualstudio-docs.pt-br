@@ -1,7 +1,7 @@
 ---
 title: IPropertyProxyEESide::CreateReplacementObject | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,33 +17,31 @@ ms.assetid: 0cfe79b8-c3f1-48b0-a225-e39dee2c92fe
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 048fe0e60422d5d787424256009ef585a133c914
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c71f87b35915906475ce27971196d540ece39452
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462954"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757191"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IPropertyProxyEESide::CreateReplacementObject](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject).  
-  
 Cria uma cópia de um objeto de dados específicos para o avaliador de expressão (EE).  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT CreateReplacementObject(  
-   IEEDataStorage*  dataIn,  
-   IEEDataStorage** dataOut  
+HRESULT CreateReplacementObject(  
+   IEEDataStorage*  dataIn,  
+   IEEDataStorage** dataOut  
 );  
 ```  
   
 ```csharp  
-int CreateReplacementObject(  
-   IEEDataStorage     dataIn,  
-   out IEEDataStorage dataOut  
+int CreateReplacementObject(  
+   IEEDataStorage     dataIn,  
+   out IEEDataStorage dataOut  
 );  
 ```  
   

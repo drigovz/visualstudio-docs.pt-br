@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Findlinesbyva | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSession::findLinesByVA method
 ms.assetid: f647eee9-a73c-483b-9fe9-21f42e560a7b
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 846eeebf8a84dd5fe6b24a568927fd7e4e22975e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 74ec8935103120a274876bb6ca074d2f9b01df2b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466124"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744492"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasession:: Findlinesbyva](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findlinesbyva).  
-  
 Recupera as informações de número de linha para linhas contidas em um intervalo de endereço virtual especificado (VA).  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findLinesByVA (   
+HRESULT findLinesByVA (   
    ULONGLONG             va,  
    DWORD                 length,  
    IDiaEnumLineNumbers** ppResult  

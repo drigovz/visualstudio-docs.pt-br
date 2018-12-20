@@ -1,5 +1,5 @@
 ---
-title: Dicas de produtividade para o Visual Studio
+title: Dicas de produtividade
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c5c93edd089c09fff1423b7375bebb10dc18168
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e4b4d4e6a0833d6fbea1a34c26a5858f3e28be1c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179626"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067972"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Dicas de produtividade para o Visual Studio
 
@@ -34,9 +34,9 @@ Escreva código mais rapidamente usando os seguintes recursos.
 
      Para habilitar o modo de sugestão, escolha as teclas **Ctrl**+**Alt**+**Barra de espaço** ou, na barra de menus, escolha **Editar** > **IntelliSense** > **Ativar/Desativar Modo de Preenchimento**.
 
-- **Use trechos de código**. Você pode usar trechos internos ou criar seus próprios trechos.
+- **Use snippets de código**. Você pode usar snippets internos ou criar seus próprios snippets.
 
-     Para inserir um trecho, na barra de menus, escolha **Editar** > **IntelliSense** > **Inserir Trecho** ou **Cercar com**, ou abra o menu de atalho em um arquivo e escolha **Trecho** > **Inserir Trecho** ou **Cercar com**. Para obter mais informações, consulte [Trechos de Código](../ide/code-snippets.md).
+     Para inserir um snippet, na barra de menus, escolha **Editar** > **IntelliSense** > **Inserir Snippet** ou **Cercar com**, ou abra o menu de atalho em um arquivo e escolha **Trecho** > **Inserir Snippet** ou **Cercar com**. Para obter mais informações, consulte [Snippets de Código](../ide/code-snippets.md).
 
 - **Corrija erros de código embutidos**. As Ações Rápidas permitem refatorar, gerar ou, de outro modo, modificar o código de maneira fácil com uma única ação. Essas ações podem ser aplicadas usando os ícones de chave de fenda ![ícone de chave de fenda](media/screwdriver-icon.png) ou de lâmpada ![ícone de lâmpada](media/light-bulb-icon.png) ou pressionando **Alt**+**Enter** ou **Ctrl**+**.** quando o cursor estiver sobre a linha de código apropriada. Consulte [Ações Rápidas](quick-actions.md) para obter mais informações.
 
@@ -78,7 +78,7 @@ Você pode procurar no IDE comandos, arquivos e opções, bem como filtrar o con
 
 A depuração pode consumir muito tempo, mas as dicas a seguir podem ajudar a acelerar o processo.
 
-- **Teste a mesma página, aplicativo ou site em navegadores diferentes**. À medida que você depura seu código, poderá facilmente mudar entre os navegadores da Web instalados, incluindo o [Inspetor de Página (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), sem ter que abrir a caixa de diálogo **Procurar Com**. Você pode usar a lista **Destino de Depuração**, que está na barra de ferramentas **Standard** ao lado do botão **Iniciar Depuração**, para verificar rapidamente qual navegador está utilizando enquanto depura ou exibe as páginas.
+- **Teste a mesma página, aplicativo ou site em navegadores diferentes**. À medida que você depura seu código, poderá facilmente mudar entre os navegadores da Web instalados, incluindo o [Inspetor de Página (Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), sem ter que abrir a caixa de diálogo **Procurar Com**. Você pode usar a lista **Destino de Depuração**, que está na barra de ferramentas **Standard** ao lado do botão **Iniciar Depuração**, para verificar rapidamente qual navegador está utilizando enquanto depura ou exibe as páginas.
 
     ![Selecionar opções de depuração de navegador da Web](../ide/media/webbrowserdropdowntoolbar.png)
 
@@ -118,11 +118,11 @@ A qualquer momento, você pode estar trabalhando em vários arquivos de código 
 
      Você também pode gerenciar arquivos mais facilmente criando outra instância do **Gerenciador de Soluções** e movendo-a para outro monitor. Para criar outra instância do **Gerenciador de Soluções**, abra um menu de atalho no **Gerenciador de Soluções** e então escolha **Novo Modo de Exibição do Gerenciador de Soluções**.
 
-- **Personalizar as fontes que aparecem no Visual Studio**. Você pode alterar o tipo de fonte, a cor e o tamanho usados para o texto no IDE. Por exemplo, você pode personalizar a cor de elementos de código específicos no editor e a fonte em janelas de ferramenta ou por meio do IDE. Para obter mais informações, confira [Como alterar fontes e cores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) e [Como alterar fontes e cores no editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Personalizar as fontes que aparecem no Visual Studio**. Você pode alterar o tipo de fonte, a cor e o tamanho usados para o texto no IDE. Por exemplo, você pode personalizar a cor de elementos de código específicos no editor e a fonte em janelas de ferramenta ou por meio do IDE. Para obter mais informações, confira [Como: Alterar fontes e cores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) e [Como: Alterar fontes e cores no editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Consulte também
 
 - [Atalhos de teclado padrão para comandos usados com frequência](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
-- [Como personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [Passo a passo: criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Como: Personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [Passo a passo: Criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 - [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md)

@@ -1,7 +1,7 @@
 ---
 title: Gerar e configurar seu aplicativo a partir de modelos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -9,21 +9,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4dc8f572-a09e-4d19-a92d-f1df383e728b
 caps.latest.revision: 9
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d972e56ebd434f9e302d48ce325c66320f50be74
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58d7112048aba7d0c3b75e83e2b10249b200e6d9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475873"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806354"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Gerar e configurar o aplicativo por meio de modelos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [gerar e configurar o aplicativo a partir de modelos de](https://docs.microsoft.com/visualstudio/modeling/generate-and-configure-your-app-from-models).  
-  
 Você pode gerar ou configurar as partes do seu aplicativo de um modelo. O modelo pode estar em UML ou de uma DSL.  
   
  O modelo representa os requisitos mais diretamente o código. Ao derivar o comportamento do aplicativo diretamente do modelo, você pode responder a requisitos alterados atualização muito mais rápida e confiável que o código. Embora algum trabalho inicial é necessária para configurar a derivação, esse investimento é retornado se você espera que as alterações nos requisitos, ou se você planeja fazer diversas variantes do produto.  
@@ -31,30 +29,30 @@ Você pode gerar ou configurar as partes do seu aplicativo de um modelo. O model
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Gerando o código do seu aplicativo de um modelo  
  É a maneira mais fácil para gerar o código usando modelos de texto. Você pode gerar o código na mesma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] em que você mantenha o modelo de solução. Para obter mais informações, consulte:  
   
--   [Geração de código no tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
+- [Geração de código no tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
   
--   [Gerar arquivos por meio de um modelo UML](../modeling/generate-files-from-a-uml-model.md)  
+- [Gerar arquivos por meio de um modelo UML](../modeling/generate-files-from-a-uml-model.md)  
   
--   [Gerando código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)  
+- [Gerando código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)  
   
- Esse método é mais fácil aplicar incrementalmente. Iniciar com um aplicativo que funciona apenas para um caso específico e escolha algumas partes dele que você deseja variar do modelo. Renomeie os arquivos de código-fonte dessas partes para que se tornem arquivos de modelo (. TT) de texto. Neste ponto, os arquivos de origem. cs automaticamente serão gerados de arquivos de modelo, portanto, o aplicativo funcionará como antes.  
+  Esse método é mais fácil aplicar incrementalmente. Iniciar com um aplicativo que funciona apenas para um caso específico e escolha algumas partes dele que você deseja variar do modelo. Renomeie os arquivos de código-fonte dessas partes para que se tornem arquivos de modelo (. TT) de texto. Neste ponto, os arquivos de origem. cs automaticamente serão gerados de arquivos de modelo, portanto, o aplicativo funcionará como antes.  
   
- Em seguida, você pode levar a uma parte do código e substituí-la por uma expressão de modelo de texto, que lê o modelo e gera essa parte do arquivo de origem. Pelo menos um valor do modelo deve gerar o código-fonte original para que, novamente, você pode executar o aplicativo e ele funcionará como antes. Depois de testar valores diferentes de modelos, você pode passar para inserir expressões de modelo em outra parte do código.  
+  Em seguida, você pode levar a uma parte do código e substituí-la por uma expressão de modelo de texto, que lê o modelo e gera essa parte do arquivo de origem. Pelo menos um valor do modelo deve gerar o código-fonte original para que, novamente, você pode executar o aplicativo e ele funcionará como antes. Depois de testar valores diferentes de modelos, você pode passar para inserir expressões de modelo em outra parte do código.  
   
- Esse método incremental significa que a geração de código geralmente é uma abordagem de baixo risco. Os aplicativos resultantes geralmente executam quase, bem como uma versão manuscrita.  
+  Esse método incremental significa que a geração de código geralmente é uma abordagem de baixo risco. Os aplicativos resultantes geralmente executam quase, bem como uma versão manuscrita.  
   
- No entanto, se você iniciar com um aplicativo existente, você pode achar que um lote de refatoração é necessária para separar os diferentes comportamentos que são governados pelo modelo para que eles podem ser variados independentemente. É recomendável que você avalie esse aspecto do aplicativo ao estimar o custo do seu projeto.  
+  No entanto, se você iniciar com um aplicativo existente, você pode achar que um lote de refatoração é necessária para separar os diferentes comportamentos que são governados pelo modelo para que eles podem ser variados independentemente. É recomendável que você avalie esse aspecto do aplicativo ao estimar o custo do seu projeto.  
   
 ## <a name="configuring-your-application-from-a-model"></a>Configurar seu aplicativo de um modelo  
  Se você deseja variar o comportamento do aplicativo em tempo de execução, você não pode usar a geração de código, o que gera o código-fonte antes do aplicativo é compilado. Em vez disso, você pode projetar seu aplicativo para ler o modelo UML ou DSL e variam de seu comportamento de acordo. Para obter mais informações, consulte:  
   
--   [Ler um modelo UML no código do programa](../modeling/read-a-uml-model-in-program-code.md)  
+- [Ler um modelo UML no código do programa](../modeling/read-a-uml-model-in-program-code.md)  
   
--   [Como abrir um modelo partindo de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- [Como abrir um modelo partindo de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
- Esse método também pode ser aplicado incrementalmente, mas há mais trabalho no início. Você precisa escrever o código que leia o modelo e configurar uma estrutura que permite que seus valores fique acessível para as partes variáveis. Tornar as partes variáveis genéricos é mais caro do que a geração de código.  
+  Esse método também pode ser aplicado incrementalmente, mas há mais trabalho no início. Você precisa escrever o código que leia o modelo e configurar uma estrutura que permite que seus valores fique acessível para as partes variáveis. Tornar as partes variáveis genéricos é mais caro do que a geração de código.  
   
- Um aplicativo genérico executa normalmente menos bem que suas contrapartes específicos. Se o desempenho é fundamental, seu plano de projeto deve incluir uma avaliação desse risco.  
+  Um aplicativo genérico executa normalmente menos bem que suas contrapartes específicos. Se o desempenho é fundamental, seu plano de projeto deve incluir uma avaliação desse risco.  
   
 ## <a name="developing-a-derived-application"></a>Desenvolvendo um aplicativo derivado  
  Você pode achar úteis as seguintes diretrizes gerais.  

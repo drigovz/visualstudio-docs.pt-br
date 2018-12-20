@@ -1,7 +1,7 @@
 ---
 title: 'Como: usar a janela Threads | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,21 +26,19 @@ helpviewer_keywords:
 - debugging [Visual Studio], threads
 ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
 caps.latest.revision: 48
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5004f437b55709bf6db0a59fc17b42894cc17e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 925e5ec609c07fa1ca6d703943cf3437f0f9bf84
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465243"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791690"
 ---
 # <a name="how-to-use-the-threads-window"></a>Como usar a janela Threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depurando um aplicativo multithread usando a janela Threads](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-threads-window).  
-  
 No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo que você está depurando.  
   
  O **Threads** janela contém uma tabela em que cada linha representa um thread em seu aplicativo. Por padrão, a tabela lista todos os threads em seu aplicativo, mas você pode filtrar a lista para mostrar apenas os threads do seu interesse. Cada coluna contém um tipo diferente de informação. Você também pode ocultar algumas colunas. Se você exibir todas as colunas, as seguintes informações são exibidas, da esquerda para a direita:  

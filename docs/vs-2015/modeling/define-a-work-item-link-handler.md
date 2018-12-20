@@ -1,7 +1,7 @@
 ---
 title: Definir um manipulador de link de item de trabalho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 73a0a71e50360f7c70b7f4e466d6000333c3b89e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ce74627d1d2d48ab02e0b124fbc38949f1f76f9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474988"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733062"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definir um manipulador de link de item de trabalho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definir um manipulador de link de item de trabalho](https://docs.microsoft.com/visualstudio/modeling/define-a-work-item-link-handler).  
-  
 Você pode criar uma extensão de integração do Visual Studio que responde quando o usuário cria ou exclui um link entre um elemento de modelo UML e um item de trabalho. Por exemplo, quando o usuário opta por vincular um novo item de trabalho a um elemento de modelo, seu código pode inicializar os campos do item de trabalho a partir de valores no modelo.  
   
 ## <a name="set-up-a-uml-extension-solution"></a>Configurar uma solução de extensão UML  
@@ -94,11 +92,11 @@ Você pode criar uma extensão de integração do Visual Studio que responde qua
 ### <a name="import-the-work-item-namespace"></a>Importar o Namespace de Item de trabalho  
  No seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] project **referências**, adicione referências aos assemblies a seguir:  
   
--   Microsoft  
+- Microsoft  
   
--   WorkItemTracking  
+- WorkItemTracking  
   
- No código do programa, importe os seguintes namespaces:  
+  No código do programa, importe os seguintes namespaces:  
   
 ```  
 using System.ComponentModel.Composition;  
@@ -264,7 +262,7 @@ public void OnWorkItemLinked
   item.Open();  
   item.Title = "something";  
   item.Save();  
-}   
+}   
 ```  
   
 ## <a name="accessing-the-work-item-reference-links"></a>Acessando os Links de referência de Item de trabalho  
@@ -284,21 +282,21 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
   
  em que:  
   
--   O URI para o servidor deve ser:  
+- O URI para o servidor deve ser:  
   
-     `http://tfServer:8080/tfs/projectCollection`  
+   `http://tfServer:8080/tfs/projectCollection`  
   
-     Caso é importante em `projectCollection`.  
+   Caso é importante em `projectCollection`.  
   
--   `RepositoryGuid` pode ser obtido da sua conexão de TFS:  
+- `RepositoryGuid` pode ser obtido da sua conexão de TFS:  
   
-    ```csharp  
-    TfsTeamProjectCollection tpc = TfsTeamProjectCollectionFactory...;  
-    RepositoryGuid= tpc.InstanceId;  
+  ```csharp  
+  TfsTeamProjectCollection tpc = TfsTeamProjectCollectionFactory...;  
+  RepositoryGuid= tpc.InstanceId;  
   
-    ```  
+  ```  
   
- Para obter mais informações sobre referências, consulte [elementos de modelo de anexar cadeias de caracteres de referência para UML](../modeling/attach-reference-strings-to-uml-model-elements.md).  
+  Para obter mais informações sobre referências, consulte [elementos de modelo de anexar cadeias de caracteres de referência para UML](../modeling/attach-reference-strings-to-uml-model-elements.md).  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.TeamFoundation.WorkItemTracking.Client.WorkItemStore?displayProperty=fullName>   

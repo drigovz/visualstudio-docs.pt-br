@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ee3521a4b427096ab85c30e08da008092606c46
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 13f2633895e1bf0f228f9984ade99b01f6e0cc12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496019"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915822"
 ---
 # <a name="vsix-color-editor"></a>Editor de cores do VSIX
 A ferramenta Editor de cores de extensão do Visual Studio pode criar e editar cores personalizadas para o Visual Studio. A ferramenta também pode gerar chaves de recurso de tema para que as cores podem ser usadas no código. Essa ferramenta é útil para fazer as cores para uma extensão do Visual Studio que dá suporte a temas. Essa ferramenta pode abrir arquivos. pkgdef e. XML. Temas do Studio Visual (arquivos .vstheme) podem ser usados com o Editor de cores do Visual Studio extensão, alterando a extensão de arquivo para. XML. Além disso, os arquivos de .vstheme podem ser importados para um arquivo. XML atual.  
@@ -44,103 +44,103 @@ A ferramenta Editor de cores de extensão do Visual Studio pode criar e editar c
   
  Para criar cores personalizadas usando o Editor de cores de extensão do Visual Studio, siga estas etapas:  
   
-1.  Determine os nomes de categoria e o token para novos tokens de cor.  
+1. Determine os nomes de categoria e o token para novos tokens de cor.  
   
-2.  Escolha os matizes que o elemento de interface do usuário serão usados para cada tema e a cor do sistema de alto contraste.  
+2. Escolha os matizes que o elemento de interface do usuário serão usados para cada tema e a cor do sistema de alto contraste.  
   
-3.  Use o editor de cores para criar novos tokens de cor.  
+3. Use o editor de cores para criar novos tokens de cor.  
   
-4.  Use as cores em uma extensão do Visual Studio.  
+4. Use as cores em uma extensão do Visual Studio.  
   
-5.  Teste as alterações no Visual Studio.  
+5. Teste as alterações no Visual Studio.  
   
- **Etapa 1: Determine a categoria e nomes de token para os novos tokens de cor.**  
+   **Etapa 1: Determine a categoria e nomes de token para os novos tokens de cor.**  
   
- Esquema de nomenclatura preferencial para um VSColor é **[Category] [tipo de interface do usuário] [estado]**. Não use a palavra "color" VSColor nomes, pois ela é redundante.  
+   Esquema de nomenclatura preferencial para um VSColor é **[Category] [tipo de interface do usuário] [estado]**. Não use a palavra "color" VSColor nomes, pois ela é redundante.  
   
- Os nomes de categoria fornecem agrupamentos lógicos e devem ser definidos como restrito quanto possível. Por exemplo, o nome de uma janela de ferramenta única pode ser um nome de categoria, mas o nome de uma equipe de unidade ou projeto de toda a empresa não é. Agrupamento de entradas em categorias ajuda a evitar confusão entre as cores com o mesmo nome.  
+   Os nomes de categoria fornecem agrupamentos lógicos e devem ser definidos como restrito quanto possível. Por exemplo, o nome de uma janela de ferramenta única pode ser um nome de categoria, mas o nome de uma equipe de unidade ou projeto de toda a empresa não é. Agrupamento de entradas em categorias ajuda a evitar confusão entre as cores com o mesmo nome.  
   
- Um nome de token claramente deve indicar o tipo de elemento e a situações ou o "estado", para o qual a cor será aplicada. Por exemplo, uma Active Directory dica de dados **[tipo de interface do usuário]** podem ser nomeados "**DataTip**" e o **[estado]** poderia ser chamado "**Active**," resultante em um nome da cor de "**DataTipActive**." Como dicas de dados que o texto, de primeiro plano e uma cor de fundo precisam ser definido. Ao usar um emparelhamento de plano de fundo/primeiro plano, o editor de cores criará automaticamente as cores "**DataTipActive**" para o plano de fundo e "**DataTipActiveText**" para o primeiro plano.  
+   Um nome de token claramente deve indicar o tipo de elemento e a situações ou o "estado", para o qual a cor será aplicada. Por exemplo, uma Active Directory dica de dados **[tipo de interface do usuário]** podem ser nomeados "**DataTip**" e o **[estado]** poderia ser chamado "**Active**," resultante em um nome da cor de "**DataTipActive**." Como dicas de dados que o texto, de primeiro plano e uma cor de fundo precisam ser definido. Ao usar um emparelhamento de plano de fundo/primeiro plano, o editor de cores criará automaticamente as cores "**DataTipActive**" para o plano de fundo e "**DataTipActiveText**" para o primeiro plano.  
   
- Se a parte da interface do usuário tem apenas um estado, o **[estado]** parte do nome pode ser omitido. Por exemplo, se uma caixa de pesquisa tem uma borda e nenhuma alteração de estado que possa afetar a cor da borda, em seguida, o nome de token de cor da borda pode simplesmente ser chamado "**SearchBoxBorder**."  
+   Se a parte da interface do usuário tem apenas um estado, o **[estado]** parte do nome pode ser omitido. Por exemplo, se uma caixa de pesquisa tem uma borda e nenhuma alteração de estado que possa afetar a cor da borda, em seguida, o nome de token de cor da borda pode simplesmente ser chamado "**SearchBoxBorder**."  
   
- Alguns nomes de estado comuns incluem:  
+   Alguns nomes de estado comuns incluem:  
   
--   Ativo  
+- Ativo  
   
--   Inativo  
+- Inativo  
   
--   MouseOver  
+- MouseOver  
   
--   MouseDown  
+- MouseDown  
   
--   Selecionado  
+- Selecionado  
   
--   Focalizado  
+- Focalizado  
   
- Exemplos de alguns nomes de token para partes de um controle de item de lista:  
+  Exemplos de alguns nomes de token para partes de um controle de item de lista:  
   
--   ListItem  
+- ListItem  
   
--   ListItemBorder  
+- ListItemBorder  
   
--   ListItemMouseOver  
+- ListItemMouseOver  
   
--   ListItemMouseOverBorder  
+- ListItemMouseOverBorder  
   
--   ListItemSelected  
+- ListItemSelected  
   
--   ListItemSelectedBorder  
+- ListItemSelectedBorder  
   
--   ListItemDisabled  
+- ListItemDisabled  
   
--   ListItemDisabledBorder  
+- ListItemDisabledBorder  
   
- **Etapa 2: Escolha os matizes que o elemento de interface do usuário serão usados para cada tema e a cor do sistema de alto contraste.**  
+  **Etapa 2: Escolha os matizes que o elemento de interface do usuário serão usados para cada tema e a cor do sistema de alto contraste.**  
   
- Ao escolher cores personalizadas para a interface do usuário, selecione um elemento de interface do usuário existente semelhante e use suas cores como base. As cores para elementos de interface do usuário na caixa foram submetidos a revisão e teste, para que eles serão apareça adequados e se comportam corretamente em todos os temas.  
+  Ao escolher cores personalizadas para a interface do usuário, selecione um elemento de interface do usuário existente semelhante e use suas cores como base. As cores para elementos de interface do usuário na caixa foram submetidos a revisão e teste, para que eles serão apareça adequados e se comportam corretamente em todos os temas.  
   
- **Etapa 3: Use o editor de cores para criar novos tokens de cor.**  
+  **Etapa 3: Use o editor de cores para criar novos tokens de cor.**  
   
- Inicie o editor de cores e abra ou crie um novo arquivo. XML de cores do tema personalizado. Selecione **Editar > nova cor** no menu. Isso abre uma caixa de diálogo para especificar a categoria e um ou mais nomes para as entradas de cor nessa categoria:  
+  Inicie o editor de cores e abra ou crie um novo arquivo. XML de cores do tema personalizado. Selecione **Editar > nova cor** no menu. Isso abre uma caixa de diálogo para especificar a categoria e um ou mais nomes para as entradas de cor nessa categoria:  
   
- ![Nova cor Editor de cores do VSIX](../../extensibility/internals/media/vsix-color-editor-new-color.png "nova cor Editor de cores do VSIX")  
+  ![Nova cor Editor de cores do VSIX](../../extensibility/internals/media/vsix-color-editor-new-color.png "nova cor Editor de cores do VSIX")  
   
- Selecione uma categoria existente ou selecione **nova categoria** para criar uma nova categoria. Outra caixa de diálogo será aberta, criando um novo nome de categoria:  
+  Selecione uma categoria existente ou selecione **nova categoria** para criar uma nova categoria. Outra caixa de diálogo será aberta, criando um novo nome de categoria:  
   
- ![Nova categoria Editor de cores do VSIX](../../extensibility/internals/media/vsix-color-editor-new-category.png "nova categoria Editor de cores do VSIX")  
+  ![Nova categoria Editor de cores do VSIX](../../extensibility/internals/media/vsix-color-editor-new-category.png "nova categoria Editor de cores do VSIX")  
   
- A nova categoria, em seguida, estará disponível na **nova cor** menu suspenso de categoria. Depois de escolher uma categoria, insira um nome por linha para cada novo token de cor e selecione "Criar" quando terminar:  
+  A nova categoria, em seguida, estará disponível na **nova cor** menu suspenso de categoria. Depois de escolher uma categoria, insira um nome por linha para cada novo token de cor e selecione "Criar" quando terminar:  
   
- ![Cor do Editor de cores novo do VSIX preenchido](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "VSIX Editor de cores nova cor preenchido")  
+  ![Cor do Editor de cores novo do VSIX preenchido](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "VSIX Editor de cores nova cor preenchido")  
   
- Os valores de cor são mostrados em pares de plano de fundo/primeiro plano, com "None" indicando que a cor não foi definida. Observação: se uma cor não tiver um texto cor/par de cor de fundo, em seguida, apenas o plano de fundo precisa ser definido.  
+  Os valores de cor são mostrados em pares de plano de fundo/primeiro plano, com "None" indicando que a cor não foi definida. Observação: se uma cor não tiver um texto cor/par de cor de fundo, em seguida, apenas o plano de fundo precisa ser definido.  
   
- ![Valores de cor de Editor de cores do VSIX](../../extensibility/internals/media/vsix-color-editor-color-values.png "valores de cor de Editor de cores do VSIX")  
+  ![Valores de cor de Editor de cores do VSIX](../../extensibility/internals/media/vsix-color-editor-color-values.png "valores de cor de Editor de cores do VSIX")  
   
- Para editar um token de cor, selecione uma entrada de cor do tema (coluna) desse token. Adicione o valor de cor digitando um valor de cor hexadecimal no formato ARGB de 8 dígitos, inserindo um nome de cor do sistema para a célula, ou usando o menu suspenso para selecionar a cor desejada por meio de um conjunto de controles deslizantes ou uma lista de cores do sistema.  
+  Para editar um token de cor, selecione uma entrada de cor do tema (coluna) desse token. Adicione o valor de cor digitando um valor de cor hexadecimal no formato ARGB de 8 dígitos, inserindo um nome de cor do sistema para a célula, ou usando o menu suspenso para selecionar a cor desejada por meio de um conjunto de controles deslizantes ou uma lista de cores do sistema.  
   
- ![Cor de edição de Editor de cores do VSIX](../../extensibility/internals/media/vsix-color-editor-edit-color.png "cor de edição de Editor de cores do VSIX")  
+  ![Cor de edição de Editor de cores do VSIX](../../extensibility/internals/media/vsix-color-editor-edit-color.png "cor de edição de Editor de cores do VSIX")  
   
- ![Em segundo plano Editor de cores do VSIX](../../extensibility/internals/media/vsix-color-editor-background.png "em segundo plano Editor de cores do VSIX")  
+  ![Em segundo plano Editor de cores do VSIX](../../extensibility/internals/media/vsix-color-editor-background.png "em segundo plano Editor de cores do VSIX")  
   
- Para componentes que não é necessário para exibir o texto, insira o valor de apenas uma cor: a cor do plano de fundo. Caso contrário, insira valores para a cor de plano de fundo e texto, separado por uma barra invertida.  
+  Para componentes que não é necessário para exibir o texto, insira o valor de apenas uma cor: a cor do plano de fundo. Caso contrário, insira valores para a cor de plano de fundo e texto, separado por uma barra invertida.  
   
- Ao inserir valores de alto contraste, insira nomes de cores do sistema Windows válidos. Não insira valores ARGB de embutidos em código. Você pode exibir uma lista de nomes de cores do sistema válido, selecionando "Em segundo plano: sistema" ou "em primeiro plano:" nos menus de lista suspensa de valor de cor. Durante a criação de elementos que têm componentes de texto, use o par de cor do sistema em segundo plano/texto correto ou o texto pode ser ilegível.  
+  Ao inserir valores de alto contraste, insira nomes de cores do sistema Windows válidos. Não insira valores ARGB de embutidos em código. Você pode exibir uma lista de nomes de cores do sistema válido, selecionando "Em segundo plano: sistema" ou "em primeiro plano:" nos menus de lista suspensa de valor de cor. Durante a criação de elementos que têm componentes de texto, use o par de cor do sistema em segundo plano/texto correto ou o texto pode ser ilegível.  
   
- Quando você terminar a criação, configuração e editando os tokens de cor, salvá-los no formato. pkgdef ou. XML desejado. Cor de tokens com um plano de fundo nem nem um conjunto de primeiro plano será salvo como cores vazias no formato. XML, mas descartado no formato. pkgdef. Uma caixa de diálogo avisará da potencial perda de cor se você tentar salvar cores vazias em um arquivo. pkgdef.  
+  Quando você terminar a criação, configuração e editando os tokens de cor, salvá-los no formato. pkgdef ou. XML desejado. Cor de tokens com um plano de fundo nem nem um conjunto de primeiro plano será salvo como cores vazias no formato. XML, mas descartado no formato. pkgdef. Uma caixa de diálogo avisará da potencial perda de cor se você tentar salvar cores vazias em um arquivo. pkgdef.  
   
- **Etapa 4: Use as cores em uma extensão do Visual Studio.**  
+  **Etapa 4: Use as cores em uma extensão do Visual Studio.**  
   
- Depois de definir a nova cor tokens, inclua o. pkgdef no arquivo de projeto com "Build Action" definido como "Conteúdo" e "Incluir em VSIX" definido como "True".  
+  Depois de definir a nova cor tokens, inclua o. pkgdef no arquivo de projeto com "Build Action" definido como "Conteúdo" e "Incluir em VSIX" definido como "True".  
   
- ![Editor de cores do VSIX pkgdef](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "pkgdef do Editor de cores do VSIX")  
+  ![Editor de cores do VSIX pkgdef](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "pkgdef do Editor de cores do VSIX")  
   
- No Editor do Visual Studio extensão cor, escolha Arquivo > Exibir o código de recurso para exibir o código que é usado para acessar o personalizado de cores na interface do usuário baseada no WPF.  
+  No Editor do Visual Studio extensão cor, escolha Arquivo > Exibir o código de recurso para exibir o código que é usado para acessar o personalizado de cores na interface do usuário baseada no WPF.  
   
- ![Visualizador de código de recurso do Editor de cores do VSIX](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "Visualizador de código de recurso do Editor de cores do VSIX")  
+  ![Visualizador de código de recurso do Editor de cores do VSIX](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "Visualizador de código de recurso do Editor de cores do VSIX")  
   
- Inclua esse código em uma classe estática no projeto. Uma referência a **Microsoft.VisualStudio.Shell.\< VSVersion >.0.dll** precisa ser adicionada ao projeto para usar o **ThemeResourceKey** tipo.  
+  Inclua esse código em uma classe estática no projeto. Uma referência a **Microsoft.VisualStudio.Shell.\< VSVersion >.0.dll** precisa ser adicionada ao projeto para usar o **ThemeResourceKey** tipo.  
   
 ```csharp  
 namespace MyCustomColors  

@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::findInlineeLinesByAddr | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,27 +13,25 @@ dev_langs:
 - C++
 ms.assetid: f1ab47ca-c851-48ea-9c12-47fb80b31102
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bfa49c2d38a90e6838642787adc00af6c63672bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4349f863abf89d94e0f87177a907a2153760065c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460627"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738617"
 ---
 # <a name="idiasymbolfindinlineelinesbyaddr"></a>IDiaSymbol::findInlineeLinesByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSymbol::findInlineeLinesByAddr](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-findinlineelinesbyaddr).  
-  
 Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, nesse símbolo dentro do intervalo de endereço especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findInlineeLinesByAddr (   
+HRESULT findInlineeLinesByAddr (   
    DWORD                 isect,  
    DWORD                 offset,  
    DWORD                 length,  

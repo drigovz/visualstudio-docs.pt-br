@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramDestroyEvent2::GetExitCode | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: 7f540cf6-e2d1-42b0-913e-a26d654b7659
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84fa33929ff07e34304c4ddea39e13706a98a570
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47ecfc292158bbc787b58f606b2f6462c83445a7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465756"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787075"
 ---
 # <a name="idebugprogramdestroyevent2getexitcode"></a>IDebugProgramDestroyEvent2::GetExitCode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProgramDestroyEvent2::GetExitCode](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode).  
-  
 Obtém o código de saída do programa.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetExitCode(   
+HRESULT GetExitCode(   
    DWORD* pdwExit  
 );  
 ```  
   
 ```csharp  
-int GetExitCode(   
+int GetExitCode(   
    out uint pdwExit  
 );  
 ```  

@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_value | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_value method
 ms.assetid: 2e40174a-2a61-4e5f-bb32-9e0ceec2178a
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2007c4eee592c497ee87b194de28bc72e947829
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9620c583c64e6a95c2650747f16a34ff98f54e59
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466107"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731569"
 ---
 # <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_value](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-value).  
-  
 Recupera o valor de uma constante.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_value (   
+HRESULT get_value (   
    VARIANT* pRetVal  
 );  
 ```  

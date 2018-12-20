@@ -1,7 +1,7 @@
 ---
 title: Associar controles WPF a dados no Visual Studio2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9b6a7e624298ae3766f67a1bd49760b9b5e066bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cd13723e1483a33e4b98dc544c6e8448dc9a980
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462105"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208229"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associar controles WPF a dados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [documentação do Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
-  
 Você pode criar uma associação de dados [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] controles usando o **fontes de dados** janela. Primeiro, adicione uma fonte de dados para o **fontes de dados** janela. Em seguida, arraste itens dos **fontes de dados** janela para o**WPF Designer**.  
   
 ##  <a name="adding"></a> Adicionar uma fonte de dados à janela fontes de dados  

@@ -1,7 +1,7 @@
 ---
 title: Tabela de documento em execução | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b7f22fed31618c3f0e8b897992da0beb1c0cc80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd7b8cd44c72ea058f71575bdd1774efafa86731
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462117"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746295"
 ---
 # <a name="running-document-table"></a>Tabela de documento em execução
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tabela de documento em execução](https://docs.microsoft.com/visualstudio/extensibility/internals/running-document-table).  
-  
 O IDE mantém a lista de todos os documentos abertos no momento em uma estrutura interna chamada tabela de documento em execução (RDT). Essa lista inclui todos os documentos abertos na memória, independentemente de se esses documentos estão sendo editados. Um documento é qualquer item que é persistida, incluindo arquivos em um projeto ou arquivo de projeto principal (por exemplo, um arquivo. vcxproj).  
   
 ## <a name="elements-of-the-running-document-table"></a>Elementos da tabela documento em execução  

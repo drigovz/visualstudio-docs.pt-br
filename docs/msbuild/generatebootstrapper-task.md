@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 164a0eeb8c466c2e2eb5bd03f92160a2fad78abd
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 53ad85f77d014d534d625b8d08e36b7eb8c01f7f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177731"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895713"
 ---
 # <a name="generatebootstrapper-task"></a>Tarefa GenerateBootstrapper
 Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e seus pré-requisitos. Atua como um único instalador que integra os diferentes instaladores de todos os componentes que compõem um aplicativo.  
@@ -33,122 +33,122 @@ Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e se
 ## <a name="task-parameters"></a>Parâmetros de tarefa  
  Veja a seguir uma descrição dos parâmetros da tarefa `GenerateBootstrapper`.  
   
--   `ApplicationFile`  
+- `ApplicationFile`  
   
-     Parâmetro `String` opcional.  
+   Parâmetro `String` opcional.  
   
-     Especifica o arquivo que o bootstrapper usará para iniciar a instalação do aplicativo após todos os pré-requisitos terem sido instalados. Um erro de build ocorrerá se nenhum dos parâmetros `BootstrapperItems` ou `ApplicationFile` for especificado.  
+   Especifica o arquivo que o bootstrapper usará para iniciar a instalação do aplicativo após todos os pré-requisitos terem sido instalados. Um erro de build ocorrerá se nenhum dos parâmetros `BootstrapperItems` ou `ApplicationFile` for especificado.  
   
--   `ApplicationName`  
+- `ApplicationName`  
   
-     Parâmetro `String` opcional.  
+   Parâmetro `String` opcional.  
   
-     Especifica o nome do aplicativo que o bootstrapper instalará. Esse nome aparecerá na interface do usuário que o bootstrapper usa durante a instalação.  
+   Especifica o nome do aplicativo que o bootstrapper instalará. Esse nome aparecerá na interface do usuário que o bootstrapper usa durante a instalação.  
   
--   `ApplicationRequiresElevation`  
+- `ApplicationRequiresElevation`  
   
-     Parâmetro `Boolean` opcional.  
+   Parâmetro `Boolean` opcional.  
   
-     Se `true`, o componente será executado com permissões elevadas quando for instalado em um computador de destino.  
+   Se `true`, o componente será executado com permissões elevadas quando for instalado em um computador de destino.  
   
--   `ApplicationUrl`  
+- `ApplicationUrl`  
   
-     Parâmetro `String` opcional.  
+   Parâmetro `String` opcional.  
   
-     Especifica o local da Web que está hospedando o instalador do aplicativo.  
+   Especifica o local da Web que está hospedando o instalador do aplicativo.  
   
--   `BootstrapperComponentFiles`  
+- `BootstrapperComponentFiles`  
   
-     Parâmetro de saída `String[]` opcional.  
+   Parâmetro de saída `String[]` opcional.  
   
-     Especifica o local interno dos arquivos do pacote do bootstrapper.  
+   Especifica o local interno dos arquivos do pacote do bootstrapper.  
   
--   `BootstrapperItems`  
+- `BootstrapperItems`  
   
-     Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.  
+   Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.  
   
-     Especifica os produtos a serem inseridos no bootstrapper. Os itens passados para esse parâmetro devem ter a seguinte sintaxe:  
+   Especifica os produtos a serem inseridos no bootstrapper. Os itens passados para esse parâmetro devem ter a seguinte sintaxe:  
   
-    ```xml  
-    <BootstrapperItem  
-        Include="ProductCode">  
-        <ProductName>  
-            ProductName  
-        </ProductName>  
-    </BootstrapperItem>  
-    ```  
+  ```xml  
+  <BootstrapperItem  
+      Include="ProductCode">  
+      <ProductName>  
+          ProductName  
+      </ProductName>  
+  </BootstrapperItem>  
+  ```  
   
-     O atributo `Include` representa o nome de um pré-requisito que deve ser instalado. Os metadados de item `ProductName` são opcionais e serão usados pelo mecanismo de build como um nome amigável caso o pacote não possa ser encontrado. Esses itens não são parâmetros de entrada do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] necessários, a menos que nenhum `ApplicationFile` seja especificado. É necessário incluir um item para cada pré-requisito que precisa ser instalado para o aplicativo.  
+   O atributo `Include` representa o nome de um pré-requisito que deve ser instalado. Os metadados de item `ProductName` são opcionais e serão usados pelo mecanismo de build como um nome amigável caso o pacote não possa ser encontrado. Esses itens não são parâmetros de entrada do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] necessários, a menos que nenhum `ApplicationFile` seja especificado. É necessário incluir um item para cada pré-requisito que precisa ser instalado para o aplicativo.  
   
-     Um erro de build ocorrerá se nenhum dos parâmetros `BootstrapperItems` ou `ApplicationFile` for especificado.  
+   Um erro de build ocorrerá se nenhum dos parâmetros `BootstrapperItems` ou `ApplicationFile` for especificado.  
   
--   `BootstrapperKeyFile`  
+- `BootstrapperKeyFile`  
   
-     Parâmetro de saída `String` opcional.  
+   Parâmetro de saída `String` opcional.  
   
-     Especifica a localização interna de *setup.exe*  
+   Especifica a localização interna de *setup.exe*  
   
--   `ComponentsLocation`  
+- `ComponentsLocation`  
   
-     Parâmetro `String` opcional.  
+   Parâmetro `String` opcional.  
   
-     Especifica um local no qual o bootstrapper deverá procurar os pré-requisitos de instalação a serem instalados. Esse parâmetro pode ter os seguintes valores:  
+   Especifica um local no qual o bootstrapper deverá procurar os pré-requisitos de instalação a serem instalados. Esse parâmetro pode ter os seguintes valores:  
   
-    -   `HomeSite`: indica que o pré-requisito está sendo hospedado pelo fornecedor do componente.  
+  - `HomeSite`: indica que o pré-requisito está sendo hospedado pelo fornecedor do componente.  
   
-    -   `Relative`: indica que o pré-requisito está no mesmo local do aplicativo.  
+  - `Relative`: indica que o pré-requisito está no mesmo local do aplicativo.  
   
-    -   `Absolute`: indica que todos os componentes serão encontrados em uma URL centralizada. Esse valor deve ser usado em conjunto com o parâmetro de entrada `ComponentsUrl`.  
+  - `Absolute`: indica que todos os componentes serão encontrados em uma URL centralizada. Esse valor deve ser usado em conjunto com o parâmetro de entrada `ComponentsUrl`.  
   
-     Se `ComponentsLocation` não for especificado, `HomeSite` será usado por padrão.  
+    Se `ComponentsLocation` não for especificado, `HomeSite` será usado por padrão.  
   
--   `ComponentsUrl`  
+- `ComponentsUrl`  
   
-     Parâmetro `String` opcional.  
+   Parâmetro `String` opcional.  
   
-     Especifica a URL que contém os pré-requisitos de instalação.  
+   Especifica a URL que contém os pré-requisitos de instalação.  
   
--   `CopyComponents`  
+- `CopyComponents`  
   
-     Parâmetro `Boolean` opcional.  
+   Parâmetro `Boolean` opcional.  
   
-     Se for `true`, o bootstrapper copiará todos os arquivos de saída para o caminho especificado no parâmetro `OutputPath`. Os valores do parâmetro `BootstrapperComponentFiles` devem ser baseados nesse caminho. Se for `false`, os arquivos não serão copiados e o valores de `BootstrapperComponentFiles` serão baseados no valor do parâmetro `Path`.  O valor padrão desse parâmetro é `true`.  
+   Se for `true`, o bootstrapper copiará todos os arquivos de saída para o caminho especificado no parâmetro `OutputPath`. Os valores do parâmetro `BootstrapperComponentFiles` devem ser baseados nesse caminho. Se for `false`, os arquivos não serão copiados e o valores de `BootstrapperComponentFiles` serão baseados no valor do parâmetro `Path`.  O valor padrão desse parâmetro é `true`.  
   
--   `Culture`  
+- `Culture`  
   
-     Parâmetro `String` opcional.  
+   Parâmetro `String` opcional.  
   
-     Especifica a cultura a ser usada para a interface do usuário do bootstrapper e os pré-requisitos de instalação. Se a cultura especificada não está disponível, a tarefa usa o valor do parâmetro `FallbackCulture`.  
+   Especifica a cultura a ser usada para a interface do usuário do bootstrapper e os pré-requisitos de instalação. Se a cultura especificada não está disponível, a tarefa usa o valor do parâmetro `FallbackCulture`.  
   
--   `FallbackCulture`  
+- `FallbackCulture`  
   
-     Parâmetro `String` opcional.  
+   Parâmetro `String` opcional.  
   
-     Especifica a cultura secundária a ser usada para a interface do usuário do bootstrapper e os pré-requisitos de instalação.  
+   Especifica a cultura secundária a ser usada para a interface do usuário do bootstrapper e os pré-requisitos de instalação.  
   
--   `OutputPath`  
+- `OutputPath`  
   
-     Parâmetro `String` opcional.  
+   Parâmetro `String` opcional.  
   
-     Especifica o local para o qual copiar *setup.exe* e todos os arquivos do pacote.  
+   Especifica o local para o qual copiar *setup.exe* e todos os arquivos do pacote.  
   
--   `Path`  
+- `Path`  
   
-     Parâmetro `String` opcional.  
+   Parâmetro `String` opcional.  
   
-     Especifica o local de todos os pacotes de pré-requisitos disponíveis.  
+   Especifica o local de todos os pacotes de pré-requisitos disponíveis.  
   
--   `SupportUrl`  
+- `SupportUrl`  
   
-     Parâmetro `String` opcional.  
+   Parâmetro `String` opcional.  
   
-     Especifica a URL a ser fornecida em caso de falha na instalação do bootstrapper.  
+   Especifica a URL a ser fornecida em caso de falha na instalação do bootstrapper.  
   
--   `Validate`  
+- `Validate`  
   
-     Parâmetro `Boolean` opcional.  
+   Parâmetro `Boolean` opcional.  
   
-     Se for `true`, o bootstrapper executará a validação do XSD nos itens de entrada do bootstrapper especificados. O valor padrão desse parâmetro é `false`.  
+   Se for `true`, o bootstrapper executará a validação do XSD nos itens de entrada do bootstrapper especificados. O valor padrão desse parâmetro é `false`.  
   
 ## <a name="remarks"></a>Comentários  
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).  

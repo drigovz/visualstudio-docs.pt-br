@@ -1,7 +1,7 @@
 ---
 title: Elemento ProvideDefaultName (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7b0e7b20-fd6b-42e2-81d0-e5100cea0528
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c97fdb245ba1ff066e19bcd32616649b47b9425
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eec34681d4ebfede8fb811af149e5bbeca081aad
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460742"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767808"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>Elemento ProvideDefaultName (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento ProvideDefaultName (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/providedefaultname-element-visual-studio-templates).  
-  
 Especifica se o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sistema de projeto irá gerar um nome padrão para o modelo a **Adicionar Novo Item** ou **novo projeto** caixa de diálogo.  
   
  \<VSTemplate >  

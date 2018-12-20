@@ -1,7 +1,7 @@
 ---
 title: Imagens e ícones para o Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c443f59cb33bd73775b85244ca6811050c47b245
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab668678a0ec867112f461b7978962d941bcdc8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461921"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749180"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Imagens e ícones para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [imagens e ícones para o Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/images-and-icons-for-visual-studio).  
-  
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> Uso de imagens no Visual Studio  
  Antes de criar a arte final, considere fazer uso de mais de 1.000 imagens na [biblioteca de imagens do Visual Studio](http://www.microsoft.com/en-my/download/details.aspx?id=35825).  
   
@@ -47,21 +45,21 @@ A versão mais recente deste tópico pode ser encontrada em [imagens e ícones p
 ### <a name="overview"></a>Visão geral  
  O Visual Studio usa ícones de estilo moderno, que têm geometria limpa e um equilíbrio 50/50 positivos/negativos (claro/escuro) e usam metáforas diretas e legível. Design de ícone crucial pontos giram em torno de clareza, simplificação e contexto.  
   
--   **Maior clareza:** enfocar a metáfora de núcleo que fornece um ícone de seu significado e individualidade.  
+- **Maior clareza:** enfocar a metáfora de núcleo que fornece um ícone de seu significado e individualidade.  
   
--   **Simplificação:** reduzir o ícone para seu significado core – Obtenha o tema com elementos necessários e sem sofisticações.  
+- **Simplificação:** reduzir o ícone para seu significado core – Obtenha o tema com elementos necessários e sem sofisticações.  
   
--   **Contexto:** considerar todos os aspectos da função de um ícone durante o desenvolvimento de conceito, que é essencial ao decidir quais elementos constituem a metáfora de núcleo do ícone.  
+- **Contexto:** considerar todos os aspectos da função de um ícone durante o desenvolvimento de conceito, que é essencial ao decidir quais elementos constituem a metáfora de núcleo do ícone.  
   
- Com ícones, há um número de pontos de design para evitar:  
+  Com ícones, há um número de pontos de design para evitar:  
   
--   Não use os ícones que significam os elementos de interface do usuário, exceto quando apropriado. Escolha uma abordagem mais abstrata ou simbólica quando o elemento de interface do usuário não é comum, evidente, nem exclusivo.  
+- Não use os ícones que significam os elementos de interface do usuário, exceto quando apropriado. Escolha uma abordagem mais abstrata ou simbólica quando o elemento de interface do usuário não é comum, evidente, nem exclusivo.  
   
--   Não uso excessivo de elementos comuns, como documentos, pastas, setas e Lupa. Use esses elementos apenas quando essencial para o significado do ícone. Por exemplo, na lupa para a direita deve indicar somente pesquisar, procurar e localizar.  
+- Não uso excessivo de elementos comuns, como documentos, pastas, setas e Lupa. Use esses elementos apenas quando essencial para o significado do ícone. Por exemplo, na lupa para a direita deve indicar somente pesquisar, procurar e localizar.  
   
--   Embora alguns elementos de ícone herdado mantém o uso da perspectiva, não crie novos ícones com perspectiva, a menos que o elemento não tem a maior clareza sem ele.  
+- Embora alguns elementos de ícone herdado mantém o uso da perspectiva, não crie novos ícones com perspectiva, a menos que o elemento não tem a maior clareza sem ele.  
   
--   Não espremer muitas informações em um ícone. Uma imagem simples que pode ser facilmente reconhecida ou aprendeu como um símbolo reconhecível é muito mais úteis do que uma imagem excessivamente complexa. Um ícone não pode contar a história inteira.  
+- Não espremer muitas informações em um ícone. Uma imagem simples que pode ser facilmente reconhecida ou aprendeu como um símbolo reconhecível é muito mais úteis do que uma imagem excessivamente complexa. Um ícone não pode contar a história inteira.  
   
 ### <a name="icon-creation"></a>Criação de ícone  
   
@@ -268,19 +266,19 @@ A versão mais recente deste tópico pode ser encontrada em [imagens e ícones p
 ### <a name="icon-construction"></a>Construção de ícone  
  O menor tamanho de ícone no Visual Studio é 16 x 16. O maior em comum o uso é 32 x 32. Tenha em mente, não para preencher todo o quadro de 16 x 16, 24 x 24 ou 32 x 32 durante a criação de um ícone. Construção de ícone uniforme, legível, é essencial para o reconhecimento de usuários. Seguem os seguintes pontos ao criar ícones.  
   
--   Ícones devem ser consistente, clara e compreensível.  
+- Ícones devem ser consistente, clara e compreensível.  
   
--   É melhor usar os elementos de notificação de status como ícones únicos e não a empilhá-los na parte superior de um elemento base do ícone. Em determinados contextos, a interface do usuário pode exigir o elemento de status a ser emparelhado com um elemento base.  
+- É melhor usar os elementos de notificação de status como ícones únicos e não a empilhá-los na parte superior de um elemento base do ícone. Em determinados contextos, a interface do usuário pode exigir o elemento de status a ser emparelhado com um elemento base.  
   
--   Ícones de projeto geralmente são arquivos. ico que contêm vários tamanhos. Somente os ícones de 16 x 16, 24 x 24 e 32 x 32 estão sendo atualizados. A maioria dos ícones de 16 x 16 e 24 x 24 conterá os mesmos elementos. Os ícones de 32 x 32 contêm mais detalhes, incluindo o tipo de linguagem do projeto quando aplicável.  
+- Ícones de projeto geralmente são arquivos. ico que contêm vários tamanhos. Somente os ícones de 16 x 16, 24 x 24 e 32 x 32 estão sendo atualizados. A maioria dos ícones de 16 x 16 e 24 x 24 conterá os mesmos elementos. Os ícones de 32 x 32 contêm mais detalhes, incluindo o tipo de linguagem do projeto quando aplicável.  
   
--   Para os ícones de 32 x 32, os elementos base geralmente têm um peso de linha 2 pixels. Um peso de linha de pixel de 1 ou 2 pode ser usado para elementos de detalhe. Use o bom senso para determinar qual é mais adequado.  
+- Para os ícones de 32 x 32, os elementos base geralmente têm um peso de linha 2 pixels. Um peso de linha de pixel de 1 ou 2 pode ser usado para elementos de detalhe. Use o bom senso para determinar qual é mais adequado.  
   
--   Ter pelo menos um espaçamento de 1 pixel entre elementos de 16 x 16 e ícones de 24 x 24. Para os ícones de 32 x 32, use 2 pixels espaçamento entre elementos e entre o elemento base e o modificador.  
+- Ter pelo menos um espaçamento de 1 pixel entre elementos de 16 x 16 e ícones de 24 x 24. Para os ícones de 32 x 32, use 2 pixels espaçamento entre elementos e entre o elemento base e o modificador.  
   
- ![Espaçamento de elementos para os ícones de 16 x 16, 24 x 24 e 32 x 32](../../extensibility/ux-guidelines/media/0404-47-elementspacing.png "47_ElementSpacing 0404")  
+  ![Espaçamento de elementos para os ícones de 16 x 16, 24 x 24 e 32 x 32](../../extensibility/ux-guidelines/media/0404-47-elementspacing.png "47_ElementSpacing 0404")  
   
- **Espaçamento de elementos para os ícones em tamanho de 16 x 16, 24 x 24 e 32 x 32**  
+  **Espaçamento de elementos para os ícones em tamanho de 16 x 16, 24 x 24 e 32 x 32**  
   
 #### <a name="color-and-accessibility"></a>Cor e acessibilidade  
  Diretrizes de conformidade do Visual Studio exigem que todos os ícones no produto passam os requisitos de acessibilidade para cor e contraste. Isso é feito por meio de inversão de ícone, e quando você está criando, você deve estar ciente que será ser invertidas programaticamente no produto.  
@@ -392,7 +390,7 @@ A versão mais recente deste tópico pode ser encontrada em [imagens e ícones p
   
 |||||||  
 |-|-|-|-|-|-|  
-|![Ícone de Visual Basic](../../extensibility/ux-guidelines/media/0405-25-vb.png "0405 25_VB") **VB**|![C&#35; ícone](../../extensibility/ux-guidelines/media/0405-26-csharp.png "0405 26_CSharp") **c#**|![C&#43; &#43; ícone](../../extensibility/ux-guidelines/media/0405-27-cplusplus.png "0405 27_CPlusPlus") **C++**|![F&#35; ícone](../../extensibility/ux-guidelines/media/0405-28-fsharp.png "0405 28_FSharp") **F #**|![Ícone de JavaScript](../../extensibility/ux-guidelines/media/0405-29-javascript.png "0405 29_JavaScript") **JavaScript**|![Ícone do Python](../../extensibility/ux-guidelines/media/0405-30-python.png "0405 30_Python") **Python**|  
+|![Ícone de Visual Basic](../../extensibility/ux-guidelines/media/0405-25-vb.png "0405 25_VB") **VB**|![C&#35; ícone](../../extensibility/ux-guidelines/media/0405-26-csharp.png "0405 26_CSharp")**C#**|![C&#43; &#43; ícone](../../extensibility/ux-guidelines/media/0405-27-cplusplus.png "0405 27_CPlusPlus") **C++**|![F&#35; ícone](../../extensibility/ux-guidelines/media/0405-28-fsharp.png "0405 28_FSharp")**F#**|![Ícone de JavaScript](../../extensibility/ux-guidelines/media/0405-29-javascript.png "0405 29_JavaScript") **JavaScript**|![Ícone do Python](../../extensibility/ux-guidelines/media/0405-30-python.png "0405 30_Python") **Python**|  
 |![Ícone HTML](../../extensibility/ux-guidelines/media/0405-31-html.png "0405 31_HTML") **HTML**|![Ícone do WPF](../../extensibility/ux-guidelines/media/0405-32-wpf.png "0405 32_WPF") **WPF**|![Ícone ASP](../../extensibility/ux-guidelines/media/0405-33-asp.png "0405 33_ASP") **ASP**|![Ícone CSS](../../extensibility/ux-guidelines/media/0405-34-css.png "0405 34_CSS") **CSS**|![Ícone de TypeScript](../../extensibility/ux-guidelines/media/0405-35-typescript.png "0405 35_TypeScript") **TypeScript**||  
   
 #### <a name="intellisense"></a>IntelliSense  

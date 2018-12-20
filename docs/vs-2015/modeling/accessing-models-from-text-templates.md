@@ -1,7 +1,7 @@
 ---
 title: Acessando modelos a partir de modelos de texto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5f23a080f33b668d185f4e7b1409da5b4ac97deb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919852"
 ---
 # <a name="accessing-models-from-text-templates"></a>Acessando modelos a partir de modelos (templates) de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [acessando modelos a partir de modelos de texto](https://docs.microsoft.com/visualstudio/modeling/accessing-models-from-text-templates).  
-  
 Usando modelos de texto, você pode criar arquivos de relatório, os arquivos de código-fonte e outros arquivos de texto baseados em modelos de linguagem específica do domínio. Para obter informações básicas sobre modelos de texto, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md). Os modelos de texto funcionarão no modo experimental quando você estiver depurando sua DSL e também funcionará em um computador no qual você implantou a DSL.  
   
 > [!NOTE]
@@ -33,11 +31,11 @@ Usando modelos de texto, você pode criar arquivos de relatório, os arquivos de
   
  Para acessar um modelo de um modelo de texto:  
   
--   Defina a propriedade de herdar da diretiva do modelo para <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Isso fornece acesso para a Store.  
+- Defina a propriedade de herdar da diretiva do modelo para <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Isso fornece acesso para a Store.  
   
--   Especifique a processadores de diretiva para a DSL que você deseja acessar. Isso carrega os assemblies da DSL para que você possa usar suas classes de domínio, propriedades e relacionamentos no código do modelo de texto. Ele também carrega o arquivo de modelo que você especificar.  
+- Especifique a processadores de diretiva para a DSL que você deseja acessar. Isso carrega os assemblies da DSL para que você possa usar suas classes de domínio, propriedades e relacionamentos no código do modelo de texto. Ele também carrega o arquivo de modelo que você especificar.  
   
- Um `.tt` arquivo semelhante ao exemplo a seguir é criado no projeto de depuração quando você cria um novo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução a partir do modelo de linguagem mínima de DSL.  
+  Um `.tt` arquivo semelhante ao exemplo a seguir é criado no projeto de depuração quando você cria um novo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução a partir do modelo de linguagem mínima de DSL.  
   
 ```  
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
@@ -99,11 +97,11 @@ Here is a list of elements in the model:
   
  Observe que:  
   
-1.  O `filename` e `validation` parâmetros são separados por ";" e não deve haver nenhuma outra separadores ou espaços.  
+1. O `filename` e `validation` parâmetros são separados por ";" e não deve haver nenhuma outra separadores ou espaços.  
   
-2.  A lista de categorias de validação determina quais métodos de validação serão executados. Várias categorias devem ser separadas por "&#124;" e não deve haver nenhuma outra separadores ou espaços.  
+2. A lista de categorias de validação determina quais métodos de validação serão executados. Várias categorias devem ser separadas por "&#124;" e não deve haver nenhuma outra separadores ou espaços.  
   
- Se um erro for encontrado, ele será relatado na janela de erros e o arquivo de resultados conterá uma mensagem de erro.  
+   Se um erro for encontrado, ele será relatado na janela de erros e o arquivo de resultados conterá uma mensagem de erro.  
   
 ##  <a name="Multiple"></a> Acessando vários modelos de um modelo de texto  
   

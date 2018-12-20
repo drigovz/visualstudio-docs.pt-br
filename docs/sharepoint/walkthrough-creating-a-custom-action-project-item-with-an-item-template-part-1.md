@@ -18,33 +18,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 16469da5a4724a2bf536fed3b5e28da0fec68aed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8144723f68b9343c1c7d74f7a940aec569dd7969
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635324"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296119"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 1
   Você pode estender o sistema de projeto do SharePoint no Visual Studio com a criação de tipos de item de seu próprio projeto. Neste passo a passo, você criará um item de projeto que pode ser adicionado a um projeto do SharePoint para criar uma ação personalizada em um site do SharePoint. A ação personalizada adiciona um item de menu para o **ações do Site** menu do site do SharePoint.  
   
  Este passo a passo demonstra as seguintes tarefas:  
   
--   Criando uma extensão do Visual Studio que define um novo tipo de item de projeto do SharePoint para uma ação personalizada. O novo tipo de item de projeto implementa vários recursos personalizados:  
+- Criando uma extensão do Visual Studio que define um novo tipo de item de projeto do SharePoint para uma ação personalizada. O novo tipo de item de projeto implementa vários recursos personalizados:  
   
-    -   Um menu de atalho que serve como ponto de partida para tarefas adicionais relacionados ao item do projeto, como a exibição de um designer para a ação personalizada no Visual Studio.  
+  -   Um menu de atalho que serve como ponto de partida para tarefas adicionais relacionados ao item do projeto, como a exibição de um designer para a ação personalizada no Visual Studio.  
   
-    -   Código que é executado quando um desenvolvedor altera determinadas propriedades de item de projeto e o projeto que o contém.  
+  -   Código que é executado quando um desenvolvedor altera determinadas propriedades de item de projeto e o projeto que o contém.  
   
-    -   Um ícone personalizado que aparece ao lado do item de projeto no **Gerenciador de soluções**.  
+  -   Um ícone personalizado que aparece ao lado do item de projeto no **Gerenciador de soluções**.  
   
--   Criando um modelo de item do Visual Studio para o item de projeto.  
+- Criando um modelo de item do Visual Studio para o item de projeto.  
   
--   Criando um pacote de extensão VSIX (Visual Studio) para implantar o modelo de item de projeto e o assembly de extensão.  
+- Criando um pacote de extensão VSIX (Visual Studio) para implantar o modelo de item de projeto e o assembly de extensão.  
   
--   Depurando e testando o item de projeto.  
+- Depurando e testando o item de projeto.  
   
- Esse é um passo a passo autônoma. Depois de concluir este passo a passo, você pode aprimorar o item de projeto com a adição de um Assistente para o modelo de item. Para obter mais informações, consulte [instruções passo a passo: criar um item de projeto de ação personalizado com um modelo de item, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
+  Esse é um passo a passo autônoma. Depois de concluir este passo a passo, você pode aprimorar o item de projeto com a adição de um Assistente para o modelo de item. Para obter mais informações, consulte [instruções passo a passo: criar um item de projeto de ação personalizado com um modelo de item, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
   
 > [!NOTE]  
 >  Você pode baixar um exemplo de [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) que mostra como criar atividades personalizadas para um fluxo de trabalho.  
@@ -52,26 +52,26 @@ ms.locfileid: "42635324"
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:  
   
--   Edições com suporte do Microsoft Windows, SharePoint e do Visual Studio.
+- Edições com suporte do Microsoft Windows, SharePoint e do Visual Studio.
   
--   O [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Este passo a passo usa o **VSIX Project** modelo no SDK para criar um pacote VSIX para implantar o item de projeto. Para obter mais informações, consulte [estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- O [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Este passo a passo usa o **VSIX Project** modelo no SDK para criar um pacote VSIX para implantar o item de projeto. Para obter mais informações, consulte [estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir o passo a passo:  
+  Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir o passo a passo:  
   
--   Ações personalizadas no SharePoint. Para obter mais informações, consulte [ação personalizada](http://go.microsoft.com/fwlink/?LinkId=177800).  
+- Ações personalizadas no SharePoint. Para obter mais informações, consulte [ação personalizada](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
--   Modelos de item no Visual Studio. Para obter mais informações, consulte [Criando modelos de item e de projeto](/visualstudio/ide/creating-project-and-item-templates).  
+- Modelos de item no Visual Studio. Para obter mais informações, consulte [Criando modelos de item e de projeto](/visualstudio/ide/creating-project-and-item-templates).  
   
 ## <a name="create-the-projects"></a>Crie os projetos
  Para concluir este passo a passo, você precisa criar três projetos:  
   
--   Um projeto VSIX. Esse projeto cria o pacote VSIX para implantar o item de projeto do SharePoint.  
+- Um projeto VSIX. Esse projeto cria o pacote VSIX para implantar o item de projeto do SharePoint.  
   
--   Um projeto de modelo de item. Esse projeto cria um modelo de item que pode ser usado para adicionar o item de projeto do SharePoint a um projeto do SharePoint.  
+- Um projeto de modelo de item. Esse projeto cria um modelo de item que pode ser usado para adicionar o item de projeto do SharePoint a um projeto do SharePoint.  
   
--   Um projeto de biblioteca de classes. Este projeto implementa uma extensão do Visual Studio que define o comportamento do item de projeto do SharePoint.  
+- Um projeto de biblioteca de classes. Este projeto implementa uma extensão do Visual Studio que define o comportamento do item de projeto do SharePoint.  
   
- Inicie o passo a passo Criando os projetos.  
+  Inicie o passo a passo Criando os projetos.  
   
 #### <a name="to-create-the-vsix-project"></a>Para criar o projeto do VSIX  
   
@@ -298,7 +298,7 @@ ms.locfileid: "42635324"
   
 1.  Na **Gerenciador de soluções**, abra o menu de atalho para o **vsixmanifest** arquivo no projeto CustomActionProjectItem e, em seguida, escolha **abrir**.  
   
-     Visual Studio abre o arquivo no editor de manifesto. O arquivo vsixmanifest é a base para o arquivo Extension vsixmanifest que exigem todos os pacotes VSIX. Para obter mais informações sobre esse arquivo, consulte [1.0 referência do esquema de extensão do VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Visual Studio abre o arquivo no editor de manifesto. O arquivo vsixmanifest é a base para o arquivo Extension vsixmanifest que exigem todos os pacotes VSIX. Para obter mais informações sobre esse arquivo, consulte [1.0 referência do esquema de extensão do VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  No **nome do produto** , digite **Item de projeto de ação personalizado**.  
   
@@ -313,7 +313,7 @@ ms.locfileid: "42635324"
 6.  No **tipo** , escolha **Microsoft.VisualStudio.ItemTemplate**.  
   
     > [!NOTE]  
-    >  Esse valor corresponde à `ItemTemplate` elemento no arquivo Extension vsixmanifest. Este elemento identifica a subpasta no pacote VSIX que contém o modelo de item de projeto. Para obter mais informações, consulte [ItemTemplate Element (esquema de VSX)](http://msdn.microsoft.com/en-us/1d489e54-c1c5-4f96-a510-6c2640867ff0).  
+    >  Esse valor corresponde à `ItemTemplate` elemento no arquivo Extension vsixmanifest. Este elemento identifica a subpasta no pacote VSIX que contém o modelo de item de projeto. Para obter mais informações, consulte [ItemTemplate Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).  
   
 7.  No **fonte** , escolha **um projeto na solução atual**.  
   
@@ -326,7 +326,7 @@ ms.locfileid: "42635324"
 10. No **tipo** , escolha **mefcomponent**.  
   
     > [!NOTE]  
-    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 11. No **fonte** , escolha **um projeto na solução atual**.  
   
@@ -420,7 +420,7 @@ ms.locfileid: "42635324"
     -   No `UrlAction` elemento, defina o `Url` atributo, como mostra o exemplo a seguir:  
   
         ```xml  
-        Url="http://msdn.microsoft.com/sharepoint/default.aspx"  
+        Url="https://docs.microsoft.com/sharepoint/dev/"  
         ```  
   
 3.  Pressione a tecla **F5**.  
@@ -430,7 +430,7 @@ ms.locfileid: "42635324"
     > [!NOTE]  
     >  Se o **Script Debugging Disabled** caixa de diálogo for exibida, escolha o **Sim** botão para continuar a depuração do projeto.  
   
-4.  Sobre o **ações do Site** menu, escolha **Central de desenvolvedores do SharePoint**, verifique se o navegador abre o site http://msdn.microsoft.com/sharepoint/default.aspxe, em seguida, feche o navegador da web.  
+4.  Sobre o **ações do Site** menu, escolha **Central de desenvolvedores do SharePoint**, verifique se o navegador abre o site https://docs.microsoft.com/sharepoint/dev/e, em seguida, feche o navegador da web.  
   
 ## <a name="clean-up-the-development-computer"></a>Limpar o computador de desenvolvimento
  Após concluir o teste o item de projeto, remova o modelo de item de projeto da instância experimental do Visual Studio.  

@@ -1,7 +1,7 @@
 ---
 title: Exceções de política de ciclo de vida do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 3
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 13b9bf54f22d7cf6604b5e8a4304a4e0223a6dab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7c60747429bd702cdcea5f19891829411cd4a9c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466134"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772619"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Exceções de política de ciclo de vida do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

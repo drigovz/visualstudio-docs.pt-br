@@ -1,7 +1,7 @@
 ---
 title: Estendendo a propriedades, lista de tarefas, saída e as opções Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aff8da28ecdf91ffa2b21ddb03a62315e2943d6e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 327d218f22b4629ec919a20ef2800d445e2d652f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474800"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737829"
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Estendendo as janelas Propriedades, Lista de Tarefas, Saída e Opções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [estendendo a propriedades, lista de tarefas, saída e as opções Windows](https://docs.microsoft.com/visualstudio/extensibility/extending-the-properties-task-list-output-and-options-windows).  
-  
 Você pode acessar qualquer janela de ferramentas no Visual Studio. Este passo a passo mostra como integrar informações sobre sua janela de ferramentas em uma nova **opções** página e uma nova configuração na **propriedades** página e também como gravar na **listadetarefas** e **saída** windows.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
@@ -104,33 +102,33 @@ Você pode acessar qualquer janela de ferramentas no Visual Studio. Este passo a
 ## <a name="create-an-options-page"></a>Criar uma página de opções  
  Você pode fornecer uma página na **opções** caixa de diálogo para que os usuários podem alterar as configurações para a janela da ferramenta. Criar uma página de opções requer uma classe que descreve as opções e uma entrada no arquivo TodoListPackage.cs ou TodoListPackage.vb.  
   
-1.  Adicione uma classe chamada `ToolsOptions.cs`. Fazer com que a classe ToolsOptions herdam <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+1. Adicione uma classe chamada `ToolsOptions.cs`. Fazer com que a classe ToolsOptions herdam <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
-    ```csharp  
-    class ToolsOptions : DialogPage  
-    {  
-    }  
-    ```  
+   ```csharp  
+   class ToolsOptions : DialogPage  
+   {  
+   }  
+   ```  
   
-2.  Adicione a seguinte instrução using:  
+2. Adicione a seguinte instrução using:  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell;  
-    ```  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell;  
+   ```  
   
-3.  A página de opções neste passo a passo fornece apenas uma opção chamada DaysAhead. Adicionar um campo privado chamado **daysAhead** e uma propriedade chamada **DaysAhead** à classe ToolsOptions:  
+3. A página de opções neste passo a passo fornece apenas uma opção chamada DaysAhead. Adicionar um campo privado chamado **daysAhead** e uma propriedade chamada **DaysAhead** à classe ToolsOptions:  
   
-    ```csharp  
-    private double daysAhead;  
+   ```csharp  
+   private double daysAhead;  
   
-    public double DaysAhead  
-    {  
-        get { return daysAhead; }  
-        set { daysAhead = value; }  
-    }  
-    ```  
+   public double DaysAhead  
+   {  
+       get { return daysAhead; }  
+       set { daysAhead = value; }  
+   }  
+   ```  
   
- Agora você deve fazer o projeto ciente dessa página de opções.  
+   Agora você deve fazer o projeto ciente dessa página de opções.  
   
 #### <a name="make-the-options-page-available-to-users"></a>Tornar a página de opções disponíveis para usuários  
   

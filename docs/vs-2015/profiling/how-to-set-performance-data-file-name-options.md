@@ -1,7 +1,7 @@
 ---
 title: Como definir opções de nome de arquivo de dados de desempenho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 19a29c143ecc2ce413e6f6480b2c49e52277af3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 06751d510c38f055036865a8f368c4e0c3298a30
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464846"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801965"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Como definir opções de nome de arquivo de dados de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: definir opções de nome de arquivo de dados de desempenho](https://docs.microsoft.com/visualstudio/profiling/how-to-set-performance-data-file-name-options).  
-  
 Por padrão, um arquivo de dados de criação de perfil (.vsp) é salvo usando a sintaxe a seguir:  
   
  *Path\VSP-File\YYMMDD(N)* **.vsp**  

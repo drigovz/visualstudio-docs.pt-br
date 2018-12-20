@@ -1,7 +1,7 @@
 ---
 title: Guia do Windows, a caixa de diálogo de opções de mensagem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - message options, Windows
 ms.assetid: 6e9cc5ca-24cc-49cf-aa22-c89733828f8c
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 474afed35351bc62276a82fc7e4ffe5e5a6f9164
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 18c4df45b05ded298243797382be3793a205e640
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463310"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779548"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Guia Janelas, Caixa de diálogo Opções da Mensagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [guia do Windows, a caixa de diálogo de opções de mensagem](https://docs.microsoft.com/visualstudio/debugger/windows-tab-message-options-dialog-box).  
-  
 Use o **Windows** guia para definir o escopo das mensagens listadas na [exibição de mensagens](../debugger/messages-view.md). Para exibir o [caixa de diálogo de opções de mensagem](../debugger/message-options-dialog-box.md), escolha **mensagens de Log** do **Spy** menu.  
   
  As seguintes configurações estão disponíveis sobre o **Windows** guia:  

@@ -1,7 +1,7 @@
 ---
 title: Depurando LINQ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,21 +22,19 @@ helpviewer_keywords:
 - LINQ, edit and continue
 ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29e5a598c1c9d0d605267ed0894715eb18589136
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 081c97bffc062bf2bbc9d24feed13e5e512b8c74
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464885"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755608"
 ---
 # <a name="debugging-linq"></a>Depurando LINQ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depuração LINQ](https://docs.microsoft.com/visualstudio/debugger/debugging-linq).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oferece suporte à depuração de código de consulta integrado da linguagem (LINQ), com algumas restrições. A maioria dos recursos de depuração funcionam com instruções LINQ, incluindo a depuração, definição de pontos de interrupção e exibição de resultados em janelas de depuração. Este tópico descreve as principais limitações da depuração LINQ.  
   
 ##  <a name="BKMK_ViewingLINQResults"></a> Exibindo resultados de LINQ  

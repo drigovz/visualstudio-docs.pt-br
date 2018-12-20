@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Findlinesbyaddr | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSession::findLinesByAddr method
 ms.assetid: 640403c0-14cf-403c-ad19-38b3bdc28ca8
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25f070bc86691fff42abfd66055a96916f5f0878
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b29a9adcd028c78cb2b2f457b812d21443a8cfbe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475603"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733814"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasession:: Findlinesbyaddr](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findlinesbyaddr).  
-  
 Recupera as linhas que contêm um endereço especificado em um compiland especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findLinesByAddr (   
+HRESULT findLinesByAddr (   
    DWORD                 seg,  
    DWORD                 offset,  
    DWORD                 length,  

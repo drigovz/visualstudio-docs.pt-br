@@ -1,7 +1,7 @@
 ---
 title: Personalizando o Windows do código usando a API herdada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5328ab2f-55cb-4680-9744-ec79f55acd1b
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7738ef02b7f26e78197ca974fdc03b60c157799f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45788e3fdfff2898a0d2d2ed36c81425c225b54c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473152"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809760"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Personalizando o Windows do código usando a API herdada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Personalizando o Windows de código usando a API herdada](https://docs.microsoft.com/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api).  
-  
 Uma janela de código é um objeto de janela de documento que dá suporte a um ou mais modos de exibição de texto. Os recursos exatos de uma janela de código dependem do serviço de idioma associado. No modo de interface de documentos múltiplos (MDI), a janela de código é o quadro filho MDI.  
   
  Janelas de código são controladas pelos serviços de linguagem, e cada serviço de linguagem pode fornecer seu próprio Gerenciador de janela de código. Isso permite que o serviço de linguagem adicionar seus próprio adornos a janela de código, como linhas onduladas, colorização e muito mais. Para obter mais informações sobre como criar uma janela de core, consulte [instanciar o principal Editor usando a API herdada](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).  

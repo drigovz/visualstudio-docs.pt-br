@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8153f0120259eec8ad284b0717e58be750e3b99d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884076"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Passo a passo: Criar menus de atalho para indicadores
   Este passo a passo demonstra como criar menus de atalho para <xref:Microsoft.Office.Tools.Word.Bookmark> controles em uma personalização no nível de documento para Word. Quando um usuário clica o texto em um indicador, um menu de atalho é exibido e fornece as opções de usuário para formatar o texto.  
@@ -32,15 +32,15 @@ ms.locfileid: "38783836"
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   [Criar o projeto](#BKMK_CreateProject).  
+- [Criar o projeto](#BKMK_CreateProject).  
   
--   [Adicionar texto e indicadores no documento](#BKMK_addtextandbookmarks).  
+- [Adicionar texto e indicadores no documento](#BKMK_addtextandbookmarks).  
   
--   [Adicionar comandos ao menu de atalho](#BKMK_AddCmndsShortMenu).  
+- [Adicionar comandos ao menu de atalho](#BKMK_AddCmndsShortMenu).  
   
--   [Formatar o texto no indicador](#BKMK_formattextbkmk).  
+- [Formatar o texto no indicador](#BKMK_formattextbkmk).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
@@ -69,22 +69,22 @@ ms.locfileid: "38783836"
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Para adicionar um controle de indicador para o seu documento  
   
-1.  No **caixa de ferramentas**, da **controles do Word** guia, arraste um <xref:Microsoft.Office.Tools.Word.Bookmark> controle ao documento.  
+1. No **caixa de ferramentas**, da **controles do Word** guia, arraste um <xref:Microsoft.Office.Tools.Word.Bookmark> controle ao documento.  
   
-     O **adicionar controle de indicador** caixa de diálogo é exibida.  
+    O **adicionar controle de indicador** caixa de diálogo é exibida.  
   
-2.  Selecione as palavras "Criando um menu de atalho quando o botão direito do mouse o texto" e, em seguida, clique em **Okey**.  
+2. Selecione as palavras "Criando um menu de atalho quando o botão direito do mouse o texto" e, em seguida, clique em **Okey**.  
   
-     `bookmark1` é adicionado ao documento.  
+    `bookmark1` é adicionado ao documento.  
   
-3.  Adicione outro <xref:Microsoft.Office.Tools.Word.Bookmark> o controle para as palavras "com o botão direito do texto em um indicador".  
+3. Adicione outro <xref:Microsoft.Office.Tools.Word.Bookmark> o controle para as palavras "com o botão direito do texto em um indicador".  
   
-     `bookmark2` é adicionado ao documento.  
+    `bookmark2` é adicionado ao documento.  
   
-    > [!NOTE]  
-    >  As palavras "com o botão direito o texto" está em ambos os `bookmark1` e `bookmark2`.  
+   > [!NOTE]  
+   >  As palavras "com o botão direito o texto" está em ambos os `bookmark1` e `bookmark2`.  
   
- Quando você adiciona um indicador a um documento em tempo de design, um <xref:Microsoft.Office.Tools.Word.Bookmark> controle é criado. Você pode programar vários eventos do indicador. Você pode escrever código no <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> evento do indicador, de modo que quando o usuário clica o texto no indicador, um menu de atalho é exibido.  
+   Quando você adiciona um indicador a um documento em tempo de design, um <xref:Microsoft.Office.Tools.Word.Bookmark> controle é criado. Você pode programar vários eventos do indicador. Você pode escrever código no <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> evento do indicador, de modo que quando o usuário clica o texto no indicador, um menu de atalho é exibido.  
   
 ##  <a name="BKMK_AddCmndsShortMenu"></a> Adicionar comandos ao menu de atalho  
  Adicione botões ao menu de atalho que aparece quando o botão direito do mouse no documento.  

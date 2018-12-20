@@ -1,7 +1,7 @@
 ---
 title: Exibir valores de dados em dicas de dados no editor de códigos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,37 +23,35 @@ helpviewer_keywords:
 - DataTips tool
 ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
 caps.latest.revision: 41
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1a7e755fd81bb66d822f7232e903fea9c53087c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 37fc58a68f8cf482ac6a2bbab3ecb47c28d60904
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460976"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799438"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Exibir valores de dados em Dicas de Dados no editor de códigos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibir valores de dados em dicas de dados no editor de códigos](https://docs.microsoft.com/visualstudio/debugger/view-data-values-in-data-tips-in-the-code-editor).  
-  
 Os DataTips fornecem um modo conveniente de exibir informações sobre variáveis em seu programa durante a depuração. Os DataTips funcionam apenas no modo de interrupção e apenas com variáveis que estejam no escopo de execução atual.  
   
  Na [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], os DataTips podem ser fixados em um local específico em um arquivo de origem ou podem Flutuar sobre todas as [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows.  
   
 ### <a name="to-display-a-datatip-in-break-mode-only"></a>Para exibir um DataTip (somente no modo de interrupção)  
   
-1.  Em uma janela de origem, coloque o ponteiro do mouse sobre qualquer variável no escopo atual.  
+1. Em uma janela de origem, coloque o ponteiro do mouse sobre qualquer variável no escopo atual.  
   
-     Um DataTip aparece.  
+    Um DataTip aparece.  
   
-    > [!NOTE]
-    >  Os DataTips são sempre avaliados no contexto onde a execução é suspensa e não por onde o cursor está passando. Se você passar o mouse sobre uma variável em outra função com o mesmo nome de uma variável que está no contexto atual, o valor da variável na outra função será exibido como o valor da variável no contexto atual.  
+   > [!NOTE]
+   >  Os DataTips são sempre avaliados no contexto onde a execução é suspensa e não por onde o cursor está passando. Se você passar o mouse sobre uma variável em outra função com o mesmo nome de uma variável que está no contexto atual, o valor da variável na outra função será exibido como o valor da variável no contexto atual.  
   
-2.  O DataTip desaparecerá quando você remover o ponteiro do mouse. Para fixar o DataTip de modo que ela permaneça aberta, clique o **fixar à origem** ícone, ou  
+2. O DataTip desaparecerá quando você remover o ponteiro do mouse. Para fixar o DataTip de modo que ela permaneça aberta, clique o **fixar à origem** ícone, ou  
   
-    -   Com o botão direito em uma variável e, em seguida, clique em **fixar à origem**.  
+   - Com o botão direito em uma variável e, em seguida, clique em **fixar à origem**.  
   
      O DataTip fixado é fechado quando a sessão de depuração termina.  
   

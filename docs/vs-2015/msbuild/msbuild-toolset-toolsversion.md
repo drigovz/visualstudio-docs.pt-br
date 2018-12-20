@@ -1,7 +1,7 @@
 ---
 title: MSBuild Toolset (ToolsVersion) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8dff8f8852054f4c7f3ff49ef10e6f760c62436b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd516501acfc7690c12a253adc5da6cf163b5592
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466113"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851823"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [MSBuild Toolset (ToolsVersion)](https://docs.microsoft.com/visualstudio/msbuild/msbuild-toolset-toolsversion).  
-  
   
 O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para compilar um aplicativo. Normalmente, um conjunto de ferramentas do MSBuild inclui um arquivo microsoft.common.tasks, um arquivo microsoft.common.targets e compiladores como o csc.exe e o vbc.exe. A maioria dos conjuntos de ferramentas pode ser usada para compilar aplicativos para mais de uma versão do .NET Framework e mais de uma plataforma de sistema. No entanto, o conjunto de ferramentas do MSBuild 2.0 pode ser usado para visar apenas o NET Framework 2.0.  
   
@@ -67,39 +65,39 @@ O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para co
 ## <a name="toolset-implementation"></a>Implementação do conjunto de ferramentas  
  Implemente um conjunto de ferramentas selecionando os caminhos das várias ferramentas, destinos e tarefas que compõem o conjunto de ferramentas. As ferramentas do conjunto de ferramentas que o MSBuild define são fornecidas das seguintes fontes:  
   
--   A pasta do .NET Framework.  
+- A pasta do .NET Framework.  
   
--   Ferramentas gerenciadas adicionais.  
+- Ferramentas gerenciadas adicionais.  
   
- As ferramentas gerenciadas incluem ResGen.exe e TlbImp.exe.  
+  As ferramentas gerenciadas incluem ResGen.exe e TlbImp.exe.  
   
- O MSBuild fornece duas maneiras de acessar o conjunto de ferramentas:  
+  O MSBuild fornece duas maneiras de acessar o conjunto de ferramentas:  
   
--   Usando as propriedades do conjunto de ferramentas  
+- Usando as propriedades do conjunto de ferramentas  
   
--   Usando os métodos <xref:Microsoft.Build.Utilities.ToolLocationHelper>  
+- Usando os métodos <xref:Microsoft.Build.Utilities.ToolLocationHelper>  
   
- As propriedades do conjunto de ferramentas especificam os caminhos das ferramentas. O MSBuild usa o valor do atributo `ToolsVersion` no arquivo do projeto para localizar a chave do registro correspondente e usa as informações na chave do registro para definir as propriedades do conjunto de ferramentas. Por exemplo, se `ToolsVersion` tiver um valor `12.0`, o MSBuild configurará as propriedades do conjunto de ferramentas de acordo com esta chave do Registro: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+  As propriedades do conjunto de ferramentas especificam os caminhos das ferramentas. O MSBuild usa o valor do atributo `ToolsVersion` no arquivo do projeto para localizar a chave do registro correspondente e usa as informações na chave do registro para definir as propriedades do conjunto de ferramentas. Por exemplo, se `ToolsVersion` tiver um valor `12.0`, o MSBuild configurará as propriedades do conjunto de ferramentas de acordo com esta chave do Registro: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
- Estas são as propriedades do conjunto de ferramentas:  
+  Estas são as propriedades do conjunto de ferramentas:  
   
--   `MSBuildToolsPath` especifica o caminho dos binários do MSBuild.  
+- `MSBuildToolsPath` especifica o caminho dos binários do MSBuild.  
   
--   `SDK40ToolsPath` especifica o caminho de ferramentas gerenciadas adicionais para o MSBuild 4.x (que pode ser 4.0 ou 4.5).  
+- `SDK40ToolsPath` especifica o caminho de ferramentas gerenciadas adicionais para o MSBuild 4.x (que pode ser 4.0 ou 4.5).  
   
--   `SDK35ToolsPath` especifica o caminho de ferramentas gerenciadas adicionais para o MSBuild 3.5.  
+- `SDK35ToolsPath` especifica o caminho de ferramentas gerenciadas adicionais para o MSBuild 3.5.  
   
- Você também pode determinar o conjunto de ferramentas programaticamente, chamando os métodos da classe <xref:Microsoft.Build.Utilities.ToolLocationHelper>. A classe inclui os seguintes métodos:  
+  Você também pode determinar o conjunto de ferramentas programaticamente, chamando os métodos da classe <xref:Microsoft.Build.Utilities.ToolLocationHelper>. A classe inclui os seguintes métodos:  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> retorna o caminho da pasta do .NET Framework.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> retorna o caminho da pasta do .NET Framework.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> retorna o caminho de um arquivo na pasta do .NET Framework.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> retorna o caminho de um arquivo na pasta do .NET Framework.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> retorna o caminho da pasta das ferramentas gerenciadas.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> retorna o caminho da pasta das ferramentas gerenciadas.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> retorna o caminho de um arquivo, que normalmente está localizado na pasta das ferramentas gerenciadas.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> retorna o caminho de um arquivo, que normalmente está localizado na pasta das ferramentas gerenciadas.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> retorna o caminho das ferramentas de compilação.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> retorna o caminho das ferramentas de compilação.  
   
 ### <a name="sub-toolsets"></a>Subconjunto de ferramentas  
  Conforme descrito anteriormente neste tópico, o MSBuild usa uma chave de registro para especificar o caminho das ferramentas básicas. Se a chave tiver uma subchave, o MSBuild a usará para especificar o caminho de um subconjunto de ferramentas que contém ferramentas adicionais. Nesse caso, o conjunto de ferramentas é definido pela combinação das definições de propriedades definidas nas duas chaves.  
@@ -109,19 +107,19 @@ O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para co
   
  Os subconjuntos de ferramentas tornam-se ativos na presença da propriedade de compilação `VisualStudioVersion`. Essa propriedade pode usar um dos seguintes valores:  
   
--   “10.0” especifica o subconjunto de ferramentas do .NET Framework 4  
+- “10.0” especifica o subconjunto de ferramentas do .NET Framework 4  
   
--   “11.0” especifica o subconjunto de ferramentas do .NET Framework 4.5  
+- “11.0” especifica o subconjunto de ferramentas do .NET Framework 4.5  
   
--   “12.0” especifica o subconjunto de ferramentas do .NET Framework 4.5.1  
+- “12.0” especifica o subconjunto de ferramentas do .NET Framework 4.5.1  
   
- Os subconjuntos de ferramentas 10.0 e 11.0 devem ser usados com o ToolsVersion 4.0. Em versões posteriores, a versão do subconjunto de ferramentas e o ToolsVersion devem corresponder.  
+  Os subconjuntos de ferramentas 10.0 e 11.0 devem ser usados com o ToolsVersion 4.0. Em versões posteriores, a versão do subconjunto de ferramentas e o ToolsVersion devem corresponder.  
   
- Durante uma compilação, o MSBuild determina e define um valor padrão para a propriedade `VisualStudioVersion` se ele ainda não estiver definido.  
+  Durante uma compilação, o MSBuild determina e define um valor padrão para a propriedade `VisualStudioVersion` se ele ainda não estiver definido.  
   
- O MSBuild fornece sobrecargas para os métodos `ToolLocationHelper` que adicionam um valor enumerado `VisualStudioVersion` como parâmetro  
+  O MSBuild fornece sobrecargas para os métodos `ToolLocationHelper` que adicionam um valor enumerado `VisualStudioVersion` como parâmetro  
   
- Os subconjuntos de ferramentas foram introduzidos no .NET Framework 4.5.  
+  Os subconjuntos de ferramentas foram introduzidos no .NET Framework 4.5.  
   
 ## <a name="see-also"></a>Consulte também  
  [Configurações Padrão e Personalizadas do Conjunto de Ferramentas](../msbuild/standard-and-custom-toolset-configurations.md)   

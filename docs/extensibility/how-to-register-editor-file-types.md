@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3b0e9bf702515a4c36d58eeb18eb869b96646f1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 326b29574d8ff2562196652cdcde9865aee24c0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638424"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896920"
 ---
 # <a name="how-to-register-editor-file-types"></a>Como: registrar os tipos de arquivo do editor
 A maneira mais fácil de registrar tipos de arquivo do editor é usando os atributos de registro fornecidos como parte do [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] pacote framework (MPF) classes gerenciadas. Se você estiver implementando seu pacote no formato nativo [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], você também pode escrever um script de registro que registra seu editor e aos ramais associados.
@@ -26,44 +26,44 @@ A maneira mais fácil de registrar tipos de arquivo do editor é usando os atrib
 
 ### <a name="to-register-editor-file-types-using-mpf-classes"></a>Para registrar tipos de arquivo do editor usando classes MPF
 
-1.  Forneça o <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> classe com os parâmetros apropriados para seu editor na classe do VSPackage.
+1. Forneça o <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> classe com os parâmetros apropriados para seu editor na classe do VSPackage.
 
-    ```
-    [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
-         ProjectGuid = "{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}",
-         TemplateDir = "..\\..\\Templates",
-         NameResourceID = 106)]
-    ```
+   ```
+   [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
+        ProjectGuid = "{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}",
+        TemplateDir = "..\\..\\Templates",
+        NameResourceID = 106)]
+   ```
 
-     Onde *. Exemplo* é a extensão que está registrada para este editor e "32" é o seu nível de prioridade.
+    Onde *. Exemplo* é a extensão que está registrada para este editor e "32" é o seu nível de prioridade.
 
-     O `projectGuid` é o GUID para tipos de arquivo diverso, definidos em <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>. O tipo de arquivo diverso for fornecido, para que o arquivo resultante não pretende ser uma parte do processo de compilação.
+    O `projectGuid` é o GUID para tipos de arquivo diverso, definidos em <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>. O tipo de arquivo diverso for fornecido, para que o arquivo resultante não pretende ser uma parte do processo de compilação.
 
-     *TemplateDir* representa a pasta que contém os arquivos de modelo são incluídos com o exemplo de editor básico gerenciado.
+    *TemplateDir* representa a pasta que contém os arquivos de modelo são incluídos com o exemplo de editor básico gerenciado.
 
-     `NameResourceID` é definido na *Resources.h* arquivo do projeto BasicEditorUI e identifica o editor como "Meu Editor".
+    `NameResourceID` é definido na *Resources.h* arquivo do projeto BasicEditorUI e identifica o editor como "Meu Editor".
 
-2.  Substituir o método <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
+2. Substituir o método <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
 
-     Em sua implementação do <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método, chame o <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> método e passar a instância de sua fábrica de editor, como demonstrada a seguir.
+    Em sua implementação do <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método, chame o <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> método e passar a instância de sua fábrica de editor, como demonstrada a seguir.
 
-    ```csharp
-    protected override void Initialize()
-    {
-        Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
-        "Entering Initialize() of: {0}", this.ToString()));
-        base.Initialize();
-           //Create Editor Factory
-        editorFactory = new EditorFactory(this);
-        base.RegisterEditorFactory(editorFactory);
-    }
-    ```
+   ```csharp
+   protected override void Initialize()
+   {
+       Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
+       "Entering Initialize() of: {0}", this.ToString()));
+       base.Initialize();
+          //Create Editor Factory
+       editorFactory = new EditorFactory(this);
+       base.RegisterEditorFactory(editorFactory);
+   }
+   ```
 
-     Esta etapa registra a fábrica do editor e as extensões de arquivo do editor.
+    Esta etapa registra a fábrica do editor e as extensões de arquivo do editor.
 
-3.  Cancelar o registro as fábricas de editor.
+3. Cancelar o registro as fábricas de editor.
 
-     As fábricas de editor são canceladas automaticamente quando o VSPackage é descartado. Se o objeto de fábrica de editor implementa o <xref:System.IDisposable> interface, seu `Dispose` método é chamado depois que a fábrica tem sido cancelada com [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+    As fábricas de editor são canceladas automaticamente quando o VSPackage é descartado. Se o objeto de fábrica de editor implementa o <xref:System.IDisposable> interface, seu `Dispose` método é chamado depois que a fábrica tem sido cancelada com [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="registration-using-a-registry-script"></a>Usando um script de registro do registro
  Registrar fábricas e tipos de arquivo no formato nativo [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] é feito usando um script de registro para gravar no registro do windows, conforme ilustrado a seguir.

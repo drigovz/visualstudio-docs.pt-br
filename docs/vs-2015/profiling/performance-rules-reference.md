@@ -1,7 +1,7 @@
 ---
 title: Referência das Regras de Desempenho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 59fc9424-76ca-4365-ae47-bb14a736c9c2
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8f96819c5d6f8e2be1c7f92e53ebbb29d075886
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 689997704fa6d74dad611ee68eb0773612d57248
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473613"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793822"
 ---
 # <a name="performance-rules-reference"></a>Referência de regras de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [referência de regras de desempenho](https://docs.microsoft.com/visualstudio/profiling/performance-rules-reference).  
-  
 As regras de desempenho das Ferramentas de Criação de Perfil fornecem avisos adicionais e informações sobre o desempenho do seu aplicativo. Regras de desempenho analisam os dados em uma execução de criação de perfil que é coletada das fontes, tal como Windows e contadores de desempenho do processador. Mensagens de regra aparecem na janela Saída de Erro do ambiente de desenvolvimento integrado do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. As mensagens são listadas com um dos seguintes níveis de regra:  
   
 |||  

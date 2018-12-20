@@ -1,7 +1,7 @@
 ---
 title: 'Como: depurar o código-fonte do .NET Framework | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,28 +18,26 @@ helpviewer_keywords:
 - debugging, .NET Framework source
 ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250c2bd633a4f6c6b0580b23d0fbf1bb25094247
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ce5e20524040d131a655da1567606ffbb0934a80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460858"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725429"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Como depurar a origem do .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: depurar a origem do .NET Framework](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-dotnet-framework-source).  
-  
 A versão mais recente do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornece novos recursos para [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] depuração. Para depurar [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] fonte, você deve ter acesso aos símbolos de depuração para o código. Você também precisará habilitar a depuração de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] código-fonte.  
   
  Você pode habilitar [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] passo a passo e o download do símbolo na **opções** caixa de diálogo. Ao habilitar a transferência de símbolo, você pode optar por baixar imediatamente os símbolos ou apenas habilitar a opção para uma transferência posterior. Se você não baixar os símbolos imediatamente, eles serão baixados da próxima vez em que você iniciar a depuração do seu aplicativo. Você também pode baixar um manual do **módulos** janela ou o **pilha de chamadas** janela.  
   
 ### <a name="to-enable-net-framework-source-debugging"></a>Para ativar a depuração de origem do .NET Framework  
   
-1.  Sobre o **ferramentas** menu, clique em **opção**s.  
+1.  No menu **Ferramentas**, clique em **Opções**.  
   
 2.  No **opções** caixa de diálogo, clique o **depuração** categoria.  
   

@@ -1,7 +1,7 @@
 ---
 title: inline, inline, forceinline | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,15 +28,15 @@ helpviewer_keywords:
 - instantiation, defined
 ms.assetid: a159d11e-5dc6-4bac-b2cf-b5f23688e552
 caps.latest.revision: 10
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f22610c759983412bc736d9fb037087ddf6818f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 298085bba61cf18d5c374eb75cb2650248ab0cf7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460958"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720958"
 ---
 # <a name="inline-inline-forceinline"></a>inline, __inline, __forceinline
 Este conteúdo foi movido para [funções embutidas](http://msdn.microsoft.com/library/355f120c-2847-4608-ac04-8dda18ffe10c)  

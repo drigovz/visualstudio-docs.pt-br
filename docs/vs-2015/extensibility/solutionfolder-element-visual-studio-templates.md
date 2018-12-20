@@ -1,7 +1,7 @@
 ---
 title: Elemento SolutionFolder (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 963f0398-fb50-4d8e-879d-d48f8b7c6d80
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 48a6afddc8f434d03bba75ab55f31666aabdbe39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fd41144605b37368fe57aa00cdc2bbc8f8a0da0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467705"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809721"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>Elemento SolutionFolder (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento SolutionFolder (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/solutionfolder-element-visual-studio-templates).  
-  
 Agrupa projetos em modelos de vários projetos.  
   
  \<VSTemplate >  

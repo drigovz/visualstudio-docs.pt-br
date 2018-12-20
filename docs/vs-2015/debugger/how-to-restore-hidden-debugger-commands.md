@@ -1,7 +1,7 @@
 ---
 title: 'Como: Restaurar comandos ocultos do depurador | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,21 +24,19 @@ helpviewer_keywords:
 - commands, debugger
 ms.assetid: 76ac9b77-f536-43b5-a9fc-984854b1c566
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61021e902befc29d90505e3e9c28f1b9dde3ded3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5edc195397b9652d790620b8281100cc7651a02d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467352"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802298"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Como restaurar comandos de depurador ocultos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: Restaurar comandos ocultos do depurador](https://docs.microsoft.com/visualstudio/debugger/how-to-restore-hidden-debugger-commands).  
-  
 Ao configurar o Visual Studio, será solicitado que você escolha um conjunto de configurações padrão da IDE para a sua linguagem de programação principal. As configurações padrão da IDE para algumas linguagens podem ocultar alguns comandos do depurador.  
   
  Se você quiser usar um recurso do depurador que esteja oculto pelas configurações padrão da IDE, poderá adicionar o comando novamente ao menu usando o procedimento a seguir.  

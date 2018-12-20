@@ -13,56 +13,56 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc86f6f5e6689903acb4c57131cee5562117f732
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 7ac2ad16c0e6a3e0a6c76e15ff6860838fa349c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636341"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893098"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Como: criar marcadores de texto personalizado
 Se você quiser criar um marcador de texto personalizado para enfatizar ou organizar o código, você deve executar as seguintes etapas:  
   
--   Registre o novo marcador de texto, para que outras ferramentas podem acessá-lo.  
+- Registre o novo marcador de texto, para que outras ferramentas podem acessá-lo.  
   
--   Fornece uma implementação padrão e a configuração do marcador de texto.  
+- Fornece uma implementação padrão e a configuração do marcador de texto.  
   
--   Criar um serviço que pode ser usado por outros processos para fazer uso do marcador de texto.  
+- Criar um serviço que pode ser usado por outros processos para fazer uso do marcador de texto.  
   
- Para obter detalhes sobre como aplicar um marcador de texto em uma região de código, consulte [como: usar marcadores de texto](../extensibility/how-to-use-text-markers.md).  
+  Para obter detalhes sobre como aplicar um marcador de texto em uma região de código, consulte [como: usar marcadores de texto](../extensibility/how-to-use-text-markers.md).  
   
 ## <a name="to-register-a-custom-marker"></a>Para registrar um marcador personalizado  
   
-1.  Crie uma entrada de registro da seguinte maneira:  
+1. Crie uma entrada de registro da seguinte maneira:  
   
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versão > \Text Editor\External marcadores\\\<MarkerGUID >**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versão > \Text Editor\External marcadores\\\<MarkerGUID >**  
   
-     *\<MarkerGUID >* é um `GUID` usado para identificar o marcador que está sendo adicionado  
+    *\<MarkerGUID >* é um `GUID` usado para identificar o marcador que está sendo adicionado  
   
-     `<Version>` é a versão do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], por exemplo 8.0  
+    `<Version>` é a versão do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], por exemplo 8.0  
   
-     `<PackageGUID>` o GUID do VSPackage está implementando o objeto de automação.  
+    `<PackageGUID>` o GUID do VSPackage está implementando o objeto de automação.  
   
-    > [!NOTE]
-    >  O caminho da raiz **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versão >** pode ser substituído por uma raiz alternativa quando o shell do Visual Studio é inicializado, para obter mais informações, consulte [De linha de comando](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > [!NOTE]
+   >  O caminho da raiz **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versão >** pode ser substituído por uma raiz alternativa quando o shell do Visual Studio é inicializado, para obter mais informações, consulte [De linha de comando](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Crie quatro valores em **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versão > \Text Editor\External marcadores\\\<MarkerGUID >**  
+2. Crie quatro valores em **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versão > \Text Editor\External marcadores\\\<MarkerGUID >**  
   
-    -   (Padrão)  
+   -   (Padrão)  
   
-    -   Serviço  
+   -   Serviço  
   
-    -   DisplayName  
+   -   DisplayName  
   
-    -   Pacote  
+   -   Pacote  
   
-    -   `Default` é uma entrada opcional do tipo REG_SZ. Quando definido, o valor da entrada é uma cadeia de caracteres que contém algumas informações úteis de identifica, por exemplo "marcador de texto personalizada".  
+   -   `Default` é uma entrada opcional do tipo REG_SZ. Quando definido, o valor da entrada é uma cadeia de caracteres que contém algumas informações úteis de identifica, por exemplo "marcador de texto personalizada".  
   
-    -   `Service` é uma entrada do tipo REG_SZ que contém a cadeia de caracteres do GUID do serviço que fornece o marcador de texto personalizado por proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. O formato é {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   -   `Service` é uma entrada do tipo REG_SZ que contém a cadeia de caracteres do GUID do serviço que fornece o marcador de texto personalizado por proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. O formato é {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
-    -   `DisplayName` é uma entrada do tipo REG_SZ que contém a ID de recurso do nome do marcador de texto personalizado. O formato é #YYYY.  
+   -   `DisplayName` é uma entrada do tipo REG_SZ que contém a ID de recurso do nome do marcador de texto personalizado. O formato é #YYYY.  
   
-    -   `Package` é a entrada do tipo REG_SZ que contém o `GUID` de VSPackage que fornece o serviço listado em serviço. O formato é {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   -   `Package` é a entrada do tipo REG_SZ que contém o `GUID` de VSPackage que fornece o serviço listado em serviço. O formato é {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
 ## <a name="to-create-a-custom-text-marker"></a>Para criar um marcador de texto personalizado  
   

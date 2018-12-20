@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Findlines | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSession::findLines method
 ms.assetid: d6e84916-fd55-457e-b057-57f97b51fe73
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a74255c5c6f88596521d8977506b234a0e4e71d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6f80912e66a7a4d355eefeb545aa40192ae7cc6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462818"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793133"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasession:: Findlines](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findlines).  
-  
 Recupera os números de linha dentro de compiland especificado e identificadores de arquivo de origem.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findLines (   
+HRESULT findLines (   
    IDiaSymbol*           compiland,  
    IDiaSourceFile*       file,  
    IDiaEnumLineNumbers** ppResult  

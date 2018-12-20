@@ -16,12 +16,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: e4a8bc0f4b276ed649cdff986bdfc56cf8c77e06
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 3c1dfa0e3de06bcd6c61472a085ea3c4cdeeac27
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586216"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780783"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Referência de esquema 2.0 do VSIX language pack
 
@@ -31,9 +31,10 @@ O esquema do pacote de idiomas do VSIX fornece informações de instalação loc
 
 É o elemento raiz do arquivo de pacote de idioma `<PackageLanguagePackManifest>`, com um atributo de `Version`, que é a versão do formato de pacote de idioma. Este artigo descreve a versão 2.0 do que o formato de pacote de idioma, que é especificado no manifesto, definindo o `Version` como o valor do atributo `Version="2.0.0"`. O elemento raiz contém exatamente um filho `<Metadata>` elemento.
 
-### <a name="packagelangaugepackmanifest-element"></a>Elemento PackageLangaugePackManifest
+### <a name="packagelanguagepackmanifest-element"></a>Elemento PackageLanguagePackManifest
 
 Dentro de `<PackageLanguagePackManifest>` elemento o elemento a seguir deve existir:
+
 |Título|Descrição|
 |-----------|-----------------|
 |`<Metadata>`| Elemento recipiente para todos os metadados de pacote localizado
@@ -41,6 +42,7 @@ Dentro de `<PackageLanguagePackManifest>` elemento o elemento a seguir deve exis
 ### <a name="metadata-element"></a>Elemento de metadados
 
 Dentro de `<Metadata>` elemento, você pode ter os seguintes elementos:
+
 |Título|Descrição|
 |-----------|-----------------|
 |`<DisplayName>`|O nome localizado da extensão a ser instalado|

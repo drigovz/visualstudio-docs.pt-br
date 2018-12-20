@@ -1,7 +1,7 @@
 ---
 title: Função SccGet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b2e9b0d74acecfa9789ba899018058b7c61c2d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 78c766e52278c8bae29e57cad6f1c0255de4ea43
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474336"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761722"
 ---
 # <a name="sccget-function"></a>Função SccGet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [função SccGet](https://docs.microsoft.com/visualstudio/extensibility/sccget-function).  
-  
 Essa função recupera uma cópia de um ou mais arquivos para exibir e compilar, mas não para edição. Na maioria dos sistemas, os arquivos são marcados como somente leitura.  
   
 ## <a name="syntax"></a>Sintaxe  

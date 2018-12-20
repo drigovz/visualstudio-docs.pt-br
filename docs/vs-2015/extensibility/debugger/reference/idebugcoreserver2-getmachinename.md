@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer2::GetMachineName | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: 693bd794-7215-4f07-8651-b57366d39953
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e7103fa79a394cf5d86c06e0798e151f5a954dc5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f4d90622a228f9bbaedc582957d9f600616ec49
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474328"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791794"
 ---
 # <a name="idebugcoreserver2getmachinename"></a>IDebugCoreServer2::GetMachineName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugCoreServer2::GetMachineName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcoreserver2-getmachinename).  
-  
 Obtém o nome do computador que o server core está em execução.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetName(   
-   BSTR* pbstrName  
+HRESULT GetName(   
+   BSTR* pbstrName  
 );  
 ```  
   
 ```csharp  
-int GetName(   
-   out string pbstrName  
+int GetName(   
+   out string pbstrName  
 );  
 ```  
   

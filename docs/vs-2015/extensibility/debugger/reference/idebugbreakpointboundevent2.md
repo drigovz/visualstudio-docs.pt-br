@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointBoundEvent2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 24ba362e-5be1-481a-b071-e1ebd3cae6e8
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ed2732403210feb05d9013bef9a57e1e410234d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0014a2c47c610049bacb0ce61f62b7a9475ed495
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462775"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784345"
 ---
 # <a name="idebugbreakpointboundevent2"></a>IDebugBreakpointBoundEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugBreakpointBoundEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbreakpointboundevent2).  
-  
 Essa interface informa o Gerenciador de sessão de depuração (SDM) que um ponto de interrupção pendente foi vinculado com êxito a um programa carregado.  
   
 ## <a name="syntax"></a>Sintaxe  

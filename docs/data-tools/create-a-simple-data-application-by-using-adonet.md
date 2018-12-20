@@ -1,5 +1,5 @@
 ---
-title: Criar um aplicativo de dados simples usando o ADO.NET no Visual Studio
+title: Criar um aplicativo de dados simples usando o ADO.NET
 ms.date: 08/23/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,18 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f44264eace04475fc96e42b533a288ef87dd2c2b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758477"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064866"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo de dados simples usando o ADO.NET
 
 Quando você cria um aplicativo que manipule dados em um banco de dados, você pode executar tarefas básicas como definir cadeias de caracteres de conexão, inserção de dados e executar procedimentos armazenados. Ao seguir este tópico, você pode descobrir como interagir com um banco de dados de dentro de um aplicativo simples de "formulários sobre dados" do Windows Forms usando o Visual c# ou Visual Basic e ADO.NET.  Todas as tecnologias de dados do .NET — inclusive conjuntos de dados, o LINQ to SQL e Entity Framework —, por fim, execute as etapas que são muito semelhantes às mostradas neste artigo.
 
- Este artigo demonstra uma maneira simples de obter dados para fora de um banco de dados de uma maneira rápida. Se seu aplicativo precisa modificar dados de maneiras não triviais e atualizar o banco de dados, você deve considerar usando o Entity Framework e usando a associação de dados para sincronizar automaticamente os controles de interface do usuário para as alterações nos dados subjacentes.
+Este artigo demonstra uma maneira simples de obter dados para fora de um banco de dados de uma maneira rápida. Se seu aplicativo precisa modificar dados de maneiras não triviais e atualizar o banco de dados, você deve considerar usando o Entity Framework e usando a associação de dados para sincronizar automaticamente os controles de interface do usuário para as alterações nos dados subjacentes.
 
 > [!IMPORTANT]
 > Para manter o código simples, ele não inclui tratamento de exceção pronta para produção.
@@ -35,7 +35,7 @@ Para criar o aplicativo, você precisará de:
 
 -   Visual Studio.
 
--   SQL Server Express LocalDB. Se você não tiver o SQL Server Express LocalDB, você pode instalá-lo partir o [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
+-   LocalDB do SQL Server Express. Se você não tiver o SQL Server Express LocalDB, você pode instalá-lo partir o [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
 Este tópico pressupõe que você está familiarizado com a funcionalidade básica do IDE do Visual Studio e pode criar um aplicativo Windows Forms, adicionar formulários para o projeto, colocar botões e outros controles em formulários, definem propriedades de controles e codificar eventos simples. Se você não estiver confortável com essas tarefas, sugerimos que você conclua a [Introdução ao Visual c# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) tópico antes de começar este passo a passo.
 
@@ -61,33 +61,33 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 
 7. Cole o script T-SQL no editor de consultas e, em seguida, escolha o **Execute** botão.
 
-     Após alguns instantes, a consulta termina a execução e os objetos de banco de dados são criados. O banco de dados contém duas tabelas: clientes e pedidos. Essas tabelas não contêm dados inicialmente, mas você pode adicionar dados ao executar o aplicativo que você vai criar. O banco de dados também contém quatro procedimentos armazenados simples.
+     Após alguns instantes, a consulta termina a execução e os objetos de banco de dados são criados. O banco de dados contém duas tabelas: Os clientes e pedidos. Essas tabelas não contêm dados inicialmente, mas você pode adicionar dados ao executar o aplicativo que você vai criar. O banco de dados também contém quatro procedimentos armazenados simples.
 
 ## <a name="create-the-forms-and-add-controls"></a>Criar os formulários e adicionar controles
 
-1.  Criar um projeto para um aplicativo do Windows Forms e nomeie- **SimpleDataApp**.
+1. Criar um projeto para um aplicativo do Windows Forms e nomeie- **SimpleDataApp**.
 
-     O Visual Studio cria o projeto e vários arquivos, incluindo um formulário vazio do Windows chamado **Form1**.
+    O Visual Studio cria o projeto e vários arquivos, incluindo um formulário vazio do Windows chamado **Form1**.
 
-2.  Adicione dois formulários do Windows ao seu projeto para que ele tenha três formulários e forneça a eles os seguintes nomes:
+2. Adicione dois formulários do Windows ao seu projeto para que ele tenha três formulários e forneça a eles os seguintes nomes:
 
-    -   **Navegação**
+   -   **Navegação**
 
-    -   **NewCustomer**
+   -   **NewCustomer**
 
-    -   **FillOrCancel**
+   -   **FillOrCancel**
 
-3.  Para cada formulário, adicione as caixas de texto, botões e outros controles que aparecem nas ilustrações a seguir. Para cada controle, defina as propriedades que descrevem as tabelas.
+3. Para cada formulário, adicione as caixas de texto, botões e outros controles que aparecem nas ilustrações a seguir. Para cada controle, defina as propriedades que descrevem as tabelas.
 
-    > [!NOTE]
-    >  A caixa de grupo e os controles de rótulo adicionam clareza mas não são usados no código.
+   > [!NOTE]
+   > A caixa de grupo e os controles de rótulo adicionam clareza mas não são usados no código.
 
- **Formulário de navegação**
+   **Formulário de navegação**
 
- ![Caixa de diálogo de navegação](../data-tools/media/simpleappnav.png)
+   ![Caixa de diálogo de navegação](../data-tools/media/simpleappnav.png)
 
 |Controles para o formulário de navegação|Propriedades|
-|--------------------------------------|----------------|
+| - |----------------|
 |Botão|Nome = btnGoToAdd|
 |Botão|Nome = btnGoToFillOrCancel|
 |Botão|Nome = btnExit|
@@ -97,14 +97,14 @@ Crie o banco de dados de exemplo seguindo estas etapas:
  ![Adicionar um novo cliente e fazer um pedido](../data-tools/media/simpleappnewcust.png)
 
 |Controles para o formulário NewCustomer|Propriedades|
-|---------------------------------------|----------------|
+| - |----------------|
 |TextBox|Nome = txtCustomerName|
 |TextBox|Nome = txtCustomerID<br /><br /> ReadOnly = True|
-|Botão|Name = btnCreateAccount|
+|Botão|Nome = btnCreateAccount|
 |NumericUpdown|DecimalPlaces = 0<br /><br /> Máximo = 5000<br /><br /> Nome = numOrderAmount|
 |DateTimePicker|Formato = abreviado<br /><br /> Nome = dtpOrderDate|
 |Botão|Nome = btnPlaceOrder|
-|Botão|Name = btnAddAnotherAccount|
+|Botão|Nome = btnAddAnotherAccount|
 |Botão|Nome = btnAddFinish|
 
  **Formulário FillOrCancel**
@@ -112,9 +112,9 @@ Crie o banco de dados de exemplo seguindo estas etapas:
  ![preencher ou Cancelar ordens](../data-tools/media/simpleappcancelfill.png)
 
 |Controles para o formulário FillOrCancel|Propriedades|
-|----------------------------------------|----------------|
+| - |----------------|
 |TextBox|Nome = txtOrderID|
-|Botão|Name = btnFindByOrderID|
+|Botão|Nome = btnFindByOrderID|
 |DateTimePicker|Formato = abreviado<br /><br /> Nome = dtpFillDate|
 |DataGridView|Nome = dgvCustomerOrders<br /><br /> ReadOnly = True<br /><br /> RowHeadersVisible = False|
 |Botão|Nome = btnCancelOrder|
@@ -229,7 +229,7 @@ Para concluir a lógica de formulário de FillOrCancel, siga estas etapas.
      [!code-csharp[FillOrCancel#2](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#2)]
      [!code-vb[FillOrCancel#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#2)]
 
-## <a name="test-your-application"></a>Teste seu aplicativo
+## <a name="test-your-application"></a>Testar seu aplicativo
 
 Selecione o **F5** tecla para compilar e testar seu aplicativo depois que você codifica cada manipulador de eventos de clique e, em seguida, depois de concluir a codificação.
 

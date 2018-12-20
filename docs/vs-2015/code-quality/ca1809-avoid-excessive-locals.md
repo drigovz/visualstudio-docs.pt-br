@@ -1,7 +1,7 @@
 ---
 title: 'CA1809: Evitar locais excessivos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c41836e2a7e7e5530d83ff0eaf854b88de42f38f
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 57a0c520dfa610acf247cad62ea2daf690aad05f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587164"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853292"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809: evitar locais excessivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1809: evitar locais excessivos](https://docs.microsoft.com/visualstudio/code-quality/ca1809-avoid-excessive-locals).
 
 |||
 |-|-|

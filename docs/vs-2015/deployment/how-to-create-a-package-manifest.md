@@ -1,7 +1,7 @@
 ---
 title: 'Como: criar um manifesto de pacote | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 6abbbb351d04251b4ef1c209f35652a91b11d8c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2941000e9fa2c6f1d9fd4835c9fd0b8fa1fd1b4f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472835"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182423"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Como criar um manifesto de pacote
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: criar um manifesto de pacote](https://docs.microsoft.com/visualstudio/deployment/how-to-create-a-package-manifest).  
-  
 Para implantar o pré-requisitos para o seu aplicativo, você pode usar um pacote de bootstrapper. Um pacote de bootstrapper contém um arquivo de manifesto de produto único, mas um manifesto de pacote para cada localidade. Funcionalidade compartilhada entre diferentes versões localizadas deve ir para o manifesto do produto.  
   
  Para obter mais informações sobre manifestos de pacote, consulte [como: criar um manifesto de produto](../deployment/how-to-create-a-product-manifest.md).  

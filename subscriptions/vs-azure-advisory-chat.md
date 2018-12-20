@@ -9,12 +9,12 @@ description: Saiba como tirar proveito do benefício de Chat de Consultoria do A
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 653611a2baa9211c74fa28ee90d2397c11c4bbe3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84eb6c7021a4e64b65c6e5390ef43833dd6c7fea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278888"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895997"
 ---
 # <a name="azure-advisory-chat"></a>Chat de Consultoria do Azure
 
@@ -38,14 +38,15 @@ Obtenha ajuda para começar a usar o Azure em tempo real! Inclui consultoria par
 
 ## <a name="eligibility"></a>Qualificação
 
-| Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Padrão, nuvem anual)   | VL, Azure, Retail   | Um ano      |  Sim          |
-| Visual Studio Professional (Padrão, nuvem anual, nuvem mensal) Visual Studio Enterprise (nuvem mensal, NFR<sup>1</sup>) | Todos                                      | Não disponível                                                            |  Não          |
-| Visual Studio Test Professional (Padrão)                         | Todos                                              | Não disponível                                             |  Não          |
-| Plataformas MSDN (Padrão)                                          | Todos                                              |Não disponível                                              |  Não          |
-| Visual Studio Dev Essentials                                          | N/D                                              |Não disponível                                              |  Não          |
-<sup>1</sup>  *Inclui: NFR (Proibida a revenda), MVP (Microsoft Valued Partner), RD (Diretor regional), VSIP (Visual Studio Industry Partner), BizSpark, Imagine, MCT*
+|                                                      Nível de Assinatura                                                      |     Canais      |    Benefício    | Renovável? |
+|------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
+|                                      Visual Studio Enterprise (Padrão, nuvem anual)                                       | VL, Azure, Retail |   Um ano    |    Sim     |
+| Visual Studio Professional (Padrão, nuvem anual, nuvem mensal) Visual Studio Enterprise (nuvem mensal, NFR<sup>1</sup>) |        Todos        | Não disponível |     Não     |
+|                                          Visual Studio Test Professional (Padrão)                                          |        Todos        | Não disponível |     Não     |
+|                                                  Plataformas MSDN (Padrão)                                                   |        Todos        | Não disponível |     Não     |
+|                                                 Visual Studio Dev Essentials                                                 |        N/D        | Não disponível |     Não     |
+
+<sup>1</sup>  *Inclui:  NFR (Proibida a revenda), MVP (Microsoft Valued Professional ), RD (Diretor regional), VSIP (Visual Studio Industry Partner), BizSpark, Imagine, MCT*
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 

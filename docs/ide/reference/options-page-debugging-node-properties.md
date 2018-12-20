@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0556dd29e37f45b460e3dde271384e94b1c09ed
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70a06548dd25ade1bf64bad6a99261e043f6ac65
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951772"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670826"
 ---
 # <a name="options-page-debugging-node-properties"></a>Página de Opções, Depuração, Propriedades do Nó
 As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) associadas à categoria **Depuração**, `DTE.Properties("Debugging", <Property Page>)` da caixa de diálogo **Opções**.
@@ -24,7 +24,7 @@ As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) ass
  `DTE.Properties("Debugging", "General")`
 
 |Nome do item de propriedade|Valor|Descrição|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (Booliano)|Determina se o depurador solicitará permissão antes de excluir todos os pontos de interrupção de um projeto.|
 |BreakAllProcesses|Get/Set (Booliano)|Determina se o depurador interromperá todos os processos sempre que um único processo for interrompido.|
 |BreakAtBoundaries|Get/Set (Booliano)|Determina se o depurador interromperá a execução quando uma exceção exceder um limite entre AppDomains ou entre o código nativo e gerenciado.|
@@ -54,7 +54,7 @@ As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) ass
  `DTE.Properties("Debugging", "EditAndContinue")`
 
 |Nome do item de propriedade|Valor|Descrição|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |EnableEditAndContinue|Get/Set (Booliano)|Determina se a opção Editar e Continuar está habilitada. Essa opção se aplica a todas as linguagens que dão suporte à opção Editar e Continuar.|
 |InvokedByCommands|Get/Set (Booliano)|Determina se a opção Editar e Continuar aplica as alterações de código automaticamente quando o usuário seleciona um comando de depuração como **Executar em Etapas** ou **Continuar**. Essa opção se aplica apenas ao código nativo.|
 |InvokedByCommandsAskFirst|Get/Set (Booliano)|Determina se a opção Editar e Continuar solicita ao usuário permissão para aplicar alterações de código quando o usuário seleciona um comando de depuração como **Executar em Etapas** ou **Continuar**. Essa opção se aplica apenas ao código nativo.|
@@ -66,7 +66,7 @@ As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) ass
  `DTE.Properties("Debugging", "JustInTime")`
 
 |Nome do item de propriedade|Valor|Descrição|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |JitManaged|Get/Set (Booliano)|Determina se a depuração Just-In-Time está habilitada para o código gerenciado.|
 |JitNative|Get/Set (Booliano)|Determina se a depuração Just-In-Time está habilitada para o código nativo.|
 |JitScript|Get/Set (Booliano)|Determina se a depuração Just-In-Time está habilitada para o código de script.|
@@ -75,16 +75,16 @@ As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) ass
  `DTE.Properties("Debugging", "Native")`
 
 |Nome do item de propriedade|Valor|Descrição|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |LoadDllExports|Get/Set (Booliano)|Determina se o depurador carrega as tabelas de exportação de DLL.|
 |EnableRPC|Get/Set (Booliano)|Determina se o depurador pode intervir em chamadas COM de procedimento remoto.|
 
 ## <a name="see-also"></a>Consulte também
 
-- [Controlando as configurações de opções](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [Determinando os nomes dos itens de propriedade nas páginas de opções](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Controlando as configurações de opções](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Determinando os nomes dos itens de propriedade nas páginas de opções](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Página de Opções, Propriedades do Nó de Fontes e Cores](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Página de Opções, Propriedades do Nó de Editor de Texto](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Caixa de diálogo Geral, Depuração, Opções](../../debugger/general-debugging-options-dialog-box.md)
-- [Caixa de diálogo Editar e Continuar, Depuração, Opções](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+- [Caixa de diálogo Editar e Continuar, Depuração, Opções](/visualstudio/debugger/edit-and-continue?view=vs-2015)
 - [Caixa de diálogo Just-In-Time, Depuração, Opções](../../debugger/just-in-time-debugging-options-dialog-box.md)

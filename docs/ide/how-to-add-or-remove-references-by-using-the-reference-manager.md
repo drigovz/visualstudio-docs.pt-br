@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b9b29cef4ad215e76af57e66c73eb2e8a134db
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953830"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839265"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como adicionar ou remover referências usando o Gerenciador de Referências
 
@@ -100,7 +100,7 @@ Alguns componentes na lista podem não ser exibidos, dependendo da versão do .N
 
     Ao criar um novo aplicativo, alguns projetos têm [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] como destino por padrão.
 
-- Você deve evitar adicionar referências de arquivo às saídas de outro projeto na mesma solução, porque essa ação poderá causar erros de compilação. Em vez disso, use a guia **Projetos** da caixa de diálogo **Adicionar Referência** para criar referências projeto a projeto. Essa ação facilita o desenvolvimento em equipe, permitindo um melhor gerenciamento das bibliotecas de classes criadas nos projetos. Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md).
+Você deve evitar adicionar referências de arquivo às saídas de outro projeto na mesma solução, porque essa ação poderá causar erros de compilação. Em vez disso, use a guia **Projetos** da caixa de diálogo **Adicionar Referência** para criar referências projeto a projeto. Essa ação facilita o desenvolvimento em equipe, permitindo um melhor gerenciamento das bibliotecas de classes criadas nos projetos. Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md).
 
 > [!NOTE]
 > No Visual Studio 2015 ou posterior, uma referência de arquivo será criada em vez de uma referência de projeto se a versão de destino do .NET Framework de um projeto for a versão 4.5 ou posterior e a versão de destino de outro projeto for 2, 3, 3.5 ou 4.0.
@@ -109,9 +109,9 @@ Alguns componentes na lista podem não ser exibidos, dependendo da versão do .N
 
 - Mova ou copie o assembly para um dos seguintes locais:
 
-    - O diretório atual do projeto. (É possível encontrar esses assemblies usando a guia **Procurar**.)
+   - O diretório atual do projeto. (É possível encontrar esses assemblies usando a guia **Procurar**.)
 
-    - Outros diretórios do projeto na mesma solução. (É possível encontrar esses assemblies usando a guia **Projetos**.)
+   - Outros diretórios do projeto na mesma solução. (É possível encontrar esses assemblies usando a guia **Projetos**.)
 
     \- ou -
 
@@ -167,7 +167,7 @@ O subgrupo **Núcleo** lista todos os WinMDs (para elementos do Windows Runtime)
 
 Os projetos de aplicativo da Windows 8.x Store contêm referências a todos os WinMDs no SDK do Windows 8 por padrão na criação do projeto. Em projetos gerenciados, um nó somente leitura na pasta **Referências** no **Gerenciador de Soluções** indica a referência a todo o SDK do Windows 8. Consequentemente, o subgrupo de **Núcleo** no **Gerenciador de Referências** não enumerará nenhum assembly do SDK do Windows 8 e exibirá uma mensagem: “O SDK do Windows já está referenciado. Use o Pesquisador de Objetos para explorar as referências no SDK do Windows”.
 
-Em projetos da área de trabalho, o subgrupo **Núcleo** não é exibido por padrão. É possível adicionar o Windows Runtime abrindo o menu de atalho do nó do projeto, escolhendo **Descarregar Projeto**, adicionando o trecho a seguir e reabrindo o projeto (no nó do projeto, escolha **Recarregar Projeto**). Ao invocar a caixa de diálogo **Gerenciador de Referências**, o subgrupo **Núcleo** é exibido.
+Em projetos da área de trabalho, o subgrupo **Núcleo** não é exibido por padrão. É possível adicionar o Windows Runtime abrindo o menu de atalho do nó do projeto, escolhendo **Descarregar Projeto**, adicionando o snippet a seguir e reabrindo o projeto (no nó do projeto, escolha **Recarregar Projeto**). Ao invocar a caixa de diálogo **Gerenciador de Referências**, o subgrupo **Núcleo** é exibido.
 
 ```xml
 <PropertyGroup>
@@ -175,7 +175,7 @@ Em projetos da área de trabalho, o subgrupo **Núcleo** não é exibido por pad
 </PropertyGroup>
 ```
 
-Verifique se você marcou a caixa de seleção **Windows** nesse subgrupo. Você deve conseguir usar elementos de Tempo de Execução do Windows. No entanto, você também pode querer adicionar <xref:System.Runtime>, no qual o Windows Runtime define algumas classes e interfaces padrão, como <xref:System.Collections.IEnumerable>, usadas nas bibliotecas do Windows Runtime. Para obter mais informações sobre como adicionar <xref:System.Runtime>, consulte [Aplicativos da área de trabalho gerenciada e Windows Runtime](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).
+Verifique se você marcou a caixa de seleção **Windows** nesse subgrupo. Você deve conseguir usar elementos de Tempo de Execução do Windows. No entanto, você também pode querer adicionar <xref:System.Runtime>, no qual o Windows Runtime define algumas classes e interfaces padrão, como <xref:System.Collections.IEnumerable>, usadas nas bibliotecas do Windows Runtime. Para obter mais informações sobre como adicionar <xref:System.Runtime>, consulte [Aplicativos da área de trabalho gerenciada e Windows Runtime](/previous-versions/windows/apps/jj856306(v=win.10)#consuming-standard-windows-runtime-types).
 
 ### <a name="extensions-subgroup"></a>Subgrupos Extensões
 

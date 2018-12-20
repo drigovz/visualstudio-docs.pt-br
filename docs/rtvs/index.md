@@ -1,6 +1,6 @@
 ---
 title: Ferramentas R para Visual Studio
-description: As RTVS (Ferramentas do R para Visual Studio) são uma extensão de software livre gratuita que fornece muitos recursos de idioma, incluindo IntelliSense, depuração e espaços de trabalho remotos.
+description: As RTVS (Ferramentas do R para Visual Studio) são uma extensão de software livre gratuita que fornece muitos recursos de idioma, incluindo IntelliSense, depuração e workspaces remotos.
 ms.date: 11/13/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
@@ -36,9 +36,9 @@ Depois, siga os links abaixo para saber mais sobre recursos relacionados ao R, b
 | Recurso | Descrição | Documentação geral do Visual Studio |
 | --- | --- | --- |
 | [Sistema de projeto do Visual Studio](r-projects-in-visual-studio.md) | Organize e gerencie arquivos relacionados em uma estrutura conveniente e aproveite modelos úteis para itens como código R, documentação de R, R Markdown, consultas SQL e procedimentos armazenados. Aproveite também o [gerenciador de pacotes](r-package-manager-in-visual-studio.md) e a [integração do SQL Server](integrating-sql-server-with-r.md).  | [Soluções e projetos no Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
-| [Espaço de trabalho](r-workspaces-in-visual-studio.md) | As RTVS podem ser associadas a espaços de trabalho locais e remotos, permitindo que você desenvolva o código R localmente com conjuntos de dados menores, em seguida, execute com facilidade o código em computadores baseados em nuvem mais poderosos com conjuntos de dados muito maiores. | N/D |
+| [Workspace](r-workspaces-in-visual-studio.md) | As RTVS podem ser associadas a workspaces locais e remotos, permitindo que você desenvolva o código R localmente com conjuntos de dados menores, em seguida, execute com facilidade o código em computadores baseados em nuvem mais poderosos com conjuntos de dados muito maiores. | N/D |
 | [Opções de Ferramentas R](options-for-r-tools-in-visual-studio.md) | Controle vários aspectos das RTVS. | [Caixa de diálogo de opções](../ide/reference/options-dialog-box-visual-studio.md) |
-| [Edição avançada, IntelliSense e trechos de código](editing-r-code-in-visual-studio.md) | Inclui coloração de sintaxe, [IntelliSense](r-intellisense.md) em todo o código e todas as bibliotecas, formatação de código, ajuda da assinatura, comandos Ir Para Definição e Localizar Todas as Referências, [trechos de código](code-snippets-for-r.md) e muito mais. | [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [Edição avançada, IntelliSense e snippets de código](editing-r-code-in-visual-studio.md) | Inclui coloração de sintaxe, [IntelliSense](r-intellisense.md) em todo o código e todas as bibliotecas, formatação de código, ajuda da assinatura, comandos Ir Para Definição e Localizar Todas as Referências, [snippets de código](code-snippets-for-r.md) e muito mais. | [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md) |
 | [R Markdown](rmarkdown-with-r-in-visual-studio.md) | Os documentos do R Markdown R ajudam você a compartilhar os resultados de dados, com código R integrado dentro dos blocos de código de markdown. | N/D |
 | [Janela Interativa](interactive-repl-for-r-in-visual-studio.md) | Fornece uma experiência completa de REPL para o R com a capacidade de executar facilmente o código em um arquivo de origem na janela interativa. | N/D |
 | [Visualização de dados](visualizing-data-with-r-in-visual-studio.md) | A plotagem é parte integral da experiência do R, e as RTVS são compatíveis com várias janelas de gráficos independentes, cada qual com seu próprio histórico e a capacidade de mover as plotagens entre as janelas. As plotagens podem ser salvas em bitmap e arquivos PDF ou copiadas para a área de transferência como um bitmap ou metarquivo.  | N/D |

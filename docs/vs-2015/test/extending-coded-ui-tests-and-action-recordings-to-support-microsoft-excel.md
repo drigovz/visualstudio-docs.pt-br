@@ -1,7 +1,7 @@
 ---
 title: Estendendo testes de IU codificados e gravações da ação para dar suporte ao Microsoft Excel | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,41 +13,39 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c48f68c6e3c712f5cf728ae7769108f8e35e9aec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 705604153a0f24eb7ae6b2ff5924a600ddbff54e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472639"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872974"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Estendendo testes de IU codificado e gravações da ação para dar suporte ao Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [estendendo testes de IU codificados e gravações da ação para o suporte ao Microsoft Excel](https://docs.microsoft.com/visualstudio/test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel).  
-  
 A estrutura de teste para testes de IU codificados e gravações da ação não dá suporte a todas as interfaces do usuário possíveis. Ele pode não dar suporte à interface do usuário específica que você deseja testar. Por exemplo, você não pode criar imediatamente um teste de IU codificado ou uma gravação da ação para uma planilha [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. No entanto, você pode criar sua própria extensão para a estrutura de teste de IU codificado que dará suporte a interface do usuário específica, tirando proveito da extensibilidade da estrutura de teste de IU codificado. O tópico a seguir fornece um exemplo de como estender a estrutura para dar suporte à criação de testes de UI codificados e gravações da ação para [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Para obter mais informações sobre as plataformas que têm suporte, consulte [Configurações e Plataformas com Suporte para Testes de IU Codificados e Gravações da Ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
   
  **Requisitos**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
- Esta seção apresenta uma extensão de teste de IU codificado que pode gravar e reproduzir testes de planilhas do Excel. Cada parte da extensão é explicada nesta seção e nos comentários do código para desenvolvedores que desejam criar uma extensão desse tipo.  
+  Esta seção apresenta uma extensão de teste de IU codificado que pode gravar e reproduzir testes de planilhas do Excel. Cada parte da extensão é explicada nesta seção e nos comentários do código para desenvolvedores que desejam criar uma extensão desse tipo.  
   
- ![Arquitetura de teste de interface do usuário](../test/media/ui-testarch.png "UI_TestArch")  
-Visão geral da arquitetura  
+  ![Arquitetura de teste de interface do usuário](../test/media/ui-testarch.png "UI_TestArch")  
+  Visão geral da arquitetura  
   
 ## <a name="download-the-sample"></a>Baixar a amostra  
  A amostra consiste de quatro projetos na solução `CodedUIExtensibilitySample.sln`:  
   
--   CodedUIextensibilitySample  
+- CodedUIextensibilitySample  
   
--   ExcelCodedUIAddInHelper  
+- ExcelCodedUIAddInHelper  
   
--   ExcelUICommunicationHelper  
+- ExcelUICommunicationHelper  
   
--   SampleTestProject  
+- SampleTestProject  
   
- Obtenha a amostra desta [postagem de blog](http://go.microsoft.com/fwlink/?LinkID=185592).  
+  Obtenha a amostra desta [postagem de blog](http://go.microsoft.com/fwlink/?LinkID=185592).  
   
 > [!NOTE]
 >  A amostra é destinada para uso com o Microsoft Excel 2010. A amostra pode funcionar com outras versões do Microsoft Excel, mas isso não tem suporte atualmente.  

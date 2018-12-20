@@ -1,7 +1,7 @@
 ---
 title: Elemento de sinalizador de comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bec5b38550209764bf4b770fef96735235ec3819
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98140c90288d8a65d22996940300a82b5e070308
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472845"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809916"
 ---
 # <a name="command-flag-element"></a>Elemento Command Flag
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento Command Flag](https://docs.microsoft.com/visualstudio/extensibility/command-flag-element).  
-  
 Modifica seu elemento pai.  
   
 ## <a name="syntax"></a>Sintaxe  

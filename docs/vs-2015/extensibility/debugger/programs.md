@@ -1,7 +1,7 @@
 ---
 title: Programas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2c6db9d45f9bb421738b71e630482cbbb8f6525c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a5779c9ba6c113349501efa0c8a4ebbfd137a3b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476177"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771852"
 ---
 # <a name="programs"></a>Programas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [programas](https://docs.microsoft.com/visualstudio/extensibility/debugger/programs).  
-  
 Em termos de arquitetura do depurador, uma **programa**:  
   
 -   É um contêiner para um conjunto de threads e um conjunto de módulos. Um programa não tem nenhum analogia única no sistema operacional Windows.  

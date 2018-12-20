@@ -1,7 +1,7 @@
 ---
 title: Solução de problemas e problemas conhecidos (Ferramentas do Visual Studio para Unity) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
 caps.latest.revision: 7
-author: TerryGLee
-ms.author: tglee
+author: conceptdev
+ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: 30c4168034ec88c32a6f1f2d992b0d2d6305a648
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94240d5af43944b23890a32b757fe1b4f14b77ec
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474989"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755512"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solucionando problemas e problemas conhecidos (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [solução de problemas e problemas conhecidos (Visual Studio Tools para Unity)](https://docs.microsoft.com/visualstudio/cross-platform/troubleshooting-and-known-issues-visual-studio-tools-for-unity).  
-  
   
 Nesta seção, você encontrará soluções para problemas comuns das Ferramentas do Visual Studio para Unity, as descrições de problemas conhecidos e aprenderá como ajudar a melhorar as Ferramentas do Visual Studio para Unity por meio de relatórios de erro.  
   
@@ -66,21 +64,21 @@ Nesta seção, você encontrará soluções para problemas comuns das Ferramenta
   
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Para relatar que o Visual Studio congela durante a depuração com as Ferramentas do Visual Studio para Unity  
   
-1.  Abra uma nova instância do Visual Studio.  
+1. Abra uma nova instância do Visual Studio.  
   
-2.  Abra o diálogo Anexar ao Processo. Na nova instância do Visual Studio, escolha **Depurar** e **Anexar ao Processo** no menu principal.  
+2. Abra o diálogo Anexar ao Processo. Na nova instância do Visual Studio, escolha **Depurar** e **Anexar ao Processo** no menu principal.  
   
-3.  Anexe o depurador à instância congelada do Visual Studio. No diálogo **Anexar ao Processo**, selecione a instância congelada do Visual Studio na tabela **Processos Disponíveis** e, em seguida, escolha o botão **Anexar**.  
+3. Anexe o depurador à instância congelada do Visual Studio. No diálogo **Anexar ao Processo**, selecione a instância congelada do Visual Studio na tabela **Processos Disponíveis** e, em seguida, escolha o botão **Anexar**.  
   
-4.  Pause o Depurador. Na nova instância do Visual Studio, escolha **Depurar**, **Interromper Tudo** no menu principal ou pressione **Ctrl+Alt+Break**.  
+4. Pause o Depurador. Na nova instância do Visual Studio, escolha **Depurar**, **Interromper Tudo** no menu principal ou pressione **Ctrl+Alt+Break**.  
   
-5.  Crie um despejo de thread. Na janela Comando, digite o comando a seguir e pressione **Enter**.  
+5. Crie um despejo de thread. Na janela Comando, digite o comando a seguir e pressione **Enter**.  
   
-    ```powershell  
-    Debug.ListCallStack /AllThreads /ShowExternalCode  
-    ```  
+   ```powershell  
+   Debug.ListCallStack /AllThreads /ShowExternalCode  
+   ```  
   
-     Talvez seja necessário tornar a janela **Comando** visível primeiro. No Visual Studio, escolha **Exibir**, **Outras Janelas**, **janela Comando** no menu principal.  
+    Talvez seja necessário tornar a janela **Comando** visível primeiro. No Visual Studio, escolha **Exibir**, **Outras Janelas**, **janela Comando** no menu principal.  
   
-6.  Por fim, envie o despejo de thread para [vstusp@microsoft.com](mailto:vstusp@microsoft.com), junto com uma descrição do que você estava fazendo quando o Visual Studio congelou.
+6. Por fim, envie o despejo de thread para [vstusp@microsoft.com](mailto:vstusp@microsoft.com), junto com uma descrição do que você estava fazendo quando o Visual Studio congelou.
 

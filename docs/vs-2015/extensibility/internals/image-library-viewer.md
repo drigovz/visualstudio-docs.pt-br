@@ -1,7 +1,7 @@
 ---
 title: Visualizador da biblioteca de imagem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,39 +10,37 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1af471eeada5f6da04f4fdf6b4ee69cc0741110b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 6c0e277a123fe24da9824fae94b13eee686f5663
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476172"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778008"
 ---
 # <a name="image-library-viewer"></a>Visualizador da biblioteca de imagens
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Visualizador da biblioteca de imagens](https://docs.microsoft.com/visualstudio/extensibility/internals/image-library-viewer).  
-  
 A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carregar e pesquisar os manifestos de imagem, permitindo que o usuário para manipulá-los da mesma maneira que faria do Visual Studio. O usuário pode alterar o plano de fundo, tamanhos, DPI, alto contraste e outras configurações. A ferramenta também exibe informações de carregamento para cada manifesto de imagem e exibe informações de origem para cada imagem no manifesto de imagem. Essa ferramenta é útil para:  
   
-1.  Diagnosticando erros  
+1. Diagnosticando erros  
   
-2.  Atributos de garantir que estão definidos corretamente nos manifestos de imagem personalizada  
+2. Atributos de garantir que estão definidos corretamente nos manifestos de imagem personalizada  
   
-3.  Procurando por imagens no catálogo de imagem do Visual Studio para que uma extensão do Visual Studio pode usar as imagens que se ajustam o estilo do Visual Studio  
+3. Procurando por imagens no catálogo de imagem do Visual Studio para que uma extensão do Visual Studio pode usar as imagens que se ajustam o estilo do Visual Studio  
   
- ![Imagem Hero de Visualizador de biblioteca](../../extensibility/internals/media/image-library-viewer-hero.png "biblioteca herói de Visualizador de imagem")  
+   ![Imagem Hero de Visualizador de biblioteca](../../extensibility/internals/media/image-library-viewer-hero.png "biblioteca herói de Visualizador de imagem")  
   
- **Moniker de imagem**  
+   **Moniker de imagem**  
   
- Um moniker de imagem (ou moniker de forma abreviada) é um par de GUID:ID que identifica exclusivamente um ativo de imagem ou um ativo de lista de imagem da biblioteca de imagens.  
+   Um moniker de imagem (ou moniker de forma abreviada) é um par de GUID:ID que identifica exclusivamente um ativo de imagem ou um ativo de lista de imagem da biblioteca de imagens.  
   
- **Arquivos de manifesto de imagem**  
+   **Arquivos de manifesto de imagem**  
   
- Arquivos de manifesto (.imagemanifest) da imagem são arquivos XML que definem um conjunto de ativos de imagem, os identificadores que representam os ativos e a imagem real ou imagens que representam cada ativo. Manifestos de imagem podem definir imagens independentes ou listas de imagens para dar suporte de interface do usuário. Além disso, há atributos que podem ser definidos no ativo ou nas imagens individuais por trás de cada ativo para alterar quando e como esses ativos são exibidos.  
+   Arquivos de manifesto (.imagemanifest) da imagem são arquivos XML que definem um conjunto de ativos de imagem, os identificadores que representam os ativos e a imagem real ou imagens que representam cada ativo. Manifestos de imagem podem definir imagens independentes ou listas de imagens para dar suporte de interface do usuário. Além disso, há atributos que podem ser definidos no ativo ou nas imagens individuais por trás de cada ativo para alterar quando e como esses ativos são exibidos.  
   
- **Esquema de manifesto de imagem**  
+   **Esquema de manifesto de imagem**  
   
- Um manifesto de conclusão de imagem tem esta aparência:  
+   Um manifesto de conclusão de imagem tem esta aparência:  
   
 ```xml  
 <ImageManifest>  

@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_constructor | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_constructor method
 ms.assetid: 2f2cf1e0-f817-4ca0-b782-3341362c46a9
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b824a210f122cfd8af1759ee4f426b1a0a40331
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dcc29e96d47d77f75b28e3e8d09d4fa57dec131e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461769"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788908"
 ---
 # <a name="idiasymbolgetconstructor"></a>IDiaSymbol::get_constructor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_constructor](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-constructor).  
-  
 Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário tem um construtor ou destruidor.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_constructor (   
+HRESULT get_constructor (   
    BOOL* pRetVal  
 );  
 ```  

@@ -1,7 +1,7 @@
 ---
 title: Utilitário CreateExpInstance | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9b08ba5ac68a09f6c44937634375add3065e5e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 73a6761e844cee41c1a6f0df79f0d6529f4a8215
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464383"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768258"
 ---
 # <a name="createexpinstance-utility"></a>Utilitário CreateExpInstance
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [utilitário CreateExpInstance](https://docs.microsoft.com/visualstudio/extensibility/internals/createexpinstance-utility).  
-  
 Use o utilitário CreateExpInstance para criar, redefinir, ou excluir uma instância experimental do Visual Studio. Você pode usar a instância experimental para depurar e testar as extensões do Visual Studio sem alterar o produto subjacente.  
   
 ## <a name="syntax"></a>Sintaxe  

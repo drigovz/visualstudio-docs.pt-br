@@ -1,7 +1,7 @@
 ---
 title: Registrando o projeto e modelos de Item | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4dd0e668f9bf657d38b69beb1bc132547dd6bda1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 06a9840680c76103373cde00ac37310bb6138095
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462368"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764290"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrando modelos de projeto e item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [registrar modelos de projeto e Item](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-project-and-item-templates).  
-  
 Tipos de projeto devem registrar os diretórios onde se encontram seus modelos de projeto e item de projeto. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usa as informações de registro associadas com seus tipos de projeto para determinar o que mostrar nos **adicionar novo projeto** e **Adicionar Novo Item** caixas de diálogo.  
   
  Para obter mais informações sobre modelos, consulte [adicionando projeto e modelos de Item de projeto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
@@ -72,7 +70,7 @@ Tipos de projeto devem registrar os diretórios onde se encontram seus modelos d
 |SortPriority|REG_DWORD|Definir SortPriority para controlar a ordem na qual os modelos são exibidos na **Adicionar Novo Item** caixa de diálogo. Valores maiores de SortPriority aparecem anteriormente na lista de modelos.|  
   
 ### <a name="registering-file-filters"></a>Filtros de arquivo do registro  
- Opcionalmente, você pode registrar os filtros que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usa quando ele solicita para nomes de arquivo. Por exemplo, o [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrar para o os **abrir arquivo** caixa de diálogo é:  
+ Opcionalmente, você pode registrar os filtros que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usa quando ele solicita para nomes de arquivo. Por exemplo, o [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrar para o **abrir arquivo** caixa de diálogo é:  
   
  **Arquivos Visual c# (\*. cs,\*. resx,\*Settings,\*. xsd,\*. WSDL);\*. CS,\*. resx,\*Settings,\*. xsd,\*. WSDL)**  
   

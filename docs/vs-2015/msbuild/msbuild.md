@@ -1,7 +1,7 @@
 ---
 title: MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c660dee2f8767a5abee296d0b91157475724ea6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a2ca3a14c1e4e35da4e8cddfdecb0346740286a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837757"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ O [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] é uma pl
   
  Os exemplos a seguir ilustram quando você deve executar builds usando uma linha de comando do MSBuild em vez do IDE do Visual Studio.  
   
--   O Visual Studio não está instalado.  
+- O Visual Studio não está instalado.  
   
--   Você deseja usar a versão de 64 bits do MSBuild. Esta versão do MSBuild normalmente não é necessária, mas permite que o MSBuild acesse mais memória.  
+- Você deseja usar a versão de 64 bits do MSBuild. Esta versão do MSBuild normalmente não é necessária, mas permite que o MSBuild acesse mais memória.  
   
--   Você deseja executar um build em vários processos. No entanto, você pode usar o IDE para alcançar o mesmo resultado em projetos em C++ e C#.  
+- Você deseja executar um build em vários processos. No entanto, você pode usar o IDE para alcançar o mesmo resultado em projetos em C++ e C#.  
   
--   Você deseja modificar o sistema de build. Por exemplo, você talvez queira habilitar as seguintes ações:  
+- Você deseja modificar o sistema de build. Por exemplo, você talvez queira habilitar as seguintes ações:  
   
-    -   Pré-processar arquivos antes de eles chegarem ao compilador.  
+  -   Pré-processar arquivos antes de eles chegarem ao compilador.  
   
-    -   Copiar as saídas de build para um local diferente.  
+  -   Copiar as saídas de build para um local diferente.  
   
-    -   Criar arquivos compactados de saídas de build.  
+  -   Criar arquivos compactados de saídas de build.  
   
-    -   Realizar uma etapa de pós-processamento. Por exemplo, convém marcar um assembly com uma versão diferente.  
+  -   Realizar uma etapa de pós-processamento. Por exemplo, convém marcar um assembly com uma versão diferente.  
   
- Você pode escrever código no IDE do Visual Studio, mas executar os builds usando o MSBuild. Como outra alternativa, você pode compilar o código no IDE em um computador de desenvolvimento, mas usar uma linha de comando do MSBuild para compilar o código integrado de vários desenvolvedores.  
+  Você pode escrever código no IDE do Visual Studio, mas executar os builds usando o MSBuild. Como outra alternativa, você pode compilar o código no IDE em um computador de desenvolvimento, mas usar uma linha de comando do MSBuild para compilar o código integrado de vários desenvolvedores.  
   
 > [!NOTE]
 >  Você pode usar o Team Foundation Build para compilar, testar e implantar seu aplicativo automaticamente. O sistema de build pode executar builds automaticamente quando os desenvolvedores fazem o check-in de código (por exemplo, como parte de uma estratégia de Integração Contínua) ou de acordo com um cronograma (por exemplo, um build de teste de aceitação pós-build noturno). O Team Foundation Build compila seu código usando o MSBuild. Para obter mais informações, consulte [Compilar o aplicativo](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
@@ -182,17 +182,17 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Estes são alguns dos benefícios de multiplataforma:  
   
--   Você pode desenvolver aplicativos destinados a versões anteriores do .NET Framework, por exemplo, versões 2.0, 3.0 e 3.5.  
+- Você pode desenvolver aplicativos destinados a versões anteriores do .NET Framework, por exemplo, versões 2.0, 3.0 e 3.5.  
   
--   Você pode direcionar estruturas que não sejam o .NET Framework, por exemplo, o Silverlight.  
+- Você pode direcionar estruturas que não sejam o .NET Framework, por exemplo, o Silverlight.  
   
--   Você pode direcionar um *perfil de estrutura*, que é um subconjunto predefinido de uma estrutura de destino.  
+- Você pode direcionar um *perfil de estrutura*, que é um subconjunto predefinido de uma estrutura de destino.  
   
--   Se um service pack para a versão atual do .NET Framework for lançado, você poderá visá-lo.  
+- Se um service pack para a versão atual do .NET Framework for lançado, você poderá visá-lo.  
   
--   A multiplataforma garante que um aplicativo use apenas a funcionalidade que está disponível na estrutura de destino e na plataforma.  
+- A multiplataforma garante que um aplicativo use apenas a funcionalidade que está disponível na estrutura de destino e na plataforma.  
   
- Para obter mais informações, consulte [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md).  
+  Para obter mais informações, consulte [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md).  
   
 ## <a name="related-topics"></a>Tópicos relacionados  
   

@@ -1,14 +1,14 @@
 ---
 title: Expressões no depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
 dev_langs:
@@ -29,27 +29,25 @@ helpviewer_keywords:
 - debugging [Visual Studio], variable evaluation
 ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
 caps.latest.revision: 30
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b8350356b82b6d2cefc3fda725d90dccea75e55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf75965a9be7c8e2a9a09cc43fa6eec632d6bf90
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461256"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722228"
 ---
 # <a name="expressions-in-the-debugger"></a>Expressões no depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [expressões no depurador](https://docs.microsoft.com/visualstudio/debugger/expressions-in-the-debugger).  
-  
 O depurador do Visual Studio inclui avaliadores de expressão que funcionam quando você insere uma expressão na **QuickWatch** caixa de diálogo **inspeção** janela, ou **imediato** janela. Os avaliadores de expressão também estão em funcionamento na **pontos de interrupção** janela e muitos outros locais no depurador.  
   
  As seções a seguir fornecem detalhes sobre as expressões em idiomas diferentes.  
   
-## <a name="f-expressions-are-not-supported"></a>Não há suporte para expressões de F #  
- Expressões de F # não são reconhecidas. Se você estiver depurando código F #, você precisa converter as expressões na sintaxe c# antes de inserir expressões em uma caixa de diálogo ou janela do depurador. Quando você converter expressões de F # para c#, não se esqueça de que c# usa a `==` operador para testar a igualdade, enquanto o F # usa o único `=`.  
+## <a name="f-expressions-are-not-supported"></a>F#Não há suporte para expressões  
+ F#expressões não são reconhecidas. Se você estiver depurando F# código, você precisa converter as expressões na C# sintaxe antes de inserir expressões em uma caixa de diálogo ou janela do depurador. Quando você converter expressões de F# para C#, lembre-se de que C# usa o `==` operador para testar a igualdade, enquanto F# usa o único `=`.  
   
 ## <a name="c-expressions"></a>Expressões C++  
  Para obter informações sobre como usar operadores de contexto com expressões em C++, consulte [operador de contexto (C++)](../debugger/context-operator-cpp.md).  
@@ -106,13 +104,13 @@ int main()
   
  Funções intrínsecas do depurador:  
   
--   São certamente seguras: executar uma função intrínseca do depurador não corromperá o processo que está sendo depurado.  
+- São certamente seguras: executar uma função intrínseca do depurador não corromperá o processo que está sendo depurado.  
   
--   São permitidas em todas as expressões, mesmo em cenários onde os efeitos colaterais e a avaliação de função não são permitidos.  
+- São permitidas em todas as expressões, mesmo em cenários onde os efeitos colaterais e a avaliação de função não são permitidos.  
   
--   Trabalham em cenários onde as chamadas de funções normais não são possíveis, por exemplo, depurar um minidespejo.  
+- Trabalham em cenários onde as chamadas de funções normais não são possíveis, por exemplo, depurar um minidespejo.  
   
- As funções intrínsecas do depurador também podem tornar mais convenientes as expressões de avaliação. Por exemplo, `strncmp(str, “asd”)` é muito mais fácil escrever em uma condição de ponto de interrupção que `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
+  As funções intrínsecas do depurador também podem tornar mais convenientes as expressões de avaliação. Por exemplo, `strncmp(str, “asd”)` é muito mais fácil escrever em uma condição de ponto de interrupção que `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
   
 |Área|Funções intrínsecas|  
 |----------|-------------------------|  

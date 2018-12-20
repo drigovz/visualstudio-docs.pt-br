@@ -1,7 +1,7 @@
 ---
 title: Barra de menu suspenso | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 4bb621bd-72f5-43d5-916f-9f66617da049
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3fd7482878e218b263dae6bc6195c930ea71876
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da48806d6be6b19dc3681b19e95ac7664656eeb0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463884"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791132"
 ---
 # <a name="drop-down-bar"></a>Barra de menu suspenso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [barra suspensa](https://docs.microsoft.com/visualstudio/extensibility/drop-down-bar).  
-  
 A barra de menu suspenso é fornecida na parte superior da janela de código e contém duas listas de lista suspensa.  
   
 ## <a name="drop-down-bar-interfaces"></a>Interfaces de barra de menu suspenso  

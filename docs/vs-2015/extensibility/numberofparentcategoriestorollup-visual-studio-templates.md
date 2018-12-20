@@ -1,7 +1,7 @@
 ---
 title: NumberOfParentCategoriesToRollUp (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a6316fa5edb358d6faecd85561c27d6eee131ae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0b766c9064f8a6f6f09036d602365d37a9174dc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465024"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769712"
 ---
 # <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [NumberOfParentCategoriesToRollUp (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/numberofparentcategoriestorollup-visual-studio-templates).  
-  
 Especifica o número de categorias pai que exibirá o modelo na **novo projeto** caixa de diálogo.  
   
  \<VSTemplate >  

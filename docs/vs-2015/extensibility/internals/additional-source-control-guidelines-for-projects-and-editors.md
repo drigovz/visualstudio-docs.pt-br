@@ -1,7 +1,7 @@
 ---
 title: As diretrizes de controle de origem adicionais para projetos e editores | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b671397e5be6701176fc0fd5aaa3ae2be24e609
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c52244aa91217ae57d4265ce37a530b2e48d0e93
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466984"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770696"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Diretrizes adicionais de controle do código-fonte para projetos e editores
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [diretrizes de controle de origem adicionais para projetos e editores](https://docs.microsoft.com/visualstudio/extensibility/internals/additional-source-control-guidelines-for-projects-and-editors).  
-  
 Há uma série de diretrizes que projetos e editores devem aderir a fim de dar suporte ao controle do código-fonte.  
   
 ## <a name="guidelines"></a>Diretrizes  

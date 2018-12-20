@@ -1,7 +1,7 @@
 ---
 title: IEnumCodePaths2::Reset | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 490c0e19-ff4b-4673-bd06-cdee996ac226
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 08395164e24eaff5419628fcc9b59d41f0e73a0d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d90d480e3426108aeb5ee84e38bb4873301f9e8d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475564"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729404"
 ---
 # <a name="ienumcodepaths2reset"></a>IEnumCodePaths2::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumCodePaths2::Reset](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumcodepaths2-reset).  
-  
 Redefine a enumeração para o primeiro elemento.  
   
 ## <a name="syntax"></a>Sintaxe  

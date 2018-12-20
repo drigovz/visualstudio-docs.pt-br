@@ -1,7 +1,7 @@
 ---
 title: 'CA1700: Não nomeie valores de enumeração &#39;reservado&#39; | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7aaab7f774b274b9e70efac404d1ab4ba3315d93
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 3229b8432af89857d1aadd8bf1531c8b11a29ed7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897984"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Não nomeie valores de enumeração &#39;reservado&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1700: não nomeie valores de enumeração &#39;reservado&#39;](https://docs.microsoft.com/visualstudio/code-quality/ca1700-do-not-name-enum-values-reserved).
 
 |||
 |-|-|
@@ -49,11 +47,11 @@ A versão mais recente deste tópico pode ser encontrada em [CA1700: não nomeie
 
  Em um número limitado de casos a adição de um membro é uma alteração significativa, mesmo quando os membros originais retêm seus valores originais. Basicamente, o novo membro não pode ser retornado de caminhos de código existente sem interromper os chamadores que usam um `switch` (`Select` em [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) instrução no valor de retorno que abrange a lista inteira de membro e que geram uma exceção caso padrão. Uma preocupação secundária é que o código de cliente talvez não lidar com a alteração no comportamento dos métodos de reflexão, como <xref:System.Enum.IsDefined%2A?displayProperty=fullName>. Da mesma forma, se o novo membro tiver a serem retornados de métodos existentes ou uma incompatibilidade de aplicativos conhecidos ocorre devido ao uso de reflexão ruim, a única solução incondicional é:
 
-1.  Adicione uma nova enumeração que contém os membros novos e originais.
+1. Adicione uma nova enumeração que contém os membros novos e originais.
 
-2.  Marque a enumeração original com o <xref:System.ObsoleteAttribute?displayProperty=fullName> atributo.
+2. Marque a enumeração original com o <xref:System.ObsoleteAttribute?displayProperty=fullName> atributo.
 
- Siga o mesmo procedimento para todos os tipos visíveis externamente ou membros que expõem a enumeração original.
+   Siga o mesmo procedimento para todos os tipos visíveis externamente ou membros que expõem a enumeração original.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, remova ou renomeie o membro.

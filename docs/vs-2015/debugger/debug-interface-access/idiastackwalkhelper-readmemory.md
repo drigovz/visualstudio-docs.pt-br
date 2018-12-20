@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalkHelper::readMemory | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaStackWalkHelper2::readMemory method
 ms.assetid: e1eb90aa-49b7-476c-9e70-7e8f08994cbe
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f8ef913a94dc184339d6c20c97ca8c3f0f3054a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9d1b2cd284611956be58c677f849236b246269fc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467009"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745838"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaStackWalkHelper::readMemory](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackwalkhelper-readmemory).  
-  
 Lê um bloco de dados de imagem do arquivo executável na memória.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT readMemory(   
+HRESULT readMemory(   
    enum MemoryTypeEnum type,  
    ULONGLONG           va,  
    DWORD               cbData,  

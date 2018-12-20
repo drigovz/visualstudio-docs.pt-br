@@ -1,7 +1,7 @@
 ---
 title: IDiaSession | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSession interface
 ms.assetid: 69dab9bf-2c68-4f70-9678-3b50fba3e6fa
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49e437a5fa6e4285acf73998815bd00141b88b1a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2baa4b026fd9856625ce25be283c2c969f79a99
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464648"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799620"
 ---
 # <a name="idiasession"></a>IDiaSession
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSession](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession).  
-  
 Fornece um contexto de consulta para símbolos de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDiaSession : IUnknown  
+IDiaSession : IUnknown  
 ```  
   
 ## <a name="methods"></a>Métodos  

@@ -1,7 +1,7 @@
 ---
 title: Página Referências, Designer de Projeto (Visual Basic) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a5e89b77749b331665869393b2b3cf7e520d3371
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0dabf5b84eb1adde1d6e579b7ec5ad6a6c443723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859051"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referências, Designer de Projeto (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [página referências, Designer de projeto (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/references-page-project-designer-visual-basic).  
-  
   
 Use a página **Referências** do **Designer de Projeto** para gerenciar referências, referências Web e namespaces importados em seu projeto. Projetos podem conter referências a componentes COM, serviços Web XML, assemblies ou bibliotecas de classes do .NET Framework ou outras bibliotecas de classes. Para obter mais informações sobre o uso de referências, consulte [Gerenciando referências em um projeto](../../ide/managing-references-in-a-project.md).  
   
@@ -52,11 +50,11 @@ Use a página **Referências** do **Designer de Projeto** para gerenciar referê
   
 > [!NOTE]
 >  Quando o sistema do projeto encontra uma referência de assembly, o sistema resolve a referência examinando os seguintes locais, na seguinte ordem:  
->   
->  1.  A pasta do projeto. Os arquivos da pasta do projeto aparecem no **Gerenciador de Soluções** quando **Mostrar Todos os Arquivos** não está em vigor.  
-> 2.  Pastas especificadas na caixa de diálogo **Caminhos de Referência**.  
-> 3.  Pastas que exibem arquivos na caixa de diálogo **Adicionar Referência**.  
-> 4.  A pasta obj do projeto. (Quando você adiciona uma referência COM a seu projeto, um ou mais assemblies podem ser adicionados à pasta obj do projeto.)  
+> 
+> 1. A pasta do projeto. Os arquivos da pasta do projeto aparecem no **Gerenciador de Soluções** quando **Mostrar Todos os Arquivos** não está em vigor.  
+>    2.  Pastas especificadas na caixa de diálogo **Caminhos de Referência**.  
+>    3.  Pastas que exibem arquivos na caixa de diálogo **Adicionar Referência**.  
+>    4.  A pasta obj do projeto. (Quando você adiciona uma referência COM a seu projeto, um ou mais assemblies podem ser adicionados à pasta obj do projeto.)  
   
  **Referências**  
  Esta lista mostra todas as referências no projeto, utilizadas ou não utilizadas.  

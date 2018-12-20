@@ -1,7 +1,7 @@
 ---
 title: Como Depurar um mecanismo de depuração personalizado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b7ef3385d48e07e4c5fcd9619515b650ca193d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d293011a3865b4fb9c31349240c520e56f5a9e39
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473701"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756769"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Como depurar um mecanismo de depuração personalizado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [How To: depurar um mecanismo de depuração personalizado](https://docs.microsoft.com/visualstudio/extensibility/debugger/how-to-debug-a-custom-debug-engine).  
-  
 O mecanismo de depuração (DES) é iniciado de um tipo de projeto na <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> método. Isso significa que a Alemanha é iniciada sob o controle da instância do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] controlar o tipo de projeto. No entanto, essa instância do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] não é possível depurar o DE. A seguir estão as etapas para permitir a depuração DE seu personalizado.  
   
 > [!NOTE]

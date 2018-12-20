@@ -1,24 +1,24 @@
 ---
-title: Criar uma regra de análise de código personalizada definida no Visual Studio
-ms.date: 04/04/2018
+title: Criar um conjunto de regras de análise de código personalizado
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
-- Development Edition, rule sets
+- rule sets
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 727c11e24eb3409de89fe211c6a37691dfec298c
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 061ceec7a513a0d4c92f06fad5ef730100dbfb8e
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204109"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000210"
 ---
 # <a name="customize-a-rule-set"></a>Personalizar um conjunto de regras
 
@@ -34,11 +34,11 @@ Para criar uma regra personalizada definida, você pode abrir uma conjunto de re
 
 3. No **executar este conjunto de regras** lista suspensa, siga um destes procedimentos:
 
-    - Selecione o conjunto de regras que você deseja personalizar.
+   - Selecione o conjunto de regras que você deseja personalizar.
 
      \- ou -
 
-    - Selecione  **\<procurar... >** especificar uma regra existente definida que não está na lista.
+   - Selecione  **\<procurar... >** especificar uma regra existente definida que não está na lista.
 
 4. Selecione **abrir** para exibir as regras no editor de conjunto de regras.
 
@@ -69,6 +69,44 @@ Você também pode criar um novo arquivo de conjunto de regras do **novo arquivo
    O novo conjunto de regras é selecionado na **executar este conjunto de regras** lista.
 
 6. Selecione **abrir** para abrir a nova regra definida no editor de conjunto de regras.
+
+### <a name="rule-precedence"></a>Precedência de regra
+
+- Se a mesma regra é listadas duas ou mais vezes em uma conjunto de regras com gravidades diferentes, o compilador gera um erro. Por exemplo:
+
+   ```xml
+   <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Warning" />
+       <Rule Id="CA1021" Action="Error" />
+     </Rules>
+   </RuleSet>
+   ```
+
+- Se a mesma regra é listadas duas ou mais vezes em uma regra definida com o *mesmo* gravidade, você poderá ver o seguinte aviso na **lista de erros**:
+
+   **CA0063: Falha ao carregar o arquivo de conjunto de regras '\[seu] RuleSet ' ou uma de suas regras dependentes definida arquivos. O arquivo não estiver de acordo com o esquema do conjunto de regra.**
+
+- Se o conjunto de regras inclui uma regra de filho definida usando um **Include** a mesma regra de lista de marca e os conjuntos de regras pai e filho ambos os mas com gravidades diferentes, em seguida, a gravidade no conjunto de regras pai terá precedência. Por exemplo:
+
+   ```xml
+   <!-- Parent rule set -->
+   <?xml version="1.0" encoding="utf-8"?>
+   <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
+     <Include Path="classlibrary_child.ruleset" Action="Default" />
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Warning" /> <!-- Overrides CA1021 severity from child rule set -->
+     </Rules>
+   </RuleSet>
+
+   <!-- Child rule set -->
+   <?xml version="1.0" encoding="utf-8"?>
+   <RuleSet Name="Rules from child" Description="Code analysis rules from child." ToolsVersion="15.0">
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Error" />
+     </Rules>
+   </RuleSet>
+   ```
 
 ## <a name="name-and-description"></a>Nome e descrição
 

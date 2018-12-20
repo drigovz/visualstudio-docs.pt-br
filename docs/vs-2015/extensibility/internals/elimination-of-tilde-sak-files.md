@@ -1,7 +1,7 @@
 ---
 title: Eliminação de ~ SAK arquivos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,28 +17,26 @@ ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a11ed0972c403c4c3ea2a8b3f607135f12e9e315
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 930ee0690e14431298461f50387a94dd4bb0ce7d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466269"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780458"
 ---
 # <a name="elimination-of-sak-files"></a>Eliminação de arquivos ~SAK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [eliminação de ~ SAK arquivos](https://docs.microsoft.com/visualstudio/extensibility/internals/elimination-of-tilde-sak-files).  
-  
 Na fonte de controle de plug-in API 1.2, o ~ arquivos SAK foram substituídos por novas funções que detectam se um plug-in de controle de origem dá suporte a arquivo MSSCCPRJ e check-outs compartilhados e de sinalizadores de recurso.  
   
 ## <a name="sak-files"></a>~ Arquivos SAK  
  Visual Studio .NET 2003 criado arquivos temporários, prefixados com ~ SAK. Esses arquivos são usados para determinar se um plug-in de controle de origem dá suporte a:  
   
--   MSSCCPRJ. Arquivos SCC.  
+- MSSCCPRJ. Arquivos SCC.  
   
--   Vários checkouts (compartilhados).  
+- Vários checkouts (compartilhados).  
   
- Para plug-ins que dão suporte a funções avançadas fornecidas a fonte de controle de plug-in API 1.2, o IDE pode detectar esses recursos sem criar os arquivos temporários com o uso de novos recursos, sinalizadores e funções, detalhadas nas seções a seguir.  
+  Para plug-ins que dão suporte a funções avançadas fornecidas a fonte de controle de plug-in API 1.2, o IDE pode detectar esses recursos sem criar os arquivos temporários com o uso de novos recursos, sinalizadores e funções, detalhadas nas seções a seguir.  
   
 ## <a name="new-capability-flags"></a>Novos sinalizadores de recurso  
  `SCC_CAP_SCCFILE`  

@@ -1,7 +1,7 @@
 ---
 title: Expondo propriedades na janela Propriedades | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7853b956e88ac1b239792ad96fb094c1a7c0a3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 026e7de7d56cb907682be52db2dbd32782822d9f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466152"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756903"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Expondo propriedades na janela Propriedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [expor propriedades à janela de propriedades](https://docs.microsoft.com/visualstudio/extensibility/exposing-properties-to-the-properties-window).  
-  
 Este passo a passo expõe as propriedades públicas de um objeto para o **propriedades** janela. As alterações feitas a essas propriedades são refletidas na **propriedades** janela.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
@@ -73,14 +71,14 @@ Este passo a passo expõe as propriedades públicas de um objeto para o **propri
         }  
     }  
   
-    public void UpdateSelection()  
+    public void UpdateSelection()  
     {  
         ITrackSelection track = TrackSelection;  
         if (track != null)  
             track.OnSelectChange((ISelectionContainer)selContainer);  
     }  
   
-    public void SelectList(ArrayList list)  
+    public void SelectList(ArrayList list)  
     {  
         selContainer = new SelectionContainer(true, false);  
         selContainer.SelectableObjects = list;  
@@ -88,7 +86,7 @@ Este passo a passo expõe as propriedades públicas de um objeto para o **propri
         UpdateSelection();  
     }  
   
-    public override void OnToolWindowCreated()  
+    public override void OnToolWindowCreated()  
     {  
         ArrayList listObjects = new ArrayList();  
         listObjects.Add(this);  
@@ -120,10 +118,10 @@ Este passo a passo expõe as propriedades públicas de um objeto para o **propri
     ```csharp  
     [Category("My Properties")]  
     [Description("MyToolWindowControl properties")]  
-    public bool IsChecked  
+    public bool IsChecked  
     {  
         get {  
-            if (base.Content == null)  return false;  
+            if (base.Content == null)  return false;  
             return (bool)(( MyToolWindowControl) base.Content).checkBox.IsChecked;   
         }  
         set {  
@@ -194,14 +192,14 @@ Este passo a passo expõe as propriedades públicas de um objeto para o **propri
 1.  Abra MyToolWindow.cs e adicione uma classe pública denominada `Simple`.  
   
     ```csharp  
-    public class Simple  
+    public class Simple  
     {  
-        private string someText = "";  
+        private string someText = "";  
   
         [Category("My Properties")]  
         [Description("Simple Properties")]  
         [DisplayName("My Text")]  
-        public string SomeText  
+        public string SomeText  
         {  
             get { return someText; }  
             set { someText = value; }  

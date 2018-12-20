@@ -1,7 +1,7 @@
 ---
 title: BP_RESOLUTION_LOCATION | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af73894f85d60d5aaa99de6958168f3c09a68d45
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc70710ea0a811b75e6bad3098fbbc46dae0bd3b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462684"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760754"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [BP_RESOLUTION_LOCATION](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-resolution-location).  
-  
 Especifica a estrutura do local de resolução de ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -68,21 +66,21 @@ public struct BP_RESOLUTION_LOCATION {
  [C++] Um espaço reservado.  
   
  `unionmember1`  
- [Somente c#] Consulte os comentários sobre como interpretar.  
+ [C# somente] Consulte os comentários sobre como interpretar.  
   
  `unionmember2`  
- [Somente c#] Consulte os comentários sobre como interpretar.  
+ [C# somente] Consulte os comentários sobre como interpretar.  
   
  `unionmember3`  
- [Somente c#] Consulte os comentários sobre como interpretar.  
+ [C# somente] Consulte os comentários sobre como interpretar.  
   
  `unionmember4`  
- [Somente c#] Consulte os comentários sobre como interpretar.  
+ [C# somente] Consulte os comentários sobre como interpretar.  
   
 ## <a name="remarks"></a>Comentários  
  Essa estrutura é um membro do [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) e [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estruturas.  
   
- [Somente c#] O `unionmemberX` membros são interpretados de acordo com a tabela a seguir. Procure abaixo da coluna da esquerda para a `bpType` entre de valor, em seguida, para determinar o que cada `unionmemberX` membro representa e empacotar o `unionmemberX` adequadamente. Veja o exemplo de uma maneira de interpretar essa estrutura em c#.  
+ [C# somente] O `unionmemberX` membros são interpretados de acordo com a tabela a seguir. Procure abaixo da coluna da esquerda para a `bpType` entre de valor, em seguida, para determinar o que cada `unionmemberX` membro representa e empacotar o `unionmemberX` adequadamente. Veja o exemplo de uma maneira de interpretar essa estrutura em c#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  

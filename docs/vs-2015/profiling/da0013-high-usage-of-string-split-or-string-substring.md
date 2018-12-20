@@ -1,7 +1,7 @@
 ---
 title: 'DA0013: alto uso de String.Split ou String.Substring | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ helpviewer_keywords:
 - vs.performance.rules.DA0013
 ms.assetid: f501f423-bef9-4e08-bf96-c9ac9957e5a2
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c8f835e120f730f9c223477959e9c93dfefa240
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b469a9931ea48b60e49f9b5210e4e4db05fda362
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473155"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807447"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: uso alto de String.Split ou String.Substring
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DA0013: alto uso de String. Split ou String. substring](https://docs.microsoft.com/visualstudio/profiling/da0013-high-usage-of-string-split-or-string-substring).  
-  
 Id da regra | DA0013 |  
 | Categoria de |. Diretrizes de uso do .NET Framework |  
 | Métodos de criação de perfil | Amostragem |  

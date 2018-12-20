@@ -1,7 +1,7 @@
 ---
 title: Suprimir Avisos usando o atributo SuppressMessage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3ea1aff6aa086c5babb3e6ecf52e7427ffa06813
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 91ae1c5d15ddbb364aeba16c2c4de49ce19d09c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465902"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205953"
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>Suprimir avisos usando o atributo SuppressMessage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [suprimir avisos usando o atributo SuppressMessage](https://docs.microsoft.com/visualstudio/code-quality/suppress-warnings-by-using-the-suppressmessage-attribute).  
-  
 Geralmente é útil indicar que o aviso é nonapplicable para permitir que os membros da equipe saibam que o código foi revisado e foi determinado que o aviso deve ser suprimido. Supressão na origem (ISS) permite que um desenvolvedor para colocar o atributo que suprime um aviso de perto o local que gerou o aviso. Você pode adicionar o atributo ISS diretamente para o arquivo de origem ou você pode usar o menu de atalho a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.  
   
 ## <a name="in-this-section"></a>Nesta seção  

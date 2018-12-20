@@ -1,7 +1,7 @@
 ---
 title: Anotação | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ helpviewer_keywords:
 - Annotation symbol
 ms.assetid: eb9f759b-98a5-45fc-b085-91f1f2666e72
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0940302647d50e409902725980598c85a5abf290
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 079e035f92e7dc3dbabc996bef28d52df627b63d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475327"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774387"
 ---
 # <a name="annotation"></a>Anotação
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [anotação](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/annotation).  
-  
 Um código de programa local pode ser anotado com um `SymTagAnnotation` símbolo.  
   
 ## <a name="properties"></a>Propriedades  

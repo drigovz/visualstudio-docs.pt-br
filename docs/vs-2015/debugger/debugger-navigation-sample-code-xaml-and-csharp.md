@@ -1,7 +1,7 @@
 ---
 title: Depurador de código de exemplo de navegação (Xaml e c#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ dev_langs:
 - C++
 ms.assetid: 8f4266bc-4597-43ab-b620-8b08ea988a8e
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b047c783f685a10adedec4c5b9ccf7b1c2f8f9b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd8245c6d4705ba074f12feebb39ec183b53bf57
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462689"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807680"
 ---
 # <a name="debugger-navigation-sample-code-xaml-and-c"></a>Código de exemplo da navegação do depurador (XAML e C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [código de exemplo de navegação (Xaml e c#) do depurador](https://docs.microsoft.com/visualstudio/debugger/debugger-navigation-sample-code-xaml-and-csharp).  
-  
 O código neste tópico é o arquivo de exemplo para o [navegar por uma sessão de depuração (Xaml e c#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) tópico.  
   
 ## <a name="sample-code"></a>Código de exemplo  

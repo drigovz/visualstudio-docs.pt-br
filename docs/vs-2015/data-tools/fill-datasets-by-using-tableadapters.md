@@ -1,7 +1,7 @@
 ---
 title: Preencher conjuntos de dados usando TableAdapters | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c25bbba01d89935044e82a67b3ce40f99d1bf9a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 118b8165b4c5ad972aacf9a3d91cff78c1b776e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475877"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251843"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Preencher conjuntos de dados usando TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [preencher conjuntos de dados usando TableAdapters](https://docs.microsoft.com/visualstudio/data-tools/fill-datasets-by-using-tableadapters).  
-  
   
 Um componente do TableAdapter preenche um dataset com os dados do banco de dados, com base em uma ou mais consultas ou procedimentos armazenados que você especificar. Também pode executar a TableAdapters adiciona, atualiza e exclui o banco de dados para manter as alterações feitas ao conjunto de dados. Você também pode emitir comandos globais que não estão relacionados a qualquer tabela específica.  
   

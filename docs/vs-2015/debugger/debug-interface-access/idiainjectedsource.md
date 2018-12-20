@@ -1,7 +1,7 @@
 ---
 title: IDiaInjectedSource | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaInjectedSource interface
 ms.assetid: 75192c5c-812d-4675-9dc5-4c2cff3ba503
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 643c0208624fbf5ac121901478b77ff49cdf637d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8c8014d91f020bec5c9ab29c427fa78f7092b0c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466141"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756629"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaInjectedSource](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiainjectedsource).  
-  
 Acessos injetados de código-fonte armazenado na fonte de dados do DIA.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDiaInjectedSource : IUnknown  
+IDiaInjectedSource : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  

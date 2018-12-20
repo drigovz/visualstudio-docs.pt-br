@@ -1,5 +1,5 @@
 ---
-title: Substituir uma variável temporária pelo seu valor no Visual Studio
+title: Substituir uma variável temporária por seu valor
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: acfbfd2a23c85c81e0956190ff8e9e8501533559
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a6fea50f3cceb907cb014d29bb46988ab07dad6c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945604"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066857"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Refatoração Embutir uma variável temporária
 
@@ -27,11 +27,11 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O quê:** permite que você remova uma variável temporária e substitua-a pelo seu valor.
+**O quê:** Permite remover uma variável temporária e substitua-a por seu valor.
 
-**Quando:** o uso da variável temporária dificulta o entendimento do código.
+**Quando:** O uso da variável temporária dificulta o entendimento do código.
 
-**Por quê:** remover uma variável temporária pode facilitar a leitura do código.
+**Por que:** A remoção de uma variável temporária pode facilitar a leitura do código.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -39,30 +39,30 @@ Esta refatoração aplica-se a:
 
    - C#:
 
-    ![Código realçado – C#](media/inline-highlight-cs.png)
+       ![Código realçado – C#](media/inline-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código realçado – Visual Basic](media/inline-highlight-vb.png)
+       ![Código realçado – Visual Basic](media/inline-highlight-vb.png)
 
-1. Depois, siga um destes procedimentos:
+2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
-     - Clique com o botão direito do mouse no código e selecione o menu **Ações e Refatorações Rápidas**.
+      - Clique com o botão direito do mouse no código e selecione o menu **Ações e Refatorações Rápidas**.
 
-1. Selecione **Variável temporária embutida** no pop-up da janela Visualização.
+3. Selecione **Variável temporária embutida** no pop-up da janela Visualização.
 
    A variável é removida e seus usos são substituídos pelo valor da variável.
 
    - C#:
 
-    ![Resultado embutido – C#](media/inline-result-cs.png)
+      ![Resultado embutido – C#](media/inline-result-cs.png)
 
    - Visual Basic:
 
-    ![Resultado embutido – Visual Basic](media/inline-result-vb.png)
+      ![Resultado embutido – Visual Basic](media/inline-result-vb.png)
 
 ## <a name="see-also"></a>Consulte também
 

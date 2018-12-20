@@ -1,7 +1,7 @@
 ---
 title: Elemento de botão | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 96dccf51-2b00-4700-9d28-924b34c21ecd
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ad49fd053a10938dcc9f038ff7385bcd93c6253f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20673b87972c51a6cc0e3ce07553a0a721d7cca3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461766"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733307"
 ---
 # <a name="button-element"></a>Elemento Button
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento Button](https://docs.microsoft.com/visualstudio/extensibility/button-element).  
-  
 Define um elemento que o usuário pode interagir com o. Botões podem ser de tipos diferentes: botão, o botão de menu e SplitDropDown.  
   
 ## <a name="syntax"></a>Sintaxe  

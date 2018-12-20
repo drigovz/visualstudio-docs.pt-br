@@ -1,7 +1,7 @@
 ---
 title: 'Como: especificar uma URL de suporte para pré-requisitos individuais em uma implantação de ClickOnce | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 99003812248a10ca8797a5727911caf4ba3a0a60
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdd366cb8ac86f20e7457178f63aa553a0814158
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460435"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831569"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Como especificar uma URL de suporte para pré-requisitos individuais em uma implantação do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: especificar uma URL de suporte para pré-requisitos individuais em uma implantação de ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment).  
-  
 Um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação pode testar para um número de pré-requisitos que devem estar disponíveis no computador cliente para o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo seja executado. Isso inclui a versão mínima necessária do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], a versão do sistema operacional e todos os assemblies que devem ser pré-instalados no cache de assembly global (GAC). [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], no entanto, não é possível instalar qualquer um desses pré-requisitos em si; Se um pré-requisito não for encontrado, ele simplesmente interrompe a instalação e exibe uma caixa de diálogo explicando por que a instalação falhou.  
   
  Há dois métodos para instalar os pré-requisitos. Você pode instalá-los usando um aplicativo bootstrapper. Como alternativa, você pode especificar uma URL de suporte para pré-requisitos individuais, que é exibida aos usuários na caixa de diálogo se o pré-requisito não for encontrado. A página referenciada por essa URL pode conter links para instruções de instalação dos pré-requisitos necessários. Se um aplicativo não especificar uma URL de suporte para um pré-requisito individual, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] exibirá a URL de suporte especificada no manifesto de implantação para o aplicativo como um todo, se ele está definido.  

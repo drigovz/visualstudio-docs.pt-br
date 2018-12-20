@@ -1,7 +1,7 @@
 ---
 title: Caixa de diálogo Fontes e Cores, Ambiente, Opções | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8831cfdbf22d80cce39fbae81fffa46b8944e92
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465753"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220229"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [fontes e cores, ambiente, caixa de diálogo Opções](https://docs.microsoft.com/visualstudio/ide/reference/fonts-and-colors-environment-options-dialog-box).  
-  
   
 A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). É possível acessar essa caixa de diálogo clicando em **Ferramentas / Opções** e, em seguida, selecionando **Ambiente / Fontes e Cores**. Se essa página não aparecer na lista, selecione **Mostrar todas as configurações** na caixa de diálogo **Opções**.  
   
@@ -55,47 +53,47 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
  **Mostrar configurações de**  
  Lista todos os elementos da interface do usuário para os quais é possível alterar os esquemas de fontes e cores. Após selecionar um item da lista, você pode personalizar as configurações de cor do item selecionado em **Exibir itens**.  
   
--   **Editor de Texto**  
+- **Editor de Texto**  
   
-     Alterações nas configurações de exibição de cor, tamanho e estilo da fonte do Editor de Texto afetam a aparência do texto no editor de texto padrão. Documentos abertos em um editor de texto fora do IDE não serão afetados por essas configurações.  
+   Alterações nas configurações de exibição de cor, tamanho e estilo da fonte do Editor de Texto afetam a aparência do texto no editor de texto padrão. Documentos abertos em um editor de texto fora do IDE não serão afetados por essas configurações.  
   
--   **Impressora**  
+- **Impressora**  
   
-     Alterações nas configurações de exibição de cor, tamanho e estilo da fonte da Impressora afetam a aparência do texto em documentos impressos.  
+   Alterações nas configurações de exibição de cor, tamanho e estilo da fonte da Impressora afetam a aparência do texto em documentos impressos.  
   
-    > [!NOTE]
-    >  Conforme for necessário, é possível selecionar uma fonte padrão para impressão diferente daquela usada para exibição no editor de texto. Isso pode ser útil ao imprimir códigos que contêm caracteres de byte único e de caractere duplo.  
+  > [!NOTE]
+  >  Conforme for necessário, é possível selecionar uma fonte padrão para impressão diferente daquela usada para exibição no editor de texto. Isso pode ser útil ao imprimir códigos que contêm caracteres de byte único e de caractere duplo.  
   
--   **Preenchimento de Declaração**  
+- **Preenchimento de Declaração**  
   
-     Altera o tamanho e o estilo da fonte do texto que aparece no pop-up de preenchimento de declaração no editor.  
+   Altera o tamanho e o estilo da fonte do texto que aparece no pop-up de preenchimento de declaração no editor.  
   
--   **Dica de ferramenta do Editor**  
+- **Dica de ferramenta do Editor**  
   
-     Altera o tamanho e o estilo da fonte do texto que aparece em ToolTips exibidas no editor.  
+   Altera o tamanho e o estilo da fonte do texto que aparece em ToolTips exibidas no editor.  
   
--   **Fonte do ambiente**  
+- **Fonte do ambiente**  
   
-     Altera o tamanho e o estilo da fonte de todos os elementos de interface do usuário do IDE que ainda não têm uma opção separada em **Mostrar configurações de**. Por exemplo, essa opção se aplica à **Página Inicial**, mas não afetaria a Janela de **Saída**.  
+   Altera o tamanho e o estilo da fonte de todos os elementos de interface do usuário do IDE que ainda não têm uma opção separada em **Mostrar configurações de**. Por exemplo, essa opção se aplica à **Página Inicial**, mas não afetaria a Janela de **Saída**.  
   
--   **[Todas as janelas de ferramentas de texto]**  
+- **[Todas as janelas de ferramentas de texto]**  
   
-     Alterações nas configurações de exibição de cor, tamanho e estilo da fonte deste item afetam a aparência do texto nas janelas de ferramentas que têm painéis de saída no IDE. Por exemplo, Janela de Saída, janela Comando, janela Imediato etc.  
+   Alterações nas configurações de exibição de cor, tamanho e estilo da fonte deste item afetam a aparência do texto nas janelas de ferramentas que têm painéis de saída no IDE. Por exemplo, Janela de Saída, janela Comando, janela Imediato etc.  
   
-    > [!NOTE]
-    >  Alterações no texto de itens **[Todas as janelas de ferramentas de texto]** não terão efeito durante a sessão em que forem feitas. É possível avaliar tais alterações abrindo outra instância do Visual Studio.  
+  > [!NOTE]
+  >  Alterações no texto de itens **[Todas as janelas de ferramentas de texto]** não terão efeito durante a sessão em que forem feitas. É possível avaliar tais alterações abrindo outra instância do Visual Studio.  
   
- **Usar Padrões**  
- Redefine os valores de fonte e cor do item de lista selecionado em **Mostrar configurações de**. O botão **Usar** é exibido quando outros esquemas de exibição estão disponíveis para seleção. Por exemplo, é possível escolher entre dois esquemas para a impressora.  
+  **Usar Padrões**  
+  Redefine os valores de fonte e cor do item de lista selecionado em **Mostrar configurações de**. O botão **Usar** é exibido quando outros esquemas de exibição estão disponíveis para seleção. Por exemplo, é possível escolher entre dois esquemas para a impressora.  
   
- **Fonte (o negrito indica fontes de largura fixa)**  
- Lista todas as fontes instaladas em seu sistema. Quando o menu suspenso aparece pela primeira vez, a fonte atual do elemento selecionado no campo **Mostrar configurações de** é realçada. Fontes fixas – que são mais fáceis de alinhar no editor – aparecem em negrito.  
+  **Fonte (o negrito indica fontes de largura fixa)**  
+  Lista todas as fontes instaladas em seu sistema. Quando o menu suspenso aparece pela primeira vez, a fonte atual do elemento selecionado no campo **Mostrar configurações de** é realçada. Fontes fixas – que são mais fáceis de alinhar no editor – aparecem em negrito.  
   
- **Size**  
- Listas tamanhos de pontos disponíveis para a fonte realçada. Alterar o tamanho da fonte afeta todos os **Itens de exibição** para a seleção **Mostrar configurações de**.  
+  **Size**  
+  Listas tamanhos de pontos disponíveis para a fonte realçada. Alterar o tamanho da fonte afeta todos os **Itens de exibição** para a seleção **Mostrar configurações de**.  
   
- **Exibir itens**  
- Lista os itens cuja cor de primeiro plano e a cor da tela de fundo você pode modificar.  
+  **Exibir itens**  
+  Lista os itens cuja cor de primeiro plano e a cor da tela de fundo você pode modificar.  
   
 > [!NOTE]
 >  **Texto sem Formatação** é o item de exibição padrão. Sendo assim, propriedades atribuídas a **PlainText** serão substituídas por propriedades atribuídas a outros itens de exibição. Por exemplo, se você atribuir a cor azul a **PlainText** e a cor verde a **Identificador**, todos os identificadores serão exibidos em verde. Neste exemplo, as propriedades de **Identificador** substituem as propriedades em **PlainText**.  
@@ -155,7 +153,7 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
 |**Palavra-chave**|Palavras-chave da linguagem específica que são reservadas. Por exemplo: classe e namespace.|  
 |**Endereço de Memória**|A cor do texto usado para exibir a coluna de endereço dentro da janela **Memória**.|  
 |**Memória Alterada**|A cor do texto usado para exibir dados alterados dentro da janela **Memória**.|  
-|**Dados da Memória**|A cor do texto usado para exibir dados dentro da janela **Memória**.|  
+|**Dados da Memória**|A cor do texto usado para exibir dados dentro de **memória** janela.|  
 |**Memória Ilegível**|A cor do texto usado para exibir áreas de memória ilegível dentro da janela **Memória**.|  
 |**Número**|Um número no código que representa um valor numérico real.|  
 |**Operador**|Operadores, como +, - e !=.|  

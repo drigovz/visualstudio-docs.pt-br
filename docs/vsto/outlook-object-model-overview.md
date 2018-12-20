@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b11757990a17a867776376454142e5b84ee82510
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: b6885968385725f4aa7d991309902ca712849c8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008262"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941185"
 ---
 # <a name="outlook-object-model-overview"></a>Visão geral de modelo de objeto do Outlook
   Para desenvolver suplementos do VSTO para Outlook do Microsoft Office, você pode interagir com os objetos que são fornecidos pelo modelo de objeto do Outlook. O modelo de objeto do Outlook fornece interfaces e classes que representam itens na interface do usuário. Por exemplo, o <xref:Microsoft.Office.Interop.Outlook.Application> objeto representa o aplicativo inteiro, o <xref:Microsoft.Office.Interop.Outlook.Folder> objeto representa uma pasta que contém mensagens de email ou outros itens, e o <xref:Microsoft.Office.Interop.Outlook.MailItem> objeto representa uma mensagem de email.  
@@ -59,13 +59,13 @@ ms.locfileid: "40008262"
 ### <a name="application-object"></a>Objeto de aplicativo  
  O <xref:Microsoft.Office.Interop.Outlook.Application> objeto representa o aplicativo Outlook e é o objeto de nível superior no modelo de objeto do Outlook. Alguns dos membros mais importantes desse objeto incluem:  
   
--   O [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) método que você pode usar para criar um novo item como uma mensagem de email, uma tarefa ou um compromisso.  
+- O [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) método que você pode usar para criar um novo item como uma mensagem de email, uma tarefa ou um compromisso.  
   
--   O <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> propriedade, que você pode usar para acessar as janelas que exibem o conteúdo de uma pasta na interface de usuário (IU) do Outlook.  
+- O <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> propriedade, que você pode usar para acessar as janelas que exibem o conteúdo de uma pasta na interface de usuário (IU) do Outlook.  
   
--   O <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> propriedade, que você pode usar para acessar as janelas que exibem o conteúdo de um único item, como uma solicitação de reunião ou de mensagem de email.  
+- O <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> propriedade, que você pode usar para acessar as janelas que exibem o conteúdo de um único item, como uma solicitação de reunião ou de mensagem de email.  
   
- Para obter uma instância das <xref:Microsoft.Office.Interop.Outlook.Application> do objeto, use o campo de aplicativo do `ThisAddIn` classe em seu projeto. Para obter mais informações, consulte [suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md).  
+  Para obter uma instância das <xref:Microsoft.Office.Interop.Outlook.Application> do objeto, use o campo de aplicativo do `ThisAddIn` classe em seu projeto. Para obter mais informações, consulte [suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md).  
   
 > [!NOTE]  
 >  Para evitar avisos de segurança quando você usa propriedades e métodos que estão bloqueados pelo object model guard do Outlook, obtenha objetos do Outlook do campo de aplicativo a `ThisAddIn` classe. Para obter mais informações, consulte [considerações sobre segurança específicas para soluções do Office](../vsto/specific-security-considerations-for-office-solutions.md).  

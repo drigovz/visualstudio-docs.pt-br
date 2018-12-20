@@ -1,7 +1,7 @@
 ---
 title: TargetCLR | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f9732480-287f-40f1-a4ff-b112e143b940
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 915ca4a859b4c80f785262f1c05698c4d34a683b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 517cf1eccd296716b0105539f6ae81cbc3519fd0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461969"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759295"
 ---
 # <a name="targetclr"></a>TargetCLR
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [TargetCLR](https://docs.microsoft.com/visualstudio/profiling/targetclr).  
-  
 A opção **TargetCLR** especifica a versão do CLR (Common Language Runtime) cujo perfil deverá ser criado quando mais de uma versão do CLR for carregada em um aplicativo.  
   
  Por padrão, as Ferramentas de Criação de Perfil [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] têm como destino a primeira versão do CLR carregada pelo aplicativo.  

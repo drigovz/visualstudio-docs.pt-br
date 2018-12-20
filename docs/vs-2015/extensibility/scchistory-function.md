@@ -1,7 +1,7 @@
 ---
 title: Função SccHistory | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3a01e3d854b2527a38595509699aa94a222a9ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8621b437cd21d0294abee65386c40465888bd3e8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474049"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740072"
 ---
 # <a name="scchistory-function"></a>Função SccHistory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [função SccHistory](https://docs.microsoft.com/visualstudio/extensibility/scchistory-function).  
-  
 Esta função exibe o histórico dos arquivos especificados.  
   
 ## <a name="syntax"></a>Sintaxe  

@@ -1,5 +1,5 @@
 ---
-title: Adicionar uma fonte de dados a um teste de desempenho Web no Visual Studio
+title: Adicionar uma fonte de dados a um teste de desempenho Web
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,26 +11,28 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9539e8dec80afd1f334ca89e84a5130d8d47877e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 6d2ae95883884909641541e0efe6e4efbc7fe06a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283283"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065201"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Adicionar uma fonte de dados a um teste de desempenho Web
 
 Associe dados para fornecer valores diferentes para o mesmo teste, por exemplo, para fornecer valores diferentes para seus parâmetros de postagem de formulário.
 
- ![Associando dados a um teste de desempenho Web](../test/media/web_test_databinding_conceptual.png)
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Usaremos um aplicativo de exemplo do ASP.NET. Ele tem três páginas *.aspx* – a página padrão, uma página vermelha e uma página azul. A página padrão tem um controle de rádio para escolher vermelho ou azul e um botão enviar. As outras duas páginas *.aspx* são muito simples. Uma tem um rótulo chamado Vermelho e a outra, Azul. Quando você opta por enviar a página padrão, exibimos uma das outras páginas. É possível baixar a amostra [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) ou simplesmente prosseguir usando seu próprio aplicativo Web.
+![Associando dados a um teste de desempenho Web](../test/media/web_test_databinding_conceptual.png)
 
- ![Executando o aplicativo Web a ser testado](../test/media/web_test_databinding_runwebapp.png)
+Usaremos um aplicativo de exemplo do ASP.NET. Ele tem três páginas *.aspx* – a página padrão, uma página vermelha e uma página azul. A página padrão tem um controle de rádio para escolher vermelho ou azul e um botão enviar. As outras duas páginas *.aspx* são muito simples. Uma tem um rótulo chamado Vermelho e a outra, Azul. Quando você opta por enviar a página padrão, exibimos uma das outras páginas. É possível baixar a amostra [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) ou simplesmente prosseguir usando seu próprio aplicativo Web.
 
- Sua solução também deve incluir um teste de desempenho Web que navegará pelas páginas do aplicativo Web.
+![Executando o aplicativo Web a ser testado](../test/media/web_test_databinding_runwebapp.png)
 
- ![Solução com o teste de desempenho Web](../test/media/web_test_databinding_solution.png)
+Sua solução também deve incluir um teste de desempenho Web que navegará pelas páginas do aplicativo Web.
+
+![Solução com o teste de desempenho Web](../test/media/web_test_databinding_solution.png)
 
 ## <a name="create-a-sql-database"></a>Criar um banco de dados SQL
 
@@ -138,7 +140,7 @@ Associe dados para fornecer valores diferentes para o mesmo teste, por exemplo, 
 
 - Oracle 7.3, 8i, 9i ou 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>P: Como uso um arquivo de valores separados por vírgula (CSV) de texto como uma fonte de dados?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>P: Como fazer para usar um arquivo de texto CSV (valores separados por vírgula) como uma fonte de dados?
 
 **R:** Veja como:
 
@@ -162,9 +164,9 @@ Associe dados para fornecer valores diferentes para o mesmo teste, por exemplo, 
 
      ![Inserir um nome e escolher um arquivo CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>P: E se meu arquivo CSV existente não contiver cabeçalhos de coluna?
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>P: E se meu arquivo CSV não contiver cabeçalhos de coluna?
 
-**R:** Se não conseguir adicionar cabeçalhos de coluna, você poderá usar um arquivo de descrição do esquema para manipular o arquivo CSV como um banco de dados.
+**R:** Caso não consiga adicionar cabeçalhos de coluna, use um arquivo de descrição do esquema para tratar o arquivo CSV como um banco de dados.
 
 1. Adicione um novo arquivo de texto chamado *schema.ini*.
 
@@ -213,7 +215,7 @@ Associe dados para fornecer valores diferentes para o mesmo teste, por exemplo, 
 
      ![Fonte de dados adicionada ao teste](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>P: Como uso um arquivo XML como uma fonte de dados?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>P: Como fazer para usar um arquivo XML como uma fonte de dados?
 
 **R:** Sim.
 
@@ -245,9 +247,9 @@ Associe dados para fornecer valores diferentes para o mesmo teste, por exemplo, 
 
      ![Inserir um nome e escolher um arquivo XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>P: Posso adicionar associação de dados a uma solicitação de serviço Web que usa SOAP?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>P: Posso adicionar a associação de dados a uma solicitação de serviço Web que usa o SOAP?
 
-**R:** Sim, você deve alterar o XML SOAP manualmente.
+**R:** Sim, é necessário alterar o XML SOAP manualmente.
 
 1. Escolha a solicitação de serviço da Web na árvore de solicitação e, na janela Propriedades, clique nas reticências (…) na propriedade Corpo da Cadeia de Caracteres.
 

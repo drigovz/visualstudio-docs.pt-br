@@ -1,7 +1,7 @@
 ---
 title: Padrão de comando, o grupo e o posicionamento da barra de ferramentas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c6007cd9502d5b1e10aa0fc90181f405189889a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e91d535697d0e5b9402a7b7eb3bbd4559821c68a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460731"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773633"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Posicionamento padrão de comando, grupo e barra de ferramentas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [comando padrão, o grupo e o posicionamento da barra de ferramentas](https://docs.microsoft.com/visualstudio/extensibility/internals/default-command-group-and-toolbar-placement).  
-  
 Para a uniformidade de produto e estabilidade, a interface do usuário exibe determinados grupos de comando por padrão, e [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece definições de comandos e grupos de comando. Os VSPackages também pode usar os comandos padrão e os grupos de comando.  
   
  Os grupos de comando padrão se enquadram em três categorias: IDE comandos, comandos de produto e comandos do editor.  

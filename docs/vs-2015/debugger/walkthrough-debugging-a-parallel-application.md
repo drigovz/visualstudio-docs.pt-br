@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Depurando um aplicativo paralelo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,21 +24,19 @@ helpviewer_keywords:
 - parallel applications, debugging [C#]
 ms.assetid: 2820ac4c-c893-4d87-8c62-83981d561493
 caps.latest.revision: 31
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22a4d8ea3bfe98a034f485be8ceec1004f8fba75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7f7c580ed07198f47776ee1edbad23918c03d564
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465221"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776714"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Instruções passo a passo: depurando um aplicativo paralelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: depurando um aplicativo paralelo](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-a-parallel-application).  
-  
 Este passo a passo mostra como usar o **tarefas paralelas** e **pilhas paralelas** windows para depurar um aplicativo paralelo. Essas janelas ajudarão-lo a compreender e verificar o comportamento de tempo de execução do código que usa o [tarefa TPL (biblioteca paralela)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) ou o [tempo de execução de simultaneidade](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Este passo a passo fornece código de exemplo que tem pontos de interrupção internos. Depois que o código for parado, o passo a passo mostra como usar o **tarefas paralelas** e **pilhas paralelas** windows para examiná-lo.  
   
  Este passo a passo ensina estas tarefas:  
@@ -70,25 +68,25 @@ Este passo a passo mostra como usar o **tarefas paralelas** e **pilhas paralelas
   
 #### <a name="to-create-the-sample-project"></a>Para criar o projeto de exemplo  
   
-1.  No Visual Studio, no menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
+1. No Visual Studio, no menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-2.  No **modelos instalados** painel, selecione Visual c#, Visual Basic ou Visual C++. Para as linguagens gerenciadas, certifique-se de que [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] seja exibido na caixa da estrutura.  
+2. No **modelos instalados** painel, selecione Visual c#, Visual Basic ou Visual C++. Para as linguagens gerenciadas, certifique-se de que [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] seja exibido na caixa da estrutura.  
   
-3.  Selecione **aplicativo de Console** e, em seguida, clique em **Okey**. Permaneça na configuração de depuração, que é o padrão.  
+3. Selecione **aplicativo de Console** e, em seguida, clique em **Okey**. Permaneça na configuração de depuração, que é o padrão.  
   
-4.  No projeto, abra o arquivo de código .cpp, .cs ou .vb. Exclua o conteúdo para criar um arquivo de código vazio.  
+4. No projeto, abra o arquivo de código .cpp, .cs ou .vb. Exclua o conteúdo para criar um arquivo de código vazio.  
   
-5.  Cole o código a seguir para seu idioma escolhido no arquivo de código vazio.  
+5. Cole o código a seguir para seu idioma escolhido no arquivo de código vazio.  
   
- [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
- [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
- [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
+   [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
+   [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
+   [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
   
-1.  Sobre o **arquivo** menu, clique em **Salvar tudo**.  
+6. Sobre o **arquivo** menu, clique em **Salvar tudo**.  
   
-2.  Sobre o **construir** menu, clique em **recompilar solução**.  
+7. Sobre o **construir** menu, clique em **recompilar solução**.  
   
-     Observe que há quatro chamadas a `Debugger.Break` (`DebugBreak` no exemplo do C++). Em virtude disso, você não precisa inserir pontos de interrupção; a execução do aplicativo causará sua interrupção no depurador até quatro vezes.  
+    Observe que há quatro chamadas a `Debugger.Break` (`DebugBreak` no exemplo do C++). Em virtude disso, você não precisa inserir pontos de interrupção; a execução do aplicativo causará sua interrupção no depurador até quatro vezes.  
   
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>Usando a janela Pilhas Paralelas: exibição de Threads  
  No menu **Depuração**, clique em **Iniciar Depuração**. Aguarde até que o primeiro ponto de interrupção seja atingido.  
@@ -155,33 +153,33 @@ Este passo a passo mostra como usar o **tarefas paralelas** e **pilhas paralelas
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Para retomar a execução até o terceiro ponto de interrupção  
   
-1.  Para retomar a execução até que o terceiro ponto de interrupção é atingido, diante de **depurar** menu, clique em **continuar**.  
+1. Para retomar a execução até que o terceiro ponto de interrupção é atingido, diante de **depurar** menu, clique em **continuar**.  
   
-     Quando vários threads estão no mesmo método, mas o método não estava no início da pilha de chamadas, ele é exibido em caixas diferentes. Um exemplo no ponto de interrupção atual é S.L, que tem três threads e aparece em três caixas. Clique duas vezes em S.L.  
+    Quando vários threads estão no mesmo método, mas o método não estava no início da pilha de chamadas, ele é exibido em caixas diferentes. Um exemplo no ponto de interrupção atual é S.L, que tem três threads e aparece em três caixas. Clique duas vezes em S.L.  
   
-     ![Caminho de execução na janela pilhas paralelas](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
+    ![Caminho de execução na janela pilhas paralelas](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
   
-     Observe que S.L está em negrito nas outras duas caixas para que você possa ver onde mais ele aparece. Se você quiser ver quais registros chamam l e quais registros ele chama, clique no **Alternar modo de exibição do método** na barra de ferramentas. A ilustração a seguir mostra o modo de exibição do método as **pilhas paralelas** janela.  
+    Observe que S.L está em negrito nas outras duas caixas para que você possa ver onde mais ele aparece. Se você quiser ver quais registros chamam l e quais registros ele chama, clique no **Alternar modo de exibição do método** na barra de ferramentas. A ilustração a seguir mostra o modo de exibição do método as **pilhas paralelas** janela.  
   
-     ![Exibição do método na janela pilhas paralelas](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
+    ![Exibição do método na janela pilhas paralelas](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
   
-     Observe como o diagrama girou no método selecionado e o posicionou em sua própria caixa no meio da exibição. Os receptores e os chamadores aparecem nas partes superior e inferior. Clique o **Alternar modo de exibição do método** botão novamente para sair desse modo.  
+    Observe como o diagrama girou no método selecionado e o posicionou em sua própria caixa no meio da exibição. Os receptores e os chamadores aparecem nas partes superior e inferior. Clique o **Alternar modo de exibição do método** botão novamente para sair desse modo.  
   
-     O menu de atalho a **pilhas paralelas** janela também tem os seguintes outros itens.  
+    O menu de atalho a **pilhas paralelas** janela também tem os seguintes outros itens.  
   
-    -   **Exibição hexadecimal** alterna os números nas dicas de ferramenta entre decimais e hexadecimais.  
+   - **Exibição hexadecimal** alterna os números nas dicas de ferramenta entre decimais e hexadecimais.  
   
-    -   **Informações de carregamento de símbolo** e **configurações de símbolo** abrir as caixas de diálogo correspondente.  
+   - **Informações de carregamento de símbolo** e **configurações de símbolo** abrir as caixas de diálogo correspondente.  
   
-    -   **Ir para código-fonte** e **ir para desmontagem** navegar no editor para o método selecionado.  
+   - **Ir para código-fonte** e **ir para desmontagem** navegar no editor para o método selecionado.  
   
-    -   **Mostrar código externo** exibe todos os quadros, mesmo se eles não estiverem no código do usuário. Tente verificar o diagrama se expande para acomodar os registros adicionais (que podem ser escurecidos porque você não tem símbolos para eles).  
+   - **Mostrar código externo** exibe todos os quadros, mesmo se eles não estiverem no código do usuário. Tente verificar o diagrama se expande para acomodar os registros adicionais (que podem ser escurecidos porque você não tem símbolos para eles).  
   
      Quando houver diagramas grandes e você for para o próximo ponto de interrupção, talvez seja conveniente que o modo de exibição role até o registro de ativação ativo do thread atual; isto é, o thread que atingiu o ponto de interrupção primeiro. No **pilhas paralelas** janela, certifique-se de que o **Autorrolagem para quadro de pilhas atual** na barra de ferramentas está em.  
   
      ![Rolagem automática na janela pilhas paralelas](../debugger/media/pdb-walkthrough-4a.png "PDB_Walkthrough_4A")  
   
-2.  Antes de continuar, além de **pilhas paralelas** janela, role até a extrema à esquerda e todo o caminho para baixo.  
+2. Antes de continuar, além de **pilhas paralelas** janela, role até a extrema à esquerda e todo o caminho para baixo.  
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Para retomar a execução até o quarto ponto de interrupção  
   

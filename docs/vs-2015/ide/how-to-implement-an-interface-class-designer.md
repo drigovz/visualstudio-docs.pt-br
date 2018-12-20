@@ -1,7 +1,7 @@
 ---
 title: Como implementar uma interface (Designer de Classe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e3626d35867902f96b7f3d48d0b7528fa16fc7a3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a196f49765623966a48b07eef3abe3f8ca7e5a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464533"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900534"
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>Como implementar uma interface (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: implementar uma Interface (Designer de classe)](https://docs.microsoft.com/visualstudio/ide/how-to-implement-an-interface-class-designer).  
-  
 No Designer de Classe, você pode implementar uma interface no diagrama de classe conectando-a a uma classe que fornece código para os métodos de interface. O Designer de Classe gera uma implementação de interface e exibe a relação entre a interface e a classe como uma relação de herança. É possível implementar uma interface desenhando uma linha de herança entre a interface e a classe ou arrastando a interface do Modo de Exibição de Classe.  
   
 > [!TIP]
@@ -36,13 +34,13 @@ No Designer de Classe, você pode implementar uma interface no diagrama de class
   
 ### <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>Para implementar uma interface desenhando uma linha de herança  
   
-1.  No diagrama de classe, exiba a interface e a classe que a implementará.  
+1. No diagrama de classe, exiba a interface e a classe que a implementará.  
   
-2.  Desenhe uma linha de herança da classe e da interface.  
+2. Desenhe uma linha de herança da classe e da interface.  
   
-     Um pirulito aparece anexado à classe, e um rótulo com o nome da interface identifica a relação de herança. O Visual Studio gera stubs para todos os membros da interface.  
+    Um pirulito aparece anexado à classe, e um rótulo com o nome da interface identifica a relação de herança. O Visual Studio gera stubs para todos os membros da interface.  
   
- Para obter mais informações, consulte [Como criar herança entre tipos (Designer de Classe)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
+   Para obter mais informações, consulte [Como criar herança entre tipos (Designer de Classe)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
   
 ### <a name="to-implement-an-interface-from-the-class-view-window"></a>Para implementar uma interface da janela do Modo de Exibição de Classe  
   

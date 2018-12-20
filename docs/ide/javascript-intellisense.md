@@ -26,19 +26,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e0efd8393d6324321a505247a3dad171a81a57
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 666ce7d65269992af486e59c6b5ce11e94da736b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103470"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348105"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
 O [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] fornece uma experiência de edição de JavaScript avançada pronta para o uso. Ativado por um serviço de linguagem baseado no TypeScript, o Visual Studio oferece um IntelliSense mais sofisticado, suporte para recursos modernos do JavaScript e recursos aprimorados de produtividade como Ir para Definição, refatoração e muito mais.
 
 > [!NOTE]
-> O serviço de linguagem JavaScript do [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] usa um novo mecanismo para o serviço de linguagem (chamado “Salsa”). Os detalhes estão incluídos neste tópico e você também pode ler esta [postagem no blog](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc). A nova experiência de edição também se aplica ao Visual Studio Code. Consulte os [documentos do Código do VS](https://code.visualstudio.com/docs/languages/javascript) para obter mais informações.
+> O serviço de linguagem JavaScript do [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] usa um novo mecanismo para o serviço de linguagem (chamado “Salsa”). Os detalhes estão incluídos neste tópico e você também pode ler esta [postagem no blog](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc/). A nova experiência de edição também se aplica ao Visual Studio Code. Consulte os [documentos do Código do VS](https://code.visualstudio.com/docs/languages/javascript) para obter mais informações.
 
 Para obter mais informações sobre a funcionalidade geral do IntelliSense no Visual Studio, consulte [Usando o IntelliSense](../ide/using-intellisense.md).
 
@@ -143,3 +143,4 @@ Se você não desejar usar a aquisição automática, desabilite-a adicionando u
 ## <a name="see-also"></a>Consulte também
 
 - [Usando o IntelliSense](../ide/using-intellisense.md)
+- [Suporte a JavaScript (Visual Studio para Mac)](/visualstudio/mac/javascript)

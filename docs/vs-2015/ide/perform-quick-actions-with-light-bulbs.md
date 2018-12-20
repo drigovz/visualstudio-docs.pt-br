@@ -1,7 +1,7 @@
 ---
 title: Realizar ações rápidas com lâmpadas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9cd00bf08a48c1763ab72e6b30579e81e870c1a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3eff05df37dd1d15774fb059396f3f94b0fff2a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462473"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883452"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Realizar ações rápidas com lâmpadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [documentação do Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
-  
 As lâmpadas são um novo recurso de produtividade no Visual Studio 2015. Eles são ícones que aparecem no editor do Visual Studio e que você pode clicar para realizar ações rápidas, incluindo a refatoração e correção de erros. As lâmpadas levam a assistência de correção de erros e refatoração para um único ponto focal, em geral, exatamente na linha em que você está digitando.  
   
  ![Ícone de lâmpada pequeno](../ide/media/vs2015-lightbulbsmall.png "VS2015_LightBulbSmall")  
@@ -34,11 +32,11 @@ As lâmpadas são um novo recurso de produtividade no Visual Studio 2015. Eles s
   
 ## <a name="to-see-a-light-bulb"></a>Para ver uma lâmpada  
   
-1.  Em muitos casos, as lâmpadas aparecem espontaneamente ao focalizar o mouse no ponto de um erro ou na margem esquerda do editor ao mover o cursor em uma linha que contém um erro. Quando você vir um rabisco vermelho, poderá focalizar o mouse sobre ele para exibir a lâmpada. Você também poderá fazer com que uma lâmpada seja exibida ao usar o mouse ou o teclado para ir para qualquer lugar da linha em que ocorre o problema.  
+1. Em muitos casos, as lâmpadas aparecem espontaneamente ao focalizar o mouse no ponto de um erro ou na margem esquerda do editor ao mover o cursor em uma linha que contém um erro. Quando você vir um rabisco vermelho, poderá focalizar o mouse sobre ele para exibir a lâmpada. Você também poderá fazer com que uma lâmpada seja exibida ao usar o mouse ou o teclado para ir para qualquer lugar da linha em que ocorre o problema.  
   
-2.  Pressione **Ctrl + .** em qualquer lugar de uma linha para invocar a lâmpada e ir diretamente para a lista de possíveis correções.  
+2. Pressione **Ctrl + .** em qualquer lugar de uma linha para invocar a lâmpada e ir diretamente para a lista de possíveis correções.  
   
- ![Lâmpada com o mouse focalizando](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")  
+   ![Lâmpada com o mouse focalizando](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")  
   
 ## <a name="to-see-potential-fixes"></a>Para ver as possíveis correções  
  Clique na seta para baixo ou no link Mostrar possíveis correções para exibir uma lista de ações rápidas que a lâmpada pode executar para você.  

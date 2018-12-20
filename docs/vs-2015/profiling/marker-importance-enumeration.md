@@ -1,7 +1,7 @@
 ---
 title: Enumeração de marker_importance | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - Concurrency::diagnostic::marker_importance enumeration
 ms.assetid: d5524ea0-0227-4d8e-9122-332291042df5
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1564de8b63efa48ad83b1aa09f1fce75ff3fbd75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 32e57a9463e6c6966c215066fd470b62596f5481
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474013"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756852"
 ---
 # <a name="markerimportance-enumeration"></a>Enumeração marker_importance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [enumeração marker_importance](https://docs.microsoft.com/visualstudio/profiling/marker-importance-enumeration).  
-  
 Representa o nível de importância de um marcador da Visualização Simultânea.  
   
 ## <a name="syntax"></a>Sintaxe  

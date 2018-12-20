@@ -1,7 +1,7 @@
 ---
 title: 'Como: depurar em um Cluster de alto desempenho | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ helpviewer_keywords:
 - high-perfomance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
 caps.latest.revision: 27
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ce148ab317b14aad6cd1e2c48a6f9245c81df98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 75f2a96df18137f04b8b7637940c70378842e23d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473271"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747728"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Como depurar em um cluster de alto desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: depurar em um Cluster de alto desempenho](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-on-a-high-performance-cluster).  
-  
 A depuração de um programa com vários processamentos em um cluster de alto desempenho é semelhante à depuração de um programa comum em um computador remoto. No entanto, há algumas considerações adicionais. Para requisitos gerais de configuração remota, consulte [depuração remota](../debugger/remote-debugging.md).  
   
  Ao depurar em um cluster de alto desempenho, você pode usar todas as janelas e técnicas de depuração do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que estiverem disponíveis para a depuração remota. Como você está depurando remotamente, no entanto, a janela do console externo não está disponível.  

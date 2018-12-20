@@ -1,7 +1,7 @@
 ---
 title: 'Erro: Não é possível iniciar a depuração no servidor Web | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,21 +30,19 @@ helpviewer_keywords:
 - remote debugging, errors
 ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
 caps.latest.revision: 40
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 410b180d7b533c925aa183d01bd8f64463225629
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 168aaff6e7165c0566b198dab22174b14dad9949
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467653"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779288"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erro: não foi possível iniciar a depuração no servidor Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [erro: não é possível iniciar depuração no servidor Web](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-start-debugging-on-the-web-server).  
-  
 Quando você tenta depurar um aplicativo ASP.NET em execução em um servidor Web, você pode receber essa mensagem de erro: não é possível iniciar a depuração no servidor Web.
   
 Em muitos casos, esse erro ocorre porque o IIS não está configurado corretamente.

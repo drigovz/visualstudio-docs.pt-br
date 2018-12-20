@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::EnumCodeContexts | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: 478e06a2-07bb-4841-8887-deab0f42ebd0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1a942cba5dd1840fd39bc7a421ea2e40e7309091
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b1cfc604ca16b95195fa72e5046264abe5611ab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473168"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786646"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProgram2::EnumCodeContexts](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-enumcodecontexts).  
-  
 Recupera uma lista dos contextos de código para uma posição especificada em um arquivo de origem.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT EnumCodeContexts(   
+HRESULT EnumCodeContexts(   
    IDebugDocumentPosition2*  pDocPos,  
    IEnumDebugCodeContexts2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumCodeContexts(   
+int EnumCodeContexts(   
    IDebugDocumentPosition2     pDocPos,  
    out IEnumDebugCodeContexts2 ppEnum  
 );  

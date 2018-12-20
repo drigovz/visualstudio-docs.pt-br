@@ -24,15 +24,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7751a53430518df9ce80fd053be5414e015143d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 0db327943dcaf9b14a921cf4437b6c23874b4380
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151648"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219426"
 ---
 # <a name="rc-task"></a>tarefa RC
-Encapsula a ferramenta do Compilador de Recursos do Microsoft Windows, *rc.exe*. A tarefa **RC** compila recursos como cursores, ícones, bitmaps, caixas de diálogo e fontes em um arquivo de recurso (*.res*). Para saber mais, confira [Compilador de recursos](https://docs.microsoft.com/en-us/windows/desktop/menurc/resource-compiler).
+Encapsula a ferramenta do Compilador de Recursos do Microsoft Windows, *rc.exe*. A tarefa **RC** compila recursos como cursores, ícones, bitmaps, caixas de diálogo e fontes em um arquivo de recurso (*.res*). Para saber mais, confira [Compilador de recursos](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler).
   
 ## <a name="parameters"></a>Parâmetros  
  A tabela a seguir descreve os parâmetros da tarefa RC. A maioria dos parâmetros de tarefa e alguns conjuntos de parâmetros correspondem a uma opção de linha de comando.  

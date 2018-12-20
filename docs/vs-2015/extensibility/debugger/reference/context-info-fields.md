@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_INFO_FIELDS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fd9d1ba718624e408c57c0bd68a3f5825068b9a6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5169ff103b823067d64c58a3f6223220f67a3d52
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465384"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734220"
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [CONTEXT_INFO_FIELDS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/context-info-fields).  
-  
 Especifica quais informações devem ser recuperadas sobre um contexto de memória.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_CONTEXT_INFO_FIELDS {   
+enum enum_CONTEXT_INFO_FIELDS {   
    CIF_MODULEURL =       0x00000001,  
    CIF_FUNCTION =        0x00000002,  
    CIF_FUNCTIONOFFSET =  0x00000004,  

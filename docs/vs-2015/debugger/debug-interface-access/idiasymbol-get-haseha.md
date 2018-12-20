@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_haseha | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaSymbol::get_hasEHa method
 ms.assetid: cb61dfd9-fe69-461c-8185-288440454864
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5c7e0c68b796f84c8e93d6a7f0e9a85387d4105
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82c8b5df7cb1d8b74496260af336aa23d59915db
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474601"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795395"
 ---
 # <a name="idiasymbolgethaseha"></a>IDiaSymbol::get_hasEHa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_haseha](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-haseha).  
-  
 Recupera um sinalizador que especifica se a função contém o tratamento de exceções assíncronas de (estruturada).  
   
 ## <a name="syntax"></a>Sintaxe  

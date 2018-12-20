@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd397420652d5d70429daa7ecea35210194dd37a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 31856366712da0a2287f73906c6e3a5f81f63a00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175950"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857582"
 ---
 # <a name="customize-your-build"></a>Personalizar seu build
 
@@ -34,6 +34,11 @@ Antes do MSBuild versão 15, se você quisesse fornecer uma propriedade nova e p
 
 No entanto, agora você pode adicionar uma nova propriedade a todos os projetos em uma única etapa, definindo-a em um único arquivo chamado *Directory.Build.props* na pasta raiz que contém sua fonte. Quando o MSBuild é executado, o *Microsoft.Common.props* pesquisa sua estrutura de diretório pelo arquivo *Directory.Build.props* (e o *Microsoft.Common.targets* procura o *Directory.Build.targets*). Se ele encontrar um, ele importa a propriedade. *Directory.Build.props* é um arquivo definido pelo usuário que fornece personalizações de projetos em um diretório.
 
+> [!NOTE]
+> Sistemas de arquivos baseados em Linux diferenciam maiúsculas de minúsculas. Verifique se a capitalização do nome do arquivo Directory.Build.props possui uma correspondência exata ou não será detectado durante o processo de compilação.
+>
+> Consulte mais informações sobre [este problema de GitHub](https://github.com/dotnet/core/issues/1991#issue-368441031).
+
 ### <a name="directorybuildprops-example"></a>Exemplo de Directory.Build.props
 
 Por exemplo, se você desejasse habilitar todos os seus projetos para acessar o novo recurso **/deterministic** do Roslyn (que é exposto no destino `CoreCompile` do Roslyn pela propriedade `$(Deterministic)`), poderia fazer o seguinte.
@@ -41,13 +46,13 @@ Por exemplo, se você desejasse habilitar todos os seus projetos para acessar o 
 1. Crie um novo arquivo na raiz do seu repositório chamado *Directory.Build.props*.
 2. Adicione o XML a seguir ao arquivo.
 
-  ```xml
-  <Project>
+   ```xml
+   <Project>
     <PropertyGroup>
       <Deterministic>true</Deterministic>
     </PropertyGroup>
-  </Project>
-  ```
+   </Project>
+   ```
 3. Execute o MSBuild. As importações do *Microsoft.Common.props* e *Microsoft.Common.targets* existentes do projeto encontram o arquivo e o importam.
 
 ### <a name="search-scope"></a>Escopo da pesquisa

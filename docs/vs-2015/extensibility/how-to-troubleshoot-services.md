@@ -1,7 +1,7 @@
 ---
 title: 'Como: solucionar problemas de serviços | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,29 +15,27 @@ ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f0cbad73fe5be46c7371356a0a3746b7e58315ef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8df01dcc2c8e15144f6049148286012bda6ac3f5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462863"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798203"
 ---
 # <a name="how-to-troubleshoot-services"></a>Como: solucionar problemas de serviços
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: solucionar problemas de serviços](https://docs.microsoft.com/visualstudio/extensibility/how-to-troubleshoot-services).  
-  
 Há vários problemas comuns que podem ocorrer ao tentar obter um serviço:  
   
--   O serviço não está registrado com [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- O serviço não está registrado com [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   O serviço for solicitado pelo tipo de interface e não pelo tipo de serviço.  
+- O serviço for solicitado pelo tipo de interface e não pelo tipo de serviço.  
   
--   O VSPackage solicitando o serviço não tem sido colocado no local.  
+- O VSPackage solicitando o serviço não tem sido colocado no local.  
   
--   O provedor de serviço errado é usado.  
+- O provedor de serviço errado é usado.  
   
- Se o serviço solicitado não pode ser obtida, a chamada para <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> retorna null. Você deve sempre testar Null após a solicitação em um serviço:  
+  Se o serviço solicitado não pode ser obtida, a chamada para <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> retorna null. Você deve sempre testar Null após a solicitação em um serviço:  
   
 ```csharp  
 IVsActivityLog log =   

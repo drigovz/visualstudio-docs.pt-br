@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 463bc06bb023e973ac6fe62f5f92a3d9067b2841
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: e31eeaf3061968cfa916d2ec5a0d0e522b9f6ebb
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280591"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159523"
 ---
 # <a name="access-data-in-visual-studio"></a>Acessar dados no Visual Studio
 
@@ -37,32 +37,35 @@ A maioria dos outros SQL e NoSQL banco de dados produtos listados aqui pode ser 
 
 **Microsoft Azure**
 
-||||
-|-|-|-|
-|Banco de dados SQL|Azure Cosmos DB|Armazenamento (blobs, tabelas, filas, arquivos)|
-|SQL Data Warehouse|SQL Server Stretch Database|StorSimple|
-
-E muito mais...
+- Banco de Dados SQL
+- Azure Cosmos DB
+- Armazenamento (blobs, tabelas, filas, arquivos)
+- SQL Data Warehouse
+- SQL Server Stretch Database
+- StorSimple
+- E muito mais...
 
 **SQL**
 
-||||
-|-|-|-|
-|SQL Server 2005-2016, incluindo o Express e LocalDB|Firebird|MariaDB|
-|MySQL|Oracle|PostgreSQL|
-|SQLite|||
-
-E muito mais...
+- SQL Server 2005-2016 (inclui o Express e LocalDB)
+- Firebird
+- MariaDB
+- MySQL
+- Oracle
+- PostgreSQL
+- SQLite
+- E muito mais...
 
 **NoSQL**
 
-||||
-|-|-|-|
-|Apache Cassandra|CouchDB|MongoDB|
-|NDatabase|OrientDB|RavenDB|
-|VelocityDB|||
-
-E muito mais...
+- Apache Cassandra
+- CouchDB
+- MongoDB
+- NDatabase
+- OrientDB |
+- RavenDB
+- VelocityDB
+- E muito mais...
 
 Muitos fornecedores de banco de dados e terceiros dão suporte à integração do Visual Studio pacotes do NuGet. Você pode explorar as ofertas em nuget.org ou por meio do Gerenciador de pacotes NuGet no Visual Studio (**ferramentas** > **Gerenciador de pacotes NuGet** > **gerenciar NuGet Pacotes para a solução**). Outros produtos de banco de dados integram ao Visual Studio como uma extensão. Você pode procurar essas ofertas do Visual Studio Marketplace, navegando até **ferramentas**, **extensões e atualizações** e, em seguida, selecionando **Online** no painel esquerdo das caixa de diálogo. Para obter mais informações, consulte [sistemas de banco de dados compatível para o Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
@@ -73,7 +76,7 @@ Muitos fornecedores de banco de dados e terceiros dão suporte à integração d
 
 Todos os acesso de dados do .NET, incluindo no .NET Core baseia-se no ADO.NET, um conjunto de classes que define uma interface para acessar qualquer tipo de fonte de dados, relacional e não relacionais. O Visual Studio tem várias ferramentas e designers que trabalham com o ADO.NET para ajudá-lo a se conectar a bancos de dados, manipular os dados e apresentá-los para o usuário. A documentação nesta seção descreve como usar essas ferramentas. Você também pode programar diretamente em relação os objetos de comando do ADO.NET. Para obter mais informações sobre como chamar as APIs do ADO.NET diretamente, consulte [ADO.NET](/dotnet/framework/data/adonet/index).
 
-Para obter a documentação de acesso a dados relacionada ao ASP.NET, consulte [trabalhando com dados](http://www.asp.net/web-forms/overview/presenting-and-managing-data) no site do ASP.NET. Para obter um tutorial sobre como usar o Entity Framework com o ASP.NET MVC, consulte [Introdução ao Entity Framework 6 Code First usando MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+Para obter a documentação de acesso a dados relacionada ao ASP.NET, consulte [trabalhando com dados](https://www.asp.net/web-forms/overview/presenting-and-managing-data) no site do ASP.NET. Para obter um tutorial sobre como usar o Entity Framework com o ASP.NET MVC, consulte [Introdução ao Entity Framework 6 Code First usando MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
 Aplicativos universais do Windows Platform (UWP) em c# ou Visual Basic podem usar o SDK do Microsoft Azure para .NET para acessar o armazenamento do Azure e outros serviços do Azure. A classe Windows.Web.HttpClient permite a comunicação com qualquer serviço RESTful. Para obter mais informações, consulte [como se conectar a um servidor HTTP usando o Windows](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
@@ -103,9 +106,9 @@ Aplicativos de C++ que se conectam ao SQL Server devem usar o [Microsoft® ODBC 
 
 Programas do C++ que consumirem serviços REST podem usar o [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
 
-Programas do C++ que funcionam com o armazenamento do Microsoft Azure podem usar o [cliente de armazenamento do Microsoft Azure](http://www.nuget.org/packages/wastorage).
+Programas do C++ que funcionam com o armazenamento do Microsoft Azure podem usar o [cliente de armazenamento do Microsoft Azure](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP).
 
-Modelagem de dados&mdash;Visual Studio não fornece uma camada ORM para C++. [ODB](http://www.codesynthesis.com/products/odb/) é um ORM do código-fonte aberto popular para C++.
+Modelagem de dados&mdash;Visual Studio não fornece uma camada ORM para C++. [ODB](https://www.codesynthesis.com/products/odb/) é um ORM do código-fonte aberto popular para C++.
 
 Para saber mais sobre como conectar aos bancos de dados de aplicativos em C++, consulte [ferramentas de dados do Visual Studio para C++](../data-tools/visual-studio-data-tools-for-cpp.md). Para obter mais informações sobre as tecnologias de acesso a dados herdadas do Visual C++, consulte [acesso a dados](/cpp/data/data-access-in-cpp).
 
@@ -135,7 +138,7 @@ Instale [suporte do Python no Visual Studio](../python/overview-of-python-tools-
 
 [ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/)&mdash;descreve como criar aplicativos de dados que permitem aos desenvolvedores de programas em um modelo conceitual em vez de diretamente em um banco de dados relacional.
 
-[Serviços de dados WCF 4.5](/dotnet/framework/data/wcf/index)&mdash;descreve como usar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] para implantar serviços de dados na web ou em uma intranet que implementam o [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
+[Serviços de dados WCF 4.5](/dotnet/framework/data/wcf/index)&mdash;descreve como usar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] para implantar serviços de dados na web ou em uma intranet que implementam o [Open Data Protocol (OData)](https://www.odata.org/).
 
 [Dados em soluções do Office](../vsto/data-in-office-solutions.md)&mdash;contém links para tópicos que explicam como dados funcionam em soluções do Office. Isso inclui informações sobre programação orientada a esquema, caching de dados e acesso a dados do lado do servidor.
 

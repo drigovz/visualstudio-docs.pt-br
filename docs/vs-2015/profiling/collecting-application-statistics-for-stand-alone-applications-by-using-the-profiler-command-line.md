@@ -1,7 +1,7 @@
 ---
 title: Coletando estatísticas de aplicativo para aplicativos autônomos usando a linha de comando do criador de perfil | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - profilng tools,sampling method
 ms.assetid: be2dbdd0-fc88-45f9-a1d5-bcb4f64e17ad
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b07f38d3051e6912e6496d082d20219b308b8c2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9841911dbb1fc9bb97eb995534af3eaec73d10e9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473921"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756968"
 ---
 # <a name="collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Coletando estatísticas de aplicativo para aplicativos autônomos usando a linha de comando do criador de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Coletando estatísticas do aplicativo para aplicativos autônomos usando a linha de comando do Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line).  
-  
 Esta seção descreve os procedimentos e as opções para coletar estatísticas de desempenho para um aplicativo cliente (autônomo) usando o método de amostragem da linha de comando.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::Continue | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e545e69cf05f5d40555e31546ec8d92d8d7f6e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b90f9bd5fef44ab05cf835f41e274b4ec7695cab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462175"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744315"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProgram2::Continue](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-continue).  
-  
 Continua a execução deste programa de um estado parado. Qualquer estado de execução anterior (por exemplo, uma etapa) é preservado, e o programa inicia a execução novamente.  
   
 > [!NOTE]
@@ -37,13 +35,13 @@ Continua a execução deste programa de um estado parado. Qualquer estado de exe
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Continue(   
+HRESULT Continue(   
    IDebugThread2* pThread  
 );  
 ```  
   
 ```csharp  
-int Continue(   
+int Continue(   
    IDebugThread2 pThread  
 );  
 ```  

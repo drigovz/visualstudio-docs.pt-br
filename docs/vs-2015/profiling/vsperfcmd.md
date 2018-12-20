@@ -1,7 +1,7 @@
 ---
 title: VSPerfCmd | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,21 +17,19 @@ helpviewer_keywords:
 - VSPerfCmd tool
 ms.assetid: 778bc105-7643-46c4-a338-f3620e31125a
 caps.latest.revision: 54
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 946d811792506cbe430aebba52ca2b7ca628253b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e8cd602a005026c8dec4bf5a309d6f04044b960d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587438"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766660"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [VSPerfCmd](https://docs.microsoft.com/visualstudio/profiling/vsperfcmd).  
-  
 A ferramenta **VSPerfCmd.exe** é usada para iniciar e interromper a coleta de dados de desempenho. Ela usa a seguinte sintaxe:  
   
 ```  

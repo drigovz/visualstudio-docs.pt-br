@@ -1,7 +1,7 @@
 ---
 title: Edições sem suporte no Visual Basic, editar e continuar | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ helpviewer_keywords:
 - Edit and Continue [Visual Basic], unsupported method and property body edits
 ms.assetid: 9b8fdc41-a193-49ad-ad72-dfcadd46f4b3
 caps.latest.revision: 31
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 44dea7dd67653a5dbde95f10a331932a9c8c14c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc6e7a5d1d72464849bff20be066ea70e8264623
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461605"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787894"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Edições não suportadas em Editar e Continuar do Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [edições sem suporte no Visual Basic Edit and Continue](https://docs.microsoft.com/visualstudio/debugger/unsupported-edits-in-visual-basic-edit-and-continue).  
-  
 Editar e Continuar permite parar a execução do programa no modo de interrupção, fazer alterações no código de execução e retomar a execução do programa com as alterações recém-inseridas. As edições declarativas de código que afetam a estrutura pública de uma classe são proibidas em geral, mas muitas edições que você pode fazer em um método, corpo da propriedade ou declarações privadas dentro de uma classe são permitidas.  
   
  Se você precisar fazer uma alteração que não tem suporte, deverá parar a depuração, fazer as alterações e iniciar uma nova sessão de depuração.  

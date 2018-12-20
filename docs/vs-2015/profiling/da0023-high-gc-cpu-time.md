@@ -1,7 +1,7 @@
 ---
 title: 'DA0023: alto tempo de CPU no GC | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ f1_keywords:
 - vs.performance.rules.DA0023
 ms.assetid: aba875fe-9cbc-418d-a2c4-6eb47519a5bb
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cdb5e3ea9e01e6444cf05709138984091c36a6d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 6aab85fcead879aa719879cd0d3c53cf9db4ffa3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464270"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806380"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023: tempo de CPU GC alto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DA0023: tempo de CPU de GC alto](https://docs.microsoft.com/visualstudio/profiling/da0023-high-gc-cpu-time).  
-  
 Id da regra | DA0023 |  
 | Categoria de |. Uso do .NET Framework |  
 | Método de criação de perfil | Todos os |  

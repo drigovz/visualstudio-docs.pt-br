@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80e76fd7677eab8c56827dcdbaeaf42ee72c5c28
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081778"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120377"
 ---
 # <a name="msbuild-reference"></a>Referência do MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] é o sistema de build para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Os links a seguir levam a tópicos que contêm informações de referência [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -71,25 +71,24 @@ ms.locfileid: "39081778"
  Lista os caracteres que podem ter “escapado” para serem interpretados corretamente. Uma sequência de escape é uma série de caracteres que indica que o que segue se trata de uma interpretação alternativa.  
   
 ## <a name="see-also"></a>Consulte também  
- [Visão geral do MSBuild ](../msbuild/msbuild.md) Apresenta o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e fornece links para tópicos que explicam como usá-lo para criar projetos.  
+ [Visão geral do MSBuild](../msbuild/msbuild.md)     
+ Apresenta o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e fornece links para tópicos que explicam como usá-lo para criar projetos.  
   
- <xref:Microsoft.Build.Conversion>  
+ [Microsoft.Build.Conversion](https://docs.microsoft.com/dotnet/api/microsoft.build.conversion)  
  Contém a referência de namespace Conversion.  
   
- <xref:Microsoft.Build.Evaluation>  
+ [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)  
  Contém a referência de namespace Evaluation.  
   
- <xref:Microsoft.Build.Execution>  
+ [Microsoft.Build.Execution](https://docs.microsoft.com/dotnet/api/microsoft.build.execution)  
  Contém a referência de namespace Execution.  
   
- <xref:Microsoft.Build.Framework>  
+ [Microsoft.Build.Framework](https://docs.microsoft.com/dotnet/api/microsoft.build.framework)  
  Contém a referência de namespace Framework.  
   
- <xref:Microsoft.Build.Logging>  
- Contém a referência de namespace Logging.  
+ [Microsoft.Build.Logging](https://docs.microsoft.com/dotnet/api/microsoft.build.logging) Contém a referência de namespace Logging.  
   
- <xref:Microsoft.Build.Tasks>  
+ [Microsoft.Build.Tasks](https://docs.microsoft.com/dotnet/api/microsoft.build.tasks)  
  Contém a referência de namespace Tasks.  
   
- <xref:Microsoft.Build.Utilities>  
- Contém a referência de namespace Utilities.
+ [Microsoft.Build.Utilities](https://docs.microsoft.com/dotnet/api/microsoft.build.utilities) Contém a referência ao namespace Utilities.

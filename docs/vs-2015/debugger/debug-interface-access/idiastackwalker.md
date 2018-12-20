@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalker | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaStackWalker interface
 ms.assetid: 4a61a22a-9cf8-4ea1-9e6e-b42f96872d40
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a86cc22a26d553c0239beedb011b3ecb9d79f2f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1727a37acfde25dbd6f6ebb836196a6d9f709298
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467996"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756530"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaStackWalker](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackwalker).  
-  
 Fornece métodos para fazer uma pilha de percorrer usando as informações no arquivo. PDB.  
   
 ## <a name="syntax"></a>Sintaxe  

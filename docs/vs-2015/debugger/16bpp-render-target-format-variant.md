@@ -1,7 +1,7 @@
 ---
 title: Variante de formato de destino de renderização de 16 bpp | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbf7ee89e18fdea39c88f35e3adf146db53a87dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf00bf536e5f1ee140a818ee59c66703906860f0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466959"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727635"
 ---
 # <a name="16bpp-render-target-format-variant"></a>Variante de formato de destino de renderização 16bpp
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [formato de destino 16 bpp renderizar Variant](https://docs.microsoft.com/visualstudio/debugger/graphics/16bpp-render-target-format-variant).  
-  
 Define o formato de pixel como DXGI_FORMAT_B5G6R5_UNORM para todos os destinos de renderização e buffers de fundo.  
   
 ## <a name="interpretation"></a>Interpretação  

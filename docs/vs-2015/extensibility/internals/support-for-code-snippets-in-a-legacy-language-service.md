@@ -1,7 +1,7 @@
 ---
 title: Suporte a trechos de código em um serviço de linguagem herdado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83fcde82b2b4b509745c8a81045f01b822620fce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf26d48c541806a1dd65a0ffb4a8e3e974b11db4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461960"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795759"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Suporte para snippets de código em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [suporte para trechos de código em um serviço de linguagem herdado](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-code-snippets-in-a-legacy-language-service).  
-  
 Um trecho de código é um trecho de código que é inserido no arquivo de origem. O trecho de código em si é um modelo baseado em XML com um conjunto de campos. Esses campos são realçados depois que o trecho de código é inserido e pode ter valores diferentes dependendo do contexto no qual o trecho de código é inserido. Imediatamente depois de inserir o trecho de código, o serviço de linguagem pode formatar o trecho de código.  
   
  O trecho de código é inserido em um modo de edição especial que permite que os campos do trecho de código para ser navegado usando a tecla TAB. Os campos podem dar suporte a menus suspensos de estilo de IntelliSense. O usuário confirma o trecho de código ao arquivo de origem, digitando o ENTER ou a tecla ESC. Para saber mais sobre os trechos de código, consulte [trechos de código](../../ide/code-snippets.md).  
@@ -337,15 +335,15 @@ namespace TestLanguagePackage
   
  Quando o serviço de linguagem obtém o nome do atalho, ele chama o <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> método para obter o título do trecho de código de nome de arquivo e código. O serviço de linguagem, em seguida, chama o <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> método no <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe para inserir o trecho de código. Os seguintes métodos são chamados pelo Visual Studio na ordem fornecida no <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe durante o processo de inserir o trecho de código:  
   
-1.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-2.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+2. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-3.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+3. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
- Para obter mais informações sobre como obter uma lista de trechos de código instalado para seu serviço de linguagem, consulte [instruções passo a passo: obtendo uma lista de instalados trechos de código (implementação herdada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+   Para obter mais informações sobre como obter uma lista de trechos de código instalado para seu serviço de linguagem, consulte [instruções passo a passo: obtendo uma lista de instalados trechos de código (implementação herdada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
 ## <a name="implementing-the-expansionfunction-class"></a>Implementando a classe ExpansionFunction  
  Uma função de expansão é uma função nomeada que é inserida em um modelo de trecho de código e retorna um ou mais valores sejam colocados em um campo. Para dar suporte a funções de expansão em seu serviço de linguagem, você deve derivar uma classe a partir de <xref:Microsoft.VisualStudio.Package.ExpansionFunction> de classe e implementar o <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> método. Em seguida, você deve substituir o <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> método no <xref:Microsoft.VisualStudio.Package.LanguageService> classe para retornar uma nova instanciação da sua versão do <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe para cada função de expansão que você oferece suporte. Se você oferecer suporte a uma lista de valores possíveis de uma função de expansão, você também deve substituir a <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> método no <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe para retornar uma lista desses valores.  

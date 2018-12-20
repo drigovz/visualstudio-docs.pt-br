@@ -1,7 +1,7 @@
 ---
 title: Criar diagramas de camada do seu código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - constraints, architectural
 ms.assetid: 58c3ea71-2dbc-4963-bf82-40f1924cf973
 caps.latest.revision: 64
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd2ab2d5041238a59526be5d5f54968d7b1fae90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0a1c5af9394f36f7f89a20b711657a3ca76e8d1f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475409"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727294"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Criar diagramas de camada por meio de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,9 +111,9 @@ Para visualizar a arquitetura de alto nível, a lógica do seu sistema de softwa
 > [!NOTE]
 >  As dependências não podem sofrer engenharia reversa para determinados tipos de artefatos. Por exemplo, nenhuma dependência sofrerá engenharia reversa de ou para uma camada vinculada a um arquivo de texto. Para ver quais artefatos têm dependências que você pode fazer engenharia reversa, abra o menu de atalho para uma ou várias camadas e, em seguida, escolha **Exibir Links**. Na **Gerenciador de camadas**, examine o **dá suporte à validação** coluna. As dependências não sofrerão engenharia reversa para artefatos para o qual essa coluna mostra **falsos**.  
   
--   Selecione uma ou várias camadas, abra o menu de atalho para uma camada selecionada e, em seguida, escolha **gerar dependências**.  
+- Selecione uma ou várias camadas, abra o menu de atalho para uma camada selecionada e, em seguida, escolha **gerar dependências**.  
   
- Normalmente, você verá algumas dependências que não devem existir. É possível editar essas dependências para alinhá-las com o design desejado.  
+  Normalmente, você verá algumas dependências que não devem existir. É possível editar essas dependências para alinhá-las com o design desejado.  
   
 ##  <a name="EditDependencies"></a> Editar camadas e dependências para mostrar o design desejado  
  Para descrever as alterações que você pretende fazer no sistema ou na arquitetura desejada, edite o diagrama de camada:  

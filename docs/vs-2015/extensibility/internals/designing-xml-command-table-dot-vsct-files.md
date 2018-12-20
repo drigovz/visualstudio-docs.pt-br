@@ -1,7 +1,7 @@
 ---
 title: Criando tabela de comando XML (. Arquivos VSCT) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b72438998b75fcebc7cccae082e3e9db4ac13b69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 6c7a4e07c45c5d651af057e1eb33c23d37601cb3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464996"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762816"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Criando tabela de comando XML (. Arquivos de VSCT)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar tabela de comando de XML (. VSCT) arquivos](https://docs.microsoft.com/visualstudio/extensibility/internals/designing-xml-command-table-dot-vsct-files).  
-  
 Um arquivo de tabela (. VSCT) do comando XML descreve o layout e aparência de itens de comando para um VSPackage. Itens de comando incluem caixas de combinação, botões, menus, barras de ferramentas e grupos de itens de comando. Este tópico descreve arquivos de tabela de comandos XML, como eles afetam os menus e itens de comando e como criá-los.  
   
 ## <a name="commands-menus-groups-and-the-vsct-file"></a>Comandos, Menus, grupos e o arquivo. VSCT  
@@ -39,41 +37,41 @@ Um arquivo de tabela (. VSCT) do comando XML descreve o layout e aparência de i
 ## <a name="differences-between-ctc-and-vsct-files"></a>Diferenças entre arquivos. ctc e. VSCT  
  Enquanto o significado por trás de marcas XML em um arquivo. VSCT é os mesmos, como aqueles em que o agora preterido o formato de arquivo. CTC, sua implementação é um pouco diferente.  
   
--   O novo  **\<extern >** marca é onde você pode referenciar outros arquivos. h para ser compilado, como aquelas para o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] barra de ferramentas.  
+- O novo  **\<extern >** marca é onde você pode referenciar outros arquivos. h para ser compilado, como aquelas para o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] barra de ferramentas.  
   
--   Embora o suporte a arquivos. VSCT a **/include** instrução, como arquivos. CTC, ele também apresenta uma nova \< **Importar >** elemento. A diferença é que **/include** traz **todos os** da informação, mas \< **Importar >** traz apenas os nomes.  
+- Embora o suporte a arquivos. VSCT a **/include** instrução, como arquivos. CTC, ele também apresenta uma nova \< **Importar >** elemento. A diferença é que **/include** traz **todos os** da informação, mas \< **Importar >** traz apenas os nomes.  
   
--   Enquanto os arquivos. ctc exigem um arquivo de cabeçalho no qual você define suas diretivas de pré-processador, um não é necessário para os arquivos. VSCT. Em vez disso, colocar suas diretivas na tabela de símbolo, localizada na  **\<símbolo >** elementos, localizados na parte inferior do arquivo. VSCT.  
+- Enquanto os arquivos. ctc exigem um arquivo de cabeçalho no qual você define suas diretivas de pré-processador, um não é necessário para os arquivos. VSCT. Em vez disso, colocar suas diretivas na tabela de símbolo, localizada na  **\<símbolo >** elementos, localizados na parte inferior do arquivo. VSCT.  
   
--   recurso de arquivos. VSCT de um  **\<anotação >** marca, que permite que você insira todas as informações que desejar, como anotações ou até mesmo as imagens.  
+- recurso de arquivos. VSCT de um  **\<anotação >** marca, que permite que você insira todas as informações que desejar, como anotações ou até mesmo as imagens.  
   
--   Valores são armazenados como atributos no item.  
+- Valores são armazenados como atributos no item.  
   
--   Sinalizadores de comando podem ser armazenadas individualmente ou empilhados.  IntelliSense, no entanto, não funciona em sinalizadores de comando empilhadas. Para obter mais informações sobre os sinalizadores de comando, consulte o [elemento Command Flag](../../extensibility/command-flag-element.md).  
+- Sinalizadores de comando podem ser armazenadas individualmente ou empilhados.  IntelliSense, no entanto, não funciona em sinalizadores de comando empilhadas. Para obter mais informações sobre os sinalizadores de comando, consulte o [elemento Command Flag](../../extensibility/command-flag-element.md).  
   
--   Você pode especificar vários tipos, como listas suspensas de divisão, combos, etc.  
+- Você pode especificar vários tipos, como listas suspensas de divisão, combos, etc.  
   
--   GUIDs não validar.  
+- GUIDs não validar.  
   
--   Cada elemento de interface do usuário tem uma cadeia de caracteres que representa o texto que é exibido com ele.  
+- Cada elemento de interface do usuário tem uma cadeia de caracteres que representa o texto que é exibido com ele.  
   
--   Pai é opcional. Se omitido, o valor "Desconhecido" grupo"é usado.  
+- Pai é opcional. Se omitido, o valor "Desconhecido" grupo"é usado.  
   
--   O argumento de ícone é opcional.  
+- O argumento de ícone é opcional.  
   
--   A seção de bitmap – o mesmo que um. ctc de arquivo, exceto que agora você pode especificar um nome de arquivo por meio de href que será obtido pelo compilador vsct.exe em tempo de compilação.  
+- A seção de bitmap – o mesmo que um. ctc de arquivo, exceto que agora você pode especificar um nome de arquivo por meio de href que será obtido pelo compilador vsct.exe em tempo de compilação.  
   
--   ResID – a ID de recurso de bitmap antigo pode ser usada e ainda funciona da mesma forma como em arquivos. ctc.  
+- ResID – a ID de recurso de bitmap antigo pode ser usada e ainda funciona da mesma forma como em arquivos. ctc.  
   
--   HRef – um novo método que permite que você especifique um nome de arquivo para o recurso de bitmap. Ele pressupõe que são usados, portanto, você pode omitir a seção usada. Primeiro, o compilador pesquisará para recursos locais para o arquivo, em seguida, em qualquer compartilhamento de rede e todos os recursos definidos pelo comutador/i.  
+- HRef – um novo método que permite que você especifique um nome de arquivo para o recurso de bitmap. Ele pressupõe que são usados, portanto, você pode omitir a seção usada. Primeiro, o compilador pesquisará para recursos locais para o arquivo, em seguida, em qualquer compartilhamento de rede e todos os recursos definidos pelo comutador/i.  
   
--   KeyBinding – Você não precisa especificar um emulador. Se você especificar um, o compilador assumirá que o editor e o emulador são os mesmos.  
+- KeyBinding – Você não precisa especificar um emulador. Se você especificar um, o compilador assumirá que o editor e o emulador são os mesmos.  
   
--   Keychord – foi descartada. O novo formato é Key1, Mod1, Key2, Mod2.  Você pode especificar um caractere, hexadecimal ou constante VK.  
+- Keychord – foi descartada. O novo formato é Key1, Mod1, Key2, Mod2.  Você pode especificar um caractere, hexadecimal ou constante VK.  
   
- O novo compilador, vsct.exe, compila arquivos. ctc e. VSCT. O compilador ctc.exe antigo, no entanto, não reconhece nem compilar arquivos. VSCT.  
+  O novo compilador, vsct.exe, compila arquivos. ctc e. VSCT. O compilador ctc.exe antigo, no entanto, não reconhece nem compilar arquivos. VSCT.  
   
- Você pode usar o compilador vsct.exe para converter um arquivo CTO já existente em um arquivo. VSCT. Para obter mais informações sobre isso, consulte [como: criar um. Arquivo VSCT de um existente. Arquivo CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+  Você pode usar o compilador vsct.exe para converter um arquivo CTO já existente em um arquivo. VSCT. Para obter mais informações sobre isso, consulte [como: criar um. Arquivo VSCT de um existente. Arquivo CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
 ## <a name="the-vsct-file-elements"></a>Os elementos do arquivo. VSCT  
  A tabela de comando tem a hierarquia e os elementos a seguir:  

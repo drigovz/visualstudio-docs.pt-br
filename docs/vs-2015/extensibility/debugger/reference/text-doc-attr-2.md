@@ -1,7 +1,7 @@
 ---
 title: TEXT_DOC_ATTR_2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2333b33b-042b-4ac6-9ebe-e66f95f52f51
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 80263e50de833942c42f7762e435c75e3dfc821e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fa2a2061000a20999b11bbc1089bbd43fb819295
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466706"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755073"
 ---
 # <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [TEXT_DOC_ATTR_2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/text-doc-attr-2).  
-  
 Descreve os atributos de um documento.  
   
 ## <a name="syntax"></a>Sintaxe  

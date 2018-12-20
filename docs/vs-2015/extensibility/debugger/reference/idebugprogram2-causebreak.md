@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::CauseBreak | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,25 +17,23 @@ ms.assetid: 07d353fc-68ab-4297-a18f-3d3c7a80e121
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a1bfd8c2094c6ef9d961eb5375aae7cf5c6d13da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0ace26055a9d82ff3907003168becdbd00632a7d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463270"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782746"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProgram2::CauseBreak](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-causebreak).  
-  
 Solicitações que o programa parar a execução a próxima hora em que uma das suas tentativas de threads para executar.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT CauseBreak(   
-   void   
+HRESULT CauseBreak(   
+   void   
 );  
 ```  
   

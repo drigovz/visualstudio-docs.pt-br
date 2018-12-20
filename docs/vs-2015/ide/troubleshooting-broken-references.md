@@ -1,7 +1,7 @@
 ---
 title: Solucionando problemas de referências desfeitas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,31 +20,29 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6cee6fcd845630b7f980fab602193f845aab458c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae619be498fcb1c48bbea8b706f0b0b5fa4db54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465680"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950661"
 ---
 # <a name="troubleshooting-broken-references"></a>Solucionando Problemas de Referências Quebradas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [solucionar problemas de referências desfeitas](https://docs.microsoft.com/visualstudio/ide/troubleshooting-broken-references).  
-  
 Se o aplicativo tentar usar uma referência desfeita, um erro de exceção será gerado. A incapacidade de localizar o componente referenciado é o gatilho primário do erro, mas existem várias situações em que uma referência pode ser considerada desfeita. Essas instâncias são mostradas na seguinte lista:  
   
--   O caminho de referência do projeto está incorreto ou incompleto.  
+- O caminho de referência do projeto está incorreto ou incompleto.  
   
--   O arquivo que está sendo referenciado foi excluído.  
+- O arquivo que está sendo referenciado foi excluído.  
   
--   O arquivo que está sendo referenciado foi renomeado.  
+- O arquivo que está sendo referenciado foi renomeado.  
   
--   A conexão de rede ou a autenticação falhou.  
+- A conexão de rede ou a autenticação falhou.  
   
--   A referência indica um componente COM que não está instalado no computador.  
+- A referência indica um componente COM que não está instalado no computador.  
   
- Veja a seguir as soluções para esses problemas.  
+  Veja a seguir as soluções para esses problemas.  
   
 > [!NOTE]
 >  Os arquivos em assemblies são referenciados com caminhos absolutos no arquivo de projeto. Portanto, é possível que os usuários que trabalham em um ambiente com vários desenvolvedores tenham um assembly referenciado ausente no ambiente local. Para evitar esses erros, nesses casos, é melhor adicionar referências projeto a projeto. Para obter mais informações, consulte [NIB: Como adicionar ou remover referências usando a caixa de diálogo Adicionar Referência](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) e [Programação com assemblies](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  

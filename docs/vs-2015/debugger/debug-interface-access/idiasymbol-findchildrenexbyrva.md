@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::findChildrenExByRVA | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::findChildrenExByRVA
 ms.assetid: cbc57c6c-7d64-4469-a114-1dd6671e5ec5
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae091a82542b9ed3f32b93a95995cdb0fc2cfadd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 001804a8e47f7870c61d869751165fc054997223
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466128"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736319"
 ---
 # <a name="idiasymbolfindchildrenexbyrva"></a>IDiaSymbol::findChildrenExByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSymbol::findChildrenExByRVA](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-findchildrenexbyrva).  
-  
 Recupera os filhos do símbolo que são válidos em um endereço relativo virtual (RVA) especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findChildrenExByRVA (   
+HRESULT findChildrenExByRVA (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  

@@ -1,7 +1,7 @@
 ---
 title: 'Idiastackwalkframe:: Searchforreturnaddressstart | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaStackWalkFrame::searchForReturnAddressStart method
 ms.assetid: 47660b9b-6e4f-4dfa-88ab-63dce28f7412
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef077fcea728f8440ca07ae316fdc87ea5b88089
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4156e22e32eaa5d79da0df8942a0ef082eb6c41
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466662"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755110"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiastackwalkframe:: Searchforreturnaddressstart](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart).  
-  
 Pesquisa o quadro de pilha especificada para um endereço de retorno em ou próximo o endereço especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT searchForReturnAddressStart (   
+HRESULT searchForReturnAddressStart (   
    IDiaFrameData* frame,  
    ULONGLONG      startAddress,  
    ULONGLONG*     returnAddress  

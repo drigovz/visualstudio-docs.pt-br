@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramDestroyEventFlags2::GetFlags | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: dd53bd0c-459a-4077-ba81-780defb71e87
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c63e11a9185ccfbf67fe97a38c541d9e299d8b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4a046769c0ee4533e4717cca715412da0d528c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472855"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789221"
 ---
 # <a name="idebugprogramdestroyeventflags2getflags"></a>IDebugProgramDestroyEventFlags2::GetFlags
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProgramDestroyEventFlags2::GetFlags](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags).  
-  
 Recupera o programa destruir sinalizadores.  
   
 ## <a name="syntax"></a>Sintaxe  

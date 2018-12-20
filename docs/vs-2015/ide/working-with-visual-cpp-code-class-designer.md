@@ -1,7 +1,7 @@
 ---
 title: Trabalhando com código do Visual C++ (Designer de Classe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 329125ffd1c577bb767fb3661331eeadeacada92
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f777c9bdd0cf2ea300d2df8e7cbfbc8900c25c2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475235"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929524"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Trabalhando com código do Visual C++ (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [trabalhando com código do Visual C++ (Designer de classe)](https://docs.microsoft.com/visualstudio/ide/working-with-visual-cpp-code-class-designer).  
-  
 O Designer de Classe exibe uma superfície de design visual chamada um *diagrama de classe* que fornece uma representação visual dos elementos de código no projeto. É possível usar diagramas de classe para criar e visualizar classes e outros tipos em um projeto.  
   
  O Designer de Classe dá suporte aos seguintes elementos de código C++:  
@@ -70,23 +68,23 @@ O Designer de Classe exibe uma superfície de design visual chamada um *diagrama
 ### <a name="type-resolution-issues"></a>Problemas de resolução de tipo  
  O Designer de Classe poderá não resolver tipos pelos seguintes motivos:  
   
--   O tipo está em um projeto ou assembly que não é referenciado no projeto que contém o diagrama de classe. Para corrigir esse erro, adicione uma referência ao projeto ou ao assembly que contém o tipo. Para obter mais informações, consulte [NIB: Como adicionar ou remover referências usando a caixa de diálogo Adicionar Referência](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- O tipo está em um projeto ou assembly que não é referenciado no projeto que contém o diagrama de classe. Para corrigir esse erro, adicione uma referência ao projeto ou ao assembly que contém o tipo. Para obter mais informações, consulte [NIB: Como adicionar ou remover referências usando a caixa de diálogo Adicionar Referência](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
--   O tipo não está no escopo correto e, portanto, o Designer de Classe não pode localizá-lo. Verifique se o código não tem uma declaração `using`, `imports` ou `#include` ausente. Além disso, verifique se você não moveu o tipo (ou um tipo relacionado) para fora do namespace em que ele estava originalmente localizado.  
+- O tipo não está no escopo correto e, portanto, o Designer de Classe não pode localizá-lo. Verifique se o código não tem uma declaração `using`, `imports` ou `#include` ausente. Além disso, verifique se você não moveu o tipo (ou um tipo relacionado) para fora do namespace em que ele estava originalmente localizado.  
   
--   O tipo não existe (ou foi comentado). Para corrigir esse erro, verifique se você não comentou nem excluiu o tipo.  
+- O tipo não existe (ou foi comentado). Para corrigir esse erro, verifique se você não comentou nem excluiu o tipo.  
   
--   O tipo está localizado em uma biblioteca referenciada por uma diretiva #import. Uma possível solução alternativa é adicionar o código gerado (o arquivo .tlh) manualmente a uma diretiva #include no arquivo de cabeçalho.  
+- O tipo está localizado em uma biblioteca referenciada por uma diretiva #import. Uma possível solução alternativa é adicionar o código gerado (o arquivo .tlh) manualmente a uma diretiva #include no arquivo de cabeçalho.  
   
- O erro que provavelmente você receberá para um problema de resolução de tipo é **O código não pôde ser encontrado em uma ou mais formas no diagrama de classe '\<element>'**. Essa mensagem de erro não indica necessariamente que o código tem um erro. Ela indica apenas que o designer de classe não pôde exibir o código. Tente as medidas a seguir.  
+  O erro que provavelmente você receberá para um problema de resolução de tipo é **O código não pôde ser encontrado em uma ou mais formas no diagrama de classe '\<element>'**. Essa mensagem de erro não indica necessariamente que o código tem um erro. Ela indica apenas que o designer de classe não pôde exibir o código. Tente as medidas a seguir.  
   
--   Verifique se o tipo existe. Verifique se você não comentou nem excluiu o código-fonte acidentalmente.  
+- Verifique se o tipo existe. Verifique se você não comentou nem excluiu o código-fonte acidentalmente.  
   
--   Verifique se o Designer de Classe dá suporte ao tipo inserido. Consulte [Limitações de elementos de código C++](#limitations).  
+- Verifique se o Designer de Classe dá suporte ao tipo inserido. Consulte [Limitações de elementos de código C++](#limitations).  
   
--   Tente resolver o tipo. O tipo pode estar em um projeto ou assembly que não é referenciado no projeto que contém o diagrama de classe. Para corrigir esse erro, adicione uma referência ao projeto ou ao assembly que contém o tipo. Para obter mais informações, consulte [NIB: Como adicionar ou remover referências usando a caixa de diálogo Adicionar Referência](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Tente resolver o tipo. O tipo pode estar em um projeto ou assembly que não é referenciado no projeto que contém o diagrama de classe. Para corrigir esse erro, adicione uma referência ao projeto ou ao assembly que contém o tipo. Para obter mais informações, consulte [NIB: Como adicionar ou remover referências usando a caixa de diálogo Adicionar Referência](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
--   Verifique se o tipo está no escopo correto para que o Designer de Classe possa localizá-lo. Verifique se o código não tem uma declaração `using`, `imports` ou `#include` ausente. Além disso, verifique se você não moveu o tipo (ou um tipo relacionado) para fora do namespace em que ele estava originalmente localizado.  
+- Verifique se o tipo está no escopo correto para que o Designer de Classe possa localizá-lo. Verifique se o código não tem uma declaração `using`, `imports` ou `#include` ausente. Além disso, verifique se você não moveu o tipo (ou um tipo relacionado) para fora do namespace em que ele estava originalmente localizado.  
   
 ### <a name="troubleshooting-other-error-messages"></a>Solucionando problemas de outras mensagens de erro  
  Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos do Microsoft Developer Network (MSDN). Visite o [Fórum do Designer de Classe do Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).  

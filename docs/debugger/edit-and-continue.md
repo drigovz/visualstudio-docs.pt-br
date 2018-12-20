@@ -1,6 +1,6 @@
 ---
-title: Edite o código e continuar a depuração no Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Edite o código e continuar a depuração | Microsoft Docs
+ms.custom: seodec18
 ms.date: 05/31/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -22,21 +22,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da5d7eb9f3ae32097f46c5eb0436297eaa602fed
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 28f07d9a8f05ab63e6b945fd590fdf9fa576ca48
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284003"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048575"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Edite o código e continuar a depuração no Visual Studio (c#, VB, C++)
 Editar e Continuar é um recurso que economiza tempo e permite que você faça alterações no seu código-fonte enquanto o programa está no modo de interrupção. Quando você retoma a execução do programa escolhendo um comando de execução, como **Continue** ou **etapa**, editar e continuar automaticamente aplica as alterações de código com algumas limitações. Isso permite que você faça alterações no código durante uma sessão de depuração, em vez de ter que parar, recompilar o programa inteiro e reiniciar a sessão de depuração.  
   
  Esta seção inclui os seguintes tópicos:   
   
- [Como habilitar e desabilitar Editar e Continuar](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
+ [Como: Habilitar e desabilitar Editar e Continuar](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
- [Como parar as alterações de código](../debugger/how-to-stop-code-changes.md)   
+ [Como: Parar alterações de código](../debugger/how-to-stop-code-changes.md)   
   
  [Editar e continuar (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
   

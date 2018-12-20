@@ -5,7 +5,6 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
 - VS.ToolsOptionsPages.Environment.Fonts_And_Colors
 - VS.Environment.Fonts And Colors
@@ -28,23 +27,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d25ff0f0439d778d871cb2762db83e9261deaf94
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7f15ac427d3e6fd6ddf7988c82ad46ffe537d299
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954223"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389246"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
+
 A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). É possível acessar essa caixa de diálogo clicando em **Ferramentas / Opções** e, em seguida, selecionando **Ambiente / Fontes e Cores**. Se essa página não aparecer na lista, selecione **Mostrar todas as configurações** na caixa de diálogo **Opções**.
 
-> [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+Alterações do esquema de cores não terão efeito durante a sessão em que foram feitas. É possível avaliar alterações de cores abrindo outra instância do Visual Studio e produzindo as condições nas quais você espera aplicar essas alterações.
 
+**Mostrar configurações de**
 
- Alterações do esquema de cores não terão efeito durante a sessão em que foram feitas. É possível avaliar alterações de cores abrindo outra instância do Visual Studio e produzindo as condições nas quais você espera aplicar essas alterações.
-
- **Mostrar configurações de** Lista todos os elementos da interface do usuário para os quais é possível alterar os esquemas de fontes e cores. Após selecionar um item da lista, você pode personalizar as configurações de cor do item selecionado em **Exibir itens**.
+Lista todos os elementos da interface do usuário para os quais é possível alterar os esquemas de fontes e cores. Após selecionar um item da lista, você pode personalizar as configurações de cor do item selecionado em **Exibir itens**.
 
 -   **Editor de Texto**
 
@@ -55,7 +53,7 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
      Alterações nas configurações de exibição de cor, tamanho e estilo da fonte da Impressora afetam a aparência do texto em documentos impressos.
 
     > [!NOTE]
-    >  Conforme for necessário, é possível selecionar uma fonte padrão para impressão diferente daquela usada para exibição no editor de texto. Isso pode ser útil ao imprimir códigos que contêm caracteres de byte único e de caractere duplo.
+    > Conforme for necessário, é possível selecionar uma fonte padrão para impressão diferente daquela usada para exibição no editor de texto. Isso pode ser útil ao imprimir códigos que contêm caracteres de byte único e de caractere duplo.
 
 -   **Preenchimento de Declaração**
 
@@ -74,21 +72,28 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
      Alterações nas configurações de exibição de cor, tamanho e estilo da fonte deste item afetam a aparência do texto nas janelas de ferramentas que têm painéis de saída no IDE. Por exemplo, Janela de Saída, janela Comando, janela Imediato etc.
 
     > [!NOTE]
-    >  Alterações no texto de itens **[Todas as janelas de ferramentas de texto]** não terão efeito durante a sessão em que forem feitas. É possível avaliar tais alterações abrindo outra instância do Visual Studio.
+    > Alterações no texto de itens **[Todas as janelas de ferramentas de texto]** não terão efeito durante a sessão em que forem feitas. É possível avaliar tais alterações abrindo outra instância do Visual Studio.
 
-**Usar Padrões** Redefine os valores de fonte e cor do item de lista selecionado em **Mostrar configurações de**. O botão **Usar** é exibido quando outros esquemas de exibição estão disponíveis para seleção. Por exemplo, é possível escolher entre dois esquemas para a impressora.
+**Usar Padrões**
 
-**Fonte (o tipo negrito indica fontes de largura fixa)** Lista todas as fontes instaladas em seu sistema. Quando o menu suspenso aparece pela primeira vez, a fonte atual do elemento selecionado no campo **Mostrar configurações de** é realçada. Fontes fixas – que são mais fáceis de alinhar no editor – aparecem em negrito.
+Redefine os valores de fonte e cor do item de lista selecionado em **Mostrar configurações de**. O botão **Usar** é exibido quando outros esquemas de exibição estão disponíveis para seleção. Por exemplo, é possível escolher entre dois esquemas para a impressora.
 
-**Tamanho** Lista os tamanhos de ponto disponíveis para a fonte realçada. Alterar o tamanho da fonte afeta todos os **Itens de exibição** para a seleção **Mostrar configurações de**.
+**Fonte (o negrito indica fontes de largura fixa)**
 
-**Exibir itens** Lista os itens para os quais você pode modificar a cor de primeiro plano e a cor da tela de fundo.
+Lista todas as fontes instaladas em seu sistema. Quando o menu suspenso aparece pela primeira vez, a fonte atual do elemento selecionado no campo **Mostrar configurações de** é realçada. Fontes fixas – que são mais fáceis de alinhar no editor – aparecem em negrito.
+
+**Size**
+
+Listas tamanhos de pontos disponíveis para a fonte realçada. Alterar o tamanho da fonte afeta todos os **Itens de exibição** para a seleção **Mostrar configurações de**.
+
+**Exibir itens**
+
+Lista os itens cuja cor de primeiro plano e a cor da tela de fundo você pode modificar.
 
 > [!NOTE]
 > **Texto sem Formatação** é o item de exibição padrão. Sendo assim, propriedades atribuídas a **PlainText** serão substituídas por propriedades atribuídas a outros itens de exibição. Por exemplo, se você atribuir a cor azul a **PlainText** e a cor verde a **Identificador**, todos os identificadores serão exibidos em verde. Neste exemplo, as propriedades de **Identificador** substituem as propriedades em **PlainText**.
 
-
- Alguns dos itens de exibição incluem:
+Alguns dos itens de exibição incluem:
 
 |Item de exibição|Descrição|
 |------------------|-----------------|
@@ -115,8 +120,8 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
 |**Ponto de Interrupção – Mapeado (Aviso)**|Especifica a cor de realce para instruções ou linhas que contêm pontos de interrupção mapeados em estado de aviso. Aplicável para a depuração de ASP ou ASP.NET somente se pontos de interrupção no nível da instrução estiverem ativos ou se a opção **Realçar a linha de origem inteira para pontos de interrupção e a declaração atual** for selecionada em [Geral, Depuração, caixa de diálogo Opções](../../debugger/general-debugging-options-dialog-box.md).|
 |**Palavras-chave de usuário do C/C++**|Uma constante dentro de um arquivo de código específico definido por meio da diretiva `#define`.|
 |**Retorno de Chamada**|Especifica a cor de realce para instruções ou linhas de origem que indicam pontos de retorno de chamada quando o contexto é alternado para um registro de ativação não superior durante a depuração.|
-|**Campo dependente de trecho de código**|Um campo que será atualizado quando o campo editável atual for modificado.|
-|**Campo de Trecho de Código**|Campo editável quando um trecho de código está ativo.|
+|**Campo dependente de snippet de código**|Um campo que será atualizado quando o campo editável atual for modificado.|
+|**Campo de Snippet de Código**|Campo editável quando um snippet de código está ativo.|
 |**Texto Recolhível**|Um bloco de texto ou código que pode ser colocado e removido da exibição no Editor de Código.|
 |**Comentário**|Comentários sobre o código.|
 |**Erro do Compilador**|Rabiscos azuis no editor que indicam um erro do compilador.|
@@ -143,7 +148,7 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
 |**Palavra-chave**|Palavras-chave da linguagem específica que são reservadas. Por exemplo: classe e namespace.|
 |**Endereço de Memória**|A cor do texto usado para exibir a coluna de endereço dentro da janela **Memória**.|
 |**Memória Alterada**|A cor do texto usado para exibir dados alterados dentro da janela **Memória**.|
-|**Dados da Memória**|A cor do texto usado para exibir dados dentro da janela **Memória**.|
+|**Dados da Memória**|A cor do texto usada para exibir dados dentro da janela **Memória**.|
 |**Memória Ilegível**|A cor do texto usado para exibir áreas de memória ilegível dentro da janela **Memória**.|
 |**Número**|Um número no código que representa um valor numérico real.|
 |**Operador**|Operadores, como +, - e !=.|
@@ -199,29 +204,48 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
 |**Texto XML**|Conteúdo do elemento de texto sem formatação.|
 |**Palavra-Chave XSLT**|Nomes de elementos XSLT.|
 
- **Primeiro plano do item** Lista as cores disponíveis que você pode escolher para o primeiro plano do item selecionado em **Exibir itens**. Como alguns itens estão relacionados e, portanto, devem manter um esquema de exibição consistente, alterar a cor de primeiro plano do texto também altera os padrões para elementos como Erro do Compilador, Palavra-Chave ou Operador.
+**Primeiro plano do item**
 
- Itens **Automáticos** podem herdar a cor de primeiro plano de outros itens de exibição, como **Texto sem Formatação**. Usando essa opção, quando você altera a cor de um item de exibição herdado, a cor dos itens de exibição relacionados também é alterada automaticamente. Por exemplo, se você selecionar o valor **Automático** para **Erro do Compilador** e posteriormente alterar a cor de **Texto sem Formatação** para vermelho, **Erro do Compilador** herdará automaticamente a cor vermelha.
+Lista as cores disponíveis que você pode escolher para o primeiro plano do item selecionado em **Exibir itens**. Como alguns itens estão relacionados e, portanto, devem manter um esquema de exibição consistente, alterar a cor de primeiro plano do texto também altera os padrões para elementos como Erro do Compilador, Palavra-Chave ou Operador.
 
- **Padrão** A cor que aparece para o item na primeira vez que você iniciar o Visual Studio. Clicar no botão **Usar Padrões** redefine para essa cor.
+**Automático**
 
- **Personalizado** Exibe a caixa de diálogo Cor para permitir que você defina uma cor personalizada para o item selecionado na lista Exibir itens.
+Os itens podem herdar a cor de primeiro plano de outros itens de exibição, como **Texto sem Formatação**. Usando essa opção, quando você altera a cor de um item de exibição herdado, a cor dos itens de exibição relacionados também é alterada automaticamente. Por exemplo, se você selecionar o valor **Automático** para **Erro do Compilador** e posteriormente alterar a cor de **Texto sem Formatação** para vermelho, **Erro do Compilador** herdará automaticamente a cor vermelha.
+
+**Padrão**
+
+A cor exibida para o item na primeira vez que você inicia o Visual Studio. Clicar no botão **Usar Padrões** redefine para essa cor.
+
+**Personalizado**
+
+Exibe a caixa de diálogo Cor para permitir que você defina uma cor personalizada para o item selecionado na lista de itens de Exibição.
 
 > [!NOTE]
 > Sua capacidade de definir cores personalizadas pode ser limitada pelas configurações de cor de exibição do computador. Por exemplo, se o computador estiver configurado para exibir 256 cores e você selecionar uma cor personalizada na caixa de diálogo **Cor**, o IDE assume como padrão a **Cor básica** mais próxima disponível e exibe a cor preta na caixa de visualização **Cor**.
 
+**Tela de fundo do item**
 
- **Tela de fundo do item** fornece uma paleta de cores para você escolher uma cor da tela de fundo para o item selecionado em **Exibir itens**. Como alguns itens estão relacionados e, portanto, devem manter um esquema de exibição consistente, alterar a cor da tela de fundo do texto também altera os padrões para elementos como Erro do Compilador, Palavra-Chave ou Operador.
+Fornece uma paleta de cores na qual você pode escolher uma cor da tela de fundo para o item selecionado em **Exibir itens**. Como alguns itens estão relacionados e, portanto, devem manter um esquema de exibição consistente, alterar a cor da tela de fundo do texto também altera os padrões para elementos como Erro do Compilador, Palavra-Chave ou Operador.
 
- Itens **Automáticos** podem herdar a cor da tela de fundo de outros itens de exibição, como **Texto sem Formatação**. Usando essa opção, quando você altera a cor de um item de exibição herdado, a cor dos itens de exibição relacionados também é alterada automaticamente. Por exemplo, se você selecionar o valor **Automático** para **Erro do Compilador** e posteriormente alterar a cor de **Texto sem Formatação** para vermelho, **Erro do Compilador** herdará automaticamente a cor vermelha.
+**Automático**
 
- **Padrão** A cor que aparece para o item na primeira vez que você iniciar o Visual Studio. Clicar no botão **Usar Padrões** redefine para essa cor.
+Os itens podem herdar a cor da tela de fundo de outros itens de exibição, como **Texto sem Formatação**. Usando essa opção, quando você altera a cor de um item de exibição herdado, a cor dos itens de exibição relacionados também é alterada automaticamente. Por exemplo, se você selecionar o valor **Automático** para **Erro do Compilador** e posteriormente alterar a cor de **Texto sem Formatação** para vermelho, **Erro do Compilador** herdará automaticamente a cor vermelha.
 
- **Personalizado** Exibe a caixa de diálogo Cor para permitir que você defina uma cor personalizada para o item selecionado na lista Exibir itens.
+**Padrão**
 
- **Negrito** Selecione esta opção para exibir o texto de **Exibir itens** selecionado em negrito. É mais fácil identificar texto em negrito no editor.
+A cor exibida para o item na primeira vez que você inicia o Visual Studio. Clicar no botão **Usar Padrões** redefine para essa cor.
 
- **Exemplo** Exibe um exemplo de estilo da fonte, tamanho e esquema de cores para as opções **Mostrar configurações de** e **Exibir itens** selecionadas. É possível usar essa caixa para visualizar os resultados quando você testa diferentes opções de formatação.
+**Personalizado**
+
+Exibe a caixa de diálogo Cor para permitir que você defina uma cor personalizada para o item selecionado na lista de itens de Exibição.
+
+**Negrito**
+
+Selecione esta opção para exibir o texto de **Itens de exibição** selecionados em negrito. É mais fácil identificar texto em negrito no editor.
+
+**Amostra**
+
+Exibe uma amostra do esquema de cores, tamanho e estilo da fonte de **Mostrar configurações de** e **Itens de exibição** selecionados. É possível usar essa caixa para visualizar os resultados quando você testa diferentes opções de formatação.
 
 ## <a name="see-also"></a>Consulte também
 

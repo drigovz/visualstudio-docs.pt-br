@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointUnboundEvent2::GetReason | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: 0f8a4fec-d3eb-417d-8516-4f7b51904033
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12af22eeb21fd75c49b92460a1c6db58dfcd2e77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4360baeb03847df22b7eff4e5ffdc4fa1eed3e67
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468001"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797631"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugBreakpointUnboundEvent2::GetReason](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason).  
-  
 Obtém o motivo pelo qual que o ponto de interrupção foi desassociado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetReason(   
+HRESULT GetReason(   
    BP_UNBOUND_REASON* pdwUnboundReason  
 );  
 ```  
   
 ```csharp  
-int GetReason(   
+int GetReason(   
    out enum_ BP_UNBOUND_REASON pdwUnboundReason  
 );  
 ```  

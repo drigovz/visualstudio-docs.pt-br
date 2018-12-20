@@ -1,7 +1,7 @@
 ---
 title: Criar um aplicativo de dados simples com o WPF e Entity Framework 6 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d0014df0770bb7fdb697ee05d61b1543044988ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922192"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Criar um aplicativo de dados simples com o WPF e Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar um aplicativo de dados simples com o WPF e Entity Framework 6](https://docs.microsoft.com/visualstudio/data-tools/create-a-simple-data-application-with-wpf-and-entity-framework-6).  
-  
   
 Essa explicação passo a passo mostra como criar um aplicativo básico "formulários sobre dados" no Visual Studio com o LocalDB do SQL Server, o banco de dados Northwind, Entity Framework 6 e do Windows Presentation Foundation. Ele mostra como fazer a associação de dados básica com um modo de exibição de detalhes mestre, e também tem um personalizado "associação Navigator" com botões para "Mover próximo", "Mover anterior," "Mover para o início," "Mover para o final," "Atualizar" e "Excluir".  
   
@@ -54,37 +52,37 @@ Essa explicação passo a passo mostra como criar um aplicativo básico "formul�
   
 ## <a name="create-the-model"></a>Criar o modelo  
   
-1.  Clique com o botão direito no nó do projeto no Gerenciador de soluções e escolha **adicionar &#124; Novo Item**. No painel esquerdo, sob o nó c#, escolha **dados** e no painel central, escolha **modelo de dados de entidade ADO.NET**.  
+1. Clique com o botão direito no nó do projeto no Gerenciador de soluções e escolha **adicionar &#124; Novo Item**. No painel esquerdo, sob o nó c#, escolha **dados** e no painel central, escolha **modelo de dados de entidade ADO.NET**.  
   
-     ![Entity Framework modelo novo Item de projeto](../data-tools/media/raddata-ef-new-project-item.png "raddata EF Novo Item de projeto")  
+    ![Entity Framework modelo novo Item de projeto](../data-tools/media/raddata-ef-new-project-item.png "raddata EF Novo Item de projeto")  
   
-2.  Chamar o modelo `Northwind_model` e escolha Okey. Isso abre o **Assistente de modelo de dados de entidade**. Escolher **EF Designer do banco de dados** e, em seguida, clique em **próxima**.  
+2. Chamar o modelo `Northwind_model` e escolha Okey. Isso abre o **Assistente de modelo de dados de entidade**. Escolher **EF Designer do banco de dados** e, em seguida, clique em **próxima**.  
   
-     ![Modelo de banco de dados do EF](../data-tools/media/raddata-ef-model-from-database.png "raddata modelo EF do banco de dados")  
+    ![Modelo de banco de dados do EF](../data-tools/media/raddata-ef-model-from-database.png "raddata modelo EF do banco de dados")  
   
-3.  Na próxima tela, escolha o LocalDB Northwind, conexão e clique em **próxima**.  
+3. Na próxima tela, escolha o LocalDB Northwind, conexão e clique em **próxima**.  
   
-4.  Na próxima página do assistente, podemos escolher quais tabelas, procedimentos armazenados e outros objetos de banco de dados para incluir no modelo do Entity Framework. Expanda o nó dbo na exibição de árvore e escolha os clientes, pedidos e detalhes do pedido. Deixe os padrões marcados e clique em **concluir**.  
+4. Na próxima página do assistente, podemos escolher quais tabelas, procedimentos armazenados e outros objetos de banco de dados para incluir no modelo do Entity Framework. Expanda o nó dbo na exibição de árvore e escolha os clientes, pedidos e detalhes do pedido. Deixe os padrões marcados e clique em **concluir**.  
   
-     ![Escolha os objetos de banco de dados para o modelo](../data-tools/media/raddata-choose-ef-objects.png "raddata escolher EF objetos")  
+    ![Escolha os objetos de banco de dados para o modelo](../data-tools/media/raddata-choose-ef-objects.png "raddata escolher EF objetos")  
   
-5.  O assistente gera as classes do c# que representam o modelo do Entity Framework. Esses são antigas classes c# simples e são o que faremos databind na interface de usuário do WPF. O arquivo. edmx descreve as relações e outros metadados que associa as classes de objetos no banco de dados.  Os arquivos. TT são modelos de T4 que geram o código que irá operar no modelo e salvar as alterações no banco de dados. Você pode ver todos esses arquivos no Gerenciador de soluções sob o nó Northwind_model:  
+5. O assistente gera as classes do c# que representam o modelo do Entity Framework. Esses são antigas classes c# simples e são o que faremos databind na interface de usuário do WPF. O arquivo. edmx descreve as relações e outros metadados que associa as classes de objetos no banco de dados.  Os arquivos. TT são modelos de T4 que geram o código que irá operar no modelo e salvar as alterações no banco de dados. Você pode ver todos esses arquivos no Gerenciador de soluções sob o nó Northwind_model:  
   
-     ![Arquivos de modelo do Solution Explorer EF](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata arquivos de modelo de EF do Gerenciador de soluções")  
+    ![Arquivos de modelo do Solution Explorer EF](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata arquivos de modelo de EF do Gerenciador de soluções")  
   
-     A superfície do designer para o arquivo. edmx permite modificar algumas propriedades e relações no modelo. Não vamos usar o designer neste passo a passo.  
+    A superfície do designer para o arquivo. edmx permite modificar algumas propriedades e relações no modelo. Não vamos usar o designer neste passo a passo.  
   
-6.  Os arquivos. TT são para fins gerais e é necessário ajustar um para trabalhar com associação de dados do WPF, que exige ObservableCollections.  No Gerenciador de soluções, expanda o nó de Northwind_model até encontrar Northwind_model.tt. (Verifique se você está **não** no *. Contexto arquivo. TT que está diretamente abaixo o arquivo. edmx).  
+6. Os arquivos. TT são para fins gerais e é necessário ajustar um para trabalhar com associação de dados do WPF, que exige ObservableCollections.  No Gerenciador de soluções, expanda o nó de Northwind_model até encontrar Northwind_model.tt. (Verifique se você está **não** no *. Contexto arquivo. TT que está diretamente abaixo o arquivo. edmx).  
   
-    -   Substitua as duas ocorrências <xref:System.Collections.ICollection> com <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
+   -   Substitua as duas ocorrências <xref:System.Collections.ICollection> com <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
   
-    -   Substitua a primeira ocorrência de <xref:System.Collections.Generic.HashSet%601> com <xref:System.Collections.ObjectModel.ObservableCollection%601> perto da linha 51. Não substitua a segunda ocorrência da HashSet  
+   -   Substitua a primeira ocorrência de <xref:System.Collections.Generic.HashSet%601> com <xref:System.Collections.ObjectModel.ObservableCollection%601> perto da linha 51. Não substitua a segunda ocorrência da HashSet  
   
-    -   Substitua a ocorrência única de <xref:System.Collections.Generic> (perto da linha 334) com <xref:System.Collections.ObjectModel>.  
+   -   Substitua a ocorrência única de <xref:System.Collections.Generic> (perto da linha 334) com <xref:System.Collections.ObjectModel>.  
   
-7.  Pressione **Ctrl + Shift + B** para compilar o projeto. Quando a compilação for concluída, as classes de modelo são visíveis para o Assistente para fontes de dados.  
+7. Pressione **Ctrl + Shift + B** para compilar o projeto. Quando a compilação for concluída, as classes de modelo são visíveis para o Assistente para fontes de dados.  
   
- Agora estamos prontos para conectar esse modelo para a página XAML para que possamos exibir, navegar e modificar os dados.  
+   Agora estamos prontos para conectar esse modelo para a página XAML para que possamos exibir, navegar e modificar os dados.  
   
 ## <a name="databind-the-model-to-the-xaml-page"></a>Vincule o modelo para a página XAML  
  É possível escrever seu próprio código de associação de dados, mas é mais fácil permitir que o Visual Studio fazer isso por você.  

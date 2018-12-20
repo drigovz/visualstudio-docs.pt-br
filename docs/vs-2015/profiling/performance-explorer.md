@@ -1,7 +1,7 @@
 ---
 title: Gerenciador de Desempenho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ helpviewer_keywords:
 - performance tools [Visual Studio ALM]
 ms.assetid: df52b717-a55d-4b1d-8c2e-d5a6a38042f4
 caps.latest.revision: 50
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2076aaa86f51da7928b0f81213ff97553262eb56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad140fcb81215a27381a75f051f07ca231f3deae
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460695"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786100"
 ---
 # <a name="performance-explorer"></a>Performance Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Performance Explorer](https://docs.microsoft.com/visualstudio/profiling/performance-explorer).  
-  
 As Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite aos desenvolvedores medir, avaliar e resolver problemas relacionados ao desempenho no seu código. Essas ferramentas são totalmente integradas ao IDE para fornecer uma experiência de usuário consistente e acessível.  
   
  A criação de perfil em um aplicativo é muito simples. Você começa criando uma nova sessão de desempenho. No Visual Studio Team System Development Edition, você pode usar o Assistente de sessão de desempenho para criar uma nova sessão de desempenho. Após o término de uma sessão de desempenho, os dados coletados durante a criação de perfil são salvos em um arquivo .vsp. Você pode exibir o arquivo .vsp dentro do IDE. Há várias exibições de relatório disponíveis para ajudar a visualizar e detectar problemas de desempenho dos dados coletados.  

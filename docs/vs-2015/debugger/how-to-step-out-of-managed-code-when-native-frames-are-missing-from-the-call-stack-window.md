@@ -1,7 +1,7 @@
 ---
 title: 'Como: sair do código gerenciado quando quadros nativos estiverem ausentes da janela pilha de chamadas | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,21 +27,19 @@ helpviewer_keywords:
 - managed code, stepping out of
 ms.assetid: 97cdd2a8-02a9-4a06-a5b1-c92b1e431979
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 682d4f9c8973f8deee65efa0cd8c0d78061ee00a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 0f67dcff047b29d2fb51044e6c0973c5b6e6b747
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461748"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788492"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Como sair do código gerenciado quando quadros nativos não forem encontrados na janela Pilha de Chamadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: sair do código gerenciado quando quadros nativos estiverem ausentes da janela pilha de chamadas](https://docs.microsoft.com/visualstudio/debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window).  
-  
 Se seu código tiver quadros nativos que são invisíveis na **pilha de chamadas** janela, passo a passo fora do código gerenciado pode produzir resultados inesperados. Como alternativa, você pode usar um ponto de interrupção em vez de **depuração circular**.  
   
 > [!NOTE]

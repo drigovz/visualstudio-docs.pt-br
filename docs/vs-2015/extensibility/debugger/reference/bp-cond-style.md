@@ -1,7 +1,7 @@
 ---
 title: BP_COND_STYLE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea5e0df33ef462d6b1b8bbe013f30baab894ea82
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80b19cec444a009fc62af1b2345ed631ce80ff1c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462357"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784527"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [BP_COND_STYLE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-cond-style).  
-  
 Especifica o estilo de condição de ponto de interrupção para pendentes e associados a pontos de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_BP_COND_STYLE {   
+enum enum_BP_COND_STYLE {   
    BP_COND_NONE         = 0x0000,  
    BP_COND_WHEN_TRUE    = 0x0001,  
    BP_COND_WHEN_CHANGED = 0x0002  
@@ -43,7 +41,7 @@ typedef DWORD BP_COND_STYLE;
 ```  
   
 ```csharp  
-public enum enum_BP_COND_STYLE {   
+public enum enum_BP_COND_STYLE {   
    BP_COND_NONE         = 0x0000,  
    BP_COND_WHEN_TRUE    = 0x0001,  
    BP_COND_WHEN_CHANGED = 0x0002  

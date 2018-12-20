@@ -1,7 +1,7 @@
 ---
 title: Tarefas de depuração | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 64a9a55a659b4aaa81a1e491445400d18de30a40
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd73bb7bf7fa744946dca788ed669c6153e63fea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474188"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757082"
 ---
 # <a name="debugging-tasks"></a>Tarefas de depuração
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tarefas de depuração](https://docs.microsoft.com/visualstudio/extensibility/debugger/debugging-tasks).  
-  
 Para depurar um programa, ele deve ser iniciado e um mecanismo de depuração (DES) deve ser anexado a ele, caso contrário, o DE deve ser anexado a um programa iniciado anteriormente. Depois de anexada, o DE deve gerar determinados eventos de inicialização. Em resposta, o pacote de depuração tenta associar os pontos de interrupção definidos no IDE. Quando o programa atinge um ponto de interrupção associado, ele é interrompida e aguarda a entrada do usuário.  
   
 ## <a name="in-this-section"></a>Nesta seção  

@@ -1,7 +1,7 @@
 ---
 title: Criar visualizadores personalizados de dados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,21 +25,19 @@ helpviewer_keywords:
 - visualizers
 ms.assetid: c24c006f-f2ac-429f-89db-677fc0c6e1ea
 caps.latest.revision: 31
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a025068d1657d9feb569a77731aa8bab517bae2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8433af07b5f1315e73e6916e58123fcd14bddf0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467901"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792847"
 ---
 # <a name="create-custom-visualizers-of-data"></a>Criar visualizadores personalizados de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar visualizadores personalizados de dados](https://docs.microsoft.com/visualstudio/debugger/create-custom-visualizers-of-data).  
-  
 Os visualizadores são componentes do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] interface de usuário do depurador. Um *visualizer* cria uma caixa de diálogo ou outra interface para exibir uma variável ou objeto de forma que seja apropriada para seu tipo de dados. Por exemplo, um visualizador de HTML interpreta uma cadeia de caracteres de HTML e exibe o resultado como seria exibido em uma janela do navegador; um visualizador de bitmap interpreta uma estrutura de bitmap e exibe o gráfico que o representa. Alguns visualizadores permitem modificar assim como exibir os dados.  
   
  O [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] depurador inclui seis visualizadores padrão. Esses são o texto, os visualizadores HTML, XML e JSON, todos funcionam em objetos de cadeia de caracteres; o Visualizador de árvore do WPF, para exibir as propriedades de uma árvore visual do objeto WPF; e o Visualizador de conjunto de dados, o que funciona para objetos de DataSet, DataView e DataTable. Visualizadores adicionais podem estar disponíveis para download da Microsoft Corporation no futuro e estão disponíveis por meio de terceiros e da comunidade. Além disso, você pode escrever seus próprios visualizadores e instalá-los no [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] depurador.  

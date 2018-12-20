@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttributeQuery | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b804b619-70eb-4c38-80d9-c8b32b65ed3e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d53bbc353093bd2a28732b488ce05879063f798d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6954d6fada83de2af5c668dabe4af37f1a01a659
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460458"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809435"
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugCustomAttributeQuery](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcustomattributequery).  
-  
 Representa uma consulta para os atributos personalizados em um método ou tipo.  
   
 ## <a name="syntax"></a>Sintaxe  

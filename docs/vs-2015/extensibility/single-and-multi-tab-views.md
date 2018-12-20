@@ -1,7 +1,7 @@
 ---
 title: Modos de exibição únicos e com várias guias | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84893d8465316d35098efbc99eb7ba988fcbe8d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8231581761199be4df9c368494fb27bdc7926c51
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468341"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748989"
 ---
 # <a name="single-and-multi-tab-views"></a>Exibição de guia única e multiguias
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [único e modos de exibição com várias guias](https://docs.microsoft.com/visualstudio/extensibility/single-and-multi-tab-views).  
-  
 Um editor pode criar diferentes tipos de modos de exibição. Um exemplo é uma janela do editor de código, outra é um designer de formulários.  
   
  Uma exibição com várias guias é uma exibição que tem várias guias. Por exemplo, o editor de HTML possui duas guias na parte inferior: **Design** e **origem**, cada uma exibição lógica. O modo de design exibe uma página da web processada, enquanto o outro exibe o HTML que inclui a página da web.  

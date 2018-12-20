@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentText2::GetText | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: f8c15a58-da77-473e-a721-7a094e306c63
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d8e19bebca0f2c1e7405a1ebb432d1328dafa552
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 46f8dee0706f7d12306397f951256cb2fd5ce574
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465043"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727809"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugDocumentText2::GetText](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumenttext2-gettext).  
-  
 Recupera o texto da posição especificada no documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetText(   
+HRESULT GetText(   
    TEXT_POSITION pos,  
    ULONG         cMaxChars,  
    WCHAR*        pText,  
@@ -43,7 +41,7 @@ HRESULT GetText(
 ```  
   
 ```csharp  
-int GetText(   
+int GetText(   
    eumn_TEXT_POSITION pos,  
    uint               cMaxChars,  
    IntPtr             pText,  

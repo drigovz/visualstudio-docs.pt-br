@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7622dc9b926124d0ed2b2ae759beafcbac3a475a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 40adf006b141e930a522a2b80787f8f4dfed0a8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755792"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950557"
 ---
 # <a name="transactionscope-activity-designer"></a>Designer de atividade de TransactionScope
 
@@ -36,7 +36,7 @@ Acesso a **TransactionScope** designer de atividade na **transação** categoria
 A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.TransactionScope> e descreve como elas são usadas no designer. O <xref:System.Activities.Activity.DisplayName%2A> e <xref:System.Activities.Statements.TransactionScope.Body%2A> propriedades podem ser editadas na superfície do Designer de fluxo de trabalho. Mas as outras propriedades devem ser editadas na grade de propriedade.
 
 |Nome da Propriedade|Necessária|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|O nome amigável opcional de atividade de <xref:System.Activities.Statements.TransactionScope> . O padrão é TransactionScope. Embora o valor de <xref:System.Activities.Activity.DisplayName%2A> não é necessário restrita, é uma prática recomendada usar um.|
 |<xref:System.Activities.Statements.TransactionScope.Body%2A>|verdadeiro|Especifica a atividade para executar em uma única transação. Para adicionar o <xref:System.Activities.Statements.TransactionScope.Body%2A> atividade, soltar uma atividade do **caixa de ferramentas** no **corpo** caixa sobre o **TransactionScope** designer de atividade com texto "atividade de soltar de dica aqui".|
 |<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|verdadeiro|Especifica <xref:System.Transactions.IsolationLevel> para este <xref:System.Activities.Statements.TransactionScope>.|

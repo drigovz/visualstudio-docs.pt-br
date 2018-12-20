@@ -1,7 +1,7 @@
 ---
 title: IDebugObject::GetManagedDebugObject | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: cb89692e-7657-47ff-846d-311943521951
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 60ca763d11bf0a095569350f06fd4e14df876cb6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5530865b9d6c7cfb74c91f00b6a65e41702135cb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462439"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807264"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugObject::GetManagedDebugObject](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugobject-getmanageddebugobject).  
-  
 Cria uma cópia do objeto gerenciado no espaço de endereço do mecanismo de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetManagedDebugObject(   
+HRESULT GetManagedDebugObject(   
    IDebugManagedObject** ppObject  
 );  
 ```  

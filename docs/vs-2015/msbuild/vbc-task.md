@@ -1,7 +1,7 @@
 ---
 title: Tarefa Vbc | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0457456651e233c44e5e8e5ae44e30013e0de0c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ed9563f4149b550e123cf74a09f19245514fe97
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476033"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281856"
 ---
 # <a name="vbc-task"></a>Tarefa Vbc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tarefa Vbc](https://docs.microsoft.com/visualstudio/msbuild/vbc-task).  
-  
   
 Encapsula vbc.exe, que produz executáveis (.exe), bibliotecas de vínculo dinâmico (.dll) ou módulos de código (.netmodule). Para obter mais informações sobre vbc.exe, consulte o [Compilador de linha de comando do Visual Basic](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c).  
   
@@ -68,7 +66,7 @@ Encapsula vbc.exe, que produz executáveis (.exe), bibliotecas de vínculo dinâ
 |`NoLogo`|Parâmetro `Boolean` opcional.<br /><br /> Se for `true`, suprimirá a exibição de informações da barra de notificação do compilador. Esse parâmetro corresponde à opção [/nologo](http://msdn.microsoft.com/library/25ef54b6-d676-4639-a2d2-a747a158bc07) do compilador vbc.exe.|  
 |`NoStandardLib`|Parâmetro `Boolean` opcional.<br /><br /> Faz com que o compilador não referencie as bibliotecas padrão. Esse parâmetro corresponde à opção [/nostdlib](http://msdn.microsoft.com/library/140381b8-dc96-4ad5-ae11-792c9ed0be4d) do compilador vbc.exe.|  
 |`NoVBRuntimeReference`|Parâmetro `Boolean` opcional.<br /><br /> Apenas para uso interno. Se verdadeiro, impede a referência automática para Microsoft.VisualBasic.dll.|  
-|`NoWarnings`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, a tarefa suprime todos os avisos. Para obter mais informações, consulte [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).|  
+|`NoWarnings`|Parâmetro `Boolean` opcional.<br /><br /> Se ele for `true`, a tarefa suprimirá todos os avisos. Para obter mais informações, consulte [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).|  
 |`Optimize`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, habilita as otimizações do compilador. Esse parâmetro corresponde à opção [/optimize](http://msdn.microsoft.com/library/fcba4a97-3622-4b87-a891-0f77deab4998) do compilador vbc.exe.|  
 |`OptionCompare`|Parâmetro `String` opcional.<br /><br /> Especifica como são feitas comparações de cadeia de caracteres. Esse parâmetro pode ter os seguintes valores:<br /><br /> -   `binary`<br />-   `text`<br /><br /> O valor `binary` especifica que a tarefa usa comparações de cadeia de caracteres binária. O valor `text` especifica que a tarefa usa comparações de cadeia de caracteres de texto. O valor padrão desse parâmetro é `binary`. Esse parâmetro corresponde à opção [/optioncompare](http://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4) do compilador vbc.exe.|  
 |`OptionExplicit`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, a declaração explícita de variáveis é necessária. Esse parâmetro corresponde à opção [/optionexplicit](http://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7) do compilador vbc.exe.|  

@@ -1,7 +1,7 @@
 ---
 title: Counter | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,28 +11,26 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0734e0e62cb958b9d85a29c9f591cbbd51e45fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d0d15c404284dfb40105f7a52cb23aef132f3a9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475679"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764943"
 ---
 # <a name="counter"></a>Contador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [contador](https://docs.microsoft.com/visualstudio/profiling/counter).  
-  
 A opção **Counter** coleta dados de contadores de desempenho do processador (hardware).  
   
--   Quando você está usando o método de criação de perfil de amostragem, **Counter** especifica o contador de desempenho on-chip e o número de eventos do contador a ser usado como o intervalo de amostragem. Você pode especificar apenas um contador quando você está usando amostragem.  
+- Quando você está usando o método de criação de perfil de amostragem, **Counter** especifica o contador de desempenho on-chip e o número de eventos do contador a ser usado como o intervalo de amostragem. Você pode especificar apenas um contador quando você está usando amostragem.  
   
--   Quando você está usando a método de criação de perfil de instrumentação, o número de eventos do contador que ocorreram no intervalo entre os eventos da coleção anterior e os da atual é listado como campos separados em relatórios do criador de perfil. Várias opções de **Counter** podem ser especificadas quando você usa instrumentação.  
+- Quando você está usando a método de criação de perfil de instrumentação, o número de eventos do contador que ocorreram no intervalo entre os eventos da coleção anterior e os da atual é listado como campos separados em relatórios do criador de perfil. Várias opções de **Counter** podem ser especificadas quando você usa instrumentação.  
   
- Cada tipo de processador tem seu próprio conjunto de contadores de desempenho de hardware. O criador de perfil define um conjunto de contadores de desempenho que são comuns a quase todos os processadores. Para listar os contadores genéricos e específicos do processador no computador, use o comando VSPerfCmd **QueryCounters**.  
+  Cada tipo de processador tem seu próprio conjunto de contadores de desempenho de hardware. O criador de perfil define um conjunto de contadores de desempenho que são comuns a quase todos os processadores. Para listar os contadores genéricos e específicos do processador no computador, use o comando VSPerfCmd **QueryCounters**.  
   
 ## <a name="syntax"></a>Sintaxe  
   

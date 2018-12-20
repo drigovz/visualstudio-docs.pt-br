@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bc935c50a00efea7d3124eb7d1fb3246248f0b91
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669937"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671411"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Passo a passo: Criar seu primeiro suplemento VSTO para o projeto
   Este passo a passo mostra como criar um suplemento do VSTO para o Microsoft Office Project. Os recursos que você criar nesse tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual projeto estiver aberto. Para obter mais informações, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -32,15 +32,15 @@ ms.locfileid: "35669937"
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Criando um projeto de suplemento do VSTO do projeto.  
+- Criando um projeto de suplemento do VSTO do projeto.  
   
--   Escrevendo código que usa o modelo de objeto do projeto para adicionar uma tarefa a um novo projeto.  
+- Escrevendo código que usa o modelo de objeto do projeto para adicionar uma tarefa a um novo projeto.  
   
--   Criando e executando o projeto para testá-lo.  
+- Criando e executando o projeto para testá-lo.  
   
--   Limpando o projeto concluído para que o suplemento do VSTO não seja executado automaticamente em seu computador de desenvolvimento.  
+- Limpando o projeto concluído para que o suplemento do VSTO não seja executado automaticamente em seu computador de desenvolvimento.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
@@ -78,14 +78,14 @@ ms.locfileid: "35669937"
   
 ### <a name="to-add-a-task-to-a-new-project"></a>Para adicionar uma tarefa a um novo projeto  
   
-1.  No arquivo de código ThisAddIn, adicione o seguinte código para o `ThisAddIn` classe. Esse código define um manipulador de eventos para o `NewProject` eventos do `Microsoft.Office.Interop.MSProject.Application` classe.  
+1. No arquivo de código ThisAddIn, adicione o seguinte código para o `ThisAddIn` classe. Esse código define um manipulador de eventos para o `NewProject` eventos do `Microsoft.Office.Interop.MSProject.Application` classe.  
   
-     Quando o usuário cria um novo projeto, esse manipulador de eventos adiciona uma tarefa ao projeto.  
+    Quando o usuário cria um novo projeto, esse manipulador de eventos adiciona uma tarefa ao projeto.  
   
-     [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
   
- Para modificar o projeto, este exemplo de código usa os seguintes objetos:  
+   Para modificar o projeto, este exemplo de código usa os seguintes objetos:  
   
 -   O `Application` campo do `ThisAddIn` classe. O `Application` campo retorna um `Microsoft.Office.Interop.MSProject.Application` objeto que representa a instância atual do projeto.  
   
@@ -103,7 +103,7 @@ ms.locfileid: "35669937"
   
 1.  Pressione **F5** para compilar e executar seu projeto. Microsoft Project é iniciado e abre automaticamente um novo projeto em branco.  
   
-     Quando você compila o projeto, o código é compilado em um assembly que está incluído na pasta de saída de compilação para o projeto. Visual Studio também cria um conjunto de entradas do registro que permitem que o projeto descobrir e carregar o suplemento do VSTO e ela define as configurações de segurança no computador de desenvolvimento para habilitar o suplemento do VSTO ser executado. Para obter mais informações, consulte [visão geral do processo de compilação solução Office](http://msdn.microsoft.com/a9d12e4f-c9ea-4a62-a841-c42b91f831ee).  
+     Quando você compila o projeto, o código é compilado em um assembly que está incluído na pasta de saída de compilação para o projeto. Visual Studio também cria um conjunto de entradas do registro que permitem que o projeto descobrir e carregar o suplemento do VSTO e ela define as configurações de segurança no computador de desenvolvimento para habilitar o suplemento do VSTO ser executado. Para obter mais informações, consulte [visão geral do processo de compilação solução Office](/previous-versions/visualstudio/visual-studio-2010/h2c9cdc0(v=vs.100)).  
   
 2.  Verifique se que uma nova tarefa é adicionada ao projeto em branco.  
   

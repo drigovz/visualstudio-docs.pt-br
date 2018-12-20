@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5625d79221416a8799d120530d3c463041412417
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341219"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896933"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapear dependências com mapas de código
 
@@ -138,15 +138,15 @@ Para ver todas as dependências em sua solução:
 
 10. Outra maneira de se concentrar em um mapa de solução complexa é gerar um novo mapa que contém os itens selecionados de um mapa existente. Mantenha **Ctrl** enquanto seleciona os itens que você deseja se concentrar em, abra o menu de atalho e escolha **da seleção de um novo gráfico**.
 
-   ![Mostrar itens selecionados em um novo mapa de código](../modeling/media/codemapsshowonnewmap.png)
+    ![Mostrar itens selecionados em um novo mapa de código](../modeling/media/codemapsshowonnewmap.png)
 
 11. O contexto de recipiente é transportado para o novo mapa. Ocultar pastas de solução e quaisquer outros contêineres que você não deseja ver usando o **filtros** painel.
 
-   ![Os contêineres para simplificar a exibição de filtro](../modeling/media/codemapsexpandnewgroups.png)
+    ![Os contêineres para simplificar a exibição de filtro](../modeling/media/codemapsexpandnewgroups.png)
 
 12. Expanda os grupos e selecionar itens no mapa para exibir as relações.
 
-   ![Selecionar itens para exibir as relações](../modeling/media/codemapsviewnewrelationships.png)
+    ![Selecionar itens para exibir as relações](../modeling/media/codemapsviewnewrelationships.png)
 
 Consulte também:
 
@@ -242,7 +242,7 @@ Suponha que você tenha uma revisão de código para executar em alguns arquivos
 
 - [Vídeo: entenda design de código com mapas de código do Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
 - [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)
-- [Mapear métodos na pilha de chamadas durante a depuração](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
+- [Mapear métodos na pilha de chamadas ao depurar](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)
 - [Procurar e reorganizar mapas de códigos](../modeling/browse-and-rearrange-code-maps.md)
 - [Personalizar mapa de códigos editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

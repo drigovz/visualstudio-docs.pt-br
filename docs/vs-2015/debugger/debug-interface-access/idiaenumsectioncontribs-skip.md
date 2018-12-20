@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumsectioncontribs:: Skip | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaEnumSectionContribs::Skip method
 ms.assetid: 7471a178-5134-41b2-80a6-51ff96abe916
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb66230d597a3913b07db9b12dfd2d05aa405195
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e17a574af06b4128c4fb40a129acac8dd85f80d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474579"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757655"
 ---
 # <a name="idiaenumsectioncontribsskip"></a>IDiaEnumSectionContribs::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaenumsectioncontribs:: Skip](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumsectioncontribs-skip).  
-  
 Ignora um número especificado de contribuições de seção em uma sequência de enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Skip(   
+HRESULT Skip(   
    ULONG celt  
 );  
 ```  

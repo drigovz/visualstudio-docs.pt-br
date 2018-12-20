@@ -1,7 +1,7 @@
 ---
 title: Funções de gancho de relatório | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,21 +27,19 @@ helpviewer_keywords:
 - report hook functions
 ms.assetid: 1854bca7-d7eb-4502-89bf-b1ee64cb50ef
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b9a87a9efe91c8a3739b88a39fac5c391218833
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3b7916f729f0d1ea1a254ecde8e5c53ea8b8a51
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467220"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777248"
 ---
 # <a name="report-hook-functions"></a>Funções de gancho do relatório
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [funções de gancho de relatório](https://docs.microsoft.com/visualstudio/debugger/report-hook-functions).  
-  
 Uma função de gancho de relatório, instalada usando [crtsetreporthook](http://msdn.microsoft.com/library/1ae7c64f-8c84-4797-9574-b59f00f7a509), é chamado toda vez [crtdbgreport](http://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc) gera um relatório de depuração. Você pode usá-la, entre outras coisas, para filtrar relatórios com foco em tipos de alocações específicos. Uma função de gancho de relatório deve ter um protótipo como o seguinte:  
   
 ```  

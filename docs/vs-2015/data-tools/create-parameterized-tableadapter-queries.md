@@ -1,7 +1,7 @@
 ---
 title: Criar consultas TableAdapter parametrizadas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 35a2f0c498d6f4239568d4719b2581fdc2f321ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 56e14d66275bd961829fc09e06f7d5e99dbcc2c4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461888"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218893"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Criar consultas TableAdapter parametrizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [parametrizadas de criar consultas TableAdapter](https://docs.microsoft.com/visualstudio/data-tools/create-parameterized-tableadapter-queries).  
-  
   
 Uma consulta parametrizada retorna dados que atendem às condições de uma cláusula WHERE dentro da consulta. Por exemplo, você pode parametrizar uma lista de clientes para exibir apenas clientes em uma determinada cidade, adicionando `WHERE City = @City` ao final da instrução SQL que retorna uma lista de clientes.  
   
@@ -67,47 +65,47 @@ Uma consulta parametrizada retorna dados que atendem às condições de uma clá
   
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>Adicionar uma consulta a um formulário associado a dados existente  
   
-1.  Abra o formulário no **Designer de Formulários do Windows**.  
+1. Abra o formulário no **Designer de Formulários do Windows**.  
   
-2.  Sobre o **dados** menu, selecione**Add Query**ou**marcas inteligentes de dados**.  
+2. Sobre o **dados** menu, selecione **Add Query** ou **marcas inteligentes de dados**.  
   
-    > [!NOTE]
-    >  Se **Add Query** não está disponível na **dados** menu, selecione um controle no formulário que exibe os fonte de dados você deseja adicionar a parametrização. Por exemplo, se o formulário exibir dados em um controle <xref:System.Windows.Forms.DataGridView>, selecione-o. Se o formulário exibir dados em controles individuais, selecione qualquer controle associado a dados.  
+   > [!NOTE]
+   > Se **Add Query** não está disponível na **dados** menu, selecione um controle no formulário que exibe os fonte de dados você deseja adicionar a parametrização. Por exemplo, se o formulário exibir dados em um controle <xref:System.Windows.Forms.DataGridView>, selecione-o. Se o formulário exibir dados em controles individuais, selecione qualquer controle associado a dados.  
   
-3.  No **tabela de fonte de dados selecione** área, selecione o tablethat que você deseja adiciona a parametrização.  
+3. No **tabela de fonte de dados selecione** área, selecione o tablethat que você deseja adiciona a parametrização.  
   
-4.  Digite um nome na **nome da nova consulta** caixa se você estiver criando uma nova consulta.  
+4. Digite um nome na **nome da nova consulta** caixa se você estiver criando uma nova consulta.  
   
-     -ou-  
+    -ou-  
   
-     Selecione uma consulta na **nome da consulta existente** caixa.  
+    Selecione uma consulta na **nome da consulta existente** caixa.  
   
-5.  No **texto de consulta** , digite uma consulta que usa parâmetros.  
+5. No **texto de consulta** , digite uma consulta que usa parâmetros.  
   
-6.  Selecione**Okey**.  
+6. Selecione **OK**.  
   
-     Um controle para o parâmetro de entrada e um **Load** botão são adicionados ao formulário em um <xref:System.Windows.Forms.ToolStrip> controle.  
+    Um controle para o parâmetro de entrada e um **Load** botão são adicionados ao formulário em um <xref:System.Windows.Forms.ToolStrip> controle.  
   
- Parâmetros do TableAdapter podem ser atribuídos valores nulos quando você deseja consultar os registros que não têm nenhum valor atual. Por exemplo, considere a consulta a seguir que tem um `ShippedDate` parâmetro no seu `WHERE` cláusula:  
+   Parâmetros do TableAdapter podem ser atribuídos valores nulos quando você deseja consultar os registros que não têm nenhum valor atual. Por exemplo, considere a consulta a seguir que tem um `ShippedDate` parâmetro no seu `WHERE` cláusula:  
   
- `SELECT CustomerID, OrderDate, ShippedDate`  
+   `SELECT CustomerID, OrderDate, ShippedDate`  
   
- `FROM Orders`  
+   `FROM Orders`  
   
- `WHERE (ShippedDate = @ShippedDate) OR`  
+   `WHERE (ShippedDate = @ShippedDate) OR`  
   
- `(ShippedDate IS NULL)`  
+   `(ShippedDate IS NULL)`  
   
- Se esta fosse uma consulta em um TableAdapter, você pode consultar todos os pedidos que não foram enviados com o código a seguir:  
+   Se esta fosse uma consulta em um TableAdapter, você pode consultar todos os pedidos que não foram enviados com o código a seguir:  
   
- [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
- [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
+   [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
+   [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
   
 #### <a name="to-enable-a-query-to-accept-null-values"></a>Para habilitar uma consulta aceitar valores nulos  
   
 1.  No **Dataset Designer**, selecione a consulta do TableAdapter que precisa aceitar valores de parâmetro nulo.  
   
-2.  No **propriedades** janela, selecione**parâmetros**. Em seguida, pressione o botão de reticências (**...** ) para abrir o **Editor de coleção de parâmetros**.  
+2.  No **propriedades** janela, selecione **parâmetros**. Em seguida, pressione o botão de reticências (**...** ) para abrir o **Editor de coleção de parâmetros**.  
   
 3.  Selecione o parâmetro que permite valores nulos e defina as **AllowDbNull** propriedade `true`.  
   

@@ -1,7 +1,7 @@
 ---
 title: ResumeProfile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - ResumeProfile
 ms.assetid: 876f145b-ec07-4240-ade6-4f6e44baadce
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95601212507f00904198750fe2d3547e481e5178
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 242c0785523ab1a84279211ba866bf15709724ad
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460928"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726056"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ResumeProfile](https://docs.microsoft.com/visualstudio/profiling/resumeprofile).  
-  
 O método `ResumeProfile` diminui o contador de suspender/retomar para o nível de criação de perfil especificado.  
   
 ## <a name="syntax"></a>Sintaxe  

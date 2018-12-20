@@ -1,7 +1,7 @@
 ---
 title: 'DA0001: usar StringBuilder para concatenações | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,15 +16,15 @@ f1_keywords:
 - vs.performance.rules.DA0001
 ms.assetid: a7cc7613-ad5f-48c8-bd2b-56372cc12dfc
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c177af60768da4a4360fbeed8e2664129bd9681f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4cbfbabc96273f6a39a69888025b80d12103dd4b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464258"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803312"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: usar StringBuilder para concatenações
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: 'CA1011: Considere passar tipos base como parâmetros | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a2ddf1e4f1edc319fdc5744878d4f962ce5b46bb
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a9afb073ef3e722a2a07a05e1ee8629b31b4cfab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587319"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898625"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: considere a passagem dos tipos base como parâmetros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1011: considere passar tipos base como parâmetros](https://docs.microsoft.com/visualstudio/code-quality/ca1011-consider-passing-base-types-as-parameters).
 
 |||
 |-|-|
@@ -51,13 +49,13 @@ A versão mais recente deste tópico pode ser encontrada em [CA1011: considere p
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  É seguro suprimir um aviso nessa regra
 
--   Se o método requer a funcionalidade específica que é fornecida por um tipo derivado
+- Se o método requer a funcionalidade específica que é fornecida por um tipo derivado
 
-     \- ou -
+   \- ou -
 
--   para impor que apenas o tipo derivado, ou um tipo mais derivado, é passado para o método.
+- para impor que apenas o tipo derivado, ou um tipo mais derivado, é passado para o método.
 
- Nesses casos, o código será mais robusto devido à forte verificação de tipo que é fornecido pelo compilador e tempo de execução.
+  Nesses casos, o código será mais robusto devido à forte verificação de tipo que é fornecido pelo compilador e tempo de execução.
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir mostra um método `ManipulateFileStream`, que pode ser usado apenas com um <xref:System.IO.FileStream> objeto, o que viola essa regra. Um segundo método, `ManipulateAnyStream`, satisfaz a regra, substituindo o <xref:System.IO.FileStream> parâmetro usando um <xref:System.IO.Stream>.

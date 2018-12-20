@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentPosition2::IsPositionInDocument | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: d5cf57cb-b93b-4e1d-bec9-185f4fe8668d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 65e3534a0497af655bdef8428af70f1b8d00123b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7c1a9881647344daf493658a05ab76d3e5ff7764
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465005"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723329"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugDocumentPosition2::IsPositionInDocument](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument).  
-  
 Determina se a posição do documento está contida em um determinado documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT IsPositionInDocument(   
+HRESULT IsPositionInDocument(   
    IDebugDocument2* pDoc  
 );  
 ```  
   
 ```csharp  
-int IsPositionInDocument(   
+int IsPositionInDocument(   
    IDebugDocument2 pDoc  
 );  
 ```  

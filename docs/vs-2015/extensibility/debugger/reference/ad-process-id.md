@@ -1,7 +1,7 @@
 ---
 title: AD_PROCESS_ID | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93d50800f77705c24bdc2762be932161779372e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64f24b3e0b66fe223a7f5be5d81e1415c42b4b35
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467839"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781953"
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [AD_PROCESS_ID](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ad-process-id).  
-  
 Especifica a ID do processo, que pode ser uma ID de sistema ou um GUID.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,9 +35,9 @@ Especifica a ID do processo, que pode ser uma ID de sistema ou um GUID.
 typedef struct _AD_PROCESS_ID {  
    AD_PROCESS_ID_TYPE ProcessIdType;  
    union {  
-      DWORD dwProcessId;   
-      GUID  guidProcessId;   
-      DWORD dwUnused;   
+      DWORD dwProcessId;   
+      GUID  guidProcessId;   
+      DWORD dwUnused;   
    } ProcessId;  
 } AD_PROCESS_ID;  
 ```  
@@ -47,9 +45,9 @@ typedef struct _AD_PROCESS_ID {
 ```csharp  
 public struct AD_PROCESS_ID {  
    AD_PROCESS_ID_TYPE ProcessIdType;  
-   DWORD              dwProcessId;   
-   GUID               guidProcessId;   
-   DWORD              dwUnused;   
+   DWORD              dwProcessId;   
+   GUID               guidProcessId;   
+   DWORD              dwUnused;   
 };  
 ```  
   
@@ -69,19 +67,19 @@ public struct AD_PROCESS_ID {
 ## <a name="remarks"></a>Comentários  
  Essa estrutura é passada para os seguintes métodos:  
   
--   [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
+- [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
   
--   [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
+- [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
   
--   [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
+- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
   
--   [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)  
+- [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)  
   
- E são retornados de métodos a seguir:  
+  E são retornados de métodos a seguir:  
   
--   [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
+- [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
   
--   [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)  
+- [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

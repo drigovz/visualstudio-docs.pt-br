@@ -1,7 +1,7 @@
 ---
 title: 'Como: recuperar informações de cadeia de caracteres de consulta em um aplicativo ClickOnce Online | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 808e6a8d6264f616eec7716ddeb173bfccb906bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 78b4edd85d47087033cc20189f2c9edc4d7fcd34
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476341"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278922"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Como recuperar informações de cadeia de caracteres de consulta em um aplicativo ClickOnce online
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: recuperar informações de cadeia de caracteres de consulta em um aplicativo ClickOnce Online](https://docs.microsoft.com/visualstudio/deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application).  
-  
 O *cadeia de caracteres de consulta* é a parte de uma URL que comece com um ponto de interrogação (?) que contém informações arbitrárias no formulário *nome = valor*. Suponha que você tenha um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo denominado `WindowsApp1` que você hospede em `servername`, e você deseja passar um valor para a variável `username` quando o aplicativo é iniciado. A URL pode parecer com o seguinte:  
   
  `http://servername/WindowsApp1.application?username=joeuser`  

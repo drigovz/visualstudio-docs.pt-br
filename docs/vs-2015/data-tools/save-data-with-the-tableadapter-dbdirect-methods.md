@@ -1,7 +1,7 @@
 ---
 title: Salvar dados com o TableAdapter DBDirect métodos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 69839a8f54b35bd932296b0dbd0126af3ac58ba2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b7a7ec1d244f8bf711f0d1aaf4726c910846357
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467656"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219712"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvar os dados com os métodos TableAdapter DBDirect
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [salvar dados com o TableAdapter DBDirect métodos](https://docs.microsoft.com/visualstudio/data-tools/save-data-with-the-tableadapter-dbdirect-methods).  
-  
   
 Este passo a passo fornece instruções detalhadas para executar instruções SQL diretamente em um banco de dados usando os métodos DBDirect de um TableAdapter. Os métodos DBDirect de um TableAdapter fornecem um bom nível de controle sobre as atualizações de banco de dados. Você pode usá-los para executar instruções SQL específicas e procedimentos armazenados, chamando o indivíduo `Insert`, `Update`, e `Delete` métodos conforme exigido pelo seu aplicativo (em vez de sobrecarregado `Update` método que executa a atualização INSERT e DELETE instruções todas em uma chamada).  
   
@@ -63,7 +61,7 @@ Este passo a passo fornece instruções detalhadas para executar instruções SQ
   
 2.  Nomeie o projeto **TableAdapterDbDirectMethodsWalkthrough**.  
   
-3.  Selecione **aplicativo do Windows**e selecione**Okey**. Para obter mais informações, consulte [aplicativos cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Selecione **aplicativo do Windows**e, em seguida, selecione **Okey**. Para obter mais informações, consulte [aplicativos cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      O **TableAdapterDbDirectMethodsWalkthrough** projeto é criado e adicionado ao **Gerenciador de soluções**.  
   
@@ -72,13 +70,13 @@ Este passo a passo fornece instruções detalhadas para executar instruções SQ
   
 #### <a name="to-create-the-data-source"></a>Para criar a fonte de dados  
   
-1.  Sobre o **dados** menu, selecione**Show Data Sources**.  
+1.  Sobre o **dados** menu, selecione **Show Data Sources**.  
   
 2.  No **fontes de dados** janela, selecione **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.  
   
-3.  Sobre o **escolher um tipo de fonte de dados**tela, selecione **banco de dados**e, em seguida, selecione**próxima**.  
+3.  Sobre o **escolher um tipo de fonte de dados** tela, selecione **banco de dados**e, em seguida, selecione **próxima**.  
   
-4.  Sobre o **escolha sua Conexão de dados**tela, siga um destes procedimentos:  
+4.  Sobre o **escolha sua Conexão de dados** tela, siga um destes procedimentos:  
   
     -   Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.  
   
@@ -86,13 +84,13 @@ Este passo a passo fornece instruções detalhadas para executar instruções SQ
   
     -   Selecione **nova Conexão** para iniciar o **Adicionar/Modificar Conexão** caixa de diálogo.  
   
-5.  Se seu banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, selecione**próxima**.  
+5.  Se seu banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, selecione **próxima**.  
   
-6.  Sobre o **salvar a cadeia de caracteres de conexão para o arquivo de configuração de aplicativo**tela, selecione **próxima**.  
+6.  Sobre o **salvar a cadeia de caracteres de conexão para o arquivo de configuração de aplicativo** tela, selecione **próxima**.  
   
-7.  Sobre o **Choose your Database Objects**, expanda o **tabelas** nó.  
+7.  Sobre o **Choose your Database Objects** , expanda o **tabelas** nó.  
   
-8.  Selecione o `Region` de tabela e, em seguida, selecione**concluir**.  
+8.  Selecione o `Region` de tabela e, em seguida, selecione **concluir**.  
   
      O **NorthwindDataSet** é adicionado ao seu projeto e o `Region` tabela aparece no **fontes de dados** janela.  
   
@@ -119,7 +117,7 @@ Este passo a passo fornece instruções detalhadas para executar instruções SQ
   
 #### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Para adicionar código para inserir novos registros no banco de dados  
   
-1.  Selecione**InsertButton** para criar um manipulador de eventos para o evento click e abrir o formulário no editor de códigos.  
+1.  Selecione **InsertButton** para criar um manipulador de eventos para o evento click e abrir o formulário no editor de códigos.  
   
 2.  Substitua o manipulador de eventos `InsertButton_Click` pelo seguinte código:  
   
@@ -137,7 +135,7 @@ Este passo a passo fornece instruções detalhadas para executar instruções SQ
   
 #### <a name="to-add-code-to-delete-records-from-the-database"></a>Para adicionar código para excluir registros do banco de dados  
   
-1.  Selecione**DeleteButton** para criar um manipulador de eventos para o evento click e abrir o formulário no editor de códigos.  
+1.  Selecione **DeleteButton** para criar um manipulador de eventos para o evento click e abrir o formulário no editor de códigos.  
   
 2.  Substitua o manipulador de eventos `DeleteButton_Click` pelo seguinte código:  
   
@@ -148,7 +146,7 @@ Este passo a passo fornece instruções detalhadas para executar instruções SQ
   
 #### <a name="to-run-the-application"></a>Para executar o aplicativo  
   
--   Selecione**F5** para executar o aplicativo.  
+-   Selecione **F5** para executar o aplicativo.  
   
 -   Selecione o **inserir** botão e, em seguida, verifique se o novo registro aparece na grade.  
   

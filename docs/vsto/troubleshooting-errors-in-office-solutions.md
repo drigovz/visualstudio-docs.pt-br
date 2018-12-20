@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21e2b1a7a90df2baef48483647c692c8b986c59f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669830"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672945"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Solucionar problemas de erros em soluções do Office
   Você pode encontrar problemas ao executar as seguintes tarefas durante o desenvolvimento de soluções do Office no Visual Studio:  
@@ -124,7 +124,7 @@ ms.locfileid: "35669830"
   
  [!code-csharp[Trin_VstcoreTroubleshootingExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs#1)]  
   
- Para obter mais informações sobre interfaces de evento nos PIAs do Office, consulte [visão geral de classes e interfaces em assemblies de interoperabilidade primários do Office](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5).  
+ Para obter mais informações sobre interfaces de evento nos PIAs do Office, consulte [visão geral de classes e interfaces em assemblies de interoperabilidade primários do Office](/previous-versions/office/office-12//ms247299(v=office.12)).  
   
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Não é referência de PIA Office classes em projetos que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
  Em projetos que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], código que faz referência a uma classe que é definida em um PIA do Office não será compilado por padrão. Classes de PIAs usam a convenção de nomenclatura *objectname*classe, como <xref:Microsoft.Office.Interop.Word.DocumentClass> e <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Por exemplo, o código a seguir de um projeto de suplemento do VSTO do Word não será compilado.  
@@ -139,11 +139,11 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  Esse código resulta em erros de compilação a seguir:  
   
--   Visual Basic: "referência à classe 'DocumentClass' não é permitida quando seu assembly é vinculado usando o modo de não PIA."  
+- Visual Basic: "referência à classe 'DocumentClass' não é permitida quando seu assembly é vinculado usando o modo de não PIA."  
   
--   Visual c#: "tipo de interoperabilidade 'Microsoft.Office.Interop.Word.DocumentClass' não pode ser inserido. Use a interface aplicável."  
+- Visual c#: "tipo de interoperabilidade 'Microsoft.Office.Interop.Word.DocumentClass' não pode ser inserido. Use a interface aplicável."  
   
- Para resolver esse erro, modifique o código para fazer referência a interface correspondente em vez disso. Por exemplo, em vez de referência de um <xref:Microsoft.Office.Interop.Word.DocumentClass> de objeto, fazer referência a uma instância da <xref:Microsoft.Office.Interop.Word.Document> interface em vez disso.  
+  Para resolver esse erro, modifique o código para fazer referência a interface correspondente em vez disso. Por exemplo, em vez de referência de um <xref:Microsoft.Office.Interop.Word.DocumentClass> de objeto, fazer referência a uma instância da <xref:Microsoft.Office.Interop.Word.Document> interface em vez disso.  
   
 ```vb  
 Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument  

@@ -1,7 +1,7 @@
 ---
 title: Páginas de Propriedade, JavaScript | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1491c904be7cf44d739add233a05ba5f01b5df1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 586ad4352dfdf88aef87d4f9c815a776f85a6a82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904187"
 ---
 # <a name="property-pages-javascript"></a>Páginas de Propriedade, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [páginas de propriedades, JavaScript](https://docs.microsoft.com/visualstudio/ide/reference/property-pages-javascript).  
-  
   
 As **Páginas de Propriedade** fornecem acesso às configurações do projeto. Você pode usar as páginas que aparecem nas **Páginas de Propriedade** para alterar as propriedades do projeto.  
   
@@ -75,26 +73,26 @@ As **Páginas de Propriedade** fornecem acesso às configurações do projeto. V
  **Depurador a ser iniciado**  
  Especifica o host padrão para o depurador.  
   
--   Selecione **Computador Local** para iniciar o aplicativo no computador de host do Visual Studio. Para obter mais informações, consulte [Executando aplicativos no computador local](http://go.microsoft.com/fwlink/?LinkId=234912).  
+- Selecione **Computador Local** para iniciar o aplicativo no computador de host do Visual Studio. Para obter mais informações, consulte [Executando aplicativos no computador local](http://go.microsoft.com/fwlink/?LinkId=234912).  
   
--   Selecione **Simulador** para iniciar o aplicativo no Simulador. Para obter mais informações, consulte [Executando aplicativos no simulador](http://go.microsoft.com/fwlink/?LinkId=234913).  
+- Selecione **Simulador** para iniciar o aplicativo no Simulador. Para obter mais informações, consulte [Executando aplicativos no simulador](http://go.microsoft.com/fwlink/?LinkId=234913).  
   
--   Selecione **Computador Remoto** para iniciar o aplicativo em um computador remoto. Para obter mais informações sobre a depuração remota, consulte [Executando aplicativos em um computador remoto](http://go.microsoft.com/fwlink/?LinkId=234914).  
+- Selecione **Computador Remoto** para iniciar o aplicativo em um computador remoto. Para obter mais informações sobre a depuração remota, consulte [Executando aplicativos em um computador remoto](http://go.microsoft.com/fwlink/?LinkId=234914).  
   
- **Iniciar Aplicativo**  
- Especifica se o aplicativo deve ser iniciado quando você pressiona F5 ou clica em **Depurar**, **Iniciar Depuração**. Selecione **Sim** para iniciar o aplicativo; caso contrário, selecione **Não**. Se você selecionar **Não**, ainda poderá depurar o aplicativo se você usar um método diferente para iniciá-lo.  
+  **Iniciar Aplicativo**  
+  Especifica se o aplicativo deve ser iniciado quando você pressiona F5 ou clica em **Depurar**, **Iniciar Depuração**. Selecione **Sim** para iniciar o aplicativo; caso contrário, selecione **Não**. Se você selecionar **Não**, ainda poderá depurar o aplicativo se você usar um método diferente para iniciá-lo.  
   
- **Tipo de Depurador**  
- Especifica os tipos de código a depurar. Selecione **Somente Script** para depurar o código JavaScript. Selecione **Somente Gerenciado** para depurar código gerenciado pelo Common Language Runtime. Selecione **Somente Nativo** para depurar código C++. Selecione **Nativo com Script** para depurar C++ e JavaScript. Selecione **Misto (Gerenciado e Nativo)** para depurar código gerenciado e C++.  
+  **Tipo de Depurador**  
+  Especifica os tipos de código a depurar. Selecione **Somente Script** para depurar o código JavaScript. Selecione **Somente Gerenciado** para depurar código gerenciado pelo Common Language Runtime. Selecione **Somente Nativo** para depurar código C++. Selecione **Nativo com Script** para depurar C++ e JavaScript. Selecione **Misto (Gerenciado e Nativo)** para depurar código gerenciado e C++.  
   
- **Permitir Loopback de Rede Local**  
- Especifica se o acesso ao endereço IP de loopback é permitido para testes de aplicativos. Selecione **Sim** para permitir o uso do endereço de loopback se o aplicativo cliente estiver no mesmo computador em que o aplicativo para servidores está em execução; caso contrário, selecione **Não**. Essa propriedade estará disponível somente se a propriedade **Depurador a Iniciar** estiver definida como **Computador Remoto**.  
+  **Permitir Loopback de Rede Local**  
+  Especifica se o acesso ao endereço IP de loopback é permitido para testes de aplicativos. Selecione **Sim** para permitir o uso do endereço de loopback se o aplicativo cliente estiver no mesmo computador em que o aplicativo para servidores está em execução; caso contrário, selecione **Não**. Essa propriedade estará disponível somente se a propriedade **Depurador a Iniciar** estiver definida como **Computador Remoto**.  
   
- **Nome do Computador**  
- Especifica o nome do computador remoto no qual hospedar o depurador. Essa propriedade estará disponível somente se **Depurador a Iniciar** estiver definido como **Computador Remoto**.  
+  **Nome do Computador**  
+  Especifica o nome do computador remoto no qual hospedar o depurador. Essa propriedade estará disponível somente se **Depurador a Iniciar** estiver definido como **Computador Remoto**.  
   
- **Exigir Autenticação**  
- Especifica se o computador remoto exige autenticação. Essa propriedade estará disponível somente se **Depurador a Iniciar** estiver definido como **Computador Remoto**.
+  **Exigir Autenticação**  
+  Especifica se o computador remoto exige autenticação. Essa propriedade estará disponível somente se **Depurador a Iniciar** estiver definido como **Computador Remoto**.
 
 
 

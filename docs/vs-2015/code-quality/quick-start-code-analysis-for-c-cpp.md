@@ -1,7 +1,7 @@
 ---
 title: 'Início rápido: Análise de código para C / C++ | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - code analysis,C/C++
 ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
 caps.latest.revision: 10
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 97e3aa842a2ebb19492370836058ec2236a44564
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 56f14abab372a6a6e533675b070d420a4dfc7a5e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466406"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758189"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Início Rápido: análise de código para C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [início rápido: análise de código para C/C++](https://docs.microsoft.com/visualstudio/code-quality/quick-start-code-analysis-for-c-cpp).  
-  
 Você pode melhorar a qualidade do seu aplicativo, executando a análise de código regularmente em código C ou C++. Isso pode ajudá-lo a localizar problemas mais comuns, violações de boa prática de programação ou defeitos que são difíceis de descobrir por meio de testes. Os avisos da análise de código diferem dos erros e avisos do compilador porque a análise de código procura por padrões de código específicos que são válidos, mas que ainda podem criar problemas para você ou outras pessoas que usam seu código.  
   
 ## <a name="in-this-topic"></a>Neste tópico  
@@ -83,15 +81,15 @@ Você pode melhorar a qualidade do seu aplicativo, executando a análise de cód
   
  Para executar análise de código em uma solução:  
   
--   No menu **Compilar**, escolha **Executar Análise de Código na Solução**.  
+- No menu **Compilar**, escolha **Executar Análise de Código na Solução**.  
   
- Para executar análise de código em um projeto:  
+  Para executar análise de código em um projeto:  
   
--   No Gerenciador de soluções, escolha o nome do projeto.  
+- No Gerenciador de soluções, escolha o nome do projeto.  
   
--   Sobre o **compilar** menu, escolha **executar análise de código na** *nome do projeto*.  
+- Sobre o **compilar** menu, escolha **executar análise de código na** *nome do projeto*.  
   
- A solução ou projeto é compilada e análise de código é executado. Os resultados aparecem na janela Análise de Código.  
+  A solução ou projeto é compilada e análise de código é executado. Os resultados aparecem na janela Análise de Código.  
   
 ##  <a name="BKMK_Analyze"></a> Analisar e resolver avisos da análise de código  
  Para analisar um aviso específico, escolha o título do aviso na janela Análise de Código. O aviso se expande para exibir informações adicionais sobre o problema. Quando possível, a análise de código exibe os números de linha e a lógica de análise que levou ao aviso. Para obter informações detalhadas sobre o aviso, incluindo soluções possíveis para o problema, escolha a id do aviso para exibir o tópico da Ajuda na biblioteca MSND para a mensagem.  
@@ -108,13 +106,13 @@ Você pode melhorar a qualidade do seu aplicativo, executando a análise de cód
   
  Para suprimir um aviso:  
   
-1.  Se as informações detalhadas não for exibidas, escolha o título do aviso para expandi-lo.  
+1. Se as informações detalhadas não for exibidas, escolha o título do aviso para expandi-lo.  
   
-2.  Escolha o link **Ações** na parte inferior do aviso.  
+2. Escolha o link **Ações** na parte inferior do aviso.  
   
-3.  Escolher **suprimir mensagem** e, em seguida, escolha **na origem**.  
+3. Escolher **suprimir mensagem** e, em seguida, escolha **na origem**.  
   
- Suprimir uma mensagem insere `#pragma warning (disable:`*WarningId*`)`, que suprime o aviso para a linha de código.  
+   Suprimir uma mensagem insere `#pragma warning (disable:`*WarningId*`)`, que suprime o aviso para a linha de código.  
   
 ##  <a name="BKMK_Creating_work_items_for_code_analysis_warnings"></a> Criando itens de trabalho para o código avisos de análise  
  Você pode usar o recurso de rastreamento de item de trabalho para registrar bugs de dentro do Visual Studio. Para usar esse recurso, você deve se conectar a uma instância do Team Foundation Server.  

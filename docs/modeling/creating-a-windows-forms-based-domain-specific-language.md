@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f8034ae225707ec6030daba39ed09bab3bd161c4
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 01b2b906d514d8fd9042c1046ea2481faee39499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859517"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926677"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Criando uma linguagem específica do domínio baseada no Windows Forms
 Você pode usar o Windows Forms para exibir o estado de um modelo de linguagem específica do domínio (DSL), em vez de usar um diagrama DSL. Este tópico orienta você por meio de um Windows Form de associação a uma DSL, usando o SDK de modelagem e visualização do Visual Studio.
@@ -26,30 +26,32 @@ Você pode usar o Windows Forms para exibir o estado de um modelo de linguagem e
 
 #### <a name="to-create-a-minimal-winforms-dsl"></a>Para criar uma DSL WinForms mínima
 
-1.  Criar uma DSL a partir de **WinForm Designer mínimo** modelo.
+1. Criar uma DSL a partir de **WinForm Designer mínimo** modelo.
 
-     Neste passo a passo, os seguintes nomes são considerados:
+    Neste passo a passo, os seguintes nomes são considerados:
 
-    |||
-    |-|-|
-    |Nome da solução e DSL|FarmApp|
-    |Namespace|Company.FarmApp|
 
-2.  Fazer experiências com o exemplo inicial que o modelo fornece:
+   | | |
+   |-|-|
+   | Nome da solução e DSL | FarmApp |
+   | Namespace | Company.FarmApp |
 
-    1.  Transforme todos os modelos.
 
-    2.  Compilar e executar o exemplo (**CTRL + F5**).
+2. Fazer experiências com o exemplo inicial que o modelo fornece:
 
-    3.  Na instância experimental do Visual Studio, abra o `Sample` arquivo no projeto de depuração.
+   1.  Transforme todos os modelos.
 
-         Observe que ele é exibido em um controle Windows Forms.
+   2.  Compilar e executar o exemplo (**CTRL + F5**).
 
-         Você também pode ver os elementos do modelo exibido no Explorer.
+   3.  Na instância experimental do Visual Studio, abra o `Sample` arquivo no projeto de depuração.
 
-         Adicionar alguns elementos no formulário ou o Explorer e observe que eles aparecem na exibição de.
+        Observe que ele é exibido em um controle Windows Forms.
 
- Na instância principal do Visual Studio, observe os seguintes pontos sobre a solução DSL:
+        Você também pode ver os elementos do modelo exibido no Explorer.
+
+        Adicionar alguns elementos no formulário ou o Explorer e observe que eles aparecem na exibição de.
+
+   Na instância principal do Visual Studio, observe os seguintes pontos sobre a solução DSL:
 
 -   `DslDefinition.dsl` não contém nenhum elemento de diagrama. Isso ocorre porque você não usará os diagramas DSL para exibir modelos deste DSL instância. Em vez disso, você associará a um formulário do Windows para o modelo e os elementos no formulário exibirá o modelo.
 
@@ -132,30 +134,30 @@ Você pode usar o Windows Forms para exibir o estado de um modelo de linguagem e
 
 #### <a name="to-connect-your-model-to-a-form"></a>Para se conectar a seu modelo a um formulário
 
-1.  No **interface do usuário** do projeto, exclua todos os arquivos. cs existente.
+1. No **interface do usuário** do projeto, exclua todos os arquivos. cs existente.
 
-2.  Adicione um novo **controle de usuário** arquivo chamado `FarmControl` para o **interface do usuário** projeto.
+2. Adicione um novo **controle de usuário** arquivo chamado `FarmControl` para o **interface do usuário** projeto.
 
-3.  No **fontes de dados** janela, no menu suspenso na **Farm**, escolha **detalhes**.
+3. No **fontes de dados** janela, no menu suspenso na **Farm**, escolha **detalhes**.
 
-     Deixe as configurações padrão para as outras propriedades.
+    Deixe as configurações padrão para as outras propriedades.
 
-4.  Abra FarmControl.cs na exibição de design.
+4. Abra FarmControl.cs na exibição de design.
 
-     Arraste **Farm** da janela fontes de dados para FarmControl.
+    Arraste **Farm** da janela fontes de dados para FarmControl.
 
-     Um conjunto de controles é exibida, um para cada propriedade. As propriedades da relação não geram controles.
+    Um conjunto de controles é exibida, um para cada propriedade. As propriedades da relação não geram controles.
 
-5.  Exclua **farmBindingNavigator**. Isso também é gerado automaticamente no `FarmControl` designer, mas não é útil para este aplicativo.
+5. Exclua **farmBindingNavigator**. Isso também é gerado automaticamente no `FarmControl` designer, mas não é útil para este aplicativo.
 
-6.  Usando a caixa de ferramentas, crie duas instâncias de **DataGridView**e nomeá-los `AnimalGridView` e `FieldGridView`.
+6. Usando a caixa de ferramentas, crie duas instâncias de **DataGridView**e nomeá-los `AnimalGridView` e `FieldGridView`.
 
-    > [!NOTE]
-    >  É uma etapa de alternativa ao arrastar os itens de animais e campos da janela fontes de dados para o controle. Essa ação cria automaticamente grades de dados e associações entre a exibição de grade e a fonte de dados. No entanto, essa associação não funciona corretamente para DSLs. Portanto, é melhor criar grades de dados e associações manualmente.
+   > [!NOTE]
+   >  É uma etapa de alternativa ao arrastar os itens de animais e campos da janela fontes de dados para o controle. Essa ação cria automaticamente grades de dados e associações entre a exibição de grade e a fonte de dados. No entanto, essa associação não funciona corretamente para DSLs. Portanto, é melhor criar grades de dados e associações manualmente.
 
-7.  Se a caixa de ferramentas não contém o **ModelingBindingSource** ferramenta, adicioná-lo. No menu de atalho do **dados** guia, escolha **escolher itens**. No **Choose Toolbox Items** caixa de diálogo, selecione **ModelingBindingSource** do **guia do .NET Framework**.
+7. Se a caixa de ferramentas não contém o **ModelingBindingSource** ferramenta, adicioná-lo. No menu de atalho do **dados** guia, escolha **escolher itens**. No **Choose Toolbox Items** caixa de diálogo, selecione **ModelingBindingSource** do **guia do .NET Framework**.
 
-8.  Usando a caixa de ferramentas, crie duas instâncias de **ModelingBindingSource**e nomeá-los `AnimalBinding` e `FieldBinding`.
+8. Usando a caixa de ferramentas, crie duas instâncias de **ModelingBindingSource**e nomeá-los `AnimalBinding` e `FieldBinding`.
 
 9. Defina as **fonte de dados** propriedade de cada **ModelingBindingSource** para **farmBindingSource**.
 
@@ -165,15 +167,15 @@ Você pode usar o Windows Forms para exibir o estado de um modelo de linguagem e
 
 11. Ajuste o layout do controle Farm a seu gosto.
 
- O **ModelingBindingSource** é um adaptador que executa várias funções que são específicas a DSLs:
+    O **ModelingBindingSource** é um adaptador que executa várias funções que são específicas a DSLs:
 
--   Ele encapsula as atualizações em uma transação de Store VMSDK.
+- Ele encapsula as atualizações em uma transação de Store VMSDK.
 
-     Por exemplo, quando o usuário exclui uma linha de grade do modo de exibição de dados, uma associação regular resultaria em uma exceção de transação.
+   Por exemplo, quando o usuário exclui uma linha de grade do modo de exibição de dados, uma associação regular resultaria em uma exceção de transação.
 
--   Isso garante que, quando o usuário seleciona uma linha, a janela Propriedades exibe as propriedades do elemento de modelo correspondente, em vez de linha de grade de dados.
+- Isso garante que, quando o usuário seleciona uma linha, a janela Propriedades exibe as propriedades do elemento de modelo correspondente, em vez de linha de grade de dados.
 
- ![DslWpf4](../modeling/media/dslwpf4.png) esquema de links entre fontes de dados e modos de exibição.
+  ![DslWpf4](../modeling/media/dslwpf4.png) esquema de links entre fontes de dados e modos de exibição.
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Para concluir as associações a DSL
 
@@ -247,62 +249,60 @@ Você pode usar o Windows Forms para exibir o estado de um modelo de linguagem e
 
 #### <a name="to-provide-add-buttons"></a>Para fornecer botões de adição
 
-1.  Na exibição de design de FarmControl.cs, use a caixa de ferramentas para criar um botão no formulário.
+1. Na exibição de design de FarmControl.cs, use a caixa de ferramentas para criar um botão no formulário.
 
-     Edite o nome e o texto do botão, por exemplo ao `New Sheep`.
+    Edite o nome e o texto do botão, por exemplo ao `New Sheep`.
 
-2.  Abra o código por trás do botão (por exemplo, duas vezes nele).
+2. Abra o código por trás do botão (por exemplo, duas vezes nele).
 
-     Editá-lo da seguinte maneira:
+    Editá-lo da seguinte maneira:
 
-    ```csharp
-    private void NewSheepButton_Click(object sender, EventArgs e)
-    {
-      using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
-      {
-        elementOperations.MergeElementGroup(farm,
-          new ElementGroup(new Sheep(farm.Partition)));
-        t.Commit();
-      }
-    }
+   ```csharp
+   private void NewSheepButton_Click(object sender, EventArgs e)
+   {
+     using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
+     {
+       elementOperations.MergeElementGroup(farm,
+         new ElementGroup(new Sheep(farm.Partition)));
+       t.Commit();
+     }
+   }
 
-    // The following code is shared with other add buttons:
-    private ElementOperations operationsCache = null;
-    private ElementOperations elementOperations
-    {
-      get
-      {
-        if (operationsCache == null)
-        {
-          operationsCache = new ElementOperations(farm.Store, farm.Partition);
-        }
-        return operationsCache;
-      }
-    }
-    private Farm farm
-    {
-      get { return this.farmBindingSource.DataSource as Farm; }
-    }
+   // The following code is shared with other add buttons:
+   private ElementOperations operationsCache = null;
+   private ElementOperations elementOperations
+   {
+     get
+     {
+       if (operationsCache == null)
+       {
+         operationsCache = new ElementOperations(farm.Store, farm.Partition);
+       }
+       return operationsCache;
+     }
+   }
+   private Farm farm
+   {
+     get { return this.farmBindingSource.DataSource as Farm; }
+   }
+   ```
 
-    ```
+    Você também precisará inserir a seguinte diretiva:
 
-     Você também precisará inserir a seguinte diretiva:
+   ```csharp
 
-    ```csharp
+   using Microsoft.VisualStudio.Modeling;
+   ```
 
-    using Microsoft.VisualStudio.Modeling;
+3. Adicione botões semelhantes para Goats e campos.
 
-    ```
+4. Criar e executar a solução.
 
-3.  Adicione botões semelhantes para Goats e campos.
+5. Verifique se o novo botão adiciona um item. O novo item deve aparecer no FarmApp Explorer e na exibição de grade de dados apropriado.
 
-4.  Criar e executar a solução.
+    Você deve ser capaz de editar o nome do elemento na exibição de grade de dados. Você também pode excluí-lo a partir daí.
 
-5.  Verifique se o novo botão adiciona um item. O novo item deve aparecer no FarmApp Explorer e na exibição de grade de dados apropriado.
-
-     Você deve ser capaz de editar o nome do elemento na exibição de grade de dados. Você também pode excluí-lo a partir daí.
-
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Sobre o código para adicionar um elemento
  Para os novos botões de elemento, o seguinte código alternativo é um pouco mais simples.
@@ -316,7 +316,6 @@ private void NewSheepButton_Click(object sender, EventArgs e)
     t.Commit();
   }
 }
-
 ```
 
  No entanto, esse código não define um nome padrão para o novo item. Ele não executa qualquer mesclagem personalizada que você possa ter definido na **diretivas de mesclagem de elementos** da DSL, e não executa qualquer código personalizado de mesclagem que possa ter sido definido.

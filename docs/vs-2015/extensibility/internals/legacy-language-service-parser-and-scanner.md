@@ -1,7 +1,7 @@
 ---
 title: Analisador de serviço de linguagem herdada e Scanner | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8aaf608c4a03816fb109e65c2b8d71d06a279799
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd419c569a298afd37548fd7b85a23cad733e371
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467727"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786387"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analisador e scanner do serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [analisador de serviço de linguagem herdado e o Scanner](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-parser-and-scanner).  
-  
 O analisador é o coração do serviço de linguagem. As classes de linguagem da estrutura de pacote gerenciado (MPF) exigem um analisador de linguagem para selecionar as informações sobre o código que está sendo exibido. Um analisador separa o texto em tokens léxicos e, em seguida, identifica esses tokens por tipo e funcionalidade.  
   
 ## <a name="discussion"></a>Discussão  
@@ -65,11 +63,11 @@ namespace MyNamespace
 ## <a name="types-of-parsers"></a>Tipos de analisadores  
  Um analisador de serviço de linguagem não é o mesmo que um analisador usado como parte de um compilador. No entanto, esse tipo de analisador precisa usar um scanner e um analisador, da mesma forma como um analisador de compilador.  
   
--   Um scanner é usado para identificar os tipos de tokens. Essas informações são usadas para o realce de sintaxe e para identificar rapidamente os tipos de token que podem disparar outras operações, por exemplo, a correspondência de chaves. Este verificador é representado pelo <xref:Microsoft.VisualStudio.Package.IScanner> interface.  
+- Um scanner é usado para identificar os tipos de tokens. Essas informações são usadas para o realce de sintaxe e para identificar rapidamente os tipos de token que podem disparar outras operações, por exemplo, a correspondência de chaves. Este verificador é representado pelo <xref:Microsoft.VisualStudio.Package.IScanner> interface.  
   
--   Um analisador é usado para descrever as funções e o escopo dos tokens. Essas informações são usadas em operações do IntelliSense para identificar elementos de linguagem, como métodos, variáveis, parâmetros e declarações e fornecer listas de membros e assinaturas de método com base no contexto. Esse parser também é usado para localizar pares correspondentes de elemento de linguagem, como chaves e parênteses. Esse analisador é acessado por meio de <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método no <xref:Microsoft.VisualStudio.Package.LanguageService> classe.  
+- Um analisador é usado para descrever as funções e o escopo dos tokens. Essas informações são usadas em operações do IntelliSense para identificar elementos de linguagem, como métodos, variáveis, parâmetros e declarações e fornecer listas de membros e assinaturas de método com base no contexto. Esse parser também é usado para localizar pares correspondentes de elemento de linguagem, como chaves e parênteses. Esse analisador é acessado por meio de <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método no <xref:Microsoft.VisualStudio.Package.LanguageService> classe.  
   
- Como implementar um analisador e scanner do seu serviço de linguagem cabe a você. Vários recursos estão disponíveis que descrevem como os analisadores funcionam e como escrever seu próprio analisador. Além disso, vários produtos gratuitos e comerciais estão disponíveis que ajuda na criação de um analisador.  
+  Como implementar um analisador e scanner do seu serviço de linguagem cabe a você. Vários recursos estão disponíveis que descrevem como os analisadores funcionam e como escrever seu próprio analisador. Além disso, vários produtos gratuitos e comerciais estão disponíveis que ajuda na criação de um analisador.  
   
 ### <a name="the-parsesource-parser"></a>O analisador ParseSource  
  Ao contrário de um analisador que é usado como parte de um compilador (no qual os tokens são convertidos em alguma forma de código executável), um analisador de serviço de linguagem pode ser chamado por muitas razões diferentes e em muitos contextos diferentes. Como você pode implementar essa abordagem na <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método no <xref:Microsoft.VisualStudio.Package.LanguageService> classe cabe a você. É importante ter em mente que o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método pode ser chamado em um thread em segundo plano.  
@@ -85,7 +83,7 @@ namespace MyNamespace
 ## <a name="parsing-for-matching-braces"></a>Análise para chaves correspondentes  
  Este exemplo mostra o fluxo de controle para correspondência de uma chave de fechamento que o usuário digitou. Nesse processo, o que é usado para colorização de scanner também é usado para determinar o tipo de token e se o token pode disparar uma operação de correspondência de chaves. Se o gatilho for encontrado, o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método é chamado para localizar a chave correspondente. Por fim, as duas chaves são realçadas.  
   
- Mesmo que as chaves são usadas em nomes de gatilhos e analisar as razões, esse processo não é limitado a chaves reais. Há suporte para qualquer par de caracteres que é especificada para ser uma correspondência de par. Os exemplos incluem (e), \< e >, e [e].  
+ Mesmo que as chaves são usadas em nomes de gatilhos e analisar as razões, esse processo não é limitado a chaves reais. Há suporte para qualquer par de caracteres que é especificado como sendo um par correspondente. Os exemplos incluem (e), \< e >, e [e].  
   
  Suponha que o serviço de linguagem dá suporte a chaves correspondentes.  
   

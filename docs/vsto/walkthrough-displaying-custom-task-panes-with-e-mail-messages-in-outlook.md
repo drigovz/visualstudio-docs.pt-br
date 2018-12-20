@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edcff4b5058d87f467e4b8e94637a1dc74cee98f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1c25121e96005486450397938aad3c24f89d26cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670180"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828462"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Passo a passo: Exibir painéis de tarefas personalizados com mensagens de email no Outlook
   Este passo a passo demonstra como exibir uma instância exclusiva de cada mensagem de email que é criado ou aberto um painel de tarefas personalizado. Os usuários podem exibir ou ocultar o painel de tarefas personalizado usando um botão na faixa de opções de cada mensagem de email.  
@@ -56,11 +56,11 @@ ms.locfileid: "35670180"
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
   
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] ou o Microsoft Outlook 2010.  
+- Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] ou o Microsoft Outlook 2010.  
   
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer os painéis de tarefas de uso do i: no Outlook?](http://go.microsoft.com/fwlink/?LinkID=130309).  
+  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer os painéis de tarefas de uso do i: no Outlook?](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
 ## <a name="create-the-project"></a>Criar o projeto  
  Painéis de tarefas personalizados são implementados nos suplementos do VSTO. Comece criando um projeto de suplemento do VSTO para Outlook.  
@@ -121,13 +121,13 @@ ms.locfileid: "35670180"
 ## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Crie uma classe para gerenciar janelas de inspeção e painéis de tarefas personalizados  
  Há vários casos em que o suplemento do VSTO deve identificar qual painel de tarefas personalizado está associado com uma mensagem de email específico. Esses casos incluem o seguinte:  
   
--   Quando o usuário fecha uma mensagem de email. Nesse caso, o suplemento do VSTO deve remover o painel de tarefas personalizado correspondente para garantir que recursos usados pelo suplemento do VSTO são limpos corretamente.  
+- Quando o usuário fecha uma mensagem de email. Nesse caso, o suplemento do VSTO deve remover o painel de tarefas personalizado correspondente para garantir que recursos usados pelo suplemento do VSTO são limpos corretamente.  
   
--   Quando o usuário fechar o painel de tarefas personalizado. Nesse caso, o suplemento do VSTO deve atualizar o estado do botão de alternância na faixa de opções da mensagem de email.  
+- Quando o usuário fechar o painel de tarefas personalizado. Nesse caso, o suplemento do VSTO deve atualizar o estado do botão de alternância na faixa de opções da mensagem de email.  
   
--   Quando o usuário clica no botão de alternância na faixa de opções. Nesse caso, o suplemento do VSTO deve ocultar ou exibir o painel de tarefas correspondente.  
+- Quando o usuário clica no botão de alternância na faixa de opções. Nesse caso, o suplemento do VSTO deve ocultar ou exibir o painel de tarefas correspondente.  
   
- Para habilitar o suplemento do VSTO controlar qual painel de tarefas personalizado está associado com cada mensagem de email abertos, crie uma classe personalizada que encapsula os pares de <xref:Microsoft.Office.Interop.Outlook.Inspector> e <xref:Microsoft.Office.Tools.CustomTaskPane> objetos. Essa classe cria um novo objeto de painel de tarefas personalizado para cada mensagem de email e exclui o painel de tarefas personalizado quando a mensagem de email correspondente é fechada.  
+  Para habilitar o suplemento do VSTO controlar qual painel de tarefas personalizado está associado com cada mensagem de email abertos, crie uma classe personalizada que encapsula os pares de <xref:Microsoft.Office.Interop.Outlook.Inspector> e <xref:Microsoft.Office.Tools.CustomTaskPane> objetos. Essa classe cria um novo objeto de painel de tarefas personalizado para cada mensagem de email e exclui o painel de tarefas personalizado quando a mensagem de email correspondente é fechada.  
   
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Para criar uma classe para gerenciar janelas de inspeção e painéis de tarefas personalizados  
   
@@ -168,36 +168,36 @@ ms.locfileid: "35670180"
   
 ### <a name="to-initialize-and-clean-up-resources-used-by-the-vsto-add-in"></a>Para inicializar e limpar os recursos usados pelo suplemento do VSTO  
   
-1.  No *ThisAddIn.cs* ou *ThisAddIn. vb* arquivo, localize a definição do `ThisAddIn` classe.  
+1. No *ThisAddIn.cs* ou *ThisAddIn. vb* arquivo, localize a definição do `ThisAddIn` classe.  
   
-2.  Adicione as seguintes declarações para o `ThisAddIn` classe:  
+2. Adicione as seguintes declarações para o `ThisAddIn` classe:  
   
-    -   O `inspectorWrappersValue` campo contém todos os <xref:Microsoft.Office.Interop.Outlook.Inspector> e `InspectorWrapper` objetos que são gerenciados pelo suplemento do VSTO.  
+   - O `inspectorWrappersValue` campo contém todos os <xref:Microsoft.Office.Interop.Outlook.Inspector> e `InspectorWrapper` objetos que são gerenciados pelo suplemento do VSTO.  
   
-    -   O `inspectors` campo mantém uma referência para a coleção de janelas de inspeção na instância atual do Outlook. Esta referência impede que o coletor de lixo de liberar a memória que contém o manipulador de eventos para o <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> evento, que você irá declarar na próxima etapa.  
+   - O `inspectors` campo mantém uma referência para a coleção de janelas de inspeção na instância atual do Outlook. Esta referência impede que o coletor de lixo de liberar a memória que contém o manipulador de eventos para o <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> evento, que você irá declarar na próxima etapa.  
   
      [!code-csharp[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#8)]
      [!code-vb[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#8)]  
   
-3.  Substitua o `ThisAddIn_Startup` método com o código a seguir. Esse código anexa um manipulador de eventos para o <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> evento e ele passa cada existente <xref:Microsoft.Office.Interop.Outlook.Inspector> objeto para o manipulador de eventos. Se o usuário carrega o suplemento do VSTO depois que o Outlook já está em execução, o suplemento do VSTO usa essas informações para criar painéis de tarefas personalizados para todas as mensagens de email que já estão abertas.  
+3. Substitua o `ThisAddIn_Startup` método com o código a seguir. Esse código anexa um manipulador de eventos para o <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> evento e ele passa cada existente <xref:Microsoft.Office.Interop.Outlook.Inspector> objeto para o manipulador de eventos. Se o usuário carrega o suplemento do VSTO depois que o Outlook já está em execução, o suplemento do VSTO usa essas informações para criar painéis de tarefas personalizados para todas as mensagens de email que já estão abertas.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#9)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#9)]  
+    [!code-csharp[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#9)]
+    [!code-vb[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#9)]  
   
-4.  Substitua o `ThisAddIn_ShutDown` método com o código a seguir. Esse código desanexa o <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> manipulador de eventos e limpa os objetos usados pelo suplemento do VSTO.  
+4. Substitua o `ThisAddIn_ShutDown` método com o código a seguir. Esse código desanexa o <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> manipulador de eventos e limpa os objetos usados pelo suplemento do VSTO.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]  
+    [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
+    [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]  
   
-5.  Adicione o seguinte <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> manipulador de eventos para o `ThisAddIn` classe. Se um novo <xref:Microsoft.Office.Interop.Outlook.Inspector> contém uma mensagem de email, o método cria uma instância de um novo `InspectorWrapper` objeto para gerenciar a relação entre a mensagem de email e o painel de tarefas correspondente.  
+5. Adicione o seguinte <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> manipulador de eventos para o `ThisAddIn` classe. Se um novo <xref:Microsoft.Office.Interop.Outlook.Inspector> contém uma mensagem de email, o método cria uma instância de um novo `InspectorWrapper` objeto para gerenciar a relação entre a mensagem de email e o painel de tarefas correspondente.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]  
+    [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
+    [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]  
   
-6.  Adicione a seguinte propriedade para o `ThisAddIn` classe. Essa propriedade expõe particular `inspectorWrappersValue` campo para o código fora de `ThisAddIn` classe.  
+6. Adicione a seguinte propriedade para o `ThisAddIn` classe. Essa propriedade expõe particular `inspectorWrappersValue` campo para o código fora de `ThisAddIn` classe.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#12)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#12)]  
+    [!code-csharp[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#12)]
+    [!code-vb[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#12)]  
   
 ## <a name="checkpoint"></a>Ponto de verificação  
  Compile o projeto para garantir que ele foi compilado sem erros.  
@@ -230,29 +230,29 @@ ms.locfileid: "35670180"
   
 ### <a name="to-test-the-vsto-add-in"></a>Para testar o suplemento do VSTO  
   
-1.  Pressione **F5**.  
+1. Pressione **F5**.  
   
-2.  No Outlook, clique em **New** para criar uma nova mensagem de email.  
+2. No Outlook, clique em **New** para criar uma nova mensagem de email.  
   
-3.  Na faixa de opções da mensagem de email, clique no **Add-Ins** guia e, em seguida, clique no **Mostrar painel de tarefas** botão.  
+3. Na faixa de opções da mensagem de email, clique no **Add-Ins** guia e, em seguida, clique no **Mostrar painel de tarefas** botão.  
   
-     Verificar se um painel de tarefas com o título **meu painel de tarefas** é exibida com a mensagem de email.  
+    Verificar se um painel de tarefas com o título **meu painel de tarefas** é exibida com a mensagem de email.  
   
-4.  No painel de tarefas, digite **primeiro painel de tarefas** na caixa de texto.  
+4. No painel de tarefas, digite **primeiro painel de tarefas** na caixa de texto.  
   
-5.  Feche o painel de tarefas.  
+5. Feche o painel de tarefas.  
   
-     Verifique o estado do **Mostrar painel de tarefas** botão muda para que ele não seja pressionado.  
+    Verifique o estado do **Mostrar painel de tarefas** botão muda para que ele não seja pressionado.  
   
-6.  Clique o **Mostrar painel de tarefas** novamente no botão.  
+6. Clique o **Mostrar painel de tarefas** novamente no botão.  
   
-     Verifique se o painel de tarefas é aberta e que a caixa de texto ainda contém a cadeia de caracteres **primeiro painel de tarefas**.  
+    Verifique se o painel de tarefas é aberta e que a caixa de texto ainda contém a cadeia de caracteres **primeiro painel de tarefas**.  
   
-7.  No Outlook, clique em **New** para criar uma segunda mensagem de email.  
+7. No Outlook, clique em **New** para criar uma segunda mensagem de email.  
   
-8.  Na faixa de opções da mensagem de email, clique no **Add-Ins** guia e, em seguida, clique no **Mostrar painel de tarefas** botão.  
+8. Na faixa de opções da mensagem de email, clique no **Add-Ins** guia e, em seguida, clique no **Mostrar painel de tarefas** botão.  
   
-     Verificar se um painel de tarefas com o título **meu painel de tarefas** é exibida com a mensagem de email, e a caixa de texto nesse painel de tarefas está vazia.  
+    Verificar se um painel de tarefas com o título **meu painel de tarefas** é exibida com a mensagem de email, e a caixa de texto nesse painel de tarefas está vazia.  
   
 9. No painel de tarefas, digite **segundo painel de tarefas** na caixa de texto.  
   
@@ -260,7 +260,7 @@ ms.locfileid: "35670180"
   
      Verifique se o painel de tarefas que está associado essa mensagem de email ainda exibe **primeiro painel de tarefas** na caixa de texto.  
   
- Este suplemento do VSTO também lida com mais cenários avançados que você pode experimentar. Por exemplo, você pode testar o comportamento ao exibir emails usando o **Próximo Item** e **Item anterior** botões. Você também pode testar o comportamento ao descarregar o suplemento do VSTO, abrir várias mensagens de email e, em seguida, recarregue o suplemento do VSTO.  
+    Este suplemento do VSTO também lida com mais cenários avançados que você pode experimentar. Por exemplo, você pode testar o comportamento ao exibir emails usando o **Próximo Item** e **Item anterior** botões. Você também pode testar o comportamento ao descarregar o suplemento do VSTO, abrir várias mensagens de email e, em seguida, recarregue o suplemento do VSTO.  
   
 ## <a name="next-steps"></a>Próximas etapas  
  Você pode aprender mais sobre como criar painéis de tarefas personalizados com estes tópicos:  

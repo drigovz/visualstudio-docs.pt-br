@@ -1,7 +1,7 @@
 ---
 title: Enumeradores | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6dcbd3dea8ad932aec5890bc085873ce3d20a8f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 90ba436dcfbd09c29f68bff056e315f057e1a983
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474249"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810267"
 ---
 # <a name="enumerators"></a>Enumeradores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [enumeradores](https://docs.microsoft.com/visualstudio/extensibility/enumerators).  
-  
 Esta seção lista os tipos de dados em que a API de plug-in de controle do código-fonte que o plug-in de controle do código-fonte deve saber sobre enumerador.  
   
 ## <a name="in-this-section"></a>Nesta seção  

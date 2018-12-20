@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 947232d593543276de281d89e3d05d6648f29ec1
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8770871bfdc361e29d7ac7c2fc984477b1ec0ea1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833129"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Como: definir e selecionar intervalos em documentos programaticamente
   Você pode definir um intervalo em um documento do Microsoft Office Word usando um <xref:Microsoft.Office.Interop.Word.Range> objeto. Você pode selecionar todo o documento de várias maneiras, por exemplo, usando o <xref:Microsoft.Office.Interop.Word.Range.Select%2A> método da <xref:Microsoft.Office.Interop.Word.Range> do objeto ou usando a propriedade Content da <xref:Microsoft.Office.Tools.Word.Document> classe (em uma personalização no nível de documento) ou o <xref:Microsoft.Office.Interop.Word.Document> classe (em um Suplemento do VSTO).  
@@ -60,21 +60,21 @@ ms.locfileid: "35257290"
   
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-content-property"></a>Para selecionar todo o documento como um intervalo usando a propriedade de conteúdo  
   
-1.  Use o <xref:Microsoft.Office.Tools.Word.Document.Content%2A> propriedade para definir um intervalo que abrange todo o documento.  
+1. Use o <xref:Microsoft.Office.Tools.Word.Document.Content%2A> propriedade para definir um intervalo que abrange todo o documento.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#20)]
-     [!code-csharp[Trin_VstcoreWordAutomation#20](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#20)]  
+    [!code-vb[Trin_VstcoreWordAutomation#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#20)]
+    [!code-csharp[Trin_VstcoreWordAutomation#20](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#20)]  
   
- Você também pode usar os métodos e propriedades de outros objetos para definir um intervalo.  
+   Você também pode usar os métodos e propriedades de outros objetos para definir um intervalo.  
   
 ### <a name="to-select-a-sentence-in-the-active-document"></a>Para selecionar uma frase no documento ativo  
   
-1.  Definir o intervalo usando o <xref:Microsoft.Office.Interop.Word.Sentences> coleção. Use o índice da sentença que você deseja selecionar.  
+1. Definir o intervalo usando o <xref:Microsoft.Office.Interop.Word.Sentences> coleção. Use o índice da sentença que você deseja selecionar.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#21)]
-     [!code-csharp[Trin_VstcoreWordAutomation#21](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#21)]  
+    [!code-vb[Trin_VstcoreWordAutomation#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#21)]
+    [!code-csharp[Trin_VstcoreWordAutomation#21](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#21)]  
   
- Outra maneira de selecionar uma sentença é definir manualmente os valores de início e término para o intervalo.  
+   Outra maneira de selecionar uma sentença é definir manualmente os valores de início e término para o intervalo.  
   
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>Para selecionar uma sentença Configurando manualmente os valores de início e término  
   
@@ -100,21 +100,21 @@ ms.locfileid: "35257290"
   
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-content-property"></a>Para selecionar todo o documento como um intervalo usando a propriedade de conteúdo  
   
-1.  Use o <xref:Microsoft.Office.Interop.Word._Document.Content%2A> propriedade para definir um intervalo que abrange todo o documento.  
+1. Use o <xref:Microsoft.Office.Interop.Word._Document.Content%2A> propriedade para definir um intervalo que abrange todo o documento.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#20)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#20](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#20)]  
+    [!code-vb[Trin_VstcoreWordAutomationAddIn#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#20)]
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#20](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#20)]  
   
- Você também pode usar os métodos e propriedades de outros objetos para definir um intervalo.  
+   Você também pode usar os métodos e propriedades de outros objetos para definir um intervalo.  
   
 ### <a name="to-select-a-sentence-in-the-active-document"></a>Para selecionar uma frase no documento ativo  
   
-1.  Definir o intervalo usando o <xref:Microsoft.Office.Interop.Word.Sentences> coleção. Use o índice da sentença que você deseja selecionar.  
+1. Definir o intervalo usando o <xref:Microsoft.Office.Interop.Word.Sentences> coleção. Use o índice da sentença que você deseja selecionar.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#21)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#21](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#21)]  
+    [!code-vb[Trin_VstcoreWordAutomationAddIn#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#21)]
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#21](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#21)]  
   
- Outra maneira de selecionar uma sentença é definir manualmente os valores de início e término para o intervalo.  
+   Outra maneira de selecionar uma sentença é definir manualmente os valores de início e término para o intervalo.  
   
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>Para selecionar uma sentença Configurando manualmente os valores de início e término  
   

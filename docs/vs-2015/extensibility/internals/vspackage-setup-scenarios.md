@@ -1,7 +1,7 @@
 ---
 title: Cenários de instalação de VSPackage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b88dcef6eebe552c23268cb307248956db5486b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34181e5b03b29662188e368561b0f43049629ec1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462475"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788544"
 ---
 # <a name="vspackage-setup-scenarios"></a>Cenários de instalação do VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [cenários de instalação de VSPackage](https://docs.microsoft.com/visualstudio/extensibility/internals/vspackage-setup-scenarios).  
-  
 É importante projetar o seu instalador VSPackage para flexibilidade. Por exemplo, talvez seja necessário liberar um patch de segurança no futuro, ou você pode alterar uma estratégia de negócios que exija suporte de controle de versão lado a lado completo.  
   
  Na [que dão suporte a várias versões do Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md), você pode ler sobre as vantagens e os problemas de dar suporte a instalações lado a lado do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] com instalações lado a lado ou compartilhadas do VSPackage. Em resumo, lado a lado VSPackages lhe dar mais flexibilidade para dar suporte a novos recursos do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  

@@ -1,7 +1,7 @@
 ---
 title: Encerramento e desanexação | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 268c1e51-6363-45d1-964c-1ab99bdfa4f9
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7742ec8ef896006bc00bcbdfcf4961c15acdf746
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1641a9a44a3f37b07e8192169e7301153881484
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464371"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773867"
 ---
 # <a name="termination-and-detaching"></a>Término e desconexão
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [desanexando e encerramento](https://docs.microsoft.com/visualstudio/extensibility/debugger/termination-and-detaching).  
-  
 O exemplo a seguir descreve um encerramento normal.  
   
 ## <a name="discussion"></a>Discussão  

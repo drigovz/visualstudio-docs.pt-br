@@ -1,7 +1,7 @@
 ---
 title: Como configurar projetos para terem plataformas como destino | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a79b32583b130b62dc9946acd71776ac67159817
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e2b39aa13316b1b9ca47c5587ffabf6f6a14e68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460689"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843048"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Como configurar projetos para destinar plataformas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: configurar projetos para plataformas de destino](https://docs.microsoft.com/visualstudio/ide/how-to-configure-projects-to-target-platforms).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite que você configure seus aplicativos para direcionar as plataformas diferentes, incluindo plataformas de 64 bits. Para obter mais informações sobre o suporte à plataforma de 64 bits no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consulte [Aplicativos de 64 bits](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
   
 ## <a name="targeting-platforms-with-the-configuration-manager"></a>Definindo plataformas como destino com o Configuration Manager  
@@ -42,22 +40,22 @@ A versão mais recente deste tópico pode ser encontrada em [como: configurar pr
   
 #### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Para configurar um projeto para ter uma plataforma de 64 bits como destino  
   
-1.  Na barra de menus, escolha **Build**, **Configuration Manager**.  
+1. Na barra de menus, escolha **Build**, **Configuration Manager**.  
   
-2.  Na lista **Plataforma da solução ativa**, escolha uma plataforma de 64 bits para a solução a ter como destino e, em seguida, escolha o botão **Fechar**.  
+2. Na lista **Plataforma da solução ativa**, escolha uma plataforma de 64 bits para a solução a ter como destino e, em seguida, escolha o botão **Fechar**.  
   
-    1.  Se a plataforma que você deseja não aparecer na lista **Plataforma da Solução Ativa**, escolha **Nova**.  
+   1.  Se a plataforma que você deseja não aparecer na lista **Plataforma da Solução Ativa**, escolha **Nova**.  
   
-         A caixa de diálogo **Nova Plataforma da Solução** será exibida.  
+        A caixa de diálogo **Nova Plataforma da Solução** será exibida.  
   
-    2.  Na lista **Digitar ou selecionar a nova plataforma**, escolha **x64**.  
+   2.  Na lista **Digitar ou selecionar a nova plataforma**, escolha **x64**.  
   
-        > [!NOTE]
-        >  Se você der um novo nome à sua configuração, precisará modificar as configurações no **Designer de Projeto** para ter a plataforma correta como destino.  
+       > [!NOTE]
+       >  Se você der um novo nome à sua configuração, precisará modificar as configurações no **Designer de Projeto** para ter a plataforma correta como destino.  
   
-    3.  Se você quiser copiar as configurações de uma configuração de plataforma atual, escolha-a e selecione o botão **OK**.  
+   3.  Se você quiser copiar as configurações de uma configuração de plataforma atual, escolha-a e selecione o botão **OK**.  
   
- As propriedades de todos os projetos que têm a plataforma de 64 bits como destino são atualizadas e o próximo build do projeto será otimizado para plataformas de 64 bits.  
+   As propriedades de todos os projetos que têm a plataforma de 64 bits como destino são atualizadas e o próximo build do projeto será otimizado para plataformas de 64 bits.  
   
 ## <a name="targeting-platforms-in-the-project-designer"></a>Definindo plataformas como destino no Designer de Projeto  
  O Designer de Projeto também fornece uma maneira de definir diferentes plataformas como destino para seu projeto. Se selecionar uma das plataformas incluídas na lista na caixa de diálogo **Nova Plataforma de Solução** não funcionar para sua solução, você poderá criar um nome de configuração personalizado e modificar as configurações no **Designer de Projeto** para ter a plataforma correta como destino.  

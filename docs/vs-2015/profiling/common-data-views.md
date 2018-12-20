@@ -1,7 +1,7 @@
 ---
 title: Exibições de dados comuns | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - Profiling Tools,reports
 ms.assetid: ee5e964c-1222-496d-b825-166443a89d2b
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1253d6ca6a2dc80c1d8875e729f532944038b1b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 120e4ba8b05af3998fd75d973a4cfdb4a662630f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462708"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753678"
 ---
 # <a name="common-data-views"></a>Exibições de dados comuns
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibições de dados comuns](https://docs.microsoft.com/visualstudio/profiling/common-data-views).  
-  
 Esta seção contém informações de referência sobre as exibições e os relatórios dos arquivos de dados do criador de perfil comuns a todos os métodos de criação de perfil.  
   
 ## <a name="in-this-section"></a>Nesta seção  

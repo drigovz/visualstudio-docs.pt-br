@@ -1,7 +1,7 @@
 ---
 title: IDebugPortPicker::SetSite | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 7319e187-adfe-4b3f-aec9-521356fb5a8a
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57f3ada6c5a1b2434e5b88b077f71c678321db68
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54cafb3ae3fee0f986c4eaa5f979b9c38026776f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464768"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760961"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPortPicker::SetSite](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportpicker-setsite).  
-  
 Define o provedor de serviço.  
   
 ## <a name="syntax"></a>Sintaxe  

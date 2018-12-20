@@ -1,7 +1,7 @@
 ---
 title: 'Idiatable:: Get_count | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaTable::get_Count method
 ms.assetid: bb47abe8-6706-4679-bc52-79f6444dae7e
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b181b690afede946129cfa75efa0a65db8d053d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6cc81306bc98a047efdd1944c504c883854d6254
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466971"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739288"
 ---
 # <a name="idiatablegetcount"></a>IDiaTable::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiatable:: Get_count](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiatable-get-count).  
-  
 Recupera o número de itens na tabela.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_Count (   
+HRESULT get_Count (   
    LONG* pRetVal  
 );  
 ```  

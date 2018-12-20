@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88a9e225539a843ddba1850ae5919579ac197081
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2526938274299cc5a90319749531f80e8bd3a90d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573200"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220541"
 ---
 # <a name="vsinstr"></a>VSInstr
 A ferramenta VSInstr é usada para instrumentar binários. Ela é chamada usando a seguinte sintaxe:  

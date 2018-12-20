@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram3 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 4301ba23-c00c-4ce5-8b1e-3f27da312034
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8fd061a8321fffa30befcfc9290e6819d96d90fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e31ab3871098e95f8b1737259b5b37f37ab8cfc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465725"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753564"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProgram3](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram3).  
-  
 Essa interface representa um programa que está em execução em um processo e estende [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) , fornecendo informações de thread.  
   
 ## <a name="syntax"></a>Sintaxe  

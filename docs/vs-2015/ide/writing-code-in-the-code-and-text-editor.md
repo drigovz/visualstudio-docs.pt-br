@@ -1,7 +1,7 @@
 ---
 title: Escrevendo código no Code e no Editor de Texto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -65,18 +65,15 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb879efdc3370578d57b529194a9a8790c9136dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462969"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838680"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Escrevendo código no editor de códigos e de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [escrevendo código no Editor de código e texto](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
-
 O editor do Visual Studio fornece muitos recursos que tornam mais fácil para você escrever e gerenciar seu código. Você pode expandir e recolher blocos de código diferentes usando a estrutura de tópicos. Você pode aprender mais sobre o código que você está usando através do IntelliSense, do **Pesquisador de Objetos** e da Hierarquia de Chamada. Você pode navegar dentro de seu código usando recursos como **Navegar Para**, **Ir para Definição** e **Localizar Todas as Referências**. Você pode inserir blocos de código com snippets de código e pode gerar código usando recursos como o **Gerar do uso**. Se você nunca usou o editor do Visual Studio 2015, consulte [Editando seu código](https://www.visualstudio.com/features/ide-vs) para uma visão geral rápida.  
 
  Você pode exibir seu código de várias maneiras diferentes. Para ver um modo de exibição de classe de sua solução, você pode abrir a janela **Modo de Exibição de Classe** ou expandir os nós no **Gerenciador de Soluções** em seus arquivos de classe.  
@@ -149,19 +146,19 @@ O editor do Visual Studio fornece muitos recursos que tornam mais fácil para vo
 
  Para ocultar a barra de navegação, altere a opção **Barra de Navegação** na configuração Todas as Linguagens do Editor de Texto (**Ferramentas/Opções/Editor de Texto/Todas as Linguagens** ou você pode alterar as configurações de linguagens individuais). Você pode navegar nas caixas suspensas da seguinte maneira:  
 
--   Para mudar o foco da janela de código para a barra de navegação, pressione a combinação de tecla de atalho CTRL + F2.  
+- Para mudar o foco da janela de código para a barra de navegação, pressione a combinação de tecla de atalho CTRL + F2.  
 
--   Para retornar o foco da barra de navegação para a janela de código, pressione a tecla ESC.  
+- Para retornar o foco da barra de navegação para a janela de código, pressione a tecla ESC.  
 
--   Para mudar o foco de um item ao outro item na barra de navegação, pressione a tecla TAB.  
+- Para mudar o foco de um item ao outro item na barra de navegação, pressione a tecla TAB.  
 
--   Para selecionar o item de Barra de navegação que tem o foco e retornar ao IDE, pressione a tecla ENTER  
+- Para selecionar o item de Barra de navegação que tem o foco e retornar ao IDE, pressione a tecla ENTER  
 
--   Para navegar até uma classe ou um tipo, clique em seu nome na lista suspensa à esquerda.  
+- Para navegar até uma classe ou um tipo, clique em seu nome na lista suspensa à esquerda.  
 
--   Para navegar diretamente até um procedimento em uma classe, clique em um procedimento na lista suspensa à direita.  
+- Para navegar diretamente até um procedimento em uma classe, clique em um procedimento na lista suspensa à direita.  
 
- Em uma classe parcial, os membros definidos fora do arquivo de código atual podem estar esmaecidos.  
+  Em uma classe parcial, os membros definidos fora do arquivo de código atual podem estar esmaecidos.  
 
 ## <a name="find-code-using-navigate-to"></a>Localizar código usando Navegar Para
 Comando a "Navegar até" do Visual Studio faz uma pesquisa restrita do seu código para ajudá-lo a localizar rapidamente elementos especificados em arquivos de código, caminhos de arquivo e símbolos de código. Ao contrário de outras pesquisas de texto como Localizar ou Localizar nos Arquivos, o Navegar Para limita sua pesquisa às áreas em que o código real reside, como arquivos, formulários e módulos de código. Por exemplo, se você pesquisar uma cadeia de caracteres em um aplicativo Web ASP .NET usando Localizar ou Localizar nos Arquivos em toda a solução, você poderá obter várias ocorrências, incluindo instâncias da cadeia de caracteres nos comentários de código. Usando navegar para, no entanto, você pode apenas obter uma única função, ignorando todas as instâncias da cadeia de caracteres nos comentários de código.

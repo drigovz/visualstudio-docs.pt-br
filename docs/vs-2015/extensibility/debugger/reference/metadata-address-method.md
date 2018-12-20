@@ -1,7 +1,7 @@
 ---
 title: METADATA_ADDRESS_METHOD | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be74663ad9e210ec8211c71b2a20eb93c03e9287
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1286592d087e0b27c7e1900ef292aa1c0eac4e21
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463269"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764869"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [METADATA_ADDRESS_METHOD](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/metadata-address-method).  
-  
 Essa estrutura representa o endereço de um método de uma classe.  
   
 ## <a name="syntax"></a>Sintaxe  

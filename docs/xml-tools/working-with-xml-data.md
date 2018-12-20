@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fff2c2e16b86e32e561348c4f1cdc870f452858b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 579d535348a8f5f2b7c728aa4d8ad5fbb434bdda
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176181"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349335"
 ---
 # <a name="working-with-xml-data"></a>Trabalhar com dados XML
 
@@ -26,7 +26,7 @@ O editor de XML é usado para editar documentos XML. Ele fornece verificação c
 
 Os recursos adicionais incluem:
 
-- Suporte de trecho de XML, incluindo trechos gerados por esquema.
+- Suporte de snippet de XML, incluindo snippets gerados por esquema.
 
 - Estrutura de tópicos de documento de modo que os elementos possam ser expandidos e recolhidos.
 
@@ -50,11 +50,11 @@ O Visual Studio dá suporte a depuração de folhas de estilos XSLT. Usando o de
 
 [Depuração XSLT](../xml-tools/debugging-xslt.md) discute como depurar folhas de estilos usando o depurador do Visual Studio.
 
-[Referência a padrões XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fornece informações sobre tecnologias XML, incluindo XML, definição de tipo de documento (DTD), linguagem de definição de esquema XML (XSD) e XSLT.
+[Referência a padrões XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fornece informações sobre tecnologias XML, incluindo XML, definição de tipo de documento (DTD), linguagem de definição de esquema XML (XSD) e XSLT.
 
 [Criar e configurar conjuntos de dados no Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md) fornece uma explicação das ferramentas de tempo de design para a criação de conjuntos de dados.
 
-[XML web services em código gerenciado](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) discute como criar e implantar XML web services e como acessar serviços web XML.
+[XML web services em código gerenciado](/previous-versions/visualstudio/visual-studio-2008/xy59yt45\(v\=vs.90\)) discute como criar e implantar XML web services e como acessar serviços web XML.
 
 ## <a name="see-also"></a>Consulte também
 

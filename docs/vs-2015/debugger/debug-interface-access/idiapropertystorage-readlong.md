@@ -1,7 +1,7 @@
 ---
 title: IDiaPropertyStorage::ReadLONG | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaPropertyStorage::ReadLONG
 ms.assetid: 32054cbc-db55-4513-a1b4-de80e77aac8a
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b815aa19ea272e928cc80f8b68ba1577b38f0aef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7dbc2a96b7d47b32dbd01c2177719e1896fb2fb2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467555"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766883"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaPropertyStorage::ReadLONG](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiapropertystorage-readlong).  
-  
 Lê `LONG` valores em um conjunto de propriedades.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT ReadDLONG (   
+HRESULT ReadDLONG (   
    PROPID id,  
    LONG*  pValue  
 );  

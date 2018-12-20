@@ -1,7 +1,7 @@
 ---
 title: Animar objetos no Designer XAML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 481ba0f156f6ea6cc43d9df19eedcb84ab864cbe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0495397ccce63b93e524c2b3898b4f18ac981ff6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462039"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230070"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animar objetos no XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [animar objetos no Designer XAML](https://docs.microsoft.com/visualstudio/designers/animate-objects-in-xaml-designer).  
-  
 É possível criar animações curtas que movem objetos ou fazer com que eles esmaeçam.  
   
  Para começar, crie um *storyboard*. Um storyboard contém uma ou mais *linhas do tempo*. Defina os *quadros chave* em uma linha do tempo para marcar as alterações de propriedade. Depois, ao executar a animação, o Blend interpolará as alterações de propriedade durante o período de tempo designado. O resultado é uma transição suave. É possível animar qualquer propriedade que pertença a um objeto, mesmo propriedades não visuais.  

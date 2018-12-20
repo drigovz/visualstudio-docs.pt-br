@@ -1,7 +1,7 @@
 ---
 title: Usar Assemblies de interoperabilidade do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 942db931178cedba21468f42e7412ba3e93a1aa6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c47b709d38a9acf84810de7154b270e2b4557ea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473250"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794641"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Usando assemblies de interoperabilidade do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Assemblies de interoperabilidade usando o Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/internals/using-visual-studio-interop-assemblies).  
-  
 Assemblies de interoperabilidade Visual Studio permitem que aplicativos gerenciados acessar as interfaces COM que fornecem extensibilidade do Visual Studio. Há algumas diferenças entre interfaces retas e suas versões de interoperabilidade. Por exemplo, HRESULTs geralmente são representados como valores int e precisam ser manipulados da mesma maneira como exceções e parâmetros (especialmente os parâmetros de saída) são tratados de maneira diferente.  
   
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Tratamento HRESULTs retornados para o código gerenciado de COM  

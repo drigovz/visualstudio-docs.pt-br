@@ -1,5 +1,5 @@
 ---
-title: Adicionar uma regra de limite para testes de carga no Visual Studio
+title: Adicionar uma regra de limite para teste de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f68ab9b183119c18bed51bb7faaa86993d7f34ce
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179873"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063364"
 ---
-# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Como adicionar uma regra de limite usando o Editor de Teste de Carga
+# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Como: Adicionar uma regra de limite usando o Editor de Teste de Carga
 
 As regras de limite nos testes de carga comparam um valor de contador de desempenho ou com um valor constante, ou outro valor de contador de desempenho.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-add-a-threshold-rule"></a>Para adicionar uma regra de limite
 
@@ -36,7 +38,7 @@ As regras de limite nos testes de carga comparam um valor de contador de desempe
 
      A caixa de diálogo **Adicionar regra de limite** é exibida.
 
-5.  Você pode escolher entre dois tipos de regra: **Comparar Constante** e **Comparar Contador**. Selecione o tipo apropriado e defina os valores.
+5.  Escolha um dos dois tipos de regras: **Comparar Constante** e **Comparar Contador**. Selecione o tipo apropriado e defina os valores.
 
     > [!NOTE]
     > Defina a propriedade **Alertar caso seja superado** como **Verdadeiro** para indicar que ultrapassar um limite é um problema ou como **Falso** para indicar que ficar abaixo do limite é um problema.
@@ -45,4 +47,4 @@ As regras de limite nos testes de carga comparam um valor de contador de desempe
 
 - [Analisar violações de regra de limite](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -1,7 +1,7 @@
 ---
 title: VSPerfCLREnv | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,21 +17,19 @@ helpviewer_keywords:
 - VSPerfCLREnv tool
 ms.assetid: 4bc9dd6e-379c-4930-9bba-59a4faa93303
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff2b851154ac2f36ad21057e59b0b0a7378d6b3e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0ff359904b2b4d8b10dbc180f076606651028e80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474847"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741498"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [VSPerfCLREnv](https://docs.microsoft.com/visualstudio/profiling/vsperfclrenv).  
-  
 A ferramenta VSPerfCLREnv é usada para definir variáveis de ambiente que são necessárias para criar o perfil de um aplicativo .NET Framework. Ela usa a seguinte sintaxe:  
   
 ```  

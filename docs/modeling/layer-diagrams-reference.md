@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 92b4b6eea3fcaa4ce6785385fe5e779ba38dac61
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1ef2d68cb0f8e3d6904bdf3f3ebbab321649c3e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920918"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramas de dependência: referência
 
@@ -59,7 +59,7 @@ Este tópico descreve os elementos que você pode usar em um diagrama de depend�
 A tabela a seguir descreve os elementos que você pode usar em um diagrama de dependência.
 
 |**Forma**|**Elemento**|**Descrição**|
-|---------------|-----------------|---------------------|
+|-|-|-|
 |1|**Camada**|Um grupo lógico de artefatos físicos no seu sistema. Esses artefatos podem ser namespaces, projetos, classes, métodos e assim por diante.<br /><br /> Para ver os artefatos que estão vinculados a uma camada, abra o menu de atalho para a camada e, em seguida, escolha **Exibir Links** para abrir **Gerenciador de camadas**.<br /><br /> Para obter mais informações, consulte [Gerenciador de camadas](#Explorer).<br /><br /> -   **Proibido dependências de Namespace** -Especifica que artefatos associados a essa camada não podem depender de namespaces especificados.<br />-   **Proibido Namespaces** -Especifica que os artefatos associados a essa camada não devem pertencer aos namespaces especificados.<br />-   **Necessário Namespaces** -Especifica que os artefatos associados a essa camada devem pertencer a um dos namespaces especificados.|
 |2|**dependência**|Indica que uma camada pode usar a funcionalidade em outra camada, mas não vice-versa.<br /><br /> -   **Direção** -Especifica a direção da dependência.|
 |3|**Dependência bidirecional**|Indica que uma camada pode usar a funcionalidade em outra camada e vice-versa.<br /><br /> -   **Direção** -Especifica a direção da dependência.|
@@ -92,7 +92,7 @@ No diagrama de dependência, abra o menu de atalho para uma ou mais camadas e, e
 > Se você não vir todas essas propriedades, expanda o **Gerenciador de camadas** janela.
 
 |**Coluna no Gerenciador de camadas**|**Descrição**|
-|----------------------------------|---------------------|
+|-|-|
 |**Categorias**|O tipo de artefato, como uma classe, namespace, arquivo de origem e assim por diante|
 |**Camada**|A camada que contém links para o artefato|
 |**Dá suporte à validação**|Se **verdadeira**, em seguida, o processo de validação de camada pode verificar que o projeto está de acordo com as dependências de ou para este elemento.<br /><br /> Se **falsos**, em seguida, o link não participa no processo de validação de camada.<br /><br /> Para obter mais informações, consulte [diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md).|

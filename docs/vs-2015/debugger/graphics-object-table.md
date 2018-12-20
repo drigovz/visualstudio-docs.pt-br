@@ -1,7 +1,7 @@
 ---
 title: Tabela de objeto gráfico | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ f1_keywords:
 - vs.graphics.bufferviewer
 ms.assetid: f48f62d9-16ff-4a2e-8c01-5cbe99513788
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64c2cf7af6c7133182d915c62aa763b2d8718c90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0ba3ce8aa0727471ff4385792d85659fa2d208dc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474130"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809084"
 ---
 # <a name="graphics-object-table"></a>Tabela de objetos de gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tabela de objetos gráficos](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-object-table).  
-  
 A tabela de objeto de elementos gráficos em análise de gráficos do Visual Studio ajuda você a entender os objetos Direct3D que dão suporte a um quadro do seu jogo ou aplicativo.  
   
  Essa é a tabela de objeto:  

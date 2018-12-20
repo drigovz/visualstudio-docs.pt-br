@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7faa1e88a37416db85624863968e13b28de40bc6
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f1c3b03507ca97724106c6ca1d121b3c54eb659
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326121"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853136"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Criar páginas de aplicativo do SharePoint
   Uma *página de aplicativo* é uma página da Web do ASP.NET que foi projetada para uso em um site do SharePoint. Páginas de aplicativo são um tipo especializado de página ASP.NET. A principal diferença entre uma página de aplicativo e uma página ASP.NET padrão é que uma página de aplicativo contém o conteúdo que será mesclado com uma página mestra do SharePoint. Uma página mestra permite que as páginas de aplicativos que compartilham a mesma aparência e comportamento como outras páginas em um site.  
@@ -67,7 +67,7 @@ ms.locfileid: "36326121"
   
  Você pode depurar uma página de aplicativo, assim como você faria para depurar outros itens de projeto do SharePoint no Visual Studio. Quando você inicia o depurador do Visual Studio, o Visual Studio abre o site do SharePoint.  
   
- Para exibir a página do aplicativo, você deve navegar manualmente até o local da página do aplicativo (por exemplo: http://*nome_do_servidor*/_layouts/*Project_Name*/ApplicationPage1.aspx).  
+ Para exibir a página do aplicativo, você deve navegar manualmente até o local da página do aplicativo (por exemplo: http://<em>nome_do_servidor</em>/_layouts/*Project_Name*/ApplicationPage1.aspx).  
   
  Para obter mais informações sobre como depurar projetos do SharePoint, consulte [soluções do SharePoint solucionar](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   

@@ -1,7 +1,7 @@
 ---
 title: 'CA1810: Tipo de referência inicializar campos estáticos embutido | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: acf344e26ba1345d4790ee3ed518a7af6a9fbaef
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e4d7ffbe4fc821ffd70b0bb299b2a4738d63873b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587180"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862678"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: inicializar campos estáticos de tipo de referência embutido
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1810: inicializar campos estáticos de tipo de referência embutido](https://docs.microsoft.com/visualstudio/code-quality/ca1810-initialize-reference-type-static-fields-inline).
 
 |||
 |-|-|

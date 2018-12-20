@@ -1,7 +1,7 @@
 ---
 title: Processar caixa de diálogo de pesquisa | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - Process Search
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 455921678267ae918175445bdd06fe4391f84fff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 844906e9342ae295063788a8d0d4b638c893294d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473773"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748506"
 ---
 # <a name="process-search-dialog-box"></a>Caixa de diálogo Pesquisa de Processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [caixa de diálogo de pesquisa de processo](https://docs.microsoft.com/visualstudio/debugger/process-search-dialog-box).  
-  
 Use essa caixa de diálogo para localizar e selecionar o nó para um processo específico no [exibição de processos](../debugger/processes-view.md). Para exibir essa caixa de diálogo, mova o foco para um **processos** janela modo de exibição. Em seguida, escolha **localizar processo** da **pesquisa** menu.  
   
  As configurações a seguir estão disponíveis:  

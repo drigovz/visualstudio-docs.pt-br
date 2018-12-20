@@ -1,7 +1,7 @@
 ---
 title: Analisar o uso da CPU em um aplicativo universal do Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,22 +16,20 @@ dev_langs:
 - C++
 ms.assetid: c122b08e-e3bf-43e6-bd6c-e776e178fd9a
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f57fdf99c6ccb19c6d8add600943d799d3a28ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 11e8587176ecc452f8f97132d296cff93b09b5ac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460924"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741284"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analisar o uso de CPU em um aplicativo universal do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [analisar o uso da CPU em um aplicativo Windows Universal](https://docs.microsoft.com/visualstudio/profiling/analyze-cpu-usage-in-a-windows-universal-app).  
-  
 Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Quando você precisa investigar problemas de desempenho no aplicativo, um bom começo é entender como ele usa a CPU. A ferramenta **Uso da CPU** mostra em que a CPU está dedicando tempo a executar código. Para se concentrar em cenários específicos, o uso da CPU pode ser executado com o [capacidade de resposta de interface do usuário XAML](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) ferramenta, o [consumo de energia](../profiling/analyze-energy-use-in-store-apps.md) ferramenta ou ambas as ferramentas em uma única sessão de diagnóstico.  
@@ -57,27 +55,27 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> Coletar dados de uso da CPU  
  ![Executar um build de versão do aplicativo no simulador](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
-1.  No Visual Studio, defina o destino de implantação como **Simulador** e a configuração da solução como **Liberação**.  
+1. No Visual Studio, defina o destino de implantação como **Simulador** e a configuração da solução como **Liberação**.  
   
-    -   Executar o aplicativo no simulador permite que você alterne facilmente entre o aplicativo e o Visual Studio IDE.  
+   -   Executar o aplicativo no simulador permite que você alterne facilmente entre o aplicativo e o Visual Studio IDE.  
   
-    -   Executar este aplicativo no modo **Liberar** dá a você uma visão melhor do desempenho atual do aplicativo.  
+   -   Executar este aplicativo no modo **Liberar** dá a você uma visão melhor do desempenho atual do aplicativo.  
   
-2.  No menu **Depurar**, escolha **Criador de Perfil de Desempenho...**.  
+2. No menu **Depurar**, escolha **Criador de Perfil de Desempenho...**.  
   
-3.  No hub de Desempenho e Diagnóstico, escolha **Uso da CPU** e **Iniciar**.  
+3. No hub de Desempenho e Diagnóstico, escolha **Uso da CPU** e **Iniciar**.  
   
-     ![Iniciar a sessão de diagnóstico CpuUsage](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
+    ![Iniciar a sessão de diagnóstico CpuUsage](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
   
-4.  Quando o aplicativo for iniciado, clique em **Obter Número Máximo**. Aguarde cerca de um segundo após a exibição da saída e escolha **Obter Número Máximo Assíncrono**. Esperar entre cliques de botão torna mais fácil isolar as rotinas de clique do botão no relatório de diagnóstico.  
+4. Quando o aplicativo for iniciado, clique em **Obter Número Máximo**. Aguarde cerca de um segundo após a exibição da saída e escolha **Obter Número Máximo Assíncrono**. Esperar entre cliques de botão torna mais fácil isolar as rotinas de clique do botão no relatório de diagnóstico.  
   
-5.  Depois que a segunda linha de saída for exibida, escolha **Parar Coleção** no hub Desempenho e Diagnóstico.  
+5. Depois que a segunda linha de saída for exibida, escolha **Parar Coleção** no hub Desempenho e Diagnóstico.  
   
- ![Parar a coleta de dados de CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![Parar a coleta de dados de CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
- A ferramenta Uso da CPU analisa os dados e exibe o relatório.  
+   A ferramenta Uso da CPU analisa os dados e exibe o relatório.  
   
- ![Relatório de CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![Relatório de CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a> Analisar o relatório de Uso da CPU  
   

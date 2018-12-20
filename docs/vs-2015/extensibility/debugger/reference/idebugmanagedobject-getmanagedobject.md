@@ -1,7 +1,7 @@
 ---
 title: IDebugManagedObject::GetManagedObject | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 6abe1402-6aad-41e6-8ec1-ae12d5945992
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13a69db8e3b8a892a441c65f2752607814221667
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 583a62b98d29f1be7626443cd2e1b069cf388d5c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473984"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770784"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugManagedObject::GetManagedObject](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmanagedobject-getmanagedobject).  
-  
 Retorna uma interface que representa o objeto gerenciado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetManagedObject(   
+HRESULT GetManagedObject(   
    IUnknown** ppManagedObject  
 );  
 ```  

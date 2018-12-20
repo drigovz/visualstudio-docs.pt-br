@@ -1,7 +1,7 @@
 ---
 title: A estrutura do Content_types] arquivo. XML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89c5e1bab9f8cbe8cd6e2b980013c6bfdf4bc039
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5892ab545c41f7d58f0d097f3d27c90c090f0ff
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475734"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736571"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>A estrutura do Content_types] arquivo. XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [a estrutura do arquivo [Content_types]. XML](https://docs.microsoft.com/visualstudio/extensibility/the-structure-of-the-content-types-dot-xml-file).  
-  
 Contém informações sobre os tipos de conteúdo de um pacote VSIX. Visual Studio usa o arquivo [Content_Types]. XML para instalar o pacote, mas não instala o arquivo propriamente dito.  
   
 > [!NOTE]
@@ -52,9 +50,9 @@ Contém informações sobre os tipos de conteúdo de um pacote VSIX. Visual Stud
   
 ### <a name="attribute-name-attribute"></a>{Nome do atributo} Atributo  
   
-|Valor|Descrição|  
-|-----------|-----------------|  
-|http://schemas.openformats.org/package/2006/content-types|O local do esquema de tipos de conteúdo.|  
+|                           Valor                           |                Descrição                |
+|-----------------------------------------------------------|-------------------------------------------|
+| http://schemas.openformats.org/package/2006/content-types | O local do esquema de tipos de conteúdo. |
   
 ### <a name="child-elements"></a>Elementos filho  
  O `Types` elemento pode conter qualquer número de `Default` elementos.  

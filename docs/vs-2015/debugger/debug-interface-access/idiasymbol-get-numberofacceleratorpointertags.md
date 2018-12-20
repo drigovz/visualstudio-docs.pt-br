@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_numberOfAcceleratorPointerTags | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ dev_langs:
 - C++
 ms.assetid: 1886e3ec-b227-4187-8d93-c5144b4b77ae
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 965991aa2f4b65a369bf051dc008b6dd21b0cfb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87a7accdd4abe318fa3259b9f63319456b6b6a84
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464898"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757289"
 ---
 # <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSymbol::get_numberOfAcceleratorPointerTags](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-numberofacceleratorpointertags).  
-  
 Retorna o número de marcas de ponteiro de acelerador em uma função de stub do C++ AMP.  
   
 ## <a name="syntax"></a>Sintaxe  

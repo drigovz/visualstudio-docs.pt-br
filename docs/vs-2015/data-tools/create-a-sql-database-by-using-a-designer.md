@@ -1,7 +1,7 @@
 ---
 title: Criar um banco de dados SQL usando um designer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 7a641edfbe1b584d324bffca3404a1f7cd3a72ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460448"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860316"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Criar um banco de dados SQL usando um designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar um banco de dados SQL usando um designer](https://docs.microsoft.com/visualstudio/data-tools/create-a-sql-database-by-using-a-designer).  
-  
   
 É possível explorar tarefas básicas, como adicionar tabelas e definir colunas, usando o Visual Studio para criar e atualizar um arquivo de banco de dados local no SQL Server Express LocalDB. Depois de concluir essa explicação passo a passo, você poderá descobrir recursos mais avançados usando o banco de dados local como um ponto de partida para outras explicações passo a passo que o exigem.  
   
@@ -60,23 +58,23 @@ A versão mais recente deste tópico pode ser encontrada em [criar um banco de d
   
 #### <a name="to-create-a-project-and-a-database-file"></a>Para criar um projeto e um arquivo de banco de dados  
   
-1.  Criar um projeto Windows Forms chamado `SampleDatabaseWalkthrough`.  
+1. Criar um projeto Windows Forms chamado `SampleDatabaseWalkthrough`.  
   
-2.  Na barra de menus, selecione **Project** > **Adicionar Novo Item**.  
+2. Na barra de menus, selecione **Project** > **Adicionar Novo Item**.  
   
-3.  Na lista de modelos de item, role para baixo e selecione **banco de dados baseado em serviço**.  
+3. Na lista de modelos de item, role para baixo e selecione **banco de dados baseado em serviço**.  
   
-     ![Caixa de diálogo de modelos de item](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
+    ![Caixa de diálogo de modelos de item](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
   
-4.  Nomeie o banco de dados **SampleDatabase**e, em seguida, selecione o **Add** botão.  
+4. Nomeie o banco de dados **SampleDatabase**e, em seguida, selecione o **Add** botão.  
   
-5.  Se o **fontes de dados** janela não estiver aberta, abra-o, selecionando as teclas Shift + Alt + D ou, na barra de menus, selecionando **exibição** > **Other Windows**  >  **Fontes de dados**.  
+5. Se o **fontes de dados** janela não estiver aberta, abra-o, selecionando as teclas Shift + Alt + D ou, na barra de menus, selecionando **exibição** > **Other Windows**  >  **Fontes de dados**.  
   
-6.  No **fontes de dados** janela, selecione a **Add New Data Source** link.  
+6. No **fontes de dados** janela, selecione a **Add New Data Source** link.  
   
-7.  No **Data Source Configuration Wizard**, selecione o **próxima** botão quatro vezes para aceitar as configurações padrão e, em seguida, selecione o **concluir** botão.  
+7. No **Data Source Configuration Wizard**, selecione o **próxima** botão quatro vezes para aceitar as configurações padrão e, em seguida, selecione o **concluir** botão.  
   
- Abrindo-se a janela de propriedades do banco de dados, é possível exibir sua cadeia de conexão e o local do arquivo .mdf principal. Você verá que o arquivo de banco de dados está na pasta do projeto.  
+   Abrindo-se a janela de propriedades do banco de dados, é possível exibir sua cadeia de conexão e o local do arquivo .mdf principal. Você verá que o arquivo de banco de dados está na pasta do projeto.  
   
 -   No Visual Studio, selecione **modo de exibição** > **SQL Server Object Explorer** se essa janela não estiver aberta. Abra a janela Propriedades, expandindo a **conexões de dados** nó, abrindo o menu de atalho de SampleDatabase e, em seguida, selecionando **propriedades**.  
   

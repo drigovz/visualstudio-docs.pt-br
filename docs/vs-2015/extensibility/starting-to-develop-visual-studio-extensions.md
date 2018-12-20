@@ -1,7 +1,7 @@
 ---
 title: Começando a desenvolver extensões do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 441abc9254fac5b70270fc622740d03ecc43d512
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61721d4665aa6a9c0a245c9d7fc70f0ddb0c45f8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462857"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725943"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Começando a desenvolver extensões do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [começando a desenvolver extensões do Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/starting-to-develop-visual-studio-extensions).  
-  
 Se você nunca escreveu uma extensão do Visual Studio antes, você provavelmente terá algumas perguntas. Apresentaremos alguns dos mais comuns aqui. Se você não vir as informações que você está procurando, use os botões de comentários (**esta página foi útil?** na parte inferior da tela) para fazer o que você deseja.  
   
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Qual software precisa desenvolver extensões do Visual Studio?  
@@ -36,13 +34,13 @@ Se você nunca escreveu uma extensão do Visual Studio antes, você provavelment
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Quais tipos de coisas que pode fazer com as extensões do Visual Studio?  
  O céu 's o limite quando se trata de imaginando diferentes extensões do Visual Studio. Obviamente, a maioria das extensões ter algo a ver com a escrita de código, mas que não precisa ser o caso. Aqui estão alguns exemplos dos tipos de extensões, que você pode criar:  
   
--   Suporte para idiomas que não estão incluídos no Visual Studio, com a coloração de sintaxe, IntelliSense e suporte de compilador e depuração  
+- Suporte para idiomas que não estão incluídos no Visual Studio, com a coloração de sintaxe, IntelliSense e suporte de compilador e depuração  
   
--   Ferramentas de produtividade que ampliam o núcleo do IDE experiência com modelos adicionais, caixas de diálogo Novo, refatoração de código ou janelas de ferramentas  
+- Ferramentas de produtividade que ampliam o núcleo do IDE experiência com modelos adicionais, caixas de diálogo Novo, refatoração de código ou janelas de ferramentas  
   
--   Designers específicos de domínio para cenários como o suporte de design ou na nuvem de dados  
+- Designers específicos de domínio para cenários como o suporte de design ou na nuvem de dados  
   
- Para obter exemplos de extensões, confira a [Galeria do Visual Studio](https://visualstudiogallery.msdn.microsoft.com/). Você também pode dar uma olhada [extensões do código-fonte Visual Studio abra](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md).  
+  Para obter exemplos de extensões, confira a [Galeria do Visual Studio](https://visualstudiogallery.msdn.microsoft.com/). Você também pode dar uma olhada [extensões do código-fonte Visual Studio abra](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md).  
   
 ## <a name="which-visual-studio-features-can-i-extend"></a>Quais recursos do Visual Studio pode estender?  
  Em teoria, você pode estender qualquer parte do Visual Studio: menus, barras de ferramentas, comandos, windows, soluções, projetos, editores e assim por diante.  

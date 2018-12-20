@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugFrameInfo2::Reset | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e149b559-f072-480b-9552-a452b147f3a8
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e32a672c20a500b1bc9a040ef9d81cca6179b736
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8ed3cc86f2d295008f66904e7ebfe27709b283b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462481"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51804577"
 ---
 # <a name="ienumdebugframeinfo2reset"></a>IEnumDebugFrameInfo2::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugFrameInfo2::Reset](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugframeinfo2-reset).  
-  
 Redefine a enumeração para o primeiro elemento.  
   
 ## <a name="syntax"></a>Sintaxe  

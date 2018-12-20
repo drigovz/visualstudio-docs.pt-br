@@ -1,7 +1,7 @@
 ---
 title: Tipos de elemento de modelo UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ helpviewer_keywords:
 - UML API, types
 ms.assetid: 25345a53-7246-4eb7-8ad9-0b695aa171a2
 caps.latest.revision: 10
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5b8cb26c6e3d6cd51d087454d0b0c0700c1793db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55311d02bef9654637a1b413519cc562a5c7f52b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476168"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758531"
 ---
 # <a name="uml-model-element-types"></a>Tipos de elemento de modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tipos de elemento de modelo UML](https://docs.microsoft.com/visualstudio/modeling/uml-model-element-types).  
-  
 Você pode ler e manipular um modelo UML por meio de uma interface de programação. Este tópico resume a hierarquia de tipos de elementos. A hierarquia é o mesmo que o definido na especificação de UML.  
   
  Os detalhes de cada tipo são fornecidos no [referência de API para extensibilidade de modelagem UML](../modeling/api-reference-for-uml-modeling-extensibility.md).  

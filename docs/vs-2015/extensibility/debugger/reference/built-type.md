@@ -1,7 +1,7 @@
 ---
 title: BUILT_TYPE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cc02c32c-0f65-4210-ad25-a9b1899066e8
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 849e358140d438478a16629a1e420d3c96393b62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1dbeacde235c566b58547e3b0f24bf79a1bcde11
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475822"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781550"
 ---
 # <a name="builttype"></a>BUILT_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [BUILT_TYPE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/built-type).  
-  
 Essa estrutura Especifica informações sobre um tipo de campo tirado de metadados.  
   
 ## <a name="syntax"></a>Sintaxe  

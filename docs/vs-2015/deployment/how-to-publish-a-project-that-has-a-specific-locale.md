@@ -1,7 +1,7 @@
 ---
 title: 'Como: publicar um projeto que tem uma localidade específica | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: f832fc7f8ff78fc23571015ceeaf67d605a82aa9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: a08c7cc22129a783e692c437724114b3f44888a3
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463442"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607777"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Como publicar um projeto que tem uma localidade específica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: publicar um projeto que tem uma localidade específica](https://docs.microsoft.com/visualstudio/deployment/how-to-publish-a-project-that-has-a-specific-locale).  
-  
 Não é incomum para um aplicativo conter componentes que possuem diversas localidades. Nesse cenário, seria criada uma solução que possui diversos projetos e publicados projetos separados para cada localização. Esse procedimento mostra como usar uma macro para publicar o primeiro projeto em uma solução usando a localização 'en'. Se desejar tentar esse procedimento com outra localidade além de 'en', certifique-se de definir `localeString` na macro para corresponder à localidade que estiver usando (por exemplo, 'de' ou 'de-DE').  
   
 > [!NOTE]
@@ -57,7 +55,7 @@ Não é incomum para um aplicativo conter componentes que possuem diversas local
     Module PublishSpecificCulture  
         Sub PublishProjectFirstProjectWithEnLocale()  
             ' Note: You should publish projects by using the IDE at least once  
-            ' before you use this macro. Items such as the certficate and the   
+            ' before you use this macro. Items such as the certificate and the   
             ' security zone must be set.  
             Dim localeString As String = "en"  
   

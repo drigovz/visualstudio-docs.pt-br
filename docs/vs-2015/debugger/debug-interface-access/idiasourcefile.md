@@ -1,7 +1,7 @@
 ---
 title: IDiaSourceFile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSourceFile interface
 ms.assetid: 6e9be757-797f-4960-ba62-c14092620bbd
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b43eeda2111052eda355f3b04fa0e2c5087dc07
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 936bc5ac3fb469f50282edebaaaff9c1e1281add
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475335"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794511"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSourceFile](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasourcefile).  
-  
 Representa um arquivo de origem.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDiaSourceFile : IUnknown  
+IDiaSourceFile : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  

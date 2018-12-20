@@ -1,7 +1,7 @@
 ---
 title: EXCEPTION_STATE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13f58a6442046705fa3971d38a27613d52cd07d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a77607e8207a928a969289ec2f37d1576fd8b93f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461493"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793256"
 ---
 # <a name="exceptionstate"></a>EXCEPTION_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [EXCEPTION_STATE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/exception-state).  
-  
 Especifica o estado de exceção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_EXCEPTION_STATE {   
+enum enum_EXCEPTION_STATE {   
    EXCEPTION_NONE                          = 0x0000,  
    EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
    EXCEPTION_STOP_SECOND_CHANCE            = 0x0002,  
@@ -59,7 +57,7 @@ typedef DWORD EXCEPTION_STATE;
 ```  
   
 ```csharp  
-public enum enum_EXCEPTION_STATE {   
+public enum enum_EXCEPTION_STATE {   
    EXCEPTION_NONE                          = 0x0000,  
    EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
    EXCEPTION_STOP_SECOND_CHANCE            = 0x0002,  

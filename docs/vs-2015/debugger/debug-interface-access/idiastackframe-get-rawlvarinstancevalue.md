@@ -1,7 +1,7 @@
 ---
 title: 'Idiastackframe:: Get_rawlvarinstancevalue | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaStackFrame::get_rawLVarInstanceValue method
 ms.assetid: ce526259-85a6-475b-9274-0b3a21d95db2
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2aca4ea4468409937cd0b90b7c2201898a9f93a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c99ba92633f9cb7377252941bcabcafaf1d6242d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473495"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787621"
 ---
 # <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiastackframe:: Get_rawlvarinstancevalue](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue).  
-  
 Esse método recupera o valor da variável local especificada como bytes brutos.  
   
 ## <a name="syntax"></a>Sintaxe  

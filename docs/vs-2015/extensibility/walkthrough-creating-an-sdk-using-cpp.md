@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Criando um SDK usando C++ | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57c6e8996ebf670fbe0c3b64de25a25aef1dc131
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 0932759213d064c3df717b7b6735c1201e62ce14
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475012"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773464"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Passo a passo: criando um SDK usando C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Criando um SDK usando C++](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-an-sdk-using-cpp).  
-  
 Este passo a passo mostra como criar uma biblioteca C++ nativa matemática SDK, o pacote SDK como um Visual Studio VSIX (extensão), e, em seguida, usá-lo para criar um aplicativo. O passo a passo é dividida nestas etapas:  
   
 -   [Para criar o nativo e bibliotecas de tempo de execução do Windows](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)  
@@ -150,27 +148,27 @@ Este passo a passo mostra como criar uma biblioteca C++ nativa matemática SDK, 
   
 ##  <a name="createSample"></a> Para criar um aplicativo de exemplo que usa a biblioteca de classes  
   
-1.  Na barra de menus, escolha **Arquivo**, **Novo**, **Projeto**.  
+1. Na barra de menus, escolha **Arquivo**, **Novo**, **Projeto**.  
   
-2.  Na lista de modelos, expanda **Visual C++**, **Windows Store**e, em seguida, selecione **aplicativo em branco**. No **nome** , especifique **NativeMathSDKSample**e, em seguida, escolha o **Okey** botão.  
+2. Na lista de modelos, expanda **Visual C++**, **Windows Store**e, em seguida, selecione **aplicativo em branco**. No **nome** , especifique **NativeMathSDKSample**e, em seguida, escolha o **Okey** botão.  
   
-3.  Na **Gerenciador de soluções**, abra o menu de atalho para o **NativeMathSDKSample** do projeto e, em seguida, escolha **Add**, **referência**.  
+3. Na **Gerenciador de soluções**, abra o menu de atalho para o **NativeMathSDKSample** do projeto e, em seguida, escolha **Add**, **referência**.  
   
-4.  Sobre o **propriedades comuns**, **estrutura e referências** página de propriedades, na lista de tipos de referência, expanda **Windows**e, em seguida, selecione **extensões** . No painel de detalhes, selecione a **nativo SDK de matemática** extensão e, em seguida, escolha o **adicionar nova referência** botão.  
+4. Sobre o **propriedades comuns**, **estrutura e referências** página de propriedades, na lista de tipos de referência, expanda **Windows**e, em seguida, selecione **extensões** . No painel de detalhes, selecione a **nativo SDK de matemática** extensão e, em seguida, escolha o **adicionar nova referência** botão.  
   
-5.  No **adicionar referência** caixa de diálogo, selecione o **SDK nativo de matemática** caixa de seleção e, em seguida, escolha o **Okey** botão.  
+5. No **adicionar referência** caixa de diálogo, selecione o **SDK nativo de matemática** caixa de seleção e, em seguida, escolha o **Okey** botão.  
   
-6.  Exiba as propriedades de projeto para NativeMathSDKSample.  
+6. Exiba as propriedades de projeto para NativeMathSDKSample.  
   
-     As propriedades que você definiu no NativeMathSDK.props foram aplicadas quando você adicionou a referência. Você pode verificar isso examinando a **diretórios VC + +** propriedade do projeto **propriedades de configuração**.  
+    As propriedades que você definiu no NativeMathSDK.props foram aplicadas quando você adicionou a referência. Você pode verificar isso examinando a **diretórios VC + +** propriedade do projeto **propriedades de configuração**.  
   
-7.  Na **Gerenciador de soluções**, abra MainPage. XAML e, em seguida, use o seguinte XAML para substituir seu conteúdo:  
+7. Na **Gerenciador de soluções**, abra MainPage. XAML e, em seguida, use o seguinte XAML para substituir seu conteúdo:  
   
-     [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml#1)]  
+    [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml#1)]  
   
-8.  Atualize MainPage de acordo com este código:  
+8. Atualize MainPage de acordo com este código:  
   
-     [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.h#2)]  
+    [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.h#2)]  
   
 9. Atualize MainPage de acordo com este código:  
   
@@ -182,7 +180,7 @@ Este passo a passo mostra como criar uma biblioteca C++ nativa matemática SDK, 
   
      O resultado correto é exibido.  
   
- Este passo a passo mostrou como criar e usar um SDK de extensão para chamar um [!INCLUDE[wrt](../includes/wrt-md.md)] biblioteca e um não -[!INCLUDE[wrt](../includes/wrt-md.md)] biblioteca.  
+    Este passo a passo mostrou como criar e usar um SDK de extensão para chamar um [!INCLUDE[wrt](../includes/wrt-md.md)] biblioteca e um não -[!INCLUDE[wrt](../includes/wrt-md.md)] biblioteca.  
   
 ## <a name="next-steps"></a>Próximas etapas  
   

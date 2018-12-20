@@ -16,21 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbd3fe20377cd2aa4954e904fec50702cc9b7120
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 09881462b0723dc1e601c908efeabc317ed70b69
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843985"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388943"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Página de projetos e soluções, caixa de diálogo Opções
 
 Define o comportamento do Visual Studio relacionado a projetos e soluções. Para acessar essas opções, selecione **Ferramentas** > **Opções**, expanda **Projetos e Soluções** e, em seguida, selecione **Geral**.
 
 Os caminhos padrão para as pastas de projeto e de modelo são definidos por meio da guia **Locais** na mesma caixa de diálogo.
-
-> [!NOTE]
-> As opções disponíveis na interface do usuário podem ser diferentes das descritas aqui, dependendo de suas configurações ativas ou da edição. Este artigo foi escrito considerando as **configurações gerais de desenvolvimento**. Para exibir ou alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="general-page"></a>Página geral
 

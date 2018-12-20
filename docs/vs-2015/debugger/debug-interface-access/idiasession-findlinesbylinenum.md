@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Findlinesbylinenum | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSession::findLinesByLinenum method
 ms.assetid: 76d5622d-9a91-4c2a-a98f-263af5d1daef
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87f07bb105456310922b47615896d2de9db9f43c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5e3210dc974914779a8bff032ead3159c72535b0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474616"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787569"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasession:: Findlinesbylinenum](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findlinesbylinenum).  
-  
 Determina os números de linha de compiland que o número de linha especificada em um arquivo de origem está em ou próximo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findLinesByLinenum (   
+HRESULT findLinesByLinenum (   
    IDiaSymbol*           compiland,  
    IDiaSourceFile*       file,  
    DWORD                 linenum,  

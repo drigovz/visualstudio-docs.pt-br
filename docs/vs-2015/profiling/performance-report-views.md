@@ -1,7 +1,7 @@
 ---
 title: Exibições do Relatório de Desempenho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - profiling tools, report views
 ms.assetid: 3e84e513-dc64-40bb-b385-03281f28b519
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c95e1da832012853dcc70df60087af29ad9d7e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6905ae3a350ddb91db7cd9f500d57ccdc70cca86
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472852"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806497"
 ---
 # <a name="performance-report-views"></a>Exibições do relatório de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibições de relatório de desempenho](https://docs.microsoft.com/visualstudio/profiling/performance-report-views).  
-  
 Essa seção fornece informações de referência sobre os relatórios e as exibições das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Exibições dos arquivos de dados de criação de perfil são exibidas no IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Os relatórios são gerados pela ferramenta de linha de comando [VSPerfReport](../profiling/vsperfreport.md).  
   
 ## <a name="in-this-section"></a>Nesta seção  

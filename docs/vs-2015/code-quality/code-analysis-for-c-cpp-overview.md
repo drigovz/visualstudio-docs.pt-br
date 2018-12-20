@@ -1,7 +1,7 @@
 ---
 title: Análise de código para visão geral do C / C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,21 +24,19 @@ helpviewer_keywords:
 - C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
 caps.latest.revision: 27
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c6764e39d55ebe2ce11776035f25d6fdf69be081
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7261b0bab423aa851b44ec725ca1c2818da9319
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472813"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763573"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Análise de código para visão geral do C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [análise de código para visão geral do C/C++](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-c-cpp-overview).  
-  
 A ferramenta de análise de código C/C++ fornece informações para desenvolvedores sobre possíveis defeitos no código-fonte C/C++. Erros de codificação comuns relatados pela ferramenta incluem saturações de buffer, memória não inicializada, desreferências de ponteiro nulo e vazamentos de memória e recursos.  
   
 ## <a name="ide-integrated-development-environment-integration"></a>Integração de IDE (ambiente de desenvolvimento integrado)  

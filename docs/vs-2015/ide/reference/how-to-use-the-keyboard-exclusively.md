@@ -1,7 +1,7 @@
 ---
 title: Como usar o teclado de forma exclusiva | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0f1ca0ccf38911c8614bf1429c6f658bb9c957c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd4e133ac057de9340900501b16e2c3b1ee7a388
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862158"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Como usar o teclado de forma exclusiva
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: usar exclusivamente o teclado](https://docs.microsoft.com/visualstudio/ide/reference/how-to-use-the-keyboard-exclusively).  
-  
   
 O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece muitas combinações padrão de teclas de atalho para facilitar a navegação e a criação de código dentro do IDE (ambiente de desenvolvimento integrado). Para obter uma lista completa das teclas de atalho usadas no Visual Studio, consulte [Atalhos de teclado padrão](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obter informações sobre os atalhos de teclado disponíveis para outros produtos da Microsoft, consulte [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
   
@@ -44,15 +42,15 @@ O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece muitas combinações p
   
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Para adicionar controles da Caixa de Ferramentas a um designer usando o teclado  
   
-1.  Na barra de menus, escolha **Exibir**, **Caixa de Ferramentas**.  
+1. Na barra de menus, escolha **Exibir**, **Caixa de Ferramentas**.  
   
-2.  Escolha as teclas Ctrl + Seta para cima ou Ctrl + Seta para baixo para percorrer as seções na guia atual da Caixa de Ferramentas.  
+2. Escolha as teclas Ctrl + Seta para cima ou Ctrl + Seta para baixo para percorrer as seções na guia atual da Caixa de Ferramentas.  
   
-3.  Escolha as teclas de Seta para cima ou **Seta para baixo** para percorrer os controles.  
+3. Escolha as teclas de Seta para cima ou **Seta para baixo** para percorrer os controles.  
   
-4.  Após o controle ser selecionado, pressione a tecla Enter.  
+4. Após o controle ser selecionado, pressione a tecla Enter.  
   
- O controle é adicionado ao formulário ou designer.  
+   O controle é adicionado ao formulário ou designer.  
   
 ## <a name="dialog-box-options"></a>Opções de caixa de diálogo  
  É possível percorrer as opções em uma caixa de diálogo e alterar as configurações da opção usando o teclado.  

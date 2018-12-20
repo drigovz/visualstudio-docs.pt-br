@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01a85b214c44f3b48a91d82a5abd59bcf4c9ac5c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 23d0aa3b065a05b1c85b54e7889c4fe1bac4af7a
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670199"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671515"
 ---
 # <a name="custom-document-properties-overview"></a>Visão geral das propriedades de documento personalizadas
 
@@ -51,12 +51,12 @@ Esta propriedade contém uma cadeia de caracteres que fornece detalhes sobre o m
 
      ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
 
- O *SolutionID* é um GUID que o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] usa para identificar a solução. O *SolutionID* é gerado automaticamente quando você compila o projeto. O **vstolocal** termo indica para o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] que o assembly deve ser carregado na mesma pasta que o documento.
+  O *SolutionID* é um GUID que o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] usa para identificar a solução. O *SolutionID* é gerado automaticamente quando você compila o projeto. O **vstolocal** termo indica para o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] que o assembly deve ser carregado na mesma pasta que o documento.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Arquitetura de soluções do Office no Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md)
 - [Manifestos de aplicativo e implantação em soluções do Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Como: publicar uma solução do Office usando o ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Como: publicar uma solução do Office usando o ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
 - [Como: criar e modificar propriedades de documento personalizadas](../vsto/how-to-create-and-modify-custom-document-properties.md)

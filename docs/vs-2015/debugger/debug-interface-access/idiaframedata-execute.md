@@ -1,7 +1,7 @@
 ---
 title: 'Idiaframedata:: execute | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaFrameData::execute method
 ms.assetid: 7a6c7d03-1ff1-4059-bd54-5f407eeebc26
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1f76bf5e5ef30c748f310e6a8a610035b7c08bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4aaab686fb7a6a5ffa75c55f5464a446db7e1cc8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463194"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735088"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaframedata:: execute](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaframedata-execute).  
-  
 Executa o desenrolamento de pilha e retorna os resultados em uma interface de quadro de movimentação de pilha.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT execute (   
+HRESULT execute (   
    IDiaStackWalkFrame* frame  
 );  
 ```  

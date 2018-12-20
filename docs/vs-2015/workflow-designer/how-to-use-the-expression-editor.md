@@ -1,7 +1,7 @@
 ---
 title: 'Como: usar o Editor de expressões | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 892e65265938c94767bd63b528040ce4a81fba72
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c41de63b4163f1fd259ffa4adcef63cad92e351
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464704"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181708"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Como: Use o editor de expressão
 O editor de expressão é um controle de [!INCLUDE[wfd1](../includes/wfd1-md.md)] que é usado em muitas atividades de fluxo de trabalho como um meio de inserir e avaliar dessas expressões. O editor de expressão fornece IDE completo que a experiência de edição IntelliSense, que inclui coloração, ParamInfo, squiggles de erro, entre outros recursos. O compilador valida a expressão após está conectado. Se a expressão é inválido, um ícone de erro é exibido. O editor também pode ser aberto como uma **Editor de expressão** caixa de diálogo.  

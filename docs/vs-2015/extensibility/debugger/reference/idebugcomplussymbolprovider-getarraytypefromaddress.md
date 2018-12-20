@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: cc0c53f1-8c0f-49fa-8dbe-bc155e9ce0ef
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9257133995c28062dc9f5614c1408d6f66bc2db9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0185a6673a8ced8f3cd0536eb0254eeb93800ac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473268"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746231"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugComPlusSymbolProvider::GetArrayTypeFromAddress](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcomplussymbolprovider-getarraytypefromaddress).  
-  
 Recupera informações de tipo sobre a matriz especificada, dada seu endereço de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  

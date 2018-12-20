@@ -1,7 +1,7 @@
 ---
 title: 'CA2147: Métodos transparentes talvez não usem segurança declara | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,17 +21,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 29681e6b43b3c8e71f10393cbaec715c33a89a93
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 6542a2063d076cb57750015039f413b2faf4bca4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587121"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921622"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: os métodos transparentes talvez não usem declarações de segurança
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA2147: métodos transparentes não podem usar a segurança declara](https://docs.microsoft.com/visualstudio/code-quality/ca2147-transparent-methods-may-not-use-security-asserts).
 
 |||
 |-|-|

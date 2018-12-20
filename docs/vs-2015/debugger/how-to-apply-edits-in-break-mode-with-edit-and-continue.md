@@ -1,7 +1,7 @@
 ---
 title: 'Como: aplicar edições no modo de interrupção com editar e continuar | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,21 +26,19 @@ helpviewer_keywords:
 - code, editing in break mode
 ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c9b380c4a28beb50a2048eb00aa68f81bf27449
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5f6024d0c00e492110d7d34172cf225e4712f213
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587897"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807468"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Como aplicar edições no modo de interrupção com editar e continuar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: aplicar edições no modo de interrupção com editar e continuar](https://docs.microsoft.com/visualstudio/debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue).  
-  
 Você pode usar Editar e Continuar para editar o código no modo de interrupção e, depois, continuar sem interromper e reiniciar a execução.  
   
  Editar e Continuar não está disponível nos seguintes cenários de depuração:  

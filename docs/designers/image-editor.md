@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ed7c1ec10b6cc6b2eac450ea33beceaaf58bc06
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2149410782587d8472faff678cbc20bf1ea577c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029115"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878369"
 ---
 # <a name="image-editor"></a>Editor de imagem
 
@@ -30,7 +30,7 @@ Você pode usar o **Editor de Imagens** para trabalhar com os tipos de formatos 
 O **Editor de Imagens** dá suporte aos seguintes formatos de imagem:
 
 |Nome do formato|Extensão de nome de arquivo|
-|-----------------|-------------------------|
+|-----------------| - |
 |Formato PNG (Portable Network Graphics)|*.png*|
 |JPEG|*.jpg*, *.jpeg*, *.jpe*, *.jfif*|
 |Direct Draw Surface|*.dds*|
@@ -237,7 +237,7 @@ A tabela a seguir descreve as propriedades da ferramenta:
 |----------|----------------|
 |Todas as ferramentas e seleções|**Girar por**<br /> Define a quantidade, em graus, que o efeito da seleção ou ferramenta é girado no sentido horário.|
 |**Lápis**, **Pincel**, **Spray**, **Borracha**|**Espessura**<br /> Define o tamanho da área afetada pela ferramenta.|
-|**Texto**|**Antialias**<br /> Desenha o texto com bordas suavizadas. Isso fornece ao texto uma aparência mais suave.<br /><br /> **Value**<br /> O texto a ser desenhado.<br /><br /> **Fonte**<br /> A fonte usada para desenhar o texto.<br /><br /> **Size**<br /> O tamanho do texto.<br /><br /> **Negrito**<br /> Transforma a fonte em negrito.<br /><br /> **Itálico**<br /> Transforma a fonte em itálico.<br /><br /> **Sublinhado**<br /> Transforma a fonte em sublinhado.|
+|**Texto**|**Antialias**<br /> Desenha o texto com bordas suavizadas. Isso fornece ao texto uma aparência mais suave.<br /><br /> **Valor**<br /> O texto a ser desenhado.<br /><br /> **Fonte**<br /> A fonte usada para desenhar o texto.<br /><br /> **Size**<br /> O tamanho do texto.<br /><br /> **Negrito**<br /> Transforma a fonte em negrito.<br /><br /> **Itálico**<br /> Transforma a fonte em itálico.<br /><br /> **Sublinhado**<br /> Transforma a fonte em sublinhado.|
 |**Primitivo 2D**|**Antialias**<br /> Desenha primitivos com bordas suavizadas. Isso concede ao texto uma aparência mais suave.<br /><br /> **Espessura**<br /> Define a espessura da linha de que forma o limite do primitivo.<br /><br /> **Raio X**<br /> (Somente retângulo arredondado) Define o raio de arredondamento para as bordas superior e inferior do primitivo.<br /><br /> **Raio Y**<br /> (Somente retângulo arredondado) Define o raio de arredondamento para as bordas esquerda e direita do primitivo.|
 |**Lápis**, **Pincel**, **Spray**, **Primitivo 2D**|**Canais**<br /> Habilita ou desabilita os canais de cor específicos para exibição e desenho. Se a **Exibição** for definida como um canal de cor específico, esse canal estará visível na imagem; caso contrário, ele não será visível. Se **Desenhar** estiver definido para um canal de cor específico, tal canal será afetado por operações de desenho; caso contrário, ele não será.|
 |**Seleção de Varinha**, **Preenchimento**|**Tolerância**<br /> Define a diferença máxima entre cores adjacentes dentro da qual elas são consideradas semelhantes, para que cores menos ou mais semelhantes façam parte da região afetada ou selecionada. Por padrão, o valor é 32, o que significa que pixels adjacentes em 32 tons (mais claros ou mais escuros) da cor original são considerados como parte da região.|
@@ -245,7 +245,7 @@ A tabela a seguir descreve as propriedades da ferramenta:
 ## <a name="keyboard-shortcuts"></a>Atalhos de teclado
 
 |Comando|Atalhos de teclado|
-|-------------|------------------------|
+|-------------| - |
 |Mudar para o modo **Selecionar**|**S**|
 |Mudar para o modo **Zoom**|**Z**|
 |Mudar para o modo **Panorâmico**|**K**|

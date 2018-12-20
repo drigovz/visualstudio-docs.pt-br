@@ -1,7 +1,7 @@
 ---
 title: Manipular uma exceção de simultaneidade | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d174aeb48170f1232aa0830bd2532897e7cb6f5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463196"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220411"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar uma exceção de simultaneidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [manipular uma exceção de simultaneidade](https://docs.microsoft.com/visualstudio/data-tools/handle-a-concurrency-exception).  
-  
   
 Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são acionados quando dois usuários tentam alterar os mesmos dados em um banco de dados ao mesmo tempo. Este passo a passo, você criará um aplicativo do Windows que ilustra como capturar uma <xref:System.Data.DBConcurrencyException>, localize a linha que causou o erro e Aprenda uma estratégia para como lidar com ele.  
   
@@ -74,7 +72,7 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
   
 3.  No **modelos** painel, selecione **aplicativo do Windows**.  
   
-4.  Nomeie o projeto `ConcurrencyWalkthrough`e, em seguida, selecione**Okey**.  
+4.  Nomeie o projeto `ConcurrencyWalkthrough`e, em seguida, selecione **Okey**.  
   
      O projeto para o Visual Studio adiciona **Gerenciador de soluções** e exibe um novo formulário no designer.  
   
@@ -98,7 +96,7 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
   
 5.  Expanda o **tabelas** nó e selecione o `Customers` tabela. O nome padrão para o conjunto de dados deve ser `NorthwindDataSet`.  
   
-6.  Selecione**concluir** para adicionar o conjunto de dados ao projeto.  
+6.  Selecione **concluir** para adicionar o conjunto de dados ao projeto.  
   
 ## <a name="create-a-data-bound-datagridview-control"></a>Criar um controle DataGridView de associação de dados  
  Nesta seção, você criará um <xref:System.Windows.Forms.DataGridView> arrastando a **clientes** do item dos **fontes de dados** janela para o formulário do Windows.  
@@ -109,7 +107,7 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
   
 2.  No **fontes de dados** janela, expanda o **NorthwindDataSet** nó e, em seguida, selecione o **clientes** tabela.  
   
-3.  Selecione a seta para baixo no nó da tabela e, em seguida, selecione **DataGridView**na lista suspensa.  
+3.  Selecione a seta para baixo no nó da tabela e, em seguida, selecione **DataGridView** na lista suspensa.  
   
 4.  Arraste a tabela para uma área vazia do formulário.  
   
@@ -120,7 +118,7 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
   
 #### <a name="to-test-the-form"></a>Para testar o formulário  
   
-1.  Selecione**F5** para executar o aplicativo  
+1.  Selecione **F5** para executar o aplicativo  
   
      O formulário é exibido com um <xref:System.Windows.Forms.DataGridView> controle que é preenchido com dados do `Customers` tabela.  
   
@@ -131,13 +129,13 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
   
  O usuário com três versões do registro applicationpresents:  
   
--   O registro atual no banco de dados  
+- O registro atual no banco de dados  
   
--   O registro original que é carregado no conjunto de dados  
+- O registro original que é carregado no conjunto de dados  
   
--   As alterações propostas no conjunto de dados  
+- As alterações propostas no conjunto de dados  
   
- O usuário, em seguida, é capaz de substituir o banco de dados com a versão proposta, ou cancelar a atualização e atualizar o conjunto de dados com os novos valores do banco de dados.  
+  O usuário, em seguida, é capaz de substituir o banco de dados com a versão proposta, ou cancelar a atualização e atualizar o conjunto de dados com os novos valores do banco de dados.  
   
 #### <a name="to-enable-the-handling-of-concurrency-errors"></a>Para habilitar o tratamento de erros de simultaneidade  
   
@@ -194,7 +192,7 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
   
 #### <a name="to-test-the-form"></a>Para testar o formulário  
   
-1.  Selecione**F5** para executar o aplicativo.  
+1.  Selecione **F5** para executar o aplicativo.  
   
 2.  Depois que o formulário for exibido, deixe-o em execução e alterne para o IDE do Visual Studio.  
   
@@ -217,8 +215,8 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
   
      O erro de simultaneidade é gerado e a caixa de mensagem é exibida.  
   
-10. Selecionando**não** cancela a atualização e atualiza o conjunto de dados com os valores que estão atualmente no banco de dados. Selecionando**Sim** grava o valor proposto para o banco de dados.  
+10. Selecionando **não** cancela a atualização e atualiza o conjunto de dados com os valores que estão atualmente no banco de dados. Selecionando **Sim** grava o valor proposto para o banco de dados.
   
-## <a name="see-also"></a>Consulte também  
- [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>Consulte também
 
+- [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)

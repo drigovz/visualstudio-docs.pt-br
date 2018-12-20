@@ -1,7 +1,7 @@
 ---
 title: Exibição de contenções de recurso – Dados de contenção | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - Resource Contentions view
 ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3f18cf1131e61ba88832d59e0e77f462c088bec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dddc9c85731137c6499e976b4b571396af297f7a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474651"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810345"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Exibição de contenções de recurso – Dados de contenção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de contenções de recurso – dados de contenção](https://docs.microsoft.com/visualstudio/profiling/resource-contentions-view-contention-data).  
-  
 A exibição Contenção de Recursos lista os dados de contenção para os recursos que estavam na fonte de eventos de contenção. Um evento de contenção ocorre quando uma função em um thread é forçada a aguardar o acesso ao recurso porque uma função em outro thread obteve acesso exclusivo ao recurso. Cada recurso é o nó raiz de uma árvore de chamadas que exibe os caminhos de execução de função que resultaram em eventos de contenção.  
   
 ## <a name="data-values"></a>Valores de dados  

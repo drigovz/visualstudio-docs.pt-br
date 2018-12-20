@@ -1,7 +1,7 @@
 ---
 title: Campo TASK_STATE_FAULTED | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: ced826ae-09a9-4acf-af00-a2343d396bb8
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 59b5a798efc108324012bcd0b2c38183c3eb09d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7026e5fa8c041bbf8c8734b854da70acb2f9861
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475831"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733597"
 ---
 # <a name="taskstatefaulted-field"></a>Campo TASK_STATE_FAULTED
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [campo TASK_STATE_FAULTED](https://docs.microsoft.com/visualstudio/extensibility/debugger/task-state-faulted-field).  
-  
 A tarefa foi concluída devido a uma exceção sem tratamento.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  

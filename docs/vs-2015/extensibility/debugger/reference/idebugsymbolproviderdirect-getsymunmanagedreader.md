@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProviderDirect::GetSymUnmanagedReader | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 147bacfa-f66c-43e0-8a72-e601058dc57f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 967675e5113c3f104294ae9fe19fce8d7c39d818
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c86c3585685d29bfa1f1dc856a62a751174318c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468335"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775466"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugSymbolProviderDirect::GetSymUnmanagedReader](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsymbolproviderdirect-getsymunmanagedreader).  
-  
 Recupera um leitor de símbolo para código não gerenciado.  
   
 ## <a name="syntax"></a>Sintaxe  

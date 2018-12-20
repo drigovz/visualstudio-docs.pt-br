@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_lexicalparentid | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_lexicalParentId method
 ms.assetid: 6c0c2874-cc47-4e4f-ad9c-02a18a108d9d
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0383d629660548560aa54224d6382743ed2562b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fab4710b523bd4d5921386f831b14ef11a7014cd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461833"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798866"
 ---
 # <a name="idiasymbolgetlexicalparentid"></a>IDiaSymbol::get_lexicalParentId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_lexicalparentid](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-lexicalparentid).  
-  
 Recupera o identificador de léxico pai do símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_lexicalParentId (   
+HRESULT get_lexicalParentId (   
    DWORD* pRetVal  
 );  
 ```  

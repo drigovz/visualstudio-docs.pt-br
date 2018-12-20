@@ -1,7 +1,7 @@
 ---
 title: Usando as Ferramentas de Criação de Perfil na Linha de Comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,21 +17,19 @@ helpviewer_keywords:
 - command line, tools
 ms.assetid: 6593fa82-181e-4009-a0ed-02aa24c2c063
 caps.latest.revision: 40
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b827f7cca775e544049a23bcc8b0a431d11b332
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cb3fafa78d49904c346212e8fd4062c966a63f5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462216"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775141"
 ---
 # <a name="using-the-profiling-tools-from-the-command-line"></a>Usando as ferramentas de criação de perfil a partir da linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando a criação de perfil de ferramentas da linha de comando](https://docs.microsoft.com/visualstudio/profiling/using-the-profiling-tools-from-the-command-line).  
-  
 É possível usar as ferramentas da linha de comando das Ferramentas de Criação de Perfil [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para criar perfis de aplicativo no prompt de comando e automatizar a criação de perfil usando arquivos em lote e scripts. Também é possível geral arquivos de relatório em um prompt de comando. Você pode usar o criador de perfil autônomo leve para coletar dados em computadores que não têm o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instalado.  
   
 > [!NOTE]

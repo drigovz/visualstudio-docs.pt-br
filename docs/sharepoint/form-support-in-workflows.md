@@ -16,15 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b3a07f56819818e55548292f3dbcdc1095d9f00
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 27e8ab6651c6838de92b8a3d83311ebd47fabcbb
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326074"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296184"
 ---
 # <a name="form-support-in-workflows"></a>Suporte de formulário nos fluxos de trabalho
-  Quatro tipos de formulários podem ser usados em um fluxo de trabalho: associação, inicialização, tarefa e modificação. Esses tipos de formulário podem ser baseados em um formulário ASPX ou em um formulário do InfoPath. O nível de suporte que [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornece para um formulário específico depende de vários fatores, que são descritos nas tabelas a seguir. Para obter mais informações sobre os tipos de formulário de fluxo de trabalho, consulte [visão geral de formulários de fluxo de trabalho](http://go.microsoft.com/fwlink/?LinkId=185228) no site do MSDN.  
+  Quatro tipos de formulários podem ser usados em um fluxo de trabalho: associação, inicialização, tarefa e modificação. Esses tipos de formulário podem ser baseados em um formulário ASPX ou em um formulário do InfoPath. O nível de suporte que [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornece para um formulário específico depende de vários fatores, que são descritos nas tabelas a seguir. Para obter mais informações sobre os tipos de formulário de fluxo de trabalho, consulte [visão geral de formulários de fluxo de trabalho](http://go.microsoft.com/fwlink/?LinkId=185228).  
   
 ## <a name="xml-refactoring"></a>Refatoração de XML
  Quando você adiciona um formulário de associação ou o início do ASPX para um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] item de projeto de fluxo de trabalho [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] automaticamente refatora o XML do fluxo de trabalho *Elements. XML* arquivo para manter o atributo que se refere à associação ou o formulário de inicialização em sincronização sempre que o caminho de implantação ou o nome do formulário é atualizado ou o formulário é excluído. No entanto, quando você usar outros tipos de formulário em um fluxo de trabalho, como um formulário de tarefa ou de modificação, o *Elements. XML* arquivo não é refatorado.  
@@ -43,7 +43,7 @@ ms.locfileid: "36326074"
  A seguinte tabela lista [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] suporte para tipos de forma diferente em formulários ASPX ou do InfoPath nos fluxos de trabalho reutilizáveis do SharePoint que são importados para [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 |Tipo de formulário|Fluxo de trabalho reutilizável que tem uma forma ASPX importada do SharePoint Designer|Fluxo de trabalho reutilizável que tem um formulário do InfoPath importado do SharePoint Designer|  
-|---------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
+|---------------|-------------------------------------------------------------------------------| - |  
 |Associação|-O formulário é referenciado na *Elements. XML* arquivo do fluxo de trabalho.<br />-A *Elements. XML* arquivo do fluxo de trabalho é refatorado quando o formulário for renomeado ou excluído, ou quando seu caminho de implantação é alterado.|-O formulário é importado, mas não referenciado na *Elements. XML* do fluxo de trabalho.<br />-A *Elements. XML* arquivo do fluxo de trabalho não é refatorado.|  
 |Iniciação|-O formulário é referenciado pelo fluxo de trabalho na *Elements. XML* arquivo do fluxo de trabalho.<br />-A *Elements. XML* arquivo do fluxo de trabalho é refatorado quando o formulário for renomeado ou excluído, ou quando seu caminho de implantação é alterado.|-O formulário é importado, mas não referenciado na *Elements. XML* do fluxo de trabalho.<br />-A *Elements. XML* arquivo do fluxo de trabalho não é refatorado. **Observação:** regras e propriedades devem ser adicionadas e alteradas para este cenário funcione.|  
 |Tarefa|-O formulário é referenciado na *Elements. XML* arquivo do fluxo de trabalho.<br />-A *Elements. XML* arquivo do fluxo de trabalho não é refatorado.|-O formulário é importado, mas não referenciado na *Elements. XML* do fluxo de trabalho.<br />-A *Elements. XML* arquivo do fluxo de trabalho não é refatorado. **Observação:** regras e propriedades devem ser adicionadas e alteradas para este cenário funcione.|  

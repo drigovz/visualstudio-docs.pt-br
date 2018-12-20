@@ -1,7 +1,7 @@
 ---
 title: Coletando dados de simultaneidade para um aplicativo Web ASP .NET usando a linha de comando do criador de perfil | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - profiling tools,concurrency method
 ms.assetid: 0ba431c1-9eaf-4af9-8ce0-669c0835cdc2
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2543ad820515a48314aa2e68ff6fb0074d87adb7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8fba6fbb03b171b50014aad887ff83d9841f0249
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474265"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788284"
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Coletando dados de simultaneidade para um aplicativo Web do ASP.NET usando a linha de comando do criador de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [coletando dados de simultaneidade para um ASP.NET aplicativo Web usando a linha de comando do Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line).  
-  
 O método de simultaneidade de Ferramentas de Criação de Perfil [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite coletar dados de contenção de recursos.  
   
 ## <a name="common-tasks"></a>Tarefas comuns  

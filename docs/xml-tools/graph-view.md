@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 603c0849d22f658800776e8a1e4cb1f429990e00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "34751696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894619"
 ---
 # <a name="graph-view"></a>Exibição de gráfico
 
@@ -27,7 +27,7 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 
 ## <a name="design-surface"></a>Superfície de design
 
- A superfície de design do modo de gráfico exibe o conteúdo do [espaço de trabalho designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md). Se o espaço de trabalho contém quaisquer nós globais do conjunto de esquema, os nós são mostrados na superfície de design do modo de gráfico e as setas são desenhadas entre os nós que possuem relações.
+ A superfície de design do modo de gráfico exibe o conteúdo do [espaço de trabalho designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md). Se o workspace contém quaisquer nós globais do conjunto de esquema, os nós são mostrados na superfície de design do modo de gráfico e as setas são desenhadas entre os nós que possuem relações.
 
  Clique duas vezes em um nó no modo de gráfico trará anterior o editor XML.
 
@@ -48,13 +48,13 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
  A tabela a seguir descreve as opções que estão disponíveis para todos os nós na superfície de design do modo de gráfico.
 
 |Opção|Descrição|
-|------------|-----------------|
+|-|-----------------|
 |**Mostrar em XML Schema Explorer**|Coloca o foco no esquema Explorer e ressalta o nó do esquema.|
 |**Mostrar na exibição de gráfico**|Alterna para o modo de exibição gráfico (desativada).|
 |**Gerar XML de exemplo**|Disponível somente para os elementos globais. Gerencia um arquivo XML de exemplo para o elemento global.|
-|**Limpar o espaço de trabalho**|Limpa o espaço de trabalho e a superfície de design.|
-|**Remover espaço de trabalho**|Removes selecionou nós de espaço de trabalho e da superfície de design.|
-|**Remover tudo, exceto a seleção do espaço de trabalho**|Remove os nós que não são selecionados de espaço de trabalho e da superfície de design.|
+|**Limpar o espaço de trabalho**|Limpa o workspace e a superfície de design.|
+|**Remover espaço de trabalho**|Removes selecionou nós de workspace e da superfície de design.|
+|**Remover tudo, exceto a seleção do espaço de trabalho**|Remove os nós que não são selecionados de workspace e da superfície de design.|
 |**Exportar diagrama como imagem**|Salva a superfície de design para um arquivo XPS.|
 |**Selecionar tudo**|Selecionar todos os nós na superfície de design.|
 |**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor XML. O item selecionado na **XML Schema Explorer** também está selecionado no Editor de XML.|
@@ -63,7 +63,7 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
  Além das opções comuns descritas anterior, o menu de contexto para elementos globais também tem as seguintes opções:
 
 |Opção|Descrição|
-|------------|-----------------|
+|-|-----------------|
 |**Adicionar definição de tipo**|Adiciona o tipo base no diagrama.|
 |**Adicionar todas as referências**|Adiciona todos os nós que se referem ao elemento e desenha setas para indicar relações entre eles.|
 |**Adicionar membros do grupo de substituição**|Adiciona todos os membros do grupo de substituição. Essa opção aparece na exibição se o elemento é o início ou membro de um grupo de substituição.|
@@ -72,7 +72,7 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
  Além das opções comuns descritas anterior, o menu de contexto para tipos complexos simples e globais globais também tem as seguintes opções:
 
 |Opção|Descrição|
-|------------|-----------------|
+|-|-----------------|
 |**Adicione o tipo Base**|Se o tipo selecionado é derivado de um tipo global, adiciona o tipo base do tipo selecionado.|
 |**Adicionar todas as referências**|Adiciona todas as referências de tipo selecionado. Isso inclui os elementos e atributos do tipo selecionado, e tipos derivados do tipo selecionado.|
 |**Adicionar todos os tipos derivados**|Adiciona todos os tipos que direta e indiretamente são derivados do tipo selecionado.|
@@ -81,14 +81,14 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
  Além das opções comuns descritas anterior, o menu de contexto para grupos globais e grupos de atributo também tem as seguintes opções:
 
 |Opção|Descrição|
-|------------|-----------------|
+|-|-----------------|
 |**Adicionar todas as referências**|Adiciona todos os nós que se referem ao grupo e desenha setas para indicar relações entre eles.|
 |**Adicionar todos os membros**|Adiciona todos os membros do grupo e desenha setas para indicar relações entre eles.|
 
  No addtion em padrões comuns descritas anterior, o menu de contexto para atributos globais também tem as seguintes opções:
 
 |Opção|Descrição|
-|------------|-----------------|
+|-|-----------------|
 |**Adicionar todas as referências**|Adiciona todos os nós que se referem ao grupo e desenha setas para indicar relações entre eles.|
 
 ## <a name="properties-window"></a>Janela de Propriedades
@@ -102,13 +102,13 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
  ![Barra de ferramentas do Designer de Esquema XML](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Opção|Descrição|
-|------------|-----------------|
+|-|-----------------|
 |**Mostrar exibição inicial**|Alterna para o [Iniciar modo de exibição](../xml-tools/start-view.md). Este modo de exibição pode ser acessado por meio do atalho de teclado: **Ctrl**+**1**.|
 |**Mostrar modo de exibição do modelo de conteúdo**|Alterna para o [exibição de modelo de conteúdo](../xml-tools/content-model-view.md). Este modo de exibição pode ser acessado por meio do atalho de teclado: **Ctrl**+**2**.|
 |**Mostrar exibição de gráfico**|Alterna para o [exibição de gráfico](../xml-tools/graph-view.md). Este modo de exibição pode ser acessado por meio do atalho de teclado: **Ctrl**+**3**.|
-|**Limpar o espaço de trabalho**|Limpa o espaço de trabalho e a superfície de design.|
-|**Remover espaço de trabalho**|Removes selecionou nós de espaço de trabalho e da superfície de design.|
-|**Remover tudo, exceto a seleção do espaço de trabalho**|Remove os nós que não são selecionados de espaço de trabalho e da superfície de design. Essa opção é ativada no modo do modelo de conteúdo e no modo de gráfico.|
+|**Limpar o espaço de trabalho**|Limpa o workspace e a superfície de design.|
+|**Remover espaço de trabalho**|Removes selecionou nós de workspace e da superfície de design.|
+|**Remover tudo, exceto a seleção do espaço de trabalho**|Remove os nós que não são selecionados de workspace e da superfície de design. Essa opção é ativada no modo do modelo de conteúdo e no modo de gráfico.|
 |**Esquerda para a direita**|Altera o layout no modo de gráfico a uma representação hierárquica esquerda para a direita de nós. Essa opção pode ser acessada por meio do atalho de teclado: **Alt**+**seta para a direita**.|
 |**Direita para a esquerda**|Altera o layout no modo de gráfico a uma representação hierárquica da direita para a esquerda de nós. Essa opção pode ser acessada por meio do atalho de teclado: **Alt**+**seta para a esquerda**.|
 |**Cima para baixo**|Altera o layout no modo de gráfico a uma representação hierárquica de cima para baixo de nós. Essa opção pode ser acessada por meio do atalho de teclado: **Alt**+**seta para baixo**.|

@@ -1,12 +1,12 @@
 ---
 title: Mapear dependências nas soluções | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
 - vs.progression.standardgraphsdialog
@@ -29,21 +29,19 @@ helpviewer_keywords:
 - code exploration, visualizing
 ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
 caps.latest.revision: 245
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 06dc2d18ab6641847e2f0edb0d34cb671bca28a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 20122a1b254eee15efb557b5899e59fc914fda3a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462447"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740043"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapear as dependências nas soluções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [mapear as dependências nas soluções](https://docs.microsoft.com/visualstudio/modeling/map-dependencies-across-your-solutions).  
-  
 Quando você quer entender dependências em seu código, exiba-os Criando mapas de código. Isso ajuda você a ver como o código se ajusta sem ler nos arquivos e linhas de código.  
   
  ![Exibir as dependências nas soluções](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
@@ -68,13 +66,13 @@ Quando você quer entender dependências em seu código, exiba-os Criando mapas 
   
  **Você pode mapear as dependências para o código nesses idiomas**:  
   
--   Visual c# .NET ou Visual Basic .NET em uma solução ou assemblies (. dll ou .exe)  
+- Visual c# .NET ou Visual Basic .NET em uma solução ou assemblies (. dll ou .exe)  
   
--   Código C ou C++ nativo ou gerenciado em projetos do Visual C++, arquivos de cabeçalho (. h ou `#include`) ou binários  
+- Código C ou C++ nativo ou gerenciado em projetos do Visual C++, arquivos de cabeçalho (. h ou `#include`) ou binários  
   
--   Projetos e assemblies do X++ feitos com base nos módulos do .NET para Microsoft AX Dynamics  
+- Projetos e assemblies do X++ feitos com base nos módulos do .NET para Microsoft AX Dynamics  
   
- **Observação:** para projetos que não sejam c# ou Visual Basic .NET, há poucas opções para o início de um mapa de código ou adicionar itens a um mapa de código existente. Por exemplo, você não é um objeto no editor de texto de um projeto C++ com o botão direito e adicioná-lo a um mapa de código. No entanto, você pode arrastar e soltar elementos de código individuais ou arquivos de Gerenciador de soluções, exibição de classe e Pesquisador de objetos.  
+  **Observação:** para projetos que não sejam c# ou Visual Basic .NET, há poucas opções para o início de um mapa de código ou adicionar itens a um mapa de código existente. Por exemplo, você não é um objeto no editor de texto de um projeto C++ com o botão direito e adicioná-lo a um mapa de código. No entanto, você pode arrastar e soltar elementos de código individuais ou arquivos de Gerenciador de soluções, exibição de classe e Pesquisador de objetos.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Para ver as dependências gerais em sua solução  
   
@@ -124,51 +122,51 @@ Quando você quer entender dependências em seu código, exiba-os Criando mapas 
   
 ###  <a name="OverviewSource"></a> Consulte as dependências em sua solução  
   
-1.  Sobre o **arquitetura** menu, escolha **gerar mapa de código para solução**.  
+1. Sobre o **arquitetura** menu, escolha **gerar mapa de código para solução**.  
   
-     ![Gerar um comando de mapa de código](../modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
+    ![Gerar um comando de mapa de código](../modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
   
-     Você obtém um mapa que mostra os assemblies de nível superior e os links agregados entre eles. Quanto maior o vínculo agregado, mais dependências ele representa.  
+    Você obtém um mapa que mostra os assemblies de nível superior e os links agregados entre eles. Quanto maior o vínculo agregado, mais dependências ele representa.  
   
-2.  Use o **legenda** botão na barra de ferramentas de mapa de código para mostrar ou ocultar a lista de ícones do tipo de projeto (por exemplo, teste, Web e projeto do Phone), itens de código (como Classes, métodos e propriedades) e tipos de relação (por exemplo, herda de Implementa e chamadas).  
+2. Use o **legenda** botão na barra de ferramentas de mapa de código para mostrar ou ocultar a lista de ícones do tipo de projeto (por exemplo, teste, Web e projeto do Phone), itens de código (como Classes, métodos e propriedades) e tipos de relação (por exemplo, herda de Implementa e chamadas).  
   
-     ![Top&#45;grafo de dependência de nível de assemblies](../modeling/media/dependencygraph-toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
+    ![Top&#45;grafo de dependência de nível de assemblies](../modeling/media/dependencygraph-toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
   
-     Essa solução de exemplo contém pastas de solução (**testes** e **componentes**), assemblies, projetos da Web e projetos de teste. Por padrão, todas as relações de confinamento pareçam *grupos*, que você pode expandir e recolher. O **Externals** grupo contém nada fora da sua solução, incluindo dependências de plataforma. Os assemblies externos mostram apenas os itens usados. Por padrão, os tipos de base do sistema estão ocultos no mapa para reduzir a desordem.  
+    Essa solução de exemplo contém pastas de solução (**testes** e **componentes**), assemblies, projetos da Web e projetos de teste. Por padrão, todas as relações de confinamento pareçam *grupos*, que você pode expandir e recolher. O **Externals** grupo contém nada fora da sua solução, incluindo dependências de plataforma. Os assemblies externos mostram apenas os itens usados. Por padrão, os tipos de base do sistema estão ocultos no mapa para reduzir a desordem.  
   
-3.  Para fazer drill down no mapa, expanda os grupos que representam projetos e assemblies. Você pode expandir tudo pressionando **CTRL + T** para selecionar todos os nós e, em seguida, escolhendo **grupo**, **expandir** no menu de atalho.  
+3. Para fazer drill down no mapa, expanda os grupos que representam projetos e assemblies. Você pode expandir tudo pressionando **CTRL + T** para selecionar todos os nós e, em seguida, escolhendo **grupo**, **expandir** no menu de atalho.  
   
-     ![Expandir todos os grupos em um mapa de códigos](../modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
+    ![Expandir todos os grupos em um mapa de códigos](../modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
   
-4.  No entanto, isso não pode ser útil para uma solução grande. Na verdade, para soluções complexas, limitações de memória podem impedir que você expandir todos os grupos. Em vez disso, para ver dentro de um nó individual, expandi-lo. Mova o ponteiro do mouse sobre o nó e, em seguida, clique na divisa (seta para baixo) quando ele for exibido.  
+4. No entanto, isso não pode ser útil para uma solução grande. Na verdade, para soluções complexas, limitações de memória podem impedir que você expandir todos os grupos. Em vez disso, para ver dentro de um nó individual, expandi-lo. Mova o ponteiro do mouse sobre o nó e, em seguida, clique na divisa (seta para baixo) quando ele for exibido.  
   
-     ![Expandir um nó em um mapa de códigos](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
+    ![Expandir um nó em um mapa de códigos](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
   
-     Ou use o teclado selecionando o item, em seguida, pressionar a tecla de mais (**+**). Para explorar níveis mais profundos do código, faça o mesmo para namespaces, tipos e membros.  
+    Ou use o teclado selecionando o item, em seguida, pressionar a tecla de mais (**+**). Para explorar níveis mais profundos do código, faça o mesmo para namespaces, tipos e membros.  
   
-    > [!TIP]
-    >  Para obter mais detalhes de como trabalhar com o código de mapas usando o mouse, teclado e toque, consulte [procurar e reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).  
+   > [!TIP]
+   >  Para obter mais detalhes de como trabalhar com o código de mapas usando o mouse, teclado e toque, consulte [procurar e reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).  
   
-5.  Para simplificar o mapa e se concentrar em partes individuais, escolha **filtros** na barra de ferramentas de mapa de código e selecione apenas os tipos de nós e links que lhe interessam. Por exemplo, você pode ocultar todas as pastas de solução e Assembly recipientes.  
+5. Para simplificar o mapa e se concentrar em partes individuais, escolha **filtros** na barra de ferramentas de mapa de código e selecione apenas os tipos de nós e links que lhe interessam. Por exemplo, você pode ocultar todas as pastas de solução e Assembly recipientes.  
   
-     ![Simplificar o mapa pela filtragem de recipientes](../modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
+    ![Simplificar o mapa pela filtragem de recipientes](../modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
   
-     Você também pode simplificar o mapa, ocultar ou removendo grupos individuais e itens do mapa, sem afetar o código subjacente da solução.  
+    Você também pode simplificar o mapa, ocultar ou removendo grupos individuais e itens do mapa, sem afetar o código subjacente da solução.  
   
-6.  Para ver as relações entre itens, selecione-os no mapa. As cores dos links indicam os tipos de relação, conforme mostrado na **legenda** painel.  
+6. Para ver as relações entre itens, selecione-os no mapa. As cores dos links indicam os tipos de relação, conforme mostrado na **legenda** painel.  
   
-     ![Exibir as dependências nas soluções](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
+    ![Exibir as dependências nas soluções](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
   
-     Neste exemplo, os links de roxos são chamadas, os links pontilhados são referências e os links de azuis claras são acesso de campo. Links de verde pode ser herança ou podem ser *agregar links* que indicam que mais de um tipo de relação (ou *categoria*).  
+    Neste exemplo, os links de roxos são chamadas, os links pontilhados são referências e os links de azuis claras são acesso de campo. Links de verde pode ser herança ou podem ser *agregar links* que indicam que mais de um tipo de relação (ou *categoria*).  
   
-    > [!TIP]
-    >  Se você vir um link verde, ele pode não significar que exista apenas uma relação de herança. Também podem ser chamadas de método, mas estão ocultas pela relação de herança. Para ver tipos específicos de links, use as caixas de seleção na **filtros** painel para ocultar os tipos que não esteja interessado em.  
+   > [!TIP]
+   >  Se você vir um link verde, ele pode não significar que exista apenas uma relação de herança. Também podem ser chamadas de método, mas estão ocultas pela relação de herança. Para ver tipos específicos de links, use as caixas de seleção na **filtros** painel para ocultar os tipos que não esteja interessado em.  
   
-7.  Para obter mais informações sobre um item ou link, mova o ponteiro sobre ele, até que uma dica de ferramenta seja exibida. Isso mostra detalhes de um elemento de código ou as categorias que representa um link.  
+7. Para obter mais informações sobre um item ou link, mova o ponteiro sobre ele, até que uma dica de ferramenta seja exibida. Isso mostra detalhes de um elemento de código ou as categorias que representa um link.  
   
-     ![Mostrar as categorias de um relacionamento](../modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
+    ![Mostrar as categorias de um relacionamento](../modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
   
-8.  Para examinar itens e dependências representados por um link agregado, primeiro selecione o link e, em seguida, abra o menu de atalho. Escolher **Mostrar Links participantes** (ou **Mostrar Links participantes no novo mapa de códigos**). Isso expande os grupos em ambas as extremidades do link e mostra somente os itens e as dependências que participam no link.  
+8. Para examinar itens e dependências representados por um link agregado, primeiro selecione o link e, em seguida, abra o menu de atalho. Escolher **Mostrar Links participantes** (ou **Mostrar Links participantes no novo mapa de códigos**). Isso expande os grupos em ambas as extremidades do link e mostra somente os itens e as dependências que participam no link.  
   
 9. Para focalizar em partes específicas do mapa, você pode continuar a remover itens que não esteja interessado em. Por exemplo, para detalhar o modo de exibição de classe e membro, simplesmente filtrar todos os nós de namespace na **filtros** painel.  
   
@@ -186,7 +184,7 @@ Quando você quer entender dependências em seu código, exiba-os Criando mapas 
   
      ![Selecionar itens para exibir as relações](../modeling/media/codemapsviewnewrelationships.png "CodeMapsViewNewRelationships")  
   
- Confira também:   
+    Confira também:   
   
 -   [Procurar e reorganizar mapas de códigos](../modeling/browse-and-rearrange-code-maps.md)  
   
@@ -306,11 +304,11 @@ Quando você quer entender dependências em seu código, exiba-os Criando mapas 
 ###  <a name="Troubleshooting"></a> Solucionar problemas de mapas de código C e C++  
  Esses itens não são suportados para os códigos C e C++:  
   
--   Tipos de base não são exibidos em mapas que incluem a hierarquia pai.  
+- Tipos de base não são exibidos em mapas que incluem a hierarquia pai.  
   
--   A maioria dos **Mostrar** itens de menu não estão disponíveis para código C e C++.  
+- A maioria dos **Mostrar** itens de menu não estão disponíveis para código C e C++.  
   
- Esses problemas podem ocorrer quando você cria mapas de código para código C e C++:  
+  Esses problemas podem ocorrer quando você cria mapas de código para código C e C++:  
   
 |**Problema**|**Possível causa**|**Resolução**|  
 |---------------|------------------------|--------------------|  
@@ -326,23 +324,23 @@ Quando você quer entender dependências em seu código, exiba-os Criando mapas 
 ##  <a name="RenderMoreQuickly"></a> Tornar o código mapas renderizam mais rapidamente  
  Quando você gera um mapa pela primeira vez, o Visual Studio indexa todas as dependências que encontra. Esse processo pode levar algum tempo, especialmente para grandes soluções, mas melhorará o desempenho mais tarde. Se seu código for alterado, o Visual Studio indexa novamente o código atualizado. Para minimizar o tempo necessário para o mapa concluir a renderização, considere o seguinte:  
   
--   [Mapear as dependências que lhe interessam.](#SeeSpecificSource)  
+- [Mapear as dependências que lhe interessam.](#SeeSpecificSource)  
   
--   Antes de gerar o mapa para uma solução inteira, reduza o escopo da solução.  
+- Antes de gerar o mapa para uma solução inteira, reduza o escopo da solução.  
   
--   Desativar a compilação automática para a solução com o **Skip Build** na barra de ferramentas de mapa de código.  
+- Desativar a compilação automática para a solução com o **Skip Build** na barra de ferramentas de mapa de código.  
   
--   Desativar a adição automática de itens pai com o **pais incluem** na barra de ferramentas de mapa de código.  
+- Desativar a adição automática de itens pai com o **pais incluem** na barra de ferramentas de mapa de código.  
   
--   Edite o arquivo de mapa de código diretamente para remover os nós e links que você não precisa. Alterar o mapeamento não afeta o código subjacente. Consulte [Personalizar mapa de códigos editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+- Edite o arquivo de mapa de código diretamente para remover os nós e links que você não precisa. Alterar o mapeamento não afeta o código subjacente. Consulte [Personalizar mapa de códigos editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
- ![Botões de Skip Build e incluir pais](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
+  ![Botões de Skip Build e incluir pais](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
   
- Embora o Visual Studio pode ser executado com 1 GB de memória, é recomendável que o computador tenha pelo menos 2 GB de memória para evitar longos atrasos enquanto o Visual Studio cria o índice de código e gera o mapa.  
+  Embora o Visual Studio pode ser executado com 1 GB de memória, é recomendável que o computador tenha pelo menos 2 GB de memória para evitar longos atrasos enquanto o Visual Studio cria o índice de código e gera o mapa.  
   
- Pode levar mais tempo para criar mapas ou adicionar itens a um mapa no Gerenciador de soluções quando um item de projeto **Copy to Output Directory** estiver definida como **copiar sempre**. Isso pode causar problemas em compilações incrementais e fazer o Visual Studio recompilar o projeto sempre. Para aumentar o desempenho, altere essa propriedade para **copiar se mais recente** ou `PreserveNewest`. Ver [compilações incrementais](../msbuild/incremental-builds.md).  
+  Pode levar mais tempo para criar mapas ou adicionar itens a um mapa no Gerenciador de soluções quando um item de projeto **Copy to Output Directory** estiver definida como **copiar sempre**. Isso pode causar problemas em compilações incrementais e fazer o Visual Studio recompilar o projeto sempre. Para aumentar o desempenho, altere essa propriedade para **copiar se mais recente** ou `PreserveNewest`. Ver [compilações incrementais](../msbuild/incremental-builds.md).  
   
- O mapa concluído mostrará dependências apenas para códigos criados com êxito. Se ocorrerem erros de compilação para determinados componentes, esses erros são exibidos no mapa. Certifique-se de que um componente é efetivamente compilado e tem dependências nele antes de tomar decisões arquitetônicas com base no mapa.  
+  O mapa concluído mostrará dependências apenas para códigos criados com êxito. Se ocorrerem erros de compilação para determinados componentes, esses erros são exibidos no mapa. Certifique-se de que um componente é efetivamente compilado e tem dependências nele antes de tomar decisões arquitetônicas com base no mapa.  
   
 ##  <a name="SavingExporting"></a> Compartilhar mapas de código  
   

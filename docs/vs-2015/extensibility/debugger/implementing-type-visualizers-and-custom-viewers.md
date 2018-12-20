@@ -1,7 +1,7 @@
 ---
 title: Implementar visualizadores de tipo e visualizadores personalizados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: abef18c0-8272-4451-b82a-b4624edaba7d
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 99eba66a3e77ab0a2771d4a6c337040a5adde47c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 11d047904e932646eedc974a50590dbe0a9ea99e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474342"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791274"
 ---
 # <a name="implementing-type-visualizers-and-custom-viewers"></a>Implementando visualizadores de tipo e visualizadores personalizados
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [implementar visualizadores de tipo e visualizadores personalizados](https://docs.microsoft.com/visualstudio/extensibility/debugger/implementing-type-visualizers-and-custom-viewers).  
-  
 > [!IMPORTANT]
 >  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
@@ -44,25 +42,25 @@ A versão mais recente deste tópico pode ser encontrada em [implementar visuali
 ## <a name="interfaces"></a>Interfaces  
  O EE implementa as interfaces a seguir para dar suporte a visualizadores de tipo a ser consumido pelo Visual Studio:  
   
--   [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)  
+- [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)  
   
--   [IPropertyProxyEESide](../../extensibility/debugger/reference/ipropertyproxyeeside.md)  
+- [IPropertyProxyEESide](../../extensibility/debugger/reference/ipropertyproxyeeside.md)  
   
--   [IPropertyProxyProvider](../../extensibility/debugger/reference/ipropertyproxyprovider.md)  
+- [IPropertyProxyProvider](../../extensibility/debugger/reference/ipropertyproxyprovider.md)  
   
--   [IEEDataStorage](../../extensibility/debugger/reference/ieedatastorage.md)  
+- [IEEDataStorage](../../extensibility/debugger/reference/ieedatastorage.md)  
   
--   [IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md)  
+- [IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md)  
   
--   [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
+- [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
- O EE consome as interfaces a seguir para dar suporte a visualizadores de tipo:  
+  O EE consome as interfaces a seguir para dar suporte a visualizadores de tipo:  
   
--   [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)  
+- [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)  
   
--   [IEEVisualizerServiceProvider](../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)  
+- [IEEVisualizerServiceProvider](../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)  
   
--   [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md)  
+- [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md)  
   
 ## <a name="see-also"></a>Consulte também  
  [Escrever um avaliador de expressão de CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   

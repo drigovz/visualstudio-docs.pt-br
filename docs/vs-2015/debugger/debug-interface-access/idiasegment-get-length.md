@@ -1,7 +1,7 @@
 ---
 title: 'Idiasegment:: Get_length | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSegment::get_length method
 ms.assetid: 5d92e394-649b-49f2-bce7-12dd9d666d85
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62babd2a6db28ff524fba017111e89757b52f9a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a897216f34a71ffd82267fa5beb2806786d6b8ab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473147"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805418"
 ---
 # <a name="idiasegmentgetlength"></a>IDiaSegment::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasegment:: Get_length](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasegment-get-length).  
-  
 Recupera o número de bytes no segmento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_ length (   
+HRESULT get_ length (   
    DWORD* pRetVal  
 );  
 ```  

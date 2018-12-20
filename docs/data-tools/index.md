@@ -1,21 +1,21 @@
 ---
+title: Desenvolva soluções de dados
+description: Conheça diferentes ferramentas para desenvolver soluções de dados no Visual Studio, incluindo as ferramentas do .NET Framework, o SQL Server Data Tools, o Azure Data Lake, o Azure HDInsight e o Azure Streaming Analytics.
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
-title: Usar as ferramentas de dados no Visual Studio para desenvolver soluções de dados
-description: Saiba mais sobre as ferramentas para soluções de dados no Visual Studio.
 ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87a928f1d987d496bee40c4236f53b5e14cb034d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 866737bc91615663df59856b8d06b457ad47c15f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691060"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159679"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Usar as ferramentas de dados no Visual Studio para desenvolver soluções de dados
 
@@ -33,7 +33,7 @@ Saiba como usar as ferramentas de dados no Visual Studio para desenvolver e test
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Saiba mais sobre o Visual Studio e as ferramentas do .NET Framework e o suporte de API para o desenvolvimento de aplicativos de dados</h3>
+                        <h3>Saiba mais sobre o Visual Studio e as ferramentas do .NET Framework, e sobre o suporte de API para desenvolvimento de aplicativos de dados</h3>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ Saiba como usar as ferramentas de dados no Visual Studio para desenvolver e test
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Saiba mais sobre como criar, implantar e manter bancos de dados com o SQL Server Data Tools</h3>
+                        <h3>Saiba mais sobre como projetar, implantar e manter bancos de dados com o SQL Server Data Tools</h3>
                     </div>
                 </div>
             </div>
@@ -116,7 +116,6 @@ Saiba como usar as ferramentas de dados no Visual Studio para desenvolver e test
 
 ---
 
-<hr>
 <h2>Referência</h2>
 
 <ul class="panelContent cardsW">
@@ -126,7 +125,7 @@ Saiba como usar as ferramentas de dados no Visual Studio para desenvolver e test
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><Accessing data in Visual Studio></p>
+                        <p><Access data in Visual Studio></p>
                     </div>
                 </div>
             </div>

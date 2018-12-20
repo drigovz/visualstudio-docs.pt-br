@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: ba24f499-5ba7-4c67-83e6-923229b52327
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 841331b496aa21687a7ebdf90a6f4eee40b5ae89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e433d3cde52d51460a9387164239186e47c1b60b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465761"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722809"
 ---
 # <a name="idebuggenericparamfield"></a>IDebugGenericParamField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugGenericParamField](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebuggenericparamfield).  
-  
 Representa um parâmetro para um tipo genérico do código gerenciado.  
   
 ## <a name="syntax"></a>Sintaxe  

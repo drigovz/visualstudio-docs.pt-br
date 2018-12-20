@@ -1,6 +1,6 @@
 ---
-title: Como anexar e desanexar ferramentas de desempenho de processos em execução | Microsoft Docs
-ms.custom: ''
+title: Anexar ferramentas de desempenho aos processos em execução
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea9b35192eb2584f92856e5ab9c50eac22da85f7
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: cb245b6930d1a633d5d5befa3266c3c7540c0915
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237221"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048522"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Como anexar e desanexar ferramentas de desempenho de processos em execução
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Como: Como anexar ferramentas de desempenho aos processos em execução e desanexá-las
 O criador de perfil pode ser usado para anexar ou desanexar de um processo em execução para facilitar a amostragem e a coleta de dados de desempenho. É possível usar esse método para criar o perfil de um processo quando você deseja evitar a coleta de dados sobre o tempo de carregamento do aplicativo ou para monitorar o desempenho de um processo após ele atingir um estado específico.  
   
 > [!NOTE]
@@ -33,13 +33,13 @@ O criador de perfil pode ser usado para anexar ou desanexar de um processo em ex
   
  Os processos que estão disponíveis para criação de perfil dependem das Permissões de acesso do usuário definidas por um administrador do computador. Uma conta de usuário pode, por exemplo, ter permissão para qualquer um dos seguintes:  
   
--   Recursos avançados de criação de perfil, quando o administrador tiver configurado o início do driver e do serviço.  
+- Recursos avançados de criação de perfil, quando o administrador tiver configurado o início do driver e do serviço.  
   
--   Criação de perfil de amostra apenas (usuários de domínio).  
+- Criação de perfil de amostra apenas (usuários de domínio).  
   
--   Acesso negado à criação de perfil para todos.  
+- Acesso negado à criação de perfil para todos.  
   
- Para obter mais informações, confira [Criação de perfil e segurança do Windows Vista](../profiling/profiling-and-windows-vista-security.md) e as opções de administração em [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Para obter mais informações, confira [Criação de perfil e segurança do Windows Vista](../profiling/profiling-and-windows-vista-security.md) e as opções de administração em [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-attach-to-a-running-process"></a>Para anexar a um processo em execução  
   
@@ -64,6 +64,6 @@ O criador de perfil pode ser usado para anexar ou desanexar de um processo em ex
 ## <a name="see-also"></a>Consulte também  
  [Coleta de dados de controle](../profiling/controlling-data-collection.md)   
  [Visão geral da sessão de desempenho](../profiling/performance-session-overview.md)   
- [Como iniciar e terminar a coleta de dados de desempenho](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Como: Iniciar e encerrar a coleta de dados de desempenho](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Criação de perfil e segurança do Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

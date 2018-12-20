@@ -1,7 +1,7 @@
 ---
 title: Criar um personalizado de mecanismo de depuração | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f071d15b0900fb256fba02502b2e31e72ad2222a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 516fda63a1a36e407a71cd6711ecdfabdc1e5e58
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462467"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784683"
 ---
 # <a name="creating-a-custom-debug-engine"></a>Criando um mecanismo de depuração personalizado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando um mecanismo de depuração personalizado](https://docs.microsoft.com/visualstudio/extensibility/debugger/creating-a-custom-debug-engine).  
-  
 Um mecanismo de depuração (DES) é um componente que permite a depuração de arquiteturas de tempo de execução específicas. Normalmente, há apenas uma implementação DE cada ambiente de tempo de execução.  
   
 > [!NOTE]

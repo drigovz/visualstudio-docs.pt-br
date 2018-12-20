@@ -1,7 +1,7 @@
 ---
 title: Referência de esquema 2.0 de extensão do VSIX | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 420f2bfff3a379eab818e2313953769b4c26f009
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0121f2d9d4a29942449b180c63c450d4a49b31f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472831"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785922"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referência do esquema de extensão do VSIX 2.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [2.0 referência do esquema de extensão do VSIX](https://docs.microsoft.com/visualstudio/extensibility/vsix-extension-schema-2-0-reference).  
-  
 Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um pacote VSIX. O formato de arquivo é regido por um esquema. A versão 2.0 desse esquema dá suporte a adição de atributos e tipos personalizados.  O esquema do manifesto é extensível. O carregador de manifesto ignora elementos XML e atributos que não entende.  
   
 > [!IMPORTANT]
@@ -168,31 +166,31 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
 ### <a name="assets-element"></a>Elemento de ativos  
  Esse elemento contém uma lista de `<Asset>` marcas para cada elemento de extensão ou o conteúdo exposto por este pacote.  
   
--   `<Asset>` -Esse elemento contém os seguintes atributos e elementos:  
+- `<Asset>` -Esse elemento contém os seguintes atributos e elementos:  
   
-    -   `Type` – Esse é o tipo de extensão ou conteúdo representado por este elemento. Cada `<Asset>` elemento deve ter uma única `Type`, mas vários `<Asset>` elementos podem ter o mesmo `Type`. Esse atributo deve ser representado como um nome totalmente qualificado, de acordo com as convenções de namespace. Os tipos conhecidos são:  
+  - `Type` – Esse é o tipo de extensão ou conteúdo representado por este elemento. Cada `<Asset>` elemento deve ter uma única `Type`, mas vários `<Asset>` elementos podem ter o mesmo `Type`. Esse atributo deve ser representado como um nome totalmente qualificado, de acordo com as convenções de namespace. Os tipos conhecidos são:  
   
-        1.  VSPackage  
+    1. VSPackage  
   
-        2.  Mefcomponent  
+    2. Mefcomponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         Você pode criar seus próprios tipos e dar-lhes nomes exclusivos. Em tempo de execução dentro do Visual Studio, seu código pode enumerar e acessar esses tipos personalizados por meio da API do Gerenciador de extensões.  
+       Você pode criar seus próprios tipos e dar-lhes nomes exclusivos. Em tempo de execução dentro do Visual Studio, seu código pode enumerar e acessar esses tipos personalizados por meio da API do Gerenciador de extensões.  
   
-    -   Caminho – o caminho relativo para o arquivo ou pasta dentro do pacote que contém o ativo.  
+  - Caminho – o caminho relativo para o arquivo ou pasta dentro do pacote que contém o ativo.  
   
-    -   `AnyAttribute*` – Um conjunto em aberto de atributos que serão expostos em tempo de execução como um dicionário de par nome-valor.  
+  - `AnyAttribute*` – Um conjunto em aberto de atributos que serão expostos em tempo de execução como um dicionário de par nome-valor.  
   
-         `<AnyElement>*` – Qualquer conteúdo estruturado é permitido entre um `<Asset>` começa e termina a marca. Todos os elementos são expostos como uma lista de objetos XmlElement. Extensões VSIX podem definir metadados estruturados de tipo específico no arquivo de manifesto e enumerá-los em tempo de execução.  
+     `<AnyElement>*` – Qualquer conteúdo estruturado é permitido entre um `<Asset>` começa e termina a marca. Todos os elementos são expostos como uma lista de objetos XmlElement. Extensões VSIX podem definir metadados estruturados de tipo específico no arquivo de manifesto e enumerá-los em tempo de execução.  
   
 ### <a name="sample-manifest"></a>Exemplo de manifesto  
   

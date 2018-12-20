@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cff1eb98dd76f8b594193b2e768987b4e2a441d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 473f46e87ded78e134ab021b68c57248f8ac1a33
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747450"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349199"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Dicas de acessibilidade e truques do Visual Studio
 
@@ -26,6 +26,9 @@ ms.locfileid: "34747450"
 > Para saber mais sobre atualizações de acessibilidade recentes, confira a postagem no blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Aprimoramentos de acessibilidade no Visual Studio 2017 versão 15.3).
 
 O Visual Studio tem recursos internos de acessibilidade que são compatíveis com leitores de tela e outras tecnologias assistenciais. Este tópico lista combinações de teclas de atalho comum que você pode usar para executar tarefas apenas com o teclado e inclui informações de como usar temas de alto contraste para melhorar a visibilidade. Além disso, mostra como usar anotações para revelar informações úteis sobre o código e como configurar indicações de som para eventos de build e de ponto de interrupção.
+
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Acessibilidade do Visual Studio para Mac](/visualstudio/mac/accessibility).
 
 ## <a name="save-your-ide-settings"></a>Salvar as configurações do IDE
 
@@ -48,7 +51,7 @@ O editor do Visual Studio inclui vários "adornos" de texto que permitem saber a
 O Visual Studio IDE tem barras de ferramentas, assim como tem muitas janelas de ferramentas. As combinações de teclas de atalho a seguir ajudarão você a acessá-las.
 
 |Recurso|Descrição|Combinação de teclas|
-|-------------|-----------------|---------------------|
+|-------------|-----------------| - |
 |Barras de ferramentas do IDE|Selecione o primeiro botão na barra de ferramentas Standard.|**ALT**, **CTRL** + **TAB**|
 |Barras de ferramentas da janela de ferramentas|Mova o foco para a barra de ferramentas em uma janela de ferramentas. <br> <br> **OBSERVAÇÃO:** isso funciona para a maioria das janelas de ferramentas, mas somente quando o foco está em uma janela de ferramentas. Além disso, você deve escolher a tecla SHIFT antes da tecla ALT. Em algumas janelas de ferramentas, como a Team Explorer, você deve manter a tecla SHIFT pressionada por um momento antes de escolher a tecla ALT.|**SHIFT** + **ALT**|
 |Barras de ferramentas|Acesse o primeiro item na barra de ferramentas Avançar (quando uma barra de ferramentas tem foco).|**CTRL** + **TAB**|
@@ -58,7 +61,7 @@ O Visual Studio IDE tem barras de ferramentas, assim como tem muitas janelas de 
 Algumas outras combinações de teclas de atalho úteis incluem o seguinte.
 
 |Recurso|Descrição|Combinação de teclas|
-|-------------|-----------------|---------------------|
+|-------------|-----------------| - |
 |IDE|Ativar e desativar o alto contraste. <br> <br> **OBSERVAÇÃO:** atalho padrão do Windows|**ALT esquerdo + SHIFT esquerdo + PRINT SCREEN**|
 |Caixa de diálogo|Marque ou desmarque a opção da caixa de seleção em uma caixa de diálogo. <br> <br> **OBSERVAÇÃO:** atalho padrão do Windows|**BARRA DE ESPAÇO**|
 |Menus de contexto|Abra um menu de contexto (clique com o botão direito do mouse). <br> <br> **OBSERVAÇÃO:** atalho padrão do Windows|**SHIFT** + **F10**|
@@ -83,18 +86,18 @@ Veja como.
 
 1. Na caixa **Pesquisar** em um computador executando o Windows 10, digite **Alterar sons do sistema**.
 
-  ![Caixa de pesquisa no Windows 10](media/type-here-to-search.png)
+   ![Caixa de pesquisa no Windows 10](media/type-here-to-search.png)
 
-  (Como alternativa, se você tiver habilitado a Cortana, diga "Ei Cortana" e, em seguida, diga "Alterar sons do sistema".)
+   (Como alternativa, se você tiver habilitado a Cortana, diga "Ei Cortana" e, em seguida, diga "Alterar sons do sistema".)
 
 2. Clique duas vezes em **Alterar sons do sistema**.
 
-  ![Resultados da pesquisa no Windows 10](media/change-system-sounds.png)
+   ![Resultados da pesquisa no Windows 10](media/change-system-sounds.png)
 
 3. Na caixa de diálogo **Som**, clique na guia **Sons**. <br><br>
- Em seguida, em **Eventos do Programa**, role até **Microsoft Visual Studio** e selecione os sons que você deseja aplicar aos eventos escolhidos.
+   Em seguida, em **Eventos do Programa**, role até **Microsoft Visual Studio** e selecione os sons que você deseja aplicar aos eventos escolhidos.
 
-  ![Guia Sons do miniaplicativo de som no Windows 10](media/sound-applet.png)
+   ![Guia Sons do miniaplicativo de som no Windows 10](media/sound-applet.png)
 
 4. Clique em **OK**.
 
@@ -104,3 +107,4 @@ Veja como.
 * [Como personalizar menus e barras de ferramentas no Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 * [Acessibilidade da Microsoft](https://www.microsoft.com/Accessibility)
+* [Acessibilidade (Visual Studio para Mac)](/visualstudio/mac/accessibility)

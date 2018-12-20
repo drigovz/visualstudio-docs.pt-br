@@ -1,5 +1,5 @@
 ---
-title: Tempos de processamento para testes de carga no Visual Studio
+title: Tempos de processamento para teste de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8f8f90eb341112cd700d45b6b7c7d100cad2a024
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 236b6dffa3885928b48b7d6ea044f2494e7d7b28
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175976"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895906"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Editar tempos de processamento para simular atrasos de interação humana no site em cenários de testes de carga
 
 Os tempos de processamento são usados para simular o comportamento humano que faz com que as pessoas esperem entre as interações com um site. Os tempos de processamento ocorrem entre as solicitações em um teste de desempenho na Web e entre as iterações de teste em um cenário de teste de carga. Usar tempos de processamento em um teste de carga pode ser útil ao criar simulações de carga mais precisas. Você pode alterar se os tempos de processamento serão usados ou ignorados em testes de carga. Você altera se os tempos de processamento são usados nos testes de carga no **Editor de Teste de Carga**.
 
- O *perfil de processamento* é uma configuração que se aplica a um cenário em um teste de carga. A configuração determina se os tempos de processamento que são salvos nos testes de desempenho na Web individuais serão usados durante o teste de carga. Se você quiser usar tempos de processamento em alguns testes de desempenho na Web, mas não em outros, será necessário inseri-los em cenários diferentes. Para saber mais sobre cenários, confira [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md).
+O *perfil de processamento* é uma configuração que se aplica a um cenário em um teste de carga. A configuração determina se os tempos de processamento que são salvos nos testes de desempenho na Web individuais serão usados durante o teste de carga. Se você quiser usar tempos de processamento em alguns testes de desempenho na Web, mas não em outros, será necessário inseri-los em cenários diferentes. Para saber mais sobre cenários, confira [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md).
 
- Inicialmente, você define se quer usar tempos de processamento em seus testes de carga quando cria o teste de carga usando o **Novo Assistente de Teste de Carga**. Para saber mais, confira [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md).
+Inicialmente, você define se quer usar tempos de processamento em seus testes de carga quando cria o teste de carga usando o **Novo Assistente de Teste de Carga**. Para saber mais, confira [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md).
 
- As opções de **Perfil de Processamento** são descritas na lista a seguir:
+As opções de **Perfil de Processamento** são descritas na lista a seguir:
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 **Off**
 

@@ -1,7 +1,7 @@
 ---
 title: 'Como: usar a pesquisa no Designer de fluxo de trabalho | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 5c66286aa8647644bf32e0d805c2ff8d0f574991
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ff90f9e7916b598a1bf921f6de1e752afdb8b4f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461075"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272527"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Como: Use Pesquisa em Designer de Fluxo de Trabalho
 Para facilitar a criação maior, os fluxos de trabalho mais complexos, pesquisam podem ser usados em Designer de Fluxo de Trabalho para localizar itens por palavras-chave. Observe que o designer não suporta substitui. Pesquisar encontrará a seguir no designer:  

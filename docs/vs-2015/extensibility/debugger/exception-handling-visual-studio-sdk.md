@@ -1,7 +1,7 @@
 ---
 title: (Visual Studio SDK) de tratamento de exceções | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e42e4dbe18b0d2fe6da522d24d493270518e884e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2640641a4cb02c34255cbd0b0016c31a0dd14638
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475870"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732967"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>Tratamento de exceção (SDK do Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Exception Handling (SDK do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/debugger/exception-handling-visual-studio-sdk).  
-  
 O exemplo a seguir descreve o processo que ocorre quando as exceções são geradas.  
   
 ## <a name="exception-handling-process"></a>Processo de manipulação de exceção  

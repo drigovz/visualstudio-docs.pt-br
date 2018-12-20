@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f7c05d76aa74e32695d20b2d5e9ed4f030e65813
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a4b3df4661b23268fed811799c80cfc31b624a50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849145"
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizando o comportamento da operação de excluir
 A exclusão de um elemento geralmente provoca também a exclusão de seus elementos relacionados. Todas as relações conectadas a ele e quaisquer elementos filhos são excluídos. Esse comportamento é chamado *excluir propagação*. Você pode personalizar a propagação da exclusão, por exemplo, para providenciar que os elementos adicionais relacionados sejam excluídos. Ao escrever o código do programa, você pode fazer com que a propagação de exclusão dependa do estado do modelo. Também é possível causar outras alterações em resposta a uma exclusão.
@@ -57,19 +57,19 @@ A exclusão de um elemento geralmente provoca também a exclusão de seus elemen
 
 #### <a name="to-set-delete-propagation"></a>Para configurar a propagação de exclusão
 
-1.  No diagrama de definição de DSL, selecione a *função* a serem propagação seja excluída. A função é representada pela linha à esquerda ou à direita de uma caixa de relação de domínio.
+1. No diagrama de definição de DSL, selecione a *função* a serem propagação seja excluída. A função é representada pela linha à esquerda ou à direita de uma caixa de relação de domínio.
 
-     Por exemplo, se você deseja especificar que sempre que um Álbum for excluído, os Artistas relacionados também sejam excluídos, selecione a função conectada ao Artista da classe de domínio.
+    Por exemplo, se você deseja especificar que sempre que um Álbum for excluído, os Artistas relacionados também sejam excluídos, selecione a função conectada ao Artista da classe de domínio.
 
-2.  Na janela Propriedades, defina as **propaga exclusão** propriedade.
+2. Na janela Propriedades, defina as **propaga exclusão** propriedade.
 
-3.  Pressione F5 e verifique se:
+3. Pressione F5 e verifique se:
 
-    -   Quando uma instância desse relacionamento é excluída, o elemento na função selecionada também é excluído.
+   -   Quando uma instância desse relacionamento é excluída, o elemento na função selecionada também é excluído.
 
-    -   Quando um elemento na função oposta é excluído, instâncias dessa relação são excluídas e os elementos relacionados a essa função são excluídos.
+   -   Quando um elemento na função oposta é excluído, instâncias dessa relação são excluídas e os elementos relacionados a essa função são excluídos.
 
- Você também pode ver a **propaga exclusão** opção a **detalhes de DSL** janela. Selecione uma classe de domínio e, na janela de detalhes de DSL, abra o **comportamento de exclusão** página clicando no botão ao lado da janela. O **propagar** opção é mostrada para a função oposta de cada relação. O **Excluir estilo** coluna indica se o **propagar** opção está em sua configuração padrão, mas ele não tem nenhuma efeito separado.
+   Você também pode ver a **propaga exclusão** opção a **detalhes de DSL** janela. Selecione uma classe de domínio e, na janela de detalhes de DSL, abra o **comportamento de exclusão** página clicando no botão ao lado da janela. O **propagar** opção é mostrada para a função oposta de cada relação. O **Excluir estilo** coluna indica se o **propagar** opção está em sua configuração padrão, mas ele não tem nenhuma efeito separado.
 
 ## <a name="delete-propagation-by-using-program-code"></a>Propagação de exclusão usando o código do programa
  As opções no arquivo Definição de DSL só permitem que você escolha se a exclusão se propaga para um vizinho imediato ou não. Para implementar um esquema mais complexo de propagação de exclusão, você pode gravar o código do programa.
@@ -123,7 +123,6 @@ partial class MusicLibDeleteClosure
     }
   }
 }
-
 ```
 
  A técnica de fechamento garante que o conjunto de elementos e vínculos a serem excluídos seja determinado antes que a exclusão comece. O caminhador também combina os resultados de seu fechamento com os de outras partes do modelo.
@@ -133,17 +132,17 @@ partial class MusicLibDeleteClosure
 ## <a name="ondeleting"></a> Usando OnDeleting e OnDeleted
  Você pode substituir `OnDeleting()` ou `OnDeleted()` em uma classe de domínio ou em uma relação de domínio.
 
-1.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> é chamado quando um elemento está prestes a ser excluído, mas antes que suas relações sejam desconectadas. Ele ainda é navegável de outros elementos e ainda está em `store.ElementDirectory`.
+1. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> é chamado quando um elemento está prestes a ser excluído, mas antes que suas relações sejam desconectadas. Ele ainda é navegável de outros elementos e ainda está em `store.ElementDirectory`.
 
-     Se vários elementos forem excluído ao mesmo tempo, OnDeleting será chamado por todos eles antes de executar as exclusões.
+    Se vários elementos forem excluído ao mesmo tempo, OnDeleting será chamado por todos eles antes de executar as exclusões.
 
-     `IsDeleting` é verdadeiro.
+    `IsDeleting` é verdadeiro.
 
-2.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> é chamado quando o elemento foi excluído. Ele permanece no heap do CLR para que um Desfazer possa ser realizado, se necessário, mas é desvinculado de outros elementos e removido de `store.ElementDirectory`. Para relações, a função ainda referencia os antigo representantes da função.`IsDeleted` é verdadeiro.
+2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> é chamado quando o elemento foi excluído. Ele permanece no heap do CLR para que um Desfazer possa ser realizado, se necessário, mas é desvinculado de outros elementos e removido de `store.ElementDirectory`. Para relações, a função ainda referencia os antigo representantes da função.`IsDeleted` é verdadeiro.
 
-3.  OnDeleting e OnDeleted são chamados quando o usuário invoca Desfazer depois de criar um elemento e quando uma exclusão anterior é repetida em Refazer. Use `this.Store.InUndoRedoOrRollback` para evitar atualizar elementos de repositório nesses casos. Para obter mais informações, consulte [como: usar transações para atualizar o modelo](../modeling/how-to-use-transactions-to-update-the-model.md).
+3. OnDeleting e OnDeleted são chamados quando o usuário invoca Desfazer depois de criar um elemento e quando uma exclusão anterior é repetida em Refazer. Use `this.Store.InUndoRedoOrRollback` para evitar atualizar elementos de repositório nesses casos. Para obter mais informações, consulte [como: usar transações para atualizar o modelo](../modeling/how-to-use-transactions-to-update-the-model.md).
 
- Por exemplo, o código a seguir exclui um Álbum quando sua última Música filha é excluída:
+   Por exemplo, o código a seguir exclui um Álbum quando sua última Música filha é excluída:
 
 ```
 
@@ -164,7 +163,6 @@ partial class AlbumHasSongs
       {
         this.Album.Delete();
 } } } }
-
 ```
 
  Muitas vezes, é mais prático acionar a partir da exclusão da relação do que no elemento de função, pois isso funciona quando o elemento é excluído e quando a própria relação é excluída. No entanto, para uma relação de referência, propague a exclusão quando um elemento relacionado é excluído, mas não quando a própria relação for excluída. Este exemplo exclui um Álbum quando seu último Artista colaborador é excluído, mas não responde se as relações forem excluídas:
@@ -192,7 +190,6 @@ partial class Artist
     {
       album.Delete();
 } } }
-
 ```
 
  Quando você executa <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> em um elemento, OnDeleting e OnDeleted são chamados. Esses métodos são realizados em linha - ou seja, imediatamente antes e após a exclusão real. Se o seu código excluir dois ou mais elementos, OnDeleting e OnDeleted serão chamados em alternância em todos eles, um após o outro.
@@ -247,7 +244,6 @@ public partial class MusicLibDomainModel
     return types.ToArray();
   }
 }
-
 ```
 
 ### <a name="example-deleted-event"></a>Exemplo de evento Deleted
@@ -284,7 +280,6 @@ partial class NestedShapesSampleDocData
     }
   }
 }
-
 ```
 
 ## <a name="unmerge"></a> Desfazer a mesclagem

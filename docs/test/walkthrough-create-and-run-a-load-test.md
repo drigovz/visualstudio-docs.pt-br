@@ -1,5 +1,5 @@
 ---
-title: Criar e executar um teste de carga no Visual Studio
+title: Criar e executar um teste de carga
 ms.date: 10/01/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a5782985406d9b2daa53c1fd6ecefb3f31cc0104
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381010"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055764"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Passo a passo: Criar e executar um teste de carga que contém testes de unidade
 
 Nesta explicação passo a passo você cria um teste de carga que contém testes de unidade.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Esta explicação passo a passo orienta você na criação e execução de um teste de carga usando o Visual Studio Enterprise. Um teste de carga é um contêiner de testes de desempenho na Web e de testes de unidade. Crie testes de carga com o **Novo Assistente de Teste de Carga**.
 
@@ -35,13 +37,13 @@ Nesta explicação passo a passo, você concluirá as seguintes tarefas:
 
 -   Executar um teste de carga.
 
--   Execute as etapas de [Passo a passo: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) para criar uma biblioteca de classes C# simples que contém um projeto de desempenho Web e de teste de carga com alguns testes de unidade.
+-   Execute as etapas descritas em [Passo a passo: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) para criar uma biblioteca de classes C# simples que contém um projeto de desempenho Web e de teste de carga com alguns testes de unidade.
 
 ## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Criar um teste de carga que contém testes de unidade usando o Novo Assistente de Teste de Carga
 
 ### <a name="to-start-the-new-load-test-wizard"></a>Para iniciar o Novo assistente de teste de carga
 
-1.  Abra a solução Bank criada em [Passo a passo: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+1.  Abra a solução Banco criada em [Passo a passo: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 2.  No **Gerenciador de Soluções**, abra o menu de atalho do nó da solução de Banco, escolha **Adicionar** e **Novo Projeto**.
 

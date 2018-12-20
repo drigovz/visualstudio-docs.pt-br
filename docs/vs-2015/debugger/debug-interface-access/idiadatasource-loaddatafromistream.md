@@ -1,7 +1,7 @@
 ---
 title: 'Idiadatasource:: Loaddatafromistream | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaDataSource::loadDataFromIStream method
 ms.assetid: 8fe33eea-1457-4b8c-ae19-f1ede5578483
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bba8ba990167872b9657c16b8b8620ddac96896d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8be3b85f77c5395a038e15925ca8654ea12ef60f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463514"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817825"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiadatasource:: Loaddatafromistream](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiadatasource-loaddatafromistream).  
-  
 Prepara os dados de depuração armazenados em um arquivo de banco de dados (. PDB) do programa acessado por meio de um fluxo de dados na memória.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT loadDataFromIStream (   
+HRESULT loadDataFromIStream (   
    IStream* pIStream  
 );  
 ```  

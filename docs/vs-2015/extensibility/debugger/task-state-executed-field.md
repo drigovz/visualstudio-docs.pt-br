@@ -1,7 +1,7 @@
 ---
 title: Campo TASK_STATE_EXECUTED | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 75b8f9d0-b908-40d0-b109-70feaed2ab0c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c0791a1848a5992fb1802f9f7059a5046197e44c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2211213d2ef85b0860d9004b54faffdc0565d1de
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473962"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800569"
 ---
 # <a name="taskstateexecuted-field"></a>Campo TASK_STATE_EXECUTED
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [campo TASK_STATE_EXECUTED](https://docs.microsoft.com/visualstudio/extensibility/debugger/task-state-executed-field).  
-  
 A tarefa está em execução, mas ainda não foi concluída.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  

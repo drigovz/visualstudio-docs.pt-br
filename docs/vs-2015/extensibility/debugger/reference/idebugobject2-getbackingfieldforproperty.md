@@ -1,7 +1,7 @@
 ---
 title: IDebugObject2::GetBackingFieldForProperty | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: e72c6338-5573-4fad-8075-f3ade3435424
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b29b6eb411c511612b60faf271d23decd7370c12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 750a881fe6a73ef1bf43f928c8aa11d9b6a5643a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466982"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752309"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugObject2::GetBackingFieldForProperty](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugobject2-getbackingfieldforproperty).  
-  
 Obtém o campo ou variável (se houver) que pode ser fazendo a propriedade representada por este objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT GetBackingFieldForProperty(  
-   IDebugObject2** ppObject  
+HRESULT GetBackingFieldForProperty(  
+   IDebugObject2** ppObject  
 );  
 ```  
   
 ```csharp  
-int GetBackingFieldForProperty(  
-   out IDebugObject2 ppObject  
+int GetBackingFieldForProperty(  
+   out IDebugObject2 ppObject  
 );  
 ```  
   

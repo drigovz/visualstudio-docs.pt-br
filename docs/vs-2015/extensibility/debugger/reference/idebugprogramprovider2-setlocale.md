@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramProvider2::SetLocale | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: b41d20a7-ba40-4c42-a450-16f413d6a04f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0027c0c85cdccf3a55f830f181d53f5153f41ec4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3e9d6cefa5117c1c223fbab3f47052e4a4be0c99
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467167"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739435"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProgramProvider2::SetLocale](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramprovider2-setlocale).  
-  
 Estabelece uma localidade a ser usado para todos os recursos específicos da localidade.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT SetLocale(  
-   WORD wLangID  
+HRESULT SetLocale(  
+   WORD wLangID  
 );  
 ```  
   
 ```csharp  
-int SetLocale(  
-   ushort wLangID  
+int SetLocale(  
+   ushort wLangID  
 );  
 ```  
   

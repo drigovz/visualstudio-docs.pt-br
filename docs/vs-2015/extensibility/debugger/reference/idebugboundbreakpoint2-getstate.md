@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2::GetState | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,30 +18,28 @@ ms.assetid: a40a8382-295e-4916-aae6-ffe3a9cd3f2d
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cf794faf53de74b27425bf7d81b59d3059ec279
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1970fd339f8f26539e0f5e3160465a3e9976a194
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463171"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738157"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugBoundBreakpoint2::GetState](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugboundbreakpoint2-getstate).  
-  
 Obtém o estado deste ponto de interrupção associada.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetState(   
+HRESULT GetState(   
    BP_STATE* pState  
 );  
 ```  
   
 ```csharp  
-int GetState(   
+int GetState(   
    out enum_BP_STATE pState  
 );  
 ```  

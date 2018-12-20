@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_symindexid | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_symIndexId method
 ms.assetid: dd1fb3ba-31bf-497d-a6bf-79f1206e6642
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07e6af65348b5bf1601d164d995e1f1b68ed0b6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e45f89f23c88866be1f738a331a99b08ada75dc4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472662"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787094"
 ---
 # <a name="idiasymbolgetsymindexid"></a>IDiaSymbol::get_symIndexId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_symindexid](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-symindexid).  
-  
 Recupera o identificador exclusivo do símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_symIndexId (   
+HRESULT get_symIndexId (   
    DWORD* pRetVal  
 );  
 ```  

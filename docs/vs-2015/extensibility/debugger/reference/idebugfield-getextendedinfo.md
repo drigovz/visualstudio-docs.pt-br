@@ -1,7 +1,7 @@
 ---
 title: IDebugField::GetExtendedInfo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 46c0dd4d-4fd5-4efd-a908-71e4248e8e8d
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd17bfdb3f1d78fd095accef66f197ec0c1d8c27
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fde5bb8f05b9aed9170c7e800634af96ccb795fd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466472"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788635"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugField::GetExtendedInfo](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfield-getextendedinfo).  
-  
 Esse método obtém informações estendido sobre um campo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetExtendedInfo(   
+HRESULT GetExtendedInfo(   
    REFGUID guidExtendedInfo,  
    BYTE**  prgBuffer,  
    DWORD*  pdwLen  

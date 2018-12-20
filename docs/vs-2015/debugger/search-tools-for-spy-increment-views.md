@@ -1,7 +1,7 @@
 ---
 title: Ferramentas de pesquisa para exibições do Spy + + | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - Spy++, searching
 ms.assetid: db0c32cf-8e50-4e1b-9a9f-4c07fd6a2163
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b19a12397d42d44e3d7fb7cf1a5dd87700a07465
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 44e2318fe7de45e8d2b66e1d87df562c4eabc7c5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464354"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730164"
 ---
 # <a name="search-tools-for-spy-views"></a>Ferramentas de pesquisa das exibições do Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ferramentas de pesquisa para exibições do Spy + +](https://docs.microsoft.com/visualstudio/debugger/search-tools-for-spy-increment-views).  
-  
 Use essas caixas de diálogo para especificar quais dados exibirá uma janela de exibições do Spy + +:  
   
 ## <a name="in-this-section"></a>Nesta seção  

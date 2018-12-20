@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::WriteDump | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: 375afb8c-882d-44db-bfa7-e2c9eb555122
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8708751820ca70386e6c9927105384eee9a96a15
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c895d7bb35dd700552d1db664ae6dbf8c617114c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468323"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723443"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProgram2::WriteDump](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-writedump).  
-  
 Grava um despejo de um arquivo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT WriteDump(   
+HRESULT WriteDump(   
    DUMPTYPE  DumpType,  
    LPCOLESTR pszDumpUrl  
 );  
 ```  
   
 ```csharp  
-int WriteDump(   
+int WriteDump(   
    enum_DUMPTYPE  DumpType,  
    string         pszDumpUrl  
 );  

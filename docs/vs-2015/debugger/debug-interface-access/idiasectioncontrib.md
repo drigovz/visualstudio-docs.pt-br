@@ -1,7 +1,7 @@
 ---
 title: IDiaSectionContrib | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSectionContrib interface
 ms.assetid: 371d40f6-ca0e-4d7e-9210-64d3768996c6
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5128059cfeac1c30d392c7122ee458ac9a84240
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c15e3fa37eb53f5ef01134b1a8a8c7f078455231
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465447"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817822"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSectionContrib](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasectioncontrib).  
-  
 Recupera os dados que descrevem uma contribuição de seção, ou seja, um bloco contíguo de memória contribuição para a imagem de um compiland.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDiaSectionContrib : IUnknown  
+IDiaSectionContrib : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  

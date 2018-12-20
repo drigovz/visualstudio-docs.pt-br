@@ -1,6 +1,8 @@
 ---
-title: Depuração remota no Visual Studio | Microsoft Docs
-ms.custom: remotedebugging
+title: Depuração remota | Microsoft Docs
+ms.custom:
+- remotedebugging
+- seodec18
 ms.date: 07/02/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46913c1bb671c1986c4f302a84d4183fe17f5878
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: MT
+ms.openlocfilehash: 6701a05d76117e0b8164488de3ec858c61021e17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778288"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065500"
 ---
 # <a name="remote-debugging"></a>Depuração remota
 Você pode depurar um aplicativo do Visual Studio que tenha sido implantado em um computador diferente. Para fazer isso, você deve usar o depurador remoto do Visual Studio.
@@ -47,47 +49,6 @@ Se você apenas deseja baixar e instalar o depurador remoto e não precisa de qu
 ## <a name="download-and-install-the-remote-tools"></a>Baixe e instale as ferramentas remotas
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-## <a name="unblock_msvsmon"></a> Desbloquear o download das ferramentas remotas no Windows Server
-
-As configurações de segurança padrão no Internet Explorer no Windows Server podem tornar demorado baixar os componentes, como as ferramentas remotas.
-
-* Configuração de segurança aprimorada está habilitada no Internet Explorer, que impede você de abertura de sites e acessar recursos da web, a menos que o domínio que contém o recurso seja explicitamente permitido (ou seja, confiável). Você pode desativar essa configuração, não recomendamos porque ele pode apresenta um risco à segurança.
-
-* No Windows Server 2016, uma configuração padrão **opções da Internet** > **segurança** > **Internet**  >   **Nível personalizado** > **Downloads** também desabilita downloads de arquivos. Se você optar por baixar as ferramentas remotas diretamente no Windows Server, você deve habilitar o download do arquivo.
-
-Para baixar as ferramentas no Windows Server, recomendamos um dos seguintes:
-
-* Baixe as ferramentas remotas em um computador diferente, como a um Visual Studio em execução e, em seguida, copie o *.exe* arquivo para o Windows Server.
-
-* Executar o depurador remoto [de um compartilhamento de arquivo](#fileshare_msvsmon) em seu computador do Visual Studio.
-
-* Baixe as ferramentas remotas diretamente no Windows Server e aceite os prompts para adicionar sites confiáveis. Sites modernos geralmente incluem diversos recursos de terceiros, portanto, isso pode resultar em uma grande quantidade de prompts. Além disso, todos os links redirecionados talvez precise ser adicionadas manualmente. Você pode optar por adicionar alguns dos sites confiáveis antes de iniciar o download. Vá para **opções da Internet > Segurança > Sites confiáveis > Sites** e adicione os seguintes sites.
-
-  * VisualStudio.microsoft.com
-  * download.visualstudio.microsoft.com
-  * sobre: em branco
-
-  Para versões mais antigas do depurador em my.visualstudio.com, adicione esses sites adicionais para certificar-se de que o logon for bem-sucedido:
-
-  * microsoft.com
-  * go.microsoft.com
-  * download.microsoft.com
-  * My.VisualStudio.com
-  * login.microsoftonline.com
-  * login.Live.com
-  * Secure.aadcdn.microsoftonline-p.com
-  * msft.STS.microsoft.com
-  * AUTH.GFX.MS
-  * app.vssps.visualstudio.com
-  * vlscppe.microsoft.com
-  * Query.prod.cms.RT.microsoft.com
-
-    Se você optar por adicionar esses domínios ao baixar as ferramentas remotas, escolha **adicionar** quando solicitado.
-
-    ![Caixa de diálogo de conteúdo bloqueado](../debugger/media/remotedbg-blocked-content.png)
-
-    Ao baixar o software, você obterá algumas solicitações adicionais para conceder permissão para carregar vários scripts do site da web e recursos. Em my.visualstudio.com, recomendamos que você adicione os domínios adicionais para certificar-se de que o logon for bem-sucedido.
 
 ## <a name="requirements_msvsmon"></a> Requisitos
 
@@ -136,25 +97,25 @@ Para depuração no ASP.NET e outros ambientes de servidor, você deve executar 
 
  Se você quiser configurar o depurador remoto como um serviço, siga estas etapas.
 
-1.  Localizar o **Assistente de configuração do depurador remoto** (rdbgwiz.exe). (Isso é um aplicativo separado do depurador remoto.) Ele está disponível apenas quando você instala as ferramentas remotas. Ele não é instalado com o Visual Studio.
+1. Localizar o **Assistente de configuração do depurador remoto** (rdbgwiz.exe). (Isso é um aplicativo separado do depurador remoto.) Ele está disponível apenas quando você instala as ferramentas remotas. Ele não é instalado com o Visual Studio.
 
-2.  Começar a executar o Assistente de configuração. Quando a primeira página é exibida, clique em **próxima**.
+2. Começar a executar o Assistente de configuração. Quando a primeira página é exibida, clique em **próxima**.
 
-3.  Verifique as **executar o depurador remoto do Visual Studio 2015, como um serviço** caixa de seleção.
+3. Verifique as **executar o depurador remoto do Visual Studio 2015, como um serviço** caixa de seleção.
 
-4.  Adicione o nome da conta de usuário e senha.
+4. Adicione o nome da conta de usuário e senha.
 
-     Talvez você precise adicionar o **fazer logon como um serviço** direito de usuário dessa conta (localizar **política de segurança Local** (secpol. msc) na **iniciar** página ou janela (ou tipo  **secpol** em um prompt de comando). Quando a janela é exibida, clique duas vezes **atribuição de direitos de usuário**, em seguida, localize **fazer logon como um serviço** no painel direito. Clique duas vezes nesse item. Adicione a conta de usuário para o **propriedades** janela e clique em **Okey**). Clique em **Avançar**.
+    Talvez você precise adicionar o **fazer logon como um serviço** direito de usuário dessa conta (localizar **política de segurança Local** (secpol. msc) na **iniciar** página ou janela (ou tipo  **secpol** em um prompt de comando). Quando a janela é exibida, clique duas vezes **atribuição de direitos de usuário**, em seguida, localize **fazer logon como um serviço** no painel direito. Clique duas vezes nesse item. Adicione a conta de usuário para o **propriedades** janela e clique em **Okey**). Clique em **Avançar**.
 
-5.  Selecione o tipo de rede que você deseja que as ferramentas remotas para se comunicar com. Pelo menos um tipo de rede deve ser selecionado. Se os computadores estiverem conectados por meio de um domínio, você deve escolher o primeiro item. Se os computadores estiverem conectados por meio de um grupo de trabalho ou um grupo doméstico, você deve escolher os itens de segundo ou terceiro. Clique em **Avançar**.
+5. Selecione o tipo de rede que você deseja que as ferramentas remotas para se comunicar com. Pelo menos um tipo de rede deve ser selecionado. Se os computadores estiverem conectados por meio de um domínio, você deve escolher o primeiro item. Se os computadores estiverem conectados por meio de um grupo de trabalho ou um grupo doméstico, você deve escolher os itens de segundo ou terceiro. Clique em **Avançar**.
 
-6.  Se o serviço pode ser iniciado, você verá **concluiu com êxito o Assistente de configuração de depurador Visual remoto Studio**. Se o serviço não pode ser iniciado, você verá **Falha ao concluir o Assistente de configuração de depurador Visual remoto Studio**. A página também fornece algumas dicas a seguir para restaurar o serviço para iniciar.
+6. Se o serviço pode ser iniciado, você verá **concluiu com êxito o Assistente de configuração de depurador Visual remoto Studio**. Se o serviço não pode ser iniciado, você verá **Falha ao concluir o Assistente de configuração de depurador Visual remoto Studio**. A página também fornece algumas dicas a seguir para restaurar o serviço para iniciar.
 
-7.  Clique em **Finalizar**.
+7. Clique em **Finalizar**.
 
- Neste ponto, o depurador remoto está em execução como um serviço. Você pode verificar isso acessando **painel de controle > serviços** e procurando **depurador remoto do Visual Studio 2015**.
+   Neste ponto, o depurador remoto está em execução como um serviço. Você pode verificar isso acessando **painel de controle > serviços** e procurando **depurador remoto do Visual Studio 2015**.
 
- Você pode parar e iniciar o serviço de depurador remoto do **painel de controle > serviços**.
+   Você pode parar e iniciar o serviço de depurador remoto do **painel de controle > serviços**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurar a depuração com símbolos remotos
 

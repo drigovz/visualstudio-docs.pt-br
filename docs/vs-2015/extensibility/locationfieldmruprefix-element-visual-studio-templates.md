@@ -1,7 +1,7 @@
 ---
 title: Elemento LocationFieldMRUPrefix (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 03443691-9eb5-46f4-9169-cc2552a04bcb
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b16cbbe6cbc75d79c2b18df3c029aa87427001f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 02bdd2db21edbe30c237c2f29eaf2ca57e03943d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476185"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803884"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Elemento LocationFieldMRUPrefix (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento LocationFieldMRUPrefix (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/locationfieldmruprefix-element-visual-studio-templates).  
-  
 Especifica os caminhos usados mais recentemente (MRU) a **novo projeto** e **Adicionar Novo Item** caixa de diálogo.  
   
 ## <a name="syntax"></a>Sintaxe  

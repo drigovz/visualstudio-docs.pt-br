@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalkFrame | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaStackWalkFrame interface
 ms.assetid: 42d82845-d6f6-4846-9ecd-9dd169216077
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c525d2c19f3bc4ab7ea540ac129931583064db01
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a047b1a75cb511332bf9382d19fe274eb731069
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460944"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790364"
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaStackWalkFrame](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackwalkframe).  
-  
 Mantém o contexto de pilha entre invocações da [idiaframedata:: execute](../../debugger/debug-interface-access/idiaframedata-execute.md) método.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDiaStackWalkFrame : IUnknown  
+IDiaStackWalkFrame : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  

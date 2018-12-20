@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c21402c3b2b71372aaf170c68c65777eba4e95bf
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: f2ee6f1166a543cc3dc85dfb62d19d1c5b194a16
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703740"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948160"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 Executa o comando especificado depois de iniciar o IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -35,7 +35,7 @@ devenv /command CommandName
 ## <a name="remarks"></a>Comentários
  Após a conclusão da inicialização, o IDE executa o comando nomeado. Se você usar essa opção, o IDE não mostrará a Página Inicial do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] na inicialização.
 
- Se um suplemento expor um comando, será possível usar essa opção para iniciar o suplemento por meio da linha de comando. Para obter mais informações, consulte [Como controlar suplementos usando o Gerenciador de Suplementos](http://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).
+ Se um suplemento expor um comando, será possível usar essa opção para iniciar o suplemento por meio da linha de comando. Para obter mais informações, consulte [Como controlar suplementos usando o Gerenciador de Suplementos](https://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).
 
 ## <a name="example"></a>Exemplo
  Esse exemplo inicia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e executa a macro Abrir Arquivos Favoritos automaticamente.
@@ -46,5 +46,5 @@ devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"
 
 ## <a name="see-also"></a>Consulte também
 
-- [Opções de linha de comando devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

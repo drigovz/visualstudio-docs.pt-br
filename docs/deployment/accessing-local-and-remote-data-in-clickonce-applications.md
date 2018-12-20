@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7829c9fce0c8315ac42fc1c376987e4e30b4be8e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b6f25bb2920f8f50afbd8bfb820e7c852e160865
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081232"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943044"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Acessar dados locais e remotos em aplicativos ClickOnce
 A maioria dos aplicativos consuma nem produza dados. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Fornece uma variedade de opções para ler e gravar dados, tanto local quanto remotamente.  
@@ -30,11 +30,11 @@ A maioria dos aplicativos consuma nem produza dados. [!INCLUDE[ndptecclick](../d
 ## <a name="local-data"></a>Dados locais  
  Com [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], você pode carregar e armazenar dados localmente usando qualquer um dos seguintes métodos:  
   
--   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Diretório de dados  
+- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Diretório de dados  
   
--   Armazenamentos isolado  
+- Armazenamentos isolado  
   
--   Outros arquivos locais  
+- Outros arquivos locais  
   
 ### <a name="clickonce-data-directory"></a>Diretório de dados do ClickOnce  
  Cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo instalado em um computador local tem um diretório de dados armazenado na pasta de documentos e configurações do usuário. Qualquer arquivo incluído em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e marcada como um arquivo de "dados" é copiado para esse diretório quando um aplicativo é instalado. Arquivos de dados podem ser de qualquer tipo de arquivo, usado com mais frequência que está sendo texto, XML e arquivos de banco de dados, como arquivos. mdb do Microsoft Access.  

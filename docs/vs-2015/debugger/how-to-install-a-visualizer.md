@@ -1,7 +1,7 @@
 ---
 title: 'Como: instalar um visualizador | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,21 +23,19 @@ helpviewer_keywords:
 - visualizers, installing
 ms.assetid: 3310ef43-515c-4d97-b0f9-51047247d3da
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5152c47635f8ca2f2bb0a6a32c7767682006860a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5b2c77bd5f9d32b3bb4a0954017b7abdee1947c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475961"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731462"
 ---
 # <a name="how-to-install-a-visualizer"></a>Como instalar um visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: instalar um visualizador](https://docs.microsoft.com/visualstudio/debugger/how-to-install-a-visualizer).  
-  
 Após ter criado um visualizador, você deverá instalar o visualizador de modo que esteja disponível em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Instalar um visualizador é um processo simples.  
   
 > [!NOTE]

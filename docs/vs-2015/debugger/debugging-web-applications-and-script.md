@@ -1,7 +1,7 @@
 ---
 title: Depurando aplicativos Web e Script | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,21 +24,19 @@ helpviewer_keywords:
 - applications [Visual Studio], debugging
 ms.assetid: 6968625d-9783-4ad6-8bf5-eb85b548844c
 caps.latest.revision: 35
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10abe66dc372f50e8a48e40148eb3f298df0b6eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f44dc85d6378f4a8303fac846ad32528081b54b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463278"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797761"
 ---
 # <a name="debugging-web-applications-and-script"></a>Depurando aplicativos Web e script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Depurando aplicativos da Web e Script](https://docs.microsoft.com/visualstudio/debugger/debugging-web-applications-and-script).  
-  
 Legenda da tabela:  
   
  Esta seção descreve técnicas de depuração comuns para aplicativos Web. Para obter mais informações, consulte [Noções básicas do depurador](../debugger/debugger-basics.md).  

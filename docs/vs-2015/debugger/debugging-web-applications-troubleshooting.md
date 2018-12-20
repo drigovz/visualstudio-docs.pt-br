@@ -1,7 +1,7 @@
 ---
 title: 'Depurando aplicativos Web: Solução de problemas | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,21 +20,19 @@ helpviewer_keywords:
 - troubleshooting Web applications
 ms.assetid: 1624e4af-018e-4b7c-9a00-063bfe97fb7d
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e04357cfdb9c1fc19f67e56c089270ecac1091f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a68adce6e44885b216c053abbd5f8b58d66dd9e8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475040"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788882"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>Depurando aplicativos Web: solucionando problemas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Depurando aplicativos da Web: solução de problemas](https://docs.microsoft.com/visualstudio/debugger/debugging-web-applications-troubleshooting).  
-  
 Esta seção contém procedimentos comuns que podem ser usados para resolver erros.  
   
 ## <a name="in-this-section"></a>Nesta seção  

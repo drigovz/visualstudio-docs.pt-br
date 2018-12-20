@@ -1,7 +1,7 @@
 ---
 title: Suporte para o projeto e propriedades de configuração | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9cdae139ae64f5404da04a98ff1167c51d679af2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37c41e4c2074f6bb4896c6ff91ea292c5e21ba81
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474374"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760644"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Suporte para propriedades do projeto e de configuração
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [suporte para o projeto e propriedades de configuração](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-project-and-configuration-properties).  
-  
 O **propriedades** janela no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE) pode exibir propriedades do projeto e configuração. Você pode fornecer uma página de propriedades para seu próprio tipo de projeto para que o usuário pode definir propriedades de seu aplicativo.  
   
  Selecionando um nó do projeto no **Gerenciador de soluções** e, em seguida, clicando em **propriedades** sobre o **projeto** menu, você pode abrir uma caixa de diálogo que inclui o projeto e a configuração Propriedades. Na [!INCLUDE[csprcs](../../includes/csprcs-md.md)] e [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]e tipos derivados desses idiomas, essa caixa de diálogo é exibida como uma página com guias do projeto do [geral, ambiente, caixa de diálogo Opções](../../ide/reference/general-environment-options-dialog-box.md). Para obter mais informações, consulte [não está em compilação: passo a passo: expondo o projeto e propriedades de configuração (c#)](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
@@ -67,14 +65,14 @@ O **propriedades** janela no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o a
   
  O `SettingsPage` classe e o `Microsoft.VisualStudio.Package.ProjectNode` classe oferecer esses métodos para persistir as propriedades do projeto e configuração:  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` e `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` persistir as propriedades do projeto.  
+- `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` e `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` persistir as propriedades do projeto.  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` e `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` persistir as propriedades de configuração.  
+- `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` e `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` persistir as propriedades de configuração.  
   
-    > [!NOTE]
-    >  As implementações do `Microsoft.VisualStudio.Package.SettingsPage` e `Microsoft.VisualStudio.Package.ProjectNode` classes usam o `Microsoft.Build.BuildEngine` métodos (MSBuild) para obter e definir propriedades do projeto e configuração do arquivo de projeto.  
+  > [!NOTE]
+  >  As implementações do `Microsoft.VisualStudio.Package.SettingsPage` e `Microsoft.VisualStudio.Package.ProjectNode` classes usam o `Microsoft.Build.BuildEngine` métodos (MSBuild) para obter e definir propriedades do projeto e configuração do arquivo de projeto.  
   
- A classe derivar de `SettingsPage` deve implementar `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` e `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` para persistir as propriedades do projeto ou a configuração do arquivo de projeto.  
+  A classe derivar de `SettingsPage` deve implementar `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` e `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` para persistir as propriedades do projeto ou a configuração do arquivo de projeto.  
   
 ## <a name="provideobjectattribute-and-registry-path"></a>ProvideObjectAttribute e o caminho do registro  
  As classes derivadas de `SettingsPage` são projetados para ser compartilhado entre os VSPackages. Para tornar possível para criar uma classe derivada de um VSPackage `SettingsPage`, adicione uma `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` para uma classe derivada de `Microsoft.VisualStudio.Shell.Package`.  

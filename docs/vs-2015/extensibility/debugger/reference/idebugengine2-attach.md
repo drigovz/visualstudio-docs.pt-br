@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2::Attach | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,39 +17,37 @@ ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e84c532c0e0733e8fcd832c494564019f755e3c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 260d3fcbe58b9db1b1f465c249a44a5ee6d9a6aa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468336"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781967"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugEngine2::Attach](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugengine2-attach).  
-  
 Anexa um mecanismo de depuração (DE) para um programa ou programas. Chamado pelo Gerenciador de depuração de sessão (SDM) quando o DE estiver em execução no processo para o SDM.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Attach(   
-   IDebugProgram2**      pProgram,  
-   IDebugProgramNode2**  rgpProgramNodes,  
-   DWORD                 celtPrograms,  
-   IDebugEventCallback2* pCallback,  
-   ATTACH_REASON         dwReason  
+HRESULT Attach(   
+   IDebugProgram2**      pProgram,  
+   IDebugProgramNode2**  rgpProgramNodes,  
+   DWORD                 celtPrograms,  
+   IDebugEventCallback2* pCallback,  
+   ATTACH_REASON         dwReason  
 );  
 ```  
   
 ```csharp  
-int Attach(   
-   IDebugProgram2[]     pProgram,  
-   IDebugProgramNode2[] rgpProgramNodes,  
-   uint                 celtPrograms,  
-   IDebugEventCallback2 pCallback,  
-   Enum_ATTACH_REASON   dwReason  
+int Attach(   
+   IDebugProgram2[]     pProgram,  
+   IDebugProgramNode2[] rgpProgramNodes,  
+   uint                 celtPrograms,  
+   IDebugEventCallback2 pCallback,  
+   Enum_ATTACH_REASON   dwReason  
 );  
 ```  
   
@@ -75,25 +73,25 @@ int Attach(
 ## <a name="remarks"></a>Comentários  
  Há três razões para anexar a um programa, da seguinte maneira:  
   
--   `ATTACH_REASON_LAUNCH` indica que o DE é anexar ao programa porque o usuário iniciou o processo que o contém.  
+- `ATTACH_REASON_LAUNCH` indica que o DE é anexar ao programa porque o usuário iniciou o processo que o contém.  
   
--   `ATTACH_REASON_USER` indica que o usuário explicitamente solicitou o DE anexar a um programa (ou o processo que contém um programa).  
+- `ATTACH_REASON_USER` indica que o usuário explicitamente solicitou o DE anexar a um programa (ou o processo que contém um programa).  
   
--   `ATTACH_REASON_AUTO` indica que o DE é anexar a um determinado programa porque ele já está sendo depurado outros programas em um determinado processo. Isso também é chamado a anexação automática.  
+- `ATTACH_REASON_AUTO` indica que o DE é anexar a um determinado programa porque ele já está sendo depurado outros programas em um determinado processo. Isso também é chamado a anexação automática.  
   
- Quando este método é chamado, o DE precisa enviar esses eventos em sequência:  
+  Quando este método é chamado, o DE precisa enviar esses eventos em sequência:  
   
-1.  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (se ele não já foi enviado para uma determinada instância do mecanismo de depuração)  
+1. [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (se ele não já foi enviado para uma determinada instância do mecanismo de depuração)  
   
-2.  [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
+2. [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
   
-3.  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
+3. [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
   
- Além disso, se for o motivo para anexação `ATTACH_REASON_LAUNCH`, o DE que precisa enviar o [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) eventos.  
+   Além disso, se for o motivo para anexação `ATTACH_REASON_LAUNCH`, o DE que precisa enviar o [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) eventos.  
   
- Uma vez o obtém do [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) do objeto correspondente para o programa que está sendo depurado, ela pode ser consultada para qualquer interface privada.  
+   Uma vez o obtém do [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) do objeto correspondente para o programa que está sendo depurado, ela pode ser consultada para qualquer interface privada.  
   
- Antes de chamar os métodos de um nó de programa na matriz fornecida pelo `pProgram` ou `rgpProgramNodes`, representação, se necessário, deve ser habilitada no `IDebugProgram2` interface que representa o nó do programa. Normalmente, no entanto, essa etapa não é necessária. Para obter mais informações, consulte [problemas de segurança](../../../extensibility/debugger/security-issues.md).  
+   Antes de chamar os métodos de um nó de programa na matriz fornecida pelo `pProgram` ou `rgpProgramNodes`, representação, se necessário, deve ser habilitada no `IDebugProgram2` interface que representa o nó do programa. Normalmente, no entanto, essa etapa não é necessária. Para obter mais informações, consulte [problemas de segurança](../../../extensibility/debugger/security-issues.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

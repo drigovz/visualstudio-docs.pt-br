@@ -1,7 +1,7 @@
 ---
 title: Menus de contexto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 44fd9e6a-6d42-4aba-80ba-f37fa0070f1d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b95f913f5705b115473847b12b3fd1df8a5bcff8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: efd4e1c80b9af2a0d73730f0bd7d741cd877fb07
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467118"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796838"
 ---
 # <a name="context-menus"></a>Menus de contexto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Menus de contexto](https://docs.microsoft.com/visualstudio/extensibility/context-menus).  
-  
 Menus de contexto são exibidos quando um usuário clica com o botão direito em uma região ativa da área de cliente e limpar quando o botão direito do mouse é liberado.  
   
 ## <a name="editor-context-menus"></a>Menus de Contexto do Editor  

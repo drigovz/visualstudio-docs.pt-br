@@ -1,7 +1,7 @@
 ---
 title: Não é possível alterar a caixa de diálogo valor | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,21 +21,19 @@ helpviewer_keywords:
 - variables [debugger], editing
 ms.assetid: 19e930c2-5fbf-4c83-aae8-a1dc3f8fcae8
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a464be8e52a96da027e26ae48c5efb73ca2b5bf3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19ef7640939ba1ad9a22dcf519636c64df011394
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462273"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782395"
 ---
 # <a name="cannot-change-value-dialog-box"></a>Caixa de diálogo Não é Possível Alterar o Valor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [caixa de diálogo de valor de alteração não é possível](https://docs.microsoft.com/visualstudio/debugger/cannot-change-value-dialog-box).  
-  
 Erro  
  `The value of this variable cannot be changed` &#124;`The name` *nome* `does not exist in the current context` &#124; *várias outras mensagens*  
   

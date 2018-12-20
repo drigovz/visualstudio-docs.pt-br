@@ -11,16 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 681d687432cdfc6c3e5cf4d4d549b2148c2eeff3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284179"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159848"
 ---
 # <a name="sign-in-to-visual-studio"></a>Entrar no Visual Studio
 
 Será possível personalizar e otimizar sua experiência de desenvolvimento do Visual Studio se você definir sua conta de Personalização entrando no IDE.
+
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Entrar no Visual Studio para Mac](/visualstudio/mac/signing-in).
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Por que devo me registrar no Visual Studio?
 
@@ -36,7 +39,7 @@ Veja uma lista completa do que é possível esperar e fazer após entrar:
 
 - **Estender o período de avaliação gratuita do Visual Studio** – É possível usar o Visual Studio Professional ou o Visual Studio Enterprise por um período adicional de 90 dias, em vez ficar limitado ao período de avaliação gratuita de 30 dias.
 
-- **Desbloquear o Visual Studio se você usar uma conta associada a uma Assinatura do Visual Studio ou a uma organização do Azure DevOps Services**. Confira [Como desbloquear o Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Desbloquear o Visual Studio se você usar uma conta associada a uma Assinatura do Visual Studio ou a uma organização do Azure DevOps**. Confira [Como desbloquear o Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
 - **Conectar-se automaticamente a serviços como o Azure e o Azure DevOps Services** no IDE sem solicitar credenciais da mesma conta novamente.
 
@@ -67,4 +70,6 @@ Se você encontrar problemas ao entrar, confira a página [Suporte para contas](
 ## <a name="see-also"></a>Consulte também
 
 * [Como Desbloquear o Visual Studio](../ide/how-to-unlock-visual-studio.md)
-* [Visão geral do Visual Studio IDE](../ide/visual-studio-ide.md)
+* [Visão geral do Visual Studio IDE](../get-started/visual-studio-ide.md)
+* [Entrar (Visual Studio para Mac)](/visualstudio/mac/signing-in)
+* [Ativação (Visual Studio para Mac)](/visualstudio/mac/activation)

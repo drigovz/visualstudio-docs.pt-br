@@ -1,7 +1,7 @@
 ---
 title: Introdução ao serviço de linguagem e as extensões do Editor | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d2ca0b3a4c1128c316ca2967033752ab45799648
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f09056d184256e2d62387af08c61186c6ff57c02
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465436"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735207"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Introdução ao serviço de linguagem e às extensões do editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Introdução ao serviço de linguagem e as extensões do Editor](https://docs.microsoft.com/visualstudio/extensibility/getting-started-with-language-service-and-editor-extensions).  
-  
 Você pode usar as extensões do editor para adicionar recursos de serviço de linguagem, como a estrutura de tópicos, correspondência de chaves, IntelliSense e as lâmpadas para sua própria linguagem de programação ou a qualquer tipo de conteúdo. Você também pode personalizar a aparência e comportamento do editor do Visual Studio, por exemplo texto coloração, margens, adornos e outros elementos visuais. Você também pode definir seu próprio tipo de conteúdo e especificar a aparência e comportamento dos modos de exibição de texto no qual o conteúdo será exibido.  
   
  Para começar a escrever as extensões do editor, use os modelos de projeto do editor que são instalados como parte do SDK do Visual Studio. O SDK do Visual Studio é um conjunto para download de ferramentas que tornam mais fácil desenvolver extensões do Visual Studio, usando os VSPackages ou usando o Managed Extensibility Framework (MEF).  
@@ -50,17 +48,17 @@ Você pode usar as extensões do editor para adicionar recursos de serviço de l
   
  A seguir está alguns dos tipos básicos de extensões do editor:  
   
--   Margens e barras de rolagem  
+- Margens e barras de rolagem  
   
--   Marcas  
+- Marcas  
   
--   Adornos  
+- Adornos  
   
--   Opções  
+- Opções  
   
--   IntelliSense  
+- IntelliSense  
   
- Para obter mais informações sobre pontos de extensão de editor, consulte [serviço de linguagem e pontos de extensão de Editor](../extensibility/language-service-and-editor-extension-points.md).  
+  Para obter mais informações sobre pontos de extensão de editor, consulte [serviço de linguagem e pontos de extensão de Editor](../extensibility/language-service-and-editor-extension-points.md).  
   
 ## <a name="deploying-editor-extensions"></a>Implantando extensões de Editor  
  No Visual Studio, você pode implantar as extensões do editor, adicionando um arquivo de metadados chamado vsixmanifest à solução, compilar a solução e, em seguida, adicionando uma cópia dos arquivos binários e o manifesto em uma pasta que é conhecida para o Visual Studio. O arquivo de manifesto define as informações básicas sobre a extensão (por exemplo, nome, autor, versão e tipo de conteúdo). Para obter mais informações sobre o arquivo de manifesto do VSIX e como implantar extensões, consulte [envio extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md).  

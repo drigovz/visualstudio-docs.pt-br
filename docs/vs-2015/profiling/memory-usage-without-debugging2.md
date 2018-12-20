@@ -1,7 +1,7 @@
 ---
 title: Uso de memória sem depuração2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,30 +16,28 @@ dev_langs:
 - C++
 ms.assetid: 24238fc0-40b8-4079-8579-698211db9a26
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4c68aed5411e007ba5b48c3b1d9d32ce632da98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ebd4dd187f2b976ca7861f95609dd6ce8d8d318f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473493"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808558"
 ---
 # <a name="memory-usage-without-debugging"></a>Uso de memória sem depuração
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [analisar o uso de memória sem o depurador VS](https://docs.microsoft.com/visualstudio/profiling/memory-usage-without-debugging2).  
-  
 Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o seguinte  
   
--   Monitorar o uso de memória do seu aplicativo diretamente no Visual Studio enquanto estiver desenvolvendo um cenário.  
+- Monitorar o uso de memória do seu aplicativo diretamente no Visual Studio enquanto estiver desenvolvendo um cenário.  
   
--   Criar instantâneos detalhados do estado de memória do seu aplicativo.  
+- Criar instantâneos detalhados do estado de memória do seu aplicativo.  
   
--   Comparar instantâneos para encontrar a causa raiz de problemas de memória.  
+- Comparar instantâneos para encontrar a causa raiz de problemas de memória.  
   
- Este tópico descreve como usar a ferramenta Uso de Memória para analisar um aplicativo XAML universal do Windows. Se você quiser analisar o uso de memória em aplicativos universais do Windows que usam JavaScript e HTML, consulte [Analisar o uso de memória (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
+  Este tópico descreve como usar a ferramenta Uso de Memória para analisar um aplicativo XAML universal do Windows. Se você quiser analisar o uso de memória em aplicativos universais do Windows que usam JavaScript e HTML, consulte [Analisar o uso de memória (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
 ##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Iniciar uma a sessão de diagnóstico de uso de memória  
   
@@ -78,13 +76,13 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Exibições de instantâneo do uso de memória  
  Você usa as exibições de instantâneos para abrir relatórios detalhados em novas janelas do Visual Studio. Há dois tipos de exibições de instantâneos:  
   
--   Um [Relatório de detalhes do instantâneo](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) mostra os tipos e as instâncias em um instantâneo.  
+- Um [Relatório de detalhes do instantâneo](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) mostra os tipos e as instâncias em um instantâneo.  
   
--   Um [Relatório de diferenças (dif) do instantâneo](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) compara os tipos e as instâncias em dois instantâneos.  
+- Um [Relatório de diferenças (dif) do instantâneo](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) compara os tipos e as instâncias em dois instantâneos.  
   
- ![Links de exibição de instantâneo](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![Links de exibição de instantâneo](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- Os itens numerados na imagem de exibição do instantâneo são links que abrem exibições de relatório de uso de memória.  
+  Os itens numerados na imagem de exibição do instantâneo são links que abrem exibições de relatório de uso de memória.  
   
 |||  
 |-|-|  

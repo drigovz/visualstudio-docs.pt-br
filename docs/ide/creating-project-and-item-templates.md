@@ -1,5 +1,5 @@
 ---
-title: Modelos do Visual Studio para projetos e arquivos
+title: Modelos de projetos e arquivos
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 62e51a5a03011874acc723eaf159e3f7130d1340
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 04aa647d378e956c7a2394b7c3fc2a187a7c5963
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573252"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049270"
 ---
 # <a name="project-and-item-templates"></a>Modelos de projeto e de item
 
@@ -29,7 +29,7 @@ Vários modelos de itens e de projetos predefinidos são instalados com o Visual
 
 Esses modelos fornecem um ponto de partida para os usuários começarem a criar projetos ou expandir projetos existentes. Os modelos de projeto fornecem os arquivos que são necessários para um tipo de projeto específico, incluem referências de assembly padrão e definem opções de compilador e propriedades de projeto padrão. Os modelos de item podem variar em complexidade desde apenas um arquivo vazio com uma determinada extensão de arquivo até vários arquivos de código-fonte com código de stub, arquivos de informações de designer e recursos inseridos.
 
-É possível usar modelos instalados nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item**, criar seus próprios modelos ou baixar e usar modelos criados pela comunidade. Para obter mais informações, consulte [Como criar modelos de projeto](../ide/how-to-create-project-templates.md) e [Como criar modelos de item](../ide/how-to-create-item-templates.md).
+É possível usar modelos instalados nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item**, criar seus próprios modelos ou baixar e usar modelos criados pela comunidade. Para obter mais informações, confira [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md) e [Como: Criar modelos de item](../ide/how-to-create-item-templates.md).
 
 ## <a name="contents-of-a-template"></a>Conteúdo de um modelo
 
@@ -45,12 +45,12 @@ Quando esses arquivos são compactados em um arquivo *.zip* e colocados na pasta
 
 - Os modelos de item aparecem na caixa de diálogo **Adicionar Novo Item**.
 
-Para obter mais informações sobre pastas de modelo, consulte [Como localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Para obter mais informações sobre pastas de modelo, confira [Como: Localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)
-- [Como criar modelos de item](../ide/how-to-create-item-templates.md)
+- [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)
+- [Como: Criar modelos de item](../ide/how-to-create-item-templates.md)
 - [Parâmetros de modelo](../ide/template-parameters.md)
 - [Personalizar modelos](../ide/customizing-project-and-item-templates.md)
 - [Pacotes do NuGet em modelos do Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

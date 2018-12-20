@@ -1,7 +1,7 @@
 ---
 title: Como coletar dados do contador do Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,21 +18,19 @@ helpviewer_keywords:
 - profiling tools, using windows counters
 ms.assetid: db4fbac2-bea5-4558-aa8b-160fcccf4b33
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f0ace1d920cdd4f2c503c608a1695b04c1251f2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 030a36f2f09465b29faf23b1fc05ad13f4a01326
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468038"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770489"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Como coletar dados do contador do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: coletar dados de contador do Windows](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-windows-counter-data).  
-  
 Os contadores do Windows são contadores de desempenho do sistema que podem ser coletados em intervalos definidos durante a criação de perfil. Na exibição de Marcas do relatório das Ferramentas de Criação de Perfil, uma linha é rotulada **AutoMark** para cada intervalo de coleta. A linha contém colunas que descrevem os valores do contador de desempenho nesse intervalo. Para restringir a análise para um período de tempo entre duas marcas específicas, selecione as marcas, clique com o botão direito do mouse e, em seguida, selecione **Filtrar por** ->  **Marcas** no menu de atalho.  
   
  **Requisitos**  

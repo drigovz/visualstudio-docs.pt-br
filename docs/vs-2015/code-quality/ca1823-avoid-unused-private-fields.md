@@ -1,7 +1,7 @@
 ---
 title: 'CA1823: Evitar campos privados não usados | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bfe51ab6c163c82d413c5c7cc74edc0b980abd85
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e729bb95f6b36afb4910ac6d03636c239994ae34
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47476441"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813486"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: evitar campos privados não usados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1823: evitar campos privados não usados](https://docs.microsoft.com/visualstudio/code-quality/ca1823-avoid-unused-private-fields).
 
 |||
 |-|-|

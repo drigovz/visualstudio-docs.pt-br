@@ -1,7 +1,7 @@
 ---
 title: Como usar o SDK de Marcadores da Visualização Simultânea | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a8514848bd0b3fd52e7139972547586fb5bf514
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 17e18ada321752c1cde780031524fb45d8bd4997
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468298"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761115"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Como usar o SDK de marcadores do Visualizador de Simultaneidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [How To: Use o SDK de marcadores do Visualizador de simultaneidade](https://docs.microsoft.com/visualstudio/profiling/how-to-use-the-concurrency-visualizer-markers-sdk).  
-  
 Este tópico mostra como usar o SDK da Visualização Simultânea para criar intervalos e gravar sinalizadores, mensagens e alertas.  
   
 ### <a name="to-use-c"></a>Para usar o C++  

@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSegments | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaEnumSegments interface
 ms.assetid: 0c9edd5e-b9ce-43e1-a791-cd4c5d16d923
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ac11baf77acfad0c778ba306de3a85e2b6281c0b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 192edcf8bff9f72edfd022684bb2453e3f774149
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474857"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760646"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaEnumSegments](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumsegments).  
-  
 Enumera os vários segmentos contidos na fonte de dados.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDiaEnumSegments : IUnknown  
+IDiaEnumSegments : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  

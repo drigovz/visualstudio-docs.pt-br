@@ -1,7 +1,7 @@
 ---
 title: Personalizando exibições de relatório das ferramentas de desempenho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - reports, customizing profiling report views
 ms.assetid: 5224ac52-0fc2-4269-8eb2-ead7fda3afd4
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07ebcf0a5a2e3b69644dcfbad37b540cc902eb74
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9b7022dd8603c166bf976c1b2b90c422fd6d569e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464266"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731255"
 ---
 # <a name="customizing-performance-tools-report-views"></a>Personalizando exibições de relatório das ferramentas de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Personalizando exibições de relatório de ferramentas de desempenho](https://docs.microsoft.com/visualstudio/profiling/customizing-performance-tools-report-views).  
-  
 Esta seção aborda como personalizar relatórios gerados com as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="common-tasks"></a>Tarefas comuns  

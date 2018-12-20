@@ -1,7 +1,7 @@
 ---
 title: Registrar verbos para extensões de nome de arquivo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6c42b1682c7f599513b9894646b30dee029740e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a1300f7f66e9c3e9e9cebe3a7b0c7c84e7df4c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475015"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782421"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrando verbos para extensões de nome de arquivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [registrar verbos para extensões de nome de arquivo](https://docs.microsoft.com/visualstudio/extensibility/registering-verbs-for-file-name-extensions).  
-  
 Em geral, a associação de uma extensão de nome de arquivo com um aplicativo tem uma ação preferencial que ocorre quando um usuário clica duas vezes em um arquivo. Isso preferencial a ação é vinculada a um verbo, por exemplo aberto, que corresponde à ação.  
   
  Você pode registrar verbos que estão associados com um identificador programático (ProgID) para uma extensão usando a chave de Shell localizada em HKEY_CLASSES_ROOT\\*progid*\shell. Para obter mais informações, consulte [tipos de arquivo](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
@@ -34,17 +32,17 @@ Em geral, a associação de uma extensão de nome de arquivo com um aplicativo t
 ## <a name="registering-standard-verbs"></a>Registrar verbos padrão  
  O sistema operacional reconhece os seguintes verbos padrão:  
   
--   Abrir  
+- Abrir  
   
--   Editar  
+- Editar  
   
--   Play  
+- Play  
   
--   Imprimir  
+- Imprimir  
   
--   Visualizar  
+- Visualizar  
   
- Sempre que possível, registre um verbo padrão. A opção mais comum é o verbo Open. Use o verbo de edição somente se houver uma diferença clara entre a abertura do arquivo e editando o arquivo. Por exemplo, abrir um arquivo. htm exibe no navegador, enquanto a edição de um arquivo. htm inicia um editor de HTML. Verbos padrão estão localizados com a localidade do sistema operacional.  
+  Sempre que possível, registre um verbo padrão. A opção mais comum é o verbo Open. Use o verbo de edição somente se houver uma diferença clara entre a abertura do arquivo e editando o arquivo. Por exemplo, abrir um arquivo. htm exibe no navegador, enquanto a edição de um arquivo. htm inicia um editor de HTML. Verbos padrão estão localizados com a localidade do sistema operacional.  
   
 > [!NOTE]
 >  Ao registrar verbos padrão, não defina o valor padrão para a chave de abertura. O valor padrão contém a cadeia de caracteres de exibição no menu. O sistema operacional fornece essa cadeia de caracteres para verbos padrão.  

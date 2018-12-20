@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Personalizando a exibição de texto | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 39dca1309adeef8270ae7bb716c4274874451b91
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38cbd0117f5f49666ee5da42d0f60dadf451ffda
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462768"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781810"
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>Passo a passo: personalizando a exibição de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Personalizando a exibição de texto](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-customizing-the-text-view).  
-  
 Você pode personalizar uma exibição de texto por meio da modificação de qualquer uma das seguintes propriedades em seu mapa de formatação do editor:  
   
 -   Margem de indicadores  
@@ -54,26 +52,26 @@ Você pode personalizar uma exibição de texto por meio da modificação de qua
   
 ## <a name="defining-the-content-type"></a>Definindo o tipo de conteúdo  
   
-1.  Adicione um arquivo de classe e denomine- `ViewPropertyModifier`.  
+1. Adicione um arquivo de classe e denomine- `ViewPropertyModifier`.  
   
-2.  Adicione o seguinte `using` diretivas:  
+2. Adicione o seguinte `using` diretivas:  
   
-     [!code-csharp[VSSDKViewPropertyTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#1)]
-     [!code-vb[VSSDKViewPropertyTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#1)]  
+    [!code-csharp[VSSDKViewPropertyTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#1)]
+    [!code-vb[VSSDKViewPropertyTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#1)]  
   
-3.  Declare uma classe chamada `TestViewCreationListener` que herda de <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>. Exporte essa classe com os seguintes atributos:  
+3. Declare uma classe chamada `TestViewCreationListener` que herda de <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>. Exporte essa classe com os seguintes atributos:  
   
-    -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> para especificar o tipo de conteúdo ao qual se aplica a este ouvinte.  
+   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> para especificar o tipo de conteúdo ao qual se aplica a este ouvinte.  
   
-    -   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> para especificar a função desse ouvinte.  
+   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> para especificar a função desse ouvinte.  
   
      [!code-csharp[VSSDKViewPropertyTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#2)]
      [!code-vb[VSSDKViewPropertyTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#2)]  
   
-4.  Nessa classe, importe o <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>.  
+4. Nessa classe, importe o <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>.  
   
-     [!code-csharp[VSSDKViewPropertyTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#3)]
-     [!code-vb[VSSDKViewPropertyTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#3)]  
+    [!code-csharp[VSSDKViewPropertyTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#3)]
+    [!code-vb[VSSDKViewPropertyTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#3)]  
   
 ## <a name="changing-the-view-properties"></a>Alterando as propriedades de exibição  
   

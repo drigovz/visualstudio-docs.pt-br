@@ -1,7 +1,7 @@
 ---
 title: Noções básicas sobre o SAL | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ae6b16cc7f69aaf365188c488416d35402de9ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 712d99f3839982632e54b622b3512eb611f2bf95
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460960"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792808"
 ---
 # <a name="understanding-sal"></a>Noções básicas de SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Noções básicas sobre SAL](https://docs.microsoft.com/visualstudio/code-quality/understanding-sal).  
-  
 A linguagem de anotação de código-fonte do Microsoft (SAL) fornece um conjunto de anotações que você pode usar para descrever como uma função usa seus parâmetros, as suposições que faz sobre eles e as garantias de que ele faz quando ele for concluído. As anotações são definidas no arquivo de cabeçalho `<sal.h>`. Análise de código do Visual Studio para C++ usa anotações de SAL para modificar sua análise de funções. Para obter mais informações sobre o SAL 2.0 para o desenvolvimento de driver do Windows, consulte [SAL 2.0 anotações para o Windows Drivers](http://go.microsoft.com/fwlink/?LinkId=250979).  
   
  Modo nativo, C e C++ fornecem somente de maneiras limitadas para os desenvolvedores expressem consistentemente a intenção e invariância. Usando anotações de SAL, você pode descrever suas funções mais detalhadamente, para que os desenvolvedores que estão consumindo eles podem entender melhor como usá-los.  
@@ -53,11 +51,11 @@ void * memcpy(
   
  A documentação contém algumas partes de informações que sugerem que seu código deve manter determinadas propriedades para garantir a exatidão do programa:  
   
--   `memcpy` Copia o `count` de bytes do buffer de origem para o buffer de destino.  
+- `memcpy` Copia o `count` de bytes do buffer de origem para o buffer de destino.  
   
--   O buffer de destino deve ser pelo menos tão grande quanto o buffer de origem.  
+- O buffer de destino deve ser pelo menos tão grande quanto o buffer de origem.  
   
- No entanto, o compilador não pode ler a documentação ou comentários informais. Ele não sabe que há uma relação entre dois buffers e `count`, e ele também não pode efetivamente adivinhar sobre uma relação. SAL pode fornecer mais clareza sobre as propriedades e implementação da função, conforme mostrado aqui:  
+  No entanto, o compilador não pode ler a documentação ou comentários informais. Ele não sabe que há uma relação entre dois buffers e `count`, e ele também não pode efetivamente adivinhar sobre uma relação. SAL pode fornecer mais clareza sobre as propriedades e implementação da função, conforme mostrado aqui:  
   
 ```cpp  
   
@@ -119,16 +117,16 @@ wchar_t * wmemcpy(
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Usar ferramentas de análise de código do Visual Studio e o SAL  
   
-1.  No Visual Studio, abra um projeto de C++ que contém as anotações de SAL.  
+1. No Visual Studio, abra um projeto de C++ que contém as anotações de SAL.  
   
-2.  Na barra de menus, escolha **construir**, **executar análise de código na solução**.  
+2. Na barra de menus, escolha **construir**, **executar análise de código na solução**.  
   
-     Considere o in\_ exemplo nesta seção. Se você executar a análise de código nele, esse aviso é exibido:  
+    Considere a \_em\_ exemplo nesta seção. Se você executar a análise de código nele, esse aviso é exibido:  
   
-    > **C6387 o valor de parâmetro inválido**   
-    > 'pInt' pode ser '0': isso não adere à especificação para a função 'InCallee'.  
+   > **C6387 o valor de parâmetro inválido**   
+   > 'pInt' pode ser '0': isso não adere à especificação para a função 'InCallee'.  
   
-### <a name="example-the-in-annotation"></a>Exemplo: REC0 in\_ anotação  
+### <a name="example-the-in-annotation"></a>Exemplo: O \_em\_ anotação  
  O `_In_` anotação indica que:  
   
 -   O parâmetro deve ser válido e não será modificado.  
@@ -166,7 +164,7 @@ void BadInCaller()
   
  Se você usar a análise de código do Visual Studio neste exemplo, ele valida que os chamadores passam um ponteiro não nulo para um buffer inicializado para `pInt`. Nesse caso, `pInt` ponteiro não pode ser NULL.  
   
-### <a name="example-the-inopt-annotation"></a>Exemplo: O _In_opt\_ anotação  
+### <a name="example-the-inopt-annotation"></a>Exemplo: O \_In_opt\_ anotação  
  `_In_opt_` é o mesmo que `_In_`, exceto que o parâmetro de entrada tem permissão para ser NULL e, portanto, a função deve verificar isso.  
   
 ```cpp  
@@ -194,7 +192,7 @@ void InOptCaller()
   
  Análise de código do Visual Studio valida que a função verifica para nulo antes de acessar o buffer.  
   
-### <a name="example-the-out-annotation"></a>Exemplo: REC0 out\_ anotação  
+### <a name="example-the-out-annotation"></a>Exemplo: O \_Out\_ anotação  
  `_Out_` dá suporte a um cenário comum em que é passado um ponteiro não nulo que aponta para um buffer de elemento e a função inicializa o elemento. O chamador não tem que inicializar o buffer antes da chamada; a função chamada promete inicializá-lo antes de retornar.  
   
 ```cpp  
@@ -221,7 +219,7 @@ void OutCaller()
   
  Ferramenta de análise de código do Visual Studio valida que o chamador passa um ponteiro não nulo para um buffer para `pInt` e que o buffer é inicializado pela função antes de retornar.  
   
-### <a name="example-the-outopt-annotation"></a>Exemplo: O _Out_opt\_ anotação  
+### <a name="example-the-outopt-annotation"></a>Exemplo: O \_Out_opt\_ anotação  
  `_Out_opt_` é o mesmo que `_Out_`, exceto que o parâmetro pode ser NULL e, portanto, a função deve verificar isso.  
   
 ```cpp  
@@ -249,7 +247,7 @@ void OutOptCaller()
   
  Análise de código do Visual Studio valida que essa função verifica para nulo antes de `pInt` sua referência é cancelada e se `pInt` não for nulo, o que o buffer é inicializado pela função antes de retornar.  
   
-### <a name="example-the-inout-annotation"></a>Exemplo: REC0 inout\_ anotação  
+### <a name="example-the-inout-annotation"></a>Exemplo: O \_Inout\_ anotação  
  `_Inout_` é usado para anotar um parâmetro de ponteiro que poderá ser alterado pela função. O ponteiro deve apontar para dados inicializados válidos antes da chamada e, mesmo se ele for alterado, ele ainda deve ter um valor válido no retorno. A anotação Especifica que a função pode ler e gravar no buffer de um elemento livremente. O chamador deve fornecer ao buffer e inicializá-lo.  
   
 > [!NOTE]
@@ -281,7 +279,7 @@ void BadInOutCaller()
   
  Análise de código do Visual Studio valida que os chamadores passam um ponteiro não nulo para um buffer inicializado para `pInt`e que, antes de retorno, `pInt` ainda não for nulo e o buffer é inicializado.  
   
-### <a name="example-the-inoutopt-annotation"></a>Exemplo: O _Inout_opt\_ anotação  
+### <a name="example-the-inoutopt-annotation"></a>Exemplo: O \_Inout_opt\_ anotação  
  `_Inout_opt_` é o mesmo que `_Inout_`, exceto que o parâmetro de entrada tem permissão para ser NULL e, portanto, a função deve verificar isso.  
   
 ```cpp  
@@ -311,7 +309,7 @@ void InOutOptCaller()
   
  Análise de código do Visual Studio valida a essa função verifica para nulo antes de acessar o buffer e se `pInt` não for nulo, o que o buffer é inicializado pela função antes de retornar.  
   
-### <a name="example-the-outptr-annotation"></a>Exemplo: O _Outptr\_ anotação  
+### <a name="example-the-outptr-annotation"></a>Exemplo: O \_Outptr\_ anotação  
  `_Outptr_` é usado para anotar um parâmetro que tem como objetivo retornar um ponteiro.  O parâmetro em si não deve ser NULL e a função chamada retorna um ponteiro não nulo nele e esse ponteiro aponta para dados inicializados.  
   
 ```cpp  
@@ -342,7 +340,7 @@ void OutPtrCaller()
   
  Análise de código do Visual Studio valida que o chamador passa um ponteiro não nulo `*pInt`, e que o buffer é inicializado pela função antes de retornar.  
   
-### <a name="example-the-outptropt-annotation"></a>Exemplo: O _Outptr_opt\_ anotação  
+### <a name="example-the-outptropt-annotation"></a>Exemplo: O \_Outptr_opt\_ anotação  
  `_Outptr_opt_` é o mesmo que `_Outptr_`, exceto que o parâmetro é opcional, o chamador pode passar um ponteiro NULL para o parâmetro.  
   
 ```cpp  
@@ -375,7 +373,7 @@ void OutPtrOptCaller()
   
  Análise de código do Visual Studio valida que essa função verifica para nulo antes de `*pInt` sua referência é cancelada, e que o buffer é inicializado pela função antes de retornar.  
   
-### <a name="example-the-success-annotation-in-combination-with-out"></a>Exemplo: REC0 Success\_ anotação em combinação com out\_  
+### <a name="example-the-success-annotation-in-combination-with-out"></a>Exemplo: O \_sucesso\_ anotação em combinação com \_Out\_  
  As anotações podem ser aplicadas à maioria dos objetos.  Em particular, é possível anotar uma função inteira.  Uma das características de uma função mais óbvias é que ele pode ter êxito ou falhar. Mas, como a associação entre um buffer e seu tamanho, C/C++ não pode expressar função êxito ou falha. Usando o `_Success_` anotação, você pode dizer o que é sucesso para uma função.  O parâmetro para o `_Success_` anotação é apenas uma expressão que quando ele é true indica que a função foi bem-sucedida. A expressão pode ser qualquer coisa que o analisador de anotação pode manipular. Os efeitos das anotações depois que a função retorna só são aplicáveis quando a função for bem-sucedida. Este exemplo mostra como `_Success_` interage com `_Out_` para fazer a coisa certa. Você pode usar a palavra-chave `return` para representar o valor de retorno.  
   
 ```cpp  
@@ -405,15 +403,15 @@ bool GetValue(_Out_ int *pInt, bool flag)
 ### <a name="when-do-i-annotate"></a>Ao anotar?  
  Aqui estão algumas diretrizes:  
   
--   Anote todos os parâmetros de ponteiro.  
+- Anote todos os parâmetros de ponteiro.  
   
--   Anote as anotações de intervalo de valores para que a análise de código pode garantir a segurança do buffer e ponteiro.  
+- Anote as anotações de intervalo de valores para que a análise de código pode garantir a segurança do buffer e ponteiro.  
   
--   Anote as regras de bloqueio e travamento efeito colateral. Para obter mais informações, consulte [anotando o comportamento de bloqueio](../code-quality/annotating-locking-behavior.md).  
+- Anote as regras de bloqueio e travamento efeito colateral. Para obter mais informações, consulte [anotando o comportamento de bloqueio](../code-quality/annotating-locking-behavior.md).  
   
--   Anote propriedades do driver e outras propriedades específicas de domínio.  
+- Anote propriedades do driver e outras propriedades específicas de domínio.  
   
- Ou você pode anotar todos os parâmetros para tornar sua intenção clear em todo e tornar mais fácil de verificar que as anotações foram feitas.  
+  Ou você pode anotar todos os parâmetros para tornar sua intenção clear em todo e tornar mais fácil de verificar que as anotações foram feitas.  
   
 ## <a name="related-resources"></a>Recursos relacionados  
  [Blog da equipe de análise de código](http://go.microsoft.com/fwlink/p/?LinkId=251197)  

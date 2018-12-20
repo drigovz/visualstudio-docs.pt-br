@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: FindFile | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSession::findFile method
 ms.assetid: a215dc21-b316-40d7-9923-55bfa014976b
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2967e99d116b5de10d3b90869e9a68a88fb2120
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8dfbc16a9a9a582323ba9c8a35a6100d914c9919
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472674"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51804599"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasession:: FindFile](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findfile).  
-  
 Recupera os arquivos de origem pelo nome e compiland.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findFile (   
+HRESULT findFile (   
    IDiaSymbol*           pCompiland,  
    LPCOLESTR             name,  
    DWORD                 option,  

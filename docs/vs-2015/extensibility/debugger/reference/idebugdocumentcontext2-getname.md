@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentContext2::GetName | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: 546c5b2e-f166-4edb-9e61-57d797ca98a1
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e3dc6b87227757aae4b9814b99aa93ec4c0d394
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5697fdf05fb5b9cd9a2b935554ce3ae4954ada92
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467048"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752354"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugDocumentContext2::GetName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumentcontext2-getname).  
-  
 Obtém o nome de exibição do documento que contém o contexto do documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetName(   
+HRESULT GetName(   
    GETNAME_TYPE gnType,  
    BSTR*        pbstrFileName  
 );  
 ```  
   
 ```csharp  
-int GetName(   
+int GetName(   
    enum_GETNAME_TYPE  gnType,  
    out string         pbstrFileName  
 );  

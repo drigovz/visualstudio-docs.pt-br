@@ -1,7 +1,7 @@
 ---
 title: Página inicial de criação personalizado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b217c098f34240ddc4505821ae8446e4244605da
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 87f653a6ac745253ae86eb6bf8dfab92169ac4db
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587840"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806055"
 ---
 # <a name="creating-a-custom-start-page"></a>Criando uma página inicial personalizada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando uma página de início personalizado](https://docs.microsoft.com/visualstudio/extensibility/creating-a-custom-start-page).  
-  
 Se você não pode criar uma página inicial personalizada usando o modelo de projeto de página inicial, conforme descrito em [páginas de inicialização](../misc/creating-your-own-start-page.md), você pode criar manualmente um seguindo as etapas neste documento.  
   
 ## <a name="creating-a-blank-start-page"></a>Criando uma página inicial em branco  

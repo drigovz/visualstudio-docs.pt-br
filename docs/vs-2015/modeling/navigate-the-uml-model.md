@@ -1,7 +1,7 @@
 ---
 title: Navegar no modelo UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6c5190e1ec273ac0e0b20855c1d0764b58dda65b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f77e72c55c0984f66a6884b0582716e5529abd0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465305"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727768"
 ---
 # <a name="navigate-the-uml-model"></a>Navegar no modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [navegar no modelo UML](https://docs.microsoft.com/visualstudio/modeling/navigate-the-uml-model).  
-  
 Este tópico apresenta os principais tipos de modelo UML.  
   
 ## <a name="the-model-elements-model-and-model-store"></a>Os elementos de modelo, modelo e modelo Store  

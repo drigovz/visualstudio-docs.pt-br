@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramNode2::GetHostName | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: 16aad1ff-ad34-4394-a2e4-5621374a7729
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f90e4d2db358cae62be74941b01afd49537cce26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c090a33421fe36eaecf4e61a662c4b037554ce68
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473573"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758963"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProgramNode2::GetHostName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramnode2-gethostname).  
-  
 Obtém o nome do processo que hospeda o programa.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetHostName (   
+HRESULT GetHostName (   
    GETHOSTNAME_TYPE dwHostNameType,  
    BSTR*            pbstrHostName  
 );  
 ```  
   
 ```csharp  
-int GetHostName (   
+int GetHostName (   
    enum_GETHOSTNAME_TYPE dwHostNameType,  
    out string            pbstrHostName  
 );  

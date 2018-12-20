@@ -1,5 +1,5 @@
 ---
-title: Novidades no design no Visual Studio
+title: O que há de novo para o design
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 957add624e8efa7542991cc03ca48d6835e497f0
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ebe304cafa5e8ed4eae287750aeb8e2db02fbc31
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857567"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062277"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Novidades no design no Visual Studio
 
@@ -40,7 +40,7 @@ O **arquitetura** menu agora contém um comando para criar diretamente um diagra
 
 Agora você ver o impacto das alterações imediatamente nos resultados da análise para o código na solução atual de cada vez que você salva o diagrama. Você não precisa mais esperar pela conclusão do comando "Validar dependências".
 
-Para obter mais detalhes, consulte [esta postagem de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+Para obter mais detalhes, consulte [esta postagem de blog](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Designers UML foram removidos
 
@@ -61,7 +61,7 @@ Entretanto, há suporte para visualizar a arquitetura de código .NET e C++ est�
 
 Se você for um usuário significativas dos designers UML, você pode continuar a usar o Visual Studio 2015 ou versões anteriores enquanto você decidir sobre uma ferramenta alternativa para suas necessidades UML.
 
-Para obter mais detalhes, consulte [esta postagem de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+Para obter mais detalhes, consulte [esta postagem de blog](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -70,7 +70,7 @@ Para obter mais detalhes, consulte [esta postagem de blog](https://blogs.msdn.mi
 Visual Studio 2017 está disponível em várias edições. Nem todos eles oferecem suporte para a arquitetura e ferramentas de modelagem. A tabela a seguir mostra a disponibilidade de cada ferramenta.
 
 |**Recurso**|**Edição Enterprise**|**Professional edition**|**Edição de comunidade**|
-|-----------------|--------------------|----------------------|-------------------|
+|-|-|-|-|
 |**Mapas de código**|Sim|Só oferece suporte à leitura de mapas de código, código de filtragem mapas, adicionar novos nós genéricos e criando um novo gráfico direcionado a partir de uma seleção.|-|
 |**Diagramas de dependência**|Sim|Só dá suporte à leitura de diagramas de dependência.|Só dá suporte à leitura de diagramas de dependência.|
 |**Gráficos direcionados** (diagramas DGML)|Sim|Sim|Sim|

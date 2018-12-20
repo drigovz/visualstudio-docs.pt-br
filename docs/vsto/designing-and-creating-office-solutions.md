@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22ba120513d188f0a945ff18331b37062c08018f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 05cf317823d4f5853d960109bd97da77ea8a927d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670060"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671232"
 ---
 # <a name="design-and-create-office-solutions"></a>Projetar e criar soluções do Office
   Visual Studio fornece modelos de projeto que você pode usar para criar vários tipos diferentes de soluções do Office. Esta seção da documentação descreve os modelos de projeto e fornece orientação sobre como criar projetos do Office. Para obter informações sobre como implementar personalizações de interface do usuário e código depois de ter criado seu projeto, consulte [soluções do Office desenvolver](../vsto/developing-office-solutions.md).  
@@ -41,19 +41,19 @@ ms.locfileid: "35670060"
 ## <a name="choose-a-net-framework-version"></a>Escolha uma versão do .NET Framework  
  Depois de selecionar o tipo de projeto que melhor atenda às suas necessidades, você pode escolher qual versão do .NET Framework para usar no processo de desenvolvimento. Você pode direcionar as seguintes versões do .NET Framework em projetos do Office:  
   
--   [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
+- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
   
--   [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
+- [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
   
--   [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+- [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
   
- A versão do .NET Framework que você escolher para seu projeto é necessário nos computadores de usuário final para sua solução seja executada. Por exemplo, se o projeto está destinado a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] é necessário nos computadores de usuário final. Neste exemplo, sua solução não será executado se apenas o .NET Framework 3.5 está instalado nos computadores dos usuários finais.  
+  A versão do .NET Framework que você escolher para seu projeto é necessário nos computadores de usuário final para sua solução seja executada. Por exemplo, se o projeto está destinado a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] é necessário nos computadores de usuário final. Neste exemplo, sua solução não será executado se apenas o .NET Framework 3.5 está instalado nos computadores dos usuários finais.  
   
- Se você migrar um projeto de suplemento do VSTO que tem como alvo o .NET Framework 3.5, o Visual Studio altera a estrutura de destino do seu projeto para [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, dependendo da versão do Office que você instalou.  
+  Se você migrar um projeto de suplemento do VSTO que tem como alvo o .NET Framework 3.5, o Visual Studio altera a estrutura de destino do seu projeto para [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, dependendo da versão do Office que você instalou.  
   
- No entanto, depois que o Visual Studio altera a estrutura de destino, você talvez precise modificar alguns dos códigos em seu projeto se ele usar determinados recursos. Para obter mais informações sobre como alterar a estrutura de destino, consulte [como: uma versão do .NET Framework de destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Para obter mais informações sobre as alterações que você talvez precise fazer em seu projeto, consulte [soluções do Office de migrar para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
+  No entanto, depois que o Visual Studio altera a estrutura de destino, você talvez precise modificar alguns dos códigos em seu projeto se ele usar determinados recursos. Para obter mais informações sobre como alterar a estrutura de destino, consulte [como: uma versão do .NET Framework de destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Para obter mais informações sobre as alterações que você talvez precise fazer em seu projeto, consulte [soluções do Office de migrar para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
- Se o Visual Studio altera o .NET Framework de destino para o seu projeto e você estiver usando o ClickOnce para implantar sua solução, certifique-se de que você também pode selecionar a versão correspondente do .NET Framework na **pré-requisitos** caixa de diálogo. Essa seleção não será alterada automaticamente quando você altera a estrutura de destino para o seu projeto. Para obter mais informações, consulte [como: instalar pré-requisitos em computadores de usuário final para executar soluções do Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+  Se o Visual Studio altera o .NET Framework de destino para o seu projeto e você estiver usando o ClickOnce para implantar sua solução, certifique-se de que você também pode selecionar a versão correspondente do .NET Framework na **pré-requisitos** caixa de diálogo. Essa seleção não será alterada automaticamente quando você altera a estrutura de destino para o seu projeto. Para obter mais informações, consulte [como: instalar pré-requisitos em computadores de usuário final para executar soluções do Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
 >  Não é possível direcionar o .NET Framework 3.5 ou anterior em projetos do Office que você cria usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Projetos do Office que você cria usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] exigem recursos que foram introduzidos primeiro no [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
@@ -61,7 +61,7 @@ ms.locfileid: "35670060"
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Entenda quando os PIAs do Office são necessários em computadores de usuários finais  
  Por padrão, assemblies de interoperabilidade primários do Office (PIAs) não precisa ser instalado em computadores de usuários finais se a **Embed Interop Types** de cada referência de PIA do Office no projeto estiver definida como **verdadeiro**, qual é o valor padrão. Nesse cenário, as informações de tipo para os tipos PIA que são usados pela sua solução são incorporadas no assembly da solução quando você compila o projeto. Em tempo de execução, as informações de tipo inserido são usadas em vez dos PIAs chamem o modelo de objeto baseado em COM de aplicativo do Office. Para obter mais informações sobre como os tipos de PIAs são inseridos em sua solução, consulte [equivalência de tipos e tipos de interoperabilidade inseridos](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).  
   
- Se o **Embed Interop Types** de cada referência de PIA do Office no projeto estiver definida como **falso**, PIAs do Office deve ser instalado e registrado no cache de assembly global em cada computador do usuário final que executa a solução. Na maioria dos casos, os PIAs são instalados por padrão com o Office, mas você também pode incluir o PIA redistribuível como um pré-requisito para a sua solução. Para obter mais informações, consulte [pré-requisitos de solução do Office para implantação](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
+ Se o **Embed Interop Types** de cada referência de PIA do Office no projeto estiver definida como **falso**, PIAs do Office deve ser instalado e registrado no cache de assembly global em cada computador do usuário final que executa a solução. Na maioria dos casos, os PIAs são instalados por padrão com o Office, mas você também pode incluir o PIA redistribuível como um pré-requisito para a sua solução. Para obter mais informações, consulte [pré-requisitos de solução do Office para implantação](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
   
 ### <a name="understand-the-client-profile"></a>Entender o perfil de cliente  
  O .NET Framework Client Profile é um subconjunto do .NET Framework completo. Se você precisar usar somente os recursos de cliente no .NET Framework e você deseja fornecer uma experiência mais rápida implantação possíveis para sua solução do Office, você pode direcionar o .NET Framework Client Profile. Para obter mais informações, consulte [perfil de cliente do .NET Framework](/dotnet/framework/deployment/client-profile).  

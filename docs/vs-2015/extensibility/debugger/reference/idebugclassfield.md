@@ -1,7 +1,7 @@
 ---
 title: IDebugClassField | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 49358cbc-8973-4862-9dcc-79b1248e6712
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f549d72a3c6af9e6e7393ace4f30d06558d9af80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a127712b10cd6c055693241feb15fe67b1bfe536
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473265"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807520"
 ---
 # <a name="idebugclassfield"></a>IDebugClassField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugClassField](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugclassfield).  
-  
 Essa interface representa uma classe como um tipo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDebugClassField : IDebugContainerField  
+IDebugClassField : IDebugContainerField  
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  

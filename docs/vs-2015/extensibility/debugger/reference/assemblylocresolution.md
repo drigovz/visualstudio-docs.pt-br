@@ -1,7 +1,7 @@
 ---
 title: ASSEMBLYLOCRESOLUTION | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,38 +17,36 @@ ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a098a3a57c0dc9fca01d8ebf1354813a44ac3ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c3ec214d8a1260826ed075ab0d152b3c5ce3e9b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465419"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785749"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ASSEMBLYLOCRESOLUTION](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/assemblylocresolution).  
-  
 Especifica onde um assembly está localizado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_ASSEMBLYLOCRESOLUTION {  
-   ALR_NAME      = 0x0,  
-   ALR_USERDIR   = 0x1,  
-   ALR_SHAREDDIR = 0x2,  
-   ALR_REMOTEDIR = 0x4,  
+enum enum_ASSEMBLYLOCRESOLUTION {  
+   ALR_NAME      = 0x0,  
+   ALR_USERDIR   = 0x1,  
+   ALR_SHAREDDIR = 0x2,  
+   ALR_REMOTEDIR = 0x4,  
 };  
-typedef DWORD ASSEMBLYLOCRESOLUTION;  
+typedef DWORD ASSEMBLYLOCRESOLUTION;  
 ```  
   
 ```csharp  
-public enum enum_ASSEMBLYLOCRESOLUTION {  
-   ALR_NAME      = 0x0,  
-   ALR_USERDIR   = 0x1,  
-   ALR_SHAREDDIR = 0x2,  
-   ALR_REMOTEDIR = 0x4,  
+public enum enum_ASSEMBLYLOCRESOLUTION {  
+   ALR_NAME      = 0x0,  
+   ALR_USERDIR   = 0x1,  
+   ALR_SHAREDDIR = 0x2,  
+   ALR_REMOTEDIR = 0x4,  
 };  
 ```  
   

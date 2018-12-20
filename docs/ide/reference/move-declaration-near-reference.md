@@ -1,5 +1,5 @@
 ---
-title: Mover a declaração de variável para perto da referência no Visual Studio
+title: Mover a declaração de variável para perto da referência
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -8,15 +8,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 dev_langs:
-- csharp
+- CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc6ee94cbebb1cb35dd524017f22bd8ab3812468
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 9bc661331ee03af6d34caeae847b717db1f21fc5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124951"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065336"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Mover declaração de variável para perto da referência no Visual Studio
 
@@ -24,11 +24,11 @@ Esta refatoração aplica-se a:
 
 - C#
 
-**O quê:** permite mover declarações de variável mais próximo do seu uso.
+**O quê:** Permite mover declarações de variável para mais perto de seu uso.
 
-**Quando:** você tem declarações de variável que podem estar em um escopo mais restrito.
+**Quando:** Você tem declarações de variável que podem estar em um escopo mais restrito.
 
-**Por quê:** você pode deixá-lo como está, mas isso pode causar problemas de legibilidade ou ocultação de informações. Esta é uma chance de refatorar para melhorar a legibilidade.
+**Por que:** Você pode deixá-lo como está, mas isso pode causar problemas de legibilidade ou ocultação de informações. Esta é uma chance de refatorar para melhorar a legibilidade.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -37,9 +37,9 @@ Esta refatoração aplica-se a:
 1. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Mover declaração para próximo da referência** no pop-up da janela Visualização.
+      - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Mover declaração para próximo da referência** no pop-up da janela Visualização.
    - **Mouse**
-     - Clique com o botão direito do mouse no código, selecione o menu **Ações Rápidas e Refatorações** e selecione **Mover declaração para próximo da referência** no pop-up da janela Visualização.
+      - Clique com o botão direito do mouse no código, selecione o menu **Ações Rápidas e Refatorações** e selecione **Mover declaração para próximo da referência** no pop-up da janela Visualização.
 
 1. Quando estiver satisfeito com a alteração, pressione **Enter** ou clique na correção no menu e as alterações serão confirmadas.
 

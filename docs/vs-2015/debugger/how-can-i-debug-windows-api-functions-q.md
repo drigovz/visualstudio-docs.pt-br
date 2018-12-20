@@ -1,7 +1,7 @@
 ---
 title: Como depurar funções de API do Windows? | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,21 +25,19 @@ helpviewer_keywords:
 - APIs, debugging
 ms.assetid: 7c126f57-62ab-4d94-9805-632d696ba1f0
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6b0f06ddaadef8f462b59c9f445a0ae02d0123e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a84414c6e4d6b46cc0429fb03fd739d1dff94065
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468432"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735630"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Como depurar funções de API do Windows?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como posso depurar funções de API do Windows?](https://docs.microsoft.com/visualstudio/debugger/how-can-i-debug-windows-api-functions-q).  
-  
 Se você desejar depurar uma função de API do Windows que tenha os símbolos do NT carregados, deverá fazer o seguinte.  
   
 ### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>Para definir um ponto de interrupção em uma função de API do Windows com os símbolos do NT carregados  

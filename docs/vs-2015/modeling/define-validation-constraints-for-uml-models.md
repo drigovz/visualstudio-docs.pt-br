@@ -1,7 +1,7 @@
 ---
 title: Definir restrições de validação para modelos UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ helpviewer_keywords:
 - UML model, validation constraints
 ms.assetid: 87b3b0da-122d-4121-9318-200c38ff49d0
 caps.latest.revision: 49
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1caf688f6ecc84413d3bdb86c1c1825241aa5ba3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6647d37636ed0e79d817113e388ae5df23a88a29
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587871"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782408"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definir restrições de validação para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definir restrições de validação para modelos UML](https://docs.microsoft.com/visualstudio/modeling/define-validation-constraints-for-uml-models).  
-  
 Você pode definir restrições de validação que testam se o modelo de atende a uma condição que você especificar. Por exemplo, você pode definir uma restrição para certificar-se de que um usuário não cria um loop de relações de herança. A restrição é invocada quando o usuário tenta abrir ou salvar o modelo e também pode ser invocado manualmente. Se a restrição falhar, uma mensagem de erro que você define é adicionada à janela de erro. Você pode empacotar essas restrições em uma extensão de integração do Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) e distribuí-lo para outros usuários do Visual Studio.  
   
  Você também pode definir restrições que validam o modelo em relação aos recursos externos, como bancos de dados. Se você quiser validar o código de programa em um diagrama de camada, consulte [adicionar validação de arquitetura personalizada a diagramas de camada](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
@@ -53,24 +51,24 @@ Você pode definir restrições de validação que testam se o modelo de atende 
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Para criar uma extensão de validação em seu próprio VSIX  
   
-1.  No **novo projeto** caixa de diálogo **projetos de modelagem**, selecione **extensão de validação**.  
+1. No **novo projeto** caixa de diálogo **projetos de modelagem**, selecione **extensão de validação**.  
   
-2.  Abra o **. CS** de arquivos no novo projeto e modifique a classe para implementar a restrição de validação.  
+2. Abra o **. CS** de arquivos no novo projeto e modifique a classe para implementar a restrição de validação.  
   
-     Para obter mais informações, consulte [avaliando a restrição de validação](#Implementing).  
+    Para obter mais informações, consulte [avaliando a restrição de validação](#Implementing).  
   
-    > [!IMPORTANT]
-    >  Certifique-se de que seu **. CS** arquivos contêm o seguinte `using` instrução:  
-    >   
-    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
+   > [!IMPORTANT]
+   >  Certifique-se de que seu **. CS** arquivos contêm o seguinte `using` instrução:  
+   >   
+   >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
-3.  Você pode adicionar outras restrições definindo novos métodos. Para identificar um método como um método de validação, ele deve ser marcado com os atributos da mesma maneira como o método de validação inicial.  
+3. Você pode adicionar outras restrições definindo novos métodos. Para identificar um método como um método de validação, ele deve ser marcado com os atributos da mesma maneira como o método de validação inicial.  
   
-4.  Teste suas restrições pressionando F5. Para obter mais informações, consulte [execução de uma restrição de validação](#Executing).  
+4. Teste suas restrições pressionando F5. Para obter mais informações, consulte [execução de uma restrição de validação](#Executing).  
   
-5.  Instalar o comando de menu em outro computador copiando o arquivo **bin\\\*\\\*. VSIX** que é compilado pelo seu projeto. Para obter mais informações, consulte [instalando e desinstalando uma extensão](#Installing).  
+5. Instalar o comando de menu em outro computador copiando o arquivo **bin\\\*\\\*. VSIX** que é compilado pelo seu projeto. Para obter mais informações, consulte [instalando e desinstalando uma extensão](#Installing).  
   
- Quando você adiciona outros **. CS** arquivos, normalmente, você precisará do seguinte `using` instruções:  
+   Quando você adiciona outros **. CS** arquivos, normalmente, você precisará do seguinte `using` instruções:  
   
 ```csharp  
 using System.Collections.Generic;  
@@ -274,13 +272,13 @@ public void ValidateSomething
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
--   `"error string"` aparece no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lista de erros  
+- `"error string"` aparece no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lista de erros  
   
--   `errorCode` é uma cadeia de caracteres que deve ser um identificador exclusivo do erro  
+- `errorCode` é uma cadeia de caracteres que deve ser um identificador exclusivo do erro  
   
--   `elementsWithError` identifica os elementos no modelo. Quando o usuário clica duas vezes no relatório de erros, a forma que representa esse elemento será selecionada.  
+- `elementsWithError` identifica os elementos no modelo. Quando o usuário clica duas vezes no relatório de erros, a forma que representa esse elemento será selecionada.  
   
- `LogError(),` `LogWarning()` e `LogMessage()` colocar mensagens em diferentes seções da lista de erros.  
+  `LogError(),` `LogWarning()` e `LogMessage()` colocar mensagens em diferentes seções da lista de erros.  
   
 ## <a name="how-validation-methods-are-applied"></a>Como os métodos de validação são aplicados  
  A validação é aplicada a todos os elementos no modelo, inclusive relações e as partes dos elementos maiores, como atributos de uma classe e os parâmetros de uma operação.  
@@ -391,15 +389,15 @@ context.LogError(... , usecase);
   
 #### <a name="to-uninstall-an-extension"></a>Para desinstalar uma extensão  
   
-1.  No menu **Ferramentas**, escolha **Extensões e Atualizações**.  
+1. No menu **Ferramentas**, escolha **Extensões e Atualizações**.  
   
-2.  Expandir **extensões instaladas**.  
+2. Expandir **extensões instaladas**.  
   
-3.  Selecione a extensão e, em seguida, escolha **desinstalação**.  
+3. Selecione a extensão e, em seguida, escolha **desinstalação**.  
   
- Raramente, uma extensão defeituosa Falha ao carregar e cria um relatório na janela de erros, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo no seguinte local no qual *% LocalAppData %* é normalmente *DriveName*: \Users\\*denomedeusuário*\AppData\Local:  
+   Raramente, uma extensão defeituosa Falha ao carregar e cria um relatório na janela de erros, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo no seguinte local no qual *% LocalAppData %* é normalmente *DriveName*: \Users\\*denomedeusuário*\AppData\Local:  
   
- *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versão]**  
+   *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versão]**  
   
 ##  <a name="Example"></a> Exemplo  
  Este exemplo localiza loops na relação de dependência entre elementos.  

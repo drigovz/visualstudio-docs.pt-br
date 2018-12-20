@@ -1,7 +1,7 @@
 ---
 title: Exibição de IPs (ponteiros de instrução) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,21 +20,19 @@ helpviewer_keywords:
 - profiling tools, IP view
 ms.assetid: 5e26e0fd-383b-4fb6-a29d-a458d8232828
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 822af38922782996126443f3c664c3dd7d5d44ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5da0870bcc42a9720cb7187c5fd55af463d5c14
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462779"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805171"
 ---
 # <a name="instruction-pointers-ips-view"></a>Exibição de ponteiros de instrução (IPs)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [modo de exibição de ponteiros de instrução (IPs)](https://docs.microsoft.com/visualstudio/profiling/instruction-pointers-ips-view).  
-  
 A exibição dos Ponteiros de Instrução permite ver as instruções específicas executadas durante a criação de perfil de amostragem.  
   
  Essa exibição não está disponível durante a criação de perfil de instrumentação.  

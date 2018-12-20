@@ -1,7 +1,7 @@
 ---
 title: 'DA0505: média de bytes privados alocados para o processo do qual o perfil está sendo criado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ f1_keywords:
 - vs.performance.505
 ms.assetid: 32c612ea-d077-44ba-8e6f-3a96333bad00
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab4ff02bfe8bfacaabddd9204c677544e4fd83a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60f1bce7fe6f0199928e68dcc86b5062e327209a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460312"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789948"
 ---
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: média de bytes particulares alocados para o processo com criação de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DA0505: média de Bytes particulares alocados para o processo que está sendo analisado](https://docs.microsoft.com/visualstudio/profiling/da0505-average-private-bytes-allocated-for-the-process-being-profiled).  
-  
 Id da regra | DA0505 |  
 | Categoria | Gerenciamento de recursos |  
 | Método de criação de perfil | Todos os |  

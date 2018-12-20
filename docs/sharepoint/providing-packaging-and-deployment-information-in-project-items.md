@@ -29,25 +29,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e216bf3f3a15027b26c93e986df3eb8594d4d589
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e4ce9f864307ffaee4bce51a565e9ad1726d043d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118459"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893293"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Fornecer informações de empacotamento e implantação em itens de projeto
   Todos os itens de projeto do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] têm propriedades que você pode usar para fornecer dados adicionais quando o projeto é implantado no SharePoint. Estas são as seguintes propriedades:  
   
--   Propriedades do recurso  
+- Propriedades do recurso  
   
--   Receptores de recurso  
+- Receptores de recurso  
   
--   Referências de saída do projeto  
+- Referências de saída do projeto  
   
--   Entradas de controle seguro  
+- Entradas de controle seguro  
   
- Essas propriedades aparecem na **propriedades** janela.  
+  Essas propriedades aparecem na **propriedades** janela.  
   
 ## <a name="feature-properties"></a>Propriedades do recurso
  Use o **propriedades do recurso** propriedade para especificar os dados que usa o recurso. Dados de propriedades de recurso são um conjunto de valores (armazenados como pares chave/valor) que está incluído com um recurso quando ele é implantado no SharePoint. Depois que o recurso é implantado, você pode acessar os valores de propriedade em seu código.  

@@ -1,7 +1,7 @@
 ---
 title: Glossário do plug-in de controle de origem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f224bbc9-38fc-4c80-ab09-51dcc8969f8e
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 69bb35df7f03294e0ece6c7a7d4306d8cdf4f03b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9535987cc729c78c7d72ee9f51529aeb91b59450
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464634"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732280"
 ---
 # <a name="source-control-plug-in-glossary"></a>Glossário de plug-in de controle do código-fonte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Glossário do plug-in de controle de origem](https://docs.microsoft.com/visualstudio/extensibility/source-control-plug-in-glossary).  
-  
 Os seguintes termos úteis e definições referem-se a documentação do SDK de plug-in de controle do código-fonte.  
   
 ## <a name="definitions"></a>Definições  

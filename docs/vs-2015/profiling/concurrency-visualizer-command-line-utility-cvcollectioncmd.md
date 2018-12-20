@@ -1,7 +1,7 @@
 ---
 title: Utilitário de linha de comando Visualização Simultânea (CVCollectionCmd) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,28 +13,26 @@ f1_keywords:
 - vs.cv.performance.cvcollectioncmd
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1925a240c011e4a9e7ede1a0aeb673b5d33c23bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ee6ba9335cee43a36750dfcdf46faed16c56db4e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460987"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790976"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilitário de linha de comando Visualizador de Simultaneidade (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Concurrency Visualizer Command-line Utility (CVCollectionCmd)](https://docs.microsoft.com/visualstudio/profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd).  
-  
 É possível usar o utilitário de linha de comanda Visualização Simultânea (CVCollectionCmd.exe) para coletar rastreamentos na linha de comando para que seja possível exibi-los na Visualização Simultânea do Visual Studio. As ferramentas podem ser usadas em computadores que não tenham o Visual Studio instalado.  
   
 > [!NOTE]
->  A partir do Visual Studio 2013, a Visualização Simultânea é uma extensão opcional. (Anteriormente, ela havia sido incluída no Visual Studio.) É possível baixar a [Coleção de Ferramentas de Visualização Simultânea para Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) no Centro de Download.  
+>  A partir do Visual Studio 2013, a Visualização Simultânea é uma extensão opcional. (Anteriormente, ela havia sido incluída no Visual Studio.) É possível baixar a [Coleção de Ferramentas de Visualização Simultânea para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) no Centro de Download.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Baixar o utilitário de linha de comando Visualização Simultânea  
- Para baixar e instalar o utilitário de linha de comando, vá para [Coleção de Ferramentas de Visualização Simultânea para Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) e siga as instruções. Por padrão, CVCollectionCmd.exe é instalado em %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ em computadores x64).  
+ Para baixar e instalar o utilitário de linha de comando, vá para [Coleção de Ferramentas de Visualização Simultânea para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) e siga as instruções. Por padrão, CVCollectionCmd.exe é instalado em %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ em computadores x64).  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Coletar um rastreamento usando CVCollectionCmd  
  Você pode coletar um rastreamento iniciando o aplicativo com CVCollectionCmd ou se conectando a ele. Consulte a referência aos comandos abaixo para ver as opções. Por exemplo  

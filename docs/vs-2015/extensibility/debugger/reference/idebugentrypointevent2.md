@@ -1,7 +1,7 @@
 ---
 title: IDebugEntryPointEvent2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c823ef8266f54a9d97bf9311083d77ae170f067
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7bf5e35251012c12e89e9948f3b0e5f59b337ab3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475329"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799958"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugEntryPointEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugentrypointevent2).  
-  
 O mecanismo de depuração (DES) envia essa interface para o Gerenciador de sessão de depuração (SDM) quando o programa está prestes a executar sua primeira instrução do código do usuário.  
   
 ## <a name="syntax"></a>Sintaxe  

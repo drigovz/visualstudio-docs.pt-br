@@ -1,5 +1,5 @@
 ---
-title: Esperado &#39; = &#39; (JavaScript) | Microsoft Docs
+title: Esperado &#39;=&#39; (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8cae54b60ae94be5929ae5c5cfb8f8f0c1a2ea92
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909991"
 ---
-# <a name="expected-3939-javascript"></a>Esperado &#39; = &#39; (JavaScript)
-Você tentou criar uma variável a ser usada com instruções de compilação condicional, mas não colocou um sinal de igual entre a variável e o valor que você deseja atribuir a ela.  
+# <a name="expected-3939-javascript"></a>Esperado &#39;=&#39; (JavaScript)
+Você tentou criar uma variável a ser usada com instruções de compilação condicional, mas não colocou um sinal de igual entre a variável e o valor que você deseja atribuir a ele.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748732"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865915"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de CPU e do Windows
 
@@ -93,15 +93,15 @@ Para listar os contadores disponíveis em um computador na IDE do Visual Studio,
 
 2. Realize um dos seguintes procedimentos:
 
-    -   Clique em **Amostragem** e, em seguida, selecione **Contador de desempenho** na lista de eventos **Amostra**. Os contadores da CPU são listados em **Contadores de desempenho disponíveis**.
+   - Clique em **Amostragem** e, em seguida, selecione **Contador de desempenho** na lista de eventos **Amostra**. Os contadores da CPU são listados em **Contadores de desempenho disponíveis**.
 
-         **Observação** Clique em **Cancelar** para retornar à configuração de amostragem anterior.
+      **Observação** Clique em **Cancelar** para retornar à configuração de amostragem anterior.
 
      -ou-
 
-    -   Selecione **Contadores da CPU** e, em seguida, **Coletar Contadores da CPU**. Os contadores da CPU são listados em **Contadores disponíveis**.
+   - Selecione **Contadores da CPU** e, em seguida, **Coletar Contadores da CPU**. Os contadores da CPU são listados em **Contadores disponíveis**.
 
-         **Observação** Clique em **Cancelar** para retornar à configuração de coleta de contadores anterior.
+      **Observação** Clique em **Cancelar** para retornar à configuração de coleta de contadores anterior.
 
 #### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Para exibir uma lista de contadores do Windows com suporte na plataforma atual
 

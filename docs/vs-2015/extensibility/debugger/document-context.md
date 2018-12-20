@@ -1,7 +1,7 @@
 ---
 title: Contexto de documento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8e8b5702-5c16-4988-953d-69dd807d8b84
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a9e92976af5e098dca0d1a4bb81c777eb38a9f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5753e2353b351f6aa4bd73c5aced3d4959b3cde
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466721"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741187"
 ---
 # <a name="document-context"></a>Contexto do documento
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [contexto de documento](https://docs.microsoft.com/visualstudio/extensibility/debugger/document-context).  
-  
 Na [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] depuração, um **contexto de documento**:  
   
 -   Representa uma posição em um arquivo de origem. Para os idiomas em que o arquivo de origem não pode estar presente, um contexto de documento identifica uma posição em um documento gerado normalmente pelo ambiente de tempo de execução. Por exemplo, um mecanismo de script pode gerar um documento de script. Para obter mais informações, consulte [posição do documento](../../extensibility/debugger/document-position.md).  

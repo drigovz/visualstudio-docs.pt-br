@@ -1,7 +1,7 @@
 ---
 title: Como limitar a instrumentação a DLLs específicas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - performance tools, runtime profiling control window
 ms.assetid: 17c5996f-e3d0-4e44-b175-52b401b0f2d5
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b99a67921739f620c908f1551f0f8a29a5aac73a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 054a281d445f5910e9a2d635bb453dd283425453
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460939"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803455"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Como limitar a instrumentação a DLLs específicas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: limite de instrumentação a DLLs específicas](https://docs.microsoft.com/visualstudio/profiling/how-to-limit-instrumentation-to-specific-dlls).  
-  
 Ao usar o método de criação de perfil de instrumentação, é possível limitar a coleta de dados de criação de perfil a uma ou mais DLLs em um aplicativo. Para analisar uma ou mais DLLs em um aplicativo, você deve criar uma sessão de desempenho que inclui os arquivos .dll como destino. É possível especificar as DLLs que você deseja analisar como projetos em uma solução do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou como arquivos binários independentes.  
   
 ### <a name="to-limit-instrumentation-to-specific-dlls-in-a-visual-studio-solution"></a>Para limitar a instrumentação a DLLs específicas em uma solução do Visual Studio  

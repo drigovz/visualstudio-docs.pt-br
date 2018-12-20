@@ -1,5 +1,5 @@
 ---
-title: Ferramentas de teste do Visual Studio
+title: Ferramentas de teste
 ms.date: 03/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9db1925036f7522db3fe7a16af362da754ec49e5
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a619989543b30ccf07cdb300a5688a985cf27eb7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321054"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068241"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Testando ferramentas no Visual Studio
 
@@ -38,7 +38,7 @@ As ferramentas de teste do Visual Studio podem ajudar você e sua equipe a desen
 - O [teste de carga](../test/quickstart-create-a-load-test-project.md) simula a carga em um aplicativo para servidores executando testes de unidade e testes de desempenho Web.
 
 > [!NOTE]
-> O teste de unidade está disponível em todas as edições do Visual Studio. Outras ferramentas de teste, em tempo real, como testes de unidade, IntelliTest e testes de interface do usuário codificada só estão disponíveis no Visual Studio Enterprise edition. Para obter mais informações sobre edições, consulte [Comparar IDEs do Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/).
+> O teste de unidade está disponível em todas as edições do Visual Studio. Outras ferramentas de teste, como o Live Unit Testing, o IntelliTest e o teste de IU codificado só estão disponíveis no Visual Studio Enterprise edition. Para obter mais informações sobre edições, consulte [Comparar IDEs do Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="related-scenarios"></a>Cenários relacionados
 

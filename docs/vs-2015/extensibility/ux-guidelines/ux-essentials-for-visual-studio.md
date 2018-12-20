@@ -1,7 +1,7 @@
 ---
 title: Fundamentos de UX para Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8a5f59dcb99c149e860244cde5f7dc0a30822578
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7c9c2fe1c076a8851b1b95a9957cd721c61ae21
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468219"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799490"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Fundamentos de UX para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [fundamentos de UX para Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/ux-essentials-for-visual-studio).  
-  
 ## <a name="best-practices"></a>Práticas recomendadas  
   
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. Seja consistente no ambiente do Visual Studio.  
@@ -170,15 +168,15 @@ A versão mais recente deste tópico pode ser encontrada em [fundamentos de UX p
 ### <a name="hyperlink-anti-patterns"></a>Antipadrões de hiperlink  
  O exemplo a seguir contém dois antipadrões.  
   
-1.  Em primeiro plano ativar vermelho em foco significa compartilhado cor correta do serviço da fonte não está sendo usado.  
+1. Em primeiro plano ativar vermelho em foco significa compartilhado cor correta do serviço da fonte não está sendo usado.  
   
-2.  Não é o texto apropriado para um link para um tópico conceitual "Saiba mais". Objetivo do usuário não é saber mais, é compreender as ramificações de sua preferência.  
+2. Não é o texto apropriado para um link para um tópico conceitual "Saiba mais". Objetivo do usuário não é saber mais, é compreender as ramificações de sua preferência.  
   
- ![Hiperlink anti&#45;padrões](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "j_HyperlinkIncorrect 0102")  
+   ![Hiperlink anti&#45;padrões](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "j_HyperlinkIncorrect 0102")  
   
- **Ignorando o serviço de cor e uso de "Saiba mais" para os hiperlinks são antipadrões do Visual Studio.**  
+   **Ignorando o serviço de cor e uso de "Saiba mais" para os hiperlinks são antipadrões do Visual Studio.**  
   
- **Uma melhor solução:** faça a pergunta que o usuário deve estar se perguntando, clicando no link.  
+   **Uma melhor solução:** faça a pergunta que o usuário deve estar se perguntando, clicando no link.  
   
 -   Como funcionam os serviços do Windows Azure?  
   

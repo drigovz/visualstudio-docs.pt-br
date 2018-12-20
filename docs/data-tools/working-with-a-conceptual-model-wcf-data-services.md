@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0adab4da28cffa3f56cb68ef4b2fd703b1d3c71f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: cae74c50ecd99716cf26eae2b7defcadf03fecbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862964"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Trabalhar com um modelo conceitual (WCF Data Services)
 
@@ -27,10 +27,11 @@ Quando você usa um modelo conceitual para descrever os dados em um banco de dad
 
  Você pode usar modelos conceituais com aplicativos do WCF Data Services. Os tópicos a seguir mostram como consultar dados por meio de um modelo conceitual.
 
-|Tópico|Descrição|
-|-----------|-----------------|
-|[Como: executar consultas de serviço de dados](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)|Mostra como consultar um serviço de dados de um [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aplicativo.|
-|[Como: resultados da consulta do projeto](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services)|Mostra como reduzir a quantidade de dados retornados por meio de uma consulta de serviço de dados.|
+
+| Tópico | Descrição |
+| - | - |
+| [Como: executar consultas de serviço de dados](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Mostra como consultar um serviço de dados de um [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aplicativo. |
+| [Como: resultados da consulta do projeto](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Mostra como reduzir a quantidade de dados retornados por meio de uma consulta de serviço de dados. |
 
  Quando você usa um modelo conceitual, você pode definir o tipo de dados é válido no idioma que corresponde a seu domínio. Você pode definir dados válidos no modelo, ou você pode adicionar validação para operações que podem ser executadas em um serviço de dados ou de entidade.
 

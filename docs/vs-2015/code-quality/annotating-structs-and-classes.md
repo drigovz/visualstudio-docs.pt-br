@@ -1,7 +1,7 @@
 ---
 title: Anotando estruturas e Classes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,21 +26,19 @@ f1_keywords:
 - _Field_size_full_opt_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 caps.latest.revision: 11
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 24ed559321bb63d5f9871193f312356466756429
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 965a823c658516edf247f6a99d23d189097b31f0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465283"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801455"
 ---
 # <a name="annotating-structs-and-classes"></a>Anotando estruturas e classes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [anotando estruturas e Classes](https://docs.microsoft.com/visualstudio/code-quality/annotating-structs-and-classes).  
-  
 Você pode anotar os membros de classe e struct usando anotações que atuam como as invariáveis — elas são presumidos como verdadeiro em qualquer chamada de função ou entrada/saída da função que envolve a estrutura de inclusão como um parâmetro ou um valor de resultado.  
   
 ## <a name="struct-and-class-annotations"></a>Anotações de classe e struct  

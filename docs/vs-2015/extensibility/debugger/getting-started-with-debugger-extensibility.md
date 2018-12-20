@@ -1,7 +1,7 @@
 ---
 title: Introdução à extensibilidade do depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f8f056ed8fff53eb166b37f2adba9daa17f12916
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bafdd45b57a9fe660e97127c2c99c333ead0e60a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467117"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721169"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Introdução à extensibilidade do depurador
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Introdução à extensibilidade do depurador](https://docs.microsoft.com/visualstudio/extensibility/debugger/getting-started-with-debugger-extensibility).  
-  
 O [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] fornece as informações que você deve ter para criar e personalizar componentes do depurador usados para depurar programas de dentro do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] depuração adicionou melhorias derivadas a usabilidade extenso teste realizado no anterior [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] depuradores. Você pode usar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] depuração para percorrer um aplicativo de vários idioma, ou você pode implementar em interrupções de edição de variáveis durante a depuração de aplicativos e soluções de vários idiomas.  

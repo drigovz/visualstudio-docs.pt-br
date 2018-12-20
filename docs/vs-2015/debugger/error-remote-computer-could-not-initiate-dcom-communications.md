@@ -1,7 +1,7 @@
 ---
 title: 'Erro: O computador remoto não conseguiu iniciar as comunicações DCOM | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,21 +18,19 @@ dev_langs:
 - C++
 ms.assetid: bbba0766-2502-4ef1-a75d-bf1f0db39e37
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79548e2fbfbb4c10ce912ab90cd0541aea7f1200
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c86e5a193348a8f90e4888e0df3472d102beb08
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474809"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800868"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Erro: o computador remoto não conseguiu iniciar a comunicação DCOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [erro: o computador remoto não foi possível iniciar as comunicações DCOM](https://docs.microsoft.com/visualstudio/debugger/error-remote-computer-could-not-initiate-dcom-communications).  
-  
 Um erro DCOM ocorreu quando o computador remoto tentou se comunicar com o computador local. O computador local é o computador que está  
   
  executando o Visual Studio. Esse erro pode ocorrer por várias razões:  

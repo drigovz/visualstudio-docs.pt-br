@@ -1,7 +1,7 @@
 ---
 title: Preenchimento de membro em um serviço de linguagem herdado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c17404b115c7e8b3f8036c52e493f6932411731
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8b5940e473c639600c30e66e7dc0c732359322d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461026"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790975"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Preenchimento de membro em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [preenchimento de membro em um serviço de linguagem herdado](https://docs.microsoft.com/visualstudio/extensibility/internals/member-completion-in-a-legacy-language-service).  
-  
 O preenchimento de membro IntelliSense é uma dica de ferramenta que exibe uma lista dos possíveis membros de um escopo específico, como uma classe, estrutura, enumeração ou namespace. Por exemplo, no c#, se o usuário digitar "this" seguido por um período, uma lista de todos os membros da classe ou estrutura no escopo atual é apresentada em uma lista na qual o usuário pode selecionar.  
   
  A estrutura de pacote gerenciado (MPF) fornece suporte para a dica de ferramenta e o gerenciamento da lista na dica de ferramenta; tudo o que é necessário é a cooperação do analisador para fornecer os dados que aparecem na lista.  
@@ -41,11 +39,11 @@ O preenchimento de membro IntelliSense é uma dica de ferramenta que exibe uma l
 ## <a name="how-it-works"></a>Como ele funciona  
  A seguir estão as duas maneiras em que uma lista de membros é mostrada usando as classes MPF:  
   
--   Posicionando o cursor em um identificador ou após um caractere de preenchimento de membro e selecionando **Listar membros** da **IntelliSense** menu.  
+- Posicionando o cursor em um identificador ou após um caractere de preenchimento de membro e selecionando **Listar membros** da **IntelliSense** menu.  
   
--   O <xref:Microsoft.VisualStudio.Package.IScanner> scanner detecta um caractere de preenchimento de membro e define um gatilho de token de <xref:Microsoft.VisualStudio.Package.TokenTriggers> desse caractere.  
+- O <xref:Microsoft.VisualStudio.Package.IScanner> scanner detecta um caractere de preenchimento de membro e define um gatilho de token de <xref:Microsoft.VisualStudio.Package.TokenTriggers> desse caractere.  
   
- Um caractere de preenchimento de membro indica que um membro de uma classe, estrutura ou enumeração está a seguir. Por exemplo, em c# ou Visual Basic o caractere de preenchimento de membro é um `.`, enquanto em C++ o caractere é um `.` ou um `->`. O valor do gatilho é definido quando o caractere de seleção de membro é verificado.  
+  Um caractere de preenchimento de membro indica que um membro de uma classe, estrutura ou enumeração está a seguir. Por exemplo, em c# ou Visual Basic o caractere de preenchimento de membro é um `.`, enquanto em C++ o caractere é um `.` ou um `->`. O valor do gatilho é definido quando o caractere de seleção de membro é verificado.  
   
 ### <a name="the-intellisense-member-list-command"></a>O comando de lista de membro IntelliSense  
  O <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando inicia uma chamada para o <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método na <xref:Microsoft.VisualStudio.Package.Source> classe e o <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método, por sua vez, chama o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analisador de método com a razão de análise de <xref:Microsoft.VisualStudio.Package.ParseReason>.  

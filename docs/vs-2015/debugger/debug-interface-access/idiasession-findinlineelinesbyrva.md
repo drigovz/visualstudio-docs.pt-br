@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findInlineeLinesByRVA | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,27 +13,25 @@ dev_langs:
 - C++
 ms.assetid: 7a74d5ee-0dbf-47c0-92b4-47ec03b13ce9
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1f4a2b7acd6cbae11a06d1e6c047426081798096
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: efa8df5ba4ed7f69fef0e95463cf601180785bf3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475499"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721817"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSession::findInlineeLinesByRVA](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findinlineelinesbyrva).  
-  
 Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, pelo símbolo pai especificado e está contida dentro do endereço relativo virtual (RVA) especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findInlineeLinesByRVA (   
+HRESULT findInlineeLinesByRVA (   
    IDiaSymbol*           parent,  
    DWORD                 rva,  
    DWORD                 length,  

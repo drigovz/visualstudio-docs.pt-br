@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugThreads2::GetCount | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 81b7f139-d24e-4040-9adc-d664d77563ba
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc5f84dd9f8628072c50d473bb64235bb223db68
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 01b5c911a04e502981f3f01d49dfa673adb3f17e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460684"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817770"
 ---
 # <a name="ienumdebugthreads2getcount"></a>IEnumDebugThreads2::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugThreads2::GetCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugthreads2-getcount).  
-  
 Retorna o número de elementos na enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  

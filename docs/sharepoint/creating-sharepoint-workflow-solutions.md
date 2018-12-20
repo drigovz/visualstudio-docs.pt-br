@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd67173078a81c5fc250ca993474a60057076d70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4e808d93d2ae3039d4c5d79d1c14c65360bba32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634716"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892305"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Criar soluções de fluxo de trabalho do SharePoint
 
@@ -70,25 +70,25 @@ Para obter mais informações sobre o SharePoint, consulte [tecnologias e produt
 
  Há dois tipos de atividades:
 
--   *As atividades simples* executam uma única unidade de trabalho, como "retardar por 1 dia" ou "iniciar o serviço Web".
+- *As atividades simples* executam uma única unidade de trabalho, como "retardar por 1 dia" ou "iniciar o serviço Web".
 
--   *Atividades compostas* contêm outras atividades; por exemplo, uma atividade condicional pode conter duas ramificações.
+- *Atividades compostas* contêm outras atividades; por exemplo, uma atividade condicional pode conter duas ramificações.
 
- Ambos os tipos de atividades estão disponíveis na **caixa de ferramentas**.
+  Ambos os tipos de atividades estão disponíveis na **caixa de ferramentas**.
 
- As atividades podem ter propriedades, métodos e eventos. Use o **propriedades** janela para definir as propriedades de uma atividade.
+  As atividades podem ter propriedades, métodos e eventos. Use o **propriedades** janela para definir as propriedades de uma atividade.
 
- Você também pode criar uma atividade personalizada. Para obter mais informações, consulte [instruções passo a passo: criar uma atividade de fluxo de trabalho de site personalizada](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
+  Você também pode criar uma atividade personalizada. Para obter mais informações, consulte [instruções passo a passo: criar uma atividade de fluxo de trabalho de site personalizada](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
 
- As atividades são organizadas nas seguintes guias na **caixa de ferramentas**:
+  As atividades são organizadas nas seguintes guias na **caixa de ferramentas**:
 
--   **Fluxo de trabalho do SharePoint**
+- **Fluxo de trabalho do SharePoint**
 
--   **Windows Workflow v3.0**
+- **Windows Workflow v3.0**
 
--   **Windows Workflow v3.5**
+- **Windows Workflow v3.5**
 
- Nem todas as atividades de fluxo de trabalho principais são suportadas pelo SharePoint. Para obter mais informações, consulte [fluxo de trabalho para o Windows SharePoint Services visão geral das atividades](http://go.microsoft.com/fwlink/?LinkID=156094).
+  Nem todas as atividades de fluxo de trabalho principais são suportadas pelo SharePoint. Para obter mais informações, consulte [fluxo de trabalho para o Windows SharePoint Services visão geral das atividades](http://go.microsoft.com/fwlink/?LinkID=156094).
 
 #### <a name="sharepoint-workflow-activities"></a>Atividades de fluxo de trabalho do SharePoint
  O **fluxo de trabalho do SharePoint** guias contêm atividades especializadas para uso em [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]. Essas atividades simplificam e facilitar o desenvolvimento de fluxos de trabalho ciclo de vida do documento. Para obter mais informações sobre as atividades listadas na **fluxo de trabalho do SharePoint** guia, consulte [fluxo de trabalho para o Windows SharePoint Services visão geral das atividades](http://go.microsoft.com/fwlink/?LinkID=156094).
@@ -111,15 +111,15 @@ Para obter mais informações sobre o SharePoint, consulte [tecnologias e produt
 
  Há quatro tipos de formulários que podem ser usados em um fluxo de trabalho:
 
--   Associação
+- Associação
 
--   Iniciação
+- Iniciação
 
--   Modificação
+- Modificação
 
--   Tarefa
+- Tarefa
 
- Dentre eles, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] inclui modelos de item para formulários de associação e iniciação. Um exemplo de um *formulário de associação* é o que permite que o administrador que está instalando o fluxo de trabalho insira parâmetros relacionados ao fluxo de trabalho, como um limite de gastos para um fluxo de trabalho de despesas. Um exemplo de um *formulário de iniciação* é aquela que permite que o usuário de um fluxo de trabalho de despesas insira a quantidade que eles passam o fluxo de trabalho. Para obter mais informações sobre esses tipos de formulários, consulte [SharePoint modelos de item de projeto e projeto](../sharepoint/sharepoint-project-and-project-item-templates.md).
+  Dentre eles, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] inclui modelos de item para formulários de associação e iniciação. Um exemplo de um *formulário de associação* é o que permite que o administrador que está instalando o fluxo de trabalho insira parâmetros relacionados ao fluxo de trabalho, como um limite de gastos para um fluxo de trabalho de despesas. Um exemplo de um *formulário de iniciação* é aquela que permite que o usuário de um fluxo de trabalho de despesas insira a quantidade que eles passam o fluxo de trabalho. Para obter mais informações sobre esses tipos de formulários, consulte [SharePoint modelos de item de projeto e projeto](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
 ### <a name="item-properties"></a>Propriedades do item
  Você também pode coletar informações de usuários usando as propriedades de um item na lista ou biblioteca do SharePoint. O arquivo de código principal (Workflow1.cs ou Workflow1.vb) declara uma instância da classe Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties chamada `workflowProperties`. Use o `workflowProperties` objeto para acessar as propriedades da biblioteca ou lista no código. Por exemplo, consulte [instruções passo a passo: criar e depurar uma solução de fluxo de trabalho do SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).

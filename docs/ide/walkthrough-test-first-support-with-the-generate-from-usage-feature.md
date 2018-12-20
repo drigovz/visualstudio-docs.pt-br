@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c500f7a245ffd3a0dec175dd5f016cf1b2596fa4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821481"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Instruções passo a passo: desenvolvimento de teste antes da codificação com o recurso gerar com base no uso
 
@@ -36,15 +36,15 @@ Este tópico demonstra como usar o recurso [Gerar do Uso](../ide/visual-csharp-i
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>Criar um projeto de Biblioteca de Classes do Windows e um projeto de Teste
 
-1.  No [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ou no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], crie um novo projeto da **Biblioteca de classes do Windows**. Nomeie-o `GFUDemo_VB` ou `GFUDemo_CS`, dependendo de qual linguagem você está usando.
+1. No [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ou no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], crie um novo projeto da **Biblioteca de classes do Windows**. Nomeie-o `GFUDemo_VB` ou `GFUDemo_CS`, dependendo de qual linguagem você está usando.
 
-2.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no ícone da solução na parte superior, escolha **Adicionar** e, em seguida, escolha **Novo Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, escolha **Testar**.
+2. No **Gerenciador de Soluções**, clique com o botão direito do mouse no ícone da solução na parte superior, escolha **Adicionar** e, em seguida, escolha **Novo Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, escolha **Testar**.
 
-3.  No painel central, escolha **Projeto de Teste de Unidade** e aceite o nome padrão `UnitTestProject1`. A ilustração a seguir mostra a caixa de diálogo quando ele for exibido em [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], a caixa de diálogo tem aparência semelhante.
+3. No painel central, escolha **Projeto de Teste de Unidade** e aceite o nome padrão `UnitTestProject1`. A ilustração a seguir mostra a caixa de diálogo quando ele for exibido em [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], a caixa de diálogo tem aparência semelhante.
 
-     ![Caixa de diálogo Novo projeto de teste](../ide/media/newproject_test.png)
+    ![Caixa de diálogo Novo projeto de teste](../ide/media/newproject_test.png)
 
-4.  Escolha **OK** para fechar a caixa de diálogo **Novo Projeto**.
+4. Escolha **OK** para fechar a caixa de diálogo **Novo Projeto**.
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>Adicionar uma referência ao projeto de Biblioteca de Classes
 
@@ -58,20 +58,20 @@ Este tópico demonstra como usar o recurso [Gerar do Uso](../ide/visual-csharp-i
 
 ### <a name="generate-a-new-class-from-a-unit-test"></a>Gerar uma nova classe com base em um teste de unidade
 
-1.  O projeto de teste contém um arquivo chamado *UnitTest1*. Clique duas vezes neste arquivo no **Gerenciador de Soluções** para abri-lo no editor de código. Uma classe de teste e um método de teste foram gerados.
+1. O projeto de teste contém um arquivo chamado *UnitTest1*. Clique duas vezes neste arquivo no **Gerenciador de Soluções** para abri-lo no editor de código. Uma classe de teste e um método de teste foram gerados.
 
-2.  Localize a declaração da classe `UnitTest1` e renomeie para `AutomobileTest`.
+2. Localize a declaração da classe `UnitTest1` e renomeie para `AutomobileTest`.
 
- > [!NOTE]
- >  O IntelliSense agora fornece duas alternativas para o preenchimento de declaração do IntelliSense: *modo de preenchimento* e *modo de sugestão*. Use o modo de sugestão para situações nas quais classes e membros são usados antes de serem definidos. Quando uma janela do **IntelliSense** é aberta, pressione **Ctrl**+**Alt**+**Espaço** para alternar entre o modo de conclusão e o modo de sugestão. Consulte [Usar o IntelliSense](../ide/using-intellisense.md) para obter mais informações. O modo de sugestão ajudará quando você estiver digitando `Automobile` na próxima etapa.
+   > [!NOTE]
+   >  O IntelliSense agora fornece duas alternativas para o preenchimento de declaração do IntelliSense: *modo de preenchimento* e *modo de sugestão*. Use o modo de sugestão para situações nas quais classes e membros são usados antes de serem definidos. Quando uma janela do **IntelliSense** é aberta, pressione **Ctrl**+**Alt**+**Espaço** para alternar entre o modo de conclusão e o modo de sugestão. Consulte [Usar o IntelliSense](../ide/using-intellisense.md) para obter mais informações. O modo de sugestão ajudará quando você estiver digitando `Automobile` na próxima etapa.
 
-3.  Localize o método `TestMethod1()` e renomeie-o para `DefaultAutomobileIsInitializedCorrectly()`. Dentro desse método, crie uma nova instância de uma classe chamada `Automobile`, conforme mostrado nas capturas de tela a seguir. Um sublinhado ondulado é exibido, indicando um erro em tempo de compilação e uma lâmpada de [Ações Rápidas](../ide/quick-actions.md) aparece na margem esquerda (somente no C#) ou diretamente abaixo do rabisco, se você passa o mouse sobre ele.
+3. Localize o método `TestMethod1()` e renomeie-o para `DefaultAutomobileIsInitializedCorrectly()`. Dentro desse método, crie uma nova instância de uma classe chamada `Automobile`, conforme mostrado nas capturas de tela a seguir. Um sublinhado ondulado é exibido, indicando um erro em tempo de compilação e uma lâmpada de [Ações Rápidas](../ide/quick-actions.md) aparece na margem esquerda (somente no C#) ou diretamente abaixo do rabisco, se você passa o mouse sobre ele.
 
-     ![Ações rápidas no Visual Basic](../ide/media/genclass_underlinevb.png)
+    ![Ações rápidas no Visual Basic](../ide/media/genclass_underlinevb.png)
 
-     ![Ações rápidas em C&#35;](../ide/media/genclass_underline.png)
+    ![Ações rápidas em C&#35;](../ide/media/genclass_underline.png)
 
-4.  Escolha ou clique na lâmpada **Ações Rápidas**. Você verá uma mensagem de erro afirmando que o tipo `Automobile` não está definido. Você também verá algumas possíveis soluções.
+4. Escolha ou clique na lâmpada **Ações Rápidas**. Você verá uma mensagem de erro afirmando que o tipo `Automobile` não está definido. Você também verá algumas possíveis soluções.
 
 5. Clique em **Gerar novo tipo** para abrir a caixa de diálogo **Gerar Tipo**. Essa caixa de diálogo fornece opções que incluem a geração de tipo em um projeto diferente.
 
@@ -79,9 +79,9 @@ Este tópico demonstra como usar o recurso [Gerar do Uso](../ide/visual-csharp-i
 
      ![Caixa de diálogo Gerar Novo Tipo](../ide/media/genotherdialog.png)
 
-6.  Clique em **OK** para fechar a caixa de diálogo e criar o novo arquivo.
+7. Clique em **OK** para fechar a caixa de diálogo e criar o novo arquivo.
 
-7.  No **Gerenciador de Soluções**, procure no nó de projeto **GFUDemo_VB** ou **GFUDemo_CS** para verificar se o novo arquivo *Automobile.vb* ou *Automobile.cs* está nesse local. No editor de código, o foco ainda estará em `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, o que permite que você continue a escrever o teste com um mínimo de interrupção.
+8. No **Gerenciador de Soluções**, procure no nó de projeto **GFUDemo_VB** ou **GFUDemo_CS** para verificar se o novo arquivo *Automobile.vb* ou *Automobile.cs* está nesse local. No editor de código, o foco ainda estará em `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, o que permite que você continue a escrever o teste com um mínimo de interrupção.
 
 ### <a name="generate-a-property-stub"></a>Gerar um stub de propriedade
 Suponha que a especificação de produto afirma que a classe `Automobile` tem duas propriedades públicas chamadas `Model` e `TopSpeed`. Essas propriedades devem ser inicializadas com valores padrão de `"Not specified"` e `-1` pelo construtor padrão. O seguinte teste de unidade verificará para que o construtor padrão defina as propriedades para seus valores padrão corretos.

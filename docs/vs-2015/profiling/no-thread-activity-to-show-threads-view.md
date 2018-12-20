@@ -1,7 +1,7 @@
 ---
 title: Nenhuma Atividade de Thread a ser Mostrada (Exibição de Threads) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - Concurrency Visualizer, No Thread Activity to Show (Threads View)
 ms.assetid: aa5ae9d0-561d-4ef8-b36b-258ce553d50a
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7cd51543c27e2700257036080ccc98bf73c7e7d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd4707607b62add2591179df247d3c47705fca7f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462309"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737307"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Nenhuma atividade de thread a ser mostrada (exibição de threads)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [atividade de Thread não a ser mostrada (exibição Threads)](https://docs.microsoft.com/visualstudio/profiling/no-thread-activity-to-show-threads-view).  
-  
 Essa área mostra dados sobre threads não ocultos no intervalo de tempo visível no momento.  
   
  Se nenhuma informação estiver visível, verifique as seguintes configurações:  

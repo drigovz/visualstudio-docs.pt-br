@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b6c0bffb2ce6db081a0c8ddf82c6b603a5dddd9
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: dd42bc89eb853a5d65f8e15eab3fdf2cd054f278
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495252"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927795"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrar verbos para extensões de nome de arquivo
 Em geral, a associação de uma extensão de nome de arquivo com um aplicativo tem uma ação preferencial que ocorre quando um usuário clica duas vezes em um arquivo. Isso preferencial a ação é vinculada a um verbo, por exemplo aberto, que corresponde à ação.  
@@ -28,17 +28,17 @@ Em geral, a associação de uma extensão de nome de arquivo com um aplicativo t
 ## <a name="register-standard-verbs"></a>Registrar verbos padrão  
  O sistema operacional reconhece os seguintes verbos padrão:  
   
--   Abrir  
+- Abrir  
   
--   Editar  
+- Editar  
   
--   Play  
+- Play  
   
--   Imprimir  
+- Imprimir  
   
--   Visualizar  
+- Visualizar  
   
- Sempre que possível, registre um verbo padrão. A opção mais comum é o verbo Open. Use o verbo de edição somente se houver uma diferença clara entre a abertura do arquivo e editando o arquivo. Por exemplo, abrindo uma *. htm* arquivo exibe no navegador, enquanto a edição de um *. htm* arquivo inicia um editor de HTML. Verbos padrão estão localizados com a localidade do sistema operacional.  
+  Sempre que possível, registre um verbo padrão. A opção mais comum é o verbo Open. Use o verbo de edição somente se houver uma diferença clara entre a abertura do arquivo e editando o arquivo. Por exemplo, abrindo uma *. htm* arquivo exibe no navegador, enquanto a edição de um *. htm* arquivo inicia um editor de HTML. Verbos padrão estão localizados com a localidade do sistema operacional.  
   
 > [!NOTE]
 >  Ao registrar verbos padrão, não defina o valor padrão para a chave de abertura. O valor padrão contém a cadeia de caracteres de exibição no menu. O sistema operacional fornece essa cadeia de caracteres para verbos padrão.  

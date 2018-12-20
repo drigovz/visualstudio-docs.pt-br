@@ -1,7 +1,7 @@
 ---
 title: Gravação da função de gancho de depuração | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,21 +25,19 @@ helpviewer_keywords:
 - debugging [CRT], debug hook functions
 ms.assetid: 5510635f-cf69-4907-b72d-ae27af1f19af
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5761b0a32e7739a5611f2d3d07183f0c529fc60c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47cd3d42639785290f26d7acbbad15cd948b4f51
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476173"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735519"
 ---
 # <a name="debug-hook-function-writing"></a>Gravação da função de gancho de depuração
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [gravação da função de gancho de depuração](https://docs.microsoft.com/visualstudio/debugger/debug-hook-function-writing).  
-  
 Esta seção descreve várias funções de gancho de depuração personalizadas que você pode escrever que permitem inserir seu código em alguns pontos predefinidos no processamento normal do depurador.  
   
 ## <a name="in-this-section"></a>Nesta seção  

@@ -22,7 +22,7 @@ ms.workload:
 - office
 ms.openlocfilehash: d48c0e1921c57923021e88a2a4a5bb5f89763ef1
 ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/06/2018
 ms.locfileid: "35670208"

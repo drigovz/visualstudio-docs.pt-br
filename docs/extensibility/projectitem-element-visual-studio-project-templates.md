@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 306f8c0497228ff67adab1b472ea74e2ba9e5d90
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 585615c07d9f11f75468bccde1bae05a355bf98f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637176"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899949"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>Elemento ProjectItem (modelos de projeto do Visual Studio)
 Especifica um arquivo que está incluído no modelo de projeto.  
@@ -53,14 +53,14 @@ Especifica um arquivo que está incluído no modelo de projeto.
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descrição|  
-|---------------|-----------------|  
-|`TargetFileName`|Atributo opcional.<br /><br /> Especifica o nome e caminho do item de projeto quando um projeto é criado a partir do modelo. Esse atributo é útil para criar uma estrutura de diretórios diferentes da estrutura de diretório no modelo *. zip* arquivo, ou para usar substituição de parâmetro para criar um nome de item.|  
-|`ReplaceParameters`|Atributo opcional.<br /><br /> Um valor booliano que especifica se o item tem valores de parâmetros que devem ser substituídas quando um projeto é criado a partir do modelo. O valor padrão é `false`.|  
-|`OpenInEditor`|Atributo opcional.<br /><br /> Um valor booliano que especifica se o item deve ser aberto no editor de respectivos em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] quando um projeto é criado a partir do modelo.<br /><br /> O `OpenInWebBrowser` e `OpenInHelpBrowser` atributos são ignorados em um item com um `OpenInEditor` valor de `true`.<br /><br /> O valor padrão é `false`.|  
-|`OpenInWebBrowser`|Atributo opcional.<br /><br /> Um valor booliano que especifica se o item deve ser aberto o navegador da Web quando um projeto é criado a partir do modelo.<br /><br /> Somente arquivos HTML e arquivos de texto que são locais para o projeto podem ser abertos no navegador da Web. URLs externas não podem ser abertas com esse atributo.<br /><br /> O valor padrão é `false`.|  
-|`OpenInHelpBrowser`|Atributo opcional.<br /><br /> Um valor booliano que especifica se o item deve ser aberto no Visualizador da Ajuda quando um projeto é criado a partir do modelo.<br /><br /> Somente arquivos HTML e arquivos de texto que são locais para o projeto podem ser abertos no navegador da Ajuda. URLs externas não podem ser abertas com esse atributo.<br /><br /> O valor padrão é `false`.|  
-|`OpenOrder`|Atributo opcional.<br /><br /> Especifica um valor numérico que representa a ordem que itens serão abertos em seus respectivos editores. Todos os valores devem ser múltiplos de 10. Itens com maior `OpenOrder` valores são abertos pela primeira vez.|  
+| Atributo | Descrição |
+|---------------------| - |
+| `TargetFileName` | Atributo opcional.<br /><br /> Especifica o nome e caminho do item de projeto quando um projeto é criado a partir do modelo. Esse atributo é útil para criar uma estrutura de diretórios diferentes da estrutura de diretório no modelo *. zip* arquivo, ou para usar substituição de parâmetro para criar um nome de item. |
+| `ReplaceParameters` | Atributo opcional.<br /><br /> Um valor booliano que especifica se o item tem valores de parâmetros que devem ser substituídas quando um projeto é criado a partir do modelo. O valor padrão é `false`. |
+| `OpenInEditor` | Atributo opcional.<br /><br /> Um valor booliano que especifica se o item deve ser aberto no editor de respectivos em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] quando um projeto é criado a partir do modelo.<br /><br /> O `OpenInWebBrowser` e `OpenInHelpBrowser` atributos são ignorados em um item com um `OpenInEditor` valor de `true`.<br /><br /> O valor padrão é `false`. |
+| `OpenInWebBrowser` | Atributo opcional.<br /><br /> Um valor booliano que especifica se o item deve ser aberto o navegador da Web quando um projeto é criado a partir do modelo.<br /><br /> Somente arquivos HTML e arquivos de texto que são locais para o projeto podem ser abertos no navegador da Web. URLs externas não podem ser abertas com esse atributo.<br /><br /> O valor padrão é `false`. |
+| `OpenInHelpBrowser` | Atributo opcional.<br /><br /> Um valor booliano que especifica se o item deve ser aberto no Visualizador da Ajuda quando um projeto é criado a partir do modelo.<br /><br /> Somente arquivos HTML e arquivos de texto que são locais para o projeto podem ser abertos no navegador da Ajuda. URLs externas não podem ser abertas com esse atributo.<br /><br /> O valor padrão é `false`. |
+| `OpenOrder` | Atributo opcional.<br /><br /> Especifica um valor numérico que representa a ordem que itens serão abertos em seus respectivos editores. Todos os valores devem ser múltiplos de 10. Itens com maior `OpenOrder` valores são abertos pela primeira vez. |
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  
@@ -91,27 +91,27 @@ Especifica um arquivo que está incluído no modelo de projeto.
   
 ### <a name="to-rename-files-with-parameters"></a>Para renomear arquivos com parâmetros  
   
-1.  Use o seguinte XML na *. vstemplate* arquivo:  
+1. Use o seguinte XML na *. vstemplate* arquivo:  
   
-    ```xml  
-    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
-    ```  
+   ```xml  
+   <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
+   ```  
   
-2.  Abra o arquivo de projeto (*. vbproj* para um [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] project) em um editor de texto ou [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+2. Abra o arquivo de projeto (*. vbproj* para um [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] project) em um editor de texto ou [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-3.  Localize a linha no arquivo de projeto que é semelhante ao seguinte XML:  
+3. Localize a linha no arquivo de projeto que é semelhante ao seguinte XML:  
   
-    ```xml  
-    <Compile Include="MyFile.vb">  
-    ```  
+   ```xml  
+   <Compile Include="MyFile.vb">  
+   ```  
   
-4.  Substitua a linha de código com o seguinte XML:  
+4. Substitua a linha de código com o seguinte XML:  
   
-    ```xml  
-    <Compile Include="$safeprojectname$.vb">  
-    ```  
+   ```xml  
+   <Compile Include="$safeprojectname$.vb">  
+   ```  
   
-     Quando um projeto é criado com base neste modelo, o nome do arquivo será baseado no nome que o usuário inseriu na **novo projeto** caixa de diálogo, com todos os caracteres desprotegidos e espaços removidos. Para obter mais informações, consulte [parâmetros de modelo](../ide/template-parameters.md).  
+    Quando um projeto é criado com base neste modelo, o nome do arquivo será baseado no nome que o usuário inseriu na **novo projeto** caixa de diálogo, com todos os caracteres desprotegidos e espaços removidos. Para obter mais informações, consulte [parâmetros de modelo](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir mostra os metadados para um modelo de projeto para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo.  

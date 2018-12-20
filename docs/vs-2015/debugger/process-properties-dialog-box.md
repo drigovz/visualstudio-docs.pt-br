@@ -1,7 +1,7 @@
 ---
 title: Processar caixa de diálogo de propriedades | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - process properties, Spy++
 ms.assetid: fe6c9d32-4b81-4dc4-a307-848d23af66ce
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23df984e13f2f8d022a4731926d0747450c7faaf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 22c09f9b1023242ac2de2b2e8838a74e221e0e54
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466142"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801128"
 ---
 # <a name="process-properties-dialog-box"></a>Caixa de diálogo Propriedades do Processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [caixa de diálogo de propriedades do processo](https://docs.microsoft.com/visualstudio/debugger/process-properties-dialog-box).  
-  
 Use essa caixa de diálogo para obter mais informações sobre um processo específico. Para exibir essa caixa de diálogo, mova o foco para um [exibição de processos](../debugger/processes-view.md) janela. Selecione qualquer nó de processo na árvore e escolha **propriedades** da **exibição** menu.  
   
  Em sistemas de operacionais Windows 98 e Windows 95, somente uma versão modificada do **geral** guia é exibida.  

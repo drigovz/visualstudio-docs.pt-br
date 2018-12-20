@@ -1,7 +1,7 @@
 ---
 title: Criando uma página de opções | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 caps.latest.revision: 63
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7204f3c44eacf9b27e455502c636fe6d64f570b2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c65a91135c9346e0dfcabbe7422501ed4f02704
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472934"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751364"
 ---
 # <a name="creating-an-options-page"></a>Criando uma página de opções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando uma página de opções](https://docs.microsoft.com/visualstudio/extensibility/creating-an-options-page).  
-  
 Este passo a passo cria uma página Ferramentas/opções simples que usa uma grade de propriedade para examinar e definir propriedades.  
   
  Para salvar essas propriedades para e restaurá-los de um arquivo de configurações, siga estas etapas e, em seguida, consulte [criar uma categoria de configurações](../extensibility/creating-a-settings-category.md).  
@@ -116,7 +114,7 @@ Este passo a passo cria uma página Ferramentas/opções simples que usa uma gra
   
 2.  Adicione a seguinte instrução using.  
   
-    ```vb  
+    ```csharp  
     using System.Windows.Forms;  
     ```  
   

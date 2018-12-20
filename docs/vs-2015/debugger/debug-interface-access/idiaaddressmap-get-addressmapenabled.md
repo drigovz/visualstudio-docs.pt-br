@@ -1,7 +1,7 @@
 ---
 title: 'Idiaaddressmap:: Get_addressmapenabled | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaAddressMap::get_addressMapEnabled method
 ms.assetid: 6183dc5e-befa-4e5a-ae5a-f4aa24f3ed9e
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24ee62fd6cefe858fef8089e1fe37589781f703b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59a3ded58dcec258acdc9620f92ae6a9c653bff7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468166"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754118"
 ---
 # <a name="idiaaddressmapgetaddressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaaddressmap:: Get_addressmapenabled](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled).  
-  
 Indica se um mapa de endereço foi estabelecido para uma determinada sessão.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_addressMapEnabled (   
+HRESULT get_addressMapEnabled (   
    BOOL* pRetVal  
 );  
 ```  

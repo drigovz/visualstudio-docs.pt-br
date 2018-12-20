@@ -1,7 +1,7 @@
 ---
 title: 'Como: escrever uma função de relatório de erro de tempo de execução | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,21 +23,19 @@ helpviewer_keywords:
 - reporting function
 ms.assetid: 989bf312-5038-44f3-805f-39a34d18760e
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94bbc0ff7d5ca06ca4ff7f84e1f2cb85c254b197
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5d7c9e3d87f7b73ccfad822ef0e7800baaa5b44
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467867"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771504"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>Como escrever uma função de relatórios de erro de tempo de execução
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: gravar uma função de relatório de erro de tempo de execução](https://docs.microsoft.com/visualstudio/debugger/how-to-write-a-run-time-error-reporting-function).  
-  
 Uma função personalizada de relatório para erros em tempo de execução deve ter a mesma declaração que `_CrtDbgReportW`. Deve retornar um valor de 1 para o depurador.  
   
  O exemplo a seguir mostra como definir uma função personalizada de relatório.  

@@ -1,7 +1,7 @@
 ---
 title: Editor de XML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,42 +14,40 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6bfc3cf760e085c3f49e103ef93a510ce66b8d56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5053910e4f5760648eef989162eb31e3c3cc5c9e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473909"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896322"
 ---
 # <a name="xml-editor"></a>Editor de XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Editor de XML](https://docs.microsoft.com/visualstudio/xml-tools/xml-editor).  
-  
   
 O editor de XML é baseado no editor de texto do [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio e inclui suporte adicional para linguagens XML. O Editor XML inclui os seguintes recursos:  
   
--   Verificação de sintaxe XML 1.0.  
+- Verificação de sintaxe XML 1.0.  
   
--   Validação de esquema quando você digita.  
+- Validação de esquema quando você digita.  
   
--   Suporte de snippets de XML, incluindo snippets gerados por esquema.  
+- Suporte de snippets de XML, incluindo snippets gerados por esquema.  
   
--   Suporte para definição de tipo de documento (DTD).  
+- Suporte para definição de tipo de documento (DTD).  
   
--   Suporte para o esquema da linguagem XSD.  
+- Suporte para o esquema da linguagem XSD.  
   
--   Criando um esquema XML de um documento de instância XML.  
+- Criando um esquema XML de um documento de instância XML.  
   
--   Convertendo um DTD ou um esquema XDR em um esquema XML.  
+- Convertendo um DTD ou um esquema XDR em um esquema XML.  
   
--   Verificação de sintaxe XSLT 1.0.  
+- Verificação de sintaxe XSLT 1.0.  
   
--   Estrutura de tópicos de documento de modo que os elementos possam ser expandidos e recolhidos.  
+- Estrutura de tópicos de documento de modo que os elementos possam ser expandidos e recolhidos.  
   
--   Integração com o [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). Isso fornece uma exibição hierárquica dos esquemas XML.  
+- Integração com o [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). Isso fornece uma exibição hierárquica dos esquemas XML.  
   
- O editor de XML é chamado para extensões de arquivo conhecidas, como .xml, .xsd, .xsl e .config. Também é chamado em qualquer extensão de arquivo desconhecida se o arquivo parecer conter XML. Você também pode abrir com o Editor de XML de qualquer arquivo usando o **abrir com** opção e selecionando o Editor de XML da lista.  
+  O editor de XML é chamado para extensões de arquivo conhecidas, como .xml, .xsd, .xsl e .config. Também é chamado em qualquer extensão de arquivo desconhecida se o arquivo parecer conter XML. Você também pode abrir com o Editor de XML de qualquer arquivo usando o **abrir com** opção e selecionando o Editor de XML da lista.  
   
 ## <a name="express-editions"></a>Express Editions  
  Os seguintes recursos do editor de XML não estão disponíveis no Visual Studio Express Editions:  

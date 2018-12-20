@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Exibindo dados relacionados em um aplicativo WPF | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f6a052f7894c37e35defc748528b01124957cbc6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1fc90acf94fde0ef815fc3a487412bba8e8257ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462023"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913131"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Instruções passo a passo: exibindo dados relacionados em um aplicativo WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,28 +36,28 @@ Neste passo a passo, você criará um aplicativo do WPF que exibe dados de tabel
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Criando um aplicativo WPF e um modelo de dados de entidade que é gerado a partir de dados no banco de dados de exemplo AdventureWorksLT.  
+- Criando um aplicativo WPF e um modelo de dados de entidade que é gerado a partir de dados no banco de dados de exemplo AdventureWorksLT.  
   
--   Criando um conjunto de controles ligados a dados que exibem informações de visão geral de um conjunto de pedidos. Criar os controles arrastando uma entidade pai dos **fontes de dados** janela **WPF Designer**.  
+- Criando um conjunto de controles ligados a dados que exibem informações de visão geral de um conjunto de pedidos. Criar os controles arrastando uma entidade pai dos **fontes de dados** janela **WPF Designer**.  
   
--   Criando um <xref:System.Windows.Controls.DataGrid> selecionado de controle que exibe os detalhes relacionados para cada ordem. Criar os controles arrastando uma entidade filho do **fontes de dados** janela para uma janela do **WPF designer**.  
+- Criando um <xref:System.Windows.Controls.DataGrid> selecionado de controle que exibe os detalhes relacionados para cada ordem. Criar os controles arrastando uma entidade filho do **fontes de dados** janela para uma janela do **WPF designer**.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT a [site da CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).  
+- Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT a [site da CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).  
   
- Conhecimento prévio dos conceitos a seguir também é útil, mas não é necessário para concluir o passo a passo:  
+  Conhecimento prévio dos conceitos a seguir também é útil, mas não é necessário para concluir o passo a passo:  
   
--   Modelos de Dados de Entidade e o ADO.NET Entity Framework. Para obter mais informações, consulte [visão geral do Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Modelos de Dados de Entidade e o ADO.NET Entity Framework. Para obter mais informações, consulte [visão geral do Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
--   Trabalhando com o WPF Designer. Para obter mais informações, consulte [WPF e Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Trabalhando com o WPF Designer. Para obter mais informações, consulte [WPF e Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
--   Associação de dados do WPF. Para obter mais informações, consulte [Visão geral de vinculação de dados](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Associação de dados do WPF. Para obter mais informações, consulte [Visão geral de vinculação de dados](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="creating-the-project"></a>Criando o Projeto  
  Crie um novo projeto WPF para exibir os registros de pedido.  
@@ -85,80 +85,80 @@ Neste passo a passo, você criará um aplicativo do WPF que exibe dados de tabel
   
 #### <a name="to-create-an-entity-data-model"></a>Para criar um Modelo de Dados de Entidade  
   
-1.  Sobre o **dados** menu, clique em **Add New Data Source** para abrir o **Data Source Configuration Wizard**.  
+1. Sobre o **dados** menu, clique em **Add New Data Source** para abrir o **Data Source Configuration Wizard**.  
   
-2.  Sobre o **escolher um tipo de fonte de dados** , clique em **banco de dados**e, em seguida, clique em **próxima**.  
+2. Sobre o **escolher um tipo de fonte de dados** , clique em **banco de dados**e, em seguida, clique em **próxima**.  
   
-3.  Sobre o **escolha um modelo de banco de dados** , clique em **modelo de dados de entidade**e, em seguida, clique em **próxima**.  
+3. Sobre o **escolha um modelo de banco de dados** , clique em **modelo de dados de entidade**e, em seguida, clique em **próxima**.  
   
-4.  Sobre o **escolher conteúdo do modelo** , clique em **gerar a partir do banco de dados**e, em seguida, clique em **próxima**.  
+4. Sobre o **escolher conteúdo do modelo** , clique em **gerar a partir do banco de dados**e, em seguida, clique em **próxima**.  
   
-5.  Sobre o **escolha sua Conexão de dados** página, faça o seguinte:  
+5. Sobre o **escolha sua Conexão de dados** página, faça o seguinte:  
   
-    -   Se uma conexão de dados com o banco de dados de exemplo AdventureWorksLT estiver disponível na lista suspensa, selecione-a.  
+   - Se uma conexão de dados com o banco de dados de exemplo AdventureWorksLT estiver disponível na lista suspensa, selecione-a.  
   
-         -ou-  
+      -ou-  
   
-    -   Clique em **nova Conexão** e criar uma conexão ao banco de dados AdventureWorksLT.  
+   - Clique em **nova Conexão** e criar uma conexão ao banco de dados AdventureWorksLT.  
   
      Certifique-se de que o **salvar configurações de conexão de entidade em App. config como** opção é selecionada e, em seguida, clique em **próxima**.  
   
-6.  Sobre o **Choose Your Database Objects** página, expanda **tabelas**e, em seguida, selecione as tabelas a seguir:  
+6. Sobre o **Choose Your Database Objects** página, expanda **tabelas**e, em seguida, selecione as tabelas a seguir:  
   
-    -   **SalesOrderDetail**  
+   -   **SalesOrderDetail**  
   
-    -   **SalesOrderHeader**  
+   -   **SalesOrderHeader**  
   
-7.  Clique em **Finalizar**.  
+7. Clique em **Finalizar**.  
   
-8.  Compile o projeto.  
+8. Compile o projeto.  
   
 ## <a name="creating-data-bound-controls-that-display-the-orders"></a>Criar associação de dados controles que exibem as ordens  
  Crie controles que exibem registros de pedido, arrastando o `SalesOrderHeaders` entidade do **fontes de dados** janela para o WPF designer.  
   
 #### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>Para criar controles associados a dados que exibem os registros de pedido  
   
-1.  Na **Gerenciador de soluções**, clique duas vezes em MainWindow. XAML.  
+1. Na **Gerenciador de soluções**, clique duas vezes em MainWindow. XAML.  
   
-     A janela é aberta no WPF Designer.  
+    A janela é aberta no WPF Designer.  
   
-2.  Editar o XAML para que o **altura** e **largura** propriedades são definidas como 800  
+2. Editar o XAML para que o **altura** e **largura** propriedades são definidas como 800  
   
-3.  No **fontes de dados** janela, clique no menu suspenso para o **SalesOrderHeaders** nó e selecione **detalhes**.  
+3. No **fontes de dados** janela, clique no menu suspenso para o **SalesOrderHeaders** nó e selecione **detalhes**.  
   
-4.  Expanda o **SalesOrderHeaders** nó.  
+4. Expanda o **SalesOrderHeaders** nó.  
   
-5.  Clique no menu suspenso ao lado **SalesOrderID** e selecione **ComboBox**.  
+5. Clique no menu suspenso ao lado **SalesOrderID** e selecione **ComboBox**.  
   
-6.  Para cada um dos seguintes nós filho do **SalesOrderHeaders** nó, clique no menu suspenso em seguida, no nó e selecione **None**:  
+6. Para cada um dos seguintes nós filho do **SalesOrderHeaders** nó, clique no menu suspenso em seguida, no nó e selecione **None**:  
   
-    -   **RevisionNumber**  
+   - **RevisionNumber**  
   
-    -   **OnlineOrderFlag**  
+   - **OnlineOrderFlag**  
   
-    -   **ShipToAddressID**  
+   - **ShipToAddressID**  
   
-    -   **BillToAddressID**  
+   - **BillToAddressID**  
   
-    -   **CreditCardApprovalCode**  
+   - **CreditCardApprovalCode**  
   
-    -   **SubTotal**  
+   - **SubTotal**  
   
-    -   **TaxAmt**  
+   - **TaxAmt**  
   
-    -   **Frete**  
+   - **Frete**  
   
-    -   **ROWGUID**  
+   - **ROWGUID**  
   
-    -   **ModifiedDate**  
+   - **ModifiedDate**  
   
      Essa ação impede que o Visual Studio crie controles de associação de dados para esses nós na etapa seguinte. Para este passo a passo, pressupõe-se que o usuário final não precise ver esses dados.  
   
-7.  Dos **fontes de dados** janela, arraste a **SalesOrderHeaders** nó na janela de **o WPF Designer**.  
+7. Dos **fontes de dados** janela, arraste a **SalesOrderHeaders** nó na janela de **o WPF Designer**.  
   
-     O Visual Studio gera XAML que cria um conjunto de controles que estão associados a dados na **SalesOrderHeaders** entidade e o código que carrega os dados. Para obter mais informações sobre o XAML e o código gerado, consulte [WPF associar controles a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+    O Visual Studio gera XAML que cria um conjunto de controles que estão associados a dados na **SalesOrderHeaders** entidade e o código que carrega os dados. Para obter mais informações sobre o XAML e o código gerado, consulte [WPF associar controles a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-8.  No designer, clique na caixa de combinação lado a **ID do pedido de vendas** rótulo.  
+8. No designer, clique na caixa de combinação lado a **ID do pedido de vendas** rótulo.  
   
 9. No **propriedades** janela, selecione a caixa de seleção ao lado de **IsReadOnly** propriedade.  
   
@@ -167,28 +167,28 @@ Neste passo a passo, você criará um aplicativo do WPF que exibe dados de tabel
   
 #### <a name="to-create-a-datagrid-that-displays-the-order-details"></a>Para criar um DataGrid que exibe os detalhes do pedido  
   
-1.  No **fontes de dados** janela, localize o **SalesOrderDetails** que é um filho do nó de **SalesOrderHeaders** nó.  
+1. No **fontes de dados** janela, localize o **SalesOrderDetails** que é um filho do nó de **SalesOrderHeaders** nó.  
   
-    > [!NOTE]
-    >  Há também uma **SalesOrderDetails** nó que é um par da **SalesOrderHeaders** nó. Certifique-se de que você selecione o nó filho de **SalesOrderHeaders** nó.  
+   > [!NOTE]
+   >  Há também uma **SalesOrderDetails** nó que é um par da **SalesOrderHeaders** nó. Certifique-se de que você selecione o nó filho de **SalesOrderHeaders** nó.  
   
-2.  Expanda o filho **SalesOrderDetails** nó.  
+2. Expanda o filho **SalesOrderDetails** nó.  
   
-3.  Para cada um dos seguintes nós filho do **SalesOrderDetails** nó, clique no menu suspenso em seguida, no nó e selecione **None**:  
+3. Para cada um dos seguintes nós filho do **SalesOrderDetails** nó, clique no menu suspenso em seguida, no nó e selecione **None**:  
   
-    -   **SalesOrderID**  
+   - **SalesOrderID**  
   
-    -   **SalesOrderDetailID**  
+   - **SalesOrderDetailID**  
   
-    -   **ROWGUID**  
+   - **ROWGUID**  
   
-    -   **ModifiedDate**  
+   - **ModifiedDate**  
   
      Essa ação impede que o Visual Studio incluindo esses dados no <xref:System.Windows.Controls.DataGrid> controle que você criar na próxima etapa. Para este passo a passo, pressupõe-se que o usuário final não precise ver esses dados.  
   
-4.  Dos **fontes de dados** janela, arraste o filho **SalesOrderDetails** nó na janela de **o WPF Designer**.  
+4. Dos **fontes de dados** janela, arraste o filho **SalesOrderDetails** nó na janela de **o WPF Designer**.  
   
-     O Visual Studio gera XAML para definir uma nova associação de dados <xref:System.Windows.Controls.DataGrid> controle e o controle aparece no designer. Visual Studio também atualiza o gerado `GetSalesOrderHeadersQuery` método no código code-behind para incluir os dados em de **SalesOrderDetails** entidade.  
+    O Visual Studio gera XAML para definir uma nova associação de dados <xref:System.Windows.Controls.DataGrid> controle e o controle aparece no designer. Visual Studio também atualiza o gerado `GetSalesOrderHeadersQuery` método no código code-behind para incluir os dados em de **SalesOrderDetails** entidade.  
   
 ## <a name="testing-the-application"></a>Testando o aplicativo  
  Compile e execute o aplicativo para verificar se ele exibe os registros de pedido.  

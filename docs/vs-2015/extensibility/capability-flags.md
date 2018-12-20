@@ -1,7 +1,7 @@
 ---
 title: Sinalizadores de recurso | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 638d8975bc3bd5216fe60e0444cf864d8cf896de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6fd526abb5580b6eb3899df9ee76baacd91e56d7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467506"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785281"
 ---
 # <a name="capability-flags"></a>Sinalizadores de capacidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [sinalizadores de recurso](https://docs.microsoft.com/visualstudio/extensibility/capability-flags).  
-  
 O SCC_CAP_*xxx* sinalizadores são sinalizadores de bit usados para indicar os recursos de um plug-in de controle de origem. O SCC_EXCAP_*xxx* sinalizadores são incrementais sinalizadores que indicam recursos estendidos e resolvem para valores inteiros.  
   
 |Código de recurso|Valor|Descrição|  

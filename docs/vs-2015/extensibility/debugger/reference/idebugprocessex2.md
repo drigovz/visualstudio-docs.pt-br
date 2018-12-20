@@ -1,7 +1,7 @@
 ---
 title: IDebugProcessEx2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff9e8555df8041a8a4a61b3c4ecca27068419614
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b6b98d6b1f95171d4efb1e0d4bed040d9c1482d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461427"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721487"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProcessEx2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocessex2).  
-  
 Essa interface permite que a sessão de Gerenciador de depuração (SDM) notificar um processo que está anexando a ou desanexar do processo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -40,11 +38,11 @@ IDebugProcessEx2 : IUnknown
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
  Um fornecedor de porta personalizada implementa essa interface no mesmo objeto como o [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) de interface para:  
   
--   Suporte ao acompanhamento de sessões conectadas a um processo  
+- Suporte ao acompanhamento de sessões conectadas a um processo  
   
--   Suporte a anexação automática entre vários mecanismos de depuração  
+- Suporte a anexação automática entre vários mecanismos de depuração  
   
- O fornecedor de porta personalizada pode implementar essa interface se optar por.  
+  O fornecedor de porta personalizada pode implementar essa interface se optar por.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
   

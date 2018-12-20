@@ -1,7 +1,7 @@
 ---
 title: Criando pastas de contêiner pai para soluções | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a172598ebe54007c6b0a7b2c6843d04b49a2b72a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0a65595b7dabc28a6851820141a71460d84a4b73
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473045"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762538"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Criando pastas de contêiner pai para soluções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando pastas de contêiner pai para soluções](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-parent-container-folders-for-solutions).  
-  
 Na fonte de controle de plug-in API versão 1.2, um usuário pode especificar um destino de controle de origem de raiz única para todos os projetos da Web dentro da solução. Essa única raiz é chamado de uma raiz de Unificação de Super (SUR).  
   
  A fonte de plug-in de API de controle de versão 1.1, se o usuário tiver adicionado uma solução multiprojeto ao controle do código-fonte, o usuário foi solicitado para especificar um destino de controle de origem para cada projeto da Web.  
@@ -44,15 +42,15 @@ Na fonte de controle de plug-in API versão 1.2, um usuário pode especificar um
   
  O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE quase sempre cria uma pasta SUR ao adicionar uma solução ao controle de origem. Especificamente, isso é feito nos seguintes casos:  
   
--   O projeto é um compartilhamento de arquivos de projeto da Web.  
+- O projeto é um compartilhamento de arquivos de projeto da Web.  
   
--   Existem diferentes unidades para o projeto e o arquivo de solução.  
+- Existem diferentes unidades para o projeto e o arquivo de solução.  
   
--   Não há compartilhamento diferente para o projeto e o arquivo de solução.  
+- Não há compartilhamento diferente para o projeto e o arquivo de solução.  
   
--   Projetos foram adicionados separadamente (em uma solução de controle do código-fonte).  
+- Projetos foram adicionados separadamente (em uma solução de controle do código-fonte).  
   
- No [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] é aconselhável que o nome da pasta SUR ser o mesmo que o nome da solução sem a extensão. A tabela a seguir resume o comportamento em duas versões.  
+  No [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] é aconselhável que o nome da pasta SUR ser o mesmo que o nome da solução sem a extensão. A tabela a seguir resume o comportamento em duas versões.  
   
 |Recurso|tSource 1.1 de versão de API de plug-in de controle|Versão 1.2 da API de plug-in de controle de origem|  
 |-------------|----------------------------------------------|---------------------------------------------|  

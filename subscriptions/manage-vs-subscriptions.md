@@ -9,12 +9,12 @@ description: Saiba como aproveitar ao máximo as suas assinaturas do Visual Stud
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 409b5a98990f3dedc8ed321f085615c1d542ed7f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84e3f62bfb0939bdb30f562629c84a092cd02f4b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283425"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822157"
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
 
@@ -72,14 +72,14 @@ O portal de assinaturas do Visual Studio reúne todas as suas assinaturas e prog
 
 Na página Benefícios, a assinatura em uso será exibida na faixa azul em destaque. Ela também será exibida no canto superior direito da página.
 > [!div class="mx-imgBorder"]
-> ![A assinatura ativa](_img\manage-vs-subscriptions\current-subscription-cropped.png)
+> ![A assinatura ativa](_img/manage-vs-subscriptions/current-subscription-cropped.png)
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Para alternar entre as assinaturas, você pode:
 
 - Clicar na lista suspensa no canto superior direito e escolher a assinatura na lista
 - Clicar na guia Assinaturas e, em seguida, clicar na assinatura desejada
-> [!div class="mx-imgBorder"]
-> ![Mudança de assinatura](_img\manage-vs-subscriptions\change-subscription-resized.png)
+  > [!div class="mx-imgBorder"]
+  > ![Mudança de assinatura](_img/manage-vs-subscriptions/change-subscription-resized.png)
 
 ### <a name="if-your-subscription-is-not-visible"></a>Se sua assinatura não estiver visível...
 
@@ -124,8 +124,8 @@ Você pode alterar facilmente as informações de contato e as preferências em 
 4. Ao concluir as alterações, clique em **Salvar**.
 5. Clique no botão **Voltar** do navegador para retornar à página Benefícios.
 
-    > [!div class="mx-imgBorder"]
-    > ![Editar informações de perfil](_img\manage-vs-subscriptions\edit-profile-resized.png)
+   > [!div class="mx-imgBorder"]
+   > ![Editar informações de perfil](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Vincular minha assinatura a assinaturas existentes do Azure DevOps Services ou do Azure
 
@@ -140,8 +140,8 @@ Para adicionar uma conta alternativa:
 3. Em **Links Relacionados**, escolha **Adicionar conta alternativa**.
 4. Insira o endereço de email de sua conta corporativa ou de estudante e clique em **Adicionar**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Conta alternativa](_img\manage-vs-subscriptions\alternate-account-resized.png)
+   > [!div class="mx-imgBorder"]
+   > ![Conta alternativa](_img/manage-vs-subscriptions/alternate-account-resized.png)
 
 Depois de adicionar uma conta alternativa, você poderá atualizá-la ou removê-la a qualquer momento clicando na guia **Assinaturas** e escolhendo a opção apropriada na seção **Links Relacionados**.
 

@@ -1,7 +1,7 @@
 ---
 title: IEnumCodePaths2::GetCount | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 988c5092-fcc5-43a1-a94c-c261edd56ebf
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fd71a3c54ea070ee88374cce3fdfc80e3c7a57fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd5996c706b20a8fb22cce81089241a240871e98
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466445"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807303"
 ---
 # <a name="ienumcodepaths2getcount"></a>IEnumCodePaths2::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumCodePaths2::GetCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumcodepaths2-getcount).  
-  
 Retorna o número de elementos na enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  

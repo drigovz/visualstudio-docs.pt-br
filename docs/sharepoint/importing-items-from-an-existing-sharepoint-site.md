@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21ca61f29138aee5a4c22cbf872d6698d4180d50
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7435d6c7ad210554031994f4a366812f9799ffb2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118369"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832091"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importar itens de um site do SharePoint existente
   O modelo de projeto Importar pacote de solução do SharePoint permite a reutilização elementos como tipos de conteúdo e campos de sites do SharePoint existentes em uma nova [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] solução do SharePoint. Embora seja possível executar a maioria das soluções importadas sem modificação, há certas restrições e problemas a serem considerados, especialmente se você modificar todos os itens após importá-los.  
@@ -41,40 +41,40 @@ ms.locfileid: "37118369"
   
  [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] não oferece suporte à importação de soluções criadas nos seguintes aplicativos:  
   
--   [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]  
+- [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]  
   
--   [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]  
+- [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]  
   
--   [!INCLUDE[vs_orcas_long](../sharepoint/includes/vs-orcas-long-md.md)]  
+- [!INCLUDE[vs_orcas_long](../sharepoint/includes/vs-orcas-long-md.md)]  
   
--   Microsoft SharePoint Designer 2007  
+- Microsoft SharePoint Designer 2007  
   
--   [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]  
+- [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]  
   
- Embora muitas vezes com êxito, você pode importar soluções criadas por esses aplicativos, essa funcionalidade não testada e não tem suporte.  
+  Embora muitas vezes com êxito, você pode importar soluções criadas por esses aplicativos, essa funcionalidade não testada e não tem suporte.  
   
 ## <a name="item-import-restrictions"></a>Restrições de importação de item
  Embora a maioria dos itens do SharePoint podem ser importados de uma já existente *. wsp* arquivo, os itens a seguir não têm suporte e podem exigir modificações para funcionar corretamente:  
   
--   Entidades de BDC  
+- Entidades de BDC  
   
--   Elementos de associação de fluxo de trabalho de código  
+- Elementos de associação de fluxo de trabalho de código  
   
--   Fluxos de trabalho de código  
+- Fluxos de trabalho de código  
   
--   Web parts visuais (. ascx)  
+- Web parts visuais (. ascx)  
   
--   Serviços Web (*asmx*)  
+- Serviços Web (*asmx*)  
   
--   Associações de tipo de conteúdo  
+- Associações de tipo de conteúdo  
   
--   Receptores de evento  
+- Receptores de evento  
   
--   Definições de lista (modelos)  
+- Definições de lista (modelos)  
   
--   Definições de site  
+- Definições de site  
   
- Quando você exportar uma solução a partir [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] ou [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], esses itens são excluídos automaticamente das *. wsp* arquivo. No entanto, outras *. wsp* gerados a partir de ferramentas sem suporte de arquivos podem conter esses itens. (Consulte "Suporte para soluções do SharePoint" neste tópico.)  
+  Quando você exportar uma solução a partir [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] ou [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], esses itens são excluídos automaticamente das *. wsp* arquivo. No entanto, outras *. wsp* gerados a partir de ferramentas sem suporte de arquivos podem conter esses itens. (Consulte "Suporte para soluções do SharePoint" neste tópico.)  
   
 ## <a name="what-happens-when-you-import-a-solution"></a>O que acontece quando você importa uma solução
  Quando você importa uma solução com o modelo de Import SharePoint Solution Package [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] copia todo o conteúdo do *. wsp* importados do arquivo e tentar reconciliar e manter o maior número de associações e referências entre elementos e seus arquivos quanto possível.  

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 41a4dfa2a904f3fdc09671fd5e9afa0f29c2e9f3
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513394"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160134"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -31,7 +31,7 @@ As listas de preenchimento do IntelliSense no C# contêm tokens de Listar Membro
 
 - Variáveis, comandos e nomes de funções
 
-- Trechos de código
+- Snippets de código
 
 - Palavras-chave de linguagem
 
@@ -39,9 +39,9 @@ As listas de preenchimento do IntelliSense no C# contêm tokens de Listar Membro
 
 A lista de conclusão no C# também é inteligente o suficiente para filtrar tokens irrelevantes e pré-selecionar um token com base no contexto. Para obter mais informações, consulte [Listas de conclusão filtradas](#filtered-completion-lists).
 
-### <a name="code-snippets-in-completion-lists"></a>Trechos de código em listas de conclusão
+### <a name="code-snippets-in-completion-lists"></a>Snippets de código em listas de conclusão
 
-No C#, a lista de preenchimento inclui trechos de código para ajudá-lo a inserir com facilidade corpos de código predefinidos no programa. Os trechos de código são exibidos na lista de conclusão como [texto de atalho](../ide/code-snippets-schema-reference.md#shortcut-element) do trecho. Para obter mais informações sobre os trechos de código disponíveis no C# por padrão, consulte [Trechos de código do C#](../ide/visual-csharp-code-snippets.md).
+No C#, a lista de preenchimento inclui snippets de código para ajudá-lo a inserir com facilidade corpos de código predefinidos no programa. Os snippets de código são exibidos na lista de conclusão como [texto de atalho](../ide/code-snippets-schema-reference.md#shortcut-element) do snippet. Para obter mais informações sobre os snippets de código disponíveis no C# por padrão, consulte [Snippets de código do C#](../ide/visual-csharp-code-snippets.md).
 
 ### <a name="language-keywords-in-completion-lists"></a>Palavras-chave de linguagem em listas de conclusão
 
@@ -60,21 +60,21 @@ Os métodos de extensão usam um ícone diferente dos métodos de instância. Pa
 
 O IntelliSense remove membros desnecessários da lista de preenchimento usando filtros. O C# filtra as listas de preenchimento exibidas para estes itens:
 
-- **Interfaces e classes base**: o IntelliSense remove automaticamente itens das listas de conclusão de interface e de classe base, tanto nas listas de interface quanto nas listas de restrição de base de declaração de classe. Por exemplo, enumerações não aparecem na lista de preenchimento nas classes base, pois enumerações não podem ser usadas para as classes base. A lista de preenchimento de classes base contém apenas interfaces e namespaces. Se você selecionar um item na lista e, em seguida, digitar uma vírgula, o IntelliSense removerá as classes base da lista de preenchimento, pois o C# não dá suporte à herança múltipla. O mesmo comportamento também ocorre em cláusulas de restrição.
+- **Interfaces e classes base**: O IntelliSense remove automaticamente itens das listas de preenchimento de interface e de classe base nas listas de base de declaração de classe e de interface e nas listas de restrição. Por exemplo, enumerações não aparecem na lista de preenchimento nas classes base, pois enumerações não podem ser usadas para as classes base. A lista de preenchimento de classes base contém apenas interfaces e namespaces. Se você selecionar um item na lista e, em seguida, digitar uma vírgula, o IntelliSense removerá as classes base da lista de preenchimento, pois o C# não dá suporte à herança múltipla. O mesmo comportamento também ocorre em cláusulas de restrição.
 
-- **Atributos**: ao aplicar um atributo a um tipo, a lista de conclusão é filtrada para que ela tenha somente os tipos que descendem dos namespaces que contêm esses tipos, como <xref:System.Attribute>.
+- **Atributos**: Quando você aplica um atributo a um tipo, a lista de conclusão é filtrada para que tenha somente os tipos que descendem dos namespaces que contêm esses tipos, como <xref:System.Attribute>.
 
 - **Cláusulas Catch**
 
-- **Inicializadores de objeto**: somente os membros que podem ser inicializados serão exibidos na lista de conclusão.
+- **Inicializadores de objeto**: Somente os membros que podem ser inicializados serão exibidos na lista de conclusão.
 
-- **Palavra-chave new**: ao digitar `new` e, em seguida, pressionar o **Espaço**, uma lista de conclusão é exibida. Um item é selecionado na lista automaticamente, de acordo com o contexto no código. Por exemplo, os itens são selecionados automaticamente na lista de preenchimento em busca de declarações e instruções de retorno nos métodos.
+- **Palavra-chave new**: Quando você digita `new` e, em seguida, pressiona o **Espaço**, uma lista de conclusão é exibida. Um item é selecionado na lista automaticamente, de acordo com o contexto no código. Por exemplo, os itens são selecionados automaticamente na lista de preenchimento em busca de declarações e instruções de retorno nos métodos.
 
-- **Palavra-chave enum**: ao pressionar o **Espaço** após um sinal de igual para uma atribuição de enum, uma lista de conclusão será exibida. Um item é selecionado na lista automaticamente, de acordo com o contexto no código. Por exemplo, os itens serão selecionados automaticamente na lista de conclusão depois que você digitar a palavra-chave retorno e quando fizer uma declaração.
+- **Palavra-chave enum**: Quando você pressiona o **Espaço** após um sinal de igual para uma atribuição de enum, uma lista de conclusão é exibida. Um item é selecionado na lista automaticamente, de acordo com o contexto no código. Por exemplo, os itens serão selecionados automaticamente na lista de conclusão depois que você digitar a palavra-chave retorno e quando fizer uma declaração.
 
-- **Operadores as e is**: uma lista de conclusão filtrada é exibida automaticamente ao pressionar o **Espaço** depois de digitar a palavra-chave `as` ou `is`.
+- **Operadores as e is**: Uma lista de conclusão filtrada é exibida automaticamente ao pressionar o **Espaço** depois de digitar a palavra-chave `as` ou `is`.
 
-- **Eventos**: ao digitar a palavra-chave `event`, a lista de conclusão conterá apenas os tipos de delegado.
+- **Eventos**: Quando você digita a palavra-chave `event`, a lista de conclusão contém apenas os tipos de delegados.
 
 - A **ajuda do parâmetro** classifica automaticamente para a primeira sobrecarga de método que corresponde aos parâmetros, conforme eles são inseridos. Se houver várias sobrecargas de método disponíveis, será possível usar as setas para cima e para baixo para navegar para a próxima sobrecarga possível na lista.
 
@@ -116,7 +116,7 @@ A implementação da interface gera o número mínimo de stubs de método necess
 
 O IntelliSense fornece uma opção para ajudá-lo a implementar membros de uma classe base abstrata automaticamente enquanto estiver trabalhando no editor de códigos. Normalmente, para implementar membros de uma classe base abstrata, é necessário criar uma nova definição de método para cada método da classe base abstrata na classe derivada. Usando o IntelliSense, depois de digitar o nome de uma classe base abstrata em uma declaração de classe, uma lâmpada **Ações Rápidas** é exibida. A lâmpada oferece a opção de implementar os métodos de classe base automaticamente.
 
-Os stubs de método gerados pelo recurso **Implementar Classe Base Abstrata** são modelados pelo trecho de código definido no arquivo *MethodStub.snippet*. Os trechos de código são modificáveis. Para obter mais informações, consulte [Passo a passo: Criar um trecho de código](../ide/walkthrough-creating-a-code-snippet.md).
+Os stubs de método gerados pelo recurso **Implementar Classe Base Abstrata** são modelados pelo trecho de código definido no arquivo *MethodStub.snippet*. Os snippets de código são modificáveis. Para obter mais informações, confira [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md).
 
 ### <a name="generate-from-usage"></a>Gerar com base no uso
 
@@ -165,4 +165,4 @@ Se você pressionar a **Guia**, o IntelliSense criará um stub de um método com
 ## <a name="see-also"></a>Consulte também
 
 - [Usar o IntelliSense](../ide/using-intellisense.md)
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)

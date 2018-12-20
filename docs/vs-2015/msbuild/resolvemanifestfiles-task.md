@@ -1,7 +1,7 @@
 ---
 title: Tarefa ResolveManifestFiles | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b459ef08b9375fc246d51a161601879a26b61afa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1cf9a786a439010d6219200098dea802e0dae0f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467414"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251922"
 ---
 # <a name="resolvemanifestfiles-task"></a>Tarefa ResolveManifestFiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tarefa ResolveManifestFiles](https://docs.microsoft.com/visualstudio/msbuild/resolvemanifestfiles-task).  
-  
   
 Resolve os seguintes itens no processo de build para arquivos de geração de manifesto: itens compilados, dependências, satélites, conteúdo, símbolos de depuração e documentação.  
   

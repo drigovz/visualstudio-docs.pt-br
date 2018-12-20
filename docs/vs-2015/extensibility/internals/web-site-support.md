@@ -1,7 +1,7 @@
 ---
 title: Suporte de Site | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 128c5d94bbb508e6cf168f3de5662ba88b9d6193
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7215079dbfc8a8c9934f16700c0a7f466f9bc9a6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475826"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786074"
 ---
 # <a name="web-site-support"></a>Suporte a site
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [suporte do Site da Web](https://docs.microsoft.com/visualstudio/extensibility/internals/web-site-support).  
-  
 Um sistema de projeto de site da Web é um sistema de projeto que cria projetos da Web. Projetos da Web por sua vez criam aplicativos Web. Um projeto de site gera um arquivo executável para cada página da Web que tem o código associado. Arquivos executáveis adicionais são gerados de arquivos de código-fonte na pasta /App_Code.  
   
  Sistemas de projeto de site da Web são criados com a adição de modelos e os atributos do registro para um sistema de projeto existente. Um desses atributos seleciona o provedor do IntelliSense para o idioma. A implementação do provedor IntelliSense trata referências e chama o compilador de linguagem quando uma página da Web inteligente que não é armazenado em cache é solicitada.  
@@ -34,7 +32,7 @@ Um sistema de projeto de site da Web é um sistema de projeto que cria projetos 
  O compilador de linguagem usado para compilar páginas da Web deve ser registrado com [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]. Você pode usar o [ \<compilador > elemento](http://msdn.microsoft.com/library/7a151659-b803-4c27-b5ce-1c4aa0d5a823) em um arquivo Web. config para registrar o compilador, como no exemplo a seguir:  
   
 ```  
-<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  
+<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  
 ```  
   
 ## <a name="in-this-section"></a>Nesta seção  

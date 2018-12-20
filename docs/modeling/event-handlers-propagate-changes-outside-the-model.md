@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ab42f0a8b3dafebaf73c116e8ce3295d99ce6fdd
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 02cf41daa9bea74e62ceb96f7c6227982bfcad84
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859271"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967344"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Manipuladores de eventos propagam alterações fora do modelo
 
@@ -173,7 +173,7 @@ Se você gravar um evento que atualiza o repositório:
 Cada tipo de evento corresponde a uma coleção em Store.EventManagerDirectory. Você pode adicionar ou remover manipuladores de eventos a qualquer momento, mas é comum o uso para adicioná-las quando o documento é carregado.
 
 |`EventManagerDirectory` Nome da propriedade|Executado quando|
-|-------------------------------------------|-------------------|
+|-|-|
 |ElementAdded|Uma instância de uma classe de domínio, o relacionamento de domínio, forma, conector ou diagrama é criada.|
 |ElementDeleted|Um elemento de modelo foi removido do diretório do elemento da loja e não é mais a origem ou destino de qualquer relação. O elemento, na verdade, não é excluído da memória, mas é mantido no caso de um Desfazer futuras.|
 |ElementEventsBegun|Invocado no final de uma transação externa.|
@@ -189,6 +189,6 @@ Cada tipo de evento corresponde a uma coleção em Store.EventManagerDirectory. 
 ## <a name="see-also"></a>Consulte também
 
 - [Respondendo a alterações e propagando-as](../modeling/responding-to-and-propagating-changes.md)
-- [Código de amostra: diagramas de circuito](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Código de amostra: diagramas de circuito](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

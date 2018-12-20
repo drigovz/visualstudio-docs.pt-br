@@ -1,7 +1,7 @@
 ---
 title: Tarefa RC | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ff118a6d32a182d1060cc051f24352b16037039
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 04bd592f919ab3ced11b36dceba7ce4178927884
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587857"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259321"
 ---
 # <a name="rc-task"></a>Tarefa RC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tarefa RC](https://docs.microsoft.com/visualstudio/msbuild/rc-task).  
-  
   
 Encapsula a ferramenta de Compilador de Recurso do Microsoft Windows, rc.exe. A tarefa **RC** compila recursos como cursores, ícones, bitmaps, caixas de diálogo e fontes em um arquivo de recurso (.res). Para obter mais informações, consulte “Compilador de Recursos” no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   

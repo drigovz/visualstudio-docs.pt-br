@@ -1,7 +1,8 @@
 ---
-title: 'Início Rápido: Usar o Visual Studio para criar seu primeiro aplicativo Vue.js'
+title: 'Início Rápido: Criar seu primeiro aplicativo Vue.js'
 description: Neste início rápido, você criará um aplicativo Vue.js no Visual Studio usando as Ferramentas Node.js para Visual Studio
-ms.date: 11/15/2017
+ms.custom: seodec18
+ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-nodejs
 ms.topic: quickstart
@@ -14,19 +15,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cced69988b6f863380ac88ee27a8a963229f966a
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: a48de4bc48f24cc55914ccdb5fdeed0b4ad1d9a8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131902"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058945"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Início Rápido: Usar o Visual Studio para criar seu primeiro aplicativo Vue.js
 
 Nesta introdução de 5 a 10 minutos do IDE (ambiente de desenvolvimento integrado) do Visual Studio, você criará e executará um aplicativo Web Vue.js simples. Se você ainda não tiver instalado o Visual Studio 2017, acesse a página [Downloads do Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalá-lo gratuitamente.
 
 > [!IMPORTANT]
-> Este artigo exige o modelo do Vue.js, que está disponível a partir do Visual Studio 2017 versão 15.8 Versão Prévia 3.
+> Este artigo requer o modelo Vue.js, disponível no Visual Studio 2017 versão 15.8 e posteriores.
 
 ## <a name="create-a-project"></a>Criar um projeto
 
@@ -64,13 +65,13 @@ Primeiro, você criará um projeto de aplicativo Web Vue.js.
 
      ![Solução do Vue.js](../javascript/media/vuejs-solution.png)
 
-  - O seu projeto está realçado em negrito, usando o nome que você forneceu na caixa de diálogo **Novo Projeto**. No disco, esse projeto é representado por um arquivo *.njsproj* na pasta do projeto.
+   - O seu projeto está realçado em negrito, usando o nome que você forneceu na caixa de diálogo **Novo Projeto**. No disco, esse projeto é representado por um arquivo *.njsproj* na pasta do projeto.
 
-  - No nível superior está uma solução que, por padrão, tem o mesmo nome que o projeto. Uma solução, representada por um arquivo *.sln* no disco, é um contêiner para um ou mais projetos relacionados.
+   - No nível superior está uma solução que, por padrão, tem o mesmo nome que o projeto. Uma solução, representada por um arquivo *.sln* no disco, é um contêiner para um ou mais projetos relacionados.
 
-  - O nó **npm** mostra os pacotes npm instalados. Você pode clicar com o botão direito do mouse no nó de npm para pesquisar e instalar pacotes de npm usando uma caixa de diálogo.
+   - O nó **npm** mostra os pacotes npm instalados. Você pode clicar com o botão direito do mouse no nó de npm para pesquisar e instalar pacotes de npm usando uma caixa de diálogo.
 
-1. Caso deseje instalar pacotes npm ou executar comandos do Node.js em um prompt de comando, clique com o botão direito do mouse no nó do projeto e escolha **Abrir Prompt de Comando Aqui**.
+2. Caso deseje instalar pacotes npm ou executar comandos do Node.js em um prompt de comando, clique com o botão direito do mouse no nó do projeto e escolha **Abrir Prompt de Comando Aqui**.
 
 ## <a name="add-a-vue-file-to-the-project"></a>Adicionar um arquivo .vue ao projeto
 

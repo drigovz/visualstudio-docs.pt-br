@@ -1,7 +1,7 @@
 ---
 title: Configuração de exibição da janela de ferramentas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ff1e5b95b684c347ee1885d5dfddeb5eebb5a82
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c563888424ae4825f3e5b10fc0592029a29cb84b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474183"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736947"
 ---
 # <a name="tool-window-display-configuration"></a>Configuração de exibição da janela de ferramenta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [configuração de exibição da janela de ferramenta](https://docs.microsoft.com/visualstudio/extensibility/tool-window-display-configuration).  
-  
 Quando um VSPackage registra uma janela de ferramentas, a posição padrão, tamanho, estilo de encaixe e outras informações de visibilidade é especificado em valores opcionais. Para obter mais informações sobre o registro de janela da ferramenta, consulte [ferramenta Windows no registro](../extensibility/tool-windows-in-the-registry.md)  
   
 ## <a name="window-display-information"></a>Informações de exibição da janela  

@@ -1,5 +1,5 @@
 ---
-title: Selecionar configuração de execução para um teste de carga no Visual Studio
+title: Selecionar uma configuração de execução para um teste de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,29 +10,29 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5e7a56ff01e06c0d5046ab477ec78635f01f6c4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9a99df580ec50eec27bd1cb13a1ef883944acd48
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381905"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067379"
 ---
-# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Como selecionar a configuração de execução ativa para um teste de carga
+# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Como: Selecionar a configuração de execução ativa para um teste de carga
 
 Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, você poderá usar o **Editor de Teste de Carga** para alterar as propriedades de cenários para que eles atendam às suas metas e necessidades de teste.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Um teste de carga pode conter uma ou mais *configurações de execução*, que são um conjunto de propriedades que influenciam como um teste de carga é executado. As configurações de execução são organizadas por categorias na janela **Propriedades**. Quando é executado, um teste de carga usa a configuração de execução definida como ativa no momento.
 
 > [!NOTE]
 > Para obter uma lista completa das propriedades de configurações de execução e suas descrições, confira [Propriedades de configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).
 
-Se o teste de carga contiver apenas um nó de configuração de execução na pasta **Configurações de Execução**, esse nó sempre será o nó ativo. Se o teste de carga contiver vários nós de configurações de execução, você poderá selecionar um para usar ao executar um teste de carga. Consulte [Como adicionar configurações de execução adicionais a um teste de carga](../test/how-to-add-additional-run-settings-to-a-load-test.md).
+Se o teste de carga contiver apenas um nó de configuração de execução na pasta **Configurações de Execução**, esse nó sempre será o nó ativo. Se o teste de carga contiver vários nós de configurações de execução, você poderá selecionar um para usar ao executar um teste de carga. Confira [Como: Adicionar outras configurações de execução a um teste de carga](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 
 No **Editor de Teste de Carga**, a configuração de execução ativa é identificada pelo sufixo "[Active]".
 
 ## <a name="select-the-active-run-setting"></a>Selecionar a configuração de execução ativa
-
-### <a name="to-select-the-active-run-setting-in-a-load-test"></a>Para selecionar a configuração de execução ativa em um teste de carga
 
 1.  Abra um teste de carga.
 
@@ -61,4 +61,4 @@ E para executar o teste:
 
 - [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)
 - [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Como adicionar mais configurações de execução a um teste de carga](../test/how-to-add-additional-run-settings-to-a-load-test.md)
+- [Como: Adicionar outras configurações de execução a um teste de carga](../test/how-to-add-additional-run-settings-to-a-load-test.md)

@@ -1,7 +1,7 @@
 ---
 title: Introdução ao modelo de projeto do VSIX | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3c123359cfc00906c1fdf6c7285310e387783b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 1f7230bce49342ad8e31baeb3f46c72f1c45d776
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466267"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787725"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>Introdução ao modelo de projeto do VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Introdução ao modelo de projeto do VSIX](https://docs.microsoft.com/visualstudio/extensibility/getting-started-with-the-vsix-project-template).  
-  
 Você pode usar o modelo de projeto de VSIX para criar uma extensão ou para uma extensão existente para a implantação do pacote. O modelo de projeto do VSIX tem versões de Visual Basic e Visual c# e é instalado como parte do SDK do Visual Studio.  
   
  O modelo de projeto do VSIX apenas consiste em um arquivo de vsixmanifest, que contém informações sobre a extensão e os ativos de que enviá-lo.  

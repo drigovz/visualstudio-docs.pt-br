@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Findfilebyid | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSession::findFileById method
 ms.assetid: 710efe04-78b5-4f3e-a1d8-f9b069063503
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e54267e86854098e263c74a9d0e7042540e02025
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9520d9619cd9b6dfa97f042c0195d6b1faecaa7e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468136"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728667"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasession:: Findfilebyid](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findfilebyid).  
-  
 Recupera um arquivo de origem pelo identificador de arquivo de origem.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findFileById (   
+HRESULT findFileById (   
    DWORD            uniqueId,  
    IDiaSourceFile** ppResult  
 );  

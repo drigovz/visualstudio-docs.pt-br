@@ -1,7 +1,7 @@
 ---
 title: Noções básicas do depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,21 +20,18 @@ helpviewer_keywords:
 - debugger, roadmap
 ms.assetid: 4da42a10-384d-44d7-b4dc-032202ff784b
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69197e3eca71398872343eff3e5d36e9649ead6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bb755dd5e6936e030c1569edcdd065b8bef0547
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460460"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778651"
 ---
 # <a name="debugger-basics"></a>Noções básicas do depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [Noções básicas do depurador](https://docs.microsoft.com/visualstudio/debugger/debugger-basics). 
-
 O depurador do Visual Studio permite que você observar o comportamento de tempo de execução do seu programa e localizar erros de lógica. O depurador funciona com todas as linguagens de programação do Visual Studio e com as bibliotecas associadas. Com o depurador, você pode interromper a execução para percorrer seu código e avaliar as variáveis em seu aplicativo.
   
 ## <a name="in-this-section"></a>Nesta seção  

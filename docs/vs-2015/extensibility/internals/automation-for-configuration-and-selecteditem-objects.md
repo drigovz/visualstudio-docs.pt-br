@@ -1,7 +1,7 @@
 ---
 title: Automação de configuração e objetos SelectedItem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 120377f1-51aa-4445-b2f7-06ab7fc2b47f
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9d5da07c4505aef38fbef22b8680a8c0914056a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 612916da7922900a1054d785dad86ed448aa1f12
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463986"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733463"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>Automação de configuração e objetos SelectedItem
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [automação de configuração e objetos SelectedItem](https://docs.microsoft.com/visualstudio/extensibility/internals/automation-for-configuration-and-selecteditem-objects).  
-  
 Você pode automatizar a compilação e os processos do item selecionado no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 ## <a name="automation-for-builds"></a>Automação de compilações  

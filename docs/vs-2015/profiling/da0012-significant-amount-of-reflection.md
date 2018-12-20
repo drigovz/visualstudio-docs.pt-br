@@ -1,7 +1,7 @@
 ---
 title: 'DA0012: volume significativo de reflexão | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ f1_keywords:
 - vs.performance.DA0011
 ms.assetid: c92a1d76-21fa-426e-8b1b-a3c08e9bcbca
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 458f1bc74d8660e640139bff2f379a66eafa2919
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cea0faef4a0ee46b2fba0ea5c5bbbcd91e43bfc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464271"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739515"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: volume significativo de reflexão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DA0012: volume significativo de reflexão](https://docs.microsoft.com/visualstudio/profiling/da0012-significant-amount-of-reflection).  
-  
 Id da regra | DA0012 |  
 | Categoria de |. Uso do .NET Framework |  
 | Métodos de criação de perfil | Amostragem |  

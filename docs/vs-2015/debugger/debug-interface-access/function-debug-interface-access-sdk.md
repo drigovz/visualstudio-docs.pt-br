@@ -1,7 +1,7 @@
 ---
 title: Função (Interface de acesso à depuração SDK) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - Function symbol
 ms.assetid: 458dc91c-b78b-4427-84f4-615d89e26760
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 746034fb646abf5c3bc4acad0fc865a8551c3778
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 21b618a01cd439c1176cea65d14dcc0c270f37d7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467690"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741564"
 ---
 # <a name="function-debug-interface-access-sdk"></a>Function (SDK de Acesso à Interface de Depuração)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [(Depurar SDK de acesso à Interface) da função](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/function-debug-interface-access-sdk).  
-  
 Cada função é identificada por um `SymTagFunction` símbolo.  
   
 ## <a name="properties"></a>Propriedades  

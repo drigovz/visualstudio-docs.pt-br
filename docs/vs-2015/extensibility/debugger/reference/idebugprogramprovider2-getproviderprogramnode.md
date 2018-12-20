@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramProvider2::GetProviderProgramNode | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,41 +17,39 @@ ms.assetid: e62e8e83-acbb-4c52-aedf-ffbd4670db29
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e3909a1f294818b0030d30c4059ee6e01d7fec6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f35b1822c2185080bb150aeaf4352135a61d2ef9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474558"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741480"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProgramProvider2::GetProviderProgramNode](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode).  
-  
 Recupera o nó de programa para um programa específico.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT GetProviderProgramNode(  
-   PROVIDER_FLAGS       Flags,  
-   IDebugDefaultPort2*  pPort,  
-   AD_PROCESS_ID        processId,  
-   REFGUID              guidEngine,  
-   UINT64               programId,  
-   IDebugProgramNode2** ppProgramNode  
+HRESULT GetProviderProgramNode(  
+   PROVIDER_FLAGS       Flags,  
+   IDebugDefaultPort2*  pPort,  
+   AD_PROCESS_ID        processId,  
+   REFGUID              guidEngine,  
+   UINT64               programId,  
+   IDebugProgramNode2** ppProgramNode  
 );  
 ```  
   
 ```csharp  
-int GetProviderProgramNode(  
-   enum_PROVIDER_FLAGS    Flags,  
-   IDebugDefaultPort2     pPort,  
-   AD_PROCESS_ID          ProcessId,  
-   ref Guid               guidEngine,  
-   ulong                  programId,  
-   out IDebugProgramNode2 ppProgramNode  
+int GetProviderProgramNode(  
+   enum_PROVIDER_FLAGS    Flags,  
+   IDebugDefaultPort2     pPort,  
+   AD_PROCESS_ID          ProcessId,  
+   ref Guid               guidEngine,  
+   ulong                  programId,  
+   out IDebugProgramNode2 ppProgramNode  
 );  
 ```  
   

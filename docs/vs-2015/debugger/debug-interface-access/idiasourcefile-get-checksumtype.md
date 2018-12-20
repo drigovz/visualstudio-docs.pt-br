@@ -1,7 +1,7 @@
 ---
 title: 'Idiasourcefile:: Get_checksumtype | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSourceFile::get_checksumType method
 ms.assetid: 4c363e61-a6a9-409a-9cc0-d06eb2bee645
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd51a553cab29ac7741eaa91ada356897551e12a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 374528b1e48077ba7cd4c1bc25a5cb6d1e87c661
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467858"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724824"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasourcefile:: Get_checksumtype](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasourcefile-get-checksumtype).  
-  
 Recupera o tipo de soma de verificação.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_checksumType (   
+HRESULT get_checksumType (   
    DWORD* pRetVal  
 );  
 ```  

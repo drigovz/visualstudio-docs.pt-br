@@ -1,7 +1,7 @@
 ---
 title: Criando perfis dos testes de carga do ASP.NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c3f5c363-be79-40b5-bfa7-db8d21378d8d
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78825dd76015df73f514e5adb0f3dffb6d60644d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99a2da342afa22f18841556de5e7ca290b13d42a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473339"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761662"
 ---
 # <a name="profiling-aspnet-load-tests"></a>Criando perfis dos testes de carga do ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [testes de carga do ASP.NET de criação de perfil](https://docs.microsoft.com/visualstudio/profiling/profiling-aspnet-load-tests).  
-  
 Você pode coletar dados de criação de perfil de testes da Web [!INCLUDE[TCMext](../includes/tcmext-md.md)] automatizados executados em projetos de sites da Web ASP.NET. Você pode coletar dados de amostragem e interação entre camadas. Para mais informações, consulte os seguintes tópicos:  
   
  [(NIB) Como executar uma sessão de desempenho em um aplicativo Web do Editor de Testes de Desempenho Web](http://msdn.microsoft.com/en-us/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)  

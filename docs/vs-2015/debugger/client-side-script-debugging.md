@@ -1,7 +1,7 @@
 ---
 title: Depuração de Script do lado do cliente | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ helpviewer_keywords:
 - client-side scripts, debugging
 ms.assetid: bb668527-2288-47bd-a6c8-cecbad76dde2
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1b5ef2f9640922b1379d30979519761ca009e1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3aa04ab77b6e3dc6264a517c83c4ed319f36d686
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468114"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817796"
 ---
 # <a name="client-side-script-debugging"></a>Depuração de script do lado do cliente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depuração de Script do lado do cliente](https://docs.microsoft.com/visualstudio/debugger/client-side-script-debugging).  
-  
 O depurador do Visual Studio fornece um ambiente de depuração abrangente para localizar e corrigir erros em scripts do lado do cliente em páginas ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Abrindo Documentos de Script  
@@ -49,17 +47,17 @@ O depurador do Visual Studio fornece um ambiente de depuração abrangente para 
   
  O depurador é anexado automaticamente ao script quando uma das situações ocorrer:  
   
--   Você atinge um conjunto de pontos de interrupção no script.  
+- Você atinge um conjunto de pontos de interrupção no script.  
   
--   Você atinge uma declaração de `Stop` do VBScript ou uma declaração de `debugger` do JScript no seu código de script.  
+- Você atinge uma declaração de `Stop` do VBScript ou uma declaração de `debugger` do JScript no seu código de script.  
   
--   O navegador ou servidor encontra um erro de sintaxe ou de tempo de execução em seu script. Quando isso ocorre, uma caixa de diálogo aparecerá e terá a opção de iniciar a depuração.  
+- O navegador ou servidor encontra um erro de sintaxe ou de tempo de execução em seu script. Quando isso ocorre, uma caixa de diálogo aparecerá e terá a opção de iniciar a depuração.  
   
- Ao anexar manualmente ao script, o processo de script continuará a ser executado até que seja paralisado de alguma maneira. Você pode interromper escolhendo **quebrar** na **depurar** menu.  
+  Ao anexar manualmente ao script, o processo de script continuará a ser executado até que seja paralisado de alguma maneira. Você pode interromper escolhendo **quebrar** na **depurar** menu.  
   
- Quando o depurador é anexado automaticamente, a execução de script é interrompida na linha onde o ponto de interrupção, instrução de `Stop` ou de `debugger`, ou erro ocorreu, ou no ponto onde você escolher para iniciar a depuração no Internet Explorer.  
+  Quando o depurador é anexado automaticamente, a execução de script é interrompida na linha onde o ponto de interrupção, instrução de `Stop` ou de `debugger`, ou erro ocorreu, ou no ponto onde você escolher para iniciar a depuração no Internet Explorer.  
   
- Nesse ponto, você pode usar recursos normais do depurador para iniciar a depuração. Por exemplo, você pode usar **etapa** comandos para continuar a executar seu código linha por linha. Você pode usar o **pilha de chamadas** janela para exibir e controlar o fluxo do script. Você pode usar as janelas variáveis ou **imediato** janela para exibir ou alterar as propriedades e variáveis.  
+  Nesse ponto, você pode usar recursos normais do depurador para iniciar a depuração. Por exemplo, você pode usar **etapa** comandos para continuar a executar seu código linha por linha. Você pode usar o **pilha de chamadas** janela para exibir e controlar o fluxo do script. Você pode usar as janelas variáveis ou **imediato** janela para exibir ou alterar as propriedades e variáveis.  
   
 ## <a name="enhanced-error-messages-for-script-debugging"></a>Mensagens de erro aprimoradas para depuração de scripts  
  Visual Studio fornece mensagens de erro aprimoradas para problemas de depuração de script comuns. Essas mensagens não aparecem a menos que você anexe ao Internet Explorer manualmente. Se você encontrar uma condição de erro quando o Internet Explorer for aberto automaticamente, tente anexar de forma manual para poder ver as mensagens de erro.  

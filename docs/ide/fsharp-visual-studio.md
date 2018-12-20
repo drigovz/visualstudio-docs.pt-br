@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 938beef8676901c385ef7cc7c07b9ce0d52067c3
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 4512a6ad5efe519c203a764b18cdfc352ed6e81a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921425"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Desenvolver com o Visual F# no Visual Studio
 
@@ -61,7 +61,7 @@ A seguinte tabela resume os recursos nas propriedades do projeto para o F#:
 O **Designer de Projeto** consiste no agrupamento de várias páginas de propriedades do projeto por funcionalidade relacionada. As páginas disponíveis para projetos do F# são, principalmente, um subconjunto daquelas disponíveis para outras linguagens e são descritas na tabela a seguir. Links são fornecidos para a página correspondente do **Designer de Projeto** do C#.
 
 |Página do Designer de Projeto|Links relacionados|Descrição|
-|---------------------|-------------|-----------|
+| - |-------------|-----------|
 |Aplicativo|[Página Aplicativo, Designer de Projeto](reference/application-page-project-designer-csharp.md)|Permite que você especifique configurações e propriedades no nível do aplicativo, como se estivesse criando uma biblioteca ou um arquivo executável, qual é a versão de destino do .NET Framework para o aplicativo e informações sobre o local de armazenamento dos arquivos de recurso usados pelo aplicativo.|
 |Build|[Página de build, Designer de Projeto](reference/build-page-project-designer-csharp.md)|Permite que você controle como o código é compilado.|
 |Compilar Eventos|[Página Eventos de Build, Designer de Projeto](reference/build-events-page-project-designer-csharp.md)|Permite que você especifique os comandos a serem executados antes ou depois de uma compilação.|
@@ -75,7 +75,7 @@ O **Designer de Projeto** consiste no agrupamento de várias páginas de proprie
 A seguinte tabela resume as configurações específicas do F#:
 
 |Página do Designer de Projeto|Configuração|Descrição|
-|---------------------|-------|-----------|
+| - |-------|-----------|
 |Build|Gerar chamadas da parte final|Se ela estiver selecionada, habilitará o uso da instrução MSIL (Microsoft Intermediate Language) da parte final. Isso faz com que o registro de ativação seja reutilizado para funções recursivas da parte final. Equivalente à opção do compilador `--tailcalls`.|
 |Build|Outros sinalizadores|Permite que você especifique opções adicionais de linha de comando do compilador.|
 
@@ -118,7 +118,7 @@ A seguinte tabela resume os recursos do IntelliSense compatíveis e não compat�
 |Recurso|Descrição|Compatível com o F#?|
 |-------|-----------|----------------|
 |Implementar interfaces automaticamente|Gera os stubs de código para os métodos de interface.|Sim|
-|Trechos de código|Injeta o código de uma biblioteca de constructos de codificação comuns em tópicos.|Não|
+|Snippets de código|Injeta o código de uma biblioteca de constructos de codificação comuns em tópicos.|Não|
 |Completar Palavra|Economiza tempo de digitação preenchendo palavras e nomes conforme você digita.|Sim|
 |Conclusão automática|Quando essa opção está habilitada, faz com que o preenchimento de palavras selecione a primeira correspondência conforme você digita, em vez de esperar que você selecione uma opção ou pressione **Ctrl**+**Espaço**.|Sim|
 |Oferecer preenchimento para símbolos em namespaces não abertos|Com o preenchimento automático, um símbolo correspondente que reside em um namespace não aberto é sugerido, oferecendo o preenchimento com a instrução `open` correspondente, quando selecionado.|Sim|

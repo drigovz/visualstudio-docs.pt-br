@@ -1,7 +1,7 @@
 ---
 title: Gerenciando assinatura de assembly e de manifesto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 76ab4cc115f8c9f052f48c6e0dccd06693ddb970
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 831fb08941e16abdb197d3a25e71f2a20fcb14cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909673"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Gerenciando Assinatura de Assembly e Manifesto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Gerenciando assinatura de Assembly e manifesto](https://docs.microsoft.com/visualstudio/ide/managing-assembly-and-manifest-signing).  
-  
 A assinatura de nome forte fornece a um componente de software uma identidade global exclusiva. Nomes fortes são usados para assegurar que o assembly não pode ser falsificado por outra pessoa e para assegurar que dependências do componente e instruções de configuração são mapeadas para o componente e a versão do componente corretos.  
   
  Um nome forte consiste na identidade do assembly (nome de texto simples, número de versão e informações de cultura), além de um token de chave pública e uma assinatura digital.  
@@ -42,23 +40,23 @@ A assinatura de nome forte fornece a um componente de software uma identidade gl
 ## <a name="asset-types-and-signing"></a>Tipos de ativos e assinatura  
  É possível assinar manifestos de assemblies e do aplicativo do .NET. Eles incluem o seguinte:  
   
--   executáveis (.exe)  
+- executáveis (.exe)  
   
--   manifestos do aplicativo (.exe.manifest)  
+- manifestos do aplicativo (.exe.manifest)  
   
--   manifestos de implantação (.application)  
+- manifestos de implantação (.application)  
   
--   assemblies com componentes compartilhados (.dll)  
+- assemblies com componentes compartilhados (.dll)  
   
- É necessário assinar os seguintes tipos de ativo:  
+  É necessário assinar os seguintes tipos de ativo:  
   
-1.  assemblies, se você desejar implantá-los no GAC (cache de assembly global).  
+1. assemblies, se você desejar implantá-los no GAC (cache de assembly global).  
   
-2.  manifestos do aplicativo e de implantação [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. O Visual Studio permite a assinatura por padrão desses aplicativos.  
+2. manifestos do aplicativo e de implantação [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. O Visual Studio permite a assinatura por padrão desses aplicativos.  
   
-3.  Assemblies de interoperabilidade primários, que são usados para a interoperabilidade COM. O utilitário TLBIMP impõe uma nomenclatura forte ao criar um assembly de interoperabilidade primário com base em uma biblioteca de tipos COM.  
+3. Assemblies de interoperabilidade primários, que são usados para a interoperabilidade COM. O utilitário TLBIMP impõe uma nomenclatura forte ao criar um assembly de interoperabilidade primário com base em uma biblioteca de tipos COM.  
   
- Em geral, não se deve assinar executáveis. Um componente de nome forte não pode referenciar um componente que não tem um nome forte implantado com o aplicativo. O Visual Studio não assina executáveis do aplicativo, mas em vez disso, assina o manifesto do aplicativo, que aponta para o executável de nome fraco. Em geral, você deve evitar a assinatura de componentes privados ao aplicativo, pois sua assinatura pode dificultar o gerenciamento de dependências.  
+   Em geral, não se deve assinar executáveis. Um componente de nome forte não pode referenciar um componente que não tem um nome forte implantado com o aplicativo. O Visual Studio não assina executáveis do aplicativo, mas em vez disso, assina o manifesto do aplicativo, que aponta para o executável de nome fraco. Em geral, você deve evitar a assinatura de componentes privados ao aplicativo, pois sua assinatura pode dificultar o gerenciamento de dependências.  
   
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Como assinar um assembly no Visual Studio  
  Assine um aplicativo ou componente usando a guia **Assinatura** da janela Propriedades do projeto (clique com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecione **Propriedades**, digite **propriedades do projeto** na janela **Início Rápido** ou pressione ALT+ENTER na janela **Gerenciador de Soluções**). Selecione a guia **Assinatura** e, em seguida, marque a caixa de seleção **Assinar o assembly**.  

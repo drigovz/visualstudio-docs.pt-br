@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplierLocale2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 910e7220-da2a-4339-9fff-9fb1bad3c28c
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f1afac07a30b026fda824284f201b86b95709f2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8849a3045a421f1e10a5f7a96c86f08345cbe8b5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476115"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751784"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPortSupplierLocale2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportsupplierlocale2).  
-  
 Fornece suporte à localidade para um fornecedor de porta.  
   
 ## <a name="syntax"></a>Sintaxe  

@@ -1,7 +1,7 @@
 ---
 title: Comandos de Menu de pesquisa | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - Search menu commands
 ms.assetid: f36dff9a-49ef-46ce-8c9a-76246458c0d0
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4781251bb367c06424979d053ec795316f1d817c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5e674130cb2779c9a5e76aeaa0942a748d02f1ac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466595"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756691"
 ---
 # <a name="search-menu-commands"></a>Comandos do menu Pesquisa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [comandos do Menu pesquisa](https://docs.microsoft.com/visualstudio/debugger/search-menu-commands).  
-  
 O **pesquisa** menu fornece comandos para pesquisar específicos do windows.  
   
  **Encontrar janela/processo/Thread/mensagem**  

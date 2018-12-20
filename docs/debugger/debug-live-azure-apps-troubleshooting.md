@@ -1,5 +1,6 @@
 ---
-title: Solução de problemas e problemas conhecidos para depuração de instantâneo | Microsoft Docs
+title: Solucionando problemas de depuração de instantâneo | Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/07/2017
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5b5eeefe2bbed542ef18689fd7e16073174bd3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 82d8a310b86d5dc3c776243293a91f176025f897
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284101"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059821"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Solução de problemas e problemas conhecidos para instantâneo de depuração no Visual Studio
 
@@ -32,7 +33,7 @@ Siga estas etapas:
 
 1. Verifique se que você tem a mesma versão do código-fonte que foi usado para criar e implantar seu app.isua1. Verifique se que você estiver carregando os símbolos corretos para sua implantação. Para fazer isso, exiba a **módulos** janela durante a depuração de instantâneo e verifique se a coluna do arquivo de símbolo mostra um arquivo. PDB carregado para o módulo que você está depurando. O depurador de instantâneos tentará baixar automaticamente e usar os símbolos para a sua implantação.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: Os símbolos não são carregados quando eu abro um instantâneo
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: Símbolos não são carregados quando eu abro um instantâneo
 
 Se você vir a janela a seguir, os símbolos não foram carregado.
 
@@ -48,14 +49,14 @@ Siga estas etapas:
 
 - Como alternativa, se sua organização usa um servidor de símbolos ou descarta os símbolos em um caminho diferente, use as configurações de símbolo para carregar os símbolos corretos para sua implantação.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problema: não consigo ver a opção "Anexar depurador de instantâneos" no Gerenciador de nuvem
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problema: Não consigo ver a opção "Anexar depurador de instantâneos" no Gerenciador de nuvem
 
 Siga estas etapas:
 
 - Verifique se que o componente do depurador de instantâneos está instalado. Abra o instalador do Visual Studio e verifique as **depurador de instantâneo** componente na carga de trabalho do Azure.
 - Verifique se que seu aplicativo tem suporte. Atualmente, somente o ASP.NET (4.6.1+) e há suporte para aplicativos ASP.NET Core (2.0 +) implantados nos serviços de aplicativo do Azure.
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema: vejo apenas limitada instantâneos nas ferramentas de diagnóstico
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema: Vejo apenas limitada instantâneos nas ferramentas de diagnóstico
 
 ![Snappoint restrito](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "limitadas snappoint")
 

@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_localbasepointerregisterid | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_localBasePointerRegisterId method
 ms.assetid: 9cbcaf00-9ace-45e1-b164-7a9439e08083
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b3fa367e832158100fced703b027721448e1500
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9c3bf9602f89b61de7b759896d16cd2a0cd367b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463019"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802324"
 ---
 # <a name="idiasymbolgetlocalbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_localbasepointerregisterid](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-localbasepointerregisterid).  
-  
 Recupera a ID do registro que contém um ponteiro de base para as variáveis locais na pilha. Usado quando o [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) é definido como `SymTagFunction`.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_localBasePointerRegisterId (   
+HRESULT get_localBasePointerRegisterId (   
    DWORD* pRetVal  
 );  
 ```  

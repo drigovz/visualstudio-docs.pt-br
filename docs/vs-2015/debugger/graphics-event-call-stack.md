@@ -1,7 +1,7 @@
 ---
 title: Pilha de chamadas do evento de gráficos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ f1_keywords:
 - vs.graphics.callstack
 ms.assetid: 8a30168d-8b39-4de1-b094-c7356ba101a3
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d866e63ecffbed5cd5e9a9e477f99fbd8e8c3fc9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7c6ac7860fe846c86d846fd668c4647cd4145756
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466114"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762845"
 ---
 # <a name="graphics-event-call-stack"></a>Pilha de chamadas de gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [pilha de chamadas do evento de gráficos](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-event-call-stack).  
-  
 A pilha de chamadas do evento de gráficos no analisador de gráficos do Visual Studio o ajuda a mapear a relação entre eventos de gráficos problemático e código-fonte do seu aplicativo.  
   
  Esta é a janela de pilha de chamadas do evento:  

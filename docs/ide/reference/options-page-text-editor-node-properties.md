@@ -13,23 +13,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8acd51675aaca979a1dce0edddb9d7d937422d49
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e16bdece503babe9a50bc83d64da582d390843b6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177806"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670813"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Página de Propriedades, Editor de Texto, Propriedades do Nó
 Este documento descreve algumas páginas (ou coleções de propriedades) associadas à categoria **Editor de Texto**, `DTE.Properties("TextEditor", <Property Page>)`, da caixa de diálogo **Opções**. O título de cada subseção é a chamada que é usada para acessar a coleção `Properties` e a tabela em cada subseção lista as propriedades na coleção.
 
- As macros do Visual Basic em [Controlando as configurações de opções](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d) demonstram como exibir as opções atuais e seus valores para cada página da caixa de diálogo **Opções**.
+ As macros do Visual Basic em [Controlando as configurações de opções](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d) demonstram como exibir as opções atuais e seus valores para cada página da caixa de diálogo **Opções**.
 
 ## <a name="general"></a>Geral
  `DTE.Properties("TextEditor", "General")`
 
 |Nome do item de propriedade|Valor|Descrição|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (Booliano)|Se `True`, pressionar escape enquanto houver uma coleção fará com que o ponto de inserção seja movido para onde a ação que criou a seleção foi iniciada. `False` move o ponto de inserção para outra extremidade da seleção.|
 |DragNDropTextEditing|Get/Set (Booliano)|Determina se você pode arrastar uma região de texto selecionada de um local para outro no documento para copiar ou recortar/colar operações.|
 |HorizontalScrollBar|Get/Set (Booliano)|Determina se há uma barra de rolagem horizontal nas janelas do editor.|
@@ -48,7 +48,7 @@ Este documento descreve algumas páginas (ou coleções de propriedades) associa
  As opções do editor de `PlainText` afetam as configurações do editor quando os arquivos de texto são editados. Cada linguagem de programação e pacote do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tem suas próprias configurações específicas do **Editor de Texto**. Por exemplo, para exibir ou alterar as configurações de editor do [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], use `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Para as configurações de editor do **SQL Script**, use `DTE.Properties("TextEditor", "SQL ")`.
 
 |Nome do item de propriedade|Valor|Descrição|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |AutoListMembers|Get/Set (Booliano)|Determina se uma lista de membros disponível é exibida automaticamente quando um usuário digita um ponto depois de uma referência de variável.|
 |AutoListParams|Get/Set (Booliano)|Determina se uma descrição de uma lista de argumentos é exibida automaticamente quando o usuário digita um "(" depois de um nome de função.|
 |HideAdvancedMembers|Get/Set (Booliano)|Determina se o preenchimento de declaração lista todos os membros ou apenas os usados frequentemente.|
@@ -66,7 +66,7 @@ Este documento descreve algumas páginas (ou coleções de propriedades) associa
 
 ## <a name="see-also"></a>Consulte também
 
-- [Controlando as configurações de opções](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [Determinando os nomes dos itens de propriedade nas páginas de opções](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Controlando as configurações de opções](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Determinando os nomes dos itens de propriedade nas páginas de opções](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Página de Opções, Propriedades do Nó de Ambiente](../../ide/reference/options-page-environment-node-properties.md)
 - [Página de Opções, Propriedades do Nó de Fontes e Cores](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

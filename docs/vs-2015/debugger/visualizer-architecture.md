@@ -1,7 +1,7 @@
 ---
 title: Arquitetura do Visualizador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,30 +16,28 @@ dev_langs:
 - C++
 ms.assetid: 6aad395f-7170-4d9e-b2b8-a5faf453380e
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 086877250d513d8f8b033c9085bd1ff80ce3fa87
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7a3255b8e8b91f074308a0238719f26af6cf665
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467123"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736159"
 ---
 # <a name="visualizer-architecture"></a>Arquitetura do visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [arquitetura do visualizador](https://docs.microsoft.com/visualstudio/debugger/visualizer-architecture).  
-  
 A arquitetura de um visualizador de depurador tem duas partes:  
   
--   O *do lado do depurador* é executado dentro do depurador do Visual Studio. O código do lado depurador cria e exibe a interface do usuário para o visualizador.  
+- O *do lado do depurador* é executado dentro do depurador do Visual Studio. O código do lado depurador cria e exibe a interface do usuário para o visualizador.  
   
--   O *lado a ser depurado* é executado dentro do processo de depuração do Visual Studio (o *ser depurado*).  
+- O *lado a ser depurado* é executado dentro do processo de depuração do Visual Studio (o *ser depurado*).  
   
- Um visualizador é um componente do depurador que permite que o depurador exiba (*visualizar*) o conteúdo de um objeto de dados em um formato significativo e legível. Alguns visualizadores também dão suporte à edição do objeto de dados. Ao escrever visualizadores personalizados, você poderá estender o depurador para lidar com seus próprios tipos de dados personalizados.  
+  Um visualizador é um componente do depurador que permite que o depurador exiba (*visualizar*) o conteúdo de um objeto de dados em um formato significativo e legível. Alguns visualizadores também dão suporte à edição do objeto de dados. Ao escrever visualizadores personalizados, você poderá estender o depurador para lidar com seus próprios tipos de dados personalizados.  
   
- O objeto de dados a ser visualizado reside no processo que você está depurando (o *lado a ser depurado* processo). A interface do usuário que exibirá os dados é criada no processo a ser depurado do Visual Studio:  
+  O objeto de dados a ser visualizado reside no processo que você está depurando (o *lado a ser depurado* processo). A interface do usuário que exibirá os dados é criada no processo a ser depurado do Visual Studio:  
   
 |Processo do depurador|Processo a ser depurado|  
 |----------------------|----------------------|  

@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d1d2ea051097f297c3fdeb07d166cbbc182a4c99
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859998"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967279"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validar o código com diagramas de dependência
 
@@ -115,41 +115,41 @@ Se você tiver um diagrama de dependência aberto que esteja vinculado a itens d
 
 ### <a name="validate-code-at-the-command-prompt"></a>Validar o código no prompt de comando
 
-1.  Abra o prompt de comando do Visual Studio.
+1. Abra o prompt de comando do Visual Studio.
 
-2.  Escolha uma das seguintes opções:
+2. Escolha uma das seguintes opções:
 
-    - Para validar o código em um projeto de modelagem específico na solução, execute MSBuild com a seguinte propriedade personalizada.
+   - Para validar o código em um projeto de modelagem específico na solução, execute MSBuild com a seguinte propriedade personalizada.
 
-        ```
-        msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
+       ```
 
-         - ou –
+     - ou –
 
-         Navegue até a pasta que contém o projeto de modelagem (. modelproj) o arquivo e a dependência de diagrama e, em seguida, executar o MSBuild com a seguinte propriedade personalizada:
+       Navegue até a pasta que contém o projeto de modelagem (. modelproj) o arquivo e a dependência de diagrama e, em seguida, executar o MSBuild com a seguinte propriedade personalizada:
 
-        ```
-        msbuild /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild /p:ValidateArchitecture=true
+       ```
 
-    - Para validar o código em todos os projetos de modelagem na solução, execute MSBuild com a seguinte propriedade personalizada:
+   - Para validar o código em todos os projetos de modelagem na solução, execute MSBuild com a seguinte propriedade personalizada:
 
-        ```
-        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
+       ```
 
-         - ou –
+     - ou –
 
-         Navegue até a pasta de solução, que deve conter um projeto de modelagem que contém um diagrama de dependência e, em seguida, executar o MSBuild com a seguinte propriedade personalizada:
+       Navegue até a pasta de solução, que deve conter um projeto de modelagem que contém um diagrama de dependência e, em seguida, executar o MSBuild com a seguinte propriedade personalizada:
 
-        ```
-        msbuild /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild /p:ValidateArchitecture=true
+       ```
 
      Todos os erros ocorridos serão listados. Para obter mais informações sobre o MSBuild, consulte [MSBuild](../msbuild/msbuild.md) e [tarefa MSBuild](../msbuild/msbuild-task.md).
 
- Para obter mais informações sobre erros de validação, consulte [compreender e resolver erros de validação de camada](#UnderstandingValidationErrors).
+   Para obter mais informações sobre erros de validação, consulte [compreender e resolver erros de validação de camada](#UnderstandingValidationErrors).
 
 ### <a name="manage-validation-errors"></a>Gerenciar erros na validação
 
@@ -165,7 +165,7 @@ Durante o processo de desenvolvimento, você talvez queira suprimir alguns dos c
 Use essas tarefas para gerenciar erros de validação na **Error List** janela:
 
 |**To**|**Siga estas etapas**|
-|------------|----------------------------|
+|-|-|
 |Suprimir erros selecionados durante a validação|Clique em um ou vários erros selecionados, aponte para **gerenciar erros de validação**e, em seguida, clique em **suprimir erros**.<br /><br /> Os erros suprimidos são exibidos com formatação de tachado. Quando você executar a validação da próxima vez, esses erros não serão exibidos.<br /><br /> Erros suprimidos são acompanhados em um arquivo. suppressions para o arquivo de diagrama de dependência correspondente.|
 |Parar a supressão de erros selecionados|Clique com botão direito o erros ou erros suprimidos selecionados, aponte para **gerenciar erros de validação**e, em seguida, clique em **parar de suprimir erros**.<br /><br /> Os erros suprimidos selecionados serão exibidos quando você executar a validação na próxima vez.|
 |Restaurar todos os erros suprimidos na **Error List** janela|Clique com botão direito em qualquer lugar na **lista de erros** janela, aponte para **gerenciar erros de validação**e, em seguida, clique em **Mostrar todos os erros suprimidos**.|
@@ -173,7 +173,7 @@ Use essas tarefas para gerenciar erros de validação na **Error List** janela:
 
 ## <a name="validate-code-automatically"></a>Validar código automaticamente
 
-É possível executar a validação da camada sempre que você executa uma compilação local. Se sua equipe usa DevOps do Azure, você pode executar a validação de camada com check-ins, que você pode especificar criando uma tarefa MSBuild personalizada e usar relatórios de compilação para coletar erros de validação. Para criar compilações de check-in, consulte [usar um processo de compilação de check-in para validar alterações](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+É possível executar a validação da camada sempre que você executa uma compilação local. Se sua equipe usa DevOps do Azure, você pode executar a validação de camada com check-ins, que você pode especificar criando uma tarefa MSBuild personalizada e usar relatórios de compilação para coletar erros de validação. Para criar compilações de check-in, consulte [TFVC check-in restringido](/azure/devops/pipelines/build/triggers#gated).
 
 ### <a name="to-validate-code-automatically-during-a-local-build"></a>Para validar automaticamente o código durante uma compilação local
 
@@ -204,7 +204,7 @@ Para gerenciar erros na janela lista de erros, consulte [gerenciar erros de vali
 A tabela a seguir descreve problemas na validação da camada e sua resolução. Esses problemas são diferentes dos erros resultantes de conflitos entre o código e o design. Para obter mais informações sobre esses erros, consulte [compreender e resolver erros de validação de camada](#UnderstandingValidationErrors).
 
 |**Problema**|**Possível causa**|**Resolução**|
-|---------------|------------------------|--------------------|
+|-|-|-|
 |Os erros de validação não ocorrem como esperado.|A validação não funciona em diagramas de dependência que são copiados de outros diagramas de dependência no Gerenciador de soluções e que estão no mesmo projeto de modelagem. diagramas de dependência são copiados dessa maneira contêm as mesmas referências que o diagrama de dependência original.|Adicione um novo diagrama de dependência ao projeto de modelagem.<br /><br /> Copie os elementos do diagrama de dependência de origem para o novo diagrama.|
 
 ## <a name="resolve-layer-validation-errors"></a>Resolver erros de validação de camada
@@ -220,23 +220,23 @@ Para resolver esses erros, atualize o código até que mais nenhum erro seja exi
 A seção a seguir descreve a sintaxe usada nesses erros, explica o significado desses erros e sugere o que é possível fazer para o resolver ou gerenciá-los.
 
 |**Sintaxe**|**Descrição**|
-|----------------|---------------------|
+|-|-|
 |*ArtifactN*(*ArtifactTypeN*)|*{1&gt;artefaton&lt;1* é um artefato associado uma camada no diagrama de dependência.<br /><br /> *1&gt;tipoartefaton&lt;1* é o tipo de *2&gt;artefaton&lt;2*, como um **classe** ou **método**, por exemplo:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|O nome de um namespace.|
 |*LayerNameN*|O nome de uma camada no diagrama de dependência.|
 |*Tipodependência*|O tipo de relação de dependência entre *artefato1* e *artefato2*. Por exemplo, *artefato1* tem um **chamadas** relação com *artefato2*.|
 
-|**Erro de sintaxe**|**Descrição do erro**|
-|----------------------|---------------------------|
-|DV0001: **dependência inválida**|Esse problema é relatado quando um elemento de código (namespace, tipo, membro) mapeada para referências de uma camada um elemento de código mapeado para outra camada, mas não há nenhuma seta de dependência entre essas camadas no diagrama de validação de dependência que contém esse camadas. Essa é uma violação de restrição de dependência.|
-|DV1001: **nome de namespace inválido**|Esse problema é relatado em um elemento de código associado a uma camada que a propriedade "Permitidos em nomes de Namespace" não contém o namespace no qual este elemento de código é definido. Isso é uma violação de restrição de nomenclatura. Observe que a sintaxe de "Permitidos em nomes de Namespace" deve ser uma lista de ponto e vírgula de namespaces na qual o código elementos associados são camada são podem ser definidos.|
-|DV1002: **dependência no namespace não referenciáveis**|Esse problema é relatado em um elemento de código associado a uma camada e fazendo referência a outro elemento de código definido em um namespace que é definido na propriedade "Namespace não Referenciáveis" da camada. Isso é uma violação de restrição de nomenclatura. Observe que a propriedade "Namespaces não Referenciáveis" é definida como uma lista de ponto e vírgula separada de namespaces que não devem ser referenciados em elementos de código associados a essa camada.|
-|DV1003: **nome do namespace não permitido**|Esse problema é relatado em um elemento de código associado a uma camada que a propriedade "Não permitidos em nomes de Namespace" contém o namespace no qual este elemento de código é definido. Isso é uma violação de restrição de nomenclatura. Observe que a propriedade "Nome do namespace não permitido" é definida como uma lista separada por dois pontos de namespaces na qual o código elementos associados a essa camada não devem ser definidos.|
-|DV3001: **Link ausente**|Camada '*Nomecamada*'contém links para'*artefato*' que não foi encontrado. Você não tem uma referência de assembly?|*{1&gt;nomecamada&lt;1* links para um artefato que não pode ser encontrado. Por exemplo, um link para uma classe talvez não seja encontrado porque o projeto de modelagem não tem uma referência para o assembly que contém a classe.|
-|DV9001: **análise arquitetônica encontrou erros internos**|Os resultados talvez não estejam completos. Para obter mais informações, consulte o log de eventos da compilação detalhado ou a janela de saída.|Consulte o log de eventos da compilação ou a janela de saída para obter mais detalhes.|
+| **Erro de sintaxe** | **Descrição do erro** |
+|-|-|
+| DV0001: **dependência inválida** | Esse problema é relatado quando um elemento de código (namespace, tipo, membro) mapeada para referências de uma camada um elemento de código mapeado para outra camada, mas não há nenhuma seta de dependência entre essas camadas no diagrama de validação de dependência que contém esse camadas. Essa é uma violação de restrição de dependência. |
+| DV1001: **nome de namespace inválido** | Esse problema é relatado em um elemento de código associado a uma camada que a propriedade "Permitidos em nomes de Namespace" não contém o namespace no qual este elemento de código é definido. Isso é uma violação de restrição de nomenclatura. Observe que a sintaxe de "Permitidos em nomes de Namespace" deve ser uma lista de ponto e vírgula de namespaces na qual o código elementos associados são camada são podem ser definidos. |
+| DV1002: **dependência no namespace não referenciáveis** | Esse problema é relatado em um elemento de código associado a uma camada e fazendo referência a outro elemento de código definido em um namespace que é definido na propriedade "Namespace não Referenciáveis" da camada. Isso é uma violação de restrição de nomenclatura. Observe que a propriedade "Namespaces não Referenciáveis" é definida como uma lista de ponto e vírgula separada de namespaces que não devem ser referenciados em elementos de código associados a essa camada. |
+| DV1003: **nome do namespace não permitido** | Esse problema é relatado em um elemento de código associado a uma camada que a propriedade "Não permitidos em nomes de Namespace" contém o namespace no qual este elemento de código é definido. Isso é uma violação de restrição de nomenclatura. Observe que a propriedade "Nome do namespace não permitido" é definida como uma lista separada por dois pontos de namespaces na qual o código elementos associados a essa camada não devem ser definidos. |
+| DV3001: **Link ausente** | Camada '*Nomecamada*'contém links para'*artefato*' que não foi encontrado. Você não tem uma referência de assembly? |
+| DV9001: **análise arquitetônica encontrou erros internos** | Os resultados talvez não estejam completos. Para obter mais informações, consulte o log de eventos da compilação detalhado ou a janela de saída. |
 
 ## <a name="see-also"></a>Consulte também
 
-- [Validação de dependência dinâmica no Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
+- [Validação de dependência dinâmica no Visual Studio 2017](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
 - [Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)
 - [Vídeo: Validar suas dependências de arquitetura em tempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

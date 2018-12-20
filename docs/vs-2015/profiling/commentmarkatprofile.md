@@ -1,7 +1,7 @@
 ---
 title: CommentMarkAtProfile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,27 +14,25 @@ helpviewer_keywords:
 - CommentMarkAtProfileA
 ms.assetid: 04294ca3-bf9c-4c76-86f1-898c2140de27
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1c31f1e482425c7eec3a5758213f8e5e9094fd9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b65b7067dee996f7b50cb98345c2777fc6224df3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463991"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805178"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [CommentMarkAtProfile](https://docs.microsoft.com/visualstudio/profiling/commentmarkatprofile).  
-  
 O método `CommentMarkAtProfile` insere um valor de carimbo de data/hora, uma marca numérica e uma cadeia de caracteres de comentário no arquivo .vsp. O valor de carimbo de data/hora pode ser usado para sincronizar os eventos externos. Para que a marcação e o comentário sejam inseridos, a criação de perfil para o thread que contém a função CommentMarkAtProfile deve ser ON.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (  
+PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (  
                                    __int64 dnTimestamp,  
                                    long lMarker,  
                                    LPCTSTR szComment);  

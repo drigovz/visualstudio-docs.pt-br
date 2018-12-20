@@ -1,7 +1,7 @@
 ---
 title: Protegendo aplicativos ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 247ebd5a68f4bb3936d9b67779f7d67d0a1ccf85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae5bd70a675798d971cb184038a7e036d04fc95a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475828"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247215"
 ---
 # <a name="securing-clickonce-applications"></a>Protegendo aplicativos ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Protegendo aplicativos ClickOnce](https://docs.microsoft.com/visualstudio/deployment/securing-clickonce-applications).  
-  
 Os aplicativos [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] estão sujeitos às restrições de segurança de acesso a código no .NET Framework para ajudar a limitar o acesso que o código tem a recursos e operações protegidos. Por esse motivo, é importante compreender as implicações de segurança de acesso a código para desenvolver seus aplicativos [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] adequadamente. Seus aplicativos podem usar o modo Confiança Total ou zonas parciais, como as zonas da Internet e intranet, para limitar o acesso.  
   
  Além disso, o ClickOnce usa certificados para verificar a autenticidade do editor do aplicativo e assinar os manifestos do aplicativo e de implantação para provar que os arquivos não foram violados. Assinar é uma etapa opcional, o que facilita alterar os arquivos do aplicativo depois que os manifestos são gerados. No entanto, sem manifestos assinados, é difícil assegurar que o instalador do aplicativo não seja violado em ataques de segurança a intermediários. Por isso, recomendamos assinar seus manifestos do aplicativo e de implantação para ajudar a proteger seus aplicativos.  

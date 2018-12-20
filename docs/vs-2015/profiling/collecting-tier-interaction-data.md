@@ -1,7 +1,7 @@
 ---
 title: Coletando dados de interação de camada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,21 +18,19 @@ helpviewer_keywords:
 - ADO.NET performance profiling
 ms.assetid: 47a944c2-3098-497c-8fc7-e1f43d750bbc
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c2c3b8d9aa9f7f6b8afc801841def0e1e2e6ec4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 31e2d46992b48b987966bac7d7dc68787f4016c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474976"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761183"
 ---
 # <a name="collecting-tier-interaction-data"></a>Coletando dados de interação entre camadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [coletando dados de interação de camadas](https://docs.microsoft.com/visualstudio/profiling/collecting-tier-interaction-data).  
-  
 A criação de perfil de interação de camadas fornece informações adicionais sobre os tempos de execução de funções de aplicativos de várias camadas que se comunicam com os bancos de dados por meio de serviços do ADO.NET. Os dados são coletados apenas para chamadas de função síncronas.  
   
  **Edições do Visual Studio**  

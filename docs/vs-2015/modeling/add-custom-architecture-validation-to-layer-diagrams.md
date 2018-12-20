@@ -1,7 +1,7 @@
 ---
 title: Adicionar validação de arquitetura personalizada a diagramas de camada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ helpviewer_keywords:
 - layer diagrams, adding custom validation
 ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
 caps.latest.revision: 44
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ef9831dd5268c545373433d728df7e36d31cf83
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 9748f2f7b43426f7f981d027400f097b260bf23d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460997"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817510"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Adicionar validação de arquitetura personalizada a diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionar validação de arquitetura personalizada a diagramas de dependência](https://docs.microsoft.com/visualstudio/modeling/add-custom-architecture-validation-to-layer-diagrams).  
-  
 No Visual Studio, os usuários podem validar o código-fonte em um projeto em um modelo de camada para que eles possam verificar que o código-fonte está em conformidade com as dependências em um diagrama de camada. Há um algoritmo de validação padrão, mas você pode definir suas próprias extensões de validação.  
   
  Quando o usuário seleciona o **validar arquitetura** de comando em um diagrama de camada, o método de validação padrão será invocado, seguido por quaisquer extensões de validação que foram instaladas.  
@@ -46,26 +44,26 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>Para definir uma extensão usando um modelo de projeto  
   
-1.  Criar um projeto em uma nova solução, usando o **novo projeto** comando as **arquivo** menu.  
+1. Criar um projeto em uma nova solução, usando o **novo projeto** comando as **arquivo** menu.  
   
-2.  No **novo projeto** caixa de diálogo **projetos de modelagem**, selecione **extensão de validação do Designer de camada**.  
+2. No **novo projeto** caixa de diálogo **projetos de modelagem**, selecione **extensão de validação do Designer de camada**.  
   
-     O modelo cria um projeto que contém um pequeno exemplo.  
+    O modelo cria um projeto que contém um pequeno exemplo.  
   
-    > [!WARNING]
-    >  Para o modelo de makethe funcione corretamente:  
-    >   
-    >  -   Edite as chamadas `LogValidationError` para remover os argumentos opcionais `errorSourceNodes` e `errorTargetNodes`.  
-    > -   Se você usar as propriedades personalizadas, aplique a atualização mencionada em [adicionar propriedades personalizadas a diagramas de camada](../modeling/add-custom-properties-to-layer-diagrams.md).  
+   > [!WARNING]
+   >  Para o modelo de makethe funcione corretamente:  
+   > 
+   > - Edite as chamadas `LogValidationError` para remover os argumentos opcionais `errorSourceNodes` e `errorTargetNodes`.  
+   >   -   Se você usar as propriedades personalizadas, aplique a atualização mencionada em [adicionar propriedades personalizadas a diagramas de camada](../modeling/add-custom-properties-to-layer-diagrams.md).  
   
-3.  Edite o código para definir a validação. Para obter mais informações, consulte [Programando a validação](#programming).  
+3. Edite o código para definir a validação. Para obter mais informações, consulte [Programando a validação](#programming).  
   
-4.  Para testar a extensão, consulte [depurando a validação de camada](#debugging).  
+4. Para testar a extensão, consulte [depurando a validação de camada](#debugging).  
   
-    > [!NOTE]
-    >  O método será chamado apenas em circunstâncias específicas, e os pontos de interrupção não funcionará automaticamente. Para obter mais informações, consulte [depurando a validação de camada](#debugging).  
+   > [!NOTE]
+   >  O método será chamado apenas em circunstâncias específicas, e os pontos de interrupção não funcionará automaticamente. Para obter mais informações, consulte [depurando a validação de camada](#debugging).  
   
-5.  Para instalar a extensão na instância principal do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou em outro computador, localize o **. VSIX** de arquivos em **bin\\\***. Copie-o para o computador no qual você deseja instalá-lo e, em seguida, clique duas vezes nele. Para desinstalar, use **extensões e atualizações** sobre o **ferramentas** menu.  
+5. Para instalar a extensão na instância principal do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou em outro computador, localize o **. VSIX** de arquivos em *bin\\*. Copie-o para o computador no qual você deseja instalá-lo e, em seguida, clique duas vezes nele. Para desinstalar, use **extensões e atualizações** sobre o **ferramentas** menu.  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Adicionando um validador de camada a um VSIX separado  
  Se você quiser criar um VSIX que contém validadores de camada, comandos e outras extensões, é recomendável que você crie um projeto para definir o VSIX e projetos separados para os manipuladores. Para obter informações sobre outros tipos de extensão de modelagem, consulte [modelos e diagramas UML estender](../modeling/extend-uml-models-and-diagrams.md).  
@@ -129,42 +127,42 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
 ##  <a name="programming"></a> Validação de programação  
  Para definir uma extensão de validação de camada, você define uma classe que tem as seguintes características:  
   
--   A forma geral da declaração é da seguinte maneira:  
+- A forma geral da declaração é da seguinte maneira:  
   
-    ```  
+  ```  
   
-    using System.ComponentModel.Composition;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
-    using Microsoft.VisualStudio.GraphModel;  
-    ...  
-     [Export(typeof(IValidateArchitectureExtension))]  
-      public partial class Validator1Extension :  
-                      IValidateArchitectureExtension  
+  using System.ComponentModel.Composition;  
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;  
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
+  using Microsoft.VisualStudio.GraphModel;  
+  ...  
+   [Export(typeof(IValidateArchitectureExtension))]  
+    public partial class Validator1Extension :  
+                    IValidateArchitectureExtension  
+    {  
+      public void ValidateArchitecture(Graph graph)  
       {  
-        public void ValidateArchitecture(Graph graph)  
-        {  
-           GraphSchema schema = graph.DocumentSchema;  
-          ...  
-      } }  
-    ```  
+         GraphSchema schema = graph.DocumentSchema;  
+        ...  
+    } }  
+  ```  
   
--   Quando você detectar um erro, pode reportá-lo usando `LogValidationError()`.  
+- Quando você detectar um erro, pode reportá-lo usando `LogValidationError()`.  
   
-    > [!WARNING]
-    >  Não use os parâmetros opcionais de `LogValidationError`.  
+  > [!WARNING]
+  >  Não use os parâmetros opcionais de `LogValidationError`.  
   
- Quando o usuário chama o **validar arquitetura** comando de menu, o sistema de tempo de execução de camada analisa as camadas e seus artefatos para gerar um gráfico. O gráfico tem quatro partes:  
+  Quando o usuário chama o **validar arquitetura** comando de menu, o sistema de tempo de execução de camada analisa as camadas e seus artefatos para gerar um gráfico. O gráfico tem quatro partes:  
   
--   Os modelos de camada do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução são representados como nós e links no gráfico.  
+- Os modelos de camada do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução são representados como nós e links no gráfico.  
   
--   O código, itens de projeto e outros artefatos que são definidos na solução e representados como nós e links que representam as dependências descobertas pelo processo de análise.  
+- O código, itens de projeto e outros artefatos que são definidos na solução e representados como nós e links que representam as dependências descobertas pelo processo de análise.  
   
--   Links de nós de camada para os nós de artefato de código.  
+- Links de nós de camada para os nós de artefato de código.  
   
--   Nós que representam erros descobertos pelo validador.  
+- Nós que representam erros descobertos pelo validador.  
   
- Quando o gráfico foi construído, o método padrão de validação é chamado. Quando isso for concluído, qualquer método de validação de extensão instalada é chamado em ordem não especificada. O gráfico é passado para cada `ValidateArchitecture` método, que pode verificar o gráfico e relatar quaisquer erros que encontrar.  
+  Quando o gráfico foi construído, o método padrão de validação é chamado. Quando isso for concluído, qualquer método de validação de extensão instalada é chamado em ordem não especificada. O gráfico é passado para cada `ValidateArchitecture` método, que pode verificar o gráfico e relatar quaisquer erros que encontrar.  
   
 > [!NOTE]
 >  Isso não é o mesmo que o processo de validação é aplicado aos diagramas UML, e não é o mesmo que o processo de validação que pode ser usado em linguagens específicas de domínio.  
@@ -175,25 +173,25 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
   
  Cada nó e cada Link tem uma ou mais categorias que especificam o tipo de elemento ou de relacionamento que ele representa. Os nós de um gráfico comum têm as seguintes categorias:  
   
--   Dsl.LayerModel  
+- Dsl.LayerModel  
   
--   Dsl.Layer  
+- Dsl.Layer  
   
--   Dsl.Reference  
+- Dsl.Reference  
   
--   CodeSchema_Type  
+- CodeSchema_Type  
   
--   CodeSchema_Namespace  
+- CodeSchema_Namespace  
   
--   CodeSchema_Type  
+- CodeSchema_Type  
   
--   CodeSchema_Method  
+- CodeSchema_Method  
   
--   CodeSchema_Field  
+- CodeSchema_Field  
   
--   CodeSchema_Property  
+- CodeSchema_Property  
   
- Links de camadas para elementos no código possuem a categoria "Representa".  
+  Links de camadas para elementos no código possuem a categoria "Representa".  
   
 ##  <a name="debugging"></a> Validação de depuração  
  Para depurar a extensão de validação de camada, pressione CTRL + F5. Uma instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é aberta. Nesse caso, abra ou crie um modelo de camada. Esse modelo deve ser associado ao código e deve ter pelo menos uma dependência.  
@@ -201,11 +199,11 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Teste com uma solução que contém as dependências  
  A validação não é executada, a menos que as seguintes características estejam presentes:  
   
--   Há pelo menos um link de dependência no diagrama de camada.  
+- Há pelo menos um link de dependência no diagrama de camada.  
   
--   Há camadas no modelo que estão associadas a elementos de código.  
+- Há camadas no modelo que estão associadas a elementos de código.  
   
- Na primeira vez que você inicia uma instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para testar sua extensão de validação, abra ou crie uma solução que tem as seguintes características.  
+  Na primeira vez que você inicia uma instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para testar sua extensão de validação, abra ou crie uma solução que tem as seguintes características.  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>Execute a limpar solução antes de validar a arquitetura  
  Sempre que você atualiza seu código de validação, use o **limpar solução** comando as **Build** menu na solução de avaliação, antes de testar o comando validar. Isso é necessário porque os resultados da validação são armazenados em cache. Se você não tiver atualizado o diagrama de camada de teste ou em seu código, os métodos de validação não serão executados.  

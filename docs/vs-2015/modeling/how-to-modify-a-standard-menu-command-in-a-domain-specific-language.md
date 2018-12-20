@@ -1,7 +1,7 @@
 ---
 title: 'Como: modificar um comando de Menu padrão em uma linguagem específica do domínio | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,29 +15,27 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 740e26434190857907af61170222922180abc9b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464472"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837550"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Como modificar um comando de menu padrão em uma linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: modificar um comando de Menu padrão em uma linguagem específica de domínio](https://docs.microsoft.com/visualstudio/modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language).  
-  
 É possível modificar o comportamento de alguns dos comandos padrão que são definidos automaticamente na DSL. Por exemplo, você poderia modificar **Recortar** , de modo que ela exclui as informações confidenciais. Para isso, substitua métodos em uma classe de conjunto de comandos. Essas classes são definidas no arquivo CommandSet.cs, no projeto DslPackage e são derivadas de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
   
  Em resumo, para modificar um comando:  
   
-1.  [Descobrir quais comandos, você pode modificar](#what).  
+1. [Descobrir quais comandos, você pode modificar](#what).  
   
-2.  [Criar uma declaração parcial da classe de conjunto de comando apropriado](#extend).  
+2. [Criar uma declaração parcial da classe de conjunto de comando apropriado](#extend).  
   
-3.  [Substituir os métodos ProcessOnStatus e Processonmenu&lt;1](#override) para o comando.  
+3. [Substituir os métodos ProcessOnStatus e Processonmenu&lt;1](#override) para o comando.  
   
- Este tópico explica esse procedimento.  
+   Este tópico explica esse procedimento.  
   
 > [!NOTE]
 >  Se você quiser criar seus próprios comandos de menu, consulte [como: adicionar um comando ao Menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
@@ -141,19 +139,19 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>Gravando o código dos métodos  
  Os seguintes fragmentos são úteis com frequência dentro desses métodos:  
   
--   `this.CurrentSelection`. A forma que o usuário clicou com o botão direito sempre é incluída nessa lista de formas e conectores. Se o usuário clicar em uma parte em branco do diagrama, o Diagrama será o único membro da lista.  
+- `this.CurrentSelection`. A forma que o usuário clicou com o botão direito sempre é incluída nessa lista de formas e conectores. Se o usuário clicar em uma parte em branco do diagrama, o Diagrama será o único membro da lista.  
   
--   `this.IsDiagramSelected()` - `true` Se o usuário clicou em uma parte em branco do diagrama.  
+- `this.IsDiagramSelected()` - `true` Se o usuário clicou em uma parte em branco do diagrama.  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()` - o usuário não selecionou múltiplas formas  
+- `this.IsSingleSelection()` - o usuário não selecionou múltiplas formas  
   
--   `this.SingleSelection` - a forma ou o diagrama que o usuário clicou com o botão direito  
+- `this.SingleSelection` - a forma ou o diagrama que o usuário clicou com o botão direito  
   
--   `shape.ModelElement as MyLanguageElement` - o elemento de modelo representado por uma forma.  
+- `shape.ModelElement as MyLanguageElement` - o elemento de modelo representado por uma forma.  
   
- Para obter mais informações sobre como navegar entre elementos e sobre como criar objetos e links, consulte [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+  Para obter mais informações sobre como navegar entre elementos e sobre como criar objetos e links, consulte [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:System.ComponentModel.Design.MenuCommand>   

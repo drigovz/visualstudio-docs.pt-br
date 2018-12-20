@@ -1,7 +1,7 @@
 ---
 title: Coletando Dados de Memória por meio de um Aplicativo Web ASP .NET Usando a Linha de Comando do Criador de Perfil | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - profiling tools,.NET memory method
 ms.assetid: 57acf2b0-327a-4c0e-8078-ac2f6d99457d
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb4b6ddcad4270b451b86f3bc8df9da3acd7af1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 260676ee54a9410bb7bfc8d90bd3d044c403169d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466674"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788297"
 ---
 # <a name="collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Coletando dados de memória a partir de um aplicativo Web do ASP.NET usando a linha de comando do criador de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [coletando dados de memória de um aplicativo da Web ASP.NET usando a linha de comando do Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line).  
-  
 Esta seção descreve os procedimentos e as opções para coletar alocação de memória e dados de tempo de vida do objeto para um aplicativo Web ASP .NET usando a ferramenta de linha de comando **VSPerfCmd**.  
   
 > [!NOTE]

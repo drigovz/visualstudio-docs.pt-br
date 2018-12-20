@@ -1,7 +1,7 @@
 ---
 title: Usar o paralelo janela pilhas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,21 +20,19 @@ helpviewer_keywords:
 - debugger, parallel tasks window
 ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01dd627143c072fea6dec99ea47ee4d6919dd62e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 602fdd683ecb1b3244289c305e4fc850d337b03e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462968"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792028"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Usando a janela Pilhas Paralelas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando a janela Parallel Stacks](https://docs.microsoft.com/visualstudio/debugger/using-the-parallel-stacks-window).  
-  
 O **pilhas paralelas** janela é útil quando você estiver depurando aplicativos multithread. Sua **exibição de Threads** mostra informações da pilha de chamada para todos os threads em seu aplicativo. Permite navegar entre os threads e os quadros da pilha nesses threads. No código gerenciado, o **modo de exibição de tarefas** mostra pilhas de <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos. No código nativo, o **modo de exibição de tarefas** mostra pilhas de [grupos de tarefas](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [algoritmos em paralelo](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [agentes assíncronos](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)e [tarefas leves](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
   
 ## <a name="threads-view"></a>Modo de Exibição de Threads  
@@ -101,21 +99,21 @@ O **pilhas paralelas** janela é útil quando você estiver depurando aplicativo
 ## <a name="tasks-view"></a>Modo de Exibição de Tarefas  
  Se seu aplicativo está usando <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos (código gerenciado) ou `task_handle` objetos (código nativo) para expressar o paralelismo, você pode usar a caixa de combinação na barra de ferramentas de janela pilhas paralelas para alternar para o *modo de exibição tarefas*. O Modo de Exibição de Tarefas mostra as chamadas de pilhas de tarefas reais em vez de threads. O Modo de Exibição de Tarefas é diferente do Modo de Exibição de Threads da seguinte maneira:  
   
--   As pilhas de chamadas de threads que não estão executando tarefas não são mostradas.  
+- As pilhas de chamadas de threads que não estão executando tarefas não são mostradas.  
   
--   As pilhas de chamadas de threads que estão executando tarefas serão cortadas visualmente na parte superior e inferior para mostrar os quadros mais relevantes que pertencem a tarefas.  
+- As pilhas de chamadas de threads que estão executando tarefas serão cortadas visualmente na parte superior e inferior para mostrar os quadros mais relevantes que pertencem a tarefas.  
   
--   Quando várias tarefas estiverem em um thread, as pilhas de chamadas dessas tarefas serão divididas em nós separados.  
+- Quando várias tarefas estiverem em um thread, as pilhas de chamadas dessas tarefas serão divididas em nós separados.  
   
- A ilustração a seguir mostra o Modo de Exibição de Tarefas de Pilhas Paralelas à direita e o Modo de Exibição de Threads correspondente à esquerda.  
+  A ilustração a seguir mostra o Modo de Exibição de Tarefas de Pilhas Paralelas à direita e o Modo de Exibição de Threads correspondente à esquerda.  
   
- ![Modo de exibição na janela pilhas paralelas de tarefas](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
+  ![Modo de exibição na janela pilhas paralelas de tarefas](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
   
- Para ver a pilha de chamadas inteira, simplesmente alternar para exibição de Threads clicando duas vezes um quadro de pilha e, em seguida, clicando em **ir para Thread**.  
+  Para ver a pilha de chamadas inteira, simplesmente alternar para exibição de Threads clicando duas vezes um quadro de pilha e, em seguida, clicando em **ir para Thread**.  
   
- Como descrito na tabela anterior, ao passar o cursor sobre um contexto do método, você poderá ver informações adicionais. A imagem a seguir mostra as informações na dica de ferramentas para o Modo de Exibição de Threads e o Modo de Exibição de Tarefas.  
+  Como descrito na tabela anterior, ao passar o cursor sobre um contexto do método, você poderá ver informações adicionais. A imagem a seguir mostra as informações na dica de ferramentas para o Modo de Exibição de Threads e o Modo de Exibição de Tarefas.  
   
- ![Dicas de ferramentas na janela pilhas paralelas](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
+  ![Dicas de ferramentas na janela pilhas paralelas](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
   
 ## <a name="method-view"></a>Modo de Exibição do Método  
  Do Modo de Exibição de Threads ou de Tarefas, você pode girar o gráfico no método atual clicando no ícone do Modo de Exibição do Método na barra de ferramentas. O Modo de Exibição do Método mostra rapidamente todos os métodos em todos os threads que chamam ou são chamados pelo método atual. A ilustração a seguir mostra um Modo de Exibição de Threads e também como as mesmas informações aparecem no Modo de Exibição do Método.  

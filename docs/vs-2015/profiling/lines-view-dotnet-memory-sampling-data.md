@@ -1,7 +1,7 @@
 ---
 title: Exibição de Linhas – Dados de Amostragem de Memória do .NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,42 +13,40 @@ helpviewer_keywords:
 - Lines view
 ms.assetid: 6631ab87-0e62-4c76-a063-4ea7222b07da
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3aa0c91cb6f26dd2a914195791c12421798c43b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3e47ed928d32e3cc7ec1ba9a72cf7992ebd4b892
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462453"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776974"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Exibição de linhas – Dados de Amostragem de Memória do .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de linhas – dados de amostragem de memória do .NET](https://docs.microsoft.com/visualstudio/profiling/lines-view-dotnet-memory-sampling-data).  
-  
 A exibição de Linhas dos dados de criação de perfil de alocação de memória do .NET que usa o método de amostragem lista as instruções que alocaram memória durante o processo de criação de perfil. As colunas também incluem o tamanho e o número de alocações.  
   
  Em um arquivo de origem, uma instrução pode abranger mais de uma linha em um arquivo de origem, e uma única linha pode incluir mais de uma instrução.  
   
  Uma instrução é identificada pelo seguinte:  
   
--   O arquivo de origem que contém a instrução da função.  
+- O arquivo de origem que contém a instrução da função.  
   
--   A função que contém a instrução.  
+- A função que contém a instrução.  
   
--   A linha de origem em que a instrução se inicia.  
+- A linha de origem em que a instrução se inicia.  
   
--   O caractere na linha de origem em que a instrução se inicia.  
+- O caractere na linha de origem em que a instrução se inicia.  
   
--   A linha de origem em que a instrução termina.  
+- A linha de origem em que a instrução termina.  
   
--   O caractere na linha de origem em que a instrução termina.  
+- O caractere na linha de origem em que a instrução termina.  
   
- A coluna de Nome de Linha fornece uma concatenação classificável dos dados do identificador.  
+  A coluna de Nome de Linha fornece uma concatenação classificável dos dados do identificador.  
   
- Por definição, uma instrução não chama outras funções. Portanto, apenas valores exclusivos são listados.  
+  Por definição, uma instrução não chama outras funções. Portanto, apenas valores exclusivos são listados.  
   
 |Column|Descrição|  
 |------------|-----------------|  

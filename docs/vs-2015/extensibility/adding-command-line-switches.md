@@ -1,7 +1,7 @@
 ---
 title: Adicionando opções de linha de comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4a9b9041183b22612c36e98f502d01ee3b62e36
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5034e6bcb5aa878c16dbf9dadf478d68276c4fac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468032"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748279"
 ---
 # <a name="adding-command-line-switches"></a>Adicionando opções de linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Adicionando opções de linha de comando](https://docs.microsoft.com/visualstudio/extensibility/adding-command-line-switches).  
-  
 Você pode adicionar opções de linha de comando que se aplicam ao seu VSPackage quando devenv.exe é executada. Use <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> para declarar o nome do comutador e suas propriedades. Neste exemplo, a opção MySwitch é adicionada para uma subclasse de VSPackage nomeado **AddCommandSwitchPackage** sem argumentos e com o VSPackage carregados automaticamente.  
   
 ```csharp  
@@ -66,11 +64,11 @@ Você pode adicionar opções de linha de comando que se aplicam ao seu VSPackag
 ## <a name="retrieving-command-line-switches"></a>Recuperando opções de linha de comando  
  Quando o pacote é carregado, você pode recuperar as opções de linha de comando ao concluir as etapas a seguir.  
   
-1.  Em seu VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementação, chamada `QueryService` nos <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> para obter o <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interface.  
+1. Em seu VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementação, chamada `QueryService` nos <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> para obter o <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interface.  
   
-2.  Chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> para recuperar as opções de linha de comando que o usuário inseriu.  
+2. Chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> para recuperar as opções de linha de comando que o usuário inseriu.  
   
- O código a seguir mostra como descobrir se a opção de linha de comando MySwitch foi inserida pelo usuário:  
+   O código a seguir mostra como descobrir se a opção de linha de comando MySwitch foi inserida pelo usuário:  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  

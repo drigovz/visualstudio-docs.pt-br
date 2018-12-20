@@ -1,7 +1,7 @@
 ---
 title: Tipo de visualizador e o visualizador personalizado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d347e7b18722aa8f8901abac3966150b3dca97cf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5319721d57212f4fc853ca99c1544a51d4af878c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463053"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732126"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Visualizador de tipo e visualizador personalizado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Visualizador de tipo e visualizador personalizado](https://docs.microsoft.com/visualstudio/extensibility/debugger/type-visualizer-and-custom-viewer).  
-  
 Um visualizador de tipo é um componente que exibe uma parte dos dados em um formato muito específico. Esse formato é inteiramente a cargo do implementador do visualizador, seja o usuário final ou um fornecedor de terceiros dos visualizadores.  
   
  Um visualizador personalizado é a parte de um avaliador de expressão personalizado que exibe uma parte dos dados em um formato muito específico. Esse formato é inteiramente a cargo do implementador do visualizador personalizado, o que significa que o formato cabe ao implementador do avaliador de expressão (EE).  

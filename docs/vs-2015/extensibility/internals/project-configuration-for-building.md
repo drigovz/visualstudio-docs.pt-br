@@ -1,7 +1,7 @@
 ---
 title: Configuração para a criação de projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799330ffa4fbedc5d1fee1ff4cb2f0dfdb3049f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef43fe505e859cb32f7c0fbe407bcc73c4f4e0e8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466314"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725526"
 ---
 # <a name="project-configuration-for-building"></a>Configuração de projeto para compilar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [configuração do projeto para a construção](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-building).  
-  
 A lista de configurações da solução para uma determinada solução é gerenciada pela caixa de diálogo Configurações da solução.  
   
  Um usuário pode criar configurações adicionais da solução, cada um com seu próprio nome exclusivo. Quando o usuário cria uma nova configuração de solução, o IDE assume como padrão o nome de configuração correspondente em projetos ou depuração se nenhum nome correspondente existe. O usuário pode alterar a seleção para atender aos requisitos específicos, se necessário. A única exceção a esse comportamento é quando o projeto dá suporte a uma configuração que corresponde ao nome da nova configuração de solução. Por exemplo, suponha que uma solução contém Projeto1 e Projeto2. Project1 tem configurações de projeto MyConfig1, varejo e depuração. Projeto2 tem configurações de projeto MyConfig2, varejo e depuração.  

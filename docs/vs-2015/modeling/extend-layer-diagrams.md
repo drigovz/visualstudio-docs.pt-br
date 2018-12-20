@@ -1,7 +1,7 @@
 ---
 title: Estender diagramas de camada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - layer models
 ms.assetid: 83fca301-b008-485a-87eb-218050e71451
 caps.latest.revision: 41
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: af5058ba0d88c91ea89a33523002294339dd32f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20d84c91ef30ae549b8fa59893d439a06467ed33
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466471"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766923"
 ---
 # <a name="extend-layer-diagrams"></a>Estender diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [estender diagramas de dependência](https://docs.microsoft.com/visualstudio/modeling/extend-layer-diagrams).  
-  
 Você pode escrever código para criar e atualizar diagramas de camada e também para validar a estrutura do código do programa em relação a diagramas de camada no Visual Studio. Você pode adicionar comandos que aparecem no menu de atalho (contexto) dos diagramas, personalizar gestos de arrastar e soltar e acessar o modelo de camada de modelos de texto. Você pode empacotar essas extensões em um Visual Studio Integration VSIX (extensão) e distribuí-los a outros usuários do Visual Studio.  
   
  Para obter mais informações sobre diagramas de camada, consulte:  
@@ -44,15 +42,15 @@ Você pode escrever código para criar e atualizar diagramas de camada e também
 ##  <a name="prereqs"></a> Requisitos  
  Você deve ter os seguintes itens instalados no computador em que você deseja desenvolver suas extensões em camadas:  
   
--   Visual Studio  
+- Visual Studio  
   
--   [SDK do Visual Studio](../extensibility/visual-studio-sdk.md)  
+- [SDK do Visual Studio](../extensibility/visual-studio-sdk.md)  
   
--   [SDK de modelagem para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)  
+- [SDK de modelagem para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)  
   
- Você deve ter uma versão adequada do Visual Studio instalado no computador em que você deseja executar suas extensões em camadas. Para obter mais informações, consulte [implantar uma extensão de modelo de camada](../modeling/deploy-a-layer-model-extension.md).  
+  Você deve ter uma versão adequada do Visual Studio instalado no computador em que você deseja executar suas extensões em camadas. Para obter mais informações, consulte [implantar uma extensão de modelo de camada](../modeling/deploy-a-layer-model-extension.md).  
   
- Para ver quais versões do Visual Studio dão suporte a diagramas de camada, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  Para ver quais versões do Visual Studio dão suporte a diagramas de camada, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Adicionar comandos e gestos a diagramas de camada](../modeling/add-commands-and-gestures-to-layer-diagrams.md)  

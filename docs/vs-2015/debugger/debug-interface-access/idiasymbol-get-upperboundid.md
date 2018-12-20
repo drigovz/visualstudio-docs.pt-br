@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_upperboundid | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_upperBoundId method
 ms.assetid: ddfa1617-bd0f-4187-ba77-a225bab93a95
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b2c69e1f4275983f91ef4bd894c36b02acd3e5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ba51b65cd55aba3ccba848a958208dfa4a9735a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467310"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773399"
 ---
 # <a name="idiasymbolgetupperboundid"></a>IDiaSymbol::get_upperBoundId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_upperboundid](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-upperboundid).  
-  
 Recupera o identificador de símbolo do limite superior de uma dimensão de matriz FORTRAN.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_upperBoundId (   
+HRESULT get_upperBoundId (   
    DWORD* pRetVal  
 );  
 ```  

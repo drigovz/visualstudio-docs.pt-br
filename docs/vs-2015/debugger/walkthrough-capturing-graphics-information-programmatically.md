@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Capturando informações de gráficos de forma programática | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a5adeff9-afaf-4047-b5ce-ef0aefe710eb
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5807dcc1b5d4aef42d698fa051f425a17fab7f8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: feff1af744bd9f42d2fe8af67a72ec4856a09acc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462586"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747671"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Instruções passo a passo: capturando informações de gráfico de forma programática
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: capturando informações de gráficos programaticamente](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-capturing-graphics-information-programmatically).  
-  
 É possível usar o Diagnóstico de Gráficos do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para capturar de forma programática informações gráficas de um aplicativo Direct3D.  
   
  Captura programática é útil em cenários como:  
@@ -75,18 +73,18 @@ A versão mais recente deste tópico pode ser encontrada em [instruções passo 
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>Para definir a interface IDXGraphicsAnalysis  
   
--   Defina a interface IDXGraphicsAnalysis no mesmo arquivo em que você incluiu os arquivos de cabeçalho.  
+- Defina a interface IDXGraphicsAnalysis no mesmo arquivo em que você incluiu os arquivos de cabeçalho.  
   
-    ```  
-    interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
-    IDXGraphicsAnalysis : public IUnknown  
-    {  
-        STDMETHOD_(void, BeginCapture)() PURE;  
-        STDMETHOD_(void, EndCapture)() PURE;  
-    };  
-    ```  
+  ```  
+  interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
+  IDXGraphicsAnalysis : public IUnknown  
+  {  
+      STDMETHOD_(void, BeginCapture)() PURE;  
+      STDMETHOD_(void, EndCapture)() PURE;  
+  };  
+  ```  
   
- Por uma questão de comodidade, é possível realizar essas etapas em um novo arquivo de cabeçalho, em seguida, incluí-lo onde for necessário no aplicativo.  
+  Por uma questão de comodidade, é possível realizar essas etapas em um novo arquivo de cabeçalho, em seguida, incluí-lo onde for necessário no aplicativo.  
   
 ### <a name="getting-the-idxgraphicsanalysis-interface"></a>Obtendo a interface IDXGraphicsAnalysis  
  Antes de capturar informações de gráficos do DirectX 11.2, você precisa obter a interface de depuração DXGI.  
@@ -173,23 +171,23 @@ A versão mais recente deste tópico pode ser encontrada em [instruções passo 
   
 ##### <a name="to-configure-the-name-and-location-of-the-graphics-log-file"></a>Para configurar o nome e o local do arquivo de log dos gráficos  
   
--   Para evitar que o log de gráficos seja gravado no diretório temporário, antes da linha `#include <vsgcapture.h>`, adicione:  
+- Para evitar que o log de gráficos seja gravado no diretório temporário, antes da linha `#include <vsgcapture.h>`, adicione:  
   
-    ```  
-    #define DONT_SAVE_VSGLOG_TO_TEMP  
-    ```  
+  ```  
+  #define DONT_SAVE_VSGLOG_TO_TEMP  
+  ```  
   
-     É possível definir esse valor para gravar o log de gráficos em um local relativo para o diretório de trabalho ou em um caminho absoluto, caso a definição de `VSG_DEFAULT_RUN_FILENAME` seja um caminho absoluto.  
+   É possível definir esse valor para gravar o log de gráficos em um local relativo para o diretório de trabalho ou em um caminho absoluto, caso a definição de `VSG_DEFAULT_RUN_FILENAME` seja um caminho absoluto.  
   
--   Para salvar o log de gráficos em um local diferente ou dar a ele um nome de arquivo diferente, antes da linha `#include <vsgcapture.h>`, adicione:  
+- Para salvar o log de gráficos em um local diferente ou dar a ele um nome de arquivo diferente, antes da linha `#include <vsgcapture.h>`, adicione:  
   
-    ```  
-    #define VSG_DEFAULT_RUN_FILENAME <filename>  
-    ```  
+  ```  
+  #define VSG_DEFAULT_RUN_FILENAME <filename>  
+  ```  
   
-     Se você não realizar essa etapa, o nome do arquivo será default.vsglog. Se você não definiu `DONT_SAVE_VSGLOG_TO_TEMP`, o local do arquivo será relativo para o diretório temporário. Do contrário, ele será relativo para o diretório de trabalho ou em outro local, caso tenha sido especificado um nome de arquivo absoluto.  
+   Se você não realizar essa etapa, o nome do arquivo será default.vsglog. Se você não definiu `DONT_SAVE_VSGLOG_TO_TEMP`, o local do arquivo será relativo para o diretório temporário. Do contrário, ele será relativo para o diretório de trabalho ou em outro local, caso tenha sido especificado um nome de arquivo absoluto.  
   
- Para [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativos, o local do diretório temporário é específico para cada usuário e o aplicativo e normalmente é encontrado em um local como C:\users\\*nome de usuário*\AppData\Local\Packages\\ *nome da família*\TempState\\. Para aplicativos da área de trabalho, o local do diretório temporário é específico para cada usuário e geralmente é encontrado em um local como C:\Users\\*nome de usuário*\AppData\Local\Temp.\\.  
+  Para [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativos, o local do diretório temporário é específico para cada usuário e o aplicativo e normalmente é encontrado em um local como C:\users\\*nome de usuário*\AppData\Local\Packages\\ *nome da família*\TempState\\. Para aplicativos da área de trabalho, o local do diretório temporário é específico para cada usuário e geralmente é encontrado em um local como C:\Users\\*nome de usuário*\AppData\Local\Temp.\\.  
   
 > [!NOTE]
 >  Para gravar em um local específico, você deve ter permissões para gravar nesse local, ou ocorrerá um erro. Lembre-se de que os aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] são mais restritos do que os aplicativos da área de trabalho em relação ao local onde podem gravar dados e podem exigir configuração adicional para gravação em determinados locais.  

@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty2::GetDerivedMostProperty | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: cc86b461-62d1-4340-8209-c65037fd8b02
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 32581e352b3f3862da326638e1645c2ad117f5ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 68d4f3447916dfaed3a6788bb31eb79910aeed11
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475578"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733614"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProperty2::GetDerivedMostProperty](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugproperty2-getderivedmostproperty).  
-  
 Obtém a propriedade mais derivado de uma propriedade.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetDerivedMostProperty (   
+HRESULT GetDerivedMostProperty (   
    IDebugProperty2** ppDerivedMost  
 );  
 ```  
   
 ```csharp  
-int GetDerivedMostProperty (   
+int GetDerivedMostProperty (   
    out IDebugProperty2 ppDerivedMost  
 );  
 ```  

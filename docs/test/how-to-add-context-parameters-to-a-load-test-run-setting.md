@@ -1,5 +1,5 @@
 ---
-title: Adicionar parâmetros de contexto a uma configuração de execução de teste de carga no Visual Studio
+title: Adicionar parâmetros de contexto a uma configuração de execução de teste de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203748"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048483"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Como adicionar parâmetros de contexto a uma configuração de execução de teste de carga
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Como: Adicionar parâmetros de contexto a uma configuração de execução de teste de carga
 
 Depois de criar seu teste de carga usando o **Novo Assistente de Teste de Carga**, você poderá usar o **Editor de Teste de Carga** para alterar as propriedades de cenários para que eles atendam às suas metas e necessidades de teste.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Para obter uma lista completa das propriedades das configurações de execução e suas descrições, confira [Propriedades de configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).
@@ -36,19 +38,19 @@ Se atribuir o valor do parâmetro de contexto Webserver1 como `http://CorporateS
 
 Além disso, atribuindo valores diferentes a um parâmetro de contexto usando o mesmo nome em diferentes configurações de execução de teste de carga, você pode executar o teste de carga usando diferentes ambientes:
 
--   Configuração de execução do servidor Web de preparo empresarial: o parâmetro de contexto chamado `WebServer1=http://CorporateStagingWebServer`
+- Configuração de execução do Servidor Web de Preparo Corporativo: O parâmetro de contexto chamado `WebServer1=http://CorporateStagingWebServer`
 
--   Configuração de execução do servidor Web de produção empresarial: o parâmetro de contexto chamado `WebServer1=http://CorporateProductionWebServer`
+- Configuração de execução do Servidor Web de Produção Corporativo: O parâmetro de Contexto chamado `WebServer1=http://CorporateProductionWebServer`
 
- **Alterando a configuração de execução na linha de comando**
+  **Alterando a configuração de execução na linha de comando**
 
- Se você quiser usar configurações de execução diferentes na linha de comando para se beneficiar da estratégia do parâmetro de contexto, use os seguintes comandos:
+  Se você quiser usar configurações de execução diferentes na linha de comando para se beneficiar da estratégia do parâmetro de contexto, use os seguintes comandos:
 
- **Set Test.UseRunSetting= CorporateStagingWebServer**
+  **Set Test.UseRunSetting= CorporateStagingWebServer**
 
- -e-
+  -e-
 
- **mstest /testcontainer:loadtest1.loadtest**
+  **mstest /testcontainer:loadtest1.loadtest**
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>Para adicionar um parâmetro de contexto a uma configuração de execução
 
@@ -60,7 +62,7 @@ Além disso, atribuindo valores diferentes a um parâmetro de contexto usando o 
 
      Um novo parâmetro de contexto é adicionado à pasta **Parâmetros de contexto** na pasta **Configurações de execução** na árvore de teste de carga.
 
-     -ou-
+     - ou -
 
      Se a configuração de execução já contém uma pasta **Parâmetros de contexto**, você pode clicar com o botão direito do mouse nela e escolher **Adicionar parâmetro de contexto**.
 

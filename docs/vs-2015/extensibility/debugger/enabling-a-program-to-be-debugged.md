@@ -1,7 +1,7 @@
 ---
 title: Habilitar um programa a ser depurado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 61d24820-0cd9-48b6-8674-6813f7493237
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f0dcb98df8562a5f35fc0d56d5a4ef6570021664
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33256a27230273b9d0af249ed4ecd4e7767a7e05
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474436"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789337"
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>Habilitando um programa a ser depurado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [habilitar um programa a ser depurado](https://docs.microsoft.com/visualstudio/extensibility/debugger/enabling-a-program-to-be-debugged).  
-  
 Antes de seu mecanismo de depuração (DES) pode depurar um programa, você deve primeiro iniciar o DE ou anexá-lo a um programa existente.  
   
 ## <a name="in-this-section"></a>Nesta seção  

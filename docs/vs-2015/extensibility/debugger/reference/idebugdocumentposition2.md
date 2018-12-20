@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentPosition2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0e838ced-12bb-4efc-b811-2b7c034b77b0
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d240388ee1331e8dbdb2148f58f7a761ddde7a83
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ada282748bbc3eece247ae8a271e9af1b6756f8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464498"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743839"
 ---
 # <a name="idebugdocumentposition2"></a>IDebugDocumentPosition2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugDocumentPosition2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumentposition2).  
-  
 Essa interface representa uma posição abstrata em um arquivo de origem.  
   
 ## <a name="syntax"></a>Sintaxe  

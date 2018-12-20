@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumsourcefiles:: Reset | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaEnumSourceFiles::Reset method
 ms.assetid: 1df2aeae-2c84-4c35-817e-b85d43022ae2
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20f6bd49ff4e1a10d51e9296da094412521fa9f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e809950dd44b6865a64ce3a5e6f1be7ce6787fa4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476176"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810322"
 ---
 # <a name="idiaenumsourcefilesreset"></a>IDiaEnumSourceFiles::Reset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaenumsourcefiles:: Reset](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumsourcefiles-reset).  
-  
 Redefine uma sequência de enumeração para o início.  
   
 ## <a name="syntax"></a>Sintaxe  

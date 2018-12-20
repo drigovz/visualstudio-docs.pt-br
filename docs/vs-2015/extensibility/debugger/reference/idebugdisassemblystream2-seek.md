@@ -1,7 +1,7 @@
 ---
 title: IDebugDisassemblyStream2::Seek | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b718412793271d96a8c8a22bb8c69997c3305cdc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf5387d7ee5620d97e2ba20a155c277460158530
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473722"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808317"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugDisassemblyStream2::Seek](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdisassemblystream2-seek).  
-  
 Move o ponteiro de leitura no fluxo de desmontagem um determinado número de instruções em relação a uma posição especificada.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Seek(   
+HRESULT Seek(   
    SEEK_START          dwSeekStart,  
    IDebugCodeContext2* pCodeContext,  
    UINT64              uCodeLocationId,  
@@ -43,7 +41,7 @@ HRESULT Seek(
 ```  
   
 ```csharp  
-int Seek(   
+int Seek(   
    enum_SEEK_START    dwSeekStart,  
    IDebugCodeContext2 pCodeContext,  
    ulong              uCodeLocationId,  

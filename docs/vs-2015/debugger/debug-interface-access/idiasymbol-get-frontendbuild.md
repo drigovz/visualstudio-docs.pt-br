@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_frontendbuild | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_frontEndBuild method
 ms.assetid: f7dab1c6-112b-4966-baa5-afc976949c76
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0b0642634d597e3c249809ae6e7ad147d833c2bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 940a7d5b962cd5db2144f0db0059631b702c216c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467674"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799399"
 ---
 # <a name="idiasymbolgetfrontendbuild"></a>IDiaSymbol::get_frontEndBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_frontendbuild](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-frontendbuild).  
-  
 Recupera o número de compilação de front-end.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_frontEndBuild (   
+HRESULT get_frontEndBuild (   
    DWORD* pRetVal  
 );  
 ```  

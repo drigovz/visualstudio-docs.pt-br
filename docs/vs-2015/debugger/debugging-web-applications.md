@@ -1,7 +1,7 @@
 ---
 title: Depurando aplicativos Web | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,21 +21,19 @@ helpviewer_keywords:
 - ASP.NET Web pages, debugging
 ms.assetid: a096a90d-6d0d-4752-9fb5-417635ccab3e
 caps.latest.revision: 27
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 265b0cfef3bb8d3afa1607da397b7e46a4cc69b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4a20b83c5470f5184ab85f76904bd66756cf6ea2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464314"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774037"
 ---
 # <a name="debugging-web-applications"></a>Depurando aplicativos Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Depurando aplicativos da Web](https://docs.microsoft.com/visualstudio/debugger/debugging-web-applications).  
-  
 Esta seção explica como depurar vários tipos de aplicativos Web.  
   
 ## <a name="in-this-section"></a>Nesta seção  

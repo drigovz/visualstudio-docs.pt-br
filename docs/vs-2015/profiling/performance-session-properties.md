@@ -1,7 +1,7 @@
 ---
 title: Propriedades da sessão de desempenho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,32 +15,30 @@ helpviewer_keywords:
 - performance tools, performance session properties
 ms.assetid: c3a86913-172b-488f-a31a-cea01a71b2ea
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cc3832c0e5a1c4aed99de070b15b0b83ae1254f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed020d09bc3c7b85a395625f410f0062bf4bfac9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462263"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739284"
 ---
 # <a name="performance-session-properties"></a>Propriedades da sessão de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [propriedades da sessão de desempenho](https://docs.microsoft.com/visualstudio/profiling/performance-session-properties).  
-  
 Um **Sessão de Desempenho** permite definir as configurações que determinam como o aplicativo é analisado. Ele também armazena relatórios que são gerados para a sessão de criação de perfil.  
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Crie uma **Sessão de Desempenho** executando o **Assistente de Desempenho** ou criando manualmente uma sessão. A **Sessão de Desempenho** é exibida no **Gerenciador de Desempenho** após a **Sessão de Desempenho** ser criada.  
+  Crie uma **Sessão de Desempenho** executando o **Assistente de Desempenho** ou criando manualmente uma sessão. A **Sessão de Desempenho** é exibida no **Gerenciador de Desempenho** após a **Sessão de Desempenho** ser criada.  
   
- Para exibir as propriedades da **Sessão de Desempenho**, selecione o nome da sessão em **Gerenciador de Desempenho**, clique nela com o botão direito do mouse e selecione **Propriedades**.  
+  Para exibir as propriedades da **Sessão de Desempenho**, selecione o nome da sessão em **Gerenciador de Desempenho**, clique nela com o botão direito do mouse e selecione **Propriedades**.  
   
- A sessão de desempenho tem as seguintes páginas de propriedade:  
+  A sessão de desempenho tem as seguintes páginas de propriedade:  
   
 ## <a name="general"></a>Geral  
  Essas configurações permitem que você selecione o método de criação de perfil para adicionar dados de tempo de vida e de coleção de objetos .NET e para especificar o local do relatório padrão e das convenções de nomenclatura.  
@@ -61,17 +59,17 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
 ## <a name="sampling"></a>Amostragem  
  Essas configurações permitem que você selecione o intervalo de amostragem e do evento quando a amostragem é usada como o método de criação de perfil. Um evento de amostragem é usado para coletar dados de criação de perfil no intervalo especificado. Por exemplo, se o evento de amostragem for ciclos do relógio e o intervalo de amostragem for definido como 10.000.000, então os dados de criação de perfil serão coletados a cada 10 milhões de ciclos do relógio. Os quatro tipos de eventos de amostragem a seguir estão disponíveis:  
   
--   Ciclos do relógio – para problemas ligados à CPU  
+- Ciclos do relógio – para problemas ligados à CPU  
   
--   Falhas de Página – para problemas relacionados à memória  
+- Falhas de Página – para problemas relacionados à memória  
   
--   Chamadas do Sistema – para problemas relacionados a E/S  
+- Chamadas do Sistema – para problemas relacionados a E/S  
   
--   Contadores de Desempenho – para problemas de baixo desempenho  
+- Contadores de Desempenho – para problemas de baixo desempenho  
   
--   Eventos de amostragem adicionais podem ser especificados com base nos contadores de desempenho disponíveis  
+- Eventos de amostragem adicionais podem ser especificados com base nos contadores de desempenho disponíveis  
   
- Para obter mais informações, consulte [Como escolher os eventos de amostragem](../profiling/how-to-choose-sampling-events.md)  
+  Para obter mais informações, consulte [Como escolher os eventos de amostragem](../profiling/how-to-choose-sampling-events.md)  
   
 ## <a name="binary"></a>Binário  
  Essas configurações permitem que você especifique se deseja realocar o binário instrumentado para outro local. Por exemplo, se você está criando o perfil My.DLL e optar por não realocar o binário instrumentado, uma cópia de backup de My.DLL chamada My.Orig.DLL será criada. Posteriormente, My.DLL será modificado inserindo investigações para coletar dados. Se você decidir realocar o binário instrumentado, o binário original não será renomeado e o binário instrumentado é copiado para o local especificado para uso durante a instrumentação.  

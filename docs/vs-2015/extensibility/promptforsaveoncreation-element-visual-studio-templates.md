@@ -1,7 +1,7 @@
 ---
 title: Elemento PromptForSaveOnCreation (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81dc900696c3c9473aaee2f59ac7d350f45df664
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d6480df4d51e91f6953fcbb5c5c00542dac2d8e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463901"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725894"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Elemento PromptForSaveOnCreation (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento PromptForSaveOnCreation (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/promptforsaveoncreation-element-visual-studio-templates).  
-  
 Especifica se o usuário é solicitado para um projeto local por meio de salvamento a **novo projeto** caixa de diálogo ao criar um projeto. Se esse elemento é definido como `true`, em seguida, o usuário é solicitado que você salve local; se `false`, em seguida, ele não será solicitado. (Ou seja, um projeto temporário é criado.)  
   
  \<VSTemplate >  

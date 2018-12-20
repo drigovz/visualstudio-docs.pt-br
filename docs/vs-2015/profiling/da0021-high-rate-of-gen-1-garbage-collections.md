@@ -1,7 +1,7 @@
 ---
 title: 'DA0021: alta taxa de coletas de lixo da Ger 1 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ f1_keywords:
 - vs.performance.rules.DA0021
 ms.assetid: ebf5d9b3-a1ac-4688-8f0f-39a85f4dd15f
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c4e47b4db4f40223e577966532686c8b23081d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77bcfd877bb0e5a8bf20caa629c226c4f304fafa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473574"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765850"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: taxa alta de coletas de lixo Gen 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DA0021: taxa alta de coletas de lixo Gen 1](https://docs.microsoft.com/visualstudio/profiling/da0021-high-rate-of-gen-1-garbage-collections).  
-  
 Id da regra | DA0021 |  
 | Categoria de |. Uso do .NET Framework |  
 | Métodos de criação de perfil | Todos os |  

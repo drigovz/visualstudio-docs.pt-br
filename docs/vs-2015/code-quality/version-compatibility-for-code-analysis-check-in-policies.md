@@ -1,7 +1,7 @@
 ---
 title: Compatibilidade de versão para políticas do Check-In de análise de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e5d243ecda08dde83bf2dbc77595d4df3849cf54
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 840a12e7f4c0e3853e885a803dea5a92e05a5a27
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468107"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261476"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Compatibilidade da versão para políticas de check-in de análise do código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [compatibilidade de versão para políticas do Check-In de análise de código](https://docs.microsoft.com/visualstudio/code-quality/version-compatibility-for-code-analysis-check-in-policies).  
-  
 Se você deve avaliar e autor usando versões diferentes das políticas de seleção da análise de código [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], você deve saber as diferenças em como [!INCLUDE[vstsTfsOrcasLong](../includes/vststfsorcaslong-md.md)] e [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] avaliar políticas de check-in.  
   
 ## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Compatibilidade de versão para avaliação de políticas de Check-In  

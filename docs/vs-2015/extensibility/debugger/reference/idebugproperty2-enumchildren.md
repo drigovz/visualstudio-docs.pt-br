@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty2::EnumChildren | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: cf79f666-65d1-417c-af7c-9271bac9a267
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8996bf5cc5ed295bf7449e44f505fa0b87523f6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3dafb3287e59e17e2d8ea71497c73dabb705d8f9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475724"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778963"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProperty2::EnumChildren](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugproperty2-enumchildren).  
-  
 Recupera uma lista dos filhos da propriedade.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT EnumChildren (   
+HRESULT EnumChildren (   
    DEBUGPROP_INFO_FLAGS      dwFields,  
    DWORD                     dwRadix,  
    REFGUID                   guidFilter,  
@@ -46,7 +44,7 @@ HRESULT EnumChildren (
 ```  
   
 ```csharp  
-int EnumChildren (   
+int EnumChildren (   
    enum_DEBUGPROP_INFO_FLAGS   dwFields,  
    uint                        dwRadix,  
    ref Guid                    guidFilter,  

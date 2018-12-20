@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9c47d0a6-9eb1-464e-bd44-fa2b552d4d36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 895196e529fa23b3972e74a20f6a5a489942472d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 04ce01d03e1c6101fe971e126f57accc77a1a6bd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467689"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738367"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugCoreServer2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcoreserver2).  
-  
 Essa interface é usada para representar e obter informações de um servidor em um computador na rede.  
   
 ## <a name="syntax"></a>Sintaxe  

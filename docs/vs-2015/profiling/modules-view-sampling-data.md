@@ -1,7 +1,7 @@
 ---
 title: Exibição Módulo – dados de amostragem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - sampling profiling method,Modules view
 ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec3349922acb6a9fb5a08bd11675454e9f8cbad3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a885ca96ce58be7448f5b9b814457b38e08a1233
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467000"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742497"
 ---
 # <a name="modules-view---sampling-data"></a>Exibição Módulos – dados de amostragem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição módulos – dados de amostragem](https://docs.microsoft.com/visualstudio/profiling/modules-view-sampling-data).  
-  
 A exibição Módulos dos dados de amostragem mostra dados de desempenho agrupados pelos módulos que tiveram a amostragem realizada nos dados de criação de perfil. Cada módulo é a raiz de uma árvore hierárquica. As funções que tiveram a amostragem realizada do módulo são listadas abaixo do nó do módulo.  
   
 > [!NOTE]

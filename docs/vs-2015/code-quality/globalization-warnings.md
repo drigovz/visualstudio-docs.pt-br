@@ -1,7 +1,7 @@
 ---
 title: Avisos de globalização | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2430b5cac7f3cbdf7d871f574438508fee0e625b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6717eb3105cf8060a8423c58ad5a425745ec6d57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475491"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207962"
 ---
 # <a name="globalization-warnings"></a>Avisos de globalização
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [avisos de globalização](https://docs.microsoft.com/visualstudio/code-quality/globalization-warnings).  
-  
 Avisos de globalização dão suporte a aplicativos e bibliotecas do mundo.  
   
 ## <a name="in-this-section"></a>Nesta seção  

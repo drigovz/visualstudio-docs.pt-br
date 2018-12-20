@@ -1,7 +1,7 @@
 ---
 title: Elemento VSTemplate (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f8ac561b-3b0b-4246-9ec9-118d2447e9a9
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dad2fb7a9af5e15d00b05f4a4c6cf99f3929e31e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c497d264e9bf8b4f62559d9c4cfbb4fdb45cd7e4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467378"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758005"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>Elemento VSTemplate (modelos de projeto do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento VSTemplate (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/vstemplate-element-visual-studio-templates).  
-  
 Contém todos os metadados sobre o modelo de projeto, o modelo de item ou o starter kit para.  
   
 ## <a name="syntax"></a>Sintaxe  

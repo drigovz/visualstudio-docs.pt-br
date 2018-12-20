@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 8d9ceeb7c4d24871bc0f2ddfc743c2c65e087205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627232"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907047"
 ---
 # <a name="find-code-using-go-to-commands"></a>Localizar código usando comandos Ir Para
 
@@ -27,10 +27,10 @@ Os comandos **Ir Para** do Visual Studio executam uma pesquisa restrita no códi
 
 ## <a name="how-to-use-it"></a>Como usá-lo
 
-Entrada        | Função
+Entrada | Função
 ------------ | ---
 **Teclado** | Pressione **Ctrl**+**T** ou **Ctrl**+**,**
-**Mouse**    | Selecione **Editar** > **Ir para** > **Ir para Todos**
+**Mouse** | Selecione **Editar** > **Ir para** > **Ir para Todos**
 
 Uma janela pequena é exibida na parte superior direita do editor de código.
 
@@ -56,7 +56,7 @@ Para restringir sua pesquisa para um tipo de elemento de código específico, es
 
 Prefixo | Ícone | Atalho | Descrição
 :-: | - | - | -
-:| ![Ícone de linha](media/gotoall-line-icon.png) | **Ctrl**+**G**         | Ir para o número de linha especificado
+:| ![Ícone de linha](media/gotoall-line-icon.png) | **Ctrl**+**G** | Ir para o número de linha especificado
 f| ![Ícone de arquivos](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Ir para o arquivo especificado
 r| ![Ícone de arquivos recentes](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Ir para o arquivo visitado recentemente especificado
 t| ![Ícone de tipos](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | Ir para o tipo especificado
@@ -85,8 +85,8 @@ Selecionando o ícone de engrenagem ![Ícone de engrenagem](media/gotoall_gear.p
 Configuração | Descrição
 ------- | ---
 Usar guia de visualização | Exibir o item selecionado imediatamente na guia de visualização do IDE
-Mostrar detalhes    | Exibir informações do projeto, do arquivo, da linha e de resumo dos comentários da documentação na janela
-Centralizar janela   | Mover esta janela para a parte superior central do editor de códigos e não para a parte superior direita
+Mostrar detalhes | Exibir informações do projeto, do arquivo, da linha e de resumo dos comentários da documentação na janela
+Centralizar janela | Mover esta janela para a parte superior central do editor de códigos e não para a parte superior direita
 
 ## <a name="see-also"></a>Consulte também
 

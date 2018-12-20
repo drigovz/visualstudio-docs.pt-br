@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: df74252361e330ac992f8f3e852d9c33006d18e7
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626727"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443578"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenções de nomenclatura do .NET para EditorConfig
 
@@ -88,11 +88,14 @@ Para descrever os modificadores dos símbolos aos quais você deseja aplicar a r
 
 A lista a seguir mostra os valores permitidos e é possível especificar vários valores separando-os por vírgula.
 
-- abstract ou must_inherit
-- async
-- const
-- readonly
-- estático ou compartilhado
+- `abstract` ou `must_inherit`
+- `async`
+- `const`
+- `readonly`
+- `static` ou `shared`
+
+   > [!NOTE]
+   > Se você tiver uma regra de nomenclatura para os símbolos `static` ou `shared`, ela também se aplicará aos símbolos `const` porque são implicitamente estáticos. Se não quiser que a regra de nomenclatura `static` se aplique aos símbolos `const`, crie uma regra de nomenclatura separada para os símbolos `const`.
 
 `required_modifiers` é uma propriedade opcional. Se você omitir esta propriedade, a regra de nomenclatura será aplicada a todos os modificadores.
 

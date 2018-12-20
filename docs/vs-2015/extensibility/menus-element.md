@@ -1,7 +1,7 @@
 ---
 title: Elemento menus | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d825a99b-e05c-4dd9-8933-a180216d667a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e2192b3c23d15843180108079eb0bd78686b90d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86d5b1e19072e2a008a588ae8646657a2d87d9a1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464364"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816548"
 ---
 # <a name="menus-element"></a>Elemento Menus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Menus elemento](https://docs.microsoft.com/visualstudio/extensibility/menus-element).  
-  
 Define todos os menus e barras de ferramentas que implementa um VSPackage.  
   
 ## <a name="syntax"></a>Sintaxe  

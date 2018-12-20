@@ -1,7 +1,7 @@
 ---
 title: Campo m_action | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 201838c2-260d-4071-b6c3-f526874e19c9
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 68d526fe4266f9c8f7c0d3dc4790c8b5893f72ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 937ea3c68f4b2e560e90285aa6f1a9c248072691
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465141"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732816"
 ---
 # <a name="maction-field"></a>Campo m_action
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [campo m_action](https://docs.microsoft.com/visualstudio/extensibility/debugger/m-action-field).  
-  
 O delegado que representa o código seja executado no <xref:System.Threading.Tasks.Task> objeto.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  

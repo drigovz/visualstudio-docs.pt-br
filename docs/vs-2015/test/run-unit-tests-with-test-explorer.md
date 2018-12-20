@@ -1,7 +1,7 @@
 ---
 title: Executar testes de unidade com o Gerenciador de Testes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a22eb5467533b83116055f0fbd301f4619255711
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846831"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [executar testes de unidade com Gerenciador de testes](https://docs.microsoft.com/visualstudio/test/run-unit-tests-with-test-explorer).  
-  
 Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou projetos de teste de unidade de terceiros, agrupar testes em categorias, filtre a lista de testes, criar, salvar e executar as listas de reprodução de testes. Você também pode depurar testes e analisar um teste de desempenho e cobertura de código.  
   
 ##  <a name="BKMK_Contents"></a> Conteúdo  
@@ -69,17 +67,17 @@ Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou 
 ###  <a name="BKMK_Run_tests"></a> Executar testes  
  Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize um dos seguintes procedimentos:  
   
--   Para executar todos os testes em uma solução, escolha **Executar Todos**.  
+- Para executar todos os testes em uma solução, escolha **Executar Todos**.  
   
--   Para executar todos os testes em um grupo padrão, escolha **Executar...** e, em seguida, escolha o grupo no menu.  
+- Para executar todos os testes em um grupo padrão, escolha **Executar...** e, em seguida, escolha o grupo no menu.  
   
--   Selecione os testes individuais que deseja executar, abra o menu de contexto para um teste selecionado e escolha **Executar Testes Selecionados**.  
+- Selecione os testes individuais que deseja executar, abra o menu de contexto para um teste selecionado e escolha **Executar Testes Selecionados**.  
   
--   Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o botão de alternância ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.  
+- Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o botão de alternância ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.  
   
- A barra de aprovação/reprovação na parte superior da janela do Gerenciador de Testes é animada conforme os testes são executados. Na conclusão da execução de teste, a barra de aprovação/reprovação ficará verde se todos os testes forem aprovados ou vermelha se algum deles for reprovado.  
+  A barra de aprovação/reprovação na parte superior da janela do Gerenciador de Testes é animada conforme os testes são executados. Na conclusão da execução de teste, a barra de aprovação/reprovação ficará verde se todos os testes forem aprovados ou vermelha se algum deles for reprovado.  
   
- ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
+  ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
 ###  <a name="BKMK_Run_tests_after_every_build"></a> Executar testes após cada build  
   
@@ -104,19 +102,19 @@ Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou 
   
  O painel de detalhes de teste exibe as seguintes informações:  
   
--   O nome do arquivo de origem e o número de linha do método de teste.  
+- O nome do arquivo de origem e o número de linha do método de teste.  
   
--   O status do teste.  
+- O status do teste.  
   
--   O tempo decorrido que o método de teste levou para ser executado.  
+- O tempo decorrido que o método de teste levou para ser executado.  
   
- Se o teste falhar, o painel de detalhes também exibe:  
+  Se o teste falhar, o painel de detalhes também exibe:  
   
--   A mensagem retornada pela estrutura de teste de unidade para o teste.  
+- A mensagem retornada pela estrutura de teste de unidade para o teste.  
   
--   O rastreamento de pilha no momento em que o teste falhou.  
+- O rastreamento de pilha no momento em que o teste falhou.  
   
- ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
+  ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Exibir o código-fonte de um método de teste  
  Para exibir o código-fonte para um método de teste no editor do Visual Studio, selecione o teste e, em seguida, escolha **Abrir teste** no menu de contexto (teclado: F12).  
@@ -195,17 +193,17 @@ TEST_METHOD(Method1)
 ###  <a name="BKMK_Search_and_filter_the_test_list"></a> Pesquisar e filtrar a lista de testes  
  Você pode usar o Gerenciador de Testes filtros para limitar os métodos de teste em seus projetos que você exibe e executa.  
   
- Quando você digitar em uma cadeia de caracteres na caixa de pesquisa do Gerenciador de Testes e a tecla ENTER, a lista de testes é filtrada para exibir somente os testes cujos nomes totalmente qualificados contêm a cadeia de caracteres.  
+ Quando você digita uma cadeia de caracteres na caixa de pesquisa do Gerenciador de Testes e escolhe a tecla ENTER, a lista de testes é filtrada para exibir somente os testes cujos nomes totalmente qualificados contêm a cadeia de caracteres.  
   
  Para filtrar por um critério diferente:  
   
-1.  Abra a lista suspensa à direita da caixa de pesquisa.  
+1. Abra a lista suspensa à direita da caixa de pesquisa.  
   
-2.  Escolha um novo critério.  
+2. Escolha um novo critério.  
   
-3.  Insira o valor do filtro entre aspas.  
+3. Insira o valor do filtro entre aspas.  
   
- ![Filtrar testes no Gerenciador de testes](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
+   ![Filtrar testes no Gerenciador de testes](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
 >  As pesquisas não diferenciam maiúsculas de minúsculas e correspondem a cadeia especificada para qualquer parte do valor de critérios.  
@@ -257,16 +255,16 @@ FullName:"MyClass" - FullName:"PerfTest"
 ###  <a name="BKMK_Debug_unit_tests"></a> Depurar testes de unidade  
  Você pode usar o Gerenciador de Testes para iniciar uma sessão de depuração para os testes. Passar pelo código com o depurador do Visual Studio permite-lhe navegar facilmente entre os testes de unidade e o projeto sendo testado. Para iniciar a depuração:  
   
-1.  No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.  
+1. No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.  
   
-    > [!NOTE]
-    >  Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.  
+   > [!NOTE]
+   >  Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.  
   
-2.  No Gerenciador de Testes, selecione os métodos de teste e escolha **Depurar Testes Selecionados** no menu de contexto.  
+2. No Gerenciador de Testes, selecione os métodos de teste e escolha **Depurar Testes Selecionados** no menu de contexto.  
   
- Para obter mais informações sobre o depurador, consulte [Depuração no Visual Studio](../debugger/debugging-in-visual-studio.md).  
+   Para obter mais informações sobre o depurador, consulte [Depuração no Visual Studio](../debugger/debugging-in-visual-studio.md).  
   
- ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
+   ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
 ###  <a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnosticar problemas de desempenho do método de teste  
  Para diagnosticar por que um método de teste está levando muito tempo, selecione o método no Gerenciador de Testes e, em seguida, escolha o perfil no menu de contexto. Consulte [Gerenciador de Desempenho](../profiling/performance-explorer.md).  
@@ -280,19 +278,19 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  Para executar a cobertura de código para métodos de teste em uma solução:  
   
-1.  Escolha **Testes** no menu do Visual Studio e, em seguida, escolha **Analisar cobertura de código**.  
+1. Escolha **Testes** no menu do Visual Studio e, em seguida, escolha **Analisar cobertura de código**.  
   
-2.  Escolha um dos seguintes comandos do submenu:  
+2. Escolha um dos seguintes comandos do submenu:  
   
-    -   **Testes selecionados** executa os métodos de teste que você selecionou no Gerenciador de Testes.  
+   -   **Testes selecionados** executa os métodos de teste que você selecionou no Gerenciador de Testes.  
   
-    -   **Todos os testes** executa todos os métodos de teste na solução.  
+   -   **Todos os testes** executa todos os métodos de teste na solução.  
   
- A janela Resultados de Cobertura de Código exibe o percentual dos blocos que foram exercidos por linha, função, classe, namespace e módulo de código do produto.  
+   A janela Resultados de Cobertura de Código exibe o percentual dos blocos que foram exercidos por linha, função, classe, namespace e módulo de código do produto.  
   
- Para obter mais informações, consulte [Usando cobertura de código para determinar quanto código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
+   Para obter mais informações, consulte [Usando cobertura de código para determinar quanto código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
- ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
+   ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
 ##  <a name="BKMK_External_resources"></a> Recursos externos  
   

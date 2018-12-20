@@ -1,7 +1,7 @@
 ---
 title: 'Idiadatasource:: Loaddataforexe | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaDataSource::loadDataForExe method
 ms.assetid: d94a1068-f53f-44b5-b6fb-00dec361a7f2
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d64c5422d97af895e6971145ba9757a111f4297
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0c66a9f8859889e85d3f8edbdfedb702d168fb6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474368"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728517"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiadatasource:: Loaddataforexe](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiadatasource-loaddataforexe).  
-  
 Abre e prepara os dados de depuração associados ao arquivo.exe/.dll.  
   
 ## <a name="syntax"></a>Sintaxe  

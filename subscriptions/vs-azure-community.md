@@ -9,12 +9,12 @@ description: Saiba mais sobre o benefício da Comunidade Azure incluído nas ass
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 92115e0beef07b50e2ea0783ccde6a9cc792c838
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 693e51d969481d6511e3663d2f675861821c99fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283724"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937454"
 ---
 # <a name="azure-community"></a>Comunidade Azure
 
@@ -51,16 +51,18 @@ Obtenha ajuda diretamente da equipe do Azure em fóruns de suporte selecionados 
 ## <a name="eligibility"></a>Qualificação
 A disponibilidade do benefício Comunidade Azure depende do nível de sua assinatura, conforme mostrado abaixo:
 
-| Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Padrão, nuvem anual)   | VL, Azure, Retail   | Um ano      |  Sim          |
-| Visual Studio Professional (Padrão, nuvem anual)  | VL, Azure, Retail                                      | Um ano                                                           |  Sim          |
-| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Um ano                                             |  Sim          |
-| Plataformas MSDN (Padrão)                                          | VL, Retail                                              |Um ano                                              |  Sim          |
-| Visual Studio Enterprise (nuvem mensal), Visual Studio Professional (nuvem mensal), NFR<sup>1</sup>                                          | Todos                                              |Não disponível                                              |  Não          |
-| Visual Studio Dev Essentials                                        | N/D                                              |Não disponível                                              |  Não          |
-|
-<sup>1</sup>  *Inclui: NFR (Proibida a revenda), Microsoft FTE, MVP (Microsoft Valued Partner), RD (Diretor regional), VSIP (Visual Studio Industry Partner), BizSpark, Imagine, MCT (Microsoft Certified Trainer)*
+
+|                                          Nível de Assinatura                                           |     Canais      |    Benefício    | Renovável? |
+|-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
+|                           Visual Studio Enterprise (Padrão, nuvem anual)                           | VL, Azure, Retail |   Um ano    |    Sim     |
+|                          Visual Studio Professional (Padrão, nuvem anual)                          | VL, Azure, Retail |   Um ano    |    Sim     |
+|                              Visual Studio Test Professional (Padrão)                               |    VL, Retail     |   Um ano    |    Sim     |
+|                                       Plataformas MSDN (Padrão)                                       |    VL, Retail     |   Um ano    |    Sim     |
+| Visual Studio Enterprise (nuvem mensal), Visual Studio Professional (nuvem mensal), NFR<sup>1</sup> |        Todos        | Não disponível |     Não     |
+|                                     Visual Studio Dev Essentials                                      |        N/D        | Não disponível |     Não     |
+|                                                                                                       |                   |               |            |
+
+<sup>1</sup>  *Inclui: NFR (Proibida a revenda), Microsoft FTE, MVP (Microsoft Valued Professional), RD (Diretor regional), VSIP (Visual Studio Industry Partner), BizSpark, Imagine, MCT (Microsoft Certified Trainer)*
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 

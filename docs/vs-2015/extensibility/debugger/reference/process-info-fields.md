@@ -1,7 +1,7 @@
 ---
 title: PROCESS_INFO_FIELDS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 0d9cc345-3d3a-44d8-ae15-a67acb97a828
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b272fba2e05c25e60b2db1f11be16b97d261101
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4349a4a2ad55c53886ab281652ff990aa608682
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472671"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807732"
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [PROCESS_INFO_FIELDS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/process-info-fields).  
-  
 Especificado que tipo de informações para recuperar para um processo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_PROCESS_INFO_FIELDS {   
+enum enum_PROCESS_INFO_FIELDS {   
    PIF_FILE_NAME             = 0x00000001,  
    PIF_BASE_NAME             = 0x00000002,  
    PIF_TITLE                 = 0x00000004,  
@@ -49,7 +47,7 @@ typedef DWORD PROCESS_INFO_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_PROCESS_INFO_FIELDS {   
+public enum enum_PROCESS_INFO_FIELDS {   
    PIF_FILE_NAME             = 0x00000001,  
    PIF_BASE_NAME             = 0x00000002,  
    PIF_TITLE                 = 0x00000004,  

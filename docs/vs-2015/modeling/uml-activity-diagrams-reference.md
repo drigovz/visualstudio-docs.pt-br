@@ -1,7 +1,7 @@
 ---
 title: 'Diagramas de atividade UML: Referência | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,34 +20,32 @@ helpviewer_keywords:
 - behaviors, UML
 ms.assetid: 07efcd17-2a96-4052-9957-6dcccbb725ee
 caps.latest.revision: 50
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bfe4eaad401ce61534e5785ed82b9e33fa2f6610
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2dcfa13a7ac97a5afd3e315fcef13a706c5f4bce
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462153"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810462"
 ---
 # <a name="uml-activity-diagrams-reference"></a>Diagramas de atividade UML: referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [diagramas de atividade UML: referência](https://docs.microsoft.com/visualstudio/modeling/uml-activity-diagrams-reference).  
-  
 Uma *diagrama de atividade* mostra um processo de negócios ou um software como um fluxo de trabalho por meio de uma série de ações. As pessoas, os componentes de software ou computadores podem executar essas ações.  
   
  Você pode usar um diagrama de atividade para descrever os processos de vários tipos, como os exemplos a seguir:  
   
--   Um processo de negócios ou um fluxo de trabalho entre usuários e seu sistema. Para obter mais informações, consulte [requisitos de usuário do modelo](../modeling/model-user-requirements.md).  
+- Um processo de negócios ou um fluxo de trabalho entre usuários e seu sistema. Para obter mais informações, consulte [requisitos de usuário do modelo](../modeling/model-user-requirements.md).  
   
--   As etapas realizadas em um caso de uso. Para obter mais informações, consulte [diagramas de caso de uso UML: diretrizes](../modeling/uml-use-case-diagrams-guidelines.md).  
+- As etapas realizadas em um caso de uso. Para obter mais informações, consulte [diagramas de caso de uso UML: diretrizes](../modeling/uml-use-case-diagrams-guidelines.md).  
   
--   Um protocolo de software, ou seja, as sequências permitidos de interações entre componentes.  
+- Um protocolo de software, ou seja, as sequências permitidos de interações entre componentes.  
   
--   Um algoritmo de software.  
+- Um algoritmo de software.  
   
- Este tópico descreve os elementos que você pode usar diagramas de atividade. Para obter mais informações detalhadas na informações sobre atividade de desenho consulte diagramas [diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md). Para criar um diagrama de atividade UML, nos **arquitetura** menu, clique em **UML novo ou diagrama de camada**. Para obter mais informações sobre como desenhar diagramas de modelagem em geral, consulte [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
+  Este tópico descreve os elementos que você pode usar diagramas de atividade. Para obter mais informações detalhadas na informações sobre atividade de desenho consulte diagramas [diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md). Para criar um diagrama de atividade UML, nos **arquitetura** menu, clique em **UML novo ou diagrama de camada**. Para obter mais informações sobre como desenhar diagramas de modelagem em geral, consulte [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-activity-diagrams"></a>Diagramas de atividade de leitura  
  As tabelas nas seções a seguir descrevem os elementos que você pode usar em um diagrama de atividade e suas propriedades principais. Para obter uma lista completa das propriedades dos elementos, consulte [propriedades de elementos em diagramas de atividade UML](../modeling/properties-of-elements-on-uml-activity-diagrams.md).  

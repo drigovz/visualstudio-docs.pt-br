@@ -1,7 +1,7 @@
 ---
 title: 'Como: depurar um executável não faça parte de uma solução do Visual Studio | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,21 +24,19 @@ helpviewer_keywords:
 - executable files, debugging outside of projects
 ms.assetid: 3ea176e8-1ce5-42c4-b7a2-abe3a2765033
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36acf39ce892afb2a2601b3149987aa8d7e9f4ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a7fb9b0a31f078ce197851bccb1f4c85f24408a0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475242"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798658"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Como depurar um executável que não faça parte de uma solução do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: depurar um executável não faça parte de uma solução do Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution).  
-  
 Às vezes, convém depurar um executável que não é parte de um projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pode ser um executável criado fora do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou um executável que você recebeu de outra pessoa.  
   
  A resposta usual para esse problema é iniciar a parte externa executável do Visual Studio e anexá-la a ele usando o depurador [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obter mais informações, consulte[anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  

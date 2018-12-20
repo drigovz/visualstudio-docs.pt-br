@@ -1,7 +1,7 @@
 ---
 title: Criando um Software Development Kit | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,31 +13,29 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a1fb90707a14ff010c74cfee1f7e0dde854aa6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: a7c3ff7a3a8c872c4b624c8d2956a6802a0ab139
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473036"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723681"
 ---
 # <a name="creating-a-software-development-kit"></a>Criar um Software Development Kit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando um Software Development Kit](https://docs.microsoft.com/visualstudio/extensibility/creating-a-software-development-kit).  
-  
 Um software development kit (SDK) é uma coleção de APIs que pode ser referenciado como um único item no Visual Studio. O **Gerenciador de referências** caixa de diálogo lista todos os SDKs que são relevantes para o projeto. Quando você adiciona um SDK a um projeto, as APIs estão disponíveis no Visual Studio.  
   
  Há dois tipos de SDKs:  
   
--   SDKs de plataforma são componentes obrigatórios para o desenvolvimento de aplicativos para uma plataforma. Por exemplo, o [!INCLUDE[win81](../includes/win81-md.md)] SDK é necessário para desenvolver [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativos.  
+- SDKs de plataforma são componentes obrigatórios para o desenvolvimento de aplicativos para uma plataforma. Por exemplo, o [!INCLUDE[win81](../includes/win81-md.md)] SDK é necessário para desenvolver [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativos.  
   
--   SDKs de extensão são componentes opcionais que estendem uma plataforma, mas não são obrigatórios para o desenvolvimento de aplicativos para a plataforma.  
+- SDKs de extensão são componentes opcionais que estendem uma plataforma, mas não são obrigatórios para o desenvolvimento de aplicativos para a plataforma.  
   
- As seções a seguir descrevem a infraestrutura geral de SDKs e como criar um SDK de plataforma e um SDK de extensão.  
+  As seções a seguir descrevem a infraestrutura geral de SDKs e como criar um SDK de plataforma e um SDK de extensão.  
   
--   [SDKs de plataforma](#PlatformSDKs)  
+- [SDKs de plataforma](#PlatformSDKs)  
   
--   [SDKs de extensão](#ExtensionSDKs)  
+- [SDKs de extensão](#ExtensionSDKs)  
   
 ##  <a name="PlatformSDKs"></a> SDKs de plataforma  
  SDKs de plataforma são necessários para desenvolver aplicativos para uma plataforma. Por exemplo, o [!INCLUDE[win81](../includes/win81-md.md)] SDK é necessário para desenvolver aplicativos para [!INCLUDE[win81](../includes/win81-md.md)].  
@@ -65,7 +63,7 @@ Um software development kit (SDK) é uma coleção de APIs que pode ser referenc
 |Pasta de tempo de design|Contém arquivos que são necessários apenas em tempo de pré-execução/depuração. Eles podem incluir documentos XML, bibliotecas, cabeçalhos, binários de tempo de design de caixa de ferramentas, MSBuild artefatos e assim por diante<br /><br /> Documentos XML seriam, idealmente, ser colocados na pasta \DesignTime, mas documentos XML para referências continuarão a ser colocado juntamente com o arquivo de referência no Visual Studio. Por exemplo, o documento XML para uma referência \References\\[configuração]\\[arch]\sample.dll será \References\\[configuração]\\[arch]\sample.xml e a versão localizada desse documento será \References\\[configuração]\\[arch]\\[locale]\sample.xml.|  
 |Pasta de configuração|Pode haver apenas três pastas: debug, varejo e CommonConfiguration. Os autores do SDK podem colocar seus arquivos em CommonConfiguration se o mesmo conjunto de arquivos do SDK deve ser consumido, independentemente da configuração que o consumidor do SDK têm como destino.|  
 |Pasta de arquitetura|Qualquer pasta de arquitetura com suporte pode existir. O Visual Studio suporta as seguintes arquiteturas: x86, x64, ARM e neutral. Observação: O Win32 mapeia para x86 e AnyCPU mapeia para neutro.<br /><br /> MSBuild procura apenas sob \CommonConfiguration\neutral SDKs de plataforma.|  
-|Sdkmanifest|Esse arquivo descreve como o Visual Studio deve consumir o SDK. Examinar o manifesto do SDK para [!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = “Windows”             PlatformIdentity = “Windows, version=8.1”             TargetFramework = “.NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1”             MinVSVersion = “14.0”>              <File Reference = “Windows.winmd”>                <ToolboxItems VSCategory = “Toolbox.Default” />             </File> </FileList>`<br /><br /> **DisplayName:** o valor que o Pesquisador de objetos exibe na lista de pesquisa.<br /><br /> **PlatformIdentity:** a existência desse atributo informa ao Visual Studio e o MSBuild que o SDK é uma plataforma SDK e que as referências adicionadas dele não devem ser copiadas localmente.<br /><br /> **TargetFramework:** este atributo é usado pelo Visual Studio para garantir que somente projetos que segmentam as estruturas mesmas conforme especificado no valor deste atributo pode consumir o SDK.<br /><br /> **MinVSVersion:** esse atributo é usado pelo Visual Studio para consumir apenas os SDKs que se aplicam a ele.<br /><br /> **Referência:** esse atributo deve ser especificado para apenas essas referências que contêm controles. Para obter informações sobre como especificar se uma referência contém controles, consulte abaixo.|  
+|Sdkmanifest|Esse arquivo descreve como o Visual Studio deve consumir o SDK. Examinar o manifesto do SDK para [!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** o valor que o Pesquisador de objetos exibe na lista de pesquisa.<br /><br /> **PlatformIdentity:** a existência desse atributo informa ao Visual Studio e o MSBuild que o SDK é uma plataforma SDK e que as referências adicionadas dele não devem ser copiadas localmente.<br /><br /> **TargetFramework:** este atributo é usado pelo Visual Studio para garantir que somente projetos que segmentam as estruturas mesmas conforme especificado no valor deste atributo pode consumir o SDK.<br /><br /> **MinVSVersion:** esse atributo é usado pelo Visual Studio para consumir apenas os SDKs que se aplicam a ele.<br /><br /> **Referência:** esse atributo deve ser especificado para apenas essas referências que contêm controles. Para obter informações sobre como especificar se uma referência contém controles, consulte abaixo.|  
   
 ##  <a name="ExtensionSDKs"></a> SDKs de extensão  
  As seções a seguir descrevem o que você precisa fazer para implantar um SDK de extensão.  
@@ -144,22 +142,22 @@ Um software development kit (SDK) é uma coleção de APIs que pode ser referenc
   
 ```  
 <FileList>  
-DisplayName = “My SDK”  
-ProductFamilyName = “My SDKs”  
-TargetFramework = “.NETCore, version=v4.5.1; .NETFramework, version=v4.5.1”  
-MinVSVersion = “14.0”  
+DisplayName = "My SDK"  
+ProductFamilyName = "My SDKs"  
+TargetFramework = ".NETCore, version=v4.5.1; .NETFramework, version=v4.5.1"  
+MinVSVersion = "14.0"  
 MaxPlatformVersion = "8.1"  
 AppliesTo = "WindowsAppContainer + WindowsXAML"  
-SupportPrefer32Bit = “True”  
-SupportedArchitectures = “x86;x64;ARM”  
-SupportsMultipleVersions = “Error”  
-CopyRedistToSubDirectory = “.”  
-DependsOn = “SDKB, version=2.0”  
-MoreInfo = “http://msdn.microsoft.com/MySDK”>  
-<File Reference = “MySDK.Sprint.winmd” Implementation = “XNASprintImpl.dll”>  
-<Registration Type = “Flipper” Implementation = “XNASprintFlipperImpl.dll” />  
-<Registration Type = “Flexer” Implementation = “XNASprintFlexerImpl.dll” />  
-<ToolboxItems VSCategory = “Toolbox.Default” />  
+SupportPrefer32Bit = "True"  
+SupportedArchitectures = "x86;x64;ARM"  
+SupportsMultipleVersions = "Error"  
+CopyRedistToSubDirectory = "."  
+DependsOn = "SDKB, version=2.0"  
+MoreInfo = "http://msdn.microsoft.com/MySDK">  
+<File Reference = "MySDK.Sprint.winmd" Implementation = "XNASprintImpl.dll">  
+<Registration Type = "Flipper" Implementation = "XNASprintFlipperImpl.dll" />  
+<Registration Type = "Flexer" Implementation = "XNASprintFlexerImpl.dll" />  
+<ToolboxItems VSCategory = "Toolbox.Default" />  
 </File>  
 </FileList>  
 ```  
@@ -206,26 +204,26 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
 1.  Coloque os controles na categoria da caixa de ferramentas padrão.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Toolbox.Default”/>       
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Toolbox.Default"/>       
     </File>  
     ```  
   
 2.  Coloque controles em um nome de categoria específico.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory= “MyCategoryName”/>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory= "MyCategoryName"/>  
     </File>  
     ```  
   
 3.  Coloque controles em nomes de categoria específica.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Graph”>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Graph">  
         <ToolboxItems/>  
-        <ToolboxItems VSCategory = “Data”>  
+        <ToolboxItems VSCategory = "Data">  
         <ToolboxItems />  
     </File>  
     ```  
@@ -234,8 +232,8 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
   
     ```  
     // Blend accepts a slightly different structure for the category name because it allows a path rather than a single category.  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Graph” BlendCategory = “Controls/sample/Graph”>   
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Graph" BlendCategory = "Controls/sample/Graph">   
         <ToolboxItems />  
     </File>  
     ```  
@@ -243,10 +241,10 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
 5.  Enumere controles específicos de modo diferente no Blend e o Visual Studio.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Graph”>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Graph">  
         <ToolboxItems/>  
-        <ToolboxItems BlendCategory = “Controls/sample/Graph”>  
+        <ToolboxItems BlendCategory = "Controls/sample/Graph">  
         <ToolboxItems/>  
     </File>  
     ```  
@@ -254,10 +252,10 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
 6.  Enumerar os controles específicos e colocá-los em um caminho comum do Visual Studio ou apenas no grupo todos os controles.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Toolbox.Common”>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Toolbox.Common">  
         <ToolboxItems />  
-        <ToolboxItems VSCategory = “Toolbox.All”>  
+        <ToolboxItems VSCategory = "Toolbox.All">  
         <ToolboxItems />  
     </File>  
     ```  
@@ -265,8 +263,8 @@ MoreInfo = “http://msdn.microsoft.com/MySDK”>
 7.  Enumerar os controles específicos e mostrar apenas um conjunto específico em ChooseItems sem eles sendo na caixa de ferramentas.  
   
     ```  
-    <File Reference = “sample.winmd”>  
-        <ToolboxItems VSCategory = “Toolbox.ChooseItemsOnly”>  
+    <File Reference = "sample.winmd">  
+        <ToolboxItems VSCategory = "Toolbox.ChooseItemsOnly">  
         <ToolboxItems />  
     </File>  
     ```  

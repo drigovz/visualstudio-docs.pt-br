@@ -1,7 +1,7 @@
 ---
 title: 'CA1024: Usar propriedades quando apropriado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 952bb3c63e9d8ce645b9e986f44aaed50cb0afa4
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: f7d5b5e459d80c69f856860a9b2aa0302191a968
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858921"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: usar propriedades quando apropriado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1024: usar propriedades quando apropriado](https://docs.microsoft.com/visualstudio/code-quality/ca1024-use-properties-where-appropriate).
 
 |||
 |-|-|
@@ -45,25 +43,25 @@ A versão mais recente deste tópico pode ser encontrada em [CA1024: usar propri
 ## <a name="rule-description"></a>Descrição da Regra
  Na maioria dos casos, as propriedades representam dados e os métodos executam ações. As propriedades são acessadas como campos, o que os torna mais fácil de usar. Um método é um bom candidato para se tornar uma propriedade, se houver uma das seguintes condições:
 
--   Não usa nenhum argumento e retorna as informações de estado de um objeto.
+- Não usa nenhum argumento e retorna as informações de estado de um objeto.
 
--   Aceita um único argumento para definir alguma parte do estado de um objeto.
+- Aceita um único argumento para definir alguma parte do estado de um objeto.
 
- Propriedades devem se comportar como se fossem campos; Se o método não for possível, ele não deve ser alterado para uma propriedade. Métodos são melhores do que as propriedades nas seguintes situações:
+  Propriedades devem se comportar como se fossem campos; Se o método não for possível, ele não deve ser alterado para uma propriedade. Métodos são melhores do que as propriedades nas seguintes situações:
 
--   O método executa uma operação demorada. O método é perceivably mais lento do que o tempo necessário para definir ou obter o valor de um campo.
+- O método executa uma operação demorada. O método é perceivably mais lento do que o tempo necessário para definir ou obter o valor de um campo.
 
--   O método executa uma conversão. Acesso a um campo não retorna uma versão convertida dos dados que ele armazena.
+- O método executa uma conversão. Acesso a um campo não retorna uma versão convertida dos dados que ele armazena.
 
--   O método Get tem um efeito colateral observável. Recuperando o valor de um campo não produz nenhum efeito colateral.
+- O método Get tem um efeito colateral observável. Recuperando o valor de um campo não produz nenhum efeito colateral.
 
--   A ordem de execução é importante. Definindo o valor de um campo não se baseia na ocorrência de outras operações.
+- A ordem de execução é importante. Definindo o valor de um campo não se baseia na ocorrência de outras operações.
 
--   Chamar o método duas vezes em sucessão gera resultados diferentes.
+- Chamar o método duas vezes em sucessão gera resultados diferentes.
 
--   O método é estático, mas retorna um objeto que pode ser alterado pelo chamador. Recuperando o valor de um campo não permite que o chamador alterar os dados armazenados pelo campo.
+- O método é estático, mas retorna um objeto que pode ser alterado pelo chamador. Recuperando o valor de um campo não permite que o chamador alterar os dados armazenados pelo campo.
 
--   O método retorna uma matriz.
+- O método retorna uma matriz.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, altere o método a uma propriedade.

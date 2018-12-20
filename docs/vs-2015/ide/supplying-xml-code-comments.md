@@ -1,7 +1,7 @@
 ---
 title: Fornecendo comentários de código XML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,21 +20,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b80e9ce62e74cf7d164dd745120b710c096e366e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77c0eab37d23a9324d10c89b435f771dba28e634
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461883"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185452"
 ---
 # <a name="supplying-xml-code-comments"></a>Fornecendo comentários de código XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [fornecendo comentários de código XML](https://docs.microsoft.com/visualstudio/ide/supplying-xml-code-comments).  
-  
 É possível disponibilizar os comentários de arquivos de código-fonte como o IntelliSense. Ao adicionar a opção /doc à linha de comando do compilador do Visual Basic, C# ou C++, é gerado um arquivo .xml que serve como base para a documentação do IntelliSense.  
   
- Para obter mais informações sobre como documentar o código no Visual Basic, consulte [Como criar a documentação XML](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  
+ Para obter mais informações sobre como documentar o código no Visual Basic, consulte [como: criar documentação XML](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  
   
  Para obter mais informações sobre como documentar o código no C#, consulte [Comentários da documentação XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
   

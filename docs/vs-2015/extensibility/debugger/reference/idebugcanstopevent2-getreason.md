@@ -1,7 +1,7 @@
 ---
 title: IDebugCanStopEvent2::GetReason | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: f5de31ca-7b8d-4029-9cf9-ba860ac66af6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fcc130a2b6dc1874c1ac536ae2e7d13aa3db4952
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d34802ccf4abe16d4fc6b7428405dd89558b5f6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467216"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795278"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugCanStopEvent2::GetReason](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcanstopevent2-getreason).  
-  
 Obtém o motivo por que deseja interromper o mecanismo de depuração (DES).  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetReason(   
+HRESULT GetReason(   
    CANSTOP_REASON* pcr  
 );  
 ```  
   
 ```csharp  
-int GetReason(   
+int GetReason(   
    out enum_CANSTOP_REASON pcr  
 );  
 ```  

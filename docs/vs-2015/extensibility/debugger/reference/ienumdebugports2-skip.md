@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPorts2::Skip | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a837383f-7b39-4e06-b336-f1715b073dbe
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 646e1659d737fe60223fa3ef89a21de571c7adad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d81e7e3edcc229b9b73ddc110dee0b09bb342e0f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463524"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726687"
 ---
 # <a name="ienumdebugports2skip"></a>IEnumDebugPorts2::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugPorts2::Skip](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugports2-skip).  
-  
 Ignora o número especificado de elementos.  
   
 ## <a name="syntax"></a>Sintaxe  

@@ -1,7 +1,7 @@
 ---
 title: 'Como: usar marcadores de texto | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 76eed51c-eecb-4579-823e-13df2f0526b9
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 291b24af4faf2cb285f744dff232a541c2f364f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4fea8e6d5774e8991cf70cbc84e6b713d59f199f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464031"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810190"
 ---
 # <a name="how-to-use-text-markers"></a>Como: usar marcadores de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: Use marcadores de texto](https://docs.microsoft.com/visualstudio/extensibility/how-to-use-text-markers).  
-  
 Marcadores de texto podem ser aplicadas para editar um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> objeto.  
   
 ## <a name="procedures"></a>Procedimentos  

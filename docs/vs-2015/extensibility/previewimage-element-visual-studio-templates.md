@@ -1,7 +1,7 @@
 ---
 title: Elemento PreviewImage (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 916b500862f614a58c4c7234a42fef299e8e206d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 81b80af3252cd48c2656577a6efdd6e08c251738
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474421"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810215"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>Elemento PreviewImage (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento PreviewImage (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/previewimage-element-visual-studio-templates).  
-  
 Especifica a imagem de visualização, como um nome de arquivo para a imagem de visualização que aparecerá em ambos os **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.  
   
  \<VSTemplate >  

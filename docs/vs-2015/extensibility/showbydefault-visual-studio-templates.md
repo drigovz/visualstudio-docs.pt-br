@@ -1,7 +1,7 @@
 ---
 title: ShowByDefault (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 063836d07931456d99bce31c793866e7d5421c91
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6cd368d33e218d0f240a8f6272cfbfba846f04e8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462381"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781797"
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ShowByDefault (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/showbydefault-visual-studio-templates).  
-  
 Se `false`, especifica que o modelo só será exibido em especificado [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
  \<VSTemplate >  

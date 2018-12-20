@@ -1,7 +1,7 @@
 ---
 title: Caixa de Ferramentas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90860609f10948ab7f1cd2dd887ea06dcd48c7d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c12fe819d46eae073367d10c50deec9ee7b4c26
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463902"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241469"
 ---
 # <a name="toolbox"></a>Caixa de Ferramentas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [caixa de ferramentas](https://docs.microsoft.com/visualstudio/ide/reference/toolbox).  
-  
   
 A **Caixa de Ferramentas** exibe ícones de controles e outros itens que você pode adicionar a projetos [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para abrir a **Caixa de Ferramentas**, clique em **Caixa de Ferramentas** no menu **Exibir**. Você pode encaixar a **Caixa de Ferramentas** e pode fixá-la aberta ou configurá-la para **Ocultar Automaticamente**.  
   

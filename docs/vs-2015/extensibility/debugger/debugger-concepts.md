@@ -1,7 +1,7 @@
 ---
 title: Conceitos do depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2d371d38-f1a0-4a9a-8ea3-100e8c0149b7
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec7d32d19b6b2bac906bb974e2e17f86efd45243
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 076fc9aee3cf794d587b736c2bd0d37f572d30ea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472820"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729516"
 ---
 # <a name="debugger-concepts"></a>Conceitos do depurador
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [conceitos do depurador](https://docs.microsoft.com/visualstudio/extensibility/debugger/debugger-concepts).  
-  
 Para compilar no pacote de depuração do Visual Studio, você precisa estar familiarizado com os conceitos de arquiteturas usados na criação do pacote.  
   
 ## <a name="in-this-section"></a>Nesta seção  

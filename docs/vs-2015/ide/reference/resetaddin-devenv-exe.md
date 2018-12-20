@@ -1,7 +1,7 @@
 ---
 title: -ResetAddin (devenv.exe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f306e6952b5cf0d41901b85e554cfc3f444dbb00
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f1b53a30845ca4b20372fb5a6e3552f31f3c1b60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462713"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950518"
 ---
 # <a name="resetaddin-devenvexe"></a>/ResetAddin (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [- ResetAddin (devenv.exe)](https://docs.microsoft.com/visualstudio/ide/reference/resetaddin-devenv-exe).  
-  
   
 Remove comandos e comando da interface do usuário associado ao Suplemento especificado.  
   
@@ -44,7 +42,7 @@ Devenv /ResetAddin AddIn
  Opcional. O nome de comando do Suplemento.  
   
 ## <a name="remarks"></a>Comentários  
- Por padrão, o nome do comando do suplemento é igual a *\<AddInSolutionName>*.Connect *.\<AddInSolutionName>* e aparece no Connect.cs como o parâmetro `commandName` do método `Exec`. Você também pode verificar o nome do comando começando a digitar o nome do suplemento na janela Comandos no Visual Studio e usando o IntelliSense para preencher o restante.  
+ Por padrão, o nome do comando do suplemento é igual a *\<AddInSolutionName>*.Connect<em>.\<AddInSolutionName></em> e aparece no Connect.cs como o parâmetro `commandName` do método `Exec`. Você também pode verificar o nome do comando começando a digitar o nome do suplemento na janela Comandos no Visual Studio e usando o IntelliSense para preencher o restante.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir inicia o Visual Studio e impede o suplemento `MyAddin` de ser executado na inicialização.  

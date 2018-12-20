@@ -1,7 +1,7 @@
 ---
 title: Avaliação de expressões | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c51cc08da8c71a2ac1f25d02461ea9c24797ebc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bcecdaaea21dfc0d6e776790757cbd207494271
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467502"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806224"
 ---
 # <a name="evaluating-expressions"></a>Avaliando expressões
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [avaliar expressões](https://docs.microsoft.com/visualstudio/extensibility/debugger/evaluating-expressions).  
-  
 As expressões são criadas de cadeias de caracteres passadas do Autos, inspeção, QuickWatch ou windows imediatas. Quando uma expressão é avaliada, ele gera uma cadeia de caracteres imprimível que contém o nome e tipo de variável ou argumento e seu valor. Essa cadeia de caracteres é exibida na janela do IDE correspondente.  
   
 ## <a name="implementation"></a>Implementação  

@@ -16,38 +16,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5377b4fbca562ad41b153c72f27a6eaecc84af56
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 19642d5a327982454c9eaf4e5233451d5dba499e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179015"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671710"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para criar aplicativos acessíveis
 
-Use os links a seguir para localizar informações sobre as tecnologias compatíveis com design acessível, bem como dicas e exemplos para desenvolver aplicativos do Windows e sites acessíveis. Informações gerais sobre acessibilidade podem ser encontradas online em [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).
+Use os links a seguir para localizar informações sobre as tecnologias compatíveis com design acessível, além de dicas e exemplos para desenvolver aplicativos do Windows e sites acessíveis. Informações gerais sobre acessibilidade podem ser encontradas online em [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).
 
 ## <a name="technologies"></a>Tecnologias
 
-* **Microsoft Active Accessibility** Uma tecnologia baseada em COM que melhora a acessibilidade auxilia no trabalho com aplicativos em execução no Microsoft Windows. Ele fornece bibliotecas de link dinâmico que são incorporadas ao sistema operacional, bem como uma interface COM e elementos de programação de aplicativo que forneçam métodos confiáveis para expor informações sobre os elementos da interface do usuário. Para obter mais informações, consulte [http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592.aspx).
+* **Microsoft Active Accessibility** Uma tecnologia baseada em COM que melhora a acessibilidade auxilia no trabalho com aplicativos em execução no Microsoft Windows. Ela fornece bibliotecas de vínculo dinâmico que são incorporadas ao sistema operacional e a uma interface COM. Ela também tem elementos de programação de aplicativo que fornecem métodos para expor informações sobre os elementos de interface do usuário. Para obter mais informações, confira [Acessibilidade ativa da Microsoft](/windows/desktop/WinAuto/microsoft-active-accessibility).
 
-* **Tecnologias de fala do Microsoft .NET** O SDK de Fala do Microsoft .NET é um conjunto de controles [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] da Microsoft, um suplemento de Fala do Microsoft Internet Explorer, aplicativos de exemplo e documentação que permite aos desenvolvedores Web criar, depurar e implantar aplicativos [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] habilitados para fala. As ferramentas são integradas diretamente ao Microsoft Visual Studio, permitindo que os desenvolvedores aproveitem o ambiente de desenvolvimento familiar. Para obter mais informações, consulte [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).
+* **Tecnologias de fala do Microsoft .NET** O SDK de Fala do Microsoft .NET oferece um conjunto de controles [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] da Microsoft, um suplemento de Fala do Microsoft Internet Explorer, aplicativos de exemplo e documentação. Os desenvolvedores da Web podem usar essas ferramentas para criar, depurar e implantar aplicativos [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] habilitados para fala. As ferramentas são integradas diretamente ao Microsoft Visual Studio, permitindo que os desenvolvedores trabalhem no ambiente de desenvolvimento familiar. Para obter mais informações, confira [Speech server](/previous-versions/office/developer/speech-technologies/ms950383\(v\=msdn.10\)) (Servidor de fala).
 
-* **Noções básicas sobre SAMI 1.0** A tecnologia SAMI (Intercâmbio de Mídia Acessível Sincronizado) da Microsoft oferece uma maneira para os desenvolvedores criar legenda de conteúdo de áudio para multimídia de PC. Para saber mais, consulte [Noções básicas sobre SAMI 1.0](http://msdn.microsoft.com/library/ms971327.aspx).
+* **Noções básicas sobre SAMI 1.0** A tecnologia SAMI (Intercâmbio de Mídia Acessível Sincronizado) da Microsoft oferece uma maneira para os desenvolvedores criar legenda de conteúdo de áudio para multimídia de PC. Para saber mais, consulte [Noções básicas sobre SAMI 1.0](/previous-versions/windows/desktop/dnacc/understanding-sami-1.0).
 
 ## <a name="windows-applications"></a>Aplicativos do Windows
 
-* **[Passo a passo: criando um aplicativo acessível baseado em Windows](http://msdn.microsoft.com/Library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b)** Este tópico fornece instruções passo a passo para incluir os cinco requisitos de acessibilidade para o logotipo "Certified for Windows" em um aplicativo do Windows de exemplo.
+* **[Passo a passo: criando um aplicativo acessível baseado em Windows](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** Este artigo fornece instruções passo a passo para incluir os cinco requisitos de acessibilidade para o logotipo "Certified for Windows" em um aplicativo do Windows de exemplo.
 
-* **Diretrizes para design da interface do usuário do teclado** Este artigo técnico descreve como criar uma interface do usuário de aplicativos do Windows para a qual os usuários possam navegar do teclado. Para obter mais informações, consulte [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).
+* **Diretrizes para design da interface do usuário do teclado** Este artigo técnico descreve como criar um aplicativo do Windows para o qual os usuários possam navegar do teclado. Para obter mais informações, confira [Guidelines for keyboard user interface design](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design) (Diretrizes para o design da interface do usuário do teclado).
 
-* **Acessibilidade do console** Esse artigo técnico descreve as APIs e os eventos usados para expor o console no Windows XP para auxílios de acessibilidade. Para obter mais informações, consulte [http://msdn2.microsoft.com/library/ms971319.aspx](http://msdn2.microsoft.com/library/ms971319.aspx).
+* **Acessibilidade do console** Esse artigo técnico descreve as APIs e os eventos usados para expor o console no Windows XP para auxílios de acessibilidade. Para obter mais informações, confira [Acessibilidade do console](/previous-versions/windows/desktop/dnacc/console-accessibility).
 
 ## <a name="websites"></a>Sites
 
--   [Passo a passo: diretrizes de acessibilidade para usar Controles de Imagem, Controles Menu e AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Esse tópico apresenta instruções passo a passo para incluir controles acessíveis em uma página da Web de exemplo, bem como algumas dicas de design de acessibilidade para a Web.
+-   [Passo a passo: diretrizes de acessibilidade para usar Controles de Imagem, Controles Menu e AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Este artigo apresenta instruções passo a passo para incluir controles acessíveis em uma página da Web de exemplo. Ele também fornece algumas dicas de design de acessibilidade para a Web.
 
--   **Como criar páginas da Web acessíveis com DHTML** Esse artigo técnico lista os elementos HTML 4.0 acessíveis, bem como dicas de Web design acessíveis. Para obter mais informações, consulte [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).
+-   **Como criar páginas da Web acessíveis com DHTML** Esse artigo técnico lista os elementos HTML 4.0 acessíveis, bem como dicas de Web design acessíveis. Para obter mais informações, confira [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (Criar páginas da Web acessíveis com DHTML).
 
 ### <a name="third-party-resources"></a>Recursos de terceiros
 

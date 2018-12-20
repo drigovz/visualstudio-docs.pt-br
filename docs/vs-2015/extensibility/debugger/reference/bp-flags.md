@@ -1,7 +1,7 @@
 ---
 title: BP_FLAGS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6feb965c564e74dbb026a66a964d233b3ed75fb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: afa8f28439642feeabd7deb5000321b0c7c7ec87
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460712"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768892"
 ---
 # <a name="bpflags"></a>BP_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [BP_FLAGS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-flags).  
-  
 Fornece sinalizadores opcionais que podem ser usados para especificar informações adicionais ao definir um ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_BP_FLAGS {   
+enum enum_BP_FLAGS {   
    BP_FLAG_NONE            = 0x0000,  
    BP_FLAG_MAP_DOCPOSITION = 0x0001,  
    BP_FLAG_DONT_STOP       = 0x0002  
@@ -43,7 +41,7 @@ typedef DWORD BP_FLAGS;
 ```  
   
 ```csharp  
-public enum enum_BP_FLAGS {   
+public enum enum_BP_FLAGS {   
    BP_FLAG_NONE            = 0x0000,  
    BP_FLAG_MAP_DOCPOSITION = 0x0001,  
    BP_FLAG_DONT_STOP       = 0x0002  

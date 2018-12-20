@@ -1,7 +1,7 @@
 ---
 title: Elemento CustomDataSignature (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8c3db51d-7014-4484-802a-15aa1353dbdb
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d1ea1198039d238b8a3bac812d0ed1640c448d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7609b955127d6d1eb0f664dba24b0dcd37aa8e6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473166"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729072"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>Elemento CustomDataSignature (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento CustomDataSignature (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/customdatasignature-element-visual-studio-templates).  
-  
 Especifica a assinatura de texto para localizar os dados personalizados.  
   
  \<VSTemplate >  

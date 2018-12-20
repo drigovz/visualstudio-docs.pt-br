@@ -1,22 +1,23 @@
 ---
-title: Gerenciando projetos de aplicativo do Python
-description: A finalidade de projetos no Visual Studio, como criar e gerenciar projetos para código Python e os modelos de projeto diferentes disponíveis para Python.
-ms.date: 06/27/2018
+title: Gerenciar projetos de aplicativo do Python
+description: Os projetos do Visual Studio gerenciam dependências entre arquivos e a complexidade das relações em um aplicativo.
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f404b10c2b0a8c237684d72f89baa58bd87a7c3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6b0d31905cd0dfb835275d6fd0bbe8f153253b56
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499013"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068280"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projetos do Python no Visual Studio
 
@@ -38,7 +39,7 @@ O Visual Studio fornece uma variedade de modelos de projeto do Python para confi
 |   |   |
 |---|---|
 | ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) para obter uma introdução a projetos do Python (2min17s). |
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | Confira também [Deep Dive: Using source control with Python projects](https://youtu.be/Aq8eqApnugM) (Aprofundamento: Usando o controle do código-fonte com projetos do Python) (youtube.com, 8min55s). |
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | Assista também ao vídeo [Aprofundamento: Usar o controle do código-fonte com projetos do Python](https://youtu.be/Aq8eqApnugM) (youtube.com, 8min55s). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Adicionar arquivos, atribuir um arquivo de inicialização e definir os ambientes
 

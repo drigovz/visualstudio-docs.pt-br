@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::SetValueAsStringWithError | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,37 +17,35 @@ ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1d90fefc2822e41250f4db965156bf5dc19e88db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 628683bb80febfb87f95be4a3d942ab95b54647a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460754"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51804443"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProperty3::SetValueAsStringWithError](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror).  
-  
 Define o valor dessa propriedade e retorna uma mensagem de erro, se necessário.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT SetValueAsStringWithError(  
-   LPCOLESTR pszValue,  
-   DWORD     dwRadix,  
-   DWORD     dwTimeout,  
-   BSTR*     errorString  
+HRESULT SetValueAsStringWithError(  
+   LPCOLESTR pszValue,  
+   DWORD     dwRadix,  
+   DWORD     dwTimeout,  
+   BSTR*     errorString  
 );  
 ```  
   
 ```csharp  
-int SetValueAsStringWithError(  
-   string     pszValue,  
-   uint       dwRadix,  
-   uint       dwTimeout,  
-   out string errorString  
+int SetValueAsStringWithError(  
+   string     pszValue,  
+   uint       dwRadix,  
+   uint       dwTimeout,  
+   out string errorString  
 );  
 ```  
   

@@ -1,7 +1,7 @@
 ---
 title: Estender o filtro do Gerenciador de soluções | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: df93778a54da9c24b59228bd27e4930721273cbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d218744a4fcfcb498054105e48019bf2b0ce66b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475213"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750183"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Estendendo o filtro do Gerenciador de Soluções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [estender o filtro do Gerenciador de soluções](https://docs.microsoft.com/visualstudio/extensibility/extending-the-solution-explorer-filter).  
-  
 Você pode estender **Gerenciador de soluções** filtrar funcionalidade para mostrar ou ocultar arquivos diferentes. Por exemplo, você pode criar um filtro que mostra apenas classe factory arquivos c# na **Gerenciador de soluções**, como demonstra este passo a passo.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  

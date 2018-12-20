@@ -1,7 +1,7 @@
 ---
 title: MemoryTypeEnum | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - MemoryTypeEnum enumeration
 ms.assetid: 8778c047-edeb-4495-8f9f-3f8bbb297099
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9800f2d51440387dc5a9cd50cfb0a7758e133124
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4591557c0c12c733e9b429156d382c259b5e1199
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474134"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809903"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [MemoryTypeEnum](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/memorytypeenum).  
-  
 Especifica o tipo de memória para acessar.  
   
 ## <a name="syntax"></a>Sintaxe  

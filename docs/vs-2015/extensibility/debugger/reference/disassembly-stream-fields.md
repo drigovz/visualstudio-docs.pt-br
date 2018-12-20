@@ -1,7 +1,7 @@
 ---
 title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b5c0b3f06299f9f78a6f24d8c25410a9eb4a9ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d65c51f1589d245ab0fcbbfe8c62d77277d925ee
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468000"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775791"
 ---
 # <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DISASSEMBLY_STREAM_FIELDS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/disassembly-stream-fields).  
-  
 Especifica quais informações devem ser recuperadas sobre um campo de desmontagem.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_DISASSEMBLY_STREAM_FIELDS {   
+enum enum_DISASSEMBLY_STREAM_FIELDS {   
    DSF_ADDRESS          = 0x00000001,  
    DSF_ADDRESSOFFSET    = 0x00000002,  
    DSF_CODEBYTES        = 0x00000004,  
@@ -53,7 +51,7 @@ typedef DWORD DISASSEMBLY_STREAM_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_DISASSEMBLY_STREAM_FIELDS {   
+public enum enum_DISASSEMBLY_STREAM_FIELDS {   
    DSF_ADDRESS          = 0x00000001,  
    DSF_ADDRESSOFFSET    = 0x00000002,  
    DSF_CODEBYTES        = 0x00000004,  

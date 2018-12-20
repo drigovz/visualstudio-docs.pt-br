@@ -1,7 +1,7 @@
 ---
-title: Dicas e truques no depurador do Visual Studio
+title: Dicas e truques no depurador
 description: Saiba mais sobre alguns dos recursos menos conhecidos suportados pelo depurador do Visual Studio
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 06/15/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
-ms.translationtype: MT
+ms.openlocfilehash: 238236df48adab491cd8a1f9282a8f6a440c5321
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612721"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055219"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Aprender dicas de produtividade e truques do depurador no Visual Studio
 
@@ -60,10 +60,10 @@ Com o depurador em pausa em uma linha de código, use o mouse para captar o pont
 
 ![Mova o ponteiro de execução](../debugger/media/dbg-tour-move-the-execution-pointer.gif "mover o ponteiro de execução")
 
-Alterando o fluxo de execução, você pode fazer coisas como caminhos de execução de código diferente de teste ou execute novamente o código sem reiniciar o depurador.
+Alterando o fluxo de execução, você pode fazer coisas como testar caminhos de execução de código diferentes ou executar novamente o código sem reiniciar o depurador.
 
 > [!WARNING]
-> Geralmente, você precisa ter cuidado com esse recurso, e você verá um aviso na dica de ferramenta. Você pode ver outros avisos, muito. Movendo o ponteiro não é possível reverter o seu aplicativo para um estado anterior do aplicativo.
+> Geralmente, você precisa ter cuidado com esse recurso. Um aviso é exibido na dica de ferramenta. Outros avisos também podem ser exibidos. Movendo o ponteiro não é possível reverter o seu aplicativo para um estado anterior do aplicativo.
 
 ## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Controlar um objeto fora do escopo (c#, Visual Basic)
 
@@ -145,7 +145,7 @@ Selecione uma operação na exibição de resumo para exibir mais detalhes.
 
 Para obter mais informações, consulte [Uso de rede](../profiling/network-usage.md).
 
-## <a name="modules_window"></a> Se familiarizar mais com como o depurador se anexa ao aplicativo
+## <a name="modules_window"></a> Se familiarizar mais com como o depurador se anexa ao aplicativo (C#, C++, Visual Basic, F#)
 
 Para anexar a seu aplicativo em execução, o depurador carrega arquivos de símbolo (. PDB) gerados para o mesmo build exato do aplicativo que você está tentando depurar. Em alguns cenários, um pouco conhecimento dos arquivos de símbolo pode ser útil. Você pode examinar como o Visual Studio carrega os arquivos de símbolo usando o **módulos** janela.
 

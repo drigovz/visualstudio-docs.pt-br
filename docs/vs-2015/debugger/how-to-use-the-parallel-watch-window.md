@@ -1,7 +1,7 @@
 ---
 title: 'Como: usar a janela Inspeção paralela | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,35 +20,33 @@ helpviewer_keywords:
 - debugger, parallel watch window
 ms.assetid: 28004d9b-420c-48f7-b80e-ab1519802558
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88c4efe15e2afd3f4158b93cf8701109cd3902b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43783ad2b7d0f08aace55ff3b974d64301a38db2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467342"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753122"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Como usar a janela Inspeção Paralela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Configurando uma inspeção em variáveis em Threads paralelos](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-parallel-watch-window).  
-  
 Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que uma expressão mantém em vários threads. Cada linha representa um thread que está sendo executado em um aplicativo, mas um thread pode ser representado em várias linhas. Mais especificamente, cada linha representa uma chamada de função cuja assinatura de função corresponde à função no registro de ativação atual. Você pode classificar, reorganizar, remover e agrupar os itens que estão nas colunas. Você pode sinalizar, remover sinalização, congelar (suspender) e descongelar (retomar) threads. As colunas a seguir são exibidas na **inspeção paralela** janela:  
   
--   A coluna do sinalizador, na qual você pode marcar um thread ao qual deseja prestar atenção especial.  
+- A coluna do sinalizador, na qual você pode marcar um thread ao qual deseja prestar atenção especial.  
   
--   A coluna do quadro, na qual uma seta indica o quadro selecionado.  
+- A coluna do quadro, na qual uma seta indica o quadro selecionado.  
   
--   Uma coluna configurável que pode exibir o computador, o processo, o bloco, a tarefa e o thread.  
+- Uma coluna configurável que pode exibir o computador, o processo, o bloco, a tarefa e o thread.  
   
-    > [!TIP]
-    >  Você deve abrir o **tarefa paralela** janela para exibir as informações da tarefa na **inspeção paralela** janela.  
+  > [!TIP]
+  >  Você deve abrir o **tarefa paralela** janela para exibir as informações da tarefa na **inspeção paralela** janela.  
   
--   O  **\<Adicionar inspeção >** coluna, na qual você pode inserir expressões para assistir.  
+- O  **\<Adicionar inspeção >** coluna, na qual você pode inserir expressões para assistir.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>Para exibir a janela Inspeção Paralela  
   

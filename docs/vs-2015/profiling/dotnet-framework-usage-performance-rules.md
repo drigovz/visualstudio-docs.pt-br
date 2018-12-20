@@ -1,7 +1,7 @@
 ---
 title: Regras de desempenho de uso do .NET Framework | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ddb790042e263b3d2eb8a9d7db3f73cd023db79
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0706a5279a2ab338cc6e50cce25051b4fba7b366
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464193"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756138"
 ---
 # <a name="net-framework-usage-performance-rules"></a>Regras de desempenho de uso do .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [regras de desempenho de uso do .NET Framework](https://docs.microsoft.com/visualstudio/profiling/dotnet-framework-usage-performance-rules).  
-  
 As regras de desempenho na categoria de uso do .NET Framework identificam métodos específicos que podem ser otimizados e também identificam padrões de uso mais gerais, como coleta de lixo e contenção de bloqueio, o que pode ser investigado para problemas de desempenho.  
   
 |||  

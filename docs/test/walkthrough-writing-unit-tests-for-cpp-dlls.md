@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6cc733d3d926581801391a086c7886db3cec1bcc
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382723"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877244"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Como gravar testes de unidade para DLLs em C++
 
@@ -117,53 +117,53 @@ Este passo a passo descreve como desenvolver uma DLL nativa em C++ usando a meto
 
 ##  <a name="make_functions_visible"></a> Acoplar o projeto de teste ao projeto de DLL
 
-1.  Adicione o projeto de DLL às referências de projeto do projeto de teste:
+1. Adicione o projeto de DLL às referências de projeto do projeto de teste:
 
-    1.  Abra as propriedades do projeto de teste e escolha **Propriedades Comuns** > **Estrutura e Referências**.
+   1.  Abra as propriedades do projeto de teste e escolha **Propriedades Comuns** > **Estrutura e Referências**.
 
-         ![Propriedades de projeto C++ | Estrutura e Referências](../test/media/utecpp08.png)
+        ![Propriedades de projeto C++ | Estrutura e Referências](../test/media/utecpp08.png)
 
-    2.  Escolha **Adicionar Nova Referência**.
+   2.  Escolha **Adicionar Nova Referência**.
 
-         Na caixa de diálogo **Adicionar Referência**, selecione o projeto de DLL e escolha **Adicionar**.
+        Na caixa de diálogo **Adicionar Referência**, selecione o projeto de DLL e escolha **Adicionar**.
 
-         ![Propriedades de projeto C++ | Adicionar Nova Referência](../test/media/utecpp09.png)
+        ![Propriedades de projeto C++ | Adicionar Nova Referência](../test/media/utecpp09.png)
 
-2.  No arquivo *.cpp* do teste de unidade da entidade de segurança, inclua o arquivo *.h* do código da DLL:
+2. No arquivo *.cpp* do teste de unidade da entidade de segurança, inclua o arquivo *.h* do código da DLL:
 
-    ```cpp
-    #include "..\RootFinder\RootFinder.h"
-    ```
+   ```cpp
+   #include "..\RootFinder\RootFinder.h"
+   ```
 
-3.  Adicione um teste básico que usa a função exportada:
+3. Adicione um teste básico que usa a função exportada:
 
-    ```cpp
-    TEST_METHOD(BasicTest)
-    {
-       CRootFinder rooter;
-       Assert::AreEqual(
-          // Expected value:
-          0.0,
-          // Actual value:
-          rooter.SquareRoot(0.0),
-          // Tolerance:
-          0.01,
-         // Message:
-         L"Basic test failed",
-         // Line number - used if there is no PDB file:
-         LINE_INFO());
-    }
-    ```
+   ```cpp
+   TEST_METHOD(BasicTest)
+   {
+      CRootFinder rooter;
+      Assert::AreEqual(
+         // Expected value:
+         0.0,
+         // Actual value:
+         rooter.SquareRoot(0.0),
+         // Tolerance:
+         0.01,
+        // Message:
+        L"Basic test failed",
+        // Line number - used if there is no PDB file:
+        LINE_INFO());
+   }
+   ```
 
-4.  Compile a solução.
+4. Compile a solução.
 
-     O novo teste é exibido no **Gerenciador de Testes**.
+    O novo teste é exibido no **Gerenciador de Testes**.
 
-5.  No **Gerenciador de Testes**, escolha **Executar Todos**.
+5. No **Gerenciador de Testes**, escolha **Executar Todos**.
 
-     ![Gerenciador de Testes de Unidade &#8211; Teste básico aprovado](../test/media/utecpp10.png)
+    ![Gerenciador de Testes de Unidade &#8211; Teste básico aprovado](../test/media/utecpp10.png)
 
- Você configurou o teste e os projetos de código, além de ter verificado que pode executar testes que executam funções no projeto de código. Agora, você pode começar a escrever testes e códigos reais.
+   Você configurou o teste e os projetos de código, além de ter verificado que pode executar testes que executam funções no projeto de código. Agora, você pode começar a escrever testes e códigos reais.
 
 ##  <a name="iterate"></a> Aumentar iterativamente os testes e fazer com que sejam aprovados
 

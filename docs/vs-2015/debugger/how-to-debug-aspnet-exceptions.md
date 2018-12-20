@@ -1,7 +1,7 @@
 ---
 title: 'Como: depurar exceções do ASP.NET | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,21 +20,19 @@ helpviewer_keywords:
 - exceptions, ASP.NET
 ms.assetid: 1810096e-de8c-435e-be3d-f365d0cd0a6a
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d37a67fd0b25de79ceb764e9e80884b97310a307
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d505e67018c24f659e88401b565011a4c7bea96
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463585"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789207"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Como depurar exceções do ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: depurar exceções do ASP.NET](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-aspnet-exceptions).  
-  
 Depuração de exceções é uma parte importante do desenvolvimento de um robusto [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplicativo. Informações gerais sobre como depurar exceções estão na [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md).  
   
  Para depurar sem tratamento [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] exceções, certifique-se de que o depurador é interrompido para elas. O tempo de execução do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] tem um manipulador de exceção de nível superior. Portanto, por padrão, o depurador nunca é interrompido em exceções não tratadas. Para interromper o depurador quando uma exceção é lançada, você deve selecionar **interromper quando uma exceção for: lançada** definindo para essa exceção específica na **exceções** caixa de diálogo.  

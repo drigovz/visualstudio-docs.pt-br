@@ -11,12 +11,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 8ef7b61eca40c1a5c74deeb0b3e61de0df8a6be1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637569"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934919"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Medindo o impacto de extensão na inicialização
 
@@ -169,11 +169,11 @@ No exemplo acima alguns chamada interessante pilhas seria:
 
 1. E/s usando `System.IO` classe: ao custo inclusivo desses quadros pode não ser muito caro no rastreamento, eles são uma causa potencial de um problema, pois a velocidade de e/s de arquivo irá variar de máquina para máquina.
 
-  ![quadros de e/s do sistema](media/perfview-system-io-frames.png)
+   ![quadros de e/s do sistema](media/perfview-system-io-frames.png)
 
 2. Bloqueando chamadas aguardando outro trabalho assíncrono: nesse caso, o tempo inclusivo representaria a hora em que o thread principal é bloqueado após a conclusão de trabalho assíncrono.
 
-  ![quadros de chamada de bloqueio](media/perfview-blocking-call-frames.png)
+   ![quadros de chamada de bloqueio](media/perfview-blocking-call-frames.png)
 
 Um dos outros modos de exibição no rastreamento que serão úteis para determinar o impacto será o **pilhas de carregamento de imagem**. Você pode aplicar os mesmo filtros conforme aplicado a **pilhas de tempo do Thread** visualizar e descobrir todos os assemblies carregados por causa do código executado por seu pacote de carregado automaticamente.
 

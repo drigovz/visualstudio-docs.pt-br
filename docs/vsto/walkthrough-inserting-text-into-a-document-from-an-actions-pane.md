@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 575f847758bd18c5e13298b1fddd3e34ddb98545
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b3b9683c5f41b81d529ad6f3347b54131f32f011
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669819"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948719"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Passo a passo: Inserir texto em um documento de um painel de ações
   Este passo a passo demonstra como criar um painel de ações em um documento do Microsoft Office Word. O painel de ações contém dois controles que coletar entrada e, em seguida, enviar o texto para o documento.  
@@ -60,17 +60,17 @@ ms.locfileid: "35669819"
   
 ### <a name="to-add-text-to-your-document"></a>Para adicionar texto ao documento  
   
-1.  Digite o seguinte texto no documento do Word:  
+1. Digite o seguinte texto no documento do Word:  
   
-     **21 de março de 2008**  
+    **21 de março de 2008**  
   
-     **Nome**  
+    **Nome**  
   
-     **Endereço**  
+    **Endereço**  
   
-     **Este é um exemplo de um painel de ações básicas no Word.**  
+    **Este é um exemplo de um painel de ações básicas no Word.**  
   
- Você pode adicionar um <xref:Microsoft.Office.Tools.Word.Bookmark> controle ao documento, arrastando-o do **caixa de ferramentas** no Visual Studio ou usando o **indicador** caixa de diálogo do Word.  
+   Você pode adicionar um <xref:Microsoft.Office.Tools.Word.Bookmark> controle ao documento, arrastando-o do **caixa de ferramentas** no Visual Studio ou usando o **indicador** caixa de diálogo do Word.  
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Para adicionar um controle de indicador para o seu documento  
   
@@ -145,7 +145,7 @@ ms.locfileid: "35669819"
      [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]
      [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]  
   
-2.  No c#, você deve adicionar um manipulador de eventos para o clique do botão. Você pode colocar esse código na `InsertTextControl` construtor após a chamada para `IntializeComponent`. Para obter informações sobre como criar manipuladores de eventos, consulte [como: criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  No c#, você deve adicionar um manipulador de eventos para o clique do botão. Você pode colocar esse código na `InsertTextControl` construtor após a chamada para `InitializeComponent`. Para obter informações sobre como criar manipuladores de eventos, consulte [como: criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]  
   
@@ -178,14 +178,14 @@ ms.locfileid: "35669819"
 ## <a name="next-steps"></a>Próximas etapas  
  Estas são algumas tarefas que podem vir a seguir:  
   
--   Crie um painel de ações no Excel. Para obter mais informações, consulte [como: adicionar um painel de ações para pastas de trabalho do Excel](http://msdn.microsoft.com/62abfce6-e44f-419d-85d8-26bf59f33872).  
+-   Crie um painel de ações no Excel. Para obter mais informações, consulte [como: adicionar um painel de ações para pastas de trabalho do Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100)).  
   
 -   Associe dados a controles em um painel de ações. Para obter mais informações, consulte [instruções passo a passo: associar dados a controles em um painel de ações do Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Visão geral do painel de ações](../vsto/actions-pane-overview.md)   
  [Como: adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Como: adicionar um painel de ações para pastas de trabalho do Excel](http://msdn.microsoft.com/62abfce6-e44f-419d-85d8-26bf59f33872)   
+ [Como: adicionar um painel de ações para pastas de trabalho do Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
  [Como: gerenciar o layout do controle em painéis de ações](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [Controle de indicador](../vsto/bookmark-control.md)  
   

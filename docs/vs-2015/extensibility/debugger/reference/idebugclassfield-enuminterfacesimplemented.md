@@ -1,7 +1,7 @@
 ---
 title: IDebugClassField::EnumInterfacesImplemented | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: e5523e45-d350-491e-a92c-fe0ca97d2052
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9c21a20fc832a42baa7386f50289d8297a3e34f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d27be74f14e3ce1c9dd4f3b5a95762f565e76458
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466827"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739027"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugClassField::EnumInterfacesImplemented](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugclassfield-enuminterfacesimplemented).  
-  
 Cria um enumerador para as interfaces implementadas por esta classe.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT EnumInterfacesImplemented(   
+HRESULT EnumInterfacesImplemented(   
    IEnumDebugFields** ppEnum  
 );  
 ```  

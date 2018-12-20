@@ -1,7 +1,7 @@
 ---
 title: 'CA1050: Declarar tipos em namespaces | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ef0559cc727e7ffd667ee72ebe241a958fa57450
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: acc8e574c94bf5b9e5d58899526b1b791006cd30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587010"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878590"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050: declarar tipos em namespaces
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1050: declarar tipos em namespaces](https://docs.microsoft.com/visualstudio/code-quality/ca1050-declare-types-in-namespaces).
 
 |||
 |-|-|

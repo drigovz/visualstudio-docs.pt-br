@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::UpdateSymbols | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d530f6f1-4af2-454b-bab0-02478a8fe81e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f4263d4f8e98cd03f21a9b007104f5bea3404695
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ebff3bbf56279613e0f4e707c462905f44040d8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474795"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809942"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugComPlusSymbolProvider::UpdateSymbols](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcomplussymbolprovider-updatesymbols).  
-  
 Atualiza os símbolos de depuração na memória com aqueles do fluxo de dados especificado.  
   
 ## <a name="syntax"></a>Sintaxe  

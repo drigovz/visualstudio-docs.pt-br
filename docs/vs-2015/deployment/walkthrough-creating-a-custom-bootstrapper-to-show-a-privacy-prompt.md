@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Criando um Bootstrapper personalizado para mostrar uma privacidade Prompt | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 790aa1c67ef8c76e404876bd61a42d4b286892da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e8bd1101647973a7a8f206159f8910a4e633e5da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460982"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893384"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Instruções passo a passo: criando um bootstrapper personalizado para mostrar um prompt de privacidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Criando um Bootstrapper personalizado para mostrar um Prompt de privacidade](https://docs.microsoft.com/visualstudio/deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt).  
-  
 Você pode configurar os aplicativos ClickOnce para atualizar automaticamente quando assemblies com versões do assembly e versões mais recentes do arquivo se tornam disponíveis. Para certificar-se de que seus clientes de consentimento para esse comportamento, você pode exibir um prompt de privacidade para eles. Então, eles podem escolher se deseja conceder permissão ao aplicativo para atualizar automaticamente. Se o aplicativo não tem permissão para atualizar automaticamente, ele não é instalado.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
@@ -51,23 +49,23 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
 #### <a name="to-create-a-consent-dialog-box"></a>Para criar uma caixa de diálogo de consentimento  
   
-1.  No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
+1. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-2.  No **novo projeto** caixa de diálogo, clique em **Windows**e, em seguida, clique em **WindowsFormsApplication**.  
+2. No **novo projeto** caixa de diálogo, clique em **Windows**e, em seguida, clique em **WindowsFormsApplication**.  
   
-3.  Para o **nome**, digite **ConsentDialog**e, em seguida, clique em **Okey**.  
+3. Para o **nome**, digite **ConsentDialog**e, em seguida, clique em **Okey**.  
   
-4.  No designer, clique no formulário.  
+4. No designer, clique no formulário.  
   
-5.  No **propriedades** janela, altere o **texto** propriedade a ser **caixa de diálogo de consentimento atualização**.  
+5. No **propriedades** janela, altere o **texto** propriedade a ser **caixa de diálogo de consentimento atualização**.  
   
-6.  No **caixa de ferramentas**, expanda **todos os Windows Forms**e arraste uma **rótulo** controle ao formulário.  
+6. No **caixa de ferramentas**, expanda **todos os Windows Forms**e arraste uma **rótulo** controle ao formulário.  
   
-7.  No designer, clique no controle de rótulo.  
+7. No designer, clique no controle de rótulo.  
   
-8.  No **propriedades** janela, altere o **texto** propriedade sob **aparência** ao seguinte:  
+8. No **propriedades** janela, altere o **texto** propriedade sob **aparência** ao seguinte:  
   
-     Verifica se o aplicativo que você está prestes a instalar as atualizações mais recentes na Web. Clicando em "Concordo", você deve autorizar o aplicativo para verificar e instalar atualizações automaticamente da Internet.  
+    Verifica se o aplicativo que você está prestes a instalar as atualizações mais recentes na Web. Clicando em "Concordo", você deve autorizar o aplicativo para verificar e instalar atualizações automaticamente da Internet.  
   
 9. No **caixa de ferramentas**, arraste um **caixa de seleção** controle para o meio do formulário.  
   
@@ -120,28 +118,28 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
   
      Para desenvolvedores de Visual Basic somente:  
   
-    1.  Na **Gerenciador de soluções**, clique em **ConsentDialog**.  
+    1. Na **Gerenciador de soluções**, clique em **ConsentDialog**.  
   
-    2.  Sobre o **Project** menu, clique em **Adicionar módulo**e, em seguida, clique em **adicionar**.  
+    2. Sobre o **Project** menu, clique em **Adicionar módulo**e, em seguida, clique em **adicionar**.  
   
-    3.  No arquivo de código Module1.vb, adicione o código a seguir.  
+    3. No arquivo de código Module1.vb, adicione o código a seguir.  
   
-         [!code-vb[ConsentDialog#7](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb#7)]  
+        [!code-vb[ConsentDialog#7](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb#7)]  
   
-    4.  Sobre o **projeto** menu, clique em **propriedades ConsentDialog**e, em seguida, clique no **aplicativo** guia.  
+    4. Sobre o **projeto** menu, clique em **propriedades ConsentDialog**e, em seguida, clique no **aplicativo** guia.  
   
-    5.  Desmarque a opção **habilitar estrutura de aplicativo**.  
+    5. Desmarque a opção **habilitar estrutura de aplicativo**.  
   
-    6.  No **objeto de inicialização** menu suspenso, selecione **Module1**.  
+    6. No **objeto de inicialização** menu suspenso, selecione **Module1**.  
   
-        > [!NOTE]
-        >  Desabilitar a estrutura de aplicativo desabilita recursos, como estilos visuais do Windows XP, os eventos de aplicativo, tela inicial, aplicativo de instância única e muito mais. Para obter mais informações, consulte [Página de aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > [!NOTE]
+       >  Desabilitar a estrutura de aplicativo desabilita recursos, como estilos visuais do Windows XP, os eventos de aplicativo, tela inicial, aplicativo de instância única e muito mais. Para obter mais informações, consulte [Página de aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-     Visual c# somente para desenvolvedores:  
+       Visual c# somente para desenvolvedores:  
   
-     Abra o arquivo de código de Program.cs e adicione o seguinte código.  
+       Abra o arquivo de código de Program.cs e adicione o seguinte código.  
   
-     [!code-csharp[ConsentDialog#5](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs#5)]  
+       [!code-csharp[ConsentDialog#5](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs#5)]  
   
 26. Sobre o **construir** menu, clique em **BuildSolution**.  
   

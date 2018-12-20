@@ -1,7 +1,7 @@
 ---
 title: Decisões de Design do controle de origem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5f60ec1a-5a74-4362-8293-817a4dd73872
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f43c9d2423e0eaafbdcae41169c47d5fcb01912
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0932d0029ee924d900dead6b80c3ad2d7e555a0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461507"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726079"
 ---
 # <a name="source-control-design-decisions"></a>Decisões de design de controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [decisões de Design de controle do código-fonte](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-design-decisions).  
-  
 As seguintes decisões de design devem ser consideradas para projetos ao implementar o controle de origem.  
   
 ## <a name="will-information-be-shared-or-private"></a>Informações será compartilhado ou particular?  

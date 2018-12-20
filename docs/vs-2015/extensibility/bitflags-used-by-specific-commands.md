@@ -1,7 +1,7 @@
 ---
 title: Sinalizadores de bit usados por comandos específicos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7f9a633dd88e0018c6c9ccc82438ed99770885c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e8ea658e62ca2bcd3ca4d423f00a94f83f2a2086
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467355"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798177"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Sinalizadores de bit usados por comandos específicos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [sinalizadores de bit usados por comandos específicos](https://docs.microsoft.com/visualstudio/extensibility/bitflags-used-by-specific-commands).  
-  
 O comportamento de um número de funções em que a API de plug-in de controle do código-fonte pode ser modificado, definindo um ou mais bits em um único valor. Esses valores são conhecidos como sinalizadores de bit. As vários sinalizadores de bit usados pela API de plug-in de controle de origem são detalhadas aqui, agrupados por função em que os utiliza.  
   
 ## <a name="checked-out-flag"></a>Check-Out de sinalizador  

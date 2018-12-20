@@ -24,7 +24,7 @@ A pilha de chamadas do evento de gráficos no analisador de gráficos do Visual 
   
  Esta é a janela de pilha de chamadas do evento:  
   
- ![A pilha de chamadas anteriores a um evento DrawIndexed. ] (media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
+ ![A pilha de chamadas anteriores a um evento DrawIndexed. ](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
   
 ## <a name="understanding-the-graphics-event-call-stack"></a>Noções básicas sobre a pilha de chamadas do evento de gráficos  
  Você pode usar a pilha de chamadas do evento para entender o fluxo de execução que leva a um determinado evento do Direct3D. Ele é semelhante a janela de pilha de chamadas do Visual Studio, exceto que em vez de exibir a pilha de chamadas atual do thread atual em um aplicativo em execução, ele exibe a pilha de chamadas que existia quando ocorreu o evento do Direct3D selecionado. Da pilha de chamada de evento, você pode ir para o site de chamada do evento Direct3D selecionado para inspecionar o código ao redor.  

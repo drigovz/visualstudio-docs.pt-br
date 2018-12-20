@@ -1,7 +1,7 @@
 ---
 title: Como especificar eventos de build (C#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5bda99acace01e068c58bae78e20b44b28313722
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4b645d51594cbb507ea0e6bb27a00eea21e73b7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473550"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872012"
 ---
 # <a name="how-to-specify-build-events-c"></a>Como especificar eventos de build (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: especificar eventos de Build (c#)](https://docs.microsoft.com/visualstudio/ide/how-to-specify-build-events-csharp).  
-  
 Use eventos de build para especificar comandos que são executados antes do início do build ou após sua conclusão. Eventos de build são executados somente se o build atingir com êxito esses pontos no processo de build.  
   
  Quando um projeto é compilado, eventos de pré-build são adicionados a um arquivo chamado PreBuildEvent.bat e eventos de pós-build são adicionados a um arquivo chamado PostBuildEvent.bat. Se quiser garantir a verificação de erros, adicione seus próprios comandos de verificação de erros às etapas de build.  
@@ -80,75 +78,75 @@ Use eventos de build para especificar comandos que são executados antes do iní
   
 #### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Para criar um comando .exe para alterar o manifesto do aplicativo  
   
-1.  Crie um aplicativo de console para o comando. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
+1. Crie um aplicativo de console para o comando. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-2.  Na caixa de diálogo **Novo Projeto**, expanda **Visual C#**, clique em **Windows** e, em seguida, clique no modelo **Aplicativo de Console**. Nomeie o projeto `ChangeOSVersionCS`.  
+2. Na caixa de diálogo **Novo Projeto**, expanda **Visual C#**, clique em **Windows** e, em seguida, clique no modelo **Aplicativo de Console**. Nomeie o projeto `ChangeOSVersionCS`.  
   
-3.  Em Program.cs, adicione a seguinte linha às outras instruções `using` na parte superior do arquivo:  
+3. Em Program.cs, adicione a seguinte linha às outras instruções `using` na parte superior do arquivo:  
   
-    ```  
-    using System.Xml;  
-    ```  
+   ```  
+   using System.Xml;  
+   ```  
   
-4.  No namespace `ChangeOSVersionCS`, substitua a implementação da classe `Program` pelo seguinte código:  
+4. No namespace `ChangeOSVersionCS`, substitua a implementação da classe `Program` pelo seguinte código:  
   
-    ```  
-    class Program  
-    {  
-       /// <summary>  
-       /// This function will set the minimum operating system version for a ClickOnce application.  
-       /// </summary>  
-       /// <param name="args">  
-       /// Command Line Arguments:  
-       /// 0 - Path to application manifest (.exe.manifest).  
-       /// 1 - Version of OS  
-       ///</param>  
-       static void Main(string[] args)  
-       {  
-          string applicationManifestPath = args[0];  
-          Console.WriteLine("Application Manifest Path: " + applicationManifestPath);  
+   ```  
+   class Program  
+   {  
+      /// <summary>  
+      /// This function will set the minimum operating system version for a ClickOnce application.  
+      /// </summary>  
+      /// <param name="args">  
+      /// Command Line Arguments:  
+      /// 0 - Path to application manifest (.exe.manifest).  
+      /// 1 - Version of OS  
+      ///</param>  
+      static void Main(string[] args)  
+      {  
+         string applicationManifestPath = args[0];  
+         Console.WriteLine("Application Manifest Path: " + applicationManifestPath);  
   
-          // Get version name.  
-          Version osVersion = null;  
-          if (args.Length >=2 ){  
-             osVersion = new Version(args[1]);  
-          }else{  
-             throw new ArgumentException("OS Version not specified.");  
-          }  
-          Console.WriteLine("Desired OS Version: " + osVersion.ToString());  
+         // Get version name.  
+         Version osVersion = null;  
+         if (args.Length >=2 ){  
+            osVersion = new Version(args[1]);  
+         }else{  
+            throw new ArgumentException("OS Version not specified.");  
+         }  
+         Console.WriteLine("Desired OS Version: " + osVersion.ToString());  
   
-          XmlDocument document;  
-          XmlNamespaceManager namespaceManager;  
-          namespaceManager = new XmlNamespaceManager(new NameTable());  
-          namespaceManager.AddNamespace("asmv1", "urn:schemas-microsoft-com:asm.v1");  
-          namespaceManager.AddNamespace("asmv2", "urn:schemas-microsoft-com:asm.v2");  
+         XmlDocument document;  
+         XmlNamespaceManager namespaceManager;  
+         namespaceManager = new XmlNamespaceManager(new NameTable());  
+         namespaceManager.AddNamespace("asmv1", "urn:schemas-microsoft-com:asm.v1");  
+         namespaceManager.AddNamespace("asmv2", "urn:schemas-microsoft-com:asm.v2");  
   
-          document = new XmlDocument();  
-          document.Load(applicationManifestPath);  
+         document = new XmlDocument();  
+         document.Load(applicationManifestPath);  
   
-          string baseXPath;  
-          baseXPath = "/asmv1:assembly/asmv2:dependency/asmv2:dependentOS/asmv2:osVersionInfo/asmv2:os";  
+         string baseXPath;  
+         baseXPath = "/asmv1:assembly/asmv2:dependency/asmv2:dependentOS/asmv2:osVersionInfo/asmv2:os";  
   
-          // Change minimum required operating system version.  
-          XmlNode node;  
-          node = document.SelectSingleNode(baseXPath, namespaceManager);  
-          node.Attributes["majorVersion"].Value = osVersion.Major.ToString();  
-          node.Attributes["minorVersion"].Value = osVersion.Minor.ToString();  
-          node.Attributes["buildNumber"].Value = osVersion.Build.ToString();  
-          node.Attributes["servicePackMajor"].Value = osVersion.Revision.ToString();  
+         // Change minimum required operating system version.  
+         XmlNode node;  
+         node = document.SelectSingleNode(baseXPath, namespaceManager);  
+         node.Attributes["majorVersion"].Value = osVersion.Major.ToString();  
+         node.Attributes["minorVersion"].Value = osVersion.Minor.ToString();  
+         node.Attributes["buildNumber"].Value = osVersion.Build.ToString();  
+         node.Attributes["servicePackMajor"].Value = osVersion.Revision.ToString();  
   
-          document.Save(applicationManifestPath);  
-       }  
-    }  
-    ```  
+         document.Save(applicationManifestPath);  
+      }  
+   }  
+   ```  
   
-     O comando utiliza dois argumentos: o caminho do manifesto do aplicativo (ou seja, a pasta na qual o processo de build cria o manifesto, normalmente Projectname.publish) e a nova versão do sistema operacional.  
+    O comando utiliza dois argumentos: o caminho do manifesto do aplicativo (ou seja, a pasta na qual o processo de build cria o manifesto, normalmente Projectname.publish) e a nova versão do sistema operacional.  
   
-5.  Compile o projeto. No menu **Compilar**, clique em **Compilar Solução**.  
+5. Compile o projeto. No menu **Compilar**, clique em **Compilar Solução**.  
   
-6.  Copie o arquivo .exe para um diretório como `C:\TEMP\ChangeOSVersionVB.exe`.  
+6. Copie o arquivo .exe para um diretório como `C:\TEMP\ChangeOSVersionVB.exe`.  
   
- Em seguida, invoque este comando em um evento de pós-build para modificar o manifesto do aplicativo.  
+   Em seguida, invoque este comando em um evento de pós-build para modificar o manifesto do aplicativo.  
   
 #### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>Para invocar um evento de pós-build para modificar o manifesto do aplicativo  
   

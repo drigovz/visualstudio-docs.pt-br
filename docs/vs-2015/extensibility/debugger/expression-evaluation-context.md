@@ -1,7 +1,7 @@
 ---
 title: Contexto de avaliação de expressão | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc2c2ecc4f7867c2ad39ba72f9edcb72c0935ce5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d42d5f7ef2d2514a8352abd87ef3cc46c922c044
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465393"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751225"
 ---
 # <a name="expression-evaluation-context"></a>Contexto de avaliação de expressão
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [contexto de avaliação de expressão](https://docs.microsoft.com/visualstudio/extensibility/debugger/expression-evaluation-context).  
-  
 Na [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] depuração, um **contexto de avaliação de expressão**:  
   
 -   Representa um contexto de avaliação da expressão. Geralmente, um contexto de avaliação corresponde ao escopo léxico na qual você deseja avaliar as variáveis, parâmetros, funções e métodos. Por exemplo, um contexto de avaliação de expressão associado com um quadro de pilha fornecerá o contexto para avaliar as variáveis locais, parâmetros de método e membros de classe (se aplicável).  

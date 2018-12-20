@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentText2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: e85f50a3-211c-4220-a9f4-789950ba2782
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7856512e4dc8b5bb7dfe82c82ce51af23d3959a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85b5d9e78af9e4e49b3a985ca00ffad102e6b53d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464867"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728845"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugDocumentText2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumenttext2).  
-  
 Essa interface representa um documento de texto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDebugDocumentText2 : IDebugDocument2  
+IDebugDocumentText2 : IDebugDocument2  
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  

@@ -1,7 +1,7 @@
 ---
 title: Saiba mais sobre desenvolvimento móvel com o Xamarin | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: be4fda884fc4abf9c0a5360b8e7c8c06765bbda2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 329c684dcc09a15ec86f80493d9f084e486b7cfe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474499"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733180"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Saiba mais sobre desenvolvimento móvel com o Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Saiba mais sobre desenvolvimento móvel com Xamarin](https://docs.microsoft.com/visualstudio/cross-platform/learn-about-mobile-development-with-xamarin).  
-  
   
 Este tópico direciona você a materiais de visão geral que ajudam a entender o desenvolvimento de aplicativos móveis de plataforma cruzada com o Xamarin. Se você não ainda tiver instalado o Visual Studio e o Xamarin, inicie primeiro o processo de [Instalação](../cross-platform/setup-and-install.md), depois volte aqui para trabalhar com esses recursos enquanto os instaladores estão em execução.  
   
@@ -40,13 +38,13 @@ Este tópico direciona você a materiais de visão geral que ajudam a entender o
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Fundamentos: Visão geral do ambiente do Visual Studio e do Xamarin  
  *5 a 15 minutos*  
   
--   O computador Windows com Visual Studio e Xamarin é onde você fará a maior parte de seu trabalho. Nesse computador, você compila diretamente aplicativos Android e Windows e os executa e depura em um dispositivo ou emulador. Além disso, remotamente, você compila, executa e depura aplicativos iOS por meio do Mac. O Visual Studio no computador Windows também pode se conectar ao designer de storyboard iOS e ao simulador de iOS.  
+- O computador Windows com Visual Studio e Xamarin é onde você fará a maior parte de seu trabalho. Nesse computador, você compila diretamente aplicativos Android e Windows e os executa e depura em um dispositivo ou emulador. Além disso, remotamente, você compila, executa e depura aplicativos iOS por meio do Mac. O Visual Studio no computador Windows também pode se conectar ao designer de storyboard iOS e ao simulador de iOS.  
   
--   O Mac com Xcode e Xamarin serve como o host de build/assinatura e o ambiente de tempo de execução para aplicativos iOS. Compilações para iOS do Visual Studio no computador Windows são delegadas a esse Mac. Ao depurar um aplicativo iOS do Visual Studio, ele é executado no simulador de iOS no Mac ou diretamente em um dispositivo vinculado conectado ao Mac. Nesse caso, você interagirá com o aplicativo no Mac ou próximo a ele, e terá sua experiência de depuração no Visual Studio.  
+- O Mac com Xcode e Xamarin serve como o host de build/assinatura e o ambiente de tempo de execução para aplicativos iOS. Compilações para iOS do Visual Studio no computador Windows são delegadas a esse Mac. Ao depurar um aplicativo iOS do Visual Studio, ele é executado no simulador de iOS no Mac ou diretamente em um dispositivo vinculado conectado ao Mac. Nesse caso, você interagirá com o aplicativo no Mac ou próximo a ele, e terá sua experiência de depuração no Visual Studio.  
   
- Esses relacionamentos são ilustradas abaixo, e você pode ler mais sobre como trabalhar com aplicativos iOS em [Introdução ao Xamarin.IOS para Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (xamarin.com).  
+  Esses relacionamentos são ilustradas abaixo, e você pode ler mais sobre como trabalhar com aplicativos iOS em [Introdução ao Xamarin.IOS para Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (xamarin.com).  
   
- ![O relacionamento entre computadores de desenvolvimento Windows e Mac em um ambiente de Xamarin](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Saiba 1")  
+  ![O relacionamento entre computadores de desenvolvimento Windows e Mac em um ambiente de Xamarin](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Saiba 1")  
   
 ## <a name="essentials-how-projects-are-structured"></a>Fundamentos: Como projetos são estruturados  
  *10 a 30 minutos*  
@@ -66,15 +64,15 @@ Este tópico direciona você a materiais de visão geral que ajudam a entender o
   
  Não é necessário decidir qual abordagem adotar antecipadamente; os aplicativos podem ser implementados usando uma combinação de Xamarin nativo e Xamarin.Forms:  
   
--   Use o Xamarin.Forms para criar telas de finalidade geral que fornecem interface do usuário e recursos semelhantes entre plataformas, como logons, formulários de contato e resultados da pesquisa.  
+- Use o Xamarin.Forms para criar telas de finalidade geral que fornecem interface do usuário e recursos semelhantes entre plataformas, como logons, formulários de contato e resultados da pesquisa.  
   
--   Use uma variedade de funcionalidades de personalização no Xamarin.Forms para ajustar a interface do usuário por plataforma. Isso inclui a API OnPlatform, que pode ser usada do código e do XAML, criar uma exibição personalizada, estender um renderizador existente e criar um renderizador personalizado.  
+- Use uma variedade de funcionalidades de personalização no Xamarin.Forms para ajustar a interface do usuário por plataforma. Isso inclui a API OnPlatform, que pode ser usada do código e do XAML, criar uma exibição personalizada, estender um renderizador existente e criar um renderizador personalizado.  
   
--   Se necessário, use o Xamarin nativo para criar telas que usam recursos interface do usuário exclusivos de cada plataforma, por exemplo, uma tela que usa manipulação de imagem e captura com a câmera nativa.  
+- Se necessário, use o Xamarin nativo para criar telas que usam recursos interface do usuário exclusivos de cada plataforma, por exemplo, uma tela que usa manipulação de imagem e captura com a câmera nativa.  
   
- É recomendável sempre iniciar com uma solução do Xamarin.Forms para configurar o compartilhamento de código de interface do usuário entre plataformas e usar as funcionalidades de personalização para fazer ajustes específicos da plataforma. Se e quando precisar de telas totalmente específicas da plataforma, você poderá adicioná-las individualmente usando o Xamarin nativo.  
+  É recomendável sempre iniciar com uma solução do Xamarin.Forms para configurar o compartilhamento de código de interface do usuário entre plataformas e usar as funcionalidades de personalização para fazer ajustes específicos da plataforma. Se e quando precisar de telas totalmente específicas da plataforma, você poderá adicioná-las individualmente usando o Xamarin nativo.  
   
- Para saber mais:  
+  Para saber mais:  
   
 1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) fornece uma breve visão geral e os prós e contras do Xamarin.Forms versus camadas nativas da interface do usuário (ou seja, Xamarin.iOS e Xamarin.Android).  
   

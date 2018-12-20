@@ -1,7 +1,7 @@
 ---
 title: BeginCapture | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9edbb52d-ee0b-4cc4-a382-972bcee067d3
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2f9bc573799ddb5fdd094c7c0e571a88c13b5420
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9d9ac50f2e1f5f92a16a7482a25c9054c2a36f68
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461768"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787296"
 ---
 # <a name="begincapture"></a>BeginCapture
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [BeginCapture](https://docs.microsoft.com/visualstudio/debugger/graphics/begincapture).  
-  
 Inicia um intervalo de captura que terminará com `EndCapture`.  
   
 ## <a name="syntax"></a>Sintaxe  

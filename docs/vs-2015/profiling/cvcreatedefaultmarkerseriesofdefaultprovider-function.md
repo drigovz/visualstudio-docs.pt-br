@@ -1,7 +1,7 @@
 ---
 title: Função CvCreateDefaultMarkerSeriesOfDefaultProvider | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - CvCreateDefaultMarkerSeriesOfDefaultProvider method
 ms.assetid: 24eb80f8-8fca-4c47-93b5-bb1eb8ffdffd
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4910a66481be1f00a0fd57e1a66c0756f11c6589
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 999814dd92347e5c6ec44a9d3e2bb07d237f5b66
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465472"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51804457"
 ---
 # <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>Função CvCreateDefaultMarkerSeriesOfDefaultProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [função CvCreateDefaultMarkerSeriesOfDefaultProvider](https://docs.microsoft.com/visualstudio/profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function).  
-  
 Cria a série de marcador padrão de um provedor padrão.  
   
 ## <a name="syntax"></a>Sintaxe  

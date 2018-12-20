@@ -1,7 +1,7 @@
 ---
 title: SEEK_START | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7306703d96fd89e3b639de9557c1799e9ca3d00
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 791bc722484519dec88bf40c1207de16cd15c516
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473162"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773243"
 ---
 # <a name="seekstart"></a>SEEK_START
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [SEEK_START](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/seek-start).  
-  
 Especifica a posição da qual iniciar a busca em um fluxo de desmontagem.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_SEEK_START {   
+enum enum_SEEK_START {   
    SEEK_START_BEGIN       = 0x0001,  
    SEEK_START_END         = 0x0002,  
    SEEK_START_CURRENT     = 0x0003,  
@@ -45,7 +43,7 @@ typedef DWORD SEEK_START;
 ```  
   
 ```csharp  
-public enum enum_SEEK_START {   
+public enum enum_SEEK_START {   
    SEEK_START_BEGIN       = 0x0001,  
    SEEK_START_END         = 0x0002,  
    SEEK_START_CURRENT     = 0x0003,  

@@ -1,7 +1,7 @@
 ---
 title: 'CA3077: Processamento inseguro no Design de API, documento XML e leitor de texto XML | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,17 +13,15 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 175d655c2283dfe764564d42b6893b12d1f09e22
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 0e75f86b958d0f2602a3f32830e8c6f18c185584
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587224"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925065"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: processamento não seguro no design de API, no documento XML e no leitor de texto XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA3077: processamento inseguro no Design de API, documento XML e leitor de texto XML](https://docs.microsoft.com/visualstudio/code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader).
 
 |||
 |-|-|

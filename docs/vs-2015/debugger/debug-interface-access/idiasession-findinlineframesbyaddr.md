@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findInlineFramesByAddr | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,27 +13,25 @@ dev_langs:
 - C++
 ms.assetid: e7dc1ac7-bb09-45be-96d2-365a9b7336e4
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e27c031c34a2eaa4ab443a51bb23ccd31181db91
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a122f672e352ade075f489c640c9b53258de6e0c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463540"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800855"
 ---
 # <a name="idiasessionfindinlineframesbyaddr"></a>IDiaSession::findInlineFramesByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSession::findInlineFramesByAddr](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findinlineframesbyaddr).  
-  
 Recupera uma enumeração que permite que um cliente iterar em todos os quadros embutidos em um determinado endereço.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findInlineFramesByAddr (   
+HRESULT findInlineFramesByAddr (   
    IDiaSymbol*       parent,   DWORD             isect,  
    DWORD             offset,  
    IDiaEnumSymbols** ppResult  

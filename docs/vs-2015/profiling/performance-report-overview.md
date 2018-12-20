@@ -1,7 +1,7 @@
 ---
 title: Visão Geral do Relatório de Desempenho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - performance reports, about performance reports
 ms.assetid: 7324c24c-fd09-479b-b2ad-e0c3b613e040
 caps.latest.revision: 50
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d80fa4902ac598440f03630cb8b0906bc13808ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b9a729698841d1bbbcd9b49ffe0d3dd9bddccc8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465443"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790507"
 ---
 # <a name="performance-report-overview"></a>Visão geral de Relatório de Desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [visão geral do relatório de desempenho](https://docs.microsoft.com/visualstudio/profiling/performance-report-overview).  
-  
 Você pode exibir os dados de criação de perfil de uma sessão de desempenho na janela **Relatório de Desempenho** do IDE (Ambiente de Desenvolvimento Integrado) do Visual Studio Team System Development Edition. Os dados de criação de perfil são salvos em arquivos .vsp e .vsps. As janelas de exibição de relatório permitem exibir e analisar problemas de desempenho do aplicativo.  
   
 > [!CAUTION]
@@ -50,13 +48,13 @@ Você pode exibir os dados de criação de perfil de uma sessão de desempenho n
 ### <a name="callercallee-view"></a>Exibição Chamador/Receptor da Chamada  
  A exibição de Chamador/Computador chamado exibe uma árvore de chamadas para uma função individual. A exibição está dividida em três partes:  
   
--   A função de destino é exibida no meio da exibição.  
+- A função de destino é exibida no meio da exibição.  
   
--   As funções que chamaram tal função (chamadores) são exibidas acima da função de destino.  
+- As funções que chamaram tal função (chamadores) são exibidas acima da função de destino.  
   
--   As funções que são chamadas pela função de destino (computadores chamados) são exibidas abaixo do destino.  
+- As funções que são chamadas pela função de destino (computadores chamados) são exibidas abaixo do destino.  
   
- Você pode selecionar uma função diferente clicando duas vezes em qualquer função na lista de chamador ou de computador chamado. Para obter mais informações, consulte a [Exibição de Chamador/Computador chamado](../profiling/caller-callee-view.md).  
+  Você pode selecionar uma função diferente clicando duas vezes em qualquer função na lista de chamador ou de computador chamado. Para obter mais informações, consulte a [Exibição de Chamador/Computador chamado](../profiling/caller-callee-view.md).  
   
 ### <a name="call-tree-view"></a>Exibição de árvore de chamadas  
  O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de função que foram percorridos no aplicativo analisado. A raiz da árvore é o ponto de entrada do aplicativo ou componente. Cada nó da função lista todas as funções que ela chamou e os dados de desempenho sobre essas chamadas de função.  

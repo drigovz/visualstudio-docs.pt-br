@@ -1,7 +1,7 @@
 ---
 title: IDebugPendingBreakpoint2::EnumErrorBreakpoints | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,31 +18,29 @@ ms.assetid: 2f9a9720-c1ac-4430-8f28-200d85360452
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b593504a4fffcfdf809ddd57164a81799b7d5b9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 36ebe62cf005a537b3f7e9cbe35ffe7e8904b758
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462687"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781966"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPendingBreakpoint2::EnumErrorBreakpoints](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints).  
-  
 Obtém uma lista de todos os pontos de interrupção de erro que resultou de ponto de interrupção pendente.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT EnumErrorBreakpoints(   
+HRESULT EnumErrorBreakpoints(   
    BP_ERROR_TYPE                 bpErrorType,  
    IEnumDebugErrorBreakpoints2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumErrorBreakpoints(   
+int EnumErrorBreakpoints(   
    enum_BP_ERROR_TYPE              bpErrorType,  
    out IEnumDebugErrorBreakpoints2 ppEnum  
 );  

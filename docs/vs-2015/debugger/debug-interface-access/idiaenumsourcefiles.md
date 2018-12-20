@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSourceFiles | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaEnumSourceFiles interface
 ms.assetid: 5c0779a6-a2ea-408a-90da-ebdecf2b83c0
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a3e3f0b4468dfd31c97ac3e761771cf221124bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e003bb9ad21bb7381a894587e5e36a8264cd8ee
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475976"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754552"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaEnumSourceFiles](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumsourcefiles).  
-  
 Enumera os vários arquivos de origem contidos na fonte de dados.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDiaEnumSourceFiles : IUknown  
+IDiaEnumSourceFiles : IUknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  

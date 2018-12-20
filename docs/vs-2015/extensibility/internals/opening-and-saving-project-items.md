@@ -1,7 +1,7 @@
 ---
 title: Abrir e salvar itens de projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c1013253f39dec2b3d0a97f1bc4b8deb2dca913a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 043b8545c583295fd11c04329b305e125c3efbac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467340"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726714"
 ---
 # <a name="opening-and-saving-project-items"></a>Abrindo e salvando itens de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [abrindo e salvando itens de projeto](https://docs.microsoft.com/visualstudio/extensibility/internals/opening-and-saving-project-items).  
-  
 Quando você adiciona um novo tipo de projeto, você deve gerenciar a abertura e salvar os seus arquivos de projetos no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE). Os tópicos a seguir discutem as diferentes abordagens para abrir e salvar arquivos.  
   
 ## <a name="in-this-section"></a>Nesta seção  

@@ -1,7 +1,7 @@
 ---
 title: Depuração de COM e ActiveX | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,21 +24,19 @@ helpviewer_keywords:
 - ActiveX controls, debugging
 ms.assetid: 3260b2a7-3239-493d-9271-aedf705c13c7
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e874daab692c918a39980d207ccea7a88f50f01
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c71aa59e62d9ac8530f34f42e15737a52b0fad6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472722"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771494"
 ---
 # <a name="com-and-activex-debugging"></a>Depuração de COM e ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depuração de COM e ActiveX](https://docs.microsoft.com/visualstudio/debugger/com-and-activex-debugging).  
-  
 Essa seção fornece dicas sobre depuração de aplicativos COM e controles ActiveX.  
   
 ## <a name="in-this-section"></a>Nesta seção  

@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_backendmajor | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_backEndMajor method
 ms.assetid: 900a05dd-c29b-44ad-b46b-f43bda819a66
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6244d731a694ce8c22692e653578a39b3981d909
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eedbd58113ca670079f860daa607085a172c54c5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464323"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732410"
 ---
 # <a name="idiasymbolgetbackendmajor"></a>IDiaSymbol::get_backEndMajor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_backendmajor](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-backendmajor).  
-  
 Recupera o número de versão principal do back-end do compilador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_backEndMajor (   
+HRESULT get_backEndMajor (   
    DWORD* pRetVal  
 );  
 ```  

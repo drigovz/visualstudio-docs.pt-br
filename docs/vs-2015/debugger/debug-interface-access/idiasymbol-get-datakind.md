@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_datakind | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_dataKind method
 ms.assetid: 45005ad0-8b29-4cde-9d33-6bef72f6e463
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83ec63eb7ebcc38c8a8524fbfa0e2c669919416c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ddf5c96bff7aea3d033f46dee1122de12efe5d48
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467560"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772996"
 ---
 # <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_datakind](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-datakind).  
-  
 Recupera a classificação de variável de um símbolo de dados.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_dataKind (   
+HRESULT get_dataKind (   
    DWORD* pRetVal  
 );  
 ```  

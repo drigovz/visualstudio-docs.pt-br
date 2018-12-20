@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 738e2bf3596ea517808be829b6f893c101b957d5
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7ead923920275c0d0eb048cb961679da4ce2fc94
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223995"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294650"
 ---
 # <a name="enable-subscription"></a>Habilitar Assinatura
 
@@ -43,3 +43,7 @@ Atualmente não é possível utilizar uma chave do produto (Product Key) para ha
 > Para ativar sua assinatura do Visual Studio 2017 para Mac Professional ou Enterprise, você deve estar conectado à Internet ao entrar.
 
 Se você tiver comprado o Visual Studio Enterprise 2017 para Mac para computadores sem uma conexão de Internet, você poderá continuar a usar o Visual Studio para Mac sem ativação, mas o Xamarin Inspector, Xamarin Profiler e recursos de assemblies inseridos não estarão disponíveis.
+
+## <a name="see-also"></a>Consulte também
+
+- [Entrar no Visual Studio (no Windows)](/visualstudio/ide/signing-in-to-visual-studio)

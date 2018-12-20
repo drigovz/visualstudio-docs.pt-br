@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::IsAddressSequencePoint | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 89b27c57-5295-428b-8229-a402500d8cd3
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 23b51caa70052a8d535287769924e84d386fa60b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87db5d6abf62f0128a77286581d8f7319a777f8f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472492"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773906"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugComPlusSymbolProvider2::IsAddressSequencePoint](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcomplussymbolprovider2-isaddresssequencepoint).  
-  
 Determina se o endereço de depuração especificada é um ponto de sequência.  
   
 ## <a name="syntax"></a>Sintaxe  

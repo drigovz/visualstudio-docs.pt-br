@@ -1,7 +1,7 @@
 ---
 title: Continuando a execução após uma exceção | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,21 +31,19 @@ helpviewer_keywords:
 - programs, executing
 ms.assetid: 6fe97aac-2131-4615-bd92-d3afee741558
 caps.latest.revision: 30
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a71d71622809dfaeea399355e490fe4e69b52b9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 947a17993fe0e8366149d1cef79c26c68b11d22a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468282"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730025"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuando a execução depois de uma exceção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [continuando a execução após uma exceção](https://docs.microsoft.com/visualstudio/debugger/continuing-execution-after-an-exception).  
-  
 Quando o depurador interrompe a execução devido a uma exceção, uma caixa de diálogo é exibida. Para o Visual Basic ou c#, você verá a [Assistente de exceção](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) caixa de diálogo, por padrão. Para C++, você verá o mais antigo **exceção** caixa de diálogo. Se você estiver usando o Visual Basic ou c#, mas tiver desabilitado as **Assistente de exceção** na **opções** caixa de diálogo, você verá o **exceção** caixa de diálogo.  
   
  Quando o **Assistente de exceção** ou **exceção** caixa de diálogo for exibida, você pode tentar corrigir o problema que causou a exceção.  

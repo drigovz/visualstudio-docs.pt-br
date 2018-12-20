@@ -1,7 +1,7 @@
 ---
 title: 'Como: depurar um aplicativo de confiança parcial | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,21 +20,19 @@ helpviewer_keywords:
 - security [Visual Studio], partial trust applications
 ms.assetid: 9d30ad92-28ce-4b21-91d8-698474cddf64
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5880b375f15b189a2532ed750d87b95fea51f0df
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 76cce8cfcf57f956b5de16b72f7a275e1d629630
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587436"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782044"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Como depurar um aplicativo parcialmente confiável
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: depurar um aplicativo de confiança parcial](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-a-partial-trust-application).  
-  
 Aplica-se a aplicativos do Windows e do console.  
   
  [Implantação e segurança do ClickOnce](../deployment/clickonce-security-and-deployment.md) torna mais fácil implantar aplicativos de confiança parcial que aproveitam [Code Access Security](http://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) para limitar o acesso a recursos em um computador.  

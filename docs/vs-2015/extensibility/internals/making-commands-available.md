@@ -1,7 +1,7 @@
 ---
 title: Disponibilizar comandos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e29dd8a33a562bb5e44a0afedda1f278bdf59fe1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00ed8231641718b6d0dce8d535b0c43e40b83dd8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462468"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783032"
 ---
 # <a name="making-commands-available"></a>Disponibilizando comandos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tornando comandos disponíveis](https://docs.microsoft.com/visualstudio/extensibility/internals/making-commands-available).  
-  
 Quando vários VSPackages são adicionados ao Visual Studio, a interface do usuário (IU) pode ficar sobrecarregada com comandos. Você pode programar seu pacote para ajudar a reduzir esse problema, da seguinte maneira:  
   
 -   O pacote do programa para que ele seja carregado apenas quando um usuário requer que ela.  
@@ -39,7 +37,7 @@ Quando vários VSPackages são adicionados ao Visual Studio, a interface do usu�
 ## <a name="delayed-loading"></a>Carregamento atrasado  
  Habilitar uma forma comum de carregamento com atraso é projetar o VSPackage, de forma que seus comandos são exibidos na interface do usuário, mas o próprio pacote não será carregado até que um usuário clica em um dos comandos. Para fazer isso, no arquivo. VSCT, crie comandos que não têm nenhum sinalizador de comando.  
   
- O exemplo a seguir mostra a definição de um comando de menu de um arquivo. VSCT. Esse é o comando que é gerado pelo modelo de pacote Visual Studio quando o **comando de Menu** está selecionada no modelo.  
+ O exemplo a seguir mostra a definição de um comando de menu de um arquivo. VSCT. Esse é o comando que é gerado pelo modelo de pacote do Visual Studio quando o **comando de Menu** está selecionada no modelo.  
   
 ```xml  
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">  
@@ -71,29 +69,29 @@ Quando vários VSPackages são adicionados ao Visual Studio, a interface do usu�
   
  Uma área principal de contexto quinta é o estado da interface do usuário do IDE. Contextos de interface do usuário são identificados pelo contexto do comando ativo `GUID`s, da seguinte maneira:  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
   
- Esses GUIDs são marcadas como ativas ou inativas, dependendo do estado atual do IDE. Vários contextos de interface do usuário podem estar ativos ao mesmo tempo.  
+  Esses GUIDs são marcadas como ativas ou inativas, dependendo do estado atual do IDE. Vários contextos de interface do usuário podem estar ativos ao mesmo tempo.  
   
 ### <a name="hiding-and-displaying-commands-based-on-context"></a>Ocultando e comandos com base no contexto de exibição  
  Você pode exibir ou ocultar um comando de pacote no IDE sem carregar o pacote propriamente dito. Para fazer isso, defina o comando no arquivo. VSCT do pacote usando o `DefaultDisabled`, `DefaultInvisible`, e `DynamicVisibility` comando sinalizadores e adicionando um ou mais [VisibilityItem](../../extensibility/visibilityitem-element.md) elementos para o [ VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) seção. Quando um contexto do comando especificado `GUID` se torna ativo, o comando é exibido sem carregar o pacote.  
@@ -115,13 +113,13 @@ Quando vários VSPackages são adicionados ao Visual Studio, a interface do usu�
   
  O comando é definido como habilitado e exibido sempre que existe uma solução; ou seja, sempre que um contexto do seguinte comando GUIDs está ativo:  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
   
- No exemplo, observe que o sinalizador de cada comando é um separado [sinalizador de comando](../../extensibility/command-flag-element.md) elemento.  
+  No exemplo, observe que o sinalizador de cada comando é um separado [sinalizador de comando](../../extensibility/command-flag-element.md) elemento.  
   
 ```  
 <Button guid="guidDynamicVisibilityCmdSet" id="cmdidMyCommand"   

@@ -1,7 +1,7 @@
 ---
 title: Exibição de threads | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,33 +15,31 @@ helpviewer_keywords:
 - Threads view
 ms.assetid: abfb4e9e-1622-47c9-afda-b6b71a9d88e4
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79c0443d17ed18573cdbe990474ee328f2d3678f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14b5038ef2512631c929dddb9262f2eec91f4485
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475728"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770590"
 ---
 # <a name="threads-view"></a>Modo de Exibição de Threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de Threads](https://docs.microsoft.com/visualstudio/debugger/threads-view).  
-  
 A exibição de Threads é uma lista simples de todos os threads associados com o windows em seu sistema. A ID de Thread e o nome do módulo para cada thread são mostrados. Processos não são incluídos, mas você pode encontrar facilmente o processo que possui um thread selecionado.  
   
 ## <a name="procedures"></a>Procedimentos  
   
 #### <a name="to-open-the-threads-view"></a>Para abrir a exibição de Threads  
   
-1.  Dos **Spy** menu, escolha **Threads**.  
+1. Dos **Spy** menu, escolha **Threads**.  
   
- ![Spy&#43; &#43; exibição de Threads](../debugger/media/spy-threads.png "Spy + + _Threads")  
-Exibição de Threads do Spy + +  
+   ![Spy&#43; &#43; exibição de Threads](../debugger/media/spy-threads.png "Spy + + _Threads")  
+   Exibição de Threads do Spy + +  
   
- A figura acima mostra a exibição de Threads.  
+   A figura acima mostra a exibição de Threads.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Procurando por um Thread na exibição de Threads](../debugger/how-to-search-for-a-thread-in-threads-view.md)  

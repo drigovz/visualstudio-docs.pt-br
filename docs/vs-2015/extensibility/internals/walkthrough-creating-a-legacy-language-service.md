@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Criando um serviço de linguagem herdado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6097177f1287b96914ccb872afa952e5fe3f4682
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d80b40aa1db779c233dea846b49dbbc66084015
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474375"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783877"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Passo a passo: criando um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Criando um serviço de linguagem herdado](https://docs.microsoft.com/visualstudio/extensibility/internals/walkthrough-creating-a-legacy-language-service).  
-  
 Usando as classes de linguagem do framework (MPF) de pacote gerenciado para implementar um serviço de linguagem no [!INCLUDE[csprcs](../../includes/csprcs-md.md)] é simples. Você precisa de um VSPackage para hospedar o serviço de linguagem, o serviço de linguagem e um analisador para seu idioma.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  

@@ -1,7 +1,7 @@
 ---
 title: Memória JavaScript | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,54 +25,52 @@ helpviewer_keywords:
 - memory analyzer, JavaScript
 ms.assetid: 78f8532b-7b4e-4b50-b8b7-68ca0926dd4e
 caps.latest.revision: 54
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54a05a7a757e4dec026fe889c3ee26730482e64e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2341e9cf0ca1494d8dad79cd521c283c2c23a06
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472637"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798931"
 ---
 # <a name="javascript-memory"></a>Memória JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [analisar o uso de memória de JavaScript em aplicativos UWP](https://docs.microsoft.com/visualstudio/profiling/javascript-memory).  
-  
 O analisador de memória do JavaScript está disponível no Visual Studio para ajudar você a entender o uso da memória e a localizar vazamentos de memória em seus aplicativos da Windows Store compilados para o Windows usando JavaScript. Há suporte para aplicativos da Windows Phone Store e da Windows Store.  
   
  O analisador de memória de JavaScript pode executar estas ações para você:  
   
--   Ajudá-lo a encontrar, com rapidez, problemas de uso de memória do seu aplicativo sublinhando os dados mais relevantes.  
+- Ajudá-lo a encontrar, com rapidez, problemas de uso de memória do seu aplicativo sublinhando os dados mais relevantes.  
   
-     Você obtém esses dados em resumos que mostram as diferenças entre dois instantâneos e fornecem links para modos de exibição mais detalhada.  
+   Você obtém esses dados em resumos que mostram as diferenças entre dois instantâneos e fornecem links para modos de exibição mais detalhada.  
   
--   Fornecer exibições de dominators, tipos e raízes para ajudar a isolar problemas.  
+- Fornecer exibições de dominators, tipos e raízes para ajudar a isolar problemas.  
   
--   Reduzir informações não acionáveis nos dados heap JavaScript.  
+- Reduzir informações não acionáveis nos dados heap JavaScript.  
   
-     Objetos que não são criados diretamente em seu código de aplicativo são extraídos automaticamente. Você também pode filtrar dados pelo nome do objeto.  
+   Objetos que não são criados diretamente em seu código de aplicativo são extraídos automaticamente. Você também pode filtrar dados pelo nome do objeto.  
   
- Para ver um tutorial que percorre o processo de identificação de perda de memória em um aplicativo em funcionamento, consulte [Passo a passo: localizar uma perda de memória (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+  Para ver um tutorial que percorre o processo de identificação de perda de memória em um aplicativo em funcionamento, consulte [Passo a passo: localizar uma perda de memória (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
- Neste tópico:  
+  Neste tópico:  
   
- [Executar o analisador de memória de JavaScript](#Run)   
- [Verificar o uso de memória](#Check)   
- [Isolar perda de memória](#Isolate)   
- [Exibir resumo do uso de memória em tempo real](#LiveMemory)   
- [Exibir um resumo de instantâneo](#SnapshotSummary)   
- [Exibir detalhes do instantâneo](#SnapshotDetails)   
- [Exibir comparações de um instantâneo](#SnapshotDiff)   
- [Exibir objetos por dominador](#FoldObjects)   
- [Filtrar dados por identificador](#Filter)   
- [Localizar um objeto na árvore de objetos](#ShowInRootsView)   
- [Exibir referências de objeto compartilhadas](#References)   
- [Exibir objetos internos](#BuiltInValues)   
- [Salvar arquivos da sessão de diagnóstico](#Save)   
- [Associar o código-fonte com os dados de uso de memória](#JSConsoleCommands)   
- [Dicas para identificar problemas de memória](#Tips)  
+  [Executar o analisador de memória de JavaScript](#Run)   
+  [Verificar o uso de memória](#Check)   
+  [Isolar perda de memória](#Isolate)   
+  [Exibir resumo do uso de memória em tempo real](#LiveMemory)   
+  [Exibir um resumo de instantâneo](#SnapshotSummary)   
+  [Exibir detalhes do instantâneo](#SnapshotDetails)   
+  [Exibir comparações de um instantâneo](#SnapshotDiff)   
+  [Exibir objetos por dominador](#FoldObjects)   
+  [Filtrar dados por identificador](#Filter)   
+  [Localizar um objeto na árvore de objetos](#ShowInRootsView)   
+  [Exibir referências de objeto compartilhadas](#References)   
+  [Exibir objetos internos](#BuiltInValues)   
+  [Salvar arquivos da sessão de diagnóstico](#Save)   
+  [Associar o código-fonte com os dados de uso de memória](#JSConsoleCommands)   
+  [Dicas para identificar problemas de memória](#Tips)  
   
 ##  <a name="Run"></a> Executar o analisador de memória de JavaScript  
  É possível usar o analisador de memória quando houver um aplicativo da Windows Store em execução aberto no Visual Studio ou instalado em um computador que esteja executando [!INCLUDE[win8](../includes/win8-md.md)] ou posterior.  
@@ -135,31 +133,31 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
 ##  <a name="Isolate"></a> Isolar uma perda de memória  
  Estas etapas fornecem um fluxo de trabalho que pode ajudá-lo a usar o analisador de memória de JavaScript com mais eficiência. Estas etapas podem ser úteis se você suspeitar de vazamento de memória em seu aplicativo. Para ver um tutorial que percorre o processo de identificação de perda de memória em um aplicativo em funcionamento, consulte [Passo a passo: localizar uma perda de memória (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
-1.  Abra o aplicativo no Visual Studio.  
+1. Abra o aplicativo no Visual Studio.  
   
-2.  Execute o analisador de memória de JavaScript. Para obter mais informações, consulte [Executar o analisador de memória JavaScript](#Run).  
+2. Execute o analisador de memória de JavaScript. Para obter mais informações, consulte [Executar o analisador de memória JavaScript](#Run).  
   
-3.  Execute seu aplicativo com o cenário que deseja testar. Por exemplo, o cenário pode envolver uma grande mutação do DOM, quando uma determinada página estiver carregando ou quando o aplicativo for iniciado.  
+3. Execute seu aplicativo com o cenário que deseja testar. Por exemplo, o cenário pode envolver uma grande mutação do DOM, quando uma determinada página estiver carregando ou quando o aplicativo for iniciado.  
   
-4.  Repita o cenário mais algumas vezes (1 a 4 vezes).  
+4. Repita o cenário mais algumas vezes (1 a 4 vezes).  
   
-    > [!TIP]
-    >  Ao repetir o cenário de teste várias vezes, você pode ajudar a garantir que o trabalho de inicialização seja descartado dos resultados.  
+   > [!TIP]
+   >  Ao repetir o cenário de teste várias vezes, você pode ajudar a garantir que o trabalho de inicialização seja descartado dos resultados.  
   
-5.  Alterne para o Visual Studio (pressione Alt+Tab).  
+5. Alterne para o Visual Studio (pressione Alt+Tab).  
   
-6.  Obtenha um instantâneo do heap da linha de base escolhendo **Obter uma imagem instantânea do heap**.  
+6. Obtenha um instantâneo do heap da linha de base escolhendo **Obter uma imagem instantânea do heap**.  
   
-     A ilustração a seguir mostra um exemplo de um instantâneo de linha de base.  
+    A ilustração a seguir mostra um exemplo de um instantâneo de linha de base.  
   
-     ![Instantâneo de linha de base](../profiling/media/js-mem-leak-workflow-baseline.png "JS_Mem_Leak_Workflow_Baseline")  
+    ![Instantâneo de linha de base](../profiling/media/js-mem-leak-workflow-baseline.png "JS_Mem_Leak_Workflow_Baseline")  
   
-    > [!TIP]
-    >  Para ter um controle mais preciso do intervalo entre os instantâneos, use o comando [Associar o código-fonte com os dados de uso de memória](#JSConsoleCommands) no seu código.  
+   > [!TIP]
+   >  Para ter um controle mais preciso do intervalo entre os instantâneos, use o comando [Associar o código-fonte com os dados de uso de memória](#JSConsoleCommands) no seu código.  
   
-7.  Troque para o seu aplicativo e repita o cenário que você estava testando (repita apenas uma vez).  
+7. Troque para o seu aplicativo e repita o cenário que você estava testando (repita apenas uma vez).  
   
-8.  Alterne para o Visual Studio e obtenha um segundo instantâneo.  
+8. Alterne para o Visual Studio e obtenha um segundo instantâneo.  
   
 9. Troque para o seu aplicativo e repita o cenário que você estava testando (repita apenas uma vez).  
   
@@ -173,11 +171,11 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
   
 11. No terceiro instantâneo, escolha um link para uma das exibições de comparação:  
   
-    -   Tamanho de heap diferencial (link à esquerda, abaixo do tamanho do heap). Esse texto de link mostra a diferença entre o tamanho do heap do instantâneo atual e o tamanho do heap do instantâneo anterior.  
+    - Tamanho de heap diferencial (link à esquerda, abaixo do tamanho do heap). Esse texto de link mostra a diferença entre o tamanho do heap do instantâneo atual e o tamanho do heap do instantâneo anterior.  
   
-    -   Contagem de objetos diferencial (link à direita, abaixo da contagem de objetos). O texto do link mostra dois valores (por exemplo, +1858 / -1765). O primeiro valor representa o número de novos objetos adicionados desde o instantâneo anterior, ao passo que o segundo valor traz o número de objetos removidos desde o instantâneo anterior.  
+    - Contagem de objetos diferencial (link à direita, abaixo da contagem de objetos). O texto do link mostra dois valores (por exemplo, +1858 / -1765). O primeiro valor representa o número de novos objetos adicionados desde o instantâneo anterior, ao passo que o segundo valor traz o número de objetos removidos desde o instantâneo anterior.  
   
-     Esses links abrem uma exibição de comparação dos detalhes do instantâneo dos tipos no heap, classificados pelo tamanho retido ou pela contagem de objetos, dependendo do link aberto.  
+      Esses links abrem uma exibição de comparação dos detalhes do instantâneo dos tipos no heap, classificados pelo tamanho retido ou pela contagem de objetos, dependendo do link aberto.  
   
 12. Escolha uma das seguintes opções de filtro de **Escopo** para ajudar a identificar problemas de uso de memória:  
   
@@ -246,29 +244,29 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
   
  Na exibição de detalhes de instantâneo, você pode examinar os dados de uso de memória por dominador, tipo ou raiz, escolhendo uma opção da barra de ferramentas:  
   
--   **Tipos**. Mostra a contagem de instâncias e o tamanho total de objetos no heap, agrupados pelo tipo de objeto. Por padrão, eles são classificados pela contagem de instância.  
+- **Tipos**. Mostra a contagem de instâncias e o tamanho total de objetos no heap, agrupados pelo tipo de objeto. Por padrão, eles são classificados pela contagem de instância.  
   
-    > [!TIP]
-    >  Normalmente, exibições de comparação dos tipos no heap do objeto são as exibições mais úteis para identificar uma perda de memória, pois oferecem um filtro de **Escopo** para ajudar a identificar objetos restantes.  
+  > [!TIP]
+  >  Normalmente, exibições de comparação dos tipos no heap do objeto são as exibições mais úteis para identificar uma perda de memória, pois oferecem um filtro de **Escopo** para ajudar a identificar objetos restantes.  
   
--   **Raízes**. Mostra uma exibição hierárquica de objetos desde objetos raiz até referências de filhos. Por padrão, os nós filho são classificados pela coluna de tamanho retido, com o maior na parte superior.  
+- **Raízes**. Mostra uma exibição hierárquica de objetos desde objetos raiz até referências de filhos. Por padrão, os nós filho são classificados pela coluna de tamanho retido, com o maior na parte superior.  
   
--   **Dominadores**. Mostra uma lista de objetos do heap que têm referências exclusivas a outros objetos. Os dominadores são classificados pelo tamanho retido.  
+- **Dominadores**. Mostra uma lista de objetos do heap que têm referências exclusivas a outros objetos. Os dominadores são classificados pelo tamanho retido.  
   
-    > [!TIP]
-    >  Quando você remove um dominador da memória, recupera toda a memória que o objeto retém. Para alguns aplicativos, a exibição Dominadores pode ajudar a esclarecer os tamanhos de memória retida, visto que é possível analisar toda a cadeia de referência do objeto.  
+  > [!TIP]
+  >  Quando você remove um dominador da memória, recupera toda a memória que o objeto retém. Para alguns aplicativos, a exibição Dominadores pode ajudar a esclarecer os tamanhos de memória retida, visto que é possível analisar toda a cadeia de referência do objeto.  
   
- Todas as três exibições mostram os tipos de valores semelhantes, incluindo:  
+  Todas as três exibições mostram os tipos de valores semelhantes, incluindo:  
   
--   **Identificador(es)**. Nome que melhor identifica o objeto. Por exemplo, para elementos HTML, os detalhes do instantâneo mostram o valor do atributo ID, se um for usado.  
+- **Identificador(es)**. Nome que melhor identifica o objeto. Por exemplo, para elementos HTML, os detalhes do instantâneo mostram o valor do atributo ID, se um for usado.  
   
--   **Tipo**. Tipo de objeto (por exemplo, elemento de link HTML ou elemento div).  
+- **Tipo**. Tipo de objeto (por exemplo, elemento de link HTML ou elemento div).  
   
--   **Tamanho**. Tamanho do objeto, não incluindo o tamanho de nenhum objeto referenciado.  
+- **Tamanho**. Tamanho do objeto, não incluindo o tamanho de nenhum objeto referenciado.  
   
--   **Tamanho retido**. Tamanho do objeto mais o tamanho de todos os objetos filho que não têm outro pai. Para fins práticos, essa é a quantidade de memória retida pelo objeto, então, se você excluir o objeto, recuperará a quantidade de memória especificada.  
+- **Tamanho retido**. Tamanho do objeto mais o tamanho de todos os objetos filho que não têm outro pai. Para fins práticos, essa é a quantidade de memória retida pelo objeto, então, se você excluir o objeto, recuperará a quantidade de memória especificada.  
   
--   **Contagem**. Número de instâncias de objeto. Esse valor aparece apenas na exibição Tipos.  
+- **Contagem**. Número de instâncias de objeto. Esse valor aparece apenas na exibição Tipos.  
   
 ##  <a name="SnapshotDiff"></a> Exibir comparações de um instantâneo  
  No analisador de memória de JavaScript, você pode comparar um instantâneo com o instantâneo anterior nas exibições diferenciais.  
@@ -283,22 +281,22 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
   
  Na janela de comparação de instantâneos, as exibições de Dominadores, Tipos e Raízes são as mesmas que na janela [Exibir detalhes do instantâneo](#SnapshotDetails). A diferença de instantâneo mostra as mesmas informações dos detalhes do instantâneo, com estes valores adicionais:  
   
--   **Diferença de tamanho**. Diferença entre o tamanho do objeto no instantâneo atual e seu tamanho no instantâneo anterior, não incluindo o tamanho de nenhum objeto referenciado.  
+- **Diferença de tamanho**. Diferença entre o tamanho do objeto no instantâneo atual e seu tamanho no instantâneo anterior, não incluindo o tamanho de nenhum objeto referenciado.  
   
--   **Diferença de tamanho retido**. Diferença entre o tamanho retido do objeto no instantâneo atual e seu tamanho retido no instantâneo anterior. O tamanho retido inclui o tamanho do objeto mais o tamanho dos objetos filho que não têm outro pai. Para fins práticos, o tamanho retido é a quantidade de memória retida pelo objeto, então, se você excluir o objeto, recuperará a quantidade de memória especificada.  
+- **Diferença de tamanho retido**. Diferença entre o tamanho retido do objeto no instantâneo atual e seu tamanho retido no instantâneo anterior. O tamanho retido inclui o tamanho do objeto mais o tamanho dos objetos filho que não têm outro pai. Para fins práticos, o tamanho retido é a quantidade de memória retida pelo objeto, então, se você excluir o objeto, recuperará a quantidade de memória especificada.  
   
- Para filtrar informações de comparação entre os instantâneos, escolha um dos filtros de **Escopo** na parte superior das exibições de comparação.  
+  Para filtrar informações de comparação entre os instantâneos, escolha um dos filtros de **Escopo** na parte superior das exibições de comparação.  
   
--   **Objetos restantes do instantâneo nº\<<number>**. Esse filtro mostra o diferencial entre os objetos adicionados ao heap e removidos do heap em comparação com o instantâneo de linha de base e o instantâneo anterior. Por exemplo, se o resumo de instantâneo mostrar +205 / -195 na contagem de objetos, esse filtro mostrará a você os 10 objetos que foram adicionados, mas não removidos.  
+- **Objetos restantes do instantâneo nº\<<number>**. Esse filtro mostra o diferencial entre os objetos adicionados ao heap e removidos do heap em comparação com o instantâneo de linha de base e o instantâneo anterior. Por exemplo, se o resumo de instantâneo mostrar +205 / -195 na contagem de objetos, esse filtro mostrará a você os 10 objetos que foram adicionados, mas não removidos.  
   
-    > [!TIP]
-    >  Para mostrar as informações mais úteis nesse filtro, siga as etapas descritas em [Isolar uma perda de memória](#Isolate).  
+  > [!TIP]
+  >  Para mostrar as informações mais úteis nesse filtro, siga as etapas descritas em [Isolar uma perda de memória](#Isolate).  
   
--   **Objetos adicionados entre os instantâneos nº\<number> e nº \<number>**. Esse filtro mostra todos os objetos adicionados ao heap desde o instantâneo anterior.  
+- **Objetos adicionados entre os instantâneos nº\<number> e nº \<number>**. Esse filtro mostra todos os objetos adicionados ao heap desde o instantâneo anterior.  
   
--   **Todos os objetos no instantâneo nº \<number>**. Essa configuração de filtro não descarta objetos no heap.  
+- **Todos os objetos no instantâneo nº \<number>**. Essa configuração de filtro não descarta objetos no heap.  
   
- Para mostrar referências de objetos que não correspondem ao filtro de **Escopo** atual, selecione **Mostrar referências sem correspondência** na lista de configurações ![Lista suspensa de configurações no analisador de memória](../profiling/media/js-mem-settings.png "JS_Mem_Settings") no canto superior direito do painel. Se habilitar esta configuração, as referências não coincidentes são exibidas em cinza.  
+  Para mostrar referências de objetos que não correspondem ao filtro de **Escopo** atual, selecione **Mostrar referências sem correspondência** na lista de configurações ![Lista suspensa de configurações no analisador de memória](../profiling/media/js-mem-settings.png "JS_Mem_Settings") no canto superior direito do painel. Se habilitar esta configuração, as referências não coincidentes são exibidas em cinza.  
   
 > [!TIP]
 >  Recomendamos que você siga as etapas em [Isolar uma perda de memória](#Isolate) e use os objetos que sobraram do filtro de **Escopo** para ajudar a identificar os objetos com perda de memória.  
@@ -341,19 +339,19 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
 ##  <a name="JSConsoleCommands"></a> Associar o código-fonte com os dados de uso de memória  
  Para ajudar a isolar a seção de código que tem um problema de memória, use os seguintes métodos:  
   
--   Procure nomes de classes e IDs para elementos DOM nas exibições de detalhes e diferenciais.  
+- Procure nomes de classes e IDs para elementos DOM nas exibições de detalhes e diferenciais.  
   
--   Procure valores de cadeia de caracteres nas exibições de detalhes e diferenciais que possam estar associados ao seu código-fonte.  
+- Procure valores de cadeia de caracteres nas exibições de detalhes e diferenciais que possam estar associados ao seu código-fonte.  
   
--   Use o comando [Localizar um objeto na árvore de objetos](#ShowInRootsView) para percorrer a árvore de objetos. Isso pode ajudá-lo a identificar o código-fonte associado.  
+- Use o comando [Localizar um objeto na árvore de objetos](#ShowInRootsView) para percorrer a árvore de objetos. Isso pode ajudá-lo a identificar o código-fonte associado.  
   
--   Adicione comandos do analisador de memória ao código-fonte.  
+- Adicione comandos do analisador de memória ao código-fonte.  
   
- Você poderá usar os seguintes comandos em seu código-fonte:  
+  Você poderá usar os seguintes comandos em seu código-fonte:  
   
--   `console.takeHeapSnapshot` obtém um instantâneo de heap que aparece no analisador de memória de JavaScript. Esse comando é um dos [Comandos do Console JavaScript](../debugger/javascript-console-commands.md).  
+- `console.takeHeapSnapshot` obtém um instantâneo de heap que aparece no analisador de memória de JavaScript. Esse comando é um dos [Comandos do Console JavaScript](../debugger/javascript-console-commands.md).  
   
--   `performance.mark` define uma marca de usuário (o triângulo invertido) que aparece na linha de tempo do gráfico de memória na exibição resumida durante a execução do aplicativo. Esse comando usa um argumento de cadeia de caracteres que descreve o evento e aparece como uma dica de ferramenta no gráfico de memória. Essa descrição não deve exceder 100 caracteres.  
+- `performance.mark` define uma marca de usuário (o triângulo invertido) que aparece na linha de tempo do gráfico de memória na exibição resumida durante a execução do aplicativo. Esse comando usa um argumento de cadeia de caracteres que descreve o evento e aparece como uma dica de ferramenta no gráfico de memória. Essa descrição não deve exceder 100 caracteres.  
   
 > [!TIP]
 >  Use `console.takeHeapSnapshot` para acelerar a análise ao repetir cenários de uso de memória.  

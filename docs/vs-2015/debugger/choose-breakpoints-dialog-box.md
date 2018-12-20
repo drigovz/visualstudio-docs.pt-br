@@ -1,7 +1,7 @@
 ---
 title: Escolha a caixa de diálogo de pontos de interrupção | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,21 +27,19 @@ helpviewer_keywords:
 - Choose Breakpoints dialog box
 ms.assetid: 35cbd591-4c4f-4035-8731-8162ba1c8318
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55c33c6fc0d93f9ceee3f9e06089ec85ed3fc00b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 41f3e27b2a357f3b16a2b813bf91ec4443902c2e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465442"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726751"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Caixa de diálogo Escolher Pontos de Interrupção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [caixa de diálogo de pontos de interrupção escolha](https://docs.microsoft.com/visualstudio/debugger/choose-breakpoints-dialog-box).  
-  
 O **escolher pontos de interrupção** caixa de diálogo é aberta quando você tenta definir um ponto de interrupção de entrada ambígua na **novo ponto de interrupção** caixa de diálogo. Um exemplo comum de entrada ambígua é um nome de função sobrecarregada.  
   
  **Pontos de interrupção**  

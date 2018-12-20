@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_editandcontinueenabled | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_editAndContinueEnabled method
 ms.assetid: cd703c64-9ff8-4654-8493-8cde9309cb22
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4bc872a853a40c5cac5089389aa52358297dca9e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fe8e797bfe17a7b8f2a22bd1752abd8f902ce956
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473281"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780159"
 ---
 # <a name="idiasymbolgeteditandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_editandcontinueenabled](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled).  
-  
 Recupera um sinalizador que indica se o módulo foi compilado com o [/Z7, /Zi, /ZI (formato de informações de depuração)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) comutador de compilador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_editAndContinueEnabled (   
+HRESULT get_editAndContinueEnabled (   
    BOOL* pRetVal  
 );  
 ```  

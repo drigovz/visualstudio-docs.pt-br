@@ -1,7 +1,7 @@
 ---
 title: Extensibilidade do depurador do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4c3a9644e7150ea31cca2aba927bbdbacb8b0eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b5e9e7a3db38b5138f6392ff89f3a3bb4a13303
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473474"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743487"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Extensibilidade do depurador do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [extensibilidade do depurador do Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/debugger/visual-studio-debugger-extensibility).  
-  
 O Visual Studio inclui um depurador de código fonte totalmente interativas, fornecendo uma ferramenta poderosa e fácil de usar para rastrear bugs em seu programa. O depurador tem suporte completo ao Visual Basic, c#, C/C++ e JavaScript. No entanto, com o [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], que é disponível do [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453), outras linguagens de programação podem ter suporte no depurador com os mesmos recursos avançados.  
   
  O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] depurador é o front-end comum (ou seja, a interface do usuário) para os componentes de depuração que são, por sua vez, específicas da linguagem que está sendo depurada. Para novas linguagens, tudo o que é necessário para dar suporte ao [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] depurador é criar os componentes de back-end necessários, como um mecanismo de depuração (DES). É aí que o [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] chega.  

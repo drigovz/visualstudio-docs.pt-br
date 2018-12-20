@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b490eb1afbe8136932cfbe4caf0b1df33fbd3e4b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781664"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841878"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Passo a passo: Vinculação de dados complexos em um projeto de nível de documento
   Este passo a passo demonstra as Noções básicas de vinculação de dados complexos em um projeto de nível de documento. Você pode vincular várias células em uma planilha do Microsoft Office Excel para os campos no banco de dados Northwind do SQL Server.  
@@ -32,13 +32,13 @@ ms.locfileid: "38781664"
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Adicionando uma fonte de dados ao seu projeto de pasta de trabalho.  
+- Adicionando uma fonte de dados ao seu projeto de pasta de trabalho.  
   
--   Adicionando controles ligados a dados a uma planilha.  
+- Adicionando controles ligados a dados a uma planilha.  
   
--   Salvando alterações de dados no banco de dados.  
+- Salvando alterações de dados no banco de dados.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
@@ -67,25 +67,25 @@ ms.locfileid: "38781664"
   
 ### <a name="to-create-the-data-source"></a>Para criar a fonte de dados  
   
-1.  Se o **fontes de dados** janela não estiver visível, exibi-lo, na barra de menus, escolhendo **exibição** > **Other Windows**  >   **Fontes de dados**.  
+1. Se o **fontes de dados** janela não estiver visível, exibi-lo, na barra de menus, escolhendo **exibição** > **Other Windows**  >   **Fontes de dados**.  
   
-2.  Escolher **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.  
+2. Escolher **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.  
   
-3.  Selecione **banco de dados** e, em seguida, clique em **próxima**.  
+3. Selecione **banco de dados** e, em seguida, clique em **próxima**.  
   
-4.  Selecione uma conexão de dados para o banco de dados do SQL Server de exemplo Northwind, ou adicionar uma nova conexão usando o **nova Conexão** botão.  
+4. Selecione uma conexão de dados para o banco de dados do SQL Server de exemplo Northwind, ou adicionar uma nova conexão usando o **nova Conexão** botão.  
   
-5.  Depois que uma conexão foi selecionado ou criado, clique em **próxima**.  
+5. Depois que uma conexão foi selecionado ou criado, clique em **próxima**.  
   
-6.  Desmarque a opção para salvar a conexão se ela está selecionada e clique **próxima**.  
+6. Desmarque a opção para salvar a conexão se ela está selecionada e clique **próxima**.  
   
-7.  Expanda o **tabelas** nó na **objetos de banco de dados** janela.  
+7. Expanda o **tabelas** nó na **objetos de banco de dados** janela.  
   
-8.  Marque a caixa de seleção ao lado de **funcionários** tabela.  
+8. Marque a caixa de seleção ao lado de **funcionários** tabela.  
   
 9. Clique em **Finalizar**.  
   
- O assistente adiciona as **funcionários** de tabela para o **fontes de dados** janela. Ele também adiciona um dataset tipado ao seu projeto que está visível no **Gerenciador de soluções**.  
+   O assistente adiciona as **funcionários** de tabela para o **fontes de dados** janela. Ele também adiciona um dataset tipado ao seu projeto que está visível no **Gerenciador de soluções**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Adicionar controles à planilha  
  Uma planilha exibirá os **funcionários** tabela quando a pasta de trabalho é aberta. Os usuários poderão fazer alterações aos dados e, em seguida, salvar essas alterações no banco de dados, clicando em um botão.  
@@ -108,27 +108,27 @@ ms.locfileid: "38781664"
   
 ### <a name="to-add-a-button"></a>Para adicionar um botão  
   
-1.  Do **controles comuns** guia da **caixa de ferramentas**, adicione um <xref:System.Windows.Forms.Button> controle à célula **A4** da planilha.  
+1. Do **controles comuns** guia da **caixa de ferramentas**, adicione um <xref:System.Windows.Forms.Button> controle à célula **A4** da planilha.  
   
- A próxima etapa é adicionar texto ao botão quando a planilha é aberta.  
+   A próxima etapa é adicionar texto ao botão quando a planilha é aberta.  
   
 ## <a name="initialize-the-control"></a>Inicializar o controle  
  Adicionar texto ao botão no <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> manipulador de eventos.  
   
 ### <a name="to-initialize-the-control"></a>Ao inicializar o controle  
   
-1.  Na **Gerenciador de soluções**, clique com botão direito **Sheet1.vb** ou **Sheet1.cs**e, em seguida, clique em **Exibir código** no menu de atalho.  
+1. Na **Gerenciador de soluções**, clique com botão direito **Sheet1.vb** ou **Sheet1.cs**e, em seguida, clique em **Exibir código** no menu de atalho.  
   
-2.  Adicione o seguinte código para o `Sheet1_Startup` método para definir o texto para o b`utton`.  
+2. Adicione o seguinte código para o `Sheet1_Startup` método para definir o texto para o b`utton`.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
-     [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
+    [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
+    [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
   
-3.  Apenas para c#, adicione um manipulador de eventos para o <xref:System.Windows.Forms.Control.Click> eventos para o `Sheet1_Startup` método.  
+3. Apenas para c#, adicione um manipulador de eventos para o <xref:System.Windows.Forms.Control.Click> eventos para o `Sheet1_Startup` método.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
+    [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
   
- Agora adicione código para manipular o <xref:System.Windows.Forms.Control.Click> evento do botão.  
+   Agora adicione código para manipular o <xref:System.Windows.Forms.Control.Click> evento do botão.  
   
 ## <a name="save-changes-to-the-database"></a>Salvar alterações no banco de dados  
  Todas as alterações foram feitas para os dados existem somente no conjunto de dados local até que eles são salvos no banco de dados explicitamente.  
@@ -175,15 +175,15 @@ ms.locfileid: "38781664"
   
 ### <a name="to-add-new-rows"></a>Para adicionar novas linhas  
   
-1.  Selecione uma célula dentro do objeto de lista.  
+1. Selecione uma célula dentro do objeto de lista.  
   
-     Uma nova linha aparece na parte inferior da lista, com um asterisco (**\***) na primeira célula da nova linha.  
+    Uma nova linha aparece na parte inferior da lista, com um asterisco (* *\\* * *) na primeira célula da nova linha.  
   
-2.  Adicione as seguintes informações na linha vazia.  
+2. Adicione as seguintes informações na linha vazia.  
   
-    |EmployeeID|LastName|FirstName|Título|  
-    |----------------|--------------|---------------|-----------|  
-    |10|Shu|Shu|Gerente de vendas|  
+   |EmployeeID|LastName|FirstName|Título|  
+   |----------------|--------------|---------------|-----------|  
+   |10|Shu|Shu|Gerente de vendas|  
   
 ### <a name="to-delete-rows"></a>Para excluir linhas  
   

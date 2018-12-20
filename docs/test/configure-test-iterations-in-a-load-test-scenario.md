@@ -1,5 +1,5 @@
 ---
-title: Configurando iterações de teste para testes de carga no Visual Studio
+title: Configurando iterações de teste para teste de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0310ac0ee0e6226f9f5685c590e4dc2e0c49b6b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 28bc6d6cb35397d49868c0603f7beb17f9138c2d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176135"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055681"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurar iterações de teste em um cenário de teste de carga
 
 Para definir as configurações de iteração de teste, edite um cenário de teste de carga usando o Editor de Teste de Carga e a janela **Propriedades**. Por padrão, um cenário de teste de carga é configurado sem especificar o número máximo de iterações de teste. Você tem a opção de configurar o número máximo de iterações no cenário e por quanto tempo pausar entre elas.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="specify-the-maximum-test-iterations-for-a-scenario"></a>Especifique o máximo de iterações de teste para um cenário
 
@@ -32,7 +34,7 @@ A propriedade de **Número máximo de iterações de teste** controla o número 
 > [!NOTE]
 > Para obter uma lista completa das propriedades de cenário de teste de carga e suas descrições, confira [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
 
- Para a combinação de testes sequenciais, uma iteração é uma passagem por todos os testes na combinação. Para todas as outras combinações de testes, cada execução de teste conta como uma iteração. Para obter mais informações, confira [Sobre o controle misto](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+ Para a combinação de testes sequenciais, uma iteração é uma passagem por todos os testes na combinação. Para todas as outras combinações de testes, cada execução de teste conta como uma iteração. Para saber mais, confira [Sobre o controle misto](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
  Se o teste de carga for um teste de carga baseado em duração, e a duração expirar antes que a contagem de iterações seja concluída, o teste ainda será parado. Se o teste for baseado em iteração, e as iterações de teste forem atendidas antes das iterações do cenário, o teste será parado. A duração é configurada usando a propriedade de **Duração da Execução** na janela **Propriedades** associada a uma configuração de execução em um teste de carga.
 

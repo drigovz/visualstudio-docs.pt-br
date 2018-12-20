@@ -1,7 +1,7 @@
 ---
 title: IEEVisualizerServiceProvider::CreateVisualizerService | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,39 +17,37 @@ ms.assetid: f366f7c9-358d-46c8-993f-32ff86539833
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8cf31da1dab9e53a1c473ee8024a7fe1cb9a5f2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4cc37f31de5e616dbc7497cb23f9f14b73610038
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473158"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807628"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEEVisualizerServiceProvider::CreateVisualizerService](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice).  
-  
 Esse método cria um serviço de visualização simultânea.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT CreateVisualizerService(  
-   IDebugBinder*              binder,  
-   IDebugSymbolProvider*      pSymProv,  
-   IDebugAddress*             pAddress,  
-   IEEVisualizerDataProvider* dataProvider,  
-   IEEVisualizerService**     ppService  
+HRESULT CreateVisualizerService(  
+   IDebugBinder*              binder,  
+   IDebugSymbolProvider*      pSymProv,  
+   IDebugAddress*             pAddress,  
+   IEEVisualizerDataProvider* dataProvider,  
+   IEEVisualizerService**     ppService  
 );  
 ```  
   
 ```csharp  
-int CreateVisualizerService(  
-   IDebugBinder binder,  
-   IDebugSymbolProvider      pSymProv,  
-   IDebugAddress             pAddress,  
-   IEEVisualizerDataProvider dataProvider,  
-   out IEEVisualizerService  ppService  
+int CreateVisualizerService(  
+   IDebugBinder binder,  
+   IDebugSymbolProvider      pSymProv,  
+   IDebugAddress             pAddress,  
+   IEEVisualizerDataProvider dataProvider,  
+   out IEEVisualizerService  ppService  
 );  
 ```  
   

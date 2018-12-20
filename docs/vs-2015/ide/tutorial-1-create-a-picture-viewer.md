@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial 1: criar um visualizador de imagens | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,42 +14,40 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1472d682ea6c00807318873a3f738f792875d1bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0cdc926121212a8082fac126e4ab91b753df7dee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461431"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884960"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Criar um visualizador de imagens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Tutorial 1: criar um visualizador de imagens](https://docs.microsoft.com/visualstudio/ide/tutorial-1-create-a-picture-viewer).  
-  
 Neste tutorial, você cria um programa que carrega uma imagem de um arquivo e a exibe em uma janela. Você aprende a arrastar controles como botões e caixas de imagem no formulário, definir as respectivas propriedades e usar contêineres para redimensionar suavemente o formulário. Você também pode começar a escrever código. Você aprenderá como:  
   
--   Crie um novo projeto.  
+- Crie um novo projeto.  
   
--   Testar (depurar) um aplicativo.  
+- Testar (depurar) um aplicativo.  
   
--   Adicionar controles básicos como caixas de seleção e botões para um formulário.  
+- Adicionar controles básicos como caixas de seleção e botões para um formulário.  
   
--   Posicionar controles em um formulário usando layouts.  
+- Posicionar controles em um formulário usando layouts.  
   
--   Adicionar as caixas de diálogo **Abrir Arquivo** e **Cor** a um formulário.  
+- Adicionar as caixas de diálogo **Abrir Arquivo** e **Cor** a um formulário.  
   
--   Escrever código usando o IntelliSense e snippets de código.  
+- Escrever código usando o IntelliSense e snippets de código.  
   
--   Escrever métodos de manipulador de eventos.  
+- Escrever métodos de manipulador de eventos.  
   
- Quando você terminar, seu programa será como a imagem a seguir.  
+  Quando você terminar, seu programa será como a imagem a seguir.  
   
- ![Imagem que você cria neste tutorial](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
-Mostre que você cria neste tutorial  
+  ![Imagem que você cria neste tutorial](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
+  Mostre que você cria neste tutorial  
   
- Para baixar uma versão concluída do exemplo, consulte [Exemplo de tutorial completo do Visualizador de Imagens](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
+  Para baixar uma versão concluída do exemplo, consulte [Exemplo de tutorial completo do Visualizador de Imagens](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
   
- ![link para o vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para ver uma versão em vídeo deste tópico, consulte [Como eu faço para: criar um visualizador de imagens no Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) ou [Como eu faço para: criar um visualizador de imagens em C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
+  ![link para o vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para ver uma versão em vídeo deste tópico, consulte [Como eu faço para: criar um visualizador de imagens no Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) ou [Como eu faço para: criar um visualizador de imagens em C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
   
 > [!NOTE]
 >  Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio. O Visual C# e o Visual Basic são abordados neste tutorial, portanto concentre-se nas informações específicas da linguagem de programação que você está usando.  

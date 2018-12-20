@@ -1,7 +1,7 @@
 ---
 title: Editar e continuar (Visual Basic) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,21 +23,19 @@ helpviewer_keywords:
 - 64-bit Edit and Continue
 ms.assetid: 7e90f34f-e699-45ab-a4c9-a4b527c498c8
 caps.latest.revision: 43
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 825eac4ab53e95904e85a794b665ce6f6b11f873
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 383e3418135857b0bded3bbefaace0e8d5832ce6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463172"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750626"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Editar e Continuar (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [editar e continuar (Visual Basic)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-basic).  
-  
 Editar e Continuar são um recurso para depuração do [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] que permite alterar seu código durante a execução em modo de interrupção. Depois que as edições do código tiverem sido aplicadas, você poderá retomar a execução de código com as novas edições no lugar e visualizar o efeito.  
   
  Você pode usar o recurso Editar e Continuar sempre que entrar no modo de Interrupção. No modo de Interrupção, o ponteiro de instrução, uma seta amarela na janela de origem, aponta para a linha que será executada em seguida e será localizado em uma instrução executável dentro de um método ou corpo de propriedade. Você pode fazer praticamente qualquer tipo de alteração nas instruções executáveis no modo de Interrupção, e a alteração será inserida no projeto subjacente. Quando estiver no modo de Interrupção, porém, não será permitido em geral modificar instruções de declaração, como métodos públicos, campos públicos ou declarações da classe.  

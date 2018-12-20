@@ -1,7 +1,7 @@
 ---
 title: Ferramenta de linha de comando de captura | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22f6a399630a675b7a44f5357faea50d1dc16d91
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d4cafc8c066025f87d233d8b6db8a97be1aa16f5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587850"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770682"
 ---
 # <a name="command-line-capture-tool"></a>Ferramenta de captura de linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ferramenta de captura de linha de comando](https://docs.microsoft.com/visualstudio/debugger/graphics/command-line-capture-tool).  
-  
 O DXCap.exe é uma ferramenta de linha de comando para reprodução e captura de diagnóstico de gráficos. Ele dá suporte a Direct3D 10 através de Direct3D 12 em todos os níveis de recurso.  
   
 ## <a name="syntax"></a>Sintaxe  

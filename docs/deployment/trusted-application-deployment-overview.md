@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f99bd0188c89110796f4d082e803f35ce10da867
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: c1be49bb015334ed37326fbe301ac2035a6f3269
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152676"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848781"
 ---
 # <a name="trusted-application-deployment-overview"></a>Visão geral de implantação de aplicativos confiável
 Este tópico fornece uma visão geral de como implantar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos que têm permissões elevadas, usando a tecnologia de implantação de aplicativos confiáveis.  
@@ -51,21 +51,21 @@ Este tópico fornece uma visão geral de como implantar [!INCLUDE[ndptecclick](.
   
  Em organizações maiores, o publicador e o implantador são frequentemente duas entidades separadas:  
   
--   O publicador é o grupo que cria o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.  
+- O publicador é o grupo que cria o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.  
   
--   O implantador é o grupo, normalmente o departamento de TI (tecnologia) de informações, que distribui [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo em computadores de área de trabalho corporativa.  
+- O implantador é o grupo, normalmente o departamento de TI (tecnologia) de informações, que distribui [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo em computadores de área de trabalho corporativa.  
   
 Você deve seguir estas etapas para tirar proveito da implantação de aplicativos confiáveis:  
   
-1.  Obter um certificado para o publicador.  
+1. Obter um certificado para o publicador.  
   
-2.  Adicione o publicador para o repositório de editores confiáveis em todos os clientes.  
+2. Adicione o publicador para o repositório de editores confiáveis em todos os clientes.  
   
-3.  Criar seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.  
+3. Criar seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.  
   
-4.  Assinar o manifesto de implantação com o certificado do Editor.  
+4. Assinar o manifesto de implantação com o certificado do Editor.  
   
-5.  Publica a implantação do aplicativo em computadores cliente.  
+5. Publica a implantação do aplicativo em computadores cliente.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Obter um certificado para o publicador  
  Certificados digitais são um componente principal do sistema de segurança e autenticação do Microsoft Authenticode. Authenticode é uma parte padrão do sistema operacional Windows. Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos devem ser assinados com um certificado digital, independentemente se eles participarem de implantação de aplicativos confiáveis. Para obter uma explicação completa de como funciona com o Authenticode [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], consulte [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md).  

@@ -1,7 +1,7 @@
 ---
 title: Registrar e cancelar o registro de VSPackages | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: e25e7a46-6a55-4726-8def-ca316f553d6b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8995bbb47f9a65a101256029a28313768a0b04ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e14422b7430dc0429954bf11c77b30619fb7f7da
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464860"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763416"
 ---
 # <a name="registering-and-unregistering-vspackages"></a>Registrando e cancelando o registro de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Registrando e Cancelando o registro de VSPackages](https://docs.microsoft.com/visualstudio/extensibility/registering-and-unregistering-vspackages).  
-  
 Usar atributos para registrar um VSPackage, mas  
   
 ## <a name="registering-a-vspackage"></a>Registrando um VSPackage  
@@ -38,7 +36,7 @@ Usar atributos para registrar um VSPackage, mas
 ```csharp  
 [PackageRegistration(UseManagedResourcesOnly = true)]  
 [Guid("0B81D86C-0A85-4f30-9B26-DD2616447F95")]  
-public sealed class BasicPackage : Package  
+public sealed class BasicPackage : Package  
 {. . .}  
 ```  
   

@@ -1,7 +1,7 @@
 ---
 title: Escolher entre VSPackages compartilhados e com controle de versão | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 14b2ec1884fcbbebb28667e04d03e2c1424175dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9fcae5b736310424f220d08aefa4e061e1f6c860
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476356"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756833"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Escolhendo entre VSPackages compartilhados e com controle de versão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [escolhendo entre compartilhados e com controle de versão VSPackages](https://docs.microsoft.com/visualstudio/extensibility/choosing-between-shared-and-versioned-vspackages).  
-  
 Diferentes versões do Visual Studio podem coexistir no mesmo computador. Os VSPackages pode dar suporte a qualquer combinação de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] versões.  
   
  Você pode habilitar as instalações lado a lado de VSPackages por meio de qualquer uma das duas estratégias, a estratégia compartilhada ou a estratégia de controle de versão. Ambos acomodar a presença de várias versões dos [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e associados a versões do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
@@ -60,15 +58,15 @@ Diferentes versões do Visual Studio podem coexistir no mesmo computador. Os VSP
 ## <a name="binary-compatibility"></a>Compatibilidade binária  
  Em geral, a compatibilidade binária permite que os VSPackages de código nativo desenvolvidos com versões anteriores do Visual Studio para executar em versões posteriores do Visual Studio. No entanto, há três exceções importantes:  
   
--   Se o VSPackage depende de uma versão específica do common language runtime, ele deve determinar em qual versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] está em execução.  
+- Se o VSPackage depende de uma versão específica do common language runtime, ele deve determinar em qual versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] está em execução.  
   
--   Um VSPackage pode ter uma dependência em um recurso específico do VSPackage outro ou de outro produto. Consequentemente, o VSPackage pode ser executado apenas em que a dependência seja satisfeita.  
+- Um VSPackage pode ter uma dependência em um recurso específico do VSPackage outro ou de outro produto. Consequentemente, o VSPackage pode ser executado apenas em que a dependência seja satisfeita.  
   
--   Um VSPackage que pode ser afetado por uma correção de segurança em um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] service pack ou uma versão posterior do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Nesses casos, um VSPackage desenvolvido com uma versão anterior da [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] não pode ser executado em versões do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] após a correção de segurança foi aplicada. No entanto, você pode recompilar seu pacote com a versão mais recente e executá-lo também em versões anteriores.  
+- Um VSPackage que pode ser afetado por uma correção de segurança em um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] service pack ou uma versão posterior do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Nesses casos, um VSPackage desenvolvido com uma versão anterior da [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] não pode ser executado em versões do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] após a correção de segurança foi aplicada. No entanto, você pode recompilar seu pacote com a versão mais recente e executá-lo também em versões anteriores.  
   
- VSPackages gerenciados deve ser criados usando uma versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e o [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] que corresponde à versão de destino do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  VSPackages gerenciados deve ser criados usando uma versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e o [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] que corresponde à versão de destino do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Além do planejamento para a compatibilidade binária para seus binários de VSPackage, você também deve considerar a solução e formatos de arquivo de projeto. Se o VSPackage cria um novo tipo de projeto, você deve decidir se ele pode ser executado em apenas uma versão ou em várias versões do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obter mais informações, consulte [atualização de projetos personalizados](../misc/upgrading-custom-projects.md).  
+  Além do planejamento para a compatibilidade binária para seus binários de VSPackage, você também deve considerar a solução e formatos de arquivo de projeto. Se o VSPackage cria um novo tipo de projeto, você deve decidir se ele pode ser executado em apenas uma versão ou em várias versões do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obter mais informações, consulte [atualização de projetos personalizados](../misc/upgrading-custom-projects.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Instalar VSPackages com o Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md)   

@@ -1,7 +1,7 @@
 ---
 title: 'DA0004: alto uso de processador | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ f1_keywords:
 - vs.performance.4
 ms.assetid: 2c4fb569-929e-4f1d-8c50-b590ee371351
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 759ba305335c75591bf975e40f011f31edd1bdb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a942a26bb4cd8ccca94fd442250fe8a239cba4ed
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475655"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764038"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: uso do processador elevado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DA0004: alto uso de processador](https://docs.microsoft.com/visualstudio/profiling/da0004-high-processor-usage).  
-  
 Id da regra | DA0004 |  
 | Categoria | Uso das ferramentas de criação de perfil |  
 | Métodos de criação de perfil | Amostragem de instrumentação |  

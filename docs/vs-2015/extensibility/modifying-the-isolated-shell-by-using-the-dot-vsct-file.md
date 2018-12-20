@@ -1,7 +1,7 @@
 ---
 title: Modificar o Shell isolado usando o. Arquivo VSCT | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6d147c2d-10e9-400e-b8ce-5566287b41ba
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0606d28f151f0d9c85980121e3129bd9204c61b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb5b110386f4a696c228e746223d745df6b18f7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475964"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817601"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>Modificar o Shell isolado usando o. Arquivo VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [modificando o isolado Shell, usando o. Arquivo VSCT](https://docs.microsoft.com/visualstudio/extensibility/modifying-the-isolated-shell-by-using-the-dot-vsct-file).  
-  
 O projeto de interface do usuário para um projeto de shell isolado do Visual Studio contém um arquivo. VSCT que permite que você especifique quais grupos de aplicativos e os comandos individuais estão disponíveis no aplicativo. A seguir está um trecho de um arquivo. VSCT não modificado.  
   
 ```  

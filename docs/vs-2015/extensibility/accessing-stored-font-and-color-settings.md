@@ -1,7 +1,7 @@
 ---
 title: Acessando configurações de cor e a fonte armazenada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3387c5e611ad12ce81347e51893e8459ecd9a3c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ee5ed57639127bd6c30d2e7e1373a56848eca504
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462834"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772814"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>Acessando configurações de cor e a fonte armazenada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [acessar fonte armazenados e as configurações de cor](https://docs.microsoft.com/visualstudio/extensibility/accessing-stored-font-and-color-settings).  
-  
 O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE) armazena configurações modificadas para fontes e cores no registro. Você pode usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface para acessar essas configurações.  
   
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>Para iniciar a persistência de estado de fontes e cores  
@@ -55,17 +53,17 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o ambiente de desenvolvimento int
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>A persistência de estado de uso de fontes e cores  
  Persistência de fontes e cores envolve:  
   
--   Sincronizar as configurações de IDE com configurações armazenadas no registro.  
+- Sincronizar as configurações de IDE com configurações armazenadas no registro.  
   
--   Propagação de informações sobre a modificação do registro.  
+- Propagação de informações sobre a modificação do registro.  
   
--   Configurando e recuperando as configurações armazenadas no registro.  
+- Configurando e recuperando as configurações armazenadas no registro.  
   
- Sincronizar a configuração de armazenamento com as configurações do IDE é totalmente transparente. O IDE subjacente gravará automaticamente as configurações atualizadas para **exibir itens** para as entradas do registro de categorias.  
+  Sincronizar a configuração de armazenamento com as configurações do IDE é totalmente transparente. O IDE subjacente gravará automaticamente as configurações atualizadas para **exibir itens** para as entradas do registro de categorias.  
   
- Se vários VSPackages compartilham uma categoria específica, um VSPackage deve exigir que os eventos são gerados quando os métodos do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface são usadas para modificar as configurações do registro armazenado.  
+  Se vários VSPackages compartilham uma categoria específica, um VSPackage deve exigir que os eventos são gerados quando os métodos do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface são usadas para modificar as configurações do registro armazenado.  
   
- Por padrão, a geração de eventos não está habilitada. Para habilitar a geração de eventos, uma categoria deve ser aberta usando <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Isso faz com que o IDE chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> método que implementa um VSPackage.  
+  Por padrão, a geração de eventos não está habilitada. Para habilitar a geração de eventos, uma categoria deve ser aberta usando <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Isso faz com que o IDE chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> método que implementa um VSPackage.  
   
 > [!NOTE]
 >  Modificações por meio de **fontes e cores** geram eventos independente da página de propriedades <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. Você pode usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interface para determinar se uma atualização das configurações de fonte e cor armazenada em cache é necessária antes de chamar os métodos do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> classe.  

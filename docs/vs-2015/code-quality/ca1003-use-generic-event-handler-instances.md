@@ -1,7 +1,7 @@
 ---
 title: 'CA1003: Usar instâncias do manipulador de eventos genéricos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4e6a2a3f3d2684c4de49d02dfb19c4654a76eda9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: f3c2cf2ad59f7ade337c84f13133bb5181afb615
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587136"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929082"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: usar instâncias do manipulador de eventos genéricos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1003: usar instâncias do manipulador de eventos genéricos](https://docs.microsoft.com/visualstudio/code-quality/ca1003-use-generic-event-handler-instances).
 
 |||
 |-|-|

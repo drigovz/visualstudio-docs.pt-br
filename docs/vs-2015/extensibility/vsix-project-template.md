@@ -1,7 +1,7 @@
 ---
 title: Modelo de projeto do VSIX | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec54b88483966851149449bc1c605ee991c436b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2b06582e1de7939e34f8fa49aa1cc9435010789
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475135"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733854"
 ---
 # <a name="vsix-project-template"></a>Modelo de projeto do VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [modelo de projeto do VSIX](https://docs.microsoft.com/visualstudio/extensibility/vsix-project-template).  
-  
 Você pode usar o modelo de projeto de VSIX para encapsular uma ou mais extensões do Visual Studio em um projeto VSIX e, em seguida, publicar o pacote na [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) site da Web.  
   
  Dá suporte à implantação do VSIX VSPackages, assemblies, componentes MEF, modelos de projeto, modelos de item, controles de caixa de ferramentas e os tipos de extensão personalizada.  
@@ -44,11 +42,11 @@ Você pode usar o modelo de projeto de VSIX para encapsular uma ou mais extensõ
 ## <a name="uses-of-the-vsix-project-template"></a>Usos do modelo de projeto do VSIX  
  O modelo de projeto do VSIX tem dois usos principais:  
   
--   Para implantar modelos de projeto, modelos de item e outras extensões que não têm suporte do VSIX.  
+- Para implantar modelos de projeto, modelos de item e outras extensões que não têm suporte do VSIX.  
   
--   Para encapsular as saídas de várias extensões em pacote de uma implantação.  
+- Para encapsular as saídas de várias extensões em pacote de uma implantação.  
   
- Não é necessário usar o modelo de projeto de VSIX para implantar os VSPackages ou outros tipos de extensões que já têm VSIX suporte.  
+  Não é necessário usar o modelo de projeto de VSIX para implantar os VSPackages ou outros tipos de extensões que já têm VSIX suporte.  
   
 ## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Empacotando uma extensão em um projeto do VSIX vazio  
  Você pode empacotar uma extensão existente ou uma extensão que ainda não tenha VSIX dar suporte, encapsulando-os em um projeto vazio do VSIX. A extensão a ser encapsulado deve ser de um tipo que é compatível com o [esquema VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  

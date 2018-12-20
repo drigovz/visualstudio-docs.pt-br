@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugObjects::Reset | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 4a245e47-cc39-4177-b83d-083ea0e3190f
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 309b83d319c69a1021d8bfff05fca6f3df696af4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aac922e8f0916b7d26e3f84a66cc1dd865310d53
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472898"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757740"
 ---
 # <a name="ienumdebugobjectsreset"></a>IEnumDebugObjects::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugObjects::Reset](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugobjects-reset).  
-  
 Este método redefine a enumeração para o primeiro elemento.  
   
 ## <a name="syntax"></a>Sintaxe  

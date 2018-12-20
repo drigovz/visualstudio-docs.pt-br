@@ -1,7 +1,7 @@
 ---
-title: Criar um aplicativo Vue.js usando as Ferramentas Node.js para Visual Studio
+title: Criar um aplicativo Vue.js usando o Node.js
 description: Crie aplicativos Node.js no Visual Studio usando a estrutura Vue.js
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 07/06/2018
 ms.technology: vs-nodejs
 ms.topic: conceptual
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 67b3a5a1a382b6768d25ce2b0550197fc09643fa
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 03576347dc740f44a04ca38150abde458338ef14
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924776"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066870"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Criar um aplicativo Vue.js usando as Ferramentas Node.js para Visual Studio
 
@@ -37,7 +37,7 @@ Os seguintes novos recursos dão suporte ao desenvolvimento de aplicativos Vue.j
     > [!IMPORTANT]
     > Este artigo exige recursos que estão disponíveis apenas a partir do Visual Studio 2017 versão 15.8 Versão Prévia 3.
 
-    Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
+    Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  para instalá-lo gratuitamente.
 
     Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto** (selecione **Arquivo** > **Novo** > **Projeto**). O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
 
@@ -79,7 +79,7 @@ Neste exemplo, você usará um aplicativo ASP.NET Core vazio (C#). No entanto, v
 * Abra o arquivo *./Startup.cs* e adicione as seguintes linhas ao método Configure:
 
     ```csharp
-    app.UseDefaultFiles() // Enables default file mapping on the web root.
+    app.UseDefaultFiles(); // Enables default file mapping on the web root.
     app.UseStaticFiles(); // Marks files on the web root as servable.
     ```
 

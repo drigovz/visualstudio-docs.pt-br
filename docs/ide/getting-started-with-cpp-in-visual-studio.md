@@ -1,5 +1,5 @@
 ---
-title: Introdução ao C++ no Visual Studio
+title: Introdução ao C++
 description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
@@ -7,18 +7,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
 author: corob-msft
-ms.author: tglee
+ms.author: corob
 manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b49f83813bc5acd64de74a27a025bc78503902c5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 406b3c24cf3c46b694afc8ab24c0ddca11b434ee
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747346"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159991"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introdução ao C++ no Visual Studio
 
@@ -87,7 +87,7 @@ Em seguida, adicione o código para exibir a palavra “Hello” na janela do co
    using namespace std;
    ```
 
-   Você deve ter notado que uma caixa aparece conforme insere o código. Essa caixa contém sugestões de preenchimento automático para os caracteres que você inserir. Ela é parte do IntelliSense do C++, que fornece prompts de codificação, incluindo a classe ou os membros da interface e as informações de parâmetro. Você também pode usar trechos de código, que são blocos de código predefinidos. Para obter mais informações, consulte [Usando IntelliSense](../ide/using-intellisense.md) e [Trechos de código](../ide/code-snippets.md).
+   Você deve ter notado que uma caixa aparece conforme insere o código. Essa caixa contém sugestões de preenchimento automático para os caracteres que você inserir. Ela é parte do IntelliSense do C++, que fornece prompts de codificação, incluindo a classe ou os membros da interface e as informações de parâmetro. Você também pode usar snippets de código, que são blocos de código predefinidos. Para obter mais informações, consulte [Usando IntelliSense](../ide/using-intellisense.md) e [Snippets de código](../ide/code-snippets.md).
 
    ![O código fixo no editor](../ide/media/get-started-cpp-cout-fix.png)
 
@@ -151,10 +151,10 @@ Agora que você verificou que tudo está funcionando, já pode preparar um build
 
 Quando este build for concluído, você terá criado um aplicativo que poderá copiar e ser executado em qualquer janela de prompt de comando. Ele pode não fazer muito, mas é o gateway para coisas maiores.
 
-Parabéns por concluir este guia de início rápido! Se desejar explorar mais exemplos, consulte [Amostras do Visual Studio](../ide/visual-studio-samples.md).
+Parabéns por concluir este guia de início rápido!
 
 ## <a name="see-also"></a>Consulte também
 
 - [Usando o IDE do Visual Studio para desenvolvimento de área de trabalho do C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
-- [Passo a passo: criar um aplicativo simples com o C# ou o Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Passo a passo: Criar um aplicativo simples com o C# ou o Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 - [Dicas de produtividade para o Visual Studio](../ide/productivity-tips-for-visual-studio.md)

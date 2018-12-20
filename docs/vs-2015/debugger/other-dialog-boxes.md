@@ -1,7 +1,7 @@
 ---
 title: Outras caixas de diálogo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - Spy++ dialog boxes
 ms.assetid: 81710456-2600-4468-a448-3fb21c7bda82
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a40dd5cc03e7c6433ff03620c09afb65abf56a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3083eb3e5dab3deece46e9b93db29acd860a1d19
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466316"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772918"
 ---
 # <a name="other-dialog-boxes"></a>Outras caixas de diálogo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [outras caixas de diálogo](https://docs.microsoft.com/visualstudio/debugger/other-dialog-boxes).  
-  
 Essas caixas de diálogo exibem informações sobre o programa Spy + +.  
   
 ## <a name="in-this-section"></a>Nesta seção  

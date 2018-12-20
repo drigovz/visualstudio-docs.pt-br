@@ -1,7 +1,7 @@
 ---
 title: 'CA1010: As coleções devem implementar a interface genérica | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8e0ae778101d39f5a476c56760d1ce8824f33c4d
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 80cd80e1bd86d3cee0c943e387e3ecb4e82b1943
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587226"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939157"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: as coleções devem implementar a interface genérica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1010: as coleções devem implementar a interface genérica](https://docs.microsoft.com/visualstudio/code-quality/ca1010-collections-should-implement-generic-interface).
 
 |||
 |-|-|

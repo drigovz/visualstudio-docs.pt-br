@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f73db7e52c22291443ec262eb2f91ffbcd319c7
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: cb965b9a93a278a4c51ea4661f683ebafc2838fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914808"
 ---
 # <a name="lines-view---sampling-data"></a>Exibição de linhas – dados de amostragem
 A visualização Linhas de dados de amostragem lista os dados de desempenho das instruções que estavam em execução quando os exemplos foram coletados na criação de perfil.  
@@ -27,21 +27,21 @@ A visualização Linhas de dados de amostragem lista os dados de desempenho das 
   
  Em um arquivo de origem, uma instrução pode abranger mais de uma linha em um arquivo de origem, e uma única linha pode incluir mais de uma instrução. Uma instrução é identificada pelo seguinte:  
   
--   O arquivo de origem que contém a instrução da função.  
+- O arquivo de origem que contém a instrução da função.  
   
--   A função que contém a instrução.  
+- A função que contém a instrução.  
   
--   A linha de origem em que a instrução se inicia.  
+- A linha de origem em que a instrução se inicia.  
   
--   O caractere na linha de origem em que a instrução se inicia.  
+- O caractere na linha de origem em que a instrução se inicia.  
   
--   A linha de origem em que a instrução termina.  
+- A linha de origem em que a instrução termina.  
   
--   O caractere na linha de origem em que a instrução termina.  
+- O caractere na linha de origem em que a instrução termina.  
   
- A coluna de Nome de Linha fornece uma concatenação classificável dos dados do identificador.  
+  A coluna de Nome de Linha fornece uma concatenação classificável dos dados do identificador.  
   
- Por definição, uma instrução não chama outras funções. Portanto, apenas valores exclusivos são listados.  
+  Por definição, uma instrução não chama outras funções. Portanto, apenas valores exclusivos são listados.  
   
 |Column|Descrição|  
 |------------|-----------------|  

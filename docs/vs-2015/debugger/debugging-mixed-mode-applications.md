@@ -1,7 +1,7 @@
 ---
 title: Depuração de aplicativos de modo misto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,21 +27,19 @@ helpviewer_keywords:
 - mixed-mode debugging, call stack
 ms.assetid: 60e34477-ae4e-48c7-9093-3e37f72e1bc3
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a2fc5fde5d026fd6fbc7e49153fba5cb95a7a0d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b176ae4a911e6948634cda2330d0c895f8b61cfd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468003"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773334"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Depurando aplicativos de modo misto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Depurando aplicativos de modo misto](https://docs.microsoft.com/visualstudio/debugger/debugging-mixed-mode-applications).  
-  
 Um aplicativo no modo misto é qualquer aplicativo que combine código nativo (C++) com código gerenciado (como o Visual Basic, Visual C# ou C++ que é executado no Common Language Runtime). A depuração de aplicativos no modo misto é totalmente transparente no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]; não é muito diferente da depuração de um aplicativo no modo único. No entanto, há algumas considerações especiais a serem feitas.  
   
 ## <a name="enable-c-edit-and-continue-in-mixed-mode-debugging"></a>Habilitar o recurso Editar e Continuar do C++ na depuração em modo misto  
@@ -56,13 +54,13 @@ Um aplicativo no modo misto é qualquer aplicativo que combine código nativo (C
   
 #### <a name="to-turn-off-property-evaluation"></a>Para desativar a avaliação da propriedade  
   
-1.  No menu **Ferramentas**, escolha **Opções**.  
+1. No menu **Ferramentas**, escolha **Opções**.  
   
-2.  No **opções** caixa de diálogo, abra o **depuração** pasta e selecione o **geral** categoria.  
+2. No **opções** caixa de diálogo, abra o **depuração** pasta e selecione o **geral** categoria.  
   
-3.  Desmarque a **habilitar a avaliação de propriedade e outras chamadas de função implícitas** caixa de seleção.  
+3. Desmarque a **habilitar a avaliação de propriedade e outras chamadas de função implícitas** caixa de seleção.  
   
- Como as pilhas de chamadas nativas e as pilhas de chamadas gerenciadas são diferentes, o depurador nem sempre pode fornecer a pilha de chamadas completa para código combinado. Quando o código nativo chamar o código gerenciado, você poderá observar algumas discrepâncias. Para obter mais informações, consulte [código misto e informações ausentes na janela pilha de chamadas](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md).  
+   Como as pilhas de chamadas nativas e as pilhas de chamadas gerenciadas são diferentes, o depurador nem sempre pode fornecer a pilha de chamadas completa para código combinado. Quando o código nativo chamar o código gerenciado, você poderá observar algumas discrepâncias. Para obter mais informações, consulte [código misto e informações ausentes na janela pilha de chamadas](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando código gerenciado](../debugger/debugging-managed-code.md)

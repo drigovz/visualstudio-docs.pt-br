@@ -1,7 +1,7 @@
 ---
 title: MACHINE_INFO_FLAGS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: 1482095d-9a2e-4ef1-9e14-362c0b85194e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f974cfe0cf5e423cca1c682bed83233f993685d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3101840c62ff6c0395b54228414e18412f712ca
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460314"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798814"
 ---
 # <a name="machineinfoflags"></a>MACHINE_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [MACHINE_INFO_FLAGS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/machine-info-flags).  
-  
 Usado para descrever uma máquina.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_MACHINE_INFO_FLAGS {   
+enum enum_MACHINE_INFO_FLAGS {   
    MCIFLAG_TERMINAL_SERVICES_AVAILABLE = 0x00000001  
 };  
 typedef DWORD MACHINE_INFO_FLAGS;  
 ```  
   
 ```csharp  
-public enum enum_MACHINE_INFO_FLAGS {   
+public enum enum_MACHINE_INFO_FLAGS {   
    MCIFLAG_TERMINAL_SERVICES_AVAILABLE = 0x00000001  
 };  
 ```  

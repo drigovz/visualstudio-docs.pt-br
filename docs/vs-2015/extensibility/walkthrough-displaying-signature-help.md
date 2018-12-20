@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Exibindo a Ajuda da assinatura | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24c3eea821209485b5d57335c0c948cae92b4a20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a3b902c32563da6bc21778a09b4aeaebaeabeaa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464171"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734639"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>Passo a passo: exibindo a ajuda da assinatura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: exibindo a Ajuda de assinatura](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-signature-help).  
-  
 Ajuda da assinatura (também conhecido como *informações de parâmetro*) exibe a assinatura de um método em uma dica de ferramenta quando um usuário digita o caractere de início da lista de parâmetro (normalmente um parêntese de abertura). Como um parâmetro e o separador de parâmetro (geralmente uma vírgula) são digitadas, a dica de ferramenta é atualizada para mostrar o próximo parâmetro em negrito. Você pode definir a Ajuda de assinatura no contexto de um serviço de linguagem, ou você pode definir seu próprio tipo de conteúdo e a extensão de nome do arquivo e exibir a Ajuda de assinatura para apenas esse tipo, ou você pode exibir a Ajuda de assinatura para um tipo de conteúdo existente (por exemplo, "texto"). Este passo a passo mostra como exibir a Ajuda de assinatura para o tipo de conteúdo "text".  
   
  Ajuda da assinatura costuma ser disparada, digitando um caractere específico, por exemplo, "(" (parêntese de abertura) e será descartada digitando outro caractere, por exemplo, ")" (parêntese de fechamento). Recursos do IntelliSense que são disparados, digitando um caractere podem ser implementados usando um manipulador de comandos para os pressionamentos de tecla (o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface) e um provedor de manipulador que implementa o <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interface. Para criar a fonte de ajuda de assinatura, que é a lista de assinaturas que participam de ajuda de assinatura, implemente a <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> interface e um provedor de código-fonte que implementa o <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> interface. Os provedores são partes do componente Managed Extensibility Framework (MEF) e são responsáveis pelas classes de origem e o controlador de exportação e importação de serviços e agentes, por exemplo, o <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, que permite que você navegue no buffer de texto e o <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>, que dispara a sessão de ajuda de assinatura.  

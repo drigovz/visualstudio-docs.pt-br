@@ -1,7 +1,7 @@
 ---
 title: Atalhos de teclado e mouse no Diagrama de Classe e na Janela Detalhes da Classe (Designer de Classe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 144c2d70cf734f8d1c9602fad96bf4e1c6d8a0c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f607046609208804f349eb06e927ab8e72e28992
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473726"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247904"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Atalhos de teclado e mouse no diagrama de classe e janela Detalhes da Classe (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [atalhos de teclado e Mouse no diagrama de classe e janela detalhes da classe (Designer de classe)](https://docs.microsoft.com/visualstudio/ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer).  
-  
 É possível usar o teclado além do mouse para executar ações de navegação no Designer de Classe e na Janela **Detalhes da Classe**.  
   
  **Neste tópico**  

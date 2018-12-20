@@ -1,5 +1,5 @@
 ---
-title: Configurações de registro em log de testes de carga no Visual Studio
+title: Configurações do log do teste de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,28 +10,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 61b67cb950ee1d429f5f65ef745ff5ac75ca69d8
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f280911be68616a1c2632195769547023832b061
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379651"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060032"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modificar configurações de registro em log de testes de carga
 
 O resultado de teste de carga para o teste de carga concluído contém exemplos de contador de desempenho e informações de erros que foram coletados em um log periodicamente dos computadores em teste. Um grande número de exemplos de contador de desempenho podem ser coletados durante a execução de um teste de carga. A quantidade de dados de desempenho coletados depende da extensão da execução, do intervalo de amostragem, do número de computadores em teste, e do número de contadores para coletar. Para um teste de carga grande, a quantidade de dados de desempenho coletados pode ser facilmente vários gigabytes; portanto, você deverá considerar a possibilidade de modificar o modo como os dados são salvos com frequência no log. Consulte [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md).
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 O *controlador de teste* armazena em spool todos os dados de exemplo do teste de carga em um log de banco de dados durante a execução do teste. Os dados adicionais, como detalhes dos erros e de medição de tempo, são carregados no banco de dados quando o teste é concluído.
 
 |Tarefa|Tópicos associados|
-|----------|-----------------------|
-|**Especificar a frequência de salvamento de logs durante uma execução de teste de carga:** você pode especificar a frequência com que deseja que o log do teste seja salvo quando o teste de carga é executado.|-   [Como especificar a frequência com que os logs de teste são salvos](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
-|**Salvar logs se um teste de carga falhar:** você pode especificar se quer salvar o log de teste sempre que um teste de carga falhar.|-   [Como especificar se as falhas no teste são salvas em logs de teste](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**Definir o tamanho máximo de arquivo para o arquivo de log:** você pode editar o arquivo de configuração XML associado ao serviço do controlador de teste para especificar o tamanho de arquivo máximo que deseja usar para o arquivo de log.|[Como especificar o tamanho máximo do arquivo de log](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
-
-## <a name="related-tasks"></a>Tarefas relacionadas
-
-Uma propriedade relacionada é **Armazenamento de Detalhes de Tempo**. Para saber mais, confira [Como configurar a coleta de detalhes completos para habilitar o gráfico de atividade do usuário virtual](../test/how-to-configure-load-tests-to-collect-full-details.md).
+|-|-----------------------|
+|**Salvar os logs se um teste de carga falhar:** Você poderá especificar se deseja salvar o log de teste sempre que um teste de carga falhar.|-   [Como: Especificar se as falhas de teste são salvas em logs de teste](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Definir o tamanho máximo de arquivo para o arquivo de log:** Você pode editar o arquivo de configuração XML associado ao serviço do controlador de teste para especificar o tamanho máximo de arquivo que você deseja usar para o arquivo de log.|[Como: Especificar o tamanho máximo do arquivo de log](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
 
 ## <a name="see-also"></a>Consulte também
 

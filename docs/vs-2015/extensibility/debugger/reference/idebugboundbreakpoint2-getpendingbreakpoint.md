@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2::GetPendingBreakpoint | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,30 +18,28 @@ ms.assetid: 22f94f81-f8d9-46de-96e9-fae6f3c24903
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 249efbb59047f61641364ad673823a3a934ce5fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ee240932bdc0c62e5581b1aaab0eac521a01a15
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473854"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745268"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugBoundBreakpoint2::GetPendingBreakpoint](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint).  
-  
 Obtém o ponto de interrupção pendente da qual o ponto de interrupção associado especificado foi criado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetPendingBreakpoint(   
+HRESULT GetPendingBreakpoint(   
    IDebugPendingBreakpoint2** ppPendingBreakpoint  
 );  
 ```  
   
 ```csharp  
-int GetPendingBreakpoint(   
+int GetPendingBreakpoint(   
    out IDebugPendingBreakpoint2 ppPendingBreakpoint  
 );  
 ```  

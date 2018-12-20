@@ -1,7 +1,7 @@
 ---
 title: Aplicativos de execução Windows Store no simulador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ dev_langs:
 - C++
 ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
 caps.latest.revision: 45
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3007d0e6ea7a835cd9147f5f5ff94c91f9f7bda4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 504a63d0f99a1a96d1192a1666d45dafde037253
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467571"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775102"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Executar aplicativos da Windows Store no simulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [aplicativos de execução Windows Store no simulador](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-in-the-simulator).  
-  
 O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo da área de trabalho que simula um aplicativo da Windows Store. Você pode executar aplicativos e simule eventos comuns de toque e rotação em seu computador de desenvolvimento. Você também pode escolher o tamanho da tela física e a resolução que você deseja emular e simular propriedades de conexão de rede.  
   
  O simulador fornece um ambiente no qual você pode criar, desenvolver, depurar e testar aplicativos da Windows Store. No entanto, antes de publicar um aplicativo na Windows Store, convém testá-lo em um dispositivo real.  
@@ -125,35 +123,35 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
   
  Para simular propriedades de rede:  
   
-1.  Na barra de ferramentas do simulador, escolha o **alterar propriedades da rede** botão.  
+1. Na barra de ferramentas do simulador, escolha o **alterar propriedades da rede** botão.  
   
-2.  Sobre o **definir propriedades de rede** caixa de diálogo, selecione **uso simulado propriedades de rede**.  
+2. Sobre o **definir propriedades de rede** caixa de diálogo, selecione **uso simulado propriedades de rede**.  
   
-     Desmarque a caixa de seleção para remover a simulação e retornar às propriedades de rede da interface atualmente conectada.  
+    Desmarque a caixa de seleção para remover a simulação e retornar às propriedades de rede da interface atualmente conectada.  
   
-3.  Insira um **nome do perfil** para a rede simulada. É recomendável usar um nome exclusivo que você pode usar para identificar a simulação na [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) propriedade da [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) objeto.  
+3. Insira um **nome do perfil** para a rede simulada. É recomendável usar um nome exclusivo que você pode usar para identificar a simulação na [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) propriedade da [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) objeto.  
   
-4.  Selecione o [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) valor para o perfil da **tipo de custo de rede** lista.  
+4. Selecione o [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) valor para o perfil da **tipo de custo de rede** lista.  
   
-5.  Dos **sinalizador de Status de limite de dados** lista, você pode definir o [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) propriedade ou o [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)propriedade como true, ou você pode escolher  **Abaixo do limite de dados** para definir os dois valores como false.  
+5. Dos **sinalizador de Status de limite de dados** lista, você pode definir o [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) propriedade ou o [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)propriedade como true, ou você pode escolher  **Abaixo do limite de dados** para definir os dois valores como false.  
   
-6.  Dos **estado de Roaming** lista, defina as [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) propriedade.  
+6. Dos **estado de Roaming** lista, defina as [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) propriedade.  
   
-7.  Escolher **propriedades do conjunto** para simular as propriedades de rede Disparando um primeiro plano [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) eventos e um plano de fundo [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) do tipo  **NetworkStateChange**.  
+7. Escolher **propriedades do conjunto** para simular as propriedades de rede Disparando um primeiro plano [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) eventos e um plano de fundo [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) do tipo  **NetworkStateChange**.  
   
- **Para obter mais informações sobre como gerenciar conexões de rede**  
+   **Para obter mais informações sobre como gerenciar conexões de rede**  
   
- [Guia de início rápido: Gerenciando monitorados restrições de custo de rede](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Guia de início rápido: Gerenciando monitorados restrições de custo de rede](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [Exemplo de informações de rede](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [Exemplo de informações de rede](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [Analisar o uso de energia](../profiling/analyze-energy-use-in-store-apps.md)  
+   [Analisar o uso de energia](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
+   [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
- [Como responder a eventos do sistema com tarefas em segundo plano](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [Como responder a eventos do sistema com tarefas em segundo plano](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [Como disparar suspender, continuar e eventos em aplicativos da Windows Store em segundo plano](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+   [Como disparar suspender, continuar e eventos em aplicativos da Windows Store em segundo plano](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Navegar no simulador com o teclado  
  Você pode navegar a barra de ferramentas do simulador pressionando **CTRL + ALT + seta acima** para alternar o foco da janela do simulador na barra de ferramentas do simulador. Use o **seta para cima** e o **seta para baixo** para mover entre os botões da barra de ferramentas.  

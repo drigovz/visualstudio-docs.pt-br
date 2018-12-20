@@ -1,7 +1,7 @@
 ---
 title: 'CA1409: Os tipos visíveis Com devem ser criáveis | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a9b946fc68774d33bc17a37dafc5366d6532f745
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 8d6a28acea085fad99549739a0c4ab132169a436
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889770"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: os tipos visíveis Com devem ser criáveis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1409: tipos visíveis Com devem ser criáveis](https://docs.microsoft.com/visualstudio/code-quality/ca1409-com-visible-types-should-be-creatable).
 
 |||
 |-|-|

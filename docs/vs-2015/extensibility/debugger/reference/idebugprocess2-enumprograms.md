@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2::EnumPrograms | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: f5b7295d-487d-464f-a4c6-d54175b07705
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7fc8541be71ce674cc969797c461ee20613a13ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7d06225c0e0d2e7539344824a068de6849e453c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467212"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775752"
 ---
 # <a name="idebugprocess2enumprograms"></a>IDebugProcess2::EnumPrograms
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProcess2::EnumPrograms](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess2-enumprograms).  
-  
 Recupera uma lista de todos os programas contidos por esse processo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT EnumPrograms(   
-   IEnumDebugPrograms2** ppEnum  
+HRESULT EnumPrograms(   
+   IEnumDebugPrograms2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumPrograms(   
-   out IEnumDebugPrograms2 ppEnum  
+int EnumPrograms(   
+   out IEnumDebugPrograms2 ppEnum  
 );  
 ```  
   

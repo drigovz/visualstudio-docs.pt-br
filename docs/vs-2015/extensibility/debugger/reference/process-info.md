@@ -1,7 +1,7 @@
 ---
 title: PROCESS_INFO | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 260c33cc-a05e-4645-84b6-536d0b3b0537
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f542bb3ff876a1e9ec51a29364e66766097e78f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7d99110511f9d126c2545ae2917c67afffb361f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464517"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767120"
 ---
 # <a name="processinfo"></a>PROCESS_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [PROCESS_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/process-info).  
-  
 Contém informações sobre um processo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-typedef struct tagPROCESS_INFO {   
+typedef struct tagPROCESS_INFO {   
    PROCESS_INFO_FIELDS Fields;  
    BSTR                bstrFileName;  
    BSTR                bstrBaseName;  
@@ -48,7 +46,7 @@ typedef struct tagPROCESS_INFO {
 ```  
   
 ```csharp  
-public struct PROCESS_INFO {   
+public struct PROCESS_INFO {   
    public uint          Fields;  
    public string        bstrFileName;  
    public string        bstrBaseName;  

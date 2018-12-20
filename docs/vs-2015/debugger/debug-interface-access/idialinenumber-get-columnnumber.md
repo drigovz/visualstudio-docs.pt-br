@@ -1,7 +1,7 @@
 ---
 title: 'Idialinenumber:: Get_columnnumber | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,28 +15,26 @@ helpviewer_keywords:
 - IDiaLineNumber::get_columnNumber method
 ms.assetid: e317f29a-6525-46a7-8421-33985392f8fd
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88ceb1b3149f9a7c1ee754f8219d011006bcb8e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2b8c32bec8d73684b76fcb69b0915e9cf26ffcd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468117"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721115"
 ---
 # <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idialinenumber:: Get_columnnumber](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idialinenumber-get-columnnumber).  
-  
 Recupera o número da coluna em que a expressão ou instrução começa.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
 [C++]  
-HRESULT get_columnNumber (   
+HRESULT get_columnNumber (   
    DWORD* pRetVal  
 );  
 ```  

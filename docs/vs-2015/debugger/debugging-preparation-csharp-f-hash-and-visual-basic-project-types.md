@@ -1,7 +1,7 @@
 ---
-title: 'Preparação da depuração: C#, F # e Visual Basic tipos de projeto | Microsoft Docs'
+title: 'Preparação da depuração: C#, F#e tipos de projeto do Visual Basic | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,21 +25,19 @@ helpviewer_keywords:
 - debugger, settings by project type
 ms.assetid: 7a0535f6-1cd4-4b51-ad34-f4a45b9f1ce3
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70bdc94339af45295599adac8fab03fbe30a93a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 721d1571052c9e3acbf13e68e90bbfe3413b1b81
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466976"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800231"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Preparação de depuração: tipos de projeto C#, F# e Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [preparação de depuração: c#, F # e tipos de projeto do Visual Basic](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types).  
-  
 Os tópicos nessa seção descrevem como depurar os tipos de projeto C#, F# e [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] criados pelos modelos de projeto do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  Observe que esses tipos de projeto que criam dll como suas saídas foram agrupados em [depuração de projetos de DLL](../debugger/debugging-dll-projects.md) devido aos recursos comuns eles compartilham.  

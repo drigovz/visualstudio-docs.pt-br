@@ -1,7 +1,7 @@
 ---
 title: Especificando quando e onde uma anotação se aplica | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ f1_keywords:
 - _At_buffer_
 ms.assetid: 8e4f4f9c-5dfa-4835-87df-ecd1698fc650
 caps.latest.revision: 9
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9ca11e9339534c1053a62442f4eb2e4a65ca2a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f149f483f29f4dafb29d0f7fed16a9bf93a59b78
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474439"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754285"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Especificando quando e onde uma anotação se aplica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [especificando quando e onde uma anotação se aplica](https://docs.microsoft.com/visualstudio/code-quality/specifying-when-and-where-an-annotation-applies).  
-  
 Quando uma anotação condicional, ele pode exigir outras anotações para especificar que para o analisador.  Por exemplo, se uma função tiver uma variável que pode ser síncrono ou assíncrono, a função se comporta da seguinte maneira: no caso síncrono sempre eventualmente tenha êxito, mas no caso assíncrono relata um erro se ele não conseguir obter êxito imediatamente. Quando a função é chamada de forma síncrona, verificar o valor do resultado não fornece nenhum valor para o analisador de código porque ele não poderia ter retornado.  No entanto, quando a função é chamada de forma assíncrona e o resultado da função não estiver marcado, pode ocorrer um erro grave. Este exemplo ilustra uma situação em que você pode usar o `_When_` anotação — descrito mais adiante neste artigo — para habilitar a verificação.  
   
 ## <a name="structural-annotations"></a>Anotações estruturais  

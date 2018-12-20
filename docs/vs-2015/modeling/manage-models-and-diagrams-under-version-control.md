@@ -1,7 +1,7 @@
 ---
 title: Gerenciar modelos e diagramas com controle de versão | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ helpviewer_keywords:
 - models, version control
 ms.assetid: ca6443e3-6d11-4da8-aae7-ca7dcc410076
 caps.latest.revision: 32
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1c2cc85b5ae94e95ef5f1e07a6d3ca13663fbb44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20cb2e89a85f00782a172245dcdd8f47025ddd12
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474621"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738040"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Gerenciar modelos e diagramas com controle de versão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [gerenciar modelos e diagramas com controle de versão](https://docs.microsoft.com/visualstudio/modeling/manage-models-and-diagrams-under-version-control).  
-  
 Gerenciar diferentes versões de seus projetos de modelagem e diagramas, incluindo mapas de código (arquivos. dgml), usando [usar o controle de versão do Team Foundation ou Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314); ambos com local Team Foundation Server ou na nuvem com o Visual Studio Team Services.  
   
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

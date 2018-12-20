@@ -1,5 +1,5 @@
 ---
-title: Personalizar o IDE do Visual Studio
+title: Personalizar o IDE
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,20 +9,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4f00313cbbb7f082934bddff338f77f117fd5c
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: cfd3ed3461b40f85e66d62f01e68aff4ce740031
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064539"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159497"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizar o IDE do Visual Studio
 
-Você pode personalizar o Visual Studio de várias maneiras para dar o melhor suporte ao seu próprio estilo e requisitos de desenvolvimento. Muitas das configurações usam perfis móveis entre as instâncias do Visual Studio&mdash;consulte [Configurações sincronizadas](../ide/synchronized-settings-in-visual-studio.md). Este tópico descreve de forma breve as diferentes personalizações e o local em que é possível encontrar mais informações.
+Você pode personalizar o Visual Studio de várias maneiras para dar o melhor suporte ao seu próprio estilo e requisitos de desenvolvimento. Muitas das configurações usam perfis móveis entre as instâncias do Visual Studio&mdash;consulte [Configurações sincronizadas](../ide/synchronized-settings-in-visual-studio.md). Este artigo descreve de forma breve as diferentes personalizações e o local em que é possível encontrar mais informações.
+
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Personalizar o IDE do Visual Studio para Mac](/visualstudio/mac/customizing-the-ide).
+
+## <a name="default-settings"></a>Configurações padrão
+
+Escolha uma coleção padrão de configurações que otimiza o Visual Studio para seu tipo de desenvolvimento. Para obter mais informações, confira [Configurações do ambiente](environment-settings.md).
 
 ## <a name="general-environment-options"></a>Opções do ambiente geral
 
-Muitas opções de personalização são expostas por meio da caixa de diálogo [Opções do ambiente](../ide/reference/environment-options-dialog-box.md). Há duas maneiras de acessar essa caixa de diálogo:
+Muitas opções de personalização são expostas pela caixa de diálogo [Opções de Ambiente](../ide/reference/environment-options-dialog-box.md). Há duas maneiras de acessar essa caixa de diálogo:
 
 - Na barra de menus, escolha **Ferramentas** > **Opções** e, se o nó **Ambiente** ainda não estiver expandido, expanda-o.
 
@@ -35,7 +42,7 @@ Muitas opções de personalização são expostas por meio da caixa de diálogo 
 
 Para alterar o tema de cores entre claro, escuro e azul, digite `environment` na caixa **Início Rápido** e, em seguida, escolha **Ambiente --> Geral**. Na caixa de diálogo **Opções**, altere a opção **Tema de cores**.
 
-Para alterar as opções de colorização no editor, digite `environment` na caixa **Início Rápido** e, em seguida, escolha **Ambiente --> Fontes e Cores**. Consulte [How to: Change fonts and colors](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) (Como alterar fontes e cores).
+Para alterar as opções de colorização no editor, digite `environment` na caixa **Início Rápido** e, em seguida, escolha **Ambiente --> Fontes e Cores**. Confira [Como: Alterar fontes e cores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Maiúsculas e minúsculas do menu principal
 
@@ -43,7 +50,7 @@ Para alterar as opções de colorização no editor, digite `environment` na cai
 
 ### <a name="customize-menus-and-toolbars"></a>Personalizar menus e barras de ferramentas
 
-Para adicionar ou remover itens de menu ou de barra de ferramentas, consulte [Como personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Para adicionar ou remover itens do menu ou da barra de ferramentas, confira [Como: Personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="start-page"></a>Página inicial
 
@@ -59,5 +66,7 @@ Você pode definir e salvar vários layouts de janela e mudar entre eles. Por ex
 
 ## <a name="see-also"></a>Consulte também
 
-- [Visão geral do IDE do Visual Studio](../ide/visual-studio-ide.md)
-- [Início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Configurações do ambiente](environment-settings.md)
+- [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
+- [Início Rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Personalizar o IDE do Visual Studio para Mac](/visualstudio/mac/customizing-the-ide)

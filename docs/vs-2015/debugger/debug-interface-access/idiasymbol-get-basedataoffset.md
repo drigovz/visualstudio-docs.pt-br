@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_baseDataOffset | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ dev_langs:
 - C++
 ms.assetid: bb2ff5ed-9293-4c37-9741-654058b571c5
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01f76755b9f1a926ee9208e57ed19472762cb811
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 83400d6f474693a2044a293c4802e937a22d6b76
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462520"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744737"
 ---
 # <a name="idiasymbolgetbasedataoffset"></a>IDiaSymbol::get_baseDataOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSymbol::get_baseDataOffset](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-basedataoffset).  
-  
 Recupera o deslocamento de base de dados.  
   
 ## <a name="syntax"></a>Sintaxe  

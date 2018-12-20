@@ -1,7 +1,7 @@
 ---
 title: Usando Métodos da Criação de Perfil para Coletar Dados de Desempenho por meio da Linha de Comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6cfb82c00c0a20c490aa3b5e5a9f78bf2384a40c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d853322762942e874528b35164dc3f04a6c22b0a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464191"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722769"
 ---
 # <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Usando métodos da criação de perfil para coletar dados de desempenho a partir da linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando criação de perfil de métodos para coletar dados de desempenho da linha de comando](https://docs.microsoft.com/visualstudio/profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line).  
-  
 A escolha de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Ferramentas de Criação de Perfil, ferramentas e opções de linha de comando depende de fatores como o tipo de aplicativo para o qual você está criando um perfil, o método de criação de perfil que você deseja usar e se o aplicativo de destino é gravado no formato nativo ou em código [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   
  Este tópico organiza os tópicos de procedimentos de linha de comando acordo com o método de criação de perfil que você escolher.  

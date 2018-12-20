@@ -1,7 +1,7 @@
 ---
 title: Tempo de execução (exibição de threads) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - Concurrency Visualizer, Execution Time (Threads View)
 ms.assetid: 80c100f8-2502-4613-bfef-4f4f2e09cc8d
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b25048fdeeea6e1c5724ecc313993cbf74b617be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89dd600976e151c377db8ebb2c0e67935c23e006
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468415"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789857"
 ---
 # <a name="execution-time-threads-view"></a>Tempo de execução (exibição de threads)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tempo de execução (exibição Threads)](https://docs.microsoft.com/visualstudio/profiling/execution-time-threads-view).  
-  
 Esses segmentos na linha do tempo de exibição de threads representam o tempo de execução, quando o thread está ativamente trabalhando em um núcleo lógico no sistema.  
   
  As alterações no status de thread são detectadas por meio de eventos de alternância de contexto do kernel. o ETW (Rastreamento de Eventos para Windows) captura pilhas de amostra a cada milissegundo. Em um segmento verde muito curto, é possível que nenhuma amostra seja coletada. Portanto, alguns segmentos de execução curtos podem não mostrar nenhuma pilha de chamadas.  

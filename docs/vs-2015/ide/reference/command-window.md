@@ -1,7 +1,7 @@
 ---
 title: Janela Comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 26fe3a9b99e1e437fd1b9007587fac97e6ae7adf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b83a9e86aea02e27242a0c1f02ca3f8459152214
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464532"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870179"
 ---
 # <a name="command-window"></a>Janela Comando
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [janela de comando](https://docs.microsoft.com/visualstudio/ide/reference/command-window).  
-  
   
 A janela **Comando** é usada para executar comandos ou aliases diretamente no IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Você pode executar tanto comandos de menu quanto comandos que não aparecem em nenhum menu. Para exibir a janela **Comando**, escolha **Outras Janelas** no menu **Exibir** e selecione **Janela Comando**.  
   
@@ -103,22 +101,22 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
   
  Neste exemplo,  
   
--   `Edit.ReplaceInFiles` é o comando  
+- `Edit.ReplaceInFiles` é o comando  
   
--   `/case` e `/pattern:regex` são opções (precedidas pelo caractere de barra invertida [/])  
+- `/case` e `/pattern:regex` são opções (precedidas pelo caractere de barra invertida [/])  
   
--   `regex` é o valor da opção `/pattern`; a opção `/case` não tem valor  
+- `regex` é o valor da opção `/pattern`; a opção `/case` não tem valor  
   
--   `var[1-3]+` e `oldpar` são parâmetros  
+- `var[1-3]+` e `oldpar` são parâmetros  
   
-    > [!NOTE]
-    >  Qualquer comando, parâmetro, opção ou valor que contenha espaços deve ter aspas duplas em um dos lados.  
+  > [!NOTE]
+  >  Qualquer comando, parâmetro, opção ou valor que contenha espaços deve ter aspas duplas em um dos lados.  
   
- A posição de opções e parâmetros pode ser trocada livremente na linha de comando, com exceção do comando [Shell](../../ide/reference/shell-command.md), que exige uma ordem específica para opções e parâmetros.  
+  A posição de opções e parâmetros pode ser trocada livremente na linha de comando, com exceção do comando [Shell](../../ide/reference/shell-command.md), que exige uma ordem específica para opções e parâmetros.  
   
- Quase todas as opções com suporte em um comando têm dois formatos: um formato abreviado (um caractere) e um formato longo. Várias opções de formato curto podem ser combinadas em um grupo. Por exemplo, `/p /g /m` pode ser expressos, alternativamente, como `/pgm`.  
+  Quase todas as opções com suporte em um comando têm dois formatos: um formato abreviado (um caractere) e um formato longo. Várias opções de formato curto podem ser combinadas em um grupo. Por exemplo, `/p /g /m` pode ser expressos, alternativamente, como `/pgm`.  
   
- Se opções de formato curto forem combinadas em um grupo e receberem um determinado valor, esse valor se aplicará a todas as opções. Por exemplo, `/pgm:123` é igual a `/p:123 /g:123 /m:123`. Um erro ocorrerá se alguma das opções no grupo não aceitar um valor.  
+  Se opções de formato curto forem combinadas em um grupo e receberem um determinado valor, esse valor se aplicará a todas as opções. Por exemplo, `/pgm:123` é igual a `/p:123 /g:123 /m:123`. Um erro ocorrerá se alguma das opções no grupo não aceitar um valor.  
   
 ## <a name="escape-characters"></a>Caracteres de escape  
  Um caractere de acento circunflexo (^) em uma linha de comando significa que o caractere imediatamente a seguir é interpretado literalmente, em vez de como um caractere de controle. Isso pode ser usado para inserir aspas retas ("), espaços, barras iniciais, acentos circunflexos ou quaisquer outros caracteres literais em um parâmetro ou valor de opção, com a exceção de nomes de opção. Por exemplo,  

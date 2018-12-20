@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine3::SetEngineGuid | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,25 +17,23 @@ ms.assetid: 8bdfa05d-feb7-4d98-abac-77825a04c50f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1fee1271fd67e5a8aef0bdd7c44813bff59238ef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f398405a3773752d2dc0ecd11f8f0cb1b1a10aa5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466342"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743670"
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugEngine3::SetEngineGuid](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugengine3-setengineguid).  
-  
 Esse método define o mecanismo de depuração (DES) `GUID`.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT SetEngineGuid(  
-   GUID* guidEngine  
+HRESULT SetEngineGuid(  
+   GUID* guidEngine  
 );  
 ```  
   

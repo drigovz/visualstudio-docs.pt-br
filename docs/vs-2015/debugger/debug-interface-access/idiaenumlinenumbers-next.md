@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumlinenumbers:: Next | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaEnumLineNumbers::Next method
 ms.assetid: 363d5b40-1316-4ab8-836f-63637f619e0a
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd97750490220ecc83ab1581a19aa6f49ea1f0a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 21bc5e752cf23694cfdab417632e67de674f87dd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467557"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737903"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaenumlinenumbers:: Next](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumlinenumbers-next).  
-  
 Recupera um número especificado de números de linha na sequência de enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Next (   
+HRESULT Next (   
    ULONG            celt,  
    IDiaLineNumber** rgelt,  
    ULONG*           pceltFetched  

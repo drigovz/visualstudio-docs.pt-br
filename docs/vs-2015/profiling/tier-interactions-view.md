@@ -1,7 +1,7 @@
 ---
 title: Exibição de interações de camada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,34 +15,32 @@ helpviewer_keywords:
 - Tier Interactions view
 ms.assetid: bb4fb21c-f3f7-473a-8b5e-442da4c2c445
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a0d6753fd852faafcabe291cc9b63ece0fd7752
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b69144569738dc09368453faef13f5f38428df2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467855"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726154"
 ---
 # <a name="tier-interactions-view"></a>Exibição de interações da camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de interações de camada](https://docs.microsoft.com/visualstudio/profiling/tier-interactions-view).  
-  
 A criação de perfil de interação de camada fornece informações adicionais sobre os tempos de execução em funções de aplicativos de várias camadas que se comunicam com os bancos de dados por meio de [!INCLUDE[vstecado](../includes/vstecado-md.md)]. Os dados são coletados apenas para chamadas de função síncronas.  
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]  
   
- A Exibição Interações exibe os dados de interação de camada em dois painéis:  
+  A Exibição Interações exibe os dados de interação de camada em dois painéis:  
   
--   O painel principal é uma árvore hierárquica. A linha de nível superior contém os dados agregados das conexões de banco de dados de uma página [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ou um processo. Nós filho contêm dados agregados para as conexões de banco de dados do pai.  
+- O painel principal é uma árvore hierárquica. A linha de nível superior contém os dados agregados das conexões de banco de dados de uma página [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ou um processo. Nós filho contêm dados agregados para as conexões de banco de dados do pai.  
   
--   Ao clicar em um nó de chamada de banco de dados no painel principal, os dados da instância da chamada de banco de dados são exibidos no painel de detalhes.  
+- Ao clicar em um nó de chamada de banco de dados no painel principal, os dados da instância da chamada de banco de dados são exibidos no painel de detalhes.  
   
- A hora é exibida como o número de milissegundos ou o número de tiques do relógio da CPU. Para alterar a unidade de tempo exibida, clique no menu **Ferramentas**, clique em **Opções** e escolha uma das opções **Mostrar valores temporais como**.  
+  A hora é exibida como o número de milissegundos ou o número de tiques do relógio da CPU. Para alterar a unidade de tempo exibida, clique no menu **Ferramentas**, clique em **Opções** e escolha uma das opções **Mostrar valores temporais como**.  
   
 ## <a name="master-pane"></a>Painel principal  
   

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a5adc68df8b56d69389807e2e1502b2891c73a0
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 8a39040bb76181a7a36e9d8f7b19aa0b4390c400
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384299"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932434"
 ---
 # <a name="code-snippets-schema-reference"></a>Referência de esquema dos snippets de código
 
@@ -39,7 +39,7 @@ O valor de texto do elemento **Assembly** é o nome de texto amigável do assemb
 ```
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Reference](../ide/code-snippets-schema-reference.md#reference-element)|Contém informações sobre referências de assembly exigidas pelo snippet de código.|
 
  Um valor de texto é obrigatório. Esse texto especifica o assembly ao qual o snippet de código faz referência.
@@ -55,7 +55,7 @@ Especifica o nome do autor do snippet. O **Gerenciador de Snippets de Código** 
 ```
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contém informações gerais sobre o snippet de código.|
 
  Um valor de texto é obrigatório. Esse texto especifica o autor do snippet de código.
@@ -137,7 +137,7 @@ Há três atributos disponíveis para o Elemento de código:
 ### <a name="parent-element"></a>Elemento pai
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Contém as referências, as importações, as declarações e o código do snippet de código.|
 
 ## <a name="codesnippet-element"></a>Elemento CodeSnippet
@@ -161,7 +161,7 @@ Permite que você especifique um título e vários Snippets de Código IntelliSe
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Elemento obrigatório. Contém o código que será inserido pelo Visual Studio. Deve haver exatamente um elemento `Snippet` em um snippet de código.|
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento CodeSnippets](../ide/code-snippets-schema-reference.md#codesnippets-element)|Elemento raiz do esquema XML do snippet de código.|
 
 ## <a name="codesnippets-element"></a>Elemento CodeSnippets
@@ -195,7 +195,7 @@ Especifica os literais e os objetos que compõem as partes de um snippet de cód
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Elemento opcional. Define os objetos do snippet de código que você pode editar. Pode ser que não haja nenhum ou mais de um elemento `Object` em um elemento `Declarations`.|
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Contém as referências, as importações, as declarações e o código do snippet de código.|
 
 ## <a name="default-element"></a>Elemento Default
@@ -209,7 +209,7 @@ Especifica o valor padrão do literal ou do objeto para um Snippet de Código In
 ```
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Literal](../ide/code-snippets-schema-reference.md#literal-element)|Define os campos de literal do snippet de código que você pode editar.|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Define os campos de objeto do snippet de código que você pode editar.|
 
@@ -226,7 +226,7 @@ Especifica as informações descritivas sobre o conteúdo de um Snippet de Códi
 ```
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contém informações gerais sobre o snippet de código.|
 
  Um valor de texto é obrigatório. Esse texto descreve o snippet de código.
@@ -245,7 +245,7 @@ Especifica uma função a ser executada quando o literal ou o objeto receber foc
 ```
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Literal](../ide/code-snippets-schema-reference.md#literal-element)|Define os campos de literal do snippet de código que você pode editar.|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Define os campos de objeto do snippet de código que você pode editar.|
 
@@ -278,7 +278,7 @@ Especifica informações gerais sobre o Snippet de Código IntelliSense.
 |[Elemento Title](../ide/code-snippets-schema-reference.md#title-element)|Elemento obrigatório. O nome amigável do snippet de código. Deve haver exatamente um elemento `Title` em um elemento `Header`.|
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element)|Elemento pai de todos os dados do snippet de código.|
 
 ## <a name="helpurl-element"></a>Elemento HelpUrl
@@ -295,7 +295,7 @@ Especifica uma URL que fornece mais informações sobre um snippet de código.
 ```
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contém informações gerais sobre o snippet de código.|
 
 Um valor de texto é opcional. Esse texto especifica a URL a ser visitada para obter mais informações sobre um snippet de código.
@@ -311,7 +311,7 @@ Especifica um identificador exclusivo para um elemento `Literal` ou `Object`. Do
 ```
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Literal](../ide/code-snippets-schema-reference.md#literal-element)|Define os campos de literal do snippet de código que você pode editar.|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Define os campos de objeto do snippet de código que você pode editar.|
 
@@ -335,7 +335,7 @@ Especifica os namespaces importados usados por um Snippet de Código IntelliSens
 |[Elemento Namespace](../ide/code-snippets-schema-reference.md#namespace-element)|Elemento obrigatório. Especifica o namespace usado pelo snippet de código. Deve haver exatamente um elemento `Namespace` em um elemento `Import`.|
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Imports](../ide/code-snippets-schema-reference.md#imports-element)|Elemento de agrupamento para elementos **Import**.|
 
 ## <a name="imports-element"></a>Elemento Imports
@@ -356,7 +356,7 @@ Agrupa elementos `Import` individuais.
 |[Elemento Import](../ide/code-snippets-schema-reference.md#import-element)|Elemento opcional. Contém os namespaces importados para o snippet de código. Pode ser haver zero ou mais elementos **Import** em um elemento `Imports`.|
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Contém as referências, as importações, as declarações e o código do snippet de código.|
 
 ## <a name="keyword-element"></a>Elemento Keyword
@@ -370,7 +370,7 @@ Especifica uma palavra-chave personalizada para o snippet de código. As palavra
 ```
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Keywords](../ide/code-snippets-schema-reference.md#keywords-element)|Agrupa elementos `Keyword` individuais.|
 
 Um valor de texto é obrigatório. A palavra-chave para o snippet de código.
@@ -391,7 +391,7 @@ Agrupa elementos `Keyword` individuais. As palavras-chave de snippet de código 
 |[Elemento Keyword](../ide/code-snippets-schema-reference.md#keyword-element)|Elemento opcional. Contém palavras-chave individuais para o snippet de código. Pode ser que não haja nenhum ou mais de um elemento `Keyword` em um elemento `Keywords`.|
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contém informações gerais sobre o snippet de código.|
 
 ## <a name="literal-element"></a>Elemento Literal
@@ -421,7 +421,7 @@ Os literais e objetos não podem conter um elemento **ID** com um valor de selec
 |[Elemento ToolTip](../ide/code-snippets-schema-reference.md#tooltip-element)|Elemento opcional. Descreve o valor esperado e o uso do literal. Pode haver zero ou um elemento **Tooltip** em um elemento `Literal`.|
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations-element)|Contém os literais e objetos de um snippet de código que você pode editar.|
 
 ## <a name="namespace-element"></a>Elemento Namespace
@@ -438,7 +438,7 @@ Especifica o namespace que deve ser importado para compilação e execução do 
 ```
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Import](../ide/code-snippets-schema-reference.md#import-element)|Importa o namespace especificado.|
 
 Um valor de texto é obrigatório. Esse texto especifica um namespace que o snippet de código supõe que seja importado.
@@ -470,7 +470,7 @@ Define os objetos do snippet de código que você pode editar. O elemento `Objec
 |[Elemento Type](../ide/code-snippets-schema-reference.md#type-element)|Elemento obrigatório. Especifica o tipo do objeto. Deve haver exatamente um elemento `Type` em um elemento `Object`.|
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations-element)|Contém os literais e objetos de um snippet de código que você pode editar.|
 
 ## <a name="reference-element"></a>Elemento Reference
@@ -490,7 +490,7 @@ Especifica informações sobre as referências de assembly exigidas pelo snippet
 |[Elemento Url](../ide/code-snippets-schema-reference.md#url-element)|Elemento opcional. Contém uma URL que fornece mais informações sobre o assembly referenciado. Pode ser que não haja nenhum ou um elemento `Url` em um elemento `Reference`.|
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento References](../ide/code-snippets-schema-reference.md#references-element)|Elemento de agrupamento de elementos `Reference`.|
 
 ## <a name="references-element"></a>Elemento References
@@ -508,7 +508,7 @@ Agrupa elementos `Reference` individuais.
 |[Elemento Reference](../ide/code-snippets-schema-reference.md#reference-element)|Elemento opcional. Contém informações sobre referências de assembly para o snippet de código. Pode ser que não haja nenhum ou mais de um elemento `Reference` em um elemento `References`.|
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Contém as referências, as importações, as declarações e o código do snippet de código.|
 
 ## <a name="shortcut-element"></a>Elemento Shortcut
@@ -525,7 +525,7 @@ Especifica o texto do atalho usado para inserir o snippet. O valor de texto de u
 ```
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contém informações gerais sobre o snippet de código.|
 
  Um valor de texto é opcional. Esse texto é usado como um atalho para inserção do snippet de código.
@@ -551,7 +551,7 @@ Especifica as referências, as importações, as declarações e o código do sn
 ||Elemento opcional. Agrupa elementos `Reference` individuais. Pode ser que não haja nenhum ou um elemento `References` em um elemento `Snippet`.|
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element)|Permite que você especifique um título e vários Snippets de Código IntelliSense, que podem ser inseridos em arquivos de código do Visual Studio.|
 
 ## <a name="snippettype-element"></a>Elemento SnippetType
@@ -565,7 +565,7 @@ Especifica como o Visual Studio insere o snippet de código.
 ```
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento SnippetTypes](../ide/code-snippets-schema-reference.md#snippettypes-element)|Agrupa elementos `SnippetType`.|
 
 O valor de texto deve ser um dos seguintes valores:
@@ -592,7 +592,7 @@ Agrupa elementos `SnippetType` individuais. Se o elemento `SnippetTypes` não es
 |[Elemento SnippetType](../ide/code-snippets-schema-reference.md#snippettype-element)|Elemento opcional. Especifica como o Visual Studio insere o snippet de código no código. Pode ser que não haja nenhum ou mais de um elemento `SnippetType` em um elemento `SnippetTypes`.|
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Especifica informações gerais sobre o snippet de código.|
 
 ## <a name="title-element"></a>Elemento Title
@@ -606,7 +606,7 @@ Especifica o título do snippet de código. O título armazenado no elemento `Ti
 ```
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Especifica informações gerais sobre o snippet de código.|
 
  Um valor de texto é obrigatório. Esse texto especifica o título do snippet de código.
@@ -622,7 +622,7 @@ Descreve o valor esperado e o uso de um literal ou um objeto em um snippet de c�
 ```
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Literal](../ide/code-snippets-schema-reference.md#literal-element)|Define os campos de literal do snippet de código que você pode editar.|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Define os campos de objeto do snippet de código que você pode editar.|
 
@@ -639,7 +639,7 @@ Especifica o tipo do objeto. O elemento `Object` é usado para identificar um it
 ```
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Define os campos de objeto do snippet de código que você pode editar.|
 
  Um valor de texto é obrigatório. Esse texto especifica o tipo do objeto.
@@ -658,7 +658,7 @@ Especifica uma URL que fornece mais informações sobre o assembly referenciado.
 ```
 
 |Elemento pai|Descrição|
-|--------------------|-----------------|
+| - |-----------------|
 |[Elemento Reference](../ide/code-snippets-schema-reference.md#reference-element)|Especifica as referências de assembly exigidas pelo snippet de código.|
 
 Um valor de texto é obrigatório. Esse texto especifica uma URL com mais informações sobre o assembly referenciado. Essa URL é exibida quando a referência não pode ser adicionada ao projeto.

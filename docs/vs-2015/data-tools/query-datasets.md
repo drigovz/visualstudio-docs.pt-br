@@ -1,7 +1,7 @@
 ---
 title: Conjuntos de dados de consulta | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52ccf91d349bc298c5be3fb020ad42ed78699e9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890563"
 ---
 # <a name="query-datasets"></a>Consultar conjuntos de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [conjuntos de dados de consulta](https://docs.microsoft.com/visualstudio/data-tools/query-datasets).  
-  
   
 Para procurar registros específicos em um conjunto de dados, use o método FindBy em DataTable, escreva seu próprio loop de foreach pela coleção de linhas da tabela ou usar [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17). LINQ to DataSet.  
   
@@ -77,13 +75,13 @@ Para procurar registros específicos em um conjunto de dados, use o método Find
   
  Os exemplos de código a seguir demonstram como navegar para cima e para relacionamentos em conjuntos de dados tipados. O uso de exemplos de código digitado <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) e gerado `FindBy` *PrimaryKey* (`FindByCustomerID`) métodos para localizar uma linha desejada e retornar os registros relacionados. Os exemplos de compilar e executam corretamente somente se você tiver:  
   
--   Uma instância de um conjunto de dados denominado `NorthwindDataSet` com um `Customers` tabela.  
+- Uma instância de um conjunto de dados denominado `NorthwindDataSet` com um `Customers` tabela.  
   
--   Um `Orders` tabela.  
+- Um `Orders` tabela.  
   
--   Uma relação nomeada `FK_Orders_Customers`relacionando as duas tabelas disponíveis ao escopo do seu código  
+- Uma relação nomeada `FK_Orders_Customers`relacionando as duas tabelas disponíveis ao escopo do seu código  
   
- Além disso, ambas as tabelas precisam ser preenchida com dados para todos os registros a serem retornados.  
+  Além disso, ambas as tabelas precisam ser preenchida com dados para todos os registros a serem retornados.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Para retornar os registros de um registro pai selecionado filho  
   

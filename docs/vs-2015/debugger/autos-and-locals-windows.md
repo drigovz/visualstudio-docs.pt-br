@@ -1,14 +1,14 @@
 ---
 title: Autos e locais Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
 - vs.debug.locals
@@ -23,21 +23,19 @@ helpviewer_keywords:
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 877d145f83ce15cd5c1bb49b607519888ad0e96b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 51e62df0fb98a9c7b04b09b3e58fb52828e1bd5a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462506"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782473"
 ---
 # <a name="autos-and-locals-windows"></a>Autos e locais Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [inspecionar variáveis no depurador no Visual Studio](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows).  
-  
 O **Autos** janela (durante a depuração, **CTRL + ALT + V, A**, ou **depurar / Windows / automóveis**) e o **Locals** janela (durante a depuração,  **CTRL + ALT + V, L**, ou **depurar / Windows / locais**) são muito úteis quando você deseja ver valores de variáveis durante a depuração. O **Locals** janela exibe as variáveis que são definidas no escopo local, que geralmente é a função ou método que está sendo executado. O **automóveis** janela exibe as variáveis usadas ao redor da linha atual (o local em que o depurador é interrompido). Exatamente quais variáveis exibido é diferente em diferentes idiomas. Veja o que as variáveis que aparecem na janela Autos? abaixo.  
   
  Se você precisar de mais informações sobre depuração básica, consulte [Introdução ao depurador](../debugger/getting-started-with-the-debugger.md).  
@@ -48,7 +46,7 @@ O **Autos** janela (durante a depuração, **CTRL + ALT + V, A**, ou **depurar /
  ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
 ## <a name="what-variables-appear-in-the-autos-window"></a>Quais variáveis são exibidos na janela Autos?  
- Você pode usar o **automóveis** janela no código c#, Visual Basic e C++. O **automóveis** janela não suporta JavaScript ou F #.  
+ Você pode usar o **automóveis** janela no código c#, Visual Basic e C++. O **automóveis** não tem suporte para JavaScript ou F#.  
   
  Em c# e Visual Basic, o **automóveis** janela exibirá qualquer variável usada na linha atual ou anterior. Por exemplo, se você declara quatro variáveis e defini-los da seguinte maneira:  
   

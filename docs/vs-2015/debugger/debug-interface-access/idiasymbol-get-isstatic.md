@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_isstatic | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaSymbol::get_isStatic method
 ms.assetid: 3be5fe1b-46e8-4b07-90d8-4929dbbe7ff7
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ef7f4615cd41c6f3db5ad999965ae5d3c9b8be3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6a6c1e57872aeee51780ad0ec062e007aa31529
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466528"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768879"
 ---
 # <a name="idiasymbolgetisstatic"></a>IDiaSymbol::get_isStatic
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_isstatic](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-isstatic).  
-  
 Recupera um sinalizador que especifica se a camada de conversão ou de função tem foi marcada como estática.  
   
 ## <a name="syntax"></a>Sintaxe  

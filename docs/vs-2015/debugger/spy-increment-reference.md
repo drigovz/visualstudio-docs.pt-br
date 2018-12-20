@@ -1,7 +1,7 @@
 ---
 title: Referência de Spy + + | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - Spy++ reference
 ms.assetid: 2cf41bc9-55f3-4bb6-b28d-08c75215debd
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0b59d82b95115c230d177ea322f5f4e376b3a40d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed7aea0617db31c6edec9a739d7bae66d8fbe43f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462852"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817588"
 ---
 # <a name="spy-reference"></a>Referência de Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [referência de Spy + +](https://docs.microsoft.com/visualstudio/debugger/spy-increment-reference).  
-  
 Consulte as seções abaixo para obter descrições de cada Spy + + menu e caixa de diálogo caixa:  
   
 ## <a name="in-this-section"></a>Nesta seção  

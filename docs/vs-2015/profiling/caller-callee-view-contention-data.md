@@ -1,7 +1,7 @@
 ---
 title: Modo de Exibição de Chamador/Receptor - Dados de Contenção | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: a18a1b1b-9b39-43c7-b1f3-708fd20376f6
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36a12b6444209b0911c93c376c5cecb7ced5f975
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e226cb5a44923e73d64a9374eb1d170e18d2428
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474450"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797605"
 ---
 # <a name="caller--callee-view----contention-data"></a>Modo de Exibição Chamador/Receptor - Dados de Contenção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição computador chamado – dados de contenção](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-contention-data).  
-  
 Modo de exibição Chamador/Receptor exibe informações de contenção para uma função selecionada e suas funções pai e filho. A exibição de Chamador/Computador Chamado contém três grades.  
   
  A **função atual** é exibida na grade intermediária e mostra informações de contenção para a função selecionada. Os valores incluem todas os contenções de bloqueio para a função.  

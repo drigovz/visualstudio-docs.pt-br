@@ -1,5 +1,5 @@
 ---
-title: Analisando violações de regra de limite em testes de carga no Visual Studio
+title: Analisando violações de regra de limite em testes de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234979"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061805"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisando violações de regra de limite em testes de carga usando o Analisador de Teste de Carga
 
@@ -30,14 +30,16 @@ As regras de limite são associadas a contadores de desempenho específicos, e a
 
 Se ocorrer qualquer violação, um hiperlink de **violações de limite** aparecerá na barra de status do **Analisador de Teste de Carga** e especificará o número de violações que ocorreram. Você escolhe o hiperlink para exibir a tabela de violações de limite. Você também pode exibir violações de limite na janela **Contadores** e no gráfico.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 ## <a name="view-threshold-violations-in-the-table"></a>Exibir violações de limite na tabela
 
  A tabela de violações de limite exibe as primeiras 1.000 violações. A tabela a seguir contém estas colunas:
 
 |Column|Descrição|Visível por padrão|
-|------------|-----------------|------------------------|
+|-|-|-|
 |Hora|O tempo durante o teste de carga em que a violação ocorreu.|Sim|
-|Computador|O nome do computador em teste em que a violação ocorreu. **Observação:** isso é importante quando você executa testes de carga em equipamentos.|Sim|
+|Computador|O nome do computador em teste em que a violação ocorreu. **Observação:**  Isso é importante quando você executa testes de carga em equipamentos.|Sim|
 |Categoria|A categoria do contador de desempenho em que a violação ocorreu.|Sim|
 |Contador|O nome do contador de desempenho em que a violação ocorreu.|Sim|
 |Instância|A instância do contador de desempenho em que a violação ocorreu.|Sim|
@@ -67,8 +69,6 @@ Se ocorrer qualquer violação, um hiperlink de **violações de limite** aparec
  Se desejar, as violações de limite também podem ser mostradas no gráfico. O ícone de limite é exibido no gráfico ao lado do ponto de dados onde a violação de limite ocorreu.
 
  Na árvore de contadores, o ícone de uma violação de limite é propagado do nó de contador específico até o nó raiz. Isso alerta você para uma violação em um contador que pode não estar visível na árvore porque a árvore não foi expandida.
-
- Para obter mais informações, confira [Usando o painel Contadores nas exibições Grafos e Tabelas](../test/counters-panel-in-load-test-analyzer.md).
 
 ## <a name="view-threshold-violations-on-the-graph"></a>Exibir violações de limite no grafo
 

@@ -1,22 +1,24 @@
 ---
-title: Visão geral do suporte para Python no Visual Studio no Windows
+title: Suporte do Python no Visual Studio no Windows
+titleSuffix: ''
 description: Resumo dos recursos do Python no Visual Studio, que fazem dele o melhor IDE do Python no Windows (também conhecido como PTVS, Ferramentas Python para Visual Studio).
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 99d87f5b8a8a5ee0ad69b6f6d0da121799262c9f
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cec872f5df927bae3caf20f35d4bcd8f8e7460b3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320963"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068533"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Trabalhar com Python no Visual Studio no Windows
 
@@ -30,7 +32,7 @@ Para começar:
 
 - Siga as [instruções de instalação](installing-python-support-in-visual-studio.md) para configurar a carga de trabalho Python.
 - Familiarize-se com os recursos do Python no Visual Studio examinando as seções neste artigo. Você também pode [Assistir a uma série de vídeos (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) para obter uma introdução ao Python no Visual Studio (total de 22 minutos).
-- Realize ou mais Guias de Início Rápido para criar um projeto. Se você não tiver certeza, comece com [Criar um aplicativo Web com o Flask](../ide/quickstart-python.md?context=visualstudio/python/default).
+- Realize ou mais Guias de Início Rápido para criar um projeto. Se você não tiver certeza, comece com [Criar um aplicativo Web com o Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 - Siga o tutorial [Trabalhar com o Python no Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) para ter uma experiência completa de ponta a ponta.
 
 ## <a name="support-for-multiple-interpreters"></a>Suporte para vários interpretadores
@@ -43,9 +45,9 @@ Use o comando **Abrir janela interativa** para executar o Python de maneira inte
 
 Para saber mais:
 
-- Vídeo (00:02:35): [Gerenciar ambientes do Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
-- Docs: [Gerenciar ambientes do Python](managing-python-environments-in-visual-studio.md)
-- Docs: [Referência à janela Ambientes do Python](python-environments-window-tab-reference.md)
+- Vídeo (2min35s): [Gerenciar ambientes do Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
+- Documentação: [Gerenciar ambientes do Python](managing-python-environments-in-visual-studio.md)
+- Documentação: [Referência aos Ambientes do Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Edição avançada, IntelliSense e compreensão do código
 
@@ -55,16 +57,16 @@ O Visual Studio oferece um editor de Python de primeira classe, incluindo colora
 
 Para saber mais:
 
-- Vídeo (00:02:30): [Editar o código Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
-- Docs: [Editar o código Python](editing-python-code-in-visual-studio.md)
-- Docs: [Formatar o código](formatting-python-code.md)
-- Docs: [Refatorar o código](refactoring-python-code.md)
-- Docs: [Usar um linter](linting-python-code.md)
-- Documentos de recursos gerais do Visual Studio: [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md)
+- Vídeo (2min30s): [Editar o código Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
+- Documentação: [Editar o código Python](editing-python-code-in-visual-studio.md)
+- Documentação: [Formatar código](formatting-python-code.md)
+- Documentação: [Refatorar o código](refactoring-python-code.md)
+- Documentação: [Usar um linter](linting-python-code.md)
+- Documentação de funcionalidades gerais do Visual Studio: [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>Janela Interativa
 
-Para cada ambiente do Python conhecido para o Visual Studio, você pode abrir facilmente o mesmo ambiente interativo (REPL) de um interpretador de Python diretamente no Visual Studio, em vez de usar um prompt de comando separado. Também é possível mudar facilmente de ambiente. (Para abrir um prompt de comando separado, selecione o ambiente desejado na janela **Ambientes do Python** e, em seguida, selecione o comando **Abrir no PowerShell**, conforme explicado anteriormente em [Suporte para vários intérpretes](#support-for-multiple=interpreters).)
+Para cada ambiente do Python conhecido para o Visual Studio, você pode abrir facilmente o mesmo ambiente interativo (REPL) de um interpretador de Python diretamente no Visual Studio, em vez de usar um prompt de comando separado. Também é possível mudar facilmente de ambiente. (Para abrir um prompt de comando separado, selecione o ambiente desejado na janela **Ambientes do Python** e, em seguida, selecione o comando **Abrir no PowerShell**, conforme explicado anteriormente em [Suporte para vários intérpretes](#support-for-multiple-interpreters).)
 
 ![Janela interativa do Python no Visual Studio](media/interactive-window.png)
 
@@ -74,9 +76,9 @@ O Visual Studio também é compatível com IPython/Jupyter no REPL, incluindo gr
 
 Para saber mais:
 
-- Vídeo (00:02:22): [Janela Interativa do Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
-- Docs: [Janela Interativa](python-interactive-repl-in-visual-studio.md)
-- Docs: [IPython no Visual Studio](interactive-repl-ipython.md)
+- Vídeo (2min22s): [Janela Interativa do Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
+- Documentação: [Janela Interativa](python-interactive-repl-in-visual-studio.md)
+- Documentação: [IPython no Visual Studio](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>Sistema de projeto e modelos de projeto e de item
 
@@ -90,27 +92,26 @@ Modelos de projeto e de item automatizam o processo de configuração de diferen
 
 Para saber mais:
 
-- Docs: [Gerenciar projetos Python](managing-python-projects-in-visual-studio.md)
-- Documentos: [referência de modelos de item](python-item-templates.md)
-- Docs: [Modelos de projeto Python](managing-python-projects-in-visual-studio.md#project-templates)
-- Docs: [Trabalhar com C++ e Python](working-with-c-cpp-python-in-visual-studio.md)
-- Docs de recursos gerais do Visual Studio: [Modelos de projeto e de item](../ide/creating-project-and-item-templates.md#visual-studio-templates)
-- Docs de recursos gerais do Visual Studio: [Soluções e projetos no Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- Documentação: [Gerenciar projetos do Python](managing-python-projects-in-visual-studio.md)
+- Documentação: [Referência de modelos de item](python-item-templates.md)
+- Documentação: [Modelos de projeto do Python](managing-python-projects-in-visual-studio.md#project-templates)
+- Documentação: [Trabalhar com o C++ e o Python](working-with-c-cpp-python-in-visual-studio.md)
+- Documentação de funcionalidades gerais do Visual Studio: [Modelos de projeto e item](../ide/creating-project-and-item-templates.md#visual-studio-templates)
+- Documentação de funcionalidades gerais do Visual Studio: [Soluções e projetos no Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 
 ## <a name="full-featured-debugging"></a>Depuração completa
 
-Um dos pontos fortes do Visual Studio é seu depurador avançado. Para Python especificamente, o Visual Studio inclui depuração de modo misto Python/C++, depuração remota no Linux, depuração remota no Azure, depuração dentro da janela **Interativa** e depuração de testes de unidade do Python.
+Um dos pontos fortes do Visual Studio é seu depurador avançado. Para Python especificamente, o Visual Studio inclui depuração de modo misto Python/C++, depuração remota no Linux, depuração dentro da janela **Interativa** e depuração de testes de unidade do Python.
 
 ![Depurador do Visual Studio para Python mostrando um pop-up de exceção](media/debugging-exception-popup.png)
 
 Para saber mais:
 
-- Vídeo: [Depurando o Python, 00:03:32](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
-- Docs: [Depurar o Python](debugging-python-in-visual-studio.md)
-- Docs: [Depuração de modo misto Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
-- Docs: [Depuração remota no Linux](debugging-python-code-on-remote-linux-machines.md)
-- Docs: [Depuração remota no Azure](debugging-remote-python-code-on-azure.md)
-- Docs de recursos gerais do Visual Studio: [Tour de recursos do depurador do Visual Studio](../debugger/debugger-feature-tour.md)
+- Vídeo: [Depurando o Python, 3min32s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
+- Documentação: [Depurar o Python](debugging-python-in-visual-studio.md)
+- Documentação: [Depuração de modo misto do Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
+- Documentação: [Depuração remota no Linux](debugging-python-code-on-remote-linux-machines.md)
+- Documentação de funcionalidades gerais do Visual Studio: [Tour de funcionalidades do depurador do Visual Studio](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>Ferramentas de criação de perfil com relatórios abrangentes
 
@@ -120,9 +121,9 @@ A criação de perfil explora como o tempo está sendo gasto no aplicativo. O Vi
 
 Para saber mais:
 
-- Vídeo: [Criação de perfil do Python 00:03:00](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
-- Docs: [Ferramentas de criação de perfil do Python](profiling-python-code-in-visual-studio.md)
-- Docs de recursos gerais do Visual Studio: [Tour do recurso de criação de perfil](../profiling/profiling-feature-tour.md). (Nem todos os recursos de criação de perfil do Visual Studio estão disponíveis para Python).
+- Vídeo: [Criação de perfil do Python, 3min00s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
+- Documentação: [Ferramentas de criação de perfil do Python](profiling-python-code-in-visual-studio.md)
+- Documentação de funcionalidades gerais do Visual Studio: [Tour de funcionalidades de criação de perfil](../profiling/profiling-feature-tour.md). (Nem todos os recursos de criação de perfil do Visual Studio estão disponíveis para Python).
 
 ## <a name="unit-testing-tools"></a>Ferramentas de teste de unidade
 
@@ -132,40 +133,35 @@ Descubra, execute e gerencie testes no **Gerenciador de Testes** do Visual Studi
 
 Para saber mais:
 
-- Vídeo: [Testando o Python 00:02:31](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
-- Docs: [Ferramentas de teste de unidade do Python](unit-testing-python-in-visual-studio.md)
-- Docs de recursos gerais do Visual Studio: [Execute teste de unidade no código](../test/unit-test-your-code.md).
+- Vídeo: [Testando o Python, 2min31s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
+- Documentação: [Ferramentas de teste de unidade do Python](unit-testing-python-in-visual-studio.md)
+- Documentação de funcionalidades gerais do Visual Studio: [Executar teste de unidade no código](../test/unit-test-your-code.md).
 
-## <a name="publish-to-azure-and-azure-sdk-for-python"></a>Publicar no Azure e no Azure SDK para Python
+## <a name="azure-sdk-for-python"></a>SDK do Azure para Python
 
-O Visual Studio oferece suporte integrado para publicar aplicativos Web e serviços de nuvem no Azure. O Visual Studio inclui modelos de item *web.config* essenciais para conteúdo dinâmico e estático. A carga de trabalho do Python também inclui o Azure SDK para Python, que simplifica o consumo de serviços do Azure em aplicativos do Windows, do Mac OS X e do Linux.
+A carga de trabalho do Python inclui o Azure SDK para Python, que simplifica o consumo de serviços do Azure em aplicativos do Windows, do Mac OS X e do Linux.
 
-![Publicar o aplicativo Python no Azure pelo Visual Studio](media/azure-publish-dialog.png)
-
-Para saber mais:
-
-- Docs: [Publicar no Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- Docs: [Azure SDK para Python](azure-sdk-for-python.md)
+Para obter mais informações, veja [SDK do Azure para Python](azure-sdk-for-python.md)
 
 ## <a name="python-training-on-microsoft-virtual-academy"></a>Treinamento do Python no Microsoft Virtual Academy
 
 |   |   |
 |---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | <ul><li>[Introdução à programação com o Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Iniciante no Python: cadeias de caracteres e funções](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Conceitos básicos do Python: Lista e loops](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Principais perguntas sobre o Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | <ul><li>[Introdução à programação com o Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Iniciante em Python: Cadeias de caracteres e funções](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Conceitos básicos do Python: Lista e loops](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Principais perguntas sobre o Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Perguntas e respostas
 
 **P. O suporte para Python está disponível com o Visual Studio para Mac?**
 
-R. Não no momento, mas você pode votar na solicitação no [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). A documentação do [Visual Studio para Mac](/visualstudio/mac/) identifica os tipos atuais de desenvolvimento aos quais dá suporte. Enquanto isso, o Visual Studio Code no Windows, Mac e Linux [funciona bem com o Python por meio das extensões disponíveis](https://code.visualstudio.com/docs/languages/python).
+R. Não no momento, mas você pode votar na solicitação em [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). A documentação do [Visual Studio para Mac](/visualstudio/mac/) identifica os tipos atuais de desenvolvimento aos quais dá suporte. Enquanto isso, o Visual Studio Code no Windows, Mac e Linux [funciona bem com o Python por meio das extensões disponíveis](https://code.visualstudio.com/docs/languages/python).
 
 **P. O que pode ser usado para criar a interface do usuário com o Python?**
 
-R. A oferta principal nessa área é o [Projeto Qt](https://www.qt.io/qt-for-application-development/), com associações de Python conhecidas como [PySide (a associação oficial)](http://wiki.qt.io/PySide) (consulte também [Downloads do PySide](https://download.qt.io/official_releases/pyside/.)) e [PyQt](https://wiki.python.org/moin/PyQt). No momento, o suporte do Python no Visual Studio não inclui quaisquer ferramentas específicas para desenvolvimento da interface do usuário.
+R. A oferta principal nessa área é o [Projeto Qt](https://www.qt.io/qt-for-application-development/), com associações de Python conhecidas como [PySide (a associação oficial)](https://wiki.qt.io/PySide) (consulte também [Downloads do PySide](https://download.qt.io/official_releases/pyside/.)) e [PyQt](https://wiki.python.org/moin/PyQt). No momento, o suporte do Python no Visual Studio não inclui quaisquer ferramentas específicas para desenvolvimento da interface do usuário.
 
 **P. Um projeto do Python pode produzir um executável autônomo?**
 
-R. Geralmente, o Python é uma linguagem interpretada, com a qual o código é executado sob demanda em um ambiente compatível com o Python, como o Visual Studio e servidores Web. No momento, o Visual Studio não fornece meios para criar um executável autônomo, o que, basicamente, é um programa com um interpretador de Python incorporado. No entanto, a comunidade do Python forneceu maneiras diferentes de criar executáveis, conforme descrito em [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). O CPython também dá suporte a ser inserido em um aplicativo nativo, conforme descrito na postagem do blog [Usar o arquivo .zip que permite inserção do CPython](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
+R. Geralmente, o Python é uma linguagem interpretada, com a qual o código é executado sob demanda em um ambiente compatível com o Python, como o Visual Studio e servidores Web. No momento, o Visual Studio não fornece meios para criar um executável autônomo, o que, basicamente, é um programa com um interpretador de Python incorporado. No entanto, a comunidade do Python forneceu maneiras diferentes de criar executáveis, conforme descrito em [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). O CPython também dá suporte a ser inserido em um aplicativo nativo, conforme descrito na postagem do blog [Usar o arquivo .zip que permite inserção do CPython](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
 
 ## <a name="features-matrix"></a>Matriz de recursos
 
@@ -185,117 +181,138 @@ O Visual Studio 2015 e as versões anteriores estão disponíveis em [visualstud
 > [!Important]
 > Somente há suporte e manutenção completos para os recursos na versão mais recente do Visual Studio. Os recursos estão disponíveis nas versões mais antigas, mas não recebem manutenção ativa.
 
-| Suporte para Python | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Gerenciar vários interpretadores | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Detecção automática de interpretadores populares | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Adição de interpretadores personalizados | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Ambientes Virtuais | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| PIP/Fácil instalação | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+|          Suporte para Python          |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|----------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+|   Gerenciar vários interpretadores   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| Detecção automática de interpretadores populares | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|     Adição de interpretadores personalizados      | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|       Ambientes Virtuais       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|         PIP/Fácil instalação         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| Sistema de projeto | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Novo projeto com base em um código existente | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Mostrar todos os arquivos | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Controle do código-fonte | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Integração com o Git | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004;<sup>1</sup> | &#10007; |
+
+|         Sistema de projeto         |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ |      2012 Pro+       | 2010 SP1 Pro+ |
+|--------------------------------|----------|----------|-----------|--------------|----------|-----------|----------------------|---------------|
+| Novo projeto com base em um código existente | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
+|         Mostrar todos os arquivos         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
+|         Controle do código-fonte         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
+|        Integração com o Git         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;<sup>1</sup> |   &#10007;    |
+
 <br/>
 
-| Edição | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Realce de sintaxe | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Preenchimento automático | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Ajuda da assinatura | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Informações rápidas | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Modo de exibição de classe/pesquisador de objetos | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Barra de navegação | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Ir para Definição | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Navegar para | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Localizar Todas as Referências | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Recuo automático | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Formatação de código | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Refatorar – renomear | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Refatorar – extrair método | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Refatorar – adicionar ou remover importação | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| PyLint | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+
+|           Edição            |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+|     Realce de sintaxe      | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|        Preenchimento automático         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|        Ajuda da assinatura        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|          Informações rápidas          | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|  Modo de exibição de classe/pesquisador de objetos   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|        Barra de navegação        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|       Ir para Definição       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|         Navegar para          | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|     Localizar Todas as Referências      | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|       Recuo automático       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|       Formatação de código        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|      Refatorar – renomear       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|  Refatorar – extrair método   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| Refatorar – adicionar ou remover importação | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|            PyLint            | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| Janela Interativa | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Janela Interativa | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| IPython com grafos embutidos | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+
+|     Janela Interativa     |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|----------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+|     Janela Interativa     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| IPython com grafos embutidos | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| Desktop | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Aplicativo de console/do Windows | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| WPF do IronPython (com o designer XAML) | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Windows Forms do IronPython | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+
+|               Desktop               |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|-------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+|     Aplicativo de console/do Windows     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| WPF do IronPython (com o designer XAML) | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|      Windows Forms do IronPython       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| Web | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Projeto Web do Django | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Projeto Web do Bottle | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Projeto Web do Flask | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Projeto Web genérico | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
+
+|         Web         |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|---------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+| Projeto Web do Django  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| Projeto Web do Bottle  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|  Projeto Web do Flask  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| Projeto Web genérico | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| Azure | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Implantar no site da Web | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004;<sup>2</sup> |
-| Implantar na função Web | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
-| Implantar na função de trabalho | ? | ? | ? | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
-| Execução no emulador do Azure | ? | ? | ? | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
-| Depuração remota | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>6</sup> | &#10004;<sup>8</sup> | &#10004;<sup>8</sup> | &#10007; |
-| Anexar o Gerenciador de Servidores | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>7</sup> | &#10004;<sup>7</sup> | &#10007; | &#10007; |
+
+|         Azure          |   2017   |   2015   | 2013 Comm | 2013 Desktop |       2013 Web       |      2013 Pro+       |      2012 Pro+       |    2010 SP1 Pro+     |
+|------------------------|----------|----------|-----------|--------------|----------------------|----------------------|----------------------|----------------------|
+|   Implantar no site da Web   | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       |       &#10004;       | &#10004;<sup>2</sup> |
+|   Implantar na função Web   | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
+| Implantar na função de trabalho  |    ?     |    ?     |     ?     |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
+| Execução no emulador do Azure  |    ?     |    ?     |     ?     |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
+|    Depuração remota    | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>6</sup> | &#10004;<sup>8</sup> | &#10004;<sup>8</sup> |       &#10007;       |
+| Anexar o Gerenciador de Servidores | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>7</sup> | &#10004;<sup>7</sup> |       &#10007;       |       &#10007;       |
+
 <br/>
 
-| Modelos do Django | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Depuração | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Preenchimento automático | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10004; | &#10004; |
-| Preenchimento automático para CSS e JavaScript | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10007; | &#10007; |
+
+|           Modelos do Django           |   2017   |   2015   | 2013 Comm | 2013 Desktop |       2013 Web       |      2013 Pro+       | 2012 Pro+ | 2010 SP1 Pro+ |
+|--------------------------------------|----------|----------|-----------|--------------|----------------------|----------------------|-----------|---------------|
+|              Depuração               | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       | &#10004;  |   &#10004;    |
+|            Preenchimento automático             | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10004;  |   &#10004;    |
+| Preenchimento automático para CSS e JavaScript | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10007;  |   &#10007;    |
+
 <br/>
 
-| Depuração | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Depuração | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Depuração sem um projeto | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Depuração – anexação à edição | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; |
-| Depuração de modo misto | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
-| Depuração remota (Windows, Mac OS X, Linux) | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; |
-| Depurar janela Interativa | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+
+|                  Depuração                  |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|---------------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+|                  Depuração                  | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|         Depuração sem um projeto         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|        Depuração – anexação à edição        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
+|            Depuração de modo misto             | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
+| Depuração remota (Windows, Mac OS X, Linux) | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
+|          Depurar janela Interativa           | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
 <a name="matrix-profiling"></a>
 
-| Criação de perfil | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Criação de perfil | &#10004; | &#10004; | &#10004; | &#10007; | &#10007; | &#10004; | &#10004; | &#10004; |
+
+| Criação de perfil |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|-----------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+| Criação de perfil | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| Teste | 2017 | 2015 | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Gerenciador de testes | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
-| Executar teste | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
-| Depurar teste | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
+
+|     Teste      |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|---------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+| Gerenciador de testes | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
+|   Executar teste    | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
+|  Depurar teste   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
+
 <br/>
 
-1. O suporte do Git para o Visual Studio 2012 está disponível na extensão Ferramentas do Visual Studio para Git, disponível na [Galeria do Visual Studio](http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c).
+1. O suporte do Git para o Visual Studio 2012 está disponível na extensão Ferramentas do Visual Studio para Git, disponível na [Galeria do Visual Studio](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit).
 
-1. A implantação no Site do Azure exige o [SDK do Azure para .NET 2.1 – Visual Studio 2010 SP1](http://go.microsoft.com/fwlink/?LinkId=313855). Versões posteriores não dão suporte ao Visual Studio 2010.
+1. A implantação no Site do Azure exige o [SDK do Azure para .NET 2.1 – Visual Studio 2010 SP1](https://go.microsoft.com/fwlink/?LinkId=313855). Versões posteriores não dão suporte ao Visual Studio 2010.
 
-1. O suporte à Função Web e à Função de Trabalho do Azure exige o [SDK do Azure para .NET 2.3 – VS 2012](http://go.microsoft.com/fwlink/?LinkId=323511) ou posterior.
+1. O suporte à Função Web e à Função de Trabalho do Azure exige o [SDK do Azure para .NET 2.3 – VS 2012](https://go.microsoft.com/fwlink/?LinkId=323511) ou posterior.
 
-1. O suporte à Função Web e à Função de Trabalho do Azure exige o [SDK do Azure para .NET 2.3 – VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) ou posterior.
+1. O suporte à Função Web e à Função de Trabalho do Azure exige o [SDK do Azure para .NET 2.3 – VS 2013](https://go.microsoft.com/fwlink/?LinkId=323510) ou posterior.
 
 1. O editor de modelos do Django no Visual Studio 2013 apresenta alguns problemas conhecidos que foram resolvidos com a instalação da Atualização 2.
 
-1. Exige o Windows 8 ou posterior. O Visual Studio 2013 Express para Web não tem a caixa de diálogo **Anexar ao Processo**, mas a depuração remota do Site do Azure ainda é possível com o comando **Anexar Depurador (Python)** no **Gerenciador de Servidores**. A depuração remota exige o [SDK do Azure para .NET 2.3 – Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) ou posterior.
+1. Exige o Windows 8 ou posterior. O Visual Studio 2013 Express para Web não tem a caixa de diálogo **Anexar ao Processo**, mas a depuração remota do Site do Azure ainda é possível com o comando **Anexar Depurador (Python)** no **Gerenciador de Servidores**. A depuração remota exige o [SDK do Azure para .NET 2.3 – Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) ou posterior.
 
-1. Exige o Windows 8 ou posterior. O comando **Anexar Depurador (Python)** no **Gerenciador de Servidores** exige o [SDK do Azure para .NET 2.3 - Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) ou posterior.
+1. Exige o Windows 8 ou posterior. O comando **Anexar Depurador (Python)** no **Gerenciador de Servidores** exige o [SDK do Azure para .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) ou posterior.
 
 1. Exige o Windows 8 ou posterior.
 

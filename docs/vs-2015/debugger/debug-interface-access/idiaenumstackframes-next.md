@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumstackframes:: Next | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaEnumStackFrames::Next method
 ms.assetid: 09378a21-d5e3-4213-b7e2-10f04d85295f
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b4411d566768b514816fcaaa6386ca91373c159
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aaaf66da29711a279111c1f7d63ca285dc779596
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474807"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726464"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaenumstackframes:: Next](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumstackframes-next).  
-  
 Recupera um número especificado de elementos de quadro de pilha da sequência de enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Next(   
+HRESULT Next(   
    ULONG             celt,  
    IDiaStackFrame**  rgelt,  
    ULONG*            pceltFetched  

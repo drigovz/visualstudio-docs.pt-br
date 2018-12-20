@@ -1,7 +1,7 @@
 ---
 title: IDiaAddressMap | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaAddressMap interface
 ms.assetid: e6467529-508c-4328-85d7-89444ae4d1c1
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd3f624e7b6889b64d81e06792404ff20839b03e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 041b784154ef5c95f75d8574700a65460a0ec663
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466521"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722727"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaAddressMap](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaaddressmap).  
-  
 Fornece controle sobre como o DIA SDK calcula relativos e virtuais endereços virtuais para objetos de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDiaAddressMap : IUnknown  
+IDiaAddressMap : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  

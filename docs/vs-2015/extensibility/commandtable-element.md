@@ -1,7 +1,7 @@
 ---
 title: Elemento CommandTable | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e14f17f01d4a14b571c64162556325ca0109d55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1adc3e8f8c7894cfb3a55617ce594f52a60f2498
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466453"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817367"
 ---
 # <a name="commandtable-element"></a>Elemento CommandTable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento CommandTable](https://docs.microsoft.com/visualstudio/extensibility/commandtable-element).  
-  
 CommandTable é o elemento raiz do arquivo. VSCT. Esse é o arquivo que define o layout real e o tipo dos comandos a um VSPackage fornece ao IDE. Comandos podem incluir itens de menu, menus, barras de ferramentas e caixas de combinação. Para obter mais informações, consulte [tabela de comando do Visual Studio (. VSCT) arquivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -53,10 +51,10 @@ CommandTable é o elemento raiz do arquivo. VSCT. Esse é o arquivo que define o
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descrição|  
-|---------------|-----------------|  
-|xmlns|Necessário. Namespaces XML:<br /><br /> xmlns = "http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"<br /><br /> xmlns: xs = "http://www.w3.org/2001/XMLSchema"|  
-|linguagem|Opcional. O atributo de idioma pode ser usado para especificar o idioma padrão de todos os \<cadeias de caracteres > elementos na tabela de comandos.  Se o idioma não for especificado, será usado o idioma do processo atual:<br /><br /> Language = "en-us"|  
+| Atributo |                                                                                                                   Descrição                                                                                                                   |
+|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   xmlns   |                                   Necessário. Namespaces XML:<br /><br /> xmlns = "<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns: xs = "<http://www.w3.org/2001/XMLSchema>"                                   |
+| linguagem  | Opcional. O atributo de idioma pode ser usado para especificar o idioma padrão de todos os \<cadeias de caracteres > elementos na tabela de comandos.  Se o idioma não for especificado, será usado o idioma do processo atual:<br /><br /> Language = "en-us" |
   
 ### <a name="child-elements"></a>Elementos filho  
   

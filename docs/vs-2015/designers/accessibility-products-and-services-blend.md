@@ -1,7 +1,7 @@
 ---
 title: Produtos e serviços de acessibilidade (Blend) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3e90c3f5ec522190cf08027bdffbc9a9558cee90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 394940ae59ceb87cf2bc71d71584fe0bf39eb0b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197815"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Produtos e serviços de acessibilidade (Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [acessibilidade produtos e serviços (Blend)](https://docs.microsoft.com/visualstudio/designers/accessibility-products-and-services-blend).  
-  
 A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços para todas as pessoas. As seções a seguir fornecem informações sobre os recursos, os produtos e os serviços que tornam o Microsoft Windows mais acessível para pessoas com deficiências:  
   
 -   “Recursos de acessibilidade do Windows”  
@@ -73,7 +71,7 @@ A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços pa
   
  Os endereços Web podem ser alterados, portanto, talvez você não possa se conectar ao site mencionado aqui.  
   
-## <a name="customer-service-for-people-people-with-hearing-impairments"></a>Atendimento ao cliente para pessoas com deficiências auditivas  
+## <a name="customer-service-for-people-with-hearing-impairments"></a>Atendimento ao cliente para pessoas com deficiências auditivas  
  Se você tiver algum tipo de deficiência auditiva, o acesso completo aos produtos Microsoft e ao atendimento ao cliente estará disponível por meio de um serviço de telefone de texto (TTY/TDD):  
   
  Para obter atendimento ao cliente, contate o Microsoft Sales Information Center em (800) 892-5234 entre 6:30 AM e 17:30, hora do Pacífico, de segunda a sexta-feira, exceto feriados.  

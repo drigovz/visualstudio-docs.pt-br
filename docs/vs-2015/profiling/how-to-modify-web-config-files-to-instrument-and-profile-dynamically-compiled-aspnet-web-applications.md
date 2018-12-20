@@ -1,7 +1,7 @@
 ---
 title: Como modificar arquivos Web.Config para instrumentar e analisar aplicativos Web ASP .NET dinamicamente compilados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2b9f0220d2b25b9bf7f3e319ef8a63ae5ea3a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f668bebb2967ca89feb1c6f52f00253ac3eb07b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473159"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807745"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Como modificar arquivos Web.Config para instrumentar e criar perfil dinamicamente de aplicativos Web do ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: modificar arquivos de Web. config para instrumentar e perfil dinamicamente compilados aplicativos Web ASP.NET](https://docs.microsoft.com/visualstudio/profiling/how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications).  
-  
 Você pode usar o método de instrumentação das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para coletar dados de tempo detalhados, dados de alocação de memória do .NET e dados de tempo de vida do objeto do .NET de aplicativos Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] dinamicamente compilados.  
   
  Este tópico descreve como modificar o arquivo de configuração web.config para habilitar a instrumentação e criação de perfil de aplicativos Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
@@ -35,13 +33,13 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
   
  A raiz de um arquivo web.config é o elemento **configuração**. Para instrumentar e analisar um aplicativo Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] compilado dinamicamente, é necessário adicionar ou modificar os seguintes elementos:  
   
--   Um elemento **configuration/runtime/assemblyBinding/dependentAssembly** que identifica o assembly Microsoft.VisualStudio.Enterprise.ASPNetHelper que controla a criação de perfil. O elemento **dependentAssembly** contém dois elementos filho: **assemblyIdentity** e **codeBase**.  
+- Um elemento **configuration/runtime/assemblyBinding/dependentAssembly** que identifica o assembly Microsoft.VisualStudio.Enterprise.ASPNetHelper que controla a criação de perfil. O elemento **dependentAssembly** contém dois elementos filho: **assemblyIdentity** e **codeBase**.  
   
--   Um elemento **configuration/system.web/compilation** que identifica a etapa de compilação pós-processamento do criador de perfil do assembly de destino.  
+- Um elemento **configuration/system.web/compilation** que identifica a etapa de compilação pós-processamento do criador de perfil do assembly de destino.  
   
--   Dois elementos **add** que identificam o local das Ferramentas de Criação de Perfil são adicionados à seção **configuration/appSettings**.  
+- Dois elementos **add** que identificam o local das Ferramentas de Criação de Perfil são adicionados à seção **configuration/appSettings**.  
   
- É recomendável que você crie uma cópia do arquivo web.config original que pode ser usada para restaurar a configuração do aplicativo.  
+  É recomendável que você crie uma cópia do arquivo web.config original que pode ser usada para restaurar a configuração do aplicativo.  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Para adicionar o assembly ASPNetHelper como um elemento configuration/runtime/assemblyBinding/dependentAssembly  
   
@@ -91,8 +89,8 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
                 xmlns="urn:schemas-microsoft-com:asm.v1"  
             >  
                 <dependentAssembly>  
-                    <assemblyIdentity                         name="Microsoft.VisualStudio.Enterprise.ASPNetHelper"   
-                        publicKeyToken="b03f5f7f11d50a3a"                         culture="neutral"   
+                    <assemblyIdentity                         name="Microsoft.VisualStudio.Enterprise.ASPNetHelper"   
+                        publicKeyToken="b03f5f7f11d50a3a"                         culture="neutral"   
                     />  
                     <codeBase   
                         version="10.0.0.0"  

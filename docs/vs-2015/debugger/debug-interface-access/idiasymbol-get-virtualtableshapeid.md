@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_virtualtableshapeid | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_virtualTableShapeId method
 ms.assetid: cbee9944-817a-4805-9c08-fac8e0da58b7
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9708c17966bb5883387ddb82b2d72a3703d84f5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 606e97c22bd08e0a65481d48eef4ad5ef32225fb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463043"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771931"
 ---
 # <a name="idiasymbolgetvirtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_virtualtableshapeid](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid).  
-  
 Recupera o identificador de símbolo de forma de tabela virtual do símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_virtualTableShapeId (   
+HRESULT get_virtualTableShapeId (   
    DWORD* pRetVal  
 );  
 ```  

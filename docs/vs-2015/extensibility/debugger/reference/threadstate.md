@@ -1,7 +1,7 @@
 ---
 title: THREADSTATE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 62efdd7c-25b1-4fd3-9d06-ac1830a418a9
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5b62e8770449fc71a47d325d933b54b2090f59e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bc74c4b893cd7eb9aa389af31780c1b9cc8d35c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467021"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817302"
 ---
 # <a name="threadstate"></a>THREADSTATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [THREADSTATE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/threadstate).  
-  
 Especifica o estado do thread.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_THREADSTATE {   
+enum enum_THREADSTATE {   
    THREADSTATE_RUNNING = 0x0001,  
    THREADSTATE_STOPPED = 0x0002,  
    THREADSTATE_FRESH   = 0x0003,  
@@ -45,7 +43,7 @@ typedef DWORD THREADSTATE;
 ```  
   
 ```csharp  
-public enum enum_THREADSTATE {   
+public enum enum_THREADSTATE {   
    THREADSTATE_RUNNING = 0x0001,  
    THREADSTATE_STOPPED = 0x0002,  
    THREADSTATE_FRESH   = 0x0003,  

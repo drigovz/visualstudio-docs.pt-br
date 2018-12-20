@@ -1,7 +1,7 @@
 ---
 title: 'Como: expor listas de símbolos fornecidos pela biblioteca para o Gerenciador de objetos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0773e20a71516fab47f4bd0c72a1c3a50531532c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 32adc26be31ebb090916f5f0f4b038bd20ab2ea2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475322"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722170"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Como: expor listas de símbolos fornecidos pela biblioteca para o Gerenciador de objetos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [expor listas de símbolos fornecidos para o Gerenciador de objetos](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager).  
-  
 As ferramentas de navegação de símbolo **Class View**, **Pesquisador de objetos**, **Pesquisador de chamadas** e **Find Symbol Results**, passar solicitações para que novos dados o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Gerenciador de objetos. O Gerenciador de objetos localiza as bibliotecas apropriadas e solicita novas listas de símbolos. As bibliotecas de respondem, fornecendo os dados solicitados para o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Gerenciador de objetos por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Gerenciador de objeto chama os métodos em <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> de interface para obter os dados e usa-o para preencher ou atualizar as exibições das ferramentas de navegação de símbolo.  
   
  Uma biblioteca pode receber solicitações de dados quando a ferramenta é invocada, o nó é expandido ou a exibição seja atualizada. Quando uma ferramenta de navegação de símbolo é invocada pela primeira vez, o Gerenciador de objetos solicita a biblioteca para fornecer a lista de nível superior. Quando o usuário expande um nó da lista, a biblioteca fornece uma lista de filhos sob aquele nó. Cada consulta do Gerenciador de objeto contém um índice do item de interesse. Para exibir uma nova lista, o Gerenciador de objetos deve determinar quantos itens estão na lista, o tipo de itens, seus nomes, acessibilidade e outras propriedades.  

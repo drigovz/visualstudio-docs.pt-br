@@ -1,7 +1,7 @@
 ---
 title: Editar e continuar a caixa de diálogo de mensagem de erro | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,21 +21,19 @@ helpviewer_keywords:
 - Edit and Continue Error Message dialog box
 ms.assetid: f98c91c0-447a-4533-85b6-87170a0dc4c3
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d649df9584fc06ee08b7a7d1e846597c12519019
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: c311f6243ddbf087fd18fd9209e2e17bbe3065a6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463709"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771320"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Caixa de diálogo Mensagem de Erro de Editar e Continuar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [editar e continuar a caixa de diálogo de mensagem de erro](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-error-message-dialog-box).  
-  
 Essa caixa de diálogo aparece quando você estiver depurando em uma linguagem que dá suporte a editar e continuar, mas **editar e continuar** não está disponível para o tipo de alterações de código que você fez. A mensagem de erro dentro da caixa fornece uma explicação mais detalhada. As possíveis razões para ver essa caixa de diálogo incluem:  
   
 -   Você tentou editar o código gerenciado quando a depuração não gerenciada foi habilitada. Editar e Continuar não funcionam com depuração de modo misto.  

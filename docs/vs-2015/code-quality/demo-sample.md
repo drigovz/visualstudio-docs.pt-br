@@ -1,7 +1,7 @@
 ---
 title: Exemplo de demonstração | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,30 +14,28 @@ helpviewer_keywords:
 - code analysis, samples
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
 caps.latest.revision: 23
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8aca1c819ee413f1bcc2fe81c90233256a12317a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ca480078bf269e8af662d94910a5d337c13bcd8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460945"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722379"
 ---
 # <a name="demo-sample"></a>Amostra de demonstração
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [amostra de demonstração](https://docs.microsoft.com/visualstudio/code-quality/demo-sample).  
-  
 Estes procedimentos a seguir mostram como criar o exemplo para [instruções passo a passo: Analisando código do C/C++ em busca de defeitos](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Criam os procedimentos:  
   
--   Um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução chamada CppDemo.  
+- Um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução chamada CppDemo.  
   
--   Um projeto de biblioteca estática denominada CodeDefects.  
+- Um projeto de biblioteca estática denominada CodeDefects.  
   
--   Um projeto de biblioteca estática denominada anotações.  
+- Um projeto de biblioteca estática denominada anotações.  
   
- Os procedimentos também fornecem o código para os arquivos de cabeçalho e. cpp para as bibliotecas estáticas.  
+  Os procedimentos também fornecem o código para os arquivos de cabeçalho e. cpp para as bibliotecas estáticas.  
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Crie a solução CppDemo e o projeto de CodeDefects  
   

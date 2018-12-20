@@ -1,7 +1,7 @@
 ---
 title: NameProfile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - NameProfileA
 ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 966a3557c4436a625c7b8cd07ce850216085f194
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e56788c36e8c77ec134ed24a7636475c54da664
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461429"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733836"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [NameProfile](https://docs.microsoft.com/visualstudio/profiling/nameprofile).  
-  
 A função `NameProfile` atribui uma cadeia de caracteres ao thread ou processo especificado.  
   
  A API NameProfile está disponível somente para a criação de perfil de instrumentação. Não há suporte para a API NameProfile para criação de perfil de amostragem.  
@@ -47,17 +45,17 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  O nome do elemento de criação de perfil. Um nome é inválido (resultando em NameProfileA retorna NAME_ERROR_INVALID_NAME) se:  
   
--   O ponteiro transmitido para NameProfileA é um valor NULL  
+- O ponteiro transmitido para NameProfileA é um valor NULL  
   
--   Os dados de cadeia de caracteres de pszName começam com um número  
+- Os dados de cadeia de caracteres de pszName começam com um número  
   
--   Os dados de cadeia de caracteres de pszName contêm um espaço  
+- Os dados de cadeia de caracteres de pszName contêm um espaço  
   
--   Os dados de cadeia de caracteres de pszName contêm todos os seguintes caracteres: ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
+- Os dados de cadeia de caracteres de pszName contêm todos os seguintes caracteres: ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
   
- `Level`  
+  `Level`  
   
- Indica o nível de perfil de desempenho que pode ser aplicado a coleta de dados. Os seguintes valores de **PROFILE_CONTROL_LEVEL** podem ser usados para indicar um dos três níveis aos quais a coleta de dados de desempenho pode ser aplicada:  
+  Indica o nível de perfil de desempenho que pode ser aplicado a coleta de dados. Os seguintes valores de **PROFILE_CONTROL_LEVEL** podem ser usados para indicar um dos três níveis aos quais a coleta de dados de desempenho pode ser aplicada:  
   
 |Enumerador|Descrição|  
 |----------------|-----------------|  
@@ -69,7 +67,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  Identificador de nível de criação de perfil. Use o identificador de processo ou thread que é gerado pelo sistema.  
   
-## <a name="property-valuereturn-value"></a>Valor da propriedade/valor de retorno  
+## <a name="property-valuereturn-value"></a>Valor de propriedade/Valor de retorno  
  A função indica êxito ou falha usando a enumeração **PROFILE_COMMAND_STATUS**. O valor de retorno pode ser um dos seguintes:  
   
 |Enumerador|Descrição|  

@@ -1,7 +1,7 @@
 ---
 title: Registro de um tipo de projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 336658e0a216f7fc24435715bf978ce5badefe5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38848e54f95cc3d78cf3bae2f32bd9827e98c5ac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475321"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785320"
 ---
 # <a name="registering-a-project-type"></a>Registrando um tipo de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [registro de um tipo de projeto](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-project-type).  
-  
 Quando você cria um novo tipo de projeto, você deve criar entradas do registro que permitem [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para reconhecer e trabalhar com o tipo de projeto. Você normalmente cria essas entradas do registro usando um arquivo de script (. rgs) do registro.  
   
  No exemplo a seguir, as instruções de registro fornecem caminhos padrão e dados, onde aplicável, seguido por uma tabela que contém as entradas do script do registro para cada instrução. As tabelas fornecem as entradas de script e informações adicionais sobre as instruções.  
@@ -72,7 +70,7 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
 ```  
 \{ACEF4EB2-57CF-11D2-96F4-000000000000} (The CLSID for the VSPackage)  
    @="FigPrj Project Package"  
-   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"  
+   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"  
    "CompanyName"="Microsoft"  
    "ProductName"="Figure Project Sample"  
    "ProductVersion"="9.0"  
@@ -111,12 +109,12 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
    @="FigPrj Project"  
    "DisplayName"="#2"  
    "Package"="{ACEF4EB2-57CF-11D2-96F4-000000000000}"  
-   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"  
-   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"  
+   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"  
+   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"  
    "DisplayProjectFileExtensions"="#3"  
    "PossibleProjectExtensions"="figp"  
    "DefaultProjectExtension"=".figp"  
-\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)  
+\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)  
    @="#4"  
    "CommonOpenFilesFilter"=dword:00000000  
    "CommonFindFilesFilter"=dword:00000000  
@@ -135,7 +133,7 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
    "SortPriority"=dword:000003e8  
 \{C061DB26-5833-11D2-96F5-000000000000}\AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000}\1 (Second GUID indicates the registered project type for the Add Items templates.)  
    @="#6"  
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
    "SortPriority"=dword:00000064  
 ```  
   
@@ -196,7 +194,7 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
 \AddItemTemplates\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1  
                                  (CLSID for Figures Project projects)  
    @="#6"  
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"  
    "SortPriority"=dword:00000064  
 ```  
   
@@ -217,17 +215,17 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
   
  A entrada de menu aponta o IDE para o recurso usado para recuperar as informações de menu. Quando esses dados foi mesclados com o banco de dados do menu, a mesma chave será adicionada na seção MenusMerged do registro. O VSPackage não deve modificar qualquer coisa na seção MenusMerged diretamente. No campo de dados na tabela a seguir, há três vírgula-campos separados por. O primeiro campo identifica um caminho completo de um arquivo de recurso de menu:  
   
--   Se o primeiro campo for omitido, o recurso de menu é carregado do identificado pelo GUID VSPackage DLL satélite.  
+- Se o primeiro campo for omitido, o recurso de menu é carregado do identificado pelo GUID VSPackage DLL satélite.  
   
- O segundo campo identifica uma ID de recurso de menu do tipo CTMENU:  
+  O segundo campo identifica uma ID de recurso de menu do tipo CTMENU:  
   
--   Se a ID de recurso é especificada, e o caminho do arquivo é fornecido pelo primeiro parâmetro, um recurso de menu é carregado do caminho de arquivo completo.  
+- Se a ID de recurso é especificada, e o caminho do arquivo é fornecido pelo primeiro parâmetro, um recurso de menu é carregado do caminho de arquivo completo.  
   
--   Se a ID de recurso é fornecida, mas o caminho do arquivo não é, o recurso de menu é carregado do DLL satélite.  
+- Se a ID de recurso é fornecida, mas o caminho do arquivo não é, o recurso de menu é carregado do DLL satélite.  
   
--   Se o caminho completo do arquivo é fornecido e a ID de recurso é omitido, o arquivo a ser carregado deve ser um arquivo CTO.  
+- Se o caminho completo do arquivo é fornecido e a ID de recurso é omitido, o arquivo a ser carregado deve ser um arquivo CTO.  
   
- O último campo identifica o número de versão para o recurso CTMENU. Você pode mesclar um menu novamente, alterando o número de versão.  
+  O último campo identifica o número de versão para o recurso CTMENU. Você pode mesclar um menu novamente, alterando o número de versão.  
   
 |Nome|Tipo|Dados|Descrição|  
 |----------|----------|----------|-----------------|  
@@ -236,7 +234,7 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
  Todos os exemplos a seguir estão localizados no registro sob a chave [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates].  
   
 ```  
-\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)  
+\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)  
    @="#7"  
    "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\FigPrjProjects"  
    "SortPriority"=dword:00000029  

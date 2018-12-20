@@ -1,7 +1,7 @@
 ---
 title: 'Área de teste 6: Excluir | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,31 +16,29 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a05b84b3c75cec22f008b5f690c8b4ee0f8c6df3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1498566e1afeaf1517b7ae3bd62297444c828888
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467887"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766303"
 ---
 # <a name="test-area-6-delete"></a>Área de teste 6: excluir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [teste área 6: excluir](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-6-delete).  
-  
 Essa área de plug-in de teste de controle de origem aborda as ações de exclusão.  
   
  Controle de origem responde para excluir ações na **Gerenciador de soluções**.  
   
  A seguir está uma lista de itens que podem ser excluídos:  
   
--   Arquivos  
+- Arquivos  
   
--   Pastas  
+- Pastas  
   
--   Projeto  
+- Projeto  
   
- Dependendo do tipo de projeto, você terá a opção de **remova** o projeto (deixa os arquivos no disco) ou **excluir** o projeto (remove os arquivos no disco). Qualquer ação remove o projeto ou item de **Gerenciador de soluções**.  
+  Dependendo do tipo de projeto, você terá a opção de **remova** o projeto (deixa os arquivos no disco) ou **excluir** o projeto (remove os arquivos no disco). Qualquer ação remove o projeto ou item de **Gerenciador de soluções**.  
   
 ## <a name="expected-behavior"></a>Comportamento esperado  
  O comportamento esperado para os casos de teste na área de teste delete é:  

@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine3 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8bdf4bb7-3b5d-4991-8981-772d4f6bb656
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0199483257120c374c7fe088f195df81270c91da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f66a17335c2bd9a4401f8490887f7ab2ab77ae80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460562"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760996"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugEngine3](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugengine3).  
-  
 Representa um mecanismo de depuração único (DES) que controla a depuração de um ou mais módulos.  
   
 ## <a name="syntax"></a>Sintaxe  

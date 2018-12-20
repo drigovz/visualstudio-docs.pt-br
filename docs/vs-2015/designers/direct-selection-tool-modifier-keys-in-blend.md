@@ -1,7 +1,7 @@
 ---
 title: Teclas Modificadoras da Ferramenta Seleção Direta no Blend | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 244a1238884dab0778ff373701a202c2c67e8ac5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfe69bcc678cbd6f06f8afc8d7e175b124f423ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463030"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191068"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Teclas modificadoras da ferramenta Seleção Direta no Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [teclas modificadoras da ferramenta Seleção direta no Blend](https://docs.microsoft.com/visualstudio/designers/direct-selection-tool-modifier-keys-in-blend).  
-  
 A tabela a seguir lista os atalhos que podem ser usados para modificar a forma de um caminho existente com a ferramenta **Seleção Direta** ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362"). Para adicionar ou remover pontos de um caminho existente ou para unir dois caminhos existentes, use a ferramenta **Caneta**.  
   
 |Para realizar esta ação|Faça isto|Ponteiro|  

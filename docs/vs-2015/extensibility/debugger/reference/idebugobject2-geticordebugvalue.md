@@ -1,7 +1,7 @@
 ---
 title: IDebugObject2::GetICorDebugValue | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: bcd4355d-3fbe-483f-bb23-a44348323c6a
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc91846d7ee68ec7381d552c4cb8c1c85128490b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 53a56dc74559e7b61ec1e0c9f1eb9d448337647c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464006"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787712"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugObject2::GetICorDebugValue](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugobject2-geticordebugvalue).  
-  
 Obtém um objeto de código gerenciado que representa o valor associado a este objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT GetICorDebugValue(  
-   IUnknown** ppUnk  
+HRESULT GetICorDebugValue(  
+   IUnknown** ppUnk  
 );  
 ```  
   
 ```csharp  
-int GetICorDebugValue(  
-   out object ppUnk  
+int GetICorDebugValue(  
+   out object ppUnk  
 );  
 ```  
   

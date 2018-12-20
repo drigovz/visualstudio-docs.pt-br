@@ -1,7 +1,7 @@
 ---
 title: ADDRESS_KIND | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 3a12fbec-7088-4cf9-8f6f-ad8ddec6009a
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4b115457c69418039a752d2f50bd39d1ad80accf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dad092e8a0de1a69ded2f09e6c64de653edc8493
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474143"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734760"
 ---
 # <a name="addresskind"></a>ADDRESS_KIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ADDRESS_KIND](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/address-kind).  
-  
 Especifica os tipos de endereços.  
   
 ## <a name="syntax"></a>Sintaxe  

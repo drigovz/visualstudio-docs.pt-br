@@ -1,7 +1,7 @@
 ---
 title: Pacote do Framework Classes gerenciadas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 15aedcc3-c79a-460b-b620-43223f1ae81e
 caps.latest.revision: 24
 manager: douge
-ms.openlocfilehash: 38f159df52c99554ed931269f29ad57e72745b5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 931e73af72d2239ec04ac248b9fa426fe24f249a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473997"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188988"
 ---
 # <a name="managed-package-framework-classes"></a>Pacote do Framework Classes gerenciadas
 As classes do framework (MPF) de pacote gerenciado podem ser usadas para criar os VSPackages usando código gerenciado. Elas fornecem implementações padrão de várias interfaces de VSPackage. Ocultando as complexidades e detalhes de implementação MPF permite que você crie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] produtos de integração com uma quantidade mínima de código.  

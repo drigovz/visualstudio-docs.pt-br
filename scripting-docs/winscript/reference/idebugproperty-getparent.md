@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8559f7c7d5baa5144449f67850d2fe882c379e94
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f78d72bad8cb12b72f4b51e113d23dcd64ada8fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726686"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838355"
 ---
 # <a name="idebugpropertygetparent"></a>IDebugProperty::GetParent
 Obtém a propriedade pai de uma propriedade.  

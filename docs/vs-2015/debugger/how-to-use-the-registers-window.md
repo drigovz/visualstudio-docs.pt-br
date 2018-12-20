@@ -1,7 +1,7 @@
 ---
 title: 'Como: usar a janela registros | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,21 +29,19 @@ helpviewer_keywords:
 - Registers window
 ms.assetid: 2918ffa2-562f-40d6-9053-ef321bbeb767
 caps.latest.revision: 42
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 668ed9b48d5013a0a134911c4bed56b99ba7e3c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6856b2e10c43f33e22711353d33f732779e8f4af
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465240"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748118"
 ---
 # <a name="how-to-use-the-registers-window"></a>Como usar a janela Registros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [valores de exibição Registre-se no depurador no Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-registers-window).  
-  
 A janela registros estará disponível somente se a depuração do nível de endereços estiver habilitada na **opções** caixa de diálogo **depuração** nó **geral** categoria.  
   
  O **registra** janela exibe conteúdo do registro. Se você mantiver os **registra** janela aberta, conforme você percorre seu programa, você pode ver alteração dos valores do registro como o código é executado. Os valores que foram alterados recentemente são exibidos em vermelho. Você pode editar valores do registro. Para obter mais informações, consulte [como: editar o valor do registrador](../debugger/how-to-edit-a-register-value.md).  

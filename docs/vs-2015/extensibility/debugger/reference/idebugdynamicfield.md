@@ -1,7 +1,7 @@
 ---
 title: IDebugDynamicField | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: caffbd95-7596-4714-84b1-b964e89a78bb
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e975940947b68fdce34bd7d1e2e289c85914c44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5dd9827a5262c95d6ef7520fb3ff2263a3934d24
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475349"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792561"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugDynamicField](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdynamicfield).  
-  
 Essa interface representa um tipo de uma variável.  
   
 ## <a name="syntax"></a>Sintaxe  

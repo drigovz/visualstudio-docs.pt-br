@@ -1,7 +1,7 @@
 ---
 title: Tarefa MakeDir | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2f5fe538d8e2c2976daa5d76d1aea73e0cbec7cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 17c9d16c8ed9d92b6008ae5efd873c60b59643ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473238"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287333"
 ---
 # <a name="makedir-task"></a>Tarefa MakeDir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tarefa MakeDir](https://docs.microsoft.com/visualstudio/msbuild/makedir-task).  
-  
   
 Cria diretórios e, se necessário, qualquer diretório pai.  
   

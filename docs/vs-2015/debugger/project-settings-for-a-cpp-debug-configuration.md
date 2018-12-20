@@ -1,7 +1,7 @@
 ---
 title: Configurações do projeto para uma configuração de depuração de C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -114,21 +114,19 @@ helpviewer_keywords:
 - /MAP linker option
 ms.assetid: 860c7f13-a108-4fe5-8fca-d235cd3ca1cb
 caps.latest.revision: 52
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f92b7e61de269ab12794055870d51f99f3c7995
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 404bbc753b2729ad5ec7625fa01803b8a6bdf5c8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467235"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800790"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Definições do projeto para uma configuração de depuração do C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [configurações do projeto para uma configuração de depuração de C++](https://docs.microsoft.com/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration).  
-  
 Você pode alterar as configurações de projeto para uma configuração de depuração C ou Visual C++ na **páginas de propriedades** caixa de diálogo, conforme discutido na [como: Set Debug and Release Configurations](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram onde localizar configurações relacionadas ao depurador na **páginas de propriedade** caixa de diálogo.  
   
 > [!WARNING]
@@ -184,7 +182,7 @@ Você pode alterar as configurações de projeto para uma configuração de depu
 |**Gerar arquivo de mapa** ([/Map](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63))|Informe ao vinculador para gerar um arquivo de mapa durante a vinculação. A configuração padrão é Não. Para obter mais informações, consulte [/MAP (Gerar Mapfile)](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63).|  
 |**Nome do arquivo do mapa** ([/Map:](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63)*nome*)|Se você escolher Gerar Arquivo de Mapa, poderá especificar o arquivo de mapa nesta caixa. Para obter mais informações, consulte [/MAP (Gerar Mapfile)](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63).|  
 |**Exportações de mapa** ([/MAPINFO:EXPORTS](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b))|Inclui funções exportadas no arquivo de mapa. A configuração padrão é Não. Para obter mais informações, consulte [/MAPINFO (incluir informações em Mapfile)](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b).|  
-|**Assembly Depurável** ([/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b))|Especifica configurações para a opção de /ASSEMBLYDEBUG de vinculador. Os valores possíveis são:<br /><br /> -   **Nenhum atributo debuggable emitido**.<br />-   **Execução de rastreamento e desativação de otimizações (/ /ASSEMBLYDEBUG)**. Essa é a configuração padrão,<br />-   **Nenhum optimizations(/ASSEMBLYDEBUG:DISABLE) de rastreamento e de tempo de execução**.<br />-   **\<Herdar do pai ou padrões de projeto >**.<br />-Para obter mais informações, consulte [/ASSEMBLYDEBUG (Adicionar DebuggableAttribute)](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982).|  
+|**Assembly Depurável** ([/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b))|Especifica configurações para a opção de /ASSEMBLYDEBUG de vinculador. Os valores possíveis são os seguintes:<br /><br /> -   **Nenhum atributo debuggable emitido**.<br />-   **Execução de rastreamento e desativação de otimizações (/ /ASSEMBLYDEBUG)**. Essa é a configuração padrão,<br />-   **Nenhum optimizations(/ASSEMBLYDEBUG:DISABLE) de rastreamento e de tempo de execução**.<br />-   **\<Herdar do pai ou padrões de projeto >**.<br />-Para obter mais informações, consulte [/ASSEMBLYDEBUG (Adicionar DebuggableAttribute)](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982).|  
   
  Você pode alterar essas configurações na pasta Propriedades de Configuração (categoria Depuração) programaticamente usando a interface Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>.  
   

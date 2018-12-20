@@ -1,7 +1,7 @@
 ---
 title: Caixa de diálogo Opções, Projetos e Soluções, Compilar e Executar | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 38374893aea62af1b664065edf0ca9195f3dd301
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9669437ff47bc141c898a61c055b3a0de8d5d235
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475982"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189287"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Caixa de diálogo Opções, Projetos e Soluções, Compilar e Executar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [caixa de diálogo Opções, projetos e soluções, compilação e execução](https://docs.microsoft.com/visualstudio/ide/reference/options-dialog-box-projects-and-solutions-build-and-run).  
-  
   
 Nesta caixa de diálogo, você pode especificar o número máximo de projetos do Visual C++ ou do Visual C# que podem ser compilados ao mesmo tempo, determinados comportamentos de build padrão e algumas configurações de log de build. Para abrir a caixa de diálogo **Opções**, escolha **Ferramentas**, **Opções** na barra de menus. Para acessar esse conjunto de opções, expanda **Projetos e Soluções** e, em seguida, escolha **Compilar e Executar**.  
   

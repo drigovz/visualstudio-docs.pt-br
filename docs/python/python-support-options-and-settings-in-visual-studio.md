@@ -1,7 +1,7 @@
 ---
 title: Opções e configurações para Python
 description: Uma referência para as várias configurações no Visual Studio que se relacionam ao código e projetos Python.
-ms.date: 06/27/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: reference
@@ -19,12 +19,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1de4f6a71394c38ef72224cfeacd23663b0bac7b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: f5b8c6b3860641dafccac28b24a4be141d90eae5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468651"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220050"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opções para o Python no Visual Studio
 
@@ -46,7 +46,7 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 | **Mostrar a Janela de Saída ao criar ambientes virtuais**| On | Desmarque essa opção para impedir que a janela **Saída** seja exibida. |
 | **Mostrar a Janela de Saída ao instalar ou remover pacotes** | On | Desmarque essa opção para impedir que a janela **Saída** seja exibida. |
 | **Sempre executar pip como administrador** | Off | Sempre eleva as operações `pip install` para todos os ambientes. Ao instalar pacotes, o Visual Studio solicitará privilégios de administrador se o ambiente estiver localizado em uma área protegida do sistema de arquivos como *c:\Program Files*. Nesse prompt, você pode optar por sempre elevar `pip install` apenas para esse ambiente específico. Confira [guia Pacotes](python-environments-window-tab-reference.md#packages-tab). |
-| **Gerar automaticamente o BD de conclusão no primeiro uso** | On | *Aplica-se ao Visual Studio 2017 versão 15.5 e anteriores e a versões posteriores ao usar um banco de dados do IntelliSense.* Prioriza a conclusão do banco de dados para uma biblioteca quando você escreve código que a usa. Para saber mais, veja [Referência à janela de ambientes - guia Intellisense](python-environments-window-tab-reference.md). |
+| **Gerar automaticamente o BD de conclusão no primeiro uso** | On | *Aplica-se ao Visual Studio 2017 versão 15.5 e anteriores e a versões posteriores ao usar um banco de dados do IntelliSense.* Prioriza a conclusão do banco de dados para uma biblioteca quando você escreve código que a usa. Confira mais informações na [guia IntelliSense](python-environments-window-tab-reference.md#intellisense-tab). |
 | **Ignorar variáveis PYTHONPATH de todo o sistema** | On | PYTHONPATH é ignorado por padrão porque o Visual Studio fornece um meio mais direto para especificar caminhos de pesquisa em projetos e ambientes. Confira [Caminhos de pesquisa](search-paths.md) para obter detalhes. |
 | **Atualizar os caminhos de pesquisa ao adicionar arquivos vinculados** | On | Quando definido, adicionar um [arquivo vinculado](managing-python-projects-in-visual-studio.md#linked-files) a um projeto atualiza os [caminhos de pesquisa](search-paths.md) para que o IntelliSense possa incluir o conteúdo da pasta do arquivo vinculado em seu banco de dados de conclusão. Desmarque esta opção para excluir o conteúdo do banco de dados de conclusão. |
 | **Avisar quando o módulo importado não puder ser encontrado** | On | Desmarque esta opção para suprimir avisos quando você sabe que um módulo importado não está disponível no momento, mas não afeta a operação do código de outra forma. |
@@ -111,7 +111,7 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 
 | Opção | Padrão | Descrição |
 | --- | --- | --- |
-| **Confirmado pela digitação dos seguintes caracteres** | **{}[]().,:;+-*/%&&#124;^~=<>#@\\** | Esses caracteres normalmente seguem um identificador que pode ser selecionado em uma lista de conclusão, portanto, é conveniente confirmar a conclusão digitando um caractere. Você pode remover ou adicionar caracteres específicos à lista conforme desejado.  |
+| **Confirmado pela digitação dos seguintes caracteres** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | Esses caracteres normalmente seguem um identificador que pode ser selecionado em uma lista de conclusão, portanto, é conveniente confirmar a conclusão digitando um caractere. Você pode remover ou adicionar caracteres específicos à lista conforme desejado.  |
 | **Inserir a conclusão atual de confirmação** | On | Quando definido, a tecla **Enter** escolhe e aplica a conclusão escolhida no momento, assim como acontece com os caracteres acima (mas obviamente, não há um caractere para **Enter** portanto, ele não pode entrar diretamente para essa lista!). |
 | **Adicionar uma nova linha ao pressionar Enter após o fim da palavra totalmente digitada** | Off | Por padrão, se você digitar a palavra inteira que aparece no pop-up de conclusão e pressionar **Enter**, você confirmará a conclusão. Ao definir essa opção, você realmente confirma as conclusões quando termina de digitar o identificador, de modo que **Enter** insere uma nova linha. |
 

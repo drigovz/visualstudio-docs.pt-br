@@ -1,7 +1,7 @@
 ---
 title: Navegar em relações com a API UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ helpviewer_keywords:
 - UML API
 ms.assetid: a4d11d45-b8c0-40f9-a597-363f07659610
 caps.latest.revision: 15
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ae6da2980c55df6eb58686fcdb2c364b9147779
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f8d1392bebf4d2591bbd7e4dc7bd8755c09f2c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463793"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740547"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Navegar em relações com a API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [navegar em relações com a API UML](https://docs.microsoft.com/visualstudio/modeling/navigate-relationships-with-the-uml-api).  
-  
 Um modelo consiste em elementos vinculados por diferentes tipos de relações. Este tópico descreve como navegar no modelo no código do programa.  
   
 ## <a name="traversing-relationships"></a>Relações de atravessamento  

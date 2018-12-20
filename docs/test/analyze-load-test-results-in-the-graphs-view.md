@@ -1,5 +1,5 @@
 ---
-title: Analisar resultados de teste de carga na exibição Grafos do Analisador de Teste de Carga
+title: Analisando resultados de teste de carga na exibição de gráficos do Analisador de Teste de Carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,16 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9dd371d55ee4a59baf800e26b666be28aeb6cbb3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9c635d3a2c21d1ab84feca285c8cea8eb2aac68f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175742"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895074"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analisar resultados do teste de carga na exibição Grafos do Analisador de Teste de Carga
 
 Os resultados de um teste de carga são exibidos como dados em vários painéis diferentes.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Para exibir os resultados do teste como grafos, escolha **Grafos** na barra de ferramentas **teste de carga**. Cada gráfico individual é exibido em um painel, com o nome do gráfico exibido na parte superior em uma lista suspensa. Para exibir um gráfico diferente no painel, escolha um nome de gráfico diferente na lista.
 
@@ -39,7 +41,7 @@ Vários gráficos internos são fornecidos. Você pode usar os gráficos interno
 A tabela a seguir lista os gráficos internos que estão disponíveis para analisar resultados de testes de carga.
 
 |Nome do gráfico|Descrição|
-|----------------|-----------------|
+|-|-|
 |Indicadores-Chave|Contadores que descrevem aspectos básicos do desempenho de teste, como carga do usuário, taxa de transferência e tempo de resposta.|
 |Tempo de Resposta de Teste|Dados sobre quanto tempo leva a execução de testes.|
 |Tempo de Resposta de Página|O tempo médio de resposta para páginas da Web que são acessadas durante o teste de carga.|
@@ -52,7 +54,7 @@ A tabela a seguir lista os gráficos internos que estão disponíveis para anali
 > [!NOTE]
 > Apenas os contadores de desempenho de tempo de resposta podem ser adicionados a um gráfico de tempo de resposta gerado automaticamente.
 
- As informações do contador são exibidas no gráfico e na legenda abaixo dos gráficos. Também é possível ampliar uma seção do gráfico. Para obter mais informações, confira [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+ As informações do contador são exibidas no gráfico e na legenda abaixo dos gráficos. Também é possível ampliar uma seção do gráfico. Para saber mais, confira [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 ## <a name="counters-displayed-in-graphs"></a>Contadores exibidos em grafos
 
@@ -63,7 +65,7 @@ A tabela a seguir lista os gráficos internos que estão disponíveis para anali
  A legenda contém as seguintes colunas:
 
 |Contador|O nome do contador|
-|-------------|-----------------------------|
+|-|-|
 |Instância|O nome da instância do contador.|
 |Categoria|O nome da categoria do contador.|
 |Computador|O nome do computador para o qual o contador é coletado.|
@@ -77,12 +79,11 @@ A tabela a seguir lista os gráficos internos que estão disponíveis para anali
 ## <a name="tasks"></a>Tarefas
 
 |Tarefas|Tópicos associados|
-|-----------|-----------------------|
-|**Personalizar os gráficos usando a legenda:** a legenda da exibição Grafos exibe informações sobre cada contador de desempenho que é associado a um gráfico. Você pode usar a legenda para remover os contadores de desempenho, realçar contadores de desempenho no gráfico e personalizar as opções de plotagem.|-   [Usando a legenda da exibição Grafos para analisar testes de carga](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
+|-|-|
+|**Personalizar os gráficos usando a legenda:** a legenda da exibição de Gráficos exibe informações sobre cada contador de desempenho que é associado a um gráfico. Você pode usar a legenda para remover os contadores de desempenho, realçar contadores de desempenho no gráfico e personalizar as opções de plotagem.|-   [Usando a legenda da exibição Grafos para analisar testes de carga](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
 |**Exibir contadores em gráficos:** você pode adicionar diferentes tipos de dados a um grafo de resultados de testes de carga colocando contadores no gráfico.|-   [Como adicionar e excluir contadores em grafos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Ampliar gráficos:** após a conclusão de um teste de carga, você poderá usar as barras de zoom para ampliar e rolar para uma região do gráfico. Ao ampliar, você pode examinar detalhadamente os dados que foram gerados durante uma execução de teste de carga.|-   [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
 |**Organizar gráficos lado a lado:** você pode organizar grafos de resultados de testes de carga em qualquer um dos diversos padrões. Você pode organizar até quatro grafos lado a lado.||
-|**Modificar a aparência das plotagens do contador de desempenho nos gráficos:** você pode alterar as opções de linha de plotagem dos contadores de desempenho nos gráficos. Isso inclui cor e estilo de linha. Além disso, é possível indicar se deseja especificar automática ou manualmente o intervalo que deseja usar para plotagem do contador de desempenho.|-   [Como especificar opções de gráfico para contadores de representação gráfica](../test/how-to-specify-plot-options-for-graphing-counters.md)|
 |**Criar gráficos personalizados:** você pode projetar gráficos que exibam informações específicas sobre resultados de testes de carga. Você cria um gráfico personalizado especificando os contadores de teste de carga que o gráfico exibirá.|-   [Como criar gráficos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)|
 |**Exportar os dados de contadores de desempenho no grafo:** você pode exportar os dados do grafo para o Microsoft Excel usando o botão **Exportar Dados do Gráfico para o Excel** na barra de ferramentas do **Analisador de Teste de Carga** enquanto está na exibição **Grafos**.||
 

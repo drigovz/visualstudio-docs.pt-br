@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_noinline | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaSymbol::get_noInline method
 ms.assetid: 5c610b78-f1a3-494a-acf8-c42b97935be1
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12a64732b22a97a04c86d75d10c914aedc8ba687
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f51c4e8fd487321dcf82d79e623b4fd80f75d4d1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473290"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809799"
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_noinline](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-noinline).  
-  
 Recupera um sinalizador que especifica se a função foi marcada como não sendo embutido (usando o [noinline](http://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42) atributo).  
   
 ## <a name="syntax"></a>Sintaxe  

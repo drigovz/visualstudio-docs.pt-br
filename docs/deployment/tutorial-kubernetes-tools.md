@@ -9,16 +9,18 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 778ad9112d4133871bd15292847d21af73c3ad86
-ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
+ms.openlocfilehash: 8cf4192ce0f925624dbbe890381d3557f2a27223
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44701703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942927"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Introdução às ferramentas de Kubernetes do Visual Studio
 
 Ferramentas do Visual Studio Kubernetes ajudar a simplificar o desenvolvimento de aplicativos em contêineres Kubernetes de direcionamento. Visual Studio pode criar automaticamente os arquivos de configuração como código necessários para dar suporte à implantação de Kubernetes, como Dockerfiles e gráficos Helm. Você pode depurar seu código em um cluster do serviço de Kubernetes do Azure (AKS) ao vivo usando os espaços de desenvolvimento do Azure ou publicar diretamente em um cluster do AKS de dentro do Visual Studio.
+
+Este tutorial aborda usando o Visual Studio para adicionar suporte a Kubernetes a um projeto e publicar no AKS. Se você estiver interessado principalmente em usar [espaços de desenvolvimento do Azure](http://aka.ms/get-azds) para depurar e testar seu projeto em execução no AKS, você pode ir para o [tutorial do Azure Dev espaços](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio) em vez disso.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -28,9 +30,9 @@ Para aproveitar essa nova funcionalidade, você precisará de:
 
 - O [Kubernetes tools para Visual Studio](https://aka.ms/get-vsk8stools), disponível como um download separado.
 
-- [Docker para Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) instalado em sua estação de trabalho de desenvolvimento (ou seja, em que você executa o Visual Studio), se você quiser criar imagens do Docker, depurar contêineres do Docker em execução localmente ou publicar no AKS.
+- [Docker para Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) instalado em sua estação de trabalho de desenvolvimento (ou seja, em que você executa o Visual Studio), se você quiser criar imagens do Docker, depurar contêineres do Docker em execução localmente ou publicar no AKS. (É o docker *não* necessários para compilar e depurar contêineres do Docker no AKS usando espaços de desenvolvimento do Azure.)
 
-- Se você quiser publicar no AKS do Visual Studio:
+- Se você deseja publicar no AKS do Visual Studio (*não* necessárias para depuração no AKS usando espaços de desenvolvimento do Azure):
 
     1.  O [AKS ferramentas de publicação](https://aka.ms/get-vsk8spublish), disponível como um download separado.
 
@@ -78,31 +80,31 @@ Os arquivos adicionados são:
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Publicar no serviço de Kubernetes do Azure (AKS)
 
-Com todos esses arquivos em vigor, você pode usar o IDE do Visual Studio para escrever e depurar o código do aplicativo, assim como você sempre tenha.
+Com todos esses arquivos em vigor, você pode usar o IDE do Visual Studio para escrever e depurar o código do aplicativo, assim como você sempre tenha. Você também pode usar [espaços de desenvolvimento do Azure](http://aka.ms/get-azds) rapidamente executar e depurar seu código em execução em um cluster AKS. Para obter mais informações, consulte o [tutorial de espaços de desenvolvimento do Azure](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
 
 Uma vez que o código em execução da maneira desejada, você pode publicar diretamente do Visual Studio em um cluster do AKS.
 
-Para fazer isso, você primeiro precisa verificar se você instalou tudo conforme descrito na [pré-requisitos](#prerequisities) seção sob o item para publicar no AKS e percorrer todas as etapas de linha de comando especificadas nos links. Em seguida, configure um perfil de publicação que publica sua imagem de contêiner ao registro de contêiner do Azure (ACR). Em seguida, AKS pode efetuar pull de sua imagem de contêiner do ACR e implantá-lo no cluster.
+Para fazer isso, você primeiro precisa verificar se você instalou tudo conforme descrito na [pré-requisitos](#prerequisites) seção sob o item para publicar no AKS e percorrer todas as etapas de linha de comando especificadas nos links. Em seguida, configure um perfil de publicação que publica sua imagem de contêiner ao registro de contêiner do Azure (ACR). Em seguida, AKS pode efetuar pull de sua imagem de contêiner do ACR e implantá-lo no cluster.
 
 1. Na **Gerenciador de soluções**, clique com botão direito no seu *project* e escolha **publicar**.
 
    ![Captura de tela de publicar o item de menu](media/k8s-tools-publish-project.png)
 
-1. No **Publish** tela, escolha **registro de contêiner** como a publicação de destino e siga os prompts para selecionar o registro de contêiner. Se você ainda não tiver um registro de contêiner, escolha **criar novo registro de contêiner do Azure** criá-lo do Visual Studio. Para obter mais informações, consulte [publicar seu contêiner no registro de contêiner do Azure](#publish-your-container-to-azure-container-registry).
+2. No **Publish** tela, escolha **registro de contêiner** como a publicação de destino e siga os prompts para selecionar o registro de contêiner. Se você ainda não tiver um registro de contêiner, escolha **criar novo registro de contêiner do Azure** criá-lo do Visual Studio. Para obter mais informações, consulte [publicar seu contêiner no registro de contêiner do Azure](#publish-your-container-to-azure-container-registry).
 
    ![Captura de tela da escolha de uma tela de destino de publicação](media/k8s-tools-publish-to-acr.png)
 
-1. No Gerenciador de soluções, clique com botão direito no seu *solução* e clique em **publicar no Azure AKS**.
+3. No Gerenciador de soluções, clique com botão direito no seu *solução* e clique em **publicar no Azure AKS**.
 
    ![Captura de tela de publicar o item de menu do AKS do Azure](media/k8s-tools-publish-solution.png)
 
-1. Escolha sua assinatura e o cluster do AKS, juntamente com o ACR publicar perfil que você acabou de criar. Clique em **OK**.
+4. Escolha sua assinatura e o cluster do AKS, juntamente com o ACR publicar perfil que você acabou de criar. Clique em **OK**.
 
    ![Captura de tela de publicar a tela AKS](media/k8s-tools-publish-to-aks.png)
 
    Isso leva você para o **publicar no Azure AKS** tela.
 
-1.  Escolha o **Helm configurar** link para atualizar a linha de comando usada para instalar os gráficos do Helm no servidor.
+5. Escolha o **Helm configurar** link para atualizar a linha de comando usada para instalar os gráficos do Helm no servidor.
 
    ![Link de captura de tela de configurar o Helm](media/k8s-tools-configure-helm.png)
 
@@ -110,7 +112,7 @@ Para fazer isso, você primeiro precisa verificar se você instalou tudo conform
 
    ![Tela de configurar a captura de tela do Helm](media/k8s-tools-helm-configure-screen.png)
 
-1. Quando estiver pronto para implantar, clique o **publicar** botão para publicar seu aplicativo no AKS.
+6. Quando estiver pronto para implantar, clique o **publicar** botão para publicar seu aplicativo no AKS.
 
    ![Captura de tela de publicar a tela de AKS do Azure](media/k8s-tools-publish-screen.png)
 
@@ -119,3 +121,5 @@ Parabéns! Agora você pode usar todo o poder do Visual Studio para todo o desen
 ## <a name="next-steps"></a>Próximas etapas
 
 Saiba mais sobre o desenvolvimento do Kubernetes no Azure lendo o [documentação do AKS](/azure/aks).
+
+Saiba mais sobre os espaços de desenvolvimento do Azure lendo o [documentação de espaços de desenvolvimento do Azure](http://aka.ms/get-azds)

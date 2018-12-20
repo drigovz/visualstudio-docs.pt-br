@@ -27,16 +27,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb699b02723e88454f26f4b897cfd7ba3ff46592
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425119"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349043"
 ---
 # <a name="understand-build-configurations"></a>Noções sobre configurações de build
 
 É possível armazenar diferentes configurações de propriedades de solução e de projeto para usar em diferentes tipos de builds. Para criar, selecionar, modificar ou excluir uma configuração, é possível usar o **Configuration Manager**. Para abri-lo, na barra de menus, escolha **Build** > **Configuration Manager** ou apenas digite **Configuração** na caixa **Início Rápido**. Também é possível usar a lista **Configurações de Solução** na barra de ferramentas **Padrão** para selecionar uma configuração ou para abrir o **Configuration Manager**.
+
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Configurações de build no Visual Studio para Mac](/visualstudio/mac/configurations).
 
 > [!NOTE]
 > Se não for possível localizar as definições de configuração da solução na barra de ferramentas nem acessar o **Configuration Manager**, as configurações de desenvolvimento [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] poderão ser aplicadas. Para obter mais informações, consulte [Como gerenciar configurações com as configurações para desenvolvedores do Visual Basic aplicadas](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
@@ -92,3 +95,4 @@ A configuração da solução ativa também fornece contexto ao IDE. Por exemplo
 - [Soluções e Projetos](../ide/solutions-and-projects-in-visual-studio.md)
 - [Referência de build do C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Opções de linha de comando do Devenv](../ide/reference/devenv-command-line-switches.md)
+- [Configurações de build (Visual Studio para Mac)](/visualstudio/mac/configurations)

@@ -1,7 +1,7 @@
 ---
 title: METADATA_TYPE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2d8b78f6-0aef-4d79-809a-cff9b2c24659
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8d7b6f6e38a92be62c676e69197d990cb53989db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e8b5cc4c0a067a8add062d2003e991eb8672af5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467582"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732151"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [METADATA_TYPE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/metadata-type).  
-  
 Essa estrutura Especifica informações sobre um tipo de campo tirado de metadados.  
   
 ## <a name="syntax"></a>Sintaxe  

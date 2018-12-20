@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180dc474b2458ec38a8a76ed8f931a592cf29225
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911246"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Como: acessar as fontes internas e ccheme de cores
 O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de fontes e cores que está associado com a janela do editor. Você pode acessar esse esquema por meio de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.
 
  Para usar o esquema de cores e fontes internas, um VSPackage deve:
 
--   Defina uma categoria a ser usado com o serviço de fontes e cores padrão.
+- Defina uma categoria a ser usado com o serviço de fontes e cores padrão.
 
--   Registre-se a categoria com o servidor de fontes e cores padrão.
+- Registre-se a categoria com o servidor de fontes e cores padrão.
 
--   Aconselhamos o IDE que uma janela específica usa os itens de exibição interna e as categorias usando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> interfaces.
+- Aconselhamos o IDE que uma janela específica usa os itens de exibição interna e as categorias usando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> interfaces.
 
- O IDE usa a categoria resultante como um identificador para a janela. Nome da categoria é exibido na **Mostrar configurações de:** caixa de lista suspensa na **fontes e cores** página de propriedades.
+  O IDE usa a categoria resultante como um identificador para a janela. Nome da categoria é exibido na **Mostrar configurações de:** caixa de lista suspensa na **fontes e cores** página de propriedades.
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Para definir uma categoria usando cores e fontes internas
 
@@ -67,15 +67,15 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de
 
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Para iniciar o uso de cores e fontes fornecidas pelo sistema
 
-1.  Criar uma instância da <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interface como parte da implementação e a inicialização da janela.
+1. Criar uma instância da <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interface como parte da implementação e a inicialização da janela.
 
-2.  Chame o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> método para obter uma instância das <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> interface correspondente ao atual <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> instância.
+2. Chame o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> método para obter uma instância das <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> interface correspondente ao atual <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> instância.
 
-3.  Chamar <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> duas vezes.
+3. Chamar <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> duas vezes.
 
-    -   Chamar uma vez com `VSEDITPROPID_ViewGeneral_ColorCategory`como um argumento.
+   - Chamar uma vez com `VSEDITPROPID_ViewGeneral_ColorCategory`como um argumento.
 
-    -   Chamar uma vez com `VSEDITPROPID_ViewGeneral_FontCategory` como um argumento.
+   - Chamar uma vez com `VSEDITPROPID_ViewGeneral_FontCategory` como um argumento.
 
      Isso define e expõe os serviços de fontes e cores padrão como uma propriedade da janela.
 

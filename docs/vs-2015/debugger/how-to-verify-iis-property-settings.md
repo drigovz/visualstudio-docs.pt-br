@@ -1,7 +1,7 @@
 ---
 title: 'Como: verificar as configurações de propriedade do IIS | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,21 +22,19 @@ helpviewer_keywords:
 - properties [debugger], setting with IIS administration tool
 ms.assetid: 9efc50bf-02fb-4750-9b3e-f03c38f10d8b
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46daaa21a75e221a3174092032c3b7b99dee7d59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4639055fe9320c8fd1bf1b2575bca323642dd17f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461726"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742069"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Como verificar as configurações de propriedade do IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: Verifique se as configurações do IIS propriedade](https://docs.microsoft.com/visualstudio/debugger/how-to-verify-iis-property-settings).  
-  
 Você pode definir as propriedades de um aplicativo Web usando a ferramenta de administração do IIS. Essas propriedades devem ser definidas corretamente para que o aplicativo seja executado, de modo que verificar essas configurações geralmente é uma etapa necessária na solução de problemas.  
   
 > [!NOTE]

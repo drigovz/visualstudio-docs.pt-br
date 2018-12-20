@@ -1,7 +1,7 @@
 ---
 title: Função SccWillCreateSccFile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0d7542f0-4351-41b3-b24c-960ab99c05a1
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79fd34f742309fe94a329e75d78a57cf551b3a85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b61e6c1c0cccd90b65142220bde5d595ef98f99b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466144"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759720"
 ---
 # <a name="sccwillcreatesccfile-function"></a>Função SccWillCreateSccFile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [função SccWillCreateSccFile](https://docs.microsoft.com/visualstudio/extensibility/sccwillcreatesccfile-function).  
-  
 Esta função determina se o plug-in de controle do código-fonte suporta a criação do MSSCCPRJ. Arquivos SCC para cada um dos arquivos de determinado.  
   
 ## <a name="syntax"></a>Sintaxe  

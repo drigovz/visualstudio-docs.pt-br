@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4f741b8b47b4ddf5b07cec2a612173a52bf5fbd9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919320"
 ---
 # <a name="develop-tests-from-a-model"></a>Desenvolver testes por meio de um modelo
 Você pode usar os requisitos e modelos de arquitetura para ajudar você a organizar os testes do seu sistema e seus componentes. Essa prática ajuda a garantir que você teste os requisitos que são importantes para os usuários e outros participantes e ajudá-lo a atualizar os testes rapidamente quando os requisitos são alterados. Se você usar [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], você também pode manter os vínculos entre os modelos e os testes.
@@ -59,19 +59,19 @@ Você pode usar os requisitos e modelos de arquitetura para ajudar você a organ
 
 ###### <a name="to-link-tests-to-a-use-case"></a>Para vincular os testes para um caso de uso
 
-1.  No [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], criar um requisito e um conjunto de testes de base nele.
+1. No [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], criar um requisito e um conjunto de testes de base nele.
 
-     O requisito de que você cria é um item de trabalho em [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Pode ser um item de trabalho de história de usuário, requisito ou caso de uso, dependendo do modelo de processo que usa o seu projeto com o Team Foundation. Para obter mais informações, consulte [gerenciamento de projeto de ferramentas sobre Agile e Agile](/azure/devops/boards/backlogs/overview?view=vsts).
+    O requisito de que você cria é um item de trabalho em [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Pode ser um item de trabalho de história de usuário, requisito ou caso de uso, dependendo do modelo de processo que usa o seu projeto com o Team Foundation. Para obter mais informações, consulte [gerenciamento de projeto de ferramentas sobre Agile e Agile](/azure/devops/boards/backlogs/overview?view=vsts).
 
-2.  Vincule o item de trabalho de requisito para um ou mais casos de uso em seu modelo.
+2. Vincule o item de trabalho de requisito para um ou mais casos de uso em seu modelo.
 
-     Em um diagrama de caso de uso, um caso de uso com o botão direito e, em seguida, clique em **Link para o Item de trabalho**.
+    Em um diagrama de caso de uso, um caso de uso com o botão direito e, em seguida, clique em **Link para o Item de trabalho**.
 
-3.  Adicione ao conjunto de testes, casos de teste que verificam se os casos de uso.
+3. Adicione ao conjunto de testes, casos de teste que verificam se os casos de uso.
 
- Normalmente, cada item de trabalho de história ou requisito de usuário será vinculado a vários casos de uso em seu modelo, e cada caso de uso será vinculado a vários requisitos ou histórias de usuários. Isso ocorre porque cada história de usuário ou requisito aborda um conjunto de tarefas que desenvolver vários casos de uso. Por exemplo, em uma iteração inicial do seu projeto, você pode desenvolver a história de usuário básico no qual um cliente pode escolher itens de um catálogo e que eles sejam entregues. Em uma iteração posterior, o texto pode ser que o usuário paga quando concluir a ordem e o fornecedor recebe o dinheiro depois que ele envia as mercadorias.  Cada história adiciona uma cláusula a pós-condição de caso de uso de bens de ordem.
+   Normalmente, cada item de trabalho de história ou requisito de usuário será vinculado a vários casos de uso em seu modelo, e cada caso de uso será vinculado a vários requisitos ou histórias de usuários. Isso ocorre porque cada história de usuário ou requisito aborda um conjunto de tarefas que desenvolver vários casos de uso. Por exemplo, em uma iteração inicial do seu projeto, você pode desenvolver a história de usuário básico no qual um cliente pode escolher itens de um catálogo e que eles sejam entregues. Em uma iteração posterior, o texto pode ser que o usuário paga quando concluir a ordem e o fornecedor recebe o dinheiro depois que ele envia as mercadorias.  Cada história adiciona uma cláusula a pós-condição de caso de uso de bens de ordem.
 
- Você pode criar links separados de requisitos para as cláusulas de pós-condição escrevendo essas cláusulas em comentários separados no diagrama de caso de uso. Você pode vincular cada comentário a um item de trabalho de requisito e vincular o comentário para o caso de uso no diagrama.
+   Você pode criar links separados de requisitos para as cláusulas de pós-condição escrevendo essas cláusulas em comentários separados no diagrama de caso de uso. Você pode vincular cada comentário a um item de trabalho de requisito e vincular o comentário para o caso de uso no diagrama.
 
 ### <a name="base-tests-on-the-requirements-types"></a>Testes de base nos tipos de requisitos
  Os tipos, o que é, as classes, interfaces e enumerações, de um modelo de requisitos descrevem os conceitos e as relações em termos de como os usuários pensam e se comunicar sobre seus negócios. Ele exclui tipos preocupado apenas com o design interno do sistema.
@@ -147,15 +147,15 @@ Assert (countAfter == countBefore = 1);
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Para vincular os testes a um elemento de modelo ou a relação
 
-1.  No [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], criar um requisito e um conjunto de testes de base nele.
+1. No [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], criar um requisito e um conjunto de testes de base nele.
 
-     O requisito de que você cria é um item de trabalho em [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Pode ser um item de trabalho de história de usuário, requisito ou caso de uso, dependendo do modelo de processo que usa o seu projeto com o Team Foundation. Para obter mais informações, consulte [gerenciamento de projeto de ferramentas sobre Agile e Agile](/azure/devops/boards/backlogs/overview?view=vsts).
+    O requisito de que você cria é um item de trabalho em [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Pode ser um item de trabalho de história de usuário, requisito ou caso de uso, dependendo do modelo de processo que usa o seu projeto com o Team Foundation. Para obter mais informações, consulte [gerenciamento de projeto de ferramentas sobre Agile e Agile](/azure/devops/boards/backlogs/overview?view=vsts).
 
-2.  Vincule o item de trabalho de requisito para um ou mais elementos em seu modelo.
+2. Vincule o item de trabalho de requisito para um ou mais elementos em seu modelo.
 
-     Em um diagrama de modelagem, clique com botão direito um elemento, comentário ou relação e, em seguida, clique em **Link para o Item de trabalho**.
+    Em um diagrama de modelagem, clique com botão direito um elemento, comentário ou relação e, em seguida, clique em **Link para o Item de trabalho**.
 
-3.  Adicione ao conjunto de testes, casos de teste que verificam se o requisito expressado no elemento de modelo.
+3. Adicione ao conjunto de testes, casos de teste que verificam se o requisito expressado no elemento de modelo.
 
 ## <a name="see-also"></a>Consulte também
 

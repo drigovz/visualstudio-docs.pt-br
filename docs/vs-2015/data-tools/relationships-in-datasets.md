@@ -1,7 +1,7 @@
 ---
 title: Relacionamentos em conjuntos de dados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,50 +24,48 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08667684b50639c810ef8bb06832bcd609ddc15b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472635"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935400"
 ---
 # <a name="relationships-in-datasets"></a>Relacionamentos em conjuntos de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [relacionamentos em conjuntos de dados](https://docs.microsoft.com/visualstudio/data-tools/relationships-in-datasets).  
-  
   
 Conjuntos de dados que contêm dados relacionados a tabelas usam <xref:System.Data.DataRelation> objetos para representar uma relação pai/filho entre as tabelas e para retornar registros relacionados uns dos outros. Adicionar tabelas relacionadas a conjuntos de dados usando o **Data Source Configuration Wizard**, ou o **Dataset Designer**, cria e configura o <xref:System.Data.DataRelation> objeto para você.  
   
  O <xref:System.Data.DataRelation> objeto executa duas funções:  
   
--   Ele pode disponibilizar os registros relacionados a um registro que você está trabalhando. Ele fornece registros filho se você estiver em um registro pai (<xref:System.Data.DataRow.GetChildRows%2A>) e um registro pai se você estiver trabalhando com um registro filho (<xref:System.Data.DataRow.GetParentRow%2A>).  
+- Ele pode disponibilizar os registros relacionados a um registro que você está trabalhando. Ele fornece registros filho se você estiver em um registro pai (<xref:System.Data.DataRow.GetChildRows%2A>) e um registro pai se você estiver trabalhando com um registro filho (<xref:System.Data.DataRow.GetParentRow%2A>).  
   
--   Ele pode impor restrições de integridade referencial, como excluir registros filho relacionados quando você exclui um registro pai.  
+- Ele pode impor restrições de integridade referencial, como excluir registros filho relacionados quando você exclui um registro pai.  
   
- É importante compreender a diferença entre uma associação verdadeira e a função de um <xref:System.Data.DataRelation> objeto. Em uma associação verdadeira, os registros são tirados das tabelas pai e filho e colocados em um conjunto de registros único e simples. Quando você usa um <xref:System.Data.DataRelation> do objeto, nenhum novo conjunto de registros é criado. Em vez disso, a DataRelation controla a relação entre tabelas e mantém registros pai e filho em sincronia.  
+  É importante compreender a diferença entre uma associação verdadeira e a função de um <xref:System.Data.DataRelation> objeto. Em uma associação verdadeira, os registros são tirados das tabelas pai e filho e colocados em um conjunto de registros único e simples. Quando você usa um <xref:System.Data.DataRelation> do objeto, nenhum novo conjunto de registros é criado. Em vez disso, a DataRelation controla a relação entre tabelas e mantém registros pai e filho em sincronia.  
   
 ## <a name="datarelation-objects-and-constraints"></a>Objetos DataRelation e restrições  
  Um <xref:System.Data.DataRelation> objeto também é usado para criar e impor as restrições a seguir:  
   
--   Uma restrição exclusiva, que garante que uma coluna na tabela contém sem duplicatas.  
+- Uma restrição exclusiva, que garante que uma coluna na tabela contém sem duplicatas.  
   
--   Uma restrição de chave estrangeira, que pode ser usada para manter a integridade referencial entre uma tabela pai e filho em um conjunto de dados.  
+- Uma restrição de chave estrangeira, que pode ser usada para manter a integridade referencial entre uma tabela pai e filho em um conjunto de dados.  
   
- Restrições que você especifica em uma <xref:System.Data.DataRelation> objeto são implementadas automaticamente criando objetos apropriados ou definindo propriedades. Se você cria uma restrição foreign key usando o <xref:System.Data.DataRelation> object, instâncias do <xref:System.Data.ForeignKeyConstraint> classe são adicionados à <xref:System.Data.DataRelation> do objeto <xref:System.Data.DataRelation.ChildKeyConstraint%2A> propriedade.  
+  Restrições que você especifica em uma <xref:System.Data.DataRelation> objeto são implementadas automaticamente criando objetos apropriados ou definindo propriedades. Se você cria uma restrição foreign key usando o <xref:System.Data.DataRelation> object, instâncias do <xref:System.Data.ForeignKeyConstraint> classe são adicionados à <xref:System.Data.DataRelation> do objeto <xref:System.Data.DataRelation.ChildKeyConstraint%2A> propriedade.  
   
- Uma restrição exclusiva é implementada simplesmente definindo a <xref:System.Data.DataColumn.Unique%2A> propriedade de uma coluna de dados para `true` ou pela adição de uma instância das <xref:System.Data.UniqueConstraint> classe para o <xref:System.Data.DataRelation> do objeto <xref:System.Data.DataRelation.ParentKeyConstraint%2A> propriedade. Para obter informações sobre suspender restrições em um conjunto de dados, consulte [desativar restrições ao preencher um conjunto de dados](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
+  Uma restrição exclusiva é implementada simplesmente definindo a <xref:System.Data.DataColumn.Unique%2A> propriedade de uma coluna de dados para `true` ou pela adição de uma instância das <xref:System.Data.UniqueConstraint> classe para o <xref:System.Data.DataRelation> do objeto <xref:System.Data.DataRelation.ParentKeyConstraint%2A> propriedade. Para obter informações sobre suspender restrições em um conjunto de dados, consulte [desativar restrições ao preencher um conjunto de dados](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
   
 ### <a name="referential-integrity-rules"></a>Regras de integridade referencial  
  Como parte da restrição foreign key, você pode especificar regras de integridade referencial que são aplicadas em três pontos:  
   
--   Quando um registro pai é atualizado  
+- Quando um registro pai é atualizado  
   
--   Quando um registro pai é excluído  
+- Quando um registro pai é excluído  
   
--   Quando uma alteração foi aceito ou rejeitada  
+- Quando uma alteração foi aceito ou rejeitada  
   
- As regras que você pode fazer são especificados no <xref:System.Data.Rule> enumeração e estão listadas na tabela a seguir.  
+  As regras que você pode fazer são especificados no <xref:System.Data.Rule> enumeração e estão listadas na tabela a seguir.  
   
 |Regra de restrição de chave estrangeira|Ação|  
 |----------------------------------|------------|  

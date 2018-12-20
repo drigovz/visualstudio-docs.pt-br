@@ -1,7 +1,7 @@
 ---
 title: CANSTOP_REASON | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ea8242e4c7bdd820dd30cfb2c86cde60cda8bcd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 586876131afdb83f7bf9b32e3f565ba95c8a52b5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468202"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744394"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [CANSTOP_REASON](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/canstop-reason).  
-  
 Usado para determinar se um programa pode interromper a execução depois de atingir um ponto específico na execução.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_CANSTOP_REASON {   
+enum enum_CANSTOP_REASON {   
    CANSTOP_ENTRYPOINT = 0x0000,  
    CANSTOP_STEPIN     = 0x0001  
 };  
@@ -42,7 +40,7 @@ typedef DWORD CANSTOP_REASON;
 ```  
   
 ```csharp  
-public enum enum_CANSTOP_REASON {   
+public enum enum_CANSTOP_REASON {   
    CANSTOP_ENTRYPOINT = 0x0000,  
    CANSTOP_STEPIN     = 0x0001  
 };  

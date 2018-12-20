@@ -1,7 +1,7 @@
 ---
 title: Criar e gerenciar caixas de diálogo modais | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b79ec93ae3783355d41d78a25dd5083dd5cd6361
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ef32fa43a1242ce8220f9e6454dbac03f0f5ad7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473867"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736632"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>Criando e gerenciando as caixas de diálogo modais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando e gerenciando as caixas de diálogo Modal](https://docs.microsoft.com/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).  
-  
 Quando você cria uma caixa de diálogo modal dentro do Visual Studio, você deve garantir que a janela pai da caixa de diálogo é desabilitada enquanto a caixa de diálogo é exibida e habilite novamente a janela pai depois que a caixa de diálogo é fechada. Se você não fizer isso, você poderá receber o erro: "Microsoft Visual Studio não pode desligar porque uma caixa de diálogo modal está ativa. Feche a caixa de diálogo e tente novamente."  
   
  Há duas maneiras de fazer isso. A maneira recomendada, se você tiver uma caixa de diálogo do WPF é derivá-lo partir <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>e, em seguida, chame <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> para exibir a caixa de diálogo. Se você fizer isso, você precisa gerenciar o estado modal da janela pai.  

@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_length | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_length method
 ms.assetid: cc62f028-d195-4fbf-93bc-10b08bef52d2
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d30c5500ade8c09daf47d3745c572a61c8944b4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2bd867d59710e2d982846f74b514f99a6b51b048
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466715"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757519"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_length](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-length).  
-  
 Recupera o número de bits ou de bytes de memória usada pelo objeto representado por este símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_length (   
+HRESULT get_length (   
    ULONGLONG* pRetVal  
 );  
 ```  

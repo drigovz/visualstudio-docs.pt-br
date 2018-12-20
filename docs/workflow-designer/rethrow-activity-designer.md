@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c13b629047b73b3f3ee15f2fc25a0120a2c177
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2b1d1832a7c0c44abb1e8c97ec4c8265262d117e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755249"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857536"
 ---
 # <a name="rethrow-activity-designer"></a>Designer de atividade de Relançar
 
@@ -36,7 +36,7 @@ Acesso a **relançar** designer de atividade na **tratamento de erros** categori
 A tabela a seguir mostra o <xref:System.Activities.Statements.Rethrow> propriedades e descreve como eles são usados no designer:
 
 |Nome da Propriedade|Necessária|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica o nome amigável opcional de atividade de <xref:System.Activities.Statements.Rethrow> . O padrão é Relançar.|
 
 ## <a name="see-also"></a>Consulte também

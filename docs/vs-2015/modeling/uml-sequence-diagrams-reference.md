@@ -1,7 +1,7 @@
 ---
 title: 'Diagramas de sequência UML: Referência | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ helpviewer_keywords:
 - UML, sequence diagrams
 ms.assetid: 366fc324-aeeb-4894-bd13-ec2e40754b8e
 caps.latest.revision: 43
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94ae423e74e0d78389a196adf1185ebdfa062069
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c92d9eb8ee7858a036fdbb8dfb621c269e3ed4c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475589"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797020"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>Diagramas de sequência UML: referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [diagramas de sequência UML: referência](https://docs.microsoft.com/visualstudio/modeling/uml-sequence-diagrams-reference).  
-  
 No Visual Studio, uma *diagrama de sequência* mostra uma interação, que representa a sequência de mensagens entre instâncias de classes, componentes e subsistemas de atores. Tempo flui para baixo no diagrama, e mostra o fluxo de controle de um participante para outro. Use diagramas de sequência para visualizar instâncias e eventos, em vez de classes e métodos. Mais de uma instância do mesmo tipo pode aparecer no diagrama. Também pode aparecer mais de uma ocorrência da mesma mensagem.  
   
  Diagramas de sequência UML fazem parte de um modelo UML e existem somente dentro de projetos de modelagem UML. Para criar um diagrama de sequência UML, nos **arquitetura** menu, clique em **UML novo ou diagrama de camada**. Saiba mais sobre como criar e desenhar [diagramas de sequência UML](../modeling/uml-sequence-diagrams-guidelines.md) ou [diagramas de modelagem UML](../modeling/edit-uml-models-and-diagrams.md) em geral.  

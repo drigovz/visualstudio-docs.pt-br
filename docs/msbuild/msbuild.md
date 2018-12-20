@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8de1d8777f7f4b232ed4dcc2dabe69e0c1712fdf
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 7e87b1a71cde4d6fb37e05fa99698b636ff87bf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321236"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876718"
 ---
 # <a name="msbuild"></a>MSBuild
 O [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] é uma plataforma para a criação de aplicativos. Esse mecanismo, que é também conhecido como MSBuild, fornece um esquema XML para um arquivo de projeto que controla como a plataforma de build processa e compila software. O Visual Studio usa o MSBuild, mas ele não depende do Visual Studio. Ao invocar o *msbuild.exe* no seu arquivo de projeto ou solução, você pode organizar e criar produtos em ambientes em que o Visual Studio não está instalado.
@@ -56,7 +56,7 @@ Você pode escrever código no IDE do Visual Studio, mas executar os builds usan
  Para executar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] em um prompt de comando, passe um arquivo de projeto para *MSBuild.exe*, junto com as opções de linha de comando apropriadas. As opções de linha de comando permitem que você defina propriedades, execute destinos específicos e defina outras opções que controlam o processo de build. Por exemplo, você usaria a seguinte sintaxe de linha de comando para criar o arquivo *MyProj.proj* com a propriedade `Configuration` definida como `Debug`.
 
 ```cmd
-MSBuild.exe MyProj.proj /property:Configuration=Debug
+MSBuild.exe MyProj.proj -property:Configuration=Debug
 ```
 
  Para saber mais sobre opções de linha de comando [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], consulte [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).
@@ -170,19 +170,19 @@ Para obter mais informações, consulte [Multiplataforma](../msbuild/msbuild-mul
 
 ## <a name="see-also"></a>Consulte também
 
-|Título|Descrição|
-|-----------|-----------------|
-|[Passo a passo: Criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Mostra como criar um arquivo de projeto básico de forma incremental, usando somente um editor de texto.|
-|[Passo a passo: usando o MSBuild](../msbuild/walkthrough-using-msbuild.md)|Apresenta os blocos de construção do MSBuild e mostra como escrever, manipular e depurar projetos do MSBuild sem fechar o IDE do Visual Studio.|
-|[Conceitos do MSBuild](../msbuild/msbuild-concepts.md)|Apresenta os quatro blocos de construção do MSBuild: propriedades, itens, destinos e tarefas.|
-|[Itens](../msbuild/msbuild-items.md)|Descreve os conceitos gerais por trás do formato do arquivo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e como as partes se encaixam.|
-|[Propriedades do MSBuild](../msbuild/msbuild-properties.md)|Introduz propriedades e coleções de propriedades. Propriedades são pares chave-valor que podem ser usados para configurar builds.|
-|[Destinos](../msbuild/msbuild-targets.md)|Explica como agrupar tarefas em uma ordem específica e habilitar seções do processo de build a ser chamado na linha de comando.|
-|[Tarefas](../msbuild/msbuild-tasks.md)|Mostra como criar uma unidade do código executável que pode ser usado por [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para realizar operações de build atômicas.|
-|[Condições](../msbuild/msbuild-conditions.md)|Discute como usar o atributo `Condition` em um elemento do MSBuild.|
-|[Conceitos avançados](../msbuild/msbuild-advanced-concepts.md)|Apresenta o envio em lote, a execução de transformações, a multiplataforma e outras técnicas avançadas.|
-|[Registrando em log no MSBuild](../msbuild/logging-in-msbuild.md)|Descreve como registrar eventos de build, mensagens e erros.|
-|[Recursos adicionais](../msbuild/additional-msbuild-resources.md)|Lista os recursos de comunidade e suporte para obter mais informações sobre o MSBuild.|
+| Título | Descrição |
+| - | - |
+| [Passo a passo: Criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Mostra como criar um arquivo de projeto básico de forma incremental, usando somente um editor de texto. |
+| [Passo a passo: usando o MSBuild](../msbuild/walkthrough-using-msbuild.md) | Apresenta os blocos de construção do MSBuild e mostra como escrever, manipular e depurar projetos do MSBuild sem fechar o IDE do Visual Studio. |
+| [Conceitos do MSBuild](../msbuild/msbuild-concepts.md) | Apresenta os quatro blocos de construção do MSBuild: propriedades, itens, destinos e tarefas. |
+| [Itens](../msbuild/msbuild-items.md) | Descreve os conceitos gerais por trás do formato do arquivo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e como as partes se encaixam. |
+| [Propriedades do MSBuild](../msbuild/msbuild-properties.md) | Introduz propriedades e coleções de propriedades. Propriedades são pares chave-valor que podem ser usados para configurar builds. |
+| [Destinos](../msbuild/msbuild-targets.md) | Explica como agrupar tarefas em uma ordem específica e habilitar seções do processo de build a ser chamado na linha de comando. |
+| [Tarefas](../msbuild/msbuild-tasks.md) | Mostra como criar uma unidade do código executável que pode ser usado por [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para realizar operações de build atômicas. |
+| [Condições](../msbuild/msbuild-conditions.md) | Discute como usar o atributo `Condition` em um elemento do MSBuild. |
+| [Conceitos avançados](../msbuild/msbuild-advanced-concepts.md) | Apresenta o envio em lote, a execução de transformações, a multiplataforma e outras técnicas avançadas. |
+| [Registrando em log no MSBuild](../msbuild/logging-in-msbuild.md) | Descreve como registrar eventos de build, mensagens e erros. |
+| [Recursos adicionais](../msbuild/additional-msbuild-resources.md) | Lista os recursos de comunidade e suporte para obter mais informações sobre o MSBuild. |
 
 ## <a name="reference"></a>Referência
  [Referência do MSBuild](../msbuild/msbuild-reference.md) Links para tópicos que contêm informações de referência.

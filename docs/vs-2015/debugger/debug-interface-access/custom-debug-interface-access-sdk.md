@@ -1,7 +1,7 @@
 ---
 title: Personalizado (depuração de acesso à Interface SDK) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - Custom symbol
 ms.assetid: a219fc83-d2a8-4bc5-b7e1-bfafeb247f16
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81889dda51c603b7a4e1c56805efb657108b9a5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 644c3989215bfaa2200a2e1506a0ebf0e881d84a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472924"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800374"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Custom (SDK de Acesso à Interface de Depuração)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [personalizado (Depurar SDK de acesso à Interface)](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/custom-debug-interface-access-sdk).  
-  
 Alguns compiladores apresentam símbolos que não são identificados por qualquer um dos tipos de símbolo padrão de léxico. Esses símbolos são identificados por um `SymTagCustom` marca.  
   
 ## <a name="properties"></a>Propriedades  

@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_intro | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_intro method
 ms.assetid: 101afe4a-4c57-45de-87b4-330394c6de10
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc69efcfdfe5430bc2a2c373f5d4bc8f5f9e07c7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4c9a369b5b1f135fdeb139e38d6169ae0843539
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463244"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799659"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_intro](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-intro).  
-  
 Recupera um sinalizador que especifica se a função é uma função virtual apresentando.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_intro (   
+HRESULT get_intro (   
    BOOL* pRetVal  
 );  
 ```  

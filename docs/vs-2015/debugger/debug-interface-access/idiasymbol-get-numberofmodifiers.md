@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_numberOfModifiers | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ dev_langs:
 - C++
 ms.assetid: 61ff7431-1994-4f7e-a182-1817f16f60a9
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 064f536cc1729e93e88943535184a1e270d1346e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 41c197335da3025cbc27dfb6e4bce33e8657efd3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461660"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781226"
 ---
 # <a name="idiasymbolgetnumberofmodifiers"></a>IDiaSymbol::get_numberOfModifiers
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSymbol::get_numberOfModifiers](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-numberofmodifiers).  
-  
 Recupera o número de modificadores que são aplicadas ao tipo original.  
   
 ## <a name="syntax"></a>Sintaxe  

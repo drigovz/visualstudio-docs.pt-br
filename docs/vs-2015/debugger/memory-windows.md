@@ -1,7 +1,7 @@
 ---
 title: Memória Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,24 +29,22 @@ helpviewer_keywords:
 - buffers, viewing
 ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
 caps.latest.revision: 37
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 180abd9aed356613456790a328fb45d1c3ffcf69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 704c0ff20dbd11b4640b2d81670a4cdeaf3f1ea0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463490"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724247"
 ---
 # <a name="memory-windows"></a>Janelas de memória
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibir memória para variáveis no depurador](https://docs.microsoft.com/visualstudio/debugger/memory-windows).  
-  
 O **memória** janela fornece uma exibição no espaço de memória que é usado pelo seu aplicativo. O **Watch** janela, **QuickWatch** caixa de diálogo **Autos** janela, e **Locals** janela Mostrar o conteúdo de variáveis, que são armazenados em locais específicos na memória. Mas o **memória** janela mostra a imagem em grande escala. Esta exibição pode ser conveniente para examinar grandes partes de dados (buffers ou grandes cadeias de caracteres, por exemplo) que não são exibidas corretamente nas outras janelas. No entanto, o **memória** janela não é limitada a exibir dados. Ela exibirá tudo no espaço de memória, não importa se o conteúdo for dados, código ou bits aleatórios de lixo na memória não atribuída.  
   
- O **memória** janela está disponível somente se a depuração do nível de endereços estiver habilitada na **opções**caixa de diálogo**depuração** nó. O **memória** janela não está disponível para o Script ou SQL, que são linguagens que não reconhecem o conceito de memória.  
+ O **memória** janela está disponível somente se a depuração do nível de endereços estiver habilitada na **opções** caixa de diálogo**depuração** nó. O **memória** janela não está disponível para o Script ou SQL, que são linguagens que não reconhecem o conceito de memória.  
   
 ## <a name="opening-a-memory-window"></a>Abrindo uma janela de memória  
   
@@ -93,21 +91,21 @@ O **memória** janela fornece uma exibição no espaço de memória que é usado
   
 #### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>Para alterar o número de colunas na janela de memória  
   
-1.  Na barra de ferramentas na parte superior a **memória** janela, localize a **colunas** lista.  
+1. Na barra de ferramentas na parte superior a **memória** janela, localize a **colunas** lista.  
   
-2.  No **colunas** , selecione o número de colunas que você deseja exibir ou selecione **automático** para ajuste automático para se ajustar à largura da janela.  
+2. No **colunas** , selecione o número de colunas que você deseja exibir ou selecione **automático** para ajuste automático para se ajustar à largura da janela.  
   
- Se você não quiser que o conteúdo do **memória** janela alterar como o seu programa é executado, você pode desativar a avaliação da expressão dinâmica.  
+   Se você não quiser que o conteúdo do **memória** janela alterar como o seu programa é executado, você pode desativar a avaliação da expressão dinâmica.  
   
 #### <a name="to-toggle-live-evaluation"></a>Para ativar/desativar a avaliação dinâmica  
   
-1.  Clique com botão direito do **memória** janela.  
+1. Clique com botão direito do **memória** janela.  
   
-2.  No menu de atalho, clique em **reavaliar automaticamente**.  
+2. No menu de atalho, clique em **reavaliar automaticamente**.  
   
-     Se a avaliação dinâmica estiver ativa, a opção será selecionada e clicar nela a desativará. Se a avaliação dinâmica estiver inativa, a opção não será selecionada e clicar nela a ativará.  
+    Se a avaliação dinâmica estiver ativa, a opção será selecionada e clicar nela a desativará. Se a avaliação dinâmica estiver inativa, a opção não será selecionada e clicar nela a ativará.  
   
- Você pode ocultar ou exibir a barra de ferramentas na parte superior do **memória** janela. Você não terá acesso à caixa de endereço ou outras ferramentas enquanto a barra de ferramentas estiver oculta.  
+   Você pode ocultar ou exibir a barra de ferramentas na parte superior do **memória** janela. Você não terá acesso à caixa de endereço ou outras ferramentas enquanto a barra de ferramentas estiver oculta.  
   
 #### <a name="to-toggle-the-toolbar"></a>Para ativar/desativar a barra de ferramentas  
   

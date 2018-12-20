@@ -1,7 +1,7 @@
 ---
 title: 'Como: Crie trechos XML | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ed45a3cf0be913158ffa3cd82c243fc37aca8ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38bec6de97a0b9d38891046a1a6b57f4d31541bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475866"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818153"
 ---
 # <a name="how-to-create-xml-snippets"></a>Como: Crie snippets XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: criar trechos de código XML](https://docs.microsoft.com/visualstudio/xml-tools/how-to-create-xml-snippets).  
-  
   
 O editor XML pode ser usado para criar novos snippets XML. O editor inclui um snippet XML, chamado “Snippets”, que é um snippet de texto constante para criar novos snippets XML.  
   
@@ -83,13 +81,13 @@ O editor XML pode ser usado para criar novos snippets XML. O editor inclui um sn
   
  O elemento de `Code` inclui três variáveis.  
   
--   $name$ variável é definido pelo usuário. Cria um elemento de `name` , que tem um valor editável que usa padrão “para nomear”. As variáveis definidas pelo usuário são definidos usando o elemento de `Literal` .  
+- $name$ variável é definido pelo usuário. Cria um elemento de `name` , que tem um valor editável que usa padrão “para nomear”. As variáveis definidas pelo usuário são definidos usando o elemento de `Literal` .  
   
--   $selected$ é uma variável predefinido. Representa o texto que foi selecionado no editor XML antes de chamar o snippet. O posicionamento dessa variável determina onde o texto selecionado aparece no snippet de código que circunda a seleção.  
+- $selected$ é uma variável predefinido. Representa o texto que foi selecionado no editor XML antes de chamar o snippet. O posicionamento dessa variável determina onde o texto selecionado aparece no snippet de código que circunda a seleção.  
   
--   $end$ é uma variável predefinido. Quando o usuário pressiona ENTER para concluir editar os campos de snippet de código, essa variável determina onde ao acento circunflexo (^) é movido.  
+- $end$ é uma variável predefinido. Quando o usuário pressiona ENTER para concluir editar os campos de snippet de código, essa variável determina onde ao acento circunflexo (^) é movido.  
   
- O elemento acima de `Code` insira o seguinte texto XML:  
+  O elemento acima de `Code` insira o seguinte texto XML:  
   
 ```  
 <test>  

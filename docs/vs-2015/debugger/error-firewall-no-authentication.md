@@ -1,7 +1,7 @@
 ---
 title: 'Erro: Firewall sem autenticação | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,21 +18,19 @@ dev_langs:
 - C++
 ms.assetid: dda1acb8-bed7-4bc8-9991-9cdc49c2ac1e
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dca0d4421cb8b8b5e720ca079547f13ec75e3705
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b76fbea5871bc4662779098f1d83dab537554e1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464461"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802480"
 ---
 # <a name="error-firewall-no-authentication"></a>Erro: firewall sem autenticação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [erro: Firewall sem autenticação](https://docs.microsoft.com/visualstudio/debugger/error-firewall-no-authentication).  
-  
 O firewall de conexão da internet no computador remoto não está configurado para permitir a depuração remota. Para a depuração remota com `No Authentication`, o msvsmon.exe deve ser adicionado à lista de exceções. Abrir algumas portas de IPSEC pode ser necessário também.  
   
 > [!NOTE]

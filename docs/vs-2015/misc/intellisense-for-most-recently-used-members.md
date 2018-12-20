@@ -1,7 +1,7 @@
 ---
 title: IntelliSense para a maioria dos membros usados recentemente | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,14 +16,14 @@ helpviewer_keywords:
 ms.assetid: fb97c5b8-0b60-4253-b7e4-b8759b54ec40
 caps.latest.revision: 14
 author: BillWagner
-ms.author: billchi
+ms.author: wiwagn
 manager: douge
-ms.openlocfilehash: 9f8b9907425bba5a698f34f6be2dad6f5bc049e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29d5cd359ee53b3fcbe6e27d36e6bb55a3e22ded
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464874"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742456"
 ---
 # <a name="intellisense-for-most-recently-used-members"></a>IntelliSense para membros usados mais recentemente
 Este conteúdo foi movido para [Visual c# IntelliSense](../ide/visual-csharp-intellisense.md).

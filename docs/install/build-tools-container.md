@@ -1,9 +1,10 @@
 ---
 title: Instalar Ferramentas de Build do Visual Studio em um contêiner
+titleSuffix: ''
 description: Saiba como instalar as Ferramentas de Build do Visual Studio em um contêiner do Windows para oferecer suporte a fluxos de trabalho de CI e CD (integração contínua e entrega contínua).
-ms.custom: ''
 ms.date: 04/18/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
@@ -12,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bf1427e71c21fecb0cd3822469b143b9d42df5
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 37ce2fc60ac2a57baddf62e68a900349ed072f4d
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138645"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160082"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalar Ferramentas de Build em um contêiner
 
@@ -57,7 +58,7 @@ As Ferramentas de Build do Visual Studio e, em grande medida, o Visual Studio, e
 
 **No Windows 10**:
 
-1. [Clique com o botão direito do mouse no ícone do Docker para Windows](https://docs.docker.com/docker-for-windows/#docker-settings) na bandeja do sistema e clique em **Configurações...**.
+1. [Clique com o botão direito do mouse no ícone do Docker for Windows](https://docs.docker.com/docker-for-windows/#docker-settings) na bandeja do sistema e clique em **Configurações**.
 2. [Clique na seção Daemon](https://docs.docker.com/docker-for-windows/#docker-daemon).
 3. [Alterne o botão de **Básico**](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) para **Avançado**.
 4. Adicione a seguinte propriedade de matriz JSON para aumentar o espaço em disco para 120 GB, mais que o suficiente para Ferramentas de Build com espaço para expansão.

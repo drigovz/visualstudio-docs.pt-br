@@ -1,7 +1,7 @@
 ---
 title: METADATA_ADDRESS_LOCAL | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d59951fa73b4f5f10ab26abaad65fc2beab54837
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b48d9eb1569e03f5772bcab5163ff81e55b3eff
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474472"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782591"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [METADATA_ADDRESS_LOCAL](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/metadata-address-local).  
-  
 Essa estrutura representa o endereço de uma variável local dentro de um escopo (geralmente uma função ou método).  
   
 ## <a name="syntax"></a>Sintaxe  

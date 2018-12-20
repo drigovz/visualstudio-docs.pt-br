@@ -1,7 +1,7 @@
 ---
 title: A barra de ferramentas Spy + + | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - Spy++ toolbar
 ms.assetid: 949c18fb-bb25-42ed-9130-c4a47869f24d
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6430f8a5698c4b0d2e686370fdd4bce1e98a5827
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05dc7dd74af20c76a3b673d5960cd88331ad7d51
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476303"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763324"
 ---
 # <a name="spy-toolbar"></a>Barra de ferramentas do Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [barra de ferramentas Spy + +](https://docs.microsoft.com/visualstudio/debugger/spy-increment-toolbar).  
-  
 A barra de ferramentas é exibida na barra de menus do Spy + +. Para exibir ou ocultar a barra de ferramentas, nos **modo de exibição** menu, clique em **barra de ferramentas**.  
   
  Os seguintes controles estão disponíveis na barra de ferramentas.  

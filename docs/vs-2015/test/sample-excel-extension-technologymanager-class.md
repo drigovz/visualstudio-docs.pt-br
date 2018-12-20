@@ -1,7 +1,7 @@
 ---
 title: 'Extensão de exemplo do Excel: classe TechnologyManager | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 440591cae5251c614c13738668bbe71d43f90600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b23c3e735aba74d86b31afb4b83862d83bcd2bdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461751"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190574"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Extensão de exemplo do Excel: classe TechnologyManager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [extensão de exemplo do Excel: classe TechnologyManager](https://docs.microsoft.com/visualstudio/test/sample-excel-extension-technologymanager-class).  
-  
 Essa classe estende a classe <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager> e é responsável por fornecer os serviços principais para a extensão [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Embora a classe base tenha muitos métodos, apenas um subconjunto deles é usado neste exemplo.  
   
  Alguns métodos simplesmente retornam um valor da propriedade. Muitos dos métodos destinam-se a permitir que o desenvolvedor substitua o build de algoritmos padrão para o mecanismo de teste de IU codificado. Esses métodos geram uma <xref:System.NotSupportedException> ou retornam `null`, que solicita que a estrutura use o algoritmo padrão.  

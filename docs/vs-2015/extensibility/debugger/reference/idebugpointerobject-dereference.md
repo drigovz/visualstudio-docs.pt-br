@@ -1,7 +1,7 @@
 ---
 title: IDebugPointerObject::Dereference | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 196ec2cc-8569-4780-b217-23b24e7f50ca
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd1c0652a8c1b165ae37756238c5615c4572c886
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40c7b14d4d10e2cf1daee8a70c1d43865ae56d67
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474994"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743197"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPointerObject::Dereference](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugpointerobject-dereference).  
-  
 Obtém o objeto apontado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT DeReference(   
+HRESULT DeReference(   
    DWORD          dwIndex,  
    IDebugObject** ppObject  
 );  

@@ -1,7 +1,7 @@
 ---
 title: IDebugStackFrame2::GetExpressionContext | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: a2604e6a-502d-473b-868f-b11ac64c7a35
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1343118b86325225a499b7caf6d19c31cc84532d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96671c364703faa9bb70cf44e5df6e9d21c9dcfa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465589"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726590"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugStackFrame2::GetExpressionContext](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugstackframe2-getexpressioncontext).  
-  
 Obtém um contexto de avaliação para a avaliação da expressão dentro do contexto atual de um quadro de pilha e thread.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetExpressionContext (   
+HRESULT GetExpressionContext (   
    IDebugExpressionContext2** ppExprCxt  
 );  
 ```  
   
 ```csharp  
-int GetExpressionContext (   
+int GetExpressionContext (   
    out IDebugExpressionContext2 ppExprCxt  
 );  
 ```  

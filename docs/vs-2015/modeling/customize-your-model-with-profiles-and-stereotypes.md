@@ -1,7 +1,7 @@
 ---
 title: Personalizar o modelo com perfis e estereótipos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - UML model, customizing
 ms.assetid: fd607157-0d3a-4583-a84e-427a4b2a5acb
 caps.latest.revision: 20
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2dd494b475b5d9068597857a2f4df12e5fed8e2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33e887764c535083c2449a7d333868b2ccd9c4c5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464494"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727699"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Personalizar o modelo com perfis e estereótipos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [personalizar o modelo com perfis e estereótipos](https://docs.microsoft.com/visualstudio/modeling/customize-your-model-with-profiles-and-stereotypes).  
-  
 No Visual Studio, você pode adaptar os elementos de modelo UML padrão, como classes e componentes, personalizá-los para fins específicos. Você pode aplicar uma *estereótipo* a um elemento de modelo que pode alterar a lista do elemento de propriedades. Estereótipos são definidos dentro de coleções chamadas *perfis*.  
   
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

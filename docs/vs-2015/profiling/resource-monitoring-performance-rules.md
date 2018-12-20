@@ -1,7 +1,7 @@
 ---
 title: Regras de Desempenho do Monitoramento de Recurso | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f0f77faf-0a05-4718-a2c5-47934be40868
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2bd11b8b18e5dd4e3f6625b1b269d104a6fd5a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 258cb329adac23ea1bd463e22a0fd6ada7b526bc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472668"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745628"
 ---
 # <a name="resource-monitoring-performance-rules"></a>Regras de desempenho do monitoramento de recurso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [regras de desempenho de monitoramento de recurso](https://docs.microsoft.com/visualstudio/profiling/resource-monitoring-performance-rules).  
-  
 As mensagens de desempenho da categoria Monitoramento de Recurso fornecem dados adicionais sobre o desempenho do aplicativo. É possível utilizar esses dados para analisar problemas de desempenho. Essas regras são informativas e relatadas para todas as execuções de criação de perfil.  
   
 |||  

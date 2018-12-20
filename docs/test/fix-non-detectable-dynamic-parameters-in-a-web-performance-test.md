@@ -1,5 +1,5 @@
 ---
-title: Corrigir parâmetros dinâmicos não detectáveis em um teste de desempenho Web no Visual Studio
+title: Corrigir parâmetros dinâmicos não detectáveis em um teste de desempenho Web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 379291059157980a86d0379c69c0d592eee83a99
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 54f0b23da975738cf1dd33e03ef577efbfc2be38
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177819"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063775"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corrigir parâmetros dinâmicos não detectáveis em um teste de desempenho Web
 
@@ -30,6 +30,8 @@ Alguns sites usam parâmetros dinâmicos para processar algumas de suas solicita
 -   Valores de parâmetro dinâmicos que são definidos como cadeias de caracteres de consulta ou parâmetros de postagem de formulário Eles são tratados pela detecção de parâmetro dinâmico depois que você registra um teste de desempenho Web.
 
 Alguns tipos de parâmetros dinâmicos não são detectados. Um parâmetro dinâmico não detectado irá fazer com que seu teste de desempenho na Web falhe porque o valor dinâmico provavelmente será diferente sempre que o teste for executado. Para manipular corretamente esses parâmetros, você pode adicionar regras de extração aos parâmetros dinâmicos em seu teste de desempenho na Web manualmente.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-and-run-a-web-app-with-dynamic-parameters"></a>Criar e executar um aplicativo Web com parâmetros dinâmicos
 
@@ -237,7 +239,7 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
      ![Substituir o texto pelo parâmetro](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     O parâmetro QueryString na solicitação *JScriptQuery.aspx* é atualizado usando o novo parâmetro de contexto: CustomQueryString=jScriptQueryString___{{Param0}}.
+     O parâmetro QueryString na solicitação *JScriptQuery.aspx* é atualizado usando o novo parâmetro de contexto:  CustomQueryString=jScriptQueryString___{{Param0}}.
 
      ![Parâmetro aplicado a querystring](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
@@ -249,7 +251,7 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
 ## <a name="qa"></a>PERGUNTAS E RESPOSTAS
 
-### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>P: Posso executar novamente a detecção de parâmetro dinâmico se meu aplicativo Web for modificado?
+### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>P: Posso executar novamente a detecção de parâmetro dinâmico se meu aplicativo Web é modificado?
 
  **R:** Sim, use o seguinte procedimento:
 
@@ -263,6 +265,6 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
 2.  Marque ou desmarque a caixa de seleção ao lado dos parâmetros dinâmicos que você gostaria de correlacionar automaticamente. Por padrão, todos os parâmetros dinâmicos são verificados.
 
-### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>P: Eu preciso de configurar o Visual Studio para detectar parâmetros dinâmicos?
+### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>P: Preciso configurar o Visual Studio para detectar parâmetros dinâmicos?
 
  **R:** A configuração padrão do Visual Studio é detectar parâmetros dinâmicos quando você registra um teste de desempenho Web. No entanto, mesmo se houver opções do Visual Studio configuradas para não detectar parâmetros dinâmicos ou se o aplicativo Web testado for modificado com parâmetros dinâmicos adicionais, você ainda poderá executar a detecção de parâmetro dinâmico do Editor de Testes de Desempenho Web.

@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Getenumdebugstreams | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSession::getEnumDebugStreams method
 ms.assetid: d294954b-80e9-476c-b9f0-5ca6fd575f68
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71bdee73fb0c102f073796a3aeae3ee02c5491d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f40d391e44e5a50596216d683c19fea97614a330
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463311"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732270"
 ---
 # <a name="idiasessiongetenumdebugstreams"></a>IDiaSession::getEnumDebugStreams
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasession:: Getenumdebugstreams](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-getenumdebugstreams).  
-  
 Recupera uma sequência enumerada de fluxos de dados de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT getEnumDebugStreams (   
+HRESULT getEnumDebugStreams (   
    IDiaEnumDebugStreams** ppEnumDebugStreams  
 )  
 ```  

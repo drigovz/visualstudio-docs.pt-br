@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_libraryname | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_libraryName method
 ms.assetid: d04ddd9a-812d-46e4-bd39-28bdf3edfb70
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23491ca9cc73a388ef4b665c7553ecee24a20647
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1976f14de0b96e39fa8b3984d3d2baa867f64d8b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475852"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785190"
 ---
 # <a name="idiasymbolgetlibraryname"></a>IDiaSymbol::get_libraryName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_libraryname](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-libraryname).  
-  
 Recupera o nome do arquivo do arquivo de biblioteca ou objeto do qual o objeto foi carregado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_libraryName (   
+HRESULT get_libraryName (   
    BSTR* pRetVal  
 );  
 ```  

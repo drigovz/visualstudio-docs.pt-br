@@ -1,7 +1,7 @@
 ---
 title: 'Como: registrar os tipos de arquivo do Editor | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ab70770bfc764bba01aba3a40918fdf77ae490d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 39b1cde8dec71df9cb85bf737c23c883fbdcd615
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468319"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777247"
 ---
 # <a name="how-to-register-editor-file-types"></a>Como: registrar os tipos de arquivo do Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: registrar tipos de arquivo do Editor](https://docs.microsoft.com/visualstudio/extensibility/how-to-register-editor-file-types).  
-  
 A maneira mais fácil de registrar tipos de arquivo do editor é usando os atributos de registro fornecidos como parte do [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] pacote framework (MPF) classes gerenciadas. Se você estiver implementando seu pacote no formato nativo [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], você também pode escrever um script de registro que registra seu editor e aos ramais associados.  
   
 ## <a name="registration-using-mpf-classes"></a>Usando Classes MPF de registro  

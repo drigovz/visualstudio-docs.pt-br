@@ -1,7 +1,7 @@
 ---
 title: Coletando dados de tempo detalhados usando a instrumentação | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - instrumentation profiling method
 ms.assetid: e9deb370-c459-45ac-84d3-14d646590d05
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae3d2335c73f68f790e9b3def8f2a1d4ced7c969
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 53a73bca3e8f868d94a548d9e45416dcd68f0553
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587433"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747010"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Coletando dados de tempo detalhados usando a instrumentação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [coletando dados de tempo detalhados usando instrumentação](https://docs.microsoft.com/visualstudio/profiling/collecting-detailed-timing-data-by-using-instrumentation).  
-  
 O método de instrumentação das Ferramentas de Criação [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] injeta código de criação de perfil em uma cópia de um módulo. O código registra cada entrada, saída e a chamada de função das funções no módulo durante uma execução de criação de perfil. O método de instrumentação é útil para coletar informações detalhadas de tempo sobre uma seção do seu código e para compreender o impacto das operações de entrada e saída sobre o desempenho do aplicativo.  
   
  É possível especificar o método de amostragem usando um dos seguintes procedimentos:  
@@ -42,9 +40,9 @@ O método de instrumentação das Ferramentas de Criação [!INCLUDE[vsprvs](../
 ## <a name="common-tasks"></a>Tarefas comuns  
  É possível especificar outras opções na caixa de diálogo _Sessão de Desempenho_**Páginas de Propriedades** da sessão de desempenho. Para abrir essa caixa de diálogo:  
   
--   No **Gerenciador de Desempenho**, clique com o botão direito do mouse no nome da sessão de desempenho e clique em **Propriedades**.  
+- No **Gerenciador de Desempenho**, clique com o botão direito do mouse no nome da sessão de desempenho e clique em **Propriedades**.  
   
- As tarefas na tabela a seguir descrevem as opções que podem ser especificadas na caixa de diálogo _Sessão de Desempenho_**Páginas de Propriedades** quando você cria o perfil usando o método de instrumentação.  
+  As tarefas na tabela a seguir descrevem as opções que podem ser especificadas na caixa de diálogo _Sessão de Desempenho_**Páginas de Propriedades** quando você cria o perfil usando o método de instrumentação.  
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  

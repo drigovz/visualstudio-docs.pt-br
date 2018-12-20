@@ -1,7 +1,7 @@
 ---
 title: Elementos do Shell isolado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9edba9d02b0c02321cd468cdc75630be92d53fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e567fc212b9981d925fc11e8e0ae48132b3b05bf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473606"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816808"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Elementos do Shell isolado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elementos do Shell isolado](https://docs.microsoft.com/visualstudio/extensibility/elements-of-the-isolated-shell).  
-  
 Você pode modificar as configurações do registro, configurações de tempo de execução e ponto de entrada do aplicativo de seu aplicativo de shell isolado e seu. VSCT,. pkgdef, and.pkgundef arquivos.  
   
 ## <a name="registry-settings"></a>Configurações do registro  
@@ -47,11 +45,11 @@ Você pode modificar as configurações do registro, configurações de tempo de
 ## <a name="run-time-settings"></a>Configurações de tempo de execução  
  Quando um usuário inicia o aplicativo de shell isolado, ele chama o ponto de entrada do início do shell do Visual Studio. Configurações do aplicativo são definidas quando o aplicativo é iniciado, da seguinte maneira:  
   
-1.  Shell do Visual Studio verifica o registro de aplicativo para chaves específicas. Se a configuração para uma chave for especificada na chamada para o ponto de entrada inicial, em seguida, esse valor substitui o valor no registro.  
+1. Shell do Visual Studio verifica o registro de aplicativo para chaves específicas. Se a configuração para uma chave for especificada na chamada para o ponto de entrada inicial, em seguida, esse valor substitui o valor no registro.  
   
-2.  Se o ponto de registro nem a entrada de parâmetro especifica o valor de uma configuração, o valor padrão para a configuração é usado.  
+2. Se o ponto de registro nem a entrada de parâmetro especifica o valor de uma configuração, o valor padrão para a configuração é usado.  
   
- Quando um usuário inicia o aplicativo da linha de comando, todos os comutadores de linha de comando são passados para o shell do Visual Studio, que trata da mesma maneira que faz do Devenv. Para obter mais informações sobre opções do Devenv, consulte [opções de linha de comando Devenv](../ide/reference/devenv-command-line-switches.md) e [opções de linha de comando Devenv para desenvolvimento de VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Para obter mais informações sobre como um pacote registra para opções de linha de comando, consulte [Adicionando opções de linha de comando](../extensibility/adding-command-line-switches.md).  
+   Quando um usuário inicia o aplicativo da linha de comando, todos os comutadores de linha de comando são passados para o shell do Visual Studio, que trata da mesma maneira que faz do Devenv. Para obter mais informações sobre opções do Devenv, consulte [opções de linha de comando Devenv](../ide/reference/devenv-command-line-switches.md) e [opções de linha de comando Devenv para desenvolvimento de VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Para obter mais informações sobre como um pacote registra para opções de linha de comando, consulte [Adicionando opções de linha de comando](../extensibility/adding-command-line-switches.md).  
   
 ## <a name="the-start-entry-point"></a>O ponto de entrada inicial  
  O arquivo Appenvstub.dll contém pontos de entrada para acessar o shell isolado. Quando o aplicativo é iniciado, ele chama o ponto de entrada de início de Appenvstub.dll.  

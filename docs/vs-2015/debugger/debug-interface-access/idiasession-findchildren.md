@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Findchildren | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSession::findChildren method
 ms.assetid: 5d19046f-f668-4aa9-8788-95cda9a98997
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97fed0f8ce7ff0712054b2aa3408217efe39f706
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 71a200d04da6ff79406f54feee05b73be4e6f689
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461142"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782811"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasession:: Findchildren](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findchildren).  
-  
 Recupera todos os filhos de um identificador do pai especificado que corresponde ao tipo de nome e o símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findChildren (   
+HRESULT findChildren (   
    IDiaSymbol*       parent,  
    SymTagEnum        symtag,  
    LPCOLESTR         name,  

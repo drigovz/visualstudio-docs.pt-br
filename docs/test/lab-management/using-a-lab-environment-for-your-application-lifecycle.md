@@ -1,5 +1,5 @@
 ---
-title: Usar um ambiente de laboratório para operações de desenvolvimento no Visual Studio
+title: Usar um ambiente de laboratório para DevOps
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 66ed9323b9298f588ad1f29267d88630fae0f39b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 45be33245e559cb5027124b4678984ece076e1cf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321171"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061140"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar um ambiente de laboratório para suas operações de desenvolvimento
 
@@ -36,9 +36,9 @@ Aqui estão exemplos de topologias comuns de ambientes de laboratório:
 |![Ambiente de laboratório de nuvem](../media/topology_cloud.png)| Esse ambiente de laboratório fornece funcionalidades e recursos semelhantes que a _topologia de rede_, mas remove a necessidade de máquinas virtuais ou computadores físicos em execução em um ambiente local, o que pode reduzir o tempo de configuração, simplificar a manutenção e minimizar o custo. Configurar vários sites e máquinas virtuais, junto o serviço de rede personalizado, é rápido e fácil em um ambiente de nuvem como o Microsoft Azure.|
 |![Ambiente de laboratório de cliente-servidor](../media/topology_clientserver.png)| Este ambiente de laboratório te uma *topologia cliente/servidor*, frequentemente usada para testar um aplicativo com componentes de servidor e de cliente. Em uma topologia cliente/servidor, todos os computadores cliente e servidor usados para testar seu aplicativo estão em seu ambiente de laboratório. Quando você usa essa topologia, pode coletar dados de teste de cada computador que impacta seus testes.|
 
-|   |   |
+| | |
 |---|---|
-|  ![ícone de câmera para vídeo](../../install/media/video-icon.png)  |    [Assistir a um vídeo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sobre como gerenciar ambientes de laboratório para teste. |
+| ![ícone de câmera para vídeo](../../install/media/video-icon.png) | [Assistir a um vídeo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sobre como gerenciar ambientes de laboratório para teste. |
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Usar a nuvem com o Azure Pipelines ou o Team Foundation Server Build and Release
 
@@ -77,15 +77,15 @@ Há dois tipos de ambientes de laboratório que você pode criar com o Lab Manag
 
 **Ambientes SCVMM:** podem conter apenas computadores virtuais gerenciados pelo SCVMM (System Center Virtual Machine Manager), ou seja, as máquinas virtuais em ambientes SCVMM somente podem executar a estrutura de virtualização Hyper-V. Entretanto, ambientes SCVMM fornecem os seguintes recursos de automação e gerenciamento, que não estão disponíveis nos ambientes padrão:
 
-- **Instantâneos do ambiente:** instantâneos de ambiente contêm o estado de um ambiente de laboratório, para que você possa restaurar rapidamente um ambiente limpo ou salvar o estado de um ambiente que foi modificado. Você também pode usar um fluxo de trabalho compilar/implantar/testar para automatizar o processo de salvar e restaurar instantâneos de ambiente.
+- **Instantâneos de ambiente:** Os instantâneos de ambiente contêm o estado de um ambiente de laboratório, para que você possa restaurar rapidamente um ambiente limpo ou salvar o estado de um ambiente modificado. Você também pode usar um fluxo de trabalho compilar/implantar/testar para automatizar o processo de salvar e restaurar instantâneos de ambiente.
 
-- **Ambientes armazenados:** você pode armazenar uma cópia de um ambiente SCVMM e, em seguida, implantar várias cópias desse ambiente.
+- **Ambientes armazenados:** Você pode armazenar uma cópia de um ambiente SCVMM e, em seguida, implantar várias cópias desse ambiente.
 
-- **Isolamento de rede:** o isolamento de rede permite executar simultaneamente várias cópias idênticas de um ambiente SCVMM sem conflitos com o nome do computador.
+- **Isolamento de rede:** O isolamento de rede permite executar simultaneamente várias cópias idênticas de um ambiente SCVMM sem conflitos com o nome do computador.
 
-- **Modelos de máquina virtual:** um modelo de máquina virtual é uma máquina virtual que teve seu nome e outros identificadores removidos. Quando um modelo de VM é implantado em um ambiente SCVMM, o Microsoft Test Manager gera novos identificadores. Isso permite implantar várias cópias de uma máquina virtual em um mesmo ambiente ou vários ambientes. Em seguida, executar as máquinas virtuais simultaneamente.
+- **Modelos de máquina virtual:** Um modelo de máquina virtual é uma máquina virtual que teve seu nome e outros identificadores removidos. Quando um modelo de VM é implantado em um ambiente SCVMM, o Microsoft Test Manager gera novos identificadores. Isso permite implantar várias cópias de uma máquina virtual em um mesmo ambiente ou vários ambientes. Em seguida, executar as máquinas virtuais simultaneamente.
 
-- **Máquinas Virtuais Armazenadas:** uma máquina virtual armazenada em sua biblioteca de projeto que inclui identificadores exclusivos.
+- **Máquinas Virtuais Armazenadas:** Uma máquina virtual armazenada em sua biblioteca de projeto que inclui identificadores exclusivos.
 
 > [!NOTE]
 > O Lab Management não dá suporte ao SCVMM 2016.
@@ -95,7 +95,7 @@ Para saber mais sobre SCVMM, veja [Virtual Machine Manager](/azure/devops/pipeli
 Ambientes padrão e SCVMM oferecem suporte a vários dos mesmos recursos. No entanto, há duas diferenças importantes a se considerar. A tabela a seguir compara os recursos disponíveis para ambientes padrão e SCVMM.
 
 |Recurso|Ambiente SCVMM|Ambientes padrão|
-|----------------|------------------------|---------------------------|
+|-|------------------------|-|
 |**Teste**|||
 |Executar testes manuais|Com suporte|Com suporte|
 |Executar IU codificado e outros testes automáticos|Com suporte|Com suporte|
@@ -117,7 +117,7 @@ Ambientes padrão e SCVMM oferecem suporte a vários dos mesmos recursos. No ent
 Aqui estão alguns dos conceitos adicionais com que deve familiarizar-se antes de continuar:
 
 |Termo|Descrição|
-|----------|-----------------|
+|-|-----------------|
 |Centro de laboratório|A área do Microsoft Test Manager em que você cria e gerencia ambientes de laboratório.|
 |Laboratório de projeto do Azure DevOps|A coleção de ambientes de laboratório que foi configurada para que você possa conectar-se a ela e executar suas máquinas virtuais.|
 |Biblioteca de projeto do Azure DevOps|Um arquivo de máquinas virtuais armazenadas, modelos e ambientes de laboratório armazenados foi importado em um grupo de hosts do seu projeto. Você pode usar os itens em sua biblioteca com ambientes SCVMM; entretanto, você não pode adicioná-los diretamente em um ambiente padrão. Você não pode executar os itens em sua biblioteca; ao invés disso, você os utiliza para implantar um novo ambiente.|

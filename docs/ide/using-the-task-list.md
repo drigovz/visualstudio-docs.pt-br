@@ -16,16 +16,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a156e7f016c0966321240f5ae2362f2bc161e7
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 7766a7fd935cc1e1131c4780a5a88ef6fa54e838
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336065"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349382"
 ---
 # <a name="use-the-task-list"></a>Usar a Lista de Tarefas
 
 Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens, como `TODO` e `HACK`, ou tokens personalizados, e para gerenciar atalhos que levarão você diretamente a um local predefinido no código. Clique no item na lista para ir até seu local no código-fonte.
+
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Comentários da tarefa (Visual Studio para Mac)](/visualstudio/mac/task-comments).
 
 ## <a name="the-task-list-window"></a>A janela Lista de Tarefas
 
@@ -65,9 +68,9 @@ Uma vez que `TODO` é um token pré-definido, esse comentário aparece como uma 
 
 ### <a name="custom-tokens"></a>Tokens personalizados
 
-Por padrão, o Visual Studio inclui os seguintes tokens: `HACK`, `TODO`, `UNDONE` e `NOTE`. Não diferenciam maiúsculas de minúsculas.
+Por padrão, o Visual Studio inclui os seguintes tokens: `HACK`, `TODO`, `UNDONE` e `UnresolvedMergeConflict`. Não diferenciam maiúsculas de minúsculas. Também é possível criar seus próprios tokens personalizados.
 
-Também é possível criar seus próprios tokens personalizados. Para criar um token personalizado:
+Para criar um token personalizado:
 
 1. No menu **Ferramentas**, escolha **Opções**.
 
@@ -77,9 +80,11 @@ Também é possível criar seus próprios tokens personalizados. Para criar um t
 
    ![Lista de Tarefas do Visual Studio](../ide/media/vs2015_task_list_options.png)
 
-3. Na categoria **Tokens**, na caixa de texto **Nome**, insira o nome do seu token, por exemplo, **BUG**.
+3. Na caixa de texto **Nome**, insira o nome do seu token, por exemplo, **BUG**.
 
-4. Na lista suspensa **Prioridade**, escolha uma prioridade padrão para o novo token. Escolha o botão **Adicionar**.
+4. Na lista suspensa **Prioridade**, escolha uma prioridade padrão para o novo token.
+
+5. Escolha **Adicionar**.
 
 ### <a name="c-todo-comments"></a>Comentários TODO do C++
 
@@ -102,3 +107,4 @@ Para navegar pelos atalhos no código, escolha um atalho na lista e escolha **Pr
 ## <a name="see-also"></a>Consulte também
 
 - [Caixa de diálogo Lista de Tarefas, Ambiente, Opções](../ide/reference/task-list-environment-options-dialog-box.md)
+- [Comentários da tarefa (Visual Studio para Mac)](/visualstudio/mac/task-comments)

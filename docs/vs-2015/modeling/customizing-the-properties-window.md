@@ -1,7 +1,7 @@
 ---
 title: Personalizando a janela Propriedades | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a5ae14866780be08633f5a7cf07f70c5b94bcca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab8f1e85bec4c8a12a122030d2b9487a13e826a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468283"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845739"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizando a janela de propriedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Personalizando a janela propriedades](https://docs.microsoft.com/visualstudio/modeling/customizing-the-properties-window).  
-  
 Você pode personalizar a aparência e comportamento da janela Propriedades em sua linguagem específica de domínio (DSL) em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Em sua definição de DSL, você pode definir propriedades de domínio em cada classe de domínio. Por padrão, quando você seleciona uma instância da classe, em um diagrama ou no Gerenciador de modelos, todas as propriedades de domínio é listada na janela Propriedades. Isso permite que você consulte e edite os valores das propriedades de domínio, mesmo se você não tiver mapeado-los para os campos de forma no diagrama.  
   
 ## <a name="names-descriptions-and-categories"></a>Nomes, descrições e categorias  
@@ -35,11 +33,11 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
   
  **Descrição**. A descrição de uma propriedade de domínio aparece em dois lugares:  
   
--   Na parte inferior da janela Propriedades quando o usuário seleciona a propriedade. Você pode usá-lo para explicar ao usuário o que representa a propriedade.  
+- Na parte inferior da janela Propriedades quando o usuário seleciona a propriedade. Você pode usá-lo para explicar ao usuário o que representa a propriedade.  
   
--   No código do programa gerado. Se você usar os recursos de documentação para extrair a documentação da API, ele será exibido como a descrição dessa propriedade na API.  
+- No código do programa gerado. Se você usar os recursos de documentação para extrair a documentação da API, ele será exibido como a descrição dessa propriedade na API.  
   
- **Categoria**. Uma categoria é um título na janela Propriedades.  
+  **Categoria**. Uma categoria é um título na janela Propriedades.  
   
 ## <a name="exposing-style-features"></a>Expor os recursos de estilo  
  Alguns dos recursos dinâmicos de elementos gráficos podem ser representado ou *exposto* como propriedades de domínio. Um recurso que foi exposto dessa maneira pode ser atualizado pelo usuário e muito mais facilidade de atualizar pelo código do programa.  
@@ -103,38 +101,38 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
   
  No entanto, você pode especificar os editores e os tipos seguintes:  
   
-1.  Outro editor que é usado com um tipo padrão. Por exemplo, você pode especificar um editor de caminho de arquivo para uma propriedade de cadeia de caracteres.  
+1. Outro editor que é usado com um tipo padrão. Por exemplo, você pode especificar um editor de caminho de arquivo para uma propriedade de cadeia de caracteres.  
   
-2.  Um tipo externo para a propriedade de domínio e um editor para ele.  
+2. Um tipo externo para a propriedade de domínio e um editor para ele.  
   
-3.  Um editor do .NET, como o editor de caminho de arquivo, ou você pode criar sua própria propriedade personalizada editor.  
+3. Um editor do .NET, como o editor de caminho de arquivo, ou você pode criar sua própria propriedade personalizada editor.  
   
-     A conversão entre um tipo externo e um tipo como cadeia de caracteres, que tem um editor padrão.  
+    A conversão entre um tipo externo e um tipo como cadeia de caracteres, que tem um editor padrão.  
   
- Em uma DSL, uma *tipo externo* é qualquer tipo que não é um dos tipos simples (como Int32 ou boolianos) ou cadeia de caracteres.  
+   Em uma DSL, uma *tipo externo* é qualquer tipo que não é um dos tipos simples (como Int32 ou boolianos) ou cadeia de caracteres.  
   
 #### <a name="to-define-a-domain-property-that-has-an-external-type"></a>Para definir uma propriedade de domínio que tem um tipo externo  
   
-1.  No **Gerenciador de soluções**, adicione uma referência ao assembly (DLL) que contém o tipo externo, o **Dsl** projeto.  
+1. No **Gerenciador de soluções**, adicione uma referência ao assembly (DLL) que contém o tipo externo, o **Dsl** projeto.  
   
-     O assembly pode ser um assembly .NET ou um assembly fornecido por você.  
+    O assembly pode ser um assembly .NET ou um assembly fornecido por você.  
   
-2.  Adicione o tipo para o **tipos de domínio** lista, a menos que você já tiver feito isso.  
+2. Adicione o tipo para o **tipos de domínio** lista, a menos que você já tiver feito isso.  
   
-    1.  Abra o Dsldefinition e, na **Gerenciador de DSL**, clique com botão direito no nó raiz e, em seguida, clique em **adicionar novo tipo externo**.  
+   1.  Abra o Dsldefinition e, na **Gerenciador de DSL**, clique com botão direito no nó raiz e, em seguida, clique em **adicionar novo tipo externo**.  
   
-         Uma nova entrada aparece sob o **tipos de domínio** nó.  
+        Uma nova entrada aparece sob o **tipos de domínio** nó.  
   
-        > [!WARNING]
-        >  O item de menu não está no nó raiz do DSL, o **tipos de domínio** nó.  
+       > [!WARNING]
+       >  O item de menu não está no nó raiz do DSL, o **tipos de domínio** nó.  
   
-    2.  Na janela Propriedades, defina o nome e o namespace do novo tipo.  
+   2.  Na janela Propriedades, defina o nome e o namespace do novo tipo.  
   
-3.  Adicione uma propriedade de domínio a uma classe de domínio da maneira usual.  
+3. Adicione uma propriedade de domínio a uma classe de domínio da maneira usual.  
   
-     Na janela Propriedades, selecione o tipo externo na lista suspensa na **tipo** campo.  
+    Na janela Propriedades, selecione o tipo externo na lista suspensa na **tipo** campo.  
   
- Nesse estágio, os usuários podem exibir os valores da propriedade, mas eles não podem editá-lo. Os valores exibidos são obtidos a `ToString()` função. Você pode escrever o código do programa que define o valor da propriedade, por exemplo, em um comando ou a regra.  
+   Nesse estágio, os usuários podem exibir os valores da propriedade, mas eles não podem editá-lo. Os valores exibidos são obtidos a `ToString()` função. Você pode escrever o código do programa que define o valor da propriedade, por exemplo, em um comando ou a regra.  
   
 ### <a name="setting-a-property-editor"></a>Um Editor de propriedade de configuração  
  Adicione um atributo CLR para a propriedade de domínio, da seguinte forma:  
@@ -180,11 +178,11 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
   
  Define um editor, escrevendo uma classe derivada de <xref:System.Drawing.Design.UITypeEditor>. Sua classe deve substituir:  
   
--   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, para interagir com o usuário e atualizar o valor da propriedade.  
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, para interagir com o usuário e atualizar o valor da propriedade.  
   
--   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, para especificar se o seu editor de abrir uma caixa de diálogo ou fornecer um menu suspenso.  
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, para especificar se o seu editor de abrir uma caixa de diálogo ou fornecer um menu suspenso.  
   
- Você também pode fornecer uma representação gráfica do valor da propriedade que será exibido na grade de propriedade. Para fazer isso, substitua `GetPaintValueSupported`, e `PaintValue`.  Para obter mais informações, consulte <xref:System.Drawing.Design.UITypeEditor>.  
+  Você também pode fornecer uma representação gráfica do valor da propriedade que será exibido na grade de propriedade. Para fazer isso, substitua `GetPaintValueSupported`, e `PaintValue`.  Para obter mais informações, consulte <xref:System.Drawing.Design.UITypeEditor>.  
   
 > [!NOTE]
 >  Adicione o código em um arquivo de código separado na **Dsl** projeto.  

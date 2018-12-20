@@ -1,7 +1,7 @@
 ---
 title: STEPKIND | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e8d07f3d77d1f5f2c5deb8fcec75c6f4fac1fdf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea0477b480332fa8315471d807adbbc92c0489ee
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474995"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735936"
 ---
 # <a name="stepkind"></a>STEPKIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [STEPKIND](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/stepkind).  
-  
 Especifica o tipo de etapa de passo a passo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_STEPKIND {   
+enum enum_STEPKIND {   
    STEP_INTO      = 0,  
    STEP_OVER      = 1,  
    STEP_OUT       = 2,  
@@ -44,7 +42,7 @@ typedef DWORD STEPKIND;
 ```  
   
 ```csharp  
-public enum enum_STEPKIND {   
+public enum enum_STEPKIND {   
    STEP_INTO      = 0,  
    STEP_OVER      = 1,  
    STEP_OUT       = 2,  

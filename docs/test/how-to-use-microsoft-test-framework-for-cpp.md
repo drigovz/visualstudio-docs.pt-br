@@ -1,5 +1,5 @@
 ---
-title: Usar o Microsoft Unit Testing Framework para C/C++ no Visual Studio
+title: Usar a estrutura de teste de unidade da Microsoft para C++
 ms.date: 11/15/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6087b864ba497d3754adfa01dc0168da5317aa5e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 88265c1ac86b5b1c1cd90ef428c9c2c770d9f2a2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379547"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068254"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar o Microsoft Unit Testing Framework para C/C++ no Visual Studio
 
@@ -28,20 +28,22 @@ Normalmente, o código de teste é executado no próprio projeto na mesma soluç
 
 Em alguns casos, por exemplo, ao testar funções não exportadas em uma DLL, será necessário criar os testes no mesmo projeto do programa que você está testando. Gravar testes de unidade no mesmo projeto:
 
-1.  Modifique as propriedades do projeto para incluir os cabeçalhos e os arquivos de biblioteca necessários para os testes de unidade.
+1. Modifique as propriedades do projeto para incluir os cabeçalhos e os arquivos de biblioteca necessários para os testes de unidade.
 
-    1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do projeto do programa que você está testando e, em seguida, escolha **Propriedades** > **Propriedades de Configuração** > **Diretórios VC++**.
+   1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do projeto do programa que você está testando e, em seguida, escolha **Propriedades** > **Propriedades de Configuração** > **Diretórios VC++**.
 
-    3.  Clique na seta para baixo nas linhas a seguir e escolha **<Edit>**:
+   2. Clique na seta para baixo nas linhas a seguir e escolha **<Edit>**:
 
-        |Diretório|Propriedade|
-        |-|-|
-        |**Incluir Diretórios**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
-        |**Diretórios de Biblioteca**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
-2.  Adicione um arquivo de teste de unidade C++:
+      | Diretório | Propriedade |
+      |-| - |
+      | **Incluir Diretórios** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
+      | **Diretórios de Biblioteca** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-    -   No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do projeto e escolha **Adicionar** > **Novo Item** > **Teste de Unidade C++**.
+
+2. Adicione um arquivo de teste de unidade C++:
+
+   -   No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do projeto e escolha **Adicionar** > **Novo Item** > **Teste de Unidade C++**.
 
 ## <a name="write-the-tests"></a>Gravar os testes
 
@@ -53,13 +55,13 @@ Use os métodos estáticos na classe [Assert](microsoft-visualstudio-testtools-c
 
 ## <a name="run-the-tests"></a>Executar os testes
 
-1.  No menu **Teste**, escolha **Windows** > **Gerenciador de Testes**.
+1. No menu **Teste**, escolha **Windows** > **Gerenciador de Testes**.
 2. Caso todos os testes não estejam visíveis na janela, crie o projeto de teste clicando com o botão direito no mouse no nó do **Gerenciador de Soluções** e escolhendo **Criar** ou **Recompilar**.
 
-2.  No **Gerenciador de Testes**, escolha **Executar Todos** ou selecione os testes específicos que deseja executar. Clique com o botão direito do mouse para ver outras opções, incluindo a execução em modo de depuração com pontos de interrupção habilitados.
-3. Na **Janela de Saída**, escolha **Testes** no menu suspenso para exibir as mensagens gravadas pela classe `Logger`:
+3. No **Gerenciador de Testes**, escolha **Executar Todos** ou selecione os testes específicos que deseja executar. Clique com o botão direito do mouse para ver outras opções, incluindo a execução em modo de depuração com pontos de interrupção habilitados.
+4. Na **Janela de Saída**, escolha **Testes** no menu suspenso para exibir as mensagens gravadas pela classe `Logger`:
 
-  ![Janela de Saída do C++ mostrando mensagens de teste](media/cpp-test-output-window.png)
+   ![Janela de Saída do C++ mostrando mensagens de teste](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Definir as características para habilitar o agrupamento
 
@@ -90,7 +92,7 @@ TEST_METHOD(Method1)
 As seguintes características predefinidas são encontradas em `CppUnitTest.h`. Para obter mais informações, confira [A referência de API do Microsoft Unit Testing Framework para C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
 |Macro|Descrição|
-|-----------|-----------------|
+|-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Use a macro TEST_METHOD_ATTRIBUTE para definir uma característica.|
 |`TEST_OWNER(ownerAlias)`|Use a característica de proprietário predefinida para especificar um proprietário do método de teste.|
 |`TEST_PRIORITY(priority)`|Use a característica de prioridade predefinida para atribuir prioridades relativas a seus métodos de teste.|
@@ -98,4 +100,3 @@ As seguintes características predefinidas são encontradas em `CppUnitTest.h`. 
 ## <a name="see-also"></a>Consulte também
 
 - [Início Rápido: Desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md)
-

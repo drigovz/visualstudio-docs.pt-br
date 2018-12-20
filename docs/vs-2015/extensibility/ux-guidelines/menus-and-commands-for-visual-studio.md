@@ -1,7 +1,7 @@
 ---
 title: Menus e comandos para o Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b14648f27ea743ad74f3497571a0f2d9fa88b08e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e75a800ab86cc1ec902382bee06efd65c276b046
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461430"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51804463"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menus e comandos para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Menus e comandos para o Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/menus-and-commands-for-visual-studio).  
-  
 ## <a name="command-usage"></a>Uso do comando  
   
 ### <a name="overview"></a>Visão geral  
@@ -88,7 +86,7 @@ A versão mais recente deste tópico pode ser encontrada em [Menus e comandos pa
   
 -   Editar  
   
--   Exibir  
+-   View  
   
 -   Ferramentas  
   
@@ -102,7 +100,7 @@ A versão mais recente deste tópico pode ser encontrada em [Menus e comandos pa
   
 -   Build  
   
--   Depurar  
+-   Depuração  
   
 ##### <a name="context-specific-menus"></a>Menus de contexto específico  
   
@@ -110,7 +108,7 @@ A versão mais recente deste tópico pode ser encontrada em [Menus e comandos pa
   
 -   Dados  
   
--   Teste  
+-   Testar  
   
 -   Arquitetura  
   
@@ -193,29 +191,29 @@ A versão mais recente deste tópico pode ser encontrada em [Menus e comandos pa
   
  **Diretrizes gerais de barra de ferramentas:**  
   
--   Cada barra de ferramentas tem 24 pixels em controles comuns (garra, estouro).  
+- Cada barra de ferramentas tem 24 pixels em controles comuns (garra, estouro).  
   
--   Cada botão de barra de ferramentas é de 22 pixels de largura incluindo preenchimento. Tornar o ícone de um botão de divisão adiciona outro pixels 11 da largura.  
+- Cada botão de barra de ferramentas é de 22 pixels de largura incluindo preenchimento. Tornar o ícone de um botão de divisão adiciona outro pixels 11 da largura.  
   
--   É permitida a duplicação de comandos em barras de ferramentas.  
+- É permitida a duplicação de comandos em barras de ferramentas.  
   
- **Barras de ferramentas específicas de documentos** aparecem quando um determinado tipo de arquivo está ativo e desaparecem quando outro tipo de arquivo se torna ativo.  
+  **Barras de ferramentas específicas de documentos** aparecem quando um determinado tipo de arquivo está ativo e desaparecem quando outro tipo de arquivo se torna ativo.  
   
--   Barras de ferramentas específicas de documentos não podem ter mais de 12 botões.  
+- Barras de ferramentas específicas de documentos não podem ter mais de 12 botões.  
   
--   A largura total da barra de ferramentas não pode exceder 300 pixels.  
+- A largura total da barra de ferramentas não pode exceder 300 pixels.  
   
--   Cada tipo de arquivo pode ter uma barra de ferramentas inserida ou um documento específico barra de ferramentas global, mas não ambos.  
+- Cada tipo de arquivo pode ter uma barra de ferramentas inserida ou um documento específico barra de ferramentas global, mas não ambos.  
   
- **Barras de ferramentas específicas de contexto** aparecem quando um determinado contexto é definido e tendem a permanecer ativas por longos períodos.  
+  **Barras de ferramentas específicas de contexto** aparecem quando um determinado contexto é definido e tendem a permanecer ativas por longos períodos.  
   
--   O limite de botão para todas as barras de ferramentas específicas de contexto é 18.  
+- O limite de botão para todas as barras de ferramentas específicas de contexto é 18.  
   
--   Se a maioria dos usuários não consistentemente empregar os comandos dessa barra de ferramentas quando o contexto está ativo, em seguida, não associe essa barra de ferramentas com um contexto.  
+- Se a maioria dos usuários não consistentemente empregar os comandos dessa barra de ferramentas quando o contexto está ativo, em seguida, não associe essa barra de ferramentas com um contexto.  
   
--   Certifique-se de que a barra de ferramentas desaparece quando você sair do contexto. Nenhuma dessas barras de ferramentas deve aparecer na inicialização.  
+- Certifique-se de que a barra de ferramentas desaparece quando você sair do contexto. Nenhuma dessas barras de ferramentas deve aparecer na inicialização.  
   
- **Barras de ferramentas sem contexto** nunca aparecem automaticamente. Eles mostram somente quando o usuário os ativa. Manter a largura máxima abaixo de 200 pixels.  
+  **Barras de ferramentas sem contexto** nunca aparecem automaticamente. Eles mostram somente quando o usuário os ativa. Manter a largura máxima abaixo de 200 pixels.  
   
 ### <a name="general-organization-and-shell-defined-groups"></a>Organização geral e grupos definidos pelo shell  
  Use os comandos existentes compartilhados, grupos de comando e menus. Se um novo comando precisa ser definida, tente colocá-lo em um grupo de comando compartilhado existente. Se um novo grupo deve ser definido, tente colocá-lo em um menu compartilhado existente perto de um grupo de comandos relacionados antes de criar um novo menu de nível superior. Isso reduz a complexidade de comando, garantindo o posicionamento do comando consistente no IDE.  
@@ -280,19 +278,19 @@ A versão mais recente deste tópico pode ser encontrada em [Menus e comandos pa
   
  Ao definir atalhos, siga estas regras:  
   
--   **Usar o controle (Ctrl) e sequências de teclas de função (Fn).**  
+- **Usar o controle (Ctrl) e sequências de teclas de função (Fn).**  
   
--   **Preserve os atalhos usados com frequência.** Manter os atalhos mais populares.  
+- **Preserve os atalhos usados com frequência.** Manter os atalhos mais populares.  
   
--   **Atalhos do editor tornam fácil de tipo.** Associe atalhos de tipo fácil aos comandos que os desenvolvedores precisam maioria durante a gravação de código. Por exemplo, **Edit.InvokeSmartTag** precisa ter uma tecla de atalho rápido, como Ctrl + / e não Alt + Shift + F10.  
+- **Atalhos do editor tornam fácil de tipo.** Associe atalhos de tipo fácil aos comandos que os desenvolvedores precisam maioria durante a gravação de código. Por exemplo, **Edit.InvokeSmartTag** precisa ter uma tecla de atalho rápido, como Ctrl + / e não Alt + Shift + F10.  
   
--   **Se esforçar para atalhos consistentemente com tema.**  
+- **Se esforçar para atalhos consistentemente com tema.**  
   
--   **Siga as diretrizes do Windows para determinar quais modificador teclas empregar.** Use combinações de teclas Ctrl para comandos que têm efeitos em larga escala, como comandos que se aplicam a um documento inteiro. Use combinações de tecla Shift para comandos que estenderem ou complementam as ações de tecla de atalho padrão. Não use combinações de teclas Ctrl + Alt.  
+- **Siga as diretrizes do Windows para determinar quais modificador teclas empregar.** Use combinações de teclas Ctrl para comandos que têm efeitos em larga escala, como comandos que se aplicam a um documento inteiro. Use combinações de tecla Shift para comandos que estenderem ou complementam as ações de tecla de atalho padrão. Não use combinações de teclas Ctrl + Alt.  
   
--   **Remova atalhos estranhos.** Se você tiver um recurso herdado, considere remover atalhos que são usados com pouca frequência extrema, a (menos de 10 vezes dos dados do CEIP) ou pouca frequência moderada (menos de 100 vezes do que os dados do CEIP), se uma chave de acesso fornece acesso rápido para o mesmo comando. Por exemplo: C Alt, H, abrirá/conteúdo da Ajuda.  
+- **Remova atalhos estranhos.** Se você tiver um recurso herdado, considere remover atalhos que são usados com pouca frequência extrema, a (menos de 10 vezes dos dados do CEIP) ou pouca frequência moderada (menos de 100 vezes do que os dados do CEIP), se uma chave de acesso fornece acesso rápido para o mesmo comando. Por exemplo: C Alt, H, abrirá/conteúdo da Ajuda.  
   
- Não há uma maneira simples de verificar a disponibilidade de atalho. Se você quiser adicionar um atalho, siga estas etapas:  
+  Não há uma maneira simples de verificar a disponibilidade de atalho. Se você quiser adicionar um atalho, siga estas etapas:  
   
 1.  Verifique a lista de [atalhos do Visual Studio 2013](http://visualstudioshortcuts.com/2013/) para determinar se há comandos semelhantes para agrupar seus com.  
   

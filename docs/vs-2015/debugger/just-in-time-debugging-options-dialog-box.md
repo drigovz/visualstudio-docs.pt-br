@@ -1,7 +1,7 @@
 ---
 title: Caixa de diálogo de Just-In-Time, depuração, opções | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,32 +26,30 @@ helpviewer_keywords:
 - Options dialog box, debugging
 ms.assetid: 7f11b2e3-3fb5-449d-b07c-6ecf1d6a487d
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8675bc383a492f4d7ca762fa052a0e6174fe01bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 06fdd9d12003053ea6d992aa1d7d0fe9ed7144d9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464983"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788128"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Caixa de diálogo Just-In-Time, Depuração, Opções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Just-In-Time, depuração, caixa de diálogo Opções](https://docs.microsoft.com/visualstudio/debugger/just-in-time-debugging-options-dialog-box).  
-  
 Para acessar o **Just-In-Time** página, vá para o **ferramentas** menu e clique em **opções**. No **opções** diálogo caixa, expanda o **depuração** nó e selecione **Just-In-Time**. Essa página permite habilitar a depuração Just-In-Time para o código gerenciado, o código nativo e o script. Para obter mais informações, consulte [depuração Just-in-](../debugger/just-in-time-debugging-in-visual-studio.md).  
   
  Você pode habilitar a depuração Just-In-Time para estes tipos de programa:  
   
--   Gerenciado  
+- Gerenciado  
   
--   Nativo  
+- Nativo  
   
--   script  
+- script  
   
- A depuração Just-In-Time é uma técnica para depurar um programa que é iniciado fora do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Você pode executar um programa criado no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fora do ambiente do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se você tiver habilitado a depuração Just-In-Time, uma falha exibirá uma caixa de diálogo que perguntará se você quer depurar.  
+  A depuração Just-In-Time é uma técnica para depurar um programa que é iniciado fora do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Você pode executar um programa criado no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fora do ambiente do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se você tiver habilitado a depuração Just-In-Time, uma falha exibirá uma caixa de diálogo que perguntará se você quer depurar.  
   
 ## <a name="associated-warnings"></a>Avisos associados  
  Quando você visita esta página do **opções** caixa de diálogo, você poderá ver uma mensagem de aviso como esta:  

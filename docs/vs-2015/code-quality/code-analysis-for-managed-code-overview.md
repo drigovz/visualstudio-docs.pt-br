@@ -1,7 +1,7 @@
 ---
 title: Análise de código para visão geral do código gerenciado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f48bb0e1832ef92a4d03a775123a062090936090
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b2d84ba17fb3fd866dcd73cd2821289c40153b6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872662"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Visão geral da análise de código para código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [análise de código para visão geral de código gerenciado](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-managed-code-overview).  
-  
 Análise de código para código gerenciado analisa os assemblies gerenciados e relata informações sobre assemblies, como violações de programação e regras de design estabelecidas nas diretrizes de Design do Microsoft .NET Framework.  
   
  A ferramenta de análise representa as verificações que executa durante uma análise como mensagens de aviso. Mensagens de aviso identificam quaisquer problemas de programação e design relevantes e, quando é possíveis, forneça informações sobre como corrigir o problema.  
@@ -65,11 +63,11 @@ Análise de código para código gerenciado analisa os assemblies gerenciados e 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Executar análise de código como parte da política de check-in  
  Como uma organização, você talvez queira exigem que todos os check-ins satisfaçam determinadas políticas. Em particular, você deseja certificar-se de que você siga essas políticas:  
   
--   Não havia nenhum erro de compilação no check-in do código.  
+- Não havia nenhum erro de compilação no check-in do código.  
   
--   Análise de código foi executada como parte da compilação mais recente.  
+- Análise de código foi executada como parte da compilação mais recente.  
   
- Você pode fazer isso com a especificação de políticas de check-in. Para obter mais informações, consulte [aprimorando a qualidade do código com políticas de Check-in do projeto de equipe](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
+  Você pode fazer isso com a especificação de políticas de check-in. Para obter mais informações, consulte [aprimorando a qualidade do código com políticas de Check-in do projeto de equipe](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
   
 ## <a name="team-build-integration"></a>Integração do Team Build  
  Você pode usar os recursos integrados do sistema de compilação para executar a ferramenta de análise como parte do processo de compilação. Para obter mais informações, consulte [Compilar o aplicativo](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  

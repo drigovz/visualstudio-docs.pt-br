@@ -1,7 +1,7 @@
 ---
 title: Padrões de aplicativo para o Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3993b8ba5b98a034cb2e18c9bb019e55bfb56eb9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: d3c0be041628d840908b1814e26f14a488651603
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461416"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748468"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Padrões de aplicativo para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [padrões de aplicativo para o Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/application-patterns-for-visual-studio).  
-  
 ##  <a name="BKMK_WindowInteractions"></a> Interações de janela  
   
 ### <a name="overview"></a>Visão geral  
@@ -69,19 +67,19 @@ A versão mais recente deste tópico pode ser encontrada em [padrões de aplicat
 #### <a name="tool-window-states"></a>Estados de janela de ferramenta  
  Janelas de ferramentas do Visual Studio têm diferentes estados, alguns dos quais são ativados por usuário (como o recurso de ocultar automaticamente). Outros estados, como visível automática, permitir janelas de ferramenta apareça no contexto correto e ocultar quando não é necessário. Há cinco estados de janela de ferramenta no total.  
   
--   **Encaixado/fixado** janelas de ferramentas podem ser anexadas a qualquer um dos quatro lados da área do documento. O ícone de anotações aparece na barra de título da janela de ferramenta. A janela de ferramentas pode ser encaixada horizontal ou verticalmente ao longo da borda de shell e outras janelas de ferramentas e também pode ser vinculada por guia.  
+- **Encaixado/fixado** janelas de ferramentas podem ser anexadas a qualquer um dos quatro lados da área do documento. O ícone de anotações aparece na barra de título da janela de ferramenta. A janela de ferramentas pode ser encaixada horizontal ou verticalmente ao longo da borda de shell e outras janelas de ferramentas e também pode ser vinculada por guia.  
   
--   **Auto-oculto** janelas de ferramentas não serão fixadas. A janela pode deslizar fora de Vista, deixando uma tabulação (com o nome da janela de ferramentas e seu ícone) na borda da área do documento. A janela da ferramenta desliza quando o usuário passa o mouse sobre a guia.  
+- **Auto-oculto** janelas de ferramentas não serão fixadas. A janela pode deslizar fora de Vista, deixando uma tabulação (com o nome da janela de ferramentas e seu ícone) na borda da área do documento. A janela da ferramenta desliza quando o usuário passa o mouse sobre a guia.  
   
--   **Autovisível** janelas de ferramentas será exibida automaticamente quando outra parte da interface do usuário, como um editor, é iniciado ou ganha o foco.  
+- **Autovisível** janelas de ferramentas será exibida automaticamente quando outra parte da interface do usuário, como um editor, é iniciado ou ganha o foco.  
   
--   **Flutuante** janelas de ferramenta passe o mouse fora do IDE. Isso é útil para configurações de vários monitores.  
+- **Flutuante** janelas de ferramenta passe o mouse fora do IDE. Isso é útil para configurações de vários monitores.  
   
--   **Documentos com guias** janelas de ferramenta podem ser encaixadas dentro do documento também. Isso é útil para janelas de ferramenta grandes, como o Pesquisador de objetos que precisam de mais espaço livre que permite às bordas do quadro de encaixe.  
+- **Documentos com guias** janelas de ferramenta podem ser encaixadas dentro do documento também. Isso é útil para janelas de ferramenta grandes, como o Pesquisador de objetos que precisam de mais espaço livre que permite às bordas do quadro de encaixe.  
   
- ![Ferramenta de estados de janela no Visual Studio](../../extensibility/ux-guidelines/media/0702-01-toolwindowstates.png "0702 01_ToolWindowStates")  
+  ![Ferramenta de estados de janela no Visual Studio](../../extensibility/ux-guidelines/media/0702-01-toolwindowstates.png "0702 01_ToolWindowStates")  
   
- **Estados de janela de ferramenta no Visual Studio**  
+  **Estados de janela de ferramenta no Visual Studio**  
   
 #### <a name="single-instance-and-multi-instance"></a>Instância única ou várias instâncias  
  Janelas de ferramentas são de instância única ou várias instâncias. Algumas janelas de ferramentas de instância única podem ser associadas à janela do documento ativo, enquanto as janelas de ferramentas de várias instâncias não podem. Janelas de ferramentas de várias instâncias respondem ao comando janela/New Window, criando uma nova instância da janela. A imagem a seguir ilustra uma janela de ferramentas, permitindo que o comando nova janela quando uma instância da janela está ativa:  
@@ -166,19 +164,19 @@ A versão mais recente deste tópico pode ser encontrada em [padrões de aplicat
 ### <a name="user-expectations-for-specific-document-types"></a>Expectativas dos usuários para os tipos de documento específico  
  Há vários tipos diferentes de básicos de editores de documento e cada um tem um conjunto de interações que são consistentes com outros usuários do mesmo tipo.  
   
--   **Editor de texto:** editor de código, arquivos de log  
+- **Editor de texto:** editor de código, arquivos de log  
   
--   **Superfície de design:** formulários do WPF forms designer, Windows  
+- **Superfície de design:** formulários do WPF forms designer, Windows  
   
--   **Editor de caixa de diálogo style:** Designer de manifesto, propriedades do projeto  
+- **Editor de caixa de diálogo style:** Designer de manifesto, propriedades do projeto  
   
--   **Designer de modelo:** designer de fluxo de trabalho, codemap, diagrama de arquitetura, progressão  
+- **Designer de modelo:** designer de fluxo de trabalho, codemap, diagrama de arquitetura, progressão  
   
- Também há vários tipos de não de editor que usam o documento também. Embora eles não editam os próprios documentos, que eles precisam seguir as interações padrão para as janelas do documento.  
+  Também há vários tipos de não de editor que usam o documento também. Embora eles não editam os próprios documentos, que eles precisam seguir as interações padrão para as janelas do documento.  
   
--   **Relatórios:** relatório do IntelliTrace, Hyper-V de relatórios, relatórios do criador de perfil  
+- **Relatórios:** relatório do IntelliTrace, Hyper-V de relatórios, relatórios do criador de perfil  
   
--   **Painel:** Hub de diagnóstico  
+- **Painel:** Hub de diagnóstico  
   
 #### <a name="text-based-editors"></a>Editores de texto  
   
@@ -253,13 +251,13 @@ A versão mais recente deste tópico pode ser encontrada em [padrões de aplicat
   
  Se tiver determinado que você precisa de uma caixa de diálogo, você tem três opções, na ordem de preferência:  
   
-1.  Integre seus recursos em uma das caixas de diálogo compartilhadas no Visual Studio.  
+1. Integre seus recursos em uma das caixas de diálogo compartilhadas no Visual Studio.  
   
-2.  Crie sua própria caixa de diálogo usando um padrão encontrado em uma caixa de diálogo semelhante existente.  
+2. Crie sua própria caixa de diálogo usando um padrão encontrado em uma caixa de diálogo semelhante existente.  
   
-3.  Crie uma nova caixa de diálogo, interação com o seguinte e diretrizes de layout.  
+3. Crie uma nova caixa de diálogo, interação com o seguinte e diretrizes de layout.  
   
- Este tópico descreve como escolher o padrão de caixa de diálogo corretas nos fluxos de trabalho do Visual Studio e as convenções comuns para design de caixa de diálogo.  
+   Este tópico descreve como escolher o padrão de caixa de diálogo corretas nos fluxos de trabalho do Visual Studio e as convenções comuns para design de caixa de diálogo.  
   
 ### <a name="themes"></a>Temas  
  Caixas de diálogo no Visual Studio execute um dos dois estilos básicos:  
@@ -270,15 +268,15 @@ A versão mais recente deste tópico pode ser encontrada em [padrões de aplicat
 #### <a name="themed"></a>Com temas  
  Caixas de diálogo de "assinatura" de especialidade podem ser com tema. Caixas de diálogo com tema têm uma aparência distinta, que também tem alguns padrões de interação especial associadas ao estilo. Tema a caixa de diálogo somente se ele atende a esses requisitos:  
   
--   A caixa de diálogo é uma experiência comum que será Vista e usada com frequência ou por muitos usuários (por exemplo, o **novo projeto** caixa de diálogo.  
+- A caixa de diálogo é uma experiência comum que será Vista e usada com frequência ou por muitos usuários (por exemplo, o **novo projeto** caixa de diálogo.  
   
--   A caixa de diálogo contém elementos de marca do produto proeminente (por exemplo, o **configurações de conta** caixa de diálogo).  
+- A caixa de diálogo contém elementos de marca do produto proeminente (por exemplo, o **configurações de conta** caixa de diálogo).  
   
--   A caixa de diálogo é exibida como parte integrante de um fluxo maior que inclui outras caixas de diálogo com tema (por exemplo, o **Adicionar serviço conectado** caixa de diálogo).  
+- A caixa de diálogo é exibida como parte integrante de um fluxo maior que inclui outras caixas de diálogo com tema (por exemplo, o **Adicionar serviço conectado** caixa de diálogo).  
   
--   A caixa de diálogo é uma parte importante de uma experiência que desempenha um papel estratégico em promover ou diferenciando uma versão do produto.  
+- A caixa de diálogo é uma parte importante de uma experiência que desempenha um papel estratégico em promover ou diferenciando uma versão do produto.  
   
- Ao criar uma caixa de diálogo com tema, use as cores de ambiente adequadas e siga o layout correto e os padrões de interação. (Consulte [Layout para o Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md))  
+  Ao criar uma caixa de diálogo com tema, use as cores de ambiente adequadas e siga o layout correto e os padrões de interação. (Consulte [Layout para o Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md))  
   
 ### <a name="dialog-design"></a>Design de caixa de diálogo  
  Caixas de diálogo bem projetadas levar os elementos a seguir em consideração:  
@@ -362,17 +360,17 @@ A versão mais recente deste tópico pode ser encontrada em [padrões de aplicat
   
 #### <a name="title-bars"></a>Barras de título  
   
--   O texto na barra de título deve refletir o nome do comando que o iniciou.  
+- O texto na barra de título deve refletir o nome do comando que o iniciou.  
   
--   Nenhum ícone deve ser usada nas barras de título da caixa de diálogo. Em casos em que o sistema requer um, use o logotipo do Visual Studio.  
+- Nenhum ícone deve ser usada nas barras de título da caixa de diálogo. Em casos em que o sistema requer um, use o logotipo do Visual Studio.  
   
--   Caixas de diálogo não deve minimizar ou maximizar botões.  
+- Caixas de diálogo não deve minimizar ou maximizar botões.  
   
--   Botões de ajuda na barra de título foram preteridos. Não adicione-os para novas caixas de diálogo. Quando eles existirem, eles devem iniciar um tópico da Ajuda que é conceitualmente relevante para a tarefa.  
+- Botões de ajuda na barra de título foram preteridos. Não adicione-os para novas caixas de diálogo. Quando eles existirem, eles devem iniciar um tópico da Ajuda que é conceitualmente relevante para a tarefa.  
   
- ![Especificações do Visual Studio da barra de título](../../extensibility/ux-guidelines/media/0704-03-titlebarspecs.png "03_TitleBarSpecs 0704")  
+  ![Especificações do Visual Studio da barra de título](../../extensibility/ux-guidelines/media/0704-03-titlebarspecs.png "03_TitleBarSpecs 0704")  
   
- **Especificações de diretriz para barras de título nas caixas de diálogo do Visual Studio.**  
+  **Especificações de diretriz para barras de título nas caixas de diálogo do Visual Studio.**  
   
 #### <a name="control-buttons"></a>Botões de controle  
  Em geral, **Okey**/**Cancelar**/**ajuda** botões devem ser organizados horizontalmente no canto inferior direito da caixa de diálogo. A pilha vertical alternativa é permitida se uma caixa de diálogo tem vários outros botões na parte inferior da caixa de diálogo que poderia apresentar visual confusão com os botões de controle.  
@@ -383,13 +381,13 @@ A versão mais recente deste tópico pode ser encontrada em [padrões de aplicat
   
  A caixa de diálogo deve incluir um botão de controle padrão. Para determinar o comando recomendado para usar como padrão, escolher as opções seguintes (listadas em ordem de precedência):  
   
--   Escolha o comando mais seguro e mais seguro como padrão. Isso significa que escolher o comando mais provável evitar a perda de dados e evitar o acesso ao sistema não intencionais.  
+- Escolha o comando mais seguro e mais seguro como padrão. Isso significa que escolher o comando mais provável evitar a perda de dados e evitar o acesso ao sistema não intencionais.  
   
--   Se a segurança e perda de dados não forem fatores, em seguida, escolha o comando de padrão com base em sua conveniência. Incluindo o comando provavelmente como padrão melhorará o fluxo de trabalho do usuário quando a caixa de diálogo dá suporte a tarefas frequentes ou repetitivas.  
+- Se a segurança e perda de dados não forem fatores, em seguida, escolha o comando de padrão com base em sua conveniência. Incluindo o comando provavelmente como padrão melhorará o fluxo de trabalho do usuário quando a caixa de diálogo dá suporte a tarefas frequentes ou repetitivas.  
   
- Evite escolher uma ação destrutiva permanentemente para o comando padrão. Se o comando estiver presente, escolha um comando mais seguro como padrão.  
+  Evite escolher uma ação destrutiva permanentemente para o comando padrão. Se o comando estiver presente, escolha um comando mais seguro como padrão.  
   
-#### <a name="access-keys"></a>Chaves de acesso  
+#### <a name="access-keys"></a>Teclas de acesso  
  Não use chaves de acesso para **Okey**/**Cancelar**/**ajuda** botões. Por padrão, esses botões são mapeados a teclas de atalho:  
   
 |Nome do botão|Atalho de teclado|  
@@ -439,54 +437,54 @@ A versão mais recente deste tópico pode ser encontrada em [padrões de aplicat
   
  Projetos devem sempre:  
   
--   Suporte a capacidade de adicionar pastas de projeto para organizar o conteúdo do projeto  
+- Suporte a capacidade de adicionar pastas de projeto para organizar o conteúdo do projeto  
   
--   Manter um modelo consistente para persistência de projeto  
+- Manter um modelo consistente para persistência de projeto  
   
- Projetos também devem manter modelos de interação consistente para:  
+  Projetos também devem manter modelos de interação consistente para:  
   
--   Removendo itens de projeto  
+- Removendo itens de projeto  
   
--   Salvando documentos  
+- Salvando documentos  
   
--   Edição de propriedade do projeto  
+- Edição de propriedade do projeto  
   
--   Editar o projeto em uma exibição alternativa  
+- Editar o projeto em uma exibição alternativa  
   
--   Operações de arrastar e soltar  
+- Operações de arrastar e soltar  
   
 ### <a name="drag-and-drop-interaction-model"></a>Modelo de interação de arrastar e soltar  
  Projetos normalmente classificam em si como base de referência (capaz de manter apenas referências a itens de projeto no armazenamento), (capaz de manter somente itens de projeto fisicamente armazenado na hierarquia do projeto), com base no diretório ou misto (capaz de manter referências ou itens físicos). O IDE acomode todos os três tipos de projetos simultaneamente dentro de **Gerenciador de soluções**.  
   
  De uma perspectiva de arrastar e soltar, as seguintes características devem ser aplicados a cada tipo de projeto dentro de **Gerenciador de soluções**:  
   
--   **Projeto de referência:** o ponto principal é que o projeto está sendo arrastado em torno de uma referência a um item no armazenamento. Quando um projeto baseado em referência atua como uma fonte para uma operação de movimentação, ele só deve remover a referência para o item do projeto. O item, na verdade, não deve ser excluído do disco rígido. Quando um projeto baseado em referência atua como um destino para uma operação de movimentação (ou cópia), ele deve adicionar uma referência para o item de origem original sem fazer uma cópia privada do item.  
+- **Projeto de referência:** o ponto principal é que o projeto está sendo arrastado em torno de uma referência a um item no armazenamento. Quando um projeto baseado em referência atua como uma fonte para uma operação de movimentação, ele só deve remover a referência para o item do projeto. O item, na verdade, não deve ser excluído do disco rígido. Quando um projeto baseado em referência atua como um destino para uma operação de movimentação (ou cópia), ele deve adicionar uma referência para o item de origem original sem fazer uma cópia privada do item.  
   
--   **Com base no diretório de projeto:** de um ponto de vista de arrastar e soltar, o projeto está sendo arrastado em torno do item físico em vez de uma referência. Quando um projeto baseado em diretório atua como uma fonte para uma operação de movimentação, ele deve acabar excluindo o item físico da unidade de disco, bem como removê-lo do projeto. Quando um projeto baseado em diretório atua como um destino para uma operação de movimentação (ou cópia), ele deve fazer uma cópia do item de origem em seu local de destino.  
+- **Com base no diretório de projeto:** de um ponto de vista de arrastar e soltar, o projeto está sendo arrastado em torno do item físico em vez de uma referência. Quando um projeto baseado em diretório atua como uma fonte para uma operação de movimentação, ele deve acabar excluindo o item físico da unidade de disco, bem como removê-lo do projeto. Quando um projeto baseado em diretório atua como um destino para uma operação de movimentação (ou cópia), ele deve fazer uma cópia do item de origem em seu local de destino.  
   
--   **Projeto de destino misto:** de um ponto de vista de arrastar e soltar, o comportamento desse tipo de projeto se baseia a natureza do item que está sendo arrastado (uma referência a um item no armazenamento) ou o próprio item. O comportamento correto para referências e itens físicos são descritos acima.  
+- **Projeto de destino misto:** de um ponto de vista de arrastar e soltar, o comportamento desse tipo de projeto se baseia a natureza do item que está sendo arrastado (uma referência a um item no armazenamento) ou o próprio item. O comportamento correto para referências e itens físicos são descritos acima.  
   
- Se houver apenas um tipo de projeto na **Gerenciador de soluções**, em seguida, operações de arrastar e soltar seria simples. Como cada sistema de projeto tem a capacidade de definir seu próprio comportamento de arrastar e soltar, determinadas diretrizes (com base no comportamento de arrastar e soltar do Explorer do Windows) devem ser seguidas para garantir uma experiência de usuário mais previsível:  
+  Se houver apenas um tipo de projeto na **Gerenciador de soluções**, em seguida, operações de arrastar e soltar seria simples. Como cada sistema de projeto tem a capacidade de definir seu próprio comportamento de arrastar e soltar, determinadas diretrizes (com base no comportamento de arrastar e soltar do Explorer do Windows) devem ser seguidas para garantir uma experiência de usuário mais previsível:  
   
--   Arraste um não modificado operação na **Gerenciador de soluções** (quando nem Ctrl nem teclas Shift está pressionada) deve resultar em uma operação de movimentação.  
+- Arraste um não modificado operação na **Gerenciador de soluções** (quando nem Ctrl nem teclas Shift está pressionada) deve resultar em uma operação de movimentação.  
   
--   A operação de arrastar SHIFT também deve resultar em uma operação de movimentação.  
+- A operação de arrastar SHIFT também deve resultar em uma operação de movimentação.  
   
--   Operação de CTRL-arrastar deve resultar em uma operação de cópia.  
+- Operação de CTRL-arrastar deve resultar em uma operação de cópia.  
   
--   Sistemas de projeto com base em referência e misto suportam a noção de adicionando um link (ou referenciar) para o item de origem. Quando esses projetos são o destino de uma operação de arrastar e soltar (quando **Ctrl + Shift** for mantido pressionado), ele deve resultar em uma referência para o item que está sendo adicionado ao projeto  
+- Sistemas de projeto com base em referência e misto suportam a noção de adicionando um link (ou referenciar) para o item de origem. Quando esses projetos são o destino de uma operação de arrastar e soltar (quando **Ctrl + Shift** for mantido pressionado), ele deve resultar em uma referência para o item que está sendo adicionado ao projeto  
   
- Nem todas as operações de arrastar e soltar são sensatas entre combinações de projetos baseados em referências, baseada no Active e mistos. Em particular, é problemático fingir que permitem que uma operação de movimentação entre um projeto com base no diretório de origem e o projeto de referência com base no destino, porque o projeto com base no diretório de origem será necessário excluir o item de origem após a conclusão da mudança. O projeto de referência com base no destino, em seguida, acabaria com uma referência a um item excluído.  
+  Nem todas as operações de arrastar e soltar são sensatas entre combinações de projetos baseados em referências, baseada no Active e mistos. Em particular, é problemático fingir que permitem que uma operação de movimentação entre um projeto com base no diretório de origem e o projeto de referência com base no destino, porque o projeto com base no diretório de origem será necessário excluir o item de origem após a conclusão da mudança. O projeto de referência com base no destino, em seguida, acabaria com uma referência a um item excluído.  
   
- Também é um equívoco fingir permitir que uma operação de cópia entre esses tipos de projetos, pois o projeto de referência com base no destino não deve fazer uma cópia independente do item de origem. Da mesma forma, Ctrl + Shift arrastando para um projeto de destino baseada no Active deve não ser permitido como um projeto baseado no diretório é capaz de persistir as referências. Em casos onde não há suporte para a operação de arrastar e soltar, o IDE deve não permitir a operação de soltar e mostrar ao usuário o cursor não soltar (mostrado na tabela ponteiro abaixo).  
+  Também é um equívoco fingir permitir que uma operação de cópia entre esses tipos de projetos, pois o projeto de referência com base no destino não deve fazer uma cópia independente do item de origem. Da mesma forma, Ctrl + Shift arrastando para um projeto de destino baseada no Active deve não ser permitido como um projeto baseado no diretório é capaz de persistir as referências. Em casos onde não há suporte para a operação de arrastar e soltar, o IDE deve não permitir a operação de soltar e mostrar ao usuário o cursor não soltar (mostrado na tabela ponteiro abaixo).  
   
- Para implementar corretamente o comportamento de arrastar e soltar, o projeto de origem de arrastar precisa se comunicar sua natureza (por exemplo, é baseada no Active ou referência?) para o projeto de destino. Essa informação é indicada pelo formato de área de transferência é oferecido pela origem. Como a origem de arrastar (ou operação de cópia da área de transferência), um projeto deve oferecer uma **CF_VSREFPROJECTITEM**S ou **CF_VSSTGPROJECTITEMS** respectivamente, dependendo se o projeto é a base de referência ou, com base no diretório. Esses formatos têm o mesmo conteúdo de dados, que é semelhante do Windows **CF_HDROP** Formatar, exceto que as listas de cadeias de caracteres, em vez de ser nomes de arquivo, são um double -**nulo** encerrada a lista de  **Projref** cadeias de caracteres (conforme retornado pelo **IVsSolution::GetProjrefOfItem** ou **:: GetProjrefOfProject** conforme apropriado).  
+  Para implementar corretamente o comportamento de arrastar e soltar, o projeto de origem de arrastar precisa se comunicar sua natureza (por exemplo, é baseada no Active ou referência?) para o projeto de destino. Essa informação é indicada pelo formato de área de transferência é oferecido pela origem. Como a origem de arrastar (ou operação de cópia da área de transferência), um projeto deve oferecer uma **CF_VSREFPROJECTITEM**S ou **CF_VSSTGPROJECTITEMS** respectivamente, dependendo se o projeto é a base de referência ou, com base no diretório. Esses formatos têm o mesmo conteúdo de dados, que é semelhante do Windows **CF_HDROP** Formatar, exceto que as listas de cadeias de caracteres, em vez de ser nomes de arquivo, são um double -**nulo** encerrada a lista de  **Projref** cadeias de caracteres (conforme retornado pelo **IVsSolution::GetProjrefOfItem** ou **:: GetProjrefOfProject** conforme apropriado).  
   
- Como o destino de soltar (ou operação de colagem da área de transferência), um projeto deve aceitar os dois **CF_VSREFPROJECTITEMS** e **CF_VSSTGPROJECTITEMS**, que varia o tratamento exato da operação de arrastar e soltar Dependendo da natureza do projeto de destino e o projeto de origem. O projeto de origem declara sua natureza, se ele oferece **CF_VSREFPROJECTITEMS** ou **CF_VSSTGPROJECTITEMS**. O destino de soltar compreende sua própria natureza e, portanto, tem informações suficientes para tomar decisões como e se uma mudança, copie ou link deve ser executado. O usuário também modifica qual operação de arrastar e soltar deve ser executada ao pressionar o Ctrl, Shift, ou as teclas Ctrl e Shift. É importante para o destino de soltar corretamente indicam qual operação será executada com antecedência em seu **DragEnter** e **DragOver** métodos. O **Gerenciador de soluções** sabe automaticamente se o projeto de origem e o projeto de destino são o mesmo projeto.  
+  Como o destino de soltar (ou operação de colagem da área de transferência), um projeto deve aceitar os dois **CF_VSREFPROJECTITEMS** e **CF_VSSTGPROJECTITEMS**, que varia o tratamento exato da operação de arrastar e soltar Dependendo da natureza do projeto de destino e o projeto de origem. O projeto de origem declara sua natureza, se ele oferece **CF_VSREFPROJECTITEMS** ou **CF_VSSTGPROJECTITEMS**. O destino de soltar compreende sua própria natureza e, portanto, tem informações suficientes para tomar decisões como e se uma mudança, copie ou link deve ser executado. O usuário também modifica qual operação de arrastar e soltar deve ser executada ao pressionar o Ctrl, Shift, ou as teclas Ctrl e Shift. É importante para o destino de soltar corretamente indicam qual operação será executada com antecedência em seu **DragEnter** e **DragOver** métodos. O **Gerenciador de soluções** sabe automaticamente se o projeto de origem e o projeto de destino são o mesmo projeto.  
   
- Especificamente, não há suporte para a arrastar itens de projeto entre instâncias do Visual Studio (por exemplo, de uma instância do devenv.exe para outro). O **Gerenciador de soluções** diretamente também desabilita a isso.  
+  Especificamente, não há suporte para a arrastar itens de projeto entre instâncias do Visual Studio (por exemplo, de uma instância do devenv.exe para outro). O **Gerenciador de soluções** diretamente também desabilita a isso.  
   
- O usuário deve sempre ser capaz de determinar o efeito de uma operação de arrastar e soltar selecionando um item, arrastando-o para o local de destino, e observa que um dos ponteiros do mouse a seguir aparece antes do item for solto:  
+  O usuário deve sempre ser capaz de determinar o efeito de uma operação de arrastar e soltar selecionando um item, arrastando-o para o local de destino, e observa que um dos ponteiros do mouse a seguir aparece antes do item for solto:  
   
 |Ponteiro do mouse|Comando|Descrição|  
 |-------------------|-------------|-----------------|  
@@ -585,33 +583,33 @@ A versão mais recente deste tópico pode ser encontrada em [padrões de aplicat
   
  Esses detalhes devem ser levados em consideração ao implementar o arrastar para o **Gerenciador de soluções**:  
   
--   Design para vários cenários de seleção.  
+- Design para vários cenários de seleção.  
   
--   Nomes de arquivo (caminho completo) devem ser exclusivos em todo o projeto de destino ou o descarte não deve ser permitido.  
+- Nomes de arquivo (caminho completo) devem ser exclusivos em todo o projeto de destino ou o descarte não deve ser permitido.  
   
--   Nomes de pastas devem ser exclusivos (diferencia maiusculas de minúsculas) no nível do qual eles são descartados.  
+- Nomes de pastas devem ser exclusivos (diferencia maiusculas de minúsculas) no nível do qual eles são descartados.  
   
--   Há diferenças de comportamento entre os arquivos que estão abertos ou fechados no momento de arrastar (não mencionada nos cenários acima).  
+- Há diferenças de comportamento entre os arquivos que estão abertos ou fechados no momento de arrastar (não mencionada nos cenários acima).  
   
--   Arquivos de nível superior se comportam de forma ligeiramente diferente do que os arquivos em pastas.  
+- Arquivos de nível superior se comportam de forma ligeiramente diferente do que os arquivos em pastas.  
   
- Outro problema que deve estar atento é como lidar com operações de movimentação em itens que têm editores ou designers abertos. O comportamento esperado é da seguinte maneira (isso se aplica a todos os tipos de projeto):  
+  Outro problema que deve estar atento é como lidar com operações de movimentação em itens que têm editores ou designers abertos. O comportamento esperado é da seguinte maneira (isso se aplica a todos os tipos de projeto):  
   
-1.  Se o editor Abrir/designer não tem alterações não salvas, em seguida, a janela de editor/designer deve ser silenciosamente fechada.  
+1. Se o editor Abrir/designer não tem alterações não salvas, em seguida, a janela de editor/designer deve ser silenciosamente fechada.  
   
-2.  Se o editor Abrir/designer tiver alterações não salvas, em seguida, a origem de arrastar deve esperar para o descarte ocorrer e, em seguida, peça ao usuário para salvar as alterações não confirmadas em documentos abertos antes de fechar a janela com um prompt semelhante ao seguinte :  
+2. Se o editor Abrir/designer tiver alterações não salvas, em seguida, a origem de arrastar deve esperar para o descarte ocorrer e, em seguida, peça ao usuário para salvar as alterações não confirmadas em documentos abertos antes de fechar a janela com um prompt semelhante ao seguinte :  
   
-    ```  
-    ==========================================================   
-         One or more open documents have unsaved changes.  
-    Do you want to save uncommitted changes before proceeding?   
-                      [Yes]  [No]  [Cancel]   
-    ==========================================================  
-    ```  
+   ```  
+   ==========================================================   
+        One or more open documents have unsaved changes.  
+   Do you want to save uncommitted changes before proceeding?   
+                     [Yes]  [No]  [Cancel]   
+   ==========================================================  
+   ```  
   
- Isso fornece ao usuário a oportunidade de salvar o trabalho em andamento antes do destino torna suas cópias. Um novo método **IVsHierarchyDropDataSource2::OnBeforeDropNotify** foi adicionado para habilitar esse tratamento.  
+   Isso fornece ao usuário a oportunidade de salvar o trabalho em andamento antes do destino torna suas cópias. Um novo método **IVsHierarchyDropDataSource2::OnBeforeDropNotify** foi adicionado para habilitar esse tratamento.  
   
- O destino, em seguida, copiar o estado do item como ele está no armazenamento (não incluindo as alterações não salvas no editor, se o usuário escolheu **não**). Depois que o destino foi concluída a sua cópia (em **IVsHierarchyDropDataSource::Drop**), a fonte tem a oportunidade para concluir a parte de exclusão da operação de movimentação (em **IVsHierarchyDropDataSource::O nDropNotify**).  
+   O destino, em seguida, copiar o estado do item como ele está no armazenamento (não incluindo as alterações não salvas no editor, se o usuário escolheu **não**). Depois que o destino foi concluída a sua cópia (em **IVsHierarchyDropDataSource::Drop**), a fonte tem a oportunidade para concluir a parte de exclusão da operação de movimentação (em **IVsHierarchyDropDataSource::O nDropNotify**).  
   
- Qualquer editores com alterações não salvas devem ser deixados abertos. Para esses documentos com alterações não salvas, isso significa que a parte da cópia da operação de movimentação será executada, mas a parte de exclusão será anulada. Em um cenário de seleção de vários quando o usuário escolhe **não**, esses documentos com alterações não salvas não devem ser fechados ou removidos, mas devem ser fechados e removidos aqueles sem alterações não salvas.
+   Qualquer editores com alterações não salvas devem ser deixados abertos. Para esses documentos com alterações não salvas, isso significa que a parte da cópia da operação de movimentação será executada, mas a parte de exclusão será anulada. Em um cenário de seleção de vários quando o usuário escolhe **não**, esses documentos com alterações não salvas não devem ser fechados ou removidos, mas devem ser fechados e removidos aqueles sem alterações não salvas.
 

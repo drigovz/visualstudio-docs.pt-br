@@ -1,7 +1,7 @@
 ---
 title: Exibir um modelo UML em diagramas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ helpviewer_keywords:
 - UML API
 ms.assetid: adf1f1f2-2ad9-4ade-82de-c6a5194ab471
 caps.latest.revision: 25
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5439394885ecdd3801b34bb224144bad16d4c2f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd30d626d6500f7bf904350133ea33f2b2a25ac5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460763"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757308"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Exibir um modelo UML em diagramas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibir um modelo UML em diagramas](https://docs.microsoft.com/visualstudio/modeling/display-a-uml-model-on-diagrams).  
-  
 No código do programa para uma extensão do Visual Studio, você pode controlar como os elementos de modelo são exibidos em diagramas. Para ver quais versões do Visual Studio dão suporte a modelos UML, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Neste tópico:  

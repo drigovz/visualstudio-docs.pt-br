@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bcfae4cc786fb7a3e0c2ccd48f867bb6c32530d6
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 62b77180858b40bf2620eaed284fa35b9a48288a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496123"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835924"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Usar marcadores de texto com a API herdada
 Um marcador de texto é um intervalo de texto em um buffer que pode afetar a exibição de flutuante e o comportamento de uma região de texto. Marcadores incluem pontos de interrupção, indicadores, sublinhados ondulados e regiões de somente leitura. Marcadores de texto são basicamente diferentes das cores de sintaxe. Coloração de sintaxe é uma maneira rápida de se comunicar a sintaxe de linguagem que está associada uma região de texto. Coloração de sintaxe geralmente é solicitada ao Windows redesenha a tela, quando a velocidade é importante. Coloração de sintaxe altera apenas a cor do texto. Marcadores de texto podem alterar muitas outras propriedades de texto. Marcadores de texto podem "flutuar" e aplicar um comportamento especial e colorir.  
@@ -30,14 +30,14 @@ Um marcador de texto é um intervalo de texto em um buffer que pode afetar a exi
   
 ## <a name="related-topics"></a>Tópicos relacionados  
   
-|Título|Descrição|  
-|-----------|-----------------|  
-|[Como adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)|Descreve como adicionar um tipo de marcador de texto padrão fornecido pelo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo para uma exibição de texto.|  
-|[Como implementar o marcador de erros](../extensibility/how-to-implement-error-markers.md)|Descreve como implementar uma instância da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] marcador que é usado para indicar erros usando ondulados vermelhos.|  
-|[Como criar marcadores de texto personalizados](../extensibility/how-to-create-custom-text-markers.md)|Descreve como criar e adicionar um tipo de marcador de texto personalizado a uma exibição de texto.|  
-|[Como usar marcadores de texto](../extensibility/how-to-use-text-markers.md)|Explica como adicionar marcadores de texto.|  
-|[Dentro do editor principal](../extensibility/inside-the-core-editor.md)|Descreve os recursos do editor de núcleo e fornece detalhes sobre como personalizar o editor de núcleo.|  
-|[Recursos do Editor](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Descreve os recursos disponíveis no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo.|  
+| Título | Descrição |
+| - | - |
+| [Como adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md) | Descreve como adicionar um tipo de marcador de texto padrão fornecido pelo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo para uma exibição de texto. |
+| [Como implementar o marcador de erros](../extensibility/how-to-implement-error-markers.md) | Descreve como implementar uma instância da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] marcador que é usado para indicar erros usando ondulados vermelhos. |
+| [Como criar marcadores de texto personalizados](../extensibility/how-to-create-custom-text-markers.md) | Descreve como criar e adicionar um tipo de marcador de texto personalizado a uma exibição de texto. |
+| [Como usar marcadores de texto](../extensibility/how-to-use-text-markers.md) | Explica como adicionar marcadores de texto. |
+| [Dentro do editor principal](../extensibility/inside-the-core-editor.md) | Descreve os recursos do editor de núcleo e fornece detalhes sobre como personalizar o editor de núcleo. |
+| [Recursos do Editor](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198) | Descreve os recursos disponíveis no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo. |
   
 ## <a name="reference"></a>Referência  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  

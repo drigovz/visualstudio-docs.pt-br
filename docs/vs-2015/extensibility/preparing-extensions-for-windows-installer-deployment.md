@@ -1,7 +1,7 @@
 ---
 title: Preparar extensões para a implantação do Windows Installer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b83e7d59e17b91e3a47625917de4ec7366f8389d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 90dc7fb0ca361e6c1994cfd7108b171cda2ad1f9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465148"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755098"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>Preparando extensões para a implantação do Windows Installer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Preparando implantação das extensões para o Windows Installer](https://docs.microsoft.com/visualstudio/extensibility/preparing-extensions-for-windows-installer-deployment).  
-  
 Você não pode usar um pacote do Windows Installer (MSI) para implantar um pacote VSIX. No entanto, você pode extrair o conteúdo de um pacote VSIX para implantação de MSI. Este documento mostra como preparar um projeto cuja saída padrão é um pacote VSIX para inclusão em um projeto de instalação.  
   
 ## <a name="preparing-an-extension-project-for-windows-installer-deployment"></a>Preparando um projeto de extensão para a implantação do Windows Installer  

@@ -1,7 +1,7 @@
 ---
 title: Exibição de chamador-computador chamado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,21 +18,19 @@ helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: d3511bcf-cce0-4cbe-aecb-b94c7c80ad1b
 caps.latest.revision: 37
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a28f0184d126781c43540d447cd75cd905e15d40
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7631085e0560c74ea162f8aeae9147bbcf9412e2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462959"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784423"
 ---
 # <a name="callercallee-view"></a>Exibição Chamador/Receptor da Chamada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [modo de exibição de chamador / computador chamado](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view).  
-  
 A exibição de Chamador/Computador Chamado exibe informações de perfil para uma função selecionada e suas funções pai e filho. A exibição de Chamador/Computador Chamado contém três grades:  
   
  **Função atual** é exibida na grade intermediária e mostra informações de criação de perfil para a função selecionada. Os valores incluem todas as chamadas para a função que foram coletadas na execução de criação de perfil.  

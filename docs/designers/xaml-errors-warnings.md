@@ -10,12 +10,12 @@ ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af9ec3cffc7375dd77be72887baee6a56e1b391
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 09251f13cafa320e2736e9c61135283bb9e9739d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077797"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844179"
 ---
 # <a name="xaml-errors-and-warnings"></a>Avisos e erros de XAML
 
@@ -26,7 +26,7 @@ Ao criar XAML, o Visual Studio analisa o código conforme você digita. Um rabis
 Em segundo plano, várias ferramentas analisam o XAML em paralelo. Erros de XAML são categorizados em um dos três seguintes tipos, com base na ferramenta que detectou o erro:
 
 |**Erro detectado por**|**Formato do código de erro**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |Serviço de linguagem XAML (Editor XAML)|XLSxxxx|
 |XAML Designer|XDGxxxx|
 |Editar e Continuar em XAML|XECxxxx|

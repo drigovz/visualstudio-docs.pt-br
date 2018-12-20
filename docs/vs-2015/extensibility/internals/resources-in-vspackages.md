@@ -1,7 +1,7 @@
 ---
 title: Recursos em VSPackages | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,44 +17,42 @@ ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc519bead4d1602f22112d421384a6ec95e339b2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f6330055eb3e7b410cc71dc7bab9bc55769c4fd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465040"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725323"
 ---
 # <a name="resources-in-vspackages"></a>Recursos em VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [recursos em VSPackages](https://docs.microsoft.com/visualstudio/extensibility/internals/resources-in-vspackages).  
-  
 Você pode incorporar recursos localizados em nativa da interface do usuário DLLs satélite, DLLs satélite gerenciadas, ou em um VSPackage gerenciado em si.  
   
  Alguns recursos não podem ser inseridos em VSPackages. Os seguintes tipos gerenciados podem ser inseridos:  
   
--   Cadeias de caracteres  
+- Cadeias de caracteres  
   
--   Chaves de carregamento de pacote (que também são cadeias de caracteres)  
+- Chaves de carregamento de pacote (que também são cadeias de caracteres)  
   
--   Ícones da janela de ferramenta  
+- Ícones da janela de ferramenta  
   
--   Arquivos de saída de tabela de comando (CTO) compilados  
+- Arquivos de saída de tabela de comando (CTO) compilados  
   
--   Bitmaps CTO  
+- Bitmaps CTO  
   
--   Ajuda de linha de comando  
+- Ajuda de linha de comando  
   
--   Sobre dados de caixa de diálogo  
+- Sobre dados de caixa de diálogo  
   
- Recursos em um pacote gerenciado são selecionados por ID de recurso. Uma exceção é o arquivo CTO, que deve ser nomeado CTMENU. O arquivo CTO deve aparecer na tabela de recursos, como um `byte[]`. Todos os outros itens de recurso são identificados por tipo.  
+  Recursos em um pacote gerenciado são selecionados por ID de recurso. Uma exceção é o arquivo CTO, que deve ser nomeado CTMENU. O arquivo CTO deve aparecer na tabela de recursos, como um `byte[]`. Todos os outros itens de recurso são identificados por tipo.  
   
- Você pode usar o <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> atributo para indicar ao [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que os recursos gerenciados estão disponíveis.  
+  Você pode usar o <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> atributo para indicar ao [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que os recursos gerenciados estão disponíveis.  
   
- [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
- [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
+  [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
+  [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
   
- Definindo <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> dessa maneira indica que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] deve ignorar as DLLs de satélite não gerenciado ao procurar por recursos, por exemplo, usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Se [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] encontra dois ou mais recursos que têm a mesma ID de recurso, ele usa o primeiro recurso encontra.  
+  Definindo <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> dessa maneira indica que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] deve ignorar as DLLs de satélite não gerenciado ao procurar por recursos, por exemplo, usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Se [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] encontra dois ou mais recursos que têm a mesma ID de recurso, ele usa o primeiro recurso encontra.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir é uma representação gerenciada de um ícone de janela de ferramenta.  

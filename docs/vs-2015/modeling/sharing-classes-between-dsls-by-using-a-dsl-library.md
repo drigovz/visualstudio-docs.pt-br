@@ -1,7 +1,7 @@
 ---
 title: Compartilhando Classes entre DSLs por meio de uma biblioteca de DSL | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a4ec7820be2cc4f308582e71f3ba64ded5c296e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed469b4621205539e3f7a2ce59878bd318ba556f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860030"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Compartilhando classes entre DSLs por meio de uma biblioteca de DSLs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [compartilhando Classes entre DSLs por meio de uma biblioteca de DSL](https://docs.microsoft.com/visualstudio/modeling/sharing-classes-between-dsls-by-using-a-dsl-library).  
-  
 No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK de modelagem e visualização, você pode criar uma definição de DSL incompleta que você pode importar para outra DSL. Isso permite fatorar partes comuns dos modelos semelhantes.  
   
 ## <a name="creating-and-using-dsl-libraries"></a>Criando e usando bibliotecas de DSL  
@@ -54,21 +52,21 @@ No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK de modelagem e visualizaçã
   
 #### <a name="to-import-a-dsl-library"></a>Para importar uma biblioteca de DSL  
   
-1.  Em outra definição de DSL, em **Gerenciador de DSL**, clique com botão direito a classe raiz do DSL e, em seguida, clique em **adicionar uma nova importação de DslLibrary**.  
+1. Em outra definição de DSL, em **Gerenciador de DSL**, clique com botão direito a classe raiz do DSL e, em seguida, clique em **adicionar uma nova importação de DslLibrary**.  
   
-2.  Na janela Propriedades, defina as **caminho do arquivo** da biblioteca. Você pode usar um caminho absoluto ou relativo.  
+2. Na janela Propriedades, defina as **caminho do arquivo** da biblioteca. Você pode usar um caminho absoluto ou relativo.  
   
-     A biblioteca importada aparece no Gerenciador de DSL, no modo somente leitura.  
+    A biblioteca importada aparece no Gerenciador de DSL, no modo somente leitura.  
   
-3.  Você pode usar as classes importadas como classes base. Criar uma classe de domínio na importação DSL e nas propriedades da janela, defina **base de dados de classe** para uma classe importada.  
+3. Você pode usar as classes importadas como classes base. Criar uma classe de domínio na importação DSL e nas propriedades da janela, defina **base de dados de classe** para uma classe importada.  
   
-4.  Clique em transformar todos os modelos.  
+4. Clique em transformar todos os modelos.  
   
-5.  Para o projeto DSL, adicione uma referência ao assembly (DLL) que foi criado pelo projeto de biblioteca de DSL.  
+5. Para o projeto DSL, adicione uma referência ao assembly (DLL) que foi criado pelo projeto de biblioteca de DSL.  
   
-6.  Compile a solução.  
+6. Compile a solução.  
   
- Uma biblioteca de DSL podem importar outras bibliotecas. Quando você importa uma biblioteca, suas importações automaticamente também aparecem no Gerenciador de DSL.  
+   Uma biblioteca de DSL podem importar outras bibliotecas. Quando você importa uma biblioteca, suas importações automaticamente também aparecem no Gerenciador de DSL.  
   
 ## <a name="see-also"></a>Consulte também  
  [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::GetEngineInfo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: 3a4f2dc0-e082-4d8d-aeaf-463ab09d279b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e242a0d2fa414e4f735d5964d65308a68b58d774
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8980a3e19b115145129c14fd51278a745320e033
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472942"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809838"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProgram2::GetEngineInfo](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-getengineinfo).  
-  
 Obtém o nome e o GUID do mecanismo de depuração (DES) executar este programa.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetEngineInfo(   
+HRESULT GetEngineInfo(   
    BSTR* pbstrEngine,  
    GUID* pguidEngine  
 );  
 ```  
   
 ```csharp  
-int GetEngineInfo(   
+int GetEngineInfo(   
    out string pbstrEngine,  
    out GUID   pguidEngine  
 );  

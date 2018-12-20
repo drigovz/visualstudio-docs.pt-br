@@ -1,7 +1,7 @@
 ---
 title: IDebugEventCallback2::Event | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: e5a3345b-d460-4e40-8f5b-3111c56a2ed9
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cddaa351ed406299d5ddf1247025f5d442fb3d3b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e47ce39ec9e911a0daed628736aa7ed52e73d8c5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464052"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805483"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugEventCallback2::Event](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugeventcallback2-event).  
-  
 Envia notificação de eventos de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Event(   
+HRESULT Event(   
    IDebugEngine2*  pEngine,  
    IDebugProcess2* pProcess,  
    IDebugProgram2* pProgram,  
@@ -46,7 +44,7 @@ HRESULT Event(
 ```  
   
 ```csharp  
-int Event(   
+int Event(   
    IDebugEngine2  pEngine,  
    IDebugProcess2 pProcess,  
    IDebugProgram2 pProgram,  

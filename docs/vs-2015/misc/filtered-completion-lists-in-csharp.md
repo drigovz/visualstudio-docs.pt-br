@@ -1,7 +1,7 @@
 ---
 title: Listas de conclusão no c# filtradas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,14 +16,14 @@ helpviewer_keywords:
 ms.assetid: 4df5919d-2e5d-498e-9fa1-be40fee8361c
 caps.latest.revision: 17
 author: BillWagner
-ms.author: billchi
+ms.author: wiwagn
 manager: douge
-ms.openlocfilehash: 60b5094c5cacc264fb2a30f9ae7e6445f1859971
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c7d63405bd58fd0648637fd2099ceba9fd24354
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465298"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802376"
 ---
 # <a name="filtered-completion-lists-in-c"></a>Listas de conclusão filtradas em C# #
 Este conteúdo foi movido para [listas de conclusão no c#](../misc/completion-lists-in-csharp.md)

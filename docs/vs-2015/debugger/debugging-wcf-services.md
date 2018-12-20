@@ -1,7 +1,7 @@
 ---
 title: Depurando serviços WCF | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ helpviewer_keywords:
 - WCF, debugging
 ms.assetid: 6c8974d0-2c15-4d9f-a7f3-cabd4b204cda
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b47ac0d54f69ef4976c9f6a60b087247e1421e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 177261a3a3b842fcf9a1d2376d4f8dfcd142692e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464914"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796149"
 ---
 # <a name="debugging-wcf-services"></a>Depurando serviços WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depuração WCF Services](https://docs.microsoft.com/visualstudio/debugger/debugging-wcf-services).  
-  
 Nesta seção  
  [Limitações da depuração de WCF](../debugger/limitations-on-wcf-debugging.md)  
  Descreve restrições sobre como depurar o WCF.  

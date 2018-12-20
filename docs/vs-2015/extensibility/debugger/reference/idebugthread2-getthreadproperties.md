@@ -1,7 +1,7 @@
 ---
 title: IDebugThread2::GetThreadProperties | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5eddc47f35268fd62e0d4361e5cc1a99bf082107
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad987445864725eed5ab0f41607fa41ea6068e81
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474762"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796591"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugThread2::GetThreadProperties](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugthread2-getthreadproperties).  
-  
 Obtém as propriedades que descrevem esse thread.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetThreadProperties (   
+HRESULT GetThreadProperties (   
    THREADPROPERTY_FIELDS dwFields,  
    THREADPROPERTIES*     ptp  
 );  
 ```  
   
 ```csharp  
-int GetThreadProperties (   
+int GetThreadProperties (   
    enum_THREADPROPERTY_FIELDS dwFields,  
    THREADPROPERTIES[]         ptp  
 );  
@@ -52,7 +50,7 @@ int GetThreadProperties (
  [in] Uma combinação de sinalizadores do [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeração que determina quais campos de `ptp` devem ser preenchidos.  
   
  `ptp`  
- [no, out] Um [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estrutura que será preenchido com as propriedades do thread.  
+ [no, out] Um [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estrutura será preenchida com as propriedades do thread.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  

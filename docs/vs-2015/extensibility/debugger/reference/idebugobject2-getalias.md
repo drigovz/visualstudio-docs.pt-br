@@ -1,7 +1,7 @@
 ---
 title: IDebugObject2::GetAlias | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: aa6824d5-c932-42ba-8713-950e7d1fb42f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 77cd9b8ccdb89d2a0e52cf1193dd3137780964d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7e8c539d0c0a52ffa1d435f4b39e75af1343f7a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462485"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769253"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugObject2::GetAlias](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugobject2-getalias).  
-  
 Obtém o alias associado com esse objeto, se houver.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT GetAlias(  
-   IDebugAlias** ppAlias  
+HRESULT GetAlias(  
+   IDebugAlias** ppAlias  
 );  
 ```  
   
 ```csharp  
-int GetAlias(  
-   out IDebugAlias ppAlias  
+int GetAlias(  
+   out IDebugAlias ppAlias  
 );  
 ```  
   

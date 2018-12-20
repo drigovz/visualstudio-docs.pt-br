@@ -1,7 +1,7 @@
 ---
 title: Referência de esquema de modelo do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8c3d2d3b7a8b5e5c47f853a5f01358701e981f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3b49b15047d11e8d09690c90dd3011700481fcef
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463160"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817419"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Referência de esquema do modelo do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Esta seção contém informações sobre elementos XML em arquivos .vstemplate, 
 |[Descrição](../extensibility/description-element-visual-studio-templates.md)|--|Pacote<br /><br /> ID|  
 |[EnableEditOfLocationField](../extensibility/enableeditoflocationfield-element-visual-studio-templates.md)|--|--|  
 |[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|--|--|  
-|[Pasta](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> Pasta|Nome|  
+|[Pasta](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> Folder|Nome|  
 ||[preterido]|--|  
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|  
 |[Oculto](../extensibility/hidden-element-visual-studio-templates.md)|--|--|  
@@ -57,7 +57,7 @@ Esta seção contém informações sobre elementos XML em arquivos .vstemplate, 
 |[Nome](../extensibility/name-element-visual-studio-templates.md)|--|Pacote<br /><br /> ID|  
 |[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|--|--|  
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|  
-|[Projeto](../extensibility/project-element-visual-studio-templates.md)|Pasta<br /><br /> ProjectItem|Arquivo<br /><br /> TargetFileName<br /><br /> ReplaceParameters|  
+|[Projeto](../extensibility/project-element-visual-studio-templates.md)|Folder<br /><br /> ProjectItem|Arquivo<br /><br /> TargetFileName<br /><br /> ReplaceParameters|  
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|--|  
 |[ProjectItem (modelos de Item)](../extensibility/projectitem-element-visual-studio-item-templates.md)|--|SubType<br /><br /> CustomTool<br /><br /> ItemType<br /><br /> ReplaceParameters<br /><br /> TargetFileName|  
 |[ProjectItem (modelos de projeto)](../extensibility/projectitem-element-visual-studio-project-templates.md)|--|TargetFileName<br /><br /> ReplaceParameters<br /><br /> OpenInEditor<br /><br /> OpenOrder<br /><br /> OpenInWebBrowser<br /><br /> OpenInHelpBrowser|  

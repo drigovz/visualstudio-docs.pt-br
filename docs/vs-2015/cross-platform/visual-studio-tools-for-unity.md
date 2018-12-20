@@ -1,7 +1,7 @@
 ---
 title: Ferramentas do Visual Studio para Unity | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
 caps.latest.revision: 6
-author: TerryGLee
-ms.author: tglee
+author: conceptdev
+ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: 21aa67a7908cd5d037a51f72d7b95017df44e074
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7bdcdbc4a19914494b0a48932afc25c1f7626fbb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462220"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762329"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Ferramentas do Visual Studio para Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Visual Studio Tools for Unity](https://docs.microsoft.com/visualstudio/cross-platform/visual-studio-tools-for-unity).  
-  
   
 Nesta seção, você saberá mais sobre as Ferramentas do Visual Studio para Unity, uma extensão gratuita do Visual Studio que torna o Visual Studio em uma ferramenta poderosa para criar jogos com o Unity.  
   

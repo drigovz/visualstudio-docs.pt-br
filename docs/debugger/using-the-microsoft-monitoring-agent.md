@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8bb09bd5080e82a80659905eb3db1d9dbc78dd
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3146de7efb7db567149b7741f2868a932f8476ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842060"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Usando o Microsoft Monitoring Agent
-Você pode monitorar localmente aplicativos web do ASP.NET hospedados no IIS e o SharePoint 2010 ou 2013 aplicativos de erros, problemas de desempenho ou outros problemas usando **Microsoft Monitoring Agent**. Você pode salvar eventos de diagnóstico do agente em um arquivo de log do IntelliTrace (.iTrace). Em seguida, você pode abrir o log no Visual Studio Enterprise (mas não as edições Professional ou Community) para depurar problemas com todas as ferramentas de diagnóstico do Visual Studio. Você também pode coletar dados de diagnóstico do IntelliTrace e dados de método executando o agente **rastreamento** modo. Microsoft Monitoring Agent podem ser integrado [Application Insights](/azure/application-insights/) e [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx). O Microsoft Monitoring Agent altera o ambiente do sistema de destino quando instalado.  
+Você pode monitorar localmente aplicativos web do ASP.NET hospedados no IIS e o SharePoint 2010 ou 2013 aplicativos de erros, problemas de desempenho ou outros problemas usando **Microsoft Monitoring Agent**. Você pode salvar eventos de diagnóstico do agente em um arquivo de log do IntelliTrace (.iTrace). Em seguida, você pode abrir o log no Visual Studio Enterprise (mas não as edições Professional ou Community) para depurar problemas com todas as ferramentas de diagnóstico do Visual Studio. Você também pode coletar dados de diagnóstico do IntelliTrace e dados de método executando o agente **rastreamento** modo. Microsoft Monitoring Agent podem ser integrado [Application Insights](/azure/application-insights/) e [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12)). O Microsoft Monitoring Agent altera o ambiente do sistema de destino quando instalado.  
   
 > [!NOTE]
 >  Você também pode coletar dados de diagnóstico e método do IntelliTrace para web, SharePoint, WPF e aplicativos de formulário do Windows em computadores remotos sem alterar o ambiente de destino usando o **coletor autônomo do IntelliTrace**. O coletor autônomo tem um impacto de desempenho maior do que executando o Microsoft Monitoring Agent **Monitor** modo. Ver [usando o coletor autônomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
- Se você usar o System Center 2012, use o Microsoft Monitoring Agent com Operations Manager para obter alertas sobre problemas e criar itens de trabalho do Team Foundation Server com links para os logs do IntelliTrace salvos. Você pode atribuir esses itens de trabalho a outros para uma depuração adicional. Ver [integração do Operations Manager com processos de desenvolvimento](http://technet.microsoft.com/library/jj614609.aspx) e [monitorando com o Microsoft Monitoring Agent](http://technet.microsoft.com/en-us/library/dn465153.aspx).  
+ Se você usar o System Center 2012, use o Microsoft Monitoring Agent com Operations Manager para obter alertas sobre problemas e criar itens de trabalho do Team Foundation Server com links para os logs do IntelliTrace salvos. Você pode atribuir esses itens de trabalho a outros para uma depuração adicional. Ver [integração do Operations Manager com processos de desenvolvimento](/previous-versions/system-center/system-center-2012-R2/jj614609(v=sc.12)) e [monitorando com o Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12)).  
   
  Antes de começar, verifique se você tem a origem e os símbolos correspondentes para o código compilado e implantado. Isso ajuda você a ir diretamente até o código do aplicativo ao iniciar a depuração e a navegação em eventos de diagnóstico no log do IntelliTrace. [Configure suas compilações](../debugger/diagnose-problems-after-deployment.md) para que o Visual Studio pode encontrar e abrir o código-fonte correspondente ao código implantado automaticamente.  
   
@@ -34,13 +34,13 @@ Você pode monitorar localmente aplicativos web do ASP.NET hospedados no IIS e o
 3.  [Etapa 3: Salvar eventos registrados](#SaveEvents)  
   
 ##  <a name="SetUpMonitoring"></a> Etapa 1: Configurar o Microsoft Monitoring Agent  
- Configure o agente autônomo no servidor Web para realizar o monitoramento local sem alterar seu aplicativo. Se você usar o System Center 2012, consulte [instalando o Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465156.aspx).  
+ Configure o agente autônomo no servidor Web para realizar o monitoramento local sem alterar seu aplicativo. Se você usar o System Center 2012, consulte [instalando o Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465156(v=sc.12)).  
   
 ###  <a name="SetUpStandaloneMMA"></a> Configurar o agente autônomo  
   
 1.  Verifique se:  
   
-    -   Seu servidor web está em execução [suporte para versões do Internet Information Services (IIS)](http://technet.microsoft.com/en-us/library/dn465154.aspx).  
+    -   Seu servidor web está em execução [suporte para versões do Internet Information Services (IIS)](/previous-versions/system-center/system-center-2012-R2/dn465154(v=sc.12)).  
   
     -   Seu servidor Web tem o .NET Framework 3.5, 4 ou 4.5.  
   
@@ -79,33 +79,33 @@ Você pode monitorar localmente aplicativos web do ASP.NET hospedados no IIS e o
 ####  <a name="FullPermissionsITLog"></a> P: como configurar permissões para o pool de aplicativos?  
  **R:** usar o Windows **icacls** de comando ou use o Windows Explorer (ou Explorador de arquivos). Por exemplo:  
   
--   Para configurar as permissões com o Windows **icacls** comando:  
+- Para configurar as permissões com o Windows **icacls** comando:  
   
-    -   Para um aplicativo web na **DefaultAppPool** pool de aplicativos:  
+  - Para um aplicativo web na **DefaultAppPool** pool de aplicativos:  
   
-         `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\DefaultAppPool":RX`  
+     `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\DefaultAppPool":RX`  
   
-    -   Para um aplicativo do SharePoint na **SharePoint - 80** pool de aplicativos:  
+  - Para um aplicativo do SharePoint na **SharePoint - 80** pool de aplicativos:  
   
-         `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
+     `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
-     -ou-  
+    -ou-  
   
--   Para configurar permissões com o Windows Explorer (ou o Explorador de Arquivos):  
+- Para configurar permissões com o Windows Explorer (ou o Explorador de Arquivos):  
   
-    1.  Abra **propriedades** para o diretório de log do IntelliTrace.  
+  1.  Abra **propriedades** para o diretório de log do IntelliTrace.  
   
-    2.  Sobre o **segurança** guia, escolha **editar**, **adicionar**.  
+  2.  Sobre o **segurança** guia, escolha **editar**, **adicionar**.  
   
-    3.  Certifique-se de que **entidades de segurança internas** aparece na **Selecione este tipo de objeto** caixa. Se ele não estiver presente, escolha **tipos de objeto** para adicioná-lo.  
+  3.  Certifique-se de que **entidades de segurança internas** aparece na **Selecione este tipo de objeto** caixa. Se ele não estiver presente, escolha **tipos de objeto** para adicioná-lo.  
   
-    4.  Verifique se o computador local aparece na **desse local** caixa. Se ele não estiver presente, escolha **locais** alterá-la.  
+  4.  Verifique se o computador local aparece na **desse local** caixa. Se ele não estiver presente, escolha **locais** alterá-la.  
   
-    5.  No **insira os nomes de objeto a selecionar** caixa, adicione o pool de aplicativos para o aplicativo web ou aplicativo do SharePoint.  
+  5.  No **insira os nomes de objeto a selecionar** caixa, adicione o pool de aplicativos para o aplicativo web ou aplicativo do SharePoint.  
   
-    6.  Escolher **verificar nomes** para resolver o nome. Escolha **OK**.  
+  6.  Escolher **verificar nomes** para resolver o nome. Escolha **OK**.  
   
-    7.  Verifique se o pool de aplicativos tem **ler & executar** permissões.  
+  7.  Verifique se o pool de aplicativos tem **ler & executar** permissões.  
   
 ##  <a name="MonitorEvents"></a> Etapa 2: Iniciar o monitoramento de seu aplicativo  
  Usar o Windows PowerShell [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) comando para iniciar o monitoramento de seu aplicativo. Se você usar o System Center 2012, consulte [Monitorando aplicativos Web com o Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
@@ -149,83 +149,83 @@ Você pode monitorar localmente aplicativos web do ASP.NET hospedados no IIS e o
 ####  <a name="Minimizing"></a> P: como posso obter a maioria dos dados sem afetar a velocidade do meu aplicativo?  
  **R:** Microsoft Monitoring Agent pode coletar grandes quantidades de dados e afeta o desempenho do seu aplicativo dependendo dos dados que você optar por coletar e como coletá-los. Estas são algumas das maneiras de obter a maioria dos dados sem deixar seu aplicativo mais lento:  
   
--   Para aplicativos Web e aplicativos do SharePoint, o agente grava os dados de todos os aplicativos que compartilham o pool de aplicativos especificado. Isso talvez deixe mais lento qualquer aplicativo que compartilhe o mesmo pool de aplicativos, mesmo que você possa restringir a coleta aos módulos de um único aplicativo. Para evitar que outros aplicativos fiquem mais lentos, hospede cada aplicativo em seu próprio pool de aplicativos.  
+- Para aplicativos Web e aplicativos do SharePoint, o agente grava os dados de todos os aplicativos que compartilham o pool de aplicativos especificado. Isso talvez deixe mais lento qualquer aplicativo que compartilhe o mesmo pool de aplicativos, mesmo que você possa restringir a coleta aos módulos de um único aplicativo. Para evitar que outros aplicativos fiquem mais lentos, hospede cada aplicativo em seu próprio pool de aplicativos.  
   
--   Examine os eventos para os quais o agente coleta dados no plano de coleta. Edite o plano de coleta para desabilitar eventos que não sejam relevantes ou que não sejam de seu interesse. Isso pode melhorar o desempenho da inicialização e o desempenho do tempo de execução.  
+- Examine os eventos para os quais o agente coleta dados no plano de coleta. Edite o plano de coleta para desabilitar eventos que não sejam relevantes ou que não sejam de seu interesse. Isso pode melhorar o desempenho da inicialização e o desempenho do tempo de execução.  
   
-     Para desabilitar um evento, defina o atributo `enabled` para o elemento `<DiagnosticEventSpecification>` como `false`:  
+   Para desabilitar um evento, defina o atributo `enabled` para o elemento `<DiagnosticEventSpecification>` como `false`:  
   
-     `<DiagnosticEventSpecification enabled="false">`  
+   `<DiagnosticEventSpecification enabled="false">`  
   
-     Se o atributo `enabled` não existir, o evento estará habilitado.  
+   Se o atributo `enabled` não existir, o evento estará habilitado.  
   
-     Por exemplo:  
+   Por exemplo:  
   
-    -   Desabilite eventos do Fluxo de Trabalho do Windows para aplicativos que não usem o Fluxo de Trabalho do Windows.  
+  -   Desabilite eventos do Fluxo de Trabalho do Windows para aplicativos que não usem o Fluxo de Trabalho do Windows.  
   
-    -   Desabilite eventos do Registro para aplicativos que acessem o Registro, mas não mostrem problemas com configurações do Registro.  
+  -   Desabilite eventos do Registro para aplicativos que acessem o Registro, mas não mostrem problemas com configurações do Registro.  
   
--   Examine os módulos para os quais o agente coleta dados no plano de coleta. Edite o plano de coleta para incluir somente os módulos de seu interesse.  
+- Examine os módulos para os quais o agente coleta dados no plano de coleta. Edite o plano de coleta para incluir somente os módulos de seu interesse.  
   
-     Isso reduz a quantidade de informações de chamada de método e outros dados de instrumentação que o agente coleta quando o aplicativo é iniciado e executado. Esses dados ajudam a navegar pelo código quando você está depurando e examinando os valores passados para e retornados de chamadas de função.  
+   Isso reduz a quantidade de informações de chamada de método e outros dados de instrumentação que o agente coleta quando o aplicativo é iniciado e executado. Esses dados ajudam a navegar pelo código quando você está depurando e examinando os valores passados para e retornados de chamadas de função.  
   
-    1.  Abra o plano de coleta. Encontre o elemento `<ModuleList>`.  
+  1. Abra o plano de coleta. Encontre o elemento `<ModuleList>`.  
   
-    2.  Em `<ModuleList>`, defina o atributo `isExclusionList` como `false`.  
+  2. Em `<ModuleList>`, defina o atributo `isExclusionList` como `false`.  
   
-    3.  Use o elemento `<Name>` para especificar cada módulo com um dos seguintes: nome do arquivo, valor da cadeia de caracteres para incluir qualquer módulo cujo nome contenha essa cadeia de caracteres ou chave pública.  
+  3. Use o elemento `<Name>` para especificar cada módulo com um dos seguintes: nome do arquivo, valor da cadeia de caracteres para incluir qualquer módulo cujo nome contenha essa cadeia de caracteres ou chave pública.  
   
      Esse exemplo cria uma lista que coleta dados apenas do módulo principal do aplicativo Web Fabrikam Fiber:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>FabrikamFiber.Web.dll</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>FabrikamFiber.Web.dll</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     Para coletar dados de qualquer módulo cujo nome inclua "Fabrikam", crie uma lista assim:  
+   Para coletar dados de qualquer módulo cujo nome inclua "Fabrikam", crie uma lista assim:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>Fabrikam</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>Fabrikam</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     Para coletar dados de módulos especificando seus tokens de chave pública, crie uma lista assim:  
+   Para coletar dados de módulos especificando seus tokens de chave pública, crie uma lista assim:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>PublicKeyToken:B77A5C561934E089</Name>  
-       <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
-       <Name>PublicKeyToken:31BF3856AD364E35</Name>  
-       <Name>PublicKeyToken:89845DCD8080CC91</Name>  
-       <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>PublicKeyToken:B77A5C561934E089</Name>  
+     <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
+     <Name>PublicKeyToken:31BF3856AD364E35</Name>  
+     <Name>PublicKeyToken:89845DCD8080CC91</Name>  
+     <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     **P: por que não excluir apenas os módulos em vez disso?**  
+   **P: por que não excluir apenas os módulos em vez disso?**  
   
-     **R:** por padrão, os planos de coleta excluem módulos definindo o `isExclusionList` atributo `true`. Entretanto, ele ainda pode coletar dados de módulos que não atendam aos critérios da lista ou que talvez não o interesse, como módulos de terceiros ou de software livre.  
+   **R:** por padrão, os planos de coleta excluem módulos definindo o `isExclusionList` atributo `true`. Entretanto, ele ainda pode coletar dados de módulos que não atendam aos critérios da lista ou que talvez não o interesse, como módulos de terceiros ou de software livre.  
   
 #### <a name="q-what-values-does-the-agent-collect"></a>P: Quais valores o agente coleta?  
  **R:** para reduzir o impacto no desempenho, o agente coleta apenas estes valores:  
   
--   Tipos de dados primitivos passados e retornados de métodos  
+- Tipos de dados primitivos passados e retornados de métodos  
   
--   Tipos de dados primitivos em campos para objetos no nível superior passados e retornados de métodos  
+- Tipos de dados primitivos em campos para objetos no nível superior passados e retornados de métodos  
   
- Por exemplo, suponhamos que você tenha uma assinatura de método `AlterEmployee` que aceite um inteiro `id` e um objeto `Employee` `oldemployee`:  
+  Por exemplo, suponhamos que você tenha uma assinatura de método `AlterEmployee` que aceite um inteiro `id` e um objeto `Employee` `oldemployee`:  
   
- `public Employee AlterEmployee(int id, Employee oldemployee)`  
+  `public Employee AlterEmployee(int id, Employee oldemployee)`  
   
- O tipo `Employee` tem os seguintes atributos: `Id`, `Name` e `HomeAddress`. Existe uma relação de associação entre `Employee` e o tipo `Address`.  
+  O tipo `Employee` tem os seguintes atributos: `Id`, `Name` e `HomeAddress`. Existe uma relação de associação entre `Employee` e o tipo `Address`.  
   
- ![Relação entre o funcionário e o endereço](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
+  ![Relação entre o funcionário e o endereço](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
   
- O agente registra valores de `id`, `Employee.Id`, `Employee.Name` e o objeto `Employee` retornado pelo método `AlterEmployee`. Entretanto, o agente não registra informações sobre o objeto `Address` que não sejam se ele era nulo ou não. O agente também não registra dados sobre variáveis locais no método `AlterEmployee`, a menos que outros métodos usem essas variáveis locais como parâmetros em que eles são gravados como parâmetros de método.  
+  O agente registra valores de `id`, `Employee.Id`, `Employee.Name` e o objeto `Employee` retornado pelo método `AlterEmployee`. Entretanto, o agente não registra informações sobre o objeto `Address` que não sejam se ele era nulo ou não. O agente também não registra dados sobre variáveis locais no método `AlterEmployee`, a menos que outros métodos usem essas variáveis locais como parâmetros em que eles são gravados como parâmetros de método.  
   
 ##  <a name="SaveEvents"></a> Etapa 3: Salvar eventos registrados  
  Quando você encontrar um erro ou um problema de desempenho, salve os eventos registrados em um log do IntelliTrace. O agente só criará o log se tiver registrado eventos. Se você usar o System Center 2012, consulte [Monitorando aplicativos Web com o Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
@@ -233,63 +233,63 @@ Você pode monitorar localmente aplicativos web do ASP.NET hospedados no IIS e o
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Salvar eventos registrados, mas continuar monitorando  
  Siga estas etapas quando você quiser criar o log do IntelliTrace, mas não quiser reiniciar o aplicativo ou parar de monitorá-lo. O agente continua o monitoramento, mesmo que o servidor ou o aplicativo seja reiniciado.  
   
-1.  No servidor Web, abra uma janela do prompt de comando do Windows PowerShell como administrador.  
+1. No servidor Web, abra uma janela do prompt de comando do Windows PowerShell como administrador.  
   
-2.  Execute o [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) comando para salvar um instantâneo do log do IntelliTrace:  
+2. Execute o [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) comando para salvar um instantâneo do log do IntelliTrace:  
   
-     **CheckPoint-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **CheckPoint-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \- ou -  
+    \- ou -  
   
-     **CheckPoint-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **CheckPoint-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
-     Por exemplo:  
+    Por exemplo:  
   
-     **PS C:\\> Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
+    **PS C:\\> Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
-     -ou-  
+    -ou-  
   
-     **PS C: > Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
+    **PS C: > Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
   
-     Para obter mais informações, execute as **get-help Checkpoint-WebApplicationMonitoring-detalhada** comando ou o **get-help Checkpoint-WebApplicationMonitoring-exemplos** comando.  
+    Para obter mais informações, execute as **get-help Checkpoint-WebApplicationMonitoring-detalhada** comando ou o **get-help Checkpoint-WebApplicationMonitoring-exemplos** comando.  
   
-3.  Copie o log para uma pasta compartilhada segura e, em seguida, abra o log de um computador que tem o Visual Studio Enterprise (mas não as edições Professional ou Community).  
+3. Copie o log para uma pasta compartilhada segura e, em seguida, abra o log de um computador que tem o Visual Studio Enterprise (mas não as edições Professional ou Community).  
   
-    > [!IMPORTANT]
-    >  Tome cuidado ao compartilhar logs do IntelliTrace, porque eles podem conter dados pessoais e confidenciais. Verifique se a pessoa que pode acessar esses logs tem permissões para analisar esses dados. Verifique as políticas de privacidade da empresa.  
+   > [!IMPORTANT]
+   >  Tome cuidado ao compartilhar logs do IntelliTrace, porque eles podem conter dados pessoais e confidenciais. Verifique se a pessoa que pode acessar esses logs tem permissões para analisar esses dados. Verifique as políticas de privacidade da empresa.  
   
- **Em seguida:** [Diagnose registrou eventos no Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **Em seguida:** [Diagnose registrou eventos no Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ### <a name="save-recorded-events-and-stop-monitoring"></a>Salvar eventos registrados e parar o monitoramento  
  Siga estas etapas quando quiser somente informações de diagnóstico durante a reprodução de um problema específico. Isso reiniciará todos os aplicativos Web no servidor Web.  
   
-1.  No servidor Web, abra uma janela do prompt de comando do Windows PowerShell como administrador.  
+1. No servidor Web, abra uma janela do prompt de comando do Windows PowerShell como administrador.  
   
-2.  Execute o [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) comando para criar o log do IntelliTrace e parar de monitorar um aplicativo web específico:  
+2. Execute o [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) comando para criar o log do IntelliTrace e parar de monitorar um aplicativo web específico:  
   
-     **Stop-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **Stop-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \- ou -  
+    \- ou -  
   
-     **Stop-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **Stop-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
-     Ou pare o monitoramento de todos os aplicativos Web:  
+    Ou pare o monitoramento de todos os aplicativos Web:  
   
-     **Stop-WebApplicationMonitoring - todos**  
+    **Stop-WebApplicationMonitoring - todos**  
   
-     Por exemplo:  
+    Por exemplo:  
   
-     **PS C:\\> Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
+    **PS C:\\> Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   
-     \- ou -  
+    \- ou -  
   
-     **PS C:\\> Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
+    **PS C:\\> Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
   
-     Para obter mais informações, execute as **get-help Stop-WebApplicationMonitoring-detailed** comando ou o **get-help Stop-WebApplicationMonitoring-exemplos** comando.  
+    Para obter mais informações, execute as **get-help Stop-WebApplicationMonitoring-detailed** comando ou o **get-help Stop-WebApplicationMonitoring-exemplos** comando.  
   
-3.  Copie o log para uma pasta compartilhada segura e, em seguida, abra o log de um computador que tenha o Visual Studio Enterprise.  
+3. Copie o log para uma pasta compartilhada segura e, em seguida, abra o log de um computador que tenha o Visual Studio Enterprise.  
   
- **Em seguida:** [Diagnose registrou eventos no Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **Em seguida:** [Diagnose registrou eventos no Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ## <a name="q--a"></a>Perguntas e respostas  
   

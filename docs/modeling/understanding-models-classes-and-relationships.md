@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 12363adb78c4fca7d5ef3416a2642a68a7c3eab7
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 74172b6e7f03d7e3baef329f053fc4a83ee6ae28
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860518"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967383"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Noções básicas sobre modelos, classes e relações
 Uma linguagem específica de domínio (DSL) é definida por seu arquivo de definição de DSL, junto com qualquer código de programa personalizado você pode escrever. A maioria do código do programa na solução DSL é gerada a partir desse arquivo.
@@ -135,7 +135,7 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
  Configure a multiplicidade de uma função digitando-se no diagrama ou modificando o `Multiplicity` propriedade em de **propriedades** janela. A tabela a seguir descreve as configurações para essa propriedade.
 
 |Tipo de multiplicidade|Descrição|
-|-----------------------|-----------------|
+|-|-|
 |0.. * (zero para muitos)|Cada instância da classe de domínio pode ter várias instâncias do relacionamento ou nenhuma instância da relação.|
 |Entre 0 e 1 (zero para um)|Cada instância da classe de domínio pode ter não mais de uma instância da relação ou nenhuma instância da relação.|
 |1..1 (um)|Cada instância da classe de domínio pode ter uma instância da relação. É possível criar mais de uma instância desse relacionamento de qualquer instância da classe de função. Se a validação estiver habilitada, um erro de validação aparecerá quando qualquer instância da classe de função não tem nenhuma instância da relação.|
@@ -152,4 +152,4 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
 
 ## <a name="see-also"></a>Consulte também
 
-- [Glossário de ferramentas de linguagem específica do domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário de ferramentas de linguagem específica do domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

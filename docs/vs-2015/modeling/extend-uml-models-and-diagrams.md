@@ -1,7 +1,7 @@
 ---
 title: Estender modelos e diagramas UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - UML model, extending
 ms.assetid: b5bfa61e-ea59-4c3b-b5af-53475d7d13cd
 caps.latest.revision: 39
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d15da471e077e737bb7ba82d19d68f24f15db687
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 74f3c518682997dca57a630c6f084437f7175d80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460617"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794758"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Estender modelos e diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [modelos e diagramas UML estender](https://docs.microsoft.com/visualstudio/modeling/extend-uml-models-and-diagrams).  
-  
 Este tópico resume as diferentes maneiras em que você pode estender a ferramentas incluídas com o Visual Studio de modelagem UML. Para ver quais versões do Visual Studio dão suporte a cada tipo de modelo e a ferramenta, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  No cenário de exemplo a seguir, Fabrikam projeta e instala o tratamento de sistemas de bagagem de aeroporto. Do projeto em um aeroporto para o próximo, existem muitas semelhanças no equipamento básico e o software que controla a ele. No entanto, também há vários fatores que podem variar amplamente, como a configuração de belts transportadora, mesas de check-in, os compartimentos de armazenamento e outro equipamentos de tratamento de recipiente.  

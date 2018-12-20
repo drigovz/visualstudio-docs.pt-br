@@ -1,7 +1,7 @@
 ---
 title: Managed Extensibility Framework no Editor | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57c27b710e6d01c6aa378b00ef4c3b40afb12b14
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 41d5768c8cfddc3474616d7a2eee16b84cd24d56
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473540"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754696"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework no editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Managed Extensibility Framework no Editor de](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor).  
-  
 O editor é criado usando componentes de Managed Extensibility Framework (MEF). Você pode criar seus próprios componentes MEF para estender o editor, e seu código pode consumir componentes do editor também.  
   
 ## <a name="overview-of-the-managed-extensibility-framework"></a>Visão geral do Managed Extensibility Framework  
@@ -39,13 +37,13 @@ O editor é criado usando componentes de Managed Extensibility Framework (MEF). 
 ### <a name="component-parts-and-composition-containers"></a>Partes do componente e contêineres de composição  
  Uma parte do componente é uma classe ou um membro de uma classe que pode fazer uma (ou ambas) das seguintes opções:  
   
--   Consumir o outro componente  
+- Consumir o outro componente  
   
--   Ser consumido por outro componente  
+- Ser consumido por outro componente  
   
- Por exemplo, considere um aplicativo de compras que tem um componente de entrada de ordem que depende dos dados de disponibilidade de produto fornecidos por um componente de estoque do depósito. Em termos MEF, parte de inventário pode *exportar* dados de disponibilidade do produto e a lata de parte de entrada de ordem *importar* os dados. A parte da entrada de ordem e a parte de inventário não precisa saber sobre outros; o *contêiner de composição* (fornecido pelo aplicativo host) é responsável por manter o conjunto de exportações e resolver as exportações e importações.  
+  Por exemplo, considere um aplicativo de compras que tem um componente de entrada de ordem que depende dos dados de disponibilidade de produto fornecidos por um componente de estoque do depósito. Em termos MEF, parte de inventário pode *exportar* dados de disponibilidade do produto e a lata de parte de entrada de ordem *importar* os dados. A parte da entrada de ordem e a parte de inventário não precisa saber sobre outros; o *contêiner de composição* (fornecido pelo aplicativo host) é responsável por manter o conjunto de exportações e resolver as exportações e importações.  
   
- O contêiner de composição, <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, normalmente é de propriedade de host. O contêiner de composição mantém uma *catálogo* componentes exportados.  
+  O contêiner de composição, <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, normalmente é de propriedade de host. O contêiner de composição mantém uma *catálogo* componentes exportados.  
   
 ### <a name="exporting-and-importing-component-parts"></a>Exportando e importando partes do componente  
  Você pode exportar qualquer funcionalidade, desde que ele é implementado como uma classe pública ou um membro público de uma classe (propriedade ou método). Você não precisará derivar sua parte do componente de <xref:System.ComponentModel.Composition.Primitives.ComposablePart>. Em vez disso, você deve adicionar um <xref:System.ComponentModel.Composition.ExportAttribute> atributo à classe ou membro da classe que você deseja exportar. Esse atributo especifica o *contrato* pelo componente que outra parte pode importar sua funcionalidade.  

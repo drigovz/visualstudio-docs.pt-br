@@ -1,7 +1,7 @@
 ---
 title: Definindo uma política de bloqueio para criar segmentos somente leitura | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8af4722d76b9d68f4e880175bccdb1730b6e163b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 298e649704731157164db363dfa198ff6f2cdc41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893814"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definindo uma política de bloqueio para criar segmentos somente leitura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definindo uma política de bloqueio para criar segmentos de somente leitura](https://docs.microsoft.com/visualstudio/modeling/defining-a-locking-policy-to-create-read-only-segments).  
-  
 A API de imutabilidade do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK de visualização e modelagem permite que um programa para bloqueio parte ou todo um modelo de linguagem específica do domínio (DSL) para que ele pode ser lido mas não alterado. Essa opção somente leitura pode ser usada, por exemplo, para que um usuário pode solicitar colegas para anotar e analisar um modelo de DSL, mas pode não permitir que alterem o original.  
   
  Além disso, como autor de uma DSL, você pode definir um *política de bloqueio.* Uma política de bloqueio define quais bloqueios são permitidas, não permitido ou obrigatório. Por exemplo, quando você publica uma DSL, você pode encorajar os desenvolvedores de terceiros para estendê-lo com novos comandos. Mas você também pode usar uma política de bloqueio para impedir que alterar o status somente leitura de partes especificadas do modelo.  
@@ -76,11 +74,11 @@ partition.SetLocks(Locks.Delete);
 ## <a name="lock-values"></a>Valores de bloqueio  
  Bloqueios podem ser definidos em Store, partição ou ModelElement individual. Bloqueios é um `Flags` enumeração: você pode combinar seus valores usando '&#124;'.  
   
--   Bloqueios de depósito sempre incluem os bloqueios de sua partição.  
+- Bloqueios de depósito sempre incluem os bloqueios de sua partição.  
   
--   Bloqueios de uma partição sempre incluem os bloqueios da Store.  
+- Bloqueios de uma partição sempre incluem os bloqueios da Store.  
   
- Você não pode definir um bloqueio em uma partição ou armazenar e ao mesmo tempo, desabilitar o bloqueio em um elemento individual.  
+  Você não pode definir um bloqueio em uma partição ou armazenar e ao mesmo tempo, desabilitar o bloqueio em um elemento individual.  
   
 |Valor|Isso significa se `IsLocked(Value)` é verdadeiro|  
 |-----------|------------------------------------------|  

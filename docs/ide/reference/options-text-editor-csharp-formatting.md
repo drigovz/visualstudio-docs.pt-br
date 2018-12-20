@@ -11,6 +11,7 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Wrapping
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.General
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.Formatting.General
 helpviewer_keywords:
 - formatting options [C#]
 - Text editor Options dialog box, formatting
@@ -19,14 +20,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: f302445ebc8de788fc6776900f73b45550d73fa3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 542d14e5913b1537d5e5e6aabb7264cd15add793
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626846"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220515"
 ---
-# <a name="options-text-editor-c-formatting"></a>Opções, editor de texto, C#, formatação
+# <a name="options-text-editor-c-code-style-formatting"></a>Opções, Editor de Texto, C#, Estilo de Código, Formatação
 
 Use a página de opções **Formatação** para definir opções para formatar o código no editor de códigos. Para acessar essa página de opções, escolha **Ferramentas** > **Opções**. Na caixa de diálogo **Opções**, escolha **Editor de Texto** > **C#** > **Estilo de Código** > **Formatação**.
 
@@ -57,12 +58,12 @@ Essas configurações definem o comando **Formatar Documento** para executar a l
 |**Adicionar/remover chaves de instruções de controle de única linha**|Quando selecionado, adiciona ou remove as chaves das instruções de controle de única linha quando **Edit.FormatDocument** é disparado.| csharp_prefer_braces<br/><br/>**Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Estilo de Código** > **Preferências do bloco de código** > **Preferir chaves** |
 |**Adicionar modificadores de acessibilidade**|Quando selecionada, adiciona os modificadores de acessibilidade ausentes quando **Edit.FormatDocument** é disparado.| dotnet_style_require_accessibility_modifiers |
 |**Classificar modificadores de acessibilidade**|Quando selecionada, classifica os modificadores de acessibilidade quando **Edit.FormatDocument** é disparado.| csharp_preferred_modifier_order<br/>visual_basic_preferred_modifier_order |
-|**Aplicar preferências de corpo de expressão/bloco**|Quando selecionada, converte os membros no corpo da expressão em corpos de bloco, ou vice-versa, quando **Edit.FormatDocument** é disparado.| [Opções do EditorConfig para membro no corpo da expressão](../../ide/editorconfig-code-style-settings-reference.md#expression_bodied_members)<br/><br/>**Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Estilo de Código** > **Preferências de expressão** > **Usar o corpo da expressão para métodos, construtores etc.**  |
-|**Aplicar preferências de tipo implícitas/explícitas**|Quando selecionada, converte `var` no tipo explícito, ou vice-versa, quando **Edit.FormatDocument** é disparado.| [Opções do EditorConfig para tipo explícito](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types)<br/><br/>**Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Estilo de Código** > **Preferências de 'var'**  |
+|**Aplicar preferências de corpo de expressão/bloco**|Quando selecionada, converte os membros no corpo da expressão em corpos de bloco, ou vice-versa, quando **Edit.FormatDocument** é disparado.| [Opções do EditorConfig para membro no corpo da expressão](../../ide/editorconfig-code-style-settings-reference.md#expression_bodied_members)<br/><br/>**Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Estilo de Código** > **Preferências de expressão** > **Usar o corpo da expressão para métodos, construtores etc.** |
+|**Aplicar preferências de tipo implícitas/explícitas**|Quando selecionada, converte `var` no tipo explícito, ou vice-versa, quando **Edit.FormatDocument** é disparado.| [Opções do EditorConfig para tipo explícito](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types)<br/><br/>**Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Estilo de Código** > **Preferências de 'var'** |
 |**Aplicar preferências de variáveis 'out' embutidas**|Quando selecionada, embute as variáveis `out` onde possível quando **Edit.FormatDocument** é disparado.| csharp_style_inlined_variable_declaration<br/><br/>**Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Estilo de Código** > **Preferências de variável** > **Preferir declaração de variável embutida** |
 |**Aplicar preferências de tipo de linguagem/estrutura**|Quando selecionada, converte tipos de linguagem em tipos de estrutura, ou vice-versa, quando **Edit.FormatDocument** é disparado.| dotnet_style_predefined_type_for_locals_parameters_members<br/>dotnet_style_predefined_type_for_member_access<br/><br/>**Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Estilo de Código** > **Preferências de tipo predefinidas** |
 |**Aplicar preferências de inicialização de objeto/coleção**|Quando selecionada, usa os inicializadores de objeto e de coleção sempre que possível quando **Edit.FormatDocument** é disparado.| dotnet_style_object_initializer<br/>dotnet_style_collection_initializer<br/><br/>**Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Estilo de Código** > **Preferências de expressão** > **Preferir inicializador de objeto** ou **Preferir inicializador de coleção** |
-|**Aplicar preferências de qualificação 'this.'**|Quando marcada, aplica as preferências de `this.` quando **Edit.FormatDocument** é disparado.| [Opções do EditorConfig para a qualificação this.](../../ide/editorconfig-code-style-settings-reference.md#this_and_me)<br/><br/>**Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Estilo de Código** > **Preferências de 'this.'**  |
+|**Aplicar preferências de qualificação 'this.'**|Quando marcada, aplica as preferências de `this.` quando **Edit.FormatDocument** é disparado.| [Opções do EditorConfig para a qualificação this.](../../ide/editorconfig-code-style-settings-reference.md#this_and_me)<br/><br/>**Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Estilo de Código** > **Preferências de 'this.'** |
 |**Tornar campos particulares readonly quando possível**|Quando selecionada, torna os campos particulares `readonly` sempre que possível quando **Edit.FormatDocument** é disparado.| dotnet_style_readonly_field<br/><br/>**Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Estilo de Código** > **Preferências de campo** > **Preferir readonly** |
 |**Remover conversões desnecessárias**|Quando selecionada, remove as conversões desnecessárias sempre que possível quando **Edit.FormatDocument** é disparado.| N/D |
 |**Remover variáveis não usadas**|Quando selecionada, remove as variáveis que não são usadas quando **Edit.FormatDocument** é disparado.| N/D |

@@ -1,7 +1,7 @@
 ---
 title: IDebugDisassemblyStream2::GetSize | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: 8f512704-12d0-46d2-959a-4f8dffe117b5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d91f08406bac9800fe716fc123495ae74418bfef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d5dfa1727727f42479e03331c4b2350bf92a93f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466297"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805366"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugDisassemblyStream2::GetSize](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdisassemblystream2-getsize).  
-  
 Obtém o tamanho em instruções deste fluxo de desmontagem.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetSize(   
+HRESULT GetSize(   
    UINT64* pnSize  
 );  
 ```  
   
 ```csharp  
-int GetSize(   
+int GetSize(   
    out ulong pnSize  
 );  
 ```  

@@ -1,7 +1,7 @@
 ---
 title: Referência SDK do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 048423c5ff981b1c3b14ccb9db1ce0ffe1076209
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4d5774c65be586a8183fe4a511a3ed21e79c38a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462476"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727161"
 ---
 # <a name="visual-studio-sdk-reference"></a>Referência ao SDK do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [referência de SDK do Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-sdk-reference).  
-  
 Esta seção contém informações sobre namespaces, namespaces relacionados e outras áreas de interesse do Visual Studio para desenvolvedores que usam o SDK do Visual Studio.  
   
 ## <a name="in-this-section"></a>Nesta seção
@@ -236,7 +234,7 @@ Esta seção contém informações sobre namespaces, namespaces relacionados e o
  <xref:Microsoft.VisualStudio.Threading>  
  Usado para threading do Visual Studio.  
   
- <xref:Microsoft.VisualStudio.Connected Services?qualifyHint=False&autoUpgrade=True> Usado para serviços conectados do Visual Studio.  
+ <xref:Microsoft.VisualStudio.ConnectedServices?qualifyHint=False&autoUpgrade=True> Usado para serviços conectados do Visual Studio.  
   
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) enumeração  
  Especifica os sinalizadores de host do IntelliSense.  

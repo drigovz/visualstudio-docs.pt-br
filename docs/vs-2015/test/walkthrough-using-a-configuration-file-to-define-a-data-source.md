@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: usando um arquivo de configuração para definir uma fonte de dados | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 48bd09cdd068adba49147222cc7458afe77c61e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f3dca876e777e8f40773ca42b05fece1c22fe33e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466672"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843035"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Instruções passo a passo: usando um arquivo de configuração para definir uma fonte de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: usando um arquivo de configuração para definir uma fonte de dados](https://docs.microsoft.com/visualstudio/test/walkthrough-using-a-configuration-file-to-define-a-data-source).  
-  
 Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo app.config para testes de unidade. Você aprenderá como criar um arquivo app.config que defina uma fonte de dados que possa ser usada pela classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. As tarefas ilustradas nesta explicação passo a passo incluem o seguinte:  
   
 -   Criando um arquivo app.config.  
@@ -67,13 +65,13 @@ Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo a
   
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Como adicionar a seção de configuração personalizada para o arquivo app.config  
   
-1.  O elemento raiz de app.config deve ser o elemento `configuration`. Crie um elemento `configSections` dentro do elemento `configuration`. O `configSections` deve ser o primeiro elemento no arquivo app.config.  
+1. O elemento raiz de app.config deve ser o elemento `configuration`. Crie um elemento `configSections` dentro do elemento `configuration`. O `configSections` deve ser o primeiro elemento no arquivo app.config.  
   
-2.  No elemento `configSections`, crie um elemento `section`.  
+2. No elemento `configSections`, crie um elemento `section`.  
   
-3.  No elemento `section`, adicione um atributo chamado `name` e atribua um valor igual a `microsoft.visualstudio.testtools` a ele. Adicione outro atributo chamado `type` e atribua a ele um valor igual a `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`  
+3. No elemento `section`, adicione um atributo chamado `name` e atribua um valor igual a `microsoft.visualstudio.testtools` a ele. Adicione outro atributo chamado `type` e atribua a ele um valor igual a `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`  
   
- O elemento `section` deverá ser similar a esse:  
+   O elemento `section` deverá ser similar a esse:  
   
 ```  
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>  
@@ -119,15 +117,15 @@ Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo a
 ## <a name="define-data-sources"></a>Definir fontes de dados  
  A seção de fontes de dados contém quatro atributos que são usados pelo mecanismo de teste para recuperar dados de uma fonte de dados.  
   
--   `name` define a identidade usada pelo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> para especificar qual fonte de dados será usada.  
+- `name` define a identidade usada pelo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> para especificar qual fonte de dados será usada.  
   
--   `connectionString` identifica a cadeia de conexão criada na seção anterior Definir cadeias de conexão.  
+- `connectionString` identifica a cadeia de conexão criada na seção anterior Definir cadeias de conexão.  
   
--   `dataTableName` define a tabela ou a planilha que contém os dados a serem usados no teste.  
+- `dataTableName` define a tabela ou a planilha que contém os dados a serem usados no teste.  
   
--   `dataAccessMethod` define a técnica para acessar valores de dados na fonte de dados.  
+- `dataAccessMethod` define a técnica para acessar valores de dados na fonte de dados.  
   
- Nesta seção, você definirá duas fontes de dados para usar em um teste de unidade.  
+  Nesta seção, você definirá duas fontes de dados para usar em um teste de unidade.  
   
 #### <a name="to-define-data-sources"></a>Como definir fontes de dados  
   

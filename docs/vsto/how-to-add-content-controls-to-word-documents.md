@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d3cce301d5d49a7660751ee1580c99794c16d38
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f654efacace3e4b7cbdfff8919309a09d4a544ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936960"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Como: adicionar conteúdo controles a documentos do Word
   Em projetos em nível de documento do Word, você pode adicionar controles de conteúdo para o documento em seu projeto em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO do Word, você pode adicionar controles de conteúdo para qualquer documento aberto no tempo de execução.  
@@ -43,24 +43,24 @@ ms.locfileid: "35669939"
   
  Este tópico descreve as seguintes tarefas:  
   
--   [Adicionar controles de conteúdo em tempo de design](#designtime)  
+- [Adicionar controles de conteúdo em tempo de design](#designtime)  
   
--   [Adicionar controles de conteúdo em tempo de execução em um projeto de nível de documento](#runtimedoclevel)  
+- [Adicionar controles de conteúdo em tempo de execução em um projeto de nível de documento](#runtimedoclevel)  
   
--   [Adicionar controles de conteúdo em tempo de execução em um projeto de suplemento do VSTO](#runtimeaddin)  
+- [Adicionar controles de conteúdo em tempo de execução em um projeto de suplemento do VSTO](#runtimeaddin)  
   
- Para obter informações sobre controles de conteúdo, consulte [controles de conteúdo](../vsto/content-controls.md).  
+  Para obter informações sobre controles de conteúdo, consulte [controles de conteúdo](../vsto/content-controls.md).  
   
 ##  <a name="designtime"></a> Adicionar conteúdo a controles em tempo de design  
  Há várias maneiras de adicionar controles de conteúdo para o documento em um projeto de nível de documento em tempo de design:  
   
--   Adicionar um controle de conteúdo do **controles do Word** guia o **caixa de ferramentas**.  
+- Adicionar um controle de conteúdo do **controles do Word** guia o **caixa de ferramentas**.  
   
--   Adicionar um controle de conteúdo ao documento da mesma maneira, você adicionaria o controle de conteúdo nativo no Word.  
+- Adicionar um controle de conteúdo ao documento da mesma maneira, você adicionaria o controle de conteúdo nativo no Word.  
   
--   Arraste um controle de conteúdo para seu documento a partir de **fontes de dados** janela. Isso é útil quando você deseja associar o controle a dados quando o controle é criado. Para obter mais informações, consulte [como: preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md) e [como: preencher documentos com dados de um banco de dados](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
+- Arraste um controle de conteúdo para seu documento a partir de **fontes de dados** janela. Isso é útil quando você deseja associar o controle a dados quando o controle é criado. Para obter mais informações, consulte [como: preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md) e [como: preencher documentos com dados de um banco de dados](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-content-control-to-a-document-by-using-the-toolbox"></a>Para adicionar um controle de conteúdo a um documento usando a caixa de ferramentas  
   
@@ -100,13 +100,13 @@ ms.locfileid: "35669939"
 ##  <a name="runtimedoclevel"></a> Adicionar controles de conteúdo em tempo de execução em um projeto de nível de documento  
  Você pode adicionar controles de conteúdo por meio de programação ao documento em tempo de execução usando métodos das <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> propriedade do `ThisDocument` classe em seu projeto. Cada método tem três sobrecargas que você pode usar para adicionar um controle de conteúdo das seguintes maneiras:  
   
--   Adicione um controle na seleção atual.  
+- Adicione um controle na seleção atual.  
   
--   Adicione um controle em um intervalo especificado.  
+- Adicione um controle em um intervalo especificado.  
   
--   Adicione um controle com base em um controle de conteúdo nativo no documento.  
+- Adicione um controle com base em um controle de conteúdo nativo no documento.  
   
- Criados dinamicamente o conteúdo de controles não são mantidos no documento quando o documento é fechado. No entanto, um controle de conteúdo nativo permanece no documento. Você pode recriar um controle de conteúdo com base em um controle de conteúdo nativo na próxima vez em que o documento é aberto. Para obter mais informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Criados dinamicamente o conteúdo de controles não são mantidos no documento quando o documento é fechado. No entanto, um controle de conteúdo nativo permanece no documento. Você pode recriar um controle de conteúdo com base em um controle de conteúdo nativo na próxima vez em que o documento é aberto. Para obter mais informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 > [!NOTE]  
 >  Para adicionar um controle de conteúdo da caixa de seleção a um documento em um projeto do Word 2010, você deve criar um <xref:Microsoft.Office.Tools.Word.ContentControl> objeto. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md).  
@@ -141,15 +141,15 @@ ms.locfileid: "35669939"
 ##  <a name="runtimeaddin"></a> Adicionar controles de conteúdo em tempo de execução em um projeto de suplemento do VSTO  
  Você pode adicionar controles de conteúdo por meio de programação para qualquer documento aberto no tempo de execução usando um suplemento do VSTO. Para fazer isso, gerar uma <xref:Microsoft.Office.Tools.Word.Document> hospedar o item que se baseia em um documento aberto e, em seguida, usar métodos do <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> propriedade deste item de host. Cada método tem três sobrecargas que você pode usar para adicionar um controle de conteúdo das seguintes maneiras:  
   
--   Adicione um controle na seleção atual.  
+- Adicione um controle na seleção atual.  
   
--   Adicione um controle em um intervalo especificado.  
+- Adicione um controle em um intervalo especificado.  
   
--   Adicione um controle com base em um controle de conteúdo nativo no documento.  
+- Adicione um controle com base em um controle de conteúdo nativo no documento.  
   
- Criados dinamicamente o conteúdo de controles não são mantidos no documento quando o documento é fechado. No entanto, um controle de conteúdo nativo permanece no documento. Você pode recriar um controle de conteúdo com base em um controle de conteúdo nativo na próxima vez em que o documento é aberto. Para obter mais informações, consulte [persistir controles dinâmicos em documentos do Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+  Criados dinamicamente o conteúdo de controles não são mantidos no documento quando o documento é fechado. No entanto, um controle de conteúdo nativo permanece no documento. Você pode recriar um controle de conteúdo com base em um controle de conteúdo nativo na próxima vez em que o documento é aberto. Para obter mais informações, consulte [persistir controles dinâmicos em documentos do Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
- Para obter mais informações sobre como gerar itens de host em projetos de suplemento do VSTO, consulte [documentos de estender o Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+  Para obter mais informações sobre como gerar itens de host em projetos de suplemento do VSTO, consulte [documentos de estender o Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 > [!NOTE]  
 >  Para adicionar um controle de conteúdo da caixa de seleção a um documento, você deve criar um <xref:Microsoft.Office.Tools.Word.ContentControl> objeto. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md).  

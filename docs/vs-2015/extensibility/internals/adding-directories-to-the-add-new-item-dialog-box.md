@@ -1,7 +1,7 @@
 ---
 title: Adicionar diretórios para a caixa de diálogo Novo Item adicionar | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 67ae8af6-3752-49e8-8ce3-007aca5f7982
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a4623df5794ae29b97bbbdc077c465d822d6f4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: d094f9911b80f3cff3e648da2593c62e0429fb54
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462854"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751497"
 ---
 # <a name="adding-directories-to-the-add-new-item-dialog-box"></a>Adicionando diretórios à caixa de diálogo Adicionar Novo Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionar diretórios para a caixa de diálogo Adicionar Novo Item](https://docs.microsoft.com/visualstudio/extensibility/internals/adding-directories-to-the-add-new-item-dialog-box).  
-  
 O exemplo de código a seguir demonstra como registrar um novo conjunto de diretórios para o **Adicionar Novo Item** caixa de diálogo. Diretórios para o **Adicionar Novo Item** caixa de diálogo são diferentes para cada projeto. Portanto, os diretórios são registrados na subchave projetos, encontrada no \<HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects >:  
   
 ## <a name="the-registry-script"></a>O Script de registro  

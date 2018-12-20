@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Implementar trechos de código | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86d0ef82422b5f9cd419bf31e8b92b789fac1226
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 6fe91fd4e80c14e9b4cf59136fa6d3e0e003f554
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474582"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752057"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>Passo a passo: implementando snippets de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Implementando trechos de código](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-implementing-code-snippets).  
-  
 Você pode criar trechos de código e incluí-los em uma extensão de editor para que os usuários da extensão podem adicioná-los para seu próprio código.  
   
  Um trecho de código é um fragmento de código ou outro texto que pode ser incorporado em um arquivo. Para exibir todos os trechos de código que foram registrados para linguagens de programação específicas na **ferramentas** menu, clique em **Gerenciador de trechos de código**. Para inserir um trecho de código em um arquivo, o botão direito do mouse onde você deseja que o trecho de código, clique em **Inserir trecho** ou **envolver com**, localize o trecho de código que você deseja e, em seguida, clique duas vezes nele. Pressione TAB ou SHIFT + TAB para modificar as partes relevantes do trecho de código e, em seguida, pressione ENTER ou ESC para aceitá-lo. Para obter mais informações, consulte [Snippets de Código](../ide/code-snippets.md).  
@@ -33,13 +31,13 @@ Você pode criar trechos de código e incluí-los em uma extensão de editor par
   
  Este passo a passo ensina como realizar essas tarefas:  
   
-1.  Crie e registre os trechos de código para um idioma específico.  
+1. Crie e registre os trechos de código para um idioma específico.  
   
-2.  Adicione a **Inserir trecho** comando ao menu de atalho.  
+2. Adicione a **Inserir trecho** comando ao menu de atalho.  
   
-3.  Implementar a expansão de trecho de código.  
+3. Implementar a expansão de trecho de código.  
   
- Este passo a passo se baseia [instruções passo a passo: exibindo o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md).  
+   Este passo a passo se baseia [instruções passo a passo: exibindo o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -49,72 +47,72 @@ Você pode criar trechos de código e incluí-los em uma extensão de editor par
   
  As etapas a seguir demonstram como criar trechos de código e associá-los com um GUID específico.  
   
-1.  Crie a seguinte estrutura de diretório:  
+1. Crie a seguinte estrutura de diretório:  
   
-     **%InstallDir%\TestSnippets\Snippets\1033\\**  
+    **%InstallDir%\TestSnippets\Snippets\1033\\**  
   
-     em que *% InstallDir %* é a pasta de instalação do Visual Studio. (Embora esse caminho normalmente é usado para instalar os trechos de código, você pode especificar qualquer caminho.)  
+    em que *% InstallDir %* é a pasta de instalação do Visual Studio. (Embora esse caminho normalmente é usado para instalar os trechos de código, você pode especificar qualquer caminho.)  
   
-2.  Na pasta \1033\, crie um arquivo. XML e denomine **TestSnippets.xml**. (Embora esse nome é usado normalmente para um arquivo de índice de trecho de código, você pode especificar qualquer nome desde que ele tenha uma extensão de nome de arquivo. XML.) Adicione o seguinte texto e, em seguida, exclua o GUID do espaço reservado e adicione seus próprios.  
+2. Na pasta \1033\, crie um arquivo. XML e denomine **TestSnippets.xml**. (Embora esse nome é usado normalmente para um arquivo de índice de trecho de código, você pode especificar qualquer nome desde que ele tenha uma extensão de nome de arquivo. XML.) Adicione o seguinte texto e, em seguida, exclua o GUID do espaço reservado e adicione seus próprios.  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <SnippetCollection>  
-        <Language Lang="TestSnippets" Guid="{00000000-0000-0000-0000-000000000000}">  
-            <SnippetDir>  
-                <OnOff>On</OnOff>  
-                <Installed>true</Installed>  
-                <Locale>1033</Locale>  
-                <DirPath>%InstallRoot%\TestSnippets\Snippets\%LCID%\</DirPath>  
-                <LocalizedName>Snippets</LocalizedName>  
-            </SnippetDir>  
-        </Language>  
-    </SnippetCollection>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <SnippetCollection>  
+       <Language Lang="TestSnippets" Guid="{00000000-0000-0000-0000-000000000000}">  
+           <SnippetDir>  
+               <OnOff>On</OnOff>  
+               <Installed>true</Installed>  
+               <Locale>1033</Locale>  
+               <DirPath>%InstallRoot%\TestSnippets\Snippets\%LCID%\</DirPath>  
+               <LocalizedName>Snippets</LocalizedName>  
+           </SnippetDir>  
+       </Language>  
+   </SnippetCollection>  
+   ```  
   
-3.  Crie um arquivo na pasta de trecho de código, nomeie- **testar**`.snippet`e, em seguida, adicione o seguinte texto:  
+3. Crie um arquivo na pasta de trecho de código, nomeie- **testar**`.snippet`e, em seguida, adicione o seguinte texto:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
-        <CodeSnippet Format="1.0.0">  
-            <Header>  
-                <Title>Test replacement fields</Title>  
-                <Shortcut>test</Shortcut>  
-                <Description>Code snippet for testing replacement fields</Description>  
-                <Author>MSIT</Author>  
-                <SnippetTypes>  
-                    <SnippetType>Expansion</SnippetType>  
-                </SnippetTypes>  
-            </Header>  
-            <Snippet>  
-                <Declarations>  
-                    <Literal>  
-                      <ID>param1</ID>  
-                        <ToolTip>First field</ToolTip>  
-                        <Default>first</Default>  
-                    </Literal>  
-                    <Literal>  
-                        <ID>param2</ID>  
-                        <ToolTip>Second field</ToolTip>  
-                        <Default>second</Default>  
-                    </Literal>  
-                </Declarations>  
-                <References>  
-                   <Reference>  
-                       <Assembly>System.Windows.Forms.dll</Assembly>  
-                   </Reference>  
-                </References>  
-                <Code Language="TestSnippets">  
-                    <![CDATA[MessageBox.Show("$param1$");  
-         MessageBox.Show("$param2$");]]>  
-                </Code>    
-            </Snippet>  
-        </CodeSnippet>  
-    </CodeSnippets>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
+       <CodeSnippet Format="1.0.0">  
+           <Header>  
+               <Title>Test replacement fields</Title>  
+               <Shortcut>test</Shortcut>  
+               <Description>Code snippet for testing replacement fields</Description>  
+               <Author>MSIT</Author>  
+               <SnippetTypes>  
+                   <SnippetType>Expansion</SnippetType>  
+               </SnippetTypes>  
+           </Header>  
+           <Snippet>  
+               <Declarations>  
+                   <Literal>  
+                     <ID>param1</ID>  
+                       <ToolTip>First field</ToolTip>  
+                       <Default>first</Default>  
+                   </Literal>  
+                   <Literal>  
+                       <ID>param2</ID>  
+                       <ToolTip>Second field</ToolTip>  
+                       <Default>second</Default>  
+                   </Literal>  
+               </Declarations>  
+               <References>  
+                  <Reference>  
+                      <Assembly>System.Windows.Forms.dll</Assembly>  
+                  </Reference>  
+               </References>  
+               <Code Language="TestSnippets">  
+                   <![CDATA[MessageBox.Show("$param1$");  
+        MessageBox.Show("$param2$");]]>  
+               </Code>    
+           </Snippet>  
+       </CodeSnippet>  
+   </CodeSnippets>  
+   ```  
   
- As etapas a seguir mostram como registrar os trechos de código.  
+   As etapas a seguir mostram como registrar os trechos de código.  
   
 #### <a name="to-register-code-snippets-for-a-specific-guid"></a>Para registrar os trechos de código para um GUID específico  
   

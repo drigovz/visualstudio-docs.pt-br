@@ -1,5 +1,5 @@
 ---
-title: Atribuindo funções a um Test Controller ou Test Agent para testes automatizados no Visual Studio
+title: Atribuir Funções a um Controlador de teste e Agente de teste para Testes automatizados
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,24 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f939947c4b96584439d85c33c234dc769531888d
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 021693266278bd705678c22d2c3f07e534901e5a
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280605"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895334"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Atribuir funções a um controlador de teste e a um agente de teste
 
 Este passo a passo demonstra como criar e definir uma configuração de teste que usa um controlador de teste e um agente de teste para distribuir testes em vários computadores usando o Visual Studio. Além disso, esta explicação passo a passo demonstra como adicionar adaptadores de diagnóstico e dados à configuração de teste.
 
-Nesta explicação passo a passo, você concluirá as seguintes tarefas:
-
--   Criar uma configuração de teste.
-
--   Atribuir funções a um controlador de teste e agentes de teste.
-
--   Atribuir um adaptador de diagnóstico e dados à sua configuração de teste.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

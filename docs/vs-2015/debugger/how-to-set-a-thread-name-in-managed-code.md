@@ -1,7 +1,7 @@
 ---
 title: 'Como: definir um nome de Thread em código gerenciado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,21 +21,19 @@ helpviewer_keywords:
 - debugging [Visual Studio], threads
 ms.assetid: c0c4d74a-0314-4b71-81c9-b0b019347ab8
 caps.latest.revision: 31
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0175bee3280f3ecfdb49fc280007810d4e1c2860
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 585c372a5ffcb71fcc8a2f7e56bb95380b3c41ca
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473263"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729520"
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>Como definir um nome de thread no código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: definir um nome de Thread em código gerenciado](https://docs.microsoft.com/visualstudio/debugger/how-to-set-a-thread-name-in-managed-code).  
-  
 A nomeação de thread é possível em qualquer edição do Visual Studio. Nomeação de thread é útil para manter o controle de threads na **Threads** janela. Porque o **Threads** janela não está disponível nas edições do Visual Studio Express, a nomeação de thread tem pouca utilidade nas edições Express.  
   
  Para definir um nome do thread no código gerenciado, use a propriedade <xref:System.Threading.Thread.Name%2A>.  

@@ -1,7 +1,7 @@
 ---
 title: Analisando testes de IU codificado usando logs de teste de IU codificado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8da6f37e36dd249c6b458b31870259f30a00f883
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e492f3bfaf725c157060a23778e1f1725bb88ee3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473846"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188715"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisando testes de interface de usuário codificada usando logs de teste de interface de usuário codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [analisando codificado da interface do usuário testes usando codificado da interface do usuário Logs de teste](https://docs.microsoft.com/visualstudio/test/analyzing-coded-ui-tests-using-coded-ui-test-logs).  
-  
 Os logs de teste de IU codificado filtram e registram informações importantes sobre as execuções de teste de IU codificado.  
   
  **Requisitos**  

@@ -1,7 +1,7 @@
 ---
 title: Exibição de processo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ helpviewer_keywords:
 - Profiling Tools,process report
 ms.assetid: 6d4e2a5d-9f17-4ece-a6f1-75836e1fc382
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6d0c560cdd40651763837bba4e87372eba76007
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 56fb301436b3fbe9374301fa4f7a8fd421485cbb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465012"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794498"
 ---
 # <a name="process-view"></a>Exibição de processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição processo](https://docs.microsoft.com/visualstudio/profiling/process-view).  
-  
 A exibição do processo exibe dados de criação de perfil para os processos e threads executados durante o processo de criação de perfil.  
   
  Os processos são listados por nome. Os threads são listados como nós filhos do processo que os criou. Os threads são nomeados pela função que iniciou o thread ou pelo rótulo **[ntdll.dll]** quando não há símbolos disponíveis.  

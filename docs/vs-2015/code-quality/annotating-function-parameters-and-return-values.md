@@ -1,7 +1,7 @@
 ---
 title: Anotando parâmetros de função e valores de retorno | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -128,21 +128,19 @@ f1_keywords:
 - _Ret_null_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 caps.latest.revision: 17
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8c3a0cad60dc7867b31238669a612cdb0dac4097
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7886b7a49999890520aaeaf216159647cd9fdf27
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472918"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788388"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotando parâmetros de função e valores de retorno
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [anotando parâmetros de função e retornar valores](https://docs.microsoft.com/visualstudio/code-quality/annotating-function-parameters-and-return-values).  
-  
 Este artigo descreve os usos comuns de anotações para parâmetros de função simples — escalares e ponteiros para estruturas e classes — e a maioria dos tipos de buffers.  Este artigo também mostra padrões comuns de uso para anotações. Para anotações adicionais que estão relacionadas a funções, consulte [anotando o comportamento da função](../code-quality/annotating-function-behavior.md)  
   
 ## <a name="pointer-parameters"></a>Parâmetros de ponteiro  
@@ -306,92 +304,92 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
   
  **Descrições e anotações**  
   
--   `_Outptr_`  
+- `_Outptr_`  
   
-     O parâmetro não pode ser nulo e no pós-estado de o local apontado para não pode ser nulo e deve ser válido.  
+   O parâmetro não pode ser nulo e no pós-estado de o local apontado para não pode ser nulo e deve ser válido.  
   
--   `_Outptr_opt_`  
+- `_Outptr_opt_`  
   
-     O parâmetro pode ser nulo, mas no pós-estado de o local apontado para não pode ser nulo e deve ser válido.  
+   O parâmetro pode ser nulo, mas no pós-estado de o local apontado para não pode ser nulo e deve ser válido.  
   
--   `_Outptr_result_maybenull_`  
+- `_Outptr_result_maybenull_`  
   
-     O parâmetro não pode ser nulo e no pós-estado de o local apontado pode ser nulo.  
+   O parâmetro não pode ser nulo e no pós-estado de o local apontado pode ser nulo.  
   
--   `_Outptr_opt_result_maybenull_`  
+- `_Outptr_opt_result_maybenull_`  
   
-     O parâmetro pode ser nulo e no pós-estado de o local apontado pode ser nulo.  
+   O parâmetro pode ser nulo e no pós-estado de o local apontado pode ser nulo.  
   
- Na tabela a seguir, as subcadeias de caracteres adicionais são inseridas no nome da anotação para qualificar ainda mais o significado da anotação.  Diversas subcadeias de caracteres são `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, e `_to_`.  
+  Na tabela a seguir, as subcadeias de caracteres adicionais são inseridas no nome da anotação para qualificar ainda mais o significado da anotação.  Diversas subcadeias de caracteres são `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, e `_to_`.  
   
 > [!IMPORTANT]
 >  Se a interface que você estiver fazendo anotações é COM, use o formulário COM dessas anotações. Não use anotações COM qualquer outra interface de tipo.  
   
  **Descrições e anotações**  
   
--   `_Outptr_result_z_`  
+- `_Outptr_result_z_`  
   
-     `_Outptr_opt_result_z_`  
+   `_Outptr_opt_result_z_`  
   
-     `_Outptr_result_maybenull_z_`  
+   `_Outptr_result_maybenull_z_`  
   
-     `_Ouptr_opt_result_maybenull_z_`  
+   `_Ouptr_opt_result_maybenull_z_`  
   
-     O ponteiro retornado tem o `_Null_terminated_` anotação.  
+   O ponteiro retornado tem o `_Null_terminated_` anotação.  
   
--   `_COM_Outptr_`  
+- `_COM_Outptr_`  
   
-     `_COM_Outptr_opt_`  
+   `_COM_Outptr_opt_`  
   
-     `_COM_Outptr_result_maybenull_`  
+   `_COM_Outptr_result_maybenull_`  
   
-     `_COM_Outptr_opt_result_maybenull_`  
+   `_COM_Outptr_opt_result_maybenull_`  
   
-     O ponteiro retornado tem semântica COM e, portanto, carrega um `_On_failure_` pós-condição em que o ponteiro retornado é nulo.  
+   O ponteiro retornado tem semântica COM e, portanto, carrega um `_On_failure_` pós-condição em que o ponteiro retornado é nulo.  
   
--   `_Outptr_result_buffer_(s)`  
+- `_Outptr_result_buffer_(s)`  
   
-     `_Outptr_result_bytebuffer_(s)`  
+   `_Outptr_result_bytebuffer_(s)`  
   
-     `_Outptr_opt_result_buffer_(s)`  
+   `_Outptr_opt_result_buffer_(s)`  
   
-     `_Outptr_opt_result_bytebuffer_(s)`  
+   `_Outptr_opt_result_bytebuffer_(s)`  
   
-     O ponteiro retornado aponta para um buffer válido de tamanho `s` elementos ou bytes.  
+   O ponteiro retornado aponta para um buffer válido de tamanho `s` elementos ou bytes.  
   
--   `_Outptr_result_buffer_to_(s, c)`  
+- `_Outptr_result_buffer_to_(s, c)`  
   
-     `_Outptr_result_bytebuffer_to_(s, c)`  
+   `_Outptr_result_bytebuffer_to_(s, c)`  
   
-     `_Outptr_opt_result_buffer_to_(s,c)`  
+   `_Outptr_opt_result_buffer_to_(s,c)`  
   
-     `_Outptr_opt_result_bytebuffer_to_(s,c)`  
+   `_Outptr_opt_result_bytebuffer_to_(s,c)`  
   
-     O ponteiro retornado aponta para um buffer de tamanho `s` elementos ou bytes, dos quais o primeiro `c` são válidos.  
+   O ponteiro retornado aponta para um buffer de tamanho `s` elementos ou bytes, dos quais o primeiro `c` são válidos.  
   
- Certas convenções de interface presumem que os parâmetros de saída são inúteis em caso de falha.  Exceto para explicitamente COM código, os formulários na tabela a seguir são preferenciais.  Para o código de COM, use formas COM correspondentes que estão listadas na seção anterior.  
+  Certas convenções de interface presumem que os parâmetros de saída são inúteis em caso de falha.  Exceto para explicitamente COM código, os formulários na tabela a seguir são preferenciais.  Para o código de COM, use formas COM correspondentes que estão listadas na seção anterior.  
   
- **Descrições e anotações**  
+  **Descrições e anotações**  
   
--   `_Result_nullonfailure_`  
+- `_Result_nullonfailure_`  
   
-     Modifica a outras anotações. O resultado é definido como nulo se a função falhar.  
+   Modifica a outras anotações. O resultado é definido como nulo se a função falhar.  
   
--   `_Result_zeroonfailure_`  
+- `_Result_zeroonfailure_`  
   
-     Modifica a outras anotações. O resultado é definido como zero se a função falhar.  
+   Modifica a outras anotações. O resultado é definido como zero se a função falhar.  
   
--   `_Outptr_result_nullonfailure_`  
+- `_Outptr_result_nullonfailure_`  
   
-     O ponteiro retornado aponta para um buffer válido se a função for bem-sucedida, ou nulo se a função falhar. Essa anotação é para um parâmetro não opcionais.  
+   O ponteiro retornado aponta para um buffer válido se a função for bem-sucedida, ou nulo se a função falhar. Essa anotação é para um parâmetro não opcionais.  
   
--   `_Outptr_opt_result_nullonfailure_`  
+- `_Outptr_opt_result_nullonfailure_`  
   
-     O ponteiro retornado aponta para um buffer válido se a função for bem-sucedida, ou nulo se a função falhar. Essa anotação é para um parâmetro opcional.  
+   O ponteiro retornado aponta para um buffer válido se a função for bem-sucedida, ou nulo se a função falhar. Essa anotação é para um parâmetro opcional.  
   
--   `_Outref_result_nullonfailure_`  
+- `_Outref_result_nullonfailure_`  
   
-     O ponteiro retornado aponta para um buffer válido se a função for bem-sucedida, ou nulo se a função falhar. Essa anotação é para um parâmetro de referência.  
+   O ponteiro retornado aponta para um buffer válido se a função for bem-sucedida, ou nulo se a função falhar. Essa anotação é para um parâmetro de referência.  
   
 ## <a name="output-reference-parameters"></a>Parâmetros de referência de saída  
  Um uso comum do parâmetro de referência é para parâmetros de saída.  Para parâmetros de referência de saída simples — por exemplo, `int&`—`_Out_` fornece a semântica correta.  No entanto, quando o valor de saída é um ponteiro — por exemplo `int *&`— as anotações equivalentes de ponteiro, como `_Outptr_ int **` não fornecem a semântica correta.  Para expressar concisa a semântica de referência de parâmetros de saída para tipos de ponteiro, use essas anotações de composição:  

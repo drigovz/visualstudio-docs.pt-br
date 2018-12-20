@@ -1,7 +1,7 @@
 ---
 title: Como iniciar e terminar a coleta de dados de desempenho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,21 +18,19 @@ helpviewer_keywords:
 - profiling tools, ending sessions
 ms.assetid: 9f6eb0d5-d9e9-4bec-b627-445065610bce
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7c7848f8bb45ae9c97dacdd75c42e8345646e5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 393cb5776043f3e9543cc9fe2c45773e36c09dd7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473922"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790026"
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>Como iniciar e terminar a coleta de dados de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: início e término coleta de dados de desempenho](https://docs.microsoft.com/visualstudio/profiling/how-to-start-and-end-performance-data-collection).  
-  
 Você deve adicionar o binário de destino do qual você deseja criar o perfil para a sessão de desempenho antes de iniciar a criação de perfil. Para adicionar um destino, clique com botão direito do mouse em **Destinos** no **Gerenciador de Desempenho** e clique em **Adicionar Binário de Destino**. Na caixa de diálogo **Adicionar Binário de Destino**, selecione o nome do arquivo e clique em **Abrir**. Um novo binário é adicionado.  
   
 ### <a name="to-start-profiling"></a>Para iniciar a criação de perfil  

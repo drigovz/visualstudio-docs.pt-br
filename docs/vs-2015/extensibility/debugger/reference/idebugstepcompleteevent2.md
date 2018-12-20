@@ -1,7 +1,7 @@
 ---
 title: IDebugStepCompleteEvent2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: eba2b76e-f90d-486b-ae5c-c47f1b8ba2e5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a12dafa55996b19ca859433176cc6fd7ab2bc509
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 53f3a65ca436e7c650736ac5b90390f8c0a0380a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472849"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783136"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugStepCompleteEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugstepcompleteevent2).  
-  
 Essa interface é enviada pelo mecanismo de depuração (DE) para o Gerenciador de sessão de depuração (SDM) quando o programa que está sendo depurado conclui uma etapa em, uma etapa de failover ou uma etapa de fora de uma linha de código-fonte ou a instrução ou instrução.  
   
 ## <a name="syntax"></a>Sintaxe  

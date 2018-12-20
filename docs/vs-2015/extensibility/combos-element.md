@@ -1,7 +1,7 @@
 ---
 title: Elemento combos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: ef48d2d2-0c47-4f93-8cfe-52026b6c463e
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8822907b8b813c9a18b36920636439c17950e9bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b3a7b0d378295e0eea2aaf3e7292b670bc481f2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466251"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744984"
 ---
 # <a name="combos-element"></a>Elemento Combos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento Combos](https://docs.microsoft.com/visualstudio/extensibility/combos-element).  
-  
 Grupos [elemento Combo](../extensibility/combo-element.md) elementos.  
   
 ## <a name="syntax"></a>Sintaxe  

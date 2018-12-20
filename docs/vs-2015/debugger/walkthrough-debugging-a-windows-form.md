@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Depurando um formulário do Windows | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,21 +28,19 @@ helpviewer_keywords:
 - debugging Windows Forms, walkthroughs
 ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
 caps.latest.revision: 31
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7cf2fd93c76d4be7c032518148acad27b4937f3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 8f43835374ac74d50e1e81623ecf268fbfbfe8ca
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473261"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726598"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Instruções passo a passo: um Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: depurando um Windows Form](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-a-windows-form).  
-  
 Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form cria um aplicativo padrão do Windows. Você pode concluir este passo a passo usando o Visual Basic, C# ou C++.  
   
  Primeiro, você deve fechar as soluções abertas.  
@@ -146,7 +144,7 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
   
 6.  Sobre o **Debug** menu, escolha **intervir**.  
   
-     O valor de TextBox1.Text é alterado na **Watch1**janela para:  
+     O valor de TextBox1.Text é alterado na **Watch1** janela para:  
   
     ```  
     Button was clicked!  

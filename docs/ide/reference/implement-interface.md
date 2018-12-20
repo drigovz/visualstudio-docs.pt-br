@@ -1,5 +1,5 @@
 ---
-title: Implementar uma interface no Visual Studio
+title: Implementar uma interface
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4b17e924a6736d37b78709a516f6ca9068d4711c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7abe20831c920a0d4fd74f60a75e6112c480ab39
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946436"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068468"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementar uma interface no Visual Studio
 
@@ -24,11 +24,11 @@ Esta geração de código aplica-se a:
 
 - Visual Basic
 
-**O quê:** permite gerar imediatamente o código necessário para implementar uma interface.
+**O quê:** Permite gerar imediatamente o código necessário para implementar uma interface.
 
-**Quando:** você deseja herdar de uma interface.
+**Quando:** Você deseja herdar de uma interface.
 
-**Por quê:** você pode implementar manualmente todas as interfaces uma por uma; no entanto, esse recurso gerará automaticamente todas as assinaturas de método.
+**Por que:** Você pode implementar manualmente todas as interfaces uma por uma; no entanto, essa funcionalidade gerará todas as assinaturas de método automaticamente.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -36,22 +36,22 @@ Esta geração de código aplica-se a:
 
    - C#:
 
-    ![Código em C# realçado](media/interface-highlight-cs.png)
+       ![Código em C# realçado](media/interface-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código em VB realçado](media/interface-highlight-vb.png)
+       ![Código em VB realçado](media/interface-highlight-vb.png)
 
-1. Depois, siga um destes procedimentos:
+2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
-     - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
-     - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece.
-     - Clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece na margem esquerda se o cursor de texto já estiver na linha com o rabisco vermelho.
+      - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
+      - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) ícone que aparece.
+      - Clique no ícone de ![Lâmpada](media/bulb-cs.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha com o rabisco vermelho.
 
-1. Selecione **Implementar interface** no menu suspenso.
+3. Selecione **Implementar interface** no menu suspenso.
 
    ![Visualização da implementação de interface](media/interface-preview-cs.png)
 
@@ -63,11 +63,11 @@ Esta geração de código aplica-se a:
 
    - C#:
 
-      ![Resultado da implementação da interface em C#](media/interface-result-cs.png)
+       ![Resultado da implementação da interface em C#](media/interface-result-cs.png)
 
    - Visual Basic:
 
-      ![Resultado da implementação da interface em VB](media/interface-result-vb.png)
+       ![Resultado da implementação da interface em VB](media/interface-result-vb.png)
 
    > [!TIP]
    > (Somente C#) Use a opção **Implementar interface explicitamente** para prefixar cada método gerado com o nome da interface a fim de evitar colisões de nome.

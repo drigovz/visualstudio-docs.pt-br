@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e7820723c88fd76639fa47e5c97ad179a208fc18
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 517058c99a6ec5a297b95324decbb2cfcbe04271
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950752"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Caixa de diálogo Seletor de URL (desenvolvimento do SharePoint no Visual Studio)
   Na caixa de diálogo Seletor de URL, você pode escolher arquivos como arquivos de página mestra ou arquivos de imagem que estão localizados em seu projeto ou no servidor local que está executando o SharePoint.  
@@ -36,27 +36,27 @@ ms.locfileid: "37118343"
   
  Expanda o **projeto** nó escolher arquivos em seu projeto. Para aparecer como selecionável na caixa de diálogo, arquivos em seu projeto devem atender aos seguintes critérios:  
   
--   O arquivo deve estar contido em uma pasta mapeada.  
+- O arquivo deve estar contido em uma pasta mapeada.  
   
--   O arquivo deve ser adicionado ao pacote de solução.  
+- O arquivo deve ser adicionado ao pacote de solução.  
   
--   O arquivo não pode ser localizado em outro projeto.  
+- O arquivo não pode ser localizado em outro projeto.  
   
- Se você quiser fazer referência a arquivos que não atendem a esses critérios, você precisa digitar o caminho do arquivo manualmente.  
+  Se você quiser fazer referência a arquivos que não atendem a esses critérios, você precisa digitar o caminho do arquivo manualmente.  
   
- Expanda o **Server** nó escolher arquivos que estão localizados no servidor local que está executando o SharePoint. Para aparecer como selecionável na caixa de diálogo, esses arquivos devem atender aos seguintes critérios:  
+  Expanda o **Server** nó escolher arquivos que estão localizados no servidor local que está executando o SharePoint. Para aparecer como selecionável na caixa de diálogo, esses arquivos devem atender aos seguintes critérios:  
   
--   O arquivo deve estar localizado em uma das seguintes pastas mapeadas: **imagens**, **Layouts**, ou **ControlTemplates**.  
+- O arquivo deve estar localizado em uma das seguintes pastas mapeadas: **imagens**, **Layouts**, ou **ControlTemplates**.  
   
--   O arquivo não pode ser localizado no banco de dados de conteúdo do SharePoint.  
+- O arquivo não pode ser localizado no banco de dados de conteúdo do SharePoint.  
   
- Se você quiser fazer referência a arquivos que não atendem a esses critérios, você precisa digitar o caminho do arquivo manualmente.  
+  Se você quiser fazer referência a arquivos que não atendem a esses critérios, você precisa digitar o caminho do arquivo manualmente.  
   
- **Conteúdo da pasta**  
- Exibe uma lista de arquivos na pasta selecionada. Escolha um arquivo e, em seguida, escolha o **Okey** botão para fechar a caixa de diálogo e enviar sua seleção para o processo que o chamou.  
+  **Conteúdo da pasta**  
+  Exibe uma lista de arquivos na pasta selecionada. Escolha um arquivo e, em seguida, escolha o **Okey** botão para fechar a caixa de diálogo e enviar sua seleção para o processo que o chamou.  
   
- **Arquivos de tipo**  
- Permite que você escolha dentre uma lista de arquivos que são apropriadas para a tarefa que você está executando.  
+  **Arquivos de tipo**  
+  Permite que você escolha dentre uma lista de arquivos que são apropriadas para a tarefa que você está executando.  
   
 ## <a name="see-also"></a>Consulte também
  [Criar páginas de aplicativo do SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   

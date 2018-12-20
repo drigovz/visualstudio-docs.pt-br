@@ -1,7 +1,7 @@
 ---
 title: IDebugModule3::IsUserCode | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,25 +17,23 @@ ms.assetid: 77022946-bb8b-4114-aa81-614df6e54b13
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6e633006cd41cfd88c85d8213498786c13fad9b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db7f32844118751a1409dedf55cfc8ae0b97b9f4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466315"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773945"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugModule3::IsUserCode](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmodule3-isusercode).  
-  
 Recupera informações sobre se o módulo representa o código do usuário ou não.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT IsUserCode(  
-   BOOL* pfUser  
+HRESULT IsUserCode(  
+   BOOL* pfUser  
 );  
 ```  
   

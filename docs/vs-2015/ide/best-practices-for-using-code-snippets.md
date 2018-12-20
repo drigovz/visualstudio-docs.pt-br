@@ -1,7 +1,7 @@
 ---
 title: Melhores práticas para uso de snippets de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2c775dd0f5c7242779dcded5027ebf92e51a0406
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1dad7bd7ccddf3645abb11dc55afcdf2e7cce7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462855"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919904"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Práticas recomendadas para usar snippets de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [práticas recomendadas para usar trechos de código](https://docs.microsoft.com/visualstudio/ide/best-practices-for-using-code-snippets).  
-  
 O código em um snippet de código mostra somente a maneira mais simples de fazer algo. Para a maioria dos aplicativos, o código deve ser modificado para se adaptar ao aplicativo.  
   
 ## <a name="handling-exceptions"></a>Tratando exceções  
@@ -46,19 +44,19 @@ O código em um snippet de código mostra somente a maneira mais simples de faze
 ## <a name="security"></a>Segurança  
  A segurança de um snippet depende do local em que ele é usado no código-fonte e de como ele é modificado quando estiver no código. A lista a seguir contém algumas das áreas que devem ser consideradas.  
   
--   Acesso ao arquivo e ao banco de dados  
+- Acesso ao arquivo e ao banco de dados  
   
--   Segurança de acesso do código  
+- Segurança de acesso do código  
   
--   Protegendo recursos (como logs de eventos, Registro)  
+- Protegendo recursos (como logs de eventos, Registro)  
   
--   Armazenando segredos  
+- Armazenando segredos  
   
--   Verificando as entradas  
+- Verificando as entradas  
   
--   Passando dados para tecnologias de script  
+- Passando dados para tecnologias de script  
   
- Para obter mais informações, consulte [Protegendo aplicativos](../ide/securing-applications.md).  
+  Para obter mais informações, consulte [Protegendo aplicativos](../ide/securing-applications.md).  
   
 ## <a name="downloaded-code-snippets"></a>Snippets de código baixados  
  Os snippets de código do IntelliSense instalados pelo Visual Studio não são em si um risco de segurança. No entanto, eles podem criar riscos de segurança no aplicativo. Snippets baixados na Internet devem ser tratados como qualquer outro conteúdo baixado – com muito cuidado.  

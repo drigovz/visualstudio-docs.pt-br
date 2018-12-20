@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplier3::CanPersistPorts | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,28 +17,26 @@ ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f3799e4003edca0ce2722ad1365777f6be7e43c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7c75880fe66e2b8442f1a1027c836557f848d5b7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467392"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737779"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPortSupplier3::CanPersistPorts](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportsupplier3-canpersistports).  
-  
 Este método determina se o fornecedor de porta pode persistir portas (gravando-os em disco) entre as invocações do depurador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT CanPersistPorts();  
+HRESULT CanPersistPorts();  
 ```  
   
 ```csharp  
-int CanPersistPorts();  
+int CanPersistPorts();  
 ```  
   
 #### <a name="parameters"></a>Parâmetros  

@@ -1,29 +1,31 @@
 ---
-title: Trabalhando com Tutorial do Python, etapa 0, instalação
+title: Etapa 0 do Tutorial do Python no Visual Studio, instalação
+titleSuffix: ''
 description: Etapa 0 (pré-requisitos de instalação) de um passo a passo básico sobre trabalhar com o Python no Visual Studio.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c0b28ab5310f1be97ecf7b7acbcaa3360b29c480
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5096d0789f8f3c84c041591918af73cc230fe16d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513514"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064437"
 ---
-# <a name="install-python-support-in-visual-studio"></a>Instalar o suporte para Python no Visual Studio
+# <a name="install-python-support-in-visual-studio"></a>Instalar o suporte ao Python no Visual Studio
 
 > [!Note]
-> O suporte para Python está atualmente disponível somente no Visual Studio para Windows; no Mac e no Linux, o suporte para Python está disponível por meio do [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+> O suporte ao Python está atualmente disponível somente no Visual Studio para Windows; no Mac e no Linux, o suporte ao Python está disponível por meio do [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
-1. Baixe e execute o instalador do Visual Studio 2017 mais recente para Windows (o suporte para Python está presente na versão 15.2 e posteriores). Se você já tiver o Visual Studio instalado, execute o instalador do Visual Studio e vá para a etapa 2.
+1. Baixe e execute o instalador do Visual Studio 2017 mais recente para Windows (o suporte ao Python está presente na versão 15.2 e posteriores). Se você já tiver o Visual Studio instalado, execute o instalador do Visual Studio e vá para a etapa 2.
 
     > [!div class="nextstepaction"]
     > [Instalar Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
@@ -42,7 +44,7 @@ ms.locfileid: "39513514"
 ## <a name="next-step"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Etapa 1: criar um projeto do Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Etapa 1: Criar um projeto do Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Consulte também
 

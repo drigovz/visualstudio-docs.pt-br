@@ -1,7 +1,7 @@
 ---
 title: Como especificar o binário para iniciar | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,21 +17,19 @@ helpviewer_keywords:
 - performance sessions, launching
 ms.assetid: ba77fcf4-8d78-49f1-b8f3-7dd0acf84306
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec65dd3a5bcc812ff2f7c42ae4cbbba6080664db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f3a176ded749f640f2e37f27c9753ee1902772c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466594"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777364"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Como especificar o início do binário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: especificar o início do binário](https://docs.microsoft.com/visualstudio/profiling/how-to-specify-the-binary-to-start).  
-  
 Para analisar binários, como DLLs, você deve inserir informações na caixa de diálogo **\<Destino> Páginas de Propriedade**. Essa informação indica onde o projeto DLL pode localizar o aplicativo de chamada.  
   
  **Requisitos**  

@@ -1,7 +1,7 @@
 ---
 title: Janela do Gerenciador de Desempenho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ helpviewer_keywords:
 - performance tools, Performance Explorer
 ms.assetid: cb6a6efc-93a5-49a2-8d03-6969b5f3b6d7
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60d272a823e07c1e377fa41987f77ea2178092b4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20a68ecb9f45265dd304a9bebf601020c6a300b8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474845"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798190"
 ---
 # <a name="performance-explorer-window"></a>Janela do Performance Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [janela do Performance Explorer](https://docs.microsoft.com/visualstudio/profiling/performance-explorer-window).  
-  
 A janela do **Gerenciador de Desempenho** no IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite configurar e iniciar sessões de desempenho usando o as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  **Requisitos**  

@@ -1,7 +1,7 @@
 ---
 title: Elemento SupportsMasterPage (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6740145f280e28aca216ee298343bfa661ca5b48
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 042b08485095472aba0e15bb18498b75d3198329
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467072"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756328"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>Elemento SupportsMasterPage (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento SupportsMasterPage (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/supportsmasterpage-element-visual-studio-templates).  
-  
 Especifica se a ou não a **selecionar a página mestra** caixa de seleção está habilitada no **Adicionar Novo Item** caixa de diálogo.  
   
  \<VSTemplate >  

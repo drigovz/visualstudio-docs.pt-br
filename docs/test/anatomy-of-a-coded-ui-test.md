@@ -1,5 +1,5 @@
 ---
-title: Anatomia de um teste de interface do usuário codificado no Visual Studio
+title: Anatomia de um teste de IU codificado
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,23 +11,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0323e6902be9c5b784a17bfc8b48f4f9a1225e41
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d5c1a8bcc8ee43aa36b8a39cd53f4be4f6882f06
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180315"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896582"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomia de um teste de IU codificado
 
 Quando você cria um teste de IU codificado em um projeto de teste de IU codificado, vários arquivos são adicionados à solução. Este artigo fornece informações sobre os arquivos.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="contents-of-a-coded-ui-test"></a>Conteúdo de um teste de IU codificado
 
 Quando você cria um teste de IU codificado, o **Construtor de Teste de IU Codificado** cria um mapa da interface do usuário em teste e também dos métodos de teste, parâmetros e asserções para todos os testes. Ele também cria um arquivo de classe para cada teste.
 
 |Arquivo|Conteúdo|Editável?|
-|----------|--------------|---------------|
+|-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Seção Declarações](#UIMapDesignerFile)<br /><br /> [Classe UIMap](#UIMapClass) (parcial, gerada automaticamente)<br /><br /> [Métodos](#UIMapMethods)<br /><br /> [Propriedades](#UIMapProperties)|Não|
 |[UIMap.cs](#UIMapCS)|[Classe UIMap](#UIMapCS) (parcial)|Sim|
 |[CodedUITest1.cs](#CodedUITestCS)|[Classe CodedUITest1](#CodedUITestCS)<br /><br /> [Métodos](#CodedUITestMethods)<br /><br /> [Propriedades](#CodedUITestProperties)|Sim|

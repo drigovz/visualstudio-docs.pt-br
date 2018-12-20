@@ -1,7 +1,7 @@
 ---
 title: ATTACH_REASON | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a59e0c8b0d29529af068b3f0e2aec5f605b7e015
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08a7a39ba7035e4f5b53a105b2b90d99e958a3a1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463534"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775492"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ATTACH_REASON](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/attach-reason).  
-  
 Especifica o motivo para o mecanismo de depuração (DE) para anexar a um nó de programa.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_ATTACH_REASON {   
+enum enum_ATTACH_REASON {   
    ATTACH_REASON_LAUNCH = 0x0001,  
    ATTACH_REASON_USER   = 0x0002,  
    ATTACH_REASON_AUTO   = 0x0003  
@@ -43,7 +41,7 @@ typedef DWORD ATTACH_REASON;
 ```  
   
 ```csharp  
-public enum enum_ATTACH_REASON {   
+public enum enum_ATTACH_REASON {   
    ATTACH_REASON_LAUNCH = 0x0001,  
    ATTACH_REASON_USER   = 0x0002,  
    ATTACH_REASON_AUTO   = 0x0003  

@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointRequest2::GetRequestInfo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f40da972ee90d4e857330e587f3c2ac37702c864
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 91a8f2c757b0425646361a854508a0a7e4e8bd06
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474457"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790696"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugBreakpointRequest2::GetRequestInfo](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo).  
-  
 Obtém as informações de solicitação de ponto de interrupção que descreve esta solicitação de ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetRequestInfo(   
+HRESULT GetRequestInfo(   
    BPREQI_FIELDS    dwFields,  
    BP_REQUEST_INFO* pBPRequestInfo  
 );  
 ```  
   
 ```csharp  
-int GetRequestInfo(   
+int GetRequestInfo(   
    eunm_BPREQI_FIELDS  dwFields,  
    BP_REQUEST_INFO[]   pBPRequestInfo  
 );  

@@ -1,7 +1,7 @@
 ---
 title: IDebugPort2::GetPortId | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: 837cb924-c113-4224-aa86-3e02b33dfa70
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 084fc71d3d0b502ae0ed0a6cf1ad5f6c1b421f92
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 46239dafa3dfa5c5f10d69108d691d6f0adaed62
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461226"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755995"
 ---
 # <a name="idebugport2getportid"></a>IDebugPort2::GetPortId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPort2::GetPortId](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugport2-getportid).  
-  
 Obtém o identificador de porta.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetPortId(   
+HRESULT GetPortId(   
    GUID* pguidPort  
 );  
 ```  
   
 ```csharp  
-int GetPortId(   
+int GetPortId(   
    out Guid pguidPort  
 );  
 ```  

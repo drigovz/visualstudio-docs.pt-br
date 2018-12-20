@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d673877ecabcbd68759c7f1e7fa821335f8eb6c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 24eb6d7637f949abf60eeb2d0659fac1bfa1cae7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746202"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831725"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Como especificar eventos de build (Visual Basic)
 
@@ -64,66 +64,66 @@ O procedimento a seguir mostra como definir a versão mínima do sistema operaci
 
 ### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Para criar um comando .exe para alterar o manifesto do aplicativo
 
-1.  Crie um aplicativo de console para o comando. No menu **Arquivo**, clique em **Novo** e em **Projeto**.
+1. Crie um aplicativo de console para o comando. No menu **Arquivo**, clique em **Novo** e em **Projeto**.
 
-2.  Na caixa de diálogo **Novo Projeto**, no nó **Visual Basic**, selecione **Windows** e, em seguida, o modelo **Aplicativo de Console**. Nomeie o projeto `ChangeOSVersionVB`.
+2. Na caixa de diálogo **Novo Projeto**, no nó **Visual Basic**, selecione **Windows** e, em seguida, o modelo **Aplicativo de Console**. Nomeie o projeto `ChangeOSVersionVB`.
 
-3.  Em *Module1.vb*, adicione a seguinte linha às outras instruções `Imports` na parte superior do arquivo:
+3. Em *Module1.vb*, adicione a seguinte linha às outras instruções `Imports` na parte superior do arquivo:
 
-    ```vb
-    Imports System.Xml
-    ```
+   ```vb
+   Imports System.Xml
+   ```
 
-4.  Adicione o seguinte código em `Sub Main`:
+4. Adicione o seguinte código em `Sub Main`:
 
-    ```vb
-    Sub Main()
-       Dim applicationManifestPath As String
-       applicationManifestPath = My.Application.CommandLineArgs(0)
-       Console.WriteLine("Application Manifest Path: " & applicationManifestPath.ToString)
+   ```vb
+   Sub Main()
+      Dim applicationManifestPath As String
+      applicationManifestPath = My.Application.CommandLineArgs(0)
+      Console.WriteLine("Application Manifest Path: " & applicationManifestPath.ToString)
 
-       'Get version name
-       Dim osVersion As Version
-       If My.Application.CommandLineArgs.Count >= 2 Then
-          osVersion = New Version(My.Application.CommandLineArgs(1).ToString)
-       Else
-          Throw New ArgumentException("OS Version not specified.")
-       End If
-       Console.WriteLine("Desired OS Version: " & osVersion.ToString())
+      'Get version name
+      Dim osVersion As Version
+      If My.Application.CommandLineArgs.Count >= 2 Then
+         osVersion = New Version(My.Application.CommandLineArgs(1).ToString)
+      Else
+         Throw New ArgumentException("OS Version not specified.")
+      End If
+      Console.WriteLine("Desired OS Version: " & osVersion.ToString())
 
-       Dim document As XmlDocument
-       Dim namespaceManager As XmlNamespaceManager
-       namespaceManager = New XmlNamespaceManager(New NameTable())
-       With namespaceManager
-          .AddNamespace("asmv1", "urn:schemas-microsoft-com:asm.v1")
-          .AddNamespace("asmv2", "urn:schemas-microsoft-com:asm.v2")
-       End With
+      Dim document As XmlDocument
+      Dim namespaceManager As XmlNamespaceManager
+      namespaceManager = New XmlNamespaceManager(New NameTable())
+      With namespaceManager
+         .AddNamespace("asmv1", "urn:schemas-microsoft-com:asm.v1")
+         .AddNamespace("asmv2", "urn:schemas-microsoft-com:asm.v2")
+      End With
 
-       document = New XmlDocument()
-       document.Load(applicationManifestPath)
+      document = New XmlDocument()
+      document.Load(applicationManifestPath)
 
-       Dim baseXPath As String
-       baseXPath = "/asmv1:assembly/asmv2:dependency/asmv2:dependentOS/asmv2:osVersionInfo/asmv2:os"
+      Dim baseXPath As String
+      baseXPath = "/asmv1:assembly/asmv2:dependency/asmv2:dependentOS/asmv2:osVersionInfo/asmv2:os"
 
-       'Change minimum required OS Version.
-       Dim node As XmlNode
-       node = document.SelectSingleNode(baseXPath, namespaceManager)
-       node.Attributes("majorVersion").Value = osVersion.Major.ToString()
-       node.Attributes("minorVersion").Value = osVersion.Minor.ToString()
-       node.Attributes("buildNumber").Value = osVersion.Build.ToString()
-       node.Attributes("servicePackMajor").Value = osVersion.Revision.ToString()
+      'Change minimum required OS Version.
+      Dim node As XmlNode
+      node = document.SelectSingleNode(baseXPath, namespaceManager)
+      node.Attributes("majorVersion").Value = osVersion.Major.ToString()
+      node.Attributes("minorVersion").Value = osVersion.Minor.ToString()
+      node.Attributes("buildNumber").Value = osVersion.Build.ToString()
+      node.Attributes("servicePackMajor").Value = osVersion.Revision.ToString()
 
-       document.Save(applicationManifestPath)
-    End Sub
-    ```
+      document.Save(applicationManifestPath)
+   End Sub
+   ```
 
-    O comando utiliza dois argumentos. O primeiro argumento é o caminho para o manifesto do aplicativo (ou seja, a pasta na qual o processo de build cria o manifesto, geralmente, *<Projectname>.publish*). O segundo argumento é a nova versão do sistema operacional.
+   O comando utiliza dois argumentos. O primeiro argumento é o caminho para o manifesto do aplicativo (ou seja, a pasta na qual o processo de build cria o manifesto, geralmente, *<Projectname>.publish*). O segundo argumento é a nova versão do sistema operacional.
 
-5.  No menu **Compilar**, clique em **Compilar Solução**.
+5. No menu **Compilar**, clique em **Compilar Solução**.
 
-6.  Copie o arquivo *.exe* para um diretório como *C:\TEMP\ChangeOSVersionVB.exe*.
+6. Copie o arquivo *.exe* para um diretório como *C:\TEMP\ChangeOSVersionVB.exe*.
 
- Em seguida, invoque esse comando em um evento de pós-build para modificar o manifesto do aplicativo.
+   Em seguida, invoque esse comando em um evento de pós-build para modificar o manifesto do aplicativo.
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Para invocar um evento de pós-build para alterar o manifesto do aplicativo
 

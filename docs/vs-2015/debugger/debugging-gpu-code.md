@@ -1,7 +1,7 @@
 ---
 title: Depurando código de GPU | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ dev_langs:
 - C++
 ms.assetid: c7e77a5a-cb57-4b11-9187-ecc89acc8775
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1eead3a8f706564f9f91a385086f39ca31dc706e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ccad74608cc2332317a9a0c3081ef022b13a202d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468210"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738417"
 ---
 # <a name="debugging-gpu-code"></a>Depurando código de GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depurando código de GPU](https://docs.microsoft.com/visualstudio/debugger/debugging-gpu-code).  
-  
 Você pode depurar código C++ que está sendo executado na unidade de processamento gráfico (GPU). O suporte à depuração de GPU no Visual Studio inclui a detecção de concorrência, início de processos e anexação a eles, e a integração nas janelas de depuração.  
   
 ## <a name="supported-platforms"></a>Plataformas compatíveis  

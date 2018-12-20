@@ -1,7 +1,7 @@
 ---
 title: Caixa de diálogo Propriedades de mensagem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - message options, General
 ms.assetid: 58e9dc24-baf6-4ab8-916c-aea28b72e3b0
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be3975be4a50fd51e7004d4a587c28a2001d932c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57f9768d8d0e809f1b5d17cf295210c3aaf22a61
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467711"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776038"
 ---
 # <a name="message-properties-dialog-box"></a>Caixa de diálogo Propriedades da Mensagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [caixa de diálogo de propriedades de mensagem](https://docs.microsoft.com/visualstudio/debugger/message-properties-dialog-box).  
-  
 Use essa caixa de diálogo para obter mais informações sobre uma mensagem específica. Para exibir essa caixa de diálogo, mova o foco para um [exibição de mensagens](../debugger/messages-view.md) janela. Selecione qualquer nó de mensagem na árvore e escolha **propriedades** da **exibição** menu.  
   
  O **geral** guia é a única guia exibida. As configurações a seguir estão disponíveis:  

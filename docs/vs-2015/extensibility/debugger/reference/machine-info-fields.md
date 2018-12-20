@@ -1,7 +1,7 @@
 ---
 title: MACHINE_INFO_FIELDS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 2d61d206-7d40-4df1-8c88-1b3c9c78821e
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b605022ceb43c22aa0feef328f9925ec150c0a87
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: efedc30b1e58388438127776a69b41ebb7b480ca
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466498"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763673"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [MACHINE_INFO_FIELDS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/machine-info-fields).  
-  
 Especifica que tipo de informações para recuperar para um determinado computador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_MACHINE_INFO_FIELDS {   
+enum enum_MACHINE_INFO_FIELDS {   
    MCIF_NAME  = 0x00000001,  
    MCIF_FLAGS = 0x00000002,  
    MCIF_ALL   = 0x00000003  
@@ -43,7 +41,7 @@ typedef DWORD MACHINE_INFO_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_MACHINE_INFO_FIELDS {   
+public enum enum_MACHINE_INFO_FIELDS {   
    MCIF_NAME  = 0x00000001,  
    MCIF_FLAGS = 0x00000002,  
    MCIF_ALL   = 0x00000003  

@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumdebugstreamdata:: Reset | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaEnumDebugStreamData::Reset method
 ms.assetid: d3eab1a0-db05-4838-833f-57e93a6ad096
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e86bdc1497e16ddd89b8dbefeaf6da4aa93dc33c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9745b9a8073c6c2e7092fa2b1d649ed0311e0be
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467905"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740670"
 ---
 # <a name="idiaenumdebugstreamdatareset"></a>IDiaEnumDebugStreamData::Reset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaenumdebugstreamdata:: Reset](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumdebugstreamdata-reset).  
-  
 Redefine para o início de uma sequência enumerado.  
   
 ## <a name="syntax"></a>Sintaxe  

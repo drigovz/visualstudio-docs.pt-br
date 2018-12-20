@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36cbcf01a7e070ab88230e0cd0165db935944a59
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 3afb988b226ccf62fae92ab02d8380d20b19605b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326739"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853422"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Chamar os modelos de objeto do SharePoint
   Ao criar extensões para as ferramentas do SharePoint no Visual Studio, você terá que chamar APIs do SharePoint para executar determinadas tarefas. Por exemplo, se você criar uma etapa de implantação para projetos do SharePoint, você talvez precise chamar APIs para executar algumas das tarefas para implantar soluções do SharePoint.  
@@ -37,11 +37,11 @@ ms.locfileid: "36326739"
   
  No entanto, o modelo de objeto do cliente tem duas desvantagens no contexto das extensões de ferramentas do SharePoint:  
   
--   O modelo de objeto do cliente fornece apenas um subconjunto do modelo de objeto de servidor. Se você tiver que usar a funcionalidade do SharePoint que não é exposta no modelo de objeto cliente, você deve usar o modelo de objeto do servidor.  
+- O modelo de objeto do cliente fornece apenas um subconjunto do modelo de objeto de servidor. Se você tiver que usar a funcionalidade do SharePoint que não é exposta no modelo de objeto cliente, você deve usar o modelo de objeto do servidor.  
   
--   Embora usando o modelo de objeto de cliente nas extensões de ferramentas do SharePoint deve funcionar na maioria dos casos, você pode encontrar alguns cenários em que chamadas para o modelo de objeto do cliente não funcionam conforme o esperado. O modelo de objeto do cliente foi projetado para ser usado em aplicativos cliente para chamar em sites do SharePoint em um farm ou servidor remoto. As ferramentas do SharePoint no Visual Studio funcionam somente com uma instalação local do SharePoint no computador de desenvolvimento. Portanto, quando você usa o modelo de objeto do cliente em uma extensão de ferramentas do SharePoint, você chamar um site do SharePoint no computador local, que não é como o modelo de objeto do cliente foi projetado para ser usado.  
+- Embora usando o modelo de objeto de cliente nas extensões de ferramentas do SharePoint deve funcionar na maioria dos casos, você pode encontrar alguns cenários em que chamadas para o modelo de objeto do cliente não funcionam conforme o esperado. O modelo de objeto do cliente foi projetado para ser usado em aplicativos cliente para chamar em sites do SharePoint em um farm ou servidor remoto. As ferramentas do SharePoint no Visual Studio funcionam somente com uma instalação local do SharePoint no computador de desenvolvimento. Portanto, quando você usa o modelo de objeto do cliente em uma extensão de ferramentas do SharePoint, você chamar um site do SharePoint no computador local, que não é como o modelo de objeto do cliente foi projetado para ser usado.  
   
- Para um passo a passo que demonstra como usar o modelo de objeto do cliente em uma extensão das ferramentas do SharePoint no Visual Studio, consulte [instruções passo a passo: chamar o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
+  Para um passo a passo que demonstra como usar o modelo de objeto do cliente em uma extensão das ferramentas do SharePoint no Visual Studio, consulte [instruções passo a passo: chamar o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
   
 ## <a name="use-the-server-object-model-in-extension-projects"></a>Usar o modelo de objeto de servidor em projetos de extensão
  O modelo de objeto de servidor é um superconjunto do modelo de objeto cliente. Quando você usa o modelo de objeto de servidor, você pode usar todos os recursos que [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] expor por meio de programação.  

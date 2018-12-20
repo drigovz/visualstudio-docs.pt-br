@@ -1,22 +1,23 @@
 ---
-title: Como definir comandos de menu personalizados para projetos Python
-description: Demonstra como editar arquivos de projeto e de destinos para adicionar comandos personalizados ao menu de contexto do projeto Python no Visual Studio. Os comandos podem ser invocados em programas executáveis, scripts, módulos, trechos de código embutido e pip.
-ms.date: 06/27/2018
+title: Definir comandos de menu personalizados para projetos do Python
+description: Editando arquivos de projeto e de destino, você pode adicionar comandos personalizados ao menu de contexto de projeto do Python no Visual Studio para invocar programas executáveis, scripts, módulos, snippets de código embutidos e PIP.
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 71d10e2a8c62f695460cb3b596acc10f01a6ca81
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: be8befcc549b76c8ac2b6435146c636b592b5494
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008317"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062865"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definir comandos personalizados para projetos do Python
 
@@ -45,7 +46,7 @@ Cada comando personalizado pode se referir a um arquivo Python, um módulo Pytho
 
 Para se familiarizar com comandos personalizados, esta seção apresenta um exemplo simples que executa diretamente um arquivo de inicialização do projeto usando *python.exe*. (Esse comando é efetivamente o mesmo que usar **Depurar** > **Iniciar sem Depuração**.)
 
-1. Crie um projeto chamado "Python-CustomCommands" usando o modelo **Aplicativo do Python**. (Confira [Início rápido: criar um projeto do Python com base em um modelo no Visual Studio](quickstart-02-python-in-visual-studio-project-from-template.md) para obter instruções, se você ainda não estiver familiarizado com o processo.)
+1. Crie um projeto chamado "Python-CustomCommands" usando o modelo **Aplicativo do Python**. (Confira [Início Rápido: Criar um projeto do Python com base em um modelo](quickstart-02-python-in-visual-studio-project-from-template.md) para obter instruções, caso ainda não esteja familiarizado com o processo.)
 
 1. Em *Python_CustomCommands.py*, adicione o código `print("Hello custom commands")`.
 
@@ -144,10 +145,10 @@ Todos os valores de atributo não diferenciam maiúsculas de minúsculas.
 
 | Atributo | Necessária | Descrição |
 | --- | --- | --- |
-| TargetType | Sim | Especifica o que atributo de destino contém e como ele é usado junto com o atributo de argumentos:<ul><li>**executable**: executar o executável nomeado em Target, acrescentando o valor em Arguments, como se fosse inserido diretamente na linha de comando. O valor deve conter apenas um nome de programa sem argumentos.</li><li>**script**: execute *python.exe* com o nome de arquivo em Target, seguido pelo valor em Arguments.</li><li>**module**: executar `python -m` seguido pelo nome do módulo em Target, seguido pelo valor em Arguments.</li><li>**code**: executar o código embutido contido em Target. O valor de Arguments é ignorado.</li><li>**pip**: executar `pip` com o comando em Target, seguido por Arguments; é ExecuteIn é definido como "output", no entanto, o pip assume o comando `install` e usa o Target como o nome do pacote.</li></ul> |
+| TargetType | Sim | Especifica o que atributo de destino contém e como ele é usado junto com o atributo de argumentos:<ul><li>**executable**: Execute o executável nomeado em Target, acrescentando o valor em Arguments, como se fosse inserido diretamente na linha de comando. O valor deve conter apenas um nome de programa sem argumentos.</li><li>**script**: Execute *python.exe* com o nome de arquivo em Target, seguido pelo valor em Arguments.</li><li>**module**: Execute `python -m` seguido pelo nome do módulo em Target, seguido pelo valor em Arguments.</li><li>**code**: Execute o código embutido contido em Target. O valor de Arguments é ignorado.</li><li>**pip**: Execute `pip` com o comando em Target, seguido por Arguments; no entanto, se ExecuteIn é definido como "output", o PIP assume o comando `install` e usa o Target como o nome do pacote.</li></ul> |
 | Destino | Sim | O nome de arquivo, o nome do módulo, o código ou comando pip a ser usado, dependendo do TargetType. |
 | Arguments | Opcional | Especifica uma cadeia de caracteres de argumentos (se houver) a ser fornecida ao destino. Observe que, quando o TargetType é `script`, os argumentos são fornecidos para o programa Python, não para *python.exe*. Ignorado para o TargetType `code`. |
-| ExecuteIn | Sim | Especifica o ambiente no qual o comando deve ser executado:<ul><li>**console**: (padrão) executa o Target e os argumentos como se eles fossem inseridos diretamente na linha de comando. Uma janela de comando aparece quando o Target está em execução, em seguida, ela é fechada automaticamente.</li><li>**consolepause**: o mesmo que um console, mas aguarda um pressionamento de tecla antes de fechar a janela.</li><li>**output**: executa o Target e exibe seus resultados na janela de **Saída** do Visual Studio. Se o TargetType for "pip", o Visual Studio usará o Target como o nome do pacote e acrescentará Arguments.</li><li>**repl**: executa o Target na janela [Interativa do Python](python-interactive-repl-in-visual-studio.md); o nome de exibição opcional é usado para o título da janela.</li><li>**none**: comporta-se como o console.</li></ul>|
+| ExecuteIn | Sim | Especifica o ambiente no qual o comando deve ser executado:<ul><li>**console**: (Padrão) Executa o Target e os argumentos como se eles fossem inseridos diretamente na linha de comando. Uma janela de comando aparece quando o Target está em execução, em seguida, ela é fechada automaticamente.</li><li>**consolepause**: O mesmo que um console, mas aguarda um pressionamento de tecla antes de fechar a janela.</li><li>**output**: Executa o Target e exibe seus resultados na janela de **Saída** do Visual Studio. Se o TargetType for "pip", o Visual Studio usará o Target como o nome do pacote e acrescentará Arguments.</li><li>**repl**: Executa o Target na janela [Interativa do Python](python-interactive-repl-in-visual-studio.md); o nome de exibição opcional é usado para o título da janela.</li><li>**none**: comporta-se como o console.</li></ul>|
 | WorkingDirectory | Opcional | A pasta na qual o comando deve ser executado. |
 | ErrorRegex<br>WarningRegEx | Opcional | Usado somente quando ExecuteIn é `output`. Ambos os valores especificam uma expressão regular com a qual o Visual Studio analisa a saída do comando para mostrar erros e avisos na janela **Lista de Erros**. Se não for especificado, o comando não afetará a janela **Lista de Erros**. Para obter mais informações sobre o que o Visual Studio espera, confira [Grupos de captura nomeados](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | Opcional | Uma lista dos requisitos de pacote para o comando usando o mesmo formato de [*requirements.txt*](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). O comando **Executar PyLint**, por exemplo, especifica `pylint>=1.0.0`. Antes de executar o comando, o Visual Studio verifica se todos os pacotes na lista estão instalados. O Visual Studio usa o pip para instalar todos os pacotes ausentes. |
@@ -157,11 +158,11 @@ Todos os valores de atributo não diferenciam maiúsculas de minúsculas.
 
 Durante a análise de erros e avisos de uma saída de comando, o Visual Studio espera que as expressões regulares nos valores `ErrorRegex` e `WarningRegex` usem os seguintes grupos nomeados:
 
-- `(?<message>...)`: texto do erro
-- `(?<code>...)`: código do erro
-- `(?<filename>...)`: nome do arquivo para o qual o erro foi relatado
-- `(?<line>...)`: número de linha do local no arquivo em que o erro foi relatado.
-- `(?<column>...)`: número da coluna do local no arquivo em que o erro foi relatado.
+- `(?<message>...)`: Texto do erro
+- `(?<code>...)`: Código de erro
+- `(?<filename>...)`: Nome do arquivo para o qual o erro foi relatado
+- `(?<line>...)`: Número de linha da localização no arquivo em que o erro foi relatado.
+- `(?<column>...)`: Número da coluna da localização no arquivo em que o erro foi relatado.
 
 Por exemplo, PyLint gera avisos da seguinte forma:
 
@@ -373,7 +374,7 @@ Por exemplo, nos elementos a seguir, o nome "Example" no grupo de propriedades n
   </Target>
 ```
 
-### <a name="message-an-error-occurred-while-running-command-name-failed-to-get-command-target-name-from-project"></a>Mensagem: "Ocorreu um erro durante a execução de \<nome do comando>. Falha ao obter o comando \<nome-do-destino> do projeto."
+### <a name="message-an-error-occurred-while-running-command-name-failed-to-get-command-target-name-from-project"></a>Mensagem: "Erro durante a execução de \<nome do comando>. Falha ao obter o comando \<nome-do-destino> do projeto."
 
 Indica que o conteúdo dos elementos `<Target>` ou `<CreatePythonCommandItem>` estão incorretos. Os motivos possíveis incluem:
 

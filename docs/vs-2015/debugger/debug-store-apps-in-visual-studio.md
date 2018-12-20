@@ -1,7 +1,7 @@
 ---
 title: Aplicativos da Store de depuração no Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ dev_langs:
 - C++
 ms.assetid: 48a85bcf-290b-4390-9993-f6f9dd73ad03
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3afe6e31062b8f55add97455f0e1836128b7d0e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9a2f2950a650a0ce76de7909fb82397d4a72bcd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473247"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735591"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Depurar aplicativos da Store no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [aplicativos da Store de depuração no Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debug-store-apps-in-visual-studio).  
-  
 O depurador do Visual Studio permite que você controle a execução de um programa e examine seu estado. Você pode usar o depurador para encontrar a causa de defeitos em seu aplicativo da Windows Store e entender exatamente como o aplicativo funciona. Quando você suspende (pausa) a execução no depurador, o Visual Studio exibe o arquivo de origem que contém o código de execução e destaca a instrução em execução. Você pode ver os valores das variáveis​​, a pilha de chamadas de funções em execução e outros aspectos do estado do seu programa. Você pode continuar a executar (percorrer) no programa uma instrução de cada vez para ver como as instruções alteram os valores do programa. Em aplicativos gravados com JavaScript, você pode examinar e manipular o DOM da página.  
   
 ## <a name="in-this-section"></a>Nesta seção  

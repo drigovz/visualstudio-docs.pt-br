@@ -1,7 +1,7 @@
 ---
 title: IDebugProcessSecurity::QueryCanSafelyAttach | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 63ec1ae8-27da-4574-aa15-1c986fe9fe58
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 243c8556e38bd89200ca591d4b087e441baf57f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 357ab447d0f16c3bbbfb656d042c0095df01bc83
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475841"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784436"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProcessSecurity::QueryCanSafelyAttach](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach).  
-  
 Esse método permite que o fornecedor de porta exibir um aviso antes do usuário anexar a um processo que não é seguro.  
   
 ## <a name="syntax"></a>Sintaxe  

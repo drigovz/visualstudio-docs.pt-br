@@ -1,7 +1,7 @@
 ---
 title: Exibição Detalhes do Thread – Dados de contenção | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - Thread Details view
 ms.assetid: 874c3b1c-88d8-479a-bb35-1291d9aa8e67
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32dd4ed90a30146a75132fcf0954b7b50fba87a6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da2cac3503f97976fe5c0918f86e5b25f2b89329
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467218"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795642"
 ---
 # <a name="thread-details-view---contention-data"></a>Exibição Detalhes do Thread – Dados de contenção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de detalhes do Thread – dados de contenção](https://docs.microsoft.com/visualstudio/profiling/thread-details-view-contention-data).  
-  
 A exibição Detalhes do Thread apresenta um gráfico de linha do tempo dos eventos de bloqueio no thread selecionado de uma execução de criação de perfil que foram causados por contenções em recursos. Um evento de bloqueio ocorre quando o thread é forçado a suspender a execução porque outro thread bloqueou o acesso a um recurso.  
   
  Esta exibição representa a linha do tempo de execução do thread como uma barra horizontal e os eventos de bloqueio como uma barra vertical em uma linha do tempo horizontal do thread. Quando necessário, é possível ampliar uma seção da linha do tempo para exibir os eventos individuais. Para exibir o caminho de execução das funções que levaram ao evento, clique na barra de eventos. As funções aparecem na janela Pilha de Chamadas. Quando o código-fonte de uma função está disponível, é possível clicar no nome da função para editar o arquivo de origem na IDE do Visual Studio.  
@@ -54,9 +52,9 @@ A exibição Detalhes do Thread apresenta um gráfico de linha do tempo dos even
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Para exibir ou editar o código-fonte de uma função na pilha de chamadas  
   
--   Na janela Pilha de Chamadas, clique no nome da função.  
+- Na janela Pilha de Chamadas, clique no nome da função.  
   
- O código-fonte da função deve fazer parte do projeto atual.  
+  O código-fonte da função deve fazer parte do projeto atual.  
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>Para exibir os eventos de contenção de um recurso em todos os threads na execução de criação de perfil  
   

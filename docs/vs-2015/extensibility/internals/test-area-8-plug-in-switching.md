@@ -1,7 +1,7 @@
 ---
 title: 'Área de teste 8: Alternância de plug-in | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6633c2bd2f2f968f10aef215f395203f95c99da1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 103946f29cb893672b29d7671a74acf1c26bc50e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467762"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793809"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Área de teste 8: alternância de plug-in
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [teste área 8: alternância de plug-in](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-8-plug-in-switching).  
-  
 O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE) tem a interface do usuário (UI) para alterar o plug-in de controle de origem atual. Essa área de teste fornece os casos de teste para o processo de selecionar o plug-in a ser usado para controle de código-fonte da solução.  
   
 ## <a name="command-menu-access"></a>Acesso ao Menu de comando  

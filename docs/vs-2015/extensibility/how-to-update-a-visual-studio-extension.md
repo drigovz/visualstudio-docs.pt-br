@@ -1,7 +1,7 @@
 ---
 title: 'Como: atualizar uma extensão do Visual Studio | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3675b8f342601ee3b79169a6c39e849686d7c12e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4dce6301e5f55dce2c9786033ca895e0ac43518
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467870"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721050"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Como: atualizar uma extensão do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: atualizar uma extensão do Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/how-to-update-a-visual-studio-extension).  
-  
 Você pode atualizar uma extensão do Visual Studio em seu sistema por meio **extensões e atualizações** para instalar a versão atualizada. Se você criar uma versão atualizada de uma extensão, significam como atualizados incrementando o número de versão no manifesto do VSIX.  
   
  As atualizações são instaladas quando o manifesto do VSIX da extensão de entrada tem o mesmo `ID` como instalado e uma maior `Version` número. Se o `Version` número é igual ou inferior, o pacote não pode ser instalado. Se o `ID` valores não coincidirem, o pacote que ainda não estiver instalado é reconhecido como uma extensão separada.  

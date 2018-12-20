@@ -25,12 +25,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ccff01afcb2556469453d4227b14ebe3b897de50
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6e38a3e709a8d49d29d598e7eabd55e7be154836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896435"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Projeto do SharePoint e modelos de item de projeto
   As seções a seguir descrevem o projeto do SharePoint disponível e de item de projeto modelos e como eles são usados. 
@@ -95,17 +95,17 @@ ms.locfileid: "37118377"
 ### <a name="event-receiver"></a>Receptor de eventos
  *Receptores de evento* manipular eventos para itens no site do SharePoint, como quando um item é adicionado a uma lista, quando um item da web for excluído ou quando um fluxo de trabalho foi iniciado. O modelo de item de projeto de receptor de evento permite que você manipule  
   
--   Lista de eventos  
+- Lista de eventos  
   
--   Eventos de item de lista  
+- Eventos de item de lista  
   
--   Listar eventos de email  
+- Listar eventos de email  
   
--   Eventos da Web  
+- Eventos da Web  
   
--   Eventos de fluxo de trabalho de lista  
+- Eventos de fluxo de trabalho de lista  
   
- O item de projeto do receptor de eventos cria uma **receptor de evento** pasta com um arquivo de classe única que contém os manipuladores de eventos para todos os eventos você especificou quando criou o projeto na **personalização do SharePoint Assistente**. A classe do receptor de eventos pode manipular eventos que ocorrem no site do SharePoint quando itens como arquivos, campos, itens, listas, anexos, web parts e fluxos de trabalho são adicionados, atualizados, excluídos ou removidos. Para obter mais informações, consulte [como: criar um receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md) e [bloco de construção: manipulação de eventos](http://go.microsoft.com/fwlink/?LinkId=179416).  
+  O item de projeto do receptor de eventos cria uma **receptor de evento** pasta com um arquivo de classe única que contém os manipuladores de eventos para todos os eventos você especificou quando criou o projeto na **personalização do SharePoint Assistente**. A classe do receptor de eventos pode manipular eventos que ocorrem no site do SharePoint quando itens como arquivos, campos, itens, listas, anexos, web parts e fluxos de trabalho são adicionados, atualizados, excluídos ou removidos. Para obter mais informações, consulte [como: criar um receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md) e [bloco de construção: manipulação de eventos](http://go.microsoft.com/fwlink/?LinkId=179416).  
   
 ### <a name="list"></a>Lista  
  Uma lista é uma instância de uma base do SharePoint lista definição reutilizável, como um calendário ou uma lista de tarefas. Depois de adicionar uma lista para sua solução, o Designer de lista permite que você adicione colunas de site à lista e criar colunas de lista personalizada. Isso inclui colunas de tipos de conteúdo de site. Você pode especificar o *exibição* para a lista, que determina as colunas que aparecerão na lista. Para obter mais informações, consulte [instruções passo a passo: criar uma coluna de site, o tipo de conteúdo e a lista para o SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) e [bloco de construção: listas e bibliotecas de documentos](http://go.microsoft.com/fwlink/?LinkId=179421).  
@@ -125,13 +125,13 @@ ms.locfileid: "37118377"
 ### <a name="site-definition-farm-solution-only"></a>Definição de site (somente solução de farm)
  *Definição de site* itens de projeto contém uma pasta de definição de site que inclui os seguintes arquivos:  
   
--   Uma padrão página. aspx, usada como a página da web padrão para o site.  
+- Uma padrão página. aspx, usada como a página da web padrão para o site.  
   
--   Uma *onet* arquivo que define os componentes do site.  
+- Uma *onet* arquivo que define os componentes do site.  
   
--   Um arquivo xml webtemp que especifica as configurações de definição de site que aparecem na **seleção de modelo** seção o **novo Site do SharePoint** página.  
+- Um arquivo xml webtemp que especifica as configurações de definição de site que aparecem na **seleção de modelo** seção o **novo Site do SharePoint** página.  
   
- Depois de adicionar uma definição de site, você deve adicionar código e arquivos para apresentar a funcionalidade. Esse item de projeto pode ser usado somente em soluções de farm. Você pode adicionar esse item de projeto somente a soluções de farm. Para obter mais informações, consulte [criar definições de site do SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md) e [definições de Site e configurações](http://go.microsoft.com/fwlink/?LinkId=260554).  
+  Depois de adicionar uma definição de site, você deve adicionar código e arquivos para apresentar a funcionalidade. Esse item de projeto pode ser usado somente em soluções de farm. Você pode adicionar esse item de projeto somente a soluções de farm. Para obter mais informações, consulte [criar definições de site do SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md) e [definições de Site e configurações](http://go.microsoft.com/fwlink/?LinkId=260554).  
   
 ### <a name="state-machine-workflow-farm-solution-only"></a>Fluxo de trabalho de máquina de estado (somente solução de farm)
  Um *fluxo de trabalho de máquina de estado* é um conjunto de estados de lógica de negócios, transições e ações. As etapas em um fluxo de trabalho de máquina de estado não são executadas em sequência. em vez disso, eles são disparados por ações e os estados. Como um fluxo de trabalho sequencial, fluxos de trabalho de máquina de estado são associados a itens como listas e documentos do SharePoint. Mais uma vez, você pode criar fluxos de trabalho de nível de site (globais) ou (locais) no nível da lista de fluxos de trabalho. Você também pode selecionar se um fluxo de trabalho é iniciado automaticamente ou manualmente. Esse item de projeto pode ser usado somente em soluções de farm. Você pode adicionar esse item de projeto somente a soluções de farm. Para obter mais informações, consulte [soluções de fluxo de trabalho do SharePoint crie](../sharepoint/creating-sharepoint-workflow-solutions.md), [fluxos de trabalho no SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=260555), e [Novidades: aprimoramentos de fluxo de trabalho](http://go.microsoft.com/fwlink/?LinkId=179418).  

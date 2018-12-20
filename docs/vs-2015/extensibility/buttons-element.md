@@ -1,7 +1,7 @@
 ---
 title: Elemento de botões | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9f2cf94d-dec5-4776-a836-9a89c75f0c87
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f0bd7167351fdfcf91a093c8cf15abe275246aa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 73d72c9e73af497d2f63f86264d5a53745a104e4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465018"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816266"
 ---
 # <a name="buttons-element"></a>Elemento Buttons
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento Buttons](https://docs.microsoft.com/visualstudio/extensibility/buttons-element).  
-  
 Grupos [botão](../extensibility/button-element.md) elementos, que representam comandos individuais.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -65,7 +63,7 @@ Grupos [botão](../extensibility/button-element.md) elementos, que representam c
   
 ```  
 <Buttons>  
-  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">  
+  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">  
     <Parent guid="guidMenuAndCommandsCmdSet" id="MyMenuGroup"/>  
     <Icon guid="guidGenericCmdBmp" id="bmpArrow"/>  
     <Strings>  

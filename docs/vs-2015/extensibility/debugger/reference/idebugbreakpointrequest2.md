@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointRequest2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 01ac4013-96f9-4235-b289-f55f9e99558f
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 78625ecd7c044f8add777a705259cff8ef5f15be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea88fd7d7e66eb9bee7b9b0010c1ecdd5c91bacb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474367"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747073"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugBreakpointRequest2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbreakpointrequest2).  
-  
 Essa interface representa as informações necessárias para criar e associar a qualquer tipo de ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  

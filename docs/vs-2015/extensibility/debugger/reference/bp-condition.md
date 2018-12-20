@@ -1,7 +1,7 @@
 ---
 title: BP_CONDITION | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 569588d108de05823a733feef4137d35e1b79693
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d1134ef672c3ae9f49d776d2fd63227e5fb4e8c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475998"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796890"
 ---
 # <a name="bpcondition"></a>BP_CONDITION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [BP_CONDITION](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-condition).  
-  
 Descreve as condições sob as quais um ponto de interrupção é disparado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-typedef struct _BP_CONDITION {   
+typedef struct _BP_CONDITION {   
    IDebugThread2* pThread;  
    BP_COND_STYLE  styleCondition;  
    BSTR           bstrContext;  
@@ -44,7 +42,7 @@ typedef struct _BP_CONDITION {
 ```  
   
 ```csharp  
-public struct BP_CONDITION {   
+public struct BP_CONDITION {   
    public IDebugThread2 pThread;  
    public uint          styleCondition;  
    public string        bstrContext;  

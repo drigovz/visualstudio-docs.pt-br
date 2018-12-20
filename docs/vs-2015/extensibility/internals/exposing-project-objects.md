@@ -1,7 +1,7 @@
 ---
 title: Expor objetos do projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5514589660df1850dc2f5d9fce3079f6769ec06e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c4af521a8c6044742d69a1d71dcf605145d600d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460573"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731419"
 ---
 # <a name="exposing-project-objects"></a>Expondo objetos do projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [expondo objetos do projeto](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-project-objects).  
-  
 Tipos de projeto personalizado podem fornecer objetos de automação para permitir o acesso ao projeto usando interfaces de automação. Cada tipo de projeto deve fornecer o padrão <xref:EnvDTE.Project> objeto de automação que é acessado de <xref:EnvDTE.Solution>, que contém uma coleção de todos os projetos que estão abertos no IDE. Cada item no projeto deve ser exposta por um <xref:EnvDTE.ProjectItem> objeto acessado com <xref:EnvDTE.Project.ProjectItems>. Além desses objetos de automação padrão, os projetos podem optar por oferecer objetos de automação específico do projeto.  
   
  Você pode criar objetos de automação de nível raiz personalizado que você pode acessar associação tardia da raiz DTE objeto usando `DTE.<customeObjectName>` ou `DTE.GetObject(“<customObjectName>”)`. Por exemplo, Visual C++ cria a coleção de projeto específicos do projeto C++ chamada "VCProjects", você pode acessar usando DTE. VCProjects ou DTE. GetObject("VCProjects"). Você também pode criar um Project.Object, que é exclusivo para o tipo de projeto, um Project.CodeModel, que pode ser consultado para seu objeto mais derivado, um item de projeto, que expõe ProjectItem.Object e um ProjectItem.FileCodeModel.  

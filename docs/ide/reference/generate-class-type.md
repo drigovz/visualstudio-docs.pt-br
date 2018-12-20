@@ -1,5 +1,5 @@
 ---
-title: Gerar uma classe ou um tipo no Visual Studio
+title: Gerar a classe ou o tipo
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35c5854afe5363641979e0f79af70c2d3b925b05
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 4f7d722669ddf51715b21ddaf1f253fb0668dfaa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116982"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065468"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Gerar uma classe ou um tipo no Visual Studio
 
@@ -29,11 +29,11 @@ Esta geração de código aplica-se a:
 
 - Visual Basic
 
-**O quê:** permite gerar imediatamente o código para uma classe ou um tipo.
+**O quê:** Permite gerar imediatamente o código para uma classe ou um tipo.
 
-**Quando:** você introduz uma nova classe ou tipo e deseja declará-lo correta e automaticamente.
+**Quando:** Você introduz uma nova classe ou um tipo e deseja declará-lo correta e automaticamente.
 
-**Por quê:** você poderia declarar a classe ou o tipo antes de usá-lo; no entanto, esse recurso gerará a classe ou o tipo automaticamente.
+**Por que:** Você pode declarar a classe ou o tipo antes de usá-lo; no entanto, essa funcionalidade gerará a classe ou o tipo automaticamente.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -41,24 +41,24 @@ Esta geração de código aplica-se a:
 
    - C#:
 
-    ![Código em C# realçado](media/class-highlight-cs.png)
+       ![Código em C# realçado](media/class-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código em VB realçado](media/class-highlight-vb.png)
+       ![Código em VB realçado](media/class-highlight-vb.png)
 
-1. Depois, siga um destes procedimentos:
+2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
-     - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
-     - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece.
-     - Clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece na margem esquerda se o cursor de texto já estiver na linha com o rabisco vermelho.
+      - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
+      - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) ícone que aparece.
+      - Clique no ícone de ![Lâmpada](media/bulb-cs.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha com o rabisco vermelho.
 
-    ![Gerar visualização de classe](media/class-preview-cs.png)
+      ![Gerar visualização de classe](media/class-preview-cs.png)
 
-1. Selecione uma das opções no menu suspenso:
+3. Selecione uma das opções no menu suspenso:
 
    - Gerar a classe ‘*TypeName*' no novo arquivo &mdash;Cria uma classe chamada *TypeName* em um arquivo chamado *TypeName*.cs/.vb
    - Gerar a classe ‘*TypeName*'&mdash;Cria uma classe chamada *TypeName* no arquivo atual.
@@ -68,7 +68,7 @@ Esta geração de código aplica-se a:
    > [!TIP]
    > Use o link **Visualizar alterações** na parte inferior da janela de visualização [para ver todas as alterações](../../ide/preview-changes.md) que serão feitas antes de fazer sua seleção.
 
-1. Se você tiver selecionado o item **Gerar novo tipo**, a caixa de diálogo **Gerar Tipo** será aberta. Configure a acessibilidade, o tipo e o local do novo tipo.
+4. Se você tiver selecionado o item **Gerar novo tipo**, a caixa de diálogo **Gerar Tipo** será aberta. Configure a acessibilidade, o tipo e o local do novo tipo.
 
    ![Gerar tipo](media/class-newtype-cs.png)
 

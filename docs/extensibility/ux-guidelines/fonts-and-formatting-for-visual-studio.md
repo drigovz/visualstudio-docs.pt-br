@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bed49c87828463c16912da4d31073ba2ac32fdc
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511986"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942823"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fontes e formatação para o Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> A fonte de ambiente
@@ -83,7 +83,7 @@ window.ShowModal()
   
  `ShowModal` Retorna um bool? (booliano anulável) com o `DialogResult`, que pode ser usado se necessário. O valor retornado será true se a caixa de diálogo foi fechada com **Okey**.  
   
- Se você precisar exibir algumas UI WPF que não é uma caixa de diálogo e é hospedado em seu próprio `HwndSource`, como uma janela pop-up ou uma janela do WPF filho de uma janela de janela Win32/WinForms pai, você precisará definir o `FontFamily` e `FontSize` no elemento raiz do WPF e lementar. (O shell define as propriedades na janela principal, mas eles não serão herdados após um `HWND`). O shell fornece recursos para o qual as propriedades podem ser associadas, como este:  
+ Se você precisar exibir algumas UI WPF que não é uma caixa de diálogo e é hospedado em seu próprio `HwndSource`, como uma janela pop-up ou uma janela do WPF filho de uma janela do Win32/WinForms pai, você precisará definir o `FontFamily` e `FontSize` no elemento raiz do elemento do WPF. (O shell define as propriedades na janela principal, mas eles não serão herdados após um `HWND`). O shell fornece recursos para o qual as propriedades podem ser associadas, como este:  
   
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  
@@ -325,13 +325,13 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Capitalização de título  
  Capitalização de título é um estilo no qual as primeiras letras da maioria ou todas as palavras dentro de uma frase estão em maiusculas. No Visual Studio, capitalização de título é usada para vários itens, incluindo:  
   
--   **Dicas de ferramenta.** Exemplo: "Visualizar itens selecionados"  
+- **Dicas de ferramenta.** Exemplo: "Visualizar itens selecionados"  
   
--   **Cabeçalhos de coluna.** Exemplo: "resposta do sistema"  
+- **Cabeçalhos de coluna.** Exemplo: "resposta do sistema"  
   
--   **Itens de menu.** Exemplo: "Salvar tudo"  
+- **Itens de menu.** Exemplo: "Salvar tudo"  
   
- Ao usar a capitalização de título, estas são as diretrizes para quando colocar em maiuscula palavras e deixá-los em minúsculas:  
+  Ao usar a capitalização de título, estas são as diretrizes para quando colocar em maiuscula palavras e deixá-los em minúsculas:  
   
 |Maiúsculas|Comentários e exemplos|  
 |---------------|---------------------------|  
@@ -466,5 +466,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 -   Texto de fonte de ambiente em negrito deve seguir o preenchimento e o espaçamento de altura de linha padrão.  
   
 ## <a name="see-also"></a>Consulte também  
- [MSDN: Fontes (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742483\(v=vs.85\).aspx)   
- [MSDN: Texto da Interface do usuário (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742478\(v=vs.85\).aspx)
+ [MSDN: Fontes (Windows)](/windows/desktop/uxguide/vis-fonts)   
+ [MSDN: Texto da Interface do usuário (Windows)](/windows/desktop/uxguide/text-ui)

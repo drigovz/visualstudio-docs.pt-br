@@ -1,7 +1,7 @@
 ---
 title: DISASSEMBLY_FLAGS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85c5e4a5b0cc5dbdcff5750ce5c87d170bb9bd20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 581b0945ceaf9ca4348e0f5bd779dbd9c5311afc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464752"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741079"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DISASSEMBLY_FLAGS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/disassembly-flags).  
-  
 Especifica os sinalizadores de desmontagem.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_DISASSEMBLY_FLAGS {   
+enum enum_DISASSEMBLY_FLAGS {   
    DF_DOCUMENTCHANGE     = 0x00000001,  
    DF_DISABLED           = 0x00000002,  
    DF_INSTRUCTION_ACTIVE = 0x00000004,  
@@ -46,7 +44,7 @@ typedef DWORD DISASSEMBLY_FLAGS;
 ```  
   
 ```csharp  
-public enum enum_DISASSEMBLY_FLAGS {   
+public enum enum_DISASSEMBLY_FLAGS {   
    DF_DOCUMENTCHANGE     = 0x00000001,  
    DF_DISABLED           = 0x00000002,  
    DF_INSTRUCTION_ACTIVE = 0x00000004,  

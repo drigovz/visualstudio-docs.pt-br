@@ -1,7 +1,7 @@
 ---
 title: 'Idiastackwalkhelper:: Imageforva | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaStackWalkHelper::imageForVA method
 ms.assetid: 8d4edabf-3c01-4fef-8b61-4779f3371067
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a67d092f811f621fe0cffa890c2455f3385f98c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a48891d39f79705e072196b52c0136aef64661c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463580"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740225"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiastackwalkhelper:: Imageforva](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackwalkhelper-imageforva).  
-  
 Retorna o início da imagem de um executável na memória que recebe um endereço virtual em algum lugar no espaço de memória do executável.  
   
 ## <a name="syntax"></a>Sintaxe  

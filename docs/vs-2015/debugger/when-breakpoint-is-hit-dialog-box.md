@@ -1,7 +1,7 @@
 ---
 title: Quando o ponto de interrupção é a caixa de diálogo ocorrências | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,21 +23,19 @@ dev_langs:
 - C++
 ms.assetid: 476e3d98-cf35-4338-b124-cd0f3010d854
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 650e390abde6f3ad99e5a0c30591c8d1530df692
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad979fa302a29f9d444579655e368db6da8b3e1f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465560"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805405"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Caixa de diálogo Ponto de Interrupção Quando Visitado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ao ponto de interrupção é atingido caixa de diálogo](https://docs.microsoft.com/visualstudio/debugger/when-breakpoint-is-hit-dialog-box).  
-  
 Com essa caixa de diálogo, você pode personalizar a ação que ocorre quando um ponto de interrupção é atingido.  
   
 ## <a name="uielement-list"></a>Lista UIElement  

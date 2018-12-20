@@ -1,7 +1,7 @@
 ---
 title: Função SccGetUserOption | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,27 +17,25 @@ ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 567dbf987887d203a811a1dc965ecd4a472d5641
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3165580baae4f2b3b7d64f9c86e05b042a505a13
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472900"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786477"
 ---
 # <a name="sccgetuseroption-function"></a>Função SccGetUserOption
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [função SccGetUserOption](https://docs.microsoft.com/visualstudio/extensibility/sccgetuseroption-function).  
-  
 Essa função recupera uma variedade de opções específicas do usuário.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-SCCRTN SccGetUserOption(  
-   LPVOID pContext,  
-   LONG nOption,  
-   LPLONG lpVal  
+SCCRTN SccGetUserOption(  
+   LPVOID pContext,  
+   LONG nOption,  
+   LPLONG lpVal  
 );  
 ```  
   

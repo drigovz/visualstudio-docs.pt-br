@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumsectioncontribs:: Next | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaEnumSectionContribs::Next method
 ms.assetid: a6bb2adb-ee6d-4f3c-ab5b-e89361c8880e
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01b09f132d7afadc5462602bde2eeb0a3da3bead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 04434bb28a0b79adf7f65a86c9bb3ddd970366f5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468356"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758315"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaenumsectioncontribs:: Next](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumsectioncontribs-next).  
-  
 Recupera um número especificado de contribuições de seção na sequência de enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Next(   
+HRESULT Next(   
    ULONG                celt,   
    IDiaSectionContrib** rgelt,  
    ULONG*               pceltFetched  

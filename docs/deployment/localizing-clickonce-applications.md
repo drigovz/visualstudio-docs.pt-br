@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7897869e8cc010d54c1914cbfa8ca763dd3a3bfa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2a4234d8f6ee9fa946f2accfd50a587e6dbd8068
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822095"
 ---
 # <a name="localize-clickonce-applications"></a>Localizar aplicativos ClickOnce
 Localização é o processo de tornar seu aplicativo apropriado para uma cultura específica. Esse processo envolve a tradução de texto de (UI) de interface do usuário para uma linguagem específica de região, usando a data correta e a formatação de moeda, ajustando o tamanho dos controles em um formulário, e controles de espelhamento da direita para a esquerda, se necessário.  
@@ -76,9 +76,9 @@ Localização é o processo de tornar seu aplicativo apropriado para uma cultura
   
  Você tem três opções para testar implantações localizadas antes de tornar seu aplicativo disponível aos clientes:  
   
--   Você pode executar seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo em apropriado as versões localizadas do Windows.  
+- Você pode executar seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo em apropriado as versões localizadas do Windows.  
   
--   Você pode definir o <xref:System.Threading.Thread.CurrentUICulture%2A> propriedade por meio de programação em seu aplicativo. (Essa propriedade deve ser definida antes de chamar o <xref:System.Windows.Forms.Application.Run%2A> método.)  
+- Você pode definir o <xref:System.Threading.Thread.CurrentUICulture%2A> propriedade por meio de programação em seu aplicativo. (Essa propriedade deve ser definida antes de chamar o <xref:System.Windows.Forms.Application.Run%2A> método.)  
   
 ## <a name="see-also"></a>Consulte também  
  [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-deployment.md)   

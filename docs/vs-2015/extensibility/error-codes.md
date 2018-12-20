@@ -1,7 +1,7 @@
 ---
 title: Códigos de erro | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7bd6fd1eb6966b23912e0181ee147a4e8715b4ee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb27b2b64df0d7f8c0aefb5975844126363fe31d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465819"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808326"
 ---
 # <a name="error-codes"></a>Códigos de erro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [códigos de erro](https://docs.microsoft.com/visualstudio/extensibility/error-codes).  
-  
 Quando uma função de API de plug-in de controle de origem retorna um erro, ele deve ser um dos seguintes códigos de erro. Todos os erros são negativos, avisos ou códigos de erro informativas são positivos, e o sucesso é 0.  
   
 |Código do erro|Valor|Descrição|  

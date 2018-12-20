@@ -1,7 +1,7 @@
 ---
 title: Exibição de detalhes de recurso – Dados de contenção | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - Resource Details view
 ms.assetid: a4ecfe1c-abbc-4fb3-9ab2-34de50486901
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 760240544971062da3a5161eab7d203ba6d097c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98cc1d3f281108ef23f073ceae69d97fa3c0c32a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461740"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782460"
 ---
 # <a name="resource-details-view---contention-data"></a>Exibição de detalhes do recurso – Dados de contenção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de detalhes do recurso – dados de contenção](https://docs.microsoft.com/visualstudio/profiling/resource-details-view-contention-data).  
-  
 A exibição de Detalhes do Recurso apresenta um gráfico de linha do tempo dos eventos de bloqueio que foram causados por contenções em um recurso selecionado. Um evento de bloqueio ocorre quando um thread é forçado a suspender a execução porque outro thread bloqueou o acesso ao recurso.  
   
  Este modo de exibição representa a linha do tempo de execução de cada thread como uma barra horizontal e cada evento de bloqueio como uma barra vertical na linha do tempo do thread. Quando necessário, você pode ampliar uma seção da linha do tempo para exibir eventos individuais. Para exibir o caminho de execução (pilha de chamadas) das funções que levou ao evento, clique na barra de evento. As funções aparecem na janela **Pilha de Chamadas**. Quando o código-fonte para uma função estiver disponível, você pode clicar no nome de função para editar o arquivo de origem na interface para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -56,9 +54,9 @@ A exibição de Detalhes do Recurso apresenta um gráfico de linha do tempo dos 
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Para exibir ou editar o código-fonte de uma função na pilha de chamadas  
   
--   Na janela **Pilha de Chamadas**, clique no nome da função.  
+- Na janela **Pilha de Chamadas**, clique no nome da função.  
   
- O código-fonte da função deve fazer parte do projeto atual.  
+  O código-fonte da função deve fazer parte do projeto atual.  
   
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>Para exibir a árvore de chamadas de eventos de contenção do recurso  
   

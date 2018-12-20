@@ -1,7 +1,7 @@
 ---
 title: IDebugEnumField | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 42f685bf-0f39-47f4-98b0-6022efe2bf97
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1a4429329e4a17cb0e0e5ffdc3cbe81b25910e74
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6af5d77cd9aa622edafd144c885322768d3e4376
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465090"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740592"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugEnumField](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugenumfield).  
-  
 Essa interface representa um tipo de enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  

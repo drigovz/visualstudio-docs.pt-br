@@ -1,7 +1,7 @@
 ---
 title: 'Idiaframedata:: Get_lengthparams | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaFrameData::get_lengthParams method
 ms.assetid: a9177ed6-9ba8-4384-b411-24cad07d031b
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf273cccc7e6c598418426ee5e0ca67fa98dff52
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1033898a5f98f4194fe33c430bad2716546ea695
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474167"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796162"
 ---
 # <a name="idiaframedatagetlengthparams"></a>IDiaFrameData::get_lengthParams
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaframedata:: Get_lengthparams](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaframedata-get-lengthparams).  
-  
 Recupera o número de bytes de parâmetros enviados por push na pilha.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_lengthParams (   
+HRESULT get_lengthParams (   
    DWORD* pRetVal  
 );  
 ```  

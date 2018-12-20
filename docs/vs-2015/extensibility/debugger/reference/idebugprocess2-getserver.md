@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2::GetServer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: 8f73c530-cceb-4f1f-8c63-1cc0ccd4a310
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ef0b41929b5b1ee89771c65cedd6550deba6f4ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c23d859cd71bab09e307ea15358aa0cca9140e8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473025"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729925"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProcess2::GetServer](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess2-getserver).  
-  
 Obtém o que esse processo está em execução no servidor.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetServer(   
-   IDebugCoreServer2** ppServer  
+HRESULT GetServer(   
+   IDebugCoreServer2** ppServer  
 );  
 ```  
   
 ```csharp  
-int GetServer(   
-   out IDebugCoreServer2 ppServer  
+int GetServer(   
+   out IDebugCoreServer2 ppServer  
 );  
 ```  
   

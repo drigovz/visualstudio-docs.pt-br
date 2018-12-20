@@ -1,7 +1,7 @@
 ---
 title: Exibição Funções | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,21 +18,19 @@ helpviewer_keywords:
 - profiling tools, Functions view
 ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
 caps.latest.revision: 32
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4bc15c21400b720bd5dde9c18111d7cc68afc34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 207daebe03327216095c8e6b45798d3cf3fb43d5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464997"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817627"
 ---
 # <a name="functions-view"></a>Exibição de funções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de funções](https://docs.microsoft.com/visualstudio/profiling/functions-view).  
-  
 A exibição Funções lista as funções que são chamadas durante a criação do perfil.  
   
  Por padrão, as funções são listadas por nome. Para exibir as funções por módulo, clique com o botão direito do mouse na janela da exibição Funções e selecione **Mostrar na Exibição de Módulo**. A exibição Módulo será mostrada.  

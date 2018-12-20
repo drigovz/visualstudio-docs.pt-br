@@ -1,7 +1,7 @@
 ---
 title: 'Como: suprimir notificações de alteração de arquivo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 312c34b143608cb6d829e2d79b6be2eae724a238
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4f82fd90d95a595d39403d2ee131285034b95d0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465001"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808252"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Como: suprimir notificações de alteração de arquivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: suprimir notificações de alteração de arquivo](https://docs.microsoft.com/visualstudio/extensibility/how-to-suppress-file-change-notifications).  
-  
 Quando o arquivo físico que representa o buffer de texto tiver sido alterado, uma caixa de diálogo exibe a mensagem **você deseja salvar as alterações aos seguintes itens?** Isso é conhecido como a notificação de alteração de arquivo. Se muitas alterações serão para o arquivo, no entanto, essa caixa de diálogo exibindo repetidamente pode rapidamente se tornar irritante.  
   
  Programaticamente, você pode suprimir esta caixa de diálogo usando o procedimento a seguir. Ao fazer isso, você pode recarregar um arquivo imediatamente sem a necessidade de solicitar ao usuário para salvar as alterações de cada vez.  
@@ -85,7 +83,7 @@ void CSuspendFileChanges::Suspend()
   
     CComPtr<IUnknown> srpDocData;  
     VSCOOKIE vscookie = VSCOOKIE_NIL;  
-    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
+    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
       NULL, NULL, &srpDocData, &vscookie);  
     if ( (vscookie == VSCOOKIE_NIL) || !srpDocData)  
         return;  

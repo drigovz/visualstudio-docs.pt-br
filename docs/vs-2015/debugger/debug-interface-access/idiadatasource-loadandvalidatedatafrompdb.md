@@ -1,7 +1,7 @@
 ---
 title: 'Idiadatasource:: Loadandvalidatedatafrompdb | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaDataSource::loadAndValidateDataFromPdb method
 ms.assetid: d66712dd-6c24-4192-919a-cce262066f0e
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e4b425406f6f6b044226b791950f7d93acc95aa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: efd5641083bded6729a7c2c698b5a1164a280118
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468133"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767686"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiadatasource:: Loadandvalidatedatafrompdb](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb).  
-  
 Abre e verifica se o arquivo de banco de dados (. PDB) de programa corresponde as informações de assinatura fornecidas e prepara o arquivo. PDB como uma fonte de dados de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT loadAndValidateDataFromPdb (   
+HRESULT loadAndValidateDataFromPdb (   
    LPCOLESTR pdbPath,  
    GUID*     pcsig70,  
    DWORD     sig,  

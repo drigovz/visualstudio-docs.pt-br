@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 84060ed018059f4b067b4744465bf4116f72841b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d32f76965c0dbef359e54bda114221e460a9bfd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634732"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296379"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Passo a passo: Estenda o Gerenciador de servidores para exibir web parts
   No Visual Studio, você pode usar o **conexões do SharePoint** nó do **Gerenciador de servidores** para componentes de exibição nos sites do SharePoint. No entanto, **Gerenciador de servidores** não exibe alguns componentes por padrão. Neste passo a passo, você estenderá **Gerenciador de servidores** para que ele exiba a Galeria de Web Parts em cada uma conectada site do SharePoint.  
@@ -48,26 +48,26 @@ ms.locfileid: "42634732"
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:  
   
--   Edições com suporte do Windows, SharePoint e do Visual Studio.  
+- Edições com suporte do Windows, SharePoint e do Visual Studio.  
   
--   O SDK do Visual Studio. Este passo a passo usa o **VSIX Project** modelo no SDK para criar um pacote VSIX para implantar o item de projeto. Para obter mais informações, consulte [estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- O SDK do Visual Studio. Este passo a passo usa o **VSIX Project** modelo no SDK para criar um pacote VSIX para implantar o item de projeto. Para obter mais informações, consulte [estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir o passo a passo:  
+  Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir o passo a passo:  
   
--   Usando o modelo de objeto de servidor para o SharePoint. Para obter mais informações, consulte [usando o modelo de objeto de servidor do SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177796).  
+- Usando o modelo de objeto de servidor para o SharePoint. Para obter mais informações, consulte [usando o modelo de objeto de servidor do SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177796).  
   
--   Web Parts em soluções do SharePoint. Para obter mais informações, consulte [Web Parts Overview](http://go.microsoft.com/fwlink/?LinkId=177803).  
+- Web Parts em soluções do SharePoint. Para obter mais informações, consulte [Web Parts Overview](http://go.microsoft.com/fwlink/?LinkId=177803).  
   
 ## <a name="create-the-projects"></a>Crie os projetos
  Para concluir este passo a passo, você deve criar três projetos:  
   
--   Um projeto VSIX para criar o pacote VSIX para implantar a extensão.  
+- Um projeto VSIX para criar o pacote VSIX para implantar a extensão.  
   
--   Um projeto de biblioteca de classe que implementa a extensão. Este projeto deve ter como destino o .NET Framework 4.5.  
+- Um projeto de biblioteca de classe que implementa a extensão. Este projeto deve ter como destino o .NET Framework 4.5.  
   
--   Um projeto de biblioteca de classe que define os comandos do SharePoint personalizados. Este projeto deve ter como destino o.NET Framework 3.5.  
+- Um projeto de biblioteca de classe que define os comandos do SharePoint personalizados. Este projeto deve ter como destino o.NET Framework 3.5.  
   
- Inicie o passo a passo Criando os projetos.  
+  Inicie o passo a passo Criando os projetos.  
   
 #### <a name="to-create-the-vsix-project"></a>Para criar o projeto do VSIX  
   
@@ -278,7 +278,7 @@ ms.locfileid: "42634732"
   
 1.  Na **Gerenciador de soluções**, sob o projeto WebPartNode, abra o **vsixmanifest** arquivo no editor de manifesto.  
   
-     O arquivo vsixmanifest é a base para o arquivo Extension vsixmanifest que exigem todos os pacotes VSIX. Para obter mais informações sobre esse arquivo, consulte [1.0 referência do esquema de extensão do VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     O arquivo vsixmanifest é a base para o arquivo Extension vsixmanifest que exigem todos os pacotes VSIX. Para obter mais informações sobre esse arquivo, consulte [1.0 referência do esquema de extensão do VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  No **nome do produto** , digite **Web parte Galeria de nó do Gerenciador de servidores**.  
   
@@ -293,7 +293,7 @@ ms.locfileid: "42634732"
 6.  No **tipo** , escolha **mefcomponent**.  
   
     > [!NOTE]  
-    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  No **fonte** , escolha **um projeto na solução atual**.  
   
@@ -306,7 +306,7 @@ ms.locfileid: "42634732"
 10. No **tipo** , digite **SharePoint.Commands.v4**.  
   
     > [!NOTE]  
-    >  Esse elemento Especifica uma extensão personalizada que você deseja incluir na extensão do Visual Studio. Para obter mais informações, consulte [ativo Element (esquema de VSX)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737).  
+    >  Esse elemento Especifica uma extensão personalizada que você deseja incluir na extensão do Visual Studio. Para obter mais informações, consulte [ativo Element (esquema de VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).  
   
 11. No **fonte** , escolha o **um projeto na solução atual** item de lista.  
   

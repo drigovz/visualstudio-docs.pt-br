@@ -1,7 +1,7 @@
 ---
 title: Associar controles WPF a um conjunto de dados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,47 +21,45 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e04e8ec9ae181a7cb894b22efecab0ad6ba68b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 9b77e8211d8f76627f16f96abed8a61e6dae03d7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475363"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219790"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associar controles do WPF a um conjunto de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [controles de WPF associar a um conjunto de dados](https://docs.microsoft.com/visualstudio/data-tools/bind-wpf-controls-to-a-dataset).  
-  
   
 Neste passo a passo, você criará um aplicativo WPF que contém controles de associação de dados. Os controles são associados a registros de produto que são encapsulados em um conjunto de dados. Você também adicionará botões para navegar pelos produtos e salvar alterações em registros de produtos.  
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Criando um aplicativo WPF e um conjunto de dados gerado a partir de dados no banco de dados de exemplo AdventureWorksLT.  
+- Criando um aplicativo WPF e um conjunto de dados gerado a partir de dados no banco de dados de exemplo AdventureWorksLT.  
   
--   Criando um conjunto de controles ligados a dados ao arrastar uma tabela de dados das **fontes de dados** janela para uma janela no Designer do WPF.  
+- Criando um conjunto de controles ligados a dados ao arrastar uma tabela de dados das **fontes de dados** janela para uma janela no Designer do WPF.  
   
--   Criando botões que navegam para a frente e para trás nos registros de produtos.  
+- Criando botões que navegam para a frente e para trás nos registros de produtos.  
   
--   Criando um botão para salvar as alterações que os usuários fazem nos registros de produtos na tabela de dados e na fonte de dados subjacente.  
+- Criando um botão para salvar as alterações que os usuários fazem nos registros de produtos na tabela de dados e na fonte de dados subjacente.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT a [site da CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).  
+- Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT a [site da CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).  
   
- Conhecimento prévio dos conceitos a seguir também é útil, mas não é necessário para concluir o passo a passo:  
+  Conhecimento prévio dos conceitos a seguir também é útil, mas não é necessário para concluir o passo a passo:  
   
--   Conjuntos de dados e TableAdapters. Para obter mais informações, consulte [ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) e [visão geral de TableAdapter](../data-tools/tableadapter-overview.md).  
+- Conjuntos de dados e TableAdapters. Para obter mais informações, consulte [ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) e [visão geral de TableAdapter](../data-tools/tableadapter-overview.md).  
   
--   Trabalhando com o WPF Designer. Para obter mais informações, consulte [WPF e Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Trabalhando com o WPF Designer. Para obter mais informações, consulte [WPF e Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
--   Associação de dados do WPF. Para obter mais informações, consulte [Visão geral de vinculação de dados](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Associação de dados do WPF. Para obter mais informações, consulte [Visão geral de vinculação de dados](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-project"></a>Criar o projeto  
  Crie um novo projeto WPF. O projeto exibirá registros de produtos.  
@@ -91,7 +89,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
   
 2.  No **fontes de dados** janela, clique em **Add New Data Source**.  
   
-     O **configuração de fonte de dados**assistente é aberto.  
+     O **configuração de fonte de dados** assistente é aberto.  
   
 3.  Sobre o **escolher um tipo de fonte de dados** página, selecione **banco de dados**e, em seguida, clique em **próxima**.  
   
@@ -124,7 +122,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
   
 2.  No designer, clique com botão direito do **Fill,GetData()** de consulta e selecione **configurar**.  
   
-     O **configuração do TableAdapter**assistente é aberto.  
+     O **configuração do TableAdapter** assistente é aberto.  
   
 3.  No **insira uma instrução SQL** página, adicione a seguinte cláusula WHERE após o `SELECT` instrução na caixa de texto.  
   

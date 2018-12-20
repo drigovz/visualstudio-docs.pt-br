@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumframedata:: Next | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaEnumFrameData::Next method
 ms.assetid: 546e2e23-efb2-425a-96a1-808c67c519fb
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37e9d695c70a3b69357f9d40315ed2359a52fc2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e87f1768bc0de4846fbcbc0faafac5ef37e3f4bb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461581"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727778"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaenumframedata:: Next](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumframedata-next).  
-  
 Recupera um número especificado de elementos de dados do quadro na sequência de enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Next (   
+HRESULT Next (   
    ULONG           celt,   
    IDiaFrameData** rgelt,  
    ULONG*          pceltFetched  

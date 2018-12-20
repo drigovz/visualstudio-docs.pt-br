@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplier2::AddPort | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: df491161-6bf3-4fcc-b478-b9ec88ec995f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a8516402e3caa7bcd7abbdc5a1ccd93ce40275e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f9c13d5b5717ff518642c1b7877dd881aa68a99
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465588"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753746"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPortSupplier2::AddPort](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportsupplier2-addport).  
-  
 Adiciona uma porta.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT AddPort(   
+HRESULT AddPort(   
    IDebugPortRequest2* pRequest,  
    IDebugPort2**       ppPort  
 );  
 ```  
   
 ```csharp  
-int AddPort(   
+int AddPort(   
    IDebugPortRequest2 pRequest,  
    out IDebugPort2    ppPort  
 );  

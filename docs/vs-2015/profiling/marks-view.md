@@ -1,7 +1,7 @@
 ---
 title: Exibição de Marcas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ helpviewer_keywords:
 - profiling tools reports, Marks view
 ms.assetid: b2773344-8081-4116-85a1-58f770448f6a
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0575d033916486ef4d8e5d9545ae07d0cd3973e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10d893a4f643404161d0bcbe6b2c8f623719d0c7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460933"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762703"
 ---
 # <a name="marks-view"></a>Exibição de marcas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de marcas](https://docs.microsoft.com/visualstudio/profiling/marks-view).  
-  
 A exibição Marcas mostra os eventos de amostragem e ETW que foram inseridos no aplicativo.  
   
  As marcas padrão que são pré-populadas no rótulo de relatório no início e no final do programa.  

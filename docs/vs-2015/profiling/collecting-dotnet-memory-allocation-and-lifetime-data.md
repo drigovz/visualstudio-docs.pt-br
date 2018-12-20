@@ -1,7 +1,7 @@
 ---
 title: Coletando a alocação de memória do .NET e os dados de tempo de vida | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,30 +14,28 @@ helpviewer_keywords:
 - Profiling Tools,.NET memory method
 ms.assetid: 62a6dd5f-db66-4456-9d57-f8913dbfe4d5
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 057bdb7073b1518e20ec0bee461d19478033e3b1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: 0b31f4cfce52c60e4b8f65758fc56e16e29bef6b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587426"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761581"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Coletando a alocação de memória do .NET e os dados de vida útil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [dados de tempo de vida e coleta de alocação de memória do .NET](https://docs.microsoft.com/visualstudio/profiling/collecting-dotnet-memory-allocation-and-lifetime-data).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] As Ferramentas de Criação de Perfil dão suporte à coleta de alocação de memória e dados de tempo de vida do objeto do .NET, que ajuda a detectar problemas de desempenho relacionados à memória em seu aplicativo.  
   
--   Os Dados sobre alocação de memória do .NET incluem o tamanho e o número de objetos de memória do .NET Framework alocados.  
+- Os Dados sobre alocação de memória do .NET incluem o tamanho e o número de objetos de memória do .NET Framework alocados.  
   
--   Os dados de tempo de vida do objeto incluem o tamanho e o número de objetos de memória do .NET Framework reivindicados nas três gerações de coleta de lixo.  
+- Os dados de tempo de vida do objeto incluem o tamanho e o número de objetos de memória do .NET Framework reivindicados nas três gerações de coleta de lixo.  
   
- **Requisitos**  
+  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos da Windows Store também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -66,9 +64,9 @@ A versão mais recente deste tópico pode ser encontrada em [dados de tempo de v
 ## <a name="common-tasks"></a>Tarefas comuns  
  É possível especificar outras opções na caixa de diálogo _Sessão de Desempenho_**Páginas de Propriedades** da sessão de desempenho. Para abrir essa caixa de diálogo:  
   
--   No **Gerenciador de Desempenho**, clique com o botão direito do mouse no nome da sessão de desempenho e clique em **Propriedades**.  
+- No **Gerenciador de Desempenho**, clique com o botão direito do mouse no nome da sessão de desempenho e clique em **Propriedades**.  
   
- As tarefas na tabela a seguir descrevem opções que podem ser especificadas na caixa de diálogo _Sessão de Desempenho_**Páginas de Propriedades** quando você coleta dados de memória do .NET.  
+  As tarefas na tabela a seguir descrevem opções que podem ser especificadas na caixa de diálogo _Sessão de Desempenho_**Páginas de Propriedades** quando você coleta dados de memória do .NET.  
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  

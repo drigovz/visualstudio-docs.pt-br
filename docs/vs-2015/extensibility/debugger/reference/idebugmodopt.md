@@ -1,7 +1,7 @@
 ---
 title: IDebugModOpt | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: ebd525e3-d140-4071-9d8c-41871de4125e
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e280e0b74d4cba3a988bccb5811a409c86c058b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d5c1287e57d9bbc3b8b31fc1428a6544a867bea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474679"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735404"
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugModOpt](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmodopt).  
-  
 Representa um modificador opcional de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  

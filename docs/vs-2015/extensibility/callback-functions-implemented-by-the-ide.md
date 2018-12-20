@@ -1,7 +1,7 @@
 ---
 title: Funções de retorno de chamada implementadas pelo IDE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a2293640ebb0cc788d104f02f790c32bb47ced6a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 5d2bf114a22419e5ed4621db52a68d266e2e7d0e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460727"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807511"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funções de retorno de chamada implementadas pelo IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [funções de retorno de chamada implementadas pelo IDE](https://docs.microsoft.com/visualstudio/extensibility/callback-functions-implemented-by-the-ide).  
-  
 Para fazer a integração com o ambiente de desenvolvimento integrado (IDE) como perfeita possível e para fornecer uma experiência unificada do usuário final, o plug-in de controle de origem pode usar funções de retorno de chamada que são implementadas pelo IDE. O plug-in pode chamar essas funções em momentos apropriados durante uma operação de controle do código-fonte para passar informações para o IDE; o IDE pode exibir essas informações como os elementos incorporados na sua interface do usuário nativa. O usuário tem uma experiência menos fragmentada neste cenário que se o plug-in empregados sua própria interface do usuário.  
   
  O arquivo de cabeçalho necessário é scc.h. O local padrão é \Program Files\VSIP 8.0\EnvSDK\common\inc\\. Ele também está na pasta VSIP que tem a amostra de plug-in de controle do código-fonte em \Program Files\VSIP 8.0\MSSCCI\\.  

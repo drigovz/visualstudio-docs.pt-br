@@ -1,7 +1,7 @@
 ---
 title: Salvar dados em uma transação | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e4b6d6befe4bbe29147a59b9700b8f148154e6c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0912ffbe2a9a82ac5efbd3b2ca6ba3566ce5b02
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465206"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219296"
 ---
 # <a name="save-data-in-a-transaction"></a>Salvar dados em uma transação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [salvar dados em uma transação](https://docs.microsoft.com/visualstudio/data-tools/save-data-in-a-transaction).  
-  
   
 Este passo a passo demonstra como salvar dados em uma transação usando o <xref:System.Transactions> namespace. Este exemplo usa as tabelas `Customers` e `Orders` do banco de dados de exemplo Northwind.  
   
@@ -50,7 +48,7 @@ Este passo a passo demonstra como salvar dados em uma transação usando o <xref
   
 2.  Nomeie o projeto **SavingDataInATransactionWalkthrough**.  
   
-3.  Selecione **aplicativo do Windows**e, em seguida, selecione**Okey**. Para obter mais informações, consulte [aplicativos cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Selecione **aplicativo do Windows**e, em seguida, selecione **Okey**. Para obter mais informações, consulte [aplicativos cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      O **SavingDataInATransactionWalkthrough** projeto é criado e adicionado ao **Gerenciador de soluções**.  
   
@@ -63,7 +61,7 @@ Este passo a passo demonstra como salvar dados em uma transação usando o <xref
   
 2.  No **fontes de dados** janela, selecione **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.  
   
-3.  Sobre o **escolher um tipo de fonte de dados**tela, selecione **banco de dados**e, em seguida, selecione**próxima**.  
+3.  Sobre o **escolher um tipo de fonte de dados**tela, selecione **banco de dados**e, em seguida, selecione **próxima**.  
   
 4.  Sobre o **escolha sua Conexão de dados**tela faça o seguinte:  
   
@@ -73,13 +71,13 @@ Este passo a passo demonstra como salvar dados em uma transação usando o <xref
   
     -   Selecione **nova Conexão** para iniciar o **Adicionar/Modificar Conexão** caixa de diálogo caixa e criar uma conexão ao banco de dados Northwind.  
   
-5.  Se seu banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, selecione**próxima**.  
+5.  Se seu banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, selecione **próxima**.  
   
-6.  Sobre o **salvar a cadeia de caracteres de conexão para o arquivo de configuração de aplicativo** tela, selecione**próxima**.  
+6.  Sobre o **salvar a cadeia de caracteres de conexão para o arquivo de configuração de aplicativo** tela, selecione **próxima**.  
   
 7.  Sobre o **Choose your Database Objects** , expanda o **tabelas** nó.  
   
-8.  Selecione o `Customers` e `Orders` tabelas e, em seguida, selecione**concluir**.  
+8.  Selecione o `Customers` e `Orders` tabelas e, em seguida, selecione **concluir**.  
   
      O **NorthwindDataSet** é adicionado ao seu projeto e o `Customers` e `Orders` as tabelas aparecem no **fontes de dados** janela.  
   
@@ -105,7 +103,7 @@ Este passo a passo demonstra como salvar dados em uma transação usando o <xref
   
 1.  Sobre o **Project** menu, selecione**adicionar referência**.  
   
-2.  Selecione **System. Transactions**(sobre o **.NET** guia) e, em seguida, selecione**Okey**.  
+2.  Selecione **System. Transactions**(sobre o **.NET** guia) e, em seguida, selecione **Okey**.  
   
      Uma referência a **System. Transactions** é adicionado ao projeto.  
   
@@ -114,14 +112,14 @@ Este passo a passo demonstra como salvar dados em uma transação usando o <xref
   
 #### <a name="to-modify-the-auto-generated-save-code"></a>Para modificar o código salvar gerado automaticamente  
   
-1.  Selecione o **salve** botão a **CustomersBindingNavigator** (o botão com o ícone de disquete).  
+1. Selecione o **salve** botão a **CustomersBindingNavigator** (o botão com o ícone de disquete).  
   
-2.  Substitua o método `CustomersBindingNavigatorSaveItem_Click` pelo seguinte código:  
+2. Substitua o método `CustomersBindingNavigatorSaveItem_Click` pelo seguinte código:  
   
-     [!code-csharp[VbRaddataSaving#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#4)]
-     [!code-vb[VbRaddataSaving#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#4)]  
+    [!code-csharp[VbRaddataSaving#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#4)]
+    [!code-vb[VbRaddataSaving#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#4)]  
   
- A ordem para reconciliar as alterações aos dados relacionados é a seguinte:  
+   A ordem para reconciliar as alterações aos dados relacionados é a seguinte:  
   
 -   Exclua registros filho. (Nesse caso, exclua registros do `Orders` tabela.)  
   
@@ -163,7 +161,7 @@ Este passo a passo demonstra como salvar dados em uma transação usando o <xref
   
 #### <a name="to-run-the-application"></a>Para executar o aplicativo  
   
--   Selecione**F5** para executar o aplicativo.  
+-   Selecione **F5** para executar o aplicativo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)

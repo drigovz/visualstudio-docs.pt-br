@@ -1,7 +1,7 @@
 ---
 title: 'Idiastackframe:: Get_cplusplusexceptionhandling | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaStackFrame::get_cplusplusExceptionHandling method
 ms.assetid: f2631820-c986-40ca-b61e-230d7a9c426c
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55fbcb7d6a50e4021c070c2fd6971d21f1f767e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c40776827926f57401044c80bc05c36fcf9aef16
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474308"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722875"
 ---
 # <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiastackframe:: Get_cplusplusexceptionhandling](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling).  
-  
 Recupera um sinalizador que indica se o tratamento de exceções C++ está em vigor.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_cplusplusExceptionHandling (   
+HRESULT get_cplusplusExceptionHandling (   
    BOOL* pRetVal  
 );  
 ```  

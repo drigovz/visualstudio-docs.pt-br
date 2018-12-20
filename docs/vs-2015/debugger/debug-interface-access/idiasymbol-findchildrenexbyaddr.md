@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::findChildrenExByAddr | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::findChildrenExByAddr
 ms.assetid: c1e7885d-2d15-4529-9ac2-32dd22efe31c
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9240828da9f276b1ef440f95e48d1b34432c7f2a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dedf619f15d63f472a5518fb09a913631464a742
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472652"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768927"
 ---
 # <a name="idiasymbolfindchildrenexbyaddr"></a>IDiaSymbol::findChildrenExByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSymbol::findChildrenExByAddr](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-findchildrenexbyaddr).  
-  
 Recupera os filhos do símbolo que são válidos em um endereço especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findChildrenExByAddr (   
+HRESULT findChildrenExByAddr (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  

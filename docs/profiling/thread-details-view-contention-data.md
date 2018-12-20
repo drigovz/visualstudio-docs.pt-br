@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 712fcfa369c4a324554bda38df671dab1a95a1f5
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: e832088c49366cee3cb2a4f45df7a1250171e7df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849522"
 ---
 # <a name="thread-details-view---contention-data"></a>Exibição Detalhes do Thread – dados de contenção
 A exibição Detalhes do Thread apresenta um gráfico de linha do tempo dos eventos de bloqueio no thread selecionado de uma execução de criação de perfil que foram causados por contenções em recursos. Um evento de bloqueio ocorre quando o thread é forçado a suspender a execução porque outro thread bloqueou o acesso a um recurso.  
@@ -46,9 +46,9 @@ A exibição Detalhes do Thread apresenta um gráfico de linha do tempo dos even
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Para exibir ou editar o código-fonte de uma função na pilha de chamadas  
   
--   Na janela **Pilha de Chamadas**, clique no nome da função.  
+- Na janela **Pilha de Chamadas**, clique no nome da função.  
   
- O código-fonte da função deve fazer parte do projeto atual.  
+  O código-fonte da função deve fazer parte do projeto atual.  
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>Para exibir os eventos de contenção de um recurso em todos os threads na execução de criação de perfil  
   

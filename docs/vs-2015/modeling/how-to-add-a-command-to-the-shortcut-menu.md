@@ -1,7 +1,7 @@
 ---
 title: 'Como: adicionar um comando ao Menu de atalho | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,29 +15,27 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6ae32e59dafa12e0c9f8695c0010012918f0b89d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7d15c1991ee70a0b1a163c8968e42fe450b7919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463147"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833506"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Como adicionar um comando ao menu de atalho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: adicionar um comando ao Menu de atalho](https://docs.microsoft.com/visualstudio/modeling/how-to-add-a-command-to-the-shortcut-menu).  
-  
 É possível adicionar comandos de menu à linguagem específica do domínio (DSL) para que seus usuários possam executar tarefas que são específicas de sua DSL. Os comandos aparecem no menu de contexto (atalho) quando os usuários clicam com o botão direito do mouse no diagrama. Você pode definir um comando para aparecer no menu apenas em circunstâncias específicas. Por exemplo, você pode tornar o comando visível apenas quando o usuário clicar em tipos específicos de elementos ou em elementos em estados específicos.  
   
  Um resumo das etapas executadas no projeto DslPackage são apresentadas abaixo:  
   
-1.  [Declarar o comando em Commands. VSCT](#VSCT)  
+1. [Declarar o comando em Commands. VSCT](#VSCT)  
   
-2.  [Atualizar o número de versão do pacote em Package.tt](#version). Você precisará fazer isso sempre que alterar o Commands.vsct  
+2. [Atualizar o número de versão do pacote em Package.tt](#version). Você precisará fazer isso sempre que alterar o Commands.vsct  
   
-3.  [Escrever métodos na classe Commandset&lt;1](#CommandSet) para tornar o comando visível e definir o que você deseja que o comando para fazer.  
+3. [Escrever métodos na classe Commandset&lt;1](#CommandSet) para tornar o comando visível e definir o que você deseja que o comando para fazer.  
   
- Para obter exemplos, consulte o [site do SDK de visualização e modelagem](http://go.microsoft.com/fwlink/?LinkID=185579).  
+   Para obter exemplos, consulte o [site do SDK de visualização e modelagem](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
 > [!NOTE]
 >  Também é possível modificar o comportamento de alguns comandos existentes, tais como Recortar, Colar, Selecionar Tudo e Imprimir substituindo métodos em CommandSet.cs. Para obter mais informações, consulte [como: modificar um comando de Menu padrão](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
@@ -47,15 +45,15 @@ A versão mais recente deste tópico pode ser encontrada em [como: adicionar um 
   
  Use o método neste tópico se:  
   
-1.  Desejar definir comandos de menu nos menus que não sejam os de atalho com clique direito do mouse.  
+1. Desejar definir comandos de menu nos menus que não sejam os de atalho com clique direito do mouse.  
   
-2.  Desejar definir agrupamentos específicos de comandos no menu.  
+2. Desejar definir agrupamentos específicos de comandos no menu.  
   
-3.  Não desejar permitir que outros estendam a DSL com comandos próprios.  
+3. Não desejar permitir que outros estendam a DSL com comandos próprios.  
   
-4.  Desejar definir apenas um comando.  
+4. Desejar definir apenas um comando.  
   
- Caso contrário, considere o uso do método MEF para definir os comandos. Para obter mais informações, consulte [estender a DSL usando MEF](../modeling/extend-your-dsl-by-using-mef.md).  
+   Caso contrário, considere o uso do método MEF para definir os comandos. Para obter mais informações, consulte [estender a DSL usando MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
 ##  <a name="VSCT"></a> Declarar o comando em Commands. VSCT  
  Os comandos de menu são declarados em DslPackage\Commands.vsct. Essas definições especificam os rótulos dos itens de menu e onde eles aparecem nos menus.  
@@ -228,21 +226,21 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
   
  Os seguintes fragmentos são geralmente úteis nos métodos OnStatus:  
   
--   `this.CurrentSelection`. O formato que o usuário clicou com o botão direito do mouse estará sempre incluído nesta lista. Se o usuário clicar em uma parte em branco do diagrama, o Diagrama será o único membro da lista.  
+- `this.CurrentSelection`. O formato que o usuário clicou com o botão direito do mouse estará sempre incluído nesta lista. Se o usuário clicar em uma parte em branco do diagrama, o Diagrama será o único membro da lista.  
   
--   `this.IsDiagramSelected()` - `true` Se o usuário clicou em uma parte em branco do diagrama.  
+- `this.IsDiagramSelected()` - `true` Se o usuário clicou em uma parte em branco do diagrama.  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()` - o usuário não escolheu vários objetos  
+- `this.IsSingleSelection()` - o usuário não escolheu vários objetos  
   
--   `this.SingleSelection` - a forma ou o diagrama que o usuário clicou com o botão direito  
+- `this.SingleSelection` - a forma ou o diagrama que o usuário clicou com o botão direito  
   
--   `shape.ModelElement as MyLanguageElement` - o elemento de modelo representado por uma forma.  
+- `shape.ModelElement as MyLanguageElement` - o elemento de modelo representado por uma forma.  
   
- Como diretriz geral, faça com que a propriedade `Visible` dependa do que foi selecionado e faça com que a propriedade `Enabled` dependa do estado dos elementos selecionados.  
+  Como diretriz geral, faça com que a propriedade `Visible` dependa do que foi selecionado e faça com que a propriedade `Enabled` dependa do estado dos elementos selecionados.  
   
- Um método OnStatus não deve alterar o estado do Armazenamento.  
+  Um método OnStatus não deve alterar o estado do Armazenamento.  
   
 ### <a name="define-what-the-command-does"></a>Defina o que o comando faz  
  Para cada comando, defina um método `OnMenu...` que execute a ação necessária quando o usuário clica no comando de menu.  
@@ -340,29 +338,29 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="troubleshooting"></a>Solução de problemas  
  **Comando não aparecer no menu:**  
   
--   O comando aparecerá apenas nas instâncias de depuração do Visual Studio até você instalar o pacote DSL. Para obter mais informações, consulte [implantar soluções de linguagem específica do domínio](../modeling/deploying-domain-specific-language-solutions.md).  
+- O comando aparecerá apenas nas instâncias de depuração do Visual Studio até você instalar o pacote DSL. Para obter mais informações, consulte [implantar soluções de linguagem específica do domínio](../modeling/deploying-domain-specific-language-solutions.md).  
   
--   Verifique se a sua amostra experimental tem a extensão de nome de arquivo correta para esta DSL. Para verificar a extensão do nome do arquivo, abra DslDefinition.dsl na instância principal do Visual Studio. Em seguida, no Gerenciador de DSL, clique com o botão direito do mouse no nó Editor e clique em Propriedades. Na janela Propriedades, examine a propriedade FileExtension.  
+- Verifique se a sua amostra experimental tem a extensão de nome de arquivo correta para esta DSL. Para verificar a extensão do nome do arquivo, abra DslDefinition.dsl na instância principal do Visual Studio. Em seguida, no Gerenciador de DSL, clique com o botão direito do mouse no nó Editor e clique em Propriedades. Na janela Propriedades, examine a propriedade FileExtension.  
   
--   Você [incrementar o número de versão do pacote](#version)?  
+- Você [incrementar o número de versão do pacote](#version)?  
   
--   Defina um ponto de interrupção no início do método OnStatus. Ele deve ser interrompido quando você clicar com o botão direito do mouse em qualquer parte do diagrama.  
+- Defina um ponto de interrupção no início do método OnStatus. Ele deve ser interrompido quando você clicar com o botão direito do mouse em qualquer parte do diagrama.  
   
-     **Método OnStatus não é chamado**:  
+   **Método OnStatus não é chamado**:  
   
-    -   Verifique se os GUIDs e IDs em seu código CommandSet correspondem aos presentes na seção Símbolos de Commands.vsct.  
+  -   Verifique se os GUIDs e IDs em seu código CommandSet correspondem aos presentes na seção Símbolos de Commands.vsct.  
   
-    -   Em Commands.vsct, verifique se o GUID e o ID em cada nó pai identificam o grupo pai correto.  
+  -   Em Commands.vsct, verifique se o GUID e o ID em cada nó pai identificam o grupo pai correto.  
   
-    -   Em um prompt de comando do Visual Studio, digite devenv /rootsuffix exp /setup. Em seguida, reinicie a instância de depuração do Visual Studio.  
+  -   Em um prompt de comando do Visual Studio, digite devenv /rootsuffix exp /setup. Em seguida, reinicie a instância de depuração do Visual Studio.  
   
--   Repasse o método OnStatus para verificar se command.Visible e command.Enabled estão definidos como true.  
+- Repasse o método OnStatus para verificar se command.Visible e command.Enabled estão definidos como true.  
   
- **Texto de menu incorreto é exibido ou o comando aparece no lugar errado**:  
+  **Texto de menu incorreto é exibido ou o comando aparece no lugar errado**:  
   
--   Certifique-se de que a combinação de GUID e ID seja exclusiva para este comando.  
+- Certifique-se de que a combinação de GUID e ID seja exclusiva para este comando.  
   
--   Certifique-se de que você tenha desinstalado as versões anteriores do pacote.  
+- Certifique-se de que você tenha desinstalado as versões anteriores do pacote.  
   
 ## <a name="see-also"></a>Consulte também  
  [Escrevendo código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)   

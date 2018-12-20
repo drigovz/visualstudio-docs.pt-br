@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 99d7f5e813e3ac33b327ed0c2962b150b6eed755
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6f53ca7f1a5e449d47a30a32967072f7220c159a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903147"
 ---
 # <a name="debug-sharepoint-solutions"></a>Depurar soluções do SharePoint
   Você pode depurar soluções do SharePoint usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador. Quando você inicia a depuração, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] implanta os arquivos de projeto para o servidor do SharePoint e, em seguida, abre uma instância do site do SharePoint no navegador da Web. As seções a seguir explicam como depurar aplicativos do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -43,13 +43,13 @@ ms.locfileid: "36327161"
 ## <a name="enable-debugging"></a>Habilitar a depuração
  Quando você depura uma solução do SharePoint no primeiro [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], uma caixa de diálogo alerta você que o arquivo Web. config não está configurado para habilitar a depuração. (O arquivo Web. config é criado quando você instala o SharePoint server. Para obter mais informações, consulte [trabalhando com arquivos Web. config](http://go.microsoft.com/fwlink/?LinkID=149266).) A caixa de diálogo lhe dá a opção de execução do projeto sem depuração ou modificando o arquivo Web. config para habilitar a depuração. Se você escolher a primeira opção, o projeto é executado normalmente. Se você escolher a segunda opção, o arquivo Web. config está configurado para:  
   
--   Ativar a pilha de chamadas (`CallStack="true"`)  
+- Ativar a pilha de chamadas (`CallStack="true"`)  
   
--   Desabilitar erros personalizados no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="Off" />`)  
+- Desabilitar erros personalizados no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="Off" />`)  
   
--   Habilitar a depuração de compilação (`<compilation debug="true">`)  
+- Habilitar a depuração de compilação (`<compilation debug="true">`)  
   
- O arquivo Web. config resultante é:  
+  O arquivo Web. config resultante é:  
   
 ```xml  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
@@ -89,24 +89,24 @@ ms.locfileid: "36327161"
 ## <a name="f5-debug-and-deployment-process"></a>Processo de implantação e depuração F5
  Quando você executa seu projeto do SharePoint no modo de depuração, o processo de implantação do SharePoint executa as seguintes tarefas:  
   
-1.  Executa os comandos de pré-implantação personalizáveis.  
+1. Executa os comandos de pré-implantação personalizáveis.  
   
-2.  Cria um arquivo de pacote (. wsp) da solução de Web usando [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] comandos. O arquivo. wsp inclui todos os arquivos necessários e os recursos. Para obter mais informações, consulte [visão geral das soluções](http://go.microsoft.com/fwlink/?LinkID=128154).  
+2. Cria um arquivo de pacote (. wsp) da solução de Web usando [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] comandos. O arquivo. wsp inclui todos os arquivos necessários e os recursos. Para obter mais informações, consulte [visão geral das soluções](http://go.microsoft.com/fwlink/?LinkID=128154).  
   
-3.  Se a solução do SharePoint é uma solução de farm, recicla o [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] pool de aplicativos para o site especificado [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]. Esta etapa libera arquivos bloqueados pelo [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] processo de trabalho.  
+3. Se a solução do SharePoint é uma solução de farm, recicla o [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] pool de aplicativos para o site especificado [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]. Esta etapa libera arquivos bloqueados pelo [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] processo de trabalho.  
   
-4.  Se já existir uma versão anterior do pacote, cancela a versão anterior dos recursos e arquivos no arquivo. wsp. Esta etapa desativa os recursos, desinstala o pacote de solução e, em seguida, exclui o pacote da solução no servidor do SharePoint.  
+4. Se já existir uma versão anterior do pacote, cancela a versão anterior dos recursos e arquivos no arquivo. wsp. Esta etapa desativa os recursos, desinstala o pacote de solução e, em seguida, exclui o pacote da solução no servidor do SharePoint.  
   
-5.  Instala a versão atual dos recursos e arquivos no arquivo. wsp. Esta etapa adiciona e instala a solução no servidor do SharePoint.  
+5. Instala a versão atual dos recursos e arquivos no arquivo. wsp. Esta etapa adiciona e instala a solução no servidor do SharePoint.  
   
-6.  Para fluxos de trabalho, instala o assembly de fluxo de trabalho. Você pode alterar seu local usando o *local do Assembly* propriedade.  
+6. Para fluxos de trabalho, instala o assembly de fluxo de trabalho. Você pode alterar seu local usando o *local do Assembly* propriedade.  
   
-7.  Ativa o recurso do projeto no SharePoint se o escopo é o Site ou Web. Recursos em escopos WebApplication e Farm não são ativados.  
+7. Ativa o recurso do projeto no SharePoint se o escopo é o Site ou Web. Recursos em escopos WebApplication e Farm não são ativados.  
   
-8.  Para fluxos de trabalho, associa o fluxo de trabalho com a biblioteca do SharePoint, lista ou site que você selecionou na **Assistente para personalização do SharePoint**.  
+8. Para fluxos de trabalho, associa o fluxo de trabalho com a biblioteca do SharePoint, lista ou site que você selecionou na **Assistente para personalização do SharePoint**.  
   
-    > [!NOTE]  
-    >  Essa associação ocorre somente se você selecionou **fluxo de trabalho associado automaticamente** no assistente.  
+   > [!NOTE]  
+   >  Essa associação ocorre somente se você selecionou **fluxo de trabalho associado automaticamente** no assistente.  
   
 9. Executa os comandos de pós-implantação personalizáveis.  
   
@@ -116,7 +116,7 @@ ms.locfileid: "36327161"
   
 12. Exibe a página do site, lista ou biblioteca apropriada no navegador da Web.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Exibe uma mensagem de status na janela de saída após a conclusão de cada tarefa. Se uma tarefa não pode ser concluída, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] exibe uma mensagem de erro na janela lista de erros.  
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Exibe uma mensagem de status na janela de saída após a conclusão de cada tarefa. Se uma tarefa não pode ser concluída, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] exibe uma mensagem de erro na janela lista de erros.  
   
 ## <a name="sharepoint-project-features"></a>Recursos de projeto do SharePoint
  Um recurso é uma unidade portátil e modular de funcionalidades que simplificam a modificação de sites usando definições de site. Também é um pacote de [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] elementos (WSS) que podem ser ativados para um escopo específico e que ajuda os usuários a realizar uma tarefa ou uma meta específica. Modelos são implantados como recursos.  
@@ -128,8 +128,8 @@ ms.locfileid: "36327161"
 ## <a name="debug-workflows"></a>Depurar fluxos de trabalho
  Quando você depurar projetos de fluxo de trabalho, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adiciona o modelo de fluxo de trabalho (dependendo do tipo) para uma biblioteca ou uma lista. Em seguida, você pode iniciar o modelo de fluxo de trabalho manualmente ou por adicionar ou atualizar um item. Você pode usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para depurar o fluxo de trabalho.  
   
-> [!NOTE]  
->  Se você adicionar referências a outros assemblies, certifique-se de que esses assemblies são instalados no cache de assembly global ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Caso contrário, a solução de fluxo de trabalho falhará. Para obter informações sobre como instalar assemblies, consulte [iniciar manualmente um fluxo de trabalho em um documento ou item](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
+> [!NOTE]
+>  Se você adicionar referências a outros assemblies, certifique-se de que esses assemblies são instalados no cache de assembly global ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Caso contrário, a solução de fluxo de trabalho falhará. Para obter informações sobre como instalar assemblies, consulte [iniciar manualmente um fluxo de trabalho em um documento ou item](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
  No entanto, o processo de implantação não inicia o fluxo de trabalho. Você deve iniciar o fluxo de trabalho do site do SharePoint. Você também pode iniciar o fluxo de trabalho usando um aplicativo cliente como o Microsoft Office Word 2010 ou usando o código do lado do servidor separado. Use uma das abordagens especificadas na **Assistente para personalização do SharePoint**.  
   

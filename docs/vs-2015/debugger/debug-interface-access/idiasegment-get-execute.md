@@ -1,7 +1,7 @@
 ---
 title: 'Idiasegment:: Get_execute | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSegment::get_execute method
 ms.assetid: 746cdf8e-9097-415d-ba10-069854153185
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c8b3c01f46d6b9cf26b4b6ffc459917b6de8800
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 670e2fd8c296e16f0a04aee65b102ae229a91350
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465286"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735158"
 ---
 # <a name="idiasegmentgetexecute"></a>IDiaSegment::get_execute
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasegment:: Get_execute](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasegment-get-execute).  
-  
 Recupera um sinalizador que indica se o segmento é executável.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_execute (   
+HRESULT get_execute (   
    BOOL* pRetVal  
 );  
 ```  

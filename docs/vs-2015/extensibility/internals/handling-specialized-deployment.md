@@ -1,7 +1,7 @@
 ---
 title: Tratando da implantação especializada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,39 +16,37 @@ ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f72b6daa075bb1b9127e357d072efb89b007373a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 236acfbad0d5c49710f4c7eb8b20a7572b209212
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467878"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736768"
 ---
 # <a name="handling-specialized-deployment"></a>Manipulação de implantação especializada
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tratamento implantação especializada](https://docs.microsoft.com/visualstudio/extensibility/internals/handling-specialized-deployment).  
-  
 Uma implantação é uma operação opcional para projetos. Um projeto Web, por exemplo, dá suporte a uma implantação para permitir que um projeto de atualizar um servidor Web. Da mesma forma, uma **Smart Device** projeto dá suporte a uma implantação para copiar um aplicativo criado para o dispositivo de destino. Subtipos de projeto podem fornecer o comportamento de implantação especializada, Implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface. Essa interface define um conjunto completo de operações de implantação:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
   
- A operação de implantação propriamente dita deve ser executada em um thread separado para fazer [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ainda mais responsivo para a interação do usuário. Os métodos fornecidos pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> são chamados de forma assíncrona por [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e operar em segundo plano, permitindo que o ambiente para consultar o status de uma operação de implantação a qualquer momento ou para interromper a operação, se necessário. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> operações de implantação de interface são chamadas pelo ambiente quando o usuário seleciona o comando implantar.  
+  A operação de implantação propriamente dita deve ser executada em um thread separado para fazer [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ainda mais responsivo para a interação do usuário. Os métodos fornecidos pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> são chamados de forma assíncrona por [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e operar em segundo plano, permitindo que o ambiente para consultar o status de uma operação de implantação a qualquer momento ou para interromper a operação, se necessário. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> operações de implantação de interface são chamadas pelo ambiente quando o usuário seleciona o comando implantar.  
   
- Para notificar o ambiente em que uma operação de implantação foi iniciada ou finalizada, o subtipo de projeto precisa chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> e o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> métodos.  
+  Para notificar o ambiente em que uma operação de implantação foi iniciada ou finalizada, o subtipo de projeto precisa chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> e o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> métodos.  
   
 ## <a name="handling-specialized-deployment"></a>Manipulação de implantação especializada  
   

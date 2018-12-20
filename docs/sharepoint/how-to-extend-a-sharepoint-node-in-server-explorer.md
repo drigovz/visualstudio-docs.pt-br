@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1dee26ae729dedc2d38895ca84e430ffcbad875f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f61afe90ed48064c79dd40c0c0975155c956e3e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118447"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861833"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Como: estender um nó SharePoint no Gerenciador de servidores
   Você pode estender os nós sob o **conexões do SharePoint** nó no **Gerenciador de servidores**. Isso é útil quando você deseja adicionar novos nós filhos, itens de menu de atalho ou propriedades para um nó existente. Para obter mais informações, consulte [estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
@@ -61,14 +61,14 @@ ms.locfileid: "37118447"
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir demonstra como criar dois tipos diferentes de extensões de nó:  
   
--   Uma extensão que adiciona um item de menu de contexto para nós de site do SharePoint. Quando você clica no item de menu, ele exibe o nome do nó que foi clicado.  
+- Uma extensão que adiciona um item de menu de contexto para nós de site do SharePoint. Quando você clica no item de menu, ele exibe o nome do nó que foi clicado.  
   
--   Uma extensão que adiciona uma propriedade personalizada denominada **ContosoExampleProperty** para cada nó que representa um campo chamado **corpo**.  
+- Uma extensão que adiciona uma propriedade personalizada denominada **ContosoExampleProperty** para cada nó que representa um campo chamado **corpo**.  
   
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
+  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
+  [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
   
- Essa extensão adiciona uma propriedade de cadeia de caracteres editáveis para nós. Você também pode criar propriedades personalizadas que exibem dados somente leitura do servidor do SharePoint. Para obter um exemplo que demonstra como fazer isso, consulte [instruções passo a passo: estenda o Gerenciador de servidores para exibir web parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+  Essa extensão adiciona uma propriedade de cadeia de caracteres editáveis para nós. Você também pode criar propriedades personalizadas que exibem dados somente leitura do servidor do SharePoint. Para obter um exemplo que demonstra como fazer isso, consulte [instruções passo a passo: estenda o Gerenciador de servidores para exibir web parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
 ## <a name="compile-the-code"></a>Compilar o código  
  Este exemplo requer referências aos assemblies a seguir:  

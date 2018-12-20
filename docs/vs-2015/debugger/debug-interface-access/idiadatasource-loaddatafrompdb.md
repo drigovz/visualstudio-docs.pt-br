@@ -1,7 +1,7 @@
 ---
 title: 'Idiadatasource:: Loaddatafrompdb | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaDataSource::loadDataFromPdb method
 ms.assetid: 02159073-8144-47f8-a0b0-aa0edcb92b5b
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8db156eb3cf5e263d1765c33d98db4d35aec6fb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0dd4700ba658aec5dd2cd59858cc243a7d79a523
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472905"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752823"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiadatasource:: Loaddatafrompdb](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiadatasource-loaddatafrompdb).  
-  
 Abre e prepara um arquivo de banco de dados (. PDB) do programa como uma fonte de dados de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  

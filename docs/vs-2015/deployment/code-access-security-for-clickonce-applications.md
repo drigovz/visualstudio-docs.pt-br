@@ -1,7 +1,7 @@
 ---
 title: Segurança de acesso do código para aplicativos ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 71b9344e552cb03d65b0093b1d5e0707689ec6af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea1f91a50180dce6edec17afead5649ecd3e1f50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461757"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816053"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Segurança de acesso do código para aplicativos ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Code Access Security para aplicativos ClickOnce](https://docs.microsoft.com/visualstudio/deployment/code-access-security-for-clickonce-applications).  
-  
 Os aplicativos ClickOnce são baseados no .NET Framework e estão sujeitos a restrições de segurança de acesso do código. Por esse motivo, é importante que você entenda as implicações do código de segurança de acesso e escrever aplicativos ClickOnce adequadamente.  
   
  Segurança de acesso do código é um mecanismo no .NET Framework que ajuda a limitar o acesso de código tem a recursos e operações protegidos. Você deve configurar as permissões de segurança de acesso do código para seu aplicativo usar a zona apropriada para o local do instalador do aplicativo ClickOnce. Na maioria dos casos, você pode escolher o **Internet** zona para um conjunto limitado de permissões ou a **Intranet Local** zona para um maior conjunto de permissões.  
@@ -48,14 +46,14 @@ Os aplicativos ClickOnce são baseados no .NET Framework e estão sujeitos a res
 ## <a name="default-clickonce-code-access-security"></a>Segurança de acesso do código do ClickOnce padrão  
  Por padrão, um aplicativo ClickOnce recebe permissões de confiança total quando for instalado ou executado em um computador cliente.  
   
--   Um aplicativo que tenha permissões de confiança total tem acesso irrestrito a recursos como o sistema de arquivos e o registro. Isso potencialmente permite que seu aplicativo (e sistema do usuário final) ser explorada por código mal-intencionado.  
+- Um aplicativo que tenha permissões de confiança total tem acesso irrestrito a recursos como o sistema de arquivos e o registro. Isso potencialmente permite que seu aplicativo (e sistema do usuário final) ser explorada por código mal-intencionado.  
   
--   Quando um aplicativo requer permissões de confiança total, o usuário final será solicitado a conceder permissões para o aplicativo. Isso significa que o aplicativo não fornece realmente uma experiência de ClickOnce, e o prompt pode ser potencialmente confuso para usuários menos experientes.  
+- Quando um aplicativo requer permissões de confiança total, o usuário final será solicitado a conceder permissões para o aplicativo. Isso significa que o aplicativo não fornece realmente uma experiência de ClickOnce, e o prompt pode ser potencialmente confuso para usuários menos experientes.  
   
-    > [!NOTE]
-    >  Ao instalar um aplicativo de mídia removível, como um CD-ROM, o usuário não é solicitado. Além disso, um administrador de rede pode configurar a política de rede para que os usuários não são solicitados ao instalar um aplicativo de uma fonte confiável. Para obter mais informações, consulte [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+  > [!NOTE]
+  >  Ao instalar um aplicativo de mídia removível, como um CD-ROM, o usuário não é solicitado. Além disso, um administrador de rede pode configurar a política de rede para que os usuários não são solicitados ao instalar um aplicativo de uma fonte confiável. Para obter mais informações, consulte [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
- Para restringir as permissões para um aplicativo ClickOnce, você pode modificar as permissões de segurança de acesso do código para seu aplicativo solicitar a zona que melhor se adapta as permissões que seu aplicativo requer. Na maioria dos casos, você pode selecionar a zona da qual o aplicativo está sendo implantado. Por exemplo, se seu aplicativo for um aplicativo empresarial, você pode usar o **Intranet Local** zona. Se seu aplicativo for um aplicativo da internet, você pode usar o **Internet** zona.  
+  Para restringir as permissões para um aplicativo ClickOnce, você pode modificar as permissões de segurança de acesso do código para seu aplicativo solicitar a zona que melhor se adapta as permissões que seu aplicativo requer. Na maioria dos casos, você pode selecionar a zona da qual o aplicativo está sendo implantado. Por exemplo, se seu aplicativo for um aplicativo empresarial, você pode usar o **Intranet Local** zona. Se seu aplicativo for um aplicativo da internet, você pode usar o **Internet** zona.  
   
 ## <a name="configuring-security-permissions"></a>Configurar permissões de segurança  
  Você sempre deve configurar seu aplicativo ClickOnce para solicitar a zona apropriada para limitar as permissões de segurança de acesso do código. Você pode configurar permissões de segurança na **segurança** página do **Designer de projeto**.  
@@ -82,23 +80,23 @@ Os aplicativos ClickOnce são baseados no .NET Framework e estão sujeitos a res
 ## <a name="security-permissions-for-browser-hosted-applications"></a>Permissões de segurança para aplicativos hospedados pelo navegador  
  Visual Studio fornece os seguintes tipos de projeto para aplicativos Windows Presentation Foundation (WPF):  
   
--   Aplicativo do Windows WPF  
+- Aplicativo do Windows WPF  
   
--   Aplicativo de navegador da Web WPF  
+- Aplicativo de navegador da Web WPF  
   
--   Biblioteca de Controles Personalizados do WPF  
+- Biblioteca de Controles Personalizados do WPF  
   
--   Biblioteca de serviço do WPF  
+- Biblioteca de serviço do WPF  
   
- Desses tipos de projeto, somente aplicativos da Web WPF navegador são hospedados em um navegador da Web e, portanto, exigem especial de implantação e configurações de segurança. As configurações de segurança padrão para esses aplicativos são da seguinte maneira:  
+  Desses tipos de projeto, somente aplicativos da Web WPF navegador são hospedados em um navegador da Web e, portanto, exigem especial de implantação e configurações de segurança. As configurações de segurança padrão para esses aplicativos são da seguinte maneira:  
   
--   **Habilitar configurações de segurança do ClickOnce**  
+- **Habilitar configurações de segurança do ClickOnce**  
   
--   **Este é um aplicativo de confiança parcial**  
+- **Este é um aplicativo de confiança parcial**  
   
--   **Zona da Internet** (com a permissão padrão definido para aplicativos de navegador da Web WPF selecionado)  
+- **Zona da Internet** (com a permissão padrão definido para aplicativos de navegador da Web WPF selecionado)  
   
- No **configurações de segurança avançadas** caixa de diálogo, o **depurar este aplicativo com o conjunto de permissões selecionado** caixa de seleção é marcada e desabilitada. Isso ocorre porque a depuração na zona não pode ser desativada para aplicativos hospedados pelo navegador.  
+  No **configurações de segurança avançadas** caixa de diálogo, o **depurar este aplicativo com o conjunto de permissões selecionado** caixa de seleção é marcada e desabilitada. Isso ocorre porque a depuração na zona não pode ser desativada para aplicativos hospedados pelo navegador.  
   
 ## <a name="see-also"></a>Consulte também  
  [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)   

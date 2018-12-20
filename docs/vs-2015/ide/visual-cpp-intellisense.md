@@ -1,7 +1,7 @@
 ---
 title: Visual C++ IntelliSense | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f4e4d59b57c61dea2c42b2b99714b8bf0bdf154
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ced999c20678cc64dc5f96e86070b5f39d5ca2c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462435"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881671"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Intellisense do Visual C++](https://docs.microsoft.com/visualstudio/ide/visual-cpp-intellisense).  
-  
 No Visual Studio 2015, o IntelliSense está disponível para arquivos de código único, bem como para arquivos em projetos. Em projetos de plataforma cruzada, alguns recursos do IntelliSense estão disponíveis nos arquivos .cpp e .c no projeto de código compartilhado mesmo quando você está em um contexto Android ou iOS.  
   
 ## <a name="intellisense-features-in-c"></a>Recursos do IntelliSense em C++  
@@ -75,23 +73,23 @@ No Visual Studio 2015, o IntelliSense está disponível para arquivos de código
   
  Observe o seguinte:  
   
--   A ramificação #else na linha 8 é esmaecida para indicar a região inativa, pois __ANDROID\_\_ está definido para o projeto Android.  
+- O # ramificação else na linha 8 é esmaecida para indicar a região inativa, pois `__ANDROID__` é definido para o projeto Android.  
   
--   A variável de saudação na linha 11 é inicializada com o identificador HELLO, que tem uma linha ondulada roxa. Isso ocorre porque nenhum identificador HELLO é definido no projeto iOS atualmente inativo. Embora a linha 11 fosse compilada no projeto Android, ela não seria no iOS. Uma vez que esse é um código compartilhado, que é algo que você deve alterar, embora ele compile na configuração ativa no momento.  
+- A variável de saudação na linha 11 é inicializada com o identificador HELLO, que tem uma linha ondulada roxa. Isso ocorre porque nenhum identificador HELLO é definido no projeto iOS atualmente inativo. Embora a linha 11 fosse compilada no projeto Android, ela não seria no iOS. Uma vez que esse é um código compartilhado, que é algo que você deve alterar, embora ele compile na configuração ativa no momento.  
   
--   A Linha 12 tem linha ondulada vermelha no identificador BYE; esse identificador não está definido no projeto ativo atualmente selecionado.  
+- A Linha 12 tem linha ondulada vermelha no identificador BYE; esse identificador não está definido no projeto ativo atualmente selecionado.  
   
- Agora, altere o projeto ativo para iOS.StaticLibrary e observe como as linhas onduladas mudam.  
+  Agora, altere o projeto ativo para iOS.StaticLibrary e observe como as linhas onduladas mudam.  
   
- ![iOS está selecionado como o projeto ativo.](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
+  ![iOS está selecionado como o projeto ativo.](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
   
- Observe o seguinte:  
+  Observe o seguinte:  
   
--   A ramificação #ifdef na linha 6 é esmaecida para indicar a região inativa, pois __ANDROID\_\_ não está definido para o projeto iOS.  
+- A ramificação #ifdef na linha 6 é esmaecida para indicar a região inativa, pois *_ANDROID\\*  \_ não está definido para o projeto do iOS.  
   
--   A variável de saudação na linha 11 é inicializada com o identificador HELLO, que agora tem uma linha ondulada vermelha. Isso ocorre porque nenhum identificador HELLO está definido no projeto iOS inativo no momento.  
+- A variável de saudação na linha 11 é inicializada com o identificador HELLO, que agora tem uma linha ondulada vermelha. Isso ocorre porque nenhum identificador HELLO está definido no projeto iOS inativo no momento.  
   
--   A linha 12 tem linha ondulada roxa no identificador BYE; esse identificador não está definido no projeto Android.NativeActivity inativo no momento.  
+- A linha 12 tem linha ondulada roxa no identificador BYE; esse identificador não está definido no projeto Android.NativeActivity inativo no momento.  
   
 ## <a name="single-file-intellisense"></a>IntelliSense de arquivo único  
  Ao abrir um arquivo único fora de qualquer projeto, você ainda obtém o IntelliSense. Você pode habilitar ou desabilitar determinados recursos indo para **Editor de Texto, C/C++, Avançado** para ativar ou desativar recursos do IntelliSense. Para configurar o IntelliSense para arquivos únicos que não fazem parte de um projeto, procure **IntelliSense e navegação para arquivos que não são de projeto** na seção **Avançado**. Consulte [Tour guiado do Visual C++](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  

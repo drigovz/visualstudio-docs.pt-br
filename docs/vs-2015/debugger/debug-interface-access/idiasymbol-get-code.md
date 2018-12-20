@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_code | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_code method
 ms.assetid: 5f425fa3-7ba6-4979-8b3e-0fcd06cbba73
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e28ed9cd678a199fde865f3a0ed3e5a3d59f256
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6fe3dfc52fb39b1ab5a7b1f13356c93687866141
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476363"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794030"
 ---
 # <a name="idiasymbolgetcode"></a>IDiaSymbol::get_code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_code](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-code).  
-  
 Recupera um sinalizador que especifica se o símbolo se refere a um endereço de código.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_code (   
+HRESULT get_code (   
    BOOL* pRetVal  
 );  
 ```  

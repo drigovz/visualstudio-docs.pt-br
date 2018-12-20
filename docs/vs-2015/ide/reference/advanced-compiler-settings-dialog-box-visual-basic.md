@@ -1,7 +1,7 @@
 ---
 title: Caixa de diálogo Configurações Avançadas do Compilador (Visual Basic) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,32 +18,30 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 683bf50a62b29369bd70394a6001d255e3e4f29b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd910b0e0295ca12807b96af189032ffec766429
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464655"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949819"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Caixa de diálogo Configurações de Compilador Avançadas (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [avançado compilador caixa de diálogo Configurações (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).  
-  
   
 Use a caixa de diálogo **Configurações Avançadas do Compilador** do **Designer de Projeto** para especificar as propriedades avançadas de configuração de build do projeto. Essa caixa de diálogo aplica-se a somente projetos Visual Basic.  
   
 ### <a name="to-access-this-dialog-box"></a>Para acessar essa caixa de diálogo  
   
-1.  No **Gerenciador de Soluções**, escolha um nó do projeto (não o nó **Solução**).  
+1. No **Gerenciador de Soluções**, escolha um nó do projeto (não o nó **Solução**).  
   
-2.  No menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Compilar**.  
+2. No menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Compilar**.  
   
-3.  Na [Página Compilar, Designer de Projeto (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), selecione a **Configuração** e a **Plataforma**. Nas configurações de build simplificadas, as listas **Configuração** e **Plataforma** não são exibidas. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+3. Na [Página Compilar, Designer de Projeto (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), selecione a **Configuração** e a **Plataforma**. Nas configurações de build simplificadas, as listas **Configuração** e **Plataforma** não são exibidas. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
   
-4.  Clique em **Opções Avançadas de Compilação**.  
+4. Clique em **Opções Avançadas de Compilação**.  
   
- [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
   
 ## <a name="optimizations"></a>Otimizações  
  As opções a seguir especificam otimizações que podem, em alguns casos, diminuir um arquivo de programa, fazer um programa executar mais rapidamente ou acelerar o processo de build.  

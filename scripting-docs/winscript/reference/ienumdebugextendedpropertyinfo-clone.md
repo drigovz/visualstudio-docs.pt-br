@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d873ba29ea2dc327cd6499613abb66d2a728008c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 03e4dcd79d90806eab0d664b2a0cba428c03207c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727456"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935322"
 ---
 # <a name="ienumdebugextendedpropertyinfoclone"></a>IEnumDebugExtendedPropertyInfo::Clone
-Cria um enumerador que contém o mesmo estado de enumeração do enumerador atual.  
+Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.  
   
 ## <a name="syntax"></a>Sintaxe  
   

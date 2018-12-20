@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_countLiveRanges | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_countLiveRanges
 ms.assetid: 55f79e1a-d4c2-42cd-ab37-d8253b20e34c
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b775bd86548ba18cf8f0ad7f2804c4a757a367b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4b6adf57656f0b3e6e9dd564b92c0051b17db9ab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468185"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734957"
 ---
 # <a name="idiasymbolgetcountliveranges"></a>IDiaSymbol::get_countLiveRanges
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSymbol::get_countLiveRanges](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-countliveranges).  
-  
 Recupera o número de intervalos de endereços válido associado com o símbolo local.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_countLiveRanges (   
+HRESULT get_countLiveRanges (   
    DWORD* count  
 );  
 ```  

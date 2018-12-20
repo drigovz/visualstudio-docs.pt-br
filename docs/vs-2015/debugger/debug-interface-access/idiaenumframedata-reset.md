@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumframedata:: Reset | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaEnumFrameData::Reset method
 ms.assetid: 2242165b-096b-4345-b214-4a8941dc5ba5
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 974d6cb2ce072baa0866888b8db64276d931c61d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 914349d5151e50d4326a17e62574b3c91ef5e28e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465299"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760792"
 ---
 # <a name="idiaenumframedatareset"></a>IDiaEnumFrameData::Reset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaenumframedata:: Reset](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumframedata-reset).  
-  
 Redefine uma sequência de enumeração para o início.  
   
 ## <a name="syntax"></a>Sintaxe  

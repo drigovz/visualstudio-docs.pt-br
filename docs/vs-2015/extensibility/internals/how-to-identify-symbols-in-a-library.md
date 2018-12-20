@@ -1,7 +1,7 @@
 ---
 title: 'Como: identificar símbolos em uma biblioteca | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f10cc65d30f8d9b2d58fa02822494ae7e6a6940
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34b5480aebbe59ef9b023bf4350b2bdd35725c47
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474248"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786698"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Como: identificar símbolos em uma biblioteca
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: identificar símbolos em uma biblioteca](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-identify-symbols-in-a-library).  
-  
 Ferramentas de navegação de símbolo exibem exibições hierárquicas de símbolos. Os símbolos representam objetos, namespaces, classes, membros de classe e outros elementos de linguagem.  
   
  Cada símbolo na hierarquia pode ser identificado pelas informações de navegação passadas pela biblioteca de símbolo para o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Gerenciador de objetos por meio de interfaces a seguir:  

@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2::Attach | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,37 +17,35 @@ ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90ff2520a64ca338cb703c5e22f8a0c021b52540
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2b9c3e4bfbcc9604c5fe415a169cbce0a32a98e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464923"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761866"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProcess2::Attach](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess2-attach).  
-  
 O Gerenciador de sessão de depuração (SDM) é anexado ao processo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Attach(   
-   IDebugEventCallback2* pCallback,  
-   GUID*                 rgguidSpecificEngines,  
-   DWORD                 celtSpecificEngines,  
-   HRESULT*              rghrEngineAttach  
+HRESULT Attach(   
+   IDebugEventCallback2* pCallback,  
+   GUID*                 rgguidSpecificEngines,  
+   DWORD                 celtSpecificEngines,  
+   HRESULT*              rghrEngineAttach  
 );  
 ```  
   
 ```csharp  
-int Attach(   
-   IDebugEventCallback2 pCallback,  
-   Guid[]               rgguidSpecificEngines,  
-   uint                 celtSpecificEngines,  
-   int[]                rghrEngineAttach  
+int Attach(   
+   IDebugEventCallback2 pCallback,  
+   Guid[]               rgguidSpecificEngines,  
+   uint                 celtSpecificEngines,  
+   int[]                rghrEngineAttach  
 );  
 ```  
   

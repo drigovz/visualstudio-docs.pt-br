@@ -1,7 +1,7 @@
 ---
 title: Referência de esquema de snippets de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9dfcb6e7bc29fe29f33b919545a6781a731b7734
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19a14972d36bcb7070e0604b47caab55f41d0126
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473284"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188091"
 ---
 # <a name="code-snippets-schema-reference"></a>Referência de esquema dos snippets de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [referência de esquema de trechos de código](https://docs.microsoft.com/visualstudio/ide/code-snippets-schema-reference).  
-  
 Os Snippets de Código IntelliSense são partes de código pré-criadas que estão prontas para serem inseridas no seu aplicativo com o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Você pode aumentar a produtividade fornecendo snippets de código que reduzem a quantidade de tempo gasto digitando código repetitivo ou procurando exemplos. É possível usar o esquema XML do Snippet de Código IntelliSense para criar seus próprios snippets de código e adicioná-los aos snippets de código que o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] já contém.  
   
 ## <a name="intellisense-code-snippets-schema-elements"></a>Elementos do esquema de Snippets de Código IntelliSense  

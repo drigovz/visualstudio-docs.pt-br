@@ -1,10 +1,11 @@
 ---
 title: Novidades no Visual Studio 2017
+titleSuffix: ''
 description: Saiba mais sobre os novos recursos do Visual Studio 2017.
-ms.custom: ''
-ms.date: 09/04/2018
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -17,18 +18,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: c490d15f27801dff6bb09f6356ad7c665b09c558
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029102"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160186"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novidades no Visual Studio 2017
 
-**Atualizado para a [versão 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
+**Atualizado para a [versão 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
-Deseja atualizar de uma versão anterior do Visual Studio? Veja o que o Visual Studio 2017 pode oferecer a você: produtividade inigualável para qualquer desenvolvimento, aplicativo e plataforma. Use o Visual Studio 2017 para desenvolver aplicativos para Android, iOS, Windows, Linux, Web e nuvem. Codifique rapidamente, depure e diagnostique com facilidade, teste com frequência e faça lançamentos com confiança. Também é possível estender e personalizar o Visual Studio criando suas próprias extensões. Use o controle de versão, seja ágil e colabore de maneira eficiente com esse lançamento!
+Deseja atualizar de uma versão anterior do Visual Studio? Isto é o que o Visual Studio 2017 pode oferecer a você: Produtividade inigualável para qualquer desenvolvimento, aplicativo e plataforma. Use o Visual Studio 2017 para desenvolver aplicativos para Android, iOS, Windows, Linux, Web e nuvem. Codifique rapidamente, depure e diagnostique com facilidade, teste com frequência e faça lançamentos com confiança. Também é possível estender e personalizar o Visual Studio criando suas próprias extensões. Use o controle de versão, seja ágil e colabore de maneira eficiente com esse lançamento!
 
 Veja uma recapitulação de alto nível das alterações feitas em relação à versão anterior, o Visual Studio 2015:
 
@@ -64,7 +65,7 @@ E você também tem opções para ajustar sua instalação:
 
 * Deseja escolher seus próprios componentes em vez de usar cargas de trabalho? Selecione a guia **Componentes individuais** no instalador.
 * Deseja instalar Pacotes de Idiomas sem precisar alterar também a opção de idioma do Windows? Escolha a guia **Pacotes de idiomas** do instalador.
-* **Novidade no 15.7**: quer alterar o local onde o Visual Studio faz instalações? Escolha a guia **Opções de instalação** do instalador.
+* **Novidades do 15.7**: Deseja alterar a localização em que o Visual Studio é instalado? Escolha a guia **Opções de instalação** do instalador.
 
 Para saber mais sobre a nova experiência de instalação, incluindo instruções passo a passo que explicam a instalação, consulte a página [Instalando o Visual Studio](../install/install-visual-studio.md).
 
@@ -106,11 +107,11 @@ O Roaming Extension Manager rastreia todas as extensões instaladas, mas você p
 
 Quando você usa o Roaming Extension Manager, há três tipos de ícones em sua lista:
 
-* ![Ícone de Roaming](../ide/media/vs2017ide-roamedicon.png) **_Roaming_**: uma extensão que faz parte dessa Lista de Roaming, mas que não está instalada no computador.
+* ![Ícone de Roaming](../ide/media/vs2017ide-roamedicon.png) **_Roaming_**: Uma extensão que faz parte dessa Lista de Roaming, mas que não está instalada no computador.
   (Você pode instalá-las usando o botão **Download**).
-* ![Ícone de Roaming e Instalado](../ide/media/vs2017ide-roamedinstalledicon.png) **_Roaming e Instalado_**: todas as extensões que fazem parte dessa Lista de Roaming e que estão instaladas no ambiente de desenvolvimento.
+* ![Ícone de Roaming e Instalado](../ide/media/vs2017ide-roamedinstalledicon.png)  **_Roaming e Instalado_**: Todas as extensões que fazem parte da Lista de Roaming e que estão instaladas no ambiente de desenvolvimento.
   (Se você decidir que não deseja usar perfil móvel, poderá remover essas extensões usando o botão **Parar Roaming**).
-* ![Ícone de Instalado](../ide/media/vs2017ide-installedicon.png) **_Instalado_**: todas as extensões instaladas nesse ambiente, mas que não fazem parte da Lista de Roaming.
+* ![Ícone de Instalado](../ide/media/vs2017ide-installedicon.png)  **_Instalado_**: Todas as extensões instaladas nesse ambiente, mas que não fazem parte da Lista de Roaming.
   (Você pode adicionar extensões à Lista de Roaming usando o botão **Iniciar Roaming**).
 
 Qualquer extensão baixada enquanto você estiver conectado será adicionada à lista como **Roaming e Instalado**. Além disso, a extensão fará parte da lista Roaming, que fornece acesso a ela em qualquer computador.
@@ -131,19 +132,19 @@ Testes automatizados são uma parte importante de qualquer pipeline de DevOps. E
 
 Para saber mais sobre testes automatizados, confira a postagem no blog [CI/CD pipeline for automated tests in DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) (Pipeline de CI/CD para testes automatizados no DevOps).
 
-E, para obter mais informações sobre as novidades na extensão de DevLabs [Ferramentas de Entrega Contínua para Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio), confira a postagem no blog [Committing with Confidence: Commit Time Code Quality](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) (Confirmação com segurança: qualidade do código da hora de confirmação).
+Além disso, para obter mais informações sobre as novidades da extensão de DevLabs [Ferramentas de Entrega Contínua para Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio), confira a postagem no blog [Confirmação com segurança: Qualidade do código da hora de confirmação](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/).
 
 ### <a name="visual-studio-ide-enhancements"></a>Aprimoramentos no IDE do Visual Studio
 
 #### <a name="multi-caret-editing"></a>Edição com vários cursores
 
-**Novo na 15.8**: a edição simultânea de vários locais em um arquivo agora é fácil. Comece criando pontos de inserção e seleções em vários locais em um arquivo. Em seguida, use o recurso de edição com vários cursores para fazer a mesma edição em dois ou mais lugares ao mesmo tempo.
+**Novidades do 15.8**: A edição simultânea de vários locais em um arquivo agora ficou fácil. Comece criando pontos de inserção e seleções em vários locais em um arquivo. Em seguida, use o recurso de edição com vários cursores para fazer a mesma edição em dois ou mais lugares ao mesmo tempo.
 
 Para obter mais informações, confira a seção [Seleção com vários cursores](finding-and-replacing-text.md#multi-caret-selection) da página [Localizar e substituir texto](finding-and-replacing-text.md).
 
 #### <a name="keep-keybinding-profiles-consistent"></a>Manter os perfis de associação de teclas consistentes
 
-**Novo na 15.8**: agora, você pode manter suas associações de teclas consistentes entre as ferramentas com dois novos perfis de teclado: Visual Studio Code e ReSharper (Visual Studio). Você pode encontrar esses esquemas em **Ferramentas** > **Opções** > **Geral** > **Teclado** e no menu suspenso superior.
+**Novidades do 15.8**: Agora, você pode manter suas associações de teclas consistentes entre as ferramentas com dois novos perfis de teclado: Visual Studio Code e ReSharper (Visual Studio). Você pode encontrar esses esquemas em **Ferramentas** > **Opções** > **Geral** > **Teclado** e no menu suspenso superior.
 
   ![Novos perfis de associação de teclas para Visual Studio Code e o ReSharper](../ide/media/vs-keyboard-mappings-code-resharper.png)
 
@@ -172,7 +173,7 @@ Quando você está trabalhando com um projeto no Visual Studio, pode configurar,
 
 Atualizamos a experiência de navegação para ajudá-lo a chegar de um lugar a outro com mais confiança e menos distrações.
 
-* **Novidade na versão 15.4**: **Ir para definição** (**Ctrl**+**clique** ou **F12**) &ndash; Os usuários de mouse têm uma maneira mais fácil de navegar até a definição de um membro pressionando **Ctrl** e clicando no membro. Ao pressionar **Ctrl** e focalizar um símbolo de código, ele será sublinhado e virará um link. Para obter mais informações, veja [Go To Definition and Peek Definition](../ide/go-to-and-peek-definition.md) (Ir para Definição e Inspecionar Definição).
+* **Novidades do 15.4**: **Ir para definição** (**Ctrl**+**clique** ou **F12**) &ndash; Os usuários de mouse têm uma maneira mais fácil de navegar para a definição de um membro pressionando **Ctrl** e, em seguida, clicando no membro. Ao pressionar **Ctrl** e focalizar um símbolo de código, ele será sublinhado e virará um link. Para obter mais informações, veja [Go To Definition and Peek Definition](../ide/go-to-and-peek-definition.md) (Ir para Definição e Inspecionar Definição).
 
 * **Ir para Implementação** (**Ctrl**+**F12**) &ndash; Navegue de qualquer membro ou tipo base até suas várias implementações.
 
@@ -212,11 +213,11 @@ O novo Auxiliar de Exceção ajuda você a exibir as informações de exceção 
 
 ![A nova caixa de diálogo Auxiliar de Exceção no Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png)
 
-Para obter mais informações, consulte a postagem de blog [Use the new Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Usar o novo Auxiliar de Exceção no Visual Studio).
+Para obter mais informações, consulte a postagem de blog [Use the new Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Usar o novo Auxiliar de Exceção no Visual Studio).
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Instantâneos e retrocesso do IntelliTrace
 
-**Novidade na versão 15.5**: o retrocesso do IntelliTrace tira automaticamente um instantâneo do seu aplicativo em cada evento de etapa do depurador e do ponto de interrupção. Os instantâneos registrados permitem retornar aos pontos de interrupção ou às etapas anteriores e exibir o estado do aplicativo como ele era no passado. O retrocesso do IntelliTrace poderá poupar seu tempo quando você desejar ver o estado do aplicativo anterior, mas não desejar reiniciar a depuração nem recriar o estado do aplicativo desejado.
+**Novidade na versão 15.5**: O retrocesso do IntelliTrace tira automaticamente um instantâneo do seu aplicativo em cada evento de etapa do depurador e do ponto de interrupção. Os instantâneos registrados permitem retornar aos pontos de interrupção ou às etapas anteriores e exibir o estado do aplicativo como ele era no passado. O retrocesso do IntelliTrace poderá poupar seu tempo quando você desejar ver o estado do aplicativo anterior, mas não desejar reiniciar a depuração nem recriar o estado do aplicativo desejado.
 
 É possível navegar e exibir instantâneos usando os botões **Voltar** e **Avançar** na barra de ferramentas **Depurar**. Esses botões navegam pelos eventos exibidos na guia **Eventos** na janela **Ferramentas de Diagnóstico**. Voltar ou avançar para um evento ativa automaticamente a depuração histórica no evento selecionado.
 
@@ -245,7 +246,7 @@ Para obter mais informações, consulte a página [Ferramentas do Azure Function
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Depurar aplicativos ASP.NET dinâmicos usando snappoints e logpoints nos aplicativos dinâmicos do Azure
 
-**Novidades na versão 15.5**: o Depurador de Instantâneo tira um instantâneo de seus aplicativos em produção quando o código no qual você está interessado é executado. Para instruir o depurador a tirar um instantâneo, defina snappoints e logpoints em seu código. O depurador permite ver exatamente o que deu errado sem afetar o tráfego do seu aplicativo de produção. O Depurador de Instantâneo pode ajudar a reduzir drasticamente o tempo que leva para resolver problemas que ocorrem em ambientes de produção.
+**Novidade na versão 15.5**: O Depurador de Instantâneos tira um instantâneo de seus aplicativos em produção quando o código no qual você está interessado é executado. Para instruir o depurador a tirar um instantâneo, defina snappoints e logpoints em seu código. O depurador permite ver exatamente o que deu errado sem afetar o tráfego do seu aplicativo de produção. O Depurador de Instantâneo pode ajudar a reduzir drasticamente o tempo que leva para resolver problemas que ocorrem em ambientes de produção.
 
 A coleção de instantâneos está disponível para os seguintes aplicativos Web em execução no Serviço de Aplicativo do Azure:
 
@@ -264,7 +265,7 @@ A UWP (Plataforma Universal do Windows) é a plataforma de aplicativo do Windows
 
 Escolha sua linguagem de desenvolvimento preferencial&mdash;entre C#, Visual Basic, C++ ou JavaScript&mdash;para criar um aplicativo da Plataforma Universal do Windows para dispositivos do Windows 10. O Visual Studio 2017 fornece um modelo de aplicativo da UWP para cada idioma, permitindo que você crie um projeto único para todos os dispositivos. Quando seu trabalho for concluído, você poderá produzir um pacote do aplicativo e enviá-lo à Microsoft Store pelo Visual Studio para divulgar seu aplicativo aos clientes em qualquer dispositivo do Windows 10.
 
-**Novidade na versão 15.5**: o Visual Studio 2017 versão 15.5 fornece o melhor suporte para o SDK do Windows 10 Fall Creators Update (10.0.16299.0). O Windows 10 Fall Creators Update também oferece várias melhorias para os desenvolvedores da UWP. Aqui estão algumas das maiores alterações: 
+**Novidade na versão 15.5**: O Visual Studio 2017 versão 15.5 fornece o melhor suporte para o SDK do Windows 10 Fall Creators Update (10.0.16299.0). O Windows 10 Fall Creators Update também oferece várias melhorias para os desenvolvedores da UWP. Aqui estão algumas das maiores alterações: 
 
 * **Compatível com o .NET Standard 2.0**<br/>Além da implantação simplificada do aplicativo, o Windows 10 Fall Creators Update é a primeira versão do Windows 10 compatível com o .NET Standard 2.0. De fato, o [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) é uma implementação de referência da biblioteca de classes base que qualquer plataforma do .NET pode implementar. A meta do .NET Standard é facilitar o máximo possível para os desenvolvedores do .NET compartilhar o código em qualquer plataforma do .NET que eles escolham trabalhar.
 * **O melhor da UWP e do Win32**<br/>Melhoramos a Plataforma do Windows 10 com a [Ponte de Desktop](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) para tornar o Windows 10 melhor para todos os desenvolvedores do .NET, quer o foco atual esteja na UWP, no WPF, no Windows Forms ou no Xamarin. Com o novo tipo de projeto do Pacote de Aplicativo no Visual Studio 2017 versão 15.5, você pode criar Pacotes de Aplicativos do Windows para seus projetos do WPF ou do Windows Forms, assim como você pode fazer com os projetos da UWP. Depois de empacotar seu aplicativo, você obterá todos os benefícios de implantação de aplicativo do Windows 10 e terá a opção de distribuir por meio da Microsoft Store (para aplicativos de consumidor) ou da Microsoft Store para Empresas e Educação. Como os aplicativos empacotados têm acesso à superfície da API da UWP completa e às APIs do Win32 na área de trabalho, agora você pode modernizar seus aplicativos do WPF e do Windows Forms gradualmente com as APIs da UWP e com os recursos do Windows 10. Além disso, você pode incluir os componentes do Win32 em seus aplicativos da UWP que são aprimorados na área de trabalho com todos os recursos do Win32.
@@ -281,25 +282,25 @@ Para obter mais informações, consulte a página [Visual Studio e Xamarin](../c
 
 ### <a name="entitlements-editor"></a>Editor de direitos
 
-**Novidade no 15.3**: para suas necessidades de desenvolvimento do iOS, adicionamos um editor de direitos autônomo. Ele inclui uma interface do usuário amigável pela qual se pode navegar facilmente. Para iniciá-lo, clique duas vezes em seu arquivo *entitlements.plist*.
+**Novidades do 15.3**: Para suas necessidades de desenvolvimento do iOS, adicionamos um editor de Direitos independente. Ele inclui uma interface do usuário amigável pela qual se pode navegar facilmente. Para iniciá-lo, clique duas vezes em seu arquivo *entitlements.plist*.
 
 ![Editor de qualificação para Xamarin](../ide/media/xamarin-entitlements-editor.png)
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Ferramentas do Visual Studio para Xamarin
 
-**Novidades na versão 15.4**: o Xamarin Live permite aos desenvolvedores implantar, testar e depurar continuamente seus aplicativos diretamente em dispositivos iOS e Android. Depois de baixar o Xamarin Live Player (disponível na App Store ou no Google Play), será possível emparelhar o dispositivo com o Visual Studio e revolucionar a forma como você cria aplicativos móveis. Essa funcionalidade agora está incluída no Visual Studio e pode ser habilitada indo até **Ferramentas** > **Opções** > **Xamarin**  >  **Outros** > **Habilitar Xamarin Live Player**.
+**Novidades do 15.4**: O Xamarin Live permite que desenvolvedores implantem, testem e depurem continuamente seus aplicativos diretamente em dispositivos iOS e Android. Depois de baixar o Xamarin Live Player (disponível na App Store ou no Google Play), será possível emparelhar o dispositivo com o Visual Studio e revolucionar a forma como você cria aplicativos móveis. Essa funcionalidade agora está incluída no Visual Studio e pode ser habilitada indo até **Ferramentas** > **Opções** > **Xamarin**  >  **Outros** > **Habilitar Xamarin Live Player**.
 
 ![Animação do par, da implantação e dos modos de edição dinâmicos do Xamarin Live Player](../ide/media/xamarinliveplayer.gif)
 
 ### <a name="support-for-google-android-emulator"></a>Suporte para o Android Emulator da Google
 
-**Novo na 15.8**: Ao usar o Hyper-V, agora você pode usar o Android Emulator da Google lado a lado com outras tecnologias que se baseiam no Hyper-V, como máquinas virtuais do Hyper-V, ferramentas do Docker, o emulador HoloLens e muito mais. (Esse recurso requer a Atualização de abril de 2018 para o Windows 10 ou posteriores.)
+**Novidades do 15.8**: Ao usar o Hyper-V, agora você pode usar o Android Emulator da Google lado a lado com outras tecnologias que se baseiam no Hyper-V, como máquinas virtuais do Hyper-V, ferramentas do Docker, o emulador HoloLens e muito mais. (Esse recurso requer a Atualização de abril de 2018 para o Windows 10 ou posteriores.)
 
 ![O Android Emulator da Google em tecnologias Hyper-V](../ide/media/xamarin-hyperv-android-emulator.png)
 
 #### <a name="xamarinandroid-designer-split-view-editor"></a>Editor de modo divisão do designer do Xamarin.Android
 
-Também **novo na 15.8**: fizemos melhorias significativas na experiência do designer do Xamarin.Android. Um destaque é o novo editor de modo divisão que permite criar, editar e visualizar seus layouts ao mesmo tempo.
+Também uma **novidade do 15.8**: Fizemos melhorias significativas na experiência de designer no Xamarin.Android. Um destaque é o novo editor de modo divisão que permite criar, editar e visualizar seus layouts ao mesmo tempo.
 
 ![O editor de modo divisão do designer do Xamarin.Android](../ide/media/android-designer-split-view.png)
 
@@ -307,11 +308,11 @@ Para obter mais informações, confira [Aceleração de hardware para desempenho
 
 ### <a name="visual-studio-app-center"></a>Centro de Aplicativos do Visual Studio
 
-**Novidade na versão 15.5**: o Visual Studio App Center&mdash;que agora está disponível para aplicativos Android, iOS, macOS e Windows&mdash;tem tudo de que você precisa para gerenciar o ciclo de vida dos seus aplicativos, incluindo builds automatizados, testes em dispositivos reais na nuvem, distribuição para testadores beta e lojas de aplicativos e monitoramento do uso real por meio de dados de falha e de análise. Há suporte para aplicativos escritos em Objective-C, Swift, Java, C#, Xamarin e React Native em todos os recursos.
+**Novidade na versão 15.5**: O Visual Studio App Center – que agora está disponível para aplicativos Android, iOS, macOS e Windows – tem tudo de que você precisa para gerenciar o ciclo de vida dos seus aplicativos, incluindo builds automatizados, testes em dispositivos reais na nuvem, distribuição para testadores beta e lojas de aplicativos e monitoramento do uso real por meio de dados de falha e de análise. Há suporte para aplicativos escritos em Objective-C, Swift, Java, C#, Xamarin e React Native em todos os recursos.
 
   ![Ambiente de teste do App Center do Visual Studio](../ide/media/app-center-test-env.png)
 
-Para obter mais informações, consulte a postagem no blog [Introducing App Center: Build, test, distribute and monitor apps in the cloud](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) (Introdução ao App Center: criar, testar, distribuir e monitorar aplicativos na nuvem).
+Para obter mais informações, confira a postagem no blog [Introdução ao App Center: Criar, testar, distribuir e monitorar aplicativos na nuvem](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/).
 
 ## <a name="cross-platform-development"></a>Desenvolvimento multiplataforma
 
@@ -334,11 +335,11 @@ Para saber mais, consulte a postagem no blog [Redgate Data Tools no Visual Studi
 
 .NET Core é uma implementação de software livre, modular, multiplataforma e para fins gerais do .NET Standard que contém muitas das mesmas APIs que o .NET Framework.
 
-A plataforma do .NET Core é composta por vários componentes, incluindo os compiladores gerenciados, o tempo de execução, as bibliotecas de classes base e vários modelos de aplicativo, como o ASP.NET Core. O .NET Core dá suporte aos três principais sistemas operacionais: Windows, Linux e macOS. Você pode usar o .NET Core nos cenários inseridos/de IoT, de dispositivo e de nuvem.
+A plataforma do .NET Core é composta por vários componentes, incluindo os compiladores gerenciados, o tempo de execução, as bibliotecas de classes base e vários modelos de aplicativo, como o ASP.NET Core. O .NET Core dá suporte a três principais sistemas operacionais: Windows, Linux e macOS. Você pode usar o .NET Core nos cenários inseridos/de IoT, de dispositivo e de nuvem.
 
 Além disso, agora ele é compatível com o Docker.
 
-**Novidade no 15.3**: o Visual Studio 2017 versão 15.3 dá suporte a desenvolvimento no .NET Core 2.0. Usar o .NET Core 2.0 exige baixar e instalar o SDK do .NET Core 2.0 separadamente.
+**Novidades do 15.3**: O Visual Studio 2017 versão 15.3 dá suporte ao desenvolvimento no .NET Core 2.0. Usar o .NET Core 2.0 exige baixar e instalar o SDK do .NET Core 2.0 separadamente.
 
 Para obter mais informações, consulte a página [Guia do .NET Core](/dotnet/core/index).
 
@@ -354,7 +355,7 @@ Para obter mais informações, consulte a página [Ferramentas do Visual Studio 
 
 ### <a name="visual-studio-tools-for-ai"></a>Ferramentas do Visual Studio para IA
 
-**Novidade na versão 15.5**: use os recursos de produtividade do Visual Studio para acelerar a inovação em IA hoje mesmo. Use recursos do editor de código interno como realce de sintaxe, IntelliSense e formatação automática de texto. É possível testar de forma interativa seu aplicativo de aprendizagem profunda no ambiente local usando o passo a passo de depuração em variáveis locais e modelos.
+**Novidade na versão 15.5**: Use os recursos de produtividade do Visual Studio para acelerar a inovação em IA hoje. Use recursos do editor de código interno como realce de sintaxe, IntelliSense e formatação automática de texto. É possível testar de forma interativa seu aplicativo de aprendizagem profunda no ambiente local usando o passo a passo de depuração em variáveis locais e modelos.
 
   ![IDE de aprendizagem profunda](../ai/media/about/ide.png)
 
@@ -386,3 +387,4 @@ Se você quiser sugerir maneiras de melhorar o Visual Studio ou saber mais sobre
 * [Novidades no C#](/dotnet/csharp/whats-new)
 * [Novidades para o Team Foundation Server](/tfs/server/whats-new?view=vsts)
 * [Novidades no Visual Studio para Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
+* [Novidades no Visual Studio 2019](whats-new-visual-studio-2019.md)

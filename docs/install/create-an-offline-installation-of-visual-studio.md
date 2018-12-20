@@ -1,7 +1,7 @@
 ---
-title: Criar uma instalação offline do Visual Studio
+title: Criar uma instalação offline
 description: Saiba como instalar o Visual Studio offline quando você tiver uma conexão com a Internet não confiável ou largura de banda baixa.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 08/28/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -16,26 +16,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d700be4cec30bf27dc826b220a1e318cdcd14c99
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 37d218893ab16a8d0907e608ebeb3b02ab944385
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028943"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159978"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Criar uma instalação offline do Visual Studio 2017
 
 Projetamos o Visual Studio 2017 para funcionar bem em uma variedade de configurações de rede e do computador. Embora seja recomendável que você experimente o [instalador Web do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), que é um arquivo pequeno e permite que você permaneça atualizado com todas as correções e recursos mais recentes, entendemos que talvez você não possa fazer isso.
 
-Por exemplo, você pode ter uma conexão com a Internet não confiável ou que tem largura de banda baixa. Se esse for o caso, você terá algumas opções: você poderá usar o recurso "Baixar tudo, depois instalar" para baixar os arquivos antes de instalar, ou você poderá usar a linha de comando para criar um cache local dos arquivos.
+Por exemplo, você pode ter uma conexão com a Internet não confiável ou que tem largura de banda baixa. Nesse caso, você tem algumas opções: Você pode usar a nova funcionalidade "Baixar tudo, depois instalar" para baixar os arquivos antes de instalar ou usar a linha de comando para criar um cache local dos arquivos.
 
 > [!NOTE]
 > Se você for um administrador de empresas que deseja executar uma implantação do Visual Studio 2017 em uma rede de estações de trabalho cliente protegidas da Internet por firewall, confira nossas páginas [Criar uma instalação de rede do Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) e [Instalar os certificados necessários para a instalação offline do Visual Studio](../install/install-certificates-for-visual-studio-offline.md).
 
 ## <a name="use-the-download-all-then-install-feature"></a>Usar o recurso "baixar tudo, depois instalar"
 
-[**Novo no 15.8**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
-): depois de baixar o instalador da Web, selecione a nova opção **Baixar tudo, depois instalar** do Instalador do Visual Studio. Em seguida, continue com a instalação.
+[**Novidades do 15.8**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
+): Depois de baixar o instalador da Web, selecione a nova opção **Baixar tudo, depois instalar** do Instalador do Visual Studio. Em seguida, continue com a instalação.
 
    ![A opção "Baixar tudo, depois instalar"](media/download-all-then-install.png)
 
@@ -53,13 +53,16 @@ Comece baixando o bootstrapper do Visual Studio para sua edição do Visual Stud
 
 | Edição                    | Arquivo                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
-| Comunidade Visual Studio    | [vs_community.exe](https://aka.ms/vs/15/release/vs_community.exe)       |
-| Visual Studio Professional | [vs_professional.exe](https://aka.ms/vs/15/release/vs_professional.exe) |
-| Visual Studio Enterprise   | [vs_enterprise.exe](https://aka.ms/vs/15/release/vs_enterprise.exe)     |
+| Comunidade Visual Studio    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)       |
+| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
+| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
 
 ### <a name="step-2---create-a-local-install-cache"></a>Etapa 2 – Criar um cache local de instalação
 
 É preciso ter uma conexão com a Internet para concluir esta etapa.
+
+> [!IMPORTANT]
+> Se você instalar o Visual Studio Community 2017, deverá ativá-lo no prazo de 30 dias após a instalação. Isso exige uma conexão com a Internet.
 
 Abra um prompt de comando e use um dos comandos dos exemplos a seguir. Os exemplos listados aqui supõem que você esteja usando a edição Community do Visual Studio; ajuste o comando conforme apropriado para sua edição.
 

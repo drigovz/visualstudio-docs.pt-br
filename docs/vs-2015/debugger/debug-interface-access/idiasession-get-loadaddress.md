@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Get_loadaddress | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSession::get_loadAddress method
 ms.assetid: 5162ae1a-38e3-4571-8995-4ed9be1dec3e
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fbd8b4af8ad7f5495704588d7e2c0fff0d2caca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f609056aca5fffde8e04f0ba01e18a70184e6565
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461130"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794017"
 ---
 # <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasession:: Get_loadaddress](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-get-loadaddress).  
-  
 Recupera o endereço de carregamento para o arquivo executável que corresponde aos símbolos nesse repositório de símbolos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_loadAddress (   
+HRESULT get_loadAddress (   
    ULONGLONG* pRetVal  
 );  
 ```  

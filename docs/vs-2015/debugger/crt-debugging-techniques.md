@@ -1,7 +1,7 @@
 ---
 title: Técnicas de depuração de CRT | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,21 +23,19 @@ helpviewer_keywords:
 - debugging [C++], CRT debug support
 ms.assetid: 9be561f6-14a8-44ff-925d-d911d5b8e6ff
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2743c7185f09f19353ca5fedab0327593dc33bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6745a31dcb7c37d12551248473b072d440116501
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466709"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801024"
 ---
 # <a name="crt-debugging-techniques"></a>Técnicas de depuração CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [técnicas de depuração CRT](https://docs.microsoft.com/visualstudio/debugger/crt-debugging-techniques).  
-  
 Se você estiver depurando um programa que usa a biblioteca em tempo de execução C, essas técnicas de depuração poderão ser úteis.  
   
 ## <a name="in-this-section"></a>Nesta seção  

@@ -1,7 +1,7 @@
 ---
 title: Como compilar os mesmos arquivos de origem com opções diferentes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55133fcd8126a5f77a670742b84ff83d9662520c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c46d0577d19a3b3ad0fcd150f33d400e76d550d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462445"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830997"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Como compilar os mesmos arquivos de origem com opções diferentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: compilar os mesmos arquivos de origem com opções diferentes](https://docs.microsoft.com/visualstudio/msbuild/how-to-build-the-same-source-files-with-different-options).  
-  
   
 Quando compila projetos, frequentemente você compila os mesmos componentes com opções de build diferente. Por exemplo, é possível criar um build de depuração com informações de símbolo ou um build de versão sem nenhuma informação de símbolo, mas com otimizações habilitadas. Ou você pode compilar um projeto para ser executado em uma plataforma específica, como x86 ou [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]. Em todos esses casos, a maioria das opções de build permanecem as mesmas, apenas algumas opções são alteradas para controlar a configuração de build. Com [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], você usa propriedades e condições para criar as diferentes configurações de build.  
   
@@ -77,23 +75,23 @@ Quando compila projetos, frequentemente você compila os mesmos componentes com 
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Para especificar mais de uma propriedade de projeto na linha de comando  
   
--   Use o comutador **/property** ou **/p** várias vezes com a propriedade e os valores de propriedade ou use um comutador **/property** ou **/p** e separe várias propriedades com ponto e vírgula (;). Por exemplo:  
+- Use o comutador **/property** ou **/p** várias vezes com a propriedade e os valores de propriedade ou use um comutador **/property** ou **/p** e separe várias propriedades com ponto e vírgula (;). Por exemplo:  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug;Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug;Platform=x86  
+  ```  
   
-     - ou –  
+   - ou –  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
+  ```  
   
- Variáveis de ambiente também são tratadas como propriedades e são incorporadas automaticamente por [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Para obter mais informações sobre o uso de variáveis de ambiente, consulte [Como usar variáveis de ambiente em um build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Variáveis de ambiente também são tratadas como propriedades e são incorporadas automaticamente por [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Para obter mais informações sobre o uso de variáveis de ambiente, consulte [Como usar variáveis de ambiente em um build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
- O valor da propriedade especificado na linha de comando tem precedência sobre qualquer valor definido para a mesma propriedade no arquivo de projeto e o valor no arquivo de projeto tem precedência sobre o valor em uma variável de ambiente.  
+  O valor da propriedade especificado na linha de comando tem precedência sobre qualquer valor definido para a mesma propriedade no arquivo de projeto e o valor no arquivo de projeto tem precedência sobre o valor em uma variável de ambiente.  
   
- É possível alterar esse comportamento usando o atributo `TreatAsLocalProperty` em uma marca de projeto. Para nomes de propriedades listados com esse atributo, o valor da propriedade especificado na linha de comando não tem precedência sobre o valor no arquivo de projeto. Veja um exemplo mais adiante neste tópico.  
+  É possível alterar esse comportamento usando o atributo `TreatAsLocalProperty` em uma marca de projeto. Para nomes de propriedades listados com esse atributo, o valor da propriedade especificado na linha de comando não tem precedência sobre o valor no arquivo de projeto. Veja um exemplo mais adiante neste tópico.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo de código seguinte, o projeto "Hello World", contém dois novos grupos de propriedade que podem ser usados para criar um build de Depuração e um build de Versão.  

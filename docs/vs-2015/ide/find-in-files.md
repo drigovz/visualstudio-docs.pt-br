@@ -1,7 +1,7 @@
 ---
 title: Localizar nos Arquivos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,29 +26,27 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2f6f51f53642f0eb17cbbae5498ce1c4c288a867
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4529b44014b209bdef1fc919ac413b61d77407c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467022"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902133"
 ---
 # <a name="find-in-files"></a>Localizar em Arquivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [localizar nos arquivos](https://docs.microsoft.com/visualstudio/ide/find-in-files).  
-  
 Localizar nos arquivos * * permite pesquisar um conjunto de arquivos especificado. As correspondências encontradas e as ações executadas são listadas na janela **Localizar Resultados** selecionada em **Opções de resultado**.  
   
  É possível usar qualquer um dos métodos a seguir para exibir **Localizar nos Arquivos** na janela **Localizar e Substituir**.  
   
 ### <a name="to-display-find-in-files"></a>Para exibir Localizar nos Arquivos  
   
-1.  Na barra de menus, escolha **Editar**, **Localizar e Substituir**.  
+1. Na barra de menus, escolha **Editar**, **Localizar e Substituir**.  
   
-2.  Escolha **Localizar nos Arquivos**.  
+2. Escolha **Localizar nos Arquivos**.  
   
- Para cancelar uma operação de localização, pressione CTRL + BREAK.  
+   Para cancelar uma operação de localização, pressione CTRL + BREAK.  
   
 > [!NOTE]
 >  A ferramenta Localizar e Substituir não pesquisa diretórios com o conjunto de atributos `Hidden` ou `System`.  

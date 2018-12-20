@@ -1,7 +1,7 @@
 ---
 title: 'CA1065: Não acione exceções em locais inesperados | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 93be7e14bd095fb7f25c7dcce90eba3d724b05f0
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587016"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887576"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: não acione exceções em locais inesperados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1065: não acione exceções em locais inesperados](https://docs.microsoft.com/visualstudio/code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations).
 
 |||
 |-|-|
@@ -45,27 +43,27 @@ A versão mais recente deste tópico pode ser encontrada em [CA1065: não acione
 ## <a name="rule-description"></a>Descrição da Regra
  Métodos que não são esperados para lançar exceções podem ser categorizados da seguinte maneira:
 
--   Métodos Get de propriedade
+- Métodos Get de propriedade
 
--   Métodos de acessador de evento
+- Métodos de acessador de evento
 
--   Métodos Equals
+- Métodos Equals
 
--   Métodos GetHashCode
+- Métodos GetHashCode
 
--   Métodos ToString
+- Métodos ToString
 
--   Construtores estáticos
+- Construtores estáticos
 
--   Finalizadores
+- Finalizadores
 
--   Métodos de descarte
+- Métodos de descarte
 
--   Operadores de igualdade
+- Operadores de igualdade
 
--   Operadores de conversão implícita
+- Operadores de conversão implícita
 
- As seções a seguir discutem esses tipos de método.
+  As seções a seguir discutem esses tipos de método.
 
 ### <a name="property-get-methods"></a>Métodos Get de propriedade
  Propriedades são campos basicamente inteligentes. Portanto, eles devem se comportar como um campo tanto quanto possível. Campos não geram exceções e, tampouco em Propriedades. Se você tiver uma propriedade que gera uma exceção, considere fazer a ele um método.
@@ -94,22 +92,22 @@ A versão mais recente deste tópico pode ser encontrada em [CA1065: não acione
 ### <a name="equals-methods"></a>Métodos Equals
  O seguinte **é igual a** métodos não devem lançar exceções:
 
--   <xref:System.Object.Equals%2A?displayProperty=fullName>
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
 
--   [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
 
- Uma **é igual a** método deverá retornar `true` ou `false` em vez de gerar uma exceção. Por exemplo, se for igual a é passado a dois tipos incompatíveis ele deve apenas retornar `false` em vez de gerar um <xref:System.ArgumentException>.
+  Uma **é igual a** método deverá retornar `true` ou `false` em vez de gerar uma exceção. Por exemplo, se for igual a é passado a dois tipos incompatíveis ele deve apenas retornar `false` em vez de gerar um <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>Métodos GetHashCode
  O seguinte **GetHashCode** métodos normalmente não devem lançar exceções:
 
--   <xref:System.Object.GetHashCode%2A>
+- <xref:System.Object.GetHashCode%2A>
 
--   [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
 
- **GetHashCode** sempre deve retornar um valor. Caso contrário, você poderá perder itens na tabela de hash.
+  **GetHashCode** sempre deve retornar um valor. Caso contrário, você poderá perder itens na tabela de hash.
 
- As versões do **GetHashCode** que aceitam um argumento pode lançar um <xref:System.ArgumentException>. No entanto, **Object.GetHashCode** nunca deve lançar uma exceção.
+  As versões do **GetHashCode** que aceitam um argumento pode lançar um <xref:System.ArgumentException>. No entanto, **Object.GetHashCode** nunca deve lançar uma exceção.
 
 ### <a name="tostring-methods"></a>Métodos ToString
  O depurador usa <xref:System.Object.ToString%2A?displayProperty=fullName> para ajudar a exibir informações sobre objetos no formato de cadeia de caracteres. Portanto, **ToString** não deve alterar o estado de um objeto e ele não deve lançar exceções.

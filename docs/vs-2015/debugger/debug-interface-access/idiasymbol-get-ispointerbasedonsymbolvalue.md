@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_isPointerBasedOnSymbolValue | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ dev_langs:
 - C++
 ms.assetid: 577c8011-9269-4373-8577-b4822a983724
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a63a4aa04d5193fd3e28740d8290cbb6c17b238e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33a2a60c9da5f37ace83da3e9c4be3dbeedcad78
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463502"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765492"
 ---
 # <a name="idiasymbolgetispointerbasedonsymbolvalue"></a>IDiaSymbol::get_isPointerBasedOnSymbolValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSymbol::get_isPointerBasedOnSymbolValue](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-ispointerbasedonsymbolvalue).  
-  
 Especifica se o `this` ponteiro é com base em um valor de símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  

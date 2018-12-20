@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findInlineesByName | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,27 +13,25 @@ dev_langs:
 - C++
 ms.assetid: 9860336d-f703-4ecb-bfc4-3f5beb175a76
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ac12444b98fdfe8254fae7a745f7901b0b8a9da0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd23d7b6dbf80e65433380975334f583f298ac2c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465297"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750759"
 ---
 # <a name="idiasessionfindinlineesbyname"></a>IDiaSession::findInlineesByName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSession::findInlineesByName](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findinlineesbyname).  
-  
 Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções embutidas que correspondem a um nome especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findInlineesByName (   
+HRESULT findInlineesByName (   
    LPCOLESTR             name,  
    DWORD                 option,  
    IDiaEnumLineNumbers** ppResult  

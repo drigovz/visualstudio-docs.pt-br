@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 588b56c03dbd14b1b7658b92a67b02a6dc3892eb
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 3b18e4715eb711160d0adcc95c6a19e4b90bcc94
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704071"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948212"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 Identifica um único projeto dentro da configuração da solução especificada para ser compilado, limpo, recompilado ou implantado.
@@ -84,7 +84,7 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 
 ## <a name="see-also"></a>Consulte também
 
-- [Opções de linha de comando devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)

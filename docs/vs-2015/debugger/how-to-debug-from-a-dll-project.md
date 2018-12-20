@@ -1,7 +1,7 @@
 ---
 title: 'Como: depurar de um projeto DLL | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,21 +22,19 @@ helpviewer_keywords:
 - debugging [Visual Studio], DLLs
 ms.assetid: 40a94339-d3f7-4ab9-b8a1-b8cf82942f44
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a3ab401c4631da22f2afc84d2e1ec763258fc42
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 61ccfc1fbf97dc36ed0625f95f998f9b154fd68c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467168"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796253"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>Como depurar a partir de um projeto de DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: depurar de um projeto de DLL](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-from-a-dll-project).  
-  
 Para iniciar a depuração de um projeto DLL, você deve especificar o aplicativo de chamada nas propriedades do projeto. As páginas de propriedades do C++ diferem no layout e conteúdo a partir do c# e Visual Basic páginas de propriedades.  
   
  Se uma DLL gerenciada for chamada por código nativo e você quiser depurar os dois, você pode especificar isso nas propriedades do projeto. Para obter mais informações, consulte [como: depurar no modo misto](../debugger/how-to-debug-in-mixed-mode.md).  

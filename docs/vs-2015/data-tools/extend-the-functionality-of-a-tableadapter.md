@@ -1,7 +1,7 @@
 ---
 title: Estender a funcionalidade de um TableAdapter | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c58b39554ef4ab94357f2c653e6489dfccc2cf6c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58f92f082ec4e7934e8eb7597832a6a58d23a1ca
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463898"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219738"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Estender a funcionalidade de um TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [estendem a funcionalidade de um TableAdapter](https://docs.microsoft.com/visualstudio/data-tools/extend-the-functionality-of-a-tableadapter).  
-  
   
 Você pode estender a funcionalidade de um TableAdapter, adicionando código ao arquivo de classe parcial do TableAdapter.  
   
@@ -51,7 +49,7 @@ Você pode estender a funcionalidade de um TableAdapter, adicionando código ao 
   
 2.  Nomeie a classe `CustomersTableAdapterExtended`.  
   
-3.  Selecione**adicionar**.  
+3.  Selecione **Adicionar**.  
   
 4.  Substitua o código com o namespace correto e o nome de classe parcial para o seu projeto da seguinte maneira:  
   

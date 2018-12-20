@@ -1,7 +1,7 @@
 ---
 title: Criação de perfil do site rápida com VSPerfASPNETCmd | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - VSPerfASPNETCmd
 ms.assetid: 9a9d62a6-549a-45ac-a948-76eb98586ac5
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e213f6c009ff5fdd5caa48a326c18026f02ec5e6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: 80acb5030c61bd986bfbd2a5f2b383ac37a25a0c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587845"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760010"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Criação de perfil do site rápida com VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Site da criação de perfil rápida com VSPerfASPNETCmd](https://docs.microsoft.com/visualstudio/profiling/rapid-web-site-profiling-with-vsperfaspnetcmd).  
-  
 A ferramenta de linha de comando **VSPerfASPNETCmd** permite analisar facilmente aplicativos Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Em comparação com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), as opções são reduzidas, nenhuma variável de ambiente precisa ser definida e não é necessário reinicializar o computador. Usar **VSPerfASPNETCmd** é o método preferencial para a criação de perfil com o criador de perfil autônomo. Para obter informações, consulte [Como instalar o criador de perfil autônomo](../profiling/how-to-install-the-stand-alone-profiler.md).  
   
 > [!NOTE]
@@ -75,7 +73,7 @@ A ferramenta de linha de comando **VSPerfASPNETCmd** permite analisar facilmente
 > [!WARNING]
 >  Os dados TIP (criação de perfil de interação entre camadas) podem ser coletados usando [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. No entanto, os dados de criação de perfil de interação de camadas somente podem ser exibidos no [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] e no [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
->  Para coletar dados TIP no Windows 8 ou o Windows Server 2012, você deve usar a opção de instrumentação (**/trace**).  
+>  Para coletar dados TIP no Windows 8 ou Windows Server 2012, você deve usar a opção de instrumentação (**/trace**).  
   
  Para coletar dados de interação entre camadas com os dados de amostragem:  
   

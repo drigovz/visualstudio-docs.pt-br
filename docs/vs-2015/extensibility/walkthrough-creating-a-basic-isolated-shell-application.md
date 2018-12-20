@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Criando um Basic aplicativo de Shell isolado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 68b4fb6f7bb07cbb25d2fa8552e92875c5c242bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 901bbf12c9c1d153b84b3ed74f6ae8e97ebb2c9b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472974"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777306"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Passo a passo: Criando um aplicativo básico de Shell isolado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Criando um aplicativo básico de Shell isolado](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-basic-isolated-shell-application).  
-  
 Este passo a passo mostra como criar uma solução de shell isolado, personalizar a janela da ferramenta ajuda sobre e criar um programa de instalação que instala o shell isolado.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
@@ -77,13 +75,13 @@ Este passo a passo mostra como criar uma solução de shell isolado, personaliza
   
 #### <a name="to-customize-the-default-web-browser-home-page"></a>Para personalizar a home page do navegador da Web de padrão  
   
-1.  No arquivo MyVSShellStub.Application.pkgdef, altere o `DefaultHomePage` valor do elemento para "http://www.microsoft.com".  
+1. No arquivo MyVSShellStub.Application.pkgdef, altere o `DefaultHomePage` valor do elemento para "<http://www.microsoft.com>".  
   
-2.  Recompile o projeto MyVSShellStub.  
+2. Recompile o projeto MyVSShellStub.  
   
-3.  Compile a solução e inicie a depuração.  
+3. Compile a solução e inicie a depuração.  
   
-4.  Na **exibição / Windows outras**, clique em **navegador da Web**. O **navegador da Web** janela exibe a home page da Microsoft Corporation.  
+4. Na **exibição / Windows outras**, clique em **navegador da Web**. O **navegador da Web** janela exibe a home page da Microsoft Corporation.  
   
 ## <a name="removing-the-print-command"></a>Removendo o comando de impressão  
  O arquivo. VSCT em um projeto de interface do usuário do shell isolado consiste em um conjunto de declarações do formulário `<Define name=No_` *elemento*`>`, onde *elemento* é um dos menus padrão do Visual Studio e comandos.  
@@ -175,26 +173,26 @@ Este passo a passo mostra como criar uma solução de shell isolado, personaliza
 ## <a name="deploying-the-isolated-shell-application"></a>Implantar o aplicativo de Shell isolado  
  Você pode implantar seu aplicativo de shell isolado para um computador de destino com a criação de um projeto de instalação. Você deve especificar essas coisas:  
   
--   O layout das pastas e arquivos no computador de destino.  
+- O layout das pastas e arquivos no computador de destino.  
   
--   As condições de inicialização que garantem que o .NET Framework e do Visual Studio shell em tempo de execução são instaladas no computador de destino.  
+- As condições de inicialização que garantem que o .NET Framework e do Visual Studio shell em tempo de execução são instaladas no computador de destino.  
   
- O procedimento a seguir, você precisará instalar o InstallShield Limited Edition no seu computador.  
+  O procedimento a seguir, você precisará instalar o InstallShield Limited Edition no seu computador.  
   
 #### <a name="to-create-the-setup-project"></a>Para criar o projeto de instalação  
   
-1.  Na **Gerenciador de soluções**, clique com botão direito no nó da solução e, em seguida, clique em **adicionar novo projeto**.  
+1. Na **Gerenciador de soluções**, clique com botão direito no nó da solução e, em seguida, clique em **adicionar novo projeto**.  
   
-2.  No **novo projeto** diálogo caixa, expanda **Other Project Types** e, em seguida, selecione **instalação e implantação**. Selecione o modelo do InstallShield. Nomeie o novo projeto `MySetup` e, em seguida, clique em **Okey**.  
+2. No **novo projeto** diálogo caixa, expanda **Other Project Types** e, em seguida, selecione **instalação e implantação**. Selecione o modelo do InstallShield. Nomeie o novo projeto `MySetup` e, em seguida, clique em **Okey**.  
   
-3.  Se o InstallShield Limited Edition já estiver instalado, vá para a próxima etapa.  
+3. Se o InstallShield Limited Edition já estiver instalado, vá para a próxima etapa.  
   
-     Se o InstallShield Limited Edition já não estiver instalado, a página de download do InstallShield é exibida. Siga as instruções para baixar e instalar o produto, escolher a versão do InstallShield é compatível com sua versão do Visual Studio. Você deve decidir se deseja registrar sua instalação do InstallShield ou usá-lo como uma avaliação. Você deve reiniciar o Visual Studio depois de concluir a instalação.  
+    Se o InstallShield Limited Edition já não estiver instalado, a página de download do InstallShield é exibida. Siga as instruções para baixar e instalar o produto, escolher a versão do InstallShield é compatível com sua versão do Visual Studio. Você deve decidir se deseja registrar sua instalação do InstallShield ou usá-lo como uma avaliação. Você deve reiniciar o Visual Studio depois de concluir a instalação.  
   
-    > [!IMPORTANT]
-    >  Você deve iniciar o Visual Studio como administrador antes de criar um projeto do InstallShield. Se você não fizer isso, você obterá um erro quando você compila o projeto.  
+   > [!IMPORTANT]
+   >  Você deve iniciar o Visual Studio como administrador antes de criar um projeto do InstallShield. Se você não fizer isso, você obterá um erro quando você compila o projeto.  
   
- As próximas etapas mostram como configurar o projeto de instalação.  
+   As próximas etapas mostram como configurar o projeto de instalação.  
   
 > [!IMPORTANT]
 >  Certifique-se de que você criou a configuração de versão do seu projeto de shell isolado pelo menos uma vez antes de configurar o projeto de instalação.  

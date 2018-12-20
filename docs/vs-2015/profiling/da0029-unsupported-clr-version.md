@@ -1,7 +1,7 @@
 ---
 title: 'DA0029: versão da CLR sem suporte | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,21 +18,19 @@ helpviewer_keywords:
 - vs.performance.rules.DA0029
 ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df5deda533c21033d26af4b8dc08d98a5dafc583
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 51195b14be7bffe682f4ac8588e38c6f5bd56e58
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460371"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762522"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: versão do CLR sem suporte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DA0029: versão do CLR sem suporte](https://docs.microsoft.com/visualstudio/profiling/da0029-unsupported-clr-version).  
-  
 Id da regra | DA0029 |  
 | Categoria | Uso das ferramentas de criação de perfil |  
 | Método de criação de perfil | Criação de perfil da linha de comando |  

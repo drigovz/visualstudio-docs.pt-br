@@ -2,7 +2,7 @@
 title: Publicar um aplicativo Node.js no Serviço de Aplicativo do Linux
 description: Publique aplicativos Node.js criados no Visual Studio no Serviço de Aplicativo do Linux no Azure
 ms.custom: ''
-ms.date: 06/10/2018
+ms.date: 11/1/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cf96610abcd0cc18bdaab6177980ca04e0232642
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8af99919fe80f1f5e2776e381d24aa8d37bad36d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924766"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750753"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publicar um aplicativo Node.js no Azure (Serviço de Aplicativo do Linux)
 
@@ -42,15 +42,19 @@ Neste tutorial, você aprenderá como:
 
 1. Crie um novo aplicativo TypeScript Express usando a caixa de diálogo **Arquivo** > **Novo Projeto**.
 
+1. No nó **TypeScript**, selecione **Aplicativo 4 básico do Node.js Express**.
+
     ![Criar um aplicativo TypeScript Express](../javascript/media/azure-ts-express-app.png)
 
-2. Pressione **F5** para criar e executar o aplicativo e verifique se tudo está funcionando conforme esperado.
+1. Clique em **OK** para criar o projeto no Visual Studio.
 
-3. Selecione **Arquivo** > **Adicionar ao controle do código-fonte** para criar um repositório Git local para o projeto.
+1. Pressione **F5** para criar e executar o aplicativo e verifique se tudo está funcionando conforme esperado.
+
+1. Selecione **Arquivo** > **Adicionar ao controle do código-fonte** para criar um repositório Git local para o projeto.
 
     Neste ponto, um aplicativo Node.js que usa a estrutura Express e é escrito em TypeScript está funcionando e fez o check-in no controle do código-fonte local.
 
-4. Edite o projeto conforme desejado antes de continuar com as próximas etapas.
+1. Edite o projeto conforme desejado antes de continuar com as próximas etapas.
 
 ## <a name="push-code-from-visual-studio-to-github"></a>Efetuar push do código por meio do Visual Studio para o GitHub
 

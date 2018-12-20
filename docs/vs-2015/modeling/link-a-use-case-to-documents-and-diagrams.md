@@ -1,7 +1,7 @@
 ---
 title: Vincular um caso de uso a documentos e diagramas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,34 +14,32 @@ helpviewer_keywords:
 - use case diagrams
 ms.assetid: 4c9ed205-9197-4ed5-b39d-ddfa24a0a421
 caps.latest.revision: 12
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0fd5bfedc803ff928a87f34abece9b2449a5033
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5b4ef580825115a1d44c3abb39404332a4277ea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461842"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787907"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Vincular um caso de uso a documentos e diagramas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [vincular um caso de uso a documentos e diagramas](https://docs.microsoft.com/visualstudio/modeling/link-a-use-case-to-documents-and-diagrams).  
-  
 Você pode vincular um caso de uso em um diagrama de caso de uso para outro diagrama ou documento. Por exemplo, você pode vincular o caso de uso para os documentos e diagramas a seguir:  
   
--   Um diagrama de sequência que mostra como os objetivos do caso de uso são obtidos com as interações entre usuários e o sistema ou seus componentes principais.  
+- Um diagrama de sequência que mostra como os objetivos do caso de uso são obtidos com as interações entre usuários e o sistema ou seus componentes principais.  
   
--   Um diagrama de atividade que mostra as ações detalhadas do sistema e os usuários ou de seus componentes principais, conforme realizam o caso de uso.  
+- Um diagrama de atividade que mostra as ações detalhadas do sistema e os usuários ou de seus componentes principais, conforme realizam o caso de uso.  
   
--   Uma página do OneNote ou um parágrafo que descreve o caso de uso em detalhes.  
+- Uma página do OneNote ou um parágrafo que descreve o caso de uso em detalhes.  
   
--   Um documento do Word ou apresentação do PowerPoint que descreve o caso de uso em detalhes. Você pode manter tais documentos na solução ou em um local acessível para sua equipe, como um site do SharePoint.  
+- Um documento do Word ou apresentação do PowerPoint que descreve o caso de uso em detalhes. Você pode manter tais documentos na solução ou em um local acessível para sua equipe, como um site do SharePoint.  
   
- Para vincular um caso de uso a um documento, você cria um artefato no diagrama de caso e conecte-se o caso de uso para o artefato. Nas propriedades do artefato, você deve definir o caminho do arquivo de outro diagrama ou documento. Quando você clica duas vezes o artefato, o outro diagrama ou o documento é aberto.  
+  Para vincular um caso de uso a um documento, você cria um artefato no diagrama de caso e conecte-se o caso de uso para o artefato. Nas propriedades do artefato, você deve definir o caminho do arquivo de outro diagrama ou documento. Quando você clica duas vezes o artefato, o outro diagrama ou o documento é aberto.  
   
- Você pode se conectar como muitos artefatos para cada caso de uso conforme desejado. Você também pode vincular os artefatos para outros tipos de elemento em um diagrama de caso de uso.  
+  Você pode se conectar como muitos artefatos para cada caso de uso conforme desejado. Você também pode vincular os artefatos para outros tipos de elemento em um diagrama de caso de uso.  
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>Para abrir um documento associado a um artefato  
   

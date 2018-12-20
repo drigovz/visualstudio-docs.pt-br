@@ -1,7 +1,7 @@
 ---
 title: Informações de parâmetro em uma função de linguagem herdado2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bee48d3688a43a3dbfb32848818c318f1cf7b2d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a540a2e5b282e1242109edd67a5dfbc95067e183
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475115"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781316"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informações de parâmetro em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [informações de parâmetro em uma função de linguagem herdado2](https://docs.microsoft.com/visualstudio/extensibility/internals/parameter-info-in-a-legacy-language-service2).  
-  
 Informações de parâmetro do IntelliSense é uma dica de ferramenta que exibe a assinatura de um método quando o usuário digita a lista de parâmetros iniciar caractere (normalmente um parêntese de abertura) para a lista de parâmetros de método. Como cada parâmetro for inserido e o separador de parâmetro (geralmente uma vírgula) é digitado, a dica de ferramenta é atualizada para mostrar o próximo parâmetro em negrito.  
   
  As classes do framework (MPF) de pacote gerenciado dão suporte para gerenciar a dica de ferramenta de informações do parâmetro. O analisador deve detectar parâmetro inicia parâmetro em seguida, e os caracteres de final do parâmetro e ele devem fornecer uma lista de assinaturas de método e seus parâmetros associados.  
@@ -103,11 +101,11 @@ namespace TestLanguagePackage
 ## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>A dica de ferramenta de informações do parâmetro de suporte no analisador  
  O <xref:Microsoft.VisualStudio.Package.Source> classe faz algumas suposições sobre o conteúdo do <xref:Microsoft.VisualStudio.Package.AuthoringScope> e <xref:Microsoft.VisualStudio.Package.AuthoringSink> classes quando a dica de ferramenta de informações do parâmetro é exibida e atualizada.  
   
--   O analisador é dada <xref:Microsoft.VisualStudio.Package.ParseReason> quando o caractere de início da lista de parâmetro é digitado.  
+- O analisador é dada <xref:Microsoft.VisualStudio.Package.ParseReason> quando o caractere de início da lista de parâmetro é digitado.  
   
--   O local fornecido <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto é imediatamente após o caractere inicial de lista de parâmetros. O analisador deve coletar as assinaturas de todas as declarações de método disponíveis em posicionar e armazená-los em uma lista em sua versão do <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto. Essa lista inclui o nome do método, método tipo (ou no tipo de retorno) e uma lista de parâmetros possíveis. Essa lista é pesquisada posteriormente para a assinatura do método ou assinaturas para exibir na dica de ferramenta informações do parâmetro.  
+- O local fornecido <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto é imediatamente após o caractere inicial de lista de parâmetros. O analisador deve coletar as assinaturas de todas as declarações de método disponíveis em posicionar e armazená-los em uma lista em sua versão do <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto. Essa lista inclui o nome do método, método tipo (ou no tipo de retorno) e uma lista de parâmetros possíveis. Essa lista é pesquisada posteriormente para a assinatura do método ou assinaturas para exibir na dica de ferramenta informações do parâmetro.  
   
- O analisador, em seguida, deve analisar a linha especificada pelo <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto para coletar o nome do método que está sendo inserido, bem como a distância ao longo do usuário é digitar os parâmetros. Isso é feito ao passar o nome do método a ser o <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> método na <xref:Microsoft.VisualStudio.Package.AuthoringSink> objeto e, em seguida, chamar o <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> método quando o caractere inicial de lista de parâmetros é analisado, chamar o <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> método quando a lista de parâmetros próximo caractere é analisado e, finalmente, a chamada a <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> método quando o caractere de final de lista de parâmetro é analisado. Os resultados dessas chamadas de método são usados pelo <xref:Microsoft.VisualStudio.Package.Source> classe para atualizar a dica de ferramenta de informações do parâmetro adequadamente.  
+  O analisador, em seguida, deve analisar a linha especificada pelo <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto para coletar o nome do método que está sendo inserido, bem como a distância ao longo do usuário é digitar os parâmetros. Isso é feito ao passar o nome do método a ser o <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> método na <xref:Microsoft.VisualStudio.Package.AuthoringSink> objeto e, em seguida, chamar o <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> método quando o caractere inicial de lista de parâmetros é analisado, chamar o <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> método quando a lista de parâmetros próximo caractere é analisado e, finalmente, a chamada a <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> método quando o caractere de final de lista de parâmetro é analisado. Os resultados dessas chamadas de método são usados pelo <xref:Microsoft.VisualStudio.Package.Source> classe para atualizar a dica de ferramenta de informações do parâmetro adequadamente.  
   
 ### <a name="example"></a>Exemplo  
  Aqui está uma linha de texto que o usuário pode inserir. Os números abaixo da linha indicam qual etapa é obtida pelo analisador nessa posição na linha (supondo que a análise se move da esquerda para a direita). A suposição aqui é que tudo antes da linha já foi analisado para assinaturas de método, incluindo a assinatura do método "testfunc".  

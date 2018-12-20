@@ -1,7 +1,7 @@
 ---
 title: Editor de Modelo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d53d22baf0ff1e458a2dd1ee601f59cdfe081ffa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e947793dff1f0068c1341ba6b70c21df07463f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475407"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844076"
 ---
 # <a name="model-editor"></a>Editor de modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Editor de modelos](https://docs.microsoft.com/visualstudio/designers/model-editor).  
-  
 Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para exibir, criar e modificar modelos 3D.  
   
  Você pode usar o Editor de Modelos para criar modelos 3D do zero ou exibir e modificar modelos 3D mais complexos que foram criados usando as ferramentas de modelagem 3D com recursos completos. O Editor de Modelos oferece suporte a vários formatos de modelo 3D que são usados no desenvolvimento de aplicativos DirectX.  
@@ -159,18 +157,18 @@ Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vspr
   
 ##### <a name="to-transform-an-object-by-setting-its-properties"></a>Para transformar um objeto definindo suas propriedades  
   
-1.  No modo **Selecionar**, selecione o objeto que deseja transformar. Uma sobreposição delineada indica que o objeto está selecionado.  
+1. No modo **Selecionar**, selecione o objeto que deseja transformar. Uma sobreposição delineada indica que o objeto está selecionado.  
   
-2.  Na janela **Propriedades**, especifique os valores para as propriedades **Rotação**, **Escala** e **Translação**.  
+2. Na janela **Propriedades**, especifique os valores para as propriedades **Rotação**, **Escala** e **Translação**.  
   
-    > [!IMPORTANT]
-    >  Para a propriedade **Rotação**, especifique o grau de rotação ao redor de cada um dos três eixos. As rotações são aplicadas em ordem, portanto, planeje uma rotação, primeiro em termos de rotação do eixo x, depois do eixo y e, em seguida, do eixo z.  
+   > [!IMPORTANT]
+   >  Para a propriedade **Rotação**, especifique o grau de rotação ao redor de cada um dos três eixos. As rotações são aplicadas em ordem, portanto, planeje uma rotação, primeiro em termos de rotação do eixo x, depois do eixo y e, em seguida, do eixo z.  
   
- Usando as ferramentas de modelagem, você pode criar transformações rapidamente, mas não com precisão. Ao definir as propriedades do objeto, você pode especificar transformações de forma precisa, mas não rápida. É recomendável usar as ferramentas de modelagem para ficar "próximo o suficiente" das transformações que deseja e, em seguida, ajustar os valores de propriedade.  
+   Usando as ferramentas de modelagem, você pode criar transformações rapidamente, mas não com precisão. Ao definir as propriedades do objeto, você pode especificar transformações de forma precisa, mas não rápida. É recomendável usar as ferramentas de modelagem para ficar "próximo o suficiente" das transformações que deseja e, em seguida, ajustar os valores de propriedade.  
   
- Se não desejar usar manipuladores, você poderá habilitar o modo de forma livre. Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Manipulação de forma livre** para habilitar (ou desabilitar) o modo de forma livre. No modo de forma livre, é possível iniciar uma manipulação em qualquer ponto na superfície de design, em vez de em um ponto no manipulador. No modo de forma livre, você pode restringir as alterações a determinados eixos, bloqueando aqueles que não deseja alterar. Na barra de ferramentas **Modo do Editor de Modelos**, escolha qualquer combinação dos botões **Bloquear X**, **Bloquear Y** e **Bloquear Z**.  
+   Se não desejar usar manipuladores, você poderá habilitar o modo de forma livre. Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Manipulação de forma livre** para habilitar (ou desabilitar) o modo de forma livre. No modo de forma livre, é possível iniciar uma manipulação em qualquer ponto na superfície de design, em vez de em um ponto no manipulador. No modo de forma livre, você pode restringir as alterações a determinados eixos, bloqueando aqueles que não deseja alterar. Na barra de ferramentas **Modo do Editor de Modelos**, escolha qualquer combinação dos botões **Bloquear X**, **Bloquear Y** e **Bloquear Z**.  
   
- Você pode achar útil trabalhar com objetos usando o recurso ajustar à grade. Na barra de ferramentas **Modo do Editor de Modelos**, escolha **Encaixar** para habilitar (ou desabilitar) o recurso de ajustar à grade. Quando esse recurso é habilitado, as transformações de translação, rotação e dimensionamento são restringidas a incrementos predefinidos.  
+   Você pode achar útil trabalhar com objetos usando o recurso ajustar à grade. Na barra de ferramentas **Modo do Editor de Modelos**, escolha **Encaixar** para habilitar (ou desabilitar) o recurso de ajustar à grade. Quando esse recurso é habilitado, as transformações de translação, rotação e dimensionamento são restringidas a incrementos predefinidos.  
   
 ### <a name="working-with-the-pivot-point"></a>Trabalhando com o ponto dinâmico  
  O ponto dinâmico de um objeto define seu centro de rotação e dimensionamento. É possível alterar o ponto dinâmico de um objeto par alterar como ele é afetado pelas transformações de rotação e dimensionamento. Na barra de ferramentas **Modo do Editor de Modelos**, escolha **Modo Dinâmico** para habilitar (ou desabilitar) o modo dinâmico. Quando o modo dinâmico é habilitado, um pequeno indicador de eixo aparece no ponto dinâmico do objeto selecionado. Você pode usar as ferramentas **Translação** e **Rotação** para manipular o ponto dinâmico.  
@@ -193,11 +191,11 @@ Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vspr
   
 ##### <a name="to-subdivide-faces"></a>Para subdividir faces  
   
-1.  No modo de seleção de face, selecione aquelas que deseja subdividir. Como a subdivisão cria novos dados de borda, subdividir todas as faces de uma vez proporciona resultados mais consistentes quando as faces são adjacentes.  
+1. No modo de seleção de face, selecione aquelas que deseja subdividir. Como a subdivisão cria novos dados de borda, subdividir todas as faces de uma vez proporciona resultados mais consistentes quando as faces são adjacentes.  
   
-2.  Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Subdividir**.  
+2. Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Subdividir**.  
   
- Você também pode triangular faces, mesclar objetos e converter as seleções de polígonos em novos objetos. A triangulação cria bordas adicionais para que uma face não triangular seja convertida em um número ideal de triângulos; no entanto, ela não fornece detalhes adicionais geométricos. A mescla combina objetos selecionados em um único objeto. Novos objetos podem ser criados de uma seleção de polígono.  
+   Você também pode triangular faces, mesclar objetos e converter as seleções de polígonos em novos objetos. A triangulação cria bordas adicionais para que uma face não triangular seja convertida em um número ideal de triângulos; no entanto, ela não fornece detalhes adicionais geométricos. A mescla combina objetos selecionados em um único objeto. Novos objetos podem ser criados de uma seleção de polígono.  
   
 ##### <a name="to-triangulate-a-face"></a>Para triangular uma face  
   
@@ -261,13 +259,13 @@ Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vspr
   
 ##### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Para criar uma hierarquia de objetos irmãos  
   
-1.  No modo **Selecionar**, selecione dois ou mais objetos. Um objeto de espaço reservado é criado e se torna seu objeto pai.  
+1. No modo **Selecionar**, selecione dois ou mais objetos. Um objeto de espaço reservado é criado e se torna seu objeto pai.  
   
-2.  Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Gerenciamento de Cena** e **Criar Grupo**.  
+2. Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Gerenciamento de Cena** e **Criar Grupo**.  
   
- O Editor de Modelos usa um delineado branco para identificar o primeiro objeto selecionado, que se torna o pai. Outros objetos na seleção têm um delineado azul. Por padrão, os nós de espaço reservado não são exibidos. Para exibir os nós de espaço reservado, na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Gerenciamento de Cena**, **Mostrar Nós de Espaço Reservado**. Você pode trabalhar com nós de espaço reservado da mesma forma que trabalha com objetos que não são de espaço reservado.  
+   O Editor de Modelos usa um delineado branco para identificar o primeiro objeto selecionado, que se torna o pai. Outros objetos na seleção têm um delineado azul. Por padrão, os nós de espaço reservado não são exibidos. Para exibir os nós de espaço reservado, na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Gerenciamento de Cena**, **Mostrar Nós de Espaço Reservado**. Você pode trabalhar com nós de espaço reservado da mesma forma que trabalha com objetos que não são de espaço reservado.  
   
- Para remover a associação pai/filho entre dois objetos, selecione o objeto filho e, na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Gerenciamento da Cena**, **Desanexar do Pai**. Quando você desanexa o pai de um objeto filho, o objeto filho se torna um objeto raiz na cena.  
+   Para remover a associação pai/filho entre dois objetos, selecione o objeto filho e, na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Gerenciamento da Cena**, **Desanexar do Pai**. Quando você desanexa o pai de um objeto filho, o objeto filho se torna um objeto raiz na cena.  
   
 ## <a name="keyboard-shortcuts"></a>Atalhos de teclado  
   

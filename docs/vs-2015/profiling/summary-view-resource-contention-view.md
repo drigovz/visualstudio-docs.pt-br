@@ -1,7 +1,7 @@
 ---
 title: Exibição Resumo – Exibição de contenção de recursos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - Summary view
 ms.assetid: 6da57b83-7b42-4d7c-9aea-8e0a830faf6b
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf83509cd56343001a94da619b9246464ed75bdf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45052997e9dd8332518ce5fb7804963f88e97959
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460615"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791846"
 ---
 # <a name="summary-view---resource-contention-view"></a>Exibição Resumo – Exibição de contenção de recursos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [modo de exibição de resumo - exibição de contenção de recurso](https://docs.microsoft.com/visualstudio/profiling/summary-view-resource-contention-view).  
-  
 A exibição Resumo exibe informações sobre os eventos no aplicativo nos quais um thread ou processo foi suspenso enquanto aguardava o acesso a um recurso.  
   
  Para obter mais informações, incluindo uma descrição das listas Links de notificação e Relatório, consulte [Exibição Resumo](../profiling/summary-view.md).  

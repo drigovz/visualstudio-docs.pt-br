@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81b1cbb9b36d7ae237551aad2677f9480c615b88
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 400145cf3981b7266a796f66576eb12f979d2750
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949832"
 ---
 # <a name="idebugextendedpropertyenumextendedmembers"></a>IDebugExtendedProperty::EnumExtendedMembers
 Enumera os membros de uma propriedade estendida.  
@@ -40,10 +40,10 @@ HRESULT EnumExtendedMembers(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwFieldSpec`  
- [in] Especifica as constantes EX_DBGPROP_INFO_FLAGS que determinam que os campos a enumerada estendidos estruturas de propriedade de depuração devem ser preenchidos.  
+ [in] Especifica as constantes EX_DBGPROP_INFO_FLAGS que determinam que os campos no enumeradas estendido estruturas de propriedades de depuração devem ser preenchidos.  
   
  `nRadix`  
- [in] Base a ser usada na interpretação todas as informações numéricas.  
+ [in] Base a ser usado na interpretação de todas as informações numéricas.  
   
  `ppeepi`  
  [out] Retorna o `IEnumDebugExtendedPropertyInfo` interface que enumera as propriedades do membro.  

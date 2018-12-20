@@ -1,7 +1,7 @@
 ---
 title: Elemento ProjectCollection (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: deb27180-2035-49ed-b835-c47bb3cd2f8f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6ca66c8cf18c891d7f9a771495af14eb4cc9921
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f8b9ba0902b193bb630e99a7908818688c25fd1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475224"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778677"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>Elemento ProjectCollection (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento ProjectCollection (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/projectcollection-element-visual-studio-templates).  
-  
 Especifica a organização e o conteúdo de modelos de vários projetos.  
   
  \<VSTemplate >  
@@ -49,7 +47,7 @@ Especifica a organização e o conteúdo de modelos de vários projetos.
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
   

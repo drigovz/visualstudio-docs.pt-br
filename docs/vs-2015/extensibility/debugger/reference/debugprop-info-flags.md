@@ -1,7 +1,7 @@
 ---
 title: DEBUGPROP_INFO_FLAGS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 1c7fe777-615e-4929-9ed4-970d9fe0eb81
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 999b9af039513782439ca89826f54c94da79546f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52c728c0ac31a64ebe462d2dddd798c085aea1bb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462486"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779327"
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DEBUGPROP_INFO_FLAGS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/debugprop-info-flags).  
-  
 Especifica quais informações devem ser recuperadas sobre um objeto de propriedade de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_DEBUGPROP_INFO_FLAGS {   
+enum enum_DEBUGPROP_INFO_FLAGS {   
    DEBUGPROP_INFO_FULLNAME          = 0x00000001,  
    DEBUGPROP_INFO_NAME              = 0x00000002,  
    DEBUGPROP_INFO_TYPE              = 0x00000004,  
@@ -56,7 +54,7 @@ typedef DWORD DEBUGPROP_INFO_FLAGS;
 ```  
   
 ```csharp  
-public enum enum_DEBUGPROP_INFO_FLAGS {   
+public enum enum_DEBUGPROP_INFO_FLAGS {   
    DEBUGPROP_INFO_FULLNAME          = 0x00000001,  
    DEBUGPROP_INFO_NAME              = 0x00000002,  
    DEBUGPROP_INFO_TYPE              = 0x00000004,  

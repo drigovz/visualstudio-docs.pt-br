@@ -1,7 +1,7 @@
 ---
 title: Comandos do elemento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed21cfb92cbf39b384be512aca640555bb4884f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0016deb1cf3852754e94c94a2ed153a3155d041a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463858"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801141"
 ---
 # <a name="commands-element"></a>Elemento Commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [comandos elemento](https://docs.microsoft.com/visualstudio/extensibility/commands-element).  
-  
 Representa a coleção de comandos na barra de ferramentas do VSPackage. A coleção pode ter até cinco subseções, da seguinte maneira: grupos, menus, botões, combos e bitmaps.  
   
  Cada elemento de filho subseção, por exemplo, \<Menu >, é identificado por uma ID exclusiva do comando que é um GUID e um par de identificador numérico. O GUID identifica o conjunto de comandos"" e é usado para agrupar comandos relacionados logicamente. O VSPackage deverá definir seu próprio conjunto de comandos para evitar colisões com IDs de comando que são definidas por outros VSPackages.  

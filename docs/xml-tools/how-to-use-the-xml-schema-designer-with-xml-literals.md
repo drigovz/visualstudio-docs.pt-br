@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dd0f709e53a3595437bc432a1d1db9a4d6d5c79
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9858768da0096c98ffb3014f0a52936adbf39019
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379495"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931110"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Como: usar o Designer de esquema XML com literais XML
 
@@ -43,35 +43,35 @@ Este tópico descreve como exibir um esquema associado com um literal XML em um 
 
 ## <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>Para adicionar código Visual Basic com uma literal XML, com base no arquivo XSD incluído no projeto
 
-1.  Substitua o código em *Module1.vb* arquivo pelo código a seguir:
+1. Substitua o código em *Module1.vb* arquivo pelo código a seguir:
 
    ```vb
    Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">
 
    Module Module1
-       Sub Main()
+      Sub Main()
 
-           Dim XMLLiteral = <ns:PurchaseOrder OrderDate="1900-01-01">
-                                <ns:ShipTo country="US">
-                                    <ns:name>name1</ns:name>
-                                    <ns:street>street1</ns:street>
-                                    <ns:city>city1</ns:city>
-                                    <ns:state>state1</ns:state>
-                                    <ns:zip>1</ns:zip>
-                                </ns:ShipTo>
-                                <ns:BillTo country="US">
-                                    <ns:name>name1</ns:name>
-                                    <ns:street>street1</ns:street>
-                                    <ns:city>city1</ns:city>
-                                    <ns:state>state1</ns:state>
-                                    <ns:zip>1</ns:zip>
-                                </ns:BillTo>
-                            </ns:PurchaseOrder>
+          Dim XMLLiteral = <ns:PurchaseOrder OrderDate="1900-01-01">
+                               <ns:ShipTo country="US">
+                                   <ns:name>name1</ns:name>
+                                   <ns:street>street1</ns:street>
+                                   <ns:city>city1</ns:city>
+                                   <ns:state>state1</ns:state>
+                                   <ns:zip>1</ns:zip>
+                               </ns:ShipTo>
+                               <ns:BillTo country="US">
+                                   <ns:name>name1</ns:name>
+                                   <ns:street>street1</ns:street>
+                                   <ns:city>city1</ns:city>
+                                   <ns:state>state1</ns:state>
+                                   <ns:zip>1</ns:zip>
+                               </ns:BillTo>
+                           </ns:PurchaseOrder>
 
-       End Sub
+      End Sub
    End Module
    ```
 
-2.  Qualquer nó XML em um literal XML ou uma importação de namespace XML com o botão direito e selecione **Mostrar no Schema Explorer**.
+2. Qualquer nó XML em um literal XML ou uma importação de namespace XML com o botão direito e selecione **Mostrar no Schema Explorer**.
 
-     O **XML Schema Explorer** é exibido lado a lado com um arquivo de Visual Basic que possui o literal XML associado com o conjunto de esquema XML.
+    O **XML Schema Explorer** é exibido lado a lado com um arquivo de Visual Basic que possui o literal XML associado com o conjunto de esquema XML.

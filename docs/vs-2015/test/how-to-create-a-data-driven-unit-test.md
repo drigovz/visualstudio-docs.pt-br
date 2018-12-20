@@ -1,7 +1,7 @@
 ---
 title: Como criar um teste de unidade orientado a dados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,37 +20,35 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1b5f0fea9712d1ba62aa8965b4d4a2e7d7d0e230
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eeb7efb0c7faa9a2493cfd3f91f6cc4e72408f4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464767"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889354"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Como criar um teste de unidade orientado a dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [How To: criar um teste de unidade controlado por dados](https://docs.microsoft.com/visualstudio/test/how-to-create-a-data-driven-unit-test).  
-  
 Ao usar a estrutura de teste de unidade da Microsoft para código gerenciado, você pode configurar um método de teste de unidade para recuperar valores usados no método de teste de uma fonte de dados. O método é executado sucessivamente para cada linha na fonte de dados, o que facilita o teste de uma variedade de entradas usando um único método.  
   
  Esse tópico contém as seguintes seções:  
   
--   [O método em teste](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
+- [O método em teste](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
   
--   [Criar uma fonte de dados](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
+- [Criar uma fonte de dados](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
   
--   [Adicionar um TestContext para a classe de teste](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
+- [Adicionar um TestContext para a classe de teste](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
   
--   [Escrever o método de teste](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
+- [Escrever o método de teste](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
   
-    -   [Especificar o DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
+  -   [Especificar o DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
   
-    -   [Usar o TestContext.DataRow para acessar os dados](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
+  -   [Usar o TestContext.DataRow para acessar os dados](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
   
--   [Execução do teste e exibição dos resultados](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
+- [Execução do teste e exibição dos resultados](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
   
- A criação de um teste de unidade orientado a dados envolve as seguintes etapas:  
+  A criação de um teste de unidade orientado a dados envolve as seguintes etapas:  
   
 1.  Criar uma fonte de dados que contém os valores a serem usados no método de teste. A fonte de dados pode ser de qualquer tipo que esteja registrado no computador que executa o teste.  
   
@@ -63,17 +61,17 @@ Ao usar a estrutura de teste de unidade da Microsoft para código gerenciado, vo
 ##  <a name="BKMK_The_method_under_test"></a> O método em teste  
  Como exemplo, vamos supor que criamos:  
   
-1.  Uma solução chamada `MyBank` que aceita e processa transações para diferentes tipos de contas.  
+1. Uma solução chamada `MyBank` que aceita e processa transações para diferentes tipos de contas.  
   
-2.  Um projeto em `MyBank` chamado `BankDb` que gerencia as transações das contas.  
+2. Um projeto em `MyBank` chamado `BankDb` que gerencia as transações das contas.  
   
-3.  Uma classe chamada `Maths` no projeto `DbBank` que executa as funções matemáticas para garantir que qualquer transação seja vantajosa para o banco.  
+3. Uma classe chamada `Maths` no projeto `DbBank` que executa as funções matemáticas para garantir que qualquer transação seja vantajosa para o banco.  
   
-4.  Um projeto de teste de unidade chamado `BankDbTests` para testar o comportamento do componente `BankDb`.  
+4. Um projeto de teste de unidade chamado `BankDbTests` para testar o comportamento do componente `BankDb`.  
   
-5.  Uma classe de teste de unidade chamada `MathsTests` para verificar o comportamento da classe `Maths`.  
+5. Uma classe de teste de unidade chamada `MathsTests` para verificar o comportamento da classe `Maths`.  
   
- Testaremos um método em `Maths` que acrescenta dois inteiros usando um loop:  
+   Testaremos um método em `Maths` que acrescenta dois inteiros usando um loop:  
   
 ```  
 public int AddIntegers(int first, int second)  

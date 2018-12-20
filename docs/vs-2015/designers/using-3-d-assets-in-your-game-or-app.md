@@ -1,7 +1,7 @@
 ---
 title: Usando ativos 3D no jogo ou no aplicativo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ab73f8ecdb9507459c7214de37b2349c01062f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e04f4c82e6f11f2659b4cc65549efb291009b720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863588"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Usando ativos 3D no jogo ou no aplicativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando ativos 3D em seu jogo ou aplicativo](https://docs.microsoft.com/visualstudio/designers/using-3-d-assets-in-your-game-or-app).  
-  
 Este artigo descreve como é possível usar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para processar ativos 3D e incluí-los nas compilações.  
   
  Depois de usar as ferramentas no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para criar ativos 3D, a próxima etapa é usá-las no aplicativo. Mas antes de usá-las, seus ativos precisam ser transformados em um formato que o DirectX pode entender. Para ajudá-lo a transformar seus ativos, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornece personalizações de compilação para cada tipo de ativo que pode ser produzido. Para incluir os ativos na sua compilação, tudo o que você precisa fazer é configurar o projeto para usar as personalizações de compilação, adicionar os ativos ao seu projeto e configurar os ativos para usar a personalização de compilação correta. Depois disso, você pode carregar os ativos no aplicativo e usá-los criando e preenchendo recursos do DirectX, assim como faria em qualquer outro aplicativo DirectX.  
@@ -59,18 +57,18 @@ Este artigo descreve como é possível usar o [!INCLUDE[vsprvs](../includes/vspr
   
 #### <a name="to-add-an-asset-to-your-build"></a>Para adicionar um ativo à sua compilação  
   
-1.  No **Gerenciador de Soluções**, no seu projeto, abra o menu de atalho do ativo e selecione **Propriedades**. A caixa de diálogo **Página de Propriedades** do ativo é exibida.  
+1. No **Gerenciador de Soluções**, no seu projeto, abra o menu de atalho do ativo e selecione **Propriedades**. A caixa de diálogo **Página de Propriedades** do ativo é exibida.  
   
-2.  Verifique se as propriedades **Configuração** e **Plataforma** estão definidas para os valores aos quais você deseja aplicar as suas alterações.  
+2. Verifique se as propriedades **Configuração** e **Plataforma** estão definidas para os valores aos quais você deseja aplicar as suas alterações.  
   
-3.  Em **Propriedades da Configuração**, escolha **Geral** e, na grade de propriedades, em **Geral**, defina a propriedade **Tipo de Item** para o tipo de item do pipeline de conteúdo adequado. Por exemplo, no caso um arquivo de imagem ou de textura, escolha **Pipeline de Conteúdo da Imagem**.  
+3. Em **Propriedades da Configuração**, escolha **Geral** e, na grade de propriedades, em **Geral**, defina a propriedade **Tipo de Item** para o tipo de item do pipeline de conteúdo adequado. Por exemplo, no caso um arquivo de imagem ou de textura, escolha **Pipeline de Conteúdo da Imagem**.  
   
-    > [!IMPORTANT]
-    >  Por padrão, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] presume que muitos tipos de arquivos de imagem devem ser classificados usando o tipo de item **Imagem**, integrado ao [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Portanto, você precisa alterar a propriedade **Tipo de Item** de cada imagem que deseja que seja processada pelo pipeline de conteúdo da imagem. Outros tipos de arquivos de origem de pipeline de conteúdo para modelos 3D e gráficos de sombreador visual assumem como padrão o **Tipo de Item** correto.  
+   > [!IMPORTANT]
+   >  Por padrão, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] presume que muitos tipos de arquivos de imagem devem ser classificados usando o tipo de item **Imagem**, integrado ao [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Portanto, você precisa alterar a propriedade **Tipo de Item** de cada imagem que deseja que seja processada pelo pipeline de conteúdo da imagem. Outros tipos de arquivos de origem de pipeline de conteúdo para modelos 3D e gráficos de sombreador visual assumem como padrão o **Tipo de Item** correto.  
   
-4.  Selecione o botão **OK**.  
+4. Selecione o botão **OK**.  
   
- Seguem os três tipos de item de pipeline de conteúdo e seus tipos de arquivo de origem e saída associados.  
+   Seguem os três tipos de item de pipeline de conteúdo e seus tipos de arquivo de origem e saída associados.  
   
 |Tipo de item|Tipos de arquivo de origem|Formato do arquivo de saída|  
 |---------------|-----------------------|------------------------|  

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea1db7f0ec9404b71bb9f7d71d83147e53ab2d17
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5b86699f11ab59aaf0ef09f5c7ae52d69e41e96c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670210"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671736"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Atualizar e migrar soluções do Office
   Se você tiver um projeto do Microsoft Office que foi criado em uma versão anterior do Visual Studio, você deve atualizar o projeto para usá-lo nas versões atuais do Visual Studio. Para atualizar um projeto do Microsoft Office, abra-o em uma versão do Visual Studio que inclui o Microsoft Office developer tools. Para obter mais informações sobre as versões do Visual Studio que incluem o Microsoft Office developer tools, consulte [configurar um computador para desenvolver soluções do Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -88,7 +88,7 @@ ms.locfileid: "35670210"
  Se você quiser usar o ClickOnce para implantar seu suplemento do VSTO, você pode excluir o projeto de instalação ou o InstallShield Limited Edition inteiramente. Para obter mais informações sobre como implantar Suplementos do VSTO usando o ClickOnce, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: soluções de atualização do Office](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
+ [Como: soluções de atualização do Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
  [Migrar soluções do Office para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Caixa de diálogo de opções de atualização, projeto](../vsto/project-upgrade-options-dialog-box.md)  
   

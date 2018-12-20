@@ -1,7 +1,7 @@
 ---
 title: Bloco | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,21 +17,19 @@ helpviewer_keywords:
 - Block symbol
 ms.assetid: 95b7b0c1-ecc9-405f-8456-5f9cfb866498
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d4a62541ce214bc6965a025fb992ca217d511cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 589c4f5a95a74be184cd047bf3ed66f5a4258674
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476328"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753862"
 ---
 # <a name="block"></a>Bloco
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [bloco](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/block).  
-  
 Cada bloco de código é identificado por um `SymTagBlock` símbolo. Símbolos de bloco são usados para identificar os escopos aninhados dentro de funções.  
   
 ## <a name="properties"></a>Propriedades  

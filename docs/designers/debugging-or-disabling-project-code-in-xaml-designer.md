@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4764df436a7adeb3ac65c574812c8f7d334d497b
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 191d180a68edd439c729fa963b607c992ff3c00e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890559"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816763"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Depurar ou desabilitar o código do projeto no Designer XAML
 
@@ -86,6 +86,19 @@ Quando o código do projeto está desabilitado, o Visual Studio mostra espaços 
 
     > [!NOTE]
     > Desabilitar o código do projeto pode levar a uma perda de dados do tempo de design. Uma alternativa é depurar o código em execução no designer.
+
+## <a name="control-display-options"></a>Opções de exibição de controle
+
+> [!NOTE]
+> **Controlar Opções de Exibição** só está disponível para aplicativos da Plataforma Universal do Windows que se destinam ao Windows 10 Fall Creators Update (build 16299) ou posterior. O recurso **Opções de Exibição do Controle** está disponível no Visual Studio 2017 versão 15.9 ou posterior. 
+
+No designer XAML, você pode alterar as opções de exibição de controle para exibir somente os controles de plataforma do SDK do Windows. Isso pode aumentar a confiabilidade do designer XAML.
+
+Para alterar as opções de exibição de controle, clique no ícone na parte inferior esquerda da janela do designer e selecione uma opção em **Opções de Exibição de Controle**:
+
+![Opções de Exibição de Controle](../designers/media/control_display_options.png)
+
+Quando você selecionar **Exibir Somente os Controles de Plataforma**, todos os controles personalizados provenientes de SDKs, controles de usuário do cliente e outros não serão renderizados completamente. Em vez disso, eles serão substituídos por controles de fallback para demonstrar o tamanho e a posição do controle.
 
 ## <a name="see-also"></a>Consulte também
 

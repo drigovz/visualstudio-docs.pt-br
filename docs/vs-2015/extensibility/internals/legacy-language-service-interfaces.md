@@ -1,7 +1,7 @@
 ---
 title: Interfaces de serviço de linguagem herdado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e68b9b5273d78d35086369f00106b1ebbde4a8ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5e574267ac83d145c5f3fb44117534127e3f1fd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461628"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785840"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfaces de serviço de linguagem herdada
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Interfaces de serviço de linguagem herdado](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-interfaces).  
-  
 Para qualquer linguagem de programação específica, pode haver apenas uma instância de um serviço de linguagem por vez. Entretanto, um serviço de linguagem única pode atender mais de um editor.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] não associa um serviço de linguagem com qualquer editor específico. Portanto, quando você solicita uma operação de serviço de linguagem, você deve identificar o editor apropriado como um parâmetro.  
@@ -37,15 +35,15 @@ Para qualquer linguagem de programação específica, pode haver apenas uma inst
   
  Você pode implementar as interfaces de serviço de linguagem principal em qualquer número de classes separadas. No entanto, uma abordagem comum é implementar as interfaces a seguir em uma única classe:  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (opcional)  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (opcional)  
   
- O <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface deve ser implementada em todos os serviços de linguagem. Ele fornece informações sobre seu serviço de linguagem, como o nome localizado da linguagem, as extensões de nome de arquivo associadas com o serviço de linguagem e como recuperar um colorizador.  
+  O <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface deve ser implementada em todos os serviços de linguagem. Ele fornece informações sobre seu serviço de linguagem, como o nome localizado da linguagem, as extensões de nome de arquivo associadas com o serviço de linguagem e como recuperar um colorizador.  
   
 ## <a name="additional-language-service-interfaces"></a>Interfaces de serviço de idioma adicionais  
  Outras interfaces podem ser fornecidos com o serviço de linguagem. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] solicita uma instância separada dessas interfaces para cada instância do buffer de texto. Portanto, você deve implementar cada uma dessas interfaces em seu próprio objeto. A tabela a seguir mostra as interfaces que exigem uma instância por instância do buffer de texto.  

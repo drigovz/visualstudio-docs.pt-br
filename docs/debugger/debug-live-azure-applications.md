@@ -1,6 +1,6 @@
 ---
 title: Depurar aplicativos do Azure do ASP.NET em tempo real
-ms.description: Learn how to set snappoints and view snapshots with the Snapshot Debugger.
+description: Saiba como configurar o snappoints e exibir instantâneos com o depurador de instantâneo.
 ms.custom: mvc
 ms.date: 03/16/2018
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: a2dfc759fbd42dd435133e223c72760ae5c274c3
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: b7f98dccebe9db183c63c6f859ceb2234fdb1acf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154457"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056912"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicativos em tempo real do Azure do ASP.NET usando o depurador de instantâneo
 
@@ -36,7 +36,7 @@ Neste tutorial, você irá:
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Depurador de instantâneos só está disponível para o Visual Studio 2017 Enterprise versão 15.5 ou posterior com o **carga de trabalho de desenvolvimento ASP.NET e web**. Para o ASP.NET Core, você também precisa de. **Desenvolvimento do NET Core** carga de trabalho instalada.
+* Depurador de instantâneos só está disponível para o Visual Studio 2017 Enterprise versão 15.5 ou posterior com o **carga de trabalho de desenvolvimento ASP.NET e web**. Para o ASP.NET Core, você também precisa de **desenvolvimento do .NET Core** carga de trabalho instalada.
 
     Se ainda não estiver instalado, instale [Visual Studio 2017 Enterprise versão 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ou posterior. Se você estiver atualizando de uma instalação anterior do Visual Studio 2017, execute o instalador do Visual Studio e verifique o componente do depurador de instantâneos **carga de trabalho de desenvolvimento ASP.NET e web**.
 
@@ -114,7 +114,7 @@ Se você tiver dificuldades recriar um estado específico em seu aplicativo, con
 
 1. Um ícone de snappoint (a bola vazado) com o botão direito e escolha **configurações**.
 
-   ![Escolha as configurações](../debugger/media/snapshot-snappoint-settings.png)
+   ![Escolha Configurações](../debugger/media/snapshot-snappoint-settings.png)
 
 1. Na janela de configurações de snappoint, digite uma expressão.
 

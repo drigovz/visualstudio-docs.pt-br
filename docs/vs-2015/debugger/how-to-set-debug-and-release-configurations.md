@@ -1,7 +1,7 @@
 ---
 title: 'Como: Set Debug and Release Configurations | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -37,21 +37,19 @@ helpviewer_keywords:
 - Visual Basic projects, debug and release builds
 ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
 caps.latest.revision: 48
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 137c85f5433343327cf677ef76c1116bd6ef6821
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba827fda69b1dc455df4efe9c9f6eb83687780f3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460882"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758491"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>Como definir configurações de depuração e versão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: Set Debug and Release Configurations](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations).  
-  
 Projetos do Visual Studio tem a versão separada e configurações para o seu programa de depuração. Como os nomes já dizem, você compila a versão de depuração para depuração e a versão de lançamento para a distribuição da versão final.  
   
  A configuração de depuração do seu programa é compilada com informações de depuração simbólica e sem otimização. A otimização complica a depuração, porque a relação entre o código fonte e as instruções geradas é mais complexa.  

@@ -1,7 +1,7 @@
 ---
 title: Propriedades de elementos em UML usam diagramas de caso | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - use case diagrams, properties
 ms.assetid: 2728fb26-a275-4fce-8a2c-5a78af6bee04
 caps.latest.revision: 13
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dd23baadfca51bf669336ab96bf00ee5d4594a08
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a81f7630a1a903af2f9c21aee3249ea6fe156af2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467236"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762823"
 ---
 # <a name="properties-of-elements-on-uml-use-case-diagrams"></a>Propriedades de elementos em diagramas de caso de uso UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [propriedades de elementos em UML usam diagramas de caso](https://docs.microsoft.com/visualstudio/modeling/properties-of-elements-on-uml-use-case-diagrams).  
-  
 Em um diagrama de caso de uso UML, cada elemento no diagrama tem propriedades. Para ver as propriedades de um elemento, clique com botão direito do elemento no diagrama ou no **Gerenciador de modelos UML** e, em seguida, clique em **propriedades**. As propriedades aparecem na **propriedades** janela.  
   
 > [!NOTE]

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f6d697cecdc63dd013ae91631b350c51fc0e90
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: aefdd145abce513e5311d4572a9da64105226b3b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267839"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842366"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Criar perfil em clusters HPC (computação de alto desempenho)
 
@@ -40,7 +40,7 @@ Para criar o perfil em um nó de computação do HPC, faça o seguinte:
 
 - Instale o [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] e a versão autônoma das Ferramentas de Criação de Perfil do nó de computação do HPC. Programas de instalação estão disponíveis para ambos o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e o criador de perfil autônomo na mídia de instalação do Visual Studio. **Observação** Você deve reiniciar a computação depois de ter instalado [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e antes de instalar as ferramentas de criação de perfil.
 
- Para instalar o [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] e as Ferramentas de Criação de perfil autônomas em um nó de computação do HPC ativo e habilitar a criação de perfil no computador do cluster, execute estas etapas:
+  Para instalar o [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] e as Ferramentas de Criação de perfil autônomas em um nó de computação do HPC ativo e habilitar a criação de perfil no computador do cluster, execute estas etapas:
 
 1. Abra a janela de prompt de comando que é instalada com o HPC pack.
 
@@ -52,11 +52,11 @@ Para criar o perfil em um nó de computação do HPC, faça o seguinte:
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
-|||
-|-|-|
-|*%HeadNode%*|Nome do nó principal do cluster.|
-|*%FxPath%*|Caminho para o instalador de [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. Na mídia de instalação do Visual Studio, o caminho é: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|
-|*%ProfilerPath%*|Caminho para a versão autônoma do instalador das Ferramentas de Criação de Perfil. Na mídia de instalação do Visual Studio, o caminho é: Standalone Profiler\x64\vs_profiler.exe|
+| | |
+|------------------| - |
+| *%HeadNode%* | Nome do nó principal do cluster. |
+| *%FxPath%* | Caminho para o instalador de [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. Na mídia de instalação do Visual Studio, o caminho é: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%ProfilerPath%* | Caminho para a versão autônoma do instalador das Ferramentas de Criação de Perfil. Na mídia de instalação do Visual Studio, o caminho é: Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Criar perfil um nó de computação HPC
 
@@ -68,9 +68,9 @@ Você pode configurar uma sessão de criação de perfil usando o Assistente de 
 
 3. Na segunda página do assistente, selecione o aplicativo que você deseja analisar.
 
-    - Para analisar um projeto que está aberto no momento no [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], selecione a opção **Um ou mais projetos disponíveis** e, em seguida, selecione o nome do projeto na lista.
+   - Para analisar um projeto que está aberto no momento no [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], selecione a opção **Um ou mais projetos disponíveis** e, em seguida, selecione o nome do projeto na lista.
 
-    - Para analisar um binário que não está em um projeto aberto, selecione a opção **Um executável (arquivo .EXE)**.
+   - Para analisar um binário que não está em um projeto aberto, selecione a opção **Um executável (arquivo .EXE)**.
 
 4. Clique em **Avançar**.
 
@@ -126,7 +126,7 @@ Você pode alterar as propriedades de sessão de desempenho definidas no Assiste
 
 ### <a name="hpc-launch-properties"></a>Propriedades de inicialização do HPC
 
-|propriedade|Descrição|
+|Propriedade|Descrição|
 |--------------|-----------------|
 |**Nó principal**|Especifica o computador que atua como o nó principal do HPC na criação de perfil.|
 |**Número de processos**|Especifica o número de instâncias do aplicativo a serem executadas no aplicativo analisado.|
@@ -137,16 +137,17 @@ Você pode alterar as propriedades de sessão de desempenho definidas no Assiste
 
 ### <a name="advanced-properties"></a>Propriedades avançadas
 
-|propriedade|Descrição|
-|--------------|-----------------|
-|**Nome do projeto**|O nome do projeto ou solução [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] atual.|
-|**Limpar quando o criador de perfil é interrompido**|Quando verdadeiro, remove os binários que foram implantados para o diretório de execução. Arquivos e diretórios criados pelo programa de usuário não são removidos nesta etapa. Se o diretório de execução e o diretório de implantação foram criadas pelo IDE, o IDE tenta removê-los, mas não o fará se eles tiverem arquivos não implantados pelo IDE.|
-|**Arquivos adicionais a serem implantados**|Especifica uma lista separada por ponto e vírgula de arquivos adicionais para implantar em um nó de computação. Você pode clicar no botão de reticências (**...**) para selecionar vários arquivos usando uma caixa de diálogo.|
-|**Comando Mpiexec**|Especifica o aplicativo que inicia o aplicativo MPI. O valor padrão é **mpiexec.exe**|
-|**Argumentos Mpiexec**|Especifica os argumentos para passar para o comando mpiexec.exe.|
-|**Nós solicitados no cluster**|Especifica o número de nós no cluster no qual executar o aplicativo.|
-|**Implantar arquivos CRT**|Se for true, implanta o tempo de execução C/C++ no cluster.|
-|**Script de pré-perfil**|Especifica o caminho e o nome de arquivo de um script a ser executado no computador de desenvolvimento local antes de iniciar a sessão de criação de perfil.|
-|**Argumentos do script pré-perfil**|Especifica os argumentos que serão passados para o script pré-perfil.|
-|**Script pré-perfil**|Especifica o caminho e o nome de arquivo de um script a ser executado no computador de desenvolvimento local depois de iniciar a sessão de criação de perfil.|
-|**Argumentos do script pós-perfil**|Especifica os argumentos que serão passados para o script pós-perfil.|
+| Propriedade | Descrição |
+|---------------------------------------| - |
+| **Nome do projeto** | O nome do projeto ou solução [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] atual. |
+| **Limpar quando o criador de perfil é interrompido** | Quando verdadeiro, remove os binários que foram implantados para o diretório de execução. Arquivos e diretórios criados pelo programa de usuário não são removidos nesta etapa. Se o diretório de execução e o diretório de implantação foram criadas pelo IDE, o IDE tenta removê-los, mas não o fará se eles tiverem arquivos não implantados pelo IDE. |
+| **Arquivos adicionais a serem implantados** | Especifica uma lista separada por ponto e vírgula de arquivos adicionais para implantar em um nó de computação. Você pode clicar no botão de reticências (**...**) para selecionar vários arquivos usando uma caixa de diálogo. |
+| **Comando Mpiexec** | Especifica o aplicativo que inicia o aplicativo MPI. O valor padrão é **mpiexec.exe** |
+| **Argumentos Mpiexec** | Especifica os argumentos para passar para o comando mpiexec.exe. |
+| **Nós solicitados no cluster** | Especifica o número de nós no cluster no qual executar o aplicativo. |
+| **Implantar arquivos CRT** | Se for true, implanta o tempo de execução C/C++ no cluster. |
+| **Script de pré-perfil** | Especifica o caminho e o nome de arquivo de um script a ser executado no computador de desenvolvimento local antes de iniciar a sessão de criação de perfil. |
+| **Argumentos do script pré-perfil** | Especifica os argumentos que serão passados para o script pré-perfil. |
+| **Script pré-perfil** | Especifica o caminho e o nome de arquivo de um script a ser executado no computador de desenvolvimento local depois de iniciar a sessão de criação de perfil. |
+| **Argumentos do script pós-perfil** | Especifica os argumentos que serão passados para o script pós-perfil. |
+

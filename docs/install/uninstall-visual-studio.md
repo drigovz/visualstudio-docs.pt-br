@@ -1,7 +1,8 @@
 ---
-title: Desinstalar o Visual Studio 2017
+title: Desinstalar o Visual Studio
+titleSuffix: ''
 description: Saiba como desinstalar o Visual Studio, passo a passo.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 08/16/2017
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -15,25 +16,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0b8d2de1cad4f4575ca9ee7f35713383149314
-ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
+ms.openlocfilehash: 89f517c51fdd1d9e9bd9e47d928b9854421cbbdb
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43288977"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159952"
 ---
-# <a name="uninstall-visual-studio"></a>Desinstalar o Visual Studio
+# <a name="uninstall-visual-studio-2017"></a>Desinstalar o Visual Studio 2017
 
 Esta página guia você pela desinstalação do Visual Studio, nosso pacote integrado de ferramentas de produtividade para desenvolvedores.
 
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Desinstalar o Visual Studio para Mac](/visualstudio/mac/uninstall).
+
 1. Localize o Instalador do Visual Studio no computador.
 
-     Por exemplo, em um computador que executa a Atualização de Aniversário do Windows 10, selecione **Iniciar** e role até a letra **V**, onde ele estará listado como **Instalador do Visual Studio**.
+     Por exemplo, em um computador que executa a Atualização de Aniversário do Windows 10 ou posterior, selecione **Iniciar** e role até a letra **V**, onde ele estará listado como **Instalador do Visual Studio**.
 
      ![Instalador do Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Localizar o Instalador do Microsoft Visual Studio")
 
-     >[!NOTE]
-     Em alguns computadores, o Instalador do Visual Studio poderá estar listado sob a letra **“M”** como **Instalador do Microsoft Visual Studio**.<br/><br/> Como alternativa, encontre o Instalador do Visual Studio no seguinte local: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+   > [!NOTE]
+   > Em alguns computadores, o Instalador do Visual Studio poderá estar listado sob a letra **“M”** como **Instalador do Microsoft Visual Studio**.<br/><br/> Como alternativa, encontre o Instalador do Visual Studio no seguinte local: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2. Clique para iniciar o instalador, clique no ícone ![Detalhes], no ícone (media/vs2017uninstall-UninstallIcon.png "Selecionar as Opções") e, em seguida, em **Desinstalar**.
 

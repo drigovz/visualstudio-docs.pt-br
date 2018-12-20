@@ -1,5 +1,5 @@
 ---
-title: Criar um suplemento do Visual Studio para o visualizador de resultados de testes de desempenho Web
+title: Criar um suplemento para o Visualizador de Resultados do Teste de Desempenho Web
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0ea42942fc06225bc5c64c02eba85a766a94ef1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 6672bd1e38dee5b27d350b9d2e12626cef122115
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381101"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068335"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Como criar um suplemento do Visual Studio para o Visualizador de Resultados de Teste de Desempenho Web
+# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Como: Criar um suplemento do Visual Studio para o Visualizador de Resultados do Teste de Desempenho Web
 
 Você pode estender a interface do usuário para o **Visualizador de Testes de Desempenho Web** usando os seguintes namespaces:
 
@@ -28,7 +28,9 @@ Você pode estender a interface do usuário para o **Visualizador de Testes de D
 
 Além disso, é necessário adicionar uma referência à DLL LoadTestPackage, localizada na pasta *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
 
--   Para estender a interface do usuário do **Visualizador de Testes de Desempenho Web**, você precisa criar um suplemento do Visual Studio e um controle de usuário. Os procedimentos a seguir explicam como criar o suplemento, o controle de usuário e como implementar as classes necessárias para estender interface de usuário do **Visualizador de Testes de Desempenho Web**.
+Para estender a interface do usuário do **Visualizador de Testes de Desempenho Web**, você precisa criar um suplemento do Visual Studio e um controle de usuário. Os procedimentos a seguir explicam como criar o suplemento, o controle de usuário e como implementar as classes necessárias para estender interface de usuário do **Visualizador de Testes de Desempenho Web**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Criar ou abrir uma solução que contém um aplicativo Web ASP.NET e um projeto de teste de desempenho Web e de carga
 
@@ -37,7 +39,7 @@ Além disso, é necessário adicionar uma referência à DLL LoadTestPackage, lo
 Crie ou abra uma solução de não produção com a qual você poderá fazer experiências e que contenha um aplicativo Web do ASP.NET e um projeto de desempenho na Web, além de carregar o projeto de teste com um ou mais testes de desempenho na Web para o aplicativo Web do ASP.NET.
 
 > [!NOTE]
-> Você pode criar um aplicativo Web ASP.NET e um projeto de teste de carga e de desempenho Web que contém testes de desempenho Web seguindo os procedimentos de [Como criar um teste de serviço Web](../test/how-to-create-a-web-service-test.md) e [Gerar e executar um teste de desempenho Web codificado](../test/generate-and-run-a-coded-web-performance-test.md).
+> Crie um aplicativo Web ASP.NET e um projeto de teste de carga e de desempenho Web que contém testes de desempenho Web seguindo os procedimentos descritos em [Como: Criar um teste de serviço Web](../test/how-to-create-a-web-service-test.md) e [Gerar e executar um teste de desempenho Web codificado](../test/generate-and-run-a-coded-web-performance-test.md).
 
 ## <a name="create-a-visual-studio-add-in"></a>Criar um suplemento do Visual Studio
 
@@ -49,28 +51,28 @@ Um suplemento é uma DLL compilada executada no IDE (ambiente de desenvolvimento
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Para criar um suplemento usando o Assistente de Suplemento
 
-1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução, escolha **Adicionar** e, em seguida, selecione **Novo Projeto**.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução, escolha **Adicionar** e, em seguida, selecione **Novo Projeto**.
 
-     A caixa de diálogo **Novo Projeto** é exibida.
+    A caixa de diálogo **Novo Projeto** é exibida.
 
-2.  Em **Modelos Instalados**, expanda **Outros Tipos de Projetos** e selecione **Extensibilidade**.
+2. Em **Modelos Instalados**, expanda **Outros Tipos de Projetos** e selecione **Extensibilidade**.
 
-3.  Na lista de modelos, selecione **Suplemento do Visual Studio**.
+3. Na lista de modelos, selecione **Suplemento do Visual Studio**.
 
-4.  Em **Nome**, digite um nome para o suplemento. Por exemplo, **WebPerfTestResultsViewerAddin**.
+4. Em **Nome**, digite um nome para o suplemento. Por exemplo, **WebPerfTestResultsViewerAddin**.
 
-5.  Escolha **OK**.
+5. Escolha **OK**.
 
-     O **Assistente de Suplemento** do Visual Studio é iniciado.
+    O **Assistente de Suplemento** do Visual Studio é iniciado.
 
-6.  Escolha **Avançar**.
+6. Escolha **Avançar**.
 
-7.  Na página **Selecione uma Linguagem de Programação**, selecione a linguagem de programação que deseja usar para gravar o suplemento.
+7. Na página **Selecione uma Linguagem de Programação**, selecione a linguagem de programação que deseja usar para gravar o suplemento.
 
-    > [!NOTE]
-    > Este tópico usa o Visual C# no código de exemplo.
+   > [!NOTE]
+   > Este tópico usa o Visual C# no código de exemplo.
 
-8.  Na página **Selecione um Aplicativo Host**, selecione **Visual Studio** e desmarque **Macros do Visual Studio**.
+8. Na página **Selecione um Aplicativo Host**, selecione **Visual Studio** e desmarque **Macros do Visual Studio**.
 
 9. Escolha **Avançar**.
 
@@ -96,18 +98,18 @@ Um suplemento é uma DLL compilada executada no IDE (ambiente de desenvolvimento
 
      Você adicionará o código ao arquivo *Connect.cs* após o procedimento a seguir, que cria um controle de usuário que será referenciado por este projeto WebPerfTestResultsViewerAddin.
 
- Após um suplemento ser criado, será necessário registrá-lo no Visual Studio para que ele possa ser ativado no **Gerenciador de Suplementos**. Faça isso usando um arquivo XML que tenha uma extensão de nome de arquivo *.addin*.
+    Após um suplemento ser criado, será necessário registrá-lo no Visual Studio para que ele possa ser ativado no **Gerenciador de Suplementos**. Faça isso usando um arquivo XML que tenha uma extensão de nome de arquivo *.addin*.
 
- O arquivo *.addin* descreve as informações de que Visual Studio precisa para exibir o suplemento no **Gerenciador de Suplementos**. Quando o Visual Studio é iniciado, ele examina no local do arquivo *.addin* os arquivos *.addin* disponíveis. Se encontrar algum, ele lerá o arquivo XML e fornecerá ao **Gerenciador de Suplementos** as informações necessárias para iniciar o suplemento quando clicado.
+    O arquivo *.addin* descreve as informações de que Visual Studio precisa para exibir o suplemento no **Gerenciador de Suplementos**. Quando o Visual Studio é iniciado, ele examina no local do arquivo *.addin* os arquivos *.addin* disponíveis. Se encontrar algum, ele lerá o arquivo XML e fornecerá ao **Gerenciador de Suplementos** as informações necessárias para iniciar o suplemento quando clicado.
 
- O arquivo *.addin* é criado automaticamente quando você cria um suplemento usando o **Assistente de Suplemento**.
+    O arquivo *.addin* é criado automaticamente quando você cria um suplemento usando o **Assistente de Suplemento**.
 
 ### <a name="add-in-file-locations"></a>Locais de arquivo de suplemento
 
 Duas cópias do arquivo *.addin* são criadas automaticamente pelo **Assistente de Suplemento**, da seguinte forma:
 
 |**Local do arquivo .addin**|**Descrição**|
-|------------------------------|----------------------------|---------------------|
+|-|----------------------------|-|
 |Pasta raiz do projeto|Usado na implantação do projeto de suplemento. Incluído no projeto para facilitar a edição e tem o caminho local para a implantação de XCopy-style.|
 |Pasta do suplemento|Usado para executar o suplemento no ambiente de depuração. Ela deve sempre apontar para o caminho de saída da configuração da compilação atual.|
 

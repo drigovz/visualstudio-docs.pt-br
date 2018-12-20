@@ -1,7 +1,7 @@
 ---
 title: Plug-ins de controle de origem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e633a504d0f7efd42db61723d7902fbd6c38dec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7c51efc30251a177e07b7acf3e4c62821cb9488
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464756"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745449"
 ---
 # <a name="source-control-plug-ins"></a>Plug-ins de controle do código-fonte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Plug-ins de controle de origem](https://docs.microsoft.com/visualstudio/extensibility/source-control-plug-ins).  
-  
 A seção de referência do SDK de plug-in de controle do código-fonte contém a especificação de interface completa que permite que os sistemas de controle de origem sejam integrados [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Especifica a sintaxe e semântica das várias funções e tipos de dados que o plug-in de controle de origem deve implementar a interface com o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE).  
   
 ## <a name="in-this-section"></a>Nesta seção  

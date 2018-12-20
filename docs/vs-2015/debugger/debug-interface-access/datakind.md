@@ -1,7 +1,7 @@
 ---
 title: DataKind | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - DataKind enumeration
 ms.assetid: b64be708-22d6-4360-99e7-8f4e6b196de7
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25d560012ae51a039572cfc3bd7a53e10fb1175d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93c67b0199524072bf45558dc1713c760567495c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465423"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760464"
 ---
 # <a name="datakind"></a>DataKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DataKind](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/datakind).  
-  
 Indica o escopo específico de um valor de dados.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum DataKind {   
+enum DataKind {   
    DataIsUnknown,  
    DataIsLocal,  
    DataIsStaticLocal,  

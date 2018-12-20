@@ -1,7 +1,7 @@
 ---
 title: Modo de exibição de árvore de chamadas – Dados de instrumentação | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - Call Tree view
 ms.assetid: 306bd176-0ce9-4a10-89ca-20b043d37d4e
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54360ded2c3e758658969484515e06e50b86b45e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 630f75468adf5995eb887ac5f73d82462bfe32a4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466155"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786232"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Modo de exibição de árvore de chamadas – Dados de instrumentação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [chamar de exibição de árvore – dados de instrumentação](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-instrumentation-data).  
-  
 Os valores para uma função na árvore de chamadas indicam a hora para as instâncias de função chamadas pela função pai na árvore de chamadas. Valores de percentual são calculados comparando o valor das instâncias de função com o tempo inclusivo decorrido total de todas as funções na execução de criação de perfil.  
   
 ## <a name="general"></a>Geral  

@@ -1,7 +1,7 @@
 ---
 title: 'Área de teste 5: Alterar controle do código-fonte | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,33 +16,31 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5aab46b6a87f6178219075ac64951be3b76fd7a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d117d3ad85d46bfeeb896892508ba90efb33e702
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466849"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746596"
 ---
 # <a name="test-area-5-change-source-control"></a>Área de teste 5: alterar o controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [5 da área de teste: Alterar controle do código-fonte](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-5-change-source-control).  
-  
 Essa área de plug-in de teste de controle de origem aborda alterando o controle do código-fonte por meio de **alterar controle do código-fonte** comando.  
   
  **Alterar controle do código-fonte** comando fornece quatro funções básicas para o usuário:  
   
--   **Associe:**  
+- **Associe:**  
   
-     Permite que um usuário estabelecer ou restabelecer um link de controle do código-fonte entre uma solução/projeto e o armazenamento de versão.  
+   Permite que um usuário estabelecer ou restabelecer um link de controle do código-fonte entre uma solução/projeto e o armazenamento de versão.  
   
--   **Desassocie:**  
+- **Desassocie:**  
   
-     Remove uma projeto/solução de controle de origem em uma base por conexão.  
+   Remove uma projeto/solução de controle de origem em uma base por conexão.  
   
--   **Conectar/Desconecte:**  
+- **Conectar/Desconecte:**  
   
- Alterna o estado conectado ou offline da solução controlada, que é abordado na área de 3. Para obter mais informações, consulte [área de teste 3: Fazer Check-Out / desfazer check-out](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Alterna o estado conectado ou offline da solução controlada, que é abordado na área de 3. Para obter mais informações, consulte [área de teste 3: Fazer Check-Out / desfazer check-out](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
   
 ## <a name="command-menu-access"></a>Acesso ao Menu de comando  
  O seguinte [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] caminho de menu de ambiente de desenvolvimento integrado é usado nos casos de teste.  

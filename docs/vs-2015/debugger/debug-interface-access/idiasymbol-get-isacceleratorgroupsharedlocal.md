@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_isAcceleratorGroupSharedLocal | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ dev_langs:
 - C++
 ms.assetid: 17a20542-5b45-478f-bb80-0d56031aadb5
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d8c40b0c28ce99d009a46aa02893dde2f5956c2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86302d087244ea3ac5a1cb3387579d2331208f85
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472640"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769893"
 ---
 # <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSymbol::get_isAcceleratorGroupSharedLocal](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-isacceleratorgroupsharedlocal).  
-  
 Recupera um sinalizador que indica se o símbolo corresponde a uma variável local de grupo compartilhados no código compilado para um acelerador do C++ AMP.  
   
 ## <a name="syntax"></a>Sintaxe  

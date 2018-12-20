@@ -1,7 +1,7 @@
 ---
 title: Opções, Editor de Texto, Geral | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -53,18 +53,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3288ead8d962499311c557adcd428b8fa18036de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47fb93aebeecf50ae20616fc47033be60724cd45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473637"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257823"
 ---
 # <a name="options-text-editor-general"></a>Opções, Editor de Texto, Geral
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [opções, Editor de texto, geral](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-general).  
-  
   
 Essa caixa de diálogo permite alterar as configurações globais para o Editor de Texto e Código do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para exibir essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda a pasta **Editor de Texto** e clique em **Geral**.  
   

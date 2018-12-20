@@ -1,7 +1,7 @@
 ---
 title: IDebugEngineLaunch2::LaunchSuspended | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8fe234359d864f5df3ae568b8f3ec0c55c0ee9ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ec15be6da5d20fc743c1a2655eb2d67d8247ccc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473655"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768365"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugEngineLaunch2::LaunchSuspended](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugenginelaunch2-launchsuspended).  
-  
 Esse método inicia um processo por meio do mecanismo de depuração (DES).  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT LaunchSuspended (   
+HRESULT LaunchSuspended (   
    LPCOLESTR             pszMachine,  
    IDebugPort2*          pPort,  
    LPCOLESTR             pszExe,  

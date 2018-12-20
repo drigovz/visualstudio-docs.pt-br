@@ -1,5 +1,5 @@
 ---
-title: Esperado &#39; @&#39; | Microsoft Docs
+title: Esperado &#39;@&#39; | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f007129aa8da3ac49112fbc83b7abd31e4356c4f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633066"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856841"
 ---
-# <a name="expected-3939"></a>Esperado &#39; @&#39;
-Você tentou criar uma variável a ser usado com instruções de compilação condicional usando o `@set` instrução, mas não colocou um sinal de arroba "**@**" antes do nome da variável.  
+# <a name="expected-3939"></a>Esperado &#39;@&#39;
+Você tentou criar uma variável a ser usada com instruções de compilação condicional usando o `@set` instrução, mas não colocou um sinal de arroba "**@**" antes do nome da variável.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
@@ -39,6 +39,6 @@ Você tentou criar uma variável a ser usado com instruções de compilação co
     ```  
   
 ## <a name="see-also"></a>Consulte também  
- [@setInstrução](../../javascript/reference/at-set-statement-javascript.md)   
+ [@set Instrução](../../javascript/reference/at-set-statement-javascript.md)   
  [Compilação condicional](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variáveis de compilação condicional](../../javascript/advanced/conditional-compilation-variables-javascript.md)

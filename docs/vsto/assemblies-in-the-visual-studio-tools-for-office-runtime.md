@@ -1,5 +1,6 @@
 ---
 title: Assemblies no Visual Studio Tools para Office runtime
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f4e486ad1e19a85bc0f7c64a56db9303bb70960
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 66ee95d4f102ac4206a9ed55a1fc97fc251c4f9c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670720"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248105"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Assemblies no Visual Studio Tools para Office runtime
   Quando você cria um projeto do Office, o Visual Studio adiciona automaticamente referências para o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] assemblies que são usados para o tipo de projeto e o destino do .NET Framework do projeto. Há diferentes assemblies nas extensões do Office para o .NET Framework 3.5 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], e [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Para obter mais informações sobre as extensões do Office, consulte [Visual Studio Tools for Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
@@ -30,7 +31,7 @@ ms.locfileid: "35670720"
   
 |Nome do assembly|Descrição|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.dll|Fornece os seguintes tipos:<br /><br /> -Tipos para a criação de marcas inteligentes e personalizações da faixa de opções. **Observação:** marcas inteligentes foram preteridas no [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] e [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Tipos para a criação de painéis de ações em personalizações no nível de documento e painéis de tarefas personalizados no VSTO Add-Ins.|  
+|Microsoft.Office.Tools.Common.dll|Fornece os seguintes tipos:<br /><br /> -Tipos para a criação de marcas inteligentes e personalizações da faixa de opções. **Observação:**      As marcas inteligentes foram preteridas no [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] e [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Tipos para a criação de painéis de ações em personalizações no nível de documento e painéis de tarefas personalizados no VSTO Add-Ins.|  
 |Microsoft.Office.Tools.Excel.dll|Fornece interfaces que representam itens de host e controles de host para projetos do Excel e tipos de suporte. Para obter mais informações, consulte [automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.Outlook.dll|Fornece tipos que você pode usar para criar regiões de formulário personalizadas nos suplementos do VSTO do Outlook.|  
 |Microsoft.Office.Tools.Word.dll|Fornece interfaces que representam itens de host e controles de host para projetos do Word e tipos de suporte. Para obter mais informações, consulte [automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md).|  
@@ -53,13 +54,13 @@ ms.locfileid: "35670720"
   
 |Nome do assembly|Descrição|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.v9.0.dll|Fornece os seguintes tipos:<br /><br /> -A classe base Microsoft.Office.Tools.AddIn para suplementos do VSTO.<br />-Classes para criar personalizações da faixa de opções e marcas inteligentes. **Observação:** marcas inteligentes foram preteridas no [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] e [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Classes para criar painéis de ações em personalizações no nível de documento e painéis de tarefas personalizados nos suplementos do VSTO.|  
+|Microsoft.Office.Tools.Common.v9.0.dll|Fornece os seguintes tipos:<br /><br /> -A classe base Microsoft.Office.Tools.AddIn para suplementos do VSTO.<br />-Classes para criar personalizações da faixa de opções e marcas inteligentes. **Observação:**      As marcas inteligentes foram preteridas no [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] e [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Classes para criar painéis de ações em personalizações no nível de documento e painéis de tarefas personalizados nos suplementos do VSTO.|  
 |Microsoft.Office.Tools.Excel.v9.0.dll|Fornece os itens de host e controles de host para soluções do Excel. Para obter mais informações, consulte [automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.Outlook.v9.0.dll|Fornece classes que você pode usar para criar regiões de formulário personalizadas nos suplementos do VSTO do Outlook.|  
 |Microsoft.Office.Tools.Word.v9.0.dll|Fornece os itens de host e controles de host para soluções do Word. Para obter mais informações, consulte [automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.v9.0.dll|Fornece os seguintes tipos:<br /><br /> -A [RemoteBindableComponent](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb546360(v=vs.90)) classe, que fornece os recursos de associação de dados para hospedar controles em nível de documento personalizações.<br />-Outros tipos que fazem parte do Visual Studio Tools para infraestrutura de tempo de execução do Office e não se destina a ser usado diretamente do seu código.|  
 |Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0.dll|Fornece os seguintes tipos:<br /><br /> -A <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atributo e <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType> interface, que você pode usar para objetos de cache de dados em uma personalização no nível de documento. Para obter mais informações, consulte [armazenar em Cache dados](../vsto/caching-data.md).<br />-As exceções que podem ser lançadas pelo Visual Studio Tools for Office runtime.<br />-Outros tipos que fazem parte do Visual Studio Tools para infraestrutura de tempo de execução do Office e não se destina a ser usado diretamente do seu código.|  
-|Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|Fornece o <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction> interface, que você pode implementar para executar etapas de instalação adicionais como a etapa final do instalador do ClickOnce para uma solução do Office. Para obter mais informações, consulte [implantação de solução do Office avançada](http://msdn.microsoft.com/9147b6f6-849f-4cb1-b2c5-e22658d74b02).|  
+|Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|Fornece o <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction> interface, que você pode implementar para executar etapas de instalação adicionais como a etapa final do instalador do ClickOnce para uma solução do Office. Para obter mais informações, consulte [implantação de solução do Office avançada](/previous-versions/visualstudio/visual-studio-2010/dd234217(v=vs.100)).|  
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|Fornece os seguintes tipos:<br /><br /> -A <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe, que você pode usar para anexar programaticamente os assemblies de personalização a documentos e acessar os dados armazenados em cache em documentos. Para obter mais informações, consulte [gerenciar documentos em um servidor usando a classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md).<br />-Várias classes que representam a hierarquia dos dados em uma personalização no nível de documento armazenados em cache. Para obter mais informações, consulte [acessar dados em documentos no servidor](../vsto/accessing-data-in-documents-on-the-server.md).|  
 |Microsoft.VisualStudio.Tools.Office.Runtime.v10.0.dll|Fornece os seguintes tipos:<br /><br /> -As classes Microsoft.VisualStudio.Tools.Office.Runtime.Security.AddInSecurityEntry e Microsoft.VisualStudio.Tools.Office.Runtime.Security.UserInclusionList, que você pode usar para criar entradas de lista para conceder confiança ao escritório de inclusão de usuário soluções que direcionam o .NET Framework 3.5.<br />-Outros tipos que fazem parte do Visual Studio Tools para infraestrutura de tempo de execução do Office e não se destina a ser usado diretamente do seu código.|  
   

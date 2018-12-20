@@ -1,7 +1,7 @@
 ---
 title: Estender outras partes do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b2cdcde6115f78eb9d2e43edaa6fe238b0963dc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8cb19b71e80a020224c6898395070db739e144e7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472814"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742888"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>Estendendo outras partes do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [estender outras partes do Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/extending-other-parts-of-visual-studio).  
-  
 Há muitas partes mais da IU do Visual Studio que você pode estender. Aqui, mostramos apenas alguns.  
   
 ## <a name="creating-a-vspackage"></a>Criar um VSPackage  

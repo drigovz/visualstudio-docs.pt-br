@@ -1,7 +1,7 @@
 ---
 title: Variante de dimensões de textura de metade / um quarto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f42a6786fc378379ca446b704ac8159b8979bf08
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ef44ff579fbd96026fcd7c285b173ad19317275
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475556"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805977"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante de metade/um quarto nas dimensões de textura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [variantes de dimensões de textura de metade / um quarto](https://docs.microsoft.com/visualstudio/debugger/graphics/half-quarter-texture-dimensions-variant).  
-  
 Reduz as dimensões de textura nas texturas que não são destinos de renderização.  
   
 ## <a name="interpretation"></a>Interpretação  
@@ -40,15 +38,15 @@ Reduz as dimensões de textura nas texturas que não são destinos de renderiza�
 ## <a name="remarks"></a>Comentários  
  As dimensões da textura são reduzidas em cada chamada a `ID3D11Device::CreateTexture2D`, que cria uma textura de origem. As dimensões da textura são reduzidas especificamente quando o objeto D3D11_TEXTURE2D_DESC transferido em `pDesc` descreve uma textura usada na renderização; ou seja:  
   
--   O membro BindFlags tem apenas o sinalizador D3D11_BIND_SHADER_RESOURCE definido.  
+- O membro BindFlags tem apenas o sinalizador D3D11_BIND_SHADER_RESOURCE definido.  
   
--   O membro MiscFlags não possui o sinalizador D3D11_RESOURCE_MISC_TILE_POOL ou o conjunto de sinalizadores D3D11_RESOURCE_MISC_TILED (recursos lado a lado não são redimensionados).  
+- O membro MiscFlags não possui o sinalizador D3D11_RESOURCE_MISC_TILE_POOL ou o conjunto de sinalizadores D3D11_RESOURCE_MISC_TILED (recursos lado a lado não são redimensionados).  
   
--   O formato de textura tem suporte como destino de renderização, como determinado por D3D11_FORMAT_SUPPORT_RENDER_TARGET, que é necessário para reduzir o tamanho da textura. Os formatos BC1, BC2 e BC3 também têm suporte, embora não como destinos de renderização.  
+- O formato de textura tem suporte como destino de renderização, como determinado por D3D11_FORMAT_SUPPORT_RENDER_TARGET, que é necessário para reduzir o tamanho da textura. Os formatos BC1, BC2 e BC3 também têm suporte, embora não como destinos de renderização.  
   
- Se forem fornecidos dados iniciais pelo aplicativo, essa variante escala os dados da textura para o tamanho adequado antes de criar a textura. Se forem fornecidos dados iniciais em um formato compactado de bloco, somo BC1, BC2 ou BC3, eles são decodificados, escalados e codificados novamente antes de serem usados para criar a textura menor. (A natureza da compactação baseada em blocos significa que o processo de decodificação, escala e codificação extra quase sempre resulta em qualidade inferior da imagem do que quando uma textura compactada em bloco é gerada de uma versão escalada da textura, que não havia sido codificada anteriormente.)  
+  Se forem fornecidos dados iniciais pelo aplicativo, essa variante escala os dados da textura para o tamanho adequado antes de criar a textura. Se forem fornecidos dados iniciais em um formato compactado de bloco, somo BC1, BC2 ou BC3, eles são decodificados, escalados e codificados novamente antes de serem usados para criar a textura menor. (A natureza da compactação baseada em blocos significa que o processo de decodificação, escala e codificação extra quase sempre resulta em qualidade inferior da imagem do que quando uma textura compactada em bloco é gerada de uma versão escalada da textura, que não havia sido codificada anteriormente.)  
   
- Se mapas de mip forem habilitados para a textura, a variante reduz o número de nível de mip de maneira equivalente; um a menos ao redimensionar para a metade ou dois a menos ao redimensionar para um quarto.  
+  Se mapas de mip forem habilitados para a textura, a variante reduz o número de nível de mip de maneira equivalente; um a menos ao redimensionar para a metade ou dois a menos ao redimensionar para um quarto.  
   
 ## <a name="example"></a>Exemplo  
  Essa variante redimensiona as texturas no tempo de execução antes da chamada para `CreateTexture2D`. Não recomendamos essa abordagem para códigos de produção, pois as texturas em tamanho integral consomem mais espaço em disco e a etapa adicional pode aumentar o tempo de carregamento no aplicativo, especialmente no caso de texturas compactadas, que requerem recursos computacionais significativos para codificação. Ao invés disso, recomendamos que você redimensione as texturas offline usando um editor de imagens ou um processador de imagem que faça parte do seu pipeline de compilação. Essas abordagens reduzem os requisitos de espaço em disco e eliminam a sobrecarga do tempo de execução no aplicativo, além de oferecer mais tempo de processamento para que seja possível manter a melhor qualidade de imagem ao reduzir ou compactar as texturas.  

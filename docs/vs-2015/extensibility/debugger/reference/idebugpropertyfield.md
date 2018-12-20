@@ -1,7 +1,7 @@
 ---
 title: IDebugPropertyField | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: b50edb2c-fb8d-4def-993d-17d23d2027c1
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 05d852e4de0632b5af48348936eb3e6ef710b2b4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98b0ae028ac06d4922a351b8e34a25fd41453ea4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467538"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732254"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPropertyField](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugpropertyfield).  
-  
 Essa interface fornece as funções que permitem obter e definir uma propriedade.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDebugPropertyField : IDebugContainerField  
+IDebugPropertyField : IDebugContainerField  
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  

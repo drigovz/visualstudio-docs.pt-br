@@ -1,7 +1,7 @@
 ---
 title: 'Idiainjectedsource:: Get_sourcecompression | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaInjectedSource::get_sourceCompression method
 ms.assetid: 854b142f-23a9-466c-bf7f-98e581d5abcd
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13447444db31cbfbbfd246f4706da97446fc2fdf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2c003f7bdad613b5994f2f0aaca665fe73a13d24
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464183"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761629"
 ---
 # <a name="idiainjectedsourcegetsourcecompression"></a>IDiaInjectedSource::get_sourceCompression
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiainjectedsource:: Get_sourcecompression](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiainjectedsource-get-sourcecompression).  
-  
 Recupera o indicador da compactação de fonte usado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_sourceCompression (   
+HRESULT get_sourceCompression (   
    DWORD* pRetVal  
 );  
 ```  

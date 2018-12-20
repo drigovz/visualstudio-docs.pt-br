@@ -1,7 +1,7 @@
 ---
 title: Elemento de cadeias de caracteres | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12e6b1cbc12e7b0deff97a239db08977ac38144c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5cc9adc4d13718fc9b0379c73b1892ba14e61d47
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467677"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789792"
 ---
 # <a name="strings-element"></a>Elemento Strings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [cadeias de caracteres de elemento](https://docs.microsoft.com/visualstudio/extensibility/strings-element).  
-  
 O elemento de cadeias de caracteres deve conter pelo menos um **ButtonText** elemento filho. Todos os outros elementos filho são opcionais. Caracteres de XML inválido, como '&' e ' <' devem ser codificados como entidades ('&amp;'e'&lt;' e assim por diante).  
   
  Um e comercial na cadeia de texto Especifica o atalho de teclado para o comando.  

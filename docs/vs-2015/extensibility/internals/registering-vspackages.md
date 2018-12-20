@@ -1,7 +1,7 @@
 ---
 title: Registrar VSPackages | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 79b9424e-7e9b-4fc8-9b9f-00212674573c
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1c826b61e4f6d2255be7b7fdad967bab0d8dea74
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 786522d32680a66aa0f74cf0111c3e98708cce91
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464232"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727884"
 ---
 # <a name="registering-vspackages"></a>Registrando VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [registrar VSPackages](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-vspackages).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se baseia em arquivos. pkgdef para descrever e localizar um VSPackage. Um arquivo. pkgdef contém todas as informações de registro caso contrário, seriam adicionadas ao registro do sistema. VSPackages gerenciados são registrados, adicionando atributos no código-fonte e, em seguida, executando o [utilitário CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md) no assembly resultante para gerar um arquivo. pkgdef.  
   
 ## <a name="in-this-section"></a>Nesta seção  

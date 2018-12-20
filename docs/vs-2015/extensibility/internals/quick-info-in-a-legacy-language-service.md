@@ -1,7 +1,7 @@
 ---
 title: Informações rápidas em um serviço de linguagem herdado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ba5d6d2c08d6b4d39efe9d662dda7a0e324cbf6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ff6f4a29d194aaa5c9b868fffa19947a7321c77
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460568"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797202"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Informações rápidas em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [informações rápidas em um serviço de linguagem herdado](https://docs.microsoft.com/visualstudio/extensibility/internals/quick-info-in-a-legacy-language-service).  
-  
 Informações rápidas do IntelliSense mostra informações sobre um identificador na fonte quando o usuário coloca o cursor no identificador e seleciona **informações rápidas** da **IntelliSense** menu ou se mantém o mouse cursor sobre o identificador. Isso faz com que uma dica de ferramenta seja exibida com informações sobre o identificador. Essas informações normalmente consistem no tipo de identificador. Quando o mecanismo de depuração está ativo, essas informações podem incluir o valor atual. O mecanismo de depuração fornece valores de expressão, enquanto o serviço de linguagem manipula somente identificadores.  
   
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações, consulte [instruções passo a passo: exibindo dicas de ferramenta de QuickInfo](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  

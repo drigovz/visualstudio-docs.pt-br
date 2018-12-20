@@ -1,26 +1,28 @@
----
-title: Tutorial – Saiba mais sobre Django no Visual Studio, etapa 5
+﻿---
+title: Tutorial Aprenda a usar o Django no Visual Studio, etapa 5, autenticação
+titleSuffix: ''
 description: Um passo a passo dos conceitos básicos do Django no contexto dos projetos do Visual Studio, especificamente os recursos de autenticação fornecidos pelos modelos Projeto Web do Django.
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 419c9f54d0c537d417034eb4375d6402951609bd
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 77cc7816a1a05e3b6a883416225717679dd5661b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626610"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064067"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Etapa 5: Autenticar usuários no Django
 
-**Etapa anterior: [Usar o modelo Projeto Web completo do Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**Etapa anterior: [Usar o modelo completo de Projeto Web do Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 Como a autenticação é uma necessidade comum dos aplicativos Web, o modelo "Projeto Web do Django" inclui um fluxo de autenticação básico. (O modelo "Pesquisa Projeto Web do Django" abordado na etapa 6 deste tutorial também inclui o mesmo fluxo.) Ao usar um dos modelos de projeto do Django, o Visual Studio inclui todos os módulos necessários para a autenticação em *settings.py* do projeto do Django.
 
@@ -152,24 +154,30 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
 
 1. Para verificar se o usuário autenticado está autorizado a acessar recursos específicos, você precisa recuperar as permissões específicas do usuário do banco de dados. Para obter mais informações, confira [Using the Django authentication system](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Usando o sistema de autenticação do Django) (documentos do Django).
 
-1. O superusuário ou o administrador, em particular, está autorizado a acessar as interfaces de administrador internas do Django usando as URLs relativas "/admin/" e "/admin/doc/". Para habilitar essas interfaces, abra o *urls.py* do projeto do Django e remova os comentários das seguintes entradas:
+1. O superusuário ou o administrador, em particular, está autorizado a acessar as interfaces de administrador internas do Django usando as URLs relativas "/admin/" e "/admin/doc/". Para habilitar essas interfaces, faça o seguinte:
 
-    ```python
-    from django.conf.urls import include
-    from django.contrib import admin
-    admin.autodiscover()
+    1. Instale o pacote Python docutils em seu ambiente. Uma boa maneira de fazer isso é adicionar "docutils" ao arquivo *requirements.txt* e, em seguida, no **Gerenciador de Soluções**, expandir o projeto, expandir o nó **Ambientes do Python** e, em seguida, clicar com o botão direito do mouse no ambiente que você está usando e selecionar **Instalar do requirements.txt**.
 
-    # ...
-    urlpatterns = [
+    1. Abra o projeto do Django *urls.py* e remova os comentários padrão das seguintes entradas:
+
+        ```python
+        from django.conf.urls import include
+        from django.contrib import admin
+        admin.autodiscover()
+
         # ...
-        url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-        url(r'^admin/', include(admin.site.urls)),
-    ]
-    ```
+        urlpatterns = [
+            # ...
+            url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+            url(r'^admin/', include(admin.site.urls)),
+        ]
+        ```
 
-    Quando você reiniciar o aplicativo, navegue até "/admin/" e "/admin/doc/" e execute tarefas, como criar contas de usuário adicionais.
+    1. No arquivo *settings.py* do projeto do Django, navegue até a coleção `INSTALLED_APPS` e adicione `'django.contrib.admindocs'`.
 
-    ![Interface de administrador do Django](media/django/step05-administrator-interface.png)
+    1. Quando você reiniciar o aplicativo, navegue até "/admin/" e "/admin/doc/" e execute tarefas, como criar contas de usuário adicionais.
+
+        ![Interface de administrador do Django](media/django/step05-administrator-interface.png)
 
 1. A parte final do fluxo de autenticação é fazer logoff. Como você pode ver em *loginpartial.html*, o link **Fazer logoff** apenas faz um POST para a URL relativa "/login", que é manipulada pela exibição interna `django.contrib.auth.views.logout`. Essa exibição não exibe nenhuma interface do usuário e apenas navega para a home page (conforme mostrado em *urls.py* para o padrão "^logout$"). Se você quiser exibir uma página de logoff, primeiro altere o padrão da URL conforme mostrado a seguir para adicionar uma propriedade "template_name" e remover a propriedade "next_page":
 
@@ -198,9 +206,9 @@ As etapas a seguir acionam o fluxo de autenticação e descrevem as partes envol
 
 1. Quando terminar, interrompa o servidor e, mais uma vez, confirme suas alterações no controle do código-fonte.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a> Pergunta: Qual é a finalidade da marcação {% csrf_token %} exibida nos elementos \<form\>?
+### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Pergunta: Qual é a finalidade da tag {% csrf_token %} exibida nos elementos \<form\>?
 
-Resposta: A marca `{% csrf_token %}` inclui a [proteção interna contra solicitações intersite forjadas (csrf)](https://docs.djangoproject.com/en/2.0/ref/csrf/) do Django (documentos do Django). Normalmente, essa marca é adicionada a qualquer elemento que envolva métodos de solicitação POST, PUT ou DELETE, como um formulário. Em seguida, a função de renderização de modelo (`render`) insere a proteção necessária.
+Resposta: A tag `{% csrf_token %}` inclui a [proteção interna contra CSRF (solicitação intersite forjada)](https://docs.djangoproject.com/en/2.0/ref/csrf/) do Django (documentação do Django). Normalmente, essa marca é adicionada a qualquer elemento que envolva métodos de solicitação POST, PUT ou DELETE, como um formulário. Em seguida, a função de renderização de modelo (`render`) insere a proteção necessária.
 
 ## <a name="next-steps"></a>Próximas etapas
 

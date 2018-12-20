@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0d2d7d14b1e87a584da9f789c5092373db5519d5
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d181891fb36645e4f246aa0c2238c12ea1dc4903
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327135"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296002"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Criar modelos de projeto do SharePoint para itens de projeto e modelos de item
   Quando você define um tipo de item de projeto personalizado do SharePoint, você pode associá-lo com um modelo de item ou um modelo de projeto. Essa associação permite que outros desenvolvedores a usar o item de projeto no Visual Studio. Você também pode criar um Assistente para o modelo.
@@ -42,19 +42,21 @@ ms.locfileid: "36327135"
 |Arquivo necessário|Descrição|
 |-------------------|-----------------|
 |Uma *. spdata* arquivo|Esse arquivo XML Especifica o conteúdo e o comportamento padrão do item de projeto. Esse arquivo deve ser incluído no modelo de item. Para obter mais informações sobre o conteúdo do *. spdata* arquivos, consulte [referência de esquema de item de projeto do SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md).|
-|Um *. vstemplate* arquivo.|Esse arquivo fornece o Visual Studio com as informações necessárias para exibir o modelo na **Adicionar Novo Item** caixa de diálogo e criar um item de projeto do modelo. Esse arquivo deve ser incluído no modelo de item. Para obter mais informações, consulte [arquivos de metadados de modelo do Visual Studio](http://msdn.microsoft.com/en-us/129d59b5-7f9c-4daf-9832-eaedb3c4c961).|
+|Um *. vstemplate* arquivo.|Esse arquivo fornece o Visual Studio com as informações necessárias para exibir o modelo na **Adicionar Novo Item** caixa de diálogo e criar um item de projeto do modelo. Esse arquivo deve ser incluído no modelo de item. Para obter mais informações, consulte [arquivos de metadados de modelo do Visual Studio](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\)).|
 |Um assembly de extensão do Visual Studio que implementa o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> interface.|Esse assembly define o comportamento de tempo de execução do item de projeto. Esse assembly deve ser incluído no pacote VSIX com o modelo de item. Para obter mais informações, consulte [definir tipos personalizados de item de projeto do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md) e [implantar extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).|
 
  A tabela a seguir lista alguns dos arquivos opcionais mais comuns que podem ser incluídos no modelo de item. Alguns tipos de itens de projeto podem exigir outros arquivos não listados aqui.
 
-|Arquivo opcional|Descrição|
-|-------------------|-----------------|
-|*Elements. XML*|Um *elemento Feature* arquivo. Esse arquivo define a interface do usuário e o comportamento da personalização que criou o item de projeto. Cada tipo de personalização, como instâncias de lista, tipos de conteúdo ou ações personalizadas, tem um esquema diferente que define o conteúdo desse arquivo. Para obter mais informações, consulte [bloco de construção: recursos](http://go.microsoft.com/fwlink/?LinkId=169183) e [esquemas de recurso](http://go.microsoft.com/fwlink/?LinkId=169192).|
-|*Schema. XML*|O arquivo de esquema para definições de lista. Para obter mais informações, consulte [bloco de construção: listas e bibliotecas de documentos](http://go.microsoft.com/fwlink/?LinkId=177792) e [Schema. XML](http://go.microsoft.com/fwlink/?LinkId=177793).|
-|*. WebPart*|Um *definição de Web Part* arquivo. Esse arquivo contém as configurações de propriedade para uma Web Part. Para obter mais informações, consulte [bloco de construção: Web Parts](http://go.microsoft.com/fwlink/?LinkId=177791).|
-|*. ascx*|Um arquivo de controle de usuário ASP.NET. Esse arquivo define a interface do usuário de uma Web Part Visual.|
-|*. aspx*|Um arquivo de página ASP.NET. Esse arquivo contém a marcação XML que define uma página de aplicativo.|
-|*. CS* ou *VB* arquivos|Esses arquivos de código definem o comportamento das personalizações do SharePoint que têm um modelo de programação que pode ser acessado do Visual c# ou código do Visual Basic, como páginas de aplicativos, Web parts e fluxos de trabalho.|
+
+| Arquivo opcional | Descrição |
+|----------------------| - |
+| *Elements. XML* | Um *elemento Feature* arquivo. Esse arquivo define a interface do usuário e o comportamento da personalização que criou o item de projeto. Cada tipo de personalização, como instâncias de lista, tipos de conteúdo ou ações personalizadas, tem um esquema diferente que define o conteúdo desse arquivo. Para obter mais informações, consulte [bloco de construção: recursos](http://go.microsoft.com/fwlink/?LinkId=169183) e [esquemas de recurso](http://go.microsoft.com/fwlink/?LinkId=169192). |
+| *Schema. XML* | O arquivo de esquema para definições de lista. Para obter mais informações, consulte [bloco de construção: listas e bibliotecas de documentos](http://go.microsoft.com/fwlink/?LinkId=177792) e [Schema. XML](http://go.microsoft.com/fwlink/?LinkId=177793). |
+| *. WebPart* | Um *definição de Web Part* arquivo. Esse arquivo contém as configurações de propriedade para uma Web Part. Para obter mais informações, consulte [bloco de construção: Web Parts](http://go.microsoft.com/fwlink/?LinkId=177791). |
+| *. ascx* | Um arquivo de controle de usuário ASP.NET. Esse arquivo define a interface do usuário de uma Web Part Visual. |
+| *. aspx* | Um arquivo de página ASP.NET. Esse arquivo contém a marcação XML que define uma página de aplicativo. |
+| *. CS* ou *VB* arquivos | Esses arquivos de código definem o comportamento das personalizações do SharePoint que têm um modelo de programação que pode ser acessado do Visual c# ou código do Visual Basic, como páginas de aplicativos, Web parts e fluxos de trabalho. |
+
 ## <a name="create-project-templates"></a>Criar modelos de projeto
  Quando você cria um modelo de projeto do SharePoint, há alguns arquivos que são sempre arquivos obrigatórios e opcionais que podem ser usados por determinados tipos de projetos. Normalmente, os projetos do SharePoint incluem pelo menos um item de projeto do SharePoint. No entanto, isso não é necessário. Por exemplo, você pode definir um modelo de projeto do SharePoint que se destina a ser usado apenas para implantar soluções do SharePoint criadas em outros projetos.
 
@@ -64,7 +66,7 @@ ms.locfileid: "36327135"
 
 |Arquivo necessário|Descrição|
 |-------------------|-----------------|
-|Um *. vstemplate* arquivo|Esse arquivo fornece o Visual Studio com as informações necessárias para exibir o modelo na **novo projeto** caixa de diálogo e criar um projeto do modelo. Para obter mais informações, consulte [arquivos de metadados de modelo do Visual Studio](http://msdn.microsoft.com/en-us/129d59b5-7f9c-4daf-9832-eaedb3c4c961).|
+|Um *. vstemplate* arquivo|Esse arquivo fornece o Visual Studio com as informações necessárias para exibir o modelo na **novo projeto** caixa de diálogo e criar um projeto do modelo. Para obter mais informações, consulte [arquivos de metadados de modelo do Visual Studio](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\)).|
 |Um *. csproj* ou *. vbproj* arquivo|Esse é o arquivo de projeto. Ele define o conteúdo e definições de configuração do projeto.|
 |*Pacote*|Esse arquivo define o pacote de implantação para o projeto. Quando você usa o Designer de pacote para personalizar o pacote de solução para seu projeto, o Visual Studio armazena dados sobre o pacote de solução nesse arquivo.<br /><br /> Quando você cria um modelo de projeto personalizado do SharePoint, é recomendável que você inclua somente o conteúdo mínimo necessário na *pacote* arquivo e que você configure o pacote de solução usando as APIs no <xref:Microsoft.VisualStudio.SharePoint.Packages> namespace em uma extensão que está associado com o modelo de projeto. Se você fizer isso, o modelo de projeto está protegido contra alterações futuras para a estrutura do *pacote* arquivo. Para obter um exemplo que demonstra como criar uma *pacote* conteúdo do arquivo com apenas o mínimo necessário, consulte [passo a passo: criar um item de projeto da coluna de site com um modelo de projeto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Se você quiser modificar a *pacote* diretamente do arquivo, você poderá verificar o conteúdo usando o esquema em *% arquivos de programas (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\PackageModelSchema.xsd* .|
 |*Package.Template.xml*|Esse arquivo fornece a base para o arquivo de manifesto da solução (*manifest. XML*) para o pacote de solução do SharePoint (*wsp*) que é gerado a partir do projeto. Você pode adicionar conteúdo a esse arquivo, se você quiser especificar um comportamento que não se destina a ser alterado pelos usuários do seu tipo de projeto. Para obter mais informações, consulte [bloco de construção: soluções](http://go.microsoft.com/fwlink/?LinkId=169186) e [solução esquema](http://go.microsoft.com/fwlink/?LinkId=177794).<br /><br /> Quando você compila um pacote de solução do projeto, o Visual Studio mescla o conteúdo do *pacote* e o *Package.Template.xml* arquivo de manifesto de arquivos na solução. Para obter mais informações sobre a criação de pacotes de soluções, consulte [como: criar um pacote de solução do SharePoint usando tarefas do MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|

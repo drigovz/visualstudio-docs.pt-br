@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: b10635c1aefedf7af83a1c884717b80b442e8998
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542501"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219907"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnosticar problemas após a implantação usando o IntelliTrace
 
@@ -44,7 +44,7 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
 
 Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em seguida, removido. Para depurar aplicativos web ASP.NET após a implantação, use um dos seguintes métodos:
 
-* Para implantação no Azure, use [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/).
+* Para implantação no Azure, use [Application Insights](https://docs.microsoft.com/azure/application-insights/).
 
 * Se você precisar usar o IntelliTrace, abra o projeto no Visual Studio e carregar os arquivos de símbolo de compilação correspondente. Você pode carregar arquivos de símbolo a **módulos** janela ou por meio da configuração de símbolos no **ferramentas** > **opções** > **depuração**   >  **Símbolos**.
 
@@ -178,11 +178,11 @@ Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em
 
      ![Abra a solução de log do IntelliTrace](../debugger/media/ffr_itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")
 
-     Se você já tem um espaço de trabalho mapeado para essa solução ou projeto, o Visual Studio seleciona esse espaço de trabalho para colocar o código-fonte encontrado.
+     Se você já tem um workspace mapeado para essa solução ou projeto, o Visual Studio seleciona esse workspace para colocar o código-fonte encontrado.
 
      ![Abrir do controle de origem para o espaço de trabalho mapeado](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")
 
-     Caso contrário, escolha outro espaço de trabalho ou crie um novo espaço de trabalho. O Visual Studio mapeará a ramificação inteira para esse espaço de trabalho.
+     Caso contrário, escolha outro workspace ou crie um novo workspace. O Visual Studio mapeará a ramificação inteira para esse workspace.
 
      ![Abrir do controle de origem &#45; criar novo espaço de trabalho](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")
 
@@ -264,103 +264,103 @@ Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em
 
 3.  Certifique-se de que o arquivo tem as informações necessárias:
 
--   **ProjectName**
+- **ProjectName**
 
-     O nome de seu projeto no Visual Studio. Por exemplo:
+   O nome de seu projeto no Visual Studio. Por exemplo:
+
+  ```xml
+  <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
+  ```
+
+- **SourceControl**
+
+- Informações sobre seu sistema de controle do código-fonte e as seguintes propriedades necessárias:
+
+  - **TFS**
+
+    - **{1&gt;projectcollectionuri&lt;1**: O URI para sua coleção de projeto e o Team Foundation Server
+
+    - **{1&gt;projectitemspec&lt;1**: O caminho para o arquivo de projeto do seu aplicativo (. csproj ou. vbproj)
+
+    - **{1&gt;projectversionspec&lt;1**: A versão do seu projeto
+
+      Por exemplo:
 
     ```xml
-    <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
+    <SourceControl type="TFS">
+       <TfsSourceControl>
+          <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>
+          <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>
+          <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>
+       </TfsSourceControl>
+    </SourceControl>
     ```
 
--   **SourceControl**
+  - **Git**
 
--   Informações sobre seu sistema de controle do código-fonte e as seguintes propriedades necessárias:
+    - **{1&gt;gitsourcecontrol&lt;1**: O local do **GitSourceControl** esquema
 
-    -   **TFS**
+    - **{1&gt;repositoryurl&lt;1**: O URI para seu Team Foundation Server, a coleção de projeto e o repositório Git
 
-        -   **{1&gt;projectcollectionuri&lt;1**: O URI para sua coleção de projeto e o Team Foundation Server
+    - **ProjectPath**: O caminho para o arquivo de projeto do seu aplicativo (. csproj ou. vbproj)
 
-        -   **{1&gt;projectitemspec&lt;1**: O caminho para o arquivo de projeto do seu aplicativo (. csproj ou. vbproj)
+    - **CommitId**: A id para a sua confirmação
 
-        -   **{1&gt;projectversionspec&lt;1**: A versão do seu projeto
+      Por exemplo:
 
-         Por exemplo:
+    ```xml
+    <SourceControl type="Git">
+       <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">
+          <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>
+          <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>
+          <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>
+       </GitSourceControl>
+    </SourceControl>
+    ```
 
-        ```xml
-        <SourceControl type="TFS">
-           <TfsSourceControl>
-              <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>
-              <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>
-              <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>
-           </TfsSourceControl>
-        </SourceControl>
-        ```
+- **Build**
 
-    -   **Git**
+   Informações sobre seu sistema de compilação, `"TeamBuild"` ou `"MSBuild"` e as seguintes propriedades necessárias:
 
-        -   **{1&gt;gitsourcecontrol&lt;1**: O local do **GitSourceControl** esquema
+  - **{1&gt;buildlabel&lt;1** (para TeamBuild): O nome da compilação e o número. Esse rótulo também é usado como o nome do evento de implantação. Para obter mais informações sobre números de compilação, consulte [Use números para dar nomes significativos a compilações concluídas de compilação](/azure/devops/pipelines/build/options?view=vsts).
 
-        -   **{1&gt;repositoryurl&lt;1**: O URI para seu Team Foundation Server, a coleção de projeto e o repositório Git
+  - **SymbolPath** (recomendado): A lista de URIs para os locais de símbolos (arquivo PDB) separados por ponto e vírgula. Esses URIs podem ser URLs ou UNCs (caminhos de rede). Isso facilita para o Visual Studio encontrar os símbolos correspondentes para ajudar com sua depuração.
 
-        -   **ProjectPath**: O caminho para o arquivo de projeto do seu aplicativo (. csproj ou. vbproj)
+  - **{1&gt;buildreporturl&lt;1** (para TeamBuild): O local do relatório de compilação no TFS
 
-        -   **CommitId**: A id para a sua confirmação
+  - **{1&gt;BuildID&lt;1** (para TeamBuild): O URI para a compilação detalhes no TFS. Esse URI também é usado como a ID do evento de implantação. Deve ser uma ID exclusiva caso não esteja usando o TeamBuild.
 
-         Por exemplo:
+  - **{1&gt;builtsolution&lt;1**: O caminho para o arquivo de solução que o Visual Studio usa para localizar e abrir a solução correspondente. Este é o conteúdo do **SolutionPath** propriedade do MsBuild.
 
-        ```xml
-        <SourceControl type="Git">
-           <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">
-              <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>
-              <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>
-              <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>
-           </GitSourceControl>
-        </SourceControl>
-        ```
+    Por exemplo:
 
--   **Build**
+  - **TFS**
 
-     Informações sobre seu sistema de compilação, `"TeamBuild"` ou `"MSBuild"` e as seguintes propriedades necessárias:
+    ```xml
+    <Build type="TeamBuild">
+       <MsBuild>
+          <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>
+          <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>
+          <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>
+          <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>
+          <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
+       </MsBuild>
+    </Build>
+    ```
 
-    -   **{1&gt;buildlabel&lt;1** (para TeamBuild): O nome da compilação e o número. Esse rótulo também é usado como o nome do evento de implantação. Para obter mais informações sobre números de compilação, consulte [Use números para dar nomes significativos a compilações concluídas de compilação](/azure/devops/pipelines/build/options?view=vsts).
+  - **Git**
 
-    -   **SymbolPath** (recomendado): A lista de URIs para os locais de símbolos (arquivo PDB) separados por ponto e vírgula. Esses URIs podem ser URLs ou UNCs (caminhos de rede). Isso facilita para o Visual Studio encontrar os símbolos correspondentes para ajudar com sua depuração.
-
-    -   **{1&gt;buildreporturl&lt;1** (para TeamBuild): O local do relatório de compilação no TFS
-
-    -   **{1&gt;BuildID&lt;1** (para TeamBuild): O URI para a compilação detalhes no TFS. Esse URI também é usado como a ID do evento de implantação. Deve ser uma ID exclusiva caso não esteja usando o TeamBuild.
-
-    -   **{1&gt;builtsolution&lt;1**: O caminho para o arquivo de solução que o Visual Studio usa para localizar e abrir a solução correspondente. Este é o conteúdo do **SolutionPath** propriedade do MsBuild.
-
-     Por exemplo:
-
-    -   **TFS**
-
-        ```xml
-        <Build type="TeamBuild">
-           <MsBuild>
-              <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>
-              <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>
-              <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>
-              <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>
-              <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
-           </MsBuild>
-        </Build>
-        ```
-
-    -   **Git**
-
-        ```xml
-        <Build type="MSBuild">
-           <MSBuild>
-              <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>
-              <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
-           </MSBuild>
-        </Build>
-        ```
+    ```xml
+    <Build type="MSBuild">
+       <MSBuild>
+          <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>
+          <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
+       </MSBuild>
+    </Build>
+    ```
 
 ####  <a name="IneligibleWorkspace"></a> P: por que o Visual Studio diz que meu espaço de trabalho selecionado é inelegível?
- **R:** espaço de trabalho selecionado não tem mapeamento entre a pasta de controle do código-fonte e uma pasta local. Para criar um mapeamento para esse espaço de trabalho, escolha **gerenciar**. Caso contrário, escolha um espaço de trabalho já mapeado ou crie um novo espaço de trabalho.
+ **R:** espaço de trabalho selecionado não tem mapeamento entre a pasta de controle do código-fonte e uma pasta local. Para criar um mapeamento para esse espaço de trabalho, escolha **gerenciar**. Caso contrário, escolha um workspace já mapeado ou crie um novo workspace.
 
  ![Abrir do controle de origem com nenhum espaço de trabalho mapeado](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
@@ -382,7 +382,7 @@ Visual Studio 2017 não inclui o *Buildinfo* arquivo, que foi substituído e, em
      ![Abrir do controle de origem &#45; migrado](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 ####  <a name="WhatWorkspace"></a> P: o que é um espaço de trabalho?
- **R:** sua [espaço de trabalho armazena uma cópia da fonte de](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) para que você possa desenvolver e testá-lo separadamente antes de verificação no seu trabalho. Se você ainda não tem um espaço de trabalho mapeado especificamente para a solução ou o projeto encontrado, o Visual Studio solicitará a escolha de um espaço de trabalho disponível ou a criação de um novo espaço de trabalho com o nome do computador como o nome padrão do espaço de trabalho.
+ **R:** sua [espaço de trabalho armazena uma cópia da fonte de](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) para que você possa desenvolver e testá-lo separadamente antes de verificação no seu trabalho. Se você ainda não tem um workspace mapeado especificamente para a solução ou o projeto encontrado, o Visual Studio solicitará a escolha de um workspace disponível ou a criação de um novo workspace com o nome do computador como o nome padrão do workspace.
 
 ####  <a name="UntrustedSymbols"></a> P: por que eu recebo essa mensagem sobre símbolos não confiáveis?
  ![Depurar com o caminho de símbolos não confiáveis? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")

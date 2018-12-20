@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Exibindo dicas de ferramenta de QuickInfo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,33 +15,31 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b13dce0ea4f2bb54c802b63fd19f74b8173e94d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cd0e331536c194acdde95bdd74e5f41668a23e1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467670"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806273"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Passo a passo: exibindo dicas de ferramenta de InformaçãoRápida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: exibindo dicas de ferramenta de QuickInfo](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-quickinfo-tooltips).  
-  
 QuickInfo é um recurso IntelliSense, que exibe as assinaturas de método e descrições de quando um usuário move o ponteiro sobre um nome de método. Você pode implementar recursos de baseada na linguagem, como QuickInfo definindo os identificadores para o qual você deseja fornecer descrições de QuickInfo e, em seguida, criando uma dica de ferramenta para exibir o conteúdo. Você pode definir QuickInfo no contexto de um serviço de linguagem, ou você pode definir seu próprio tipo de conteúdo e a extensão de nome do arquivo e exibir o QuickInfo para apenas esse tipo, ou você pode exibir QuickInfo para um tipo de conteúdo existente (como "texto"). Este passo a passo mostra como exibir QuickInfo para o tipo de conteúdo "text".  
   
  O exemplo de QuickInfo neste passo a passo exibe as dicas de ferramenta quando um usuário move o ponteiro sobre um nome de método. Esse design requer que você implementar esses quatro interfaces:  
   
--   interface de origem  
+- interface de origem  
   
--   interface de provedor de origem  
+- interface de provedor de origem  
   
--   interface do controlador  
+- interface do controlador  
   
--   interface de provedor do controlador  
+- interface de provedor do controlador  
   
- Os provedores de origem e o controlador são partes do componente Managed Extensibility Framework (MEF) e serão responsáveis pela exportação as classes de origem e o controlador e importação de serviços e os agentes, como o <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, que cria o texto de dica de ferramenta buffer e o <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, que dispara a sessão de QuickInfo.  
+  Os provedores de origem e o controlador são partes do componente Managed Extensibility Framework (MEF) e serão responsáveis pela exportação as classes de origem e o controlador e importação de serviços e os agentes, como o <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, que cria o texto de dica de ferramenta buffer e o <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, que dispara a sessão de QuickInfo.  
   
- Neste exemplo, a fonte de QuickInfo usa uma lista de embutido em código do método nomes e descrições, mas em implementações completas, o serviço de linguagem e a documentação da linguagem são responsáveis por fornecer esse conteúdo.  
+  Neste exemplo, a fonte de QuickInfo usa uma lista de embutido em código do método nomes e descrições, mas em implementações completas, o serviço de linguagem e a documentação da linguagem são responsáveis por fornecer esse conteúdo.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  

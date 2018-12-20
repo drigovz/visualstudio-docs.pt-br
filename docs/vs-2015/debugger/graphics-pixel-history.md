@@ -1,7 +1,7 @@
 ---
 title: Histórico de Pixel de gráficos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ f1_keywords:
 - vs.graphics.pixelhistory
 ms.assetid: 0a2cbde5-1ad9-487e-857c-a3664158c268
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b37dab129c5eb19825746177cb30a5e20493399
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20b33c987cf7e2b1ab57160b4f4917246d9030b6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466334"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733158"
 ---
 # <a name="graphics-pixel-history"></a>Histórico de pixel gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [histórico de Pixel de gráficos](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-pixel-history).  
-  
 A janela de histórico de Pixel de gráficos no analisador de gráficos do Visual Studio ajuda a entender como um pixel específico é afetado pelos eventos Direct3D que ocorrem durante um quadro do seu jogo ou aplicativo.  
   
  Esta é a janela de histórico de Pixel:  

@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttribute::GetName | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: ba509cc5-5816-4925-a094-4c72d88c360c
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5b2ffd2c4159962369fb2883321015065421bce1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a5c7b33b0bcfdc9a7211b94b40a50d111c68edd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465755"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803182"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugCustomAttribute::GetName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcustomattribute-getname).  
-  
 Obtém o nome do atributo personalizado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetName(   
+HRESULT GetName(   
    BSTR* bstrName  
 );  
 ```  

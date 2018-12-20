@@ -1,5 +1,5 @@
 ---
-title: Isolando código em teste com falsificações da Microsoft no Visual Studio
+title: Isolando código em teste com falsificação da Microsoft
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 685927147d2b2ce45c450b46eea6070cc77c5aad
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 0ca26ca155f14ada97e432aea044166fbe32eee7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380623"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067149"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolar o código em teste com elementos fictícios da Microsoft
 
@@ -163,7 +163,6 @@ Suponhamos que seu componente contenha chamadas para `DateTime.Now`:
     {
        return DateTime.Now.Year;
     }
-
 ```
 
 Durante os testes, você gostaria de corrigir a propriedade `Now`, porque a versão real retorna inconvenientemente um valor diferente em cada chamada.

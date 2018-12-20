@@ -1,7 +1,7 @@
 ---
 title: Elemento VSIXLanguagePack (esquema de pacote de idiomas do VSIX) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 767f5c22-8b87-49ca-92aa-a7a3f026469f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf8e55e38ecf16577482955c30ea95c5a5980087
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 556b701f0a1dbc348fef53273379586f7a0dba2c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466712"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744179"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>Elemento VSIXLanguagePack (esquema de pacote de idiomas do VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento VSIXLanguagePack (esquema de pacote de idiomas do VSIX)](https://docs.microsoft.com/visualstudio/extensibility/vsixlanguagepack-element-vsix-language-pack-schema).  
-  
 Necessário. Fornece o elemento raiz para um pacote de idiomas do VSIX. O pacote de idiomas do VSIX fornece informações de instalação localizada para um pacote VSIX.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -70,12 +68,12 @@ Necessário. Fornece o elemento raiz para um pacote de idiomas do VSIX. O pacote
   
 ## <a name="element-information"></a>Informações do elemento  
   
-|||  
-|-|-|  
-|Namespace|http://schemas.microsoft.com/developer/vsx-schema-lp/2010|  
-|Nome do esquema|Esquema de pacote de idiomas do VSIX|  
-|Arquivo de validação|VSIXLanguagePackSchema.xsd|  
-|Pode ser vazio|Não|  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Namespace    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
+|   Nome do esquema   |                 Esquema de pacote de idiomas do VSIX                 |
+| Arquivo de validação |                VSIXLanguagePackSchema.xsd                 |
+|  Pode ser vazio   |                            Não                             |
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema do pacote de idioma VSX](../extensibility/vsx-language-pack-schema-reference.md)   

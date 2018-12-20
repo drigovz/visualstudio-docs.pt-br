@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::LoadSymbolsFromStream | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1de272f0-24f4-4548-8b70-a205cddd4727
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d826e317d8001907b278dbb2cfa79223beb33422
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37dbc6c8c180b9fc9818905e7636c18ea0b7d154
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476013"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817042"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugComPlusSymbolProvider::LoadSymbolsFromStream](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcomplussymbolprovider-loadsymbolsfromstream).  
-  
 O fluxo de dados de símbolos de depuração de cargas.  
   
 ## <a name="syntax"></a>Sintaxe  

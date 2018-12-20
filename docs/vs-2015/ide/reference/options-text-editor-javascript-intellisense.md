@@ -1,7 +1,7 @@
 ---
 title: Opções, Editor de Texto, JavaScript, IntelliSense | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c681acc80b0646f3cb6f51435bf8358d12bf44b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6aa1f4027746ebf1304362217c16fffa7e68a75d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464466"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822405"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opções, Editor de Texto, JavaScript, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [opções, Editor de texto, JavaScript, IntelliSense](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-javascript-intellisense).  
-  
   
 Use a página **IntelliSense** da caixa de diálogo **Opções** para modificar as configurações que afetam o comportamento do IntelliSense para JavaScript. É possível acessar a página **IntelliSense** escolhendo **Ferramentas**, **Opções** na barra de menus e expandindo **Editor de Texto**, **JavaScript**, **IntelliSense.**  
   
@@ -70,16 +68,16 @@ Use a página **IntelliSense** da caixa de diálogo **Opções** para modificar 
   
  Você pode usar grupos de referência predefinidos para especificar se determinados arquivos .js do IntelliSense estão no escopo para diferentes projetos JavaScript. Quatro grupos de referência estão disponíveis:  
   
--   Implícitos (*versão* do Windows) para aplicativos [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] usando JavaScript. Os arquivos incluídos nesse grupo estão no escopo de cada arquivo .js aberto no Editor de Códigos para aplicativos da [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] usando JavaScript.  
+- Implícitos (*versão* do Windows) para aplicativos [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] usando JavaScript. Os arquivos incluídos nesse grupo estão no escopo de cada arquivo .js aberto no Editor de Códigos para aplicativos do [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] que usam JavaScript.  
   
--   Implícito (Web), para projetos HTML5. Os arquivos incluídos nesse grupo estão no escopo de cada arquivo .js aberto no Editor de Códigos para esses tipos de projeto.  
+- Implícito (Web), para projetos HTML5. Os arquivos incluídos nesse grupo estão no escopo de cada arquivo .js aberto no Editor de Códigos para esses tipos de projeto.  
   
--   Grupos de referência de atividade dedicada, para web workers HTML5. Os arquivos especificados nesse grupo estão no escopo de arquivos .js que têm uma referência explícita a um grupo de referência de atividade dedicada.  
+- Grupos de referência de atividade dedicada, para web workers HTML5. Os arquivos especificados nesse grupo estão no escopo de arquivos .js que têm uma referência explícita a um grupo de referência de atividade dedicada.  
   
--   Genérico, para outros tipos de projeto JavaScript.  
+- Genérico, para outros tipos de projeto JavaScript.  
   
- **Arquivos incluídos**  
- Essa opção especifica a ordem na qual os arquivos são carregados no contexto do serviço de linguagem. Você pode configurar a ordem usando os botões **Remover**, **Subir** e **Descer**. Para que o IntelliSense funcione corretamente, um arquivo que depende de outro deve ser carregado depois do outro arquivo.  
+  **Arquivos incluídos**  
+  Essa opção especifica a ordem na qual os arquivos são carregados no contexto do serviço de linguagem. Você pode configurar a ordem usando os botões **Remover**, **Subir** e **Descer**. Para que o IntelliSense funcione corretamente, um arquivo que depende de outro deve ser carregado depois do outro arquivo.  
   
 > [!CAUTION]
 >  Se um objeto for definido incondicionalmente em duas ou mais referências implícitas, a última referência nessa lista será usada para definir o objeto.  

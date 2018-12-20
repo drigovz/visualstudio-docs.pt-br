@@ -1,7 +1,7 @@
 ---
 title: Exibindo dados no depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,21 +25,19 @@ helpviewer_keywords:
 - debugger, viewing data
 ms.assetid: 13e1105f-f987-402e-9108-ec6ac12be042
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 048f1a531c9de81c8ba316449835b022e4393222
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5409f74a3e6be8f075155a2f87a35006209ea24
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460629"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793094"
 ---
 # <a name="viewing-data-in-the-debugger"></a>Exibindo dados no depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibindo dados no depurador](https://docs.microsoft.com/visualstudio/debugger/viewing-data-in-the-debugger).  
-  
 O depurador [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornece diversas ferramentas para inspecionar e alterar o estado do seu programa. A maioria dessas ferramentas funciona somente no modo de interrupção.  
   
 ## <a name="datatips"></a>DataTips  

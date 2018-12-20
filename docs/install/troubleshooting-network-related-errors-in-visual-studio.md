@@ -1,5 +1,5 @@
 ---
-title: Solução de erros relacionados à rede ao instalar ou usar o Visual Studio
+title: Solução de erros relacionados à rede ou ao proxy
 description: Encontre soluções para erros relacionados à rede ou ao proxy que você pode encontrar ao instalar ou usar o Visual Studio por trás de um firewall ou um servidor proxy.
 ms.custom: ''
 ms.date: 02/12/2018
@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d344682f948421bf6d02ff14d41fa26fec1c3f32
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281085"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047610"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Solução de erros relacionados à rede ao instalar ou usar o Visual Studio
 
@@ -55,27 +55,27 @@ Esse erro geralmente ocorre quando os usuários estão conectados à Internet po
 
 - Se você quiser usar suas credenciais padrão com o proxy, poderá realizar as seguintes ações:
 
-    1. Localize **devenv.exe.config** (o arquivo de configuração devenv.exe) em: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** ou em **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**.
+  1. Localize **devenv.exe.config** (o arquivo de configuração devenv.exe) em: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** ou em **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**.
 
-    1. No arquivo de configuração, localize o bloco `<system.net>` e adicione esse código:
+  2. No arquivo de configuração, localize o bloco `<system.net>` e adicione esse código:
 
-        ```xml
-        <defaultProxy enabled="true" useDefaultCredentials="true">
-            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
-        </defaultProxy>
-        ```
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
 
-        Você deve inserir o endereço de proxy correto para sua rede na `proxyaddress="<http://<yourproxy:port#>`.
+      Você deve inserir o endereço de proxy correto para sua rede na `proxyaddress="<http://<yourproxy:port#>`.
 
-    OU
+     OU
 
-- Você também pode seguir as instruções na postagem no blog [How to connect through an authenticated Web Proxy](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) (Como se conectar por meio de um Proxy Web autenticado), que mostra como adicionar código que permitirá que você use o proxy.
+- Você também pode seguir as instruções na postagem no blog [How to connect through an authenticated Web Proxy](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) (Como se conectar por meio de um Proxy Web autenticado), que mostra como adicionar código que permitirá que você use o proxy.
 
-## <a name="error-the-underlying-connection-was-closed"></a>Erro: “A conexão subjacente estava fechada”
+## <a name="error-the-underlying-connection-was-closed"></a>Erro: “A conexão subjacente foi fechada”
 
 Se você estiver usando o Visual Studio em uma rede privada que tem um firewall, o Visual Studio poderá não ser capaz de se conectar a alguns recursos da rede. Esses recursos podem incluir o Azure DevOps Services para conexão e licenciamento, o NuGet e os serviços do Azure. Se o Visual Studio falhar ao se conectar a um desses recursos, você deverá ver a seguinte mensagem de erro:
 
-  **A conexão subjacente estava fechada: Ocorreu um erro inesperado no envio**
+  **A conexão subjacente foi fechada: Erro inesperado no envio**
 
 O Visual Studio usa o TLS (protocolo TLS) 1.2 para se conectar aos recursos de rede. Os dispositivos de segurança de algumas redes privadas bloqueiam determinadas conexões de servidor quando o Visual Studio usa o protocolo TLS 1.2.
 
@@ -109,8 +109,8 @@ Habilite as conexões para as seguintes URLs:
 
 - &#42;.nuget.org (para conexões NuGet)
 
- > [!NOTE]
- > As URLs de servidor NuGet privadas podem não estar incluídas nesta lista. Você pode verificar os servidores NuGet que estamos usando em %APPData%\Nuget\NuGet.Config.
+  > [!NOTE]
+  > As URLs de servidor NuGet privadas podem não estar incluídas nesta lista. Você pode verificar os servidores NuGet que estamos usando em %APPData%\Nuget\NuGet.Config.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

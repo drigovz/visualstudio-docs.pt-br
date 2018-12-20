@@ -1,7 +1,7 @@
 ---
 title: Design os subtipos de projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b4d9f77f4ea1a302efb38bb75ebecd2ee54c1f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96ab44df6512b4288cf01f4c1f99d435a9c24bd5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463304"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806120"
 ---
 # <a name="project-subtypes-design"></a>Design de subtipos de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Design de subtipos de projeto](https://docs.microsoft.com/visualstudio/extensibility/internals/project-subtypes-design).  
-  
 Subtipos do projeto permitem que os VSPackages estender projetos com base no Microsoft Build Engine (MSBuild). O uso de agregação lhe permite reutilizar a maior parte do sistema de projeto core gerenciado implementado em [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ainda ainda personalizar o comportamento para um cenário específico.  
   
  Os tópicos a seguir detalham o design básico e a implementação de subtipos de projeto:  
@@ -40,17 +38,17 @@ Subtipos do projeto permitem que os VSPackages estender projetos com base no Mic
 ## <a name="project-subtype-design"></a>Design de subtipo de projeto  
  A inicialização de um subtipo de projeto é obtida ao agregar principal <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> objetos. Essa agregação permite que um subtipo de projeto substituir ou aumentar a maioria dos recursos do projeto base. Subtipos de projeto obtém a primeira oportunidade para lidar com as propriedades usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, comandos usando <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>e o gerenciamento de item de projeto usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. Também podem estender os subtipos de projeto:  
   
--   Objetos de configuração do projeto.  
+- Objetos de configuração do projeto.  
   
--   Objetos dependentes de configuração.  
+- Objetos dependentes de configuração.  
   
--   Objetos de configuração independente procurar.  
+- Objetos de configuração independente procurar.  
   
--   Objetos de automação do projeto.  
+- Objetos de automação do projeto.  
   
--   Coleções de propriedade de automação de projeto.  
+- Coleções de propriedade de automação de projeto.  
   
- Para obter mais informações sobre extensibilidade por subtipos do projeto, consulte [as propriedades e métodos estendidos por subtipos do projeto](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
+  Para obter mais informações sobre extensibilidade por subtipos do projeto, consulte [as propriedades e métodos estendidos por subtipos do projeto](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
   
 ##### <a name="policy-files"></a>Arquivos de política  
  O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente fornece um exemplo de estender o sistema de projeto base com um subtipo de projeto em sua implementação de arquivos de política. Um arquivo de política permite que a modelagem do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente por meio do gerenciamento de recursos que incluem o Gerenciador de soluções, **Add Project** caixa de diálogo **Adicionar Novo Item** caixa de diálogo e o  **Propriedades** caixa de diálogo. O subtipo de política substitui e aprimora esses recursos por meio <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>, `IOleCommandTarget` e <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> implementações.  

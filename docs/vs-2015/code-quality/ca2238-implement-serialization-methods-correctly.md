@@ -1,7 +1,7 @@
 ---
 title: 'CA2238: Implementar métodos de serialização corretamente | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 772127c7472d9b1204953493188ba405c252dbb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3222deaeac97df8b954853f21eaff40a8244d8ca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467655"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864270"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: implementar métodos de serialização corretamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,15 +45,15 @@ Para obter a documentação mais recente do Visual Studio 2017, consulte [CA2238
 ## <a name="rule-description"></a>Descrição da Regra  
  Um método é designado um manipulador de eventos de serialização, aplicando um dos seguintes atributos de evento de serialização:  
   
--   <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>  
+- <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>  
   
--   <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>  
+- <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>  
   
--   <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>  
+- <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>  
   
--   <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>  
+- <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>  
   
- Manipuladores de eventos de serialização usam um único parâmetro do tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, return `void`e ter `private` visibilidade.  
+  Manipuladores de eventos de serialização usam um único parâmetro do tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, return `void`e ter `private` visibilidade.  
   
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
  Para corrigir uma violação dessa regra, corrija a assinatura, o tipo de retorno ou a visibilidade do manipulador de eventos de serialização.  

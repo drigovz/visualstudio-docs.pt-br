@@ -1,7 +1,7 @@
 ---
 title: Atualização hierárquica | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ddef56f8ec38d73524db661b89e83c456bc50ce0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0176f203f7decb701d678a110856acdad36750b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462221"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220167"
 ---
 # <a name="hierarchical-update"></a>Atualização hierárquica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [atualização hierárquica](https://docs.microsoft.com/visualstudio/data-tools/hierarchical-update).  
-  
   
 Atualização hierárquica * refere-se ao processo de salvar dados atualizados (de um conjunto de dados com duas ou mais tabelas relacionadas) para um banco de dados, mantendo as regras de integridade referencial. *A integridade referencial* refere-se às regras de consistência fornecido pelas restrições em um banco de dados que controlam o comportamento de inserção, atualização e exclusão de registros relacionados. Por exemplo, é a integridade referencial que impõe a criação de um registro de cliente antes de permitir que os pedidos a ser criado para esse cliente.  Para obter mais informações sobre relacionamentos em conjuntos de dados, consulte [relacionamentos em conjuntos de dados](../data-tools/relationships-in-datasets.md)  
   
@@ -91,14 +89,14 @@ Atualização hierárquica * refere-se ao processo de salvar dados atualizados (
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Para atualizar o código para confirmar as alterações às tabelas relacionadas antes de salvar  
   
-1.  Clique duas vezes o **salve** botão a <xref:System.Windows.Forms.BindingNavigator> para abrir **Form1** no Editor de códigos.  
+1. Clique duas vezes o **salve** botão a <xref:System.Windows.Forms.BindingNavigator> para abrir **Form1** no Editor de códigos.  
   
-2.  Adicione uma linha de código para chamar o método `OrdersBindingSource.EndEdit` após a linha que chama o método `CustomersBindingSource.EndEdit`. O código a **salvar** clique de botão evento deve ser semelhante à seguinte:  
+2. Adicione uma linha de código para chamar o método `OrdersBindingSource.EndEdit` após a linha que chama o método `CustomersBindingSource.EndEdit`. O código a **salvar** clique de botão evento deve ser semelhante à seguinte:  
   
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
+    [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
+    [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
   
- Além de confirmar as alterações em uma tabela filho relacionada antes de salvar dados em um banco de dados, você também pode confirmar registros pais recém-criados antes de adicionar novos registros filhos a um conjunto de dados. Em outras palavras, pode ser necessário adicionar o novo registro pai (Cliente) para o conjunto de dados antes que as restrições de chave estrangeira permitam que novos registros filhos (Pedidos) sejam adicionados ao conjunto de dados. Para realizar isso, você pode usar o evento filho `BindingSource.AddingNew`.  
+   Além de confirmar as alterações em uma tabela filho relacionada antes de salvar dados em um banco de dados, você também pode confirmar registros pais recém-criados antes de adicionar novos registros filhos a um conjunto de dados. Em outras palavras, pode ser necessário adicionar o novo registro pai (Cliente) para o conjunto de dados antes que as restrições de chave estrangeira permitam que novos registros filhos (Pedidos) sejam adicionados ao conjunto de dados. Para realizar isso, você pode usar o evento filho `BindingSource.AddingNew`.  
   
 > [!NOTE]
 >  Se você precisa confirmar novos registros pais depende do tipo de controle que é usada para associar à fonte de dados. Neste passo a passo, você pode usar controles individuais para associar a tabela pai. Isso exige que o código adicional para confirmar o novo registro pai. Se os registros pai em vez disso, foram exibidos em um controle de vinculação complexa como o <xref:System.Windows.Forms.DataGridView>adicionais nesse <xref:System.Windows.Forms.BindingSource.EndEdit%2A> chamada para o registro pai não seria necessário. Isso porque a funcionalidade subjacente de associação de dados do controle processa a confirmação dos novos registros.  
@@ -107,7 +105,7 @@ Atualização hierárquica * refere-se ao processo de salvar dados atualizados (
   
 1.  Crie um manipulador de eventos para o evento `OrdersBindingSource.AddingNew`.  
   
-    -   Abra **Form1** no modo de design, selecione**OrdersBindingSource** na bandeja de componentes, selecione **eventos** no **propriedades** janela, e em seguida, clique duas vezes o **AddingNew** eventos.  
+    -   Abra **Form1** no modo de design, selecione **OrdersBindingSource** na bandeja de componentes, selecione **eventos** no **propriedades** janela, e em seguida, clique duas vezes o **AddingNew** eventos.  
   
 2.  Adicionar uma linha de código ao manipulador de eventos que chama o `CustomersBindingSource.EndEdit` método. O código no manipulador de eventos `OrdersBindingSource_AddingNew` deve ser semelhante ao seguinte:  
   

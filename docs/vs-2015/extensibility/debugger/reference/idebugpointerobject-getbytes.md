@@ -1,7 +1,7 @@
 ---
 title: IDebugPointerObject::GetBytes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3648c180b1bbd96c02c4f00276c0b90d6806b2e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 90b5548dc6963532947f151d4ca68ff81b5be24d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472815"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816431"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPointerObject::GetBytes](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugpointerobject-getbytes).  
-  
 Obtém o valor apontado como uma série de bytes consecutivos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetBytes(   
+HRESULT GetBytes(   
    DWORD  dwStart,  
    DWORD  dwCount,  
    BYTE*  pBytes,  

@@ -1,7 +1,7 @@
 ---
 title: IDebugReference2::SetValueAsString | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 9a508ced-fd54-44f5-bb42-ec15c80384d7
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 14bdde9d873ad0f2ab9003c06619d2391362521f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aec57f4348f14e972d22ed8644f8eae42713bc25
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466443"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757555"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugReference2::SetValueAsString](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugreference2-setvalueasstring).  
-  
 Define o valor de uma referência de uma cadeia de caracteres. Reservado para uso futuro.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT SetValueAsString (   
+HRESULT SetValueAsString (   
    LPCOLESTR pszValue,  
    DWORD     dwRadix,  
    DWORD     dwTimeout  
@@ -42,7 +40,7 @@ HRESULT SetValueAsString (
 ```  
   
 ```csharp  
-int SetValueAsString (   
+int SetValueAsString (   
    string pszValue,  
    uint   dwRadix,  
    uint   dwTimeout  

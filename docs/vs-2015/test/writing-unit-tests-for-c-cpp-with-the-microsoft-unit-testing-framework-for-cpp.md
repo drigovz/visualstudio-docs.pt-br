@@ -1,7 +1,7 @@
 ---
 title: Escrevendo testes de unidade para C-C++ com o Microsoft Unit Testing Framework para C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d4e5da38500e5fd35fb14e1854fe1fa378a8553c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 180f970f35ed0bb3de70ba3a7b7b47dbe656ddf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472686"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904031"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Escrevendo teste de unidade para C/C++ com o Microsoft Unit Testing Framework para C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [escrever testes de unidade para C/C++ com o Microsoft Unit Testing Framework para C++](https://docs.microsoft.com/visualstudio/test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp).  
-  
 No Visual Studio, você pode criar testes de unidade para código não gerenciado escrito em C++. O código não gerenciado é, às vezes, chamado de código nativo.  
   
  O procedimento a seguir contém as informações essenciais que servirão de introdução para você. As seções posteriores fornecem instruções passo a passo que descrevem as etapas com mais detalhes.  
@@ -189,53 +187,53 @@ No Visual Studio, você pode criar testes de unidade para código não gerenciad
   
 ###  <a name="coupleProjects"></a> Acoplar o projeto de teste ao projeto de DLL  
   
-1.  Adicione o projeto de DLL às referências de projeto do projeto de teste:  
+1. Adicione o projeto de DLL às referências de projeto do projeto de teste:  
   
-    1.  Abra as propriedades do projeto de teste e escolha **Propriedades Comuns**, **Estrutura e Referências**.  
+   1.  Abra as propriedades do projeto de teste e escolha **Propriedades Comuns**, **Estrutura e Referências**.  
   
-         ![Propriedades de projeto C&#43;&#43; &#45; Estrutura e Referências](../test/media/utecpp08.png "UteCpp08")  
+        ![Propriedades de projeto C&#43;&#43; &#45; Estrutura e Referências](../test/media/utecpp08.png "UteCpp08")  
   
-    2.  Escolha **Adicionar Nova Referência**.  
+   2.  Escolha **Adicionar Nova Referência**.  
   
-         Na caixa de diálogo **Adicionar Referência**, selecione o projeto de DLL e escolha **Adicionar**.  
+        Na caixa de diálogo **Adicionar Referência**, selecione o projeto de DLL e escolha **Adicionar**.  
   
-         ![Propriedades do projeto C&#43;&#43; &#45; Adicionar Nova Referência](../test/media/utecpp09.png "UteCpp09")  
+        ![Propriedades do projeto C&#43;&#43; &#45; Adicionar Nova Referência](../test/media/utecpp09.png "UteCpp09")  
   
-2.  No arquivo .cpp do teste de unidade da entidade de segurança, inclua o arquivo .h do código da DLL:  
+2. No arquivo .cpp do teste de unidade da entidade de segurança, inclua o arquivo .h do código da DLL:  
   
-    ```cpp  
-    #include "..\RootFinder\RootFinder.h"  
-    ```  
+   ```cpp  
+   #include "..\RootFinder\RootFinder.h"  
+   ```  
   
-3.  Adicione um teste básico que usa a função exportada:  
+3. Adicione um teste básico que usa a função exportada:  
   
-    ```cpp  
-    TEST_METHOD(BasicTest)  
-    {  
-    CRootFinder rooter;  
-    Assert::AreEqual(  
-    // Expected value:  
-    0.0,   
-    // Actual value:  
-    rooter.SquareRoot(0.0),   
-    // Tolerance:  
-    0.01,  
-    // Message:  
-    L"Basic test failed",  
-    // Line number - used if there is no PDB file:  
-    LINE_INFO());  
-    }  
-    ```  
+   ```cpp  
+   TEST_METHOD(BasicTest)  
+   {  
+   CRootFinder rooter;  
+   Assert::AreEqual(  
+   // Expected value:  
+   0.0,   
+   // Actual value:  
+   rooter.SquareRoot(0.0),   
+   // Tolerance:  
+   0.01,  
+   // Message:  
+   L"Basic test failed",  
+   // Line number - used if there is no PDB file:  
+   LINE_INFO());  
+   }  
+   ```  
   
-4.  Compile a solução.  
+4. Compile a solução.  
   
-     O novo teste aparece no Gerenciador de Testes.  
+    O novo teste aparece no Gerenciador de Testes.  
   
-5.  No Gerenciador de Testes, escolha **Executar Todos**.  
+5. No Gerenciador de Testes, escolha **Executar Todos**.  
   
-     ![Gerenciador de Testes de Unidade &#45; Teste básico aprovado](../test/media/utecpp10.png "UteCpp10")  
+    ![Gerenciador de Testes de Unidade &#45; Teste básico aprovado](../test/media/utecpp10.png "UteCpp10")  
   
- Você configurou o teste e os projetos de código, além de ter verificado que pode executar testes que executam funções no projeto de código. Agora, você pode começar a escrever testes e códigos reais.  
+   Você configurou o teste e os projetos de código, além de ter verificado que pode executar testes que executam funções no projeto de código. Agora, você pode começar a escrever testes e códigos reais.  
   
 ###  <a name="iterate"></a> Aumentar iterativamente os testes e fazer com que sejam aprovados  
   

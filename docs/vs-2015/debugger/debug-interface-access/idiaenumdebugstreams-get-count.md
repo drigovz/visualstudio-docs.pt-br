@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumdebugstreams:: Get_count | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaEnumDebugStreams::get_Count method
 ms.assetid: 5c13fa9a-b35e-47b0-806f-1f53bfe1ba89
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3fa987d03dc99adee9680029866fbfb05b2ec8c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 404e05992ebf3492d7c5e2fcf39964880f304d1a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473582"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785463"
 ---
 # <a name="idiaenumdebugstreamsgetcount"></a>IDiaEnumDebugStreams::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaenumdebugstreams:: Get_count](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumdebugstreams-get-count).  
-  
 Recupera o número de fluxos de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_Count(   
+HRESULT get_Count(   
    LONG* pRetVal  
 );  
 ```  

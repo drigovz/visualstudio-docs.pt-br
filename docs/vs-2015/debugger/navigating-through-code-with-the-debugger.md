@@ -1,14 +1,14 @@
 ---
 title: Navegar pelo código com o depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
 dev_langs:
@@ -23,21 +23,19 @@ helpviewer_keywords:
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 caps.latest.revision: 47
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81b5bbca0b547510056b1aecfa0e7237e40a9814
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43155bbd4236ea34d67058443e8814f7ccf00b1f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474043"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750572"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Navegar pelo Código com o Depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [navegar pelo código com o depurador do Visual Studio](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger).  
-  
 Familiarize-se com comandos e atalhos para navegar pelo código no depurador e o que torna mais rápido e fácil encontrar e resolver problemas em seu aplicativo. Enquanto você navegar pelo código no depurador, você poderá [inspecionar o estado do seu aplicativo](https://msdn.microsoft.com/library/mt243867.aspx#BKMK_Inspect_Variables) ou Saiba mais sobre seu fluxo de execução.  
   
 ## <a name="start-debugging"></a>Iniciar a depuração  
@@ -65,25 +63,25 @@ Familiarize-se com comandos e atalhos para navegar pelo código no depurador e o
   
  Aqui estão alguns detalhes sobre o comportamento do **intervir**:  
   
--   Em uma chamada de função aninhada **intervir** etapas para a função aninhada mais profundamente. Se você usar **intervir** em uma chamada como `Func1(Func2())`, o depurador vai para a função `Func2`.  
+- Em uma chamada de função aninhada **intervir** etapas para a função aninhada mais profundamente. Se você usar **intervir** em uma chamada como `Func1(Func2())`, o depurador vai para a função `Func2`.  
   
--   O depurador avança realmente com as instruções de código em vez de linhas físicas. Por exemplo, uma cláusula `if` pode ser gravada em uma linha:  
+- O depurador avança realmente com as instruções de código em vez de linhas físicas. Por exemplo, uma cláusula `if` pode ser gravada em uma linha:  
   
-    ```csharp  
-    int x = 42;  
-    string s = "Not answered";  
-    if( int x == 42) s = "Answered!";  
-    ```  
+  ```csharp  
+  int x = 42;  
+  string s = "Not answered";  
+  if( int x == 42) s = "Answered!";  
+  ```  
   
-    ```vb  
-    Dim x As Integer = 42  
-    Dim s As String = "Not answered"  
-    If x = 42 Then s = "Answered!"  
-    ```  
+  ```vb  
+  Dim x As Integer = 42  
+  Dim s As String = "Not answered"  
+  If x = 42 Then s = "Answered!"  
+  ```  
   
-     Quando você entra nessa linha, o depurador trata a condição como uma etapa e a consequência como outra (nesse exemplo, a condição é verdadeira.)  
+   Quando você entra nessa linha, o depurador trata a condição como uma etapa e a consequência como outra (nesse exemplo, a condição é verdadeira.)  
   
- Para rastrear visualmente a pilha de chamadas ao entrar em funções, consulte [mapear métodos na pilha de chamadas ao depurar](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+  Para rastrear visualmente a pilha de chamadas ao entrar em funções, consulte [mapear métodos na pilha de chamadas ao depurar](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ##  <a name="BKMK_Step_over_Step_out"></a> Percorrer o código, ignorando a funções  
  Ao executar o código no depurador, muitas vezes você vai perceber que você não precisa ver o que acontece em uma função específica (não se preocupa-lo ou se você souber que ele funciona, como o código da biblioteca bem testado). Use estes comandos para ignorar por meio de código (as funções ainda forem executados, claro, mas o depurador ignora-los).  
@@ -148,20 +146,20 @@ Familiarize-se com comandos e atalhos para navegar pelo código no depurador e o
   
 > [!CAUTION]
 >  Definir a instrução a seguir faz com que o contador do programa pule diretamente para a nova localização. Use este comando com cuidado:  
->   
->  -   As instruções entre os pontos de execução antigos e novos não são executadas.  
-> -   Se você mover o ponto de execução para trás, as instruções intervenientes não serão desfeitas.  
-> -   Mover a instrução seguinte para outra função ou escopo normalmente resulta em danos à pilha de chamadas, causando um erro em tempo de execução ou uma exceção. Se você tentar mover a instrução seguinte para outro escopo, o depurador abrirá uma caixa de diálogo com um aviso e dará uma chance de cancelar a operação. No Visual Basic, você não pode mover a instrução seguinte para outro escopo ou função.  
-> -   No C++ nativo, se você tiver as verificações de tempo de execução ativadas, definir a instrução seguinte poderá fazer com que uma exceção seja gerada quando a execução chegar ao final do método.  
-> -   Quando editar e continuar está ativada, **definir próxima instrução** falhar caso você tenha feito edições que editar e continuar não pode remapear imediatamente. Isso pode ocorrer, por exemplo, se você editou o código dentro de um bloco catch. Quando isso acontece, você verá uma mensagem de erro que indica que a operação não é suportada.  
-  
+> 
+> - As instruções entre os pontos de execução antigos e novos não são executadas.  
+>   -   Se você mover o ponto de execução para trás, as instruções intervenientes não serão desfeitas.  
+>   -   Mover a instrução seguinte para outra função ou escopo normalmente resulta em danos à pilha de chamadas, causando um erro em tempo de execução ou uma exceção. Se você tentar mover a instrução seguinte para outro escopo, o depurador abrirá uma caixa de diálogo com um aviso e dará uma chance de cancelar a operação. No Visual Basic, você não pode mover a instrução seguinte para outro escopo ou função.  
+>   -   No C++ nativo, se você tiver as verificações de tempo de execução ativadas, definir a instrução seguinte poderá fazer com que uma exceção seja gerada quando a execução chegar ao final do método.  
+>   -   Quando editar e continuar está ativada, **definir próxima instrução** falhar caso você tenha feito edições que editar e continuar não pode remapear imediatamente. Isso pode ocorrer, por exemplo, se você editou o código dentro de um bloco catch. Quando isso acontece, você verá uma mensagem de erro que indica que a operação não é suportada.  
+> 
 > [!NOTE]
 >  No código gerenciado, você não pode mover a instrução seguinte nas seguintes circunstâncias:  
->   
->  -   A instrução a seguir é um método diferente do que a instrução atual.  
-> -   A depuração foi iniciada com a depuração Just-In-Time.  
-> -   Um desenrolamento de pilha de chamada está em andamento.  
-> -   Uma exceção System.StackOverflowException ou System.Threading.ThreadAbortException foi lançada.  
+> 
+> - A instrução a seguir é um método diferente do que a instrução atual.  
+>   -   A depuração foi iniciada com a depuração Just-In-Time.  
+>   -   Um desenrolamento de pilha de chamada está em andamento.  
+>   -   Uma exceção System.StackOverflowException ou System.Threading.ThreadAbortException foi lançada.  
   
  Não é possível definir a próxima instrução durante a execução ativa do seu aplicativo. Para definir a próxima instrução, o depurador deve estar no modo de interrupção.  
   

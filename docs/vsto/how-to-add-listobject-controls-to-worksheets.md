@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce398f18913063d770aa180a06ff8e2017aebd86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670050"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949246"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Como: adicionar controles ListObject a planilhas
   Você pode adicionar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a uma planilha do Microsoft Office Excel em tempo de design e em tempo de execução em projetos de nível de documento.  
@@ -32,13 +32,13 @@ ms.locfileid: "35670050"
   
  Este tópico descreve as seguintes tarefas:  
   
--   [Adicionar controles ListObject em tempo de design](#designtime)  
+- [Adicionar controles ListObject em tempo de design](#designtime)  
   
--   [Adicionar controles ListObject em tempo de execução em um projeto de nível de documento](#runtimedoclevel)  
+- [Adicionar controles ListObject em tempo de execução em um projeto de nível de documento](#runtimedoclevel)  
   
--   [Adicionar controles ListObject em tempo de execução em um projeto de suplemento do VSTO](#runtimeaddin)  
+- [Adicionar controles ListObject em tempo de execução em um projeto de suplemento do VSTO](#runtimeaddin)  
   
- Para obter mais informações sobre <xref:Microsoft.Office.Tools.Excel.ListObject> controles, consulte [controle ListObject](../vsto/listobject-control.md).  
+  Para obter mais informações sobre <xref:Microsoft.Office.Tools.Excel.ListObject> controles, consulte [controle ListObject](../vsto/listobject-control.md).  
   
 ##  <a name="designtime"></a> Adicionar controles ListObject em tempo de design  
  Há várias maneiras de adicionar <xref:Microsoft.Office.Tools.Excel.ListObject> controles em uma planilha em um projeto de nível de documento em tempo de design: de dentro do Excel, do Visual Studio **caixa de ferramentas**e para o **fontes de dados** janela.  

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eefbb12584cdff2bb32b9d4406c916969ec435c4
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f390ddf14925b43f1aa1d9e79db05e2aa64f234
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118341"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296197"
 ---
 # <a name="how-to-create-an-application-page"></a>Como: criar uma página de aplicativo
   Você pode criar uma página da web para um ou mais sites do SharePoint. No SharePoint, essas páginas são chamadas de páginas do aplicativo. Ao contrário de uma página do site, uma página de aplicativo contém código que é executado por trás da página. Para obter mais informações, consulte [criar páginas de aplicativo para o SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
@@ -46,7 +46,7 @@ ms.locfileid: "37118341"
   
      Visual Studio adiciona várias pastas e arquivos ao seu projeto. Para obter mais informações sobre esses arquivos, consulte [criar páginas de aplicativo para o SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
-     No **origem** exibição do designer Visual Web Developer, o arquivo de página ASP.NET é exibida. Você pode criar a página, adicionando controles a partir de **caixa de ferramentas** e colocando-os em espaços reservados de conteúdo. Para obter mais informações, consulte [exibição da fonte, o Designer de página da Web](http://msdn.microsoft.com/en-us/5911396b-fe51-4150-9ff1-b085f812862f).  
+     No **origem** exibição do designer Visual Web Developer, o arquivo de página ASP.NET é exibida. Você pode criar a página, adicionando controles a partir de **caixa de ferramentas** e colocando-os em espaços reservados de conteúdo. Para obter mais informações, consulte [exibição da fonte, o Designer de página da Web](/previous-versions/aspnet/ms178154\(v\=vs.100\)).  
   
 7.  Se você quiser manipular eventos de controle, adicione código ao arquivo de código para a página de aplicativo.  
   

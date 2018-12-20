@@ -1,7 +1,7 @@
 ---
 title: GETNAME_TYPE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f616b9715904d8ffae71b083baea6f7ced3bf5a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8edbf690851d820adc2fc8fdb61044aa9c9d46e2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467391"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725023"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [GETNAME_TYPE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/getname-type).  
-  
 Especifica o tipo de nome de arquivos a serem recuperados.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_GETNAME_TYPE {   
+enum enum_GETNAME_TYPE {   
    GN_NAME         = 0,  
    GN_FILENAME     = 1,  
    GN_BASENAME     = 2,  
@@ -47,7 +45,7 @@ typedef DWORD GETNAME_TYPE;
 ```  
   
 ```csharp  
-public enum enum_GETNAME_TYPE {   
+public enum enum_GETNAME_TYPE {   
    GN_NAME         = 0,  
    GN_FILENAME     = 1,  
    GN_BASENAME     = 2,  

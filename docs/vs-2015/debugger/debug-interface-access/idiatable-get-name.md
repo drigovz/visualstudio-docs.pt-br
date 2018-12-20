@@ -1,7 +1,7 @@
 ---
 title: 'Idiatable:: Get_name | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaTable::get_name method
 ms.assetid: f6e9cd07-63cd-48a6-9835-e69c2d0859c5
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa86af5f563bc844e4e69c915273b59de0a77afd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8077c0bd0b89e56ebb559aefbf4889354dc7178
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465570"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760456"
 ---
 # <a name="idiatablegetname"></a>IDiaTable::get_name
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiatable:: Get_name](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiatable-get-name).  
-  
 Recupera o nome da tabela.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_name (   
+HRESULT get_name (   
    BSTR* pRetVal  
 );  
 ```  

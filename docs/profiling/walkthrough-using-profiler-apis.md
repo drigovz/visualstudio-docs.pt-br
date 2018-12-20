@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c6d4a5fce3bbd3d050d3aaae4908b59d745596
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 6e5baebb527c09d833e405a98bd701ad02b7fe86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468204"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928055"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Passo a passo: usando APIs do criador de perfil
 
@@ -123,19 +123,19 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Para coletar e exibir dados no IDE do Visual Studio  
   
-1.  Abra o IDE do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. No menu **Analisar**, aponte para **Criador de Perfil** e, em seguida, selecione **Nova Sessão de Desempenho**.  
+1. Abra o IDE do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. No menu **Analisar**, aponte para **Criador de Perfil** e, em seguida, selecione **Nova Sessão de Desempenho**.  
   
-2.  Adicione o binário compilado à lista **Destinos** na janela **Gerenciador de Desempenho**. Clique com botão direito do mouse em **Destinos** e, em seguida, selecione **Adicionar Binário de Destino**. Localize o binário na caixa de diálogo **Adicionar Binário de Destino** e clique em **Abrir**.  
+2. Adicione o binário compilado à lista **Destinos** na janela **Gerenciador de Desempenho**. Clique com botão direito do mouse em **Destinos** e, em seguida, selecione **Adicionar Binário de Destino**. Localize o binário na caixa de diálogo **Adicionar Binário de Destino** e clique em **Abrir**.  
   
-3.  Selecione **Instrumentação**, na lista **Método**, na barra de ferramentas **Gerenciador de Desempenho**.  
+3. Selecione **Instrumentação**, na lista **Método**, na barra de ferramentas **Gerenciador de Desempenho**.  
   
-4.  Clique em **Iniciar a Criação de Perfil**.  
+4. Clique em **Iniciar a Criação de Perfil**.  
   
-     O criador de perfil instrumentará e executará o binário e criará um arquivo de relatório de desempenho. O arquivo de relatório de desempenho aparecerá no nó **Relatórios** do **Gerenciador de Desempenho**.  
+    O criador de perfil instrumentará e executará o binário e criará um arquivo de relatório de desempenho. O arquivo de relatório de desempenho aparecerá no nó **Relatórios** do **Gerenciador de Desempenho**.  
   
-5.  Abra o arquivo de relatório de desempenho resultante.  
+5. Abra o arquivo de relatório de desempenho resultante.  
   
- Por padrão, quando o criador de perfil for iniciado, ele coletará dados no nível global. O código a seguir no início do programa desativa a criação de perfil global.  
+   Por padrão, quando o criador de perfil for iniciado, ele coletará dados no nível global. O código a seguir no início do programa desativa a criação de perfil global.  
   
 ```csharp  
 DataCollection.StopProfile(  

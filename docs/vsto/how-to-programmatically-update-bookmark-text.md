@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aa4c2f37efe92bfbc3c06e0bc8f0657b1205652a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: efa56c94e211a40e314025ae06d263164de1afd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833012"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Como: atualizar o texto do indicador de forma programática
   Você pode inserir texto em um indicador de espaço reservado em um documento do Microsoft Office Word para que você possa recuperar o texto em um momento posterior, ou para substituir o texto em um indicador. Se você estiver desenvolvendo uma personalização no nível de documento, você também pode atualizar o texto em um <xref:Microsoft.Office.Tools.Word.Bookmark> controle que está associado a dados. Para obter mais informações, consulte [ligar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
@@ -31,15 +31,15 @@ ms.locfileid: "35669812"
   
  O objeto de indicador pode ser um dos dois tipos:  
   
--   Um <xref:Microsoft.Office.Tools.Word.Bookmark> controle de host.  
+- Um <xref:Microsoft.Office.Tools.Word.Bookmark> controle de host.  
   
-     <xref:Microsoft.Office.Tools.Word.Bookmark> controles de estendem nativo <xref:Microsoft.Office.Interop.Word.Bookmark> objetos, permitindo a ligação de dados e expor eventos. Para obter mais informações sobre controles de host, consulte [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md).  
+   <xref:Microsoft.Office.Tools.Word.Bookmark> controles de estendem nativo <xref:Microsoft.Office.Interop.Word.Bookmark> objetos, permitindo a ligação de dados e expor eventos. Para obter mais informações sobre controles de host, consulte [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md).  
   
--   Um nativo <xref:Microsoft.Office.Interop.Word.Bookmark> objeto.  
+- Um nativo <xref:Microsoft.Office.Interop.Word.Bookmark> objeto.  
   
-     <xref:Microsoft.Office.Interop.Word.Bookmark> objetos não têm recursos de ligação de eventos ou dados.  
+   <xref:Microsoft.Office.Interop.Word.Bookmark> objetos não têm recursos de ligação de eventos ou dados.  
   
- Quando você atribui o texto a um indicador, o comportamento difere entre uma <xref:Microsoft.Office.Interop.Word.Bookmark> e um <xref:Microsoft.Office.Tools.Word.Bookmark>. Para obter mais informações, consulte [controle de indicador](../vsto/bookmark-control.md).  
+  Quando você atribui o texto a um indicador, o comportamento difere entre uma <xref:Microsoft.Office.Interop.Word.Bookmark> e um <xref:Microsoft.Office.Tools.Word.Bookmark>. Para obter mais informações, consulte [controle de indicador](../vsto/bookmark-control.md).  
   
 ## <a name="use-host-controls"></a>Use os controles de host  
   

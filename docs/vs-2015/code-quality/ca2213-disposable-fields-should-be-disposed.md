@@ -1,7 +1,7 @@
 ---
 title: 'CA2213: Os campos descartáveis devem ser descartados | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f9921ee2640c25b19d02aabb140032918c2133b5
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: b4e59dd35ab1f787dcaada5448443e35efc1f6c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910480"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: os campos descartáveis devem ser descartados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA2213: campos descartáveis devem ser descartados](https://docs.microsoft.com/visualstudio/code-quality/ca2213-disposable-fields-should-be-disposed).
 
 |||
 |-|-|

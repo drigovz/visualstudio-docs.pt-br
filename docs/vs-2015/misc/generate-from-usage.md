@@ -1,7 +1,7 @@
 ---
 title: Generate From Usage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,15 +22,15 @@ helpviewer_keywords:
 - delegates, generating stubs
 ms.assetid: 585a3fd5-516f-4166-9fd1-d406cbab369e
 caps.latest.revision: 67
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 245beb00bd9c1b24f540d0a8c85ce0fcbf686c47
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5aeb5ec627caf1e28906a33a667f307ae03b74f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460716"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773009"
 ---
 # <a name="generate-from-usage"></a>Gerar a partir do uso
 Este conteúdo foi movido para [Visual c# IntelliSense](../ide/visual-csharp-intellisense.md).

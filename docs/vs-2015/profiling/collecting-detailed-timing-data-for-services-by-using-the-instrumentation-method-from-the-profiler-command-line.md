@@ -1,7 +1,7 @@
 ---
 title: Como coletar dados de tempo detalhados para serviços usando o método de instrumentação por meio da linha de comando do criador de perfil | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a522872e5f422638635550b816ef20050e800ef9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d454bb625f51f336b4b127848aad7c57a73f0456
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464011"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795070"
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Coletando dados de tempo detalhados para serviços usando o método de instrumentação a partir da linha de comando do criador de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [coletando dados de tempo detalhados para serviços usando o método de instrumentação da linha de comando do Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line).  
-  
 Esta seção descreve os procedimentos e opções para coletar dados de desempenho detalhados para serviços do Windows usando o método de instrumentação da linha de comando.  
   
 ## <a name="common-tasks"></a>Tarefas comuns  

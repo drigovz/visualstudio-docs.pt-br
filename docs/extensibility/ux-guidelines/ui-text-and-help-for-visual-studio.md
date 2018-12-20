@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 202ba0f384fb658efd45ec446b27a385c98c37d4
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 52260b2cd401f8cdbd3a94704ab29db2f64fdc6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842229"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texto da interface do usuário e a Ajuda do Visual Studio
 ##  <a name="BKMK_UITextAndTerminology"></a> Terminologia e o texto de interface do usuário  
@@ -315,15 +315,15 @@ ms.locfileid: "39511777"
   
  Essa solução faz quatro suposições que poderiam causar bugs:  
   
--   Botão de Ajuda da caixa de diálogo estiver **IDHELP** (9).  
+- Botão de Ajuda da caixa de diálogo estiver **IDHELP** (9).  
   
--   A caixa de diálogo parece correta quando o botão Ajuda estiver oculto.  
+- A caixa de diálogo parece correta quando o botão Ajuda estiver oculto.  
   
--   A caixa de diálogo não substitui sua winproc.  
+- A caixa de diálogo não substitui sua winproc.  
   
--   A caixa de diálogo não será inserida dentro de outra caixa de diálogo.  
+- A caixa de diálogo não será inserida dentro de outra caixa de diálogo.  
   
- Se a caixa de diálogo reside no msenv e não usar **VBDialogBoxParam**, investigue aproveitando **VBDialogBoxParam** antes de implementar seu próprio manipulador.  
+  Se a caixa de diálogo reside no msenv e não usar **VBDialogBoxParam**, investigue aproveitando **VBDialogBoxParam** antes de implementar seu próprio manipulador.  
   
 ##### <a name="dialogs-created-through-other-packages"></a>Caixas de diálogo criadas por meio de outros pacotes  
  Você pode implementar sua própria solução para caixas de diálogo que residem fora do msenv. Para uma classe de caixa de diálogo compartilhadas em seu VSPackage, considere mover o botão à barra de título ou implementar um manipulador em cada caixa de diálogo. O código a seguir é um esqueleto de uma implementação para ajudar você a começar:  

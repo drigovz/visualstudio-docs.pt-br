@@ -1,5 +1,5 @@
 ---
-title: Usando as configurações do EditorConfig no Visual Studio
+title: Configurações de EditorConfig
 ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: f2df8491ca3af165681a76c039d63c42c008f2f8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627197"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062920"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Criar configurações do editor portátil e personalizado com o EditorConfig
 
@@ -22,8 +22,10 @@ No Visual Studio de 2017, você pode adicionar um arquivo [EditorConfig](http://
 
 As configurações do EditorConfig são compatíveis com vários editores de códigos e IDEs, incluindo o Visual Studio. Ele é um componente portátil que acompanha o seu código e pode impor estilos de codificação mesmo fora do Visual Studio.
 
+Quando você adiciona um arquivo EditorConfig ao projeto no Visual Studio, a formatação do código existente não é alterada, a menos que você formate o documento (**Editar** > **Avançado**  >  **Formatar Documento** ou **Ctrl**+**K**, **Ctrl**+**D** no perfil padrão). No entanto, novas linhas de código serão formatadas de acordo com as configurações do EditorConfig. Você pode definir quais configurações do EditorConfig deseja que **Formatar Documento** aplique à [página de opções de **Formatação**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+
 > [!NOTE]
-> Quando você adiciona um arquivo EditorConfig ao projeto no Visual Studio, a formatação do código existente não é alterada, a menos que você formate o documento (**Editar** > **Avançado**  >  **Formatar Documento** ou **Ctrl**+**K**, **Ctrl**+**D** no perfil padrão). No entanto, novas linhas de código serão formatadas de acordo com as configurações do EditorConfig. Você pode definir quais configurações do EditorConfig deseja que **Formatar Documento** aplique à [página de opções de **Formatação**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [EditorConfig no Visual Studio para Mac](/visualstudio/mac/editorconfig).
 
 ## <a name="coding-consistency"></a>Consistência de codificação
 
@@ -32,6 +34,9 @@ As configurações em arquivos EditorConfig permitem manter configurações e es
 As convenções de codificação usadas em seus projetos pessoais podem ser diferentes das usadas nos projetos da sua equipe. Por exemplo, talvez você prefira que, quando estiver codificando, o recuo adicione um caractere de tabulação. No entanto, sua equipe pode preferir que o recuo adicione quatro caracteres de espaço em vez de um caractere de tabulação. Os arquivos EditorConfig resolvem esse problema permitindo que você tenha uma configuração para cada cenário.
 
 Como as configurações estão contidas em um arquivo na base de código, elas viajam juntamente com essa base de código. Contanto que você abra o arquivo de código em um editor em conformidade com o EditorConfig, as configurações do editor de texto são implementadas. Para obter mais informações sobre arquivos EditorConfig, consulte o site [EditorConfig.org](http://editorconfig.org/).
+
+> [!NOTE]
+> As convenções definidas em um arquivo EditorConfig não podem ser aplicadas em um pipeline de CI/CD como erros ou avisos de build. Qualquer desvio de estilo aparece apenas no editor do Visual Studio e na **Lista de Erros**.
 
 ## <a name="supported-settings"></a>Configurações com suporte
 
@@ -122,11 +127,11 @@ Se você edita vários arquivos *.editorconfig*, a [Extensão do Serviço de Lin
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra o estado de recuo de um trecho de código C# antes e depois de adicionar um arquivo *.editorconfig* ao projeto. A configuração **Tabulações** na caixa de diálogo **Opções** do editor de texto do Visual Studio foi definida para produzir caracteres de espaço ao pressionar a tecla **Tab**.
+O exemplo a seguir mostra o estado de recuo de um snippet de código C# antes e depois de adicionar um arquivo *.editorconfig* ao projeto. A configuração **Tabulações** na caixa de diálogo **Opções** do editor de texto do Visual Studio foi definida para produzir caracteres de espaço ao pressionar a tecla **Tab**.
 
 ![Configuração de tabulação do Editor de texto](../ide/media/vside_editorconfig_tabsetting.png)
 
-Conforme esperado, pressionar a tecla **TAB** na próxima linha faz a linha recuar por meio da adição de quatro caracteres de espaço em branco.
+Conforme esperado, pressionar a tecla **Tab** na próxima linha faz a linha recuar por meio da adição de quatro caracteres de espaço em branco.
 
 ![Codificar antes de usar o EditorConfig](../ide/media/vside_editorconfig_before.png)
 
@@ -170,3 +175,4 @@ Você pode controlar o escopo das convenções do EditorConfig configurando a pr
 - [Dando suporte ao EditorConfig para um serviço de linguagem](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
 - [Recursos do Editor de Códigos](writing-code-in-the-code-and-text-editor.md)
+- [EditorConfig (Visual Studio para Mac)](/visualstudio/mac/editorconfig)

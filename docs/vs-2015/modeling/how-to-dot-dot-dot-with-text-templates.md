@@ -1,7 +1,7 @@
 ---
 title: Como... com modelos de texto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 04cba7688e358f3267bd4f3fb45b2ac10e83b286
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e6a580a906ea228f04f8ec81b15eee6c143c6a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903810"
 ---
 # <a name="how-to--with-text-templates"></a>Como ... com modelos de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como... com modelos de texto](https://docs.microsoft.com/visualstudio/modeling/how-to-dot-dot-dot-with-text-templates).  
-  
 Modelos de texto em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornecem uma maneira útil de geração de texto de qualquer tipo. Você pode usar modelos de texto para gerar o texto em tempo de execução como parte do seu aplicativo e em tempo de design para gerar alguns dos seus códigos de projeto. Este tópico resume com mais frequência solicitado "Como faço...?" perguntas.  
   
  Neste tópico, várias respostas que são precedidas por marcadores são sugestões alternativas.  
@@ -56,21 +54,21 @@ Modelos de texto em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornecem uma ma
 ### <a name="invoke-methods-from-a-template"></a>Invocar métodos de um modelo  
  Se os métodos já existirem, por exemplo, no padrão [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] classes:  
   
--   Use o \<#@assembly#> diretiva para carregar o assembly e usar \<#@import#> para definir o contexto de namespace. Para obter mais informações, consulte [diretiva de importação T4](../modeling/t4-import-directive.md).  
+- Use o \<#@assembly#> diretiva para carregar o assembly e usar \<#@import#> para definir o contexto de namespace. Para obter mais informações, consulte [diretiva de importação T4](../modeling/t4-import-directive.md).  
   
-     Se você frequentemente usa o mesmo conjunto de assembly e importar diretivas, considere a possibilidade de escrever um processador de diretriz. Em cada modelo, você pode invocar o processador de diretriz, que pode carregar os assemblies e os arquivos de modelo e definir o contexto de namespace. Para obter mais informações, consulte [criando processadores diretiva de modelo de texto do personalizado T4](../modeling/creating-custom-t4-text-template-directive-processors.md).  
+   Se você frequentemente usa o mesmo conjunto de assembly e importar diretivas, considere a possibilidade de escrever um processador de diretriz. Em cada modelo, você pode invocar o processador de diretriz, que pode carregar os assemblies e os arquivos de modelo e definir o contexto de namespace. Para obter mais informações, consulte [criando processadores diretiva de modelo de texto do personalizado T4](../modeling/creating-custom-t4-text-template-directive-processors.md).  
   
- Se você estiver escrevendo os métodos:  
+  Se você estiver escrevendo os métodos:  
   
--   Se você estiver gravando um modelo de texto de tempo de execução, escreva uma definição de classe parcial que tem o mesmo nome que seu modelo de texto de tempo de execução. Adicione os métodos adicionais para essa classe.  
+- Se você estiver gravando um modelo de texto de tempo de execução, escreva uma definição de classe parcial que tem o mesmo nome que seu modelo de texto de tempo de execução. Adicione os métodos adicionais para essa classe.  
   
--   Gravar um bloco de controle de recurso de classe `<#+ ... #>` no qual você pode declarar métodos, propriedades e classes privadas. Quando o modelo de texto é compilado, ele será transformado em uma classe. Os blocos de controle padrão `<#...#>` e texto são transformados em um único método, e blocos de recurso de classe são inseridos como membros separados. Para obter mais informações, consulte [blocos de controle de modelo de texto](../modeling/text-template-control-blocks.md).  
+- Gravar um bloco de controle de recurso de classe `<#+ ... #>` no qual você pode declarar métodos, propriedades e classes privadas. Quando o modelo de texto é compilado, ele será transformado em uma classe. Os blocos de controle padrão `<#...#>` e texto são transformados em um único método, e blocos de recurso de classe são inseridos como membros separados. Para obter mais informações, consulte [blocos de controle de modelo de texto](../modeling/text-template-control-blocks.md).  
   
-     Métodos definidos como recursos de classe também podem incluir os blocos de texto inserido.  
+   Métodos definidos como recursos de classe também podem incluir os blocos de texto inserido.  
   
-     Considere a colocação de recursos de classe em um arquivo separado que você pode `<#@include#>` em um ou mais arquivos de modelo.  
+   Considere a colocação de recursos de classe em um arquivo separado que você pode `<#@include#>` em um ou mais arquivos de modelo.  
   
--   Os métodos de gravação em um assembly separado (biblioteca de classes) e chamá-los a partir de seu modelo. Use o `<#@assembly#>` diretiva para carregar o assembly e `<#@import#>` para definir o contexto de namespace. Observe que para recompilar o assembly enquanto você depurá-lo, você pode ter que parar e reiniciar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obter mais informações, consulte [diretivas de modelo de texto T4](../modeling/t4-text-template-directives.md).  
+- Os métodos de gravação em um assembly separado (biblioteca de classes) e chamá-los a partir de seu modelo. Use o `<#@assembly#>` diretiva para carregar o assembly e `<#@import#>` para definir o contexto de namespace. Observe que para recompilar o assembly enquanto você depurá-lo, você pode ter que parar e reiniciar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obter mais informações, consulte [diretivas de modelo de texto T4](../modeling/t4-text-template-directives.md).  
   
 ### <a name="generate-many-files-from-one-model-schema"></a>Gerar muitos arquivos de esquema de um modelo  
  Se você geralmente pode gerar arquivos de modelos que têm o mesmo esquema XML ou banco de dados:  

@@ -1,7 +1,7 @@
 ---
 title: Editar e continuar (Visual C++) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,21 +20,19 @@ helpviewer_keywords:
 - C/C++, Edit and Continue
 ms.assetid: 1815251e-a877-433e-9e5e-69bd9ba254c7
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b95de832050cd6283b85ec4fe6bd99b67c8c1d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e1dc97af70f575632629a13ea67e905f2ad0815
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473711"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748357"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar e continuar (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [editar e continuar (Visual C++)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-cpp).  
-  
 Você pode usar Editar e continuar em projetos do Visual C++. Ver [alterações de código com suporte (C++)](../debugger/supported-code-changes-cpp.md) para obter informações sobre as limitações de editar e continuar.  
   
  A partir do Visual Studio 2015 atualização 1, agora você pode usar Editar e continuar em aplicativos da Windows Store C++ e aplicativos de DirectX, porque agora ela dá suporte a **/ZI** opção de compilador com **/bigobj** alternar. Você também pode usar Editar e continuar com os binários compilados com o **/FASTLINK** alternar.  
@@ -48,13 +46,13 @@ Você pode usar Editar e continuar em projetos do Visual C++. Ver [alterações 
 ##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Habilitar ou desabilitar editar e continuar  
  Talvez você queira desabilitar a invocação automática de editar e continuar, se você estiver fazendo edições ao código que você deseja não aplicado durante a sessão de depuração atual. Você também pode habilitar novamente automática editar e continuar.  
   
-1.  No menu **Ferramentas**, escolha **Opções**.  
+1. No menu **Ferramentas**, escolha **Opções**.  
   
-2.  No **opções** caixa de diálogo, selecione **depuração / geral**.  
+2. No **opções** caixa de diálogo, selecione **depuração / geral**.  
   
-3.  No **editar e continuar** grupo, marque ou desmarque as **habilitar nativo editar e continuar** caixa de seleção.  
+3. No **editar e continuar** grupo, marque ou desmarque as **habilitar nativo editar e continuar** caixa de seleção.  
   
- Alterar essa configuração afeta todos os projetos que você trabalha em. Você não precisa recriar seu aplicativo após alterar essa configuração. Você pode alterar a configuração mesmo enquanto você está depurando. Se você criar seu aplicativo de linha de comando ou de um makefile, mas depurar no ambiente do Visual Studio, você ainda pode usar Editar e continuar se você definir a **/ZI** opção.  
+   Alterar essa configuração afeta todos os projetos que você trabalha em. Você não precisa recriar seu aplicativo após alterar essa configuração. Você pode alterar a configuração mesmo enquanto você está depurando. Se você criar seu aplicativo de linha de comando ou de um makefile, mas depurar no ambiente do Visual Studio, você ainda pode usar Editar e continuar se você definir a **/ZI** opção.  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Como aplicar as alterações de código explicitamente  
  No Visual C++, editar e continuar podem aplicar alterações de código de duas maneiras. Alterações de código podem ser aplicadas implicitamente, quando você escolhe um comando de execução, ou explicitamente, usando o **aplicar alterações de código** comando.  
@@ -68,11 +66,11 @@ Você pode usar Editar e continuar em projetos do Visual C++. Ver [alterações 
   
  Para parar de aplicar alterações de código:  
   
--   Sobre o **Debug** menu, escolha **parar de aplicar alterações de código**.  
+- Sobre o **Debug** menu, escolha **parar de aplicar alterações de código**.  
   
- Este item de menu está visível apenas quando as alterações de código estão sendo aplicadas.  
+  Este item de menu está visível apenas quando as alterações de código estão sendo aplicadas.  
   
- Se você escolher esta opção, nenhuma das alterações de código serão confirmadas.  
+  Se você escolher esta opção, nenhuma das alterações de código serão confirmadas.  
   
 ##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> Como redefinir o ponto de execução  
  Algumas alterações de código podem fazer o ponto de execução ser movido para um novo local quando Editar e Continuar aplicar as alterações. Editar e Continuar coloca o ponto de execução o mais exatamente possível, mas os resultados podem não estar corretos em todos os casos.  

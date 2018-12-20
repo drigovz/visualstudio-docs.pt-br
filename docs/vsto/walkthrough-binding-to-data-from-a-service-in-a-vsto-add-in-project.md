@@ -17,27 +17,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3c7ed095d0efe756e7a23409cd5a54f9e6dcda8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: c4ebf998dc7c278fda1e605d18198945958a7fed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808651"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933177"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Passo a passo: Associar a dados de um serviço em um projeto de suplemento do VSTO
   Você pode associar dados a controles de host em projetos de suplemento do VSTO. Este passo a passo demonstra como adicionar controles a um documento do Microsoft Office Word, ligar os controles a dados recuperados do serviço de conteúdo do MSDN e responder a eventos em tempo de execução.  
   
- **Aplica-se a:** as informações neste tópico se aplicam a projetos no nível de aplicativo para Word 2010. Para obter mais informações, consulte [recursos disponíveis por aplicativo do Office e tipo de projeto](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Aplica-se a:** as informações neste tópico se aplicam a projetos no nível de aplicativo para Word 2010. Para obter mais informações, confira [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md) (Funcionalidades disponibilizadas pelo aplicativo do Office e pelo tipo de projeto).  
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Adicionando um <xref:Microsoft.Office.Tools.Word.RichTextContentControl> controle a um documento em tempo de execução.  
+- Adicionando um <xref:Microsoft.Office.Tools.Word.RichTextContentControl> controle a um documento em tempo de execução.  
   
--   Associando a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> controle aos dados de um serviço web.  
+- Associando a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> controle aos dados de um serviço web.  
   
--   Responder para o <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> eventos de um <xref:Microsoft.Office.Tools.Word.RichTextContentControl> controle.  
+- Responder para o <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> eventos de um <xref:Microsoft.Office.Tools.Word.RichTextContentControl> controle.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  

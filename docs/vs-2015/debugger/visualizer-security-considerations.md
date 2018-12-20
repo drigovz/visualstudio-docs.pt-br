@@ -1,7 +1,7 @@
 ---
 title: Considerações de segurança do Visualizador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ helpviewer_keywords:
 - security [Visual Studio], visualizers
 ms.assetid: cdd86bd5-b729-409b-a7c6-374efa091eb1
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f041aa4506906291f429e8825ca42b7ea30f14c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b25c9a183a843130861818f8a80948a68a8b1ed5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475558"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800621"
 ---
 # <a name="visualizer-security-considerations"></a>Considerações de segurança do visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [considerações de segurança do visualizador](https://docs.microsoft.com/visualstudio/debugger/visualizer-security-considerations).  
-  
 Gravar um Visualizador envolve possíveis ameaças de segurança. Nenhuma exploração conhecida existe no momento para essas ameaças potenciais, mas os desenvolvedores devem estar atentos a elas e tomar as precauções apropriadas de segurança, conforme descrito aqui, para se proteger contra futuras explorações.  
   
  Os visualizadores do depurador exigem privilégios maiores do que são permitidos por um aplicativo de confiança parcial. Os visualizadores não serão carregados quando você for interrompido no código com confiança parcial. Para depurar usando um visualizador, você deverá executar o código com confiança total.  

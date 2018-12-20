@@ -1,7 +1,7 @@
 ---
 title: IDebugPrimitiveTypeField | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 73a428fd-797e-4ceb-8392-ba16f1c5226b
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5e27680fee38732eea740f11b66e768c9348af1b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ccac2e753a6ede6e9e4a30fbd029a441cf4d9fe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461573"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755552"
 ---
 # <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPrimitiveTypeField](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprimitivetypefield).  
-  
 Representa um valor de enumeração de tipo primitivo de uma [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface.  
   
 ## <a name="syntax"></a>Sintaxe  

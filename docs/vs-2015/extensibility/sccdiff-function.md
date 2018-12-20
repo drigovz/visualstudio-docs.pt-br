@@ -1,7 +1,7 @@
 ---
 title: Função SccDiff | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bacfa40d04a897d73213c833e41c199f88981c64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed4ca5cefa45f041e4285b00d7a2d9682e6565a0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472818"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795746"
 ---
 # <a name="sccdiff-function"></a>Função SccDiff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [função SccDiff](https://docs.microsoft.com/visualstudio/extensibility/sccdiff-function).  
-  
 Esta função exibe (ou, opcionalmente, apenas verifica) as diferenças entre o arquivo atual (no disco local) e a última versão de check-in na fonte de sistema de controle.  
   
 ## <a name="syntax"></a>Sintaxe  

@@ -1,7 +1,7 @@
 ---
 title: Classe Task - membros internos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a110e81f149fc04c973fcfe0160873a0bf633f72
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 92ddc4b00f9d8eb37893e1db7ae44802e04e9c46
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463897"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764823"
 ---
 # <a name="task-class---internal-members"></a>Classe de tarefa – membros internos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [classe Task - membros internos](https://docs.microsoft.com/visualstudio/extensibility/debugger/task-class-internal-members).  
-  
 Este tópico descreve os membros internos do <xref:System.Threading.Tasks.Task?displayProperty=fullName> classe que ajudam você a implementar um depurador personalizado. Para obter informações gerais sobre essa classe, consulte o <xref:System.Threading.Tasks.Task> tópico de referência.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  

@@ -1,7 +1,7 @@
 ---
 title: IDebugPendingBreakpoint2::EnumBoundBreakpoints | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,30 +18,28 @@ ms.assetid: 179c7c54-8446-462d-b099-e0f9cf06dc52
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cb903be055ffae239f358417c65f5267d13d298f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e02f79c7d937b58733912e49748a7975b1966e3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467578"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817146"
 ---
 # <a name="idebugpendingbreakpoint2enumboundbreakpoints"></a>IDebugPendingBreakpoint2::EnumBoundBreakpoints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPendingBreakpoint2::EnumBoundBreakpoints](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints).  
-  
 Enumera todos os pontos de interrupção limitados do ponto de interrupção pendente.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT EnumBoundBreakpoints(   
+HRESULT EnumBoundBreakpoints(   
    IEnumDebugBoundBreakpoints2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumBoundBreakpoints(   
+int EnumBoundBreakpoints(   
    out IEnumDebugBoundBreakpoints2 ppEnum  
 );  
 ```  

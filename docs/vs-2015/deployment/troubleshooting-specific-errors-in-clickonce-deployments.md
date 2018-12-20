@@ -1,7 +1,7 @@
 ---
 title: Solução de problemas de erros específicos nas implantações do ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 4ec87f12dc97ced54248c7323643b417fb14a63c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0b7e53eba21372641bad683c442e796648a4765
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460723"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213636"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Solução de problemas com erros específicos nas implantações do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [solução de problemas de erros específicos nas implantações do ClickOnce](https://docs.microsoft.com/visualstudio/deployment/troubleshooting-specific-errors-in-clickonce-deployments).  
-  
 Este tópico lista os seguintes erros comuns que podem ocorrer quando você implanta um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo e fornece etapas para resolver cada problema.  
   
 ## <a name="general-errors"></a>Erros gerais  

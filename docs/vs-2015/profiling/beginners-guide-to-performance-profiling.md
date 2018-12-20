@@ -1,14 +1,14 @@
 ---
 title: Guia do iniciante para criação de perfil de desempenho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -17,21 +17,19 @@ helpviewer_keywords:
 - Performance Wizard
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
 caps.latest.revision: 50
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6bd3085e3aef314d8768656eb66e61647b1676
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4a1b8fbc31bb05f69a1f9e30960106c08df5eb6f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474977"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731482"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Guia do iniciante à criação de perfil do desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [guia do Iniciante à criação de perfil de desempenho no Visual Studio](https://docs.microsoft.com/visualstudio/profiling/beginners-guide-to-performance-profiling).  
-  
 Você pode usar ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar dados de **Amostragem**.  
   
  **Amostragem** é um método de criação de perfil estatístico que mostra as funções que fazem a maior parte do trabalho do modo de usuário no aplicativo. A amostragem é uma boa opção para começar a procurar áreas para acelerar seu aplicativo.  

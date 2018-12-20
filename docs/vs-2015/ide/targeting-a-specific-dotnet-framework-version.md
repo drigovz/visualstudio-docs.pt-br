@@ -1,7 +1,7 @@
 ---
 title: Definindo uma versão específica do .NET Framework como destino | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae41e7aea5bd4a1a355993a061829a190e1ef80b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc084c025e19e5466cd860611eeef91a3a7fedca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467886"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277921"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Direcionamento de uma versão específica do .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [visando uma versão específica do .NET Framework](https://docs.microsoft.com/visualstudio/ide/targeting-a-specific-dotnet-framework-version).  
-  
 No Visual Studio, é possível especificar a versão ou o perfil do .NET Framework que você deseja que o projeto tenha como destino. Para que um aplicativo seja executado em outro computador, a versão do Framework de destino do aplicativo deve ser compatível com a versão do Framework instalada no computador.  
   
  Esta seção contém tópicos que descrevem como definir versões específicas do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] como destino nos projetos.  

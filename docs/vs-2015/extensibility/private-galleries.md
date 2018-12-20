@@ -1,7 +1,7 @@
 ---
 title: Galerias privadas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0875ffc87e7b1161f08a0fdec77de52250f209a6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 910764df2f6a6e3069136bce64b77f267e473b9d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463254"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749954"
 ---
 # <a name="private-galleries"></a>Galerias privadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [galerias privadas](https://docs.microsoft.com/visualstudio/extensibility/private-galleries).  
-  
 Você pode compartilhar os controles, modelos e ferramentas que você desenvolve postando-as para um *Galeria privada* na intranet de sua organização, da seguinte maneira:  
   
 -   Crie um Atom (RSS) para um local central (repositório) adequadamente configurado na sua intranet. Para obter mais informações, consulte [como: criar um Feed Atom para uma galeria privada](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).  
@@ -60,7 +58,7 @@ Você pode compartilhar os controles, modelos e ferramentas que você desenvolve
   
 ```  
 [$RootPath$\ExtensionManager\Repositories\{UniqueGUID}]  
-@={URI}  (REG_SZ)  
+@={URI}  (REG_SZ)  
 Disabled=0 | 1 (DWORD)  
 Priority=0 (highest priority) … MaxInt (lowest priority) (DWORD) (uint)  
 Protocol=VSGallery|Atom|Sharepoint (REG_SZ)  

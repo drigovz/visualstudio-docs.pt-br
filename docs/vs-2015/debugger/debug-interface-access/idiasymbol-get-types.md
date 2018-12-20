@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_types | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_types method
 ms.assetid: 5f056e0c-e15b-4e00-8f78-aadc8574f7ea
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78be235d82e0bf9113bcfdcef0bf85575e5f5d35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d22c6c973fbbd57694849e5ca7d7c7d46f79eb0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467707"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766236"
 ---
 # <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_types](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-types).  
-  
 Recupera uma matriz de tipos específicos do compilador para esse símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_types (   
+HRESULT get_types (   
    DWORD       cTypes,  
    DWORD*      pcTypes,  
    IDiaSymbol* types[]  

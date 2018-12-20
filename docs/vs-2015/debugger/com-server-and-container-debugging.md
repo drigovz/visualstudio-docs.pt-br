@@ -1,7 +1,7 @@
 ---
 title: Servidor COM e contêiner depuração | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,21 +24,19 @@ helpviewer_keywords:
 - COM [Visual Studio], debugging
 ms.assetid: b7ce8696-ebb8-4354-a767-f76b8ada4ac1
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 531c485f50a4a775ca2933c40f5ff74ca9c43717
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a495b90f68d0a12d9fb34babf28aca073580f2aa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466760"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787998"
 ---
 # <a name="com-server-and-container-debugging"></a>Depuração de servidor COM e contêiner
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [servidor COM e contêiner depuração](https://docs.microsoft.com/visualstudio/debugger/com-server-and-container-debugging).  
-  
 Os aplicativos COM executam um número de tarefas fora do controle direto do programador. A comunicação entre DLL, as contagens de uso em objetos e as operações da área de transferência são apenas algumas das áreas onde você pode encontrar comportamento inesperado. Quando isso acontece, a primeira etapa é rastrear a origem do problema.  
   
  O depurador do Visual Studio oferece suporte à depuração em contêineres e servidores. Isso inclui a capacidade de depurar as chamadas de procedimento remoto (RPC).  

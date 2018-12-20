@@ -1,7 +1,7 @@
 ---
 title: Criando um teste de IU codificado controlado por dados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 725628eb8234960b3880f6e5d080a04e54bea6a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3674d6ccbda89a2a3ee1de551587ba034ba51c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932618"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Criando um teste de interface do usuário codificado controlado por dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando um teste de IU codificado controlado por dados](https://docs.microsoft.com/visualstudio/test/creating-a-data-driven-coded-ui-test).  
-  
 Para testar diferentes condições, você pode executar os testes várias vezes com valores de parâmetros diferentes. Os testes de interface do usuário codificados controlados por dados são uma forma conveniente de fazer isso. Definir valores de parâmetro em uma fonte de dados e cada linha da fonte de dados é uma interação do teste de interface do usuário codificado. O resultado geral do teste será baseado no resultado para todas as iterações. Por exemplo, se uma interação de teste falhar, o resultado geral do teste terá falhas.  
   
  **Requisitos**  
@@ -206,13 +204,13 @@ Para testar diferentes condições, você pode executar os testes várias vezes 
   
 #### <a name="step-5--run-the-data-driven-test"></a>Etapa 5 – Executar o teste controlado por dados  
   
-1.  Execute o teste novamente para verificar se o teste agora é controlado por dados.  
+1. Execute o teste novamente para verificar se o teste agora é controlado por dados.  
   
-     Você deve ver o teste ser executado por meio das três iterações usando os valores no arquivo .csv. A validação deve funcionar bem e o teste deve ser exibido conforme passado no Gerenciador de Testes.  
+    Você deve ver o teste ser executado por meio das três iterações usando os valores no arquivo .csv. A validação deve funcionar bem e o teste deve ser exibido conforme passado no Gerenciador de Testes.  
   
- **Diretrizes**  
+   **Diretrizes**  
   
- Para obter mais informações, consulte [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188) (Testando para entrega contínua com o Visual Studio 2012 – Capítulo 2: Teste de unidade: testando o interior) e [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196) (Testando para entrega contínua com o Visual Studio 2012 – Capítulo 5: Automatizando os testes do sistema)  
+   Para obter mais informações, consulte [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188) (Testando para entrega contínua com o Visual Studio 2012 – Capítulo 2: Teste de unidade: testando o interior) e [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196) (Testando para entrega contínua com o Visual Studio 2012 – Capítulo 5: Automatizando os testes do sistema)  
   
 ## <a name="q--a"></a>Perguntas e respostas  
   

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: e295bc8c09f41c4c1c77b216a9d91d0644d2d24e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586346"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388537"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referência de esquema 2.0 de extensão do VSIX
 Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um pacote VSIX. O formato de arquivo é regido por um esquema. A versão 2.0 desse esquema dá suporte a adição de atributos e tipos personalizados.  O esquema do manifesto é extensível. O carregador de manifesto ignora elementos XML e atributos que não entende.  
@@ -130,7 +130,11 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
         -   Única versão # - somente a versão especificada.  
   
         > [!IMPORTANT]
-        >  A versão 2.0 do VSIX esquema foi introduzido no Visual Studio 2012. Para usar este esquema você deve ter o Visual Studio 2012 ou posterior instalado no computador e usa o VSIXInstaller.exe que faz parte do produto. Você pode direcionar versões anteriores do Visual Studio com um Visual Studio 2012 ou posterior VSIXInstaller, mas somente usando as versões posteriores do instalador.  
+        >  A versão 2.0 do VSIX esquema foi introduzido no Visual Studio 2012. Para usar este esquema você deve ter o Visual Studio 2012 ou posterior instalado no computador e usa o VSIXInstaller.exe que faz parte do produto. Você pode direcionar versões anteriores do Visual Studio com um Visual Studio 2012 ou posterior VSIXInstaller, mas somente usando as versões posteriores do instalador. 
+        
+        Números de versão do Visual Studio 2017 podem ser encontrados em [Visual Studio números de compilação e datas de lançamento](../install/visual-studio-build-numbers-and-release-dates.md).
+        
+        Ao expressar a versão para versões do Visual Studio 2017, a versão secundária deve ser sempre **0**. Por exemplo, o Visual Studio 2017 versão 15.3.26730.0 deve ser expresso como [15.0.26730.0,16.0). Isso só é necessária para números de versão do Visual Studio 2017.
   
     -   `AnyAttribute*` -O `<InstallationTarget>` elemento permite que um conjunto em aberto de atributos que é exposto em tempo de execução como um dicionário de par nome-valor.  
   
@@ -162,33 +166,33 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
 ### <a name="assets-element"></a>Elemento de ativos  
  Esse elemento contém uma lista de `<Asset>` marcas para cada elemento de extensão ou o conteúdo exposto por este pacote.  
   
--   `<Asset>` -Esse elemento contém os seguintes atributos e elementos:  
+- `<Asset>` -Esse elemento contém os seguintes atributos e elementos:  
   
-    -   `Type` -Tipo de extensão ou conteúdo representado por este elemento. Cada `<Asset>` elemento deve ter uma única `Type`, mas vários `<Asset>` elementos podem ter o mesmo `Type`. Esse atributo deve ser representado como um nome totalmente qualificado, de acordo com as convenções de namespace. Os tipos conhecidos são:  
+  - `Type` -Tipo de extensão ou conteúdo representado por este elemento. Cada `<Asset>` elemento deve ter uma única `Type`, mas vários `<Asset>` elementos podem ter o mesmo `Type`. Esse atributo deve ser representado como um nome totalmente qualificado, de acordo com as convenções de namespace. Os tipos conhecidos são:  
   
-        1.  VSPackage  
+    1. VSPackage  
   
-        2.  Mefcomponent  
+    2. Mefcomponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         Você pode criar seus próprios tipos e dar-lhes nomes exclusivos. Em tempo de execução dentro do Visual Studio, seu código pode enumerar e acessar esses tipos personalizados por meio da API do Gerenciador de extensões.  
+       Você pode criar seus próprios tipos e dar-lhes nomes exclusivos. Em tempo de execução dentro do Visual Studio, seu código pode enumerar e acessar esses tipos personalizados por meio da API do Gerenciador de extensões.  
   
-    -   `Path` -o caminho relativo para o arquivo ou pasta dentro do pacote que contém o ativo.  
+  - `Path` -o caminho relativo para o arquivo ou pasta dentro do pacote que contém o ativo.  
     
-    -   `TargetVersion` -o intervalo de versão ao qual se aplica o determinado ativo. Usado para envio de várias versões de ativos para diferentes versões do Visual Studio. Requer o Visual Studio 2017.3 ou mais recente ter efeito.
+  - `TargetVersion` -o intervalo de versão ao qual se aplica o determinado ativo. Usado para envio de várias versões de ativos para diferentes versões do Visual Studio. Requer o Visual Studio 2017.3 ou mais recente ter efeito.
   
-    -   `AnyAttribute*` -Um conjunto em aberto de atributos que é exposto em tempo de execução como um dicionário de par nome-valor.  
+  - `AnyAttribute*` -Um conjunto em aberto de atributos que é exposto em tempo de execução como um dicionário de par nome-valor.  
   
-         `<AnyElement>*` -Qualquer conteúdo estruturado é permitido entre um `<Asset>` começa e termina a marca. Todos os elementos são expostos como uma lista de objetos XmlElement. Extensões VSIX podem definir metadados estruturados de tipo específico no arquivo de manifesto e enumerá-los em tempo de execução.  
+     `<AnyElement>*` -Qualquer conteúdo estruturado é permitido entre um `<Asset>` começa e termina a marca. Todos os elementos são expostos como uma lista de objetos XmlElement. Extensões VSIX podem definir metadados estruturados de tipo específico no arquivo de manifesto e enumerá-los em tempo de execução.  
   
 ### <a name="sample-manifest"></a>Exemplo de manifesto  
   

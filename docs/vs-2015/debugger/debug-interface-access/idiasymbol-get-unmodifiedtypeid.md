@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_unmodifiedTypeId | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ dev_langs:
 - C++
 ms.assetid: 4f7fc73c-f524-4d7a-b378-a9ab99a96104
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8beb957ee9f22e5b5fa8e37a2113f9ab1060af27
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05398c184ac8a6cbc4e2214601ec9ddf819eb1a9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462551"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752511"
 ---
 # <a name="idiasymbolgetunmodifiedtypeid"></a>IDiaSymbol::get_unmodifiedTypeId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSymbol::get_unmodifiedTypeId](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-unmodifiedtypeid).  
-  
 Recupera a ID do tipo original (não modificado).  
   
 ## <a name="syntax"></a>Sintaxe  

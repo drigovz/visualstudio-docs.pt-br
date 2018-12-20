@@ -1,7 +1,7 @@
 ---
 title: IDebugExceptionEvent2::GetException | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: 7c98f41d-322b-4e72-a514-cbd4823eb70d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b603f7e5b9b42b387df7922068d690762726b0d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf8a1e309a30339e7c2aef9a685949b73e994265
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462058"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748609"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugExceptionEvent2::GetException](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugexceptionevent2-getexception).  
-  
 Obtém uma descrição detalhada da exceção que disparou este evento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetException(   
+HRESULT GetException(   
    EXCEPTION_INFO* pExceptionInfo  
 );  
 ```  
   
 ```csharp  
-int GetException(   
+int GetException(   
    EXCEPTION_INFO[] pExceptionInfo  
 );  
 ```  

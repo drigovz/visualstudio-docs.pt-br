@@ -1,7 +1,7 @@
 ---
 title: Introdução ao Python | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 08e059955a6552323453e08882bc2bcebd0fc586
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5cb04bb01aaa6eb06c5e3c50aa13ab51c136678c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "47587953"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275282"
 ---
 # <a name="getting-started-with-python"></a>Introdução ao Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Python no Visual Studio](https://docs.microsoft.com/visualstudio/python/python-in-visual-studio).  
-  
 As ferramentas Python para Visual Studio (PTVS), é grátis, [livre](https://github.com/Microsoft/ptvs) plug-in para o Visual Studio que enfrentam um desenvolvimento avançado do Python.  
   
 ## <a name="python-the-language"></a>O idioma do Python

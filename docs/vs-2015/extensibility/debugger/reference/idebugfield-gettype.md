@@ -1,7 +1,7 @@
 ---
 title: IDebugField::GetType | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: b3cdec9f-ef7b-44d0-a775-d17ef7eae968
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af38649a08bc58ae23360110f9b28e23507aa877
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba32934e189c0eaaae5d06b8aaf28a486d126239
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466736"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807290"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugField::GetType](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfield-gettype).  
-  
 Esse método obtém o tipo de campo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetType(   
+HRESULT GetType(   
    IDebugField** ppType  
 );  
 ```  

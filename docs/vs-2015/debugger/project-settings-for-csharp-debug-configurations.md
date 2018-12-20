@@ -1,7 +1,7 @@
 ---
 title: Configurações do projeto para configurações de depuração do c# | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,21 +25,19 @@ helpviewer_keywords:
 - debug configurations, J#
 ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d3a3df064d3014e4f468b73b7f6384b6f66657d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 07da36adc1615217315d5ebb23f8ef62db59f5c7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475368"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721174"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Definições do projeto para configurações de depuração do C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [configurações do projeto para configurações de depuração do c#](https://docs.microsoft.com/visualstudio/debugger/project-settings-for-csharp-debug-configurations).  
-  
 Você pode alterar as configurações de projeto para uma configuração de depuração c# na **páginas de propriedades** janela, conforme discutido na [Debug and Release Configurations](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram onde localizar configurações relacionadas ao depurador na **páginas de propriedade** janela.  
   
 > [!WARNING]

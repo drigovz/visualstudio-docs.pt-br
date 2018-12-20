@@ -1,7 +1,7 @@
 ---
 title: Solução de problemas do Visualizador da Ajuda | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68946af27925347cee497c237de396d31f214e13
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3497d46ed4c9c5a04d8f40cc3056ea282593884
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474170"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934230"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Solucionando problemas do Visualizador da Ajuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [solução de problemas do Help Viewer](https://docs.microsoft.com/visualstudio/ide/troubleshooting-the-help-viewer).  
-  
 Este tópico aborda problemas que podem ocorrer com o Visualizador da Ajuda.  
   
 ## <a name="audio-doesnt-work"></a>O áudio não funciona.  
@@ -52,9 +50,9 @@ Este tópico aborda problemas que podem ocorrer com o Visualizador da Ajuda.
 ## <a name="additional-resources"></a>Recursos adicionais  
  Você pode obter mais informações e fornecer comentários sobre o Visualizador da Ajuda usando os seguintes recursos:  
   
--   Para fornecer comentários, consulte [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) no site da Microsoft ou enviar um email para [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).  
+- Para fornecer comentários, consulte [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) no site da Microsoft ou enviar um email para [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).  
   
--   Para obter mais informações, consulte o fórum [Documentação do Desenvolvedor e Sistema de Ajuda](http://go.microsoft.com/fwlink/?LinkId=232741) e o blog [The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743).  
+- Para obter mais informações, consulte o fórum [Documentação do Desenvolvedor e Sistema de Ajuda](http://go.microsoft.com/fwlink/?LinkId=232741) e o blog [The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743).  
   
 ## <a name="see-also"></a>Consulte também  
  [Guia do administrador do Help Viewer 2.1](http://go.microsoft.com/fwlink/?LinkId=243985)

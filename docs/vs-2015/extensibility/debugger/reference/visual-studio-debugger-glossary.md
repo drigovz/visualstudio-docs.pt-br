@@ -1,7 +1,7 @@
 ---
 title: Glossário do depurador do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: da2b0d2c435cbfc0bca19977074a7b54e8de6315
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37c0608b5684c9d16041ce89707dd81e665b0623
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466503"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757938"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glossário do depurador do Visual Studio
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Glossário do depurador do Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/visual-studio-debugger-glossary).  
-  
 Estes são os termos usados no [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] SDK de depuração.  
   
 ## <a name="terms"></a>Termos  
@@ -67,31 +65,31 @@ Estes são os termos usados no [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)
  ponto de interrupção pendente  
  Fornece uma abstração para os pontos de interrupção antes, durante e após o código é carregado e uma maneira para virtualizar os pontos de interrupção. Um ponto de interrupção:  
   
--   Contém todas as informações necessárias para associar um ponto de interrupção ao código em um ou mais programas.  
+- Contém todas as informações necessárias para associar um ponto de interrupção ao código em um ou mais programas.  
   
--   Pode associar a vários locais de código em um ou mais programas.  
+- Pode associar a vários locais de código em um ou mais programas.  
   
--   Nunca vincular-se ao código.  
+- Nunca vincular-se ao código.  
   
- Carrega cada código de tempo, todos os pontos de interrupção pendentes em um programa são verificados para ver se eles podem associar. Um ponto de interrupção pendente é considerado para conter todos os pontos de interrupção associados que ele se associa.  
+  Carrega cada código de tempo, todos os pontos de interrupção pendentes em um programa são verificados para ver se eles podem associar. Um ponto de interrupção pendente é considerado para conter todos os pontos de interrupção associados que ele se associa.  
   
- process  
- Um processo Win32 físico. Um processo pode conter vários programas. Consulte também *programa*.  
+  process  
+  Um processo Win32 físico. Um processo pode conter vários programas. Consulte também *programa*.  
   
- programa  
- Um único namespace em execução dentro de uma arquitetura de tempo de execução específica. Consulte também *processo*.  
+  programa  
+  Um único namespace em execução dentro de uma arquitetura de tempo de execução específica. Consulte também *processo*.  
   
- Gerenciador de sessão de depuração (SDM)  
- Gerencia a qualquer número de mecanismos de depuração, depuração de qualquer número de programas em vários processos em qualquer número de máquinas. No nível básico, o SDM é um multiplexador de mecanismos de depuração. Além disso, o SDM oferece uma exibição unificada da sessão de depuração para o IDE.  
+  Gerenciador de sessão de depuração (SDM)  
+  Gerencia a qualquer número de mecanismos de depuração, depuração de qualquer número de programas em vários processos em qualquer número de máquinas. No nível básico, o SDM é um multiplexador de mecanismos de depuração. Além disso, o SDM oferece uma exibição unificada da sessão de depuração para o IDE.  
   
- registro de ativação  
- Representa o estado de computação em um determinado quadro e determinado nível de chamadas de função aninhada.  
+  registro de ativação  
+  Representa o estado de computação em um determinado quadro e determinado nível de chamadas de função aninhada.  
   
- thread  
- A noção generalizada de execução de instruções baseadas em pilha em execução em pelo menos um programa.  
+  thread  
+  A noção generalizada de execução de instruções baseadas em pilha em execução em pelo menos um programa.  
   
- ponto de interrupção de aviso  
- Uma abstração para descrever um aviso em um ponto de interrupção pendente. Um ponto de interrupção aviso descreve um motivo por que o ponto de interrupção pendente não tem ainda associado a um local de código. Isso pode ser que o código ainda não carregada para o local descrito pelo ponto de interrupção pendente, ou para algum outro motivo.  
+  ponto de interrupção de aviso  
+  Uma abstração para descrever um aviso em um ponto de interrupção pendente. Um ponto de interrupção aviso descreve um motivo por que o ponto de interrupção pendente não tem ainda associado a um local de código. Isso pode ser que o código ainda não carregada para o local descrito pelo ponto de interrupção pendente, ou para algum outro motivo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Extensibilidade do depurador do Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

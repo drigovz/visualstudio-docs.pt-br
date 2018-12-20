@@ -1,7 +1,7 @@
 ---
 title: PROCESS_INFO_FLAGS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 696951ce-701a-40c2-ac8c-b897f3aae6e2
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f8bd5fdf7e377e7b43325a49aaa9dc505022cef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 453c976ec4dd1c0c0b1c1e67592f840c17a9ac9e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464344"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726795"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [PROCESS_INFO_FLAGS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/process-info-flags).  
-  
 Descreve ou especifica as propriedades de um processo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_PROCESS_INFO_FLAGS {   
+enum enum_PROCESS_INFO_FLAGS {   
    PIFLAG_SYSTEM_PROCESS    = 0x00000001,  
    PIFLAG_DEBUGGER_ATTACHED = 0x00000002,  
    PIFLAG_PROCESS_STOPPED   = 0x00000004,  
@@ -44,7 +42,7 @@ typedef DWORD PROCESS_INFO_FLAGS;
 ```  
   
 ```csharp  
-enum enum_PROCESS_INFO_FLAGS {   
+enum enum_PROCESS_INFO_FLAGS {   
    PIFLAG_SYSTEM_PROCESS    = 0x00000001,  
    PIFLAG_DEBUGGER_ATTACHED = 0x00000002,  
    PIFLAG_PROCESS_STOPPED   = 0x00000004,  

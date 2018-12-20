@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Criação de perfil de linha de comando usando instrumentação | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - performance tools, command-line tools
 ms.assetid: 1c6f1586-3d6a-431f-bedf-c54088e280ba
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38702e7f296640ff43caeb18380aad95636df30a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b670ef29ca2edcc96ed8886b82dd5d7c6cb416b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474198"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741460"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Instruções passo a passo: criação de perfil de linha de comando usando instrumentação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: criação de perfil usando instrumentação da linha de comando](https://docs.microsoft.com/visualstudio/profiling/walkthrough-command-line-profiling-using-instrumentation).  
-  
 Este passo a passo leva você pela criação de perfil de um aplicativo autônomo [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Para coletar dados detalhados de tempo e contagem de chamadas usando o método de instrumentação das ferramentas de criação de perfil. Nesta explicação passo a passo, você concluirá as seguintes tarefas:  
   
 -   Use a ferramenta de linha de comando [VSInstr](../profiling/vsinstr.md) para gerar binários instrumentados.  

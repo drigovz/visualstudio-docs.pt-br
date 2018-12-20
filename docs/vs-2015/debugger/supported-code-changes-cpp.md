@@ -1,7 +1,7 @@
 ---
 title: Suporte para alterações de código (C++) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,21 +26,19 @@ helpviewer_keywords:
 - code changes
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49e56918753d93cfd70a3d9a7458f36a72bbabaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a68ad4add5f8c08e00067c903d5ba3946ca14538
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475587"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797969"
 ---
 # <a name="supported-code-changes-c"></a>Alterações de código suportadas (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [alterações de código com suporte (C++)](https://docs.microsoft.com/visualstudio/debugger/supported-code-changes-cpp).  
-  
 Editar e continuar do Visual C++ trata a maioria dos tipos de alterações de código. Porém, algumas alterações não podem ser aplicadas durante a execução do programa. Para aplicar essas alterações sem suporte, você deverá parar a execução e criar uma versão atualizada do código.  
   
  Ver [editar e continuar (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) para obter informações sobre como trabalhar com editar e continuar do C++ no Visual Studio.  
@@ -48,31 +46,31 @@ Editar e continuar do Visual C++ trata a maioria dos tipos de alterações de c�
 ##  <a name="BKMK_Unsupported_changes"></a> Alterações sem suporte  
  As seguintes alterações de C/C++ não podem ser aplicadas durante uma sessão de depuração:  
   
--   A maioria das alterações aos dados globais ou estáticos.  
+- A maioria das alterações aos dados globais ou estáticos.  
   
--   As alterações nos executáveis que são copiados de outro computador e não são criados localmente.  
+- As alterações nos executáveis que são copiados de outro computador e não são criados localmente.  
   
--   As alterações para um tipo de dados que afeta o layout de um objeto, como, por exemplo, membros de dados de uma classe.  
+- As alterações para um tipo de dados que afeta o layout de um objeto, como, por exemplo, membros de dados de uma classe.  
   
--   Adicionando mais de 64k bytes do novo código ou dados.  
+- Adicionando mais de 64k bytes do novo código ou dados.  
   
--   Adicionando variáveis que exigem um construtor em um ponto antes do ponteiro de instrução.  
+- Adicionando variáveis que exigem um construtor em um ponto antes do ponteiro de instrução.  
   
--   As alterações que afetam o código que exigem a inicialização de tempo de execução.  
+- As alterações que afetam o código que exigem a inicialização de tempo de execução.  
   
--   Adicionar manipuladores de exceção, em alguns casos.  
+- Adicionar manipuladores de exceção, em alguns casos.  
   
--   Alterações aos arquivos de recurso.  
+- Alterações aos arquivos de recurso.  
   
--   Alterações ao código em arquivos somente leitura.  
+- Alterações ao código em arquivos somente leitura.  
   
--   Alterações ao código sem um arquivo PDB correspondente.  
+- Alterações ao código sem um arquivo PDB correspondente.  
   
--   Alterações ao código que não tem arquivo de objeto.  
+- Alterações ao código que não tem arquivo de objeto.  
   
- Se você fizer uma dessas alterações e, em seguida, tenta aplicar alterações de código, um erro ou mensagem de aviso aparece na **saída** janela.  
+  Se você fizer uma dessas alterações e, em seguida, tenta aplicar alterações de código, um erro ou mensagem de aviso aparece na **saída** janela.  
   
--   Editar e Continuar não atualiza bibliotecas estáticas. Se você fizer uma alteração em uma biblioteca estática, a execução continuará com a versão antiga e nenhum aviso será emitido.  
+- Editar e Continuar não atualiza bibliotecas estáticas. Se você fizer uma alteração em uma biblioteca estática, a execução continuará com a versão antiga e nenhum aviso será emitido.  
   
 ##  <a name="BKMK_Unsupported_scenarios"></a> Cenários sem suporte  
  Editar e Continuar para C/C++ está indisponível nos seguintes cenários de depuração:  

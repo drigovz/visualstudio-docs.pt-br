@@ -1,7 +1,7 @@
 ---
 title: 'CA1064: As exceções devem ser públicas | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c35906c41a4c39557b2f72c83308b25cf650f676
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e9d85fef6cd581f32be9438b94264c201869ba01
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587216"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888470"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: as exceções devem ser públicas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1064: as exceções devem ser públicas](https://docs.microsoft.com/visualstudio/code-quality/ca1064-exceptions-should-be-public).
 
 |||
 |-|-|

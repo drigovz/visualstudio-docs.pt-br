@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplierEx2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: dae0050a-a50a-4f35-bfbd-e538f537b20f
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 48b4c26c92f92c2ccb2963c9916509793133d2a3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8deeb9ea6e3f1167a55c77ca8af32e2632d5cbe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465048"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742629"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPortSupplierEx2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportsupplierex2).  
-  
 Fornece suporte para um fornecedor de porta selecionar e interagir com um server core.  
   
 ## <a name="syntax"></a>Sintaxe  

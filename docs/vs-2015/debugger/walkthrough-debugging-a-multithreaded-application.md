@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Depurando um aplicativo multithread | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ helpviewer_keywords:
 - walkthroughs, multithreaded debugging
 ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
 caps.latest.revision: 42
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a13fa717cc7f3952e44fe0dffecf735e7b53345a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5dd742411710698cb2dd626e211cb0e73b8379e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468327"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798619"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Instruções passo a passo: depurando um aplicativo multithread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depurando um aplicativo multithread usando a janela Threads](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-threads-window).  
-  
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] Fornece um melhor **Threads** janela e outro usuário aperfeiçoamentos de interface para tornar mais fácil de depurar aplicativos multi-threaded. Este passo a passo só levará alguns minutos e o ajudará a se familiarizar com os recursos da nova interface para depurar aplicativos de vários threads.  
   
  Para iniciar este passo a passo, você precisará de um projeto de aplicativo de vários threads. Siga as etapas listadas aqui para criar o projeto.  
@@ -107,17 +105,17 @@ Thread::Sleep(3000);
   
 #### <a name="to-discover-the-thread-marker"></a>Para descobrir o marcador de thread  
   
-1.  Com o botão direito no **Threads** janela, em seguida, clique em **Mostrar Threads em origem**.  
+1. Com o botão direito no **Threads** janela, em seguida, clique em **Mostrar Threads em origem**.  
   
-2.  Examine a medianiz no lado esquerdo da janela. Nessa linha, você verá um ícone semelhante a dois threads de pano. Um thread é vermelho e o outro é azul. O marcador de thread indica que um thread está parado nesse local. Possivelmente, o thread está parado nesse local.  
+2. Examine a medianiz no lado esquerdo da janela. Nessa linha, você verá um ícone semelhante a dois threads de pano. Um thread é vermelho e o outro é azul. O marcador de thread indica que um thread está parado nesse local. Possivelmente, o thread está parado nesse local.  
   
-3.  Passe o ponteiro sobre o marcador de thread. Um DataTip que aparece. O DataTip mostra o nome e o número de ID do thread para cada thread parado. Nesse caso, há apenas um thread, cujo nome é provavelmente `<noname>`.  
+3. Passe o ponteiro sobre o marcador de thread. Um DataTip que aparece. O DataTip mostra o nome e o número de ID do thread para cada thread parado. Nesse caso, há apenas um thread, cujo nome é provavelmente `<noname>`.  
   
-4.  Clique com o botão direito no marcador de thread. Observe as opções no menu de atalho.  
+4. Clique com o botão direito no marcador de thread. Observe as opções no menu de atalho.  
   
- Esse ícone é um *marcador de thread*:  
+   Esse ícone é um *marcador de thread*:  
   
- ![Marcador de thread](../debugger/media/threadmarker.gif "ThreadMarker")  
+   ![Marcador de thread](../debugger/media/threadmarker.gif "ThreadMarker")  
   
 ## <a name="flagging-and-unflagging-threads"></a>Sinalizando e removendo a sinalização de threads  
  No [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)], você pode sinalizar os threads para os quais deseja dar atenção especial. Sinalizar threads é uma boa maneira de manter o controle de threads importantes e ignorar threads com os quais você não precisa se preocupar.  

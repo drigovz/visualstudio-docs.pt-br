@@ -1,7 +1,7 @@
 ---
 title: Suporte para alterações de código (c#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,21 +18,19 @@ helpviewer_keywords:
 - Edit and Continue [C#], supported code changes
 ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 caps.latest.revision: 30
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 655d80792bf1a2ab6c1af658bcfb6fb3648f5d10
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d028c35ea5d0f00dd8206fbfe0b086c9dbed067
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464629"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724668"
 ---
 # <a name="supported-code-changes-c"></a>Alterações de código suportadas (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Supported Code Changes (c#)](https://docs.microsoft.com/visualstudio/debugger/supported-code-changes-csharp).  
-  
 Editar e Continuar trata a maioria dos tipos de alterações de código dentro dos corpos do método. A maioria das alterações fora dos corpos do método e algumas alterações dentro dos corpos do método, no entanto, não podem ser aplicadas durante a depuração. Para aplicar essas alterações sem suporte, você deverá parar a depuração e reinicializar com uma versão atualizada do código.  
   
  As seguintes alterações não podem ser aplicadas ao código C# durante uma sessão de depuração:  

@@ -1,7 +1,7 @@
 ---
 title: VSPerfMon | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ helpviewer_keywords:
 - profilng tools,VSPerfCmd
 ms.assetid: 37052afb-7a58-441f-bb17-f1587cc57068
 caps.latest.revision: 35
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b06a91268560f3762ad78b2be238e8e30192ca53
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c9abe6af1a775ad995fccbb6b67e1498224925a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462196"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721314"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [VSPerfMon](https://docs.microsoft.com/visualstudio/profiling/vsperfmon).  
-  
 Você pode usar a ferramenta VSPerfMon para coletar dados de desempenho para um aplicativo. Normalmente essa ferramenta é iniciada pelo VSPerfCmd.exe. VSPerfMon exibe informações adicionais sobre como anexar ou desanexar processo que não está disponível usando a ferramenta VSPerfCmd. Para exibir essas informações, inicie o VSPerfMon em uma janela separada. Para invocar VSPerfMon use a seguinte sintaxe:  
   
 ```  

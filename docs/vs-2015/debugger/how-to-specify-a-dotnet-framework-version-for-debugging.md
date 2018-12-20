@@ -1,7 +1,7 @@
 ---
 title: 'Como: especificar uma versão do .NET Framework para depuração | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ helpviewer_keywords:
 - debugging [Visual Studio], specifying .NET Framework version
 ms.assetid: 7a4893ba-4620-4774-893f-378d4ca28893
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a07975591525f9109fecfbfb5aaa27642fc9562
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c6d6601c5b3affdd57d49d0461c4f3d8e487c67
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464078"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769056"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Como especificar uma versão do .NET Framework para depuração
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: especificar um .NET Framework versão para depuração](https://docs.microsoft.com/visualstudio/debugger/how-to-specify-a-dotnet-framework-version-for-debugging).  
-  
 O depurador do [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] dá suporte a versões anteriores de depuração do Microsoft [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] bem como à versão atual. Se você iniciar um aplicativo do Visual Studio, o depurador sempre poderá identificar a versão correta do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] para o aplicativo que você está depurando. Se o aplicativo já está em execução e usar **anexar**, o depurador pode não ser capaz de identificar uma versão anterior da [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Se isso ocorrer, você receberá uma mensagem de erro, que indica  
   
  O depurador fez uma suposição incorreta sobre a versão do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que seu aplicativo usará.  

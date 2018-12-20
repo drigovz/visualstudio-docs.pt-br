@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPortSuppliers2::GetCount | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 004f78dd-87d0-41a8-bcaa-f7fadbfeb8fc
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce7eee0713d2b9b425ff2f8d3f7925e736bb3e12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7fba59952d86fb908e044810fad6577dc178c700
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466697"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720879"
 ---
 # <a name="ienumdebugportsuppliers2getcount"></a>IEnumDebugPortSuppliers2::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugPortSuppliers2::GetCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugportsuppliers2-getcount).  
-  
 Retorna o número de elementos na enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  

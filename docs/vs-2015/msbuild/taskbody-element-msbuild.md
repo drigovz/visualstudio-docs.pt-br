@@ -1,7 +1,7 @@
 ---
 title: Elemento TaskBody (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83205c5ebb70da7bef370c584beda84de4854047
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb6121a6fc2260ac988552433ee847b13abc32d2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463459"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934139"
 ---
 # <a name="taskbody-element-msbuild"></a>Elemento TaskBody (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento TaskBody (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/taskbody-element-msbuild).  
-  
   
 Contém os dados que são passados para um `UsingTask``TaskFactory`. Para obter mais informações, consulte [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
   

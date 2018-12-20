@@ -1,7 +1,7 @@
 ---
 title: Visualizar código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,34 +15,32 @@ helpviewer_keywords:
 - code, exploring
 ms.assetid: 0dd7d438-393a-4cd3-b417-9bf37379e1b0
 caps.latest.revision: 49
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b0913f88db43743abdc410f75cbfc0d56dc7b46b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 071048fba8d3663639747ea35dbae4375d101c26
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466122"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738925"
 ---
 # <a name="visualize-code"></a>Visualizar código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Visualizar código](https://docs.microsoft.com/visualstudio/modeling/visualize-code).  
-  
 Você pode usar a visualização e modelagem de ferramentas no Visual Studio para ajudá-lo a entender o código existente e descrever seu aplicativo. Isso permite aprender visualmente como suas alterações poderão afetar o código e ajudam a que avaliar o trabalho e os riscos resultam dessas mudanças. Por exemplo:  
   
--   Para entender as relações em seu código, mapear essas relações visualmente.  
+- Para entender as relações em seu código, mapear essas relações visualmente.  
   
--   Para descrever a arquitetura do seu sistema e manter o código consistente com seu design, crie diagramas de camada e validar o código em relação a esses diagramas.  
+- Para descrever a arquitetura do seu sistema e manter o código consistente com seu design, crie diagramas de camada e validar o código em relação a esses diagramas.  
   
--   Para descrever estruturas de classes, crie diagramas de classe.  
+- Para descrever estruturas de classes, crie diagramas de classe.  
   
--   Para modelar e comunicar-se vários aspectos do sistema, desenhe diagramas de modelagem UML (Unified Language). Por exemplo, você pode modelar um sistema de componentes, tipos, as interações e processos.  
+- Para modelar e comunicar-se vários aspectos do sistema, desenhe diagramas de modelagem UML (Unified Language). Por exemplo, você pode modelar um sistema de componentes, tipos, as interações e processos.  
   
- Essas ferramentas também ajudam você a se comunicar com mais facilidade com as pessoas envolvidas com o seu projeto. Por exemplo, você pode usar diagramas de classe UML para criar um Glossário comum para discutir sobre o sistema com os participantes do projeto, os usuários e os membros da equipe.  
+  Essas ferramentas também ajudam você a se comunicar com mais facilidade com as pessoas envolvidas com o seu projeto. Por exemplo, você pode usar diagramas de classe UML para criar um Glossário comum para discutir sobre o sistema com os participantes do projeto, os usuários e os membros da equipe.  
   
- Para ver quais versões do Visual Studio dão suporte a cada recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
+  Para ver quais versões do Visual Studio dão suporte a cada recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
   
 ## <a name="what-do-you-want-to-do"></a>O que você deseja fazer?  
   

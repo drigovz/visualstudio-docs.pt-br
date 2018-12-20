@@ -1,7 +1,7 @@
 ---
 title: 'Erro: Falha na depuração porque a autenticação integrada do Windows não está habilitada. | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,21 +21,19 @@ helpviewer_keywords:
 - debugger, Web application errors
 ms.assetid: 6027cd94-74cf-470f-b7ce-6f6b68bc56ba
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3ef22190b37b85256476259ee42288ffd0ef0bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 0b922e8e8fde8b185207810d107afb9a9c5a6e05
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475876"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757255"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erro: falha na depuração porque a autenticação integrada do Windows não está habilitada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [erro: depuração falhou porque integrada Windows autenticação não está habilitada](https://docs.microsoft.com/visualstudio/debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled).  
-  
 A autenticação do usuário que solicitou a depuração foi impedida por um erro de autenticação. Isso pode ocorrer ao tentar entrar em um aplicativo Web ou serviço Web XML. Uma causa desse erro é que a autenticação integrada do Windows não está habilitada. Para habilitá-la, siga as etapas em “Para habilitar a autenticação integrada do Windows”.  
   
  Se você tiver habilitado a autenticação integrada do Windows e esse erro ainda aparecer, é possível que esse erro seja causado porque **autenticação de resumo para o Windows Domain Servers** está habilitado. Nessa situação, você deverá entrar em contato com o administrador da rede.  

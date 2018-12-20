@@ -1,7 +1,7 @@
 ---
 title: Criar e configurar TableAdapters | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,32 +23,30 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: df2a5313ace294c536dc1e8cdaab6ce0adcaeabb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03cb6c67b4887762885a0cb920eb928359b4708b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917642"
 ---
 # <a name="create-and-configure-tableadapters"></a>Criar e configurar TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar e configurar TableAdapters](https://docs.microsoft.com/visualstudio/data-tools/create-and-configure-tableadapters).  
-  
   
 TableAdapters fornecem comunicação entre seu aplicativo e um banco de dados. Conectar-se ao banco de dados, executar consultas ou procedimentos armazenados e retornará um novos dados de tabela ou um existente de preenchimento <xref:System.Data.DataTable> com os dados retornados. TableAdapters também pode enviar dados atualizados do seu aplicativo no banco de dados.  
   
  TableAdapters são criados para você quando você executa uma das seguintes ações:  
   
--   Execute o [Data Source Configuration Wizard](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) e selecione o **banco de dados** ou **serviço Web** tipo de fonte de dados.  
+- Execute o [Data Source Configuration Wizard](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) e selecione o **banco de dados** ou **serviço Web** tipo de fonte de dados.  
   
--   Arrastar objetos de banco de dados do [Gerenciador de servidores](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) para o **Dataset Designer**.  
+- Arrastar objetos de banco de dados do [Gerenciador de servidores](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) para o **Dataset Designer**.  
   
- Você pode criar um novo TableAdapter e configurá-lo com uma fonte de dados arrastando um TableAdapter da caixa de ferramentas para uma área vazia na **Dataset Designer** superfície.  
+  Você pode criar um novo TableAdapter e configurá-lo com uma fonte de dados arrastando um TableAdapter da caixa de ferramentas para uma área vazia na **Dataset Designer** superfície.  
   
- Para obter uma introdução a TableAdapters, consulte [preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).  
+  Para obter uma introdução a TableAdapters, consulte [preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="use-the-tableadapter-configuration-wizard"></a>Use o Assistente de configuração do TableAdapter  
  Execute o **Assistente de configuração TableAdapter** para criar ou editar TableAdapters e suas DataTables associadas. Você pode configurar um TableAdapter existente clicando na **Dataset Designer**.  

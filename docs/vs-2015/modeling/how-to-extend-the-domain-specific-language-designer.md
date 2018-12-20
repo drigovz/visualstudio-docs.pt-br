@@ -1,7 +1,7 @@
 ---
 title: 'Como: estender o Designer de linguagem específica do domínio | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 568b5f608d06c61b25b84bce56bb8c80a1a6d690
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472750"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878551"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Como estender o Designer de Linguagem Específica do Domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,17 +74,17 @@ Você pode tornar as extensões para o designer que você pode usar para editar 
   
  Para implantar as extensões no principal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]e a outros computadores, siga estas etapas:  
   
-1.  Localize o arquivo de instalação de VSIX, no seu projeto do VSIX na gaveta\\*\*\\\*.vsix  
+1. Localize o arquivo de instalação de VSIX, no seu projeto do VSIX na gaveta\\*\*\\\*.vsix  
   
-2.  Copie esse arquivo para o computador de destino e, em seguida, no Windows Explorer (ou Explorador de arquivos), clique duas vezes nele.  
+2. Copie esse arquivo para o computador de destino e, em seguida, no Windows Explorer (ou Explorador de arquivos), clique duas vezes nele.  
   
-     O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension Manager abre para confirmar se a extensão foi instalada.  
+    O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension Manager abre para confirmar se a extensão foi instalada.  
   
- Para desinstalar a extensão, siga estas etapas:  
+   Para desinstalar a extensão, siga estas etapas:  
   
-1.  na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]diante a **ferramentas** menu, clique em **Gerenciador de extensões**.  
+3. na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]diante a **ferramentas** menu, clique em **Gerenciador de extensões**.  
   
-2.  Selecione a extensão e excluí-lo.  
+4. Selecione a extensão e excluí-lo.  
   
 ## <a name="adding-a-shortcut-menu-command"></a>Adicionando um comando de Menu de atalho  
  Para fazer com que um comando de menu de atalho aparecem na superfície de Designer de DSL ou na janela do Gerenciador de DSL, escreva uma classe que se assemelha a seguir.  

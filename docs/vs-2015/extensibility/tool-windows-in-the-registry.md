@@ -1,7 +1,7 @@
 ---
 title: Ferramenta do Windows no registro | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: c4bb8add-7148-49e4-a377-01d059fd5524
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e0d3b3a1d7a91e8d4d7f8fc80e57434df3d4c62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f24c51b3cf1a4930fa0cc496e12ffd31170389b0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460456"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781901"
 ---
 # <a name="tool-windows-in-the-registry"></a>Ferramenta Windows no registro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ferramenta de Windows no registro](https://docs.microsoft.com/visualstudio/extensibility/tool-windows-in-the-registry).  
-  
 Os VSPackages que fornecem as janelas de ferramentas deve registrar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] como provedores de janela de ferramentas. Janelas de ferramentas criadas usando o modelo de pacote do Visual Studio fazer isso por padrão. Provedores de janela de ferramenta têm chaves de registro do sistema que especifica os atributos de visibilidade, como tamanho de janela de ferramenta padrão e o local, o GUID da janela que serve como o painel de janela de ferramentas e o estilo de encaixe.  
   
  Durante o desenvolvimento, provedores de janela de ferramenta gerenciado registrar janelas de ferramentas adicionando atributos no código-fonte, e em seguida, executando o utilitário RegPkg.exe o assembly resultante. Para obter mais informações, consulte [registrando uma janela de ferramentas](../extensibility/registering-a-tool-window.md).  

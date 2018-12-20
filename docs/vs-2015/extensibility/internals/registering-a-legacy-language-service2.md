@@ -1,7 +1,7 @@
 ---
 title: Registrando uma função de linguagem herdado2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 59fbdb3417bbeb09a47f1c7a7b0552f230a6d269
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: c9077ca36a560c51ec8f8455cc04fb2fe9ba09eb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465824"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803650"
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrar um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [registrando uma função de linguagem herdado2](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-legacy-language-service2).  
-  
 As seções a seguir fornecem listas de entradas do registro para o idioma de várias opções de serviço disponíveis no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
  Na lista a seguir das entradas de registro *VS Reg raiz* é igual a HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*x. y*, onde *x. y* é o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] número de versão.  

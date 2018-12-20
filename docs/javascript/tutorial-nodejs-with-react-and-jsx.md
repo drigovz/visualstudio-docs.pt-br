@@ -2,7 +2,7 @@
 title: Criar um aplicativo Node.js e React
 description: Neste tutorial, você cria um aplicativo usando ferramentas Node.js para Visual Studio
 ms.custom: mvc
-ms.date: 09/06/2018
+ms.date: 11/01/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0615f557d67c16698e0c737d97e45639be8a5eac
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 9203b07767d38443dbad8cc619a40971ca09f2c6
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124996"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750780"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e React no Visual Studio
 
@@ -60,7 +60,7 @@ O webpack empacota arquivos JavaScript para que eles possam ser executados em um
 
 * Você precisa ter o Visual Studio 2017 instalado e a carga de trabalho de desenvolvimento de Node.js.
 
-    Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
+    Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  para instalá-lo gratuitamente.
 
     Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, selecione o link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
 
@@ -121,18 +121,18 @@ Este aplicativo requer um número de módulos npm para ser executado corretament
 
     O arquivo *package.json* do projeto é atualizado com as informações do novo pacote, incluindo a versão do pacote.
 
-1. Em vez de usar a interface do usuário para pesquisar e adicionar o restante dos pacotes um de cada vez, cole o seguinte código em package.json. Para fazer isso, adicione uma seção `dependencies` com este código:
+1. Em vez de usar a interface do usuário para pesquisar e adicionar o restante dos pacotes um de cada vez, cole o seguinte código em *package.json*. Para fazer isso, adicione uma seção `dependencies` com este código:
 
     ```json
     "dependencies": {
-      "express": "~4.16.3",
+      "express": "~4.16.4",
       "path": "~0.12.7",
-      "react": "~16.4.2",
-      "react-dom": "~16.4.2",
-      "ts-loader": "~4.5.0",
-      "typescript": "~2.9.2",
-      "webpack": "~4.17.1",
-      "webpack-cli": "~2.1.5"
+      "react": "~16.6.0",
+      "react-dom": "~16.6.0",
+      "ts-loader": "~5.3.0",
+      "typescript": "~3.1.5",
+      "webpack": "~4.23.1",
+      "webpack-cli": "~3.1.2"
     }
     ```
 
@@ -202,7 +202,7 @@ Para este aplicativo simples, você pode adicionar novos arquivos de projeto à 
     var React = require('react');
     var ReactDOM = require('react-dom');
 
-    class Hello extends React.Component {
+    export class Hello extends React.Component {
         render() {
             return (
                 <h1>Welcome to React!!</h1>
@@ -312,9 +312,11 @@ Cada vez que fizer alterações em *app.tsx*, você precisará executar novament
 
 ## <a name="run-the-app"></a>Executar o aplicativo
 
-1. Certifique-se de que o Chrome seja selecionado como o destino de depuração atual.
+1. Selecione o Chrome como o destino de depuração atual.
 
     ![Selecione o Chrome como destino de depuração](../javascript/media/tutorial-nodejs-react-debug-target.png)
+
+    Se o Chrome estiver disponível em seu computador, mas não aparecer como uma opção, escolha **Procurar com** na lista suspensa de destinos de depuração e selecione Chrome como o destino padrão de navegador (escolha **Definir como padrão**).
 
 1. Para executar o aplicativo, pressione **F5** (**Depurar** > **Iniciar Depuração**) ou no botão de seta verde.
 
@@ -352,47 +354,49 @@ Na seção anterior, você anexou o depurador ao código do Node.js do lado do s
 
 1. Feche todas as janelas do Chrome.
 
-1. Abra o comando **Executar** do botão **Iniciar** do Windows (clique com o botão direito do mouse e escolha **Executar**) e digite o seguinte comando:
+2. Abra o comando **Executar** do botão **Iniciar** do Windows (clique com o botão direito do mouse e escolha **Executar**) e digite o seguinte comando:
 
     `chrome.exe --remote-debugging-port=9222`
 
     Isso inicia o Chrome com a depuração habilitada.
 
-1. Alterne para o Visual Studio e defina um ponto de interrupção no código *app-bundle.js* na função `render()`, conforme mostrado na ilustração a seguir:
+3. Alterne para o Visual Studio e defina um ponto de interrupção no código *app-bundle.js* na função `render()`, conforme mostrado na ilustração a seguir:
 
     ![Definir um ponto de interrupção](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-1. Com o Chrome selecionado como o destino de depuração no Visual Studio, pressione **Ctrl**+**F5** (**Depurar** > **Iniciar sem Depuração**) para executar o aplicativo no navegador.
+    Para localizar a função `render()` no *app-bundle.js*, use **Ctrl**+**F** (**Editar** > **Localizar e Substituir** > **Localização Rápida**).
+
+4. Com o Chrome selecionado como o destino de depuração no Visual Studio, pressione **Ctrl**+**F5** (**Depurar** > **Iniciar sem Depuração**) para executar o aplicativo no navegador.
 
     O aplicativo será aberto em uma nova guia do navegador.
 
-1. Escolha **Depurar** > **Anexar ao Processo**.
+5. Escolha **Depurar** > **Anexar ao Processo**.
 
-1. Na caixa de diálogo **Anexar ao Processo**, escolha **Código WebKit** no campo **Anexar a**, digite **Chrome** na caixa de filtro para filtrar o resultados da pesquisa.
+6. Na caixa de diálogo **Anexar ao Processo**, escolha **Código WebKit** no campo **Anexar a**, digite **Chrome** na caixa de filtro para filtrar o resultados da pesquisa.
 
-1. Selecione o processo do Chrome com a porta de host correta (1337, neste exemplo) e selecione **Anexar**.
+7. Selecione o processo do Chrome com a porta de host correta (1337, neste exemplo) e selecione **Anexar**.
 
     ![Anexar ao processo](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    Você sabe que o depurador foi anexado corretamente quando o Explorador do DOM e o Console do JavaScript são abertos no Visual Studio. Essas ferramentas de depuração são semelhantes às Ferramentas para Desenvolvedores do Chrome e às Ferramentas F12 para Edge.
+    Você sabe que o depurador foi anexado corretamente quando o Explorador do DOM e o Console do JavaScript são abertos no Visual Studio. Essas ferramentas de depuração são semelhantes às Ferramentas para Desenvolvedores do Chrome e às Ferramentas F12 para Microsoft Edge.
 
     > [!NOTE]
     > Se o depurador não for anexado e a mensagem "Não é possível anexar ao processo. Uma operação não é válida no estado atual.", use o Gerenciador de Tarefas para fechar todas as instâncias do Chrome antes de iniciar o Chrome no modo de depuração. As extensões do Chrome podem estar em execução e impedindo o modo de depuração completa.
 
-1. Como o código com o ponto de interrupção já foi executado, atualize a página do navegador para atingir o ponto de interrupção.
+8. Como o código com o ponto de interrupção já foi executado, atualize a página do navegador para atingir o ponto de interrupção.
 
     Enquanto estiver em pausa no depurador, você pode examinar o estado do aplicativo passando o mouse sobre as variáveis e usando as janelas do depurador. Você pode avançar o depurador percorrendo o código (**F5**, **F10** e **F11**).
 
     Você pode atingir o ponto de interrupção em *app-bundle.js* ou sua localização mapeada em *app.tsx*, dependendo do estado do ambiente e do navegador. De qualquer forma, você pode percorrer o código e examinar as variáveis.
 
-    * Se você precisar entrar no código em *app.tsx* e não conseguir, use **Anexar ao Processo**, conforme descrito nas etapas anteriores para anexar o depurador. Em seguida, abra o arquivo *app.tsx* gerado dinamicamente no Gerenciador de Soluções abrindo **Documentos de Script** > **app.tsx**, defina um ponto de interrupção e atualize a página no navegador (defina o ponto de interrupção em uma linha de código que permita pontos de interrupção, como a instrução `return` ou uma declaração `var`).
+   * Se você precisar entrar no código em *app.tsx* e não conseguir, use **Anexar ao Processo**, conforme descrito nas etapas anteriores para anexar o depurador. Em seguida, abra o arquivo *app.tsx* gerado dinamicamente no Gerenciador de Soluções abrindo **Documentos de Script** > **app.tsx**, defina um ponto de interrupção e atualize a página no navegador (defina o ponto de interrupção em uma linha de código que permita pontos de interrupção, como a instrução `return` ou uma declaração `var`).
 
-        Como alternativa, se você precisar entrar no código em *app.tsx* e não conseguir, tente usar a instrução `debugger;` em *app.tsx* ou configure pontos de interrupção nas Ferramentas para Desenvolvedores do Chrome.
+       Como alternativa, se você precisar entrar no código em *app.tsx* e não conseguir, tente usar a instrução `debugger;` em *app.tsx* ou configure pontos de interrupção nas Ferramentas para Desenvolvedores do Chrome.
 
-    * Se você precisar entrar no código em *app-bundle.js* e não conseguir, remova o arquivo sourcemap, *app-bundle.js.map*.
+   * Se você precisar entrar no código em *app-bundle.js* e não conseguir, remova o arquivo sourcemap, *app-bundle.js.map*.
 
-    > [!TIP]
-    > Após anexar ao processo pela primeira vez seguindo estas etapas, você pode rapidamente anexar novamente ao mesmo processo no Visual Studio 2017 escolhendo **Depurar** > **Reanexar ao Processo**.
+     > [!TIP]
+     > Após anexar ao processo pela primeira vez seguindo estas etapas, você pode rapidamente anexar novamente ao mesmo processo no Visual Studio 2017 escolhendo **Depurar** > **Reanexar ao Processo**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

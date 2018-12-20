@@ -1,7 +1,7 @@
 ---
 title: Exibição Módulos – Dados de instrumentação da memória do .NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - Modules view
 ms.assetid: 26516139-0981-41de-917d-ad5769391b8d
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 861dea79ae089781f806760809b2aa1c742bff5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85024296eff4fb4d26b3a588217a1e6fe5221d3e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475993"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755400"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Exibição Módulos – Dados de instrumentação da memória do .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de módulos – dados de instrumentação de memória do .NET](https://docs.microsoft.com/visualstudio/profiling/modules-view-dotnet-memory-instrumentation-data).  
-  
 A exibição Módulos de dados de alocação de memória do .NET coletados usando o método de instrumentação agrupa os dados de tempo e memória pelos módulos que foram executados na execução de criação de perfil. Os dados de criação de perfil das funções do módulo são listados abaixo do nó do módulo.  
   
 ## <a name="general"></a>Geral  

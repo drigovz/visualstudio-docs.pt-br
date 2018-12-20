@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumsymbols:: Get_count | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaEnumSymbols::get_Count method
 ms.assetid: fdaae6d7-e67b-4262-84c9-fbae381e8297
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ff31ee0accb345f9bc892f3b4d463cd97a0afef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc0e3fa089e9a2da31fa514e1ec1718f86f78c9e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474298"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746163"
 ---
 # <a name="idiaenumsymbolsgetcount"></a>IDiaEnumSymbols::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaenumsymbols:: Get_count](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumsymbols-get-count).  
-  
 Recupera o número de símbolos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_Count (   
+HRESULT get_Count (   
    LONG* pRetVal  
 );  
 ```  

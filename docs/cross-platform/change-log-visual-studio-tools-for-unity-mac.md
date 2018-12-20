@@ -1,24 +1,45 @@
 ---
 title: Log de alterações (Ferramentas do Visual Studio para Unity, Mac) | Microsoft Docs
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/13/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 197701258a47b3edc49f4e9477c6634d17b22920
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775181"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027231"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Mac)
 Log de alterações de Ferramentas do Visual Studio para Unity.
+
+## <a name="1700"></a>1.7.0.0
+ Lançado em 13 de novembro de 2018
+
+### <a name="new-features"></a>Novos recursos
+
+-   **Depurador:**
+
+    -   Adição de outras informações de cliente (IP, nome do computador) à caixa de diálogo Anexar.
+
+### <a name="bug-fixes"></a>Correções de bug
+
+-   **Depurador:**
+
+     -   Corrigido um deadlock na biblioteca usada para se comunicar com o mecanismo de depuração do Unity, causando o congelamento do Visual Studio ou Unity, especialmente ao pressionar "Anexar ao Unity" ou ao reiniciar o jogo.
+     
+-   **Integração:**
+
+     -   Correção da ativação de plug-in do Unity quando outro editor padrão é selecionado.
+     
+     -   Correção da criação do modelo de arquivo do Unity.
 
 ## <a name="1602"></a>1.6.0.2
  Lançado em 24 de julho de 2018

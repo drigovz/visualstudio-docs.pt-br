@@ -1,7 +1,7 @@
 ---
 title: Classe span | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - Concurrency::diagnostic::span class
 ms.assetid: 527826a8-2590-43ad-b907-7bc0b7288e92
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea26a5cbe3a744490d3abe5a4792aa13e392bd3e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 2f881cd6e184583f5774a03979b9c437a32fb49a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464531"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737861"
 ---
 # <a name="span-class"></a>Classe span
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [span Class](https://docs.microsoft.com/visualstudio/profiling/span-class).  
-  
 Define uma fase do aplicativo.  
   
 ## <a name="syntax"></a>Sintaxe  

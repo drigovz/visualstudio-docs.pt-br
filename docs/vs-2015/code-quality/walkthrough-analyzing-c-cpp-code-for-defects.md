@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Analisando código C / C++ em busca de defeitos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ helpviewer_keywords:
 - code analysis tool, walkthroughs
 ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
 caps.latest.revision: 37
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1c944a50330f458240b3da2fea8952abb5b8f02b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a5e98ee673d232065dd522b0b81a21760306979
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461993"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782304"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Instruções passo a passo: analisando código do C/C++ em busca de defeitos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Analisando código do C/C++ em busca de defeitos](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-analyzing-c-cpp-code-for-defects).  
-  
 Este passo a passo demonstra como analisar o código C/C++ em busca de possíveis defeitos de código usando a ferramenta de análise de código para código C/C++.  
   
  Neste passo a passo, você percorrer o processo de usar a análise de código para analisar seu código C/C++ em busca de possíveis defeitos de código.  

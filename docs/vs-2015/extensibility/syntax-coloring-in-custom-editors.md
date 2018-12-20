@@ -1,7 +1,7 @@
 ---
 title: Coloração de sintaxe em editores personalizados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 74900b9a-baef-432a-8231-4568fb5e19ad
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a2165d51f77103ad7f6e69a20b5b73ef04429db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc4d7f01a813332665a753a8a2aad54bea8a6980
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462951"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778664"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Coloração de sintaxe em editores personalizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [coloração de sintaxe em editores personalizados](https://docs.microsoft.com/visualstudio/extensibility/syntax-coloring-in-custom-editors).  
-  
 Editores de SDK de ambiente do Studio Visual, incluindo o editor de núcleo, usam serviços de linguagem para identificar itens específicos de sintáticos e exibi-las com as cores especificadas para uma exibição de documento fornecido.  
   
 ## <a name="colorization-requirements"></a>Requisitos de colorização  

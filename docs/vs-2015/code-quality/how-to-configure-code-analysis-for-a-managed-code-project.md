@@ -1,7 +1,7 @@
 ---
 title: 'Como: configurar a análise de código para um projeto de código gerenciado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 34c3088aee4089c69669eaa3af5a08a657553363
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98f3d14b73b0219d0fcec4312648bf613f37378e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475701"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239181"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Como configurar a análise de código para um projeto de código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: configurar a análise de código para um projeto de código gerenciado](https://docs.microsoft.com/visualstudio/code-quality/how-to-configure-code-analysis-for-a-managed-code-project).  
-  
 Na [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] e [!INCLUDE[vsPro](../includes/vspro-md.md)], você pode escolher entre uma lista de análise de código *conjuntos de regra* para aplicar a um projeto de código gerenciado. O conjunto de regras padrão é a regras mínimo recomendado da Microsoft. Você pode aplicar outra regra definida para um projeto ou para todos os projetos em uma solução.  
   
 > [!NOTE]

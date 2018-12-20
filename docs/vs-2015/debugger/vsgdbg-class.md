@@ -1,7 +1,7 @@
 ---
 title: Classe VsgDbg | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6722263c-ccef-40c7-a0ae-87a863fbab00
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 927990cb8fb21dfeaf25a681cfb0a222ecc3c8ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fb4a830c6cc3af49dcb3e26c6711af1a014c9c1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460439"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724915"
 ---
 # <a name="vsgdbg-class"></a>Classe VsgDbg
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [classe VsgDbg](https://docs.microsoft.com/visualstudio/debugger/graphics/vsgdbg-class).  
-  
 Representa uma interface para o controle programático do componente no aplicativo do diagnóstico de gráficos.  
   
 ## <a name="syntax"></a>Sintaxe  

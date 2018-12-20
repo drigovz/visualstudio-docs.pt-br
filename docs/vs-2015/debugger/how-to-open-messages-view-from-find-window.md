@@ -1,7 +1,7 @@
 ---
 title: 'Como: abrir o modo de exibição de mensagens da janela Localizar | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - opening Messages View in Spy++
 ms.assetid: 601a193e-432a-417b-9406-6fec9e401264
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b847124ff6be20f91827d2ec3fc311d5cd48ece2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64d32064ef20b1f7e188624a5a91ffd231b82b66
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467209"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801245"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Como abrir a exibição de mensagens na janela Localizar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: abrir modo de exibição de mensagens da janela localizar](https://docs.microsoft.com/visualstudio/debugger/how-to-open-messages-view-from-find-window).  
-  
 Talvez seja conveniente usar o **localizar janela** caixa de diálogo para selecionar uma janela de destino e, em seguida, abrir um modo de exibição de mensagens dessa janela.  
   
 ### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Para abrir uma janela de exibição de mensagens usando a caixa de diálogo Localizar janela  

@@ -1,7 +1,7 @@
 ---
 title: Protegendo aplicativos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 57de571a778724a5bb951039c92b7d358c7824bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2838534f8241b347cc22b3c50c595b3973f14b56
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464635"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291272"
 ---
 # <a name="securing-applications"></a>Protegendo aplicativos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Protegendo aplicativos](https://docs.microsoft.com/visualstudio/ide/securing-applications).  
-  
 Embora a maioria dos aplicativos tenham desafios de segurança comuns, cada domínio de aplicativo possui seus próprios desafios de segurança.  
   
 ## <a name="general-security-considerations"></a>Considerações gerais de segurança  

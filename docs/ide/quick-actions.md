@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d413d5b440c39c3603e1e909fb0c4645719f188b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 7089a9a654d1c346fefcca119f74a87d89f323b8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34064844"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349368"
 ---
 # <a name="quick-actions"></a>Ações Rápidas
 
@@ -29,6 +29,9 @@ As Ações Rápidas permitem refatorar, gerar ou, de outro modo, modificar o có
 - [Suprimir](../code-quality/use-roslyn-analyzers.md) uma violação de regra do analisador de código
 - Aplicar uma refatoração (por exemplo, [embutir uma variável temporária](../ide/reference/inline-temporary-variable.md))
 - Gerar um código (por exemplo, [introduzir uma variável local](../ide/reference/introduce-local-variable.md))
+
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Refatoração (Visual Studio para Mac)](/visualstudio/mac/refactoring).
 
 As Ações Rápidas podem ser aplicadas usando os ícones de lâmpada ![Ícone de lâmpada](media/light-bulb-icon.png) ou de chave de fenda ![ícone de chave de fenda](media/screwdriver-icon.png) ou pressionando **Ctrl**+**.** quando o cursor estiver em uma linha de código para a qual uma ação está disponível. Você verá uma lâmpada erro ![ícone de lâmpada de erro](media/error-light-bulb-icon.png) se houver um rabisco vermelho, indicando um erro e o Visual Studio terá uma solução disponível para esse erro.
 
@@ -60,3 +63,4 @@ Selecione a seta para baixo ao lado da lâmpada ou do link **Mostrar possíveis 
 - [Ações Rápidas Comuns](../ide/common-quick-actions.md)
 - [Estilos de código e ações rápidas](../ide/code-styles-and-quick-actions.md)
 - [Escrever e refatorar o código (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [Refatoração (Visual Studio para Mac)](/visualstudio/mac/refactoring)

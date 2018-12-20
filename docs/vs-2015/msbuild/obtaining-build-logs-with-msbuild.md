@@ -1,7 +1,7 @@
 ---
 title: Obtendo logs de build com o MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc6d3981b2c671eda2a121f698835dd7932894bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6eb4a1822d0be86d19f25bfaa46e296abc7a73a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475761"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811744"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Obtendo logs de build com o MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [obtendo Logs de Build com o MSBuild](https://docs.microsoft.com/visualstudio/msbuild/obtaining-build-logs-with-msbuild).  
-  
   
 Usando opções com o MSBuild, você pode especificar quantos dados de build você deseja examinar e se deseja salvar os dados de build em um ou mais arquivos. Você também pode especificar um agente personalizado para coletar dados de build. Para obter informações sobre opções de linha de comando do MSBuild que este tópico não aborda, consulte [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).  
   
@@ -38,15 +36,15 @@ Usando opções com o MSBuild, você pode especificar quantos dados de build voc
 ## <a name="setting-the-level-of-detail"></a>Definindo o nível de detalhes  
  Quando você compila um projeto usando MSBuild sem especificar um nível de detalhamento, as seguintes informações aparecem no log de saída:  
   
--   Erros, avisos e mensagens que são classificados como altamente importante.  
+- Erros, avisos e mensagens que são classificados como altamente importante.  
   
--   Alguns eventos de status.  
+- Alguns eventos de status.  
   
--   Um resumo do build.  
+- Um resumo do build.  
   
- Usando a opção **/verbosity** (**/v**), você pode controlar a quantidade de dados exibida no log de saída. Para solucionar o problema, use um nível de detalhes de `detailed` (`d`) ou `diagnostic` (`diag`), que fornece o máximo de informações.  
+  Usando a opção **/verbosity** (**/v**), você pode controlar a quantidade de dados exibida no log de saída. Para solucionar o problema, use um nível de detalhes de `detailed` (`d`) ou `diagnostic` (`diag`), que fornece o máximo de informações.  
   
- O processo de build pode ficar mais lento ao definir o **/verbosity** para `detailed` e ainda mais lento se definir o **/verbosity** para `diagnostic`.  
+  O processo de build pode ficar mais lento ao definir o **/verbosity** para `detailed` e ainda mais lento se definir o **/verbosity** para `diagnostic`.  
   
 ```  
 msbuild MyProject.proj /t:go /v:diag  

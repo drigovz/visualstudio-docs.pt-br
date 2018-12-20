@@ -9,12 +9,12 @@ description: A entrada poderá falhar se forem usados aliases ou nomes amigávei
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637676"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817432"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>A entrada nas assinaturas do Visual Studio poderá falhar ao usar aliases
 
@@ -24,7 +24,7 @@ Dependendo do tipo de conta usado para entrar, é possível que as assinaturas d
 
 O termo "alias" refere-se a usuários com identidades diferentes para entrar no Windows (ou no Active Directory) e para acessar o email.
 
-Os aliases podem ser encontrados quando a empresa tem um Serviço Online da Microsoft para a entrada no diretório, como JohnD@contoso.com, mas os usuários acessam as contas de email usando aliases ou nomes amigáveis, como John.Doe@contoso.com.  Para muitos clientes que gerenciam as assinaturas por VLSC (Volume Licensing Service Center), isso pode resultar em uma experiência de logon malsucedida, pois o endereço de email fornecido (John.Doe@contoso.com) não coincide com o endereço do diretório (JohnD@contoso.com) necessário para a autenticação bem-sucedida por meio da opção "Conta corporativa ou de estudante".
+Os aliases podem ser encontrados quando a empresa tem um Serviço Online da Microsoft para a entrada no diretório, como JohnD@contoso.com, mas os usuários acessam as contas de email usando aliases ou nomes amigáveis, como John.Doe@contoso.com. Para muitos clientes que gerenciam as assinaturas por VLSC (Volume Licensing Service Center), isso pode resultar em uma experiência de logon malsucedida, pois o endereço de email fornecido (John.Doe@contoso.com) não coincide com o endereço do diretório (JohnD@contoso.com) necessário para a autenticação bem-sucedida por meio da opção "Conta corporativa ou de estudante".
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>Como administrador, quais opções tenho?
 
@@ -33,15 +33,15 @@ Como administrador, há duas opções para garantir que os assinantes entrem no 
 - A segunda opção (menos segura) é permitir que assinantes associem o endereço de email "Corporativo ou de Estudante" a uma conta "Pessoal" (também conhecido como MSA ou conta da Microsoft). Confira a seção [Definir uma conta corporativa ou de estudante como uma conta pessoal](#defining-a-work-or-school-account-as-a-personal-account ) neste artigo para obter mais detalhes.
 
 > [!NOTE]
-> Depois que a empresa migrar para o novo [portal de gerenciamento](https://manage.visualstudio.com) de assinaturas do Visual Studio, você poderá aproveitar a nova experiência de administração, que permite que endereços de diretório e email sejam fornecidos como parte do perfil do assinante.  Saiba mais sobre [a migração](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
+> Depois que a empresa migrar para o novo [portal de gerenciamento](https://manage.visualstudio.com) de assinaturas do Visual Studio, você poderá aproveitar a nova experiência de administração, que permite que endereços de diretório e email sejam fornecidos como parte do perfil do assinante. Saiba mais sobre [a migração](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
 
 ## <a name="as-a-subscriber-what-options-do-i-have"></a>Como assinante, quais opções eu tenho?
 
-Da perspectiva do assinante, é importante primeiro trabalhar com o administrador para entender a configuração de identidade da empresa.  Se necessário, o administrador poderá precisar atualizar as configurações de conta no portal de administração ou talvez seja necessário criar uma MSA (conta da Microsoft) usando o endereço de email corporativo.  Antes de executar as etapas para criar uma MSA, fale com o administrador sobre quaisquer políticas ou problemas na execução desta ação.  Confira a seção [Definir uma conta corporativa ou de estudante como uma conta pessoal](#defining-a-work-or-school-account-as-a-personal-account ) neste artigo para obter mais detalhes.
+Da perspectiva do assinante, é importante primeiro trabalhar com o administrador para entender a configuração de identidade da empresa. Se necessário, o administrador poderá precisar atualizar as configurações de conta no portal de administração ou talvez seja necessário criar uma MSA (conta da Microsoft) usando o endereço de email corporativo. Antes de executar as etapas para criar uma MSA, fale com o administrador sobre quaisquer políticas ou problemas na execução desta ação. Veja a seção [Definir uma conta corporativa ou de estudante como uma conta pessoal](#defining-a-work-or-school-account-as-a-personal-account) neste artigo para obter mais detalhes.
 
 ## <a name="assigning-subscribers-to-a-directory-account"></a>Atribuindo assinantes a uma conta de diretório
 
-Em todos os casos, o Gerenciador de Assinatura no VLSC (Volume Licensing Service Center) precisará usar o endereço do diretório para novos assinantes ou atualizar o endereço de email para assinantes "existentes".  É importante observar que o uso do endereço do diretório significará que quaisquer assinantes novos não receberão um Email de Boas-vindas, e o administrador precisará notificar o assinante de que uma assinatura foi atribuída a ele.  Depois de seguir as etapas abaixo, também fique à vontade para usar o [modelo](#notifying-your-subscribers-with-directory-addresses) de email para notificar assinantes e ajudá-los no processo de entrada.
+Em todos os casos, o Gerenciador de Assinatura no VLSC (Volume Licensing Service Center) precisará usar o endereço do diretório para novos assinantes ou atualizar o endereço de email para assinantes "existentes". É importante observar que o uso do endereço do diretório significará que quaisquer assinantes novos não receberão um Email de Boas-vindas, e o administrador precisará notificar o assinante de que uma assinatura foi atribuída a ele. Depois de seguir as etapas abaixo, também fique à vontade para usar o [modelo](#notifying-your-subscribers-with-directory-addresses) de email para notificar assinantes e ajudá-los no processo de entrada.
 
 ### <a name="adding-new-subscribers"></a>Adicionando novos assinantes
 
@@ -88,7 +88,7 @@ Como o Email de Boas-vindas não chegou ao assinante com êxito, copie e cole a 
 
 Olá, %SUBSCRIBER NAME%
 
-Uma assinatura do Visual Studio foi atribuída a você.  Visite https://my.visualstudio.com e faça logon com seu endereço %DIRECTORY ADDRESS% para ativar e acessar sua assinatura.
+Uma assinatura do Visual Studio foi atribuída a você. Visite https://my.visualstudio.com e faça logon com seu endereço %DIRECTORY ADDRESS% para ativar e acessar sua assinatura.
 
 Se houver problemas, contate a equipe de suporte (https://visualstudio.microsoft.com/subscriptions/support/).
 
@@ -99,8 +99,6 @@ Na parte inferior da página, selecione o seguinte:
    - Selecione a opção desejada de Suporte Assistido
 
 ----------- Encerrar Cópia -----------
-
-
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Definindo uma conta corporativa ou de estudante como uma conta pessoal
 
@@ -116,10 +114,10 @@ Depois que uma assinatura for atribuída ao assinante, ele receberá um email so
 1. Navegue até https://my.visualstudio.com e clique em **Criar nova conta da Microsoft**.
 
 2. Preencha os campos:
-    - Insira o endereço de email que recebeu o Email de Boas-vindas na caixa Someone@example.com
-    - Criar a senha
-    - Escolher as configurações promocionais
-    - Clique em **Avançar**.
+   - Insira o endereço de email que recebeu o Email de Boas-vindas na caixa Someone@example.com
+   - Criar a senha
+   - Escolher as configurações promocionais
+   - Clique em **Avançar**.
 
 3. Conclua as etapas de validação e clique em **Avançar**.
 
@@ -141,10 +139,10 @@ Você atribuiu uma assinatura do Visual Studio e pode ter sido direcionado para 
 2. Clique em Criar nova Conta da Microsoft no lado direito
 
 3. Preencha o formulário:
-    - Use o endereço de email corporativo na caixa someone@example.com
-    - Insira uma senha
-    - Selecione a preferência promocional
-    - Clique em Avançar
+   - Use o endereço de email corporativo na caixa someone@example.com
+   - Insira uma senha
+   - Selecione a preferência promocional
+   - Clique em Avançar
 
 4. Conclua as etapas de validação de conta
 

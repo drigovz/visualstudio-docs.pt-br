@@ -1,7 +1,7 @@
 ---
 title: Localizando perdas de memória usando a biblioteca CRT | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,21 +32,19 @@ helpviewer_keywords:
 - _CrtSetDbgFlag
 ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c102bba09901e55e9ec6196009965b912f8be967
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eca7af1cb572714214f264cac35b488fba993bdd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476181"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726554"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Localizando perdas de memória usando a biblioteca CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [localizar vazamentos de memória usando o CRT biblioteca](https://docs.microsoft.com/visualstudio/debugger/finding-memory-leaks-using-the-crt-library).  
-  
 Vazamentos de memória, definidos como a falha em desalocar corretamente a memória anteriormente alocada, estão entre os bugs mais sutis e difíceis de detectar em aplicativos C/C++. Um vazamento de memória pequeno não pode ser observado no início, mas ao longo do tempo, um vazamento de memória progressivo pode causar os sintomas que variam de desempenho reduzido a falhar quando o aplicativo é executado sem memória. Pior, um aplicativo de escape que usa toda a memória disponível pode causar a falha de outro aplicativo, criando a confusão a respeito de que o aplicativo é responsável. Até mesmo vazamentos de memória aparentemente inofensivos podem ser sintomáticos de outros problemas que devem ser corrigidos.  
   
  O depurador do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e as bibliotecas em tempo de execução (CRT) do C fornecem os meios para detectar e identificar vazamentos de memória.  
@@ -114,21 +112,21 @@ Object dump complete.
   
  Se você definir `_CRTDBG_MAP_ALLOC` ou não, o relatório de vazamento de memória exibirá as seguintes informações:  
   
--   O número de alocação de memória, que é `18` nesse exemplo  
+- O número de alocação de memória, que é `18` nesse exemplo  
   
--   O [tipo de bloco](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), que é `normal` neste exemplo.  
+- O [tipo de bloco](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), que é `normal` neste exemplo.  
   
--   O número de alocação de memória hexadecimal, que é `0x00780E80` nesse exemplo.  
+- O número de alocação de memória hexadecimal, que é `0x00780E80` nesse exemplo.  
   
--   O tamanho do bloco, `64 bytes` neste exemplo.  
+- O tamanho do bloco, `64 bytes` neste exemplo.  
   
--   Os primeiros 16 bytes de dados no bloco, no formulário hexadecimal.  
+- Os primeiros 16 bytes de dados no bloco, no formulário hexadecimal.  
   
- O relatório de vazamento de memória identifica um bloco de memória como normal, cliente, ou CRT. Um *bloco normal* é a memória comum atribuída pelo seu programa. Um *bloco de cliente* é um tipo especial de bloco de memória usado por programas MFC para objetos que exigem um destruidor. O operador MFC `new` cria um bloco normal ou um bloco de cliente, como apropriado para o objeto que estiver sendo criado. Um *bloco de CRT* é alocado pela biblioteca de CRT para seu próprio uso. A biblioteca de CRT trata a desalocação desses blocos. Portanto, é improvável que você os veja no relatório de vazamento de memória a menos que algo esteja significativamente errado, por exemplo, a biblioteca de CRT está danificada.  
+  O relatório de vazamento de memória identifica um bloco de memória como normal, cliente, ou CRT. Um *bloco normal* é a memória comum atribuída pelo seu programa. Um *bloco de cliente* é um tipo especial de bloco de memória usado por programas MFC para objetos que exigem um destruidor. O operador MFC `new` cria um bloco normal ou um bloco de cliente, como apropriado para o objeto que estiver sendo criado. Um *bloco de CRT* é alocado pela biblioteca de CRT para seu próprio uso. A biblioteca de CRT trata a desalocação desses blocos. Portanto, é improvável que você os veja no relatório de vazamento de memória a menos que algo esteja significativamente errado, por exemplo, a biblioteca de CRT está danificada.  
   
- Há dois tipos de outros blocos de memória que nunca aparecem nos relatórios de escape de memória. Um *bloco livre* é a memória que foi lançada. Isso significa que não está vazado, por definição. Uma *bloco ignorar* é a memória que você marcou explicitamente para excluí-lo do relatório de vazamento de memória.  
+  Há dois tipos de outros blocos de memória que nunca aparecem nos relatórios de escape de memória. Um *bloco livre* é a memória que foi lançada. Isso significa que não está vazado, por definição. Uma *bloco ignorar* é a memória que você marcou explicitamente para excluí-lo do relatório de vazamento de memória.  
   
- Essas técnicas funcionam para a memória alocada usando a função de CRT `malloc` padrão. Se seu programa aloca memória usando o C++ `new` operador, no entanto, você pode ver apenas o arquivo e número de linha em que a implementação do global `operator new` chamadas `_malloc_dbg` no relatório de vazamento de memória. Como esse comportamento não é muito útil, você pode alterá-lo para relatar a linha que fez a alocação usando uma macro que tem esta aparência: 
+  Essas técnicas funcionam para a memória alocada usando a função de CRT `malloc` padrão. Se seu programa aloca memória usando o C++ `new` operador, no entanto, você pode ver apenas o arquivo e número de linha em que a implementação do global `operator new` chamadas `_malloc_dbg` no relatório de vazamento de memória. Como esse comportamento não é muito útil, você pode alterá-lo para relatar a linha que fez a alocação usando uma macro que tem esta aparência: 
  
 ```cpp  
 #ifdef _DEBUG
@@ -190,25 +188,25 @@ Isso indica que a alocação vazada foi na linha 20 de debug_new.cpp.
   
 #### <a name="to-set-a-memory-allocation-breakpoint-using-the-watch-window"></a>Para definir um ponto de interrupção de alocação de memória usando a janela Inspeção  
   
-1.  Defina um ponto de interrupção no início do seu aplicativo, e depois inicie seu aplicativo.  
+1. Defina um ponto de interrupção no início do seu aplicativo, e depois inicie seu aplicativo.  
   
-2.  Quando o aplicativo for interrompido no ponto de interrupção, o **inspeção** janela.  
+2. Quando o aplicativo for interrompido no ponto de interrupção, o **inspeção** janela.  
   
-3.  No **Watch** , digite `_crtBreakAlloc` no **nome** coluna.  
+3. No **Watch** , digite `_crtBreakAlloc` no **nome** coluna.  
   
-     Se estiver usando a versão com multithread da DLL da biblioteca CRT (a opção /MD), inclua o operador de contexto: `{,,ucrtbased.dll}_crtBreakAlloc`  
+    Se estiver usando a versão com multithread da DLL da biblioteca CRT (a opção /MD), inclua o operador de contexto: `{,,ucrtbased.dll}_crtBreakAlloc`  
   
-4.  Pressione **retornar**.  
+4. Pressione **retornar**.  
   
-     O depurador avalia a chamada e coloca o resultado na **valor** coluna. Esse valor será -1 se você não definir nenhum ponto de interrupção nas alocações de memória.  
+    O depurador avalia a chamada e coloca o resultado na **valor** coluna. Esse valor será -1 se você não definir nenhum ponto de interrupção nas alocações de memória.  
   
-5.  No **valor** coluna, substitua o valor mostrado com o número de alocação da alocação de memória no qual você deseja interromper.  
+5. No **valor** coluna, substitua o valor mostrado com o número de alocação da alocação de memória no qual você deseja interromper.  
   
- Após definir um ponto de interrupção em um número de alocação de memória, você poderá continuar a depuração. Tenha cuidado ao executar o programa nas mesmas condições que a execução anterior de modo que a ordem de alocação de memória não seja alterada. Quando o programa interrompe a alocação de memória especificado, você pode usar o **pilha de chamadas** janela e outras janelas do depurador para determinar as condições sob as quais a memória foi alocada. Em seguida, você pode continuar a execução para observar o que acontece ao objeto e determinar o motivo dele não ser deslocado corretamente.  
+   Após definir um ponto de interrupção em um número de alocação de memória, você poderá continuar a depuração. Tenha cuidado ao executar o programa nas mesmas condições que a execução anterior de modo que a ordem de alocação de memória não seja alterada. Quando o programa interrompe a alocação de memória especificado, você pode usar o **pilha de chamadas** janela e outras janelas do depurador para determinar as condições sob as quais a memória foi alocada. Em seguida, você pode continuar a execução para observar o que acontece ao objeto e determinar o motivo dele não ser deslocado corretamente.  
   
- Definindo um ponto de interrupção de dados no objeto também pode ser útil. Para obter mais informações, consulte [usando pontos de interrupção](../debugger/using-breakpoints.md).  
+   Definindo um ponto de interrupção de dados no objeto também pode ser útil. Para obter mais informações, consulte [usando pontos de interrupção](../debugger/using-breakpoints.md).  
   
- Você também pode definir pontos de interrupção de alocação de memória no código. Há duas formas de fazer isso:  
+   Você também pode definir pontos de interrupção de alocação de memória no código. Há duas formas de fazer isso:  
   
 ```  
 _crtBreakAlloc = 18;  

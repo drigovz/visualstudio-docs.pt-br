@@ -1,7 +1,7 @@
 ---
 title: 'CA2115: Chamar GC. KeepAlive ao usar recursos nativos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 461b0dfe0448636b33e4e2e09a5c15e3aa1e0773
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e8f45b188945febcd3c81fc4be6a9427d8fe94ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47586969"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948740"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: chamar GC.KeepAlive durante o uso de recursos nativos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA2115: chamar GC. KeepAlive ao usar recursos nativos](https://docs.microsoft.com/visualstudio/code-quality/ca2115-call-gc-keepalive-when-using-native-resources).
 
 |||
 |-|-|
@@ -53,11 +51,11 @@ A versão mais recente deste tópico pode ser encontrada em [CA2115: chamar GC. 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Essa regra faz algumas suposições que podem resultar em falsos positivos. Com segurança, você pode suprimir um aviso nessa regra se:
 
--   O finalizador não libera o conteúdo a <xref:System.IntPtr> ou <xref:System.UIntPtr> campo referenciado pelo método.
+- O finalizador não libera o conteúdo a <xref:System.IntPtr> ou <xref:System.UIntPtr> campo referenciado pelo método.
 
--   O método não passa o <xref:System.IntPtr> ou <xref:System.UIntPtr> campo para código não gerenciado.
+- O método não passa o <xref:System.IntPtr> ou <xref:System.UIntPtr> campo para código não gerenciado.
 
- Examine cuidadosamente as outras mensagens antes de excluí-las. Essa regra detecta erros que são difíceis de reproduzir e depurar.
+  Examine cuidadosamente as outras mensagens antes de excluí-las. Essa regra detecta erros que são difíceis de reproduzir e depurar.
 
 ## <a name="example"></a>Exemplo
  No exemplo a seguir `BadMethod` não inclui uma chamada para `GC.KeepAlive` e, portanto, viola a regra. `GoodMethod` contém o código corrigido.

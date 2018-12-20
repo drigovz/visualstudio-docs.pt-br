@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProvider::GetClassTypeByName | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 2c748909-51dc-49b7-b193-19f96fca1138
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2fbf0f2e31581a86cdf717bd78011911b3845877
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ffb3f59996389ec093c872e41e828ac88aa702d7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472623"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789194"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugSymbolProvider::GetClassTypeByName](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname).  
-  
 Esse método obtém o tipo de campo de classe que representa um nome de classe totalmente qualificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetClassTypeByName(   
+HRESULT GetClassTypeByName(   
    LPCOLESTR          pszClassName,  
    NAME_MATCH         nameMatch,  
    IDebugClassField** ppField  

@@ -1,7 +1,7 @@
 ---
 title: Anexar | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7724aa0691e26f35c429a46f570f3f80ed8dd06f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 136ee79c8fc7a3c6d627d186cb2f0dd0266b7a42
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465765"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727333"
 ---
 # <a name="attach"></a>Attach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Attach](https://docs.microsoft.com/visualstudio/profiling/attach).  
-  
 A opção **Anexar** do VSPerfCmd.exe inicia a criação de perfil de exemplo do processo em execução especificado pela PID (ID do processo).  
   
  Para usar a opção **Anexar**, você deve especificar o método de **exemplo** na opção de início.  
@@ -64,7 +62,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="interval-options"></a>Opções de intervalo  
  Uma das seguintes opções de intervalo de amostragem pode ser especificada na linha de comando Anexar. O intervalo de amostragem padrão é 10.000.000 ciclos de relógio do processador.  
   
- **Temporizador**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:** Eventos]**Contador**[**:**`Name`,`Reload`,`FriendlyName`]  
+ **Temporizador**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Eventos]**Contador**[**:**`Name`,`Reload`,`FriendlyName`]  
  Especifica o número e o tipo do intervalo de amostragem.  
   
 -   **Temporizador** – exemplifica cada `Cycles` ciclo de relógio do processador. Se `Cycles` não for especificado, os 10.000.000 ciclos serão usados.  

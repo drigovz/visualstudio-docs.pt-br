@@ -1,6 +1,8 @@
 ---
-title: Depuração remota, um projeto c# ou VB no Visual Studio | Microsoft Docs
-ms.custom: remotedebugging
+title: Depuração remota de um C# ou o projeto do VB | Microsoft Docs
+ms.custom:
+- remotedebugging"=
+- seodec18
 ms.date: 08/14/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 011dc258281eccf7d1a1eca7acbc8cc71a53f00a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 82873b29a173209739497087a4dfe5b293123e2c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281137"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055654"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Depuração remota de um projeto c# ou Visual Basic no Visual Studio
 Para depurar um aplicativo do Visual Studio que tenha sido implantado em um computador diferente, instalar e executar as ferramentas remotas no computador onde você implantou seu aplicativo, configure seu projeto para se conectar ao computador remoto do Visual Studio e, em seguida, executar seu aplicativo.
@@ -56,25 +58,25 @@ O depurador remoto tem suporte no Windows 7 e mais recente (não de telefone) e 
 ## <a name="remote_csharp"></a> O projeto de depuração remota
 O depurador não é possível implantar aplicativos de desktop em Visual C# ou Visual Basic para um computador remoto, mas você ainda pode depurá-los remotamente da seguinte maneira. O procedimento a seguir pressupõe que você deseja para depurá-lo em um computador denominado **MJO DL**, conforme mostrado na ilustração abaixo.
   
-1.  Crie um projeto WPF chamado **MyWpf**.  
+1. Crie um projeto WPF chamado **MyWpf**.  
   
-2.  Defina um ponto de interrupção em algum lugar no código que é alcançado com facilidade.  
+2. Defina um ponto de interrupção em algum lugar no código que é alcançado com facilidade.  
   
-     Por exemplo, você pode definir um ponto de interrupção em um manipulador de botão. Para fazer isso, abra o MainWindow. XAML e adicionar um controle de botão da caixa de ferramentas, clique duas vezes no botão para abrir o manipulador de TI.
+    Por exemplo, você pode definir um ponto de interrupção em um manipulador de botão. Para fazer isso, abra o MainWindow. XAML e adicionar um controle de botão da caixa de ferramentas, clique duas vezes no botão para abrir o manipulador de TI.
   
-3.  No Gerenciador de soluções, clique com botão direito no projeto e escolha **propriedades**.  
+3. No Gerenciador de soluções, clique com botão direito no projeto e escolha **propriedades**.  
   
-4.  Sobre o **propriedades** , escolha o **depurar** guia.  
+4. Sobre o **propriedades** , escolha o **depurar** guia.  
   
-     ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
+    ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
   
-5.  Verifique se o **diretório de trabalho** caixa de texto está vazia.  
+5. Verifique se o **diretório de trabalho** caixa de texto está vazia.  
   
-6.  Escolher **usar computador remoto**e digite **MJO-DL:4022** na caixa de texto. (4022 é o número da porta mostrado na janela do depurador remoto. O número da porta incrementa 2 em cada versão do Visual Studio).
+6. Escolher **usar computador remoto**e digite **MJO-DL:4022** na caixa de texto. (4022 é o número da porta mostrado na janela do depurador remoto. O número da porta incrementa 2 em cada versão do Visual Studio).
   
-7.  Certifique-se de que **habilitar a depuração de código nativo** não estiver selecionada.  
+7. Certifique-se de que **habilitar a depuração de código nativo** não estiver selecionada.  
   
-8.  Compile o projeto.  
+8. Compile o projeto.  
   
 9. Crie uma pasta no computador remoto que é o mesmo caminho que o **Debug** pasta em seu computador do Visual Studio:  **\<caminho de origem > \MyWPF\MyWPF\bin\Debug**.  
   
@@ -93,7 +95,7 @@ O depurador não é possível implantar aplicativos de desktop em Visual C# ou V
   
 13. Se solicitado, insira as credenciais de rede para se conectar ao computador remoto.  
   
-     As credenciais necessárias variam dependendo da configuração de segurança da sua rede. Por exemplo, em um computador de domínio, você pode inserir seu nome de domínio e senha. Em um computador fora do domínio, você pode inserir o nome do computador e um nome de conta de usuário válido, como **MJO-DL\name@something.com**, junto com a senha correta.
+     As credenciais necessárias variam dependendo da configuração de segurança da sua rede. Por exemplo, em um computador de domínio, você pode inserir seu nome de domínio e senha. Em um computador fora do domínio, você pode inserir o nome do computador e um nome de conta de usuário válido, como <strong>MJO-DL\name@something.com</strong>, junto com a senha correta.
 
      Você deve ver que a janela principal do aplicativo do WPF está aberta no computador remoto.
   
@@ -101,7 +103,7 @@ O depurador não é possível implantar aplicativos de desktop em Visual C# ou V
   
 15. No computador do Visual Studio, você deve ver que a execução foi interrompido no ponto de interrupção.
   
- Se você tiver todos os arquivos não são de código que precisam ser usado pelo aplicativo, você precisará incluí-los no projeto do Visual Studio. Crie uma pasta de projeto para os arquivos adicionais (na **Gerenciador de soluções**, clique em **Adicionar > nova pasta**). Em seguida, adicione os arquivos na pasta (na **Gerenciador de soluções**, clique em **Adicionar > Item existente**, em seguida, selecione os arquivos). Sobre o **propriedades** para cada arquivo, defina **Copy to Output Directory** para **copiar sempre**.
+    Se você tiver todos os arquivos não são de código que precisam ser usado pelo aplicativo, você precisará incluí-los no projeto do Visual Studio. Crie uma pasta de projeto para os arquivos adicionais (na **Gerenciador de soluções**, clique em **Adicionar > nova pasta**). Em seguida, adicione os arquivos na pasta (na **Gerenciador de soluções**, clique em **Adicionar > Item existente**, em seguida, selecione os arquivos). Sobre o **propriedades** para cada arquivo, defina **Copy to Output Directory** para **copiar sempre**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurar a depuração com símbolos remotos 
 

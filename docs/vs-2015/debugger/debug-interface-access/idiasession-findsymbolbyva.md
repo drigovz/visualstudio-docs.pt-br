@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Findsymbolbyva | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSession::findSymbolByVA method
 ms.assetid: 0350df23-9a5d-4e8d-8c26-7f571d8fb1af
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 238b1998991b36004c95613be83c03d8ff04508e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4109d7100f9e2f7e4040ceaba2c93bb04aa59b80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474491"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764907"
 ---
 # <a name="idiasessionfindsymbolbyva"></a>IDiaSession::findSymbolByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasession:: Findsymbolbyva](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findsymbolbyva).  
-  
 Recupera um tipo de símbolo especificado que contém ou está mais próximo de um endereço virtual especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findSymbolByVA (   
+HRESULT findSymbolByVA (   
    ULONGLONG    va,  
    SymTagEnum   symtag,  
    IDiaSymbol** ppSymbol  

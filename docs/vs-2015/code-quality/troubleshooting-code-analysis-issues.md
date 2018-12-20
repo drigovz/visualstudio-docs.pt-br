@@ -1,7 +1,7 @@
 ---
 title: Solução de problemas de análise de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 61c7e44d-2780-4df5-9bcb-49e40c1152fc
 caps.latest.revision: 7
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b8d17fcaec0034d2803f769cc5595416f5d56de8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a044b0682b5ac70fc38df3080ef435c5ab6aad3b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463190"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768220"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Solucionando problemas de análise do código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [solução de problemas de análise de código](https://docs.microsoft.com/visualstudio/code-quality/troubleshooting-code-analysis-issues).  
-  
 Este tópico contém informações de solução de problemas para os seguintes problemas de análise de código do Visual Studio.  
   
 -   [Alterações em uma Regra do Visual Studio 2010 Não Afetarão as Versões Anteriores do Visual Studio](#ChildRuleSetChangesInPreviousVersions)  

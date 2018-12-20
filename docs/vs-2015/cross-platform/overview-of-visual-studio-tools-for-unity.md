@@ -1,7 +1,7 @@
 ---
 title: Visão Geral das Ferramentas do Visual Studio para Unity | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: bea1ce00cfae19954153fa994c10b2211be19806
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f403a1001cb32376b91da472acdebaa31cc91682
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474940"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744249"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Visão Geral das Ferramentas do Visual Studio para Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [visão geral de ferramentas do Visual Studio para Unity](https://docs.microsoft.com/visualstudio/cross-platform/overview-of-visual-studio-tools-for-unity).  
-  
   
 Nesta seção, saiba mais sobre os recursos que as Ferramentas do Visual Studio para Unity oferecem e como usá-las para ter mais produtividade no Unity.  
   
@@ -44,15 +42,15 @@ Nesta seção, saiba mais sobre os recursos que as Ferramentas do Visual Studio 
 ## <a name="superior-debugging"></a>Depuração Superior  
  Conecte o poderoso depurador do Visual Studio ao jogo do Unity para depurar scripts do C# e DLLs mesmo se ele estiver em execução autônoma ou no editor do Unity. É possível usar todos os recursos de depuração esperados do Visual Studio.  
   
--   Pontos de interrupção, incluindo pontos de interrupção condicionais.  
+- Pontos de interrupção, incluindo pontos de interrupção condicionais.  
   
--   Avalie expressões complexas na janela Inspeção.  
+- Avalie expressões complexas na janela Inspeção.  
   
--   Inspecione e modifique o valor de variáveis e argumentos.  
+- Inspecione e modifique o valor de variáveis e argumentos.  
   
--   Analise objetos complexos e estruturas de dados.  
+- Analise objetos complexos e estruturas de dados.  
   
- É possível até mesmo depurar um jogo do Unity enquanto ele é executado em outro computador em sua rede.  
+  É possível até mesmo depurar um jogo do Unity enquanto ele é executado em outro computador em sua rede.  
   
 ## <a name="productivity"></a>Produtividade  
  Além da produtividade estabelecida pelo Visual Studio no registro e refatoração de código no C#, as Ferramentas do Visual Studio para Unity fornecem recursos extra para desenvolvedores do Unity.  

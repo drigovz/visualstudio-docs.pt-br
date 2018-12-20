@@ -1,7 +1,7 @@
 ---
 title: Alterando a aparência de um comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,29 +17,27 @@ ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d707451b71efdd41a470c2e1e54353e2fdfe4f01
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 463a9f20b84fdceeeb1165fce2d672263fec30f9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475197"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770664"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Alterando a aparência de um comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [alterando a aparência de um comando](https://docs.microsoft.com/visualstudio/extensibility/changing-the-appearance-of-a-command).  
-  
 Você pode fornecer comentários ao usuário, alterando a aparência de um comando. Por exemplo, convém um comando para uma aparência diferente quando ele não estiver disponível. Você pode tornar os comandos disponíveis ou não disponíveis, ocultar ou mostrá-los, ou marque ou desmarque-os no menu.  
   
  Para alterar a aparência de um comando, execute uma destas ações:  
   
--   Especifica os sinalizadores adequados na definição de comando no arquivo de comando de tabela.  
+- Especifica os sinalizadores adequados na definição de comando no arquivo de comando de tabela.  
   
--   Use o <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> service.  
+- Use o <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> service.  
   
--   Implementar o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> de interface e modificar os objetos de comando bruto.  
+- Implementar o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> de interface e modificar os objetos de comando bruto.  
   
- As etapas a seguir mostram como localizar e atualizar a aparência de um comando usando a estrutura de pacote gerenciado (MPF).  
+  As etapas a seguir mostram como localizar e atualizar a aparência de um comando usando a estrutura de pacote gerenciado (MPF).  
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>Para alterar a aparência de um comando de menu  
   

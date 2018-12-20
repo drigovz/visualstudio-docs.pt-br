@@ -1,7 +1,7 @@
 ---
 title: Criar uma extensão com um modelo de Item do Editor | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 245963c433c264212096d129d99d86367e006b4f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab22549550c0564f7e27b88adae4627f24ab9acc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464464"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772736"
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Criando uma extensão com um modelo de item do editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar uma extensão com um modelo de Item Editor](https://docs.microsoft.com/visualstudio/extensibility/creating-an-extension-with-an-editor-item-template).  
-  
 Você pode usar modelos de item que estão incluídos no SDK do Visual Studio para criar extensões de editor básico que adicionar classificadores, adornos e margens no Editor. Os modelos de item editor estão disponíveis para projetos do Visual c# ou Visual Basic VSIX.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  

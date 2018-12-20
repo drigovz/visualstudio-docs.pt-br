@@ -1,7 +1,7 @@
 ---
 title: Geração em um processo de compilação de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,15 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ce072f85873530d419589f0d1830dc76688afa5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7cadbf9d4d99fa9deaf4d71545f43d2bf49a3f3
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467030"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281804"
 ---
 # <a name="code-generation-in-a-build-process"></a>Geração de código em um processo de build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [geração de código em um processo de compilação](https://docs.microsoft.com/visualstudio/modeling/code-generation-in-a-build-process).
-
 Transformação de texto pode ser chamada como parte do processo de compilação de uma solução do Visual Studio. Há tarefas de compilação que são especializadas para a transformação de texto. As tarefas de compilação T4 executam modelos de texto de tempo de design e também compilam modelos de texto de tempo de execução (pré-processados).
 
 Há algumas diferenças em termos do que as tarefas de compilação podem fazer, dependendo do mecanismo de compilação que você usa. Quando você compila a solução no Visual Studio, um modelo de texto pode acessar a API do Visual Studio (EnvDTE) se o [hostspecific = "true"](../modeling/t4-template-directive.md) atributo é definido. Mas isso não ocorre quando você compila a solução a partir da linha de comando ou ao iniciar uma compilação do servidor com o Visual Studio. Nesses casos, a compilação é executada pelo MSBuild e um host T4 diferente é usado.
@@ -140,7 +137,7 @@ Não há integração interna específica com um sistema de controle do código-
 
 Para especificar que os arquivos somente leitura devem ser substituídos, insira esta propriedade:
 
-`<OverwriteReadOnlyOuputFiles>true</OverwriteReadOnlyOuputFiles>`
+`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>`
 
 A menos que você personalize a etapa de pós-processamento, um aviso será registrado na lista de erros quando um arquivo for substituído.
 
@@ -163,11 +160,11 @@ A transformação de texto ocorre antes de outras tarefas no processo de compila
 
 Em `AfterTransform`, você pode referenciar listas de arquivos:
 
--   GeneratedFiles – uma lista de arquivos gravados pelo processo. Para os arquivos que substituíram os arquivos somente leitura existentes, %(GeneratedFiles.ReadOnlyFileOverwritten) será true. Esses arquivos podem passar por check-out do controle do código-fonte.
+- GeneratedFiles – uma lista de arquivos gravados pelo processo. Para os arquivos que substituíram os arquivos somente leitura existentes, %(GeneratedFiles.ReadOnlyFileOverwritten) será true. Esses arquivos podem passar por check-out do controle do código-fonte.
 
--   NonGeneratedFiles – uma lista de arquivos somente leitura que não foram substituídos.
+- NonGeneratedFiles – uma lista de arquivos somente leitura que não foram substituídos.
 
- Por exemplo, você definirá uma tarefa fazer check-out de GeneratedFiles.
+  Por exemplo, você definirá uma tarefa fazer check-out de GeneratedFiles.
 
 ## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath e OutputFileName
 
@@ -258,7 +255,6 @@ Edite seu arquivo .csproj ou .vbproj para definir uma propriedade do projeto. Es
       <Value>$(myLibFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
 Agora você pode usar sua propriedade de projeto no assembly e diretivas de inclusão:

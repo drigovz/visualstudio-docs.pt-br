@@ -1,7 +1,7 @@
 ---
 title: IDebugStackFrame2::GetInfo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 19c6870b-b94e-453c-bf19-82ce95b79d26
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ac60d775e6ae10d3e689194bb83e433c07165bfa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e394097381751b45b5102c587d4920b9d1a9001
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460959"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749402"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugStackFrame2::GetInfo](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugstackframe2-getinfo).  
-  
 Obtém uma descrição do quadro de pilha.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetInfo (   
+HRESULT GetInfo (   
    FRAMEINFO_FLAGS dwFieldSpec,  
    UINT            nRadix,  
    FRAMEINFO*      pFrameInfo  
@@ -42,7 +40,7 @@ HRESULT GetInfo (
 ```  
   
 ```csharp  
-int GetInfo (   
+int GetInfo (   
    enum_FRAMEINFO_FLAGS dwFieldSpec,  
    uint                 nRadix,  
    FRAMEINFO[]          pFrameInfo  

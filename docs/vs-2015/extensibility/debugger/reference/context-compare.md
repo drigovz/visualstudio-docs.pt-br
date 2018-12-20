@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_COMPARE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c9cc410bf4e518234ddc53359033ca340908d8ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d43e50addf590dabcfcc8e3661d27546881452cb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476128"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770315"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [CONTEXT_COMPARE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/context-compare).  
-  
 Especifica os critérios para comparar dois contextos de memória.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_CONTEXT_COMPARE {   
+enum enum_CONTEXT_COMPARE {   
    CONTEXT_EQUAL                 = 0x0001,  
    CONTEXT_LESS_THAN             = 0x0002,  
    CONTEXT_GREATER_THAN          = 0x0003,  
@@ -49,7 +47,7 @@ typedef DWORD CONTEXT_COMPARE;
 ```  
   
 ```csharp  
-public enum enum_CONTEXT_COMPARE {   
+public enum enum_CONTEXT_COMPARE {   
    CONTEXT_EQUAL                 = 0x0001,  
    CONTEXT_LESS_THAN             = 0x0002,  
    CONTEXT_GREATER_THAN          = 0x0003,  

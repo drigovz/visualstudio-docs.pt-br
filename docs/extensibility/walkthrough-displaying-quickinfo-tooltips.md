@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ad89e544727a67611a305444f85ff022f6b2ff
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824172"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Passo a passo: Dicas de ferramenta de QuickInfo vídeo
 QuickInfo é um recurso IntelliSense, que exibe as assinaturas de método e descrições de quando um usuário move o ponteiro sobre um nome de método. Você pode implementar recursos de baseada na linguagem, como QuickInfo definindo os identificadores para o qual você deseja fornecer descrições de QuickInfo e, em seguida, criando uma dica de ferramenta para exibir o conteúdo. Você pode definir QuickInfo no contexto de um serviço de linguagem, ou você pode definir seu próprio tipo de conteúdo e a extensão de nome do arquivo e exibir o QuickInfo para apenas esse tipo, ou você pode exibir QuickInfo para um tipo de conteúdo existente (como "texto"). Este passo a passo mostra como exibir QuickInfo para o tipo de conteúdo "text".  
   
  O exemplo de QuickInfo neste passo a passo exibe as dicas de ferramenta quando um usuário move o ponteiro sobre um nome de método. Esse design requer que você implementar esses quatro interfaces:  
   
--   interface de origem  
+- interface de origem  
   
--   interface de provedor de origem  
+- interface de provedor de origem  
   
--   interface do controlador  
+- interface do controlador  
   
--   interface de provedor do controlador  
+- interface de provedor do controlador  
   
- Os provedores de origem e o controlador são partes do componente Managed Extensibility Framework (MEF) e serão responsáveis pela exportação as classes de origem e o controlador e importação de serviços e os agentes, como o <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, que cria o texto de dica de ferramenta buffer e o <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, que dispara a sessão de QuickInfo.  
+  Os provedores de origem e o controlador são partes do componente Managed Extensibility Framework (MEF) e serão responsáveis pela exportação as classes de origem e o controlador e importação de serviços e os agentes, como o <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, que cria o texto de dica de ferramenta buffer e o <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, que dispara a sessão de QuickInfo.  
   
- Neste exemplo, a fonte de QuickInfo usa uma lista de embutido em código do método nomes e descrições, mas em implementações completas, o serviço de linguagem e a documentação da linguagem são responsáveis por fornecer esse conteúdo.  
+  Neste exemplo, a fonte de QuickInfo usa uma lista de embutido em código do método nomes e descrições, mas em implementações completas, o serviço de linguagem e a documentação da linguagem são responsáveis por fornecer esse conteúdo.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  A partir do Visual Studio 2015, você não precisa instalar o SDK do Visual Studio no Centro de download. Ela está incluída como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  

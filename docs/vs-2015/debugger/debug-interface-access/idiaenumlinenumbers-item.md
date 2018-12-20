@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumlinenumbers:: item | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaEnumLineNumbers::Item method
 ms.assetid: 08efbeaf-22f7-49e9-96a8-bb906dfe4fd8
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a74fac7ae3a75d88b70360d36dafe5c4d85cb72
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e22ee9fd5df4419583552d8e9071d9d831d3ad82
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460749"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772411"
 ---
 # <a name="idiaenumlinenumbersitem"></a>IDiaEnumLineNumbers::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaenumlinenumbers:: item](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumlinenumbers-item).  
-  
 Recupera um número de linha por meio de um índice.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Item (   
+HRESULT Item (   
    DWORD            index,  
    IDiaLineNumber** lineNumber  
 );  

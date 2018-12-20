@@ -1,7 +1,7 @@
 ---
 title: Notificações e progresso para o Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c7e83a666ed1a7620d80bbfb42422fdb9e4d81e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: e5787d6ce0eddd8d0f9229c54694f30f055c61ca
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462487"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724393"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notificações e progresso para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [notificações e progresso para o Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/notifications-and-progress-for-visual-studio).  
-  
 ##  <a name="BKMK_NotificationSystems"></a> Sistemas de notificação  
   
 ### <a name="overview"></a>Visão geral  

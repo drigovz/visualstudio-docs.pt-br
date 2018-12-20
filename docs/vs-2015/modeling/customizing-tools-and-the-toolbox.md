@@ -1,7 +1,7 @@
 ---
 title: Personalizando ferramentas e a caixa de ferramentas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 97682059e90bac38b0b8b00492ff9fd50a36ffab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 18c727a228b51c484905c381dd98b7db66c9d7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847806"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizando ferramentas e a caixa de ferramentas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [personalizando ferramentas e a caixa de ferramentas](https://docs.microsoft.com/visualstudio/modeling/customizing-tools-and-the-toolbox).  
-  
 É necessário definir os itens da caixa de ferramentas para os elementos que deseja disponibilizar para os usuários adicionarem aos seus modelos. Há dois tipos de ferramentas: ferramentas de elemento e ferramentas de conexão. No designer gerado, um usuário pode selecionar uma ferramenta do elemento para arrastar formas para o diagrama e pode selecionar uma ferramenta de conexão para desenhar links entre as formas. Em geral, as ferramentas do elemento permitem aos usuários adicionarem instâncias de classe de domínio aos seus modelos e as ferramentas de conexão permitem que eles adicionem instâncias de relações de domínio.  
   
  Neste tópico:  
@@ -185,15 +183,15 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ### <a name="custom-code-for-connection-builders"></a>Código personalizado para construtores de conexão  
  Existem quatro caixas de seleção na interface do usuário que definem diferentes tipos de personalização dos construtores de conexão:  
   
--   o **aceitação personalizada** caixa de seleção em uma diretiva de função de origem ou destino  
+- o **aceitação personalizada** caixa de seleção em uma diretiva de função de origem ou destino  
   
--   o **conexão personalizada** caixa de seleção em uma diretiva de função de origem ou destino  
+- o **conexão personalizada** caixa de seleção em uma diretiva de função de origem ou destino  
   
--   o **usar a conexão** caixa de seleção em uma diretiva de conexão  
+- o **usar a conexão** caixa de seleção em uma diretiva de conexão  
   
--   o **personalizado é** propriedade do construtor de conexão  
+- o **personalizado é** propriedade do construtor de conexão  
   
- É necessário fornecer algum código de programa para fazer essas personalizações. Para descobrir qual código é necessário fornecer, verifique uma dessas caixas, clique em Transformar Todos os Modelos e, em seguida, construa sua solução. O resultado será um relatório de erro. Clique duas vezes no relatório de erro para visualizar um comentário que explique qual código deve ser adicionado.  
+  É necessário fornecer algum código de programa para fazer essas personalizações. Para descobrir qual código é necessário fornecer, verifique uma dessas caixas, clique em Transformar Todos os Modelos e, em seguida, construa sua solução. O resultado será um relatório de erro. Clique duas vezes no relatório de erro para visualizar um comentário que explique qual código deve ser adicionado.  
   
 > [!NOTE]
 >  Para adicionar o código personalizado, crie uma definição de classe parcial em um arquivo de código separado dos arquivos de códigos nas pastas GeneratedCode. Para evitar a perda de seu trabalho, é necessário que os arquivos de códigos gerados não sejam editados. Para obter mais informações, consulte [substituindo e estendendo as Classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).  

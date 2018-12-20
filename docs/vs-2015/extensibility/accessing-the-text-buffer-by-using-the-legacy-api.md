@@ -1,7 +1,7 @@
 ---
 title: Acessando o Buffer de texto usando a API herdada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e89b91dbacf60df034ac7ce3653c25c2cae7ab3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7c52e4beb1397e9919c3bf670e009d7ca1060ce1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468290"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722193"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Acessando o Buffer de texto usando a API herdada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [acessar o Buffer de texto usando a API herdada](https://docs.microsoft.com/visualstudio/extensibility/accessing-the-text-buffer-by-using-the-legacy-api).  
-  
 O texto é responsável por gerenciar os fluxos de texto e persistência de arquivo. Embora o buffer pode ler ou gravar outros formatos, toda a comunicação comum com o buffer é executada usando o Unicode. Nas APIs herdadas, o buffer de texto pode usar aquele - ou um sistema de coordenadas bidimensional para identificar os locais de caractere no buffer.  
   
 ## <a name="one--and-two-dimension-coordinate-systems"></a>Dimensão de um e dois sistemas de coordenadas  

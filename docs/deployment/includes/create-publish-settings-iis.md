@@ -1,15 +1,15 @@
 
-1. Feche e reabra o Console de gerenciamento do IIS para mostrar as opções de configuração atualizadas na interface do usuário.
+1. Feche e reabra o Console de gerenciamento do IIS para mostrar opções de configuração atualizadas na interface do usuário.
 
-1. No IIS, clique com botão direito do **Site padrão**, escolha **implantar** > **configurar Web implantar publicação**.
+2. No IIS, clique com o botão direito do mouse em **Site Padrão**, escolha **Implantar** > **Configurar publicação da Implantação da Web**.
 
-    ![Definir a configuração de implantação da Web](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
+    ![Definir a configuração da Implantação da Web](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
 
-1. No **configurar Web implantar publicação** caixa de diálogo caixa, examine as configurações.
+3. Na caixa de diálogo **Configurar publicação da Implantação da Web**, examine as configurações.
 
-1. Clique em **instalação**.
+4. Clique em **Configuração**.
 
-    No **resultados** painel, a saída mostra que os direitos de acesso é concedida ao usuário especificado e que um arquivo com um *publishsettings* extensão de arquivo foi gerada no local mostrado na caixa de diálogo caixa.
+    No painel **Resultados**, a saída mostra que os direitos de acesso foram concedidos ao usuário especificado e que um arquivo com uma extensão *.publishsettings* foi gerado na localização mostrada na caixa de diálogo.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -26,14 +26,14 @@
     </publishData>
     ```
 
-    Dependendo da configuração do Windows Server e o IIS, você verá diferentes valores no arquivo XML. Aqui estão alguns detalhes sobre os valores que você vê:
+    Dependendo da configuração do Windows Server e do IIS, você verá diferentes valores no arquivo XML. Veja alguns detalhes sobre os valores que você vê:
 
-    * O *msdeploy.axd* arquivo referenciado no `publishUrl` atributo é um arquivo de manipulador HTTP gerado dinamicamente para a implantação da Web. (Para fins de teste `http://myhostname:8172` geralmente funciona bem.)
-    * O `publishUrl` porta é definida para a porta 8172, que é o padrão para a implantação da Web.
-    * O `destinationAppUrl` porta é definida para a porta 80, que é o padrão para o IIS.
-    * Se você não conseguir se conectar ao host remoto no Visual Studio usando o nome do host (em etapas posteriores), teste o endereço IP no lugar do nome de host.
+   * O arquivo *msdeploy.axd* referenciado no atributo `publishUrl` é um arquivo de manipulador HTTP gerado dinamicamente para a Implantação da Web. (Para fins de teste `http://myhostname:8172` geralmente também funciona).
+   * A porta `publishUrl` é definida como a porta 8172, que é a padrão para a Implantação da Web.
+   * A porta `destinationAppUrl` é definida como a porta 80, que é a padrão para o IIS.
+   * Se você não conseguir se conectar ao host remoto no Visual Studio usando o nome do host (nas etapas posteriores), teste o endereço IP no lugar do nome de host.
 
-    > [!NOTE]
-    > Se você estiver publicando para IIS em execução em uma VM do Azure, você deve abrir as portas do IIS e a implantação da Web no grupo de segurança de rede. Para obter informações detalhadas, consulte [instalar e executar o IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
+     > [!NOTE]
+     > Se você estiver publicando no IIS em execução em uma VM do Azure, será necessário abrir as portas do IIS e da Implantação da Web no grupo de Segurança de Rede. Para obter informações detalhadas, confira [Instalar e executar o IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
 
-1. Copie esse arquivo para o computador onde você está executando o Visual Studio.
+5. Copie esse arquivo para o computador em que você está executando o Visual Studio.

@@ -13,16 +13,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ddb535a61b654297c8b7d93ac13e1161725d769
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 3f5ddf5a42199c8097e982c6ddd8e559185787fb
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234628"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672334"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opções, Editor de Texto, C/C++, Experimental
 
-Ao alterar essas opções, você pode alterar o comportamento relacionado ao IntelliSense e ao banco de dados de navegação quando estiver programando em C ou C++. Esses recursos são realmente experimentais e podem ser modificados ou removidos do Visual Studio em uma versão futura. Este tópico descreve as opções no Visual Studio 2017. Para Visual Studio 2015, consulte [Opções, Editor de texto, C/C++, Experimental](https://msdn.microsoft.com/library/mt591979.aspx)
+Ao alterar essas opções, você pode alterar o comportamento relacionado ao IntelliSense e ao banco de dados de navegação quando estiver programando em C ou C++. Esses recursos são realmente experimentais e podem ser modificados ou removidos do Visual Studio em uma versão futura. Este tópico descreve as opções no Visual Studio 2017. Para o Visual Studio 2015, selecione **2015** no seletor acima do sumário.
 
 Para acessar esta página de propriedades, pressione **Control + Q** para ativar `Quick Launch` e, em seguida, digite "experimental". O Início Rápido encontrará a página após as primeiras letras. Você também pode ir para ela, escolhendo **Ferramentas | Opções** e **Editor de Texto**, em seguida, **C/C++** e, então, escolhendo **Experimental**.
 
@@ -35,7 +35,7 @@ Esses recursos estão disponíveis em uma instalação do Visual Studio 2017.
 
 O IntelliSense Preditivo limita o número de resultados exibidos na lista suspensa do IntelliSense para que você veja apenas os resultados relevantes no contexto. Por exemplo, se você digitar <code>int x =</code> e invocar a lista suspensa do IntelliSense, verá apenas inteiros ou funções que retornam inteiros. O IntelliSense Preditivo está desativado por padrão.
 
-## <a name="enable-faster-project-load"></a>Habilitar Carregamento de Projeto Mais Rápido
+## <a name="enable-faster-project-load"></a>Habilitar carregamento de projeto mais rápido
 
 **Visual Studio 2017 versão 15.3 e posterior**: esse recurso é chamado agora de **Habilitar Cache de Projeto** e foi movido para a página de propriedades de [Configurações de Projeto do VC++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md).
 Essa opção permite que o Visual Studio coloque em cache os dados de projeto, para quando você abrir o projeto na próxima vez, ele pode carregar esses dados armazenados em cache em vez de recalcular dos arquivos de projeto. Usar dados armazenados em cache pode acelerar significativamente o tempo de carregamento do projeto.
@@ -57,4 +57,4 @@ Você pode procurar outros recursos do editor de texto no [Visual Studio Marketp
 ## <a name="see-also"></a>Consulte também
 
 - [Configurando opções do editor específicas a um idioma](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refatoração em C++ (VC Blog)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+- [Refatoração em C++ (VC Blog)](https://blogs.msdn.microsoft.com/vcblog/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview/)

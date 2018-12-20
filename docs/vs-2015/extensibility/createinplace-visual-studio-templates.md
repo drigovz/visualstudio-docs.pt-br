@@ -1,7 +1,7 @@
 ---
 title: CreateInPlace (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6973c73349a63eaf4e55c4b40fc71e6fc097c90d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9bc14bd5cae376c23ece97cdb7a780a1ae7354e6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474326"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751301"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [CreateInPlace (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/createinplace-visual-studio-templates).  
-  
 Especifica se deve criar o projeto e executar a substituição de parâmetro no local especificado, ou executar a substituição de parâmetro em um local temporário e, em seguida, salve o projeto no local especificado.  
   
  \<VSTemplate >  

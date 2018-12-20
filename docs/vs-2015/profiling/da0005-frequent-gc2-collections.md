@@ -1,7 +1,7 @@
 ---
 title: 'DA0005: coleções de GC2 frequentes | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ f1_keywords:
 - vs.performance.rules.DA0005
 ms.assetid: 8d3f267c-8a74-4cf4-91a5-0b06a76dc2bd
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31a59bf1f53e2757aa5b26019c36f578cbc3f3c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80b3f769a151974559f70d247696fd7abb794731
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464067"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745776"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: coleções de GC2 frequentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DA0005: coleções de GC2 frequentes](https://docs.microsoft.com/visualstudio/profiling/da0005-frequent-gc2-collections).  
-  
 ID da regra | DA0005 |  
 | Categoria de |. Uso do .NET Framework |  
 | Método de criação de perfil |. Memória do .NET |  

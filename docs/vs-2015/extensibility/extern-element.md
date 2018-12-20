@@ -1,7 +1,7 @@
 ---
 title: Elemento extern | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5dce51835164424272874b42b6073131607c7272
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ca5932976b2115b6d9095a5dd4cc61e72800dd1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476423"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726858"
 ---
 # <a name="extern-element"></a>Elemento Extern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento Extern](https://docs.microsoft.com/visualstudio/extensibility/extern-element).  
-  
 O elemento Extern faz referência a todos os arquivos externos de cabeçalho (. h) para mesclar com o arquivo. VSCT em tempo de compilação. Os arquivos a serem mescladas devem estar no caminho de inclusão fornecido ao compilador VSCT ou referenciado por um [incluem o elemento](../extensibility/include-element.md). Os arquivos podem ser outros arquivos. VSCT ou arquivos de cabeçalho C++.  
   
  As definições em arquivos de cabeçalho devem estar no formato "#define [Symbol] [valor]" o valor pode ser outro símbolo, caso ele seja definido anteriormente. Definições podem ser usadas em instruções condicionais de itens de comando. Qualquer símbolo, na verdade não usado será descartado.  

@@ -1,7 +1,7 @@
 ---
 title: Caixa de diálogo Configurações Avançadas (Visualização Simultânea) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ f1_keywords:
 - vs.cv.settings
 ms.assetid: bb3d90aa-5f08-4953-9be0-be6cea11633d
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 28098cceb3225162b283c81ee5fd42d49f09fead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ad91917034dd868aad6c5d78945e4c078fcecee
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464877"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749540"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Caixa de diálogo Configurações Avançadas (Visualizador de Simultaneidade)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [configurações de caixa de diálogo avançadas (visualização simultânea)](https://docs.microsoft.com/visualstudio/profiling/advanced-settings-dialog-box-concurrency-visualizer).  
-  
 Usando a caixa de diálogo **Configurações Avançadas** da Visualização Simultânea, você pode controlar como os rastreamentos são coletados.  A caixa de diálogo tem guias para símbolos, Apenas Meu Código, buffer, filtragem, eventos CLR, marcadores, provedores e arquivos.  
   
 ## <a name="symbols"></a>Símbolos  
@@ -83,15 +81,15 @@ Usando a caixa de diálogo **Configurações Avançadas** da Visualização Simu
 ## <a name="files"></a>Arquivos  
  Na guia **arquivos**, você pode especificar o diretório no qual os arquivos de rastreamento são armazenados sempre que um rastreamento é coletado.  A Visualização Simultânea gera quatro arquivos para cada rastreamento que coleta:  
   
--   Um arquivo de ETL (log de rastreamento de eventos) do modo kernel (*.kernel.etl)  
+- Um arquivo de ETL (log de rastreamento de eventos) do modo kernel (*.kernel.etl)  
   
--   Um arquivo de log de rastreamento de eventos do modo de usuário (*.user.etl)  
+- Um arquivo de log de rastreamento de eventos do modo de usuário (*.user.etl)  
   
--   Um arquivo de dados da Visualização Simultânea (*.CVData)  
+- Um arquivo de dados da Visualização Simultânea (*.CVData)  
   
--   Um arquivo de rastreamento da Visualização Simultânea (*.CVTrace)  
+- Um arquivo de rastreamento da Visualização Simultânea (*.CVTrace)  
   
- Os dois arquivos ETL armazenam os dados brutos de rastreamento e os dois arquivos da Visualização Simultânea armazenam os dados processados.  Os arquivos brutos de ETL normalmente não são usados após o processamento de um rastreamento.  Selecionar a caixa de seleção **Excluir arquivos de ETL (Log de Rastreamento de eventos) após a análise** reduz a quantidade de dados de rastreamento que são armazenados no disco.  
+  Os dois arquivos ETL armazenam os dados brutos de rastreamento e os dois arquivos da Visualização Simultânea armazenam os dados processados.  Os arquivos brutos de ETL normalmente não são usados após o processamento de um rastreamento.  Selecionar a caixa de seleção **Excluir arquivos de ETL (Log de Rastreamento de eventos) após a análise** reduz a quantidade de dados de rastreamento que são armazenados no disco.  
   
 ## <a name="see-also"></a>Consulte também  
  [Apenas Meu Código](../profiling/just-my-code-threads-view.md)   

@@ -1,7 +1,7 @@
 ---
 title: Criando um ponto de interrupção | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6f9f87bb-192e-45e0-9a7a-ffe729e87f7d
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f3b27f3d2bed1971ed875efceee7104048d541d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6494481c89e5455f673287bb9aa2bf70b477522d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463853"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808265"
 ---
 # <a name="creating-a-breakpoint"></a>Criando um ponto de interrupção
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando um ponto de interrupção](https://docs.microsoft.com/visualstudio/extensibility/debugger/creating-a-breakpoint).  
-  
 O exemplo a seguir descreve o processo de criação de um ponto de interrupção.  
   
 ## <a name="methods-in-breakpoint-creation"></a>Métodos de criação de ponto de interrupção  

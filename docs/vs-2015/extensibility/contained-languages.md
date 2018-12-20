@@ -1,7 +1,7 @@
 ---
 title: Contido idiomas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,17 +15,16 @@ ms.assetid: b75bbb51-8e42-41b1-bece-09ab0b1f03cc
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d0b455a526bf1b32de90588a103c23855e730946
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4ff50fe0fe156c548351c378ba3a256e230ec43
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472616"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772009"
 ---
 # <a name="contained-languages"></a>Idiomas independentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)] 
 
-A versão mais recente deste tópico pode ser encontrada em [idiomas contidos](https://docs.microsoft.com/visualstudio/extensibility/contained-languages).  
   
 *Contido idiomas* são linguagens que são contidas por outras linguagens. Por exemplo, o HTML no [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] páginas podem conter [!INCLUDE[csprcs](../includes/csprcs-md.md)] ou [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] scripts. Uma arquitetura de linguagem dual é necessária para o editor de arquivo. aspx fornecer o IntelliSense, coloração e outros recursos de edição para o HTML e a linguagem de script.  
   

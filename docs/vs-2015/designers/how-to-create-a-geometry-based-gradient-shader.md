@@ -1,7 +1,7 @@
 ---
 title: Como criar um sombreador de gradiente com base na geometria | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1e9ef91ad2d7714ca5f589aeccff61967c27e46
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61dd80bb8d8ba4c272beff018d3ab65ffce41dc6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463530"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911870"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Como criar um sombreador de gradiente com base na geometria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: criar um sombreador de gradiente com base na geometria](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-geometry-based-gradient-shader).  
-  
 Este documento demonstra como usar o Designer de Sombreador e a Directed Graph Shader Language para criar um sombreador de gradiente com base na geometria. Esse sombreador ajusta a escala de um valor de cor RGB constante pela altura de cada ponto de um objeto no espaço de mundo.  
   
  Este documento demonstra essas atividades:  
@@ -45,25 +43,25 @@ Este documento demonstra como usar o Designer de Sombreador e a Directed Graph S
   
 #### <a name="to-create-a-geometry-based-gradient-shader"></a>Para criar um sombreador de gradiente com base na geometria  
   
-1.  Crie um sombreador DGSL com o qual trabalhar. Para obter informações sobre como adicionar um sombreador DGSL ao seu projeto, consulte a seção de Introdução em [Designer de Sombreador](../designers/shader-designer.md).  
+1. Crie um sombreador DGSL com o qual trabalhar. Para obter informações sobre como adicionar um sombreador DGSL ao seu projeto, consulte a seção de Introdução em [Designer de Sombreador](../designers/shader-designer.md).  
   
-2.  Desconectar o nó **Ponto de Cor** do nó **Cor Final**. Escolha o terminal **RGB** do nó **Ponto de Cor** e, em seguida, escolha **Quebrar Links**. Isso abre o espaço para o nó que será adicionado na próxima etapa.  
+2. Desconectar o nó **Ponto de Cor** do nó **Cor Final**. Escolha o terminal **RGB** do nó **Ponto de Cor** e, em seguida, escolha **Quebrar Links**. Isso abre o espaço para o nó que será adicionado na próxima etapa.  
   
-3.  Adicione um nó **Multiplicar** ao grafo. Na **Caixa de Ferramentas**, em **Matemática**, selecione **Multiplicar** e mova-a para a superfície de design.  
+3. Adicione um nó **Multiplicar** ao grafo. Na **Caixa de Ferramentas**, em **Matemática**, selecione **Multiplicar** e mova-a para a superfície de design.  
   
-4.  Adicionar um nó **Vetor de Máscara** ao grafo. Na **Caixa de Ferramentas**, em **Utilitário**, selecione **Vetor de Máscara** e mova-o para a superfície de design.  
+4. Adicionar um nó **Vetor de Máscara** ao grafo. Na **Caixa de Ferramentas**, em **Utilitário**, selecione **Vetor de Máscara** e mova-o para a superfície de design.  
   
-5.  Especifique os valores de máscara para o nó **Vetor de Máscara**. No modo de **Seleção**, selecione o nó **Vetor de Máscara** e, em seguida, na janela **Propriedades**, defina a propriedade **Verde / Y** como **Verdadeiro** e, em seguida, defina as propriedades **Vermelho / X**, **Azul / Z** e **Alfa / W** como **Falso**. Neste exemplo, as propriedades **Vermelho / X**, **Verde / Y** e **Azul / Z** correspondem aos componentes x, y e z do nó **Posição do Mundo** e **Alfa / W** não é usada. Como somente **Verde / Y** está definido como **Verdadeiro**, apenas o componente y do vetor de entrada permanecerá depois que ele for mascarado.  
+5. Especifique os valores de máscara para o nó **Vetor de Máscara**. No modo de **Seleção**, selecione o nó **Vetor de Máscara** e, em seguida, na janela **Propriedades**, defina a propriedade **Verde / Y** como **Verdadeiro** e, em seguida, defina as propriedades **Vermelho / X**, **Azul / Z** e **Alfa / W** como **Falso**. Neste exemplo, as propriedades **Vermelho / X**, **Verde / Y** e **Azul / Z** correspondem aos componentes x, y e z do nó **Posição do Mundo** e **Alfa / W** não é usada. Como somente **Verde / Y** está definido como **Verdadeiro**, apenas o componente y do vetor de entrada permanecerá depois que ele for mascarado.  
   
-6.  Adicione um nó **Posição do Mundo** ao grafo. Na **Caixa de Ferramentas**, em **Constantes**, selecione **Posição do Mundo** e mova para a superfície de design.  
+6. Adicione um nó **Posição do Mundo** ao grafo. Na **Caixa de Ferramentas**, em **Constantes**, selecione **Posição do Mundo** e mova para a superfície de design.  
   
-7.  Mascarar a posição do espaço de mundo do fragmento. No modo de **Seleção**, mova o terminal de **Saída** do nó **Posição do Mundo** para o terminal **Vetor** do nó **Vetor de Máscara**. Essa conexão mascara a posição do fragmento para ignorar os componentes x e z.  
+7. Mascarar a posição do espaço de mundo do fragmento. No modo de **Seleção**, mova o terminal de **Saída** do nó **Posição do Mundo** para o terminal **Vetor** do nó **Vetor de Máscara**. Essa conexão mascara a posição do fragmento para ignorar os componentes x e z.  
   
-8.  Multiplique a constante de cor RGB pela posição de espaço de mundo mascarada. Mova o terminal **RGB** do nó **Ponto de Cor** para o terminal **Y** do nó **Multiplicar** e, em seguida, mova o terminal de **Saída** do nó **Vetor de Máscara** para o terminal **X** do nó **Multiplicar**. Essa conexão ajusta a escala do valor de cor pela altura do pixel no espaço de mundo.  
+8. Multiplique a constante de cor RGB pela posição de espaço de mundo mascarada. Mova o terminal **RGB** do nó **Ponto de Cor** para o terminal **Y** do nó **Multiplicar** e, em seguida, mova o terminal de **Saída** do nó **Vetor de Máscara** para o terminal **X** do nó **Multiplicar**. Essa conexão ajusta a escala do valor de cor pela altura do pixel no espaço de mundo.  
   
 9. Conecte o valor de cor ajustado à cor final. Mova o terminal de **Saída** do nó **Multiplicar** para o terminal **RGB** do nó **Cor Final**.  
   
- A ilustração a seguir mostra o grafo de sombreador concluído e uma visualização do sombreador aplicado a uma esfera.  
+   A ilustração a seguir mostra o grafo de sombreador concluído e uma visualização do sombreador aplicado a uma esfera.  
   
 > [!NOTE]
 >  Nesta ilustração é especificada uma cor laranja para demonstrar melhor o efeito do sombreador, mas como a forma de visualização não tem posição no espaço de mundo, o sombreador não pode ser visualizado totalmente no Designer de Sombreador. O sombreador deve ser visualizado em uma cena real para demonstrar o efeito completo.  

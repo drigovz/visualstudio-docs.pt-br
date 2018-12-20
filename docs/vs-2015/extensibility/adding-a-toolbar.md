@@ -1,7 +1,7 @@
 ---
 title: Adicionando uma barra de ferramentas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ebfd86a05be72b5a0c35664dee0dc0fcd4189be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 038b8e8503a89dd0ec565d3d1b5acf20e6437600
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473264"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787946"
 ---
 # <a name="adding-a-toolbar"></a>Adicionando uma barra de ferramentas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionando uma barra de ferramentas](https://docs.microsoft.com/visualstudio/extensibility/adding-a-toolbar).  
-  
 Este passo a passo mostra como adicionar uma barra de ferramentas ao IDE do Visual Studio.  
   
  Uma barra de ferramentas é uma faixa horizontal ou vertical que contém botões que estão associados aos comandos. Dependendo da sua implementação, uma barra de ferramentas no IDE pode ser reposicionada, encaixada em qualquer lado da janela principal do IDE ou feita estar na frente de outras janelas.  

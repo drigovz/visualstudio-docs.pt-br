@@ -1,7 +1,7 @@
 ---
 title: 'Como: fornecer contexto para editores | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9509dfeef5af4866531af96fce6f4c1717100a94
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60ce6535375e79f7fef7fe25ef6a8381a02b0ad5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473587"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778378"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Como: fornecer contexto para editores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: fornecer contexto para os editores](https://docs.microsoft.com/visualstudio/extensibility/how-to-provide-context-for-editors).  
-  
 Para um editor, o contexto está ativo somente quando o editor tem o foco ou imediatamente antes do foco foi movido para uma janela de ferramentas tinha o foco. Você pode fornecer contexto para um editor, fazendo o seguinte:  
   
-1.  Crie um recipiente de contexto.  
+1. Crie um recipiente de contexto.  
   
-2.  Publica o recipiente de contexto para o identificador de elemento de seleção (SEID).  
+2. Publica o recipiente de contexto para o identificador de elemento de seleção (SEID).  
   
-3.  Manter o contexto no recipiente de.  
+3. Manter o contexto no recipiente de.  
   
- Essas tarefas são cobertas pelos procedimentos a seguir. Para obter mais informações sobre como fornecer o contexto, consulte **programação robusta** mais adiante neste tópico.  
+   Essas tarefas são cobertas pelos procedimentos a seguir. Para obter mais informações sobre como fornecer o contexto, consulte **programação robusta** mais adiante neste tópico.  
   
 ### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>Para criar um recipiente de contexto para um editor ou designer  
   

@@ -1,7 +1,7 @@
 ---
 title: Escrevendo agentes com reconhecimento de multiprocessador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 628b1ef037e472f4295f2b82684a46a0bc5ba402
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b05c0f1782382f437a5e1d90bf19c724a05ca6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465445"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826353"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Escrevendo agentes de log com reconhecimento de multiprocessador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [escrevendo agentes Multi reconhecimento](https://docs.microsoft.com/visualstudio/msbuild/writing-multi-processor-aware-loggers).  
-  
   
 A capacidade do [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de tirar proveito de vários processadores pode diminuir o tempo de criação do projeto, mas também adiciona complexidade para criar o log de eventos. Em um ambiente de processador único, eventos, erros, avisos e mensagens chegam ao agente de uma maneira previsível e sequencial. No entanto, em um ambiente com vários processadores, eventos de origens diferentes podem chegar ao mesmo tempo ou fora de sequência. Para isso, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fornece um agente com reconhecimento de multiprocessador e um novo modelo de registro em log e permite que você crie "agentes de encaminhamento" personalizados.  
   
@@ -73,13 +71,13 @@ public interface INodeLogger: ILogger
   
  Há duas maneiras de usar o registro em log distribuído:  
   
--   Personalize o agente de encaminhamento pré-fabricado denominado <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.  
+- Personalize o agente de encaminhamento pré-fabricado denominado <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.  
   
--   Escrever seu próprio agente de encaminhamento personalizado.  
+- Escrever seu próprio agente de encaminhamento personalizado.  
   
- Você pode modificar o ConfigurableForwardingLogger para atender às suas necessidades. Para fazer isso, chame o agente na linha de comando usando MSBuild.exe e liste os eventos de build que você deseja que o agente encaminhe para o nó central.  
+  Você pode modificar o ConfigurableForwardingLogger para atender às suas necessidades. Para fazer isso, chame o agente na linha de comando usando MSBuild.exe e liste os eventos de build que você deseja que o agente encaminhe para o nó central.  
   
- Como alternativa, você pode criar um agente de encaminhamento personalizado. Ao criar um agente de encaminhamento personalizado, você pode ajustar o comportamento do agente. No entanto, criar um agente de encaminhamento personalizado é mais complexo do que apenas personalizar o ConfigurableForwardingLogger. Para obter mais informações, consulte [Criando Agentes de Encaminhamento](../msbuild/creating-forwarding-loggers.md).  
+  Como alternativa, você pode criar um agente de encaminhamento personalizado. Ao criar um agente de encaminhamento personalizado, você pode ajustar o comportamento do agente. No entanto, criar um agente de encaminhamento personalizado é mais complexo do que apenas personalizar o ConfigurableForwardingLogger. Para obter mais informações, consulte [Criando Agentes de Encaminhamento](../msbuild/creating-forwarding-loggers.md).  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Usando o ConfigurableForwardingLogger para registro em log distribuído simples  
  Para anexar um ConfigurableForwardingLogger ou um agente de encaminhamento personalizado, use a opção `/distributedlogger` (`/dl` para a forma abreviada) em um build de linha de comando MSBuild.exe. O formato para especificar os nomes dos tipos de agente e classes é o mesmo que para a opção `/logger`, exceto em casos em que um agente distribuído tenha sempre duas classes de registro em log em vez de uma, o agente de encaminhamento e o agente central. Este é um exemplo de como anexar um agente de encaminhamento personalizado chamado XMLForwardingLogger.  

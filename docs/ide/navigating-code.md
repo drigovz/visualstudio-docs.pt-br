@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb711763e96cf6959a71b002f09cefa1ced44734
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627168"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894463"
 ---
 # <a name="navigate-code"></a>Navegue pelos códigos
 
@@ -65,10 +65,10 @@ Para ocultar a barra de navegação, altere a opção **Barra de navegação** n
 
 Localiza todas as referências ao elemento selecionado na solução. Você pode usar isso para verificar possíveis efeitos colaterais de uma refatoração grande ou para verificar código "morto". Pressione **F8** para pular entre os resultados. Para obter mais informações, confira [Localizar referências no código](finding-references.md).
 
-Entrada        | Função
+Entrada | Função
 ------------ | ---
 **Teclado** | Coloque o cursor de texto em algum lugar dentro do nome do tipo e pressione **Shift**+**F12**
-**Mouse**    | Selecione **Localizar Todas as Referências** no menu de contexto
+**Mouse** | Selecione **Localizar Todas as Referências** no menu de contexto
 
 ## <a name="reference-highlighting"></a>Realce de referência
 
@@ -104,37 +104,37 @@ Veja mais informações sobre esses comandos no tópico [Localizar código usand
 
 Ir para Definição leva para a definição do elemento selecionado. Para saber mais, veja [Ir para Definição e Inspecionar Definição](../ide/go-to-and-peek-definition.md).
 
-Entrada        | Função
+Entrada | Função
 ------------ | ---
 **Teclado** | Coloque o cursor de texto em algum lugar dentro do nome do tipo e pressione **F12**
-**Mouse**    | Clique com o botão direito do mouse no nome do tipo e selecione **Ir para Definição** ou pressione **Ctrl** e clique no nome do tipo (novo no Visual Studio 2017 versão 15.4)
+**Mouse** | Clique com o botão direito do mouse no nome do tipo e selecione **Ir para Definição** ou pressione **Ctrl** e clique no nome do tipo (novo no Visual Studio 2017 versão 15.4)
 
 ## <a name="peek-definition"></a>Inspecionar Definição
 
 Espiar Definição exibe a definição do elemento selecionado em uma janela sem sair do local atual no editor de código. Para obter mais informações, confira [Como exibir e editar o código usando Espiar Definição](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) e [Ir para Definição e Espiar Definição](../ide/go-to-and-peek-definition.md).
 
-Entrada        | Função
+Entrada | Função
 ------------ | ---
 **Teclado** | Coloque o cursor de texto em algum lugar dentro do nome do tipo e pressione **Alt**+**F12**
-**Mouse**    | Clique com o botão direito do mouse no nome do tipo e selecione **Espiar Definição** ou pressione **Ctrl** e clique no nome do tipo (se a opção **Abrir definição na exibição de espiada** estiver marcada)
+**Mouse** | Clique com o botão direito do mouse no nome do tipo e selecione **Espiar Definição** ou pressione **Ctrl** e clique no nome do tipo (se a opção **Abrir definição na exibição de espiada** estiver marcada)
 
 ## <a name="go-to-implementation"></a>Ir Para Implementação
 
 Usando Ir para Implementação, você pode navegar de uma classe ou tipo base para suas implementações. Se houver várias implementações, você as verá listadas na janela **Localizar Resultados de Símbolos**:
 
-Entrada        | Função
+Entrada | Função
 ------------ | ---
 **Teclado** | Coloque o cursor de texto em algum lugar dentro do nome do tipo e pressione **Ctrl**+**F12**
-**Mouse**    | Clique com o botão direito do mouse no nome do tipo e selecione **Ir Para Implementação**
+**Mouse** | Clique com o botão direito do mouse no nome do tipo e selecione **Ir Para Implementação**
 
 ## <a name="call-hierarchy"></a>Hierarquia de chamadas
 
 Você pode exibir as chamadas de e para um método na [Janela Hierarquia de Chamada](../ide/reference/call-hierarchy.md):
 
-Entrada        | Função
+Entrada | Função
 ------------ | ---
 **Teclado** | Coloque o cursor de texto em algum lugar dentro do nome do tipo e pressione **Ctrl**+**K**, **Ctrl**+**T**
-**Mouse**    | Clique com o botão direito do mouse no nome do membro e selecione **Exibir Hierarquia de Chamadas**
+**Mouse** | Clique com o botão direito do mouse no nome do membro e selecione **Exibir Hierarquia de Chamadas**
 
 ## <a name="next-method-and-previous-method-commands-visual-basic"></a>Comandos Próximo Método e Método Anterior (Visual Basic)
 

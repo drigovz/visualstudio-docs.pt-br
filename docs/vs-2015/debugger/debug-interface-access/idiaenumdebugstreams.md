@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumDebugStreams | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaEnumDebugStreams interface
 ms.assetid: 611caf4f-7a5f-4aa4-b909-52feeb3cc752
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22ca3c54405c27e8ff6998ed9f49565e9a6e2e29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e1224905a22d5679efb4ff5df6107502ab8a28b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465435"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795369"
 ---
 # <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaEnumDebugStreams](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumdebugstreams).  
-  
 Enumera os vários fluxos de depuração contidos na fonte de dados.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDiaEnumDebugStreams : IUnknown  
+IDiaEnumDebugStreams : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  

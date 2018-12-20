@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugBoundBreakpoints2::Reset | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0f0522a5-6a97-4c4e-859b-cc4476e6c527
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ce2ae3a11c07b1e59b013871996d2c968669aee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea54ea6b25baa1c7b5fc35507405cec9ea7ecffe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464904"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739911"
 ---
 # <a name="ienumdebugboundbreakpoints2reset"></a>IEnumDebugBoundBreakpoints2::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugBoundBreakpoints2::Reset](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugboundbreakpoints2-reset).  
-  
 Redefine a enumeração para o primeiro elemento.  
   
 ## <a name="syntax"></a>Sintaxe  

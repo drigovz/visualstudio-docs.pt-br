@@ -1,7 +1,7 @@
 ---
 title: Uso de rede | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e324f81d4f7580a25f0f2b5c1850c1343a85c6ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3dd68bec55b53d1b4618e8ae1679603577daf295
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467084"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726841"
 ---
 # <a name="network-usage"></a>Uso de rede
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [analisar o uso de rede em aplicativos UWP no Visual Studio](https://docs.microsoft.com/visualstudio/profiling/network-usage).  
-  
 A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as operações de rede executadas usando a [API Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx). Analisar os dados pode ajudar a resolver problemas, como problemas de autenticação e acesso, uso incorreto de cache e exibição ruim e desempenho de download.  
   
  A ferramenta de rede dá suporte somente a aplicativos da Plataforma Universal do Windows. Outras plataformas não têm suporte no momento.  
@@ -36,19 +34,19 @@ A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as 
 ## <a name="collecting-network-tool-data"></a>Coleta de dados da ferramenta de rede  
  Você deve executar a ferramenta de **rede** com um projeto aberto do Visual Studio no computador do Visual Studio.  
   
-1.  Abra o projeto no Visual Studio.  
+1. Abra o projeto no Visual Studio.  
   
-2.  No menu, clique em **Depurar/Criador de Perfil de Desempenho...**. Escolha **Rede**, **Iniciar**.  
+2. No menu, clique em **Depurar/Criador de Perfil de Desempenho...**. Escolha Rede, **Iniciar**.  
   
-3.  A ferramenta de rede começa coletando o tráfego HTTP do seu aplicativo.  
+3. A ferramenta de rede começa coletando o tráfego HTTP do seu aplicativo.  
   
-     Ao executar seu aplicativo, a exibição de resumo no painel esquerdo automaticamente exibe uma lista de operações HTTP capturadas. Selecione um item na exibição de resumo para obter mais informações no painel de detalhes no painel direito.  
+    Ao executar seu aplicativo, a exibição de resumo no painel esquerdo automaticamente exibe uma lista de operações HTTP capturadas. Selecione um item na exibição de resumo para obter mais informações no painel de detalhes no painel direito.  
   
-4.  Selecione **Parar** para fechar o aplicativo.  
+4. Selecione **Parar** para fechar o aplicativo.  
   
- A janela de relatório deve ser semelhante a:  
+   A janela de relatório deve ser semelhante a:  
   
- ![A janela de rede](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
+   ![A janela de rede](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Análise de dados  
  Você pode analisar o tráfego HTTP capturado enquanto o aplicativo é executado ou mesmo depois que o aplicativo foi fechado, selecionando qualquer uma das operações de rede exibidas no modo de exibição de resumo.  

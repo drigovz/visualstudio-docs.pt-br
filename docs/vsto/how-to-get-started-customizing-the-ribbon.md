@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0ee9866c01031948fc47bbe95bf762c9328b99a8
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7a4c7edbc78182908ea7bce9b91945bbbccdb54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254599"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838331"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Como: Introdução à personalização da faixa de opções
   Para personalizar a faixa de opções de um aplicativo do Microsoft Office, adicione uma **faixa de opções (Visual Designer)** ou **da faixa de opções (XML)** item a um projeto do Office.  
@@ -32,45 +32,45 @@ ms.locfileid: "35254599"
   
 ### <a name="to-add-a-ribbon-to-a-project"></a>Para adicionar uma faixa de opções para um projeto  
   
-1.  Sobre o **Project** Menu, clique em **Adicionar Novo Item**.  
+1. Sobre o **Project** Menu, clique em **Adicionar Novo Item**.  
   
-2.  No **Adicionar Novo Item** caixa de diálogo, selecione **faixa de opções (Visual Designer)** ou **da faixa de opções (XML)**. Para obter mais informações sobre esses modelos, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).  
+2. No **Adicionar Novo Item** caixa de diálogo, selecione **faixa de opções (Visual Designer)** ou **da faixa de opções (XML)**. Para obter mais informações sobre esses modelos, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).  
   
-3.  No **nome** , digite um nome para o item da faixa de opções.  
+3. No **nome** , digite um nome para o item da faixa de opções.  
   
-     Nomes não podem conter os seguintes caracteres:  
+    Nomes não podem conter os seguintes caracteres:  
   
-    -   Libra (#)  
+   -   Libra (#)  
   
-    -   Porcentagem (%))  
+   -   Porcentagem (%))  
   
-    -   E comercial (&)  
+   -   E comercial (&)  
   
-    -   Asterisco (*)  
+   -   Asterisco (*)  
   
-    -   Barra vertical (|)  
+   -   Barra vertical (|)  
   
-    -   Barra invertida (\\)  
+   -   Barra invertida (\\)  
   
-    -   Dois-pontos (:)  
+   -   Dois-pontos (:)  
   
-    -   Aspas duplas (")  
+   -   Aspas duplas (")  
   
-    -   Menor que (\<)  
+   -   Menor que (\<)  
   
-    -   Maior que (>)  
+   -   Maior que (>)  
   
-    -   Ponto de interrogação (?)  
+   -   Ponto de interrogação (?)  
   
-    -   Uma barra (/)  
+   -   Uma barra (/)  
   
-    -   Espaços iniciais ou finais (' ')  
+   -   Espaços iniciais ou finais (' ')  
   
-    -   Nomes reservados do Windows ou DOS como ("nul", "aux", "con", "com1", "lpt1" e assim por diante)  
+   -   Nomes reservados do Windows ou DOS como ("nul", "aux", "con", "com1", "lpt1" e assim por diante)  
   
-4.  Clique em **OK**.  
+4. Clique em **OK**.  
   
- O item da faixa de opções aparece na **Gerenciador de soluções**. Para obter informações sobre as próximas etapas, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).  
+   O item da faixa de opções aparece na **Gerenciador de soluções**. Para obter informações sobre as próximas etapas, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Acesso a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)   

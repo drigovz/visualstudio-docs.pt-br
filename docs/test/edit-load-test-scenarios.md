@@ -1,5 +1,5 @@
 ---
-title: Editando cenários de teste de carga no Visual Studio
+title: Cenários de teste de carga
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c589e58fb1e5b6a63706889de666d4e622f0ceb5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 865be7c7c6371f92f85d853a7dde045274fc5efb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180237"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896530"
 ---
 # <a name="edit-load-test-scenarios"></a>Editar cenários de teste de carga
 
 Um *cenário* de teste de carga especifica o padrão de carga, a combinação de testes, a combinação de navegadores e a combinação de redes. Cenários são importantes porque permitem que você configure testes para simular cargas de trabalho complexas e realistas.
 
 Por exemplo, você pode testar um site de comércio eletrônico que tem um front-end de Internet usado por centenas de clientes simultâneos em muitas velocidades de conexão e que usam diferentes navegadores. O mesmo site também pode ter uma função de administração que é usada por funcionários internos para atualizar produtos e exibir estatísticas. Esses usuários internos acessariam normalmente o site usando o mesmo navegador e uma conexão de alta velocidade de rede local. Você deve encapsular as propriedades desses dois grupos de usuários diferentes em cenários diferentes. Cada cenário pode conter um tipo de usuário virtual. Nesse caso, um cenário de teste de carga poderá ser criado para representar clientes virtuais e outro cenário poderá ser criado para representar usuários internos virtuais de um site.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="scenario-components"></a>Componentes do cenário
 
@@ -46,7 +48,7 @@ Um cenário tem várias outras propriedades que você pode editar usando o **Edi
 ## <a name="tasks"></a>Tarefas
 
 |Tarefas|Tópicos associados|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Adicionar pausas artificiais de interação humana em seu cenário:** tempos de processamento são usados para simular o comportamento humano que faz com que as pessoas esperem entre interações com um site. Os tempos de processamento ocorrem entre as solicitações em um teste de desempenho na Web e entre as iterações de teste em um cenário de teste de carga. Usar tempos de processamento em um teste de carga pode ser útil ao criar simulações de carga mais precisas.|-   [Editar tempos de processamento para simular atrasos de interação humana no site](../test/edit-think-times-in-load-test-scenarios.md)|
 |**Especificar o número de usuários virtuais para seu cenário:** você pode configurar as propriedades do padrão de carga para especificar como a carga simulada do usuário é definida durante um teste de carga. Você obtém três padrões de carga internos: constante, etapa e baseado em metas. Escolha o padrão de carga e ajuste as propriedades até os níveis apropriados às metas do teste de carga.|-   [Editar padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
 |**Configurar a probabilidade de um usuário virtual que executa um teste no cenário:** é possível usar a combinação de testes, que especifica a probabilidade de um usuário virtual que executa um teste determinado em um cenário de teste de carga. Isso permite a você simular a carga de forma mais realista. Em vez de ter apenas um fluxo de trabalho com seus aplicativos, você pode ter vários fluxos de trabalho, que é uma aproximação de como os usuários finais interagem com seus aplicativos.|-   [Editar modelos de cominação de testes](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|

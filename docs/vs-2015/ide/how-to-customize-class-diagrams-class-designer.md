@@ -1,7 +1,7 @@
 ---
 title: Como personalizar diagramas de classe (Designer de Classe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d55744331cfa0aa78649a3654d7863ecc2287835
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a4b163aef25972968933d3352486aab9ebbf962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466274"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950970"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Como personalizar diagramas de classe (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: Personalizar diagramas de classe (Designer de classe)](https://docs.microsoft.com/visualstudio/ide/how-to-customize-class-diagrams-class-designer).  
-  
 É possível alterar como os diagramas de classes exibem informações. Você pode personalizar o diagrama inteiro ou os tipos individuais na superfície de design.  
   
  Por exemplo, é possível ajustar o nível de zoom de um diagrama de classes inteiro, alterar como os membros de tipo individual são agrupados e classificados, ocultar ou mostrar relações, bem como mover tipos individuais ou em conjunto para qualquer lugar no diagrama.  
@@ -131,11 +129,11 @@ A versão mais recente deste tópico pode ser encontrada em [como: Personalizar 
   
 ##  <a name="DisplayAssociationAndInheritance"></a> Mostrar relações ocultas  
   
-1.  Abra e selecione um arquivo de diagrama de classes no Designer de Classe.  
+1. Abra e selecione um arquivo de diagrama de classes no Designer de Classe.  
   
-2.  Clique com o botão direito do mouse no tipo com a associação ou a herança oculta.  
+2. Clique com o botão direito do mouse no tipo com a associação ou a herança oculta.  
   
- Clique em **Mostrar Todos os Membros** para linhas de associação e em **Mostrar Classe Base** ou **Mostrar Classes Derivadas** para linhas de herança.  
+   Clique em **Mostrar Todos os Membros** para linhas de associação e em **Mostrar Classe Base** ou **Mostrar Classes Derivadas** para linhas de herança.  
   
 ##  <a name="RemoveCodeAndShape"></a> Remover uma forma de um diagrama de classe  
  Você pode remover uma forma de tipo do diagrama de classes sem afetar o código subjacente do tipo. Remover formas de tipo de um diagrama de classes afeta somente esse diagrama: o código subjacente que define o tipo e outros diagramas que exibem o tipo não são afetados.  

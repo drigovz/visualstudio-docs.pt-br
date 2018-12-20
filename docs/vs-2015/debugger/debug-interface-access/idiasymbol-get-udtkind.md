@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_udtkind | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_udtKind method
 ms.assetid: 4002f887-aea6-4475-b302-67c57079fe0a
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0a47dea769f4a11977eae5fa53cd503d16819e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a519f124e83b4cde9d05e6846b6be5d4802e153
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460800"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739010"
 ---
 # <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_udtkind](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-udtkind).  
-  
 Recupera a variedade de um tipo definido pelo usuário (UDT).  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_udtKind (   
+HRESULT get_udtKind (   
    DWORD* pRetVal  
 );  
 ```  

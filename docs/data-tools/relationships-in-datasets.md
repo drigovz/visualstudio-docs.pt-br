@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 78d190e843aa51c794fc41c803cef3fce21005f9
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 812b464fe3e9742309a1ce6918d8d6b383101bf8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864110"
 ---
 # <a name="create-relationships-between-datasets"></a>Criar relações entre conjuntos de dados
 Conjuntos de dados que contêm dados relacionados a tabelas usam <xref:System.Data.DataRelation> objetos para representar uma relação pai/filho entre as tabelas e para retornar registros relacionados uns dos outros. Adicionar tabelas relacionadas a conjuntos de dados usando o **Data Source Configuration Wizard**, ou o **Dataset Designer**, cria e configura o <xref:System.Data.DataRelation> objeto para você.
@@ -58,7 +58,7 @@ Como parte da restrição foreign key, você pode especificar regras de integrid
 As regras que você pode fazer são especificados no <xref:System.Data.Rule> enumeração e estão listadas na tabela a seguir.
 
 |Regra de restrição de chave estrangeira|Ação|
-|----------------------------------|------------|
+| - |------------|
 |<xref:System.Data.Rule.Cascade>|A alteração (update ou delete) feita no registro pai também é feita em registros relacionados na tabela filho.|
 |<xref:System.Data.Rule.SetNull>|Registros filho não são excluídos, mas a chave estrangeira nos registros filho é definida como <xref:System.DBNull>. Com essa configuração, os registros filho podem ser deixados como "órfãos" — ou seja, eles não têm nenhuma relação com registros pai. **Observação:** usar essa regra pode resultar em dados inválidos na tabela filho.|
 |<xref:System.Data.Rule.SetDefault>|A chave estrangeira nos registros filho relacionados é definida como seu valor padrão (conforme estabelecido da coluna <xref:System.Data.DataColumn.DefaultValue%2A> propriedade).|

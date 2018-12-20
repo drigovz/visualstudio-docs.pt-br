@@ -1,7 +1,7 @@
 ---
 title: 'Idiaaddressmap:: Put_addressmapenabled | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaAddressMap::put_addressMapEnabled method
 ms.assetid: 0f205337-4e59-4383-8059-7b1d207d6dcd
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe8d1dcd58c745bdba44f1fa895ba87cb6a9b7f4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6fccb88ae66e3db24144d5903ffbf8d9f58ef207
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474133"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726568"
 ---
 # <a name="idiaaddressmapputaddressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaaddressmap:: Put_addressmapenabled](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled).  
-  
 Especifica se o mapa de endereço deve ser usado para converter endereços de símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT put_addressMapEnabled (   
+HRESULT put_addressMapEnabled (   
    BOOL NewVal  
 );  
 ```  

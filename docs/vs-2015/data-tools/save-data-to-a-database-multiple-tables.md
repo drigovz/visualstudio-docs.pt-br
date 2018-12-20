@@ -1,7 +1,7 @@
 ---
 title: Salvar dados em um banco de dados (várias tabelas) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 944a38db4c3c92443adf8b0de1f8bc2fa494298b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 986df2d58c9a8955c9de9b45edaa5276b2e68bfb
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463529"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218384"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvar dados em um banco de dados (várias tabelas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [salvar dados em um banco de dados (várias tabelas)](https://docs.microsoft.com/visualstudio/data-tools/save-data-to-a-database-multiple-tables).  
-  
   
 Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados de um formulário em um aplicativo do Windows, editar e enviá-los atualizados de volta para o banco de dados. Essa explicação passo a passo cria um formulário que exibe dados de duas tabelas relacionadas e mostra como editar registros e salvar alterações no banco de dados. Este exemplo usa as tabelas `Customers` e `Orders` do banco de dados de exemplo Northwind.  
   
@@ -70,7 +68,7 @@ Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados d
   
 2.  Nomeie o projeto `UpdateMultipleTablesWalkthrough`.  
   
-3.  Selecione **aplicativo do Windows**e, em seguida, selecione**Okey**. Para obter mais informações, consulte [aplicativos cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Selecione **aplicativo do Windows**e, em seguida, selecione **Okey**. Para obter mais informações, consulte [aplicativos cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      O **UpdateMultipleTablesWalkthrough** projeto é criado e adicionado ao **Gerenciador de soluções**.  
   
@@ -83,7 +81,7 @@ Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados d
   
 2.  No **fontes de dados** janela, selecione**Add New Data Source** para iniciar o **Data Source Configuration Wizard**.  
   
-3.  Sobre o **escolher um tipo de fonte de dados**tela, selecione **banco de dados**e, em seguida, selecione**próxima**.  
+3.  Sobre o **escolher um tipo de fonte de dados**tela, selecione **banco de dados**e, em seguida, selecione **próxima**.  
   
 4.  Sobre o **escolha sua Conexão de dados**tela faça o seguinte:  
   
@@ -93,9 +91,9 @@ Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados d
   
     -   Selecione **nova Conexão** para abrir o **Adicionar/Modificar Conexão** caixa de diálogo.  
   
-5.  Se seu banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, selecione**próxima**.  
+5.  Se seu banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, selecione **próxima**.  
   
-6.  Sobre o **salvar a cadeia de caracteres de conexão para o arquivo de configuração de aplicativo**, selecione**próxima**.  
+6.  Sobre o **salvar a cadeia de caracteres de conexão para o arquivo de configuração de aplicativo**, selecione **próxima**.  
   
 7.  Sobre o **Choose your Database Objects**, expanda o **tabelas** nó.  
   
@@ -129,7 +127,7 @@ Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados d
      Um controle <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para navegação em registros são exibidos no formulário. Uma [OrdersTableAdapter](../data-tools/tableadapter-overview.md) e <xref:System.Windows.Forms.BindingSource> aparecem na bandeja de componentes.  
   
 ## <a name="addcode-to-update-the-database"></a>Addcode para atualizar o banco de dados  
- Você pode atualizar o banco de dados chamando o `Update` métodos do **clientes** e **pedidos** TableAdapters. Por padrão, um manipulador de eventos para o**salve** botão do<xref:System.Windows.Forms.BindingNavigator> é adicionado ao código do formulário para enviar atualizações para o banco de dados. Este procedimento modifica o código para enviar atualizações na ordem correta. Isso elimina a possibilidade de gerar erros de integridade referencial. O código também implementa manipulação de erros com a quebra automática da chamada de atualização em um bloco try-catch. Você pode mudar o código para atender às necessidades do seu aplicativo.  
+ Você pode atualizar o banco de dados chamando o `Update` métodos do **clientes** e **pedidos** TableAdapters. Por padrão, um manipulador de eventos para o **salve** botão do<xref:System.Windows.Forms.BindingNavigator> é adicionado ao código do formulário para enviar atualizações para o banco de dados. Este procedimento modifica o código para enviar atualizações na ordem correta. Isso elimina a possibilidade de gerar erros de integridade referencial. O código também implementa manipulação de erros com a quebra automática da chamada de atualização em um bloco try-catch. Você pode mudar o código para atender às necessidades do seu aplicativo.  
   
 > [!NOTE]
 >  Para maior clareza, este passo a passo não usa uma transação. No entanto, se você estiver atualizando dois ou mais tabelas relacionadas, inclua toda a lógica de atualização dentro de uma transação. Uma transação é um processo que garante que todas as alterações relacionadas a um banco de dados são bem-sucedidas antes que as alterações sejam confirmadas. Para obter mais informações, consulte [transações e simultaneidade](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
@@ -147,7 +145,7 @@ Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados d
   
 #### <a name="to-test-the-application"></a>Para testar o aplicativo  
   
-1.  Selecione**F5**.  
+1.  Selecione **F5**.  
   
 2.  Faça algumas alterações nos dados de um ou mais registros em cada tabela.  
   

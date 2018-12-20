@@ -1,7 +1,7 @@
 ---
 title: Criando processadores de diretiva do modelo de texto de T4 personalizados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d97b87289be6f6fb685fe9f1b4e5ee4309bd0431
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0defae5127b3443eb30f02558fd1acf545651e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852733"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Criando processadores de diretiva de modelo de texto T4 personalizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criando processadores diretiva de modelo de texto do personalizado T4](https://docs.microsoft.com/visualstudio/modeling/creating-custom-t4-text-template-directive-processors).  
-  
 O *processo de transformação de modelo de texto* leva um *modelo de texto* arquivo como entrada e gera um arquivo de texto como saída. O *mecanismo de transformação do modelo de texto* controles que o processo e o mecanismo interage com um host de transformação de modelo de texto e o modelo de texto de um ou mais *processadores de diretriz* para concluir o processo. Para obter mais informações, consulte [o processo de transformação de modelo de texto](../modeling/the-text-template-transformation-process.md).  
   
  Para criar um processador de diretriz personalizado, é preciso criar uma classe herdada de <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> ou de <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  
@@ -56,19 +54,19 @@ O *processo de transformação de modelo de texto* leva um *modelo de texto* arq
   
  O mais importante `DirectiveProcessor` são os métodos que você deve implementar.  
   
--   `bool IsDirectiveSupported(string directiveName)` – Retorne `true` se o processador de diretriz pode lidar com a diretiva nomeada.  
+- `bool IsDirectiveSupported(string directiveName)` – Retorne `true` se o processador de diretriz pode lidar com a diretiva nomeada.  
   
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -O mecanismo de modelo chama esse método para cada ocorrência de uma diretiva no modelo. O processador deve salvar os resultados.  
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -O mecanismo de modelo chama esse método para cada ocorrência de uma diretiva no modelo. O processador deve salvar os resultados.  
   
- Depois de todas as chamadas para ProcessDirective (), o mecanismo de modelagem chamará esses métodos:  
+  Depois de todas as chamadas para ProcessDirective (), o mecanismo de modelagem chamará esses métodos:  
   
--   `string[] GetReferencesForProcessingRun()` -Retorne os nomes dos assemblies que exige que o código de modelo.  
+- `string[] GetReferencesForProcessingRun()` -Retorne os nomes dos assemblies que exige que o código de modelo.  
   
--   `string[] GetImportsForProcessingRun()` – Retorne os namespaces que podem ser usados no código do modelo.  
+- `string[] GetImportsForProcessingRun()` – Retorne os namespaces que podem ser usados no código do modelo.  
   
--   `string GetClassCodeForProcessingRun()` -Retorna o código de métodos, propriedades e outras declarações que o código de modelo pode usar. A maneira mais fácil de fazer isso é criar uma cadeia de caracteres que contém o código c# ou Visual Basic. Para fazer com que o processador de diretriz capaz de sendo chamado de um modelo que use qualquer linguagem CLR, você pode construir as instruções de como uma árvore CodeDom e, em seguida, retornar o resultado de serializar a árvore no idioma usado pelo modelo.  
+- `string GetClassCodeForProcessingRun()` -Retorna o código de métodos, propriedades e outras declarações que o código de modelo pode usar. A maneira mais fácil de fazer isso é criar uma cadeia de caracteres que contém o código c# ou Visual Basic. Para fazer com que o processador de diretriz capaz de sendo chamado de um modelo que use qualquer linguagem CLR, você pode construir as instruções de como uma árvore CodeDom e, em seguida, retornar o resultado de serializar a árvore no idioma usado pelo modelo.  
   
--   Para obter mais informações, consulte [instruções passo a passo: Criando um processador de diretriz personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
+- Para obter mais informações, consulte [instruções passo a passo: Criando um processador de diretriz personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Implantando um processador de diretiva personalizada](../modeling/deploying-a-custom-directive-processor.md)  

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e5c5856217951d15042f07edb97a918e09ba777
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c74feaed6c108f9dcfb5f2b374a72c34526134b0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635020"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296145"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Passo a passo: Criar uma etapa de implantação para projetos do SharePoint
   Quando você implanta um projeto do SharePoint, o Visual Studio executa uma série de etapas de implantação em uma ordem específica. O Visual Studio inclui várias etapas de implantação interna, mas você também pode criar seus próprios.  
@@ -45,28 +45,28 @@ ms.locfileid: "42635020"
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:  
   
--   Edições com suporte do Windows, SharePoint e Visual Studio.
+- Edições com suporte do Windows, SharePoint e Visual Studio.
   
--   O SDK do Visual Studio. Este passo a passo usa o **VSIX Project** modelo no SDK para criar um pacote VSIX para implantar a extensão. Para obter mais informações, consulte [estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- O SDK do Visual Studio. Este passo a passo usa o **VSIX Project** modelo no SDK para criar um pacote VSIX para implantar a extensão. Para obter mais informações, consulte [estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir o passo a passo:  
+  Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir o passo a passo:  
   
--   Usando o modelo de objeto de servidor para o SharePoint. Para obter mais informações, consulte [usando o modelo de objeto de servidor do SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177796).  
+- Usando o modelo de objeto de servidor para o SharePoint. Para obter mais informações, consulte [usando o modelo de objeto de servidor do SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177796).  
   
--   Soluções do SharePoint. Para obter mais informações, consulte [visão geral das soluções](http://go.microsoft.com/fwlink/?LinkId=169422).  
+- Soluções do SharePoint. Para obter mais informações, consulte [visão geral das soluções](http://go.microsoft.com/fwlink/?LinkId=169422).  
   
--   Atualizando soluções do SharePoint. Para obter mais informações, consulte [atualização de uma solução](http://go.microsoft.com/fwlink/?LinkId=177802).  
+- Atualizando soluções do SharePoint. Para obter mais informações, consulte [atualização de uma solução](http://go.microsoft.com/fwlink/?LinkId=177802).  
   
 ## <a name="create-the-projects"></a>Crie os projetos
  Para concluir este passo a passo, você deve criar três projetos:  
   
--   Um projeto VSIX para criar o pacote VSIX para implantar a extensão.  
+- Um projeto VSIX para criar o pacote VSIX para implantar a extensão.  
   
--   Um projeto de biblioteca de classe que implementa a extensão. Este projeto deve ter como destino o .NET Framework 4.5.  
+- Um projeto de biblioteca de classe que implementa a extensão. Este projeto deve ter como destino o .NET Framework 4.5.  
   
--   Um projeto de biblioteca de classe que define os comandos do SharePoint personalizados. Este projeto deve ter como destino o .NET Framework 3.5.  
+- Um projeto de biblioteca de classe que define os comandos do SharePoint personalizados. Este projeto deve ter como destino o .NET Framework 3.5.  
   
- Inicie o passo a passo Criando os projetos.  
+  Inicie o passo a passo Criando os projetos.  
   
 #### <a name="to-create-the-vsix-project"></a>Para criar o projeto do VSIX  
   
@@ -193,7 +193,7 @@ ms.locfileid: "42635020"
   
 1.  No **Gerenciador de soluções**, sob o **UpgradeDeploymentStep** do projeto, abra o menu de atalho para o **vsixmanifest** file e, em seguida, escolha  **Abra**.  
   
-     Visual Studio abre o arquivo no editor de manifesto. O arquivo vsixmanifest é a base para o arquivo Extension vsixmanifest que exigem todos os pacotes VSIX. Para obter mais informações sobre esse arquivo, consulte [1.0 referência do esquema de extensão do VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Visual Studio abre o arquivo no editor de manifesto. O arquivo vsixmanifest é a base para o arquivo Extension vsixmanifest que exigem todos os pacotes VSIX. Para obter mais informações sobre esse arquivo, consulte [1.0 referência do esquema de extensão do VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  No **nome do produto** , digite **atualizar a etapa de implantação para projetos do SharePoint**.  
   
@@ -208,7 +208,7 @@ ms.locfileid: "42635020"
 6.  No **tipo** , escolha **mefcomponent**.  
   
     > [!NOTE]  
-    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  No **fonte** , escolha **um projeto na solução atual**.  
   
@@ -221,7 +221,7 @@ ms.locfileid: "42635020"
 10. No **tipo** , digite **SharePoint.Commands.v4**.  
   
     > [!NOTE]  
-    >  Esse elemento Especifica uma extensão personalizada que você deseja incluir na extensão do Visual Studio. Para obter mais informações, consulte [ativo Element (esquema de VSX)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737).  
+    >  Esse elemento Especifica uma extensão personalizada que você deseja incluir na extensão do Visual Studio. Para obter mais informações, consulte [ativo Element (esquema de VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).  
   
 11. No **fonte** , escolha **um projeto na solução atual**.  
   
@@ -250,28 +250,28 @@ ms.locfileid: "42635020"
   
 #### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>Para criar um projeto do SharePoint com uma definição de lista e uma instância de lista  
   
-1.  Na instância experimental do Visual Studio, na barra de menus, escolha **arquivo** > **New** > **projeto**.  
+1. Na instância experimental do Visual Studio, na barra de menus, escolha **arquivo** > **New** > **projeto**.  
   
-2.  No **novo projeto** diálogo caixa, expanda o **Visual c#** nó ou o **Visual Basic** nó, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.  
+2. No **novo projeto** diálogo caixa, expanda o **Visual c#** nó ou o **Visual Basic** nó, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.  
   
-3.  Na parte superior da caixa de diálogo, verifique se **.NET Framework 3.5** aparece na lista de versões do .NET Framework.  
+3. Na parte superior da caixa de diálogo, verifique se **.NET Framework 3.5** aparece na lista de versões do .NET Framework.  
   
-     Projetos para [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] exigem esta versão do .NET Framework.  
+    Projetos para [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] exigem esta versão do .NET Framework.  
   
-4.  Na lista de modelos de projeto, escolha **projeto do SharePoint 2010**, nomeie o projeto **EmployeesListDefinition**e, em seguida, escolha o **Okey** botão.  
+4. Na lista de modelos de projeto, escolha **projeto do SharePoint 2010**, nomeie o projeto **EmployeesListDefinition**e, em seguida, escolha o **Okey** botão.  
   
-5.  No **Assistente para personalização do SharePoint**, insira a URL do site que você deseja usar para depuração.  
+5. No **Assistente para personalização do SharePoint**, insira a URL do site que você deseja usar para depuração.  
   
-6.  Sob **qual é o nível de confiança para essa solução do SharePoint**, escolha o **implantar como uma solução de farm** botão de opção.  
+6. Sob **qual é o nível de confiança para essa solução do SharePoint**, escolha o **implantar como uma solução de farm** botão de opção.  
   
-    > [!NOTE]  
-    >  A etapa de implantação de atualização não oferece suporte a soluções em área restrita.  
+   > [!NOTE]  
+   >  A etapa de implantação de atualização não oferece suporte a soluções em área restrita.  
   
-7.  Escolha o **concluir** botão.  
+7. Escolha o **concluir** botão.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o projeto EmployeesListDefinition.  
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o projeto EmployeesListDefinition.  
   
-8.  Abra o menu de atalho para o projeto EmployeesListDefinition, escolha **Add**e, em seguida, escolha **Novo Item**.  
+8. Abra o menu de atalho para o projeto EmployeesListDefinition, escolha **Add**e, em seguida, escolha **Novo Item**.  
   
 9. No **Adicionar Novo Item – EmployeesListDefinition** diálogo caixa, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.  
   
@@ -281,13 +281,13 @@ ms.locfileid: "42635020"
   
 11. Sobre o **escolher as configurações da lista** página, verifique as seguintes configurações e, em seguida, escolha o **concluir** botão:  
   
-    1.  **Lista de funcionários** aparece na **que nome você deseja exibir para sua lista?** caixa.  
+    1. **Lista de funcionários** aparece na **que nome você deseja exibir para sua lista?** caixa.  
   
-    2.  O **criar uma lista personalizável com base em:** botão de opção é escolhida.  
+    2. O **criar uma lista personalizável com base em:** botão de opção é escolhida.  
   
-    3.  **Padrão (em branco)** é escolhido na **criar uma lista personalizável com base em:** lista.  
+    3. **Padrão (em branco)** é escolhido na **criar uma lista personalizável com base em:** lista.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o item de lista de funcionários com uma coluna de título e uma única instância vazia e abre o Designer de lista.  
+       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o item de lista de funcionários com uma coluna de título e uma única instância vazia e abre o Designer de lista.  
   
 12. No Designer de lista, na **colunas** guia, escolha o **digite um nome de coluna novo ou existente** linha e, em seguida, adicione as seguintes colunas no **nome de exibição da coluna** lista:  
   
@@ -419,29 +419,29 @@ ms.locfileid: "42635020"
   
 #### <a name="to-test-the-upgrade-deployment-step"></a>Para testar a etapa de implantação de atualização  
   
-1.  Na instância experimental do Visual Studio, no **Gerenciador de soluções**, abra o menu de atalho para o **EmployeesListDefinition** nó do projeto e, em seguida, escolha **propriedades**.  
+1. Na instância experimental do Visual Studio, no **Gerenciador de soluções**, abra o menu de atalho para o **EmployeesListDefinition** nó do projeto e, em seguida, escolha **propriedades**.  
   
-     O Designer/Editor de propriedades é aberta.  
+    O Designer/Editor de propriedades é aberta.  
   
-2.  Sobre o **SharePoint** guia, defina o **configuração de implantação ativa** propriedade a ser **atualizar**.  
+2. Sobre o **SharePoint** guia, defina o **configuração de implantação ativa** propriedade a ser **atualizar**.  
   
-     Essa configuração de implantação personalizado inclui a nova etapa de implantação de atualização.  
+    Essa configuração de implantação personalizado inclui a nova etapa de implantação de atualização.  
   
-3.  Abra o menu de atalho para o **lista de funcionários** de item de projeto e, em seguida, escolha **propriedades** ou **abrir**.  
+3. Abra o menu de atalho para o **lista de funcionários** de item de projeto e, em seguida, escolha **propriedades** ou **abrir**.  
   
-     O Designer/Editor de propriedades é aberta.  
+    O Designer/Editor de propriedades é aberta.  
   
-4.  No **modos de exibição** guia, escolha o **email** coluna e, em seguida, escolha o **<** tecla para mover essa coluna do **selecionado colunas**listar para o **colunas disponíveis** lista.  
+4. No **modos de exibição** guia, escolha o **email** coluna e, em seguida, escolha o **<** tecla para mover essa coluna do **selecionado colunas**listar para o **colunas disponíveis** lista.  
   
-     Esta ação remove esses campos do modo de exibição padrão de **funcionários** lista no site do SharePoint.  
+    Esta ação remove esses campos do modo de exibição padrão de **funcionários** lista no site do SharePoint.  
   
-5.  Iniciar a depuração, escolhendo a **F5** chave ou, na barra de menus, escolhendo **Debug** > **iniciar depuração**.  
+5. Iniciar a depuração, escolhendo a **F5** chave ou, na barra de menus, escolhendo **Debug** > **iniciar depuração**.  
   
-6.  Verifique se o código em outra instância do Visual Studio para no ponto de interrupção que você definiu anteriormente no `CanExecute` método.  
+6. Verifique se o código em outra instância do Visual Studio para no ponto de interrupção que você definiu anteriormente no `CanExecute` método.  
   
-7.  Escolha o **F5** novamente da chave ou, na barra de menus, escolha **Debug** > **continuar**.  
+7. Escolha o **F5** novamente da chave ou, na barra de menus, escolha **Debug** > **continuar**.  
   
-8.  Verifique se o código para no ponto de interrupção que você definiu anteriormente no `Execute` método.  
+8. Verifique se o código para no ponto de interrupção que você definiu anteriormente no `Execute` método.  
   
 9. Escolha o **F5** da chave ou, na barra de menus, escolha **Debug** > **continuar** uma última vez.  
   
@@ -449,11 +449,11 @@ ms.locfileid: "42635020"
   
 10. No **listas** seção da área de início rápido, escolha o **funcionários** lista e, em seguida, verifique se os detalhes a seguir:  
   
-    -   O item que você adicionou manualmente anteriormente (por Andy, o Gerenciador de recursos) é ainda na lista.  
+    - O item que você adicionou manualmente anteriormente (por Andy, o Gerenciador de recursos) é ainda na lista.  
   
-    -   O **telefone comercial** e **endereço de email** colunas não são exibidos neste modo de exibição da lista.  
+    - O **telefone comercial** e **endereço de email** colunas não são exibidos neste modo de exibição da lista.  
   
-     O **Upgrade** configuração de implantação modifica existente **funcionários** instância de lista no site do SharePoint. Se você tiver usado o **padrão** configuração de implantação, em vez da **atualizar** configuração, você deve encontrar um conflito de implantação. Visual Studio deve resolver o conflito, substituindo o **funcionários** lista e o item de Andy, o Gerenciador de recursos seriam excluídos.  
+      O **Upgrade** configuração de implantação modifica existente **funcionários** instância de lista no site do SharePoint. Se você tiver usado o **padrão** configuração de implantação, em vez da **atualizar** configuração, você deve encontrar um conflito de implantação. Visual Studio deve resolver o conflito, substituindo o **funcionários** lista e o item de Andy, o Gerenciador de recursos seriam excluídos.  
   
 ## <a name="clean-up-the-development-computer"></a>Limpar o computador de desenvolvimento
  Após concluir o teste a etapa de implantação de atualização, remova a instância de lista e a definição de lista do site do SharePoint e remover a extensão de etapa de implantação do Visual Studio.  

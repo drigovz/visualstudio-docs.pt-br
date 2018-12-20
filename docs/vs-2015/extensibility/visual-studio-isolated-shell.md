@@ -1,7 +1,7 @@
 ---
 title: Shell isolado do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed81e88b12e371f74adb9d3911719112bca8b139
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7fcb0a838f2849ab74d202785709164ec5af6d7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474802"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740662"
 ---
 # <a name="visual-studio-isolated-shell"></a>Shell isolado do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Shell isolado do Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-isolated-shell).  
-  
 O shell isolado do Visual Studio permite que você crie aplicativos autônomos que podem ser executados lado a lado com outras versões do Visual Studio. Ele é usado principalmente para hospedar ferramentas especializadas que podem usar os serviços do Visual Studio, mas também ter uma aparência personalizada e identidade visual. Recursos do Visual Studio e grupos de comando de menu podem ser facilmente ativados e desativada. Aplicativo títulos, ícones de aplicativo e telas de abertura são totalmente personalizáveis. Para obter uma lista de recursos personalizáveis, consulte [personalizar o Shell isolado](../extensibility/customizing-the-isolated-shell.md).  
   
  Para trabalhar com um projeto do shell isolado, você deve instalar o SDK do Visual Studio. A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -46,17 +44,17 @@ O shell isolado do Visual Studio permite que você crie aplicativos autônomos q
 ## <a name="working-with-the-isolated-shell"></a>Trabalhando com o shell isolado  
  Um aplicativo de shell isolado do Visual Studio tem acesso completo aos serviços do Visual Studio e oferece suporte à personalização especial e identidade visual. Há várias maneiras que você pode personalizar um aplicativo de shell isolado:  
   
--   Você pode usar os VSPackages e Managed Extensibility Framework (MEF) partes de componentes para estender um aplicativo de shell isolado, assim como você usaria em qualquer outra extensão do Visual Studio. Para obter mais informações, consulte [estender o Shell isolado](../extensibility/extending-the-isolated-shell.md).  
+- Você pode usar os VSPackages e Managed Extensibility Framework (MEF) partes de componentes para estender um aplicativo de shell isolado, assim como você usaria em qualquer outra extensão do Visual Studio. Para obter mais informações, consulte [estender o Shell isolado](../extensibility/extending-the-isolated-shell.md).  
   
--   Para tornar os recursos do Visual Studio e grupos de comando de menu disponíveis ou não disponíveis, atualize o arquivo. VSCT no projeto de (UI) de interface do usuário do aplicativo.  
+- Para tornar os recursos do Visual Studio e grupos de comando de menu disponíveis ou não disponíveis, atualize o arquivo. VSCT no projeto de (UI) de interface do usuário do aplicativo.  
   
--   Para remover **opções** páginas ou outros componentes do shell do Visual Studio do aplicativo, atualize o arquivo. pkgundef do aplicativo.  
+- Para remover **opções** páginas ou outros componentes do shell do Visual Studio do aplicativo, atualize o arquivo. pkgundef do aplicativo.  
   
--   Para modificar o comportamento do shell ou outros aspectos da aparência, atualize o arquivo. pkgdef do aplicativo.  
+- Para modificar o comportamento do shell ou outros aspectos da aparência, atualize o arquivo. pkgdef do aplicativo.  
   
--   Alguns aspectos do shell também podem ser especificados quando o aplicativo é iniciado. Para fazer isso, atualize os parâmetros na chamada para o ponto de entrada do início do appenvstub.dll.  
+- Alguns aspectos do shell também podem ser especificados quando o aplicativo é iniciado. Para fazer isso, atualize os parâmetros na chamada para o ponto de entrada do início do appenvstub.dll.  
   
- Para obter mais informações sobre os diferentes elementos que você pode personalizar, veja [elementos do Shell isolado](../extensibility/elements-of-the-isolated-shell.md).  
+  Para obter mais informações sobre os diferentes elementos que você pode personalizar, veja [elementos do Shell isolado](../extensibility/elements-of-the-isolated-shell.md).  
   
 ## <a name="standard-features-of-the-isolated-shell"></a>Recursos padrão do Shell isolado  
  Os seguintes recursos são padrão para todas as edições do Visual Studio.  

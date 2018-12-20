@@ -1,5 +1,5 @@
 ---
-title: Editando modelos de combinação de testes no Visual Studio
+title: Editando modelos de combinação de testes
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,36 +11,38 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 32fc3ef0684c89c422fac76550ba1fa123eb2f6b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6016aaa3273347509d82af5ef4fba70fa3ecc253
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180435"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057107"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Editar modelos de combinação de testes para especificar a probabilidade de um usuário virtual executar um teste
 
 O *modelo de combinação de testes* especifica a probabilidade de um usuário virtual executar um determinado teste em um cenário de teste de carga. Isso permite a você simular a carga de forma mais realista. Em vez de ter apenas um fluxo de trabalho com seus aplicativos, você pode ter vários fluxos de trabalho, que é uma aproximação de como os usuários finais interagem com seus aplicativos.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 ## <a name="test-mix-model-options"></a>Opções do modelo de combinação de testes
 
 Você pode especificar uma das seguintes opções de modelo da combinação de testes para seu cenário de teste de carga:
 
--   **Baseado no número total de testes:** determina qual teste de desempenho Web ou teste de unidade é executado quando um usuário virtual inicia uma iteração de teste. No final do teste de carga, o número de vezes que um teste específico foi executado corresponde à distribuição de teste atribuída. Use esse modelo da combinação de testes quando você estiver baseando a combinação em porcentagens de transações em um log do IIS ou em dados de produção.
+-   **Baseado no número total de testes:** Determina qual teste de desempenho Web ou teste de unidade é executado quando um usuário virtual inicia uma iteração de teste. No final do teste de carga, o número de vezes que um teste específico foi executado corresponde à distribuição de teste atribuída. Use esse modelo da combinação de testes quando você estiver baseando a combinação em porcentagens de transações em um log do IIS ou em dados de produção.
 
--   **Baseado no número de usuários virtuais:** determina o percentual de usuários virtuais que executarão um teste de desempenho Web ou um teste de unidade específico. A qualquer momento do teste de carga, o número usuários que estão executando um teste específico corresponde à distribuição atribuída. Use esse modelo da combinação de testes quando você estiver baseando a combinação na porcentagem de usuários executando um teste específico.
+-   **Baseado no número de usuários virtuais:** Determina o percentual de usuários virtuais que executarão um teste de desempenho Web ou um teste de unidade específico. A qualquer momento do teste de carga, o número usuários que estão executando um teste específico corresponde à distribuição atribuída. Use esse modelo da combinação de testes quando você estiver baseando a combinação na porcentagem de usuários executando um teste específico.
 
--   **Baseado no ritmo do usuário:** no decorrer do teste de carga, cada teste de desempenho Web ou teste de unidade é executado um número especificado de vezes por usuários, por hora. Use esse modelo da combinação de testes quando quiser que os usuários virtuais executem o teste em um determinado ritmo durante o teste de carga.
+-   **Baseado no ritmo do usuário:** No decorrer do teste de carga, cada teste de desempenho Web ou teste de unidade é executado um número especificado de vezes por usuários, por hora. Use esse modelo da combinação de testes quando quiser que os usuários virtuais executem o teste em um determinado ritmo durante o teste de carga.
 
--   **Baseado na ordem sequencial:** cada usuário virtual executa os testes de desempenho Web ou de unidade na ordem em que os testes são definidos no cenário. O usuário virtual continua a alternar entre os testes nesta ordem até que o teste de carga seja concluído.
+-   **Baseado na ordem sequencial:** Cada usuário virtual executa os testes de desempenho Web ou testes de unidade na ordem em que eles são definidos no cenário. O usuário virtual continua a alternar entre os testes nesta ordem até que o teste de carga seja concluído.
 
 ## <a name="tasks"></a>Tarefas
 
 |Tarefas|Tópicos associados|
-|-----------|-----------------------|
-|**Especificando a combinação de testes para o teste de carga:** ao criar um teste de carga, você especifica as configurações do teste de carga no **Novo Assistente de Teste de Carga**. No **Novo Assistente de Teste de Carga**, você escolhe testes de unidade e da Web existentes para adicionar ao cenário inicial. Depois de adicionar testes ao cenário, você especifica a combinação de testes para o cenário.<br /><br /> Você usa opções de modelagem de carga para prever com maior precisão o uso real esperado de um site ou aplicativo que está passando por teste de carga. É importante fazer isso porque um teste de carga não baseado em um modelo de carga preciso pode gerar resultados enganadores.|-   [Emular o uso real esperado de um site ou aplicativo](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
-|**Editar o modelo de combinação de testes:** você pode alterar um cenário de teste de carga para usar um dos modelos de combinação de testes usando o **Editor de Teste de Carga**.||
-|**Configurar a definição de atrasos para um modelo de combinação de testes baseado no ritmo do usuário:** se seu cenário de teste de carga for configurado para usar o **modelo de combinação de testes baseado no ritmo do usuário**, você poderá especificar como quer que o atraso de distribuição seja configurado.|-   [Como aplicar distribuição à definição dos atrasos durante o uso de um modelo de combinação de testes](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
+|-|-----------------------|
+|**Especificando a combinação de testes para o teste de carga:** Ao criar um teste de carga, você especifica as configurações para o teste de carga no **Assistente de Novo Teste de Carga**. No **Novo Assistente de Teste de Carga**, você escolhe testes de unidade e da Web existentes para adicionar ao cenário inicial. Depois de adicionar testes ao cenário, você especifica a combinação de testes para o cenário.<br /><br /> Você usa opções de modelagem de carga para prever com maior precisão o uso real esperado de um site ou aplicativo que está passando por teste de carga. É importante fazer isso porque um teste de carga não baseado em um modelo de carga preciso pode gerar resultados enganadores.|-   [Emular o uso real esperado de um site ou aplicativo](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
+|**Editar o modelo de combinação de testes:** Você pode alterar um cenário de teste de carga para usar um dos modelos de combinação de testes usando o **Editor de Teste de Carga**.||
+|**Configurar o atraso de ritmo para um modelo de combinação de testes baseado no ritmo do usuário:** Se o cenário de teste de carga for configurado para usar o **Modelo de combinação de testes baseado no ritmo do usuário**, você poderá especificar como deseja configurar o Atraso de Ritmo.|-   [Como: Aplicar a distribuição ao atraso de ritmo durante o uso de um modelo de combinação de testes no ritmo do usuário](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 
 ## <a name="change-the-test-mix-model-in-a-scenario"></a>Alterar o modelo de combinação de testes em um cenário
 

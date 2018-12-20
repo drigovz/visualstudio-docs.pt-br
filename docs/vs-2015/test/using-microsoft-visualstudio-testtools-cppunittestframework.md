@@ -1,7 +1,7 @@
 ---
 title: Usando Microsoft.VisualStudio.TestTools.CppUnitTestFramework | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1bf0581ac11e97bf5543c0d17e8f665091babbd7
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 68f083bf6aa99177f6b9e697be8affa5d29804a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889601"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>Usando Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Microsoft.VisualStudio.TestTools.CppUnitTestFramework usando](https://docs.microsoft.com/visualstudio/test/using-microsoft-visualstudio-testtools-cppunittestframework).  
-  
 Este tópico lista os membros públicos do namespace `Microsoft::VisualStudio::CppUnitTestFramework`.  
   
  Os arquivos de cabeçalho estão localizados na pasta _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\include**.  
@@ -34,71 +32,71 @@ Este tópico lista os membros públicos do namespace `Microsoft::VisualStudio::C
 ##  <a name="BKMK_In_this_topic"></a> Neste tópico  
  [CppUnitTest.h](#BKMK_CppUnitTest_h)  
   
--   [Criar classes de teste e métodos](#BKMK_Create_test_classes_and_methods)  
+- [Criar classes de teste e métodos](#BKMK_Create_test_classes_and_methods)  
   
--   [Inicialização e limpeza](#BKMK_Initialize_and_cleanup)  
+- [Inicialização e limpeza](#BKMK_Initialize_and_cleanup)  
   
-    -   [Métodos de teste](#BKMK_Test_methods)  
+  -   [Métodos de teste](#BKMK_Test_methods)  
   
-    -   [Classes de teste](#BKMK_Test_classes)  
+  -   [Classes de teste](#BKMK_Test_classes)  
   
-    -   [Módulos de teste](#BKMK_Test_modules)  
+  -   [Módulos de teste](#BKMK_Test_modules)  
   
--   [Criar atributos de teste](#BKMK_Create_test_attributes)  
+- [Criar atributos de teste](#BKMK_Create_test_attributes)  
   
-    -   [Atributos de método de teste](#BKMK_Test_method_attributes)  
+  - [Atributos de método de teste](#BKMK_Test_method_attributes)  
   
-    -   [Atributos de classe de teste](#BKMK_Test_class_attributes)  
+  - [Atributos de classe de teste](#BKMK_Test_class_attributes)  
   
-    -   [Atributos de módulo de teste](#BKMK_Test_module_attributes)  
+  - [Atributos de módulo de teste](#BKMK_Test_module_attributes)  
   
-    -   [Atributos predefinidos](#BKMK_Pre_defined_attributes)  
+  - [Atributos predefinidos](#BKMK_Pre_defined_attributes)  
   
-     [CppUnitTestAssert.h](#BKMK_CppUnitTestAssert_h)  
+    [CppUnitTestAssert.h](#BKMK_CppUnitTestAssert_h)  
   
-    -   [Declarações Gerais](#BKMK_General_Asserts)  
+  - [Declarações Gerais](#BKMK_General_Asserts)  
   
-        -   [São iguais](#BKMK_General_Are_Equal)  
+    -   [São iguais](#BKMK_General_Are_Equal)  
   
-        -   [Não são iguais](#BKMK_General_Are_Not_Equal)  
+    -   [Não são iguais](#BKMK_General_Are_Not_Equal)  
   
-        -   [São os mesmos](#BKMK_General_Are_Same)  
+    -   [São os mesmos](#BKMK_General_Are_Same)  
   
-        -   [Não são os mesmos](#BKMK_General_Are_Not_Same)  
+    -   [Não são os mesmos](#BKMK_General_Are_Not_Same)  
   
-        -   [É nulo](#BKMK_General_Is_Null)  
+    -   [É nulo](#BKMK_General_Is_Null)  
   
-        -   [Não é nulo](#BKMK_General_Is_Not_Null)  
+    -   [Não é nulo](#BKMK_General_Is_Not_Null)  
   
-        -   [É True](#BKMK_General_Is_True)  
+    -   [É True](#BKMK_General_Is_True)  
   
-        -   [É False](#BKMK_General_Is_False)  
+    -   [É False](#BKMK_General_Is_False)  
   
-        -   [Falha](#BKMK_General_Fail)  
+    -   [Falha](#BKMK_General_Fail)  
   
-    -   [Declarações do Windows Runtime](#BKMK_WinRT_Asserts)  
+  - [Declarações do Windows Runtime](#BKMK_WinRT_Asserts)  
   
-        -   [São iguais](#BKMK_WinRT_Are_Equal)  
+    -   [São iguais](#BKMK_WinRT_Are_Equal)  
   
-        -   [São os mesmos](#BKMK_WinRT_Are_Same)  
+    -   [São os mesmos](#BKMK_WinRT_Are_Same)  
   
-        -   [Não são iguais](#BKMK_WinRT_Are_Not_Equal)  
+    -   [Não são iguais](#BKMK_WinRT_Are_Not_Equal)  
   
-        -   [Não são os mesmos](#BKMK_WinRT_Are_Not_Same)  
+    -   [Não são os mesmos](#BKMK_WinRT_Are_Not_Same)  
   
-        -   [É nulo](#BKMK_WinRT_Is_Null)  
+    -   [É nulo](#BKMK_WinRT_Is_Null)  
   
-        -   [Não é nulo](#BKMK_WinRT_Is_Not_Null)  
+    -   [Não é nulo](#BKMK_WinRT_Is_Not_Null)  
   
-    -   [Declarações de Exceção](#BKMK_Exception_Asserts)  
+  - [Declarações de Exceção](#BKMK_Exception_Asserts)  
   
-        -   [Exceção de Espera](#BKMK_Expect_Exception)  
+    - [Exceção de Espera](#BKMK_Expect_Exception)  
   
-         [CppUnitTestLogger.h](#BKMK_CppUnitTestLogger_h)  
+      [CppUnitTestLogger.h](#BKMK_CppUnitTestLogger_h)  
   
-        -   [Logger](#BKMK_Logger)  
+    - [Logger](#BKMK_Logger)  
   
-        -   [Gravar Mensagem](#BKMK_Write_Message)  
+    - [Gravar Mensagem](#BKMK_Write_Message)  
   
 ##  <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
   

@@ -1,7 +1,7 @@
 ---
 title: Itens do MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 522de2d2a10e58c1f7d6a42b2456c63648655a86
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: d517d3fd24b17c33a7bba9f888fbb904631be5f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475507"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851927"
 ---
 # <a name="msbuild-items"></a>Itens do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [itens do MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-items).  
-  
   
 Itens do MSBuild são entradas no sistema de build e eles normalmente representam arquivos. Os itens são agrupados em tipos de item com base em seus nomes de elemento. Os tipos de item são listas nomeadas de itens que podem ser usados como parâmetros para tarefas. As tarefas usam os valores do item para executar as etapas do processo de build.  
   
@@ -102,13 +100,13 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
 ##  <a name="BKMK_Wildcards"></a> Usando caracteres curinga para especificar itens  
  Você pode usar os caracteres curinga **, \* e ? para especificar um grupo de arquivos como entradas para um build em vez de listar cada arquivo separadamente.  
   
--   O caractere curinga ? corresponde a um único caractere.  
+- O caractere curinga ? corresponde a um único caractere.  
   
--   O caractere curinga * corresponde a zero ou mais caracteres.  
+- O caractere curinga * corresponde a zero ou mais caracteres.  
   
--   A sequência de caractere curinga ** corresponde a um caminho parcial.  
+- A sequência de caractere curinga ** corresponde a um caminho parcial.  
   
- Por exemplo, você pode especificar todos os arquivos .cs no diretório que contém o arquivo de projeto usando o seguinte elemento no arquivo de projeto.  
+  Por exemplo, você pode especificar todos os arquivos .cs no diretório que contém o arquivo de projeto usando o seguinte elemento no arquivo de projeto.  
   
 ```  
 <CSFile Include="*.cs"/>  

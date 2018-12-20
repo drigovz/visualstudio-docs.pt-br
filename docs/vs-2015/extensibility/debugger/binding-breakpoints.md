@@ -1,7 +1,7 @@
 ---
 title: Associar pontos de interrupção | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b19c1fc2857cf007f223f4cbb8e8bb307f972c94
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8061b8d9a9cf3f29889405ea8004a79a0af8216
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461841"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807356"
 ---
 # <a name="binding-breakpoints"></a>Associando pontos de interrupção
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [associação de pontos de interrupção](https://docs.microsoft.com/visualstudio/extensibility/debugger/binding-breakpoints).  
-  
 Se o usuário define um ponto de interrupção, talvez, pressionando F9, o IDE Formula a solicitação e solicita que a sessão de depuração para criar o ponto de interrupção.  
   
 ## <a name="setting-a-breakpoint"></a>Definindo um ponto de interrupção  

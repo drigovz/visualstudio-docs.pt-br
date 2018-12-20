@@ -1,7 +1,7 @@
 ---
 title: 'Como: abrir um modelo de arquivo no código do programa | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0884148a6e3f390654842b5e35a9e53643ea17d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c084e756492a03abc86f7281728222632e12ec1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461658"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940860"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Como abrir um modelo a partir de um arquivo no código do programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: abrir um modelo de arquivo no código do programa](https://docs.microsoft.com/visualstudio/modeling/how-to-open-a-model-from-file-in-program-code).  
-  
 Você pode abrir modelos DSL em qualquer aplicativo.  
   
  De um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão, você pode usar o ModelBus para essa finalidade. ModelBus fornece um mecanismo padrão para fazer referência a um modelo ou elementos em um modelo e para localizar o modelo se ele foi movido. Para obter mais informações, consulte [integrando modelos por meio do Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  
@@ -65,13 +63,13 @@ Você pode abrir modelos DSL em qualquer aplicativo.
 ## <a name="reading-from-a-file"></a>Leitura de um arquivo  
  O exemplo a seguir foi projetado para ler uma DSL na qual as classes importantes são da seguinte maneira:  
   
--   FamilyTreeModel  
+- FamilyTreeModel  
   
--   FamilyTreeSerializationHelper  
+- FamilyTreeSerializationHelper  
   
--   FamilyTreeDomainModel  
+- FamilyTreeDomainModel  
   
- A outra classe de domínio essa DSL é a pessoa.  
+  A outra classe de domínio essa DSL é a pessoa.  
   
 ```  
 using System;  

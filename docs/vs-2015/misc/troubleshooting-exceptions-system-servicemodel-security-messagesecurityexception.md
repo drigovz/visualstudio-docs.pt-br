@@ -1,7 +1,7 @@
 ---
 title: 'Solucionando problemas de exceções: System.ServiceModel.Security.MessageSecurityException | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - MessageSecurityException exception
 ms.assetid: 61ad69a1-ac50-49de-9a7c-8454a84ec5bd
 caps.latest.revision: 8
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9d886b8eeddc84c8b6597bca77e2d7b63ca21875
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7d13f5cc282026b1590f59180ed7f25312bb926
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475233"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742475"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Exceções de solução de problemas: System.ServiceModel.Security.MessageSecurityException
 Um <xref:System.ServiceModel.Security.MessageSecurityException> exceção é lançada quando [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] determina que uma mensagem não está protegida corretamente ou foi violada. O erro ocorre com mais frequência quando todas as seguintes condições forem verdadeiras:  
@@ -48,35 +48,35 @@ Um <xref:System.ServiceModel.Security.MessageSecurityException> exceção é lan
   
 #### <a name="to-create-a-custom-service-binding-for-the-wcf-service-hosted-inside-the-aspnet-development-server"></a>Para criar uma associação de serviço personalizada para o serviço WCF hospedado dentro do ASP.NET Development Server  
   
-1.  Abra o arquivo Web.config do serviço WCF que está gerando a exceção.  
+1. Abra o arquivo Web.config do serviço WCF que está gerando a exceção.  
   
-2.  Insira as informações a seguir no arquivo Web.config.  
+2. Insira as informações a seguir no arquivo Web.config.  
   
-    ```  
-    <bindings>  
-      <customBinding>  
-        <binding name="Service1Binding">  
-          <transactionFlow />  
-          <textMessageEncoding />  
-          <httpTransport authenticationScheme="Ntlm" />  
-        </binding>  
-      </customBinding>  
-    </bindings>  
-    ```  
+   ```  
+   <bindings>  
+     <customBinding>  
+       <binding name="Service1Binding">  
+         <transactionFlow />  
+         <textMessageEncoding />  
+         <httpTransport authenticationScheme="Ntlm" />  
+       </binding>  
+     </customBinding>  
+   </bindings>  
+   ```  
   
-3.  Salve e feche o arquivo Web.config.  
+3. Salve e feche o arquivo Web.config.  
   
-4.  No código para WCF ou serviço Web, altere o valor do ponto de extremidade para o seguinte:  
+4. No código para WCF ou serviço Web, altere o valor do ponto de extremidade para o seguinte:  
   
-    ```  
-    <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
-    ```  
+   ```  
+   <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
+   ```  
   
-     Isso garante que o serviço use a associação personalizada.  
+    Isso garante que o serviço use a associação personalizada.  
   
-5.  Adicione uma referência ao serviço no aplicativo Web que acessa o serviço. (Na **adicionar referência de serviço** caixa de diálogo caixa, adicione uma referência ao serviço, como você fez com o serviço original que estava gerando a exceção.)  
+5. Adicione uma referência ao serviço no aplicativo Web que acessa o serviço. (Na **adicionar referência de serviço** caixa de diálogo caixa, adicione uma referência ao serviço, como você fez com o serviço original que estava gerando a exceção.)  
   
- Siga estas etapas para desabilitar a segurança NTLM quando você estiver trabalhando com uma referência de serviço WCF.  
+   Siga estas etapas para desabilitar a segurança NTLM quando você estiver trabalhando com uma referência de serviço WCF.  
   
 > [!IMPORTANT]
 >  Desativar a segurança NTLM não é recomendado e poderia constituir uma ameaça à segurança.  

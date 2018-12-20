@@ -1,7 +1,7 @@
 ---
 title: Definir e instalar uma extensão de modelagem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,21 +12,19 @@ helpviewer_keywords:
 - UML model, extending
 ms.assetid: 82a58dc5-c7cf-4521-a6da-7ff09cd0de9d
 caps.latest.revision: 39
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3d6ea563d7b7d4e2cac0e4f69ea5fddcd192418
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6f7895916cc4ee877c53b056f703d8e46b64b409
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587424"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805561"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definir e instalar uma extensão de modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definir e instalar uma extensão de modelagem](https://docs.microsoft.com/visualstudio/modeling/define-and-install-a-modeling-extension).  
-  
 No Visual Studio, você pode definir as extensões para diagramas de modelagem. Dessa maneira, você pode adaptar os modelos e diagramas de acordo com suas necessidades. Por exemplo, você pode definir comandos de menu, perfis UML, restrições de validação e itens de caixa de ferramentas. Você pode definir vários componentes em uma única extensão. Você também pode distribuir essas extensões para outros usuários do Visual Studio na forma de um [extensão de integração do Visual Studio (VSIX)](http://go.microsoft.com/fwlink/?LinkId=160780). Você pode criar um VSIX usando um projeto VSIX no Visual Studio.  
   
 ## <a name="requirements"></a>Requisitos  
@@ -37,13 +35,13 @@ No Visual Studio, você pode definir as extensões para diagramas de modelagem. 
 ## <a name="creating-a-modeling-extension-solution"></a>Criando uma solução de extensão de modelagem  
  Para definir uma extensão de modelagem, você deve criar uma solução que contém esses projetos:  
   
--   Um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto integração VSIX (extensão). Isso gera um arquivo que atua como um instalador para os componentes da sua extensão.  
+- Um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto integração VSIX (extensão). Isso gera um arquivo que atua como um instalador para os componentes da sua extensão.  
   
--   Um projeto biblioteca de classes, necessário para os componentes que incluem o código do programa.  
+- Um projeto biblioteca de classes, necessário para os componentes que incluem o código do programa.  
   
- Se você quiser tornar uma extensão que tem vários componentes, você pode desenvolvê-los em uma única solução. Você precisa apenas um projeto VSIX.  
+  Se você quiser tornar uma extensão que tem vários componentes, você pode desenvolvê-los em uma única solução. Você precisa apenas um projeto VSIX.  
   
- Componentes que não exigem código, como itens de caixa de ferramentas personalizado e perfis personalizados do UML, podem ser adicionados diretamente ao projeto de VSIX sem o uso de projetos de biblioteca de classe separada. Componentes que exigem o código do programa com mais facilidade são definidos em um projeto de biblioteca de classe separada. Componentes que exigem código incluem manipuladores de gestos, comandos de menu e código de validação.  
+  Componentes que não exigem código, como itens de caixa de ferramentas personalizado e perfis personalizados do UML, podem ser adicionados diretamente ao projeto de VSIX sem o uso de projetos de biblioteca de classe separada. Componentes que exigem o código do programa com mais facilidade são definidos em um projeto de biblioteca de classe separada. Componentes que exigem código incluem manipuladores de gestos, comandos de menu e código de validação.  
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Para criar um projeto de biblioteca de classes para comandos de menu, manipuladores de gesto ou validação  
   
@@ -135,15 +133,15 @@ No Visual Studio, você pode definir as extensões para diagramas de modelagem. 
   
 #### <a name="to-uninstall-an-extension"></a>Para desinstalar uma extensão  
   
-1.  Sobre o **ferramentas** menu, clique em **extensões e atualizações**.  
+1. Sobre o **ferramentas** menu, clique em **extensões e atualizações**.  
   
-2.  Expandir **extensões instaladas**.  
+2. Expandir **extensões instaladas**.  
   
-3.  Selecione a extensão e, em seguida, clique em **desinstalação**.  
+3. Selecione a extensão e, em seguida, clique em **desinstalação**.  
   
- Raramente, uma extensão defeituosa Falha ao carregar e cria um relatório na janela de erros, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo no seguinte local no qual *% LocalAppData %* é normalmente *DriveName*: \Users\\*denomedeusuário*\AppData\Local:  
+   Raramente, uma extensão defeituosa Falha ao carregar e cria um relatório na janela de erros, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo no seguinte local no qual *% LocalAppData %* é normalmente *DriveName*: \Users\\*denomedeusuário*\AppData\Local:  
   
- *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versão]**  
+   *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versão]**  
   
 ## <a name="see-also"></a>Consulte também  
  [Definir um perfil para estender UML](../modeling/define-a-profile-to-extend-uml.md)   

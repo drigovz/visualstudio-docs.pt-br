@@ -1,7 +1,7 @@
 ---
 title: Campo TASK_STATE_CANCELED | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f4f5a96a-8230-493d-9696-8d2716bda261
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 869553b18f16135fe81d1a33e64eba1d33f0990b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9dccdeb9ebec3ce99557cb554ae3f19be3a7d12
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466400"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730935"
 ---
 # <a name="taskstatecanceled-field"></a>Campo TASK_STATE_CANCELED
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [campo TASK_STATE_CANCELED](https://docs.microsoft.com/visualstudio/extensibility/debugger/task-state-canceled-field).  
-  
 A tarefa foi cancelada antes de atingiu o estado de execução, ou ele confirmou o seu cancelamento e concluído sem exceção.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  

@@ -1,7 +1,7 @@
 ---
 title: 'Como: depurar o código otimizado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,21 +25,19 @@ helpviewer_keywords:
 - optimized code, debugging
 ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37cf0911023dcea501536b934ae9b6d84570e98b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e3d0e6c86c800e2ba35fdac78d6659fa2ecd7e94
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462848"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734058"
 ---
 # <a name="how-to-debug-optimized-code"></a>Como depurar o código otimizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: depurar o código otimizado](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-optimized-code).  
-  
 OBSERVAÇÃO]
 >  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
@@ -52,37 +50,37 @@ OBSERVAÇÃO]
   
  A otimização pode afetar:  
   
--   As variáveis locais, que podem ser removidas pelo otimizador ou movidas para locais que o depurador não entende.  
+- As variáveis locais, que podem ser removidas pelo otimizador ou movidas para locais que o depurador não entende.  
   
--   Posições dentro de uma função, que são alteradas quando o otimizador mescla blocos de código.  
+- Posições dentro de uma função, que são alteradas quando o otimizador mescla blocos de código.  
   
--   Nomes de função para quadros na pilha de chamadas, que pode estar errado se o otimizador mesclar duas funções.  
+- Nomes de função para quadros na pilha de chamadas, que pode estar errado se o otimizador mesclar duas funções.  
   
- Os quadros que você vê na pilha de chamadas estão quase sempre corretos, porém, supondo que você tenha símbolos para todos os quadros. Os quadros na pilha de chamadas estarão incorretos se você tiver um dano na pilha, se você tiver as funções escritas na linguagem assembly, ou se houver quadros do sistema operacional sem símbolos correspondentes na pilha de chamadas.  
+  Os quadros que você vê na pilha de chamadas estão quase sempre corretos, porém, supondo que você tenha símbolos para todos os quadros. Os quadros na pilha de chamadas estarão incorretos se você tiver um dano na pilha, se você tiver as funções escritas na linguagem assembly, ou se houver quadros do sistema operacional sem símbolos correspondentes na pilha de chamadas.  
   
- As variáveis globais e estáticas são sempre mostradas corretamente. Da mesma forma que o layout da estrutura. Se você tiver um ponteiro para uma estrutura e o valor do ponteiro estiver correto, cada variável de membro da estrutura mostrará o valor correto.  
+  As variáveis globais e estáticas são sempre mostradas corretamente. Da mesma forma que o layout da estrutura. Se você tiver um ponteiro para uma estrutura e o valor do ponteiro estiver correto, cada variável de membro da estrutura mostrará o valor correto.  
   
- Devido a essas restrições, você deverá depurar usando uma versão não otimizada do programa se isso for possível. Por padrão, a otimização está desativada na configuração de Depuração de um programa do Visual C++ e ativada na configuração de Versão.  
+  Devido a essas restrições, você deverá depurar usando uma versão não otimizada do programa se isso for possível. Por padrão, a otimização está desativada na configuração de Depuração de um programa do Visual C++ e ativada na configuração de Versão.  
   
- No entanto, um bug pode aparecer somente em uma versão otimizada de um programa. Nesse caso, você deverá depurar o código otimizado.  
+  No entanto, um bug pode aparecer somente em uma versão otimizada de um programa. Nesse caso, você deverá depurar o código otimizado.  
   
 ### <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>Para ativar a otimização em uma configuração da compilação de Depuração  
   
-1.  Quando você cria um novo projeto, selecione o destino de `Win32 Debug`. Use o `Win32``Debug` de destino até que seu programa seja depurado completamente e você estiver pronto para criar um `Win32 Release` destino. O compilador não otimiza o destino de `Win32 Debug`.  
+1. Quando você cria um novo projeto, selecione o destino de `Win32 Debug`. Use o `Win32``Debug` de destino até que seu programa seja depurado completamente e você estiver pronto para criar um `Win32 Release` destino. O compilador não otimiza o destino de `Win32 Debug`.  
   
-2.  Selecione o projeto no Gerenciador de Soluções.  
+2. Selecione o projeto no Gerenciador de Soluções.  
   
-3.  Sobre o **modo de exibição** menu, clique em **páginas de propriedade**.  
+3. Sobre o **modo de exibição** menu, clique em **páginas de propriedade**.  
   
-4.  No **páginas de propriedades** diálogo caixa, certifique-se `Debug` está selecionado no **configuração** lista suspensa.  
+4. No **páginas de propriedades** diálogo caixa, certifique-se `Debug` está selecionado no **configuração** lista suspensa.  
   
-5.  Na exibição de pasta à esquerda, selecione o **C/C++** pasta.  
+5. Na exibição de pasta à esquerda, selecione o **C/C++** pasta.  
   
-6.  Sob o **C++** pasta e selecione `Optimization`.  
+6. Sob o **C++** pasta e selecione `Optimization`.  
   
-7.  Na lista de propriedades à direita, localize `Optimization`. A configuração ao lado provavelmente informa `Disabled (` [/Od](http://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Escolha uma das outras opções (`Minimum Size``(`[/O1](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(` [/O2](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(` [/Ox](http://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760) `)`, ou `Custom`).  
+7. Na lista de propriedades à direita, localize `Optimization`. A configuração ao lado provavelmente informa `Disabled (` [/Od](http://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Escolha uma das outras opções (`Minimum Size``(`[/O1](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(` [/O2](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(` [/Ox](http://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760) `)`, ou `Custom`).  
   
-8.  Se você escolher a opção `Custom` para `Optimization`, agora poderá definir opções para qualquer uma das outras propriedades mostradas na lista de propriedades.  
+8. Se você escolher a opção `Custom` para `Optimization`, agora poderá definir opções para qualquer uma das outras propriedades mostradas na lista de propriedades.  
   
 9. Selecione as propriedades de configuração, C/C++, nó de linha de comando da página de propriedades do projeto e adicione `(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` para o **opções adicionais** caixa de texto.  
   
@@ -91,7 +89,7 @@ OBSERVAÇÃO]
     >   
     >  Adicionando `/Zo` desabilitará [editar e continuar](../debugger/edit-and-continue-visual-csharp.md).  
   
- Quando você depura código otimizado, use o **desmontagem** janela para ver quais instruções, na verdade, são criadas e executadas. Quando você define pontos de interrupção, precisa saber que o ponto de interrupção pode mover junto com uma instrução. Por exemplo, considere o seguinte código:  
+   Quando você depura código otimizado, use o **desmontagem** janela para ver quais instruções, na verdade, são criadas e executadas. Quando você define pontos de interrupção, precisa saber que o ponto de interrupção pode mover junto com uma instrução. Por exemplo, considere o seguinte código:  
   
 ```  
 for (x=0; x<10; x++)  

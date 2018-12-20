@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Criação de perfil de linha de comando usando amostragem | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - performance tools, command-line tools
 ms.assetid: 1d53972f-6f35-4842-8c74-1b627f18c70a
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 703faf6ca5cd50fc340ecf81dec1c7c619d3bfa6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b46af3a5485f896e1a5014c094646f364876d0d0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460308"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752482"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Instruções passo a passo: criação de perfil de linha de comando usando amostragem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: criação de perfil usando amostragem de linha de comando](https://docs.microsoft.com/visualstudio/profiling/walkthrough-command-line-profiling-using-sampling).  
-  
 Este passo a passo demonstra como criar um perfil de um aplicativo usando ferramentas de linha de comando e amostragem para identificar problemas de desempenho.  
   
  Neste passo a passo, você passará pelo processo de criação de perfil de um aplicativo gerenciado usando ferramentas de linha de comando e amostragem para isolar e identificar problemas de desempenho no aplicativo.  

@@ -1,7 +1,7 @@
 ---
 title: Projeto arquivos diversos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdcbe1901deb472969c993b826660d03d12b2cf3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5786eb21813125237a35ed185542b5f73bdc839
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464386"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777884"
 ---
 # <a name="miscellaneous-files-project"></a>Projeto arquivos diversos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [projeto arquivos diversos](https://docs.microsoft.com/visualstudio/extensibility/internals/miscellaneous-files-project).  
-  
 Quando um usuário abre itens do projeto, o IDE atribui ao projeto arquivos diversos todos os itens que não são membros de quaisquer projetos em uma solução.  
   
  Projetos desempenham um papel importante na determinação de qual editor é usado quando um usuário abre um item de projeto. Um projeto pode ser criado para abrir determinados arquivos usando um editor específico do projeto ou um editor padrão.  

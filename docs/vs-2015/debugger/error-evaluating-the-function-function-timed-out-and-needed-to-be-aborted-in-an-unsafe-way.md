@@ -1,7 +1,7 @@
 ---
 title: 'Erro: A avaliação da função &#39;função&#39; atingiu o tempo limite e precisou ser interrompida de forma não segura | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,21 +10,19 @@ f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 ms.assetid: 0a9f70ed-21ad-4a10-8535-b9c5885ad8f4
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b78d4b8f433c925521a978ab5c3a5076f329c407
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: abf50ba94992a599fbb2e64aa9b1e551dde3cbdf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467331"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766507"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Erro: A avaliação da função &#39;função&#39; atingiu o tempo limite e precisou ser interrompida de forma não segura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [erro: avaliar a função &#39;função&#39; atingiu o tempo limite e precisou ser interrompida de forma não segura](https://docs.microsoft.com/visualstudio/debugger/error-evaluating-the-function-function-timed-out-and-needed-to-be-aborted-in-an-unsafe-way).  
-  
 Mensagem de texto completo: avaliar a função 'função' atingiu o tempo limite e precisou ser interrompida de forma não segura. Isso pode ter corrompido o processo de destino. 
 
 Para tornar mais fácil de inspecionar o estado de objetos .NET, o depurador automaticamente forçará o processo depurado para executar código adicional (normalmente os métodos de getter de propriedade e funções de ToString). Na maioria dos cenários de todos os, essas funções concluída rapidamente e facilitar a depuração muito. No entanto, o depurador não executa o aplicativo em uma área restrita. Como resultado, um getter de propriedade ou método ToString que chama uma função nativa que trava pode levar a tempos limite longo que talvez não sejam recuperável. Se você encontrar esta mensagem de erro, isso ocorreu.

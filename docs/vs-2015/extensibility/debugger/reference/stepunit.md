@@ -1,7 +1,7 @@
 ---
 title: STEPUNIT | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: adb9324cbc7a87e79a91d17d4a39f5a23c9679a6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ff04acfc408454d20013c46247525f9374d42764
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467356"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782486"
 ---
 # <a name="stepunit"></a>STEPUNIT
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [STEPUNIT](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/stepunit).  
-  
 Especifica a unidade da etapa de passo a passo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_STEPUNIT {   
+enum enum_STEPUNIT {   
    STEP_STATEMENT   = 0,  
    STEP_LINE        = 1,  
    STEP_INSTRUCTION = 2  
@@ -43,7 +41,7 @@ typedef DWORD STEPUNIT;
 ```  
   
 ```csharp  
-enum enum_STEPUNIT {   
+enum enum_STEPUNIT {   
    STEP_STATEMENT   = 0,  
    STEP_LINE        = 1,  
    STEP_INSTRUCTION = 2  

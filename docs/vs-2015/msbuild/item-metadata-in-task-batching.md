@@ -1,7 +1,7 @@
 ---
 title: Metadados de itens no envio de tarefas em lote | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,30 +19,28 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 358535cced9568ba385809857ab641bd93b35daa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c117f6864aadd7c981aa2b89302c06ccfd6c9768
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923778"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadados de itens na separação de tarefas em lotes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [metadados de Item no lote de tarefas](https://docs.microsoft.com/visualstudio/msbuild/item-metadata-in-task-batching).  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] tem a capacidade de dividir as listas de itens em categorias diferentes ou lotes com base nos metadados do item, além de executar uma tarefa uma vez com cada lote. Pode ser difícil entender exatamente quais itens estão sendo passados com qual lote. Este tópico aborda os cenários comuns a seguir, que envolvem o envio em lote.  
   
--   Divisão de uma lista de itens em lotes  
+- Divisão de uma lista de itens em lotes  
   
--   Divisão de várias listas de itens em lotes  
+- Divisão de várias listas de itens em lotes  
   
--   Envio em lote, um item por vez  
+- Envio em lote, um item por vez  
   
--   Filtragem de listas de itens  
+- Filtragem de listas de itens  
   
- Para obter mais informações sobre envio em lote com [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], consulte [Envio em lote](../msbuild/msbuild-batching.md).  
+  Para obter mais informações sobre envio em lote com [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], consulte [Envio em lote](../msbuild/msbuild-batching.md).  
   
 ## <a name="dividing-an-item-list-into-batches"></a>Divisão de uma lista de itens em lotes  
  O envio em lote permite que você divida uma lista de itens em lotes diferentes com base nos metadados do item e passe cada um dos lotes em uma tarefa separadamente. Isso é útil para a criação de assemblies satélite.  

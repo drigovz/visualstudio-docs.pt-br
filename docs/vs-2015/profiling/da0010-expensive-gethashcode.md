@@ -1,7 +1,7 @@
 ---
 title: 'DA0010: função GetHashCode dispendiosa | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,15 +16,15 @@ f1_keywords:
 - vs.performance.10
 ms.assetid: 3987e21a-5b4f-45e4-8a33-6b3f0a472c08
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5aedad897ad2032db8258f47f86a7470e2ba9b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d27b696f38ddd90fc736204342051e4b5d87cd1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472810"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751445"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: função GetHashCode dispendiosa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

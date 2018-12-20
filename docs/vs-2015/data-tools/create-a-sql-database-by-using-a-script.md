@@ -1,7 +1,7 @@
 ---
 title: Criar um banco de dados SQL usando um script | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f9a2e3fdeccf8e3b094bd5fb1519d740cee7ce41
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 13816c499002f8eaf81067aba8d1854d06a41445
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460753"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266585"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Criar um banco de dados SQL usando um script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar um banco de dados SQL usando um script](https://docs.microsoft.com/visualstudio/data-tools/create-a-sql-database-by-using-a-script).  
-  
   
 Neste passo a passo, você usa o Visual Studio para criar um banco de dados pequeno que contém o código de exemplo [criar um aplicativo de dados simples usando o ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).  
   

@@ -1,7 +1,7 @@
 ---
 title: 'Como: usar o diagnóstico de gráficos com um dispositivo ARM | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 346fd3c0-9e92-4ab8-bb3b-1aa9000a2483
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24067412f875001185a0709c41f930ce3cdc8f3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c5122cb009b3624388ff8825b34cae8ca44a546
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467688"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728668"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Como usar diagnóstico de gráficos com um dispositivo ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: Use o diagnóstico de gráficos com um dispositivo ARM](https://docs.microsoft.com/visualstudio/debugger/graphics/how-to-use-graphics-diagnostics-with-an-arm-device).  
-  
 O Diagnóstico de Gráficos oferece suporte à depuração remota de aplicativos Direct3D em dispositivos baseados em ARM que executam o Windows RT 8.1 ou Windows Phone 8.1. É possível capturar informações de gráficos do aplicativo Direct3D enquanto ele é executado no dispositivo ou usar o dispositivo como computador de reprodução para obter informações de gráficos capturadas anteriormente.  
   
 ## <a name="using-graphics-diagnostics-with-an-arm-based-device"></a>Usando o Diagnóstico de Gráficos com um dispositivo baseado em ARM  

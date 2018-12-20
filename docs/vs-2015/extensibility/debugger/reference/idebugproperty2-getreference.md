@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty2::GetReference | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2fa97d9b-c3d7-478e-ba5a-a933f40a0103
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 22d187fb8e5f3c2fd869de5f6472d0e761dd8c8e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bda120e899141f4d5165716ecea5f5318b5980b6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460588"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759273"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProperty2::GetReference](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugproperty2-getreference).  
-  
 Retorna uma referência para o valor da propriedade.  
   
 ## <a name="syntax"></a>Sintaxe  

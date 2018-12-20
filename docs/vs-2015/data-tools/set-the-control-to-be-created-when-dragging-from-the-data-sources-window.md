@@ -1,7 +1,7 @@
 ---
 title: Definir o controle a ser criado quando arrastado da janela fontes de dados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d869f226206923a6e45646611b715786bfc5995
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e48bac812f8d87b7e65b6a2a5832a7a36e4f95c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465232"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860351"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Definir o controle a ser criado quando arrastado da janela Fontes de Dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [definir o controle a ser criado quando arrastado da janela fontes de dados](https://docs.microsoft.com/visualstudio/data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window).  
-  
   
 Você pode criar controles associados a dados arrastando itens dos **fontes de dados** janela para o WPF designer ou o designer de formulários do Windows. Cada item na **fontes de dados** janela tem um controle padrão que é criado quando você arrastá-lo para o designer. No entanto, você pode optar por criar um controle diferente.  
   
@@ -44,15 +42,15 @@ Você pode criar controles associados a dados arrastando itens dos **fontes de d
   
 #### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>Para definir os controles a serem criados para tabelas de dados ou objetos  
   
-1.  Certifique-se de que o WPF designer ou o designer de formulários do Windows é aberto.  
+1. Certifique-se de que o WPF designer ou o designer de formulários do Windows é aberto.  
   
-2.  No **fontes de dados** janela, selecione o item que representa a tabela de dados ou objeto que você deseja definir.  
+2. No **fontes de dados** janela, selecione o item que representa a tabela de dados ou objeto que você deseja definir.  
   
-3.  Clique no menu suspenso para o item e, em seguida, clique em um dos seguintes itens no menu:  
+3. Clique no menu suspenso para o item e, em seguida, clique em um dos seguintes itens no menu:  
   
-    -   Para exibir cada campo de dados em um controle separado, clique em **detalhes**. Quando você arrasta o item de dados para o designer, essa ação criará um controle de associação de dados diferente para cada coluna ou propriedade do objeto, juntamente com os rótulos para cada controle ou tabela de dados pai.  
+   - Para exibir cada campo de dados em um controle separado, clique em **detalhes**. Quando você arrasta o item de dados para o designer, essa ação criará um controle de associação de dados diferente para cada coluna ou propriedade do objeto, juntamente com os rótulos para cada controle ou tabela de dados pai.  
   
-    -   Para exibir todos os dados em um único controle, selecione um controle diferente na lista, como **DataGrid** ou **lista** em um aplicativo WPF, ou **DataGridView** em um Windows Forms aplicativo.  
+   - Para exibir todos os dados em um único controle, selecione um controle diferente na lista, como **DataGrid** ou **lista** em um aplicativo WPF, ou **DataGridView** em um Windows Forms aplicativo.  
   
      A lista de controles disponíveis depende, em que o designer você abriu, qual versão do .NET Framework o projeto está destinado e se você tiver adicionado personalizado controla esses suporte à vinculação de dados para o **caixa de ferramentas**. Se o controle que você deseja criar estiver na lista de controles disponíveis, você pode adicionar o controle à lista. Para obter mais informações, consulte [adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   

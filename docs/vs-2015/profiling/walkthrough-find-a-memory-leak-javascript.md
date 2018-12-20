@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Localizar uma perda de memória (JavaScript) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,21 +18,19 @@ helpviewer_keywords:
 - memory leaks, JavaScript example
 ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
 caps.latest.revision: 36
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 242dd78d7110a36e0c8baf4d1ea1e1a7f323a1c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2b84adac23547f42cca6113c5f5a7090f224e8c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464721"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744946"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Instruções passo a passo: localizar uma perda de memória (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: localizar uma perda de memória (JavaScript)](https://docs.microsoft.com/visualstudio/profiling/walkthrough-find-a-memory-leak-javascript).  
-  
 Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Este passo a passo o orienta pelo processo de identificar e corrigir um problema simples de memória usando o analisador de memória de JavaScript. O analisador de memória de JavaScript está disponível no Visual Studio para aplicativos da Windows Store criados para o Windows usando JavaScript. Neste cenário, você cria um aplicativo que retém incorretamente elementos DOM na memória, em vez de descartar os elementos na mesma proporção em que eles são criados.  
@@ -141,44 +139,44 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 ### <a name="analyzing-the-memory-usage"></a>Analisando uso de memória  
   
-1.  Na barra de ferramentas **Depurar**, na lista **Iniciar Depuração**, escolha o destino de depuração para o projeto atualizado: um dos Emuladores ou **Simulator** do Windows Phone.  
+1. Na barra de ferramentas **Depurar**, na lista **Iniciar Depuração**, escolha o destino de depuração para o projeto atualizado: um dos Emuladores ou **Simulator** do Windows Phone.  
   
-    > [!TIP]
-    >  Para um aplicativo da Windows Store, você também pode escolher **Computador Local** ou **Computador Remoto** nesta lista. Entretanto, a vantagem de usar o emulador ou o simulador é que você pode colocá-lo ao lado do Visual Studio e facilmente alternar entre o aplicativo em execução e o analisador de memória JavaScript. Para obter mais informações, consulte [Executar aplicativos do Visual Studio](../debugger/run-store-apps-from-visual-studio.md) e [Executar aplicativos da Windows Store em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+   > [!TIP]
+   >  Para um aplicativo da Windows Store, você também pode escolher **Computador Local** ou **Computador Remoto** nesta lista. Entretanto, a vantagem de usar o emulador ou o simulador é que você pode colocá-lo ao lado do Visual Studio e facilmente alternar entre o aplicativo em execução e o analisador de memória JavaScript. Para obter mais informações, consulte [Executar aplicativos do Visual Studio](../debugger/run-store-apps-from-visual-studio.md) e [Executar aplicativos da Windows Store em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
-2.  No menu **Depurar**, escolha **Criador de Perfil de Desempenho...**.  
+2. No menu **Depurar**, escolha **Criador de Perfil de Desempenho...**.  
   
-3.  Em **Ferramentas Disponíveis**, escolha **Memória JavaScript** e, em seguida, **Iniciar**.  
+3. Em **Ferramentas Disponíveis**, escolha **Memória JavaScript** e, em seguida, **Iniciar**.  
   
-     Neste tutorial, você anexará o analisador de memória ao projeto de inicialização. Para obter informações sobre outras opções, por exemplo, como anexar o analisador de memória a um aplicativo instalado, consulte [Memória JavaScript](../profiling/javascript-memory.md).  
+    Neste tutorial, você anexará o analisador de memória ao projeto de inicialização. Para obter informações sobre outras opções, por exemplo, como anexar o analisador de memória a um aplicativo instalado, consulte [Memória JavaScript](../profiling/javascript-memory.md).  
   
-     Ao iniciar o analisador de memória, você poderá ver o Controle de Conta de Usuário solicitando sua permissão para executar o arquivo VsEtwCollector.exe. Escolha **Sim**.  
+    Ao iniciar o analisador de memória, você poderá ver o Controle de Conta de Usuário solicitando sua permissão para executar o arquivo VsEtwCollector.exe. Escolha **Sim**.  
   
-4.  Escolha o botão **Provocar perda de memória** quatro vezes consecutivas.  
+4. Escolha o botão **Provocar perda de memória** quatro vezes consecutivas.  
   
-     Quando você escolhe o botão, o código de manipulação de eventos em default.js faz um trabalho que resultará em um vazamento de memória. Você usará isso para fins de diagnóstico.  
+    Quando você escolhe o botão, o código de manipulação de eventos em default.js faz um trabalho que resultará em um vazamento de memória. Você usará isso para fins de diagnóstico.  
   
-    > [!TIP]
-    >  Repetir o cenário que você quer testar em termos de vazamento de memória facilita a filtragem de informações que não interessam, como objetos adicionados ao heap durante a inicialização do aplicativo ou ao carregar uma página.  
+   > [!TIP]
+   >  Repetir o cenário que você quer testar em termos de vazamento de memória facilita a filtragem de informações que não interessam, como objetos adicionados ao heap durante a inicialização do aplicativo ou ao carregar uma página.  
   
-5.  No aplicativo em execução, alterne para o Visual Studio (Alt+Tab).  
+5. No aplicativo em execução, alterne para o Visual Studio (Alt+Tab).  
   
-     O analisador de memória de JavaScript exibe informações em um nova guia no Visual Studio.  
+    O analisador de memória de JavaScript exibe informações em um nova guia no Visual Studio.  
   
-     O gráfico de memória nessa exibição resumida mostra o uso de memória do processo ao longo do tempo. A exibição também fornece comandos como **Obter uma imagem instantânea do heap**. Um instantâneo fornece informações detalhadas sobre o uso de memória em um horário específico. Para obter mais informações, consulte [Memória JavaScript](../profiling/javascript-memory.md).  
+    O gráfico de memória nessa exibição resumida mostra o uso de memória do processo ao longo do tempo. A exibição também fornece comandos como **Obter uma imagem instantânea do heap**. Um instantâneo fornece informações detalhadas sobre o uso de memória em um horário específico. Para obter mais informações, consulte [Memória JavaScript](../profiling/javascript-memory.md).  
   
-6.  Escolha **Obter uma imagem instantânea do heap**.  
+6. Escolha **Obter uma imagem instantânea do heap**.  
   
-7.  Mude para o aplicativo e escolha **Perda de Memória**.  
+7. Mude para o aplicativo e escolha **Perda de Memória**.  
   
-8.  Mude para o Visual Studio e escolha **Obter uma imagem instantânea do heap** novamente.  
+8. Mude para o Visual Studio e escolha **Obter uma imagem instantânea do heap** novamente.  
   
-     Esta ilustração mostra o instantâneo da linha de base (1) e o Instantâneo 2.  
+    Esta ilustração mostra o instantâneo da linha de base (1) e o Instantâneo 2.  
   
-     ![A linha de base do instantâneo e o instantâneo 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
+    ![A linha de base do instantâneo e o instantâneo 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
-    > [!NOTE]
-    >  O Emulador do Windows Phone não mostra a captura de tela do aplicativo na hora em que o instantâneo é capturado.  
+   > [!NOTE]
+   >  O Emulador do Windows Phone não mostra a captura de tela do aplicativo na hora em que o instantâneo é capturado.  
   
 9. Mude para o aplicativo e escolha o botão **Provocar perda de memória** novamente.  
   
@@ -195,18 +193,18 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 12. No Visual Studio, compare os instantâneos. O instantâneo 2 mostra o seguinte:  
   
-    -   O tamanho do heap (mostrado pela seta para cima vermelha à esquerda) aumentou em vários KB em comparação com o Instantâneo 1.  
+    - O tamanho do heap (mostrado pela seta para cima vermelha à esquerda) aumentou em vários KB em comparação com o Instantâneo 1.  
   
-        > [!IMPORTANT]
-        >  Os valores exatos de uso da memória para o tamanho do heap dependem do destino de depuração.  
+      > [!IMPORTANT]
+      >  Os valores exatos de uso da memória para o tamanho do heap dependem do destino de depuração.  
   
-    -   O número de objetos no heap (mostrado pela seta para cima vermelha à direita) aumentou em comparação com o Instantâneo 1. Um objeto foi adicionado (+1) e nenhum objeto foi removido (-0).  
+    - O número de objetos no heap (mostrado pela seta para cima vermelha à direita) aumentou em comparação com o Instantâneo 1. Um objeto foi adicionado (+1) e nenhum objeto foi removido (-0).  
   
-     O instantâneo 3 mostra o seguinte:  
+      O instantâneo 3 mostra o seguinte:  
   
-    -   O tamanho do heap aumentou novamente em centenas de bytes em comparação com o Instantâneo 2.  
+    - O tamanho do heap aumentou novamente em centenas de bytes em comparação com o Instantâneo 2.  
   
-    -   O número de objetos no heap aumentou novamente em comparação com o Instantâneo 2. Um objeto foi adicionado (+1) e nenhum objeto foi removido (-0).  
+    - O número de objetos no heap aumentou novamente em comparação com o Instantâneo 2. Um objeto foi adicionado (+1) e nenhum objeto foi removido (-0).  
   
 13. No Instantâneo 3, escolha o texto do link à direita, que mostra um valor de +1 / -0 ao lado da seta vermelha para cima.  
   
@@ -222,76 +220,76 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
      Essa exibição mostra informações úteis sobre o vazamento de memória, como as seguintes:  
   
-    -   Essa exibição mostra o elemento DIV com ID de `item`, o tamanho retido para o objeto é de várias centenas de bytes (o valor exato pode variar).  
+    - Essa exibição mostra o elemento DIV com ID de `item`, o tamanho retido para o objeto é de várias centenas de bytes (o valor exato pode variar).  
   
-    -   Esse objeto é uma sobra do objeto de Instantâneo 2 e representa um vazamento de memória em potencial.  
+    - Esse objeto é uma sobra do objeto de Instantâneo 2 e representa um vazamento de memória em potencial.  
   
-     Algum conhecimento dos aplicativos ajuda neste ponto; a escolha do botão **Provocar perda de memória** deve remover um elemento DIV e adicionar um elemento, portanto o código não parece estar funcionando corretamente (ou seja, está vazando memória). A próxima seção explica como corrigir isso.  
+      Algum conhecimento dos aplicativos ajuda neste ponto; a escolha do botão **Provocar perda de memória** deve remover um elemento DIV e adicionar um elemento, portanto o código não parece estar funcionando corretamente (ou seja, está vazando memória). A próxima seção explica como corrigir isso.  
   
     > [!TIP]
     >  Às vezes, localizar um objeto em relação ao objeto `Global` pode ajudar a identificar esse objeto. Para isso, abra o menu de atalho do identificador e escolha **Mostrar na exibição de raiz**.  
   
 ##  <a name="FixingMemory"></a> Corrigindo o problema de memória  
   
-1.  Usando os dados revelados pelo criador de perfis, você examina o código que é responsável por remover elementos DOM com ID de "item". Isso ocorre na função `initialize()`.  
+1. Usando os dados revelados pelo criador de perfis, você examina o código que é responsável por remover elementos DOM com ID de "item". Isso ocorre na função `initialize()`.  
   
-    ```javascript  
-    function initialize() {  
+   ```javascript  
+   function initialize() {  
   
-        if (wrapper != null) {  
-            elem.removeNode(true);  
-        }  
-    }  
-    ```  
+       if (wrapper != null) {  
+           elem.removeNode(true);  
+       }  
+   }  
+   ```  
   
-     `elem.removeNode(true)` talvez não esteja funcionando corretamente. Você examina como o código está armazenando em cache o elemento DOM e encontra um problema; a referência ao elemento em cache não está sendo atualizada.  
+    `elem.removeNode(true)` talvez não esteja funcionando corretamente. Você examina como o código está armazenando em cache o elemento DOM e encontra um problema; a referência ao elemento em cache não está sendo atualizada.  
   
-2.  Em default.js, adicione a seguinte linha de código à função de carregamento imediatamente antes de chamar `appendChild`:  
+2. Em default.js, adicione a seguinte linha de código à função de carregamento imediatamente antes de chamar `appendChild`:  
   
-    ```javascript  
-    elem = newDiv;  
-    ```  
+   ```javascript  
+   elem = newDiv;  
+   ```  
   
-     Esse código atualiza a referência ao elemento armazenado em cache, para que seja removido corretamente quando você escolher o botão **Provocar perda de memória**. O código completo para a função de carregamento agora tem esta aparência:  
+    Esse código atualiza a referência ao elemento armazenado em cache, para que seja removido corretamente quando você escolher o botão **Provocar perda de memória**. O código completo para a função de carregamento agora tem esta aparência:  
   
-    ```javascript  
-    function load() {  
+   ```javascript  
+   function load() {  
   
-        wrapper = document.querySelector(".wrapper");  
+       wrapper = document.querySelector(".wrapper");  
   
-        var newDiv = document.createElement("div");  
+       var newDiv = document.createElement("div");  
   
-        newDiv.style.zIndex = "-1";  
-        newDiv.id = "item";  
-        elem = newDiv;  
+       newDiv.style.zIndex = "-1";  
+       newDiv.id = "item";  
+       elem = newDiv;  
   
-        wrapper.appendChild(newDiv);  
-    }  
-    ```  
+       wrapper.appendChild(newDiv);  
+   }  
+   ```  
   
-3.  No menu **Depurar** escolha **Desempenho e Diagnóstico**.  
+3. No menu **Depurar** escolha **Desempenho e Diagnóstico**.  
   
-4.  Em **Ferramentas Disponíveis**, escolha **Memória JavaScript** e, em seguida, **Iniciar**.  
+4. Em **Ferramentas Disponíveis**, escolha **Memória JavaScript** e, em seguida, **Iniciar**.  
   
-5.  Siga o mesmo procedimento anterior para obter três instantâneos. As etapas são resumidas aqui:  
+5. Siga o mesmo procedimento anterior para obter três instantâneos. As etapas são resumidas aqui:  
   
-    1.  No aplicativo, escolha o botão **Provocar perda de memória** quatro vezes consecutivas.  
+   1. No aplicativo, escolha o botão **Provocar perda de memória** quatro vezes consecutivas.  
   
-    2.  Mude para o Visual Studio e escolha **Obter uma imagem instantânea do heap** para o instantâneo da linha de base.  
+   2. Mude para o Visual Studio e escolha **Obter uma imagem instantânea do heap** para o instantâneo da linha de base.  
   
-    3.  No aplicativo, escolha o botão **Provocar perda de memória**.  
+   3. No aplicativo, escolha o botão **Provocar perda de memória**.  
   
-    4.  Mude para o Visual Studio e escolha **Obter uma imagem instantânea do heap** para o segundo instantâneo.  
+   4. Mude para o Visual Studio e escolha **Obter uma imagem instantânea do heap** para o segundo instantâneo.  
   
-    5.  No aplicativo, escolha o botão **Provocar perda de memória**.  
+   5. No aplicativo, escolha o botão **Provocar perda de memória**.  
   
-    6.  Mude para o Visual Studio e escolha **Obter uma imagem instantânea do heap** para o terceiro instantâneo.  
+   6. Mude para o Visual Studio e escolha **Obter uma imagem instantânea do heap** para o terceiro instantâneo.  
   
-     O Instantâneo 3 agora mostra o tamanho do heap como **Sem aumento** do Instantâneo 2 e da contagem de objetos como +1/-1, o que indica que um objeto foi adicionado e outro removido. Esse é o comportamento desejado.  
+      O Instantâneo 3 agora mostra o tamanho do heap como **Sem aumento** do Instantâneo 2 e da contagem de objetos como +1/-1, o que indica que um objeto foi adicionado e outro removido. Esse é o comportamento desejado.  
   
-     A ilustração a seguir mostra o Instantâneo 2 e o Instantâneo 3.  
+      A ilustração a seguir mostra o Instantâneo 2 e o Instantâneo 3.  
   
-     ![Instantâneos mostrando a perda de memória fixa](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
+      ![Instantâneos mostrando a perda de memória fixa](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
 ## <a name="see-also"></a>Consulte também  
  [Memória JavaScript](../profiling/javascript-memory.md)

@@ -1,7 +1,7 @@
 ---
 title: PROVIDER_FLAGS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,44 +17,42 @@ ms.assetid: 8cbd2312-ed2f-4477-b192-c3f25c6098c3
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a37c758a588576a823bd7d5abd685ce7f14b488
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9a26866928a413329b056155df029773f5f5865
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475112"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721909"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [PROVIDER_FLAGS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/provider-flags).  
-  
 Especifica as propriedades desejadas para serem obtidas de um provedor de programa.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-enum enum_PROVIDER_FLAGS {  
-   PFLAG_NONE                    = 0x00,  
-   PFLAG_REMOTE_PORT             = 0x01,  
-   PFLAG_DEBUGGEE                = 0x02,  
-   PFLAG_ATTACHED_TO_DEBUGGEE    = 0x04,  
-   PFLAG_REASON_WATCH            = 0x08,  
-   PFLAG_GET_PROGRAM_NODES       = 0x10,  
-   PFLAG_GET_IS_DEBUGGER_PRESENT = 0x20  
+enum enum_PROVIDER_FLAGS {  
+   PFLAG_NONE                    = 0x00,  
+   PFLAG_REMOTE_PORT             = 0x01,  
+   PFLAG_DEBUGGEE                = 0x02,  
+   PFLAG_ATTACHED_TO_DEBUGGEE    = 0x04,  
+   PFLAG_REASON_WATCH            = 0x08,  
+   PFLAG_GET_PROGRAM_NODES       = 0x10,  
+   PFLAG_GET_IS_DEBUGGER_PRESENT = 0x20  
 };  
-typedef DWORD PROVIDER_FLAGS;  
+typedef DWORD PROVIDER_FLAGS;  
 ```  
   
 ```csharp  
-public enum enum_PROVIDER_FLAGS {  
-   PFLAG_NONE                    = 0x00,  
-   PFLAG_REMOTE_PORT             = 0x01,  
-   PFLAG_DEBUGGEE                = 0x02,  
-   PFLAG_ATTACHED_TO_DEBUGGEE    = 0x04,  
-   PFLAG_REASON_WATCH            = 0x08,  
-   PFLAG_GET_PROGRAM_NODES       = 0x10,  
-   PFLAG_GET_IS_DEBUGGER_PRESENT = 0x20  
+public enum enum_PROVIDER_FLAGS {  
+   PFLAG_NONE                    = 0x00,  
+   PFLAG_REMOTE_PORT             = 0x01,  
+   PFLAG_DEBUGGEE                = 0x02,  
+   PFLAG_ATTACHED_TO_DEBUGGEE    = 0x04,  
+   PFLAG_REASON_WATCH            = 0x08,  
+   PFLAG_GET_PROGRAM_NODES       = 0x10,  
+   PFLAG_GET_IS_DEBUGGER_PRESENT = 0x20  
 };  
 ```  
   
@@ -83,13 +81,13 @@ public enum enum_PROVIDER_FLAGS {
 ## <a name="remarks"></a>Comentários  
  Esses sinalizadores são passados para os seguintes métodos:  
   
--   [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
+- [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
   
--   [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
+- [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
   
--   [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
+- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
   
- Esses valores podem ser combinados com um bit a bit `OR`.  
+  Esses valores podem ser combinados com um bit a bit `OR`.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

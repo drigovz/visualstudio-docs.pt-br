@@ -1,7 +1,7 @@
 ---
 title: 'Idiasegment:: Get_addresssection | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSegment::get_addressSection method
 ms.assetid: 360b61b1-69b1-4a8b-ba37-97a1d835ac53
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c122f1c847dd0b1550908e07d76a13727e05351c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 66a7a6ef863cbb981bc952c80dc5a4719d940482
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461919"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731688"
 ---
 # <a name="idiasegmentgetaddresssection"></a>IDiaSegment::get_addressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasegment:: Get_addresssection](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasegment-get-addresssection).  
-  
 Recupera o número de seção que mapeia para este segmento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_addressSection (   
+HRESULT get_addressSection (   
    DWORD* pRetVal  
 );  
 ```  

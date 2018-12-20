@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_INFO | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a915458c00e75f6acb62434e184170420d15aad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f90b74a018b90b405cf3e5dbeef25af33b2d9fb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475709"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817731"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [CONTEXT_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/context-info).  
-  
 Essa estrutura descreve um contexto de memória ou o contexto de código.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-typedef struct _tagCONTEXT_INFO {   
+typedef struct _tagCONTEXT_INFO {   
    CONTEXT_INFO_FIELDS dwFields;  
    BSTR                bstrModuleUrl;  
    BSTR                bstrFunction;  
@@ -59,7 +57,7 @@ public struct CONTEXT_INFO {
   
 ## <a name="members"></a>Membros  
  dwFields  
- Uma combinação de sinalizadores de ele [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumeração que especifica quais campos são preenchidos **.**  
+ Uma combinação de sinalizadores de ele [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumeração que especifica quais campos são preenchidos<strong>.</strong>  
   
  bstrModuleUrl  
  O nome do módulo no qual o contexto está localizado.  

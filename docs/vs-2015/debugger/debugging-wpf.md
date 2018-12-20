@@ -1,7 +1,7 @@
 ---
 title: Depurando WPF | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ helpviewer_keywords:
 - debugging, WPF
 ms.assetid: 7948e8a6-40b2-4ebb-8461-e220a9e78cd7
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce2a30c1197abb323a60db3939d70dc3eec4fd37
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4269945556835c845150cc3983d79a47d60cb86
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467109"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802805"
 ---
 # <a name="debugging-wpf"></a>Depurando WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depurando o WPF](https://docs.microsoft.com/visualstudio/debugger/debugging-wpf).  
-  
 O [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] fornece recursos adicionais para facilitar a depuração de aplicativos do WPF.  
   
 ## <a name="related-topics"></a>Tópicos relacionados  

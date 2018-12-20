@@ -1,7 +1,7 @@
 ---
 title: Estrutura de VSPackage (VSPackage de controle do código-fonte) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c27eb3c0bc977f716d3437042e1e4105eb1692d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6eaad545d1c1b3fe96ecbad3a88cc7636b777a54
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460575"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737978"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Estrutura do VSPackage (VSPackage de controle do código-fonte)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [estrutura de VSPackage (VSPackage de controle do código-fonte)](https://docs.microsoft.com/visualstudio/extensibility/internals/vspackage-structure-source-control-vspackage).  
-  
 O SDK do pacote de controle do código-fonte fornece diretrizes para criação de um VSPackage que permitem que um implementador de controle do código-fonte integrar sua funcionalidade de controle do código-fonte com o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente. Um VSPackage é um componente COM que normalmente é carregado sob demanda pelo [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE) com base nos serviços que são anunciados pelo pacote em suas entradas do registro. Cada VSPackage deve implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Um VSPackage geralmente consome serviços oferecidos pelo [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE e oferece alguns serviços da sua própria.  
   
  Um VSPackage declara seus itens de menu e estabelece um estado de item padrão por meio do arquivo. VSCT. O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE exibe os itens de menu nesse estado até que o VSPackage seja carregado. Subsequentemente, a implementação do VSPackage do <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método é chamado para habilitar ou desabilitar itens de menu.  
@@ -37,23 +35,23 @@ O SDK do pacote de controle do código-fonte fornece diretrizes para criação d
   
  A semântica de VSPackage incluem:  
   
--   Interface a ser implementada em virtude de ser um VSPackage (o `IVsPackage` interface)  
+- Interface a ser implementada em virtude de ser um VSPackage (o `IVsPackage` interface)  
   
--   Implementação de comandos de interface do usuário (arquivo. VSCT e a implementação do <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface)  
+- Implementação de comandos de interface do usuário (arquivo. VSCT e a implementação do <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface)  
   
--   Registro do VSPackage com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- Registro do VSPackage com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
- O VSPackage de controle de origem deve se comunicar com esses outros [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entidades:  
+  O VSPackage de controle de origem deve se comunicar com esses outros [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entidades:  
   
--   Projetos  
+- Projetos  
   
--   Editores  
+- Editores  
   
--   Soluções  
+- Soluções  
   
--   Windows  
+- Windows  
   
--   Tabela de documento em execução  
+- Tabela de documento em execução  
   
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Ambiente de serviços do Visual Studio que podem ser consumidos  
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>  

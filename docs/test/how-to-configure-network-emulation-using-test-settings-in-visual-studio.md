@@ -1,5 +1,5 @@
 ---
-title: Configurar a emulação de rede usando configurações de teste no Visual Studio
+title: Configurar a emulação de rede usando configurações do teste
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,21 +10,23 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2ce10d096ff646b462c7b0aff2cbcf33493aad0c
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 032eff41f0e6b6366e5eb56dad591a02ebde4984
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320651"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065889"
 ---
-# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Como configurar a emulação de rede usando configurações de teste no Visual Studio
+# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Como: Configurar a emulação de rede usando configurações de teste no Visual Studio
 
 Você pode configurar o adaptador de dados de diagnóstico para testar o aplicativo em vários ambientes de rede do Visual Studio. Ele também pode ser configurado para testar uma carga de rede artificial ou gargalo, quando você executa os testes.
 
 > [!WARNING]
 > Se você executar seus testes em uma rede real que seja um tipo mais lento do que a rede emulada, o teste ainda será executado na velocidade mais lenta de rede. A emulação só pode reduzir a velocidade do ambiente de rede, e não agilizá-la.
 
- O procedimento a seguir descreve como configurar a emulação de rede no editor de configuração. Essas etapas se aplicam ao editor de configuração no Microsoft Test Manager e ao Visual Studio.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+O procedimento a seguir descreve como configurar a emulação de rede no editor de configuração. Essas etapas se aplicam ao editor de configuração no Microsoft Test Manager e ao Visual Studio.
 
 > [!NOTE]
 > O adaptador de dados de diagnóstico de emulação de rede só se aplica às configurações de teste do Visual Studio. Ele não é usado para configurações de teste no Microsoft Test Manager.
@@ -34,28 +36,29 @@ Uma conta que tenha privilégios de administrador deve ser usada para a emulaç�
 > [!NOTE]
 > A conta do Serviço de Rede, que é a conta padrão para o agente de teste, não é membro do grupo de administradores.
 
- **Emulação de rede verdadeira**
+**Emulação de rede verdadeira**
 
- O Visual Studio usa emulação de rede real baseada em software para todos os tipos de testes. Isso inclui testes de carga. A emulação de rede verdadeira simula condições de rede pela manipulação direta de pacotes de rede. O emulador real de rede pode emular o comportamento de redes com fio e sem fio usando um link físico confiável, como Ethernet. Os seguintes atributos de rede são incorporados na emulação de rede verdadeira:
+O Visual Studio usa emulação de rede real baseada em software para todos os tipos de testes. Isso inclui testes de carga. A emulação de rede verdadeira simula condições de rede pela manipulação direta de pacotes de rede. O emulador real de rede pode emular o comportamento de redes com fio e sem fio usando um link físico confiável, como Ethernet. Os seguintes atributos de rede são incorporados na emulação de rede verdadeira:
 
--   O tempo da viagem de ida e volta pela rede (latência)
+- O tempo da viagem de ida e volta pela rede (latência)
 
--   A quantidade de largura de banda disponível
+- A quantidade de largura de banda disponível
 
--   Comportamento do enfileiramento
+- Comportamento do enfileiramento
 
--   Perda de pacote
+- Perda de pacote
 
--   Reordenação de pacotes
+- Reordenação de pacotes
 
--   Propagações de erros.
+- Propagações de erros.
 
- A emulação de rede verdadeira também fornece flexibilidade em pacotes de rede de filtragem com base em endereços IP ou em protocolos como TCP, UDP e ICMP.
+A emulação de rede verdadeira também fornece flexibilidade em pacotes de rede de filtragem com base em endereços IP ou em protocolos como TCP, UDP e ICMP.
 
- A emulação real de rede pode ser usada por desenvolvedores e testadores na rede para emular um ambiente de teste desejado, avaliar o desempenho, prever o efeito da alteração ou para tomar decisões sobre otimização da tecnologia. Quando comparada com bases de teste de hardware, a emulação de rede verdadeira é uma solução muito mais econômica e flexível.
+A emulação real de rede pode ser usada por desenvolvedores e testadores na rede para emular um ambiente de teste desejado, avaliar o desempenho, prever o efeito da alteração ou para tomar decisões sobre otimização da tecnologia. Quando comparada com bases de teste de hardware, a emulação de rede verdadeira é uma solução muito mais econômica e flexível.
 
 ## <a name="configure-network-emulation-for-your-test-settings"></a>Configurar a emulação de rede para as configurações de teste
- Antes de executar as etapas neste procedimento, você deverá abrir as configurações de teste no Visual Studio e selecionar a página **Dados e Diagnósticos**.
+
+Antes de executar as etapas neste procedimento, você deverá abrir as configurações de teste no Visual Studio e selecionar a página **Dados e Diagnósticos**.
 
 ### <a name="to-configure-network-emulation-for-your-test-settings"></a>Para configurar a emulação de rede para suas configurações de teste
 
@@ -75,12 +78,12 @@ Uma conta que tenha privilégios de administrador deve ser usada para a emulaç�
 
 4.  Se você incluir o adaptador de dados de diagnóstico de emulação de rede nas configurações de teste e se pretende usar no seu computador local, então também deverá associar o driver de emulação de rede para um dos adaptadores de rede do computador. O driver de emulação de rede é necessário para que o adaptador de dados de diagnóstico de emulação de rede funcione. O driver de emulação de rede é instalado e associado ao seu adaptador de duas maneiras:
 
-    -   **Driver de emulação de rede instalado com o Agente de Teste do Microsoft Visual Studio:** o Agente de Teste do Microsoft Visual Studio pode ser usado em computadores remotos e em seu computador local. Quando você instala o Visual Studio Test Agent, o processo de instalação inclui uma etapa de configuração que associa o driver de emulação de rede em seu cartão de rede. Para obter mais informações, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
+    -   **Driver de emulação de rede instalado com o Test Agent do Microsoft Visual Studio:** O Test Agent do Microsoft Visual Studio pode ser usado em computadores remotos e no computador local. Quando você instala o Visual Studio Test Agent, o processo de instalação inclui uma etapa de configuração que associa o driver de emulação de rede em seu cartão de rede. Para obter mais informações, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
 
-    -   **Driver de emulação de rede instalado com o Microsoft Visual Studio Test Professional:** quando você usar a emulação de rede pela primeira vez, será solicitada a associação do driver de emulação de rede a uma placa de rede.
+    -   **Driver de emulação de rede instalado com o Microsoft Visual Studio Test Professional:** Ao usar a emulação de rede pela primeira vez, você deverá associar o driver de emulação de rede a uma placa de rede.
 
     > [!TIP]
-    > Você também pode instalar o driver de emulação de rede de linha de comando em seu computador local sem instalar o agente de teste do Visual Studio, usando o seguinte comando: **VSTestConfig NETWORKEMULATION /install**
+    > Você também pode instalar o driver de emulação de rede por meio da linha de comando no computador local sem instalar o agente de teste do Visual Studio usando o seguinte comando: **VSTestConfig NETWORKEMULATION /install**
 
 ## <a name="see-also"></a>Consulte também
 

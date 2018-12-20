@@ -1,7 +1,7 @@
 ---
 title: 'CA1716: Os identificadores não devem corresponder a palavras-chave | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c1a3affbecf7a39ee323fd64bc8a56d92e8a4d5e
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 000e28642a10c565e525b2714eed0d7abaca9340
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47586999"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858869"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: os identificadores não devem corresponder a palavras-chave
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1716: os identificadores não devem corresponder a palavras-chave](https://docs.microsoft.com/visualstudio/code-quality/ca1716-identifiers-should-not-match-keywords).
 
 |||
 |-|-|
@@ -47,13 +45,13 @@ A versão mais recente deste tópico pode ser encontrada em [CA1716: os identifi
 
  Esta regra verifica em palavras-chave nos seguintes idiomas:
 
--   Visual Basic
+- Visual Basic
 
--   C#
+- C#
 
--   C++/CLI
+- C++/CLI
 
- Comparação de maiusculas e minúsculas é usada para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] comparação diferencia maiusculas de minúsculas e palavras-chave é usada para os outros idiomas.
+  Comparação de maiusculas e minúsculas é usada para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] comparação diferencia maiusculas de minúsculas e palavras-chave é usada para os outros idiomas.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Selecione um nome que não aparece na lista de palavras-chave.

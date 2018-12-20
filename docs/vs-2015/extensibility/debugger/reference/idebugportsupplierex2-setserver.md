@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplierEx2::SetServer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 0e8ef194-3a4f-4abf-8382-4607ab3005d1
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4c9e5d89ad645cb5604efa94d2e2e6c2fb439a7d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 976949dec69bd69baaed506c05432a70e9fd8d32
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462211"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768648"
 ---
 # <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPortSupplierEx2::SetServer](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportsupplierex2-setserver).  
-  
 Define o server core para o fornecedor de porta.  
   
 ## <a name="syntax"></a>Sintaxe  

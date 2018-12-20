@@ -1,7 +1,7 @@
 ---
 title: Gerenciar opções de configuração | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ae7c6208c185b000646a2430864f2e021c8f74ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f7407a4c75321899498f2f4fa9e555f32198c0c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467849"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748725"
 ---
 # <a name="managing-configuration-options"></a>Gerenciando opções de configuração
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [opções de configuração de gerenciamento de](https://docs.microsoft.com/visualstudio/extensibility/internals/managing-configuration-options).  
-  
 Quando você cria um novo tipo de projeto, você deve gerenciar definições de configuração do projeto e solução que determinam como o projeto será compilado, empacotado, implantados e execução. Os tópicos a seguir abordam a configuração de projeto e solução.  
   
 ## <a name="in-this-section"></a>Nesta seção  

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c333d38dde1d440d5bac10770d0b3386f82ad4ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 756486daa709efd6ce1ff697d6d190bb7f4a2e34
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626140"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295716"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Passo a passo: Estender um tipo de item de projeto do SharePoint
   Você pode usar o **modelo de conectividade de dados corporativos** item de projeto para criar um modelo para o serviço de conectividade de dados comerciais (BDC) no SharePoint. Por padrão, quando você cria um modelo usando esse item de projeto, os dados no modelo não são exibidos aos usuários. Você também deve criar uma lista externa no SharePoint para permitir que os usuários exibam os dados.  
@@ -42,24 +42,24 @@ ms.locfileid: "42626140"
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:  
   
--   Edições com suporte do Microsoft Windows, SharePoint e do Visual Studio.  
+- Edições com suporte do Microsoft Windows, SharePoint e do Visual Studio.  
   
--   O [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Este passo a passo usa o **VSIX Project** modelo no SDK para criar um pacote VSIX para implantar o item de projeto. Para obter mais informações, consulte [estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- O [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Este passo a passo usa o **VSIX Project** modelo no SDK para criar um pacote VSIX para implantar o item de projeto. Para obter mais informações, consulte [estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir o passo a passo:  
+  Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir o passo a passo:  
   
--   O serviço BDC no [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. Para obter mais informações, consulte [arquitetura BDC](http://go.microsoft.com/fwlink/?LinkId=177798).  
+- O serviço BDC no [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. Para obter mais informações, consulte [arquitetura BDC](http://go.microsoft.com/fwlink/?LinkId=177798).  
   
--   O esquema XML para modelos BDC. Para obter mais informações, consulte [infraestrutura de modelo BDC](http://go.microsoft.com/fwlink/?LinkId=177799).  
+- O esquema XML para modelos BDC. Para obter mais informações, consulte [infraestrutura de modelo BDC](http://go.microsoft.com/fwlink/?LinkId=177799).  
   
 ## <a name="create-the-projects"></a>Crie os projetos
  Para concluir este passo a passo, você precisa criar dois projetos:  
   
--   Um projeto VSIX para criar o pacote VSIX para implantar a extensão de item de projeto.  
+- Um projeto VSIX para criar o pacote VSIX para implantar a extensão de item de projeto.  
   
--   Um projeto de biblioteca de classe que implementa a extensão de item de projeto.  
+- Um projeto de biblioteca de classe que implementa a extensão de item de projeto.  
   
- Inicie o passo a passo Criando os projetos.  
+  Inicie o passo a passo Criando os projetos.  
   
 #### <a name="to-create-the-vsix-project"></a>Para criar o projeto do VSIX  
   
@@ -164,7 +164,7 @@ ms.locfileid: "42626140"
   
 1.  Na **Gerenciador de soluções**, abra o menu de atalho para o arquivo vsixmanifest no projeto GenerateExternalDataLists e, em seguida, escolha **abrir**.  
   
-     Visual Studio abre o arquivo no editor de manifesto. O arquivo vsixmanifest é que a base para o arquivo Extension vsixmanifest é necessária para todos os pacotes VSIX. Para obter mais informações sobre esse arquivo, consulte [1.0 referência do esquema de extensão do VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Visual Studio abre o arquivo no editor de manifesto. O arquivo vsixmanifest é que a base para o arquivo Extension vsixmanifest é necessária para todos os pacotes VSIX. Para obter mais informações sobre esse arquivo, consulte [1.0 referência do esquema de extensão do VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  No **nome do produto** , digite **gerador de lista de dados externos**.  
   
@@ -179,7 +179,7 @@ ms.locfileid: "42626140"
 6.  No **tipo** , escolha **mefcomponent**.  
   
     > [!NOTE]  
-    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  No **fonte** , escolha **um projeto na solução atual**.  
   
@@ -220,7 +220,7 @@ ms.locfileid: "42626140"
   
 5.  No **nome** , digite **SharePointProjectTestBDC**e, em seguida, escolha o **Okey** botão.  
   
-6.  No Assistente de personalização do SharePoint, insira a URL do site que você deseja usar para depuração, escolha **implantar como uma solução de farm**e, em seguida, escolha o **concluir**botão.  
+6.  No Assistente de personalização do SharePoint, insira a URL do site que você deseja usar para depuração, escolha **implantar como uma solução de farm**e, em seguida, escolha o **concluir** botão.  
   
 7.  Abra o menu de atalho do projeto SharePointProjectTestBDC, escolha **Add**e, em seguida, escolha **Novo Item**.  
   

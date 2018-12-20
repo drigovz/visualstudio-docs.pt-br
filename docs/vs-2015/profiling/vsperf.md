@@ -1,7 +1,7 @@
 ---
 title: VSPerf | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,28 +11,26 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e064460c0b707ba033f0f1643e2e0ad35601141
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 830aa028e8c34beb5fd6818c40ffcfc7f3fa461b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464492"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755261"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [VSPerf](https://docs.microsoft.com/visualstudio/profiling/vsperf).  
-  
 Use a ferramenta de linha de comando **VsPerf** para:  
   
-1.  Crie perfil de aplicativos da Windows Store na linha de comando quando o Visual Studio não estiver instalado no dispositivo.  
+1. Crie perfil de aplicativos da Windows Store na linha de comando quando o Visual Studio não estiver instalado no dispositivo.  
   
-2.  Crie perfil de aplicativos de área de trabalho do Windows 8 e aplicativos do Windows Server 2012 usando o método de criação de perfil de amostragem.  
+2. Crie perfil de aplicativos de área de trabalho do Windows 8 e aplicativos do Windows Server 2012 usando o método de criação de perfil de amostragem.  
   
- Para obter mais informações sobre opções de criação de perfil, consulte [Ferramentas de desempenho em aplicativos do Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+   Para obter mais informações sobre opções de criação de perfil, consulte [Ferramentas de desempenho em aplicativos do Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ##  <a name="BKMK_In_this_topic"></a> Neste tópico  
  Este tópico descreve as opções que você pode usar com a ferramenta de linha de comando `vsperf.exe`. Este tópico contém as seguintes seções:  
@@ -60,7 +58,7 @@ Use a ferramenta de linha de comando **VsPerf** para:
 |||  
 |-|-|  
 |**/launch:{Executable}**|Inicia e começa a criação de perfil do arquivo executável especificado.|  
-|**/args:{ExecutableArguments}**|Especifica os argumentos de linha de comando a serem passados para o destino **/launch**.|  
+|**/args:{ExecutableArguments}**|Especifica os argumentos de linha de comando que passarão o destino **/launch**.|  
 |**/console**|Executa o destino **/launch** em uma nova janela de comando.|  
   
 ##  <a name="BKMK_All_applications"></a> Todos os aplicativos  

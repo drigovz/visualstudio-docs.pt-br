@@ -1,7 +1,7 @@
 ---
 title: Avaliação de expressão (SDK de depuração do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5044ced5-c18c-4534-b0bf-cc3e50cd57ac
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd5fb9ac88b2535c897978cdd63f9cf0716d53a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb5bfe5f5c77e7ba1881f803830e1cb3d357561b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465673"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781576"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Avaliação de expressão (SDK de depuração do Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [avaliação da expressão (depuração de SDK do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk).  
-  
 Durante o modo de interrupção, o IDE deve ser capaz de avaliar expressões simples envolvendo diversas variáveis do programa. Para fazer isso, o mecanismo de depuração (DES) deve ser capaz de analisar e avaliar uma expressão que é inserida em uma das janelas do IDE.  
   
  As expressões são criadas usando o [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) método e são representados por resultante [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interface.  

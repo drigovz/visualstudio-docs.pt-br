@@ -1,7 +1,7 @@
 ---
 title: Editar diagramas de sequência UML usando a API UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ helpviewer_keywords:
 - UML activity diagrams, programming
 ms.assetid: 8cdd0203-85ef-4c62-9abc-da4cb26fa504
 caps.latest.revision: 27
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ba6f1cb12d8ffb93721e266e80127e574ca36e76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f68cf87a7f45b906c6de43e0a837d49132b7a3e0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467704"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725554"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Editar diagramas de sequência UML usando a API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [diagramas de sequência UML Editar usando a API UML](https://docs.microsoft.com/visualstudio/modeling/edit-uml-sequence-diagrams-by-using-the-uml-api).  
-  
 Uma interação é uma sequência de mensagens entre um conjunto de linhas da vida. Uma interação é exibida em um diagrama de sequência UML.  
   
  Para obter detalhes completos da API, consulte <xref:Microsoft.VisualStudio.Uml.Interactions?displayProperty=fullName>.  
@@ -123,13 +121,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>Atualização de uma interação e seu Layout  
  Quando você atualiza uma interação, sempre terminar sua operação atualizando seu layout usando um dos seguintes métodos:  
   
--   `ISequenceDiagram.UpdateShapePositions()` Ajusta as posições das formas que recentemente foram inseridas ou movidas e seus vizinhos.  
+- `ISequenceDiagram.UpdateShapePositions()` Ajusta as posições das formas que recentemente foram inseridas ou movidas e seus vizinhos.  
   
--   `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` redesenha o diagrama inteiro. Você pode usar o parâmetro para especificar o reposicionamento das linhas da vida, mensagens ou ambos.  
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` redesenha o diagrama inteiro. Você pode usar o parâmetro para especificar o reposicionamento das linhas da vida, mensagens ou ambos.  
   
- Isso é particularmente importante quando você insere novos elementos ou move elementos existentes. Eles não estarão nas posições corretas no diagrama até que você executou uma dessas operações. Você só precisa chamar uma dessas operações uma vez no final de uma série de alterações.  
+  Isso é particularmente importante quando você insere novos elementos ou move elementos existentes. Eles não estarão nas posições corretas no diagrama até que você executou uma dessas operações. Você só precisa chamar uma dessas operações uma vez no final de uma série de alterações.  
   
- Para evitar bemusing o usuário que executa um comando Desfazer após seu comando, use uma `ILinkedUndoTransaction` para incluir as alterações e o último `Layout()` ou `UpdateShapePositions()` operações. Por exemplo:  
+  Para evitar bemusing o usuário que executa um comando Desfazer após seu comando, use uma `ILinkedUndoTransaction` para incluir as alterações e o último `Layout()` ou `UpdateShapePositions()` operações. Por exemplo:  
   
 ```  
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))  

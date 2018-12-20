@@ -1,7 +1,7 @@
 ---
 title: ClickOnce e Authenticode | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: cf05c73ee621d9eda1619627b2d0b65611e447fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df3d87e240476aa02f5129f2238a1df55eb3be79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474179"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289478"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce e Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [ClickOnce e Authenticode](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-authenticode).  
-  
 Authenticode * é uma tecnologia da Microsoft que usa criptografia padrão do setor para assinar código do aplicativo com certificados digitais que verificam a autenticidade do Editor do aplicativo. Por meio de Authenticode para implantação de aplicativo, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] reduz o risco de um cavalo de Troia. Um cavalo de Troia é um vírus ou outro programa prejudicial que um terceiro mal-intencionado deturpe como um programa legítimo proveniente de uma fonte confiável e estabelecida. Assinatura [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantações com um certificado digital é uma etapa opcional para verificar que os assemblies e arquivos não são alterados.  
   
  As seções a seguir descrevem os diferentes tipos de certificados digitais usados em Authenticode, como os certificados são validados usando certificado autoridades (CAs), a função de carimbo de hora em certificados e os métodos de armazenamento disponível para certificados.  

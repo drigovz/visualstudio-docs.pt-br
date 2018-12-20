@@ -1,7 +1,7 @@
 ---
 title: Status | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a786954884ab0a654246a46f88f6a270e4088cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da53fa3ecb1b13837b13c3183cdb0b6590305449
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467726"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765797"
 ---
 # <a name="status"></a>Status
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Status](https://docs.microsoft.com/visualstudio/profiling/status).  
-  
 A opção VSPerfCmd.exe **Status** exibe informações sobre o estado do criador de perfil e todos os processos que estão atualmente sendo perfilados.  
   
  A opção **Status** deve ser a única opção especificada na linha de comando. O criador de perfil deve ser inicializado com a opção VSPerfCmd.exe **Status** antes de qualquer status poder ser exibido.  

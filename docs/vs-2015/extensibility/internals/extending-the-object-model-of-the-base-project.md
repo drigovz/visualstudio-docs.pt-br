@@ -1,7 +1,7 @@
 ---
 title: Estendendo o modelo de objeto do projeto Base | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2f95cc53-dff6-476c-bacd-500fb0ff7725
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc9a5494ad888da9707af0d8af40dc5ea3d242b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db8ec193b49b7b72e922d2e4f715061d78be37ad
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466234"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783271"
 ---
 # <a name="extending-the-object-model-of-the-base-project"></a>Estendendo o modelo de objeto do projeto base
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [estendendo o modelo de objeto do projeto Base](https://docs.microsoft.com/visualstudio/extensibility/internals/extending-the-object-model-of-the-base-project).  
-  
 Um subtipo de projeto pode estender o modelo de objeto de automação do projeto base nos seguintes locais:  
   
 -   Project.Extender ("\<ProjectSubtypeName >") – isso permite que um subtipo de projeto oferece um objeto com métodos personalizados do <xref:EnvDTE.Project>. Um subtipo de projeto pode usar extensores de automação para expor o `Project` objeto. O <xref:EnvDTE80.IInternalExtenderProvider>interface implementada do agregador de subtipo de projeto principal deve oferecer seu objeto para o `VSHPROPID_ExtObjectCATID` de <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> (correspondente a um `itemid` valor de VSITEMID_ROOT, de `VSITEMID`) CATID.  

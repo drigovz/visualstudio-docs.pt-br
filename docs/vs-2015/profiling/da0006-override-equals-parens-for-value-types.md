@@ -1,7 +1,7 @@
 ---
 title: 'DA0006: substituir Equals() para tipos de valor | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ f1_keywords:
 - vs.performance.rules.DA0006
 ms.assetid: 4d85bdd6-b571-47e0-afd6-ba3764e4eed5
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4e7535775946c99d6b176f36ca10288a8bc9da6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a60bc533ccc826b09e288e7d8ca934702f0443e5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466678"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768303"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: substituir Equals() para tipos de valor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DA0006: substituir Equals () para tipos de valor](https://docs.microsoft.com/visualstudio/profiling/da0006-override-equals-parens-for-value-types).  
-  
 Id da regra | DA0006 |  
 | Categoria de |. Uso do .NET Framework |  
 | Métodos de criação de perfil | Amostragem |  

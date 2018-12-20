@@ -1,7 +1,7 @@
 ---
 title: Depurando um controle ActiveX com associação de dados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,21 +20,19 @@ helpviewer_keywords:
 - controls [Visual Studio], ActiveX
 ms.assetid: 9f6e1f00-e25b-48a9-8484-7e67a1232461
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6642b3687e4459cc001aef14ce0c1186231f8c97
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae8863b8622987c0676646f45b5659945971c464
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466550"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768870"
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>Depurando um controle ActiveX com ligação de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [depurando um controle ActiveX com associação de dados](https://docs.microsoft.com/visualstudio/debugger/debugging-a-data-bound-activex-control).  
-  
 Se você estiver desenvolvendo um controle ActiveX que será associado a um controle da fonte de dados, poderá criar seu próprio aplicativo de contêiner e usar esse contêiner para depurar o controle ActiveX.  
   
  Por exemplo, você pode criar um aplicativo MFC baseado em diálogo e colocar o controle associado a dados e um controle da fonte de dados na caixa de diálogo. Você pode usar esse aplicativo MFC para teste de tempo de execução e como o executável do contêiner para depurar seu controle ActiveX associado a dados.  

@@ -1,7 +1,7 @@
 ---
 title: 'Como: depurar um controle ActiveX | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,21 +27,19 @@ helpviewer_keywords:
 - testing [Visual Studio], ActiveX controls
 ms.assetid: bbc02cf7-a7e6-44fe-99af-87a43e1d7251
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc47ba913ba9da1ecfe8e0df34894c31545e1734
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f1e43d94807fa28f86193fc7818b77887d797772
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465019"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745152"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Como depurar um controle ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: depurar um controle ActiveX](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-an-activex-control).  
-  
 OBSERVAÇÃO]
 >  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   

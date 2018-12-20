@@ -1,7 +1,7 @@
 ---
 title: Referencia o elemento (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 1969146d-46bf-422d-8d46-0e9493925003
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 54ff9d03291adf55f0bae3d4cb85d5f8c075b431
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5e3e0df8583e48dd6a3f7604f4fa72b2803779b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465782"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795643"
 ---
 # <a name="references-element-visual-studio-templates"></a>Elemento de referências (Modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [referências de elemento (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/references-element-visual-studio-templates).  
-  
 Agrupa as referências de assembly que o modelo adiciona aos projetos.  
   
  \<VSTemplate >  

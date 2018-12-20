@@ -1,7 +1,7 @@
 ---
 title: BP_ERROR_RESOLUTION_INFO | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: a6b83242-5728-4716-80f3-840c96d59c6c
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3bd02b6f2990ebce9ecd7774938dd276fb26ab4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b70490cebb2e2ac62268d4419e1484f3ecfa4029
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466302"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745295"
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [BP_ERROR_RESOLUTION_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-error-resolution-info).  
-  
 Descreve a resolução de um ponto de interrupção de erro, incluindo local, o programa e o thread.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-typedef struct _BP_ERROR_RESOLUTION_INFO {   
+typedef struct _BP_ERROR_RESOLUTION_INFO {   
    BPERESI_FIELDS         dwFields;  
    BP_RESOLUTION_LOCATION bpResLocation;  
    IDebugProgram2*        pProgram;  
@@ -45,7 +43,7 @@ typedef struct _BP_ERROR_RESOLUTION_INFO {
 ```  
   
 ```csharp  
-public struct BP_ERROR_RESOLUTION_INFO {   
+public struct BP_ERROR_RESOLUTION_INFO {   
    public uint                   dwFields;  
    public BP_RESOLUTION_LOCATION bpResLocation;  
    public IDebugProgram2         pProgram;  

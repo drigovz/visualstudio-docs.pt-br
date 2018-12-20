@@ -1,7 +1,7 @@
 ---
 title: Estágios de Pipeline gráficos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ f1_keywords:
 - vs.graphics.pipeline
 ms.assetid: 2bf5c12e-2a00-401c-8163-4e373d08ad3f
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eda25bb46a9920b8662e8af8b2e4c08da04c3781
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ba12ac4147250cd4a49a222e589049de16d04fc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461463"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803065"
 ---
 # <a name="graphics-pipeline-stages"></a>Estágios de Pipeline Gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [estágios de Pipeline gráficos](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-pipeline-stages).  
-  
 A janela estágios de Pipeline gráficos ajuda a entender como uma chamada de desenho individuais é transformada por cada estágio do pipeline de gráficos do Direct3D.  
   
  Esta é a janela de estágios de Pipeline:  
@@ -42,11 +40,11 @@ A janela estágios de Pipeline gráficos ajuda a entender como uma chamada de de
 ### <a name="links-to-related-graphics-objects"></a>Links para os objetos gráficos relacionados  
  Contexto adicional, às vezes, é necessário para determinar por que uma chamada de desenho interage de uma maneira específica com o pipeline de gráficos. Para facilitar a localização deste contexto adicional, os links de janela estágios de Pipeline gráficos a um ou mais objetos que fornecem contexto adicional relacionado ao que está acontecendo no pipeline gráfica.  
   
--   No Direct3D 12 esse objeto é geralmente uma lista de comandos.  
+- No Direct3D 12 esse objeto é geralmente uma lista de comandos.  
   
--   No Direct3D 11 esse objeto é geralmente um contexto de dispositivo de gráficos.  
+- No Direct3D 11 esse objeto é geralmente um contexto de dispositivo de gráficos.  
   
- Esses links são parte da assinatura do evento atual do elementos gráficos que está localizada no canto superior esquerdo da janela estágios de Pipeline gráficos. Depois de qualquer um desses links para examinar os detalhes adicionais sobre o objeto.  
+  Esses links são parte da assinatura do evento atual do elementos gráficos que está localizada no canto superior esquerdo da janela estágios de Pipeline gráficos. Depois de qualquer um desses links para examinar os detalhes adicionais sobre o objeto.  
   
 ### <a name="viewing-and-debugging-shader-code"></a>Exibição e depuração do código do sombreador  
  Você pode examinar e depurar o código para o vértice, hull, domínio, geometria e pixel shaders usando os controles na parte inferior de seus respectivos estágios na janela estágios de Pipeline.  

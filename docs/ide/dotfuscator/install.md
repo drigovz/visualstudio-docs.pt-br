@@ -23,12 +23,12 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 13027c5d4fe4fc799f6514eb93bfc4ed93141613
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: d513588a7d00e874b38306150f896157906e2733
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880358"
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>Instalar o Dotfuscator Community Edition (CE)
 
@@ -46,9 +46,9 @@ Você pode instalar o Dotfuscator CE no IDE do Visual Studio:
 
 1. No barra de pesquisa **Início Rápido** (Ctrl + Q), digite `dotfuscator`. <br/> <br/> ![Início Rápido](media/install_from_vs_12.png) <br/> <br/>
 2. Nos resultados do Início Rápido mostrado, no cabeçalho *Instalar*, selecione **PreEmptive Protection – Dotfuscator (Componente Individual)**.
-  * Se, em vez disso, você visualizar, no cabeçalho *Menus*, **Ferramentas – PreEmptive Protection – Dotfuscator**, o Dotfuscator CE já estará instalado. Para obter detalhes de uso, consulte [a página de Introdução do Guia completo do usuário do CE Dotfuscator][get-started].
+   * Se, em vez disso, você visualizar, no cabeçalho *Menus*, **Ferramentas – PreEmptive Protection – Dotfuscator**, o Dotfuscator CE já estará instalado. Para obter detalhes de uso, consulte [a página de Introdução do Guia completo do usuário do CE Dotfuscator][get-started].
 3. Uma janela do Instalador do Visual Studio será inicializada, pré-configurada com instalar Dotfuscator CE.
-  * Você pode ser solicitado a fornecer credenciais de administrador para continuar.
+   * Você pode ser solicitado a fornecer credenciais de administrador para continuar.
 4. Feche todas as instâncias do IDE do Visual Studio. <br/> <br/> ![Clicar em Instalar](media/install_from_vs_345.png) <br/> <br/>
 5. Na janela do Instalador do Visual Studio, clique em *Instalar*.
 

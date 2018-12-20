@@ -1,7 +1,7 @@
 ---
 title: Instalar e gerenciar conteúdo Local | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 298448421430491cba3c367dc1976cf755f2b601
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b8a67a9105314ad73076d3a8b12d51c23f83097
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832726"
 ---
 # <a name="install-and-manage-local-content"></a>Instalar e gerenciar o conteúdo local
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instalar e gerenciar o conteúdo Local](https://docs.microsoft.com/visualstudio/ide/install-and-manage-local-content).  
-  
 Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover o conteúdo de Ajuda instalado no seu computador para atender às suas necessidades de desenvolvimento de software.  
   
  Para gerenciar o conteúdo em seu computador local, faça logon com uma conta que tenha permissões administrativas. Além disso, você poderá não conseguir gerenciar o conteúdo local se trabalhar em um ambiente empresarial, pois os administradores de sistema podem tomar essas decisões para sua organização. Para obter mais informações, consulte o [Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md).  
@@ -111,9 +109,9 @@ Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover
   
 #### <a name="to-update-local-content"></a>Para atualizar o conteúdo local  
   
--   No canto inferior direito da barra de status, escolha o link **Clique aqui para baixar agora**.  
+- No canto inferior direito da barra de status, escolha o link **Clique aqui para baixar agora**.  
   
- Os tempos de atualização podem variar, mas você pode exibir o progresso da atualização na barra de status.  
+  Os tempos de atualização podem variar, mas você pode exibir o progresso da atualização na barra de status.  
   
 ## <a name="moving-local-content"></a>Movendo o conteúdo local  
  Você pode economizar espaço em disco movendo conteúdo instalado do computador local para um compartilhamento de rede ou outra partição no computador local.  

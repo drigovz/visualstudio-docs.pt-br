@@ -1,7 +1,7 @@
 ---
 title: Validar o sistema durante o desenvolvimento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - layer diagrams
 ms.assetid: c9dafb47-7b1d-4c72-9432-d43be3db1799
 caps.latest.revision: 39
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8b0d65d99cf99c7f1468a0bf596eb687f931b5d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03cac924853f4348faabd773260a9512c2d82b6b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473759"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760982"
 ---
 # <a name="validate-your-system-during-development"></a>Validar o sistema durante o desenvolvimento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [validar o sistema durante o desenvolvimento](https://docs.microsoft.com/visualstudio/modeling/validate-your-system-during-development).  
-  
 Visual Studio pode ajudar a manter seu software consistentes com os requisitos de usuários e com a arquitetura do seu sistema.  
   
  Para ver quais versões do Visual Studio dão suporte a cada um desses recursos, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

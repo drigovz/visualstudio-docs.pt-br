@@ -1,7 +1,7 @@
 ---
 title: Criar tabelas de pesquisa em aplicativos do Windows Forms | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a61286dee857f6e8f08a815e6058ce1761a646bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 334acba1e70545f1f8be758e34c8fc4843878406
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467517"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223881"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Criar tabelas de pesquisa em aplicativos do Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar tabelas de pesquisa em aplicativos do Windows Forms](https://docs.microsoft.com/visualstudio/data-tools/create-lookup-tables-in-windows-forms-applications).  
-  
   
 O termo *tabela de pesquisa* descreve controles que estão associados às tabelas de dois dados relacionados. Esses controles de pesquisa exibem dados da primeira tabela com base em um valor selecionado na segunda tabela.  
   

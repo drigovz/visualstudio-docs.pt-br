@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas de extensões para diagramas de camada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,41 +12,39 @@ helpviewer_keywords:
 - layer diagrams, troubleshooting extensions
 ms.assetid: 1fda4f8a-38b8-482b-87b8-eade1a4e5662
 caps.latest.revision: 27
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 44d06774d5eec41885bf9efbcf74a76373d22b2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6361651672e72df6661f030a4b6c8e451fdaea89
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473752"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738771"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Solucionar problemas de extensões para diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [solucionar problemas de extensões para diagramas de dependência](https://docs.microsoft.com/visualstudio/modeling/troubleshoot-extensions-for-layer-diagrams).  
-  
 Este tópico aborda alguns problemas que você pode encontrar ao criar extensões do modelo de camada.  
   
 #### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>Quando eu pressiono F5 para depurar minha extensão, Meus comandos, manipuladores de gestos, extensões de validação ou propriedades personalizadas não aparecem em diagramas de camada na instância Experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
-1.  Abra a solução de extensão na instância Experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]e, na **construir** menu, clique em **recompilar solução**.  
+1. Abra a solução de extensão na instância Experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]e, na **construir** menu, clique em **recompilar solução**.  
   
-2.  Pressione **F5** ou **CTRL + F5** para iniciar a instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Abra um diagrama de camada e testar sua extensão.  
+2. Pressione **F5** ou **CTRL + F5** para iniciar a instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Abra um diagrama de camada e testar sua extensão.  
   
- Continue com o próximo procedimento, se necessário.  
+   Continue com o próximo procedimento, se necessário.  
   
 #### <a name="an-old-version-of-my-extension-runs"></a>Uma versão antiga da minha extensão é executado.  
   
-1.  Certifique-se de que nenhuma instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] está em execução.  
+1. Certifique-se de que nenhuma instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] está em execução.  
   
-2.  Exclua a seguinte pasta: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [versão]  
+2. Exclua a seguinte pasta: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [versão]  
   
-    > [!NOTE]
-    >  % LocalAppData % é normalmente *DriveName*: \Users\\*UserName*\appdata\local.  
+   > [!NOTE]
+   >  % LocalAppData % é normalmente *DriveName*: \Users\\*UserName*\appdata\local.  
   
- Continue com o próximo procedimento, se necessário.  
+   Continue com o próximo procedimento, se necessário.  
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Uma versão antiga do meus resultados de validação é exibido ou meu método de validação não é chamado.  
   

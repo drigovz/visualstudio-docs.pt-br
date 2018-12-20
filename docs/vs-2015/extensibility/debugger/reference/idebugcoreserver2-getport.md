@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer2::GetPort | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,33 +17,31 @@ ms.assetid: 3f5ea4a8-6085-4600-980a-9e48f8b5be56
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1efd341becdff45c2b88d71a31e61a88bfaf5093
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5b221831dbcbbd7054f3372ace71f3373cce8f5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473777"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761732"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugCoreServer2::GetPort](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcoreserver2-getport).  
-  
 Recupera uma porta específica.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetPort(   
-   REFGUID       guidPort,  
-   IDebugPort2** ppPort  
+HRESULT GetPort(   
+   REFGUID       guidPort,  
+   IDebugPort2** ppPort  
 );  
 ```  
   
 ```csharp  
-int GetPort(   
-   ref Guid        guidPort,  
-   out IDebugPort2 ppPort  
+int GetPort(   
+   ref Guid        guidPort,  
+   out IDebugPort2 ppPort  
 );  
 ```  
   

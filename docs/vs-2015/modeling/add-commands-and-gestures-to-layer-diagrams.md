@@ -1,7 +1,7 @@
 ---
 title: Adicionar comandos e gestos a diagramas de camada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,21 +12,19 @@ helpviewer_keywords:
 - layer diagrams, adding custom gestures
 ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
 caps.latest.revision: 40
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9434c93caf9cfe614a01cf9a10912f1d0562b9bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: ae57d950b20fc6e342056b8c89738fa895c48c28
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466572"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733381"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Adicionar comandos e gestos a diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionar comandos e gestos a diagramas de dependência](https://docs.microsoft.com/visualstudio/modeling/add-commands-and-gestures-to-layer-diagrams).  
-  
 Você pode definir comandos de menu de contexto e manipuladores do gesto em diagramas de camada no Visual Studio. Você pode empacotar essas extensões em um Visual Studio Integration extensão (VSIX) que você pode distribuir a outros usuários do Visual Studio.  
   
  Você pode definir vários manipuladores de comando e de gesto no mesmo projeto do Visual Studio se você quiser. Você também pode combinar vários desses projetos em um VSIX. Por exemplo, você pode definir um único VSIX que inclui comandos de camada, uma linguagem específica de domínio e comandos para diagramas de UML.  
@@ -42,25 +40,25 @@ Você pode definir comandos de menu de contexto e manipuladores do gesto em diag
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>Para definir uma extensão usando um modelo de projeto  
   
-1.  Criar um projeto em uma nova solução, usando o **novo projeto** comando as **arquivo** menu.  
+1. Criar um projeto em uma nova solução, usando o **novo projeto** comando as **arquivo** menu.  
   
-2.  No **novo projeto** caixa de diálogo **projetos de modelagem**, selecione **extensão de comando do Designer de camada** ou **extensão de gesto do Designer de camada** .  
+2. No **novo projeto** caixa de diálogo **projetos de modelagem**, selecione **extensão de comando do Designer de camada** ou **extensão de gesto do Designer de camada** .  
   
-     O modelo cria um projeto que contém um pequeno exemplo de trabalho.  
+    O modelo cria um projeto que contém um pequeno exemplo de trabalho.  
   
-3.  Para testar a extensão, pressione **CTRL+F5** ou **F5**.  
+3. Para testar a extensão, pressione **CTRL+F5** ou **F5**.  
   
-     Uma instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é iniciado. Nesse caso, crie um diagrama de camada. Sua extensão de comando ou gesto deve trabalhar neste diagrama.  
+    Uma instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é iniciado. Nesse caso, crie um diagrama de camada. Sua extensão de comando ou gesto deve trabalhar neste diagrama.  
   
-4.  Feche a instância experimental e modifique o código de exemplo. Para obter mais informações, consulte [navegar e atualizar modelos no código do programa de camada](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+4. Feche a instância experimental e modifique o código de exemplo. Para obter mais informações, consulte [navegar e atualizar modelos no código do programa de camada](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-5.  Você pode adicionar mais manipuladores de comando ou gesto no mesmo projeto. Para obter mais informações, consulte uma das seções a seguir:  
+5. Você pode adicionar mais manipuladores de comando ou gesto no mesmo projeto. Para obter mais informações, consulte uma das seções a seguir:  
   
-     [Definindo um comando de Menu](#command)  
+    [Definindo um comando de Menu](#command)  
   
-     [Definindo um manipulador de gesto](#gesture)  
+    [Definindo um manipulador de gesto](#gesture)  
   
-6.  Para instalar a extensão na instância principal do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou em outro computador, localize o **. VSIX** de arquivos em **bin\\\***. Copie-o para o computador no qual você deseja instalá-lo e, em seguida, clique duas vezes nele. Para desinstalar, use **extensões e atualizações** sobre o **ferramentas** menu.  
+6. Para instalar a extensão na instância principal do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou em outro computador, localize o **. VSIX** de arquivos em *bin\\*. Copie-o para o computador no qual você deseja instalá-lo e, em seguida, clique duas vezes nele. Para desinstalar, use **extensões e atualizações** sobre o **ferramentas** menu.  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Adicionando um comando ou gesto a um VSIX separado  
  Se você quiser criar um VSIX que contém comandos, validadores de camada e outras extensões, é recomendável que você crie um projeto para definir o VSIX e projetos separados para os manipuladores. Para obter informações sobre outros tipos de extensão de modelagem, consulte [modelos e diagramas UML estender](../modeling/extend-uml-models-and-diagrams.md).  
@@ -118,37 +116,37 @@ Você pode definir comandos de menu de contexto e manipuladores do gesto em diag
 ##  <a name="command"></a> Definindo um comando de Menu  
  Você pode adicionar mais definições de comando de menu a um projeto de comando ou gesto existente. Cada comando é definido por uma classe que tem as seguintes características:  
   
--   A classe é declarada da seguinte maneira:  
+- A classe é declarada da seguinte maneira:  
   
-     `[LayerDesignerExtension]`  
+   `[LayerDesignerExtension]`  
   
-     `[Export(typeof(ICommandExtension))]`  
+   `[Export(typeof(ICommandExtension))]`  
   
-     `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
+   `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
   
--   O namespace e o nome da classe não são importantes.  
+- O namespace e o nome da classe não são importantes.  
   
--   Os métodos que implementam `ICommandExtension` são da seguinte maneira:  
+- Os métodos que implementam `ICommandExtension` são da seguinte maneira:  
   
-    -   `string Text {get;}` -O rótulo que aparece no menu.  
+  -   `string Text {get;}` -O rótulo que aparece no menu.  
   
-    -   `void QueryStatus(IMenuCommand command)` -chamado quando o usuário clica o diagrama e determina se o comando deve ser visível e habilitado para a seleção do usuário atual.  
+  -   `void QueryStatus(IMenuCommand command)` -chamado quando o usuário clica o diagrama e determina se o comando deve ser visível e habilitado para a seleção do usuário atual.  
   
-    -   `void Execute(IMenuCommand command)` -chamado quando o usuário seleciona o comando.  
+  -   `void Execute(IMenuCommand command)` -chamado quando o usuário seleciona o comando.  
   
--   Para determinar a seleção atual, você pode importar `IDiagramContext`:  
+- Para determinar a seleção atual, você pode importar `IDiagramContext`:  
   
-     `[Import]`  
+   `[Import]`  
   
-     `public IDiagramContext DiagramContext { get; set; }`  
+   `public IDiagramContext DiagramContext { get; set; }`  
   
-     `...`  
+   `...`  
   
-     `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
+   `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
   
- Para obter mais informações, consulte [navegar e atualizar modelos no código do programa de camada](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+  Para obter mais informações, consulte [navegar e atualizar modelos no código do programa de camada](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
- Para adicionar um novo comando, crie um novo arquivo de código que contém o exemplo a seguir. Em seguida, teste e editá-lo.  
+  Para adicionar um novo comando, crie um novo arquivo de código que contém o exemplo a seguir. Em seguida, teste e editá-lo.  
   
 ```  
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
@@ -244,30 +242,30 @@ namespace MyLayerExtensions // change to your preference
   
  Observe os seguintes pontos sobre manipuladores de gesto:  
   
--   Os membros de `IGestureExtension` são da seguinte maneira:  
+- Os membros de `IGestureExtension` são da seguinte maneira:  
   
-     **OnDoubleClick** -chamado quando o usuário clica duas vezes em qualquer lugar no diagrama.  
+   **OnDoubleClick** -chamado quando o usuário clica duas vezes em qualquer lugar no diagrama.  
   
-     **CanDragDrop** - chamado repetidamente conforme o usuário move o mouse ao arrastar um item no diagrama. Ele deve trabalhar rapidamente.  
+   **CanDragDrop** - chamado repetidamente conforme o usuário move o mouse ao arrastar um item no diagrama. Ele deve trabalhar rapidamente.  
   
-     **OnDragDrop** -chamado quando o usuário solta um item no diagrama.  
+   **OnDragDrop** -chamado quando o usuário solta um item no diagrama.  
   
--   O primeiro argumento para cada método é um `IShape`, do qual você pode obter o elemento de camada. Por exemplo:  
+- O primeiro argumento para cada método é um `IShape`, do qual você pode obter o elemento de camada. Por exemplo:  
   
-    ```  
-    public void OnDragDrop(IShape target, IDataObject data)  
-    {  
-        ILayerElement element = target.GetLayerElement();  
-        if (element is ILayer)  
-        {  
-            // ...  
-        }  
-    }  
-    ```  
+  ```  
+  public void OnDragDrop(IShape target, IDataObject data)  
+  {  
+      ILayerElement element = target.GetLayerElement();  
+      if (element is ILayer)  
+      {  
+          // ...  
+      }  
+  }  
+  ```  
   
--   Manipuladores para alguns tipos de item arrastado já estão definidos. Por exemplo, o usuário pode arrastar itens do Gerenciador de soluções para um diagrama de camada. Você não pode definir um manipulador de arraste para esses tipos de item. Nesses casos, seu `DragDrop` métodos não serão chamados.  
+- Manipuladores para alguns tipos de item arrastado já estão definidos. Por exemplo, o usuário pode arrastar itens do Gerenciador de soluções para um diagrama de camada. Você não pode definir um manipulador de arraste para esses tipos de item. Nesses casos, seu `DragDrop` métodos não serão chamados.  
   
- Para obter mais informações sobre como decodificar outros itens quando são arrastados no diagrama, consulte [definir um manipulador de gesto em um diagrama de modelagem](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
+  Para obter mais informações sobre como decodificar outros itens quando são arrastados no diagrama, consulte [definir um manipulador de gesto em um diagrama de modelagem](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Navegar e atualizar modelos de camada no código do programa](../modeling/navigate-and-update-layer-models-in-program-code.md)   

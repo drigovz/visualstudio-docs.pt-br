@@ -1,7 +1,7 @@
 ---
 title: IDebugObject::GetSize | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 89af423b-36eb-479d-b2de-2693455eca15
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b58dc47a8ab10271ad2d3af20abbaa7e58b20ee7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cace2fe58222ba505c26b0cf73b0d955647b0bb6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460476"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767954"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugObject::GetSize](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugobject-getsize).  
-  
 Obtém o tamanho do objeto em bytes.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetSize(   
+HRESULT GetSize(   
    UINT* pnSize  
 );  
 ```  

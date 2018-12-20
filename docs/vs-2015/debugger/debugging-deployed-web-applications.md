@@ -1,7 +1,7 @@
 ---
 title: Depurando aplicativos Web implantados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,21 +23,19 @@ helpviewer_keywords:
 - XML Web services, debugging
 ms.assetid: b938a91b-be96-416f-83bc-4177e7f3929a
 caps.latest.revision: 34
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 896cec857b38dd5fb0d7119aed06ca08d2df1e35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 923a8e104f03a4014f269f587d5cb3a1da5266b7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475336"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807513"
 ---
 # <a name="debugging-deployed-web-applications"></a>Depurando aplicativos Web implantados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Depurando aplicativos de Web implantado](https://docs.microsoft.com/visualstudio/debugger/debugging-deployed-web-applications).  
-  
 Se você precisar depurar um aplicativo Web que está sendo executado em um servidor de produção, isso deverá ser feito com cuidado. Se você anexar ao processo de trabalho do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] para depurar e atingir um ponto de interrupção, por exemplo, todo o código gerenciado no processo de trabalho é interrompido. Interromper todo o código gerenciado no processo de trabalho pode causar uma parada de trabalho para todos os usuários no servidor. Antes de depurar em um servidor de produção, considere o impacto potencial no trabalho de produção.  
   
  Para usar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para depurar um aplicativo implantado, você deverá anexar ao processo de trabalho do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e verificar se o depurador tem acesso aos símbolos para o aplicativo. Você também deve localizar e abrir os arquivos de origem para o aplicativo. Para obter mais informações, consulte [especificar arquivos de símbolo (. PDB) e código-fonte](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [como: localizar o nome do processo do ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md), e [requisitos do sistema](../debugger/aspnet-debugging-system-requirements.md).  

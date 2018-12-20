@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ece2ea879b8c79ebe002265d5d1eb6fd8ec82e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff0446e81257cfc782fd1c7d34cde2b274ddde5e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945982"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388922"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Conjunto de regras mínimas misto
 A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus projetos do C++ que dão suporte a Common Language Runtime, inclusive falhas potenciais de segurança e falhas do aplicativo. Você deve incluir essa regra definida em qualquer conjunto personalizado que você criar para seus projetos em C++ que dão suporte a Common Language Runtime.
@@ -37,7 +37,7 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |[C6270](../code-quality/c6270.md)|Falta argumento float para formatar a função|
 |[C6271](../code-quality/c6271.md)|Argumento extra para formatar função|
 |[C6272](../code-quality/c6272.md)|Argumento diferente de float para formatar a função|
-|[C6273](../code-quality/c6273.md)|Argumento não inteiro para formatar a função|
+|[C6273](../code-quality/c6273.md)|Argumento não inteiro para formatar função|
 |[C6274](../code-quality/c6274.md)|Argumento diferente de caractere para formatar a função|
 |[C6276](../code-quality/c6276.md)|Conversão de cadeia de caracteres inválida|
 |[C6277](../code-quality/c6277.md)|Chamada CreateProcess inválida|
@@ -96,7 +96,7 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |[C28215](../code-quality/c28215.md)|O typefix não pode ser aplicado a um parâmetro que já tem um typefix|
 |[C28216](../code-quality/c28216.md)|A anotação checkReturn se aplica apenas a pós-condições para o parâmetro da função específica.|
 |[C28217](../code-quality/c28217.md)|Para função, o número de parâmetros para anotação não corresponde ao encontrado no arquivo|
-|[C28218](../code-quality/c28218.md)|Para parâmetro de função, o parâmetro de anotação não corresponde ao encontrado no arquivo|
+|[C28218](../code-quality/c28218.md)|Para o parâmetro de função, o parâmetro da anotação não corresponde ao encontrado no arquivo|
 |[C28219](../code-quality/c28219.md)|Membro de enumeração esperada para anotação do parâmetro na anotação|
 |[C28220](../code-quality/c28220.md)|Expressão inteira esperada para anotação do parâmetro na anotação|
 |[C28221](../code-quality/c28221.md)|Expressão de sequência de caracteres esperada para o parâmetro na anotação|

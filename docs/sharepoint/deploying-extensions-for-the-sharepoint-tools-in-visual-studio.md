@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f5ee0493a8a780710eb4b6bbbd9426e23baf48e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c3bf20f945c40dd963820b1bf3f4032a2dd517ca
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774910"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295963"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Implantar extensões para ferramentas do SharePoint no Visual Studio
 
@@ -235,13 +235,13 @@ Se você quiser criar manualmente o pacote VSIX para a sua extensão de ferramen
 
 4.  Modifique o arquivo Extension vsixmanifest:
 
-    -   Adicionar um `Microsoft.VisualStudio.MefComponent` elemento sob o `Assets` elemento e, em seguida, defina o valor do novo elemento para o caminho relativo do assembly que implementa a sua extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).
+    -   Adicionar um `Microsoft.VisualStudio.MefComponent` elemento sob o `Assets` elemento e, em seguida, defina o valor do novo elemento para o caminho relativo do assembly que implementa a sua extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-    -   Se sua extensão incluir um comando do SharePoint que chama o modelo de objeto de servidor para o SharePoint, adicione uma `Microsoft.VisualStudio.Assembly` elemento sob o `Assets` elemento. Defina o valor do novo elemento para o caminho relativo do assembly que implementa o comando do SharePoint no pacote VSIX. Para obter mais informações, consulte [ativo Element (esquema de VSX)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    -   Se sua extensão incluir um comando do SharePoint que chama o modelo de objeto de servidor para o SharePoint, adicione uma `Microsoft.VisualStudio.Assembly` elemento sob o `Assets` elemento. Defina o valor do novo elemento para o caminho relativo do assembly que implementa o comando do SharePoint no pacote VSIX. Para obter mais informações, consulte [ativo Element (esquema de VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
-    -   Se sua extensão incluir um modelo de projeto ou o modelo de item, adicione uma `ProjectTemplate` ou `ItemTemplate` elemento sob o `Assets` elemento. Defina o valor do novo elemento para o caminho relativo da pasta que contém o modelo no pacote VSIX. Para obter mais informações, consulte [ProjectTemplate Element (esquema de VSX)](http://msdn.microsoft.com/en-us/87add64c-9dcd-495f-8815-209dab182cb1) e [ItemTemplate Element (esquema de VSX)](http://msdn.microsoft.com/en-us/1d489e54-c1c5-4f96-a510-6c2640867ff0).
+    -   Se sua extensão incluir um modelo de projeto ou o modelo de item, adicione uma `ProjectTemplate` ou `ItemTemplate` elemento sob o `Assets` elemento. Defina o valor do novo elemento para o caminho relativo da pasta que contém o modelo no pacote VSIX. Para obter mais informações, consulte [ProjectTemplate Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) e [ItemTemplate Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
-    -   Se sua extensão inclui um assistente personalizado para um modelo de projeto ou o modelo de item, adicione uma `Assembly` elemento sob o `Assets` elemento. Defina o valor do novo elemento para o caminho relativo do assembly no pacote VSIX e, em seguida, defina o `AssemblyName` de atributo para o nome completo do assembly (incluindo a versão, cultura e token de chave pública). Para obter mais informações, consulte [dependência Element (esquema de VSX)](http://msdn.microsoft.com/en-us/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
+    -   Se sua extensão inclui um assistente personalizado para um modelo de projeto ou o modelo de item, adicione uma `Assembly` elemento sob o `Assets` elemento. Defina o valor do novo elemento para o caminho relativo do assembly no pacote VSIX e, em seguida, defina o `AssemblyName` de atributo para o nome completo do assembly (incluindo a versão, cultura e token de chave pública). Para obter mais informações, consulte [dependência Element (esquema de VSX)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
 
 ### <a name="example"></a>Exemplo
 

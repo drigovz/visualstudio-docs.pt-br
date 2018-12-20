@@ -1,7 +1,7 @@
 ---
 title: Obtendo descrições dos campos na janela Propriedades | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
 manager: douge
-ms.openlocfilehash: 5c7ae9cd659fb317ff74639fa20659296e126d04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc5d2c8553ccdb6c554f9a8364e9fd21eaa324d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464471"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814786"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>Obtendo descrições dos campos na janela Propriedades
 Na parte inferior a **propriedades** janela, uma área de descrição exibe informações relacionadas ao campo de propriedade selecionada. Esse recurso é ativado por padrão. Se você quiser ocultar o campo de descrição, clique com botão direito do **propriedades** janela e clique em **descrição**. Isso também remove a marca de seleção ao lado de **descrição** título na janela de menu. Você pode exibir o campo novamente, seguindo as mesmas etapas para ativar/desativar **descrição** novamente.  
@@ -28,18 +28,18 @@ Na parte inferior a **propriedades** janela, uma área de descrição exibe info
   
 ### <a name="to-specify-localized-help-strings"></a>Para especificar cadeias de caracteres localizada da Ajuda  
   
-1.  Adicione a `helpstringdll` para a instrução library na biblioteca de tipos de atributo (`typelib`).  
+1. Adicione a `helpstringdll` para a instrução library na biblioteca de tipos de atributo (`typelib`).  
   
-    > [!NOTE]
-    >  Esta etapa é opcional se a biblioteca de tipos está em um arquivo de biblioteca (. olb) do objeto.  
+   > [!NOTE]
+   >  Esta etapa é opcional se a biblioteca de tipos está em um arquivo de biblioteca (. olb) do objeto.  
   
-2.  Especificar `helpstringcontext` atributos para as cadeias de caracteres. Você também pode especificar `helpstring` atributos.  
+2. Especificar `helpstringcontext` atributos para as cadeias de caracteres. Você também pode especificar `helpstring` atributos.  
   
-     Esses atributos são distintos do `helpfile` e `helpcontext` atributos que estão contidos nos tópicos de Ajuda do arquivo. chm real.  
+    Esses atributos são distintos do `helpfile` e `helpcontext` atributos que estão contidos nos tópicos de Ajuda do arquivo. chm real.  
   
- Para recuperar as informações de descrição a ser exibida para o nome da propriedade realçado, o **propriedades** janela chamadas <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> para a propriedade que está selecionada, especificando o desejado `lcid` de atributo para o cadeia de caracteres de saída. Internamente, <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> localiza o arquivo. dll especificado na `helpstringdll` atributo e chamadas `DLLGetDocumentation` nesse arquivo. dll com o contexto especificado e `lcid` atributo.  
+   Para recuperar as informações de descrição a ser exibida para o nome da propriedade realçado, o **propriedades** janela chamadas <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> para a propriedade que está selecionada, especificando o desejado `lcid` de atributo para o cadeia de caracteres de saída. Internamente, <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> localiza o arquivo. dll especificado na `helpstringdll` atributo e chamadas `DLLGetDocumentation` nesse arquivo. dll com o contexto especificado e `lcid` atributo.  
   
- A assinatura e a implementação de `DLLGetDocumentation` são:  
+   A assinatura e a implementação de `DLLGetDocumentation` são:  
   
 ```  
 STDAPI DLLGetDocumentation  

@@ -1,7 +1,7 @@
 ---
 title: Análise de código, Designer de Projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25419c9dbee9b4a41522c8314a0b4198df62c6a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e2af505b7cf5700a521903a873c117c7daf4681
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460718"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245161"
 ---
 # <a name="code-analysis-project-designer"></a>Análise de Código, Designer de Projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [análise de código, Designer de projeto](https://docs.microsoft.com/visualstudio/ide/reference/code-analysis-project-designer).  
-  
   
 Contém a ferramenta de análise de código que você pode optar por executar em seu código. A ferramenta relata informações sobre seus assemblies, como violações de regras de programação e design estabelecidas nas Diretrizes de Design do Microsoft .NET Framework.  
   

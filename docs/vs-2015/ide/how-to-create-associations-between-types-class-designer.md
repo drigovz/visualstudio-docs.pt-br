@@ -1,7 +1,7 @@
 ---
 title: Como criar associações entre tipos (Designer de Classe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 86f380525eef965de87c2f7e40a61e033a9ea46c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33b1a45d1c5dc3275ebbde8124986705bcac51ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473993"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856789"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Como criar associações entre tipos (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: criar associações entre tipos (Designer de classe)](https://docs.microsoft.com/visualstudio/ide/how-to-create-associations-between-types-class-designer).  
-  
 As linhas de associação no Designer de Classe mostram como as classes em um diagrama são relacionadas. Uma linha de associação representa uma classe que é o tipo de uma propriedade ou de um campo de outra classe no seu projeto. As linhas de associação geralmente são usadas para ilustrar as relações mais importantes entre classes do projeto.  
   
  Embora você possa exibir todos os campos e propriedades como associações, faz mais sentido mostrar apenas membros importantes como associações, dependendo do que você pretende enfatizar no diagrama. (É possível mostrar membros menos importantes como membros regulares ou ocultá-los no geral.)  
@@ -51,9 +49,9 @@ As linhas de associação no Designer de Classe mostram como as classes em um di
   
 ### <a name="to-change-the-name-of-an-association"></a>Para alterar o nome de uma associação  
   
--   Na superfície de diagrama, clique no rótulo da linha de associação e edite-o.  
+- Na superfície de diagrama, clique no rótulo da linha de associação e edite-o.  
   
- \- ou -  
+  \- ou -  
   
 1.  Clique na forma que contém a propriedade que é mostrada como uma associação.  
   

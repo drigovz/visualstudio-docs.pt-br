@@ -1,7 +1,7 @@
 ---
 title: 'Como: especificar as configurações do depurador | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,21 +25,19 @@ helpviewer_keywords:
 - options, debugging
 ms.assetid: ea172841-7fef-47bf-bd02-e7da4c3c7109
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cbfe565c66650b310c674ef22ecee74ea31a498
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d2e9213605fb351ab44e90c0885bcb556d10b695
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475330"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757619"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Como especificar configurações do depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: especificar as configurações do depurador](https://docs.microsoft.com/visualstudio/debugger/how-to-specify-debugger-settings).  
-  
 No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], você pode especificar várias configurações para o comportamento de depurador, inclusive como as variáveis são exibidas, se determinados avisos são apresentados, como os pontos de interrupção são definidos e como a interrupção afeta os programas em execução. Você especifica as configurações do depurador na **opções** caixa de diálogo.  
   
 ### <a name="to-set-debugger-options"></a>Para definir as opções de depurador  

@@ -1,7 +1,7 @@
 ---
 title: 'CA1720: Os identificadores não devem conter nomes de tipo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 60b7bbb0852544f7e2c5267daf0d9fdf1e1214cb
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: ec0980d312d4a65a770e63f0a23203a7e95c546f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47476440"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862327"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: os identificadores não devem conter nomes de tipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1720: os identificadores não devem conter nomes de tipo](https://docs.microsoft.com/visualstudio/code-quality/ca1720-identifiers-should-not-contain-type-names).
 
 |||
 |-|-|
@@ -51,89 +49,89 @@ A versão mais recente deste tópico pode ser encontrada em [CA1720: os identifi
 
  Cada token discreto no nome do parâmetro ou membro é verificado em relação os seguintes nomes de tipo de dados específicos de idioma, no diferenciando maiusculas de minúsculas:
 
--   Bool
+- Bool
 
--   WChar
+- WChar
 
--   Int8
+- Int8
 
--   UInt8
+- UInt8
 
--   Abreviado
+- Abreviado
 
--   UShort
+- UShort
 
--   int
+- int
 
--   UInt
+- UInt
 
--   Inteiro
+- Inteiro
 
--   UInteger
+- UInteger
 
--   Long
+- Long
 
--   ULong
+- ULong
 
--   Não assinado
+- Não assinado
 
--   Assinado
+- Assinado
 
--   Float
+- Float
 
--   float32
+- float32
 
--   float64
+- float64
 
- Além disso, os nomes de um parâmetro também são verificados em relação os seguintes nomes de tipo de dados independente de idioma, diferenciando maiusculas de minúsculas:
+  Além disso, os nomes de um parâmetro também são verificados em relação os seguintes nomes de tipo de dados independente de idioma, diferenciando maiusculas de minúsculas:
 
--   Objeto
+- Objeto
 
--   obj
+- obj
 
--   Boolean
+- Boolean
 
--   Char
+- Char
 
--   Cadeia de Caracteres
+- Cadeia de Caracteres
 
--   SByte
+- SByte
 
--   Byte
+- Byte
 
--   UByte
+- UByte
 
--   Int16
+- Int16
 
--   UInt16
+- UInt16
 
--   Int32
+- Int32
 
--   UInt32
+- UInt32
 
--   Int64
+- Int64
 
--   UInt64
+- UInt64
 
--   IntPtr
+- IntPtr
 
--   PTR
+- PTR
 
--   Ponteiro
+- Ponteiro
 
--   UInptr
+- UInptr
 
--   UPtr
+- UPtr
 
--   UPointer
+- UPointer
 
--   Simples
+- Simples
 
--   Duplo
+- Duplo
 
--   Decimal
+- Decimal
 
--   Guid
+- Guid
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  **Se disparado em relação a um parâmetro:**

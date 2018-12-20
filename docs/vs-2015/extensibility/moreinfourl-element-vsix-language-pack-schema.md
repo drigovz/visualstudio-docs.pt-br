@@ -1,7 +1,7 @@
 ---
 title: Elemento MoreInfoURL (esquema de pacote de idiomas do VSIX) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 3f07b67b-95c5-4ae8-8b7e-d643cbbb0348
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fac097d749dd743898882deff5e909e455698b0f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0f92a64e3cc4c701b30b313bab984dc18d7de3e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474774"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724537"
 ---
 # <a name="moreinfourl-element-vsix-language-pack-schema"></a>Elemento MoreInfoURL (esquema de pacote de idiomas do VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento MoreInfoURL (esquema de pacote de idiomas do VSIX)](https://docs.microsoft.com/visualstudio/extensibility/moreinfourl-element-vsix-language-pack-schema).  
-  
 Opcional. Um link para informações localizadas sobre a extensão.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -59,12 +57,12 @@ Opcional. Um link para informações localizadas sobre a extensão.
   
 ## <a name="element-information"></a>Informações do elemento  
   
-|||  
-|-|-|  
-|Namespace|http://schemas.microsoft.com/developer/vsx-schema-lp/2010|  
-|Nome do esquema|Esquema de pacote de idiomas do VSIX|  
-|Arquivo de validação|VSIXLanguagePackSchema.xsd|  
-|Pode ser vazio|Não aplicável|  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Namespace    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
+|   Nome do esquema   |                 Esquema de pacote de idiomas do VSIX                 |
+| Arquivo de validação |                VSIXLanguagePackSchema.xsd                 |
+|  Pode ser vazio   |                      Não aplicável                       |
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema do pacote de idioma VSX](../extensibility/vsx-language-pack-schema-reference.md)   

@@ -1,7 +1,7 @@
 ---
 title: Adicionando o controle de usuário para a página inicial | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3c2ccd76343cd340725751bf1ce2c332fe96c37
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 01510eabcb4d2d3605f38b8bb574ed3e21efebac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587425"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736716"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Adicionando um controle de usuário à página inicial
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionando o controle de usuário para a página início](https://docs.microsoft.com/visualstudio/extensibility/adding-user-control-to-the-start-page).  
-  
 Este passo a passo mostra como adicionar uma referência DLL para uma página inicial personalizada. O exemplo adiciona um controle de usuário para a solução, compila o controle de usuário e, em seguida, faz referência ao assembly compilado do arquivo Start Page. XAML. Uma nova guia hospeda o controle de usuário, que funciona como um navegador da Web básico.  
   
  Você pode usar o mesmo processo para adicionar qualquer assembly que pode ser chamado de um arquivo. XAML.  
@@ -116,7 +114,7 @@ Este passo a passo mostra como adicionar uma referência DLL para uma página in
 2.  Preencha o manipulador de eventos SetButton_Click da seguinte maneira.  
   
     ```csharp  
-    private void SetButton_Click(object sender, RoutedEventArgs e)  
+    private void SetButton_Click(object sender, RoutedEventArgs e)  
     {  
         try  
         {  
@@ -143,41 +141,41 @@ Este passo a passo mostra como adicionar uma referência DLL para uma página in
 ## <a name="adding-the-user-control-to-the-start-page"></a>Adicionando o controle de usuário para a página inicial  
  Para disponibilizar esse controle para o projeto de página inicial, no arquivo de página de início do projeto, adicione uma referência para a nova biblioteca de controle. Em seguida, você pode adicionar o controle para a marcação de XAML de página de início.  
   
-1.  Na **Gerenciador de soluções**, no projeto de página inicial, clique com botão direito **referências** e, em seguida, clique em **Add Reference**.  
+1. Na **Gerenciador de soluções**, no projeto de página inicial, clique com botão direito **referências** e, em seguida, clique em **Add Reference**.  
   
-2.  Sobre o **projetos** guia, selecione **WebUserControl** e, em seguida, clique em **Okey**.  
+2. Sobre o **projetos** guia, selecione **WebUserControl** e, em seguida, clique em **Okey**.  
   
-3.  No menu **Compilar**, clique em **Compilar Solução**.  
+3. No menu **Compilar**, clique em **Compilar Solução**.  
   
-     Compilando a solução disponibiliza o controle de usuário para o IntelliSense para outros arquivos na solução.  
+    Compilando a solução disponibiliza o controle de usuário para o IntelliSense para outros arquivos na solução.  
   
- Para adicionar o controle para a marcação de XAML de página Iniciar, adicionar uma referência ao namespace para o assembly e, em seguida, colocar o controle na página.  
+   Para adicionar o controle para a marcação de XAML de página Iniciar, adicionar uma referência ao namespace para o assembly e, em seguida, colocar o controle na página.  
   
 #### <a name="to-add-the-control-to-the-markup"></a>Para adicionar o controle à marcação  
   
-1.  Na **Gerenciador de soluções**, abra o arquivo. XAML de página inicial.  
+1. Na **Gerenciador de soluções**, abra o arquivo. XAML de página inicial.  
   
-2.  No **XAML** painel, adicione a seguinte declaração de namespace para o nível superior <xref:System.Windows.Controls.Grid> elemento.  
+2. No **XAML** painel, adicione a seguinte declaração de namespace para o nível superior <xref:System.Windows.Controls.Grid> elemento.  
   
-    ```xml  
-    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
-    ```  
+   ```xml  
+   xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
+   ```  
   
-3.  No **XAML** painel, role até a \<grade > seção.  
+3. No **XAML** painel, role até a \<grade > seção.  
   
-     A seção contém um <xref:System.Windows.Controls.TabControl> elemento em um <xref:System.Windows.Controls.Grid> elemento.  
+    A seção contém um <xref:System.Windows.Controls.TabControl> elemento em um <xref:System.Windows.Controls.Grid> elemento.  
   
-4.  Adicionar um \<TabControl > elemento que contém um \<TabItem > que contém uma referência ao controle de usuário.  
+4. Adicionar um \<TabControl > elemento que contém um \<TabItem > que contém uma referência ao controle de usuário.  
   
-    ```xml  
+   ```xml  
   
-    <TabItem Header="Web" Height="Auto">  
-        <vsc:UserControl1 />  
-    </TabItem>  
+   <TabItem Header="Web" Height="Auto">  
+       <vsc:UserControl1 />  
+   </TabItem>  
   
-    ```  
+   ```  
   
- Agora você pode testar o controle.  
+   Agora você pode testar o controle.  
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>Testando uma página de início personalizados criados manualmente  
   

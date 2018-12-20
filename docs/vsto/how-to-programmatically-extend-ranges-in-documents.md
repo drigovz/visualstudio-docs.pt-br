@@ -16,39 +16,39 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd8eff41b0e76816114e9c634f5ad61b6db58baf
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 810f65cbb021845c4fa659cd785e83e8c979376d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669905"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888665"
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>Como: programaticamente estender intervalos em documentos
   Depois de definir uma <xref:Microsoft.Office.Interop.Word.Range> do objeto em um documento do Microsoft Office Word, alterar seus pontos inicial e final usando o <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> e <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> métodos. O <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> e <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> métodos usam os mesmos dois argumentos *unidade* e *contagem*. O *contagem* argumento é o número de unidades a serem movidas e o *unidade* argumento pode ser um dos seguintes <xref:Microsoft.Office.Interop.Word.WdUnits> valores:  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdWord>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdWord>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdSentence>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdSentence>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdParagraph>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdParagraph>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdSection>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdSection>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdStory>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdStory>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdCell>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdCell>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdColumn>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdColumn>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdRow>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdRow>  
   
--   <xref:Microsoft.Office.Interop.Word.WdUnits.wdTable>  
+- <xref:Microsoft.Office.Interop.Word.WdUnits.wdTable>  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- O exemplo a seguir define um intervalo de sete caracteres. Ele move a posição inicial dos caracteres de intervalo de sete, em seguida, após a posição inicial do original. Como a posição final do intervalo também era sete caracteres após a posição inicial, o resultado é um intervalo que consiste em caracteres. O código, em seguida, move os sete caracteres do final posição após a posição final atual.  
+  O exemplo a seguir define um intervalo de sete caracteres. Ele move a posição inicial dos caracteres de intervalo de sete, em seguida, após a posição inicial do original. Como a posição final do intervalo também era sete caracteres após a posição inicial, o resultado é um intervalo que consiste em caracteres. O código, em seguida, move os sete caracteres do final posição após a posição final atual.  
   
 ## <a name="to-extend-a-range"></a>Para estender um intervalo  
   

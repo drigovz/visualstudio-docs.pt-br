@@ -1,7 +1,7 @@
 ---
 title: Não é possível conectar o Monitor de depuração remota do Studio Visual da Microsoft | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,21 +18,19 @@ dev_langs:
 - C++
 ms.assetid: a1d959fc-3817-491c-831b-e6b768a3877a
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edc3d1384a67576bd805ef5efb60614a215a7a92
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 139c650ac61b9312b069cc2e19fa66d3673ca30f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473017"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733012"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Não foi possível se conectar ao Monitor de Depuração Remota do Microsoft Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [não é possível conectar-se para o Monitor de depuração remota do Microsoft Visual Studio](https://docs.microsoft.com/visualstudio/debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor).  
-  
 Essa mensagem de erro aparece quando você insere um nome inválido do Visual Studio Remote Debugging Monitor na **anexar ao processo** caixa de diálogo. O nome do Monitor de Depuração Remota geralmente é igual ao computador você está tentando conectar para a depuração remota. Essa mensagem pode ocorrer porque o computador remoto não existe na rede, o monitor de depuração remota não está configurado corretamente no computador remoto ou o computador remoto está inacessível devido a problemas de rede ou à presença de um firewall.  
   
 > [!IMPORTANT]

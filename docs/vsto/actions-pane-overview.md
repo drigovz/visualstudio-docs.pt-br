@@ -13,17 +13,17 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio]
 - smart documents [Office development in Visual Studio]
 - user controls [Office development in Visual Studio], actions panes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e19494af4d0c774e7cb70613151376be733f0a63
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e8c7136c1f97f531600799f3aede30170813cf0a
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670234"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305670"
 ---
 # <a name="actions-pane-overview"></a>Visão geral do painel de ações
   Um painel de ações é um personalizável **ações do documento** painel de tarefas que está anexado a um documento específico do Microsoft Office Word ou uma pasta de trabalho do Microsoft Office Excel. O painel de ações está hospedado dentro do painel de tarefas do Office, juntamente com outros painéis de tarefas interna, como o **origem XML** painel de tarefas no Excel ou o **estilos e formatação** painel de tarefas no Word. Você pode usar controles dos Windows Forms ou controles do WPF para projetar a interface de usuário do painel Ações.
@@ -48,16 +48,16 @@ ms.locfileid: "35670234"
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>Adicionar vários controles ao painel de ações  
  Quando você adiciona vários controles ao painel de ações, você deve agrupar os controles em um controle de usuário e, em seguida, adicione o controle de usuário para o <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propriedade. Esse processo inclui as seguintes etapas:  
 
-1.  Criar a interface do usuário (IU) do painel Ações, adicionando um **controle do painel Ações** ou **controle de usuário** item ao seu projeto. Esses itens incluem formulários personalizados do Windows <xref:System.Windows.Forms.UserControl> classe. O **controle do painel Ações** e **controle de usuário** itens são equivalentes; a única diferença é o seu nome.  
+1. Criar a interface do usuário (IU) do painel Ações, adicionando um **controle do painel Ações** ou **controle de usuário** item ao seu projeto. Esses itens incluem formulários personalizados do Windows <xref:System.Windows.Forms.UserControl> classe. O **controle do painel Ações** e **controle de usuário** itens são equivalentes; a única diferença é o seu nome.  
 
-2.  Adicionar controles Windows Forms para o <xref:System.Windows.Forms.UserControl> usando o designer, ou escrevendo código.  
+2. Adicionar controles Windows Forms para o <xref:System.Windows.Forms.UserControl> usando o designer, ou escrevendo código.  
 
-    > [!NOTE]  
-    >  Você também pode adicionar controles do WPF para o painel de ações, adicionando um WPF <xref:System.Windows.Controls.UserControl> para o Windows Forms <xref:System.Windows.Forms.UserControl>. Para obter mais informações, consulte [controla o uso de WPF em soluções do Office](../vsto/using-wpf-controls-in-office-solutions.md).  
+   > [!NOTE]  
+   >  Você também pode adicionar controles do WPF para o painel de ações, adicionando um WPF <xref:System.Windows.Controls.UserControl> para o Windows Forms <xref:System.Windows.Forms.UserControl>. Para obter mais informações, consulte [controla o uso de WPF em soluções do Office](../vsto/using-wpf-controls-in-office-solutions.md).  
 
-3.  Adicionar uma instância do controle de usuário personalizadas para os controles que estão contidos na `ActionsPane` campo do `ThisWorkbook` (para Excel) ou `ThisDocument` (para o Word) de classe em seu projeto.  
+3. Adicionar uma instância do controle de usuário personalizadas para os controles que estão contidos na `ActionsPane` campo do `ThisWorkbook` (para Excel) ou `ThisDocument` (para o Word) de classe em seu projeto.  
 
- Para obter exemplos que demonstram esse processo em mais detalhes, consulte [como: adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
+   Para obter exemplos que demonstram esse processo em mais detalhes, consulte [como: adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
 
 ## <a name="hide-the-actions-pane"></a>Ocultar o painel de ações  
  Embora o <xref:Microsoft.Office.Tools.ActionsPane> classe tem um <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> método e uma <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> propriedade, você não pode remover o painel de ações da interface do usuário usando todos os membros de <xref:Microsoft.Office.Tools.ActionsPane> própria classe. Chamar o <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> método ou a configuração de <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> propriedade a ser **false** oculta somente os controles no painel de ações; não oculta o painel de tarefas.  

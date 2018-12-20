@@ -1,7 +1,7 @@
 ---
 title: VSInstr | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,21 +20,19 @@ helpviewer_keywords:
 - performance tools, VSInstr tool
 ms.assetid: 7b1334f7-f9b0-4a82-a145-d0607bfa8467
 caps.latest.revision: 49
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 73a3784b899033f405469f6bff9c5e23d5aaa596
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d905a7a6fa99afa0e7d43409ca1d7b53e7fbd9b0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465927"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773321"
 ---
 # <a name="vsinstr"></a>VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [VSInstr](https://docs.microsoft.com/visualstudio/profiling/vsinstr).  
-  
 A ferramenta VSInstr é usada para instrumentar binários. Ela é chamada usando a seguinte sintaxe:  
   
 ```  

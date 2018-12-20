@@ -1,5 +1,5 @@
 ---
-title: Gerar um campo, uma propriedade ou uma variável local no Visual Studio
+title: Gerar campo, propriedade, variável local
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cff83eb490f8012e8679dbd0b2c6a65d27f8e14
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3cd886e4ed08bbe4dbeea1b177dc4dd22502d99
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945084"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064028"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Gerar um campo, uma propriedade ou uma variável local no Visual Studio
 
@@ -24,11 +24,11 @@ Esta geração de código aplica-se a:
 
 - Visual Basic
 
-**O quê:** permite gerar imediatamente o código para um campo, propriedade ou local não declarada anteriormente.
+**O quê:** Permite gerar imediatamente o código para um campo, uma propriedade ou um local não declarado anteriormente.
 
-**Quando:** você introduz um novo campo, propriedade ou local durante a digitação e quer declará-la correta e automaticamente.
+**Quando:** Você introduz um novo campo, uma propriedade ou um local durante a digitação e deseja declará-lo correta e automaticamente.
 
-**Por quê:** você poderia declarar o campo, propriedade ou local antes de usá-lo; no entanto, esse recurso gerará a declaração ou o tipo automaticamente.
+**Por que:** Você pode declarar o campo, a propriedade ou o local antes de usá-lo; no entanto, essa funcionalidade gerará a declaração ou o tipo automaticamente.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -36,24 +36,24 @@ Esta geração de código aplica-se a:
 
    - C#:
 
-    ![Código em C# realçado](media/field-highlight-cs.png)
+       ![Código em C# realçado](media/field-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código em VB realçado](media/field-highlight-vb.png)
+       ![Código em VB realçado](media/field-highlight-vb.png)
 
-1. Depois, siga um destes procedimentos:
+2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
-     - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
-     - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece.
-     - Clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece na margem esquerda se o cursor de texto já estiver na linha com o rabisco vermelho.
+      - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
+      - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) ícone que aparece.
+      - Clique no ícone de ![Lâmpada](media/bulb-cs.png) ícone que aparece na margem esquerda quando o cursor de texto já está na linha com o rabisco vermelho.
 
-    ![Visualização da geração de campo/propriedade/local](media/field-preview-cs.png)
+      ![Visualização da geração de campo/propriedade/local](media/field-preview-cs.png)
 
-1. Selecione uma das opções de geração no menu suspenso.
+3. Selecione uma das opções de geração no menu suspenso.
 
    > [!TIP]
    > Use o link **Visualizar alterações** na parte inferior da janela de visualização [para ver todas as alterações](../../ide/preview-changes.md) que serão feitas antes de fazer sua seleção.
@@ -62,11 +62,11 @@ Esta geração de código aplica-se a:
 
    - C#:
 
-      ![Gerar o resultado do método C#](media/field-result-cs.png)
+       ![Gerar o resultado do método C#](media/field-result-cs.png)
 
    - Visual Basic:
 
-      ![Gerar o resultado do método VB](media/field-result-vb.png)
+       ![Gerar o resultado do método VB](media/field-result-vb.png)
 
 ## <a name="see-also"></a>Consulte também
 

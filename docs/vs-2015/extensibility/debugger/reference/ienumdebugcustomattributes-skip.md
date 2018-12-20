@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugCustomAttributes::Skip | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 54c72e23-cd4c-4746-935c-abea8057dd1b
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb86f8d57ba4ee69c6d16c1e07c1baaff916f021
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7c51905b5e497c5540b7f12854813f4a3409be5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460955"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795421"
 ---
 # <a name="ienumdebugcustomattributesskip"></a>IEnumDebugCustomAttributes::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugCustomAttributes::Skip](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugcustomattributes-skip).  
-  
 Ignora um número especificado de atributos personalizados em uma sequência de enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Skip (   
+HRESULT Skip (   
    ULONG celt  
 );  
 ```  

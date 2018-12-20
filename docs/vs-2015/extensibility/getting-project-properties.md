@@ -1,7 +1,7 @@
 ---
 title: Obter propriedades do projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,23 +11,21 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - project properties, displaying in tool window
-- tool windows, displaying project propeties
+- tool windows, displaying project properties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71f7eb7d14a829d05dd28d7fd0a03108aecf9871
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7137012fb5b1a562257134ae7f87b19068db165
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475387"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749238"
 ---
 # <a name="getting-project-properties"></a>Obtendo as propriedades do projeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Obtendo as propriedades do projeto](https://docs.microsoft.com/visualstudio/extensibility/getting-project-properties).  
-  
 Este passo a passo mostra como exibe as propriedades do projeto em uma janela de ferramenta.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  

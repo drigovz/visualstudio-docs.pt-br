@@ -1,7 +1,7 @@
 ---
 title: Chamar eventos do depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b3440ac3-80af-40c6-bef4-cbf00fa67885
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86c48d072baa53cf3f8ba0a6d903021e6c396afa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9682e16c059483d44953ffbe11d8e10e6d46a435
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465239"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767503"
 ---
 # <a name="calling-debugger-events"></a>Chamando eventos do depurador
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [chamar eventos do depurador](https://docs.microsoft.com/visualstudio/extensibility/debugger/calling-debugger-events).  
-  
 Eventos em sessões de depuração ocorrerem em uma ordem específica.  
   
 ## <a name="discussion"></a>Discussão  

@@ -1,7 +1,7 @@
 ---
 title: Trusted Application Deployment Overview | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: afcfc0d2a494b27359de041b13a8e9595ede1bc7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 733eb98544d48716ec073605d68628ddeab7b794
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827578"
 ---
 # <a name="trusted-application-deployment-overview"></a>Visão geral da implantação de aplicativos confiáveis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Trusted Application Deployment Overview](https://docs.microsoft.com/visualstudio/deployment/trusted-application-deployment-overview).  
-  
 Este tópico fornece uma visão geral de como implantar [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativos que têm permissões elevadas, usando a tecnologia de implantação de aplicativos confiáveis.  
   
  Confiável para implantação do aplicativo, parte do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] tecnologia de implantação, torna mais fácil para as organizações de qualquer tamanho para conceder permissões adicionais a um aplicativo gerenciado de maneira mais seguro sem nenhum aviso ao usuário. Com a implantação de aplicativo confiável, uma organização pode simplesmente configurar um computador cliente para ter uma lista de editores confiáveis, que são identificados usando certificados Authenticode. Depois disso, qualquer [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo assinado por um destes trusted publishers recebe um nível mais alto de confiança.  
@@ -59,11 +57,11 @@ Este tópico fornece uma visão geral de como implantar [!INCLUDE[ndptecclick](.
   
  Em organizações maiores, o publicador e o implantador são frequentemente duas entidades separadas:  
   
--   O publicador é o grupo que cria o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo.  
+- O publicador é o grupo que cria o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo.  
   
--   O implantador é o grupo, normalmente o departamento de TI (tecnologia) de informações, que distribui [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo em computadores de área de trabalho corporativa.  
+- O implantador é o grupo, normalmente o departamento de TI (tecnologia) de informações, que distribui [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo em computadores de área de trabalho corporativa.  
   
- Você deve seguir estas etapas para tirar proveito da implantação de aplicativos confiáveis:  
+  Você deve seguir estas etapas para tirar proveito da implantação de aplicativos confiáveis:  
   
 1.  Obter um certificado para o publicador.  
   

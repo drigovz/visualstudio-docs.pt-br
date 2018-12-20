@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty2::SetValueAsString | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 9e6a5054-41b7-4223-b509-b93689d366a5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f94ad530988ca354a1dd7618df0c7911987511e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 103ad843329b0b4b406d1405ca6304544ec529b4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475346"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728908"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProperty2::SetValueAsString](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugproperty2-setvalueasstring).  
-  
 Define o valor de uma propriedade de uma determinada cadeia de caracteres.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT SetValueAsString (   
+HRESULT SetValueAsString (   
    LPCOLESTR pszValue,  
    UINT      nRadix,  
    DWORD     dwTimeout  
@@ -42,7 +40,7 @@ HRESULT SetValueAsString (
 ```  
   
 ```csharp  
-int SetValueAsString (   
+int SetValueAsString (   
    string pszValue,  
    uint   nRadix,  
    uint   dwTimeout  

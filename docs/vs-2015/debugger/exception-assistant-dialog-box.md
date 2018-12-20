@@ -1,7 +1,7 @@
 ---
 title: Caixa de diálogo Assistente de exceção | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Exception Assistant dialog box
 ms.assetid: 57999577-0129-47ca-8b87-77b80fdc317a
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20326f30ab470c659c9971ea24c6a978f0ccf203
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd9750c9c88f9592158e9e8b3a8079af13b88652
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475996"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722776"
 ---
 # <a name="exception-assistant-dialog-box"></a>Caixa de diálogo Assistente de Exceção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

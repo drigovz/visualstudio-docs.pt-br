@@ -1,7 +1,7 @@
 ---
 title: 'Como: gerar um trecho XML a partir de um esquema XML | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,42 +14,40 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b2583513acde49736358c9a1df97af74c950ad51
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6eb03fba400e20227155a2528b8aaf0b28f7761a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475466"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951464"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Como: Gerencia um snippet de um esquema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: gerar um XML de um esquema XML do trecho](https://docs.microsoft.com/visualstudio/xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema).  
-  
   
 O editor XML tem a capacidade de gerar snippets de um esquema de linguagem de definição de esquema XML (XSD). Por exemplo, porque você está criando um arquivo XML, quando posicionado próximo ao nome do elemento, você pode pressionar a tecla TAB para preencher o elemento com os dados XML gerados de informações de esquema para esse elemento.  
   
  Este recurso está disponível somente nos elementos. As seguintes regras também se aplicam:  
   
--   O elemento deve ter um tipo associado de esquema; isto é, o elemento deve ser válido de acordo com qualquer esquema associado. O tipo de esquema não pode ser abstract e o tipo deve conter os atributos necessários e/ou os elementos filho necessários.  
+- O elemento deve ter um tipo associado de esquema; isto é, o elemento deve ser válido de acordo com qualquer esquema associado. O tipo de esquema não pode ser abstract e o tipo deve conter os atributos necessários e/ou os elementos filho necessários.  
   
--   O elemento atual no editor deve ser deixado sem atributos. Por exemplo, todos os seguintes são válidos  
+- O elemento atual no editor deve ser deixado sem atributos. Por exemplo, todos os seguintes são válidos  
   
-    -   `<Account`  
+  -   `<Account`  
   
-    -   `<Account>`  
+  -   `<Account>`  
   
-    -   `<Account></Account>`  
+  -   `<Account></Account>`  
   
--   O cursor deve ser localizado imediatamente à direita do nome do elemento.  
+- O cursor deve ser localizado imediatamente à direita do nome do elemento.  
   
- O snippet gerado contém todos os atributos e elementos necessários. Se `minOccurs` é maior de um, o número mínimo necessário de instâncias desse elemento é incluído no snippet, até um máximo de 100 instâncias. Todos os valores fixos encontrados no esquema levam a valores fixos no snippet. `xsd:any` e elementos de `xsd:anyAttribute` são ignorados e resultado nas compilações adicionais de trecho.  
+  O snippet gerado contém todos os atributos e elementos necessários. Se `minOccurs` é maior de um, o número mínimo necessário de instâncias desse elemento é incluído no snippet, até um máximo de 100 instâncias. Todos os valores fixos encontrados no esquema levam a valores fixos no snippet. `xsd:any` e elementos de `xsd:anyAttribute` são ignorados e resultado nas compilações adicionais de trecho.  
   
- Os valores padrão são gerados e observados como valores editáveis. Se o esquema especifica um valor padrão, esse valor padrão é usado. Entretanto, se o valor padrão de esquema é uma cadeia de caracteres vazia, o editor gerencia os valores padrão da seguinte maneira:  
+  Os valores padrão são gerados e observados como valores editáveis. Se o esquema especifica um valor padrão, esse valor padrão é usado. Entretanto, se o valor padrão de esquema é uma cadeia de caracteres vazia, o editor gerencia os valores padrão da seguinte maneira:  
   
--   Se o tipo de esquema contém quaisquer facetas de enumeração, direta ou indiretamente por meio de alguns dos membros de um tipo de união, o primeiro valor enumerado encontrado no modelo de objeto de esquema é usado como o padrão.  
+- Se o tipo de esquema contém quaisquer facetas de enumeração, direta ou indiretamente por meio de alguns dos membros de um tipo de união, o primeiro valor enumerado encontrado no modelo de objeto de esquema é usado como o padrão.  
   
--   Se o tipo de esquema é um tipo atômico, o editor obtém o tipo atômico e insere o nome atômico de tipo. Para um tipo derivado simples usa o tipo simples base. Para um tipo de lista o tipo atômico é `itemType`. Para uma união atômico, o tipo é o tipo atômico de primeiro `memberType`.  
+- Se o tipo de esquema é um tipo atômico, o editor obtém o tipo atômico e insere o nome atômico de tipo. Para um tipo derivado simples usa o tipo simples base. Para um tipo de lista o tipo atômico é `itemType`. Para uma união atômico, o tipo é o tipo atômico de primeiro `memberType`.  
   
 ## <a name="example"></a>Exemplo  
  As etapas nesta seção mostrar como usar o recurso esquema- gerado de snippet XML do editor XML.  

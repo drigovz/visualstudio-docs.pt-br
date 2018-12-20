@@ -1,7 +1,7 @@
 ---
 title: Hierarquia lexical de tipos de símbolo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - symbols [DIA SDK], type hierarchies
 ms.assetid: 912da653-ddfe-45a4-84aa-64281283739a
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d807841429a722f31f3aecdc08f1a0972b05378
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f9fa295a7faa85a0b7a7b3268702c4199869754
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462859"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783253"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Hierarquia lexical de tipos de símbolos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [hierarquia Lexical de tipos de símbolo](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/lexical-hierarchy-of-symbol-types).  
-  
 A tabela a seguir mostra os tipos de símbolo na hierarquia de léxico.  
   
 ## <a name="symbol-types"></a>Tipos de símbolo  

@@ -1,7 +1,7 @@
 ---
 title: Obtendo informações de cores para colorização de texto e fonte | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d4b5ebbaea2b146f1b853360b88bad2363ce77f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 41fc6ac7ba20bc552ebdfde2cab69dd28867ee7f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476194"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741280"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Obtendo informações de cores para colorização de texto e fonte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [obtendo fonte e informações de cor para texto colorização](https://docs.microsoft.com/visualstudio/extensibility/getting-font-and-color-information-for-text-colorization).  
-  
 O processo que processa ou exibe texto coloridos serão em elementos de (UI) interface do usuário depende do tipo de projeto, sua tecnologia e desenvolvedor preferências. O **fontes e cores** página de propriedades armazena as configurações.  
   
  A maioria das implementações que exibem texto coloridos serão precisa o `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` e associados a interfaces para as configurações de exibição de apresentação, recuperar e armazenar texto.  
@@ -40,15 +38,15 @@ O processo que processa ou exibe texto coloridos serão em elementos de (UI) int
   
  Para colorir, um VSPackage deverá obter o atual **fontes e cores** configurações. Um VSPackage pode fazer isso das seguintes maneiras, dependendo das suas necessidades:  
   
--   Use o mecanismo de persistência de fontes e cores para recuperar o estado atual ou armazenado. Para obter mais informações, consulte [acessar fonte armazenados e as configurações de cor](../extensibility/accessing-stored-font-and-color-settings.md).  
+- Use o mecanismo de persistência de fontes e cores para recuperar o estado atual ou armazenado. Para obter mais informações, consulte [acessar fonte armazenados e as configurações de cor](../extensibility/accessing-stored-font-and-color-settings.md).  
   
--   Use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interface de um serviço que fornece dados de fontes e cores para obter uma instância de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, se o VSPackage não é também o provedor de fonte e cor.  
+- Use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interface de um serviço que fornece dados de fontes e cores para obter uma instância de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, se o VSPackage não é também o provedor de fonte e cor.  
   
--   Implementar a interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>.  
+- Implementar a interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>.  
   
- Para garantir que os resultados obtidos por meio de sondagem são atualizadas, talvez seja útil usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interface para determinar se uma atualização é necessária antes de chamar os métodos de recuperação do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
+  Para garantir que os resultados obtidos por meio de sondagem são atualizadas, talvez seja útil usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interface para determinar se uma atualização é necessária antes de chamar os métodos de recuperação do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
   
- Depois que você obteve informações de fonte e cor, analisar o texto a ser exibido para identificar a necessidade de colorização de elementos e, em seguida, exibir o texto na janela usando as cores e fontes apropriadas.  
+  Depois que você obteve informações de fonte e cor, analisar o texto a ser exibido para identificar a necessidade de colorização de elementos e, em seguida, exibir o texto na janela usando as cores e fontes apropriadas.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   

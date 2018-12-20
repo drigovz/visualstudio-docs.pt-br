@@ -1,5 +1,6 @@
 ---
-title: Tutorial – Saiba mais sobre o Flask no Visual Studio, etapa 2
+title: Tutorial Aprenda a usar o Flask no Visual Studio, etapa 2, modos de exibição e modelos
+titleSuffix: ''
 description: Um passo a passo dos conceitos básicos do Flask no contexto dos projetos do Visual Studio, mostrando especificamente as etapas para criar um aplicativo e usar modos de exibição e modelos.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 61a7b36892e5cec36a4641c154227df8621c6602
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776149"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052939"
 ---
-# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo Flask com exibições e modelos de página
+# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo do Flask com modos de exibição e modelos de página
 
-**Etapa anterior: [Criar uma solução e um projeto do Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)**
+**Etapa anterior: [Criar um projeto e uma solução do Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)**
 
 Na etapa 1 deste tutorial, você tem um aplicativo Flask com uma página e todo o código em um único arquivo. Para permitir o desenvolvimento futuro, é melhor refatorar o código e criar uma estrutura para modelos de página. Em particular, separe o código para exibições do aplicativo de outros aspectos como o código de inicialização.
 
@@ -36,7 +38,7 @@ No código criado pelo modelo "Projeto Web em Branco do Flask", você tem um ún
 
 1. Na pasta do seu projeto, crie uma pasta de aplicativo chamada `HelloFlask` (clique com o botão direito do mouse no projeto em **Gerenciador de Soluções** e selecione **Adicionar** > **Nova Pasta**.)
 
-1. Na pasta *HelloFlask*, crie um arquivo chamado *\_\_init\_\_.py* com o seguinte conteúdo que cria a instância `Flask` e carrega as exibições do aplicativo (criadas na próxima etapa):
+2. Na pasta *HelloFlask*, crie um arquivo chamado *\_\_init\_\_.py* com o seguinte conteúdo que cria a instância `Flask` e carrega as exibições do aplicativo (criadas na próxima etapa):
 
     ```python
     from flask import Flask
@@ -45,7 +47,7 @@ No código criado pelo modelo "Projeto Web em Branco do Flask", você tem um ún
     import HelloFlask.views
     ```
 
-1. Na pasta *HelloFlask*, crie um arquivo chamado *views.py* com o conteúdo a seguir. O nome *views.py* é importante, porque você usou `import HelloFlask.views` dentro de *\_\_init\_\_.py*; você verá um erro em tempo de execução se os nomes não corresponderem.
+3. Na pasta *HelloFlask*, crie um arquivo chamado *views.py* com o conteúdo a seguir. O nome *views.py* é importante, porque você usou `import HelloFlask.views` dentro de *\_\_init\_\_.py*; você verá um erro em tempo de execução se os nomes não corresponderem.
 
     ```python
     from flask import Flask
@@ -59,9 +61,9 @@ No código criado pelo modelo "Projeto Web em Branco do Flask", você tem um ún
 
     Além de renomear a função e a rota como `home`, esse código contém o código de renderização da página de *app.py* e importa o objeto `app` declarado em *\_\_init\_\_.py*.
 
-1. Crie uma subpasta em *HelloFlask* chamada *templates*, que permanecerá vazia por enquanto.
+4. Crie uma subpasta em *HelloFlask* chamada *templates*, que permanecerá vazia por enquanto.
 
-1. Na pasta raiz do projeto, renomeie *app.py* como *runserver.py* e faça o conteúdo corresponder ao seguinte código:
+5. Na pasta raiz do projeto, renomeie *app.py* como *runserver.py* e faça o conteúdo corresponder ao seguinte código:
 
     ```python
     import os
@@ -77,17 +79,17 @@ No código criado pelo modelo "Projeto Web em Branco do Flask", você tem um ún
 
         app.run(HOST, PORT)
     ```
-1. A estrutura do seu projeto deve ser semelhante à da imagem a seguir:
+6. A estrutura do seu projeto deve ser semelhante à da imagem a seguir:
 
     ![Estrutura do projeto após a refatoração do código](media/flask/step02-project-structure.png)
 
-1. Selecione **Depurar** > **Iniciar Depuração** (**F5**) ou use o botão **Servidor Web** na barra de ferramentas (o navegador exibido poderá variar) para iniciar o aplicativo e abrir um navegador. Experimente as rotas de URL / e /home.
+7. Selecione **Depurar** > **Iniciar Depuração** (**F5**) ou use o botão **Servidor Web** na barra de ferramentas (o navegador exibido poderá variar) para iniciar o aplicativo e abrir um navegador. Experimente as rotas de URL / e /home.
 
-1. Também é possível definir pontos de interrupção em várias partes do código e reiniciar o aplicativo para seguir a sequência de inicialização. Por exemplo, defina um ponto de interrupção nas primeiras linhas de *runserver.py* e *HelloFlask\__init__.py* e, na linha `return "Hello Flask!"` de *views.py*. Em seguida, reinicie o aplicativo (**Depurar** > **Reiniciar**, **Ctrl**+**F5** ou o botão de barra de ferramentas mostrado abaixo) e execute o código em etapas (**F10**) ou execute-o em cada ponto de interrupção usando **F5**.
+8. Também é possível definir pontos de interrupção em várias partes do código e reiniciar o aplicativo para seguir a sequência de inicialização. Por exemplo, defina um ponto de interrupção nas primeiras linhas de *runserver.py* e *HelloFlask\_* init_*.py* e na linha `return "Hello Flask!"` de *views.py*. Em seguida, reinicie o aplicativo (**Depurar** > **Reiniciar**, **Ctrl**+**F5** ou o botão de barra de ferramentas mostrado abaixo) e execute o código em etapas (**F10**) ou execute-o em cada ponto de interrupção usando **F5**.
 
     ![Botão de reinicialização na barra de ferramentas de depuração no Visual Studio](media/debugging-restart-toolbar-button.png)
 
-1. Interrompa o aplicativo ao terminar.
+9. Interrompa o aplicativo ao terminar.
 
 ### <a name="commit-to-source-control"></a>Confirmar o controle do código-fonte
 
@@ -103,7 +105,7 @@ Como você já fez alterações no seu código e as testou com êxito, agora é 
 
 ### <a name="question-how-frequently-should-one-commit-to-source-control"></a>Pergunta: Com que frequência é necessário fazer a confirmação no controle do código-fonte?
 
-Resposta: A confirmação de alterações no controle do código-fonte cria um registro no log de alterações e um ponto em que é possível reverter o repositório, se necessário. Cada confirmação também pode ser examinada para suas alterações específicas. Como as confirmações no GIT não são caras, é melhor realizar confirmações frequentes do que acumular um grande número de alterações em uma única confirmação. Obviamente, não é necessário confirmar cada pequena alteração em arquivos individuais. Normalmente, você realiza uma confirmação ao adicionar uma funcionalidade, alterando uma estrutura como você fez nesta etapa, ou realizar alguma refatoração do código. Verifique também com outras pessoas da sua equipe para a granularidade de confirmações que funcionam melhor para todos.
+Resposta: A confirmação de alterações no controle do código-fonte cria um registro no log de alterações e um ponto em que é possível reverter o repositório se necessário. Cada confirmação também pode ser examinada para suas alterações específicas. Como as confirmações no GIT não são caras, é melhor realizar confirmações frequentes do que acumular um grande número de alterações em uma única confirmação. Obviamente, não é necessário confirmar cada pequena alteração em arquivos individuais. Normalmente, você realiza uma confirmação ao adicionar uma funcionalidade, alterando uma estrutura como você fez nesta etapa, ou realizar alguma refatoração do código. Verifique também com outras pessoas da sua equipe para a granularidade de confirmações que funcionam melhor para todos.
 
 A frequência de confirmação e a frequência de envio de confirmações por push a um repositório remoto são duas preocupações diferentes. Você pode acumular várias confirmações no seu repositório local antes de enviá-las por push para o repositório remoto. Novamente, a frequência de confirmação depende de como sua equipe deseja gerenciar o repositório.
 
@@ -200,7 +202,7 @@ Resposta: Embora os modelos geralmente sejam mantidos em arquivos HTML separados
 
 ### <a name="question-must-templates-use-the-html-file-extension"></a>Pergunta: Os modelos precisam usar a extensão de arquivo .html?
 
-Resposta: A extensão *.html* dos arquivos de modelo de página é totalmente opcional, porque você sempre identifica o caminho relativo exato para o arquivo no primeiro argumento para a função `render_template`. No entanto, o Visual Studio (e outros editores) costuma fornecer funcionalidades como preenchimento de código e coloração de sintaxe com arquivos *.html*, o que supera o fato de os modelos de página não serem estritamente HTML.
+Resposta: A extensão *.html* para arquivos de modelo de página é totalmente opcional, porque você sempre identifica o caminho relativo exato para o arquivo no primeiro argumento para a função `render_template`. No entanto, o Visual Studio (e outros editores) costuma fornecer funcionalidades como preenchimento de código e coloração de sintaxe com arquivos *.html*, o que supera o fato de os modelos de página não serem estritamente HTML.
 
 De fato, quando você está trabalhando com um projeto do Flask, o Visual Studio detecta automaticamente quando o arquivo HTML que você está editando é, na verdade, um modelo do Flask e fornece algumas funcionalidades de preenchimento automático. Por exemplo, quando você começa a digitar um comentário no modelo de página do Flask, `{#`, o Visual Studio fornece automaticamente os caracteres de fechamento `#}`. Os comandos **Comentar Seleção** e **Remover Marca de Comentário da Seleção** (no menu **Editar** > **Avançado** e na barra de ferramentas) também usam comentários de modelo em vez de comentários em HTML.
 

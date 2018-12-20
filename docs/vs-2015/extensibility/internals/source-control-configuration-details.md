@@ -1,7 +1,7 @@
 ---
 title: Detalhes de configuração de controle de origem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aed814ee319f9713a7b4a4c5925abcda63a04e49
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55e2364ca096b5329369e51ccdadf07f191720e8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475596"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753704"
 ---
 # <a name="source-control-configuration-details"></a>Detalhes de configuração de controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [detalhes de configuração de controle do código-fonte](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-configuration-details).  
-  
 Para implementar o controle do código-fonte, você precisa configurar corretamente o sistema de projeto ou o editor para fazer o seguinte:  
   
 -   Solicitar permissão para fazer a transição para estado alterado  
@@ -40,11 +38,11 @@ Para implementar o controle do código-fonte, você precisa configurar corretame
   
  Em resposta ao `IVsQueryEditQuerySave2::QueryEditFiles` chamar, o ambiente pode fazer o seguinte:  
   
--   Rejeitar a chamada para alterar, caso em que o editor ou projeto deve permanecer no estado inalterado (limpo).  
+- Rejeitar a chamada para alterar, caso em que o editor ou projeto deve permanecer no estado inalterado (limpo).  
   
--   Indicam que os dados do documento devem ser recarregados. Para um projeto, o ambiente será recarregar os dados para o projeto. Um editor deve recarregar os dados do disco por meio de seu <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementação. Em ambos os casos, o contexto no projeto ou no editor pode ser alterado quando os dados são recarregados.  
+- Indicam que os dados do documento devem ser recarregados. Para um projeto, o ambiente será recarregar os dados para o projeto. Um editor deve recarregar os dados do disco por meio de seu <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementação. Em ambos os casos, o contexto no projeto ou no editor pode ser alterado quando os dados são recarregados.  
   
- É uma tarefa complexa e difícil fazer ajustes apropriados `IVsQueryEditQuerySave2::QueryEditFiles` chamadas em uma base de código existente. Como resultado, essas chamadas devem ser integradas durante a criação do projeto ou no editor.  
+  É uma tarefa complexa e difícil fazer ajustes apropriados `IVsQueryEditQuerySave2::QueryEditFiles` chamadas em uma base de código existente. Como resultado, essas chamadas devem ser integradas durante a criação do projeto ou no editor.  
   
 ## <a name="request-permission-to-save-a-file"></a>Solicitar permissão para salvar um arquivo  
  Antes de um editor ou projeto salva um arquivo, ele deve chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Para arquivos de projeto, essas chamadas são concluídas automaticamente pela solução, que saiba quando salvar um arquivo de projeto. Editores são responsáveis por fazer essas chamadas, a menos que a implementação do editor de `IVsPersistDocData2` usa a função auxiliar <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Se o editor implementa `IVsPersistDocData2` dessa maneira e, em seguida, a chamada para `IVsQueryEditQuerySave2::QuerySaveFile` ou `IVsQueryEditQuerySave2::QuerySaveFiles` é feita para você.  

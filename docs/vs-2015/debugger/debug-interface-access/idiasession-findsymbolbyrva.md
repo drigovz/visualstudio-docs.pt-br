@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Findsymbolbyrva | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSession::findSymbolByRVA method
 ms.assetid: 14fb2903-b771-44d6-b0a8-44e0097c58ce
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a432defaec5785b355b3a3e752d44e722d15338c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d5b9012159e785aebaa2213a286b24e6190c6a5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475500"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740727"
 ---
 # <a name="idiasessionfindsymbolbyrva"></a>IDiaSession::findSymbolByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasession:: Findsymbolbyrva](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findsymbolbyrva).  
-  
 Recupera um tipo de símbolo especificado que contém ou está mais próximo de um endereço relativo virtual (RVA) especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findSymbolByRVA (   
+HRESULT findSymbolByRVA (   
    DWORD        rva,  
    SymTagEnum   symtag,  
    IDiaSymbol** ppSymbol  

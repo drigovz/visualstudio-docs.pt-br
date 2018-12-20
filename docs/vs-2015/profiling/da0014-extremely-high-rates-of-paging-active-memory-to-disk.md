@@ -1,7 +1,7 @@
 ---
 title: 'DA0014: taxas extremamente altas de paginação de memória ativa em disco | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ f1_keywords:
 - vs.performance.rules.DA0014
 ms.assetid: a7fa3749-9191-437a-9331-9d917181e62f
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 158ccc60d356fd83a808ca1a6d74268e53adb4b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba6695b4705a29264f29fa79d23a63062151a62e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475681"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730599"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: taxas extremamente elevadas de paginação de memória ativa em disco
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DA0014: taxas extremamente altas de paginação de memória ativa em disco](https://docs.microsoft.com/visualstudio/profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk).  
-  
 Id da regra | DA0014 |  
 | Categoria | Memória e paginação |  
 | Método de criação de perfil | Todos os |  

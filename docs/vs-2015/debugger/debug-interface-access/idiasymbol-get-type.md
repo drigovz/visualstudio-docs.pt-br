@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_type | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_type method
 ms.assetid: 1c6a4176-dd4e-4c22-8b8f-0e559fc078ba
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 240be23528bc648fe3bfe2f4715aae96fcbcd6d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8c667b4cdf5e6e1c595103e4b713deaad7710aa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473746"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767384"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_type](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-type).  
-  
 Recupera o símbolo que representa o tipo para esse símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_type (   
+HRESULT get_type (   
    IDiaSymbol** pRetVal  
 );  
 ```  

@@ -1,7 +1,7 @@
 ---
 title: Exibição de Funções – Dados de Amostragem de Memória do .NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - Functions view
 ms.assetid: 5d9c6302-2ffd-430e-9535-13ce795f9f7c
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ac8c19c02754d17a8af3b5472ecd580948793962
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfdfbab17538648b816c094409f9396cc5f638b8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473324"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788310"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Exibição de Funções – Dados de Amostragem de Memória do .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de funções – dados de amostragem de memória do .NET](https://docs.microsoft.com/visualstudio/profiling/functions-view-dotnet-memory-sampling-data).  
-  
 A exibição Funções dos dados de criação de perfil de alocação de memória do .NET que foram coletados usando o método de amostragem lista as funções que alocaram a memória durante a execução da criação de perfil e reporta o tamanho e quantidade de alocações.  
   
 |Column|Descrição|  

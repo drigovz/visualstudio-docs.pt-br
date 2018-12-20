@@ -1,7 +1,7 @@
 ---
 title: IDebugContainerField | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: a8bbe061-c382-4fe9-a193-3f7d12216041
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a911fe64f397a3a671787db00877a07f5ed1ccaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: afd33063614430cd51b9a6a7cdb4ec979242943c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464999"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745988"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugContainerField](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcontainerfield).  
-  
 Essa interface representa um símbolo ou um tipo que é um contêiner para outros símbolos ou tipos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDebugContainerField : IDebugField  
+IDebugContainerField : IDebugField  
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  

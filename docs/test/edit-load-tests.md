@@ -1,5 +1,5 @@
 ---
-title: Editar testes de carga no Visual Studio
+title: Editando teste de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a2bc06ed17522eef36841b72859554163068afa6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178407"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048627"
 ---
 # <a name="edit-load-tests"></a>Editar testes de carga
 
 Testes de carga executam testes de desempenho Web ou testes de unidade para simular muitos usuários acessando um servidor ao mesmo tempo. Um teste de carga fornece acesso a dados de estresse e desempenho do aplicativo. Um teste de carga pode ser configurado para emular várias condições de carga, como cargas e tipos de rede.
 
-> [!NOTE]
-> Testes de carga estão disponíveis somente na Enterprise Edition do Visual Studio 2017.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Um teste de carga é definido por *cenários*, *conjuntos de contadores* e *configurações de execução*. A ilustração a seguir explica as diferenças entre [cenários](../test/edit-load-test-scenarios.md), [conjuntos de contadores](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md) e [configurações de execução](../test/load-test-run-settings-properties.md):
 
 ![Arquitetura de teste de carga](../test/media/load_test_editor.png)
+
+## <a name="software-requirements"></a>Requisitos de software
+
+Projetos de teste de carga e de desempenho Web só estão disponíveis na edição Enterprise do Visual Studio.
 
 ## <a name="edit-load-test-scenario-settings"></a>Editar configurações de cenário de teste de carga
 
@@ -49,5 +52,5 @@ Para saber mais, confira [Definir configurações de execução de teste de carg
 
 ## <a name="see-also"></a>Consulte também
 
-- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analisar violações de regra de limite](../test/analyze-threshold-rule-violations-in-load-tests.md)

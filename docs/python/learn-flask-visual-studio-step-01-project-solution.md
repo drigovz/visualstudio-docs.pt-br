@@ -1,6 +1,7 @@
 ---
-title: Tutorial – Saiba mais sobre o Flask no Visual Studio, etapa 1
-description: Um passo a passo das noções básicas do Flask no contexto de projetos do Visual Studio.
+title: Tutorial Aprenda a usar o Flask no Visual Studio, etapa 1, conceitos básicos do Flask
+titleSuffix: ''
+description: Um passo a passo dos conceitos básicos do Flask no contexto de projetos do Visual Studio, incluindo pré-requisitos, Git e ambientes virtuais.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9865e8e6faaac7b0c3af28532223ea2d5c9f7c01
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 0603c1b8dcabc37631c7a52e11cfa964331010d8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029060"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066633"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Introdução à estrutura da Web do Flask no Visual Studio
 
@@ -48,7 +50,7 @@ Os modelos de projeto do Flask são incluídos com todas as versões anteriores 
 
 No momento, não há suporte para o desenvolvimento do Python no Visual Studio para Mac. No Mac e no Linux, use a [Extensão Python no Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
-## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Etapa 1-1: Criar uma solução e um projeto do Visual Studio
+## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Etapa 1-1: Criar um projeto e uma solução do Visual Studio
 
 1. No Visual Studio, selecione **Arquivo** > **Novo** > **Projeto**, pesquise "Projeto Web em Branco do Flask" e selecione o modelo **Projeto Web em Branco do Flask**. O modelo também pode ser encontrado em **Python** > **Web** na lista à esquerda.
 
@@ -59,8 +61,8 @@ No momento, não há suporte para o desenvolvimento do Python no Visual Studio p
     - **Nome**: defina o nome do projeto do Visual Studio como **BasicProject**. Esse nome também é usado para o projeto do Flask.
     - **Local**: especifique um local no qual criar o projeto e a solução do Visual Studio.
     - **Nome da solução**: definido como **LearningFlask**, apropriado para a solução como um contêiner para vários projetos neste tutorial.
-    - **Criar diretório para a solução**: deixar definido (o padrão).
-    - **Criar um novo repositório Git**: escolha essa opção (que é clara por padrão) para que o Visual Studio crie um repositório Git local quando criar a solução. Caso essa opção não seja exibida, execute o instalador do Visual Studio 2017 e adicione o **GIT para Windows** e a **Extensão do GitHub para Visual Studio** à guia **Componentes individuais** em **Ferramentas de código**.
+    - **Criar um diretório para a solução**: Deixe essa opção definida (o padrão).
+    - **Criar um repositório Git**: Selecione essa opção (que está desmarcada por padrão) para que o Visual Studio crie um repositório Git local quando ele criar a solução. Caso essa opção não seja exibida, execute o instalador do Visual Studio 2017 e adicione o **GIT para Windows** e a **Extensão do GitHub para Visual Studio** à guia **Componentes individuais** em **Ferramentas de código**.
 
 1. Após alguns instantes, o Visual Studio fará uma solicitação em uma caixa de diálogo com a mensagem **Este projeto exige pacotes externos** (mostrado abaixo). Essa caixa de diálogo é exibida porque o modelo inclui um arquivo *requirements.txt* que referencia o último pacote do Flask 1.x. Escolha **Mostrar pacotes necessários** para ver as dependências exatas.
 
@@ -102,11 +104,11 @@ Como você marcou a opção **Criar novo repositório Git** na caixa de diálogo
 > [!Tip]
 > Para navegar rapidamente no **Team Explorer**, selecione o cabeçalho (que indica **Alterações** ou **Efetuar Push** nas imagens acima) para ver um menu pop-up das páginas disponíveis.
 
-### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Pergunta: Quais são algumas vantagens de usar o controle do código-fonte a partir do início de um projeto?
+### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Pergunta: Quais são algumas vantagens de usar o controle do código-fonte logo no início de um projeto?
 
-Resposta: Em primeiro lugar, se você usar o controle do código-fonte desde o início, especialmente se também usar um repositório remoto, terá um backup regular em um local fora do projeto. Em vez de manter um projeto apenas em um sistema de arquivos local, o controle do código-fonte também oferece um histórico de alterações completo e facilita a reversão de um único arquivo ou todo o projeto para um estado anterior. O histórico de alterações ajuda a determinar a causa das regressões (falhas de teste). Além disso, o controle do código-fonte é essencial se várias pessoas estiverem trabalhando em um projeto, pois ele gerencia substituições e fornece a resolução de conflitos. Por fim, o controle do código-fonte, que é basicamente uma forma de automação, deixa você preparado para automatizar o gerenciamento de compilações, testes e versões. Esse recurso realmente representa o primeiro passo no uso de DevOps em um projeto e, como os obstáculos para entrar são muito baixos, realmente não há motivos para não usar o controle do código-fonte desde o início.
+Resposta: Em primeiro lugar, o uso do controle do código-fonte desde o início, especialmente se você também usar um repositório remoto, fornece um backup regular em um local fora do projeto. Em vez de manter um projeto apenas em um sistema de arquivos local, o controle do código-fonte também oferece um histórico de alterações completo e facilita a reversão de um único arquivo ou todo o projeto para um estado anterior. O histórico de alterações ajuda a determinar a causa das regressões (falhas de teste). Além disso, o controle do código-fonte é essencial se várias pessoas estiverem trabalhando em um projeto, pois ele gerencia substituições e fornece a resolução de conflitos. Por fim, o controle do código-fonte, que é basicamente uma forma de automação, deixa você preparado para automatizar o gerenciamento de compilações, testes e versões. Esse recurso realmente representa o primeiro passo no uso de DevOps em um projeto e, como os obstáculos para entrar são muito baixos, realmente não há motivos para não usar o controle do código-fonte desde o início.
 
-Para uma discussão mais aprofundada sobre o controle do código-fonte usado como automação, confira [A origem da verdade: a função dos repositórios no DevOps](https://msdn.microsoft.com/magazine/mt763232), um artigo da MSDN Magazine destinado a aplicativos móveis, mas que também se aplica a aplicativos Web.
+Para obter uma discussão mais detalhada sobre o controle do código-fonte como automação, confira [A fonte da verdade: a função dos repositórios no DevOps](https://msdn.microsoft.com/magazine/mt763232), um artigo na MSDN Magazine escrito para aplicativos móveis que se aplica também a aplicativos Web.
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Pergunta: É possível evitar que o Visual Studio confirme automaticamente um novo projeto?
 
@@ -142,9 +144,9 @@ Agora que você configurou o controle do código-fonte para o projeto, é possí
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Pergunta: Por que criar um ambiente virtual?
 
-Resposta: Um ambiente virtual é uma ótima maneira de isolar as dependências exatas do seu aplicativo. Esse isolamento evita conflitos em um ambiente global do Python e auxilia nos testes e na colaboração. Com o tempo, à medida que desenvolver um aplicativo, invariavelmente, você introduzirá muitos pacotes úteis do Python. Mantendo os pacotes em um ambiente virtual específico do projeto, você pode atualizar com facilidade o arquivo *requirements.txt* do projeto que descreve esse ambiente, incluído no controle do código-fonte. Quando o projeto é copiado para outros computadores, incluindo servidores de build, servidores de implantação e outros computadores de desenvolvimento, é fácil recriar o ambiente usando apenas o *requirements.txt* (é por isso que o ambiente não precisa estar no controle do código-fonte). Para obter mais informações, confira [Usar ambientes virtuais](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
+Resposta: Um ambiente virtual é uma ótima maneira de isolar as dependências exatas do aplicativo. Esse isolamento evita conflitos em um ambiente global do Python e auxilia nos testes e na colaboração. Com o tempo, à medida que desenvolver um aplicativo, invariavelmente, você introduzirá muitos pacotes úteis do Python. Mantendo os pacotes em um ambiente virtual específico do projeto, você pode atualizar com facilidade o arquivo *requirements.txt* do projeto que descreve esse ambiente, incluído no controle do código-fonte. Quando o projeto é copiado para outros computadores, incluindo servidores de build, servidores de implantação e outros computadores de desenvolvimento, é fácil recriar o ambiente usando apenas o *requirements.txt* (é por isso que o ambiente não precisa estar no controle do código-fonte). Para obter mais informações, confira [Usar ambientes virtuais](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
-### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Pergunta: Como faço para remover um ambiente virtual que já está confirmado no controle do código-fonte?
+### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Pergunta: Como fazer para remover um ambiente virtual que já está confirmado no controle do código-fonte?
 
 Resposta: Primeiro, edite o arquivo *.gitignore* para excluir a pasta: localize a seção ao final com o comentário `# Python Tools for Visual Studio (PTVS)` e adicione uma nova linha à pasta do ambiente virtual, como `/BasicProject/env`. (Como o Visual Studio não mostra o arquivo no **Gerenciador de Soluções**, abra-o diretamente usando o comando de menu **Arquivo** > **Abrir** > **Arquivo**. Abra também o arquivo no **Team Explorer**: na página **Configurações**, selecione **Configurações do Repositório**, vá para a seção **Arquivos Ignorar e de Atributos** e, em seguida, selecione o link **Editar** ao lado de **.gitignore**.)
 
@@ -192,11 +194,11 @@ Em segundo lugar, abra uma janela Comando, navegue para a pasta, como *BasicProj
 
 ### <a name="question-what-is-the-purpose-of-the-name-argument-to-the-flask-class"></a>Pergunta: Qual é a finalidade do argumento __name__ para a classe do Flask?
 
-Resposta: o argumento é o nome do módulo ou do pacote do aplicativo e informa ao Flask onde procurar modelos, arquivos estáticos e outros recursos que pertencem ao aplicativo. Para aplicativos contidos em um único módulo, `__name__` é sempre o valor adequado. Também é importante para as extensões que precisam de informações de depuração. Para obter mais informações, e outros argumentos, confira a [documentação de classes do Flask](http://flask.pocoo.org/docs/1.0/api/#flask.Flask) (flask.pocoo.org).
+Resposta: O argumento é o nome do módulo ou do pacote do aplicativo e informa ao Flask em que local procurar modelos, arquivos estáticos e outros recursos que pertencem ao aplicativo. Para aplicativos contidos em um único módulo, `__name__` é sempre o valor adequado. Também é importante para as extensões que precisam de informações de depuração. Para obter mais informações, e outros argumentos, confira a [documentação de classes do Flask](http://flask.pocoo.org/docs/1.0/api/#flask.Flask) (flask.pocoo.org).
 
 ### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>Pergunta: Uma função pode ter mais de um decorador de rota?
 
-Resposta: sim, será possível usar quantos decoradores você quiser se a mesma função servir para várias rotas. Por exemplo, para usar a função `hello` para "/" e "/hello", use o seguinte código:
+Resposta: Sim, é possível usar quantos decoradores você desejar se a mesma função fornece várias rotas. Por exemplo, para usar a função `hello` para "/" e "/hello", use o seguinte código:
 
 ```python
 @app.route('/')
@@ -210,7 +212,7 @@ def hello():
 
 ### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>Pergunta: Como o Flask trabalha com rotas de URL de variável e parâmetros de consulta?
 
-Resposta: em uma rota, marque qualquer variável com `<variable_name>`, e o Flask passará a variável para a função usando um argumento nomeado. A variável pode fazer parte do caminho da URL ou em um parâmetro de consulta. Por exemplo, uma rota no formato de `'/hello/<name>` gera um argumento de cadeia de caracteres chamado `name` para a função e o uso de `?message=<msg>` na rota analisa o valor fornecido para o parâmetro de consulta "message=" e o passa para a função como `msg`:
+Resposta: Em uma rota, marque qualquer variável com `<variable_name>`, e o Flask passará a variável para a função usando um argumento nomeado. A variável pode fazer parte do caminho da URL ou em um parâmetro de consulta. Por exemplo, uma rota no formato de `'/hello/<name>` gera um argumento de cadeia de caracteres chamado `name` para a função e o uso de `?message=<msg>` na rota analisa o valor fornecido para o parâmetro de consulta "message=" e o passa para a função como `msg`:
 
 ```python
 @app.route('/hello/<name>?message=<msg>')
@@ -222,7 +224,7 @@ Para alterar o tipo, insira `int`, `float`, `path` à frente da variável (que a
 
 Os parâmetros de consulta também estão disponíveis por meio da propriedade `request.args`, especificamente por meio do método `request.args.get`. Para obter mais informações, confira [O objeto Request](http://flask.pocoo.org/docs/1.0/quickstart/#the-request-object) na documentação do Flask.
 
-### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Pergunta: O Visual Studio pode gerar um arquivo requirements.txt a partir de um ambiente virtual depois de instalar outros pacotes?
+### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Pergunta: O Visual Studio pode gerar um arquivo requirements.txt com base em um ambiente virtual depois de instalar outros pacotes?
 
 Resposta: Sim. Expanda o nó **Ambientes do Python**, clique com o botão direito do mouse no ambiente virtual e escolha o comando **Gerar requirements.txt**. É recomendável usar esse comando periodicamente conforme você modifica o ambiente e confirma as alterações em *requirements.txt* no controle do código-fonte, juntamente com outras alterações de código que dependem desse ambiente. Se você configurar a integração contínua em um servidor de compilação, deverá gerar o arquivo e confirmar as alterações sempre que modificar o ambiente.
 

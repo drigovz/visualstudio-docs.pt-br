@@ -1,7 +1,7 @@
 ---
 title: Depuração no Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,21 +20,18 @@ helpviewer_keywords:
 - debugger
 ms.assetid: 590f152d-31e2-4e13-b808-a1b13e421483
 caps.latest.revision: 55
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 73c87560e6ce238877088def248afe9d8ce42103
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c13e71a0daceabf7ee53a7c1746a82c97af55c98
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473748"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734778"
 ---
 # <a name="debugging-in-visual-studio"></a>Depurando no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [depuração no Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour).
-
 O depurador do Visual Studio ajuda você a observar o comportamento em tempo de execução do seu programa e localizar problemas. O depurador funciona com todas as linguagens de programação do Visual Studio e com as bibliotecas associadas. Com o depurador, você pode interromper a execução do programa para examinar o código, avaliar e editar as variáveis, exibir registros, ver as instruções criadas pelo código-fonte e exibir o espaço de memória usado pelo aplicativo.  
   
  Para obter uma introdução rápida a depuração e diagnóstico no Visual Studio, consulte [depurar, analisar e diagnosticar](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).  

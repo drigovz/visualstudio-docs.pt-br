@@ -1,7 +1,7 @@
 ---
 title: Comparando propriedades e itens | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ff56531eea960523cfa7fad7275dfdf20d0cf9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9d42cc8fb4e5ba0783ad24aedc0edf7a323db4d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878577"
 ---
 # <a name="comparing-properties-and-items"></a>Comparando propriedades e itens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [comparando propriedades e itens](https://docs.microsoft.com/visualstudio/msbuild/comparing-properties-and-items).  
-  
   
 Itens e propriedades do MSBuild são usados para passar informações para tarefas, avaliar condições e armazenar os valores que podem ser referenciadas em todo o arquivo de projeto.  
   
@@ -92,27 +90,27 @@ Itens e propriedades do MSBuild são usados para passar informações para taref
 ## <a name="property-and-item-evaluation-order"></a>Ordem de avaliação de itens e propriedades  
  Durante a fase de avaliação de um build, os arquivos importados são incorporados ao build na ordem em que são exibidos. As propriedades e os itens são definidos em três passos na seguinte ordem:  
   
--   As propriedades são definidas e modificadas na ordem em que são exibidas.  
+- As propriedades são definidas e modificadas na ordem em que são exibidas.  
   
--   As definições de itens são realizadas e modificadas na ordem em que são exibidas.  
+- As definições de itens são realizadas e modificadas na ordem em que são exibidas.  
   
--   Os itens são definidos e modificados na ordem em que são exibidos.  
+- Os itens são definidos e modificados na ordem em que são exibidos.  
   
- Durante a fase de execução de um build, as propriedades e os itens definidos dentro dos destinos são avaliados juntamente em uma única fase na ordem na qual são exibidos.  
+  Durante a fase de execução de um build, as propriedades e os itens definidos dentro dos destinos são avaliados juntamente em uma única fase na ordem na qual são exibidos.  
   
- No entanto, essa não é a história completa. Quando uma propriedade, definição de item ou o item é definido, seu valor é avaliado. O avaliador de expressão expande a cadeia de caracteres que especifica o valor. A expansão de cadeia de caracteres depende da fase do build. Abaixo, há uma ordem de avaliação de itens e propriedades mais detalhada:  
+  No entanto, essa não é a história completa. Quando uma propriedade, definição de item ou o item é definido, seu valor é avaliado. O avaliador de expressão expande a cadeia de caracteres que especifica o valor. A expansão de cadeia de caracteres depende da fase do build. Abaixo, há uma ordem de avaliação de itens e propriedades mais detalhada:  
   
--   Durante a fase de avaliação de um build:  
+- Durante a fase de avaliação de um build:  
   
-    -   As propriedades são definidas e modificadas na ordem em que são exibidas. As funções de propriedade são executadas. Os valores da propriedade na forma $(PropertyName) são expandidos dentro de expressões. O valor da propriedade é definido como a expressão expandida.  
+  -   As propriedades são definidas e modificadas na ordem em que são exibidas. As funções de propriedade são executadas. Os valores da propriedade na forma $(PropertyName) são expandidos dentro de expressões. O valor da propriedade é definido como a expressão expandida.  
   
-    -   As definições de itens são realizadas e modificadas na ordem em que são exibidas. As funções da propriedade já foram expandidas dentro das expressões. Os valores de metadados são definidos como as expressões expandidas.  
+  -   As definições de itens são realizadas e modificadas na ordem em que são exibidas. As funções da propriedade já foram expandidas dentro das expressões. Os valores de metadados são definidos como as expressões expandidas.  
   
-    -   Os tipos de item são definidos e modificados na ordem em que são exibidos. Os valores de item na forma @(ItemType) são expandidos. As transformações de item também são expandidas. As funções e valores de propriedade já foram expandidos dentro das expressões. Os valores da lista de itens e de metadados são definidos como as expressões expandidas.  
+  -   Os tipos de item são definidos e modificados na ordem em que são exibidos. Os valores de item na forma @(ItemType) são expandidos. As transformações de item também são expandidas. As funções e valores de propriedade já foram expandidos dentro das expressões. Os valores da lista de itens e de metadados são definidos como as expressões expandidas.  
   
--   Durante a fase de execução de um build:  
+- Durante a fase de execução de um build:  
   
-    -   As propriedades e os itens definidos dentro dos destinos são avaliados em conjunto na ordem em que são exibidos. As funções de propriedade são executadas e os valores da propriedade são expandidos dentro das expressões. Os valores e as transformações de item também são expandidas. Os valores da propriedade, de tipo de item e de metadados são definidos como as expressões expandidas.  
+  -   As propriedades e os itens definidos dentro dos destinos são avaliados em conjunto na ordem em que são exibidos. As funções de propriedade são executadas e os valores da propriedade são expandidos dentro das expressões. Os valores e as transformações de item também são expandidas. Os valores da propriedade, de tipo de item e de metadados são definidos como as expressões expandidas.  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Efeitos sutis da ordem de avaliação  
  Na fase de avaliação de um build, a avaliação da propriedade precede a avaliação do item. No entanto, as propriedades podem ter valores que parecem depender de valores de item. Considere o script a seguir.  

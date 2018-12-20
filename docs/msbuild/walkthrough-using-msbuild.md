@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e862322995c7cda4a7080ee387c7a080437748
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178512"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880143"
 ---
 # <a name="walkthrough-use-msbuild"></a>Passo a passo: usar o MSBuild
 O MSBuild é a plataforma de build da Microsoft e do Visual Studio. Estas instruções passo a passo apresentam os componentes essenciais do MSBuild e mostram como gravar, manipular e depurar projetos do MSBuild. Você aprenderá a:
@@ -116,7 +116,7 @@ A tarefa Message é uma das muitas tarefas fornecidas com o MSBuild. Para obter 
 A tarefa Message usa o valor de cadeia de caracteres do atributo Text como entrada e o exibe no dispositivo de saída. O destino HelloWorld executa a tarefa Message duas vezes: primeiro para exibir "Hello" e, em seguida, para exibir "World".
 
 ## <a name="build-the-target"></a>Compilar o destino
- Execute o MSBuild no **Prompt de Comando do Visual Studio** para compilar o destino HelloWorld definido acima. Use a opção de linha de comando /target ou /t para selecionar o destino.
+ Execute o MSBuild no **Prompt de Comando do Visual Studio** para compilar o destino HelloWorld definido acima. Use a opção de linha de comando -target ou -t para selecionar o destino.
 
 > [!NOTE]
 >  Vamos nos referir ao **Prompt de Comando do Visual Studio** como a **janela Comando** nas seções a seguir.
@@ -127,10 +127,10 @@ A tarefa Message usa o valor de cadeia de caracteres do atributo Text como entra
 
 2.  Na janela Comando, acesse a pasta que contém o arquivo de projeto, a qual, neste caso, é *D:\BuildApp\BuildApp*.
 
-3.  Execute msbuild com a opção de comando /t:HelloWorld. Com isso, o destino HelloWorld é selecionado e compilado:
+3.  Execute msbuild com a opção de comando -t:HelloWorld. Com isso, o destino HelloWorld é selecionado e compilado:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Examine a saída na **janela Comando**. Você deverá ver as duas linhas "Hello" e "World":
@@ -200,7 +200,7 @@ $(PropertyName)
 3.  Na **janela Comando**, digite e execute esta linha:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Examine o resultado. Você deverá ver estas duas linhas (a sua versão do .NET Framework poderá ser diferente):
@@ -231,14 +231,14 @@ $(PropertyName)
  Você pode referenciar variáveis de ambiente em arquivos de projeto da mesma maneira que as propriedades de build. Por exemplo, para usar a variável de ambiente PATH em seu arquivo de projeto, use $(Path). Se o projeto contiver uma definição de propriedade que tem o mesmo nome que uma variável de ambiente, a propriedade no projeto substituirá o valor da variável de ambiente. Para saber mais, confira [Como usar variáveis de ambiente em um build](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="set-properties-from-the-command-line"></a>Definir propriedades na linha de comando
- As propriedades podem ser definidas na linha de comando usando a opção de linha de comando /property ou /p. Os valores das propriedades recebidos da linha de comando substituem os valores das propriedades definidos no arquivo de projeto e nas variáveis de ambiente.
+ As propriedades podem ser definidas na linha de comando usando a opção de linha de comando -property ou -p. Os valores das propriedades recebidos da linha de comando substituem os valores das propriedades definidos no arquivo de projeto e nas variáveis de ambiente.
 
 #### <a name="to-set-a-property-value-from-the-command-line"></a>Para definir um valor da propriedade da linha de comando
 
 1.  Na **janela Comando**, digite e execute esta linha:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release
+    msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
 2.  Examine o resultado. Você deverá ver esta linha:
@@ -267,7 +267,7 @@ O MSBuild cria a propriedade Configuration e atribui a ela o valor "Release".
 3.  Na **janela Comando**, digite e execute esta linha:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Examine o resultado. Você deverá ver esta linha:
@@ -329,7 +329,7 @@ Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).
 3.  Na **janela Comando**, digite e execute esta linha:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Examine o resultado. Você deverá ver esta linha longa:
@@ -361,7 +361,7 @@ Altere a tarefa Message para usar retornos de carro e alimentações de linha (%
 3.  Na **janela Comando**, digite e execute esta linha:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Examine o resultado. Você deverá ver estas linhas:
@@ -441,7 +441,7 @@ não excluiria o arquivo *Form1.cs*, que foi adicionado no elemento do item ante
 4.  Na **janela Comando**, digite e execute esta linha:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 5.  Examine o resultado. Você deverá ver esta linha:
@@ -482,7 +482,7 @@ não excluiria o arquivo *Form1.cs*, que foi adicionado no elemento do item ante
 3.  Na **janela Comando**, digite e execute esta linha:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Examine o resultado. Você deverá ver estas linhas:
@@ -512,7 +512,7 @@ Observe que "Compile.DependentUpon" aparece várias vezes. O uso de metadados co
 3.  Na **janela Comando**, digite e execute esta linha:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Examine o resultado. Você deverá ver estas linhas:
@@ -550,7 +550,7 @@ Por exemplo, uma lista de itens dos arquivos de origem pode ser transformada em 
 3.  Na **janela Comando**, digite e execute esta linha:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Examine o resultado. Você deverá ver esta linha:

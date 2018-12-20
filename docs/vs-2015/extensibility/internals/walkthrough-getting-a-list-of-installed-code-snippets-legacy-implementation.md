@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Obtendo uma lista de instalados (implementação herdada) de trechos de código | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eb5aea9af28ec455688176fa1d0f3a4e45acc038
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8d132de9773614b966b6fe3a7ae84392fba4f35
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461043"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759972"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Passo a passo: obtendo uma lista de snippets de código instalados (implementação herdada)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [obtendo uma lista de instalados trechos de código (herdado)](https://docs.microsoft.com/visualstudio/extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation).  
-  
 Um trecho de código é um trecho de código que pode ser inserido no buffer de origem com um comando de menu (que permite escolher entre uma lista de trechos de código instalado) ou pelo selecionando um atalho de trecho de código de uma lista de conclusão do IntelliSense.  
   
  O <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> método obtém todos os trechos de código para um GUID de idioma específico. Os atalhos para os trechos de código podem ser inseridos em uma lista de conclusão do IntelliSense.  

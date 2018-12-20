@@ -1,8 +1,9 @@
 ---
-title: Instalar os certificados necessários para instalação offline do Visual Studio | Microsoft Docs
+title: Instalar os certificados necessários para uma instalação offline
 description: Saiba como instalar certificados para instalação offline do Visual Studio.
 ms.date: 08/30/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70147dac62ad0aaa59a1c6823b321afe54b2d3a7
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: b2d171082e43e822faa1a9fdf9a88ff4de0b7bff
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139118"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158886"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalar os certificados necessários para instalação offline do Visual Studio
 
@@ -35,7 +36,7 @@ Há três opções para instalar ou atualizar certificados em um ambiente offlin
 
 Ao criar um layout de rede, os certificados necessários são baixados para a pasta Certificados. Depois, você pode instalar manualmente os certificados clicando duas vezes em cada um dos arquivos de certificado e clicando no assistente Gerenciador de Certificados. Se for solicitado a fornecer uma senha, deixe-a em branco.
 
-**Atualização**: no caso do Visual Studio 2017 versão 15.8 versão prévia 2 ou posterior, é possível instalar manualmente os certificados; para isso, basta clicar com o botão direito do mouse em cada um dos arquivos de certificado, selecionar Instalar Certificado e clicar no assistente do Gerenciador de Certificados.
+**Atualização**: Para o Visual Studio 2017 versão 15.8 Preview 2 ou posterior, instale os certificados manualmente clicando com o botão direito do mouse em cada um dos arquivos de certificado, selecionando Instalar Certificado e, em seguida, clicando no assistente do Gerenciador de Certificados.
 
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>Opção 2 – Distribuir certificados raiz confiáveis em um ambiente empresarial
 
@@ -62,7 +63,7 @@ Se estiver usando o script de implantação do Visual Studio em um ambiente offl
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
-   **Atualização**: no caso do Visual Studio 2017 versão 15.8 versão prévia 2 ou posterior, crie o arquivo em lotes com os seguintes comandos:
+   **Atualização**: Para o Visual Studio 2017 versão 15.8 Preview 2 ou posterior, crie o arquivo em lotes com os seguintes comandos:
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestSignCertificates.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -79,22 +80,22 @@ Se estiver usando o script de implantação do Visual Studio em um ambiente offl
 Os três arquivos .P12 nesta pasta contêm um certificado intermediário e um certificado raiz. A maioria dos sistemas atuais com o Windows Update têm esses certificados já instalados.
 
 * **ManifestSignCertificates.p12** contém:
-    * Certificado intermediário: **ACP de Assinatura de Código da Microsoft 2011**
+    * Certificado intermediário: **PCA de Assinatura de Código da Microsoft 2011**
         * Não obrigatório. Melhora o desempenho em alguns cenários, se estiver presente.
     * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft 2011**
         * Necessário nos sistemas Windows 7 Service Pack 1 que não têm as atualizações mais recentes do Windows instaladas.
 * **ManifestCounterSignCertificates.p12** contém:
-    * Certificado intermediário: **ACP do carimbo de data/hora da Microsoft 2010**
+    * Certificado intermediário: **PCA de Carimbo de Data/Hora da Microsoft 2010**
         * Não obrigatório. Melhora o desempenho em alguns cenários, se estiver presente.
     * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft 2010**
         * Necessário para os sistemas Windows 7 Service Pack 1 que não têm as atualizações mais recentes do Windows instaladas.
 * **Vs_installer_opc.SignCertificates.p12** contém:
-    * Certificado intermediário: **ACP de Assinatura de Código da Microsoft**
+    * Certificado intermediário: **PCA de Assinatura de Código da Microsoft**
         * Necessário para todos os sistemas. Observe que os sistemas com todas as atualizações aplicadas pelo Windows Update podem não ter esse certificado.
     * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft**
         * Necessário. Esse certificado é fornecido com os sistemas que executam o Windows 7 ou posterior.
 
-**Atualização**: no caso do Visual Studio 2017 versão 15.8 versão prévia 2 ou posterior, o Instalador do Visual Studio exige apenas a instalação dos certificados raiz no sistema.
+**Atualização**: Para o Visual Studio 2017 versão 15.8 Preview 2 ou posterior, o Instalador do Visual Studio exige apenas a instalação dos certificados raiz no sistema.
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>Por que os certificados da pasta Certificados não são instalados automaticamente?
 

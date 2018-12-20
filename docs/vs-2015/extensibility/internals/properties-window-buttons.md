@@ -1,7 +1,7 @@
 ---
 title: Botões da janela Propriedades | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 579f0a287e171872fccebbd251fae618ba615692
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb6a3802e135c02b4ccc7b27aca69b2afd2a9f70
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467801"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789844"
 ---
 # <a name="properties-window-buttons"></a>Botões da janela Propriedades
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [botões da janela propriedades](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-buttons).  
-  
 Dependendo da linguagem de desenvolvimento e o tipo de produto, determinados botões são exibidos por padrão na barra de ferramentas para o **propriedades** janela. Em todos os casos, o **categorizado**, **Alphabetized**, **propriedades**, e **páginas de propriedade** botões são exibidos. No Visual c# e Visual Basic, o **eventos** botão também é exibido. Em determinados projetos do Visual C++, o **mensagens do VC + +** e o **VC substitui** botões são exibidos. Botões adicionais podem ser exibidas para outros tipos de projeto. Para obter mais informações sobre os botões na **propriedades** janela, consulte [janela propriedades](../../ide/reference/properties-window.md).  
   
 ## <a name="implementation-of-properties-window-buttons"></a>Implementação de botões da janela Propriedades  

@@ -1,7 +1,7 @@
 ---
 title: IDebugSettingsCallback2::GetMetricString | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: ecc875a2-8ac6-444c-a839-5191a780fd6b
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 154ea9ed61c7cb4103fde6b7650170954c22973b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9682abf2be79be794cbb6baf36e35e55c196d6aa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475531"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797137"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugSettingsCallback2::GetMetricString](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsettingscallback2-getmetricstring).  
-  
 Recupera a cadeia de caracteres do valor da métrica dada seu nome.  
   
 ## <a name="syntax"></a>Sintaxe  

@@ -1,5 +1,5 @@
 ---
-title: Dados do IntelliTrace no Visual Studio
+title: Dados do IntelliTrace
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 30a6cb4f2d39e16a9ff5334bc0676707e4c65dce
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cad52f39fc45e5561e2a87f12c804cb0d445d96a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321145"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064751"
 ---
-# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Como coletar dados do IntelliTrace para ajudar a depurar problemas difíceis
+# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Como: Coletar dados do IntelliTrace para ajudar a depurar problemas difíceis
 
 Você pode configurar o adaptador de dados de diagnóstico para que o IntelliTrace colete informações de rastreamento de diagnóstico específicas no Visual Studio. Os testes podem usar esse adaptador, o teste pode coletar eventos de diagnóstico significativos para o aplicativo que um desenvolvedor poderá usar depois para rastrear o código para encontrar a causa de um bug. O adaptador de dados de diagnóstico para IntelliTrace pode ser usado em testes manuais ou automatizados.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > IntelliTrace só funciona em um aplicativo gravado usando-se código gerenciado. Se estiver testando um aplicativo Web que use um navegador como um cliente, você não deverá habilitar o IntelliTrace para o cliente nas configurações de teste porque nenhum código gerenciado está disponível para rastreamento. Nesse caso, você talvez queira configurar um ambiente e coletar remotamente os dados do IntelliTrace em seu servidor Web.
@@ -32,7 +34,7 @@ Os dados do IntelliTrace são armazenados em um arquivo com uma extensão *.iTra
 > [!NOTE]
 > O adaptador de dados de diagnóstico do IntelliTrace não cria um arquivo do IntelliTrace quando um passo de teste é bem-sucedido. Ele salva um arquivo somente em um caso de teste com falha ou quando você envia um bug.
 
- Os dados coletados no arquivo do IntelliTrace aumentam a produtividade de depuração reduzindo o tempo necessário para reproduzir e diagnosticar um erro no código. Além disso, como você pode compartilhar o arquivo do IntelliTrace com outra pessoa que pode replicar a sessão local no computador, ele reduz a probabilidade de um bug não ser reproduzível.
+Os dados coletados no arquivo do IntelliTrace aumentam a produtividade de depuração reduzindo o tempo necessário para reproduzir e diagnosticar um erro no código. Além disso, como você pode compartilhar o arquivo do IntelliTrace com outra pessoa que pode replicar a sessão local no computador, ele reduz a probabilidade de um bug não ser reproduzível.
 
 > [!NOTE]
 > Se você habilitar o IntelliTrace em suas configurações de teste, coletar dados de cobertura de código não funcionará.
@@ -40,7 +42,7 @@ Os dados do IntelliTrace são armazenados em um arquivo com uma extensão *.iTra
 > [!WARNING]
 > O adaptador de dados de diagnóstico do IntelliTrace funciona com a instrumentação de um processo gerenciado, que deverá ser realizado depois que os testes da execução de teste forem carregados. Se o processo que você deseja monitorar já tiver começado, nenhum arquivo do IntelliTrace será coletado porque o processo já está em execução. Para evitar isso, certifique-se de que o processo esteja parado antes dos testes serem carregados. Inicie o processo depois que os testes forem carregados ou o primeiro teste for iniciado.
 
- O procedimento a seguir descreve como configurar os dados do IntelliTrace que você deseja coletar. Essas etapas se aplicam ao editor de configuração no Microsoft Test Manager e à caixa de diálogo Configurações de Teste no Visual Studio.
+O procedimento a seguir descreve como configurar os dados do IntelliTrace que você deseja coletar. Essas etapas se aplicam ao editor de configuração no Microsoft Test Manager e à caixa de diálogo Configurações de Teste no Visual Studio.
 
 > [!NOTE]
 > A conta de usuário do agente de teste usada para coletar dados do IntelliTrace deve ser um membro do grupo Administradores. Para obter mais informações, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
@@ -73,7 +75,7 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
 
 5.  Escolha a guia **Geral**. Selecione **Apenas eventos do IntelliTrace** para registrar eventos de diagnóstico significativos que tenham impacto mínimo sobre o desempenho durante o teste.
 
-     -ou-
+     - ou -
 
      Selecione **Eventos do IntelliTrace e informações de chamada** para registrar eventos de diagnóstico e rastreamento no nível de método que mostram informações de chamada. Esse nível de rastreamento pode afetar o desempenho quando você executa os testes.
 
@@ -81,7 +83,7 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
 
 7.  Escolha a guia **Módulos**. Selecione **Coletar dados de todos os módulos, exceto os seguintes** e use **Adicionar** para adicionar à lista de módulos e **Remover** para remover um módulo. Essa opção permite incluir todos os módulos em execução no sistema, exceto os módulos que você especifica.
 
-     -ou-
+     - ou -
 
      Selecione **Coletar dados apenas dos módulos a seguir** e use **Adicionar** para adicionar à lista de módulos e **Remover** para remover um módulo. Essa opção permite especificar exatamente quais módulos você deseja.
 
@@ -90,7 +92,7 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
 
 8.  Escolha a guia **Processos**. Selecione **Coletar dados de todos os processos, exceto os seguintes** e use **Adicionar** para adicionar à lista de processos e **Remover** para remover um processo. Essa opção permite incluir todos os processos em execução no sistema, exceto os processos que você especifica.
 
-     -ou-
+     - ou -
 
      Selecione **Coletar dados apenas nos processos especificados** e use **Adicionar** para adicionar à lista de processos e **Remover** para remover um processo. Essa opção permite especificar exatamente quais processos você deseja.
 
@@ -101,7 +103,7 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
 11. (Opcional) Escolha a guia **Avançado**. Em seguida, escolha a seta ao lado de **Quantidade de espaço máximo em disco para registro** e selecione o tamanho máximo que você deseja habilitar para o arquivo do IntelliTrace a ser usado.
 
     > [!NOTE]
-    > Se você aumentar o tamanho do registro, um problema de tempo limite poderá ocorrer quando você salvar esse registro com seus resultados de análise. Para saber mais sobre como aumentar os valores de tempo limite para adaptadores de dados de diagnóstico, confira [Como evitar que tempos limites sejam atingidos para adaptadores de dados de diagnóstico](../test/how-to-prevent-time-outs-for-diagnostic-data-adapters.md).
+    > Se você aumentar o tamanho do registro, um problema de tempo limite poderá ocorrer quando você salvar esse registro com seus resultados de análise.
 
 12. Se estiver usando o Microsoft Test Manager, escolha **Salvar**. Se estiver usando o Visual Studio, escolha **OK**. As configurações do IntelliTrace agora estão definidas e salvas em suas configurações de teste.
 

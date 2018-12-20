@@ -1,7 +1,7 @@
 ---
 title: IDebugReturnValueEvent2::GetReturnValue | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: 86c50d5a-6df6-4798-818a-c587a8741f90
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3961985440c3d187ef08ea4e13f5f184779fd18
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 02d39238308455003a2ea92bed7205c64ba3d014
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461579"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800244"
 ---
 # <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugReturnValueEvent2::GetReturnValue](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue).  
-  
 Obtém o valor retornado no passo a passo de ou em uma função.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetReturnValue (   
+HRESULT GetReturnValue (   
    IDebugProperty2** ppReturnValue  
 );  
 ```  
   
 ```csharp  
-int GetReturnValue (   
+int GetReturnValue (   
    out IDebugProperty2 ppReturnValue  
 );  
 ```  

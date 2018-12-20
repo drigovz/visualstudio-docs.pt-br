@@ -1,7 +1,7 @@
 ---
 title: Habilitar testes de IU codificados dos controles | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,31 +13,29 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 316c8e80a1ccfd95ea83114092604e1542292a05
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5ab2ca3e0f7d8f7006177f89c6850ce9882681a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848534"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar testes de IU codificado dos controles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [habilitar codificado testes de IU de controles](https://docs.microsoft.com/visualstudio/test/enable-coded-ui-testing-of-your-controls).  
-  
 É possível testar o controle mais facilmente se você implementar o suporte à estrutura de teste de IU codificado. É possível adicionar níveis crescentes de suporte incrementalmente. Você pode começar com o suporte ao registro e reprodução e à validação de propriedade. Você poderá, então, usar isso como base para permitir que o construtor de teste de IU codificado reconheça as propriedades personalizadas do controle e fornecer classes personalizadas para acessar as propriedades do código gerado. Você também pode ajudar o construtor de teste de IU codificado a capturar ações da maneira mais próxima à intenção da ação que está sendo registrada.  
   
  **Neste tópico:**  
   
-1.  [Suporte ao registro e reprodução, e validação de propriedade com a implementação de acessibilidade](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
+1. [Suporte ao registro e reprodução, e validação de propriedade com a implementação de acessibilidade](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
   
-2.  [Suporte à validação de propriedade personalizada com a implementação de um provedor de propriedade](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
+2. [Suporte à validação de propriedade personalizada com a implementação de um provedor de propriedade](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
   
-3.  [Suporte à geração de código com a implementação de uma classe para propriedades personalizadas de acesso](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
+3. [Suporte à geração de código com a implementação de uma classe para propriedades personalizadas de acesso](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
   
-4.  [Suporte a ações com reconhecimento de intenção com a implementação de um filtro de ação](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
+4. [Suporte a ações com reconhecimento de intenção com a implementação de um filtro de ação](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
   
- ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
+   ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
   
 ##  <a name="recordandplayback"></a> Suporte ao registro, reprodução e validação de propriedade com a implementação de acessibilidade  
  O construtor de teste de IU codificado captura informações sobre os controles que ele encontra durante uma gravação e, em seguida, gera código para repetir essa sessão. Se o controle não der suporte à acessibilidade, o teste de IU codificado capturará ações (como cliques do mouse) usando coordenadas da tela. Quando o teste é executado, o código gerado emitirá os cliques do mouse nas mesmas coordenadas de tela. Se o controle for exibido em um local diferente na tela quando o teste for reproduzido, o código gerado falhará ao executar essa ação em seu controle. Isso poderá resultar em falhas se o teste for reproduzido em diferentes configurações de tela, em diferentes ambientes ou após alterações no layout da interface do usuário.  

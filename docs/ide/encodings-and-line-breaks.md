@@ -1,5 +1,5 @@
 ---
-title: Caracteres de quebra de linha e codificação do Visual Studio
+title: Codificando caracteres de quebra de linha
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,26 +19,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6a07dceb796ad697653657c27ab3ff16b3433ac
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7acf048b112a88b73c614e8c383722c6e2adb051
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117089"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052003"
 ---
 # <a name="encodings-and-line-endings"></a>Codificações e términos de linha
 
 Os seguintes caracteres são interpretados como quebras de linha no Visual Studio:
 
-- CR LF: retorno de carro + alimentação de linha, caracteres Unicode 000D + 000A
+- CR LF: Retorno de carro + alimentação de linha, caracteres Unicode 000D + 000A
 
-- LF: alimentação de linha, caractere Unicode 000A
+- LF: Alimentação de linha, caractere Unicode 000A
 
-- NEL: próxima linha, caractere Unicode 0085
+- NEL: Próxima linha, caractere Unicode 0085
 
-- LS: separador de linha, caractere Unicode 2028
+- LS: Separador de linha, caractere Unicode 2028
 
-- PS: separador de parágrafo, caractere Unicode 2029
+- PS: Separador de parágrafo, caractere Unicode 2029
 
 O texto copiado de outros aplicativos mantém a codificação original e os caracteres de quebra de linha. Por exemplo, quando você copia texto do Bloco de notas e o cola em um arquivo de texto no Visual Studio, o texto tem as mesmas configurações que ele tinha no Bloco de notas.
 

@@ -1,5 +1,5 @@
 ---
-title: Recursos do editor de códigos no Visual Studio
+title: Funcionalidades do editor de códigos
 ms.date: 02/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,16 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 397ed4ea94aa54c8f8d31fc6ff0d08da16a93479
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: ca203b0c27906d1f861689953ca55280f73fa894
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626847"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160108"
 ---
 # <a name="features-of-the-code-editor"></a>Recursos do editor de código
 
-O editor do Visual Studio fornece muitos recursos que facilitam escrever e gerenciar seu código e texto. Você pode expandir e recolher blocos de código diferentes usando a estrutura de tópicos. Você pode aprender mais sobre o código através do IntelliSense, do **Pesquisador de Objetos** e da Hierarquia de Chamada. Você pode localizar o código usando recursos como **Navegar Para**, **Ir para Definição** e **Localizar Todas as Referências**. Você pode inserir blocos de código com trechos de código e pode gerar código usando recursos como o **Gerar do uso**. Se você nunca usou o editor do Visual Studio, consulte [Editar o código](https://visualstudio.microsoft.com/vs/features/ide/) para obter uma visão geral rápida.
+O editor do Visual Studio fornece muitos recursos que facilitam escrever e gerenciar seu código e texto. Você pode expandir e recolher blocos de código diferentes usando a estrutura de tópicos. Você pode aprender mais sobre o código através do IntelliSense, do **Pesquisador de Objetos** e da Hierarquia de Chamada. Você pode localizar o código usando recursos como **Navegar Para**, **Ir para Definição** e **Localizar Todas as Referências**. Você pode inserir blocos de código com snippets de código e pode gerar código usando recursos como o **Gerar do uso**. Se você nunca usou o editor do Visual Studio, consulte [Editar o código](https://visualstudio.microsoft.com/vs/features/ide/) para obter uma visão geral rápida.
+
+> [!NOTE]
+> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Editor de código-fonte (Visual Studio para Mac)](/visualstudio/mac/source-editor).
 
 Você pode exibir seu código de várias maneiras diferentes. Por padrão, o **Gerenciador de Soluções** mostra seu código organizado por arquivos. Você pode clicar na guia **Modo de Exibição de Classe** na parte inferior da janela para exibir o código organizado por classes.
 
@@ -87,7 +90,8 @@ Para obter mais informações sobre como personalizar o editor, consulte [Person
 
 ## <a name="see-also"></a>Consulte também
 
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Editor de código-fonte (Visual Studio para Mac)](/visualstudio/mac/source-editor)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Introdução ao C++ no Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Introdução ao C# e ao ASP.NET no Visual Studio](../ide/tutorial-csharp-aspnet-core.md)
 - [Introdução ao Python no Visual Studio](../ide/quickstart-python.md)

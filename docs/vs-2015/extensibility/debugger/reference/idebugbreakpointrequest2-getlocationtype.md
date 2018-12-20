@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointRequest2::GetLocationType | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: b6d14c59-d3aa-48ff-8278-f6b5bba9c2f3
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f769ff699e6884f56af9793cf8d7396289ae1b38
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d1ff9d9b953c10b6f7ca5496523a7f10c63197a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466533"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774569"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugBreakpointRequest2::GetLocationType](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype).  
-  
 Obtém o tipo de local de ponto de interrupção dessa solicitação de ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetLocationType(   
+HRESULT GetLocationType(   
    BP_LOCATION_TYPE* pBPLocationType  
 );  
 ```  
   
 ```csharp  
-int GetLocationType(   
+int GetLocationType(   
    out enum_BP_LOCATION_TYPE pBPLocationType  
 );  
 ```  

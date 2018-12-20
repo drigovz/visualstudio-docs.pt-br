@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Usar APIs do criador de perfil | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - performance tools, walkthroughs
 ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7eb2d4c3acfc8f2a98de1364b1f98aa451abaed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ab545d338defb3876145c8ac648574484fbf89a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461913"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749077"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Instruções passo a passo: usando APIs do criador de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: usando APIs do Profiler](https://docs.microsoft.com/visualstudio/profiling/walkthrough-using-profiler-apis).  
-  
 O passo a passo usa um aplicativo C# para demonstrar como usar as APIs de Ferramentas de criação de perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Você usará as APIs do criador de perfil para limitar a quantidade de dados coletados durante a criação de perfil de instrumentação.  
   
  As etapas neste passo a passo geralmente se aplicam a um aplicativo C/C++. Para cada idioma, você precisará configurar o ambiente de compilação adequadamente.  
@@ -126,19 +124,19 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Para coletar e exibir dados no IDE do Visual Studio  
   
-1.  Abra o IDE do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. No menu **Analisar**, aponte para **Criador de Perfil** e, em seguida, selecione **Nova Sessão de Desempenho**  
+1. Abra o IDE do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. No menu **Analisar**, aponte para **Criador de Perfil** e, em seguida, selecione **Nova Sessão de Desempenho**  
   
-2.  Adicione o binário compilado à lista **Destinos** na janela **Gerenciador de Desempenho**. Clique com botão direito do mouse em **Destinos** e, em seguida, selecione **Adicionar Binário de Destino**. Localize o binário na caixa de diálogo **Adicionar Binário de Destino** e clique em **Abrir**.  
+2. Adicione o binário compilado à lista **Destinos** na janela **Gerenciador de Desempenho**. Clique com botão direito do mouse em **Destinos** e, em seguida, selecione **Adicionar Binário de Destino**. Localize o binário na caixa de diálogo **Adicionar Binário de Destino** e clique em **Abrir**.  
   
-3.  Selecione **Instrumentação**, na lista **Método**, na barra de ferramentas **Gerenciador de Desempenho**.  
+3. Selecione **Instrumentação**, na lista **Método**, na barra de ferramentas **Gerenciador de Desempenho**.  
   
-4.  Clique em **Iniciar a Criação de Perfil**.  
+4. Clique em **Iniciar a Criação de Perfil**.  
   
-     O criador de perfil instrumentará e executará o binário e criará um arquivo de relatório de desempenho. O arquivo de relatório de desempenho aparecerá no nó **Relatórios** do **Gerenciador de Desempenho**.  
+    O criador de perfil instrumentará e executará o binário e criará um arquivo de relatório de desempenho. O arquivo de relatório de desempenho aparecerá no nó **Relatórios** do **Gerenciador de Desempenho**.  
   
-5.  Abra o arquivo de relatório de desempenho resultante.  
+5. Abra o arquivo de relatório de desempenho resultante.  
   
- Por padrão, quando o criador de perfil for iniciado, ele coletará dados no nível global. O código a seguir no início do programa desativa a criação de perfil global.  
+   Por padrão, quando o criador de perfil for iniciado, ele coletará dados no nível global. O código a seguir no início do programa desativa a criação de perfil global.  
   
 ```  
 DataCollection.StopProfile(  

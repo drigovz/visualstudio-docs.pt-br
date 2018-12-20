@@ -1,7 +1,7 @@
 ---
 title: Elemento IDSymbol | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3ab239c85fbf3e9ebc83825750b78a1e6fdbf7f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7b4855fbdf2e395e6f309692fe531762e3ada7f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462209"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817562"
 ---
 # <a name="idsymbol-element"></a>Elemento IDSymbol
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento IDSymbol](https://docs.microsoft.com/visualstudio/extensibility/idsymbol-element).  
-  
 O `IDSymbol` elemento contém a ID do par GUID:ID que representa um menu, um grupo ou um comando. O GUID é proveniente do pai `GuidSymbol` elemento. O `IDSymbol` elemento tem um `name` que fornece um nome amigável para a ID, que está contida no atributo de `value` atributo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -43,11 +41,11 @@ O `IDSymbol` elemento contém a ID do par GUID:ID que representa um menu, um gru
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|name|Necessário. Nome do símbolo de ID.|  
-|Valor |Necessário. Valor numérico da ID do símbolo de ID.|  
+|name|Obrigatório. Nome do símbolo de ID.|  
+|Valor |Obrigatório. Valor numérico da ID do símbolo de ID.|  
   
 ### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   

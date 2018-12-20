@@ -1,7 +1,7 @@
 ---
 title: PROVIDER_PROCESS_DATA | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,35 +17,33 @@ ms.assetid: ec2362ed-4a0c-4a09-9d66-8ff04e4f41ee
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fcc79cf8925b43cbd564170f6664fbf2b5dd327d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1424abab94e8551d8980997e5d56502fc395e39
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465304"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733630"
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [PROVIDER_PROCESS_DATA](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/provider-process-data).  
-  
 Essa estrutura fornece informações sobre processos em execução em um computador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-typedef struct tagPROVIDER_PROCESS_DATA {  
-   PROVIDER_FIELDS    Fields;  
-   PROGRAM_NODE_ARRAY ProgramNodes;  
-   BOOL               fIsDebuggerPresent;  
-} PROVIDER_PROCESS_DATA;  
+typedef struct tagPROVIDER_PROCESS_DATA {  
+   PROVIDER_FIELDS    Fields;  
+   PROGRAM_NODE_ARRAY ProgramNodes;  
+   BOOL               fIsDebuggerPresent;  
+} PROVIDER_PROCESS_DATA;  
 ```  
   
 ```csharp  
-public struct PROVIDER_PROCESS_DATA {  
-   public uint               Fields;  
-   public PROGRAM_NODE_ARRAY ProgramNodes;  
-   public int                fIsDebuggerPresent;  
+public struct PROVIDER_PROCESS_DATA {  
+   public uint               Fields;  
+   public PROGRAM_NODE_ARRAY ProgramNodes;  
+   public int                fIsDebuggerPresent;  
 }  
 ```  
   

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 966f9dd422137b2966deb23a7c29e328a21957a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4510aa820e0f82c2fcd73ccb83ed0f8120a1399
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635262"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296028"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Passo a passo: Chamando o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores
   Este passo a passo demonstra como chamar o modelo de objeto de cliente do SharePoint de uma extensão para o **conexões do SharePoint** nó no **Gerenciador de servidores**. Para obter mais informações sobre como usar o modelo de objeto de cliente do SharePoint, consulte [chamam os modelos de objeto SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -57,11 +57,11 @@ Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir
 ## <a name="create-the-projects"></a>Crie os projetos
  Para concluir este passo a passo, você deve criar dois projetos:  
   
--   Um projeto VSIX para criar o pacote VSIX para implantar o **Gerenciador de servidores** extensão.  
+- Um projeto VSIX para criar o pacote VSIX para implantar o **Gerenciador de servidores** extensão.  
   
--   Um projeto de biblioteca de classe que implementa o **Gerenciador de servidores** extensão.  
+- Um projeto de biblioteca de classe que implementa o **Gerenciador de servidores** extensão.  
   
- Inicie o passo a passo Criando os projetos.  
+  Inicie o passo a passo Criando os projetos.  
   
 #### <a name="to-create-the-vsix-project"></a>Para criar o projeto do VSIX  
   
@@ -195,7 +195,7 @@ Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir
   
 1.  Na **Gerenciador de soluções**, no **WebPartNode** projeto, abra **vsixmanifest** arquivo no editor de manifesto.  
   
-     O arquivo vsixmanifest é a base para o arquivo Extension vsixmanifest que exigem todos os pacotes VSIX. Para obter mais informações sobre esse arquivo, consulte [1.0 referência do esquema de extensão do VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     O arquivo vsixmanifest é a base para o arquivo Extension vsixmanifest que exigem todos os pacotes VSIX. Para obter mais informações sobre esse arquivo, consulte [1.0 referência do esquema de extensão do VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  No **nome do produto** , digite **Web parte Galeria de nó do Gerenciador de servidores**.  
   
@@ -208,7 +208,7 @@ Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir
 6.  No **adicionar novo ativo** na caixa de **tipo** , escolha **mefcomponent**.  
   
     > [!NOTE]  
-    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 7.  No **fonte** , escolha **um projeto na solução atual**.  
   

@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugFields::Next | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 22c177a2-af81-4234-812b-f9b47be245a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 10406175a7254be0548678827afd41a4625e70c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 737cb311f87a8012da03bc2b0dfbb65a0d172047
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467577"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797878"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugFields::Next](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugfields-next).  
-  
 Esse método retorna o próximo conjunto de elementos da enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  

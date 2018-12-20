@@ -1,7 +1,7 @@
 ---
 title: Estado de VSPackage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,39 +16,39 @@ helpviewer_keywords:
 ms.assetid: 6056a9ea-e7a8-481c-9fc8-340229fa12d9
 caps.latest.revision: 25
 manager: douge
-ms.openlocfilehash: 2891e3f8f9022aad3d16245ae1553a1a9fec3ec7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0364d7190244217bef50b50b60462d69e1fc145c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475968"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895204"
 ---
 # <a name="vspackage-state"></a>Estado de VSPackage
 Muitos fatores determinam o conjunto de valores persistentes ou o estado de um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aplicativo.  
   
--   Projetos têm propriedades do projeto e configuração.  
+- Projetos têm propriedades do projeto e configuração.  
   
--   As soluções têm propriedades.  
+- As soluções têm propriedades.  
   
--   Configurações do usuário determinam o tamanho e posição das janelas de documentos, janelas de ferramentas, estado de encaixe e atalhos de teclado.  
+- Configurações do usuário determinam o tamanho e posição das janelas de documentos, janelas de ferramentas, estado de encaixe e atalhos de teclado.  
   
--   Aplicativos podem ter opções que o usuário define.  
+- Aplicativos podem ter opções que o usuário define.  
   
--   Objetos que cria um aplicativo podem ter suas próprias propriedades.  
+- Objetos que cria um aplicativo podem ter suas próprias propriedades.  
   
- Aqui estão algumas das maneiras que um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o estado do aplicativo pode ser gerenciado:  
+  Aqui estão algumas das maneiras que um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o estado do aplicativo pode ser gerenciado:  
   
--   Por meio das páginas de propriedades do projeto e solução.  
+- Por meio das páginas de propriedades do projeto e solução.  
   
--   Por meio de **Import and Export Settings Wizard**, que permite que um usuário mover as configurações de um computador para outro.  
+- Por meio de **Import and Export Settings Wizard**, que permite que um usuário mover as configurações de um computador para outro.  
   
--   Por meio de **opções** caixa de diálogo que inclui opções relacionadas aos aplicativos.  
+- Por meio de **opções** caixa de diálogo que inclui opções relacionadas aos aplicativos.  
   
--   Por meio de **propriedades** janela, que expõe as propriedades de objetos.  
+- Por meio de **propriedades** janela, que expõe as propriedades de objetos.  
   
--   Por meio da automação. Um aplicativo pode acessar propriedades de VSPackage e objetos que têm sido expostas para a automação.  
+- Por meio da automação. Um aplicativo pode acessar propriedades de VSPackage e objetos que têm sido expostas para a automação.  
   
- O estado do aplicativo de base é vários mecanismos de persistência que permitem que o estado do aplicativo ser salvo e restaurado.  
+  O estado do aplicativo de base é vários mecanismos de persistência que permitem que o estado do aplicativo ser salvo e restaurado.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Suporte para persistência de estado](../misc/support-for-state-persistence.md)  

@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol interface
 ms.assetid: 01ad328a-736c-4933-a9f8-c2ded19ddd8c
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7e85e0d2deb60b505345dfe609f83efe38c638a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2bd52443d4150b371bbaa1865978db9a72c5c616
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475257"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734141"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSymbol](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol).  
-  
 Descreve as propriedades de uma instância de símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDiaSymbol : IUnknown  
+IDiaSymbol : IUnknown  
 ```  
   
 ## <a name="methods-in-alphabetical-order"></a>Métodos em ordem alfabética  

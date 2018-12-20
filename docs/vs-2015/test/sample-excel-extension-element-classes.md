@@ -1,7 +1,7 @@
 ---
 title: 'Extensão do Excel de amostra: classes de elemento | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0babaf7e387f9255dc8a60958483ba9db66cc879
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb5085bdd9a79330f7c4f73fb39993af63eb0a78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472853"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811940"
 ---
 # <a name="sample-excel-extension-element-classes"></a>Extensão do Excel de amostra: classes de elemento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [extensão de exemplo do Excel: Classes de elemento](https://docs.microsoft.com/visualstudio/test/sample-excel-extension-element-classes).  
-  
 A extensão usa classes derivadas de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> e representam o controle de Planilha e o controle de Célula no [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)].  
   
  O elemento base para essa extensão é o `ExcelElement`. As classes `ExcelWorksheetElement` e `ExcelCellElement` herdam desse elemento  
@@ -54,7 +52,7 @@ A extensão usa classes derivadas de <xref:Microsoft.VisualStudio.TestTools.UITe
 ## <a name="utilities-and-excelutilities-classes"></a>Classes Utilities e ExcelUtilities  
  A classe `ExcelUtilities` interna fornece alguns valores de constantes, tal como o nome da tecnologia e um método que determina se o identificador de janela fornecido representa uma planilha do Excel.  
   
- A classe `Utilities` tem métodos auxiliares que retornam uma variedade de informações sobre a interface do usuário. Alguns métodos usam chamadas diretas em DLLs do sistema externo, como **USER32.DLL** e **OLEACC.DLL**, para obter os identificadores de janela da interface do usuário **.**  
+ A classe `Utilities` tem métodos auxiliares que retornam uma variedade de informações sobre a interface do usuário. Alguns métodos usam chamadas diretas em DLLs do sistema externo, como **USER32.DLL** e **OLEACC.DLL**, para obter os identificadores de janela da interface do usuário<strong>.</strong>  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   

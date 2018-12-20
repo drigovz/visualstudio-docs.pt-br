@@ -1,7 +1,7 @@
 ---
 title: Copiar (Captura programática) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30ec235a-0abb-44b9-8852-61bc9e67ce22
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 171dd04a4f2c933272a7addc787554f611b1449f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca2d6afc3a5693896c17e49ccb07b5152d906d43
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467556"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776142"
 ---
 # <a name="copy-programmatic-capture"></a>Copiar (captura programática)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [copiar (Captura programática)](https://docs.microsoft.com/visualstudio/debugger/graphics/copy-programmatic-capture).  
-  
 Copia o conteúdo do arquivo de log (. vsglog) de elementos gráficos ativos em um novo arquivo.  
   
 ## <a name="syntax"></a>Sintaxe  

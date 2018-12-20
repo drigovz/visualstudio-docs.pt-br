@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f6c23ea3ad48c361c12912926e0642f35f853a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7f2710693c7dae7c4238f9f31fbe8065d6864a19
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283451"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672958"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Adicionar uma extensão de protocolo de idioma do servidor
 
@@ -132,10 +132,10 @@ O LSP não inclui a especificação sobre como fornecer a colorização do texto
 
 4. Criar uma *pkgdef* arquivo e adicione uma linha semelhante a esta:
 
-  ```xml
-  [$RootKey$\TextMate\Repositories]
-  "MyLang"="$PackageFolder$\Grammars"
-  ```
+   ```xml
+   [$RootKey$\TextMate\Repositories]
+   "MyLang"="$PackageFolder$\Grammars"
+   ```
 
 5. Clique com botão direito nos arquivos e selecione **propriedades**. Alterar o **construir** ação a ser **conteúdo** e o **incluir em VSIX** propriedade como true.
 
@@ -199,7 +199,7 @@ namespace MockLanguageExtension
 
         public async Task OnLoadedAsync()
         {
-            await StartAsync?.InvokeAsync(this, EventArgs.Empty);
+            await StartAsync.InvokeAsync(this, EventArgs.Empty);
         }
 
         public async Task OnServerInitializeFailedAsync(Exception e)
@@ -295,40 +295,40 @@ Siga as etapas abaixo para adicionar suporte para as configurações para sua ex
 
 1. Adicione um arquivo JSON (por exemplo, *MockLanguageExtensionSettings.json*) em seu projeto que contém as configurações e seus valores padrão. Por exemplo:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": -1
-  }
-  ```
+   }
+   ```
 2. Clique com botão direito no arquivo JSON e selecione **propriedades**. Alterar o **Build** ação como "Content" e o "incluir em VSIX' propriedade como true.
 
 3. Implementar ConfigurationSections e retornar a lista de prefixos para as configurações definidas no arquivo JSON (no Visual Studio Code, ele seria mapeado para o nome da seção de configuração em Package. JSON):
 
-  ```csharp
-  public IEnumerable<string> ConfigurationSections
-  {
+   ```csharp
+   public IEnumerable<string> ConfigurationSections
+   {
       get
       {
           yield return "foo";
       }
-  }
-  ```
+   }
+   ```
 4. Adicionar um arquivo. pkgdef ao projeto (Adicionar novo arquivo de texto e altere a extensão de arquivo para. pkgdef). O arquivo pkgdef deve conter essas informações:
 
-  ```xml
+   ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-  ```
+   ```
 
 5. Clique com o botão direito no arquivo. pkgdef e selecione **propriedades**. Alterar o **construir** ação a ser **conteúdo** e o **incluir em VSIX** propriedade como true.
 
 6. Abra o *vsixmanifest* arquivo e adicione um ativo na **ativo** guia:
 
-  ![Editar o ativo de vspackage](media/lsp-add-vspackage-asset.png)
+   ![Editar o ativo de vspackage](media/lsp-add-vspackage-asset.png)
 
-  * **Tipo**: VSPackage
-  * **Origem**: o arquivo no sistema de arquivos
-  * **Caminho**: [caminho para seu *pkgdef* arquivo]
+   * **Tipo**: VSPackage
+   * **Origem**: o arquivo no sistema de arquivos
+   * **Caminho**: [caminho para seu *pkgdef* arquivo]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Usuário de edição de configurações para um espaço de trabalho
 
@@ -336,16 +336,16 @@ Siga as etapas abaixo para adicionar suporte para as configurações para sua ex
 2. Usuário adiciona um arquivo na *. VS* pasta chamada *Vsworkspacesettings*.
 3. O usuário adiciona uma linha para o *Vsworkspacesettings* arquivo para uma configuração de servidor fornece. Por exemplo:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": 10
-  }
-  ```
-### <a name="enabling-diagnostics-tracing"></a>Habilitando o rastreamento de diagnóstico
-Rastreamento de diagnóstico pode ser habilitado para todas as mensagens entre o cliente e servidor, que pode ser útil ao depurar problemas de saída.  Para habilitar o rastreamento de diagnóstico, faça o seguinte:
+   }
+   ```
+   ### <a name="enabling-diagnostics-tracing"></a>Habilitando o rastreamento de diagnóstico
+   Rastreamento de diagnóstico pode ser habilitado para todas as mensagens entre o cliente e servidor, que pode ser útil ao depurar problemas de saída.  Para habilitar o rastreamento de diagnóstico, faça o seguinte:
 
-1. Abra ou crie o arquivo de configurações do espaço de trabalho *Vsworkspacesettings* (consulte "Usuário de edição de configurações para um espaço de trabalho").
-2. Adicione a seguinte linha no arquivo de configurações de json:
+4. Abra ou crie o arquivo de configurações do espaço de trabalho *Vsworkspacesettings* (consulte "Usuário de edição de configurações para um espaço de trabalho").
+5. Adicione a seguinte linha no arquivo de configurações de json:
 
 ```json
 {

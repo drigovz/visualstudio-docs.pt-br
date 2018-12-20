@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b632177ba941ad0e5ddb5700ae430573fd817d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 0bce0be0f6c7953c44601edd090b1e1e7d3b6f6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758447"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832974"
 ---
 # <a name="delay-activity-designer"></a>Atrasar o designer de atividades
 
@@ -38,7 +38,7 @@ O **atraso** designer de atividade pode ser arrastado da **caixa de ferramentas*
 A tabela a seguir mostra o <xref:System.Activities.Statements.Delay> propriedades e descreve como eles são usados no designer. Essas propriedades podem ser editadas na grade de propriedade e alguns deles podem ser editados na superfície de Designer de fluxo de trabalho.
 
 |Nome da Propriedade|Necessária|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|O nome amigável de atividade de <xref:System.Activities.Statements.Delay> . O padrão é atraso. Embora o <xref:System.Activities.Activity.DisplayName%2A> valor não é estritamente necessário, ele é uma prática recomendada usar um.|
 |<xref:System.Activities.Statements.Delay.Duration%2A>|verdadeiro|A quantidade de tempo para atrasar o fluxo de trabalho. Essa propriedade é definida na grade de propriedade. Digite qualquer um <xref:System.TimeSpan> literal no 00:00 de formato: 00 ou uma expressão do Visual Basic para especificar a quantidade de tempo.|
 

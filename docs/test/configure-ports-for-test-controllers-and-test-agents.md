@@ -1,5 +1,5 @@
 ---
-title: Configurar portas para controladores e agentes de teste no Visual Studio
+title: Configurar portas para controladores e agentes de teste
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,20 +15,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9f41e372f6c75e10ebf4d66fcd68eb4652b02f0f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 12aacb0ff6530e1ee21bd57639a7e84bdb65ea9d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297591"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068575"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Configurar portas para controladores e agentes de teste
 
 Você pode alterar as portas de entrada padrão usadas pelo controlador de teste, pelo agente de teste e pelo cliente. Isso poderá ser necessário se você estiver tentando usar o controlador de teste, o agente de teste ou o cliente com qualquer outro software que esteja em conflito com as configurações de porta. Outro motivo para alterar as portas é devido à restrição de firewall entre o controlador de teste e o cliente. Nesse caso, você talvez queira configurar manualmente a porta para acomodar a habilitação dela para um firewall de forma que o controlador de teste possa enviar resultados para o cliente.
 
- A ilustração a seguir mostra os pontos de conexão entre o controlador de teste, o agente de teste e o cliente. Ela descreve quais portas são usadas em conexões de entrada e saída, bem como restrições de segurança usadas nessas portas.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- ![Portas e segurança do controlador de teste e do agente de teste](../test/media/test-controller-agent-firewall.png)
+A ilustração a seguir mostra os pontos de conexão entre o controlador de teste, o agente de teste e o cliente. Ela descreve quais portas são usadas em conexões de entrada e saída, bem como restrições de segurança usadas nessas portas.
+
+![Portas e segurança do controlador de teste e do agente de teste](../test/media/test-controller-agent-firewall.png)
 
 ## <a name="incoming-connections"></a>Conexões de entrada
 

@@ -1,7 +1,7 @@
 ---
 title: BPRESI_FIELDS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 659e8c7af33c37c3be877e10d425688975913164
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 166ce76f427362601d4b0c4010d4814c3e165031
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466711"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735783"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [BPRESI_FIELDS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bpresi-fields).  
-  
 Especifica as informações a serem recuperados sobre a resolução bem-sucedida de um ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_BPRESI_FIELDS {   
+enum enum_BPRESI_FIELDS {   
    BPRESI_BPRESLOCATION = 0x0001,  
    BPRESI_PROGRAM       = 0x0002,  
    BPRESI_THREAD        = 0x0004,  
@@ -44,7 +42,7 @@ typedef DWORD BPRESI_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_BPRESI_FIELDS {   
+public enum enum_BPRESI_FIELDS {   
    BPRESI_BPRESLOCATION = 0x0001,  
    BPRESI_PROGRAM       = 0x0002,  
    BPRESI_THREAD        = 0x0004,  

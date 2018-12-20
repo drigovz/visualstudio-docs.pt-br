@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba9cd561c80aec7a0b1b47b98f75ff8046d8a1b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081303"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880670"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Usar ativos 3D em seu jogo ou aplicativo
 
@@ -41,7 +41,7 @@ Antes que seja possível implantar os ativos 3D como parte da criação, o Visua
 2.  Em **Arquivos de Personalização de Build Disponíveis**, marque as caixas de seleção que correspondem aos tipos de ativo que você deseja usar no projeto, conforme descrito na seguinte tabela:
 
     |Tipo de ativo|Nome da personalização de compilação|
-    |----------------|------------------------------|
+    |----------------| - |
     |Texturas e imagens|**ImageContentTask(.targets, .props)**|
     |Modelos 3D|**MeshContentTask(.targets, .props)**|
     |Sombreadores|**ShaderGraphContentTask(.targets, .props)**|
@@ -67,7 +67,7 @@ Antes que seja possível implantar os ativos 3D como parte da criação, o Visua
 Veja a seguir os três tipos de item de pipeline de conteúdo e seus tipos de arquivo de origem e de saída associados.
 
 |Tipo de item|Tipos de arquivo de origem|Formato do arquivo de saída|
-|---------------|-----------------------|------------------------|
+|---------------| - | - |
 |**Pipeline de conteúdo da imagem**|Formato PNG (*.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface (*.dds*)<br /><br /> Graphics Interchange Format (*.gif*)<br /><br /> Bitmap (*.bmp*, *.dib*)<br /><br /> Formato TIFF (*.tif*, *.tiff*)<br /><br /> Formato TGA (*.tga*)|DirectDraw Surface (*.dds*)|
 |**Pipeline de conteúdo da malha**|Arquivo de Intercâmbio AutoDesk FBX (*.fbx*)<br /><br /> Arquivo Collada DAE (*.dae*)<br /><br /> Arquivo Wavefront OBJ (*.obj*)|Arquivo de malha 3D (*.cmo*)|
 |**Pipeline de conteúdo do sombreador**|Visual Shader Graph (*.dgsl*)|Saída do Sombreador Compilado (*.cso*)|

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Help Viewer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0ea278b49ba47c81f691d2a20f5ae9f7fa87e579
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8c8803394c4f6d31db187384304f8fbb1db4468
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820090"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Microsoft Help Viewer](https://docs.microsoft.com/visualstudio/ide/microsoft-help-viewer).  
-  
 Você pode instalar e exibir o conteúdo de vários produtos e tecnologias em seu computador local usando o Microsoft Help Viewer.  
   
 > [!WARNING]
@@ -65,21 +63,21 @@ Você pode instalar e exibir o conteúdo de vários produtos e tecnologias em se
   
  A barra de ferramentas na janela do Help Viewer contém os seguintes botões:  
   
--   O botão **Mostrar Tópico em Conteúdo** mostra a localização do tópico na guia **Conteúdo**.  
+- O botão **Mostrar Tópico em Conteúdo** mostra a localização do tópico na guia **Conteúdo**.  
   
--   O botão **Adicionar aos Favoritos** adiciona o tópico ativo à guia **Favoritos**.  
+- O botão **Adicionar aos Favoritos** adiciona o tópico ativo à guia **Favoritos**.  
   
--   O botão **Localizar no Tópico** realça o texto de pesquisa no tópico ativo.  
+- O botão **Localizar no Tópico** realça o texto de pesquisa no tópico ativo.  
   
--   O botão **Imprimir** imprime ou mostra uma visualização do tópico ativo.  
+- O botão **Imprimir** imprime ou mostra uma visualização do tópico ativo.  
   
--   O botão **Opções do Visualizador** exibe configurações como o tamanho em que o texto é exibido, quantos resultados da pesquisa retornar, quantos tópicos mostrar no histórico e se é verificado se há atualizações online.  
+- O botão **Opções do Visualizador** exibe configurações como o tamanho em que o texto é exibido, quantos resultados da pesquisa retornar, quantos tópicos mostrar no histórico e se é verificado se há atualizações online.  
   
--   O botão **Gerenciar Conteúdo** torna a guia **Gerenciar Conteúdo** ativa.  
+- O botão **Gerenciar Conteúdo** torna a guia **Gerenciar Conteúdo** ativa.  
   
--   O triângulo pequeno abre uma lista de guias, incluindo guias de tópico e a guia **Gerenciar Conteúdo**. Você pode tornar qualquer uma dessas guias ativas escolhendo-as.  
+- O triângulo pequeno abre uma lista de guias, incluindo guias de tópico e a guia **Gerenciar Conteúdo**. Você pode tornar qualquer uma dessas guias ativas escolhendo-as.  
   
- A área inferior da janela do Help Viewer contém informações sobre o tamanho total de downloads pendentes, a quantidade de espaço em disco necessária que eles exigem e a quantidade de espaço em disco disponível. Essa área também contém informações sobre os erros que podem ter ocorrido e um link que você pode escolher para atualizar o conteúdo instalado, se houver atualizações disponíveis.  
+  A área inferior da janela do Help Viewer contém informações sobre o tamanho total de downloads pendentes, a quantidade de espaço em disco necessária que eles exigem e a quantidade de espaço em disco disponível. Essa área também contém informações sobre os erros que podem ter ocorrido e um link que você pode escolher para atualizar o conteúdo instalado, se houver atualizações disponíveis.  
   
 ## <a name="see-also"></a>Consulte também  
  [Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md)   

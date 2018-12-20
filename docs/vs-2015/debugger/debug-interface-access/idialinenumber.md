@@ -1,7 +1,7 @@
 ---
 title: IDiaLineNumber | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaLineNumber interface
 ms.assetid: 1071f7d0-1f8c-4384-933f-c49c7eb930bd
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31f1972302b26ff746da8543f251fda14979073c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08ab059a5489a648927677bc95a37bdbabc92440
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462685"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777793"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaLineNumber](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idialinenumber).  
-  
 Acessa as informações que descreve o processo de mapeamento de um bloco de bytes de texto da imagem para um número de linha do arquivo de origem.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDiaLineNumber : IUnknown  
+IDiaLineNumber : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  

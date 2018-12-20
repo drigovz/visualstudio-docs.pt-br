@@ -1,7 +1,7 @@
 ---
 title: 'CA1002: Não expor listas genéricas | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 03435b59381f5127aeb7662df16c11e1e085824d
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: ea5f41484873317a7d7059fa0b67547eb24754af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587293"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811331"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: não expor listas genéricas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1002: não expor listas genéricas](https://docs.microsoft.com/visualstudio/code-quality/ca1002-do-not-expose-generic-lists).
 
 |||
 |-|-|

@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,27 +13,25 @@ dev_langs:
 - C++
 ms.assetid: a073cc45-0c7b-417e-b5fc-a3b08beccdbc
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a980fe569e0485c5df81fc32ee0f7d72e1ff0d2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0709423b184c9541754d8da124306a135728c8ed
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460720"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760879"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaSession::findSymbolsByRVAForAcceleratorPointerTag](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findsymbolsbyrvaforacceleratorpointertag).  
-  
 Dado um valor de marca correspondente, esse método retorna uma enumeração de símbolos que estão contidos em uma função de stub do acelerador pai especificado em um endereço virtual relativo de especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
+HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
    IDiaSymbol*           parent,  
    DWORD                 tagValue,  
    DWORD                 rva,  

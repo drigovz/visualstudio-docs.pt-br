@@ -1,7 +1,7 @@
 ---
 title: Criar uma extensão com uma janela de ferramentas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: afa24a7faceade36cf6b3d19c7e86fb8d6676ba8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 79ba397bf2dee5ae18b727830af87ae57415d885
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461967"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738343"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>Criando uma extensão com uma janela de ferramentas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar uma extensão com uma janela de ferramentas](https://docs.microsoft.com/visualstudio/extensibility/creating-an-extension-with-a-tool-window).  
-  
 Neste procedimento, você aprenderá a usar o modelo de projeto do VSIX e o **janela de ferramenta personalizada** modelo de item para criar uma extensão com uma janela de ferramentas.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  

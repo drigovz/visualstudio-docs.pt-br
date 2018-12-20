@@ -1,5 +1,5 @@
 ---
-title: Usando shims para isolar seu aplicativo para teste de unidade no Visual Studio
+title: Usando shims para isolar seu aplicativo para teste de unidade
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: da8ff01bed6446cc497c41ad21894c70df090efb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b94852b15891566bdfc38dd3fd8de9e706f38737
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380825"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065604"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usar shims para isolar seu aplicativo de outros assemblies para teste de unidade
 
@@ -32,7 +32,7 @@ Para obter uma visão geral e diretrizes de início rápido, confira [Isolar o c
 > [!NOTE]
 > Projetos do .NET Standard não têm suporte.
 
-## <a name="example-the-y2k-bug"></a>Exemplo: o bug Y2K
+## <a name="example-the-y2k-bug"></a>Exemplo: O bug do milênio
 
 Vamos considerar um método que gera uma exceção em 1º de janeiro de 2000:
 
@@ -55,7 +55,7 @@ O teste abaixo mostra como usar o tipo de shim `ShimDateTime` para fornecer uma 
 ```csharp
 //unit test code
 // create a ShimsContext cleans up shims
-using (ShimsContext.Create()
+using (ShimsContext.Create()) {
     // hook delegate to the shim method to redirect DateTime.Now
     // to return January 1st of 2000
     ShimDateTime.NowGet = () => new DateTime(2000, 1, 1);
@@ -428,14 +428,13 @@ Cada tipo de shim gerado contém uma instância da interface `IShimBehavior` pel
 
 Se o comportamento não tiver sido definido explicitamente, ele usará a instância retornada pela propriedade estática `ShimsBehaviors.Current`. Por padrão, essa propriedade retorna um comportamento que gerou uma exceção `NotImplementedException`.
 
-Esse comportamento pode ser alterado a qualquer momento definindo a propriedade `InstanceBehavior` em qualquer instância do shim. Por exemplo, o seguinte trecho altera o shim de um comportamento que não faz nada ou retorna o valor padrão do tipo de retorno, ou seja, padrão(T):
+Esse comportamento pode ser alterado a qualquer momento definindo a propriedade `InstanceBehavior` em qualquer instância do shim. Por exemplo, o seguinte snippet altera o shim de um comportamento que não faz nada ou retorna o valor padrão do tipo de retorno, ou seja, padrão(T):
 
 ```csharp
 // unit test code
 var shim = new ShimMyClass();
 //return default(T) or do nothing
 shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
-
 ```
 
 O comportamento também pode ser alterado globalmente para todas as instâncias com shim para as quais a propriedade `InstanceBehavior` não foi definida explicitamente definindo a propriedade estática `ShimsBehaviors.Current`:
@@ -512,5 +511,5 @@ Os shims não podem ser usados em todos os tipos da biblioteca de classes base d
 ## <a name="see-also"></a>Consulte também
 
 - [Isolar o código em teste com o Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
-- [Blog de Peter Provost: Visual Studio 2012 shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) (Shims do Visual Studio 2012)
-- [Vídeo (1h16): testando códigos que não podem ser testados com elementos fictícios no Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+- [Blog de Peter Provost: Shims do Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
+- [Vídeo (1h16): Testando códigos que não podem ser testados com elementos fictícios no Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)

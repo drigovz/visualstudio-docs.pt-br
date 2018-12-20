@@ -1,7 +1,7 @@
 ---
 title: IDebugPropertyField::GetPropertySetter | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 744d76fd-2bcc-4917-a040-ce4cc714ef61
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d3e586b55b72c294eca0cc45fc8af76e4db6e02
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da0984b8c9ec8aa751ea6876f312356124ab2432
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466365"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801583"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPropertyField::GetPropertySetter](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugpropertyfield-getpropertysetter).  
-  
 Obtém o método que define a propriedade.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetPropertySetter(   
+HRESULT GetPropertySetter(   
    IDebugMethodField** ppField  
 );  
 ```  

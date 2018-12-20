@@ -1,7 +1,7 @@
 ---
 title: Propriedades de formas de imagem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,39 +17,37 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 395d042bd5152d741d5188ed87faec801cd17cb8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ea239fcdef2c9b2e5eccc82fd162e0b940bdf44
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475384"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219959"
 ---
 # <a name="properties-of-image-shapes"></a>Propriedades de formas de imagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [propriedades de formas de imagem](https://docs.microsoft.com/visualstudio/modeling/properties-of-image-shapes).  
-  
 Você pode usar formas de imagem para especificar como as classes de domínio são exibidos em um designer gerado. Definir uma forma de imagem, definindo o `Image` propriedade da classe para um arquivo de imagem predefinidos. Há suporte para os seguintes formatos:  
   
--   .gif  
+- .gif  
   
--   .jpg  
+- .jpg  
   
--   . JPEG  
+- . JPEG  
   
--   .bmp  
+- .bmp  
   
--   .wmf  
+- .wmf  
   
--   . emf  
+- . emf  
   
--   .png  
+- .png  
   
- Por padrão, os arquivos de recurso de designer, como arquivos de imagem, estão localizados na **recursos**pasta o **Dsl** projeto.  
+  Por padrão, os arquivos de recurso de designer, como arquivos de imagem, estão localizados na **recursos** pasta o **Dsl** projeto.  
   
- Para obter mais informações, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [personalizando e estendendo uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+  Para obter mais informações, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [personalizando e estendendo uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
- Formas de imagem têm as propriedades que são listadas na tabela a seguir.  
+  Formas de imagem têm as propriedades que são listadas na tabela a seguir.  
   
 |Propriedade|Descrição|Padrão|  
 |--------------|-----------------|-------------|  

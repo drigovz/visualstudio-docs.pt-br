@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 180d7e4878ca0c9493c949eac055713212c964de
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: f32f429186aa0c4a657503ca9744bf570d624f25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869503"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>Definir tipos personalizados de item de projeto do SharePoint
   Defina um novo tipo de item de projeto do SharePoint quando você deseja criar um novo tipo de item de projeto do SharePoint. Por exemplo, o Visual Studio não inclui itens de projeto do SharePoint para adicionar campos ou ações personalizadas para um site do SharePoint. Você pode definir seus próprios tipos de itens de projeto do SharePoint para a criação de campos, ações personalizadas ou outros tipos de componentes do SharePoint.  
@@ -32,11 +32,11 @@ ms.locfileid: "36326160"
   
  Quando você define um tipo de item de projeto personalizado, você também pode adicionar a seguinte funcionalidade para o item de projeto:  
   
--   Adicione um item de menu de atalho para o item de projeto. O item de menu é exibido quando você abre o menu de atalho para o item de projeto em **Gerenciador de soluções** clicando com o item de projeto ou selecioná-la e, em seguida, escolhendo o **Shift** +  **F10** chaves. Para obter mais informações, consulte [como: adicionar um item de menu de atalho para um tipo de item de projeto personalizado do SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md).  
+- Adicione um item de menu de atalho para o item de projeto. O item de menu é exibido quando você abre o menu de atalho para o item de projeto em **Gerenciador de soluções** clicando com o item de projeto ou selecioná-la e, em seguida, escolhendo o **Shift** +  **F10** chaves. Para obter mais informações, consulte [como: adicionar um item de menu de atalho para um tipo de item de projeto personalizado do SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md).  
   
--   Adicione uma propriedade personalizada para o item de projeto. A propriedade aparece na **propriedades** janela quando você escolhe o item de projeto no **Gerenciador de soluções**. Para obter mais informações, consulte [como: adicionar uma propriedade a um tipo de item de projeto personalizado do SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
+- Adicione uma propriedade personalizada para o item de projeto. A propriedade aparece na **propriedades** janela quando você escolhe o item de projeto no **Gerenciador de soluções**. Para obter mais informações, consulte [como: adicionar uma propriedade a um tipo de item de projeto personalizado do SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
   
- Para habilitar outros desenvolvedores a usar o item de projeto no Visual Studio, crie um arquivo. spdata e criar um modelo de item ou o modelo de projeto que está associado com o item de projeto. Para obter mais informações, consulte [criar um item modelos e modelos de projeto do SharePoint para itens de projeto](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+  Para habilitar outros desenvolvedores a usar o item de projeto no Visual Studio, crie um arquivo. spdata e criar um modelo de item ou o modelo de projeto que está associado com o item de projeto. Para obter mais informações, consulte [criar um item modelos e modelos de projeto do SharePoint para itens de projeto](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
 ## <a name="understand-the-relationship-between-project-item-types-and-project-item-instances"></a>Entender a relação entre tipos de item de projeto e instâncias de item de projeto
  Quando você define um tipo de item de projeto do SharePoint, o Visual Studio carrega sua extensão quando um item de projeto do tipo associado é adicionado a um projeto do SharePoint. Por exemplo, se você definir uma nova **ação personalizada** tipo de item de projeto, o Visual Studio carrega sua extensão quando um usuário adiciona uma **ação personalizada** item de projeto a um projeto. Visual Studio usa a mesma instância de sua extensão para todas as instâncias do tipo de item de projeto associado. No exemplo anterior, se o usuário adiciona um segundo **ação personalizada** de item de projeto ao projeto, a mesma instância de sua extensão é usada para personalizar o segundo item de projeto.  

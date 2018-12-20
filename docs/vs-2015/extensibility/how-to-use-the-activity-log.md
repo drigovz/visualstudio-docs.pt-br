@@ -1,7 +1,7 @@
 ---
 title: 'Como: usar o Log de atividades | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79a06bd3bcaa8b6361d0aaa19dffb8081d652a3b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c6b9c312fec6d11369b198e215d27cfc004c1d8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474420"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798295"
 ---
 # <a name="how-to-use-the-activity-log"></a>Como: usar o Log de atividades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: usar o Log de atividades](https://docs.microsoft.com/visualstudio/extensibility/how-to-use-the-activity-log).  
-  
 Os VSPackages pode gravar mensagens no log de atividade. Esse recurso é especialmente útil para depurar os VSPackages em ambientes de varejo.  
   
 > [!TIP]

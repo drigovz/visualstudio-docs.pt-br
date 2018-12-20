@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 776ebca3b412b631634e45846ca15f00f31126f5
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9e8ad899d7cf62b2d874d5dc4971c8e7ad7f950a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282446"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829751"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Como: recuperar informações de cadeia de caracteres de consulta em um aplicativo ClickOnce online
 O *cadeia de caracteres de consulta* é a parte de uma URL que comece com um ponto de interrogação (?) que contém informações arbitrárias no formulário *nome = valor*. Suponha que você tenha um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo denominado `WindowsApp1` que você hospede em `servername`, e você deseja passar um valor para a variável `username` quando o aplicativo é iniciado. A URL pode parecer com o seguinte:  
@@ -57,17 +57,17 @@ O *cadeia de caracteres de consulta* é a parte de uma URL que comece com um pon
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Para habilitar a cadeia de caracteres de consulta passando em um aplicativo ClickOnce com MageUI.exe  
   
-1.  Abra o Prompt de comando do .NET e digite:  
+1. Abra o Prompt de comando do .NET e digite:  
   
-    ```cmd  
-    MageUI  
-    ```  
+   ```cmd  
+   MageUI  
+   ```  
   
-2.  Do **arquivo** menu, selecione **abra**e abra o manifesto de implantação para seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo, que é o arquivo terminando no `.application` extensão.  
+2. Do **arquivo** menu, selecione **abra**e abra o manifesto de implantação para seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo, que é o arquivo terminando no `.application` extensão.  
   
-3.  Selecione o **opções de implantação** na janela de navegação à esquerda do painel e, em seguida, selecione o **parâmetros de URL de permitir a serem passados para o aplicativo** caixa de seleção.  
+3. Selecione o **opções de implantação** na janela de navegação à esquerda do painel e, em seguida, selecione o **parâmetros de URL de permitir a serem passados para o aplicativo** caixa de seleção.  
   
-4.  Dos **arquivo** menu, selecione **salvar**.  
+4. Dos **arquivo** menu, selecione **salvar**.  
   
 > [!NOTE]
 >  Como alternativa, você pode habilitar a cadeia de caracteres de consulta passando [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Selecione o **parâmetros de URL de permitir a serem passados para o aplicativo** caixa de seleção, que pode ser encontrada, abrindo o **propriedades do projeto**, selecionando o **publicar** guia, clicando no **Opções** botão e, em seguida, selecionando **manifestos**.  

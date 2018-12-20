@@ -1,7 +1,7 @@
 ---
 title: Manipuladores de eventos propagam alterações fora do modelo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,41 +15,39 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 93b971c80cdf0c13567364d507f72027d62faae9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7bfddc0903c520469833a0f160444202edf07c32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47587860"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823691"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Manipuladores de eventos propagam alterações fora do modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [manipuladores de propagar alterações fora o modelo de evento](https://docs.microsoft.com/visualstudio/modeling/event-handlers-propagate-changes-outside-the-model).  
-  
 No SDK de modelagem e visualização, você pode definir manipuladores de eventos do repositório para propagar alterações aos recursos fora do repositório, como variáveis de fora da store, arquivos, modelos em outros repositórios ou outro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensões. Manipuladores de eventos de Store são executados após o término da transação na qual ocorreu o evento de gatilho. Eles também são executados em uma operação de desfazer ou refazer. Portanto, ao contrário das regras de repositório de eventos de armazenamento são mais úteis para atualizar os valores que estão fora do repositório. Diferentemente dos eventos do .NET, manipuladores de eventos de armazenamento são registrados para escutar em uma classe: você não precisa registrar um manipulador separado para cada instância. Para obter mais informações sobre como escolher entre diferentes maneiras de manipular as alterações, consulte [respondendo a e propagando alterações](../modeling/responding-to-and-propagating-changes.md).  
   
  A superfície de gráfica e outros controles de interface do usuário são exemplos de recursos externos que podem ser manipulados pelo repositório de eventos.  
   
 ### <a name="to-define-a-store-event"></a>Para definir um evento de armazenamento  
   
-1.  Escolha o tipo de evento que você deseja monitorar. Para obter uma lista completa, examine as propriedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propriedade corresponde a um tipo de evento. Usada com mais frequência são tipos de evento:  
+1. Escolha o tipo de evento que você deseja monitorar. Para obter uma lista completa, examine as propriedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propriedade corresponde a um tipo de evento. Usada com mais frequência são tipos de evento:  
   
-    -   `ElementAdded` – disparado quando um elemento de modelo, link de relação, forma ou conector é criado.  
+   -   `ElementAdded` – disparado quando um elemento de modelo, link de relação, forma ou conector é criado.  
   
-    -   ElementPropertyChanged – disparado quando o valor de um `Normal` propriedade de domínio é alterada. O evento é disparado somente se os valores novos e antigos não são iguais. O evento não pode ser aplicado às propriedades de armazenamento calculadas e personalizadas.  
+   -   ElementPropertyChanged – disparado quando o valor de um `Normal` propriedade de domínio é alterada. O evento é disparado somente se os valores novos e antigos não são iguais. O evento não pode ser aplicado às propriedades de armazenamento calculadas e personalizadas.  
   
-         Ele não pode ser aplicado a propriedades da função que correspondem aos links do relacionamento. Em vez disso, use `ElementAdded` para monitorar a relação de domínio.  
+        Ele não pode ser aplicado a propriedades da função que correspondem aos links do relacionamento. Em vez disso, use `ElementAdded` para monitorar a relação de domínio.  
   
-    -   `ElementDeleted` – disparado depois de um elemento de modelo, relação, forma ou conector foi excluído. Você ainda pode acessar os valores de propriedade do elemento, mas ele será não têm nenhuma relação a outros elementos.  
+   -   `ElementDeleted` – disparado depois de um elemento de modelo, relação, forma ou conector foi excluído. Você ainda pode acessar os valores de propriedade do elemento, mas ele será não têm nenhuma relação a outros elementos.  
   
-2.  Adicione uma definição de classe parcial para _{1&gt;yourdsl&lt;1_**DocData** em um arquivo de código separado no **DslPackage** projeto.  
+2. Adicione uma definição de classe parcial para _{1&gt;yourdsl&lt;1_**DocData** em um arquivo de código separado no **DslPackage** projeto.  
   
-3.  Escreva o código do evento como um método, como no exemplo a seguir. Ele pode ser `static`, a menos que você deseja acessar `DocData`.  
+3. Escreva o código do evento como um método, como no exemplo a seguir. Ele pode ser `static`, a menos que você deseja acessar `DocData`.  
   
-4.  Substituir `OnDocumentLoaded()` para registrar o manipulador. Se você tiver mais de um manipulador, você pode registrá-los todos no mesmo lugar.  
+4. Substituir `OnDocumentLoaded()` para registrar o manipulador. Se você tiver mais de um manipulador, você pode registrá-los todos no mesmo lugar.  
   
- O local do código de registro não é crítico. `DocView.LoadView()` é um local alternativo.  
+   O local do código de registro não é crítico. `DocView.LoadView()` é um local alternativo.  
   
 ```  
 using System;  

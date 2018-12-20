@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Salvando as configurações do usuário em uma página de início | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 213f09b4cef1a3530e4759caf5700630fe3319d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdba9506b15b0d11f2c741c8651af2098b2f9da4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463903"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763286"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Passo a passo: salvando as configurações do usuário em uma página inicial
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: salvando configurações de usuário de uma página inicial](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-saving-user-settings-on-a-start-page).  
-  
 Você pode persistir as configurações do usuário para sua página inicial. Seguindo este passo a passo, você pode criar um controle que salva uma configuração no registro quando o usuário clica em um botão e, em seguida, recupera a configuração toda vez que carrega a página de início. Como o modelo de projeto de página inicial inclui um controle de usuário personalizável, e o XAML de página de início padrão chama esse controle, você não precisa modificar a página de início em si.  
   
  O repositório de configurações que é instanciado neste passo a passo é uma instância das <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interface, que lê e grava no seguinte local do registro quando ele é chamado: HKCU\Software\Microsoft\VisualStudio\14.0\\  *CollectionName*  

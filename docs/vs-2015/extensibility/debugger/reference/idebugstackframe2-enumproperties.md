@@ -1,7 +1,7 @@
 ---
 title: IDebugStackFrame2::EnumProperties | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 334bb95e-c7e0-4008-9f06-8c3999e47ee8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5cbbdfe2585ec7fa90b2e98bbd76baa5093f296e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5144a96c5bcf5b73cad98816059d1023ed61ca2b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460616"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748375"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugStackFrame2::EnumProperties](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugstackframe2-enumproperties).  
-  
 Cria um enumerador para as propriedades associadas com o quadro de pilha, como variáveis locais.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT EnumProperties (   
+HRESULT EnumProperties (   
    DEBUGPROP_INFO_FLAGS      dwFieldSpec,  
    UINT                      nRadix,  
    REFIID                    refiid,  
@@ -45,7 +43,7 @@ HRESULT EnumProperties (
 ```  
   
 ```csharp  
-int EnumProperties (   
+int EnumProperties (   
    enum_DEBUGPROP_INFO_FLAGS   dwFieldSpec,  
    uint                        nRadix,  
    ref Guid                    refiid,  

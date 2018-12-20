@@ -1,7 +1,7 @@
 ---
 title: Criação de perfil de linha de comando dos aplicativos Web ASP.NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - profling tools,ASP.NET applications
 ms.assetid: 897c00d5-5767-433b-a960-4a29c6023ede
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7dd299aac87a03009e39034a3e5282777419506c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 5436da548acaf16169437fdc98b51d182891d2d9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476310"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759161"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>Criação de perfil de linha de comando dos aplicativos Web do ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [linha de comando de criação de perfil de aplicativos Web ASP.NET](https://docs.microsoft.com/visualstudio/profiling/command-line-profiling-of-aspnet-web-applications).  
-  
 Esta seção descreve os procedimentos e as opções para coletar dados de desempenho para aplicativos Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] usando as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na linha de comando.  
   
 > [!NOTE]

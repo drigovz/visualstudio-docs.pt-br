@@ -1,7 +1,7 @@
 ---
 title: IDebugModuleLoadEvent2::GetModule | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: c86482bb-9ce5-4e63-bbe0-969b50169424
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dcf01689b6ab133ee52870ff65293ab31e98855e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d314856f0cd4063aee8219510b779bc4a1311c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460321"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749153"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugModuleLoadEvent2::GetModule](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmoduleloadevent2-getmodule).  
-  
 Obtém o módulo que está sendo carregado ou descarregado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetModule(   
+HRESULT GetModule(   
    IDebugModule2** pModule,  
    BSTR*           pbstrDebugMessage,  
    BOOL*           pbLoad  
@@ -42,7 +40,7 @@ HRESULT GetModule(
 ```  
   
 ```csharp  
-int GetModule(   
+int GetModule(   
    out IDebugModule2 pModule,  
    ref string        pbstrDebugMessage,  
    ref int           pbLoad  

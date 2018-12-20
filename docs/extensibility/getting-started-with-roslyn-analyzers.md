@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41db830fbf7dcbe97f44d64ffa9b9701ec658c1e
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 6077fb8a9f0db360389953ef6a7ed25c6d242247
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370582"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821286"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Introdução ao analisadores Roslyn
 
@@ -30,12 +30,14 @@ Com os analisadores de código ao vivo, com base em projeto no Visual Studio, os
 
 [Analisador do mundo real Roslyn](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) que você também pode assistir como um [falar](https://channel9.msdn.com/events/Build/2015/3-725)
 
-[Vários exemplos no github, agrupados em três tipos de analisadores](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
+[Vários exemplos no GitHub, agrupados em três tipos de analisadores](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
 [Introdução e tour alguns analisadores falar](https://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
 
 ## <a name="see-also"></a>Consulte também
 
 - [Visão geral de analisadores de Roslyn](../code-quality/roslyn-analyzers-overview.md)
-- [Documentos mais no site do github OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
+- [Tutorial: Escrever sua primeira correção de código e o analisador](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
+- [Referência de versão de pacote de plataforma do .NET compilador](roslyn-version-support.md)
+- [Docs mais no site do GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
 - [Regras do FxCop implementadas com analisadores de Roslyn no GitHub](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)

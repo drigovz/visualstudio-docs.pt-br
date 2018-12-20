@@ -1,7 +1,7 @@
 ---
 title: Criando e configurando membros de tipo (Designer de Classe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,12 +35,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e93f9cd0e1fb35a1698b0795972abc09527c038
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93a112fac274921fe2d1075e1a1b9178c408240c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827968"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Criando e configurando membros de tipo (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +72,11 @@ ms.locfileid: "47476212"
   
 #### <a name="to-open-the-class-details-window"></a>Para abrir a janela Detalhes da Classe  
   
-1.  Clique com o botão direito do mouse m qualquer classe no diagrama para exibir um menu de contexto.  
+1. Clique com o botão direito do mouse m qualquer classe no diagrama para exibir um menu de contexto.  
   
-2.  No menu de contexto, clique em **Janela Detalhes da Classe**.  
+2. No menu de contexto, clique em **Janela Detalhes da Classe**.  
   
- – ou -  
+   – ou -  
   
 -   Aponte para **Outras Janelas** no menu Exibir e clique em **Detalhes da Classe**.  
   
@@ -194,31 +194,31 @@ ms.locfileid: "47476212"
   
  As linhas de parâmetro contém os seguintes itens:  
   
--   **Nome**  
+- **Nome**  
   
-     A coluna **Nome** em uma linha de parâmetro exibe o nome do parâmetro. Esse nome também é exibido na propriedade **Nome** na janela Propriedades. Você pode usar essa célula para alterar o nome de qualquer parâmetro com permissões de leitura/gravação.  
+   A coluna **Nome** em uma linha de parâmetro exibe o nome do parâmetro. Esse nome também é exibido na propriedade **Nome** na janela Propriedades. Você pode usar essa célula para alterar o nome de qualquer parâmetro com permissões de leitura/gravação.  
   
-     Apontar para o nome do parâmetro exibe o nome do parâmetro se a coluna **Nome** for muito estreita para mostrar o nome inteiro.  
+   Apontar para o nome do parâmetro exibe o nome do parâmetro se a coluna **Nome** for muito estreita para mostrar o nome inteiro.  
   
--   **Tipo**  
+- **Tipo**  
   
-     A célula **Tipo de Parâmetro** usa o IntelliSense, o que lhe permite fazer escolhas em uma lista com todos os tipos disponíveis no projeto atual ou nos projetos referenciados.  
+   A célula **Tipo de Parâmetro** usa o IntelliSense, o que lhe permite fazer escolhas em uma lista com todos os tipos disponíveis no projeto atual ou nos projetos referenciados.  
   
--   **Modificador**  
+- **Modificador**  
   
-     A célula **Modificador** em uma linha de parâmetro aceita e exibe o novo modificador do parâmetro. Para inserir um novo modificador de parâmetro, use a caixa de listagem suspensa para selecionar **Nenhum**, **ref**, **out** ou **params** no C# e **ByVal**, **ByRef** ou **ParamArray** no VB.  
+   A célula **Modificador** em uma linha de parâmetro aceita e exibe o novo modificador do parâmetro. Para inserir um novo modificador de parâmetro, use a caixa de listagem suspensa para selecionar **Nenhum**, **ref**, **out** ou **params** no C# e **ByVal**, **ByRef** ou **ParamArray** no VB.  
   
--   **Resumo**  
+- **Resumo**  
   
-     A célula **Resumo** em uma linha de parâmetro permite inserir comentários de código que aparecem no IntelliSense ao inserir o parâmetro no editor de código.  
+   A célula **Resumo** em uma linha de parâmetro permite inserir comentários de código que aparecem no IntelliSense ao inserir o parâmetro no editor de código.  
   
--   **\<adicionar parâmetro>**  
+- **\<adicionar parâmetro>**  
   
-     A última linha de parâmetro de um membro contém o texto **<add parameter>** na célula **Nome**. Clicar nessa célula permite criar um novo parâmetro. Para obter mais informações, consulte [Para adicionar um parâmetro a um método](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
+   A última linha de parâmetro de um membro contém o texto **<add parameter>** na célula **Nome**. Clicar nessa célula permite criar um novo parâmetro. Para obter mais informações, consulte [Para adicionar um parâmetro a um método](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
   
- **Propriedades do parâmetro na janela Propriedades**  
+  **Propriedades do parâmetro na janela Propriedades**  
   
- A janela Propriedades exibe as mesmas propriedades de parâmetro exibidas na Janela Detalhes da Classe: **Nome**, **Tipo**, **Modificador**, **Resumo**, assim como a propriedade **Padrão Opcional**. Alterar uma propriedade em um local atualiza o valor da propriedade globalmente, incluindo a exibição de seu valor em outro local.  
+  A janela Propriedades exibe as mesmas propriedades de parâmetro exibidas na Janela Detalhes da Classe: **Nome**, **Tipo**, **Modificador**, **Resumo**, assim como a propriedade **Padrão Opcional**. Alterar uma propriedade em um local atualiza o valor da propriedade globalmente, incluindo a exibição de seu valor em outro local.  
   
 > [!NOTE]
 >  Para adicionar um parâmetro a um delegado, consulte [Criando membros](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
@@ -268,62 +268,62 @@ ms.locfileid: "47476212"
   
  Todas as células na janela Detalhes da Classe são editáveis, com algumas exceções:  
   
--   O tipo inteiro é somente leitura, quando, por exemplo, residir em um assembly referenciado (consulte [Exibição de informações somente leitura [Designer de Classe]](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Quando você seleciona a forma no Designer de Classe, a janela Detalhes da Classe exibe seus detalhes em um estado somente leitura.  
+- O tipo inteiro é somente leitura, quando, por exemplo, residir em um assembly referenciado (consulte [Exibição de informações somente leitura [Designer de Classe]](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Quando você seleciona a forma no Designer de Classe, a janela Detalhes da Classe exibe seus detalhes em um estado somente leitura.  
   
--   Para indexadores, o nome é somente leitura e o restante (tipo, modificador, resumo) é editável.  
+- Para indexadores, o nome é somente leitura e o restante (tipo, modificador, resumo) é editável.  
   
--   Todos os genéricos têm parâmetros somente leitura na janela Detalhes da Classe. Para alterar um parâmetro genérico, edite seu código-fonte.  
+- Todos os genéricos têm parâmetros somente leitura na janela Detalhes da Classe. Para alterar um parâmetro genérico, edite seu código-fonte.  
   
--   O nome do parâmetro de tipo que é definido em um tipo genérico é somente leitura.  
+- O nome do parâmetro de tipo que é definido em um tipo genérico é somente leitura.  
   
--   Quando o código de um tipo é desfeito (não analisável), a janela Detalhes da Classe exibe o conteúdo do tipo como somente leitura.  
+- Quando o código de um tipo é desfeito (não analisável), a janela Detalhes da Classe exibe o conteúdo do tipo como somente leitura.  
   
- **A Janela Detalhes da Classe e o código-fonte**  
+  **A Janela Detalhes da Classe e o código-fonte**  
   
--   Você pode exibir o código-fonte clicando com o botão direito do mouse em uma forma na janela Detalhes da Classe (ou no Designer de Classe) e clicando em Exibir Código. O arquivo do código-fonte é aberto e rola até o elemento selecionado.  
+- Você pode exibir o código-fonte clicando com o botão direito do mouse em uma forma na janela Detalhes da Classe (ou no Designer de Classe) e clicando em Exibir Código. O arquivo do código-fonte é aberto e rola até o elemento selecionado.  
   
--   A alteração do código-fonte é refletida imediatamente na exibição das informações de assinatura no Designer de Classe e na janela Detalhes da Classe. Se a janela Detalhes da Classe estiver fechada no momento, as novas informações ficarão visíveis na próxima vez em que for aberta.  
+- A alteração do código-fonte é refletida imediatamente na exibição das informações de assinatura no Designer de Classe e na janela Detalhes da Classe. Se a janela Detalhes da Classe estiver fechada no momento, as novas informações ficarão visíveis na próxima vez em que for aberta.  
   
--   Quando o código de um tipo é desfeito (não analisável), a janela Detalhes da Classe exibe o conteúdo do tipo como somente leitura.  
+- Quando o código de um tipo é desfeito (não analisável), a janela Detalhes da Classe exibe o conteúdo do tipo como somente leitura.  
   
- **Funcionalidade da Área de Transferência na Janela Detalhes da Classe**  
+  **Funcionalidade da Área de Transferência na Janela Detalhes da Classe**  
   
- Você pode copiar ou recortar campos ou linhas da janela Detalhes da Classe e colá-los em outro tipo. Uma linha poderá ser recortada se não for somente leitura. Quando você cola a linha, a janela Detalhes da Classe atribui um novo nome (derivado do nome da linha copiada) para evitar um conflito.  
+  Você pode copiar ou recortar campos ou linhas da janela Detalhes da Classe e colá-los em outro tipo. Uma linha poderá ser recortada se não for somente leitura. Quando você cola a linha, a janela Detalhes da Classe atribui um novo nome (derivado do nome da linha copiada) para evitar um conflito.  
   
 ##  <a name="ReadOnlyInfo"></a> Exibição de informações somente leitura  
  O Designer de Classe e a janela Detalhes da Classe podem exibir os tipos (e membros do tipo) para o seguinte:  
   
--   um projeto que contém um diagrama de classes  
+- um projeto que contém um diagrama de classes  
   
--   um projeto referenciado de um projeto que contém um diagrama de classes  
+- um projeto referenciado de um projeto que contém um diagrama de classes  
   
--   um assembly referenciado de um projeto que contém um diagrama de classes  
+- um assembly referenciado de um projeto que contém um diagrama de classes  
   
- Nos dois últimos casos, a entidade referenciada (um tipo ou um membro) é somente leitura no diagrama de classes que a representa.  
+  Nos dois últimos casos, a entidade referenciada (um tipo ou um membro) é somente leitura no diagrama de classes que a representa.  
   
- Um projeto inteiro ou partes dele, como arquivos individuais, podem ser somente leitura. Os casos mais comuns em que um projeto ou um de seus arquivos é somente leitura são quando ele está sob controle do código-fonte (e não foi verificado), ele existe em um assembly externo ou quando o sistema operacional considera os arquivos como sendo somente leitura.  
+  Um projeto inteiro ou partes dele, como arquivos individuais, podem ser somente leitura. Os casos mais comuns em que um projeto ou um de seus arquivos é somente leitura são quando ele está sob controle do código-fonte (e não foi verificado), ele existe em um assembly externo ou quando o sistema operacional considera os arquivos como sendo somente leitura.  
   
- **Controle do código-fonte**  
+  **Controle do código-fonte**  
   
- Como um diagrama de classes é salvo como um arquivo em um projeto, você precisa fazer check-out do projeto para salvar todas as alterações feitas no Designer de Classe ou na janela Detalhes da Classe.  
+  Como um diagrama de classes é salvo como um arquivo em um projeto, você precisa fazer check-out do projeto para salvar todas as alterações feitas no Designer de Classe ou na janela Detalhes da Classe.  
   
- **Projetos somente leitura**  
+  **Projetos somente leitura**  
   
- O projeto pode ser somente leitura por um motivo que não seja o controle de código-fonte. Fechar o projeto exibe uma caixa de diálogo que pergunta se você deseja substituir o arquivo de projeto, descartar alterações (não salvar) ou cancelar a operação de fechar. Se você optar por substituir, os arquivos de projeto serão substituídos e transformados em leitura/gravação. O novo arquivo de diagrama de classes é adicionado.  
+  O projeto pode ser somente leitura por um motivo que não seja o controle de código-fonte. Fechar o projeto exibe uma caixa de diálogo que pergunta se você deseja substituir o arquivo de projeto, descartar alterações (não salvar) ou cancelar a operação de fechar. Se você optar por substituir, os arquivos de projeto serão substituídos e transformados em leitura/gravação. O novo arquivo de diagrama de classes é adicionado.  
   
- **Tipos somente leitura**  
+  **Tipos somente leitura**  
   
- Se você tentar salvar um projeto que contém um tipo cujo arquivo do código-fonte seja somente leitura, a caixa de diálogo **Salvamento de Arquivo Somente Leitura** será exibida, fornecendo opções de salvar o arquivo com um novo nome ou em um novo local, ou de substituir o arquivo somente leitura. Se você substituir o arquivo, a nova cópia não será mais somente leitura.  
+  Se você tentar salvar um projeto que contém um tipo cujo arquivo do código-fonte seja somente leitura, a caixa de diálogo **Salvamento de Arquivo Somente Leitura** será exibida, fornecendo opções de salvar o arquivo com um novo nome ou em um novo local, ou de substituir o arquivo somente leitura. Se você substituir o arquivo, a nova cópia não será mais somente leitura.  
   
- Se um arquivo de código contiver um erro de sintaxe, as formas que exibem o código nesse arquivo serão somente leitura temporariamente até que o erro de sintaxe seja corrigido. As formas nesse estado exibem texto em vermelho e um ícone vermelho que exibe uma dica de ferramenta onde se lê "O arquivo do código-fonte contém um erro de análise".  
+  Se um arquivo de código contiver um erro de sintaxe, as formas que exibem o código nesse arquivo serão somente leitura temporariamente até que o erro de sintaxe seja corrigido. As formas nesse estado exibem texto em vermelho e um ícone vermelho que exibe uma dica de ferramenta onde se lê "O arquivo do código-fonte contém um erro de análise".  
   
- Um tipo referenciado (como um tipo do .NET Framework), que existe sob outro nó do projeto ou sob um nó de assembly referenciado, é indicado na superfície de design de Designer de Classe como somente leitura. Um tipo local, que existe no projeto que você abriu, é leitura/gravação e sua forma na superfície de design de Designer de Classe é indicada como tal.  
+  Um tipo referenciado (como um tipo do .NET Framework), que existe sob outro nó do projeto ou sob um nó de assembly referenciado, é indicado na superfície de design de Designer de Classe como somente leitura. Um tipo local, que existe no projeto que você abriu, é leitura/gravação e sua forma na superfície de design de Designer de Classe é indicada como tal.  
   
- Os indexadores são leitura/gravação no código e na janela Detalhes da Classe, mas o nome do indexador é somente leitura.  
+  Os indexadores são leitura/gravação no código e na janela Detalhes da Classe, mas o nome do indexador é somente leitura.  
   
- Não é possível editar métodos parciais usando o Designer de Classe ou a janela Detalhes da Classe; você deve usar o Editor de Código para editá-los.  
+  Não é possível editar métodos parciais usando o Designer de Classe ou a janela Detalhes da Classe; você deve usar o Editor de Código para editá-los.  
   
- Não é possível editar código C++ nativo usando o Designer de Classe ou a janela Detalhes da Classe; você deve usar o Editor de Código para editar código C++ nativo.  
+  Não é possível editar código C++ nativo usando o Designer de Classe ou a janela Detalhes da Classe; você deve usar o Editor de Código para editar código C++ nativo.  
   
 ## <a name="related-topics"></a>Tópicos relacionados  
   

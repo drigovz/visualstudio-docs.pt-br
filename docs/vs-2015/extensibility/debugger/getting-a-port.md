@@ -1,7 +1,7 @@
 ---
 title: Obter uma porta | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 719da05cf3d408322480ed5a7edb1f20dd12fa89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 660ead58af40f85b4da4d68d7172866f5fe1fd0c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463861"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789896"
 ---
 # <a name="getting-a-port"></a>Obtendo uma porta
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [obtendo uma porta](https://docs.microsoft.com/visualstudio/extensibility/debugger/getting-a-port).  
-  
 Uma porta representa uma conexão a uma máquina que processos estão em execução. Esse computador pode ser o computador local ou em um computador remoto (que possivelmente poderia estar executando um sistema de operacional não são baseados no Windows, consulte [portas](../../extensibility/debugger/ports.md) para obter mais informações).  
   
  Uma porta é representada pela [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface. Ele é usado para obter informações sobre processos em execução no computador em que a porta está conectada a.  
@@ -72,7 +70,7 @@ HRESULT CDebugEngine::LaunchSuspended(/* omitted parameters */,
             if (SUCCEEDED(hr))  
             {  
                 // pass on the parameters we were given (omitted here)  
-                hr = spPortEx->LaunchSuspended(/* omitted paramters */,ppDebugProcess)  
+                hr = spPortEx->LaunchSuspended(/* omitted parameters */,ppDebugProcess)  
             }  
         }  
     }  

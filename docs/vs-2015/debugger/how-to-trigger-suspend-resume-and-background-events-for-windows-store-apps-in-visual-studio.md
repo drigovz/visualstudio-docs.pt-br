@@ -1,7 +1,7 @@
 ---
 title: Como disparar suspender, continuar e eventos para aplicativos da Windows Store no Visual Studio em segundo plano | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,21 +18,19 @@ dev_langs:
 - C++
 ms.assetid: 824ff3ca-fedf-4cf5-b3e2-ac8dc82d40ac
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0466441d83d3d0203167f86e6f1afa8c85acb32d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 889eb8aac5dcef4a5bafa2543f9731a97e2e0bd1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472622"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745178"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Como disparar eventos de suspensão, retomada e segundo plano para aplicativos da Windows Store no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como disparar suspender, continuar e eventos para aplicativos da Windows Store no Visual Studio em segundo plano](https://docs.microsoft.com/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio).  
-  
 Quando você não está depurando, Windows **gerenciamento de tempo de vida do processo** (PLM) controla o estado de execução do seu aplicativo — iniciando, suspendendo, retomando e encerrando o aplicativo em resposta às ações do usuário e o estado do dispositivo. Quando você está depurando, o Windows desabilita esses eventos de ativação. Este tópico descreve como acionar esses eventos no depurador.  
   
  Este tópico também descreve como depurar **tarefas em segundo plano**. Essas tarefas permitem que você execute certas operações em um processo em segundo plano, mesmo quando o aplicativo não está sendo executado. Você pode usar o depurador para colocar o aplicativo no modo de depuração e depois, sem iniciar a interface de usuário, iniciar e depurar a tarefa em segundo plano.  
@@ -44,13 +42,13 @@ Quando você não está depurando, Windows **gerenciamento de tempo de vida do p
   
  [Tarefas em segundo plano de gatilho](#BKMK_Trigger_background_tasks)  
   
--   [Disparar um evento de tarefa do plano de fundo de uma sessão de depuração padrão](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
+- [Disparar um evento de tarefa do plano de fundo de uma sessão de depuração padrão](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
   
--   [Disparar uma tarefa em segundo plano quando o aplicativo não está em execução](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
+- [Disparar uma tarefa em segundo plano quando o aplicativo não está em execução](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
   
- [Disparar eventos de gerenciamento de tempo de vida de processos e tarefas de um aplicativo instalado em segundo plano](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
+  [Disparar eventos de gerenciamento de tempo de vida de processos e tarefas de um aplicativo instalado em segundo plano](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
   
- [Diagnosticando erros de ativação de tarefa em segundo plano](#BKMK_Diagnosing_background_task_activation_errors)  
+  [Diagnosticando erros de ativação de tarefa em segundo plano](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Eventos de gerenciamento de tempo de vida do processo de gatilho  
  O Windows pode suspender o aplicativo quando o usuário sai dele ou quando o Windows entra em um estado de baixo consumo de energia. Você pode responder ao evento `Suspending` para salvar dados relevantes do aplicativo e do usuário em um armazenamento persistente e para liberar recursos. Quando um aplicativo é retomado do **Suspended** de estado, ele entra a **executando** de estado e continua de onde estava quando foi suspenso. Você pode responder ao evento `Resuming` para restaurar ou atualizar o estado do aplicativo e recuperar recursos.  

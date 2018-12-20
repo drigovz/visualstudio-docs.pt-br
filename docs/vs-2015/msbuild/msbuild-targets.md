@@ -1,7 +1,7 @@
 ---
 title: Destinos do MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68a596eaf744649047ae912e4b9aac00922e2360
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af666f40dec018e2dfde330cfc5727159b8b1dc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461651"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925729"
 ---
 # <a name="msbuild-targets"></a>Destinos do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [destinos do MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets).  
-  
   
 Destinos agrupam tarefas em uma ordem específica e permitem que o processo de build seja decomposto em unidades menores. Por exemplo, um destino pode excluir todos os arquivos no diretório de saída para se preparar para o build, enquanto outro compila as entradas para o projeto e as coloca no diretório vazio. Para obter mais informações sobre tarefas, consulte [Tarefas](../msbuild/msbuild-tasks.md).  
   
@@ -56,19 +54,19 @@ Destinos agrupam tarefas em uma ordem específica e permitem que o processo de b
 ## <a name="target-build-order"></a>Ordem de build de destinos  
  Os destinos deverão ser ordenados se a entrada para um destino depender da saída de outro. Há várias maneiras de especificar a ordem na qual os destinos são executados.  
   
--   Destinos Iniciais  
+- Destinos Iniciais  
   
--   Destinos padrão  
+- Destinos padrão  
   
--   Primeiro destino  
+- Primeiro destino  
   
--   Dependências de destino  
+- Dependências de destino  
   
--   `BeforeTargets` e `AfterTargets` (MSBuild 4.0)  
+- `BeforeTargets` e `AfterTargets` (MSBuild 4.0)  
   
- Um destino nunca é executado duas vezes durante uma único build, mesmo se um destino posterior no build depender dele. Depois da execução de um destino, sua contribuição para o build será concluída.  
+  Um destino nunca é executado duas vezes durante uma único build, mesmo se um destino posterior no build depender dele. Depois da execução de um destino, sua contribuição para o build será concluída.  
   
- Para obter detalhes e mais informações sobre a ordem do build do destino, consulte [Ordem de Build de Destino](../msbuild/target-build-order.md).  
+  Para obter detalhes e mais informações sobre a ordem do build do destino, consulte [Ordem de Build de Destino](../msbuild/target-build-order.md).  
   
 ## <a name="target-batching"></a>Lote de destino  
  Um elemento de destino pode ter um atributo `Outputs` que especifica os metadados na forma % (metadados). Nesse caso, o MSBuild executa o destino uma vez para cada valor exclusivo de metadados, agrupando ou colocando em "lote" os itens que têm esse valor de metadados. Por exemplo,  

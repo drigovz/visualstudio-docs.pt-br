@@ -1,7 +1,7 @@
 ---
 title: Usando a janela tarefas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,21 +20,19 @@ helpviewer_keywords:
 - debugger, parallel tasks window
 ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7e5d4c979d8160e9b2a9cee1a937bcc8049fc5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fa59e1e57750c9c2075c10c76ab5c518ed0e8686
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476161"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793894"
 ---
 # <a name="using-the-tasks-window"></a>Usando a janela Tarefas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando a janela tarefas](https://docs.microsoft.com/visualstudio/debugger/using-the-tasks-window).  
-  
 O **tarefas** janela se parece com o **Threads** janela, exceto que mostra informações sobre <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7), ou [WinJS. Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) objetos em vez de cada thread. Como threads, as tarefas representam as operações assíncronas que podem ser executadas simultaneamente; no entanto, várias tarefas podem ser executadas no mesmo thread. Ver [programação assíncrona em JavaScript (aplicativos da Windows Store)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) para obter mais informações.  
   
  No código gerenciado, você pode usar o **tarefas** janela quando você trabalha com <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos ou com o **await** e **async** palavras-chave (**Await** e **Async** no Visual Basic). Para obter mais informações sobre as tarefas no código gerenciado, consulte [programação paralela](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  

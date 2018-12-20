@@ -1,7 +1,7 @@
 ---
 title: Depurar o layout usando o Explorador do DOM | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,21 +20,19 @@ helpviewer_keywords:
 - layout, debugging [Windows Store apps]
 ms.assetid: ded6566d-fc29-49a7-8029-dee8e50fe733
 caps.latest.revision: 36
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 413f24ffa1927998cb9d2d98880e92de4e68f534
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba06e6a8ba95887c0cc6b6acfd14cef10ff03798
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474984"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787738"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Depurar o layout com o Explorador do DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [layout de depuração usando o Explorador do DOM](https://docs.microsoft.com/visualstudio/debugger/debug-layout-using-dom-explorer).  
-  
 Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  O **Layout** guia do Explorador do DOM mostra o [modelo de caixa CSS](http://go.microsoft.com/fwlink/?LinkID=238778) para o elemento selecionado em um [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app, aplicativo do Windows Phone Store ou um aplicativo criado usando ferramentas do Visual Studio para Apache Cordova. Você pode usar essa representação visual do modelo de caixa para identificar e modificar os valores relacionados a layout que afetam a aparência dos elementos.  

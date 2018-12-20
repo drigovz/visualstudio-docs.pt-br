@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Getenumtables | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSession::getEnumTables method
 ms.assetid: 66e0fba2-ca63-4e24-a46a-c99c7fb61dd1
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c8937bd1a04d8856c2b2a7b18c5a05e91a8070d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7637706a569050d52b61626ec59748d4f7405e87
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474792"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768049"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasession:: Getenumtables](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-getenumtables).  
-  
 Recupera um enumerador para todas as tabelas contidas no repositório de símbolos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT getEnumTables (   
+HRESULT getEnumTables (   
    IDiaEnumTables** ppEnumTables  
 );  
 ```  

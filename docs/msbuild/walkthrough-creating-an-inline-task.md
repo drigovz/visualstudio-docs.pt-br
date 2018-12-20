@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a69fcd70350a000561464713ac18551daf38059a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2091bfa5408c85e4fb4dd4b8973a74d1da8b7132
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152056"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828657"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Passo a passo: Criar uma tarefa embutida
 As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implementa a interface <xref:Microsoft.Build.Framework.ITask>. A partir do .NET Framework versão 4, você pode criar tarefas embutidas no arquivo de projeto. Você não precisa criar um assembly separado para hospedar a tarefa. Para saber mais, confira [Tarefas embutidas](../msbuild/msbuild-inline-tasks.md).  
@@ -63,187 +63,187 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
   
 #### <a name="to-add-a-basic-hello-task"></a>Para adicionar uma tarefa básica Hello  
   
-1.  Na no nó raiz `Project`, altere o atributo `DefaultTargets` para `TestBuild`. O nó `Project` resultante deve ser semelhante a este exemplo:  
+1. Na no nó raiz `Project`, altere o atributo `DefaultTargets` para `TestBuild`. O nó `Project` resultante deve ser semelhante a este exemplo:  
   
-    ```xml
-    <Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    ```
+   ```xml
+   <Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+   ```
   
-2.  Adicione a seguinte tarefa embutida e o seguinte destino ao arquivo de projeto, imediatamente antes da marca `</Project>`.  
+2. Adicione a seguinte tarefa embutida e o seguinte destino ao arquivo de projeto, imediatamente antes da marca `</Project>`.  
   
-    ```xml  
-    <UsingTask TaskName="Hello" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup />  
-      <Task>  
-        <Code Type="Fragment" Language="cs">  
-          Log.LogMessage("Hello, world!", MessageImportance.High);  
-        </Code>  
-      </Task>  
-    </UsingTask>  
-    <Target Name="TestBuild">  
-      <Hello />  
-    </Target>  
-    ```  
+   ```xml  
+   <UsingTask TaskName="Hello" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup />  
+     <Task>  
+       <Code Type="Fragment" Language="cs">  
+         Log.LogMessage("Hello, world!", MessageImportance.High);  
+       </Code>  
+     </Task>  
+   </UsingTask>  
+   <Target Name="TestBuild">  
+     <Hello />  
+   </Target>  
+   ```  
   
-3.  Salve o arquivo de projeto.  
+3. Salve o arquivo de projeto.  
   
- Esse código cria uma tarefa embutida chamada Olá e não tem parâmetros, referências ou instruções `Using`. A tarefa Olá contém apenas uma linha de código, que exibe uma mensagem de saudação do dispositivo de registro em log padrão, normalmente a janela do console.  
+   Esse código cria uma tarefa embutida chamada Olá e não tem parâmetros, referências ou instruções `Using`. A tarefa Olá contém apenas uma linha de código, que exibe uma mensagem de saudação do dispositivo de registro em log padrão, normalmente a janela do console.  
   
 ### <a name="run-the-hello-task"></a>Executar a tarefa Hello  
  Execute o MSBuild com a **janela Prompt de comando** para construir a tarefa Olá e processar o destino TestBuild que a invoca.  
   
 ##### <a name="to-run-the-hello-task"></a>Para executar a tarefa Olá  
   
-1.  Clique em **Iniciar**, clique em **Todos os Programas** e, em seguida, localize a pasta **Ferramentas do Visual Studio** e clique em **Prompt de Comando do Visual Studio**.  
+1. Clique em **Iniciar**, clique em **Todos os Programas** e, em seguida, localize a pasta **Ferramentas do Visual Studio** e clique em **Prompt de Comando do Visual Studio**.  
   
-2.  Na **janela Prompt de Comando**, localize a pasta que contém o arquivo de projeto, nesse caso, *D:\InlineTasks\InlineTasks\\*.  
+2. Na **janela Prompt de Comando**, localize a pasta que contém o arquivo de projeto, nesse caso, *D:\InlineTasks\InlineTasks\\*.  
   
-3.  Digite **msbuild**, sem opções de comando e pressione **Enter**. Por padrão, isso cria o arquivo *InlineTasks.csproj* e processa o TestBuild de destino padrão, que chama a tarefa Hello.  
+3. Digite **msbuild**, sem opções de comando e pressione **Enter**. Por padrão, isso cria o arquivo *InlineTasks.csproj* e processa o TestBuild de destino padrão, que chama a tarefa Hello.  
   
-4.  Examine a saída na **janela do Prompt de Comando**. Você deverá ver esta linha:  
+4. Examine a saída na **janela do Prompt de Comando**. Você deverá ver esta linha:  
   
-     `Hello, world!`  
+    `Hello, world!`  
   
-    > [!NOTE]
-    >  Se você não vir a mensagem de saudação, tente salvar o arquivo de projeto novamente e, em seguida, execute a tarefa de Olá.  
+   > [!NOTE]
+   >  Se você não vir a mensagem de saudação, tente salvar o arquivo de projeto novamente e, em seguida, execute a tarefa de Olá.  
   
- Ao alternar entre o editor de códigos e a **janela do Prompt de Comando**, você poderá alterar o arquivo de projeto e ver os resultados rapidamente.  
+   Ao alternar entre o editor de códigos e a **janela do Prompt de Comando**, você poderá alterar o arquivo de projeto e ver os resultados rapidamente.  
   
 ## <a name="define-the-echo-task"></a>Definir a tarefa Echo  
  Crie uma tarefa embutida que aceita um parâmetro de cadeia de caracteres e exibe a cadeia de caracteres no dispositivo de registro em log padrão.  
   
 #### <a name="to-define-the-echo-task"></a>Para definir a tarefa Echo  
   
-1.  No editor de código, substitua a tarefa Olá e o destino TestBuild usando o código a seguir.  
+1. No editor de código, substitua a tarefa Olá e o destino TestBuild usando o código a seguir.  
   
-    ```xml  
-    <UsingTask TaskName="Echo" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup>  
-        <Text Required="true" />  
-      </ParameterGroup>  
-      <Task>  
-        <Code Type="Fragment" Language="cs">  
-          Log.LogMessage(Text, MessageImportance.High);  
-        </Code>  
-      </Task>  
-    </UsingTask>  
-    <Target Name="TestBuild">  
-      <Echo Text="Greetings!" />  
-    </Target>  
-    ```  
+   ```xml  
+   <UsingTask TaskName="Echo" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup>  
+       <Text Required="true" />  
+     </ParameterGroup>  
+     <Task>  
+       <Code Type="Fragment" Language="cs">  
+         Log.LogMessage(Text, MessageImportance.High);  
+       </Code>  
+     </Task>  
+   </UsingTask>  
+   <Target Name="TestBuild">  
+     <Echo Text="Greetings!" />  
+   </Target>  
+   ```  
   
-2.  Na **janela do Prompt de Comando**, digite **msbuild** sem opções de comando e pressione **Enter**. Por padrão, isso processa o TestBuild de destino padrão, que invoca a tarefa Echo.  
+2. Na **janela do Prompt de Comando**, digite **msbuild** sem opções de comando e pressione **Enter**. Por padrão, isso processa o TestBuild de destino padrão, que invoca a tarefa Echo.  
   
-3.  Examine a saída na **janela do Prompt de Comando**. Você deverá ver esta linha:  
+3. Examine a saída na **janela do Prompt de Comando**. Você deverá ver esta linha:  
   
-     `Greetings!`  
+    `Greetings!`  
   
- Esse código define uma tarefa embutida chamada Echo e tem apenas um parâmetro de entrada Text necessário. Por padrão, os parâmetros são do tipo System.String. O valor do parâmetro Text é definido quando o destino TestBuild invoca a tarefa de Echo.  
+   Esse código define uma tarefa embutida chamada Echo e tem apenas um parâmetro de entrada Text necessário. Por padrão, os parâmetros são do tipo System.String. O valor do parâmetro Text é definido quando o destino TestBuild invoca a tarefa de Echo.  
   
 ## <a name="define-the-adder-task"></a>Definir a tarefa Adder  
  Crie uma tarefa embutida que adiciona dois parâmetros inteiros e emite sua soma como uma propriedade de MSBuild.  
   
 #### <a name="to-define-the-adder-task"></a>Para definir a tarefa Adder  
   
-1.  No editor de código, substitua a tarefa Echo e o destino TestBuild usando o código a seguir.  
+1. No editor de código, substitua a tarefa Echo e o destino TestBuild usando o código a seguir.  
   
-    ```xml  
-    <UsingTask TaskName="Adder" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup>  
-        <A ParameterType="System.Int32" Required="true" />  
-        <B ParameterType="System.Int32" Required="true" />  
-        <C ParameterType="System.Int32" Output="true" />  
-      </ParameterGroup>  
-      <Task>  
-        <Code Type="Fragment" Language="cs">  
-          C = A + B;  
-        </Code>  
-      </Task>  
-    </UsingTask>    
-    <Target Name="TestBuild">  
-      <Adder A="4" B="5">  
-        <Output PropertyName="Sum" TaskParameter="C" />  
-      </Adder>  
-      <Message Text="The sum is $(Sum)" Importance="High" />  
-    </Target>  
-    ```  
+   ```xml  
+   <UsingTask TaskName="Adder" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup>  
+       <A ParameterType="System.Int32" Required="true" />  
+       <B ParameterType="System.Int32" Required="true" />  
+       <C ParameterType="System.Int32" Output="true" />  
+     </ParameterGroup>  
+     <Task>  
+       <Code Type="Fragment" Language="cs">  
+         C = A + B;  
+       </Code>  
+     </Task>  
+   </UsingTask>    
+   <Target Name="TestBuild">  
+     <Adder A="4" B="5">  
+       <Output PropertyName="Sum" TaskParameter="C" />  
+     </Adder>  
+     <Message Text="The sum is $(Sum)" Importance="High" />  
+   </Target>  
+   ```  
   
-2.  Na **janela do Prompt de Comando**, digite **msbuild** sem opções de comando e pressione **Enter**. Por padrão, isso processa o TestBuild de destino padrão, que invoca a tarefa Echo.  
+2. Na **janela do Prompt de Comando**, digite **msbuild** sem opções de comando e pressione **Enter**. Por padrão, isso processa o TestBuild de destino padrão, que invoca a tarefa Echo.  
   
-3.  Examine a saída na **janela do Prompt de Comando**. Você deverá ver esta linha:  
+3. Examine a saída na **janela do Prompt de Comando**. Você deverá ver esta linha:  
   
-     `The sum is 9`  
+    `The sum is 9`  
   
- Esse código define uma tarefa embutida chamada Adder e tem dois parâmetros necessários de entrada de inteiro, A e B, além de um parâmetro de saída inteiro, C. A tarefa adicionador adiciona dois parâmetros de entrada e retorna a soma no parâmetro de saída. A soma é emitida como a propriedade `Sum` do MSBuild. Os valores dos parâmetros de entrada são definidos quando o destino TestBuild invoca a tarefa Adder.  
+   Esse código define uma tarefa embutida chamada Adder e tem dois parâmetros necessários de entrada de inteiro, A e B, além de um parâmetro de saída inteiro, C. A tarefa adicionador adiciona dois parâmetros de entrada e retorna a soma no parâmetro de saída. A soma é emitida como a propriedade `Sum` do MSBuild. Os valores dos parâmetros de entrada são definidos quando o destino TestBuild invoca a tarefa Adder.  
   
 ## <a name="define-the-regx-task"></a>Definir a tarefa RegX  
  Crie uma tarefa embutida que aceite um grupo de itens e uma expressão regular e retorne uma lista de todos os itens que tenham conteúdo do arquivo que corresponda à expressão.  
   
 #### <a name="to-define-the-regx-task"></a>Para definir a tarefa RegX  
   
-1.  No editor de código, substitua a tarefa Adder e o destino TestBuild usando o código a seguir.  
+1. No editor de código, substitua a tarefa Adder e o destino TestBuild usando o código a seguir.  
   
-    ```xml  
-    <UsingTask TaskName="RegX" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup>  
-        <Expression Required="true" />  
-        <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
-        <Result ParameterType="Microsoft.Build.Framework.ITaskItem[]" Output="true" />  
-      </ParameterGroup>  
-      <Task>  
-        <Using Namespace="System.Text.RegularExpressions"/>  
-        <Code Type="Fragment" Language="cs">  
-    <![CDATA[  
-          if (Files.Length > 0)  
-          {  
-            Result = new TaskItem[Files.Length];  
-            for (int i = 0; i < Files.Length; i++)  
-            {  
-              ITaskItem item = Files[i];  
-              string path = item.GetMetadata("FullPath");  
-              using(StreamReader rdr = File.OpenText(path))  
-              {  
-                if (Regex.Match(rdr.ReadToEnd(), Expression).Success)  
-                {  
-                  Result[i] = new TaskItem(item.ItemSpec);  
-                }  
-              }  
-            }  
-          }  
-    ]]>  
-        </Code>  
-      </Task>  
-    </UsingTask>    
-    <Target Name="TestBuild">  
-      <RegX Expression="public|protected" Files="@(Compile)">  
-        <Output ItemName="MatchedFiles" TaskParameter="Result" />  
-      </RegX>  
-      <Message Text="Input files: @(Compile)" Importance="High" />  
-      <Message Text="Matched files: @(MatchedFiles)" Importance="High" />  
-    </Target>  
-    ```  
+   ```xml  
+   <UsingTask TaskName="RegX" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup>  
+       <Expression Required="true" />  
+       <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
+       <Result ParameterType="Microsoft.Build.Framework.ITaskItem[]" Output="true" />  
+     </ParameterGroup>  
+     <Task>  
+       <Using Namespace="System.Text.RegularExpressions"/>  
+       <Code Type="Fragment" Language="cs">  
+   <![CDATA[  
+         if (Files.Length > 0)  
+         {  
+           Result = new TaskItem[Files.Length];  
+           for (int i = 0; i < Files.Length; i++)  
+           {  
+             ITaskItem item = Files[i];  
+             string path = item.GetMetadata("FullPath");  
+             using(StreamReader rdr = File.OpenText(path))  
+             {  
+               if (Regex.Match(rdr.ReadToEnd(), Expression).Success)  
+               {  
+                 Result[i] = new TaskItem(item.ItemSpec);  
+               }  
+             }  
+           }  
+         }  
+   ]]>  
+       </Code>  
+     </Task>  
+   </UsingTask>    
+   <Target Name="TestBuild">  
+     <RegX Expression="public|protected" Files="@(Compile)">  
+       <Output ItemName="MatchedFiles" TaskParameter="Result" />  
+     </RegX>  
+     <Message Text="Input files: @(Compile)" Importance="High" />  
+     <Message Text="Matched files: @(MatchedFiles)" Importance="High" />  
+   </Target>  
+   ```  
   
-2.  Na **janela do Prompt de Comando**, digite **msbuild** sem opções de comando e pressione **Enter**. Por padrão, isso processa o TestBuild de destino padrão, que invoca a tarefa RegX.  
+2. Na **janela do Prompt de Comando**, digite **msbuild** sem opções de comando e pressione **Enter**. Por padrão, isso processa o TestBuild de destino padrão, que invoca a tarefa RegX.  
   
-3.  Examine a saída na **janela do Prompt de Comando**. Você deverá ver estas linhas:  
+3. Examine a saída na **janela do Prompt de Comando**. Você deverá ver estas linhas:  
   
-    ```
-    Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
-    ```  
+   ```
+   Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
+   ```  
   
-    ```
-    Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs
-    ```  
+   ```
+   Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs
+   ```  
   
- Esse código define uma tarefa embutida chamada RegX e tem estes três parâmetros:  
+   Esse código define uma tarefa embutida chamada RegX e tem estes três parâmetros:  
   
--   `Expression` é um parâmetro de entrada de cadeia de caracteres obrigatório que tem um valor que é a expressão regular com a qual a correspondência deve ser realizada. Neste exemplo, a expressão corresponde às palavras "public" ou "protected".  
+- `Expression` é um parâmetro de entrada de cadeia de caracteres obrigatório que tem um valor que é a expressão regular com a qual a correspondência deve ser realizada. Neste exemplo, a expressão corresponde às palavras "public" ou "protected".  
   
--   `Files` é um parâmetro de entrada de lista de item obrigatório que tem um valor que é uma lista de arquivos a serem pesquisados em busca da correspondência. Neste exemplo, `Files` é definido como o item `Compile`, que lista os arquivos de origem do projeto.  
+- `Files` é um parâmetro de entrada de lista de item obrigatório que tem um valor que é uma lista de arquivos a serem pesquisados em busca da correspondência. Neste exemplo, `Files` é definido como o item `Compile`, que lista os arquivos de origem do projeto.  
   
--   `Result` é um parâmetro de saída que tem um valor que é a lista de arquivos com o conteúdo que corresponde à expressão regular.  
+- `Result` é um parâmetro de saída que tem um valor que é a lista de arquivos com o conteúdo que corresponde à expressão regular.  
   
- Os valores dos parâmetros de entrada são definidos quando o destino TestBuild invoca a tarefa RegX. A tarefa RegX lê todos os arquivos e retorna a lista de arquivos que correspondem à expressão regular. Essa lista é retornada como o parâmetro de saída `Result`, que é emitido como o item `MatchedFiles` do MSBuild.  
+  Os valores dos parâmetros de entrada são definidos quando o destino TestBuild invoca a tarefa RegX. A tarefa RegX lê todos os arquivos e retorna a lista de arquivos que correspondem à expressão regular. Essa lista é retornada como o parâmetro de saída `Result`, que é emitido como o item `MatchedFiles` do MSBuild.  
   
 ### <a name="handle-reserved-characters"></a>Gerenciar caracteres reservados  
  O analisador de MSBuild processa tarefas embutidas como XML. Caracteres que têm significado reservado em XML, por exemplo, "\<" e ">", são detectados e manipulados como se fossem XML e não código-fonte .NET. Para incluir os caracteres reservados em expressões de código como `Files.Length > 0`, escreva o elemento `Code` para que seu conteúdo fique contido em uma expressão CDATA, da seguinte maneira:  

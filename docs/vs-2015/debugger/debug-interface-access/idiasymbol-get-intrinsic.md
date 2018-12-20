@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_intrinsic | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_intrinsic method
 ms.assetid: f969f595-d9f9-48b9-adaa-63a6e4e09575
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 636a9dd48d8fe85befdd90050d2fdf753203490c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4518744ee85adc5d4deed33fbaae4b553ed75c3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464025"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738008"
 ---
 # <a name="idiasymbolgetintrinsic"></a>IDiaSymbol::get_intrinsic
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_intrinsic](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-intrinsic).  
-  
 Recupera um sinalizador que especifica se uma classe é um tipo intrínseco.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_intrinsic(   
+HRESULT get_intrinsic(   
    BOOL* pRetVal)  
 );  
 ```  

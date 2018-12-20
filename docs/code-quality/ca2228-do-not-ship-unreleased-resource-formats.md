@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ea3a470ab6b6d9cf3e7daeaf24cd82d0f7ac387
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 71667a9d00dd1935e8eaeb281c5f0c6834208702
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858491"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244392"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: não remeter formatos de recurso não lançados
+
 |||
 |-|-|
 |NomeDoTipo|DoNotShipUnreleasedResourceFormats|
@@ -38,7 +39,7 @@ ms.locfileid: "47858491"
  Arquivos de recursos que foram compilados usando versões de pré-lançamento do .NET Framework não podem ser usados por versões com suporte do .NET Framework.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, crie o recurso usando uma versão compatível do Frameworkk .NET.
+ Para corrigir uma violação dessa regra, crie o recurso usando uma versão com suporte do .NET Framework.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Não suprima um aviso nessa regra.

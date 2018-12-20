@@ -1,7 +1,7 @@
 ---
 title: FIELD_KIND_EX | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b4f2dc56d9199742fad9fc15614f1c1d4e619fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c56d41dcc7ebbdb8565ff265c88e33aef095abc6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464465"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729233"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [FIELD_KIND_EX](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/field-kind-ex).  
-  
 Enumera os tipos de campos adicionais que um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto pode conter. Esta enumeração estende o [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  

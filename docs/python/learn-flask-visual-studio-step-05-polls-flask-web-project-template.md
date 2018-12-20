@@ -1,5 +1,6 @@
 ---
-title: Tutorial – Saiba mais sobre o Flask no Visual Studio, etapa 5
+title: Tutorial Aprenda a usar o Flask no Visual Studio, etapa 5, modelo de projeto Votações
+titleSuffix: ''
 description: Um passo a passo das noções básicas do Flask no contexto dos projetos do Visual Studio, especificamente as funcionalidades dos modelos de Pesquisas do Projeto Web do Flask e Pesquisas do Projeto Web do Flask/Jade.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 418ea3661f236866bbadcf278f288632c5e49435
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a29e222df2a8443e9d5210c0382125cdc65a814f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280088"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065993"
 ---
-# <a name="step-5-use-the-polls-flask-web-project-template"></a>Etapa 5 – Usar o modelo Projeto Web do Flask de pesquisas
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Etapa 5: Usar o modelo de Projeto Web Votações do Flask
 
-**Etapa anterior: [Usar o modelo Projeto Web completo do Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**Etapa anterior: [Usar o modelo completo de Projeto Web do Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 Depois de entender o modelo "Projeto Web do Flask" do Visual Studio, agora será possível examinar o terceiro modelo do Flask, "Pesquisas do Projeto Web do Flask", criado sobre a mesma base de código.
 
@@ -228,15 +230,15 @@ def seed():
     return redirect('/')
 ```
 
-A chamada a `repository.add_sample_polls()` termina em uma das implementações `Repository` específicas para seu armazenamento de dados escolhido. Cada implementação chama o método `_load_samples_json` encontrado em *models\__init__.py* para carregar o arquivo *models\samples.json* na memória. Em seguida, ela itera por esses dados para criar os objetos `Poll` e `Choice` necessários no armazenamento de dados.
+A chamada a `repository.add_sample_polls()` termina em uma das implementações `Repository` específicas para seu armazenamento de dados escolhido. Cada implementação chama o método `_load_samples_json` encontrado em *models\_\_init\_\_.py* para carregar o arquivo *models\samples.json* na memória. Em seguida, ela itera por esses dados para criar os objetos `Poll` e `Choice` necessários no armazenamento de dados.
 
 Após a conclusão desse processo, a instrução `redirect('/')` no método `seed` navega de volta para a home page. Como agora `repository.get_polls` retorna um objeto de dados, as marcas condicionais em *templates\index.html* agora renderizam uma tabela que contém as votações.
 
-### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Pergunta: como adicionar novas votações ao aplicativo?
+### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Pergunta: Como adicionar novas votações ao aplicativo?
 
-Resposta: o aplicativo, conforme fornecido por meio do modelo de projeto, não inclui uma facilidade para adicionar ou editar votações. É possível modificar *models\samples.json* para criar dados de inicialização, mas fazer isso significará redefinir o armazenamento de dados. Para implementar funcionalidades de edição, é necessário estender a interface de classe `Repository` com métodos para criar as instâncias `Choice` e `Poll` necessárias. Em seguida, implemente uma interface do usuário em outras páginas que usam esses métodos.
+Resposta: O aplicativo, conforme fornecido por meio do modelo de projeto, não inclui uma funcionalidade para adição ou edição de votações. É possível modificar *models\samples.json* para criar dados de inicialização, mas fazer isso significará redefinir o armazenamento de dados. Para implementar funcionalidades de edição, é necessário estender a interface de classe `Repository` com métodos para criar as instâncias `Choice` e `Poll` necessárias. Em seguida, implemente uma interface do usuário em outras páginas que usam esses métodos.
 
-## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Etapa 5-4: Compreender os detalhes da votação e as visualizações dos resultados
+## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Etapa 5-4: Compreender os detalhes da votação e as exibições dos resultados
 
 A maioria dos modos de exibição gerados pelos modelos "Pesquisas do Projeto Web do Flask" e "Pesquisas do Projeto Web do Flask/Jade", como os modos de exibição para as páginas Sobre e Contato, é muito semelhantes aos modos de exibição criados pelo modelo "Projeto Web do Flask" (ou "Projeto Web do Flask/Jade") com o qual você trabalhou anteriormente neste tutorial. Na seção anterior você também aprendeu como a home page é implementada para mostrar o botão de inicialização ou a lista de votações.
 
@@ -352,11 +354,8 @@ Agora você explorou a totalidade dos modelos "Projeto Web em Branco do Flask", 
 
 A execução de um aplicativo Web no computador de desenvolvimento é apenas uma etapa para disponibilizar o aplicativo para seus clientes. As próximas etapas podem incluir as seguintes tarefas:
 
-- Implante o aplicativo Web em um servidor de produção, como o Serviço de Aplicativo do Azure. Consulte [Publish to Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md) (Publicar no Serviço de Aplicativo do Azure), que inclui alterações específicas necessárias para aplicativos do Flask.
+- Implante o aplicativo Web em um servidor de produção, como o Serviço de Aplicativo do Azure. Confira [Publicar no Serviço de Aplicativo do Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 - Adicione uma implementação de repositório que usa outro armazenamento de dados em nível de produção como o PostgreSQL, o MySQL e o SQL Server (que podem ser hospedados no Azure). Também é possível usar o [SDK do Azure para Python](azure-sdk-for-python.md) para trabalhar com serviços de armazenamento do Azure como tabelas e blobs, bem como o Cosmos DB.
 
-- Configure um pipeline de integração contínua/implantação contínua em um serviço como o Azure Pipelines. Além de trabalhar com o controle do código-fonte (no Azure Repos, no GitHub ou em outro local), você pode fazer com que o Azure Test Plans execute automaticamente os testes de unidade como um pré-requisito para o lançamento, bem como configurar o pipeline para implantação em um servidor de preparo para testes adicionais antes de implantar na produção. Além disso, o Azure DevOps Services se integra com soluções de monitoramento, como o App Insights, e fecha o ciclo de inteiro com ferramentas ágeis de planejamento. Para obter mais informações, consulte:
-
-  - [Criar um pipeline de CI/CD para Python com os Projetos de DevOps do Azure](/azure/devops-project/azure-devops-project-python?view=vsts)
-  - [Desenvolvimento do Python no Azure com o Visual Studio Team Services (vídeo, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).
+- Configure um pipeline de integração contínua/implantação contínua em um serviço como o Azure DevOps. Além de trabalhar com o controle do código-fonte (por meio do Azure Repos, do GitHub ou em outro local), você pode configurar um projeto do Azure DevOps para executar automaticamente os testes de unidade como um pré-requisito para o lançamento, bem como configurar o pipeline para implantação em um servidor de preparo para testes adicionais antes de implantar na produção. O Azure DevOps, além disso, integra-se às soluções de monitoramento, como o App Insights e fecha o ciclo de inteiro com ferramentas ágeis de planejamento. Para saber mais, confira [Criar um pipeline de CI/CD para Python com o projeto do Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts) e também a [documentação geral do Azure DevOps](/azure/devops/?view=vsts).

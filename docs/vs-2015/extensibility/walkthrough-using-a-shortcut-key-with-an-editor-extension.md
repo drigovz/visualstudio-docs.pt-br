@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Usando uma tecla de atalho com uma extensão do Editor | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e8497b4b8192c4ad888c850b9ec2ab37c89f334
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 1e68cf9d3e33ad07ab092de680078972dfaf2d70
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460872"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797449"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Passo a passo: usando uma tecla de atalho com uma extensão do editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: usando uma tecla de atalho com uma extensão do Editor](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension).  
-  
 Você pode responder a teclas de atalho em sua extensão de editor. A instrução a seguir mostra como adicionar um adorno de exibição para uma exibição de texto usando uma tecla de atalho. Este passo a passo se baseia no modelo de editor do adorno de visor e permite que você adicionar o adorno, usando o caractere +.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
@@ -34,21 +32,21 @@ Você pode responder a teclas de atalho em sua extensão de editor. A instruçã
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Criando um projeto do Managed Extensibility Framework (MEF)  
   
-1.  Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual c# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `KeyBindingTest`.  
+1. Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual c# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `KeyBindingTest`.  
   
-2.  Adicione um modelo de item de adornos de texto do Editor ao projeto e denomine- `KeyBindingTest`. Para obter mais informações, consulte [criar uma extensão com um modelo de Item Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Adicione um modelo de item de adornos de texto do Editor ao projeto e denomine- `KeyBindingTest`. Para obter mais informações, consulte [criar uma extensão com um modelo de Item Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Adicione as seguintes referências e defina **CopyLocal** para `false`:  
+3. Adicione as seguintes referências e defina **CopyLocal** para `false`:  
   
-     Microsoft.VisualStudio.Editor  
+    Microsoft.VisualStudio.Editor  
   
-     Microsoft.VisualStudio.OLE.Interop  
+    Microsoft.VisualStudio.OLE.Interop  
   
-     Microsoft.VisualStudio.Shell.14.0  
+    Microsoft.VisualStudio.Shell.14.0  
   
-     Microsoft.VisualStudio.TextManager.Interop  
+    Microsoft.VisualStudio.TextManager.Interop  
   
- No arquivo de classe KeyBindingTest, altere o nome de classe para PurpleCornerBox. Use a lâmpada que aparece na margem esquerda para fazer outras alterações apropriadas. Dentro do construtor, altere o nome da camada de adorno **KeyBindingTest** à **PurpleCornerBox**:  
+   No arquivo de classe KeyBindingTest, altere o nome de classe para PurpleCornerBox. Use a lâmpada que aparece na margem esquerda para fazer outras alterações apropriadas. Dentro do construtor, altere o nome da camada de adorno **KeyBindingTest** à **PurpleCornerBox**:  
   
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
@@ -73,7 +71,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 3.  A classe denominada KeyBindingCommandFilter deve herdar de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
     ```csharp  
-    internal class KeyBindingCommandFilter : IOleCommandTarget  
+    internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
 4.  Adicione campos privados para o modo de exibição de texto, o próximo comando na cadeia de comando e um sinalizador para representar se o filtro de comando já foi adicionado.  
@@ -81,8 +79,8 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     ```csharp  
     private IWpfTextView m_textView;  
     internal IOleCommandTarget m_nextTarget;  
-    internal bool m_added;  
-    internal bool m_adorned;  
+    internal bool m_added;  
+    internal bool m_adorned;  
     ```  
   
 5.  Adicione um construtor que define o modo de texto.  

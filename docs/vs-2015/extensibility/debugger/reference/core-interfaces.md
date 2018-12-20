@@ -1,7 +1,7 @@
 ---
 title: Principais Interfaces | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,64 +15,62 @@ ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2223059344c8f3d15eb94edc0dc2d2d1dc6fa336
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea9a80bf469d0555b07d48ca48b158027c90abb7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467581"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764794"
 ---
 # <a name="core-interfaces"></a>Interfaces principais
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [principais Interfaces](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/core-interfaces).  
-  
 As seguintes interfaces são interfaces principais para estender o depurador, usando o [!INCLUDE[vsipsdk](../../../includes/vsipsdk-md.md)].  
   
 ## <a name="discussion"></a>Discussão  
  Essas interfaces são usadas principalmente para criar o mecanismo de depuração (DES). Elas são organizadas aqui por categorias:  
   
--   [Pontos de interrupção](#Breakpoints)  
+- [Pontos de interrupção](#Breakpoints)  
   
--   [Contextos](#Contexts)  
+- [Contextos](#Contexts)  
   
--   [Server Core](#CoreServer)  
+- [Server Core](#CoreServer)  
   
--   [Mecanismos de depuração](#DebugEngines)  
+- [Mecanismos de depuração](#DebugEngines)  
   
--   [Documentos](#Documents)  
+- [Documentos](#Documents)  
   
--   [Eventos](#Events)  
+- [Eventos](#Events)  
   
--   [Expressões](#Expressions)  
+- [Expressões](#Expressions)  
   
--   [Memória](#Memory)  
+- [Memória](#Memory)  
   
--   [Módulos](#Modules)  
+- [Módulos](#Modules)  
   
--   [Portas](#Ports)  
+- [Portas](#Ports)  
   
--   [Processos](#Processes)  
+- [Processos](#Processes)  
   
--   [Programas](#Programs)  
+- [Programas](#Programs)  
   
--   [Propriedades](#Properties)  
+- [Propriedades](#Properties)  
   
--   [Registros de ativação](#StackFrames)  
+- [Registros de ativação](#StackFrames)  
   
--   [Threads](#Threads)  
+- [Threads](#Threads)  
   
--   [Visualizadores de tipo](#TypeVisualizers)  
+- [Visualizadores de tipo](#TypeVisualizers)  
   
- As entidades que podem implementar as interfaces são:  
+  As entidades que podem implementar as interfaces são:  
   
--   Debug Engine (DE)  
+- Debug Engine (DE)  
   
--   Fornecedor de porta (PS)  
+- Fornecedor de porta (PS)  
   
--   Avaliador de expressão (EE)  
+- Avaliador de expressão (EE)  
   
--   Visual Studio (VS)  
+- Visual Studio (VS)  
   
 ##  <a name="Breakpoints"></a> Pontos de interrupção  
  Essas interfaces são relacionadas para a implementação e o rastreamento de pontos de interrupção.  

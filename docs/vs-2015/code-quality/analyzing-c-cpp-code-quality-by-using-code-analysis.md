@@ -1,7 +1,7 @@
 ---
 title: Analisando a qualidade do código do C / C++ usando a análise de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,21 +19,19 @@ helpviewer_keywords:
 - C, code analysis
 ms.assetid: 03b8b47a-e9d8-4692-835f-2d22ec6c76a4
 caps.latest.revision: 37
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: dda0e5ee66834c4e57f0614ca855ec8b5a251aa6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 130bd8f4507e59ec9a5b86352877f8e000745492
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472937"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780133"
 ---
 # <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>Analisando a qualidade do código do C/C++ usando a análise de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [analisando a qualidade do código do C/C++ usando a análise de código](https://docs.microsoft.com/visualstudio/code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis).  
-  
 Você pode melhorar seu código C/C++ usando a análise de código no Visual Studio para encontrar e corrigir defeitos de código.  
   
 ## <a name="in-this-section"></a>Nesta seção  

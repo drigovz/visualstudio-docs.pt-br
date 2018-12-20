@@ -1,14 +1,14 @@
 ---
 title: Formatar especificadores em C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -30,30 +30,28 @@ helpviewer_keywords:
 - debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 caps.latest.revision: 45
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d495fff6848a8d62be5a4471ee6a036cf9054fff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6634124e7dc0b50236a9fd6ff9c5c5388c3063bc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475345"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810514"
 ---
 # <a name="format-specifiers-in-c"></a>Especificadores de formato em C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [especificadores de formato em C++](https://docs.microsoft.com/visualstudio/debugger/format-specifiers-in-cpp).  
-  
 Você pode alterar o formato no qual um valor é exibido na **inspeção** janela usando especificadores de formato.  
   
  Você também pode usar especificadores de formato na **Immediate** janela, o **comando** janela e até mesmo em janelas de origem. Se você pausar em uma expressão nessas janelas, o resultado aparecerá em uma DataTip. A exibição de DataTip reflete o especificador de formato.  
   
 > [!NOTE]
 >  O depurador nativo do Visual Studio foi alterado para um novo mecanismo de depuração. Como parte dessa alteração, alguns novos especificadores de formato foram adicionados e alguns antigos foram removidos. O depurador antigo ainda é usado quando você fizer interop (nativa e gerenciada combinadas) depuração com c++ CLI. As seções a seguir neste tópico mostram os especificadores de formato para cada mecanismo de depuração.  
->   
->  -   [Especificadores de formato](#BKMK_Visual_Studio_2012_format_specifiers) descreve os especificadores de formato no novo mecanismo de depuração.  
-> -   [Especificadores de formato para depuração interop com c++ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) descreve os especificadores de formato no mecanismo de depuração antigo.  
+> 
+> - [Especificadores de formato](#BKMK_Visual_Studio_2012_format_specifiers) descreve os especificadores de formato no novo mecanismo de depuração.  
+>   -   [Especificadores de formato para depuração interop com c++ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) descreve os especificadores de formato no mecanismo de depuração antigo.  
   
 ## <a name="using-format-specifiers"></a>Usando especificadores de formato  
  Se você tiver o seguinte código:  
@@ -122,7 +120,7 @@ int main() {
 |**l, h**|prefixo longo ou curto para: d, i, u, o, x, X|00406042|0x0c22|  
 |**f**|ponto flutuante assinado|(3./2.), f|1.500000|  
 |**e**|notação científica assinada|(3.0/2.0)|1.500000e+000|  
-|**g**g|ponto flutuante assinado ou notação científica assinada, o que for menor|(3.0/2.0)|1.5|  
+|**g**|ponto flutuante assinado ou notação científica assinada, o que for menor|(3.0/2.0)|1.5|  
 |c|caractere único|\<location>|101 'e'|  
 |s|Const char *|\<location>|"hello world"|  
 |su|Const wchar_t *<br /><br /> char16_t const\*|\<location>|L "hello world"|  

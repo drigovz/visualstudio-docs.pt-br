@@ -1,7 +1,7 @@
 ---
 title: 'Como: executar o processo de trabalho em uma conta de usuário | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,21 +22,19 @@ helpviewer_keywords:
 - aspnet_wp.exe
 ms.assetid: b58e97b1-e62a-4318-aea4-52276ea20735
 caps.latest.revision: 35
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08ac00384110cc73175286365fef6ee4b67a0170
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5d9e9cbadd2b7154eeb84bad99239e0b026eecd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463021"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734445"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Como executar o processo de trabalho em uma conta de usuário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: executar o trabalho processo sob uma conta de usuário](https://docs.microsoft.com/visualstudio/debugger/how-to-run-the-worker-process-under-a-user-account).  
-  
 Para configurar o computador de modo que você possa executar o processo de trabalho do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] (aspnet_wp.exe ou w3wp.exe) em uma conta de usuário, siga estas etapas.  
   
 ## <a name="procedure"></a>Procedimento  

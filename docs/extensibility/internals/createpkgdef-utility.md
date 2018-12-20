@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0809c7acde2959fb91aa964fec137f63a7a995dc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 47fee24292ee92b34cea6add21bc220a1a17f135
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867657"
 ---
 # <a name="createpkgdef-utility"></a>Utilitário CreatePkgDef
 Usa um arquivo. dll para uma extensão do Visual Studio como um parâmetro e cria um *pkgdef* arquivo para acompanhar as *. dll* arquivo. O *pkgdef* arquivo contém todas as informações que, caso contrário, seriam gravadas no registro do sistema quando a extensão está instalada.  
@@ -53,13 +53,13 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
   
  O *pkgdef* arquivos devem ser instalados em um dos seguintes locais: 
 
- - *%LocalAppData%\Microsoft\Visual Studio\14.0\Extensions\\* 
+- *%LocalAppData%\Microsoft\Visual Studio\14.0\Extensions\\* 
  
- - *%vsinstalldir%\Common7\IDE\Extensions\\*
+- *%vsinstalldir%\Common7\IDE\Extensions\\*
     
- Se a pasta de instalação estiver *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, a extensão será reconhecida pelo Visual Studio, mas será desabilitada por padrão. O usuário pode habilitar a extensão usando **extensões e atualizações**. 
+  Se a pasta de instalação estiver *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, a extensão será reconhecida pelo Visual Studio, mas será desabilitada por padrão. O usuário pode habilitar a extensão usando **extensões e atualizações**. 
    
- Se a pasta de instalação estiver *%vsinstalldir%\Common7\IDE\Extensions\\*, a extensão está habilitada por padrão.  
+  Se a pasta de instalação estiver *%vsinstalldir%\Common7\IDE\Extensions\\*, a extensão está habilitada por padrão.  
   
 > [!NOTE]
 >  O **extensões e atualizações** ferramenta não pode ser usada para acessar uma extensão, a menos que ele é instalado como parte de um pacote VSIX.  

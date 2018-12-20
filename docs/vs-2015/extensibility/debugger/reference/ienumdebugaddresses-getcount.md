@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugAddresses::GetCount | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f2ca8ff8-539f-457c-83f8-9bbf97618065
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 020a547b5557dd97c3482cf2ea596e3edd913b27
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b9ce150eac3137c9fd078fd111b83a517f1b825
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461722"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729912"
 ---
 # <a name="ienumdebugaddressesgetcount"></a>IEnumDebugAddresses::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugAddresses::GetCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugaddresses-getcount).  
-  
 Esse método retorna o número de elementos na enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  

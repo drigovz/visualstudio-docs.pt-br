@@ -1,7 +1,7 @@
 ---
 title: Elemento EnableLocationBrowseButton (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a12d10d8-af49-482a-af77-e084fd07a47d
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee375914a732c61053d505e098cd1f5b7a6e0c48
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 04d5710012840079e3381f09725b96b8f329872d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465311"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795733"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Elemento EnableLocationBrowseButton (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento EnableLocationBrowseButton (modelos do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/enablelocationbrowsebutton-element-visual-studio-templates).  
-  
 Especifica se o **navegue** botão está disponível na **novo projeto** caixa de diálogo, para que os usuários podem facilmente modificar o diretório padrão em que um novo projeto é salvo.  
   
  \<VSTemplate >  

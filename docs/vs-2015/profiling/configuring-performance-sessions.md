@@ -1,7 +1,7 @@
 ---
 title: Configurando sessões de desempenho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ helpviewer_keywords:
 - performance, gathering data
 ms.assetid: e1c3ba41-ffca-4edf-9a7f-8a5a9244ef9b
 caps.latest.revision: 41
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e804e1638574d6918a1db4effbfbc1c20c80f63e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 280d9023167b4d83dfb8b0137301219a518521b9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464882"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790390"
 ---
 # <a name="configuring-performance-sessions"></a>Configurando sessões de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Configurando sessões de desempenho](https://docs.microsoft.com/visualstudio/profiling/configuring-performance-sessions).  
-  
 Usando as Ferramentas de criação de perfil [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], é possível coletar uma grande variedade de dados de desempenho para um grande número de tipos de aplicativos. Esta seção mostra como usar o Assistente de Desempenho, as propriedades da sessão de desempenho e o binário de destino para configurar as Ferramentas de Criação de Perfil para coletar os dados que lhe interessam. As propriedades de configuração das Ferramentas de Criação de Perfil também podem ser usadas para controlar a quantidade de dados coletada em uma execução de criação de perfil. Para obter mais informações, consulte [Controlling Data Collection (Controlando a coleta de dados)](../profiling/controlling-data-collection.md).  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 'CA2126: Demandas do link de tipo exigem demandas de herança | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3f482350517858fffc74600c3743a22192aa6a49
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 940e6f95d029b7f18e335dea239f0d9ed637c37b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587173"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854631"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: demandas do link de tipo exigem demandas de herança
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA2126: demandas de link de tipo exigem demandas de herança](https://docs.microsoft.com/visualstudio/code-quality/ca2126-type-link-demands-require-inheritance-demands).
 
 |||
 |-|-|

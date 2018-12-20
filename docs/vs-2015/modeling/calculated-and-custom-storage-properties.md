@@ -1,7 +1,7 @@
 ---
 title: Propriedades de armazenamento calculadas e personalizadas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e11ae9833d61e2ff48341b577d6aa1cdbc54afc6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82d90d6965558ba6d28753fb71b3b227a84467a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852850"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriedades calculadas e de armazenamento personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [Calculated e propriedades de armazenamento personalizado](https://docs.microsoft.com/visualstudio/modeling/calculated-and-custom-storage-properties).  
-  
 Todas as propriedades de domínio em uma linguagem específica de domínio (DSL) podem ser exibidas para o usuário no diagrama e no Gerenciador de linguagem e podem ser acessadas pelo código do programa. No entanto, as propriedades são diferentes da maneira que seus valores são armazenados.  
   
 ## <a name="kinds-of-domain-properties"></a>Tipos de propriedades de domínio  
@@ -95,11 +93,11 @@ Todas as propriedades de domínio em uma linguagem específica de domínio (DSL)
   
  No entanto, o método de conjunto também pode ser chamado se o usuário invoca desfazer ou refazer, ou se uma transação está sendo revertida. Quando <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> for true, seu método Set deve se comportar da seguinte maneira:  
   
--   Ele não deve fazer alterações no repositório, como atribuindo valores a outras propriedades de domínio. O Gerenciador de desfazer definirá seus valores.  
+- Ele não deve fazer alterações no repositório, como atribuindo valores a outras propriedades de domínio. O Gerenciador de desfazer definirá seus valores.  
   
--   No entanto, ele deve atualizar todos os recursos externos, como objetos fora do repositório de banco de dados ou conteúdo do arquivo. Isso irá assegurar que elas são mantidas em synchronism com os valores no repositório.  
+- No entanto, ele deve atualizar todos os recursos externos, como objetos fora do repositório de banco de dados ou conteúdo do arquivo. Isso irá assegurar que elas são mantidas em synchronism com os valores no repositório.  
   
- Por exemplo:  
+  Por exemplo:  
   
 ```  
 void SetAgeValue(int value)  

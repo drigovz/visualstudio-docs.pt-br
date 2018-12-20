@@ -1,7 +1,7 @@
 ---
 title: Testar aplicativos Windows UWP e 8.1 do Windows Phone com testes de UI codificados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c9472346212d68b3ee682450995d55eb0a5ddd9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 808482fdd7599adb270fe7634d61d4b88acb0d80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890135"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testar aplicativos Windows UWP e 8.1 do Windows Phone com testes de UI codificados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [teste Windows UWP e aplicativos do Phone 8.1 com testes de IU codificados](https://docs.microsoft.com/visualstudio/test/test-windows-phone-8-1-apps-with-coded-ui-tests).  
-  
 Use este passo a passo para criar testes de interface do usuário para aplicativos UWP que são executados em dispositivos móveis ou emuladores e aplicativos do Windows Phone 8.1 com base em XAML.   
   
 ## <a name="create-a-simple-windows-phone-app"></a>Criar um aplicativo simples do Windows Phone  
@@ -87,37 +85,37 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
 
 [Como criar testes de IU codificados para aplicativos UWP (Plataforma Universal do Windows)?](#uwpapps)
   
-1.  Acrescente o novo projeto de teste de IU codificado à solução no aplicativo do Windows Phone.  
+1. Acrescente o novo projeto de teste de IU codificado à solução no aplicativo do Windows Phone.  
   
-     ![Criar novo teste de IU codificado para Windows Phone](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
+    ![Criar novo teste de IU codificado para Windows Phone](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
   
-2.  Escolha editar o mapa de interface do usuário usando a ferramenta de fios.  
+2. Escolha editar o mapa de interface do usuário usando a ferramenta de fios.  
   
-     ![Gerar um teste de IU codificado usando a ferramenta de fios.](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
+    ![Gerar um teste de IU codificado usando a ferramenta de fios.](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
   
-3.  Use a ferramenta de fios para selecionar o aplicativo. Em seguida, copie o valor da propriedade **AutomationId** do aplicativo, que será usado posteriormente para iniciar o aplicativo no teste.  
+3. Use a ferramenta de fios para selecionar o aplicativo. Em seguida, copie o valor da propriedade **AutomationId** do aplicativo, que será usado posteriormente para iniciar o aplicativo no teste.  
   
-     ![Copiar o valor de AutomationId do aplicativo](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
+    ![Copiar o valor de AutomationId do aplicativo](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
   
-4.  No emulador, inicie o aplicativo e use a ferramenta de fios para selecionar o controle de botão. Em seguida, acrescente o controle de botão ao mapa de controle da interface de usuário.  
+4. No emulador, inicie o aplicativo e use a ferramenta de fios para selecionar o controle de botão. Em seguida, acrescente o controle de botão ao mapa de controle da interface de usuário.  
   
-     ![Usar a ferramenta de fios para mapear controles](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
+    ![Usar a ferramenta de fios para mapear controles](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
   
-5.  Para acrescentar o controle de caixa de texto ao mapa de controle da interface de usuário, repita a etapa anterior.  
+5. Para acrescentar o controle de caixa de texto ao mapa de controle da interface de usuário, repita a etapa anterior.  
   
-     ![Usar a ferramenta de fios e o controle de caixa de texto de mapa](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
+    ![Usar a ferramenta de fios e o controle de caixa de texto de mapa](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
   
-6.  Gere um código para criar código de alterações no mapa de controle da interface de usuário.  
+6. Gere um código para criar código de alterações no mapa de controle da interface de usuário.  
   
-     ![Gerar código no construtor de](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
+    ![Gerar código no construtor de](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
   
-7.  Use a ferramenta de fios para selecionar o controle de caixa de texto e, em seguida, selecione a propriedade **Text**.  
+7. Use a ferramenta de fios para selecionar o controle de caixa de texto e, em seguida, selecione a propriedade **Text**.  
   
-     ![Selecionar a propriedade Text](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
+    ![Selecionar a propriedade Text](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
   
-8.  Adicione uma asserção. Ela será usada no teste para verificar se o valor está correto.  
+8. Adicione uma asserção. Ela será usada no teste para verificar se o valor está correto.  
   
-     ![Adicionar declaração ao teste](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
+    ![Adicionar declaração ao teste](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
   
 9. Acrescente e gere um código para o método de asserção.  
   
@@ -225,37 +223,37 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
   
 11. No Gerenciador de Soluções, abra o arquivo CodedUITest1.cs ou CodedUITest1.vb. Agora você pode acrescentar o código ao método CodedUTTestMethod1 para as ações necessárias para execução do teste. Use os controles que foram adicionados ao mapa de interface do usuário para acrescentar código:  
   
-    1.  Inicie o aplicativo do Windows Phone usando a propriedade de ID de automação copiada anteriormente na área de transferência:  
+    1. Inicie o aplicativo do Windows Phone usando a propriedade de ID de automação copiada anteriormente na área de transferência:  
   
-        ```csharp  
-        XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```csharp  
+       XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-        ```vb  
-        XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```vb  
+       XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-    2.  Adicione um gesto para tocar no controle de botão:  
+    2. Adicione um gesto para tocar no controle de botão:  
   
-        ```csharp  
-        Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
-        ```  
+       ```csharp  
+       Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
+       ```  
   
-        ```vb  
-        Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
-        ```  
+       ```vb  
+       Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
+       ```  
   
-    3.  Verifique se a chamada ao método de asserção gerada automaticamente vem depois da inicialização do aplicativo e do gesto de toque no botão:  
+    3. Verifique se a chamada ao método de asserção gerada automaticamente vem depois da inicialização do aplicativo e do gesto de toque no botão:  
   
-        ```csharp  
-        this.UIMap.AssertMethod1();  
-        ```  
+       ```csharp  
+       this.UIMap.AssertMethod1();  
+       ```  
   
-        ```vb  
-        Me.UIMap.AssertMethod1()  
-        ```  
+       ```vb  
+       Me.UIMap.AssertMethod1()  
+       ```  
   
-     Depois que você acrescenta o código, o método de teste CodedUITestMethod1 deve aparecer desta forma:  
+       Depois que você acrescenta o código, o método de teste CodedUITestMethod1 deve aparecer desta forma:  
   
     ```csharp  
     [TestMethod]  
@@ -342,11 +340,11 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>P: Como fazer para criar testes de IU codificados para aplicativos UWP (Plataforma Universal do Windows)?  
  **R**: Dependendo da plataforma em que você está testando o aplicativo UWP, crie o projeto de teste de IU codificado de uma destas maneiras:  
   
--   Um aplicativo UWP em execução no computador local será executado como um aplicativo da Loja. Para testar isso, é necessário usar o modelo **Projeto de Teste de IU Codificado (Windows)**. Para encontrar esse modelo ao criar um novo projeto, acesse o nó **Windows**, **Universal**. Se preferir, acesse o nó **Windows**, **Windows 8**, **Windows**.  
+- Um aplicativo UWP em execução no computador local será executado como um aplicativo da Loja. Para testar isso, é necessário usar o modelo **Projeto de Teste de IU Codificado (Windows)**. Para encontrar esse modelo ao criar um novo projeto, acesse o nó **Windows**, **Universal**. Se preferir, acesse o nó **Windows**, **Windows 8**, **Windows**.  
   
--   Um aplicativo UWP em execução em um emulador ou dispositivo móvel será executado como um aplicativo do Windows Phone. Para testar isso, é necessário usar o modelo **Projeto de Teste de IU Codificado (Windows Phone)**. Para encontrar esse modelo ao criar um novo projeto, acesse o nó **Windows**, **Universal**. Se preferir, acesse o nó **Windows**, **Windows 8**, **Windows Phone**.  
+- Um aplicativo UWP em execução em um emulador ou dispositivo móvel será executado como um aplicativo do Windows Phone. Para testar isso, é necessário usar o modelo **Projeto de Teste de IU Codificado (Windows Phone)**. Para encontrar esse modelo ao criar um novo projeto, acesse o nó **Windows**, **Universal**. Se preferir, acesse o nó **Windows**, **Windows 8**, **Windows Phone**.  
   
- Depois de criar o projeto, a criação de um teste permanece a mesma que antes.  
+  Depois de criar o projeto, a criação de um teste permanece a mesma que antes.  
   
 ### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>P: Posso selecionar controles externos ao emulador?  
  **R**: Não. O compilador não os detectará.  

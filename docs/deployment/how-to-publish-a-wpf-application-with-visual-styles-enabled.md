@@ -10,27 +10,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c97725f4d78923384d7a3ec9f327a7dd2aca7b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
-ms.translationtype: MT
+ms.openlocfilehash: 4dc45c624d44ed550fb491fc57638ba033090346
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512942"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388102"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Como: publicar um aplicativo WPF com estilos visuais habilitados
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Como publicar um aplicativo WPF com estilos visuais habilitados
 Estilos visuais permitem a aparência dos controles comuns para mudar com base no tema escolhido pelo usuário. Por padrão, os estilos visuais estiverem habilitados não para aplicativos do Windows Presentation Foundation (WPF), portanto, você deve habilitá-los manualmente. No entanto, habilitar estilos visuais para um aplicativo WPF e, em seguida, publicar a solução causa um erro. Este tópico descreve como resolver esse erro e o processo para publicar um aplicativo WPF com estilos visuais habilitados. Para obter mais informações sobre estilos visuais, consulte [visão geral de estilos visuais](/windows/desktop/Controls/visual-styles-overview). Para obter mais informações sobre a mensagem de erro, consulte [solucionar problemas de erros específicos nas implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Para resolver o erro e publicar a solução, você deve executar as seguintes tarefas:  
   
--   [Publicar a solução sem estilos visuais habilitados](#publish-the-solution-without-visual-styles-enabled).  
+- [Publicar a solução sem estilos visuais habilitados](#publish-the-solution-without-visual-styles-enabled).  
   
--   [Criar um arquivo de manifesto](#create-a-manifest-file).  
+- [Criar um arquivo de manifesto](#create-a-manifest-file).  
   
--   [Inserir o arquivo de manifesto no arquivo executável da solução publicado](#embed-the-manifest-file-into-the-executable-file-of-the-published-solution).  
+- [Inserir o arquivo de manifesto no arquivo executável da solução publicado](#embed-the-manifest-file-into-the-executable-file-of-the-published-solution).  
   
--   [Assinar os manifestos de aplicativo e implantação](#sign-the-application-and-deployment-manifests).  
+- [Assinar os manifestos de aplicativo e implantação](#sign-the-application-and-deployment-manifests).  
   
- Em seguida, você pode mover os arquivos publicados para o local do qual você deseja que os usuários finais instalarem o aplicativo.  
+  Em seguida, você pode mover os arquivos publicados para o local do qual você deseja que os usuários finais instalarem o aplicativo.  
   
 ##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Publicar a solução sem estilos visuais habilitados  
   
@@ -39,7 +39,11 @@ Estilos visuais permitem a aparência dos controles comuns para mudar com base n
      Por padrão, os estilos visuais não estão habilitados.  
   
     ```xml  
-    <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+        </dependentAssembly>
+    </dependency>
     ```  
   
      Os procedimentos a seguir mostram como abrir o arquivo de manifesto associado ao seu projeto.  
@@ -78,7 +82,18 @@ Estilos visuais permitem a aparência dos controles comuns para mudar com base n
      Esse XML descreve o assembly que contém controles que dão suporte a estilos visuais.  
   
     ```xml  
-    <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
+    <?xml version="1.0" encoding="utf-8"?>
+    <asmv1:assembly manifestVersion="1.0" 
+        xmlns="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <dependency>
+            <dependentAssembly>
+                <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+            </dependentAssembly>
+        </dependency>
+    </asmv1:assembly>
     ```  
   
 2.  No bloco de notas, clique em **arquivo**e, em seguida, clique em **Salvar como**.  
@@ -94,76 +109,76 @@ Estilos visuais permitem a aparência dos controles comuns para mudar com base n
   
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>Inserir o arquivo de manifesto no arquivo executável da solução publicada  
   
-1.  Abra o **Prompt de comando do Visual Studio**.  
+1. Abra o **Prompt de comando do Visual Studio**.  
   
-     Para obter mais informações sobre como abrir o **Prompt de comando do Visual Studio**, consulte [prompts de comando](/dotnet/framework/tools/developer-command-prompt-for-vs).  
+    Para obter mais informações sobre como abrir o **Prompt de comando do Visual Studio**, consulte [prompts de comando](/dotnet/framework/tools/developer-command-prompt-for-vs).  
   
-    > [!NOTE]
-    >  As etapas restantes fazem as seguintes suposições sobre sua solução:  
-    >   
-    >  -   É o nome da solução **MyWPFProject**.  
-    > -   A solução está localizada no seguinte diretório: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
-    >   
-    >      A solução é publicada no seguinte diretório: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
-    > -   A versão mais recente dos arquivos do aplicativo publicado está localizada no seguinte diretório: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
-    >   
-    >  Não é preciso usar o nome ou os locais de diretório descritos acima. O nome e localizações descritas acima são usadas apenas para ilustrar as etapas necessárias para publicar sua solução.  
+   > [!NOTE]
+   >  As etapas restantes fazem as seguintes suposições sobre sua solução:  
+   > 
+   > - É o nome da solução **MyWPFProject**.  
+   >   -   A solução está localizada no seguinte diretório: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
+   > 
+   >   A solução é publicada no seguinte diretório: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
+   >   -   A versão mais recente dos arquivos do aplicativo publicado está localizada no seguinte diretório: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+   > 
+   >   Não é preciso usar o nome ou os locais de diretório descritos acima. O nome e localizações descritas acima são usadas apenas para ilustrar as etapas necessárias para publicar sua solução.  
   
-2.  No prompt de comando, altere o caminho para o diretório que contém a versão mais recente dos arquivos do aplicativo publicado. O exemplo a seguir demonstra essa etapa.  
+2. No prompt de comando, altere o caminho para o diretório que contém a versão mais recente dos arquivos do aplicativo publicado. O exemplo a seguir demonstra essa etapa.  
   
-    ```cmd  
-cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
-    ```  
+   ```cmd  
+   cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
+   ```  
   
-3.  No prompt de comando, execute o seguinte comando para inserir o arquivo de manifesto no arquivo executável do aplicativo.  
+3. No prompt de comando, execute o seguinte comando para inserir o arquivo de manifesto no arquivo executável do aplicativo.  
   
-    ```cmd
-    mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
-    ```  
+   ```cmd
+   mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
+   ```  
   
 ## <a name="sign-the-application-and-deployment-manifests"></a>Assinar os manifestos de aplicativo e implantação  
   
-1.  No prompt de comando, execute o seguinte comando para remover o *Deploy* extensão do arquivo executável no diretório atual.  
+1. No prompt de comando, execute o seguinte comando para remover o *Deploy* extensão do arquivo executável no diretório atual.  
   
-    ```cmd  
-    ren MyWPFApp.exe.deploy MyWPFApp.exe  
-    ```  
+   ```cmd  
+   ren MyWPFApp.exe.deploy MyWPFApp.exe  
+   ```  
   
-    > [!NOTE]
-    >  Este exemplo presume que apenas um arquivo tem o *Deploy* extensão de arquivo. Certifique-se de que você renomeie todos os arquivos nesse diretório com o *Deploy* extensão de arquivo.  
+   > [!NOTE]
+   >  Este exemplo presume que apenas um arquivo tem o *Deploy* extensão de arquivo. Certifique-se de que você renomeie todos os arquivos nesse diretório com o *Deploy* extensão de arquivo.  
   
-2.  No prompt de comando, execute o seguinte comando para assinar o manifesto do aplicativo.  
+2. No prompt de comando, execute o seguinte comando para assinar o manifesto do aplicativo.  
   
-    ```cmd  
-    mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```cmd  
+   mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  Este exemplo supõe que você assina o manifesto usando o *. pfx* arquivo do projeto. Se você não estiver se conectando o manifesto, você pode omitir o `-cf` parâmetro que é usado neste exemplo. Se você está assinando o manifesto com um certificado que exige uma senha, especifique o `-password` opção (`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`).  
+   > [!NOTE]
+   >  Este exemplo supõe que você assina o manifesto usando o *. pfx* arquivo do projeto. Se você não estiver se conectando o manifesto, você pode omitir o `-cf` parâmetro que é usado neste exemplo. Se você está assinando o manifesto com um certificado que exige uma senha, especifique o `-password` opção (`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`).  
   
-3.  No prompt de comando, execute o seguinte comando para adicionar o *Deploy* extensão para o nome do arquivo que você renomeou na etapa anterior deste procedimento.  
+3. No prompt de comando, execute o seguinte comando para adicionar o *Deploy* extensão para o nome do arquivo que você renomeou na etapa anterior deste procedimento.  
   
-    ```  
-    ren MyWPFApp.exe MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   ren MyWPFApp.exe MyWPFApp.exe.deploy  
+   ```  
   
-    > [!NOTE]
-    >  Este exemplo presume que apenas um arquivo tivesse uma *Deploy* extensão de arquivo. Certifique-se de que você renomeie todos os arquivos neste diretório que anteriormente tinha o *Deploy* extensão de nome de arquivo.  
+   > [!NOTE]
+   >  Este exemplo presume que apenas um arquivo tivesse uma *Deploy* extensão de arquivo. Certifique-se de que você renomeie todos os arquivos neste diretório que anteriormente tinha o *Deploy* extensão de nome de arquivo.  
   
-4.  No prompt de comando, execute o seguinte comando para assinar o manifesto de implantação.  
+4. No prompt de comando, execute o seguinte comando para assinar o manifesto de implantação.  
   
-    ```  
-    mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  Este exemplo supõe que você assina o manifesto usando o *. pfx* arquivo do projeto. Se você não estiver se conectando o manifesto, você pode omitir o `-cf` parâmetro que é usado neste exemplo. Se você está assinando o manifesto com um certificado que exige uma senha, especifique o `-password` opção, como neste exemplo:`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`.  
+   > [!NOTE]
+   >  Este exemplo supõe que você assina o manifesto usando o *. pfx* arquivo do projeto. Se você não estiver se conectando o manifesto, você pode omitir o `-cf` parâmetro que é usado neste exemplo. Se você está assinando o manifesto com um certificado que exige uma senha, especifique o `-password` opção, como neste exemplo:`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`.  
   
- Depois de realizar essas etapas, você pode mover os arquivos publicados para o local do qual você deseja que os usuários finais instalarem o aplicativo. Se você pretende atualizar a solução muitas vezes, você pode mover esses comandos em um script e execute o script a cada vez que você publica uma nova versão.  
+   Depois de realizar essas etapas, você pode mover os arquivos publicados para o local do qual você deseja que os usuários finais instalarem o aplicativo. Se você pretende atualizar a solução muitas vezes, você pode mover esses comandos em um script e execute o script a cada vez que você publica uma nova versão.  
   
 ## <a name="see-also"></a>Consulte também
 
--[Solução de problemas de erros específicos nas implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+-[Solução de problemas com erros específicos nas implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Visão geral de estilos visuais](/windows/desktop/Controls/visual-styles-overview)
-- [Habilitar estilos visuais](/windows/desktop/Controls/cookbook-overview)
+- [Habilitando Estilos Visuais](/windows/desktop/Controls/cookbook-overview)
 - [Prompts de Comando](/dotnet/framework/tools/developer-command-prompt-for-vs)

@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttributeQuery2::EnumCustomAttributes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 94bfce74-aa3d-45f0-8e04-5715faf85217
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c516d85a11e6d4e85cf86cf56f740e2f2bf7cf84
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 66ab06ccdf66a0502997551b82f12e9efba95c33
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462419"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772190"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugCustomAttributeQuery2::EnumCustomAttributes](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes).  
-  
 Obtém um enumerador para todos os atributos personalizados anexados a esse campo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT EnumCustomAttributes(   
+HRESULT EnumCustomAttributes(   
    IEnumDebugCustomAttributes** ppEnum  
 );  
 ```  

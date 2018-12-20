@@ -13,31 +13,31 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20565c798e9c94cb40a39deb4a80f9a83d67e161
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 943b75c9c5f9c0c32ab02b5e73c07282728e0beb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174933"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864719"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Passo a passo: Criar classes LINQ to SQL, usando a herança de tabela única (O/R Designer)
 O [LINQ to SQL das ferramentas no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) dá suporte a herança de tabela única como geralmente é implementado em sistemas relacionais. Este passo a passo expande até as etapas genéricas fornecidas a [como: configurar a herança usando o Designer relacional de objetos](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tópico e fornece alguns dados reais para demonstrar o uso de herança no [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
  Durante este passo a passo, você deve executar as seguintes tarefas:
 
--   Criar uma tabela de banco de dados e adicione dados a ela.
+- Criar uma tabela de banco de dados e adicione dados a ela.
 
--   Criar um aplicativo do Windows Forms.
+- Criar um aplicativo do Windows Forms.
 
--   Adicionar um arquivo do [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] a um projeto.
+- Adicionar um arquivo do [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] a um projeto.
 
--   Criar novas classes de entidade.
+- Criar novas classes de entidade.
 
--   Configurar as classes de entidade para usar herança.
+- Configurar as classes de entidade para usar herança.
 
--   Consultar a classe herdada.
+- Consultar a classe herdada.
 
--   Exibir os dados em um Windows Form.
+- Exibir os dados em um Windows Form.
 
 ## <a name="create-a-table-to-inherit-from"></a>Criar uma tabela para herdar de
  Para ver como funciona a herança, você cria um pequeno `Person` de tabela, usá-lo como uma classe base e, em seguida, criar um `Employee` objeto que herda dela.
@@ -191,6 +191,6 @@ O [LINQ to SQL das ferramentas no Visual Studio](../data-tools/linq-to-sql-tools
 
 - [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Passo a passo: Criando o LINQ para SQL classes (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Como: atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer relacional de objetos)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Como atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Como: gerar o modelo de objeto no Visual Basic ou c#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

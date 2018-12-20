@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5969d47ff6ecb7af60a8d008c4a7a82405be8c8e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 693261bb6894681b613ad0db2f0b3c116109a782
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670061"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813681"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Passo a passo: Criar uma região de formulário do Outlook
   Regiões de formulário personalizadas estendem formulários do Microsoft Office Outlook padrão ou personalizados. Neste passo a passo, você criará uma região de formulário personalizada é exibida como uma nova página na janela Inspetor de um item de contato. Esta região do formulário exibe um mapa de cada endereço listado para o contato, enviando as informações de endereço para o Windows Live Search site Local. Para obter informações sobre regiões de formulário, consulte [regiões de formulário do Outlook criar](../vsto/creating-outlook-form-regions.md).  
@@ -45,11 +45,11 @@ ms.locfileid: "35670061"
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
   
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] ou [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
+- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] ou [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma versão em vídeo deste tópico, consulte [vídeo como: criar uma região de formulário do Outlook](http://go.microsoft.com/fwlink/?LinkID=140824).  
+  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma versão em vídeo deste tópico, consulte [vídeo como: criar uma região de formulário do Outlook](http://go.microsoft.com/fwlink/?LinkID=140824).  
   
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>Criar um novo projeto de suplemento do VSTO do Outlook  
  Primeiro, crie um projeto de suplemento do VSTO básico.  
@@ -117,24 +117,24 @@ ms.locfileid: "35670061"
   
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>Para personalizar o comportamento da região do formulário  
   
-1.  Na **Gerenciador de soluções**, clique com botão direito *MapIt.cs* ou *MapIt.vb*e, em seguida, clique em **Exibir código**.  
+1. Na **Gerenciador de soluções**, clique com botão direito *MapIt.cs* ou *MapIt.vb*e, em seguida, clique em **Exibir código**.  
   
-     *MapIt.cs* ou *MapIt.vb* é aberto no Editor de códigos.  
+    *MapIt.cs* ou *MapIt.vb* é aberto no Editor de códigos.  
   
-2.  Expanda o **fábrica de região de formulário** região de código.  
+2. Expanda o **fábrica de região de formulário** região de código.  
   
-     A classe de fábrica da região de formulário chamado `MapItFactory` é exposto.  
+    A classe de fábrica da região de formulário chamado `MapItFactory` é exposto.  
   
-3.  Adicione o seguinte código ao manipulador de eventos do `MapItFactory_FormRegionInitializing`. Esse manipulador de eventos é chamado quando o usuário abre um item de contato. O código a seguir determina se o item de contato contém um endereço. Se o item de contato não contiver um endereço, esse código define a <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> propriedade do <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> classe para **verdadeiro** e a região do formulário não será exibida. Caso contrário, o suplemento do VSTO gerará o <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> eventos e exibe a região do formulário.  
+3. Adicione o seguinte código ao manipulador de eventos do `MapItFactory_FormRegionInitializing`. Esse manipulador de eventos é chamado quando o usuário abre um item de contato. O código a seguir determina se o item de contato contém um endereço. Se o item de contato não contiver um endereço, esse código define a <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> propriedade do <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> classe para **verdadeiro** e a região do formulário não será exibida. Caso contrário, o suplemento do VSTO gerará o <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> eventos e exibe a região do formulário.  
   
-     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
-     [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
+    [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
+    [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
   
-4.  Adicione o seguinte código ao manipulador de eventos do <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>. Esse código executa as seguintes tarefas:  
+4. Adicione o seguinte código ao manipulador de eventos do <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>. Esse código executa as seguintes tarefas:  
   
-    -   Concatena cada endereço no item de contato e cria uma cadeia de caracteres de URL.  
+   - Concatena cada endereço no item de contato e cria uma cadeia de caracteres de URL.  
   
-    -   Chamadas a <xref:System.Windows.Forms.WebBrowser.Navigate%2A> método da <xref:System.Windows.Forms.WebBrowser> do objeto e passa a cadeia de caracteres de URL como um parâmetro.  
+   - Chamadas a <xref:System.Windows.Forms.WebBrowser.Navigate%2A> método da <xref:System.Windows.Forms.WebBrowser> do objeto e passa a cadeia de caracteres de URL como um parâmetro.  
   
      O site da Web Local de pesquisa é exibida na região de formulário de mapa-lo e apresenta cada endereço do bloco de rascunho.  
   

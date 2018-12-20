@@ -1,7 +1,7 @@
 ---
 title: 'Como: depurar aplicativos Web | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,26 +21,24 @@ helpviewer_keywords:
 - debugging ASP.NET Web applications, during development
 ms.assetid: 6440d12e-6b29-42c5-a958-99aeaaff480f
 caps.latest.revision: 40
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3dce1129282dc7273631e261bb32d313f65ce381
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d2a5110a6801aafb6eaf98cb4fb4164b045b2408
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463185"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793627"
 ---
 # <a name="how-to-debug-web-applications"></a>Como depurar aplicativos Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: depurar aplicativos da Web](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-web-applications).  
-  
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] é a principal tecnologia para o desenvolvimento de aplicativos Web no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. O depurador do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornece ferramentas avançadas para depurar aplicativos Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] localmente ou em um servidor remoto. Este tópico descreve como depurar um [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] projeto durante o desenvolvimento. Para obter informações sobre como depurar um [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] já implantado em um servidor de produção do aplicativo Web, consulte [Depurando aplicativos de Web implantado](../debugger/debugging-deployed-web-applications.md).  
   
  Para depurar um aplicativo do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]:  
   
--   Você deve ter as permissões necessárias. Para obter mais informações, consulte [requisitos de sistema](../debugger/aspnet-debugging-system-requirements.md).  
+-   Você deve ter as permissões necessárias. Para obter mais informações, consulte [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
 -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] a depuração deve ser habilitada no **propriedades do projeto**.  
   

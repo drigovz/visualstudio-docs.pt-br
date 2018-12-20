@@ -1,7 +1,7 @@
 ---
 title: Comutador&lt;T&gt; Designer de atividade | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 3b7ae322bbdb4d93106c468409cab77127e5eb0b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 01e583db3bb5b5aff6608b4028636823b4ca857c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462441"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844699"
 ---
 # <a name="switchlttgt-activity-designer"></a>Comutador&lt;T&gt; Designer de atividade
 A atividade de <xref:System.Activities.Statements.Switch%601> avalia uma expressão especificada e executa a atividade de uma coleção de atividades cuja chave associado corresponde ao valor obtido de avaliação.  
@@ -50,11 +50,11 @@ A atividade de <xref:System.Activities.Statements.Switch%601> avalia uma express
   
  Existem 2 maneiras de excluir casos:  
   
-1.  Selecione os casos e excluir-los.  
+1. Selecione os casos e excluir-los.  
   
-2.  Selecione o botão direito do mouse nesse caso, para exibir o menu de contexto e selecione **excluir**.  
+2. Selecione o botão direito do mouse nesse caso, para exibir o menu de contexto e selecione **excluir**.  
   
- Observe que você deve selecionar os casos os próprios para excluir. Selecionando e excluindo a atividade dentro de um caso exclui somente a atividade não os casos.  
+   Observe que você deve selecionar os casos os próprios para excluir. Selecionando e excluindo a atividade dentro de um caso exclui somente a atividade não os casos.  
   
 ## <a name="see-also"></a>Consulte também  
  [Fluxo de Controle](../workflow-designer/control-flow-activity-designers.md)

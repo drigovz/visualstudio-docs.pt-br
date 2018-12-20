@@ -1,7 +1,7 @@
 ---
 title: Exibição de alocações da memória do .NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,30 +18,28 @@ helpviewer_keywords:
 - profiling tools reports, Allocation view
 ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 caps.latest.revision: 32
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e53fe27148901bc4af78f9b607c0e3a70ba4b91
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 73a2be1314b01a0a7de73f71794bc94b18f0e851
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468047"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760351"
 ---
 # <a name="net-memory-allocations-view"></a>Exibição de alocações da memória do .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de alocações de memória do .NET](https://docs.microsoft.com/visualstudio/profiling/dotnet-memory-allocations-view).  
-  
 A exibição de Alocações lista os tipos criados durante a execução de criação de perfil. Cada tipo é o nó raiz de uma árvore de chamadas que exibe os caminhos de execução de função que resultaram em alocações do tipo.  
   
  Os dados em uma linha de tipo exibem o número total de objetos do tipo criados na execução de criação de perfil e o número total de bytes alocados para os objetos desse tipo. Os valores inclusivos e exclusivos para um tipo são sempre os mesmos.  
   
--   Os valores inclusivos são para objetos criados nas instâncias da função e suas funções filho chamadas pela função pai na árvore de chamadas.  
+- Os valores inclusivos são para objetos criados nas instâncias da função e suas funções filho chamadas pela função pai na árvore de chamadas.  
   
--   Os valores exclusivos são para objetos criados diretamente pela função quando foram chamados pela função pai. Objetos criados nas funções filho não são incluídos.  
+- Os valores exclusivos são para objetos criados diretamente pela função quando foram chamados pela função pai. Objetos criados nas funções filho não são incluídos.  
   
- Os dados de uma função exibem o número de objetos criados e o número de bytes alocados para objetos do tipo pai.  
+  Os dados de uma função exibem o número de objetos criados e o número de bytes alocados para objetos do tipo pai.  
   
 ## <a name="highlighting-the-execution-hot-path"></a>Realce do afunilamento de execução  
  É possível encontrar o caminho de execução da árvore de chamadas que criou a maioria dos objetos do tipo pai.  

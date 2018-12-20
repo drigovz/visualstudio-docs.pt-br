@@ -1,7 +1,7 @@
 ---
 title: Assistentes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1396837a0d9eee3b31a5e938a2305052d5cc2761
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cbf2eceeb3ae8a3870954d53f8d85c46f3322d24
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474332"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747604"
 ---
 # <a name="wizards"></a>Assistentes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [assistentes](https://docs.microsoft.com/visualstudio/extensibility/internals/wizards).  
-  
 Depois de criar um assistente, você geralmente deseja adicioná-lo para o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente desenvolvimento integrado (IDE) para que outras pessoas possam usá-lo. O Assistente de adição, em seguida, aparece na **adicionar novo projeto** ou **Adicionar Novo Item** caixas de diálogo. Para ver os **adicionar novo projeto** ou **Adicionar Novo Item** caixa de diálogo caixas, clique duas vezes em uma solução aberta no **Gerenciador de soluções**, aponte para **adicionar**, e em seguida, clique em **novo projeto** ou **Novo Item**.  
   
  Assistentes podem ser implementados em [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para permitir que os usuários select de uma exibição de árvore de valores disponíveis quando abrirem o **adicionar novo projeto** caixa de diálogo ou o **Adicionar Novo Item** caixa de diálogo, ou quando eles com o botão direito um item na **Gerenciador de soluções**.  

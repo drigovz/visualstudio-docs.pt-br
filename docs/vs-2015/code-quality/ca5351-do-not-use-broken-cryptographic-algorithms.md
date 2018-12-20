@@ -1,7 +1,7 @@
 ---
 title: CA5351 Não usar algoritmos de criptografia | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 03c900b86e4eed31426cd888b10606dd2429c93e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889809"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 não use algoritmos de criptografia desfeitos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "47467329"
   
  Para os algoritmos de criptografia:  
   
--   <xref:System.Security.Cryptography.DES> criptografia contém um pequeno tamanho de chave, que pode ser por força bruta em menos de um dia.  
+- <xref:System.Security.Cryptography.DES> criptografia contém um pequeno tamanho de chave, que pode ser por força bruta em menos de um dia.  
   
--   <xref:System.Security.Cryptography.RC2> a criptografia é suscetível a um ataque de chave relacionados, em que o invasor localiza matemáticas relações entre todos os valores de chave.  
+- <xref:System.Security.Cryptography.RC2> a criptografia é suscetível a um ataque de chave relacionados, em que o invasor localiza matemáticas relações entre todos os valores de chave.  
   
- Essa regra dispara quando ele encontra qualquer uma das funções criptográficas acima no código-fonte e gera um aviso ao usuário.  
+  Essa regra dispara quando ele encontra qualquer uma das funções criptográficas acima no código-fonte e gera um aviso ao usuário.  
   
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
  Use opções criptograficamente mais fortes:  

@@ -1,28 +1,29 @@
 ---
-title: Testes de unidade para Python
-description: Configurando o teste de unidade para o código Python no Visual Studio a fim de aproveitar ao máximo os recursos do Gerenciador de Testes para descobrir, executar e depurar testes.
-ms.date: 06/26/2018
+title: Teste de unidade do código Python
+description: A configuração do teste de unidade para o código Python no Visual Studio aproveita ao máximo as funcionalidades do Gerenciador de Testes para descobrir, executar e depurar testes.
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef5a936de8013f2ea0426d95def96a0871839e6a
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 57076aa4bf86b8053a38e6b8af96b6006bbdfa0a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586424"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052524"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Configurar o teste de unidade para o código do Python
 
 Testes de unidade são partes do código que testam outras unidades de código em um aplicativo, normalmente, funções isoladas, classes e assim por diante. Quando um aplicativo é aprovado em todos os seus testes de unidade, pelo menos, é possível confiar que sua funcionalidade de baixo nível está correta.
 
-O Python usa testes de unidade extensivamente para validar cenários durante a criação de um programa. O suporte para Python no Visual Studio inclui a descoberta, a execução e a depuração de testes de unidade no contexto do processo de desenvolvimento, sem precisar executar os testes separadamente.
+O Python usa testes de unidade extensivamente para validar cenários durante a criação de um programa. O suporte do Python no Visual Studio inclui a descoberta, a execução e a depuração de testes de unidade no contexto do processo de desenvolvimento, sem precisar executar os testes separadamente.
 
 Este artigo fornece uma breve descrição das funcionalidades de teste de unidade no Visual Studio com o Python. Para obter mais informações sobre testes de unidade em geral, consulte [Executar um teste de unidade no código](../test/unit-test-your-code.md).
 

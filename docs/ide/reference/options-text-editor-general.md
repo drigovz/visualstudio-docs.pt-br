@@ -49,19 +49,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a3296ec07194f1815b819f69cf97224be50368f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 75051013e38d4acf5339193cf9f80e6da6758284
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747809"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388787"
 ---
 # <a name="options-text-editor-general"></a>Opções, Editor de Texto, Geral
 
 Essa caixa de diálogo permite alterar as configurações globais do editor de texto e código do Visual Studio. Para exibir essa caixa de diálogo, selecione **Opções** no menu **Ferramentas**, expanda a pasta **Editor de Texto** e selecione **Geral**.
-
-> [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="settings"></a>Configurações
 
@@ -88,20 +85,12 @@ Por padrão, o editor detecta a codificação procurando por marcas de ordem de 
 Quando selecionado, exibe uma margem vertical ao longo da borda esquerda da área de texto do editor. Você pode clicar nessa margem para selecionar uma linha de texto inteira ou clicar e arrastar para selecionar linhas consecutivas de texto.
 
 |Margem de seleção ativada|Margem de seleção desativada|
-|-------------------------|--------------------------|
+| - | - |
 |![Captura de tela de HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif)|![Captura de tela de HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>Margem de indicadores
 
 Quando selecionado, exibe uma margem vertical fora da borda esquerda da área de texto do editor. Quando você clica nesta margem, um ícone e uma dica de ferramenta relacionados ao texto aparecem. Por exemplo, atalhos da lista de tarefas ou de pontos de interrupção aparecem na margem de indicadores. Informações da margem de indicadores não são impressas.
-
-### <a name="vertical-scroll-bar"></a>Barra de rolagem vertical
-
-Quando selecionado, exibe uma barra de rolagem vertical que permite rolar para cima e para baixo para exibir elementos que estão fora da área de exibição do Editor. Se barras de rolagem verticais não estiverem disponíveis, você poderá usar Page Up, Page Down e teclas do cursor para rolar.
-
-### <a name="horizontal-scroll-bar"></a>Barra de rolagem horizontal
-
-Quando selecionado, exibe uma barra de rolagem horizontal que permite rolar lateralmente para exibir elementos que estão fora da área de exibição do Editor. Se barras de rolagem horizontais não estiverem disponíveis, você poderá usar as teclas de cursor para rolar.
 
 ### <a name="highlight-current-line"></a>Realçar linha atual
 

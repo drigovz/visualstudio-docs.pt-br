@@ -1,7 +1,7 @@
 ---
 title: 'Nova geração de projeto: Nos bastidores, parte 2 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 132baff48f92b8ff6cea5841c41bdb7824fd2753
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5732db4ab36a7e198ee6ebdce185294d3b5bc31
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474290"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722481"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Geração de novo projeto: nos bastidores, Parte dois
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [nova geração de projeto: Under the Hood, parte dois](https://docs.microsoft.com/visualstudio/extensibility/internals/new-project-generation-under-the-hood-part-two).  
-  
 Na [nova geração de projeto: Under the Hood, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos como o **novo projeto** caixa de diálogo caixa é preenchida. Vamos supor que você selecionou uma **Visual c# Windows Application**, preenchido a **nome** e **local** caixas de texto e Okey clicado.  
   
 ## <a name="generating-the-solution-files"></a>Gerar os arquivos de solução  
@@ -76,7 +74,7 @@ namespace Simple
  Um arquivo. vstemplate básico tem este formato  
   
 ```  
-<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">  
+<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">  
     <TemplateData>  
     </TemplateData>  
     <TemplateContent>  
@@ -98,13 +96,13 @@ namespace Simple
     <ProjectItem TargetFileName="Properties\Resources.resx">  
       Resources.resx  
     </ProjectItem>  
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">  
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">  
       Resources.Designer.cs  
     </ProjectItem>  
     <ProjectItem TargetFileName="Properties\Settings.settings">  
       Settings.settings  
     </ProjectItem>  
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">  
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">  
       Settings.Designer.cs  
     </ProjectItem>  
     <ProjectItem ReplaceParameters="true" OpenInEditor="true">  

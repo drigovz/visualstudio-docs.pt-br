@@ -1,7 +1,7 @@
 ---
 title: 'CA2000: Descartar objetos antes de perder escopo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,12 +21,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 878c016f718693210a196d687ebe520b20cf277a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ce258af87dc9a7732200b410113ee778e0bfbccb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476248"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857855"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: descartar objetos antes de perder o escopo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,17 +81,17 @@ ms.locfileid: "47476248"
   
  No método OpenPort2, dois objetos de SerialPort são declarado e está definida como null:  
   
--   `tempPort`, que é usado para testar as operações do método tenha êxito.  
+- `tempPort`, que é usado para testar as operações do método tenha êxito.  
   
--   `port`, que é usado para o valor retornado do método.  
+- `port`, que é usado para o valor retornado do método.  
   
- O `tempPort` é criado e aberto em um `try` bloco e qualquer outro necessários o trabalho é executado no mesmo `try` bloco. No final do `try` bloco, a porta aberta é atribuído para o `port` objeto que será retornado e o `tempPort` objeto é definido como `null`.  
+  O `tempPort` é criado e aberto em um `try` bloco e qualquer outro necessários o trabalho é executado no mesmo `try` bloco. No final do `try` bloco, a porta aberta é atribuído para o `port` objeto que será retornado e o `tempPort` objeto é definido como `null`.  
   
- O `finally` bloco verifica o valor de `tempPort`. Se não for nulo, uma operação no método tiver falhado, e `tempPort` está fechado para certificar-se de que todos os recursos são liberados. O objeto de porta retornada conterá o objeto de SerialPort aberto se as operações do método foi bem-sucedida, ou ele será nulo se uma operação falhou.  
+  O `finally` bloco verifica o valor de `tempPort`. Se não for nulo, uma operação no método tiver falhado, e `tempPort` está fechado para certificar-se de que todos os recursos são liberados. O objeto de porta retornada conterá o objeto de SerialPort aberto se as operações do método foi bem-sucedida, ou ele será nulo se uma operação falhou.  
   
- [!code-csharp[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/cs/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.cs#1)]
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]  
+  [!code-csharp[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/cs/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.cs#1)]
+  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
+  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]  
   
 ## <a name="example"></a>Exemplo  
  Por padrão, o [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compilador tem operadores aritméticos todos os de verificação de estouro. Portanto, qualquer operação aritmética de Visual Basic pode lançar uma <xref:System.OverflowException>. Isso pode levar a inesperado violações de regras como CA2000. Por exemplo, a seguinte função CreateReader1 produzirá uma violação de CA2000, porque o compilador do Visual Basic está emitindo um instrução para a adição que poderia lançar uma exceção que faria com que o StreamReader para não ser descartado de verificação de estouro.  

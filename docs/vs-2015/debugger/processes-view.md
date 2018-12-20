@@ -1,7 +1,7 @@
 ---
 title: Exibição de processos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - Processes view
 ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c83b57ade3a78a4dcc926e34547ee566326e129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5fe042a3511dbf6118922e54f8953bde599481c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465440"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810449"
 ---
 # <a name="processes-view"></a>Exibição de processos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de processos](https://docs.microsoft.com/visualstudio/debugger/processes-view).  
-  
 A tela processos exibe uma árvore de todos os processos ativos no sistema. O nome do módulo e a ID de processo são mostrados. Se você quiser examinar um processo de determinado sistema, que normalmente corresponde a um programa em execução, use o modo de exibição de processos. Processos são identificados por nomes de módulo, ou eles são designados "processos do sistema".  
   
  Microsoft Windows dá suporte a vários processos. Cada processo pode ter um ou mais threads e cada thread pode ter um ou mais associadas janelas de nível superior. Cada janela de nível superior pode possuir uma série de janelas. Um + símbolo indica que um nível é recolhido. Modo de exibição recolhido consiste em uma linha por processo. Clique o símbolo para expandir o nível +.  
@@ -40,12 +38,12 @@ A tela processos exibe uma árvore de todos os processos ativos no sistema. O no
   
 #### <a name="to-open-the-processes-view"></a>Para abrir a exibição de processos  
   
-1.  Dos **Spy** menu, escolha **processos**.  
+1. Dos **Spy** menu, escolha **processos**.  
   
- ![Spy&#43; &#43; exibição de processos](../debugger/media/spy-processes.png "Spy + + _Processes")  
-Exibição de processos do Spy + +  
+   ![Spy&#43; &#43; exibição de processos](../debugger/media/spy-processes.png "Spy + + _Processes")  
+   Exibição de processos do Spy + +  
   
- A figura acima mostra a exibição de processos conosco de processo e thread expandidos.  
+   A figura acima mostra a exibição de processos conosco de processo e thread expandidos.  
   
 ### <a name="in-this-section"></a>Nesta seção  
  [Procurando por um processo na exibição de processos](../debugger/how-to-search-for-a-process-in-processes-view.md)  

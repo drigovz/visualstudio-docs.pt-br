@@ -1,7 +1,7 @@
 ---
 title: Criação de perfil e segurança do Windows Vista | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,30 +14,28 @@ helpviewer_keywords:
 - performance tools, security
 ms.assetid: 842112fc-b886-4801-8cd7-a25b314b0393
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 736e7a04813a6c56d6cab6d1886171e321d583cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 32605cb21b79e035bba9d234cdb7b3d513417363
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474798"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772944"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Criação de perfil e segurança do Windows Vista
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criação de perfil e segurança do Windows Vista](https://docs.microsoft.com/visualstudio/profiling/profiling-and-windows-vista-security).  
-  
 Dependendo das configurações de Permissões de Acesso do Usuário do [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)] que um administrador de computador disponibilizou, um usuário individual pode ter a permissão de segurança para analisar um processo no computador. Os exemplos a seguir ilustram possíveis diferenças entre os usuários:  
   
--   Alguns usuários podem acessar recursos de criação de perfil avançados quando o administrador tiver configurado o início do driver e do serviço.  
+- Alguns usuários podem acessar recursos de criação de perfil avançados quando o administrador tiver configurado o início do driver e do serviço.  
   
--   Os usuários do domínio podem acessar apenas as amostras de criação de perfil.  
+- Os usuários do domínio podem acessar apenas as amostras de criação de perfil.  
   
--   Alguns usuários podem negar acesso à criação de perfil para todos os outros usuários.  
+- Alguns usuários podem negar acesso à criação de perfil para todos os outros usuários.  
   
- Para obter mais informações, consulte as opções de ADMIN em [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Para obter mais informações, consulte as opções de ADMIN em [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ## <a name="cross-session-profiling"></a>Criação de perfil de sessão cruzada  
  *Criação de perfil de sessão cruzada* é a capacidade de analisar um processo que é executado em uma sessão de logon diferente. Por exemplo, a maioria dos serviços executados na sessão 0, os usuários não podem ser executados diretamente na sessão 0. Usando o botão **Anexar ao Processo** na barra de ferramentas do Gerenciador de Desempenho ou a opção /attach da ferramenta de linha de comando VSPerfCmd, você pode analisar a maioria dos processos em sessões de logon diferentes.  

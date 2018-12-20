@@ -1,7 +1,7 @@
 ---
 title: 'CA1020: Evitar namespaces com poucos tipos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b3a7f1c0b6cdfbf96542d9edc76596295f2d695a
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 6663660319791f1e81d0ed89f171c929c3e50725
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47476442"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906176"
 ---
 # <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020: evitar namespaces com poucos tipos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1020: evitar namespaces com poucos tipos](https://docs.microsoft.com/visualstudio/code-quality/ca1020-avoid-namespaces-with-few-types).
 
 |||
 |-|-|

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d93861fc6238949d8666072b0bf5a5cc7efdb87b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 7062f44fe119858e579a53325deca0ea04b46475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873013"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Passo a passo: Adicionar recursos a um editor personalizado
 Depois de criar um editor personalizado, você pode adicionar mais recursos a ele.  
@@ -126,34 +126,34 @@ Depois de criar um editor personalizado, você pode adicionar mais recursos a el
   
 ## <a name="robust-programming"></a>Programação robusta  
   
--   A instância do editor é criada quando o IDE chama o <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método. Se o editor dá suporte a vários modos de exibição `CreateEditorInstance` cria dados de documento e os objetos de exibição de documento. Se o objeto de dados de documento já está aberto, não-nulos `punkDocDataExisting` valor é passado para `IVsEditorFactory::CreateEditorInstance`. Sua implementação de fábrica de editor deve determinar se um objeto de dados de documento existente é compatível, consultando as interfaces apropriadas nele. Para obter mais informações, consulte [que dão suporte a várias exibições de documento](../extensibility/supporting-multiple-document-views.md).  
+- A instância do editor é criada quando o IDE chama o <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método. Se o editor dá suporte a vários modos de exibição `CreateEditorInstance` cria dados de documento e os objetos de exibição de documento. Se o objeto de dados de documento já está aberto, não-nulos `punkDocDataExisting` valor é passado para `IVsEditorFactory::CreateEditorInstance`. Sua implementação de fábrica de editor deve determinar se um objeto de dados de documento existente é compatível, consultando as interfaces apropriadas nele. Para obter mais informações, consulte [que dão suporte a várias exibições de documento](../extensibility/supporting-multiple-document-views.md).  
   
--   Se você usar a abordagem de incorporação simplificada, implemente o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interface.  
+- Se você usar a abordagem de incorporação simplificada, implemente o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interface.  
   
--   Se você decidir usar a ativação in-loco, implemente as seguintes interfaces:  
+- Se você decidir usar a ativação in-loco, implemente as seguintes interfaces:  
   
-     <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>  
+   <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>  
   
-     <xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>  
+   <xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>  
   
-     <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
+   <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
   
-    > [!NOTE]
-    >  O `IOleInPlaceComponent` interface é usada para evitar a mesclagem de menu do OLE 2.  
+  > [!NOTE]
+  >  O `IOleInPlaceComponent` interface é usada para evitar a mesclagem de menu do OLE 2.  
   
-     Sua `IOleCommandTarget` implementação lida com comandos, como **Recortar**, **cópia**, e **colar**. Ao implementar `IOleCommandTarget`, decida se seu editor requer seu próprio *VSCT* arquivo para definir sua própria estrutura do menu de comando ou se ela pode implementar comandos padrão definidos pelo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Normalmente, editores de usarem e estendem os menus do IDE e definem suas próprias barras de ferramentas. No entanto, muitas vezes é necessário para um editor definir seus próprios comandos específicos, além de usar o conjunto de comando padrão do IDE. Seu editor deve declarar os comandos padrão, ele usa e, em seguida, definir quaisquer novos comandos, menus de contexto, menus de nível superior e barras de ferramentas em uma *VSCT* arquivo. Se você criar uma ativação in-loco, editor, implementar <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> e definir os menus e barras de ferramentas para o editor em um *VSCT* arquivo em vez de usar a mesclagem de menu do OLE 2.  
+   Sua `IOleCommandTarget` implementação lida com comandos, como **Recortar**, **cópia**, e **colar**. Ao implementar `IOleCommandTarget`, decida se seu editor requer seu próprio *VSCT* arquivo para definir sua própria estrutura do menu de comando ou se ela pode implementar comandos padrão definidos pelo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Normalmente, editores de usarem e estendem os menus do IDE e definem suas próprias barras de ferramentas. No entanto, muitas vezes é necessário para um editor definir seus próprios comandos específicos, além de usar o conjunto de comando padrão do IDE. Seu editor deve declarar os comandos padrão, ele usa e, em seguida, definir quaisquer novos comandos, menus de contexto, menus de nível superior e barras de ferramentas em uma *VSCT* arquivo. Se você criar uma ativação in-loco, editor, implementar <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> e definir os menus e barras de ferramentas para o editor em um *VSCT* arquivo em vez de usar a mesclagem de menu do OLE 2.  
   
--   Para impedir que o comando de menu acumularem na interface do usuário, você deve usar os comandos existentes no IDE antes de inventar novos comandos. Comandos compartilhados são definidos no *SharedCmdDef.vsct* e *ShellCmdDef.vsct*. Esses arquivos são instalados por padrão no subdiretório VisualStudioIntegration\Common\Inc do seu [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] instalação.  
+- Para impedir que o comando de menu acumularem na interface do usuário, você deve usar os comandos existentes no IDE antes de inventar novos comandos. Comandos compartilhados são definidos no *SharedCmdDef.vsct* e *ShellCmdDef.vsct*. Esses arquivos são instalados por padrão no subdiretório VisualStudioIntegration\Common\Inc do seu [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] instalação.  
   
--   `ISelectionContainer` pode expressar uma e várias seleções. Cada objeto selecionado é implementado como um `IDispatch` objeto.  
+- `ISelectionContainer` pode expressar uma e várias seleções. Cada objeto selecionado é implementado como um `IDispatch` objeto.  
   
--   Implementa o IDE `IOleUndoManager` como um serviço acessível a partir de um <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> ou como um objeto que pode ser instanciado por meio de <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. A editor implementa o `IOleUndoUnit` interface para cada `Undo` ação.  
+- Implementa o IDE `IOleUndoManager` como um serviço acessível a partir de um <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> ou como um objeto que pode ser instanciado por meio de <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. A editor implementa o `IOleUndoUnit` interface para cada `Undo` ação.  
   
--   Há dois locais um editor personalizado pode expor objetos de automação:  
+- Há dois locais um editor personalizado pode expor objetos de automação:  
   
-    -   `Document.Object`  
+  -   `Document.Object`  
   
-    -   `Window.Object`  
+  -   `Window.Object`  
   
 ## <a name="see-also"></a>Consulte também  
  [Contribuir para o modelo de automação](../extensibility/internals/contributing-to-the-automation-model.md)   

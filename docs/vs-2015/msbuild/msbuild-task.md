@@ -1,7 +1,7 @@
 ---
 title: Tarefa do MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2f3ca5a9da9378d553503690bcd94a1ae57a190e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3782db2b2c3fb3cdc5d0cc9ed21459c2b2215250
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466100"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878252"
 ---
 # <a name="msbuild-task"></a>Tarefa MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tarefa do MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-task).  
-  
   
 Compila projetos [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de outro projeto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   

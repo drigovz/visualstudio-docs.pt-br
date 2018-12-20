@@ -1,7 +1,7 @@
 ---
 title: Executar testes de unidade em extensões UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -9,46 +9,44 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 745d74ae-e48c-4fd9-a755-4354b81b9f8a
 caps.latest.revision: 9
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ac030a4e0b93d189a8b69db5f1df52b65bdf11df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ba485b40beb82db9ea8cfe573cb6d9e6742ecea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466116"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817315"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Executar testes de unidade em extensões UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [executar testes de unidade em extensões UML](https://docs.microsoft.com/visualstudio/modeling/run-unit-tests-on-uml-extensions).  
-  
 Para ajudar a manter o código estável ao longo de sucessivas alterações, recomendamos que você escreva testes de unidade e execute-os como parte de um processo de compilação regular. Para obter mais informações, consulte [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md). Para configurar testes para extensões de modelagem do Visual Studio, você precisa de algumas informações importantes. Em resumo:  
   
--   [Configurando um teste de unidade para extensões VSIX](#Host)  
+- [Configurando um teste de unidade para extensões VSIX](#Host)  
   
-     Execute testes com o adaptador host do IDE do VS. Prefixe cada método de teste com `[HostType("VS IDE")]`. Esse adaptador host inicia o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] quando você executa os testes.  
+   Execute testes com o adaptador host do IDE do VS. Prefixe cada método de teste com `[HostType("VS IDE")]`. Esse adaptador host inicia o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] quando você executa os testes.  
   
--   [Acessando o DTE e ModelStore](#DTE)  
+- [Acessando o DTE e ModelStore](#DTE)  
   
-     Normalmente, você terá que abrir um modelo e seus diagramas e acessar o `IModelStore` na inicialização do teste.  
+   Normalmente, você terá que abrir um modelo e seus diagramas e acessar o `IModelStore` na inicialização do teste.  
   
--   [Abrindo um diagrama de modelo](#Opening)  
+- [Abrindo um diagrama de modelo](#Opening)  
   
-     Você pode converter `EnvDTE.ProjectItem` para e do `IDiagramContext`.  
+   Você pode converter `EnvDTE.ProjectItem` para e do `IDiagramContext`.  
   
--   [Executando alterações no Thread da interface do usuário](#UiThread)  
+- [Executando alterações no Thread da interface do usuário](#UiThread)  
   
-     Os testes que fazem alterações no repositório de modelo devem ser executados no thread de interface do usuário. Você pode usar o `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` para essa finalidade.  
+   Os testes que fazem alterações no repositório de modelo devem ser executados no thread de interface do usuário. Você pode usar o `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` para essa finalidade.  
   
--   [Testando comandos, gestos e outros componentes do MEF](#MEF)  
+- [Testando comandos, gestos e outros componentes do MEF](#MEF)  
   
-     Para testar os componentes do MEF, você deve conectar explicitamente as propriedades deles importadas aos valores.  
+   Para testar os componentes do MEF, você deve conectar explicitamente as propriedades deles importadas aos valores.  
   
- Esses pontos são elaborados nas seguintes seções.  
+  Esses pontos são elaborados nas seguintes seções.  
   
- Um exemplo de uma extensão UML testada de unidade pode ser encontrado na Galeria de exemplos de código em [UML – Rapid Entry by usando texto](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
+  Um exemplo de uma extensão UML testada de unidade pode ser encontrado na Galeria de exemplos de código em [UML – Rapid Entry by usando texto](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
   
 ## <a name="requirements"></a>Requisitos  
  Ver [requisitos de](../modeling/extend-uml-models-and-diagrams.md#Requirements).  

@@ -1,7 +1,7 @@
 ---
 title: 'CA2151: Campos com tipos críticos devem ser críticos para segurança | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,17 +14,15 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2ce99a404dacdbcc82c628f8f682c53883948ff
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bbd3e62d58717b5c7d617960afe1d6f490dd2b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "47587944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951360"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: campos com tipos críticos devem ser críticos para segurança
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA2151: campos com tipos críticos devem ser críticos para segurança](https://docs.microsoft.com/visualstudio/code-quality/ca2151-fields-with-critical-types-should-be-security-critical).
 
 |||
 |-|-|
@@ -46,7 +44,6 @@ A versão mais recente deste tópico pode ser encontrada em [CA2151: campos com 
    {
       Type1 m_field; // CA2151, transparent field of critical type
    }
-
 ```
 
  Neste exemplo, `m_field` é um campo transparente de segurança de um tipo de segurança crítica.
@@ -80,7 +77,6 @@ A versão mais recente deste tópico pode ser encontrada em [CA2151: campos com 
       [SecurityCritical]
       Type1 m_field; // Fixed: critical type, critical field
    }
-
 ```
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos

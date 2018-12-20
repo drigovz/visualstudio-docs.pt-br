@@ -1,7 +1,7 @@
 ---
 title: Recursos de VSPackage do controle de origem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 26c3ffda-22b8-4345-9fb6-2883f37699aa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93c2da699e0b40152442d38c4510e2a8c8ed5b54
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5fd7365cb819da2132b6d77fea31abd767661895
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465732"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772333"
 ---
 # <a name="source-control-vspackage-features"></a>Recursos do VSPackage do controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [recursos de VSPackage de controle do código-fonte](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-vspackage-features).  
-  
 Esta seção descreve os vários recursos de um VSPackage de controle do código-fonte. Descreve o registro e seleção de detalhes para tal um VSPackage e aborda três dos recursos relacionados ao controle de origem principal: manipulação de eventos, substituição de glifo e (UI) de interface do usuário personalizada para o controle de fonte de salvar a consulta de edição de consulta (QEQS) funções.  
   
 ## <a name="in-this-section"></a>Nesta seção  

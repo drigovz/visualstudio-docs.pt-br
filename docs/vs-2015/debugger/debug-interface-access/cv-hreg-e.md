@@ -1,7 +1,7 @@
 ---
 title: CV_HREG_e | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - CV_HREG_e enumeration
 ms.assetid: 3f0622f7-6790-41d8-8778-227cbbf8a212
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 555a2c1d974046646dfbd3553b1ab827b9a8047f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5387a697b025757388864289cbbd3fdcebc7a5ea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473647"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724307"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [CV_HREG_e](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/cv-hreg-e).  
-  
 Especifica um registro de destino.  
   
 > [!NOTE]
@@ -38,8 +36,8 @@ Especifica um registro de destino.
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum CV_HREG_e {   
-   // Register subset shared by all processor types   
+enum CV_HREG_e {   
+   // Register subset shared by all processor types   
    CV_ALLREG_ERR    = 30000,  
    CV_ALLREG_TEB    = 30001,  
    CV_ALLREG_TIMER  = 30002,  
@@ -246,7 +244,7 @@ enum CV_HREG_e {
    // CV_M4_FltF1 through CV_M4_FltF31 defined  
    CV_M4_FltFsr  = 92,  
   
-   //** Register set for the ALPHA AXP **//  
+   //** Register set for the ALPHA AXP **//  
    CV_ALPHA_NOREG    = CV_REG_NONE,  
    CV_ALPHA_FltF0    = 10, // Floating point registers  
    // CV_ALPHA_FltF1 through CV_ALPHA_FltF31 defined  
@@ -415,7 +413,7 @@ enum CV_HREG_e {
    CV_M32R_ACLO  = 33, // Accumulator low  
    CV_M32R_PC    = 34, // Program counter  
   
-} CV_HREG_e;  
+} CV_HREG_e;  
 ```  
   
 ## <a name="elements"></a>Elementos  

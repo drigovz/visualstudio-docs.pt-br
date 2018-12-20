@@ -1,7 +1,7 @@
 ---
 title: Segurança do ClickOnce e implantação | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,29 +23,27 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: be076232ee9214ad0039421c7c5610fad3f4c3b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50654574dea18df98f8f4ecef8d606cccec93f14
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466105"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898168"
 ---
 # <a name="clickonce-security-and-deployment"></a>Segurança e implantação do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [implantação e segurança do ClickOnce](https://docs.microsoft.com/visualstudio/deployment/clickonce-security-and-deployment).  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] é uma tecnologia de implantação que permite que você crie aplicativos AutoAtualizáveis baseados em Windows que podem ser instalados e executados com interação mínima do usuário. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornece suporte completo para publicar e atualizar aplicativos implantados com a tecnologia ClickOnce, se você tiver desenvolvido seus projetos com o Visual Basic e Visual c#. Para obter informações sobre como implantar aplicativos do Visual C++, consulte [implantação de ClickOnce para aplicativos do Visual C++](http://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157).  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação supera três grandes problemas na implantação:  
   
--   **Dificuldades na atualização de aplicativos.** Com a implantação do Microsoft Windows Installer, sempre que um aplicativo é atualizado, o usuário pode instalar uma atualização, um arquivo msp e aplicá-lo para o produto instalado; com [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação, você pode fornecer atualizações automaticamente. Somente as partes do aplicativo que foram alteradas serão baixadas e, em seguida, o aplicativo atualizado é reinstalado a partir de uma nova pasta lado a lado.  
+- **Dificuldades na atualização de aplicativos.** Com a implantação do Microsoft Windows Installer, sempre que um aplicativo é atualizado, o usuário pode instalar uma atualização, um arquivo msp e aplicá-lo para o produto instalado; com [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação, você pode fornecer atualizações automaticamente. Somente as partes do aplicativo que foram alteradas serão baixadas e, em seguida, o aplicativo atualizado é reinstalado a partir de uma nova pasta lado a lado.  
   
--   **Impacto para o computador do usuário.** Com a implantação do Windows Installer, aplicativos quase sempre utilizam componentes compartilhados, com o potencial para conflitos de controle de versão; com [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação, cada aplicativo é independente e não consegue interferir em outros aplicativos.  
+- **Impacto para o computador do usuário.** Com a implantação do Windows Installer, aplicativos quase sempre utilizam componentes compartilhados, com o potencial para conflitos de controle de versão; com [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação, cada aplicativo é independente e não consegue interferir em outros aplicativos.  
   
--   **Permissões de segurança.** Implantação do Windows Installer requer permissões administrativas e permite que somente a instalação do usuário limitados; [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação permite que os usuários não administrativos instalar e concede somente as permissões de segurança de acesso do código necessárias para o aplicativo.  
+- **Permissões de segurança.** Implantação do Windows Installer requer permissões administrativas e permite que somente a instalação do usuário limitados; [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação permite que os usuários não administrativos instalar e concede somente as permissões de segurança de acesso do código necessárias para o aplicativo.  
   
- No passado, esses problemas causados, às vezes, os desenvolvedores decidissem criar aplicativos da Web em vez de aplicativos baseados em Windows, sacrificar a uma interface do usuário avançada para facilitar a instalação. Usando os aplicativos implantados usando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], você pode ter o melhor de ambas as tecnologias.  
+  No passado, esses problemas causados, às vezes, os desenvolvedores decidissem criar aplicativos da Web em vez de aplicativos baseados em Windows, sacrificar a uma interface do usuário avançada para facilitar a instalação. Usando os aplicativos implantados usando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], você pode ter o melhor de ambas as tecnologias.  
   
 ## <a name="what-is-a-clickonce-application"></a>O que é um aplicativo ClickOnce?  
  Um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo é qualquer (. xbap) do Windows Presentation Foundation, Windows Forms (.exe), o aplicativo de console (.exe) ou solução do Office (. dll) publicados usando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] tecnologia. Você pode publicar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo de três maneiras diferentes: de uma página da Web, um compartilhamento de arquivos de rede ou mídia como um CD-ROM. Um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo pode ser instalado no computador do usuário final e executar localmente, mesmo quando o computador estiver offline ou pode ser executado em modo somente online sem permanentemente instalar nada no computador do usuário final. Para obter mais informações, consulte [Escolhendo uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  

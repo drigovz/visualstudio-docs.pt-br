@@ -1,7 +1,7 @@
 ---
 title: Suporte para tipos de evento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,44 +15,42 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 33e6d8a8cdd0c5ee490ffb43fff69754a93549ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd6f8f5b7c2782bb908538426cb531db216b72fb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464705"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781459"
 ---
 # <a name="supported-event-types"></a>Tipos de eventos com suporte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [suporte para tipos de evento](https://docs.microsoft.com/visualstudio/extensibility/debugger/supported-event-types).  
-  
 Depuração do Visual Studio atualmente dá suporte aos seguintes tipos de evento:  
   
--   Eventos assíncronos  
+- Eventos assíncronos  
   
-     Notificar o Gerenciador de sessão de depuração (SDM) e o IDE que o estado do aplicativo que está sendo depurado está mudando. Esses eventos são processados em tempo de livre do SDM e o IDE. Nenhuma resposta é enviada para o mecanismo de depuração (DES) depois que o evento seja processado. O [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) e [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) interfaces são exemplos de eventos assíncronos.  
+   Notificar o Gerenciador de sessão de depuração (SDM) e o IDE que o estado do aplicativo que está sendo depurado está mudando. Esses eventos são processados em tempo de livre do SDM e o IDE. Nenhuma resposta é enviada para o mecanismo de depuração (DES) depois que o evento seja processado. O [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) e [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) interfaces são exemplos de eventos assíncronos.  
   
--   Eventos síncronos  
+- Eventos síncronos  
   
-     Notificar o SDM e o IDE que está alterando o estado do aplicativo que está sendo depurado. A única diferença entre esses eventos e eventos assíncronos é que uma resposta é enviada por meio das [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) método.  
+   Notificar o SDM e o IDE que está alterando o estado do aplicativo que está sendo depurado. A única diferença entre esses eventos e eventos assíncronos é que uma resposta é enviada por meio das [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) método.  
   
-     Enviar um evento síncrono é útil se você precisar DE sua para continuar o processamento depois que o IDE recebe e processa o evento.  
+   Enviar um evento síncrono é útil se você precisar DE sua para continuar o processamento depois que o IDE recebe e processa o evento.  
   
--   Eventos de parada de síncrona ou eventos de parada  
+- Eventos de parada de síncrona ou eventos de parada  
   
-     Notificar o SDM e o IDE que o aplicativo que está sendo depurado parou de executar o código. Quando você envia um evento de interrupção por meio do método [evento](../../extensibility/debugger/reference/idebugeventcallback2-event.md), o [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) o parâmetro é obrigatório. Interrompendo eventos foram mantidos por uma chamada para um dos seguintes métodos:  
+   Notificar o SDM e o IDE que o aplicativo que está sendo depurado parou de executar o código. Quando você envia um evento de interrupção por meio do método [evento](../../extensibility/debugger/reference/idebugeventcallback2-event.md), o [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) o parâmetro é obrigatório. Interrompendo eventos foram mantidos por uma chamada para um dos seguintes métodos:  
   
-    -   [Executar](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
+  - [Executar](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
   
-    -   [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
+  - [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
   
-    -   [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
+  - [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
   
-     As interfaces [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) e [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) são exemplos de eventos de interrupção.  
+    As interfaces [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) e [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) são exemplos de eventos de interrupção.  
   
-    > [!NOTE]
-    >  Não há suporte para eventos de interrupção assíncrona. É um erro ao enviar um evento de interrupção assíncrono.  
+  > [!NOTE]
+  >  Não há suporte para eventos de interrupção assíncrona. É um erro ao enviar um evento de interrupção assíncrono.  
   
 ## <a name="discussion"></a>Discussão  
  A implementação real de eventos depende do design do seu DE. O tipo de cada evento enviado é determinado por seus atributos, que são definidos quando você projeta a Alemanha. Por exemplo, um Alemanha pode enviar uma [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) como um evento assíncrono, enquanto outro pode enviá-lo como um evento de interrupção.  

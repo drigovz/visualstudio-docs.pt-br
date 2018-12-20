@@ -1,7 +1,7 @@
 ---
 title: Criando modelos de Item e projeto personalizados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd850cf73f9d7a9c443c374bd8a83e48c3470a31
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 3229eb90dad59269d81bfd34b7eb5fa15bdab6d7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47587919"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794602"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Criando modelos de item e de projeto personalizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [personalizados de criação de projeto e modelos de Item](https://docs.microsoft.com/visualstudio/extensibility/creating-custom-project-and-item-templates).  
-  
 O SDK do Visual Studio inclui modelos de projeto que cria um modelo de projeto personalizado e um modelo de item personalizado. Esses modelos incluem algumas substituições de parâmetro comuns e de build como arquivos zip. Eles não são implantados automaticamente e eles não estão disponíveis na instância experimental. Você deve copiar o zip arquivos para o local  
   
  Os modelos de criação de modelo permitem que você incluir modelos em extensões maiores. Isso permite implementar o controle de versão nos arquivos de origem e criar um grupo de projetos de modelo em um pacote VSIX.  

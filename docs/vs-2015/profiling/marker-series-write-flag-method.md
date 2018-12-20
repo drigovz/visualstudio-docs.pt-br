@@ -1,7 +1,7 @@
 ---
 title: Método marker_series::write_flag | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - Concurrency::diagnostic::marker_series::write_flag method
 ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6d027f0b601b0814ba0e6b2d4c477c04df8cfc9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: c8b578e3c0b8d2f2ccbf62d8745f0deb783e9217
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472901"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816652"
 ---
 # <a name="markerserieswriteflag-method"></a>Método marker_series::write_flag
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [marker_series:: write_flag método](https://docs.microsoft.com/visualstudio/profiling/marker-series-write-flag-method).  
-  
 Grava um sinalizador para o arquivo de rastreamento da Visualização Simultânea.  
   
 ## <a name="syntax"></a>Sintaxe  

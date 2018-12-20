@@ -1,7 +1,7 @@
 ---
 title: Pré-requisitos de implantação de aplicativo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3a866105a2b9d4549fd3684dc4726f165d43a7af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e382c5d312a2de69281bdeda92e9c275e2877932
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890980"
 ---
 # <a name="application-deployment-prerequisites"></a>Pré-requisitos de implantação de aplicativos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [pré-requisitos de implantação do aplicativo](https://docs.microsoft.com/visualstudio/deployment/application-deployment-prerequisites).  
-  
 Para garantir que seu aplicativo será instalado e executará com êxito, você deve primeiro garantir que todos os componentes dos quais o aplicativo depende já estejam instalados no computador de destino. Por exemplo, a maioria dos aplicativos criados usando o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tem uma dependência sobre o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]; a versão correta do tempo de execução de linguagem comum deve estar presente no computador de destino antes a instalação do aplicativo.  
   
  Você pode selecionar esses pré-requisitos a **caixa de diálogo de pré-requisitos** e instalar o .NET Framework e outros redistribuíveis como parte de sua instalação. Essa prática é conhecida como *inicialização*. Em seguida, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera um programa executável do Windows chamado Setup.exe, também conhecido como um *bootstrapper*. O bootstrapper é responsável pela instalação desses pré-requisitos antes de executar o aplicativo. Para obter mais informações sobre como selecionar esses pré-requisitos, consulte [caixa de diálogo de pré-requisitos](../ide/reference/prerequisites-dialog-box.md).  
@@ -48,13 +46,13 @@ Para garantir que seu aplicativo será instalado e executará com êxito, você 
 ## <a name="bootstrapping-and-clickonce-deployment"></a>Inicialização e implantação do ClickOnce  
  Antes de instalar um aplicativo em um computador cliente, o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] examinará o cliente para garantir que ele tenha determinados requisitos especificados no manifesto do aplicativo. Eles incluem o seguinte:  
   
--   A versão mínima necessária do tempo de execução da linguagem comum, que está especificada como uma dependência do assembly no manifesto do aplicativo.  
+- A versão mínima necessária do tempo de execução da linguagem comum, que está especificada como uma dependência do assembly no manifesto do aplicativo.  
   
--   A versão mínima necessária do sistema operacional Windows exigida pelo aplicativo, conforme especificado no manifesto do aplicativo usando o elemento `<osVersionInfo>`. (Consulte [ \<dependência > elemento](../deployment/dependency-element-clickonce-application.md))  
+- A versão mínima necessária do sistema operacional Windows exigida pelo aplicativo, conforme especificado no manifesto do aplicativo usando o elemento `<osVersionInfo>`. (Consulte [ \<dependência > elemento](../deployment/dependency-element-clickonce-application.md))  
   
--   A versão mínima de todos os assemblies que devem ser pré-instalados no cache do assembly global (GAC), conforme especificado pelas declarações de dependência do assembly no manifesto do assembly.  
+- A versão mínima de todos os assemblies que devem ser pré-instalados no cache do assembly global (GAC), conforme especificado pelas declarações de dependência do assembly no manifesto do assembly.  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pode detectar pré-requisitos ausentes, e você pode instalar os pré-requisitos usando um bootstrapper. Para obter mais informações, consulte [como: instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pode detectar pré-requisitos ausentes, e você pode instalar os pré-requisitos usando um bootstrapper. Para obter mais informações, consulte [como: instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
 >  Para alterar os valores nos manifestos gerados pelas ferramentas, tais como [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e MageUI.exe, você precisa editar o manifesto do aplicativo em um editor de texto e assinar novamente os manifestos do aplicativo e de implantação. Para obter mais informações, consulte [como: assinar novamente os manifestos de aplicativo e implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  

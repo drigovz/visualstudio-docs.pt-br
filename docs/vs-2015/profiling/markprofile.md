@@ -1,7 +1,7 @@
 ---
 title: MarkProfile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - MarkProfile
 ms.assetid: 54dac8c8-c8ee-4023-af27-b25466e3a6ec
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c4a5882ea5edd1f8432bf67197ec016c3ce5a81f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 79fcc7fe8789916cce24919551e4130f78653abf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464012"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722016"
 ---
 # <a name="markprofile"></a>MarkProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [MarkProfile](https://docs.microsoft.com/visualstudio/profiling/markprofile).  
-  
 O método `MarkProfile` insere uma marca de perfil no arquivo .vsp. A criação de perfil para o thread que contém a função `MarkProfile` deve ser ON para a marca a ser inserida.  
   
 ## <a name="syntax"></a>Sintaxe  

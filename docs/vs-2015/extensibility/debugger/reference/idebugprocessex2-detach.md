@@ -1,7 +1,7 @@
 ---
 title: IDebugProcessEx2::Detach | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 075c83ee14f57c1cb67f52c0cedb77ae359222e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2848549a1640865296a64c88c4b54f89a57df2a3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467593"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732812"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProcessEx2::Detach](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocessex2-detach).  
-  
 Esse método informa o processo que uma sessão não está depurando o processo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Detach(   
+HRESULT Detach(   
    IDebugSession2* pSession  
 );  
 ```  

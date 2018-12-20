@@ -1,7 +1,7 @@
 ---
 title: MESSAGETYPE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 800cc77d-3c27-4763-a9df-552a9384bd49
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f4e6bb32aa3387d79ea233e8751c5805537947fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d75b09377797135e03269bf9f0629a6ff0f81b83
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463283"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739560"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [MESSAGETYPE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/messagetype).  
-  
 Especifica o tipo de mensagem e o motivo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_MESSAGETYPE {   
+enum enum_MESSAGETYPE {   
    MT_OUTPUTSTRING      = 0x0000001,  
    MT_MESSAGEBOX        = 0x00000002,  
    MT_TYPE_MASK         = 0x000000FF,  
@@ -46,7 +44,7 @@ typedef DWORD MESSAGETYPE;
 ```  
   
 ```csharp  
-public enum enum_MESSAGETYPE {   
+public enum enum_MESSAGETYPE {   
    MT_OUTPUTSTRING      = 0x0000001,  
    MT_MESSAGEBOX        = 0x00000002,  
    MT_TYPE_MASK         = 0x000000FF,  

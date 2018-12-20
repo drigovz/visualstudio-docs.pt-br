@@ -1,7 +1,7 @@
 ---
 title: Elemento FullClassName (extensão de Assistente de modelo do Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25f291d787a6efe03c6b8cf8dff27157f48d1596
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7de1984a10d80e5136a9a01a1e1dae8ee5226f9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474637"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796760"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Elemento FullClassName (Extensão do Assistente de Modelo do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento FullClassName (modelo de Assistente de extensão do Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/fullclassname-element-visual-studio-template-wizard-extension).  
-  
 O nome totalmente qualificado da classe que implementa o `IWizard` interface.  
   
  \<VSTemplate >  

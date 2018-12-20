@@ -1,5 +1,5 @@
 ---
-title: Usando o Gráfico de atividade de usuário virtual em testes de carga no Visual Studio
+title: Usando o gráfico de atividade de usuário virtual em testes de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a937e06eadc1af0734ff34f043c97833e1be1c96
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8e4584d386cb61aaf7809c8bb5ab748e49543c7e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382204"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895919"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Passo a passo: Usando o Gráfico de Atividade de Usuário Virtual para isolar problemas
 
@@ -24,17 +24,7 @@ Neste passo a passo, você aprenderá a usar o Gráfico de Atividade de Usuário
 
 O Gráfico de Atividade de Usuário Virtual permite visualizar a atividade de usuário virtual que está associada ao teste de carga. Cada linha do gráfico representa um usuário virtual individual. O Gráfico de Atividade de Usuário Virtual mostra exatamente o que cada usuário virtual executou durante o teste. Isso permite isolar problemas de desempenho vendo padrões de atividade de usuário, padrões de carga, correlação de testes reprovados ou lentos, e ver as solicitações com outra atividade de usuário virtual. O Gráfico de Atividade de Usuário Virtual está disponível apenas depois da conclusão da execução do teste de carga.
 
-Neste passo a passo, você realizará as seguintes tarefas:
-
--   Saiba como usar as seguintes ferramentas associadas ao Gráfico de Atividade de Usuário Virtual:
-
-    -   Use a ferramenta **Zoom para o período de tempo** para especificar um período específico no gráfico que você deseja analisar.
-
-    -   Use o painel **Legenda de detalhes** e o painel **Filtrar resultados** para aplicar a filtragem no gráfico e ajudar a isolar problemas.
-
--   Use o Gráfico de Atividade de Usuário Virtual para analisar um erro que ocorreu para um usuário específico virtual e ver os detalhes problemáticos do tipo de erro.
-
-Para saber mais, confira [Análise da atividade de usuário virtual na exibição Detalhes](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -42,13 +32,11 @@ Para saber mais, confira [Análise da atividade de usuário virtual na exibiçã
 
 -   Complete esses procedimentos:
 
-    -   [Gravar e executar um teste de desempenho Web](http://msdn.microsoft.com/en-us/bd0a82fd-cec0-4861-bc09-e1b0b2d258ef).
+    -   [Gravar e executar um teste de desempenho Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
 
-    -   [Criar e executar um teste de carga](http://msdn.microsoft.com/en-us/7041cbcf-9ab1-4579-98ff-8f296aeaded4)
+    -   [Criar e executar um teste de carga](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Abrir a solução ColorWebApp criada nos passo a passo anteriores
-
-### <a name="open-the-solution"></a>Abrir a solução
 
 1.  Inicie o Visual Studio.
 

@@ -1,7 +1,7 @@
 ---
 title: Caixa de diálogo Propriedades do thread | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - thread properties, Spy++
 ms.assetid: 5352d11a-debb-4c20-b9a0-d37d94900b1c
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00cf70e0373f6791397234d9a5a329e57a5d46ee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bc6a20b8c1d74d322a21d56a3fbe1cd124bc7cd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463061"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759521"
 ---
 # <a name="thread-properties-dialog-box"></a>Caixa de diálogo Propriedades do Thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [caixa de diálogo Propriedades do Thread](https://docs.microsoft.com/visualstudio/debugger/thread-properties-dialog-box).  
-  
 Use essa caixa de diálogo caixa Saiba mais sobre um thread específico. Para exibir essa caixa de diálogo, mova o foco para um [exibição de Threads](../debugger/threads-view.md) janela ou abra [exibição de mensagens](../debugger/messages-view.md) e expandir uma mensagem. Selecione qualquer nó de segmento na árvore e escolha **propriedades** da **exibição** menu.  
   
  O **geral** guia é a única guia exibida. Sistemas operacionais Windows 98 e Windows 95, uma versão modificada dessa guia é exibida.  

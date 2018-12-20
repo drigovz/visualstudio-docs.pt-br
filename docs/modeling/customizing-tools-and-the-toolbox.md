@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c7c526c9e5f850ea71a1e31ea0364fcb19a2bcb5
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3b0acab24dbb7ff1313e62e91b17bf87190dbb99
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860428"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967435"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizando ferramentas e a caixa de ferramentas
 
@@ -139,7 +139,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
         {
             return base.CreateElementToolPrototype(store, domainClassId);
 }  }    }
-
 ```
 
 ## <a name="connections"></a> Personalizando ferramentas de Conexão
@@ -167,15 +166,15 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ### <a name="custom-code-for-connection-builders"></a>Código personalizado para construtores de conexão
  Existem quatro caixas de seleção na interface do usuário que definem diferentes tipos de personalização dos construtores de conexão:
 
--   o **aceitação personalizada** caixa de seleção em uma diretiva de função de origem ou destino
+- o **aceitação personalizada** caixa de seleção em uma diretiva de função de origem ou destino
 
--   o **conexão personalizada** caixa de seleção em uma diretiva de função de origem ou destino
+- o **conexão personalizada** caixa de seleção em uma diretiva de função de origem ou destino
 
--   o **usar a conexão** caixa de seleção em uma diretiva de conexão
+- o **usar a conexão** caixa de seleção em uma diretiva de conexão
 
--   o **personalizado é** propriedade do construtor de conexão
+- o **personalizado é** propriedade do construtor de conexão
 
- É necessário fornecer algum código de programa para fazer essas personalizações. Para descobrir qual código é necessário fornecer, verifique uma dessas caixas, clique em Transformar Todos os Modelos e, em seguida, construa sua solução. O resultado será um relatório de erro. Clique duas vezes no relatório de erro para visualizar um comentário que explique qual código deve ser adicionado.
+  É necessário fornecer algum código de programa para fazer essas personalizações. Para descobrir qual código é necessário fornecer, verifique uma dessas caixas, clique em Transformar Todos os Modelos e, em seguida, construa sua solução. O resultado será um relatório de erro. Clique duas vezes no relatório de erro para visualizar um comentário que explique qual código deve ser adicionado.
 
 > [!NOTE]
 >  Para adicionar o código personalizado, crie uma definição de classe parcial em um arquivo de código separado dos arquivos de códigos nas pastas GeneratedCode. Para evitar a perda de seu trabalho, é necessário que os arquivos de códigos gerados não sejam editados. Para obter mais informações, consulte [substituindo e estendendo as Classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).
@@ -241,4 +240,4 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 - [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md)
 - [Como adicionar um manipulador de evento do tipo "arrastar e soltar"](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Navegando por um modelo no código do programa e atualizando-o](../modeling/navigating-and-updating-a-model-in-program-code.md)
-- [Exemplo de diagramas de circuito DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Exemplo de diagramas de circuito DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

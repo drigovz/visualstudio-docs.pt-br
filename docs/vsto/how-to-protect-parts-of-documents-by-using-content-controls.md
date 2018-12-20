@@ -21,21 +21,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6cbe73fb5da7ae5d0efa01e1e7c6fb0068310ad2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: beee4dd4a67b03f278a296d4b5f129100212fd25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850354"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Como: proteger partes de documentos usando controles de conteúdo
   Quando você protege a parte de um documento, você impedir usuários de alterar ou excluir o conteúdo nessa parte do documento. Há várias maneiras que você pode proteger partes de um documento do Microsoft Office Word usando controles de conteúdo:  
   
--   Você pode proteger um controle de conteúdo.  
+- Você pode proteger um controle de conteúdo.  
   
--   Você pode proteger uma parte de um documento que não está em um controle de conteúdo.  
+- Você pode proteger uma parte de um documento que não está em um controle de conteúdo.  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ##  <a name="EditDeleteControl"></a> Proteger um controle de conteúdo  
  Você pode impedir que os usuários editando ou excluindo um controle de conteúdo, definindo propriedades do controle em um projeto de nível de documento em tempo de design ou em tempo de execução.  

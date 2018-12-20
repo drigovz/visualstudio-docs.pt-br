@@ -1,7 +1,7 @@
 ---
 title: DisassemblyData | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7904057d31d2bbc32aee060771359b85195f7d5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb7682129ed077cf7f84f9a72edc5e75c0398ff3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462471"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51804523"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [DisassemblyData](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/disassemblydata).  
-  
 Descreve uma instrução de desmontagem para o ambiente de desenvolvimento integrado (IDE) para exibir.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-typedef struct tagDisassemblyData {   
+typedef struct tagDisassemblyData {   
    DISASSEMBLY_STREAM_FIELDS dwFields;  
    BSTR                      bstrAddress;  
    BSTR                      bstrAddressOffset;  
@@ -52,7 +50,7 @@ typedef struct tagDisassemblyData {
 ```  
   
 ```csharp  
-public struct DisassemblyData {   
+public struct DisassemblyData {   
    public uint          dwFields;  
    public string        bstrAddress;  
    public string        bstrAddressOffset;  

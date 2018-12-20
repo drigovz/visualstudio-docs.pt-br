@@ -1,7 +1,7 @@
 ---
 title: Método marker_series::is_enabled | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - Concurrency::diagnostic::marker_series::is_enabled method
 ms.assetid: 8ce4dd50-ca29-4c72-98d6-582693f7d501
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db5a91a3b2212967cb1de915f15abb9d5caa9d98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 6e512e51cfcd33d44072308fcff1ef0c9d69e112
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464637"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806341"
 ---
 # <a name="markerseriesisenabled-method"></a>Método marker_series::is_enabled
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [marker_series:: is_enabled método](https://docs.microsoft.com/visualstudio/profiling/marker-series-is-enabled-method).  
-  
 Determina se alguma sessão habilitou o provedor.  
   
 ## <a name="syntax"></a>Sintaxe  

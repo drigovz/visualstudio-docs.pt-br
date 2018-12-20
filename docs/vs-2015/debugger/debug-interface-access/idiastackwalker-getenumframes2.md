@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalker::getEnumFrames2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,28 +15,26 @@ helpviewer_keywords:
 - IDiaStackWalker2::getEnumFrames2 method
 ms.assetid: 73196d3f-112c-4b3a-997b-7c6b815d4afc
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf81e33b89a1a4361e73de4d2c532d4da3165f4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 193c1fb9d2100e4763f86e70e0338dbe10df016a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475174"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761626"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaStackWalker::getEnumFrames2](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackwalker-getenumframes2).  
-  
 Recupera um enumerador de quadro de pilha para um tipo de plataforma específica.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
   
-      HRESULT getEnumFrames2(   
+      HRESULT getEnumFrames2(   
    enum  CV_CPU_TYPE_e    cpuid,  
    IDiaStackWalkHelper*   pHelper,  
    IDiaEnumStackFrames**  ppEnum  

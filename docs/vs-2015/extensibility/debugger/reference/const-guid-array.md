@@ -1,7 +1,7 @@
 ---
 title: CONST_GUID_ARRAY | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,33 +17,31 @@ ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73bf618000deba98523918003214717f77a6a360
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5aa46dd87f197bad4a658a9296b794a87cde3fe6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474583"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798398"
 ---
 # <a name="constguidarray"></a>CONST_GUID_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [CONST_GUID_ARRAY](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/const-guid-array).  
-  
 Uma estrutura que contém uma lista de `GUID`s.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-typedef struct tagCONST_GUID_ARRAY {  
-   DWORD       dwCount;  
-   CONST GUID* Members;  
-} CONST_GUID_ARRAY;  
+typedef struct tagCONST_GUID_ARRAY {  
+   DWORD       dwCount;  
+   CONST GUID* Members;  
+} CONST_GUID_ARRAY;  
 ```  
   
 ```csharp  
-public struct CONST_GUID_ARRAY {  
-   public uint   dwCount;  
-   public Guid[] Members;  
+public struct CONST_GUID_ARRAY {  
+   public uint   dwCount;  
+   public Guid[] Members;  
 }  
 ```  
   

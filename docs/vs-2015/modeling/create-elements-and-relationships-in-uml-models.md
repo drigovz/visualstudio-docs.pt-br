@@ -1,7 +1,7 @@
 ---
 title: Criar elementos e relações em modelos UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ helpviewer_keywords:
 - UML API
 ms.assetid: cae81d32-8cc7-4f7c-9f00-20119952bc51
 caps.latest.revision: 17
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 55d1a54fad3a420c60cf69bc93d29a675f9e802e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ed918bc96168196400dd34d87ec65574fdfc5b6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472670"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785866"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Criar elementos e relações em modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar elementos e relações em modelos UML](https://docs.microsoft.com/visualstudio/modeling/create-elements-and-relationships-in-uml-models).  
-  
 No código do programa para uma extensão do Visual Studio, você pode criar e excluir elementos e relações.  
   
 ## <a name="create-a-model-element"></a>Criar um elemento de modelo  

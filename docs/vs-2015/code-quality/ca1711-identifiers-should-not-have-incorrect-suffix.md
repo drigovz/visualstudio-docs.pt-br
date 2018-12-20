@@ -1,7 +1,7 @@
 ---
 title: 'CA1711: Os identificadores não devem ter sufixo incorreto | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2b50c3b4cbdbaa82851d23733d04bf3ff5d68af9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 1f42416a6d88edc417c0150685ab4c7e198aa808
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837094"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: os identificadores não devem ter sufixo incorreto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1711: os identificadores não devem ter sufixo incorreto](https://docs.microsoft.com/visualstudio/code-quality/ca1711-identifiers-should-not-have-incorrect-suffix).
 
 |||
 |-|-|
@@ -62,15 +60,15 @@ A versão mais recente deste tópico pode ser encontrada em [CA1711: os identifi
 
  Além disso, os seguintes sufixos devem **não** ser usado:
 
--   delegado
+- delegado
 
--   Enum
+- Enum
 
--   Impl - use 'Core' em vez disso
+- Impl - use 'Core' em vez disso
 
--   Ex ou sufixo semelhante para distingui-lo de uma versão anterior do mesmo tipo
+- Ex ou sufixo semelhante para distingui-lo de uma versão anterior do mesmo tipo
 
- Convenções de nomenclatura de fornecem uma aparência comum para bibliotecas que direcionam o common language runtime. Isso reduz a curva de aprendizado que é necessário para novas bibliotecas de software e aumenta a confiança do cliente que a biblioteca foi desenvolvida por alguém que tenha experiência em desenvolvimento de código gerenciado.
+  Convenções de nomenclatura de fornecem uma aparência comum para bibliotecas que direcionam o common language runtime. Isso reduz a curva de aprendizado que é necessário para novas bibliotecas de software e aumenta a confiança do cliente que a biblioteca foi desenvolvida por alguém que tenha experiência em desenvolvimento de código gerenciado.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Remova o sufixo do nome do tipo.

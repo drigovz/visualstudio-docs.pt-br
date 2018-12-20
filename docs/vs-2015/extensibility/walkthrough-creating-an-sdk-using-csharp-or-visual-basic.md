@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Criando um SDK usando c# ou Visual Basic | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d870be666efd0457ed472fb065642db456459b97
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 3e0bc88c8581b29f43e7efc55ee86019e1f1c3fb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462721"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736753"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Passo a passo: criando um SDK usando C# ou Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Criando um SDK usando c# ou Visual Basic](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic).  
-  
 Neste passo a passo, você aprenderá como criar um SDK de biblioteca de matemática simples usando o Visual c# e, em seguida, o SDK como um Visual Studio VSIX (extensão) do pacote. Você concluirá os procedimentos a seguir:  
   
 -   [Para criar o componente de tempo de execução SimpleMath Windows](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
@@ -140,23 +138,23 @@ Neste passo a passo, você aprenderá como criar um SDK de biblioteca de matemá
   
 ##  <a name="createSample"></a> Para criar um aplicativo de exemplo que usa a biblioteca de classes  
   
-1.  Na barra de menus, escolha **arquivo**, **New**, **novo projeto**.  
+1. Na barra de menus, escolha **arquivo**, **New**, **novo projeto**.  
   
-2.  Na lista de modelos, expanda **Visual c#** ou **Visual Basic**e, em seguida, escolha o **Windows Store** nó.  
+2. Na lista de modelos, expanda **Visual c#** ou **Visual Basic**e, em seguida, escolha o **Windows Store** nó.  
   
-3.  Escolha o **aplicativo em branco** modelo, o nome do projeto **ArithmeticUI**e, em seguida, escolha o **Okey** botão.  
+3. Escolha o **aplicativo em branco** modelo, o nome do projeto **ArithmeticUI**e, em seguida, escolha o **Okey** botão.  
   
-4.  Na **Gerenciador de soluções**, abra o menu de atalho para o **ArithmeticUI** do projeto e, em seguida, escolha **Add**, **referência**.  
+4. Na **Gerenciador de soluções**, abra o menu de atalho para o **ArithmeticUI** do projeto e, em seguida, escolha **Add**, **referência**.  
   
-5.  Na lista de tipos de referência, expanda **Windows**e, em seguida, escolha **extensões**.  
+5. Na lista de tipos de referência, expanda **Windows**e, em seguida, escolha **extensões**.  
   
-6.  No painel de detalhes, escolha o **SDK de matemática simples** extensão.  
+6. No painel de detalhes, escolha o **SDK de matemática simples** extensão.  
   
-     Informações adicionais sobre o SDK é exibida. Você pode escolher o **mais informações** link para abrir http://www.msdn.microsoft.com, conforme especificado no arquivo Sdkmanifest no início deste passo a passo.  
+    Informações adicionais sobre o SDK é exibida. Você pode escolher o **mais informações** link para abrir http://www.msdn.microsoft.com, conforme especificado no arquivo Sdkmanifest no início deste passo a passo.  
   
-7.  No **Gerenciador de referências** caixa de diálogo, selecione o **SDK de matemática simples** caixa de seleção e, em seguida, escolha o **Okey** botão.  
+7. No **Gerenciador de referências** caixa de diálogo, selecione o **SDK de matemática simples** caixa de seleção e, em seguida, escolha o **Okey** botão.  
   
-8.  Na barra de menus, escolha **modo de exibição**, **Pesquisador de objetos**.  
+8. Na barra de menus, escolha **modo de exibição**, **Pesquisador de objetos**.  
   
 9. No **navegue** , escolha **matemática simples**.  
   
@@ -178,7 +176,7 @@ Neste passo a passo, você aprenderá como criar um SDK de biblioteca de matemá
   
      O resultado correto é exibido.  
   
- Você criou e usado um SDK de extensão com êxito.  
+    Você criou e usado um SDK de extensão com êxito.  
   
 ## <a name="see-also"></a>Consulte também  
  [Passo a passo: Criando um SDK usando C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   

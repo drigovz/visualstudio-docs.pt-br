@@ -1,7 +1,7 @@
 ---
 title: 'CA1044: As propriedades não devem ser somente gravação | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 732af1dcdeff669723f717dabe035a38640a8bf3
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 4b6d0d37d68951d556cdb575897178bd07a55a6e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860832"
 ---
 # <a name="ca1044-properties-should-not-be-write-only"></a>CA1044: as propriedades não devem ser somente leitura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1044: as propriedades não devem ser somente gravação](https://docs.microsoft.com/visualstudio/code-quality/ca1044-properties-should-not-be-write-only).
 
 |||
 |-|-|

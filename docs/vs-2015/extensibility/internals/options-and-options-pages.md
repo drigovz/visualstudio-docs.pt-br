@@ -1,7 +1,7 @@
 ---
 title: Opções e páginas de opções | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97bf59649d0f2099261bef7a3e425f2fe7fc553e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 005aeceb328a24c8c90994b6b274dbddc6b874f8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465382"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783266"
 ---
 # <a name="options-and-options-pages"></a>Opções e páginas de opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [opções e páginas de opções](https://docs.microsoft.com/visualstudio/extensibility/internals/options-and-options-pages).  
-  
 Clicando em **opções** sobre o **ferramentas** menu é aberto o **opções** caixa de diálogo. As opções na caixa de diálogo são coletivamente chamadas de páginas de opções. O controle de árvore no painel de navegação inclui as categorias de opções, e cada categoria tem páginas de opções. Quando você seleciona uma página, suas opções aparecem no painel direito. Essas páginas permitem que você altere os valores das opções que determinam o estado de um VSPackage.  
   
 ## <a name="support-for-options-pages"></a>Suporte para páginas de opções  
@@ -61,21 +59,21 @@ Clicando em **opções** sobre o **ferramentas** menu é aberto o **opções** c
 ## <a name="option-attributes-and-layout"></a>Atributos de opção e Layout  
  A interface do usuário (IU) que fornece a página determina a aparência das opções em uma página de opções personalizadas. O layout, rotulagem e a descrição das opções em uma página de opções genéricas são determinados pelos seguintes atributos:  
   
--   <xref:System.ComponentModel.CategoryAttribute> Determina a categoria da opção.  
+- <xref:System.ComponentModel.CategoryAttribute> Determina a categoria da opção.  
   
--   <xref:System.ComponentModel.DisplayNameAttribute> Determina o nome de exibição da opção.  
+- <xref:System.ComponentModel.DisplayNameAttribute> Determina o nome de exibição da opção.  
   
--   <xref:System.ComponentModel.DescriptionAttribute> Determina a descrição da opção.  
+- <xref:System.ComponentModel.DescriptionAttribute> Determina a descrição da opção.  
   
-    > [!NOTE]
-    >  Atributos equivalentes, SRCategory, LocDisplayName e SRDescription, usar os recursos de cadeia de caracteres para localização e são definidos na [exemplo de projeto gerenciado](http://go.microsoft.com/fwlink/?LinkId=122774).  
+  > [!NOTE]
+  >  Atributos equivalentes, SRCategory, LocDisplayName e SRDescription, usar os recursos de cadeia de caracteres para localização e são definidos na [exemplo de projeto gerenciado](http://go.microsoft.com/fwlink/?LinkId=122774).  
   
- Considere o fragmento de código a seguir:  
+  Considere o fragmento de código a seguir:  
   
- [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
- [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
+  [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
+  [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
   
- A opção OptionInteger aparece na página de opções como **opção de número inteiro** no **minhas opções** categoria. Se a opção for selecionada, a descrição **minha opção inteiro**, aparece na caixa de descrição.  
+  A opção OptionInteger aparece na página de opções como **opção de número inteiro** no **minhas opções** categoria. Se a opção for selecionada, a descrição **minha opção inteiro**, aparece na caixa de descrição.  
   
 ## <a name="accessing-options-pages-from-another-vspackage"></a>Acessando páginas de opções de VSPackage outro  
  Um VSPackage que hospeda e gerencia uma página de opções pode ser acessado por meio de programação de VSPackage outro usando o modelo de automação. Por exemplo, no código a seguir um VSPackage é registrado como uma página de opção de hospedagem.  

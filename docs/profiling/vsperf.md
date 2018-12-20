@@ -10,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcac1e902ccc1fcc5432a231c5f34629422815fd
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5c841e6930db8f65aaf93c314359656689ecfd1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477386"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903537"
 ---
 # <a name="vsperf"></a>VSPerf
 Use a ferramenta de linha de comando **VsPerf** para:  
   
-1.  Crie perfil de aplicativos UWP na linha de comando quando o Visual Studio não estiver instalado no dispositivo.  
+1. Crie perfil de aplicativos UWP na linha de comando quando o Visual Studio não estiver instalado no dispositivo.  
   
-2.  Crie perfil de aplicativos de área de trabalho do Windows 8 e aplicativos do Windows Server 2012 usando o método de criação de perfil de amostragem.  
+2. Crie perfil de aplicativos de área de trabalho do Windows 8 e aplicativos do Windows Server 2012 usando o método de criação de perfil de amostragem.  
   
- Para obter mais informações sobre opções de criação de perfil, consulte [Ferramentas de desempenho em aplicativos do Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+   Para obter mais informações sobre opções de criação de perfil, consulte [Ferramentas de desempenho em aplicativos do Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="uwp-apps-only"></a>Apenas os aplicativos UWP  
  Essas opções se aplicam somente aos aplicativos UWP.  

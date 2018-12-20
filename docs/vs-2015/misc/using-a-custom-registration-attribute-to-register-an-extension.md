@@ -1,7 +1,7 @@
 ---
 title: Usando um atributo de registro personalizado para registrar uma extensão | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 98068fa7-bda1-4922-b3f6-28680de58c3d
 caps.latest.revision: 3
 manager: douge
-ms.openlocfilehash: e94d6a674590430e0635c297f21be9d356c56a71
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 251c31efcbb8a72efac51f246e644a30a79ed999
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466522"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279832"
 ---
 # <a name="using-a-custom-registration-attribute-to-register-an-extension"></a>Usando um atributo de registro personalizado para registrar uma extensão
 Em alguns casos, você talvez precise criar um novo atributo de registro para a sua extensão. Você pode usar atributos de registro para adicionar novas chaves de registro ou para adicionar novos valores para as chaves existentes. O novo atributo deve derivar de <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, e ele deve substituir o <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> e <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> métodos.  

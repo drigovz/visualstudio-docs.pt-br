@@ -1,7 +1,7 @@
 ---
 title: LocationType | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - LocationType enumeration
 ms.assetid: d3e1eedc-bfd3-4c91-881b-d69565138d0f
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a6d2400706a88dfcc40dec6e0e410c2e675bcf6d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a41eb64cc1a93f39a50187d54ecf556246f31913
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475045"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752847"
 ---
 # <a name="locationtype"></a>LocationType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [LocationType](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/locationtype).  
-  
 Indica o tipo de informações de localização contidas em um símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum LocationType {   
+enum LocationType {   
    LocIsNull,  
    LocIsStatic,  
    LocIsTLS,  

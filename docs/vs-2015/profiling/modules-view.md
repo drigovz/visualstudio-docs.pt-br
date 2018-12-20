@@ -1,7 +1,7 @@
 ---
 title: Exibição de Módulos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,21 +17,19 @@ helpviewer_keywords:
 - profiling tools, Modules view
 ms.assetid: 4314a404-2120-425b-be42-180cd4bac840
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: baf208e30a96efa73e0524fc10a761ac01c316e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 90e81530a3d682b1604a5226bb66f9e62637dd0e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462064"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731359"
 ---
 # <a name="modules-view"></a>Exibição de módulos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição de módulos](https://docs.microsoft.com/visualstudio/profiling/modules-view).  
-  
 A exibição de Módulos lista os módulos dos dados de criação de perfil. Cada módulo é o nó raiz de uma árvore hierárquica. As funções que tiveram o perfil criado do módulo são listadas abaixo do nó do módulo. Se os dados de criação de perfil foram coletados usando o método de amostragem, as informações de linha são listadas sob o nó de função e os dados de ponteiro de instrução são listados sob o nó de linha.  
   
  Expandir ou recolher o nome do módulo para exibir ou fechar a exibição de dados de desempenho do módulo.  

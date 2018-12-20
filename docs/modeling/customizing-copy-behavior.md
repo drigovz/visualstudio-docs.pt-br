@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 72aa7681293fa6dd50b23e4b9d090f086d3c67ad
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6839385e64503ce939d5244b116a9f24be786395
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860453"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904427"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizando o comportamento da operação de copiar
 Em uma linguagem de específica de domínio (DSL) criada com o SDK de modelagem e visualização do Visual Studio, você pode alterar o que acontece quando o usuário copia e cola elementos.
@@ -24,19 +24,19 @@ Em uma linguagem de específica de domínio (DSL) criada com o SDK de modelagem 
 
  Por padrão, quando o usuário copia elementos para a área de transferência, os seguintes elementos também são copiados:
 
--   Descendentes incorporados dos elementos selecionados. (Ou seja, elementos que são destinos de incorporação de relações que têm origem em elementos copiados.)
+- Descendentes incorporados dos elementos selecionados. (Ou seja, elementos que são destinos de incorporação de relações que têm origem em elementos copiados.)
 
--   Links de relações entre os elementos copiados.
+- Links de relações entre os elementos copiados.
 
- Esta regra aplica-se recursivamente aos elementos e links copiados.
+  Esta regra aplica-se recursivamente aos elementos e links copiados.
 
- ![Elementos copiados e colados](../modeling/media/dslcopypastedefault.png)
+  ![Elementos copiados e colados](../modeling/media/dslcopypastedefault.png)
 
- Os elementos e links copiados são serializados e armazenados em um <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), que é colocado na área de transferência.
+  Os elementos e links copiados são serializados e armazenados em um <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), que é colocado na área de transferência.
 
- Uma imagem dos elementos copiados também é colocada na área de transferência. Isso permite que o usuário cole-os em outros aplicativos, como o Word.
+  Uma imagem dos elementos copiados também é colocada na área de transferência. Isso permite que o usuário cole-os em outros aplicativos, como o Word.
 
- O usuário pode colar os elementos copiados em um destino que pode aceitar os elementos de acordo com a definição de DSL. Por exemplo, em uma DSL gerada a partir do modelo de solução de componentes, o usuário pode colar portas em componentes, mas não no diagrama, também pode colar componentes no diagrama, mas não em outros componentes.
+  O usuário pode colar os elementos copiados em um destino que pode aceitar os elementos de acordo com a definição de DSL. Por exemplo, em uma DSL gerada a partir do modelo de solução de componentes, o usuário pode colar portas em componentes, mas não no diagrama, também pode colar componentes no diagrama, mas não em outros componentes.
 
 ## <a name="customizing-copy-and-paste-behavior"></a>Personalizando o comportamento copiar e colar
  Para obter mais informações sobre como personalizar o modelo usando o código do programa, consulte [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
@@ -72,7 +72,6 @@ partial class MyDslClipboardCommandSet
      .SelectObjects(1, new object[] { diagram }, 0);
   }
 } }
-
 ```
 
  **Crie links adicionais quando o usuário cola em um destino selecionado.** Por exemplo, quando uma caixa de comentários é colada em um elemento, um link é estabelecido entre eles.
@@ -142,7 +141,6 @@ partial class MyDslDiagram // EDIT NAME
   }
  private MyElementOperations singleton = null;
 }
-
 ```
 
  **Cole formas em um local escolhido, como a posição atual do cursor.**
@@ -222,15 +220,15 @@ Ver [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add
 
  Há três valores:
 
--   Não propagar cópia
+- Não propagar cópia
 
--   Propagar cópia somente para link - quando o grupo é colado, a nova cópia desse link se referirá ao elemento existente na outra extremidade do link.
+- Propagar cópia somente para link - quando o grupo é colado, a nova cópia desse link se referirá ao elemento existente na outra extremidade do link.
 
--   Propagar cópia para link e usuário oposto - o grupo copiado inclui uma cópia do elemento na outra extremidade do link.
+- Propagar cópia para link e usuário oposto - o grupo copiado inclui uma cópia do elemento na outra extremidade do link.
 
- ![Efeito de cópia com PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png)
+  ![Efeito de cópia com PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png)
 
- As mudanças que você fizer afetarão os elementos e a imagem que é copiada.
+  As mudanças que você fizer afetarão os elementos e a imagem que é copiada.
 
 ## <a name="programming-copy-and-paste-behavior"></a>Comportamento copiar e colar de programação
  Muitos aspectos do comportamento de uma DSL em relação a copiar, colar, criação e exclusão de objetos são governados por uma instância de <xref:Microsoft.VisualStudio.Modeling.ElementOperations> que está acoplado ao diagrama. Você pode modificar o comportamento da sua DSL derivando sua própria classe de <xref:Microsoft.VisualStudio.Modeling.ElementOperations> e substituindo o <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> propriedade de sua classe de diagrama.
@@ -244,13 +242,13 @@ Ver [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add
 
 #### <a name="to-define-your-own-elementoperations"></a>Para definir seus próprios ElementOperations
 
-1.  Em um novo arquivo no seu projeto DSL, crie uma classe que derivada de <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
+1. Em um novo arquivo no seu projeto DSL, crie uma classe que derivada de <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
 
-2.  Adicione uma definição de classe parcial para a sua classe de diagrama. O nome dessa classe pode ser encontrado no **dsl\generatedcode\diagrams.cs.**.
+2. Adicione uma definição de classe parcial para a sua classe de diagrama. O nome dessa classe pode ser encontrado no **dsl\generatedcode\diagrams.cs.**.
 
-     Na classe de diagrama, substitua <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> para retornar uma instância de sua subclasse ElementOperations. Você deve retornar a mesma instância em cada chamada.
+    Na classe de diagrama, substitua <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> para retornar uma instância de sua subclasse ElementOperations. Você deve retornar a mesma instância em cada chamada.
 
- Adicione este código em um arquivo personalizado no projeto DslPackage:
+   Adicione este código em um arquivo personalizado no projeto DslPackage:
 
 ```csharp
 
@@ -281,7 +279,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
     { }
     // Overridden methods follow
   }
-
 ```
 
 ## <a name="receiving-items-dragged-from-other-models"></a>Recebendo itens arrastados de outros modelos
@@ -311,7 +308,6 @@ public override bool CanMerge(ModelElement targetShape, System.Windows.Forms.IDa
         return true;
    return base.CanMerge(targetShape, data);
  }
-
 ```
 
 ## <a name="mergeelementgroupprototype"></a>MergeElementGroupPrototype()
@@ -329,7 +325,6 @@ public override void MergeElementGroupPrototype(ModelElement targetShape, Elemen
   if (prototypeToMerge != null)
     base.MergeElementGroupPrototype(targetShape, prototypeToMerge);
 }
-
 ```
 
  Este exemplo lida com elementos de classe UML arrastados de um diagrama de classe UML. A DSL não foi criada para armazenar classes UML diretamente, em vez disso, criamos um elemento DSL para cada classe UML arrastada. Isso pode ser útil, por exemplo, se a DSL for um diagrama de instância. O usuário pode arrastar as classes para o diagrama para criar instâncias dessas classes.
@@ -367,7 +362,6 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
   }
   return null;
 }
-
 ```
 
 ## <a name="standard-copy-behavior"></a>Comportamento copiar padrão 
@@ -558,7 +552,6 @@ namespace Company.MyDsl
     }
   }
 }
-
 ```
 
 ## <a name="see-also"></a>Consulte também

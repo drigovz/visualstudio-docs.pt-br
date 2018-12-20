@@ -13,22 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 959be2a2f80f215aa3d72a36b8b989e6fa219c3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 61b2e6461fb80cfd12f76a6e96ac629ce640fa89
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947931"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388761"
 ---
 # <a name="environment-options-dialog-box"></a>Caixa de diálogo Opções do Ambiente
+
 Você pode usar as páginas da pasta **Ambiente** na caixa de diálogo **Opções** para definir como determinados elementos do IDE (ambiente de desenvolvimento integrado) são exibidos e se comportam. Na barra de menus, é possível acessar as páginas Ambiente escolhendo **Ferramentas**, **Opções** e selecionando **Ambiente**.
 
-> [!NOTE]
-> As caixas de diálogo e os comandos de menu que aparecem no computador podem ser diferentes dos que são descritos na Ajuda, pois variam de acordo com as configurações ativas e a edição do Visual Studio que você está usando. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
-
 |Para obter informações como|Consulte|
-|----------------------------------|---------|
+| - |---------|
 |Personalizar a aparência e o comportamento dos menus, das janelas e de outros elementos do IDE.|[Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)|
 |Alterar as configurações para salvamento e restauração automáticos de arquivos.|[Caixa de diálogo Recuperação Automática, Ambiente, Opções](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Estabelecer configurações de gerenciamento e exibição de documento que incluem o comportamento de arquivos diversos.|[Caixa de diálogo Documentos, Ambiente, Opções](../../ide/reference/documents-environment-options-dialog-box.md)|

@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentContext2::GetDocument | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: c6d46c5d-ade8-4dc8-9862-8fc7876658c4
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9628ca90932076179dfdf7da22cd9a0633e5531
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e03d7305ab55ef07610e39d31f5914cb29117ae7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463887"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742815"
 ---
 # <a name="idebugdocumentcontext2getdocument"></a>IDebugDocumentContext2::GetDocument
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugDocumentContext2::GetDocument](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumentcontext2-getdocument).  
-  
 Obtém o documento que contém o contexto do documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetDocument(   
+HRESULT GetDocument(   
    IDebugDocument2** ppDocument  
 );  
 ```  
   
 ```csharp  
-int GetDocument(   
+int GetDocument(   
    out IDebugDocument2 ppDocument  
 );  
 ```  

@@ -1,7 +1,7 @@
 ---
 title: Builds incrementais | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6285b0283a477ec7d658c89cf44c29e386def466
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 187761ce813081877434c2a7c3a570059bc556ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812316"
 ---
 # <a name="incremental-builds"></a>Builds incrementais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [compilações incrementais](https://docs.microsoft.com/visualstudio/msbuild/incremental-builds).  
-  
   
 Os builds incrementais são builds que são otimizados para que os destinos que têm arquivos de saída que estão atualizados em relação aos seus arquivos de entrada correspondentes não sejam executados. Um elemento de destino pode ter um atributo de `Inputs`, que indica quais itens o destino espera como entrada e um atributo de `Outputs`, que indica quais itens ele gera como saída. O MSBuild tenta localizar um mapeamento de 1 para 1 entre os valores desses atributos. Se existir um mapeamento de 1 para 1, o MSBuild comparará o carimbo de hora de cada item de entrada com o carimbo de hora do seu item de saída correspondente. Arquivos de saída que não tenham nenhum mapeamento de 1 para 1 são comparados com todos os arquivos de entrada. Um item será considerado atualizado se seu arquivo de saída tiver a mesma idade ou for mais recente que seu arquivo ou arquivos de entrada.  
   
@@ -52,13 +50,13 @@ Os builds incrementais são builds que são otimizados para que os destinos que 
   
  Há três casos:  
   
--   O destino tem um atributo `Condition` que é avaliado como `false`. Nesse caso, o destino não é executado e não tem nenhum efeito no build.  
+- O destino tem um atributo `Condition` que é avaliado como `false`. Nesse caso, o destino não é executado e não tem nenhum efeito no build.  
   
--   O destino tem saídas desatualizadas e é executado para atualizá-las.  
+- O destino tem saídas desatualizadas e é executado para atualizá-las.  
   
--   O destino não tem saídas desatualizadas e é ignorado. O MSBuild avalia o destino e faz alterações em itens e propriedades como se o destino tivesse sido executado.  
+- O destino não tem saídas desatualizadas e é ignorado. O MSBuild avalia o destino e faz alterações em itens e propriedades como se o destino tivesse sido executado.  
   
- Para oferecer suporte à compilação incremental, as tarefas devem garantir que o valor de atributo `TaskParameter` de qualquer elemento `Output` seja igual a um parâmetro de entrada da tarefa. Estes são alguns exemplos:  
+  Para oferecer suporte à compilação incremental, as tarefas devem garantir que o valor de atributo `TaskParameter` de qualquer elemento `Output` seja igual a um parâmetro de entrada da tarefa. Estes são alguns exemplos:  
   
 ```  
 <CreateProperty Value="123">  

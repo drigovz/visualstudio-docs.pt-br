@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dace2a3de8e61a92672442adbf77199232c76e12
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 98697642135627173c5a6f31e90bf1dd1d0caeaf
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370907"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307746"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Implantar uma extensão de modelo de camada
 
@@ -29,13 +29,13 @@ Sua extensão é compilada em um arquivo VSIX, que pode ser instalado em outros 
 
 ### <a name="to-install-the-extension"></a>Para instalar a extensão
 
-1.  No projeto que contém **source.vsix.manifest**, abra **bin\\ \***  no Explorador de arquivos.
+1. No projeto que contém **source.vsix.manifest**, abra o *bin* diretório no Explorador de arquivos.
 
-2.  Cópia de  **\*VSIX** arquivo para o computador no qual você deseja instalar a extensão.
+2. Cópia de  **\*VSIX** arquivo para o computador no qual você deseja instalar a extensão.
 
-3.  No computador de destino, clique duas vezes o arquivo VSIX no Windows Explorer.
+3. No computador de destino, clique duas vezes o arquivo VSIX no Windows Explorer.
 
-     O instalador do VSIX é aberto.
+    O instalador do VSIX é aberto.
 
 ### <a name="to-uninstall-the-extension"></a>Para desinstalar a extensão
 
@@ -49,7 +49,7 @@ Servidores do Team Foundation Server normalmente não tenha instalado o Visual S
 
 ### <a name="to-install-your-layer-extension-on-a-team-foundation-server-server"></a>Para instalar a extensão de camada em um servidor do Team Foundation Server
 
-1.  Cópia de **VSIX** arquivos do seu computador de desenvolvimento para o computador do Team Foundation Server (TFS).
+1.  Copiar o. *vsix* arquivos do seu computador de desenvolvimento para o computador do Team Foundation Server (TFS).
 
      Coloque o arquivo VSIX em um dos seguintes locais:
 

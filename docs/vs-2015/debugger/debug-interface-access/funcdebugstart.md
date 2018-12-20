@@ -1,7 +1,7 @@
 ---
 title: FuncDebugStart | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ helpviewer_keywords:
 - debugging [DIA SDK], start point
 ms.assetid: 1cbc6ca5-87d0-4c30-a39e-0a9dc62ce1a9
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a0c18b0eed351e059f39adfdc9b66aff6509c7c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfd751f6a0d562b2f1b036669d3e7013554a115b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463716"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738087"
 ---
 # <a name="funcdebugstart"></a>FuncDebugStart
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [FuncDebugStart](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/funcdebugstart).  
-  
 Se uma função tiver um ponto definido no qual a depuração deve iniciar, que o ponto é identificado por um símbolo com um `SymTagFuncDebugStart` marca.  
   
 ## <a name="properties"></a>Propriedades  

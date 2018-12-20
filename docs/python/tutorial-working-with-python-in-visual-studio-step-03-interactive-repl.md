@@ -1,26 +1,28 @@
 ---
-title: Trabalhando com o Tutorial do Python, etapa 3, REPL interativo
+title: Etapa 3 do Tutorial do Python no Visual Studio, REPL interativo
+titleSuffix: ''
 description: Etapa 3 de um passo a passo básico das funcionalidades do Python no Visual Studio, abordando a janela REPL interativa do Python.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 00a66cb56fb3ada8f48018c644a37189b494cc98
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7f237dde510ad9fd65416ae7521ebeed705781c2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511750"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066113"
 ---
-# <a name="step-3-use-the-interactive-repl-window"></a>Etapa 3: usar a janela interativa REPL
+# <a name="step-3-use-the-interactive-repl-window"></a>Etapa 3: Usar a janela Interativa REPL
 
-**Etapa anterior: [Gravar e executar código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**Etapa anterior: [Escrever e executar o código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
 A janela **Interativa** do Visual Studio para Python oferece uma experiência avançada de REPL (leitura-avaliação-impressão-loop), que reduz consideravelmente o ciclo comum de edição-build-depuração. A janela **Interativa** fornece todos os recursos da experiência de REPL da linha de comando do Python. Ela também facilita a troca de código com arquivos de origem no editor do Visual Studio, o que seria difícil com a linha de comando.
 
@@ -58,7 +60,7 @@ A janela **Interativa** do Visual Studio para Python oferece uma experiência av
     > [!Tip]
     > O uso de **Ctrl**+**Enter** no editor *sem* uma seleção, executará a linha de código atual na janela **Interativa** e posicionará automaticamente o cursor na próxima linha. Com esse recurso, ao pressionar **Ctrl**+**Enter** repetidamente, você terá uma maneira conveniente de percorrer o código, o que não é possível somente com a linha de comando do Python. Isso também permitirá que você percorra o código sem executar o depurador e sem, necessariamente, começar desde o início do programa.
 
-1. Você também pode copiar e colar várias linhas de código de qualquer fonte na janela **Interativa**, como no trecho a seguir, o que é difícil fazer com o REPL da linha de comando do Python. Ao colar, a janela **Interativa** executa o código como se você o tivesse digitado:
+1. Você também pode copiar e colar várias linhas de código de qualquer fonte na janela **Interativa**, como no snippet a seguir, o que é difícil fazer com o REPL da linha de comando do Python. Ao colar, a janela **Interativa** executa o código como se você o tivesse digitado:
 
     ```python
     for i in range(360):

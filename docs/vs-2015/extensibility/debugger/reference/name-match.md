@@ -1,7 +1,7 @@
 ---
 title: NAME_MATCH | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 3842c417-a3c9-4259-a05f-52b64b829ef6
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f863af0e5285e8ec193d359bd266bc4bd5f8d157
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c6f8cecfe1797acb118a5032bb0ee1d7824ed9d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468337"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724396"
 ---
 # <a name="namematch"></a>NAME_MATCH
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [NAME_MATCH](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/name-match).  
-  
 Seleciona a opção de maiusculas para correspondência de nomes.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-typedef enum {   
+typedef enum {   
    nmNone            = 0,  
    nmCaseSensitive   = 1,  
    nmCaseInsensitive = 2  
@@ -42,7 +40,7 @@ typedef enum {
 ```  
   
 ```csharp  
-public enum NameMatchOptions {   
+public enum NameMatchOptions {   
    nmNone            = 0,  
    nmCaseSensitive   = 1,  
    nmCaseInsensitive = 2  

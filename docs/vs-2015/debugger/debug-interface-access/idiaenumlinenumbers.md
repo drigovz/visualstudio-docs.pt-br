@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumLineNumbers | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaEnumLineNumbers interface
 ms.assetid: cdf07b4f-19e4-4dcd-8af8-c2dbca586a7c
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52406237cde6f2a1d888d24eab23e7d1f72dc0f2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 087ebeee78d6b88ab1e3de20bc2553e6cfca749a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468181"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772151"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaEnumLineNumbers](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumlinenumbers).  
-  
 Enumera os vários números de linha contidos na fonte de dados.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDiaEnumLineNumbers : IUnknown  
+IDiaEnumLineNumbers : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  

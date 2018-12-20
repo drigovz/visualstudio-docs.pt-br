@@ -1,5 +1,5 @@
 ---
-title: Parâmetros de modelo de projeto e de item Visual do Studio
+title: Parâmetros de modelo de projeto e de item
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bd566988d7546bed72f6ae3ea2c5c6f3159054f4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178628"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067661"
 ---
 # <a name="template-parameters"></a>Parâmetros de modelo
 
@@ -74,7 +74,7 @@ A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados
 
 Você pode especificar seus próprios valores e parâmetros de modelo, além dos parâmetros de modelo reservados padrão, que são usados durante a substituição de parâmetros. Para obter mais informações, consulte [Elemento CustomParameters (modelos do Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-use-the-project-name-for-a-file-name"></a>Exemplo: usar o nome do projeto para um nome de arquivo
+## <a name="example-use-the-project-name-for-a-file-name"></a>Exemplo: Usar o nome do projeto para um nome de arquivo
 
 Você pode especificar nomes de arquivo variáveis para itens de projeto usando um parâmetro no atributo `TargetFileName`.
 
@@ -91,7 +91,7 @@ O exemplo a seguir especifica que o nome de um arquivo executável usa o nome do
 </TemplateContent>
 ```
 
-## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Exemplo: usar o nome seguro do projeto para o nome do namespace
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Exemplo: Usar o nome seguro do projeto para o nome do namespace
 
 Para usar o nome seguro do projeto para o namespace em um arquivo de classe C#, use a seguinte sintaxe:
 
@@ -120,5 +120,5 @@ No arquivo *.vstemplate* do modelo de projeto, inclua o atributo `ReplaceParamet
 ## <a name="see-also"></a>Consulte também
 
 - [Personalizar modelos](../ide/customizing-project-and-item-templates.md)
-- [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)
+- [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)
 - [Referência de esquema de modelo](../extensibility/visual-studio-template-schema-reference.md)

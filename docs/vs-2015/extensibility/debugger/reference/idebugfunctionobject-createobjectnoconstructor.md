@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionObject::CreateObjectNoConstructor | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 4e2bd6d5-f4bd-4c10-a998-3db451c9a0c8
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aacae57bcb9fe2b5fae1a7e4796945931b5dcb9c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 13e081de229157aefbc0648699e09a921af5a40a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474301"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748951"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugFunctionObject::CreateObjectNoConstructor](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor).  
-  
 Cria um objeto com nenhum construtor.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT CreateObjectNoConstructor(   
+HRESULT CreateObjectNoConstructor(   
    IDebugField*   pClassObject,  
    IDebugObject** ppObject  
 );  

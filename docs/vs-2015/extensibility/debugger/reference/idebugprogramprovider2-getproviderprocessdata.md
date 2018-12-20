@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramProvider2::GetProviderProcessData | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,39 +17,37 @@ ms.assetid: 90cf7b7f-53d2-487e-b793-94501a6e24dd
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8099cdd85b4cba52c6f009a7fea3e91811c8c94f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10a98502d432d454d8720ea637d906b6faa67978
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464164"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779626"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProgramProvider2::GetProviderProcessData](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata).  
-  
 Recupera uma lista de programas em execução de um processo especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT GetProviderProcessData(  
-   PROVIDER_FLAGS         Flags,  
-   IDebugDefaultPort2*    pPort,  
-   AD_PROCESS_ID          processId,  
-   CONST_GUID_ARRAY       EngineFilter,  
-   PROVIDER_PROCESS_DATA* pProcess  
+HRESULT GetProviderProcessData(  
+   PROVIDER_FLAGS         Flags,  
+   IDebugDefaultPort2*    pPort,  
+   AD_PROCESS_ID          processId,  
+   CONST_GUID_ARRAY       EngineFilter,  
+   PROVIDER_PROCESS_DATA* pProcess  
 );  
 ```  
   
 ```csharp  
-int GetProviderProcessData(  
-   enum_PROVIDER_FLAGS     Flags,  
-   IDebugDefaultPort2      pPort,  
-   AD_PROCESS_ID           ProcessId,  
-   CONST_GUID_ARRAY        EngineFilter,  
-   PROVIDER_PROCESS_DATA[] pProcess  
+int GetProviderProcessData(  
+   enum_PROVIDER_FLAGS     Flags,  
+   IDebugDefaultPort2      pPort,  
+   AD_PROCESS_ID           ProcessId,  
+   CONST_GUID_ARRAY        EngineFilter,  
+   PROVIDER_PROCESS_DATA[] pProcess  
 );  
 ```  
   

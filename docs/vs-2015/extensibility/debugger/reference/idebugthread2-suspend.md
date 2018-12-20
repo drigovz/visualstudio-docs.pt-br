@@ -1,7 +1,7 @@
 ---
 title: IDebugThread2::Suspend | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,30 +17,28 @@ ms.assetid: 1e20be85-aa12-48de-bb83-0bf0976e99ae
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8bd4f45328b17c91c4525cb7fecb542961de5351
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 164d3b79c7c76ad2075fbae04e198a381c808bd8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466270"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802766"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugThread2::Suspend](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugthread2-suspend).  
-  
 Suspende um thread.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Suspend (   
+HRESULT Suspend (   
    DWORD *pdwSuspendCount  
 );  
 ```  
   
 ```csharp  
-HRESULT Suspend (   
+HRESULT Suspend (   
    out uint pdwSuspendCount  
 );  
 ```  

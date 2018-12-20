@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e3d802000bede1a654b088fb80b134a36a0185be
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 1e1f91b88d686f3e9a6ddee9573824eb4191e2bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927925"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -37,7 +37,7 @@ Acesso a **InvokeDelegate** designer de atividade na **primitivos** categoria do
 A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.InvokeDelegate> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedade e alguns podem ser editados na superfície do Designer de fluxo de trabalho.
 
 |Nome da Propriedade|Necessária|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|O nome amigável de atividade de <xref:System.Activities.Statements.InvokeDelegate> . O valor padrão é InvokeDelegate.<br /><br /> Embora o <xref:System.Activities.Activity.DisplayName%2A> não é estritamente necessária, é melhor usar um.|
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|verdadeiro|O nome de <xref:System.Activities.ActivityDelegate> a ser chamado quando a atividade executar. Essa propriedade pode ser editada na superfície do designer e é obrigatória.|
 |<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|A coleção de argumento de representante chamado. As chaves são os nomes dos objetos de parâmetro no <xref:System.Activities.ActivityDelegate>, e os valores são os argumentos cujas expressões são avaliadas e atribuídas a objetos de parâmetro correspondente. Para exibir o **DelegateArguments** caixa de diálogo onde é possível definir essa propriedade, clique no botão de reticências na **DelegateArguments** campo da grade de propriedade. Clique o **criar argumento** campo para adicionar os argumentos.|

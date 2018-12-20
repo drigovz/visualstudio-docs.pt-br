@@ -1,7 +1,7 @@
 ---
 title: Adicionar propriedades personalizadas a diagramas de camada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ helpviewer_keywords:
 - layer diagrams, adding custom properties
 ms.assetid: 52b3ac25-d10b-4507-a1fe-209ccb4d2777
 caps.latest.revision: 23
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1fc9c3e67cbb10484c814acb0eedbfbae2729eb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9024ccda38e6b261b29d808e6fafb7837776fc8c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462945"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789272"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Adicionar propriedades personalizadas a diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [adicionar propriedades personalizadas a diagramas de dependência](https://docs.microsoft.com/visualstudio/modeling/add-custom-properties-to-layer-diagrams).  
-  
 Quando você escreve o código de extensão para diagramas de camada, você pode armazenar valores com qualquer elemento em um diagrama de camada. Os valores persistirão quando o diagrama é salvo e reaberto. Você também pode ter essas propriedades aparecem na **propriedades** janela para que os usuários podem ver e editá-los. Por exemplo, você pode permitir que usuários especificar uma expressão regular para cada camada e escrever código de validação para verificar se os nomes das classes em cada camada estão em conformidade com o padrão especificado pelo usuário.  
   
 ## <a name="properties-not-visible-to-the-user"></a>Propriedades não é visíveis para o usuário  
@@ -36,21 +34,21 @@ Quando você escreve o código de extensão para diagramas de camada, você pode
   
 > [!IMPORTANT]
 >  Para fazer com que as propriedades aparecerem, você deve fazer a seguinte alteração em cada computador onde você deseja que as propriedades da camada fiquem visíveis.  
->   
->  1.  Execute o bloco de notas usando **executar como administrador**. Abrir `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
-> 2.  Dentro de `Content` elemento, adicione:  
->   
->     ```xml  
->     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
->     ```  
-> 3.  Sob o **ferramentas do Visual Studio** seção do Visual Studio aplicativo menu Iniciar, abra **Prompt de comando do desenvolvedor**.  
->   
->      Digite:  
->   
->      `devenv /rootSuffix /updateConfiguration`  
->   
->      `devenv /rootSuffix Exp /updateConfiguration`  
-> 4.  Reinicie o Visual Studio.  
+> 
+> 1. Execute o bloco de notas usando **executar como administrador**. Abrir `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
+>    2.  Dentro de `Content` elemento, adicione:  
+> 
+>    ```xml  
+>    <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
+>    ```  
+>    3.  Sob o **ferramentas do Visual Studio** seção do Visual Studio aplicativo menu Iniciar, abra **Prompt de comando do desenvolvedor**.  
+> 
+>    Digite:  
+> 
+>    `devenv /rootSuffix /updateConfiguration`  
+> 
+>    `devenv /rootSuffix Exp /updateConfiguration`  
+>    4.  Reinicie o Visual Studio.  
   
  **Verifique se que seu código está em um projeto VSIX**  
   

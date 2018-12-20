@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::GetNameOfFormalParam | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 05032a83-49ce-4007-b5d6-7b56945b956c
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: add994228ebbb8288f8f013a7e9ab2e2142d6ad9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3719a5544f8ed7506f8d144253b2f849cd2afe9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466997"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724304"
 ---
 # <a name="idebuggenericparamfieldgetnameofformalparam"></a>IDebugGenericParamField::GetNameOfFormalParam
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugGenericParamField::GetNameOfFormalParam](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebuggenericparamfield-getnameofformalparam).  
-  
 Recupera o nome desse parâmetro genérico.  
   
 ## <a name="syntax"></a>Sintaxe  

@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_hasseh | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaSymbol::get_hasSEH method
 ms.assetid: 1a709ded-22c8-464c-97be-eba5e464210c
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f8dd3eda1eaf992de0b38e26bde93ae3f4c1de05
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4d373246b2ee0142f7592bd0d8a833ab5965661
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467162"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738610"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_hasseh](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-hasseh).  
-  
 Recupera um sinalizador que especifica se a função contém qualquer [tratamento de exceções estruturado (C/C++)](http://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976) (por exemplo, Try /\_blocos EXCEPT).  
   
 ## <a name="syntax"></a>Sintaxe  

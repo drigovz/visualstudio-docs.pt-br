@@ -1,7 +1,7 @@
 ---
 title: Criação de perfil dos serviços de linha de comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - profiling services
 ms.assetid: f0d62318-b0e8-49c6-9a30-9f7a6adef2f6
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc44d7f9ea822dfb7c5d68e6769e36a0ff9aeae4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d8bffbaa2cf16c81d1d726043590c1b632560e2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464063"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729862"
 ---
 # <a name="command-line-profiling-of-services"></a>Criação de perfil dos serviços de linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [linha de comando de criação de perfil de serviços de](https://docs.microsoft.com/visualstudio/profiling/command-line-profiling-of-services).  
-  
 Esta seção descreve os procedimentos e as opções para coletar dados de desempenho para serviços Windows usando as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na linha de comando.  
   
 > [!NOTE]

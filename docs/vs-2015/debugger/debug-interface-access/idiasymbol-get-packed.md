@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_packed | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSymbol::get_packed method
 ms.assetid: e42ff368-56c4-49a2-8676-f80e349efa21
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 817c6eea9f33e893f6678b078361a3af76275e48
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 97d6e016ab2d6c3e281d5bc8ece0ee9ae018a9e1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463750"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816613"
 ---
 # <a name="idiasymbolgetpacked"></a>IDiaSymbol::get_packed
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_packed](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-packed).  
-  
 Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário (UDT) é empacotado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_packed (   
+HRESULT get_packed (   
    BOOL* pRetVal  
 );  
 ```  

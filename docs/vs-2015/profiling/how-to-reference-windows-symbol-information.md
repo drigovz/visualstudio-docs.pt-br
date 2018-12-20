@@ -1,7 +1,7 @@
 ---
 title: Como fazer referência a informações de símbolo do Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ helpviewer_keywords:
 - symbol servers
 ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 385b9e4511c44c02a358eb88471cd8369971ed1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c18825a27bfefdd1a6c817951983d85ac459b78b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475579"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763590"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Como fazer referência a informações de símbolo do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: informações de símbolo do Windows de referência](https://docs.microsoft.com/visualstudio/profiling/how-to-reference-windows-symbol-information).  
-  
 As Ferramentas de Criação de Perfil do Visual Studio usam arquivos de símbolo (.pdb) para resolver nomes simbólicos como nomes de função em binários de programa. Siga estas etapas para baixar automaticamente e atualizar os arquivos .pdb corretos para a versão do Windows no computador local.  
   
 > [!NOTE]

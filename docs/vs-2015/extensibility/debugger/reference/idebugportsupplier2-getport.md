@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplier2::GetPort | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: d55d5055-7386-4037-bf22-4c3e434a99ca
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e1b11a15e52e8dd8a3c72c5e7be0d9ad0c341893
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df0a7b5133b790b442b26ed03448e66b8563a4fb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464120"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786984"
 ---
 # <a name="idebugportsupplier2getport"></a>IDebugPortSupplier2::GetPort
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPortSupplier2::GetPort](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportsupplier2-getport).  
-  
 Obtém uma porta de um fornecedor de porta.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetPort(   
+HRESULT GetPort(   
    REFGUID       guidPort,  
    IDebugPort2** ppPort  
 );  
 ```  
   
 ```csharp  
-int GetPort(   
+int GetPort(   
    ref Guid        guidPort,  
    out IDebugPort2 ppPort  
 );  

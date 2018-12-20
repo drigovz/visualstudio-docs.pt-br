@@ -1,7 +1,7 @@
 ---
 title: Marcadores de sinalizador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ f1_keywords:
 - vs.cv.markers.flag
 ms.assetid: f3ec919e-63e5-484b-adbf-8f0e79342e75
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58d366b38cfbf89052bb9bedfb8d397985680705
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4d1e5c119c5402501efaafcdccd9c3d0885ce75
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464195"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803195"
 ---
 # <a name="flag-markers"></a>Marcadores de sinalizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [marcadores de sinalizador](https://docs.microsoft.com/visualstudio/profiling/flag-markers).  
-  
 Um marcador de sinalizador representa algo que ocorreu em um instante de tempo em um aplicativo. Um sinalizador pode representar muitos tipos de eventos de aplicativo. Por exemplo, um sinalizador pode mostrar quando um determinado item de trabalho foi agendado ou quando uma exceção foi lançada. Tempos de execução, como a Biblioteca de Paralelismo de Tarefas, também podem gerar sinalizadores.  
   
 ## <a name="flag-importance"></a>Importância do sinalizador  

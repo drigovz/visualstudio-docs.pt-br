@@ -1,7 +1,7 @@
 ---
 title: 'Como: limpar a pilha de desfazer | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2200d2d4-7f58-401c-87fc-ddd32d368193
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 75b821a757f466045b27b7f52e1900ece3f0b0d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7f094723ec74bbcfe7723ea8141a6980a1465fa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473724"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734687"
 ---
 # <a name="how-to-clear-the-undo-stack"></a>Como: limpar a pilha de desfazer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: limpar a pilha de desfazer](https://docs.microsoft.com/visualstudio/extensibility/how-to-clear-the-undo-stack).  
-  
 O procedimento a seguir explica como limpar a pilha de desfazer.  
   
 ### <a name="to-clear-the-undo-stack"></a>Para limpar a pilha de desfazer  

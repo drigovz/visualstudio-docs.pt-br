@@ -1,7 +1,7 @@
 ---
 title: IDebugObject::GetValue | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: eec6051e-8ecb-49fa-bdd4-dd786f211692
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7db441f27ba8e095b3f45b404a670efa5f785713
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7c43487960fdca21e4c716514a3533db90c6ae76
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465901"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770269"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugObject::GetValue](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugobject-getvalue).  
-  
 Obtém o valor do objeto consecutivos de bytes.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetValue(   
+HRESULT GetValue(   
    BYTE* pValue,  
    UINT  nSize  
 );  

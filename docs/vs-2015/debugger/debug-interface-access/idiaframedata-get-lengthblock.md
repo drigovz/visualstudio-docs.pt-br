@@ -1,7 +1,7 @@
 ---
 title: 'Idiaframedata:: Get_lengthblock | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaFrameData::get_lengthBlock method
 ms.assetid: 2e54deb7-7744-428e-913c-1d47a2aa89b0
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d0d911707065729e0acc603f026bedb1a976817e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fad1d94a8395e97d335350a478a306a2415545b7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463513"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805652"
 ---
 # <a name="idiaframedatagetlengthblock"></a>IDiaFrameData::get_lengthBlock
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaframedata:: Get_lengthblock](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaframedata-get-lengthblock).  
-  
 Recupera o comprimento, em bytes, do bloco de código descrito pelo quadro.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT get_lengthBlock (   
+HRESULT get_lengthBlock (   
    DWORD* pRetVal  
 );  
 ```  

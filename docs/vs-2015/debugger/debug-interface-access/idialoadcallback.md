@@ -1,7 +1,7 @@
 ---
 title: IDiaLoadCallback | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaLoadCallback interface
 ms.assetid: 2f18c64c-2cf0-43fc-a447-21e82702ca2a
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a77a14ba09d7bd4f6fa0d3971f6422353eb40b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd610a8c72792c1109265f6e729933d4d281d8a8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474855"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735886"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaLoadCallback](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idialoadcallback).  
-  
 Receber retornos de chamada do símbolo de DIA de localizar o procedimento, permitindo que uma interface do usuário relatar o progresso da tentativa de local.  
   
 ## <a name="syntax"></a>Sintaxe  

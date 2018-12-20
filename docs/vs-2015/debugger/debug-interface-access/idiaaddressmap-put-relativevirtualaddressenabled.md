@@ -1,7 +1,7 @@
 ---
 title: 'Idiaaddressmap:: Put_relativevirtualaddressenabled | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaAddressMap::put_relativeVirtualAddressEnabled method
 ms.assetid: 767c078e-8ad7-4940-9e00-cae7704aadee
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9d80a7257a19fb9bb9a638c73002f73e7899d48
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 696ce435ddae6fbca5cb9f4a6abbf08a3d0e7eab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463849"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800960"
 ---
 # <a name="idiaaddressmapputrelativevirtualaddressenabled"></a>IDiaAddressMap::put_relativeVirtualAddressEnabled
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaaddressmap:: Put_relativevirtualaddressenabled](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled).  
-  
 Permite ao cliente habilitar ou desabilitar o cálculo e o uso de endereços virtuais relativos (RVA).  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT put_relativeVirtualAddressEnabled (   
+HRESULT put_relativeVirtualAddressEnabled (   
    BOOL NewVal  
 );  
 ```  

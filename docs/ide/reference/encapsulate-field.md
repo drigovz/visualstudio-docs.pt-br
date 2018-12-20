@@ -1,5 +1,5 @@
 ---
-title: Refatorar um campo para uma propriedade no Visual Studio
+title: Refatorar um campo para uma propriedade
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 316c1f4a6927805c75feee143f92a8e31ac4dc20
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a6cb74b64ec03c865ca4e6e52fa3922c997468d6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945240"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049924"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refatoração Encapsular um campo
 
@@ -29,11 +29,11 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O quê:** permite que você transforme um campo em uma propriedade e atualize todos os usos desse campo a fim de usar a propriedade recém-criada.
+**O quê:** Permite transformar um campo em uma propriedade e atualizar todos os usos desse campo para usar a propriedade recém-criada.
 
-**Quando:** você quer mover um campo para uma propriedade e atualizar todas as referências a esse campo.
+**Quando:** Você deseja mover um campo para uma propriedade e atualizar todas as referências a esse campo.
 
-**Por quê:** você quer conceder a outras classes o acesso a um campo, mas não quer que essas classes tenham acesso direto.  Ao encapsular o campo em uma propriedade, você pode escrever o código para verificar o valor que está sendo atribuído, por exemplo.
+**Por que:** Você deseja conceder a outras classes o acesso a um campo, mas não deseja que essas classes tenham acesso direto.  Ao encapsular o campo em uma propriedade, você pode escrever o código para verificar o valor que está sendo atribuído, por exemplo.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -41,20 +41,20 @@ Esta refatoração aplica-se a:
 
    - C#:
 
-    ![Código realçado – C#](media/encapsulate-highlight-cs.png)
+       ![Código realçado – C#](media/encapsulate-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código realçado – Visual Basic](media/encapsulate-highlight-vb.png)
+       ![Código realçado – Visual Basic](media/encapsulate-highlight-vb.png)
 
-1. Depois, siga um destes procedimentos:
+2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl+R**, em seguida, **Ctrl+E**.  (Observe que o atalho de teclado pode ser diferente com base no perfil selecionado.)
-     - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecione **Encapsular campo** no pop-up da janela Visualização.
+      - Pressione **Ctrl+R**, em seguida, **Ctrl+E**.  (Observe que o atalho de teclado pode ser diferente com base no perfil selecionado.)
+      - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecione **Encapsular campo** no pop-up da janela Visualização.
    - **Mouse**
-     - Selecione **Editar > Refatorar > Encapsular Campo**.
-     - Clique com o botão direito do mouse no código, selecione o menu **Ações Rápidas e Refatorações** e selecione **Encapsular campo** no pop-up da janela Visualização.
+      - Selecione **Editar > Refatorar > Encapsular Campo**.
+      - Clique com o botão direito do mouse no código, selecione o menu **Ações Rápidas e Refatorações** e selecione **Encapsular campo** no pop-up da janela Visualização.
 
    Seleção | Descrição
    --------- | -----------
@@ -68,11 +68,11 @@ Esta refatoração aplica-se a:
 
    - C#:
 
-    ![Resultado da ação de encapsular propriedade – C#](media/encapsulate-result-cs.png)
+      ![Resultado da ação de encapsular propriedade – C#](media/encapsulate-result-cs.png)
 
    - Visual Basic:
 
-    ![Resultado da ação de encapsular propriedade – Visual Basic](media/encapsulate-result-vb.png)
+      ![Resultado da ação de encapsular propriedade – Visual Basic](media/encapsulate-result-vb.png)
 
 ## <a name="see-also"></a>Consulte também
 

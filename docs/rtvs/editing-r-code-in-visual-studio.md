@@ -1,7 +1,7 @@
 ---
-title: Editando código em R
+title: Editar o código R
 description: O Visual Studio fornece uma experiência de edição personalizada para R, mantendo todos os recursos e a capacidade de usar extensões.
-ms.date: 01/24/2018
+ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
@@ -10,18 +10,18 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 9eef75c505cb3ed41e24f99e08468512e424884a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: c1d44e6d316db2ddce799784169a11a06578fe7f
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235186"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220873"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Editar o código R no Visual Studio
 
-As RTVS (Ferramentas do R para Visual Studio) personalizam a experiência de edição do Visual Studio especificamente para R, mantendo todos os recursos e a capacidade de usar extensões. (Por exemplo, se preferir associações de teclas VIM, você poderá instalar a [extensão VsVim](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329) gratuita da galeria do Visual Studio.)
+As RTVS (Ferramentas do R para Visual Studio) personalizam a experiência de edição do Visual Studio especificamente para R, mantendo todos os recursos e a capacidade de usar extensões. (Por exemplo, se preferir associações de teclas VIM, será possível instalar a [extensão VsVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim) gratuita do Visual Studio Marketplace.)
 
-Além dos recursos neste artigo, veja também [IntelliSense](r-intellisense.md), [lint](linting-r-code.md), [trechos de código](code-snippets-for-r.md), e [R Markdown](rmarkdown-with-r-in-visual-studio.md).
+Além dos recursos neste artigo, veja também [IntelliSense](r-intellisense.md), [lint](linting-r-code.md), [snippets de código](code-snippets-for-r.md), e [R Markdown](rmarkdown-with-r-in-visual-studio.md).
 
 ## <a name="syntax-highlighting"></a>Realce de sintaxe
 

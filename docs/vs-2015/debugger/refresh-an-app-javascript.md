@@ -1,7 +1,7 @@
 ---
 title: Atualizar um aplicativo (JavaScript) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,21 +21,19 @@ helpviewer_keywords:
 - Refresh [Windows Store apps]
 ms.assetid: fd99ee60-fa94-46df-8b17-369f60bfd908
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca647572eac68dcf70d21b7ed687212a0229568f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1905d48e79567684da6215b419c348b32721e0e3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464312"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722890"
 ---
 # <a name="refresh-an-app-javascript"></a>Atualizar um aplicativo (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [atualizar um aplicativo (JavaScript)](https://docs.microsoft.com/visualstudio/debugger/refresh-an-app-javascript).  
-  
 Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Você pode fazer alterações ao seu código enquanto você está depurando e, em seguida, atualizar um aplicativo da Store usando JavaScript escolhendo o **atualizar o Windows app** botão a **depurar** barra de ferramentas. Dessa forma, o aplicativo é recarregado sem parar e reiniciar o depurador. A funcionalidade Atualizar permite que você modifique o código HTML, CSS e JavaScript e veja rapidamente o resultado. Esta funcionalidade tem suporte para os dois aplicativos da Windows Store e da Windows Phone Store.  

@@ -1,7 +1,7 @@
 ---
 title: Controlando a visibilidade de um ícone ou decorador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9cc74f7ba8c71c2b8828ad19c4d6af80d6e8b8e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4befc49fab1d1b53d70f1b79ee1a2bbe96be11f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460299"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913404"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlando a visibilidade de um ícone ou decorador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [controlando a visibilidade de um ícone ou decorador](https://docs.microsoft.com/visualstudio/modeling/controlling-the-visibility-of-an-icon-or-decorator).  
-  
 Um *decorador* é um ícone ou uma linha de texto que aparece em uma forma em uma linguagem específica de domínio (DSL). Você pode fazer o decorador aparecem e desaparecem dependendo do estado das propriedades no modelo. Por exemplo, em uma forma que representa uma pessoa, você poderia ter diferentes ícones que aparecem, dependendo do sexo da pessoa, número de filhos e assim por diante.  
   
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlando a visibilidade de um ícone ou decorador  
@@ -31,37 +29,37 @@ Um *decorador* é um ícone ou uma linha de texto que aparece em uma forma em um
   
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Para controlar a visibilidade de um decorador de texto ou ícone  
   
-1.  No diagrama de definição de DSL, adicione à classe forma os ícones ou decoradores de texto que você deseja exibir.  
+1. No diagrama de definição de DSL, adicione à classe forma os ícones ou decoradores de texto que você deseja exibir.  
   
-    1.  A classe shape do botão direito do mouse, aponte para **adicionar**e, em seguida, clique no tipo necessário de decorador.  
+   1.  A classe shape do botão direito do mouse, aponte para **adicionar**e, em seguida, clique no tipo necessário de decorador.  
   
-    2.  Defina o decorador **posição** propriedade. Mais de um decorador pode ter a mesma posição. Por exemplo, você poderia ter ícones para masculino e feminino, compartilhando a mesma posição.  
+   2.  Defina o decorador **posição** propriedade. Mais de um decorador pode ter a mesma posição. Por exemplo, você poderia ter ícones para masculino e feminino, compartilhando a mesma posição.  
   
-    3.  Defina as **ícone padrão** propriedade de um decorador de ícone.  
+   3.  Defina as **ícone padrão** propriedade de um decorador de ícone.  
   
-2.  Selecione o mapa de elemento de diagrama, que é a linha cinza entre a classe de forma e a classe de domínio no diagrama de definição de DSL.  
+2. Selecione o mapa de elemento de diagrama, que é a linha cinza entre a classe de forma e a classe de domínio no diagrama de definição de DSL.  
   
-3.  Na janela de detalhes de DSL, na **mapas do decorador** guia, selecione um decorador. Por exemplo, o MaleDecorator.  
+3. Na janela de detalhes de DSL, na **mapas do decorador** guia, selecione um decorador. Por exemplo, o MaleDecorator.  
   
-4.  Verifique as **filtro de visibilidade** caixa.  
+4. Verifique as **filtro de visibilidade** caixa.  
   
-5.  Se a propriedade de domínio que deve controlar a visibilidade está na classe de domínio imediata, deixe **caminho para a propriedade de filtro** em branco.  
+5. Se a propriedade de domínio que deve controlar a visibilidade está na classe de domínio imediata, deixe **caminho para a propriedade de filtro** em branco.  
   
-     Caso contrário, clique no menu suspenso e navegue até a relação ou onde se encontra a propriedade de classe.  
+    Caso contrário, clique no menu suspenso e navegue até a relação ou onde se encontra a propriedade de classe.  
   
-    -   Para evitar um relatório de erros, você não deve navegar por meio de uma relação marcada com "*" na ferramenta de navegação.  
+   -   Para evitar um relatório de erros, você não deve navegar por meio de uma relação marcada com "*" na ferramenta de navegação.  
   
-6.  Defina as **propriedade Filter** para uma propriedade de domínio. Por exemplo, sexo.  
+6. Defina as **propriedade Filter** para uma propriedade de domínio. Por exemplo, sexo.  
   
-7.  No **entradas de visibilidade** lista, adicione os valores dessa propriedade de domínio para o qual o decorador deve estar visível. Por exemplo, masculino.  
+7. No **entradas de visibilidade** lista, adicione os valores dessa propriedade de domínio para o qual o decorador deve estar visível. Por exemplo, masculino.  
   
-8.  Repita as etapas para cada ícone.  
+8. Repita as etapas para cada ícone.  
   
 9. **Transformar todos os modelos**, compilar e executar e abrir um diagrama de teste.  
   
 10. Quando você altera o valor da propriedade de controle, os decoradores devem aparecer e desaparecer.  
   
- Com frequência, convém visibilidade controlado por uma fórmula mais complexa que um conjunto simple de valores. Por exemplo, para ter um ícone dependem do número de links de um tipo específico ou para torná-lo dependem uma se um número é em um intervalo específico. Nesse caso, use o procedimento a seguir.  
+    Com frequência, convém visibilidade controlado por uma fórmula mais complexa que um conjunto simple de valores. Por exemplo, para ter um ícone dependem do número de links de um tipo específico ou para torná-lo dependem uma se um número é em um intervalo específico. Nesse caso, use o procedimento a seguir.  
   
 #### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Para controlar a visibilidade de um decorador com base em uma fórmula  
   

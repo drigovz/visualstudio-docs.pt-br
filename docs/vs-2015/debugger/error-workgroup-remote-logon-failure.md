@@ -1,7 +1,7 @@
 ---
 title: 'Erro: Falha no Logon remoto do grupo de trabalho | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,21 +25,19 @@ helpviewer_keywords:
 - remote debugging, logon failure
 ms.assetid: 7be2c5bb-40fe-48d6-8cfc-c231fbd3d64e
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46d7043eba9d357f410d1a05655870ef5e1121d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b13531d3a9dd5249b0c96ddc4e8f736c20696303
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465234"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723655"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Erro: falha no logon remoto do grupo de trabalho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [erro: falha de Logon remoto do grupo de trabalho](https://docs.microsoft.com/visualstudio/debugger/error-workgroup-remote-logon-failure).  
-  
 Este erro é:  
   
  Falha de logon: usuário desconhecido ou senha inválida  

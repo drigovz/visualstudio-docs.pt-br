@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointEvent2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 50b3a7a7-331b-42c8-922c-ff3522ebe1da
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5e1f583bca6127aaf9e8b1eb81d9226301b1db60
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 092a3c76664042ae83136541ea83d66b864197cf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461281"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784709"
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugBreakpointEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbreakpointevent2).  
-  
 O mecanismo de depuração (DES) envia essa interface para o Gerenciador de sessão de depuração (SDM) quando um programa para um ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  

@@ -1,7 +1,7 @@
 ---
 title: 'Como: criar um conjunto de regras personalizado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee21452912fa87b63b49db609828ef44cac7c4c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463864"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812459"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Como criar um conjunto de regras personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: criar uma regra personalizada definida](https://docs.microsoft.com/visualstudio/code-quality/how-to-create-a-custom-rule-set).  
-  
 Na [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], e [!INCLUDE[vsPro](../includes/vspro-md.md)], você pode criar e modificar um personalizado *conjunto de regras* para atender às necessidades específicas do projeto associadas com a análise de código. Para criar uma regra personalizada definida, você abrir um ou mais padrão regra define no editor de conjunto de regras. Em seguida, você pode adicionar ou remover regras específicas, e você pode alterar a ação que ocorre quando a análise de código determina que uma regra foi violada.  
   
  Para criar uma nova regra personalizada definida, você pode salvá-lo usando um novo nome de arquivo. O conjunto de regras personalizado é atribuído automaticamente ao projeto.  
@@ -46,19 +44,19 @@ Na [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Para criar uma regra personalizada de um único conjunto de regras existente  
   
-1.  No Gerenciador de soluções, clique com botão direito no projeto e, em seguida, selecione **propriedades**.  
+1. No Gerenciador de soluções, clique com botão direito no projeto e, em seguida, selecione **propriedades**.  
   
-2.  Sobre o **propriedades** , clique em **análise de código**.  
+2. Sobre o **propriedades** , clique em **análise de código**.  
   
-3.  No **do conjunto de regras** lista suspensa, siga um destes procedimentos:  
+3. No **do conjunto de regras** lista suspensa, siga um destes procedimentos:  
   
-    -   Selecione o conjunto de regras que você deseja personalizar.  
+   - Selecione o conjunto de regras que você deseja personalizar.  
   
      \- ou -  
   
-    -   Selecione  **\<procurar... >** especificar uma regra existente definida que não está na lista.  
+   - Selecione  **\<procurar... >** especificar uma regra existente definida que não está na lista.  
   
-4.  Clique em **abrir** para exibir as regras no editor de conjunto de regras.  
+4. Clique em **abrir** para exibir as regras no editor de conjunto de regras.  
   
 #### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>Para criar uma regra personalizada definida de vários conjuntos de regra existente  
   

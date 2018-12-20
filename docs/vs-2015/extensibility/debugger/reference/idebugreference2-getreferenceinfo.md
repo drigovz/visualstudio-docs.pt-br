@@ -1,7 +1,7 @@
 ---
 title: IDebugReference2::GetReferenceInfo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: ae611714-f114-4cf2-b5bb-37461e6ff289
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 42722393f47829bf9090d97e642089a8bbab7d64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1771c36459931c5b8c6079eae6b84a08fb9cd670
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473161"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755667"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugReference2::GetReferenceInfo](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugreference2-getreferenceinfo).  
-  
 Obtém o [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estrutura que descreve uma referência. Reservado para uso futuro.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetReferenceInfo (   
+HRESULT GetReferenceInfo (   
    DEBUGREF_INFO_FLAGS   dwFields,  
    DWORD                 nRadix,  
    DWORD                 dwTimeout,  
@@ -45,7 +43,7 @@ HRESULT GetReferenceInfo (
 ```  
   
 ```csharp  
-int GetReferenceInfo (   
+int GetReferenceInfo (   
    enum_DEBUGREF_INFO_FLAGS  dwFields,  
    uint                      nRadix,  
    uint                      dwTimeout,  

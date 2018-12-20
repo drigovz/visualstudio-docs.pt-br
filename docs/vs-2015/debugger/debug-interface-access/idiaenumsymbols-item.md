@@ -1,7 +1,7 @@
 ---
 title: 'Idiaenumsymbols:: item | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaEnumSymbols::Item method
 ms.assetid: 2bd1ec04-e677-4e32-8e32-33334f1eed77
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97a5fc4b267fbc62c201f5f23837d37b18bbf0d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f03c4e549e5b50d834241119252dda8cfd61f38c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466542"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731889"
 ---
 # <a name="idiaenumsymbolsitem"></a>IDiaEnumSymbols::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiaenumsymbols:: item](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumsymbols-item).  
-  
 Recupera um símbolo por meio de um índice.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT Item (   
+HRESULT Item (   
    DWORD        index,  
    IDiaSymbol** symbol  
 );  

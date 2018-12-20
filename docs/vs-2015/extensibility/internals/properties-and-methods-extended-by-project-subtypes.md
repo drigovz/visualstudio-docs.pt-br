@@ -1,7 +1,7 @@
 ---
 title: Propriedades e métodos estendidos por subtipos do projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2b9833bf-8551-4ae1-93db-197ba645c65e
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 143c15cd757912aa79e7e9d92d7c138def16db7c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f74f1f4a88fb01e09b30e7987f1bcec1d450571a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466233"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765120"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>Propriedades e métodos estendidos por subtipos de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [as propriedades e métodos estendidos por subtipos do projeto](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-and-methods-extended-by-project-subtypes).  
-  
 Um subtipo de projeto tem uma grande quantidade de energia para influenciar o comportamento do projeto porque ele é criado como um agregador de um projeto de base. Esta seção resume alguns dos recursos que podem ser aprimorados ou modificados por subtipos do projeto.  
   
 ## <a name="features-gained-by-aggregation"></a>Recursos obtidos pela agregação  

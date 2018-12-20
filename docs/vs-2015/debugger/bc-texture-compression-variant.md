@@ -1,7 +1,7 @@
 ---
 title: Variante de compressão de textura BC | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a33bef6c94d738a51ef5f9cbc93a14d2f4648011
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 818998511a4ef8b7f10b8225e71b414edafd9769
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467204"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736567"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante de compressão de textura BC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [variante de compressão de textura BC](https://docs.microsoft.com/visualstudio/debugger/graphics/bc-texture-compression-variant).  
-  
 Habilita a compactação do bloco em texturas cujo formato de pixel é uma variação de B8G8R8X8, B8G8R8A8 ou R8G8B8A8.  
   
 ## <a name="interpretation"></a>Interpretação  
@@ -36,19 +34,19 @@ Habilita a compactação do bloco em texturas cujo formato de pixel é uma varia
 ## <a name="remarks"></a>Comentários  
  Para compactar texturas, use um formato de compactação em bloco em cada chamada de `ID3DDevice::CreateTexture2D`, que cria uma textura de origem. As texturas são compactadas quando:  
   
--   O objeto `D3D11_TEXTURE2D_DESC` apresentado a `pDesc` descreve um recurso do sombreador inalterável, ou seja:  
+- O objeto `D3D11_TEXTURE2D_DESC` apresentado a `pDesc` descreve um recurso do sombreador inalterável, ou seja:  
   
-    -   O membro BindFlags tem apenas o sinalizador D3D11_BIND_SHADER_RESOURCE definido.  
+  -   O membro BindFlags tem apenas o sinalizador D3D11_BIND_SHADER_RESOURCE definido.  
   
-    -   O membro Uso está definido como D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.  
+  -   O membro Uso está definido como D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.  
   
-    -   O membro CPUAccessFlags está definido como 0 (sem acesso à CPU).  
+  -   O membro CPUAccessFlags está definido como 0 (sem acesso à CPU).  
   
-    -   O membro SamplerDesc tem seu membro Count definido como 1 (sem MSAA (suavização de amostra múltipla)).  
+  -   O membro SamplerDesc tem seu membro Count definido como 1 (sem MSAA (suavização de amostra múltipla)).  
   
--   Os dados iniciais são fornecidos para a chamada de `CreateTexture2D`.  
+- Os dados iniciais são fornecidos para a chamada de `CreateTexture2D`.  
   
- Estes são os formatos de origem compatíveis e seus respectivos formatos compactados em blocos:  
+  Estes são os formatos de origem compatíveis e seus respectivos formatos compactados em blocos:  
   
 |Formato original (de)|Formato compactado (para)|  
 |------------------------------|------------------------------|  

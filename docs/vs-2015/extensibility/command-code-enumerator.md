@@ -1,7 +1,7 @@
 ---
 title: Enumerador de código de comando | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5d2c360c-59e4-4da8-bcb4-dd07c7441e40
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4bd3830c6b57155014f58e4fb8b6fa39a0ed5053
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bcdba2dd1f6629a3e92c3b07d998b27b83f221a3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464631"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807467"
 ---
 # <a name="command-code-enumerator"></a>Enumerador de código de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [enumerador de código do comando](https://docs.microsoft.com/visualstudio/extensibility/command-code-enumerator).  
-  
 Este enumerador é usado nas opções para o [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) e o [SccPopulateList](../extensibility/sccpopulatelist-function.md)para indicar o comando para o qual as opções são especificadas.  
   
 ## <a name="syntax"></a>Sintaxe  

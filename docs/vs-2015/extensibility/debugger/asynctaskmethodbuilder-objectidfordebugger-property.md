@@ -1,7 +1,7 @@
 ---
 title: Propriedade asynctaskmethodbuilder. Objectidfordebugger | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 78338537-b451-4655-9f04-a21f6fe197a3
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ad86204f141a8709d1500e9988f00922968a73e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7b503ed25c97a048cbee4cb6bf308ca95f81ac8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474656"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766628"
 ---
 # <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>Propriedade AsyncTaskMethodBuilder.ObjectIdForDebugger
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [propriedade asynctaskmethodbuilder. Objectidfordebugger](https://docs.microsoft.com/visualstudio/extensibility/debugger/asynctaskmethodbuilder-objectidfordebugger-property).  
-  
 Obtém um objeto que pode ser usado para identificar exclusivamente esse construtor para o depurador.  
   
  **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  

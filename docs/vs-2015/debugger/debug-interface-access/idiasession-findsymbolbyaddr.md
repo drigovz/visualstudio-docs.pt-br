@@ -1,7 +1,7 @@
 ---
 title: 'Idiasession:: Findsymbolbyaddr | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaSession::findSymbolByAddr method
 ms.assetid: c130abc5-4d0a-4d2d-8286-94fde36ddd4a
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e2799a2d39af36237c0c26119b6bf32a34a709d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: edb69dd51e883e23f205d9fb48a2624206d14f41
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465903"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746228"
 ---
 # <a name="idiasessionfindsymbolbyaddr"></a>IDiaSession::findSymbolByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasession:: Findsymbolbyaddr](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findsymbolbyaddr).  
-  
 Recupera um tipo de símbolo especificado que contém ou está mais próximo de um endereço especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT findSymbolByAddr (   
+HRESULT findSymbolByAddr (   
    DWORD        isect,  
    DWORD        offset,  
    SymTagEnum   symtag,  

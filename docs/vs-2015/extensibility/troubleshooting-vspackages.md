@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas de VSPackages | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f7706a2c7bf579148b71d31fab6b172db378564
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2c9a7b57a8b15683cb202b71e33e908a1bfd1b5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462710"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764001"
 ---
 # <a name="troubleshooting-vspackages"></a>Solucionando problemas de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [solução de problemas de VSPackages](https://docs.microsoft.com/visualstudio/extensibility/troubleshooting-vspackages).  
-  
 A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas para resolver os problemas.  
   
 ### <a name="to-troubleshoot-a-vspackage-that-keeps-visual-studio-from-starting"></a>Para solucionar problemas de um VSPackage que impede que o Visual Studio iniciando  
@@ -118,19 +116,19 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>Solucionar problemas de um VSPackage ausente ou uma de suas dependências  
   
-1.  Para código gerenciado, certifique-se de que os caminhos de referência estão corretos.  
+1. Para código gerenciado, certifique-se de que os caminhos de referência estão corretos.  
   
-    1.  No menu **Projeto**, clique em **Propriedades**.  
+   1.  No menu **Projeto**, clique em **Propriedades**.  
   
-    2.  Selecione o **referências** guia o **páginas de propriedade** caixa de diálogo e verifique se todos os caminhos estão corretos. Como alternativa, você pode usar o **Pesquisador de objetos** para procurar os objetos referenciados.  
+   2.  Selecione o **referências** guia o **páginas de propriedade** caixa de diálogo e verifique se todos os caminhos estão corretos. Como alternativa, você pode usar o **Pesquisador de objetos** para procurar os objetos referenciados.  
   
-         Para código gerenciado, você pode usar o [Fuslogvw.exe (Assembly Binding Log Viewer)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) para exibir os detalhes de carregamentos de assembly com falha.  
+        Para código gerenciado, você pode usar o [Fuslogvw.exe (Assembly Binding Log Viewer)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) para exibir os detalhes de carregamentos de assembly com falha.  
   
-2.  Para código não gerenciado, localize o CLSID do VSPackage no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nó do Registro CLSID:  
+2. Para código não gerenciado, localize o CLSID do VSPackage no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nó do Registro CLSID:  
   
-     Studio HKLM\Software\Microsoft\Visual\\*\<versão >* \CLSID  
+    Studio HKLM\Software\Microsoft\Visual\\*\<versão >* \CLSID  
   
- Certifique-se de que a entrada InprocServer32 tem o caminho correto da dll VSPackage.  
+   Certifique-se de que a entrada InprocServer32 tem o caminho correto da dll VSPackage.  
   
 ## <a name="see-also"></a>Consulte também  
  [VSPackages](../extensibility/internals/vspackages.md)

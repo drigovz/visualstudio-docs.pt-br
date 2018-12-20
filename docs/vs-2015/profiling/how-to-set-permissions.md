@@ -1,7 +1,7 @@
 ---
 title: Como definir permissões | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,32 +17,30 @@ helpviewer_keywords:
 - performance tools, setting profiling permissions
 ms.assetid: 69f27896-8f46-4ef3-bfb7-726d95304f3a
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4bed698bd520255dd762aa223e3eb94a5d704e6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2bfbcb15d9dae16dd7d65ac00ad7c5b17600fa9d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473169"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792874"
 ---
 # <a name="how-to-set-permissions"></a>Como definir permissões
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: definir permissões](https://docs.microsoft.com/visualstudio/profiling/how-to-set-permissions).  
-  
 Este tópico descreve como um Administrador de um computador concede as permissões de segurança necessárias para a criação de perfil para um usuário ou grupo que não tenha permissões de Administrador no computador.  
   
  Um princípio básico de segurança declara que aplicativos devem ser executados apenas com as permissões necessárias. Esse princípio também se aplica aos usuários. Se os usuários puderem ser totalmente eficientes quando estiverem conectados como membros do grupo Usuários em vez do grupo Administradores, eles não deverão receber permissões de Administrador. O primeiro procedimento, "Para criar uma conta de usuário que tenha permissões de Usuário" descreve como criar uma conta de usuário para um membro do grupo Usuários.  
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Membros do grupo Usuários precisarão de acesso às pastas e arquivos no disco que está compartilhado com outros membros da equipe. O segundo procedimento, "Para conceder acesso a arquivos de projeto compartilhados" descreve como conceder esse acesso.  
+  Membros do grupo Usuários precisarão de acesso às pastas e arquivos no disco que está compartilhado com outros membros da equipe. O segundo procedimento, "Para conceder acesso a arquivos de projeto compartilhados" descreve como conceder esse acesso.  
   
- Membros do grupo Usuários podem executar as ferramentas de criação de perfil se um administrador conceder-lhes acesso ao driver de software das ferramentas de criação de perfil. O último procedimento, "Para conceder acesso ao driver de criação de perfil," descreve como conceder acesso a esse driver.  
+  Membros do grupo Usuários podem executar as ferramentas de criação de perfil se um administrador conceder-lhes acesso ao driver de software das ferramentas de criação de perfil. O último procedimento, "Para conceder acesso ao driver de criação de perfil," descreve como conceder acesso a esse driver.  
   
 > [!NOTE]
 >  Você precisa de permissões de administrador para seguir as etapas nesses procedimentos.  
@@ -91,47 +89,47 @@ Este tópico descreve como um Administrador de um computador concede as permiss�
   
 ### <a name="to-grant-access-to-the-profiling-driver"></a>Para conceder acesso ao driver de criação de perfil  
   
-1.  Abra um prompt de comando como administrador.  
+1. Abra um prompt de comando como administrador.  
   
-2.  Altere o diretório para:  
+2. Altere o diretório para:  
   
-    ```  
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
-    ```  
+   ```  
+   <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
+   ```  
   
-3.  Execute o seguinte comando:  
+3. Execute o seguinte comando:  
   
-    ```  
-    vsperfcmd /admin:driver,start /admin:service,start  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,start /admin:service,start  
+   ```  
   
-     Este comando instala e inicia o driver para as ferramentas de criação de perfil.  
+    Este comando instala e inicia o driver para as ferramentas de criação de perfil.  
   
-     Esse comando inicia o serviço e o driver de criação de perfil para que usuários não administradores usem os recursos de criação de perfil que estão disponíveis em seus espaços de processo de Usuário. Somente um Administrador pode executar o comando e ele falhará para usuários não administrativos.  
+    Esse comando inicia o serviço e o driver de criação de perfil para que usuários não administradores usem os recursos de criação de perfil que estão disponíveis em seus espaços de processo de Usuário. Somente um Administrador pode executar o comando e ele falhará para usuários não administrativos.  
   
-     Observe que os efeitos desta etapa são desfeitos após o computador reiniciar, a menos que você também execute a etapa final deste procedimento.  
+    Observe que os efeitos desta etapa são desfeitos após o computador reiniciar, a menos que você também execute a etapa final deste procedimento.  
   
-4.  Execute o comando para permitir o acesso à funcionalidade do driver de criação de perfil por um usuário ou grupo que não tem acesso de administrador no computador:  
+4. Execute o comando para permitir o acesso à funcionalidade do driver de criação de perfil por um usuário ou grupo que não tem acesso de administrador no computador:  
   
-    ```  
-    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
-    ```  
+   ```  
+   vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
+   ```  
   
-     Este comando concede à conta \<nome de usuário> ou \<nome do grupo> o acesso às ferramentas de Criação de Perfil. A opção \<direito> determina a funcionalidade de criação de perfil que o usuário pode acessar. A opção \<direito> pode ser um ou mais dos seguintes valores:  
+    Este comando concede à conta \<nome de usuário> ou \<nome do grupo> o acesso às ferramentas de Criação de Perfil. A opção \<direito> determina a funcionalidade de criação de perfil que o usuário pode acessar. A opção \<direito> pode ser um ou mais dos seguintes valores:  
   
-    -   FullAccess – permite acesso a todos os métodos de criação de perfil, incluindo a coleta de dados de desempenho de serviços, de amostragem e de criação de perfil entre sessões.  
+   -   FullAccess – permite acesso a todos os métodos de criação de perfil, incluindo a coleta de dados de desempenho de serviços, de amostragem e de criação de perfil entre sessões.  
   
-    -   SampleProfiling – permite acesso aos métodos de criação de perfil por amostragem  
+   -   SampleProfiling – permite acesso aos métodos de criação de perfil por amostragem  
   
-    -   CrossSession – permite o acesso à criação de perfil entre sessões o que é necessário para serviços de criação de perfil.  
+   -   CrossSession – permite o acesso à criação de perfil entre sessões o que é necessário para serviços de criação de perfil.  
   
-5.  (Opcional) Para preservar os resultados de qualquer uma das etapas anteriores depois que o computador reiniciar, execute o seguinte comando:  
+5. (Opcional) Para preservar os resultados de qualquer uma das etapas anteriores depois que o computador reiniciar, execute o seguinte comando:  
   
-    ```  
-    vsperfcmd /admin:driver,autostart,on  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,autostart,on  
+   ```  
   
- Os usuários especificados, após o logon, agora poderão usar as ferramentas de criação de perfil sem permissões de Administrador.  
+   Os usuários especificados, após o logon, agora poderão usar as ferramentas de criação de perfil sem permissões de Administrador.  
   
 ## <a name="see-also"></a>Consulte também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   

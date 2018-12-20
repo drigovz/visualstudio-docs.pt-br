@@ -1,7 +1,7 @@
 ---
 title: Conclusão de instrução em um serviço de linguagem herdado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 337ea5de468755fcba5cefe0fe4067b73bd59def
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d88ebe84ec3ec5efb1d7c4ac04ebaee50ac65b97
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463025"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796487"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Preenchimento de declaração em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [preenchimento de declaração em um serviço de linguagem herdado](https://docs.microsoft.com/visualstudio/extensibility/internals/statement-completion-in-a-legacy-language-service).  
-  
 Preenchimento de declaração é o processo pelo qual o serviço de linguagem ajuda os usuários a concluir uma palavra-chave do idioma ou um elemento que eles tenham sido iniciados digitando no editor de núcleo. Este tópico discute como funciona o preenchimento de declaração e como implementá-lo em seu serviço de linguagem.  
   
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar o preenchimento de declaração, consulte [instruções passo a passo: exibindo o preenchimento de declaração](../../extensibility/walkthrough-displaying-statement-completion.md).  

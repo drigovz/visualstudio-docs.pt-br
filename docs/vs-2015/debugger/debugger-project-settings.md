@@ -1,7 +1,7 @@
 ---
 title: Configurações de projeto do depurador | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,21 +22,19 @@ helpviewer_keywords:
 - debugging [Visual Studio], project settings
 ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5530d4cbdbb4f9a28f7b6b92dd487d598349019
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed31c4490738d007375d1a73728a00ac17c20897
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463974"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755048"
 ---
 # <a name="debugger-project-settings"></a>Configurações de projeto do depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [as configurações de projeto do depurador](https://docs.microsoft.com/visualstudio/debugger/debugger-project-settings).  
-  
 Determinadas configurações de projeto também afetam a depuração. Essas configurações determinam coisas como quais diretórios o depurador analisa, os comandos e os argumentos de comando usados para iniciar o programa e o tipo de informações de depuração criadas para o programa. Você pode alterar essas configurações na **páginas de propriedade** caixa de diálogo.  
   
  Esta seção descreve quais opções estão disponíveis e como defini-las.  

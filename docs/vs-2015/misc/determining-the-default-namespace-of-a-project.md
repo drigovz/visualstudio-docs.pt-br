@@ -1,7 +1,7 @@
 ---
 title: Determinando o Namespace padrão de um projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: douge
-ms.openlocfilehash: 27919985c09356764533e736899dc6a7cb5d0090
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c37c6f69c52677c1bd029f5e6c60d15313425abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950944"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>Determinando o Namespace padrão de um projeto
 Para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], se o `CustomToolNamespace` propriedade é definida no arquivo de entrada, em seguida, o valor de `CustomToolNamespace` torna-se o valor do parâmetro de namespace padrão passado para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> método. Caso contrário, o `wszDefaultNamespace` parâmetro passado para `Generate` é sempre igual ao namespace raiz. Para obter mais informações sobre namespaces, consulte [palavras-chave do Namespace](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  
@@ -28,11 +28,11 @@ Para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], se o `CustomToolNamespace` pr
   
  Uma exceção a essa regra ocorre quando a cadeia de hierarquia contém uma pasta de referência da Web. Por exemplo, se:  
   
--   FolderC eram uma pasta de referência da Web, o namespace seria **CL9. FolderC**.  
+- FolderC eram uma pasta de referência da Web, o namespace seria **CL9. FolderC**.  
   
--   PastaB eram uma pasta de referência da Web, o namespace seria **CL9. FolderB.FolderC**.  
+- PastaB eram uma pasta de referência da Web, o namespace seria **CL9. FolderB.FolderC**.  
   
- Ou seja, o namespace usa o seguinte formato:  
+  Ou seja, o namespace usa o seguinte formato:  
   
 ```  
 rootNamespace.webReferenceFolder.containedFolder.containedFolder ...  

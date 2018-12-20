@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 534398e57c1a8111f2b1f83a61322a581539c962
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933151"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Passo a passo: Criar uma relação de detalhes mestre usando um conjunto de dados armazenados em cache
   Este passo a passo demonstra como criar uma relação mestre/detalhes em uma planilha e os dados de cache para que a solução possa ser usada offline.  
@@ -57,34 +57,34 @@ ms.locfileid: "38808259"
   
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto  
   
-1.  Criar um projeto de pasta de trabalho do Excel com o nome **Meus Master-Detail**, usando o Visual Basic ou c#. Certifique-se de que **criar um novo documento** está selecionado. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Criar um projeto de pasta de trabalho do Excel com o nome **Meus Master-Detail**, usando o Visual Basic ou c#. Certifique-se de que **criar um novo documento** está selecionado. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Visual Studio abre a nova pasta de trabalho do Excel no designer e adiciona o **Meus Master-Detail** projeto ao **Gerenciador de soluções**.  
+   Visual Studio abre a nova pasta de trabalho do Excel no designer e adiciona o **Meus Master-Detail** projeto ao **Gerenciador de soluções**.  
   
 ## <a name="create-the-data-source"></a>Criar a fonte de dados  
  Use o **fontes de dados** janela para adicionar um conjunto de dados tipado ao seu projeto.  
   
 ### <a name="to-create-the-data-source"></a>Para criar a fonte de dados  
   
-1.  Se o **fontes de dados** janela não estiver visível, exibi-lo, na barra de menus, escolhendo **exibição** > **Other Windows**  >   **Fontes de dados**.  
+1. Se o **fontes de dados** janela não estiver visível, exibi-lo, na barra de menus, escolhendo **exibição** > **Other Windows**  >   **Fontes de dados**.  
   
-2.  Escolher **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.  
+2. Escolher **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.  
   
-3.  Selecione **banco de dados** e, em seguida, clique em **próxima**.  
+3. Selecione **banco de dados** e, em seguida, clique em **próxima**.  
   
-4.  Selecione uma conexão de dados para o banco de dados do SQL Server de exemplo Northwind, ou adicionar uma nova conexão usando o **nova Conexão** botão.  
+4. Selecione uma conexão de dados para o banco de dados do SQL Server de exemplo Northwind, ou adicionar uma nova conexão usando o **nova Conexão** botão.  
   
-5.  Depois de selecionar ou criar uma conexão, clique em **próxima**.  
+5. Depois de selecionar ou criar uma conexão, clique em **próxima**.  
   
-6.  Desmarque a opção para salvar a conexão se ela está selecionada e clique **próxima**.  
+6. Desmarque a opção para salvar a conexão se ela está selecionada e clique **próxima**.  
   
-7.  Expanda o **tabelas** nó na **objetos de banco de dados** janela.  
+7. Expanda o **tabelas** nó na **objetos de banco de dados** janela.  
   
-8.  Selecione o **pedidos** tabela e o **detalhes do pedido** tabela.  
+8. Selecione o **pedidos** tabela e o **detalhes do pedido** tabela.  
   
 9. Clique em **Finalizar**.  
   
- O assistente adiciona as duas tabelas para o **fontes de dados** janela. Ele também adiciona um dataset tipado ao seu projeto que está visível no **Gerenciador de soluções**.  
+   O assistente adiciona as duas tabelas para o **fontes de dados** janela. Ele também adiciona um dataset tipado ao seu projeto que está visível no **Gerenciador de soluções**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Adicionar controles à planilha  
  Nesta etapa, você adicionará um intervalo nomeado, um objeto de lista e dois botões para a primeira planilha. Primeiro, adicione o intervalo nomeado e o objeto de lista dos **fontes de dados** janela, de modo que eles são vinculados automaticamente a fonte de dados. Em seguida, adicione os botões do **caixa de ferramentas**.  
@@ -109,30 +109,30 @@ ms.locfileid: "38808259"
   
 ### <a name="to-add-two-buttons"></a>Para adicionar dois botões  
   
-1.  Do **controles comuns** guia da **caixa de ferramentas**, adicione um <xref:System.Windows.Forms.Button> controle à célula **A3** da planilha.  
+1. Do **controles comuns** guia da **caixa de ferramentas**, adicione um <xref:System.Windows.Forms.Button> controle à célula **A3** da planilha.  
   
-     Esse botão é denominado `Button1`.  
+    Esse botão é denominado `Button1`.  
   
-2.  Adicione outro <xref:System.Windows.Forms.Button> controle a célula **B3** da planilha.  
+2. Adicione outro <xref:System.Windows.Forms.Button> controle a célula **B3** da planilha.  
   
-     Esse botão é denominado `Button2`.  
+    Esse botão é denominado `Button2`.  
   
- Em seguida, marque o conjunto de dados sejam armazenados em cache no documento.  
+   Em seguida, marque o conjunto de dados sejam armazenados em cache no documento.  
   
 ## <a name="cache-the-dataset"></a>Armazenar em cache o conjunto de dados  
  Marcar o conjunto de dados sejam armazenados em cache no documento, tornando o conjunto de dados públicos e definindo o **CacheInDocument** propriedade.  
   
 ### <a name="to-cache-the-dataset"></a>Para armazenar em cache o conjunto de dados  
   
-1.  Selecione **NorthwindDataSet** na bandeja de componentes.  
+1. Selecione **NorthwindDataSet** na bandeja de componentes.  
   
-2.  No **propriedades** janela, altere o **modificadores** propriedade a ser **público**.  
+2. No **propriedades** janela, altere o **modificadores** propriedade a ser **público**.  
   
-     Conjuntos de dados devem ser públicos antes de o cache está habilitado.  
+    Conjuntos de dados devem ser públicos antes de o cache está habilitado.  
   
-3.  Alterar o **CacheInDocument** propriedade **verdadeiro**.  
+3. Alterar o **CacheInDocument** propriedade **verdadeiro**.  
   
- A próxima etapa é adicionar texto a botões e no c#, adicione código para ligar os manipuladores de eventos.  
+   A próxima etapa é adicionar texto a botões e no c#, adicione código para ligar os manipuladores de eventos.  
   
 ## <a name="initialize-the-controls"></a>Inicializar os controles  
  Definir o texto do botão e adicionar manipuladores de eventos durante o <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> eventos.  

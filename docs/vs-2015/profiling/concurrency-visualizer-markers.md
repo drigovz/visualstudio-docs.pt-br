@@ -1,7 +1,7 @@
 ---
 title: Marcadores da Visualização Simultânea | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ f1_keywords:
 - vs.cv.markersui
 ms.assetid: c4692d17-6cd2-4ad1-8590-d7275c771c70
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e04a481a7f9465ade5d6ce48547665809a31fac7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4fa2a57d08f2b86fec573f02129a326907e3e3a9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464878"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790442"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcadores do Visualizador de Simultaneidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [marcadores da visualização simultânea](https://docs.microsoft.com/visualstudio/profiling/concurrency-visualizer-markers).  
-  
 Na Visualização Simultânea, os marcadores são ícones que representam os eventos em um aplicativo.  Normalmente, o aplicativo gera esses eventos para designar fases ou ocorrências em um aplicativo.  Os eventos podem ser gerados pelo aplicativo ou por bibliotecas e tempos de execução que o aplicativo usa.  
   
 ## <a name="kinds-of-markers"></a>Tipos de marcadores  
@@ -51,21 +49,21 @@ Na Visualização Simultânea, os marcadores são ícones que representam os eve
 ## <a name="known-sources-of-markers"></a>Fontes conhecidas de marcadores  
  Qualquer provedor ETW pode gerar marcadores, desde que os provedores obedeçam a determinadas restrições. É possível configurar a Visualização Simultânea para escutar outras fontes de evento para marcadores. Por padrão, ele escuta estas fontes de evento:  
   
--   [SDK da Visualização Simultânea](../profiling/concurrency-visualizer-sdk.md)  
+- [SDK da Visualização Simultânea](../profiling/concurrency-visualizer-sdk.md)  
   
--   [TPL (Biblioteca de Paralelismo de Tarefas)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
+- [TPL (Biblioteca de Paralelismo de Tarefas)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
   
--   [Fluxo de dados](http://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
+- [Fluxo de dados](http://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
   
--   [PLINQ (LINQ paralelo)](http://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
+- [PLINQ (LINQ paralelo)](http://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
   
--   [Tempo de Execução de Simultaneidade](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
+- [Tempo de Execução de Simultaneidade](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
   
--   [Suporte do Marcador de Cenário](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
+- [Suporte do Marcador de Cenário](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
--   [C++ AMP (C++ Accelerated Massive Parallelism)](http://msdn.microsoft.com/library/e27824cb-3167-409b-8c3f-a0e476d8f349)  
+- [C++ AMP (C++ Accelerated Massive Parallelism)](http://msdn.microsoft.com/library/e27824cb-3167-409b-8c3f-a0e476d8f349)  
   
- É possível usar a guia Marcadores na caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) para controlar se os marcadores de várias fontes são exibidos na Visualização Simultânea e é possível filtrá-los com base na importância e na categoria.  
+  É possível usar a guia Marcadores na caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) para controlar se os marcadores de várias fontes são exibidos na Visualização Simultânea e é possível filtrá-los com base na importância e na categoria.  
   
 ## <a name="markers-from-eventsource"></a>Marcadores de EventSource  
  A Visualização Simultânea também pode exibir eventos EventSource.  Para obter mais informações, consulte [Visualizando eventos EventSource como marcadores](../profiling/visualizing-eventsource-events-as-markers.md).  

@@ -1,7 +1,7 @@
 ---
 title: THREADPROPERTIES | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8d95c31818931c7d1bc303318998504ee6f1a43d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c67648d3f0d85fa55d42a37fdf7cf86341464813
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461591"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785879"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [THREADPROPERTIES](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/threadproperties).  
-  
 Descreve as propriedades de um thread.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-typedef struct _tagTHREADPROPERTIES {   
+typedef struct _tagTHREADPROPERTIES {   
    THREADPROPERTY_FIELDS dwFields;  
    DWORD                 dwThreadId;  
    DWORD                 dwSuspendCount;  
@@ -46,7 +44,7 @@ typedef struct _tagTHREADPROPERTIES {
 ```  
   
 ```csharp  
-public struct THREADPROPERTIES {   
+public struct THREADPROPERTIES {   
    public uint   dwFields;  
    public uint   dwThreadId;  
    public uint   dwSuspendCount;  

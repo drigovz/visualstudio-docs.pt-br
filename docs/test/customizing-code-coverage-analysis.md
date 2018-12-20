@@ -1,5 +1,5 @@
 ---
-title: Personalização da análise de cobertura de código no Visual Studio
+title: Personalizando análise de cobertura de código
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7b48fc77dd88cf327050c0bf8ba893f8d4a626fa
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 09af57ca64524dafa506d57d486e9385a4c35a93
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302997"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054928"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizar a análise de cobertura de código
 
@@ -91,7 +91,7 @@ Se **Incluir** estiver vazio, o processamento de cobertura de código incluirá 
 
 Os nós de inclusão e exclusão usam expressões regulares. Para obter mais informações, confira [Usar expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). As expressões regulares não são o mesmo que curingas. Em particular:
 
-- **.\*** corresponde a uma cadeia de quaisquer caracteres
+- **.\\*** corresponde a uma cadeia de quaisquer caracteres
 
 - **\\.** corresponde a um ponto ".")
 
@@ -190,7 +190,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--
 About include/exclude lists:
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.
-Each element in the list is a regular expression (ECMAScript syntax). See http://msdn.microsoft.com/library/2k3te2cs.aspx.
+Each element in the list is a regular expression (ECMAScript syntax). See https://docs.microsoft.com/visualstudio/ide/using-regular-expressions-in-visual-studio.
 An item must first match at least one entry in the include list to be included.
 Included items must then not match any entries in the exclude list to remain included.
 -->

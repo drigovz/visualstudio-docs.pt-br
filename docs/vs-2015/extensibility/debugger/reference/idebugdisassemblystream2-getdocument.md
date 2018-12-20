@@ -1,7 +1,7 @@
 ---
 title: IDebugDisassemblyStream2::GetDocument | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: 3d039a44-ebaa-4413-ac18-7cfd92c408bd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c260209c59ab425e3474aa9c82882da8d1c6d92e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ad2ac0171661a2f17ffac1653157d0cee232054
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474941"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745075"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugDisassemblyStream2::GetDocument](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdisassemblystream2-getdocument).  
-  
 Obtém o documento de origem associado a este fluxo de entrada.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT GetDocument(   
+HRESULT GetDocument(   
    BSTR              bstrDocumentUrl,  
    IDebugDocument2** ppDocument  
 );  
 ```  
   
 ```csharp  
-int GetDocument(   
+int GetDocument(   
    string              bstrDocumentUrl,  
    out IDebugDocument2 ppDocument  
 );  

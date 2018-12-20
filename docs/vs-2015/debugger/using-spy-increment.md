@@ -1,7 +1,7 @@
 ---
 title: Usando Spy + + | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - Using Spy++
 ms.assetid: 02769bfa-5679-4ee2-8c6b-27876edb4e8c
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e7600447e84ec1181d608c2d54a3ebbaa6136d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 205c99d4278c1421a98373f22374add81d0f9ac7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465381"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750287"
 ---
 # <a name="using-spy"></a>Usando Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [usando o Spy + +](https://docs.microsoft.com/visualstudio/debugger/using-spy-increment).  
-  
 Spy + + (SPYXX. EXE) é um utilitário baseado em Win32 que fornece uma exibição gráfica de processos, threads, windows e as mensagens da janela do sistema. Esta seção do Spy + + da Ajuda inclui os seguintes tópicos:  
   
 ## <a name="in-this-section"></a>Nesta seção  

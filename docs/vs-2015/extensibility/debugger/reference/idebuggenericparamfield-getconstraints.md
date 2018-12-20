@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::GetConstraints | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 86a78b5a-ee0f-4999-a0ba-919d3dc7d969
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 944771d8039c278de80bdd3bb8d317da7674487e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab0f1fee89de226a56e06b81eda4a6abae56af6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467717"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799191"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugGenericParamField::GetConstraints](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebuggenericparamfield-getconstraints).  
-  
 Recupera as restrições que estão associadas esse parâmetro genérico.  
   
 ## <a name="syntax"></a>Sintaxe  

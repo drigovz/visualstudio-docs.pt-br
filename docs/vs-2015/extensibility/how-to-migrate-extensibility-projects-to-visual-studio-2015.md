@@ -1,7 +1,7 @@
 ---
 title: 'Como: migrar projetos de extensibilidade para o Visual Studio 2015 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7257bf2fa433a1d9f59f15e62b15d57944632045
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 564e279d259cae879ca2925eed3309c30d7513db
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468331"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785151"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Como: migrar projetos de extensibilidade para o Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: migrar projetos de extensibilidade para o Visual Studio 2015](https://docs.microsoft.com/visualstudio/extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015).  
-  
 Aqui está como atualizar sua extensão.  
   
 > [!IMPORTANT]

@@ -1,7 +1,7 @@
 ---
 title: Aplicativos da Store de execução do Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ dev_langs:
 - C++
 ms.assetid: 98358355-e5e6-47e9-a4b6-cd559208e43c
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 697ee8f4a3c9b796e5270e2a48a9786b657b3636
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef9fe3a8235621b816d588d0f944d9d71e4310d0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462939"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744471"
 ---
 # <a name="run-store-apps-from-visual-studio"></a>Executar aplicativos da Store pelo Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [aplicativos da Store de execução do Visual Studio](https://docs.microsoft.com/visualstudio/debugger/run-store-apps-from-visual-studio).  
-  
 Os aplicativos da Windows Store são executados em uma grande variedade de dispositivos e o Visual Studio fornece a você uma série de maneiras de executar e interagir com esses aplicativos. A experiência "F5" é aprimorada para facilitar a depuração, a criação de perfil e o teste de aplicativos durante o desenvolvimento.  
   
  ![Iniciar degugging e selecionar destino](../debugger/media/vsrun-dropdownlist.png "VSRUN_DropDownList")  

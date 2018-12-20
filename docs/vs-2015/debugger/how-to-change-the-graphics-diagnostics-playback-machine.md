@@ -1,7 +1,7 @@
 ---
 title: 'Como: alterar o computador de reprodução de diagnóstico de gráficos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -11,21 +11,19 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e33d2acc46cbf92c9b2bbd699903ad3169661a54
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a2d5d56d37bbed4180d1231cac54da6beff3418d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465388"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737600"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Como alterar a máquina de reprodução de diagnóstico de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: alterar o computador de reprodução de diagnóstico de gráficos](https://docs.microsoft.com/visualstudio/debugger/graphics/how-to-change-the-graphics-diagnostics-playback-machine).  
-  
 Você pode reproduzir informações gráficas usando seu computador local ou por meio de um computador ou dispositivo remoto.  
   
 ## <a name="choosing-a-playback-machine"></a>Escolhendo um computador de reprodução  

@@ -1,7 +1,7 @@
 ---
 title: Anotando o comportamento da função | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,21 +23,19 @@ f1_keywords:
 - _Use_decl_annotations_
 ms.assetid: c0aa268d-6fa3-4ced-a8c6-f7652b152e61
 caps.latest.revision: 13
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c05fca9a23f213f14aaecffda87478819291e1f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88213e1cd8112aecac527f7d72d2d74dbf10c559
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466956"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783123"
 ---
 # <a name="annotating-function-behavior"></a>Anotando o comportamento da função
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [anotando o comportamento da função](https://docs.microsoft.com/visualstudio/code-quality/annotating-function-behavior).  
-  
 Além de anotar [parâmetros de função e valores de retorno](../code-quality/annotating-function-parameters-and-return-values.md), você pode anotar as propriedades da função inteira.  
   
 ## <a name="function-annotations"></a>Anotações da função  

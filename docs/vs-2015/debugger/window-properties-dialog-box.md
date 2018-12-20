@@ -1,7 +1,7 @@
 ---
 title: Janela caixa de diálogo de propriedades | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - Window Properties dialog box
 ms.assetid: c70e9429-fb0c-452a-9626-79f168393e44
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab4606972db64fe0e89cd0585b85353bfe0e2d37
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b10fb130e5f2f584369a363491c5317e83aaf80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463188"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773958"
 ---
 # <a name="window-properties-dialog-box"></a>Caixa de diálogo Propriedades da Janela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [caixa de diálogo de propriedades de janela](https://docs.microsoft.com/visualstudio/debugger/window-properties-dialog-box).  
-  
 Use essa caixa de diálogo para obter mais informações sobre uma janela específica. Para exibir essa caixa de diálogo, mova o foco para o [modo de exibição do Windows](../debugger/windows-view.md) janela. Selecione qualquer nó de janela na árvore e escolha **propriedades** da **exibição** menu.  
   
 ## <a name="in-this-section"></a>Nesta seção  

@@ -1,7 +1,7 @@
 ---
 title: Como criar e aplicar um recurso | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 75041cb9db00b48ea81dfe9a8639c41e4267262c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef5dc15db983a54e60df447a2457d9dbc6804d85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47475152"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915796"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Como criar e aplicar um recurso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como criar e aplicar um recurso](https://docs.microsoft.com/visualstudio/designers/how-to-create-and-apply-a-resource).  
-  
 Os estilos e modelos de elementos no Designer XAML são armazenados em entidades reutilizáveis chamadas recursos. Os estilos permitem que você defina propriedades de elemento e reutilize essas configurações para obter uma aparência consistente entre vários elementos. Um [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) define a aparência de um controle e também pode ser aplicado como um recurso. Para obter mais informações, consulte [Guia de início rápido: definindo o estilo dos controles](http://go.microsoft.com/fwlink/?LinkID=248239) e [Guia de início rápido: modelos de controle](http://go.microsoft.com/fwlink/?LinkID=247982).  
   
  Sempre que você cria um novo recurso de uma propriedade existente, [Estilo](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx), `ControlTemplate` ou caixa de diálogo **Criar Recurso** permite definir o recurso no nível do aplicativo, no nível do documento ou no nível do elemento. Esses níveis determinam onde você pode usar o recurso. Por exemplo, se você definir o recurso no nível de elemento, o recurso só poderá ser aplicado ao elemento no qual ele foi criado. Você também pode optar por armazenar o recurso em um dicionário de recursos, que é um arquivo separado que você pode usar novamente em outro projeto.  
@@ -59,18 +57,18 @@ Os estilos e modelos de elementos no Designer XAML são armazenados em entidades
   
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>Para aplicar um recurso a um elemento ou propriedade  
   
-1.  Na janela Estrutura de Tópicos de Documento, escolha o elemento ao qual você deseja aplicar um recurso.  
+1. Na janela Estrutura de Tópicos de Documento, escolha o elemento ao qual você deseja aplicar um recurso.  
   
-2.  Realize um dos seguintes procedimentos:  
+2. Realize um dos seguintes procedimentos:  
   
-    -   Aplique um recurso a uma propriedade. Na janela Propriedades, escolha o marcador de propriedade ao lado do valor da propriedade, escolha **Recurso Local** ou **Recurso do Sistema** e escolha um recurso disponível na lista que é exibida.  
+   - Aplique um recurso a uma propriedade. Na janela Propriedades, escolha o marcador de propriedade ao lado do valor da propriedade, escolha **Recurso Local** ou **Recurso do Sistema** e escolha um recurso disponível na lista que é exibida.  
   
-         Se você não vir um recurso que esperava ver, é possível que o tipo do recurso não corresponda ao tipo da propriedade.  
+      Se você não vir um recurso que esperava ver, é possível que o tipo do recurso não corresponda ao tipo da propriedade.  
   
-    -   Aplique um estilo ou recurso de modelo de controle a um controle. Abra o menu de contexto para um controle na janela Estrutura de Tópicos de Documento, escolha **Editar Modelo** ou **Editar Modelos Adicionais**, escolha **Aplicar Recurso** e selecione o nome do modelo de controle na lista que é exibida.  
+   - Aplique um estilo ou recurso de modelo de controle a um controle. Abra o menu de contexto para um controle na janela Estrutura de Tópicos de Documento, escolha **Editar Modelo** ou **Editar Modelos Adicionais**, escolha **Aplicar Recurso** e selecione o nome do modelo de controle na lista que é exibida.  
   
-        > [!NOTE]
-        >  **Editar Modelo** é usado para aplicar modelos de controle. **Editar Modelos Adicionais** é usado para aplicar outros tipos de modelo.  
+     > [!NOTE]
+     >  **Editar Modelo** é usado para aplicar modelos de controle. **Editar Modelos Adicionais** é usado para aplicar outros tipos de modelo.  
   
      Recursos podem ser aplicados sempre que forem compatíveis. Por exemplo, um recurso de pincel pode ser aplicado à propriedade **Primeiro plano** de um controle <xref:Windows.UI.Xaml.Controls.TextBox>.  
   

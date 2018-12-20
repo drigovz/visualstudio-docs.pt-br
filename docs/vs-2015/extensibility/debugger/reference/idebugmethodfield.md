@@ -1,7 +1,7 @@
 ---
 title: IDebugMethodField | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: a7dc9030-fc98-4cf1-b943-37a4003300b6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f09161f400b2917aeff4c79ba58a813a98e6b5f4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7bd838e168c7708abeb4bf02098fdce132bb1f36
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468124"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758920"
 ---
 # <a name="idebugmethodfield"></a>IDebugMethodField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugMethodField](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmethodfield).  
-  
 Essa interface descreve um método.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDebugMethodField : IDebugContainerField  
+IDebugMethodField : IDebugContainerField  
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  

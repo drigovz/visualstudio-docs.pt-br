@@ -1,22 +1,23 @@
 ---
 title: Modelos de item para projetos do Python
 description: Uma lista de referência de modelos de item para o projeto do Python que estão disponíveis na caixa de diálogo Adicionar > Novo Item no Visual Studio.
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8319c99e5de12ce1c09a2c20fc5cf1b132f34092
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5fc08a190dfe146002dc4180f8c9a1fb680a5fb9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776028"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065782"
 ---
 # <a name="python-item-templates"></a>Modelos de item do Python
 
@@ -42,15 +43,10 @@ A tabela a seguir explica brevemente o efeito de cada modelo de item em um proje
 | **Janela WPF do IronPython** | Uma janela WPF consiste em dois arquivos lado a lado: um arquivo *.xaml* que define um `<Window>` com um elemento `<Grid>` vazio e um arquivo *.py* associado que carrega o arquivo XAML usando a biblioteca do `wpf`. Normalmente usado em um projeto criado usando um dos modelos de projeto do IronPython. Confira [Gerenciar projetos Python – Modelos de projetos](managing-python-projects-in-visual-studio.md#project-templates). |
 | **Arquivos de Suporte de Função Web** | Uma pasta *bin* na raiz do projeto (independentemente da pasta escolhida no projeto). A pasta contém um script de implantação padrão e um arquivo *web.config* para funções da web do Serviço de Nuvem do Azure. O modelo também inclui um arquivo *readme.html* que explica os detalhes. |
 | **Arquivos de Suporte à Função de Trabalho** | Uma pasta *bin* na raiz do projeto (independentemente da pasta escolhida no projeto). A pasta contém o script de implantação e lançamento padrão, além de um arquivo *web.config*, para funções de trabalho do Serviço de Nuvem do Azure. O modelo também inclui um arquivo *readme.html* que explica os detalhes. |
-| **web.config do Azure (FastCGI)** | Um arquivo *web.config* que contém entradas para aplicativos que usam um objeto [WSGI](https://wsgi.readthedocs.io/en/latest/) para tratar das conexões de entrada. Normalmente, esse arquivo é implantado na raiz de um servidor Web que executa o IIS, como o Serviço de Aplicativo do Azure. Para saber mais, confira [Publicar no Serviço de Aplicativo do Azure](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **web.config do Azure (HttpPlatformHandler)** | Um arquivo *web.config* que contém entradas para aplicativos que escutam conexões de entrada com um soquete. Normalmente, esse arquivo é implantado na raiz de um servidor Web que executa o IIS, como o Serviço de Aplicativo do Azure. Para saber mais, confira [Publicar no Serviço de Aplicativo do Azure](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **Arquivos estáticos web.config do Azure** | Um arquivo *web.config* normalmente adicionado a uma pasta *static* (ou outra pasta que contém itens estáticos) para desabilitar o processamento do Python para essa pasta. Esse arquivo de configuração funciona em conjunto com um dos arquivos de configuração FastCGI ou HttpPlatformHandler acima. Para saber mais, confira [Publicar no Serviço de Aplicativo do Azure](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **Depuração remota de web.config do Azure** | Um arquivo *web.config.debug* que permite a depuração remota via WebSockets, juntamente com o *Microsoft.PythonTools.WebRole.dll* e uma pasta *ptvsd* contendo os módulos que serão implementados no servidor para ativar a depuração remota. Você geralmente cria esse item no mesmo local como o arquivo *web.config*. Para obter mais informações, confira [Depurar o código do Python remotamente no Azure](debugging-remote-python-code-on-azure.md). Também confira a observação acima. |
-
-> [!Note]
-> Se você adicionar o modelo de depuração *web.config* ao projeto e pretender usar a depuração remota do Python, precisará publicar o site na configuração **Depuração**. Essa configuração é separada da configuração de solução ativa atual e sempre usa como padrão **Versão**. Para alterá-la, abra a guia **Configurações** e use a caixa de combinação **Configuração** no assistente de **Publicação**. (Confira a [documentação do Azure](https://azure.microsoft.com/develop/python/) para obter mais informações sobre como criar e implantar assemblies para os Aplicativos Web do Azure).
->
-> ![Alterando a configuração de publicação](media/template-web-publish-config.png)
+| **web.config do Azure (FastCGI)** | Um arquivo *web.config* que contém entradas para aplicativos que usam um objeto [WSGI](https://wsgi.readthedocs.io/en/latest/) para tratar das conexões de entrada. Normalmente, esse arquivo é implantado na raiz de um servidor Web que executa o IIS. Para saber mais, confira [Configurar um aplicativo para IIS](configure-web-apps-for-iis-windows.md). |
+| **web.config do Azure (HttpPlatformHandler)** | Um arquivo *web.config* que contém entradas para aplicativos que escutam conexões de entrada com um soquete. Normalmente, esse arquivo é implantado na raiz de um servidor Web que executa o IIS, como o Serviço de Aplicativo do Azure. Para saber mais, confira [Configurar um aplicativo para IIS](configure-web-apps-for-iis-windows.md). |
+| **Arquivos estáticos web.config do Azure** | Um arquivo *web.config* normalmente adicionado a uma pasta *static* (ou outra pasta que contém itens estáticos) para desabilitar o processamento do Python para essa pasta. Esse arquivo de configuração funciona em conjunto com um dos arquivos de configuração FastCGI ou HttpPlatformHandler acima. Para saber mais, confira [Configurar um aplicativo para IIS](configure-web-apps-for-iis-windows.md). |
+| **Depuração remota de web.config do Azure** | Preterido (foi usado para depuração remota no Serviço de Aplicativo do Azure para Windows, que não é mais suportado). |
 
 ## <a name="see-also"></a>Consulte também
 

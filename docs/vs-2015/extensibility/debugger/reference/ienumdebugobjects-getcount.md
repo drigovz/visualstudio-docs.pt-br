@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugObjects::GetCount | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9cbc5db4-03ae-479f-a664-13cad66ad210
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a69211e333371bd3b4672cbd34374552e4966d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf82cad8584f8ba8dcdae3ffead8254dde2f8020
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466276"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742591"
 ---
 # <a name="ienumdebugobjectsgetcount"></a>IEnumDebugObjects::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugObjects::GetCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugobjects-getcount).  
-  
 Esse método retorna o número de elementos na enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  

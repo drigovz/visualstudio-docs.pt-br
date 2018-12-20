@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugFrameInfo2::Next | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 64a64eeb-5dea-4119-8a22-03771015d1e5
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 98aad0c258b6d7837f0e91d45d05f7727a391441
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 450133fc226cbdbeab981879b9aaeafdc8c522e5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464176"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751648"
 ---
 # <a name="ienumdebugframeinfo2next"></a>IEnumDebugFrameInfo2::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IEnumDebugFrameInfo2::Next](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugframeinfo2-next).  
-  
 Retorna o próximo conjunto de elementos da enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  

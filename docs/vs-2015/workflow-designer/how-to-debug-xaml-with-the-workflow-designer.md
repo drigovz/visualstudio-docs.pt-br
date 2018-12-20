@@ -1,7 +1,7 @@
 ---
 title: 'Como: depurar XAML com o Designer de fluxo de trabalho | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 07208a51674bffc2fe2a3ad5750daee0e7560fcc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ac99d5bcacb937db27867a1b02b2076fdce66c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462195"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176031"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Como: Depuração XAML com designers de Fluxo de Trabalho
 Fluxos de trabalho são definidos em termos de XAML. A representação de interface de usuário de fluxo de trabalho é construída sobre a árvore XAML que define o fluxo de trabalho. A experiência de depuração é semelhante a depuração fluxos de trabalho em [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Por exemplo, ao depurar XAML, os locais, a observação, e o trabalho das janelas de segmentos da mesma maneira que faz sobre depuração de [!INCLUDE[wfd2](../includes/wfd2-md.md)] . Além disso, a exibição da pilha de chamadas durante a depuração XAML é uma exibição hierárquica linha com base de fluxo de execução do fluxo de trabalho.  

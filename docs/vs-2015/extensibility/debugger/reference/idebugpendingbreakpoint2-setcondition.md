@@ -1,7 +1,7 @@
 ---
 title: IDebugPendingBreakpoint2::SetCondition | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,30 +18,28 @@ ms.assetid: 0534224f-654f-4862-bc4d-a9a81a5f8899
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 483b0a4101d173c6f5e6aa55a525276d3e8c1732
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ca5f5c6a422d5a445ff2206dae4c799c7787b3f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466694"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780406"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPendingBreakpoint2::SetCondition](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition).  
-  
 Define ou altera a condição associada com o ponto de interrupção pendente.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT SetCondition(   
+HRESULT SetCondition(   
    BP_CONDITION bpCondition  
 );  
 ```  
   
 ```csharp  
-int SetCondition(   
+int SetCondition(   
    BP_CONDITION bpCondition  
 );  
 ```  

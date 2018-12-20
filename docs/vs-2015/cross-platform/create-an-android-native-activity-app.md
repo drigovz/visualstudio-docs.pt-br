@@ -1,7 +1,7 @@
 ---
 title: Criar um aplicativo de Atividade Nativa do Android | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ dev_langs:
 - C++
 ms.assetid: 884014b1-5208-45ec-b0da-ad0070d2c24d
 caps.latest.revision: 6
-author: BrianPeek
-ms.author: brpeek
+author: corob-msft
+ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d3317251b124c42f67edfcfae922bd2744dbe375
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6bc8d96c6207889f07ec6bf1257be3d620855fc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47461887"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731422"
 ---
 # <a name="create-an-android-native-activity-app"></a>Criar um aplicativo de Atividade Nativa do Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criar um aplicativo de atividade nativa Android](https://docs.microsoft.com/visualstudio/cross-platform/create-an-android-native-activity-app).  
-  
   
 Ao instalar o Visual C++ para a opção de Desenvolvimento Móvel Multiplataforma, o Visual Studio 2015 pode ser usado para criar aplicativos de Atividade Nativa do Android totalmente funcionais. O NDK (Kit de Desenvolvimento Nativo) do Android é um conjunto de ferramentas que permite implementar a maior parte de seu aplicativo Android usando um código C/C++ puro. Algum código JNI do Java atua como uma cola para permitir que o código C/C++ interaja com o Android. O NDK do Android introduziu a capacidade de criar aplicativos de Atividade Nativa com a API do Android Nível 9. O código de Atividade Nativa é popular para a criação de aplicativos de jogos e de uso intensivo de elementos gráficos que usam o Unreal Engine ou o OpenGL. Este tópico descreverá a criação de um aplicativo de Atividade Nativa simples que usa o OpenGL. Os tópicos adicionais descrevem o ciclo de vida do desenvolvedor referente à edição, build, depuração e implantação do código de Atividade Nativa.  
   
@@ -43,19 +41,19 @@ Ao instalar o Visual C++ para a opção de Desenvolvimento Móvel Multiplataform
   
 #### <a name="to-create-a-new-project"></a>Para criar um novo projeto  
   
-1.  Abra o Visual Studio. Na barra de menus, escolha **Arquivo**, **Novo**, **Projeto**.  
+1. Abra o Visual Studio. Na barra de menus, escolha **Arquivo**, **Novo**, **Projeto**.  
   
-2.  Na caixa de diálogo **Novo Projeto**, em **Modelos**, escolha **Visual C++**, **Multiplataforma** e, em seguida, escolha o modelo **Aplicativo de Atividade Nativa (Android)**.  
+2. Na caixa de diálogo **Novo Projeto**, em **Modelos**, escolha **Visual C++**, **Multiplataforma** e, em seguida, escolha o modelo **Aplicativo de Atividade Nativa (Android)**.  
   
-3.  Nomeie o aplicativo como `MyAndroidApp` e, em seguida, escolha **OK**.  
+3. Nomeie o aplicativo como `MyAndroidApp` e, em seguida, escolha **OK**.  
   
-     ![Criar um projeto de Atividade Nativa](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
+    ![Criar um projeto de Atividade Nativa](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
   
-     O Visual Studio cria a nova solução e abre o Gerenciador de Soluções.  
+    O Visual Studio cria a nova solução e abre o Gerenciador de Soluções.  
   
-     ![Projeto de Atividade Nativa no Gerenciador de Soluções](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
+    ![Projeto de Atividade Nativa no Gerenciador de Soluções](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
   
- A nova solução de aplicativo de Atividade Nativa do Android inclui dois projetos:  
+   A nova solução de aplicativo de Atividade Nativa do Android inclui dois projetos:  
   
 -   **MyAndroidApp.NativeActivity** contém as referências e o código de cola para que seu aplicativo seja executado como uma Atividade Nativa no Android. A implementação dos pontos de entrada do código de cola está em main.cpp. Os cabeçalhos pré-compilados estão em pch.h. Esse projeto de aplicativo de Atividade Nativa é compilado em um arquivo .so de biblioteca compartilhada que é obtido pelo projeto de Empacotamento.  
   

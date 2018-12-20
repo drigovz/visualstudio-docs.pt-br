@@ -1,7 +1,7 @@
 ---
 title: Análise de código para avisos do C / C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,21 +21,19 @@ helpviewer_keywords:
 - warnings, C/C++ analysis
 ms.assetid: 28f3fda6-35e8-485b-9755-1991aaccec3f
 caps.latest.revision: 43
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0b5a3a50a8cc70910c884248fad6c30f875c6d06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e0e2f38bcde48a34ecb8f438a373b3bdfdb13dfa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467994"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766712"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Análise de código para avisos do C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [análise de código para avisos do C/C++](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-c-cpp-warnings).  
-  
 Esta seção lista avisos de Análise de Código do C/C++. Para obter informações sobre análise de código, consulte [/Analyze (análise de código)](http://msdn.microsoft.com/library/81da536a-e030-4bd4-be18-383927597d08) e [início rápido: análise de código para C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).  
   
 ## <a name="see-also"></a>Consulte também  

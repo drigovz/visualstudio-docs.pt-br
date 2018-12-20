@@ -1,7 +1,7 @@
 ---
 title: 'Como: se registrar para eventos de Buffer de texto com a API herdada | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5fc00ced-882c-4b48-b46c-1fa5a2469f94
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b98c6a084e8d77b9c85d56da95ec9abdcd469192
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e895f2d67c23454ad3f7481e558f6dde542867b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465728"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782772"
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Como: se registrar para eventos de Buffer de texto com a API herdada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: se registrar para eventos de Buffer de texto com a API herdada](https://docs.microsoft.com/visualstudio/extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api).  
-  
 Se você estiver acessando o buffer de texto usando a API herdada, você deve se registrar para eventos de buffer de texto, conforme mostrado no procedimento a seguir.  
   
 ### <a name="to-advise-text-buffer-events"></a>Para eventos de buffer de texto de aviso  

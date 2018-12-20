@@ -1,7 +1,7 @@
 ---
 title: Aplicativos de execução Windows Store em um computador remoto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ dev_langs:
 - C++
 ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
 caps.latest.revision: 47
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 289c7a4153a5a3485d80cc9c0739a37e4e9d6882
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a3be715f58d3ed80122dfdd3aaf879c7db8aebd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465424"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784540"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Executar aplicativos da Windows Store em um computador remoto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [aplicativos de execução Windows Store em um computador remoto](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).  
-  
 Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_content")  
   
  O aplicativo Ferramentas Remotas do Visual Studio permite executar, depurar, analisar e testar um aplicativo da Windows Store sendo executado em um dispositivo de um segundo computador que esteja executando o Visual Studio. A execução em um dispositivo remoto pode ser especialmente eficaz quando o computador do Visual Studio não oferece suporte à funcionalidade específica dos aplicativos da Windows Store, como toque, localização geográfica e orientação física. Este tópico descreve os procedimentos para configurar e iniciar uma sessão remota.  
@@ -52,11 +50,11 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
   
  [Configurando o projeto do Visual Studio para depuração remota](#BKMK_ConnectVS)  
   
--   [Escolhendo o dispositivo remoto para projetos c# e Visual Basic](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
+- [Escolhendo o dispositivo remoto para projetos c# e Visual Basic](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
   
--   [Escolhendo o dispositivo remoto para projetos em JavaScript e C++](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
+- [Escolhendo o dispositivo remoto para projetos em JavaScript e C++](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
   
- [Execução de uma sessão de depuração remota](#BKMK_RunRemoteDebug)  
+  [Execução de uma sessão de depuração remota](#BKMK_RunRemoteDebug)  
   
 ##  <a name="BKMK_Prerequisites"></a> Pré-requisitos  
  Para depurar em um dispositivo remoto:  
@@ -125,20 +123,20 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
 ##  <a name="BKMK_ConfigureRemoteDebugger"></a> Configurando o depurador remoto  
  São usadas duas ferramentas para modificar a configuração do depurador remoto.  
   
-1.  Sobre o **ferramentas** menu da **Visual Studio Remote Debugging Monitor**:  
+1. Sobre o **ferramentas** menu da **Visual Studio Remote Debugging Monitor**:  
   
-    1.  Escolher **opções** para alterar o número da porta, o modo de autenticação ou o intervalo de tempo limite do depurador remoto.  
+   1.  Escolher **opções** para alterar o número da porta, o modo de autenticação ou o intervalo de tempo limite do depurador remoto.  
   
-    2.  Escolher **permissões** para adicionar ou remover usuários que têm permissão para depuração remota.  
+   2.  Escolher **permissões** para adicionar ou remover usuários que têm permissão para depuração remota.  
   
-        > [!NOTE]
-        >  As permissões devem ser concedidas a cada conta de usuário que depurar remotamente.  
+       > [!NOTE]
+       >  As permissões devem ser concedidas a cada conta de usuário que depurar remotamente.  
   
- Você usa o **Assistente de configuração do depurador remoto** para definir opções avançadas para o depurador remoto. Para abrir o assistente, escolha **Assistente de configuração do depurador remoto** na tela inicial.  
+   Você usa o **Assistente de configuração do depurador remoto** para definir opções avançadas para o depurador remoto. Para abrir o assistente, escolha **Assistente de configuração do depurador remoto** na tela inicial.  
   
-1.  Sobre o **configurar o depurador remoto do Visual Studio** página, que você pode optar por executar o depurador remoto como um serviço. Na maioria dos casos, não é obrigatória a execução como um serviço.  
+2. Sobre o **configurar o depurador remoto do Visual Studio** página, que você pode optar por executar o depurador remoto como um serviço. Na maioria dos casos, não é obrigatória a execução como um serviço.  
   
-2.  Sobre o **configurar o Firewall do Windows para depuração** página, você pode adicionar ou remover o tipo de rede que você deseja que o depurador remoto para se conectar ao. Somente as redes às quais o dispositivo está conectado no momento estão habilitadas. Você deve escolher pelo menos uma rede.  
+3. Sobre o **configurar o Firewall do Windows para depuração** página, você pode adicionar ou remover o tipo de rede que você deseja que o depurador remoto para se conectar ao. Somente as redes às quais o dispositivo está conectado no momento estão habilitadas. Você deve escolher pelo menos uma rede.  
   
 ##  <a name="BKMK_ConnectVS"></a> Configurando o projeto do Visual Studio para depuração remota  
  Você especifica o dispositivo remoto ao qual deseja se conectar nas propriedades do projeto. O procedimento varia dependendo da linguagem de programação. Você pode digitar o nome da rede do dispositivo remoto ou pode selecioná-lo na caixa de diálogo Selecionar Conexão de Depurador Remoto.  

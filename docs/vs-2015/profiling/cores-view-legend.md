@@ -1,7 +1,7 @@
 ---
 title: Legenda da exibição de núcleos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - Concurrency Visualizer, Cores View Legend
 ms.assetid: e160384c-fcfe-49b3-86b7-229adb736c51
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6416b9bf96b3a23fce72df56190df9dfd5847531
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2c00b6ccf56eb9e171fbaf9afdaea1828b5a1325
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473782"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783097"
 ---
 # <a name="cores-view-legend"></a>Legenda da exibição de núcleos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [legenda de exibição de núcleos](https://docs.microsoft.com/visualstudio/profiling/cores-view-legend).  
-  
 A legenda da Exibição de Núcleos identifica cada thread pela cor e pelo nome. Ela inclui colunas que mostram contagens de alternâncias de contexto de núcleo cruzado, o total de alternâncias de contexto e o percentual de alternâncias de contexto que cruzam núcleos. As linhas na legenda são classificadas pelo número de alternâncias de contexto de núcleo cruzado, em ordem decrescente.  
   
  É possível selecionar linhas na legenda para filtrar os threads exibidos na linha do tempo. Apenas os threads selecionados são mostrados na linha do tempo. Se nenhuma linha estiver selecionada, todas as linhas serão mostradas na linha do tempo.  

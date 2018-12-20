@@ -1,7 +1,7 @@
 ---
 title: PENDING_BP_STATE_INFO | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: 4d73ceff-43f9-4e95-8dba-88e1fab2def3
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 77151825f1e241110a0af1fece80f34ea39fd331
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52f38b20aea202399c45951b78e01af94b21b5f9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472746"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750544"
 ---
 # <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [PENDING_BP_STATE_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/pending-bp-state-info).  
-  
 Contém informações sobre o estado de um ponto de interrupção que está pronto para associar a um local de código.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-typedef struct _tagPENDING_BP_STATE_INFO {   
+typedef struct _tagPENDING_BP_STATE_INFO {   
    PENDING_BP_STATE       state;  
    PENDING_BP_STATE_FLAGS flags;  
 } PENDING_BP_STATE_INFO;  
 ```  
   
 ```csharp  
-public struct PENDING_BP_STATE_INFO {   
+public struct PENDING_BP_STATE_INFO {   
    public uint state;  
    public uint flags;  
 };  

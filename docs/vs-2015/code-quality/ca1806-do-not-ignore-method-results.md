@@ -1,7 +1,7 @@
 ---
 title: 'CA1806: Não ignorar resultados do método | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c57d6622577fd0edd00354a6f2e211c973f1abb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e6b7bdd99500f0be29c8101ef9993b565914300
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474311"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830581"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: não ignore resultados do método
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "47474311"
 ## <a name="cause"></a>Causa  
  Há várias razões possíveis para esse aviso:  
   
--   Um novo objeto é criado, mas nunca usado.  
+- Um novo objeto é criado, mas nunca usado.  
   
--   Um método que cria e retorna uma nova cadeia de caracteres é chamado e a nova cadeia de caracteres nunca é usada.  
+- Um método que cria e retorna uma nova cadeia de caracteres é chamado e a nova cadeia de caracteres nunca é usada.  
   
--   Um método COM ou P/Invoke que retorna um código de erro ou HRESULT que nunca é usado. Descrição da Regra  
+- Um método COM ou P/Invoke que retorna um código de erro ou HRESULT que nunca é usado. Descrição da Regra  
   
- Criação do objeto desnecessário e a coleta de lixo associado do objeto não utilizado degradar o desempenho.  
+  Criação do objeto desnecessário e a coleta de lixo associado do objeto não utilizado degradar o desempenho.  
   
- Cadeias de caracteres são imutáveis e métodos, como string. ToUpper retorna uma nova instância de uma cadeia de caracteres em vez de modificar a instância da cadeia de caracteres no método de chamada.  
+  Cadeias de caracteres são imutáveis e métodos, como string. ToUpper retorna uma nova instância de uma cadeia de caracteres em vez de modificar a instância da cadeia de caracteres no método de chamada.  
   
- Ignorar o código de erro ou HRESULT pode levar a um comportamento inesperado em condições de erro ou a condições de poucos recursos.  
+  Ignorar o código de erro ou HRESULT pode levar a um comportamento inesperado em condições de erro ou a condições de poucos recursos.  
   
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
  Se o método um cria uma nova instância do objeto B que nunca é usado, passe a instância como um argumento para outro método ou atribua a instância a uma variável. Se a criação do objeto é desnecessária, remova o proprietário.- ou -  

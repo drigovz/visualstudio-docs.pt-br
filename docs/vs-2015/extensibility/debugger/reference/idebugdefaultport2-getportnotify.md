@@ -1,7 +1,7 @@
 ---
 title: IDebugDefaultPort2::GetPortNotify | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: 3ae715ee-9886-4694-a52b-59bb3b27467a
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0a0cd508f0eab1d4ffc0feea32de128c411bef6c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8684b04b401d9b0a6f068a6425e0e82a4e348f2e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465916"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800543"
 ---
 # <a name="idebugdefaultport2getportnotify"></a>IDebugDefaultPort2::GetPortNotify
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugDefaultPort2::GetPortNotify](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdefaultport2-getportnotify).  
-  
 Esse método obtém uma [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) interface para essa porta.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp  
-HRESULT GetPortNotify(  
-   IDebugPortNotify2** ppPortNotify  
+HRESULT GetPortNotify(  
+   IDebugPortNotify2** ppPortNotify  
 );  
 ```  
   
 ```csharp  
-int GetPortNotify(  
-   out IDebugPortNotify2 ppPortNotify  
+int GetPortNotify(  
+   out IDebugPortNotify2 ppPortNotify  
 );  
 ```  
   

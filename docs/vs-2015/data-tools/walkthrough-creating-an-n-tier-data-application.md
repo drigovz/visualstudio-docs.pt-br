@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Criando um aplicativo de dados de N camadas | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cac58d29870cd1ec7e4a6477c5ac3dba4e48cc1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37876502a464e263ebd6803216b29bd62b65af5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467322"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890173"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Instruções passo a passo: criando um aplicativo de dados de N camadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Criando um aplicativo de dados de N camadas](https://docs.microsoft.com/visualstudio/data-tools/walkthrough-creating-an-n-tier-data-application).  
-  
   
 N-camadas * aplicativos de dados são aplicativos que acessam dados e são separados em várias camadas de lógicas, ou *camadas*. A separação de componentes de aplicativos em camadas discretas aumenta a capacidade de manutenção e a escalabilidade do aplicativo. Isso é feito pela adoção com mais facilidade de novas tecnologias que podem ser aplicadas a uma única camada, sem precisar reprojetar toda a solução. A arquitetura de N camadas inclui uma camada de apresentação, uma camada intermediária e uma camada de dados. A camada intermediária geralmente inclui uma camada de acesso a dados, uma camada lógica de negócios e componentes compartilhados, tais como autenticação e validação. A camada de dados inclui um banco de dados relacional. Os aplicativos de N camadas geralmente armazenam informações confidenciais na camada de acesso a dados da camada intermediária para manter o isolamento de usuários finais que acessam a camada de apresentação. Para obter mais informações, consulte [visão geral dos aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md).  
   
@@ -41,25 +39,25 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
   
  Durante este passo a passo, você executará as seguintes etapas:  
   
--   Criar uma nova solução de N camadas que conterá vários projetos.  
+- Criar uma nova solução de N camadas que conterá vários projetos.  
   
--   Adicionar dois projetos de bibliotecas de classes na solução de N camadas.  
+- Adicionar dois projetos de bibliotecas de classes na solução de N camadas.  
   
--   Criar um conjunto de dados tipado usando o **Data Source Configuration Wizard**.  
+- Criar um conjunto de dados tipado usando o **Data Source Configuration Wizard**.  
   
--   Separar gerado [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e o código do conjunto de dados em projetos discretos.  
+- Separar gerado [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e o código do conjunto de dados em projetos discretos.  
   
--   Criar um serviço do Windows Communication Foundation (WCF) a ser chamado na camada de acesso a dados.  
+- Criar um serviço do Windows Communication Foundation (WCF) a ser chamado na camada de acesso a dados.  
   
--   Criar funções no serviço para recuperar dados da camada de acesso a dados.  
+- Criar funções no serviço para recuperar dados da camada de acesso a dados.  
   
--   Criar um aplicativo do Windows Forms para servir como a camada de apresentação.  
+- Criar um aplicativo do Windows Forms para servir como a camada de apresentação.  
   
--   Criar controles do Windows Forms associados à fonte de dados.  
+- Criar controles do Windows Forms associados à fonte de dados.  
   
--   Gravar código para preencher as tabelas de dados.  
+- Gravar código para preencher as tabelas de dados.  
   
- ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") para uma versão em vídeo deste tópico, consulte [vídeo como: criar um aplicativo de dados de N camadas](http://go.microsoft.com/fwlink/?LinkId=115188).  
+  ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") para uma versão em vídeo deste tópico, consulte [vídeo como: criar um aplicativo de dados de N camadas](http://go.microsoft.com/fwlink/?LinkId=115188).  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para concluir esta explicação passo a passo, será necessário:  
@@ -146,17 +144,17 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
   
 #### <a name="to-separate-the-tableadapters-from-the-dataset"></a>Para separar os TableAdapters do Conjunto de Dados  
   
-1.  Clique duas vezes em **NorthwindDataSet** na **Gerenciador de soluções** para abrir o conjunto de dados do **Dataset Designer**.  
+1. Clique duas vezes em **NorthwindDataSet** na **Gerenciador de soluções** para abrir o conjunto de dados do **Dataset Designer**.  
   
-2.  Clique em uma área vazia no designer.  
+2. Clique em uma área vazia no designer.  
   
-3.  Localize o **projeto DataSet** nó na **propriedades** janela.  
+3. Localize o **projeto DataSet** nó na **propriedades** janela.  
   
-4.  No **projeto DataSet** , clique em **DataEntityTier**.  
+4. No **projeto DataSet** , clique em **DataEntityTier**.  
   
-5.  No menu **Compilar**, clique em **Compilar Solução**.  
+5. No menu **Compilar**, clique em **Compilar Solução**.  
   
- O conjunto de dados e os TableAdapters são separados em dois projetos de biblioteca de classes. O projeto que continha originalmente todo o conjunto de dados (DataAccessTier) contém agora somente os TableAdapters. O projeto atribuído a **projeto DataSet** propriedade (DataEntityTier) contém o conjunto de dados tipado: NorthwindDataSet (ou NorthwindDataSet.Dataset.Designer.cs).  
+   O conjunto de dados e os TableAdapters são separados em dois projetos de biblioteca de classes. O projeto que continha originalmente todo o conjunto de dados (DataAccessTier) contém agora somente os TableAdapters. O projeto atribuído a **projeto DataSet** propriedade (DataEntityTier) contém o conjunto de dados tipado: NorthwindDataSet (ou NorthwindDataSet.Dataset.Designer.cs).  
   
 > [!NOTE]
 >  Quando você separa os conjuntos de dados e TableAdapters (Configurando o **projeto DataSet** propriedade), classes parciais do conjunto de dados existentes no projeto não serão movidas automaticamente. As classes parciais do conjunto de dados existentes devem ser movidas manualmente para o projeto do conjunto de dados.  

@@ -1,7 +1,7 @@
 ---
 title: Valores de métricas de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - measure code quality
 ms.assetid: bc38831e-2083-4ea4-8527-ee41499a342f
 caps.latest.revision: 22
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7b14dd65be49fdc6f7da8de6c605683dd7089410
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 22c42cb215999fcc4415f4d7541b8f4b95ac2d29
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472694"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782954"
 ---
 # <a name="code-metrics-values"></a>Valores de métricas do código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [valores de métricas de código](https://docs.microsoft.com/visualstudio/code-quality/code-metrics-values).  
-  
 As métricas de código são um conjunto de medidas de software que fornecem aos desenvolvedores uma visão melhor do código que estão desenvolvendo. Ao tirar proveito das métricas de código, os desenvolvedores poderão entender quais tipos de e/ou os métodos devem ser reformulados ou mais minuciosamente. As equipes de desenvolvimento podem identificar possíveis riscos, entender o estado atual de um projeto e acompanhar o progresso durante o desenvolvimento de software.  
   
 ## <a name="software-measurements"></a>Medições de software  

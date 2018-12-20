@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 545bcaa46226b315fb338e352968c5b74dd0232f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495785"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645140"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guia de produtividade em C# do Visual Studio 2017
 
@@ -46,7 +46,7 @@ Estes são os atalhos populares do Visual Studio:
 | **Ctrl**+**.** (também **Alt**+**Enter** no Perfil C#) | Ações e Refatorações Rápidas | Veja quais correções de código, ações de geração de código, refatorações ou outras ações rápidas estão disponíveis na posição do cursor ou na seleção do código |
 | **Ctrl**+**D** | Duplicar linha | Duplica a linha de código onde o cursor está posicionado (disponível no **Visual Studio 2017 versão 15.6** e posterior) |
 | **Shift**+**Alt**+**+**/**-** | Expandir/Reduzir seleção | Expande ou reduz a seleção atual no editor (disponível no **Visual Studio 2017 versão 15.5** e posteriores) |
-| **Ctrl** + **Alt** + **.** | Inserir próximo sinal de interpolação correspondente | Adiciona uma seleção e um sinal de interpolação no próximo local que corresponde à seleção atual (disponível no **Visual Studio 2017 versão 15.8** e posterior) |
+| **Shift** + **Alt** + **.** | Inserir próximo sinal de interpolação correspondente | Adiciona uma seleção e um sinal de interpolação no próximo local que corresponde à seleção atual (disponível no **Visual Studio 2017 versão 15.8** e posterior) |
 | **Ctrl**+**Q** | Início Rápido | Pesquise todas as configurações do Visual Studio |
 | **F5** | Iniciar a depuração | Inicie a depuração do aplicativo |
 | **Ctrl**+**F5** | Executar sem Depurar | Execute o aplicativo localmente sem depuração |
@@ -57,7 +57,7 @@ Estes são os atalhos populares do Visual Studio:
 > [!NOTE]
 > Algumas extensões desassociam as associações de teclas padrão do Visual Studio. Para usar os comandos a acima, restaure as associações de teclas para os padrões do Visual Studio acessando **Ferramentas** > **Importar e Exportar Configurações** > **Redefinir todas as configurações** ou **Ferramentas** > **Opções** > **Teclado** > **Redefinir**.
 
-Saiba mais atalhos de teclado e comandos no Visual Studio na [nossa documentação](..\ide\tips-and-tricks-for-visual-studio.md).
+Saiba mais atalhos de teclado e comandos no Visual Studio na [nossa documentação](../ide/tips-and-tricks-for-visual-studio.md).
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Preciso de uma maneira para navegar rapidamente nos arquivos ou tipos
 
@@ -161,7 +161,7 @@ Aqui está uma lista dos recursos do editor e de produtividade para escrever có
 | Habilitar a navegação para origens descompiladas | Habilite Ir Para a Definição em tipos/membros de fontes externas e usar o descompilador ILSpy para mostrar os corpos de método | **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Avançado** > **Habilitar navegação para fontes descompiladas** |
 | Modo de conclusão/sugestão | Altera o comportamento de conclusão no IntelliSense – os desenvolvedores com experiência em IntelliJ tendem a alterar aqui a configuração padrão | **Menu** > **Editar** > **IntelliSense** > **Ativar/Desativar Modo de Preenchimento** |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Exibe informações de referência de código e o histórico de alterações no editor | **Ferramentas** > **Opções** > **Editor de Texto** > **Todas as Linguagens** > **CodeLens** |
-| [Snippets de código](../ide/visual-csharp-code-snippets.md) | Ajudar a remover um texto clichê |  Digite um nome de snippet e pressione **Tab** duas vezes. |
+| [Snippets de código](../ide/visual-csharp-code-snippets.md) | Ajudar a remover um texto clichê | Digite um nome de snippet e pressione **Tab** duas vezes. |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>Está faltando um recurso que melhora a sua produtividade ou está enfrentando um baixo desempenho?
 

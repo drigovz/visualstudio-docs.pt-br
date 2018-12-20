@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1b886346a43e75d38a8ea8b6ed7a8b8d7391293
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9085861418f11ed63f76a6493a6927c63530759b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152455"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918786"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 Contém um conjunto de tarefas para o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] executar em sequência.  
@@ -73,18 +73,18 @@ Contém um conjunto de tarefas para o [!INCLUDE[vstecmsbuild](../extensibility/i
 
 ### <a name="child-elements"></a>Elementos filho  
 
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|[Tarefa](../msbuild/task-element-msbuild.md)|Cria e executa uma instância de uma tarefa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Pode haver zero ou mais tarefas em um destino.|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Contém um conjunto de elementos `Property` definidos pelo usuário. A partir do .NET Framework 3.5, um elemento `Target` pode conter elementos `PropertyGroup`.|  
-|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Contém um conjunto de elementos `Item` definidos pelo usuário. A partir do .NET Framework 3.5, um elemento `Target` pode conter elementos `ItemGroup`. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).|  
-|[OnError](../msbuild/onerror-element-msbuild.md)|Faz com que um ou mais destinos sejam executados se o atributo `ContinueOnError` é ErrorAndStop (ou `false`) para uma tarefa com falha. Pode haver zero ou mais elementos `OnError` em um destino. Se `OnError` elementos estiverem presentes, eles deverão ser os últimos elementos do elemento `Target`.<br /><br /> Para saber mais sobre o atributo `ContinueOnError`, confira [Elemento Task (MSBuild)](../msbuild/task-element-msbuild.md).|  
+| Elemento | Descrição |
+| - | - |
+| [Tarefa](../msbuild/task-element-msbuild.md) | Cria e executa uma instância de uma tarefa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Pode haver zero ou mais tarefas em um destino. |
+| [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Contém um conjunto de elementos `Property` definidos pelo usuário. A partir do .NET Framework 3.5, um elemento `Target` pode conter elementos `PropertyGroup`. |
+| [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Contém um conjunto de elementos `Item` definidos pelo usuário. A partir do .NET Framework 3.5, um elemento `Target` pode conter elementos `ItemGroup`. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md). |
+| [OnError](../msbuild/onerror-element-msbuild.md) | Faz com que um ou mais destinos sejam executados se o atributo `ContinueOnError` é ErrorAndStop (ou `false`) para uma tarefa com falha. Pode haver zero ou mais elementos `OnError` em um destino. Se `OnError` elementos estiverem presentes, eles deverão ser os últimos elementos do elemento `Target`.<br /><br /> Para saber mais sobre o atributo `ContinueOnError`, confira [Elemento Task (MSBuild)](../msbuild/task-element-msbuild.md). |
 
 ### <a name="parent-elements"></a>Elementos pai  
 
-|Elemento|Descrição|  
-|-------------|-----------------|  
-|[Projeto](../msbuild/project-element-msbuild.md)|Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+| Elemento | Descrição |
+| - | - |
+| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 
 ## <a name="remarks"></a>Comentários  
  O primeiro destino a ser executado é especificado em tempo de execução. Os destinos podem ter dependências em outros destinos. Por exemplo, um destino de implantação depende de um destino de compilação. O mecanismo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] executa dependências na ordem em que aparecem no atributo `DependsOnTargets`, da esquerda para a direita. Para obter mais informações, consulte [Destinos](../msbuild/msbuild-targets.md).  

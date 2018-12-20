@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::FunctionHasLineInfo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: e1b508f1-6521-492f-b110-ab957744a037
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b760f9f2f80fefb9c3dbbe092cf2da9ac565ba61
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e461aa9ca5b15a1fff1e62ac557dbcd2e63ad880
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472939"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765861"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugComPlusSymbolProvider2::FunctionHasLineInfo](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcomplussymbolprovider2-functionhaslineinfo).  
-  
 Determina se o método especificado tem informações de linha.  
   
 ## <a name="syntax"></a>Sintaxe  

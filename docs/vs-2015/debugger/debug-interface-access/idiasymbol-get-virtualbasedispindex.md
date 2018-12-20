@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_virtualbasedispindex | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaSymbol::get_virtualBaseDispIndex method
 ms.assetid: 5561a3cb-2c82-41cf-9217-3ee2b1e1d1d1
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ec51122f1012e9f7e38a16290d9bed7678b349b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d40df07a22b1c8547924b8c4dc09031084a844c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466139"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726337"
 ---
 # <a name="idiasymbolgetvirtualbasedispindex"></a>IDiaSymbol::get_virtualBaseDispIndex
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_virtualbasedispindex](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-virtualbasedispindex).  
-  
 Recupera o índice do símbolo na tabela de deslocamento de base virtual.  
   
 ## <a name="syntax"></a>Sintaxe  

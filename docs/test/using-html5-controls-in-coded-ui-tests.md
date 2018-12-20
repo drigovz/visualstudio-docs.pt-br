@@ -1,5 +1,5 @@
 ---
-title: Usando controles HTML5 em testes de interface do usuário codificados no Visual Studio
+title: Usando controles HTML5 em testes de IU codificados
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 63c33b98244268a086e9db63e2b56e507471c4c3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382753"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896179"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usando controles HTML5 em testes de IU codificados
 
 Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluídos no Internet Explorer 9 e no Internet Explorer 10.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
  **Requisitos**
 
@@ -27,18 +29,17 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
 > [!WARNING]
 > Em versões anteriores do Internet Explorer 10, era possível executar testes de UI codificados em um nível de privilégio mais alto em comparação do processo do Internet Explorer. Ao executar testes de UI codificados no Internet Explorer 10, o teste de IU codificado e o processo do Internet Explorer devem ser o mesmo nível de privilégio. Isso ocorre devido a recursos mais seguros do AppContainer no Internet Explorer 10.
 
-
 > [!WARNING]
 > Se você criar um teste de IU codificado no Internet Explorer 10, talvez eles não sejam executados no Internet Explorer 9 ou no Internet Explorer 8. Isso ocorre porque o Internet Explorer 10 inclui controles HTML5, como Audio, Video, ProgressBar e Slider. Esses controles HTML5 não são reconhecidos pelo Internet Explorer 9 ou pelo Internet Explorer 8. Da mesma forma, seu teste de IU codificado usando o Internet Explorer 9 pode incluir alguns controles do HTML5 que também não serão reconhecidos pelo Internet Explorer 8.
 
-
 ## <a name="audio-control"></a>Controle de áudio
- **Controle de áudio:** ações no controle do HTML5 áudio são registradas e reproduzidas corretamente.
 
- ![Controle do HTML5 áudio](../test/media/codedui_html5_audio.png)
+**Controle de áudio:** ações no controle do HTML5 áudio são registradas e reproduzidas corretamente.
+
+![Controle do HTML5 áudio](../test/media/codedui_html5_audio.png)
 
 |Ação|Gravando|Código gerado|
-|------------|---------------|--------------------|
+|-|---------------|-|
 |**Reproduzir áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Play \<name> Audio from 00:00:00|HtmlAudio.Play(TimeSpan)|
 |**Busca em uma hora específica no áudio**|Seek \<name> Audio to 00:01:48|HtmlAudio.Seek(TimeSpan)|
 |**Pausar áudio**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Pause \<name> Audio at 00:01:53|HtmlAudio.Pause(TimeSpan)|
@@ -62,7 +63,7 @@ Confira [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioE
  ![Controle do HTML5 vídeo](../test/media/codedui_html5_video.png)
 
 |Ação|Gravando|Código gerado|
-|------------|---------------|--------------------|
+|-|---------------|-|
 |**Reproduzir vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Play \<name> Video  from 00:00:00|HtmlVideo.Play(TimeSpan)|
 |**Busca em uma hora específica no vídeo**|Seek \<name> Video to 00:01:48|HtmlVideo.Seek(TimeSpan)|
 |**Pausar vídeo**<br /><br /> Diretamente do controle ou do menu de contexto de controles.|Pause \<name> Video at 00:01:53|HtmlVideo.Pause(TimeSpan)|

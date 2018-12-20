@@ -1,7 +1,7 @@
 ---
 title: 'Como: depurar código injetado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,31 +28,29 @@ helpviewer_keywords:
 - disassembly code, debugging
 ms.assetid: a1b4104d-d49e-451f-a91e-e39ceaf35875
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f283a8e526e343030636c62453e5eb03825a8f93
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ff81b082c877098acec78e56ef9ef211cae8854
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466958"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778144"
 ---
 # <a name="how-to-debug-injected-code"></a>Como depurar código injetado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [como: depurar código injetado](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-injected-code).  
-  
 OBSERVAÇÃO]
 >  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Usar atributos pode simplificar muito a programação C++. Para obter mais informações, consulte [conceitos](http://msdn.microsoft.com/library/563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e). Alguns atributos são interpretados diretamente pelo compilador. Outros atributos injetam o código na origem do programa, que o compilador em seguida compila. Este código injetado facilita a programação reduzindo a quantidade de códigos que você precisa escrever. Entretanto, às vezes, um bug pode causar falha no aplicativo ao executar o código injetado. Quando isso acontece, você provavelmente desejará examinar o código injetado. O Visual Studio fornece duas maneiras de ver o código injetado:  
   
--   Você pode exibir o código injetado na **desmontagem** janela.  
+- Você pode exibir o código injetado na **desmontagem** janela.  
   
--   Usando o [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), você pode criar um arquivo de origem mesclada que contém o código original e injetado.  
+- Usando o [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), você pode criar um arquivo de origem mesclada que contém o código original e injetado.  
   
- O **desmontagem** janela mostra instruções de linguagem de assembly que correspondem ao código-fonte e o código injetado por atributos. Além disso, o **desmontagem** janela pode mostrar a anotação do código-fonte.  
+  O **desmontagem** janela mostra instruções de linguagem de assembly que correspondem ao código-fonte e o código injetado por atributos. Além disso, o **desmontagem** janela pode mostrar a anotação do código-fonte.  
   
 ### <a name="to-turn-on-source-annotation"></a>Para ativar a anotação de origem  
   

@@ -1,7 +1,7 @@
 ---
 title: Determinando qual Editor abre um arquivo em um projeto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b144b9d380e652857b08733e48d43b5b7609ffd6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 832fd838246c075087700494b09757184be687a7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473255"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741613"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Determinando qual editor abre um arquivo em um projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [determinar qual Editor abre um arquivo em um projeto](https://docs.microsoft.com/visualstudio/extensibility/internals/determining-which-editor-opens-a-file-in-a-project).  
-  
 Quando um usuário abre um arquivo em um projeto, o ambiente passa por um processo de sondagem, eventualmente, abrindo o editor apropriado ou o designer para esse arquivo. O procedimento inicial empregado pelo ambiente é o mesmo para os editores padrão e personalizadas. O ambiente usa uma variedade de critérios ao sondar qual editor a ser usado para abrir um arquivo e o VSPackage deve coordenar com o ambiente durante esse processo.  
   
  Por exemplo, quando um usuário seleciona o **aberto** comando da **arquivo** menu e, em seguida, escolhe `filename`. rtf (ou qualquer outro arquivo com uma extensão. rtf), as chamadas de ambiente a <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> implementação para cada projeto, eventualmente circulando através de todas as instâncias do projeto na solução. Projetos de retornam um conjunto de sinalizadores que identificam as declarações em um documento por prioridade. Usando a prioridade mais alta, o ambiente chama apropriado <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> método. Para obter mais informações sobre o processo de sondagem [adicionando projeto e modelos de Item de projeto](../../extensibility/internals/adding-project-and-project-item-templates.md).  

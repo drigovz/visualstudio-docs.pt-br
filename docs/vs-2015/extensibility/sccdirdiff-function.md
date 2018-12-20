@@ -1,7 +1,7 @@
 ---
 title: Função SccDirDiff | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 38730348fcafbbed9a3284f79e14fade2efb70ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7d2c45773a9d45c69cfed4f773bc5cdfcfa1c305
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467201"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791183"
 ---
 # <a name="sccdirdiff-function"></a>Função SccDirDiff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [função SccDirDiff](https://docs.microsoft.com/visualstudio/extensibility/sccdirdiff-function).  
-  
 Esta função exibe as diferenças entre o diretório local atual no disco do cliente e o projeto correspondente sob controle do código-fonte.  
   
 ## <a name="syntax"></a>Sintaxe  

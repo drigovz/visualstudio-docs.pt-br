@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6421df0109d68d2647cafff5713aecb297c3536d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 6a9b7540a42dbaf7b7079793158d33d761199720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38797793"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949897"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Passo a passo: Criar seu primeiro suplemento VSTO para Excel
   Este passo a passo introdutório mostra como criar um suplemento em nível de aplicativo do Microsoft Office Excel. Os recursos que você criar nesse tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual pastas de trabalho estão abertas.  
@@ -32,15 +32,15 @@ ms.locfileid: "38797793"
   
  Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Criando um projeto de suplemento do VSTO do Excel para o Excel.  
+- Criando um projeto de suplemento do VSTO do Excel para o Excel.  
   
--   Escrevendo código que usa o modelo de objeto do Excel para adicionar texto a uma pasta de trabalho quando ele é salvo.  
+- Escrevendo código que usa o modelo de objeto do Excel para adicionar texto a uma pasta de trabalho quando ele é salvo.  
   
--   Criando e executando o projeto para testá-lo.  
+- Criando e executando o projeto para testá-lo.  
   
--   Limpando o projeto concluído para que o suplemento do VSTO não seja executado automaticamente em seu computador de desenvolvimento.  
+- Limpando o projeto concluído para que o suplemento do VSTO não seja executado automaticamente em seu computador de desenvolvimento.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
@@ -78,18 +78,18 @@ ms.locfileid: "38797793"
   
 ### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>Para adicionar uma linha de texto para a pasta de trabalho salva  
   
-1.  No arquivo de código ThisAddIn, adicione o seguinte código para o `ThisAddIn` classe. O novo código define um manipulador de eventos para o <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> evento, que é gerado quando uma pasta de trabalho é salvo.  
+1. No arquivo de código ThisAddIn, adicione o seguinte código para o `ThisAddIn` classe. O novo código define um manipulador de eventos para o <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> evento, que é gerado quando uma pasta de trabalho é salvo.  
   
-     Quando o usuário salva uma pasta de trabalho, o manipulador de eventos adiciona o novo texto no início da planilha ativa.  
+    Quando o usuário salva uma pasta de trabalho, o manipulador de eventos adiciona o novo texto no início da planilha ativa.  
   
-     [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  Se você estiver usando c#, adicione o seguinte código necessário para o `ThisAddIn_Startup` manipulador de eventos. Esse código é usado para se conectar a `Application_WorkbookBeforeSave` manipulador de eventos com o <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> eventos.  
+2. Se você estiver usando c#, adicione o seguinte código necessário para o `ThisAddIn_Startup` manipulador de eventos. Esse código é usado para se conectar a `Application_WorkbookBeforeSave` manipulador de eventos com o <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> eventos.  
   
-     [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
   
- Para modificar a pasta de trabalho quando ele for salvo, os exemplos de código anterior usam os seguintes objetos:  
+   Para modificar a pasta de trabalho quando ele for salvo, os exemplos de código anterior usam os seguintes objetos:  
   
 -   O `Application` campo do `ThisAddIn` classe. O `Application` campo retorna um <xref:Microsoft.Office.Interop.Excel.Application> objeto que representa a instância atual do Excel.  
   

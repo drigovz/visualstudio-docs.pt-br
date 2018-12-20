@@ -1,7 +1,7 @@
 ---
 title: 'CA2201: Não acionar tipos de exceção reservados | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1971ccb2012794467a4fbdf661d55df61c934c90
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 9cc22f6bc8f7e863f0808c05b0b5cba37ba79fbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587223"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49810587"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: não acionar tipos de exceção reservados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA2201: não acionar tipos de exceção reservados](https://docs.microsoft.com/visualstudio/code-quality/ca2201-do-not-raise-reserved-exception-types).
 
 |||
 |-|-|
@@ -45,31 +43,31 @@ A versão mais recente deste tópico pode ser encontrada em [CA2201: não aciona
 ## <a name="rule-description"></a>Descrição da Regra
  Os seguintes tipos de exceção são muito gerais para fornecer informações suficientes para o usuário:
 
--   <xref:System.Exception?displayProperty=fullName>
+- <xref:System.Exception?displayProperty=fullName>
 
--   <xref:System.ApplicationException?displayProperty=fullName>
+- <xref:System.ApplicationException?displayProperty=fullName>
 
--   <xref:System.SystemException?displayProperty=fullName>
+- <xref:System.SystemException?displayProperty=fullName>
 
- Os seguintes tipos de exceção são reservados e devem ser gerados apenas pelo common language runtime:
+  Os seguintes tipos de exceção são reservados e devem ser gerados apenas pelo common language runtime:
 
--   <xref:System.ExecutionEngineException?displayProperty=fullName>
+- <xref:System.ExecutionEngineException?displayProperty=fullName>
 
--   <xref:System.IndexOutOfRangeException?displayProperty=fullName>
+- <xref:System.IndexOutOfRangeException?displayProperty=fullName>
 
--   <xref:System.NullReferenceException?displayProperty=fullName>
+- <xref:System.NullReferenceException?displayProperty=fullName>
 
--   <xref:System.OutOfMemoryException?displayProperty=fullName>
+- <xref:System.OutOfMemoryException?displayProperty=fullName>
 
- **Não lance exceções gerais**
+  **Não lance exceções gerais**
 
- Se você lança um tipo de exceção geral, como <xref:System.Exception> ou <xref:System.SystemException> em uma biblioteca ou estrutura, ele força os consumidores a capturar todas as exceções, incluindo exceções desconhecidas que eles não saibam como manipular.
+  Se você lança um tipo de exceção geral, como <xref:System.Exception> ou <xref:System.SystemException> em uma biblioteca ou estrutura, ele força os consumidores a capturar todas as exceções, incluindo exceções desconhecidas que eles não saibam como manipular.
 
- Em vez disso, lançar um tipo mais derivado que já existe no framework, ou criar seu próprio tipo que deriva de <xref:System.Exception>.
+  Em vez disso, lançar um tipo mais derivado que já existe no framework, ou criar seu próprio tipo que deriva de <xref:System.Exception>.
 
- **Lançar exceções específicas**
+  **Lançar exceções específicas**
 
- A tabela a seguir mostra os parâmetros e quais exceções a ser gerada quando você valida o parâmetro, incluindo o parâmetro de valor no acessador set de uma propriedade:
+  A tabela a seguir mostra os parâmetros e quais exceções a ser gerada quando você valida o parâmetro, incluindo o parâmetro de valor no acessador set de uma propriedade:
 
 |Descrição do parâmetro|Exceção|
 |---------------------------|---------------|

@@ -1,7 +1,7 @@
 ---
 title: Capturando informações de gráficos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Graphics_Diagnostics.Capture
 ms.assetid: 187ce86e-e340-4f6c-8937-8e8f1027a17f
 caps.latest.revision: 44
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c3adcfb4da1ddfba51c162fd541bda302bd2d86
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a099254acd572b3fcbb437f8933c81f3d6bd45b9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463395"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799828"
 ---
 # <a name="capturing-graphics-information"></a>Capturando informações de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [capturando informações de gráficos](https://docs.microsoft.com/visualstudio/debugger/graphics/capturing-graphics-information).  
-  
 Capture informações gráficas de seu aplicativo Direct3D para que você possa usar o analisador de gráficos do Visual Studio para diagnosticar problemas de desempenho e problemas de renderização.  
   
 ## <a name="capturing-graphics-information"></a>Capturando informações de gráficos  
@@ -37,30 +35,30 @@ Capture informações gráficas de seu aplicativo Direct3D para que você possa 
   
 #### <a name="to-run-your-app-under-graphics-diagnostics"></a>Para executar o aplicativo em Diagnóstico de Gráficos  
   
--   Na barra de menus, escolha **Debug**, **gráficos**, **iniciar diagnóstico**. (Teclado: pressione Alt+F5)  
+- Na barra de menus, escolha **Debug**, **gráficos**, **iniciar diagnóstico**. (Teclado: pressione Alt+F5)  
   
--   Sobre o **gráficos** barra de ferramentas, escolha o **iniciar diagnóstico** botão.  
+- Sobre o **gráficos** barra de ferramentas, escolha o **iniciar diagnóstico** botão.  
   
- Enquanto um aplicativo estiver sendo executado no Diagnóstico de Gráficos, determinados tipos de informação de gráfico são capturados o tempo todo; isso inclui a configuração do dispositivo, a criação da cadeia de troca, a criação de recursos e objetos gráficos, bem como outros eventos importantes que afetam mais de um quadro. Ao mesmo tempo, você pode capturar informações detalhadas sobre quadros específicos; isso inclui chamadas de desenho e distribuições de sombreadores de cálculo, juntamente com os recursos e objetos Direct3D que oferecem suporte a eles.  
+  Enquanto um aplicativo estiver sendo executado no Diagnóstico de Gráficos, determinados tipos de informação de gráfico são capturados o tempo todo; isso inclui a configuração do dispositivo, a criação da cadeia de troca, a criação de recursos e objetos gráficos, bem como outros eventos importantes que afetam mais de um quadro. Ao mesmo tempo, você pode capturar informações detalhadas sobre quadros específicos; isso inclui chamadas de desenho e distribuições de sombreadores de cálculo, juntamente com os recursos e objetos Direct3D que oferecem suporte a eles.  
   
 #### <a name="to-capture-a-frame"></a>Para capturar um quadro  
   
--   No Visual Studio, sobre o **gráficos** barra de ferramentas, escolha o **capturar quadro** botão![ícone do botão de captura de elementos gráficos](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
+- No Visual Studio, sobre o **gráficos** barra de ferramentas, escolha o **capturar quadro** botão![ícone do botão de captura de elementos gráficos](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
   
--   No teclado, pressione Print Screen.  
+- No teclado, pressione Print Screen.  
   
-    > [!NOTE]
-    >  Enquanto um aplicativo é executado sob **diagnóstico de gráficos**, a tecla Print Screen só pode ser usada para capturar um quadro de informações de gráficos; ela não executa sua função normal. Isso permanece em vigor até que você pare de capturar informações de gráficos, geralmente interrompendo a depuração ou saindo do aplicativo normalmente, mesmo que outro aplicativo esteja no foco.  
+  > [!NOTE]
+  >  Enquanto um aplicativo é executado sob **diagnóstico de gráficos**, a tecla Print Screen só pode ser usada para capturar um quadro de informações de gráficos; ela não executa sua função normal. Isso permanece em vigor até que você pare de capturar informações de gráficos, geralmente interrompendo a depuração ou saindo do aplicativo normalmente, mesmo que outro aplicativo esteja no foco.  
   
--   Na interface de captura do Visual Studio, escolha o **capturar quadro** botão localizado acima do **sessão de diagnóstico** linha do tempo, ou escolha o grande **capturar quadro** botão localizado abaixo de **quadros por segundo** pista e à direita de qualquer quadro capturado anteriormente. Ambos os botões estão realçados na imagem abaixo.  
+- Na interface de captura do Visual Studio, escolha o **capturar quadro** botão localizado acima do **sessão de diagnóstico** linha do tempo, ou escolha o grande **capturar quadro** botão localizado abaixo de **quadros por segundo** pista e à direita de qualquer quadro capturado anteriormente. Ambos os botões estão realçados na imagem abaixo.  
   
-     ![Capture quadros usando a ferramenta uso de GPU. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
+   ![Capture quadros usando a ferramenta uso de GPU. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
   
-     Quando você estiver pronto para examinar os quadros for capturada, inicie o **analisador de gráficos do Visual Studio** seguindo o **quadro...** Vincular acima as miniaturas de imagem, ou clicando duas vezes na miniatura.  
+   Quando você estiver pronto para examinar os quadros for capturada, inicie o **analisador de gráficos do Visual Studio** seguindo o **quadro...** Vincular acima as miniaturas de imagem, ou clicando duas vezes na miniatura.  
   
- Somente quadros inteiros podem ser capturados, de modo que quando você inicia uma captura, as informações de gráfico do próximo quadro são realmente gravadas. A gravação começa logo depois que o quadro no qual você iniciou a captura é apresentado e termina quando o quadro capturado é apresentado. É possível capturar quantos quadros você desejar enquanto o aplicativo estiver em execução no Diagnóstico de Gráficos. Se você não capturar nenhum quadro, o log de elementos gráficos será descartado.  
+  Somente quadros inteiros podem ser capturados, de modo que quando você inicia uma captura, as informações de gráfico do próximo quadro são realmente gravadas. A gravação começa logo depois que o quadro no qual você iniciou a captura é apresentado e termina quando o quadro capturado é apresentado. É possível capturar quantos quadros você desejar enquanto o aplicativo estiver em execução no Diagnóstico de Gráficos. Se você não capturar nenhum quadro, o log de elementos gráficos será descartado.  
   
- Durante a captura de quadros, o Visual Studio exibe a janela de sessão (. diagsession) de diagnóstico. Se você fecha esta janela, pare a depuração ou fecha o aplicativo, você não pode capturar mais quadros para que o log. Para capturar mais informações de gráficos, você precisa executar o aplicativo em Diagnóstico de gráficos novamente para iniciar uma nova sessão de diagnóstico.  
+  Durante a captura de quadros, o Visual Studio exibe a janela de sessão (. diagsession) de diagnóstico. Se você fecha esta janela, pare a depuração ou fecha o aplicativo, você não pode capturar mais quadros para que o log. Para capturar mais informações de gráficos, você precisa executar o aplicativo em Diagnóstico de gráficos novamente para iniciar uma nova sessão de diagnóstico.  
   
 ### <a name="graphics-diagnostics-capture-options"></a>Opções de captura de diagnóstico de gráficos  
  Você pode configurar a captura para coletar as pilhas de chamada para todos os eventos de gráficos ou um subconjunto limitado, desabilitar a captura HUD e ativar ou desativar o modo de compatibilidade de captura.  

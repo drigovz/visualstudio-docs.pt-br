@@ -1,7 +1,7 @@
 ---
 title: Função CvCreateMarkerSeries | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,21 +17,19 @@ helpviewer_keywords:
 - CvCreateMarkerSeriesW method
 ms.assetid: e280530b-137a-43a7-8643-aa514ab86ed7
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 332c7b54ca47334e1415c50751301b51912648f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: 52ef56d1e33ddb66a4c35f7c46596ea080478a6c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473948"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734715"
 ---
 # <a name="cvcreatemarkerseries-function"></a>Função CvCreateMarkerSeries
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [função CvCreateMarkerSeries](https://docs.microsoft.com/visualstudio/profiling/cvcreatemarkerseries-function).  
-  
 Cria a série de marcador para determinado provedor.  
   
 ## <a name="syntax"></a>Sintaxe  

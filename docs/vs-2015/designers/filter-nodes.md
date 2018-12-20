@@ -1,7 +1,7 @@
 ---
 title: Nós de filtro | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2789676505588c2041abfd876a228fc456ee3607
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec8046fcbeebe2af0c6c7ebb725ffe4ed6cfa263
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463407"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178575"
 ---
 # <a name="filter-nodes"></a>Nós de filtro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [nós de filtro](https://docs.microsoft.com/visualstudio/designers/filter-nodes).  
-  
 No Designer de Sombreador, nós de filtro transformam uma entrada — por exemplo, uma amostra de cor ou textura — em um valor de cor figurativo. Esses valores de cor figurativos normalmente são usados na renderização não fotorrealista ou como componentes de outros efeitos visuais.  
   
 ## <a name="filter-node-reference"></a>Referência do nó de filtro  

@@ -1,5 +1,5 @@
 ---
-title: Localizar e substituir nos arquivos do Visual Studio
+title: Localizar e substituir em arquivos
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d1a59e3e07120e01fa7757b53b71833a7bc09c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 625cb98391199bad78fb4492e635b2b1767debe7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951915"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057873"
 ---
 # <a name="replace-in-files"></a>Substituir nos Arquivos
 
@@ -36,11 +36,11 @@ ms.locfileid: "31951915"
 
 1. No menu **Editar**, expanda **Localizar e Substituir**.
 
-1. Escolha **Substituir nos Arquivos**.
+2. Escolha **Substituir nos Arquivos**.
 
    – ou —
 
-  Se a janela **Localizar e Substituir** ainda estiver aberta, na barra de ferramentas, escolha **Substituir nos Arquivos**.
+   Se a janela **Localizar e Substituir** ainda estiver aberta, na barra de ferramentas, escolha **Substituir nos Arquivos**.
 
 ## <a name="find-what"></a>Localizar
 

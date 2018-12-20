@@ -1,7 +1,7 @@
 ---
 title: Exportar diagramas como imagens | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,21 +13,19 @@ helpviewer_keywords:
 - UML diagrams, saving
 ms.assetid: 0df68943-4c60-4f00-b1e8-b1cdee13762e
 caps.latest.revision: 17
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7d29905f63cb9438800b4e3911b3f9ffae5c7d12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 31b7527484bf377433a7fd80b6ccb8e87722c40d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47474296"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794420"
 ---
 # <a name="export-diagrams-as-images"></a>Exportar diagramas como imagens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exportar diagramas como imagens](https://docs.microsoft.com/visualstudio/modeling/export-diagrams-as-images).  
-  
 No Visual Studio, você pode salvar diagramas de modelagem no formatos de somente leitura para que você pode compartilhá-los com os participantes, usuários ou membros da equipe de projeto que não usam a mesma versão do Visual Studio.  
   
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

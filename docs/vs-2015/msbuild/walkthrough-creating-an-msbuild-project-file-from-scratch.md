@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Criando um arquivo de projeto do MSBuild do zero | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 971ae8a60edd260fa2745d1bfc1ebd22b82d0493
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460381"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913885"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Instruções passo a passo: criando um arquivo de projeto do MSBuild do zero
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Criando um arquivo de projeto do MSBuild do zero](https://docs.microsoft.com/visualstudio/msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch).  
-  
   
 As linguagens de programação que tenham como destino o .NET Framework usam arquivos de projetos do MSBuild para descrever e controlar o processo de compilação de aplicativos. Quando você usa o Visual Studio para criar um arquivo de projeto do MSBuild, o XML apropriado é adicionado ao arquivo automaticamente. Entretanto, talvez você ache útil compreender como o XML é organizado e como é possível alterá-lo para controlar uma compilação.  
   
@@ -35,27 +33,27 @@ As linguagens de programação que tenham como destino o .NET Framework usam arq
   
  Este passo a passo mostra como criar um arquivo de projeto básico de forma incremental, usando somente um editor de texto. Este passo a passo possui as seguintes etapas:  
   
--   Criar um arquivo de origem de aplicativo mínimo.  
+- Criar um arquivo de origem de aplicativo mínimo.  
   
--   Criar um arquivo de projeto MSBuild mínimo.  
+- Criar um arquivo de projeto MSBuild mínimo.  
   
--   Estender a variável de ambiente PATH para incluir MSBuild.  
+- Estender a variável de ambiente PATH para incluir MSBuild.  
   
--   Compilar o aplicativo usando o arquivo de projeto.  
+- Compilar o aplicativo usando o arquivo de projeto.  
   
--   Adicionar propriedades para controlar a compilação.  
+- Adicionar propriedades para controlar a compilação.  
   
--   Controlar a compilação alterando os valores de propriedade.  
+- Controlar a compilação alterando os valores de propriedade.  
   
--   Adicionar destinos à compilação.  
+- Adicionar destinos à compilação.  
   
--   Controlar a compilação especificando destinos.  
+- Controlar a compilação especificando destinos.  
   
--   Compilar de forma incremental.  
+- Compilar de forma incremental.  
   
- Este passo a passo mostra como compilar o projeto no prompt de comando e como examinar os resultados. Para obter mais informações sobre o MSBuild e como executá-lo no prompt de comandos, consulte [Passo a passo: Usando o MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+  Este passo a passo mostra como compilar o projeto no prompt de comando e como examinar os resultados. Para obter mais informações sobre o MSBuild e como executá-lo no prompt de comandos, consulte [Passo a passo: Usando o MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
- Para concluir este passo a passo, você deve ter o .NET Framework (versão 2.0, 3.5, 4.0 ou 4.5) instalado, pois ele inclui o MSBuild, e o compilador do Visual C#.  
+  Para concluir este passo a passo, você deve ter o .NET Framework (versão 2.0, 3.5, 4.0 ou 4.5) instalado, pois ele inclui o MSBuild, e o compilador do Visual C#.  
   
 ## <a name="creating-a-minimal-application"></a>Criando um aplicativo mínimo  
  Esta seção mostra como criar um arquivo de origem de aplicativo mínimo do Visual C# usando um editor de texto.  
@@ -111,39 +109,39 @@ As linguagens de programação que tenham como destino o .NET Framework usam arq
   
 #### <a name="to-create-a-minimal-msbuild-project-file"></a>Para criar um arquivo de projeto MSBuild mínimo  
   
-1.  No editor de texto, substitua o texto existente usando estas duas linhas:  
+1. No editor de texto, substitua o texto existente usando estas duas linhas:  
   
-    ```  
-    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    </Project>  
-    ```  
+   ```  
+   <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+   </Project>  
+   ```  
   
-2.  Insira este nó `ItemGroup` como um elemento filho do nó `Project`:  
+2. Insira este nó `ItemGroup` como um elemento filho do nó `Project`:  
   
-    ```  
-    <ItemGroup>  
-      <Compile Include="helloworld.cs" />  
-    </ItemGroup>  
-    ```  
+   ```  
+   <ItemGroup>  
+     <Compile Include="helloworld.cs" />  
+   </ItemGroup>  
+   ```  
   
-     Observe que este `ItemGroup` já contém um elemento do item.  
+    Observe que este `ItemGroup` já contém um elemento do item.  
   
-3.  Adicione um nó `Target` como um elemento filho do nó `Project`. Nomeie o nó `Build`.  
+3. Adicione um nó `Target` como um elemento filho do nó `Project`. Nomeie o nó `Build`.  
   
-    ```  
-    <Target Name="Build">  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="Build">  
+   </Target>  
+   ```  
   
-4.  Insira este elemento da tarefa como um elemento filho do nó `Target`:  
+4. Insira este elemento da tarefa como um elemento filho do nó `Target`:  
   
-    ```  
-    <Csc Sources="@(Compile)"/>  
-    ```  
+   ```  
+   <Csc Sources="@(Compile)"/>  
+   ```  
   
-5.  Salve esse arquivo de projeto e o nomeie como Helloworld.csproj.  
+5. Salve esse arquivo de projeto e o nomeie como Helloworld.csproj.  
   
- O seu arquivo de projeto mínimo deve se assemelhar ao seguinte código:  
+   O seu arquivo de projeto mínimo deve se assemelhar ao seguinte código:  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -203,36 +201,36 @@ As linguagens de programação que tenham como destino o .NET Framework usam arq
   
 #### <a name="to-add-build-properties"></a>Para adicionar propriedades de compilação  
   
-1.  Exclua o aplicativo existente digitando **del helloworld.exe** no prompt de comando.  
+1. Exclua o aplicativo existente digitando **del helloworld.exe** no prompt de comando.  
   
-2.  No arquivo de projeto, insira este elemento `PropertyGroup` imediatamente depois de abrir o elemento `Project`:  
+2. No arquivo de projeto, insira este elemento `PropertyGroup` imediatamente depois de abrir o elemento `Project`:  
   
-    ```  
-    <PropertyGroup>  
-      <AssemblyName>MSBuildSample</AssemblyName>  
-      <OutputPath>Bin\</OutputPath>  
-    </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup>  
+     <AssemblyName>MSBuildSample</AssemblyName>  
+     <OutputPath>Bin\</OutputPath>  
+   </PropertyGroup>  
+   ```  
   
-3.  Adicione esta tarefa no destino Compilar, imediatamente antes da tarefa `Csc`:  
+3. Adicione esta tarefa no destino Compilar, imediatamente antes da tarefa `Csc`:  
   
-    ```  
-    <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />  
-    ```  
+   ```  
+   <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />  
+   ```  
   
-     A tarefa `MakeDir` cria uma pasta que é chamada pela propriedade `OutputPath`, contanto que não exista atualmente nenhuma pasta com esse nome.  
+    A tarefa `MakeDir` cria uma pasta que é chamada pela propriedade `OutputPath`, contanto que não exista atualmente nenhuma pasta com esse nome.  
   
-4.  Adicione esse atributo `OutputAssembly` à tarefa `Csc`:  
+4. Adicione esse atributo `OutputAssembly` à tarefa `Csc`:  
   
-    ```  
-    <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />  
-    ```  
+   ```  
+   <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />  
+   ```  
   
-     Isso instrui o compilador do Visual C# a produzir um assembly que é chamado pela propriedade `AssemblyName` e para colocá-lo na pasta que é chamada pela propriedade `OutputPath`.  
+    Isso instrui o compilador do Visual C# a produzir um assembly que é chamado pela propriedade `AssemblyName` e para colocá-lo na pasta que é chamada pela propriedade `OutputPath`.  
   
-5.  Salve as alterações.  
+5. Salve as alterações.  
   
- O seu arquivo de projeto deve agora se assemelhar ao seguinte código:  
+   O seu arquivo de projeto deve agora se assemelhar ao seguinte código:  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -281,34 +279,34 @@ As linguagens de programação que tenham como destino o .NET Framework usam arq
 ## <a name="adding-build-targets"></a>Adicionando destinos Compilar  
  Em seguida, adicione mais dois destinos ao arquivo de projeto, como a seguir:  
   
--   Um destino Limpar que exclui arquivos antigos.  
+- Um destino Limpar que exclui arquivos antigos.  
   
--   Um destino Recompilar que usa o atributo `DependsOnTargets` para forçar a tarefa Limpar a executar a tarefa Compilar.  
+- Um destino Recompilar que usa o atributo `DependsOnTargets` para forçar a tarefa Limpar a executar a tarefa Compilar.  
   
- Agora que você tem vários destinos, poderá configurar o destino Compilar como o destino padrão.  
+  Agora que você tem vários destinos, poderá configurar o destino Compilar como o destino padrão.  
   
 #### <a name="to-add-build-targets"></a>Para adicionar destinos de compilação  
   
-1.  No arquivo de projeto, adicione esses dois destinos imediatamente após o destino Compilar:  
+1. No arquivo de projeto, adicione esses dois destinos imediatamente após o destino Compilar:  
   
-    ```  
-    <Target Name="Clean" >  
-      <Delete Files="$(OutputPath)$(AssemblyName).exe" />  
-    </Target>  
-    <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
-    ```  
+   ```  
+   <Target Name="Clean" >  
+     <Delete Files="$(OutputPath)$(AssemblyName).exe" />  
+   </Target>  
+   <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
+   ```  
   
-     O destino Limpar chama a tarefa Excluir para excluir o aplicativo. O destino Recompilar não é executado até que o destino Limpar e o destino Compilar tenham sido executados. Embora o destino Recompilar não tenha tarefas, ele faz com que o destino Limpar seja executado antes do destino Compilar.  
+    O destino Limpar chama a tarefa Excluir para excluir o aplicativo. O destino Recompilar não é executado até que o destino Limpar e o destino Compilar tenham sido executados. Embora o destino Recompilar não tenha tarefas, ele faz com que o destino Limpar seja executado antes do destino Compilar.  
   
-2.  Adicione esse atributo `DefaultTargets` ao elemento `Project` inicial:  
+2. Adicione esse atributo `DefaultTargets` ao elemento `Project` inicial:  
   
-    ```  
-    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    ```  
+   ```  
+   <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+   ```  
   
-     Isso configura o destino Compilar como o destino padrão.  
+    Isso configura o destino Compilar como o destino padrão.  
   
- O seu arquivo de projeto deve agora se assemelhar ao seguinte código:  
+   O seu arquivo de projeto deve agora se assemelhar ao seguinte código:  
   
 ```  
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

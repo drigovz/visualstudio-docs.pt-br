@@ -1,7 +1,7 @@
 ---
 title: 'Passo a passo: Criar e executar testes de unidade para aplicativos da Windows Store | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9b84c53f3c1f2c48948b456d3a85460bfb70a9ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464130"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852525"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Explicação passo a passo: Criando e executando testes de unidade de aplicativos da Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [instruções passo a passo: Criando e executando testes de unidade para a Windows Store Apps](https://docs.microsoft.com/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-windows-store-apps).  
-  
 O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] gerenciados por testes de unidade e inclui modelos de biblioteca de teste de unidade para o Visual C#, Visual Basic e Visual C++.  
   
 > [!TIP]
@@ -37,15 +35,15 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
   
  O Visual Studio fornece a seguinte funcionalidade de teste de unidade:  
   
--   [Criar projetos de teste de unidade](#CreateAndRunUnitTestWin8Tailored_Create)  
+- [Criar projetos de teste de unidade](#CreateAndRunUnitTestWin8Tailored_Create)  
   
--   [Editar o manifesto para o projeto de teste de unidade](#CreateAndRunUnitTestWin8Tailored_Manifest)  
+- [Editar o manifesto para o projeto de teste de unidade](#CreateAndRunUnitTestWin8Tailored_Manifest)  
   
--   [Codificar o teste de unidade](#CreateAndRunUnitTestWin8Tailored_Code)  
+- [Codificar o teste de unidade](#CreateAndRunUnitTestWin8Tailored_Code)  
   
--   [Executar testes de unidade](#CreateAndRunUnitTestWin8Tailored_Run)  
+- [Executar testes de unidade](#CreateAndRunUnitTestWin8Tailored_Run)  
   
- Os procedimentos a seguir descrevem as etapas para criar, executar e depurar testes de unidade para aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Windows 8 gerenciado .  
+  Os procedimentos a seguir descrevem as etapas para criar, executar e depurar testes de unidade para aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Windows 8 gerenciado .  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Visual Studio  

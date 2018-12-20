@@ -1,7 +1,7 @@
 ---
 title: Elemento (esquema de pacote de idiomas do VSIX) de licença | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ecf1913878137d84346275beccb512027f74f8f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b390c9d390a23a8a5030d06acdb0f2470a946fde
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465917"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740320"
 ---
 # <a name="license-element-vsix-language-pack-schema"></a>Elemento License (esquema de pacote de idiomas do VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [elemento License (esquema de pacote de idiomas do VSIX)](https://docs.microsoft.com/visualstudio/extensibility/license-element-vsix-language-pack-schema).  
-  
 Opcional. O caminho de uma versão localizada do arquivo de licença para a extensão.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -52,7 +50,7 @@ Opcional. O caminho de uma versão localizada do arquivo de licença para a exte
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Elemento LanguagePack do VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Necessário. Fornece o elemento raiz para um pacote de idiomas do VSIX.|  
+|[Elemento LanguagePack do VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Obrigatório. Fornece o elemento raiz para um pacote de idiomas do VSIX.|  
   
 ## <a name="text-value"></a>Valor de texto  
  O caminho relativo do arquivo de licença localizado a ser exibido.  
@@ -62,12 +60,12 @@ Opcional. O caminho de uma versão localizada do arquivo de licença para a exte
   
 ## <a name="element-information"></a>Informações do elemento  
   
-|||  
-|-|-|  
-|Namespace|http://schemas.microsoft.com/developer/vsx-schema-lp/2010|  
-|Nome do esquema|Esquema de pacote de idiomas do VSIX|  
-|Arquivo de validação|VSIXLanguagePackSchema.xsd|  
-|Pode ser vazio|Não aplicável|  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Namespace    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
+|   Nome do esquema   |                 Esquema de pacote de idiomas do VSIX                 |
+| Arquivo de validação |                VSIXLanguagePackSchema.xsd                 |
+|  Pode ser vazio   |                      Não aplicável                       |
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema do pacote de idioma VSX](../extensibility/vsx-language-pack-schema-reference.md)   

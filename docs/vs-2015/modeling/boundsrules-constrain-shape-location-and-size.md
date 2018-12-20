@@ -1,7 +1,7 @@
 ---
 title: BoundsRules restringem o local de forma e tamanho | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cafcf44bc1365b74474b201a01d0089465cc7430
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb9d9c35f5600ee98d53863780d9f54c3eed53f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47467184"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253715"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules restringem o local e o tamanho de uma forma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [BoundsRules restringem forma local e o tamanho](https://docs.microsoft.com/visualstudio/modeling/boundsrules-constrain-shape-location-and-size).  
-  
 Um *regra* é uma classe que define os limites no tamanho e local de uma forma. Ele fornece um método que é chamado repetidamente, enquanto um usuário está arrastando uma forma ou cantos ou lados de uma forma.  
   
  O exemplo a seguir restringe uma forma retangular para ser uma barra de tamanho fixo, horizontal ou vertical. Quando o usuário arrasta o cantos ou lados, a estrutura de tópicos inverte entre as duas configurações permitidas da altura e largura.  

@@ -1,7 +1,7 @@
 ---
 title: MODULE_FLAGS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 0e555b42-b846-4dbb-812e-8e3d11c85b2d
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 224a6db4b6c4860a2bf9a0b326319a3be1efc6a6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cbafa7350d2728c94cfb7e6d01d3d42110d2e009
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462375"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748455"
 ---
 # <a name="moduleflags"></a>MODULE_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [MODULE_FLAGS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/module-flags).  
-  
 Usado para descrever um módulo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-enum enum_MODULE_FLAGS {   
+enum enum_MODULE_FLAGS {   
    MODULE_FLAG_NONE        = 0x0000,  
    MODULE_FLAG_SYSTEM      = 0x0001,  
    MODULE_FLAG_SYMBOLS     = 0x0002,  
@@ -46,7 +44,7 @@ typedef DWORD MODULE_FLAGS;
 ```  
   
 ```csharp  
-public enum enum_MODULE_FLAGS {   
+public enum enum_MODULE_FLAGS {   
    MODULE_FLAG_NONE        = 0x0000,  
    MODULE_FLAG_SYSTEM      = 0x0001,  
    MODULE_FLAG_SYMBOLS     = 0x0002,  

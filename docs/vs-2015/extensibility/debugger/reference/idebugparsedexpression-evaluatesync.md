@@ -1,7 +1,7 @@
 ---
 title: IDebugParsedExpression::EvaluateSync | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ ms.assetid: 0ea04cfa-de87-4b6c-897e-4572c1a28942
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 288967cf15846bef7172707bcf4932541642ac1b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eeab923edb2622d93ab7bab1aead08193ecd8686
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476127"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786893"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugParsedExpression::EvaluateSync](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugparsedexpression-evaluatesync).  
-  
 Esse método avalia a expressão analisada e, opcionalmente, converte o resultado em outro tipo de dados.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT EvaluateSync(   
+HRESULT EvaluateSync(   
    DWORD                 dwEvalFlags,  
    DWORD                 dwTimeout,  
    IDebugSymbolProvider* pSymbolProvider,  

@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumSectionContribs | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,27 +15,25 @@ helpviewer_keywords:
 - IDiaEnumSectionContribs interface
 ms.assetid: 0d6c0632-310f-4a99-8921-58149a1817e3
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 661ce58b0d1d8119f8962c9946756eeceff131ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 17d695a6e4b2ac82e5bc04dcd2ac6488ba043544
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47460463"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801154"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDiaEnumSectionContribs](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumsectioncontribs).  
-  
 Enumera as várias contribuições de seção contidas na fonte de dados.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDiaEnumSectionContribs : IUnknown  
+IDiaEnumSectionContribs : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  

@@ -1,7 +1,7 @@
 ---
 title: 'CA1031: Não capturar tipos de exceção geral | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,17 +20,15 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fee08bdc2b93687a5415fdbd137c48f816f4acbb
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 2548fe0e54e57e4374f8ae92e9d43302df419aa4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940184"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: não capturar tipos de exceção gerais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-A versão mais recente deste tópico pode ser encontrada em [CA1031: não capturar tipos de exceção geral](https://docs.microsoft.com/visualstudio/code-quality/ca1031-do-not-catch-general-exception-types).
 
 |||
 |-|-|

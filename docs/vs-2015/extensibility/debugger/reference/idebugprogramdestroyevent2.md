@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramDestroyEvent2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: ddf127ca-c4a5-4071-90ca-68faf2f57dbd
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 550c48b7d234cb2cf4afe8d2e4f3b3d9e69f791e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 163524746d8e6c131b672abf995d30cf17db628d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464030"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763473"
 ---
 # <a name="idebugprogramdestroyevent2"></a>IDebugProgramDestroyEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugProgramDestroyEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramdestroyevent2).  
-  
 Essa interface é enviada pelo mecanismo de depuração (DE) para o Gerenciador de sessão de depuração (SDM) quando um programa foi executado até a conclusão.  
   
 ## <a name="syntax"></a>Sintaxe  

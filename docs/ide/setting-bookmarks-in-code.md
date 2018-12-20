@@ -1,5 +1,5 @@
 ---
-title: Definir indicadores de código no Visual Studio
+title: Definir indicadores de código
 ms.date: 02/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0154a9d410e7bbe60913b757f216225239704b
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 37dff534307f7773858ccb43b076ed309504b6ef
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448812"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047636"
 ---
 # <a name="set-bookmarks-in-code"></a>Definir indicadores no código
 

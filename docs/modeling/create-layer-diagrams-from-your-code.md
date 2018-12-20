@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 511234a1a577bbad87fa9ceecc2afe34945cce5c
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7a613874a45939d9c9f2546edbb5545d8be31ccb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951165"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Criar diagramas de dependência do código
 
@@ -88,7 +88,7 @@ Antes de criar um diagrama de dependência, certifique-se de que sua solução t
  Para ver se um item vinculado dá suporte à validação, abra **Gerenciador de camadas** e examine o **dá suporte à validação** propriedade do item. Ver [Gerenciando links para artefatos](#Managing).
 
 |**To**|**Siga estas etapas**|
-|------------|----------------------------|
+|-|-|
 |Criar uma camada para um único artefato|<ol><li>Arraste o item para o diagrama de dependência destas origens:<br /><br /> <ul><li>**Gerenciador de Soluções**<br /><br />         Por exemplo, é possível arrastar arquivos ou projetos.</li><li>Mapas de código<br /><br />         Ver [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md) e [mapas de código de uso para depurar seus aplicativos](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Exibição de classe** ou **Pesquisador de objetos**</li></ul><br />     Uma camada é exibida no diagrama e está vinculada ao artefato.</li><li>Renomeie a camada para refletir as responsabilidades do código ou dos artefatos associados.</li></ol> **Importante:** arrastar arquivos binários para o diagrama de dependência não adiciona automaticamente suas referências ao projeto de modelagem. Você deve adicionar manualmente os arquivos binários que você deseja validar ao projeto de modelagem. **Para adicionar arquivos binários ao projeto de modelagem** <ol><li>Na **Gerenciador de soluções**, abra o menu de atalho para o projeto de modelagem e, em seguida, escolha **Add Existing Item**.</li><li>No **Adicionar Item existente** caixa de diálogo, navegue até os arquivos binários, selecioná-los e, em seguida, escolha **Okey**.     Os arquivos binários são exibidos no projeto de modelagem.</li><li>Na **Gerenciador de soluções**, escolha um arquivo binário que você adicionou e, em seguida, pressione **F4** para abrir o **propriedades** janela.</li><li>Em cada arquivo binário, defina as **ação de compilação** propriedade **validar**.</li></ol>|
 |Criar uma única camada para todos os artefatos selecionados|Arraste todos os artefatos para o diagrama de dependência ao mesmo tempo.<br /><br /> Uma camada é exibida no diagrama e está vinculada a todos os artefatos.|
 |Criar uma camada para cada artefato selecionado|Pressione e segure a **SHIFT** pressionada ao arrastar todos os artefatos para o diagrama de dependência ao mesmo tempo. **Observação:** se você usar o **SHIFT** chave para selecionar um intervalo de itens, solte a tecla depois de selecionar os artefatos. Mantenha-o pressionado novamente ao arrastar os artefatos para o diagrama. <br /><br /> Uma camada para cada artefato é exibida no diagrama e está vinculada a cada artefato.|
@@ -118,7 +118,7 @@ Antes de criar um diagrama de dependência, certifique-se de que sua solução t
 2.  Use as seguintes tarefas para gerenciar esses links:
 
 |**To**|**No Gerenciador de camadas**|
-|------------|---------------------------|
+|-|-|
 |Excluir o links entre a camada e um artefato|Abra o menu de atalho para o link de artefato e, em seguida, escolha **excluir**.|
 |Mover o link de uma camada para outra|Arraste o link de artefato para uma camada existente no diagrama.<br /><br /> - ou -<br /><br /> 1.  Abra o menu de atalho para o link de artefato e, em seguida, escolha **Recortar**.<br />2.  No diagrama de dependência, abra o menu de atalho para a camada e, em seguida, escolha **colar**.|
 |Copiar o link de uma camada para outra|1.  Abra o menu de atalho para o link de artefato e, em seguida, escolha **cópia**.<br />2.  No diagrama de dependência, abra o menu de atalho para a camada e, em seguida, escolha **colar**.|
@@ -131,15 +131,15 @@ Antes de criar um diagrama de dependência, certifique-se de que sua solução t
 > [!NOTE]
 > As dependências não podem sofrer engenharia reversa para determinados tipos de artefatos. Por exemplo, nenhuma dependência sofrerá engenharia reversa de ou para uma camada vinculada a um arquivo de texto. Para ver quais artefatos têm dependências que você pode fazer engenharia reversa, abra o menu de atalho para uma ou várias camadas e, em seguida, escolha **Exibir Links**. Na **Gerenciador de camadas**, examine o **dá suporte à validação** coluna. As dependências não sofrerão engenharia reversa para artefatos para o qual essa coluna mostra **falsos**.
 
--   Selecione uma ou várias camadas, abra o menu de atalho para uma camada selecionada e, em seguida, escolha **gerar dependências**.
+- Selecione uma ou várias camadas, abra o menu de atalho para uma camada selecionada e, em seguida, escolha **gerar dependências**.
 
- Normalmente, você verá algumas dependências que não devem existir. É possível editar essas dependências para alinhá-las com o design desejado.
+  Normalmente, você verá algumas dependências que não devem existir. É possível editar essas dependências para alinhá-las com o design desejado.
 
 ## <a name="EditDependencies"></a> Editar camadas e dependências para mostrar o design desejado
  Para descrever as alterações que você planeja fazer em seu sistema ou a arquitetura pretendida, edite o diagrama de dependência:
 
 |**To**|**Execute estas etapas**|
-|------------|-----------------------------|
+|-|-|
 |Alterar ou restringir a direção de uma dependência|Defina suas **direção** propriedade.|
 |Criar novas dependências|Use o **dependência** e **dependência bidirecional** ferramentas.<br /><br /> Para desenhar várias dependências, clique duas vezes na ferramenta. Quando tiver terminado, escolha o **ponteiro** ferramenta ou pressione a **ESC** chave.|
 |Especificar que os artefatos associados a uma camada não dependem dos namespaces especificados|Digite os namespaces da camada **dependências de Namespace proibido** propriedade. Use um ponto e vírgula (**;**) para separar os namespaces.|

@@ -1,7 +1,7 @@
 ---
 title: Exibição de chamador-computador chamado – Dados de amostragem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,21 +14,19 @@ helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: 28e85ed5-1512-4b59-bb84-138a2abca7dd
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ed2f99527b8c1f5f38cbbcfd72ee32ad9912fd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e46befbdd8f727485884197a3cfb284fa5a8cf6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47464891"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796955"
 ---
 # <a name="caller--callee-view---sampling-data"></a>Exibição de chamador/computador chamado – dados de amostragem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [exibição computador chamado – dados de amostragem](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-sampling-data).  
-  
 A exibição de Chamador/Computador Chamado exibe informações de perfil para uma função selecionada e suas funções pai e filho. A exibição de Chamador/Computador Chamado contém três grades.  
   
  **Função atual** é exibida na grade intermediária e mostra informações de criação de perfil para a função selecionada. Os valores incluem todas as chamadas amostradas para a função.  

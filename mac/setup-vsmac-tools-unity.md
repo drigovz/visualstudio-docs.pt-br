@@ -1,18 +1,18 @@
 ---
 title: Configurar as Ferramentas do Visual Studio para Mac para Unity
 description: Configurando e instalando ferramentas do Unity para uso no Visual Studio para Mac
-author: dantogno
-ms.author: v-davian
+author: therealjohn
+ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 6e5e6b90350aa16d4e0ffee04673a1aa1063cded
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 9a661e3cae151e4d6199fd2a588ebd62e098de6c
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057093"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027322"
 ---
-# <a name="setup-visual-studio-for-mac-tools-for-unity"></a>Configurar as Ferramentas do Visual Studio para Mac para Unity
+# <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Configurar as Ferramentas do Visual Studio para Mac para Unity
 
 Esta seção explica como começar a usar as Ferramentas do Visual Studio para Mac para Unity.
 
@@ -20,7 +20,7 @@ Esta seção explica como começar a usar as Ferramentas do Visual Studio para M
 
 ### <a name="unity-bundled-installation"></a>Instalação de pacote do Unity
 
-Começando pelo Unity 2018.1, o Visual Studio para Mac é o IDE padrão do C# para o Unity e está incluído no Assistente de Download do Unity, bem como na ferramenta de instalação do Unity Hub. Baixe o Unity de [store.unity.com](https://store.unity.com/).
+Começando pelo Unity 2018.1, o Visual Studio para Mac é o IDE (ambiente de desenvolvimento integrado) padrão do C# para o Unity e está incluído no Assistente de Download do Unity, bem como na ferramenta de instalação do Unity Hub. Baixe o Unity de [store.unity.com](https://store.unity.com/).
 
 Durante a instalação, verifique se o Visual Studio para Mac está marcado na lista de componentes a serem instalados com o Unity:
 
@@ -57,11 +57,11 @@ Embora a extensão das Ferramentas do Visual Studio para Mac para Unity devem se
 
 1. No menu do Visual Studio, escolha **Extensões...**.
 
-  ![Selecionar Extensões](media/setup-vsmac-tools-unity-image1.png)
+   ![Selecionar Extensões](media/setup-vsmac-tools-unity-image1.png)
 
-1. Expanda a seção de Desenvolvimento de Jogos e confirme a entrada das Ferramentas do Visual Studio para Mac para Unity.
+2. Expanda a seção de Desenvolvimento de Jogos e confirme a entrada das Ferramentas do Visual Studio para Mac para Unity.
 
-  ![Exibir a Entrada do Unity](media/setup-vsmac-tools-unity-image2.png)
+   ![Exibir a Entrada do Unity](media/setup-vsmac-tools-unity-image2.png)
 
 ## <a name="configure-unity-for-use-with-visual-studio-for-mac"></a>Configurar o Unity para ser usado com o Visual Studio para Mac
 
@@ -69,16 +69,16 @@ Começando pelo Unity 2018.1, o Visual Studio deve ser o editor de scripts exter
 
 1. Selecione **Preferências...**  no menu do Unity.
 
-  ![Selecionar preferências](media/setup-vsmac-tools-unity-image4.png)
+   ![Selecionar preferências](media/setup-vsmac-tools-unity-image4.png)
 
-1. Na caixa de diálogo Preferências, selecione a guia **Ferramentas Externas**.
+2. Na caixa de diálogo Preferências, selecione a guia **Ferramentas Externas**.
 
-1. Na lista suspensa do Editor de script externo, escolha **Visual Studio** se ele estiver listado, caso contrário, selecione **Procurar...**.
+3. Na lista suspensa do Editor de script externo, escolha **Visual Studio** se ele estiver listado, caso contrário, selecione **Procurar...**.
 
-  ![Selecionar o Visual Studio](media/setup-vsmac-tools-unity-image5.png)
+   ![Selecionar o Visual Studio](media/setup-vsmac-tools-unity-image5.png)
 
-1. Se **Procurar...** foi selecionado, navegue para o Diretório de aplicativos, selecione o Visual Studio e clique em **Abrir**.
+4. Se **Procurar...** foi selecionado, navegue para o Diretório de aplicativos, selecione o Visual Studio e clique em **Abrir**.
 
-  ![Selecione Abrir](media/setup-vsmac-tools-unity-image6.png)
+   ![Selecione Abrir](media/setup-vsmac-tools-unity-image6.png)
 
-1. Depois de selecionar o Visual Studio na lista **Editor de script externo**, feche a caixa de diálogo Preferências para concluir o processo de configuração.
+5. Depois de selecionar o Visual Studio na lista **Editor de script externo**, feche a caixa de diálogo Preferências para concluir o processo de configuração.

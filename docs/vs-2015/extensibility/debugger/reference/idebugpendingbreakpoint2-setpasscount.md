@@ -1,7 +1,7 @@
 ---
 title: IDebugPendingBreakpoint2::SetPassCount | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,30 +18,28 @@ ms.assetid: 08ddd328-57eb-42e0-baa9-8424dcd1bf04
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b73f3df393940dd387be36d79760b35e5508552
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 02ced4eb383ecfd4179d9f58ca9c5abdfb7612fb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47463487"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800387"
 ---
 # <a name="idebugpendingbreakpoint2setpasscount"></a>IDebugPendingBreakpoint2::SetPassCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugPendingBreakpoint2::SetPassCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount).  
-  
 Define ou altera a contagem de passagem associada com o ponto de interrupção pendente.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT SetPassCount(   
+HRESULT SetPassCount(   
    BP_PASSCOUNT bpPassCount  
 );  
 ```  
   
 ```csharp  
-int SetPassCount(   
+int SetPassCount(   
    BP_PASSCOUNT bpPassCount  
 );  
 ```  

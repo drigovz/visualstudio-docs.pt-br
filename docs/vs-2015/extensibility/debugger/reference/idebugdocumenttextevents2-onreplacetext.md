@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentTextEvents2::onReplaceText | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ ms.assetid: cb39f025-66d8-4dc0-bef6-1bdc8e07db92
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d80293d5ad354279f33f4c8c102cfc12ad1562e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c2df33561c832a9897d846829b73ef4470cd6b3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47462060"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725039"
 ---
 # <a name="idebugdocumenttextevents2onreplacetext"></a>IDebugDocumentTextEvents2::onReplaceText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [IDebugDocumentTextEvents2::onReplaceText](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumenttextevents2-onreplacetext).  
-  
 Notifica o pacote de depuração que o texto foi substituído no documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```cpp#  
-HRESULT onReplaceText(   
+HRESULT onReplaceText(   
    TEXT_POSITION pos,  
    DWORD         dwNumToReplace  
 );  
 ```  
   
 ```csharp  
-int onReplaceText(   
+int onReplaceText(   
    enum_TEXT_POSITION pos,  
    uint               dwNumToReplace  
 );  

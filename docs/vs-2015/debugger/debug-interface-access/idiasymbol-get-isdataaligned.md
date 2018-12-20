@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_isdataaligned | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ helpviewer_keywords:
 - IDiaSymbol::get_isDataAligned method
 ms.assetid: ddd11a41-6c00-4829-acf4-aa1ace8c21a7
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8a21774721b48d239d1d5851cf30c6accc0e304
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: MT
+ms.openlocfilehash: ffe9f5501887d1d0f0ca416a06527a56346a2016
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468031"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766486"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [idiasymbol:: Get_isdataaligned](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-isdataaligned).  
-  
 Recupera um sinalizador que especifica se o tipo definido pelo usuário (UDT) tem sido alinhado para alguns limites de memória específica.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -51,7 +49,7 @@ HRESULT get_isDataAligned(
 >  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
 ## <a name="remarks"></a>Comentários  
- Essa propriedade geralmente é definida quando o executável é compilado com o alinhamento de dados não padrão. Por exemplo, o compilador do C++ da Microsoft pode alterar o alinhamento de dados com a opção de linha de comando, /Zp*#*, onde *#* é um valor de byte.  
+ Essa propriedade geralmente é definida quando o executável é compilado com o alinhamento de dados não padrão. Por exemplo, o compilador do C++ da Microsoft pode alterar o alinhamento de dados com a opção de linha de comando, /Zp<em>#</em>, onde *#* é um valor de byte.  
   
 ## <a name="requirements"></a>Requisitos  
   

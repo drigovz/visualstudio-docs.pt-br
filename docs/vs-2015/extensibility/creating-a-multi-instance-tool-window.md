@@ -1,7 +1,7 @@
 ---
 title: Criação de uma janela de ferramentas de várias instâncias | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca70aa6024f083cfff7de1e2ef687371eca44c8a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2dc658024447b433b8bc0b5a8dac59234554509f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47466058"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794564"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Criando uma janela de ferramentas de várias instâncias
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [criação de uma janela de ferramentas de várias instâncias](https://docs.microsoft.com/visualstudio/extensibility/creating-a-multi-instance-tool-window).  
-  
 Você pode programar uma janela de ferramentas para que várias instâncias dele podem ser abertas simultaneamente. Por padrão, janelas de ferramenta podem ter apenas uma instância abertos.  
   
  Quando você usa uma janela de ferramentas de várias instâncias, você pode mostrar várias origens relacionadas de informações ao mesmo tempo. Por exemplo, você pode colocar uma multilinha <xref:System.Windows.Forms.TextBox> controle em uma janela de ferramenta com várias instâncias para que vários trechos de código estão disponíveis ao mesmo tempo durante uma sessão de programação. Também, por exemplo, você pode colocar um <xref:System.Windows.Forms.DataGrid> controle e uma lista suspensa caixa em uma janela de ferramenta com várias instâncias para que várias fontes de dados em tempo real podem ser rastreadas simultaneamente.  

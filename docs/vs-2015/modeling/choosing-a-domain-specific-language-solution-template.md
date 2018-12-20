@@ -1,7 +1,7 @@
 ---
 title: Escolhendo um modelo de solução de linguagem específica do domínio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cded93126f4e02aa5f0417819c7a76f17e0da6d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 618a26740759431ffe9de2b6ed5b51ffb32ea69e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47473286"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268472"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Escolhendo um modelo de solução de linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [escolhendo um modelo de solução de linguagem específica do domínio](https://docs.microsoft.com/visualstudio/modeling/choosing-a-domain-specific-language-solution-template).  
-  
 Para criar uma solução de linguagem específica de domínio, escolha um dos modelos de solução que estão disponíveis no Assistente de Designer de linguagem específica do domínio. Escolhendo o modelo que mais se assemelha a linguagem que você deseja criar, você pode minimizar as modificações que você precisa fazer a solução inicial.  
   
  Os seguintes modelos de solução estão disponíveis no Assistente de Designer de linguagem específica do domínio.  

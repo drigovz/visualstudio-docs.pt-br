@@ -1,7 +1,7 @@
 ---
 title: Caixa de diálogo Visualizador de conjunto de dados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,21 +27,19 @@ helpviewer_keywords:
 - Dataset Visualizer dialog box
 ms.assetid: dfbede03-805b-4f88-a645-b479450e6cb0
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ffee1a0dce220ffaa0834781497a0e1cdd6f61e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d86840d92baf04aa9ae25b41f4fcae075704f5f6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47465021"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766294"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Caixa de diálogo Visualizador do Conjunto de Dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [caixa de diálogo do Visualizador de conjunto de dados](https://docs.microsoft.com/visualstudio/debugger/dataset-visualizer-dialog-box).  
-  
 O Visualizador de DataSet permite que você exiba o conteúdo de um objeto de DataSet, DataTable, DataView ou DataViewManager. Você pode acessar esse visualizador clicando no ícone de lupa que aparece ao lado do valor para um desses objetos em uma janela de variáveis do depurador ou em um DataTip.  
   
  Você pode fazer alterações nos objetos neste visualizador. As alterações serão salvas assim que você confirmar uma linha.  

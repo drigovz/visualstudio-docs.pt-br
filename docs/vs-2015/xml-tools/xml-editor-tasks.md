@@ -1,7 +1,7 @@
 ---
 title: Tarefas de Editor XML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9a6053732a067aa76b5b632c7a9197e5f4f75957
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b01bd342dd41d88b891a8d36cba066340f2330c8
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476373"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244431"
 ---
 # <a name="xml-editor-tasks"></a>Tarefas de editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A versão mais recente deste tópico pode ser encontrada em [tarefas de Editor XML](https://docs.microsoft.com/visualstudio/xml-tools/xml-editor-tasks).  
-  
   
 Esta seção descreve como concluir tarefas comuns com o editor XML.  
   
@@ -55,7 +53,7 @@ Esta seção descreve como concluir tarefas comuns com o editor XML.
  Demonstra como criar novos snippets XML.  
   
  [Passo a passo: usando XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)  
- Demonstra como usar o recurso de fonte IntelliSence.  
+ Demonstra como usar o recurso IntelliSense do XSLT.  
   
  [Passo a passo: usando a hierarquia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)  
  Demonstra como depurar uma folha de estilos referenciada.  
