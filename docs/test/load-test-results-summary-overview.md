@@ -1,5 +1,5 @@
 ---
-title: Visão geral do resumo de resultados do teste de carga no Visual Studio
+title: Visão geral do resumo de resultados do teste de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ae70422ce3c88a3de6842f3f0946666b86ae559e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3f5187aabeb0c8e2ef81b0c6b6883b96590d7005
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895009"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062603"
 ---
 # <a name="load-test-results-summary-overview"></a>Visão geral do resumo dos resultados do teste de carga
 
-Depois de executar um teste de carga, você poderá exibir o resumo do teste de carga para entender os resultados rapidamente. O resumo do teste de carga fornece os resultados-chave em um formato compacto e fácil de ler. Você também pode imprimir o resumo do teste de carga. Isso deixa prático usá-lo quando você comunica resultados aos participantes. O resumo do teste de carga também é a exibição padrão quando você abre um resultado do teste de carga de um teste de carga executado anteriormente. Para saber mais, confira [Como acessar resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md).
+Depois de executar um teste de carga, você poderá exibir o resumo do teste de carga para entender os resultados rapidamente. O resumo do teste de carga fornece os resultados-chave em um formato compacto e fácil de ler. Você também pode imprimir o resumo do teste de carga. Isso deixa prático usá-lo quando você comunica resultados aos participantes. O resumo do teste de carga também é a exibição padrão quando você abre um resultado do teste de carga de um teste de carga executado anteriormente. Para obter mais informações, confira [Como: Acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md).
 
 ![Exibição resumida](../test/media/ltest_summaryview.png)
 
@@ -39,11 +39,11 @@ O resumo do teste de carga é dividido em seções. As seções iniciais aparece
 
 - Resultados gerais
 
-- Estatística-chave: 5 páginas mais lentas
+- Estatística-chave: As 5 páginas mais lentas
 
-- Estatística-chave: 5 testes mais lentos
+- Estatística-chave: Os 5 testes mais lentos
 
-- Estatística-chave: 5 operações SQL mais lentas
+- Estatística-chave: As 5 operações SQL mais lentas
 
     > [!NOTE]
     > A seção Operações SQL só será exibida se o rastreamento SQL estiver habilitado no teste de carga.
@@ -70,19 +70,19 @@ A seção de informações sobre a execução do teste contém informações ger
 
 A seção de resultados geral contém resultados resumidos do teste, inclusive o número de solicitações por segundo, o número total de solicitações com falha, o tempo médio de resposta e o tempo médio da página.
 
-## <a name="key-statistic-top-5-slowest-pages"></a>Estatística-chave: as 5 páginas mais lentas
+## <a name="key-statistic-top-5-slowest-pages"></a>Estatística-chave: As 5 páginas mais lentas
 
-A seção de páginas mais lentas contém as 5 páginas mais lentas no teste de carga. A URL e o tempo médio de carregamento de página são exibidos para cada página. As páginas são listadas em ordem decrescente. Você pode escolher a URL de uma página para abrir a tabela **Páginas** e inspecionar mais detalhes dessa página. Para obter mais informações, confira [Como exibir a resposta da página da Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+A seção de páginas mais lentas contém as 5 páginas mais lentas no teste de carga. A URL e o tempo médio de carregamento de página são exibidos para cada página. As páginas são listadas em ordem decrescente. Você pode escolher a URL de uma página para abrir a tabela **Páginas** e inspecionar mais detalhes dessa página. Para obter mais informações, confira [Como: Exibir a resposta da página da Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 O valor de percentil de **Tempo de página 95% (seg.)** informa que 95% das páginas foram concluídas em menos do que esse tempo em segundos.
 
-## <a name="key-statistic-top-5-slowest-tests"></a>Estatística-chave: os 5 testes mais lentos
+## <a name="key-statistic-top-5-slowest-tests"></a>Estatística-chave: Os 5 testes mais lentos
 
 A seção de testes mais lentos contém os 5 testes mais lentos no teste de carga. O nome do teste e o tempo médio do teste são exibidos para cada teste. Os testes são listados em ordem decrescente. Você pode escolher o nome de um teste para abrir a tabela **Testes** e inspecionar mais detalhes desse teste. Para obter mais informações, consulte [Analisar resultados de teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 O valor de percentil de **Tempo de teste 95% (seg.)** informa que 95% dos testes foram concluídos em menos do que esse tempo em segundos.
 
-## <a name="key-statistic-top-5-slowest-sql-operations"></a>Estatística-chave: as 5 operações SQL mais lentas
+## <a name="key-statistic-top-5-slowest-sql-operations"></a>Estatística-chave: As 5 operações SQL mais lentas
 
 Se o rastreamento SQL for habilitado no teste de carga, a seção de consultas mais lenta conterá as 5 consultas mais lentas no teste de carga. O nome da operação e a duração do teste são exibidos para cada teste. A duração é exibida em microssegundos (SQL Server 2005) ou em milissegundos (SQL Server 2000 e anterior). Os testes são listados em ordem decrescente por duração. Você pode escolher o nome de uma operação para abrir a tabela **Rastreamento do SQL** e inspecionar mais detalhes dessa operação. Para obter mais informações, confira [A tabela de dados do Rastreamento do SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table).
 
@@ -95,7 +95,7 @@ A seção de resultados do teste contém uma lista de todos os testes e cenário
 
 ## <a name="page-results"></a>Resultados da página
 
-A seção de resultados da página contém uma lista de todas as páginas da Web no teste de carga. A URL, o cenário, o nome do teste, o tempo médio da página e a contagem são exibidos. Você pode escolher a URL de uma página para abrir a tabela **Páginas** e inspecionar mais detalhes dessa página. Para obter mais informações, confira [Como exibir a resposta da página da Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+A seção de resultados da página contém uma lista de todas as páginas da Web no teste de carga. A URL, o cenário, o nome do teste, o tempo médio da página e a contagem são exibidos. Você pode escolher a URL de uma página para abrir a tabela **Páginas** e inspecionar mais detalhes dessa página. Para obter mais informações, confira [Como: Exibir a resposta da página da Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 > [!NOTE]
 > Você pode recolher e expandir essa seção escolhendo a seta à esquerda do título da seção.

@@ -1,5 +1,5 @@
 ---
-title: Renomear um nome de arquivo para corresponder a um tipo no Visual Studio
+title: Renomear um nome de arquivo para que ele corresponda a um tipo
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8407e89d9e28c501358877df9c244175ca8155c8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bfc1a88091fa30bceea15a3f8e1b78df5cc7a87c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942316"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054781"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Refatoração Sincronizar um tipo para um nome de arquivo ou um nome de arquivo para um tipo
 
@@ -27,11 +27,11 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O quê:** permite que você renomeie um tipo para corresponder ao nome do arquivo, ou renomeie um nome de arquivo para corresponder ao tipo que ele contém.
+**O quê:** Permite renomear um tipo para que ele corresponda ao nome de arquivo ou renomear um nome de arquivo para que ele corresponda ao tipo que ele contém.
 
-**Quando:** você renomeou um arquivo ou tipo e ainda não atualizou o arquivo correspondente ou tipo a ser correspondido.
+**Quando:** Você renomeou um arquivo ou um tipo e ainda não atualizou o arquivo nem o tipo correspondente a ser correspondido.
 
-**Por quê:** se você colocar um tipo em um arquivo com um nome diferente, ou vice-versa, será difícil encontrar o que está procurando. Se você renomear o tipo ou nome de arquivo, o código se tornará mais legível e mais fácil de navegar.
+**Por que:** Se você colocar um tipo em um arquivo com um nome diferente ou vice-versa, será difícil encontrar o que está procurando. Se você renomear o tipo ou nome de arquivo, o código se tornará mais legível e mais fácil de navegar.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -56,11 +56,11 @@ Esta refatoração aplica-se a:
 
    O tipo ou o arquivo foi renomeado.
 
-   - C#: no exemplo abaixo, o arquivo **MyClass.cs** foi renomeado para **MyNewClass.cs** para corresponder ao nome do tipo.
+   - C#: No exemplo a seguir, o arquivo **MyClass.cs** foi renomeado para **MyNewClass.cs** para corresponder ao nome do tipo.
 
        ![Resultado embutido em C#](media/synctype-result-cs.png)
 
-   - Visual Basic: no exemplo abaixo, o arquivo **Employee.vb** foi renomeado para **Person.vb** para corresponder ao nome do tipo.
+   - Visual Basic: No exemplo a seguir, o arquivo **Employee.vb** foi renomeado para **Person.vb** para corresponder ao nome do tipo.
 
        ![Resultado embutido em Visual Basic](media/synctype-result-vb.png)
 

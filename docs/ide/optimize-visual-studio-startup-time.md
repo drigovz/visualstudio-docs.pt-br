@@ -1,5 +1,5 @@
 ---
-title: Melhorar o tempo de inicialização do Visual Studio
+title: Melhorar o tempo de inicialização
 ms.date: 11/15/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 20f56af789a84ef73c66e0cd50c87ec48a6212a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cccdf9cae50d886f5e44fa7bb403bdd4d38ad535
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884047"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067662"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Otimizar o tempo de inicialização do Visual Studio
 
@@ -59,11 +59,11 @@ Sempre é possível habilitar novamente a extensão para sessões futuras usando
 
 3. Escolha uma das seguintes três opções:
 
-   - **Usar comportamento padrão:** o comportamento padrão da janela de ferramentas. Manter essa opção selecionada não melhorará o desempenho de inicialização.
+   - **Use o comportamento padrão:** O comportamento padrão da janela de ferramentas. Manter essa opção selecionada não melhorará o desempenho de inicialização.
 
-   - **Não mostrar janela na inicialização:** a janela de ferramentas especificada sempre estará fechada ao abrir o Visual Studio, mesmo se ela for deixada aberta em uma sessão anterior. Você pode abrir a janela de ferramentas no menu apropriado quando necessário.
+   - **Não mostrar janela na inicialização:** A janela de ferramentas especificada sempre estará fechada quando você abrir o Visual Studio, mesmo se ela for deixada aberta em uma sessão anterior. Você pode abrir a janela de ferramentas no menu apropriado quando necessário.
 
-   - **Ocultar automaticamente janela na inicialização:** se uma janela de ferramentas tiver sido deixada aberta em uma sessão anterior, essa opção recolherá o grupo da janela de ferramentas na inicialização para evitar inicializar a janela de ferramentas. Essa opção é uma boa alternativa se você usa uma janela de ferramentas com frequência. A janela de ferramentas ainda está disponível, mas não afeta mais negativamente o tempo de inicialização do Visual Studio.
+   - **Ocultar automaticamente janela na inicialização:** Se uma janela de ferramentas for deixada aberta em uma sessão anterior, essa opção recolherá o grupo da janela de ferramentas na inicialização para evitar inicializar a janela de ferramentas. Essa opção é uma boa alternativa se você usa uma janela de ferramentas com frequência. A janela de ferramentas ainda está disponível, mas não afeta mais negativamente o tempo de inicialização do Visual Studio.
 
      ![Gerenciar o desempenho do Visual Studio – exibição da janela de ferramentas](../ide/media/vside_perfdialog_toolwindows.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Formatando o código do Python
-description: Como reformatar automaticamente o código Python no Visual Studio, incluindo espaçamento, instruções, quebra automática e comentários.
+title: Formatar o código do Python
+description: O Visual Studio pode reformatar automaticamente o código Python, incluindo espaçamento, instruções, disposição do texto e comentários.
 ms.date: 10/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b0ce6b5db57b4f6140fb164391ebf5c07e623baf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 452dc1104147e5b29dd38790cbfa726ad0de7b1f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219543"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052187"
 ---
 # <a name="format-python-code"></a>Formatar o código do Python
 
@@ -29,7 +30,7 @@ As opções são definidas por meio de **Ferramentas** > **Opções** > **Editor
 
 ![Opções de formatação de Python no Visual Studio](media/options-editor-formatting.png)
 
-As opções de formatação por padrão são definidas para corresponder a um subconjunto do [guia de estilo PEP 8](http://www.python.org/dev/peps/pep-0008/). A guia **Geral** determina quando a formatação é aplicada, as configurações para as outras três guias são descritas neste artigo.
+As opções de formatação por padrão são definidas para corresponder a um subconjunto do [guia de estilo PEP 8](https://www.python.org/dev/peps/pep-0008/). A guia **Geral** determina quando a formatação é aplicada, as configurações para as outras três guias são descritas neste artigo.
 
 O [suporte do Python no Visual Studio](installing-python-support-in-visual-studio.md) também adiciona o comando útil [**Preencher Parágrafo de Comentário**](#fill-comment-paragraph-command) ao menu **Editar** > **Avançado**, conforme descrito em uma seção posterior.
 

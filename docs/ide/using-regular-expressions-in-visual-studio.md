@@ -1,5 +1,5 @@
 ---
-title: Usar expressões regulares no Visual Studio
+title: Usar expressões regulares
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bef854fd04ce8ac2ddf6fe834b3bede0f371eefe
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 40983e4180db9530983217d581b898806dd85d27
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050294"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063792"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expressões regulares no Visual Studio
 
@@ -31,7 +31,7 @@ O Visual Studio usa [expressões regulares do .NET Framework](/dotnet/standard/b
 
 ## <a name="replacement-patterns"></a>Padrões de substituição
 
-Para usar um grupo de captura numerado, coloque o grupo entre parênteses no padrão de expressão regular. Use `$number`, em que `number` é um inteiro começando em 1, para especificar um grupo numerado específico em um padrão de substituição. Por exemplo, a expressão regular agrupada `(\d)([a-z])` define dois grupos: o primeiro grupo contém um único dígito decimal e o segundo grupo contém um único caractere entre **a** e **z**. A expressão localiza quatro correspondências na cadeia de caracteres a seguir: **1a 2b 3c 4d**. A cadeia de caracteres de substituição `z$1` referencia somente o primeiro grupo e converte a cadeia de caracteres em **z1 z2 z3 z4**.
+Para usar um grupo de captura numerado, coloque o grupo entre parênteses no padrão de expressão regular. Use `$number`, em que `number` é um inteiro começando em 1, para especificar um grupo numerado específico em um padrão de substituição. Por exemplo, a expressão regular agrupada `(\d)([a-z])` define dois grupos: o primeiro grupo contém um único dígito decimal e o segundo grupo contém um único caractere entre **a** e **z**. A expressão encontra quatro correspondências na seguinte cadeia de caracteres: **1a 2b 3c 4d**. A cadeia de caracteres de substituição `z$1` referencia somente o primeiro grupo e converte a cadeia de caracteres em **z1 z2 z3 z4**.
 
 Para obter informações sobre as expressões regulares usadas em padrões de substituição, consulte [Substituições em expressões regulares (guia do .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 

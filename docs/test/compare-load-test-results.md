@@ -1,5 +1,5 @@
 ---
-title: Comparar resultados de teste de carga no Visual Studio
+title: Comparando os resultados do teste de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fc54324f2c5bc91dba64aa35b125bbdc12ca1a45
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7edc5612015d9e0655dfbf00d4db38ba47fb6da9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895022"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066438"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Relatar resultados de teste de carga para comparações de testes ou análise de tendências
 
@@ -43,8 +43,8 @@ Além disso, o arquivo da planilha do Excel pode ser compartilhada com participa
 
 |Tarefas|Tópicos associados|
 |-|-|
-|**Criar um relatório de desempenho e estresse:** é possível criar relatórios com base nos testes de carga e de desempenho Web usando o Microsoft Excel.|- [Como criar relatórios de desempenho de teste de carga usando o Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
-|**Criar manualmente um relatório de desempenho e de estresse usando o Microsoft Word:** é possível criar relatórios com base em testes de carga e de desempenho Web copiando e colando manualmente o resumo, a tabela e os dados do gráfico em um documento do Microsoft Word.|- [Como criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
+|**Criar um relatório de desempenho e estresse:** Você pode criar relatórios sobre os testes de desempenho Web e de carga usando o Microsoft Excel.|- [Como: Criar relatórios de desempenho de teste de carga usando o Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
+|**Criar manualmente um relatório de desempenho e estresse usando o Microsoft Word:** Você pode criar relatórios sobre os testes de desempenho Web e de carga manualmente, copiando e colando o resumo, a tabela e os dados do grafo em um documento do Microsoft Word.|- [Como: Criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
 ## <a name="see-also"></a>Consulte também
 

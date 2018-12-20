@@ -1,5 +1,5 @@
 ---
-title: API de teste de carga no Visual Studio
+title: API de teste de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3b35b74f7adca4ff794f4d0c78b5585551864c8f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ea28bba2d59515ce8080d577248dd7bddee0c570
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894391"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049899"
 ---
-# <a name="how-to-use-the-load-test-api"></a>Como usar a API de teste de carga
+# <a name="how-to-use-the-load-test-api"></a>Como: Usar a API de teste de carga
 
 O Visual Studio dá suporte a plug-ins de teste de carga que podem controlar ou aprimorar um teste de carga. Os plug-ins de teste de carga são classes definidas pelo usuário que implementam a interface <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> localizada no namespace <xref:Microsoft.VisualStudio.TestTools.LoadTesting>. Os plug-ins de teste de carga permitem o controle personalizado do teste de carga, como anular um teste de carga quando um contador ou um limite de erros é atingido. Use as propriedades na classe <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> para obter ou definir parâmetros do teste de carga no código definido pelo usuário. Use os eventos na classe <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> para anexar delegados para notificações quando o teste de carga está em execução.
 
@@ -28,7 +28,7 @@ O Visual Studio dá suporte a plug-ins de teste de carga que podem controlar ou 
 > [!TIP]
 > Use o pesquisador de objetos para examinar o namespace <xref:Microsoft.VisualStudio.TestTools.LoadTesting>. Os editores do Visual C# e do Visual Basic oferecem suporte do IntelliSense para codificação com as classes no namespace.
 
-Você também pode criar plug-ins para testes de desempenho na Web. Para obter mais informações, confira [Como criar um plug-in de teste de desempenho Web](../test/how-to-create-a-web-performance-test-plug-in.md) e [Como criar um plug-in no nível da solicitação](../test/how-to-create-a-request-level-plug-in.md).
+Você também pode criar plug-ins para testes de desempenho na Web. Para obter mais informações, confira [Como: Criar um plug-in de teste de desempenho Web](../test/how-to-create-a-web-performance-test-plug-in.md) e [Como: Criar um plug-in de solicitação](../test/how-to-create-a-request-level-plug-in.md).
 
 ## <a name="to-use-the-loadtesting-namespace"></a>Para usar o namespace LoadTesting
 
@@ -59,11 +59,11 @@ Você também pode criar plug-ins para testes de desempenho na Web. Para obter m
 
 9. Execute o teste de carga.
 
-     Para obter uma implementação de <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>, confira [Como criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md).
+     Para ver uma implementação de <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>, confira [Como: Criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 - [Criar código personalizado e plug-ins para testes de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Como usar a API de teste de desempenho Web](../test/how-to-use-the-web-performance-test-api.md)
-- [Como criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md)
+- [Como: Usar a API de teste de desempenho Web](../test/how-to-use-the-web-performance-test-api.md)
+- [Como: Criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md)

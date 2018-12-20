@@ -1,5 +1,5 @@
 ---
-title: Atalhos de teclado padrão no Visual Studio
+title: Atalhos de teclado padrão
 ms.date: 06/26/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e11629849c29a3c3024fe7aea7b708b1b7d87a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c8e4e44409b45762eb6c43f16e93017ae0db3750
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854475"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061507"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
 
-Para obter mais informações sobre acessibilidade de teclado, consulte [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md) e [Como usar o teclado de forma exclusiva](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Para obter mais informações sobre acessibilidade de teclado, confira [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md) e [Como: Usar exclusivamente o teclado](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhendo o atalho de teclado apropriado. Este tópico lista os atalhos padrão para o perfil Desenvolvimento Geral, que você pode ter escolhido quando instalou o Visual Studio. Não importa qual o perfil escolhido, é possível identificar o atalho de um comando abrindo a caixa de diálogo **Opções**, expandindo o nó **Ambiente** e escolhendo **Teclado**. Também é possível personalizar seus atalhos atribuindo um atalho diferente a qualquer comando.
 

@@ -1,5 +1,5 @@
 ---
-title: Criar um suplemento do Visual Studio para o visualizador de resultados de testes de desempenho Web
+title: Criar um suplemento para o Visualizador de Resultados do Teste de Desempenho Web
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dbff48696a7fe10266a2c72fc3a3d9fb0e9ba81d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6672bd1e38dee5b27d350b9d2e12626cef122115
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896038"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068335"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Como criar um suplemento do Visual Studio para o Visualizador de Resultados de Teste de Desempenho Web
+# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Como: Criar um suplemento do Visual Studio para o Visualizador de Resultados do Teste de Desempenho Web
 
 Você pode estender a interface do usuário para o **Visualizador de Testes de Desempenho Web** usando os seguintes namespaces:
 
@@ -39,7 +39,7 @@ Para estender a interface do usuário do **Visualizador de Testes de Desempenho 
 Crie ou abra uma solução de não produção com a qual você poderá fazer experiências e que contenha um aplicativo Web do ASP.NET e um projeto de desempenho na Web, além de carregar o projeto de teste com um ou mais testes de desempenho na Web para o aplicativo Web do ASP.NET.
 
 > [!NOTE]
-> Você pode criar um aplicativo Web ASP.NET e um projeto de teste de carga e de desempenho Web que contém testes de desempenho Web seguindo os procedimentos de [Como criar um teste de serviço Web](../test/how-to-create-a-web-service-test.md) e [Gerar e executar um teste de desempenho Web codificado](../test/generate-and-run-a-coded-web-performance-test.md).
+> Crie um aplicativo Web ASP.NET e um projeto de teste de carga e de desempenho Web que contém testes de desempenho Web seguindo os procedimentos descritos em [Como: Criar um teste de serviço Web](../test/how-to-create-a-web-service-test.md) e [Gerar e executar um teste de desempenho Web codificado](../test/generate-and-run-a-coded-web-performance-test.md).
 
 ## <a name="create-a-visual-studio-add-in"></a>Criar um suplemento do Visual Studio
 

@@ -1,5 +1,5 @@
 ---
-title: Gerar uma substituição de método no Visual Studio
+title: Gerar uma substituição de método
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d51139d2e5197607de2255b267c24bf2a9db2b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb4a35c1f7c9e2752148e54f934a3fcbfb974136
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919059"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063636"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Gerar uma substituição no Visual Studio
 
@@ -24,11 +24,11 @@ Esta geração de código aplica-se a:
 
 - Visual Basic
 
-**O quê:** permite gerar imediatamente o código para qualquer método que possa ser substituído de uma classe base.
+**O quê:** Permite gerar imediatamente o código para qualquer método que possa ser substituído em uma classe base.
 
-**Quando:** você quer substituir um método de classe base e gerar a assinatura automaticamente.
+**Quando:** Você deseja substituir um método de classe base e gerar a assinatura automaticamente.
 
-**Por quê:** você mesmo poderia escrever a assinatura do método, no entanto, esse recurso gerará automaticamente a assinatura.
+**Por que:** Você mesmo pode escrever a assinatura do método; no entanto, essa funcionalidade gerará a assinatura automaticamente.
 
 ## <a name="how-to"></a>Como fazer
 

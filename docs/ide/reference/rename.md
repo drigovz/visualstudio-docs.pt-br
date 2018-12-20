@@ -1,5 +1,5 @@
 ---
-title: Refatoração Renomear no Visual Studio
+title: Renomeação de refatoração
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cde6fb353db2fc018104a031dd17b943b2b2247
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 02b08f3218ab6f1380884d2385899d6dd486bb81
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295950"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063147"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refatoração Renomear um símbolo de código
 
@@ -29,11 +29,11 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O quê:** permite renomear identificadores para símbolos de código, como campos, variáveis locais, métodos, namespaces, propriedades e tipos.
+**O quê:** Permite renomear identificadores para símbolos de código, como campos, variáveis locais, métodos, namespaces, propriedades e tipos.
 
-**Quando:** você deseja renomear algo com segurança sem a necessidade de localizar todas as instâncias e copiar/colar o novo nome.
+**Quando:** Você deseja renomear algo com segurança sem precisar localizar todas as instâncias e copiar/colar o novo nome.
 
-**Por quê:** copiar e colar o novo nome em um projeto inteiro provavelmente resultaria em erros. Essa ferramenta de refatoração realizará com precisão a ação de renomeação.
+**Por que:** Copiar e colar o novo nome em um projeto inteiro provavelmente resultará em erros. Essa ferramenta de refatoração realizará com precisão a ação de renomeação.
 
 ## <a name="how-to"></a>Como fazer
 

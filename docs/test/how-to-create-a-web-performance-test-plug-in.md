@@ -1,5 +1,5 @@
 ---
-title: Criar um plug-in de teste de desempenho Web para o Visual Studio
+title: Criar um plug-in de teste de desempenho Web
 ms.date: 10/03/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 365b1be6dd3c383c42b08d2c480db7fad104c48f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: f4848fbaed6df9817cd9f0ddf16f388d855f5cd9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894515"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067648"
 ---
-# <a name="how-to-create-a-web-performance-test-plug-in"></a>Como criar um plug-in de teste de desempenho Web
+# <a name="how-to-create-a-web-performance-test-plug-in"></a>Como: Criar um plug-in de teste de desempenho Web
 
 Plug-ins de teste de desempenho na Web permitem isolar e reutilizar o código fora das instruções declarativas principais no teste de desempenho na Web. Um plug-in de teste de desempenho na Web personalizado oferece uma maneira de chamar um código quando o teste de desempenho na Web é executado. O plug-in de teste de desempenho na Web é executado uma vez para cada iteração de teste. Além disso, se você substituir os métodos PreRequest ou PostRequest no plug-in de teste, esses plug-ins de solicitação serão executados antes ou depois de cada solicitação, respectivamente.
 
@@ -31,7 +31,7 @@ Você pode criar um plug-in de teste de desempenho na Web personalizado com sua 
 Você pode usar plug-ins de teste de desempenho na Web personalizados com os testes de desempenho na Web que você gravou, o que permite escrever uma quantidade mínima de código para obter um nível de maior controle sobre os testes de desempenho na Web. No entanto, também é possível usá-los com testes de desempenho na Web codificados. Para obter mais informações, consulte [Gerar e executar um teste de desempenho Web codificado](../test/generate-and-run-a-coded-web-performance-test.md).
 
 > [!NOTE]
-> Você também pode criar plug-ins de teste de carga. Confira [Como criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md).
+> Você também pode criar plug-ins de teste de carga. Confira [Como: Criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-create-a-custom-web-performance-test-plug-in"></a>Para criar um plug-in de teste de desempenho Web personalizado
 
@@ -111,7 +111,7 @@ Você pode usar plug-ins de teste de desempenho na Web personalizados com os tes
     > [!WARNING]
     > Você talvez receba um erro semelhante ao seguinte quando executar um teste de desempenho na Web ou um teste de carga usando seu plug-in:
     >
-    > **Falha na solicitação: exceção em \<plug-in> evento: não foi possível carregar arquivo ou assembly '\<"Nome do plug-in".dll arquivo>, versão =\<n.n.n. n >, Culture=neutral, PublicKeyToken=null' ou uma de suas dependências. O sistema não pode localizar o arquivo especificado.**
+    > **Falha na solicitação: Exceção no evento \<plug-in>: Não foi possível carregar o arquivo ou o assembly '\<Arquivo "Nome do plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' ou uma de suas dependências. O sistema não pode localizar o arquivo especificado.**
     >
     > Isso acontecerá se você fizer alterações no código de qualquer um de seus plug-ins e criar uma nova versão de DLL **(versão=0.0.0.0)**, mas o plug-in ainda estiver referenciando a versão original do plug-in. Para corrigir esse problema, siga estas etapas:
     >
@@ -177,8 +177,8 @@ namespace SampleRules
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - [Criar código personalizado e plug-ins para testes de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Como criar um plug-in no nível da solicitação](../test/how-to-create-a-request-level-plug-in.md)
+- [Como: Criar um plug-in de solicitação](../test/how-to-create-a-request-level-plug-in.md)
 - [Codificar uma regra de extração personalizada para um teste de desempenho Web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Codificar uma regra de validação personalizada para um teste de desempenho Web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Como criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md)
+- [Como: Criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md)
 - [Gerar e executar um teste de desempenho Web codificado](../test/generate-and-run-a-coded-web-performance-test.md)

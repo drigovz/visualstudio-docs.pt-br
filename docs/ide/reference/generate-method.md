@@ -1,5 +1,5 @@
 ---
-title: Gerar um método no Visual Studio
+title: Gerar um método
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d6d7d17810e53de80bfecff697e960613dc06a6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 1e5cf156c6c17e8a9bf1fb9f40f75c1e72b7be94
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295846"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057172"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Gerar um método no Visual Studio
 
@@ -24,11 +24,11 @@ Esta geração de código aplica-se a:
 
 - Visual Basic
 
-**O quê:** permite que você adicione imediatamente um método a uma classe.
+**O quê:** Permite adicionar imediatamente um método a uma classe.
 
-**Quando:** você introduz um novo método e deseja declará-lo correta e automaticamente.
+**Quando:** Você introduz um novo método e deseja declará-lo correta e automaticamente.
 
-**Por quê:** você poderia declarar o método e os parâmetros antes de usá-los; no entanto, esse recurso gerará a declaração automaticamente.
+**Por que:** Você pode declarar o método e os parâmetros antes de usá-los; no entanto, essa funcionalidade gerará a declaração automaticamente.
 
 ## <a name="how-to"></a>Como fazer
 

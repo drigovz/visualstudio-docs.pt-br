@@ -1,5 +1,5 @@
 ---
-title: Mover a declaração de variável para perto da referência no Visual Studio
+title: Mover a declaração de variável para perto da referência
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b3a231aafce69bfeeaff7defee6d5f85c7ffc8b2
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9bc661331ee03af6d34caeae847b717db1f21fc5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896595"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065336"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Mover declaração de variável para perto da referência no Visual Studio
 
@@ -24,11 +24,11 @@ Esta refatoração aplica-se a:
 
 - C#
 
-**O quê:** permite mover declarações de variável mais próximo do seu uso.
+**O quê:** Permite mover declarações de variável para mais perto de seu uso.
 
-**Quando:** você tem declarações de variável que podem estar em um escopo mais restrito.
+**Quando:** Você tem declarações de variável que podem estar em um escopo mais restrito.
 
-**Por quê:** você pode deixá-lo como está, mas isso pode causar problemas de legibilidade ou ocultação de informações. Esta é uma chance de refatorar para melhorar a legibilidade.
+**Por que:** Você pode deixá-lo como está, mas isso pode causar problemas de legibilidade ou ocultação de informações. Esta é uma chance de refatorar para melhorar a legibilidade.
 
 ## <a name="how-to"></a>Como fazer
 

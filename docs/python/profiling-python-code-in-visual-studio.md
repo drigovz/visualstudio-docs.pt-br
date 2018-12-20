@@ -1,6 +1,6 @@
 ---
-title: Medindo o desempenho do código Python
-description: Como usar o criador de perfil do Visual Studio para verificar o desempenho do código Python ao usar interpretadores baseados em CPython.
+title: Medir o desempenho do código Python
+description: Use o criador de perfil do Visual Studio para verificar o desempenho do código Python ao usar interpretadores baseados em CPython.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0b5ca29b061f0ba61eec775a0344fb8d2067e08d
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 931bbcea67d8595ec171ef7e08756aa5b84cc2e4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607478"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062933"
 ---
 # <a name="profile-python-code"></a>Criar perfil do código do Python
 

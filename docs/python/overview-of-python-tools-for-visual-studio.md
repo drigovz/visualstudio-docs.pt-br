@@ -1,5 +1,6 @@
 ---
-title: Visão geral do suporte para Python no Visual Studio no Windows
+title: Suporte do Python no Visual Studio no Windows
+titleSuffix: ''
 description: Resumo dos recursos do Python no Visual Studio, que fazem dele o melhor IDE do Python no Windows (também conhecido como PTVS, Ferramentas Python para Visual Studio).
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fba2c426db3269a1f9bef3a0759bd6ffaa7f447e
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: cec872f5df927bae3caf20f35d4bcd8f8e7460b3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001328"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068533"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Trabalhar com Python no Visual Studio no Windows
 
@@ -43,9 +45,9 @@ Use o comando **Abrir janela interativa** para executar o Python de maneira inte
 
 Para saber mais:
 
-- Vídeo (00:02:35): [Gerenciar ambientes do Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
-- Docs: [Gerenciar ambientes do Python](managing-python-environments-in-visual-studio.md)
-- Docs: [Referência a Ambientes do Python](python-environments-window-tab-reference.md)
+- Vídeo (2min35s): [Gerenciar ambientes do Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
+- Documentação: [Gerenciar ambientes do Python](managing-python-environments-in-visual-studio.md)
+- Documentação: [Referência aos Ambientes do Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Edição avançada, IntelliSense e compreensão do código
 
@@ -55,12 +57,12 @@ O Visual Studio oferece um editor de Python de primeira classe, incluindo colora
 
 Para saber mais:
 
-- Vídeo (00:02:30): [Editar o código Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
-- Docs: [Editar o código Python](editing-python-code-in-visual-studio.md)
-- Docs: [Formatar o código](formatting-python-code.md)
-- Docs: [Refatorar o código](refactoring-python-code.md)
-- Docs: [Usar um linter](linting-python-code.md)
-- Documentos de recursos gerais do Visual Studio: [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md)
+- Vídeo (2min30s): [Editar o código Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
+- Documentação: [Editar o código Python](editing-python-code-in-visual-studio.md)
+- Documentação: [Formatar código](formatting-python-code.md)
+- Documentação: [Refatorar o código](refactoring-python-code.md)
+- Documentação: [Usar um linter](linting-python-code.md)
+- Documentação de funcionalidades gerais do Visual Studio: [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>Janela Interativa
 
@@ -74,9 +76,9 @@ O Visual Studio também é compatível com IPython/Jupyter no REPL, incluindo gr
 
 Para saber mais:
 
-- Vídeo (00:02:22): [Janela Interativa do Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
-- Docs: [Janela Interativa](python-interactive-repl-in-visual-studio.md)
-- Docs: [IPython no Visual Studio](interactive-repl-ipython.md)
+- Vídeo (2min22s): [Janela Interativa do Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
+- Documentação: [Janela Interativa](python-interactive-repl-in-visual-studio.md)
+- Documentação: [IPython no Visual Studio](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>Sistema de projeto e modelos de projeto e de item
 
@@ -90,12 +92,12 @@ Modelos de projeto e de item automatizam o processo de configuração de diferen
 
 Para saber mais:
 
-- Docs: [Gerenciar projetos Python](managing-python-projects-in-visual-studio.md)
-- Documentos: [referência de modelos de item](python-item-templates.md)
-- Docs: [Modelos de projeto Python](managing-python-projects-in-visual-studio.md#project-templates)
-- Docs: [Trabalhar com C++ e Python](working-with-c-cpp-python-in-visual-studio.md)
-- Docs de recursos gerais do Visual Studio: [Modelos de projeto e de item](../ide/creating-project-and-item-templates.md#visual-studio-templates)
-- Docs de recursos gerais do Visual Studio: [Soluções e projetos no Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- Documentação: [Gerenciar projetos do Python](managing-python-projects-in-visual-studio.md)
+- Documentação: [Referência de modelos de item](python-item-templates.md)
+- Documentação: [Modelos de projeto do Python](managing-python-projects-in-visual-studio.md#project-templates)
+- Documentação: [Trabalhar com o C++ e o Python](working-with-c-cpp-python-in-visual-studio.md)
+- Documentação de funcionalidades gerais do Visual Studio: [Modelos de projeto e item](../ide/creating-project-and-item-templates.md#visual-studio-templates)
+- Documentação de funcionalidades gerais do Visual Studio: [Soluções e projetos no Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 
 ## <a name="full-featured-debugging"></a>Depuração completa
 
@@ -105,11 +107,11 @@ Um dos pontos fortes do Visual Studio é seu depurador avançado. Para Python es
 
 Para saber mais:
 
-- Vídeo: [Depurando o Python, 00:03:32](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
-- Docs: [Depurar o Python](debugging-python-in-visual-studio.md)
-- Docs: [Depuração de modo misto Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
-- Docs: [Depuração remota no Linux](debugging-python-code-on-remote-linux-machines.md)
-- Docs de recursos gerais do Visual Studio: [Tour de recursos do depurador do Visual Studio](../debugger/debugger-feature-tour.md)
+- Vídeo: [Depurando o Python, 3min32s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
+- Documentação: [Depurar o Python](debugging-python-in-visual-studio.md)
+- Documentação: [Depuração de modo misto do Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
+- Documentação: [Depuração remota no Linux](debugging-python-code-on-remote-linux-machines.md)
+- Documentação de funcionalidades gerais do Visual Studio: [Tour de funcionalidades do depurador do Visual Studio](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>Ferramentas de criação de perfil com relatórios abrangentes
 
@@ -119,9 +121,9 @@ A criação de perfil explora como o tempo está sendo gasto no aplicativo. O Vi
 
 Para saber mais:
 
-- Vídeo: [Criação de perfil do Python 00:03:00](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
-- Docs: [Ferramentas de criação de perfil do Python](profiling-python-code-in-visual-studio.md)
-- Docs de recursos gerais do Visual Studio: [Tour do recurso de criação de perfil](../profiling/profiling-feature-tour.md). (Nem todos os recursos de criação de perfil do Visual Studio estão disponíveis para Python).
+- Vídeo: [Criação de perfil do Python, 3min00s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
+- Documentação: [Ferramentas de criação de perfil do Python](profiling-python-code-in-visual-studio.md)
+- Documentação de funcionalidades gerais do Visual Studio: [Tour de funcionalidades de criação de perfil](../profiling/profiling-feature-tour.md). (Nem todos os recursos de criação de perfil do Visual Studio estão disponíveis para Python).
 
 ## <a name="unit-testing-tools"></a>Ferramentas de teste de unidade
 
@@ -131,9 +133,9 @@ Descubra, execute e gerencie testes no **Gerenciador de Testes** do Visual Studi
 
 Para saber mais:
 
-- Vídeo: [Testando o Python 00:02:31](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
-- Docs: [Ferramentas de teste de unidade do Python](unit-testing-python-in-visual-studio.md)
-- Docs de recursos gerais do Visual Studio: [Execute teste de unidade no código](../test/unit-test-your-code.md).
+- Vídeo: [Testando o Python, 2min31s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
+- Documentação: [Ferramentas de teste de unidade do Python](unit-testing-python-in-visual-studio.md)
+- Documentação de funcionalidades gerais do Visual Studio: [Executar teste de unidade no código](../test/unit-test-your-code.md).
 
 ## <a name="azure-sdk-for-python"></a>SDK do Azure para Python
 
@@ -145,7 +147,7 @@ Para obter mais informações, veja [SDK do Azure para Python](azure-sdk-for-pyt
 
 |   |   |
 |---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | <ul><li>[Introdução à programação com o Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Iniciante no Python: cadeias de caracteres e funções](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Conceitos básicos do Python: Lista e loops](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Principais perguntas sobre o Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | <ul><li>[Introdução à programação com o Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Iniciante em Python: Cadeias de caracteres e funções](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Conceitos básicos do Python: Lista e loops](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Principais perguntas sobre o Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Perguntas e respostas
 

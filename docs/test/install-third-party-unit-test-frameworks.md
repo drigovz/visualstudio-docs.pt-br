@@ -9,20 +9,22 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ffd6b8c66f0575ec07e66ea2a138f2761b20cc7a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8acdeb17c9c45613d6a987d503deeaf63beecdaa
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379632"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52954078"
 ---
-# <a name="install-third-party-unit-test-frameworks"></a>Instalar estruturas de teste de unidade de terceiros
+# <a name="install-unit-test-frameworks"></a>Instalar estruturas de teste de unidade
 
 O Gerenciador de Testes do Visual Studio pode executar qualquer estrutura de teste de unidade que desenvolveu uma interface de adaptador para o Gerenciador. O programa de instalação da estrutura instala os binários e adiciona modelos de projeto do Visual Studio para os idiomas que ele dá suporte. Quando você cria um projeto com o modelo, a estrutura é registrada com o Gerenciador de Testes. Uma solução do Visual Studio pode conter projetos de teste de unidade que usam diferentes estruturas e que são direcionados em diferentes idiomas. O Gerenciador de Testes executa todos eles.
 
-## <a name="acquire-third-party-frameworks"></a>Adquirir estruturas de terceiros
+O [MSTest](getting-started-with-unit-testing.md) é a estrutura de teste fornecida pelo Visual Studio e é instalada com o Visual Studio por padrão.
 
-Você pode baixar e instalar diversas estruturas de teste de unidade de terceiros usando o Gerenciador de Extensões do Visual Studio ou o Visual Studio Marketplace. Estruturas também podem ser baixadas de outros sites, como o site da estrutura.
+## <a name="acquire-frameworks"></a>Adquirir estruturas
+
+Baixe e instale estruturas de teste de unidade de terceiros usando o Gerenciador de Extensões do Visual Studio ou o [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Estruturas também podem ser baixadas de outros sites, como o site da estrutura.
 
 ### <a name="install-from-visual-studio"></a>Instalar do Visual Studio
 
@@ -64,7 +66,7 @@ Atualização para o adaptador de teste estável mais recente para aproveitar me
 
 1. Abra o Gerenciador de Pacotes Nuget da solução navegando até **Ferramentas** > **Gerenciador de Pacotes NuGet** > **Gerenciar Pacotes NuGet da Solução**.
 
-2. Clique na guia **Atualizações** e procurar os adaptadores de teste NUnit ou xUnit que estão instalados.
+2. Clique na guia **Atualizações** e pesquise os adaptadores de teste do MSTest, NUnit ou xUnit que estão instalados.
 
 3. Selecione cada adaptador de teste e, em seguida, selecione a última versão estável no menu suspenso.
 

@@ -1,5 +1,5 @@
 ---
-title: Inserir comentários da documentação XML no Visual Studio
+title: Inserir comentários da documentação XML
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e3c38e46a5c73d1f8018f56f76b971939ba8c316
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04ee7c992fc67e0025bd2481d392a38806d51ed9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945422"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063468"
 ---
-# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Como inserir comentários XML para geração de documentação
+# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Como: Inserir comentários XML para geração de documentação
 
 O Visual Studio pode ajudá-lo a documentar os elementos de código, como classes e métodos, gerando automaticamente a estrutura padrão de comentários da documentação XML. No tempo de compilação, você pode gerar um arquivo XML contendo os comentários da documentação. O arquivo XML gerado pelo compilador pode ser distribuído em conjunto com o assembly do .NET para que o Visual Studio e outros IDEs possam usar o IntelliSense para mostrar informações rápidas sobre os tipos e membros. Além disso, o arquivo XML pode ser executado por ferramentas como [DocFX](https://dotnet.github.io/docfx/) e [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) para gerar sites de referência de API.
 
@@ -33,7 +33,7 @@ O Visual Studio pode ajudá-lo a documentar os elementos de código, como classe
 
    - No menu **Editar**, escolha **IntelliSense** > **Inserir Comentário**
 
-   - No menu acionado com o botão direito do mouse ou menu de contexto, no elemento de código ou logo acima dele, escolha **Trecho de Código** > **Inserir Comentário**
+   - No menu acionado com o botão direito do mouse ou menu de contexto, no elemento de código ou logo acima dele, escolha **Snippet de Código** > **Inserir Comentário**
 
    O modelo XML é gerado imediatamente acima do elemento de código. Por exemplo, quando um método é comentado, ele gera o elemento **\<summary\>**, um elemento **\<param\>** para cada parâmetro e um elemento **\<returns\>** para documentar o valor retornado.
 
@@ -52,7 +52,7 @@ O Visual Studio pode ajudá-lo a documentar os elementos de código, como classe
 
 - [Comentários da documentação XML (Guia de Programação em C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Documentando seu código com comentários em XML (Guia do C#)](/dotnet/csharp/codedoc)
-- [Como criar documentação XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
+- [Como: Criar documentação XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [Comentários C++](/cpp/cpp/comments-cpp)
 - [Documentação XML (C++)](/cpp/ide/xml-documentation-visual-cpp)
 - [Geração de código](../code-generation-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: Opções de linha de comando devenv do Visual Studio
+title: Opções de linha de comando do Devenv
 ms.date: 02/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 818bbb38fab706dde2f4d36d5a534e0a351a6450
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 3bf255a0e4eb622cb81718ddfc30d5b568bad2c2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948888"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063390"
 ---
 # <a name="devenv-command-line-switches"></a>Opções de linha de comando do Devenv
 
@@ -82,7 +82,7 @@ As opções de linha de comando a seguir não exibem o IDE.
 |[/Build](../../ide/reference/build-devenv-exe.md)|Cria a solução ou o projeto especificado de acordo com a configuração da solução especificada.<br /><br /> `devenv myproj.csproj /build`|
 |[/Clean](../../ide/reference/clean-devenv-exe.md)|Exclui os arquivos criados pelo comando de build sem afetar os arquivos de origem.<br /><br /> `devenv myproj.csproj /clean`|
 |[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Compila a solução, juntamente com os arquivos necessários para a implantação, de acordo com a configuração de soluções.<br /><br /> `devenv myproj.csproj /deploy`|
-|[/Diff](../../ide/reference/diff.md)|Compara dois arquivos. Assume quatro parâmetros: SourceFile, TargetFile, SourceDisplayName (opcional), TargetDisplayName (opcional).|
+|[/Diff](../../ide/reference/diff.md)|Compara dois arquivos. Usa quatro parâmetros: SourceFile, TargetFile, SourceDisplayName (opcional), TargetDisplayName (opcional).|
 |[/Out](../../ide/reference/out-devenv-exe.md)|Permite que você especifique um arquivo para receber erros ao compilar.<br /><br /> `devenv myproj.csproj /build /out log.txt`|
 |[/Project](../../ide/reference/project-devenv-exe.md)|O projeto a ser criado, limpo ou implantado. Será possível usar essa opção somente se você tiver fornecido também a opção /build, /rebuild, /clean ou /deploy.|
 |[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|Especifica a configuração de projeto a ser criada ou implantada. Será possível usar essa opção somente se você tiver fornecido a opção /project.|

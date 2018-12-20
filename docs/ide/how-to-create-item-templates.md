@@ -1,5 +1,5 @@
 ---
-title: Criar modelos de item para o Visual Studio
+title: Criar modelos de item
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +9,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 342b7ebd17280c47296fae43c6541a5e969ad5f3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b871c5c502c026a8a374af232888c09f18798a0c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954656"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062451"
 ---
-# <a name="how-to-create-item-templates"></a>Como criar modelos de item
+# <a name="how-to-create-item-templates"></a>Como: Criar modelos de item
 
-Este artigo mostra como criar um modelo de item usando o **Assistente de Exportação de Modelo**. Se seu modelo for composto por em vários arquivos, consulte [Como criar modelos de item de vários arquivos](../ide/how-to-create-multi-file-item-templates.md).
+Este artigo mostra como criar um modelo de item usando o **Assistente de Exportação de Modelo**. Se o modelo consistir em vários arquivos, confira [Como: Criar modelos de item de vários arquivos](../ide/how-to-create-multi-file-item-templates.md).
 
 ## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>Para adicionar um modelo de item de usuário para a caixa de diálogo Adicionar Novo Item
 
@@ -26,7 +26,7 @@ Este artigo mostra como criar um modelo de item usando o **Assistente de Exporta
 
 1. Adicione um item ao projeto e modifique-o caso desejar.
 
-1. Modifique o arquivo de código para indicar em que ponto a substituição de parâmetro deve ocorrer. Para obter mais informações, consulte [Como substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md).
+1. Modifique o arquivo de código para indicar em que ponto a substituição de parâmetro deve ocorrer. Para obter mais informações, confira [Como: Substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md).
 
 1. No menu **Projeto**, escolha **Exportar Modelo**.
 
@@ -113,7 +113,7 @@ Em alguns casos, convém criar um modelo de item manualmente, desde o início.
 
 1. Modifique o item de projeto até que ele esteja pronto para ser salvo como um modelo.
 
-1. Modifique o arquivo de código para indicar o ponto em que a substituição de parâmetro deve ocorrer, caso ela ocorra em algum ponto. Para saber mais sobre substituição de parâmetro, confira [Como substituir parâmetros em um modelo.](../ide/how-to-substitute-parameters-in-a-template.md)
+1. Modifique o arquivo de código para indicar o ponto em que a substituição de parâmetro deve ocorrer, caso ela ocorra em algum ponto. Para obter mais informações sobre a substituição de parâmetro, confira [Como: Substituir parâmetros em um modelo.](../ide/how-to-substitute-parameters-in-a-template.md)
 
 1. Crie um arquivo XML e salve-o com uma extensão de arquivo *.vstemplate* no mesmo diretório que o arquivo de item de projeto.
 
@@ -123,10 +123,10 @@ Em alguns casos, convém criar um modelo de item manualmente, desde o início.
 
 1. No **Windows Explorer**, selecione os arquivos que você deseja incluir no modelo. Clique com o botão direito do mouse na seleção e escolha **Enviar para** > **Pasta compactada (zipada)**. Os arquivos selecionados são compactados em um arquivo *.zip*.
 
-1. Copie o arquivo *.zip* e cole-o no local do modelo de item do usuário. No Visual Studio de 2017, o diretório padrão é *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Para obter mais informações, consulte [Como localizar e organizar modelos de projeto e de item](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Copie o arquivo *.zip* e cole-o no local do modelo de item do usuário. No Visual Studio de 2017, o diretório padrão é *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Para obter mais informações, confira [Como: Localizar e organizar modelos de projeto e de item](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Consulte também
 
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
-- [Como criar modelos de item multiarquivos](../ide/how-to-create-multi-file-item-templates.md)
+- [Como: Criar modelos de item de vários arquivos](../ide/how-to-create-multi-file-item-templates.md)
 - [Referência de esquema de modelo do Visual Studio (extensibilidade)](../extensibility/visual-studio-template-schema-reference.md)

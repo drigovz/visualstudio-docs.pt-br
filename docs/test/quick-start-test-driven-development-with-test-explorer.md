@@ -1,5 +1,5 @@
 ---
-title: Desenvolvimento Orientado por Testes com o Gerenciador de Testes no Visual Studio
+title: Desenvolvimento orientado por testes com o Gerenciador de Testes
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8dcdd51a53c27ffe5a1bde3170c683d8b1a753b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3303f45006fd0f85d2e11434043091d3f72b469e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837081"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062893"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Início Rápido: Desenvolvimento orientado por testes com o Gerenciador de Testes
 
@@ -53,13 +53,13 @@ ms.locfileid: "49837081"
 
     O Gerenciador de Testes abre e exibe um resumo dos resultados.
 
-   **Para ver uma lista completa de testes,** escolha **Mostrar Tudo** em qualquer categoria.
+   **Para ver uma lista completa de testes:** Escolha **Mostrar Tudo** em qualquer categoria.
 
-   **Para ver os detalhes de um resultado do teste:** selecione o teste no Gerenciador de Testes para exibir detalhes como mensagens de exceção no painel de detalhes.
+   **Para ver os detalhes de um resultado do teste:** Selecione o teste no Gerenciador de Testes para exibir detalhes como mensagens de exceção no painel de detalhes.
 
-   **Para navegar para o código de um teste,** clique duas vezes no teste no Gerenciador de Testes ou escolha **Abrir Teste** no menu de atalho.
+   **Para navegar para o código de um teste:** Clique duas vezes no teste no Gerenciador de Testes ou escolha **Abrir Teste** no menu de atalho.
 
-   **Para depurar um teste,** abra o menu de atalho para um ou mais testes e escolha **Depurar Testes Selecionados**.
+   **Para depurar um teste:** Abra o menu de atalho de um ou mais testes e, em seguida, escolha **Depurar Testes Selecionados**.
 
 > [!IMPORTANT]
 > Os resultados que são exibidos são para as execuções mais recentes. A barra colorida de resultados mostra somente os resultados dos testes que foram executados. Por exemplo, se você executar vários testes e alguns deles falharem e executar apenas os testes com sucesso, a barra de resultados mostrará todos na cor verde.

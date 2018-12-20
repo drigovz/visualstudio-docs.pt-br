@@ -1,6 +1,6 @@
 ---
-title: Depurando código em Python
-description: Um passo a passo dos recursos de depuração no Visual Studio, especificamente para código Python, incluindo pontos de interrupção, passo a passo, inspeção dos valores, observação de exceções e depuração na janela interativa.
+title: Depurar o código Python
+description: O Visual Studio fornece depuração avançada para o código Python, incluindo a definição de pontos de interrupção, execução em etapas, inspeção de valores, análise de exceções e depuração na janela interativa.
 ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101154"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068429"
 ---
 # <a name="debug-your-python-code"></a>Depurar o código do Python
 
@@ -54,7 +55,7 @@ Uma sessão de depuração é iniciada com o comando **Depurar** > **Iniciar Dep
 
 Os pontos de interrupção interrompem a execução de código em um ponto marcado, para que você possa inspecionar o estado do programa. Defina pontos de interrupção clicando na margem esquerda do editor de códigos ou clicando com o botão direito do mouse em uma linha de código e selecionando **Ponto de Interrupção** > **Inserir Ponto de Interrupção**. Um ponto vermelho é exibido em cada linha com um ponto de interrupção.
 
-![Pontos de interrupção no Visual Studio](media/debugging-breakpoints.png)
+![Pontos de interrupção exibidos no Visual Studio](media/debugging-breakpoints.png)
 
 Se você clicar no ponto vermelho ou clicar com o botão direito do mouse na linha de código e selecionar **Ponto de Interrupção** > **Excluir Ponto de Interrupção**, o ponto de interrupção será removido. Desabilite-o também sem removê-lo usando o comando **Ponto de Interrupção** > **Desabilitar Ponto de Interrupção**.
 
@@ -87,27 +88,27 @@ Quando estiver parado no depurador, é possível inspecionar e modificar os valo
 
 Para exibir um valor usando **DataTips**, basta passar o mouse sobre qualquer variável no editor. É possível clicar no valor para alterá-lo:
 
-![DataTips no depurador](media/debugging-quick-tips.png)
+![DataTips mostradas no depurador do Visual Studio](media/debugging-quick-tips.png)
 
 A janela **Automáticos** (**Depurar** > **Janelas** > **Automáticos**) contém variáveis e expressões que estão próximas à instrução atual. Clique duas vezes na coluna de valor ou selecione e pressione **F2** para editar o valor:
 
-![Janela Automáticos no depurador](media/debugging-autos-window.png)
+![Janela Automáticos no depurador do Visual Studio](media/debugging-autos-window.png)
 
 A janela **Locais** (**Depurar** > **Janelas** > **Locais**) exibe todas as variáveis que estão no escopo atual, que podem ser editadas novamente:
 
-![Janela Locais no depurador](media/debugging-locals-window.png)
+![Janela Locais no depurador do Visual Studio](media/debugging-locals-window.png)
 
 Para obter mais informações sobre como usar **Automáticos** e **Locais**, confira [Inspecionar variáveis nas janelas Automáticos e Locais](../debugger/autos-and-locals-windows.md).
 
 A janela **Inspeção** (**Depurar** > **Janelas** > **Inspeção** > **Inspecionar 1-4**) permite inserir expressões arbitrárias do Python e exibir os resultados. As expressões são reavaliadas para cada etapa:
 
-![Janela Inspeção no depurador](media/debugging-watch-window.png)
+![Janela Inspeção no depurador do Visual Studio](media/debugging-watch-window.png)
 
 Para obter mais informações sobre como usar a janela **Inspeção**, confira [Definir uma inspeção em variáveis usando as janelas Inspeção e QuickWatch](../debugger/watch-and-quickwatch-windows.md).
 
 Ao inspecionar um valor de cadeia de caracteres (`str`, `unicode`, `bytes` e `bytearray` são considerados cadeias de caracteres para essa finalidade), um ícone de lupa é exibido no lado direito do valor. Se você clicar no ícone, o valor de cadeia de caracteres sem aspas será exibido em uma caixa de diálogo pop-up, com encapsulamento e rolagem, o que é útil para cadeias de caracteres longas. Além disso, selecionar a seta suspensa no ícone permite que você selecione visualizações de texto sem formatação, HTML, XML e JSON:
 
-![Visualizadores de cadeia de caracteres](media/debugging-string-visualizers.png)
+![Visualizadores de cadeia de caracteres no depurador do Visual Studio](media/debugging-string-visualizers.png)
 
 As visualizações de HTML, XML e JSON são exibidas em janelas pop-up separadas com modos de exibição de árvore e realce de sintaxe.
 
@@ -115,13 +116,13 @@ As visualizações de HTML, XML e JSON são exibidas em janelas pop-up separadas
 
 Se ocorrer um erro no programa durante a depuração, mas você não tiver um manipulador de exceção para ele, o depurador interromperá no ponto da exceção:
 
-![Pop-up de exceção](media/debugging-exception-popup.png)
+![Pop-up de exceção no depurador do Visual Studio](media/debugging-exception-popup.png)
 
 Neste ponto, é possível inspecionar o estado do programa, incluindo a pilha de chamadas. No entanto, se você tentar executar o código em etapas, a exceção continuará sendo gerada até que ela seja tratada ou o programa seja encerrado.
 
 O comando de menu **Depurar** > **Janelas** > **Configurações de Exceção** abre uma janela na qual é possível expandir **Exceções do Python**:
 
-![Janela Exceções](media/debugging-exception-settings.png)
+![Janela Exceções no depurador do Visual Studio](media/debugging-exception-settings.png)
 
 A caixa de seleção de cada exceção controla se o depurador *sempre* interrompe quando é acionado. Marque essa caixa quando desejar interromper com mais frequência para uma exceção específica.
 
@@ -133,7 +134,7 @@ Para configurar uma exceção que não aparece nessa lista, clique no botão **A
 
 Por padrão, o depurador inicia o programa com o inicializador padrão do Python, sem argumentos de linha de comando e sem nenhum outro caminho ou condição especial. As opções de inicialização são alteradas por meio das propriedades de depuração do projeto, acessadas no **Gerenciador de Soluções** clicando com o botão direito do mouse no projeto selecionando **Propriedades** e a guia **Depuração**.
 
-![Propriedades de depuração de projeto](media/debugging-project-properties.png)
+![Propriedades de depuração do projeto no depurador do Visual Studio](media/debugging-project-properties.png)
 
 ### <a name="launch-mode-options"></a>Opções de modo de inicialização
 

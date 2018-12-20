@@ -1,5 +1,5 @@
 ---
-title: Como importar resultados de teste de carga para um repositório no Visual Studio
+title: 'Como: Importar os resultados do teste de carga para um repositório'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 80bb7f0998dd8ee1bc46105892e0e6f4e23b74c1
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4f4b62f13a78ae716fd7bfe4e1a158450590a864
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895061"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065980"
 ---
-# <a name="how-to-import-load-test-results-into-a-repository"></a>Como importar resultados do teste de carga para um repositório
+# <a name="how-to-import-load-test-results-into-a-repository"></a>Como: Importar os resultados do teste de carga para um repositório
 
 Quando você executar um teste de carga, as informações coletadas durante a execução serão armazenadas no Repositório de Resultados de Testes de Carga. O Repositório de Resultados de Testes de Carga contém dados do contador de desempenho e informações sobre todos os erros. Para obter mais informações, confira [Gerenciar resultados do teste de carga no repositório de resultados do teste de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
@@ -59,4 +59,4 @@ Quando você executar um teste de carga, as informações coletadas durante a ex
 
 - [Gerenciar resultados do teste de carga no repositório de Resultados do Teste de Carga](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Como exportar resultados do teste de carga de um repositório](../test/how-to-export-load-test-results-from-a-repository.md)
+- [Como: Exportar os resultados do teste de carga de um repositório](../test/how-to-export-load-test-results-from-a-repository.md)

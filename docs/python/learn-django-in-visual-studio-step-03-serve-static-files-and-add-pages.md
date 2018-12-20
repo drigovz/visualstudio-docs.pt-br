@@ -1,5 +1,6 @@
 ---
-title: Tutorial – Saiba mais sobre Django no Visual Studio, etapa 3
+title: Tutorial Aprenda a usar o Django no Visual Studio, etapa 3, páginas e arquivos estáticos
+titleSuffix: ''
 description: Uma explicação dos conceitos básicos do Django no contexto de projetos do Visual Studio, demonstrando especificamente como fornecer arquivos estáticos, adicionar páginas ao aplicativo e usar a herança do modelo
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bea209e2d7cf751c66f3e627311a2985c79f55c3
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: cfde21f356e35366cfb80b029f918eed0364a7b5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001289"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066074"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Etapa 3: Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo
 
@@ -46,7 +48,7 @@ Para usar um modelo, selecione o modelo desejado, especifique um nome para o arq
 
 Resposta: O arquivo de projeto do Visual Studio (*.pyproj*) contém um identificador de tipo de projeto que o marca como um projeto do Python. O Visual Studio usa esse identificador de tipo para mostrar apenas os modelos de item adequados para o tipo de projeto. Dessa forma, o Visual Studio pode fornecer um conjunto avançado de modelos de item para muitos tipos de projeto sem solicitar que você os classifique toda vez.
 
-## <a name="step-3-2-serve-static-files-from-your-app"></a>Etapa 3-2: Fornecer arquivos estáticos do seu aplicativo
+## <a name="step-3-2-serve-static-files-from-your-app"></a>Etapa 3-2: Fornecer arquivos estáticos por meio do aplicativo
 
 Em um aplicativo Web criado com Python (usando qualquer estrutura), seus arquivos em Python sempre são executados no servidor do host da Web e nunca são transmitidos para o computador de um usuário. Mas outros arquivos, como CSS e JavaScript, são usados exclusivamente pelo navegador, de modo que o servidor do host simplesmente os entrega como estão sempre que são solicitados. Esses arquivos são chamados de "estáticos", e o Django pode fornecê-los automaticamente sem que você precise escrever algum código.
 
@@ -95,13 +97,13 @@ Você pode organizar os arquivos usando qualquer estrutura de pastas desejada de
 
 1. Execute o projeto para observar os resultados. Pare o servidor quando terminar e confirme as alterações no controle do código-fonte se desejar (conforme explicado na [etapa 2](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)).
 
-### <a name="question-what-is-the-purpose-of-the--load-staticfiles--tag"></a>Pergunta: Qual é a finalidade da marcação {% load staticfiles %}?
+### <a name="question-what-is-the-purpose-of-the--load-staticfiles--tag"></a>Pergunta: Qual é a finalidade da tag {% load staticfiles %}?
 
 Resposta: A linha `{% load staticfiles %}` é necessária antes da referência a arquivos estáticos em elementos como `<head>` e `<body>`. No exemplo mostrado nesta seção, "staticfiles" se refere a um conjunto de marcações de modelo do Django personalizado que permite o uso da sintaxe `{% static %}` para se referir a arquivos estáticos.  Sem `{% load staticfiles %}`, você verá uma exceção quando o aplicativo for executado.
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Pergunta: Há convenções para organizar arquivos estáticos?
 
-Resposta: Você pode adicionar outros arquivos CSS, JavaScript e HTML à sua pasta *static* como quiser. Uma maneira comum de organizar arquivos estáticos é criar subpastas chamadas *fonts*, *scripts* e *content* (para folhas de estilo e outros arquivos). Em cada caso, lembre-se de incluir essas pastas no caminho relativo para o arquivo nas referências `{% static %}`.
+Resposta: Você pode adicionar outros arquivos CSS, JavaScript e HTML à pasta *static* como desejar. Uma maneira comum de organizar arquivos estáticos é criar subpastas chamadas *fonts*, *scripts* e *content* (para folhas de estilo e outros arquivos). Em cada caso, lembre-se de incluir essas pastas no caminho relativo para o arquivo nas referências `{% static %}`.
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>Etapa 3-3: Adicionar uma página ao aplicativo
 
@@ -164,7 +166,7 @@ As etapas a seguir adicionam uma página "Sobre" ao projeto "HelloDjangoApp" e l
 
 1. Execute o projeto para observar os resultados e verificar a navegação entre as páginas. Feche o servidor ao terminar.
 
-### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Pergunta: Tentei usar "index" no link para a página inicial, mas não funcionou. Por quê?
+### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Pergunta: Tentei usar "index" no link para a home page, mas não funcionou. Por quê?
 
 Resposta: Embora a função de exibição em *views.py* seja nomeada `index`, os padrões de roteamento de URL no arquivo *urls.py* do projeto do Django não contêm uma expressão regular que corresponda à cadeia de caracteres "index". Para fazer a correspondência com essa cadeia de caracteres, você precisa adicionar outra entrada para o padrão `^index$`.
 

@@ -1,5 +1,5 @@
 ---
-title: Analisando violações de regra de limite em testes de carga no Visual Studio
+title: Analisando violações de regra de limite em testes de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 17a79e4c684ee60d18288bc30ce1e3fce83dc8a5
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895425"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061805"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisando violações de regra de limite em testes de carga usando o Analisador de Teste de Carga
 
@@ -39,7 +39,7 @@ Se ocorrer qualquer violação, um hiperlink de **violações de limite** aparec
 |Column|Descrição|Visível por padrão|
 |-|-|-|
 |Hora|O tempo durante o teste de carga em que a violação ocorreu.|Sim|
-|Computador|O nome do computador em teste em que a violação ocorreu. **Observação:** isso é importante quando você executa testes de carga em equipamentos.|Sim|
+|Computador|O nome do computador em teste em que a violação ocorreu. **Observação:**  Isso é importante quando você executa testes de carga em equipamentos.|Sim|
 |Categoria|A categoria do contador de desempenho em que a violação ocorreu.|Sim|
 |Contador|O nome do contador de desempenho em que a violação ocorreu.|Sim|
 |Instância|A instância do contador de desempenho em que a violação ocorreu.|Sim|

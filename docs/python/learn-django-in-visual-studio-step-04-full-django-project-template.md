@@ -1,5 +1,6 @@
 ---
-title: Tutorial – Saiba mais sobre Django no Visual Studio, etapa 4
+title: Tutorial Aprenda a usar o Django no Visual Studio, etapa 4, modelo de projeto Web
+titleSuffix: ''
 description: Um passo a passo dos conceitos básicos do Django no contexto dos projetos do Visual Studio, especificamente os recursos fornecidos pelo modelo Projeto Web do Django.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,17 +9,18 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f087086343623d0a8e698821902a5cf92598061e
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 865a0368933fa0a66728afaead6677cbeca84834
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001198"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065455"
 ---
-# <a name="step-4-use-the-full-django-web-project-template"></a>Etapa 4: Usar o modelo Projeto Web do Django completo
+# <a name="step-4-use-the-full-django-web-project-template"></a>Etapa 4: Usar o modelo completo de Projeto Web do Django
 
 **Etapa anterior: [Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
@@ -87,7 +89,7 @@ No entanto, para usar um ambiente virtual existente, faça o seguinte:
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Etapa 4-2: Entender os modos de exibição e os modelos de página criados pelo modelo de projeto
 
-Quando você executa o projeto, observe que o aplicativo contém três modos de exibição: Página inicial, Sobre e Contato. O código dessas exibições é encontrado na pasta *app/views*. Cada função de exibição simplesmente chama `django.shortcuts.render` com o caminho para um modelo e um objeto de dicionário simples. Por exemplo, a página Sobre é tratada pela função `about`:
+Quando você executar o projeto, observe que o aplicativo contém três modos de exibição: Página Inicial, Sobre e Contato. O código dessas exibições é encontrado na pasta *app/views*. Cada função de exibição simplesmente chama `django.shortcuts.render` com o caminho para um modelo e um objeto de dicionário simples. Por exemplo, a página Sobre é tratada pela função `about`:
 
 ```python
 def about(request):
@@ -165,7 +167,7 @@ Na pasta *templates/app*, também se encontra uma quarta página *login.html*, j
 
 ### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Pergunta: {% block %} e {% endblock %} podem ser recuados no modelo de página do Django?
 
-Resposta: Sim, os modelos de página do Django funcionam bem se você recuar marcas de bloco, talvez para alinhá-los em seus elementos pai apropriados. Eles não estão recuados nos modelos de página gerados pelo modelo de projeto do Visual Studio para que você possa ver claramente onde eles estão colocados.
+Resposta: Sim, os modelos de página do Django funcionam bem se você recua as marcas de bloco, talvez para alinhá-las em seus elementos pai apropriados. Eles não estão recuados nos modelos de página gerados pelo modelo de projeto do Visual Studio para que você possa ver claramente onde eles estão colocados.
 
 ## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Etapa 4-3: Entender o roteamento de URL criado pelo modelo
 
@@ -208,7 +210,7 @@ Os três primeiros padrões de URL são mapeados diretamente para as exibições
 
 ### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Pergunta: No projeto que criei, por que o padrão de URL "about" usa '^about' em vez de '^about$', como mostrado aqui?
 
-Resposta: A falta do '$' à direita na expressão regular foi um erro simples em várias versões do modelo do projeto. O padrão de URL funciona perfeitamente bem para uma página chamada "sobre", mas sem o '$' à direita, o padrão de URL também corresponde a URLs como "about=django", "about09876", "aboutoflaughter" e assim por diante. O '$' à direita é mostrado aqui para criar um padrão de URL que corresponde a *somente* "sobre".
+Resposta: A falta do '$' à direita na expressão regular foi um erro simples em muitas versões do modelo de projeto. O padrão de URL funciona perfeitamente bem para uma página chamada "sobre", mas sem o '$' à direita, o padrão de URL também corresponde a URLs como "about=django", "about09876", "aboutoflaughter" e assim por diante. O '$' à direita é mostrado aqui para criar um padrão de URL que corresponde a *somente* "sobre".
 
 ## <a name="next-steps"></a>Próximas etapas
 

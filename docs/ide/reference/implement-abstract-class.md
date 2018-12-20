@@ -1,5 +1,5 @@
 ---
-title: Implementar uma classe abstrata no Visual Studio
+title: Implementar uma classe abstrata
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4da74a60741ac33143efd7aecf0a4275185b6d3b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: dfa2c6692ddcef9e41454bf902580f354c32f861
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294690"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047597"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implementar uma classe abstrata no Visual Studio
 
@@ -24,11 +24,11 @@ Esta geração de código aplica-se a:
 
 - Visual Basic
 
-**O quê:** permite gerar imediatamente o código necessário para implementar uma classe abstrata.
+**O quê:** Permite gerar imediatamente o código necessário para implementar uma classe abstrata.
 
-**Quando:** você deseja herdar de uma classe abstrata.
+**Quando:** Você deseja herdar de uma classe abstrata.
 
-**Por quê:** você pode implementar manualmente todos os membros abstratos um por um; no entanto, esse recurso gerará automaticamente todas as assinaturas de método.
+**Por que:** Você pode implementar manualmente todos os membros abstratos um por um; no entanto, essa funcionalidade gerará todas as assinaturas de método automaticamente.
 
 ## <a name="how-to"></a>Como fazer
 

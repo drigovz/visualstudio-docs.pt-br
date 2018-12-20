@@ -1,5 +1,5 @@
 ---
-title: Especificar eventos de build personalizados no Visual Studio
+title: Especificar eventos de build personalizados
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29273ff1580d7fcb757a979309d38f599a9ff499
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6c5bde6b6dce7655043f3dc766a5faa81fa944e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908724"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055122"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Especificar eventos de build personalizados no Visual Studio
 
@@ -25,9 +25,9 @@ Ao especificar um evento de build personalizado, é possível executar comandos 
 
  Para obter informações específicas sobre a linguagem de programação que está sendo usada, consulte os seguintes tópicos:
 
--   Visual Basic – [Como especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+-   Visual Basic – [Como: Especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   C# e F # – [Como especificar eventos de build (C#)](../ide/how-to-specify-build-events-csharp.md).
+-   C# e F# – [Como: Especificar eventos de build (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 -   Visual C++ – [Especificar eventos de build](/cpp/ide/specifying-build-events).
 
@@ -61,4 +61,4 @@ Os eventos de build seguem a mesma sintaxe dos comandos do DOS, mas é possível
 - [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)
 - [Caixa de diálogo da linha de comando do evento de pré-build/evento de pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Caracteres especiais do MSBuild](../msbuild/msbuild-special-characters.md)
-- [Passo a passo: Compilar um aplicativo](../ide/walkthrough-building-an-application.md)
+- [Passo a passo: Criar um aplicativo](../ide/walkthrough-building-an-application.md)

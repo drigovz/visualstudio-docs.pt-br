@@ -1,23 +1,24 @@
 ---
 title: Configurar aplicativos Web do Python para o IIS
 description: Como configurar aplicativos Web do Python para execução com os Serviços de Informações da Internet de uma máquina virtual do Windows.
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4452eca221a772c2f0fd519df533e35468f3ecd8
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 8de69c64cac5c841867f5d993395e5ab380625eb
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459538"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062891"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Configurar aplicativos Web do Python para o IIS
 
@@ -113,14 +114,14 @@ Em seguida, modifique o arquivo *web.config* do aplicativo para incluir os camin
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask**: altere o valor de `WSGI_HANDLER` para `<project_name>.app`, em que `<project_name>` corresponde ao nome do seu projeto. Você pode localizar o identificador exato examinando a instrução `from <project_name> import app` no *runserver.py*. Por exemplo, se o projeto fosse denominado "FlaskAzurePublishExample", a entrada seria semelhante ao seguinte:
+    - **Flask**: Altere o valor de `WSGI_HANDLER` para `<project_name>.app`, em que `<project_name>` corresponde ao nome do projeto. Você pode localizar o identificador exato examinando a instrução `from <project_name> import app` no *runserver.py*. Por exemplo, se o projeto fosse denominado "FlaskAzurePublishExample", a entrada seria semelhante ao seguinte:
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->
         <add key="WSGI_HANDLER" value="flask_iis_example.app"/>
         ```
 
-    - **Django**: duas alterações são necessárias no *web.config* para projetos Django. Primeiro, altere o valor de `WSGI_HANDLER` para `django.core.wsgi.get_wsgi_application()` (o objeto está no arquivo *wsgi.py*):
+    - **Django**: Duas alterações são necessárias em *web.config* para projetos do Django. Primeiro, altere o valor de `WSGI_HANDLER` para `django.core.wsgi.get_wsgi_application()` (o objeto está no arquivo *wsgi.py*):
 
         ```xml
         <!-- Django apps only -->
@@ -133,7 +134,7 @@ Em seguida, modifique o arquivo *web.config* do aplicativo para incluir os camin
         <add key="DJANGO_SETTINGS_MODULE" value="django_iis_example.settings" />
         ```
 
-1. **Somente aplicativos do Django**: no arquivo *settings.py* do projeto do Django, adicione o domínio de URL do site ou o endereço IP para `ALLOWED_HOSTS`, conforme mostrado abaixo, substituindo '1.2.3.4' por endereço IP ou URL, claro:
+1. **Somente para aplicativos Django**: No arquivo *settings.py* do projeto do Django, adicione o domínio de URL do site ou o endereço IP a `ALLOWED_HOSTS`, conforme mostrado abaixo, substituindo '1.2.3.4' pela URL ou pelo endereço IP, obviamente:
 
     ```python
     # Change the URL or IP address to your specific site

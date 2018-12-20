@@ -1,5 +1,5 @@
 ---
-title: Definir o tema de cores e as fontes no Visual Studio
+title: Definir as fontes e o tema de cores
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 511c9d44e9aac49c0150be5a13651e5368e10eaf
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42627056"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159406"
 ---
-# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Início rápido: Personalizar o Editor e o IDE do Visual Studio
+# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Início Rápido: Personalizar o Editor e o IDE do Visual Studio
 
 Neste início rápido de 5 a 10 minutos, nós personalizaremos o tema de cores do Visual Studio, selecionando o tema escuro. Além disso, personalizaremos as cores para dois tipos diferentes de texto no editor de texto.
 
@@ -100,4 +100,4 @@ Exploramos apenas duas maneiras de personalizar as cores no Visual Studio. Esper
 ## <a name="see-also"></a>Consulte também
 
 - [Personalizar o editor](../ide/customizing-the-editor.md)
-- [Visão geral do Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visão geral do Visual Studio IDE](../get-started/visual-studio-ide.md)

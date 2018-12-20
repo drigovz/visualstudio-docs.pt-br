@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 025adc3a99e2c5aabe2588852885e537553ddce6
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: a4ef6ebbbce03dce7105b49100c9c8f50c44e5e4
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219270"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159796"
 ---
-# <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Início rápido: crie seu primeiro aplicativo Web Python usando o Visual Studio
+# <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Início Rápido: Criar seu primeiro aplicativo Web do Python usando o Visual Studio
 
 Nesta introdução de 5 a 10 minutos do Visual Studio como um IDE do Python, você criará um aplicativo Web Python simples na estrutura Flask. Crie o projeto por meio de etapas simples para ajudarão a saber mais sobre os recursos básicos do Visual Studio.
 
@@ -44,9 +44,9 @@ As seguintes etapas criam um projeto vazio que serve como um contêiner para o a
 
     ![Gerenciador de Soluções mostrando o projeto vazio recém-criado](media/quickstart-python-01-empty-project.png)
 
-**Pergunta: Qual é a vantagem de criar um projeto no Visual Studio para um aplicativo de Python?**
+**Pergunta: Qual é a vantagem de criar um projeto no Visual Studio para um aplicativo do Python?**
 
-**Resposta**: Os aplicativos Python costumam ser definidos usando somente arquivos e pastas, mas essa estrutura simples pode se tornar complexa conforme os aplicativos aumentam e talvez envolvem arquivos gerados automaticamente, JavaScript para aplicativos Web e assim por diante. Um projeto do Visual Studio ajuda a gerenciar essa complexidade. O projeto (um arquivo *.pyproj*) identifica todos os arquivos de origem e de conteúdo associados ao projeto, contém informações de build de cada arquivo, mantém as informações para a integração com sistemas de controle de código-fonte e ajuda a organizar o aplicativo em componentes lógicos.
+**Resposta**: Os aplicativos do Python costumam ser definidos usando somente arquivos e pastas, mas essa estrutura simples pode se tornar complexa conforme os aplicativos aumentam e talvez envolvam arquivos gerados automaticamente, JavaScript para aplicativos Web e assim por diante. Um projeto do Visual Studio ajuda a gerenciar essa complexidade. O projeto (um arquivo *.pyproj*) identifica todos os arquivos de origem e de conteúdo associados ao projeto, contém informações de build de cada arquivo, mantém as informações para a integração com sistemas de controle de código-fonte e ajuda a organizar o aplicativo em componentes lógicos.
 
 **Pergunta: O que é a "solução" mostrada no Gerenciador de Soluções?**
 
@@ -62,15 +62,15 @@ Aqui, use as etapas a seguir para instalar a biblioteca Flask no "ambiente globa
 
     ![Gerenciador de soluções mostrando o ambiente padrão](media/quickstart-python-02-default-environment.png)
 
-1. Clique com o botão direito do mouse no ambiente e selecione **Instalar pacote Python**. Esse comando abre a janela **Ambientes de Python** na guia Pacotes.
+1. Clique com o botão direito do mouse no ambiente e selecione **Instalar pacote Python**. Esse comando abre a janela **Ambientes de Python** na guia **Pacotes**.
 
 1. Insira “flask” no campo de pesquisa e selecione **pip install flask from PyPI**. Aceite os prompts de privilégios de administrador e observe o andamento na janela **Saída** janela no Visual Studio. (Um prompt para elevação é exibido quando a pasta de pacotes do ambiente global está localizada em uma área protegida como *C:\Arquivos de Programas*.)
 
-    ![Instalar a biblioteca Flask](media/quickstart-python-03-install-package.png)
+    ![Instalando a biblioteca do Flask usando a instalação de PIP](media/quickstart-python-03-install-package.png)
 
 1. Uma vez instalada, a biblioteca aparece no ambiente em **Gerenciador de Soluções**, o que significa que você pode utilizá-la no código Python.
 
-    ![Biblioteca Flask instalada](media/quickstart-python-04-package-installed.png)
+    ![Biblioteca do Flask instalada e mostrada no Gerenciador de Soluções](media/quickstart-python-04-package-installed.png)
 
 > [!Note]
 > Em vez de instalar as bibliotecas no ambiente global, os desenvolvedores geralmente criam um “ambiente virtual” no qual instalar bibliotecas para um projeto específico. Modelos do Visual Studio geralmente oferecem essa opção, conforme discutido em [Início Rápido: criar um projeto de Python usando um modelo](../python/quickstart-02-python-in-visual-studio-project-from-template.md).
@@ -116,7 +116,7 @@ Agora você está pronto para adicionar um pouco de código Python para implemen
 
 **Pergunta: Onde posso saber mais sobre o Flask?**
 
-**Resposta**: Consulte a documentação do Flask, começando pelo [Início Rápido do Flask](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart).
+**Resposta**: Veja a documentação do Flask, começando pelo [Início Rápido do Flask](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart).
 
 ## <a name="run-the-application"></a>Executar o aplicativo
 
@@ -140,7 +140,7 @@ Agora você está pronto para adicionar um pouco de código Python para implemen
 
 **Pergunta: Qual é a diferença entre o comando Iniciar Sem Depuração e Iniciar Depuração?**
 
-**Resposta**: Use **Iniciar Depuração** para executar o aplicativo no contexto do [depurador do Visual Studio](../python/debugging-python-in-visual-studio.md), o que permite que você defina pontos de interrupção, examine variáveis e depure seu código linha por linha. Os aplicativos podem ser executados mais lentamente no depurador devido aos vários ganchos que possibilitam a depuração. **Iniciar Sem Depuração**, por outro lado, executa o aplicativo diretamente, como se fosse executado na linha de comando, sem nenhum contexto de depuração, e também inicia automaticamente um navegador e navega para a URL especificada na guia  **Depurar** das propriedades do projeto.
+**Resposta**: Use **Iniciar Depuração** para executar o aplicativo no contexto do [depurador do Visual Studio](../python/debugging-python-in-visual-studio.md), o que permite que você defina pontos de interrupção, examine variáveis e execute o código em etapas linha por linha. Os aplicativos podem ser executados mais lentamente no depurador devido aos vários ganchos que possibilitam a depuração. **Iniciar Sem Depuração**, por outro lado, executa o aplicativo diretamente, como se fosse executado na linha de comando, sem nenhum contexto de depuração, e também inicia automaticamente um navegador e navega para a URL especificada na guia  **Depurar** das propriedades do projeto.
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -151,10 +151,10 @@ Parabéns por executar seu primeiro aplicativo do Python no Visual Studio. Você
 
 Como as etapas seguidas neste Início Rápido são razoavelmente genéricas, você provavelmente percebeu que elas podem e devem ser automatizadas. Essa automação é a função dos modelos de projeto do Visual Studio. Acompanhe o [Início Rápido – Criar um projeto Python usando um modelo](../python/quickstart-02-python-in-visual-studio-project-from-template.md) para obter uma demonstração que cria um aplicativo Web semelhante ao que você criou neste artigo, mas com menos etapas.
 
-Para continuar com um tutorial mais completo sobre o Python no Visual Studio, incluindo o uso da janela interativa, da depuração, da visualização de dados e o trabalho com o Git, acompanhe o [Tutorial: Introdução ao Python no Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
+Para continuar com um tutorial mais completo sobre o Python no Visual Studio, incluindo o uso da janela interativa, depuração, visualização de dados e trabalho com o Git, acompanhe o [Tutorial: Introdução ao Python no Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 
 Para explorar mais do que o Visual Studio tem a oferecer, selecione os links abaixo.
 
 - Saiba mais sobre os [Modelos de aplicativo Web Python no Visual Studio](../python/python-web-application-project-templates.md).
 - Saiba mais sobre [Depuração de Python](../python/debugging-python-in-visual-studio.md)
-- Saiba mais sobre o [IDE do Visual Studio](../ide/visual-studio-ide.md) de modo geral.
+- Saiba mais sobre o [IDE do Visual Studio](../get-started/visual-studio-ide.md) de modo geral.

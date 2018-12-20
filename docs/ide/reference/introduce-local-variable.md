@@ -1,5 +1,5 @@
 ---
-title: Introduzir uma variável local no Visual Studio
+title: Introduzir variável local
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 173173e090f285fcaf6fc9d7c94ba85b692d68e2
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 108477845bb79d5ed13cb3ebdf3121e4960455a6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948342"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068076"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introduzir uma variável local no Visual Studio
 
@@ -24,11 +24,11 @@ Esta geração de código aplica-se a:
 
 - Visual Basic
 
-**O quê:** permite gerar imediatamente uma variável local para substituir uma expressão existente.
+**O quê:** Permite gerar imediatamente uma variável local para substituir uma expressão existente.
 
-**Quando:** você tiver um código que poderia ser facilmente reutilizado posteriormente se estivesse em uma variável local.
+**Quando:** Você tem um código que poderá ser reutilizado com facilidade posteriormente se ele estiver em uma variável local.
 
-**Por quê:** você poderia copiar e colar o código várias vezes a fim de usá-lo em vários locais. No entanto, seria melhor executar a operação uma vez, armazenar o resultado em uma variável local e usar a variável local durante todo o processo.
+**Por que:** Você pode copiar e colar o código várias vezes para usá-lo em vários locais. No entanto, é melhor executar a operação uma vez, armazenar o resultado em uma variável local e usar a variável local durante todo o processo.
 
 ## <a name="how-to"></a>Como fazer
 

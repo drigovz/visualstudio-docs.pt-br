@@ -1,6 +1,6 @@
 ---
 title: Depuração de modo misto para Python
-description: Como depurar simultaneamente C++ e Python no Visual Studio, incluindo a troca entre ambientes, valores de exibição e expressões de avaliação.
+description: Depure simultaneamente o C++ e o Python no Visual Studio, incluindo execução em etapas entre ambientes, exibição de valores e avaliação de expressões.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2038f681578c3410b8b4dc1fe67552064e0e2d93
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 42d413ab8d96ccd5533afe99cffb2c05c8ac7d6f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607829"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052229"
 ---
 # <a name="debug-python-and-c-together"></a>Depurar o Python e o C++ juntos
 
@@ -35,11 +36,11 @@ Os recursos de depuração de modo misto incluem o seguinte, conforme explicado 
 - Veja as representações de Python de objetos em quadros nativos e vice-versa
 - Depuração dentro do contexto do projeto do Python ou C++
 
-![Depuração de modo misto](media/mixed-mode-debugging.png)
+![Depuração de modo misto do Python no Visual Studio](media/mixed-mode-debugging.png)
 
 |   |   |
 |---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | Para obter uma introdução ao build, ao teste e à depuração de módulos nativos do C com o Visual Studio, assista ao vídeo [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (Aprofundamento: Criar módulos nativos) (youtube.com, 9min09s). O vídeo aplica-se para o Visual Studio 2015 e 2017. |
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | Para obter uma introdução à criação, ao teste e à depuração de módulos nativos do C com o Visual Studio, assista ao vídeo [Aprofundamento: Criar módulos nativos](https://youtu.be/D9RlT06a1EI) (youtube.com, 9min09s). O vídeo aplica-se para o Visual Studio 2015 e 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Habilitar a depuração de modo misto em um projeto do Python
 
@@ -96,7 +97,7 @@ Para todas as versões anteriores do Visual Studio, a depuração direta de modo
 
 A janela **Pilha de Chamadas** mostra os registros de ativação nativo e do Python intercalados, com transições marcadas entre os dois:
 
-![Pilha de chamadas combinada](media/mixed-mode-debugging-call-stack.png)
+![Pilha de chamadas combinada com a depuração de modo misto](media/mixed-mode-debugging-call-stack.png)
 
 As transições serão exibidas como **[Código Externo]**, sem especificar a direção da transição, se a opção **Ferramentas** > **Opções** > **Depuração** > **Geral** > **Habilitar Apenas Meu Código** estiver definida.
 
@@ -110,11 +111,11 @@ Ao usar os comandos **Intervir** (**F11**) ou **Depuração Circular** (**Shift*
 
 Quando um quadro nativo (C ou C++) está ativo, suas variáveis locais são mostradas na janela **Locais** do depurador. Nos módulos de extensão nativos do Python, muitas dessas variáveis são do tipo `PyObject` (que é um typedef de `_object`) ou alguns outros tipos fundamentais do Python (consulte a lista abaixo). Na depuração de modo misto, esses valores apresentam um nó filho adicional rotulado **[exibição do Python]**. Quando expandido, esse nó mostra a representação do Python da variável, idêntica a que você veria se uma variável local referenciando o mesmo objeto estivesse presente em um quadro do Python. Os filhos desse nó são editáveis.
 
-![Exibição do Python](media/mixed-mode-debugging-python-view.png)
+![Exibição do Python na janela Locais](media/mixed-mode-debugging-python-view.png)
 
 Para desabilitar esse recurso, clique com o botão direito do mouse em qualquer lugar da janela **Locais** e ative/desative a opção de menu **Python** > **Mostrar Nós de Exibição do Python**:
 
-![Habilitando a exibição do Python](media/mixed-mode-debugging-enable-python-view.png)
+![Habilitando a Exibição do Python na janela Locais](media/mixed-mode-debugging-enable-python-view.png)
 
 Tipos C que mostram nós de **[Exibição do Python]** (se estiverem habilitados):
 
@@ -143,11 +144,11 @@ Uma opção alternativa (e melhor) é seguir o [PEP 3123](https://www.python.org
 
 Semelhante à seção anterior, habilite uma **[Exibição do C++]** para valores nativos na janela **Locais** quando um quadro do Python estiver ativo. Esse recurso não está habilitado por padrão; portanto, ative-o clicando com o botão direito do mouse na janela **Locais** e ativando/desativando a opção de menu **Python** > **Mostrar Nós de Exibição do C++**.
 
-![Habilitando a exibição do C++](media/mixed-mode-debugging-enable-cpp-view.png)
+![Habilitando a Exibição do C++ na janela Locais](media/mixed-mode-debugging-enable-cpp-view.png)
 
 O nó **[exibição do C++]** fornece uma representação da estrutura subjacente do C/C++ de um valor, idêntico ao que você verá em um quadro nativo. Por exemplo, ele mostra uma instância de `_longobject` (para a qual `PyLongObject` é um typedef) de um inteiro longo do Python e tenta inferir tipos para as classes nativas criadas por conta própria. Os filhos desse nó são editáveis.
 
-![Exibição do C++](media/mixed-mode-debugging-cpp-view.png)
+![Exibição do C++ na janela Locais](media/mixed-mode-debugging-cpp-view.png)
 
 Se um campo filho de um objeto for do tipo `PyObject` ou um dos outros tipos compatíveis, ele terá um nó de representação **[exibição do Python]** (se essas representações estiverem habilitadas), possibilitando a navegação por grafos de objeto em que os links não são diretamente expostos ao Python.
 
@@ -169,9 +170,9 @@ O depurador de modo misto é diferente do [depurador padrão do Python](debuggin
 
 - Funcionalidades sem suporte: pontos de interrupção condicionais, janela **Interativa de Depuração** e depuração remota multiplataforma.
 - Janela **Imediata**: disponível, mas com um subconjunto limitado de sua funcionalidade, incluindo todas as limitações listadas aqui.
-- Versões do Python com suporte: somente CPython 2.7 e 3.3+.
-- Shell do Visual Studio: ao usar o Python com o Shell do Visual Studio (por exemplo, se ele tiver sido instalado por meio do instalador integrado), o Visual Studio não poderá abrir projetos do C++ e a experiência de edição para arquivos do C++ será apenas a de um editor de texto básico. No entanto, há suporte completo para a depuração do C/C++ e a depuração de modo misto no Shell com código-fonte, execução em etapas em código nativo e avaliação de expressão do C++ nas janelas do depurador.
-- Exibindo e expandindo objetos: ao exibir objetos do Python nas janelas **Locais** e **Inspeção** da ferramenta do depurador, o depurador de modo misto mostra apenas a estrutura dos objetos. Ele não avalia propriedades automaticamente nem mostra atributos computados. Para coleções, ele mostra apenas os elementos de tipos de coleção interna (`tuple`, `list`, `dict`, `set`). Os tipos de coleção personalizada não são visualizados como coleções, a menos que sejam herdados de algum tipo de coleção interna.
+- Versões do Python com suporte: Somente CPython 2.7 e 3.3+.
+- Shell do Visual Studio: Ao usar o Python com o Shell do Visual Studio (por exemplo, se você o instalar por meio do instalador integrado), o Visual Studio não poderá abrir projetos do C++ e a experiência de edição para arquivos do C++ será apenas a de um editor de texto básico. No entanto, há suporte completo para a depuração do C/C++ e a depuração de modo misto no Shell com código-fonte, execução em etapas em código nativo e avaliação de expressão do C++ nas janelas do depurador.
+- Exibindo e expandindo objetos: Ao exibir objetos do Python nas janelas **Locais** e **Inspeção** da ferramenta do depurador, o depurador de modo misto mostra apenas a estrutura dos objetos. Ele não avalia propriedades automaticamente nem mostra atributos computados. Para coleções, ele mostra apenas os elementos de tipos de coleção interna (`tuple`, `list`, `dict`, `set`). Os tipos de coleção personalizada não são visualizados como coleções, a menos que sejam herdados de algum tipo de coleção interna.
 - Avaliação de expressão: consulte abaixo.
 
 ### <a name="expression-evaluation"></a>Avaliação de expressão

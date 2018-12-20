@@ -1,5 +1,5 @@
 ---
-title: Refatorar um campo para uma propriedade no Visual Studio
+title: Refatorar um campo para uma propriedade
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c6594521774ca7e4fe91bc47776c4f0c4a489a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a6cb74b64ec03c865ca4e6e52fa3922c997468d6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942914"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049924"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refatoração Encapsular um campo
 
@@ -29,11 +29,11 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O quê:** permite que você transforme um campo em uma propriedade e atualize todos os usos desse campo a fim de usar a propriedade recém-criada.
+**O quê:** Permite transformar um campo em uma propriedade e atualizar todos os usos desse campo para usar a propriedade recém-criada.
 
-**Quando:** você quer mover um campo para uma propriedade e atualizar todas as referências a esse campo.
+**Quando:** Você deseja mover um campo para uma propriedade e atualizar todas as referências a esse campo.
 
-**Por quê:** você quer conceder a outras classes o acesso a um campo, mas não quer que essas classes tenham acesso direto.  Ao encapsular o campo em uma propriedade, você pode escrever o código para verificar o valor que está sendo atribuído, por exemplo.
+**Por que:** Você deseja conceder a outras classes o acesso a um campo, mas não deseja que essas classes tenham acesso direto.  Ao encapsular o campo em uma propriedade, você pode escrever o código para verificar o valor que está sendo atribuído, por exemplo.
 
 ## <a name="how-to"></a>Como fazer
 

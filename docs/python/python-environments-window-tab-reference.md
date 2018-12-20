@@ -1,22 +1,23 @@
 ---
 title: Referência da janela de ambientes do Python
 description: Detalhes sobre cada uma das guias que aparecem na janela Ambientes de Python no Visual Studio.
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 45a14fb5667d7eb28d4d298731886db662985d17
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 3bd65efb0cbaf38de88acb87c9078ee98f3869bc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996071"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051421"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referência as guias da janela Ambientes do Python
 
@@ -102,7 +103,7 @@ Ao instalar os pacotes em um ambiente que está localizado em uma área protegid
 
 ![Solicitação de elevação para a instalação do pacote](media/environments-pip-elevate.png)
 
-**Elevar agora** concede privilégios administrativos para executar o PIP para uma única operação, sujeita também a qualquer prompt de permissão do sistema operacional. Escolher **Continuar sem privilégios de administrador** tenta instalar o pacote, mas o PIP falha ao tentar criar pastas com uma saída como **erro: não foi possível criar 'C:\Arquivos de Programas\Anaconda3\Lib\site-packages\png.py': permissão negada.**
+**Elevar agora** concede privilégios administrativos para executar o PIP para uma única operação, sujeita também a qualquer prompt de permissão do sistema operacional. A seleção de **Continuar sem privilégios de Administrador** tenta instalar o pacote, mas o PIP falha ao tentar criar pastas com um resultado como **Erro: não foi possível criar 'C:\Arquivos de Programas\Anaconda3\Lib\site-packages\png.py': Permissão negada.**
 
 Selecionar **Sempre elevar ao instalar o u remover pacotes** impede que a caixa de diálogo apareça para o ambiente em questão. Para fazer a caixa de diálogo aparecer novamente, vá para **Ferramentas** > **Opções** > **Ferramentas Python** > **Geral** e escolha o botão **Redefinir todas as caixas de diálogo permanentemente ocultas**.
 

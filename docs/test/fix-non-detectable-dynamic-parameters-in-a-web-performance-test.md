@@ -1,5 +1,5 @@
 ---
-title: Corrigir parâmetros dinâmicos não detectáveis em um teste de desempenho Web no Visual Studio
+title: Corrigir parâmetros dinâmicos não detectáveis em um teste de desempenho Web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2a2f75e1aee917a3f4cc9dc7feed15619c23f24e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 54f0b23da975738cf1dd33e03ef577efbfc2be38
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895594"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063775"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corrigir parâmetros dinâmicos não detectáveis em um teste de desempenho Web
 
@@ -239,7 +239,7 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
      ![Substituir o texto pelo parâmetro](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     O parâmetro QueryString na solicitação *JScriptQuery.aspx* é atualizado usando o novo parâmetro de contexto: CustomQueryString=jScriptQueryString___{{Param0}}.
+     O parâmetro QueryString na solicitação *JScriptQuery.aspx* é atualizado usando o novo parâmetro de contexto:  CustomQueryString=jScriptQueryString___{{Param0}}.
 
      ![Parâmetro aplicado a querystring](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
@@ -251,7 +251,7 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
 ## <a name="qa"></a>PERGUNTAS E RESPOSTAS
 
-### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>P: Posso executar novamente a detecção de parâmetro dinâmico se meu aplicativo Web for modificado?
+### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>P: Posso executar novamente a detecção de parâmetro dinâmico se meu aplicativo Web é modificado?
 
  **R:** Sim, use o seguinte procedimento:
 
@@ -265,6 +265,6 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
 2.  Marque ou desmarque a caixa de seleção ao lado dos parâmetros dinâmicos que você gostaria de correlacionar automaticamente. Por padrão, todos os parâmetros dinâmicos são verificados.
 
-### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>P: Eu preciso de configurar o Visual Studio para detectar parâmetros dinâmicos?
+### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>P: Preciso configurar o Visual Studio para detectar parâmetros dinâmicos?
 
  **R:** A configuração padrão do Visual Studio é detectar parâmetros dinâmicos quando você registra um teste de desempenho Web. No entanto, mesmo se houver opções do Visual Studio configuradas para não detectar parâmetros dinâmicos ou se o aplicativo Web testado for modificado com parâmetros dinâmicos adicionais, você ainda poderá executar a detecção de parâmetro dinâmico do Editor de Testes de Desempenho Web.

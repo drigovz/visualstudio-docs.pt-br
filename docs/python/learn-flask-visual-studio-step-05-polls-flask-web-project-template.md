@@ -1,5 +1,6 @@
 ---
-title: Tutorial – Saiba mais sobre o Flask no Visual Studio, etapa 5
+title: Tutorial Aprenda a usar o Flask no Visual Studio, etapa 5, modelo de projeto Votações
+titleSuffix: ''
 description: Um passo a passo das noções básicas do Flask no contexto dos projetos do Visual Studio, especificamente as funcionalidades dos modelos de Pesquisas do Projeto Web do Flask e Pesquisas do Projeto Web do Flask/Jade.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bf6c9299f994ba1f5272c68724171fb42e85a679
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: a29e222df2a8443e9d5210c0382125cdc65a814f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143197"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065993"
 ---
-# <a name="step-5-use-the-polls-flask-web-project-template"></a>Etapa 5 – Usar o modelo Projeto Web do Flask de pesquisas
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Etapa 5: Usar o modelo de Projeto Web Votações do Flask
 
-**Etapa anterior: [Usar o modelo Projeto Web completo do Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**Etapa anterior: [Usar o modelo completo de Projeto Web do Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 Depois de entender o modelo "Projeto Web do Flask" do Visual Studio, agora será possível examinar o terceiro modelo do Flask, "Pesquisas do Projeto Web do Flask", criado sobre a mesma base de código.
 
@@ -232,11 +234,11 @@ A chamada a `repository.add_sample_polls()` termina em uma das implementações 
 
 Após a conclusão desse processo, a instrução `redirect('/')` no método `seed` navega de volta para a home page. Como agora `repository.get_polls` retorna um objeto de dados, as marcas condicionais em *templates\index.html* agora renderizam uma tabela que contém as votações.
 
-### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Pergunta: como adicionar novas votações ao aplicativo?
+### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Pergunta: Como adicionar novas votações ao aplicativo?
 
-Resposta: o aplicativo, conforme fornecido por meio do modelo de projeto, não inclui uma facilidade para adicionar ou editar votações. É possível modificar *models\samples.json* para criar dados de inicialização, mas fazer isso significará redefinir o armazenamento de dados. Para implementar funcionalidades de edição, é necessário estender a interface de classe `Repository` com métodos para criar as instâncias `Choice` e `Poll` necessárias. Em seguida, implemente uma interface do usuário em outras páginas que usam esses métodos.
+Resposta: O aplicativo, conforme fornecido por meio do modelo de projeto, não inclui uma funcionalidade para adição ou edição de votações. É possível modificar *models\samples.json* para criar dados de inicialização, mas fazer isso significará redefinir o armazenamento de dados. Para implementar funcionalidades de edição, é necessário estender a interface de classe `Repository` com métodos para criar as instâncias `Choice` e `Poll` necessárias. Em seguida, implemente uma interface do usuário em outras páginas que usam esses métodos.
 
-## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Etapa 5-4: Compreender os detalhes da votação e as visualizações dos resultados
+## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Etapa 5-4: Compreender os detalhes da votação e as exibições dos resultados
 
 A maioria dos modos de exibição gerados pelos modelos "Pesquisas do Projeto Web do Flask" e "Pesquisas do Projeto Web do Flask/Jade", como os modos de exibição para as páginas Sobre e Contato, é muito semelhantes aos modos de exibição criados pelo modelo "Projeto Web do Flask" (ou "Projeto Web do Flask/Jade") com o qual você trabalhou anteriormente neste tutorial. Na seção anterior você também aprendeu como a home page é implementada para mostrar o botão de inicialização ou a lista de votações.
 

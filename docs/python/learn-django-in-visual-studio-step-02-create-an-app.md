@@ -1,5 +1,6 @@
 ---
-title: Tutorial – Saiba mais sobre Django no Visual Studio, etapa 2
+title: Tutorial Aprenda a usar o Django no Visual Studio, etapa 2, modos de exibição e modelos de página
+titleSuffix: ''
 description: Um passo a passo dos conceitos básicos do Django no contexto dos projetos do Visual Studio, mostrando especificamente as etapas para criar um aplicativo e usar modos de exibição e modelos.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 404df36ab28e422e081df7d7cdf4831f8c2f64a0
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: dade4ee20aec654a32fac6904cca121c2ea726e6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001276"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058539"
 ---
-# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo Django com exibição e modelos de página
+# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo do Django com modos de exibição e modelos de página
 
-**Etapa anterior: [Criar uma solução e um projeto do Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)**
+**Etapa anterior: [Criar um projeto e uma solução do Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)**
 
 O que você tem até o momento no projeto do Visual Studio são apenas os componentes do nível do site de um *projeto* do Django, que pode executar um ou mais *aplicativos* de Django. A próxima etapa é criar seu primeiro aplicativo com uma única página.
 
@@ -38,9 +40,9 @@ Um aplicativo do Django é um pacote separado em Python que contém um conjunto 
 
 Um aplicativo do Django normalmente começa com um conjunto padrão de arquivos. O Visual Studio fornece modelos de item para inicializar um aplicativo do Django dentro de um projeto do Django, junto com um comando de menu integrado que tem a mesma finalidade:
 
-- Modelos: no **Gerenciador de Soluções**, clique com botão direito do mouse no projeto e selecione **Adicionar** > **Novo item**. Na caixa de diálogo **Adicionar Novo Item**, selecione o modelo **Aplicativo do Django 1.9**, especifique o nome do aplicativo no campo **Nome** e selecione **OK**.
+- Modelos: No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e selecione **Adicionar** > **Novo item**. Na caixa de diálogo **Adicionar Novo Item**, selecione o modelo **Aplicativo do Django 1.9**, especifique o nome do aplicativo no campo **Nome** e selecione **OK**.
 
-- Integrado comando: no **Gerenciador de Soluções**, clique com o botão direito no projeto e selecione **Adicionar** > **Aplicativo do Django**. Esse comando solicita um nome e cria um aplicativo do Django 1.9.
+- Comando integrado: No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e selecione **Adicionar** > **Aplicativo do Django**. Esse comando solicita um nome e cria um aplicativo do Django 1.9.
 
     ![Comando de menu para adicionar um aplicativo do Django](media/django/step02-add-django-app-command.png)
 
@@ -72,7 +74,7 @@ class HelloDjangoAppConfig(AppConfig):
 
 Resposta: A execução do comando **Adicionar** > **Aplicativo do Django** ou o uso de **Adicionar** > **Novo Item** com um modelo de aplicativo do Django produz os mesmos arquivos que o comando do Django `manage.py startapp <app_name>`. A vantagem de criar o aplicativo no Visual Studio é que a pasta do aplicativo e todos os seus arquivos são automaticamente integrados ao projeto. Você pode usar o mesmo comando do Visual Studio para criar qualquer número de aplicativos em seu projeto.
 
-## <a name="step-2-2-run-the-app-from-the-django-project"></a>Etapa 2-2: Executar o aplicativo a partir do projeto do Django
+## <a name="step-2-2-run-the-app-from-the-django-project"></a>Etapa 2-2: Executar o aplicativo por meio do projeto do Django
 
 Neste ponto, se você executar novamente o projeto no Visual Studio (usando o botão de barra de ferramentas ou **Depurar** > **Iniciar depuração**), você ainda verá a página padrão. Nenhum conteúdo do aplicativo é exibido porque você precisa definir uma página específica do aplicativo e adicionar o aplicativo ao projeto do Django:
 
@@ -117,11 +119,11 @@ Como você já fez alterações no seu código e as testou com êxito, agora é 
 
 ### <a name="question-what-is-the-r-prefix-before-the-routing-strings-for"></a>Pergunta: Para que serve o prefixo 'r' antes das cadeias de caracteres de roteamento?
 
-Resposta: O prefixo "r" em uma cadeia de caracteres em Python significa "raw", que instrui o Python a não escapar de nenhum caractere dentro da cadeia. Como as expressões regulares usam muitos caracteres especiais, o uso do prefixo 'r' facilita muito a leitura dessas cadeias de caracteres comparado a se elas contivessem alguns caracteres de escape '\\'.
+Resposta: O prefixo 'r' em uma cadeia de caracteres no Python significa "raw", que instrui o Python a não fazer escape de nenhum caractere dentro da cadeia de caracteres. Como as expressões regulares usam muitos caracteres especiais, o uso do prefixo 'r' facilita muito a leitura dessas cadeias de caracteres comparado a se elas contivessem alguns caracteres de escape '\\'.
 
 ### <a name="question-what-do-the--and--characters-mean-in-the-url-routing-entries"></a>Pergunta: O que significam os caracteres ^ e $ nas entradas de roteamento de URL?
 
-Resposta: Nas expressões regulares que definem padrões de URL, ^ significa "início de linha" e $ significa "fim de linha", em que novamente as URLs são relativas à raiz do site (a parte que segue `https://www.domain.com/`). A expressão regular `^$` efetivamente significa "em branco" e, portanto, corresponde à URL completa `https://www.domain.com/` (nada é adicionado à raiz do site). O padrão `^home$` corresponde exatamente a `https://www.domain.com/home/`. (O Django não usa o / à direita na correspondência de padrões).
+Resposta: Nas expressões regulares que definem padrões de URL, ^ significa "início de linha" e $ significa "fim de linha", em que, novamente, as URLs são relativas à raiz do site (a parte após `https://www.domain.com/`). A expressão regular `^$` efetivamente significa "em branco" e, portanto, corresponde à URL completa `https://www.domain.com/` (nada é adicionado à raiz do site). O padrão `^home$` corresponde exatamente a `https://www.domain.com/home/`. (O Django não usa o / à direita na correspondência de padrões).
 
 Se você não usar um $ à direita em uma expressão regular, assim como em `^home`, o padrão de URL corresponderá a *qualquer* URL que comece com "home", como "home", "homework", "homestead" e "home192837".
 
@@ -247,7 +249,7 @@ As etapas a seguir demonstram o uso de modelos de página:
 
     ![Aplicativo em execução usando o modelo](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>Visual Studio 2017 versão 15.7 e anteriores: como etapa final, mova seus modelos para uma subpasta com o mesmo nome do seu aplicativo, o que cria um namespace e evita possíveis conflitos com outros aplicativos que você possa adicionar ao projeto. (Os modelos no VS 2017 15.8 ou posteriores fazem isso automaticamente.) Ou seja, crie uma subpasta em *templates* chamada *HelloDjangoApp*, mova *index.html* para essa subpasta e modifique a função de exibição `index` para que ela se refira ao novo caminho do modelo, *HelloDjangoApp/index.html*. Em seguida, execute o projeto, verifique se a página é renderizada corretamente e pare o servidor.
+1. <a name="template-namespacing"></a>Visual Studio 2017 versão 15.7 e anterior: Como etapa final, mova seus modelos para uma subpasta com o mesmo nome do aplicativo, o que cria um namespace e evita possíveis conflitos com outros aplicativos que você venha a adicionar ao projeto. (Os modelos no VS 2017 15.8 ou posteriores fazem isso automaticamente.) Ou seja, crie uma subpasta em *templates* chamada *HelloDjangoApp*, mova *index.html* para essa subpasta e modifique a função de exibição `index` para que ela se refira ao novo caminho do modelo, *HelloDjangoApp/index.html*. Em seguida, execute o projeto, verifique se a página é renderizada corretamente e pare o servidor.
 
 1. Confirme suas alterações no controle do código-fonte e atualize seu repositório remoto, se desejado, conforme descrito na [etapa 2-2](#commit-to-source-control).
 
@@ -267,7 +269,7 @@ Resposta: Se forem exibidos erros indicando que o modelo não pode ser encontrad
 
 ### <a name="question-why-is-template-namespacing-important"></a>Pergunta: Por que o namespace do modelo é importante?
 
-Resposta: Quando o Django procura por um modelo referido na função `render`, ele usa qualquer arquivo encontrado primeiro que corresponda ao caminho relativo. Se você tiver vários aplicativos do Django no mesmo projeto que usem as mesmas estruturas de pasta para os modelos, é provável que um aplicativo use inadvertidamente um modelo de outro aplicativo. Para evitar esses erros, sempre crie uma subpasta na pasta *templates* do aplicativo que corresponda ao nome do aplicativo para evitar toda e qualquer duplicação.
+Resposta: Quando o Django procura um modelo referido na função `render`, ele usa qualquer arquivo encontrado primeiro que corresponda ao caminho relativo. Se você tiver vários aplicativos do Django no mesmo projeto que usem as mesmas estruturas de pasta para os modelos, é provável que um aplicativo use inadvertidamente um modelo de outro aplicativo. Para evitar esses erros, sempre crie uma subpasta na pasta *templates* do aplicativo que corresponda ao nome do aplicativo para evitar toda e qualquer duplicação.
 
 ## <a name="next-steps"></a>Próximas etapas
 

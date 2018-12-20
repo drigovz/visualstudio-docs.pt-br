@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821364"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160017"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Como depurar para iniciantes absolutos
 
@@ -66,7 +66,7 @@ Quando normalmente você executa um aplicativo, você vê erros e resultados inc
 
 Executar um aplicativo dentro do depurador, também chamado de *modo de depuração*, significa que o depurador monitora ativamente tudo que está acontecendo conforme o programa é executado. Isso também permite pausar o aplicativo a qualquer momento para examinar seu estado e percorrer seu código linha por linha para observar todos os detalhes à medida que acontecem.
 
-No Visual Studio, você entra no modo de depuração usando **F5** (ou o comando de menu **Depurar** > **Iniciar depuração** ou o botão **Iniciar depuração** ![Iniciar depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar depuração")) na barra de ferramentas Depurar. Se ocorrerem exceções, o Auxiliar de Exceção do Visual Studio levará você ao ponto exato em que a exceção ocorreu e fornecerá outras informações úteis.
+No Visual Studio, você entra no modo de depuração usando **F5** (ou o comando de menu **Depurar** > **Iniciar Depuração** ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na Barra de Ferramentas Depurar). Se ocorrerem exceções, o Auxiliar de Exceção do Visual Studio levará você ao ponto exato em que a exceção ocorreu e fornecerá outras informações úteis.
 
 Se você não recebeu uma exceção, você provavelmente tem uma boa ideia de onde procurar o problema em seu código. É aí em que você usa os *pontos de interrupção* com o depurador para se dar a oportunidade de examinar seu código mais cuidadosamente. Pontos de interrupção são o recurso mais básico e essencial da depuração confiável. Um ponto de interrupção indica onde o Visual Studio deve pausar seu código em execução para você poder examinar os valores das variáveis ou o comportamento da memória ou a sequência na qual o código é executado.
 
@@ -78,11 +78,11 @@ Para ajudar a ilustrar esses conceitos, nós o levamos por meio de um código de
 
 Em seguida, criaremos um aplicativo que tem alguns bugs.
 
-1. É necessário ter o Visual Studio instalado e a carga de trabalho de **desenvolvimento de área de trabalho do .NET** ou a carga de trabalho de **desenvolvimento de plataforma cruzada do .NET Core** instalada, dependendo de qual tipo de aplicativo você deseja criar.
+1. É necessário ter o Visual Studio instalado e a carga de trabalho de **desenvolvimento de área de trabalho do .NET** ou a carga de trabalho de **desenvolvimento multiplataforma do .NET Core** instalada, dependendo de qual tipo de aplicativo você deseja criar.
 
     Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  para instalá-lo gratuitamente.
 
-    Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique em **Ferramentas** > **Obter ferramentas e recursos**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de área de trabalho do .NET** (ou a carga de trabalho **Desenvolvimento de plataforma cruzada do .NET Core**) e escolha **Modificar**.
+    Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique em **Ferramentas** > **Obter ferramentas e recursos**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de área de trabalho do .NET** (ou a carga de trabalho **Desenvolvimento multiplataforma do .NET Core**) e, em seguida, escolha **Modificar**.
 
 1. Abra o Visual Studio e escolha **Arquivo** > **Novo** > **Projeto**.
 

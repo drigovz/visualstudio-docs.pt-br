@@ -1,5 +1,5 @@
 ---
-title: Refatoração Remover código inacessível no Visual Studio
+title: Refatoração Remover código inacessível
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 65dc8a9318c679743030a86c94ad39b3681dc0ad
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 34bd11fe681199cecd0acd2e79cbc2f5d11fc494
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896335"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059305"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Refatoração Remover código inacessível
 
@@ -24,11 +24,11 @@ Esta refatoração aplica-se a:
 
 - C#
 
-**O quê:** remove o código que nunca será executado.
+**O quê:** Remove o código que nunca será executado.
 
-**Quando:** seu programa não tem um caminho para um snippet de código, tornando esse snippet de código desnecessário.
+**Quando:** Seu programa não tem um caminho para um snippet de código, tornando esse snippet de código desnecessário.
 
-**Por quê:** melhorar a legibilidade e a facilidade de manutenção removendo o código que é supérfluo e nunca será executado.
+**Por que:** Melhorar a legibilidade e a facilidade de manutenção removendo o código que é supérfluo e nunca será executado.
 
 ## <a name="how-to"></a>Como fazer
 

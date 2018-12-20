@@ -1,5 +1,5 @@
 ---
-title: Gravar testes de unidade para DLLs em C++ no Visual Studio
+title: Escrever testes de unidade para DLLs C++
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,32 +9,32 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 829882cf3504583a4e9dbc3532c900df26a921f2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 045f33c2afcb4f37f5ab81beb21e778edbdd1a61
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862511"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056169"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Escrever testes de unidade para DLLs em C++ no Visual Studio
 
  Há várias maneiras de testar o código da DLL, dependendo da exportação das funções que você deseja testar. Escolha uma das seguintes opções:
 
- **Os testes de unidade chamam somente funções exportadas da DLL:** adicione um projeto de teste separado, conforme descrito em [Escrever testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md). No projeto de teste, adicione uma referência ao projeto de DLL.
+ **Os testes de unidade chamam apenas as funções exportadas da DLL:** Adicione um projeto de teste separado, conforme descrito em [Gravar testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md). No projeto de teste, adicione uma referência ao projeto de DLL.
 
  Vá para o procedimento [Para fazer referência a funções exportadas do projeto de DLL](#projectRef).
 
- **A DLL é compilada como um arquivo .exe:** Adicionar um projeto de teste separado. Vincule-o ao arquivo de objeto de saída.
+ **A DLL é compilada como um arquivo .exe:** Adicione um projeto de teste separado. Vincule-o ao arquivo de objeto de saída.
 
  Vá para o procedimento [Para vincular os testes aos arquivos de biblioteca ou objeto](#objectRef).
 
- **Os testes de unidade chamam funções não membro que não são exportadas da DLL e a DLL pode ser compilada como uma biblioteca estática:** altere o projeto da DLL para que ele seja compilado em um arquivo *.lib*. Adicione um projeto de teste separado que referencia o projeto em teste.
+ **Os testes de unidade chamam funções não membro que não são exportadas da DLL e a DLL pode ser compilada como uma biblioteca estática:** Altere o projeto de DLL para que ele seja compilado em um arquivo *.lib*. Adicione um projeto de teste separado que referencia o projeto em teste.
 
  Essa abordagem tem a vantagem de permitir que seus testes usem membros não exportados, mas mantenham os testes em um projeto separado.
 
  Vá para o procedimento [Para alterar a DLL para uma biblioteca estática](#staticLink).
 
- **Os testes de unidade devem chamar funções não membro que não são exportadas e o código precisa ser criado como uma DLL (biblioteca de vínculo dinâmico):** Adicionar testes de unidade no mesmo projeto que o código do produto.
+ **Os testes de unidade devem chamar funções não membro que não são exportadas e o código precisa ser criado como uma DLL (biblioteca de vínculo dinâmico):** Adicione testes de unidade no mesmo projeto que o código do produto.
 
  Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sameProject).
 
@@ -160,4 +160,4 @@ ms.locfileid: "49862511"
 - [Depurar código nativo](../debugger/debugging-native-code.md)
 - [Passo a passo: Criando e usando uma biblioteca de vínculo dinâmico (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importar e exportar](/cpp/build/importing-and-exporting)
-- [Início rápido: Desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Início Rápido: Desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md)

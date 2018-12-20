@@ -1,5 +1,5 @@
 ---
-title: Gerenciar resultados de teste de carga no Visual Studio
+title: Gerenciar os resultados do teste de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fc0dff5f9e2c647d153cf1c38bb33802b47151d6
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 0b2d030f375f67608fc6cf34ae108fed2ba54f5d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895451"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067110"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Gerenciar resultados do teste de carga no repositório de Resultados do Teste de Carga
 
@@ -47,10 +47,10 @@ O Visual Studio Enterprise fornece conjuntos de contadores nomeados que coletam 
 
 |Tarefas|Tópicos associados|
 |-|-----------------------|
-|**Configurar um repositório de resultados de teste de carga:** você pode configurar um repositório de resultados de teste de carga em um banco de dados SQL. **Observação:** um repositório de teste de carga também pode ser criado durante a instalação de um controlador de teste. Para obter mais informações, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).||
-|**Selecionando e exibindo um repositório de resultados:** é possível selecionar um repositório de resultados específico. Você não está limitado a um repositório de resultados local. Geralmente, os testes de carga são executados em um conjunto remoto de computadores de agente. Os resultados do teste de seus agentes ou do seu computador local podem ser salvos em qualquer servidor SQL no qual você criou um repositório de resultados de testes de carga. Em ambos os casos, você deve identificar onde armazenar os resultados do teste de carga usando a janela **Administrar controladores de teste**.|-   [Como selecionar um repositório de resultados do teste de carga](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Como acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)|
-|**Excluindo um resultado do teste de carga do repositório:** você pode remover um resultado do teste de carga do **Editor de Teste de Carga** usando a caixa de diálogo **Abrir e Gerenciar Resultados de Testes de Carga**.|-   [Como excluir resultados do teste de carga de um repositório](../test/how-to-delete-load-test-results-from-a-repository.md)|
-|**Importar e exportar resultados em um repositório:** é possível importar e exportar resultados de teste de carga do **Editor de Teste de Carga**.|-   [Como importar resultados do teste de carga para um repositório](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [Como exportar resultados do teste de carga de um repositório](../test/how-to-export-load-test-results-from-a-repository.md)|
+|**Configurar um repositório de resultados do teste de carga:** Configure um repositório de resultados do teste de carga em um Banco de Dados SQL. **Observação:**  Um repositório de teste de carga também pode ser criado durante a instalação de um controlador de teste. Para obter mais informações, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).||
+|**Selecionando e exibindo um repositório de resultados:** Selecione um repositório de resultados específico. Você não está limitado a um repositório de resultados local. Geralmente, os testes de carga são executados em um conjunto remoto de computadores de agente. Os resultados do teste de seus agentes ou do seu computador local podem ser salvos em qualquer servidor SQL no qual você criou um repositório de resultados de testes de carga. Em ambos os casos, você deve identificar onde armazenar os resultados do teste de carga usando a janela **Administrar controladores de teste**.|-   [Como: Selecionar um repositório de resultados do teste de carga](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Como: Acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)|
+|**Excluindo um resultado do teste de carga do repositório:** Remova um resultado do teste de carga no **Editor de Teste de Carga** usando a caixa de diálogo **Abrir e Gerenciar Resultados do Teste de Carga**.|-   [Como: Excluir os resultados do teste de carga de um repositório](../test/how-to-delete-load-test-results-from-a-repository.md)|
+|**Importar e exportar resultados para um repositório:** Você pode importar e exportar resultados do teste de carga no **Editor de Teste de Carga**.|-   [Como: Importar os resultados do teste de carga para um repositório](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [Como: Exportar os resultados do teste de carga de um repositório](../test/how-to-export-load-test-results-from-a-repository.md)|
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
 
@@ -61,4 +61,4 @@ O Visual Studio Enterprise fornece conjuntos de contadores nomeados que coletam 
 ## <a name="see-also"></a>Consulte também
 
 - [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Como acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)
+- [Como: Acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)
