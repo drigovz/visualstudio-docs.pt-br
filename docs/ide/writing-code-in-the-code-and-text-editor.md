@@ -1,5 +1,5 @@
 ---
-title: Recursos do editor de códigos no Visual Studio
+title: Funcionalidades do editor de códigos
 ms.date: 02/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be5d3692459c2c65d4243c831ef4de002828bb0
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: ca203b0c27906d1f861689953ca55280f73fa894
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349069"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160108"
 ---
 # <a name="features-of-the-code-editor"></a>Recursos do editor de código
 
@@ -91,7 +91,7 @@ Para obter mais informações sobre como personalizar o editor, consulte [Person
 ## <a name="see-also"></a>Consulte também
 
 - [Editor de código-fonte (Visual Studio para Mac)](/visualstudio/mac/source-editor)
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Introdução ao C++ no Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Introdução ao C# e ao ASP.NET no Visual Studio](../ide/tutorial-csharp-aspnet-core.md)
 - [Introdução ao Python no Visual Studio](../ide/quickstart-python.md)

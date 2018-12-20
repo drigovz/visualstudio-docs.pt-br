@@ -1,5 +1,6 @@
 ---
-title: Tutorial – Saiba mais sobre o Flask no Visual Studio, etapa 2
+title: Tutorial Aprenda a usar o Flask no Visual Studio, etapa 2, modos de exibição e modelos
+titleSuffix: ''
 description: Um passo a passo dos conceitos básicos do Flask no contexto dos projetos do Visual Studio, mostrando especificamente as etapas para criar um aplicativo e usar modos de exibição e modelos.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812605"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052939"
 ---
-# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo Flask com exibições e modelos de página
+# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo do Flask com modos de exibição e modelos de página
 
-**Etapa anterior: [Criar uma solução e um projeto do Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)**
+**Etapa anterior: [Criar um projeto e uma solução do Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)**
 
 Na etapa 1 deste tutorial, você tem um aplicativo Flask com uma página e todo o código em um único arquivo. Para permitir o desenvolvimento futuro, é melhor refatorar o código e criar uma estrutura para modelos de página. Em particular, separe o código para exibições do aplicativo de outros aspectos como o código de inicialização.
 
@@ -103,7 +105,7 @@ Como você já fez alterações no seu código e as testou com êxito, agora é 
 
 ### <a name="question-how-frequently-should-one-commit-to-source-control"></a>Pergunta: Com que frequência é necessário fazer a confirmação no controle do código-fonte?
 
-Resposta: A confirmação de alterações no controle do código-fonte cria um registro no log de alterações e um ponto em que é possível reverter o repositório, se necessário. Cada confirmação também pode ser examinada para suas alterações específicas. Como as confirmações no GIT não são caras, é melhor realizar confirmações frequentes do que acumular um grande número de alterações em uma única confirmação. Obviamente, não é necessário confirmar cada pequena alteração em arquivos individuais. Normalmente, você realiza uma confirmação ao adicionar uma funcionalidade, alterando uma estrutura como você fez nesta etapa, ou realizar alguma refatoração do código. Verifique também com outras pessoas da sua equipe para a granularidade de confirmações que funcionam melhor para todos.
+Resposta: A confirmação de alterações no controle do código-fonte cria um registro no log de alterações e um ponto em que é possível reverter o repositório se necessário. Cada confirmação também pode ser examinada para suas alterações específicas. Como as confirmações no GIT não são caras, é melhor realizar confirmações frequentes do que acumular um grande número de alterações em uma única confirmação. Obviamente, não é necessário confirmar cada pequena alteração em arquivos individuais. Normalmente, você realiza uma confirmação ao adicionar uma funcionalidade, alterando uma estrutura como você fez nesta etapa, ou realizar alguma refatoração do código. Verifique também com outras pessoas da sua equipe para a granularidade de confirmações que funcionam melhor para todos.
 
 A frequência de confirmação e a frequência de envio de confirmações por push a um repositório remoto são duas preocupações diferentes. Você pode acumular várias confirmações no seu repositório local antes de enviá-las por push para o repositório remoto. Novamente, a frequência de confirmação depende de como sua equipe deseja gerenciar o repositório.
 
@@ -200,7 +202,7 @@ Resposta: Embora os modelos geralmente sejam mantidos em arquivos HTML separados
 
 ### <a name="question-must-templates-use-the-html-file-extension"></a>Pergunta: Os modelos precisam usar a extensão de arquivo .html?
 
-Resposta: A extensão *.html* dos arquivos de modelo de página é totalmente opcional, porque você sempre identifica o caminho relativo exato para o arquivo no primeiro argumento para a função `render_template`. No entanto, o Visual Studio (e outros editores) costuma fornecer funcionalidades como preenchimento de código e coloração de sintaxe com arquivos *.html*, o que supera o fato de os modelos de página não serem estritamente HTML.
+Resposta: A extensão *.html* para arquivos de modelo de página é totalmente opcional, porque você sempre identifica o caminho relativo exato para o arquivo no primeiro argumento para a função `render_template`. No entanto, o Visual Studio (e outros editores) costuma fornecer funcionalidades como preenchimento de código e coloração de sintaxe com arquivos *.html*, o que supera o fato de os modelos de página não serem estritamente HTML.
 
 De fato, quando você está trabalhando com um projeto do Flask, o Visual Studio detecta automaticamente quando o arquivo HTML que você está editando é, na verdade, um modelo do Flask e fornece algumas funcionalidades de preenchimento automático. Por exemplo, quando você começa a digitar um comentário no modelo de página do Flask, `{#`, o Visual Studio fornece automaticamente os caracteres de fechamento `#}`. Os comandos **Comentar Seleção** e **Remover Marca de Comentário da Seleção** (no menu **Editar** > **Avançado** e na barra de ferramentas) também usam comentários de modelo em vez de comentários em HTML.
 
