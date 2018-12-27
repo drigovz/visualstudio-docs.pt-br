@@ -13,17 +13,17 @@ dev_langs:
 helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], getting started
 - add-ins [Office development in Visual Studio], getting started
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8136a090dbf5e3c3f86ce9b4ade1321f7b36b829
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf6577d48bed61a6dd5a1775da499ddd89f3769c
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858882"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648675"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Introdução à programação VSTO Add-ins
   Você pode usar suplementos do VSTO para automatizar aplicativos do Microsoft Office, estender os recursos do aplicativo e personalizar a interface do usuário (IU) do aplicativo. Para obter informações sobre como os suplementos do VSTO são comparados a outros tipos de soluções do Office que você pode criar usando o Visual Studio, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -33,7 +33,7 @@ ms.locfileid: "49858882"
 ## <a name="create-vsto-add-in-projects"></a>Criar projetos de suplemento do VSTO  
  Criar projetos de suplemento do VSTO usando um dos modelos de projeto do suplemento do VSTO na **novo projeto** caixa de diálogo. Esses modelos incluem referências de assembly necessárias e os arquivos de projeto. Visual Studio fornece modelos de projeto do suplemento do VSTO para a maioria dos aplicativos do Office.  
   
- Para obter mais informações sobre como criar um projeto de suplemento do VSTO, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Para obter mais informações sobre os modelos de projeto, consulte [visão geral de modelos de projeto do Office](../vsto/office-project-templates-overview.md).  
+ Para obter mais informações sobre como criar um projeto de suplemento do VSTO, consulte [como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Para obter mais informações sobre os modelos de projeto, consulte [visão geral de modelos de projeto do Office](../vsto/office-project-templates-overview.md).  
   
 ## <a name="develop-vsto-add-in-projects"></a>Desenvolver projetos de suplemento do VSTO  
  Quando você cria um projeto de suplemento do VSTO, Visual Studio cria automaticamente um *ThisAddIn. vb* (no [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) ou *ThisAddIn.cs* (em c#) o arquivo de código. Esse arquivo contém o `ThisAddIn` classe, que fornece a base para o suplemento do VSTO. Você pode usar os membros dessa classe para executar código quando o suplemento do VSTO é carregado ou descarregado, para acessar o modelo de objeto do aplicativo host e estender os recursos do aplicativo. Para obter mais informações, consulte [programa de suplementos do VSTO](../vsto/programming-vsto-add-ins.md).  
@@ -90,7 +90,7 @@ ms.locfileid: "49858882"
   Para obter uma lista de tópicos que explicam a algumas das tarefas comuns em projetos do Office, consulte [tarefas comuns na programação do Office](../vsto/common-tasks-in-office-programming.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Introdução ao &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)   
  [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)   

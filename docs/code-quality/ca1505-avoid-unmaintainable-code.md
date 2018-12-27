@@ -1,5 +1,5 @@
 ---
-title: 'CA1505: evitar código que não possa ser mantido'
+title: 'CA1505: Evitar código que'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aae34f6e999bcf74fdfbae4597b22529863e34f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 7678b0f6b435929c9e53a40062155842e273bbdc
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546909"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740306"
 ---
-# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: evitar código que não possa ser mantido
+# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Evitar código que
 
 |||
 |-|-|
@@ -36,7 +36,7 @@ ms.locfileid: "45546909"
  Um tipo ou um método tem um baixo valor de índice de facilidade de manutenção.
 
 ## <a name="rule-description"></a>Descrição da regra
- O índice de facilidade de manutenção é calculado usando as seguintes métricas: linhas de código, o volume de programa e a complexidade ciclomática. Volume do programa é uma medida da dificuldade de compreensão de um tipo ou método que se baseia no número de operadores e operandos no código. A complexidade ciclomática é uma medida da complexidade estrutural do tipo ou método. Você pode aprender mais sobre as métricas de código em [medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md).
+ O índice de facilidade de manutenção é calculado usando as seguintes métricas: linhas de código, o volume de programa e a complexidade ciclomática. Volume do programa é uma medida da dificuldade de compreensão de um tipo ou método que se baseia no número de operadores e operandos no código. A complexidade ciclomática é uma medida da complexidade estrutural do tipo ou método. Você pode aprender mais sobre as métricas de código em [medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/code-metrics-values.md).
 
  Um índice de facilidade de manutenção baixa indica que um tipo ou método é provavelmente difícil de manter e seria um bom candidato para refazer o design.
 
@@ -49,4 +49,4 @@ ms.locfileid: "45546909"
 ## <a name="see-also"></a>Consulte também
 
 - [Avisos de facilidade de manutenção](../code-quality/maintainability-warnings.md)
-- [Medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [Medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/code-metrics-values.md)

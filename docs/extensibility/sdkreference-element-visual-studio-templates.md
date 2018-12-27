@@ -2,21 +2,20 @@
 title: Elemento SDKReference (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
 author: gregvanl
 ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64008bb473a64fece6ce1430f743148496633058
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4ac32f5cae1e2e31f40a7d49c861757aec43fa5b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136629"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562003"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>Elemento SDKReference (Modelos do Visual Studio)
 Especifica que o modelo de item usa uma referência de SDK.  
@@ -44,7 +43,7 @@ Especifica que o modelo de item usa uma referência de SDK.
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Referência](../extensibility/reference-element-visual-studio-templates.md)|Especifica a referência de assembly para adicionar quando o item é adicionado a um projeto.|  
+|[Referência](../extensibility/reference-element-visual-studio-templates.md)|Especifica a referência de assembly a ser adicionada quando o item for adicionado a um projeto.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
@@ -63,7 +62,7 @@ Especifica que o modelo de item usa uma referência de SDK.
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Elemento de referências (modelos do Visual Studio)](../extensibility/references-element-visual-studio-templates.md)   
+ [Elemento References (modelos do Visual Studio)](../extensibility/references-element-visual-studio-templates.md)   
  [Elemento de referência (modelos do Visual Studio)](../extensibility/reference-element-visual-studio-templates.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
- [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+ [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

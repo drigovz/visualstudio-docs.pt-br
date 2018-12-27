@@ -1,5 +1,5 @@
 ---
-title: 'Designer de fluxo de trabalho - como: usar o Designer de argumento'
+title: 'Designer de fluxo de trabalho - como: Usar o designer de argumento'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 868fc13474e90be219cf1acebc00074641df142e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 88d9d568a115680c545a32a0d5f533fcab51da1f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755516"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684594"
 ---
-# <a name="how-to-use-the-argument-designer"></a>Como: Use o designer do argumento
+# <a name="how-to-use-the-argument-designer"></a>Como: Usar o designer de argumento
 
 Em comparação com versões anteriores do .NET Framework, o designer do argumento facilita permitir que os dados e fluam fora de uma atividade. O designer é acessado clicando o **argumentos** botão no canto inferior esquerdo da tela de design. O designer contém uma lista de argumentos que aparecem em um formulário tabular e podem ser classificados por cada um dos cabeçalhos de coluna, exceto para o **valor padrão** coluna. Cada argumento contiver um nome, a direção de in/out/in-out/property, o tipo, e o valor padrão de expressão (se houver). O nome e o valor padrão de expressão são campos editáveis de texto, e o tipo e direção são gota- suspensa. Para obter mais informações, consulte [variáveis e argumentos (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
 
@@ -37,5 +37,5 @@ Em comparação com versões anteriores do .NET Framework, o designer do argumen
 
 ## <a name="see-also"></a>Consulte também
 
-- [Usando o Designer de Fluxo de Trabalho](../workflow-designer/using-the-workflow-designer.md)
+- [Usando o Designer de Fluxo de Trabalho](developing-applications-with-the-workflow-designer.md)
 - [Variables and Arguments](/dotnet/framework/windows-workflow-foundation/variables-and-arguments) (Variáveis e argumentos)

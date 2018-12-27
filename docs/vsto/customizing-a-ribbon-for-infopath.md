@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - InfoPath [Office development in Visual Studio], Ribbon
 - Ribbon [Office development in Visual Studio], InfoPath
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0a6a50ca1e84d9b1f5508cccbad24607f36b3f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e6bdffe8de45db600d6fc456dbc75b8369bd2d7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942056"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648733"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Personalizar uma faixa de opções para InfoPath
   Quando você personaliza a faixa de opções no Microsoft Office InfoPath, você deve considerar onde sua faixa de opções personalizada será exibida no aplicativo. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] pode exibir a faixa de opções em três tipos de janelas de aplicativo do InfoPath:  
@@ -32,7 +32,7 @@ ms.locfileid: "49942056"
   
 - A janela de visualização de impressão.  
   
-  **Aplica-se a:** as informações neste tópico se aplicam a projetos de suplemento do VSTO para InfoPath 2010. Para obter mais informações, consulte [recursos disponíveis por tipo de projeto e aplicativo do Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  **Aplica-se a:** As informações neste tópico se aplicam a projetos de suplemento do VSTO para InfoPath 2010. Para obter mais informações, consulte [recursos disponíveis por tipo de projeto e aplicativo do Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
   Os usuários e designers de abrem um modelo de formulário no modo de design para modificar a aparência e o layout do modelo. Os usuários abrem os formulários baseados em um modelo de formulário para adicionar conteúdo.  
   

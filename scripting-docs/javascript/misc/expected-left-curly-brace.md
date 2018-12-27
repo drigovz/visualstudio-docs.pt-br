@@ -1,5 +1,5 @@
 ---
-title: Esperado &#39; {&#39; | Microsoft Docs
+title: Esperado ' {' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c72953f30ff80fcd48110afb74d628319863e99
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0e0127d551c6bf16c710e47d5f95c975522aca16
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632766"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348373"
 ---
-# <a name="expected-3939"></a>Esperado &#39; {&#39;
-Você não incluiu o colchete esquerdo que marca o início do corpo da função. Código que compõe o corpo de uma função, mesmo se ele for uma única linha, deve estar contido dentro de colchetes esquerdos e direito. Observe que o uso de chaves em corpos de funções é mais rígido do que em loops.  
+# <a name="expected-"></a>'{' esperado
+Você não incluiu a chave à esquerda que marca o início do corpo da função. Código que constitui o corpo de uma função, mesmo se for uma única linha, deve estar contido dentro colchetes esquerdos e direito. Observe que o uso de chaves em corpos de função é mais rígido do que em loops.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Adicione o colchete esquerdo que marca o início do corpo da função.  
+-   Adicione a chave à esquerda que marca o início do corpo da função.  
   
 ## <a name="see-also"></a>Consulte também  
  [Objeto Function](../../javascript/reference/function-object-javascript.md)

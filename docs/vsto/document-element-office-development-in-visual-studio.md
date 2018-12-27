@@ -1,6 +1,7 @@
 ---
 title: '&lt;documento&gt; elemento (desenvolvimento do Office no Visual Studio)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,20 +13,20 @@ helpviewer_keywords:
 - document element
 - application manifests [Office development in Visual Studio], <document> element
 - <document> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 07d8172ec4e56352c2244aef02d947ac48833ab7
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 634a2aff43b19098629392fedbfbaef7549e8e6c
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447329"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647056"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;documento&gt; elemento (desenvolvimento do Office no Visual Studio)
-  O `document` elemento o `vstov4` namespace armazena informações específicas de personalização para personalizações no nível do documento.  
+  O `document` elemento o `vstov4` namespace armazena informações de personalização específicas para personalizações no nível do documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -34,18 +35,18 @@ ms.locfileid: "34447329"
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementos e atributos  
- Necessário apenas para personalizações no nível do documento. O `document` elemento o `vstov4` namespace. O `document` elemento tem os seguintes atributos.  
+ Necessário apenas para personalizações no nível do documento. O `document` elemento está na `vstov4` namespace. O `document` elemento tem os seguintes atributos.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|`solutionId`|Necessário. O GUID usado pelo Visual Studio Tools para Office runtime para identificar exclusivamente uma solução de nível de documento. Esse valor é armazenado como propriedade assemblylocation personalizada de documento. Para obter mais informações, consulte [visão geral de propriedades de documento personalizadas](../vsto/custom-document-properties-overview.md).|  
+|`solutionId`|Necessário. O GUID usado pelo Visual Studio Tools para Office runtime para identificar exclusivamente uma solução de nível de documento. Esse valor é armazenado como propriedade assemblylocation personalizada de documento. Para obter mais informações, consulte [visão geral das propriedades de documento personalizado](../vsto/custom-document-properties-overview.md).|  
   
- `document` não possui elementos filho.  
+ `document` não tem elementos filho.  
   
-## <a name="document-level-customization-example"></a>Exemplo de personalização de nível de documento  
+## <a name="document-level-customization-example"></a>Exemplo de personalização no nível de documento  
   
 ### <a name="description"></a>Descrição  
- O exemplo de código a seguir ilustra o `document` elemento em uma solução de nível de documento implantado usando [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este exemplo de código é parte de um exemplo maior fornecido em [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).  
+ O exemplo de código a seguir ilustra a `document` elemento em uma solução do Office em nível de documento implantado usando [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este exemplo de código é parte de um exemplo maior fornecido no [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Código  
   

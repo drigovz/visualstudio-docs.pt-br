@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49f3c0e9cdd1feee0161c95d30bed03244d14e15
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 622655f1ed05ab77b36a3c4756a0176fcad74ac4
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857621"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684922"
 ---
 # <a name="visualize-code"></a>Visualizar código
 
@@ -39,12 +39,12 @@ Para ver quais edições do Visual Studio dão suporte a cada recurso, consulte 
 |||
 |-|-|
 |**Compreenda o código e suas relações:**<br /><br /> Mapear as relações entre as partes específicas de código.<br /><br /> Consulte uma visão geral das relações em seu código para a solução inteira.|- [Mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)<br />- [Usar mapas de códigos para depurar seus aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [Localizar possíveis problemas usando analisadores de mapa de código](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />- [Mapear métodos na pilha de chamadas durante a depuração](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
-|**Compreenda as estruturas de classe:**<br /><br /> Visualize a estrutura de classes em um projeto com a criação de diagramas de classe do código.|[Como adicionar diagramas de classe a projetos (Designer de Classe)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
-|**Descrever o design de alto nível do sistema e validar o código em relação a esse design:**<br /><br /> Descreva o design de alto nível do sistema e suas dependências pretendidas com a criação de diagramas de dependência. Valide o código em relação a esse design para certificar-se de dependências no código permaneçam consistentes com o design.|- [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)<br />- [Validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)|
+|**Compreenda as estruturas de classe:**<br /><br /> Visualize a estrutura de classes em um projeto com a criação de diagramas de classe do código.|[Como: Adicionar diagramas de classe a projetos (Designer de classe)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)|
+|**Descrever o design de alto nível do sistema e validar o código em relação a esse design:**<br /><br /> Descreva o design de alto nível do sistema e suas dependências pretendidas com a criação de diagramas de dependência. Valide o código em relação a esse design para certificar-se de dependências no código permaneçam consistentes com o design.|- [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependência: Diretrizes](../modeling/layer-diagrams-guidelines.md)<br />- [Validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="see-also"></a>Consulte também
 
-- [Cenário: alterar o design usando visualização e modelagem](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
+- [Cenário: Alterar o design usando visualização e modelagem](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
 - [Analisar e modelar a arquitetura](../modeling/analyze-and-model-your-architecture.md)
 - [Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)
 - [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)

@@ -15,17 +15,17 @@ helpviewer_keywords:
 - debugging [Office development in Visual Studio], Outlook projects
 - Office projects [Office development in Visual Studio], debugging
 - Outlook [Office development in Visual Studio], projects
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cc1774e57fafadafc7087bb498e0b77a90e96d85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6c7320ae6cbd0a6d7baa94835177d2a3a6f222cf
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669936"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647894"
 ---
 # <a name="debug-office-projects"></a>Depurar projetos do Office
   Você pode depurar projetos do Office usando o Microsoft mesmo [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ferramentas que você usa para outros [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projetos. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] recursos do depurador, como a capacidade de inserir pontos de interrupção e exibir as variáveis na **Locals** janela, também estão disponíveis quando você depurar projetos do Office. Para obter mais informações sobre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] as ferramentas de depuração, consulte [depurar no Visual Studio](/visualstudio/debugger/debugging-in-visual-studio).  
@@ -79,7 +79,7 @@ ms.locfileid: "35669936"
  Para depurar um projeto de documento do Word com base no documento do Word 97-2003 (*/**. doc) formato, você deve adicionar a pasta do projeto à lista de pastas confiáveis. Para obter mais informações sobre como fazer isso, consulte [conceder confiança a documentos](../vsto/granting-trust-to-documents.md).  
   
 ## <a name="debug-disabled-add-ins"></a>Suplementos de depuração desabilitada  
- Aplicativos do Microsoft Office podem desabilitar suplementos do VSTO que tenha um comportamento inesperado. Um aplicativo do Microsoft Office desabilita VSTO Add-ins para impedir que o código problemático Carregando toda vez que o aplicativo é iniciado. No entanto, também é fácil causar um comportamento inesperado durante a depuração típico. Para obter informações sobre como habilitar novamente o VSTO Add-ins, consulte [como: habilitar novamente um suplemento VSTO que tenha sido desabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).  
+ Aplicativos do Microsoft Office podem desabilitar suplementos do VSTO que tenha um comportamento inesperado. Um aplicativo do Microsoft Office desabilita VSTO Add-ins para impedir que o código problemático Carregando toda vez que o aplicativo é iniciado. No entanto, também é fácil causar um comportamento inesperado durante a depuração típico. Para obter informações sobre como habilitar novamente o VSTO Add-ins, consulte [como: Reabilitar um suplemento VSTO que tenha sido desabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).  
   
  Há dois tipos de desabilitar o que os aplicativos do Microsoft Office usam para suplementos do VSTO: difícil desabilitação e desabilitando reversível.  
   
@@ -103,7 +103,7 @@ ms.locfileid: "35669936"
   
 ## <a name="see-also"></a>Consulte também  
  [Compilar soluções do Office](../vsto/building-office-solutions.md)   
- [Como: habilitar novamente um suplemento VSTO que tenha sido desabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
+ [Como: Reabilitar um suplemento VSTO que tenha sido desabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
  [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md)  
   
   

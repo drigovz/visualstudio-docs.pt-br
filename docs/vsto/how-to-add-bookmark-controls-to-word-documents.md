@@ -1,5 +1,5 @@
 ---
-title: 'Como: adicionar controles de indicador a documentos do Word'
+title: 'Como: Adicionar controles de indicador a documentos do Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -14,19 +14,19 @@ helpviewer_keywords:
 - Bookmark control, adding to documents
 - Create Bookmark Control dialog box
 - controls [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 33afb16b9862f418f4d661bb5432ea4bb3866f16
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e58525d20efe17d24cd916b5e9eff79c7da59d7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878603"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647777"
 ---
-# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Como: adicionar controles de indicador a documentos do Word
+# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Como: Adicionar controles de indicador a documentos do Word
   Em projetos de nível de documento, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para o documento no seu projeto em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para qualquer documento aberto no tempo de execução.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -135,6 +135,6 @@ ms.locfileid: "49878603"
  [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md)   
  [Personalizações em nível de documento do programa](../vsto/programming-document-level-customizations.md)   
- [Como: redimensionar controles de indicador](../vsto/how-to-resize-bookmark-controls.md)  
+ [Como: Redimensionar controles de indicador](../vsto/how-to-resize-bookmark-controls.md)  
   
   

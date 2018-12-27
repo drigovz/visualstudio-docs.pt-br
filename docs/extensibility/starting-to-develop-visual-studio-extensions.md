@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5d6e84bc526cf597fbfd22bd36b93cd419ba0d6
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: eaae915b8e201b5596bdd435c432ffccfa9ad8c3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349657"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739913"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Começando a desenvolver extensões do Visual Studio
 
@@ -64,7 +64,7 @@ Na prática, descobrimos que os recursos que a maioria das pessoas que desejam e
 
 -   [Estender outras partes do Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 
--   [Shell isolado do Visual Studio](../extensibility/visual-studio-isolated-shell.md)
+-   [Shell isolado do Visual Studio](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
 
 ##  <a name="BKMK_ProjectTemplate"></a> Quais modelos de projeto são fornecidos pelo VSSDK?
  Os dois tipos principais de extensões são extensões VSPackages e MEF. Em geral, as extensões VSPackage são usadas para extensões que usam ou estendem comandos, janelas de ferramentas e projetos. Extensões do MEF são usadas para estender ou personalizar o editor do Visual Studio.
@@ -75,15 +75,15 @@ Na prática, descobrimos que os recursos que a maioria das pessoas que desejam e
 
  O modelo de Shell isolado é usado para empacotar uma extensão em uma versão do shell do Visual Studio que você pode definir a marca e distribuir como seu próprio. Os tópicos a seguir mostram como começar a usar com cada tipo de extensão:
 
--   Comandos de menu: [criando uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+-   Comandos de menu: [Criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   Janelas de ferramenta: [criando uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md)
+-   Janelas de ferramentas: [Criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   As extensões do Editor: [criando uma extensão com um modelo de Item do Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+-   Extensões do Editor: [Criar uma extensão com um modelo de item do editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   VSPackages básicos: [criando uma extensão com um VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+-   VSPackages básicos: [Criar uma extensão com um VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   Modelo de projeto VSIX: [Introdução ao modelo de projeto do VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
+-   Modelo de projeto do VSIX: [Introdução ao modelo de projeto do VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Como obtenho minha extensão para se parecer com o Visual Studio?
  Obtenha ótimas dicas para projetar a interface do usuário para a sua extensão em [diretrizes de experiência de usuário do Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
@@ -94,7 +94,7 @@ Na prática, descobrimos que os recursos que a maioria das pessoas que desejam e
 ## <a name="how-can-i-distribute-my-extension"></a>Como distribuir o minha extensão?
  Você pode instalar sua extensão em outro computador ou enviá-lo para seus amigos como um arquivo. VSIX, que podem ser instalado clicando duas vezes nele. Você pode encontrar mais informações sobre pacotes VSIX [envio extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- Você também pode publicar sua extensão no Visual Studio Marketplace, que se torna visível para um grande número de clientes do Visual Studio. Para obter um exemplo de empacotamento de uma extensão no Marketplace, consulte [instruções passo a passo: publicando uma extensão do Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Para obter mais informações sobre o que você precisa fazer para publicar no Marketplace, consulte [produtos e extensões do Visual Studio](/azure/devops/extend/overview?view=vsts).
+ Você também pode publicar sua extensão no Visual Studio Marketplace, que se torna visível para um grande número de clientes do Visual Studio. Para obter um exemplo de empacotamento de uma extensão no Marketplace, consulte [passo a passo: Publicando uma extensão do Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Para obter mais informações sobre o que você precisa fazer para publicar no Marketplace, consulte [produtos e extensões do Visual Studio](/azure/devops/extend/overview?view=vsts).
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,5 +1,5 @@
 ---
-title: 'Como: assemblies de interoperabilidade primários do Office de instalação'
+title: 'Como: Instalar assemblies de interoperabilidade primários do Office'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - primary interop assemblies [Office development in Visual Studio], installing
 - Office primary interop assemblies, installing
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd044c228e20bbdf169dda456cf24c3246b0ae34
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bca78cc9387756c1abd4e6c11d3a549777c3f452
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255662"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648581"
 ---
-# <a name="how-to-install-office-primary-interop-assemblies"></a>Como: assemblies de interoperabilidade primários do Office de instalação
+# <a name="how-to-install-office-primary-interop-assemblies"></a>Como: Instalar assemblies de interoperabilidade primários do Office
   Instale os assemblies de interoperabilidade primária (PIAs) do Microsoft Office ao instalar o Office.  
   
 ## <a name="to-install-the-pias-when-you-install-office"></a>Para instalar os PIAs ao instalar o Office  
@@ -37,9 +37,9 @@ ms.locfileid: "35255662"
   
 ## <a name="see-also"></a>Consulte também  
  [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md)   
- [Como: aplicativos do Office de destino por meio de assemblies de interoperabilidade primários](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
- [Como: configurar um computador para desenvolver soluções do Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
- [Como: instalar o Visual Studio Tools for Office runtime redistribuível](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
+ [Como: Aplicativos do Office de destino por meio de assemblies de interoperabilidade primários](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [Como: Configurar um computador para desenvolver soluções do Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
+ [Como: Instalar o Visual Studio Tools for Office runtime redistribuível](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
  [Visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Introdução ao &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
   

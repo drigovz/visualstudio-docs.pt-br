@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f2710693c7dae7c4238f9f31fbe8065d6864a19
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4c583b9af65610340886794c03cb92be945b73d4
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672958"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425858"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Adicionar uma extensão de protocolo de idioma do servidor
 
@@ -202,12 +202,12 @@ namespace MockLanguageExtension
             await StartAsync.InvokeAsync(this, EventArgs.Empty);
         }
 
-        public async Task OnServerInitializeFailedAsync(Exception e)
+        public Task OnServerInitializeFailedAsync(Exception e)
         {
             return Task.CompletedTask;
         }
 
-        public async Task OnServerInitializedAsync()
+        public Task OnServerInitializedAsync()
         {
             return Task.CompletedTask;
         }
@@ -242,8 +242,8 @@ Clique em novo para criar um novo ativo:
 
 ![definir o ativo MEF](media/lsp-define-asset.png)
 
-* **Type**: Microsoft.VisualStudio.MefComponent
-* **Origem**: um projeto na solução atual
+* **Tipo**: Mefcomponent
+* **Origem**: Um projeto na solução atual
 * **Projeto**: [seu projeto]
 
 ### <a name="content-type-definition"></a>Definição de tipo de conteúdo
@@ -327,7 +327,7 @@ Siga as etapas abaixo para adicionar suporte para as configurações para sua ex
    ![Editar o ativo de vspackage](media/lsp-add-vspackage-asset.png)
 
    * **Tipo**: VSPackage
-   * **Origem**: o arquivo no sistema de arquivos
+   * **Origem**: Arquivo no sistema de arquivos
    * **Caminho**: [caminho para seu *pkgdef* arquivo]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Usuário de edição de configurações para um espaço de trabalho

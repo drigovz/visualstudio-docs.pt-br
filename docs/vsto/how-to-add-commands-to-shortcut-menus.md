@@ -1,5 +1,5 @@
 ---
-title: 'Como: adicionar comandos aos menus de atalho'
+title: 'Como: Adicionar comandos aos menus de atalho'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,26 +11,26 @@ dev_langs:
 helpviewer_keywords:
 - Office menus, creating
 - Office development in Visual Studio, context menus
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9accca69c5d56461f07d21d25821c0f4181c8fbd
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 37c0c4c54fdb50f56d7d8f6920eedfd15491a6a7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670051"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648423"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>Como: adicionar comandos aos menus de atalho
+# <a name="how-to-add-commands-to-shortcut-menus"></a>Como: Adicionar comandos aos menus de atalho
   Este tópico demonstra como adicionar comandos ao menu de atalho em um aplicativo do Office usando um suplemento do VSTO.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Para adicionar comandos a menus de atalho no Office  
   
-1.  Adicionar um **XML da faixa de opções** item a um nível de documento ou projeto do suplemento do VSTO. Para obter mais informações, consulte [como: Introdução à personalização da faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md). No  
+1.  Adicionar um **XML da faixa de opções** item a um nível de documento ou projeto do suplemento do VSTO. Para obter mais informações, confira [Como: Introdução à personalização da faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md). No  
   
 2.  **Gerenciador de soluções**, selecione **ThisAddin.cs** ou **ThisAddIn. vb**.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "35670051"
   
 7.  No Editor de códigos, adicione o XML que descreve o menu de atalho e o controle que você deseja adicionar ao menu de atalho.  
   
-     O exemplo a seguir adiciona um botão, um menu e um controle da Galeria para o menu de atalho para um documento do word. A ID do controle desse menu de atalho é ContextMenuText. Para obter uma lista completa de controle de atalho do Office 2010 IDs, consulte [arquivos de Ajuda do Office 2010: identificadores de controle de interface de usuário fluent do Office](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     O exemplo a seguir adiciona um botão, um menu e um controle da Galeria para o menu de atalho para um documento do word. A ID do controle desse menu de atalho é ContextMenuText. Para obter uma lista completa de controle de atalho do Office 2010 IDs, consulte [arquivos de Ajuda do Office 2010: Identificadores de controle de interface de usuário fluent do Office](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>  

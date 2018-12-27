@@ -1,5 +1,5 @@
 ---
-title: 'Como: anexar extensões para documentos de código gerenciado'
+title: 'Como: Anexar extensões de código gerenciado para documentos'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], attaching
 - documents [Office development in Visual Studio], managed code extensions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6e39f27caf9d321bb83666d72114a9675091f03
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: aa7eda6dfed28ceebb9b400568463cc689993f1e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257031"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646887"
 ---
-# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Como: anexar extensões para documentos de código gerenciado
+# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Como: Anexar extensões de código gerenciado para documentos
   Você pode anexar a um assembly de personalização a um documento existente do Microsoft Office Word ou uma pasta de trabalho do Microsoft Office Excel. O documento ou pasta de trabalho pode ser qualquer formato que oferece suporte a projetos do Microsoft Office e as ferramentas de desenvolvimento no Visual Studio. Para obter mais informações, consulte [arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -33,7 +33,7 @@ ms.locfileid: "35257031"
 > [!NOTE]  
 >  A personalização não conseguirá carregar se o código espera que os controles que não tenha o documento especificado.  
   
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como eu faço para: anexar ou desanexar um assembly do VSTO a partir de um documento do Word?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Anexar ou desanexar um assembly do VSTO a partir de um documento do Word? ](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ### <a name="to-attach-managed-code-extensions-to-a-document"></a>Para anexar extensões de código gerenciado a um documento  
   
@@ -55,6 +55,6 @@ ms.locfileid: "35257031"
   
 ## <a name="see-also"></a>Consulte também  
  [Gerenciar documentos em um servidor usando a classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Como: remover as extensões de código gerenciado de documentos](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
+ [Como: Remover extensões de código gerenciado de documentos](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Manifestos de aplicativo e implantação em soluções do Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
   

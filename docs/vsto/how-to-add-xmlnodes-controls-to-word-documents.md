@@ -1,5 +1,5 @@
 ---
-title: 'Como: adicionar controles XMLNodes a documentos do Word'
+title: 'Como: Adicionar controles XMLNodes a documentos do Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,26 +11,26 @@ dev_langs:
 helpviewer_keywords:
 - XMLNodes control, adding to documents
 - controls [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ff7a1966c9107fcd2a60b14c21b6a2dfbda09033
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: b27753590ea84fac6029bea0919a1aeda90543fa
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258064"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647130"
 ---
-# <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Como: adicionar controles XMLNodes a documentos do Word
+# <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Como: Adicionar controles XMLNodes a documentos do Word
   **Importante** as informações que propus neste tópico sobre o Microsoft Word são desenvolver ou apresentadas exclusivamente para o uso e benefício de indivíduos e organizações que estão localizados fora dos Estados Unidos e seus territórios ou que estão usando o programas que são executados em produtos do Microsoft Word que foram licenciados pela Microsoft antes de janeiro de 2010, quando a Microsoft removido uma implementação da funcionalidade específica relacionada para XML personalizado do Microsoft Word. Essas informações sobre o Microsoft Word não podem ser lidas ou usadas por indivíduos ou organizações nos Estados Unidos ou em seus territórios de quem estão usando ou desenvolver programas que são executados em produtos do Microsoft Word que foram licenciados pela Microsoft depois de 10 de janeiro de 2010 ; Esses produtos não se comportará como produtos licenciados antes dessa data ou adquirido e licenciado para uso fora dos Estados Unidos.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
  Quando você mapeia um elemento repetido de esquema XML para um documento do Microsoft Office Word, o Visual Studio adiciona automaticamente um <xref:Microsoft.Office.Tools.Word.XMLNodes> controle ao documento.  
   
- Para obter informações sobre como mapear os elementos do esquema XML não-repetição, consulte [como: XMLNode adicionar controles a documentos do Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).  
+ Para obter informações sobre como mapear os elementos do esquema XML não-repetição, consulte [como: Adicionar controles XMLNode a documentos do Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).  
   
 > [!NOTE]  
 >  O <xref:Microsoft.Office.Tools.Word.XMLNodes> controle não está disponível na **caixa de ferramentas** ou o **fontes de dados** janela, nem pode ela ser criada por meio de programação.  
@@ -42,7 +42,7 @@ ms.locfileid: "35258064"
 1.  No documento no designer do Visual Studio, na faixa de opções, clique o **desenvolvedor** guia.  
   
     > [!NOTE]  
-    >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, consulte [como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 2.  No **XML** , clique em **esquema**.  
   

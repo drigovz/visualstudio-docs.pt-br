@@ -1,5 +1,5 @@
 ---
-title: Como impor um código com facilidade de manutenção com uma política de check-in de análise do código
+title: 'Como: Impor um código com uma política de Check-in do análise código'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0121efb2e226b2407eee7eea50354a80482b1cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 060ca6482249e9b1e538b25977a1bdf5dfb97276
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892084"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739368"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Como: impor um código com uma política de check-in do análise código
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Como: Impor um código com uma política de check-in do análise código
 
 Os desenvolvedores podem usar a ferramenta de avaliação de código para medir a complexidade e facilidade de manutenção de seu código, mas você não pode invocar as métricas de código como parte de uma política de check-in. No entanto, você pode habilitar as regras de análise de código que verificam a conformidade do seu código com os padrões de métricas de código e impor as regras por meio de políticas de check-in. Para obter mais informações sobre as métricas de código, consulte [valores de métricas de código](../code-quality/code-metrics-values.md).
 
@@ -47,13 +47,13 @@ Os administradores de controle de versão do Team Foundation podem adicionar as 
 
 2. Marque as caixas de seleção para as seguintes regras:
 
-   - Profundidade de herança: **CA1501 AvoidExcessiveInheritance** -limite: aviso em mais de 5 níveis de profundidade
+   - Profundidade de herança: **CA1501 AvoidExcessiveInheritance** -limite: Aviso em mais de 5 níveis de profundidade
 
-   - Complexidade: **CA1502 AvoidExcessiveComplexity** -limite: aviso em mais de 25
+   - Complexidade: **CA1502 AvoidExcessiveComplexity** -limite: Aviso em mais de 25
 
-   - Índice de facilidade de manutenção: **CA1505 AvoidUnmaintainableCode** -limite: aviso em menos de 20
+   - Índice de facilidade de manutenção: **CA1505 AvoidUnmaintainableCode** -limite: Aviso em menos de 20
 
-   - Acoplamento de classes: **CA1506 AvoidExcessiveClassCoupling** -limite: aviso em mais de 80 para uma classe e mais de 30 para um método
+   - Acoplamento de classes: **CA1506 AvoidExcessiveClassCoupling** -limite: Aviso em mais de 80 para uma classe e mais de 30 para um método
 
      Além disso, se você quiser uma violação de regra para impedir que uma compilação bem-sucedida, selecione a **tratar aviso como um erro** caixa de seleção ao lado da descrição da regra.
 
@@ -62,4 +62,4 @@ Os administradores de controle de versão do Team Foundation podem adicionar as 
 ## <a name="see-also"></a>Consulte também
 
 - [Valores de métricas de código](../code-quality/code-metrics-values.md)
-- [Criando e usando políticas do check-in de análise de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Criando e usando políticas do check-in de análise de código](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

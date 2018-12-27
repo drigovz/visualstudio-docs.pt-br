@@ -1,5 +1,5 @@
 ---
-title: 'Como: personalizar uma guia interna'
+title: 'Como: Personalizar uma guia interna'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 - built-in tabs [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 30b4af116df218f3f778b9efa1e295fbadbad86a
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 3a219d4c5d7a57e73c63ec972ccb29724d616d1a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257261"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647330"
 ---
-# <a name="how-to-customize-a-built-in-tab"></a>Como: personalizar uma guia interna
+# <a name="how-to-customize-a-built-in-tab"></a>Como: Personalizar uma guia interna
   Você pode adicionar grupos e controles a uma guia interna. Uma guia interna é uma guia que já está na faixa de opções de um aplicativo do Microsoft Office. Por exemplo, o **dados** guia é uma guia interna no Excel. Quando você cria um grupo personalizado, ele é exibido por último na guia, mas você pode mover seu grupo de qualquer lugar na guia.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -36,7 +36,7 @@ ms.locfileid: "35257261"
 1.  O arquivo de código da faixa de opções no botão direito do mouse **Gerenciador de soluções**e, em seguida, clique em **View Designer**.  
   
     > [!NOTE]  
-    >  Se o arquivo de código da faixa de opções não aparecer na **Gerenciador de soluções**, você deve adicionar uma **item da faixa de opções** ao seu projeto. Ver [como: Introdução à personalização da faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+    >  Se o arquivo de código da faixa de opções não aparecer na **Gerenciador de soluções**, você deve adicionar uma **item da faixa de opções** ao seu projeto. Confira [Como Introdução à personalização da faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
 2.  Qualquer guia no designer de faixa de opções com o botão direito e, em seguida, clique em **propriedades**.  
   
@@ -46,7 +46,7 @@ ms.locfileid: "35257261"
   
      A ID do controle é o nome que identifica exclusivamente a guias, grupos e controles que são criados em aplicativos do Microsoft Office.  
   
-     Para obter uma lista de IDs de controle, consulte [arquivos de Ajuda do Office 2010: identificadores de controle de interface de usuário fluent do Office](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Para obter uma lista de IDs de controle, consulte [arquivos de Ajuda do Office 2010: Identificadores de controle de interface de usuário fluent do Office](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
 5.  Dos **controles de faixa de opções do Office** guia da **caixa de ferramentas**, arraste os grupos para a guia.  
   
@@ -67,7 +67,7 @@ ms.locfileid: "35257261"
   
 4.  Defina as **OfficeId** propriedade para a ID do controle de um grupo interno.  
   
-     Para obter uma lista de IDs de controle, consulte [arquivos de Ajuda do Office 2010: identificadores de controle de interface de usuário fluent do Office](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Para obter uma lista de IDs de controle, consulte [arquivos de Ajuda do Office 2010: Identificadores de controle de interface de usuário fluent do Office](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
 ## <a name="see-also"></a>Consulte também  
  [Visão geral da faixa de opções](../vsto/ribbon-overview.md)   
@@ -76,8 +76,8 @@ ms.locfileid: "35257261"
  [Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Passo a passo: Criar uma guia personalizada usando o XML da faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
  [Como: Introdução à personalização da faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Como: alterar a posição de uma guia na faixa de opções](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [Como: adicionar controles ao modo de exibição Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Como: Add-in de mostrar erros de interface do usuário](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ [Como: Alterar a posição de uma guia na faixa de opções](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [Como: Adicionar controles ao modo de exibição Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Como: Mostrar erros de interface de usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md)  
   
   

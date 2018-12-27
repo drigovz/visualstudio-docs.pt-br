@@ -1,5 +1,5 @@
 ---
-title: 'Como: colunas de mapa ListObject para dados'
+title: 'Como: Mapear colunas ListObject para dados'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,24 +11,24 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], mapping to ListObject column
 - ListObject control, mapping data
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77d33b8d30ed7f581e27e1cbe07d0c90715ff04
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 64c098fe1c1d4695feb9addd8e5161175dc09dc9
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670190"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646832"
 ---
-# <a name="how-to-map-listobject-columns-to-data"></a>Como: colunas de mapa ListObject para dados
+# <a name="how-to-map-listobject-columns-to-data"></a>Como: Mapear colunas ListObject para dados
   Quando você associa um <xref:Microsoft.Office.Tools.Excel.ListObject> o controle para um <xref:System.Data.DataTable>, talvez você não queira exibir todas as colunas em uma lista ou você pode ter determinadas colunas que não estão associadas aos dados. Você pode mapear as colunas que você deseja que apareça na <xref:Microsoft.Office.Tools.Excel.ListObject> quando você chama o <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> método.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [How do i: criar uma lista no Excel que está conectado a uma lista do SharePoint?](http://go.microsoft.com/fwlink/?LinkID=130263).  
+ ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Criar uma lista no Excel que está conectado a uma lista do SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
 ## <a name="map-columns"></a>Mapear colunas  
   
@@ -66,7 +66,7 @@ ms.locfileid: "35670190"
  [Estender documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Controles em documentos do Office](../vsto/controls-on-office-documents.md)   
  [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Como: controla o preenchimento ListObject com dados](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Como: Preencher controles ListObject com dados](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)   
  [Controle ListObject](../vsto/listobject-control.md)  
   

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d85e915099c9d94123f7e97b0d19bf235c0efae
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d7f6ca4310e8de644f799c8c921ac27cb3e1c458
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758035"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684325"
 ---
 # <a name="using-the-activity-designers"></a>Usando os designers de atividades
 
@@ -30,8 +30,6 @@ O Designer de fluxo de trabalho inclui um número de sistema forneceu atividades
 
 ## <a name="related-sections"></a>Seções relacionadas
 
- [Usando o Designer de Fluxo de Trabalho](../workflow-designer/using-the-workflow-designer.md)
-
- [Fluxos de trabalho de depuração com o Designer de Fluxo de Trabalho](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
-
- [Ajuda da interface do usuário do Designer de Fluxo de Trabalho](../workflow-designer/workflow-designer-ui-help.md)
+- [Usando o Designer de Fluxo de Trabalho](../workflow-designer/developing-applications-with-the-workflow-designer.md)
+- [Fluxos de trabalho de depuração com o Designer de Fluxo de Trabalho](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
+- [Ajuda da interface do usuário do Designer de Fluxo de Trabalho](../workflow-designer/workflow-designer-ui-help.md)

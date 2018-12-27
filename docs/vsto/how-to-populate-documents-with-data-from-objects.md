@@ -1,5 +1,5 @@
 ---
-title: 'Como: preencher documentos com dados de objetos'
+title: 'Como: Preencher documentos com dados de objetos'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], populating with data
 - data [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ef3d1441f9587bceeca0c4aacdc054a4769a2369
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 87e194aa29a44458c23e5057d7813e5e21ffbc42
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758106"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648362"
 ---
-# <a name="how-to-populate-documents-with-data-from-objects"></a>Como: preencher documentos com dados de objetos
+# <a name="how-to-populate-documents-with-data-from-objects"></a>Como: Preencher documentos com dados de objetos
 
 Acessando em dados em um objeto de dados funcionam da mesma maneira no nível de documento para o Microsoft Office Word, como faz em projetos do Windows Forms. Você usa as mesmas ferramentas e código trazer os dados de um objeto para sua solução, e você pode usar controles dos Windows Forms para exibir os dados. Além disso, você pode exibir dados usando controles de host. Controles de host são objetos nativos no Microsoft Office Word que foram aprimorados com eventos e a funcionalidade de associação de dados. Para obter mais informações, consulte [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md).
 
@@ -73,6 +73,6 @@ Para conectar-se o objeto de dados ao BindingSource:
 
 - [Adicionar novas fontes de dados](../data-tools/add-new-data-sources.md)
 - [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Como: preencher documentos com dados de um banco de dados](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Como: atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Como: Preencher documentos com dados de um banco de dados](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Como: Atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [Visão geral do componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)

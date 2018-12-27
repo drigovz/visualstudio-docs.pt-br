@@ -2,9 +2,8 @@
 title: Elemento ProjectTemplateLink (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectTemplateLink
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0f2d810f2e6dff135230af71b10a823d22330e8
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 09cd9a5168f0051834b4f3b1de74ed9cd2e97381
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495967"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561493"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>Elemento ProjectTemplateLink (modelos do Visual Studio)
 Especifica o caminho para o *. vstemplate* arquivo de um projeto em um modelo multiprojeto.  
@@ -56,7 +55,7 @@ Especifica o caminho para o *. vstemplate* arquivo de um projeto em um modelo mu
 |`CopyParameters`|Permite que todas as variáveis no modelo de grupo principal sejam copiadas em cada um dos modelos vinculados.<br /><br /> Os parâmetros nos modelos vinculados têm um prefixo `"$ext_*$"`. Por exemplo, se no modelo de grupo pai o parâmetro `$projectname$` tem um valor **ExampleProject1**, quando o modelo vinculado obtém sua vez para ser executado, ele adquire um parâmetro `$ext_projectname$`, que é uma cópia do `$projectname$`parâmetro de modelo de grupo pai.<br /><br /> Isso permite que modelos vinculados compartilhem alguns parâmetros comuns, que podem ser convenientemente criados somente no modelo de grupo pai.<br /><br /> Esse atributo é opcional e padronizado automaticamente para `false` quando não é incluído.<br /><br /> Introduzido no Visual Studio 2013 Atualização 2. Para fazer referência a versão correta do produto, consulte [entregues no Visual Studio 2013 SDK atualização 2 de assemblies de referência](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
   
 ### <a name="child-elements"></a>Elementos filho  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -71,7 +70,7 @@ Especifica o caminho para o *. vstemplate* arquivo de um projeto em um modelo mu
  Esse texto Especifica o caminho para o *. vstemplate* arquivo do modelo.  
   
 ## <a name="remarks"></a>Comentários  
- Os modelos de vários projetos atuam como contêineres para dois ou mais projetos. O `ProjectTemplateLink` elemento é usado para especificar o local do *. vstemplate* arquivo para um dos projetos no modelo. O *. vstemplate* arquivo de um modelo multiprojeto contém um `ProjectTemplateLink` elemento para cada projeto no modelo. Para obter mais informações sobre modelos de vários projetos, consulte [como: criar modelos multiprojetos](../ide/how-to-create-multi-project-templates.md).  
+ Os modelos de vários projetos atuam como contêineres para dois ou mais projetos. O `ProjectTemplateLink` elemento é usado para especificar o local do *. vstemplate* arquivo para um dos projetos no modelo. O *. vstemplate* arquivo de um modelo multiprojeto contém um `ProjectTemplateLink` elemento para cada projeto no modelo. Para obter mais informações sobre modelos de vários projetos, consulte [como: Criar modelos multiprojetos](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Exemplo  
  Este exemplo mostra uma raiz multiprojeto simple *. vstemplate* arquivo. Neste exemplo, o modelo contém dois projetos, `My Windows Application` e `My Class Library`. O atributo `ProjectName` no elemento `ProjectTemplateLink` define o nome do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para atribuir este projeto. Se o `ProjectName` atributo não existir, o nome da *. vstemplate* arquivo é usado como o nome do projeto.  
@@ -101,4 +100,4 @@ Especifica o caminho para o *. vstemplate* arquivo de um projeto em um modelo mu
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criar modelos de projeto e item](../ide/creating-project-and-item-templates.md)   
- [Como: criar modelos multiprojetos](../ide/how-to-create-multi-project-templates.md)
+ [Como: Criar modelos multiprojetos](../ide/how-to-create-multi-project-templates.md)

@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], walkthroughs
 - walkthroughs [Office development in Visual Studio], data
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 35dbc38bf4e0873e9f3fb0fc1bf5c0525e56a61e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b56e17ca04d4c712058e20bd4f644b80e47cd2f7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670090"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647304"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Dados em instruções passo a passo de soluções do Office
   As instruções a seguir demonstra como trabalhar com dados em personalizações no nível de documento e suplementos do VSTO para o Microsoft Office Word e Microsoft Office Excel.  
@@ -30,13 +30,13 @@ ms.locfileid: "35670090"
  [Passo a passo: Associação de dados simples em um projeto de nível de documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
  Demonstra como associar um único campo de dados em um banco de dados do SQL Server para um <xref:Microsoft.Office.Tools.Excel.NamedRange> em uma personalização no nível de documento para Excel.  
   
- [Passo a passo: Vinculação de dados complexos em um projeto de nível de documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
+ [Passo a passo: Associação de dados complexos em um projeto de nível de documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
  Demonstra como associar uma tabela em um banco de dados do SQL Server para um <xref:Microsoft.Office.Tools.Excel.ListObject> em uma personalização no nível de documento para Excel.  
   
  [Passo a passo: Associação de dados simples no projeto do suplemento do VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
  Demonstra como associar um único campo de dados em um banco de dados do SQL Server para um <xref:Microsoft.Office.Tools.Word.RichTextContentControl> em um suplemento do VSTO para Word.  
   
- [Passo a passo: Vinculação de dados complexos no projeto do suplemento do VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
+ [Passo a passo: Associação de dados complexos no projeto do suplemento do VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
  Demonstra como associar uma tabela em um banco de dados do SQL Server para um <xref:Microsoft.Office.Tools.Excel.ListObject> em um suplemento do VSTO para Excel.  
   
  [Passo a passo: Associar dados a controles em um painel de ações do Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)  

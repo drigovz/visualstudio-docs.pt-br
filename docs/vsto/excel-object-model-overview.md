@@ -17,17 +17,17 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - Excel object model
 - Office object models
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8ca93cae45eed272b683275896efcf83229ca9a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb5b930df90f36395a22461ad0f26e82548afb6f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880787"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647519"
 ---
 # <a name="excel-object-model-overview"></a>Visão geral do modelo de objeto do Excel
   Para desenvolver soluções que usam o Microsoft Office Excel, você pode interagir com os objetos fornecidos pelo modelo de objeto do Excel. Este tópico apresenta os objetos mais importantes:  
@@ -48,7 +48,7 @@ ms.locfileid: "49880787"
   
   Este tópico fornece uma visão geral do modelo de objeto do Excel. Para obter recursos onde você pode aprender mais sobre todo o modelo de objeto do Excel, consulte [Use a documentação do modelo de objeto Excel](#ExcelOMDocumentation).  
   
-  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer os manipuladores de eventos de uso do i: em uma Excel 2007 Add-in?](http://go.microsoft.com/fwlink/?LinkID=130291), e [como fazer as formas de i: Use para criar um gráfico de bolhas no Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Usar manipuladores de eventos em uma Excel 2007 Add-in? ](http://go.microsoft.com/fwlink/?LinkID=130291), e [como fazer: Use formas para criar um gráfico de bolhas no Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="access-objects-in-an-excel-project"></a>Acessar objetos em um projeto do Excel  
  Quando você cria um novo projeto de suplemento do VSTO para Excel, Visual Studio cria automaticamente um *ThisAddIn. vb* ou *ThisAddIn.cs* arquivo de código. Você pode acessar o objeto de aplicativo usando `Me.Application` ou `this.Application`.  
@@ -106,7 +106,7 @@ ms.locfileid: "49880787"
  Para obter informações completas sobre o modelo de objeto do Excel, você pode consultar para a referência de assembly de interoperabilidade primária (PIA) do Excel e a referência de modelo de objeto do VBA.  
   
 ### <a name="primary-interop-assembly-reference"></a>Referência de assembly de interoperabilidade primário  
- A documentação de referência de PIA do Excel descreve os tipos no assembly de interoperabilidade primário para o Excel. Esta documentação está disponível no seguinte local: [referência de assembly de interoperabilidade primária do Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
+ A documentação de referência de PIA do Excel descreve os tipos no assembly de interoperabilidade primário para o Excel. Esta documentação está disponível no seguinte local: [Referência de assembly de interoperabilidade primária do Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
  Para obter mais informações sobre o design do PIA do Excel, como as diferenças entre classes e interfaces no PIA e como os eventos no PIA são implementados, consulte [visão geral das classes e interfaces no Office assemblies de interoperabilidade primários](http://go.microsoft.com/fwlink/?LinkId=189592).  
   

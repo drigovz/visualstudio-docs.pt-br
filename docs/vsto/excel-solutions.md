@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, Excel solutions
 - document-level customizations [Office development in Visual Studio], Excel
 - Office projects [Office development in Visual Studio], Excel
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 917a83a434dc27074b0d786f64fcdbdc5fd294d3
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 64fac12a47a519496ecba3f31f3fd035ff2d9121
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027387"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647939"
 ---
 # <a name="excel-solutions"></a>Soluções do Excel
   Visual Studio fornece modelos de projeto, que você pode usar para criar personalizações em nível de documento e suplementos do VSTO para o Microsoft Office Excel. Você pode usar essas soluções para automatizar o Excel, estender os recursos do Excel e personalizar a interface de usuário (IU) do Excel. Para obter mais informações sobre as diferenças entre personalizações no nível de documento e suplementos do VSTO, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -62,7 +62,7 @@ ms.locfileid: "53027387"
 ##  <a name="doclevel"></a> Desenvolver personalizações no nível de documento para Excel  
  Uma personalização no nível de documento do Microsoft Office Excel consiste em um assembly que está associado uma pasta de trabalho específica. O assembly estende normalmente a pasta de trabalho, personalizando a interface do usuário e automatizando o Excel. Ao contrário de um suplemento VSTO, que é associado com o Excel em si, a funcionalidade que você implementa em uma personalização está disponível apenas quando a pasta de trabalho associada é aberta no Excel.  
 
- Para criar um projeto de personalização de nível de documento para Excel, use a pasta de trabalho do Excel ou modelos de projeto de modelo do Excel na **novo projeto** caixa de diálogo do Visual Studio. Para obter mais informações, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Para criar um projeto de personalização de nível de documento para Excel, use a pasta de trabalho do Excel ou modelos de projeto de modelo do Excel na **novo projeto** caixa de diálogo do Visual Studio. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
  Para obter mais informações sobre como funcionam as personalizações no nível do documento como, consulte [arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md).  
 
@@ -74,7 +74,7 @@ ms.locfileid: "53027387"
 ##  <a name="applevel"></a> Desenvolver suplementos do VSTO para Excel  
  Um suplemento do VSTO para o Microsoft Office Excel consiste em um assembly que é carregado pelo Excel. O assembly estende o Excel normalmente, personalizando a interface do usuário e automatizando o Excel. Ao contrário de uma personalização no nível de documento, que está associada uma pasta de trabalho específica, a funcionalidade que você implementa em um suplemento do VSTO não está restrita a única pasta de trabalho.  
 
- Para criar um projeto de suplemento do VSTO para Excel, use a pasta de trabalho do Excel ou modelos de projeto de modelo do Excel na **novo projeto** caixa de diálogo do Visual Studio. Para obter mais informações, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Para criar um projeto de suplemento do VSTO para Excel, use a pasta de trabalho do Excel ou modelos de projeto de modelo do Excel na **novo projeto** caixa de diálogo do Visual Studio. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
  Para obter informações gerais sobre o funcionamento do VSTO Add-ins, consulte [arquitetura do VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
@@ -92,15 +92,15 @@ ms.locfileid: "53027387"
 |Tarefa|Para obter mais informações|  
 |----------|--------------------------|  
 |Personalize a faixa de opções.|[Visão geral da faixa de opções](../vsto/ribbon-overview.md)|  
-|Adicione controles dos Windows Forms ou controles estendidos do Excel em uma planilha na pasta de trabalho personalizada para uma personalização no nível de documento, ou em qualquer pasta de trabalho para um suplemento do VSTO.|[Como: adicionar controles dos Windows forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Como: adicionar controles Chart a planilhas](../vsto/how-to-add-chart-controls-to-worksheets.md)<br /><br /> [Como: adicionar controles ListObject a planilhas](../vsto/how-to-add-listobject-controls-to-worksheets.md)<br /><br /> [Como: adicionar controles NamedRange a planilhas](../vsto/how-to-add-namedrange-controls-to-worksheets.md)|  
+|Adicione controles dos Windows Forms ou controles estendidos do Excel em uma planilha na pasta de trabalho personalizada para uma personalização no nível de documento, ou em qualquer pasta de trabalho para um suplemento do VSTO.|[Como: Adicionar controles dos Windows forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Como: Adicionar controles Chart a planilhas](../vsto/how-to-add-chart-controls-to-worksheets.md)<br /><br /> [Como: Adicionar controles ListObject a planilhas](../vsto/how-to-add-listobject-controls-to-worksheets.md)<br /><br /> [Como: Adicionar controles NamedRange a planilhas](../vsto/how-to-add-namedrange-controls-to-worksheets.md)|  
 
 ### <a name="options-for-document-level-customizations"></a>Opções para personalizações no nível do documento  
  A tabela a seguir lista as opções de personalização que ficam disponíveis somente para personalizações no nível do documento.  
 
 |Tarefa|Para obter mais informações|  
 |----------|--------------------------|  
-|Adicione um painel de ações para a pasta de trabalho.|[Visão geral do painel de ações](../vsto/actions-pane-overview.md)<br /><br /> [Como: adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
-|Adicione controles de intervalo estendido que são mapeados para nós XML para uma planilha.|[Como: adicionar controles XMLMappedRange a planilhas](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)|  
+|Adicione um painel de ações para a pasta de trabalho.|[Visão geral do painel de ações](../vsto/actions-pane-overview.md)<br /><br /> [Como: Adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
+|Adicione controles de intervalo estendido que são mapeados para nós XML para uma planilha.|[Como: Adicionar controles XMLMappedRange a planilhas](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)|  
 
 ### <a name="options-for-vsto-add-ins"></a>Opções para suplementos VSTO  
  A tabela a seguir lista as opções de personalização que ficam disponíveis somente para suplementos do VSTO.  

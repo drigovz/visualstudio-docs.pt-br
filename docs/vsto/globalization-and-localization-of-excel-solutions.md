@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ade59e757778ac7858732f5bf9880b9f88eacd69
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4a305a74d24b8480732fb2132bf6c25f4f4f3d7a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567449"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647771"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalização e localização de soluções do Excel
   Esta seção contém informações sobre considerações especiais para soluções do Microsoft Office Excel que serão executadas em computadores que têm configurações diferentes do inglês para Windows. A maioria dos aspectos da globalização e localização de soluções do Microsoft Office são os mesmos encontrados ao criar outros tipos de soluções usando o Visual Studio. Para obter informações gerais, consulte [Globalize e Localizando aplicativos](/visualstudio/ide/globalizing-and-localizing-applications).  
@@ -39,7 +39,7 @@ ms.locfileid: "39567449"
   
  Mesmo que você use o formato inglês (Estados Unidos) de dados que são passados ou manipulados pelo código gerenciado, o Excel interpreta e exibe os dados corretamente de acordo com a configuração de localidade do usuário final. Excel pode formatar os dados corretamente porque o código gerenciado passa o formato da localidade 1033 ID juntamente com os dados, que indica que os dados estejam em inglês (Estados Unidos) e, portanto, deve ser reformatado para corresponder à configuração de localidade do usuário.  
   
- Por exemplo, se os usuários finais têm suas opções regionais definidas para a localidade alemão (Alemanha), eles esperam a data de 29 de junho de 2005, a ser formatada assim: 29.06.2005. No entanto, se sua solução passa a data para o Excel como uma cadeia de caracteres, você deve formatar a data de acordo com o formato inglês (Estados Unidos): 6/29/2005. Se a célula é formatada como uma célula data, o Excel exibirá a data no formato de alemão (Alemanha).  
+ Por exemplo, se os usuários finais têm suas opções regionais definida para a localidade alemão (Alemanha), esperam que a data de 29 de junho de 2005, a ser formatada assim: 29.06.2005. No entanto, se sua solução passa a data para o Excel como uma cadeia de caracteres, você deve formatar a data de acordo com o formato inglês (Estados Unidos): 6/29/2005. Se a célula é formatada como uma célula data, o Excel exibirá a data no formato de alemão (Alemanha).  
   
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>Passar outras IDs de localidade para o modelo de objeto do Excel  
  O common language runtime (CLR) automaticamente passa 1033 de ID de localidade para todos os métodos e propriedades no modelo de objeto do Excel que aceitam dados sensíveis à localidade. Não é possível alterar esse comportamento automaticamente para todas as chamadas para o modelo de objeto. No entanto, você pode passar uma ID de localidade diferentes para um método específico usando <xref:System.Type.InvokeMember%2A> para chamar o método e passando a ID de localidade para o *cultura* parâmetro do método.  
@@ -99,7 +99,7 @@ Application.ActiveCell.Value2 = "05/12/04"
  Qualquer código que é aberta ou caso contrário, usa dados externos, como arquivos que incluem valores separados por vírgulas (arquivos CSV) exportados de um sistema herdado, também pode ser afetado se esses arquivos são exportados usando qualquer formato, além de en-US. Acesso de banco de dados não pode ser afetado porque todos os valores devem ser em formato binário, a menos que o banco de dados armazena datas como cadeias de caracteres ou executa operações que não usam o formato binário. Além disso, se você construir consultas SQL usando os dados do Excel, você precisa garantir que eles estejam no formato de en-US, dependendo da função que você usar.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: destinar a interface de usuário multilíngue do Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+ [Como: A interface de usuário multilíngue do Office de destino](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
   

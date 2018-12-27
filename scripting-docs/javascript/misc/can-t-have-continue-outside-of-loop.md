@@ -1,5 +1,5 @@
 ---
-title: Pode &#39; t ter &#39; continuar &#39; fora do loop | Microsoft Docs
+title: Não é possível ter 'continue' fora do loop | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,35 +20,35 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8760eef1bb69f5f3ad18791dde8e25ce16776735
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d4939635b69cf5b49e36c7168dcf3c1a786821f
+ms.sourcegitcommit: 7ba97696d6d48de698210863183266af90c82af5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633296"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53531239"
 ---
-# <a name="can39t-have-39continue39-outside-of-loop"></a>Pode &#39; t ter &#39; continuar &#39; fora do loop
+# <a name="cant-have-continue-outside-of-loop"></a>Não é possível ter 'continue' fora do loop
 Você tentou usar o **continuar** instrução fora de um loop. O **continuar** instrução pode ser usada somente dentro do corpo de r:  
   
--   `do-while`loop,  
+-   `do-while` executar um loop,  
   
--   `while`loop,  
+-   `while` executar um loop,  
   
 -   **para** loop,  
   
--   **para/de** loop.  
+-   **para/no** loop.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
 -   Verifique se o **continuar** instrução aparece dentro do corpo de r:  
   
-    -   `do-while`loop,  
+    -   `do-while` executar um loop,  
   
-    -   `while`loop,  
+    -   `while` executar um loop,  
   
     -   **para** loop,  
   
-    -   **para/de** loop.  
+    -   **para/no** loop.  
   
 ## <a name="see-also"></a>Consulte também  
  [Instrução continue](../../javascript/reference/continue-statement-javascript.md)   

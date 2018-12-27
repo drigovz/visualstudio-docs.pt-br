@@ -16,17 +16,17 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], extending Excel workbooks
 - controls [Office development in Visual Studio], adding at run time
 - HasVstoObject method
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 424b2cf8a6461ed0d60a1c16555c49c0ed8a0136
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb1197d85f52c314eb9ec0a01ccd5069f9c43f39
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895776"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647813"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Estender documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução
   Você pode usar um suplemento do VSTO para personalizar os documentos do Word e pastas de trabalho do Excel das seguintes maneiras:  
@@ -39,7 +39,7 @@ ms.locfileid: "49895776"
   
   Para usar essa funcionalidade, você deve gerar um objeto em tempo de execução que estende o documento ou pasta de trabalho.  
   
-  **Aplica-se a:** as informações neste artigo se aplicam a projetos de suplemento do VSTO para os seguintes aplicativos: Excel e Word. Para obter mais informações, consulte [recursos disponíveis por tipo de projeto e aplicativo do Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  **Aplica-se a:** As informações neste artigo se aplicam a projetos de suplemento do VSTO para os seguintes aplicativos: O Excel e Word. Para obter mais informações, consulte [recursos disponíveis por tipo de projeto e aplicativo do Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ## <a name="generate-extended-objects-in-vsto-add-ins"></a>Gerar objetos estendidos nos suplementos do VSTO  
  *Objetos estendidos* são instâncias de tipos fornecidos pelo Visual Studio Tools para Office runtime que adicionam funcionalidade aos objetos que existem nativamente nos modelos de objeto do Word ou Excel (chamado *objetos nativos do Office*). Para gerar um objeto estendido para um objeto do Word ou Excel, use o `GetVstoObject` método. Na primeira vez que você chamar o `GetVstoObject` objeto do método de uma palavra especificada ou o Excel, ele retorna um novo objeto que estende o objeto especificado. Cada vez que você chama o método e especificar o mesmo do Word ou do Excel do objeto, ele retorna o mesmo objeto estendido.  

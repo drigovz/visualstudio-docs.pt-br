@@ -1,5 +1,5 @@
 ---
-title: 'Designer de fluxo de trabalho - como: definir pontos de interrupção em fluxos de trabalho'
+title: 'Designer de fluxo de trabalho - como: Definir pontos de interrupção em fluxos de trabalho'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1d7dcb437a77bd91c8dbb3360a33c7260fabb91
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 96db38e8a69d0b8b9ee042420647851aa1fbf0c0
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755222"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684243"
 ---
-# <a name="how-to-set-breakpoints-in-workflows"></a>Como: definir pontos de interrupção em fluxos de trabalho
+# <a name="how-to-set-breakpoints-in-workflows"></a>Como: Definir pontos de interrupção em fluxos de trabalho
 
 Quando você usar o Designer de fluxo de trabalho, você pode definir pontos de interrupção em fluxos de trabalho gráficos como você faria no código do Visual Basic ou c#. Como esperado, a execução de fluxo de trabalho que ele pare em cada ponto de interrupção esse definido.
 
-Um ponto de interrupção tem três estados: *pendente*, *associado*, e *erro*. Quando você definir um ponto de interrupção, ele está pendente, e ele é representado por um ícone vermelho contínuo. Quando o tempo de execução carregado o tipo de fluxo de trabalho, transformações limite. Se você especificar um formato incorreto do ponto de interrupção, como um nome de atividade que não é válida, uma janela de erro aparece. O ponto de interrupção é adicionado ainda para a janela de ponto de interrupção, mas é marcado com um pequeno “x”.
+Um ponto de interrupção tem três estados: *Pendente*, *ligado*, e *erro*. Quando você definir um ponto de interrupção, ele está pendente, e ele é representado por um ícone vermelho contínuo. Quando o tempo de execução carregado o tipo de fluxo de trabalho, transformações limite. Se você especificar um formato incorreto do ponto de interrupção, como um nome de atividade que não é válida, uma janela de erro aparece. O ponto de interrupção é adicionado ainda para a janela de ponto de interrupção, mas é marcado com um pequeno “x”.
 
 > [!NOTE]
 > Os pontos de interrupção em fluxos de trabalho chamados não são suportados.
@@ -42,6 +42,5 @@ Um ponto de interrupção tem três estados: *pendente*, *associado*, e *erro*. 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como invocar o depurador de fluxo de trabalho](../workflow-designer/how-to-invoke-the-workflow-debugger.md)
 - [Fluxos de trabalho de depuração com o Designer de Fluxo de Trabalho](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
-- [Como depurar XAML com o Designer de Fluxo de Trabalho](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
+- [Como: Depurar XAML com o Designer de fluxo de trabalho](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

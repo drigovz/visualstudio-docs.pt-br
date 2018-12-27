@@ -1,9 +1,7 @@
 ---
-title: 'Como: usar assistentes com modelos de projeto | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Usar assistentes com modelos de projeto'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
@@ -17,33 +15,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76bcd13fcee2f8b0bda775cc3ae241d7a363658e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 57a24f8c7b01a0c6df3803e95c49d1eb34ca1fe1
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928426"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562367"
 ---
-# <a name="how-to-use-wizards-with-project-templates"></a>Como: usar assistentes com modelos de projeto
+# <a name="how-to-use-wizards-with-project-templates"></a>Como: Usar assistentes com modelos de projeto
+
 O Visual Studio fornece o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> da interface que, quando implementada, permite que você execute o código personalizado quando um usuário cria um projeto de um modelo.  
   
- Personalização do modelo de projeto pode ser usada para exibir a interface do usuário personalizada que coleta a entrada do usuário para personalizar o modelo, adicione arquivos adicionais para o modelo, ou qualquer outra ação permitida em um projeto.  
+Personalização do modelo de projeto pode ser usada para exibir a interface do usuário personalizada que coleta a entrada do usuário para personalizar o modelo, adicione arquivos adicionais para o modelo, ou qualquer outra ação permitida em um projeto.  
   
- O <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> métodos de interface são chamados em vários momentos enquanto o projeto está sendo criado, iniciando assim que um usuário clica **Okey** sobre o **novo projeto** caixa de diálogo. Cada método da interface é denominado para descrever o ponto no qual ele é chamado. Por exemplo, o Visual Studio chama <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> imediatamente no início da criação do projeto, tornando-um bom local para escrever código personalizado para coletar entrada do usuário.  
+O <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> métodos de interface são chamados em vários momentos enquanto o projeto está sendo criado, iniciando assim que um usuário clica **Okey** sobre o **novo projeto** caixa de diálogo. Cada método da interface é denominado para descrever o ponto no qual ele é chamado. Por exemplo, o Visual Studio chama <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> imediatamente no início da criação do projeto, tornando-um bom local para escrever código personalizado para coletar entrada do usuário.  
   
 ## <a name="create-a-project-template-project-with-a-vsix-project"></a>Criar um projeto de modelo de projeto com um projeto VSIX  
- Começar a criar um modelo personalizado com o modelo de projeto project., que faz parte do SDK do Visual Studio. Neste procedimento, usaremos um projeto de modelo de projeto c#, mas também há um projeto de modelo de projeto do Visual Basic. Em seguida, você adicionar um projeto VSIX para a solução que contém o projeto de modelo de projeto.  
+
+Começar a criar um modelo personalizado com o projeto de modelo de projeto, que faz parte do SDK do Visual Studio. Neste procedimento, usaremos uma C# projeto de modelo de projeto, mas também há um projeto de modelo de projeto do Visual Basic. Em seguida, você adicionar um projeto VSIX para a solução que contém o projeto de modelo de projeto.  
   
 1. Criar um projeto de modelo de projeto c# (no Visual Studio, **arquivo** > **New** > **projeto** > **Visual c#**   >  **Extensibilidade** > **o modelo de projeto c#**). Denomine **MyProjectTemplate**.  
   
    > [!NOTE]
-   >  Você pode ser solicitado a instalar o SDK do Visual Studio. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+   > Você pode ser solicitado a instalar o SDK do Visual Studio. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-2. Adicionar um novo projeto VSIX (**arquivo** > **New** > <strong>projeto > * * Visual C#</strong>   >  <strong>extensibilidade > * * Projeto VSIX</strong>) na mesma solução que o projeto de modelo de projeto (na **Gerenciador de soluções**, selecione o nó da solução, clique com botão direito e selecione **Add**  >  **Novo projeto**). Nomeie- **MyProjectWizard.**  
+2. Adicionar um novo projeto VSIX (**arquivo** > **New** > **projeto** > **Visual C#**   >  **Extensibilidade** > **projeto VSIX**) na mesma solução que o projeto de modelo de projeto (no **Gerenciador de soluções**, Selecione o nó da solução, clique com botão direito e selecione **Add** > **novo projeto**). Nomeie- **MyProjectWizard.**  
   
-3. Defina o projeto VSIX como o projeto de inicialização. No **Gerenciador de soluções**, selecione o nó do projeto VSIX, clique com botão direito e selecione **definir como projeto de inicialização**.  
+3. Defina o projeto VSIX como o projeto de inicialização. Na **Gerenciador de soluções**, selecione o nó do projeto VSIX, clique com botão direito e selecione **definir como projeto de inicialização**.  
   
-4. Adicione o projeto de modelo como um ativo do projeto VSIX. No **Gerenciador de soluções**, sob o nó de projeto do VSIX, localizar o *vsixmanifest* arquivo. Clique duas vezes nele para abri-lo no editor de manifesto.  
+4. Adicione o projeto de modelo como um ativo do projeto VSIX. Na **Gerenciador de soluções**, sob o nó de projeto do VSIX, localizar o *vsixmanifest* arquivo. Clique duas vezes nele para abri-lo no editor de manifesto.  
   
 5. No editor de manifesto, selecione a **ativos** guia no lado esquerdo da janela.  
   
@@ -51,14 +51,15 @@ O Visual Studio fornece o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> d
   
 7. Compile a solução e inicie a depuração. Uma segunda instância do Visual Studio é exibida. (Isso pode levar alguns minutos.)  
   
-8. Na segunda instância do Visual Studio, tente criar um novo projeto com o novo modelo. (**Arquivo** > **nova** > **projeto > Visual c#** > **MyProject modelo**). O novo projeto deve aparecer com uma classe chamada **Class1**. Agora você criou um modelo de projeto personalizado! Pare a depuração agora.  
+8. Na segunda instância do Visual Studio, tente criar um novo projeto com o novo modelo (**arquivo** > **New** > **projeto > Visual C#**   >  **MyProject modelo**). O novo projeto deve aparecer com uma classe chamada **Class1**. Agora você criou um modelo de projeto personalizado! Pare a depuração agora.  
   
 ## <a name="create-a-custom-template-wizard"></a>Criar um Assistente de modelo personalizado  
- Este tópico mostra como criar um assistente personalizado que abre um formulário do Windows antes do projeto é criado. O formulário permite que os usuários adicionem um valor de parâmetro personalizado que é adicionado ao código-fonte durante a criação do projeto.  
+
+Este procedimento mostra como criar um assistente personalizado que abre um formulário do Windows antes do projeto é criado. O formulário permite que os usuários adicionem um valor de parâmetro personalizado que é adicionado ao código-fonte durante a criação do projeto.  
   
 1. Configure o projeto do VSIX para permitir que ele crie um assembly.  
   
-2. No **Gerenciador de soluções**, selecione o nó do projeto VSIX. Abaixo do Gerenciador de soluções, você deverá ver a **propriedades** janela. Se você não fizer isso, selecione **modo de exibição** > **janela de propriedades**, ou pressione **F4**. No **propriedades** janela, selecione os seguintes campos para `true`:  
+2. Na **Gerenciador de soluções**, selecione o nó do projeto VSIX. Abaixo **Gerenciador de soluções**, você deverá ver a **propriedades** janela. Se você não fizer isso, selecione **modo de exibição** > **janela de propriedades**, ou pressione **F4**. No **propriedades** janela, selecione os seguintes campos para `true`:  
   
    -   **IncludeAssemblyInVSIXContainer**  
   
@@ -68,9 +69,9 @@ O Visual Studio fornece o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> d
   
 3. Adicione o assembly como um ativo para o projeto do VSIX. Abra o *vsixmanifest* do arquivo e selecione o **ativos** guia. No **adicionar novo ativo** janela, para **tipo** selecionar **Microsoft.VisualStudio.Assembly**, para **origem** selecione **um projeto na solução atual**e para **Project** selecionar **MyProjectWizard**.  
   
-4. Adicione as seguintes referências ao projeto de VSIX. (Na **Gerenciador de soluções**, selecione do nó do projeto sob o VSIX **referências**, mouse e selecione **Add Reference**.) No **adicionar referência** caixa de diálogo, no **Framework** guia, localize o **System. Windows Forms** assembly e selecioná-lo. Agora, selecione a **extensões** find na guia o **EnvDTE** assembly e selecioná-lo. Encontre também a **Microsoft.VisualStudio.TemplateWizardInterface** assembly e selecioná-lo. Clique em **OK**.  
+4. Adicione as seguintes referências ao projeto de VSIX. (No **Gerenciador de soluções**, sob o nó de projeto VSIX, selecione **referências**, clique com botão direito e selecione **Add Reference**.) No **adicionar referência** caixa de diálogo, no **Framework** guia, localize o **System. Windows Forms** assembly e selecioná-lo. Agora, selecione a **extensões** guia. Localizar o **EnvDTE** assembly e selecioná-lo. Encontre também a **Microsoft.VisualStudio.TemplateWizardInterface** assembly e selecioná-lo. Clique em **OK**.  
   
-5. Adicione uma classe para a implementação do Assistente para o projeto do VSIX. (Na **Gerenciador de soluções**, clique com botão direito no nó do projeto VSIX e selecione **Add**, em seguida, **Novo Item**, em seguida, **classe**.) Nomeie a classe **WizardImplementation**.  
+5. Adicione uma classe para a implementação do Assistente para o projeto do VSIX. (No **Gerenciador de soluções**, clique com botão direito no nó do projeto VSIX e selecione **adicionar**, em seguida, **Novo Item**, em seguida, **classe**.) Nomeie a classe **WizardImplementation**.  
   
 6. Substitua o código na *WizardImplementationClass.cs* arquivo pelo código a seguir:  
   
@@ -157,7 +158,7 @@ O Visual Studio fornece o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> d
   
    - Um <xref:System.Object> matriz que contém um conjunto de parâmetros passados para o assistente pelo Visual Studio.  
   
-     Este exemplo adiciona um valor de parâmetro de formulário de entrada do usuário para o <xref:System.Collections.Generic.Dictionary%602> parâmetro. Todas as instâncias da `$custommessage$` parâmetro no projeto será substituído pelo texto inserido pelo usuário. Você deve adicionar os seguintes assemblies ao seu projeto: **System** e **System. Drawing**.
+     Este exemplo adiciona um valor de parâmetro de formulário de entrada do usuário para o <xref:System.Collections.Generic.Dictionary%602> parâmetro. Todas as instâncias da `$custommessage$` parâmetro no projeto será substituído pelo texto inserido pelo usuário. Você deve adicionar os seguintes assemblies ao seu projeto: **Sistema** e **System. Drawing**.
   
 7. Agora, crie o **UserInputForm**. No *WizardImplementation.cs* do arquivo, adicione o seguinte código após o final do `WizardImplementation` classe.  
   
@@ -205,7 +206,8 @@ O Visual Studio fornece o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> d
     Formulário de entrada do usuário fornece um formulário simples para inserir um parâmetro personalizado. O formulário contém uma caixa de texto denominada `textBox1` e um botão chamado `button1`. Quando o botão é clicado, o texto da caixa de texto é armazenado no `customMessage` parâmetro.  
   
 ## <a name="connect-the-wizard-to-the-custom-template"></a>O Assistente de conexão para o modelo personalizado  
- Para o modelo de projeto personalizado usar o assistente personalizado, você precisa assinar o assembly de assistente e adicionar algumas linhas ao seu modelo de projeto personalizados para permitir que ele saiba onde encontrar a implementação do assistente quando um novo projeto é criado.  
+
+Para o modelo de projeto personalizado usar o assistente personalizado, você precisa assinar o assembly de assistente e adicionar algumas linhas ao seu modelo de projeto personalizados para permitir que ele saiba onde encontrar a implementação do assistente quando um novo projeto é criado.  
   
 1. Assine o assembly. No **Gerenciador de soluções**, selecione o projeto VSIX, clique com botão direito e selecione **propriedades do projeto**.  
   
@@ -259,7 +261,8 @@ O Visual Studio fornece o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> d
 13. Salve todos os arquivos no projeto e recompile.  
   
 ## <a name="add-the-custom-parameter-to-the-template"></a>Adicionar o parâmetro personalizado para o modelo  
- Neste exemplo, o projeto usado como modelo exibe a mensagem especificada no formulário de entrada do usuário do assistente personalizado.  
+
+Neste exemplo, o projeto usado como modelo exibe a mensagem especificada no formulário de entrada do usuário do assistente personalizado.  
   
 1. No **Gerenciador de soluções**, vá para o **MyProjectTemplate** do projeto e abra *Class1.cs*.  
   
@@ -271,7 +274,7 @@ O Visual Studio fornece o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> d
   
     O parâmetro `$custommessage$` é substituído pelo texto inserido no formulário de entrada do usuário quando um projeto é criado a partir do modelo.  
   
-   Aqui está o arquivo de código completo antes que ele foi exportado para um modelo.  
+Aqui está o arquivo de código completo antes que ele foi exportado para um modelo.  
   
 ```csharp  
 using System;  
@@ -292,7 +295,8 @@ namespace $safeprojectname$
 ```  
   
 ## <a name="use-the-custom-wizard"></a>Usar o assistente personalizado  
- Agora você pode criar um projeto do seu modelo e usar o assistente personalizado.  
+
+Agora você pode criar um projeto do seu modelo e usar o assistente personalizado.  
   
 1.  Recompile a solução e iniciar a depuração. Uma segunda instância do Visual Studio deve ser exibida.  
   
@@ -312,7 +316,7 @@ namespace $safeprojectname$
   
 ## <a name="see-also"></a>Consulte também  
 
-<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
-[Personalizar modelos](../ide/customizing-project-and-item-templates.md)  
-[Elemento WizardExtension (modelos do Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)  
-[Pacotes do NuGet em modelos do Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)
+- <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
+- [Personalizar modelos](../ide/customizing-project-and-item-templates.md)  
+- [Elemento WizardExtension (modelos do Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)  
+- [Pacotes do NuGet em modelos do Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)
