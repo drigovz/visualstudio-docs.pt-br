@@ -22,16 +22,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba02d8811fc6633a55e06ae63c9399c70f59634f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 3897efa937991b598f6aae1cf24781ab2ce26c37
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118457"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684737"
 ---
 # <a name="localize-sharepoint-solutions"></a>Localizar soluções do SharePoint
 
-  O processo de preparação de seus aplicativos para que possa ser usados em todo o mundo é conhecido como localização. Localização é traduzir recursos para uma cultura específica. Para obter mais informações, consulte [Globalizing e Localizando aplicativos](/visualstudio/ide/globalizing-and-localizing-applications). Este tópico fornece uma visão geral de como localizar uma solução do SharePoint.  
+  O processo de preparação de seus aplicativos para que possa ser usados em todo o mundo é conhecido como localização. Localização é traduzir recursos para uma cultura específica. Para obter mais informações, consulte [Globalizing e Localizando aplicativos](../ide/globalizing-and-localizing-applications.md). Este tópico fornece uma visão geral de como localizar uma solução do SharePoint.  
   
  Para localizar uma solução, você remove cadeias de caracteres codificadas do código e abstrai-as em arquivos de recurso. Um arquivo de recurso é um [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-com base em arquivo com um *resx* extensão. O arquivo de recurso contém as versões traduzidas das cadeias de caracteres usadas em sua solução. Para obter mais informações, consulte [recursos em aplicativos](http://go.microsoft.com/fwlink/?LinkID=155844).  
   
@@ -59,7 +59,7 @@ ms.locfileid: "37118457"
  Há três áreas, você localiza normalmente em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aplicativos do SharePoint: recursos, marcação de página ASPX e código. Para fins de ilustração, as seções a seguir pressupõem que você tem uma solução do SharePoint que você deseja localizar em alemão e japonês. O idioma padrão é inglês.  
   
 ### <a name="localize-features"></a>Localizar recursos
- Para localizar um recurso, você precisa substituir o título embutido em código e a descrição do recurso com uma expressão que referencia o título traduzido e a cadeia de caracteres no arquivo de recursos localizados. Faça essa alteração na **Designer de recursos** em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obter mais informações, consulte [como: localizar um recurso](../sharepoint/how-to-localize-a-feature.md).  
+ Para localizar um recurso, você precisa substituir o título embutido em código e a descrição do recurso com uma expressão que referencia o título traduzido e a cadeia de caracteres no arquivo de recursos localizados. Faça essa alteração na **Designer de recursos** em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obter mais informações, confira [Como: Localizar um recurso](../sharepoint/how-to-localize-a-feature.md).  
   
  Para localizar seu recurso inglês no alemão e japonês, adicione três itens de projeto do arquivo de recurso ao seu projeto: um para inglês, um para alemão e um para japonês. Os arquivos de recurso não podem ser usados para localizar marcação ASPX ou código; arquivos de recurso separados são necessários para eles.  
   
@@ -109,7 +109,7 @@ $Resources:String ID
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />  
 ```  
   
- Para obter mais informações, consulte [como: marcação ASPX localizar](../sharepoint/how-to-localize-aspx-markup.md).  
+ Para obter mais informações, confira [Como: Localizar marcação ASPX](../sharepoint/how-to-localize-aspx-markup.md).  
   
 ### <a name="localize-code"></a>Localizar código
  Além de localizar cadeias de caracteres de recurso e [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] marcação, você também precisa localizar as cadeias de caracteres de mensagem e cadeias de caracteres de erro que aparecem no código da solução. Informativos localizados e mensagens de erro estão contidas em assemblies satélites. Assemblies satélite contêm cadeias de caracteres que são visíveis aos usuários, tais como [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] exceções, como mensagens de texto e de saída.  
@@ -126,7 +126,7 @@ $Resources:String ID
 HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")  
 ```  
   
- Para obter mais informações, consulte [como: localizar o código](../sharepoint/how-to-localize-code.md).  
+ Para obter mais informações, confira [Como: Localizar código](../sharepoint/how-to-localize-code.md).  
   
 #### <a name="web-part-code-localization"></a>Localização de código da Web part
  Web parts incluem um recurso do editor de propriedade personalizada que inclui os atributos de código que usam cadeias de caracteres embutidas, como WebDisplayName, categoria e WebDescription. Para substituir os valores de cadeia de caracteres para esses atributos, crie uma classe separada que deriva da classe do atributo. Nessas classes, defina a propriedade do atributo. A propriedade de atributo depende da classe base. Por exemplo, a propriedade de atributo WebDisplayName é DisplayNameValue e a propriedade de atributo WebDescription é DescriptionValue.  
@@ -134,9 +134,8 @@ HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")
  Na classe derivada, referencie a ID de cadeia de caracteres do arquivo de recurso e o objeto de ResourceManager para obter o valor localizado para a ID da cadeia de caracteres. Retorne este valor para o atributo de editor de propriedade.  
   
 ## <a name="see-also"></a>Consulte também
- [Como: localizar um recurso](../sharepoint/how-to-localize-a-feature.md)   
- [Como: localizar marcação ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
- [Como: localizar o código](../sharepoint/how-to-localize-code.md)   
- [Como: adicionar um arquivo de recurso](../sharepoint/how-to-add-a-resource-file.md)   
- [Como: usar um arquivo de recurso para especificar nomes localizados, propriedades e permissões](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)  
-  
+ [Como: Localizar um recurso](../sharepoint/how-to-localize-a-feature.md)   
+ [Como: Localizar marcação ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
+ [Como: Localizar código](../sharepoint/how-to-localize-code.md)   
+ [Como: Adicionar um arquivo de recurso](../sharepoint/how-to-add-a-resource-file.md)   
+ [Como: Use um arquivo de recurso para especificar nomes localizados, propriedades e permissões](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)  

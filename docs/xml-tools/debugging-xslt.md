@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c52d1ed054d5005a68f160e0b5442fbd02c3f1
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: b89fce53567e0d88827cf4ba68349a68c31bc560
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348533"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684633"
 ---
 # <a name="debugging-xslt"></a>Depuração do XSLT
 
@@ -32,5 +32,5 @@ O [profiler XSLT](../xml-tools/xslt-profiler.md) é uma ferramenta que permite a
 
 - [Editar folhas de estilos XSLT](../xml-tools/editing-xslt-style-sheets.md) discute usando o Editor de XML para editar folhas de estilos.
 - [Considerações de segurança ao trabalhar com dados XML](../xml-tools/security-considerations-when-working-with-xml-data.md) aborda questões de segurança que você precisa saber sobre ao trabalhar o Editor XML ou o depurador XSLT.
-- [Depuração no Visual Studio](../debugger/debugging-in-visual-studio.md) apresenta o depurador do Visual Studio.
+- [Depuração no Visual Studio](../debugger/debugger-feature-tour.md) apresenta o depurador do Visual Studio.
 - [Referência a XSLT](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) fornece material de referência para funções e os elementos XSLT.

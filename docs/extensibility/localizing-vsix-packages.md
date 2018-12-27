@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54de0b219eb1c86a413b7a95e87a48e7f65ac9ec
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 85d32f25e8dd1f2f56af0857f2be0ff24c4d3126
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636968"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740241"
 ---
 # <a name="localizing-vsix-packages"></a>Localizando pacotes do VSIX
 
@@ -106,6 +106,6 @@ O exemplo a seguir mostra as partes relevantes de um *vsixmanifest* arquivo. O a
 
 |Título|Descrição|
 |-----------|-----------------|
-|[Referência de esquema 2.0 do pacote de idiomas do VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Um pacote de idiomas do VSIX descreve as informações de localização de um arquivo de implantação. VSIX.|
+|[Referência de esquema 2.0 do pacote de idiomas do VSIX](/visualstudio/extensibility/vsix-language-pack-schema-2-0-reference)|Um pacote de idiomas do VSIX descreve as informações de localização de um arquivo de implantação. VSIX.|
 |[Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Descreve a estrutura e o conteúdo de um pacote vsix.|
 |[Localizar os comandos de menu](../extensibility/localizing-menu-commands.md)|Mostra como localizar outros recursos de texto em uma extensão.|

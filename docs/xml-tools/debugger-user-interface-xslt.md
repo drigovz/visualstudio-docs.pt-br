@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 255f1b9f8a277f0d58437f8b0a8b1400a069c237
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847377"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561912"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface de usuário do depurador (XSLT)
 
@@ -92,15 +92,15 @@ Para obter mais informações, consulte o [referência de interface do usuário 
 
 -   As funções definidas pelo usuário não são permitidas.
 
-Para obter mais informações, consulte [como: avaliar uma expressão XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
+Para obter mais informações, confira [Como: Avaliar uma expressão XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
 
 ## <a name="disassembly-window"></a>janela de Desmontagem
  A janela de desmontagem mostra o código do assembly que é gerado pelo compilador XSLT. Esta janela pode ser usada da mesma forma como quaisquer outras janelas de desmontagem do Visual Studio.
 
- Para obter mais informações, [como: usar a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md).
+ Para obter mais informações, [como: Use a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md).
 
 ## <a name="see-also"></a>Consulte também
 
 - [Depuração de XSLT](../xml-tools/debugging-xslt.md)
-- [Noções básicas do depurador](../debugger/getting-started-with-the-debugger.md)
+- [Introdução ao depurador](../debugger/debugger-feature-tour.md)   
 - [Inspecionar variáveis nas janelas autos e locais no Visual Studio](../debugger/autos-and-locals-windows.md)

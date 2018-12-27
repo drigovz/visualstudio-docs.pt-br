@@ -21,24 +21,24 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], custom XML parts
 - Excel [Office development in Visual Studio], custom XML parts
 - documents [Office development in Visual Studio], custom XML parts
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 71720ef96ee7d17bd52ea118a8c44a8f4b117cad
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 467b1055518697b035a3fa7e2a094d7f22b8198a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671723"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648346"
 ---
 # <a name="custom-xml-parts-overview"></a>Visão geral de partes XML personalizado
   Você pode inserir dados XML em documentos para alguns aplicativos do Microsoft Office. Quando você insere dados XML em um documento, os dados são denominados um *parte XML personalizada*.  
   
  Você pode criar e modificar partes XML personalizadas em um documento usando um suplemento do VSTO ou solução no Visual Studio de nível de documento. Você não precisa iniciar o aplicativo do Microsoft Office para criar e modificar partes XML personalizadas.  
   
- **Aplica-se a:** as informações neste tópico se aplicam a projetos no nível de documento e projetos de suplemento do VSTO para Excel, PowerPoint e Word. Para obter mais informações, consulte [recursos disponíveis por tipo de projeto e aplicativo do Office](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Aplica-se a:** As informações neste tópico se aplicam a projetos no nível de documento e projetos de suplemento do VSTO para Excel, PowerPoint e Word. Para obter mais informações, consulte [recursos disponíveis por tipo de projeto e aplicativo do Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 > [!NOTE]  
 >  Visual Studio também permite aos objetos de dados de cache em personalizações no nível do documento. Esse recurso é diferente de partes XML personalizadas, embora haja algumas semelhanças. Para obter mais informações, consulte [armazenado em cache dados personalizações no nível do documento](../vsto/cached-data-in-document-level-customizations.md).  
@@ -52,9 +52,9 @@ ms.locfileid: "50671723"
   
 -   [Apresentando os formatos de arquivo do Office (2007) Open XML](/previous-versions/office/developer/office-2007/aa338205(v=office.12))  
   
--   [Como: manipular documentos nos formatos XML abertos](/previous-versions/office/developer/office-2007/aa982683(v=office.12))  
+-   [Como: Manipular documentos nos formatos XML abertos](/previous-versions/office/developer/office-2007/aa982683(v=office.12))  
   
--   [Passo a passo: Formato de XML do Word 2007](/previous-versions/office/developer/office-2007/bb266220(v=office.12))  
+-   [Passo a passo: Formato XML do Word 2007](/previous-versions/office/developer/office-2007/bb266220(v=office.12))  
   
 -   [Criar documentos do Word 2007 usando os formatos XML abertos](/previous-versions/office/developer/office-2007/bb264572(v=office.12))  
   
@@ -69,9 +69,9 @@ ms.locfileid: "50671723"
   
  Para criar uma parte XML personalizada usando o Visual Studio, adicione um novo <xref:Microsoft.Office.Core.CustomXMLPart> para o <xref:Microsoft.Office.Core.CustomXMLParts> coleta no documento. Para mais informações, consulte os seguintes tópicos:  
   
--   [Como: adicionar partes XML personalizadas a personalizações no nível do documento](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
+-   [Como: Adicionar partes XML personalizadas a personalizações no nível do documento](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
   
--   [Como: adicionar partes XML personalizadas aos documentos usando suplementos VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
+-   [Como: Adicionar partes XML personalizadas aos documentos usando suplementos VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
   
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Modificar partes XML sem iniciar o aplicativo do Office  
  Você pode adicionar ou modificar uma parte XML personalizada sem iniciar o Excel, PowerPoint ou Word. Isso é útil se você quiser trabalhar com dados XML em um documento em um computador que não tenha instalados, como um servidor de aplicativos do Microsoft Office.  
@@ -83,7 +83,7 @@ ms.locfileid: "50671723"
   
 ## <a name="see-also"></a>Consulte também  
  [Esquemas e dados em personalizações no nível de documento XML](../vsto/xml-schemas-and-data-in-document-level-customizations.md)   
- [Como: adicionar partes XML personalizadas a personalizações no nível do documento](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)   
- [Como: adicionar partes XML personalizadas aos documentos usando suplementos VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   
+ [Como: Adicionar partes XML personalizadas a personalizações no nível do documento](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)   
+ [Como: Adicionar partes XML personalizadas aos documentos usando suplementos VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   
  [Controles de conteúdo](../vsto/content-controls.md)   
  [Passo a passo: Associar controles de conteúdo a partes XML personalizadas](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b200c5b0df5f150e0d34b351a3e36a8a986f3ed6
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 7cf16e015c6c5e0f828d759e40dc8cc0eed7c050
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248238"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739478"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Alterações no design dos projetos do Office destinados ao .NET Framework 4 ou o .NET Framework 4.5
   A partir [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], o Visual Studio introduziu algumas alterações no design dos projetos do Office que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior. Se você estiver familiarizado com projetos do Office em versões anteriores do Visual Studio, você deve estar atento essas alterações antes de desenvolver projetos do Office que se destinam a essas versões do .NET Framework 4.0 ou posterior. Por padrão, todos os projetos que você cria usando o Visual Studio 2013 ou posterior direcionam o .NET Framework 4.0 ou posterior.  
@@ -35,7 +35,7 @@ ms.locfileid: "53248238"
   
 -   [Atualizar projetos do Excel e Word migrados para o .NET Framework 4 ou o .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
--   [Atualizar personalizações da faixa de opções em projetos do Office que você migrar para o .NET Framework 4 ou o .NET Framework 4.5](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+-   [Atualizar personalizações da faixa de opções em projetos do Office que você migrar para o .NET Framework 4 ou o .NET Framework 4.5](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)  
   
 -   [Atualizar as regiões do formulário em projetos do Outlook que você migrar para o .NET Framework 4 ou o .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
@@ -51,7 +51,7 @@ ms.locfileid: "53248238"
 |---------------------|-----------------|  
 |O <xref:System.Security.SecurityTransparentAttribute> não é usado ou tem suporte em projetos do Office.|Você deve remover esse atributo do arquivo de código AssemblyInfo em projetos do Office que você atualizar do Visual Studio 2008. Para obter mais informações, consulte [exigiu alterações para executar projetos do Office migrados para o .NET Framework 4 ou o .NET Framework 4.5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |O **ExcelLocale1033Attribute** não é usado ou tem suporte em projetos do Excel.|Você deve remover esse atributo do *AssemblyInfo* arquivo de código em projetos do Excel. Para obter mais informações, consulte [atualização do Excel e Word projetos que você migrar para o .NET Framework 4 ou o .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
-|O modelo de programação do **faixa de opções (Visual Designer)** itens de projeto foi alterado.|Você deve modificar o arquivo code-behind para todos os itens da faixa de opções em seu projeto. Você também deve modificar qualquer código que cria uma instância de controles da faixa de opções em tempo de execução, manipula os eventos da faixa de opções ou define a posição de um componente de faixa de opções por meio de programação. Para obter mais informações, consulte [personalizações da faixa de opções de atualização em projetos do Office que você migrar para o .NET Framework 4 ou o .NET Framework 4.5](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
+|O modelo de programação do **faixa de opções (Visual Designer)** itens de projeto foi alterado.|Você deve modificar o arquivo code-behind para todos os itens da faixa de opções em seu projeto. Você também deve modificar qualquer código que cria uma instância de controles da faixa de opções em tempo de execução, manipula os eventos da faixa de opções ou define a posição de um componente de faixa de opções por meio de programação. Para obter mais informações, consulte [personalizações da faixa de opções de atualização em projetos do Office que você migrar para o .NET Framework 4 ou o .NET Framework 4.5](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5).|  
 |O modelo de programação de regiões de formulário do Outlook foi alterado.|Você deve modificar o arquivo code-behind para quaisquer regiões de formulário em seu projeto e qualquer código que cria uma instância de determinadas classes de região de formulário em tempo de execução. Para obter mais informações, consulte [atualizar regiões de formulário em projetos do Outlook que você migrar para o .NET Framework 4 ou o .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |O modelo de programação de marcas inteligentes em projetos do Excel e Word foi alterado. As marcas inteligentes foram preteridas no [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] e [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Se sua solução usar marcas inteligentes, ocorrerão erros quando você compila o projeto. Como as marcas inteligentes foram preteridas no [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] e [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)], você deve remover as marcas, antes de testar e depurar a solução em [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ou posterior.|  
 |A sintaxe do `GetVstoObject` e `HasVstoObject` métodos foi alterado|Você deve passar o `Globals.Factory` objeto para esses métodos quando você acessá-los em objetos nativos de assemblies de interoperabilidade primários (PIAs), ou você pode acessar esses métodos no objeto que é retornado pelo `Globals.Factory` propriedade em seu projeto. Para obter mais informações, consulte [atualização do Excel e Word projetos que você migrar para o .NET Framework 4 ou o .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  

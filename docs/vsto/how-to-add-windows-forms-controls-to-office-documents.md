@@ -1,5 +1,5 @@
 ---
-title: 'Como: adicionar controles dos Windows forms a documentos do Office'
+title: 'Como: Adicionar controles dos Windows forms a documentos do Office'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], adding
 - controls [Office development in Visual Studio], Windows Forms controls
 - documents [Office development in Visual Studio], Windows Forms controls
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7b5a6246a79d2d1f910b6ca39ce290f6c325dbe6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 10fa7da3028c2d4706ec380bb4ceeae1d55b45af
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892747"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647852"
 ---
-# <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Como: adicionar controles dos Windows Forms a documentos do Office
+# <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Como: Adicionar controles dos Windows Forms a documentos do Office
   Você pode adicionar controles de formulários do Windows para o Microsoft Office Excel e documentos do Microsoft Office Word em tempo de design em projetos de nível de documento. Em tempo de execução, você pode adicionar controles em personalizações no nível de documento e nos suplementos do VSTO. Por exemplo, você pode adicionar um <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> controle à sua planilha para que os usuários podem selecionar em uma lista de opções.  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
@@ -38,7 +38,7 @@ ms.locfileid: "49892747"
   
 - [Adicionar controles em tempo de execução VSTO Add-ins](#runtimeaddin)  
   
-  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como eu faço para: adicionar controles a um documento se surgir em tempo de execução?](http://go.microsoft.com/fwlink/?LinkId=132782).  
+  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Adicionar controles a uma superfície de documento em tempo de execução? ](http://go.microsoft.com/fwlink/?LinkId=132782).  
   
 ##  <a name="designtime"></a> Adicionar controles em tempo de design  
  Há várias maneiras de adicionar controles de formulários do Windows para o documento em um projeto de nível de documento em tempo de design.  
@@ -47,7 +47,7 @@ ms.locfileid: "49892747"
   
 ### <a name="to-drag-a-windows-forms-control-to-the-document"></a>Para arrastar um controle dos Windows Forms para o documento  
   
-1.  Crie ou abra um projeto de pasta de trabalho do Excel ou documento do Word no Visual Studio, para que o documento está visível no designer. Para obter informações sobre a criação de projetos, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Crie ou abra um projeto de pasta de trabalho do Excel ou documento do Word no Visual Studio, para que o documento está visível no designer. Para obter informações sobre a criação de projetos, consulte [como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  No **controles comuns** guia da **caixa de ferramentas**, clique no controle que você deseja adicionar e arraste-o para o documento.  
   
@@ -56,7 +56,7 @@ ms.locfileid: "49892747"
   
 ### <a name="to-draw-a-windows-forms-control-on-the-document"></a>Para desenhar um controle Windows Forms no documento  
   
-1.  Crie ou abra um projeto de pasta de trabalho do Excel ou documento do Word no Visual Studio, para que o documento está visível no designer. Para obter informações sobre a criação de projetos, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Crie ou abra um projeto de pasta de trabalho do Excel ou documento do Word no Visual Studio, para que o documento está visível no designer. Para obter informações sobre a criação de projetos, consulte [como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  No **controles comuns** guia da **caixa de ferramentas**, clique no controle que você deseja adicionar.  
   
@@ -69,7 +69,7 @@ ms.locfileid: "49892747"
   
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-single-clicking-the-control"></a>Para adicionar um controle de formulários do Windows ao documento, o controle clicando em único  
   
-1.  Crie ou abra um projeto de pasta de trabalho do Excel ou documento do Word no Visual Studio, para que o documento está visível no designer. Para obter informações sobre a criação de projetos, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Crie ou abra um projeto de pasta de trabalho do Excel ou documento do Word no Visual Studio, para que o documento está visível no designer. Para obter informações sobre a criação de projetos, consulte [como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  No **controles comuns** guia da **caixa de ferramentas**, clique no controle que você deseja adicionar  
   
@@ -82,7 +82,7 @@ ms.locfileid: "49892747"
   
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-double-clicking-the-control"></a>Para adicionar um controle de formulários do Windows para o documento clicando duas vezes no controle  
   
-1.  Crie ou abra um projeto de pasta de trabalho do Excel ou documento do Word no Visual Studio, para que o documento está visível no designer. Para obter informações sobre a criação de projetos, consulte [como: projetos do Office de criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Crie ou abra um projeto de pasta de trabalho do Excel ou documento do Word no Visual Studio, para que o documento está visível no designer. Para obter informações sobre a criação de projetos, consulte [como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  No **controles comuns** guia da **caixa de ferramentas**, clique duas vezes no controle que você deseja adicionar.  
   
@@ -93,7 +93,7 @@ ms.locfileid: "49892747"
   
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-pressing-the-enter-key"></a>Para adicionar um controle de formulários do Windows para o documento, pressionando a tecla Enter  
   
-1.  Crie ou abra um projeto de pasta de trabalho do Excel ou documento do Word no Visual Studio, para que o documento está visível no designer. Para obter informações sobre a criação de projetos, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Crie ou abra um projeto de pasta de trabalho do Excel ou documento do Word no Visual Studio, para que o documento está visível no designer. Para obter informações sobre a criação de projetos, consulte [como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  No **controles comuns** guia da **caixa de ferramentas**, clique no controle que você deseja adicionar e, em seguida, pressione a **Enter** chave.  
   
@@ -138,7 +138,7 @@ ms.locfileid: "49892747"
 ## <a name="see-also"></a>Consulte também  
  [Controles de formulários do Windows na visão geral de documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Como: redimensionar controles dentro de células da planilha](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
+ [Como: Redimensionar controles dentro de células da planilha](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
  [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
   

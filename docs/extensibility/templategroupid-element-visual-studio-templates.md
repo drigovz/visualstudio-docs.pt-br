@@ -2,9 +2,8 @@
 title: Elemento TemplateGroupID (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateGroupID
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91631975d48f6e7e13646c428cdd5b5473bbeed2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 68e89b0211c64dcee61507afc15c50bd8e5e85d2
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144431"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53560644"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>Elemento TemplateGroupID (modelos do Visual Studio)
 Especifica o tipo de projeto um modelos de item aparecerá no. Esse elemento é significativo quando [ShowByDefault (modelos do Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) é definido como `false`. Quando [ShowByDefault (modelos do Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) é definido como `true`, em seguida, um modelo de item está disponível em todos os tipos de projeto.  
@@ -49,7 +48,7 @@ Especifica o tipo de projeto um modelos de item aparecerá no. Esse elemento é 
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele exibe em um a **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
@@ -59,19 +58,19 @@ Especifica o tipo de projeto um modelos de item aparecerá no. Esse elemento é 
 ## <a name="remarks"></a>Comentários  
  `TemplateGroupID` é um elemento.  
   
- O valor de `TemplateGroupID` elemento é usado junto com o registro do sistema de projeto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<o número de versão >* \Projects\\) para modelos de filtro que aparecem no **Adicionar Novo Item** caixa de diálogo.  
+ O valor de `TemplateGroupID` elemento é usado junto com o registro do sistema de projeto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<número de versão >* \Projects\\) para modelos de filtro que aparecem na **Adicionar Novo Item** caixa de diálogo.  
   
 |Valor do Visual C++|Significado|  
 |------------------------|-------------|  
 |VC nativo|Usado para projetos nativos. Também o padrão se um tipo de projeto não pode ser determinado.|  
-|VC gerenciados|Usado para gerenciada (/ clr) projetos|  
-|VC-Windows|Usado para todos os projetos para destinar a plataforma do windows (nativo/gerenciado/store)|  
-|WinRT-nativo-UAP|Usado para projetos de armazenamento do Windows 10|  
+|VC gerenciados|Usado para gerenciados (/ clr) projetos|  
+|VC-Windows|Usado para todos os projetos que usam a plataforma do windows (nativo/gerenciado/store)|  
+|WinRT-Native-UAP|Usado para projetos de armazenamento do Windows 10|  
 |CodeSharing nativo|Usado para projetos de item compartilhado|  
-|6.3 de nativo de WinRT|Usado para projetos de armazenamento do Windows 8.1|  
+|6.3 do WinRT-nativo|Usado para projetos do Windows 8.1 Store|  
 |WinRT nativo-Phone 6.3|Usado para projetos do Windows Phone 8.1|  
-|WinRT nativo|Usado para projetos de armazenamento do Windows 8.0|  
-|VC-Android|Usado em projetos Android|  
+|Nativo de WinRT|Usado para projetos do Windows 8.0 Store|  
+|Android VC|Usado para projetos do Android|  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   

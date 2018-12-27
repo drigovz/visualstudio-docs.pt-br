@@ -1,6 +1,6 @@
 ---
-title: 'Como: expor o código para VBA em um projeto do Visual c#'
-ms.custom: ''
+title: 'Como: Expor o código para VBA em um C# projeto'
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -13,29 +13,29 @@ helpviewer_keywords:
 - VBA [Office development in Visual Studio], exposing code in document-level customizations
 - document-level customizations [Office development in Visual Studio], exposing code
 - exposing code to VBA
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f00f668c3eac9a39251d0a4e19f98ed597c373db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1f0b3f004f6aebed6426238a081369c7d50e15f5
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873481"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648503"
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Como: expor o código para VBA em um projeto do Visual c#
+# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Como: Expor o código para VBA em um projeto do Visual c#
   Você pode expor o código em um projeto Visual c# para o Visual Basic para código Applications (VBA) se você quiser que os dois tipos de código para interagir entre si.  
   
- O processo do Visual c# é diferente do processo do Visual Basic. Para obter mais informações, consulte [como: expor o código para VBA em um projeto do Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md).  
+ O processo do Visual c# é diferente do processo do Visual Basic. Para obter mais informações, confira [Como: Expor o código para VBA em um projeto do Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
 ## <a name="expose-code-in-a-visual-c-project"></a>Expor o código em um projeto do Visual c#  
  Para habilitar o código do VBA chamar o código em um projeto do Visual c#, modifique o código para que fique visível para COM e, em seguida, defina a **ReferenceAssemblyFromVbaProject** propriedade **verdadeira** no designer.  
   
- Para um passo a passo que demonstra como chamar um método em um projeto do Visual c# do VBA, consulte [instruções passo a passo: chamar o código de VBA em um Visual C&#35; projeto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
+ Para um passo a passo que demonstra como chamar um método em um projeto do Visual c# do VBA, consulte [passo a passo: Chamar o código de VBA em um Visual C&#35; project](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
 ### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>Para expor o código em um projeto do Visual c# para VBA  
   
@@ -104,10 +104,10 @@ ms.locfileid: "49873481"
 12. Compile o projeto.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)   
  [Combinar o VBA e personalizações no nível de documento](../vsto/combining-vba-and-document-level-customizations.md)   
  [Passo a passo: Chamar o código de VBA em um Visual C&#35; projeto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
- [Como: expor o código para VBA em um projeto do Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
+ [Como: Expor o código para VBA em um projeto do Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
   
   

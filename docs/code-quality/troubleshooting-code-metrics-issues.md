@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7078b09b1bf2382e1c91878995772d80bfa625
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9575020135846edc9cb86bd89ff72682500d8a9d
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853955"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739556"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>Solucionando problemas de métricas do código
 Você pode encontrar alguns dos problemas a seguir ao coletar as métricas de código:
@@ -30,4 +30,4 @@ Você pode encontrar alguns dos problemas a seguir ao coletar as métricas de c�
 - A função contém uma instrução de opção (selecione o caso em VB). Diferenças de compilador entre [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] e versões anteriores podem gerar códigos MSIL diferentes para algumas instruções de opção que contêm casos com falhas.
 
 ## <a name="see-also"></a>Consulte também
- [Medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+ [Medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/code-metrics-values.md)

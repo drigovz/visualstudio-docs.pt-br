@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f0e665e00e614cfcf3f4e285e33345e31ab42b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9c4a7405dd94837d5e373470cd9181c18d913191
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283230"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740069"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Como criar ou atualizar políticas de check-in de análise do código padrão
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Como: Criar ou atualizar as políticas do Check-in de análise de código padrão
 
 Você pode exigir que a análise de código ser executado em todos os projetos de código em um projeto de DevOps do Azure usando a análise de código check-in de política. Exigir que a análise de código pode melhorar a qualidade do código que é verificado na base de código.
 
@@ -71,4 +71,4 @@ Para obter mais informações sobre como criar e implementar uma regra de polít
 
 ## <a name="see-also"></a>Consulte também
 
-- [Criar e usar diretivas do check-in de análise de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Criar e usar diretivas do check-in de análise de código](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

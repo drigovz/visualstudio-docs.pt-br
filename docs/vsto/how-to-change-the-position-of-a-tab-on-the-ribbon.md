@@ -1,5 +1,5 @@
 ---
-title: 'Como: alterar a posição de uma guia na faixa de opções'
+title: 'Como: Alterar a posição de uma guia na faixa de opções'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -10,19 +10,19 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 08bbdf81023be466d30e49215fc0dbe1d3812f20
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c00fa747ee3c74592d491796e1281207d0c5a83f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255383"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647104"
 ---
-# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Como: alterar a posição de uma guia na faixa de opções
+# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Como: Alterar a posição de uma guia na faixa de opções
   Você pode alterar a ordem das guias personalizadas em uma faixa de opções usando o **guia Editor de coleção**. Você pode posicionar guias personalizadas antes ou depois de uma guia interna na faixa de opções. Uma guia interna é uma guia que já está na faixa de opções de um aplicativo do Microsoft Office. Por exemplo, o **dados** guia é uma guia interna no Excel.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -57,7 +57,7 @@ ms.locfileid: "35255383"
   
 5.  Defina as **OfficeId** propriedade para a ID de controle de uma guia interna.  
   
-     Para obter uma lista de IDs de controle, consulte [arquivos de Ajuda do Office 2010: identificadores de controle de interface de usuário fluent do Office](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Para obter uma lista de IDs de controle, consulte [arquivos de Ajuda do Office 2010: Identificadores de controle de interface de usuário fluent do Office](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
 ## <a name="see-also"></a>Consulte também  
  [Visão geral da faixa de opções](../vsto/ribbon-overview.md)   

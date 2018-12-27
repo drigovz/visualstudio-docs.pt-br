@@ -2,9 +2,8 @@
 title: Elemento WizardData (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#WizardData
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6685c09e463b50f1fd856c65eadc09555a6dedb9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a7f024c1ca9840b2dcde181d772bf18af99e603
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140109"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561285"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>Elemento WizardData (modelos do Visual Studio)
 Especifica o XML personalizado  
@@ -51,17 +50,17 @@ Especifica o XML personalizado
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Contém todos os metadados para o modelo de projeto, item modelo ou starter kit.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Contém todos os metadados para o modelo de projeto, o modelo de item ou o starter kit para.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é opcional.  
   
- Esse texto Especifica o XML personalizado para passar para a extensão do assistente personalizado especificada no [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) elemento.  
+ Esse texto Especifica o XML personalizado para passar para a extensão de assistente personalizada especificada na [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) elemento.  
   
 ## <a name="remarks"></a>Comentários  
- Qualquer XML pode ser especificado nesse elemento. O XML será passado como um parâmetro para a extensão do assistente personalizado, permitindo que a extensão usar o conteúdo desse elemento. Nenhuma validação é feita nesses dados.  
+ Qualquer XML pode ser especificado nesse elemento. O XML será ser passado como um parâmetro para a extensão de assistente personalizada, permitindo que a extensão usar o conteúdo desse elemento. Nenhuma validação é feita nesses dados.  
   
- O conteúdo do `WizardData` elemento são passados inalterados, como um parâmetro de dicionário de parâmetros na cadeia de caracteres de `IWizard.RunStarted` método. O parâmetro é chamado $WizardData$.  
+ O conteúdo a `WizardData` elemento são passados inalterados, como um parâmetro de dicionário de parâmetros na cadeia de caracteres a `IWizard.RunStarted` método. O parâmetro é chamado $WizardData$.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir ilustra os metadados para o modelo de projeto padrão para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo do Windows.  
@@ -101,4 +100,4 @@ Especifica o XML personalizado
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
  [Elemento WizardExtension (modelos do Visual Studio)](../extensibility/wizardextension-element-visual-studio-templates.md)   
- [Como usar assistentes com modelos do projeto](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Como: Usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)

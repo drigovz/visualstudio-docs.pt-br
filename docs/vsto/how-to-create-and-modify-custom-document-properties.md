@@ -1,5 +1,5 @@
 ---
-title: 'Como: criar e modificar propriedades de documento personalizadas'
+title: 'Como: Criar e modificar propriedades de documento personalizadas'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - custom document properties
 - documents [Office development in Visual Studio], properties
 - document properties [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb66d2fbd1af41cfa89fc38f7694ee3783d10f76
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 71ff5c37eee21092e186e50547cf9c0b72f1b20e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254430"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646496"
 ---
-# <a name="how-to-create-and-modify-custom-document-properties"></a>Como: criar e modificar propriedades de documento personalizadas
+# <a name="how-to-create-and-modify-custom-document-properties"></a>Como: Criar e modificar propriedades de documento personalizadas
   Aplicativos do Microsoft Office listados acima fornecem propriedades internas são armazenadas com documentos. Além disso, você pode criar e modificar propriedades de documento personalizadas se há informações adicionais que você deseja armazenar no documento.  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
@@ -33,7 +33,7 @@ ms.locfileid: "35254430"
   
  O exemplo a seguir demonstra como adicionar uma propriedade personalizada em uma personalização no nível de documento para Excel e atribua um valor.  
   
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como eu faço para: acesso e manipular as propriedades de documento personalizadas no Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Acessar e manipular as propriedades de documento personalizadas no Microsoft Word? ](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
 ## <a name="example"></a>Exemplo  
  [!code-vb[Trin_VstcoreProgramming#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#6)]
@@ -45,6 +45,6 @@ ms.locfileid: "35254430"
 ## <a name="see-also"></a>Consulte também  
  [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md)   
  [Personalizações em nível de documento do programa](../vsto/programming-document-level-customizations.md)   
- [Como: leitura de e gravação às propriedades do documento](../vsto/how-to-read-from-and-write-to-document-properties.md)  
+ [Como: Ler e gravar para propriedades de documento](../vsto/how-to-read-from-and-write-to-document-properties.md)  
   
   

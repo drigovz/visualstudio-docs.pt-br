@@ -1,5 +1,5 @@
 ---
-title: 'Como: soluções do Office abertos sem executar código'
+title: 'Como: Abrir soluções do Office sem executar código'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,19 +16,19 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], bypassing
 - Office documents [Office development in Visual Studio, opening without running code
 - documents [Office development in Visual Studio], opening without running code
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f7ced7b38a4f32d96b397e7f9eebb1d40be03ae3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7684fd2d01d0151798c9e59c593e3e0c2acb95b1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254982"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646900"
 ---
-# <a name="how-to-open-office-solutions-without-running-code"></a>Como: soluções do Office abertos sem executar código
+# <a name="how-to-open-office-solutions-without-running-code"></a>Como: Abrir soluções do Office sem executar código
   Uma solução do Microsoft Office criada com extensões de código gerenciado é executado, mesmo se a configuração de segurança no aplicativo do Office do usuário final é definida como alta. Isso ocorre porque a segurança de código do assembly .NET é gerenciada pelo Microsoft .NET Framework, não pelo Microsoft Office.  
   
  No entanto, há vezes quando você talvez queira abrir um documento sem executar o código. Por exemplo, código executado quando o documento é aberto pode alterar o conteúdo, mas você deseja atualizar a aparência do documento antes das alterações de código-lo. Ou você talvez queira enviar o documento com determinadas informações nele para alguém, e você não deseja que o código para executar e, possivelmente, alterar o conteúdo.  

@@ -1,5 +1,5 @@
 ---
-title: 'Como: adicionar controles ListObject a planilhas'
+title: 'Como: Adicionar controles ListObject a planilhas'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - ListObject control, adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae6abd9791bfaa9ce0e7c15f1f6f66034a75c6c7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949246"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646958"
 ---
-# <a name="how-to-add-listobject-controls-to-worksheets"></a>Como: adicionar controles ListObject a planilhas
+# <a name="how-to-add-listobject-controls-to-worksheets"></a>Como: Adicionar controles ListObject a planilhas
   Você pode adicionar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a uma planilha do Microsoft Office Excel em tempo de design e em tempo de execução em projetos de nível de documento.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -41,7 +41,7 @@ ms.locfileid: "49949246"
   Para obter mais informações sobre <xref:Microsoft.Office.Tools.Excel.ListObject> controles, consulte [controle ListObject](../vsto/listobject-control.md).  
   
 ##  <a name="designtime"></a> Adicionar controles ListObject em tempo de design  
- Há várias maneiras de adicionar <xref:Microsoft.Office.Tools.Excel.ListObject> controles em uma planilha em um projeto de nível de documento em tempo de design: de dentro do Excel, do Visual Studio **caixa de ferramentas**e para o **fontes de dados** janela.  
+ Há várias maneiras de adicionar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a uma planilha em um projeto de nível de documento em tempo de design: De dentro do Excel, do Visual Studio **caixa de ferramentas**e para o **fontes de dados** janela.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -95,7 +95,7 @@ ms.locfileid: "49949246"
  [Controle ListObject](../vsto/listobject-control.md)   
  [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)   
  [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)   
- [Como: redimensionar controles ListObject](../vsto/how-to-resize-listobject-controls.md)   
+ [Como: Redimensionar controles ListObject](../vsto/how-to-resize-listobject-controls.md)   
  [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   

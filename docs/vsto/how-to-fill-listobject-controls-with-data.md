@@ -1,5 +1,5 @@
 ---
-title: 'Como: controla o preenchimento ListObject com dados'
+title: 'Como: Preencher controles ListObject com dados'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,24 +15,24 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to worksheets
 - data binding, ListObject controls
 - worksheets, populating with data
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e9e255d4099a90173b9dbc7ff6fd7b2225d0622d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: cafaaebeea2a6fd5d4c750e89e90747da28b254d
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255698"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646683"
 ---
-# <a name="how-to-fill-listobject-controls-with-data"></a>Como: controla o preenchimento ListObject com dados
+# <a name="how-to-fill-listobject-controls-with-data"></a>Como: Preencher controles ListObject com dados
   Você pode usar a vinculação de dados como uma maneira de adicionar rapidamente os dados para seu documento. Após a vinculação de dados para um objeto de lista, você pode desconectar o objeto de lista para que ele exibe os dados, mas não está mais ligado à fonte de dados.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [How do i: criar uma lista no Excel que está conectado a uma lista do SharePoint?](http://go.microsoft.com/fwlink/?LinkID=130263).  
+ ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Criar uma lista no Excel que está conectado a uma lista do SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
 ### <a name="to-bind-data-to-a-listobject-control"></a>Para associar dados a um controle ListObject  
   
@@ -65,11 +65,11 @@ ms.locfileid: "35255698"
  [Estender documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Controles em documentos do Office](../vsto/controls-on-office-documents.md)   
  [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Como: colunas de mapa ListObject para dados](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [Como: Mapear colunas ListObject para dados](../vsto/how-to-map-listobject-columns-to-data.md)   
  [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)   
  [Controle ListObject](../vsto/listobject-control.md)   
  [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Como: preencher planilhas com dados de um banco de dados](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
- [Como: preencher documentos com dados de serviços](../vsto/how-to-populate-documents-with-data-from-services.md)  
+ [Como: Preencher planilhas com dados de um banco de dados](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [Como: Preencher documentos com dados de serviços](../vsto/how-to-populate-documents-with-data-from-services.md)  
   
   

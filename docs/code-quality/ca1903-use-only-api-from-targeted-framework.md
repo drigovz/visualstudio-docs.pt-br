@@ -1,5 +1,5 @@
 ---
-title: 'CA1903: usar apenas a API da estrutura de destino'
+title: 'CA1903: Usar apenas a API da estrutura de destino'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42a74cfaf93ba0e8e5aec7e15c522d2e26b7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ace24746aafa70c73bc87c55c197913136f1a7b1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822807"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738866"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: usar apenas a API da estrutura de destino
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usar apenas a API da estrutura de destino
 
 |||
 |-|-|
@@ -48,7 +48,7 @@ ms.locfileid: "49822807"
 |.NET Framework 3,5|.NET Framework 3,5 SP1|
 |.NET Framework 4|N/D|
 
- Para alterar a estrutura de destino do projeto, consulte [visando uma versão específica do .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Para alterar a estrutura de destino do projeto, consulte [visando uma versão específica do .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
  Para remover a dependência no service pack, remova todos os usos do novo membro ou tipo. Se essa é uma dependência deliberada, suprimir o aviso ou desative essa regra.
@@ -69,4 +69,4 @@ ms.locfileid: "49822807"
 ## <a name="see-also"></a>Consulte também
 
 - [Avisos de portabilidade](../code-quality/portability-warnings.md)
-- [Direcionamento de uma versão específica do .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Direcionamento de uma versão específica do .NET Framework](../ide/visual-studio-multi-targeting-overview.md)

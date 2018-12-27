@@ -23,12 +23,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35f694d9cc397800249dd9b4acd86bf63d22ad93
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a1aeb3cea738a08850762083929741c082d7ccb6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320703"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739848"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Análise de código para visão geral do C/C++
 
@@ -52,23 +52,23 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>suporte de #pragma
 
-Você pode usar o `#pragma` diretiva para tratar avisos como erros; ativar ou desativar avisos e suprimir avisos para linhas individuais de código. Para obter mais informações, consulte [como: definir propriedades de análise de código para projetos C/C++](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
+Você pode usar o `#pragma` diretiva para tratar avisos como erros; ativar ou desativar avisos e suprimir avisos para linhas individuais de código. Para obter mais informações, confira [Como: Definir propriedades de análise de código para projetos C/C++](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
 
 ## <a name="annotation-support"></a>Suporte de anotação
 
-Anotações de melhorar a precisão da análise de código. Anotações fornecem informações adicionais sobre condições pré e pós-nos parâmetros de função e tipos de retorno. Para obter mais informações, consulte [como: especificar informações de código adicionais usando analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+Anotações de melhorar a precisão da análise de código. Anotações fornecem informações adicionais sobre condições pré e pós-nos parâmetros de função e tipos de retorno. Para obter mais informações, confira [Como: Especificar informações de código adicionais usando analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Execute a ferramenta de análise como parte da política de check-in
 
-Talvez você queira exigem que o código de origem todos os check-ins satisfaçam determinadas políticas. Em particular, convém certificar-se de que a análise foi executada como uma etapa de compilação local mais recente. Para obter mais informações sobre como habilitar uma política de check-in do análise código, consulte [criando e usando análise de código de Check-In políticas](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+Talvez você queira exigem que o código de origem todos os check-ins satisfaçam determinadas políticas. Em particular, convém certificar-se de que a análise foi executada como uma etapa de compilação local mais recente. Para obter mais informações sobre como habilitar uma política de check-in do análise código, consulte [criando e usando análise de código de Check-In políticas](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
 
 ## <a name="team-build-integration"></a>Integração do Team Build
 
-Você pode usar os recursos integrados do sistema de compilação para executar a ferramenta de análise de código como uma etapa do [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] processo de compilação. Para obter mais informações, consulte [Pipelines do Azure](/azure/devops/pipelines/index?view=vsts).
+Você pode usar os recursos integrados do sistema de compilação para executar a ferramenta de análise de código como uma etapa do [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] processo de compilação. Para obter mais informações, confira [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Guia de início rápido: Análise de código para C/C++](quick-start-code-analysis-for-c-cpp.md)
+- [Início Rápido: Análise de código para C/C++](quick-start-code-analysis-for-c-cpp.md)
 - [Passo a passo: Analisar o código C/C++ em busca de defeitos](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [Análise de código para avisos do C/C++](code-analysis-for-c-cpp-warnings.md)
 - [Usar os verificadores de diretrizes de núcleo do C++](using-the-cpp-core-guidelines-checkers.md)

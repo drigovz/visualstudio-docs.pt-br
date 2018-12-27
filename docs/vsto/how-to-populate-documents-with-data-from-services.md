@@ -1,5 +1,5 @@
 ---
-title: 'Como: preencher documentos com dados de serviços'
+title: 'Como: Preencher documentos com dados de serviços'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,27 +12,27 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], populating with data
 - Web services [Office development in Visual Studio], populating documents
 - data [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ac901b524818086d6dbf23b7b55487054170b3e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: fe69a35fb7f11eb649a45cd2d2238d1fb8e17ad1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758536"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647030"
 ---
-# <a name="how-to-populate-documents-with-data-from-services"></a>Como: preencher documentos com dados de serviços
+# <a name="how-to-populate-documents-with-data-from-services"></a>Como: Preencher documentos com dados de serviços
 
 Acesso a dados funciona da mesma maneira no nível de documento para o Microsoft Office, como faz em projetos do Windows Forms. Usar as mesmas ferramentas e código para trazer os dados para sua solução, e você pode até mesmo usar controles dos Windows Forms para exibir os dados. Além disso, você pode tirar proveito dos controles, chamados de controles de host, que são objetos nativos no Microsoft Office Excel e Microsoft Office Word que foram aprimorados com eventos e a funcionalidade de associação de dados. Para obter mais informações, consulte [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-O exemplo a seguir mostra como adicionar controles ligados a dados a documentos em tempo de design. Para obter um exemplo de como adicionar controles ligados a dados nos suplementos do VSTO em tempo de execução, consulte [instruções passo a passo: associar a dados de um serviço em um projeto de suplemento do VSTO](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md).
+O exemplo a seguir mostra como adicionar controles ligados a dados a documentos em tempo de design. Para obter um exemplo de como adicionar controles ligados a dados nos suplementos do VSTO em tempo de execução, consulte [passo a passo: Associar aos dados de um serviço em um projeto de suplemento do VSTO](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md).
 
-![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer i: interagir com os serviços web do Microsoft Excel?](http://go.microsoft.com/fwlink/?LinkID=130284).
+![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Interagir com os serviços web do Microsoft Excel? ](http://go.microsoft.com/fwlink/?LinkID=130284).
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>Para popular um projeto de nível de documento com os dados de um serviço web
 
@@ -59,7 +59,7 @@ Quando você executa o projeto, os controles exibem o primeiro registro na fonte
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Adicionar novas fontes de dados](../data-tools/add-new-data-sources.md)
 - [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Como: preencher planilhas com dados de um banco de dados](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Como: preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Como: preencher documentos com dados de um banco de dados](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Como: atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Como: Preencher planilhas com dados de um banco de dados](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Como: Preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Como: Preencher documentos com dados de um banco de dados](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Como: Atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

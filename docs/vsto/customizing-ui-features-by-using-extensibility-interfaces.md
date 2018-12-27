@@ -18,17 +18,17 @@ helpviewer_keywords:
 - FormRegionStartup interface
 - add-ins [Office development in Visual Studio], extensibility interfaces
 - extensibility interfaces [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec1f538515c8765629e812b8d7f4070476dd95ba
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 94ef77afa51e7cccb8f5aed18b1cf5ad0e1eaf1f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670829"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648885"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personalizar os recursos de interface do usuário usando interfaces de extensibilidade
   As ferramentas de desenvolvimento do Office no Visual Studio fornecem classes e designers que lidar com muitos detalhes de implementação quando usá-los para criar painéis de tarefas personalizados, personalizações da faixa de opções e regiões de formulário do Outlook em um suplemento do VSTO. No entanto, você também pode implementar o *interface de extensibilidade* para cada recurso por conta própria, se você tiver requisitos especiais.  
@@ -47,7 +47,7 @@ ms.locfileid: "50670829"
   
 |Interface|Descrição|Aplicativos|  
 |---------------|-----------------|------------------|  
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implemente essa interface para personalizar a interface do usuário da faixa de opções. **Observação:** você pode adicionar uma **da faixa de opções (XML)** item a um projeto para gerar um padrão <xref:Microsoft.Office.Core.IRibbonExtensibility> implementação no seu suplemento do VSTO. Para obter mais informações, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projeto<br /><br /> Visio<br /><br /> Palavra|  
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implemente essa interface para personalizar a interface do usuário da faixa de opções. **Observação:**  Você pode adicionar um **da faixa de opções (XML)** item a um projeto para gerar um padrão <xref:Microsoft.Office.Core.IRibbonExtensibility> implementação no seu suplemento do VSTO. Para obter mais informações, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projeto<br /><br /> Visio<br /><br /> Palavra|  
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|Implemente essa interface para criar um painel de tarefas personalizado.|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Palavra|  
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|Implemente essa interface para criar uma região de formulário do Outlook.|Outlook|  
   
@@ -84,7 +84,7 @@ ms.locfileid: "50670829"
  [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md)   
  [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)   
  [Chamar o código no VSTO Add-ins de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
- [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)  
   
   

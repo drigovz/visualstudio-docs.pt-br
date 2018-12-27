@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4f8ed1effbc459bd2a17e3433738c1b461513b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: cf7c9c5348e7a7c31fa7e1d65b7fa6047d05d565
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755648"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685699"
 ---
 # <a name="workflow-project-templates"></a>Modelos de projeto de fluxo de trabalho
 
@@ -72,12 +72,12 @@ Se você escolher o **biblioteca de atividades** modelo, o Visual Studio cria um
 
 Se você escolher o **biblioteca do Designer de atividade** modelo, o Visual Studio cria uma definição de designer de atividade em XAML e um arquivo de implementação de code-behind. O Designer de fluxo de trabalho é aberta e exibe a tela para o designer de atividade. Controles de arraste Windows Presentation Foundation (WPF) de **caixa de ferramentas** para a superfície de design para usá-los em seu designer personalizado de atividade.
 
-Para obter um exemplo de como implementar um designer personalizado de atividade, consulte [como: criar um designer personalizado de atividade](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
+Para obter um exemplo de como implementar um designer personalizado de atividade, consulte [como: Criar um designer personalizado de atividade](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
 
 > [!NOTE]
 > Designers personalizados de atividade podem ser usados para atividades personalizadas em atividades do .NET Framework padrão.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Use o Designer de fluxo de trabalho](../workflow-designer/using-the-workflow-designer.md)
+- [Use o Designer de fluxo de trabalho](developing-applications-with-the-workflow-designer.md)
 - [Criar fluxos de trabalho (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

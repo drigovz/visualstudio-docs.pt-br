@@ -30,17 +30,17 @@ helpviewer_keywords:
 - Sheet1_Shutdown
 - events [Office development in Visual Studio]
 - ThisAddIn_Shutdown
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85cbee61cde596831d06aa83af326cc0a0534f0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ed18bdcf0f4a7ef6dbb8a358cbf11fd7b49e628
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949676"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647642"
 ---
 # <a name="events-in-office-projects"></a>Eventos em projetos do Office
   Cada modelo de projeto do Office automaticamente gera vários manipuladores de eventos. Os manipuladores de eventos para personalizações no nível de documento são ligeiramente diferentes de manipuladores de eventos para suplementos do VSTO.  
@@ -48,7 +48,7 @@ ms.locfileid: "49949676"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="document-level-projects"></a>Projetos de nível de documento  
- O Visual Studio fornece o código gerado por trás de documentos novos ou existentes ou planilhas personalizações no nível do documento. Esse código aciona dois eventos diferentes: **inicialização** e **desligamento**.  
+ O Visual Studio fornece o código gerado por trás de documentos novos ou existentes ou planilhas personalizações no nível do documento. Esse código gera dois eventos diferentes: **Inicialização** e **desligamento**.  
   
 ### <a name="startup-event"></a>Evento de inicialização  
  O **inicialização** é gerado para cada um dos itens de host (documento, pasta de trabalho ou planilha) depois que o documento está em execução e todo o código de inicialização no assembly tiver sido executado. É a última coisa a ser executado no construtor da classe que seu código está em execução no. Para obter mais informações sobre itens de host, consulte [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md).  
@@ -157,7 +157,7 @@ ms.locfileid: "49949676"
   
 ## <a name="see-also"></a>Consulte também  
  [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)   
- [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Personalizações em nível de documento do programa](../vsto/programming-document-level-customizations.md)   
  [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md)   
  [Visão geral de modelos de projeto do Office](../vsto/office-project-templates-overview.md)  

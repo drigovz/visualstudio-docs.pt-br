@@ -34,17 +34,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], host items
 - Word [Office development in Visual Studio], host controls
 - host controls [Office development in Visual Studio], deleting
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48ce311a767d68ce1402961d2ddf4cf8b673637c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ff20a05b752ee16971e67cb8e12c838384523b9
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937493"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647968"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Visão geral dos controles de host e de itens de host
   Itens de host e controles de host são tipos que ajudam a fornecer o modelo de programação para soluções do Office que são criadas usando as ferramentas de desenvolvimento do Office no Visual Studio. Itens de host e controles de host fazem da interação com os modelos de objeto do Microsoft Office Word e Microsoft Office Excel, que são baseados em COM, mais como interagir com os objetos gerenciados, como controles de formulários do Windows.  
@@ -131,21 +131,21 @@ ms.locfileid: "49937493"
   
   Para obter mais informações sobre como adicionar controles de host a documentos, consulte os tópicos a seguir:  
   
-- [Como: adicionar controles Chart a planilhas](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [Como: Adicionar controles Chart a planilhas](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
-- [Como: adicionar controles ListObject a planilhas](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [Como: Adicionar controles ListObject a planilhas](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
-- [Como: adicionar controles NamedRange a planilhas](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [Como: Adicionar controles NamedRange a planilhas](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
   
-- [Como: adicionar controles XMLMappedRange a planilhas](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
+- [Como: Adicionar controles XMLMappedRange a planilhas](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
   
-- [Como: adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [Como: Adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
-- [Como: adicionar conteúdo controles a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [Como: Adicionar conteúdo controles a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
-- [Como: adicionar controles XMLNode a documentos do Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
+- [Como: Adicionar controles XMLNode a documentos do Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   
-- [Como: adicionar controles XMLNodes a documentos do Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
+- [Como: Adicionar controles XMLNodes a documentos do Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
   
 ### <a name="name-host-controls"></a>Controles de host do nome  
  Quando você arrasta um controle de host do **caixa de ferramentas** ao seu documento, o controle automaticamente é chamado usando o tipo de controle com um número incremental no final. Por exemplo, os indicadores são nomeados **bookmark1**, **bookmark2**e assim por diante. Se você usar a funcionalidade nativa do Word ou Excel para adicionar o controle, você pode atribuir um nome específico no momento em que você criá-lo. Você também pode renomear os controles, alterando o valor da **nome** propriedade no **propriedades** janela.  
@@ -166,7 +166,7 @@ ms.locfileid: "49937493"
 >  Não remover programaticamente os controles durante o `Shutdown` manipulador de eventos do documento ou planilha. Os elementos de interface do usuário não estão mais disponíveis quando o `Shutdown` evento ocorre. Se você quiser remover os controles antes de fecha o aplicativo, adicione seu código para outro manipulador de eventos, como `BeforeClose` ou `BeforeSave`.  
   
 ### <a name="program-against-host-control-events"></a>Programe em eventos de controle de host  
- Uma maneira que os controles de host estendem objetos do Office é com a adição de eventos. Por exemplo, o <xref:Microsoft.Office.Interop.Excel.Range> objeto no Excel e <xref:Microsoft.Office.Interop.Word.Bookmark> objeto no Word não tem eventos, mas o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] estende esses objetos, adicionando eventos programáveis. Você pode acessar e codificar esses eventos, a mesma maneira como você acessa os eventos de controles nos Windows Forms: por meio da lista suspensa de evento no Visual Basic e a página de propriedades de evento em c#. Para obter mais informações, consulte [instruções passo a passo: programa contra eventos de um controle NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
+ Uma maneira que os controles de host estendem objetos do Office é com a adição de eventos. Por exemplo, o <xref:Microsoft.Office.Interop.Excel.Range> objeto no Excel e <xref:Microsoft.Office.Interop.Word.Bookmark> objeto no Word não tem eventos, mas o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] estende esses objetos, adicionando eventos programáveis. Você pode acessar e codificar esses eventos, a mesma maneira como você acessa os eventos de controles nos Windows Forms: por meio da lista suspensa de evento no Visual Basic e a página de propriedades de evento em c#. Para obter mais informações, confira [Passo a passo: Programe em eventos de um controle NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
   
 > [!NOTE]  
 >  Você não deve definir a <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> propriedade do <xref:Microsoft.Office.Interop.Excel.Application> objeto no Excel para **falso**. Definir essa propriedade como **falsos** impede que o Excel da geração de todos os eventos, incluindo os eventos de controles de host.  

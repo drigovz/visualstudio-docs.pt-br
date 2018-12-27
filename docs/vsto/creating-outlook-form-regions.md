@@ -14,17 +14,17 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio]
 - form regions [Office development in Visual Studio], creating
 - Outlook [Office development in Visual Studio], form regions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d5d4aed381841d5f88209aefdcff641a2a821f01
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 77dcdecc766b253eb0cafb808bec8cb48294d6fa
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673075"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441724"
 ---
 # <a name="create-outlook-form-regions"></a>Criar regiões de formulário do Outlook
   Você pode usar regiões de formulário para personalizar formulários do Microsoft Office Outlook. Visual Studio fornece ferramentas avançadas que tornam mais fácil para você criar, desenvolver e depurar as regiões do formulário.  
@@ -79,7 +79,7 @@ ms.locfileid: "50673075"
 |Substituição|Adiciona a região do formulário como uma nova página que substitui a página padrão de um formulário do Outlook.|  
 |Substituir tudo|Substitui todo o formulário do Outlook pela região do formulário.|  
   
- Você também pode usar o Assistente para especificar condições de exibição e selecionar o tipo de formulário para estender. Para obter mais informações, consulte [como: adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+ Você também pode usar o Assistente para especificar condições de exibição e selecionar o tipo de formulário para estender. Para obter mais informações, confira [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
  As seleções feitas no assistente afetam as opções que estão disponíveis em outras páginas do assistente. Por exemplo, se você selecionar **Adjoining** ou **separado** no **criar uma nova região de formulário do Outlook** página, em seguida, a **título** e **Descrição** não estão disponíveis em campos de **fornecer um texto descritivo e selecionar suas preferências de exibição** página. Isso ocorre porque o Outlook não usa esses campos quando ela for exibida uma região do formulário adjacente ou separada.  
   
@@ -107,7 +107,7 @@ ms.locfileid: "50673075"
 ###  <a name="AddingExistingFormRegion"></a> Adicionar uma região de formulário existente ao seu projeto  
  Se você tiver uma região de formulário do Outlook que você usou em outro projeto do Outlook, você pode reutilizá-lo em seu projeto de suplemento do VSTO do Outlook atual usando o **Add Existing Item** caixa de diálogo.  
   
- A região do formulário existente deve ter um arquivo de código (*. vb* ou *. CS*); não é possível adicionar o armazenamento de formulário do Outlook (*ofs*) arquivos usando o **Add Existing Item** caixa de diálogo. No entanto, você pode criar uma nova região de formulário importando um arquivo de armazenamento de formulário do Outlook. Para obter mais informações, consulte [como: adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+ A região do formulário existente deve ter um arquivo de código (*. vb* ou *. CS*); não é possível adicionar o armazenamento de formulário do Outlook (*ofs*) arquivos usando o **Add Existing Item** caixa de diálogo. No entanto, você pode criar uma nova região de formulário importando um arquivo de armazenamento de formulário do Outlook. Para obter mais informações, confira [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
 ##  <a name="UsingFormRegionDesigner"></a> Use o designer de região de formulário  
  O designer de região de formulário ajuda você a projetar o layout e aparência de uma região de formulário. Arraste os controles gerenciados para a superfície do designer, clique duas vezes em controles para abrir os manipuladores de eventos e definir propriedades na **propriedades** janela.  
@@ -136,7 +136,7 @@ ms.locfileid: "50673075"
   
  Para manipular eventos em um projeto do Visual Basic, selecione um evento da lista de nome de método na parte superior do Editor de códigos.  
   
- Para manipular eventos em um projeto c#, assinar eventos de controle no <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> método. Para obter mais informações, consulte [como: assinar e cancelar a assinatura de eventos &#40;C&#35; guia de programação do&#41;](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events).  
+ Para manipular eventos em um projeto c#, assinar eventos de controle no <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> método. Para obter mais informações, confira [Como: Assinar e cancelar a assinatura de eventos &#40;C&#35; guia de programação do&#41;](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events).  
   
  Você pode alterar as propriedades da região de formulário no `InitializeManifest` método da classe de fábrica de região de formulário.  
   
@@ -156,7 +156,7 @@ ms.locfileid: "50673075"
   
 |evento|Descrição|  
 |-----------|-----------------|  
-|FormRegionInitializing|Ocorre antes que a região do formulário seja inicializada. Você pode verificar as condições em que esse manipulador de eventos para determinar se o Outlook deve exibir a região do formulário. Para obter mais informações, consulte [como: impedir que o Outlook exiba uma região de formulário](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).|  
+|FormRegionInitializing|Ocorre antes que a região do formulário seja inicializada. Você pode verificar as condições em que esse manipulador de eventos para determinar se o Outlook deve exibir a região do formulário. Para obter mais informações, confira [Como: Impedir que o Outlook exiba uma região de formulário](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).|  
 |FormRegionShowing|Ocorre após uma instância da região do formulário ser criada, mas antes da região do formulário ser exibida.|  
 |FormRegionClosed|Ocorre antes da região do formulário ser fechada.|  
   
@@ -182,12 +182,12 @@ ms.locfileid: "50673075"
 |Título|Descrição|  
 |-----------|-----------------|  
 |[Diretrizes para criar regiões de formulário do Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)|Fornece informações que podem ajudá-lo a otimizar suas regiões de formulário e evitar possíveis problemas.|  
-|[Como: adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|Mostra como criar uma região de formulário para estender um formulário personalizado ou padrão do Microsoft Office Outlook usando o **nova região de formulário do Outlook** assistente.|  
+|[Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|Mostra como criar uma região de formulário para estender um formulário personalizado ou padrão do Microsoft Office Outlook usando o **nova região de formulário do Outlook** assistente.|  
 |[Associar uma região de formulário uma classe de mensagem do Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)|Explica como especificar quais itens do Microsoft Office Outlook exibem uma região de formulário por meio da associação a região do formulário com a classe message de cada item.|  
 |[Passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)|Mostra como criar uma região de formulário personalizada é exibida como uma nova página na janela Inspetor de um item de contato.|  
 |[Passo a passo: Importar de uma região de formulário projetada no Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)|Mostra como criar uma região de formulário no Microsoft Office Outlook e, em seguida, importe a região do formulário para um projeto de suplemento do VSTO do Outlook usando o **nova região de formulário do Outlook** assistente.|  
 |[Acessar uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)|Descreve como escrever código para mostrar, ocultar ou modificar controles em uma região de formulário e permitir que os usuários executar o código de outras áreas no seu projeto usando o `Globals` classe.|  
-|[Como: evitar que o Outlook exiba uma região de formulário](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|Mostra como evitar que o Microsoft Office Outlook exiba uma região de formulário para um determinado item.|  
+|[Como: Impedir que o Outlook exiba uma região de formulário](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|Mostra como evitar que o Microsoft Office Outlook exiba uma região de formulário para um determinado item.|  
 |Mostra como acessar o item do Outlook no qual uma região de formulário é exibida.|  
 |[Personalizar ações em regiões de formulário do Outlook](../vsto/custom-actions-in-outlook-form-regions.md)|Descreve como habilitar usuários responder a um item do Outlook.|  
   

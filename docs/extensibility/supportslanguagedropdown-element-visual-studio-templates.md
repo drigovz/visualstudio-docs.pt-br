@@ -2,9 +2,8 @@
 title: Elemento SupportsLanguageDropDown (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsLanguageDropDown
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b02dcf9b54cfec3dcccca62f9529291e01a912f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 92043550d9318fc5de70d14bed12b110d3ef2e26
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138822"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562120"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>Elemento SupportsLanguageDropDown (modelos do Visual Studio)
-Especifica se o modelo de item da Web é idêntico para vários idiomas e se o **idioma** opção é habilitada no **Adicionar Novo Item** caixa de diálogo.  
+Especifica se o modelo de item da Web é idêntico para vários idiomas e se o **linguagem** opção está habilitada no **Adicionar Novo Item** caixa de diálogo.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -49,22 +48,22 @@ Especifica se o modelo de item da Web é idêntico para vários idiomas e se o *
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele exibe em um a **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- O texto deve ser `true` ou `false`, indicando se ou não o **idioma** opção está disponível na **Adicionar Novo Item** caixa de diálogo.  
+ O texto deve ser `true` ou `false`, indicando ou não a **idioma** opção está disponível na **Add New Item** caixa de diálogo.  
   
 ## <a name="remarks"></a>Comentários  
  `SupportsLanguageDropDown` é um elemento opcional. O valor padrão é `false`.  
   
- O `SupportsLanguageDropDown` elemento só está disponível para modelos de item de Web.  
+ O `SupportsLanguageDropDown` elemento só está disponível para modelos de item da Web.  
   
- Se o valor desse elemento for definido como `true`, em seguida, o modelo de item é idêntico para todas as linguagens de programação e a **idioma** opção está habilitada no **Adicionar Novo Item** caixa de diálogo. Essa opção permite que você escolha a linguagem de programação do novo item que você deseja criar a partir do modelo.  
+ Se o valor desse elemento for definido como `true`, em seguida, o modelo de item é idêntico para todas as linguagens de programação e o **linguagem** opção é habilitada na **Adicionar Novo Item** caixa de diálogo. Essa opção permite que você escolha a linguagem de programação do novo item que você deseja criar do modelo.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir especifica que o **idioma** suspensa da opção.  
+ O exemplo a seguir especifica que o **linguagem** lista suspensa da opção.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  

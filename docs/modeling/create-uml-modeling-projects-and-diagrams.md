@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 700b6c42cbdbf0a8b8c6f604a4c25f0042e2bffe
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: d0e956f1d86079bbeea20beb84201d0a92026b9a
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966772"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684491"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Criar projetos e diagramas de modelagem UML
 
@@ -31,4 +31,4 @@ Para obter informações sobre como usar o UML no Visual Studio 2015, consulte:
 * [Criar modelos para o aplicativo](create-models-for-your-app.md)
 * [Usar modelos no processo de desenvolvimento](use-models-in-your-development-process.md)
 * [Validar o sistema durante o desenvolvimento](validate-your-system-during-development.md)
-* [Estender modelos e diagramas UML](extend-uml-models-and-diagrams.md)
+* [Estender modelos e diagramas UML](create-uml-modeling-projects-and-diagrams.md)

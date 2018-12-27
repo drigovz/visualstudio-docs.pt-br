@@ -1,5 +1,5 @@
 ---
-title: 'Como: preencher planilhas com dados de um banco de dados'
+title: 'Como: Preencher planilhas com dados de um banco de dados'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,27 +12,27 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], populating
 - databases [Office development in Visual Studio], populating worksheets
 - data [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25e73eaa3cdd0655a51711ddd30996915f984213
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e63a95635c57c3fa344d7d9197436a2e0e744621
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758463"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648185"
 ---
-# <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Como: preencher planilhas com dados de um banco de dados
+# <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Como: Preencher planilhas com dados de um banco de dados
 
 Você pode acessar dados em projetos do Office em nível de documento da mesma forma que você acessar dados em projetos do Windows Forms. Usar as mesmas ferramentas e código para trazer os dados para sua solução, e você pode até mesmo usar controles dos Windows Forms para exibir os dados. Além disso, você pode tirar proveito dos controles, chamados de controles de host, que são objetos nativos no Microsoft Office Excel que foram aprimorados com eventos e a capacidade de associação de dados. Para obter mais informações, consulte [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
-O exemplo a seguir mostra como adicionar controles ligados a dados em projetos de nível de documento usando um designer. Para obter um exemplo de como adicionar controles ligados a dados em projetos de nível de aplicativo em tempo de execução, consulte [instruções passo a passo: vinculação de dados complexos no projeto do suplemento do VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).
+O exemplo a seguir mostra como adicionar controles ligados a dados em projetos de nível de documento usando um designer. Para obter um exemplo de como adicionar controles ligados a dados em projetos de nível de aplicativo em tempo de execução, consulte [passo a passo: Associação de dados complexos no projeto do suplemento do VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).
 
-![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [How do i: transferir dados em uma planilha do Excel?](http://go.microsoft.com/fwlink/?LinkID=130277), e [How do i: consumir dados de banco de dados no Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).
+![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Transferir dados para uma planilha do Excel? ](http://go.microsoft.com/fwlink/?LinkID=130277), e [como fazer: Consumir dados do banco de dados no Excel? ](http://go.microsoft.com/fwlink/?LinkID=130287).
 
 ## <a name="add-a-data-bound-control-to-a-worksheet-at-design-time"></a>Adicione um controle associado a dados para uma planilha em tempo de design
 
@@ -70,16 +70,16 @@ Quando você executa o projeto, o controle exibe o primeiro registro na fonte de
 
 -   Use <xref:System.Windows.Forms.BindingSource> métodos como <xref:System.Windows.Forms.BindingSource.MoveNext%2A> e <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
-Para obter informações sobre como enviar atualizações para o conjunto de dados tipado e o banco de dados, consulte [como: atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
+Para obter informações sobre como enviar atualizações para o conjunto de dados tipado e o banco de dados, consulte [como: Atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
 ## <a name="see-also"></a>Consulte também
 
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Adicionar novas fontes de dados](../data-tools/add-new-data-sources.md)
 - [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Como: preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Como: preencher documentos com dados de um banco de dados](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Como: preencher documentos com dados de serviços](../vsto/how-to-populate-documents-with-data-from-services.md)
-- [Como: atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [Como fazer i: transferir dados em uma planilha do Excel](http://go.microsoft.com/fwlink/?LinkID=130277)
-- [Como fazer i: consumir dados de banco de dados no Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)
+- [Como: Preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Como: Preencher documentos com dados de um banco de dados](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Como: Preencher documentos com dados de serviços](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Como: Atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Como faço Transferir dados para uma planilha do Excel](http://go.microsoft.com/fwlink/?LinkID=130277)
+- [Como faço Consumir dados do banco de dados no Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)
