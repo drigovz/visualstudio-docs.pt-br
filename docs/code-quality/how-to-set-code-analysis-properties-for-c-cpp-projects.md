@@ -20,12 +20,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80dfd4901fdaaeff064ba18d80bfe3f69e08116c
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a9de737604da898c42243895ed84e8962a8c656f
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739880"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803146"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Como: Definir propriedades de análise de código para projetos C/C++
 Você pode configurar as regras que a ferramenta de análise de código usa para analisar o código em cada configuração de seu projeto. Além disso, você pode direcionar a análise de código para suprimir avisos do código que foi gerado e adicionado ao seu projeto por uma ferramenta de terceiros.
@@ -52,4 +52,6 @@ Você pode configurar as regras que a ferramenta de análise de código usa para
  Se seu projeto contém o código gerenciado, você pode selecionar as regras para aplicar em uma análise de código, selecionando uma conjunto de regras do **executar este conjunto de regras** lista.
 
 ## <a name="see-also"></a>Consulte também
- [Analisando a qualidade do código gerenciado](../code-quality/code-analysis-for-managed-code-overview.md) [análise de código para avisos do C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)
+
+- [Analisando a qualidade do código gerenciado](../code-quality/code-analysis-for-managed-code-overview.md)
+- [Análise de código para avisos do C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)

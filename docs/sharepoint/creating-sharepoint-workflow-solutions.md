@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b60987b90440d6f72ede8cdc0f02023c8f4cc6b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 0dd8a1339dddc52326bf7b0e42d52c1eaa53e6cf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739420"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802492"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Criar soluções de fluxo de trabalho do SharePoint
 
@@ -127,7 +127,7 @@ Para obter mais informações sobre o SharePoint, consulte [tecnologias e produt
 ## <a name="debug-a-sharepoint-workflow-template"></a>Depurar um modelo de fluxo de trabalho do SharePoint
  Você pode depurar um projeto de fluxo de trabalho do SharePoint o mesmo durante a depuração outros [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projetos baseados na Web. Quando você inicia o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] usa as configurações que você especificar na **Assistente para personalização do SharePoint** para abrir o site da Web do SharePoint apropriado e associe automaticamente o modelo de fluxo de trabalho com a lista ou biblioteca apropriada. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] também anexa a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do depurador para o [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] processo chamado *w3wp.exe*.
 
- Para testar o fluxo de trabalho, você deve iniciá-lo manualmente. Para obter mais informações, consulte a seção "Depuração fluxos de trabalho" em [depurando soluções do SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Para obter mais informações sobre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Web de depuração do aplicativo, consulte [depurar aplicativos web e script](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications).
+ Para testar o fluxo de trabalho, você deve iniciá-lo manualmente. Para obter mais informações, consulte a seção "Depuração fluxos de trabalho" em [depurando soluções do SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Para obter mais informações sobre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Web de depuração do aplicativo, consulte [depurar aplicativos web e script](../debugger/how-to-enable-debugging-for-aspnet-applications.md).
 
 ## <a name="deploy-a-sharepoint-workflow-template"></a>Implantar um modelo de fluxo de trabalho do SharePoint
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Implantação de projetos de fluxo de trabalho do SharePoint como outro [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projetos do SharePoint. Para obter mais informações, consulte [soluções de pacote e implantar o SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).

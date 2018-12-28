@@ -1,5 +1,5 @@
 ---
-title: Esperado &#39; ao &#39; | Microsoft Docs
+title: "'While' esperado | Microsoft Docs"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de38e7e593d0547a695c2e037903d01387cdf0bb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 689e740b9954cada3788e53094e5a4fc1241baf8
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633026"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801964"
 ---
-# <a name="expected-39while39"></a>Esperado &#39; ao &#39;
+# <a name="expected-while"></a>'while' esperado
 Você não incluiu o `while` condição em um `do...while` loop. Um **fazer** instrução deve ter um correspondente `while` testar no final do bloco de código.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  

@@ -1,5 +1,5 @@
 ---
-title: Esperado &#39;] &#39; | Microsoft Docs
+title: Esperado ']' | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e31975b80764773f16eb4009322b712c06a4ff4f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 13eb537d7c32d1f0252a2500e04aa04be4ecef53
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632746"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804345"
 ---
-# <a name="expected-3939"></a>Esperado &#39;] &#39;
-É feita uma referência a um elemento de matriz, mas não inclui o colchete direito. Qualquer expressão que se refere a um elemento de matriz deve incluir abertura e fechamento, colchetes.  
+# <a name="expected-"></a>']' esperado
+Você fez uma referência a um elemento de matriz, mas não incluiu o colchete direito. Qualquer expressão que se refere a um elemento de matriz deve incluir a abertura e fechamento, colchetes.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   

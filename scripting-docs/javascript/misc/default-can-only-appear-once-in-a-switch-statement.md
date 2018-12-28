@@ -1,5 +1,5 @@
 ---
-title: '&#39; padrão &#39; só pode aparecer uma vez em um &#39; comutador &#39; instrução | Microsoft Docs'
+title: "'default' só pode aparecer uma vez em uma instrução 'switch' | Microsoft Docs"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e60dd1ce6b4102ab856cd3d45416175c7030e8d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a4f254825e27793999932b772ac4bc2512908fae
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633096"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803877"
 ---
-# <a name="39default39-can-only-appear-once-in-a-39switch39-statement"></a>&#39; padrão &#39; só pode aparecer uma vez em um &#39; comutador &#39; instrução
-Você tentou usar o **padrão** instrução mais de uma vez dentro de uma instrução switch. No caso padrão é sempre a última instrução case em uma instrução switch (é o caso leva a algo).  
+# <a name="default-can-only-appear-once-in-a-switch-statement"></a>'default' só pode aparecer em uma instrução 'switch'
+Você tentou usar o **padrão** instrução mais de uma vez dentro de uma instrução switch. O caso padrão é sempre a última instrução case em uma instrução switch (ele é o caso fall-through).  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Remova qualquer extra **padrão** caso as instruções de seu `switch` instrução (use na instrução de caso de um padrão mais em sua instrução switch).  
+-   Remova todos os extras **padrão** caso, as instruções do seu `switch` instrução (use na maioria dos instrução case de um padrão em sua instrução switch).  
   
 ## <a name="see-also"></a>Consulte também  
  [Instrução switch](../../javascript/reference/switch-statement-javascript.md)   

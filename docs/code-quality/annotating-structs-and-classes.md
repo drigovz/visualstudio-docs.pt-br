@@ -26,12 +26,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: e4294284ff2911fd05cc771bf4deaad368e3c28b
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: a4fb171ec575fdcf85879ed62252c9d373283f62
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228819"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802625"
 ---
 # <a name="annotating-structs-and-classes"></a>Anotando estruturas e classes
 Você pode anotar os membros de classe e struct usando anotações que atuam como as invariáveis — elas são presumidos como verdadeiro em qualquer chamada de função ou entrada/saída da função que envolve a estrutura de inclusão como um parâmetro ou um valor de resultado.
@@ -79,4 +79,12 @@ Você pode anotar os membros de classe e struct usando anotações que atuam com
     ```
 
 ## <a name="see-also"></a>Consulte também
- [Usando anotações de SAL para reduzir defeitos de código C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [Noções básicas sobre o SAL](../code-quality/understanding-sal.md) [anotando parâmetros de função e valores de retorno](../code-quality/annotating-function-parameters-and-return-values.md) [anotando o comportamento da função](../code-quality/annotating-function-behavior.md) [Anotando o comportamento de bloqueio](../code-quality/annotating-locking-behavior.md) [especificando quando e onde uma anotação se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md) [funções intrínsecas](../code-quality/intrinsic-functions.md) [práticas recomendadas e Exemplos](../code-quality/best-practices-and-examples-sal.md)
+
+- [Usando anotações de SAL para reduzir defeitos de código do C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [Noções básicas de SAL](../code-quality/understanding-sal.md)
+- [Anotando parâmetros de função e valores de retorno](../code-quality/annotating-function-parameters-and-return-values.md)
+- [Anotando o comportamento da função](../code-quality/annotating-function-behavior.md)
+- [Anotando o comportamento de bloqueio](../code-quality/annotating-locking-behavior.md)
+- [Especificando quando e onde uma anotação se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [Funções intrínsecas](../code-quality/intrinsic-functions.md)
+- [Práticas recomendadas e exemplos](../code-quality/best-practices-and-examples-sal.md)

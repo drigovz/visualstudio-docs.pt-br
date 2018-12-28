@@ -17,40 +17,30 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 92a2b7caad4ec4fe12879da683560da59b7f2d6a
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 2b53f4b9af7cf262e55935fa5c355a165515bb16
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646819"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801582"
 ---
 # <a name="data-in-office-solutions"></a>Dados em soluções do Office
-  Muitas soluções do Office permitem aos usuários recuperar ou modificar dados. Quando você cria soluções do Office usando o Visual Studio, há várias maneiras diferentes, que você pode trabalhar com dados.  
-  
-## <a name="in-this-section"></a>Nesta seção  
- [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
- Descreve como associar dados a controles em soluções do Office.  
-  
- [Visão geral de partes XML personalizado](../vsto/custom-xml-parts-overview.md)  
- Descreve como usar as partes XML personalizadas para trabalhar com dados em soluções do Office.  
-  
- [Dados armazenados em cache em personalizações no nível de documento](../vsto/cached-data-in-document-level-customizations.md)  
- Descreve como armazenar dados em uma ilha de dados inserida que seja acessível sem iniciar o aplicativo do Office.  
-  
- [Esquemas e dados em personalizações no nível de documento XML](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
- Descreve como usar esquemas XML em personalizações no nível de documento para criar controles associados a dados XML.  
-  
- [Usar arquivos de banco de dados local na visão geral das soluções do Office](../vsto/using-local-database-files-in-office-solutions-overview.md)  
- Descreve como importar arquivos de banco de dados em seus projetos e, quando você pode armazenar em cache dados para uso offline.  
-  
-## <a name="related-sections"></a>Seções relacionadas  
- [Acessar dados no Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio)  
- Lista os tópicos que ilustram como trabalhar com dados no Visual Studio.  
-  
- [Salvar dados](/visualstudio/data-tools/saving-data)  
- Fornece links para tópicos sobre como trabalhar com conjuntos de dados, incluindo a modificação de dados em um conjunto de dados e gravando alterações de volta para a fonte de dados.  
-  
- [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)  
- Fornece links para informações sobre como começar a criar projetos do Office usando Visual Studio.  
-  
-  
+  Muitas soluções do Office permitem aos usuários recuperar ou modificar dados. Quando você cria soluções do Office usando o Visual Studio, há várias maneiras diferentes, que você pode trabalhar com dados.
+
+## <a name="in-this-section"></a>Nesta seção
+ [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md) descreve como associar dados a controles em soluções do Office.
+
+ [Visão geral sobre partes XML personalizado](../vsto/custom-xml-parts-overview.md) descreve como usar as partes XML personalizadas para trabalhar com dados em soluções do Office.
+
+ [Armazenados em cache dados personalizações no nível do documento](../vsto/cached-data-in-document-level-customizations.md) descreve como armazenar dados em uma ilha de dados inserida que seja acessível sem iniciar o aplicativo do Office.
+
+ [Esquemas XML e dados no nível de documento personalizações](../vsto/xml-schemas-and-data-in-document-level-customizations.md) descreve como usar esquemas XML em personalizações no nível de documento para criar controles associados a dados XML.
+
+ [Usar arquivos de banco de dados local na visão geral das soluções do Office](../vsto/using-local-database-files-in-office-solutions-overview.md) descreve como importar arquivos de banco de dados em seus projetos e, quando você pode armazenar em cache dados para uso offline.
+
+## <a name="related-sections"></a>Seções relacionadas
+ [Acessar dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md) lista os tópicos que ilustram como trabalhar com dados no Visual Studio.
+
+ [Salvar dados](../data-tools/saving-data.md) fornece links para tópicos sobre como trabalhar com conjuntos de dados, incluindo a modificação de dados em um conjunto de dados e gravando alterações de volta para a fonte de dados.
+
+ [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md) fornece links para informações sobre como começar a criar projetos do Office usando Visual Studio.

@@ -1,5 +1,5 @@
 ---
-title: Esperado &#39;]&#39; na expressão regular (JavaScript) | Microsoft Docs
+title: Esperado ']' na expressão regular (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64ef929ba309f0b496e72f3cf740daf6970d08fb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e0b34ae4bdf04d261647b9096cda13eec75617c5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283711"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804410"
 ---
-# <a name="expected-3939-in-regular-expression-javascript"></a>Esperado &#39;]&#39; na expressão regular (JavaScript)
+# <a name="expected--in-regular-expression-javascript"></a>']' esperado na expressão regular (JavaScript)
 Você tentou criar uma classe de caractere para uma correspondência de expressão regular, mas não incluiu o colchete direito. Combinações de caracteres literal individuais podem ser montadas em classes de caracteres, colocando-os entre colchetes. Uma classe de caracteres corresponde a qualquer caractere que ele contém. Por exemplo, / [abc] corresponde a qualquer uma das letras "a", "b", ou "c".  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  

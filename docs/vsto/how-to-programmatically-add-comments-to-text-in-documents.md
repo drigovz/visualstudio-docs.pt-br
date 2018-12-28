@@ -1,5 +1,5 @@
 ---
-title: 'Como: adicionar comentários ao texto em documentos de forma programática'
+title: 'Como: Adicionar comentários ao texto em documentos de forma programática'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - comments, adding to documents
 - documents [Office development in Visual Studio], adding comments
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ca0d15ee69bb58aae765c03c1233a78bfeeb119c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c5e7900f5316e64ef884d857bfc1448ac315fd19
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669802"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804598"
 ---
-# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Como: adicionar comentários ao texto em documentos de forma programática
+# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Como: Adicionar comentários ao texto em documentos de forma programática
   A propriedade de comentários da classe Document adiciona um comentário a um intervalo de texto em um documento do Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -50,7 +50,7 @@ ms.locfileid: "35669802"
  Para alterar as iniciais do usuário que o Word adiciona comentários, use o <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> propriedade.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: remover todos os comentários de documentos programaticamente](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
+ [Como: Remover todos os comentários de documentos programaticamente](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
  [Item de host do documento](../vsto/document-host-item.md)  
   
   
