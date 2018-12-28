@@ -1,5 +1,5 @@
 ---
-title: 'Como: adicionar linhas e colunas de forma programática a tabelas do Word'
+title: 'Como: Adicionar linhas e colunas de forma programática a tabelas do Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - rows [Office development in Visual Studio], adding to Word tables
 - tables [Office development in Visual Studio], adding rows and columns
 - columns [Office development in Visual Studio], adding to Word tables
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fca44524c3a7c7f10e855eaf62e8b77dc225ae01
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55a755ccdd7f14af5a38fc516cdb9f76e936e10d
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818673"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804572"
 ---
-# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Como: adicionar linhas e colunas de forma programática a tabelas do Word
+# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Como: Adicionar linhas e colunas de forma programática a tabelas do Word
   Em uma tabela do Microsoft Office Word, as células são organizadas em linhas e colunas. Você pode usar o <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> método da <xref:Microsoft.Office.Interop.Word.Rows> objeto para adicionar linhas à tabela e o <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> método da <xref:Microsoft.Office.Interop.Word.Columns> objeto para adicionar colunas.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -40,7 +40,7 @@ ms.locfileid: "49818673"
 > - Documento do Word 2010  
 > - Modelo do Word 2010  
 > 
->   Se você quiser executar essa tarefa em qualquer outro tipo de projeto, você deve adicionar uma referência para o **Interop** assembly e, em seguida, você deve usar classes do assembly para adicionar linhas e colunas a tabelas. Para obter mais informações, consulte [como: aplicativos do Office de destino por meio de assemblies de interoperabilidade primários](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) e [referência de assembly de interoperabilidade primária do Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+>   Se você quiser executar essa tarefa em qualquer outro tipo de projeto, você deve adicionar uma referência para o **Interop** assembly e, em seguida, você deve usar classes do assembly para adicionar linhas e colunas a tabelas. Para obter mais informações, confira [Como: Destinar aplicativos do Office por meio de assemblies de interoperabilidade primários](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) e [referência de assembly de interoperabilidade primária do Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
 ### <a name="to-add-a-row-to-a-table"></a>Para adicionar uma linha em uma tabela  
   
@@ -62,7 +62,7 @@ ms.locfileid: "49818673"
 > [!IMPORTANT]  
 >  Esse código é executado apenas em projetos que você cria usando modelos de suplemento do VSTO do Word.  
 >   
->  Se você quiser executar essa tarefa em qualquer outro tipo de projeto, você deve adicionar uma referência para o **Interop** assembly e, em seguida, você deve usar classes do assembly para adicionar linhas e colunas a tabelas. Para obter mais informações, consulte [como: aplicativos do Office de destino por meio de assemblies de interoperabilidade primários](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) e [referência de assembly de interoperabilidade primária do Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+>  Se você quiser executar essa tarefa em qualquer outro tipo de projeto, você deve adicionar uma referência para o **Interop** assembly e, em seguida, você deve usar classes do assembly para adicionar linhas e colunas a tabelas. Para obter mais informações, confira [Como: Destinar aplicativos do Office por meio de assemblies de interoperabilidade primários](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) e [referência de assembly de interoperabilidade primária do Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
 ### <a name="to-add-a-row-to-a-table"></a>Para adicionar uma linha em uma tabela  
   
@@ -79,8 +79,8 @@ ms.locfileid: "49818673"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: criar tabelas do Word de forma programática](../vsto/how-to-programmatically-create-word-tables.md)   
- [Como: adicionar texto e formatação a células em tabelas do Word programaticamente](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [Como: programaticamente preencher tabelas do Word com propriedades do documento](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
+ [Como: Criar tabelas do Word de forma programática](../vsto/how-to-programmatically-create-word-tables.md)   
+ [Como: Adicionar texto e formatação a células em tabelas do Word programaticamente](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
+ [Como: Por meio de programação popular tabelas do Word com propriedades do documento](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
   
   

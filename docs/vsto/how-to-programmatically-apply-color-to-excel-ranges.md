@@ -1,5 +1,5 @@
 ---
-title: 'Como: aplicar cor a intervalos do Excel programaticamente'
+title: 'Como: Aplicar cor a intervalos do Excel programaticamente'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - formatting [Office development in Visual Studio]
 - color, Excel ranges
 - ranges, applying color
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: feaa149f879137634ada607f31ea78b813544d2d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bcd48caa95b2dca1391582ce91156fb6e4859b99
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256228"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802303"
 ---
-# <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Como: aplicar cor a intervalos do Excel programaticamente
+# <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Como: Aplicar cor a intervalos do Excel programaticamente
   Para aplicar uma cor ao texto dentro de um intervalo de células, use um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ou um objeto de intervalo do Excel nativo.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -56,8 +56,8 @@ ms.locfileid: "35256228"
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com intervalos](../vsto/working-with-ranges.md)   
  [Controle NamedRange](../vsto/namedrange-control.md)   
- [Como: aplicar estilos a intervalos em pastas de trabalho programaticamente](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Como: por meio de programação se referir a intervalos de planilhas em código](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Como: Aplicar estilos a intervalos em pastas de trabalho programaticamente](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Como: Por meio de programação se referir a intervalos de planilhas em código](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
   

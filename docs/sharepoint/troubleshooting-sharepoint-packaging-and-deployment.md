@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba6f0a1aff0c263534c17256b7f5cf49ff9c9533
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 46cd388079db9d7869bcae733c6baef33c07a212
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898051"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805127"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Solucionar problemas de implantação e empacotamento do SharePoint
   Este tópico aborda diversos problemas que você pode encontrar ao empacotar e implantar soluções do SharePoint.
@@ -40,10 +40,10 @@ ms.locfileid: "49898051"
  Para diagnosticar entre o Visual Studio, SharePoint e outras camadas, você pode usar a chave do registro EnableDiagnostics para exibir o rastreamento de pilha. Para obter mais informações, consulte [soluções do SharePoint depurar](../sharepoint/debugging-sharepoint-solutions.md).
 
 ## <a name="add-project-output-to-the-solution-package"></a>Adicionar a saída do projeto ao pacote de solução
- Você pode adicionar a saída do projeto para um pacote por meio do Designer de pacote. No entanto, quando você adiciona a saída do projeto, certifique-se de que a plataforma do projeto corresponda à plataforma da solução do SharePoint. É recomendável que você use o **qualquer CPU** destino da plataforma para os assemblies que você deseja implantar em um servidor do SharePoint. Para obter mais informações, consulte [compilar página, Designer de projeto &#40;Visual Basic&#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) e [caixa de diálogo de configurações de compilador avançadas &#40;Visual Basic&#41;](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
+ Você pode adicionar a saída do projeto para um pacote por meio do Designer de pacote. No entanto, quando você adiciona a saída do projeto, certifique-se de que a plataforma do projeto corresponda à plataforma da solução do SharePoint. É recomendável que você use o **qualquer CPU** destino da plataforma para os assemblies que você deseja implantar em um servidor do SharePoint. Para obter mais informações, consulte [compilar página, Designer de projeto &#40;Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md) e [caixa de diálogo de configurações de compilador avançadas &#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
 ## <a name="validation-warnings-and-errors"></a>Erros e avisos de validação
- As ferramentas de desenvolvimento do SharePoint no Visual Studio executam etapas de validação para verificar se o pacote de solução está formado corretamente. Você também pode criar etapas de validação personalizada para os recursos e pacotes. Para obter mais informações, consulte [como: criar o recurso personalizado e o pacote de regras de validação para soluções do SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
+ As ferramentas de desenvolvimento do SharePoint no Visual Studio executam etapas de validação para verificar se o pacote de solução está formado corretamente. Você também pode criar etapas de validação personalizada para os recursos e pacotes. Para obter mais informações, confira [Como: Criar recurso personalizado e um pacote de regras de validação para soluções do SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
 ## <a name="deployment-conflict-resolution"></a>Resolução de conflitos de implantação
  Quando você implanta uma solução do SharePoint, você pode encontrar conflitos quando um item no servidor tem o mesmo nome, URL ou ID como um item em seu pacote de solução. Você pode alterar o **resolução de conflitos de implantação** propriedade para resolver, relatar ou evitar conflitos para os módulos, partes da Web, instâncias de lista e tipos de conteúdo.
@@ -65,7 +65,7 @@ ms.locfileid: "49898051"
 
 3. Defina a ordem de ativação de recurso acordo com a hierarquia no Designer de pacote.
 
-   Você pode adicionar etapas de implantação personalizado a alteração ainda mais a **F5** comportamento. Para obter mais informações, consulte [instruções passo a passo: criar uma etapa de implantação para projetos do SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+   Você pode adicionar etapas de implantação personalizado a alteração ainda mais a **F5** comportamento. Para obter mais informações, confira [Passo a passo: Criar uma etapa de implantação para projetos do SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>Atraso exibindo a página do SharePoint quando implantar a web part visual
  A página do SharePoint leva muito tempo para aparecer durante a implantação de uma Web part Visual para a pasta Bin em [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)], ou [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Se você alterar todos os arquivos em um nível superior [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] recompilações do diretório, como o diretório Bin, todo o aplicativo Web. Isso pode causar um atraso de até 25 segundos para a página do SharePoint para renderizar.
@@ -76,7 +76,7 @@ ms.locfileid: "49898051"
 ### <a name="resolution"></a>Resolução
  Para contornar esse problema, execute as seguintes etapas:
 
-1.  Instale a atualização KB967535 conforme descrito no artigo da Microsoft Support [corrigir: um hotfix está disponível para corrigir dois problemas no ASP.NET no IIS 7.0 para Windows Vista e Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
+1.  Instale a atualização KB967535 conforme descrito no artigo da Microsoft Support [corrigir: Um hotfix está disponível para corrigir dois problemas no ASP.NET no IIS 7.0 para Windows Vista e Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
 
 2.  Adicione a seguinte linha ao arquivo Web. config:
 
@@ -97,7 +97,7 @@ ms.locfileid: "49898051"
  Na primeira vez que você implante uma Web part visual em um site em um aplicativo Web diferente no qual está implementada atualmente (alterando a propriedade SiteUrl da parte Web visual), você obterá um erro.
 
 ### <a name="error-message"></a>mensagem de erro
- Ocorreu um erro na etapa de implantação adicionar solução: um recurso com a ID [#] já foi instalado neste farm. Use o atributo de força para reinstalar explicitamente o recurso.
+ Ocorreu um erro na etapa de implantação adicionar solução: Um recurso com a ID [#] já foi instalado neste farm. Use o atributo de força para reinstalar explicitamente o recurso.
 
 ### <a name="resolution"></a>Resolução
  Esse erro ocorre devido à maneira como recursos de Web part visual são retraídos no SharePoint. Para implantar com êxito a Web part visual, implante a solução novamente escolhendo a **F5** chave.
@@ -114,5 +114,5 @@ ms.locfileid: "49898051"
  Para remover este aviso, compile o projeto e, em seguida, feche e, em seguida, reabra o designer ou desabilite a opção para o projeto de retração automática. Para fazer isso, desmarque a **retração automática após a depuração** caixa de seleção a **SharePoint** guia da caixa de diálogo de propriedades do projeto.
 
 ## <a name="see-also"></a>Consulte também
- [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 
+- [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

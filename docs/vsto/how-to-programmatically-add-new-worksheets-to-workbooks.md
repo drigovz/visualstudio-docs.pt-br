@@ -1,5 +1,5 @@
 ---
-title: 'Como: adicionar novas planilhas a pastas de trabalho programaticamente'
+title: 'Como: Adicionar novas planilhas a pastas de trabalho programaticamente'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - workbooks, creating worksheets
 - worksheets, creating
 - worksheets, adding to workbooks
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80e3ddaa3edd4520e16c8733d3310497ab4ea5af
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7d5750bebc4b58305133ae762bb6cb52e0d37e62
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255005"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805020"
 ---
-# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Como: adicionar novas planilhas a pastas de trabalho programaticamente
+# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Como: Adicionar novas planilhas a pastas de trabalho programaticamente
   Você pode criar programaticamente uma planilha e, em seguida, adicionar a planilha para a coleção de planilhas na pasta de trabalho.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -51,7 +51,7 @@ ms.locfileid: "35255005"
 ## <a name="see-also"></a>Consulte também  
  [Trabalhar com planilhas](../vsto/working-with-worksheets.md)   
  [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)   
- [Como: excluir planilhas de pastas de trabalho de forma programática](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [Como: Excluir planilhas de pastas de trabalho de forma programática](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
  [Como: Selecionar planilhas programaticamente](../vsto/how-to-programmatically-select-worksheets.md)   
  [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)   
  [Acesso global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md)   
