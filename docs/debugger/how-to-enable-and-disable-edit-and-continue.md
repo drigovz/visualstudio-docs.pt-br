@@ -44,7 +44,7 @@ Para o C++ nativo, **editar e continuar** requer o uso de `/INCREMENTAL` opção
   
 1.  Se você estiver em uma sessão de depuração, pare a depuração (**Debug** > **parar depuração** ou **Shift**+**F5**) .
 
-1.  Na **ferramentas** > **opções** > (ou **depurar** > **opções**) > **dedepuração**  >  **Gerais**, selecione **editar e continuar** no painel direito.  
+1.  Na **ferramentas** > **opções** > (ou **depurar** > **opções**) > **depuração**  >  **Gerais**, selecione **editar e continuar** no painel direito.  
   
     > [!NOTE]
     >  Se IntelliTrace estiver habilitado e você coletar eventos de IntelliTrace e informações de chamada, Editar e Continuar estará desabilitado. Para obter mais informações, consulte [IntelliTrace](../debugger/intellitrace.md).
