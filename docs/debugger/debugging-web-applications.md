@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e649e5d795df537e48afe3dad738c73ee5b7b51
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: faafe243d5bf60e83d060334d8591bdb4cd9bbb3
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178911"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561623"
 ---
 # <a name="debugging-web-applications"></a>Depurando aplicativos Web
 Esta seção explica como depurar vários tipos de aplicativos Web.  
@@ -41,6 +41,5 @@ Esta seção explica como depurar vários tipos de aplicativos Web.
 ## <a name="see-also"></a>Consulte também  
  [Depurando aplicativos Web e script](../debugger/debugging-web-applications-and-script.md)   
  [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)   
- [Noções básicas do depurador](../debugger/getting-started-with-the-debugger.md)   
- [Depurando no Visual Studio](../debugger/index.md)  
+ [Primeiro, examine o depurador](../debugger/debugger-feature-tour.md) [depuração no Visual Studio](../debugger/index.md)  
  [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)

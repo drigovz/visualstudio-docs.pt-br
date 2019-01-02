@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 2540f5ed20ae07ab317c0ea23f35de386117fa13
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160017"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561506"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Como depurar para iniciantes absolutos
 
@@ -332,4 +332,4 @@ Quando você encontrar a região de código com o problema, use o depurador para
 Neste artigo, você aprendeu alguns conceitos gerais de depuração. Em seguida, é possível começar a aprender mais sobre o depurador.
 
 > [!div class="nextstepaction"]
-> [Aprenda a depurar usando o Visual Studio](../debugger/getting-started-with-the-debugger.md)
+> [Introdução ao depurador](../debugger/debugger-feature-tour.md)

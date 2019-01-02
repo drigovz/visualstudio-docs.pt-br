@@ -1,5 +1,5 @@
 ---
-title: 'Como: código-fonte do .NET Framework de depuração | Microsoft Docs'
+title: 'Como: Depurar o código-fonte do .NET Framework | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 234d9979ea1a16b917111e2a8937ad71dd55224f
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: a627c2f0880aee9906e3478b268d688c59b7d090
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389274"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443906"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Como depurar o código-fonte do .NET Framework
+# <a name="how-to-debug-net-framework-source"></a>Como: Depurar o código-fonte do .NET Framework
 
 Para depurar o código-fonte do .NET Framework, faça o seguinte:
 
@@ -55,7 +55,7 @@ Para depurar o código-fonte do .NET Framework, faça o seguinte:
   
 ### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>Para carregar símbolos da pilha de chamadas ou módulos do windows  
   
-1. Durante a depuração, abra a janela, selecionando **Debug** > **Windows** > **módulos** ou **pilha de chamadas** . 
+1. Durante a depuração, abra a janela, selecionando **Debug** > **Windows** > **módulos** (ou pressione **Ctrl + Alt + U**) ou **Debug** > **Windows** > **pilha de chamadas** (**Ctrl + Alt + C**). 
    
 1. Clique com botão direito um módulo para o qual os símbolos não foram carregados. No **módulos** , janela de status de carregamento de símbolos está a **símbolos Status** coluna. No **pilha de chamadas** , janela de status está a **Status do quadro** coluna e o quadro está esmaecida. 
    

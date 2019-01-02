@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 40b2d37e5b416047aa8a6fecf8c2c9cca0c681ca
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4ac332e7feca281f49ad6b56030a26dbd9a41e47
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062970"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803066"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Criar XAML no Visual Studio
 
@@ -42,7 +42,7 @@ Para tarefas mais básicas, a IDE do Visual Studio e do Blend for Visual Studio 
 
 - **XAML IntelliSense:** Os dois IDEs dão suporte a todas as funcionalidades comuns que você espera do IntelliSense, incluindo preenchimento de declaração, suporte para operações comuns do editor como comentário e formatação de código, bem como navegação para recursos, associação e código.
 
-- **Funcionalidades básicas de depuração:** Agora é possível depurar no Blend, incluindo a definição de pontos de interrupção no código para depurar o aplicativo em execução. Para manter uma experiência de depuração consistente com o Visual Studio, o Blend for Visual Studio inclui a maioria das janelas de depuração e barras de ferramentas do Visual Studio. Funcionalidades de depuração avançadas, como diagnóstico e análise de código, somente estão disponíveis no Visual Studio. Confira [Depurar no Visual Studio](../debugger/debugging-in-visual-studio.md).
+- **Funcionalidades básicas de depuração:** Agora é possível depurar no Blend, incluindo a definição de pontos de interrupção no código para depurar o aplicativo em execução. Para manter uma experiência de depuração consistente com o Visual Studio, o Blend for Visual Studio inclui a maioria das janelas de depuração e barras de ferramentas do Visual Studio. Funcionalidades de depuração avançadas, como diagnóstico e análise de código, somente estão disponíveis no Visual Studio. Confira [Depurar no Visual Studio](../debugger/debugger-feature-tour.md).
 
 - **Experiência de recarregamento de arquivos:** Edite os arquivos XAML no Blend para Visual Studio ou no Visual Studio e faça com que os arquivos editados sejam recarregados automaticamente conforme você alterna entre eles. Para minimizar as interrupções de fluxo de trabalho, agora é possível definir suas preferências de recarregamento de arquivos na caixa de diálogo de recarregamento de arquivos.
 

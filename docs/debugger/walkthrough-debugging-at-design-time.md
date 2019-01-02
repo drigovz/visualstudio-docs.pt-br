@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c4b0996faf26279ff8018e0e072fd25a33d783
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 86e6aa0da41a16445b3e3328a1ee0bc84063dd52
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063416"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561717"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Depurar em tempo de design no Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -106,5 +106,4 @@ Em alguns cenários de associação de dados declarativa, ele pode ajudar a depu
    Quando a página for carregada, o ponto de interrupção é atingido.
   
 ## <a name="see-also"></a>Consulte também  
- [Segurança do depurador](../debugger/debugger-security.md)   
- [Noções básicas do depurador](../debugger/getting-started-with-the-debugger.md)
+ [Primeiro, examine o depurador](../debugger/debugger-feature-tour.md) [segurança do depurador](../debugger/debugger-security.md)   

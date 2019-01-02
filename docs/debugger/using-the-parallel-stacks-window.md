@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf1ca8fabf70f2d4fbe5920803773af07db0a99
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4ee9d52f63f3158979f2f018ea44d5b68d6612c1
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389222"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562328"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window"></a>Exibir threads e tarefas na janela pilhas paralelas
 
@@ -139,9 +139,8 @@ Se você alternar para um novo quadro de pilha, você torna o método atual, e *
   
 ## <a name="see-also"></a>Consulte também  
  [Introdução ao depurar um aplicativo multithreaded](../debugger/get-started-debugging-multithreaded-apps.md)   
- [Passo a passo: depurar um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Noções básicas do depurador](../debugger/getting-started-with-the-debugger.md)   
- [Depurando código gerenciado](../debugger/debugging-managed-code.md)   
+ [Passo a passo: Depurar um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md)   
+ [Primeiro, examine o depurador](../debugger/debugger-feature-tour.md) [depuração de código gerenciado](../debugger/debugging-managed-code.md)   
  [Programação paralela](/dotnet/standard/parallel-programming/index)   
  [Usar a janela Tarefas](../debugger/using-the-tasks-window.md)   
  [Classe de tarefa](../extensibility/debugger/task-class-internal-members.md)

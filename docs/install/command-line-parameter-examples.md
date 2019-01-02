@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de5e7f194fff87b5148a2262925d3ac5c4287293
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 6a1a0d0af09768e4927403d0791ae4c1e7785dcb
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160147"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562161"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Exemplos de parâmetros de linha de comando para a instalação do Visual Studio 2017
 
@@ -137,13 +137,13 @@ Este comando da linha de comando é uma **novidade na versão 15.9**. Para saber
 * Usando a exportação para salvar a seleção de uma instalação:
 
 ```cmd
-vs_enterprise.exe export --installPath "C:\VS" --config "C:\.vsconfig"
+"C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --installPath "C:\VS" --config "C:\.vsconfig"
 ```
 
 * Usando a exportação para salvar a seleção personalizada do zero:
 
 ```cmd
-vs_enterprise.exe export --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --config "C:\.vsconfig"
+"C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --config "C:\.vsconfig"
 ```
 
 ## <a name="using---config"></a>Usando --config
