@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a619989543b30ccf07cdb300a5688a985cf27eb7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7a6f0dac77801d2d02a260fbf392588b1a2f4a32
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068241"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739277"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Testando ferramentas no Visual Studio
 
@@ -45,4 +45,4 @@ As ferramentas de teste do Visual Studio podem ajudar você e sua equipe a desen
 * [Testes exploratórios e manuais (Azure Test Plans)](/azure/devops/test/index?view=vsts)
 * [Teste de carga (Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts)
 * [Testes contínuos (Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
-* [Ferramentas de análise de código](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)
+* [Ferramentas de análise de código](../code-quality/code-analysis-for-managed-code-overview.md)

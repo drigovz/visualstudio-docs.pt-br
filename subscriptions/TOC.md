@@ -44,7 +44,6 @@
 #### [Chat de Consultoria do Azure](vs-azure-advisory-chat.md)
 #### [Comunidade do Azure](vs-azure-community.md)
 #### [Suporte técnico](vs-tech-support.md)
-#### [Suporte da Comunidade de Desenvolvedores](vs-priority-support.md)
 #### [Suporte do Concierge](vs-concierge-chat.md)
 ## Gerenciando assinaturas
 ### [Responsabilidades do administrador](admin-responsibilities.md)

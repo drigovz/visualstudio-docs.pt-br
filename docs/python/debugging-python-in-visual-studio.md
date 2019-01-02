@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 64eafbffcf453832dd2ba764ef3396cb7129be89
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068429"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561743"
 ---
 # <a name="debug-your-python-code"></a>Depurar o código do Python
 
@@ -84,7 +84,7 @@ Depois de interromper em um ponto de interrupção, você tem várias maneiras p
 
 ### <a name="inspect-and-modify-values"></a>Inspecionar e modificar valores
 
-Quando estiver parado no depurador, é possível inspecionar e modificar os valores das variáveis. Use também a janela **Inspeção** para monitorar variáveis individuais, bem como expressões personalizadas. (Confira [Inspecionar variáveis](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows) para obter detalhes gerais.)
+Quando estiver parado no depurador, é possível inspecionar e modificar os valores das variáveis. Use também a janela **Inspeção** para monitorar variáveis individuais, bem como expressões personalizadas. (Confira [Inspecionar variáveis](../debugger/debugger-feature-tour.md#inspect-variables-with-the-autos-and-locals-windows) para obter detalhes gerais.)
 
 Para exibir um valor usando **DataTips**, basta passar o mouse sobre qualquer variável no editor. É possível clicar no valor para alterá-lo:
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053163"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740345"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -257,7 +257,7 @@ Para obter mais informações, consulte [Executar testes de unidade com o Gerenc
 
 2.  No **Gerenciador de Testes**, selecione os métodos de teste e, em seguida, escolha **Depurar Testes Selecionados** no menu de atalho.
 
-Obter mais detalhes sobre [como depurar testes de unidade](../debugger/debugging-in-visual-studio.md).
+Obter mais detalhes sobre [como depurar testes de unidade](../debugger/debugger-feature-tour.md).
 
 **P: Se eu estiver usando o TDD, como fazer para gerar o código em meus testes?**
 

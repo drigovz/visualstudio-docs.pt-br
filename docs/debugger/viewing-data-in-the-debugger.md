@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59e6c1879d5463682ee41d60e3928fce85c74a8d
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: c750e9e3152ae5efdf2e2ecf09034b6928fe9fa7
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305137"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561847"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>Criar exibições personalizadas de dados no depurador do Visual Studio
 O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] depurador fornece várias ferramentas para inspecionar e modificar o estado do programa. A maioria dessas ferramentas funciona somente no modo de interrupção.
@@ -38,6 +38,5 @@ O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] depurador fornece v�
  Os visualizadores permitem exibir o conteúdo de um objeto ou variável de forma significativa. No depurador do Visual Studio, um visualizador refere-se ao windows diferentes que podem ser abertos usando a Lupa ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "ícone do visualizador") ícone. Por exemplo, o visualizador HTML mostra como uma cadeia de caracteres HTML seria interpretada e exibida em um navegador. Você pode acessar visualizadores a partir das DataTips, a **Watch** janela, o **Autos** janela e o **locais** janela. O **QuickWatch** caixa de diálogo também fornece um visualizador. Para obter mais informações, confira [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md).
   
 ## <a name="see-also"></a>Consulte também  
- [Noções básicas do depurador](../debugger/getting-started-with-the-debugger.md)   
- [Janela Comando](../ide/reference/command-window.md)   
+ [Primeiro, examine o depurador](../debugger/debugger-feature-tour.md) [janela de comando](../ide/reference/command-window.md)   
  [Segurança do depurador](../debugger/debugger-security.md)

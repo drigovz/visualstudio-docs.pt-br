@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 67a990b98b385cacab89bfa8270d8409f9e9aa5f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 9e93ea0c5f9d12b1a5a395b153bf3edbc5d26b9c
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159601"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684457"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Início Rápido: Criar seu primeiro aplicativo de console no Visual Studio com o Visual Basic
 
@@ -91,4 +91,4 @@ Vamos adicionar alguns códigos para pausar o aplicativo e, em seguida, solicita
 Parabéns por concluir este Guia de Início Rápido! Esperamos que você tenha aprendido um pouco sobre o Visual Basic e sobre o IDE do Visual Studio. Para saber mais, continue com o tutorial a seguir.
 
 > [!div class="nextstepaction"]
-> [Introdução ao Visual Basic no Visual Studio](tutorial-visual-basic-console.md)
+> [Introdução ao Visual Basic no Visual Studio](../get-started/visual-basic/tutorial-console.md)

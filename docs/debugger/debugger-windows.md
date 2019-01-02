@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 05d3cd5cd56010e62b6ca50a76e726cb7998070b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d55f1ba3a9e0d30dda9d9e390bae0cc3a46f8444
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065145"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562341"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Saiba mais sobre o Windows do depurador no Visual Studio
 
@@ -40,7 +40,7 @@ Você pode abrir a maioria das janelas do depurador enquanto você estiver depur
 |Threads de GPU|-|[Como: Usar a janela de Threads de GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Tarefas|CTR: + SHIFT + D, K|[Usando a janela Tarefas](../debugger/using-the-tasks-window.md)|
 |Depuração de Python interativa|SHIFT + ALT + I|[REPL interativo do Python](../python/python-interactive-repl-in-visual-studio.md)|
-|Console do JavaScript|CTRL + ALT + V, C|[Quickstart (Início rápido) Depurar o JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
+|Console do JavaScript|CTRL + ALT + V, C|[Guia de início rápido: Depurar o JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |Explorador do DOM|CTRL + ALT + V, D|[Depurar o layout usando o Explorador do DOM](../debugger/debug-layout-using-dom-explorer.md)|
 |Árvore visual dinâmica|-|[Inspecione as propriedades XAML durante a depuração](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Explorador de propriedades dinâmicas|-|[Inspecione as propriedades XAML durante a depuração](../debugger/inspect-xaml-properties-while-debugging.md)|
@@ -51,4 +51,4 @@ Você pode abrir a maioria das janelas do depurador enquanto você estiver depur
 
 ## <a name="see-also"></a>Consulte também
 
-[Noções básicas do depurador](../debugger/getting-started-with-the-debugger.md)
+[Introdução ao depurador](../debugger/debugger-feature-tour.md)

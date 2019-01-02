@@ -24,17 +24,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51a69414a8b61368cbb492494187567554f98e4c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9fdf27353462645916f14fe10c2fdc521504024b
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063720"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684256"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Como: Aplicar edições no modo de interrupção com editar e continuar (Visual Basic)
 Você pode usar Editar e Continuar para editar o código no modo de interrupção e, depois, continuar sem interromper e reiniciar a execução.  
   
-Para limitações sobre como usar Editar e continuar durante a depuração, consulte [Supported Code Changes (C# e Visual Basic](../debugger/supported-code-changes-csharp.md)]
+Para limitações sobre como usar Editar e continuar durante a depuração, consulte [Supported Code Changes (C# e Visual Basic)](../debugger/supported-code-changes-csharp.md).
   
 ### <a name="to-edit-code-in-break-mode"></a>Para editar código no modo de interrupção  
   
@@ -52,7 +52,7 @@ Para limitações sobre como usar Editar e continuar durante a depuração, cons
   
 2.  Faça as alterações de código desejadas e com suporte.  
   
-     Para obter mais informações, consulte [Supported Code Changes (c# e Visual Basic](../debugger/supported-code-changes-csharp.md).  
+     Para obter mais informações, consulte [Supported Code Changes (c# e Visual Basic)](../debugger/supported-code-changes-csharp.md).  
   
     > [!NOTE]
     >  Se você tentar fazer uma alteração de código que não seja permitida por Editar e Continuar, sua edição será sublinhada por uma linha ondulada roxa e uma tarefa será exibida na Lista de Tarefas. Você não poderá continuar a execução do código a menos que desfaça a alteração de código ilegal.  
@@ -62,5 +62,5 @@ Para limitações sobre como usar Editar e continuar durante a depuração, cons
      O código agora é executado com as edições aplicadas incorporadas ao projeto.  
   
 ## <a name="see-also"></a>Consulte também  
- [Alterações de código suportadas (c# e Visual Basic](../debugger/supported-code-changes-csharp.md)   
+ [Alterações de código suportadas (c# e Visual Basic)](../debugger/supported-code-changes-csharp.md)   
  [Editar e Continuar (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
