@@ -11,7 +11,6 @@ f1_keywords:
 - vs.debug.file
 - vs.debug.breakpt.new
 - vs.debug.whenbreakpointishit
-- vs.debug.breakpt.choose
 - vs.debug.breakpt.location.address
 - vs.debug.breakpt.constraints
 - vs.debug.breakpoints.delete
@@ -36,12 +35,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 092a9fce2c84506f36717808a7630391c7c1fc89
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068442"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425845"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
 Pontos de interrupção são uma das técnicas de depuração mais importantes na caixa de ferramentas do seu desenvolvedor. Sempre que você deseja pausar a execução do depurador, você definir pontos de interrupção. Por exemplo, talvez você queira ver o estado das variáveis de código ou examinar a pilha de chamadas em um determinado ponto de interrupção. Se esta for sua primeira tentativa de depurar um código, leia [Como depurar para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes continuar neste artigo.
@@ -61,7 +60,7 @@ No C# código, o ponto de interrupção e linhas de execução atual são realç
   
  ![Execução de ponto de interrupção interrompida](../debugger/media/breakpointexecution.png "execução de ponto de interrupção")  
   
- Quando o depurador é interrompido no ponto de interrupção, você pode examinar o estado atual do aplicativo, incluindo valores de variáveis e a pilha de chamadas. Para obter mais informações sobre a pilha de chamadas, consulte [como: usar a janela pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md).  
+ Quando o depurador é interrompido no ponto de interrupção, você pode examinar o estado atual do aplicativo, incluindo valores de variáveis e a pilha de chamadas. Para obter mais informações sobre a pilha de chamadas, consulte [como: Use a janela Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md).  
 
 - O ponto de interrupção é um controle de alternância. Você pode clicar nele, pressione **F9**, ou use **Debug** > **alternar ponto de interrupção** para excluir ou inseri-lo novamente.
   
@@ -89,7 +88,7 @@ O ponto de interrupção de pilha de chamada aparece na **pontos de interrupçã
 
 O depurador interrompe na instrução.  
 
-Para obter mais informações sobre a pilha de chamadas, consulte [como: usar a janela pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md). 
+Para obter mais informações sobre a pilha de chamadas, consulte [como: Use a janela Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md). 
 
 Para visualmente rastrear pontos de interrupção durante a execução de código, consulte [mapear métodos na pilha de chamadas ao depurar](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md). 
   
@@ -306,8 +305,9 @@ Coloque os valores de cadeia de caracteres entre aspas duplas. Você pode combin
 
 Tracepoints são exibidos como losangos vermelhos na margem esquerda do código-fonte e **pontos de interrupção** windows. 
   
-## <a name="see-also"></a>Consulte também  
- [O que é depuração?](../debugger/what-is-debugging.md)  
- [Gravar melhor C# o código usando o Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
- [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)  
- [Solucionar problemas de pontos de interrupção no depurador do Visual Studio](../debugger/troubleshooting-breakpoints.md)  
+## <a name="see-also"></a>Consulte também
+
+- [O que é depuração?](../debugger/what-is-debugging.md)
+- [Gravar melhor C# o código usando o Visual Studio](../debugger/write-better-code-with-visual-studio.md)
+- [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)
+- [Solucionar problemas de pontos de interrupção no depurador do Visual Studio](../debugger/troubleshooting-breakpoints.md)
