@@ -1,6 +1,6 @@
 ---
-title: Anexar a processos em execução com o depurador do Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Anexar a processos em execução com o depurador | Microsoft Docs
+ms.custom: seodec18
 ms.date: 09/27/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -29,19 +29,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd1ceb341ac613eef3e26f3599ee137161545a85
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: 499e1200f858530db0caad69d93bd4416f756405
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389183"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561636"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar a processos em execução com o depurador do Visual Studio
 Você pode anexar o depurador do Visual Studio para um processo em execução em um computador local ou remoto. Depois que o processo está em execução, selecione **Debug** > **anexar ao processo** ou pressione **Ctrl**+**Alt** + **P** no Visual Studio e usar o **anexar ao processo** caixa de diálogo para anexar o depurador ao processo.
 
 Você pode usar **anexar ao processo** para depurar aplicativos em execução em computadores locais ou remotos, depurar vários processos simultaneamente, depurar os aplicativos que não foram criados no Visual Studio ou depurar qualquer aplicativo que não tenha iniciado a partir do Visual Studio com o depurador anexado. Por exemplo, se você estiver executando um aplicativo sem o depurador e atingir uma exceção, você pode, em seguida, anexar o depurador ao processo executando o aplicativo e iniciar a depuração.
 
-Para obter informações sobre depuração básica no Visual Studio, consulte [Introdução ao depurador](../debugger/getting-started-with-the-debugger.md).
+Para obter informações sobre depuração básica no Visual Studio, consulte [primeiro, examine o depurador](../debugger/debugger-feature-tour.md).
 
 > [!TIP]
 > Não tenho certeza se deve ser usado **anexar ao processo** para seu cenário de depuração? Ver [comum de cenários de depuração](#BKMK_Scenarios). 
@@ -119,7 +119,7 @@ Para obter instruções mais completas para depuração de aplicativos do ASP.NE
    - Para localizar os processos em execução em todas as contas de usuário, selecione o **Mostrar processos de todos os usuários** caixa de seleção.
       
      >[!NOTE]
-     >Se você tentar anexar a um processo de propriedade de uma conta de usuário não confiável, aparecerá uma confirmação da caixa de diálogo de aviso de segurança. Para obter mais informações, consulte [aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+     >Se você tentar anexar a um processo de propriedade de uma conta de usuário não confiável, aparecerá uma confirmação da caixa de diálogo de aviso de segurança. Para obter mais informações, consulte [aviso de segurança: Anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou, se você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
       
 5. No **anexar a** campo, verifique se o tipo de código que você pretende depurar está listado. O padrão **automática** definindo funciona para a maioria dos tipos de aplicativo. 
   
@@ -162,7 +162,7 @@ Para selecionar rapidamente um processo em execução para anexar a, no Visual S
 |Depuração remota ASP.NET 4 ou 4.5 em um servidor IIS|Usar as ferramentas remotas e **anexar ao processo**|*w3wp.exe*|Consulte [remota de depuração do ASP.NET em um computador remoto do IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Depuração remota do ASP.NET Core em um servidor IIS|Usar as ferramentas remotas e **anexar ao processo**|*dotnet.exe*|Para implantação de aplicativo, consulte [publicar no IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para depuração, consulte [depuração remota do ASP.NET Core em um computador remoto do IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Depurar o script do lado do cliente em um servidor IIS local, para tipos de aplicativos com suporte |Use **anexar ao processo**|*Chrome.exe*, *MicrosoftEdgeCP.exe*, ou *iexplore.exe*|Depuração de script deve ser habilitada. Para o Chrome, você também deve executar Chrome no modo de depuração e selecione **código Webkit** na **anexar a** campo.|
-|Depurar um aplicativo c#, Visual Basic ou C++ no computador local|Use um [depuração padrão](../debugger/getting-started-with-the-debugger.md) ou **anexar ao processo**|*\<appname > .exe*|Na maioria dos cenários, usar a depuração padrão e não **anexar ao processo**.|
+|Depurar um aplicativo c#, Visual Basic ou C++ no computador local|Use um [depuração padrão](../debugger/debugger-feature-tour.md) ou **anexar ao processo**|*\<appname > .exe*|Na maioria dos cenários, usar a depuração padrão e não **anexar ao processo**.|
 |Depuração remota de um aplicativo de desktop do Windows|Ferramentas remotas|N/D| Ver [remoto depurar um aplicativo c# ou Visual Basic](../debugger/remote-debugging-csharp.md) ou [remoto depurar um aplicativo C++](../debugger/remote-debugging-cpp.md)|
 |Depurar um aplicativo ASP.NET no computador local depois de iniciar o aplicativo sem o depurador|Use **anexar ao processo**|*iiexpress.exe*|Isso pode ser útil para fazer com que seu aplicativo carregar mais rápido, como (por exemplo) ao criar o perfil. |
 |Depurar outros tipos de aplicativos com suporte em um processo do servidor|Se o servidor remoto, use as ferramentas remotas, e **anexar ao processo**|*Chrome.exe*, *iexplore.exe*, ou outros processos|Se necessário, use o Monitor de recursos para ajudar a identificar o processo. Confira [Depuração remota](../debugger/remote-debugging.md).|

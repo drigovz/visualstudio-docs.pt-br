@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 16c9a490970d6c41a5661f0755f09731ce2fba7e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062432"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740267"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novidades no Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 -   **C++ / Android**. Use o [Visual C++ para desenvolvimento móvel de plataforma cruzada](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) modelos junto com as ferramentas de terceiros, como o [NDK do Android](https://developer.android.com/tools/sdk/ndk/index.html) para criar aplicativos nativos para Windows e Android.
 
 ## <a name="debugging-and-diagnostics"></a>Depuração e Diagnóstico
- Para obter informações sobre o que há de novo na depuração, consulte [o que há de novo no depurador no Visual Studio 2015](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md).
+ Para obter informações sobre o que há de novo na depuração, consulte [o que há de novo no depurador no Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
  Para obter informações sobre o que há de novo no diagnóstico, consulte [o que há de novo nas ferramentas de criação de perfil](./profiling/what-s-new-in-profiling-tools.md).
 
  A seguir é nova ou aprimorados ferramentas que executam diferentes tipos de diagnóstico e análise em seu código:
 
 ### <a name="perftips"></a>PerfTips
- As PerfTips exibem o tempo de execução dos métodos durante a depuração, permitindo que você identifique rapidamente os gargalos sem ter que invocar o criador de perfil. Para começar, consulte [PerfTips: informações de desempenho em geral durante a depuração com o Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ As PerfTips exibem o tempo de execução dos métodos durante a depuração, permitindo que você identifique rapidamente os gargalos sem ter que invocar o criador de perfil. Para começar, consulte [PerfTips: informações de desempenho imediatas durante depuração com o Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>Lista de Erros
  A lista de erros agora dá suporte à filtragem em qualquer coluna. Ele também mostra uma exibição ao vivo de erros, avisos e análise de código em toda a solução c# ou Visual Basic conforme você digita, mesmo quando uma alteração de código produz milhares de avisos. A nova lista de erros é compatível com o back com o uso existente. Para obter mais informações, consulte [janela lista de erros](./ide/reference/error-list-window.md).
@@ -190,11 +190,11 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 
 - Obter histórico para um arquivo de código completo no editor do Visual Studio.
 
-   ![CodeLens Obter detalhes do arquivo de código](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens: obtenha detalhes do arquivo de código](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Ver um gráfico que mostra quem alterou seu código. Isso pode ajudá-lo a encontrar padrões nas alterações da sua equipe e avaliar o impacto delas.
 
-   ![CodeLens Consulte o histórico de alterações de código como um grafo](./ide/media/codelens.png "CodeLens")
+   ![CodeLens: ver o histórico de alterações do código como um grafo](./ide/media/codelens.png "CodeLens")
 
 - Ver facilmente quando o seu código foi alterado pela última vez.
 
