@@ -4,16 +4,15 @@ title: Meça o desempenho do aplicativo usando a criação de perfil | Microsoft
 description: Saiba como usar o Visual Studio 2017 para criar o perfil do desempenho dos seus aplicativos, serviços e ferramentas na linguagem de sua escolha.
 ms.custom: seodec18
 ms.topic: landing-page
-ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 972e4b8b58229786d403451ddfd7a49a3fe4d6a0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ced28177670ab33916701858bfae36fa860a357f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886435"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Meça o desempenho do aplicativo no Visual Studio
 
