@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c39acdef217d2b858645073cb96da4952c91df5a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: f8d31881bed3e40db5080d642c0d3043ef2da704
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066308"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562029"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Preparação de depuração: Tipos de projeto do Visual C++
 Esta seção descreve como depurar os tipos de projeto básicos criados pelos modelos de projeto do [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].  
@@ -73,7 +73,7 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
   
 2.  No menu **Depurar**, escolha **Iniciar**.  
   
-3.  Depuração usando as técnicas discutidas [Noções básicas do depurador](../debugger/getting-started-with-the-debugger.md).  
+3.  Depuração usando as técnicas discutidas [primeiro, examine o depurador](../debugger/debugger-feature-tour.md).  
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Para definir manualmente uma configuração de depuração  
   
@@ -98,7 +98,7 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
    [Neste tópico](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplicativos do Windows Forms (.NET)  
- O modelo **Aplicativo do Windows Forms (.NET)** cria um aplicativo do Windows Forms do [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Confira mais informações em [Como: Criar um projeto de aplicativo do Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
+ O modelo **Aplicativo do Windows Forms (.NET)** cria um aplicativo do Windows Forms do [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Para obter mais informações, confira [Como: Criar um projeto de aplicativo do Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
   
  Depurar esse tipo de aplicativo no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] é semelhante a depurar em aplicativos gerenciados do Windows Forms.  
   
@@ -111,7 +111,7 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
  [Neste tópico](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>Consulte também  
- [Noções básicas do depurador](../debugger/getting-started-with-the-debugger.md)   
+ [Introdução ao depurador](../debugger/debugger-feature-tour.md)   
  [Configurações do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Anexando a um programa ou a vários programas em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md)   
