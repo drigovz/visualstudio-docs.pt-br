@@ -20,60 +20,60 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9ee37e72a52f866f5b67afaeacfd248628a3484
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: 7686ccd303bf47d9c3ef2ba570f2f483a4145d61
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176837"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561324"
 ---
-# <a name="how-to-restore-hidden-debugger-commands"></a>Como restaurar comandos de depurador ocultos
+# <a name="how-to-restore-hidden-debugger-commands"></a>Como: Restaurar comandos ocultos do depurador
 Ao configurar o Visual Studio, será solicitado que você escolha um conjunto de configurações padrão da IDE para a sua linguagem de programação principal. As configurações padrão da IDE para algumas linguagens podem ocultar alguns comandos do depurador.  
   
  Se você quiser usar um recurso do depurador que esteja oculto pelas configurações padrão da IDE, poderá adicionar o comando novamente ao menu usando o procedimento a seguir.  
   
 ### <a name="to-restore-hidden-debugger-commands"></a>Para restaurar comandos ocultos do depurador  
   
-1.  Com um projeto aberto, nos **ferramentas** menu, clique em **personalizar**.  
+1.  Com um projeto aberto, no menu **Ferramentas**, clique em **Personalizar**.  
   
-2.  No **personalizar** caixa de diálogo, clique o **comandos** guia.  
+2.  Na caixa de diálogo **Personalizar**, clique na guia **Comandos**.  
   
-3.  No **barra de menus:** lista suspensa, selecione o **depurar** menu que você deseja que contenha o comando restaurado.  
+3.  Na lista suspensa da **barra de menus**:, selecione o menu **Depurar** que você deseja que contenha o comando restaurado.  
   
-4.  Clique o **adicionar comando...**  botão.  
+4.  Clique no botão **Adicionar Comando...**.  
   
-5.  No **comando Add** , selecione o comando que você deseja adicionar e clique em **Okey**.  
+5.  Na caixa **Adicionar Comando**, selecione o comando que você deseja adicionar, e clique em **OK**.  
   
 6.  Repita a etapa anterior para adicionar outro comando.  
   
-7.  Clique em **fechar** quando tiver terminado de adicionar comandos ao menu.  
+7.  Clique em **Fechar** quando terminar de adicionar os comandos ao menu.  
   
     > [!WARNING]
     >  Alguns itens de menu aparecem somente quando o depurador estiver em modos específicos, por exemplo, o modo de execução ou o modo de interrupção. Consequentemente, um item que você adicionou não pode ser visível imediatamente quando você concluir essas etapas.  
   
 ## <a name="restoring-commands-not-available-from-the-customize-dialog-box"></a>Restaurando os comandos não disponíveis na caixa de diálogo personalizar  
- Alguns comandos, especialmente os encontrados em menus hierárquicos, não podem ser restaurados a **personalizar** caixa de diálogo. Para restaurar esses comandos, você deverá importar uma nova coleção de configurações da IDE.  
+ Alguns comandos, especialmente os encontrados em menus hierárquicos, não podem ser restaurados da caixa de diálogo **Personalizar**. Para restaurar esses comandos, você deverá importar uma nova coleção de configurações da IDE.  
   
 #### <a name="to-import-new-ide-settings"></a>Para importar novas configurações da IDE  
   
-1.  Sobre o **ferramentas** menu, clique em **Import and Export Settings**.  
+1.  No menu, **Ferramentas**, clique em **Importar e Exportar Configurações**.  
   
-2.  Sobre o **bem-vindo ao Assistente de importação e exportar configurações** , clique em **importar configurações de ambiente selecionadas**e, em seguida, clique em **próxima**.  
+2.  Na página **Assistente de Importação e Exportação de Configurações**, clique em **Importar configurações de ambiente selecionadas** e clique em **Avançar**.  
   
-3.  Sobre o **salvar configurações atuais** página, decida se deseja ou não salvar as configurações existentes e, em seguida, clique em **próxima**.  
+3.  Na página **Salvar configurações atuais**, decida se deseja salvar as configurações existentes e clique em **Avançar**.  
   
-4.  No **escolha uma coleção de configurações a importar** página na **configurações padrão** pasta, escolha um conjunto de configurações de desenvolvimento que contém os comandos que você deseja usar. Se você não souber qual coleção escolher, tente **configurações gerais de desenvolvimento** ou **configurações de desenvolvimento do Visual C++**, que fornecem a maioria dos comandos do depurador.  
+4.  Na página **Escolha uma coleção de configurações a importar**, na pasta **Configurações padrão**, escolha uma coleção de configurações de desenvolvimento que tenha os comandos que você deseja usar. Se você não souber qual coleção escolher, experimente **Configurações de desenvolvimento gerais** ou **Configurações de desenvolvimento do Visual C++**, que fornecem a maioria dos comandos do depurador.  
   
 5.  Clique em **Avançar**.  
   
-6.  No **escolha as configurações a importar** página, em **opções**, certifique-se de **depuração** está selecionado. Desmarque as outras caixas de seleção, a menos que você também queira importar essas configurações.  
+6.  Na página **Escolha as configurações a importar**, em **Opções**, verifique se **Depurando** está selecionado. Desmarque as outras caixas de seleção, a menos que você também queira importar essas configurações.  
   
 7.  Clique em **Finalizar**.  
   
-8.  Sobre o **importação completa** página, examine os erros associados a redefinição das configurações em **detalhes**.  
+8.  Na página **Importação Concluída**, revise todos os erros associados à redefinição das configurações em **Detalhes**.  
   
 9. Clique em **Fechar**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Segurança do depurador](../debugger/debugger-security.md)   
- [Noções básicas do depurador](../debugger/getting-started-with-the-debugger.md)
+ [Introdução ao depurador](../debugger/debugger-feature-tour.md)

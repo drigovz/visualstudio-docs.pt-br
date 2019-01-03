@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5e20697e5dc5364fbcbac7a1d3052790a123a2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1866f718cbcb4f1d3641e7b9f514a951ccd73662
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872649"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802601"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Variantes MSAA 0x/2x/4x
 Substitui a MSAA (suavização de múltipla amostra) em todos os destinos de renderização e cadeias de troca.  
@@ -45,7 +45,7 @@ Substitui a MSAA (suavização de múltipla amostra) em todos os destinos de ren
   
 - O dispositivo oferece suporte à contagem de amostra solicitada (0, 2 ou 4) e à qualidade da amostra (0) para o formato do destino de renderização solicitado (membro D3D11_TEXTURE2D_DESC::Format), como determinado por `ID3D11Device::CheckMultisampleQualityLevels`.  
   
-  Se o membro D3D11_TEXTURE2D_DESC::BindFlags tiver um sinalizador D3D_BIND_SHADER_RESOUCE ou D3D11_BIND_UNORDERED_ACCESS definido, então são criadas duas versões da textura; a primeira tem esses sinalizadores liberados para uso como o destino de renderização, e a outra é uma textura não MSAA, na qual esses sinalizadores são deixados intactos para agirem como um buffer de resolução para a primeira versão. Isso é necessário porque o uso de uma textura MSAA como um recurso de sombreador ou para acesso não ordenado provavelmente não será válido; por exemplo, um sombreador que agisse sobre ela geraria resultados incorretos, pois esperaria uma textura não MSAA. Se a variante tiver criado a textura não MSAA secundária, então sempre que o destino de renderização MSAA não for definido do contexto do dispositivo, seu conteúdo será resolvido na textura não MSAA. Da mesma forma, sempre que o destino de renderização MSAA for vinculado como um recurso do sombreador ou usado em uma exibição de acesso não ordenada, a textura não MSAA resolvida é vinculada em seu lugar.  
+  Se o membro D3D11_TEXTURE2D_DESC::BindFlags tiver um sinalizador D3D_BIND_SHADER_RESOURCE ou D3D11_BIND_UNORDERED_ACCESS definido, então serão criadas duas versões da textura; a primeira terá esses sinalizadores liberados para uso como o destino de renderização, e a outra será uma textura não MSAA, na qual esses sinalizadores serão deixados intactos para agirem como um buffer de resolução para a primeira versão. Isso é necessário porque o uso de uma textura MSAA como um recurso de sombreador ou para acesso não ordenado provavelmente não será válido; por exemplo, um sombreador que agisse sobre ela geraria resultados incorretos, pois esperaria uma textura não MSAA. Se a variante tiver criado a textura não MSAA secundária, então sempre que o destino de renderização MSAA não for definido do contexto do dispositivo, seu conteúdo será resolvido na textura não MSAA. Da mesma forma, sempre que o destino de renderização MSAA for vinculado como um recurso do sombreador ou usado em uma exibição de acesso não ordenada, a textura não MSAA resolvida é vinculada em seu lugar.  
   
   Essas variantes também substituem as definições de MSAA em todas as cadeias de troca criadas usando `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition` e `ID3D11CreateDeviceAndSwapChain`.  
   

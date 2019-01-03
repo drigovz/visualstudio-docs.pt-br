@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c00740b31e5b9d7cc5678bfc248e673a57e59ccf
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: f35a04620da94efca70fb33933f3940005996e29
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305306"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561688"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Depurar DLLs no Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -52,7 +52,7 @@ Quando você usa um modelo de projeto do Visual Studio para criar um aplicativo,
 - [Configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Configurações do projeto para configurações de depuração do C#](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Definições do projeto para uma configuração de depuração do Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Como definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md)  
+- [Como: Definir as configurações de depuração e de versão](../debugger/how-to-set-debug-and-release-configurations.md)  
   
 ### <a name="set-c-debuggableattribute"></a>Definir DebuggableAttribute C++
 
@@ -102,7 +102,7 @@ Certifique-se de chamar a DLL no local correto. Isso pode parecer óbvio, mas se
 
 Para depurar uma DLL, você pode [iniciar a depuração de aplicativo de chamada](#vxtskdebuggingdllprojectsthecallingapplication), ou [debug do projeto de DLL](how-to-debug-from-a-dll-project.md) especificando seu aplicativo de chamada. Você também pode usar o depurador [janela imediata](#vxtskdebuggingdllprojectstheimmediatewindow) para avaliar os métodos ou funções de DLL em tempo de design, sem usar um aplicativo de chamada.
 
-Para obter mais informações, consulte [começar com o depurador](getting-started-with-the-debugger.md).
+Para obter mais informações, consulte [primeiro, examine o depurador](../debugger/debugger-feature-tour.md).
 
 ### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Iniciar a depuração de aplicativo de chamada
 
@@ -119,11 +119,11 @@ Para depurar uma DLL de um aplicativo de chamada, você pode:
 
   ou  
 
-- Anexe a um aplicativo que já esteja implantado e em execução em um computador de teste ou produção. Use esse método para DLLs em sites ou em aplicativos web. Para obter mais informações, consulte [como: anexar a um processo em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+- Anexe a um aplicativo que já esteja implantado e em execução em um computador de teste ou produção. Use esse método para DLLs em sites ou em aplicativos web. Para obter mais informações, confira [Como: Anexar a um processo em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
 Antes de começar a depurar o aplicativo de chamada, defina um ponto de interrupção na DLL. Ver [usando pontos de interrupção](../debugger/using-breakpoints.md). Quando o ponto de interrupção DLL for atingido, você pode percorrer o código, observando a ação em cada linha. Para obter mais informações, consulte [navegar pelo código no depurador](../debugger/navigating-through-code-with-the-debugger.md).
   
-Durante a depuração, você pode usar o **módulos** para verificar as DLLs e *.exe* o aplicativo seja carregado de arquivos. Para abrir o **módulos** janela, durante a depuração, selecione **Debug** > **Windows** > **módulos**. Para obter mais informações, consulte [como: usar a janela módulos](../debugger/how-to-use-the-modules-window.md). 
+Durante a depuração, você pode usar o **módulos** para verificar as DLLs e *.exe* o aplicativo seja carregado de arquivos. Para abrir o **módulos** janela, durante a depuração, selecione **Debug** > **Windows** > **módulos**. Para obter mais informações, confira [Como: Usar a janela módulos](../debugger/how-to-use-the-modules-window.md). 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Usar a janela imediata  
 
@@ -158,7 +158,7 @@ Por exemplo, para testar um método chamado `Test` na classe `Class1`:
 
 ##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Depuração de modo misto  
 
-Você pode escrever um aplicativo de chamada para uma DLL de com em código gerenciado ou nativo. Se seu aplicativo nativo chama uma DLL gerenciada e você quiser depurar os dois, você pode habilitar os depuradores gerenciados e nativos nas propriedades do projeto. O processo exato depende se você deseja iniciar a depuração de projeto de DLL ou o projeto de aplicativo de chamada. Para obter mais informações, consulte [como: depurar no modo misto](../debugger/how-to-debug-in-mixed-mode.md). 
+Você pode escrever um aplicativo de chamada para uma DLL de com em código gerenciado ou nativo. Se seu aplicativo nativo chama uma DLL gerenciada e você quiser depurar os dois, você pode habilitar os depuradores gerenciados e nativos nas propriedades do projeto. O processo exato depende se você deseja iniciar a depuração de projeto de DLL ou o projeto de aplicativo de chamada. Para obter mais informações, confira [Como: Depurar no modo misto](../debugger/how-to-debug-in-mixed-mode.md). 
 
 Você também pode depurar uma DLL nativa de um projeto de chamada gerenciada. Para obter mais informações, consulte [como depurar código gerenciado e nativo](how-to-debug-managed-and-native-code.md). 
 
