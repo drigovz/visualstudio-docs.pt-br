@@ -1,6 +1,12 @@
 items:
+- name: Python no Visual Studio
+  href: index.yml
 - name: Visão geral
-  href: overview-of-python-tools-for-visual-studio.md
+  items:
+  - name: Visão geral do suporte do Python
+    href: overview-of-python-tools-for-visual-studio.md
+  - name: Fazer um tour pelo IDE do Visual Studio
+    href: visual-studio-ide.md
 - name: Instalação
   href: installing-python-support-in-visual-studio.md
   items:
@@ -134,9 +140,9 @@ items:
     href: python-item-templates.md
   - name: Opções
     href: python-support-options-and-settings-in-visual-studio.md
-ms.openlocfilehash: 25583cb5cea6c7ef971413b14ec986d08af9dab8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: e295581bbb60c5febc98cde837f6e498aa93d042
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349251"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441581"

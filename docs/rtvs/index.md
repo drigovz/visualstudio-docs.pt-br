@@ -3,19 +3,18 @@ title: Ferramentas R para Visual Studio
 description: As RTVS (Ferramentas do R para Visual Studio) são uma extensão de software livre gratuita que fornece muitos recursos de idioma, incluindo IntelliSense, depuração e workspaces remotos.
 ms.date: 11/13/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 05ffd249be3d7734979f3a131a3a10423b76cb9d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c2ae060c889065f7f8ba543e0cb20e8ea40ec758
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667009"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883075"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Trabalhar com o R no Visual Studio
 
@@ -43,7 +42,7 @@ Depois, siga os links abaixo para saber mais sobre recursos relacionados ao R, b
 | [Janela Interativa](interactive-repl-for-r-in-visual-studio.md) | Fornece uma experiência completa de REPL para o R com a capacidade de executar facilmente o código em um arquivo de origem na janela interativa. | N/D |
 | [Visualização de dados](visualizing-data-with-r-in-visual-studio.md) | A plotagem é parte integral da experiência do R, e as RTVS são compatíveis com várias janelas de gráficos independentes, cada qual com seu próprio histórico e a capacidade de mover as plotagens entre as janelas. As plotagens podem ser salvas em bitmap e arquivos PDF ou copiadas para a área de transferência como um bitmap ou metarquivo.  | N/D |
 | [Gerenciador de Variáveis](variable-explorer.md) | Examine as variáveis em escopos globais ou específicos do pacote, com a possibilidade de exibir tabelas classificáveis e exportar para CSV. | N/D |
-| [Depuração completa](debugging-r-in-visual-studio.md) | Inclui a integração com a janela interativa. | [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md) |
+| [Depuração completa](debugging-r-in-visual-studio.md) | Inclui a integração com a janela interativa. | [Depurando no Visual Studio](/visualstudio/debugger/debugger-feature-tour) |
 
 Confira também as [Perguntas frequentes](faq.md).
 
@@ -53,8 +52,8 @@ Confira também as [Perguntas frequentes](faq.md).
 
 ## <a name="send-us-your-feedback"></a>Envie-nos seus comentários!
 
-1. **Problemas do GitHub**: a melhor maneira de entrar em contato com a equipe de RTVS é [registrar um problema no GitHub](https://github.com/Microsoft/RTVS/issues) ou usar o menu **Ferramentas R** > **Comentários**.
+1. **Problemas do GitHub**: A melhor maneira de entrar em contato com a equipe das RTVS é [registrar um problema no GitHub](https://github.com/Microsoft/RTVS/issues) ou usar o menu **Ferramentas do R** > **Comentários**.
 
-1. **Envie um Smiley/Rosto Triste**: o menu **Ferramentas R** > **Comentários** é uma maneira rápida de enviar comentários e anexar arquivos de log das RTVS para auxiliar no diagnóstico do seu problema. (Os logs são registrados em *%temp%/RTVSlogs.zip* caso você queira enviá-los separadamente.) O log será desabilitado se você tiver cancelado a telemetria do Visual Studio por meio do comando de menu **Ajuda** > **Comentários** > **Configurações** ou durante a instalação.
+1. **Enviar um Smiley/Rosto Triste**: O menu **Ferramentas do R** > **Comentários** é uma maneira rápida de enviar comentários e anexar arquivos de log das RTVS para auxiliar no diagnóstico do problema. (Os logs são registrados em *%temp%/RTVSlogs.zip* caso você queira enviá-los separadamente.) O log será desabilitado se você tiver cancelado a telemetria do Visual Studio por meio do comando de menu **Ajuda** > **Comentários** > **Configurações** ou durante a instalação.
 
-1. **Email**: você pode enviar comentários diretos para a equipe em *rtvsuserfeedback (arroba) microsoft.com*.
+1. **Email**: Envie comentários diretos para a equipe pelo email *rtvsuserfeedback (at) microsoft.com*.
